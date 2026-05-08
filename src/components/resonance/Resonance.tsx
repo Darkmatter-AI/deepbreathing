@@ -161,7 +161,9 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
 
     const savedStats = localStorage.getItem(STORAGE_KEYS.STATS);
     if (savedStats) {
-      setTotalMinutes(JSON.parse(savedStats).totalMinutes || 0);
+      const parsed = JSON.parse(savedStats);
+      setTotalMinutes(parsed.totalMinutes || 0);
+      setSessionsCompleted(parsed.sessionsCompleted || 0);
     }
 
     const soundFlag = localStorage.getItem(STORAGE_KEYS.SOUND_OK);
@@ -399,9 +401,10 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
   useEffect(() => {
     if (!mounted) return;
     localStorage.setItem(STORAGE_KEYS.STATS, JSON.stringify({
-      totalMinutes
+      totalMinutes,
+      sessionsCompleted
     }));
-  }, [totalMinutes, mounted]);
+  }, [totalMinutes, sessionsCompleted, mounted]);
 
   useEffect(() => {
     if (!mounted || !themeReady) return;

@@ -42,11 +42,12 @@ export async function POST(request: NextRequest) {
     if (stats) {
       await client.query(
         `INSERT INTO user_stats (user_id, total_minutes, sessions_completed, updated_at)
-         VALUES ($1, $2, 0, now())
+         VALUES ($1, $2, $3, now())
          ON CONFLICT (user_id) DO UPDATE SET
            total_minutes = GREATEST(user_stats.total_minutes, EXCLUDED.total_minutes),
+           sessions_completed = GREATEST(user_stats.sessions_completed, EXCLUDED.sessions_completed),
            updated_at = now()`,
-        [userId, stats.totalMinutes ?? 0]
+        [userId, stats.totalMinutes ?? 0, stats.sessionsCompleted ?? 0]
       );
     }
 

@@ -52,14 +52,20 @@ export function useSync(isAuthenticated: boolean) {
 
       if (data.stats) {
         const localStats = localStorage.getItem(STORAGE_KEYS.STATS);
-        const localMinutes = localStats
-          ? JSON.parse(localStats).totalMinutes ?? 0
-          : 0;
+        const parsed = localStats ? JSON.parse(localStats) : {};
+        const localMinutes = parsed.totalMinutes ?? 0;
+        const localSessions = parsed.sessionsCompleted ?? 0;
         // Server wins only if it has more minutes (monotonic)
         if (data.stats.totalMinutes >= localMinutes) {
           localStorage.setItem(
             STORAGE_KEYS.STATS,
-            JSON.stringify({ totalMinutes: data.stats.totalMinutes })
+            JSON.stringify({
+              totalMinutes: data.stats.totalMinutes,
+              sessionsCompleted: Math.max(
+                data.stats.sessionsCompleted ?? 0,
+                localSessions
+              ),
+            })
           );
         }
       }
