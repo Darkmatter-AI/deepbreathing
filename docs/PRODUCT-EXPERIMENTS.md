@@ -23,6 +23,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-05-08 | [Unify session-end events + commit-on-pause](#2026-05-08-unify-session-end-events--commit-on-pause) | 🔄 Implemented |
 | 2026-05-05 | [Engaged-Minutes Tracking — Fix Double-Counting + Stop-Event Sync](#2026-05-05-engaged-minutes-tracking--fix-double-counting--stop-event-sync) | 🔄 Implemented |
 | 2026-05-05 | [GA4 User Identification (user_id + signed_up property)](#2026-05-05-ga4-user-identification-user_id--signed_up-property) | 🔄 Implemented |
 | 2026-05-05 | [Tap-to-Pause Hint Inside Orb](#2026-05-05-tap-to-pause-hint-inside-orb) | 🔄 Implemented |
@@ -37,6 +38,36 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 ---
 
 ## Active Experiments
+
+### 2026-05-08: Unify session-end events + commit-on-pause
+
+**Hypothesis:** Three near-identical events (`breathing_session_pause`, `breathing_session_complete`, `breathing_session_stop`) made GA4 noisy and were structurally incoherent. There's no Stop button in the UI, so `breathing_session_stop` only fired from the AI mode-switch path (rare). Worse: pause never called `commitSession`, so a user who tapped to pause and walked away — the modal mobile flow — got 0 minutes and 0 session credit. That's why `sessions_completed = 0` even for engaged users like Eugene (168 min): minutes came from the pre-fix per-tick double-count, not from real session-end commits.
+
+Collapsing to a single `breathing_session_end` event with a `reason` parameter (`paused` | `completed` | `mode_switched`), and crediting time on every commit (including pause), should give a complete and de-duplicated picture of session length and count.
+
+**Baseline (May 8, 2026, from 7d GA4 + Neon DB):**
+- 7d events fired: `breathing_session_pause` 57 users, `breathing_session_complete` 25 users, `breathing_session_stop` 0 users (UI never reachable)
+- DB `sessions_completed > 0`: 0 of 17 successful signups (structural bug — see prior experiment)
+- Pause-and-walk-away credits 0 minutes today; only auto-complete (timer hit) and AI mode-switch credit anything
+
+**Change:**
+- File: [src/components/resonance/Resonance.tsx](../src/components/resonance/Resonance.tsx)
+- Commit: forthcoming
+- Single `endSession(reason, seconds, hard)` callback replaces `commitSession` + the three trackEvent sites.
+- New session-level state: `sessionId` (UUID, set on true start) and `sessionCommittedSeconds` (per-session running total already credited).
+- Pause = soft end: commits the new delta (so pause-and-leave still credits time), keeps `sessionId` + `sessionSeconds` so resume continues. The next pause/complete only credits the new delta — the row only ever grows for that session.
+- Complete + AI mode-switch = hard end: commit final delta, reset `sessionSeconds` + `sessionId`.
+- `sessions_completed` increments exactly once per `sessionId`, on the first commit. Subsequent pause→resume→pause cycles update minutes but not the session count.
+- Resume (toggle play while `sessionSeconds > 0`) does NOT emit a fresh `breathing_session_start` and does NOT regenerate the id.
+
+**Pre-committed success criteria (read 2026-05-22, verdict 2026-06-05):**
+- ✅ Success if: by 2026-06-05, ≥80% of new (post-2026-05-08) signups with `total_minutes > 0` also have `sessions_completed > 0`. AND `breathing_session_end` (any reason) fires for ≥90% of `breathing_session_start` events in 14d (vs ~63% pause+complete coverage today).
+- ❌ Failed if: `sessions_completed > 0` rate stays below 50% for new engaged users, OR end-event coverage stays below 75% of starts.
+- ⚪ Inconclusive if: fewer than 5 new engaged users in the measurement window.
+
+**Risk to watch:** the soft-end-on-pause means a user who paces — pause / resume / pause / resume — emits multiple `breathing_session_end` events for the same session. GA4 funnel reports may need to count distinct `sessionId` (param) not distinct events. Tracked in UX-BACKLOG #20 (custom dimension).
+
+---
 
 ### 2026-05-05: Engaged-Minutes Tracking — Fix Double-Counting + Stop-Event Sync
 

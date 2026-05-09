@@ -112,6 +112,12 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
   const [themeColor, setThemeColor] = useState(BREATHING_PATTERNS[initialMode].color);
   const [totalMinutes, setTotalMinutes] = useState(0);
   const [sessionsCompleted, setSessionsCompleted] = useState(0);
+  // Identity of the in-progress session. Set on first start, kept across
+  // pause/resume, cleared on hard-end (complete/mode-switch). committed
+  // tracks how many seconds of THIS session have already been credited
+  // to totalMinutes — so resume → next pause only commits the new delta.
+  const [sessionId, setSessionId] = useState<string | null>(null);
+  const [sessionCommittedSeconds, setSessionCommittedSeconds] = useState(0);
   const [themePreference, setThemePreference] = useState<ThemePreference>('system');
   const [systemPrefersDark, setSystemPrefersDark] = useState(false);
   const [themeReady, setThemeReady] = useState(false);
@@ -483,6 +489,53 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     updateDurationParam(value);
   }, [updateDurationParam]);
 
+  // End the in-progress session. `hard` resets seconds + sessionId so a
+  // future togglePlay starts fresh; soft (pause) keeps seconds + id so
+  // resume picks up where the user left off, and a later commit only
+  // credits the new delta (no double-count).
+  const endSession = useCallback(
+    (
+      reason: 'paused' | 'completed' | 'mode_switched',
+      seconds: number,
+      hard: boolean
+    ) => {
+      const delta = seconds - sessionCommittedSeconds;
+      let newMinutes = totalMinutes;
+      let newSessions = sessionsCompleted;
+      if (delta > 0) {
+        newMinutes = totalMinutes + Math.floor(delta / 60);
+        // Count the session exactly once — on the first commit. Subsequent
+        // pause→resume→pause cycles update minutes but not the session count.
+        if (sessionCommittedSeconds === 0) newSessions = sessionsCompleted + 1;
+        setTotalMinutes(newMinutes);
+        if (newSessions !== sessionsCompleted) setSessionsCompleted(newSessions);
+        setSessionCommittedSeconds(seconds);
+        if (reason === 'completed' || reason === 'mode_switched') {
+          onSessionComplete(seconds);
+        }
+        syncStats(newMinutes, newSessions);
+      }
+      trackEvent('breathing_session_end', {
+        mode: activeMode,
+        reason,
+        seconds_elapsed: seconds,
+      });
+      if (hard) {
+        setSessionSeconds(0);
+        setSessionId(null);
+        setSessionCommittedSeconds(0);
+      }
+    },
+    [
+      activeMode,
+      onSessionComplete,
+      sessionCommittedSeconds,
+      sessionsCompleted,
+      syncStats,
+      totalMinutes,
+    ]
+  );
+
   const handleTogglePlay = useCallback(async () => {
     const audio = getAudioService();
     if (!isRunning) {
@@ -494,7 +547,19 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       }
 
       setIsRunning(true);
-      trackEvent('breathing_session_start', { mode: activeMode, duration: selectedDuration ?? 0 });
+      // Only emit a fresh "start" + assign a new sessionId when this is a
+      // true start (not a resume from pause). Resume keeps the same id so
+      // the next end-commit credits only the new delta.
+      const isResume = sessionId !== null && sessionSeconds > 0;
+      if (!isResume) {
+        setSessionId(
+          typeof crypto !== 'undefined' && 'randomUUID' in crypto
+            ? crypto.randomUUID()
+            : `${Date.now()}-${Math.random().toString(36).slice(2)}`
+        );
+        setSessionCommittedSeconds(0);
+        trackEvent('breathing_session_start', { mode: activeMode, duration: selectedDuration ?? 0 });
+      }
 
       // Check if this is Wim Hof (protocol mode)
       if (activeMode === ModeName.WimHof) {
@@ -547,24 +612,17 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       setIsProtocolMode(false);
       setPhase(BreathingPhase.Idle);
       setInstructionKey('session.paused');
-      trackEvent('breathing_session_pause', { mode: activeMode, seconds_elapsed: sessionSeconds });
+      // Soft end: commit elapsed time so a pause-and-walk-away still credits
+      // minutes. Resume keeps sessionId + sessionSeconds, and the next commit
+      // only credits the new delta — server's GREATEST guards against
+      // double-counting if both fire.
+      endSession('paused', sessionSeconds, false);
       audio.stopDrone();
       audio.stopPinkNoise();
       audio.stopBinaural();
       setScale(0);
     }
-  }, [isRunning, activeMode, themeColor, getAudioService, isIOS, soundStatus, sessionSeconds, selectedDuration, setInstructionKey]);
-
-  const commitSession = useCallback((seconds: number) => {
-    if (seconds === 0) return;
-    const newMinutes = totalMinutes + Math.floor(seconds / 60);
-    const newSessions = sessionsCompleted + 1;
-    setTotalMinutes(newMinutes);
-    setSessionsCompleted(newSessions);
-    onSessionComplete(seconds);
-    syncStats(newMinutes, newSessions);
-    setSessionSeconds(0);
-  }, [totalMinutes, sessionsCompleted, onSessionComplete, syncStats]);
+  }, [isRunning, activeMode, themeColor, getAudioService, isIOS, soundStatus, sessionSeconds, selectedDuration, setInstructionKey, sessionId, endSession]);
 
   const handleStop = () => {
     const audio = getAudioService();
@@ -579,8 +637,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       isUserControlledHold: false
     });
     setInstructionKey('session.ready_to_start');
-    trackEvent('breathing_session_stop', { mode: activeMode, seconds_elapsed: sessionSeconds });
-    commitSession(sessionSeconds);
+    endSession('mode_switched', sessionSeconds, true);
     setScale(0);
     audio.stopDrone();
     audio.stopPinkNoise();
@@ -920,14 +977,13 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       setIsRunning(false);
       setPhase(BreathingPhase.Idle);
       setInstructionKey('session.complete');
-      trackEvent('breathing_session_complete', { mode: activeMode, seconds_elapsed: sessionSeconds });
-      commitSession(sessionSeconds);
+      endSession('completed', sessionSeconds, true);
       // Stop all audio
       audio.stopDrone();
       audio.stopPinkNoise();
       audio.stopBinaural();
     }
-  }, [activeMode, selectedDuration, isRunning, sessionSeconds, getAudioService, setInstructionKey, commitSession]);
+  }, [selectedDuration, isRunning, sessionSeconds, getAudioService, setInstructionKey, endSession]);
 
   useEffect(() => {
     if (!isRunning && !aiReasoning) {
