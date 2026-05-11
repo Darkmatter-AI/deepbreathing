@@ -37,8 +37,8 @@ export function FadingHeroTitle({ label, title, subtitle, headingLevel = 1, clas
     >
       <p className="text-xs uppercase tracking-[0.35em] text-primary">{label}</p>
       <div>
-        <HeadingTag className="text-3xl font-semibold text-foreground sm:text-4xl lg:text-5xl">{title}</HeadingTag>
-        <p className="mt-3 text-base text-muted-foreground sm:mt-4 sm:text-lg">{subtitle}</p>
+        <HeadingTag className="text-xl font-semibold text-foreground sm:text-4xl lg:text-5xl">{title}</HeadingTag>
+        <p className="mt-3 text-sm text-muted-foreground sm:mt-4 sm:text-lg">{subtitle}</p>
       </div>
       {children}
     </div>

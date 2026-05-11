@@ -55,6 +55,7 @@ interface ResonanceProps {
   forcedTheme?: 'light' | 'dark';
   backgroundVariant?: 'default' | 'winter-blue';
   embedMode?: boolean;
+  noMobileBottomPad?: boolean;
 }
 
 // Valid duration values in seconds (clamped to prevent abuse)
@@ -93,7 +94,7 @@ const toRgba = (hex: string, alpha: number) => {
   return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 };
 
-const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMode, immersive, snowMode = false, forcedTheme, backgroundVariant = 'default', embedMode = false }) => {
+const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMode, immersive, snowMode = false, forcedTheme, backgroundVariant = 'default', embedMode = false, noMobileBottomPad = false }) => {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -1222,7 +1223,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
         )}
       </header>
 
-      <main className="relative z-10 flex flex-1 flex-col items-center justify-center pb-44 sm:pb-0">
+      <main className={`relative z-10 flex flex-1 flex-col items-center justify-center sm:pb-0 ${noMobileBottomPad ? 'pb-24' : 'pb-44'}`}>
         {/* Protocol UI: Round and breath counter */}
         {isProtocolMode && isRunning && (
           <div className="absolute top-8 left-0 right-0 z-20 flex flex-col items-center gap-2">

@@ -110,14 +110,17 @@ export default function HomePage() {
       <h1 className="sr-only">Deep Breathing Exercises</h1>
       <JsonLd data={[websiteSchema, faqSchema]} />
 
-      <section className="px-6 pt-24 pb-2 sm:px-8 sm:pt-28 lg:hidden">
-        {heroHeader}
-      </section>
-
-      <section className="relative isolate w-full text-foreground lg:min-h-screen">
-        <Suspense fallback={<div className="min-h-[60vh] w-full lg:min-h-screen" aria-hidden="true" />}>
-          <BreathingVisualizer />
+      <section className="relative isolate w-full text-foreground min-h-screen">
+        <Suspense fallback={<div className="min-h-screen w-full" aria-hidden="true" />}>
+          <BreathingVisualizer className="min-h-screen" />
         </Suspense>
+        {/* Mobile: absolute at bottom so orb fills full screen; fades when running */}
+        <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-20 px-6 pb-20 sm:px-8 lg:hidden">
+          <div className="pointer-events-auto">
+            {heroHeader}
+          </div>
+        </div>
+        {/* Desktop: left column overlay */}
         <div className="absolute inset-y-0 left-0 z-30 hidden w-full max-w-xl px-6 py-20 lg:flex lg:flex-col lg:justify-center">
           {heroHeader}
         </div>
@@ -156,19 +159,42 @@ export default function HomePage() {
           <div>
             <h2 className="text-3xl font-semibold text-card-foreground">Pick a mode</h2>
           </div>
-          <div className="mt-4 flex snap-x snap-mandatory gap-4 overflow-x-auto pt-4 pb-8 -mx-8 no-scrollbar md:mt-8 md:grid md:grid-cols-2 md:gap-4 md:overflow-visible md:pt-0 md:pb-0 md:mx-0 md:px-0">
+
+          {/* Mobile: pill grid — all visible at once, no scrolling */}
+          <div className="mt-4 flex flex-wrap gap-2 md:hidden">
             {featuredBreathingPages.map((page) => {
               const pattern = BREATHING_PATTERNS[page.mode];
               if (!pattern) return null;
-
               return (
                 <Link
                   key={page.slug}
                   href={`/breathe/${page.slug}`}
-                  className="group relative min-w-[70vw] snap-center rounded-3xl border bg-card p-6 transition-all first:ml-8 last:mr-8 md:first:ml-0 md:last:mr-0 hover:scale-[1.02] sm:min-w-0"
-                  style={{
-                    borderColor: `${pattern.color}40`,
-                  }}
+                  className="rounded-full border px-4 py-2 text-sm font-semibold transition-colors hover:bg-muted"
+                  style={{ borderColor: `${pattern.color}60`, color: pattern.color }}
+                >
+                  {pattern.name}
+                </Link>
+              );
+            })}
+            <Link
+              href="/breathe"
+              className="rounded-full border border-border px-4 py-2 text-sm font-semibold text-muted-foreground transition-colors hover:bg-muted"
+            >
+              All techniques →
+            </Link>
+          </div>
+
+          {/* Desktop: card grid */}
+          <div className="hidden md:mt-8 md:grid md:grid-cols-2 md:gap-4">
+            {featuredBreathingPages.map((page) => {
+              const pattern = BREATHING_PATTERNS[page.mode];
+              if (!pattern) return null;
+              return (
+                <Link
+                  key={page.slug}
+                  href={`/breathe/${page.slug}`}
+                  className="group relative rounded-3xl border bg-card p-6 transition-all hover:scale-[1.02]"
+                  style={{ borderColor: `${pattern.color}40` }}
                 >
                   <p className="text-xs font-medium uppercase tracking-[0.3em] opacity-80" style={{ color: pattern.color }}>
                     /{page.slug}
