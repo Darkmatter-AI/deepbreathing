@@ -23,6 +23,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-05-11 | [Mobile homepage: pills mode picker + full-screen orb + restore hero text](#2026-05-11-mobile-homepage-pills-mode-picker--full-screen-orb--restore-hero-text) | 🔄 Implemented |
 | 2026-05-08 | [Unify session-end events + commit-on-pause](#2026-05-08-unify-session-end-events--commit-on-pause) | 🔄 Implemented |
 | 2026-05-05 | [Engaged-Minutes Tracking — Fix Double-Counting + Stop-Event Sync](#2026-05-05-engaged-minutes-tracking--fix-double-counting--stop-event-sync) | 🔄 Implemented |
 | 2026-05-05 | [GA4 User Identification (user_id + signed_up property)](#2026-05-05-ga4-user-identification-user_id--signed_up-property) | 🔄 Implemented |
@@ -31,13 +32,51 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-04-27 | [Mobile Hero Above the Fold](#2026-04-27-mobile-hero-above-the-fold) | 🔄 Implemented |
 | 2026-04-27 | [page_viewed_breathing Event + sessions_completed Sync Fix](#2026-04-27-page_viewed_breathing-event--sessions_completed-sync-fix) | 🔄 Implemented |
 
-**Roll-up by status (6 entries):** 🔄 6 Implemented (all post-2026-04-27, none yet measured against pre-committed criteria — first read on the 2026-05-19 checkpoint, full read 2026-06-02).
+**Roll-up by status (7 entries):** 🔄 7 Implemented (all post-2026-04-27, none yet measured against pre-committed criteria — first read on the 2026-05-19 checkpoint, full read 2026-06-02; latest mobile-redesign reads 2026-05-22 / 2026-06-05).
 
 See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state, [docs/UX-BACKLOG.md](UX-BACKLOG.md) for what's next, [docs/runbooks/weekly-funnel-refresh.md](runbooks/weekly-funnel-refresh.md) for how to pull the numbers.
 
 ---
 
 ## Active Experiments
+
+### 2026-05-11: Mobile homepage: pills mode picker + full-screen orb + restore hero text
+
+**Hypothesis:** Three coupled mobile homepage problems compound to suppress engagement:
+1. The "Pick a mode" section was a horizontal-scroll carousel of large cards. Users couldn't see what modes existed without swiping, so mode discovery was poor and the picker felt buried. `mode_switch` only fired 2× in the 7d to 2026-05-07 (1.7% of starts).
+2. The orb wasn't full-screen on mobile — a cream-colored hero block sat above it in document flow, and the page background showed below the orb. When a user pressed play, the immersive effect was broken by visible page chrome (content cards visible below the fold).
+3. The label ("FREE BREATHING VISUALIZER") and subtitle ("Visual pacing that helps your body downshift…") were `hidden sm:block` — mobile users got the H2 + buttons only, no context, no value-prop. The Apr 27 "Mobile Hero Above the Fold" change moved the hero up but didn't restore the supporting copy.
+
+Restoring intent: small pills make modes visible at a glance (5 visible + "All techniques" pill), the orb fills `min-h-screen` and hero text is absolutely positioned at the bottom so when running it fades to invisible and the orb takes over the full viewport, and the label/subtitle are visible on mobile again. Expect: more mode exploration, lower mid-session abandon (the immersive payoff is what keeps users in the orb), and slightly higher start rate from better context above the fold.
+
+**Baseline (7d May 1–7, 2026, GA4 from FUNNEL-DASHBOARD.md):**
+- `breathing_session_start`: 119 users
+- start → pause: 47.9% (57 users)
+- start → complete: 21.0% (25 users)
+- `mode_switch`: 2 (1.7% of starts) — mode picker barely engaged with
+- `conversion_prompt_shown` → signup: 11.5%
+- Mobile abandonment last reading (May 5 GA4 28d): 74.3% (from Apr 27 hero experiment)
+- Mobile vs desktop split not pulled in the 2026-05-08 refresh — next refresh on 2026-05-15 should pick this up before the measure-after window.
+
+**Change:**
+- Commit: [a900369](https://github.com/Darkmatter-AI/deepbreathing/commit/a900369)
+- Files: `src/app/page.tsx`, `src/components/breathe/fading-hero-title.tsx`, `src/components/breathing-visualizer.tsx`, `src/components/resonance/Resonance.tsx`
+- Mode picker: mobile shows `flex-wrap` pills (per-mode color border, ~36px tall) instead of `snap-x` carousel of cards; desktop unchanged (2-col card grid).
+- Hero layout: outer section is `min-h-screen`; BreathingVisualizer stretches via `flex-1` so Resonance fills the full viewport; mobile hero text is `absolute bottom-0 pb-20` so it overlays the bottom of the orb section and fades to `opacity-0` when running (FadingHeroTitle and HomeHeroActions both listen to `resonance:run-state`).
+- Resonance gained a `noMobileBottomPad` prop that swaps mobile `pb-44` for `pb-24`, so the duration chips clear the absolute hero text below without overlap.
+- FadingHeroTitle: removed `hidden sm:block` from label and subtitle so they render on mobile.
+
+**Pre-committed success criteria (read 2026-05-22, verdict 2026-06-05):**
+- ✅ Success if **any 2 of these 3 move** by 2026-06-05 vs the 2026-05-01–07 baseline:
+  - `mode_switch` event rate ≥4% of starts (currently 1.7%) — direct mode picker engagement.
+  - Mobile `start → complete` rate up ≥5 pp (mobile-only when split is pulled; if mobile split missing, fall back to overall start → complete ≥26% vs 21.0% baseline). Hypothesis: full-screen orb keeps users engaged through the whole session.
+  - Mobile `breathing_session_start` per `page_viewed_breathing` up ≥3 pp. Hypothesis: visible label + subtitle adds enough context to convert a hover into a start.
+- ❌ Failed if `mode_switch` stays ≤2% AND `start → complete` stays ≤22% AND start rate doesn't move. (No movement on any leading indicator = the redesign isn't paying for itself.)
+- ⚪ Inconclusive if traffic in the measurement window is <80 starts (cohort too small for the 5 pp swing to be detectable).
+
+**Risk to watch:** the `noMobileBottomPad` prop changed Resonance's mobile main padding from `pb-44` to `pb-24` for the homepage path. The original `pb-44` was reserving space for the fixed `bottom-6` sound-hint banner. If a user lands on the homepage, hits play with sound muted, and the banner appears, it may now overlap with the duration chips area. Worth a real-device test on iPhone Safari. Also: the absolute-positioned hero on mobile means hero text and the orb's particle field overlap visually — this is intentional (transparent over particles) but watch GSC/PSI for any CLS regression on mobile.
+
+---
 
 ### 2026-05-08: Unify session-end events + commit-on-pause
 
