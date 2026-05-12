@@ -50,6 +50,7 @@ export async function GET(request: NextRequest) {
     const rgb = hexToRgb(color);
     const colorRgba = (alpha: number) => `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${alpha})`;
 
+    // Same simplification as /og/[slug] — satori-friendly subset only.
     return new ImageResponse(
       (
         <div
@@ -60,132 +61,42 @@ export async function GET(request: NextRequest) {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            background: `linear-gradient(135deg, ${colorRgba(0.1)} 0%, ${colorRgba(0.05)} 50%, ${colorRgba(0.1)} 100%)`,
-            position: 'relative',
+            background: `linear-gradient(135deg, ${colorRgba(0.18)} 0%, ${colorRgba(0.08)} 100%)`,
+            fontFamily: 'Inter',
           }}
         >
-          {/* Background particles effect - using fixed positions for edge runtime */}
-          {/* display: flex required by satori when a div has multiple children;
-              children are position: absolute so layout is unaffected. */}
-          <div
-            style={{
-              position: 'absolute',
-              width: '100%',
-              height: '100%',
-              opacity: 0.3,
-              display: 'flex',
-            }}
-          >
-            {[
-              { x: 100, y: 80, size: 3, opacity: 0.4 },
-              { x: 300, y: 120, size: 2, opacity: 0.3 },
-              { x: 500, y: 90, size: 4, opacity: 0.5 },
-              { x: 700, y: 150, size: 2.5, opacity: 0.35 },
-              { x: 900, y: 100, size: 3.5, opacity: 0.45 },
-              { x: 1100, y: 130, size: 2, opacity: 0.3 },
-              { x: 150, y: 300, size: 3, opacity: 0.4 },
-              { x: 350, y: 350, size: 2.5, opacity: 0.35 },
-              { x: 550, y: 320, size: 4, opacity: 0.5 },
-              { x: 750, y: 380, size: 2, opacity: 0.3 },
-              { x: 950, y: 340, size: 3.5, opacity: 0.45 },
-              { x: 1150, y: 360, size: 2.5, opacity: 0.35 },
-              { x: 200, y: 500, size: 3, opacity: 0.4 },
-              { x: 400, y: 550, size: 2, opacity: 0.3 },
-              { x: 600, y: 520, size: 4, opacity: 0.5 },
-              { x: 800, y: 580, size: 2.5, opacity: 0.35 },
-              { x: 1000, y: 540, size: 3.5, opacity: 0.45 },
-              { x: 50, y: 250, size: 2, opacity: 0.3 },
-              { x: 250, y: 450, size: 3, opacity: 0.4 },
-              { x: 1050, y: 480, size: 2.5, opacity: 0.35 },
-            ].map((particle, i) => (
-              <div
-                key={i}
-                style={{
-                  position: 'absolute',
-                  left: particle.x,
-                  top: particle.y,
-                  width: particle.size,
-                  height: particle.size,
-                  borderRadius: '50%',
-                  background: color,
-                  opacity: particle.opacity,
-                }}
-              />
-            ))}
-          </div>
-
-          {/* Outer glow ring */}
-          <div
-            style={{
-              position: 'absolute',
-              width: 500,
-              height: 500,
-              borderRadius: '50%',
-              border: `2px solid ${colorRgba(0.2)}`,
-              transform: 'scale(1.1)',
-            }}
-          />
-
-          {/* Main orb with gradient */}
           <div
             style={{
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              width: 400,
-              height: 400,
-              borderRadius: '50%',
-              background: `radial-gradient(circle at 30% 30%, ${color} 0%, ${color}DD 60%, ${color}AA 100%)`,
-              boxShadow: `0 0 60px ${colorRgba(0.6)}, inset 0 0 40px ${colorRgba(0.7)}`,
-              position: 'relative',
+              width: 420,
+              height: 420,
+              borderRadius: 210,
+              background: color,
+              marginBottom: 48,
             }}
           >
-            {/* Inner glow */}
-            <div
-              style={{
-                position: 'absolute',
-                width: '100%',
-                height: '100%',
-                borderRadius: '50%',
-                background: `radial-gradient(circle at 40% 40%, ${colorRgba(0.55)}, transparent 65%)`,
-                filter: 'blur(40px)',
-              }}
-            />
-
-            {/* Title text */}
             <div
               style={{
                 display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
                 color: 'white',
                 fontSize: 42,
                 fontWeight: 700,
                 textAlign: 'center',
-                textTransform: 'uppercase',
-                letterSpacing: '0.08em',
-                lineHeight: 1.1,
                 padding: '0 40px',
-                zIndex: 10,
-                textShadow: '0 2px 8px rgba(0,0,0,0.3)',
+                lineHeight: 1.15,
               }}
             >
-              {title}
+              {title.toUpperCase()}
             </div>
           </div>
-
-          {/* Subtitle */}
           <div
             style={{
-              position: 'absolute',
-              bottom: 80,
               display: 'flex',
-              alignItems: 'center',
               color: color,
-              fontSize: 24,
+              fontSize: 28,
               fontWeight: 500,
-              opacity: 0.9,
             }}
           >
             {subtitle}
