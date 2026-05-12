@@ -4,6 +4,7 @@ import React from 'react';
 import { breathingPageMap } from '@/data/breathing-pages';
 import { BREATHING_PATTERNS } from '@/components/resonance/constants';
 import { ModeName } from '@/components/resonance/types';
+import { loadInterFonts } from '@/lib/og-fonts';
 
 export const runtime = 'edge';
 
@@ -180,6 +181,7 @@ export async function GET(
       {
         width: 1200,
         height: 630,
+        fonts: await loadInterFonts(),
       }
     );
   } catch (e: any) {
