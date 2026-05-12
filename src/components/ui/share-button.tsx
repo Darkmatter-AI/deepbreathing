@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect, useCallback } from 'react';
+import { appendShareUtm } from '@/lib/share-utm';
 
 interface ShareButtonProps {
   url: string;
@@ -81,7 +82,7 @@ export function ShareButton({
     // Try native share first (mobile)
     if (navigator.share) {
       try {
-        await navigator.share({ title, text, url });
+        await navigator.share({ title, text, url: appendShareUtm(url, 'native') });
         return;
       } catch {
         // User cancelled or share failed, fall through to popover
@@ -90,7 +91,7 @@ export function ShareButton({
 
     // Auto-copy URL to clipboard and open popover
     try {
-      await copyToClipboard(url);
+      await copyToClipboard(appendShareUtm(url, 'copy'));
       setUrlCopied(true);
       setTimeout(() => setUrlCopied(false), 2000);
     } catch {
@@ -100,7 +101,7 @@ export function ShareButton({
   };
 
   const handleCopyUrl = async () => {
-    await copyToClipboard(url);
+    await copyToClipboard(appendShareUtm(url, 'copy'));
     setUrlCopied(true);
     setTimeout(() => setUrlCopied(false), 2000);
   };
@@ -148,7 +149,7 @@ export function ShareButton({
               <input
                 type="text"
                 readOnly
-                value={url}
+                value={appendShareUtm(url, 'copy')}
                 className="flex-1 min-w-0 rounded-lg border border-border bg-muted/50 px-2.5 py-1.5 text-xs text-card-foreground select-all outline-none focus:border-primary/50"
                 onClick={(e) => (e.target as HTMLInputElement).select()}
               />

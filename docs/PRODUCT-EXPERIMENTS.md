@@ -23,6 +23,8 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-05-12 | [Direct +47% WoW — hypothesis: organic shares from PT/DE translations](#2026-05-12-direct-47-wow--hypothesis-organic-shares-from-ptde-translations) | 🟡 Inconclusive |
+| 2026-05-12 | [UTM-tag share buttons (attribute outbound shares back to GA4)](#2026-05-12-utm-tag-share-buttons-attribute-outbound-shares-back-to-ga4) | 🔄 Implemented |
 | 2026-05-11 | [Mobile homepage: pills mode picker + full-screen orb + restore hero text](#2026-05-11-mobile-homepage-pills-mode-picker--full-screen-orb--restore-hero-text) | 🔄 Implemented |
 | 2026-05-08 | [Unify session-end events + commit-on-pause](#2026-05-08-unify-session-end-events--commit-on-pause) | 🔄 Implemented |
 | 2026-05-05 | [Engaged-Minutes Tracking — Fix Double-Counting + Stop-Event Sync](#2026-05-05-engaged-minutes-tracking--fix-double-counting--stop-event-sync) | 🔄 Implemented |
@@ -32,13 +34,69 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-04-27 | [Mobile Hero Above the Fold](#2026-04-27-mobile-hero-above-the-fold) | 🔄 Implemented |
 | 2026-04-27 | [page_viewed_breathing Event + sessions_completed Sync Fix](#2026-04-27-page_viewed_breathing-event--sessions_completed-sync-fix) | 🔄 Implemented |
 
-**Roll-up by status (7 entries):** 🔄 7 Implemented (all post-2026-04-27, none yet measured against pre-committed criteria — first read on the 2026-05-19 checkpoint, full read 2026-06-02; latest mobile-redesign reads 2026-05-22 / 2026-06-05).
+**Roll-up by status (9 entries):** 🔄 8 Implemented · 🟡 1 Inconclusive (the 2026-05-12 Direct surge). First read on the 2026-05-19 checkpoint, full read 2026-06-02; mobile-redesign + UTM-tagging reads 2026-05-22 / 2026-06-05.
 
 See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state, [docs/UX-BACKLOG.md](UX-BACKLOG.md) for what's next, [docs/runbooks/weekly-funnel-refresh.md](runbooks/weekly-funnel-refresh.md) for how to pull the numbers.
 
 ---
 
 ## Active Experiments
+
+### 2026-05-12: Direct +47% WoW — hypothesis: organic shares from PT/DE translations
+
+**Hypothesis:** Last 7d (May 5–11) showed Active users 325 (+31.0% WoW) and New users 295 (+32.3%). Channel breakdown of new users:
+- (direct) / (none): 115 (+47.4%, +37 users) — biggest single contributor
+- google / organic: 72 (+30.9%, +17)
+- bing / organic: 48 (+26.3%, +10)
+- duckduckgo / organic: 18 (+50%, +6); ecosia / organic: 6 (+100%, +3)
+- chatgpt.com (referral + not set, combined): 15 (−32%, −7)
+
+Country lift was concentrated in translated/EU markets: Portugal +1,000%, Germany +275%, Poland +243%, UK +93%. No manual outbound sharing was done in the window (confirmed with founder). F5Bot wasn't tracking the relevant keywords, but a manual Reddit search found no posts.
+
+**Best hypothesis:** The Direct surge is organic word-of-mouth — users finding the site via search and re-sharing the URL via mobile messengers (WhatsApp, iMessage, in-app browsers) which strip referrers and land as Direct. PT/DE country distribution matches: those locales' translations (deployed Mar–Apr 2026, indexed via Bing + GSC May 5) are now generating shareable, in-language content. Direct's engagement actually *improved* (engaged-sessions/user 0.46 → 0.67, +45%), so this isn't bot traffic.
+
+**Alternative hypotheses (less likely):**
+- iOS Safari ITP increased referrer stripping — but no platform-wide change in the window.
+- A specific link shared in a closed channel (Slack/Discord group) — possible but unobservable.
+- Returning users mis-attributed as new — unlikely; new-user count rose more than returning-user count (+32% vs +19%).
+
+**Pre-committed read criteria (2026-05-22, verdict 2026-06-05):**
+- ✅ Confirmed if: in the next 7d window with UTM-tagged shares live (see [the 2026-05-12 UTM tagging entry below](#2026-05-12-utm-tag-share-buttons-attribute-outbound-shares-back-to-ga4)), `utm_source=share` appears in GA4 with ≥10 new users AND Direct remains elevated (>100 new users / 7d).
+- ❌ Rejected if: `utm_source=share` shows <3 new users in 14d AND Direct falls back to <80 new users / 7d (i.e. the surge was a one-week anomaly, not a sustained share-driven channel).
+- 🟡 Mixed if: `utm_source=share` shows traffic but Direct stays elevated independently (i.e. only a fraction of the share traffic was passing through our buttons).
+
+**Status:** 🟡 Inconclusive — can't attribute Direct surge without instrumentation. UTM-tagging change (below) is the instrumentation; this entry will get a verdict on 2026-06-05.
+
+---
+
+### 2026-05-12: UTM-tag share buttons (attribute outbound shares back to GA4)
+
+**Hypothesis:** Direct is currently the largest channel for new-user growth (115 of 295 new users last 7d, +47% WoW), but we have no visibility into how much of that is shares from our own share buttons vs untagged third-party shares vs pure brand-typed traffic. Tagging the URLs that flow through `ShareButton`, `HolidayShareButton`, and the `for/share-button.tsx` variant with `utm_source=share&utm_medium=<native|copy>&utm_campaign=user_share` will turn anonymous Direct traffic into a measurable channel — at least for users who share via the in-product UI.
+
+This won't capture pure copy-paste from the browser URL bar (out of our control) or shares of pages that don't have a share button, but it will give a lower-bound signal: "≥X new users came from the share button itself."
+
+**Baseline (May 5–11, 2026):**
+- Direct new users: 115 / 7d (+47.4% WoW)
+- `utm_source` parameters observed in GA4: 0 (no shares are tagged today)
+- Pages with a share button: all `/breathe/*` patterns (via `pattern-page.tsx`), all `/for/*` use cases (via `use-case-page.tsx`), `/holiday-breathing-exercises`, and the 1/2/5-minute timer pages.
+
+**Change:**
+- New helper: [src/lib/share-utm.ts](../src/lib/share-utm.ts) — `appendShareUtm(url, medium)` returns the input URL with `utm_source=share`, `utm_medium=<native|copy>`, `utm_campaign=user_share` appended (idempotent — re-tagging overwrites instead of appending).
+- Wired into all three share-button implementations:
+  - [src/components/ui/share-button.tsx](../src/components/ui/share-button.tsx) — the main popover variant. Tags the URL passed to `navigator.share`, the auto-copied URL, the manual "Copy" button, and the URL displayed in the popover's input field so the user sees what they're actually copying.
+  - [src/app/holiday-breathing-exercises/share-button.tsx](../src/app/holiday-breathing-exercises/share-button.tsx)
+  - [src/app/for/share-button.tsx](../src/app/for/share-button.tsx)
+- The iframe embed snippet (in the main ShareButton popover) is intentionally **not** tagged — embeds live on third-party pages and we already get attribution via the referrer header.
+- Test: [scripts/tests/share-utm.test.mjs](../scripts/tests/share-utm.test.mjs) — verifies the helper exists, sets the three UTM params, is idempotent, and that all three share-button files import and call it.
+
+**Pre-committed success criteria (read 2026-05-22, verdict 2026-06-05):**
+- ✅ Success if: by 2026-06-05, GA4 shows ≥10 new users with `session_source = share` (or `utm_source=share` in event params) in the prior 14d. AND `utm_medium=native` vs `utm_medium=copy` are both non-zero (means both paths are firing).
+- ❌ Failed if: by 2026-06-05, zero `utm_source=share` traffic in GA4 despite >50 share button impressions in the same window (means the params aren't surviving the share flow — likely because messenger apps are stripping query strings).
+- ⚪ Inconclusive if: <5 share-button clicks in the window (no signal either way).
+
+**Risk to watch:** Some messengers (Slack, iMessage, WhatsApp) preserve query strings; others (older Facebook, some email clients) strip them. If `utm_source=share` shows up at much lower volume than expected, the medium-stripping hypothesis is the first thing to check, not the share button itself being unused.
+
+---
 
 ### 2026-05-11: Mobile homepage: pills mode picker + full-screen orb + restore hero text
 

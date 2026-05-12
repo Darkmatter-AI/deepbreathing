@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { appendShareUtm } from '@/lib/share-utm';
 
 export function HolidayShareButton() {
   const [copied, setCopied] = useState(false);
@@ -15,7 +16,7 @@ export function HolidayShareButton() {
         await navigator.share({
           title: 'Holiday Breathing Exercises',
           text: shareText,
-          url: shareUrl,
+          url: appendShareUtm(shareUrl, 'native'),
         });
         return;
       } catch (err) {
@@ -23,15 +24,17 @@ export function HolidayShareButton() {
       }
     }
 
+    const taggedUrl = appendShareUtm(shareUrl, 'copy');
+
     // Fallback: copy to clipboard
     try {
-      await navigator.clipboard.writeText(`${shareText} ${shareUrl}`);
+      await navigator.clipboard.writeText(`${shareText} ${taggedUrl}`);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
       // Fallback for older browsers
       const textArea = document.createElement('textarea');
-      textArea.value = `${shareText} ${shareUrl}`;
+      textArea.value = `${shareText} ${taggedUrl}`;
       document.body.appendChild(textArea);
       textArea.select();
       document.execCommand('copy');

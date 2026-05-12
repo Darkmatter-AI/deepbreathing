@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { appendShareUtm } from '@/lib/share-utm';
 
 interface ShareButtonProps {
   url: string;
@@ -21,7 +22,7 @@ export function ShareButton({ url, title, text, buttonText = "Share this guide",
         await navigator.share({
           title,
           text,
-          url,
+          url: appendShareUtm(url, 'native'),
         });
         return;
       } catch (err) {
@@ -29,15 +30,17 @@ export function ShareButton({ url, title, text, buttonText = "Share this guide",
       }
     }
 
+    const taggedUrl = appendShareUtm(url, 'copy');
+
     // Fallback: copy to clipboard
     try {
-      await navigator.clipboard.writeText(`${text} ${url}`);
+      await navigator.clipboard.writeText(`${text} ${taggedUrl}`);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
       // Fallback for older browsers
       const textArea = document.createElement('textarea');
-      textArea.value = `${text} ${url}`;
+      textArea.value = `${text} ${taggedUrl}`;
       document.body.appendChild(textArea);
       textArea.select();
       document.execCommand('copy');
