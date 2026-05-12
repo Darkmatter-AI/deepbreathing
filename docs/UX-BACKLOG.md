@@ -155,19 +155,32 @@ Bottom-left dark icon during the audit was the Vercel team toolbar. Should be hi
 
 ---
 
-## P1 — Known bugs
+## Resolved bugs
 
-### 22. OG image route returns 0 bytes (WhatsApp / iMessage / Slack get no preview image)
+### 22. ✅ RESOLVED 2026-05-12 — OG image route returns 0 bytes (WhatsApp / iMessage / Slack get no preview image)
 
-**Symptom:** `/og/[slug]` and `/og?title=…` both return `200 OK` with `content-type: image/png` and `cache-control: public, immutable, max-age=31536000` — but `content-length: 0`. Confirmed Tue 2026-05-12 against `origin.deepbreathingexercises.com` (bypasses Cloudflare + mass-translate proxy, so they're not the cause). All slugs fail identically, including unknown slugs that hit the fallback path. Vercel runtime logs show no errors. The 1-year `cache-control` means once an empty body is generated, Vercel + CDN cache it for a year unless busted.
+**Was:** `/og/[slug]` and `/og?title=…` both returned `200 OK` with `content-type: image/png` and `content-length: 0` — every social platform showed shared deepbreathingexercises.com links with no preview image. Vercel runtime logs were initially silent.
 
-**Why it matters:** confirmed via a WhatsApp share test on 2026-05-12 — share card shows title + description (mass-translate / og:title works) but no preview image. Same likely true for iMessage, Slack, Discord, Telegram, LinkedIn, Twitter card-large-image.
+**Root cause:** three compounding satori issues, only the first of which surfaced any error signal at all:
+1. **No `fonts` option** passed to `ImageResponse` — satori silently failed mid-stream and Vercel logged nothing. Without fonts, every error after this point was masked.
+2. **Particles container had 20 children but no `display: flex`** — satori rejection became visible in runtime logs only after fix #1 was deployed.
+3. **Multiple satori-unfriendly CSS features** in the orb template (`radial-gradient(circle at X%)`, `inset` box-shadow, `filter: blur`, `textShadow`, `textTransform`, `letterSpacing`, absolutely-positioned subtitle without explicit dimensions). Each kept the 0-byte symptom going until the template was rewritten.
 
-**Likely root cause (untested):** `@vercel/og` 0.8.5 + Next.js 13.5.6 + edge runtime — common failure mode is missing explicit `fonts` config in `ImageResponse`, which silently returns empty body instead of erroring. Worth a 30-min spike to try one of: (a) bump `@vercel/og` to latest, (b) bump Next.js to 14.x, (c) add explicit Inter font to the `ImageResponse` options.
+**Fix:** three commits in the order they unblocked the next error:
+- [`6b9e198`](https://github.com/Darkmatter-AI/deepbreathing/commit/6b9e198) — add `src/lib/og-fonts.ts` (fetch Inter 400/700 TTF from Google Fonts at request time, force TTF via desktop UA), wire into both `/og` routes.
+- [`c9a2895`](https://github.com/Darkmatter-AI/deepbreathing/commit/c9a2895) — add `display: flex` to the particles container.
+- [`a56921f`](https://github.com/Darkmatter-AI/deepbreathing/commit/a56921f) — rewrite both routes to a satori-safe subset (flex column, linear-gradient background, solid-color orb, uppercase title, plain subtitle).
 
-**Quick verification:** `curl -sI https://origin.deepbreathingexercises.com/og/box` — should show non-zero `content-length`. If still zero after a fix attempt, the issue is deeper than fonts.
+**Verification:** `scripts/check-og-image.sh` hits 4 representative endpoints (`/og/box`, `/og/4-7-8`, `/og/coherent`, `/og?title=Box+Breathing&color=…`) and asserts HTTP 200, `image/png` content-type, body >10 KB, and a valid PNG header signature. Run post-deploy or after any change to the OG routes.
 
-**Impact on share traffic:** untaggable, but Direct +47% WoW (current spike) likely under-counts because previews-with-no-image have lower click-through than previews-with-image. Estimate ~10–20% lift in click-through once fixed.
+**Lessons for future satori work:**
+- Always pass an explicit `fonts: [...]` option to `ImageResponse` — without it, errors are silent.
+- Any div with multiple children needs `display: flex` (or `display: none`).
+- Avoid: `radial-gradient(circle at X% Y%)`, `inset` in `boxShadow`, `filter: blur`, `textShadow`, `textTransform`, `letterSpacing` — all have partial-to-no satori support and can crash rendering depending on version.
+- `position: absolute` children need explicit width/height (or all four insets).
+- Vercel runtime logs truncate error messages — query with `level=error` filter and grep for `Expected <div>` to find satori violations.
+
+**Remaining (separate work):** WhatsApp card *title* on `/pt/` and `/de/` is still English because the mass-translate proxy doesn't translate `og:title` / `twitter:title` ok keys. Tracked by the forensic agent in `mass-translate-frontend`; not a deep-breathing-repo concern.
 
 ---
 
