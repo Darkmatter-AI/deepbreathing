@@ -155,6 +155,22 @@ Bottom-left dark icon during the audit was the Vercel team toolbar. Should be hi
 
 ---
 
+## P1 — Known bugs
+
+### 22. OG image route returns 0 bytes (WhatsApp / iMessage / Slack get no preview image)
+
+**Symptom:** `/og/[slug]` and `/og?title=…` both return `200 OK` with `content-type: image/png` and `cache-control: public, immutable, max-age=31536000` — but `content-length: 0`. Confirmed Tue 2026-05-12 against `origin.deepbreathingexercises.com` (bypasses Cloudflare + mass-translate proxy, so they're not the cause). All slugs fail identically, including unknown slugs that hit the fallback path. Vercel runtime logs show no errors. The 1-year `cache-control` means once an empty body is generated, Vercel + CDN cache it for a year unless busted.
+
+**Why it matters:** confirmed via a WhatsApp share test on 2026-05-12 — share card shows title + description (mass-translate / og:title works) but no preview image. Same likely true for iMessage, Slack, Discord, Telegram, LinkedIn, Twitter card-large-image.
+
+**Likely root cause (untested):** `@vercel/og` 0.8.5 + Next.js 13.5.6 + edge runtime — common failure mode is missing explicit `fonts` config in `ImageResponse`, which silently returns empty body instead of erroring. Worth a 30-min spike to try one of: (a) bump `@vercel/og` to latest, (b) bump Next.js to 14.x, (c) add explicit Inter font to the `ImageResponse` options.
+
+**Quick verification:** `curl -sI https://origin.deepbreathingexercises.com/og/box` — should show non-zero `content-length`. If still zero after a fix attempt, the issue is deeper than fonts.
+
+**Impact on share traffic:** untaggable, but Direct +47% WoW (current spike) likely under-counts because previews-with-no-image have lower click-through than previews-with-image. Estimate ~10–20% lift in click-through once fixed.
+
+---
+
 ## P2 — Tracking gaps
 
 So future audits aren't guesswork:

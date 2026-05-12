@@ -20,6 +20,14 @@ test("appendShareUtm helper exists and sets utm_source/medium/campaign", () => {
   assert.match(src, /utm_campaign/);
 });
 
+test("share-utm exports getLocalizedShareText/Title that read DOM meta description and document.title", () => {
+  const src = fs.readFileSync(HELPER_PATH, "utf8");
+  assert.match(src, /export function getLocalizedShareText/);
+  assert.match(src, /export function getLocalizedShareTitle/);
+  assert.match(src, /meta\[name="description"\]/);
+  assert.match(src, /document\.title/);
+});
+
 test("appendShareUtm produces expected URL when imported", async () => {
   // Inline the helper's behavior to verify the contract, since the source is TS.
   // The real file is statically checked above; this verifies the algorithm we expect.
@@ -46,14 +54,12 @@ test("appendShareUtm produces expected URL when imported", async () => {
 });
 
 for (const rel of SHARE_BUTTON_FILES) {
-  test(`${rel} wires appendShareUtm into its share/copy flows`, () => {
+  test(`${rel} wires appendShareUtm + localized title/text into its share/copy flows`, () => {
     const full = path.join(ROOT, rel);
     assert.ok(fs.existsSync(full), `missing ${rel}`);
     const src = fs.readFileSync(full, "utf8");
-    assert.match(
-      src,
-      /appendShareUtm/,
-      `${rel} should import and call appendShareUtm before navigator.share / clipboard write`
-    );
+    assert.match(src, /appendShareUtm/, `${rel} should call appendShareUtm`);
+    assert.match(src, /getLocalizedShareText/, `${rel} should read meta description at click time so mass-translated locales get localized share text`);
+    assert.match(src, /getLocalizedShareTitle/, `${rel} should read document.title at click time`);
   });
 }

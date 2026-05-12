@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect, useCallback } from 'react';
-import { appendShareUtm } from '@/lib/share-utm';
+import { appendShareUtm, getLocalizedShareText, getLocalizedShareTitle } from '@/lib/share-utm';
 
 interface ShareButtonProps {
   url: string;
@@ -79,10 +79,12 @@ export function ShareButton({
   }, [popoverOpen, close]);
 
   const handleShare = async () => {
+    const liveTitle = getLocalizedShareTitle(title);
+    const liveText = getLocalizedShareText(text);
     // Try native share first (mobile)
     if (navigator.share) {
       try {
-        await navigator.share({ title, text, url: appendShareUtm(url, 'native') });
+        await navigator.share({ title: liveTitle, text: liveText, url: appendShareUtm(url, 'native') });
         return;
       } catch {
         // User cancelled or share failed, fall through to popover

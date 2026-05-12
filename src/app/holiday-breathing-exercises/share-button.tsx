@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { appendShareUtm } from '@/lib/share-utm';
+import { appendShareUtm, getLocalizedShareText, getLocalizedShareTitle } from '@/lib/share-utm';
 
 export function HolidayShareButton() {
   const [copied, setCopied] = useState(false);
@@ -10,12 +10,14 @@ export function HolidayShareButton() {
   const shareText = 'Holiday stress? This breathing exercise helps in 30 seconds.';
 
   const handleShare = async () => {
+    const liveTitle = getLocalizedShareTitle('Holiday Breathing Exercises');
+    const liveText = getLocalizedShareText(shareText);
     // Try native share first (mobile)
     if (navigator.share) {
       try {
         await navigator.share({
-          title: 'Holiday Breathing Exercises',
-          text: shareText,
+          title: liveTitle,
+          text: liveText,
           url: appendShareUtm(shareUrl, 'native'),
         });
         return;
@@ -28,13 +30,13 @@ export function HolidayShareButton() {
 
     // Fallback: copy to clipboard
     try {
-      await navigator.clipboard.writeText(`${shareText} ${taggedUrl}`);
+      await navigator.clipboard.writeText(`${liveText} ${taggedUrl}`);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
       // Fallback for older browsers
       const textArea = document.createElement('textarea');
-      textArea.value = `${shareText} ${taggedUrl}`;
+      textArea.value = `${liveText} ${taggedUrl}`;
       document.body.appendChild(textArea);
       textArea.select();
       document.execCommand('copy');
