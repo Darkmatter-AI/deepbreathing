@@ -65,12 +65,15 @@ export async function GET(request: NextRequest) {
           }}
         >
           {/* Background particles effect - using fixed positions for edge runtime */}
+          {/* display: flex required by satori when a div has multiple children;
+              children are position: absolute so layout is unaffected. */}
           <div
             style={{
               position: 'absolute',
               width: '100%',
               height: '100%',
               opacity: 0.3,
+              display: 'flex',
             }}
           >
             {[
