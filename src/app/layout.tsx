@@ -3,9 +3,11 @@ import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Script from "next/script";
+import { Suspense } from "react";
 import "./globals.css";
 import { SeasonalBanner } from "@/components/home/seasonal-banner";
 import { AuthProvider } from "@/components/auth/auth-provider";
+import { PageViewTracker } from "@/components/analytics/PageViewTracker";
 import {
   GOOGLE_ANALYTICS_INLINE_INIT_SCRIPT,
   GOOGLE_ANALYTICS_SCRIPT_SRC
@@ -90,6 +92,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Script id="ga4-init" strategy="afterInteractive">
           {GOOGLE_ANALYTICS_INLINE_INIT_SCRIPT}
         </Script>
+        <Suspense fallback={null}>
+          <PageViewTracker />
+        </Suspense>
         <Script
           src="https://analytics.ahrefs.com/analytics.js"
           data-key="uzrT/cO760nX502p37kP0g"
