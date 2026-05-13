@@ -190,6 +190,12 @@ export function ShareButton({
               <pre className="mt-1.5 rounded-lg bg-muted/50 px-2.5 py-1.5 text-[10px] text-muted-foreground overflow-x-auto whitespace-pre-wrap break-all leading-relaxed">
                 {embedSnippet}
               </pre>
+              <a
+                href="/embed"
+                className="mt-2 inline-block text-[10px] uppercase tracking-widest text-muted-foreground underline underline-offset-2 transition-colors hover:text-foreground"
+              >
+                Browse all embeds →
+              </a>
             </div>
           )}
         </div>

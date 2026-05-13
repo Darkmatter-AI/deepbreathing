@@ -403,6 +403,11 @@ export default function HomePage() {
                 </Link>
               </li>
               <li>
+                <Link href="/embed" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                  Embed Widget
+                </Link>
+              </li>
+              <li>
                 <Link href="/about" className="underline underline-offset-2 transition-colors hover:text-foreground">
                   About
                 </Link>

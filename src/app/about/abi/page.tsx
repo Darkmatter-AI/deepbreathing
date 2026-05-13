@@ -277,6 +277,9 @@ export default function AbiAboutPage() {
         <Link href="/for" className="underline underline-offset-2 transition-colors hover:text-foreground">
           Guides
         </Link>
+        <Link href="/embed" className="underline underline-offset-2 transition-colors hover:text-foreground">
+          Embed
+        </Link>
         <Link href="/privacy" className="underline underline-offset-2 transition-colors hover:text-foreground">
           Privacy
         </Link>
