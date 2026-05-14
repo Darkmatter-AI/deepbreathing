@@ -9,16 +9,26 @@ import {
   BREATHING_PATTERNS,
   getPhaseVisualState,
   updatePhase,
+  ProtocolPhase,
+  ProtocolState,
+  WIM_HOF_PROTOCOL,
 } from '@resonance/engine';
 import * as Haptics from 'expo-haptics';
 import { useKeepAwake } from 'expo-keep-awake';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Modal, Pressable, Switch, Text, View, useWindowDimensions } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import Slider from '@react-native-community/slider';
 import { playCue } from '@/lib/audio';
 import { createModeTheme } from '@/lib/theme';
 
-const MODE_LIST = [ModeName.Box, ModeName.Relax, ModeName.Coherent] as const;
+const MODE_LIST = [
+  ModeName.Box,
+  ModeName.Relax,
+  ModeName.Coherent,
+  ModeName.Sigh,
+  ModeName.WimHof,
+] as const;
 const DURATION_OPTIONS: Array<{ label: string; value: number | null }> = [
   { label: 'Open', value: null },
   { label: '1 min', value: 60 },
@@ -36,6 +46,8 @@ const KeepAwakeGuard = () => {
   useKeepAwake('resonance-session');
   return null;
 };
+
+const getNow = () => (globalThis.performance?.now ? globalThis.performance.now() : Date.now());
 
 type Particle = {
   x: number;
@@ -154,6 +166,13 @@ export default function HomeScreen() {
   const [phase, setPhase] = useState<BreathingPhase>(BreathingPhase.Idle);
   const [scale, setScale] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
+  const [protocolState, setProtocolState] = useState<ProtocolState>({
+    currentRound: 1,
+    currentBreathIndex: 0,
+    phase: ProtocolPhase.Idle,
+    retentionTime: 0,
+    isUserControlledHold: false,
+  });
   const [speedMultiplier, setSpeedMultiplier] = useState(DEFAULT_SPEED_MULTIPLIER);
   const [selectedDuration, setSelectedDuration] = useState<number | null>(null);
   const [sessionSeconds, setSessionSeconds] = useState(0);
@@ -165,13 +184,15 @@ export default function HomeScreen() {
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [settingsLoaded, setSettingsLoaded] = useState(false);
   const [statsLoaded, setStatsLoaded] = useState(false);
-  const [, setParticleFrame] = useState(0);
+  const [particleFrame, setParticleFrame] = useState(0);
 
   const phaseRef = useRef(phase);
   const phaseStartRef = useRef<number | null>(null);
   const sessionStartRef = useRef<number | null>(null);
   const sessionSecondsRef = useRef(0);
   const isRunningRef = useRef(isRunning);
+  const protocolPhaseStartRef = useRef<number | null>(null);
+  const retentionStartRef = useRef(0);
   const speedMultiplierRef = useRef(speedMultiplier);
   const particlesRef = useRef<Particle[]>([]);
   const particleBoundsRef = useRef({ width: 0, height: 0 });
@@ -182,10 +203,7 @@ export default function HomeScreen() {
 
   const pattern = useMemo(() => BREATHING_PATTERNS[mode], [mode]);
   const theme = useMemo(() => createModeTheme(pattern.color), [pattern.color]);
-  const speedOptions = useMemo(
-    () => [MIN_SPEED_MULTIPLIER, 0.75, 1, 1.25, MAX_SPEED_MULTIPLIER],
-    []
-  );
+  const isProtocolMode = mode === ModeName.WimHof;
 
   useEffect(() => {
     phaseRef.current = phase;
@@ -283,6 +301,15 @@ export default function HomeScreen() {
     phaseRef.current = BreathingPhase.Idle;
     setPhase(BreathingPhase.Idle);
     setScale(0);
+    setProtocolState({
+      currentRound: 1,
+      currentBreathIndex: 0,
+      phase: ProtocolPhase.Idle,
+      retentionTime: 0,
+      isUserControlledHold: false,
+    });
+    protocolPhaseStartRef.current = null;
+    retentionStartRef.current = 0;
     phaseStartRef.current = null;
     sessionStartRef.current = null;
 
@@ -299,7 +326,7 @@ export default function HomeScreen() {
   }, []);
 
   useEffect(() => {
-    if (!isRunning) return;
+    if (!isRunning || isProtocolMode) return;
 
     let rafId = 0;
 
@@ -376,7 +403,139 @@ export default function HomeScreen() {
 
     rafId = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(rafId);
-  }, [isRunning, muted, hapticsEnabled, pattern, selectedDuration, speedMultiplier, stopSession]);
+  }, [isRunning, isProtocolMode, muted, hapticsEnabled, pattern, selectedDuration, speedMultiplier, stopSession]);
+
+  useEffect(() => {
+    if (!isRunning || !isProtocolMode) return;
+
+    let rafId = 0;
+
+    const tick = (time: number) => {
+      if (!isRunningRef.current) {
+        return;
+      }
+
+      if (!protocolPhaseStartRef.current) {
+        protocolPhaseStartRef.current = time;
+      }
+
+      const protocol = WIM_HOF_PROTOCOL;
+      const inhaleDur = protocol.powerBreathTiming.inhale * 1000;
+      const exhaleDur = protocol.powerBreathTiming.exhale * 1000;
+      const breathCycleDur = inhaleDur + exhaleDur;
+      const recoveryInhaleDur = protocol.recoveryTiming.inhale * 1000;
+      const recoveryHoldDur = protocol.recoveryTiming.hold * 1000;
+      const timeSincePhaseStart = time - protocolPhaseStartRef.current;
+
+      setProtocolState((prev) => {
+        let next = { ...prev };
+
+        if (prev.phase === ProtocolPhase.PowerBreathe) {
+          const breathIndex = Math.floor(timeSincePhaseStart / breathCycleDur);
+          const withinBreathTime = timeSincePhaseStart % breathCycleDur;
+
+          if (breathIndex >= protocol.powerBreathCount) {
+            next.phase = ProtocolPhase.RetentionHold;
+            next.retentionTime = 0;
+            next.isUserControlledHold = true;
+            retentionStartRef.current = time;
+            protocolPhaseStartRef.current = time;
+            setScale(0);
+            if (!muted) {
+              void playCue('hold');
+            }
+          } else {
+            next.currentBreathIndex = breathIndex + 1;
+            if (withinBreathTime < inhaleDur) {
+              const progress = withinBreathTime / inhaleDur;
+              setScale(progress);
+            } else {
+              const progress = (withinBreathTime - inhaleDur) / exhaleDur;
+              setScale(1 - progress);
+            }
+          }
+        } else if (prev.phase === ProtocolPhase.RetentionHold) {
+          const holdSeconds = Math.floor((time - retentionStartRef.current) / 1000);
+          next.retentionTime = holdSeconds;
+
+          if (holdSeconds >= protocol.retentionHoldMax) {
+            next.phase = ProtocolPhase.RecoveryInhale;
+            protocolPhaseStartRef.current = time;
+            if (!muted) {
+              void playCue('inhale');
+            }
+          }
+        } else if (prev.phase === ProtocolPhase.RecoveryInhale) {
+          const progress = Math.min(timeSincePhaseStart / recoveryInhaleDur, 1);
+          setScale(progress);
+
+          if (timeSincePhaseStart >= recoveryInhaleDur) {
+            next.phase = ProtocolPhase.RecoveryHold;
+            protocolPhaseStartRef.current = time;
+            if (!muted) {
+              void playCue('hold');
+            }
+          }
+        } else if (prev.phase === ProtocolPhase.RecoveryHold) {
+          setScale(1);
+          if (timeSincePhaseStart >= recoveryHoldDur) {
+            if (prev.currentRound < protocol.rounds) {
+              next.currentRound = prev.currentRound + 1;
+              next.currentBreathIndex = 0;
+              next.phase = ProtocolPhase.RoundComplete;
+              protocolPhaseStartRef.current = time;
+              setScale(0.5);
+            } else {
+              next.phase = ProtocolPhase.ProtocolComplete;
+              setScale(0.5);
+              setIsRunning(false);
+            }
+          }
+        } else if (prev.phase === ProtocolPhase.RoundComplete) {
+          if (timeSincePhaseStart >= protocol.roundRestDuration * 1000) {
+            next.phase = ProtocolPhase.PowerBreathe;
+            protocolPhaseStartRef.current = time;
+            if (!muted) {
+              void playCue('inhale');
+            }
+          }
+        }
+
+        let nextVisualPhase = phaseRef.current;
+        if (next.phase === ProtocolPhase.PowerBreathe) {
+          const withinBreathTime =
+            ((time - (protocolPhaseStartRef.current ?? time)) % breathCycleDur + breathCycleDur) %
+            breathCycleDur;
+          if (withinBreathTime < inhaleDur) {
+            nextVisualPhase = BreathingPhase.Inhale;
+          } else {
+            nextVisualPhase = BreathingPhase.Exhale;
+          }
+        } else if (next.phase === ProtocolPhase.RetentionHold) {
+          nextVisualPhase = BreathingPhase.HoldOut;
+        } else if (next.phase === ProtocolPhase.RecoveryInhale) {
+          nextVisualPhase = BreathingPhase.Inhale;
+        } else if (next.phase === ProtocolPhase.RecoveryHold) {
+          nextVisualPhase = BreathingPhase.HoldIn;
+        }
+
+        if (nextVisualPhase !== phaseRef.current) {
+          phaseRef.current = nextVisualPhase;
+          setPhase(nextVisualPhase);
+        }
+
+        return next;
+      });
+
+      rafId = requestAnimationFrame(tick);
+    };
+
+    rafId = requestAnimationFrame(tick);
+
+    return () => {
+      cancelAnimationFrame(rafId);
+    };
+  }, [isRunning, isProtocolMode, muted]);
 
   const handleStart = () => {
     sessionStartRef.current = null;
@@ -386,6 +545,17 @@ export default function HomeScreen() {
     phaseRef.current = BreathingPhase.Inhale;
     setPhase(BreathingPhase.Inhale);
     setScale(0);
+    if (mode === ModeName.WimHof) {
+      setProtocolState({
+        currentRound: 1,
+        currentBreathIndex: 0,
+        phase: ProtocolPhase.PowerBreathe,
+        retentionTime: 0,
+        isUserControlledHold: false,
+      });
+      protocolPhaseStartRef.current = null;
+      retentionStartRef.current = 0;
+    }
     setIsRunning(true);
   };
 
@@ -395,6 +565,15 @@ export default function HomeScreen() {
 
   const handleModeChange = (nextMode: ModeName) => {
     setMode(nextMode);
+    setProtocolState({
+      currentRound: 1,
+      currentBreathIndex: 0,
+      phase: ProtocolPhase.Idle,
+      retentionTime: 0,
+      isUserControlledHold: false,
+    });
+    protocolPhaseStartRef.current = null;
+    retentionStartRef.current = 0;
     if (isRunning) {
       stopSession(false);
     }
@@ -407,15 +586,42 @@ export default function HomeScreen() {
     }
   };
 
+  const handleEndHold = useCallback(() => {
+    if (!isProtocolMode || protocolState.phase !== ProtocolPhase.RetentionHold) return;
+    setProtocolState((prev) => ({
+      ...prev,
+      phase: ProtocolPhase.RecoveryInhale,
+      isUserControlledHold: false,
+    }));
+    protocolPhaseStartRef.current = getNow();
+    if (!muted) {
+      void playCue('inhale');
+    }
+  }, [isProtocolMode, protocolState.phase, muted]);
+
   const resetStats = () => {
     setTotalMinutes(0);
     setSessionsCompleted(0);
   };
 
-  const radius = blobSize * (0.22 + 0.28 * scale);
-  const ringColor = toRgba(pattern.color, 0.45);
-  const wobblePhase = useMemo(() => scale * 2.4, [scale]);
+  const radius = blobSize * (0.15 + 0.1 * scale);
+  const ringColor = toRgba(pattern.color, 0.35);
+  const wobblePhase = useMemo(() => scale * 2.4 + particleFrame * 0.02, [scale, particleFrame]);
   const instruction = (() => {
+    if (isProtocolMode) {
+      if (protocolState.phase === ProtocolPhase.RetentionHold) {
+        const mins = Math.floor(protocolState.retentionTime / 60);
+        const secs = protocolState.retentionTime % 60;
+        return `${mins}:${secs.toString().padStart(2, '0')}`;
+      }
+      if (protocolState.phase === ProtocolPhase.RecoveryInhale) return 'Deep breath in';
+      if (protocolState.phase === ProtocolPhase.RecoveryHold) return 'Hold';
+      if (protocolState.phase === ProtocolPhase.RoundComplete) {
+        return `Round ${protocolState.currentRound - 1} complete`;
+      }
+      if (protocolState.phase === ProtocolPhase.ProtocolComplete) return 'Complete';
+    }
+
     switch (phase) {
       case BreathingPhase.Inhale:
         return 'Inhale';
@@ -433,6 +639,21 @@ export default function HomeScreen() {
 
   const remainingSeconds =
     selectedDuration === null ? null : Math.max(selectedDuration - sessionSeconds, 0);
+
+  const modeLabel = useCallback((label: ModeName) => {
+    switch (label) {
+      case ModeName.Relax:
+        return '4-7-8';
+      case ModeName.Coherent:
+        return 'Coherent';
+      case ModeName.Sigh:
+        return 'Sigh';
+      case ModeName.WimHof:
+        return 'Wim Hof';
+      default:
+        return 'Box';
+    }
+  }, []);
 
   const buildBlobPath = (
     baseRadius: number,
@@ -571,6 +792,18 @@ export default function HomeScreen() {
           ))}
         </Canvas>
         <View className="flex-1 items-center justify-center px-6">
+          {isProtocolMode && isRunning ? (
+            <View className="mb-3 items-center">
+              <Text className="text-xs uppercase tracking-widest" style={{ color: theme.muted }}>
+                Round {protocolState.currentRound} of {WIM_HOF_PROTOCOL.rounds}
+              </Text>
+              {protocolState.phase === ProtocolPhase.PowerBreathe ? (
+                <Text className="mt-1 text-[10px] uppercase tracking-[0.2em]" style={{ color: theme.muted }}>
+                  Breath {protocolState.currentBreathIndex} of {WIM_HOF_PROTOCOL.powerBreathCount}
+                </Text>
+              ) : null}
+            </View>
+          ) : null}
           <Pressable
             onPress={isRunning ? handleStop : handleStart}
             className="items-center justify-center"
@@ -578,7 +811,7 @@ export default function HomeScreen() {
           >
             <Canvas style={{ width: blobCanvasSize, height: blobCanvasSize }}>
               <Path path={blobPath} color={pattern.color} />
-              <Path path={ringPath} color={ringColor} style="stroke" strokeWidth={4} />
+              <Path path={ringPath} color={ringColor} style="stroke" strokeWidth={3} />
             </Canvas>
             <View
               style={{
@@ -591,22 +824,51 @@ export default function HomeScreen() {
                 justifyContent: 'center',
               }}
             >
-              <Text className="text-2xl font-semibold" style={{ color: theme.onAccent }}>
-                {instruction}
-              </Text>
-              {remainingSeconds === null ? null : (
-                <Text className="mt-1 text-xs uppercase tracking-widest" style={{ color: theme.onAccent }}>
-                  {`Remaining ${formatTime(remainingSeconds)}`}
-                </Text>
+              {isRunning ? (
+                <>
+                  <Text className="text-2xl font-semibold" style={{ color: theme.onAccent }}>
+                    {instruction}
+                  </Text>
+                  {remainingSeconds === null ? null : (
+                    <Text className="mt-1 text-xs uppercase tracking-widest" style={{ color: theme.onAccent }}>
+                      {`Remaining ${formatTime(remainingSeconds)}`}
+                    </Text>
+                  )}
+                  <Text
+                    className="mt-2 text-[10px] uppercase tracking-[0.3em]"
+                    style={{ color: theme.onAccent }}
+                  >
+                    Tap to pause
+                  </Text>
+                </>
+              ) : (
+                <>
+                  <Text className="text-xl font-semibold" style={{ color: theme.onAccent }}>
+                    Play
+                  </Text>
+                  <Text
+                    className="mt-2 text-[10px] uppercase tracking-[0.3em]"
+                    style={{ color: theme.onAccent }}
+                  >
+                    Tap to start
+                  </Text>
+                </>
               )}
-              <Text
-                className="mt-2 text-[10px] uppercase tracking-[0.3em]"
-                style={{ color: theme.onAccent }}
-              >
-                {isRunning ? 'Tap to pause' : 'Tap to start'}
-              </Text>
             </View>
           </Pressable>
+          {isProtocolMode &&
+          protocolState.phase === ProtocolPhase.RetentionHold &&
+          protocolState.retentionTime >= WIM_HOF_PROTOCOL.retentionHoldMin ? (
+            <Pressable
+              onPress={handleEndHold}
+              className="mt-4 rounded-full px-4 py-2"
+              style={{ backgroundColor: theme.surface, borderWidth: 1, borderColor: theme.surfaceBorder }}
+            >
+              <Text className="text-xs uppercase tracking-widest" style={{ color: theme.text }}>
+                End Hold
+              </Text>
+            </Pressable>
+          ) : null}
         </View>
 
         <View
@@ -667,6 +929,15 @@ export default function HomeScreen() {
             </View>
 
             <View className="mt-5">
+              <Text className="mb-1 text-xs uppercase tracking-widest" style={{ color: theme.muted }}>
+                Session
+              </Text>
+              <Text className="text-2xl font-semibold" style={{ color: theme.text }}>
+                {formatTime(sessionSeconds)}
+              </Text>
+            </View>
+
+            <View className="mt-5">
               <Text className="mb-2 text-xs uppercase tracking-widest" style={{ color: theme.muted }}>
                 Mode
               </Text>
@@ -686,11 +957,14 @@ export default function HomeScreen() {
                       className="text-xs"
                       style={{ color: item === mode ? theme.onAccent : theme.text }}
                     >
-                      {item}
+                  {modeLabel(item)}
                     </Text>
                   </Pressable>
                 ))}
               </View>
+              <Text className="mt-2 text-xs" style={{ color: theme.muted }}>
+                {pattern.description}
+              </Text>
             </View>
 
             <View className="mt-5">
@@ -704,11 +978,13 @@ export default function HomeScreen() {
                     <Pressable
                       key={option.label}
                       onPress={() => handleDurationChange(option.value)}
+                      disabled={isRunning}
                       className="rounded-full px-3 py-1"
                       style={{
                         backgroundColor: active ? theme.accent : theme.surfaceAlt,
                         borderWidth: active ? 0 : 1,
                         borderColor: theme.surfaceBorder,
+                        opacity: isRunning && !active ? 0.5 : 1,
                       }}
                     >
                       <Text className="text-xs" style={{ color: active ? theme.onAccent : theme.text }}>
@@ -718,33 +994,39 @@ export default function HomeScreen() {
                   );
                 })}
               </View>
+              {isRunning ? (
+                <Text className="mt-2 text-xs" style={{ color: theme.muted }}>
+                  Pause to change the session length.
+                </Text>
+              ) : null}
             </View>
 
             <View className="mt-5">
               <Text className="mb-2 text-xs uppercase tracking-widest" style={{ color: theme.muted }}>
                 Speed
               </Text>
-              <View className="flex-row gap-2">
-                {speedOptions.map((value) => {
-                  const active = value === speedMultiplier;
-                  return (
-                    <Pressable
-                      key={value}
-                      onPress={() => setSpeedMultiplier(value)}
-                      className="rounded-full px-3 py-1"
-                      style={{
-                        backgroundColor: active ? theme.accent : theme.surfaceAlt,
-                        borderWidth: active ? 0 : 1,
-                        borderColor: theme.surfaceBorder,
-                      }}
-                    >
-                      <Text className="text-xs" style={{ color: active ? theme.onAccent : theme.text }}>
-                        {value.toFixed(2).replace(/\\.00$/, '')}x
-                      </Text>
-                    </Pressable>
-                  );
-                })}
+              <View className="flex-row items-center gap-3">
+                <Text className="text-xs" style={{ color: theme.muted }}>
+                  Slow
+                </Text>
+                <Slider
+                  style={{ flex: 1, height: 30 }}
+                  minimumValue={MIN_SPEED_MULTIPLIER}
+                  maximumValue={MAX_SPEED_MULTIPLIER}
+                  step={0.1}
+                  value={speedMultiplier}
+                  onValueChange={setSpeedMultiplier}
+                  minimumTrackTintColor={theme.accent}
+                  maximumTrackTintColor={theme.surfaceBorder}
+                  thumbTintColor={theme.accent}
+                />
+                <Text className="text-xs" style={{ color: theme.muted }}>
+                  Fast
+                </Text>
               </View>
+              <Text className="mt-2 text-xs" style={{ color: theme.muted }}>
+                {speedMultiplier.toFixed(1)}x
+              </Text>
             </View>
 
             <View className="mt-5">
