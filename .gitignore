@@ -35,3 +35,5 @@ yarn-error.log*
 **/android/build/
 **/android/app/build/
 **/android/local.properties
+.vercel
+.env.local
