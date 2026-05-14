@@ -219,7 +219,7 @@ export function UseCasePage({ slug }: { slug: string }) {
       <JsonLd data={structuredData} />
 
       {/* Hero with Visualizer */}
-      <section id="practice" className="relative isolate min-h-screen w-full text-foreground">
+      <section id="practice" className="relative isolate z-20 min-h-screen w-full text-foreground">
         <Resonance
           defaultMode={page.mode}
           className="min-h-screen"

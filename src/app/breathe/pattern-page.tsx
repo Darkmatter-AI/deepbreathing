@@ -214,7 +214,7 @@ export function PatternPage({ slug }: { slug: string }) {
       <h1 className="sr-only">{page.hero.title}</h1>
       <JsonLd data={structuredData} />
 
-      <section className="relative isolate min-h-screen w-full text-foreground">
+      <section className="relative isolate z-20 min-h-screen w-full text-foreground">
         <Resonance defaultMode={page.mode} className="min-h-screen" />
         <div className="absolute inset-x-0 bottom-0 z-30 flex flex-col items-center px-6 pb-6 text-center pointer-events-none sm:inset-y-0 sm:left-0 sm:max-w-xl sm:items-start sm:justify-center sm:py-20 sm:text-left">
           <div className="pointer-events-auto">

@@ -110,7 +110,7 @@ export default function HomePage() {
       <h1 className="sr-only">Deep Breathing Exercises</h1>
       <JsonLd data={[websiteSchema, faqSchema]} />
 
-      <section className="relative isolate w-full text-foreground min-h-screen">
+      <section className="relative isolate z-20 w-full text-foreground min-h-screen">
         <Suspense fallback={<div className="min-h-screen w-full" aria-hidden="true" />}>
           <BreathingVisualizer className="min-h-screen" />
         </Suspense>
