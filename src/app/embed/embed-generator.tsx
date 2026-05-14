@@ -22,6 +22,15 @@ const patterns = Object.entries(breathingPageMap)
 
 type ThemeOption = 'auto' | 'light' | 'dark';
 
+const DURATION_OPTIONS: Array<{ label: string; value: number | null }> = [
+  { label: 'Open', value: null },
+  { label: '30s',  value: 30   },
+  { label: '1 min', value: 60  },
+  { label: '3 min', value: 180 },
+  { label: '5 min', value: 300 },
+  { label: '10 min', value: 600 },
+];
+
 const LOCALE_OPTIONS = [
   { code: 'en', label: 'English',    prefix: ''    },
   { code: 'es', label: 'Español',    prefix: '/es' },
@@ -66,9 +75,10 @@ function copyToClipboard(value: string): Promise<void> {
   return Promise.resolve();
 }
 
-function buildEmbedUrl(slug: string, theme: ThemeOption, localePrefix: string): string {
+function buildEmbedUrl(slug: string, theme: ThemeOption, localePrefix: string, duration: number | null): string {
   const params = new URLSearchParams();
   if (theme !== 'auto') params.set('theme', theme);
+  if (duration !== null) params.set('duration', String(duration));
   const qs = params.toString();
   const base = localePrefix
     ? `https://deepbreathingexercises.com${localePrefix}/embed`
@@ -80,6 +90,7 @@ export function EmbedGenerator() {
   const [selectedSlug, setSelectedSlug] = useState('box');
   const [theme, setTheme] = useState<ThemeOption>('auto');
   const [locale, setLocale] = useState<LocaleCode>('en');
+  const [duration, setDuration] = useState<number | null>(60);
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
@@ -88,11 +99,12 @@ export function EmbedGenerator() {
 
   const localePrefix = LOCALE_OPTIONS.find(l => l.code === locale)?.prefix ?? '';
   const selected = patterns.find(p => p.slug === selectedSlug) ?? patterns[0];
-  const embedUrl = buildEmbedUrl(selected.slug, theme, localePrefix);
+  const embedUrl = buildEmbedUrl(selected.slug, theme, localePrefix, duration);
   const snippet = `<iframe src="${embedUrl}" width="100%" height="500" frameborder="0" allow="autoplay" style="border-radius:16px;"></iframe>`;
 
   const previewParams = new URLSearchParams();
   if (theme !== 'auto') previewParams.set('theme', theme);
+  if (duration !== null) previewParams.set('duration', String(duration));
   const previewQs = previewParams.toString();
   const previewSrc = `${localePrefix}/embed/${selected.slug}${previewQs ? `?${previewQs}` : ''}`;
 
@@ -169,6 +181,17 @@ export function EmbedGenerator() {
               <option key={l.code} value={l.code}>{l.label}</option>
             ))}
           </select>
+
+          <select
+            value={duration ?? ''}
+            onChange={e => setDuration(e.target.value === '' ? null : Number(e.target.value))}
+            className="rounded-xl border border-border bg-card px-3 py-2 text-sm font-medium text-card-foreground transition-colors hover:border-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/20"
+            aria-label="Session duration"
+          >
+            {DURATION_OPTIONS.map(d => (
+              <option key={d.value ?? 'open'} value={d.value ?? ''}>{d.label}</option>
+            ))}
+          </select>
         </div>
       </section>
 
@@ -177,7 +200,7 @@ export function EmbedGenerator() {
         <h2 className="text-sm uppercase tracking-widest text-muted-foreground mb-4">Preview</h2>
         <div className="rounded-2xl border border-border overflow-hidden aspect-video">
           <iframe
-            key={`${selected.slug}-${theme}-${locale}`}
+            key={`${selected.slug}-${theme}-${locale}-${duration}`}
             src={previewSrc}
             width="100%"
             height="100%"
