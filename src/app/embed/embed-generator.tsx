@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { BREATHING_PATTERNS } from '@/components/resonance/constants';
 import { breathingPageMap } from '@/data/breathing-pages';
+import { LanguageSwitcherFooter } from '@/components/language-switcher';
 
 const EMBED_BASE = 'https://deepbreathingexercises.com/embed';
 
@@ -204,6 +205,9 @@ export function EmbedGenerator() {
           <Link href="/about" className="underline underline-offset-2 transition-colors hover:text-foreground">
             About
           </Link>
+        </div>
+        <div className="mt-4 flex justify-center">
+          <LanguageSwitcherFooter />
         </div>
       </footer>
     </main>
