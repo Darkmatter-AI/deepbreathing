@@ -4,8 +4,9 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
-// Holiday-related paths where the banner should NOT show
+// Paths where the banner should NOT show
 const HOLIDAY_PATHS = [
+  '/embed',
   '/holiday-breathing-exercises',
   '/for/holiday-stress',
   '/for/travel-anxiety',

@@ -1170,7 +1170,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       )}
 
       <header className="fixed inset-x-0 top-0 z-30 flex items-center justify-end gap-2 p-6">
-        <LanguageSwitcherInline />
+        {!embedMode && <LanguageSwitcherInline />}
         {!embedMode && (
           <>
             {isAuthenticated && user ? (
@@ -1515,20 +1515,24 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
         </SheetContent>
       </Sheet>
 
-      <SessionCompletePrompt
-        open={showSessionPrompt}
-        onOpenChange={setShowSessionPrompt}
-        onDismiss={dismissSession}
-        onSuccess={markConverted}
-        totalMinutes={totalMinutes}
-        sessionSeconds={sessionSeconds}
-      />
+      {!embedMode && (
+        <SessionCompletePrompt
+          open={showSessionPrompt}
+          onOpenChange={setShowSessionPrompt}
+          onDismiss={dismissSession}
+          onSuccess={markConverted}
+          totalMinutes={totalMinutes}
+          sessionSeconds={sessionSeconds}
+        />
+      )}
 
-      <SignInSheet
-        open={showSignInSheet}
-        onOpenChange={setShowSignInSheet}
-        onSuccess={markConverted}
-      />
+      {!embedMode && (
+        <SignInSheet
+          open={showSignInSheet}
+          onOpenChange={setShowSignInSheet}
+          onSuccess={markConverted}
+        />
+      )}
     </div>
   );
 };
