@@ -101,13 +101,32 @@ function generateParticles(seed: number): Particle[] {
   return particles;
 }
 
+// Phase 1 of OG translation: only the focal "BREATHE" label in the orb is
+// localized. og:title/og:description are translated by the mass-translate
+// proxy and shown by social platforms *above* the image, so the bottom-of-image
+// title stays English for now — it's deliberately small/secondary.
+export const BREATHE_LABELS: Record<string, string> = {
+  en: "BREATHE",
+  es: "RESPIRA",
+  pt: "RESPIRA",
+  fr: "RESPIRE",
+  de: "ATME",
+  ja: "呼吸",
+};
+
+export function isSupportedOgLocale(value: unknown): value is keyof typeof BREATHE_LABELS {
+  return typeof value === "string" && value in BREATHE_LABELS;
+}
+
 export function renderOgScene({
   title,
   color,
+  locale = "en",
 }: {
   title: string;
   subtitle?: string;
   color: string;
+  locale?: string;
 }) {
   const rgb = hexToRgb(color);
   const rgba = (a: number) => `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${a})`;
@@ -188,9 +207,12 @@ export function renderOgScene({
             fontWeight: 700,
             opacity: 0.95,
             display: 'flex',
+            // Inter has no CJK glyphs — satori falls back to Noto Sans JP
+            // for ja locales when it's been loaded into the font list.
+            fontFamily: 'Inter, "Noto Sans JP"',
           }}
         >
-          BREATHE
+          {BREATHE_LABELS[locale] ?? BREATHE_LABELS.en}
         </div>
       </div>
 

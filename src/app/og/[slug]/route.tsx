@@ -3,8 +3,8 @@ import { NextRequest } from 'next/server';
 import { breathingPageMap } from '@/data/breathing-pages';
 import { BREATHING_PATTERNS } from '@/components/resonance/constants';
 import { ModeName } from '@/components/resonance/types';
-import { loadInterFonts } from '@/lib/og-fonts';
-import { renderOgScene } from '@/lib/seo/og-scene';
+import { loadOgFonts } from '@/lib/og-fonts';
+import { BREATHE_LABELS, isSupportedOgLocale, renderOgScene } from '@/lib/seo/og-scene';
 
 export const runtime = 'edge';
 
@@ -24,10 +24,15 @@ export async function GET(
     const subtitle = 'deepbreathingexercises.com';
     const color = pattern.color;
 
-    return new ImageResponse(renderOgScene({ title, subtitle, color }), {
+    const requestedLang = request.nextUrl.searchParams.get('lang')?.trim().toLowerCase();
+    const locale = isSupportedOgLocale(requestedLang) ? requestedLang : 'en';
+
+    return new ImageResponse(renderOgScene({ title, subtitle, color, locale }), {
       width: 1200,
       height: 630,
-      fonts: await loadInterFonts(),
+      fonts: await loadOgFonts(
+        locale === 'ja' ? { jpSubset: BREATHE_LABELS.ja } : undefined,
+      ),
     });
   } catch (e: any) {
     console.error('OG Image generation error:', e);

@@ -1,10 +1,9 @@
 import { ImageResponse } from '@vercel/og';
 import { NextRequest } from 'next/server';
-import React from 'react';
 import { BREATHING_PATTERNS } from '@/components/resonance/constants';
 import { ModeName } from '@/components/resonance/types';
-import { loadInterFonts } from '@/lib/og-fonts';
-import { renderOgScene } from '@/lib/seo/og-scene';
+import { loadOgFonts } from '@/lib/og-fonts';
+import { BREATHE_LABELS, isSupportedOgLocale, renderOgScene } from '@/lib/seo/og-scene';
 
 export const runtime = 'edge';
 
@@ -30,15 +29,19 @@ export async function GET(request: NextRequest) {
     const requestedTitle = searchParams.get('title')?.trim();
     const requestedSubtitle = searchParams.get('subtitle')?.trim();
     const requestedColor = searchParams.get('color')?.trim();
+    const requestedLang = searchParams.get('lang')?.trim().toLowerCase();
 
     const color = isHexColor(requestedColor) ? normalizeHexColor(requestedColor) : DEFAULT_PATTERN.color;
     const title = clampText(requestedTitle || DEFAULT_TITLE, 72);
     const subtitle = clampText(requestedSubtitle || DEFAULT_SUBTITLE, 56);
+    const locale = isSupportedOgLocale(requestedLang) ? requestedLang : 'en';
 
-    return new ImageResponse(renderOgScene({ title, subtitle, color }), {
+    return new ImageResponse(renderOgScene({ title, subtitle, color, locale }), {
       width: 1200,
       height: 630,
-      fonts: await loadInterFonts(),
+      fonts: await loadOgFonts(
+        locale === 'ja' ? { jpSubset: BREATHE_LABELS.ja } : undefined,
+      ),
     });
   } catch (e: any) {
     console.error('OG Image generation error:', e);
