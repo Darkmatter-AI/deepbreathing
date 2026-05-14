@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { BREATHING_PATTERNS } from '@/components/resonance/constants';
 import { breathingPageMap } from '@/data/breathing-pages';
@@ -22,6 +22,35 @@ const patterns = Object.entries(breathingPageMap)
 
 type ThemeOption = 'auto' | 'light' | 'dark';
 
+const LOCALE_OPTIONS = [
+  { code: 'en', label: 'English',    prefix: ''    },
+  { code: 'es', label: 'Español',    prefix: '/es' },
+  { code: 'pt', label: 'Português',  prefix: '/pt' },
+  { code: 'fr', label: 'Français',   prefix: '/fr' },
+  { code: 'de', label: 'Deutsch',    prefix: '/de' },
+  { code: 'ja', label: '日本語',      prefix: '/ja' },
+] as const;
+
+type LocaleCode = typeof LOCALE_OPTIONS[number]['code'];
+
+function detectLocaleCode(): LocaleCode {
+  if (typeof window === 'undefined') return 'en';
+  // Mass-translate injects window.__MT_CONFIG__ with the current lang (e.g. "pt-br")
+  const config = (window as { __MT_CONFIG__?: { lang?: string } }).__MT_CONFIG__;
+  if (config?.lang && config.lang !== 'en') {
+    const code = config.lang.split('-')[0] as LocaleCode;
+    if (LOCALE_OPTIONS.some(l => l.code === code)) return code;
+  }
+  // Fallback: detect from URL pathname
+  const pathname = window.location.pathname;
+  for (const loc of LOCALE_OPTIONS) {
+    if (loc.prefix && (pathname.startsWith(loc.prefix + '/') || pathname === loc.prefix)) {
+      return loc.code;
+    }
+  }
+  return 'en';
+}
+
 function copyToClipboard(value: string): Promise<void> {
   if (navigator.clipboard) {
     return navigator.clipboard.writeText(value);
@@ -37,27 +66,35 @@ function copyToClipboard(value: string): Promise<void> {
   return Promise.resolve();
 }
 
-function buildEmbedUrl(slug: string, theme: ThemeOption): string {
+function buildEmbedUrl(slug: string, theme: ThemeOption, localePrefix: string): string {
   const params = new URLSearchParams();
   if (theme !== 'auto') params.set('theme', theme);
   const qs = params.toString();
-  return `${EMBED_BASE}/${slug}${qs ? `?${qs}` : ''}`;
+  const base = localePrefix
+    ? `https://deepbreathingexercises.com${localePrefix}/embed`
+    : EMBED_BASE;
+  return `${base}/${slug}${qs ? `?${qs}` : ''}`;
 }
 
 export function EmbedGenerator() {
   const [selectedSlug, setSelectedSlug] = useState('box');
   const [theme, setTheme] = useState<ThemeOption>('auto');
+  const [locale, setLocale] = useState<LocaleCode>('en');
   const [copied, setCopied] = useState(false);
 
+  useEffect(() => {
+    setLocale(detectLocaleCode());
+  }, []);
+
+  const localePrefix = LOCALE_OPTIONS.find(l => l.code === locale)?.prefix ?? '';
   const selected = patterns.find(p => p.slug === selectedSlug) ?? patterns[0];
-  const embedUrl = buildEmbedUrl(selected.slug, theme);
+  const embedUrl = buildEmbedUrl(selected.slug, theme, localePrefix);
   const snippet = `<iframe src="${embedUrl}" width="100%" height="500" frameborder="0" allow="autoplay" style="border-radius:16px;"></iframe>`;
 
-  // Local preview uses relative URL
   const previewParams = new URLSearchParams();
   if (theme !== 'auto') previewParams.set('theme', theme);
   const previewQs = previewParams.toString();
-  const previewSrc = `/embed/${selected.slug}${previewQs ? `?${previewQs}` : ''}`;
+  const previewSrc = `${localePrefix}/embed/${selected.slug}${previewQs ? `?${previewQs}` : ''}`;
 
   const handleCopy = async () => {
     await copyToClipboard(snippet);
@@ -102,23 +139,36 @@ export function EmbedGenerator() {
         </div>
       </section>
 
-      {/* Theme toggle */}
+      {/* Appearance: theme + language */}
       <section className="mt-8">
         <h2 className="text-sm uppercase tracking-widest text-muted-foreground mb-4">Appearance</h2>
-        <div className="inline-flex rounded-xl border border-border overflow-hidden">
-          {(['auto', 'light', 'dark'] as const).map((opt) => (
-            <button
-              key={opt}
-              onClick={() => setTheme(opt)}
-              className={`px-4 py-2 text-sm font-medium transition-colors ${
-                theme === opt
-                  ? 'bg-primary text-primary-foreground'
-                  : 'bg-card text-muted-foreground hover:text-card-foreground'
-              }`}
-            >
-              {opt === 'auto' ? 'Auto' : opt === 'light' ? 'Light' : 'Dark'}
-            </button>
-          ))}
+        <div className="flex flex-wrap items-center gap-3">
+          <div className="inline-flex rounded-xl border border-border overflow-hidden">
+            {(['auto', 'light', 'dark'] as const).map((opt) => (
+              <button
+                key={opt}
+                onClick={() => setTheme(opt)}
+                className={`px-4 py-2 text-sm font-medium transition-colors ${
+                  theme === opt
+                    ? 'bg-primary text-primary-foreground'
+                    : 'bg-card text-muted-foreground hover:text-card-foreground'
+                }`}
+              >
+                {opt === 'auto' ? 'Auto' : opt === 'light' ? 'Light' : 'Dark'}
+              </button>
+            ))}
+          </div>
+
+          <select
+            value={locale}
+            onChange={e => setLocale(e.target.value as LocaleCode)}
+            className="rounded-xl border border-border bg-card px-3 py-2 text-sm font-medium text-card-foreground transition-colors hover:border-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/20"
+            aria-label="Widget language"
+          >
+            {LOCALE_OPTIONS.map(l => (
+              <option key={l.code} value={l.code}>{l.label}</option>
+            ))}
+          </select>
         </div>
       </section>
 
@@ -127,7 +177,7 @@ export function EmbedGenerator() {
         <h2 className="text-sm uppercase tracking-widest text-muted-foreground mb-4">Preview</h2>
         <div className="rounded-2xl border border-border overflow-hidden aspect-video">
           <iframe
-            key={`${selected.slug}-${theme}`}
+            key={`${selected.slug}-${theme}-${locale}`}
             src={previewSrc}
             width="100%"
             height="100%"
