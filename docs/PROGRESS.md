@@ -1,5 +1,94 @@
 # Progress
 
+## 2026-04-23
+
+### Brand Exploration Page
+
+Built an internal visual exploration page to help choose a clearer brand direction before formalizing a brand kit.
+
+- Added `/brand-lab` with three candidate directions:
+  - `Soft Orbit` — warm, luminous, emotionally restorative
+  - `Signal Glow` — calm biofeedback / performance-tech
+  - `Quiet Editorial` — restrained, trustworthy, timeless
+- Added lightweight in-code preview compositions so the directions can be compared without committing to final illustration assets yet.
+- Added `scripts/tests/brand-lab-page.test.mjs` to require page metadata and the presence of the three concept sections.
+- Next if approved: turn the chosen direction into a reusable brand kit and begin applying it to the homepage and key SEO pages.
+
+## 2026-03-24
+
+### Resonance Header Auth Controls
+
+Adjusted the Resonance header auth controls to match the current product direction and fixed a sizing inconsistency in the signed-in state.
+
+- Replaced the signed-out icon-only auth control with a visible `Sign up` button in the Resonance header.
+- Fixed the signed-in account button so it keeps a stable 40px circular footprint and the avatar fills that footprint instead of rendering smaller than the adjacent circular controls.
+- Refined the signed-in avatar treatment to sit further inset within the 40px account button, leaving a chunkier visible ring so it reads more like the neighboring circular controls.
+- Added `scripts/tests/resonance-auth-controls.test.mjs` to lock both behaviors with a targeted regression test.
+- Verified in-browser on local dev:
+  - guest state shows `Sign up`
+  - authenticated state renders `Account menu` at `40x40` with the avatar inset inside the button
+
+## 2026-03-18
+
+### Agent-Generated Breathing Pages — Architecture & Spec
+
+Designed and specced a new feature: external AI agents can create custom breathing session pages on deepbreathingexercises.com via URL params or REST API. Pages persist as indexable UGC for programmatic SEO.
+
+**Research completed (3 parallel agents):**
+- UGC SEO best practices — Google quality thresholds, AI content guidelines, tiered indexing
+- Programmatic SEO architecture — URL structures, crawl budget, near-duplicate handling
+- UGC page design patterns — Canva, Notion, CodePen, Linktree template analysis
+
+**Mobile app audited:** Expo SDK 54, RN 0.81.5, ~1068 lines of working code. Foundation is solid — don't reset.
+
+**Docs created:**
+- `docs/AGENT-PAGES-ROADMAP.md` — full 5-phase roadmap with constraints and free/premium split
+- `docs/PHASE-0-SPEC.md` — detailed spec for 4 foundation tasks:
+  1. Migrate web Resonance.tsx to shared `@resonance/engine` (eliminate local fork)
+  2. Add custom pattern support to engine (agent-defined phase durations)
+  3. Create `session_events` table + API (per-session engagement tracking)
+  4. Create `breathing_sessions` table (page persistence, quality gate, slug generation)
+
+**Key architectural decisions:**
+- URL is the universal API — any agent can construct a link, zero integration needed
+- Quality gate before persistence — min 100 words guidance, use-case tag, valid pattern
+- Tiered indexing — probation → permanent (based on engagement) or temporary (noindex, expires 30 days)
+- Free/premium split — public pages free (growth engine), custom patterns + private sessions = premium
+
+**Next:** Keyword research (Ahrefs) to validate long-tail search volume, then implement Phase 0.
+
+## 2026-02-13
+
+### Accounts + Gating Architecture Plan (Documented)
+
+Created a canonical architecture and rollout spec before implementing upsell behavior:
+
+- New doc: `/Users/abi/Sites/deepbreathing/docs/accounts-architecture-and-gating-roadmap.md`
+- Covers:
+  - guest/free/pro/lapsed user states,
+  - cross-platform auth model (web + iOS + Android),
+  - local-first sync architecture and merge rules,
+  - capability-based feature gating model,
+  - phased delivery checklists (architecture first, then accounts, then subscriptions),
+  - risks and mitigations.
+
+Decision captured: prioritize architecture + gating implementation before account upsell prompts.
+
+### Accounts + Gating Phase 0 Scaffolding Started
+
+Implemented initial shared package scaffolding:
+
+- `/Users/abi/Sites/deepbreathing/packages/domain`
+  - User state, identity, session, sync, and entitlement types.
+- `/Users/abi/Sites/deepbreathing/packages/access-control`
+  - Capability and feature matrix helpers for consistent web/mobile gating.
+- `/Users/abi/Sites/deepbreathing/packages/api-contracts`
+  - Typed `/api/v1/*` request/response contracts for auth, sync, entitlements, and feature flags.
+
+Validation:
+- Ran `pnpm install` to link new workspace packages.
+- Ran `pnpm exec tsc --noEmit` successfully after linking.
+
 ## 2026-01-27
 
 ### SEO Experiments Implementation (PRD-SEO-JAN27.md Complete)
