@@ -41,13 +41,64 @@ const BLOB_SHAPES = [
   '50% 50% 65% 35% / 35% 55% 45% 65%',
 ];
 
-function pickBlobShape(seed: string) {
-  // djb2 — stable across runtimes, fine for deterministic variety.
+// djb2 — stable across runtimes, fine for deterministic variety.
+function djb2(seed: string) {
   let hash = 5381;
   for (let i = 0; i < seed.length; i++) {
     hash = ((hash << 5) + hash + seed.charCodeAt(i)) >>> 0;
   }
-  return BLOB_SHAPES[hash % BLOB_SHAPES.length];
+  return hash;
+}
+
+function pickBlobShape(seed: string) {
+  return BLOB_SHAPES[djb2(seed) % BLOB_SHAPES.length];
+}
+
+// Seeded RNG so the same title always produces the same particle layout —
+// each page gets its own constellation, but it stays stable across renders.
+function mulberry32(seed: number) {
+  let s = seed >>> 0;
+  return function rng() {
+    s = (s + 0x6d2b79f5) >>> 0;
+    let t = Math.imul(s ^ (s >>> 15), 1 | s);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+type Particle = { top: number; left: number; size: number; a: number };
+
+function generateParticles(seed: number): Particle[] {
+  const rng = mulberry32(seed);
+  const particles: Particle[] = [];
+
+  // Reject particles inside the orb's bounding box (the blob shape lives
+  // roughly inside this rect; corners stay free because the shape curves in).
+  const orb = { x0: 425, y0: 110, x1: 775, y1: 460 };
+  // Stay above the title strip — title spans the bottom ~80px.
+  const yMax = 510;
+
+  function gen(sizeMin: number, sizeMax: number, alphaMin: number, alphaMax: number): Particle {
+    for (let attempts = 0; attempts < 50; attempts++) {
+      const left = Math.floor(rng() * 1160) + 20;
+      const top = Math.floor(rng() * (yMax - 20)) + 20;
+      if (left >= orb.x0 && left <= orb.x1 && top >= orb.y0 && top <= orb.y1) continue;
+      const size = Math.floor(rng() * (sizeMax - sizeMin + 1)) + sizeMin;
+      const a = alphaMin + rng() * (alphaMax - alphaMin);
+      return { top, left, size, a };
+    }
+    // Fallback: place at top-left if rejection sampling somehow fails.
+    return { top: 30, left: 30, size: sizeMin, a: alphaMin };
+  }
+
+  // 6 larger "anchor" particles for visual rhythm.
+  for (let i = 0; i < 6; i++) particles.push(gen(16, 22, 0.32, 0.5));
+  // 50 small/medium — 80% small (3-7px), 20% medium (8-13px).
+  for (let i = 0; i < 50; i++) {
+    if (rng() < 0.8) particles.push(gen(3, 7, 0.22, 0.45));
+    else particles.push(gen(8, 13, 0.28, 0.48));
+  }
+  return particles;
 }
 
 export function renderOgScene({
@@ -69,7 +120,9 @@ export function renderOgScene({
   const blend = (c: number) => Math.round(c * TINT_ALPHA + 255 * (1 - TINT_ALPHA));
   const bgColor = `rgb(${blend(rgb.r)}, ${blend(rgb.g)}, ${blend(rgb.b)})`;
 
-  const blobBorderRadius = pickBlobShape(title);
+  const seed = djb2(title);
+  const blobBorderRadius = BLOB_SHAPES[seed % BLOB_SHAPES.length];
+  const particles = generateParticles(seed);
 
   return (
     <div
@@ -141,67 +194,25 @@ export function renderOgScene({
         </div>
       </div>
 
-      {/* Decorative dots for "particle" feel */}
-      <div
-        style={{
-          position: 'absolute',
-          top: 110,
-          left: 230,
-          width: 8,
-          height: 8,
-          borderRadius: '50%',
-          background: rgba(0.45),
-          display: 'flex',
-        }}
-      />
-      <div
-        style={{
-          position: 'absolute',
-          top: 430,
-          left: 300,
-          width: 12,
-          height: 12,
-          borderRadius: '50%',
-          background: rgba(0.35),
-          display: 'flex',
-        }}
-      />
-      <div
-        style={{
-          position: 'absolute',
-          top: 170,
-          left: 930,
-          width: 10,
-          height: 10,
-          borderRadius: '50%',
-          background: rgba(0.4),
-          display: 'flex',
-        }}
-      />
-      <div
-        style={{
-          position: 'absolute',
-          top: 390,
-          left: 980,
-          width: 6,
-          height: 6,
-          borderRadius: '50%',
-          background: rgba(0.5),
-          display: 'flex',
-        }}
-      />
-      <div
-        style={{
-          position: 'absolute',
-          top: 460,
-          left: 195,
-          width: 6,
-          height: 6,
-          borderRadius: '50%',
-          background: rgba(0.4),
-          display: 'flex',
-        }}
-      />
+      {/* Decorative particles. Positions and sizes are seeded from the
+          title hash so every page gets its own constellation that stays
+          stable across renders. Mix of small (3-7px), medium (8-13px), and
+          larger "anchor" dots (16-22px) for visual rhythm. */}
+      {particles.map((p, i) => (
+        <div
+          key={i}
+          style={{
+            position: 'absolute',
+            top: p.top,
+            left: p.left,
+            width: p.size,
+            height: p.size,
+            borderRadius: '50%',
+            background: rgba(p.a),
+            display: 'flex',
+          }}
+        />
+      ))}
 
       {/* Title below orb */}
       <div
