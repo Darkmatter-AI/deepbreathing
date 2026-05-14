@@ -61,9 +61,13 @@ export function renderOgScene({
   const rgb = hexToRgb(color);
   const rgba = (a: number) => `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${a})`;
 
-  // Background is constant across patterns so the brand feel stays cohesive
-  // even as the orb color shifts per breathing technique.
-  const bgGradient = 'linear-gradient(135deg, #fef7f3 0%, #fde2d8 60%, #fbd5cc 100%)';
+  // Match the live Resonance experience: when a session is running, the page
+  // background fades to `${themeColor}1a` — the pattern color at ~10% alpha
+  // over the white app background. Pre-blend that here so each technique's
+  // OG carries its own ambient wash (rose for box, indigo for 4-7-8, etc.).
+  const TINT_ALPHA = 0.1;
+  const blend = (c: number) => Math.round(c * TINT_ALPHA + 255 * (1 - TINT_ALPHA));
+  const bgColor = `rgb(${blend(rgb.r)}, ${blend(rgb.g)}, ${blend(rgb.b)})`;
 
   const blobBorderRadius = pickBlobShape(title);
 
@@ -76,7 +80,7 @@ export function renderOgScene({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        background: bgGradient,
+        background: bgColor,
         fontFamily: 'Inter',
       }}
     >
