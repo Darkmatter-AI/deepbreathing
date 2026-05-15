@@ -1,0 +1,393 @@
+{
+  "generatedAt": "2026-05-15T11:32:02.929Z",
+  "source": "https://deepbreathingexercises.com",
+  "byTitle": {
+    "1 Minute Breathing Exercise, Quick Calm": {
+      "de": "Kurze Atemübung – Schnelle Ruhe",
+      "es": "Técnicas de respiración para una calma rápida en 1 minuto,",
+      "fr": "Exercice de respiration d",
+      "ja": "1分間呼吸法 — すばやく落ち着きを",
+      "pt": "Exercício de Respiração de 1 Minuto — Calma Rápida"
+    },
+    "2 Minute Breathing Exercise, Quick Reset": {
+      "de": "2-minütige entspannungs atemübung – Schneller Neustart",
+      "es": "Descubre técnicas de relajación rápidas con este ejercicio",
+      "fr": "Exercice de respiration de 2 minutes — Réinitialisation rapide",
+      "ja": "2分間の深呼吸 の やり方 — クイックリセット",
+      "pt": "Exercício de respiração de 2 minutos — Reset Rápido"
+    },
+    "4-7-8 Breathing for Insomnia, Fall Asleep in Minutes": {
+      "de": "4-7-8 Breathing for Insomnia: Fall Asleep in Minutes",
+      "es": "4-7-8 Breathing for Insomnia: Fall Asleep in Minutes",
+      "fr": "4-7-8 Breathing for Insomnia: Fall Asleep in Minutes",
+      "ja": "4-7-8 Breathing for Insomnia: Fall Asleep in Minutes",
+      "pt": "4-7-8 Breathing for Insomnia: Fall Asleep in Minutes"
+    },
+    "4-7-8 Breathing for Sleep: Fall Asleep in 2 Minutes": {
+      "de": "4-7-8 Atemübungen zum Einschlafen — In 2 Minuten einschlafen",
+      "es": "Aprende la respiración 4-7-8 para dormir y concilia el",
+      "fr": "Améliorez votre respiration sommeil avec la méthode 4-7-8 – Endormez-vous en 2 minutes",
+      "ja": "眠れない時に役立つ4-7-8呼吸法：2分で眠りにつく",
+      "pt": "A técnica de respiração 4-7-8 para dormir: adormeça em 2 minutos"
+    },
+    "5 Minute Breathing Exercise, Deep Relaxation": {
+      "de": "5 Minuten Atemübung – Tiefe Entspannung",
+      "es": "Consigue una relajación 5 minutos profunda y entrena tu",
+      "fr": "Cohérence cardiaque 5 min — Relaxation profonde",
+      "ja": "5分間の呼吸エクササイズ — 深いリラクゼーション",
+      "pt": "Meditação guiada 5 minutos para relaxar profundamente"
+    },
+    "About Abi Abiassi": {
+      "de": "About Abi Abiassi, Founder of Deep Breathing Exercises",
+      "es": "About Abi Abiassi, Founder of Deep Breathing Exercises",
+      "fr": "About Abi Abiassi, Founder of Deep Breathing Exercises",
+      "ja": "About Abi Abiassi, Founder of Deep Breathing Exercises",
+      "pt": "About Abi Abiassi, Founder of Deep Breathing Exercises"
+    },
+    "About Deep Breathing Exercises": {
+      "de": "Über Tiefe Atemübungen",
+      "es": "Conoce más sobre nosotros y los beneficios de los",
+      "fr": "À propos des exercices de respiration profonde",
+      "ja": "深呼吸練習について",
+      "pt": "Sobre os benefícios da respiração profunda e os exercícios para praticá-la."
+    },
+    "Boost Focus by 40%: Coherent Breathing for Concentration": {
+      "de": "Steigern Sie Ihre Konzentration um 40 %: Kohärente Atemübungen für mehr Fokus",
+      "es": "Descubre ejercicios de concentración que potencian tu",
+      "fr": "Améliorez votre concentration de 40 % : Les techniques de respiration cohérente pour une meilleure concentration",
+      "ja": "集中力を40%向上させる「集中力 呼吸法」：コヒーレント呼吸で集中力アップ",
+      "pt": "Aumente o Foco em 40%: A Respiração Coerente para Foco e Concentração"
+    },
+    "Box Breathing Before Presentation, Calm Nerves in 60 Seconds": {
+      "de": "Box Breathing Before Presentation: Calm Nerves in 60 Seconds",
+      "es": "Box Breathing Before Presentation: Calm Nerves in 60 Seconds",
+      "fr": "Box Breathing Before Presentation: Calm Nerves in 60 Seconds",
+      "ja": "Box Breathing Before Presentation: Calm Nerves in 60 Seconds",
+      "pt": "Box Breathing Before Presentation: Calm Nerves in 60 Seconds"
+    },
+    "Breathing Exercises Before Surgery, Calm Pre-Op Anxiety": {
+      "de": "Breathing Exercises Before Surgery: Calm Pre-Op Anxiety",
+      "es": "Breathing Exercises Before Surgery: Calm Pre-Op Anxiety",
+      "fr": "Breathing Exercises Before Surgery: Calm Pre-Op Anxiety",
+      "ja": "Breathing Exercises Before Surgery: Calm Pre-Op Anxiety",
+      "pt": "Breathing Exercises Before Surgery: Calm Pre-Op Anxiety"
+    },
+    "Breathing Exercises for Kids: Calm Down Techniques": {
+      "de": "Atemübungen für Kinder: Beruhigungstechniken",
+      "es": "Descubre la relajación infantil con ejercicios de",
+      "fr": "Des techniques d",
+      "ja": "子ども向け呼吸法：落ち着きを取り戻すマインドフルネス・テクニック",
+      "pt": "Exercícios de respiração para crianças: técnicas de calma"
+    },
+    "Breathing Exercises for Labor, Manage Contractions Naturally": {
+      "de": "Breathing Exercises for Labor: Manage Contractions Naturally",
+      "es": "Breathing Exercises for Labor: Manage Contractions Naturally",
+      "fr": "Breathing Exercises for Labor: Manage Contractions Naturally",
+      "ja": "Breathing Exercises for Labor: Manage Contractions Naturally",
+      "pt": "Breathing Exercises for Labor: Manage Contractions Naturally"
+    },
+    "Breathing Exercises for Public Speaking: Stop Stage Fright": {
+      "de": "Atemübungen für öffentliche Reden – Lampenfieber stoppen. Eine effektive Atemtechnik gegen Angst.",
+      "es": "Ejercicios de respiración para hablar en público: supera",
+      "fr": "Exercices de respiration pour la prise de parole en public et la gestion du stress — Stoppez le trac",
+      "ja": "スピーチ 呼吸法で舞台恐怖症を克服",
+      "pt": "Exercícios de Respiração para Vencer o Medo de Falar em Público — Diga Adeus ao Pânico de Palco"
+    },
+    "Breathing Exercises for Singing: Build Vocal Breath Support": {
+      "de": "Atemübungen Singen: Stärkung der stimmlichen Atemstütze",
+      "es": "Potencia tu voz con un ejercicio de respiración para",
+      "fr": "Exercices de respiration pour chanter : Développez votre soutien vocal",
+      "ja": "歌の腹式呼吸エクササイズ：声のサポートを築く",
+      "pt": "Exercícios de Respiração para Cantar: Construa Apoio Vocal"
+    },
+    "Breathing Exercises for Stress: Calm Down in 30 Seconds": {
+      "de": "Mit Atemübungen Stress abbauen: In 30 Sekunden zur Ruhe finden.",
+      "es": "La respiración para relajarse: ejercicios para el estrés",
+      "fr": "Exercices de respiration pour le stress – Calmez-vous en 30 secondes",
+      "ja": "ストレス 呼吸法 — 30秒で心を落ち着かせる",
+      "pt": "Exercícios de respiração para acalmar o estresse — Relaxe em 30 segundos"
+    },
+    "Breathing Exercises for Travel Anxiety: Stay Calm for Hours": {
+      "de": "Atemübungen gegen Reiseangst: Flugangst überwinden und stundenlang gelassen bleiben.",
+      "es": "Ejercicios de respiración para el miedo a volar: vuelos",
+      "fr": "Exercices de respiration pour l",
+      "ja": "飛行機が怖い気持ちを克服し、旅行の不安を解消する呼吸法 — 何時間も落ち着きを保ちましょう。",
+      "pt": "Exercícios de respiração para o medo de voar e ansiedade em viagens — Mantenha a calma por horas."
+    },
+    "Breathing Guides by Goal": {
+      "de": "Atemtechniken nach Ziel",
+      "es": "Descubre guías de ejercicios de respiración para mejorar",
+      "fr": "Guides de respiration par objectif",
+      "ja": "目的別呼吸法ガイド",
+      "pt": "Guias de Exercícios Respiratórios por Objetivo"
+    },
+    "Breathing Technique for Panic Attack. Stop Panic in 30 Seconds": {
+      "de": "Breathing Technique for Panic Attack: Stop Panic in 30 Seconds",
+      "es": "Breathing Technique for Panic Attack: Stop Panic in 30 Seconds",
+      "fr": "Breathing Technique for Panic Attack: Stop Panic in 30 Seconds",
+      "ja": "Breathing Technique for Panic Attack: Stop Panic in 30 Seconds",
+      "pt": "Breathing Technique for Panic Attack: Stop Panic in 30 Seconds"
+    },
+    "Breathing Techniques (Free Guided Visualizers)": {
+      "de": "Atemtechniken (Kostenlose geführte Visualisierer)",
+      "es": "Descubre las mejores técnicas de respiración: Box, 4-7-8,",
+      "fr": "Techniques de respiration (Visualisations guidées gratuites)",
+      "ja": "呼吸法 種類（無料ガイド付き視覚化ツール）",
+      "pt": "Técnicas de Respiração (Visualizadores Guiados Gratuitos)"
+    },
+    "Breathing for Running Recovery: Stop Side Stitches Fast": {
+      "de": "Seitenstechen in 30 Sekunden stoppen – Kostenloser Lauf-Timer für die richtige Atmung beim Joggen.",
+      "es": "Descubre cómo respirar corriendo para eliminar el flato en",
+      "fr": "Optimisez votre respiration course à pied : Arrêtez les points de côté en 30 secondes - Minuteur gratuit.",
+      "ja": "脇腹痛を30秒で解消 - 無料ランニングタイマー",
+      "pt": "Pare as Dores Laterais em 30 Segundos – Cronômetro Grátis para Corredores: Saiba como respirar correndo."
+    },
+    "Can't Meditate? Start with Coherent Breathing": {
+      "de": "Wenn Meditation schwerfällt: Beginnen Sie mit kohärenter Atmung",
+      "es": "Inicia tu viaje de meditación respiración con la técnica",
+      "fr": "Vous n",
+      "ja": "瞑想が苦手ですか？コヒーレント呼吸から始めましょう",
+      "pt": "Não consegue meditar? Comece com a Respiração Coerente"
+    },
+    "Coherent Breathing App, Free Browser Timer": {
+      "de": "Herzratenvariabilität App für kohärente Atmung – Kostenloser Browser-Timer",
+      "es": "Mejora tu bienestar con nuestra aplicación gratuita de",
+      "fr": "Application de cohérence cardiaque — Minuteur gratuit pour navigateur",
+      "ja": "コヒーレント呼吸法アプリ — 無料ブラウザタイマー",
+      "pt": "Aplicativo de Respiração Coerente — Temporizador Gratuito no Navegador para Coerência Cardíaca"
+    },
+    "Deep Breathing Brand Lab": {
+      "de": "Deep Breathing Brand Lab",
+      "es": "Deep Breathing Brand Lab",
+      "fr": "Deep Breathing Brand Lab",
+      "ja": "Deep Breathing Brand Lab",
+      "pt": "Deep Breathing Brand Lab"
+    },
+    "Faster Athletic Recovery: Physiological Sigh Between Sets": {
+      "de": "Schnellere sportliche Erholung durch Atemübungen für Sportler: Das physiologische Seufzen zwischen den Sätzen.",
+      "es": "Recuperación atlética más rápida: El suspiro fisiológico",
+      "fr": "Récupération sportive plus rapide : le soupir physiologique entre les séries",
+      "ja": "アスリートの回復を加速：セット間の生理的ため息による筋トレ 呼吸法",
+      "pt": "Recuperação atlética mais rápida: o suspiro fisiológico"
+    },
+    "Free Breathing App (No Download)": {
+      "de": "Kostenlose Atemübungen App (ohne Download)",
+      "es": "Realiza ejercicios de respiración con nuestra app gratuita",
+      "fr": "Application de respiration gratuite (sans téléchargement)",
+      "ja": "呼吸アプリ 無料版（ダウンロード不要）",
+      "pt": "App de Respiração Gratuito (Sem Download)"
+    },
+    "Free Breathing Visualizer: Calm Anxiety in 60 Seconds": {
+      "de": "Free Breathing Visualizer: Calm Anxiety in 60 Seconds",
+      "es": "Free Breathing Visualizer: Calm Anxiety in 60 Seconds",
+      "fr": "Free Breathing Visualizer: Calm Anxiety in 60 Seconds",
+      "ja": "Free Breathing Visualizer: Calm Anxiety in 60 Seconds",
+      "pt": "Free Breathing Visualizer: Calm Anxiety in 60 Seconds"
+    },
+    "Free Breathing Widget": {
+      "de": "Kostenloser Atem-Visualisierer: Angst in 60 Sekunden beruhigen.",
+      "es": "Visualizador de respiración gratis: Calma la ansiedad en 60 segundos.",
+      "fr": "Animation respiration gratuite : Calmez l",
+      "ja": "無料の呼吸ビジュアライザー：60秒で不安を鎮める",
+      "pt": "Animação de respiração grátis: acalme a ansiedade em 60 segundos."
+    },
+    "Free Online 4-7-8 Breathing Timer": {
+      "de": "Kostenloser Online-Timer für die 4-7-8 Atemtechnik",
+      "es": "Temporizador gratuito en línea para la respiración 4-7-8",
+      "fr": "Minuteur de respiration 4-7-8 gratuit en ligne",
+      "ja": "無料オンライン478呼吸法タイマー",
+      "pt": "Cronômetro Online Gratuito para a Respiração 4-7-8"
+    },
+    "Free Online Box Breathing Timer": {
+      "de": "Kostenloser Online Box-Atmung Timer",
+      "es": "Descubre la calma con nuestro temporizador gratuito de",
+      "fr": "Minuteur de respiration carrée gratuit en ligne",
+      "ja": "無料オンライン ボックス呼吸法 アプリ",
+      "pt": "Timer Online Grátis para Respiração Quadrada"
+    },
+    "Free Online Breathing Visualizer, 10 Techniques, No Download": {
+      "de": "Kostenlose Atemübungen Online mit Visualizer – 10 Techniken, kein Download",
+      "es": "Descubre nuestro visualizador online gratuito de",
+      "fr": "Animation respiration gratuite en ligne – 10 techniques, sans téléchargement",
+      "ja": "無料のオンライン呼吸ビジュアライザー。10種類の呼吸法をダウンロード不要で体験できる深呼吸アプリです。",
+      "pt": "Visualizador Gratuito de Respiração Guiada Online — 10 Técnicas, Sem Download"
+    },
+    "Holiday Breathing Exercises, Find Calm During the Season": {
+      "de": "Atemübungen für die Feiertage: Finden Sie Entspannung Weihnachten und innere Ruhe",
+      "es": "Encuentra la calma en estas fiestas con ejercicios de",
+      "fr": "Exercices de respiration pour les fêtes : trouvez le calme pendant la saison.",
+      "ja": "年末年始のリラックス呼吸法 — シーズン中に落ち着きを見つける",
+      "pt": "Exercícios de Respiração para Superar a Ansiedade de Fim de Ano e Encontrar a Calma na Temporada Festiva"
+    },
+    "Holiday Stress Relief in 30 Seconds: Physiological Sigh": {
+      "de": "Feiertagsstress in 30 Sekunden lindern – Physiologischer Seufzer. Effektive Atemübungen, die Stress abbauen.",
+      "es": "Cómo manejar el estrés en vacaciones en 30 segundos: la",
+      "fr": "Le soupir physiologique : une solution en 30 secondes pour la respiration stressante des fêtes.",
+      "ja": "30秒でできるストレス解消呼吸法 — 生理的ため息",
+      "pt": "Alívio da ansiedade fim de ano em 30 segundos — Suspiro Fisiológico"
+    },
+    "Huberman Lab Breathing Protocols: 6 Techniques Matched to Your Goal": {
+      "de": "Huberman Lab Atemprotokolle: 6 Techniken, abgestimmt auf Ihr Ziel",
+      "es": "Protocolos de Respiración de Huberman: 6 Técnicas para el",
+      "fr": "Protocoles de respiration Huberman Lab : 6 techniques adaptées à votre objectif",
+      "ja": "ヒューバーマン・ラボの呼吸法プロトコル：スタンフォード式呼吸法を含む、あなたの目標に合わせた6つのテクニック",
+      "pt": "Protocolos de Respiração do Huberman Lab: 6 Técnicas para Seus Objetivos, incluindo o suspiro fisiológico Huberman"
+    },
+    "Lower Blood Pressure Naturally with 4-7-8 Breathing": {
+      "de": "Blutdruck senken Atemübungen: Natürlich den Blutdruck um 10 Punkte reduzieren.",
+      "es": "Respiración para bajar la tensión de forma natural: la",
+      "fr": "Respiration et hypertension : Réduisez votre tension artérielle naturellement de 10 points",
+      "ja": "高血圧を自然に下げる呼吸法：血圧を10ポイント低下",
+      "pt": "Como baixar pressão arterial naturalmente: Reduza a PA em 10 pontos"
+    },
+    "Lung Capacity Exercises: Increase Your Breathing Power": {
+      "de": "Atemübungen, um die Lungenkapazität zu erhöhen: Steigern Sie Ihre Atemkraft",
+      "es": "Potencia tu respiración con ejercicios para aumentar",
+      "fr": "Améliorez votre capacité pulmonaire avec un entraînement respiratoire pour une puissance accrue",
+      "ja": "肺活量を鍛えるエクササイズ：呼吸力を高めよう",
+      "pt": "Exercício para Fortalecer o Pulmão: Aumente Sua Capacidade Respiratória"
+    },
+    "Our Editorial Policy": {
+      "de": "Our Editorial Policy",
+      "es": "Our Editorial Policy",
+      "fr": "Our Editorial Policy",
+      "ja": "Our Editorial Policy",
+      "pt": "Our Editorial Policy"
+    },
+    "Pranayama Breathing: Complete Guide to Yogic Breathing": {
+      "de": "Pranayama-Atmung: Der umfassende Leitfaden zu yogischer Atmung",
+      "es": "Guía completa de los pranayamas: técnicas de respiración",
+      "fr": "Le pranayama : Guide complet de la respiration yogique",
+      "ja": "プラーナ ヤーマ呼吸法：ヨガの呼吸法完全ガイド",
+      "pt": "**Pranayama Respiração**: Guia Completo de Respiração Iogue"
+    },
+    "Privacy Policy": {
+      "de": "Datenschutzrichtlinie",
+      "es": "Conoce nuestra política de privacidad para una respiración",
+      "fr": "Politique de confidentialité",
+      "ja": "プライバシーポリシー",
+      "pt": "Política de Privacidade"
+    },
+    "Safe Breathing for Pregnancy Anxiety & Labor": {
+      "de": "Sichere Atemübungen Schwangerschaft für Angst und Geburt",
+      "es": "La respiración en el embarazo: Ejercicios seguros con la",
+      "fr": "Une respiration grossesse sûre pour gérer l",
+      "ja": "妊娠中の不安や陣痛・出産に役立つ、安全な出産呼吸法",
+      "pt": "Técnicas de respiração segura para ansiedade na gravidez e para a respiração no parto"
+    },
+    "Stop Anxiety in 60 Seconds - Navy SEAL Box Breathing": {
+      "de": "Atemübungen gegen Angst: Die Navy SEAL Box-Atmung stoppt Angst in 60 Sekunden.",
+      "es": "Detén la ansiedad en 60 segundos con las respiraciones",
+      "fr": "Respiration anxiété : stoppez-la en 60 secondes avec la technique carrée des Navy SEAL",
+      "ja": "60秒で不安を止める：ネイビーシールズ式ボックス呼吸法",
+      "pt": "Respiração Quadrada para Ansiedade: Pare em 60 Segundos - Método Navy SEAL"
+    },
+    "Stop a Panic Attack in 30 Seconds - Physiological Sigh": {
+      "de": "Panikattacke in 30 Sekunden stoppen – Physiologischer Seufzer",
+      "es": "Detén un ataque de pánico en 30 segundos: la técnica del",
+      "fr": "Maîtriser une respiration crise de panique en 30 secondes - Soupir physiologique",
+      "ja": "30秒でパニック発作を止める過呼吸の止め方 - 生理的ため息",
+      "pt": "Pare um Ataque de Pânico em 30 Segundos - Suspiro Fisiológico"
+    }
+  },
+  "bySlug": {
+    "4-7-8": {
+      "de": "Die 4-7-8 Atemtechnik: In 2 Minuten einschlafen (Dr. Weils Methode)",
+      "es": "Cómo usar la respiración 4-7-8 para dormirte en 2 minutos",
+      "fr": "La respiration 4-7-8 : endormez-vous en 2 minutes (Méthode du Dr. Weil)",
+      "ja": "4-7-8呼吸法：2分で眠りにつく（ワイル博士のメソッド）",
+      "pt": "Adormeça em 2 minutos com a respiração 4-7-8 (Método do"
+    },
+    "9d-breathwork": {
+      "de": "9D Breathwork Explained: The Breath, the Audio, the Cost",
+      "es": "9D Breathwork Explained: The Breath, the Audio, the Cost",
+      "fr": "9D Breathwork Explained: The Breath, the Audio, the Cost",
+      "ja": "9D Breathwork Explained: The Breath, the Audio, the Cost",
+      "pt": "9D Breathwork Explained: The Breath, the Audio, the Cost"
+    },
+    "belly": {
+      "de": "Bauchatmung: Die Grundlage aller Atemübungen",
+      "es": "Domina la respiración diafragmática: ejercicios de",
+      "fr": "La respiration abdominale : le fondement de toutes les techniques de respiration",
+      "ja": "腹式呼吸：すべての呼吸法の基礎",
+      "pt": "Respiração Abdominal: A Base de Todas as Técnicas de Respiração"
+    },
+    "box": {
+      "de": "Box-Atmung: Die Navy SEAL Technik zur schnellen Angstlösung",
+      "es": "Descubre la respiración cuadrada: la técnica de los Navy",
+      "fr": "La respiration carrée : technique des Navy SEAL pour calmer l",
+      "ja": "不安を素早く止める海軍特殊部隊のボックス呼吸法",
+      "pt": "Respiração Quadrada: A Técnica dos Navy SEALs para Parar a Ansiedade Rapidamente"
+    },
+    "breath-of-fire": {
+      "de": "Die Feueratmung: Kundalini-Atemübung (Kostenloser Timer)",
+      "es": "Domina la respiración Kapalabhati: Ejercicio Kundalini",
+      "fr": "Respiration du feu : Exercice de respiration Kundalini (Minuteur gratuit)",
+      "ja": "火の呼吸：クンダリーニ呼吸法（無料タイマー）",
+      "pt": "Respiração do Fogo: Exercício de Kundalini com Timer Grátis"
+    },
+    "buteyko": {
+      "de": "Die Buteyko Methode: Leichte Nasenatmung",
+      "es": "Mejora tu salud respiratoria con la respiración Buteyko:",
+      "fr": "La méthode Buteyko : la respiration nasale légère",
+      "ja": "ブテイコ呼吸法：軽い鼻呼吸法",
+      "pt": "Respiração Buteyko: O Método de Respiração Nasal Leve"
+    },
+    "coherent": {
+      "de": "Kohärente Atmung: Die Wissenschaft hinter 5 Atemzügen pro Minute.",
+      "es": "Respiración Coherente: La Ciencia de 5 Respiraciones/Min",
+      "fr": "La cohérence cardiaque : la science des 5 respirations par minute",
+      "ja": "コヒーレント呼吸：1分間に5回の呼吸がもたらすHRV 呼吸法の科学",
+      "pt": "A respiração coerente: a ciência por trás das 5 respirações por minuto"
+    },
+    "hope-cartel-9d-breathwork": {
+      "de": "Hope Cartel 9D Breathwork: Sessions, Pricing, What to Expect",
+      "es": "Hope Cartel 9D Breathwork: Sessions, Pricing, What to Expect",
+      "fr": "Hope Cartel 9D Breathwork: Sessions, Pricing, What to Expect",
+      "ja": "Hope Cartel 9D Breathwork: Sessions, Pricing, What to Expect",
+      "pt": "Hope Cartel 9D Breathwork: Sessions, Pricing, What to Expect"
+    },
+    "nadi-shodhana": {
+      "de": "Die Wechselatmung (Nadi Shodhana) für Balance und Ruhe in 5 Minuten",
+      "es": "Descubre el equilibrio y la calma en 5 minutos con la",
+      "fr": "Équilibre et sérénité en 5 minutes avec la respiration Nadi Shodhana",
+      "ja": "片鼻呼吸（ナディ・ショーダナ） - 5分でバランスを整え、心を落ち着かせる方法",
+      "pt": "Respiração Nadi Shodhana (Alternada das Narinas) — Equilíbrio e Calma em 5 Minutos"
+    },
+    "physiological-sigh": {
+      "de": "Der physiologische Seufzer – Beruhigung in 30 Sekunden",
+      "es": "Un temporizador gratuito para el suspiro fisiológico:",
+      "fr": "Respiration du soupir physiologique — Calmez-vous en 30 secondes",
+      "ja": "生理的ため息呼吸 — 30秒で落ち着く",
+      "pt": "Suspiro Fisiológico: Acalme-se em 30 Segundos"
+    },
+    "pursed-lip": {
+      "de": "Lippenbremse: Atemnot schnell stoppen",
+      "es": "Alivia la falta de aire rápidamente con la respiración con",
+      "fr": "La respiration lèvres pincées pour stopper rapidement l",
+      "ja": "口すぼめ呼吸で息切れを素早く止める",
+      "pt": "Respiração Freno Labial: Pare a Falta de Ar Rapidamente"
+    },
+    "tummo": {
+      "de": "Tummo-Atmung: Die tibetische Technik der inneren Wärme für Ihre Tummo Meditation (Kostenloser Timer)",
+      "es": "Descubre la respiración tummo: técnica tibetana de calor",
+      "fr": "La méditation Tummo : technique tibétaine de chaleur interne (Minuteur gratuit)",
+      "ja": "ツンモ呼吸法：チベットの体内熱生成テクニック (無料タイマー)",
+      "pt": "Respiração Tummo: Técnica Tibetana de Calor Interno (Timer Grátis)"
+    },
+    "ujjayi": {
+      "de": "Ujjayi Atmung: Die Ozean-Atemtechnik",
+      "es": "Domina el ujjayi pranayama: la técnica de respiración",
+      "fr": "Respiration Ujjayi : La technique du souffle de l",
+      "ja": "ウジャイ呼吸：海の呼吸法",
+      "pt": "Respiração Ujjayi: A Técnica da Respiração do Oceano"
+    },
+    "wim-hof": {
+      "de": "Die Wim Hof Methode: Die 3-Runden-Technik des Iceman",
+      "es": "El método de 3 rondas del Iceman: domina la respiración",
+      "fr": "La méthode Wim Hof : la technique en 3 rounds de l",
+      "ja": "ヴィム・ホフ呼吸法：アイスマンの3ラウンドメソッド",
+      "pt": "Respiração Wim Hof: O Método de 3 Rodadas do Homem de Gelo"
+    }
+  }
+}

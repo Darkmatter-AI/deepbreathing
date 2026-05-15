@@ -8,7 +8,8 @@
     "start": "next start",
     "postbuild": "node ./scripts/ping-sitemap.mjs",
     "lint": "next lint",
-    "ping:sitemap": "node ./scripts/ping-sitemap.mjs"
+    "ping:sitemap": "node ./scripts/ping-sitemap.mjs",
+    "build:og-translations": "node ./scripts/build-og-translations.mjs"
   },
   "dependencies": {
     "@google/genai": "^1.30.0",
