@@ -114,8 +114,13 @@ export const BREATHE_LABELS: Record<string, string> = {
   ja: "呼吸",
 };
 
-export function isSupportedOgLocale(value: unknown): value is keyof typeof BREATHE_LABELS {
-  return typeof value === "string" && value in BREATHE_LABELS;
+// Accepts both bare codes (`es`, `pt`) and locale-region codes (`es-es`,
+// `pt-br`, `ja-jp`) — mass-translate emits the region form for some
+// locales. Returns the base locale if supported, else null.
+export function normalizeOgLocale(value: unknown): keyof typeof BREATHE_LABELS | null {
+  if (typeof value !== "string") return null;
+  const base = value.trim().toLowerCase().split(/[-_]/)[0];
+  return base in BREATHE_LABELS ? (base as keyof typeof BREATHE_LABELS) : null;
 }
 
 export function renderOgScene({

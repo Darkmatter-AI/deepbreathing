@@ -3,7 +3,7 @@ import { NextRequest } from 'next/server';
 import { BREATHING_PATTERNS } from '@/components/resonance/constants';
 import { ModeName } from '@/components/resonance/types';
 import { loadOgFonts } from '@/lib/og-fonts';
-import { BREATHE_LABELS, isSupportedOgLocale, renderOgScene } from '@/lib/seo/og-scene';
+import { BREATHE_LABELS, normalizeOgLocale, renderOgScene } from '@/lib/seo/og-scene';
 
 export const runtime = 'edge';
 
@@ -29,12 +29,11 @@ export async function GET(request: NextRequest) {
     const requestedTitle = searchParams.get('title')?.trim();
     const requestedSubtitle = searchParams.get('subtitle')?.trim();
     const requestedColor = searchParams.get('color')?.trim();
-    const requestedLang = searchParams.get('lang')?.trim().toLowerCase();
 
     const color = isHexColor(requestedColor) ? normalizeHexColor(requestedColor) : DEFAULT_PATTERN.color;
     const title = clampText(requestedTitle || DEFAULT_TITLE, 72);
     const subtitle = clampText(requestedSubtitle || DEFAULT_SUBTITLE, 56);
-    const locale = isSupportedOgLocale(requestedLang) ? requestedLang : 'en';
+    const locale = normalizeOgLocale(searchParams.get('lang')) ?? 'en';
 
     return new ImageResponse(renderOgScene({ title, subtitle, color, locale }), {
       width: 1200,

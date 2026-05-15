@@ -4,7 +4,7 @@ import { breathingPageMap } from '@/data/breathing-pages';
 import { BREATHING_PATTERNS } from '@/components/resonance/constants';
 import { ModeName } from '@/components/resonance/types';
 import { loadOgFonts } from '@/lib/og-fonts';
-import { BREATHE_LABELS, isSupportedOgLocale, renderOgScene } from '@/lib/seo/og-scene';
+import { BREATHE_LABELS, normalizeOgLocale, renderOgScene } from '@/lib/seo/og-scene';
 
 export const runtime = 'edge';
 
@@ -24,8 +24,7 @@ export async function GET(
     const subtitle = 'deepbreathingexercises.com';
     const color = pattern.color;
 
-    const requestedLang = request.nextUrl.searchParams.get('lang')?.trim().toLowerCase();
-    const locale = isSupportedOgLocale(requestedLang) ? requestedLang : 'en';
+    const locale = normalizeOgLocale(request.nextUrl.searchParams.get('lang')) ?? 'en';
 
     return new ImageResponse(renderOgScene({ title, subtitle, color, locale }), {
       width: 1200,
