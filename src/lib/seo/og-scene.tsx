@@ -74,9 +74,10 @@ function generateParticles(seed: number): Particle[] {
 
   // Reject particles inside the orb's bounding box (the blob shape lives
   // roughly inside this rect; corners stay free because the shape curves in).
-  const orb = { x0: 425, y0: 110, x1: 775, y1: 460 };
-  // Stay above the title strip — title spans the bottom ~80px.
-  const yMax = 510;
+  const orb = { x0: 430, y0: 100, x1: 770, y1: 440 };
+  // Stay above the title strip — title wraps up to ~90px tall and sits
+  // 56px from the bottom edge, so leave a buffer above its top line.
+  const yMax = 470;
 
   function gen(sizeMin: number, sizeMax: number, alphaMin: number, alphaMax: number): Particle {
     for (let attempts = 0; attempts < 50; attempts++) {
@@ -161,14 +162,15 @@ export function renderOgScene({
         fontFamily: 'Inter',
       }}
     >
-      {/* Soft halo behind orb */}
+      {/* Soft halo behind orb. Centered on (600, 280); shrunk to match the
+          smaller orb so the glow doesn't dominate. */}
       <div
         style={{
           position: 'absolute',
-          top: -30,
-          left: 290,
-          width: 620,
-          height: 620,
+          top: -20,
+          left: 320,
+          width: 560,
+          height: 560,
           borderRadius: '50%',
           background: `radial-gradient(circle, ${rgba(0.34)} 0%, ${rgba(0.1)} 50%, ${rgba(0)} 78%)`,
           display: 'flex',
@@ -179,27 +181,29 @@ export function renderOgScene({
       <div
         style={{
           position: 'absolute',
-          top: 55,
-          left: 370,
-          width: 460,
-          height: 460,
+          top: 70,
+          left: 390,
+          width: 420,
+          height: 420,
           borderRadius: blobBorderRadius,
           border: `2px solid ${rgba(0.22)}`,
           display: 'flex',
         }}
       />
 
-      {/* Main orb — amorphous blob, solid color (matches live site) */}
+      {/* Main orb — amorphous blob, solid color (matches live site).
+          340x340 leaves more vertical breathing room for the title (up to
+          3 wrapped lines) without colliding with the orb's drop shadow. */}
       <div
         style={{
           position: 'absolute',
-          top: 90,
-          left: 405,
-          width: 390,
-          height: 390,
+          top: 100,
+          left: 430,
+          width: 340,
+          height: 340,
           borderRadius: blobBorderRadius,
           background: color,
-          boxShadow: `0 24px 80px ${rgba(0.28)}`,
+          boxShadow: `0 22px 70px ${rgba(0.26)}`,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
@@ -208,7 +212,7 @@ export function renderOgScene({
         <div
           style={{
             color: 'white',
-            fontSize: 52,
+            fontSize: 46,
             fontWeight: 700,
             opacity: 0.95,
             display: 'flex',
@@ -241,26 +245,28 @@ export function renderOgScene({
         />
       ))}
 
-      {/* Title below orb */}
+      {/* Title below orb. Wider side margins (120px each) keep long
+          translated titles from clipping at the edge on platforms that
+          render the image with extra inset (Twitter mobile, iMessage). */}
       <div
         style={{
           position: 'absolute',
-          bottom: 50,
+          bottom: 56,
           left: 0,
           right: 0,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          padding: '0 80px',
+          padding: '0 120px',
         }}
       >
         <div
           style={{
             color: rgba(0.92),
-            fontSize: 38,
+            fontSize: 36,
             fontWeight: 700,
             textAlign: 'center',
-            lineHeight: 1.15,
+            lineHeight: 1.2,
             display: 'flex',
           }}
         >
