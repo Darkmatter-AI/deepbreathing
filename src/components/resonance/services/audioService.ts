@@ -61,8 +61,7 @@ export class AudioService {
 
    private breathingMode: ModeName = ModeName.Box;
    private cueNoiseBuffer: AudioBuffer | null = null;
-   private cueReverb: ConvolverNode | null = null;
-   private cueReverbBuffer: AudioBuffer | null = null;
+   private cueReverbCache: Map<string, ConvolverNode> = new Map();
 
   private isMuted = false;
   private cueVolume = 0.32;
@@ -942,23 +941,28 @@ export class AudioService {
 
   private getCueReverb(duration: number, decay: number) {
     if (!this.ctx) return null;
-    if (this.cueReverb && this.cueReverbBuffer) return this.cueReverb;
+    // Key by (duration, decay) so each per-mode preset gets its intended IR
+    // instead of the first call's IR being reused for the rest of the session.
+    const safeDuration = Math.max(0.08, duration);
+    const safeDecay = Math.max(0.5, decay);
+    const key = `${safeDuration.toFixed(2)}:${safeDecay.toFixed(2)}`;
+    const cached = this.cueReverbCache.get(key);
+    if (cached) return cached;
 
-    const length = Math.max(1, Math.floor(this.ctx.sampleRate * Math.max(0.08, duration)));
+    const length = Math.max(1, Math.floor(this.ctx.sampleRate * safeDuration));
     const buffer = this.ctx.createBuffer(2, length, this.ctx.sampleRate);
 
     for (let channel = 0; channel < buffer.numberOfChannels; channel++) {
       const data = buffer.getChannelData(channel);
       for (let i = 0; i < length; i++) {
         const x = 1 - i / length;
-        data[i] = (Math.random() * 2 - 1) * Math.pow(x, Math.max(0.5, decay));
+        data[i] = (Math.random() * 2 - 1) * Math.pow(x, safeDecay);
       }
     }
 
     const convolver = this.ctx.createConvolver();
     convolver.buffer = buffer;
-    this.cueReverb = convolver;
-    this.cueReverbBuffer = buffer;
+    this.cueReverbCache.set(key, convolver);
     return convolver;
   }
 
