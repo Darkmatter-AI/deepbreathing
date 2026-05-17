@@ -71,6 +71,17 @@ function parseAndClampDuration(value: string | null): number | undefined {
   return Math.min(parsed, MAX_DURATION);
 }
 
+// Parse a boolean-like URL param. Accepts "1"/"0", "true"/"false", "on"/"off".
+// Returns undefined if param is missing/invalid (so callers can fall back to
+// settings persistence or default).
+function parseBoolParam(value: string | null): boolean | undefined {
+  if (value === null) return undefined;
+  const v = value.toLowerCase();
+  if (v === '1' || v === 'true' || v === 'on' || v === 'yes') return true;
+  if (v === '0' || v === 'false' || v === 'off' || v === 'no') return false;
+  return undefined;
+}
+
 function durationLabel(seconds: number): string {
   return seconds < 60 ? `${seconds}s` : `${seconds / 60} min`;
 }
@@ -104,6 +115,15 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     () => parseAndClampDuration(searchParams.get('duration')),
     [searchParams]
   );
+  // v2 audio toggles — also URL-driven so embeds + share links work.
+  const binauralFromUrl = useMemo(
+    () => parseBoolParam(searchParams.get('binaural')),
+    [searchParams]
+  );
+  const eyesClosedFromUrl = useMemo(
+    () => parseBoolParam(searchParams.get('eyesClosed')),
+    [searchParams]
+  );
 
   // --- State ---
   const initialMode = defaultMode ?? ModeName.Box;
@@ -111,6 +131,10 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
   const [activeMode, setActiveMode] = useState<ModeName>(initialMode);
   const [speedMultiplier, setSpeedMultiplier] = useState(DEFAULT_SPEED_MULTIPLIER);
   const [themeColor, setThemeColor] = useState(BREATHING_PATTERNS[initialMode].color);
+  // v2 audio toggles. Defaults preserve current behavior (binaural on,
+  // eyes-closed off) so existing users see no change unless they opt in.
+  const [binauralEnabled, setBinauralEnabled] = useState<boolean>(() => binauralFromUrl ?? true);
+  const [eyesClosed, setEyesClosed] = useState<boolean>(() => eyesClosedFromUrl ?? false);
   const [totalMinutes, setTotalMinutes] = useState(0);
   const [sessionsCompleted, setSessionsCompleted] = useState(0);
   // Identity of the in-progress session. Set on first start, kept across
@@ -155,6 +179,13 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       if (!defaultMode && parsed.mode) setActiveMode(parsed.mode);
       if (parsed.speed) setSpeedMultiplier(parsed.speed);
       if (!defaultMode && parsed.color) setThemeColor(parsed.color);
+      // v2 toggles — URL param wins over storage, storage wins over default.
+      if (binauralFromUrl === undefined && typeof parsed.binauralEnabled === 'boolean') {
+        setBinauralEnabled(parsed.binauralEnabled);
+      }
+      if (eyesClosedFromUrl === undefined && typeof parsed.eyesClosed === 'boolean') {
+        setEyesClosed(parsed.eyesClosed);
+      }
     } else if (!defaultMode) {
       const hour = new Date().getHours();
       if (hour >= 5 && hour < 11) setThemeColor("#0d9488");
@@ -195,6 +226,16 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     if (durationFromUrl === undefined) return;
     setSelectedDuration(durationFromUrl);
   }, [durationFromUrl]);
+
+  // Mirror URL param changes for v2 toggles too (matches durationFromUrl).
+  useEffect(() => {
+    if (binauralFromUrl === undefined) return;
+    setBinauralEnabled(binauralFromUrl);
+  }, [binauralFromUrl]);
+  useEffect(() => {
+    if (eyesClosedFromUrl === undefined) return;
+    setEyesClosed(eyesClosedFromUrl);
+  }, [eyesClosedFromUrl]);
 
   useEffect(() => {
     if (!mounted || durationFromUrl !== undefined) return;
@@ -390,7 +431,9 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       mode: activeMode,
       speed: speedMultiplier,
       color: themeColor,
-      duration: selectedDuration
+      duration: selectedDuration,
+      binauralEnabled,
+      eyesClosed,
     }));
     // Track settings changes for conversion trigger (skip initial mount)
     settingsChangeCountRef.current++;
@@ -398,7 +441,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       onSettingsChange();
       syncSettings({ mode: activeMode, speed: speedMultiplier, duration: selectedDuration });
     }
-  }, [activeMode, speedMultiplier, themeColor, selectedDuration, mounted, onSettingsChange, syncSettings]);
+  }, [activeMode, speedMultiplier, themeColor, selectedDuration, binauralEnabled, eyesClosed, mounted, onSettingsChange, syncSettings]);
 
   useEffect(() => {
     if (!mounted) return;
@@ -493,6 +536,38 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     updateDurationParam(value);
   }, [updateDurationParam]);
 
+  // Set/clear a URL param. Used for v2 toggle round-trip — only writes the
+  // param when the value differs from the default, so share links stay clean.
+  const updateBoolParam = useCallback((name: string, value: boolean, defaultValue: boolean) => {
+    const params = new URLSearchParams(searchParams.toString());
+    if (value === defaultValue) {
+      params.delete(name);
+    } else {
+      params.set(name, value ? '1' : '0');
+    }
+    const queryString = params.toString();
+    router.replace(queryString ? `${pathname}?${queryString}` : pathname, { scroll: false });
+  }, [pathname, router, searchParams]);
+
+  const handleBinauralToggle = useCallback(() => {
+    const next = !binauralEnabled;
+    setBinauralEnabled(next);
+    updateBoolParam('binaural', next, true); // default ON
+    trackEvent('binaural_toggled', { enabled: next, mode: activeMode });
+    // Live response: stop binaural mid-session if user disables; if they
+    // re-enable mid-session it picks up at the next phase transition.
+    if (!next) {
+      getAudioService().stopBinaural();
+    }
+  }, [binauralEnabled, updateBoolParam, getAudioService, activeMode]);
+
+  const handleEyesClosedToggle = useCallback(() => {
+    const next = !eyesClosed;
+    setEyesClosed(next);
+    updateBoolParam('eyesClosed', next, false); // default OFF
+    trackEvent('eyes_closed_toggled', { enabled: next, mode: activeMode });
+  }, [eyesClosed, updateBoolParam, activeMode]);
+
   // End the in-progress session. `hard` resets seconds + sessionId so a
   // future togglePlay starts fresh; soft (pause) keeps seconds + id so
   // resume picks up where the user left off, and a later commit only
@@ -581,7 +656,9 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
         // Wim Hof uses energizing drone + beta waves
         await audio.startDrone(themeColor);
         await audio.startSubBass(themeColor);
-        await audio.startBinaural(15); // Beta waves for alertness
+        if (binauralEnabled) {
+          await audio.startBinaural(15); // Beta waves for alertness
+        }
         audio.playCue('inhale', themeColor);
       } else {
         // Normal pattern mode
@@ -593,13 +670,17 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
         if (activeMode === ModeName.Relax || activeMode === ModeName.Coherent) {
           // Relax/Coherent get Pink Noise (Rain → Ocean with breath-coupled filter)
           await audio.startPinkNoise();
-          // Relax gets Delta Waves (Sleep), Coherent gets Alpha
-          const hz = activeMode === ModeName.Relax ? 2 : 10;
-          await audio.startBinaural(hz);
+          if (binauralEnabled) {
+            // Relax gets Delta Waves (Sleep), Coherent gets Alpha
+            const hz = activeMode === ModeName.Relax ? 2 : 10;
+            await audio.startBinaural(hz);
+          }
         } else {
           // Others get Drone Synth + Alpha
           await audio.startDrone(themeColor);
-          await audio.startBinaural(10);
+          if (binauralEnabled) {
+            await audio.startBinaural(10);
+          }
         }
         // Sub-bass body-resonance layer pairs with both drone and noise beds.
         await audio.startSubBass(themeColor);
@@ -630,7 +711,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       audio.stopBinaural();
       setScale(0);
     }
-  }, [isRunning, activeMode, themeColor, getAudioService, isIOS, soundStatus, sessionSeconds, selectedDuration, setInstructionKey, sessionId, endSession]);
+  }, [isRunning, activeMode, themeColor, getAudioService, isIOS, soundStatus, sessionSeconds, selectedDuration, setInstructionKey, sessionId, endSession, binauralEnabled]);
 
   const handleStop = () => {
     const audio = getAudioService();
@@ -1381,6 +1462,58 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                     </div>
                   </div>
                 )}
+
+                {/* v2 audio toggles */}
+                <div className="rounded-2xl bg-background/50 p-3 text-sm text-muted-foreground shadow-inner dark:bg-background/20">
+                  <div className="flex items-center justify-between gap-3">
+                    <div>
+                      <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">Eyes closed</p>
+                      <p className="text-base font-semibold text-card-foreground">{eyesClosed ? 'On' : 'Off'}</p>
+                    </div>
+                    <button
+                      type="button"
+                      role="switch"
+                      aria-checked={eyesClosed}
+                      onClick={handleEyesClosedToggle}
+                      className={`relative inline-flex h-9 w-16 items-center rounded-full border border-border/60 px-1 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-ring dark:border-border/40 ${eyesClosed ? 'bg-primary/80 text-primary-foreground' : 'bg-muted'}`}
+                    >
+                      <span
+                        className={`flex h-7 w-7 items-center justify-center rounded-full bg-card text-foreground shadow-sm transition-transform ${eyesClosed ? 'translate-x-6' : 'translate-x-0'}`}
+                      >
+                        {eyesClosed ? <EyeOff size={16} /> : <Eye size={16} />}
+                      </span>
+                    </button>
+                  </div>
+                  <p className="mt-2 text-xs text-muted-foreground">
+                    Fades the visuals and lets a continuous tonal envelope guide each breath. Tap anywhere to peek without pausing.
+                  </p>
+                </div>
+
+                <div className="rounded-2xl bg-background/50 p-3 text-sm text-muted-foreground shadow-inner dark:bg-background/20">
+                  <div className="flex items-center justify-between gap-3">
+                    <div>
+                      <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">Binaural beats</p>
+                      <p className="text-base font-semibold text-card-foreground">{binauralEnabled ? 'On' : 'Off'}</p>
+                    </div>
+                    <button
+                      type="button"
+                      role="switch"
+                      aria-checked={binauralEnabled}
+                      onClick={handleBinauralToggle}
+                      className={`relative inline-flex h-9 w-16 items-center rounded-full border border-border/60 px-1 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-ring dark:border-border/40 ${binauralEnabled ? 'bg-primary/80 text-primary-foreground' : 'bg-muted'}`}
+                    >
+                      <span
+                        className={`flex h-7 w-7 items-center justify-center rounded-full bg-card text-foreground shadow-sm transition-transform ${binauralEnabled ? 'translate-x-6' : 'translate-x-0'}`}
+                      >
+                        <Activity size={16} />
+                      </span>
+                    </button>
+                  </div>
+                  <p className="mt-2 text-xs text-muted-foreground">
+                    Best with headphones. Speakers mix both channels in air, which cancels the beat.
+                  </p>
+                </div>
+
                 <div className="rounded-2xl bg-background/50 p-3 text-sm text-muted-foreground shadow-inner dark:bg-background/20">
                   <div className="flex items-center justify-between gap-3">
                     <div>
