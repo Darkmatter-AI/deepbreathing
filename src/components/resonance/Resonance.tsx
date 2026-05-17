@@ -261,6 +261,9 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
 
   const requestRef = useRef<number | null>(null);
   const phaseStartRef = useRef<number>(0);
+  // Mirror sessionSeconds into a ref so the rAF loop can read it without
+  // re-creating the animate callback on every tick.
+  const sessionSecondsRef = useRef<number>(0);
 
   const applyThemePreference = useCallback((mode: 'dark' | 'light') => {
     if (typeof document === 'undefined') return;
@@ -699,9 +702,10 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
   const animate = useCallback((time: number) => {
     if (!isRunning) return;
 
-    // Update 8D Spatial Audio Position
+    // Update 8D Spatial Audio Position + session-arc evolution.
     const audio = getAudioService();
     audio.updateSpatial(time);
+    audio.tickSessionArc(sessionSecondsRef.current);
 
     const pattern = BREATHING_PATTERNS[activeMode];
     const inhaleDur = pattern.inhale * speedMultiplier * 1000;
@@ -808,6 +812,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
 
     const audio = getAudioService();
     audio.updateSpatial(time);
+    audio.tickSessionArc(sessionSecondsRef.current);
 
     const protocol = WIM_HOF_PROTOCOL;
     const { inhale, exhale } = protocol.powerBreathTiming;
@@ -981,11 +986,18 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     let interval: ReturnType<typeof setInterval>;
     if (isRunning) {
       interval = setInterval(() => {
-        setSessionSeconds(s => s + 1);
+        setSessionSeconds(s => {
+          const next = s + 1;
+          sessionSecondsRef.current = next;
+          return next;
+        });
       }, 1000);
+    } else if (!isRunning && sessionSeconds === 0) {
+      // Hard end / fresh — reset the ref too.
+      sessionSecondsRef.current = 0;
     }
     return () => clearInterval(interval);
-  }, [isRunning]);
+  }, [isRunning, sessionSeconds]);
 
   // Auto-stop when targetDuration is reached
   useEffect(() => {

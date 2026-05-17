@@ -63,6 +63,17 @@ export class AudioService {
   private mediaUnlocking: Promise<void> | null = null;
   private mediaUnlocked = false;
 
+  // Session-arc evolution state — captured when the drone starts so we can
+  // ramp params relative to their initial values.
+  private droneArc: {
+    startedAt: number; // ctx.currentTime at startDrone
+    rootHz: number;
+    lfoRates: number[]; // initial LFO frequency per partial
+    spatialSpeed: number; // initial orbit speed
+  } | null = null;
+  private droneLfoNodes: OscillatorNode[] = [];
+  private spatialSpeedOverride: number | null = null;
+
   private droneNodes: { osc: OscillatorNode; panner: PannerNode; gain: GainNode }[] = [];
   private binauralNodes: { osc: OscillatorNode; pan: StereoPannerNode; gain: GainNode }[] = [];
   private noiseNode: {
@@ -306,10 +317,11 @@ export class AudioService {
 
   /**
    * Slowly rotate drone sources around the listener (8D audio).
+   * Orbit speed may be reduced by the session-arc (tickSessionArc).
    */
   public updateSpatial(time: number) {
     if (!this.ctx || this.droneNodes.length === 0) return;
-    const speed = 0.0005;
+    const speed = this.spatialSpeedOverride ?? 0.0005;
 
     this.droneNodes.forEach((node, index) => {
       const offset = index * (Math.PI / 2);
@@ -319,6 +331,48 @@ export class AudioService {
       node.panner.positionZ.value = pz;
       node.panner.positionY.value = 0;
     });
+  }
+
+  /**
+   * Session-arc evolution — slowly drift drone params over the first ~4 minutes
+   * of a session so the texture deepens. Called from the rAF loop with the
+   * elapsed session seconds. All ramps go to setTargetAtTime so a pause/resume
+   * picks up smoothly without restarting the arc.
+   *
+   * - Root drops a perfect 5th over 4 min
+   * - Per-partial LFO rate slows to ~50% over 4 min
+   * - 8D orbit speed slows by ~40% over 4 min
+   *
+   * No-op when no drone is active.
+   */
+  public tickSessionArc(elapsedSeconds: number) {
+    if (!this.ctx || !this.droneArc || this.droneNodes.length === 0) return;
+    // Window the arc over the first ARC_WINDOW seconds; clamp after.
+    const ARC_WINDOW = 240; // 4 minutes
+    const t = Math.max(0, Math.min(1, elapsedSeconds / ARC_WINDOW));
+    if (t === 0) return; // Nothing to update on the very first tick.
+
+    const ctxTime = this.ctx.currentTime;
+    const TC = 8; // setTargetAtTime time constant — long, imperceptible per-frame change
+
+    // Root: drift from rootHz to rootHz * (2/3) (perfect 5th down).
+    const rootTarget = this.droneArc.rootHz * (1 - t * (1 - 2 / 3));
+    this.droneNodes.forEach((node, index) => {
+      // Each partial keeps its ratio to root: [1, 1.5, 2, 0.99]
+      const ratios = [1, 1.5, 2, 0.99];
+      const ratio = ratios[index] ?? 1;
+      node.osc.frequency.setTargetAtTime(rootTarget * ratio, ctxTime, TC);
+    });
+
+    // LFO: slow from initial → 50% over the arc window.
+    this.droneLfoNodes.forEach((lfo, index) => {
+      const initial = this.droneArc!.lfoRates[index] ?? 0.1;
+      const target = initial * (1 - t * 0.5);
+      lfo.frequency.setTargetAtTime(target, ctxTime, TC);
+    });
+
+    // 8D orbit speed: slow by 40% over the arc window.
+    this.spatialSpeedOverride = this.droneArc.spatialSpeed * (1 - t * 0.4);
   }
 
   public setVolume(cueVol: number, musicVol: number) {
@@ -571,6 +625,7 @@ export class AudioService {
     const profile = this.getCueProfile(this.themeColor);
     const baseFreq = this.getDroneRootFrequency(colorHex);
     const partials = [1, 1.5, 2, 0.99];
+    const lfoRates: number[] = [];
 
     partials.forEach((ratio, index) => {
       const osc = this.ctx!.createOscillator();
@@ -590,11 +645,14 @@ export class AudioService {
 
       const lfo = this.ctx!.createOscillator();
       const lfoGain = this.ctx!.createGain();
-      lfo.frequency.value = 0.08 + Math.random() * 0.12;
+      const lfoRate = 0.08 + Math.random() * 0.12;
+      lfo.frequency.value = lfoRate;
+      lfoRates.push(lfoRate);
       lfoGain.gain.value = 0.05;
       lfo.connect(lfoGain);
       lfoGain.connect(gain.gain);
       lfo.start(t);
+      this.droneLfoNodes.push(lfo);
 
       osc.connect(gain);
       gain.connect(panner);
@@ -603,21 +661,45 @@ export class AudioService {
       osc.start(t);
       this.droneNodes.push({ osc, panner, gain });
     });
+
+    // Capture session-arc baseline.
+    this.droneArc = {
+      startedAt: this.ctx.currentTime,
+      rootHz: baseFreq,
+      lfoRates,
+      spatialSpeed: 0.0005
+    };
   }
 
   public stopDrone() {
     if (!this.ctx) {
       this.droneNodes = [];
+      this.droneLfoNodes = [];
+      this.droneArc = null;
+      this.spatialSpeedOverride = null;
       return;
     }
     const t = this.ctx.currentTime;
     this.droneNodes.forEach((node) => {
+      // Cancel any session-arc frequency ramps so the gain ramp lands cleanly.
+      node.osc.frequency.cancelScheduledValues(t);
       node.gain.gain.cancelScheduledValues(t);
       node.gain.gain.setValueAtTime(node.gain.gain.value, t);
       node.gain.gain.linearRampToValueAtTime(0, t + 1);
       node.osc.stop(t + 1.1);
     });
+    this.droneLfoNodes.forEach((lfo) => {
+      try {
+        lfo.frequency.cancelScheduledValues(t);
+        lfo.stop(t + 1.1);
+      } catch {
+        // already stopped
+      }
+    });
     this.droneNodes = [];
+    this.droneLfoNodes = [];
+    this.droneArc = null;
+    this.spatialSpeedOverride = null;
   }
 
   /**
