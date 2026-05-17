@@ -86,6 +86,11 @@ export class AudioService {
     gain: GainNode;
     lfo: OscillatorNode;
   } | null = null;
+  private phaseEnvelopeNode: {
+    osc: OscillatorNode;
+    gain: GainNode;
+    filter: BiquadFilterNode;
+  } | null = null;
 
    private breathingMode: ModeName = ModeName.Box;
    private cueNoiseBuffer: AudioBuffer | null = null;
@@ -421,6 +426,7 @@ export class AudioService {
 
     this.stopDrone();
     this.stopSubBass();
+    this.stopPhaseEnvelope();
     this.stopPinkNoise();
     this.stopBinaural();
 
@@ -742,6 +748,90 @@ export class AudioService {
     lfo.start(t);
 
     this.subBassNode = { osc, gain, lfo };
+  }
+
+  /**
+   * Phase-length sonic envelope — a continuous low-amplitude tonal layer
+   * whose gain + filter cutoff ride breath progress 0→1. Currently gated
+   * behind eyes-closed mode in Resonance.tsx for measurement isolation.
+   *
+   * Inhale: gain swells up, filter opens. Exhale: gain decays, filter
+   * closes. Hold: steady at current value. Layered under (not replacing)
+   * the existing transition cue.
+   */
+  public async startPhaseEnvelope(colorHex?: string) {
+    this.stopPhaseEnvelope();
+    const ready = await this.ensureContextReady();
+    if (!ready || !this.ctx || !this.masterGain) return;
+
+    const root = this.getDroneRootFrequency(colorHex || this.themeColor);
+    const osc = this.ctx.createOscillator();
+    const filter = this.ctx.createBiquadFilter();
+    const gain = this.ctx.createGain();
+
+    osc.type = 'sine';
+    osc.frequency.value = root * 2; // an octave above drone root — sits above the bed
+    filter.type = 'lowpass';
+    filter.Q.value = 0.9;
+    filter.frequency.value = 800;
+
+    const t = this.ctx.currentTime;
+    gain.gain.setValueAtTime(0, t);
+
+    osc.connect(filter);
+    filter.connect(gain);
+    gain.connect(this.masterGain);
+    osc.start(t);
+
+    this.phaseEnvelopeNode = { osc, gain, filter };
+  }
+
+  public stopPhaseEnvelope() {
+    if (!this.ctx || !this.phaseEnvelopeNode) {
+      this.phaseEnvelopeNode = null;
+      return;
+    }
+    const t = this.ctx.currentTime;
+    const { osc, gain } = this.phaseEnvelopeNode;
+    gain.gain.cancelScheduledValues(t);
+    gain.gain.setValueAtTime(gain.gain.value, t);
+    gain.gain.linearRampToValueAtTime(0, t + 0.6);
+    osc.stop(t + 0.7);
+    this.phaseEnvelopeNode = null;
+  }
+
+  /**
+   * Drive the phase-length envelope from the rAF loop with the current
+   * breath phase + progress (0..1). No-op when envelope isn't running.
+   */
+  public updatePhaseEnvelope(phase: 'inhale' | 'exhale' | 'hold', progress: number) {
+    if (!this.ctx || !this.phaseEnvelopeNode) return;
+    const { gain, filter } = this.phaseEnvelopeNode;
+    const t = this.ctx.currentTime;
+    const p = Math.max(0, Math.min(1, progress));
+
+    const PEAK_GAIN = this.isMuted ? 0 : this.musicVolume * 0.22;
+    const FILTER_BASE = 500;
+    const FILTER_PEAK = 2200;
+
+    let targetGain: number;
+    let targetFilter: number;
+    if (phase === 'inhale') {
+      // Smooth ease-in via sin curve so the swell feels organic, not linear.
+      const eased = Math.sin(p * Math.PI / 2);
+      targetGain = PEAK_GAIN * eased;
+      targetFilter = FILTER_BASE + (FILTER_PEAK - FILTER_BASE) * eased;
+    } else if (phase === 'exhale') {
+      const eased = Math.cos(p * Math.PI / 2);
+      targetGain = PEAK_GAIN * eased;
+      targetFilter = FILTER_BASE + (FILTER_PEAK - FILTER_BASE) * eased;
+    } else {
+      // Hold: keep tracking the previous target, don't ramp anything new.
+      return;
+    }
+
+    gain.gain.setTargetAtTime(targetGain, t, 0.05);
+    filter.frequency.setTargetAtTime(targetFilter, t, 0.08);
   }
 
   public stopSubBass() {

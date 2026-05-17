@@ -568,6 +568,18 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     trackEvent('eyes_closed_toggled', { enabled: next, mode: activeMode });
   }, [eyesClosed, updateBoolParam, activeMode]);
 
+  // Live mid-session eyes-closed toggle: start/stop the phase envelope so
+  // users get audio feedback the moment they flip the switch.
+  useEffect(() => {
+    if (!isRunning) return;
+    const audio = getAudioService();
+    if (eyesClosed) {
+      void audio.startPhaseEnvelope(themeColor);
+    } else {
+      audio.stopPhaseEnvelope();
+    }
+  }, [eyesClosed, isRunning, getAudioService, themeColor]);
+
   // End the in-progress session. `hard` resets seconds + sessionId so a
   // future togglePlay starts fresh; soft (pause) keeps seconds + id so
   // resume picks up where the user left off, and a later commit only
@@ -659,6 +671,9 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
         if (binauralEnabled) {
           await audio.startBinaural(15); // Beta waves for alertness
         }
+        if (eyesClosed) {
+          await audio.startPhaseEnvelope(themeColor);
+        }
         audio.playCue('inhale', themeColor);
       } else {
         // Normal pattern mode
@@ -684,6 +699,11 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
         }
         // Sub-bass body-resonance layer pairs with both drone and noise beds.
         await audio.startSubBass(themeColor);
+        // Eyes-closed mode: add a phase-length tonal envelope so the audio
+        // carries the breath when the visuals are dimmed.
+        if (eyesClosed) {
+          await audio.startPhaseEnvelope(themeColor);
+        }
 
         audio.playCue('inhale', themeColor);
         setInstructionKey('instruction.inhale_slowly');
@@ -707,11 +727,12 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       endSession('paused', sessionSeconds, false);
       audio.stopDrone();
       audio.stopSubBass();
+      audio.stopPhaseEnvelope();
       audio.stopPinkNoise();
       audio.stopBinaural();
       setScale(0);
     }
-  }, [isRunning, activeMode, themeColor, getAudioService, isIOS, soundStatus, sessionSeconds, selectedDuration, setInstructionKey, sessionId, endSession, binauralEnabled]);
+  }, [isRunning, activeMode, themeColor, getAudioService, isIOS, soundStatus, sessionSeconds, selectedDuration, setInstructionKey, sessionId, endSession, binauralEnabled, eyesClosed]);
 
   const handleStop = () => {
     const audio = getAudioService();
@@ -730,6 +751,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     setScale(0);
     audio.stopDrone();
     audio.stopSubBass();
+    audio.stopPhaseEnvelope();
     audio.stopPinkNoise();
     audio.stopBinaural();
   };
@@ -865,15 +887,17 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       }
     }
 
-    // Couple the pink-noise bed (Relax + Coherent) to breath progress.
-    // No-op when noiseNode isn't running, so safe to call every frame.
-    const pinkPhase: 'inhale' | 'exhale' | 'hold' =
+    // Couple the pink-noise bed (Relax + Coherent) AND the phase-length
+    // envelope (eyes-closed mode) to breath progress. Both are no-ops when
+    // their respective layers aren't running.
+    const breathPhase: 'inhale' | 'exhale' | 'hold' =
       phase === BreathingPhase.Inhale || phase === BreathingPhase.Inhale2
         ? 'inhale'
         : phase === BreathingPhase.Exhale
           ? 'exhale'
           : 'hold';
-    audio.updatePinkNoisePhase(pinkPhase, progress);
+    audio.updatePinkNoisePhase(breathPhase, progress);
+    audio.updatePhaseEnvelope(breathPhase, progress);
 
     if (nextPhase !== phase) {
       setPhase(nextPhase);
@@ -894,6 +918,16 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     const audio = getAudioService();
     audio.updateSpatial(time);
     audio.tickSessionArc(sessionSecondsRef.current);
+    // Couple phase envelope to the visual phase + a rough progress estimate.
+    // The protocol's power-breath cycle is fast so the envelope tracks it via
+    // the visual phase set later in this callback.
+    if (phase === BreathingPhase.Inhale || phase === BreathingPhase.Inhale2) {
+      audio.updatePhaseEnvelope('inhale', Math.min(1, (time - protocolPhaseStartRef.current) / 1500));
+    } else if (phase === BreathingPhase.Exhale) {
+      audio.updatePhaseEnvelope('exhale', Math.min(1, (time - protocolPhaseStartRef.current) / 1500));
+    } else {
+      audio.updatePhaseEnvelope('hold', 0);
+    }
 
     const protocol = WIM_HOF_PROTOCOL;
     const { inhale, exhale } = protocol.powerBreathTiming;
@@ -986,6 +1020,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
             setIsRunning(false);
             audio.stopDrone();
             audio.stopSubBass();
+            audio.stopPhaseEnvelope();
             audio.stopBinaural();
           }
         }
@@ -1091,6 +1126,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       // Stop all audio
       audio.stopDrone();
       audio.stopSubBass();
+      audio.stopPhaseEnvelope();
       audio.stopPinkNoise();
       audio.stopBinaural();
     }
@@ -1261,6 +1297,14 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     return isRunning ? `${themeColor}1a` : undefined;
   };
 
+  // Eyes-closed mode: fade visuals during an active session so the audio
+  // carries the experience. Settings gear stays at full opacity so users
+  // can always toggle back without hunting for a button.
+  const dimVisuals = eyesClosed && isRunning;
+  const dimmedStyle = dimVisuals
+    ? { opacity: 0.18, transition: 'opacity 1800ms ease-in-out' }
+    : { opacity: 1, transition: 'opacity 1200ms ease-in-out' };
+
   return (
     <div
       className={`relative flex h-full w-full flex-col overflow-hidden ${backgroundVariant === 'winter-blue' ? '' : 'bg-background'} transition-colors duration-1000 ${className}`}
@@ -1269,15 +1313,17 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       data-runtime-fallback-count={runtimeFallbackCount}
     >
 
-      {snowMode ? (
-        <SnowBackground
-          tone={activeTheme}
-          speedMultiplier={speedMultiplier}
-          phase={phase}
-        />
-      ) : (
-        <ParticleBackground phase={phase} color={themeColor} speedMultiplier={speedMultiplier} />
-      )}
+      <div style={dimmedStyle} className="absolute inset-0 z-0">
+        {snowMode ? (
+          <SnowBackground
+            tone={activeTheme}
+            speedMultiplier={speedMultiplier}
+            phase={phase}
+          />
+        ) : (
+          <ParticleBackground phase={phase} color={themeColor} speedMultiplier={speedMultiplier} />
+        )}
+      </div>
 
       <header className="fixed inset-x-0 top-0 z-30 flex items-center justify-end gap-2 p-6">
         {!embedMode && <LanguageSwitcherInline />}
@@ -1333,7 +1379,10 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
         )}
       </header>
 
-      <main className={`relative z-10 flex flex-1 flex-col items-center justify-center sm:pb-0 ${noMobileBottomPad ? 'pb-24' : 'pb-44'}`}>
+      <main
+        className={`relative z-10 flex flex-1 flex-col items-center justify-center sm:pb-0 ${noMobileBottomPad ? 'pb-24' : 'pb-44'}`}
+        style={dimmedStyle}
+      >
         {/* Protocol UI: Round and breath counter */}
         {isProtocolMode && isRunning && (
           <div className="absolute top-8 left-0 right-0 z-20 flex flex-col items-center gap-2">
