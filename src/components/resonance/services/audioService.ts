@@ -1005,14 +1005,33 @@ export class AudioService {
   }
 
   private getDroneRootFrequency(colorHex: string) {
-    const mapping: Record<string, number> = {
-      '#e11d48': 130.81,
-      '#4f46e5': 146.83,
-      '#059669': 164.81,
-      '#0ea5e9': 174.61
-    };
-    const key = colorHex?.toLowerCase();
-    return mapping[key] ?? 110;
+    // Hue → root-note mapping across an octave. Red anchors at C3 (warm,
+    // grounding), then we walk the spectrum: orange→D3, yellow→E3, green→G3,
+    // teal/cyan→A3, blue→C4, violet→A2 (deep, mystical), back to red.
+    //
+    // Saturation low (greys) → drop to A2 fallback so neutral palettes still
+    // get a deliberate root rather than a hue artifact.
+    //
+    // Equal-temperament frequencies (A4 = 440 reference):
+    //   A2 110.00 · C3 130.81 · D3 146.83 · E3 164.81 · G3 196.00
+    //   A3 220.00 · C4 261.63
+    if (!colorHex) return 110;
+    const { hue, saturation } = this.getColorMetrics(colorHex);
+    if (saturation < 0.15) return 110; // grey / very desaturated → deep A2
+
+    // Hue is in degrees [0, 360). Bucket into 7 zones spanning a perfect 4th
+    // up and a 5th down from the indigo-default D3 — pleasant pentatonic-ish
+    // intervals that all sit in the C major / A minor neighborhood so
+    // breathing cues stay tonally consonant with the drone.
+    const h = ((hue % 360) + 360) % 360;
+    if (h < 25)  return 130.81; // red       → C3
+    if (h < 50)  return 146.83; // orange    → D3
+    if (h < 75)  return 164.81; // amber     → E3
+    if (h < 165) return 196.00; // green     → G3
+    if (h < 210) return 220.00; // teal/cyan → A3
+    if (h < 255) return 130.81; // blue      → C3 (octave below blue-violet)
+    if (h < 310) return 110.00; // violet    → A2 (mystical, deep)
+    return 130.81;              // magenta/rose → C3
   }
 
   private getCueProfile(colorHex: string): CueProfile {
@@ -1034,9 +1053,9 @@ export class AudioService {
 
   private getColorMetrics(colorHex: string) {
     const { r, g, b } = this.hexToRgb(colorHex);
-    const { h } = this.rgbToHsl(r, g, b);
+    const { h, s } = this.rgbToHsl(r, g, b);
     const luminance = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
-    return { hue: h, luminance: Math.min(Math.max(luminance, 0), 1) };
+    return { hue: h, saturation: s, luminance: Math.min(Math.max(luminance, 0), 1) };
   }
 
   private hexToRgb(hex: string) {
