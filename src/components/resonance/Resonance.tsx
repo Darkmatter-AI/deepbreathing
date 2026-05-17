@@ -775,6 +775,16 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       }
     }
 
+    // Couple the pink-noise bed (Relax + Coherent) to breath progress.
+    // No-op when noiseNode isn't running, so safe to call every frame.
+    const pinkPhase: 'inhale' | 'exhale' | 'hold' =
+      phase === BreathingPhase.Inhale || phase === BreathingPhase.Inhale2
+        ? 'inhale'
+        : phase === BreathingPhase.Exhale
+          ? 'exhale'
+          : 'hold';
+    audio.updatePinkNoisePhase(pinkPhase, progress);
+
     if (nextPhase !== phase) {
       setPhase(nextPhase);
       phaseStartRef.current = time;

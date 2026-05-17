@@ -9,6 +9,12 @@
 
 type CueType = 'inhale' | 'exhale' | 'hold';
 
+// Pink-noise bed breath-coupled filter cutoff range. Tuned by ear: opens
+// enough to feel like the texture "brightens" on inhale without becoming
+// hissy, closes far enough on exhale to feel like the wave receded.
+const NOISE_FILTER_BASE_HZ = 480;
+const NOISE_FILTER_PEAK_HZ = 2400;
+
 interface CueProfile {
   oscType: OscillatorType;
   attack: number;
@@ -59,7 +65,11 @@ export class AudioService {
 
   private droneNodes: { osc: OscillatorNode; panner: PannerNode; gain: GainNode }[] = [];
   private binauralNodes: { osc: OscillatorNode; pan: StereoPannerNode; gain: GainNode }[] = [];
-  private noiseNode: { source: AudioBufferSourceNode; gain: GainNode } | null = null;
+  private noiseNode: {
+    source: AudioBufferSourceNode;
+    gain: GainNode;
+    filter: BiquadFilterNode;
+  } | null = null;
 
    private breathingMode: ModeName = ModeName.Box;
    private cueNoiseBuffer: AudioBuffer | null = null;
@@ -613,16 +623,53 @@ export class AudioService {
     source.buffer = buffer;
     source.loop = true;
 
+    // Breath-coupled low-pass filter — driven by updatePinkNoisePhase from
+    // the rAF loop. Cutoff opens on inhale (sounds like ocean swelling
+    // toward the shore) and closes on exhale (settling away). The cue layer
+    // already does this per-transition; this couples the BED to the breath
+    // so the whole texture breathes with the user.
+    const filter = this.ctx.createBiquadFilter();
+    filter.type = 'lowpass';
+    filter.Q.value = 0.7;
+    filter.frequency.value = NOISE_FILTER_BASE_HZ;
+
     const gain = this.ctx.createGain();
     const t = this.ctx.currentTime;
     gain.gain.setValueAtTime(0, t);
     gain.gain.linearRampToValueAtTime(this.isMuted ? 0 : this.musicVolume * 0.25, t + 2);
 
-    source.connect(gain);
+    source.connect(filter);
+    filter.connect(gain);
     gain.connect(this.masterGain);
     source.start(t);
 
-    this.noiseNode = { source, gain };
+    this.noiseNode = { source, gain, filter };
+  }
+
+  /**
+   * Modulate the pink-noise filter cutoff with breath progress (0..1) per phase.
+   * progress=0 → cutoff at NOISE_FILTER_BASE_HZ; progress=1 → cutoff at
+   * NOISE_FILTER_PEAK_HZ for inhale, swept back down for exhale. Holds keep
+   * cutoff steady at the current position.
+   *
+   * Called from BOTH the normal animate loop and the Wim Hof animateProtocol
+   * loop so all session types breathe with the user.
+   */
+  public updatePinkNoisePhase(phase: 'inhale' | 'exhale' | 'hold', progress: number) {
+    if (!this.ctx || !this.noiseNode) return;
+    const t = this.ctx.currentTime;
+    const p = Math.max(0, Math.min(1, progress));
+    let target: number;
+    if (phase === 'inhale') {
+      target = NOISE_FILTER_BASE_HZ + (NOISE_FILTER_PEAK_HZ - NOISE_FILTER_BASE_HZ) * p;
+    } else if (phase === 'exhale') {
+      target = NOISE_FILTER_PEAK_HZ - (NOISE_FILTER_PEAK_HZ - NOISE_FILTER_BASE_HZ) * p;
+    } else {
+      // Hold: hold the current target steady — no ramp.
+      return;
+    }
+    // Short time constant for smooth tracking without zipper noise.
+    this.noiseNode.filter.frequency.setTargetAtTime(target, t, 0.08);
   }
 
   public stopPinkNoise() {
