@@ -51,6 +51,8 @@ interface CueProfile {
 export class AudioService {
   private ctx: AudioContext | null = null;
   private masterGain: GainNode | null = null;
+  private masterCompressor: DynamicsCompressorNode | null = null;
+  private masterLimiter: GainNode | null = null;
   private debug = false;
   private mediaUnlocking: Promise<void> | null = null;
   private mediaUnlocked = false;
@@ -121,8 +123,7 @@ export class AudioService {
       } catch {
         this.ctx = new AudioCtor();
       }
-      this.masterGain = this.ctx.createGain();
-      this.masterGain.connect(this.ctx.destination);
+      this.buildOutputChain();
       if (this.debug && this.ctx) {
         this.ctx.onstatechange = () => {
           this.log('statechange', this.ctx?.state);
@@ -130,6 +131,33 @@ export class AudioService {
         this.log('AudioContext created', { state: this.ctx.state });
       }
     }
+  }
+
+  /**
+   * Build the output chain: masterGain → compressor → limiter → destination.
+   * Compressor tames the cumulative peaks from stacked layers (drone + binaural
+   * + pink noise + cue tone + cue noise + reverb tail can clip on loud presets).
+   * Limiter is a fixed gain trim that keeps true-peak below 0 dBFS.
+   *
+   * Called from initContext AND from ensureContextReady's recreate branch so the
+   * chain survives Safari's "interrupted → closed" lifecycle.
+   */
+  private buildOutputChain() {
+    if (!this.ctx) return;
+    this.masterGain = this.ctx.createGain();
+    this.masterCompressor = this.ctx.createDynamicsCompressor();
+    this.masterCompressor.threshold.value = -6;
+    this.masterCompressor.knee.value = 30;
+    this.masterCompressor.ratio.value = 4;
+    this.masterCompressor.attack.value = 0.01;
+    this.masterCompressor.release.value = 0.25;
+    this.masterLimiter = this.ctx.createGain();
+    // ~-1 dBFS trim — quiet enough to keep digital headroom after the compressor.
+    this.masterLimiter.gain.value = 0.89;
+
+    this.masterGain.connect(this.masterCompressor);
+    this.masterCompressor.connect(this.masterLimiter);
+    this.masterLimiter.connect(this.ctx.destination);
   }
 
   /**
@@ -153,13 +181,16 @@ export class AudioService {
     if (state === 'closed') {
       this.ctx = null;
       this.masterGain = null;
+      this.masterCompressor = null;
+      this.masterLimiter = null;
+      this.cueNoiseBuffer = null;
+      this.cueReverbCache.clear();
       this.initContext();
       if (!this.ctx) return false;
     }
 
     if (!this.masterGain && this.ctx) {
-      this.masterGain = this.ctx.createGain();
-      this.masterGain.connect(this.ctx.destination);
+      this.buildOutputChain();
     }
 
     const readyState = (this.ctx.state as AudioContextState | 'interrupted');
@@ -182,6 +213,8 @@ export class AudioService {
           }
           this.ctx = null;
           this.masterGain = null;
+          this.masterCompressor = null;
+          this.masterLimiter = null;
           this.initContext();
           if (this.ctx) {
             try {
@@ -198,8 +231,13 @@ export class AudioService {
     }
 
     if (this.masterGain && this.ctx && this.masterGain.context !== this.ctx) {
-      this.masterGain.disconnect();
-      this.masterGain.connect(this.ctx.destination);
+      // Context was rebuilt elsewhere; rebuild the full output chain on the new ctx.
+      this.masterGain = null;
+      this.masterCompressor = null;
+      this.masterLimiter = null;
+      this.cueNoiseBuffer = null;
+      this.cueReverbCache.clear();
+      this.buildOutputChain();
     }
 
     this.log('ensureContextReady:end', { state: this.ctx?.state });
