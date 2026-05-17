@@ -177,11 +177,15 @@ export class AudioService {
     if (!this.ctx) return;
     this.masterGain = this.ctx.createGain();
     this.masterCompressor = this.ctx.createDynamicsCompressor();
-    this.masterCompressor.threshold.value = -6;
-    this.masterCompressor.knee.value = 30;
-    this.masterCompressor.ratio.value = 4;
-    this.masterCompressor.attack.value = 0.01;
-    this.masterCompressor.release.value = 0.25;
+    // Transparent settings tuned for ambient material — catches the worst
+    // cumulative peaks (drone + binaural + cue + reverb tail) without audible
+    // pumping on every phase transition. -6/4:1/10ms was rock-mastering
+    // territory and squeezed every cue swell.
+    this.masterCompressor.threshold.value = -12;
+    this.masterCompressor.knee.value = 24;
+    this.masterCompressor.ratio.value = 3;
+    this.masterCompressor.attack.value = 0.02;
+    this.masterCompressor.release.value = 0.3;
     this.masterLimiter = this.ctx.createGain();
     // ~-1 dBFS trim — quiet enough to keep digital headroom after the compressor.
     this.masterLimiter.gain.value = 0.89;
@@ -770,7 +774,10 @@ export class AudioService {
     const gain = this.ctx.createGain();
 
     osc.type = 'sine';
-    osc.frequency.value = root * 2; // an octave above drone root — sits above the bed
+    // 3× root (perfect 12th) sits outside the drone's [1, 1.5, 2, 0.99] partials,
+    // so no beating with the 2× partial — important because session arc drifts
+    // the drone root but the envelope frequency is captured at startPhaseEnvelope.
+    osc.frequency.value = root * 3;
     filter.type = 'lowpass';
     filter.Q.value = 0.9;
     filter.frequency.value = 800;
