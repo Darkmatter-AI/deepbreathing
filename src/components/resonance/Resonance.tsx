@@ -577,6 +577,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
 
         // Wim Hof uses energizing drone + beta waves
         await audio.startDrone(themeColor);
+        await audio.startSubBass(themeColor);
         await audio.startBinaural(15); // Beta waves for alertness
         audio.playCue('inhale', themeColor);
       } else {
@@ -587,7 +588,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
 
         // Adaptive Audio Logic
         if (activeMode === ModeName.Relax || activeMode === ModeName.Coherent) {
-          // Relax/Coherent get Pink Noise (Rain)
+          // Relax/Coherent get Pink Noise (Rain → Ocean with breath-coupled filter)
           await audio.startPinkNoise();
           // Relax gets Delta Waves (Sleep), Coherent gets Alpha
           const hz = activeMode === ModeName.Relax ? 2 : 10;
@@ -597,6 +598,8 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
           await audio.startDrone(themeColor);
           await audio.startBinaural(10);
         }
+        // Sub-bass body-resonance layer pairs with both drone and noise beds.
+        await audio.startSubBass(themeColor);
 
         audio.playCue('inhale', themeColor);
         setInstructionKey('instruction.inhale_slowly');
@@ -619,6 +622,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       // double-counting if both fire.
       endSession('paused', sessionSeconds, false);
       audio.stopDrone();
+      audio.stopSubBass();
       audio.stopPinkNoise();
       audio.stopBinaural();
       setScale(0);
@@ -641,6 +645,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     endSession('mode_switched', sessionSeconds, true);
     setScale(0);
     audio.stopDrone();
+    audio.stopSubBass();
     audio.stopPinkNoise();
     audio.stopBinaural();
   };
@@ -894,6 +899,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
             // Stop the session
             setIsRunning(false);
             audio.stopDrone();
+            audio.stopSubBass();
             audio.stopBinaural();
           }
         }
@@ -991,6 +997,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       endSession('completed', sessionSeconds, true);
       // Stop all audio
       audio.stopDrone();
+      audio.stopSubBass();
       audio.stopPinkNoise();
       audio.stopBinaural();
     }

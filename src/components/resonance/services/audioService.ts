@@ -70,6 +70,11 @@ export class AudioService {
     gain: GainNode;
     filter: BiquadFilterNode;
   } | null = null;
+  private subBassNode: {
+    osc: OscillatorNode;
+    gain: GainNode;
+    lfo: OscillatorNode;
+  } | null = null;
 
    private breathingMode: ModeName = ModeName.Box;
    private cueNoiseBuffer: AudioBuffer | null = null;
@@ -332,6 +337,9 @@ export class AudioService {
     if (this.noiseNode) {
       this.noiseNode.gain.gain.setTargetAtTime(this.isMuted ? 0 : this.musicVolume * 0.15, now, 0.5);
     }
+    if (this.subBassNode) {
+      this.subBassNode.gain.gain.setTargetAtTime(this.isMuted ? 0 : this.musicVolume * 0.18, now, 0.5);
+    }
   }
 
   public toggleMute(muted: boolean) {
@@ -358,6 +366,7 @@ export class AudioService {
     }
 
     this.stopDrone();
+    this.stopSubBass();
     this.stopPinkNoise();
     this.stopBinaural();
 
@@ -609,6 +618,63 @@ export class AudioService {
       node.osc.stop(t + 1.1);
     });
     this.droneNodes = [];
+  }
+
+  /**
+   * Sub-bass body-resonance layer. Single sine an octave below the drone
+   * root (rootHz/2), routed omnidirectionally — no HRTF panning. Adds
+   * chest-resonance on headphones / decent speakers; harmless on phone
+   * speakers that can't reproduce ~65 Hz. Slow LFO (0.05 Hz) so the
+   * layer breathes too.
+   *
+   * Gain is intentionally low — sits under the drone, not next to it.
+   */
+  public async startSubBass(colorHex?: string) {
+    this.stopSubBass();
+    const ready = await this.ensureContextReady();
+    if (!ready || !this.ctx || !this.masterGain) return;
+
+    const root = this.getDroneRootFrequency(colorHex || this.themeColor);
+    const osc = this.ctx.createOscillator();
+    const gain = this.ctx.createGain();
+    const lfo = this.ctx.createOscillator();
+    const lfoGain = this.ctx.createGain();
+
+    osc.type = 'sine';
+    osc.frequency.value = Math.max(40, root / 2);
+
+    const t = this.ctx.currentTime;
+    const targetGain = this.isMuted ? 0 : this.musicVolume * 0.18;
+    gain.gain.setValueAtTime(0, t);
+    gain.gain.linearRampToValueAtTime(targetGain, t + 3);
+
+    lfo.type = 'sine';
+    lfo.frequency.value = 0.05;
+    lfoGain.gain.value = targetGain * 0.25;
+    lfo.connect(lfoGain);
+    lfoGain.connect(gain.gain);
+
+    osc.connect(gain);
+    gain.connect(this.masterGain);
+    osc.start(t);
+    lfo.start(t);
+
+    this.subBassNode = { osc, gain, lfo };
+  }
+
+  public stopSubBass() {
+    if (!this.ctx || !this.subBassNode) {
+      this.subBassNode = null;
+      return;
+    }
+    const t = this.ctx.currentTime;
+    const { osc, gain, lfo } = this.subBassNode;
+    gain.gain.cancelScheduledValues(t);
+    gain.gain.setValueAtTime(gain.gain.value, t);
+    gain.gain.linearRampToValueAtTime(0, t + 1.5);
+    osc.stop(t + 1.6);
+    lfo.stop(t + 1.6);
+    this.subBassNode = null;
   }
 
   public async startPinkNoise() {
