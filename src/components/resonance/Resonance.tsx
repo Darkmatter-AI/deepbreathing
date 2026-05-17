@@ -220,6 +220,9 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     }
 
     setThemeReady(true);
+    // binauralFromUrl/eyesClosedFromUrl intentionally NOT in deps — they're
+    // captured at mount, and dedicated effects below handle live URL changes.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [defaultMode]);
 
   useEffect(() => {
