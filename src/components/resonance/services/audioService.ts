@@ -58,7 +58,8 @@ export class AudioService {
   private ctx: AudioContext | null = null;
   private masterGain: GainNode | null = null;
   private masterCompressor: DynamicsCompressorNode | null = null;
-  private masterLimiter: GainNode | null = null;
+  private masterLimiter: DynamicsCompressorNode | null = null;
+  private masterTrim: GainNode | null = null;
   private debug = false;
   private mediaUnlocking: Promise<void> | null = null;
   private mediaUnlocked = false;
@@ -165,10 +166,13 @@ export class AudioService {
   }
 
   /**
-   * Build the output chain: masterGain → compressor → limiter → destination.
-   * Compressor tames the cumulative peaks from stacked layers (drone + binaural
-   * + pink noise + cue tone + cue noise + reverb tail can clip on loud presets).
-   * Limiter is a fixed gain trim that keeps true-peak below 0 dBFS.
+   * Output chain: masterGain → compressor → limiter → trim → destination.
+   *
+   * - Compressor (transparent, slow): catches sustained level from stacked
+   *   layers without pumping on every cue transition.
+   * - Limiter (brick-wall, fast): catches instantaneous transients from cue
+   *   noise puffs that escape the slow compressor — these were clipping.
+   * - Trim: -3 dBFS safety margin before destination.
    *
    * Called from initContext AND from ensureContextReady's recreate branch so the
    * chain survives Safari's "interrupted → closed" lifecycle.
@@ -176,23 +180,30 @@ export class AudioService {
   private buildOutputChain() {
     if (!this.ctx) return;
     this.masterGain = this.ctx.createGain();
+
     this.masterCompressor = this.ctx.createDynamicsCompressor();
-    // Transparent settings tuned for ambient material — catches the worst
-    // cumulative peaks (drone + binaural + cue + reverb tail) without audible
-    // pumping on every phase transition. -6/4:1/10ms was rock-mastering
-    // territory and squeezed every cue swell.
-    this.masterCompressor.threshold.value = -12;
+    this.masterCompressor.threshold.value = -14;
     this.masterCompressor.knee.value = 24;
     this.masterCompressor.ratio.value = 3;
     this.masterCompressor.attack.value = 0.02;
     this.masterCompressor.release.value = 0.3;
-    this.masterLimiter = this.ctx.createGain();
-    // ~-1 dBFS trim — quiet enough to keep digital headroom after the compressor.
-    this.masterLimiter.gain.value = 0.89;
+
+    // True peak limiter — fast attack, near-infinite ratio. Catches the
+    // 15–20ms cue noise transients that escape the slow compressor above.
+    this.masterLimiter = this.ctx.createDynamicsCompressor();
+    this.masterLimiter.threshold.value = -3;
+    this.masterLimiter.knee.value = 0;
+    this.masterLimiter.ratio.value = 20;
+    this.masterLimiter.attack.value = 0.001;
+    this.masterLimiter.release.value = 0.05;
+
+    this.masterTrim = this.ctx.createGain();
+    this.masterTrim.gain.value = 0.71; // -3 dBFS safety margin
 
     this.masterGain.connect(this.masterCompressor);
     this.masterCompressor.connect(this.masterLimiter);
-    this.masterLimiter.connect(this.ctx.destination);
+    this.masterLimiter.connect(this.masterTrim);
+    this.masterTrim.connect(this.ctx.destination);
   }
 
   /**
@@ -218,6 +229,7 @@ export class AudioService {
       this.masterGain = null;
       this.masterCompressor = null;
       this.masterLimiter = null;
+      this.masterTrim = null;
       this.cueNoiseBuffer = null;
       this.cueReverbCache.clear();
       this.initContext();
@@ -250,6 +262,7 @@ export class AudioService {
           this.masterGain = null;
           this.masterCompressor = null;
           this.masterLimiter = null;
+          this.masterTrim = null;
           this.initContext();
           if (this.ctx) {
             try {
@@ -270,6 +283,7 @@ export class AudioService {
       this.masterGain = null;
       this.masterCompressor = null;
       this.masterLimiter = null;
+      this.masterTrim = null;
       this.cueNoiseBuffer = null;
       this.cueReverbCache.clear();
       this.buildOutputChain();
@@ -348,7 +362,9 @@ export class AudioService {
    * elapsed session seconds. All ramps go to setTargetAtTime so a pause/resume
    * picks up smoothly without restarting the arc.
    *
-   * - Root drops a perfect 5th over 4 min
+   * - Root drops a whole tone (factor 8/9) over 4 min — kept small because the
+   *   cue layer uses fixed Hz; large drift creates tritones against the cues
+   *   (will be revisited when cues become root-relative).
    * - Per-partial LFO rate slows to ~50% over 4 min
    * - 8D orbit speed slows by ~40% over 4 min
    *
@@ -364,8 +380,9 @@ export class AudioService {
     const ctxTime = this.ctx.currentTime;
     const TC = 8; // setTargetAtTime time constant — long, imperceptible per-frame change
 
-    // Root: drift from rootHz to rootHz * (2/3) (perfect 5th down).
-    const rootTarget = this.droneArc.rootHz * (1 - t * (1 - 2 / 3));
+    // Root: drift down a whole tone (factor 8/9 ≈ 0.889) over the window.
+    // Stays consonant-adjacent to the original root vs. the fixed cue pitches.
+    const rootTarget = this.droneArc.rootHz * (1 - t * (1 - 8 / 9));
     this.droneNodes.forEach((node, index) => {
       // Each partial keeps its ratio to root: [1, 1.5, 2, 0.99]
       const ratios = [1, 1.5, 2, 0.99];
@@ -401,7 +418,7 @@ export class AudioService {
       this.noiseNode.gain.gain.setTargetAtTime(this.isMuted ? 0 : this.musicVolume * 0.15, now, 0.5);
     }
     if (this.subBassNode) {
-      this.subBassNode.gain.gain.setTargetAtTime(this.isMuted ? 0 : this.musicVolume * 0.18, now, 0.5);
+      this.subBassNode.gain.gain.setTargetAtTime(this.isMuted ? 0 : this.musicVolume * 0.10, now, 0.5);
     }
   }
 
@@ -736,7 +753,10 @@ export class AudioService {
     osc.frequency.value = Math.max(40, root / 2);
 
     const t = this.ctx.currentTime;
-    const targetGain = this.isMuted ? 0 : this.musicVolume * 0.18;
+    // Conservative gain — small phone speakers can't reproduce ~65 Hz and
+    // even on headphones the sub layer is meant to FEEL, not be heard. 0.18
+    // was muddy on the homepage stack (drone + binaural + cue stack on Box).
+    const targetGain = this.isMuted ? 0 : this.musicVolume * 0.10;
     gain.gain.setValueAtTime(0, t);
     gain.gain.linearRampToValueAtTime(targetGain, t + 3);
 
@@ -1297,33 +1317,39 @@ export class AudioService {
   }
 
   private getDroneRootFrequency(colorHex: string) {
-    // Hue → root-note mapping across an octave. Red anchors at C3 (warm,
-    // grounding), then we walk the spectrum: orange→D3, yellow→E3, green→G3,
-    // teal/cyan→A3, blue→C4, violet→A2 (deep, mystical), back to red.
+    // Per-mode-color root-note table. Each root is chosen to be consonant
+    // with that mode's fixed cue preset pitches:
     //
-    // Saturation low (greys) → drop to A2 fallback so neutral palettes still
-    // get a deliberate root rather than a hue artifact.
+    //   Box cues 520–660 Hz (~C5–E5)        → C3 root (C major)
+    //   Relax cues 196–247 Hz (~G3–B3)      → D3 root (D major / G mixolydian)
+    //   Coherent cues 262–330 Hz (~C4–E4)   → E3 root (E minor / C major)
+    //   Sigh / default cues 360–740 Hz      → F2 root (broad, low foundation)
     //
-    // Equal-temperament frequencies (A4 = 440 reference):
-    //   A2 110.00 · C3 130.81 · D3 146.83 · E3 164.81 · G3 196.00
-    //   A3 220.00 · C4 261.63
-    if (!colorHex) return 110;
-    const { hue, saturation } = this.getColorMetrics(colorHex);
-    if (saturation < 0.15) return 110; // grey / very desaturated → deep A2
-
-    // Hue is in degrees [0, 360). Bucket into 7 zones spanning a perfect 4th
-    // up and a 5th down from the indigo-default D3 — pleasant pentatonic-ish
-    // intervals that all sit in the C major / A minor neighborhood so
-    // breathing cues stay tonally consonant with the drone.
-    const h = ((hue % 360) + 360) % 360;
-    if (h < 25)  return 130.81; // red       → C3
-    if (h < 50)  return 146.83; // orange    → D3
-    if (h < 75)  return 164.81; // amber     → E3
-    if (h < 165) return 196.00; // green     → G3
-    if (h < 210) return 220.00; // teal/cyan → A3
-    if (h < 255) return 130.81; // blue      → C3 (octave below blue-violet)
-    if (h < 310) return 110.00; // violet    → A2 (mystical, deep)
-    return 130.81;              // magenta/rose → C3
+    // Falls back to A2 for unknown colors — A is a flexible tonal center
+    // that pairs with any of the cue presets without obvious dissonance.
+    //
+    // Note: keeping this small + curated rather than hue-derived because the
+    // cue layer uses fixed Hz, not scale degrees — a wandering hue-mapped
+    // root creates tritones against the cues. Until cues become root-relative
+    // (follow-up), the drone root must stay in a known-consonant set.
+    const mapping: Record<string, number> = {
+      // Curated mode/theme colors
+      '#e11d48': 130.81, // rose          → C3 (Box)
+      '#4f46e5': 146.83, // indigo        → D3 (Relax)
+      '#059669': 164.81, // emerald       → E3 (Coherent)
+      '#0ea5e9': 87.31,  // sky           → F2 (Sigh)
+      '#f97316': 130.81, // orange        → C3 (Wim Hof — root-consonant w/ default cues)
+      '#10b981': 164.81, // emerald-2     → E3 (PursedLip)
+      '#8b5cf6': 146.83, // violet        → D3 (NadiShodhana)
+      '#0891b2': 130.81, // cyan          → C3 (Ujjayi)
+      '#f59e0b': 130.81, // amber         → C3 (Belly)
+      '#38bdf8': 146.83, // sky-2         → D3 (Buteyko)
+      '#dc2626': 130.81, // deep red      → C3 (Tummo)
+      '#ea580c': 130.81, // hot orange    → C3 (BreathOfFire + evening time-of-day)
+      '#0d9488': 164.81, // teal          → E3 (morning time-of-day)
+    };
+    const key = colorHex?.toLowerCase();
+    return mapping[key] ?? 110; // A2 — neutral, pairs with all cue presets
   }
 
   private getCueProfile(colorHex: string): CueProfile {

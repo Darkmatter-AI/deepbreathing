@@ -1516,30 +1516,13 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                 )}
 
                 {/* v2 audio toggles */}
-                <div className="rounded-2xl bg-background/50 p-3 text-sm text-muted-foreground shadow-inner dark:bg-background/20">
-                  <div className="flex items-center justify-between gap-3">
-                    <div>
-                      <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">Eyes closed</p>
-                      <p className="text-base font-semibold text-card-foreground">{eyesClosed ? 'On' : 'Off'}</p>
-                    </div>
-                    <button
-                      type="button"
-                      role="switch"
-                      aria-checked={eyesClosed}
-                      onClick={handleEyesClosedToggle}
-                      className={`relative inline-flex h-9 w-16 items-center rounded-full border border-border/60 px-1 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-ring dark:border-border/40 ${eyesClosed ? 'bg-primary/80 text-primary-foreground' : 'bg-muted'}`}
-                    >
-                      <span
-                        className={`flex h-7 w-7 items-center justify-center rounded-full bg-card text-foreground shadow-sm transition-transform ${eyesClosed ? 'translate-x-6' : 'translate-x-0'}`}
-                      >
-                        {eyesClosed ? <EyeOff size={16} /> : <Eye size={16} />}
-                      </span>
-                    </button>
-                  </div>
-                  <p className="mt-2 text-xs text-muted-foreground">
-                    Fades the visuals and lets a continuous tonal envelope guide each breath. Tap anywhere to peek without pausing.
-                  </p>
-                </div>
+                {/*
+                  Eyes-closed toggle parked — feature needs voice narration in
+                  each locale to be useful on its own (visual cues are removed,
+                  so users need an audio guide). Code paths (URL param, state,
+                  phase envelope, mid-session toggle) are intentionally kept so
+                  ?eyesClosed=1 still works for internal testing.
+                */}
 
                 <div className="rounded-2xl bg-background/50 p-3 text-sm text-muted-foreground shadow-inner dark:bg-background/20">
                   <div className="flex items-center justify-between gap-3">

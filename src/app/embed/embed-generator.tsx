@@ -102,7 +102,9 @@ export function EmbedGenerator() {
   const [locale, setLocale] = useState<LocaleCode>('en');
   const [duration, setDuration] = useState<number | null>(60);
   const [binaural, setBinaural] = useState(true);
-  const [eyesClosed, setEyesClosed] = useState(false);
+  // eyesClosed param plumbing kept in URL builder for internal testing, but
+  // not surfaced as a generator toggle until narration ships.
+  const eyesClosed = false;
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
@@ -222,19 +224,7 @@ export function EmbedGenerator() {
             />
             Binaural beats (headphones recommended)
           </label>
-          <label className="inline-flex cursor-pointer items-center gap-2 rounded-xl border border-border bg-card px-3 py-2 text-sm font-medium text-card-foreground transition-colors hover:border-primary/40">
-            <input
-              type="checkbox"
-              checked={eyesClosed}
-              onChange={e => setEyesClosed(e.target.checked)}
-              className="h-4 w-4 accent-primary"
-            />
-            Start in eyes-closed mode
-          </label>
         </div>
-        <p className="mt-3 text-xs text-muted-foreground">
-          Embedders can pre-set these so visitors land in the right mood. Users can still toggle them in-session.
-        </p>
       </section>
 
       {/* Preview */}
