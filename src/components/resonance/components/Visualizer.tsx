@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useMemo } from 'react';
-import { Play, Pause } from 'lucide-react';
+import { Play } from 'lucide-react';
 import { BreathingPhase } from '../types';
 
 interface VisualizerProps {
@@ -56,7 +56,7 @@ const Visualizer: React.FC<VisualizerProps> = ({ scale, color, label, instructio
   );
 
   return (
-    <div className="group relative z-10 flex h-64 w-64 flex-col items-center justify-center sm:h-80 sm:w-80 md:h-96 md:w-96">
+    <div className="relative z-10 flex h-64 w-64 flex-col items-center justify-center sm:h-80 sm:w-80 md:h-96 md:w-96">
       <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
         <span className="block rounded-full" aria-hidden style={glowStyle} />
       </div>
@@ -70,7 +70,7 @@ const Visualizer: React.FC<VisualizerProps> = ({ scale, color, label, instructio
       {/* Interactive Orb */}
       <button
         onClick={onClick}
-        className="absolute z-20 flex h-full w-full cursor-pointer items-center justify-center rounded-full outline-none hover:brightness-110 animate-blob animate-hue"
+        className="group absolute z-20 flex h-full w-full cursor-pointer items-center justify-center rounded-full outline-none hover:brightness-110 animate-blob animate-hue"
         style={{ ...orbStyle, ...orbTransformStyle }}
         aria-label={isRunning ? 'Pause Session' : 'Start Session'}
       />
@@ -99,14 +99,15 @@ const Visualizer: React.FC<VisualizerProps> = ({ scale, color, label, instructio
                 {instructions}
               </p>
             )}
-            {/* Tap-to-pause hint: subtle on mobile (always visible at low opacity),
-                brightens on hover for desktop. Addresses UX-BACKLOG P0 #1 — users
-                were abandoning because the orb had no visual cue it's clickable. */}
-            <div className="mt-4 flex items-center gap-1.5 text-white opacity-60 group-hover:opacity-95 transition-opacity">
-              <Pause size={14} className="fill-current" />
-              <span className="text-xs uppercase tracking-wider">Tap to pause</span>
-            </div>
           </div>
+        </div>
+
+        {/* Pause Icon Overlay */}
+        <div
+          className={`absolute flex items-center justify-center transition-all duration-300 ${isRunning ? 'opacity-0' : 'opacity-0'
+            } pointer-events-none`}
+        >
+          {/* Pause icon removed from hover state to keep text visible, can re-add if needed */}
         </div>
       </div>
     </div>
