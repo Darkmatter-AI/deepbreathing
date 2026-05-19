@@ -21,9 +21,10 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-05-06 | [9D Breathwork Cluster — 2 Pages Riding the Breakout Trend](#2026-05-06-9d-breathwork-cluster--2-pages-riding-the-breakout-trend) | 🔄 Implemented |
 | 2026-05-06 | [Wim Hof Bing CTR — SERP Feature Structural Ceiling (Finding)](#2026-05-06-wim-hof-bing-ctr--serp-feature-structural-ceiling) | 📊 Snapshot |
 | 2026-05-06 | [E-E-A-T Wellness-Class Overhaul — Founder Byline + Lineage + Light Citations](#2026-05-06-e-e-a-t-wellness-class-overhaul--founder-byline--lineage--light-citations) | 🔄 Implemented |
-| 2026-05-05 | [Bing Translated-Page Indexing Push — URL + Content Submission](#2026-05-05-bing-translated-page-indexing-push--url--content-submission) | 🔄 Implemented |
-| 2026-05-05 | [Coherent Page Title Rewrite — Timer Intent Match](#2026-05-05-coherent-page-title-rewrite--timer-intent-match) | 🔄 Implemented |
-| 2026-05-05 | [Fix 5 GSC 404s — Double-locale + Sub-path Redirects](#2026-05-05-fix-5-gsc-404s--double-locale--sub-path-redirects) | 🔄 Implemented |
+| 2026-05-18 | [Indexing-Recovery Checkpoint (2-week read)](#2026-05-18-indexing-recovery-checkpoint-2-week-read) | 📊 Snapshot |
+| 2026-05-05 | [Bing Translated-Page Indexing Push — URL + Content Submission](#2026-05-05-bing-translated-page-indexing-push--url--content-submission) | ⏳ Waiting (4w eval 2026-06-02) |
+| 2026-05-05 | [Coherent Page Title Rewrite — Timer Intent Match](#2026-05-05-coherent-page-title-rewrite--timer-intent-match) | ❌ Failed |
+| 2026-05-05 | [Fix 5 GSC 404s — Double-locale + Sub-path Redirects](#2026-05-05-fix-5-gsc-404s--double-locale--sub-path-redirects) | 🟡 Mixed |
 | 2026-05-05 | [CTR Investigation — 4 High-Impression Pages (Diagnostic)](#2026-05-05-ctr-investigation--4-high-impression-pages-diagnostic) | 📊 Snapshot |
 | 2026-04-20 | [Indexing Remediation — Bulk URL Resubmission to GSC + Bing](#2026-04-20-indexing-remediation--bulk-url-resubmission-to-gsc--bing) | 🔄 Implemented |
 | 2026-04-01 | [Sitemap Conversion (route.ts) — Caused ~41% De-indexing](#2026-04-01-sitemap-conversion-routets--caused-41-de-indexing) | ❌ Failed |
@@ -64,13 +65,61 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-01-06 | [Navy SEAL Content Expansion](#2026-01-06-navy-seal-content-expansion) | ❌ Failed |
 | 2026-01-06 | [CTR Title Rewrites (Batch 1)](#2026-01-06-ctr-title-rewrites-batch-1) | ✅ Success |
 
-**Roll-up by status (43 entries):** ✅ 4 Success · ❌ 8 Failed · ⚪ 11 Inconclusive · 🟡 1 Mixed · ⏳ 1 Waiting · 🔄 12 Implemented · 📊 6 Snapshot.
+**Roll-up by status (44 entries):** ✅ 4 Success · ❌ 9 Failed · ⚪ 11 Inconclusive · 🟡 2 Mixed · ⏳ 2 Waiting · 🔄 9 Implemented · 📊 7 Snapshot.
 
 See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of what worked / failed / strategic insights from the first month of experiments.
 
 ---
 
 ## Active Experiments
+
+### 2026-05-18: Indexing-Recovery Checkpoint (2-week read)
+
+**Context:** Scheduled checkpoint for the May 5 batch (5 redirect rules + Coherent title rewrite + Bing translated push). Baseline numbers from the May 5 SEO audit + funnel-dashboard refresh.
+
+**GSC Page indexing — May 5 → May 18 (last update 5/15/26):**
+
+| Bucket | May 5 | May 18 | Δ |
+|---|---:|---:|---:|
+| Indexed | 200 | **246** | +46 ✅ |
+| Not indexed (total) | 147 | 146 | -1 |
+| ↳ Discovered – currently not indexed | 113 | **77** | -36 ✅ (target was <50, not hit but trending right) |
+| ↳ Crawled – currently not indexed | n/a | 32 | — |
+| ↳ Alternate page with proper canonical | n/a | 13 | — |
+| ↳ Duplicate, Google chose different canonical | n/a | 10 | — |
+| ↳ Not found (404) | 5 | **10** | +5 (see entry below) |
+| ↳ Page with redirect | n/a | 4 | — |
+| ↳ Duplicate without user-selected canonical | n/a | 0 | — |
+
+**Indexed count grew by +46 in 13 days** — strongest gain since the April 1 sitemap regression. Google IS processing the queue.
+
+**GSC performance — last 14d (May 4–17):**
+
+| Metric | Value | vs May 5 28d baseline |
+|---|---:|---|
+| Clicks | 135 | 14d pace ~270/28d, vs 445 March 28d — softer (Google traffic dipping or seasonality) |
+| Impressions | 23,061 | 14d pace ~46K/28d, vs 111K March — significant drop |
+| CTR | 0.59% | comparable |
+| Avg position | 11.0 | vs 11.5 March — comparable |
+
+**Bing performance — last 28d (Apr 20 – May 17), 3 weekly snapshots returned (Apr 24, May 1, May 8):**
+
+| Metric | Value | vs May 5 baseline |
+|---|---:|---|
+| Clicks | 111 | 126 → 111 (-12%) |
+| Impressions | 4,361 | 4,590 → 4,361 (-5%) |
+| CTR | 2.55% | 2.7% → 2.55% (comparable) |
+| Avg position | 5.6 | 5.3 → 5.6 (slightly worse) |
+
+**Translated-page presence on Bing (last 28d) — 7 pages with impressions:** /fr/breathing-visualizer (6 clicks), /ja/breathe/tummo (2), /ja/for/huberman (2), /fr/breathe/coherent (1), /ja/for/high-blood-pressure (1), /de/breathe/buteyko (1), /pt/breathe/breath-of-fire (1), plus /es/breathing-visualizer (1). **Up from 2 at May 5 baseline** → 7+ pages. Early-but-promising signal for the Bing translated submission push; full 4-week verdict still 2026-06-02.
+
+**Translated-page presence on GSC (last 14d) — 4 pages with clicks:** /es/breathing-visualizer (3), /es/breathing-app (2), /de/breathing-app (2), /es/box-breathing-app (2). Spanish dominates Google translated breadth; matches the SEO research baseline that ES has the largest untapped query volume.
+
+**Cross-engine top page:** /breathing-visualizer remains #1 on both engines.
+
+**Status:** 📊 Snapshot. Source-of-truth pulled by Chrome MCP (GSC Page indexing UI) + mass-translate-backend sync (GSC + Bing performance APIs). No action items beyond the per-experiment verdicts above.
+
+---
 
 ### 2026-05-06: 9D Breathwork Cluster — 2 Pages Riding the Breakout Trend
 
@@ -212,7 +261,9 @@ Total addressable cluster volume: **~3.3K monthly searches** in US. Currently ze
 - 2026-05-19 (2-week interim check via existing `deepbreathing-indexing-checkpoint-2026-05-19` scheduled task)
 - 2026-06-02 (4-week eval — apply success criteria above)
 
-**Status:** 🔄 Implemented (not yet measured)
+**Interim signal (2026-05-18, 13d in):** translated URLs with Bing impressions over last 28d went from **2 → 7+ pages** (per `get_bing_search_performance` top-20): /fr/breathing-visualizer, /ja/breathe/tummo, /ja/for/huberman, /fr/breathe/coherent, /ja/for/high-blood-pressure, /de/breathe/buteyko, /pt/breathe/breath-of-fire, /es/breathing-visualizer. Top-20 is a floor; the true count may be higher in long-tail. Trending toward the ⚪ Inconclusive zone (5–29 URLs). Don't graduate yet — full criterion applies 2026-06-02 when the 4-week post-submission window is complete.
+
+**Status:** ⏳ **Waiting** (4-week eval 2026-06-02). Interim 7+ pages on Bing is consistent with the success hypothesis.
 
 ---
 
@@ -238,7 +289,19 @@ Total addressable cluster volume: **~3.3K monthly searches** in US. Currently ze
 
 **Measurement date:** 2026-05-19 (2 weeks) checkpoint scheduled. Full 4-week eval ~2026-06-02.
 
-**Status:** 🔄 Implemented (not yet measured)
+**Result (2026-05-18, 13d in — checkpoint read, criterion applied):**
+
+Per-query CTR over last 28d (Apr 19 – May 16), top timer-intent queries:
+
+| Query | Impressions | Clicks | CTR |
+|---|---:|---:|---:|
+| coherent breathing breaths per minute | 51 | 0 | 0% |
+| coherent breathing 5-6 breaths per minute | 20 | 0 | 0% |
+| coherent breathing 5 seconds inhale 5 seconds exhale | 17 | 0 | 0% |
+| coherent breathing timer | 10 | 0 | 0% |
+| Page-level total | 3,970 | 2 | 0.1% |
+
+**Status:** ❌ **Failed.** Pre-committed criterion was top-3 timer-intent queries lift CTR from 0% → 1–3%. All four top queries still at 0% CTR over 28d window that includes 13 days post-deploy. Page-level position held at ~6.5 (visibility unchanged) — so the SERP position is fine; the title rewrite did not extract clicks above the YouTube + Answer Box stack on these queries. Hypothesis disconfirmed: matching intent in the title doesn't beat above-the-fold SERP features at our authority level (DR 0.2). Same pattern as the Jan 2026 Navy SEAL / featured-snippet attempts. Reaffirms the broader lesson: rank presence is not enough when SERP features displace below-the-fold organic on competitive queries — link authority is the lever, not metadata.
 
 ---
 
@@ -264,7 +327,22 @@ Tested locally with curl — all 5 patterns return 308 (permanent redirect) to c
 - 3 doubly-prefixed URLs submitted as `URL_DELETED` via Indexing API
 - "Validate fix" clicked in GSC Not found (404) drilldown — Google returned "Validation started: 5/5/26"
 
-**Status:** 🔄 Implemented (not yet measured) · validation in progress
+**Result (2026-05-18, 13d in — checkpoint read, criterion applied):**
+
+GSC "Not found (404)" count: **5 → 10** (went up, not down). Validation status: "Started" (still in progress). Last-crawled dates on the new examples show Google found additional double-locale variants between Apr 24 and May 4 — i.e. crawled them BEFORE the May 5 redirect deploy:
+
+| URL example | Last crawled | Pattern |
+|---|---|---|
+| /pt/fr/breathe/breath-of-fire | May 4, 2026 | NEW pt/fr |
+| /fr/pt/breathe/4-7-8 | May 3, 2026 | NEW fr/pt |
+| /de/pt/breathe | May 2, 2026 | NEW de/pt + bare /breathe |
+| /es/de/coherent-breathing-app | May 2, 2026 | NEW es/de |
+| /de/pt/breathe/wim-hof | May 2, 2026 | NEW de/pt |
+| /de/es/breathe/wim-hof | Apr 24, 2026 | Original 5 |
+
+Curl-tested all 5 new patterns against prod: **all return 308 to the correct canonical** (e.g. `/pt/fr/breathe/breath-of-fire` → `/pt/breathe/breath-of-fire`). The redirect rule from May 5 catches every double-locale combination, not just the original 5. Engineering fix is correct.
+
+**Status:** 🟡 **Mixed.** The redirect rule works for all 10 patterns (verified). The 5→0 count criterion was not hit because Google discovered 5 additional double-locale variants in the same window. All 10 are caught by the deployed rule, so the count should clear as Google re-crawls (Validation "Started" indicates this is in progress). Net: engineering ✅, indexing-metric criterion ❌ on the calendar date. **Action item:** re-check the 404 bucket count at the next checkpoint (2026-05-22 weekly refresh) — expected to drop substantially as Google re-crawls.
 
 ---
 

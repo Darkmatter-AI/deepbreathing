@@ -28,9 +28,9 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-05-12 | [UTM-tag share buttons (attribute outbound shares back to GA4)](#2026-05-12-utm-tag-share-buttons-attribute-outbound-shares-back-to-ga4) | 🔄 Implemented |
 | 2026-05-11 | [Mobile homepage: pills mode picker + full-screen orb + restore hero text](#2026-05-11-mobile-homepage-pills-mode-picker--full-screen-orb--restore-hero-text) | 🔄 Implemented |
 | 2026-05-08 | [Unify session-end events + commit-on-pause](#2026-05-08-unify-session-end-events--commit-on-pause) | 🔄 Implemented |
-| 2026-05-05 | [Engaged-Minutes Tracking — Fix Double-Counting + Stop-Event Sync](#2026-05-05-engaged-minutes-tracking--fix-double-counting--stop-event-sync) | 🔄 Implemented |
-| 2026-05-05 | [GA4 User Identification (user_id + signed_up property)](#2026-05-05-ga4-user-identification-user_id--signed_up-property) | 🔄 Implemented |
-| 2026-05-05 | [Tap-to-Pause Hint Inside Orb](#2026-05-05-tap-to-pause-hint-inside-orb) | 🔄 Implemented |
+| 2026-05-05 | [Engaged-Minutes Tracking — Fix Double-Counting + Stop-Event Sync](#2026-05-05-engaged-minutes-tracking--fix-double-counting--stop-event-sync) | 🔄 Implemented (read 2026-05-18, verdict 2026-06-02) |
+| 2026-05-05 | [GA4 User Identification (user_id + signed_up property)](#2026-05-05-ga4-user-identification-user_id--signed_up-property) | ✅ Success |
+| 2026-05-05 | [Tap-to-Pause Hint Inside Orb](#2026-05-05-tap-to-pause-hint-inside-orb) | ❌ Failed |
 | 2026-04-27 | [Duration Chips Below Orb](#2026-04-27-duration-chips-below-orb) | 🔄 Implemented |
 | 2026-04-27 | [Mobile Hero Above the Fold](#2026-04-27-mobile-hero-above-the-fold) | 🔄 Implemented |
 | 2026-04-27 | [page_viewed_breathing Event + sessions_completed Sync Fix](#2026-04-27-page_viewed_breathing-event--sessions_completed-sync-fix) | 🔄 Implemented |
@@ -235,6 +235,32 @@ Collapsing to a single `breathing_session_end` event with a `reason` parameter (
 
 **Measure-after:** 2026-05-19 (read), 2026-06-02 (verdict).
 
+**Read (2026-05-18, 13d in — Neon DB `cohort-check.sql`):**
+
+| Cohort metric | Value | Note |
+|---|---|---|
+| Total users (was 17) | **26** | +9 since May 5 |
+| Engaged (>0 min, was 4) | **7** | +3 new engagers |
+| `sessions_completed > 0` (was 0) | **4** | First non-zero values ✅ |
+| Per-user breakdown of new engagers | liz 15min / **8 done**, margoshats 4min / **3 done**, stacy 0min / **3 done**, mvarchol 11min / 0 done | new-session sync paths firing |
+
+Engaged-minute distribution row dump (only users whose `user_stats` row has been touched post-fix):
+
+```
+total_minutes | sessions_completed | last_synced
+          168 |                  0 | 2026-04-18  (pre-fix sync, stale)
+           40 |                  0 | 2026-04-20  (pre-fix sync, stale)
+           37 |                  0 | 2026-05-09  (post-fix but session pre-fix)
+           15 |                  8 | 2026-05-18  ← liz, post-fix sync ✅
+           11 |                  0 | 2026-05-15  (post-fix but never timed-complete)
+            4 |                  3 | 2026-05-18  ← margoshats, post-fix sync ✅
+            4 |                  0 | 2026-04-13  (pre-fix sync, stale)
+```
+
+**Interim read:** the `sessions_completed > 0` half of the criterion is **clearly working** for sessions that happen post-deploy (2/2 hits among users who had any timed completion this week). The "total_min 30-60% lower" half of the criterion **cannot be evaluated from a snapshot** — `user_stats` is overwritten by each sync, so we don't have a before/after for the same user. Need a per-session ledger to verify the double-count fix directly; current data is consistent with the fix working but doesn't prove it.
+
+**Status:** 🔄 Implemented (interim read positive). Full verdict still 2026-06-02 — needs more post-fix engaged users for a confident pattern.
+
 ---
 
 ### 2026-05-05: GA4 User Identification (user_id + signed_up property)
@@ -267,6 +293,19 @@ Collapsing to a single `breathing_session_end` event with a `reason` parameter (
 
 **Measure-after:** 2026-05-19.
 
+**Result (2026-05-18, 13d in — GA4 events report, last 14d May 4–17):**
+
+| Event | Users (14d) |
+|---|---:|
+| `conversion_signup_completed` | **11** |
+| `signup_user_identified` | **11** |
+
+**11 = 11 — exact match.** Criterion was "`signup_user_identified` count matches login count" — hit. Mobile/desktop split: signup_user_identified mobile=5 / web=6 vs signup_completed mobile=6 / web=5 — match holds across devices (small ±1 noise from cross-device users).
+
+The `signed_up=true` user_property visibility in the User attributes report wasn't directly verified this checkpoint (would need to drill into User Attributes panel), but the event-count match strongly implies the gtag user_id + user_properties calls are firing as designed. 
+
+**Status:** ✅ **Success.** GA4 user-ID wiring is working end-to-end. Cross-device stitching and signed-up vs guest segmentation are now possible in GA4 reports (action item: actually use them in the next funnel refresh).
+
 ---
 
 ### 2026-05-05: Tap-to-Pause Hint Inside Orb
@@ -296,6 +335,25 @@ Collapsing to a single `breathing_session_end` event with a `reason` parameter (
 **Risks to watch:** The hint is a small visual addition during a meditative session; it might feel intrusive. If user complaints arrive, consider fade-out after 5 seconds or first-session-only.
 
 **Measure-after:** 2026-05-19.
+
+**Result (2026-05-18, 13d in — GA4 events report, last 14d May 4–17, Mobile-traffic comparison applied):**
+
+| Mobile metric | Baseline May 5 (28d) | Post-deploy 14d (May 4-17) | Δ |
+|---|---:|---:|---:|
+| Mobile users — `breathing_session_start` | 140 | 111 | — |
+| Mobile users — `breathing_session_pause` | 36 | **20** | — |
+| Mobile pause rate | 25.7% | **18.0%** | **-7.7pp** ⚠️ (wrong direction) |
+| Mobile abandonment (= 1 − pause-rate) | **74.3%** | **82.0%** | **+7.7pp WORSE** |
+| Mobile users — `breathing_session_complete` | 8 | 22 | +14 (chips effect) |
+| Mobile complete rate | 5.7% | 19.8% | +14.1pp (driven by chips, not hint) |
+
+Pre-committed criterion: mobile abandonment ≤66% (-8pp). Observed: abandonment moved +7.7pp in the **wrong direction**. Mobile pause-rate also dropped slightly (25.7% → 18.0%) — so even on the underlying signal, the hint did not produce more pauses; if anything, fewer.
+
+**Status:** ❌ **Failed.** The "TAP TO PAUSE" hint did not reduce mobile abandonment. Two possibilities to triage:
+1. The hint is genuinely not helping — mobile users who don't pause already aren't looking at the orb text mid-session, and a small text label can't override that.
+2. The 14d vs 28d windows aren't directly comparable; the cohort/traffic mix differs and the May 4-17 window has only 111 mobile starts vs 140 in the baseline.
+
+Either way, the criterion as written is not met. **Action item to consider:** roll back the hint (it's visual noise that didn't earn its keep), OR test a more aggressive intervention (e.g., first-session-only larger overlay tooltip). Don't sit on a failed UX addition. The complete-rate jump (5.7% → 19.8%) on mobile is real but driven by the duration chips ship, not this hint.
 
 ---
 

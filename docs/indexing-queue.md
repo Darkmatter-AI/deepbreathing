@@ -5,15 +5,21 @@ The `daily-indexing` skill reads this file, picks the next URLs whose **Indexed*
 column is empty AND whose GSC/Bing column is empty, submits them, and writes the
 submission date back.
 
-## Current state (as of 2026-05-05)
+## Current state (as of 2026-05-18)
 
 - **Total URLs in sitemap**: 307
-- **Indexed by Google**: 200 (per GSC Page Indexing report — was 180 on Apr 20, +20 in 15 days)
-- **Not indexed**: 147 (6 reasons; biggest bucket is "Discovered - currently not indexed" at 113)
-- **404 patterns flagged & fixed today**: 5 — all addressed via 3 redirect rules in next.config.js (see SEO-EXPERIMENTS.md 2026-05-05 entry):
+- **Indexed by Google**: **246** (per GSC Page Indexing report — +46 in 13 days since May 5, +66 since Apr 20). Strongest gain since the April sitemap regression.
+- **Not indexed**: 146 (-1 vs May 5). Biggest bucket "Discovered – currently not indexed" dropped from 113 → **77** (target was <50, trending right but not hit).
+- **Not found (404)**: 5 → **10** (more variants surfaced; all 10 are caught by the May 5 redirect rule — curl-verified). Validation "Started" in GSC, expected to clear as Google re-crawls.
+- **Next checkpoint**: 2026-05-22 (next weekly Friday refresh). Watch for the 404 count clearing toward 0 as the validation completes.
+
+## Previous state (as of 2026-05-05)
+
+- **Indexed by Google**: 200 (was 180 on Apr 20, +20 in 15 days)
+- **Not indexed**: 147 (biggest bucket "Discovered – currently not indexed" at 113)
+- **404 patterns flagged & fixed**: 5 — all addressed via 3 redirect rules in next.config.js (see SEO-EXPERIMENTS.md 2026-05-05 entry):
   - `/de/es/breathe/wim-hof`, `/de/ja/breathe/breath-of-fire`, `/ja/de/box-breathing-app` → handled by double-locale stripping rule
   - `/breathing-app/*`, `/4-7-8-breathing-timer/*` → handled by sub-path collapse rules
-- **Next checkpoint**: 2026-05-19 (scheduled task). Expect "Discovered not indexed" <50 if processing normally.
 
 ## Historical state (as of 2026-04-20)
 
