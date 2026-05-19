@@ -30,6 +30,11 @@ const SnowBackground = dynamic(
     loading: () => <div className="absolute inset-0 z-0" />
   }
 );
+// Lazy-load — ?debug=audio only; keeps the prod critical-path bundle clean.
+const AudioDebugPanel = dynamic(
+  () => import('./AudioDebugPanel'),
+  { ssr: false }
+);
 import { modeToBreathingPage } from '@/data/breathing-pages';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetClose } from '@/components/ui/sheet';
 import { useAuth } from '@/components/auth/auth-provider';
@@ -122,6 +127,13 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
   );
   const eyesClosedFromUrl = useMemo(
     () => parseBoolParam(searchParams.get('eyesClosed')),
+    [searchParams]
+  );
+  // Diagnostic audio panel gate. URL-only so it can run against deployed
+  // previews; never shipped to ordinary users. Also flips __RESONANCE_DEBUG
+  // so AudioService.log() starts emitting context-lifecycle traces.
+  const audioDebugEnabled = useMemo(
+    () => searchParams.get('debug') === 'audio',
     [searchParams]
   );
 
@@ -297,11 +309,21 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     if (!audioServiceRef.current) {
       const debugEnabled =
         typeof window !== 'undefined' &&
-        (window as any).__RESONANCE_DEBUG === true;
+        ((window as any).__RESONANCE_DEBUG === true || audioDebugEnabled);
       audioServiceRef.current = new AudioService({ debug: debugEnabled });
     }
     return audioServiceRef.current;
-  }, []);
+  }, [audioDebugEnabled]);
+
+  // Flip the window-level debug flag whenever ?debug=audio is present so any
+  // other code that gates on __RESONANCE_DEBUG (or future debug surfaces)
+  // sees it without having to re-read the URL.
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    if (audioDebugEnabled) {
+      (window as any).__RESONANCE_DEBUG = true;
+    }
+  }, [audioDebugEnabled]);
 
   const requestRef = useRef<number | null>(null);
   const phaseStartRef = useRef<number>(0);
@@ -1730,6 +1752,8 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
           onSuccess={markConverted}
         />
       )}
+
+      {audioDebugEnabled && <AudioDebugPanel audio={getAudioService()} />}
     </div>
   );
 };

@@ -14,6 +14,7 @@ type CueType = 'inhale' | 'exhale' | 'hold';
 // hissy, closes far enough on exhale to feel like the wave receded.
 const NOISE_FILTER_BASE_HZ = 480;
 const NOISE_FILTER_PEAK_HZ = 2400;
+const NOISE_FILTER_Q = 0.7;
 
 interface CueProfile {
   oscType: OscillatorType;
@@ -54,15 +55,85 @@ interface CueProfile {
    masterLowpassHz: number;
  };
 
+export interface MeterReading {
+  peakDb: number;
+  rmsDb: number;
+}
+
+export interface MeterValues {
+  preCompressor: MeterReading;
+  postLimiter: MeterReading;
+  compressorReductionDb: number;
+  limiterReductionDb: number;
+  layers: {
+    drone: MeterReading;
+    subBass: MeterReading;
+    pinkNoise: MeterReading;
+    envelope: MeterReading;
+  };
+}
+
+export interface TuningSnapshot {
+  compressor: { threshold: number; knee: number; ratio: number; attack: number; release: number };
+  limiter: { threshold: number; knee: number; ratio: number; attack: number; release: number };
+  masterTrim: number;
+  droneScale: number;
+  subBassScale: number;
+  subBassFreqMultiplier: number;
+  pinkNoiseScale: number;
+  pinkNoiseFilter: { baseHz: number; peakHz: number; q: number };
+  binauralScale: number;
+  phaseEnvelopeScale: number;
+  phaseEnvelopeFreqMultiplier: number;
+  cueToneScale: number;
+  cueNoiseScale: number;
+  cueReverbMix: number;
+  arcWindowSeconds: number;
+  arcRootDriftFactor: number;
+  arcLfoSlowdownFactor: number;
+  arcOrbitSlowdownFactor: number;
+}
+
 export class AudioService {
   private ctx: AudioContext | null = null;
   private masterGain: GainNode | null = null;
   private masterCompressor: DynamicsCompressorNode | null = null;
   private masterLimiter: DynamicsCompressorNode | null = null;
   private masterTrim: GainNode | null = null;
+  private preCompAnalyser: AnalyserNode | null = null;
+  private postLimitAnalyser: AnalyserNode | null = null;
+  private droneAnalyser: AnalyserNode | null = null;
+  private subBassAnalyser: AnalyserNode | null = null;
+  private pinkNoiseAnalyser: AnalyserNode | null = null;
+  private envelopeAnalyser: AnalyserNode | null = null;
   private debug = false;
   private mediaUnlocking: Promise<void> | null = null;
   private mediaUnlocked = false;
+
+  // Live-tweakable scale multipliers — applied on top of the existing per-layer
+  // target gains so the debug panel can ride levels without recompiling.
+  private droneScale = 1;
+  private subBassScale = 1;
+  private subBassFreqMultiplier = 1;
+  private subBassRootHz = 0;
+  private pinkNoiseScale = 1;
+  private noiseFilterBaseHz = NOISE_FILTER_BASE_HZ;
+  private noiseFilterPeakHz = NOISE_FILTER_PEAK_HZ;
+  private noiseFilterQ = NOISE_FILTER_Q;
+  private binauralScale = 1;
+  private phaseEnvelopeScale = 1;
+  private phaseEnvelopeFreqMultiplier = 1;
+  private phaseEnvelopeRootHz = 0;
+  private cueToneScale = 1;
+  private cueNoiseScale = 1;
+  private cueReverbMix = 1;
+
+  // Session-arc tunables — replace the prior hardcoded constants so the debug
+  // panel can dial the arc shape live.
+  private arcWindowSeconds = 240;
+  private arcRootDriftFactor = 8 / 9;
+  private arcLfoSlowdownFactor = 0.5;
+  private arcOrbitSlowdownFactor = 0.4;
 
   // Session-arc evolution state — captured when the drone starts so we can
   // ramp params relative to their initial values.
@@ -200,9 +271,27 @@ export class AudioService {
     this.masterTrim = this.ctx.createGain();
     this.masterTrim.gain.value = 0.71; // -3 dBFS safety margin
 
+    // Diagnostic analyser taps — always present (cheap when no consumer is
+    // reading) so the debug panel can show where in the chain a peak lives
+    // without needing to rebuild graph topology mid-session.
+    this.preCompAnalyser = this.ctx.createAnalyser();
+    this.preCompAnalyser.fftSize = 1024;
+    this.postLimitAnalyser = this.ctx.createAnalyser();
+    this.postLimitAnalyser.fftSize = 1024;
+    this.droneAnalyser = this.ctx.createAnalyser();
+    this.droneAnalyser.fftSize = 1024;
+    this.subBassAnalyser = this.ctx.createAnalyser();
+    this.subBassAnalyser.fftSize = 1024;
+    this.pinkNoiseAnalyser = this.ctx.createAnalyser();
+    this.pinkNoiseAnalyser.fftSize = 1024;
+    this.envelopeAnalyser = this.ctx.createAnalyser();
+    this.envelopeAnalyser.fftSize = 1024;
+
     this.masterGain.connect(this.masterCompressor);
+    this.masterGain.connect(this.preCompAnalyser);
     this.masterCompressor.connect(this.masterLimiter);
     this.masterLimiter.connect(this.masterTrim);
+    this.masterLimiter.connect(this.postLimitAnalyser);
     this.masterTrim.connect(this.ctx.destination);
   }
 
@@ -230,6 +319,12 @@ export class AudioService {
       this.masterCompressor = null;
       this.masterLimiter = null;
       this.masterTrim = null;
+      this.preCompAnalyser = null;
+      this.postLimitAnalyser = null;
+      this.droneAnalyser = null;
+      this.subBassAnalyser = null;
+      this.pinkNoiseAnalyser = null;
+      this.envelopeAnalyser = null;
       this.cueNoiseBuffer = null;
       this.cueReverbCache.clear();
       this.initContext();
@@ -263,6 +358,12 @@ export class AudioService {
           this.masterCompressor = null;
           this.masterLimiter = null;
           this.masterTrim = null;
+          this.preCompAnalyser = null;
+          this.postLimitAnalyser = null;
+          this.droneAnalyser = null;
+          this.subBassAnalyser = null;
+          this.pinkNoiseAnalyser = null;
+          this.envelopeAnalyser = null;
           this.initContext();
           if (this.ctx) {
             try {
@@ -284,6 +385,12 @@ export class AudioService {
       this.masterCompressor = null;
       this.masterLimiter = null;
       this.masterTrim = null;
+      this.preCompAnalyser = null;
+      this.postLimitAnalyser = null;
+      this.droneAnalyser = null;
+      this.subBassAnalyser = null;
+      this.pinkNoiseAnalyser = null;
+      this.envelopeAnalyser = null;
       this.cueNoiseBuffer = null;
       this.cueReverbCache.clear();
       this.buildOutputChain();
@@ -372,17 +479,17 @@ export class AudioService {
    */
   public tickSessionArc(elapsedSeconds: number) {
     if (!this.ctx || !this.droneArc || this.droneNodes.length === 0) return;
-    // Window the arc over the first ARC_WINDOW seconds; clamp after.
-    const ARC_WINDOW = 240; // 4 minutes
-    const t = Math.max(0, Math.min(1, elapsedSeconds / ARC_WINDOW));
+    const window = Math.max(1, this.arcWindowSeconds);
+    const t = Math.max(0, Math.min(1, elapsedSeconds / window));
     if (t === 0) return; // Nothing to update on the very first tick.
 
     const ctxTime = this.ctx.currentTime;
     const TC = 8; // setTargetAtTime time constant — long, imperceptible per-frame change
 
-    // Root: drift down a whole tone (factor 8/9 ≈ 0.889) over the window.
-    // Stays consonant-adjacent to the original root vs. the fixed cue pitches.
-    const rootTarget = this.droneArc.rootHz * (1 - t * (1 - 8 / 9));
+    // Root: drift toward `rootHz * arcRootDriftFactor` over the window.
+    // 1.0 = no drift, 8/9 = whole tone (current default), 2/3 = perfect 5th.
+    const driftFactor = this.arcRootDriftFactor;
+    const rootTarget = this.droneArc.rootHz * (1 - t * (1 - driftFactor));
     this.droneNodes.forEach((node, index) => {
       // Each partial keeps its ratio to root: [1, 1.5, 2, 0.99]
       const ratios = [1, 1.5, 2, 0.99];
@@ -390,15 +497,15 @@ export class AudioService {
       node.osc.frequency.setTargetAtTime(rootTarget * ratio, ctxTime, TC);
     });
 
-    // LFO: slow from initial → 50% over the arc window.
+    // LFO: slow from initial → (1 - arcLfoSlowdownFactor) over the arc window.
     this.droneLfoNodes.forEach((lfo, index) => {
       const initial = this.droneArc!.lfoRates[index] ?? 0.1;
-      const target = initial * (1 - t * 0.5);
+      const target = initial * (1 - t * this.arcLfoSlowdownFactor);
       lfo.frequency.setTargetAtTime(target, ctxTime, TC);
     });
 
-    // 8D orbit speed: slow by 40% over the arc window.
-    this.spatialSpeedOverride = this.droneArc.spatialSpeed * (1 - t * 0.4);
+    // 8D orbit speed: slow by arcOrbitSlowdownFactor over the arc window.
+    this.spatialSpeedOverride = this.droneArc.spatialSpeed * (1 - t * this.arcOrbitSlowdownFactor);
   }
 
   public setVolume(cueVol: number, musicVol: number) {
@@ -409,17 +516,33 @@ export class AudioService {
     const now = this.ctx.currentTime;
 
     this.droneNodes.forEach((node) =>
-      node.gain.gain.setTargetAtTime(this.isMuted ? 0 : this.musicVolume * 0.1, now, 0.5)
+      node.gain.gain.setTargetAtTime(this.droneTargetGain(), now, 0.5)
     );
     this.binauralNodes.forEach((node) =>
-      node.gain.gain.setTargetAtTime(this.isMuted ? 0 : 0.05, now, 0.5)
+      node.gain.gain.setTargetAtTime(this.binauralTargetGain(), now, 0.5)
     );
     if (this.noiseNode) {
-      this.noiseNode.gain.gain.setTargetAtTime(this.isMuted ? 0 : this.musicVolume * 0.15, now, 0.5);
+      this.noiseNode.gain.gain.setTargetAtTime(this.pinkNoiseTargetGain(), now, 0.5);
     }
     if (this.subBassNode) {
-      this.subBassNode.gain.gain.setTargetAtTime(this.isMuted ? 0 : this.musicVolume * 0.10, now, 0.5);
+      this.subBassNode.gain.gain.setTargetAtTime(this.subBassTargetGain(), now, 0.5);
     }
+  }
+
+  private droneTargetGain() {
+    return this.isMuted ? 0 : this.musicVolume * 0.3 * this.droneScale;
+  }
+  private subBassTargetGain() {
+    return this.isMuted ? 0 : this.musicVolume * 0.10 * this.subBassScale;
+  }
+  private pinkNoiseTargetGain() {
+    return this.isMuted ? 0 : this.musicVolume * 0.25 * this.pinkNoiseScale;
+  }
+  private binauralTargetGain() {
+    return this.isMuted ? 0 : 0.05 * this.binauralScale;
+  }
+  private phaseEnvelopePeakGain() {
+    return this.isMuted ? 0 : this.musicVolume * 0.22 * this.phaseEnvelopeScale;
   }
 
   public toggleMute(muted: boolean) {
@@ -511,7 +634,8 @@ export class AudioService {
       convolver = this.getCueReverb(preset.reverb.duration, preset.reverb.decay);
       if (convolver) {
         wetGain = this.ctx.createGain();
-        wetGain.gain.setValueAtTime(Math.max(0, Math.min(1, preset.reverb.mix)), t);
+        const mix = Math.max(0, Math.min(1, preset.reverb.mix * this.cueReverbMix));
+        wetGain.gain.setValueAtTime(mix, t);
         masterLowpass.connect(convolver);
         convolver.connect(wetGain);
         wetGain.connect(output);
@@ -553,7 +677,7 @@ export class AudioService {
         highpass.frequency.setValueAtTime(n.highpass, t);
 
         gain.gain.setValueAtTime(0.0001, t);
-        gain.gain.linearRampToValueAtTime(n.gain * this.cueVolume, t + n.attack);
+        gain.gain.linearRampToValueAtTime(n.gain * this.cueVolume * this.cueNoiseScale, t + n.attack);
         gain.gain.exponentialRampToValueAtTime(0.0001, t + n.attack + n.release);
 
         src.connect(lowpass);
@@ -577,7 +701,7 @@ export class AudioService {
       osc.frequency.exponentialRampToValueAtTime(Math.max(20, tone.freqEnd), endTime);
 
       gain.gain.setValueAtTime(0.0001, t);
-      gain.gain.linearRampToValueAtTime(tone.gain * this.cueVolume, t + tone.attack);
+      gain.gain.linearRampToValueAtTime(tone.gain * this.cueVolume * this.cueToneScale, t + tone.attack);
       gain.gain.exponentialRampToValueAtTime(0.0001, t + tone.attack + tone.release);
 
       osc.connect(gain);
@@ -614,7 +738,7 @@ export class AudioService {
       osc.type = 'sine';
       pan.pan.value = panValue;
       gain.gain.setValueAtTime(0, t);
-      gain.gain.linearRampToValueAtTime(this.isMuted ? 0 : 0.05, t + 2);
+      gain.gain.linearRampToValueAtTime(this.binauralTargetGain(), t + 2);
 
       osc.connect(gain);
       gain.connect(pan);
@@ -668,7 +792,7 @@ export class AudioService {
 
       const t = this.ctx!.currentTime;
       gain.gain.setValueAtTime(0, t);
-      gain.gain.linearRampToValueAtTime(this.isMuted ? 0 : this.musicVolume * 0.3, t + 2);
+      gain.gain.linearRampToValueAtTime(this.droneTargetGain(), t + 2);
 
       const lfo = this.ctx!.createOscillator();
       const lfoGain = this.ctx!.createGain();
@@ -684,6 +808,7 @@ export class AudioService {
       osc.connect(gain);
       gain.connect(panner);
       panner.connect(this.masterGain!);
+      if (this.droneAnalyser) panner.connect(this.droneAnalyser);
 
       osc.start(t);
       this.droneNodes.push({ osc, panner, gain });
@@ -744,19 +869,20 @@ export class AudioService {
     if (!ready || !this.ctx || !this.masterGain) return;
 
     const root = this.getDroneRootFrequency(colorHex || this.themeColor);
+    this.subBassRootHz = root;
     const osc = this.ctx.createOscillator();
     const gain = this.ctx.createGain();
     const lfo = this.ctx.createOscillator();
     const lfoGain = this.ctx.createGain();
 
     osc.type = 'sine';
-    osc.frequency.value = Math.max(40, root / 2);
+    osc.frequency.value = Math.max(40, (root / 2) * this.subBassFreqMultiplier);
 
     const t = this.ctx.currentTime;
     // Conservative gain — small phone speakers can't reproduce ~65 Hz and
     // even on headphones the sub layer is meant to FEEL, not be heard. 0.18
     // was muddy on the homepage stack (drone + binaural + cue stack on Box).
-    const targetGain = this.isMuted ? 0 : this.musicVolume * 0.10;
+    const targetGain = this.subBassTargetGain();
     gain.gain.setValueAtTime(0, t);
     gain.gain.linearRampToValueAtTime(targetGain, t + 3);
 
@@ -768,6 +894,7 @@ export class AudioService {
 
     osc.connect(gain);
     gain.connect(this.masterGain);
+    if (this.subBassAnalyser) gain.connect(this.subBassAnalyser);
     osc.start(t);
     lfo.start(t);
 
@@ -789,6 +916,7 @@ export class AudioService {
     if (!ready || !this.ctx || !this.masterGain) return;
 
     const root = this.getDroneRootFrequency(colorHex || this.themeColor);
+    this.phaseEnvelopeRootHz = root;
     const osc = this.ctx.createOscillator();
     const filter = this.ctx.createBiquadFilter();
     const gain = this.ctx.createGain();
@@ -797,7 +925,7 @@ export class AudioService {
     // 3× root (perfect 12th) sits outside the drone's [1, 1.5, 2, 0.99] partials,
     // so no beating with the 2× partial — important because session arc drifts
     // the drone root but the envelope frequency is captured at startPhaseEnvelope.
-    osc.frequency.value = root * 3;
+    osc.frequency.value = root * 3 * this.phaseEnvelopeFreqMultiplier;
     filter.type = 'lowpass';
     filter.Q.value = 0.9;
     filter.frequency.value = 800;
@@ -808,6 +936,7 @@ export class AudioService {
     osc.connect(filter);
     filter.connect(gain);
     gain.connect(this.masterGain);
+    if (this.envelopeAnalyser) gain.connect(this.envelopeAnalyser);
     osc.start(t);
 
     this.phaseEnvelopeNode = { osc, gain, filter };
@@ -837,7 +966,7 @@ export class AudioService {
     const t = this.ctx.currentTime;
     const p = Math.max(0, Math.min(1, progress));
 
-    const PEAK_GAIN = this.isMuted ? 0 : this.musicVolume * 0.22;
+    const PEAK_GAIN = this.phaseEnvelopePeakGain();
     const FILTER_BASE = 500;
     const FILTER_PEAK = 2200;
 
@@ -895,17 +1024,18 @@ export class AudioService {
     // so the whole texture breathes with the user.
     const filter = this.ctx.createBiquadFilter();
     filter.type = 'lowpass';
-    filter.Q.value = 0.7;
-    filter.frequency.value = NOISE_FILTER_BASE_HZ;
+    filter.Q.value = this.noiseFilterQ;
+    filter.frequency.value = this.noiseFilterBaseHz;
 
     const gain = this.ctx.createGain();
     const t = this.ctx.currentTime;
     gain.gain.setValueAtTime(0, t);
-    gain.gain.linearRampToValueAtTime(this.isMuted ? 0 : this.musicVolume * 0.25, t + 2);
+    gain.gain.linearRampToValueAtTime(this.pinkNoiseTargetGain(), t + 2);
 
     source.connect(filter);
     filter.connect(gain);
     gain.connect(this.masterGain);
+    if (this.pinkNoiseAnalyser) gain.connect(this.pinkNoiseAnalyser);
     source.start(t);
 
     this.noiseNode = { source, gain, filter };
@@ -925,10 +1055,12 @@ export class AudioService {
     const t = this.ctx.currentTime;
     const p = Math.max(0, Math.min(1, progress));
     let target: number;
+    const base = this.noiseFilterBaseHz;
+    const peak = this.noiseFilterPeakHz;
     if (phase === 'inhale') {
-      target = NOISE_FILTER_BASE_HZ + (NOISE_FILTER_PEAK_HZ - NOISE_FILTER_BASE_HZ) * p;
+      target = base + (peak - base) * p;
     } else if (phase === 'exhale') {
-      target = NOISE_FILTER_PEAK_HZ - (NOISE_FILTER_PEAK_HZ - NOISE_FILTER_BASE_HZ) * p;
+      target = peak - (peak - base) * p;
     } else {
       // Hold: hold the current target steady — no ramp.
       return;
@@ -948,6 +1080,196 @@ export class AudioService {
     this.noiseNode.gain.gain.linearRampToValueAtTime(0, t + 1);
     this.noiseNode.source.stop(t + 1.1);
     this.noiseNode = null;
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Debug-panel surface: live setters, meter readings, tuning snapshot.
+  // Only the ?debug=audio panel calls these — keep them inert when unused.
+  // ─────────────────────────────────────────────────────────────────────────
+
+  public setCompressorParams(params: Partial<{ threshold: number; knee: number; ratio: number; attack: number; release: number }>) {
+    if (!this.masterCompressor) return;
+    if (params.threshold !== undefined) this.masterCompressor.threshold.value = params.threshold;
+    if (params.knee !== undefined) this.masterCompressor.knee.value = params.knee;
+    if (params.ratio !== undefined) this.masterCompressor.ratio.value = params.ratio;
+    if (params.attack !== undefined) this.masterCompressor.attack.value = params.attack;
+    if (params.release !== undefined) this.masterCompressor.release.value = params.release;
+  }
+
+  public setLimiterParams(params: Partial<{ threshold: number; knee: number; ratio: number; attack: number; release: number }>) {
+    if (!this.masterLimiter) return;
+    if (params.threshold !== undefined) this.masterLimiter.threshold.value = params.threshold;
+    if (params.knee !== undefined) this.masterLimiter.knee.value = params.knee;
+    if (params.ratio !== undefined) this.masterLimiter.ratio.value = params.ratio;
+    if (params.attack !== undefined) this.masterLimiter.attack.value = params.attack;
+    if (params.release !== undefined) this.masterLimiter.release.value = params.release;
+  }
+
+  public setMasterTrim(linearGain: number) {
+    if (!this.masterTrim) return;
+    this.masterTrim.gain.value = Math.max(0, linearGain);
+  }
+
+  public setDroneGain(scale: number) {
+    this.droneScale = Math.max(0, scale);
+    if (!this.ctx || this.droneNodes.length === 0) return;
+    const target = this.droneTargetGain();
+    const t = this.ctx.currentTime;
+    this.droneNodes.forEach((node) => node.gain.gain.setTargetAtTime(target, t, 0.1));
+  }
+
+  public setSubBassGain(scale: number) {
+    this.subBassScale = Math.max(0, scale);
+    if (!this.ctx || !this.subBassNode) return;
+    this.subBassNode.gain.gain.setTargetAtTime(this.subBassTargetGain(), this.ctx.currentTime, 0.1);
+  }
+
+  public setSubBassFreqMultiplier(x: number) {
+    this.subBassFreqMultiplier = Math.max(0.1, x);
+    if (!this.ctx || !this.subBassNode || this.subBassRootHz === 0) return;
+    const target = Math.max(40, (this.subBassRootHz / 2) * this.subBassFreqMultiplier);
+    this.subBassNode.osc.frequency.setTargetAtTime(target, this.ctx.currentTime, 0.05);
+  }
+
+  public setPinkNoiseGain(scale: number) {
+    this.pinkNoiseScale = Math.max(0, scale);
+    if (!this.ctx || !this.noiseNode) return;
+    this.noiseNode.gain.gain.setTargetAtTime(this.pinkNoiseTargetGain(), this.ctx.currentTime, 0.1);
+  }
+
+  public setPinkNoiseFilterRange(range: Partial<{ baseHz: number; peakHz: number; q: number }>) {
+    if (range.baseHz !== undefined) this.noiseFilterBaseHz = Math.max(20, range.baseHz);
+    if (range.peakHz !== undefined) this.noiseFilterPeakHz = Math.max(this.noiseFilterBaseHz, range.peakHz);
+    if (range.q !== undefined) this.noiseFilterQ = Math.max(0.01, range.q);
+    if (this.noiseNode) {
+      this.noiseNode.filter.Q.value = this.noiseFilterQ;
+    }
+  }
+
+  public setBinauralGain(scale: number) {
+    this.binauralScale = Math.max(0, scale);
+    if (!this.ctx) return;
+    const target = this.binauralTargetGain();
+    const t = this.ctx.currentTime;
+    this.binauralNodes.forEach((node) => node.gain.gain.setTargetAtTime(target, t, 0.1));
+  }
+
+  public setPhaseEnvelopeGain(scale: number) {
+    this.phaseEnvelopeScale = Math.max(0, scale);
+    // Peak gain is sampled per-tick from phaseEnvelopePeakGain(); next
+    // updatePhaseEnvelope call honors the new scale without further wiring.
+  }
+
+  public setPhaseEnvelopeFreqMultiplier(x: number) {
+    this.phaseEnvelopeFreqMultiplier = Math.max(0.1, x);
+    if (!this.ctx || !this.phaseEnvelopeNode || this.phaseEnvelopeRootHz === 0) return;
+    const target = this.phaseEnvelopeRootHz * 3 * this.phaseEnvelopeFreqMultiplier;
+    this.phaseEnvelopeNode.osc.frequency.setTargetAtTime(target, this.ctx.currentTime, 0.05);
+  }
+
+  public setCueToneScale(x: number) {
+    this.cueToneScale = Math.max(0, x);
+  }
+
+  public setCueNoiseScale(x: number) {
+    this.cueNoiseScale = Math.max(0, x);
+  }
+
+  public setCueReverbMix(x: number) {
+    this.cueReverbMix = Math.max(0, x);
+  }
+
+  public setArcWindowSeconds(s: number) {
+    this.arcWindowSeconds = Math.max(1, s);
+  }
+
+  public setArcRootDriftFactor(x: number) {
+    this.arcRootDriftFactor = Math.max(0.1, Math.min(1, x));
+  }
+
+  public setArcLfoSlowdownFactor(x: number) {
+    this.arcLfoSlowdownFactor = Math.max(0, Math.min(1, x));
+  }
+
+  public setArcOrbitSlowdownFactor(x: number) {
+    this.arcOrbitSlowdownFactor = Math.max(0, Math.min(1, x));
+  }
+
+  public getTuning(): TuningSnapshot {
+    return {
+      compressor: {
+        threshold: this.masterCompressor?.threshold.value ?? -14,
+        knee: this.masterCompressor?.knee.value ?? 24,
+        ratio: this.masterCompressor?.ratio.value ?? 3,
+        attack: this.masterCompressor?.attack.value ?? 0.02,
+        release: this.masterCompressor?.release.value ?? 0.3,
+      },
+      limiter: {
+        threshold: this.masterLimiter?.threshold.value ?? -3,
+        knee: this.masterLimiter?.knee.value ?? 0,
+        ratio: this.masterLimiter?.ratio.value ?? 20,
+        attack: this.masterLimiter?.attack.value ?? 0.001,
+        release: this.masterLimiter?.release.value ?? 0.05,
+      },
+      masterTrim: this.masterTrim?.gain.value ?? 0.71,
+      droneScale: this.droneScale,
+      subBassScale: this.subBassScale,
+      subBassFreqMultiplier: this.subBassFreqMultiplier,
+      pinkNoiseScale: this.pinkNoiseScale,
+      pinkNoiseFilter: {
+        baseHz: this.noiseFilterBaseHz,
+        peakHz: this.noiseFilterPeakHz,
+        q: this.noiseFilterQ,
+      },
+      binauralScale: this.binauralScale,
+      phaseEnvelopeScale: this.phaseEnvelopeScale,
+      phaseEnvelopeFreqMultiplier: this.phaseEnvelopeFreqMultiplier,
+      cueToneScale: this.cueToneScale,
+      cueNoiseScale: this.cueNoiseScale,
+      cueReverbMix: this.cueReverbMix,
+      arcWindowSeconds: this.arcWindowSeconds,
+      arcRootDriftFactor: this.arcRootDriftFactor,
+      arcLfoSlowdownFactor: this.arcLfoSlowdownFactor,
+      arcOrbitSlowdownFactor: this.arcOrbitSlowdownFactor,
+    };
+  }
+
+  public getMeterValues(): MeterValues {
+    const reduction = (node: DynamicsCompressorNode | null): number => {
+      if (!node) return 0;
+      const r = (node as unknown as { reduction: number | AudioParam }).reduction;
+      return typeof r === 'number' ? r : (r?.value ?? 0);
+    };
+    return {
+      preCompressor: AudioService.computeLevels(this.preCompAnalyser),
+      postLimiter: AudioService.computeLevels(this.postLimitAnalyser),
+      compressorReductionDb: reduction(this.masterCompressor),
+      limiterReductionDb: reduction(this.masterLimiter),
+      layers: {
+        drone: AudioService.computeLevels(this.droneAnalyser),
+        subBass: AudioService.computeLevels(this.subBassAnalyser),
+        pinkNoise: AudioService.computeLevels(this.pinkNoiseAnalyser),
+        envelope: AudioService.computeLevels(this.envelopeAnalyser),
+      },
+    };
+  }
+
+  private static computeLevels(analyser: AnalyserNode | null): MeterReading {
+    if (!analyser) return { peakDb: -Infinity, rmsDb: -Infinity };
+    const buf = new Float32Array(analyser.fftSize);
+    analyser.getFloatTimeDomainData(buf);
+    let peak = 0;
+    let sumSq = 0;
+    for (let i = 0; i < buf.length; i++) {
+      const v = Math.abs(buf[i]);
+      if (v > peak) peak = v;
+      sumSq += buf[i] * buf[i];
+    }
+    const rms = Math.sqrt(sumSq / buf.length);
+    return {
+      peakDb: 20 * Math.log10(Math.max(peak, 1e-6)),
+      rmsDb: 20 * Math.log10(Math.max(rms, 1e-6)),
+    };
   }
 
   public getDebugState() {
