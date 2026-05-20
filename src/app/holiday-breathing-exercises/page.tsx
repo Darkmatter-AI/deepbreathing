@@ -298,6 +298,25 @@ const howToSchema = {
 const infoCardClass =
   "rounded-2xl border border-slate-700/50 bg-slate-800/50 p-5 backdrop-blur-sm";
 
+// Links "The physiological sigh" only in the FAQ answer that Ahrefs identified
+// (the one mentioning it can be disguised as a natural tired sigh).
+function renderFaqAnswer(answer: string) {
+  const TRIGGER = "The physiological sigh can be disguised";
+  if (!answer.includes(TRIGGER)) return answer;
+  const keyword = "The physiological sigh";
+  const href = "/breathe/physiological-sigh";
+  const idx = answer.indexOf(keyword);
+  return (
+    <>
+      {answer.slice(0, idx)}
+      <Link href={href} className="text-sky-400 hover:underline">
+        {keyword}
+      </Link>
+      {answer.slice(idx + keyword.length)}
+    </>
+  );
+}
+
 export default function HolidayBreathingExercisesPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900">
@@ -495,7 +514,7 @@ export default function HolidayBreathingExercisesPage() {
                   {faq.question}
                 </summary>
                 <p className="border-t border-slate-700/50 px-6 py-4 text-sm text-slate-300">
-                  {faq.answer}
+                  {renderFaqAnswer(faq.answer)}
                 </p>
               </details>
             ))}

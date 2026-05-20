@@ -69,6 +69,12 @@ export interface RelatedUseCasePage {
   teaser: string;
 }
 
+export interface RelatedGuide {
+  href: string;
+  title: string;
+  teaser: string;
+}
+
 export interface UseCaseVideoEmbed {
   youtubeId: string;
   title: string;
@@ -107,6 +113,7 @@ export interface UseCasePageContent {
   };
 
   relatedUseCases: RelatedUseCasePage[];
+  relatedGuides?: RelatedGuide[];
   faqs: UseCaseFaq[];
   /** Voice search optimization - question H2s with direct answers */
   voiceSearch?: VoiceSearchQA[];
@@ -271,6 +278,21 @@ export const useCasePages: UseCasePageContent[] = [
       {
         slug: "sleep",
         teaser: "If pre-speech anxiety keeps you up the night before, try our 4-7-8 guide for better sleep"
+      },
+      {
+        slug: "anxiety",
+        teaser: "Chronic performance anxiety? Box breathing trains your nervous system for sustained calm"
+      },
+      {
+        slug: "huberman",
+        teaser: "The exact breathing protocols Huberman uses before high-stakes situations and deep work."
+      }
+    ],
+    relatedGuides: [
+      {
+        href: "/box-breathing-before-presentation",
+        title: "Box Breathing Before a Presentation",
+        teaser: "A step-by-step protocol for using box breathing in the minutes before you present — eliminate stage fright before it starts"
       }
     ],
 
@@ -667,6 +689,17 @@ export const useCasePages: UseCasePageContent[] = [
       {
         slug: "kids",
         teaser: "Kids having trouble sleeping? Bedtime breathing routines for children"
+      },
+      {
+        slug: "huberman",
+        teaser: "Huberman's sleep-specific breathing stack for winding down and falling asleep faster."
+      }
+    ],
+    relatedGuides: [
+      {
+        href: "/4-7-8-breathing-for-insomnia",
+        title: "4-7-8 Breathing for Insomnia",
+        teaser: "A detailed guide on using 4-7-8 breathing to fall asleep faster, stay asleep, and break the cycle of chronic insomnia"
       }
     ],
 
@@ -720,29 +753,32 @@ export const useCasePages: UseCasePageContent[] = [
       twitterDescription: "Use physiological sigh breathing to stop side stitches and recover faster after hard running efforts.",
       author: "Abi Abiassi",
       datePublished: "2025-12-02",
-      dateModified: "2026-02-03"
+      dateModified: "2026-03-05"
     },
 
     keywords: [
-      "breathing for side stitches",
+      "breathing for running",
+      "how to breathe while running",
+      "breathing techniques for running",
+      "proper breathing for running",
+      "breathing pattern for running",
+      "breathing exercises for running",
       "running recovery breathing",
-      "physiological sigh running",
       "stop side stitch while running",
-      "breathing technique after sprints",
       "lower heart rate after running",
-      "Huberman breathing technique",
-      "double inhale breathing exercise"
+      "physiological sigh running"
     ],
 
     problem: {
       heading: "When Heavy Panting Doesn't Work",
       content: "After intense effort, your instinct is to gasp for air with rapid, shallow breaths. But this often makes things worse. You're not efficiently exchanging gases, and the frantic breathing pattern keeps your stress response elevated. During runs, side stitches (technically called exercise-related transient abdominal pain) can strike suddenly, caused by diaphragm spasm or strain from the bouncing of internal organs.",
       symptoms: [
-        "Heavy panting that doesn't seem to bring relief",
+        "Breathing high into the chest instead of low into the belly",
+        "Heavy panting that doesn't settle after a hard effort",
         "Heart rate staying elevated long after stopping",
         "Sharp, stabbing side stitch pain during running",
-        "Feeling like you can't get a satisfying breath",
-        "Dizziness or light-headedness after intense effort"
+        "Feeling out of rhythm with your stride or cadence",
+        "Feeling like you can't get a satisfying breath"
       ]
     },
 
@@ -764,12 +800,12 @@ export const useCasePages: UseCasePageContent[] = [
           explanation: "Stanford research found that the physiological sigh brings heart rate down faster than box breathing or meditation. The long exhale is key. It activates the vagus nerve and triggers the parasympathetic 'rest and digest' response."
         },
         {
-          mechanism: "Diaphragm Reset",
-          explanation: "Side stitches are often caused by diaphragm spasm or strain. The controlled, deep breaths of the physiological sigh help relax and reset the diaphragm, relieving the cramping."
+          mechanism: "Mouth vs nose breathing",
+          explanation: "Nasal breathing can work well at easy intensity, but hard efforts demand more airflow. Mouth breathing is not failure — it is a normal response to higher carbon dioxide production and oxygen demand."
         },
         {
-          mechanism: "CO₂ Balance",
-          explanation: "Rapid panting after exercise can blow off too much CO₂, causing dizziness. The controlled exhale of the physiological sigh normalizes CO₂ levels while still allowing efficient oxygen uptake."
+          mechanism: "Rapid reset after hard efforts",
+          explanation: "Stanford research found that the physiological sigh brings heart rate down faster than box breathing or meditation. The double inhale re-expands alveoli and the long exhale relaxes the diaphragm, which is why it works so well for side stitches and post-sprint recovery."
         }
       ]
     },
@@ -777,9 +813,9 @@ export const useCasePages: UseCasePageContent[] = [
     howTo: {
       steps: [
         {
-          name: "Recognize the moment",
-          instruction: "Use this technique immediately after a hard effort (sprint finish, hill climb) or when you feel a side stitch developing mid-run.",
-          timing: "Immediately when needed"
+          name: "Start low and relaxed",
+          instruction: "On easy runs, breathe low into your belly instead of lifting your chest and shoulders. Think about expanding your lower ribs and keeping your jaw loose.",
+          timing: "First 5-10 minutes"
         },
         {
           name: "Stop or slow down",
@@ -787,9 +823,9 @@ export const useCasePages: UseCasePageContent[] = [
           timing: "As needed"
         },
         {
-          name: "First inhale",
-          instruction: "Take a deep breath in through your nose, filling your lungs about 80-90%. Let your belly expand.",
-          timing: "~3 seconds"
+          name: "Open the mouth when pace rises",
+          instruction: "During intervals, hills, or race efforts, let mouth breathing happen naturally. The goal is enough airflow, not perfect nasal breathing under load.",
+          timing: "During hard efforts"
         },
         {
           name: "Second 'top-up' inhale",
@@ -797,18 +833,13 @@ export const useCasePages: UseCasePageContent[] = [
           timing: "~1-2 seconds"
         },
         {
-          name: "Long exhale",
-          instruction: "Exhale slowly and completely through your mouth. Make it longer than both inhales combined. Feel your belly fall.",
-          timing: "~6-8 seconds"
-        },
-        {
-          name: "Repeat as needed",
-          instruction: "For acute relief (side stitch), 2-3 sighs may be enough. For post-run recovery, continue for 1-2 minutes until your breathing normalizes.",
-          timing: "2-3 cycles or 1-2 minutes"
+          name: "Recover with 60-120 seconds of guided breathing",
+          instruction: "After a hard effort, keep walking and use 3-5 physiological sighs or a minute of slow guided breathing until your heart rate and breathing settle.",
+          timing: "1-2 minutes post-effort"
         }
       ],
       tips: [
-        "Practice during easy runs so the technique is automatic when you need it",
+        "Practice low belly breathing during warm-ups so it feels automatic later",
         "For side stitches, try pressing on the painful spot while exhaling",
         "Standing upright or with a slight forward lean helps. Don't hunch over",
         "The exhale is the most important part. Make it slow and complete"
@@ -861,23 +892,27 @@ export const useCasePages: UseCasePageContent[] = [
       {
         slug: "sleep",
         teaser: "Better sleep aids recovery. Try 4-7-8 breathing before bed after training days"
+      },
+      {
+        slug: "lung-capacity",
+        teaser: "Increase your lung capacity for longer, stronger runs."
       }
     ],
     voiceSearch: [
       {
-        question: "How do you stop a side stitch while running?",
-        answer: "To stop a side stitch while running, slow down and do 1-3 physiological sighs: two quick nasal inhales followed by a long, slow exhale. The double inhale reinflates the lungs and the long exhale relaxes the diaphragm. Most runners feel relief within 30-60 seconds."
+        question: "How do you breathe while running?",
+        answer: "Breathe low into your belly, match your breath to your stride, and let mouth breathing happen naturally as pace rises. Use a 3:3 or 2:2 rhythm during steady running, then switch to a physiological sigh if a side stitch or post-sprint breathlessness hits."
       }
     ],
 
     faqs: [
       {
-        question: "Can I do this while still running?",
-        answer: "Yes, for side stitches. Slow to an easy jog or walk, then do 2-3 physiological sighs. Many runners find the stitch releases within 30-60 seconds. For post-sprint recovery, it's better to stop completely for the full benefit."
+        question: "What is the best breathing technique for running?",
+        answer: "The best breathing technique for running depends on pace. For easy runs, low diaphragmatic breathing with a relaxed stride rhythm works best. For hard efforts, mouth breathing is normal. For side stitches or post-run recovery, the physiological sigh is the fastest reset because it quickly settles the diaphragm and heart rate."
       },
       {
-        question: "Why is standing upright better than bending over?",
-        answer: "Bending over with hands on knees compresses your diaphragm and lungs, making it harder to take deep breaths. Standing upright or with a slight forward lean (hands on hips) opens your chest and allows for fuller breaths and better recovery."
+        question: "How do you stop a side stitch while running?",
+        answer: "To stop a side stitch while running, slow down and do 1-3 physiological sighs: two quick nasal inhales followed by a long, slow exhale. The double inhale reinflates the lungs and the long exhale relaxes the diaphragm. Most runners feel relief within 30-60 seconds."
       },
       {
         question: "How is this different from just taking deep breaths?",
@@ -888,8 +923,8 @@ export const useCasePages: UseCasePageContent[] = [
         answer: "During easy running, nasal breathing is ideal when possible: it filters air, produces nitric oxide, and promotes diaphragmatic breathing. During hard efforts, mouth breathing is natural and necessary. For the physiological sigh specifically, inhale through your nose and exhale through your mouth."
       },
       {
-        question: "Why do I get side stitches in the first place?",
-        answer: "The exact cause isn't fully understood, but the leading theories involve diaphragm spasm from the jarring of running, strain on ligaments connecting the diaphragm to internal organs, and reduced blood flow to the diaphragm during exercise. Warming up properly, avoiding large meals before running, and strengthening your core can all help prevent them."
+        question: "Can I train my breathing for running?",
+        answer: "Yes. Practice low belly breathing during warm-ups, use stride-linked breathing on easy runs, and do short guided recovery breathing after hard sessions. Over time your breathing becomes quieter, more efficient, and easier to control when fatigue hits."
       }
     ]
   },
@@ -905,8 +940,8 @@ export const useCasePages: UseCasePageContent[] = [
     },
 
     meta: {
-      title: "Stop Anxiety in 60 Seconds: Box Breathing Technique (Navy SEAL Method)",
-      description: "Chest tightness. Racing thoughts. Constant worry. Stop anxiety in 60 seconds with the Navy SEAL box breathing technique. Used by thousands daily. Free guided visualizer.",
+      title: "Stop Anxiety in 60s: Navy SEAL Box Breathing (Free)",
+      description: "Chest tightness. Racing thoughts. Stop anxiety in 60 seconds with Navy SEAL box breathing. Used by thousands daily. Free guided visualizer.",
       ogTitle: "Stop Anxiety in 60 Seconds - Navy SEAL Box Breathing",
       ogDescription: "The breathing technique Navy SEALs use for anxiety. Stop racing thoughts and chest tightness in 60 seconds. Free visualizer.",
       twitterTitle: "Stop Anxiety in 60 Seconds - Box Breathing Technique",
@@ -1081,6 +1116,17 @@ export const useCasePages: UseCasePageContent[] = [
       {
         slug: "kids",
         teaser: "Teaching kids to manage anxiety? Simple breathing exercises they can use anywhere"
+      },
+      {
+        slug: "huberman",
+        teaser: "Dr. Huberman's recommended protocols for anxiety, from physiological sigh to cyclic sighing."
+      }
+    ],
+    relatedGuides: [
+      {
+        href: "/breathing-exercises-before-surgery",
+        title: "Breathing Exercises Before Surgery",
+        teaser: "How to use breathing techniques to reduce pre-surgical anxiety, lower cortisol, and support a faster recovery"
       }
     ],
 
@@ -1129,8 +1175,8 @@ export const useCasePages: UseCasePageContent[] = [
     },
 
     meta: {
-      title: "Stop a Panic Attack in 30 Seconds: Physiological Sigh Technique",
-      description: "Heart racing. Can't breathe. Feel like you're dying. Stop a panic attack in 30 seconds with the physiological sigh. Stanford-tested for acute panic. Free timer.",
+      title: "Stop a Panic Attack in 30 Seconds: Physiological Sigh",
+      description: "Heart racing. Feel like you're dying. Stop a panic attack in 30 seconds with the physiological sigh. Stanford-tested. Free timer.",
       ogTitle: "Stop a Panic Attack in 30 Seconds - Physiological Sigh",
       ogDescription: "Stanford-tested breathing technique stops panic attacks in 30 seconds. Used for acute hyperventilation and overwhelming fear. Free timer.",
       twitterTitle: "Stop Panic Attack in 30 Seconds - Physiological Sigh",
@@ -1292,6 +1338,13 @@ export const useCasePages: UseCasePageContent[] = [
       {
         slug: "holiday-stress",
         teaser: "Holiday gatherings triggering panic? This same technique works discreetly at the table"
+      }
+    ],
+    relatedGuides: [
+      {
+        href: "/physiological-sigh-panic-attack",
+        title: "Physiological Sigh for Panic Attacks",
+        teaser: "A Stanford-backed emergency protocol for stopping a panic attack in 30 seconds using the double-inhale exhale technique"
       }
     ],
 
@@ -1501,6 +1554,10 @@ export const useCasePages: UseCasePageContent[] = [
       {
         slug: "anxiety",
         teaser: "Anxiety ruining your concentration? Try box breathing for acute stress relief"
+      },
+      {
+        slug: "huberman",
+        teaser: "The exact breathing protocols Huberman uses before deep work and sustained focus sessions."
       }
     ],
 
@@ -1758,8 +1815,8 @@ export const useCasePages: UseCasePageContent[] = [
     },
 
     meta: {
-      title: "Faster Athletic Recovery: Physiological Sigh Between Sets (Stanford Study)",
-      description: "Heart rate won't drop? Can't catch your breath between sets? The physiological sigh brings your HR down 2x faster than panting. Used by elite athletes. Free timer + Stanford research.",
+      title: "Faster Athletic Recovery: Physiological Sigh (Stanford)",
+      description: "Heart rate won't drop between sets? The physiological sigh brings your HR down 2x faster than panting. Used by elite athletes. Free timer.",
       ogTitle: "Faster Athletic Recovery: Physiological Sigh Between Sets",
       ogDescription: "The Stanford-tested breathing technique that brings your heart rate down 2x faster between sets. Used by elite athletes.",
       twitterTitle: "Faster Athletic Recovery: Physiological Sigh for Athletes",
@@ -1927,6 +1984,14 @@ export const useCasePages: UseCasePageContent[] = [
       {
         slug: "pranayama",
         teaser: "Buteyko nasal breathing improves breath efficiency during training"
+      },
+      {
+        slug: "huberman",
+        teaser: "Huberman's recovery and performance breathing protocols for athletes."
+      },
+      {
+        slug: "lung-capacity",
+        teaser: "Build breathing power with targeted lung capacity exercises."
       }
     ],
 
@@ -1971,8 +2036,8 @@ export const useCasePages: UseCasePageContent[] = [
     },
 
     meta: {
-      title: "Breathing Exercises During Pregnancy: Safe 4-7-8 Technique for Anxiety & Labor",
-      description: "Pregnancy anxiety? Can't take medication? The modified 4-7-8 breathing technique is safe for pregnancy, used in childbirth education, and calms anxiety naturally. Free guided timer + OB-approved research.",
+      title: "Safe Breathing for Pregnancy Anxiety & Labor (Free Timer)",
+      description: "Pregnancy anxiety? The modified 4-7-8 breathing technique is safe for pregnancy, used in childbirth education, and calms anxiety naturally. Free timer.",
       ogTitle: "Safe Breathing for Pregnancy Anxiety & Labor",
       ogDescription: "Modified 4-7-8 breathing: pregnancy-safe, used in childbirth education, and calms anxiety naturally.",
       twitterTitle: "Safe Breathing for Pregnancy Anxiety & Labor Prep",
@@ -2138,6 +2203,13 @@ export const useCasePages: UseCasePageContent[] = [
       {
         slug: "sleep",
         teaser: "Pregnancy insomnia? The 4-7-8 technique helps you fall asleep faster when your mind is racing"
+      }
+    ],
+    relatedGuides: [
+      {
+        href: "/breathing-exercises-for-labor",
+        title: "Breathing Exercises for Labor",
+        teaser: "A comprehensive guide to breathing techniques for every stage of labor — from early contractions to active pushing"
       }
     ],
 
@@ -2969,6 +3041,10 @@ const stressPage: UseCasePageContent = {
     {
       slug: "kids",
       teaser: "Teaching kids to manage stress? Simple breathing games they can use at school or home"
+    },
+    {
+      slug: "huberman",
+      teaser: "All 6 Huberman Lab breathing protocols matched to your stress type."
     }
   ],
   voiceSearch: [
@@ -3019,21 +3095,21 @@ const kidsPage: UseCasePageContent = {
   breathingPageSlug: "box",
 
   hero: {
-    title: "Breathing Exercises for Kids",
+    title: "Deep Breathing Exercises for Kids",
     subtitle: "Simple calming techniques children can use anywhere",
     intro: "Children experience stress and big emotions just like adults, but they often lack the tools to manage them. These kid-friendly breathing exercises are designed to be fun, easy to remember, and effective. Whether your child struggles with anxiety, anger, or just needs help winding down, these techniques can help them find calm in minutes."
   },
 
   meta: {
-    title: "Breathing Exercises for Kids: Calm Down Techniques That Actually Work",
-    description: "Simple breathing exercises for kids that stop tantrums, ease anxiety, and help children fall asleep. Parent-tested techniques with free visualizer. Ages 4+.",
-    ogTitle: "Breathing Exercises for Kids: Calm Down Techniques",
+    title: "Deep Breathing Exercises for Kids: Calm Techniques",
+    description: "Simple breathing exercises for kids that stop tantrums, ease anxiety, and help children fall asleep. Parent-tested with free visualizer. Ages 4+.",
+    ogTitle: "Deep Breathing Exercises for Kids: Calm Techniques",
     ogDescription: "Simple breathing exercises kids can use anywhere. Stop tantrums, ease anxiety, improve sleep. Free visualizer.",
-    twitterTitle: "Breathing Exercises for Kids: Calm Down Techniques",
+    twitterTitle: "Deep Breathing Exercises for Kids: Calm Techniques",
     twitterDescription: "Simple breathing techniques kids love. Stop tantrums and ease anxiety in minutes.",
     author: "Abi Abiassi",
     datePublished: "2026-01-20",
-    dateModified: "2026-01-20"
+    dateModified: "2026-02-25"
   },
 
   keywords: [
@@ -3222,7 +3298,7 @@ const pranayamaPage: UseCasePageContent = {
   },
 
   meta: {
-    title: "Pranayama Breathing: Complete Guide to Yogic Breathing Techniques (2026)",
+    title: "Pranayama: Complete Guide to Yogic Breathing (2026)",
     description: "Learn pranayama breathing techniques: Nadi Shodhana, Ujjayi, Kapalabhati, and more. Ancient yogic practices with modern science. Free visualizers included.",
     ogTitle: "Pranayama Breathing: Complete Guide to Yogic Breathing",
     ogDescription: "Learn pranayama: the yogic science of breath control. Nadi Shodhana, Ujjayi, and more. Free visualizers.",
@@ -3423,7 +3499,7 @@ const singingPage: UseCasePageContent = {
     intro: "Every vocal coach says the same thing: 'Support your breath.' But what does that actually mean? Breath support for singing starts with your diaphragm, the dome-shaped muscle beneath your lungs that controls airflow. Singers who breathe from their chest run out of air mid-phrase, strain their vocal cords, and lose control of pitch and dynamics. Diaphragmatic breathing gives you the steady, controlled airstream that makes the difference between struggling through a song and owning every note.",
   },
   meta: {
-    title: "Breathing Exercises for Singing: Build Vocal Breath Support (Free Timer)",
+    title: "Breathing for Singing: Build Vocal Breath Support (Free)",
     description: "Breathing exercises for singing that build diaphragmatic breath support and vocal stamina. Free guided timer to train the foundation of great singing.",
     ogTitle: "Breathing Exercises for Singing: Build Vocal Breath Support",
     ogDescription: "Train the diaphragmatic breathing that powers every great voice. Free guided timer for singers at all levels.",
@@ -3556,6 +3632,7 @@ const singingPage: UseCasePageContent = {
     { slug: "public-speaking", teaser: "Breath support for projecting your voice with confidence" },
     { slug: "athletes", teaser: "Build respiratory endurance for performance" },
     { slug: "focus", teaser: "Use breathwork to sharpen concentration before performing" },
+    { slug: "lung-capacity", teaser: "Expand your breath support with lung capacity training." },
   ],
   faqs: [
     {
@@ -3601,7 +3678,7 @@ const lungCapacityPage: UseCasePageContent = {
     intro: "Your lungs can hold about 6 liters of air, but most people use only a fraction of that capacity. Shallow chest breathing, sedentary habits, poor posture, and aging all shrink your functional lung capacity over time. The good news: breathing exercises can reverse this decline. Diaphragmatic breathing strengthens your primary breathing muscle, increases the volume of air you move with each breath, and improves the efficiency of gas exchange in your lungs.",
   },
   meta: {
-    title: "Lung Capacity Exercises: Increase Your Breathing Power (Free Timer)",
+    title: "Lung Capacity Exercises: Increase Breathing Power (Free)",
     description: "Build lung capacity with proven breathing exercises. Strengthen your diaphragm, increase tidal volume, and improve respiratory health. Free guided timer.",
     ogTitle: "Lung Capacity Exercises: Increase Your Breathing Power",
     ogDescription: "Proven breathing exercises to increase lung capacity and strengthen your diaphragm. Free guided timer: start building respiratory power today.",

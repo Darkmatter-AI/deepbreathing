@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "2 Minute Breathing Exercise: Quick Reset",
     description:
-      "A free 2 minute breathing exercise for stress relief. Box breathing or coherent breathing. No download needed.",
+      "Follow a free 2 minute breathing exercise online with box breathing or coherent breathing. Start now in your browser.",
     url: canonicalUrl,
     type: "website",
     images: [
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "2 Minute Breathing Exercise: Quick Reset",
     description:
-      "A free 2 minute breathing exercise for stress relief. Box breathing or coherent breathing.",
+      "Free guided 2 minute breathing exercise for stress relief and focus. Start online in seconds.",
     images: [ogImageUrl]
   }
 };
@@ -151,9 +151,9 @@ export default function TwoMinuteBreathingExercisePage() {
       <div className="mt-8 glow-card rounded-[32px] border border-border bg-card p-6">
         <h2 className="text-2xl font-semibold text-card-foreground">Quick answer</h2>
         <p className="mt-3 text-sm text-muted-foreground">
-          A 2 minute breathing exercise is a fast reset: do 8 cycles of 4-4-4-4 (box breathing) or 10-12 slow breaths at 5 seconds
-          in and 5 seconds out (coherent breathing). Two minutes is enough to slow your breath, calm the nervous system, and
-          improve focus.
+          A guided 2 minute breathing exercise gives you a fast reset: do 8 cycles of 4-4-4-4 (box breathing) or 10-12 slow
+          breaths at 5 seconds in and 5 seconds out (coherent breathing). Two minutes is enough to slow your breath, calm the
+          nervous system, and improve focus.
         </p>
       </div>
 

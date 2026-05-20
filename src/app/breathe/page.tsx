@@ -10,9 +10,9 @@ const canonicalUrl = `${siteUrl}/breathe`;
 const ogImageUrl = createOgImagePath("Breathing Techniques (Free Guided Visualizers)");
 
 export const metadata: Metadata = {
-  title: "Breathing Techniques: Box, 4-7-8, Coherent, Physiological Sigh, Wim Hof",
+  title: "Breathing Techniques: Box, 4-7-8, Coherent, Sigh, Wim Hof",
   description:
-    "Free guided breathing visualizers for the most effective techniques. Box breathing, 4-7-8, coherent, physiological sigh, and Wim Hof method. Pick a pattern, press start, and follow along—no signup required.",
+    "Free guided breathing visualizers: box breathing, 4-7-8, coherent breathing, physiological sigh, and Wim Hof. Pick a technique and start—no signup.",
   alternates: {
     canonical: canonicalUrl
   },

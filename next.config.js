@@ -15,6 +15,15 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // Strip ?duration= query parameter from /breathe/* pages to prevent
+      // duplicate content issues with search engines (e.g. Ahrefs crawling
+      // /breathe/coherent?duration=30, /breathe/box?duration=60, etc.)
+      {
+        source: '/breathe/:slug',
+        has: [{ type: 'query', key: 'duration' }],
+        destination: '/breathe/:slug',
+        permanent: true,
+      },
       // Content redirects
       {
         source: '/about/methodology',

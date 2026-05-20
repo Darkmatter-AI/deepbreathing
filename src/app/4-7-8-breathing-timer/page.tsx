@@ -12,7 +12,7 @@ const canonicalUrl = `${siteUrl}/4-7-8-breathing-timer`;
 const ogImageUrl = createOgImagePath("Free Online 4-7-8 Breathing Timer");
 
 export const metadata: Metadata = {
-  title: "4-7-8 Breathing Timer (Free Online) - Dr. Weil Sleep Technique",
+  title: "4-7-8 Breathing Timer (Free Online) — Dr. Weil",
   description:
     "Use a free 4-7-8 breathing timer online. Follow Dr. Andrew Weil's 4-7-8 pattern for sleep and anxiety relief. No app, no signup.",
   alternates: {
@@ -87,6 +87,12 @@ export default function FourSevenEightBreathingTimerMoneyPage() {
       price: "0",
       priceCurrency: "USD"
     }
+  };
+
+  const siteOrganization = {
+    "@type": "Organization",
+    name: "Deep Breathing Exercises",
+    url: siteUrl
   };
 
   const articleSchema = {

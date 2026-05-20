@@ -108,7 +108,7 @@ export default function BreathingAppPage() {
             <li>Box breathing (4-4-4-4) for stress + focus</li>
             <li>4-7-8 breathing for sleep + relaxation</li>
             <li>Coherent breathing (~5–6 breaths/min) for HRV training</li>
-            <li>Physiological sigh for rapid stress relief</li>
+            <li><Link href="/breathe/physiological-sigh" className="text-primary hover:underline">Physiological sigh</Link> for rapid stress relief</li>
           </ul>
           <div className="mt-5">
             <Link href="/for" className="text-sm font-semibold text-primary hover:underline">
@@ -151,6 +151,27 @@ export default function BreathingAppPage() {
           </Link>
           <Link href="/coherent-breathing-app" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">
             Coherent (HRV) breathing
+          </Link>
+          <Link href="/2-minute-breathing-exercise" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">
+            2 minute breathing exercise
+          </Link>
+        </div>
+      </section>
+
+      <section className="mt-12 glow-card rounded-[32px] border border-border bg-card p-6">
+        <h2 className="text-2xl font-semibold text-card-foreground">Explore by goal</h2>
+        <p className="mt-2 text-sm text-muted-foreground">
+          Use a quick reset, a running-specific recovery guide, or an advanced technique when you want a different kind of session.
+        </p>
+        <div className="mt-5 flex flex-wrap gap-3">
+          <Link href="/2-minute-breathing-exercise" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">
+            Fast 2 minute reset
+          </Link>
+          <Link href="/for/running" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">
+            Breathing for running
+          </Link>
+          <Link href="/breathe/tummo" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">
+            Tummo breathing
           </Link>
         </div>
       </section>

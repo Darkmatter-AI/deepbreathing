@@ -76,8 +76,10 @@ export default function AboutPage() {
         <div className="glow-card rounded-[32px] border border-border bg-card p-6">
           <h2 className="text-2xl font-semibold text-card-foreground">What this is</h2>
           <p className="mt-3">
-            This site provides simple, guided breathing sessions (box breathing, 4-7-8, coherent breathing for HRV, and
-            the physiological sigh) plus short guides explaining when to use each technique.
+            This site provides simple, guided breathing sessions (box breathing, 4-7-8, coherent breathing for HRV, and{" "}
+            <Link href="/breathe/physiological-sigh" className="text-primary hover:underline">
+              the physiological sigh
+            </Link>) plus short guides explaining when to use each technique.
           </p>
         </div>
 

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import React from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { notFound } from "next/navigation";
@@ -32,6 +33,44 @@ const Resonance = dynamic(
 );
 
 const baseUrl = "https://deepbreathingexercises.com";
+
+// Internal link opportunities identified by Ahrefs — one link per keyword per page.
+// linkifyOnce finds the FIRST occurrence of a keyword in a string and wraps it in a Link.
+// Subsequent occurrences remain as plain text (tracked via the `linked` Set).
+const internalLinkMappings: Record<string, Array<{ keyword: string; href: string }>> = {
+  "public-speaking": [{ keyword: "physiological sigh", href: "/breathe/physiological-sigh" }],
+  "anxiety": [{ keyword: "the physiological sigh", href: "/breathe/physiological-sigh" }],
+  "travel-anxiety": [{ keyword: "the physiological sigh", href: "/breathe/physiological-sigh" }],
+  "lung-capacity": [{ keyword: "pursed-lip breathing", href: "/breathe/pursed-lip" }],
+};
+
+function linkifyOnce(
+  text: string,
+  mappings: Array<{ keyword: string; href: string }>,
+  linked: Set<string>
+): React.ReactNode {
+  for (const { keyword, href } of mappings) {
+    if (linked.has(keyword)) continue;
+    const lowerText = text.toLowerCase();
+    const lowerKeyword = keyword.toLowerCase();
+    const idx = lowerText.indexOf(lowerKeyword);
+    if (idx === -1) continue;
+    linked.add(keyword);
+    const before = text.slice(0, idx);
+    const match = text.slice(idx, idx + keyword.length);
+    const after = text.slice(idx + keyword.length);
+    return (
+      <>
+        {before}
+        <Link href={href} className="text-primary hover:underline">
+          {match}
+        </Link>
+        {after}
+      </>
+    );
+  }
+  return text;
+}
 
 export function createUseCaseMetadata(slug: string): Metadata {
   const page = useCasePageMap[slug];
@@ -95,6 +134,23 @@ export function UseCasePage({ slug }: { slug: string }) {
     subtitle: page.hero.subtitle,
     color: pattern?.color,
   });
+
+  // Internal link opportunity tracking — ensures each keyword is only linked once per page
+  const pageLinkMappings = internalLinkMappings[slug] ?? [];
+  const linkedKeywords = new Set<string>();
+  const linkify = (text: string) => linkifyOnce(text, pageLinkMappings, linkedKeywords);
+
+  const ogImagePath = createOgImagePath(page.meta.ogTitle || page.meta.title, {
+    subtitle: page.hero.subtitle,
+    color: pattern?.color,
+  });
+  const ogImageUrl = new URL(ogImagePath, baseUrl).toString();
+
+  const siteOrganization = {
+    "@type": "Organization",
+    name: "Deep Breathing Exercises",
+    url: baseUrl
+  };
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -411,7 +467,7 @@ export function UseCasePage({ slug }: { slug: string }) {
                 {page.howTo.tips.map((tip) => (
                   <li key={tip} className="flex items-start gap-2 text-sm text-card-foreground">
                     <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
-                    {tip}
+                    {linkify(tip)}
                   </li>
                 ))}
               </ul>
@@ -532,6 +588,35 @@ export function UseCasePage({ slug }: { slug: string }) {
                   </Link>
                 );
               })}
+            </div>
+          </section>
+        )}
+
+        {/* In-depth guides for specific situations */}
+        {page.relatedGuides && page.relatedGuides.length > 0 && (
+          <section className="space-y-4">
+            <p className="text-sm uppercase tracking-widest text-primary">In-Depth Guides</p>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {page.relatedGuides.map((guide) => (
+                <Link
+                  key={guide.href}
+                  href={guide.href}
+                  className="group rounded-[28px] border p-5 transition hover:border-primary"
+                  style={{
+                    borderColor: `${pattern.color}40`,
+                    backgroundColor: isHolidayPage ? WINTER_CARD : undefined
+                  }}
+                >
+                  <p className="text-lg font-semibold text-card-foreground">{guide.title}</p>
+                  <p className="mt-1 text-sm text-muted-foreground">{guide.teaser}</p>
+                  <span
+                    className="mt-3 inline-flex items-center text-sm font-semibold text-primary"
+                    style={{ color: pattern.color }}
+                  >
+                    Read guide →
+                  </span>
+                </Link>
+              ))}
             </div>
           </section>
         )}

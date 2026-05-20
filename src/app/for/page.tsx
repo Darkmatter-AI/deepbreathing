@@ -10,7 +10,7 @@ const canonicalUrl = `${siteUrl}/for`;
 const ogImageUrl = createOgImagePath("Breathing Guides by Goal");
 
 export const metadata: Metadata = {
-  title: "Breathing Guides by Goal: Sleep, Anxiety, Panic, Focus & Performance",
+  title: "Breathing Guides by Goal: Sleep, Anxiety & Focus",
   description:
     "Science-based breathing guides for common situations—paired with free interactive visualizers. Pick a goal and start practicing.",
   alternates: {

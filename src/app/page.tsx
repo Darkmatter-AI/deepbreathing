@@ -99,7 +99,7 @@ export default function HomePage() {
         label="Free Breathing Visualizer"
         title="Deep Breathing Exercises"
         subtitle="Visual pacing that helps your body downshift. Calm on demand, anytime, anywhere."
-        headingLevel={2}
+        headingLevel={1}
       />
       <HomeHeroActions />
     </div>
@@ -107,7 +107,6 @@ export default function HomePage() {
 
   return (
     <main className="bg-transparent pb-20">
-      <h1 className="sr-only">Deep Breathing Exercises</h1>
       <JsonLd data={[websiteSchema, faqSchema]} />
 
       <section className="relative isolate z-20 w-full text-foreground min-h-screen">
@@ -305,13 +304,35 @@ export default function HomePage() {
             ))}
           </div>
         </section>
+
+        <section className="glow-card rounded-[40px] border border-border bg-card p-8">
+          <h2 className="text-2xl font-semibold text-card-foreground">Where to go next</h2>
+          <p className="mt-3 max-w-2xl text-sm text-muted-foreground">
+            Start with the page that matches your situation: a quick reset, an app-style timer, a running recovery guide, or an
+            advanced meditation technique.
+          </p>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <Link href="/box-breathing-app" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">
+              Box breathing app
+            </Link>
+            <Link href="/2-minute-breathing-exercise" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">
+              2 minute reset
+            </Link>
+            <Link href="/for/running" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">
+              Breathing for running
+            </Link>
+            <Link href="/breathe/tummo" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">
+              Tummo breathing
+            </Link>
+          </div>
+        </section>
       </div>
       <footer className="relative z-10 mx-auto w-full max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
         <p className="mb-8 text-center text-xs text-muted-foreground">
           Stop if dizzy, tingly, or chest-tight. Resume later with shorter, easier breaths. Skip prolonged holds during pregnancy or if advised by your clinician.
         </p>
 
-        <div className="mb-8 grid gap-8 text-left sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mb-8 grid gap-8 text-left sm:grid-cols-2 lg:grid-cols-5">
           <div>
             <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-foreground">Techniques</p>
             <ul className="space-y-2 text-xs text-muted-foreground">
@@ -425,6 +446,37 @@ export default function HomePage() {
               <li>
                 <Link href="/privacy" className="underline underline-offset-2 transition-colors hover:text-foreground">
                   Privacy
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-foreground">Situations</p>
+            <ul className="space-y-2 text-xs text-muted-foreground">
+              <li>
+                <Link href="/breathing-exercises-before-surgery" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                  Before Surgery
+                </Link>
+              </li>
+              <li>
+                <Link href="/physiological-sigh-panic-attack" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                  Panic Attack
+                </Link>
+              </li>
+              <li>
+                <Link href="/breathing-exercises-for-labor" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                  Labor &amp; Birth
+                </Link>
+              </li>
+              <li>
+                <Link href="/4-7-8-breathing-for-insomnia" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                  Insomnia
+                </Link>
+              </li>
+              <li>
+                <Link href="/box-breathing-before-presentation" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                  Before a Presentation
                 </Link>
               </li>
             </ul>

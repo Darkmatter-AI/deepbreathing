@@ -1191,7 +1191,11 @@ The synonyms are not being indexed or ranked. May need more prominent placement 
 
 **Measure After:** 2026-02-20 (2 weeks)
 
-**Status:** Implemented ✅
+**Measured:** 2026-03-05
+
+**Result:** ⚪ **Inconclusive** - Cannibalization signal remains noisy. `/for/huberman` stayed essentially flat at 55 impressions, 0 clicks, position 8.1. `/breathe/physiological-sigh` improved from position 13.9 to 11.5 and impressions from 634 to 951, but clicks fell from 1 to 0. Query mix still contains research-style and low-intent physiological-sigh queries.
+
+**Status:** Inconclusive
 
 ---
 
@@ -1218,7 +1222,11 @@ The synonyms are not being indexed or ranked. May need more prominent placement 
 
 **Measure After:** 2026-02-20 (2 weeks)
 
-**Status:** Implemented ✅
+**Measured:** 2026-03-05
+
+**Result:** ⚪ **Inconclusive** - The redirect is working as intended, but the disavow portion is not measurable from current GSC data. URL inspection shows `/app` as a "Page with redirect" with canonical `https://deepbreathingexercises.com/breathing-app`, and `/breathing-app` is submitted and indexed.
+
+**Status:** Inconclusive
 
 ---
 
@@ -1468,6 +1476,19 @@ The synonyms are not being indexed or ranked. May need more prominent placement 
 ---
 
 ## Completed Experiments
+
+## Recent Follow-Up Log
+
+| Experiment | Launched | Follow-up due | Measured | Outcome |
+|------------|----------|---------------|----------|---------|
+| Checkpoint Follow-Up (Internal Links + Metadata Alignment) | 2026-02-17 | 2026-03-03 | 2026-03-05 | Success ✅ |
+| Huberman / Physiological Sigh Cannibalization Fix | 2026-02-06 | 2026-02-20 | 2026-03-05 | Inconclusive |
+| Disavow Spam Backlinks + Fix /app/ Route | 2026-02-06 | 2026-02-20 | 2026-03-05 | Inconclusive |
+| Breathing Visualizer Landing Page (NEW) | 2026-02-06 | 2026-02-20 | 2026-03-05 | Success ✅ |
+| Tummo Breathing Page (NEW) | 2026-02-06 | 2026-02-20 | 2026-03-05 | Inconclusive |
+| Breath of Fire Page (NEW) | 2026-02-06 | 2026-02-20 | 2026-03-05 | Inconclusive |
+| Breathing Exercises for Singing Page (NEW) | 2026-02-06 | 2026-02-20 | 2026-03-05 | Inconclusive |
+| Lung Capacity Exercises Page (NEW) | 2026-02-06 | 2026-02-20 | 2026-03-05 | Inconclusive |
 
 (Move experiments here after measuring results)
 
