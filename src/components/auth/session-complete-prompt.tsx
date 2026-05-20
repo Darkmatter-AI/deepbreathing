@@ -1,7 +1,11 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { SignInSheet } from "./sign-in-sheet";
+import {
+  createRuntimePhraseResolver,
+  detectRuntimeLocale,
+} from "@/components/resonance/runtime-phrases";
 
 interface SessionCompletePromptProps {
   open: boolean;
@@ -20,11 +24,18 @@ export function SessionCompletePrompt({
   totalMinutes,
   sessionSeconds,
 }: SessionCompletePromptProps) {
+  const [locale, setLocale] = useState("en");
+
+  useEffect(() => {
+    setLocale(detectRuntimeLocale());
+  }, [open]);
+
+  const phrases = useMemo(() => createRuntimePhraseResolver(locale), [locale]);
   const sessionMinutes = Math.floor(sessionSeconds / 60);
   const headline =
     sessionMinutes >= 5
-      ? `${sessionMinutes} minutes of calm`
-      : "Nice session";
+      ? phrases.resolve("auth.minutes_of_calm", { n: sessionMinutes }).text
+      : phrases.resolve("auth.nice_session").text;
 
   return (
     <SignInSheet
@@ -35,7 +46,7 @@ export function SessionCompletePrompt({
       }}
       onSuccess={onSuccess}
       headline={headline}
-      subtitle="Save your progress and sync across devices."
+      subtitle={phrases.resolve("auth.save_and_sync").text}
       totalMinutes={totalMinutes}
     />
   );

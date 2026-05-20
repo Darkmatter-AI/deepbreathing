@@ -71,19 +71,7 @@ function parseAndClampDuration(value: string | null): number | undefined {
   return Math.min(parsed, MAX_DURATION);
 }
 
-function durationLabel(seconds: number): string {
-  return seconds < 60 ? `${seconds}s` : `${seconds / 60} min`;
-}
-
 type ThemePreference = 'system' | 'light' | 'dark';
-
-const DURATION_OPTIONS: Array<{ label: string; value: number | null }> = [
-  { label: 'Open', value: null },
-  ...VALID_DURATIONS.map((duration) => ({
-    label: durationLabel(duration),
-    value: duration
-  }))
-];
 
 const toRgba = (hex: string, alpha: number) => {
   const sanitized = hex.replace('#', '');
@@ -290,6 +278,20 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     lastSafeRuntimeTextRef.current[key] = resolved.text;
     return resolved.text;
   }, [resolvePhrase, runtimePhrases]);
+
+  const durationOptions = useMemo(() => {
+    const labelFor = (seconds: number) =>
+      seconds < 60
+        ? getSafePhrase('ui.duration_sec', { n: seconds })
+        : getSafePhrase('ui.duration_min', { n: seconds / 60 });
+    return [
+      { label: getSafePhrase('ui.open'), value: null as number | null },
+      ...VALID_DURATIONS.map((duration) => ({
+        label: labelFor(duration),
+        value: duration
+      }))
+    ];
+  }, [getSafePhrase]);
 
   const setInstructionKey = useCallback((key: RuntimePhraseKey, vars?: Record<string, string | number>) => {
     setInstruction(getSafePhrase(key, vars));
@@ -1047,11 +1049,13 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     return getSafePhrase('phase.ready');
   };
 
-  const durationSummary = selectedDuration === null
-    ? 'Open'
-    : selectedDuration % 60 === 0
-      ? `${selectedDuration / 60} min`
-      : `${selectedDuration}s`;
+  const durationSummary = useMemo(() => {
+    if (selectedDuration === null) return getSafePhrase('ui.open');
+    if (selectedDuration % 60 === 0) {
+      return getSafePhrase('ui.duration_min', { n: selectedDuration / 60 });
+    }
+    return getSafePhrase('ui.duration_sec', { n: selectedDuration });
+  }, [selectedDuration, getSafePhrase]);
 
   // --- Helper for Stats ---
   const renderStats = () => {
@@ -1198,7 +1202,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                       className="flex w-full items-center gap-2 rounded-xl px-2 py-2 text-sm text-muted-foreground transition-colors hover:bg-card hover:text-card-foreground"
                     >
                       <LogOut size={14} />
-                      Sign out
+                      {getSafePhrase('ui.sign_out')}
                     </button>
                   </div>
                 )}
@@ -1207,15 +1211,15 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
               <button
                 onClick={() => setShowSignInSheet(true)}
                 className="inline-flex h-10 items-center justify-center rounded-full border border-border/60 bg-card/80 px-4 text-sm font-medium text-card-foreground shadow-sm backdrop-blur transition-colors hover:bg-card dark:border-border/40 dark:bg-card/40"
-                aria-label="Sign up"
+                aria-label={getSafePhrase('ui.sign_up')}
               >
-                Sign up
+                {getSafePhrase('ui.sign_up')}
               </button>
             )}
             <button
               onClick={() => setControlsOpen(true)}
               className="inline-flex items-center justify-center rounded-full border border-border/60 bg-card/80 p-2.5 text-muted-foreground shadow-sm backdrop-blur transition-colors hover:bg-card dark:border-border/40 dark:bg-card/40 dark:text-card-foreground"
-              aria-label="Settings"
+              aria-label={getSafePhrase('ui.settings')}
             >
               <SettingsIcon size={16} />
             </button>
@@ -1260,11 +1264,11 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
         {/* Duration chips — visible before session starts */}
         {!isRunning && (
           <div className="mt-5 flex items-center gap-1.5">
-            {DURATION_OPTIONS.filter(o => o.value !== null).map((option) => {
+            {durationOptions.filter(o => o.value !== null).map((option) => {
               const isSelected = selectedDuration === option.value;
               return (
                 <button
-                  key={option.label}
+                  key={option.value ?? 'open'}
                   onClick={() => handleDurationSelect(option.value)}
                   className={`rounded-full px-3 py-1 text-xs font-medium transition-all ${
                     isSelected
@@ -1311,7 +1315,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
             <SheetHeader className="mb-6 text-left">
               <div className="flex items-start justify-between">
                 <div>
-                  <SheetTitle className="text-xl font-semibold text-card-foreground">Settings</SheetTitle>
+                  <SheetTitle className="text-xl font-semibold text-card-foreground">{getSafePhrase('ui.settings')}</SheetTitle>
                   <p className="text-sm text-muted-foreground">Adjust modes, pacing, and personalization.</p>
                 </div>
                 <SheetClose asChild>
@@ -1335,7 +1339,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                     className={`flex flex-1 items-center justify-center rounded-xl px-3 py-2 text-sm font-medium transition ${muted ? 'bg-foreground text-background' : 'bg-card text-card-foreground'
                       }`}
                   >
-                    {muted ? 'Sound Off' : 'Sound On'}
+                    {muted ? getSafePhrase('ui.sound_off') : getSafePhrase('ui.sound_on')}
                   </button>
                 </div>
                 {soundStatus !== 'confirmed' && (
@@ -1378,7 +1382,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                       onClick={handleThemeReset}
                       className="mt-2 text-left text-xs font-medium text-muted-foreground underline decoration-dotted underline-offset-2 transition hover:text-card-foreground"
                     >
-                      Match system default
+                      {getSafePhrase('ui.match_system_default')}
                     </button>
                   ) : (
                     <p className="mt-2 text-xs text-muted-foreground">Following your device preference.</p>
@@ -1387,15 +1391,15 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
 
                 <div className="rounded-2xl bg-background/50 p-3 text-sm text-muted-foreground shadow-inner dark:bg-background/20">
                   <div className="flex items-center justify-between gap-3">
-                    <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">Session length</p>
+                    <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">{getSafePhrase('ui.session_length')}</p>
                     <p className="text-xs text-muted-foreground">{durationSummary}</p>
                   </div>
                   <div className="mt-3 flex flex-wrap gap-2">
-                    {DURATION_OPTIONS.map((option) => {
+                    {durationOptions.map((option) => {
                       const isActive = selectedDuration === option.value;
                       return (
                         <button
-                          key={option.label}
+                          key={option.value ?? 'open'}
                           onClick={() => handleDurationSelect(option.value)}
                           disabled={isRunning}
                           className={`rounded-xl px-3 py-1.5 text-xs font-medium transition ${isActive
@@ -1409,7 +1413,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                     })}
                   </div>
                   {isRunning && (
-                    <p className="mt-2 text-xs text-muted-foreground">Pause to change the session length.</p>
+                    <p className="mt-2 text-xs text-muted-foreground">{getSafePhrase('ui.pause_to_change')}</p>
                   )}
                 </div>
               </div>
@@ -1418,7 +1422,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                   <div className="mb-1 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-primary">
                     AI Suggestion
                     <button onClick={() => setAiReasoning(null)} className="text-muted-foreground underline hover:text-primary">
-                      Dismiss
+                      {getSafePhrase('ui.dismiss')}
                     </button>
                   </div>
                   {aiReasoning}
@@ -1495,7 +1499,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                 </>
               ) : (
                 <div className="rounded-2xl bg-muted/60 p-4 text-sm text-muted-foreground dark:bg-muted/30">
-                  Pause the session to switch modes, adjust pacing, or change length.
+                  {getSafePhrase('ui.pause_session_to_switch')}
                 </div>
               )}
 

@@ -1,9 +1,14 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { X, Mail, Loader2 } from "lucide-react";
 import { signIn } from "@/lib/auth-client";
 import { Sheet, SheetContent } from "@/components/ui/sheet";
+import {
+  createRuntimePhraseResolver,
+  detectRuntimeLocale,
+  RuntimePhraseKey,
+} from "@/components/resonance/runtime-phrases";
 
 function trackEvent(name: string, params?: Record<string, string | number | boolean>) {
   if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
@@ -24,12 +29,24 @@ export function SignInSheet({
   open,
   onOpenChange,
   onSuccess,
-  headline = "Save your progress",
-  subtitle = "Sync your breathing sessions and settings across devices.",
+  headline,
+  subtitle,
   totalMinutes,
 }: SignInSheetProps) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const [locale, setLocale] = useState("en");
+
+  useEffect(() => {
+    setLocale(detectRuntimeLocale());
+  }, [open]);
+
+  const phrases = useMemo(() => createRuntimePhraseResolver(locale), [locale]);
+  const t = (key: RuntimePhraseKey, vars?: Record<string, string | number>) =>
+    phrases.resolve(key, vars).text;
+
+  const resolvedHeadline = headline ?? t("auth.save_progress");
+  const resolvedSubtitle = subtitle ?? t("auth.sync_subtitle");
 
   const handleMagicLink = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -58,7 +75,6 @@ export function SignInSheet({
 
   const handleClose = () => {
     onOpenChange(false);
-    // Reset state after animation
     setTimeout(() => {
       setStatus("idle");
       setEmail("");
@@ -75,9 +91,9 @@ export function SignInSheet({
           <div className="mb-5 flex items-start justify-between">
             <div>
               <h2 className="text-lg font-semibold text-card-foreground">
-                {headline}
+                {resolvedHeadline}
               </h2>
-              <p className="mt-1 text-sm text-muted-foreground">{subtitle}</p>
+              <p className="mt-1 text-sm text-muted-foreground">{resolvedSubtitle}</p>
             </div>
             <button
               onClick={handleClose}
@@ -90,10 +106,10 @@ export function SignInSheet({
           {totalMinutes != null && totalMinutes > 0 && (
             <div className="mb-4 rounded-2xl bg-card/70 p-3 text-center shadow-inner dark:bg-card/30">
               <p className="text-2xl font-semibold tabular-nums text-card-foreground">
-                {totalMinutes} min
+                {t("auth.total_minutes", { n: totalMinutes })}
               </p>
               <p className="text-xs text-muted-foreground">
-                of breathing logged
+                {t("auth.of_breathing_logged")}
               </p>
             </div>
           )}
@@ -102,10 +118,10 @@ export function SignInSheet({
             <div className="rounded-2xl bg-card/70 p-5 text-center shadow-inner dark:bg-card/30">
               <Mail className="mx-auto mb-2 text-primary" size={28} />
               <p className="font-semibold text-card-foreground">
-                Check your email
+                {t("auth.check_email")}
               </p>
               <p className="mt-1 text-sm text-muted-foreground">
-                We sent a sign-in link to{" "}
+                {t("auth.sent_link_to")}{" "}
                 <span className="font-medium text-card-foreground">
                   {email}
                 </span>
@@ -135,12 +151,12 @@ export function SignInSheet({
                     fill="#EA4335"
                   />
                 </svg>
-                Continue with Google
+                {t("auth.continue_google")}
               </button>
 
               <div className="flex items-center gap-3">
                 <div className="h-px flex-1 bg-border/60" />
-                <span className="text-xs text-muted-foreground">or</span>
+                <span className="text-xs text-muted-foreground">{t("auth.or")}</span>
                 <div className="h-px flex-1 bg-border/60" />
               </div>
 
@@ -149,7 +165,7 @@ export function SignInSheet({
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email"
+                  placeholder={t("auth.enter_email")}
                   required
                   className="w-full rounded-xl border border-border/60 bg-card/50 px-4 py-3 text-sm text-card-foreground placeholder:text-muted-foreground/60 outline-none transition focus:border-primary/50 focus:ring-1 focus:ring-primary/30 dark:border-border/40"
                 />
@@ -161,17 +177,17 @@ export function SignInSheet({
                   {status === "sending" ? (
                     <>
                       <Loader2 size={16} className="animate-spin" />
-                      Sending link...
+                      {t("auth.sending_link")}
                     </>
                   ) : (
-                    "Send magic link"
+                    t("auth.send_magic_link")
                   )}
                 </button>
               </form>
 
               {status === "error" && (
                 <p className="text-center text-xs text-destructive">
-                  Something went wrong. Please try again.
+                  {t("auth.something_went_wrong")}
                 </p>
               )}
             </div>
@@ -181,7 +197,7 @@ export function SignInSheet({
             onClick={handleClose}
             className="mt-4 w-full text-center text-sm text-muted-foreground transition-colors hover:text-card-foreground"
           >
-            Not now
+            {t("auth.not_now")}
           </button>
         </div>
       </SheetContent>
