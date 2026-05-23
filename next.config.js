@@ -15,15 +15,11 @@ const nextConfig = {
   },
   async redirects() {
     return [
-      // Strip ?duration= query parameter from /breathe/* pages to prevent
-      // duplicate content issues with search engines (e.g. Ahrefs crawling
-      // /breathe/coherent?duration=30, /breathe/box?duration=60, etc.)
-      {
-        source: '/breathe/:slug',
-        has: [{ type: 'query', key: 'duration' }],
-        destination: '/breathe/:slug',
-        permanent: true,
-      },
+      // NOTE: The ?duration= query stripping redirect was removed — it caused a
+      // circular 301 redirect loop (Next.js preserves source query params when
+      // destination has none, so the rule matched itself infinitely). Safari
+      // "too many redirects" error. SEO deduplication is handled by
+      // alternates.canonical in each /breathe/:slug page's metadata instead.
       // Content redirects
       {
         source: '/about/methodology',
