@@ -1,0 +1,145 @@
+# Disavow file for deepbreathingexercises.com
+# Last updated: 2026-05-23 (merged with previous 2026-05-05 list)
+# Total domains: ~116
+# Source: Ahrefs referring-domains audit + previous disavow rounds
+# Upload at: https://search.google.com/search-console/disavow-links
+
+# === FROM 2026-02-06 LIST ===
+
+# SEO spam / link farms
+domain:rankyour.website
+domain:grow-your.website
+domain:primeseo.xyz
+domain:seo-backlink.agency
+domain:seonexi.com
+domain:seotira.com
+domain:eurekster.com
+domain:scour.ing
+
+# Chinese spam cluster (Jan 2026)
+domain:jubt13.xyz
+domain:yeeach.com
+domain:1mei.live
+domain:pao8.life
+domain:1tanhua.xyz
+
+# SEO tool / scraper sites
+domain:site-stats.org
+domain:aapks.com
+domain:bestappsfinder.com
+domain:sitelinks.info
+domain:couponsale.in
+domain:keyword-suggest-tool.com
+domain:keywordbasket.com
+domain:whatisdomain.net
+domain:best-apps-now.com
+domain:todayallcoupons.com
+domain:healthgolds.com
+domain:alldiscountcode.com
+domain:answeregy.net
+domain:atomizelink.icu
+
+# === ADDED 2026-05-05 ===
+
+# High-DR SEO link farms (Ahrefs flagged SPAM)
+domain:buybacklinks.agency
+domain:rank-top.click
+domain:seoexpress.org
+domain:fiverr-affordable-seo-services.site
+domain:rank-optimizer.website
+domain:seoprobox.xyz
+domain:seoagency.sale
+domain:nexusnext.agency
+domain:rankpilot.shop
+
+# "seoexpress" cluster (one operator, multiple TLDs)
+domain:seoexpress.website
+domain:seoexpress.space
+domain:seoexpress.online
+domain:seoexpress.site
+domain:seoexpress.shop
+
+# "*seo*.shop" / "*ranking*.shop" cluster (same operator)
+domain:seo-high-ranking.shop
+domain:highseoranking.shop
+domain:theseohighranking.shop
+domain:therankinghighseo.shop
+domain:theguestpost.shop
+domain:thetoprankingseo.shop
+domain:seohighranking.shop
+domain:thehighseo.shop
+domain:rankinghighseo.shop
+domain:thehighrankseo.shop
+domain:theseomasterhigh.shop
+
+# Generic ".shop" PBN throwaways
+domain:mysky-shop.shop
+domain:lixil-reformshop.shop
+domain:simplywebshop.shop
+domain:kmoshops.shop
+domain:activeshop.shop
+domain:shop-inframe.shop
+
+# Chinese spam network — additional domains (May 2026 audit)
+domain:seju.life
+domain:lewuxian.com
+domain:1fuli.one
+domain:ixue.me
+domain:1zhibo.xyz
+domain:1gua.xyz
+domain:1asmr.xyz
+domain:1tan.cc
+
+# Likely scrapers / wiped domains / random-string PBNs
+domain:gaidot.net
+domain:pixier.com
+domain:mrnckl5.com
+domain:lugevo.com
+
+# === ADDED 2026-05-23 — SEOExpress.org spam wave (May 2026) ===
+# Same fake "cleaning business success story" posted across ~100 .store/.shop
+# domains by SEOExpress.org link-building service. All NOFOLLOW but spammy.
+
+# SEOExpress subdomain cluster (.store TLDs — new wave)
+domain:seoexpress-backlink-hub.store
+domain:seoexpress-ranking-hub.store
+domain:seoexpress-anchor-text-experts.store
+domain:seoexpress-marketing-exchange.store
+domain:advanced-ranking-seoexpress-specialists.store
+domain:advanced-search-seoexpress-pros.store
+domain:authentic-seoexpress-keyword-firm.store
+domain:authentic-tier-1-partners-seoexpress.store
+domain:best-seoexpress-off-page-network.store
+domain:elite-seoexpress-link-building-team.store
+domain:exclusive-webpage-center-seoexpress.store
+domain:first-class-seoexpress-keyword-exchange.store
+domain:luxury-niche-edit-seoexpress-services.store
+domain:master-seoexpress-content-consultants.store
+domain:master-seoexpress-search-agency.store
+domain:official-anchor-text-seoexpress-system.store
+domain:premium-seoexpress-digital-solutions.store
+domain:smart-marketing-seoexpress.store
+domain:smart-seoexpress-webpage-experts.store
+domain:trusted-seoexpress-backlink-experts.store
+domain:ultimate-seoexpress-niche-edit-experts.store
+
+# Link-farm / SEO spam .shop/.store/.sale domains (new May 2026 batch)
+domain:authoritybacklinks.shop
+domain:rankingseohigh.shop
+domain:ranklinkx.shop
+domain:linkrankpro.shop
+domain:toplinkranker.shop
+domain:premiumseolinks.shop
+domain:pbnseolinks.shop
+domain:newsblogsports.site
+
+# Gambling/casino SEO spam
+domain:seogeko.shop
+
+# Generic .shop domains (confirmed SEO spam, May 2026)
+domain:ekenkoshop.shop
+domain:kawaiishop.shop
+domain:rent-a-shop.shop
+domain:shopbetreiber-blog.shop
+domain:nurtureambition.com
+domain:parse.gl
