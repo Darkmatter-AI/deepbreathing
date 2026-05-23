@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   title: "Brand Lab",
   description:
     "An internal visual exploration page for Deep Breathing Exercises with three candidate brand directions.",
+  robots: { index: false, follow: false },
   alternates: {
     canonical: `${siteUrl}/brand-lab`,
   },
