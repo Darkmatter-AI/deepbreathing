@@ -23,6 +23,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-05-26 | [REVIEW DUE — Direct traffic +14d follow-up + (not set) collapse check](#2026-05-26-review-due--direct-traffic-14d-follow-up--not-set-collapse-check) | ⏳ Waiting |
 | 2026-05-12 | [Direct +47% WoW — hypothesis: organic shares from PT/DE translations](#2026-05-12-direct-47-wow--hypothesis-organic-shares-from-ptde-translations) | 🟡 Inconclusive |
 | 2026-05-12 | [UTM-tag share buttons (attribute outbound shares back to GA4)](#2026-05-12-utm-tag-share-buttons-attribute-outbound-shares-back-to-ga4) | 🔄 Implemented |
 | 2026-05-11 | [Mobile homepage: pills mode picker + full-screen orb + restore hero text](#2026-05-11-mobile-homepage-pills-mode-picker--full-screen-orb--restore-hero-text) | 🔄 Implemented |
@@ -34,13 +35,31 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-04-27 | [Mobile Hero Above the Fold](#2026-04-27-mobile-hero-above-the-fold) | 🔄 Implemented |
 | 2026-04-27 | [page_viewed_breathing Event + sessions_completed Sync Fix](#2026-04-27-page_viewed_breathing-event--sessions_completed-sync-fix) | 🔄 Implemented |
 
-**Roll-up by status (9 entries):** 🔄 8 Implemented · 🟡 1 Inconclusive (the 2026-05-12 Direct surge). First read on the 2026-05-19 checkpoint, full read 2026-06-02; mobile-redesign + UTM-tagging reads 2026-05-22 / 2026-06-05.
+**Roll-up by status (10 entries):** ⏳ 1 Waiting (2026-05-26 direct-traffic +14d review) · 🔄 8 Implemented · 🟡 1 Inconclusive (the 2026-05-12 Direct surge). First read on the 2026-05-19 checkpoint, full read 2026-06-02; mobile-redesign + UTM-tagging reads 2026-05-22 / 2026-06-05; direct-traffic +14d checkpoint open 2026-05-26.
 
 See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state, [docs/UX-BACKLOG.md](UX-BACKLOG.md) for what's next, [docs/runbooks/weekly-funnel-refresh.md](runbooks/weekly-funnel-refresh.md) for how to pull the numbers.
 
 ---
 
 ## Active Experiments
+
+### 2026-05-26: REVIEW DUE — Direct traffic +14d follow-up + (not set) collapse check
+
+**Status:** ⏳ Waiting (review-due, no analysis yet)
+
+14 days have passed since (a) UTM-tagged share buttons shipped in commit `d81f5e7` and (b) the `PageViewTracker` fix shipped on 2026-05-12 to eliminate the `(not set)` landing-page bucket. Two things to check when the human next sits down:
+
+1. In GA4 (DKMT property `527524722`), pull Traffic Acquisition for the last 14 days and break by Session source / medium. Look for sessions with `utm_source=share` to size the real word-of-mouth share channel (was inferred-only via Direct before). Apply the pre-committed criteria from the [UTM-tag share buttons entry](#2026-05-12-utm-tag-share-buttons-attribute-outbound-shares-back-to-ga4): ≥10 new users with `session_source=share` = ✅; zero `utm_source=share` traffic despite >50 share button impressions = ❌; <5 share-button clicks = ⚪.
+
+2. Pull the Landing Page report for the last 14 days. The `(not set)` row was 9.9% of sessions in the prior 28d window. Expect it to drop under 1% post-fix. If it doesn't, the `PageViewTracker` fix needs revisiting — likely an Enhanced Measurement interaction or a missed code path in the `visibilitychange` handler.
+
+3. Append findings as a '+14 day follow-up' section to [docs/direct-traffic-investigation-2026-05-12.md](./direct-traffic-investigation-2026-05-12.md), and graduate this entry from ⏳ Waiting to ✅/❌/⚪/🟡 based on whether the `(not set)` row collapsed AND whether `utm_source=share` volume justifies further sharing investment (i.e. sound layer + share UX work).
+
+**Background:** [direct-traffic-investigation-2026-05-12.md](./direct-traffic-investigation-2026-05-12.md) · [direct-traffic-not-set-investigation-2026-05-12.md](./direct-traffic-not-set-investigation-2026-05-12.md)
+
+**No new pre-commit criteria** — this is a checkpoint, not a new change. The criteria were committed on 2026-05-12; apply them as written.
+
+---
 
 ### 2026-05-12: Direct +47% WoW — hypothesis: organic shares from PT/DE translations
 
