@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/:l1(es|pt|fr|de|ja)/:l2(es|pt|fr|de|ja)",
+      "destination": "/:l1",
+      "permanent": true
+    },
+    {
       "source": "/app",
       "destination": "/breathing-app",
       "permanent": true
