@@ -87,6 +87,16 @@ const nextConfig = {
         destination: '/:rest+',
         permanent: true,
       },
+      // Same case, but a BARE doubly-prefixed locale (e.g. /pt/fr): the proxy strips
+      // the outer locale and forwards /fr with no :rest, so the rule above never
+      // matched and Next.js 404'd. Collapse a lone locale segment to root; the proxy
+      // re-adds the user-facing locale on the response. This was the remaining GSC
+      // "Not found (404)" (e.g. /pt/fr — all 20 locale pairs were affected).
+      {
+        source: '/:locale(es|pt|fr|de|ja)',
+        destination: '/',
+        permanent: true,
+      },
       // Single-page routes with no nested children — collapse stray sub-paths to root.
       {
         source: '/breathing-app/:path+',
