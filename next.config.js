@@ -20,6 +20,15 @@ const nextConfig = {
       // destination has none, so the rule matched itself infinitely). Safari
       // "too many redirects" error. SEO deduplication is handled by
       // alternates.canonical in each /breathe/:slug page's metadata instead.
+      // Canonical host: www -> apex. The www subdomain points at Vercel directly
+      // (bypassing the Cloudflare proxy), so it must be claimed by this project and
+      // redirected, otherwise it hard-404s (DEPLOYMENT_NOT_FOUND) — a GSC 404.
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.deepbreathingexercises.com' }],
+        destination: 'https://deepbreathingexercises.com/:path*',
+        permanent: true,
+      },
       // Content redirects
       {
         source: '/about/methodology',
