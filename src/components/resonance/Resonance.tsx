@@ -118,6 +118,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
   // Auth + conversion triggers
   const { isAuthenticated, user, syncSettings, syncStats } = useAuth();
   const {
+    variant: conversionVariant,
     showSessionPrompt,
     showSettingsNudge,
     onSessionComplete,
@@ -1527,6 +1528,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
           onSuccess={markConverted}
           totalMinutes={totalMinutes}
           sessionSeconds={sessionSeconds}
+          variant={conversionVariant}
         />
       )}
 

@@ -3,6 +3,7 @@
 import React, { createContext, useContext, useEffect, useRef } from "react";
 import { useSession } from "@/lib/auth-client";
 import { useSync } from "@/lib/sync/use-sync";
+import { readConversionVariant } from "@/lib/conversion/variant";
 
 interface AuthContextValue {
   isAuthenticated: boolean;
@@ -59,14 +60,17 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       return;
     }
 
+    // Attach the A/B bucket as a user property so the converted user is
+    // segmentable by arm in GA4 (the truth metric: prompt_shown -> real signup).
+    const variant = readConversionVariant();
     gtagSafe("set", "user_id", userId);
-    gtagSafe("set", "user_properties", { signed_up: true });
+    gtagSafe("set", "user_properties", { signed_up: true, conversion_variant: variant });
 
     if (typeof window === "undefined") return;
     const flagKey = `ga_user_identified_${userId}`;
     if (!localStorage.getItem(flagKey)) {
       localStorage.setItem(flagKey, "1");
-      gtagSafe("event", "signup_user_identified", { user_id_set: true });
+      gtagSafe("event", "signup_user_identified", { user_id_set: true, variant });
     }
   }, [userId]);
 

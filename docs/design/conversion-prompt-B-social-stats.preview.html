@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Conversion Prompt B — Social + Stats (preview)</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="robots" content="noindex"/>
+<!--
+  Standalone visual preview / browser-verification surface for
+  src/components/auth/social-stats-sign-in-sheet.tsx
+
+  This mirrors the component's exact rendered DOM + CSS (cps-* namespace) and adds
+  the living-orb backdrop the real app already renders (Resonance.tsx) plus a
+  "Show prompt" reopen pill, so the sheet can be opened/closed in isolation.
+
+  Demo-only differences from production:
+   - "Continue with Google" here triggers the unblur -> "You're in" payoff so the
+     success/ring visual can be verified in one click. In production Google calls
+     signIn.social() and the browser redirects, so that flourish only fires on the
+     email magic-link path ("Check your email").
+   - The magic link is simulated (no better-auth call).
+-->
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..700&display=swap" rel="stylesheet"/>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+:root{--stage:#1d130d;--ease:cubic-bezier(0.22,1,0.36,1);
+  --font:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+*{box-sizing:border-box;}
+html,body{margin:0;height:100%;}
+body{font-family:var(--font);font-feature-settings:"ss01" on,"case" on,"cv11" on;-webkit-font-smoothing:antialiased;overflow:hidden;}
+
+/* full-screen app stage (the real app backdrop) */
+.stage{position:fixed;inset:0;background:var(--stage);overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.aura{position:absolute;inset:0;background:radial-gradient(46% 42% at 50% 44%, rgba(231,29,72,0.30), rgba(246,116,59,0.10) 48%, rgba(29,19,13,0) 74%);}
+.orb{position:absolute;top:46%;left:50%;width:340px;height:340px;margin:-170px 0 0 -170px;border-radius:47% 53% 50% 50% / 50% 48% 52% 50%;background:radial-gradient(circle at 38% 32%, #ffb59a, #f6743b 52%, #e11d48 100%);box-shadow:0 0 160px 50px rgba(231,29,72,0.40);animation:morph 18s ease-in-out infinite, breathe 11s var(--ease) infinite;}
+.vignette{position:absolute;inset:0;background:radial-gradient(120% 120% at 50% 48%,transparent 50%,rgba(0,0,0,0.55));pointer-events:none;}
+.applabel{position:absolute;top:46%;left:0;right:0;text-align:center;transform:translateY(-50%);color:rgba(255,255,255,0.86);font-size:13px;font-weight:600;letter-spacing:0.34em;text-transform:uppercase;pointer-events:none;}
+@keyframes morph{0%,100%{border-radius:47% 53% 50% 50% / 50% 48% 52% 50%;}33%{border-radius:54% 46% 58% 42% / 44% 56% 44% 56%;}66%{border-radius:44% 56% 44% 56% / 56% 44% 58% 42%;}}
+@keyframes breathe{0%,100%{transform:scale(0.84);}50%{transform:scale(1.05);}}
+
+/* scrim (mirrors the app's Radix sheet overlay) */
+.scrim{position:fixed;inset:0;z-index:5;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.40);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);transition:opacity .42s var(--ease);}
+.scrim.hidden{opacity:0;pointer-events:none;}
+.scrim.hidden .cps-sheet{opacity:0;transform:translateY(10px) scale(0.97);}
+
+/* ===== cps-* block: mirrors the component's shared visual rules =====
+   (the component adds the same rules via a scoped <style>; this file has a few
+   demo-only extras: the scrim transition, .cps-success display toggle, and svg
+   sizing for the UMD lucide icons.) */
+.cps-sheet{
+  --cream:#fbeede;--cream-80:rgba(251,238,222,0.82);--cream-58:rgba(251,238,222,0.58);
+  --cream-40:rgba(251,238,222,0.40);--cream-26:rgba(251,238,222,0.26);
+  --coral:#f6743b;--coral-lt:#ff9e7a;--rose:#e11d48;--line:rgba(255,255,255,0.10);
+  --ease:cubic-bezier(0.22,1,0.36,1);
+  position:relative;width:min(362px,calc(100vw - 32px));
+  background:rgba(44,29,20,0.55);
+  -webkit-backdrop-filter:blur(28px) saturate(1.2);backdrop-filter:blur(28px) saturate(1.2);
+  border:1px solid var(--line);border-radius:30px;color:var(--cream);
+  /* extra top room so the close button has its own band and never sits on the live row */
+  padding:44px 28px 22px;
+  font-family:var(--font-sans),"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  box-shadow:0 36px 90px -20px rgba(0,0,0,0.6),0 0 50px 0 rgba(255,133,158,0.14),inset 0 1px 0 rgba(255,255,255,0.07);
+  transition:opacity .42s var(--ease),transform .42s var(--ease);
+}
+.cps-x{position:absolute;top:14px;right:16px;width:28px;height:28px;border:none;background:none;color:var(--cream-40);cursor:pointer;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:color .2s,background .2s;}
+.cps-x:hover{color:var(--cream-80);background:rgba(255,255,255,0.08);}
+.cps-x svg{width:17px;height:17px;}
+
+.cps-live{display:flex;align-items:center;gap:11px;border:1px solid var(--line);border-radius:16px;padding:12px 15px;margin:0 0 19px;background:rgba(255,255,255,0.04);}
+.cps-pulse{width:9px;height:9px;border-radius:50%;background:#46d39b;flex:none;position:relative;}
+.cps-pulse::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:1px solid rgba(70,211,155,0.5);animation:cps-ping 2.4s var(--ease) infinite;}
+.cps-lt{font-size:13.5px;color:var(--cream-80);line-height:1.3;}
+.cps-lt b{color:var(--cream);font-weight:600;font-variant-numeric:tabular-nums;}
+.cps-avatars{display:flex;margin-left:auto;}
+.cps-avatars span{width:26px;height:26px;border-radius:50%;border:2px solid #241710;margin-left:-9px;}
+.cps-avatars span:first-child{margin-left:0;}
+.cps-av1{background:linear-gradient(135deg,#ffb59a,#e1572f);}
+.cps-av2{background:linear-gradient(135deg,#f3939f,#c23656);}
+.cps-av3{background:linear-gradient(135deg,#e7b07e,#a86a39);}
+.cps-av4{background:linear-gradient(135deg,#f0a48d,#cf5a64);}
+
+.cps-title{font-size:23px;font-weight:600;letter-spacing:-0.015em;line-height:1.14;margin:0 0 10px;color:var(--cream);text-wrap:balance;}
+.cps-sub{font-size:14px;line-height:1.55;color:var(--cream-58);margin:0 0 21px;text-wrap:pretty;}
+
+.cps-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--line);position:relative;margin:0 0 20px;}
+.cps-s{background:#231710;padding:16px 10px;text-align:center;}
+.cps-n{font-size:25px;font-weight:600;color:var(--cream);filter:blur(7px);font-variant-numeric:tabular-nums;line-height:1;user-select:none;transition:filter .5s var(--ease);}
+.cps-stats.unlocked .cps-n{filter:blur(0);}
+.cps-l{font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:var(--cream-40);margin-top:7px;font-weight:600;}
+.cps-lock{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:9px;background:rgba(29,19,13,0.34);transition:opacity .4s var(--ease);}
+.cps-stats.unlocked .cps-lock{opacity:0;pointer-events:none;}
+.cps-ld{width:32px;height:32px;border-radius:50%;background:rgba(29,19,13,0.9);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--coral-lt);}
+.cps-ld svg{width:14px;height:14px;}
+
+.cps-google{width:100%;height:50px;border-radius:999px;border:none;cursor:pointer;background:#fff;color:#241a13;font-family:inherit;font-size:14.5px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:11px;transition:transform .18s var(--ease),box-shadow .2s,filter .2s;}
+.cps-google:hover{filter:brightness(1.04);transform:translateY(-1px);box-shadow:0 10px 24px -10px rgba(0,0,0,0.55);}
+.cps-google svg{width:18px;height:18px;}
+
+.cps-email-wrap{overflow:hidden;max-height:0;opacity:0;transition:max-height .4s var(--ease),opacity .3s var(--ease),margin .4s var(--ease);}
+.cps-email-wrap.open{max-height:140px;opacity:1;margin-top:12px;}
+.cps-email-row{display:flex;gap:8px;}
+.cps-email-input{flex:1;min-width:0;height:46px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,0.05);color:var(--cream);font-family:inherit;font-size:14px;padding:0 18px;outline:none;transition:border-color .2s;}
+.cps-email-input::placeholder{color:var(--cream-40);}
+.cps-email-input:focus{border-color:rgba(255,255,255,0.32);}
+.cps-magic{height:46px;border-radius:999px;border:none;cursor:pointer;background:var(--coral);color:#241006;font-family:inherit;font-weight:600;font-size:13.5px;padding:0 16px;white-space:nowrap;display:flex;align-items:center;justify-content:center;transition:filter .2s,transform .18s var(--ease);}
+.cps-magic:hover:not(:disabled){filter:brightness(1.05);transform:translateY(-1px);}
+.cps-magic:disabled{opacity:.55;cursor:default;}
+.cps-err{font-size:12px;color:#ff9e7a;text-align:center;margin:10px 0 0;}
+
+.cps-email-link{display:block;width:100%;text-align:center;background:none;border:none;cursor:pointer;font-family:inherit;font-size:13px;color:var(--cream-58);margin-top:14px;padding:6px 0;transition:color .2s;}
+.cps-email-link:hover{color:var(--cream);}
+.cps-u{position:relative;}
+.cps-u::after{content:"";position:absolute;left:50%;right:50%;bottom:-2px;height:1px;background:currentColor;transition:left .25s,right .25s;}
+.cps-email-link:hover .cps-u::after{left:0;right:0;}
+.cps-dismiss{display:block;width:100%;text-align:center;background:none;border:none;cursor:pointer;font-family:inherit;font-size:12px;color:var(--cream-26);margin-top:12px;padding:4px 0;transition:color .2s;}
+.cps-dismiss:hover{color:var(--cream-58);}
+
+.cps-success{display:none;flex-direction:column;align-items:center;text-align:center;padding:14px 0 6px;}
+.cps-success.show{display:flex;}
+.cps-ring{width:58px;height:58px;border-radius:50%;background:radial-gradient(circle at 40% 34%,#ffb59a,var(--coral) 60%,var(--rose));display:flex;align-items:center;justify-content:center;color:#241006;box-shadow:0 10px 30px -8px rgba(231,29,72,0.6);margin-bottom:18px;}
+.cps-ring svg{width:26px;height:26px;}
+.cps-success h3{font-size:21px;font-weight:600;letter-spacing:-0.015em;color:var(--cream);margin:0 0 9px;}
+.cps-success p{font-size:14px;line-height:1.5;color:var(--cream-58);margin:0;}
+.cps-success p b{color:var(--cream-80);font-weight:600;}
+
+@keyframes cps-ping{0%{transform:scale(0.6);opacity:0.9;}100%{transform:scale(1.8);opacity:0;}}
+@media (prefers-reduced-motion:reduce){.orb{animation:none;}.cps-pulse::after{animation:none;}}
+
+/* reopen control (demo affordance; in production the parent owns `open`) */
+.reopen{position:fixed;left:50%;bottom:34px;transform:translateX(-50%);z-index:6;display:none;align-items:center;gap:9px;border:1px solid rgba(255,255,255,0.22);background:rgba(29,19,13,0.6);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:rgba(251,238,222,0.82);font-family:var(--font);font-size:12px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;padding:11px 18px;border-radius:999px;cursor:pointer;transition:color .2s,border-color .2s;}
+.reopen:hover{color:#fbeede;border-color:rgba(255,255,255,0.4);}
+.reopen.show{display:flex;}
+.reopen svg{width:14px;height:14px;}
+</style>
+</head>
+<body>
+
+<div class="stage">
+  <div class="aura"></div>
+  <div class="orb"></div>
+  <div class="applabel">Inhale · 5s</div>
+  <div class="vignette"></div>
+</div>
+
+<div class="scrim" id="scrim">
+  <div class="cps-sheet" role="dialog" aria-label="Create a free account">
+    <button class="cps-x" id="close" aria-label="Close"><i data-lucide="x"></i></button>
+
+    <div id="form">
+      <div class="cps-live">
+        <span class="cps-pulse"></span>
+        <span class="cps-lt"><b id="liveCount">1,240</b> breathing right now</span>
+        <span class="cps-avatars"><span class="cps-av1"></span><span class="cps-av2"></span><span class="cps-av3"></span><span class="cps-av4"></span></span>
+      </div>
+      <h2 class="cps-title">You're in good company.</h2>
+      <p class="cps-sub">And your own week is already adding up. Make a free account to see it, and keep it.</p>
+      <div class="cps-stats" id="stats">
+        <div class="cps-s"><div class="cps-n">37</div><div class="cps-l">Your minutes</div></div>
+        <div class="cps-s"><div class="cps-n">4</div><div class="cps-l">Day streak</div></div>
+        <div class="cps-lock"><span class="cps-ld"><i data-lucide="lock"></i></span></div>
+      </div>
+      <button class="cps-google" id="google">
+        <svg viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+        Continue with Google
+      </button>
+      <div class="cps-email-wrap" id="emailWrap">
+        <form class="cps-email-row" id="emailForm">
+          <input class="cps-email-input" type="email" placeholder="Enter your email" required/>
+          <button class="cps-magic" type="submit">Send link</button>
+        </form>
+      </div>
+      <button class="cps-email-link" id="emailToggle"><span class="cps-u">or use email</span></button>
+      <button class="cps-dismiss" id="notnow">Not now</button>
+    </div>
+
+    <div class="cps-success" id="success">
+      <div class="cps-ring"><i data-lucide="check"></i></div>
+      <h3 id="successTitle">You're in.</h3>
+      <p id="successMsg">Your minutes are saving from now on.</p>
+    </div>
+  </div>
+</div>
+
+<button class="reopen" id="reopen"><i data-lucide="rotate-ccw"></i> Show prompt</button>
+
+<script>
+  if (window.lucide) lucide.createIcons();
+  var scrim=document.getElementById('scrim'),reopen=document.getElementById('reopen');
+  var form=document.getElementById('form'),success=document.getElementById('success'),stats=document.getElementById('stats');
+  var emailWrap=document.getElementById('emailWrap');
+
+  function closeSheet(){scrim.classList.add('hidden');reopen.classList.add('show');}
+  function openSheet(){
+    scrim.classList.remove('hidden');reopen.classList.remove('show');
+    form.style.display='block';success.classList.remove('show');
+    stats.classList.remove('unlocked');emailWrap.classList.remove('open');
+  }
+  function succeed(title,msg){
+    stats.classList.add('unlocked');
+    setTimeout(function(){
+      form.style.display='none';
+      document.getElementById('successTitle').textContent=title;
+      document.getElementById('successMsg').innerHTML=msg;
+      success.classList.add('show');
+      if(window.lucide) lucide.createIcons();
+    },560);
+  }
+
+  document.getElementById('close').onclick=closeSheet;
+  document.getElementById('notnow').onclick=closeSheet;
+  scrim.onclick=function(e){if(e.target===scrim) closeSheet();};
+  reopen.onclick=openSheet;
+
+  // Demo: Google shows the unblur + success payoff (production redirects instead).
+  document.getElementById('google').onclick=function(){succeed("You're in.","Your minutes are saving from now on.");};
+  document.getElementById('emailToggle').onclick=function(){emailWrap.classList.toggle('open');};
+  document.getElementById('emailForm').onsubmit=function(e){
+    e.preventDefault();
+    var v=e.target.querySelector('input').value;
+    succeed("Check your email","We sent a link to <b>"+(v||"you")+"</b>");
+  };
+
+  (function(){
+    var el=document.getElementById('liveCount');
+    if(!el||matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var n=1240;
+    setInterval(function(){n+=Math.floor(Math.random()*9)-4;if(n<1180)n=1180;if(n>1320)n=1320;el.textContent=n.toLocaleString();},3200);
+  })();
+</script>
+</body>
+</html>

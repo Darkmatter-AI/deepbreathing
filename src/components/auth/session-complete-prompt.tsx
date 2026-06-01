@@ -2,6 +2,8 @@
 
 import React, { useEffect, useMemo, useState } from "react";
 import { SignInSheet } from "./sign-in-sheet";
+import { SocialStatsSignInSheet } from "./social-stats-sign-in-sheet";
+import type { ConversionVariant } from "@/lib/conversion/variant";
 import {
   createRuntimePhraseResolver,
   detectRuntimeLocale,
@@ -14,6 +16,7 @@ interface SessionCompletePromptProps {
   onSuccess: () => void;
   totalMinutes: number;
   sessionSeconds: number;
+  variant: ConversionVariant;
 }
 
 export function SessionCompletePrompt({
@@ -23,6 +26,7 @@ export function SessionCompletePrompt({
   onSuccess,
   totalMinutes,
   sessionSeconds,
+  variant,
 }: SessionCompletePromptProps) {
   const [locale, setLocale] = useState("en");
 
@@ -31,6 +35,27 @@ export function SessionCompletePrompt({
   }, [open]);
 
   const phrases = useMemo(() => createRuntimePhraseResolver(locale), [locale]);
+
+  // Closing the sheet counts as a dismissal (fires conversion_prompt_dismissed).
+  const handleOpenChange = (isOpen: boolean) => {
+    if (!isOpen) onDismiss();
+    onOpenChange(isOpen);
+  };
+
+  if (variant === "social_stats") {
+    // Conversion Prompt B. Social proof (live count + avatars) is simulated for
+    // now. Only `yourMinutes` is real, so gate the stats block on it.
+    return (
+      <SocialStatsSignInSheet
+        open={open}
+        onOpenChange={handleOpenChange}
+        onSuccess={onSuccess}
+        yourMinutes={totalMinutes}
+        showStats={totalMinutes > 0}
+      />
+    );
+  }
+
   const sessionMinutes = Math.floor(sessionSeconds / 60);
   const headline =
     sessionMinutes >= 5
@@ -40,10 +65,7 @@ export function SessionCompletePrompt({
   return (
     <SignInSheet
       open={open}
-      onOpenChange={(isOpen) => {
-        if (!isOpen) onDismiss();
-        onOpenChange(isOpen);
-      }}
+      onOpenChange={handleOpenChange}
       onSuccess={onSuccess}
       headline={headline}
       subtitle={phrases.resolve("auth.save_and_sync").text}

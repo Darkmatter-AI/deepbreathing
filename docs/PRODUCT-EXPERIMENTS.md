@@ -23,6 +23,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-06-01 | [Conversion Prompt B (social proof + personal stats), 100% challenger](#2026-06-01-conversion-prompt-b-social-proof--personal-stats-100-challenger) | 🔄 Implemented |
 | 2026-05-12 | [Direct +47% WoW — hypothesis: organic shares from PT/DE translations](#2026-05-12-direct-47-wow--hypothesis-organic-shares-from-ptde-translations) | 🟡 Inconclusive |
 | 2026-05-12 | [UTM-tag share buttons (attribute outbound shares back to GA4)](#2026-05-12-utm-tag-share-buttons-attribute-outbound-shares-back-to-ga4) | 🔄 Implemented |
 | 2026-05-11 | [Mobile homepage: pills mode picker + full-screen orb + restore hero text](#2026-05-11-mobile-homepage-pills-mode-picker--full-screen-orb--restore-hero-text) | 🔄 Implemented |
@@ -34,13 +35,40 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-04-27 | [Mobile Hero Above the Fold](#2026-04-27-mobile-hero-above-the-fold) | 🔄 Implemented |
 | 2026-04-27 | [page_viewed_breathing Event + sessions_completed Sync Fix](#2026-04-27-page_viewed_breathing-event--sessions_completed-sync-fix) | 🔄 Implemented |
 
-**Roll-up by status (9 entries):** 🔄 8 Implemented · 🟡 1 Inconclusive (the 2026-05-12 Direct surge). First read on the 2026-05-19 checkpoint, full read 2026-06-02; mobile-redesign + UTM-tagging reads 2026-05-22 / 2026-06-05.
+**Roll-up by status (10 entries):** 🔄 9 Implemented · 🟡 1 Inconclusive (the 2026-05-12 Direct surge). First read on the 2026-05-19 checkpoint, full read 2026-06-02; mobile-redesign + UTM-tagging reads 2026-05-22 / 2026-06-05.
 
 See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state, [docs/UX-BACKLOG.md](UX-BACKLOG.md) for what's next, [docs/runbooks/weekly-funnel-refresh.md](runbooks/weekly-funnel-refresh.md) for how to pull the numbers.
 
 ---
 
 ## Active Experiments
+
+### 2026-06-01: Conversion Prompt B (social proof + personal stats), 100% challenger
+
+**Hypothesis:** The post-session signup leak is desire, not mechanics (~88% who see the prompt walk past; the form itself converts fine). Reframing the prompt around **social proof** ("people breathing right now" + avatars) and **endowment** (your own blurred week stats, revealed on signup), instead of the current "Save your progress" sheet, lifts prompt_shown → signup.
+
+**Change:** Replace the control `SignInSheet` with `SocialStatsSignInSheet` in `SessionCompletePrompt` for all visitors (`SOCIAL_STATS_SHARE = 1`). One primary path (Continue with Google) with email magic-link fallback. Funnel events (`conversion_prompt_shown`, `conversion_prompt_dismissed`, `conversion_signup_completed`, `signup_user_identified`) carry a `variant` param; converted users get a `conversion_variant` GA4 user property, so the post-change period is cleanly segmentable. `SOCIAL_STATS_SHARE = 0` is the instant rollback.
+
+**Measurement design:** 100% challenger, read **pre/post** against the baseline below (a concurrent 50/50 split is underpowered at current traffic, ~52 prompt impressions/wk). Primary metric is signup **intent**; `signup_user_identified` is the **truth** guardrail.
+
+**Baseline (week of 2026-06-01, from FUNNEL-DASHBOARD.md):**
+- conversion_prompt_shown: 52 / wk
+- conversion_signup_completed: 6 = **11.5% of prompt-shown** (intent) ← primary
+- signup_user_identified: 4 = ~7.7% of prompt-shown (truth) ← guardrail
+- prior-period intent rate: 23.5% (high variance on small N)
+
+**Pre-committed criteria** (set 2026-06-01, before ship; first read 2026-06-15, verdict 2026-06-29):
+- ✅ **Success** if, over the window, prompt_shown → conversion_signup_completed is **≥ 16%** (from 11.5%, ≈ +4.5pp / +40% rel), AND signup_user_identified / prompt_shown does not regress below ~7%, AND conversion_prompt_dismissed rate is not materially higher (≤ +5pp).
+- ❌ **Failed** if signup_completed rate ≤ 11.5% (no lift) OR dismiss rate clearly up.
+- 🟡 **Mixed/Inconclusive** if intent rises but truth (signup_user_identified) stays flat or falls, OR if fewer than ~150 prompt impressions accrue by the verdict date (underpowered → extend, do not call it).
+
+**Power caveat:** pre/post at ~52 impressions/wk only reliably detects large effects. A null result is "inconclusive at this N," not proof of no effect. Watch the dashboard's other lines for confounding co-movement (seasonality, concurrent changes).
+
+**Known caveats:** social proof (live count + avatars) is **simulated** for launch (founder-approved); `dayStreak` is also simulated and unblurs to a non-real number on the email path; only `yourMinutes` is real (stats gated on > 0). See [docs/design/conversion-prompt-B-rollout.md](design/conversion-prompt-B-rollout.md). Make the live count and streak real before leaning on the endowment mechanic.
+
+**Status:** 🔄 Implemented — shipped to prod 2026-06-01. measure-after: 2026-06-15 (first read), 2026-06-29 (verdict).
+
+---
 
 ### 2026-05-12: Direct +47% WoW — hypothesis: organic shares from PT/DE translations
 

@@ -1,6 +1,10 @@
 "use client";
 
 import { useState, useCallback, useEffect } from "react";
+import {
+  getConversionVariant,
+  type ConversionVariant,
+} from "./variant";
 
 function trackEvent(name: string, params?: Record<string, string | number | boolean>) {
   if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
@@ -46,10 +50,12 @@ export function useConversionTriggers(isAuthenticated: boolean) {
   const [state, setState] = useState<ConversionState>(DEFAULT_STATE);
   const [showSessionPrompt, setShowSessionPrompt] = useState(false);
   const [showSettingsNudge, setShowSettingsNudge] = useState(false);
+  const [variant, setVariant] = useState<ConversionVariant>("control");
 
-  // Load on mount
+  // Load on mount, and assign/restore the A/B bucket (persisted in localStorage).
   useEffect(() => {
     setState(loadState());
+    setVariant(getConversionVariant());
   }, []);
 
   // Hide everything if authenticated
@@ -78,7 +84,7 @@ export function useConversionTriggers(isAuthenticated: boolean) {
           : !prev.dismissed.session && next.sessionsOver60s % 3 === 0;
 
         if (shouldShow) {
-          trackEvent("conversion_prompt_shown", { trigger: "session_complete", session_seconds: sessionSeconds, session_count: next.sessionsOver60s });
+          trackEvent("conversion_prompt_shown", { trigger: "session_complete", session_seconds: sessionSeconds, session_count: next.sessionsOver60s, variant: getConversionVariant() });
           setTimeout(() => setShowSessionPrompt(true), 1500);
         }
 
@@ -104,7 +110,7 @@ export function useConversionTriggers(isAuthenticated: boolean) {
         prev.convertedAt === null &&
         !showSessionPrompt // don't show both at once
       ) {
-        trackEvent("conversion_prompt_shown", { trigger: "settings_change", change_count: next.settingsChanges });
+        trackEvent("conversion_prompt_shown", { trigger: "settings_change", change_count: next.settingsChanges, variant: getConversionVariant() });
         setShowSettingsNudge(true);
       }
 
@@ -113,7 +119,7 @@ export function useConversionTriggers(isAuthenticated: boolean) {
   }, [isAuthenticated, showSessionPrompt]);
 
   const dismissSession = useCallback(() => {
-    trackEvent("conversion_prompt_dismissed", { trigger: "session_complete" });
+    trackEvent("conversion_prompt_dismissed", { trigger: "session_complete", variant: getConversionVariant() });
     setShowSessionPrompt(false);
     setState((prev) => {
       const next = { ...prev, dismissed: { ...prev.dismissed, session: true } };
@@ -123,7 +129,7 @@ export function useConversionTriggers(isAuthenticated: boolean) {
   }, []);
 
   const dismissSettings = useCallback(() => {
-    trackEvent("conversion_prompt_dismissed", { trigger: "settings_change" });
+    trackEvent("conversion_prompt_dismissed", { trigger: "settings_change", variant: getConversionVariant() });
     setShowSettingsNudge(false);
     setState((prev) => {
       const next = { ...prev, dismissed: { ...prev.dismissed, settings: true } };
@@ -133,7 +139,7 @@ export function useConversionTriggers(isAuthenticated: boolean) {
   }, []);
 
   const markConverted = useCallback(() => {
-    trackEvent("conversion_signup_completed", {});
+    trackEvent("conversion_signup_completed", { variant: getConversionVariant() });
     setShowSessionPrompt(false);
     setShowSettingsNudge(false);
     setState((prev) => {
@@ -144,6 +150,7 @@ export function useConversionTriggers(isAuthenticated: boolean) {
   }, []);
 
   return {
+    variant,
     showSessionPrompt,
     showSettingsNudge,
     onSessionComplete,
