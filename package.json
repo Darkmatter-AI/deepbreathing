@@ -8,6 +8,7 @@
     "start": "next start",
     "postbuild": "node ./scripts/ping-sitemap.mjs",
     "lint": "next lint",
+    "check:locale-build": "node ./scripts/check-locale-build-consistency.mjs",
     "ping:sitemap": "node ./scripts/ping-sitemap.mjs",
     "build:og-translations": "node ./scripts/build-og-translations.mjs"
   },

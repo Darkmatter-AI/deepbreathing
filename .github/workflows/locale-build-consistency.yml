@@ -1,0 +1,32 @@
+name: locale-build-consistency
+
+# Detects the post-deploy "skew window" where the MassTranslate proxy serves
+# stale translated HTML (old /_next chunk hashes) for /es /pt /fr /de /ja.
+# That window is what users experience as the language reset / "Application
+# error" crash. See scripts/check-locale-build-consistency.mjs.
+
+on:
+  # Run after each production deploy (Vercel → GitHub deployment_status).
+  deployment_status: {}
+  # Catch windows that open without a GitHub-visible deploy (proxy TTL, rollouts).
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}
+
+jobs:
+  check:
+    # For deployment_status, only act on successful Production deploys.
+    if: >-
+      github.event_name != 'deployment_status' ||
+      (github.event.deployment_status.state == 'success' &&
+       github.event.deployment_status.environment == 'Production')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Check locale build consistency
+        env:
+          BASE_URL: https://deepbreathingexercises.com
+        run: node ./scripts/check-locale-build-consistency.mjs
