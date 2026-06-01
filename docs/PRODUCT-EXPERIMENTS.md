@@ -23,6 +23,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-06-01 | [Fix `conversion_prompt_shown` double-fire (impure setState updaters)](#2026-06-01-fix-conversion_prompt_shown-double-fire-impure-setstate-updaters) | 🔄 Implemented |
 | 2026-06-01 | [Conversion Prompt B (social proof + personal stats), 100% challenger](#2026-06-01-conversion-prompt-b-social-proof--personal-stats-100-challenger) | 🔄 Implemented |
 | 2026-05-12 | [Direct +47% WoW — hypothesis: organic shares from PT/DE translations](#2026-05-12-direct-47-wow--hypothesis-organic-shares-from-ptde-translations) | 🟡 Inconclusive |
 | 2026-05-12 | [UTM-tag share buttons (attribute outbound shares back to GA4)](#2026-05-12-utm-tag-share-buttons-attribute-outbound-shares-back-to-ga4) | 🔄 Implemented |
@@ -35,13 +36,32 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-04-27 | [Mobile Hero Above the Fold](#2026-04-27-mobile-hero-above-the-fold) | 🔄 Implemented |
 | 2026-04-27 | [page_viewed_breathing Event + sessions_completed Sync Fix](#2026-04-27-page_viewed_breathing-event--sessions_completed-sync-fix) | 🔄 Implemented |
 
-**Roll-up by status (10 entries):** 🔄 9 Implemented · 🟡 1 Inconclusive (the 2026-05-12 Direct surge). First read on the 2026-05-19 checkpoint, full read 2026-06-02; mobile-redesign + UTM-tagging reads 2026-05-22 / 2026-06-05.
+**Roll-up by status (11 entries):** 🔄 10 Implemented · 🟡 1 Inconclusive (the 2026-05-12 Direct surge). First read on the 2026-05-19 checkpoint, full read 2026-06-02; mobile-redesign + UTM-tagging reads 2026-05-22 / 2026-06-05.
 
 See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state, [docs/UX-BACKLOG.md](UX-BACKLOG.md) for what's next, [docs/runbooks/weekly-funnel-refresh.md](runbooks/weekly-funnel-refresh.md) for how to pull the numbers.
 
 ---
 
 ## Active Experiments
+
+### 2026-06-01: Fix `conversion_prompt_shown` double-fire (impure setState updaters)
+
+**What/why:** `conversion_prompt_shown` was firing **twice** per qualifying breathing session (caught while verifying GA on prod after the Conversion Prompt B ship, by wrapping `window.gtag`). `breathing_session_end` fired once in the same session. Root cause: the `onSessionComplete` and `onSettingsChange` callbacks in [`src/lib/conversion/use-conversion-triggers.ts`](../src/lib/conversion/use-conversion-triggers.ts) ran their side effects (`trackEvent`, `setTimeout(... setShowSessionPrompt)`, `setShowSettingsNudge`) **inside** the `setState(prev => {…})` updater. React re-invokes updater functions (Strict Mode double-invokes in dev; concurrent rendering can re-run them in prod), so each re-invocation re-fired the analytics event. `breathing_session_end` was immune because it lives in the plain `endSession` body, not in an updater. That asymmetry is what confirmed the cause.
+
+**Fix:** Updaters are now pure. Every state write routes through one synchronous `commit(next)` helper backed by a `stateRef`, and the analytics + UI side effects moved into the callback bodies, which React does not re-invoke. The event now fires once per qualifying trigger. tsc clean, eslint clean. No behavior change to when the prompt shows or to any other event.
+
+**Impact on the live Conversion Prompt B experiment:** this is a denominator correction. **Only `conversion_prompt_shown` lived inside an updater, so only it was inflated.** `conversion_signup_completed` (markConverted) and both `conversion_prompt_dismissed` events fire in the callback body and were never affected. So the Conversion Prompt B baseline ([`conversion_prompt_shown: 52 / wk`](#2026-06-01-conversion-prompt-b-social-proof--personal-stats-100-challenger), set 2026-06-01) is inflated while the event numerators are clean. Two consequences for the 2026-06-15 read:
+
+1. **Every rate with `conversion_prompt_shown` in the denominator shifts up post-fix, with zero change in user behavior.** That covers intent (`signup_completed / shown`, the primary metric), the dismiss rate (`dismissed / shown`), and the truth guardrail (`signup_user_identified / shown`). The true pre-fix intent rate was already higher than the logged 11.5%.
+2. **The dismiss-rate guardrail can flip the verdict.** Conversion Prompt B calls **❌ Failed** if "dismiss rate clearly up" and requires dismiss **≤ +5pp** for ✅ Success. This fix makes `dismissed / shown` look clearly up as a pure artifact, risking a false ❌ Failed. The truth guardrail also rises, but that is harmless (it is a floor).
+
+So do **not** compare post-fix rates against the pre-fix logged baseline. Recompute the baseline on a post-fix `conversion_prompt_shown` count, or compare post-fix to post-fix, before applying the Conversion Prompt B criteria. The fix changes the count, not when the prompt shows or any user behavior.
+
+**Status:** 🔄 Implemented — shipping to prod 2026-06-01 (pending push approval). Commit: forthcoming. This is a tracking-correctness fix with no measure-after verdict of its own; its effect is folded into the Conversion Prompt B read (2026-06-15 first read, 2026-06-29 verdict), which must account for the prompt_shown drop.
+
+**Prod verification:** fresh logged-out session on deepbreathingexercises.com, `resonance_conversion` cleared, `window.gtag` recorder installed, one auto-completed 1-min session. Assert `conversion_prompt_shown` appears exactly once (was twice), `signin_prompt_view` still fires, and the prompt still opens after ~1.5s.
+
+---
 
 ### 2026-06-01: Conversion Prompt B (social proof + personal stats), 100% challenger
 
