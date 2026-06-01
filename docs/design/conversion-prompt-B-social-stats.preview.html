@@ -53,7 +53,7 @@ body{font-family:var(--font);font-feature-settings:"ss01" on,"case" on,"cv11" on
   --coral:#f6743b;--coral-lt:#ff9e7a;--rose:#e11d48;--line:rgba(255,255,255,0.10);
   --ease:cubic-bezier(0.22,1,0.36,1);
   position:relative;width:min(362px,calc(100vw - 32px));
-  background:rgba(44,29,20,0.55);
+  background:rgba(44,29,20,0.72);
   -webkit-backdrop-filter:blur(28px) saturate(1.2);backdrop-filter:blur(28px) saturate(1.2);
   border:1px solid var(--line);border-radius:30px;color:var(--cream);
   /* extra top room so the close button has its own band and never sits on the live row */
@@ -66,18 +66,26 @@ body{font-family:var(--font);font-feature-settings:"ss01" on,"case" on,"cv11" on
 .cps-x:hover{color:var(--cream-80);background:rgba(255,255,255,0.08);}
 .cps-x svg{width:17px;height:17px;}
 
-.cps-live{display:flex;align-items:center;gap:11px;border:1px solid var(--line);border-radius:16px;padding:12px 15px;margin:0 0 19px;background:rgba(255,255,255,0.04);}
-.cps-pulse{width:9px;height:9px;border-radius:50%;background:#46d39b;flex:none;position:relative;}
+.cps-live{display:flex;align-items:center;gap:9px;padding:0 2px;margin:0 0 18px;}
+.cps-pulse{width:9px;height:9px;border-radius:50%;background:#46d39b;flex:none;position:relative;animation:cps-av-morph 7s ease-in-out infinite;}
 .cps-pulse::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:1px solid rgba(70,211,155,0.5);animation:cps-ping 2.4s var(--ease) infinite;}
-.cps-lt{font-size:13.5px;color:var(--cream-80);line-height:1.3;}
+.cps-lt{font-size:13px;color:var(--cream-80);line-height:1.3;white-space:nowrap;}
 .cps-lt b{color:var(--cream);font-weight:600;font-variant-numeric:tabular-nums;}
 .cps-avatars{display:flex;margin-left:auto;}
-.cps-avatars span{width:26px;height:26px;border-radius:50%;border:2px solid #241710;margin-left:-9px;}
+.cps-avatars span{width:26px;height:26px;border-radius:50%;margin-left:-9px;}
 .cps-avatars span:first-child{margin-left:0;}
-.cps-av1{background:linear-gradient(135deg,#ffb59a,#e1572f);}
-.cps-av2{background:linear-gradient(135deg,#f3939f,#c23656);}
-.cps-av3{background:linear-gradient(135deg,#e7b07e,#a86a39);}
-.cps-av4{background:linear-gradient(135deg,#f0a48d,#cf5a64);}
+/* Avatar colors are a random 4 of the per-breathing-style accents, assigned inline by
+   JS on each open (see ACCENTS below). Avatars plop in one at a time, then continuously
+   morph through the breathing orb's border-radius shape (tailwind.config.ts `morph`) so
+   they read as the same design language. Entrance animates transform/opacity, morph
+   animates border-radius — different properties, so they run concurrently. Two-value
+   animation-delay desyncs them: first value is the entrance stagger (clearly sequential),
+   second seeds each morph at a different phase. */
+.cps-avatars span{animation:cps-av-in .52s var(--ease) both,cps-av-morph 9s ease-in-out infinite;}
+.cps-avatars span:nth-child(1){animation-delay:0s,0s;}
+.cps-avatars span:nth-child(2){animation-delay:.12s,-2.5s;animation-duration:.52s,10s;}
+.cps-avatars span:nth-child(3){animation-delay:.24s,-5s;animation-duration:.52s,8.5s;}
+.cps-avatars span:nth-child(4){animation-delay:.36s,-7s;animation-duration:.52s,11s;}
 
 .cps-title{font-size:23px;font-weight:600;letter-spacing:-0.015em;line-height:1.14;margin:0 0 10px;color:var(--cream);text-wrap:balance;}
 .cps-sub{font-size:14px;line-height:1.55;color:var(--cream-58);margin:0 0 21px;text-wrap:pretty;}
@@ -117,14 +125,21 @@ body{font-family:var(--font);font-feature-settings:"ss01" on,"case" on,"cv11" on
 
 .cps-success{display:none;flex-direction:column;align-items:center;text-align:center;padding:14px 0 6px;}
 .cps-success.show{display:flex;}
-.cps-ring{width:58px;height:58px;border-radius:50%;background:radial-gradient(circle at 40% 34%,#ffb59a,var(--coral) 60%,var(--rose));display:flex;align-items:center;justify-content:center;color:#241006;box-shadow:0 10px 30px -8px rgba(231,29,72,0.6);margin-bottom:18px;}
+.cps-ring{width:58px;height:58px;border-radius:50%;background:#46d39b;display:flex;align-items:center;justify-content:center;color:#241006;box-shadow:0 12px 30px -10px rgba(70,211,155,0.45);margin-bottom:18px;}
 .cps-ring svg{width:26px;height:26px;}
 .cps-success h3{font-size:21px;font-weight:600;letter-spacing:-0.015em;color:var(--cream);margin:0 0 9px;}
 .cps-success p{font-size:14px;line-height:1.5;color:var(--cream-58);margin:0;}
 .cps-success p b{color:var(--cream-80);font-weight:600;}
 
 @keyframes cps-ping{0%{transform:scale(0.6);opacity:0.9;}100%{transform:scale(1.8);opacity:0;}}
-@media (prefers-reduced-motion:reduce){.orb{animation:none;}.cps-pulse::after{animation:none;}}
+@keyframes cps-av-in{0%{opacity:0;transform:scale(0);}60%{opacity:1;transform:scale(1.18);}100%{opacity:1;transform:scale(1);}}
+@keyframes cps-av-morph{
+  0%,100%{border-radius:60% 40% 30% 70% / 60% 30% 70% 40%;}
+  25%{border-radius:45% 55% 50% 50% / 55% 45% 55% 45%;}
+  50%{border-radius:30% 60% 70% 40% / 50% 60% 30% 60%;}
+  75%{border-radius:45% 55% 40% 60% / 40% 60% 40% 60%;}
+}
+@media (prefers-reduced-motion:reduce){.orb{animation:none;}.cps-pulse{animation:none;border-radius:50%;}.cps-pulse::after{animation:none;}.cps-avatars span{animation:none;opacity:1;transform:none;border-radius:50%;}}
 
 /* reopen control (demo affordance; in production the parent owns `open`) */
 .reopen{position:fixed;left:50%;bottom:34px;transform:translateX(-50%);z-index:6;display:none;align-items:center;gap:9px;border:1px solid rgba(255,255,255,0.22);background:rgba(29,19,13,0.6);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:rgba(251,238,222,0.82);font-family:var(--font);font-size:12px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;padding:11px 18px;border-radius:999px;cursor:pointer;transition:color .2s,border-color .2s;}
@@ -153,7 +168,7 @@ body{font-family:var(--font);font-feature-settings:"ss01" on,"case" on,"cv11" on
         <span class="cps-avatars"><span class="cps-av1"></span><span class="cps-av2"></span><span class="cps-av3"></span><span class="cps-av4"></span></span>
       </div>
       <h2 class="cps-title">You're in good company.</h2>
-      <p class="cps-sub">And your own week is already adding up. Make a free account to see it, and keep it.</p>
+      <p class="cps-sub">Thousands are breathing deep, and your own minutes are adding up too. Sign up free to save your journey.</p>
       <div class="cps-stats" id="stats">
         <div class="cps-s"><div class="cps-n">37</div><div class="cps-l">Your minutes</div></div>
         <div class="cps-s"><div class="cps-n">4</div><div class="cps-l">Day streak</div></div>
@@ -175,8 +190,8 @@ body{font-family:var(--font);font-feature-settings:"ss01" on,"case" on,"cv11" on
 
     <div class="cps-success" id="success">
       <div class="cps-ring"><i data-lucide="check"></i></div>
-      <h3 id="successTitle">You're in.</h3>
-      <p id="successMsg">Your minutes are saving from now on.</p>
+      <h3 id="successTitle">You're all set.</h3>
+      <p id="successMsg">Your journey is saved from now on.</p>
     </div>
   </div>
 </div>
@@ -189,11 +204,30 @@ body{font-family:var(--font);font-feature-settings:"ss01" on,"case" on,"cv11" on
   var form=document.getElementById('form'),success=document.getElementById('success'),stats=document.getElementById('stats');
   var emailWrap=document.getElementById('emailWrap');
 
+  // The 12 per-breathing-style accent colors (src/components/resonance/constants.ts).
+  // Avatars draw a random 4 of these on each open so the faces feel varied.
+  var ACCENTS=['#e11d48','#4f46e5','#059669','#0ea5e9','#f97316','#10b981','#8b5cf6','#0891b2','#f59e0b','#38bdf8','#dc2626','#ea580c'];
+  function paintAvatars(){
+    var pool=ACCENTS.slice();
+    scrim.querySelectorAll('.cps-avatars span').forEach(function(s){
+      s.style.background=pool.splice(Math.floor(Math.random()*pool.length),1)[0];
+    });
+  }
+  paintAvatars();
+
   function closeSheet(){scrim.classList.add('hidden');reopen.classList.add('show');}
   function openSheet(){
     scrim.classList.remove('hidden');reopen.classList.remove('show');
     form.style.display='block';success.classList.remove('show');
     stats.classList.remove('unlocked');emailWrap.classList.remove('open');
+    // Demo-only: production unmounts/remounts the Radix sheet on each open, so the
+    // colors re-randomize and the entrance CSS replays for free. The preview only
+    // toggles a class, so re-pick the colors and restart the avatar animations
+    // manually (none -> reflow -> '') to mirror that replay.
+    paintAvatars();
+    scrim.querySelectorAll('.cps-avatars span').forEach(function(s){
+      s.style.animation='none';void s.offsetWidth;s.style.animation='';
+    });
   }
   function succeed(title,msg){
     stats.classList.add('unlocked');
@@ -212,7 +246,7 @@ body{font-family:var(--font);font-feature-settings:"ss01" on,"case" on,"cv11" on
   reopen.onclick=openSheet;
 
   // Demo: Google shows the unblur + success payoff (production redirects instead).
-  document.getElementById('google').onclick=function(){succeed("You're in.","Your minutes are saving from now on.");};
+  document.getElementById('google').onclick=function(){succeed("You're all set.","Your journey is saved from now on.");};
   document.getElementById('emailToggle').onclick=function(){emailWrap.classList.toggle('open');};
   document.getElementById('emailForm').onsubmit=function(e){
     e.preventDefault();

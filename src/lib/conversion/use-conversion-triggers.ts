@@ -78,7 +78,11 @@ export function useConversionTriggers(isAuthenticated: boolean) {
         };
         saveState(next);
 
-        // Show on first qualifying session, or every 3rd session if previously dismissed
+        // Show on every qualifying (>=60s) session until the visitor dismisses or
+        // converts. Once dismissed, this never re-shows (both branches below require
+        // !dismissed.session). The `% 3` branch only applies to a converted-but-not-
+        // dismissed visitor, which is rare since converting normally signs them in and
+        // the isAuthenticated guard above already returned early.
         const shouldShow = prev.convertedAt === null && !prev.dismissed.session
           ? next.sessionsOver60s >= 1
           : !prev.dismissed.session && next.sessionsOver60s % 3 === 0;

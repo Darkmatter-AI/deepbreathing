@@ -55,6 +55,24 @@ interface SocialStatsSignInSheetProps {
 
 const PREFIX = "cps"; // conversion-prompt social
 
+// The 12 per-breathing-style accent colors (src/components/resonance/constants.ts).
+// The social-proof avatars draw a random 4 of these on each open so the faces feel
+// varied and tie back to the rest of the app's color language.
+const ACCENT_COLORS = [
+  "#e11d48", "#4f46e5", "#059669", "#0ea5e9", "#f97316", "#10b981",
+  "#8b5cf6", "#0891b2", "#f59e0b", "#38bdf8", "#dc2626", "#ea580c",
+];
+
+/** Pick `n` distinct accent colors at random (client-only — keep out of render). */
+function pickAvatarColors(n: number): string[] {
+  const pool = [...ACCENT_COLORS];
+  const out: string[] = [];
+  for (let i = 0; i < n && pool.length > 0; i++) {
+    out.push(pool.splice(Math.floor(Math.random() * pool.length), 1)[0]);
+  }
+  return out;
+}
+
 export function SocialStatsSignInSheet({
   open,
   onOpenChange,
@@ -64,18 +82,25 @@ export function SocialStatsSignInSheet({
   liveCount = 1240,
   showStats = true,
   headline = "You're in good company.",
-  subtitle = "And your own week is already adding up. Make a free account to see it, and keep it.",
+  subtitle = "Thousands are breathing deep, and your own minutes are adding up too. Sign up free to save your journey.",
 }: SocialStatsSignInSheetProps) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [emailOpen, setEmailOpen] = useState(false);
   const [unlocked, setUnlocked] = useState(false);
   const [count, setCount] = useState(liveCount);
+  // Deterministic default keeps SSR/first paint stable; re-randomized on each open below.
+  const [avatarColors, setAvatarColors] = useState<string[]>(() => ACCENT_COLORS.slice(0, 4));
   const swapTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Track view once per open.
   useEffect(() => {
     if (open) trackEvent("signin_prompt_view", { variant: "social_stats" });
+  }, [open]);
+
+  // Fresh random accent colors each time the sheet opens (decorative, client-only).
+  useEffect(() => {
+    if (open) setAvatarColors(pickAvatarColors(4));
   }, [open]);
 
   // Reset to a clean form shortly after the sheet closes.
@@ -182,10 +207,9 @@ export function SocialStatsSignInSheet({
                   <b>{count.toLocaleString()}</b> breathing right now
                 </span>
                 <span className={`${PREFIX}-avatars`} aria-hidden="true">
-                  <span className={`${PREFIX}-av1`} />
-                  <span className={`${PREFIX}-av2`} />
-                  <span className={`${PREFIX}-av3`} />
-                  <span className={`${PREFIX}-av4`} />
+                  {avatarColors.map((c, i) => (
+                    <span key={`${c}-${i}`} style={{ background: c }} />
+                  ))}
                 </span>
               </div>
 
@@ -281,7 +305,7 @@ const CSS = `
   --coral:#f6743b;--coral-lt:#ff9e7a;--rose:#e11d48;--line:rgba(255,255,255,0.10);
   --ease:cubic-bezier(0.22,1,0.36,1);
   position:relative;width:min(362px,calc(100vw - 32px));
-  background:rgba(44,29,20,0.55);
+  background:rgba(44,29,20,0.72);
   -webkit-backdrop-filter:blur(28px) saturate(1.2);backdrop-filter:blur(28px) saturate(1.2);
   border:1px solid var(--line);border-radius:30px;color:var(--cream);
   /* extra top room so the close button has its own band and never sits on the live row */
@@ -295,18 +319,27 @@ const CSS = `
 .${PREFIX}-x{position:absolute;top:14px;right:16px;width:28px;height:28px;border:none;background:none;color:var(--cream-40);cursor:pointer;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:color .2s,background .2s;}
 .${PREFIX}-x:hover{color:var(--cream-80);background:rgba(255,255,255,0.08);}
 
-.${PREFIX}-live{display:flex;align-items:center;gap:11px;border:1px solid var(--line);border-radius:16px;padding:12px 15px;margin:0 0 19px;background:rgba(255,255,255,0.04);}
-.${PREFIX}-pulse{width:9px;height:9px;border-radius:50%;background:#46d39b;flex:none;position:relative;}
+.${PREFIX}-live{display:flex;align-items:center;gap:9px;padding:0 2px;margin:0 0 18px;}
+.${PREFIX}-pulse{width:9px;height:9px;border-radius:50%;background:#46d39b;flex:none;position:relative;animation:${PREFIX}-av-morph 7s ease-in-out infinite;}
 .${PREFIX}-pulse::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:1px solid rgba(70,211,155,0.5);animation:${PREFIX}-ping 2.4s var(--ease) infinite;}
-.${PREFIX}-lt{font-size:13.5px;color:var(--cream-80);line-height:1.3;}
+.${PREFIX}-lt{font-size:13px;color:var(--cream-80);line-height:1.3;white-space:nowrap;}
 .${PREFIX}-lt b{color:var(--cream);font-weight:600;font-variant-numeric:tabular-nums;}
 .${PREFIX}-avatars{display:flex;margin-left:auto;}
-.${PREFIX}-avatars span{width:26px;height:26px;border-radius:50%;border:2px solid #241710;margin-left:-9px;}
+.${PREFIX}-avatars span{width:26px;height:26px;border-radius:50%;margin-left:-9px;}
 .${PREFIX}-avatars span:first-child{margin-left:0;}
-.${PREFIX}-av1{background:linear-gradient(135deg,#ffb59a,#e1572f);}
-.${PREFIX}-av2{background:linear-gradient(135deg,#f3939f,#c23656);}
-.${PREFIX}-av3{background:linear-gradient(135deg,#e7b07e,#a86a39);}
-.${PREFIX}-av4{background:linear-gradient(135deg,#f0a48d,#cf5a64);}
+/* Avatar colors are a random 4 of the per-breathing-style accents, set inline from
+   state on each open (see ACCENT_COLORS). Avatars plop in one at a time, then
+   continuously morph through the breathing orb's border-radius shape
+   (tailwind.config.ts morph keyframe) so they read as the same design language.
+   Entrance animates transform/opacity, morph animates border-radius — different
+   properties, so they run concurrently. Two-value animation-delay desyncs them:
+   first value is the entrance stagger (clearly sequential), second seeds each
+   morph at a different phase so they don't pulse in lockstep. */
+.${PREFIX}-avatars span{animation:${PREFIX}-av-in .52s var(--ease) both,${PREFIX}-av-morph 9s ease-in-out infinite;}
+.${PREFIX}-avatars span:nth-child(1){animation-delay:0s,0s;}
+.${PREFIX}-avatars span:nth-child(2){animation-delay:.12s,-2.5s;animation-duration:.52s,10s;}
+.${PREFIX}-avatars span:nth-child(3){animation-delay:.24s,-5s;animation-duration:.52s,8.5s;}
+.${PREFIX}-avatars span:nth-child(4){animation-delay:.36s,-7s;animation-duration:.52s,11s;}
 
 .${PREFIX}-title{font-size:23px;font-weight:600;letter-spacing:-0.015em;line-height:1.14;margin:0 0 10px;color:var(--cream);text-wrap:balance;}
 .${PREFIX}-sub{font-size:14px;line-height:1.55;color:var(--cream-58);margin:0 0 21px;text-wrap:pretty;}
@@ -344,7 +377,7 @@ const CSS = `
 .${PREFIX}-dismiss:hover{color:var(--cream-58);}
 
 .${PREFIX}-success{display:flex;flex-direction:column;align-items:center;text-align:center;padding:14px 0 6px;}
-.${PREFIX}-ring{width:58px;height:58px;border-radius:50%;background:radial-gradient(circle at 40% 34%,#ffb59a,var(--coral) 60%,var(--rose));display:flex;align-items:center;justify-content:center;color:#241006;box-shadow:0 10px 30px -8px rgba(231,29,72,0.6);margin-bottom:18px;}
+.${PREFIX}-ring{width:58px;height:58px;border-radius:50%;background:#46d39b;display:flex;align-items:center;justify-content:center;color:#241006;box-shadow:0 12px 30px -10px rgba(70,211,155,0.45);margin-bottom:18px;}
 .${PREFIX}-success h3{font-size:21px;font-weight:600;letter-spacing:-0.015em;color:var(--cream);margin:0 0 9px;}
 .${PREFIX}-success p{font-size:14px;line-height:1.5;color:var(--cream-58);margin:0;}
 .${PREFIX}-success p b{color:var(--cream-80);font-weight:600;}
@@ -352,8 +385,17 @@ const CSS = `
 .${PREFIX}-spin{animation:${PREFIX}-spin .8s linear infinite;}
 @keyframes ${PREFIX}-ping{0%{transform:scale(0.6);opacity:0.9;}100%{transform:scale(1.8);opacity:0;}}
 @keyframes ${PREFIX}-spin{to{transform:rotate(360deg);}}
+@keyframes ${PREFIX}-av-in{0%{opacity:0;transform:scale(0);}60%{opacity:1;transform:scale(1.18);}100%{opacity:1;transform:scale(1);}}
+@keyframes ${PREFIX}-av-morph{
+  0%,100%{border-radius:60% 40% 30% 70% / 60% 30% 70% 40%;}
+  25%{border-radius:45% 55% 50% 50% / 55% 45% 55% 45%;}
+  50%{border-radius:30% 60% 70% 40% / 50% 60% 30% 60%;}
+  75%{border-radius:45% 55% 40% 60% / 40% 60% 40% 60%;}
+}
 @media (prefers-reduced-motion:reduce){
+  .${PREFIX}-pulse{animation:none;border-radius:50%;}
   .${PREFIX}-pulse::after{animation:none;}
   .${PREFIX}-spin{animation:none;}
+  .${PREFIX}-avatars span{animation:none;opacity:1;transform:none;border-radius:50%;}
 }
 `;
