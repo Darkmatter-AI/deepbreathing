@@ -1,9 +1,6 @@
 # dependencies
 /node_modules
 /.pnpm-store
-apps/mobile/
-apps/resonance-app/
-apps/resonance-mobile/
 
 # next
 /.next
@@ -21,19 +18,8 @@ yarn-error.log*
 .DS_Store
 .mcp.json
 
-# expo / react-native
-**/.expo/
-**/.expo-shared/
-**/web-build/
+# build output
 **/dist/
 **/coverage/
-**/ios/Pods/
-**/ios/build/
-**/ios/.xcode.env.local
-**/android/.gradle/
-**/android/.idea/
-**/android/build/
-**/android/app/build/
-**/android/local.properties
 .vercel
 .env.local
