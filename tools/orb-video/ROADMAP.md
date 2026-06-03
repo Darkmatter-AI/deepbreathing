@@ -23,14 +23,21 @@ limiter (`audioService.ts`, threshold −3 dB / ratio 20 / 1ms attack) targeting
 the cue-noise transient puffs that clip.
 
 - [x] Confirm the fix exists on `audio-v2-overnight` and is absent on `main`
-- [ ] Reproduce the clipping objectively. A 61s production capture measured
-      **−3.7 dBTP, Flat factor 0** → clipping is **intermittent**, not constant.
-      Capture longer / worst-case cue stacking until `audio-spectrogram.sh`
-      shows a true-peak ≥ −1 dBTP or flat-topped peaks.
-- [ ] A/B: same capture against an `audio-v2` preview deploy; confirm the limiter
-      pins true-peak at the ceiling with Flat factor ~0 and no broadband streaks.
-- [ ] Tune limiter threshold/release if puffs still poke through; check the
-      compressor isn't pumping the drone.
+- [x] **Local A/B done** (main/prod vs audio-v2 dev on :3031), via `audio-spectrogram.sh`:
+      | technique | main true-peak | audio-v2 true-peak | Flat factor |
+      |-----------|---------------|--------------------|-------------|
+      | box 180s  | −3.1 dBTP     | −3.9 dBTP          | 0 (both)    |
+      | wim-hof 60s | −4.7 dBTP   | −5.0 dBTP          | 0 (both)    |
+      **No hard clipping on EITHER, on slow or rapid techniques.** The master bus
+      tops out ~−3 dB, so the −3 dB limiter barely engages. audio-v2's audible
+      change is a richer ambient bed (sub-bass, breath-coupled pink noise, drone
+      evolution), not declipping.
+- [ ] ⚠️ **Re-localize the perceived clipping** — it's NOT 0 dBFS master clipping.
+      Hypotheses: (a) perceptual harshness of the cue-tone transient/noise puff
+      (fix = softer cue attack / less cue noise / lower cue gain in `playCue`);
+      (b) a non-WebAudio path the tap misses (e.g. a media-element unlock sound);
+      (c) specific technique/volume. Need user to point at where they hear it.
+- [ ] Once localized: fix at the cue-synthesis level (not the master limiter).
 - [ ] Resolve `audio-v2-overnight` WIP state (commit `d20412b` "before machine move");
       decide what ships vs what's experimental (binaural toggle, sub-bass, etc.).
 - [ ] Ship `audio-v2` to production (log result against DAR-377 criteria).
