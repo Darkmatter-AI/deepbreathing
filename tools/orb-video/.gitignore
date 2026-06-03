@@ -1,0 +1,8 @@
+node_modules/
+out/
+frames/
+# generated capture artifacts (re-capture as needed)
+public/site_audio.mp3
+public/site_audio.webm
+public/*.wav
+*.tsbuildinfo
