@@ -71,7 +71,7 @@ https://search.google.com/search-console/performance/search-analytics?
 
 The `page=!URL` syntax means "exact URL match." Replace the page URL portion to filter to any page.
 
-**Gotcha:** OAuth tokens expire; if you get an auth error, run `mcp__mass-translate-backend__start_gsc_oauth` and complete the flow.
+**Gotcha:** OAuth tokens expire; if you get an auth error (`Token has been expired or revoked`), run `mcp__mass-translate-backend__start_gsc_oauth` and complete the flow. **This re-auth is interactive — an autonomous/scheduled run cannot complete it** (it needs a human to visit the auth URL). When the GSC API is dead mid-refresh, fall back to the **GSC Performance UI via Chrome MCP** — you're logged in as `amorim.a.ferreira@gmail.com`. URL: `https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain:deepbreathingexercises.com&num_of_days=7`; the PAGES tab gives top pages, and `…/search-console/index?resource_id=…` gives the indexing buckets. This is the proven fallback as of 2026-05-22. Bing OAuth is independent and was fine.
 
 ### Pull Bing Webmaster Tools data
 
@@ -133,6 +133,28 @@ eval "$(dkmt-cc env pull deep-breathing --export 2>/dev/null)" && \
 
 ⚠️ The DB has tables from OTHER projects too (`User` uppercase = Darkmatter shared user table for PI/agents/etc, `etl_*` = PI scraper, `item_base_*` = Parfois). Don't query those — they're not our data.
 
+### Manage Resend (transactional email + bounce/complaint webhook)
+
+**What sends email:** `src/lib/auth.ts` — welcome email on `user.create.after`, magic-link on `sendMagicLink`. Both call `resend.emails.send()` with `RESEND_API_KEY`. Both `isSuppressed()`-check first against the `email_suppressions` table.
+
+**The bounce/complaint webhook:** `src/app/api/webhooks/resend/route.ts` verifies a **svix** signature with `RESEND_WEBHOOK_SECRET`, then upserts `email_suppressions` (PK on `email`, `reason` CHECK in `('bounce','complaint')`). Resend webhook id `67fe6d42-e334-472a-a131-576d8a2a385c`, events `email.bounced` + `email.complained`.
+
+**⚠️ The webhook endpoint MUST be the `origin.` subdomain, not the apex.** Resend posts to `https://origin.deepbreathingexercises.com/api/webhooks/resend` — NOT the apex. The apex routes through the mass-translate i18n proxy, which mutates the request and breaks the svix signature (svix signs exact raw bytes), so the apex always returns `401 {"error":"invalid signature"}`. See gotcha #13.
+
+**Resend API (when the dashboard SPA hangs — it did, 2026-06-04):** the `darkmatterai` Resend account is shared; the **"Deep Breathing Prod"** key is `RESEND_API_KEY`. Use raw curl with a browser `User-Agent` (a bare UA gets Cloudflare-1010-blocked):
+```bash
+KEY=$(grep '^RESEND_API_KEY=' /tmp/dbenv.prod.txt | cut -d= -f2- | tr -d '"')
+UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+# list webhooks (status, endpoint, signing_secret all returned):
+curl -s https://api.resend.com/webhooks -H "Authorization: Bearer $KEY" -H "User-Agent: $UA"
+# repoint / re-enable a webhook (PATCH; keeps the signing secret):
+curl -s -X PATCH https://api.resend.com/webhooks/<id> -H "Authorization: Bearer $KEY" -H "User-Agent: $UA" \
+  -H "Content-Type: application/json" -d '{"endpoint":"https://origin.deepbreathingexercises.com/api/webhooks/resend","status":"enabled"}'
+```
+`GET /emails` lists **account-wide** and does NOT honour `domain`/`recipient` filters — you can't easily pull just our domain's sends via API. For per-domain delivery receipts use the dashboard Logs filtered by domain (`deepbreathingexercises.com` domain id `08d3cefb-de71-43f5-b40d-0df562d1b27b`).
+
+**Test the webhook locally** with the real svix lib (`node_modules/svix`): `new Webhook(secret).sign(msgId, new Date(), payload)` → POST to origin with `svix-id`/`svix-timestamp`/`svix-signature` headers. A correct request returns `200 {"received":true}` and writes a row.
+
 ### Schedule a recurring or one-time task
 
 **Tool:** `mcp__scheduled-tasks__create_scheduled_task`
@@ -176,6 +198,14 @@ These have all bitten us before. Document in this file the FIRST time they bite,
 9. **GA4 user_property indexing latency is 24-48h.** Don't conclude a `user_id` deploy failed because the property doesn't show same-day.
 
 10. **The Neon DB host pattern `ep-bold-feather-anszztep` (non-pooler)** is the right URL for ad-hoc psql queries. The `-pooler` variant runs on PgBouncer transaction mode and silently drops multi-statement SQL — see `pi-data` skill for the full gotcha.
+
+11. **`dkmt-cc env <slug> --export` is deprecated and now returns API 404.** As of 2026-05-22 the command prints a deprecation banner and fails. For the Neon DB URL, use `vercel env pull /tmp/dbenv.txt --environment=production --yes` from this repo (it's Vercel-linked as `darkmatterai/deepbreathing-tmmj`), then `grep -E '^POSTGRES_URL_NON_POOLING=' /tmp/dbenv.txt`. The weekly-funnel-refresh runbook's "preferred" `dkmt-cc env pull` line no longer works — go straight to the Vercel fallback.
+
+12. **GSC API OAuth (mass-translate-backend) expires and can't be re-authed autonomously.** See the "Pull GSC search performance data" section above — when `sync_gsc_performance` returns `Token has been expired or revoked`, an unattended run must fall back to the GSC Performance UI via Chrome MCP. First hit 2026-05-22.
+
+13. **The mass-translate proxy breaks signed webhooks on the apex — webhooks must hit `origin.`** A POST to `https://deepbreathingexercises.com/api/webhooks/resend` (apex) returns `401 invalid signature` even with the correct secret, because the proxy mutates the request body/headers and svix verifies over exact raw bytes. The identical signed request to `https://origin.deepbreathingexercises.com/api/webhooks/resend` returns `200`. Any future signed inbound webhook (Stripe, etc.) has the same constraint: point it at `origin.`, not the apex. (2026-06-04)
+
+14. **`vercel env` values can carry a trailing newline that silently breaks strict consumers.** Both `RESEND_WEBHOOK_SECRET` and `RESEND_API_KEY` were stored in Vercel prod with a trailing `\n` (set in one session, likely an `echo`/paste). Effect was asymmetric and that's the trap: the Resend SDK **tolerated** the bad key (outbound email kept working), but svix's strict base64 decoder **threw** `Base64Coder: incorrect characters` on the bad secret, so `new Webhook()` threw and the handler returned `401` to *every* event → Resend auto-disabled the webhook. It looked like "email works, webhook is just broken." When an env-derived credential misbehaves, byte-check it: `vercel env pull /tmp/e.txt --environment=production --yes` then `python3 -c "print(repr(open('/tmp/e.txt').read()))"` and look for `\n`/quotes inside the value. Re-add cleanly with `printf '%s' 'value' | vercel env add NAME production` (no trailing newline), then **redeploy + promote** (env changes only take effect on a new deployment). (2026-06-04)
 
 ---
 
