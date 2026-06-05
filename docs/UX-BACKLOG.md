@@ -60,6 +60,26 @@ Note: `session_complete` only fires when a duration timer is set. Now that chips
 
 ---
 
+## QA — Traction-page sweep (2026-06-06)
+
+Browser QA of the ~16 pages earning the Jun 1–3 Bing spike, desktop 1280px + mobile 375px, on **production**. Full report + verdict table + evidence screenshots: [`docs/qa-reports/traction-pages-2026-06-06.md`](qa-reports/traction-pages-2026-06-06.md) and `docs/qa-evidence/traction-2026-06-06/`. Headline: **EN traction set 9/11 leverageable; localized set 0/5** (correct hero, but half-English body that the client translation pass never converts). Gate: don't push more indexing/links at the localized URLs until #23/#24 are fixed.
+
+**Verified architecture gotcha (load-bearing for these items):** localized pages serve **English server HTML**; translation is applied **client-side ~1.5 s after load**. `curl <localized-url>` returns all-English (even the hero that renders translated). So #23/#24 are *coverage gaps in the client translation pass* (content it never converts, stable at t=4 s — not a transient flash), **not** a server-side proxy skip. Ownership is ambiguous: the untranslated content (tool-page H1; science/step-by-step sections) is plausibly React-client-component-rendered and escapes the DOM translation pass — could be repo-side or mass-translate-side. Confirm the owning layer before fixing.
+
+### 23. [P0] Localized traction pages are half-English in the body
+On all 5 localized traction URLs (`/ja/4-7-8-breathing-timer`, `/ja/breathe/wim-hof`, `/ja/for/kids`, `/pt/breathe/wim-hof`, `/es/for/kids`) the hero/above-the-fold renders correctly in-language, but large blocks of deeper body content (science / mechanism / step-by-step sections) **stay English** — the client translation pass never converts them (still English at t=4 s; not a transient flash). The same English blocks recur across pages → specific content sections the pass doesn't cover, not random misses. English-run counts in body `innerText`: ja-478-timer 27, ja-wim-hof 49, ja-for-kids 58, pt-wim-hof 71, es-for-kids 91. Evidence: `qa-evidence/traction-2026-06-06/ja-wim-hof-halfenglish.png`, `es-for-kids-halfenglish.png`. **Severity:** high — these rank at pos 1–8 and a half-English page wastes the traction (and a pre-render crawl sees the all-English server HTML). **Not** the known benign meta/og limitation; this is visible body copy. Ownership ambiguous (see section header) — confirm repo vs mass-translate before fixing.
+
+### 24. [P0] `/ja/4-7-8-breathing-timer` renders an English H1
+The #1 traction page (top click query `478タイマー`, pos 1, 3 clicks) shows H1 `4-7-8 breathing timer (free online)` in **English** — reliably (5/5 fresh loads, both viewports; English at every timestamp t=0–4 s) — while the rest of the body translates to Japanese around it. The `/breathe/*` and `/for/*` templates translate their H1 fine, so this is specific to the standalone tool-page template: the `FadingHeroTitle` client component renders the English bundle string and escapes the client translation pass (same likely mechanism as #23). Evidence: `qa-evidence/traction-2026-06-06/ja-478-timer-english-h1.png`. Distinct from / more severe than the benign meta limitation — it's the visible on-page headline.
+
+### 25. [P1] Mobile: breathing orb not tappable on `/breathing-visualizer` & `/4-7-8-breathing-timer`
+At 375px the orb (`button[aria-label="Start Session"]`, z-20) is covered by the hero-content overlay (`div … inset-y-0 max-w-xl justify-end`, z-30) which **intercepts pointer events** — tapping the orb (the only in-page start control) does nothing. Reproducible 2/2 on both pages, confirmed by the browser's hit-testing. Desktop unaffected (`sm:justify-center`). Home, `/breathe/box`, `/breathe/tummo` orbs all work on mobile (2/2 OK), so it's specific to these two pages' hero layout; cascades to `/ja/4-7-8-breathing-timer`. Escape hatch: the orange "Start session" link routes to `/breathe/box` (orb works there). Related to #1/#5 but here the orb is functionally **unclickable**, not just unclear. Evidence: `breathing-visualizer-mobile-orb-dead.png` vs `breathe-box-mobile-orb-works.png`.
+
+### 26. [P2] React hydration errors on localized `/breathe` + `/for` templates
+`/ja/breathe/wim-hof`, `/pt/breathe/wim-hof`, `/ja/for/kids`, `/es/for/kids` throw `Minified React error #418/#423/#425` (hydration mismatch) on load (intermittent on `/ja/4-7-8-breathing-timer`). The brief English H1 flash at first paint on the two `/for/kids` pages is mostly the normal server-English → client-translated transition (~1.5 s) and settles correct, so the user-visible effect is minor. But `#418/#423` mean React discards server HTML and re-renders the root client-side — a correctness smell that may be *part of why* the client components race the translation pass (#23/#24). EN pages throw none. Investigate jointly with #23/#24, not in isolation.
+
+---
+
 ## ✅ Shipped this session
 
 - [x] **Add `page_viewed_breathing` event** — top of funnel, fires on mount in `Resonance.tsx` ([81a35cf](https://github.com/abiassi/deepbreathing/commit/81a35cf))
