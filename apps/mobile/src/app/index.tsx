@@ -8,6 +8,8 @@ import {
   ModeName,
   V1_MODES,
 } from '@/breathing';
+import { useBreathingAudio } from '@/breathing/useBreathingAudio';
+import { useBreathingHaptics } from '@/breathing/useBreathingHaptics';
 import { useBreathingSession } from '@/breathing/useBreathingSession';
 import { Controls } from '@/components/breathing/Controls';
 import { DurationChips } from '@/components/breathing/DurationChips';
@@ -38,6 +40,11 @@ export default function HomeScreen() {
     speedMultiplier: speed,
     selectedDurationSec: durationSec,
   });
+
+  // Phase-driven feedback. Both watch the session's phase + status and stay quiet
+  // while paused/idle; muted gates audio only.
+  useBreathingAudio({ phase: session.phase, status: session.status, muted });
+  useBreathingHaptics({ phase: session.phase, status: session.status });
 
   // Changing mode while a session is live stops it (the hook enforces this too).
   const handleSelectMode = useCallback((next: ModeName) => setMode(next), []);
