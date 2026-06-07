@@ -16,6 +16,17 @@ const NOISE_FILTER_BASE_HZ = 480;
 const NOISE_FILTER_PEAK_HZ = 2400;
 const NOISE_FILTER_Q = 0.7;
 
+// Drone-bus lowpass. The warm-themed drone uses triangle oscillators whose
+// high harmonics (and the HRTF panner's per-frame position writes) radiate
+// broadband HF energy that reads as a faint "static/hiss" on the drone-using
+// techniques (box, sigh, wim-hof — the slow modes use the pink-noise bed
+// instead, which is why they never hissed). The drone is a low pad; roots are
+// 87–165 Hz with partials up to 2× root (~330 Hz), so a gentle lowpass here
+// keeps the low harmonics that give it warmth while removing the hiss band.
+// See tools/orb-video ROADMAP for the isolation evidence.
+const DRONE_LOWPASS_HZ = 2000;
+const DRONE_LOWPASS_Q = 0.5;
+
 interface CueProfile {
   oscType: OscillatorType;
   attack: number;
@@ -147,6 +158,9 @@ export class AudioService {
   private spatialSpeedOverride: number | null = null;
 
   private droneNodes: { osc: OscillatorNode; panner: PannerNode; gain: GainNode }[] = [];
+  // Shared post-panner lowpass that all drone partials route through before the
+  // master bus — strips the triangle-harmonic / panner-zipper HF "hiss".
+  private droneLowpass: BiquadFilterNode | null = null;
   private binauralNodes: { osc: OscillatorNode; pan: StereoPannerNode; gain: GainNode }[] = [];
   private noiseNode: {
     source: AudioBufferSourceNode;
@@ -778,6 +792,17 @@ export class AudioService {
     const partials = [1, 1.5, 2, 0.99];
     const lfoRates: number[] = [];
 
+    // Shared drone bus: all partials → one lowpass → master. Removes the
+    // triangle-harmonic / panner-zipper HF that read as "static" while leaving
+    // the low warm pad intact.
+    const droneLowpass = this.ctx.createBiquadFilter();
+    droneLowpass.type = 'lowpass';
+    droneLowpass.frequency.value = DRONE_LOWPASS_HZ;
+    droneLowpass.Q.value = DRONE_LOWPASS_Q;
+    droneLowpass.connect(this.masterGain);
+    if (this.droneAnalyser) droneLowpass.connect(this.droneAnalyser);
+    this.droneLowpass = droneLowpass;
+
     partials.forEach((ratio, index) => {
       const osc = this.ctx!.createOscillator();
       const gain = this.ctx!.createGain();
@@ -807,8 +832,7 @@ export class AudioService {
 
       osc.connect(gain);
       gain.connect(panner);
-      panner.connect(this.masterGain!);
-      if (this.droneAnalyser) panner.connect(this.droneAnalyser);
+      panner.connect(droneLowpass);
 
       osc.start(t);
       this.droneNodes.push({ osc, panner, gain });
@@ -827,6 +851,7 @@ export class AudioService {
     if (!this.ctx) {
       this.droneNodes = [];
       this.droneLfoNodes = [];
+      this.droneLowpass = null;
       this.droneArc = null;
       this.spatialSpeedOverride = null;
       return;
@@ -848,6 +873,9 @@ export class AudioService {
         // already stopped
       }
     });
+    // Drop the shared lowpass reference; its feeding oscillators stop at t+1.1
+    // and auto-disconnect, so the orphaned filter becomes GC-eligible.
+    this.droneLowpass = null;
     this.droneNodes = [];
     this.droneLfoNodes = [];
     this.droneArc = null;
