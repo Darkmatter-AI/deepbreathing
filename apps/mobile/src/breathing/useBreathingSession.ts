@@ -97,10 +97,11 @@ export function useBreathingSession({
 
   onCompleteRef.current = onComplete;
 
-  // Snap the orb to its current point, then animate toward the phase target over
-  // the remaining phase time. Pure math from `orbAnimationTarget`; linear easing
-  // so the displayed value always equals the helper's `fromScale` — making the
-  // speed-change retarget seamless.
+  // Animate the orb toward the current phase's target over its remaining time,
+  // starting from wherever the orb visually is right now (we do NOT reassign
+  // scale.value first). Reanimated retargets a withTiming from its live value,
+  // so phase-change AND mid-phase speed-change transitions stay continuous with
+  // no snap. Linear easing keeps the rate constant within a phase.
   const fireOrbAnimation = useCallback(
     (eff: number) => {
       const t = orbAnimationTarget(
@@ -109,7 +110,6 @@ export function useBreathingSession({
         speedRef.current,
         eff
       );
-      scale.value = t.fromScale;
       scale.value = withTiming(t.toScale, {
         duration: t.durationMs,
         easing: Easing.linear,
@@ -228,16 +228,26 @@ export function useBreathingSession({
   // Speed change: update the ref, then (if running) advance + retarget the orb so
   // the in-flight withTiming doesn't keep running at the old duration. Per the v1
   // rule the new speed applies to the current phase's remaining time onward.
+  //
+  // A speed change can recompute the current phase as already-elapsed and roll the
+  // cursor across a boundary. We must propagate that with setPhase here — otherwise
+  // this effect pre-advances cursorRef, the next tick sees no further change, and
+  // the phase label / audio cue / haptic for the crossed phase are silently dropped
+  // until the next natural boundary.
   useEffect(() => {
     speedRef.current = speedMultiplier;
     if (statusRef.current === "running") {
       const eff = effectiveNow(pauseRef.current, Date.now());
+      const prevPhase = cursorRef.current.phase;
       cursorRef.current = advanceCursor(
         cursorRef.current,
         patternRef.current,
         speedRef.current,
         eff
       );
+      if (cursorRef.current.phase !== prevPhase) {
+        setPhase(cursorRef.current.phase);
+      }
       fireOrbAnimation(eff);
     }
   }, [speedMultiplier, fireOrbAnimation]);

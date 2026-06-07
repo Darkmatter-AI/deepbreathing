@@ -2,6 +2,7 @@
 // small dark palette. Mode accent colors come from the pattern catalog itself.
 
 import { ModeName } from '@/breathing';
+import { ALLOWED_DURATIONS_SEC } from '@/breathing/settings';
 
 /** Short, glanceable labels for the mode pills (ModeName values are long). */
 export const MODE_LABELS: Record<ModeName, string> = {
@@ -27,13 +28,15 @@ export interface DurationOption {
   a11y: string;
 }
 
-export const DURATION_OPTIONS: DurationOption[] = [
-  { label: 'Off', seconds: 0, a11y: 'No timer' },
-  { label: '1', seconds: 60, a11y: '1 minute' },
-  { label: '3', seconds: 180, a11y: '3 minutes' },
-  { label: '5', seconds: 300, a11y: '5 minutes' },
-  { label: '10', seconds: 600, a11y: '10 minutes' },
-];
+// Derived from the single source of truth in settings.ts so a chip can never be
+// offered that sanitizeSettings would reject on reload.
+export const DURATION_OPTIONS: DurationOption[] = ALLOWED_DURATIONS_SEC.map(
+  (seconds) => {
+    if (seconds === 0) return { label: 'Off', seconds, a11y: 'No timer' };
+    const min = seconds / 60;
+    return { label: String(min), seconds, a11y: `${min} minute${min === 1 ? '' : 's'}` };
+  }
+);
 
 /** Minimum hit target per platform a11y guidance. */
 export const MIN_TOUCH = 44;

@@ -31,14 +31,17 @@ export function useBreathingHaptics({
   const lastPhaseRef = useRef<BreathingPhase | null>(null);
 
   useEffect(() => {
-    if (Platform.OS === 'web' || !enabled) return;
+    if (Platform.OS === 'web') return;
     if (status === 'idle') {
       lastPhaseRef.current = null;
       return;
     }
     if (status !== 'running') return; // hold ref across pause
     if (phase === lastPhaseRef.current) return;
+    // Mark this phase observed BEFORE the `enabled` gate, so toggling haptics
+    // back on mid-phase doesn't read a stale ref and fire a spurious tap.
     lastPhaseRef.current = phase;
+    if (!enabled) return;
 
     switch (phase) {
       case BreathingPhase.Inhale:

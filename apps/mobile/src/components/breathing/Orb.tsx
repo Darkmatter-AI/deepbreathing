@@ -5,7 +5,6 @@
 // Glow is faked with three concentric translucent layers (react-native-svg is
 // not a dependency) — cheap, universal on web + native, and reads as a soft halo.
 
-import { useMemo } from "react";
 import { StyleSheet, View } from "react-native";
 import Animated, {
   useAnimatedStyle,
@@ -15,6 +14,13 @@ import Animated, {
 /** Scale 0 maps to this fraction of full size so the orb stays visible when empty. */
 const ORB_MIN = 0.12;
 
+/** Concentric glow layers (outer→core), as fractions of the orb diameter. */
+const GLOW_LAYERS = [
+  { frac: 1.0, opacity: 0.16 },
+  { frac: 0.72, opacity: 0.34 },
+  { frac: 0.46, opacity: 0.96 },
+];
+
 interface OrbProps {
   scale: SharedValue<number>;
   color: string;
@@ -23,15 +29,6 @@ interface OrbProps {
 }
 
 export function Orb({ scale, color, size = 280 }: OrbProps) {
-  const layers = useMemo(
-    () => [
-      { frac: 1.0, opacity: 0.16 },
-      { frac: 0.72, opacity: 0.34 },
-      { frac: 0.46, opacity: 0.96 },
-    ],
-    []
-  );
-
   const animatedStyle = useAnimatedStyle(() => {
     const s = ORB_MIN + scale.value * (1 - ORB_MIN);
     return { transform: [{ scale: s }] };
@@ -46,7 +43,7 @@ export function Orb({ scale, color, size = 280 }: OrbProps) {
       <Animated.View
         style={[styles.group, { width: size, height: size }, animatedStyle]}
       >
-        {layers.map((layer) => {
+        {GLOW_LAYERS.map((layer) => {
           const d = size * layer.frac;
           return (
             <View
