@@ -1,16 +1,11 @@
-import { useCallback, useState } from 'react';
 import { StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import {
-  BREATHING_PATTERNS,
-  DEFAULT_SPEED_MULTIPLIER,
-  ModeName,
-  V1_MODES,
-} from '@/breathing';
+import { BREATHING_PATTERNS, V1_MODES } from '@/breathing';
 import { useBreathingAudio } from '@/breathing/useBreathingAudio';
 import { useBreathingHaptics } from '@/breathing/useBreathingHaptics';
 import { useBreathingSession } from '@/breathing/useBreathingSession';
+import { useBreathingSettings } from '@/breathing/useBreathingSettings';
 import { Controls } from '@/components/breathing/Controls';
 import { DurationChips } from '@/components/breathing/DurationChips';
 import { ModeSelector } from '@/components/breathing/ModeSelector';
@@ -30,10 +25,8 @@ export default function HomeScreen() {
   const { width, height } = useWindowDimensions();
   const orbSize = Math.max(200, Math.min(300, Math.min(width, height) * 0.62));
 
-  const [mode, setMode] = useState<ModeName>(ModeName.Box);
-  const [speed, setSpeed] = useState(DEFAULT_SPEED_MULTIPLIER);
-  const [durationSec, setDurationSec] = useState(0);
-  const [muted, setMuted] = useState(false);
+  const { mode, speed, durationSec, muted, setMode, setSpeed, setDurationSec, setMuted } =
+    useBreathingSettings();
 
   const session = useBreathingSession({
     mode,
@@ -46,9 +39,7 @@ export default function HomeScreen() {
   useBreathingAudio({ phase: session.phase, status: session.status, muted });
   useBreathingHaptics({ phase: session.phase, status: session.status });
 
-  // Changing mode while a session is live stops it (the hook enforces this too).
-  const handleSelectMode = useCallback((next: ModeName) => setMode(next), []);
-
+  // Selecting a mode while a session is live stops it (enforced in the session hook).
   const accent = session.themeColor;
 
   return (
@@ -59,7 +50,7 @@ export default function HomeScreen() {
             modes={V1_MODES}
             selected={mode}
             accent={accent}
-            onSelect={handleSelectMode}
+            onSelect={setMode}
           />
         </View>
 
