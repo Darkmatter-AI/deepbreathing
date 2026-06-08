@@ -6,38 +6,39 @@
 Your job is **Phases 1–4 below**: create the channel, upload the 60 videos, wire
 the resulting YouTube IDs back into the website, and log the experiment.
 
-> Read `out/launch/SUMMARY.md` first — it's the build report. This file is the
-> action plan.
+> Read `/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video/out/launch/SUMMARY.md`
+> first — it's the build report. This file is the action plan.
 
 ---
 
-## 0. Where everything lives
+## 0. Where everything lives (absolute paths)
 
-All paths are relative to the orb-video tool dir:
+| What | Absolute path |
+|---|---|
+| Orb-video tool dir | `/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video` |
+| Website source (Next.js app you deploy) | `/Users/abi/Sites/deepbreathing-orb-render` |
+| The launch package | `/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video/out/launch` |
+| Rendered masters (intermediate) | `/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video/out/_masters` |
+| Audio beds | `/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video/public/{box,coherent,relax,sigh,belly}.mp3` |
 
-```
-/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video
-```
-
-This is an isolated git worktree on branch `chore/orb-video-launch-assets`. The
-**website source** (the Next.js app you'll deploy in Phase 3) is the SAME worktree's
-root: `/Users/abi/Sites/deepbreathing-orb-render` (it shares the repo; the live site
-is `deepbreathingexercises.com`, deployed on Vercel).
+This is an isolated git worktree on branch `chore/orb-video-launch-assets`. The website
+source shares the same repo (the live site is `deepbreathingexercises.com`, deployed on Vercel).
 
 > ⚠️ The video assets are **local-only and gitignored** (`out/` = 5.7 GB). They are
-> NOT in git and NOT on any remote. If you run on a different machine, the assets
-> must be copied first (Drive/bucket). On this machine they're already in place.
+> NOT in git and NOT on any remote. If you run on a different machine, copy the assets
+> first (Drive/bucket). On this machine they're already in place.
 
-### The package — `out/launch/`
+### The package — `/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video/out/launch/`
 ```
-out/launch/
+/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video/out/launch/
 ├── upload_manifest.csv          ← SOURCE OF TRUTH for uploads (60 rows, one per video)
 ├── channel_setup.md             ← channel name, bio, playlists, launch cadence
 ├── keywords.json                ← DataForSEO search volumes (reference)
 ├── SUMMARY.md                   ← build report + QA results
-├── sample-particles-box-*.png   ← look reference (already approved)
+├── sample-particles-box-light.png   ← look reference (already approved)
+├── sample-particles-box-dark.png    ← look reference (already approved)
 ├── render.log                   ← build log
-└── <technique>/
+└── <technique>/                 ← technique ∈ {box, coherent, 4-7-8, physiological-sigh, belly}
     ├── landscape/<technique>-<theme>-landscape-<dur>.mp4   (4K 3840×2160; dur ∈ 1min/2min/5min/10min)
     │   + <same-name>.json   (structured metadata)
     │   + <same-name>.txt    (PASTE-READY title line + description)
@@ -49,23 +50,30 @@ out/launch/
 - Every `.mp4` has a matching `.json` (machine-readable) and `.txt` (the first line is
   the **title**, the rest is the **description** ready to paste into YouTube).
 
+Example full paths:
+```
+/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video/out/launch/box/landscape/box-light-landscape-5min.mp4
+/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video/out/launch/box/landscape/box-light-landscape-5min.txt
+/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video/out/launch/belly/shorts/belly-dark-shorts-30s.mp4
+```
+
 ---
 
 ## 1. What's already done (the homework) — DO NOT REDO
 
-✅ **Rendered & QA-verified** (`node scripts/render_matrix.js --qa`):
+✅ **Rendered & QA-verified** (`node /Users/abi/Sites/deepbreathing-orb-render/tools/orb-video/scripts/render_matrix.js --qa`):
 - 60/60 finals pass ffprobe (h264, 8-bit 4:2:0, correct resolution, duration ±0.1s, AAC audio).
 - 20/20 masters are seam-safe (loop join is invisible — verified by frame diff).
 - Clean audio baked in. 5/5 beds hiss-fixed, no clipping (the drone-static fix is in).
 
-✅ **Per-video metadata generated** (`scripts/launch/gen-launch-package.mjs`):
+✅ **Per-video metadata generated** (`/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video/scripts/launch/gen-launch-package.mjs`):
 - Titles (all ≤100 chars), descriptions, tags (all ≤500 chars), chapters
   (landscape only: first 00:00, ≥3, ≥10s spacing), built from the live site
-  editorial copy in `src/data/breathing-pages.ts`.
+  editorial copy in `/Users/abi/Sites/deepbreathing-orb-render/src/data/breathing-pages.ts`.
 - Real search-volume keywords baked into titles/tags (box breathing 49.5k,
   diaphragmatic breathing 40.5k, 4-7-8 14.8k, etc.).
 
-✅ **Channel copy** drafted in `channel_setup.md` (name, ≤1000-char bio, playlists, cadence).
+✅ **Channel copy** drafted in `/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video/out/launch/channel_setup.md` (name, ≤1000-char bio, playlists, cadence).
 
 ✅ **Look approved** — the closed-form particle motion + light/dark themes were signed off.
 
@@ -76,14 +84,14 @@ videos into the site, deploy, log the experiment. **No thumbnails were made** (o
 
 ## 2. The manifest — your upload source of truth
 
-`out/launch/upload_manifest.csv`, 60 rows. It's RFC-4180 (descriptions contain
-quoted newlines — parse with a real CSV reader / Sheets / `python -c "import csv"`,
-**not** `wc -l`). Columns:
+`/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video/out/launch/upload_manifest.csv`,
+60 rows. It's RFC-4180 (descriptions contain quoted newlines — parse with a real CSV
+reader / Sheets / `python3 -c "import csv"`, **not** `wc -l`). Columns:
 
 | column | use |
 |---|---|
 | `filename` | the .mp4 to upload |
-| `path` | its location under the repo (`out/launch/...`) |
+| `path` | its location, relative to `/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video` (e.g. `out/launch/box/landscape/box-light-landscape-5min.mp4`) |
 | `technique` | e.g. "Box Breathing" |
 | `duration` / `duration_seconds` | e.g. `5min` / `300` |
 | `orientation` | `landscape` or `shorts` |
@@ -99,17 +107,21 @@ quoted newlines — parse with a real CSV reader / Sheets / `python -c "import c
 | `chapters` | `0:00 Intro; …` (landscape; YouTube auto-detects them from the description too) |
 | `cta_url` | `https://deepbreathingexercises.com/breathe/<slug>` (in the description) |
 
+> The `path` column is repo-relative for portability. To get the absolute path, prefix
+> with `/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video/`.
+
 Tip: the `.txt` sidecar next to each video is the cleanest paste source — line 1 = title, blank line, then the full description (chapters already embedded).
 
 ---
 
 ## 3. PHASE 1 — Create the channel
 
-Follow `out/launch/channel_setup.md`. Summary:
+Follow `/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video/out/launch/channel_setup.md`. Summary:
 - **Name:** "Deep Breathing Exercises" (exact brand match). Handle `@deepbreathingexercises`.
 - **Bio:** paste the ≤1000-char bio from that file.
 - **Defaults for every upload:** Category **Education**, **Not made for kids**, language **en**.
-- **Channel trailer / featured:** Box Breathing 5-min (light) → `out/launch/box/landscape/box-light-landscape-5min.mp4`.
+- **Channel trailer / featured:** Box Breathing 5-min (light) →
+  `/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video/out/launch/box/landscape/box-light-landscape-5min.mp4`.
 - Create the **playlists** listed in `channel_setup.md` (by technique, by use-case, by duration).
 
 > Uploading needs a logged-in Google/YouTube session. If you have YouTube Data API
@@ -121,8 +133,10 @@ Follow `out/launch/channel_setup.md`. Summary:
 
 ## 4. PHASE 2 — Upload the 60 videos
 
-Process each manifest row: upload `path`, set `title`/`description`/`tags`, Category
-Education, Not-made-for-kids, language en, add to `playlist`.
+Process each manifest row: upload the file at
+`/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video/<path>`, set
+`title`/`description`/`tags`, Category Education, Not-made-for-kids, language en,
+add to `playlist`.
 
 **Publish schedule (anti-cannibalization — already decided):**
 - **`theme=light` → publish public** on its launch day.
@@ -137,8 +151,9 @@ Education, Not-made-for-kids, language en, add to `playlist`.
 - Thu: 1/2/10-min light variants across techniques.
 - Fri: remaining dark variants; review CTR/retention; pin the best.
 
-**Shorts:** titles already end with `#shorts`; upload portrait (1440×2560) ones from
-`<technique>/shorts/`. No chapters on Shorts (correct).
+**Shorts:** titles already end with `#shorts`; upload the portrait (1440×2560) files from
+`/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video/out/launch/<technique>/shorts/`.
+No chapters on Shorts (correct).
 
 **Chapters (landscape):** already in the description, so YouTube will render them
 automatically. The `chapters` CSV column is a backup.
@@ -153,7 +168,7 @@ manifest, or keep a `slug,theme,orientation,duration → youtube_id` map.
 
 The site already renders ONE embedded YouTube video per technique page (an `<iframe>`
 + a `VideoObject` schema for SEO). It's the `video` field on each entry in
-`src/data/breathing-pages.ts`:
+`/Users/abi/Sites/deepbreathing-orb-render/src/data/breathing-pages.ts`:
 
 ```ts
 video: {
@@ -163,7 +178,8 @@ video: {
 },
 ```
 
-Rendered by `src/app/breathe/pattern-page.tsx` (iframe ~line 404, VideoObject schema ~line 185).
+Rendered by `/Users/abi/Sites/deepbreathing-orb-render/src/app/breathe/pattern-page.tsx`
+(iframe ~line 404, VideoObject schema ~line 185).
 
 **Current state — IMPORTANT editorial decision:**
 | technique | current `video` embed | note |
@@ -191,7 +207,8 @@ Huberman). **Do not blindly replace them.** Recommended approach:
 - Add a "Watch on YouTube" / channel link in the site footer or `/breathe` index.
 - The descriptions already drive YouTube→site (CTA to `/breathe/<slug>`); this closes the loop site→YouTube.
 
-**Deploy:** this repo deploys on **Vercel**. After editing `breathing-pages.ts`:
+**Deploy:** this repo deploys on **Vercel**. After editing
+`/Users/abi/Sites/deepbreathing-orb-render/src/data/breathing-pages.ts`:
 ```bash
 cd /Users/abi/Sites/deepbreathing-orb-render
 # make changes on a feature branch, commit, then:
@@ -207,8 +224,9 @@ schema validates (Rich Results Test).
 
 ## 6. PHASE 4 — Log the experiment
 
-Per repo policy (`CLAUDE.md` → `docs/PRODUCT-EXPERIMENTS.md`), add an entry BEFORE/at
-launch with hypothesis + baseline + pre-committed success criteria, e.g.:
+Per repo policy (`/Users/abi/Sites/deepbreathing-orb-render/CLAUDE.md` →
+`/Users/abi/Sites/deepbreathing-orb-render/docs/PRODUCT-EXPERIMENTS.md`), add an entry
+BEFORE/at launch with hypothesis + baseline + pre-committed success criteria, e.g.:
 - **Hypothesis:** a YouTube channel of guided breathing timers drives qualified
   traffic + new sessions to deepbreathingexercises.com.
 - **Baseline:** current organic sessions / referral from YouTube (≈0).
@@ -216,7 +234,8 @@ launch with hypothesis + baseline + pre-committed success criteria, e.g.:
   assisted signups ≥ Y within 4 weeks." (Owner sets X/Y.)
 - Set a measure-after date; mark 🔄 Implemented.
 
-Also tick the remaining ROADMAP item in `tools/orb-video/ROADMAP.md` ("Manual upload")
+Also tick the remaining ROADMAP item in
+`/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video/ROADMAP.md` ("Manual upload")
 once done.
 
 ---
@@ -226,14 +245,20 @@ once done.
 - **Irreversible / outward-facing:** channel creation, uploads, and prod deploys are
   public. Confirm owner authorization before each first-of-its-kind action.
 - **Audio provenance:** beds were captured from the LOCAL hiss-fixed build (`:3031`,
-  `dbe-audio-v2`), not production. If audio-v2 ships to prod and differs, re-capture:
-  `bash scripts/capture_beds.sh && node scripts/render_matrix.js && node scripts/render_matrix.js --qa`.
-- **Re-generate metadata only** (no re-render) after editing copy/keywords:
-  `node --import ./scripts/launch/alias-loader.mjs scripts/launch/gen-launch-package.mjs`
+  `dbe-audio-v2`), not production. If audio-v2 ships to prod and differs, re-capture (run from `/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video`):
+  ```bash
+  bash scripts/capture_beds.sh
+  node scripts/render_matrix.js
+  node scripts/render_matrix.js --qa
+  ```
+- **Re-generate metadata only** (no re-render) after editing copy/keywords, from `/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video`:
+  ```bash
+  node --import ./scripts/launch/alias-loader.mjs scripts/launch/gen-launch-package.mjs
+  ```
 - **Re-render is resumable:** `node scripts/render_matrix.js` skips any valid existing output.
 - **Format note:** finals are full-range `yuvj420p` (Remotion-native, YouTube-OK). Don't "fix" this.
-- **node_modules** in `tools/orb-video` is a symlink to the sibling worktree — fine for
-  running scripts; don't commit it.
+- **node_modules** at `/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video/node_modules`
+  is a symlink to the sibling worktree — fine for running scripts; don't commit it.
 
 ---
 
@@ -243,10 +268,10 @@ once done.
 cd /Users/abi/Sites/deepbreathing-orb-render/tools/orb-video
 cat out/launch/SUMMARY.md           # build report
 cat out/launch/channel_setup.md     # channel name/bio/playlists
-column -s, -t < out/launch/upload_manifest.csv | less -S   # (rough view; use a real CSV parser for descriptions)
+python3 -c "import csv;[print(r['filename'],'->',r['title']) for r in csv.DictReader(open('out/launch/upload_manifest.csv'))]"
 ls out/launch/box/landscape/        # see the files + .txt paste sources
 ```
-1. Phase 1: create channel from `channel_setup.md`.
+1. Phase 1: create channel from `/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video/out/launch/channel_setup.md`.
 2. Phase 2: upload all 60 per the manifest; light public / dark +48h; capture YouTube IDs.
-3. Phase 3: wire IDs into `src/data/breathing-pages.ts` (belly first; ask before replacing authority embeds), deploy via Vercel.
-4. Phase 4: log in `docs/PRODUCT-EXPERIMENTS.md`; tick `ROADMAP.md`.
+3. Phase 3: wire IDs into `/Users/abi/Sites/deepbreathing-orb-render/src/data/breathing-pages.ts` (belly first; ask before replacing authority embeds), deploy via Vercel.
+4. Phase 4: log in `/Users/abi/Sites/deepbreathing-orb-render/docs/PRODUCT-EXPERIMENTS.md`; tick `/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video/ROADMAP.md`.
