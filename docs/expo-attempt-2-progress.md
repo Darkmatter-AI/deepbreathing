@@ -1,7 +1,7 @@
 # Expo Breathing App — progress / handoff
 
-**Status: PIVOTED to web-parity. v1 render parity achieved (Expo web + iOS sim, light + dark).
-Audio audibility + on-device tap interaction await human confirmation.**
+**Status: PIVOTED to web-parity. v1 achieved — render AND interactive flow verified on Expo web +
+iOS sim, light + dark, with screenshots. Only physical audio audibility remains human-only.**
 
 _Last updated: 2026-06-08._
 
@@ -42,44 +42,53 @@ plain DOM on Expo web → 1:1 by construction.
 |---|---|---|---|
 | Morphing blob orb + glow + ring + hue | ✅ | ✅ | `docs/screenshots/dom-ios-dark.png` |
 | Canvas particle field | ✅ | ✅ | same |
-| In-orb phase + instruction text (i18n, auto-locale) | ✅ ("INSPIRE DEVAGAR…") | ✅ render | — |
-| Tap-to-start → running state | ✅ (web) | ⏳ needs tap | — |
-| Duration chips | ✅ | ✅ | dark/light shots |
-| Settings gear → sheet (speed, mute, mode, theme toggle) | ✅ | ✅ render | — |
-| **Light theme** (cream bg) | ✅ `--background rgb(253,248,242)` (DOM-inspected) | ✅ | `docs/screenshots/dom-ios-light.png` |
-| **Dark theme** (warm-dark) | ✅ | ✅ | `docs/screenshots/dom-ios-dark.png` |
-| Generative AudioContext starts (no errors) | ✅ | ⏳ needs tap | — |
+| In-orb phase + instruction text (i18n, auto-locale) | ✅ ("INSPIRE DEVAGAR…") | ✅ ("INHALE SLOWLY…") | `dom-ios-running.png` |
+| Tap-to-start → running state | ✅ | ✅ orb grows, "INHALE SLOWLY…" | `dom-ios-running.png` |
+| Phase cycling (inhale→hold→exhale) | ✅ | ✅ → "EXHALE…" | `dom-ios-exhale.png` |
+| Pause / resume (tap orb) | ✅ | ✅ Play icon ↔ running | `dom-ios-*` |
+| Session clock ticks | ✅ | ✅ 0:58 in sheet | `dom-ios-settings.png` |
+| Duration chips | ✅ | ✅ | `dom-ios-settings.png` |
+| Settings gear → sheet (speed, mute, mode, theme) | ✅ | ✅ opens, all controls | `dom-ios-settings.png` |
+| **Mode selection** (6 modes) | ✅ | ✅ Box→Coherent, pattern updates | `dom-ios-mode-switch.png` |
+| In-app light/dark toggle | ✅ | ✅ light↔dark | `dom-ios-theme-toggle.png` |
+| **Light theme** (cream bg) | ✅ `--background rgb(253,248,242)` | ✅ | `dom-ios-light.png` |
+| **Dark theme** (warm-dark) | ✅ | ✅ | `dom-ios-dark.png` |
+| Audio unlock/resume on tap | ✅ AudioContext created | ✅ **unlocked+running** (session passed the resume-gate) | — |
 | Background → audio suspend | ✅ wired (AppState→prop) | wired | — |
 | tsc clean / 47 vitest green | ✅ | — | — |
 
 (The 47 vitest tests cover the **retired** native engine's pure modules; still green. The web
 `BreathingExperience` reuses the website's own — already production-tested — engine.)
 
+### iOS interaction — NOW VERIFIED via `idb` (resolved)
+
+The headless sim-tap blocker is solved: `idb_companion` 1.1.8 (`brew install facebook/fb/idb-companion`)
++ `fb-idb` on **Python 3.10** (`brew install python@3.10`; the system 3.14 crashes fb-idb on the
+removed `asyncio.get_event_loop()`). Repro:
+```bash
+brew install python@3.10 && /opt/homebrew/bin/python3.10 -m venv /tmp/idb310 && /tmp/idb310/bin/pip install fb-idb
+UDID=910F5A6F-0A5A-47B6-84DB-8A079449BAF3   # iPhone 17 Pro
+PATH="/opt/homebrew/bin:$PATH" /tmp/idb310/bin/idb ui tap 197 340 --udid $UDID   # orb (start/pause), pts
+# gear ≈ (363,105); Coherent mode ≈ (273,688); theme toggle ≈ (289,300)
+```
+Driven on the sim with screenshots: tap-to-start → "INHALE SLOWLY" (orb grows), phase cycle →
+"EXHALE", pause↔resume, clock 0:58, settings sheet, mode Box→Coherent, light↔dark toggle. The
+session passing `handleTogglePlay`'s `if (!resumed) return` gate proves **`AudioContext.resume()`
+returned `'running'` — audio is unlocked and the generative engine is live on iOS.**
+
 ## Pending ⏳ / known gaps
 
-1. **Audio audibility on iOS (human-only).** The generative engine is wired and the AudioContext
-   starts on Expo web with no errors, but actual sound on the iOS WebView needs an ear. The
-   audioService's tiny base64 **unlock WAV `DecodeError`'d** in WKWebView (logged) — the primary
-   `AudioContext.resume()` on the in-WebView orb tap should still unlock it; **verify on the sim/device**.
-   Silent-switch: `setAudioModeAsync({playsInSilentMode:true})` is applied natively; confirm it covers
-   the WebView's audio session (spec risk — unverified).
-2. **iOS tap-to-start interaction** — render is proven; the interactive state machine (mode select,
-   start/pause/resume/stop, clock) is verified on **Expo web via instrumented clicks**: tapping the
-   orb creates an `AudioContext` and flips the label to the phase instruction ("Inspire devagar…").
-   (Continuous run on the headless MCP browser is confounded by tab-visibility firing the page's
-   suspend handler + throttling rAF — NOT an app bug; absent in the native always-visible WebView.)
-   Not yet driven on the sim: **no working headless sim-tap tool.** Attempts: AppleScript→`System
-   Events` blocked by Accessibility (`-1712`); `idb_companion` 1.1.8 IS now installed via
-   `brew install facebook/fb/idb-companion` but has **no direct tap** (needs the gRPC client);
-   `fb-idb` (the `idb` CLI) installs but **crashes on Python 3.14** (`asyncio.get_event_loop()`
-   removed) — it needs **Python ≤3.11** (`brew install python@3.10`, venv, `pip install fb-idb`,
-   `idb connect`, `idb ui tap X Y`). Simplest path: **tap the orb on the sim by hand.**
-3. **Haptics felt** — wired (native bridge) + tsc-clean, but cannot be felt on the simulator;
+1. **Physical audio audibility (human-only).** Engine is unlocked + running on iOS (above), and the
+   in-app "make sure your phone is not on silent" hint shows — but whether sound actually comes out
+   of the speakers / survives the hardware mute switch can only be confirmed by ear. The base64
+   **unlock WAV `DecodeError`'d** in WKWebView (logged, non-fatal since `ctx.resume()` is the real
+   unlock); if a device test is ever silent, drop that element and rely on `resume()` alone.
+2. **Haptics felt** — wired (native bridge) + tsc-clean, but cannot be felt on the simulator;
    confirm on a real device.
-4. **Safe-area / status bar polish** (mobile-adaptation phase) — light mode shows a black native
+3. **Safe-area / status bar polish** (mobile-adaptation phase) — light mode shows a black native
    strip behind the top safe area; make the host edge-to-edge / theme-matched.
-5. Dev-only "Open debugger to view warnings" banner — non-fatal; triage the warning.
-6. Remove the retired native re-implementation (`src/breathing/*`, `src/components/breathing/*`,
+4. Dev-only "Open debugger to view warnings" banner — non-fatal; triage the warning.
+5. Remove the retired native re-implementation (`src/breathing/*`, `src/components/breathing/*`,
    `src/app/breathe-web.tsx`) once the DOM path is signed off.
 
 ## Exact next commands
