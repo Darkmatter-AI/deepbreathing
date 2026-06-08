@@ -12,8 +12,33 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Stack } from 'expo-router';
 import * as Localization from 'expo-localization';
 import { setAudioModeAsync } from 'expo-audio';
+import * as Haptics from 'expo-haptics';
 
 import BreathingExperienceDom from '../components/breathing-web/BreathingExperience.dom';
+
+// Native haptics bridge — the DOM component's navigator.vibrate is a no-op in the
+// iOS WKWebView, so it emits an onEvent('haptic', {phase}) that we map to expo-haptics.
+const fireHaptic = (phase: unknown) => {
+  switch (phase) {
+    case 'Inhale':
+    case 'Inhale (Top up)':
+      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
+      break;
+    case 'Hold In':
+    case 'Hold Out':
+      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
+      setTimeout(
+        () => Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {}),
+        130,
+      );
+      break;
+    case 'Exhale':
+      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Heavy).catch(() => {});
+      break;
+    default:
+      break;
+  }
+};
 
 const toBreathingAppState = (status: AppStateStatus): 'active' | 'background' =>
   status === 'active' ? 'active' : 'background';
@@ -62,7 +87,9 @@ export default function HomeScreen() {
           forcedTheme={theme}
           appState={appState}
           onSessionComplete={async (_seconds) => {}}
-          onEvent={async (_name, _params) => {}}
+          onEvent={async (name, params) => {
+            if (name === 'haptic') fireHaptic((params as { phase?: unknown })?.phase);
+          }}
         />
       </SafeAreaView>
     </View>

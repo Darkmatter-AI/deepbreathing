@@ -358,7 +358,14 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
 
   // --- Haptics Effect ---
   useEffect(() => {
-    if (!isRunning || typeof navigator === 'undefined' || typeof navigator.vibrate !== 'function') return;
+    if (!isRunning) return;
+
+    // Native haptics bridge: navigator.vibrate is a no-op inside an iOS WKWebView,
+    // so emit the phase to the native host, which fires expo-haptics. On Expo web /
+    // Android web (where vibrate exists) the web path below still runs.
+    onEvent?.('haptic', { phase });
+
+    if (typeof navigator === 'undefined' || typeof navigator.vibrate !== 'function') return;
 
     // Trigger haptics on phase change
     switch (phase) {
@@ -375,7 +382,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
         navigator.vibrate(200); // Long grounding buzz
         break;
     }
-  }, [phase, isRunning]);
+  }, [phase, isRunning, onEvent]);
 
   // Theme: in-app toggle wins, else the native/device theme prop.
   const activeTheme = themeOverride ?? forcedTheme;

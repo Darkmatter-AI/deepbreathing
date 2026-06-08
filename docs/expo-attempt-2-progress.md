@@ -1,129 +1,104 @@
-# Expo Breathing App — attempt 2 progress / handoff
+# Expo Breathing App — progress / handoff
 
-**Status: v1 COMPLETE.** All six milestones (M1–M6) implemented, committed, and verified.
-Built unsupervised overnight on branch `chore/nix-expo-attempt-1`. The app lives at
-`apps/mobile` (self-contained Expo SDK 56; not a pnpm workspace member). The in-repo spec is
-`apps/mobile/GOAL.md`.
+**Status: PIVOTED to web-parity. v1 render parity achieved (Expo web + iOS sim, light + dark).
+Audio audibility + on-device tap interaction await human confirmation.**
 
-_Last updated: 2026-06-08, end of the overnight run._
+_Last updated: 2026-06-08._
 
-## What shipped (Definition of Done checklist)
+## The pivot (important)
 
-| v1 requirement | Status |
-|---|---|
-| 3 modes selectable (Box / Relax / Coherent) | ✅ accent color switches per mode |
-| Orb animates per phase with phase label | ✅ Reanimated, web + native |
-| start / pause / resume / stop | ✅ pause freezes orb **and** clock |
-| Duration chips (Off/1/3/5/10) with auto-stop | ✅ a 1-min timed session run to completion on web — auto-stops, orb deflates, resets to Ready/0:00 |
-| Speed slider (0.5–2.0) | ✅ retargets orb mid-session, no snap |
-| Mute toggle | ✅ gates audio only |
-| Audio cues (inhale/exhale/hold) | 🟡 wired + plays without error; content is placeholder (see caveat) |
-| Haptics (light/double/heavy) | 🟡 wired, native-only; can't be "felt" headless |
-| Settings persist | ✅ AsyncStorage, survives reload |
-| Background → pause | 🟡 `AppState` handler wired; not runtime-verified (AppState→visibilitychange isn't cleanly triggerable in this harness, same honesty bar as audio) |
-| Unit tests green / tsc clean | ✅ **47 vitest**, `tsc --noEmit` clean |
-| Web smoke-verified (screenshots) | ✅ all controls clicked through |
-| iOS-sim smoke-verified (screenshots) | ⚠️ build + render confirmed; interactive tap not done — see M6 |
+The original plan was a **native Reanimated re-implementation** of the breathing visualizer
+(milestones M1–M6, committed `a7aa51d`..`f75f711`). On review it was **not 1:1 with the branded
+website** — the site's morphing-blob orb (CSS `border-radius` morph + `filter: blur` glow +
+`hue-rotate`), canvas particle field, and **generative Web-Audio engine** cannot be reproduced in
+React-Native StyleSheet. Per the directive *"parity with the website is non-negotiable; light + dark;
+then adapt to mobile,"* the native re-implementation is **retired** (files kept for reference) and the
+app now **reuses the real web code** via an **Expo DOM component** (`'use dom'`) — WebView on native,
+plain DOM on Expo web → 1:1 by construction.
 
-## Commits (this run)
+## Architecture
 
-```
-1663dca fix(mobile): apply code-review findings
-acc3d72 feat(mobile): persist settings + native app config (M5)
-880ea8f feat(mobile): audio cues + phase haptics (M4)
-ee57ed8 feat(mobile): single-screen breathing UI, web-verified (M3)
-5fea707 feat(mobile): drift-safe session hook + pure pause/orb-target helpers (M2)
-a7aa51d feat(mobile): scaffold Expo app + pure breathing engine with vitest (M1)
-```
+- `apps/mobile/src/components/breathing-web/` — the real web `Resonance` tree, vendored:
+  - `Visualizer.tsx`, `ParticleBackground.tsx`, `SnowBackground.tsx`, `services/audioService.ts`,
+    `runtime-phrases.ts`, `types.ts`, `constants.ts`, `ui/sheet.tsx`, `lib/cn.ts` — **verbatim**.
+  - `BreathingExperience.tsx` — extracted from `src/components/resonance/Resonance.tsx`; all
+    Next.js / auth / conversion / i18n-bridge / analytics couplings stripped to props
+    (`locale`, `forcedTheme`, `initialDuration`, `appState`, `onSessionComplete`, `onEvent`); the
+    interactive core (rAF loop, phase machine, audio wiring, settings Sheet) kept byte-identical.
+    Restored an in-app light/dark toggle (`themeOverride ?? forcedTheme`).
+  - `BreathingExperience.dom.tsx` — the `'use dom'` wrapper (imports the compiled CSS).
+  - `breathing-web.css` — Tailwind **pre-compiled** to a static artifact (no NativeWind).
+    Rebuild with `npm run breathing:css` after any class change (source: `styles/source.css`,
+    `tailwind.config.cjs`).
+- `apps/mobile/src/app/index.tsx` — native host screen: device locale (`expo-localization`),
+  theme (`useColorScheme` → `forcedTheme`), `AppState` → audio-suspend bridge,
+  `setAudioModeAsync({playsInSilentMode:true})`, and a **native haptics bridge**
+  (`onEvent('haptic',{phase})` → `expo-haptics`, because `navigator.vibrate` is a no-op in WKWebView).
+- `app.json` — `userInterfaceStyle: "automatic"` (device-driven light/dark); bundle `com.deepbreathing.app`.
 
-## Architecture (the load-bearing bits)
+## Verified ✅ (with screenshots)
 
-- **Pure engine** (`src/breathing/{types,patterns,engine,session,settings}.ts`) — no RN imports,
-  fully vitest-tested. The drift-critical logic lives here, not in the hook:
-  - **Effective clock** (`createPauseState`/`beginPause`/`endPause`/`effectiveNow`): a `pausedTotalMs`
-    offset feeds `effectiveNow = Date.now() - pausedTotalMs` to every cursor/session call, so pause +
-    background-pause never drift the schedule or count toward auto-stop. Cursor anchors stay put.
-  - **`orbAnimationTarget`**: returns `{fromScale,toScale,durationMs}`; the hook re-fires the orb
-    `withTiming` on phase-change **and** speed-change so the fire-and-forget animation can't desync.
-  - **`sanitizeSettings`**: hardens anything read back from storage to safe defaults.
-- **`useBreathingSession`** drives the wall-clock cursor off a 100ms interval; reads only refs (no
-  stale-closure capture — survives React Compiler, which is ON). Animates a Reanimated shared value.
-- **`useBreathingAudio` / `useBreathingHaptics`** watch `phase` + `status`; status-gated so a cue/tap
-  doesn't re-fire on resume and goes quiet while paused/idle.
-- **Orb** = Reanimated + 3 layered translucent circles for the glow (no `react-native-svg` dep);
-  scale 0..1 maps to a transform-scale floor of **0.12..1.0** so it stays visible when empty.
-- Styling = `StyleSheet`; no NativeWind.
+| Item | Expo web | iOS sim (WebView) | Screenshot |
+|---|---|---|---|
+| Morphing blob orb + glow + ring + hue | ✅ | ✅ | `docs/screenshots/dom-ios-dark.png` |
+| Canvas particle field | ✅ | ✅ | same |
+| In-orb phase + instruction text (i18n, auto-locale) | ✅ ("INSPIRE DEVAGAR…") | ✅ render | — |
+| Tap-to-start → running state | ✅ (web) | ⏳ needs tap | — |
+| Duration chips | ✅ | ✅ | dark/light shots |
+| Settings gear → sheet (speed, mute, mode, theme toggle) | ✅ | ✅ render | — |
+| **Light theme** (cream bg) | ✅ `--background rgb(253,248,242)` (DOM-inspected) | ✅ | `docs/screenshots/dom-ios-light.png` |
+| **Dark theme** (warm-dark) | ✅ | ✅ | `docs/screenshots/dom-ios-dark.png` |
+| Generative AudioContext starts (no errors) | ✅ | ⏳ needs tap | — |
+| Background → audio suspend | ✅ wired (AppState→prop) | wired | — |
+| tsc clean / 47 vitest green | ✅ | — | — |
 
-## Verification evidence
+(The 47 vitest tests cover the **retired** native engine's pure modules; still green. The web
+`BreathingExperience` reuses the website's own — already production-tested — engine.)
 
-**Web** (Chrome via claude-in-chrome MCP, dev server on `:8081`) — all confirmed with screenshots:
-mode switch changes accent (red/indigo/green) + tagline; orb grows on inhale / shrinks on exhale with
-live phase label; pause freezes orb **and** clock (two screenshots, identical); resume continues;
-speed slider → 1.7× mid-session with no redbox; mute → Muted; stop deflates to Ready; duration chips
-select; **a 1-min timed session was run to completion and auto-stopped** (0:53 Exhale → Ready/0:00,
-orb deflated); **settings (Relax + 3min + Muted) survive a full page reload**. No console errors throughout.
+## Pending ⏳ / known gaps
 
-**iOS native** (`expo run:ios`, iPhone 17 Pro sim, Xcode 26.5):
-- `Build Succeeded`, 0 errors, app installed + launched (`com.deepbreathing.app`).
-- Full UI renders cleanly — screenshot saved at **`docs/screenshots/expo-attempt-2-ios-render.png`**
-  (modes, "Ready", orb at floor, Start, duration chips, native slider, Sound toggle). **No redbox.**
-- App log shows no JS/Reanimated exceptions (only benign port-8097 inspector + securityd noise).
-- **Not done:** programmatic Start tap on the sim. `idb` isn't installed and the AppleScript fallback
-  hit an Accessibility-permission timeout (`-1712`) — stopped rather than rabbit-hole per the run's
-  stop conditions. Orb animation + control responses are proven on **web** with byte-identical
-  Reanimated/`withTiming` + `Pressable` code, so the risk this differs on native is very low.
-
-## Environment notes / gotchas discovered
-
-- **Node 22 via fnm** for all Expo commands: `fnm exec --using=22 -- <cmd>` (global Node is 26).
-- **CocoaPods was missing** — the first `expo run:ios` bailed at "CocoaPods CLI not found". Installed
-  via **`brew install cocoapods`** (now `pod 1.16.2` at `/opt/homebrew/bin/pod`; system Ruby is the
-  old 2.6.10, so `gem install` is not the path — use brew). Second build succeeded.
-- The pre-existing dev server was started with `expo start --web`; it still served the iOS bundle to
-  the dev-client fine (the app loaded). If a future native run can't fetch a bundle, start a full
-  `expo start` instead of `--web`.
-- `babel-preset-expo@56` auto-wires the `react-native-worklets` plugin — no `babel.config.js` needed.
-- The generated `apps/mobile/ios/` is gitignored (CNG regenerates it); not committed.
+1. **Audio audibility on iOS (human-only).** The generative engine is wired and the AudioContext
+   starts on Expo web with no errors, but actual sound on the iOS WebView needs an ear. The
+   audioService's tiny base64 **unlock WAV `DecodeError`'d** in WKWebView (logged) — the primary
+   `AudioContext.resume()` on the in-WebView orb tap should still unlock it; **verify on the sim/device**.
+   Silent-switch: `setAudioModeAsync({playsInSilentMode:true})` is applied natively; confirm it covers
+   the WebView's audio session (spec risk — unverified).
+2. **iOS tap-to-start interaction** — render is proven; the running state (orb breathing, phase
+   transitions, pause/resume/stop) is verified on Expo web but not yet on the sim, because there is
+   **no headless sim-tap tool** installed (idb/cliclick absent; AppleScript blocked by Accessibility).
+   Tap manually, or `brew tap facebook/fb && brew install idb-companion && pipx install fb-idb` to script it.
+3. **Haptics felt** — wired (native bridge) + tsc-clean, but cannot be felt on the simulator;
+   confirm on a real device.
+4. **Safe-area / status bar polish** (mobile-adaptation phase) — light mode shows a black native
+   strip behind the top safe area; make the host edge-to-edge / theme-matched.
+5. Dev-only "Open debugger to view warnings" banner — non-fatal; triage the warning.
+6. Remove the retired native re-implementation (`src/breathing/*`, `src/components/breathing/*`,
+   `src/app/breathe-web.tsx`) once the DOM path is signed off.
 
 ## Exact next commands
 
 ```bash
 cd /Users/abi/Sites/deepbreathing/apps/mobile
+fnm exec --using=22 -- npm test            # 47 vitest (retired native engine)
+fnm exec --using=22 -- npx tsc --noEmit    # clean
+fnm exec --using=22 -- npm run breathing:css  # rebuild CSS after class changes
 
-# Tests + typecheck
-fnm exec --using=22 -- npm test            # 47 vitest
-fnm exec --using=22 -- npx tsc --noEmit
-
-# Web (drive in a browser)
-fnm exec --using=22 -- npx expo start --web --port 8081
-
-# Native iOS (sim already booted; pod now installed)
+# Run it
+fnm exec --using=22 -- npx expo start --port 8081 --clear   # web: open localhost:8081 ; native: see below
 export PATH="/opt/homebrew/bin:$PATH"
-fnm exec --using=22 -- npx expo run:ios
-xcrun simctl io booted screenshot /tmp/ios.png   # then inspect
+fnm exec --using=22 -- npx expo run:ios     # native sim build (DOM webview)
+xcrun simctl ui booted appearance light|dark  # flip theme
+xcrun simctl io booted screenshot /tmp/x.png
+# IMPORTANT: after JS edits, a stale dev-client bundle can mislead — restart Metro with --clear
+# and cold-launch (xcrun simctl terminate/launch booted com.deepbreathing.app) before judging.
 ```
-
-## Pending / not in v1 (backlog)
-
-- **Native interactive verification**: `brew install idb-companion` (or grant Simulator Accessibility
-  permission) to script a real Start tap and confirm the orb animates on-device.
-- **Audio is placeholder**: the 3 cue WAVs are identical 17684-byte stubs from the `expo-attempt-1`
-  tag — wiring is verified, audio **content** is not. Drop real inhale/exhale/hold clips into
-  `apps/mobile/assets/audio/`. Per-mode ambient loops are deferred entirely.
-- **Branded icons/splash**: still the Expo template art; only colors were set to dark in `app.json`.
-- **Deferred code cleanups** (correct + tested today, pure altitude): dedup `phaseTargetScale` against
-  `getPhaseVisualState` (they must agree); extract a shared `usePhaseEntry(phase,status,cb)` hook for
-  the audio/haptics phase-entry guard.
-- **Interact-before-hydrate race**: tapping a control in the <1s before `loadSettings` resolves can be
-  overwritten by the persisted value. Low impact; fix by disabling controls (or skipping the first
-  autosave) until `hydrated`.
-- **Later modes**: Sigh + Wim Hof (protocol modes) — the full 12-pattern catalog is already ported.
 
 ## Suggestions
 
-1. **Replace the placeholder cue WAVs** with real audio and do a single native interactive pass
-   (`brew install idb-companion`, tap Start, screenshot mid-inhale) to close the one open verification.
-2. **Knock out the two deferred altitude cleanups** (`phaseTargetScale` dedup + shared `usePhaseEntry`)
-   in one small follow-up PR — they remove the only "two functions must stay in lockstep" coupling left.
-3. **Open a PR for `apps/mobile`** off `chore/nix-expo-attempt-1` so the 6 commits get a review before
-   the next phase (modes, branded assets, EAS build) starts.
+1. **Do the human audio/tap check** on the running sim (tap the orb → hear the soundscape, test the
+   iOS mute switch). If silent, wire an explicit `AudioContext.resume()` on the orb's `pointerdown`
+   inside the WebView (and consider dropping the base64-unlock element that DecodeErrors).
+2. **Adapt-to-mobile pass** (after parity sign-off): edge-to-edge safe areas + theme-matched native
+   container, then remove the retired native re-implementation to shrink the tree.
+3. **Validate a release build**, not just dev — Expo DOM components have open reports of working in
+   dev but not in release/TestFlight (expo/expo#35443); confirm before shipping.
