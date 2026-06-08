@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 32 72% 97%;
+  --foreground: 24 33% 12%;
+  --muted: 32 60% 93%;
+  --muted-foreground: 24 23% 35%;
+  --card: 0 0% 100%;
+  --card-foreground: 24 33% 12%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 24 33% 12%;
+  --primary: 18 90% 60%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 33 74% 90%;
+  --secondary-foreground: 24 33% 12%;
+  --accent: 345 85% 70%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 4 80% 48%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 27 44% 86%;
+  --input: 27 44% 86%;
+  --ring: 18 90% 60%;
+  --radius: 1.5rem;
+  --shadow: 222 47% 11%;
+  --card-glow: rgba(255, 195, 211, 0.15);
+  --card-glow-soft: rgba(255, 255, 255, 0.06);
+  --immersive-color: rgba(0, 0, 0, 0);
+}
+
+:root[data-theme='light'] {
+  --background: 32 72% 97%;
+  --foreground: 24 33% 12%;
+  --muted: 32 60% 93%;
+  --muted-foreground: 24 23% 35%;
+  --card: 0 0% 100%;
+  --card-foreground: 24 33% 12%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 24 33% 12%;
+  --primary: 18 90% 60%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 33 74% 90%;
+  --secondary-foreground: 24 33% 12%;
+  --accent: 345 85% 70%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 4 80% 48%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 27 44% 86%;
+  --input: 27 44% 86%;
+  --ring: 18 90% 60%;
+  --radius: 1.5rem;
+  --shadow: 222 47% 11%;
+  --card-glow: rgba(255, 195, 211, 0.15);
+  --card-glow-soft: rgba(255, 255, 255, 0.06);
+  --immersive-color: rgba(0, 0, 0, 0);
+}
+
+:root[data-theme='dark'] {
+  --background: 20 34% 10%;
+  --foreground: 33 80% 95%;
+  --muted: 20 20% 18%;
+  --muted-foreground: 27 32% 75%;
+  --card: 20 28% 14%;
+  --card-foreground: 33 80% 95%;
+  --popover: 20 28% 14%;
+  --popover-foreground: 33 80% 95%;
+  --primary: 18 86% 66%;
+  --primary-foreground: 21 26% 10%;
+  --secondary: 22 32% 20%;
+  --secondary-foreground: 33 80% 92%;
+  --accent: 12 84% 62%;
+  --accent-foreground: 21 26% 10%;
+  --destructive: 0 75% 58%;
+  --destructive-foreground: 21 26% 10%;
+  --border: 20 19% 28%;
+  --input: 20 19% 28%;
+  --ring: 18 86% 66%;
+  --shadow: 0 0% 0%;
+  --card-glow: rgba(255, 133, 158, 0.18);
+  --card-glow-soft: rgba(255, 255, 255, 0.05);
+  --immersive-color: rgba(0, 0, 0, 0);
+}
+
+.glass-panel {
+  background-color: hsl(var(--card) / 0.75);
+  border: 1px solid hsl(var(--border) / 0.7);
+  box-shadow: 0 25px 80px hsl(var(--shadow) / 0.25);
+  backdrop-filter: blur(22px);
+}
