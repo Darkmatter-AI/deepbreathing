@@ -54,6 +54,26 @@ function stripLocalePrefix(pathname: string): string {
   return pathname;
 }
 
+/**
+ * Routes that exist in English only. These are in the mass-translate proxy's
+ * `exclude_paths`, so a localized variant (e.g. /es/languages) is NOT served —
+ * the proxy 301s it back to the EN canonical. Linking a locale switcher straight
+ * to /{loc}/languages would advertise a URL that just bounces, so for these
+ * routes we point each locale at its localized home instead.
+ * Keep in sync with the tenant's exclude_paths / EN_ONLY_ROUTES in sitemap-routes.
+ */
+const EN_ONLY_ROUTES = new Set(["/languages"]);
+
+function isEnOnlyRoute(basePath: string): boolean {
+  return EN_ONLY_ROUTES.has(basePath) || [...EN_ONLY_ROUTES].some((r) => basePath.startsWith(r + "/"));
+}
+
+/** Build the href for a locale option. EN-only routes route to the localized home. */
+function localeHref(prefix: string, basePath: string): string {
+  if (isEnOnlyRoute(basePath)) return `/${prefix}`;
+  return `/${prefix}${basePath}`;
+}
+
 function getCurrentLocaleAndPath(): { currentLocale: string; basePath: string } {
   if (typeof window === "undefined") return { currentLocale: "en", basePath: "/" };
 
@@ -157,7 +177,7 @@ export function LanguageSwitcherInline() {
             return (
               <a
                 key={loc}
-                href={`/${prefix}${info.basePath}`}
+                href={localeHref(prefix, info.basePath)}
                 className={`block w-full text-left px-4 py-2 text-xs transition-colors ${
                   isActive
                     ? "font-semibold text-foreground"
@@ -232,7 +252,7 @@ export function LanguageSwitcherFooter() {
         return (
           <a
             key={loc}
-            href={`/${prefix}${info.basePath}`}
+            href={localeHref(prefix, info.basePath)}
             className={`transition-colors ${
               isActive
                 ? "font-medium text-foreground"
