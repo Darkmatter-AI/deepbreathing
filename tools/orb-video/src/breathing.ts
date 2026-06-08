@@ -9,6 +9,7 @@ export const PATTERNS: Record<string, Pattern> = {
   relax: { inhale: 4, holdIn: 7, exhale: 8, holdOut: 0 },
   coherent: { inhale: 5.5, holdIn: 0, exhale: 5.5, holdOut: 0 },
   sigh: { inhale: 2.5, inhale2: 1.5, holdIn: 0, exhale: 6, holdOut: 1 },
+  belly: { inhale: 4, holdIn: 0, exhale: 6, holdOut: 0 },
 };
 
 // scale 0..1 + phase label. Mirrors the `animate` state machine.

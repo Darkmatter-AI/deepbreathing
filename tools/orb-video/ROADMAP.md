@@ -65,20 +65,40 @@ the cue-noise transient puffs that clip.
 - [ ] Ship `audio-v2` to production (log result against DAR-377 criteria).
 - [ ] Re-capture video audio against shipped/preview audio-v2 → re-mux clips.
 
-## Video — matrix & publish ⬜
+## Video — matrix & publish 🟡 (assets built; manual upload pending)
 
-- [ ] Loop strategy: render one short 4K master per technique, `ffmpeg -stream_loop`
-      to {30s, 1, 2, 5, 10 min} (orb/glow/ring are periodic; verify particle seam
-      or make particles loop)
-- [ ] Matrix: {box, coherent, relax, sigh, belly, physiological-sigh} ×
-      {durations}, **landscape 4K** + **Shorts 1440×2560**
-- [ ] Per-technique audio passes (themed cues) — one long bed each, sliced/looped
-- [ ] Dark-mode variants (one-prop flip: `theme:"dark"`)
-- [ ] Publish workflow: titles/descriptions/thumbnails, upload, link back to the tool
-- [ ] Log the YouTube bet in `docs/PRODUCT-EXPERIMENTS.md` with success criteria
+- [x] ✅ Loop strategy **solved & seam-safe**. Masters rendered at an integer number
+      of breath cycles (box 48s, coherent/sigh 44s, 4-7-8 38s, belly 50s); particles
+      rewritten **closed-form periodic** (`src/particles.ts` — pure function of
+      `frame mod loopFrames`; Lissajous drift on integer harmonics + breath-coupled
+      radial), morph/hue/ring periods re-phased to integer divisors of the loop
+      (`src/Orb.tsx`, `loopSec` prop). Proof: loop-seam frame diff ≈ internal
+      cycle-boundary diff (0.12–0.23 YAVG, ≪ teleport). Finals **stream-copied**
+      (no re-encode) to each duration.
+      - **Gotcha:** Remotion keyframes every ~4.17s → masters **normalized to a 1s
+        GOP** (`-x264-params keyint=60:min-keyint=60:scenecut=0`) so integer-second
+        `-c copy -t` cuts land on a keyframe (all targets are integer seconds).
+      - **Gotcha:** Remotion emits full-range **`yuvj420p`** (faithful to the site,
+        YouTube-OK), not `yuv420p` — QA accepts both.
+- [x] ✅ Matrix: {box, coherent, relax/4-7-8, sigh, belly} × {light,dark} ×
+      {landscape 4K 1/2/5/10min + Shorts 1440×2560 30s/60s} = **60 finals from 20
+      masters**. Driver: `scripts/render_matrix.js` (resumable, `--qa`). Wim Hof
+      deferred (non-loop protocol).
+- [x] ✅ Per-technique audio beds — 5 clean beds captured from the hiss-fixed local
+      build (`scripts/capture_beds.sh`), trimmed to exact cycle length with fades.
+      QA: true-peak −4…−11 dBTP, flat=0, >8 kHz floored.
+- [x] ✅ Dark-mode variants (one-prop flip: `theme:"dark"`).
+- [x] ✅ Metadata package: per-video title/description/tags/chapters (built from live
+      `breathing-pages.ts` via `scripts/launch/gen-launch-package.mjs` + `@/`-alias
+      loader), `upload_manifest.csv` (60 rows), `channel_setup.md`, DataForSEO
+      `keywords.json`. All YouTube limits enforced. **No thumbnails (out of scope).**
+- [ ] **Manual upload** (no channel exists yet — irreversible, deferred to Monday).
+      Package staged at `out/launch/` + `out/SUMMARY.md`. Light public / dark +48h.
+- [ ] Log the YouTube bet in `docs/PRODUCT-EXPERIMENTS.md` with success criteria (post-launch).
+- [ ] Re-capture beds against shipped/preview audio-v2 once it lands in prod (currently from local :3031).
 
 ## Open questions
 
-- Long-clip looping vs full render (seam handling on particles)?
-- Where do masters/finals live (not in git — large)? Drive / bucket?
-- Shorts dimension: 1080×1920 vs 1440×2560 (VP9 quality vs size)?
+- ~~Long-clip looping vs full render (seam handling on particles)?~~ **Resolved: closed-form periodic particles + 1s-GOP stream-copy.**
+- Where do masters/finals live (not in git — large)? Drive / bucket? (`out/` stays gitignored; 5.7 GB of finals.)
+- ~~Shorts dimension: 1080×1920 vs 1440×2560?~~ **Chose 1440×2560.**

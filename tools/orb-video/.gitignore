@@ -5,4 +5,6 @@ frames/
 public/site_audio.mp3
 public/site_audio.webm
 public/*.wav
+# per-technique audio beds (captured locally from the fixed dev build)
+public/*.mp3
 *.tsbuildinfo

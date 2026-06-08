@@ -12,6 +12,13 @@ export type BreathProps = {
   audioSrc: string | null;
   labels: { Inhale: string; Hold: string; Exhale: string };
   theme: "light" | "dark";
+  /**
+   * Master loop length in seconds (an integer number of breath cycles). Used to
+   * re-phase the morph/hue/ring periods and the particle field so frame
+   * `loopFrames` is identical to frame 0 — i.e. the master is seam-safe and can
+   * be stream-copied to longer durations without a teleport at the join.
+   */
+  loopSec: number;
 };
 
 export const defaultBreathProps: BreathProps = {
@@ -21,12 +28,24 @@ export const defaultBreathProps: BreathProps = {
   audioSrc: "site_audio.mp3",
   labels: { Inhale: "Inhale", Hold: "Hold", Exhale: "Exhale" },
   theme: "light",
+  loopSec: 16,
 };
 
-export const Orb: React.FC<BreathProps> = ({ patternKey, color, speed, audioSrc, labels, theme }) => {
+export const Orb: React.FC<BreathProps> = ({ patternKey, color, speed, audioSrc, labels, theme, loopSec }) => {
   const frame = useCurrentFrame();
   const { fps, width, height } = useVideoConfig();
   const tMs = (frame / fps) * 1000;
+
+  // Re-phase each hardcoded morph period so it completes a whole number of
+  // cycles per master. `per` is always an exact integer divisor of loopMs, so
+  // the MORPH/hue loops (already closed) land on their frame-0 state at the seam.
+  const loopMs = loopSec * 1000;
+  const loopFrames = Math.round(loopSec * fps);
+  const per = (origMs: number) => loopMs / Math.max(1, Math.round(loopMs / origMs));
+  const orbPeriod = per(16000);
+  const glowPeriod = per(18000);
+  const huePeriod = per(20000);
+  const ringPeriod = per(30000);
 
   const pattern: Pattern = PATTERNS[patternKey] || PATTERNS.box;
   const { scale, label } = phaseAt(tMs, pattern, speed);
@@ -48,7 +67,7 @@ export const Orb: React.FC<BreathProps> = ({ patternKey, color, speed, audioSrc,
   const glowOpacity = light ? 0.32 : 0.17;
   const ringOpacity = light ? 0.4 : 0.25;
 
-  const specks = particlesAt(frame, width, height, fps, pattern, speed);
+  const specks = particlesAt(frame, width, height, fps, pattern, speed, loopFrames);
 
   return (
     <AbsoluteFill style={{ background: bg, alignItems: "center", justifyContent: "center", overflow: "hidden" }}>
@@ -67,21 +86,21 @@ export const Orb: React.FC<BreathProps> = ({ patternKey, color, speed, audioSrc,
         <span style={{
           position: "absolute", width: "122%", height: "208%",
           background: color, filter: `blur(${60 * k}px)`, opacity: glowOpacity,
-          borderRadius: borderRadiusAt(tMs, 18000),
+          borderRadius: borderRadiusAt(tMs, glowPeriod),
           transform: `scale(${glowScale})`,
         }} />
         {/* ring line (organic, just outside the orb) */}
         <div style={{
           position: "absolute", inset: 0, border: `${2 * k}px solid ${color}`, opacity: ringOpacity,
-          borderRadius: borderRadiusAt(tMs, 30000), transform: "scale(1.09)",
+          borderRadius: borderRadiusAt(tMs, ringPeriod), transform: "scale(1.09)",
         }} />
         {/* orb */}
         <div style={{
           position: "absolute", width: "100%", height: "100%",
           background: color, boxShadow: `inset 0 0 ${40 * k}px ${color}55`,
-          borderRadius: borderRadiusAt(tMs, 16000),
+          borderRadius: borderRadiusAt(tMs, orbPeriod),
           transform: `scale(${blobScale})`,
-          filter: `hue-rotate(${hueAt(tMs, 20000)}deg)`,
+          filter: `hue-rotate(${hueAt(tMs, huePeriod)}deg)`,
         }} />
         {/* label — separate non-scaling layer */}
         <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
