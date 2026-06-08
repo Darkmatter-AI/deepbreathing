@@ -1,105 +1,75 @@
-import { StyleSheet, Text, View, useWindowDimensions } from 'react-native';
+// The app's main screen IS the web-parity breathing experience, rendered as an
+// Expo DOM component (WebView on native, plain DOM on web) so it is 1:1 with the
+// branded website by construction. This native host bridges device locale, theme,
+// app-background -> audio-suspend, and sets up the audio session.
+//
+// The earlier native StyleSheet/Reanimated re-implementation (src/breathing/*,
+// components/breathing/*) is retired by this — kept in-repo for reference only.
+
+import { useEffect, useState } from 'react';
+import { AppState, type AppStateStatus, StyleSheet, View, useColorScheme } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { Stack } from 'expo-router';
+import * as Localization from 'expo-localization';
+import { setAudioModeAsync } from 'expo-audio';
 
-import { BREATHING_PATTERNS, V1_MODES } from '@/breathing';
-import { useBreathingAudio } from '@/breathing/useBreathingAudio';
-import { useBreathingHaptics } from '@/breathing/useBreathingHaptics';
-import { useBreathingSession } from '@/breathing/useBreathingSession';
-import { useBreathingSettings } from '@/breathing/useBreathingSettings';
-import { Controls } from '@/components/breathing/Controls';
-import { DurationChips } from '@/components/breathing/DurationChips';
-import { ModeSelector } from '@/components/breathing/ModeSelector';
-import { MuteToggle } from '@/components/breathing/MuteToggle';
-import { Orb } from '@/components/breathing/Orb';
-import { PhaseLabel } from '@/components/breathing/PhaseLabel';
-import { SpeedSlider } from '@/components/breathing/SpeedSlider';
-import { palette } from '@/components/breathing/constants';
+import BreathingExperienceDom from '../components/breathing-web/BreathingExperience.dom';
 
-const formatClock = (totalSeconds: number) => {
-  const m = Math.floor(totalSeconds / 60);
-  const s = totalSeconds % 60;
-  return `${m}:${s.toString().padStart(2, '0')}`;
-};
+const toBreathingAppState = (status: AppStateStatus): 'active' | 'background' =>
+  status === 'active' ? 'active' : 'background';
 
 export default function HomeScreen() {
-  const { width, height } = useWindowDimensions();
-  const orbSize = Math.max(200, Math.min(300, Math.min(width, height) * 0.62));
+  const colorScheme = useColorScheme();
+  const theme: 'light' | 'dark' = colorScheme === 'light' ? 'light' : 'dark';
+  const locale = Localization.getLocales()[0]?.languageCode ?? 'en';
 
-  const { mode, speed, durationSec, muted, setMode, setSpeed, setDurationSec, setMuted } =
-    useBreathingSettings();
+  const [appState, setAppState] = useState<'active' | 'background'>(
+    toBreathingAppState(AppState.currentState),
+  );
 
-  const session = useBreathingSession({
-    mode,
-    speedMultiplier: speed,
-    selectedDurationSec: durationSec,
-  });
+  // Best-effort audio session setup on mount (so cues play with the ringer off).
+  useEffect(() => {
+    (async () => {
+      try {
+        await setAudioModeAsync({
+          playsInSilentMode: true,
+          interruptionMode: 'mixWithOthers',
+          allowsRecording: false,
+          shouldPlayInBackground: false,
+          shouldRouteThroughEarpiece: false,
+        });
+      } catch {
+        // Non-fatal — audio degrades gracefully.
+      }
+    })();
+  }, []);
 
-  // Phase-driven feedback. Both watch the session's phase + status and stay quiet
-  // while paused/idle; muted gates audio only.
-  useBreathingAudio({ phase: session.phase, status: session.status, muted });
-  useBreathingHaptics({ phase: session.phase, status: session.status });
-
-  // Selecting a mode while a session is live stops it (enforced in the session hook).
-  const accent = session.themeColor;
+  // Bridge native foreground/background so the DOM component suspends/resumes audio.
+  useEffect(() => {
+    const sub = AppState.addEventListener('change', (next) => {
+      setAppState(toBreathingAppState(next));
+    });
+    return () => sub.remove();
+  }, []);
 
   return (
-    <View style={styles.root}>
-      <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
-        <View style={styles.top}>
-          <ModeSelector
-            modes={V1_MODES}
-            selected={mode}
-            accent={accent}
-            onSelect={setMode}
-          />
-        </View>
-
-        <View style={styles.center}>
-          <PhaseLabel
-            phase={session.phase}
-            subtitle={BREATHING_PATTERNS[mode].description}
-            isIdle={session.status === 'idle'}
-            accent={accent}
-          />
-          <Orb scale={session.scale} color={accent} size={orbSize} />
-          <Text style={styles.clock}>{formatClock(session.sessionSeconds)}</Text>
-        </View>
-
-        <View style={styles.bottom}>
-          <Controls
-            status={session.status}
-            accent={accent}
-            onStart={session.start}
-            onPause={session.pause}
-            onResume={session.resume}
-            onStop={session.stop}
-          />
-          <DurationChips selectedSec={durationSec} accent={accent} onSelect={setDurationSec} />
-          <View style={styles.sliderRow}>
-            <View style={styles.sliderCol}>
-              <SpeedSlider value={speed} accent={accent} onChange={setSpeed} />
-            </View>
-            <MuteToggle muted={muted} accent={accent} onToggle={() => setMuted((m) => !m)} />
-          </View>
-        </View>
+    <View style={styles.container}>
+      <Stack.Screen options={{ headerShown: false }} />
+      <SafeAreaView style={styles.safeArea} edges={[]}>
+        <BreathingExperienceDom
+          dom={{ style: { flex: 1 } }}
+          locale={locale}
+          forcedTheme={theme}
+          appState={appState}
+          onSessionComplete={async (_seconds) => {}}
+          onEvent={async (_name, _params) => {}}
+        />
       </SafeAreaView>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  root: { flex: 1, backgroundColor: palette.bg },
-  safe: {
-    flex: 1,
-    paddingHorizontal: 20,
-    maxWidth: 560,
-    width: '100%',
-    alignSelf: 'center',
-  },
-  top: { paddingTop: 12, alignItems: 'center' },
-  center: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: 18 },
-  clock: { color: palette.textSecondary, fontSize: 18, fontVariant: ['tabular-nums'] },
-  bottom: { gap: 18, paddingBottom: 8 },
-  sliderRow: { flexDirection: 'row', alignItems: 'center', gap: 16 },
-  sliderCol: { flex: 1 },
+  container: { flex: 1, backgroundColor: '#000' },
+  safeArea: { flex: 1 },
 });

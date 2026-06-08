@@ -157,6 +157,8 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   const retentionStartRef = useRef<number>(0);
   const [muted, setMuted] = useState(false);
   const [controlsOpen, setControlsOpen] = useState(false);
+  // In-app light/dark override (null = follow the native/device theme prop).
+  const [themeOverride, setThemeOverride] = useState<'light' | 'dark' | null>(null);
   const [soundStatus, setSoundStatus] = useState<'unknown' | 'confirmed'>('unknown');
   const [soundHintVisible, setSoundHintVisible] = useState(false);
   const [soundHintMounted, setSoundHintMounted] = useState(false);
@@ -375,8 +377,8 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     }
   }, [phase, isRunning]);
 
-  // forcedTheme is the single source of truth for light/dark.
-  const activeTheme = forcedTheme;
+  // Theme: in-app toggle wins, else the native/device theme prop.
+  const activeTheme = themeOverride ?? forcedTheme;
 
   useEffect(() => {
     applyThemePreference(activeTheme);
@@ -1148,6 +1150,14 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
                       }`}
                   >
                     {muted ? getSafePhrase('ui.sound_off') : getSafePhrase('ui.sound_on')}
+                  </button>
+                  <button
+                    onClick={() => setThemeOverride(activeTheme === 'dark' ? 'light' : 'dark')}
+                    className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-card px-3 py-2 text-sm font-medium text-card-foreground transition"
+                    aria-label="Toggle light or dark theme"
+                  >
+                    {activeTheme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
+                    {activeTheme === 'dark' ? 'Light' : 'Dark'}
                   </button>
                 </div>
                 {soundStatus !== 'confirmed' && (
