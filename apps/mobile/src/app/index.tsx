@@ -77,8 +77,12 @@ export default function HomeScreen() {
     return () => sub.remove();
   }, []);
 
+  // Match the native safe-area backdrop to the experience's --background token
+  // (light: cream 32 72% 97%, dark: warm 20 34% 10%) so there's no black strip.
+  const backdrop = theme === 'light' ? '#fdf8f2' : '#221711';
+
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { backgroundColor: backdrop }]}>
       <Stack.Screen options={{ headerShown: false }} />
       <SafeAreaView style={styles.safeArea} edges={[]}>
         <BreathingExperienceDom
