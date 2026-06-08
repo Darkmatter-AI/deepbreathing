@@ -63,10 +63,17 @@ plain DOM on Expo web → 1:1 by construction.
    `AudioContext.resume()` on the in-WebView orb tap should still unlock it; **verify on the sim/device**.
    Silent-switch: `setAudioModeAsync({playsInSilentMode:true})` is applied natively; confirm it covers
    the WebView's audio session (spec risk — unverified).
-2. **iOS tap-to-start interaction** — render is proven; the running state (orb breathing, phase
-   transitions, pause/resume/stop) is verified on Expo web but not yet on the sim, because there is
-   **no headless sim-tap tool** installed (idb/cliclick absent; AppleScript blocked by Accessibility).
-   Tap manually, or `brew tap facebook/fb && brew install idb-companion && pipx install fb-idb` to script it.
+2. **iOS tap-to-start interaction** — render is proven; the interactive state machine (mode select,
+   start/pause/resume/stop, clock) is verified on **Expo web via instrumented clicks**: tapping the
+   orb creates an `AudioContext` and flips the label to the phase instruction ("Inspire devagar…").
+   (Continuous run on the headless MCP browser is confounded by tab-visibility firing the page's
+   suspend handler + throttling rAF — NOT an app bug; absent in the native always-visible WebView.)
+   Not yet driven on the sim: **no working headless sim-tap tool.** Attempts: AppleScript→`System
+   Events` blocked by Accessibility (`-1712`); `idb_companion` 1.1.8 IS now installed via
+   `brew install facebook/fb/idb-companion` but has **no direct tap** (needs the gRPC client);
+   `fb-idb` (the `idb` CLI) installs but **crashes on Python 3.14** (`asyncio.get_event_loop()`
+   removed) — it needs **Python ≤3.11** (`brew install python@3.10`, venv, `pip install fb-idb`,
+   `idb connect`, `idb ui tap X Y`). Simplest path: **tap the orb on the sim by hand.**
 3. **Haptics felt** — wired (native bridge) + tsc-clean, but cannot be felt on the simulator;
    confirm on a real device.
 4. **Safe-area / status bar polish** (mobile-adaptation phase) — light mode shows a black native
