@@ -124,6 +124,22 @@ table below. The device-only checks are bundled into the release/QA ticket **DAR
 
 (Discrete haptics baseline: **DAR-387**, now implemented — see its comment.)
 
+## Release/OTA gate (DAR-395) — config authored ✅, build pending (device-only)
+
+EAS build + OTA wiring is authored (commit `73a233f`, branch `chore/nix-expo-attempt-1`):
+
+- `apps/mobile/app.json` — `runtimeVersion: { policy: "fingerprint" }` + `updates: { fallbackToCacheTimeout: 0 }`.
+- `apps/mobile/eas.json` (new) — `development` (dev-client/internal), `preview` (internal ad-hoc
+  device install, channel `preview`, `ios.simulator: false`), `production` (channel `production`);
+  `cli.appVersionSource: "remote"`. `projectId`/`updates.url` are left for `eas init` +
+  `eas update:configure` to inject (no malformed placeholder).
+
+**Gate is now a device task** (user runs `eas`): `expo install expo-updates` → `eas init` →
+`eas update:configure` (then re-confirm `runtimeVersion` stayed `fingerprint`) → `eas device:create`
+→ `eas build -p ios --profile preview` → install + run the QA checklist (render-in-release,
+haptics feel, keep-awake, audio audibility+mute, OTA round-trip). Full runbook in the DAR-395
+comment. **Feature tickets 396–399 stay blocked until this gate passes.**
+
 ## Exact next commands
 
 ```bash
