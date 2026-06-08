@@ -32,8 +32,18 @@ plain DOM on Expo web → 1:1 by construction.
     `tailwind.config.cjs`).
 - `apps/mobile/src/app/index.tsx` — native host screen: device locale (`expo-localization`),
   theme (`useColorScheme` → `forcedTheme`), `AppState` → audio-suspend bridge,
-  `setAudioModeAsync({playsInSilentMode:true})`, and a **native haptics bridge**
-  (`onEvent('haptic',{phase})` → `expo-haptics`, because `navigator.vibrate` is a no-op in WKWebView).
+  `setAudioModeAsync({playsInSilentMode:true})`, a **native haptics bridge**
+  (`onEvent('haptic',{phase})` → `expo-haptics`, because `navigator.vibrate` is a no-op in WKWebView),
+  and a **keep-awake bridge** (`onEvent('keep_awake',{active})` → `expo-keep-awake`).
+  Host callbacks are `useCallback`-stable so the DOM component's effects don't re-fire.
+- **Keep-awake** keeps the screen on during a running session and lets it sleep when paused/
+  stopped. Keyed off the experience's `isRunning` (emitted from `BreathingExperience.tsx`), **not**
+  the `session_start`/`session_end` analytics events — a resume from pause does not re-fire
+  `breathing_session_start`, so keying off those would let the screen sleep after a pause→resume.
+- **Haptics mapping** (cleaned up this session, conservative): inhale `Light`, hold `Medium`
+  (single tap — dropped the old `setTimeout` double-buzz), exhale `Medium` (was `Heavy`, which read
+  as an alert). Gentle breath markers, not alarms. ⚠️ The *feel* is unverified on hardware (the
+  simulator has no haptics) — see DAR-395.
 - `app.json` — `userInterfaceStyle: "automatic"` (device-driven light/dark); bundle `com.deepbreathing.app`.
 
 ## Verified ✅ (with screenshots)
@@ -78,18 +88,41 @@ returned `'running'` — audio is unlocked and the generative engine is live on 
 
 ## Pending ⏳ / known gaps
 
-1. **Physical audio audibility (human-only).** Engine is unlocked + running on iOS (above), and the
-   in-app "make sure your phone is not on silent" hint shows — but whether sound actually comes out
-   of the speakers / survives the hardware mute switch can only be confirmed by ear. The base64
-   **unlock WAV `DecodeError`'d** in WKWebView (logged, non-fatal since `ctx.resume()` is the real
-   unlock); if a device test is ever silent, drop that element and rely on `resume()` alone.
-2. **Haptics felt** — wired (native bridge) + tsc-clean, but cannot be felt on the simulator;
-   confirm on a real device.
-3. **Safe-area / status bar polish** (mobile-adaptation phase) — light mode shows a black native
-   strip behind the top safe area; make the host edge-to-edge / theme-matched.
-4. Dev-only "Open debugger to view warnings" banner — non-fatal; triage the warning.
-5. Remove the retired native re-implementation (`src/breathing/*`, `src/components/breathing/*`,
-   `src/app/breathe-web.tsx`) once the DOM path is signed off.
+Most of these are now tracked in Linear (project **Deep Breathing**, team **DAR**) — see the backlog
+table below. The device-only checks are bundled into the release/QA ticket **DAR-395**.
+
+1. **Physical audio audibility (human-only)** → **DAR-395**. Engine is unlocked + running on iOS
+   (above), and the in-app "make sure your phone is not on silent" hint shows — but whether sound
+   actually comes out of the speakers / survives the hardware mute switch can only be confirmed by
+   ear. The base64 **unlock WAV `DecodeError`'d** in WKWebView (logged, non-fatal since
+   `ctx.resume()` is the real unlock); if a device test is ever silent, drop that element and rely
+   on `resume()` alone.
+2. **Haptics feel (unverified on hardware)** → **DAR-395**. The discrete mapping is implemented +
+   tsc-clean, but the simulator produces no haptics, so the *feel* is unconfirmed — "cleanup" did
+   not finalize the intensities. Confirm on a device; only re-tune to `Soft`/`selectionAsync` after
+   feeling them (both can be near-imperceptible on Android). Rich continuous haptics → **DAR-398**.
+3. **Keep-awake on device** → **DAR-395**. Wired + web-smoke-verified (start/pause paths run clean,
+   no console errors), but confirm on a device that the screen stays on while running and sleeps on
+   pause/stop — including after a pause→resume and a background→foreground round-trip.
+4. **Safe-area / status bar polish** → **DAR-400** (considerate polish). Light mode shows a black
+   native strip behind the top safe area; make the host edge-to-edge / theme-matched.
+5. Dev-only "Open debugger to view warnings" banner — non-fatal; triage the warning.
+6. **Remove the retired native re-implementation** (`src/breathing/*`, `src/components/breathing/*`,
+   `src/app/breathe-web.tsx`) once the DOM path is signed off → **DAR-397**.
+
+### Backlog (Linear · project Deep Breathing · team DAR)
+
+| Issue | Title | Priority |
+|---|---|---|
+| **DAR-395** | Validate Expo DOM component in a release/TestFlight build + OTA path (+ device QA) | High |
+| **DAR-396** | Tech-debt: shrink the vendored fork of the breathing experience to one file | Medium |
+| **DAR-397** | Cleanup: remove the retired native re-implementation | Medium |
+| **DAR-398** | Continuous "breathing" haptics via a custom Expo module (Core Haptics / waveform) | Medium |
+| **DAR-399** | Background / lock-screen audio for sleep modes (native audio engine) | Medium |
+| **DAR-400** | Considerate, non-invasive session polish (true-black night mode, Reduce Motion, silent/DND) | Low |
+| **DAR-401** | Exploration: HRV-adaptive pacing + Apple Watch breathing | Low |
+
+(Discrete haptics baseline: **DAR-387**, now implemented — see its comment.)
 
 ## Exact next commands
 

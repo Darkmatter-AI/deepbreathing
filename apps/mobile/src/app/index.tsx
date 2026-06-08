@@ -6,18 +6,28 @@
 // The earlier native StyleSheet/Reanimated re-implementation (src/breathing/*,
 // components/breathing/*) is retired by this — kept in-repo for reference only.
 
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { AppState, type AppStateStatus, StyleSheet, View, useColorScheme } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Stack } from 'expo-router';
 import * as Localization from 'expo-localization';
 import { setAudioModeAsync } from 'expo-audio';
 import * as Haptics from 'expo-haptics';
+import { activateKeepAwakeAsync, deactivateKeepAwake } from 'expo-keep-awake';
 
 import BreathingExperienceDom from '../components/breathing-web/BreathingExperience.dom';
 
+// Scopes the screen-awake lock to an active session so it releases on pause/stop.
+const KEEP_AWAKE_TAG = 'breathing-session';
+
 // Native haptics bridge — the DOM component's navigator.vibrate is a no-op in the
-// iOS WKWebView, so it emits an onEvent('haptic', {phase}) that we map to expo-haptics.
+// iOS WKWebView, so it emits onEvent('haptic', {phase}) and we map each breath
+// phase to a single, calm expo-haptics tap: a light cue to begin the inhale, a
+// gentle marker at the hold, and a slightly firmer "grounding" tap on the exhale.
+// (The earlier mapping used Heavy on the exhale + a setTimeout double-buzz on the
+// holds — both read as alerts, too jarring for a calming app.)
+// NOTE: the simulator produces no haptics, so the *feel* is unverified — confirm
+// the intensities on a real device (see docs/expo-attempt-2-progress.md).
 const fireHaptic = (phase: unknown) => {
   switch (phase) {
     case 'Inhale':
@@ -27,13 +37,9 @@ const fireHaptic = (phase: unknown) => {
     case 'Hold In':
     case 'Hold Out':
       Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
-      setTimeout(
-        () => Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {}),
-        130,
-      );
       break;
     case 'Exhale':
-      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Heavy).catch(() => {});
+      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
       break;
     default:
       break;
@@ -77,6 +83,33 @@ export default function HomeScreen() {
     return () => sub.remove();
   }, []);
 
+  // Release the screen-awake lock if we unmount mid-session.
+  useEffect(() => {
+    return () => {
+      deactivateKeepAwake(KEEP_AWAKE_TAG).catch(() => {});
+    };
+  }, []);
+
+  // Stable handler identities so the DOM component's effects don't re-fire (and
+  // double-tap haptics) on unrelated host re-renders. The DOM bridge requires
+  // async callbacks.
+  const handleSessionComplete = useCallback(async (_seconds: number) => {}, []);
+
+  const handleEvent = useCallback(async (name: string, params?: Record<string, any>) => {
+    if (name === 'haptic') {
+      fireHaptic(params?.phase);
+      return;
+    }
+    if (name === 'keep_awake') {
+      try {
+        if (params?.active) await activateKeepAwakeAsync(KEEP_AWAKE_TAG);
+        else await deactivateKeepAwake(KEEP_AWAKE_TAG);
+      } catch {
+        // Non-fatal — keep-awake is best-effort.
+      }
+    }
+  }, []);
+
   // Match the native safe-area backdrop to the experience's --background token
   // (light: cream 32 72% 97%, dark: warm 20 34% 10%) so there's no black strip.
   const backdrop = theme === 'light' ? '#fdf8f2' : '#221711';
@@ -90,10 +123,8 @@ export default function HomeScreen() {
           locale={locale}
           forcedTheme={theme}
           appState={appState}
-          onSessionComplete={async (_seconds) => {}}
-          onEvent={async (name, params) => {
-            if (name === 'haptic') fireHaptic((params as { phase?: unknown })?.phase);
-          }}
+          onSessionComplete={handleSessionComplete}
+          onEvent={handleEvent}
         />
       </SafeAreaView>
     </View>

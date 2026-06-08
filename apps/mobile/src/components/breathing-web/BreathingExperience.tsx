@@ -384,6 +384,16 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     }
   }, [phase, isRunning, onEvent]);
 
+  // --- Keep-awake bridge ---
+  // Tell the native host whether a session is actively running so it can keep the
+  // screen awake while breathing and let it sleep when paused/stopped. Keyed off
+  // isRunning (not the session_start/end analytics events) because a resume from
+  // pause does NOT re-fire 'breathing_session_start' — keying off those would let
+  // the screen sleep after the first pause→resume. Harmless on web (host no-ops).
+  useEffect(() => {
+    onEvent?.('keep_awake', { active: isRunning });
+  }, [isRunning, onEvent]);
+
   // Theme: in-app toggle wins, else the native/device theme prop.
   const activeTheme = themeOverride ?? forcedTheme;
 
