@@ -251,9 +251,13 @@ is the home screen or secondary.
 
 **Priority: Low. Size: XS. Related to DAR-400 (status-bar strip), not a duplicate.**
 
-### Problem
-
-`apps/mobile/app.json` hardcodes `#0b0b0f` for the app background (`:16`), Android adaptive icon
+> **STATUS: DONE 2026-06-10** (Cursor Composer run, verified by Claude on the iPhone 17 Pro
+> sim). `app.json`: default background/splash `#fdf8f2`, dark splash variant `#221711`;
+> Android adaptive-icon background left dark (icon art reads better, iOS is release target).
+> Native rebuild via `expo prebuild -p ios` + `expo run:ios`. Pixel-verified: settled UI hits
+> the exact tokens in both modes; cold-launch frames are the splash color under the iOS launch
+> zoom dim (~21% — cream reads grey-ish in raw screenshots, sample pixels before panicking).
+> Both acceptance criteria checked. Device cold-launch re-check stays on the DAR-395 list.
 background (`:25`), and the splash screen including its dark variant (`:41-47`). Light-mode users
 get a black flash into cream on every launch. The host backdrop already themes correctly at
 runtime (`index.tsx:115` — `#fdf8f2` light / `#221711` dark); only the static config lags.
@@ -266,8 +270,8 @@ verify (config is baked at build time, not OTA-able).
 
 ### Acceptance criteria
 
-- [ ] Cold launch in light mode: no black flash (sim video or eyeball).
-- [ ] Cold launch in dark mode: still dark.
+- [x] Cold launch in light mode: no black flash (sim video or eyeball).
+- [x] Cold launch in dark mode: still dark.
 
 ---
 
@@ -307,6 +311,8 @@ morphing (and `animate-hue` still cycling).
   error overlay. Symptom pattern: Metro logs `DOM Bundled` fine but never
   `Running application "main"`. Rule: only pass escape-free scalars as DOM props; encode
   anything richer with `encodeURIComponent` (see `resonance-mirror.ts` / `persist-seed.ts`).
+  Unfixed upstream as of `@expo/dom-webview` 56.0.6-canary-20260606 (checked 2026-06-10) —
+  worth filing on expo/expo.
 - **Blank-webview debug recipe:** (1) host-side `console.log` reaches the Metro log; webview
   console does NOT. (2) Drop a module-level beacon in the `.dom.tsx` file that appends a
   visible `<pre>` to `document.body` (plus `window.onerror`/`unhandledrejection` sinks) and
