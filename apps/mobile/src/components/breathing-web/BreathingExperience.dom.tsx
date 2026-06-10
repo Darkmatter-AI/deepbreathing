@@ -11,6 +11,7 @@ interface BreathingExperienceDomProps {
   initialMode?: ModeName;
   initialDuration?: number | null;
   appState?: 'active' | 'background';
+  isNativeApp?: boolean;
   onSessionComplete?: (seconds: number) => Promise<void>;
   onEvent?: (name: string, params?: Record<string, any>) => Promise<void>;
 }
@@ -32,6 +33,7 @@ export default function BreathingExperienceDom({
         initialMode={initialMode}
         initialDuration={initialDuration}
         appState={appState}
+        isNativeApp
         onSessionComplete={onSessionComplete}
         onEvent={onEvent}
       />

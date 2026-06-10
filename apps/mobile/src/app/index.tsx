@@ -123,6 +123,7 @@ export default function HomeScreen() {
           locale={locale}
           forcedTheme={theme}
           appState={appState}
+          isNativeApp
           onSessionComplete={handleSessionComplete}
           onEvent={handleEvent}
         />

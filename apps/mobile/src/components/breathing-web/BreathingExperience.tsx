@@ -30,6 +30,7 @@ interface BreathingExperienceProps {
   onEvent?: (name: string, params?: Record<string, any>) => void;
   className?: string;
   noMobileBottomPad?: boolean;
+  isNativeApp?: boolean;
 }
 
 // Valid duration values in seconds (clamped to prevent abuse)
@@ -60,6 +61,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   onSessionComplete,
   onEvent,
   noMobileBottomPad = false,
+  isNativeApp = false,
 }) => {
   // `defaultMode` and `initialMode` are aliases — the dom wrapper passes
   // `initialMode`. effectiveDefaultMode carries the full lock semantics
@@ -1130,7 +1132,11 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
           >
             <div className="flex items-center gap-2">
               <Volume2 size={18} className="shrink-0" style={{ color: themeColor }} />
-              <span>{getSafePhrase('ui.sound_hint_no_audio')}</span>
+              <span>
+                {isNativeApp
+                  ? 'If you do not hear any sound, raise the volume.'
+                  : getSafePhrase('ui.sound_hint_no_audio')}
+              </span>
             </div>
           </div>
         </div>
@@ -1180,7 +1186,9 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
                 {soundStatus !== 'confirmed' && (
                   <div className="space-y-2 rounded-xl border border-border/60 bg-background/50 p-3 text-xs text-muted-foreground shadow-inner dark:border-border/40 dark:bg-background/20">
                     <p className="font-semibold text-card-foreground">No sound? Flip your mute switch off and raise volume.</p>
-                    <p>iOS Safari can silence Web Audio when the ringer is off. Try the side switch/volume buttons, then tap Play again.</p>
+                    {!isNativeApp && (
+                      <p>iOS Safari can silence Web Audio when the ringer is off. Try the side switch/volume buttons, then tap Play again.</p>
+                    )}
                     <div className="flex gap-2">
                       <button
                         onClick={markSoundConfirmed}

@@ -113,6 +113,12 @@ measured behavior. Instrumentation itself ships with a note in the funnel dashbo
 
 **Priority: Medium. Size: S. Do before TestFlight screenshots.**
 
+> **STATUS: DONE 2026-06-10** (Cursor Composer run, screenshots judged by Claude).
+> `isNativeApp` prop added to BOTH `BreathingExperience.tsx` and upstream `Resonance.tsx`
+> (default false, web unchanged) so the vendored fork stays minimally diffed. App banner now
+> uses neutral volume copy; Safari paragraph suppressed in-app. Conservative copy kept until
+> DAR-395 confirms silent-mode audio on device.
+
 ### Problem
 
 Two strings written for the website's Safari context render in the native app:
@@ -182,9 +188,15 @@ Streaks/notifications are out of scope here; if pursued, open a Linear issue fir
 
 ### Acceptance criteria
 
-- [ ] 4a: complete a session, kill the app, relaunch: totals survive. Wipe webview data
-      (sim: Erase All Content and Settings, or delete/reinstall the app): totals survive via
-      the native mirror.
+- [ ] 4a: complete a session: the native mirror (AsyncStorage; inspect the app sandbox via
+      `xcrun simctl get_app_container <UDID> com.deepbreathing.app data`, RCTAsyncLocalStorage
+      manifest) holds `resonance_stats` matching the webview values. Kill + relaunch: totals
+      survive.
+- [ ] 4a: seed path verified: with the native mirror populated and webview localStorage
+      empty, mount seeds the component from the mirror (unit test at the JS level is fine).
+      Note: the mirror protects against WKWebView data eviction, NOT app reinstall — both
+      stores die on uninstall. AsyncStorage 2.2.0 is already installed and in the current
+      sim build (RNCAsyncStorage in Podfile.lock); no native rebuild needed.
 - [ ] 4b: completing a 30s session produces a success haptic event (code path verified in sim;
       feel verified on device under DAR-395) and a visible summary.
 - [ ] No change to website behavior.

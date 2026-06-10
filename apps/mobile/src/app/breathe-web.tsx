@@ -55,6 +55,7 @@ export default function BreatheWebScreen() {
           locale={locale}
           forcedTheme={theme}
           appState={appState}
+          isNativeApp
           onSessionComplete={async (_seconds) => {}}
           onEvent={async (_name, _params) => {}}
         />
