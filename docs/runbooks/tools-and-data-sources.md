@@ -208,6 +208,32 @@ These have all bitten us before. Document in this file the FIRST time they bite,
 
 ---
 
+## Mobile app — GA4 Measurement Protocol (MOB-2, 2026-06-10)
+
+The iOS/Android app forwards GA4 events via the **Measurement Protocol** (server-side HTTP POST),
+because the DOM component's `gtag` / `dataLayer` calls run inside a WKWebView that never loads
+`www.googletagmanager.com`, so browser-side GA4 is silently dropped.
+
+| Detail | Value |
+|--------|-------|
+| MP endpoint | `https://www.google-analytics.com/mp/collect` |
+| Measurement ID | `G-53DLCBMRL3` (same property as the website) |
+| API secret nickname | `mobile-app-mp` (created 2026-06-10, GA4 web stream) |
+| Secret env var | `EXPO_PUBLIC_GA4_MP_API_SECRET` in `apps/mobile/.env` (gitignored) |
+| Forwarded events | `breathing_session_start`, `breathing_session_end`, `mode_switch`, `page_viewed_breathing` |
+| Extra param | `app_platform: 'ios' | 'android'` appended to every event (for segmentation) |
+| client_id | UUID persisted in AsyncStorage under key `ga4_mp_client_id` |
+| Implementation | `apps/mobile/src/breathing/ga4-mp.ts`; wired in `apps/mobile/src/app/index.tsx` `handleEvent` |
+
+**Debugging:** Metro log shows `[GA4 MP] <event_name> → HTTP <status>` for every forwarded event
+(guarded by `__DEV__`). A 204 means GA4 accepted the hit. Use
+`https://www.google-analytics.com/debug/mp/collect?...` to validate payloads without recording them.
+
+**Airplane-mode AC:** covered by the failure-path unit tests in `ga4-mp.test.ts` — network errors
+return -1 and never propagate to the caller.
+
+---
+
 ## When this file is wrong
 
 If you discover a tool/data-source detail that contradicts this doc (e.g., GA4 property changed, new MCP available, dkmt-cc behavior shifted), **update this file in the same commit** as your work. Don't leave the next person to rediscover the same thing — that's the entire point of this runbook.

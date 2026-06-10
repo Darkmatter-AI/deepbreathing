@@ -64,6 +64,17 @@ Do not hand-edit `breathing-web.css`.
 
 **Priority: High. Size: S-M. Treat as a launch blocker.**
 
+> **STATUS: DONE 2026-06-10** (Claude Sonnet subagent implementation, judged + committed by the
+> orchestrating agent). New `ga4-mp.ts` MP client (fire-and-forget, 5s abort timeout, never
+> throws, stable AsyncStorage client_id), forwarding wired into `handleEvent`, secret via
+> `EXPO_PUBLIC_*` vars in gitignored `.env`. Verified: 63 tests, tsc clean, MP validation
+> endpoint zero messages, per-event `HTTP 204` in the Metro log from a real sim session, and
+> the event names visible in GA4 realtime (mixed with web traffic — exclusive app attribution
+> via `app_platform` lands with the next funnel refresh). One review fix applied post-agent:
+> `fireGA4Event` now awaits the in-flight `warmClientId` promise instead of racing it.
+> EAS-build note: `EXPO_PUBLIC_GA4_*` must be configured as EAS env vars before any
+> TestFlight/store build, or the app silently skips analytics (DAR-395 checklist).
+
 ### Problem
 
 The DOM component emits the same GA4 events the website fires, through `onEvent`:
@@ -95,11 +106,12 @@ Queue-and-retry on failure is nice-to-have, not required for v1.
 
 ### Acceptance criteria
 
-- [ ] Starting/ending a session in the sim produces `breathing_session_start` /
+- [x] Starting/ending a session in the sim produces `breathing_session_start` /
       `breathing_session_end` hits in GA4 realtime (DebugView or realtime report).
-- [ ] Event names/params identical to web, plus `app_platform`.
-- [ ] Airplane mode: app works normally, no errors surfaced to the user.
-- [ ] Note the integration in `docs/runbooks/tools-and-data-sources.md` (same commit).
+- [x] Event names/params identical to web, plus `app_platform`.
+- [x] Airplane mode: app works normally, no errors surfaced to the user (failure-path unit
+      tests; device check stays on DAR-395).
+- [x] Note the integration in `docs/runbooks/tools-and-data-sources.md` (same commit).
 
 ### Pre-ship note
 

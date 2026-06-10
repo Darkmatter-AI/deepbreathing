@@ -21,6 +21,7 @@ import {
   mirrorPersist,
   type ResonancePersistedSnapshot,
 } from '../breathing/resonance-mirror';
+import { GA4_FORWARDED_EVENTS, fireGA4Event, warmClientId } from '../breathing/ga4-mp';
 
 // Scopes the screen-awake lock to an active session so it releases on pause/stop.
 const KEEP_AWAKE_TAG = 'breathing-session';
@@ -64,6 +65,12 @@ export default function HomeScreen() {
   );
   const [snapshotReady, setSnapshotReady] = useState(false);
   const [persistedSnapshot, setPersistedSnapshot] = useState<ResonancePersistedSnapshot>({});
+
+  // Warm the GA4 client_id cache early so the first event doesn't pay the
+  // AsyncStorage round-trip latency.
+  useEffect(() => {
+    warmClientId();
+  }, []);
 
   // Load the native mirror before mounting the DOM component so the webview's
   // first commit never sees an empty snapshot and clobber the AsyncStorage mirror.
@@ -128,6 +135,12 @@ export default function HomeScreen() {
     if (name === 'persist' && typeof params?.key === 'string') {
       const value = typeof params.value === 'string' ? params.value : null;
       await mirrorPersist(params.key, value);
+      return;
+    }
+    // Forward analytics events to GA4 Measurement Protocol (MOB-2).
+    // Fire-and-forget — never blocks the event handler.
+    if (GA4_FORWARDED_EVENTS.has(name)) {
+      fireGA4Event(name, params ?? {});
     }
   }, []);
 
