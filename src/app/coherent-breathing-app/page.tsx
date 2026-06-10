@@ -59,19 +59,6 @@ export default function CoherentBreathingAppMoneyPage() {
     ]
   };
 
-  const appSchema = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: "Coherent Breathing App",
-    applicationCategory: "HealthApplication",
-    operatingSystem: "Web",
-    url: canonicalUrl,
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD"
-    }
-  };
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -138,7 +125,7 @@ export default function CoherentBreathingAppMoneyPage() {
 
   return (
     <main className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-      <JsonLd data={[breadcrumbSchema, appSchema, faqSchema]} />
+      <JsonLd data={[breadcrumbSchema, faqSchema]} />
 
       <header className="space-y-4">
         <p className="text-xs uppercase tracking-[0.35em] text-primary">DEEP BREATHING EXERCISES</p>

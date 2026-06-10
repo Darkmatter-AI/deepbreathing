@@ -65,19 +65,6 @@ export default function OneMinuteBreathingExercisePage() {
     ]
   };
 
-  const appSchema = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: "1 Minute Breathing Exercise",
-    applicationCategory: "HealthApplication",
-    operatingSystem: "Web",
-    url: canonicalUrl,
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD"
-    }
-  };
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -136,7 +123,7 @@ export default function OneMinuteBreathingExercisePage() {
 
   return (
     <main className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-      <JsonLd data={[breadcrumbSchema, appSchema, faqSchema]} />
+      <JsonLd data={[breadcrumbSchema, faqSchema]} />
 
       <header className="space-y-4">
         <p className="text-xs uppercase tracking-[0.35em] text-primary">Quick Breathing Exercise</p>

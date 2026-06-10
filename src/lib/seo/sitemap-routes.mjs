@@ -1,7 +1,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-export const DEFAULT_EXCLUDED_ROUTES = [];
+// Internal/branding pages are noindexed; listing them in the sitemap sends
+// contradictory signals (Ahrefs: "noindex page in sitemap").
+export const DEFAULT_EXCLUDED_ROUTES = ['/og-preview', '/brand-lab'];
 export const DEFAULT_LOCALE_PREFIXES = [];
 export const EDGE_PROXY_LOCALE_PREFIXES = ['es', 'pt', 'fr', 'de', 'ja'];
 // Routes that should only exist in English. The mass-translate proxy

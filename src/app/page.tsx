@@ -42,12 +42,7 @@ const websiteSchema = {
   name: "Deep Breathing Exercises",
   url: baseUrl,
   description:
-    "Guided breathing visualizer with adjustable pacing. Visual pacing that helps your body downshift, anytime, anywhere.",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: `${baseUrl}/?q={search_term_string}`,
-    "query-input": "required name=search_term_string"
-  }
+    "Guided breathing visualizer with adjustable pacing. Visual pacing that helps your body downshift, anytime, anywhere."
 };
 
 const faqSchema = {

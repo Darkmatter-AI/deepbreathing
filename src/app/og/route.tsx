@@ -54,6 +54,9 @@ export async function GET(request: NextRequest) {
           ? { jpSubset: `${BREATHE_LABELS.ja}${title}${subtitle}` }
           : undefined,
       ),
+      // Keep OG images out of the index without robots-blocking them
+      // (Twitterbot honors robots.txt and would drop card images).
+      headers: { 'X-Robots-Tag': 'noindex' },
     });
   } catch (e: any) {
     console.error('OG Image generation error:', e);

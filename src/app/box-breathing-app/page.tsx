@@ -74,19 +74,6 @@ export default function BoxBreathingAppMoneyPage() {
     ]
   };
 
-  const appSchema = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: "Box Breathing App",
-    applicationCategory: "HealthApplication",
-    operatingSystem: "Web",
-    url: canonicalUrl,
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD"
-    }
-  };
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -145,7 +132,7 @@ export default function BoxBreathingAppMoneyPage() {
 
   return (
     <main className="bg-transparent">
-      <JsonLd data={[breadcrumbSchema, appSchema, faqSchema]} />
+      <JsonLd data={[breadcrumbSchema, faqSchema]} />
 
       <section className="relative isolate min-h-screen w-full text-foreground">
         <Resonance defaultMode={ModeName.Box} className="min-h-screen" />
