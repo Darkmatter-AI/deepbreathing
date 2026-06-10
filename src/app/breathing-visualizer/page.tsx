@@ -146,21 +146,6 @@ export default function BreathingVisualizerPage() {
     ]
   };
 
-  const appSchema = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: "Online Breathing Visualizer",
-    applicationCategory: "HealthApplication",
-    operatingSystem: "Web",
-    url: canonicalUrl,
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD"
-    },
-    description:
-      "Free online breathing visualizer with 10 guided techniques. Adjustable pacing, no download, no signup."
-  };
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -205,7 +190,7 @@ export default function BreathingVisualizerPage() {
 
   return (
     <main className="bg-transparent">
-      <JsonLd data={[breadcrumbSchema, appSchema, faqSchema, howToSchema]} />
+      <JsonLd data={[breadcrumbSchema, faqSchema, howToSchema]} />
 
       {/* Hero with full-screen visualizer */}
       <section className="relative isolate min-h-screen w-full text-foreground">

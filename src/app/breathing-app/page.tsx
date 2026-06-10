@@ -59,23 +59,10 @@ export default function BreathingAppPage() {
     ]
   };
 
-  const appSchema = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: "Deep Breathing Exercises",
-    applicationCategory: "HealthApplication",
-    operatingSystem: "Web",
-    url: siteUrl,
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD"
-    }
-  };
 
   return (
     <main className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-      <JsonLd data={[breadcrumbSchema, appSchema]} />
+      <JsonLd data={[breadcrumbSchema]} />
 
       <header className="space-y-4">
         <p className="text-xs uppercase tracking-[0.35em] text-primary">DEEP BREATHING EXERCISES</p>

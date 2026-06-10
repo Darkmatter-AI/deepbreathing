@@ -75,19 +75,6 @@ export default function FourSevenEightBreathingTimerMoneyPage() {
     ]
   };
 
-  const appSchema = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: "4-7-8 Breathing Timer",
-    applicationCategory: "HealthApplication",
-    operatingSystem: "Web",
-    url: canonicalUrl,
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD"
-    }
-  };
 
   const siteOrganization = {
     "@type": "Organization",
@@ -250,7 +237,7 @@ export default function FourSevenEightBreathingTimerMoneyPage() {
 
   return (
     <main className="bg-transparent">
-      <JsonLd data={[breadcrumbSchema, appSchema, articleSchema, howToSchema, faqSchema]} />
+      <JsonLd data={[breadcrumbSchema, articleSchema, howToSchema, faqSchema]} />
 
       <section className="relative isolate min-h-screen w-full text-foreground">
         <Resonance defaultMode={ModeName.Relax} className="min-h-screen" />

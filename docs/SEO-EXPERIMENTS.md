@@ -18,6 +18,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-06-10 | [Crawl Hygiene + Schema Cleanup — robots disallows, OG noindex, sitemap, SoftwareApplication, SearchAction](#2026-06-10-crawl-hygiene--schema-cleanup) | 🔄 Implemented |
 | 2026-05-06 | [9D Breathwork Cluster — 2 Pages Riding the Breakout Trend](#2026-05-06-9d-breathwork-cluster--2-pages-riding-the-breakout-trend) | 🔄 Implemented |
 | 2026-05-06 | [Wim Hof Bing CTR — SERP Feature Structural Ceiling (Finding)](#2026-05-06-wim-hof-bing-ctr--serp-feature-structural-ceiling) | 📊 Snapshot |
 | 2026-05-06 | [E-E-A-T Wellness-Class Overhaul — Founder Byline + Lineage + Light Citations](#2026-05-06-e-e-a-t-wellness-class-overhaul--founder-byline--lineage--light-citations) | 🔄 Implemented |
@@ -71,6 +72,31 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 ---
 
 ## Active Experiments
+
+### 2026-06-10: Crawl Hygiene + Schema Cleanup
+
+**Hypothesis:** Googlebot wastes a large share of its crawl on zero-value endpoints, and schema errors block rich-result eligibility. Cleaning both refocuses crawl budget on the ~114 localized pages Google has not yet absorbed (72 discovered-never-crawled + 42 crawled-not-indexed, GSC 2026-06-10) without touching ranking content. Full diagnosis: `seo-error-audit-2026-06-10.md` in the control repo (`~/Sites/darkmatter/deepbreathing`).
+
+**Baseline (2026-06-10):**
+- GSC crawl stats (90d): 12.2K requests; `/_vercel/insights/view` = 18% of ALL requests (every one a 4XX); JSON companion bundles = 25% of downloaded bytes; `/api/proxy/bundle/page?...` and `/og?title=...` URLs sitting in "Crawled - currently not indexed" (42 total).
+- Ahrefs (crawl Jun 6): 56 × "Structured data has Google rich results validation error" — every SoftwareApplication block lacks `aggregateRating or review` (we have no rating system, so the type can never be eligible); 12 × "Noindex page in sitemap" (`/og-preview`, `/brand-lab` × 6 locale variants); `/?q={search_term_string}` crawled by Google (SearchAction template leak; sitelinks searchbox is deprecated and we have no site search).
+- GSC indexed pages: **260** (guardrail for the sitemap change, see risk).
+
+**Shipped (single PR):**
+1. robots (`src/app/robots.ts` + `public/robots.txt`): `Disallow: /api/`, `Disallow: /_vercel/`.
+2. OG image routes (`/og`, `/og/[slug]`): `X-Robots-Tag: noindex` response header. Deliberately NOT robots-blocked — Twitterbot honors robots.txt and would drop card images.
+3. Sitemap: excluded `/og-preview` + `/brand-lab` (noindexed pages; listing them contradicts the noindex). Drops sitemap from 337 → 325 URLs.
+4. Removed the `SoftwareApplication` JSON-LD block from the 8 app/timer pages (kept BreadcrumbList/FAQ/HowTo/Article, which validate).
+5. Removed the `potentialAction` SearchAction from the homepage WebSite schema.
+
+**Pre-committed success criteria (measure 2026-07-08, ~4 weeks):**
+- ✅ **Success**: Ahrefs structured-data errors 56 → 0 and noindex-in-sitemap 12 → 0 on the next weekly crawl; GSC indexed count ≥ 260 (no regression); `/_vercel/insights` + `/api/proxy/bundle` requests trending to ~0 in crawl stats.
+- ⚪ **Inconclusive**: Ahrefs issues clear but crawl-stats mix unchanged (Google may take >4 weeks to rebalance).
+- ❌ **Failed**: GSC indexed count drops below 250 (the 2026-04-01 sitemap conversion caused a ~41% de-indexing — any sitemap touch gets this guardrail), or social card images stop rendering (OG header regression).
+
+**Status:** 🔄 Implemented (not yet measured)
+
+---
 
 ### 2026-05-06: 9D Breathwork Cluster — 2 Pages Riding the Breakout Trend
 
