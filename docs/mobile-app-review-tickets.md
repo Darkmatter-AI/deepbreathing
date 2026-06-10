@@ -162,6 +162,22 @@ hint.
 
 **Priority: Medium. Size: S (persistence) + M (completion moment, can split).**
 
+> **STATUS: 4a DONE 2026-06-10** (Cursor Composer implementation + fix pass, final root-cause
+> and verification by Claude on the iPhone 17 Pro sim). 4b still open. Two real bugs were found
+> and fixed along the way:
+> 1. **Async-hydration clobber** — the host initially passed an empty snapshot; the webview's
+>    first commit wrote defaults over the mirror. Fixed by gating the DOM mount on
+>    `snapshotReady` plus suppressing mirror emissions until the seed pass completes
+>    (`shouldMirrorPersist`).
+> 2. **Bridge corruption (the "blank webview")** — `@expo/dom-webview` embeds initial props in
+>    an unescaped JS template literal; the snapshot's JSON-stringified values (full of `\"`)
+>    corrupted the whole payload and the webview rendered nothing. Fixed by transporting
+>    snapshot values `encodeURIComponent`-encoded and decoding at the seed site. See the
+>    runbook gotcha below.
+> Verified end to end: wiped webview storage, relaunched → idle shows the seeded non-default
+> 30s chip; completed a 30s session → mirror manifest shows `sessionsCompleted` 1→2 with
+> `duration: 30` intact.
+
 ### Problem
 
 1. `handleSessionComplete` is a no-op (`index.tsx:96`). On web, completion drives the conversion
@@ -188,18 +204,18 @@ Streaks/notifications are out of scope here; if pursued, open a Linear issue fir
 
 ### Acceptance criteria
 
-- [ ] 4a: complete a session: the native mirror (AsyncStorage; inspect the app sandbox via
+- [x] 4a: complete a session: the native mirror (AsyncStorage; inspect the app sandbox via
       `xcrun simctl get_app_container <UDID> com.deepbreathing.app data`, RCTAsyncLocalStorage
       manifest) holds `resonance_stats` matching the webview values. Kill + relaunch: totals
       survive.
-- [ ] 4a: seed path verified: with the native mirror populated and webview localStorage
+- [x] 4a: seed path verified: with the native mirror populated and webview localStorage
       empty, mount seeds the component from the mirror (unit test at the JS level is fine).
       Note: the mirror protects against WKWebView data eviction, NOT app reinstall — both
       stores die on uninstall. AsyncStorage 2.2.0 is already installed and in the current
       sim build (RNCAsyncStorage in Podfile.lock); no native rebuild needed.
 - [ ] 4b: completing a 30s session produces a success haptic event (code path verified in sim;
       feel verified on device under DAR-395) and a visible summary.
-- [ ] No change to website behavior.
+- [x] No change to website behavior.
 
 ---
 
@@ -275,6 +291,28 @@ morphing (and `animate-hue` still cycling).
   build is installed on iPhone 17 Pro (UDID `910F5A6F-0A5A-47B6-84DB-8A079449BAF3`). Boot, then
   `xcrun simctl launch 910F5A6F-... com.deepbreathing.app`. Full native rebuild only needed for
   native dep / app.json changes: `fnm exec --using=22 -- npm run ios`.
+- **Stale-bundle gotcha (bit two agents already):** after JS or CSS-artifact changes, the sim
+  often serves the old bundle. Restart Metro with `--clear`
+  (`fnm exec --using=22 -- npx expo start --port 8081 --clear`) and relaunch the app before
+  concluding your change "didn't work".
+- **Theme-override gotcha:** the in-app Light/Dark toggle writes a persistent localStorage
+  override that beats the device theme on every later launch. If your verification toggles
+  theme, restore it (or note the state you left) so the next agent's screenshots aren't
+  silently themed wrong.
+- **DOM-component props gotcha (cost a full debug cycle):** `@expo/dom-webview` bakes the
+  initial props into an UNESCAPED JS template literal (`DomWebView.swift`,
+  `setInjectedJavaScriptObject`). Any prop value whose JSON encoding contains `\"`, backslash,
+  backtick, or `${` corrupts the entire payload: the webview's inline bootstrap script fails,
+  `$$EXPO_DOM_HOST_OS` is never set, React mounts nothing, and the screen is blank with NO
+  error overlay. Symptom pattern: Metro logs `DOM Bundled` fine but never
+  `Running application "main"`. Rule: only pass escape-free scalars as DOM props; encode
+  anything richer with `encodeURIComponent` (see `resonance-mirror.ts` / `persist-seed.ts`).
+- **Blank-webview debug recipe:** (1) host-side `console.log` reaches the Metro log; webview
+  console does NOT. (2) Drop a module-level beacon in the `.dom.tsx` file that appends a
+  visible `<pre>` to `document.body` (plus `window.onerror`/`unhandledrejection` sinks) and
+  screenshot — that works even when React never mounts and the bridge is dead. (3) A
+  cream/theme-colored screen means the webview's CSS painted (bundle executed); pure host
+  backdrop means the page never loaded.
 - **Drive the UI headlessly:** fb-idb venv at `/tmp/idb310` (recreate:
   `/opt/homebrew/bin/python3.10 -m venv /tmp/idb310 && /tmp/idb310/bin/pip install fb-idb`).
   `PATH="/opt/homebrew/bin:$PATH" /tmp/idb310/bin/idb ui tap <x> <y> --udid <UDID>`.

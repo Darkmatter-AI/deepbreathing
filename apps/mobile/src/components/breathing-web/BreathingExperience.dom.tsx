@@ -3,6 +3,7 @@ import './breathing-web.css';
 
 import BreathingExperience from './BreathingExperience';
 import type { ModeName } from './types';
+import type { ResonancePersistedSnapshot } from '../../breathing/resonance-mirror';
 
 interface BreathingExperienceDomProps {
   dom: import('expo/dom').DOMProps;
@@ -12,6 +13,7 @@ interface BreathingExperienceDomProps {
   initialDuration?: number | null;
   appState?: 'active' | 'background';
   isNativeApp?: boolean;
+  initialPersistedSnapshot?: ResonancePersistedSnapshot;
   onSessionComplete?: (seconds: number) => Promise<void>;
   onEvent?: (name: string, params?: Record<string, any>) => Promise<void>;
 }
@@ -22,6 +24,7 @@ export default function BreathingExperienceDom({
   initialMode,
   initialDuration,
   appState,
+  initialPersistedSnapshot,
   onSessionComplete,
   onEvent,
 }: BreathingExperienceDomProps) {
@@ -34,6 +37,7 @@ export default function BreathingExperienceDom({
         initialDuration={initialDuration}
         appState={appState}
         isNativeApp
+        initialPersistedSnapshot={initialPersistedSnapshot}
         onSessionComplete={onSessionComplete}
         onEvent={onEvent}
       />

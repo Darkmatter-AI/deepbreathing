@@ -16,6 +16,11 @@ import * as Haptics from 'expo-haptics';
 import { activateKeepAwakeAsync, deactivateKeepAwake } from 'expo-keep-awake';
 
 import BreathingExperienceDom from '../components/breathing-web/BreathingExperience.dom';
+import {
+  loadPersistedSnapshot,
+  mirrorPersist,
+  type ResonancePersistedSnapshot,
+} from '../breathing/resonance-mirror';
 
 // Scopes the screen-awake lock to an active session so it releases on pause/stop.
 const KEEP_AWAKE_TAG = 'breathing-session';
@@ -57,6 +62,17 @@ export default function HomeScreen() {
   const [appState, setAppState] = useState<'active' | 'background'>(
     toBreathingAppState(AppState.currentState),
   );
+  const [snapshotReady, setSnapshotReady] = useState(false);
+  const [persistedSnapshot, setPersistedSnapshot] = useState<ResonancePersistedSnapshot>({});
+
+  // Load the native mirror before mounting the DOM component so the webview's
+  // first commit never sees an empty snapshot and clobber the AsyncStorage mirror.
+  useEffect(() => {
+    loadPersistedSnapshot().then((snapshot) => {
+      setPersistedSnapshot(snapshot);
+      setSnapshotReady(true);
+    });
+  }, []);
 
   // Best-effort audio session setup on mount (so cues play with the ringer off).
   useEffect(() => {
@@ -107,6 +123,11 @@ export default function HomeScreen() {
       } catch {
         // Non-fatal — keep-awake is best-effort.
       }
+      return;
+    }
+    if (name === 'persist' && typeof params?.key === 'string') {
+      const value = typeof params.value === 'string' ? params.value : null;
+      await mirrorPersist(params.key, value);
     }
   }, []);
 
@@ -118,15 +139,18 @@ export default function HomeScreen() {
     <View style={[styles.container, { backgroundColor: backdrop }]}>
       <Stack.Screen options={{ headerShown: false }} />
       <SafeAreaView style={styles.safeArea} edges={[]}>
-        <BreathingExperienceDom
-          dom={{ style: { flex: 1 } }}
-          locale={locale}
-          forcedTheme={theme}
-          appState={appState}
-          isNativeApp
-          onSessionComplete={handleSessionComplete}
-          onEvent={handleEvent}
-        />
+        {snapshotReady ? (
+          <BreathingExperienceDom
+            dom={{ style: { flex: 1 } }}
+            locale={locale}
+            forcedTheme={theme}
+            appState={appState}
+            isNativeApp
+            initialPersistedSnapshot={persistedSnapshot}
+            onSessionComplete={handleSessionComplete}
+            onEvent={handleEvent}
+          />
+        ) : null}
       </SafeAreaView>
     </View>
   );

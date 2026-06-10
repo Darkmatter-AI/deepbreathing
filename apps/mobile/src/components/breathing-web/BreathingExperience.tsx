@@ -8,6 +8,7 @@ import ParticleBackground from './components/ParticleBackground';
 import SnowBackground from './components/SnowBackground';
 import { createRuntimePhraseResolver, RuntimePhraseKey } from './runtime-phrases';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetClose } from './ui/sheet';
+import { seedLocalStorageFromSnapshot, shouldMirrorPersist } from '../../breathing/persist-seed';
 
 const STORAGE_KEYS = {
   STATS: 'resonance_stats',
@@ -31,6 +32,8 @@ interface BreathingExperienceProps {
   className?: string;
   noMobileBottomPad?: boolean;
   isNativeApp?: boolean;
+  /** Native AsyncStorage mirror — seeds localStorage when empty (app only). */
+  initialPersistedSnapshot?: Partial<Record<string, string | null>>;
 }
 
 // Valid duration values in seconds (clamped to prevent abuse)
@@ -62,6 +65,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   onEvent,
   noMobileBottomPad = false,
   isNativeApp = false,
+  initialPersistedSnapshot,
 }) => {
   // `defaultMode` and `initialMode` are aliases — the dom wrapper passes
   // `initialMode`. effectiveDefaultMode carries the full lock semantics
@@ -90,9 +94,18 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
 
   // Client-side hydration check
   const [mounted, setMounted] = useState(false);
+  const storageHydratedRef = useRef(false);
 
   useEffect(() => {
     setMounted(true);
+
+    if (isNativeApp && initialPersistedSnapshot) {
+      seedLocalStorageFromSnapshot(
+        Object.values(STORAGE_KEYS),
+        initialPersistedSnapshot,
+        localStorage,
+      );
+    }
 
     const savedSettings = localStorage.getItem(STORAGE_KEYS.SETTINGS);
     if (savedSettings) {
@@ -122,7 +135,9 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     if (soundFlag === 'true') {
       setSoundStatus('confirmed');
     }
-  }, [effectiveDefaultMode]);
+
+    storageHydratedRef.current = true;
+  }, [effectiveDefaultMode, isNativeApp, initialPersistedSnapshot]);
 
   useEffect(() => {
     // An explicit initialDuration (passed from native) wins over the
@@ -340,23 +355,35 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   }, []);
 
   // --- Persistence Effects ---
+  const mirrorPersist = useCallback(
+    (key: string, value: string) => {
+      if (!shouldMirrorPersist(isNativeApp, storageHydratedRef.current)) return;
+      onEvent?.('persist', { key, value });
+    },
+    [isNativeApp, onEvent],
+  );
+
   useEffect(() => {
     if (!mounted) return;
-    localStorage.setItem(STORAGE_KEYS.SETTINGS, JSON.stringify({
+    const value = JSON.stringify({
       mode: activeMode,
       speed: speedMultiplier,
       color: themeColor,
       duration: selectedDuration
-    }));
-  }, [activeMode, speedMultiplier, themeColor, selectedDuration, mounted]);
+    });
+    localStorage.setItem(STORAGE_KEYS.SETTINGS, value);
+    mirrorPersist(STORAGE_KEYS.SETTINGS, value);
+  }, [activeMode, speedMultiplier, themeColor, selectedDuration, mounted, mirrorPersist]);
 
   useEffect(() => {
     if (!mounted) return;
-    localStorage.setItem(STORAGE_KEYS.STATS, JSON.stringify({
+    const value = JSON.stringify({
       totalMinutes,
       sessionsCompleted
-    }));
-  }, [totalMinutes, sessionsCompleted, mounted]);
+    });
+    localStorage.setItem(STORAGE_KEYS.STATS, value);
+    mirrorPersist(STORAGE_KEYS.STATS, value);
+  }, [totalMinutes, sessionsCompleted, mounted, mirrorPersist]);
 
   // --- Haptics Effect ---
   useEffect(() => {
@@ -581,6 +608,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     setSoundStatus('confirmed');
     if (typeof window !== 'undefined') {
       localStorage.setItem(STORAGE_KEYS.SOUND_OK, 'true');
+      mirrorPersist(STORAGE_KEYS.SOUND_OK, 'true');
     }
   };
 
