@@ -9,6 +9,7 @@ import { BREATHING_PATTERNS, DEFAULT_SPEED_MULTIPLIER, WIM_HOF_PROTOCOL } from '
 import { AudioService } from './services/audioService';
 import Visualizer from './components/Visualizer';
 import { createRuntimePhraseResolver, detectRuntimeLocale, RuntimePhraseKey } from './runtime-phrases';
+import { useWakeLock } from '@/lib/use-wake-lock';
 import { LanguageSwitcherInline } from '@/components/language-switcher';
 
 // GA4 event helper — safe to call even if gtag isn't loaded
@@ -204,6 +205,22 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
 
   const [phase, setPhase] = useState<BreathingPhase>(BreathingPhase.Idle);
   const [isRunning, setIsRunning] = useState(false);
+  useWakeLock(isRunning, {
+    onInterrupted: ({ reason, wakeLockSupported }) => {
+      trackEvent('session_sleep_interrupted', {
+        reason,
+        wake_lock_supported: wakeLockSupported,
+        mode: activeMode,
+        seconds_elapsed: sessionSeconds,
+      });
+    },
+    onResumed: () => {
+      trackEvent('session_sleep_resumed', {
+        mode: activeMode,
+        seconds_elapsed: sessionSeconds,
+      });
+    },
+  });
 
   // Protocol mode state (for Wim Hof and similar multi-round techniques)
   const [isProtocolMode, setIsProtocolMode] = useState(false);
