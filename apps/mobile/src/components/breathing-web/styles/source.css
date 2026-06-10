@@ -88,3 +88,5 @@
   box-shadow: 0 25px 80px hsl(var(--shadow) / 0.25);
   backdrop-filter: blur(22px);
 }
+
+html, body { background-color: hsl(var(--background)); }
