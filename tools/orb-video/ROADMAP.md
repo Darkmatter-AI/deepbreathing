@@ -94,6 +94,17 @@ the cue-noise transient puffs that clip.
       `keywords.json`. All YouTube limits enforced. **No thumbnails (out of scope).**
 - [ ] **Manual upload** (no channel exists yet — irreversible, deferred to Monday).
       Package staged at `out/launch/` + `out/SUMMARY.md`. Light public / dark +48h.
+- [x] ✅ **TikTok vertical assets built** — re-rendered TikTok-native **1080×1920**,
+      **light only**, **15s/30s/60s** (5 techniques → **15 finals from 5 masters**;
+      `tiktok` orient in `render_matrix.js`). Particle draw-in/out strengthened to a
+      **multiplicative radial pulse** (`src/particles.ts`, `PULL`/`PUSH`) so the breath
+      coupling is clearly visible vs the old subtle additive offset — now the default
+      look for any future render. Package: per-video `.caption.txt`, `tiktok_manifest.csv`
+      (15 rows), `tiktok_setup.md` (`scripts/launch/gen-tiktok-package.mjs`). Manual
+      upload via TikTok Studio (Content Posting API needs a 2–4 wk audit). YouTube finals
+      left untouched (resumable skip). See `PUBLISH-HANDOFF.md` §TikTok.
+- [ ] **Manual TikTok upload** via TikTok Studio (per `tiktok_setup.md`; 1–2/day, lead
+      Box + Physiological Sigh). Owner sets privacy at upload.
 - [ ] Log the YouTube bet in `docs/PRODUCT-EXPERIMENTS.md` with success criteria (post-launch).
 - [ ] Re-capture beds against shipped/preview audio-v2 once it lands in prod (currently from local :3031).
 

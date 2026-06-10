@@ -44,9 +44,12 @@ const TECHNIQUES = [
   { slug: "belly", pattern: "belly", bed: "belly", color: "#f59e0b", master: 50 },
 ];
 const THEMES = ["light", "dark"];
+// Per-orient `themes` overrides the global THEMES (default both light+dark).
+// tiktok is light-only so we don't waste dark renders the plan doesn't ship.
 const ORIENTS = {
   landscape: { w: 3840, h: 2160, durations: [["1min", 60], ["2min", 120], ["5min", 300], ["10min", 600]] },
   shorts: { w: 1440, h: 2560, durations: [["30s", 30], ["60s", 60]] },
+  tiktok: { w: 1080, h: 1920, themes: ["light"], durations: [["15s", 15], ["30s", 30], ["60s", 60]] },
 };
 
 fs.mkdirSync(MASTERS, { recursive: true });
@@ -205,7 +208,10 @@ function buildList(onlySlug) {
   const list = [];
   for (const t of TECHNIQUES) {
     if (onlySlug && t.slug !== onlySlug) continue;
-    for (const theme of THEMES) for (const orient of Object.keys(ORIENTS)) list.push({ t, theme, orient });
+    for (const orient of Object.keys(ORIENTS)) {
+      const themes = ORIENTS[orient].themes || THEMES;
+      for (const theme of themes) list.push({ t, theme, orient });
+    }
   }
   return list;
 }

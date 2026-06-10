@@ -9,11 +9,17 @@ import { Pattern, phaseAt } from "./breathing";
 //   - a seeded static field (base x/y, size, alpha) so the look still matches,
 //   - an integer-harmonic Lissajous drift (returns to its start after exactly
 //     loopFrames), and
-//   - a breath-coupled radial offset driven by the already-periodic
-//     phaseAt().scale (inhale pulls specks inward, exhale pushes them out).
+//   - a breath-coupled MULTIPLICATIVE radial contraction of the whole field
+//     around center (inhale draws specks strongly inward, exhale gently pushes
+//     them out). This mirrors the live web (ParticleBackground.tsx): radial
+//     velocity -3.5 on inhale vs +1.2 on exhale — a strong pull-in, gentle
+//     push-out asymmetry. The web's literal edge/center respawn turnover can't
+//     loop seamlessly and is intentionally dropped; the synchronized in/out
+//     pulse is the dominant, visible effect.
 // Because loopSec is an integer number of breath cycles, scale(0) == scale at
 // the seam and every oscillator argument is an integer multiple of 2π — so
-// frame `loopFrames` is identical to frame 0. No accumulators, no per-frame RNG.
+// frame `loopFrames` is identical to frame 0. The radial factor depends only on
+// the periodic `scale`, so it too is seam-safe. No accumulators, no per-frame RNG.
 
 export type Speck = { x: number; y: number; size: number; alpha: number };
 
@@ -76,18 +82,23 @@ export function particlesAt(
 
   const cx = w / 2, cy = h / 2;
   const minDim = Math.min(w, h);
-  const DRIFT = minDim * 0.02;   // gentle Lissajous wander
-  const RADIAL = minDim * 0.05;  // breath-coupled radial swing
-  const r = RADIAL * (0.5 - scale); // inhale (scale->1): inward; exhale (scale->0): outward
+  const DRIFT = minDim * 0.02;   // gentle Lissajous wander (the "float" feel)
+
+  // Breath-coupled multiplicative radial contraction of the whole field around
+  // center. `scale`: 0 (full exhale) .. 1 (full inhale). Strong pull-in on
+  // inhale, gentle push-out on exhale — mirrors the web's -3.5 / +1.2 asymmetry.
+  const PULL = 0.60;  // inhale draw-in strength (inhale factor -> 1-PULL = 0.40)
+  const PUSH = 0.18;  // exhale push-out (gentler; exhale factor -> 1+PUSH = 1.18)
+  const radialFactor = (1 + PUSH) - (PULL + PUSH) * scale;
 
   return field.map((p) => {
-    const px = p.baseX + DRIFT * p.amp * Math.sin(p.hx * phase + p.ax);
-    const py = p.baseY + DRIFT * p.amp * Math.cos(p.hy * phase + p.ay);
-    const dx = px - cx, dy = py - cy;
-    const dist = Math.hypot(dx, dy) || 1;
+    // anchor = static base + integer-harmonic Lissajous drift (periodic over loopFrames)
+    const anchorX = p.baseX + DRIFT * p.amp * Math.sin(p.hx * phase + p.ax);
+    const anchorY = p.baseY + DRIFT * p.amp * Math.cos(p.hy * phase + p.ay);
+    // scale the anchor's vector from center -> field contracts on inhale, expands on exhale
     return {
-      x: px + (dx / dist) * r,
-      y: py + (dy / dist) * r,
+      x: cx + (anchorX - cx) * radialFactor,
+      y: cy + (anchorY - cy) * radialFactor,
       size: p.size,
       alpha: p.alpha,
     };

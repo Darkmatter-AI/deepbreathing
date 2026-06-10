@@ -275,3 +275,78 @@ ls out/launch/box/landscape/        # see the files + .txt paste sources
 2. Phase 2: upload all 60 per the manifest; light public / dark +48h; capture YouTube IDs.
 3. Phase 3: wire IDs into `/Users/abi/Sites/deepbreathing-orb-render/src/data/breathing-pages.ts` (belly first; ask before replacing authority embeds), deploy via Vercel.
 4. Phase 4: log in `/Users/abi/Sites/deepbreathing-orb-render/docs/PRODUCT-EXPERIMENTS.md`; tick `/Users/abi/Sites/deepbreathing-orb-render/tools/orb-video/ROADMAP.md`.
+
+---
+
+## 9. TikTok — vertical assets + manual upload
+
+A separate, **vertical-first** package built from the same breathing-orb content.
+TikTok is its own platform with a different metadata model — a **single caption**
+(no title, no chapters), **hashtag-driven** discovery, and **no clickable links**
+(link in bio only). The build is done; **upload is manual via TikTok Studio**
+(the Content Posting API can't post publicly until a 2–4 week TikTok app audit).
+
+### 9.1 What's built (the homework — DO NOT REDO)
+
+✅ **15 vertical finals** — TikTok-native **1080×1920**, **light only**, **15s/30s/60s**:
+- 5 techniques × {15s, 30s, 60s} = **15 finals** from **5 new masters**.
+- Files: `out/launch/<technique>/tiktok/<technique>-light-tiktok-<dur>.mp4`
+  (e.g. `out/launch/box/tiktok/box-light-tiktok-60s.mp4`).
+- Masters: `out/_masters/<technique>_light_tiktok.mp4`.
+- ✅ QA-verified: h264, 1080×1920, dur ±0.1s, AAC; 5/5 masters seam-safe.
+- **60fps preserved** (smoother orb; TikTok accepts it — the generic "30fps"
+  guidance is for talking-head footage, not this).
+
+✅ **Stronger particle breath-coupling** — the live-web "draw-in on inhale / push-out
+on exhale" effect is now clearly visible. `src/particles.ts` was changed from a weak
+**additive** radial offset (~5% of screen) to a **multiplicative radial contraction**
+of the whole field around center (`PULL=0.60` inhale draw-in → field shrinks to ~0.40×;
+`PUSH=0.18` exhale push-out → ~1.18×). Still closed-form and seam-safe. **This is now
+the default look for ANY future render** (incl. future YouTube re-renders — accepted).
+
+✅ **Per-video caption package** (`scripts/launch/gen-tiktok-package.mjs`):
+- `out/launch/<technique>/tiktok/<base>.caption.txt` — **paste-ready** caption + hashtags.
+- `out/launch/tiktok_manifest.csv` — **15 rows**, cols: `filename, path, technique,
+  duration, duration_seconds, theme, caption, hashtags, sound, cover_hint, privacy, cta_url`.
+- `out/launch/tiktok_setup.md` — account/handle, Business/Creator note, bio + the one
+  allowed link, posting cadence, original-audio note, safe-zone.
+- Captions are front-loaded (the orb cue lands in the first ~120 visible chars), e.g.
+  *"Steady your focus. Box breathing in 60 seconds. Inhale as the orb grows, hold,
+  exhale as it shrinks. 🫧"* → blank line → *"Free guided timer + every technique —
+  link in bio 🔗"* → hashtags. Hashtags (~8) seed the primary tag from `keywords.json`
+  search volume (4-7-8 → `#478breathing`, sigh → `#physiologicalsigh`).
+
+✅ **Safe-zone checked** — orb (~389px at center (540,960), spanning x≈345–735 / y≈765–1155)
+and the centered label clear TikTok's right action rail (~right 120px), bottom
+caption band (~bottom 20%), and top.
+
+❌ **Not done (your job):** create/sign-in the TikTok account, upload the 15 videos,
+set covers, set privacy. **No re-render of the 60 YouTube finals** (intentionally left
+as-is; the particle change only applies to the new tiktok renders on disk).
+
+### 9.2 Manual upload via TikTok Studio
+
+1. **Account:** `@deepbreathingexercises` (fallback `@breathingorb`). Switch to a
+   **Business** (or Creator) account to unlock the clickable bio link. Set bio + the
+   one allowed link to `https://deepbreathingexercises.com` (see `tiktok_setup.md`).
+2. **Per video** (one row of `tiktok_manifest.csv`): upload
+   `out/launch/<technique>/tiktok/<file>`, paste the matching `.caption.txt`
+   (caption + hashtags) into the single caption field, keep **original sound**
+   (the baked ambient bed — no trending-sound swap for this calm niche), and set the
+   **cover** by scrubbing to the `cover_hint` second (first inhale peak, orb largest).
+3. **Privacy:** owner sets Public/Private at upload (no auto-post).
+4. **Cadence:** 1–2/day; lead with **Box** and **Physiological Sigh** (highest intent).
+   No clickable links in captions — all traffic goes through the **link in bio**.
+
+### 9.3 Regenerate / re-render (TikTok)
+
+```bash
+cd /Users/abi/Sites/deepbreathing-orb-render/tools/orb-video
+# Re-render TikTok finals only (resumable; skips YouTube + valid tiktok files):
+node scripts/render_matrix.js --only box      # one technique
+node scripts/render_matrix.js                 # all (skips already-built cells)
+node scripts/render_matrix.js --qa            # ffprobe + seam QA (all orients)
+# Re-generate captions/manifest only (no re-render), after editing copy/keywords:
+node --import ./scripts/launch/alias-loader.mjs scripts/launch/gen-tiktok-package.mjs
+```
+To tune the particle pulse, edit `PULL`/`PUSH` in `src/particles.ts` and re-render.
