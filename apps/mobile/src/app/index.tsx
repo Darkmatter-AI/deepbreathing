@@ -6,7 +6,7 @@
 // The earlier native StyleSheet/Reanimated re-implementation (src/breathing/*,
 // components/breathing/*) is retired by this — kept in-repo for reference only.
 
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { AppState, type AppStateStatus, StyleSheet, View, useColorScheme } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Stack } from 'expo-router';
@@ -20,8 +20,10 @@ import {
   loadPersistedSnapshot,
   mirrorPersist,
   type ResonancePersistedSnapshot,
+  RESONANCE_STORAGE_KEYS,
 } from '../breathing/resonance-mirror';
 import { GA4_FORWARDED_EVENTS, fireGA4Event, warmClientId } from '../breathing/ga4-mp';
+import CompletionSummary, { type CompletionSummaryData } from '../components/CompletionSummary';
 
 // Scopes the screen-awake lock to an active session so it releases on pause/stop.
 const KEEP_AWAKE_TAG = 'breathing-session';
@@ -65,6 +67,17 @@ export default function HomeScreen() {
   );
   const [snapshotReady, setSnapshotReady] = useState(false);
   const [persistedSnapshot, setPersistedSnapshot] = useState<ResonancePersistedSnapshot>({});
+
+  // Track the latest resonance_stats from persist events so completion summary
+  // can show totals without re-reading AsyncStorage (avoids a race with the
+  // mirror write that happens in the same handleEvent cycle).
+  const latestStatsRef = useRef<{ totalMinutes: number | null; sessionsCompleted: number | null }>({
+    totalMinutes: null,
+    sessionsCompleted: null,
+  });
+
+  // Completion summary visibility.
+  const [summaryData, setSummaryData] = useState<CompletionSummaryData | null>(null);
 
   // Warm the GA4 client_id cache early so the first event doesn't pay the
   // AsyncStorage round-trip latency.
@@ -116,7 +129,21 @@ export default function HomeScreen() {
   // Stable handler identities so the DOM component's effects don't re-fire (and
   // double-tap haptics) on unrelated host re-renders. The DOM bridge requires
   // async callbacks.
-  const handleSessionComplete = useCallback(async (_seconds: number) => {}, []);
+  const handleSessionComplete = useCallback(async (seconds: number) => {
+    // Success haptic — signals a positive completion.
+    // NOTE: haptics cannot be felt on the simulator; this is code-path verified
+    // only (__DEV__ log below). Confirm the feel on a real device (DAR-395).
+    Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success).catch(() => {});
+    if (__DEV__) {
+      console.log('[MOB-4b] handleSessionComplete fired — haptic: NotificationFeedbackType.Success');
+    }
+
+    setSummaryData({
+      sessionSeconds: seconds,
+      totalMinutes: latestStatsRef.current.totalMinutes,
+      sessionsCompleted: latestStatsRef.current.sessionsCompleted,
+    });
+  }, []);
 
   const handleEvent = useCallback(async (name: string, params?: Record<string, any>) => {
     if (name === 'haptic') {
@@ -134,6 +161,19 @@ export default function HomeScreen() {
     }
     if (name === 'persist' && typeof params?.key === 'string') {
       const value = typeof params.value === 'string' ? params.value : null;
+      // Keep a live copy of resonance_stats so the completion handler can show
+      // totals without racing the async mirror write.
+      if (params.key === RESONANCE_STORAGE_KEYS.STATS && value != null) {
+        try {
+          const parsed = JSON.parse(value) as Record<string, unknown>;
+          latestStatsRef.current = {
+            totalMinutes: typeof parsed.totalMinutes === 'number' ? parsed.totalMinutes : null,
+            sessionsCompleted: typeof parsed.sessionsCompleted === 'number' ? parsed.sessionsCompleted : null,
+          };
+        } catch {
+          // Malformed JSON — keep the previous ref value.
+        }
+      }
       await mirrorPersist(params.key, value);
       return;
     }
@@ -147,6 +187,10 @@ export default function HomeScreen() {
   // Match the native safe-area backdrop to the experience's --background token
   // (light: cream 32 72% 97%, dark: warm 20 34% 10%) so there's no black strip.
   const backdrop = theme === 'light' ? '#fdf8f2' : '#221711';
+
+  const handleDismissSummary = useCallback(() => {
+    setSummaryData(null);
+  }, []);
 
   return (
     <View style={[styles.container, { backgroundColor: backdrop }]}>
@@ -164,6 +208,13 @@ export default function HomeScreen() {
             onEvent={handleEvent}
           />
         ) : null}
+        {summaryData != null && (
+          <CompletionSummary
+            data={summaryData}
+            theme={theme}
+            onDismiss={handleDismissSummary}
+          />
+        )}
       </SafeAreaView>
     </View>
   );

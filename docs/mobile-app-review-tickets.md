@@ -174,9 +174,15 @@ hint.
 
 **Priority: Medium. Size: S (persistence) + M (completion moment, can split).**
 
-> **STATUS: 4a DONE 2026-06-10** (Cursor Composer implementation + fix pass, final root-cause
-> and verification by Claude on the iPhone 17 Pro sim). 4b still open. Two real bugs were found
-> and fixed along the way:
+> **STATUS: 4a + 4b DONE 2026-06-10.** 4b (Claude Sonnet subagent): success haptic
+> (code-path verified; feel stays on DAR-395) + a calm theme-aware native summary card
+> (session time, totals from the live persist stream, tap-anywhere or ~6s auto dismiss).
+> Verified in dark AND light mode on the sim. Known transient nit: for ~1s the webview's own
+> "SESSION COMPLETE" text shows under the fading card (doubled messaging); fixing it needs a
+> reason param on the DOM contract. Same contract fires `onSessionComplete` on mid-session
+> mode switch too (web credit semantics) — summary appears there as well; product call if
+> that should change. 4a notes (Cursor Composer implementation + fix pass, final root-cause
+> and verification by Claude). Two real bugs were found and fixed along the way:
 > 1. **Async-hydration clobber** — the host initially passed an empty snapshot; the webview's
 >    first commit wrote defaults over the mirror. Fixed by gating the DOM mount on
 >    `snapshotReady` plus suppressing mirror emissions until the seed pass completes
@@ -225,7 +231,7 @@ Streaks/notifications are out of scope here; if pursued, open a Linear issue fir
       Note: the mirror protects against WKWebView data eviction, NOT app reinstall — both
       stores die on uninstall. AsyncStorage 2.2.0 is already installed and in the current
       sim build (RNCAsyncStorage in Podfile.lock); no native rebuild needed.
-- [ ] 4b: completing a 30s session produces a success haptic event (code path verified in sim;
+- [x] 4b: completing a 30s session produces a success haptic event (code path verified in sim;
       feel verified on device under DAR-395) and a visible summary.
 - [x] No change to website behavior.
 
