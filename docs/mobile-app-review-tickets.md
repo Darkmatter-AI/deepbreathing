@@ -177,9 +177,10 @@ hint.
 > **STATUS: 4a + 4b DONE 2026-06-10.** 4b (Claude Sonnet subagent): success haptic
 > (code-path verified; feel stays on DAR-395) + a calm theme-aware native summary card
 > (session time, totals from the live persist stream, tap-anywhere or ~6s auto dismiss).
-> Verified in dark AND light mode on the sim. Known transient nit: for ~1s the webview's own
-> "SESSION COMPLETE" text shows under the fading card (doubled messaging); fixing it needs a
-> reason param on the DOM contract. Same contract fires `onSessionComplete` on mid-session
+> Verified in dark AND light mode on the sim. The doubled-messaging nit (webview's own
+> "SESSION COMPLETE" text under the fading card) was fixed same day: `isNativeApp` gates the
+> `setInstructionKey('session.complete')` call in both parity files; no reason param needed.
+> Same contract fires `onSessionComplete` on mid-session
 > mode switch too (web credit semantics) — summary appears there as well; product call if
 > that should change. 4a notes (Cursor Composer implementation + fix pass, final root-cause
 > and verification by Claude). Two real bugs were found and fixed along the way:

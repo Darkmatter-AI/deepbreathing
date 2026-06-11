@@ -905,14 +905,15 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
       const audio = getAudioService();
       setIsRunning(false);
       setPhase(BreathingPhase.Idle);
-      setInstructionKey('session.complete');
+      // Native app shows its own summary card — suppress the webview overlay text.
+      if (!isNativeApp) setInstructionKey('session.complete');
       endSession('completed', sessionSeconds, true);
       // Stop all audio
       audio.stopDrone();
       audio.stopPinkNoise();
       audio.stopBinaural();
     }
-  }, [selectedDuration, isRunning, sessionSeconds, getAudioService, setInstructionKey, endSession]);
+  }, [selectedDuration, isRunning, sessionSeconds, getAudioService, setInstructionKey, endSession, isNativeApp]);
 
   useEffect(() => {
     if (!isRunning) {
