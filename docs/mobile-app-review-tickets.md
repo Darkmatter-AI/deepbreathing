@@ -352,9 +352,11 @@ morphing (and `animate-hue` still cycling).
   `xcrun simctl launch 910F5A6F-... com.deepbreathing.app`. Full native rebuild only needed for
   native dep / app.json changes: `fnm exec --using=22 -- npm run ios`.
 - **Stale-bundle gotcha (bit two agents already):** after JS or CSS-artifact changes, the sim
-  often serves the old bundle. Restart Metro with `--clear`
-  (`fnm exec --using=22 -- npx expo start --port 8081 --clear`) and relaunch the app before
-  concluding your change "didn't work".
+  often serves the old bundle. Try terminate + relaunch of the app first (Metro rebuilds on
+  request). Only if that fails, restart Metro with `--clear` — and start it DETACHED so it
+  outlives your run (`cd apps/mobile && (fnm exec --using=22 -- npx expo start --port 8081
+  --clear > /tmp/claude-jobs/metro.log 2>&1 &)`), then say so in your report: Metro is usually
+  caller-owned, and a Metro that dies with your process strands the next agent.
 - **Theme-override gotcha:** the in-app Light/Dark toggle writes a persistent localStorage
   override that beats the device theme on every later launch. If your verification toggles
   theme, restore it (or note the state you left) so the next agent's screenshots aren't
