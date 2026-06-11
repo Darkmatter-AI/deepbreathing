@@ -263,6 +263,43 @@ is the home screen or secondary.
 - [ ] Mode choice persists across launches (combine with MOB-4a).
 - [ ] `mode_switch` analytics fire on selection (combine with MOB-2).
 
+### Decision brief (drafted 2026-06-10 — owner to decide)
+
+All 12 modes from constants.ts and their recommended v1 status:
+
+| Mode | Pattern | Intended use | Safety caveats | v1 recommendation |
+|------|---------|--------------|----------------|-------------------|
+| Box | 4-4-4-4 | Focus & stress | None; foundational | **Include** — baseline mode, web SEO traffic, high confidence |
+| Relax | 4-7-8 | Sleep & calming | None; well-studied | **Include** — 2nd most popular, strong web engagement, safe for all audiences |
+| Coherent | 5.5-5.5 | HRV training | None; gentle | **Include** — v1 spec completes core trilogy, minimal risk |
+| Sigh | Double inhale | Panic & acute reset | None; designed for emergency | **Include** — fills acute-need gap, accessible, high value-add vs web |
+| Wim Hof | 30 breaths × 3 | Energy & resilience | **Hyperventilation + sustained holds.** Contraindicated: pregnancy, uncontrolled hypertension, seizure history, cardiac conditions. In water: asphyxia risk (shallow-water blackout, though rare at indoor temps). Only 2 web pages; rare mode_switch on web (3.6% → mostly Box/Relax). | **Defer to v2** — complex protocol (not a simple pattern), safety gates needed, low web demand |
+| Pursed Lip | 2-4 exhale ratio | COPD & respiratory | None; respiratory rehab focused, gentle | **Include** — low barrier, respiratory use-case underserved by breathing apps, safe |
+| Nadi Shodhana | 4-4-4 alternating nostril | Balance & focus | None; yoga foundation, gentle | **Defer to v2** — requires visual instruction (nostril alternation hard to convey in UI; web has a dedicated page but app can't teach the technique in text alone; revisit with a tutorial card) |
+| Ujjayi | 4-6 ocean breath | Yoga & focus | None; ocean-throat sound, learnable | **Include** — yoga complement to main modes, low friction, documented in web page |
+| Belly | 4-6 diaphragmatic | Breathing foundation | None; foundational, gentle | **Include** — remedial technique, valuable for users learning proper breathing mechanics |
+| Buteyko | 3-3-3 nasal | Light nasal breathing | None; COPD variant (light version), very gentle | **Defer to v2** — overlaps Pursed Lip conceptually, less web demand, marginal v1 ROI |
+| Tummo | 2-1 rapid shallow | Tibetan inner heat | **Rapid shallow breathing + hyperventilation.** Contraindicated: pregnancy, cardiovascular conditions, seizure history, uncontrolled asthma. Extreme version can trigger panic in susceptible users. Not a timed mode; advanced practitioners hold breath intervals manually. | **Defer to v2** — needs manual hold prompts (outside simple pattern), hyperventilation risk, esoteric, zero web pages, no mode_switch signal |
+| Breath of Fire | 0.75-0.75 rapid | Kundalini energy | **Rapid hyperventilation.** Contraindicated: pregnancy, seizure history, cardiovascular conditions, uncontrolled high blood pressure. Intense sympathetic activation; can trigger dizziness/panic in unaccustomed users. | **Defer to v2** — intense hyperventilation, narrow audience, zero web pages, not searchable, risk outweighs discovery benefit |
+
+**Ordering principle:** Group by use case (calm / focus / recovery) rather than alphabetical. Within each group, sort by safety and learning curve (simple patterns first). Suggested order: Box → Relax → Coherent (calm foundation) → Sigh (acute) → Ujjayi → Belly → Pursed Lip (focus & mechanics). This mirrors web discovery (users land on Box/Relax/Coherent pages first) and avoids dumping complex/risky modes early.
+
+**Placement options:**
+
+(a) **Library as secondary screen behind a button on the breathing screen.** Tapping a "library" or "modes" button navigates to a full-screen grid showing all 7 shipped modes. Pros: keeps the core loop (orb + session) the main UX affordance; library is clearly an advanced feature, reducing cognitive load on first launch. Cons: one extra tap to discover; cold-launch users may never find the library.
+
+(b) **Library as home screen; orb one tap deep.** App launches on a mode grid. Selecting a mode navigates to the breathing experience. Pros: all 7 modes equally discoverable; every session starts with a conscious choice (boosts mode awareness). Cons: adds a screen to the core loop; users who habitually pick the same mode (likely most) get friction on every session; contradicts the web UX (orb is the entry point there).
+
+(c) **Horizontal mode strip on the breathing screen itself.** A small carousel or pills row above or below the orb showing 3–4 "featured" modes (e.g. Box, Relax, Coherent, Sigh) with the rest behind a "More" button. Pros: modes visible without leaving the breathing context; enables mode discovery mid-session (mirrors web settings sheet). Cons: adds UI chrome to the breathing screen, risks cluttering the orb focus; small carousel is fiddly on mobile.
+
+**Recommended: (a) Library as secondary.** The core loop (start breathing fast) is v1's competitive advantage. Web data shows `mode_switch` is rare (3.6% of starts), implying users are habitually monogamous per session. A library button keeps the default flow clean while unblocking advanced users who want to explore; when they tap library, they get full-screen focus (unlike a crowded mode strip). **One-line rationale:** prioritizes the breathing experience and shipping 7 safe modes now, over designing a home-screen reboot in v1.
+
+**Open questions for the owner:**
+
+1. Do you want to gate Wim Hof behind a safety disclaimer/acknowledgement (e.g. "confirm you are not pregnant") to include it in v1, or defer it entirely? (Same for Tummo / Breath of Fire if they're ever revisited.)
+2. Nadi Shodhana requires visual instruction on nostril alternation — should v2 add an in-app GIF/animation tutorial, or treat it as web-only?
+3. If library is secondary, should the "library" button be persistent (gear icon next to play/pause) or only visible when not running (to avoid mid-session distraction)?
+
 ---
 
 ## MOB-6 — Splash and native background are near-black regardless of theme
