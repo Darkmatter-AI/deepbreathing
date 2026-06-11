@@ -167,6 +167,7 @@ Bing translated-page presence in top 20: /pt/breathing-app (1 click, pos 2), /fr
 
 ## Known measurement issues
 
+- **⚠️ NEW — Mobile app GA4 events mixed with web (2026-06-10).** The iOS/Android app now forwards the same funnel events (`breathing_session_start`, `_end`, `mode_switch`, `page_viewed_breathing`) into this GA4 property via the Measurement Protocol. Every app event carries `app_platform: 'ios' | 'android'`; funnel queries that should be web-only must now exclude this param. App users get a fresh `client_id` per install (no cross-device continuity), so user counts treat each install as a new user. See [runbook §Mobile app](runbooks/tools-and-data-sources.md#mobile-app--ga4-measurement-protocol-mob-2-2026-06-10) for integration details.
 - **✅ RESOLVED — `sessions_completed = 0`:** now 15 users with > 0, and 11/11 new engaged signups credit a session. The Engaged-minutes + Unify fixes work. (Legacy pre-fix rows stay frozen — don't read magnitude off them.)
 - **✅ MOOT — `breathing_session_stop` not firing:** the May 8 unify collapsed pause/complete/stop into `breathing_session_end`; stop is intentionally dead (0 events). Count engagement off `breathing_session_end`.
 - **⚠️ NEW — `conversion_prompt_shown` event count inflated pre-2026-06-01** by a double-fire bug (fixed Jun 1, commit `a97d0fa`). Inflation was ~1.3–1.5× on **events only**; unique **users** were never affected. Always read conversion rates on users. See PRODUCT-EXPERIMENTS Prompt B "Measurement correction."
