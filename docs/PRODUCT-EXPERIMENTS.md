@@ -25,18 +25,18 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 |------|-------|--------|
 | 2026-06-01 | [Fix `conversion_prompt_shown` double-fire (impure setState updaters)](#2026-06-01-fix-conversion_prompt_shown-double-fire-impure-setstate-updaters) | 🔄 Implemented |
 | 2026-06-01 | [Conversion Prompt B (social proof + personal stats), 100% challenger](#2026-06-01-conversion-prompt-b-social-proof--personal-stats-100-challenger) | 🔄 Implemented |
-| 2026-05-12 | [Direct +47% WoW — hypothesis: organic shares from PT/DE translations](#2026-05-12-direct-47-wow--hypothesis-organic-shares-from-ptde-translations) | 🟡 Inconclusive |
-| 2026-05-12 | [UTM-tag share buttons (attribute outbound shares back to GA4)](#2026-05-12-utm-tag-share-buttons-attribute-outbound-shares-back-to-ga4) | 🔄 Implemented |
-| 2026-05-11 | [Mobile homepage: pills mode picker + full-screen orb + restore hero text](#2026-05-11-mobile-homepage-pills-mode-picker--full-screen-orb--restore-hero-text) | 🔄 Implemented |
-| 2026-05-08 | [Unify session-end events + commit-on-pause](#2026-05-08-unify-session-end-events--commit-on-pause) | 🔄 Implemented |
-| 2026-05-05 | [Engaged-Minutes Tracking — Fix Double-Counting + Stop-Event Sync](#2026-05-05-engaged-minutes-tracking--fix-double-counting--stop-event-sync) | 🔄 Implemented |
-| 2026-05-05 | [GA4 User Identification (user_id + signed_up property)](#2026-05-05-ga4-user-identification-user_id--signed_up-property) | 🔄 Implemented |
-| 2026-05-05 | [Tap-to-Pause Hint Inside Orb](#2026-05-05-tap-to-pause-hint-inside-orb) | 🔄 Implemented |
-| 2026-04-27 | [Duration Chips Below Orb](#2026-04-27-duration-chips-below-orb) | 🔄 Implemented |
-| 2026-04-27 | [Mobile Hero Above the Fold](#2026-04-27-mobile-hero-above-the-fold) | 🔄 Implemented |
-| 2026-04-27 | [page_viewed_breathing Event + sessions_completed Sync Fix](#2026-04-27-page_viewed_breathing-event--sessions_completed-sync-fix) | 🔄 Implemented |
+| 2026-05-12 | [Direct +47% WoW — hypothesis: organic shares from PT/DE translations](#2026-05-12-direct-47-wow--hypothesis-organic-shares-from-ptde-translations) | 🟡 Mixed |
+| 2026-05-12 | [UTM-tag share buttons (attribute outbound shares back to GA4)](#2026-05-12-utm-tag-share-buttons-attribute-outbound-shares-back-to-ga4) | 🟡 Mixed |
+| 2026-05-11 | [Mobile homepage: pills mode picker + full-screen orb + restore hero text](#2026-05-11-mobile-homepage-pills-mode-picker--full-screen-orb--restore-hero-text) | ⚪ Inconclusive |
+| 2026-05-08 | [Unify session-end events + commit-on-pause](#2026-05-08-unify-session-end-events--commit-on-pause) | 🟡 Mixed |
+| 2026-05-05 | [Engaged-Minutes Tracking — Fix Double-Counting + Stop-Event Sync](#2026-05-05-engaged-minutes-tracking--fix-double-counting--stop-event-sync) | ✅ Success |
+| 2026-05-05 | [GA4 User Identification (user_id + signed_up property)](#2026-05-05-ga4-user-identification-user_id--signed_up-property) | ✅ Success |
+| 2026-05-05 | [Tap-to-Pause Hint Inside Orb](#2026-05-05-tap-to-pause-hint-inside-orb) | 🟡 Mixed |
+| 2026-04-27 | [Duration Chips Below Orb](#2026-04-27-duration-chips-below-orb) | ✅ Success |
+| 2026-04-27 | [Mobile Hero Above the Fold](#2026-04-27-mobile-hero-above-the-fold) | 🟡 Mixed |
+| 2026-04-27 | [page_viewed_breathing Event + sessions_completed Sync Fix](#2026-04-27-page_viewed_breathing-event--sessions_completed-sync-fix) | 🟡 Mixed |
 
-**Roll-up by status (11 entries):** 🔄 10 Implemented · 🟡 1 Inconclusive (the 2026-05-12 Direct surge). First read on the 2026-05-19 checkpoint, full read 2026-06-02; mobile-redesign + UTM-tagging reads 2026-05-22 / 2026-06-05.
+**Roll-up by status (12 entries):** ✅ 3 Success · 🟡 6 Mixed · ⚪ 1 Inconclusive · 🔄 2 Implemented (not yet measured). *(2026-06-08 verdicts applied: Engaged-minutes ✅, GA4-user-ID ✅; Unify, Tap-to-pause, UTM-shares, Direct all 🟡; Mobile-homepage ⚪. Conversion Prompt B + its double-fire fix are not yet due — first read 2026-06-15, verdict 2026-06-29 — see entries.)*
 
 See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state, [docs/UX-BACKLOG.md](UX-BACKLOG.md) for what's next, [docs/runbooks/weekly-funnel-refresh.md](runbooks/weekly-funnel-refresh.md) for how to pull the numbers.
 
@@ -57,9 +57,11 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 
 So do **not** compare post-fix rates against the pre-fix logged baseline. Recompute the baseline on a post-fix `conversion_prompt_shown` count, or compare post-fix to post-fix, before applying the Conversion Prompt B criteria. The fix changes the count, not when the prompt shows or any user behavior.
 
-**Status:** 🔄 Implemented — shipping to prod 2026-06-01 (pending push approval). Commit: forthcoming. This is a tracking-correctness fix with no measure-after verdict of its own; its effect is folded into the Conversion Prompt B read (2026-06-15 first read, 2026-06-29 verdict), which must account for the prompt_shown drop.
+**Update (2026-06-08):** Empirically, the cleaner resolution is to **measure on unique users, not events** — the double-fire inflated `conversion_prompt_shown` event count but left unique-user count untouched (two events, same user/session). Measured pre/post, the inflation factor was **~1.3–1.5×, not 2×**. See the [Conversion Prompt B "Measurement correction" note](#2026-06-01-conversion-prompt-b-social-proof--personal-stats-100-challenger) for the data and the amended user-based criteria. Net: no event-denominator recomputation is needed if rates are scored on users.
 
-**Prod verification:** fresh logged-out session on deepbreathingexercises.com, `resonance_conversion` cleared, `window.gtag` recorder installed, one auto-completed 1-min session. Assert `conversion_prompt_shown` appears exactly once (was twice), `signin_prompt_view` still fires, and the prompt still opens after ~1.5s.
+**Status:** 🔄 Implemented — shipped to prod 2026-06-01. Commit: [`a97d0fa`](https://github.com/Darkmatter-AI/deepbreathing/commit/a97d0fa). This is a tracking-correctness fix with no measure-after verdict of its own; its effect is folded into the Conversion Prompt B read (2026-06-15 first read, 2026-06-29 verdict), which must account for the prompt_shown drop.
+
+**Prod verification (2026-06-02 ✅):** fresh logged-out session on deepbreathingexercises.com, `resonance_conversion` cleared, `window.gtag` recorder installed, duration-chip click to trigger `onSettingsChange`. `conversion_prompt_shown` fired exactly once (dataLayer count: 1, variant: `social_stats`, trigger: `settings_change`). `ConversionNudge` UI rendered in settings sheet. GA4 beacon sent to `region1.google-analytics.com/g/collect` with `tid=G-53DLCBMRL3`.
 
 ---
 
@@ -81,6 +83,19 @@ So do **not** compare post-fix rates against the pre-fix logged baseline. Recomp
 - ✅ **Success** if, over the window, prompt_shown → conversion_signup_completed is **≥ 16%** (from 11.5%, ≈ +4.5pp / +40% rel), AND signup_user_identified / prompt_shown does not regress below ~7%, AND conversion_prompt_dismissed rate is not materially higher (≤ +5pp).
 - ❌ **Failed** if signup_completed rate ≤ 11.5% (no lift) OR dismiss rate clearly up.
 - 🟡 **Mixed/Inconclusive** if intent rises but truth (signup_user_identified) stays flat or falls, OR if fewer than ~150 prompt impressions accrue by the verdict date (underpowered → extend, do not call it).
+
+**Measurement correction (2026-06-08, before first read — supersedes the "recompute the post-fix denominator" guidance in the [double-fire entry](#2026-06-01-fix-conversion_prompt_shown-double-fire-impure-setstate-updaters)):** Pulled clean pre/post-fix windows around the 2026-06-01 cutover (GA4 Events, property 527524722; pre = May 18–31 control sheet, post = Jun 2–7 Prompt B). The double-fire inflated `conversion_prompt_shown` **event count** but **not unique users** — a double-fire is two events from the *same user in the same session*. Evidence:
+
+- `prompt_shown` **events** / `breathing_session_start` **events**: 1.46 (pre) → 1.02 (post) — a ~30% drop. So the prod inflation factor was **~1.3–1.5×, not 2×** (the impure updater re-ran roughly ⅓–½ of renders, not every render). A naive "halve it" event correction would over-deflate.
+- `prompt_shown` **users** / `breathing_session_start` **users**: 0.735 → 0.721 — **flat**. Unique-user counts were never inflated.
+
+**Three amendments to the criteria above:**
+
+1. **Primary metric is now user-based:** `conversion_signup_completed` **users** / `conversion_prompt_shown` **users**. Double-fire-immune, so pre and post are directly comparable with zero denominator surgery. Do **not** score this experiment on event-count ratios.
+2. **Corrected control baseline (user-based): 10.7%** = 16 signup-users / 150 prompt-shown-users (May 18–31, control sheet) — consistent with the logged ~11.5%. The ✅ ≥16% / ❌ ≤11.5% bars now apply to the **user-based** rate vs this 10.7% control.
+3. **Ignore the event-based dismiss rate.** Event-based dismiss rose 8.2% → 11.5% post-fix, but that is a pure artifact of the deflated `shown` event denominator (the false-❌-Failed trap). **User-based** dismiss is flat: 37.3% (56/150) → 38.8% (31/80). Apply the dismiss guardrail on the user basis only.
+
+**Early read (Jun 2–7, 6d, underpowered — NOT a verdict):** user-based intent **6.25%** (5/80), dismiss 38.8% (flat), truth `signup_user_identified` 5.0% (4/80). Intent is trending *below* the 10.7% control and far below the 16% bar — the +40% lift is not materializing so far. N is well under the ~150-impression floor (CIs overlap heavily), so this is directional only, not callable. **Likely-cause hypothesis:** the social-proof live count and `dayStreak` are still **simulated** (see Known caveats) — if users sense "N people breathing now" is fake, the reframe may be *suppressing* intent vs the honest "save your progress" control. Action before the 6/29 verdict: make the live count + streak real, else the verdict measures a placebo, not the mechanic.
 
 **Power caveat:** pre/post at ~52 impressions/wk only reliably detects large effects. A null result is "inconclusive at this N," not proof of no effect. Watch the dashboard's other lines for confounding co-movement (seasonality, concurrent changes).
 
@@ -113,7 +128,9 @@ Country lift was concentrated in translated/EU markets: Portugal +1,000%, German
 - ❌ Rejected if: `utm_source=share` shows <3 new users in 14d AND Direct falls back to <80 new users / 7d (i.e. the surge was a one-week anomaly, not a sustained share-driven channel).
 - 🟡 Mixed if: `utm_source=share` shows traffic but Direct stays elevated independently (i.e. only a fraction of the share traffic was passing through our buttons).
 
-**Status:** 🟡 Inconclusive — can't attribute Direct surge without instrumentation. UTM-tagging change (below) is the instrumentation; this entry will get a verdict on 2026-06-05.
+**Result (2026-06-08, GA4 — User acquisition new-users 7d + Traffic acquisition share 14d):** 🟡 **Mixed.** Direct is **sustained**: 131 new users in the last 7d (Jun 1–7) — *above* the 115 surge-week baseline and over the >100 "elevated" threshold. But the share buttons explain almost none of it: `utm_source=share` is only ~4 sessions/14d (see [UTM entry below](#2026-05-12-utm-tag-share-buttons-attribute-outbound-shares-back-to-ga4)). Per the pre-committed criteria, share <10 new-users/14d fails the ✅ "Confirmed" leg, while Direct >100/7d fails the ❌ "Rejected" leg → the explicit **🟡 Mixed** branch ("share shows traffic but Direct stays elevated independently"). The surge is real and durable but **largely unattributable** — untagged messenger copy-paste of the bare URL, or brand/word-of-mouth, neither of which our instrumentation can capture.
+
+**Status:** 🟡 Mixed (measured 2026-06-08) — Direct sustained at 131 new/7d but not explained by our share buttons (~4 share sessions/14d); surge is real but unattributable with current tooling. Stop chasing attribution unless copy-medium tagging is fixed.
 
 ---
 
@@ -143,6 +160,10 @@ This won't capture pure copy-paste from the browser URL bar (out of our control)
 - ⚪ Inconclusive if: <5 share-button clicks in the window (no signal either way).
 
 **Risk to watch:** Some messengers (Slack, iMessage, WhatsApp) preserve query strings; others (older Facebook, some email clients) strip them. If `utm_source=share` shows up at much lower volume than expected, the medium-stripping hypothesis is the first thing to check, not the share button itself being unused.
+
+**Result (2026-06-08, GA4 Traffic acquisition, session source/medium):** 🟡 **Mixed.** `share / native` works — **36 sessions / 315 events over 28d** (77.8% engagement, 2m53s avg), confirming the instrument fires and shares are a real (if small) channel. But **`share / copy` never registered once** (0 rows), and volume is front-loaded and decaying — only **4 sessions in the trailing 14d** (below the ≥10 success bar, and below the experiment's own <5 "inconclusive" floor). So: native tagging validated, copy path broken or unused, channel small.
+
+**Status:** 🟡 Mixed (measured 2026-06-08) — native UTM tagging confirmed functional; copy-medium tagging produces nothing (fix or drop it); share volume low and decaying. The instrument works; the channel is minor.
 
 ---
 
@@ -182,6 +203,10 @@ Restoring intent: small pills make modes visible at a glance (5 visible + "All t
 
 **Risk to watch:** the `noMobileBottomPad` prop changed Resonance's mobile main padding from `pb-44` to `pb-24` for the homepage path. The original `pb-44` was reserving space for the fixed `bottom-6` sound-hint banner. If a user lands on the homepage, hits play with sound muted, and the banner appears, it may now overlap with the duration chips area. Worth a real-device test on iPhone Safari. Also: the absolute-positioned hero on mobile means hero text and the orb's particle field overlap visually — this is intentional (transparent over particles) but watch GSC/PSI for any CLS regression on mobile.
 
+**Result (2026-06-08, GA4 28d):** ⚪ **Inconclusive (recommend extend).** Of the 3 success indicators: (a) `mode_switch` rose **1.7% → 3.6%** of starts (15 users / 413) — a 2× jump, but under the ≥4% bar; (b) mobile `start → complete` is **not cleanly measurable** — completion semantics changed via the [Unify ship](#2026-05-08-unify-session-end-events--commit-on-pause) 3 days earlier (legacy `breathing_session_complete` is dead, 5 events), so the criterion is partly obsoleted; (c) mobile `start`/`page_viewed_breathing` had no pinned baseline to compare against. Not ❌ Failed (mode_switch > 2%). Traffic is sufficient (413 starts), so this is *not* volume-inconclusive — the criteria themselves were undercut by the co-shipped event redefinition.
+
+**Status:** ⚪ Inconclusive (measured 2026-06-08) — mode discovery clearly improved (1.7%→3.6%) but landed under its own 4% bar; the completion leg was obsoleted by the Unify ship. **Recommend:** re-pin baselines (define "complete" as `breathing_session_end` reason=completed; pin the start-per-view ratio) and re-read next refresh rather than killing.
+
 ---
 
 ### 2026-05-08: Unify session-end events + commit-on-pause
@@ -212,6 +237,10 @@ Collapsing to a single `breathing_session_end` event with a `reason` parameter (
 
 **Risk to watch:** the soft-end-on-pause means a user who paces — pause / resume / pause / resume — emits multiple `breathing_session_end` events for the same session. GA4 funnel reports may need to count distinct `sessionId` (param) not distinct events. Tracked in UX-BACKLOG #20 (custom dimension).
 
+**Result (2026-06-08, Neon DB + GA4 28d):** 🟡 **Mixed.** Sub-criterion 1 (sessions_completed) **passes**: 11/11 new post-2026-05-08 engaged signups credit a session (≥80% bar). Sub-criterion 2 (end-event coverage ≥90% of starts) **falls short**: `breathing_session_end` covers **82.7% of starts by events** (829/1,002) / 69.5% by users (287/413) over 28d — up from the ~63% pause+complete baseline, but short of 90%, and the user basis sits near the ❌ <75% line. `breathing_session_stop` confirmed dead (0 events); legacy pause/complete residual (2 / 5 events). Some sessions (tab-close, hard nav) still emit no end event.
+
+**Status:** 🟡 Mixed (measured 2026-06-08) — structural sessions_completed fix fully successful; end-event coverage improved (63%→83%) but below the 90% target. **Follow-up:** fire `breathing_session_end` via `navigator.sendBeacon` on `visibilitychange`/`pagehide` to capture tab-close sessions (UX-BACKLOG).
+
 ---
 
 ### 2026-05-05: Engaged-Minutes Tracking — Fix Double-Counting + Stop-Event Sync
@@ -236,6 +265,10 @@ Collapsing to a single `breathing_session_end` event with a `reason` parameter (
 - ⚪ Inconclusive if: too few new engaged users in the measurement window to compare meaningfully (<3).
 
 **Measure-after:** 2026-05-19 (read), 2026-06-02 (verdict).
+
+**Result (2026-06-08, Neon DB):** **✅ Success on the structural goal.** `sessions_completed > 0` went from **0 of all users → 15 users**; **11 of 11** new (post-2026-05-08) engaged signups now credit a session. The double-count magnitude leg ("30–60% lower") is **not cleanly verifiable** — legacy rows are frozen pre-fix (Eugene still 168 min / 0 sessions, last synced Apr 18), so the average can't drop retroactively — but new post-fix rows show plausible, non-doubled values (e.g. 5 min/6 sessions, 1 min/7 sessions). No evidence of doubling in new data.
+
+**Status:** ✅ Success (measured 2026-06-08) — the `sessions_completed = 0` structural bug is fixed (0 → 100% of new engaged users credit a session). Magnitude leg unverifiable on frozen legacy rows; close as a win.
 
 ---
 
@@ -269,6 +302,10 @@ Collapsing to a single `breathing_session_end` event with a `reason` parameter (
 
 **Measure-after:** 2026-05-19.
 
+**Result (2026-06-08, GA4 property 527524722):** **✅ Success.** `signup_user_identified` is firing for **22 users / 37 events** over 28d (up from the first-appearance of 4 on May 8). The one-shot marker is gated immediately after the `gtag('set','user_id',…)` + `user_properties:{signed_up:true}` calls, so its firing confirms the user-ID + signed_up path runs end-to-end. Count is consistent with the active logged-in cohort (DB active-14d = 15; 22 identified over 28d).
+
+**Status:** ✅ Success (measured 2026-06-08) — GA4 user identification wired and firing; cross-device stitching + signed-up-vs-guest segmentation now possible.
+
 ---
 
 ### 2026-05-05: Tap-to-Pause Hint Inside Orb
@@ -298,6 +335,10 @@ Collapsing to a single `breathing_session_end` event with a `reason` parameter (
 **Risks to watch:** The hint is a small visual addition during a meditative session; it might feel intrusive. If user complaints arrive, consider fade-out after 5 seconds or first-session-only.
 
 **Measure-after:** 2026-05-19.
+
+**Result (2026-06-08, GA4 28d, device split):** Mobile abandonment (no end event / starts) = **(202−130)/202 = 35.6%**, well under the ≤66% target — BUT **confounded**. The 2026-05-08 [Unify session-end](#2026-05-08-unify-session-end-events--commit-on-pause) ship redefined engagement: `breathing_session_end` now fires on *pause* (soft-end), so the baseline's "(start − pause − complete)/start = 74.3%" and today's measure aren't the same metric. The only hint-specific signal is the **mobile−desktop abandonment gap narrowing from ~25pp → 9.5pp** (mobile 35.6% vs desktop 26.1%). Target numerically met, but the co-shipped tracking change accounts for most of the drop; the hint can't be cleanly credited.
+
+**Status:** 🟡 Mixed (measured 2026-06-08) — keep the hint (zero cost, gap-narrowing is encouraging) but don't credit it as a proven win; a clean read needs an A/B isolating the hint from the event-model change.
 
 ---
 

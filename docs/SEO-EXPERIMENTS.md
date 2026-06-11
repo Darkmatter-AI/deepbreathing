@@ -21,9 +21,9 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-05-06 | [9D Breathwork Cluster — 2 Pages Riding the Breakout Trend](#2026-05-06-9d-breathwork-cluster--2-pages-riding-the-breakout-trend) | 🔄 Implemented |
 | 2026-05-06 | [Wim Hof Bing CTR — SERP Feature Structural Ceiling (Finding)](#2026-05-06-wim-hof-bing-ctr--serp-feature-structural-ceiling) | 📊 Snapshot |
 | 2026-05-06 | [E-E-A-T Wellness-Class Overhaul — Founder Byline + Lineage + Light Citations](#2026-05-06-e-e-a-t-wellness-class-overhaul--founder-byline--lineage--light-citations) | 🔄 Implemented |
-| 2026-05-05 | [Bing Translated-Page Indexing Push — URL + Content Submission](#2026-05-05-bing-translated-page-indexing-push--url--content-submission) | 🔄 Implemented |
-| 2026-05-05 | [Coherent Page Title Rewrite — Timer Intent Match](#2026-05-05-coherent-page-title-rewrite--timer-intent-match) | 🔄 Implemented |
-| 2026-05-05 | [Fix 5 GSC 404s — Double-locale + Sub-path Redirects](#2026-05-05-fix-5-gsc-404s--double-locale--sub-path-redirects) | 🔄 Implemented |
+| 2026-05-05 | [Bing Translated-Page Indexing Push — URL + Content Submission](#2026-05-05-bing-translated-page-indexing-push--url--content-submission) | ✅ Success |
+| 2026-05-05 | [Coherent Page Title Rewrite — Timer Intent Match](#2026-05-05-coherent-page-title-rewrite--timer-intent-match) | ⚪ Inconclusive |
+| 2026-05-05 | [Fix 5 GSC 404s — Double-locale + Sub-path Redirects](#2026-05-05-fix-5-gsc-404s--double-locale--sub-path-redirects) | ❌ Failed |
 | 2026-05-05 | [CTR Investigation — 4 High-Impression Pages (Diagnostic)](#2026-05-05-ctr-investigation--4-high-impression-pages-diagnostic) | 📊 Snapshot |
 | 2026-04-20 | [Indexing Remediation — Bulk URL Resubmission to GSC + Bing](#2026-04-20-indexing-remediation--bulk-url-resubmission-to-gsc--bing) | 🔄 Implemented |
 | 2026-04-01 | [Sitemap Conversion (route.ts) — Caused ~41% De-indexing](#2026-04-01-sitemap-conversion-routets--caused-41-de-indexing) | ❌ Failed |
@@ -64,7 +64,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-01-06 | [Navy SEAL Content Expansion](#2026-01-06-navy-seal-content-expansion) | ❌ Failed |
 | 2026-01-06 | [CTR Title Rewrites (Batch 1)](#2026-01-06-ctr-title-rewrites-batch-1) | ✅ Success |
 
-**Roll-up by status (43 entries):** ✅ 4 Success · ❌ 8 Failed · ⚪ 11 Inconclusive · 🟡 1 Mixed · ⏳ 1 Waiting · 🔄 12 Implemented · 📊 6 Snapshot.
+**Roll-up by status (43 entries):** ✅ 5 Success · ❌ 9 Failed · ⚪ 12 Inconclusive · 🟡 1 Mixed · ⏳ 1 Waiting · 🔄 9 Implemented · 📊 6 Snapshot. *(2026-06-08: Bing indexing → ✅, Coherent rewrite → ⚪, Fix-5-404s → ❌.)*
 
 See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of what worked / failed / strategic insights from the first month of experiments.
 
@@ -212,7 +212,11 @@ Total addressable cluster volume: **~3.3K monthly searches** in US. Currently ze
 - 2026-05-19 (2-week interim check via existing `deepbreathing-indexing-checkpoint-2026-05-19` scheduled task)
 - 2026-06-02 (4-week eval — apply success criteria above)
 
-**Status:** 🔄 Implemented (not yet measured)
+**Result (2026-06-08, Bing Webmaster Tools, last 30d, Pages report):** **≥45 translated URLs now have Bing impressions, vs 2 at baseline.** Counted in the top 85 of 130 ranked pages (the grid virtualizes; the unrendered long tail is almost entirely translated, so the true figure is higher — order of 75+). By locale, top 85: es 8, pt 12, fr 11, de 5, ja 9. Success bar was ≥30 → **clears it comfortably.** Examples now ranking: `/fr/breathe/coherent` (404 imp, pos 8.4), `/de/breathe/buteyko` (51 imp), `/ja/breathe/wim-hof` (38 imp), plus a deep long tail at 1–12 imp each. This **refutes the entry's own ❌-branch hypothesis** that external authority/backlinks was the binding constraint — submission + crawl *was* the bottleneck.
+
+**Next frontier (NOT this experiment):** translated pages are indexed but get low impressions (mostly 1–12) and ~0 clicks at pos 4–8. Indexing is solved; translated-page CTR/traffic is the new bottleneck — and per the [Fix-5-404s finding below](#2026-05-05-fix-5-gsc-404s--double-locale--sub-path-redirects), the proxy is still minting malformed locale URLs that waste crawl budget.
+
+**Status:** ✅ Success (measured 2026-06-08) — submission+crawl confirmed as the bottleneck; ≥45 of 250 translated URLs now in Bing data (vs 2). External-authority branch refuted.
 
 ---
 
@@ -238,7 +242,11 @@ Total addressable cluster volume: **~3.3K monthly searches** in US. Currently ze
 
 **Measurement date:** 2026-05-19 (2 weeks) checkpoint scheduled. Full 4-week eval ~2026-06-02.
 
-**Status:** 🔄 Implemented (not yet measured)
+**Result (2026-06-08, GSC, last 28d, page = /breathe/coherent):** The targeted timer-intent queries are still at **0% CTR** — "coherent breathing timer" (33 imp, pos 10.6 — page 2), "coherent breathing breaths per minute" (12 imp, pos 5.9), "coherent breathing 5s in 5s out hrv" (10 imp, pos 5.6). Page-level: 6 clicks / 1.68K imp / **0.4% CTR** / pos 7.3 (up from <0.1% at the 90d baseline). **Underpowered:** at 12–33 impressions per query, observing 0 clicks is statistically indistinguishable from a true 1–3% CTR (expected clicks <1), and the lead query sits on page 2 where CTR is position-capped, not title-capped. The page-level tick-up (6 clicks) is also small-N. Consistent with the CTR-investigation key insight (this page's top-10 queries are ~3.5% of impressions → CTR is a long-tail-position function, not a title function).
+
+**Recommendation:** Don't re-run as a CTR-title test — the query-volume ceiling is too low to ever detect a 1–3pp move here. If coherent traffic matters, the lever is ranking the timer query off page 2, not the title.
+
+**Status:** ⚪ Inconclusive (measured 2026-06-08) — target queries still 0% CTR but impression volume too low to evaluate; deprioritize title-CTR work on this page.
 
 ---
 
@@ -264,7 +272,11 @@ Tested locally with curl — all 5 patterns return 308 (permanent redirect) to c
 - 3 doubly-prefixed URLs submitted as `URL_DELETED` via Indexing API
 - "Validate fix" clicked in GSC Not found (404) drilldown — Google returned "Validation started: 5/5/26"
 
-**Status:** 🔄 Implemented (not yet measured) · validation in progress
+**Result (2026-06-08, GSC Page indexing → Not found (404)):** Target was 5 → 0. **Actual: 5 → 17, and Google's validation FAILED (started 5/29, failed 5/30).** The trend chart climbs steadily from ~5 (early May) to 17 (late May). Worse than the count: the 17 are a *growing, different* set driven by the same unaddressed root cause, not the original 5. Examples: `/fr/languages` & `/de/languages` (localized copies of an EN-only route — should never be crawlable), `/pt/fr/breathe/breath-of-fire` & `/fr/pt/breathe/4-7-8` & `/es/fr` & `/pt/fr` (double-locale URLs — the exact class the redirect was meant to kill), plus `https://www.deepbreathingexercises.com/` and `http://www.deepbreathingexercises.com/` (apex/www/http homepage variants 404ing instead of 301-ing).
+
+**Diagnosis:** the redirect rules treated symptoms (5 specific stale URLs); the mass-translate proxy keeps emitting new malformed locale URLs (double-locale + localized EN-only routes) that Google crawls and indexes as 404. The www/http homepage 404s are a separate canonicalization gap. Root cause — the proxy's URL generation — is unaddressed.
+
+**Status:** ❌ Failed (measured 2026-06-08) — 404 count grew 5 → 17, validation failed; redirect fix didn't address the proxy-level root cause. **Follow-up needed:** (a) fix the proxy so it never emits double-locale or localized-EN-only hrefs; (b) add `www→apex` and `http→https` 301s; (c) re-submit `URL_DELETED` for the current 17 + re-validate.
 
 ---
 
