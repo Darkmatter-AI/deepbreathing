@@ -20,7 +20,9 @@ Auth: `Authorization: Bearer $DKMT_CC_KEY`
 |---------|-------------|
 | `dkmt-cc status deep-breathing` | Project dashboard |
 | `dkmt-cc context deep-breathing` | Full project context |
-| `dkmt-cc env deep-breathing --export` | Resolve secrets as env vars |
+| `dkmt-cc env deep-breathing` | Where env values live + how to fetch them |
+| `dkmt-cc secret get deep-breathing <key> --resolve` | Resolve a registered secret (op://) |
+| `dkmt-cc secret list deep-breathing` | List registered secret refs |
 | `dkmt-cc note deep-breathing "text"` | Add a note |
 | `dkmt-cc pm deep-breathing` | PM digest (Linear + commits) |
 | `dkmt-cc whoami` | Check current user |
