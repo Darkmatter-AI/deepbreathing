@@ -242,6 +242,20 @@ Streaks/notifications are out of scope here; if pursued, open a Linear issue fir
 
 **Priority: Low (v2 scope per GOAL.md). Size: M-L. Product decision needed before build.**
 
+> **STATUS: DONE 2026-06-10** (Claude Sonnet subagent, judged + committed by the orchestrating
+> agent). **Owner decision:** bottom pull-up tab (not the brief's option a); 7 "Include" modes
+> ship in the brief's order; the deferred five stay out of v1, Wim Hof deferred rather than
+> disclaimer-gated. Implementation: native `ModeLibrarySheet` (Animated + PanResponder, no new
+> deps) over the webview; tab visible only when idle (running state derived from `keep_awake`
+> events); switching is prop-driven via the existing `initialMode` through the `$$props`
+> bridge — ZERO changes to the DOM component or `Resonance.tsx`; persistence rides the MOB-4a
+> mirror (host passes no initialMode on launch); checkmark seeds from the persisted snapshot
+> and tracks the persist stream; `mode_switch` fired host-side via the MOB-2 client.
+> NOT double-fired: the webview emits `mode_switch` only from its own settings-sheet handler
+> (`handleModeSelect`), never on prop-driven changes — verified in code.
+> Sim-verified: sheet in dark + light, Ujjayi switch recolors the orb, tab hidden mid-session,
+> mode survives relaunch (manifest + screenshot), `mode_switch → HTTP 204` in the Metro log.
+
 ### Problem
 
 Wim Hof, Tummo, Breath of Fire, Nadi Shodhana, Ujjayi, and Buteyko are hidden-unless-active in
@@ -260,9 +274,9 @@ is the home screen or secondary.
 
 ### Acceptance criteria
 
-- [ ] Every shipped mode reachable in 2 taps or fewer.
-- [ ] Mode choice persists across launches (combine with MOB-4a).
-- [ ] `mode_switch` analytics fire on selection (combine with MOB-2).
+- [x] Every shipped mode reachable in 2 taps or fewer (tap tab, tap mode).
+- [x] Mode choice persists across launches (combine with MOB-4a).
+- [x] `mode_switch` analytics fire on selection (combine with MOB-2).
 
 ### Decision brief (drafted 2026-06-10 — owner to decide)
 

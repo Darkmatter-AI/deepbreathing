@@ -24,6 +24,8 @@ import {
 } from '../breathing/resonance-mirror';
 import { GA4_FORWARDED_EVENTS, fireGA4Event, warmClientId } from '../breathing/ga4-mp';
 import CompletionSummary, { type CompletionSummaryData } from '../components/CompletionSummary';
+import ModeLibrarySheet from '../components/ModeLibrarySheet';
+import { ModeName } from '../components/breathing-web/constants';
 
 // Scopes the screen-awake lock to an active session so it releases on pause/stop.
 const KEEP_AWAKE_TAG = 'breathing-session';
@@ -79,6 +81,22 @@ export default function HomeScreen() {
   // Completion summary visibility.
   const [summaryData, setSummaryData] = useState<CompletionSummaryData | null>(null);
 
+  // MOB-5: Mode library state.
+  // selectedMode starts as undefined so the webview loads from saved settings.
+  // It is only set (non-undefined) after the user picks a mode from the sheet;
+  // that value is passed as initialMode and causes the webview to switch.
+  // IMPORTANT: we never persist this on the host — the webview's own persist
+  // effect writes resonance_settings.mode which mirrors via the MOB-4a bridge.
+  const [selectedMode, setSelectedMode] = useState<ModeName | undefined>(undefined);
+
+  // Running-state detection: derived from keep_awake events (active=true while
+  // running, active=false on pause/stop/complete). The tab is hidden while running.
+  const [isSessionRunning, setIsSessionRunning] = useState(false);
+
+  // Latest active mode name from the persist stream (resonance_settings.mode).
+  // Used to show a checkmark on the current mode in the sheet.
+  const [activeModeName, setActiveModeName] = useState<string | null>(null);
+
   // Warm the GA4 client_id cache early so the first event doesn't pay the
   // AsyncStorage round-trip latency.
   useEffect(() => {
@@ -91,6 +109,18 @@ export default function HomeScreen() {
     loadPersistedSnapshot().then((snapshot) => {
       setPersistedSnapshot(snapshot);
       setSnapshotReady(true);
+      // MOB-5: seed the sheet's active-mode checkmark from the saved settings
+      // so the first open is correct before any persist event arrives.
+      // Snapshot values are encodeURIComponent-encoded (see resonance-mirror.ts).
+      const rawSettings = snapshot[RESONANCE_STORAGE_KEYS.SETTINGS];
+      if (rawSettings) {
+        try {
+          const parsed = JSON.parse(decodeURIComponent(rawSettings)) as Record<string, unknown>;
+          if (typeof parsed.mode === 'string') setActiveModeName(parsed.mode);
+        } catch {
+          // Malformed value — checkmark falls back to the persist stream.
+        }
+      }
     });
   }, []);
 
@@ -151,6 +181,10 @@ export default function HomeScreen() {
       return;
     }
     if (name === 'keep_awake') {
+      // Derive session running state from keep_awake so the mode tab hides
+      // while a session is active. active=true on start/resume, false on
+      // pause/stop/complete — confirmed via BreathingExperience.tsx:422-424.
+      setIsSessionRunning(params?.active === true);
       try {
         if (params?.active) await activateKeepAwakeAsync(KEEP_AWAKE_TAG);
         else await deactivateKeepAwake(KEEP_AWAKE_TAG);
@@ -174,6 +208,18 @@ export default function HomeScreen() {
           // Malformed JSON — keep the previous ref value.
         }
       }
+      // MOB-5: Track the active mode from resonance_settings so the sheet can
+      // show a checkmark on the currently active mode.
+      if (params.key === RESONANCE_STORAGE_KEYS.SETTINGS && value != null) {
+        try {
+          const parsed = JSON.parse(value) as Record<string, unknown>;
+          if (typeof parsed.mode === 'string') {
+            setActiveModeName(parsed.mode);
+          }
+        } catch {
+          // Malformed JSON — leave activeModeName unchanged.
+        }
+      }
       await mirrorPersist(params.key, value);
       return;
     }
@@ -192,6 +238,20 @@ export default function HomeScreen() {
     setSummaryData(null);
   }, []);
 
+  // MOB-5: Handle mode selection from the sheet.
+  // Sets selectedMode → passed as initialMode prop → webview switches mode.
+  // Also fires mode_switch to GA4 (matching the webview's own event params).
+  // We track from/to using activeModeName (from persist stream) so params align.
+  const handleSelectMode = useCallback((mode: ModeName) => {
+    const from = activeModeName ?? ModeName.Box;
+    // Fire analytics from the host (MOB-2 GA4 bridge), matching webview params.
+    fireGA4Event('mode_switch', { from, to: mode });
+    setSelectedMode(mode);
+    // Update local checkmark immediately so the sheet reflects the choice
+    // before the webview's next persist flush.
+    setActiveModeName(mode);
+  }, [activeModeName]);
+
   return (
     <View style={[styles.container, { backgroundColor: backdrop }]}>
       <Stack.Screen options={{ headerShown: false }} />
@@ -204,6 +264,10 @@ export default function HomeScreen() {
             appState={appState}
             isNativeApp
             initialPersistedSnapshot={persistedSnapshot}
+            // MOB-5: Only pass initialMode when the user explicitly selected one
+            // from the sheet. On launch this is undefined so the webview loads
+            // from saved resonance_settings (mode choice survives relaunch).
+            initialMode={selectedMode}
             onSessionComplete={handleSessionComplete}
             onEvent={handleEvent}
           />
@@ -213,6 +277,14 @@ export default function HomeScreen() {
             data={summaryData}
             theme={theme}
             onDismiss={handleDismissSummary}
+          />
+        )}
+        {/* MOB-5: Mode library pull-up tab — hidden while a session is running. */}
+        {!isSessionRunning && (
+          <ModeLibrarySheet
+            theme={theme}
+            activeModeName={activeModeName}
+            onSelectMode={handleSelectMode}
           />
         )}
       </SafeAreaView>
