@@ -50,6 +50,10 @@ submission date back.
 
 | P | URL | Indexed | GSC | Bing |
 |---|---|---|---|---|
+| 1 | https://deepbreathingexercises.com/breathe/9d-breathwork |  | 2026-06-13 | 2026-06-13 |
+| 1 | https://deepbreathingexercises.com/breathe/hope-cartel-9d-breathwork |  | 2026-06-13 | 2026-06-13 |
+| 2 | https://deepbreathingexercises.com/about/abi |  | 2026-06-13 | 2026-06-13 |
+| 2 | https://deepbreathingexercises.com/about/editorial-policy |  | 2026-06-13 | 2026-06-13 |
 | 1 | https://deepbreathingexercises.com | ✓ |  |  |
 | 1 | https://deepbreathingexercises.com/es/1-minute-breathing-exercise | ✓ |  |  |
 | 1 | https://deepbreathingexercises.com/es/2-minute-breathing-exercise | ✓ |  |  |
