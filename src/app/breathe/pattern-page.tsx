@@ -6,7 +6,7 @@ import { notFound } from "next/navigation";
 import { FadingHeroTitle } from "@/components/breathe/fading-hero-title";
 import { BREATHING_PATTERNS } from "@/components/resonance/constants";
 import { JsonLd } from "@/components/seo/json-ld";
-import { breathingPageMap, type BreathingPageContent } from "@/data/breathing-pages";
+import { breathingPageMap, type BreathingPageContent, type OwnedVideoEmbed } from "@/data/breathing-pages";
 import { LocalizedDate } from "@/components/seo/localized-date";
 import { LanguageSwitcherFooter } from "@/components/language-switcher";
 import { renderInlineLinks } from "@/lib/render-inline-links";
@@ -182,15 +182,19 @@ export function PatternPage({ slug }: { slug: string }) {
     ]
   };
 
-  const videoSchema = page.video ? {
+  // VideoObject schema goes on the OWNED video (our channel) so GSC can verify it.
+  // Third-party authority videos remain as plain embeds with no competing VideoObject.
+  const ownedVideo: OwnedVideoEmbed | undefined = page.ownedVideo;
+  const videoSchema = ownedVideo ? {
     "@context": "https://schema.org",
     "@type": "VideoObject",
-    name: page.video.title,
-    description: page.video.description,
-    thumbnailUrl: `https://img.youtube.com/vi/${page.video.youtubeId}/maxresdefault.jpg`,
-    uploadDate: `${page.meta.datePublished}T08:00:00+00:00`,
-    embedUrl: `https://www.youtube.com/embed/${page.video.youtubeId}`,
-    contentUrl: `https://www.youtube.com/watch?v=${page.video.youtubeId}`
+    name: ownedVideo.title,
+    description: ownedVideo.description,
+    thumbnailUrl: `https://img.youtube.com/vi/${ownedVideo.youtubeId}/maxresdefault.jpg`,
+    uploadDate: `${ownedVideo.uploadDate}T08:00:00+00:00`,
+    duration: ownedVideo.duration,
+    embedUrl: `https://www.youtube.com/embed/${ownedVideo.youtubeId}`,
+    contentUrl: `https://www.youtube.com/watch?v=${ownedVideo.youtubeId}`
   } : null;
 
   const structuredData = [faqSchema, howToSchema, articleSchema, breadcrumbSchema, ...(videoSchema ? [videoSchema] : [])];
@@ -393,23 +397,47 @@ export function PatternPage({ slug }: { slug: string }) {
           </div>
         </section>
 
-        {page.video ? (
-          <section className="glow-card space-y-6 rounded-[32px] border border-border bg-card p-8">
-            <div>
-              <p className="text-sm uppercase tracking-widest text-primary">Watch & learn</p>
-              <h2 className="text-2xl font-semibold text-card-foreground">{page.video.title}</h2>
-              <p className="text-muted-foreground">{page.video.description}</p>
-            </div>
-            <div className="aspect-video w-full overflow-hidden rounded-2xl">
-              <iframe
-                src={`https://www.youtube-nocookie.com/embed/${page.video.youtubeId}`}
-                title={page.video.title}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="h-full w-full"
-                loading="lazy"
-              />
-            </div>
+        {(page.video || page.ownedVideo) ? (
+          <section className="glow-card space-y-8 rounded-[32px] border border-border bg-card p-8">
+            {page.video && (
+              <div className="space-y-4">
+                <div>
+                  <p className="text-sm uppercase tracking-widest text-primary">Watch & learn</p>
+                  <h2 className="text-2xl font-semibold text-card-foreground">{page.video.title}</h2>
+                  <p className="text-muted-foreground">{page.video.description}</p>
+                </div>
+                <div className="aspect-video w-full overflow-hidden rounded-2xl">
+                  <iframe
+                    src={`https://www.youtube-nocookie.com/embed/${page.video.youtubeId}`}
+                    title={page.video.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="h-full w-full"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            )}
+            {page.ownedVideo && (
+              <div className="space-y-4">
+                {page.video && <hr className="border-border" />}
+                <div>
+                  <p className="text-sm uppercase tracking-widest text-primary">Guided session</p>
+                  <h2 className="text-2xl font-semibold text-card-foreground">{page.ownedVideo.title}</h2>
+                  <p className="text-muted-foreground">Watch the guided pacer session — the same exercise as above, recorded as a video you can follow anywhere.</p>
+                </div>
+                <div className="aspect-video w-full overflow-hidden rounded-2xl">
+                  <iframe
+                    src={`https://www.youtube-nocookie.com/embed/${page.ownedVideo.youtubeId}`}
+                    title={page.ownedVideo.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="h-full w-full"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            )}
           </section>
         ) : null}
 

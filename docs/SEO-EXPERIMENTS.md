@@ -19,6 +19,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | Date | Entry | Status |
 |------|-------|--------|
 | 2026-06-13 | [Tummo CTR Title + Meta Rewrite — /breathe/tummo](#2026-06-13-tummo-ctr-title--meta-rewrite) | 🔄 Implemented |
+| 2026-06-13 | [Owned YouTube Videos + VideoObject Schema on /breathe/* Pages](#2026-06-13-owned-youtube-videos--videoobject-schema) | 🔄 Implemented |
 | 2026-06-10 | [Crawl Hygiene + Schema Cleanup — robots disallows, OG noindex, sitemap, SoftwareApplication, SearchAction](#2026-06-10-crawl-hygiene--schema-cleanup) | 🔄 Implemented |
 | 2026-05-06 | [9D Breathwork Cluster — 2 Pages Riding the Breakout Trend](#2026-05-06-9d-breathwork-cluster--2-pages-riding-the-breakout-trend) | 🔄 Implemented |
 | 2026-05-06 | [Wim Hof Bing CTR — SERP Feature Structural Ceiling (Finding)](#2026-05-06-wim-hof-bing-ctr--serp-feature-structural-ceiling) | 📊 Snapshot |
@@ -111,6 +112,32 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 - ❌ **Failed**: CTR ≤ 0.31% at 28d AND no trend. Revert and investigate whether snippet/featured-snippet overlay is eating clicks (structural ceiling like Wim Hof/Bing finding).
 
 **Status:** 🔄 Implemented
+
+---
+
+### 2026-06-13: Owned YouTube Videos + VideoObject Schema
+
+**Hypothesis:** The 2026-01-06 "Video Embeds for Rich Results" attempt failed because the embedded videos were third-party (Mark Divine, Dr. Weil, James Nestor, Huberman) — Google shows those as YouTube results, not as embeds on our page. VideoObject schema on a video you do not own cannot earn a rich result on your domain. We now have 15 videos on our own channel (@deepbreathingexercises, channel_id UC17_GvnAKkxsv39BMVE3MdQ, published 2026-06-08/09) that are recordings of the interactive pacer. Adding these as a second embed on each /breathe/* page — with VideoObject schema pointing at our channel — satisfies the ownership prerequisite. The GSC channel-link verification (Search Console → Video pages → verify channel) is a manual step the owner must do after deploy.
+
+**Prerequisite (manual, post-deploy):** Link the YouTube channel in GSC Search Console → Video Indexing → Manage channel. Without this, Google may not attribute the video to the page even with correct schema.
+
+**Baseline (2026-06-13):** GSC searchAppearance for video rich results = 0 across all pages. YouTube/AI referral from @deepbreathingexercises channel = 0 (channel published 2026-06-08, not yet indexed by Google Video).
+
+**What shipped:**
+- `OwnedVideoEmbed` interface added to `src/data/breathing-pages.ts` (youtubeId, title, description, duration ISO-8601, uploadDate)
+- `ownedVideo` field added to `BreathingPageContent`
+- 5 pages populated: `/breathe/box` (PvV1vQwRxy0, PT5M), `/breathe/4-7-8` (gdYUMwoPVpE, PT5M), `/breathe/coherent` (890OE-9Bwu0, PT5M), `/breathe/physiological-sigh` (YJHR4_QE-tA, PT5M), `/breathe/belly` (44gcMTQofjc, PT5M — first video ever on this page)
+- `pattern-page.tsx`: VideoObject JSON-LD moved from `page.video` (third-party) to `page.ownedVideo`. Third-party videos remain as plain iframes with no schema.
+- Owned video renders as a second iframe below the authority video, labelled "Guided session" with "Watch the guided pacer session" copy.
+
+**Pre-committed success criteria (measure-after 2026-08-08, ~8 weeks):**
+- ✅ **Success**: At least 1 /breathe/* page shows a video rich result thumbnail in GSC searchAppearance, OR YouTube/direct referral from the channel appears in GA4 as a new traffic source (>10 sessions/month), within 8 weeks of the GSC channel-link being verified.
+- ⚪ **Inconclusive**: No video rich result, but GSC Video Indexing shows the pages being processed (indexed video count > 0). May need more time or an authority signal on the channel.
+- ❌ **Failed**: No video indexing activity in GSC Video Indexing after 8 weeks with verified channel link. Confirms domain authority or channel age is the binding constraint.
+
+**Measure-after date:** 2026-08-08
+
+**Status:** 🔄 Implemented (not yet measured)
 
 ---
 
