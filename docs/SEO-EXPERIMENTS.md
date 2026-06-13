@@ -20,6 +20,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 |------|-------|--------|
 | 2026-06-13 | [Tummo CTR Title + Meta Rewrite — /breathe/tummo](#2026-06-13-tummo-ctr-title--meta-rewrite) | 🔄 Implemented |
 | 2026-06-13 | [Owned YouTube Videos + VideoObject Schema on /breathe/* Pages](#2026-06-13-owned-youtube-videos--videoobject-schema) | 🔄 Implemented |
+| 2026-06-13 | [404 Root-Cause Fix — Verification](#2026-06-13-404-root-cause-fix--verification) | 🔄 Implemented |
 | 2026-06-10 | [Crawl Hygiene + Schema Cleanup — robots disallows, OG noindex, sitemap, SoftwareApplication, SearchAction](#2026-06-10-crawl-hygiene--schema-cleanup) | 🔄 Implemented |
 | 2026-05-06 | [9D Breathwork Cluster — 2 Pages Riding the Breakout Trend](#2026-05-06-9d-breathwork-cluster--2-pages-riding-the-breakout-trend) | 🔄 Implemented |
 | 2026-05-06 | [Wim Hof Bing CTR — SERP Feature Structural Ceiling (Finding)](#2026-05-06-wim-hof-bing-ctr--serp-feature-structural-ceiling) | 📊 Snapshot |
@@ -138,6 +139,60 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 **Measure-after date:** 2026-08-08
 
 **Status:** 🔄 Implemented (not yet measured)
+
+---
+
+### 2026-06-13: 404 Root-Cause Fix — Verification
+
+**Hypothesis:** Commits 7843af9, 1b17599, c462899, and 8ace26e fixed the root causes that were minting malformed 404 URLs: (a) the proxy was emitting double-locale hrefs (e.g. `/pt/fr/breathe/breath-of-fire`) that got crawled and indexed as 404s; (b) `/languages` was reachable at localized paths (`/fr/languages`, `/de/languages`) even though it is an EN-only route; (c) www and http homepage variants were returning 404 instead of 301. With the root cause fixed, submitting `URL_DELETED` for the known stale 404 set accelerates removal from Google's index; the remaining www/http variants will clear on recrawl via their 301 redirects.
+
+**Baseline (2026-06-08, GSC Page indexing → Not found (404)):**
+- 17 pages in the "Not found (404)" bucket (up from 5 at the May 5 baseline)
+- Validation started 2026-05-29, **failed 2026-05-30** — prior fix treated symptoms, not root cause
+- URL classes: double-locale (`/pt/fr/*`, `/fr/pt/*`, `/es/fr`, `/pt/fr`), localized EN-only routes (`/fr/languages`, `/de/languages`), www/http homepage variants
+
+**Fix commits:**
+- `7843af9` — proxy root-cause: stop emitting double-locale hrefs
+- `1b17599` — EN_ONLY_ROUTES gating prevents localized copies of /languages
+- `c462899` — www→apex 301 redirect rule
+- `8ace26e` — http→https redirect via Cloudflare rule
+
+**Actions taken (2026-06-13):**
+
+`URL_DELETED` submitted via Indexing API for 9 stale 404s (all returned `success: true`):
+
+| URL | Result |
+|-----|--------|
+| `https://deepbreathingexercises.com/pt/fr/breathe/breath-of-fire` | success |
+| `https://deepbreathingexercises.com/fr/pt/breathe/4-7-8` | success |
+| `https://deepbreathingexercises.com/es/fr` | success |
+| `https://deepbreathingexercises.com/pt/fr` | success |
+| `https://deepbreathingexercises.com/fr/languages` | success |
+| `https://deepbreathingexercises.com/de/languages` | success |
+| `https://deepbreathingexercises.com/es/languages` | success |
+| `https://deepbreathingexercises.com/pt/languages` | success |
+| `https://deepbreathingexercises.com/ja/languages` | success |
+
+**Not submitted as URL_DELETED:** `https://www.deepbreathingexercises.com/` and `http://www.deepbreathingexercises.com/` — these now 301 (www→apex + http→https) and will clear on recrawl. Submitting URL_DELETED for a URL that 301s to a valid canonical is wrong and counter-productive.
+
+**Manual step required — "Validate Fix" in GSC (UI only, no API):**
+
+1. Open [Google Search Console](https://search.google.com/search-console) for `deepbreathingexercises.com`
+2. Left sidebar: **Indexing** → **Pages**
+3. In the "Why pages aren't indexed" table, click **"Not found (404)"**
+4. In the issue detail panel, click **"Validate Fix"** (top right)
+5. Google starts a validation crawl; status appears in the Pages report within a few days
+
+**Pre-committed success criteria (measure-after 2026-07-13, 4 weeks):**
+- ✅ **Success**: GSC "Not found (404)" count drops to ≤5 (from 17 baseline) and validation passes
+- 🟡 **Mixed**: Count drops to 6–10; partial clearance but proxy still minting some new ones
+- ⚪ **Inconclusive**: Count drops ≤5 but validation still running — re-check at 6 weeks
+- ❌ **Failed**: Count stays ≥12, or new 404s appear in previously unseen URL classes (root-cause fix incomplete)
+
+**Measure-after date:** 2026-07-13
+
+**Status:** 🔄 Implemented (2026-06-13)
+
 
 ---
 
