@@ -109,6 +109,20 @@ curl -sI -o /dev/null -w "HTTP %{http_code}  Location: %{redirect_url}\n" \
 **Required:** project ID `prj_zcWnwD9I2TinOJjvzFyamBJMLL8T`, team ID `team_Mol8uj8iHUTzXkMbObf8tz8w` (above).
 **For waiting until deploy is live:** poll prod URL with `until [ "$(curl -sI -o /dev/null -w "%{http_code}" "URL?cb=$(date +%s%N)")" = "200" ]; do sleep 5; done` via `Bash` with `run_in_background: true`.
 
+### Warm the locale-page cache (after deploy / before a crawl)
+
+**Why:** locale pages (`/es|pt|fr|de|ja/*`) are served by the mass-translate edge Worker, which on a cold cache fetches the Vercel origin + assembles the translation per request. After a deploy the Vercel origin cache is flushed, so a cold locale page can take **5–21 s** — enough to time out a crawler. This is what crashed the Ahrefs health score to 40 on 13 Jun 2026 (see gotcha #17).
+
+**Durable fix:** `GET /api/warm-cache` (route at `src/app/api/warm-cache/route.ts`) fetches every sitemap `<loc>` with a Googlebot UA, English canonicals first (warms the Vercel origin the proxy reuses for all locales) then locale URLs (warms the Worker KV translation cache). A Vercel Cron in `vercel.json` runs it every 2 h. Protected by `CRON_SECRET` (Vercel prod env; Cron sends it as a bearer token).
+
+```bash
+# Manual warm (e.g. right after a prod deploy, before the weekly Ahrefs crawl):
+curl -s "https://deepbreathingexercises.com/api/warm-cache?token=$CRON_SECRET" | python3 -m json.tool
+# Returns: succeeded/failed counts, proxyCache hit/miss, slowest URLs.
+```
+
+Concurrency is capped at 6 in the route — **do not raise it**, the proxy 503s spoofed bot UAs at ~10 concurrent (gotcha #16d).
+
 ### Query the Neon DB
 
 **Tool:** `darkmatter-db` skill — use the eval pattern, never paste connection strings.
@@ -210,6 +224,8 @@ These have all bitten us before. Document in this file the FIRST time they bite,
 15. **Localized pages serve English server HTML; translation is applied CLIENT-SIDE (~1.5 s after load).** `curl -A "Mozilla/5.0" https://deepbreathingexercises.com/ja/<path>` returns an **all-English** page — H1 *and* body, with target-language strings absent — even for content that renders translated in a real browser. In a headless browser the target language only appears ~1.5 s in (verified by time-series: the Japanese body marker is absent at t=0–900 ms, present from ~1500 ms). Consequences: (a) any non-JS fetch / pre-render crawl sees English, so don't judge translation coverage with `curl` — drive a real browser and wait; (b) "is this page translated?" must be answered against the *settled* DOM, not server HTML; (c) some content **never** gets converted by the client pass and stays English permanently — the standalone tool-page H1 (`FadingHeroTitle`, e.g. `/ja/4-7-8-breathing-timer`) and recurring science/step-by-step body sections — see [UX-BACKLOG.md #23/#24](../UX-BACKLOG.md) and [the Jun 2026 QA report](../qa-reports/traction-pages-2026-06-06.md). Ownership (repo client-components escaping the pass vs. mass-translate coverage) is unconfirmed. (2026-06-06)
 
 16. **The proxy dynamic-renders per User-Agent — what Google sees ≠ what `curl` sees (refines #15).** Allowlisted crawler UAs (Googlebot, Bingbot, AhrefsBot, DuckDuckBot, Yandex, Semrush, facebookexternalhit, Twitterbot) get FULLY translated server HTML — title, hreflang, `lang`, and body H1/H2/prose. Browsers and unknown UAs get the English HTML + client-side swap described in #15. So: (a) to see what Google sees, `curl -A "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" <url>`; (b) `AhrefsSiteAudit` is NOT allowlisted — Ahrefs Site Audit content findings on localized URLs describe the English fallback, not what Google ranks; (c) any query string (`?duration=30`) bypasses translation entirely, even for bots; (d) do NOT bulk-fetch with spoofed bot UAs — anti-spoofing rate limits kick in at ~10 concurrent and then 503 persistently for a while (real Googlebot shows <1% 5xx in GSC crawl stats). Full audit: control repo `seo-error-audit-2026-06-10.md`. (2026-06-10)
+
+17. **A deploy can crash the Ahrefs/Google crawl health score via cold-cache locale timeouts — it's an artifact, not an outage.** Locale pages (`/es|pt|fr|de|ja/*`) are proxy-served: on a cold cache the Worker fetches the Vercel origin (single region `iad1`, US-East) + assembles the translation per request, so a cold locale page from the EU edge can take **5–21 s**. A prod deploy flushes the Vercel origin cache; if a crawler (esp. AhrefsBot crawling the flat 270-URL locale sitemap at depth-0) hits during that window, hundreds of URLs time out and the Ahrefs Health Score tanks (40/Fair on 13 Jun 2026, ~508 "timed out"). The pages return 200 on a single request — verify with `curl -w '%{time_total}'` before assuming an outage. Fix shipped: `/api/warm-cache` + a 2 h Vercel Cron keep both the Vercel origin and Worker KV warm (see "Warm the locale-page cache" above). After any prod deploy, manually hit the warm endpoint before the next crawl. Note: locale pages **do** earn clicks (e.g. `/es/breathing-visualizer` 50% CTR, `/ja/4-7-8-breathing-timer` #1 on Bing as of Jun 2026) — protect them. (2026-06-13)
 
 ---
 

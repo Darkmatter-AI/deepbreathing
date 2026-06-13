@@ -6,6 +6,7 @@ import {
   EDGE_PROXY_LOCALE_PREFIXES as rawEdgeProxyLocalePrefixes,
   buildSitemapEntries as rawBuildSitemapEntries,
   discoverPageRoutes as rawDiscoverPageRoutes,
+  isLocaleUrl as rawIsLocaleUrl,
 } from "./sitemap-routes.mjs";
 
 export type RouteMetaInput = {
@@ -37,4 +38,12 @@ export function discoverPageRoutes(appDir: string, excludedRoutes = DEFAULT_EXCL
 
 export function buildSitemapEntries(input: BuildSitemapEntriesInput): SitemapEntry[] {
   return rawBuildSitemapEntries(input as any) as SitemapEntry[];
+}
+
+export function isLocaleUrl(
+  url: string,
+  siteUrl: string,
+  localePrefixes: string[] = EDGE_PROXY_LOCALE_PREFIXES
+): boolean {
+  return rawIsLocaleUrl(url, siteUrl, localePrefixes) as boolean;
 }
