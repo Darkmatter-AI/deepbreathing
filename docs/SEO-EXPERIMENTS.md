@@ -319,6 +319,8 @@ Total addressable cluster volume: **~3.3K monthly searches** in US. Currently ze
 - Translation re-submission (will run, but not the metric being tested)
 - App store listing changes
 
+**Watch (2026-06-13):** Sitewide Google impressions dropped ~67% over six weeks: ~1,309/day on Apr 30 fell to ~437/day by Jun 9. The timing correlates with the E-E-A-T batch deploy (May 5–6) — byline, lineage, and citation changes across 22 pages, followed by position volatility. This matches the classic pattern of Google re-evaluating a low-authority domain after a bulk trust-signal rewrite. It is plausible but NOT confirmed as the cause: the April sitemap de-indexing + bulk GSC resubmission is a confound. Implication for the 2026-07-01 read: before calling ❌ Failed, check whether sitewide impressions are recovering toward ~1,000+/day. If recovering, extend rather than fail — the fix is patience (normal re-crawl), not more on-page changes. Checkpoint: assess sitewide impression trend by ~2026-06-27 (the Mon/Thu visibility cron already tracks this).
+
 ---
 
 ### 2026-05-05: Bing Translated-Page Indexing Push — URL + Content Submission
