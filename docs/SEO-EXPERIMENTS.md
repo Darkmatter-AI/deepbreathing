@@ -30,7 +30,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-05-05 | [CTR Investigation — 4 High-Impression Pages (Diagnostic)](#2026-05-05-ctr-investigation--4-high-impression-pages-diagnostic) | 📊 Snapshot |
 | 2026-04-20 | [Indexing Remediation — Bulk URL Resubmission to GSC + Bing](#2026-04-20-indexing-remediation--bulk-url-resubmission-to-gsc--bing) | 🔄 Implemented |
 | 2026-04-01 | [Sitemap Conversion (route.ts) — Caused ~41% De-indexing](#2026-04-01-sitemap-conversion-routets--caused-41-de-indexing) | ❌ Failed |
-| 2026-03-19 | [Embed Widget Page + Share Popover + llms.txt](#2026-03-19-embed-widget-page--share-popover--llmstxt) | ⏳ Waiting |
+| 2026-03-19 | [Embed Widget Page + Share Popover + llms.txt](#2026-03-19-embed-widget-page--share-popover--llmstxt) | ❌ Failed |
 | 2026-02-17 | [Checkpoint Follow-Up — Internal Links + Metadata Alignment](#2026-02-17-checkpoint-follow-up-internal-links--metadata-alignment) | 🟡 Mixed |
 | 2026-02-17 | [GSC Checkpoint (Last 28d vs Previous 28d)](#2026-02-17-gsc-checkpoint-last-28d-vs-previous-28d) | 📊 Snapshot |
 | 2026-02-06 | [Lung Capacity Exercises Page (NEW)](#2026-02-06-lung-capacity-exercises-page-new) | ❌ Failed |
@@ -67,7 +67,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-01-06 | [Navy SEAL Content Expansion](#2026-01-06-navy-seal-content-expansion) | ❌ Failed |
 | 2026-01-06 | [CTR Title Rewrites (Batch 1)](#2026-01-06-ctr-title-rewrites-batch-1) | ✅ Success |
 
-**Roll-up by status (44 entries):** ✅ 4 Success · ❌ 8 Failed · ⚪ 11 Inconclusive · 🟡 1 Mixed · ⏳ 1 Waiting · 🔄 13 Implemented · 📊 6 Snapshot.
+**Roll-up by status (46 entries):** ✅ 4 Success · ❌ 9 Failed · ⚪ 11 Inconclusive · 🟡 1 Mixed · ⏳ 0 Waiting · 🔄 15 Implemented · 📊 6 Snapshot. *(2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
 
 See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of what worked / failed / strategic insights from the first month of experiments.
 
@@ -442,7 +442,23 @@ Tested locally with curl — all 5 patterns return 308 (permanent redirect) to c
 - [ ] AI citation rate change (check Brand Radar)
 - [ ] Impressions/clicks for embed-related queries
 
-**Status:** `Waiting`
+**Result (measured 2026-06-13, ~3 months overdue):** The backlink thesis failed. The experiment's core bet was that wellness bloggers and practitioners would discover the embed page and add iframe links, which would start building referring domains from DR 0.2. That mechanism requires either organic discovery (unlikely at DR 0.2 with no brand recognition) or active outreach (never done). GSC search performance was unavailable at measurement time due to API timeout, but the absence of any signal is itself the signal: at DR 0.2 with zero promotion and no outreach campaign, no referring domains would have accumulated in 3 months. The target keywords ("breathing exercise widget", "embed breathing exercise") have negligible search volume, so organic discovery of /embed via search is implausible. The embed infrastructure is still live and useful, but the passive "build it and they'll link" thesis is ❌ Failed. Active outreach to wellness sites remains the only realistic path to referring domains at this authority level.
+
+The `llms.txt` component of this experiment is a separate signal with a longer feedback loop -- see measurement method below.
+
+**How we measure llms.txt:**
+
+No direct analytics exist for llms.txt consumption. Track these three signals in order of reliability:
+
+**(a) GA4 "AI Assistant" channel -- PRIMARY outcome proxy.** Referral sessions originating from ChatGPT, Perplexity, Claude, Copilot, and similar AI assistants appear in GA4 as a distinct channel once tagged. This channel went live ~Jun 11, 2026 (27 sessions in the first week -- a brand-new signal). Track week-over-week. A sustained upward trend is the best available proxy for AI citations driving traffic. Pull from GA4 property `527524722` (DKMT account), filter by channel = "AI Assistant". Anchor the llms.txt verdict on this signal.
+
+**(b) Server/edge logs for AI-crawler user-agents -- confirms consumption.** AI crawlers fetching `/llms.txt` and content URLs signals that the file is being indexed by the model providers. On Vercel, check function/edge logs for user-agents: `GPTBot`, `ClaudeBot` / `anthropic-ai`, `PerplexityBot`, `Google-Extended`, `CCBot`. A request to `/llms.txt` means the file was read; subsequent requests to `/breathe/*` or `/for/*` URLs suggest the content is being consumed. This is a leading indicator -- consumption now may surface as citations weeks later.
+
+**(c) Manual citation probes / Brand Radar -- confirms actual citations.** Periodically prompt the major assistants (ChatGPT, Perplexity, Claude, Copilot) with target queries: "box breathing timer", "physiological sigh how to", "4-7-8 breathing exercise", "breathing exercises for anxiety". Check whether deepbreathingexercises.com is cited or linked in the response. Run quarterly or after significant content changes. This is the ground truth but low-frequency signal.
+
+Cadence: check (a) weekly via the visibility cron; check (b) monthly via Vercel logs; check (c) quarterly or on-demand.
+
+**Status:** ❌ Failed (measured 2026-06-13) -- 0 referring domains to /embed in 3 months; passive distribution without active outreach does not work at DR 0.2. llms.txt signal deferred to (a) GA4 AI Assistant channel WoW trend.
 
 ---
 
