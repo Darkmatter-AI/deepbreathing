@@ -19,6 +19,7 @@ interface SessionCompletePromptProps {
   onSuccess: () => void;
   totalMinutes: number;
   sessionSeconds: number;
+  dayStreak?: number;
   variant: ConversionVariant;
   activeMode: ModeName;
 }
@@ -30,6 +31,7 @@ export function SessionCompletePrompt({
   onSuccess,
   totalMinutes,
   sessionSeconds,
+  dayStreak = 0,
   variant,
   activeMode,
 }: SessionCompletePromptProps) {
@@ -62,15 +64,16 @@ export function SessionCompletePrompt({
   }
 
   if (variant === "social_stats") {
-    // Conversion Prompt B. Social proof (live count + avatars) is simulated for
-    // now. Only `yourMinutes` is real, so gate the stats block on it.
+    // Conversion Prompt B. Show stats block only when both minutes and streak
+    // are real (> 0 / >= 1) — a "0" must never unblur.
     return (
       <SocialStatsSignInSheet
         open={open}
         onOpenChange={handleOpenChange}
         onSuccess={onSuccess}
         yourMinutes={totalMinutes}
-        showStats={totalMinutes > 0}
+        dayStreak={dayStreak}
+        showStats={totalMinutes > 0 && dayStreak >= 1}
       />
     );
   }

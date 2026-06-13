@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useRef } from "react";
+import { useCallback, useRef, useState } from "react";
 
 const STORAGE_KEYS = {
   SETTINGS: "resonance_settings",
@@ -9,6 +9,7 @@ const STORAGE_KEYS = {
 
 export function useSync(isAuthenticated: boolean) {
   const debounceRef = useRef<ReturnType<typeof setTimeout>>();
+  const [currentStreak, setCurrentStreak] = useState(0);
 
   const mergeGuestData = useCallback(async () => {
     if (!isAuthenticated) return;
@@ -57,6 +58,8 @@ export function useSync(isAuthenticated: boolean) {
         const localSessions = parsed.sessionsCompleted ?? 0;
         // Server wins only if it has more minutes (monotonic)
         if (data.stats.totalMinutes >= localMinutes) {
+          const serverStreak: number = data.stats.currentStreak ?? 0;
+          setCurrentStreak(serverStreak);
           localStorage.setItem(
             STORAGE_KEYS.STATS,
             JSON.stringify({
@@ -65,6 +68,8 @@ export function useSync(isAuthenticated: boolean) {
                 data.stats.sessionsCompleted ?? 0,
                 localSessions
               ),
+              currentStreak: serverStreak,
+              lastSessionDate: data.stats.lastSessionDate ?? null,
             })
           );
         }
@@ -99,14 +104,14 @@ export function useSync(isAuthenticated: boolean) {
   );
 
   const syncStats = useCallback(
-    (totalMinutes: number, sessionsCompleted: number) => {
+    (totalMinutes: number, sessionsCompleted: number, sessionDate?: string) => {
       if (!isAuthenticated) return;
 
       try {
         fetch("/api/v1/sync/stats", {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ totalMinutes, sessionsCompleted }),
+          body: JSON.stringify({ totalMinutes, sessionsCompleted, sessionDate }),
         });
       } catch {
         // Silent fail
@@ -115,5 +120,5 @@ export function useSync(isAuthenticated: boolean) {
     [isAuthenticated]
   );
 
-  return { mergeGuestData, hydrateFromServer, syncSettings, syncStats };
+  return { mergeGuestData, hydrateFromServer, syncSettings, syncStats, currentStreak };
 }

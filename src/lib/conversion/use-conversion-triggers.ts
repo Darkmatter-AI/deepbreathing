@@ -151,8 +151,10 @@ export function useConversionTriggers(isAuthenticated: boolean) {
     commit({ ...prev, dismissed: { ...prev.dismissed, settings: true } });
   }, [commit]);
 
-  const markConverted = useCallback(() => {
-    trackEvent("conversion_signup_completed", { variant: getConversionVariant() });
+  const markConverted = useCallback((currentStreak?: number) => {
+    const params: Record<string, string | number | boolean> = { variant: getConversionVariant() };
+    if (typeof currentStreak === "number") params.current_streak = currentStreak;
+    trackEvent("conversion_signup_completed", params);
     setShowSessionPrompt(false);
     setShowSettingsNudge(false);
     commit({ ...stateRef.current, convertedAt: new Date().toISOString() });
