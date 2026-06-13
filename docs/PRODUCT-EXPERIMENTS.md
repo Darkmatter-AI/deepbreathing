@@ -23,8 +23,9 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-06-14 | [Conversion Prompt C (loss_aversion), 100% challenger](#2026-06-14-conversion-prompt-c-loss_aversion-100-challenger) | 🔄 Implemented |
 | 2026-06-01 | [Fix `conversion_prompt_shown` double-fire (impure setState updaters)](#2026-06-01-fix-conversion_prompt_shown-double-fire-impure-setstate-updaters) | 🔄 Implemented |
-| 2026-06-01 | [Conversion Prompt B (social proof + personal stats), 100% challenger](#2026-06-01-conversion-prompt-b-social-proof--personal-stats-100-challenger) | 🔄 Implemented |
+| 2026-06-01 | [Conversion Prompt B (social proof + personal stats), 100% challenger](#2026-06-01-conversion-prompt-b-social-proof--personal-stats-100-challenger) | ⏸️ Paused (→ Prompt C) |
 | 2026-05-12 | [Direct +47% WoW — hypothesis: organic shares from PT/DE translations](#2026-05-12-direct-47-wow--hypothesis-organic-shares-from-ptde-translations) | 🟡 Inconclusive |
 | 2026-05-12 | [UTM-tag share buttons (attribute outbound shares back to GA4)](#2026-05-12-utm-tag-share-buttons-attribute-outbound-shares-back-to-ga4) | 🔄 Implemented |
 | 2026-05-11 | [Mobile homepage: pills mode picker + full-screen orb + restore hero text](#2026-05-11-mobile-homepage-pills-mode-picker--full-screen-orb--restore-hero-text) | 🔄 Implemented |
@@ -36,13 +37,41 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-04-27 | [Mobile Hero Above the Fold](#2026-04-27-mobile-hero-above-the-fold) | 🔄 Implemented |
 | 2026-04-27 | [page_viewed_breathing Event + sessions_completed Sync Fix](#2026-04-27-page_viewed_breathing-event--sessions_completed-sync-fix) | 🔄 Implemented |
 
-**Roll-up by status (11 entries):** 🔄 10 Implemented · 🟡 1 Inconclusive (the 2026-05-12 Direct surge). First read on the 2026-05-19 checkpoint, full read 2026-06-02; mobile-redesign + UTM-tagging reads 2026-05-22 / 2026-06-05.
+**Roll-up by status (12 entries):** 🔄 10 Implemented · ⏸️ 1 Paused (Conversion Prompt B, superseded by Prompt C) · 🟡 1 Inconclusive (the 2026-05-12 Direct surge). First read on the 2026-05-19 checkpoint, full read 2026-06-02; mobile-redesign + UTM-tagging reads 2026-05-22 / 2026-06-05.
 
 See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state, [docs/UX-BACKLOG.md](UX-BACKLOG.md) for what's next, [docs/runbooks/weekly-funnel-refresh.md](runbooks/weekly-funnel-refresh.md) for how to pull the numbers.
 
 ---
 
 ## Active Experiments
+
+### 2026-06-14: Conversion Prompt C (loss_aversion), 100% challenger
+
+**Hypothesis:** Loss-aversion framed on the user's **real just-completed session** (mode + duration + "just now") beats both the honest control AND the social-proof challenger (Prompt B). It is **honest by construction** — no simulated social proof, no fake streak — so it sidesteps the placebo risk that likely suppressed Prompt B intent (users sensing a fake "people breathing right now" count → distrust → walk past). Framing signup as *not losing* the session you just earned should lift prompt_shown → signup.
+
+**Change:** New `LossAversionSignInSheet` (dark-cocoa theme, modeled on Prompt B's sheet with the social-proof bits stripped). Shows a real-session card: `✓ SESSION COMPLETE`, the live mode label (`BREATHING_PATTERNS[activeMode].name`), the `M:SS` duration, "just now", and a coral progress ring tinted by the mode's accent color. Copy: headline "Keep tonight's calm." + loss-aversion body; primary "Continue with Google" ("One tap. No password."); "or save with email" magic-link fallback; "Not now" dismiss. The funnel events (`conversion_prompt_shown` / `_dismissed`, `conversion_signup_completed`, `signup_user_identified`) and the `conversion_variant` GA4 user property auto-carry `loss_aversion`; the sheet also fires `signin_prompt_view` / `signin_google_clicked` / `signin_magic_link_sent` tagged `variant: loss_aversion`.
+
+**Swap mechanism (instant rollback):** `src/lib/conversion/variant.ts` now exposes `ACTIVE_CHALLENGER` + `CHALLENGER_SHARE` (set to 1 = 100% challenger; **set `CHALLENGER_SHARE = 0` for instant rollback to control**). The localStorage bucket key was bumped `resonance_conversion_variant` → `…_v2` so visitors previously persisted as `social_stats` (Prompt B) re-draw and land on `loss_aversion` — required for a true 100% swap. `social_stats` stays in the type/tree (Prompt B is paused, not deleted).
+
+**Measurement design:** 100% challenger, read **pre/post** vs the baseline below (a concurrent split is underpowered at ~52 impressions/wk). Score on **users**, not events. Primary = user-based signup **intent**; `signup_user_identified` = **truth** guardrail.
+
+**Baseline (user-based, from FUNNEL-DASHBOARD + the Prompt B `conversion_prompt_shown` double-fire correction):**
+- control intent: **10.7%** (16 signup-users / 150 prompt-shown-users)
+- ~52 prompt impressions / wk
+- signup_user_identified / shown (truth floor): ~7%
+
+**Pre-committed criteria** (set 2026-06-14, before ship; first read **2026-06-28**, verdict **2026-07-12**; score on users):
+- ✅ **Success** if user-based intent (`conversion_signup_completed` users / `conversion_prompt_shown` users) is **≥ 16%**, AND `signup_user_identified` / shown is not below ~7%, AND the user-based dismiss rate is not materially up (≤ +5pp).
+- ❌ **Failed** if intent ≤ 10.7% (no lift) OR dismiss clearly up.
+- 🟡 **Mixed/Inconclusive** if intent rises but truth (signup_user_identified) stays flat or falls, OR if fewer than ~150 prompt impressions accrue by the verdict date (underpowered → extend, do not call it).
+
+**Power caveat:** pre/post at ~52 impressions/wk reliably detects only large effects. A null is "inconclusive at this N," not proof of no effect. Watch the dashboard's other lines for confounding co-movement.
+
+**Out of scope (deliberately not built for v1):** translations (English-only, matching how Prompt B shipped — add to the 5 locales if it wins); a 3-way / concurrent split (underpowered at current traffic); a time-aware headline ("tonight's" assumes evening — kept literal per the design; revisit if it reads oddly in morning sessions). The Prompt B real-social-proof branch (`feat/prompt-b-real-social-proof`) stays pushed/unmerged; this swap makes it dormant.
+
+**Status:** 🔄 Implemented — branch `feat/conversion-loss-aversion`, commit forthcoming (orchestrator pushes after review). measure-after: 2026-06-28 (first read), 2026-07-12 (verdict).
+
+---
 
 ### 2026-06-01: Fix `conversion_prompt_shown` double-fire (impure setState updaters)
 
@@ -86,7 +115,7 @@ So do **not** compare post-fix rates against the pre-fix logged baseline. Recomp
 
 **Known caveats:** social proof (live count + avatars) is **simulated** for launch (founder-approved); `dayStreak` is also simulated and unblurs to a non-real number on the email path; only `yourMinutes` is real (stats gated on > 0). See [docs/design/conversion-prompt-B-rollout.md](design/conversion-prompt-B-rollout.md). Make the live count and streak real before leaning on the endowment mechanic.
 
-**Status:** 🔄 Implemented — shipped to prod 2026-06-01. measure-after: 2026-06-15 (first read), 2026-06-29 (verdict).
+**Status:** ⏸️ **Paused 2026-06-14** — superseded by [Conversion Prompt C (loss_aversion)](#2026-06-14-conversion-prompt-c-loss_aversion-100-challenger) before this entry's 2026-06-29 verdict. Rationale: the simulated social proof is the leading suspect for *suppressing* intent (early Jun 2–7 read was directionally below the honest control), and at ~52 impressions/wk this arm couldn't reach significance anyway. The de-faked real-social-proof rebuild (`feat/prompt-b-real-social-proof`, pushed/unmerged) and its streak/presence infra are kept for a later cycle. **The pre-committed criteria above are retained, not relitigated** — if Prompt B is revived (with real social proof), it resumes against them. _Originally: 🔄 Implemented — shipped to prod 2026-06-01; measure-after 2026-06-15 (first read), 2026-06-29 (verdict)._
 
 ---
 

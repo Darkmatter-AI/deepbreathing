@@ -4,32 +4,43 @@
  * A/B bucketing for the post-session conversion prompt.
  *
  *  - "control"      = the existing SignInSheet ("Save your progress")
- *  - "social_stats" = Conversion Prompt B (social proof + personal stats)
+ *  - "social_stats" = Conversion Prompt B (social proof + personal stats) — paused 2026-06-14
+ *  - "loss_aversion" = Conversion Prompt C (real session card + loss-aversion copy) — ACTIVE
  *
- * The bucket is assigned once per visitor and persisted in localStorage so it
- * is stable across reloads and survives the OAuth round-trip. Events are tagged
- * with the bucket (see use-conversion-triggers + auth-provider) so GA4 can
- * compute prompt_shown -> signup per arm.
+ * The active challenger is determined by ACTIVE_CHALLENGER. Setting CHALLENGER_SHARE = 0
+ * is the instant rollback to control; setting it to 1 ships the challenger to everyone.
+ *
+ * Storage key v2 was bumped when switching from social_stats to loss_aversion so that
+ * returning visitors who had been persisted as social_stats re-draw under the new
+ * bucketing.
  */
 
-export type ConversionVariant = "control" | "social_stats";
+export type ConversionVariant = "control" | "social_stats" | "loss_aversion";
 
 /**
- * Share of visitors bucketed into the "social_stats" challenger.
- *   1   = ship the challenger to everyone (current: measured pre/post vs baseline)
- *   0   = full rollback to control
+ * The currently active challenger variant. One line to swap challengers.
+ */
+export const ACTIVE_CHALLENGER: ConversionVariant = "loss_aversion";
+
+/**
+ * Share of visitors bucketed into the active challenger.
+ *   1   = 100% challenger (current — measured pre/post vs baseline)
+ *   0   = instant rollback to control
  *   0.5 = true 50/50 A/B (only worthwhile once traffic supports a split)
- *
- * Shipping at 100% and reading pre/post against the funnel baseline, because at
- * current traffic (~50 prompt impressions/week) a concurrent split is
- * underpowered. See docs/design/conversion-prompt-B-rollout.md.
+ */
+export const CHALLENGER_SHARE = 1;
+
+/**
+ * Kept for reference; no longer drives assignment.
+ * ACTIVE_CHALLENGER + CHALLENGER_SHARE are the live controls.
  */
 export const SOCIAL_STATS_SHARE = 1;
 
-const VARIANT_KEY = "resonance_conversion_variant";
+// v2 key forces re-bucketing of visitors persisted under the old social_stats key.
+const VARIANT_KEY = "resonance_conversion_variant_v2";
 
 function isVariant(v: unknown): v is ConversionVariant {
-  return v === "control" || v === "social_stats";
+  return v === "control" || v === "social_stats" || v === "loss_aversion";
 }
 
 /**
@@ -42,7 +53,7 @@ export function getConversionVariant(): ConversionVariant {
     const saved = localStorage.getItem(VARIANT_KEY);
     if (isVariant(saved)) return saved;
     const assigned: ConversionVariant =
-      Math.random() < SOCIAL_STATS_SHARE ? "social_stats" : "control";
+      Math.random() < CHALLENGER_SHARE ? ACTIVE_CHALLENGER : "control";
     localStorage.setItem(VARIANT_KEY, assigned);
     return assigned;
   } catch {
