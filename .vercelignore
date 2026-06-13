@@ -6,3 +6,21 @@ resonance---breathing-visualizer/
 **/dist/
 **/build/
 .DS_Store
+
+# Local junk that accumulates in the working tree but isn't in .gitignore.
+# Without these, `vercel --prod` exceeds the 15k-file upload limit (~21k files observed).
+
+# Stale Next.js build directories left behind when .next is renamed during a deploy
+.next.stale-*/
+
+# Temporary files from local tooling
+_tmp_*/
+
+# TypeScript incremental build info (build output, not source)
+*.tsbuildinfo
+
+# Ahrefs site-audit CSV exports accidentally left in the repo root
+deepbreathingexercises_*_all-issues_*/
+
+# Stray file created by a screenshot tool flag passed as a filename
+--full-page
