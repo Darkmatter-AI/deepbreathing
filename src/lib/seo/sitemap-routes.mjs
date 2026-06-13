@@ -69,6 +69,16 @@ function stripLocalePrefix(route, localePrefixes) {
   return route;
 }
 
+// True when an absolute sitemap URL is a locale-prefixed page served through
+// the mass-translate edge proxy (e.g. `${siteUrl}/es` or `${siteUrl}/de/...`),
+// as opposed to an English canonical served from the Vercel edge. Used by the
+// cache warmer to warm English origins first, then locale pages.
+export function isLocaleUrl(url, siteUrl, localePrefixes = EDGE_PROXY_LOCALE_PREFIXES) {
+  return localePrefixes.some(
+    (prefix) => url === `${siteUrl}/${prefix}` || url.startsWith(`${siteUrl}/${prefix}/`)
+  );
+}
+
 export function discoverPageRoutes(appDir, excludedRoutes = DEFAULT_EXCLUDED_ROUTES) {
   const excluded = new Set(excludedRoutes);
   const discovered = new Set();

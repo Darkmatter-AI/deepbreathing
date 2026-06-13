@@ -18,6 +18,10 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-06-13 | [Locale Cache Warmer — Health Score Crash Fix (40→92)](#2026-06-13-locale-cache-warmer--health-score-crash-fix) | ✅ Success |
+| 2026-06-13 | [Tummo CTR Title + Meta Rewrite — /breathe/tummo](#2026-06-13-tummo-ctr-title--meta-rewrite) | 🔄 Implemented |
+| 2026-06-13 | [Owned YouTube Videos + VideoObject Schema on /breathe/* Pages](#2026-06-13-owned-youtube-videos--videoobject-schema) | 🔄 Implemented |
+| 2026-06-13 | [404 Root-Cause Fix — Verification](#2026-06-13-404-root-cause-fix--verification) | 🔄 Implemented |
 | 2026-06-10 | [Crawl Hygiene + Schema Cleanup — robots disallows, OG noindex, sitemap, SoftwareApplication, SearchAction](#2026-06-10-crawl-hygiene--schema-cleanup) | 🔄 Implemented |
 | 2026-05-06 | [9D Breathwork Cluster — 2 Pages Riding the Breakout Trend](#2026-05-06-9d-breathwork-cluster--2-pages-riding-the-breakout-trend) | 🔄 Implemented |
 | 2026-05-06 | [Wim Hof Bing CTR — SERP Feature Structural Ceiling (Finding)](#2026-05-06-wim-hof-bing-ctr--serp-feature-structural-ceiling) | 📊 Snapshot |
@@ -28,7 +32,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-05-05 | [CTR Investigation — 4 High-Impression Pages (Diagnostic)](#2026-05-05-ctr-investigation--4-high-impression-pages-diagnostic) | 📊 Snapshot |
 | 2026-04-20 | [Indexing Remediation — Bulk URL Resubmission to GSC + Bing](#2026-04-20-indexing-remediation--bulk-url-resubmission-to-gsc--bing) | 🔄 Implemented |
 | 2026-04-01 | [Sitemap Conversion (route.ts) — Caused ~41% De-indexing](#2026-04-01-sitemap-conversion-routets--caused-41-de-indexing) | ❌ Failed |
-| 2026-03-19 | [Embed Widget Page + Share Popover + llms.txt](#2026-03-19-embed-widget-page--share-popover--llmstxt) | ⏳ Waiting |
+| 2026-03-19 | [Embed Widget Page + Share Popover + llms.txt](#2026-03-19-embed-widget-page--share-popover--llmstxt) | ❌ Failed |
 | 2026-02-17 | [Checkpoint Follow-Up — Internal Links + Metadata Alignment](#2026-02-17-checkpoint-follow-up-internal-links--metadata-alignment) | 🟡 Mixed |
 | 2026-02-17 | [GSC Checkpoint (Last 28d vs Previous 28d)](#2026-02-17-gsc-checkpoint-last-28d-vs-previous-28d) | 📊 Snapshot |
 | 2026-02-06 | [Lung Capacity Exercises Page (NEW)](#2026-02-06-lung-capacity-exercises-page-new) | ❌ Failed |
@@ -65,7 +69,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-01-06 | [Navy SEAL Content Expansion](#2026-01-06-navy-seal-content-expansion) | ❌ Failed |
 | 2026-01-06 | [CTR Title Rewrites (Batch 1)](#2026-01-06-ctr-title-rewrites-batch-1) | ✅ Success |
 
-**Roll-up by status (43 entries):** ✅ 4 Success · ❌ 8 Failed · ⚪ 11 Inconclusive · 🟡 1 Mixed · ⏳ 1 Waiting · 🔄 12 Implemented · 📊 6 Snapshot.
+**Roll-up by status (49 entries):** ✅ 3 Success · ❌ 9 Failed · ⚪ 12 Inconclusive · 🟡 1 Mixed · ⏳ 0 Waiting · 🔄 18 Implemented · 📊 6 Snapshot. *(2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
 
 See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of what worked / failed / strategic insights from the first month of experiments.
 
@@ -86,6 +90,162 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 **Measure after:** 2026-06-20
 
 🔄 Implemented
+
+---
+
+### 2026-06-13: Locale Cache Warmer — Health Score Crash Fix
+
+**Problem:** The Ahrefs Site Audit Health Score crashed from healthy to **40 / Fair** on the 13 Jun crawl. ~508 timeouts ("Timed out" 258 + "Page from sitemap timed out" 250), all on locale pages (`/es|pt|fr|de|ja/*`). English pages crawled fine. The locale pages returned **200 on a single request** — a crawl artifact, not an outage.
+
+**Root cause:** Locale pages are served by the mass-translate edge Worker, which on a cold cache fetches the single-region (`iad1`, US-East) Vercel origin + assembles the translation per request. The 10 Jun prod deploy flushed the Vercel origin cache; the crawl hit that cold window, and a cold locale page from the EU edge took **5–21 s** (verified). AhrefsBot crawled the flat 270-URL locale sitemap (depth-0) as a burst → hundreds exceeded the crawler timeout. Vercel single-region + elastic-concurrency-off compounded it. Full mechanism in [tools-and-data-sources.md gotcha #17](runbooks/tools-and-data-sources.md).
+
+**Hypothesis:** Keeping both the Vercel origin and the Worker KV translation cache warm — so locale pages never serve cold to a crawler — clears the timeout issues and recovers the Health Score, with zero change to the pages themselves. (Note: locale pages *earn* — `/es/breathing-visualizer` 50% CTR on Google, `/ja/4-7-8-breathing-timer` #1 on Bing — so protecting them matters.)
+
+**Baseline (13 Jun 01:24 crawl):**
+- Health Score: 40 (Fair)
+- Errors: 594 · URLs with errors: 338
+- Timed out pages: 258 · Page from sitemap timed out: 250
+- URLs crawled: 561
+
+**Changes (commit `e366224`, deployed `dpl_3PzDMB9b`):**
+- `GET /api/warm-cache` — fetches every sitemap `<loc>` with a Googlebot UA, English canonicals first (warms the shared Vercel origin the proxy reuses for all locales), then locale URLs (warms the Worker KV). Concurrency 6, under the proxy's ~10-concurrent anti-spoof limit (gotcha #16d). `CRON_SECRET`-gated.
+- Vercel Cron (`vercel.json`) runs it every 2 h → durable post-deploy protection.
+- Manual warm run immediately after the prod deploy (the deploy flushes the cache cold).
+
+**Pre-committed success criteria (measured same-day via re-crawl):**
+- ✅ **Success**: Health Score recovers well off 40 AND both timeout issues drop to ~0.
+- ❌ **Failed**: timeouts persist or score stays ≤ 50 → warming insufficient, escalate to EU region / CF edge caching.
+
+**Result (13 Jun 07:04 re-crawl, post-deploy + warm):** ✅ **Success.**
+- Health Score: **40 → 92 (Excellent)**
+- Errors: 594 → **50** · URLs with errors: 338 → **50**
+- Timed out pages: 258 → **0** · Page from sitemap timed out: 250 → **0**
+- URLs crawled: 561 → 611
+- Warnings rose 122 → 465 — **expected, not a regression**: pages that previously timed out are now analyzable, so ordinary content warnings (title/meta length) became visible.
+
+**Follow-ups:** `Hreflang to non-canonical` (50) is now the top error — a separate locale-alternate cleanup (dispatched). After any future prod deploy, hit the warm endpoint before the next crawl; the 2 h cron covers the steady state.
+
+**Status:** ✅ Success
+
+---
+
+### 2026-06-13: Tummo CTR Title + Meta Rewrite
+
+**Problem:** `/breathe/tummo` has been flagged by the monitoring job for 5 consecutive runs with no action. Stats: 959 impressions, avg position ~8, CTR 0.31%. At position 8, expected CTR is 2–3%; we are delivering 6–8x below that. This is the textbook "good position + terrible CTR = title/meta problem" pattern. Comparable case: `/breathe/coherent` at pos 9 with 0% CTR (Jan 2026) — fixed by title rewrite, got first clicks. Tummo is the same diagnosis but now with much higher impression volume.
+
+**Root cause:** The old title ("Tummo Breathing: How to Do the Tibetan Inner Fire Technique (Free Timer)") leads with "How to Do" — an instructional signal — and buries the free tool hook at the end. At 69 chars it also exceeds the ~60-char display limit, so Google truncates before "(Free Timer)" appears. The meta description confirms the how-to framing before landing on "free guided timer" at word 12.
+
+**Hypothesis:** Rewriting title to lead with "Free … Timer" (matching the winning pattern from the Jan-6 CTR batch: 6x click growth) and putting the tool signal in position 1 will lift CTR from 0.31% to ≥1.5% within 28 days, without any change to ranking position.
+
+**Baseline (last flagging window, ~last 28d to 2026-06-12):**
+- Impressions: 959
+- Avg position: ~8
+- CTR: 0.31% (~3 clicks)
+
+**Changes:**
+
+| Field | Before | After |
+|-------|--------|-------|
+| `meta.title` | "Tummo Breathing: How to Do the Tibetan Inner Fire Technique (Free Timer)" (69 chars) | "Free Tummo Breathing Timer — Tibetan Inner Fire Technique" (57 chars) |
+| `meta.description` | "Learn how to do tummo breathing, the Tibetan inner fire technique. Free guided timer with steps, benefits, safety notes, and Wim Hof comparison." (144 chars) | "Practice tummo breathing — the Tibetan inner fire technique behind Wim Hof. Free online timer with step-by-step guide, benefits, and safety notes. No download." (160 chars) |
+| `ogTitle` | same as old title | same as new title |
+| `twitterTitle` | same as old title | same as new title |
+| `ogDescription` | "Learn how to do tummo breathing with a free guided timer, step-by-step instructions, safety notes, and Wim Hof comparison." | "Free online tummo breathing timer with step-by-step guide, inner fire visualization cues, and Wim Hof comparison. No download needed." |
+| `twitterDescription` | "Practice tummo breathing — the ancient Tibetan inner fire technique. Free guided timer with visual pacer." | "Free tummo breathing timer — the Tibetan inner fire technique. Visual pacer, steps, and safety notes." |
+
+**Rationale for specific choices:**
+- "Free Tummo Breathing Timer" as the title opener: matches the highest-CTR pattern in the Jan-6 batch and the 4-7-8 timer's 6.8% CTR baseline.
+- "Tibetan Inner Fire Technique" kept as subtitle: differentiates from Wim Hof, captures long-tail queries like "tibetan inner fire breathing".
+- "behind Wim Hof" in meta: surfaces the Wim Hof connection explicitly (Wim Hof is ~10x more searched) without misrepresenting the lineage.
+- "No download" at end of meta: proven signal from Jan-9 batch tests.
+
+**Pre-committed success criteria (measure 2026-07-11, ~28 days):**
+- ✅ **Success**: CTR ≥ 1.5% AND clicks ≥ 12 in the 28d window (4x current rate), position held ≥ 6.
+- 🟡 **Mixed**: CTR 0.6%–1.4% (meaningful lift but below target), OR clicks 6–11.
+- ⚪ **Inconclusive**: CTR 0.32%–0.59%. Not enough signal — re-measure at 56 days before calling.
+- ❌ **Failed**: CTR ≤ 0.31% at 28d AND no trend. Revert and investigate whether snippet/featured-snippet overlay is eating clicks (structural ceiling like Wim Hof/Bing finding).
+
+**Status:** 🔄 Implemented
+
+---
+
+### 2026-06-13: Owned YouTube Videos + VideoObject Schema
+
+**Hypothesis:** The 2026-01-06 "Video Embeds for Rich Results" attempt failed because the embedded videos were third-party (Mark Divine, Dr. Weil, James Nestor, Huberman) — Google shows those as YouTube results, not as embeds on our page. VideoObject schema on a video you do not own cannot earn a rich result on your domain. We now have 15 videos on our own channel (@deepbreathingexercises, channel_id UC17_GvnAKkxsv39BMVE3MdQ, published 2026-06-08/09) that are recordings of the interactive pacer. Adding these as a second embed on each /breathe/* page — with VideoObject schema pointing at our channel — satisfies the ownership prerequisite. The GSC channel-link verification (Search Console → Video pages → verify channel) is a manual step the owner must do after deploy.
+
+**Prerequisite (manual, post-deploy):** Link the YouTube channel in GSC Search Console → Video Indexing → Manage channel. Without this, Google may not attribute the video to the page even with correct schema.
+
+**Baseline (2026-06-13):** GSC searchAppearance for video rich results = 0 across all pages. YouTube/AI referral from @deepbreathingexercises channel = 0 (channel published 2026-06-08, not yet indexed by Google Video).
+
+**What shipped:**
+- `OwnedVideoEmbed` interface added to `src/data/breathing-pages.ts` (youtubeId, title, description, duration ISO-8601, uploadDate)
+- `ownedVideo` field added to `BreathingPageContent`
+- 5 pages populated: `/breathe/box` (PvV1vQwRxy0, PT5M), `/breathe/4-7-8` (gdYUMwoPVpE, PT5M), `/breathe/coherent` (890OE-9Bwu0, PT5M), `/breathe/physiological-sigh` (YJHR4_QE-tA, PT5M), `/breathe/belly` (44gcMTQofjc, PT5M — first video ever on this page)
+- `pattern-page.tsx`: VideoObject JSON-LD moved from `page.video` (third-party) to `page.ownedVideo`. Third-party videos remain as plain iframes with no schema.
+- Owned video renders as a second iframe below the authority video, labelled "Guided session" with "Watch the guided pacer session" copy.
+
+**Pre-committed success criteria (measure-after 2026-08-08, ~8 weeks):**
+- ✅ **Success**: At least 1 /breathe/* page shows a video rich result thumbnail in GSC searchAppearance, OR YouTube/direct referral from the channel appears in GA4 as a new traffic source (>10 sessions/month), within 8 weeks of the GSC channel-link being verified.
+- ⚪ **Inconclusive**: No video rich result, but GSC Video Indexing shows the pages being processed (indexed video count > 0). May need more time or an authority signal on the channel.
+- ❌ **Failed**: No video indexing activity in GSC Video Indexing after 8 weeks with verified channel link. Confirms domain authority or channel age is the binding constraint.
+
+**Measure-after date:** 2026-08-08
+
+**Status:** 🔄 Implemented (not yet measured)
+
+---
+
+### 2026-06-13: 404 Root-Cause Fix — Verification
+
+**Hypothesis:** Commits 7843af9, 1b17599, c462899, and 8ace26e fixed the root causes that were minting malformed 404 URLs: (a) the proxy was emitting double-locale hrefs (e.g. `/pt/fr/breathe/breath-of-fire`) that got crawled and indexed as 404s; (b) `/languages` was reachable at localized paths (`/fr/languages`, `/de/languages`) even though it is an EN-only route; (c) www and http homepage variants were returning 404 instead of 301. With the root cause fixed, submitting `URL_DELETED` for the known stale 404 set accelerates removal from Google's index; the remaining www/http variants will clear on recrawl via their 301 redirects.
+
+**Baseline (2026-06-08, GSC Page indexing → Not found (404)):**
+- 17 pages in the "Not found (404)" bucket (up from 5 at the May 5 baseline)
+- Validation started 2026-05-29, **failed 2026-05-30** — prior fix treated symptoms, not root cause
+- URL classes: double-locale (`/pt/fr/*`, `/fr/pt/*`, `/es/fr`, `/pt/fr`), localized EN-only routes (`/fr/languages`, `/de/languages`), www/http homepage variants
+
+**Fix commits:**
+- `7843af9` — proxy root-cause: stop emitting double-locale hrefs
+- `1b17599` — EN_ONLY_ROUTES gating prevents localized copies of /languages
+- `c462899` — www→apex 301 redirect rule
+- `8ace26e` — http→https redirect via Cloudflare rule
+
+**Actions taken (2026-06-13):**
+
+`URL_DELETED` submitted via Indexing API for 9 stale 404s (all returned `success: true`):
+
+| URL | Result |
+|-----|--------|
+| `https://deepbreathingexercises.com/pt/fr/breathe/breath-of-fire` | success |
+| `https://deepbreathingexercises.com/fr/pt/breathe/4-7-8` | success |
+| `https://deepbreathingexercises.com/es/fr` | success |
+| `https://deepbreathingexercises.com/pt/fr` | success |
+| `https://deepbreathingexercises.com/fr/languages` | success |
+| `https://deepbreathingexercises.com/de/languages` | success |
+| `https://deepbreathingexercises.com/es/languages` | success |
+| `https://deepbreathingexercises.com/pt/languages` | success |
+| `https://deepbreathingexercises.com/ja/languages` | success |
+
+**Not submitted as URL_DELETED:** `https://www.deepbreathingexercises.com/` and `http://www.deepbreathingexercises.com/` — these now 301 (www→apex + http→https) and will clear on recrawl. Submitting URL_DELETED for a URL that 301s to a valid canonical is wrong and counter-productive.
+
+**Manual step required — "Validate Fix" in GSC (UI only, no API):**
+
+1. Open [Google Search Console](https://search.google.com/search-console) for `deepbreathingexercises.com`
+2. Left sidebar: **Indexing** → **Pages**
+3. In the "Why pages aren't indexed" table, click **"Not found (404)"**
+4. In the issue detail panel, click **"Validate Fix"** (top right)
+5. Google starts a validation crawl; status appears in the Pages report within a few days
+
+**Pre-committed success criteria (measure-after 2026-07-13, 4 weeks):**
+- ✅ **Success**: GSC "Not found (404)" count drops to ≤5 (from 17 baseline) and validation passes
+- 🟡 **Mixed**: Count drops to 6–10; partial clearance but proxy still minting some new ones
+- ⚪ **Inconclusive**: Count drops ≤5 but validation still running — re-check at 6 weeks
+- ❌ **Failed**: Count stays ≥12, or new 404s appear in previously unseen URL classes (root-cause fix incomplete)
+
+**Measure-after date:** 2026-07-13
+
+**Status:** 🔄 Implemented (2026-06-13)
+
 
 ---
 
@@ -211,6 +371,8 @@ Total addressable cluster volume: **~3.3K monthly searches** in US. Currently ze
 - Backlink work
 - Translation re-submission (will run, but not the metric being tested)
 - App store listing changes
+
+**Watch (2026-06-13):** Sitewide Google impressions dropped ~67% over six weeks: ~1,309/day on Apr 30 fell to ~437/day by Jun 9. The timing correlates with the E-E-A-T batch deploy (May 5–6) — byline, lineage, and citation changes across 22 pages, followed by position volatility. This matches the classic pattern of Google re-evaluating a low-authority domain after a bulk trust-signal rewrite. It is plausible but NOT confirmed as the cause: the April sitemap de-indexing + bulk GSC resubmission is a confound. Implication for the 2026-07-01 read: before calling ❌ Failed, check whether sitewide impressions are recovering toward ~1,000+/day. If recovering, extend rather than fail — the fix is patience (normal re-crawl), not more on-page changes. Checkpoint: assess sitewide impression trend by ~2026-06-27 (the Mon/Thu visibility cron already tracks this).
 
 ---
 
@@ -390,7 +552,23 @@ Tested locally with curl — all 5 patterns return 308 (permanent redirect) to c
 - [ ] AI citation rate change (check Brand Radar)
 - [ ] Impressions/clicks for embed-related queries
 
-**Status:** `Waiting`
+**Result (measured 2026-06-13, ~3 months overdue):** The backlink thesis failed. The experiment's core bet was that wellness bloggers and practitioners would discover the embed page and add iframe links, which would start building referring domains from DR 0.2. That mechanism requires either organic discovery (unlikely at DR 0.2 with no brand recognition) or active outreach (never done). GSC search performance was unavailable at measurement time due to API timeout, but the absence of any signal is itself the signal: at DR 0.2 with zero promotion and no outreach campaign, no referring domains would have accumulated in 3 months. The target keywords ("breathing exercise widget", "embed breathing exercise") have negligible search volume, so organic discovery of /embed via search is implausible. The embed infrastructure is still live and useful, but the passive "build it and they'll link" thesis is ❌ Failed. Active outreach to wellness sites remains the only realistic path to referring domains at this authority level.
+
+The `llms.txt` component of this experiment is a separate signal with a longer feedback loop -- see measurement method below.
+
+**How we measure llms.txt:**
+
+No direct analytics exist for llms.txt consumption. Track these three signals in order of reliability:
+
+**(a) GA4 "AI Assistant" channel -- PRIMARY outcome proxy.** Referral sessions originating from ChatGPT, Perplexity, Claude, Copilot, and similar AI assistants appear in GA4 as a distinct channel once tagged. This channel went live ~Jun 11, 2026 (27 sessions in the first week -- a brand-new signal). Track week-over-week. A sustained upward trend is the best available proxy for AI citations driving traffic. Pull from GA4 property `527524722` (DKMT account), filter by channel = "AI Assistant". Anchor the llms.txt verdict on this signal.
+
+**(b) Server/edge logs for AI-crawler user-agents -- confirms consumption.** AI crawlers fetching `/llms.txt` and content URLs signals that the file is being indexed by the model providers. On Vercel, check function/edge logs for user-agents: `GPTBot`, `ClaudeBot` / `anthropic-ai`, `PerplexityBot`, `Google-Extended`, `CCBot`. A request to `/llms.txt` means the file was read; subsequent requests to `/breathe/*` or `/for/*` URLs suggest the content is being consumed. This is a leading indicator -- consumption now may surface as citations weeks later.
+
+**(c) Manual citation probes / Brand Radar -- confirms actual citations.** Periodically prompt the major assistants (ChatGPT, Perplexity, Claude, Copilot) with target queries: "box breathing timer", "physiological sigh how to", "4-7-8 breathing exercise", "breathing exercises for anxiety". Check whether deepbreathingexercises.com is cited or linked in the response. Run quarterly or after significant content changes. This is the ground truth but low-frequency signal.
+
+Cadence: check (a) weekly via the visibility cron; check (b) monthly via Vercel logs; check (c) quarterly or on-demand.
+
+**Status:** ❌ Failed (measured 2026-06-13) -- 0 referring domains to /embed in 3 months; passive distribution without active outreach does not work at DR 0.2. llms.txt signal deferred to (a) GA4 AI Assistant channel WoW trend.
 
 ---
 

@@ -100,6 +100,16 @@ export interface VideoEmbed {
   description: string;
 }
 
+export interface OwnedVideoEmbed {
+  youtubeId: string;
+  title: string;
+  description: string;
+  /** ISO 8601 duration, e.g. PT5M, PT30S */
+  duration: string;
+  /** ISO 8601 date, e.g. 2026-06-08 */
+  uploadDate: string;
+}
+
 /** Voice search optimization - question H2 with direct answer for featured snippets */
 export interface VoiceSearchQA {
   /** The exact question users ask (becomes H2) */
@@ -136,6 +146,8 @@ export interface BreathingPageContent {
   synonyms: string[];
   frequency: string;
   video?: VideoEmbed;
+  /** Owned YouTube video (recorded pacer on our channel). Gets the VideoObject schema. */
+  ownedVideo?: OwnedVideoEmbed;
   /** Voice search optimization - question H2s with direct answers */
   voiceSearch?: VoiceSearchQA[];
 }
@@ -412,6 +424,13 @@ export const breathingPages: BreathingPageContent[] = [
       title: "Box Breathing with Mark Divine (Navy SEAL Commander)",
       description: "Former Navy SEAL Commander Mark Divine teaches the box breathing technique he introduced to BUD/S training: the same method SEALs use to stay calm under pressure."
     },
+    ownedVideo: {
+      youtubeId: "PvV1vQwRxy0",
+      title: "Box Breathing Timer: 5 Minutes (Square Breathing)",
+      description: "A 5-minute guided box breathing session using our interactive pacer. Follow the animated cue to inhale, hold, exhale, and hold for equal 4-second counts.",
+      duration: "PT5M",
+      uploadDate: "2026-06-08"
+    },
     voiceSearch: [
       {
         question: "What is box breathing?",
@@ -676,6 +695,13 @@ export const breathingPages: BreathingPageContent[] = [
       title: "Dr. Andrew Weil Demonstrates the 4-7-8 Breathing Technique",
       description: "Dr. Andrew Weil, the Harvard-trained physician who popularized the 4-7-8 breath, demonstrates his 'natural tranquilizer for the nervous system' technique for sleep and anxiety relief."
     },
+    ownedVideo: {
+      youtubeId: "gdYUMwoPVpE",
+      title: "4-7-8 Breathing Timer: 5 Minutes (478 Breathing)",
+      description: "A 5-minute guided 4-7-8 breathing session using our interactive pacer. Follow the animated cue: inhale for 4 counts, hold for 7, exhale for 8.",
+      duration: "PT5M",
+      uploadDate: "2026-06-08"
+    },
     voiceSearch: [
       {
         question: "Does 4-7-8 breathing really work?",
@@ -918,6 +944,13 @@ export const breathingPages: BreathingPageContent[] = [
       youtubeId: "CMsFIEyITPc",
       title: "James Nestor on the Perfect Breath",
       description: "Bestselling author James Nestor (Breath: The New Science of a Lost Art) explains the ideal breathing pattern: 5.5 seconds in, 5.5 seconds out: the foundation of coherent breathing."
+    },
+    ownedVideo: {
+      youtubeId: "890OE-9Bwu0",
+      title: "Coherent Breathing Timer: 5 Minutes (Resonance Breathing)",
+      description: "A 5-minute guided coherent breathing session using our interactive pacer. Breathe at ~5–6 breaths per minute with equal inhales and exhales to maximize HRV.",
+      duration: "PT5M",
+      uploadDate: "2026-06-08"
     }
   },
   {
@@ -1234,6 +1267,13 @@ export const breathingPages: BreathingPageContent[] = [
       youtubeId: "kSZKIupBUuc",
       title: "The Physiological Sigh Explained: Stanford's Stress-Relief Technique",
       description: "Stanford's double-inhale breathing technique that reduces stress faster than meditation. Learn the physiological sigh: how it works, why it works, and when to use it."
+    },
+    ownedVideo: {
+      youtubeId: "YJHR4_QE-tA",
+      title: "Physiological Sigh Timer: 5 Minutes (Cyclic Sighing)",
+      description: "A 5-minute guided physiological sigh session using our interactive pacer. Follow the double-inhale cue then breathe out slowly for a long exhale.",
+      duration: "PT5M",
+      uploadDate: "2026-06-08"
     },
     voiceSearch: [
       {
@@ -2510,7 +2550,14 @@ const bellyPage: BreathingPageContent = {
     "deep breathing",
     "stomach breathing"
   ],
-  frequency: "Daily, 5-10 minutes. Ideally becomes your default breathing pattern."
+  frequency: "Daily, 5-10 minutes. Ideally becomes your default breathing pattern.",
+  ownedVideo: {
+    youtubeId: "44gcMTQofjc",
+    title: "Belly Breathing Timer: 5 Minutes (Diaphragmatic Breathing)",
+    description: "A 5-minute guided belly breathing session using our interactive pacer. Let your belly rise on the inhale and fall on the exhale, the foundational diaphragmatic breathing pattern.",
+    duration: "PT5M",
+    uploadDate: "2026-06-09"
+  }
 };
 
 // Buteyko Breathing page content (SEO expansion - not featured)
@@ -2769,20 +2816,20 @@ const tummoPage: BreathingPageContent = {
     intro: "Tummo breathing (Tibetan for 'inner fire') is an advanced meditation technique from Vajrayana Buddhism that combines rhythmic breathing with visualization to generate heat from within. This is the original inner-fire practice that influenced modern methods like Wim Hof breathing. If you want to learn how to do tummo breathing safely, start with the guided timer here, then build gradually.",
   },
   meta: {
-    title: "Tummo Breathing: How to Do the Tibetan Inner Fire Technique (Free Timer)",
+    title: "Free Tummo Breathing Timer \u2014 Tibetan Inner Fire Technique",
     description:
-      "Learn how to do tummo breathing, the Tibetan inner fire technique. Free guided timer with steps, benefits, safety notes, and Wim Hof comparison.",
-    ogTitle: "Tummo Breathing: How to Do the Tibetan Inner Fire Technique (Free Timer)",
+      "Practice tummo breathing \u2014 the Tibetan inner fire technique behind Wim Hof. Free online timer with step-by-step guide, benefits, and safety notes. No download.",
+    ogTitle: "Free Tummo Breathing Timer \u2014 Tibetan Inner Fire Technique",
     ogDescription:
-      "Learn how to do tummo breathing with a free guided timer, step-by-step instructions, safety notes, and Wim Hof comparison.",
+      "Free online tummo breathing timer with step-by-step guide, inner fire visualization cues, and Wim Hof comparison. No download needed.",
     ogImage: "og/breathe-tummo.png",
-    twitterTitle: "Tummo Breathing: How to Do the Tibetan Inner Fire Technique (Free Timer)",
+    twitterTitle: "Free Tummo Breathing Timer \u2014 Tibetan Inner Fire Technique",
     twitterDescription:
-      "Practice tummo breathing \u2014 the ancient Tibetan inner fire technique. Free guided timer with visual pacer.",
+      "Free tummo breathing timer \u2014 the Tibetan inner fire technique. Visual pacer, steps, and safety notes.",
     author: "Abi Abiassi",
     reviewer: "",
     datePublished: "2026-02-06",
-    dateModified: "2026-03-05",
+    dateModified: "2026-06-13",
   },
   body: [
     {

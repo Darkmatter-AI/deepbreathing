@@ -15,5 +15,11 @@
       "destination": "/breathing-app",
       "permanent": true
     }
+  ],
+  "crons": [
+    {
+      "path": "/api/warm-cache",
+      "schedule": "0 */2 * * *"
+    }
   ]
 }
