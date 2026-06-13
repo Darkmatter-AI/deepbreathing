@@ -68,7 +68,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-01-06 | [Navy SEAL Content Expansion](#2026-01-06-navy-seal-content-expansion) | ❌ Failed |
 | 2026-01-06 | [CTR Title Rewrites (Batch 1)](#2026-01-06-ctr-title-rewrites-batch-1) | ✅ Success |
 
-**Roll-up by status (46 entries):** ✅ 4 Success · ❌ 9 Failed · ⚪ 11 Inconclusive · 🟡 1 Mixed · ⏳ 0 Waiting · 🔄 15 Implemented · 📊 6 Snapshot. *(2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
+**Roll-up by status (49 entries):** ✅ 3 Success · ❌ 9 Failed · ⚪ 12 Inconclusive · 🟡 1 Mixed · ⏳ 0 Waiting · 🔄 18 Implemented · 📊 6 Snapshot. *(2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
 
 See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of what worked / failed / strategic insights from the first month of experiments.
 
