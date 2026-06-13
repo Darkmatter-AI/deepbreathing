@@ -24,7 +24,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | Date | Entry | Status |
 |------|-------|--------|
 | 2026-06-01 | [Fix `conversion_prompt_shown` double-fire (impure setState updaters)](#2026-06-01-fix-conversion_prompt_shown-double-fire-impure-setstate-updaters) | 🔄 Implemented |
-| 2026-06-01 | [Conversion Prompt B (social proof + personal stats), 100% challenger](#2026-06-01-conversion-prompt-b-social-proof--personal-stats-100-challenger) | 🔄 Implemented |
+| 2026-06-01 | [Conversion Prompt B (social proof + personal stats), 100% challenger](#2026-06-01-conversion-prompt-b-social-proof--personal-stats-100-challenger) | 🔄 Implemented (social proof made real 2026-06-13) |
 | 2026-05-12 | [Direct +47% WoW — hypothesis: organic shares from PT/DE translations](#2026-05-12-direct-47-wow--hypothesis-organic-shares-from-ptde-translations) | 🟡 Inconclusive |
 | 2026-05-12 | [UTM-tag share buttons (attribute outbound shares back to GA4)](#2026-05-12-utm-tag-share-buttons-attribute-outbound-shares-back-to-ga4) | 🔄 Implemented |
 | 2026-05-11 | [Mobile homepage: pills mode picker + full-screen orb + restore hero text](#2026-05-11-mobile-homepage-pills-mode-picker--full-screen-orb--restore-hero-text) | 🔄 Implemented |
@@ -84,9 +84,16 @@ So do **not** compare post-fix rates against the pre-fix logged baseline. Recomp
 
 **Power caveat:** pre/post at ~52 impressions/wk only reliably detects large effects. A null result is "inconclusive at this N," not proof of no effect. Watch the dashboard's other lines for confounding co-movement (seasonality, concurrent changes).
 
-**Known caveats:** social proof (live count + avatars) is **simulated** for launch (founder-approved); `dayStreak` is also simulated and unblurs to a non-real number on the email path; only `yourMinutes` is real (stats gated on > 0). See [docs/design/conversion-prompt-B-rollout.md](design/conversion-prompt-B-rollout.md). Make the live count and streak real before leaning on the endowment mechanic.
+**Known caveats (at launch):** social proof (live count + avatars) was **simulated** for launch (founder-approved); `dayStreak` was also simulated and unblurred to a non-real number on the email path; only `yourMinutes` was real (stats gated on > 0). See [docs/design/conversion-prompt-B-rollout.md](design/conversion-prompt-B-rollout.md).
 
-**Status:** 🔄 Implemented — shipped to prod 2026-06-01. measure-after: 2026-06-15 (first read), 2026-06-29 (verdict).
+**2026-06-13 update — social proof made real (branch `feat/prompt-b-real-social-proof`):**
+- **Live count:** new `presence_sessions` table + `POST /api/v1/presence/heartbeat` (upsert + prune > 10 min old) + `GET /api/v1/presence/count` (5-min active window, `s-maxage=30`). Resonance sends a heartbeat every 60s while the orb is running. The sheet fetches the real count on open and jitters around it. Honest fallbacks: count = 0 → "Join thousands breathing today"; count = 1 → "1 person breathing right now".
+- **Day streak:** `last_session_date DATE` + `current_streak INTEGER` added to `user_stats` (migration `002_presence_and_streak.sql`). Stats sync accepts client-supplied `sessionDate` (ISO YYYY-MM-DD) for timezone-correct streak computation; same CASE expression in both SQL and local Resonance state so the UI is instant without a round-trip. Bootstrap returns `currentStreak` + `lastSessionDate`. `showStats` now gated on `totalMinutes > 0 && dayStreak >= 1` — a "0" never unblurs.
+- **`current_streak` added to `conversion_signup_completed` event** for post-hoc analysis of whether streak depth predicts conversion.
+- Migration must be applied at deploy — was NOT run against production as part of this branch.
+- The 2026-06-29 verdict now measures the honest mechanic, not a simulation.
+
+**Status:** 🔄 Implemented — shipped to prod 2026-06-01 (initial simulated version). Real social proof on branch `feat/prompt-b-real-social-proof` pending deploy. measure-after: 2026-06-15 (first read), 2026-06-29 (verdict).
 
 ---
 

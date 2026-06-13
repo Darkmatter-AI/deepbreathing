@@ -9,7 +9,8 @@ interface AuthContextValue {
   isAuthenticated: boolean;
   user: { id: string; name: string; email: string; image?: string | null } | null;
   syncSettings: (settings: { mode: string; speed: number; duration: number | null }) => void;
-  syncStats: (totalMinutes: number, sessionsCompleted: number) => void;
+  syncStats: (totalMinutes: number, sessionsCompleted: number, sessionDate?: string) => void;
+  currentStreak: number;
 }
 
 const AuthContext = createContext<AuthContextValue>({
@@ -17,6 +18,7 @@ const AuthContext = createContext<AuthContextValue>({
   user: null,
   syncSettings: () => {},
   syncStats: () => {},
+  currentStreak: 0,
 });
 
 export function useAuth() {
@@ -32,7 +34,7 @@ function gtagSafe(...args: unknown[]) {
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const { data: session } = useSession();
   const isAuthenticated = !!session?.user;
-  const { mergeGuestData, hydrateFromServer, syncSettings, syncStats } =
+  const { mergeGuestData, hydrateFromServer, syncSettings, syncStats, currentStreak } =
     useSync(isAuthenticated);
   const hasMerged = useRef(false);
 
@@ -81,6 +83,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         user: session?.user ?? null,
         syncSettings,
         syncStats,
+        currentStreak,
       }}
     >
       {children}
