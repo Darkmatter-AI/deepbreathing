@@ -73,6 +73,22 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 
 ## Active Experiments
 
+### 2026-06-13: Fix "Hreflang to non-canonical" — home-page trailing slash
+
+**Hypothesis:** The #1 Ahrefs error (50 URLs) is caused by `buildAlternates` in `sitemap-routes.mjs` generating home-page `en-US`/`x-default` hreflang URLs as `https://deepbreathingexercises.com` (no trailing slash), while Next.js renders the actual home canonical as `https://deepbreathingexercises.com/` (with slash). The `<loc>` for the home sitemap entry has the same mismatch. Ahrefs sees each locale home entry's hreflang as pointing to a non-self-canonical URL and flags it. Fix: emit trailing slash for all root-path URLs in `buildAlternates` and the home `<loc>`.
+
+**Baseline (2026-06-13, Ahrefs):** 50 "Hreflang to non-canonical" URLs — #1 error in Ahrefs site audit.
+
+**Pre-committed success criteria:** Ahrefs "Hreflang to non-canonical" count drops to ≤5 (allowing for any transient crawl lag) after next re-crawl. Measure 7 days post-deploy.
+
+**Commit:** `fix/hreflang-non-canonical` branch — files: `src/lib/seo/sitemap-routes.mjs`, `scripts/tests/sitemap-coverage.test.mjs`.
+
+**Measure after:** 2026-06-20
+
+🔄 Implemented
+
+---
+
 ### 2026-06-10: Crawl Hygiene + Schema Cleanup
 
 **Hypothesis:** Googlebot wastes a large share of its crawl on zero-value endpoints, and schema errors block rich-result eligibility. Cleaning both refocuses crawl budget on the ~114 localized pages Google has not yet absorbed (72 discovered-never-crawled + 42 crawled-not-indexed, GSC 2026-06-10) without touching ranking content. Full diagnosis: `seo-error-audit-2026-06-10.md` in the control repo (`~/Sites/darkmatter/deepbreathing`).

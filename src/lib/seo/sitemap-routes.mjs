@@ -151,9 +151,12 @@ export function buildSitemapEntries({
   function buildAlternates(canonicalRoute) {
     if (normalizedLocalePrefixes.length === 0) return undefined;
     if (EN_ONLY_ROUTES.has(canonicalRoute)) return undefined;
+    // Root canonical is rendered by Next.js as trailing-slash URL; match it exactly
+    // so hreflang targets are self-canonical (avoids "hreflang to non-canonical" errors).
+    const enUrl = canonicalRoute === '/' ? `${siteUrl}/` : `${siteUrl}${canonicalRoute}`;
     const languages = {
-      'en-US': `${siteUrl}${canonicalRoute === '/' ? '' : canonicalRoute}`,
-      'x-default': `${siteUrl}${canonicalRoute === '/' ? '' : canonicalRoute}`,
+      'en-US': enUrl,
+      'x-default': enUrl,
     };
     for (const prefix of normalizedLocalePrefixes) {
       const hreflang = LOCALE_PREFIX_TO_HREFLANG[prefix] || prefix;
@@ -168,7 +171,7 @@ export function buildSitemapEntries({
 
     if (canonicalRoute === '/') {
       return {
-        url: `${siteUrl}${route === '/' ? '' : route}`,
+        url: route === '/' ? `${siteUrl}/` : `${siteUrl}${route}`,
         lastModified: now,
         changeFrequency: 'weekly',
         priority: 1,
