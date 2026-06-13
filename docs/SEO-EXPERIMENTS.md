@@ -18,6 +18,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-06-13 | [Tummo CTR Title + Meta Rewrite — /breathe/tummo](#2026-06-13-tummo-ctr-title--meta-rewrite) | 🔄 Implemented |
 | 2026-06-10 | [Crawl Hygiene + Schema Cleanup — robots disallows, OG noindex, sitemap, SoftwareApplication, SearchAction](#2026-06-10-crawl-hygiene--schema-cleanup) | 🔄 Implemented |
 | 2026-05-06 | [9D Breathwork Cluster — 2 Pages Riding the Breakout Trend](#2026-05-06-9d-breathwork-cluster--2-pages-riding-the-breakout-trend) | 🔄 Implemented |
 | 2026-05-06 | [Wim Hof Bing CTR — SERP Feature Structural Ceiling (Finding)](#2026-05-06-wim-hof-bing-ctr--serp-feature-structural-ceiling) | 📊 Snapshot |
@@ -65,13 +66,53 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-01-06 | [Navy SEAL Content Expansion](#2026-01-06-navy-seal-content-expansion) | ❌ Failed |
 | 2026-01-06 | [CTR Title Rewrites (Batch 1)](#2026-01-06-ctr-title-rewrites-batch-1) | ✅ Success |
 
-**Roll-up by status (43 entries):** ✅ 4 Success · ❌ 8 Failed · ⚪ 11 Inconclusive · 🟡 1 Mixed · ⏳ 1 Waiting · 🔄 12 Implemented · 📊 6 Snapshot.
+**Roll-up by status (44 entries):** ✅ 4 Success · ❌ 8 Failed · ⚪ 11 Inconclusive · 🟡 1 Mixed · ⏳ 1 Waiting · 🔄 13 Implemented · 📊 6 Snapshot.
 
 See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of what worked / failed / strategic insights from the first month of experiments.
 
 ---
 
 ## Active Experiments
+
+### 2026-06-13: Tummo CTR Title + Meta Rewrite
+
+**Problem:** `/breathe/tummo` has been flagged by the monitoring job for 5 consecutive runs with no action. Stats: 959 impressions, avg position ~8, CTR 0.31%. At position 8, expected CTR is 2–3%; we are delivering 6–8x below that. This is the textbook "good position + terrible CTR = title/meta problem" pattern. Comparable case: `/breathe/coherent` at pos 9 with 0% CTR (Jan 2026) — fixed by title rewrite, got first clicks. Tummo is the same diagnosis but now with much higher impression volume.
+
+**Root cause:** The old title ("Tummo Breathing: How to Do the Tibetan Inner Fire Technique (Free Timer)") leads with "How to Do" — an instructional signal — and buries the free tool hook at the end. At 69 chars it also exceeds the ~60-char display limit, so Google truncates before "(Free Timer)" appears. The meta description confirms the how-to framing before landing on "free guided timer" at word 12.
+
+**Hypothesis:** Rewriting title to lead with "Free … Timer" (matching the winning pattern from the Jan-6 CTR batch: 6x click growth) and putting the tool signal in position 1 will lift CTR from 0.31% to ≥1.5% within 28 days, without any change to ranking position.
+
+**Baseline (last flagging window, ~last 28d to 2026-06-12):**
+- Impressions: 959
+- Avg position: ~8
+- CTR: 0.31% (~3 clicks)
+
+**Changes:**
+
+| Field | Before | After |
+|-------|--------|-------|
+| `meta.title` | "Tummo Breathing: How to Do the Tibetan Inner Fire Technique (Free Timer)" (69 chars) | "Free Tummo Breathing Timer — Tibetan Inner Fire Technique" (57 chars) |
+| `meta.description` | "Learn how to do tummo breathing, the Tibetan inner fire technique. Free guided timer with steps, benefits, safety notes, and Wim Hof comparison." (144 chars) | "Practice tummo breathing — the Tibetan inner fire technique behind Wim Hof. Free online timer with step-by-step guide, benefits, and safety notes. No download." (160 chars) |
+| `ogTitle` | same as old title | same as new title |
+| `twitterTitle` | same as old title | same as new title |
+| `ogDescription` | "Learn how to do tummo breathing with a free guided timer, step-by-step instructions, safety notes, and Wim Hof comparison." | "Free online tummo breathing timer with step-by-step guide, inner fire visualization cues, and Wim Hof comparison. No download needed." |
+| `twitterDescription` | "Practice tummo breathing — the ancient Tibetan inner fire technique. Free guided timer with visual pacer." | "Free tummo breathing timer — the Tibetan inner fire technique. Visual pacer, steps, and safety notes." |
+
+**Rationale for specific choices:**
+- "Free Tummo Breathing Timer" as the title opener: matches the highest-CTR pattern in the Jan-6 batch and the 4-7-8 timer's 6.8% CTR baseline.
+- "Tibetan Inner Fire Technique" kept as subtitle: differentiates from Wim Hof, captures long-tail queries like "tibetan inner fire breathing".
+- "behind Wim Hof" in meta: surfaces the Wim Hof connection explicitly (Wim Hof is ~10x more searched) without misrepresenting the lineage.
+- "No download" at end of meta: proven signal from Jan-9 batch tests.
+
+**Pre-committed success criteria (measure 2026-07-11, ~28 days):**
+- ✅ **Success**: CTR ≥ 1.5% AND clicks ≥ 12 in the 28d window (4x current rate), position held ≥ 6.
+- 🟡 **Mixed**: CTR 0.6%–1.4% (meaningful lift but below target), OR clicks 6–11.
+- ⚪ **Inconclusive**: CTR 0.32%–0.59%. Not enough signal — re-measure at 56 days before calling.
+- ❌ **Failed**: CTR ≤ 0.31% at 28d AND no trend. Revert and investigate whether snippet/featured-snippet overlay is eating clicks (structural ceiling like Wim Hof/Bing finding).
+
+**Status:** 🔄 Implemented
+
+---
 
 ### 2026-06-10: Crawl Hygiene + Schema Cleanup
 

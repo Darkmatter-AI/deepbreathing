@@ -2769,20 +2769,20 @@ const tummoPage: BreathingPageContent = {
     intro: "Tummo breathing (Tibetan for 'inner fire') is an advanced meditation technique from Vajrayana Buddhism that combines rhythmic breathing with visualization to generate heat from within. This is the original inner-fire practice that influenced modern methods like Wim Hof breathing. If you want to learn how to do tummo breathing safely, start with the guided timer here, then build gradually.",
   },
   meta: {
-    title: "Tummo Breathing: How to Do the Tibetan Inner Fire Technique (Free Timer)",
+    title: "Free Tummo Breathing Timer \u2014 Tibetan Inner Fire Technique",
     description:
-      "Learn how to do tummo breathing, the Tibetan inner fire technique. Free guided timer with steps, benefits, safety notes, and Wim Hof comparison.",
-    ogTitle: "Tummo Breathing: How to Do the Tibetan Inner Fire Technique (Free Timer)",
+      "Practice tummo breathing \u2014 the Tibetan inner fire technique behind Wim Hof. Free online timer with step-by-step guide, benefits, and safety notes. No download.",
+    ogTitle: "Free Tummo Breathing Timer \u2014 Tibetan Inner Fire Technique",
     ogDescription:
-      "Learn how to do tummo breathing with a free guided timer, step-by-step instructions, safety notes, and Wim Hof comparison.",
+      "Free online tummo breathing timer with step-by-step guide, inner fire visualization cues, and Wim Hof comparison. No download needed.",
     ogImage: "og/breathe-tummo.png",
-    twitterTitle: "Tummo Breathing: How to Do the Tibetan Inner Fire Technique (Free Timer)",
+    twitterTitle: "Free Tummo Breathing Timer \u2014 Tibetan Inner Fire Technique",
     twitterDescription:
-      "Practice tummo breathing \u2014 the ancient Tibetan inner fire technique. Free guided timer with visual pacer.",
+      "Free tummo breathing timer \u2014 the Tibetan inner fire technique. Visual pacer, steps, and safety notes.",
     author: "Abi Abiassi",
     reviewer: "",
     datePublished: "2026-02-06",
-    dateModified: "2026-03-05",
+    dateModified: "2026-06-13",
   },
   body: [
     {
