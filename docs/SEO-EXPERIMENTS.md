@@ -18,6 +18,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-06-13 | [Locale Cache Warmer — Health Score Crash Fix (40→92)](#2026-06-13-locale-cache-warmer--health-score-crash-fix) | ✅ Success |
 | 2026-06-13 | [Tummo CTR Title + Meta Rewrite — /breathe/tummo](#2026-06-13-tummo-ctr-title--meta-rewrite) | 🔄 Implemented |
 | 2026-06-13 | [Owned YouTube Videos + VideoObject Schema on /breathe/* Pages](#2026-06-13-owned-youtube-videos--videoobject-schema) | 🔄 Implemented |
 | 2026-06-13 | [404 Root-Cause Fix — Verification](#2026-06-13-404-root-cause-fix--verification) | 🔄 Implemented |
@@ -75,6 +76,42 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 ---
 
 ## Active Experiments
+
+### 2026-06-13: Locale Cache Warmer — Health Score Crash Fix
+
+**Problem:** The Ahrefs Site Audit Health Score crashed from healthy to **40 / Fair** on the 13 Jun crawl. ~508 timeouts ("Timed out" 258 + "Page from sitemap timed out" 250), all on locale pages (`/es|pt|fr|de|ja/*`). English pages crawled fine. The locale pages returned **200 on a single request** — a crawl artifact, not an outage.
+
+**Root cause:** Locale pages are served by the mass-translate edge Worker, which on a cold cache fetches the single-region (`iad1`, US-East) Vercel origin + assembles the translation per request. The 10 Jun prod deploy flushed the Vercel origin cache; the crawl hit that cold window, and a cold locale page from the EU edge took **5–21 s** (verified). AhrefsBot crawled the flat 270-URL locale sitemap (depth-0) as a burst → hundreds exceeded the crawler timeout. Vercel single-region + elastic-concurrency-off compounded it. Full mechanism in [tools-and-data-sources.md gotcha #17](runbooks/tools-and-data-sources.md).
+
+**Hypothesis:** Keeping both the Vercel origin and the Worker KV translation cache warm — so locale pages never serve cold to a crawler — clears the timeout issues and recovers the Health Score, with zero change to the pages themselves. (Note: locale pages *earn* — `/es/breathing-visualizer` 50% CTR on Google, `/ja/4-7-8-breathing-timer` #1 on Bing — so protecting them matters.)
+
+**Baseline (13 Jun 01:24 crawl):**
+- Health Score: 40 (Fair)
+- Errors: 594 · URLs with errors: 338
+- Timed out pages: 258 · Page from sitemap timed out: 250
+- URLs crawled: 561
+
+**Changes (commit `e366224`, deployed `dpl_3PzDMB9b`):**
+- `GET /api/warm-cache` — fetches every sitemap `<loc>` with a Googlebot UA, English canonicals first (warms the shared Vercel origin the proxy reuses for all locales), then locale URLs (warms the Worker KV). Concurrency 6, under the proxy's ~10-concurrent anti-spoof limit (gotcha #16d). `CRON_SECRET`-gated.
+- Vercel Cron (`vercel.json`) runs it every 2 h → durable post-deploy protection.
+- Manual warm run immediately after the prod deploy (the deploy flushes the cache cold).
+
+**Pre-committed success criteria (measured same-day via re-crawl):**
+- ✅ **Success**: Health Score recovers well off 40 AND both timeout issues drop to ~0.
+- ❌ **Failed**: timeouts persist or score stays ≤ 50 → warming insufficient, escalate to EU region / CF edge caching.
+
+**Result (13 Jun 07:04 re-crawl, post-deploy + warm):** ✅ **Success.**
+- Health Score: **40 → 92 (Excellent)**
+- Errors: 594 → **50** · URLs with errors: 338 → **50**
+- Timed out pages: 258 → **0** · Page from sitemap timed out: 250 → **0**
+- URLs crawled: 561 → 611
+- Warnings rose 122 → 465 — **expected, not a regression**: pages that previously timed out are now analyzable, so ordinary content warnings (title/meta length) became visible.
+
+**Follow-ups:** `Hreflang to non-canonical` (50) is now the top error — a separate locale-alternate cleanup (dispatched). After any future prod deploy, hit the warm endpoint before the next crawl; the 2 h cron covers the steady state.
+
+**Status:** ✅ Success
+
+---
 
 ### 2026-06-13: Tummo CTR Title + Meta Rewrite
 
