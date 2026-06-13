@@ -3,7 +3,10 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { SignInSheet } from "./sign-in-sheet";
 import { SocialStatsSignInSheet } from "./social-stats-sign-in-sheet";
+import { LossAversionSignInSheet } from "./loss-aversion-sign-in-sheet";
 import type { ConversionVariant } from "@/lib/conversion/variant";
+import { ModeName } from "@/components/resonance/types";
+import { BREATHING_PATTERNS } from "@/components/resonance/constants";
 import {
   createRuntimePhraseResolver,
   detectRuntimeLocale,
@@ -17,6 +20,7 @@ interface SessionCompletePromptProps {
   totalMinutes: number;
   sessionSeconds: number;
   variant: ConversionVariant;
+  activeMode: ModeName;
 }
 
 export function SessionCompletePrompt({
@@ -27,6 +31,7 @@ export function SessionCompletePrompt({
   totalMinutes,
   sessionSeconds,
   variant,
+  activeMode,
 }: SessionCompletePromptProps) {
   const [locale, setLocale] = useState("en");
 
@@ -41,6 +46,20 @@ export function SessionCompletePrompt({
     if (!isOpen) onDismiss();
     onOpenChange(isOpen);
   };
+
+  if (variant === "loss_aversion") {
+    const pattern = BREATHING_PATTERNS[activeMode];
+    return (
+      <LossAversionSignInSheet
+        open={open}
+        onOpenChange={handleOpenChange}
+        onSuccess={onSuccess}
+        sessionMode={pattern.name}
+        accentColor={pattern.color}
+        sessionSeconds={sessionSeconds}
+      />
+    );
+  }
 
   if (variant === "social_stats") {
     // Conversion Prompt B. Social proof (live count + avatars) is simulated for

@@ -228,6 +228,11 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
   const [instruction, setInstruction] = useState(() => runtimePhrases.resolve('session.ready_to_start').text);
   const [runtimeFallbackCount, setRuntimeFallbackCount] = useState(0);
   const [sessionSeconds, setSessionSeconds] = useState(0);
+  // Duration of the just-completed session, frozen at completion. The live
+  // `sessionSeconds` is reset to 0 in endSession, but the conversion prompt opens
+  // ~1.5s later, so it needs this stable value to show the real session time
+  // (the loss_aversion card's "M:SS · just now"; also the control headline).
+  const [lastSessionSeconds, setLastSessionSeconds] = useState(0);
   const [aiReasoning, setAiReasoning] = useState<string | null>(null);
 
   // Refs
@@ -515,6 +520,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
         if (newSessions !== sessionsCompleted) setSessionsCompleted(newSessions);
         setSessionCommittedSeconds(seconds);
         if (reason === 'completed' || reason === 'mode_switched') {
+          setLastSessionSeconds(seconds);
           onSessionComplete(seconds);
         }
         syncStats(newMinutes, newSessions);
@@ -1527,8 +1533,9 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
           onDismiss={dismissSession}
           onSuccess={markConverted}
           totalMinutes={totalMinutes}
-          sessionSeconds={sessionSeconds}
+          sessionSeconds={lastSessionSeconds}
           variant={conversionVariant}
+          activeMode={activeMode}
         />
       )}
 
