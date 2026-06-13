@@ -60,14 +60,14 @@ test('sitemap includes translated locale-prefixed URLs when configured', () => {
 test('sitemap entries include hreflang alternates for all languages', () => {
   const entries = getEntries();
 
-  const enHome = entries.find((e) => e.url === `${SITE_URL}`);
+  const enHome = entries.find((e) => e.url === `${SITE_URL}/`);
   assert.ok(enHome, 'English homepage entry missing');
   assert.ok(enHome.alternates, 'English homepage missing alternates');
   assert.ok(enHome.alternates.languages, 'English homepage missing alternates.languages');
 
   const langs = enHome.alternates.languages;
-  assert.equal(langs['en-US'], `${SITE_URL}`, 'en-US hreflang should point to root');
-  assert.equal(langs['x-default'], `${SITE_URL}`, 'x-default should point to root');
+  assert.equal(langs['en-US'], `${SITE_URL}/`, 'en-US hreflang should point to root with trailing slash');
+  assert.equal(langs['x-default'], `${SITE_URL}/`, 'x-default should point to root with trailing slash');
   assert.equal(langs['es-ES'], `${SITE_URL}/es`, 'es-ES hreflang should point to /es');
   assert.equal(langs['pt-BR'], `${SITE_URL}/pt`, 'pt-BR hreflang should point to /pt');
   assert.equal(langs['fr-FR'], `${SITE_URL}/fr`, 'fr-FR hreflang should point to /fr');
@@ -96,4 +96,42 @@ test('sitemap entries include hreflang alternates for all languages', () => {
     (e) => !e.alternates && !EN_ONLY_URLS.has(e.url)
   );
   assert.equal(withoutAlternates.length, 0, `${withoutAlternates.length} entries missing alternates`);
+});
+
+test('hreflang en-US and x-default targets are self-canonical: must match <loc> URL for home page entries', () => {
+  // Regression: buildAlternates previously generated https://site.com (no slash) for
+  // the home-page en-US/x-default hreflang while Next.js renders the canonical as
+  // https://site.com/ (with slash). Ahrefs flags this mismatch as "hreflang to non-canonical".
+  const entries = getEntries();
+
+  const homeEntries = entries.filter((e) => {
+    const url = new URL(e.url);
+    const isLocaleHome =
+      url.pathname === '/' ||
+      ['es', 'pt', 'fr', 'de', 'ja'].includes(url.pathname.replace(/^\//, ''));
+    return isLocaleHome && e.alternates?.languages;
+  });
+
+  assert.ok(homeEntries.length >= 6, 'expected at least 6 home-page entries (en + 5 locales)');
+
+  for (const entry of homeEntries) {
+    const enUs = entry.alternates.languages['en-US'];
+    const xDefault = entry.alternates.languages['x-default'];
+    assert.equal(enUs, `${SITE_URL}/`, `entry ${entry.url}: en-US hreflang must be ${SITE_URL}/`);
+    assert.equal(
+      xDefault,
+      `${SITE_URL}/`,
+      `entry ${entry.url}: x-default hreflang must be ${SITE_URL}/`
+    );
+  }
+});
+
+test('home page <loc> URL uses trailing slash to match Next.js rendered canonical', () => {
+  const entries = getEntries();
+  const enHome = entries.find((e) => {
+    const url = new URL(e.url);
+    return url.pathname === '/';
+  });
+  assert.ok(enHome, 'English homepage entry missing');
+  assert.equal(enHome.url, `${SITE_URL}/`, `home <loc> must be ${SITE_URL}/ (with slash)`);
 });
