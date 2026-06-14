@@ -58,3 +58,20 @@ export const createModeTheme = (accent: string): ModeTheme => {
     particle: mix(accent, "#ffffff", 0.55),
   };
 };
+
+// OLED-friendly dark theme — true black background saves power and is gentler in a dark room.
+export const createNightModeTheme = (accent: string): ModeTheme => {
+  return {
+    accent,
+    backgroundFrom: "#000000",
+    backgroundTo: "#060403",
+    surface: "#0f0c0a",
+    surfaceAlt: "#161210",
+    surfaceBorder: "#2c2220",
+    text: "#e0d8d4",
+    muted: "#6b6260",
+    subtle: "#4a4240",
+    onAccent: "#fff8f4",
+    particle: mix(accent, "#000000", 0.35),
+  };
+};

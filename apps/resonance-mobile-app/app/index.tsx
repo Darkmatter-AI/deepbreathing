@@ -16,11 +16,12 @@ import {
 import * as Haptics from 'expo-haptics';
 import { useKeepAwake } from 'expo-keep-awake';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Modal, Pressable, Switch, Text, View, useWindowDimensions } from 'react-native';
+import { AccessibilityInfo, Modal, Pressable, Switch, Text, View, useWindowDimensions } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Slider from '@react-native-community/slider';
 import { playCue } from '@/lib/audio';
-import { createModeTheme } from '@/lib/theme';
+import { createModeTheme, createNightModeTheme } from '@/lib/theme';
+import { useColorScheme } from '@/hooks/use-color-scheme';
 
 const MODE_LIST = [
   ModeName.Box,
@@ -162,6 +163,9 @@ export default function HomeScreen() {
   const blobCanvasPadding = 72;
   const blobCanvasSize = blobSize + blobCanvasPadding * 2;
 
+  const colorScheme = useColorScheme();
+  const [reduceMotion, setReduceMotion] = useState(false);
+
   const [mode, setMode] = useState<ModeName>(ModeName.Box);
   const [phase, setPhase] = useState<BreathingPhase>(BreathingPhase.Idle);
   const [scale, setScale] = useState(0);
@@ -201,8 +205,23 @@ export default function HomeScreen() {
   const smoothedRadialSpeedRef = useRef(0);
   const smoothedDriftSpeedRef = useRef(0.2 * SPEED_PER_SECOND);
 
+  useEffect(() => {
+    let cancelled = false;
+    AccessibilityInfo.isReduceMotionEnabled().then((enabled) => {
+      if (!cancelled) setReduceMotion(enabled);
+    });
+    const sub = AccessibilityInfo.addEventListener('reduceMotionChanged', setReduceMotion);
+    return () => {
+      cancelled = true;
+      sub.remove();
+    };
+  }, []);
+
   const pattern = useMemo(() => BREATHING_PATTERNS[mode], [mode]);
-  const theme = useMemo(() => createModeTheme(pattern.color), [pattern.color]);
+  const theme = useMemo(
+    () => colorScheme === 'dark' ? createNightModeTheme(pattern.color) : createModeTheme(pattern.color),
+    [pattern.color, colorScheme],
+  );
   const isProtocolMode = mode === ModeName.WimHof;
 
   useEffect(() => {
@@ -700,6 +719,11 @@ export default function HomeScreen() {
   }, [width, height]);
 
   useEffect(() => {
+    if (reduceMotion) {
+      particlesRef.current = [];
+      return;
+    }
+
     const tick = (timestamp: number) => {
       const w = particleBoundsRef.current.width || width;
       const h = particleBoundsRef.current.height || height;
@@ -757,7 +781,7 @@ export default function HomeScreen() {
         cancelAnimationFrame(particleAnimationRef.current);
       }
     };
-  }, [height, width]);
+  }, [height, width, reduceMotion]);
 
   return (
     <SafeAreaView className="flex-1" style={{ backgroundColor: theme.backgroundFrom }}>

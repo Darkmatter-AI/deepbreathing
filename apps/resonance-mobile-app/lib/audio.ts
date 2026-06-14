@@ -16,8 +16,11 @@ const ensureAudioMode = async () => {
     return;
   }
 
+  // playsInSilentMode: false means iOS respects the mute/ring switch.
+  // If the user's phone is silenced, breath cues won't play — the
+  // remaining haptic feedback is sufficient and less startling.
   await setAudioModeAsync({
-    playsInSilentMode: true,
+    playsInSilentMode: false,
     interruptionMode: "mixWithOthers",
     allowsRecording: false,
     shouldPlayInBackground: false,
