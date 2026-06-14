@@ -71,6 +71,16 @@ function parseAndClampDuration(value: string | null): number | undefined {
   return Math.min(parsed, MAX_DURATION);
 }
 
+// Parse a boolean-like URL param. Accepts "1"/"0", "true"/"false", "on"/"off".
+// Returns undefined if missing/invalid so callers fall back to storage or default.
+function parseBoolParam(value: string | null): boolean | undefined {
+  if (value === null) return undefined;
+  const v = value.toLowerCase();
+  if (v === '1' || v === 'true' || v === 'on' || v === 'yes') return true;
+  if (v === '0' || v === 'false' || v === 'off' || v === 'no') return false;
+  return undefined;
+}
+
 type ThemePreference = 'system' | 'light' | 'dark';
 
 const toRgba = (hex: string, alpha: number) => {
@@ -92,6 +102,10 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     () => parseAndClampDuration(searchParams.get('duration')),
     [searchParams]
   );
+  const eyesClosedFromUrl = useMemo(
+    () => parseBoolParam(searchParams.get('eyesClosed')),
+    [searchParams]
+  );
 
   // --- State ---
   const initialMode = defaultMode ?? ModeName.Box;
@@ -99,6 +113,9 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
   const [activeMode, setActiveMode] = useState<ModeName>(initialMode);
   const [speedMultiplier, setSpeedMultiplier] = useState(DEFAULT_SPEED_MULTIPLIER);
   const [themeColor, setThemeColor] = useState(BREATHING_PATTERNS[initialMode].color);
+  // Eyes-closed mode: dims visuals + adds phase-length tonal envelope.
+  // URL param wins over storage; storage wins over default (off).
+  const [eyesClosed, setEyesClosed] = useState<boolean>(() => eyesClosedFromUrl ?? false);
   const [totalMinutes, setTotalMinutes] = useState(0);
   const [sessionsCompleted, setSessionsCompleted] = useState(0);
   // Identity of the in-progress session. Set on first start, kept across
@@ -144,6 +161,9 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       if (!defaultMode && parsed.mode) setActiveMode(parsed.mode);
       if (parsed.speed) setSpeedMultiplier(parsed.speed);
       if (!defaultMode && parsed.color) setThemeColor(parsed.color);
+      if (eyesClosedFromUrl === undefined && typeof parsed.eyesClosed === 'boolean') {
+        setEyesClosed(parsed.eyesClosed);
+      }
     } else if (!defaultMode) {
       const hour = new Date().getHours();
       if (hour >= 5 && hour < 11) setThemeColor("#0d9488");
@@ -178,12 +198,18 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     }
 
     setThemeReady(true);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [defaultMode]);
 
   useEffect(() => {
     if (durationFromUrl === undefined) return;
     setSelectedDuration(durationFromUrl);
   }, [durationFromUrl]);
+
+  useEffect(() => {
+    if (eyesClosedFromUrl === undefined) return;
+    setEyesClosed(eyesClosedFromUrl);
+  }, [eyesClosedFromUrl]);
 
   useEffect(() => {
     if (!mounted || durationFromUrl !== undefined) return;
@@ -306,6 +332,18 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     getAudioService().setBreathingMode(activeMode);
   }, [getAudioService, activeMode]);
 
+  // Live mid-session eyes-closed toggle: start/stop the phase envelope the
+  // moment the switch flips so audio responds immediately.
+  useEffect(() => {
+    if (!isRunning) return;
+    const audio = getAudioService();
+    if (eyesClosed) {
+      void audio.startPhaseEnvelope(themeColor);
+    } else {
+      audio.stopPhaseEnvelope();
+    }
+  }, [eyesClosed, isRunning, getAudioService, themeColor]);
+
   useEffect(() => {
     if (typeof document === 'undefined') return;
     if (typeof window === 'undefined') return;
@@ -390,7 +428,8 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       mode: activeMode,
       speed: speedMultiplier,
       color: themeColor,
-      duration: selectedDuration
+      duration: selectedDuration,
+      eyesClosed,
     }));
     // Track settings changes for conversion trigger (skip initial mount)
     settingsChangeCountRef.current++;
@@ -398,7 +437,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       onSettingsChange();
       syncSettings({ mode: activeMode, speed: speedMultiplier, duration: selectedDuration });
     }
-  }, [activeMode, speedMultiplier, themeColor, selectedDuration, mounted, onSettingsChange, syncSettings]);
+  }, [activeMode, speedMultiplier, themeColor, selectedDuration, eyesClosed, mounted, onSettingsChange, syncSettings]);
 
   useEffect(() => {
     if (!mounted) return;
@@ -493,6 +532,26 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     updateDurationParam(value);
   }, [updateDurationParam]);
 
+  // Set/clear a boolean URL param. Omits the param when value equals its
+  // default so share links stay short.
+  const updateBoolParam = useCallback((name: string, value: boolean, defaultValue: boolean) => {
+    const params = new URLSearchParams(searchParams.toString());
+    if (value === defaultValue) {
+      params.delete(name);
+    } else {
+      params.set(name, value ? '1' : '0');
+    }
+    const queryString = params.toString();
+    router.replace(queryString ? `${pathname}?${queryString}` : pathname, { scroll: false });
+  }, [pathname, router, searchParams]);
+
+  const handleEyesClosedToggle = useCallback(() => {
+    const next = !eyesClosed;
+    setEyesClosed(next);
+    updateBoolParam('eyesClosed', next, false);
+    trackEvent('eyes_closed_toggled', { enabled: next, mode: activeMode });
+  }, [eyesClosed, updateBoolParam, activeMode]);
+
   // End the in-progress session. `hard` resets seconds + sessionId so a
   // future togglePlay starts fresh; soft (pause) keeps seconds + id so
   // resume picks up where the user left off, and a later commit only
@@ -581,6 +640,9 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
         // Wim Hof uses energizing drone + beta waves
         await audio.startDrone(themeColor);
         await audio.startBinaural(15); // Beta waves for alertness
+        if (eyesClosed) {
+          await audio.startPhaseEnvelope(themeColor);
+        }
         audio.playCue('inhale', themeColor);
       } else {
         // Normal pattern mode
@@ -599,6 +661,9 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
           // Others get Drone Synth + Alpha
           await audio.startDrone(themeColor);
           await audio.startBinaural(10);
+        }
+        if (eyesClosed) {
+          await audio.startPhaseEnvelope(themeColor);
         }
 
         audio.playCue('inhale', themeColor);
@@ -622,11 +687,12 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       // double-counting if both fire.
       endSession('paused', sessionSeconds, false);
       audio.stopDrone();
+      audio.stopPhaseEnvelope();
       audio.stopPinkNoise();
       audio.stopBinaural();
       setScale(0);
     }
-  }, [isRunning, activeMode, themeColor, getAudioService, isIOS, soundStatus, sessionSeconds, selectedDuration, setInstructionKey, sessionId, endSession]);
+  }, [isRunning, activeMode, themeColor, getAudioService, isIOS, soundStatus, sessionSeconds, selectedDuration, setInstructionKey, sessionId, endSession, eyesClosed]);
 
   const handleStop = () => {
     const audio = getAudioService();
@@ -644,6 +710,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     endSession('mode_switched', sessionSeconds, true);
     setScale(0);
     audio.stopDrone();
+    audio.stopPhaseEnvelope();
     audio.stopPinkNoise();
     audio.stopBinaural();
   };
@@ -778,6 +845,15 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       }
     }
 
+    // Drive the phase-length envelope (no-op when not in eyes-closed mode).
+    const breathPhase: 'inhale' | 'exhale' | 'hold' =
+      phase === BreathingPhase.Inhale || phase === BreathingPhase.Inhale2
+        ? 'inhale'
+        : phase === BreathingPhase.Exhale
+          ? 'exhale'
+          : 'hold';
+    audio.updatePhaseEnvelope(breathPhase, progress);
+
     if (nextPhase !== phase) {
       setPhase(nextPhase);
       phaseStartRef.current = time;
@@ -796,6 +872,15 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
 
     const audio = getAudioService();
     audio.updateSpatial(time);
+
+    // Drive phase envelope for Wim Hof protocol (no-op when not running).
+    if (phase === BreathingPhase.Inhale || phase === BreathingPhase.Inhale2) {
+      audio.updatePhaseEnvelope('inhale', Math.min(1, (time - protocolPhaseStartRef.current) / 1500));
+    } else if (phase === BreathingPhase.Exhale) {
+      audio.updatePhaseEnvelope('exhale', Math.min(1, (time - protocolPhaseStartRef.current) / 1500));
+    } else {
+      audio.updatePhaseEnvelope('hold', 0);
+    }
 
     const protocol = WIM_HOF_PROTOCOL;
     const { inhale, exhale } = protocol.powerBreathTiming;
@@ -887,6 +972,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
             // Stop the session
             setIsRunning(false);
             audio.stopDrone();
+            audio.stopPhaseEnvelope();
             audio.stopBinaural();
           }
         }
@@ -984,6 +1070,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       endSession('completed', sessionSeconds, true);
       // Stop all audio
       audio.stopDrone();
+      audio.stopPhaseEnvelope();
       audio.stopPinkNoise();
       audio.stopBinaural();
     }
@@ -1156,6 +1243,14 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     return isRunning ? `${themeColor}1a` : undefined;
   };
 
+  // Eyes-closed mode: fade particle background and main content to near-black
+  // during an active session. Header stays full opacity so users can always
+  // reach the Settings gear to toggle back.
+  const dimVisuals = eyesClosed && isRunning;
+  const dimmedStyle = dimVisuals
+    ? { opacity: 0.18, transition: 'opacity 1800ms ease-in-out' }
+    : { opacity: 1, transition: 'opacity 1200ms ease-in-out' };
+
   return (
     <div
       className={`relative flex h-full w-full flex-col overflow-hidden ${backgroundVariant === 'winter-blue' ? '' : 'bg-background'} transition-colors duration-1000 ${className}`}
@@ -1164,15 +1259,17 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       data-runtime-fallback-count={runtimeFallbackCount}
     >
 
-      {snowMode ? (
-        <SnowBackground
-          tone={activeTheme}
-          speedMultiplier={speedMultiplier}
-          phase={phase}
-        />
-      ) : (
-        <ParticleBackground phase={phase} color={themeColor} speedMultiplier={speedMultiplier} />
-      )}
+      <div style={dimmedStyle} className="absolute inset-0 z-0">
+        {snowMode ? (
+          <SnowBackground
+            tone={activeTheme}
+            speedMultiplier={speedMultiplier}
+            phase={phase}
+          />
+        ) : (
+          <ParticleBackground phase={phase} color={themeColor} speedMultiplier={speedMultiplier} />
+        )}
+      </div>
 
       <header className="fixed inset-x-0 top-0 z-30 flex items-center justify-end gap-2 p-6">
         {!embedMode && <LanguageSwitcherInline />}
@@ -1228,7 +1325,10 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
         )}
       </header>
 
-      <main className={`relative z-10 flex flex-1 flex-col items-center justify-center sm:pb-0 ${noMobileBottomPad ? 'pb-24' : 'pb-44'}`}>
+      <main
+        className={`relative z-10 flex flex-1 flex-col items-center justify-center sm:pb-0 ${noMobileBottomPad ? 'pb-24' : 'pb-44'}`}
+        style={dimmedStyle}
+      >
         {/* Protocol UI: Round and breath counter */}
         {isProtocolMode && isRunning && (
           <div className="absolute top-8 left-0 right-0 z-20 flex flex-col items-center gap-2">
@@ -1388,6 +1488,32 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                   ) : (
                     <p className="mt-2 text-xs text-muted-foreground">Following your device preference.</p>
                   )}
+                </div>
+
+                {/* Eyes-closed mode toggle */}
+                <div className="rounded-2xl bg-background/50 p-3 text-sm text-muted-foreground shadow-inner dark:bg-background/20">
+                  <div className="flex items-center justify-between gap-3">
+                    <div>
+                      <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">Eyes closed</p>
+                      <p className="text-base font-semibold text-card-foreground">{eyesClosed ? 'On' : 'Off'}</p>
+                    </div>
+                    <button
+                      type="button"
+                      role="switch"
+                      aria-checked={eyesClosed}
+                      onClick={handleEyesClosedToggle}
+                      className={`relative inline-flex h-9 w-16 items-center rounded-full border border-border/60 px-1 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-ring dark:border-border/40 ${eyesClosed ? 'bg-primary/80 text-primary-foreground' : 'bg-muted'}`}
+                    >
+                      <span
+                        className={`flex h-7 w-7 items-center justify-center rounded-full bg-card text-foreground shadow-sm transition-transform ${eyesClosed ? 'translate-x-6' : 'translate-x-0'}`}
+                      >
+                        {eyesClosed ? <EyeOff size={16} /> : <Eye size={16} />}
+                      </span>
+                    </button>
+                  </div>
+                  <p className="mt-2 text-xs text-muted-foreground">
+                    Fades the visuals and lets a tonal envelope guide each breath. Tap anywhere to peek without pausing.
+                  </p>
                 </div>
 
                 <div className="rounded-2xl bg-background/50 p-3 text-sm text-muted-foreground shadow-inner dark:bg-background/20">

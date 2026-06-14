@@ -23,6 +23,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-06-14 | [DAR-379: Eyes-closed / audio-only mode](#2026-06-14-dar-379-eyes-closedaudio-only-mode) | 🔄 Implemented |
 | 2026-06-01 | [Fix `conversion_prompt_shown` double-fire (impure setState updaters)](#2026-06-01-fix-conversion_prompt_shown-double-fire-impure-setstate-updaters) | 🔄 Implemented |
 | 2026-06-01 | [Conversion Prompt B (social proof + personal stats), 100% challenger](#2026-06-01-conversion-prompt-b-social-proof--personal-stats-100-challenger) | 🔄 Implemented |
 | 2026-05-12 | [Direct +47% WoW — hypothesis: organic shares from PT/DE translations](#2026-05-12-direct-47-wow--hypothesis-organic-shares-from-ptde-translations) | 🟡 Inconclusive |
@@ -43,6 +44,28 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 ---
 
 ## Active Experiments
+
+### 2026-06-14: DAR-379: Eyes-closed/audio-only mode
+
+**Hypothesis:** Long-form practitioners close their eyes after the first 30s and miss visual cues, cutting sessions short. A toggle that dims the visuals to near-black and adds a continuous tonal envelope (gain + filter cutoff riding inhale/exhale progress) gives those users a richer audio-only session, extending engaged minutes and increasing return rate.
+
+**Change:** New "Eyes closed" toggle in the Settings panel (persists to `resonance_settings.eyesClosed`, round-trips via `?eyesClosed=1` URL param). When on during an active session: (1) particle background + main content fade to 18% opacity over 1.8s; header chrome stays at full opacity so users can always reach the toggle without hunting. (2) A continuous tonal layer (sine at 2× drone root, through a lowpass filter) is added to the audio graph; its gain and filter cutoff ride breath phase progress via sin/cos curves, so the swell feels organic. (3) Tapping the orb still fires the existing pause handler (orb is in DOM, just dimmed). Files: `Resonance.tsx`, `services/audioService.ts`.
+
+**Baseline (week of 2026-06-14, from FUNNEL-DASHBOARD.md):**
+- Median session length: ~TBD (pull from FUNNEL-DASHBOARD.md at first read)
+- Return rate (>1 session/week): TBD
+- `eyes_closed_toggled` event does not yet exist in GA4 (new event)
+
+**Pre-committed criteria** (set 2026-06-14, before ship; first read 2026-06-28, verdict 2026-07-12):
+- ✅ **Success** if, for users who enable eyes-closed at least once, median session length is **≥ 15% longer** than same-period users who never enable it, AND return rate is not lower.
+- ❌ **Failed** if median session length is not measurably different, or if enabling eyes-closed correlates with higher pause/stop rates (suggesting disorientation, not relaxation).
+- ⚪ **Inconclusive** if opt-in rate is <5% of sessions (not enough data to judge).
+
+**Measure-after date:** 2026-06-28 (first read after 2 weeks of prod data).
+
+**Status:** 🔄 Implemented — PR pending review (see DAR-379). Commit: see PR.
+
+---
 
 ### 2026-06-01: Fix `conversion_prompt_shown` double-fire (impure setState updaters)
 
