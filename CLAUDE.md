@@ -33,6 +33,8 @@ How we work on `deepbreathingexercises.com`. Read this before starting work; the
 
 ## Experiments — before you ship
 
+**STOP — read [`docs/SEO-EXPERIMENTS.md`](docs/SEO-EXPERIMENTS.md) FIRST.** Any SEO-adjacent task — a GSC/Bing alert, an indexing report, a redirect, a title/meta change, a sitemap or hreflang question, a crawl-health investigation — starts by reviewing that log. Many "new" problems are already diagnosed there as benign or already-fixed (e.g. the recurring "Page with redirect" WNC alert is a known no-action finding). Do not re-investigate from scratch and do not ship a change before checking whether it was already tried. This is non-negotiable; it is the whole reason the log exists.
+
 **SEO changes** (titles, meta, sitemap, redirects, indexing): log in [`docs/SEO-EXPERIMENTS.md`](docs/SEO-EXPERIMENTS.md).
 
 **Product/UX changes** (orb cue, hero placement, conversion timing, tracking events, anything measured by the funnel): log in [`docs/PRODUCT-EXPERIMENTS.md`](docs/PRODUCT-EXPERIMENTS.md).

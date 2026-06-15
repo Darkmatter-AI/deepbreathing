@@ -151,7 +151,7 @@ export default function TwoMinuteBreathingExercisePage() {
             8 cycles of 4-4-4-4. The holds help interrupt racing thoughts. Best for acute stress.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
-            <Link href="/breathe/box?duration=120" className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground">
+            <Link href="/breathe/box?duration=120" rel="nofollow" className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground">
               Start box breathing
             </Link>
             <ShareButton
@@ -170,7 +170,7 @@ export default function TwoMinuteBreathingExercisePage() {
             10-12 breaths at 5s in, 5s out. No holds, easier to sustain. Best for a softer reset.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
-            <Link href="/breathe/coherent?duration=120" className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground">
+            <Link href="/breathe/coherent?duration=120" rel="nofollow" className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground">
               Start coherent breathing
             </Link>
             <ShareButton

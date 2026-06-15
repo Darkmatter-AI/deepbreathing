@@ -387,6 +387,7 @@ export default function HolidayBreathingExercisesPage() {
               <Link
                 key={item.title}
                 href={item.href}
+                rel={item.href?.includes("duration=") ? "nofollow" : undefined}
                 className="group rounded-2xl border border-slate-700/50 bg-slate-800/50 p-5 backdrop-blur-sm transition-all hover:border-sky-500/50 hover:bg-slate-800"
               >
                 <p
@@ -420,6 +421,7 @@ export default function HolidayBreathingExercisesPage() {
               <Link
                 key={moment.title}
                 href={moment.href}
+                rel={moment.href?.includes("duration=") ? "nofollow" : undefined}
                 className="group rounded-2xl border border-slate-700/50 bg-slate-800/50 p-5 backdrop-blur-sm transition-all hover:border-sky-500/50 hover:bg-slate-800"
               >
                 <h3 className="text-lg font-semibold text-white">
@@ -454,6 +456,7 @@ export default function HolidayBreathingExercisesPage() {
                       <Link
                         key={idx}
                         href={step.href}
+                        rel={step.href?.includes("duration=") ? "nofollow" : undefined}
                         className="flex items-start gap-4 rounded-xl p-3 transition-colors hover:bg-slate-700/30"
                       >
                         <span className="whitespace-nowrap text-sm font-medium text-sky-400">

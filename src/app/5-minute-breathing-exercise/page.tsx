@@ -142,7 +142,7 @@ export default function FiveMinuteBreathingExercisePage() {
             Coherent breathing: 5 seconds in, 5 seconds out, no holds. About 30 cycles in 5 minutes.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
-            <Link href="/breathe/coherent?duration=300" className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground">
+            <Link href="/breathe/coherent?duration=300" rel="nofollow" className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground">
               Start 5-minute session
             </Link>
             <ShareButton
