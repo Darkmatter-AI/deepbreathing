@@ -3,7 +3,10 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { SignInSheet } from "./sign-in-sheet";
 import { SocialStatsSignInSheet } from "./social-stats-sign-in-sheet";
+import { LossAversionSignInSheet } from "./loss-aversion-sign-in-sheet";
 import type { ConversionVariant } from "@/lib/conversion/variant";
+import { ModeName } from "@/components/resonance/types";
+import { BREATHING_PATTERNS } from "@/components/resonance/constants";
 import {
   createRuntimePhraseResolver,
   detectRuntimeLocale,
@@ -16,7 +19,9 @@ interface SessionCompletePromptProps {
   onSuccess: () => void;
   totalMinutes: number;
   sessionSeconds: number;
+  dayStreak?: number;
   variant: ConversionVariant;
+  activeMode: ModeName;
 }
 
 export function SessionCompletePrompt({
@@ -26,7 +31,9 @@ export function SessionCompletePrompt({
   onSuccess,
   totalMinutes,
   sessionSeconds,
+  dayStreak = 0,
   variant,
+  activeMode,
 }: SessionCompletePromptProps) {
   const [locale, setLocale] = useState("en");
 
@@ -42,16 +49,31 @@ export function SessionCompletePrompt({
     onOpenChange(isOpen);
   };
 
+  if (variant === "loss_aversion") {
+    const pattern = BREATHING_PATTERNS[activeMode];
+    return (
+      <LossAversionSignInSheet
+        open={open}
+        onOpenChange={handleOpenChange}
+        onSuccess={onSuccess}
+        sessionMode={pattern.name}
+        accentColor={pattern.color}
+        sessionSeconds={sessionSeconds}
+      />
+    );
+  }
+
   if (variant === "social_stats") {
-    // Conversion Prompt B. Social proof (live count + avatars) is simulated for
-    // now. Only `yourMinutes` is real, so gate the stats block on it.
+    // Conversion Prompt B. Show stats block only when both minutes and streak
+    // are real (> 0 / >= 1) — a "0" must never unblur.
     return (
       <SocialStatsSignInSheet
         open={open}
         onOpenChange={handleOpenChange}
         onSuccess={onSuccess}
         yourMinutes={totalMinutes}
-        showStats={totalMinutes > 0}
+        dayStreak={dayStreak}
+        showStats={totalMinutes > 0 && dayStreak >= 1}
       />
     );
   }

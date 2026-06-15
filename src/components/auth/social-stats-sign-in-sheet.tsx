@@ -43,7 +43,7 @@ interface SocialStatsSignInSheetProps {
   yourMinutes?: number;
   /** Placeholder until a real streak source exists. */
   dayStreak?: number;
-  /** Placeholder concurrent-user count. Ticks gently when present. */
+  /** @deprecated — live count is now fetched from /api/v1/presence/count on open. */
   liveCount?: number;
   /** Show the personal stats block. Gate on real data (yourMinutes > 0) so we
    *  never blur a "0". Social proof still leads when this is false. */
@@ -78,8 +78,7 @@ export function SocialStatsSignInSheet({
   onOpenChange,
   onSuccess,
   yourMinutes = 37,
-  dayStreak = 4,
-  liveCount = 1240,
+  dayStreak = 0,
   showStats = true,
   headline = "You're in good company.",
   subtitle = "Thousands are breathing deep, and your own minutes are adding up too. Sign up free to save your journey.",
@@ -88,7 +87,9 @@ export function SocialStatsSignInSheet({
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [emailOpen, setEmailOpen] = useState(false);
   const [unlocked, setUnlocked] = useState(false);
-  const [count, setCount] = useState(liveCount);
+  // null = loading; 0 = failed/empty → show text fallback; >0 = real anchor.
+  const [liveCountAnchor, setLiveCountAnchor] = useState<number | null>(null);
+  const [count, setCount] = useState(0);
   // Deterministic default keeps SSR/first paint stable; re-randomized on each open below.
   const [avatarColors, setAvatarColors] = useState<string[]>(() => ACCENT_COLORS.slice(0, 4));
   const swapTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -103,6 +104,22 @@ export function SocialStatsSignInSheet({
     if (open) setAvatarColors(pickAvatarColors(4));
   }, [open]);
 
+  // Fetch real live count on each open; use it as the jitter anchor.
+  useEffect(() => {
+    if (!open) return;
+    setLiveCountAnchor(null);
+    fetch("/api/v1/presence/count")
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data) => {
+        const fetched: number = (data && typeof data.count === "number") ? data.count : 0;
+        setLiveCountAnchor(fetched);
+        setCount(fetched);
+      })
+      .catch(() => {
+        setLiveCountAnchor(0);
+      });
+  }, [open]);
+
   // Reset to a clean form shortly after the sheet closes.
   useEffect(() => {
     if (open) return;
@@ -111,28 +128,29 @@ export function SocialStatsSignInSheet({
       setEmail("");
       setEmailOpen(false);
       setUnlocked(false);
-      setCount(liveCount);
+      setLiveCountAnchor(null);
+      setCount(0);
     }, 300);
     return () => clearTimeout(t);
-  }, [open, liveCount]);
+  }, [open]);
 
-  // Gentle life on the live count, paused for reduced motion and while closed.
+  // Gentle jitter around the real anchor while open; skip for reduced-motion.
   useEffect(() => {
-    if (!open) return;
+    if (!open || liveCountAnchor === null || liveCountAnchor === 0) return;
     if (typeof window === "undefined") return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const id = setInterval(() => {
       setCount((n) => {
         let next = n + (Math.floor(Math.random() * 9) - 4);
-        const lo = liveCount - 60;
-        const hi = liveCount + 80;
+        const lo = liveCountAnchor - 60;
+        const hi = liveCountAnchor + 80;
         if (next < lo) next = lo;
         if (next > hi) next = hi;
         return next;
       });
     }, 3200);
     return () => clearInterval(id);
-  }, [open, liveCount]);
+  }, [open, liveCountAnchor]);
 
   useEffect(() => () => {
     if (swapTimer.current) clearTimeout(swapTimer.current);
@@ -203,9 +221,17 @@ export function SocialStatsSignInSheet({
             <>
               <div className={`${PREFIX}-live`}>
                 <span className={`${PREFIX}-pulse`} aria-hidden="true" />
-                <span className={`${PREFIX}-lt`}>
-                  <b>{count.toLocaleString()}</b> breathing right now
-                </span>
+                {liveCountAnchor === null ? (
+                  /* Loading — pulse dot + avatars are already visible */
+                  <span className={`${PREFIX}-lt`} aria-hidden="true" />
+                ) : liveCountAnchor === 0 ? (
+                  <span className={`${PREFIX}-lt`}>Join thousands breathing today</span>
+                ) : (
+                  <span className={`${PREFIX}-lt`}>
+                    <b>{count.toLocaleString()}</b>{" "}
+                    {count === 1 ? "person breathing right now" : "breathing right now"}
+                  </span>
+                )}
                 <span className={`${PREFIX}-avatars`} aria-hidden="true">
                   {avatarColors.map((c, i) => (
                     <span key={`${c}-${i}`} style={{ background: c }} />

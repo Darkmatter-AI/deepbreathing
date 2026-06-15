@@ -101,6 +101,8 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
   const [themeColor, setThemeColor] = useState(BREATHING_PATTERNS[initialMode].color);
   const [totalMinutes, setTotalMinutes] = useState(0);
   const [sessionsCompleted, setSessionsCompleted] = useState(0);
+  const [currentStreak, setCurrentStreak] = useState(0);
+  const [lastSessionDate, setLastSessionDate] = useState<string | null>(null);
   // Identity of the in-progress session. Set on first start, kept across
   // pause/resume, cleared on hard-end (complete/mode-switch). committed
   // tracks how many seconds of THIS session have already been credited
@@ -116,7 +118,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
   );
 
   // Auth + conversion triggers
-  const { isAuthenticated, user, syncSettings, syncStats } = useAuth();
+  const { isAuthenticated, user, syncSettings, syncStats, currentStreak: serverStreak } = useAuth();
   const {
     variant: conversionVariant,
     showSessionPrompt,
@@ -160,7 +162,13 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       const parsed = JSON.parse(savedStats);
       setTotalMinutes(parsed.totalMinutes || 0);
       setSessionsCompleted(parsed.sessionsCompleted || 0);
+      setCurrentStreak(parsed.currentStreak || 0);
+      setLastSessionDate(parsed.lastSessionDate ?? null);
     }
+    presenceTokenRef.current =
+      typeof crypto !== "undefined" && "randomUUID" in crypto
+        ? crypto.randomUUID()
+        : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
 
     const soundFlag = localStorage.getItem(STORAGE_KEYS.SOUND_OK);
     if (soundFlag === 'true') {
@@ -228,7 +236,15 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
   const [instruction, setInstruction] = useState(() => runtimePhrases.resolve('session.ready_to_start').text);
   const [runtimeFallbackCount, setRuntimeFallbackCount] = useState(0);
   const [sessionSeconds, setSessionSeconds] = useState(0);
+  // Duration of the just-completed session, frozen at completion. The live
+  // `sessionSeconds` is reset to 0 in endSession, but the conversion prompt opens
+  // ~1.5s later, so it needs this stable value to show the real session time
+  // (the loss_aversion card's "M:SS · just now"; also the control headline).
+  const [lastSessionSeconds, setLastSessionSeconds] = useState(0);
   const [aiReasoning, setAiReasoning] = useState<string | null>(null);
+
+  // Per-tab presence token — generated once on mount, no PII.
+  const presenceTokenRef = useRef<string | null>(null);
 
   // Refs
   const audioServiceRef = useRef<AudioService | null>(null);
@@ -400,6 +416,11 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     }
   }, [activeMode, speedMultiplier, themeColor, selectedDuration, mounted, onSettingsChange, syncSettings]);
 
+  // When the server hydrates (user logs in), update local streak from server truth.
+  useEffect(() => {
+    if (serverStreak > 0) setCurrentStreak(serverStreak);
+  }, [serverStreak]);
+
   useEffect(() => {
     if (!mounted) return;
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
@@ -412,9 +433,11 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     if (!mounted) return;
     localStorage.setItem(STORAGE_KEYS.STATS, JSON.stringify({
       totalMinutes,
-      sessionsCompleted
+      sessionsCompleted,
+      currentStreak,
+      lastSessionDate,
     }));
-  }, [totalMinutes, sessionsCompleted, mounted]);
+  }, [totalMinutes, sessionsCompleted, currentStreak, lastSessionDate, mounted]);
 
   useEffect(() => {
     if (!mounted || !themeReady) return;
@@ -514,10 +537,27 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
         setTotalMinutes(newMinutes);
         if (newSessions !== sessionsCompleted) setSessionsCompleted(newSessions);
         setSessionCommittedSeconds(seconds);
+
+        // Compute streak locally (mirrors the SQL CASE in /api/v1/sync/stats).
+        // Server is the authoritative store; this keeps the UI in sync immediately.
+        const sessionDate = new Date().toISOString().slice(0, 10);
+        let newStreak = currentStreak;
+        if (!lastSessionDate) {
+          newStreak = 1;
+        } else if (lastSessionDate !== sessionDate) {
+          const last = new Date(lastSessionDate);
+          const curr = new Date(sessionDate);
+          const diffDays = Math.round((curr.getTime() - last.getTime()) / 86_400_000);
+          newStreak = diffDays === 1 ? currentStreak + 1 : 1;
+        }
+        setCurrentStreak(newStreak);
+        setLastSessionDate(sessionDate);
+
         if (reason === 'completed' || reason === 'mode_switched') {
+          setLastSessionSeconds(seconds);
           onSessionComplete(seconds);
         }
-        syncStats(newMinutes, newSessions);
+        syncStats(newMinutes, newSessions, sessionDate);
       }
       trackEvent('breathing_session_end', {
         mode: activeMode,
@@ -532,6 +572,8 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     },
     [
       activeMode,
+      currentStreak,
+      lastSessionDate,
       onSessionComplete,
       sessionCommittedSeconds,
       sessionsCompleted,
@@ -1015,6 +1057,25 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     if (typeof window === 'undefined') return;
     const event = new CustomEvent('resonance:run-state', { detail: { running: isRunning } });
     window.dispatchEvent(event);
+  }, [isRunning]);
+
+  // Presence heartbeat: fire on start, then every 60s while running.
+  useEffect(() => {
+    if (!isRunning) return;
+    const token = presenceTokenRef.current;
+    if (!token) return;
+
+    const beat = () => {
+      fetch('/api/v1/presence/heartbeat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ token }),
+      }).catch(() => {});
+    };
+
+    beat();
+    const id = setInterval(beat, 60_000);
+    return () => clearInterval(id);
   }, [isRunning]);
 
   useEffect(() => {
@@ -1525,10 +1586,12 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
           open={showSessionPrompt}
           onOpenChange={setShowSessionPrompt}
           onDismiss={dismissSession}
-          onSuccess={markConverted}
+          onSuccess={() => markConverted(currentStreak)}
           totalMinutes={totalMinutes}
-          sessionSeconds={sessionSeconds}
+          sessionSeconds={lastSessionSeconds}
+          dayStreak={currentStreak}
           variant={conversionVariant}
+          activeMode={activeMode}
         />
       )}
 

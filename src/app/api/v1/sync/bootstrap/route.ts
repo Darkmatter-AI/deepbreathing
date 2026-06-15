@@ -34,6 +34,8 @@ export async function GET() {
       ? {
           totalMinutes: stats.total_minutes,
           sessionsCompleted: stats.sessions_completed,
+          currentStreak: stats.current_streak ?? 0,
+          lastSessionDate: stats.last_session_date ?? null,
           updatedAt: stats.updated_at,
         }
       : null,
