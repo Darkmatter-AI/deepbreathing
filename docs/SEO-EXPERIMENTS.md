@@ -18,6 +18,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-06-15 | [Nofollow + Robots-Disallow ?duration= Timer Deep-Links (Hreflang to Non-Canonical)](#2026-06-15-nofollow--robots-disallow-duration-timer-deep-links-hreflang-to-non-canonical) | 🔄 Implemented |
 | 2026-06-14 | [GSC "Page with redirect" Alert (WNC-20237597) — Reviewed, Benign](#2026-06-14-gsc-page-with-redirect-alert-wnc-20237597--reviewed-benign) | 📊 Snapshot |
 | 2026-06-13 | [Locale Cache Warmer — Health Score Crash Fix (40→92)](#2026-06-13-locale-cache-warmer--health-score-crash-fix) | ✅ Success |
 | 2026-06-13 | [Tummo CTR Title + Meta Rewrite — /breathe/tummo](#2026-06-13-tummo-ctr-title--meta-rewrite) | 🔄 Implemented |
@@ -70,13 +71,41 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-01-06 | [Navy SEAL Content Expansion](#2026-01-06-navy-seal-content-expansion) | ❌ Failed |
 | 2026-01-06 | [CTR Title Rewrites (Batch 1)](#2026-01-06-ctr-title-rewrites-batch-1) | ✅ Success |
 
-**Roll-up by status (50 entries):** ✅ 3 Success · ❌ 9 Failed · ⚪ 12 Inconclusive · 🟡 1 Mixed · ⏳ 0 Waiting · 🔄 18 Implemented · 📊 7 Snapshot. *(2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
+**Roll-up by status (51 entries):** ✅ 3 Success · ❌ 9 Failed · ⚪ 12 Inconclusive · 🟡 1 Mixed · ⏳ 0 Waiting · 🔄 19 Implemented · 📊 7 Snapshot. *(2026-06-15: +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
 
 See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of what worked / failed / strategic insights from the first month of experiments.
 
 ---
 
 ## Active Experiments
+
+### 2026-06-15: Nofollow + Robots-Disallow ?duration= Timer Deep-Links (Hreflang to Non-Canonical)
+
+**Hypothesis:** Ahrefs Site Audit (project 9300406) flags 50 "Hreflang to non-canonical" errors, all on `?duration=60/120/180/300` timer deep-links on locale pages (e.g. `/pt/breathe/coherent?duration=60`). Root cause confirmed against the mass-translate Worker source: the proxy preserves `?duration=` in the canonical + hreflang it injects on locale pages, while the English origin strips it (`index.ts:528` strips for EN vs `index.ts:618-627` keeps for locale) — so a locale page's `en`/`x-default` hreflang points at an English `?duration=` URL that itself canonicalizes to the clean path. These URLs are zero-value (0 GSC + 0 Bing impressions over 28 days, not in the sitemap, not registered mass-translate pages; they exist only as UX timer presets). Fix = stop them being crawl-discovered, via two complementary signals.
+
+**Baseline (2026-06-15, Ahrefs Site Audit project 9300406):**
+- "Hreflang to non-canonical" errors: **50** (the #1 error class — clearing them zeroes the error bucket)
+- Pattern: `?duration=60/120/180/300` on locale pages
+- GSC impressions (28d) for any `?duration=` URL: **0** · Bing: **0**
+- Not in sitemap; no backlinks
+
+**What shipped:**
+1. `src/app/robots.ts` — `disallow` extended with `"/*?duration="` + `"/*&duration="`, preserving the existing `/api/` + `/_vercel/`. `/*` covers locale prefixes; `/*&duration=` pre-empts a future second-param form.
+2. `rel="nofollow"` on 7 standalone `?duration=` `<Link>`s: 1-minute (1), 2-minute (2), 5-minute (1), `for/use-case-page.tsx` holiday branch (3).
+3. Conditional `rel={href?.includes("duration=") ? "nofollow" : undefined}` at 3 data-driven holiday render sites (`quickStarts`, `moments`, `dayPlans.steps`) — those arrays mix duration + clean `/for/*` hrefs, so the conditional nofollows only the 16 duration links and leaves clean internal links followed. `holidayExperiences` has no duration hrefs and is untouched.
+4. Deleted `public/robots.txt` — a stale duplicate that would not carry the new duration rules; `src/app/robots.ts` is the single source of truth.
+5. Confirmed against the mass-translate Worker source that `rel="nofollow"` survives the proxy's anchor rewrite, so it reaches the locale variants.
+
+**Pre-committed success criteria (measure 2026-06-22):**
+- ✅ **Success:** next full Ahrefs crawl shows "Hreflang to non-canonical" ≤5. NOTE: blocked URLs typically re-bucket to an informational "Blocked by robots.txt" rather than vanishing — that counts as success (the hreflang error is resolved).
+- ⚪ **Inconclusive:** 6–20 (partial; Ahrefs may not have completed a full locale recrawl yet).
+- ❌ **Failed:** stays ≥40 after a confirmed full recrawl → Ahrefs is finding them by a path these two signals don't cover, and the durable proxy-side fix is required.
+
+**Caveats:** Clearance is not instant — needs a full post-deploy Ahrefs recrawl; the 50 count predates this fix. The durable proxy-side fix (eliminates the root asymmetry) is to add `duration` to the tenant's `strip_query_params` in mass-translate KV — but that REPLACES the defaults, so the value must include `utm_*,fbclid,gclid,ref,_ga,mc_*`. Requires the mass-translate team to write tenant KV (no `set_site_config` MCP). Logged as a follow-up; not in scope here.
+
+**Status:** 🔄 Implemented (not yet measured)
+
+---
 
 ### 2026-06-14: GSC "Page with redirect" Alert (WNC-20237597) — Reviewed, Benign
 
