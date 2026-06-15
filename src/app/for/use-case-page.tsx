@@ -675,6 +675,7 @@ export function UseCasePage({ slug }: { slug: string }) {
               <>
                 <Link
                   href={`/breathe/${page.breathingPageSlug}?duration=30`}
+                  rel="nofollow"
                   className="rounded-full border px-4 py-2 text-sm font-medium text-card-foreground transition-colors"
                   style={{ borderColor: 'rgba(255,255,255,0.2)', backgroundColor: WINTER_MUTED }}
                 >
@@ -682,6 +683,7 @@ export function UseCasePage({ slug }: { slug: string }) {
                 </Link>
                 <Link
                   href={`/breathe/${page.breathingPageSlug}?duration=60`}
+                  rel="nofollow"
                   className="rounded-full border px-4 py-2 text-sm font-medium text-card-foreground transition-colors"
                   style={{ borderColor: 'rgba(255,255,255,0.2)', backgroundColor: WINTER_MUTED }}
                 >
@@ -689,6 +691,7 @@ export function UseCasePage({ slug }: { slug: string }) {
                 </Link>
                 <Link
                   href={`/breathe/${page.breathingPageSlug}?duration=120`}
+                  rel="nofollow"
                   className="rounded-full border px-4 py-2 text-sm font-medium text-card-foreground transition-colors"
                   style={{ borderColor: 'rgba(255,255,255,0.2)', backgroundColor: WINTER_MUTED }}
                 >

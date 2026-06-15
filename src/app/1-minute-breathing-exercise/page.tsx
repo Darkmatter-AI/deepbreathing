@@ -141,7 +141,7 @@ export default function OneMinuteBreathingExercisePage() {
             Press Start and follow the animation. Four cycles of box breathing take about 1 minute.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
-            <Link href="/breathe/box?duration=60" className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground">
+            <Link href="/breathe/box?duration=60" rel="nofollow" className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground">
               Start 1-minute session
             </Link>
             <ShareButton

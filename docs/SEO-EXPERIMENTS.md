@@ -18,6 +18,9 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-06-15 | [Nofollow + Robots-Disallow ?duration= Timer Deep-Links (Hreflang to Non-Canonical)](#2026-06-15-nofollow--robots-disallow-duration-timer-deep-links-hreflang-to-non-canonical) | 🔄 Implemented |
+| 2026-06-14 | [GSC "Page with redirect" Alert (WNC-20237597) — Reviewed, Benign](#2026-06-14-gsc-page-with-redirect-alert-wnc-20237597--reviewed-benign) | 📊 Snapshot |
+| 2026-06-13 | [Fix "Hreflang to non-canonical" — home-page trailing slash](#2026-06-13-fix-hreflang-to-non-canonical--home-page-trailing-slash) | 🔄 Implemented |
 | 2026-06-13 | [Locale Cache Warmer — Health Score Crash Fix (40→92)](#2026-06-13-locale-cache-warmer--health-score-crash-fix) | ✅ Success |
 | 2026-06-13 | [Tummo CTR Title + Meta Rewrite — /breathe/tummo](#2026-06-13-tummo-ctr-title--meta-rewrite) | 🔄 Implemented |
 | 2026-06-13 | [Owned YouTube Videos + VideoObject Schema on /breathe/* Pages](#2026-06-13-owned-youtube-videos--videoobject-schema) | 🔄 Implemented |
@@ -69,13 +72,70 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-01-06 | [Navy SEAL Content Expansion](#2026-01-06-navy-seal-content-expansion) | ❌ Failed |
 | 2026-01-06 | [CTR Title Rewrites (Batch 1)](#2026-01-06-ctr-title-rewrites-batch-1) | ✅ Success |
 
-**Roll-up by status (49 entries):** ✅ 3 Success · ❌ 9 Failed · ⚪ 12 Inconclusive · 🟡 1 Mixed · ⏳ 0 Waiting · 🔄 18 Implemented · 📊 6 Snapshot. *(2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
+**Roll-up by status (52 entries):** ✅ 3 Success · ❌ 9 Failed · ⚪ 12 Inconclusive · 🟡 1 Mixed · ⏳ 0 Waiting · 🔄 20 Implemented · 📊 7 Snapshot. *(2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
 
 See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of what worked / failed / strategic insights from the first month of experiments.
 
 ---
 
 ## Active Experiments
+
+### 2026-06-15: Nofollow + Robots-Disallow ?duration= Timer Deep-Links (Hreflang to Non-Canonical)
+
+**Hypothesis:** Ahrefs Site Audit (project 9300406) flags 50 "Hreflang to non-canonical" errors, all on `?duration=60/120/180/300` timer deep-links on locale pages (e.g. `/pt/breathe/coherent?duration=60`). Root cause confirmed against the mass-translate Worker source: the proxy preserves `?duration=` in the canonical + hreflang it injects on locale pages, while the English origin strips it (`index.ts:528` strips for EN vs `index.ts:618-627` keeps for locale) — so a locale page's `en`/`x-default` hreflang points at an English `?duration=` URL that itself canonicalizes to the clean path. These URLs are zero-value (0 GSC + 0 Bing impressions over 28 days, not in the sitemap, not registered mass-translate pages; they exist only as UX timer presets). Fix = stop them being crawl-discovered, via two complementary signals.
+
+**Baseline (2026-06-15, Ahrefs Site Audit project 9300406):**
+- "Hreflang to non-canonical" errors: **50** (the #1 error class — clearing them zeroes the error bucket)
+- Pattern: `?duration=60/120/180/300` on locale pages
+- GSC impressions (28d) for any `?duration=` URL: **0** · Bing: **0**
+- Not in sitemap; no backlinks
+
+**What shipped:**
+1. `src/app/robots.ts` — `disallow` extended with `"/*?duration="` + `"/*&duration="`, preserving the existing `/api/` + `/_vercel/`. `/*` covers locale prefixes; `/*&duration=` pre-empts a future second-param form.
+2. `rel="nofollow"` on 7 standalone `?duration=` `<Link>`s: 1-minute (1), 2-minute (2), 5-minute (1), `for/use-case-page.tsx` holiday branch (3).
+3. Conditional `rel={href?.includes("duration=") ? "nofollow" : undefined}` at 3 data-driven holiday render sites (`quickStarts`, `moments`, `dayPlans.steps`) — those arrays mix duration + clean `/for/*` hrefs, so the conditional nofollows only the 16 duration links and leaves clean internal links followed. `holidayExperiences` has no duration hrefs and is untouched.
+4. Deleted `public/robots.txt` — a stale duplicate that would not carry the new duration rules; `src/app/robots.ts` is the single source of truth.
+5. Confirmed against the mass-translate Worker source that `rel="nofollow"` survives the proxy's anchor rewrite, so it reaches the locale variants.
+
+**Pre-committed success criteria (measure 2026-06-22):**
+- ✅ **Success:** next full Ahrefs crawl shows "Hreflang to non-canonical" ≤5. NOTE: blocked URLs typically re-bucket to an informational "Blocked by robots.txt" rather than vanishing — that counts as success (the hreflang error is resolved).
+- ⚪ **Inconclusive:** 6–20 (partial; Ahrefs may not have completed a full locale recrawl yet).
+- ❌ **Failed:** stays ≥40 after a confirmed full recrawl → Ahrefs is finding them by a path these two signals don't cover, and the durable proxy-side fix is required.
+
+**Caveats:** Clearance is not instant — needs a full post-deploy Ahrefs recrawl; the 50 count predates this fix. The durable proxy-side fix (eliminates the root asymmetry) is to add `duration` to the tenant's `strip_query_params` in mass-translate KV — but that REPLACES the defaults, so the value must include `utm_*,fbclid,gclid,ref,_ga,mc_*`. Requires the mass-translate team to write tenant KV (no `set_site_config` MCP). Logged as a follow-up; not in scope here.
+
+**Status:** 🔄 Implemented (not yet measured)
+
+---
+
+### 2026-06-14: GSC "Page with redirect" Alert (WNC-20237597) — Reviewed, Benign
+
+**Trigger:** GSC emailed "New reason preventing your pages from being indexed: Page with redirect" (message `WNC-20237597`). Reviewed in the Page Indexing report + verified each redirect live with curl.
+
+**Finding: informational, not an error. No action taken or needed — and none should be.** "Page with redirect" means Googlebot crawled a URL that 301/302s elsewhere, so it indexes the *destination* instead. None of these are real pages dropping out of the index. Indexed count is healthy at **270** (vs 169 not-indexed across 8 reasons). The alert fired only because the *count* of redirecting URLs crossed a reporting threshold (chart jumped to 27 around Jun 1–8).
+
+**The 27 affected URLs, all redirecting cleanly (1 hop → 200 canonical, verified):**
+
+| Bucket | Count | Example → target |
+|--------|-------|------------------|
+| Double-locale phantoms | 18 | `/de/fr/breathe/breath-of-fire` → `/de/breathe/breath-of-fire` |
+| `/{locale}/languages` | 5 | `/de/languages` → `/languages` |
+| Renamed page (methodology→editorial-policy) | 2 | `/about/methodology` → `/about/editorial-policy` |
+| Host canonical (www / http) | 2 | `https://www.…/` → `https://deepbreathingexercises.com/` |
+
+**Why it spiked (~Jun 1–8):** legacy URLs already in Google's crawl history, re-discovered after (a) the methodology→editorial-policy rename (E-E-A-T work) and (b) the [Locale Cache Warmer fix](#2026-06-13-locale-cache-warmer--health-score-crash-fix) (commit `e366224`) made locale pages crawlable again, so Googlebot re-crawled and re-hit these old variants. The double-locale redirects are the **intended** behavior of the [2026-05-05 double-locale 404 fix](#2026-05-05-fix-5-gsc-404s--double-locale--sub-path-redirects) — they are working as designed.
+
+**Verified not self-inflicted:**
+- Sitemap clean: 325 entries, **zero** double-locale / `/languages` / `/methodology` URLs.
+- Canonical `/de/breathe/*` page emits **no** double-locale links in its HTML.
+
+**Do NOT** click "Validate Fix" — nothing is broken, it just churns the report. The count decays on its own as Google drops stale URLs. **If this WNC alert recurs, it is still benign — don't re-investigate, point here.**
+
+**Adjacent note (not a bug — corrected):** a plain `curl` of a locale interior page returns no `<link rel="canonical">` or `hreflang` tags, but that is **by design** — the mass-translate proxy injects SEO tags only for recognized bot UAs (full-body mode for googlebot/ahrefsbot). Re-checked with a Googlebot UA: `/de/breathe/breath-of-fire` correctly emits a self-canonical **plus a full 7-tag hreflang set** (en-us, es-es, pt-br, fr-fr, de-de, ja-jp, x-default). So locale hreflang/canonical IS present for crawlers. **Always test SSR SEO tags with a bot UA on this site.** The subtler "Hreflang to non-canonical" (50) Ahrefs error from the Locale Cache Warmer follow-ups is owned by the in-flight `~task: hreflang-proxy-review` agent (proxy-side `extraction.ts`/`utils.ts` + `?duration=` discovery sources) — not part of this benign redirect picture.
+
+**Status:** 📊 Reviewed — benign, no action.
+
+---
 
 ### 2026-06-13: Fix "Hreflang to non-canonical" — home-page trailing slash
 
@@ -88,6 +148,8 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 **Commit:** `fix/hreflang-non-canonical` branch — files: `src/lib/seo/sitemap-routes.mjs`, `scripts/tests/sitemap-coverage.test.mjs`.
 
 **Measure after:** 2026-06-20
+
+> **Note (2026-06-15):** Superseded — this did **not** move the number. The re-crawl showed "Hreflang to non-canonical" unchanged at 50; the true root cause was `?duration=` timer-param URLs on locale pages, fixed in the [2026-06-15 entry](#2026-06-15-nofollow--robots-disallow-duration-timer-deep-links-hreflang-to-non-canonical). Kept for history; formal status to be settled on the 2026-06-20 measure date.
 
 🔄 Implemented
 
