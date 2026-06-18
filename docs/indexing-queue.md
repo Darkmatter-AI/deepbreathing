@@ -15,6 +15,13 @@ submission date back.
   - `/breathing-app/*`, `/4-7-8-breathing-timer/*` → handled by sub-path collapse rules
 - **Next checkpoint**: 2026-05-19 (scheduled task). Expect "Discovered not indexed" <50 if processing normally.
 
+### 2026-06-18 one-time flush (GSC-outage + retranslation recovery)
+
+Re-submitted **148 URLs** to GSC + Bing via the mass-translate Indexing API (`request_indexing` / `submit_urls_bing`):
+- **20 brand-new locale pages** that were in the live sitemap (325 URLs) but never queued: de/es/fr/ja/pt × {`about/abi`, `about/editorial-policy`, `breathe/9d-breathwork`, `breathe/hope-cartel-9d-breathwork`} — the English parents shipped 2026-06-13 but their translations weren't added here. Added as rows.
+- **128 pages modified 2026-06-13→15** (sitemap `<lastmod>`): the Tummo CTR rewrite (6 pages, 06-13) + the 133-page 06-15 deploy/retranslation batch. Their recrawl signals were lost while **GSC OAuth was blind 2026-06-13→18** (re-authed + app published to production on 06-18, see SEO-EXPERIMENTS/runbook). Already-queued, so dates left as-is.
+- Throttled to ~1 req/sec after hitting the mass-translate key's 429 rate limit. **One-time recovery, not a recurring job.** Queue URLs == sitemap URLs after this run (pending: 0).
+
 ## Historical state (as of 2026-04-20)
 
 - 180 / 307 indexed, 127 pending.
@@ -54,6 +61,26 @@ submission date back.
 | 1 | https://deepbreathingexercises.com/breathe/hope-cartel-9d-breathwork |  | 2026-06-13 | 2026-06-13 |
 | 2 | https://deepbreathingexercises.com/about/abi |  | 2026-06-13 | 2026-06-13 |
 | 2 | https://deepbreathingexercises.com/about/editorial-policy |  | 2026-06-13 | 2026-06-13 |
+| 2 | https://deepbreathingexercises.com/es/breathe/9d-breathwork |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/de/breathe/9d-breathwork |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/fr/breathe/9d-breathwork |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/ja/breathe/9d-breathwork |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/pt/breathe/9d-breathwork |  | 2026-06-18 | 2026-06-18 |
+| 2 | https://deepbreathingexercises.com/es/breathe/hope-cartel-9d-breathwork |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/de/breathe/hope-cartel-9d-breathwork |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/fr/breathe/hope-cartel-9d-breathwork |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/ja/breathe/hope-cartel-9d-breathwork |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/pt/breathe/hope-cartel-9d-breathwork |  | 2026-06-18 | 2026-06-18 |
+| 2 | https://deepbreathingexercises.com/es/about/abi |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/de/about/abi |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/fr/about/abi |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/ja/about/abi |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/pt/about/abi |  | 2026-06-18 | 2026-06-18 |
+| 2 | https://deepbreathingexercises.com/es/about/editorial-policy |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/de/about/editorial-policy |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/fr/about/editorial-policy |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/ja/about/editorial-policy |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/pt/about/editorial-policy |  | 2026-06-18 | 2026-06-18 |
 | 1 | https://deepbreathingexercises.com | ✓ |  |  |
 | 1 | https://deepbreathingexercises.com/es/1-minute-breathing-exercise | ✓ |  |  |
 | 1 | https://deepbreathingexercises.com/es/2-minute-breathing-exercise | ✓ |  |  |
