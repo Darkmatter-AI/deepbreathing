@@ -54,6 +54,26 @@ submission date back.
 | 1 | https://deepbreathingexercises.com/breathe/hope-cartel-9d-breathwork |  | 2026-06-13 | 2026-06-13 |
 | 2 | https://deepbreathingexercises.com/about/abi |  | 2026-06-13 | 2026-06-13 |
 | 2 | https://deepbreathingexercises.com/about/editorial-policy |  | 2026-06-13 | 2026-06-13 |
+| 2 | https://deepbreathingexercises.com/es/breathe/9d-breathwork |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/de/breathe/9d-breathwork |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/fr/breathe/9d-breathwork |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/ja/breathe/9d-breathwork |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/pt/breathe/9d-breathwork |  | 2026-06-18 | 2026-06-18 |
+| 2 | https://deepbreathingexercises.com/es/breathe/hope-cartel-9d-breathwork |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/de/breathe/hope-cartel-9d-breathwork |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/fr/breathe/hope-cartel-9d-breathwork |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/ja/breathe/hope-cartel-9d-breathwork |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/pt/breathe/hope-cartel-9d-breathwork |  | 2026-06-18 | 2026-06-18 |
+| 2 | https://deepbreathingexercises.com/es/about/abi |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/de/about/abi |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/fr/about/abi |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/ja/about/abi |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/pt/about/abi |  | 2026-06-18 | 2026-06-18 |
+| 2 | https://deepbreathingexercises.com/es/about/editorial-policy |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/de/about/editorial-policy |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/fr/about/editorial-policy |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/ja/about/editorial-policy |  | 2026-06-18 | 2026-06-18 |
+| 3 | https://deepbreathingexercises.com/pt/about/editorial-policy |  | 2026-06-18 | 2026-06-18 |
 | 1 | https://deepbreathingexercises.com | ✓ |  |  |
 | 1 | https://deepbreathingexercises.com/es/1-minute-breathing-exercise | ✓ |  |  |
 | 1 | https://deepbreathingexercises.com/es/2-minute-breathing-exercise | ✓ |  |  |
