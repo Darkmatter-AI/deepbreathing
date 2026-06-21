@@ -44,15 +44,16 @@ export default async function StatsPage() {
     : null;
   const currentMode: string | null = settings?.mode ?? null;
 
-  // Per-day practice history for the calendar. Pull a window wide enough to cover
-  // the current month in any timezone. Falls back to the streak window if the
-  // user_active_days table isn't migrated/backfilled yet, so the page never 500s.
+  // Per-day practice history for the breath garden. Pull ~20 weeks so the 18-week
+  // garden fills in any timezone (18×7 days + the leading Sunday + slack). Falls
+  // back to the streak window if the user_active_days table isn't migrated/
+  // backfilled yet, so the page never 500s.
   let dbDays: string[] = [];
   try {
     const daysResult = await pool.query(
       `SELECT to_char(day, 'YYYY-MM-DD') AS day
        FROM user_active_days
-       WHERE user_id = $1 AND day >= CURRENT_DATE - interval '62 days'`,
+       WHERE user_id = $1 AND day >= CURRENT_DATE - interval '140 days'`,
       [userId]
     );
     dbDays = daysResult.rows.map((r) => r.day as string);
@@ -71,8 +72,6 @@ export default async function StatsPage() {
       lastSessionDate={lastSessionDate}
       currentMode={currentMode}
       activeDays={activeDays}
-      userName={session.user.name ?? session.user.email}
-      userImage={session.user.image ?? null}
     />
   );
 }

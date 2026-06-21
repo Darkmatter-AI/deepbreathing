@@ -1,19 +1,51 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { Flame, Timer, Activity, Wind } from "lucide-react";
+import { Flame, Timer, Activity, Sprout } from "lucide-react";
 import {
   computeLiveStreak,
-  buildMonthGrid,
+  computeLongestRun,
+  buildGardenWeeks,
+  last7Days,
 } from "@/lib/stats/streak-calendar";
+import { BREATHING_PATTERNS } from "@/components/resonance/constants";
+import type { BreathingPattern, ModeName } from "@/components/resonance/types";
 import { SignInSheet } from "@/components/auth/sign-in-sheet";
+import styles from "./stats.module.css";
 
-const MONTH_NAMES = [
-  "January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December",
+// The breath garden renders this many week-columns (GitHub-contributions style).
+const GARDEN_WEEKS = 18;
+// Where "Begin session" / "Practice again" lead. The home app restores the
+// user's last pattern from their synced settings, so no deep-link param is needed.
+const APP_HREF = "/";
+
+const SHORT_MONTHS = [
+  "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
 ];
-const WEEKDAY_LABELS = ["S", "M", "T", "W", "T", "F", "S"];
+const SHORT_DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+/** "Mon, Jun 15" from a YYYY-MM-DD string (UTC, matching the DB date semantics). */
+function formatDayLabel(dateStr: string): string {
+  const d = new Date(`${dateStr}T00:00:00Z`);
+  return `${SHORT_DAYS[d.getUTCDay()]}, ${SHORT_MONTHS[d.getUTCMonth()]} ${d.getUTCDate()}`;
+}
+
+/** Concise cadence line, e.g. "5.5s in · 5.5s out" or "4s in · 4s hold · 4s out · 4s hold". */
+function patternCadence(p: BreathingPattern): string {
+  const parts: string[] = [`${p.inhale}s in`];
+  if (p.inhale2) parts.push(`${p.inhale2}s in`);
+  if (p.holdIn) parts.push(`${p.holdIn}s hold`);
+  parts.push(`${p.exhale}s out`);
+  if (p.holdOut) parts.push(`${p.holdOut}s hold`);
+  return parts.join(" · ");
+}
+
+/** The benefit phrase from a pattern description, dropping the "(4-4-4-4)" tail. */
+function patternBenefit(p: BreathingPattern): string {
+  return p.description.replace(/\s*\(.*\)\s*$/, "").trim();
+}
 
 interface StatsDisplayProps {
   totalMinutes: number;
@@ -22,8 +54,6 @@ interface StatsDisplayProps {
   lastSessionDate: string | null;
   currentMode: string | null;
   activeDays: string[];
-  userName: string;
-  userImage: string | null;
 }
 
 export function StatsDisplay({
@@ -33,151 +63,252 @@ export function StatsDisplay({
   lastSessionDate,
   currentMode,
   activeDays,
-  userName,
-  userImage,
 }: StatsDisplayProps) {
-  // Start with UTC for hydration consistency, update to local time after mount.
-  // sv-SE locale produces YYYY-MM-DD which matches the DB date format.
+  // UTC on the server for hydration parity, local after mount so the garden and
+  // streak align with the user's real "today" (sv-SE yields YYYY-MM-DD).
   const [today, setToday] = useState(() => new Date().toISOString().slice(0, 10));
   useEffect(() => {
     setToday(new Date().toLocaleDateString("sv-SE"));
   }, []);
 
-  const liveStreak = computeLiveStreak(currentStreak, lastSessionDate, today);
+  const [hover, setHover] = useState<{ label: string; active: boolean } | null>(null);
 
-  const [yearStr, monthStr] = today.split("-");
-  const year = Number(yearStr);
-  const month = Number(monthStr); // 1-12
-  const weeks = buildMonthGrid(year, month, activeDays, today);
-  const monthLabel = `${MONTH_NAMES[month - 1]} ${year}`;
+  const liveStreak = computeLiveStreak(currentStreak, lastSessionDate, today);
+  const longestRun = useMemo(() => computeLongestRun(activeDays), [activeDays]);
+  const weeks = useMemo(
+    () => buildGardenWeeks(activeDays, today, GARDEN_WEEKS),
+    [activeDays, today]
+  );
+  const week = useMemo(() => last7Days(activeDays, today), [activeDays, today]);
+  const weekActiveCount = week.filter((d) => d.active).length;
 
   const hours = Math.floor(totalMinutes / 60);
   const mins = totalMinutes % 60;
   const timeLabel =
-    hours > 0
-      ? `${hours}h ${mins > 0 ? `${mins}m` : ""}`.trim()
-      : `${totalMinutes}m`;
+    hours > 0 ? `${hours}h${mins > 0 ? ` ${mins}m` : ""}` : `${totalMinutes}m`;
 
-  const firstName = userName.split(" ")[0];
-  const initials = (firstName[0] ?? "?").toUpperCase();
+  // Streak reframe — a stale or zero streak reads as a fresh start, never a sad "0".
+  const streakActive = liveStreak > 0;
+  const streakBig = streakActive ? String(liveStreak) : "Today";
+  const streakUnit = streakActive ? (liveStreak === 1 ? "day" : "days") : "";
+  const streakLabel = streakActive ? "Day streak" : "Fresh start";
+  const streakSub = streakActive
+    ? `Longest: ${longestRun} ${longestRun === 1 ? "day" : "days"}`
+    : "One breath plants a new streak";
+
+  // Favorite pattern from the user's synced mode (no per-pattern counts are stored).
+  const pattern: BreathingPattern | null =
+    currentMode &&
+    Object.prototype.hasOwnProperty.call(BREATHING_PATTERNS, currentMode)
+      ? BREATHING_PATTERNS[currentMode as ModeName]
+      : null;
+
+  const readout = hover
+    ? `${hover.label} · ${hover.active ? "practiced" : "a day of rest"}`
+    : "Hover a day to revisit it";
 
   return (
-    <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 lg:px-8">
-      {/* Header with clickable avatar */}
-      <div className="mb-8 flex items-center gap-4">
-        <Link
-          href="/"
-          aria-label="Back to breathing"
-          className="block shrink-0 rounded-full ring-2 ring-transparent transition hover:ring-primary/40 focus-visible:ring-primary/60"
-        >
-          {userImage ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              src={userImage}
-              alt={firstName}
-              width={56}
-              height={56}
-              className="h-14 w-14 rounded-full object-cover"
-              referrerPolicy="no-referrer"
-            />
-          ) : (
-            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/15 text-lg font-semibold text-primary">
-              {initials}
+    <div className={styles.page}>
+      <div className={styles.bg} aria-hidden />
+      <div className={styles.orbA} aria-hidden />
+      <div className={styles.orbB} aria-hidden />
+
+      <div className={styles.inner}>
+        {/* Header */}
+        <header className={styles.header}>
+          <Link href={APP_HREF} aria-label="Back to breathing" className={styles.orbWrap}>
+            <span className={styles.orbGlow} aria-hidden />
+            <span className={styles.orb} aria-hidden />
+          </Link>
+          <div className={styles.headText}>
+            <div className={styles.eyebrow}>Practice log</div>
+            <h1 className={styles.h1}>Your practice</h1>
+          </div>
+          <Link href={APP_HREF} className={styles.cta}>
+            Begin session
+            <span className={styles.ctaArrow} aria-hidden>
+              &rarr;
+            </span>
+          </Link>
+        </header>
+
+        {/* Stat tiles */}
+        <section className={styles.tiles}>
+          <div className={`${styles.card} ${styles.tile}`}>
+            <div className={styles.tileHead}>
+              <Timer size={20} />
+              <span className={styles.tileLabel}>Total time</span>
             </div>
-          )}
-        </Link>
-        <div>
-          <h1 className="text-2xl font-semibold text-foreground">Your practice</h1>
-          <p className="mt-0.5 text-sm text-muted-foreground">
-            Welcome back, {firstName}
-          </p>
-        </div>
-      </div>
+            <div className={styles.tileValue}>{timeLabel}</div>
+            <div className={styles.tileSub}>across all sessions</div>
+          </div>
 
-      {/* Stat cards */}
-      <div className="mb-8 grid grid-cols-3 gap-3">
-        <div className="glow-card rounded-[24px] border border-border bg-card p-4 text-center">
-          <Timer className="mx-auto mb-2 text-primary" size={20} />
-          <p className="text-2xl font-semibold tabular-nums text-card-foreground">
-            {timeLabel}
-          </p>
-          <p className="mt-0.5 text-xs text-muted-foreground">total time</p>
-        </div>
-
-        <div className="glow-card rounded-[24px] border border-border bg-card p-4 text-center">
-          <Activity className="mx-auto mb-2 text-primary" size={20} />
-          <p className="text-2xl font-semibold tabular-nums text-card-foreground">
-            {sessionsCompleted}
-          </p>
-          <p className="mt-0.5 text-xs text-muted-foreground">sessions</p>
-        </div>
-
-        <div className="glow-card rounded-[24px] border border-border bg-card p-4 text-center">
-          <Flame
-            className={
-              liveStreak > 0
-                ? "mx-auto mb-2 text-orange-400"
-                : "mx-auto mb-2 text-muted-foreground"
-            }
-            size={20}
-          />
-          <p className="text-2xl font-semibold tabular-nums text-card-foreground">
-            {liveStreak}
-          </p>
-          <p className="mt-0.5 text-xs text-muted-foreground">day streak</p>
-        </div>
-      </div>
-
-      {/* Full-month practice calendar */}
-      <div className="glow-card mb-6 rounded-[24px] border border-border bg-card p-5">
-        <h2 className="mb-4 text-sm font-medium text-card-foreground">{monthLabel}</h2>
-        <div className="grid grid-cols-7 gap-1.5">
-          {WEEKDAY_LABELS.map((label, i) => (
-            <div
-              key={`wd-${i}`}
-              className="pb-1 text-center text-[10px] font-medium uppercase text-muted-foreground/60"
-            >
-              {label}
+          <div className={`${styles.card} ${styles.tile}`}>
+            <div className={styles.tileHead}>
+              <Activity size={20} />
+              <span className={styles.tileLabel}>Sessions</span>
             </div>
-          ))}
-          {weeks.flat().map((cell, i) =>
-            cell === null ? (
-              <div key={`pad-${i}`} className="aspect-square" />
-            ) : (
-              <div
-                key={cell.date}
-                title={cell.date}
-                className={[
-                  "flex aspect-square items-center justify-center rounded-lg text-[11px] tabular-nums",
-                  cell.active
-                    ? "bg-primary font-semibold text-primary-foreground"
-                    : "bg-muted/50 text-muted-foreground/70",
-                  cell.isToday && !cell.active
-                    ? "ring-1 ring-inset ring-primary/50"
-                    : "",
-                ].join(" ")}
-              >
-                {Number(cell.date.slice(8))}
-              </div>
-            )
-          )}
-        </div>
-      </div>
-
-      {/* Favorite pattern */}
-      {currentMode && (
-        <div className="glow-card rounded-[24px] border border-border bg-card p-5">
-          <div className="flex items-center gap-3">
-            <Wind className="text-primary" size={18} />
-            <div>
-              <p className="text-xs text-muted-foreground">Favorite pattern</p>
-              <p className="text-sm font-medium text-card-foreground">
-                {currentMode}
-              </p>
+            <div className={styles.tileValue}>{sessionsCompleted}</div>
+            <div className={styles.tileSub}>
+              {sessionsCompleted > 0 ? "keep the rhythm going" : "your first awaits"}
             </div>
           </div>
-        </div>
-      )}
+
+          <div className={`${styles.card} ${styles.tile} ${styles.tileWarm}`}>
+            <div className={`${styles.tileHead} ${styles.tileHeadWarm}`}>
+              <Sprout size={20} />
+              <span className={`${styles.tileLabel} ${styles.tileLabelWarm}`}>
+                {streakLabel}
+              </span>
+            </div>
+            <div className={styles.streakRow}>
+              <div className={styles.tileValue}>{streakBig}</div>
+              {streakUnit && <div className={styles.streakUnit}>{streakUnit}</div>}
+            </div>
+            <div className={styles.tileSub}>{streakSub}</div>
+          </div>
+        </section>
+
+        {/* Breath garden */}
+        <section className={`${styles.card} ${styles.garden}`}>
+          <div className={styles.gardenHead}>
+            <div>
+              <div className={styles.eyebrow}>Practice history</div>
+              <h2 className={styles.gardenTitle}>Your breath garden</h2>
+            </div>
+            <div className={styles.readout}>
+              <span
+                className={`${styles.readoutDot} ${hover?.active ? styles.readoutDotActive : ""}`}
+                aria-hidden
+              />
+              <span className={styles.readoutText}>{readout}</span>
+            </div>
+          </div>
+
+          <div className={styles.gardenScroll}>
+            <div className={styles.gardenGrid}>
+              <div className={styles.monthRow}>
+                {weeks.map((w, i) => (
+                  <div key={`m-${i}`} className={styles.monthLabel}>
+                    {w.monthLabel}
+                  </div>
+                ))}
+              </div>
+              <div className={styles.weeksRow}>
+                <div className={styles.weekdayCol}>
+                  <div className={styles.weekdaySpacer} />
+                  <div className={styles.weekdayLabel}>Mon</div>
+                  <div className={styles.weekdaySpacer} />
+                  <div className={styles.weekdayLabel}>Wed</div>
+                  <div className={styles.weekdaySpacer} />
+                  <div className={styles.weekdayLabel}>Fri</div>
+                  <div className={styles.weekdaySpacer} />
+                </div>
+                {weeks.map((w, wi) => (
+                  <div key={`w-${wi}`} className={styles.week}>
+                    {w.days.map((day) => {
+                      const cls = [
+                        styles.day,
+                        day.future ? styles.dayFuture : "",
+                        day.active ? styles.dayActive : "",
+                        day.isToday ? styles.dayToday : "",
+                      ]
+                        .filter(Boolean)
+                        .join(" ");
+                      return (
+                        <div
+                          key={day.date}
+                          className={cls}
+                          title={day.future ? undefined : formatDayLabel(day.date)}
+                          onMouseEnter={
+                            day.future
+                              ? undefined
+                              : () =>
+                                  setHover({
+                                    label: formatDayLabel(day.date),
+                                    active: day.active,
+                                  })
+                          }
+                          onMouseLeave={() => setHover(null)}
+                        />
+                      );
+                    })}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.legend}>
+            <span>Rest</span>
+            <span className={styles.legendSwatch} style={{ background: "var(--yp-rest)" }} />
+            <span className={`${styles.legendSwatch} ${styles.dayActive}`} />
+            <span>Practiced</span>
+          </div>
+        </section>
+
+        {/* Bottom row */}
+        <section className={styles.bottom}>
+          {pattern && (
+            <div className={`${styles.card} ${styles.panel}`}>
+              <div className={styles.panelEyebrow}>Favorite pattern</div>
+              <div className={styles.favRow}>
+                <div className={styles.favOrbWrap}>
+                  <span
+                    className={styles.favOrbGlow}
+                    style={{ background: pattern.color }}
+                    aria-hidden
+                  />
+                  <span
+                    className={styles.favOrb}
+                    style={{ background: pattern.color }}
+                    aria-hidden
+                  />
+                </div>
+                <div>
+                  <div className={styles.favName}>{pattern.name}</div>
+                  <div className={styles.favCadence}>{patternCadence(pattern)}</div>
+                </div>
+              </div>
+              <div className={styles.favFoot}>
+                <span className={styles.favCount}>{patternBenefit(pattern)}</span>
+                <Link href={APP_HREF} className={styles.favCta}>
+                  Practice again &rarr;
+                </Link>
+              </div>
+            </div>
+          )}
+
+          <div className={`${styles.card} ${styles.panel}`}>
+            <div className={styles.weekHead}>
+              <div className={styles.panelEyebrow} style={{ marginBottom: 0 }}>
+                Last 7 days
+              </div>
+              <div className={styles.weekSub}>{weekActiveCount} of 7 days</div>
+            </div>
+            <div className={styles.strip}>
+              {week.map((d) => (
+                <div key={d.date} className={styles.stripDay} title={formatDayLabel(d.date)}>
+                  <div
+                    className={[
+                      styles.stripPill,
+                      d.active ? styles.stripPillActive : "",
+                      d.isToday ? styles.stripPillToday : "",
+                    ]
+                      .filter(Boolean)
+                      .join(" ")}
+                  />
+                  <span
+                    className={`${styles.stripLabel} ${d.isToday ? styles.stripLabelToday : ""}`}
+                  >
+                    {d.label}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }
