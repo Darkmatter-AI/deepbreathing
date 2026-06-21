@@ -75,8 +75,8 @@ export async function POST(request: NextRequest) {
       try {
         await pool.query(
           `INSERT INTO user_active_days (user_id, day)
-           SELECT $1, ($2::date - g.offset)::date
-           FROM generate_series(0, $3 - 1) AS g(offset)
+           SELECT $1, ($2::date - g.n)::date
+           FROM generate_series(0, $3 - 1) AS g(n)
            ON CONFLICT (user_id, day) DO NOTHING`,
           [userId, lastSessionDate, guestStreak]
         );

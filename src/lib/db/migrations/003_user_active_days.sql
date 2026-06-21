@@ -23,9 +23,9 @@ CREATE INDEX IF NOT EXISTS idx_user_active_days_user_day
 INSERT INTO user_active_days (user_id, day)
 SELECT
   s.user_id,
-  (s.last_session_date - (g.offset))::date AS day
+  (s.last_session_date - g.n)::date AS day
 FROM user_stats s
-CROSS JOIN LATERAL generate_series(0, GREATEST(s.current_streak, 1) - 1) AS g(offset)
+CROSS JOIN LATERAL generate_series(0, GREATEST(s.current_streak, 1) - 1) AS g(n)
 WHERE s.last_session_date IS NOT NULL
   AND s.current_streak > 0
 ON CONFLICT (user_id, day) DO NOTHING;
