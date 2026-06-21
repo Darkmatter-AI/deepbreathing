@@ -4,7 +4,9 @@ import { magicLink } from "better-auth/plugins";
 import { Pool } from "pg";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+function getResend() {
+  return new Resend(process.env.RESEND_API_KEY);
+}
 const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 
 async function isSuppressed(email: string): Promise<boolean> {
@@ -52,7 +54,7 @@ export const auth = betterAuth({
         after: async (user) => {
           try {
             if (await isSuppressed(user.email)) return;
-            await resend.emails.send({
+            await getResend().emails.send({
               from: "Abi from Deep Breathing Exercises <abi@deepbreathingexercises.com>",
               to: user.email,
               subject: "Welcome, glad you're here",
@@ -76,7 +78,7 @@ export const auth = betterAuth({
     magicLink({
       sendMagicLink: async ({ email, url }) => {
         if (await isSuppressed(email)) return;
-        await resend.emails.send({
+        await getResend().emails.send({
           from: "Deep Breathing Exercises <noreply@deepbreathingexercises.com>",
           to: email,
           subject: "Your sign-in link",

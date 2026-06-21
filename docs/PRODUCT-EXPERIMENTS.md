@@ -26,18 +26,19 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-06-14 | [Conversion Prompt C (loss_aversion), 100% challenger](#2026-06-14-conversion-prompt-c-loss_aversion-100-challenger) | 🔄 Implemented |
 | 2026-06-01 | [Fix `conversion_prompt_shown` double-fire (impure setState updaters)](#2026-06-01-fix-conversion_prompt_shown-double-fire-impure-setstate-updaters) | 🔄 Implemented |
 | 2026-06-01 | [Conversion Prompt B (social proof + personal stats), 100% challenger](#2026-06-01-conversion-prompt-b-social-proof--personal-stats-100-challenger) | ⏸️ Paused (→ Prompt C; social proof made real + merged, dormant) |
+| 2026-05-17 | [Resonance audio v2 — body-resonance, breath-coupled bed, session arc, eyes-closed mode](#2026-05-17-resonance-audio-v2--body-resonance-breath-coupled-bed-session-arc-eyes-closed-mode) | 🔄 Implemented |
 | 2026-05-12 | [Direct +47% WoW — hypothesis: organic shares from PT/DE translations](#2026-05-12-direct-47-wow--hypothesis-organic-shares-from-ptde-translations) | 🟡 Inconclusive |
 | 2026-05-12 | [UTM-tag share buttons (attribute outbound shares back to GA4)](#2026-05-12-utm-tag-share-buttons-attribute-outbound-shares-back-to-ga4) | 🔄 Implemented |
 | 2026-05-11 | [Mobile homepage: pills mode picker + full-screen orb + restore hero text](#2026-05-11-mobile-homepage-pills-mode-picker--full-screen-orb--restore-hero-text) | 🔄 Implemented |
 | 2026-05-08 | [Unify session-end events + commit-on-pause](#2026-05-08-unify-session-end-events--commit-on-pause) | 🔄 Implemented |
-| 2026-05-05 | [Engaged-Minutes Tracking — Fix Double-Counting + Stop-Event Sync](#2026-05-05-engaged-minutes-tracking--fix-double-counting--stop-event-sync) | 🔄 Implemented |
-| 2026-05-05 | [GA4 User Identification (user_id + signed_up property)](#2026-05-05-ga4-user-identification-user_id--signed_up-property) | 🔄 Implemented |
-| 2026-05-05 | [Tap-to-Pause Hint Inside Orb](#2026-05-05-tap-to-pause-hint-inside-orb) | 🔄 Implemented |
+| 2026-05-05 | [Engaged-Minutes Tracking — Fix Double-Counting + Stop-Event Sync](#2026-05-05-engaged-minutes-tracking--fix-double-counting--stop-event-sync) | 🔄 Implemented (read 2026-05-18, verdict 2026-06-02) |
+| 2026-05-05 | [GA4 User Identification (user_id + signed_up property)](#2026-05-05-ga4-user-identification-user_id--signed_up-property) | ✅ Success |
+| 2026-05-05 | [Tap-to-Pause Hint Inside Orb](#2026-05-05-tap-to-pause-hint-inside-orb) | ❌ Failed |
 | 2026-04-27 | [Duration Chips Below Orb](#2026-04-27-duration-chips-below-orb) | 🔄 Implemented |
 | 2026-04-27 | [Mobile Hero Above the Fold](#2026-04-27-mobile-hero-above-the-fold) | 🔄 Implemented |
 | 2026-04-27 | [page_viewed_breathing Event + sessions_completed Sync Fix](#2026-04-27-page_viewed_breathing-event--sessions_completed-sync-fix) | 🔄 Implemented |
 
-**Roll-up by status (12 entries):** 🔄 10 Implemented · ⏸️ 1 Paused (Conversion Prompt B, superseded by Prompt C) · 🟡 1 Inconclusive (the 2026-05-12 Direct surge). First read on the 2026-05-19 checkpoint, full read 2026-06-02; mobile-redesign + UTM-tagging reads 2026-05-22 / 2026-06-05.
+**Roll-up by status (13 entries):** 🔄 11 Implemented · ⏸️ 1 Paused (Conversion Prompt B, superseded by Prompt C) · 🟡 1 Inconclusive (the 2026-05-12 Direct surge). First read on the 2026-05-19 checkpoint, full read 2026-06-02; mobile-redesign + UTM-tagging reads 2026-05-22 / 2026-06-05.
 
 See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state, [docs/UX-BACKLOG.md](UX-BACKLOG.md) for what's next, [docs/runbooks/weekly-funnel-refresh.md](runbooks/weekly-funnel-refresh.md) for how to pull the numbers.
 
@@ -122,6 +123,51 @@ So do **not** compare post-fix rates against the pre-fix logged baseline. Recomp
 - **The presence heartbeat + streak sync are always-on (not gated on the active variant)**, so the real count/streak data accumulates in the background even while Prompt B's sheet is dark behind Prompt C — so B is ready with real numbers if revived. Migration `002` is applied at this deploy (additive, `IF NOT EXISTS`).
 
 **Status:** ⏸️ **Paused 2026-06-14, code merged 2026-06-15** — superseded by [Conversion Prompt C (loss_aversion)](#2026-06-14-conversion-prompt-c-loss_aversion-100-challenger) before this entry's 2026-06-29 verdict. Rationale: the (then-simulated) social proof was the leading suspect for *suppressing* intent (early Jun 2–7 read was directionally below the honest control), and at ~52 impressions/wk this arm couldn't reach significance anyway. The real-social-proof rebuild above is now **merged but dormant** — its prompt isn't shown (Prompt C is the active challenger), but its presence/streak infra runs live so the data is real if B is revived. **The pre-committed criteria above are retained, not relitigated** — if Prompt B is revived, it resumes against them. _Originally: 🔄 Implemented — shipped to prod 2026-06-01 (simulated); measure-after 2026-06-15 (first read), 2026-06-29 (verdict)._
+
+---
+
+### 2026-05-17: Resonance audio v2 — body-resonance, breath-coupled bed, session arc, eyes-closed mode
+
+**Hypothesis:** The current Resonance audio engine sounds "in the head" rather than "in the body" and doesn't evolve across a session. A bundled v2 — quality fixes (reverb cache bug, output compressor, hue-based root notes), body layers (sub-bass, breath-coupled pink-noise bed), session-arc evolution on the drone, and an opt-in eyes-closed mode that adds a phase-length tonal envelope — should raise the perceived quality enough to lift two funnel signals: **engaged minutes per session** (richer, evolving texture → users stay longer) and **return rate** (better felt experience → more "I'll come back to this"). Tracked as Linear epic [DAR-377](https://linear.app/darkmatterlab/issue/DAR-377/epic-improve-resonance-audio-engine).
+
+The "audio audit before building" discipline (see [memory/project_resonance_audio_audit.md](https://github.com/abiassi/deepbreathing/blob/main/.claude-memory/) — internal) confirmed that 8D HRTF panning, per-mode/per-phase cue presets, Voss-McCartney pink noise, and breath-direction pitch/filter cues are already shipping. v2 builds on that — does NOT replace it.
+
+**Baseline (7d May 1–7, 2026, from [FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md)):**
+- `breathing_session_start`: 119 users (7d)
+- start → complete: 21.0% (25 users)
+- start → pause: 47.9% — proxy for "tapped pause but didn't come back / didn't enjoy it enough to finish"
+- Median session length: not directly available; using `engaged_minutes` proxy from GA4 + DB. Top engaged user (eugene): 168 min lifetime.
+- `mode_switch`: 2 (1.7% of starts) — most users stay on the default mode for their landing page
+- Return rate: 53% of signups active in last 14d, 65% returned after day 1 (small N=17)
+- Mobile split not pulled in 2026-05-08 refresh
+
+**Change:**
+- Branch: `audio-v2-overnight`
+- Commits: forthcoming (one per sub-issue, see Linear DAR-378 through DAR-386)
+- Files: `src/components/resonance/services/audioService.ts`, `src/components/resonance/Resonance.tsx`, `src/app/embed/embed-generator.tsx`
+- **Quality fixes (always-on, invisible to user):** reverb cache keyed by `(duration, decay)` so each per-mode preset gets its intended IR; `DynamicsCompressorNode` on the output bus prevents clipping when layers stack; hue-based root-note mapping so all 12 modes get deliberate tuning instead of falling back to A2.
+- **Texture additions (always-on, perceptible):** sub-bass layer one octave below drone root (very low gain, omnidirectional, ~65 Hz on a C3 drone); breath-coupled low-pass filter on the pink-noise bed (Relax + Coherent only — the bed now breathes with the user); session-arc evolution that slowly drifts the drone root down a 5th, slows LFOs, and slows the 8D orbit over the first 4 minutes — invisible moment-to-moment but the 5-min session sounds noticeably different from the 30-second one.
+- **New opt-in mode (eyes-closed):** toggle in Settings panel, persists in localStorage, round-trips via `?eyesClosed=1` URL param. Fades visualizer + UI chrome to near-black over ~2s, boosts cue audibility, and adds a phase-length tonal envelope that swells through the inhale and decays through the exhale — currently the only place the envelope is enabled (gated behind eyes-closed for measurement isolation; can broaden later if it lands well).
+- **Binaural opt-out:** toggle in Settings panel, persists in localStorage, round-trips via `?binaural=0`. Default remains ON (matches current behavior — no surprise). Help text recommends headphones.
+- **Embed compatibility:** all new URL params (`?eyesClosed=`, `?binaural=`) are additive — existing `?duration=` and `?theme=` embed URLs continue to work unchanged. Embed generator UI updated to expose the two new toggles for embedders who want them.
+
+**Pre-committed success criteria (read 2026-05-31, verdict 2026-06-14):**
+
+This is a perceptual/qualitative change, so the funnel signals are noisier than a UI redesign. Pre-committing leading indicators rather than a single threshold.
+
+- ✅ **Success if any 2 of these 3 move** by 2026-06-14 vs the 2026-05-01–07 baseline:
+  - Median session length (across all starts in the window) up ≥10%. Hypothesis: session-arc + sub-bass + breath-coupled noise make staying past minute 2 more compelling.
+  - Eyes-closed mode opt-in rate ≥8% of returning users (those with ≥2 starts in the window). Hypothesis: the immersive payoff is real enough that people opt in once they've tried it without.
+  - Pause → no-resume ratio drops ≥5 pp (from the current ~55% of pauses that don't lead to resume, inferred from the 47.9% pause vs 21.0% complete gap). Hypothesis: better audio = fewer "this is annoying, I'm out" pauses.
+- ❌ **Failed if all three are flat** AND `breathing_session_start` per `page_viewed_breathing` drops ≥3 pp (means the v2 audio is actively driving people away — e.g. sub-bass distorts on some speakers, eyes-closed UI confuses people).
+- ⚪ **Inconclusive if** <80 starts in the window (cohort too small for the 5–10% effects to be detectable) OR if a confound ships in the same window (another product change worth ≥10% of expected effect size).
+
+**Risks to watch:**
+- **Sub-bass on phone speakers.** Small speakers can't reproduce 65 Hz; goal is "adds nothing audible" not "adds thump." Watch for distortion reports — listen on iPhone speaker + cheap Bluetooth earbuds before declaring done.
+- **Session arc as silent regression.** Drifting the root down a 5th over 4 minutes is intentional, but if it lands wrong it could feel like the audio is "going flat." Smoke-test a full 10-min session at least once.
+- **Eyes-closed mode tap-to-restore.** The intent is tap-anywhere-to-restore-visuals-without-pausing. If the tap-to-restore conflicts with the existing tap-to-pause-inside-orb gesture, users will hit pause when they meant to peek. Verify both gestures work without ambiguity.
+- **Binaural toggle defaulting ON.** Keeping current behavior to avoid surprise — but if a meaningful chunk of users opt-out, we should consider flipping it OFF for new sessions on speakers. Track `binaural_toggled` GA4 event.
+- **Embed param surface area growing.** With `?duration=`, `?theme=`, now `?eyesClosed=`, `?binaural=`, the embed URL space is starting to matter. Document the schema in the embed generator UI so embedders don't reverse-engineer it from referrer headers.
 
 ---
 
@@ -272,6 +318,32 @@ Collapsing to a single `breathing_session_end` event with a `reason` parameter (
 
 **Measure-after:** 2026-05-19 (read), 2026-06-02 (verdict).
 
+**Read (2026-05-18, 13d in — Neon DB `cohort-check.sql`):**
+
+| Cohort metric | Value | Note |
+|---|---|---|
+| Total users (was 17) | **26** | +9 since May 5 |
+| Engaged (>0 min, was 4) | **7** | +3 new engagers |
+| `sessions_completed > 0` (was 0) | **4** | First non-zero values ✅ |
+| Per-user breakdown of new engagers | liz 15min / **8 done**, margoshats 4min / **3 done**, stacy 0min / **3 done**, mvarchol 11min / 0 done | new-session sync paths firing |
+
+Engaged-minute distribution row dump (only users whose `user_stats` row has been touched post-fix):
+
+```
+total_minutes | sessions_completed | last_synced
+          168 |                  0 | 2026-04-18  (pre-fix sync, stale)
+           40 |                  0 | 2026-04-20  (pre-fix sync, stale)
+           37 |                  0 | 2026-05-09  (post-fix but session pre-fix)
+           15 |                  8 | 2026-05-18  ← liz, post-fix sync ✅
+           11 |                  0 | 2026-05-15  (post-fix but never timed-complete)
+            4 |                  3 | 2026-05-18  ← margoshats, post-fix sync ✅
+            4 |                  0 | 2026-04-13  (pre-fix sync, stale)
+```
+
+**Interim read:** the `sessions_completed > 0` half of the criterion is **clearly working** for sessions that happen post-deploy (2/2 hits among users who had any timed completion this week). The "total_min 30-60% lower" half of the criterion **cannot be evaluated from a snapshot** — `user_stats` is overwritten by each sync, so we don't have a before/after for the same user. Need a per-session ledger to verify the double-count fix directly; current data is consistent with the fix working but doesn't prove it.
+
+**Status:** 🔄 Implemented (interim read positive). Full verdict still 2026-06-02 — needs more post-fix engaged users for a confident pattern.
+
 ---
 
 ### 2026-05-05: GA4 User Identification (user_id + signed_up property)
@@ -304,6 +376,19 @@ Collapsing to a single `breathing_session_end` event with a `reason` parameter (
 
 **Measure-after:** 2026-05-19.
 
+**Result (2026-05-18, 13d in — GA4 events report, last 14d May 4–17):**
+
+| Event | Users (14d) |
+|---|---:|
+| `conversion_signup_completed` | **11** |
+| `signup_user_identified` | **11** |
+
+**11 = 11 — exact match.** Criterion was "`signup_user_identified` count matches login count" — hit. Mobile/desktop split: signup_user_identified mobile=5 / web=6 vs signup_completed mobile=6 / web=5 — match holds across devices (small ±1 noise from cross-device users).
+
+The `signed_up=true` user_property visibility in the User attributes report wasn't directly verified this checkpoint (would need to drill into User Attributes panel), but the event-count match strongly implies the gtag user_id + user_properties calls are firing as designed. 
+
+**Status:** ✅ **Success.** GA4 user-ID wiring is working end-to-end. Cross-device stitching and signed-up vs guest segmentation are now possible in GA4 reports (action item: actually use them in the next funnel refresh).
+
 ---
 
 ### 2026-05-05: Tap-to-Pause Hint Inside Orb
@@ -333,6 +418,25 @@ Collapsing to a single `breathing_session_end` event with a `reason` parameter (
 **Risks to watch:** The hint is a small visual addition during a meditative session; it might feel intrusive. If user complaints arrive, consider fade-out after 5 seconds or first-session-only.
 
 **Measure-after:** 2026-05-19.
+
+**Result (2026-05-18, 13d in — GA4 events report, last 14d May 4–17, Mobile-traffic comparison applied):**
+
+| Mobile metric | Baseline May 5 (28d) | Post-deploy 14d (May 4-17) | Δ |
+|---|---:|---:|---:|
+| Mobile users — `breathing_session_start` | 140 | 111 | — |
+| Mobile users — `breathing_session_pause` | 36 | **20** | — |
+| Mobile pause rate | 25.7% | **18.0%** | **-7.7pp** ⚠️ (wrong direction) |
+| Mobile abandonment (= 1 − pause-rate) | **74.3%** | **82.0%** | **+7.7pp WORSE** |
+| Mobile users — `breathing_session_complete` | 8 | 22 | +14 (chips effect) |
+| Mobile complete rate | 5.7% | 19.8% | +14.1pp (driven by chips, not hint) |
+
+Pre-committed criterion: mobile abandonment ≤66% (-8pp). Observed: abandonment moved +7.7pp in the **wrong direction**. Mobile pause-rate also dropped slightly (25.7% → 18.0%) — so even on the underlying signal, the hint did not produce more pauses; if anything, fewer.
+
+**Status:** ❌ **Failed.** The "TAP TO PAUSE" hint did not reduce mobile abandonment. Two possibilities to triage:
+1. The hint is genuinely not helping — mobile users who don't pause already aren't looking at the orb text mid-session, and a small text label can't override that.
+2. The 14d vs 28d windows aren't directly comparable; the cohort/traffic mix differs and the May 4-17 window has only 111 mobile starts vs 140 in the baseline.
+
+Either way, the criterion as written is not met. **Action item to consider:** roll back the hint (it's visual noise that didn't earn its keep), OR test a more aggressive intervention (e.g., first-session-only larger overlay tooltip). Don't sit on a failed UX addition. The complete-rate jump (5.7% → 19.8%) on mobile is real but driven by the duration chips ship, not this hint.
 
 ---
 

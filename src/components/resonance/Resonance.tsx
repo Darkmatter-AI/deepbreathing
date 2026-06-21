@@ -30,6 +30,11 @@ const SnowBackground = dynamic(
     loading: () => <div className="absolute inset-0 z-0" />
   }
 );
+// Lazy-load — ?debug=audio only; keeps the prod critical-path bundle clean.
+const AudioDebugPanel = dynamic(
+  () => import('./AudioDebugPanel'),
+  { ssr: false }
+);
 import { modeToBreathingPage } from '@/data/breathing-pages';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetClose } from '@/components/ui/sheet';
 import { useAuth } from '@/components/auth/auth-provider';
@@ -71,6 +76,21 @@ function parseAndClampDuration(value: string | null): number | undefined {
   return Math.min(parsed, MAX_DURATION);
 }
 
+// Parse a boolean-like URL param. Accepts "1"/"0", "true"/"false", "on"/"off".
+// Returns undefined if param is missing/invalid (so callers can fall back to
+// settings persistence or default).
+function parseBoolParam(value: string | null): boolean | undefined {
+  if (value === null) return undefined;
+  const v = value.toLowerCase();
+  if (v === '1' || v === 'true' || v === 'on' || v === 'yes') return true;
+  if (v === '0' || v === 'false' || v === 'off' || v === 'no') return false;
+  return undefined;
+}
+
+function durationLabel(seconds: number): string {
+  return seconds < 60 ? `${seconds}s` : `${seconds / 60} min`;
+}
+
 type ThemePreference = 'system' | 'light' | 'dark';
 
 const toRgba = (hex: string, alpha: number) => {
@@ -92,6 +112,22 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     () => parseAndClampDuration(searchParams.get('duration')),
     [searchParams]
   );
+  // v2 audio toggles — also URL-driven so embeds + share links work.
+  const binauralFromUrl = useMemo(
+    () => parseBoolParam(searchParams.get('binaural')),
+    [searchParams]
+  );
+  const eyesClosedFromUrl = useMemo(
+    () => parseBoolParam(searchParams.get('eyesClosed')),
+    [searchParams]
+  );
+  // Diagnostic audio panel gate. URL-only so it can run against deployed
+  // previews; never shipped to ordinary users. Also flips __RESONANCE_DEBUG
+  // so AudioService.log() starts emitting context-lifecycle traces.
+  const audioDebugEnabled = useMemo(
+    () => searchParams.get('debug') === 'audio',
+    [searchParams]
+  );
 
   // --- State ---
   const initialMode = defaultMode ?? ModeName.Box;
@@ -99,6 +135,10 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
   const [activeMode, setActiveMode] = useState<ModeName>(initialMode);
   const [speedMultiplier, setSpeedMultiplier] = useState(DEFAULT_SPEED_MULTIPLIER);
   const [themeColor, setThemeColor] = useState(BREATHING_PATTERNS[initialMode].color);
+  // v2 audio toggles. Defaults preserve current behavior (binaural on,
+  // eyes-closed off) so existing users see no change unless they opt in.
+  const [binauralEnabled, setBinauralEnabled] = useState<boolean>(() => binauralFromUrl ?? true);
+  const [eyesClosed, setEyesClosed] = useState<boolean>(() => eyesClosedFromUrl ?? false);
   const [totalMinutes, setTotalMinutes] = useState(0);
   const [sessionsCompleted, setSessionsCompleted] = useState(0);
   const [currentStreak, setCurrentStreak] = useState(0);
@@ -146,6 +186,13 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       if (!defaultMode && parsed.mode) setActiveMode(parsed.mode);
       if (parsed.speed) setSpeedMultiplier(parsed.speed);
       if (!defaultMode && parsed.color) setThemeColor(parsed.color);
+      // v2 toggles — URL param wins over storage, storage wins over default.
+      if (binauralFromUrl === undefined && typeof parsed.binauralEnabled === 'boolean') {
+        setBinauralEnabled(parsed.binauralEnabled);
+      }
+      if (eyesClosedFromUrl === undefined && typeof parsed.eyesClosed === 'boolean') {
+        setEyesClosed(parsed.eyesClosed);
+      }
     } else if (!defaultMode) {
       const hour = new Date().getHours();
       if (hour >= 5 && hour < 11) setThemeColor("#0d9488");
@@ -186,12 +233,25 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     }
 
     setThemeReady(true);
+    // binauralFromUrl/eyesClosedFromUrl intentionally NOT in deps — they're
+    // captured at mount, and dedicated effects below handle live URL changes.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [defaultMode]);
 
   useEffect(() => {
     if (durationFromUrl === undefined) return;
     setSelectedDuration(durationFromUrl);
   }, [durationFromUrl]);
+
+  // Mirror URL param changes for v2 toggles too (matches durationFromUrl).
+  useEffect(() => {
+    if (binauralFromUrl === undefined) return;
+    setBinauralEnabled(binauralFromUrl);
+  }, [binauralFromUrl]);
+  useEffect(() => {
+    if (eyesClosedFromUrl === undefined) return;
+    setEyesClosed(eyesClosedFromUrl);
+  }, [eyesClosedFromUrl]);
 
   useEffect(() => {
     if (!mounted || durationFromUrl !== undefined) return;
@@ -258,14 +318,27 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     if (!audioServiceRef.current) {
       const debugEnabled =
         typeof window !== 'undefined' &&
-        (window as any).__RESONANCE_DEBUG === true;
+        ((window as any).__RESONANCE_DEBUG === true || audioDebugEnabled);
       audioServiceRef.current = new AudioService({ debug: debugEnabled });
     }
     return audioServiceRef.current;
-  }, []);
+  }, [audioDebugEnabled]);
+
+  // Flip the window-level debug flag whenever ?debug=audio is present so any
+  // other code that gates on __RESONANCE_DEBUG (or future debug surfaces)
+  // sees it without having to re-read the URL.
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    if (audioDebugEnabled) {
+      (window as any).__RESONANCE_DEBUG = true;
+    }
+  }, [audioDebugEnabled]);
 
   const requestRef = useRef<number | null>(null);
   const phaseStartRef = useRef<number>(0);
+  // Mirror sessionSeconds into a ref so the rAF loop can read it without
+  // re-creating the animate callback on every tick.
+  const sessionSecondsRef = useRef<number>(0);
 
   const applyThemePreference = useCallback((mode: 'dark' | 'light') => {
     if (typeof document === 'undefined') return;
@@ -406,7 +479,9 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       mode: activeMode,
       speed: speedMultiplier,
       color: themeColor,
-      duration: selectedDuration
+      duration: selectedDuration,
+      binauralEnabled,
+      eyesClosed,
     }));
     // Track settings changes for conversion trigger (skip initial mount)
     settingsChangeCountRef.current++;
@@ -414,7 +489,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       onSettingsChange();
       syncSettings({ mode: activeMode, speed: speedMultiplier, duration: selectedDuration });
     }
-  }, [activeMode, speedMultiplier, themeColor, selectedDuration, mounted, onSettingsChange, syncSettings]);
+  }, [activeMode, speedMultiplier, themeColor, selectedDuration, binauralEnabled, eyesClosed, mounted, onSettingsChange, syncSettings]);
 
   // When the server hydrates (user logs in), update local streak from server truth.
   useEffect(() => {
@@ -515,6 +590,50 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     setSelectedDuration(value);
     updateDurationParam(value);
   }, [updateDurationParam]);
+
+  // Set/clear a URL param. Used for v2 toggle round-trip — only writes the
+  // param when the value differs from the default, so share links stay clean.
+  const updateBoolParam = useCallback((name: string, value: boolean, defaultValue: boolean) => {
+    const params = new URLSearchParams(searchParams.toString());
+    if (value === defaultValue) {
+      params.delete(name);
+    } else {
+      params.set(name, value ? '1' : '0');
+    }
+    const queryString = params.toString();
+    router.replace(queryString ? `${pathname}?${queryString}` : pathname, { scroll: false });
+  }, [pathname, router, searchParams]);
+
+  const handleBinauralToggle = useCallback(() => {
+    const next = !binauralEnabled;
+    setBinauralEnabled(next);
+    updateBoolParam('binaural', next, true); // default ON
+    trackEvent('binaural_toggled', { enabled: next, mode: activeMode });
+    // Live response: stop binaural mid-session if user disables; if they
+    // re-enable mid-session it picks up at the next phase transition.
+    if (!next) {
+      getAudioService().stopBinaural();
+    }
+  }, [binauralEnabled, updateBoolParam, getAudioService, activeMode]);
+
+  const handleEyesClosedToggle = useCallback(() => {
+    const next = !eyesClosed;
+    setEyesClosed(next);
+    updateBoolParam('eyesClosed', next, false); // default OFF
+    trackEvent('eyes_closed_toggled', { enabled: next, mode: activeMode });
+  }, [eyesClosed, updateBoolParam, activeMode]);
+
+  // Live mid-session eyes-closed toggle: start/stop the phase envelope so
+  // users get audio feedback the moment they flip the switch.
+  useEffect(() => {
+    if (!isRunning) return;
+    const audio = getAudioService();
+    if (eyesClosed) {
+      void audio.startPhaseEnvelope(themeColor);
+    } else {
+      audio.stopPhaseEnvelope();
+    }
+  }, [eyesClosed, isRunning, getAudioService, themeColor]);
 
   // End the in-progress session. `hard` resets seconds + sessionId so a
   // future togglePlay starts fresh; soft (pause) keeps seconds + id so
@@ -622,7 +741,13 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
 
         // Wim Hof uses energizing drone + beta waves
         await audio.startDrone(themeColor);
-        await audio.startBinaural(15); // Beta waves for alertness
+        await audio.startSubBass(themeColor);
+        if (binauralEnabled) {
+          await audio.startBinaural(15); // Beta waves for alertness
+        }
+        if (eyesClosed) {
+          await audio.startPhaseEnvelope(themeColor);
+        }
         audio.playCue('inhale', themeColor);
       } else {
         // Normal pattern mode
@@ -632,15 +757,26 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
 
         // Adaptive Audio Logic
         if (activeMode === ModeName.Relax || activeMode === ModeName.Coherent) {
-          // Relax/Coherent get Pink Noise (Rain)
+          // Relax/Coherent get Pink Noise (Rain → Ocean with breath-coupled filter)
           await audio.startPinkNoise();
-          // Relax gets Delta Waves (Sleep), Coherent gets Alpha
-          const hz = activeMode === ModeName.Relax ? 2 : 10;
-          await audio.startBinaural(hz);
+          if (binauralEnabled) {
+            // Relax gets Delta Waves (Sleep), Coherent gets Alpha
+            const hz = activeMode === ModeName.Relax ? 2 : 10;
+            await audio.startBinaural(hz);
+          }
         } else {
           // Others get Drone Synth + Alpha
           await audio.startDrone(themeColor);
-          await audio.startBinaural(10);
+          if (binauralEnabled) {
+            await audio.startBinaural(10);
+          }
+        }
+        // Sub-bass body-resonance layer pairs with both drone and noise beds.
+        await audio.startSubBass(themeColor);
+        // Eyes-closed mode: add a phase-length tonal envelope so the audio
+        // carries the breath when the visuals are dimmed.
+        if (eyesClosed) {
+          await audio.startPhaseEnvelope(themeColor);
         }
 
         audio.playCue('inhale', themeColor);
@@ -664,11 +800,13 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       // double-counting if both fire.
       endSession('paused', sessionSeconds, false);
       audio.stopDrone();
+      audio.stopSubBass();
+      audio.stopPhaseEnvelope();
       audio.stopPinkNoise();
       audio.stopBinaural();
       setScale(0);
     }
-  }, [isRunning, activeMode, themeColor, getAudioService, isIOS, soundStatus, sessionSeconds, selectedDuration, setInstructionKey, sessionId, endSession]);
+  }, [isRunning, activeMode, themeColor, getAudioService, isIOS, soundStatus, sessionSeconds, selectedDuration, setInstructionKey, sessionId, endSession, binauralEnabled, eyesClosed]);
 
   const handleStop = () => {
     const audio = getAudioService();
@@ -686,6 +824,8 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     endSession('mode_switched', sessionSeconds, true);
     setScale(0);
     audio.stopDrone();
+    audio.stopSubBass();
+    audio.stopPhaseEnvelope();
     audio.stopPinkNoise();
     audio.stopBinaural();
   };
@@ -739,9 +879,10 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
   const animate = useCallback((time: number) => {
     if (!isRunning) return;
 
-    // Update 8D Spatial Audio Position
+    // Update 8D Spatial Audio Position + session-arc evolution.
     const audio = getAudioService();
     audio.updateSpatial(time);
+    audio.tickSessionArc(sessionSecondsRef.current);
 
     const pattern = BREATHING_PATTERNS[activeMode];
     const inhaleDur = pattern.inhale * speedMultiplier * 1000;
@@ -820,6 +961,18 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       }
     }
 
+    // Couple the pink-noise bed (Relax + Coherent) AND the phase-length
+    // envelope (eyes-closed mode) to breath progress. Both are no-ops when
+    // their respective layers aren't running.
+    const breathPhase: 'inhale' | 'exhale' | 'hold' =
+      phase === BreathingPhase.Inhale || phase === BreathingPhase.Inhale2
+        ? 'inhale'
+        : phase === BreathingPhase.Exhale
+          ? 'exhale'
+          : 'hold';
+    audio.updatePinkNoisePhase(breathPhase, progress);
+    audio.updatePhaseEnvelope(breathPhase, progress);
+
     if (nextPhase !== phase) {
       setPhase(nextPhase);
       phaseStartRef.current = time;
@@ -838,6 +991,17 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
 
     const audio = getAudioService();
     audio.updateSpatial(time);
+    audio.tickSessionArc(sessionSecondsRef.current);
+    // Couple phase envelope to the visual phase + a rough progress estimate.
+    // The protocol's power-breath cycle is fast so the envelope tracks it via
+    // the visual phase set later in this callback.
+    if (phase === BreathingPhase.Inhale || phase === BreathingPhase.Inhale2) {
+      audio.updatePhaseEnvelope('inhale', Math.min(1, (time - protocolPhaseStartRef.current) / 1500));
+    } else if (phase === BreathingPhase.Exhale) {
+      audio.updatePhaseEnvelope('exhale', Math.min(1, (time - protocolPhaseStartRef.current) / 1500));
+    } else {
+      audio.updatePhaseEnvelope('hold', 0);
+    }
 
     const protocol = WIM_HOF_PROTOCOL;
     const { inhale, exhale } = protocol.powerBreathTiming;
@@ -929,6 +1093,8 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
             // Stop the session
             setIsRunning(false);
             audio.stopDrone();
+            audio.stopSubBass();
+            audio.stopPhaseEnvelope();
             audio.stopBinaural();
           }
         }
@@ -1010,11 +1176,18 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     let interval: ReturnType<typeof setInterval>;
     if (isRunning) {
       interval = setInterval(() => {
-        setSessionSeconds(s => s + 1);
+        setSessionSeconds(s => {
+          const next = s + 1;
+          sessionSecondsRef.current = next;
+          return next;
+        });
       }, 1000);
+    } else if (!isRunning && sessionSeconds === 0) {
+      // Hard end / fresh — reset the ref too.
+      sessionSecondsRef.current = 0;
     }
     return () => clearInterval(interval);
-  }, [isRunning]);
+  }, [isRunning, sessionSeconds]);
 
   // Auto-stop when targetDuration is reached
   useEffect(() => {
@@ -1026,6 +1199,8 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       endSession('completed', sessionSeconds, true);
       // Stop all audio
       audio.stopDrone();
+      audio.stopSubBass();
+      audio.stopPhaseEnvelope();
       audio.stopPinkNoise();
       audio.stopBinaural();
     }
@@ -1217,6 +1392,14 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     return isRunning ? `${themeColor}1a` : undefined;
   };
 
+  // Eyes-closed mode: fade visuals during an active session so the audio
+  // carries the experience. Settings gear stays at full opacity so users
+  // can always toggle back without hunting for a button.
+  const dimVisuals = eyesClosed && isRunning;
+  const dimmedStyle = dimVisuals
+    ? { opacity: 0.18, transition: 'opacity 1800ms ease-in-out' }
+    : { opacity: 1, transition: 'opacity 1200ms ease-in-out' };
+
   return (
     <div
       className={`relative flex h-full w-full flex-col overflow-hidden ${backgroundVariant === 'winter-blue' ? '' : 'bg-background'} transition-colors duration-1000 ${className}`}
@@ -1225,15 +1408,17 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       data-runtime-fallback-count={runtimeFallbackCount}
     >
 
-      {snowMode ? (
-        <SnowBackground
-          tone={activeTheme}
-          speedMultiplier={speedMultiplier}
-          phase={phase}
-        />
-      ) : (
-        <ParticleBackground phase={phase} color={themeColor} speedMultiplier={speedMultiplier} />
-      )}
+      <div style={dimmedStyle} className="absolute inset-0 z-0">
+        {snowMode ? (
+          <SnowBackground
+            tone={activeTheme}
+            speedMultiplier={speedMultiplier}
+            phase={phase}
+          />
+        ) : (
+          <ParticleBackground phase={phase} color={themeColor} speedMultiplier={speedMultiplier} />
+        )}
+      </div>
 
       <header className="fixed inset-x-0 top-0 z-30 flex items-center justify-end gap-2 p-6">
         {!embedMode && <LanguageSwitcherInline />}
@@ -1289,7 +1474,10 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
         )}
       </header>
 
-      <main className={`relative z-10 flex flex-1 flex-col items-center justify-center sm:pb-0 ${noMobileBottomPad ? 'pb-24' : 'pb-44'}`}>
+      <main
+        className={`relative z-10 flex flex-1 flex-col items-center justify-center sm:pb-0 ${noMobileBottomPad ? 'pb-24' : 'pb-44'}`}
+        style={dimmedStyle}
+      >
         {/* Protocol UI: Round and breath counter */}
         {isProtocolMode && isRunning && (
           <div className="absolute top-8 left-0 right-0 z-20 flex flex-col items-center gap-2">
@@ -1418,6 +1606,41 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                     </div>
                   </div>
                 )}
+
+                {/* v2 audio toggles */}
+                {/*
+                  Eyes-closed toggle parked — feature needs voice narration in
+                  each locale to be useful on its own (visual cues are removed,
+                  so users need an audio guide). Code paths (URL param, state,
+                  phase envelope, mid-session toggle) are intentionally kept so
+                  ?eyesClosed=1 still works for internal testing.
+                */}
+
+                <div className="rounded-2xl bg-background/50 p-3 text-sm text-muted-foreground shadow-inner dark:bg-background/20">
+                  <div className="flex items-center justify-between gap-3">
+                    <div>
+                      <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">Binaural beats</p>
+                      <p className="text-base font-semibold text-card-foreground">{binauralEnabled ? 'On' : 'Off'}</p>
+                    </div>
+                    <button
+                      type="button"
+                      role="switch"
+                      aria-checked={binauralEnabled}
+                      onClick={handleBinauralToggle}
+                      className={`relative inline-flex h-9 w-16 items-center rounded-full border border-border/60 px-1 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-ring dark:border-border/40 ${binauralEnabled ? 'bg-primary/80 text-primary-foreground' : 'bg-muted'}`}
+                    >
+                      <span
+                        className={`flex h-7 w-7 items-center justify-center rounded-full bg-card text-foreground shadow-sm transition-transform ${binauralEnabled ? 'translate-x-6' : 'translate-x-0'}`}
+                      >
+                        <Activity size={16} />
+                      </span>
+                    </button>
+                  </div>
+                  <p className="mt-2 text-xs text-muted-foreground">
+                    Best with headphones. Speakers mix both channels in air, which cancels the beat.
+                  </p>
+                </div>
+
                 <div className="rounded-2xl bg-background/50 p-3 text-sm text-muted-foreground shadow-inner dark:bg-background/20">
                   <div className="flex items-center justify-between gap-3">
                     <div>
@@ -1602,6 +1825,8 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
           onSuccess={markConverted}
         />
       )}
+
+      {audioDebugEnabled && <AudioDebugPanel audio={getAudioService()} />}
     </div>
   );
 };
