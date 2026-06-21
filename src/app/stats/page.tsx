@@ -2,12 +2,13 @@ import { type Metadata } from "next";
 import { headers } from "next/headers";
 import { auth } from "@/lib/auth";
 import { pool } from "@/lib/db";
+import { streakWindowDays } from "@/lib/stats/streak-calendar";
 import { StatsDisplay, StatsSignedOut } from "./stats-display";
 
 export const metadata: Metadata = {
   title: "Your Practice Stats — Deep Breathing Exercises",
   description:
-    "See your total breathing minutes, session count, streak, and 14-day practice calendar.",
+    "See your total breathing minutes, session count, streak, and practice calendar.",
   robots: { index: false },
 };
 
@@ -43,6 +44,25 @@ export default async function StatsPage() {
     : null;
   const currentMode: string | null = settings?.mode ?? null;
 
+  // Per-day practice history for the calendar. Pull a window wide enough to cover
+  // the current month in any timezone. Falls back to the streak window if the
+  // user_active_days table isn't migrated/backfilled yet, so the page never 500s.
+  let dbDays: string[] = [];
+  try {
+    const daysResult = await pool.query(
+      `SELECT to_char(day, 'YYYY-MM-DD') AS day
+       FROM user_active_days
+       WHERE user_id = $1 AND day >= CURRENT_DATE - interval '62 days'`,
+      [userId]
+    );
+    dbDays = daysResult.rows.map((r) => r.day as string);
+  } catch {
+    // Table not present yet — rely on the streak-window floor below.
+  }
+  const activeDays = Array.from(
+    new Set([...dbDays, ...streakWindowDays(currentStreak, lastSessionDate)])
+  );
+
   return (
     <StatsDisplay
       totalMinutes={totalMinutes}
@@ -50,7 +70,9 @@ export default async function StatsPage() {
       currentStreak={currentStreak}
       lastSessionDate={lastSessionDate}
       currentMode={currentMode}
+      activeDays={activeDays}
       userName={session.user.name ?? session.user.email}
+      userImage={session.user.image ?? null}
     />
   );
 }

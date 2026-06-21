@@ -1,6 +1,10 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
-import { computeLiveStreak, buildStreakDays } from "./helpers/streak-calendar.mjs";
+import {
+  computeLiveStreak,
+  streakWindowDays,
+  buildMonthGrid,
+} from "./helpers/streak-calendar.mjs";
 
 describe("computeLiveStreak", () => {
   it("returns currentStreak when lastSessionDate is today", () => {
@@ -24,48 +28,88 @@ describe("computeLiveStreak", () => {
   });
 });
 
-describe("buildStreakDays", () => {
-  it("marks the correct days active for a live streak of 3", () => {
-    // today=2026-06-21, lastSessionDate=2026-06-21, streak=3
-    // active window: 2026-06-19, 2026-06-20, 2026-06-21
-    const days = buildStreakDays(3, "2026-06-21", "2026-06-21", 7);
-    // 7-day window: [0]=2026-06-15, [1]=6-16, [2]=6-17, [3]=6-18, [4]=6-19, [5]=6-20, [6]=6-21
-    assert.equal(days.length, 7);
-    assert.equal(days[3].date, "2026-06-18");
-    assert.equal(days[3].active, false);  // just outside streak window
-    assert.equal(days[4].date, "2026-06-19");
-    assert.equal(days[4].active, true);   // first day of streak
-    assert.equal(days[5].date, "2026-06-20");
-    assert.equal(days[5].active, true);
-    assert.equal(days[6].date, "2026-06-21");
-    assert.equal(days[6].active, true);
+describe("streakWindowDays", () => {
+  it("returns the consecutive window ending at lastSessionDate", () => {
+    assert.deepEqual(streakWindowDays(3, "2026-06-21"), [
+      "2026-06-21",
+      "2026-06-20",
+      "2026-06-19",
+    ]);
   });
 
-  it("returns all inactive when no lastSessionDate", () => {
-    const days = buildStreakDays(0, null, "2026-06-21", 7);
-    assert.ok(days.every((d) => !d.active), "all should be inactive");
+  it("returns [] when no lastSessionDate", () => {
+    assert.deepEqual(streakWindowDays(5, null), []);
   });
 
-  it("marks correct days when lastSessionDate is in the past (expired streak)", () => {
-    // Streak was 3 days ending 2026-06-15 (6 days ago). Calendar shows history honestly.
-    const days = buildStreakDays(3, "2026-06-15", "2026-06-21", 14);
-    const activeDay = days.find((d) => d.date === "2026-06-15");
-    const inactiveDay = days.find((d) => d.date === "2026-06-21");
-    const firstActiveDay = days.find((d) => d.date === "2026-06-13");
-    assert.equal(activeDay?.active, true);
-    assert.equal(inactiveDay?.active, false);
-    assert.equal(firstActiveDay?.active, true);
+  it("returns [] when streak is 0", () => {
+    assert.deepEqual(streakWindowDays(0, "2026-06-21"), []);
   });
 
-  it("returns numDays entries", () => {
-    const days = buildStreakDays(5, "2026-06-21", "2026-06-21", 14);
-    assert.equal(days.length, 14);
+  it("crosses a month boundary correctly", () => {
+    assert.deepEqual(streakWindowDays(3, "2026-07-01"), [
+      "2026-07-01",
+      "2026-06-30",
+      "2026-06-29",
+    ]);
+  });
+});
+
+describe("buildMonthGrid", () => {
+  const flat = (weeks) => weeks.flat().filter(Boolean);
+
+  it("June 2026 has 30 real day cells", () => {
+    const weeks = buildMonthGrid(2026, 6, [], "2026-06-21");
+    assert.equal(flat(weeks).length, 30);
   });
 
-  it("days are in ascending date order", () => {
-    const days = buildStreakDays(5, "2026-06-21", "2026-06-21", 7);
-    for (let i = 1; i < days.length; i++) {
-      assert.ok(days[i].date > days[i - 1].date, "dates should ascend");
-    }
+  it("February 2026 (non-leap) has 28 day cells", () => {
+    const weeks = buildMonthGrid(2026, 2, [], "2026-06-21");
+    assert.equal(flat(weeks).length, 28);
+  });
+
+  it("February 2024 (leap year) has 29 day cells", () => {
+    const weeks = buildMonthGrid(2024, 2, [], "2026-06-21");
+    assert.equal(flat(weeks).length, 29);
+  });
+
+  it("each week row has exactly 7 cells", () => {
+    const weeks = buildMonthGrid(2026, 6, [], "2026-06-21");
+    for (const week of weeks) assert.equal(week.length, 7);
+  });
+
+  it("places June 1 2026 in the Monday column (index 1)", () => {
+    // 2026-06-01 is a Monday → one leading null in the first week.
+    const weeks = buildMonthGrid(2026, 6, [], "2026-06-21");
+    assert.equal(weeks[0][0], null);
+    assert.equal(weeks[0][1].date, "2026-06-01");
+  });
+
+  it("marks NON-CONSECUTIVE active days (proves real history, not just streak window)", () => {
+    const active = ["2026-06-03", "2026-06-09", "2026-06-20"];
+    const weeks = buildMonthGrid(2026, 6, active, "2026-06-21");
+    const cells = flat(weeks);
+    const byDate = Object.fromEntries(cells.map((c) => [c.date, c]));
+    assert.equal(byDate["2026-06-03"].active, true);
+    assert.equal(byDate["2026-06-09"].active, true);
+    assert.equal(byDate["2026-06-20"].active, true);
+    // gaps between them stay inactive
+    assert.equal(byDate["2026-06-04"].active, false);
+    assert.equal(byDate["2026-06-10"].active, false);
+    assert.equal(byDate["2026-06-21"].active, false);
+  });
+
+  it("flags isToday on the matching cell only", () => {
+    const weeks = buildMonthGrid(2026, 6, [], "2026-06-21");
+    const cells = flat(weeks);
+    const todayCells = cells.filter((c) => c.isToday);
+    assert.equal(todayCells.length, 1);
+    assert.equal(todayCells[0].date, "2026-06-21");
+  });
+
+  it("leading/trailing pad cells are null", () => {
+    const weeks = buildMonthGrid(2026, 6, [], "2026-06-21");
+    const lastWeek = weeks[weeks.length - 1];
+    // June 30 2026 is a Tuesday → trailing cells after it are null
+    assert.ok(lastWeek.some((c) => c === null));
   });
 });

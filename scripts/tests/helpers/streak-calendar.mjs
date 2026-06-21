@@ -8,44 +8,42 @@ function dateToUtcDays(dateStr) {
   return Date.UTC(y, m - 1, d) / 86400000;
 }
 
-/**
- * Returns the live streak count for display.
- * The stored current_streak is only valid if last_session_date was today or yesterday.
- * If the session was older, the streak is broken and should display as 0.
- */
+function toDateStr(utcDays) {
+  return new Date(utcDays * 86400000).toISOString().slice(0, 10);
+}
+
 export function computeLiveStreak(currentStreak, lastSessionDate, today) {
   if (!lastSessionDate || currentStreak === 0) return 0;
-  const lastDays = dateToUtcDays(lastSessionDate);
-  const todayDays = dateToUtcDays(today);
-  const diffDays = todayDays - lastDays;
+  const diffDays = dateToUtcDays(today) - dateToUtcDays(lastSessionDate);
   return diffDays <= 1 ? currentStreak : 0;
 }
 
-/**
- * Returns an array of { date: string (YYYY-MM-DD), active: boolean } for the last numDays days.
- * Active means the day falls within the stored streak window ending at lastSessionDate.
- * This reflects historical practice honestly, even for expired streaks.
- */
-export function buildStreakDays(currentStreak, lastSessionDate, today, numDays = 14) {
-  const todayDays = dateToUtcDays(today);
-  const result = [];
-
-  const lastDays = lastSessionDate ? dateToUtcDays(lastSessionDate) : null;
-  const firstActiveDays = lastDays !== null && currentStreak > 0
-    ? lastDays - (currentStreak - 1)
-    : null;
-
-  for (let i = numDays - 1; i >= 0; i--) {
-    const dayDays = todayDays - i;
-    const active =
-      firstActiveDays !== null &&
-      lastDays !== null &&
-      dayDays >= firstActiveDays &&
-      dayDays <= lastDays;
-    const d = new Date(dayDays * 86400000);
-    const dateStr = d.toISOString().slice(0, 10);
-    result.push({ date: dateStr, active });
+export function streakWindowDays(currentStreak, lastSessionDate) {
+  if (!lastSessionDate || currentStreak <= 0) return [];
+  const last = dateToUtcDays(lastSessionDate);
+  const out = [];
+  for (let i = 0; i < currentStreak; i++) {
+    out.push(toDateStr(last - i));
   }
+  return out;
+}
 
-  return result;
+export function buildMonthGrid(year, month, activeDays, today) {
+  const activeSet = new Set(activeDays);
+  const firstWeekday = new Date(Date.UTC(year, month - 1, 1)).getUTCDay(); // 0=Sun
+  const daysInMonth = new Date(Date.UTC(year, month, 0)).getUTCDate();
+
+  const cells = [];
+  for (let i = 0; i < firstWeekday; i++) cells.push(null);
+  for (let d = 1; d <= daysInMonth; d++) {
+    const mm = String(month).padStart(2, "0");
+    const dd = String(d).padStart(2, "0");
+    const date = `${year}-${mm}-${dd}`;
+    cells.push({ date, active: activeSet.has(date), isToday: date === today });
+  }
+  while (cells.length % 7 !== 0) cells.push(null);
+
+  const weeks = [];
+  for (let i = 0; i < cells.length; i += 7) weeks.push(cells.slice(i, i + 7));
+  return weeks;
 }
