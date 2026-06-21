@@ -42,5 +42,20 @@ export async function PUT(request: NextRequest) {
     [userId, body.totalMinutes ?? 0, body.sessionsCompleted ?? 0, sessionDate]
   );
 
+  // Record the active day for the practice calendar (best-effort: never block the
+  // core stats sync if the user_active_days table isn't migrated yet).
+  if (sessionDate) {
+    try {
+      await pool.query(
+        `INSERT INTO user_active_days (user_id, day)
+         VALUES ($1, $2::date)
+         ON CONFLICT (user_id, day) DO NOTHING`,
+        [userId, sessionDate]
+      );
+    } catch {
+      // user_active_days not yet present — calendar falls back to streak window.
+    }
+  }
+
   return NextResponse.json({ ok: true });
 }

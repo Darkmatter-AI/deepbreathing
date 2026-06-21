@@ -23,6 +23,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-06-21 | [/stats "Your practice" — retention surface (breath garden + stale-streak reframe)](#2026-06-21-stats-page--streak-calendar--session-stats-for-signed-in-users) | 🔄 Implemented |
 | 2026-06-14 | [Conversion Prompt C (loss_aversion), 100% challenger](#2026-06-14-conversion-prompt-c-loss_aversion-100-challenger) | 🔄 Implemented |
 | 2026-06-01 | [Fix `conversion_prompt_shown` double-fire (impure setState updaters)](#2026-06-01-fix-conversion_prompt_shown-double-fire-impure-setstate-updaters) | 🔄 Implemented |
 | 2026-06-01 | [Conversion Prompt B (social proof + personal stats), 100% challenger](#2026-06-01-conversion-prompt-b-social-proof--personal-stats-100-challenger) | ⏸️ Paused (→ Prompt C; social proof made real + merged, dormant) |
@@ -45,6 +46,30 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 ---
 
 ## Active Experiments
+
+### 2026-06-21: /stats page — practice calendar + session stats for signed-in users
+
+> **Redesigned 2026-06-21 → "Your practice"** (commit `eed6327`). Shipped as a **retention surface**; the first thing we're watching is **how many signed-in users actually reach it via the "My Stats" entry**, then whether reaching it lifts return rate.
+
+**Hypothesis:** Signed-in users who can see their practice history return more often and are harder to churn — the page makes their investment visible, reinforcing "I am someone who breathes." The redesign sharpens this two ways: (1) a **stale or zero streak now reads "Fresh start · One breath plants a new streak"** instead of a demoralizing `0`, removing the shame cue we suspect made a broken streak a *reason to leave*; (2) a GitHub-style **breath garden** turns months of scattered sessions into one dense, rewarding picture. Secondary: the signed-out value-prop view nudges first-time visitors close to signing up.
+
+**Change:** `/stats` rebuilt from the Claude Design component "Your practice" (commit `eed6327`). Signed-in view: warm header + animated orb, **Total time / Sessions / Streak** tiles, an 18-week **breath garden** (binary practiced/rest — no per-day minutes are stored, so the design's intensity gradient is deferred), a **favorite pattern** card (from `user_settings.mode` via `BREATHING_PATTERNS` — the saved setting, not computed usage frequency; no per-pattern counts exist), and a **last-7-days** presence strip. Stale-streak reframe via `computeLiveStreak`; longest run computed from real active-day history. Dark mode preserved via design tokens (warm wash is light-only). Per-day history still in `user_active_days` (migration `003`); the garden falls back to the streak window if unmigrated. **Entry point: a "My Stats" link in the site footer — the only path in today (no header profile button yet).** Weekly-goal tile intentionally omitted for now. The v1 full-month calendar this replaces was never shipped to production.
+
+**Measurement design:** No split test (insufficient volume). Two tiers:
+- **Primary — adoption / "do they find it":** weekly **`/stats` `page_view`s by signed-in users** and **reach rate** = signed-in users who open /stats ÷ weekly-active signed-in users. Already captured by GA4 `page_view` (PageViewTracker); `/stats` is the only page on that path and the footer "My Stats" link is the only entrance, so pageviews ≈ entry clicks. (For clean attribution we could add a `stats_entry_click` event on the link — see follow-up.) Baseline = 0 (new surface).
+- **Outcome — retention:** day-7 return rate for signed-in users (65% day-1 baseline; day-7 not yet measured — establish first) and any lift in `signed_up`.
+- Baseline snapshot (FUNNEL-DASHBOARD.md, 2026-05-08, ~6wk stale): 17 signed-in users total, 65% day-1 return (11/17), ~119 breathing_session_start users/wk, ~52 conversion_prompt_shown/wk.
+
+**Pre-committed success criteria (measure after 2026-07-21 — 28 days post-merge):**
+- ✅ Success: ≥ **25% of weekly-active signed-in users open /stats**, AND day-7 signed-in return rate ≥ 75% (or new signups/wk +2 vs baseline).
+- ⚪ Inconclusive: < 10 signed-in /stats viewers in the window (can't read retention). If **reach** is the blocker, the next move is a prominent header **profile/avatar entry button**, not abandoning the page.
+- ❌ Failed: reach ≥ 25% but no retention lift after 28 days with ≥ 20 signed-in users observed.
+
+**Note on the entry point:** "how many users get to the page" is gated by discoverability, and today the only entrance is a footer text link. Low reach would be a *findability* result, not a verdict on the page itself — fix it with a header profile button before calling the experiment failed.
+
+**Status:** 🔄 Implemented (redesigned)
+
+---
 
 ### 2026-06-14: Conversion Prompt C (loss_aversion), 100% challenger
 

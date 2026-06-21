@@ -59,5 +59,32 @@ export async function POST(request: NextRequest) {
     client.release();
   }
 
+  // Seed the guest's streak window into the practice calendar so pre-signup days
+  // appear. Run AFTER commit (a failed statement inside a txn poisons it) and
+  // best-effort (skip silently if user_active_days isn't migrated yet).
+  if (stats) {
+    const lastSessionDate: string | null =
+      typeof stats.lastSessionDate === "string" &&
+      /^\d{4}-\d{2}-\d{2}$/.test(stats.lastSessionDate)
+        ? stats.lastSessionDate
+        : null;
+    const guestStreak: number = Number.isFinite(stats.currentStreak)
+      ? Math.max(0, Math.floor(stats.currentStreak))
+      : 0;
+    if (lastSessionDate && guestStreak > 0) {
+      try {
+        await pool.query(
+          `INSERT INTO user_active_days (user_id, day)
+           SELECT $1, ($2::date - g.n)::date
+           FROM generate_series(0, $3 - 1) AS g(n)
+           ON CONFLICT (user_id, day) DO NOTHING`,
+          [userId, lastSessionDate, guestStreak]
+        );
+      } catch {
+        // user_active_days not yet present — non-fatal for the merge.
+      }
+    }
+  }
+
   return NextResponse.json({ ok: true });
 }
