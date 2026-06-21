@@ -19,18 +19,19 @@ often confused:
 - **Length:** the desired **"Deep Breathing Exercises: Calm & Sleep" = 38 ch**,
   over the 30 limit. "& Sleep" must move to the Subtitle field.
 
-**Resolution — name vs subtitle split:**
+**Resolution — name vs subtitle split (LOCKED):**
 ```
 Name (30):     Deep Breathing Exercises: Calm     ← 30 ch exactly, unique
 Subtitle (30): Sleep, Box & 4-7-8 Breathing       ← carries "Sleep" + keywords
 ```
-This is unique (distinct string from the taken bare name), fits, leads with the
-full brand, and still surfaces Calm + Sleep + the techniques.
+Decided 2026-06-21: the brand takeover was the **domain only** (prior owner let
+deepbreathingexercises.com lapse) — it did NOT include the existing
+"Deep Breathing Exercises" App Store app, so the bare name is unavailable to us.
+The split above is unique, fits, leads with the full brand, and surfaces
+Calm + Sleep + the techniques.
 
-Alternatives if "…: Calm" is reserved: `Deep Breathing Exercises: Box` (29) or
-`Deep Breathing Exercises: Relax` (31 — too long, drop). If the takeover DID
-include the existing app, transfer it and use the clean **`Deep Breathing
-Exercises`** as the name with the subtitle above. Confirm in ASC tomorrow.
+Backup if "…: Calm" turns out to be reserved in ASC: `Deep Breathing
+Exercises: Box` (29 ch). Confirm the primary in App Store Connect tomorrow.
 
 ---
 
