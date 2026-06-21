@@ -21,17 +21,25 @@ often confused:
 
 **Resolution — name vs subtitle split (LOCKED):**
 ```
-Name (30):     Deep Breathing Exercises: Calm     ← 30 ch exactly, unique
-Subtitle (30): Sleep, Box & 4-7-8 Breathing       ← carries "Sleep" + keywords
+Name (30):     Deep Breathing: Calm & Sleep      ← 28 ch, no exact live match
+Subtitle (30): Box Breathing, 4-7-8 & Timer      ← techniques + "timer" keyword
 ```
-Decided 2026-06-21: the brand takeover was the **domain only** (prior owner let
-deepbreathingexercises.com lapse) — it did NOT include the existing
-"Deep Breathing Exercises" App Store app, so the bare name is unavailable to us.
-The split above is unique, fits, leads with the full brand, and surfaces
-Calm + Sleep + the techniques.
+Decided 2026-06-21:
+- The brand takeover was the **domain only** (prior owner let
+  deepbreathingexercises.com lapse) — it did NOT include the existing
+  "Deep Breathing Exercises" App Store app, so that bare name is unavailable.
+- Chose the cleaner consumer headline **"Deep Breathing: Calm & Sleep"** over
+  "Deep Breathing Exercises: Calm". Tradeoff: drops the literal "Exercises"
+  (slightly less domain-literal) but leads with "Deep Breathing", reads better,
+  and surfaces the two highest-intent benefits (Calm, Sleep). The
+  deepbreathingexercises.com domain still serves as the marketing/support URL.
+- Verified against the live US store (iTunes Search API): no exact app named
+  "Deep Breathing: Calm & Sleep" or close variants. The bare "Deep Breathing"
+  (Oratu) exists but a distinct "Brand: Tagline" string is allowed.
 
-Backup if "…: Calm" turns out to be reserved in ASC: `Deep Breathing
-Exercises: Box` (29 ch). Confirm the primary in App Store Connect tomorrow.
+Backup names if the primary is reserved in ASC (reserved ≠ visible in the public
+store): `Deep Breathing Exercises: Calm` (30) or `Deep Breathing: Box & Calm`.
+Confirm the primary in App Store Connect tomorrow.
 
 ---
 
