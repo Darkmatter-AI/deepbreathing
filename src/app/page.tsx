@@ -443,6 +443,11 @@ export default function HomePage() {
                   Privacy
                 </Link>
               </li>
+              <li>
+                <Link href="/stats" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                  My Stats
+                </Link>
+              </li>
             </ul>
           </div>
 

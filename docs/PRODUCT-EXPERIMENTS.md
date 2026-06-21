@@ -23,6 +23,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-06-21 | [/stats page — streak calendar + session stats for signed-in users](#2026-06-21-stats-page--streak-calendar--session-stats-for-signed-in-users) | 🔄 Implemented |
 | 2026-06-14 | [Conversion Prompt C (loss_aversion), 100% challenger](#2026-06-14-conversion-prompt-c-loss_aversion-100-challenger) | 🔄 Implemented |
 | 2026-06-01 | [Fix `conversion_prompt_shown` double-fire (impure setState updaters)](#2026-06-01-fix-conversion_prompt_shown-double-fire-impure-setstate-updaters) | 🔄 Implemented |
 | 2026-06-01 | [Conversion Prompt B (social proof + personal stats), 100% challenger](#2026-06-01-conversion-prompt-b-social-proof--personal-stats-100-challenger) | ⏸️ Paused (→ Prompt C; social proof made real + merged, dormant) |
@@ -37,13 +38,34 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-04-27 | [Mobile Hero Above the Fold](#2026-04-27-mobile-hero-above-the-fold) | 🔄 Implemented |
 | 2026-04-27 | [page_viewed_breathing Event + sessions_completed Sync Fix](#2026-04-27-page_viewed_breathing-event--sessions_completed-sync-fix) | 🔄 Implemented |
 
-**Roll-up by status (12 entries):** 🔄 10 Implemented · ⏸️ 1 Paused (Conversion Prompt B, superseded by Prompt C) · 🟡 1 Inconclusive (the 2026-05-12 Direct surge). First read on the 2026-05-19 checkpoint, full read 2026-06-02; mobile-redesign + UTM-tagging reads 2026-05-22 / 2026-06-05.
+**Roll-up by status (13 entries):** 🔄 11 Implemented · ⏸️ 1 Paused (Conversion Prompt B, superseded by Prompt C) · 🟡 1 Inconclusive (the 2026-05-12 Direct surge). First read on the 2026-05-19 checkpoint, full read 2026-06-02; mobile-redesign + UTM-tagging reads 2026-05-22 / 2026-06-05.
 
 See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state, [docs/UX-BACKLOG.md](UX-BACKLOG.md) for what's next, [docs/runbooks/weekly-funnel-refresh.md](runbooks/weekly-funnel-refresh.md) for how to pull the numbers.
 
 ---
 
 ## Active Experiments
+
+### 2026-06-21: /stats page — streak calendar + session stats for signed-in users
+
+**Hypothesis:** Signed-in users who can see their practice history (total minutes, sessions, streak, last 14 days) will return more often and be harder to churn — the page makes their investment visible, reinforcing the identity "I am someone who breathes." Secondary: the signed-out value-prop view of the page nudges first-time visitors who are close to signing up.
+
+**Change:** New page at `/stats` (linked from footer). Server-rendered for signed-in users: shows total minutes, sessions completed, live streak (0 if last_session_date older than yesterday — stale-streak fix), and a 14-day dot calendar derived from `current_streak + last_session_date`. Also shows the user's current preferred breathing pattern (from `user_settings.mode`, labelled "current pattern" — not a breakdown, since no per-session mode history is tracked yet). Signed-out state: value-prop copy + sign-in sheet CTA. Mode-per-session breakdown deferred — no `session_events` table exists yet.
+
+**Measurement design:** 28-day before/after on signed-in users (no split test — insufficient volume). Primary metric: **day-7 return rate** for signed-in users (currently 65% day-1 from FUNNEL-DASHBOARD.md; day-7 not yet measured — establish baseline first). Secondary: any lift in `signed_up` user count. Baseline snapshot (FUNNEL-DASHBOARD.md, refreshed 2026-05-08; note: ~6 weeks stale as of implementation):
+- Signed-in users total: 17 (17 successful signups)
+- Day-1 return rate (signed-in): 65% (11/17)
+- ~119 breathing_session_start users/wk (all, not just signed-in)
+- ~52 conversion_prompt_shown/wk; ~11.5% prompt→signup intent (6 users)
+
+**Pre-committed success criteria (measure after 2026-07-21 — 28 days post-merge):**
+- ✅ Success: day-7 signed-in return rate ≥ 75%, or new signups/wk +2 vs baseline
+- ❌ Failed: no measurable change in either metric after 28 days with ≥ 20 signed-in users observed
+- ⚪ Inconclusive: insufficient signed-in user volume to read (< 10 return events)
+
+**Status:** 🔄 Implemented
+
+---
 
 ### 2026-06-14: Conversion Prompt C (loss_aversion), 100% challenger
 
