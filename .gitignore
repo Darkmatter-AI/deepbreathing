@@ -7,7 +7,9 @@ apps/resonance-mobile/
 
 # next
 /.next
+.next.stale-*/
 /out
+tsconfig.tsbuildinfo
 
 # env
 .env
@@ -37,3 +39,11 @@ yarn-error.log*
 **/android/local.properties
 .vercel
 .env.local
+
+# claude code local config
+.claude/launch.json
+.claude/settings.local.json
+
+# stray cli output / one-off exports
+--full-page
+deepbreathingexercises_*_all-issues_*/

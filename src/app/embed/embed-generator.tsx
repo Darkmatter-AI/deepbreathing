@@ -75,10 +75,20 @@ function copyToClipboard(value: string): Promise<void> {
   return Promise.resolve();
 }
 
-function buildEmbedUrl(slug: string, theme: ThemeOption, localePrefix: string, duration: number | null): string {
+function buildEmbedUrl(
+  slug: string,
+  theme: ThemeOption,
+  localePrefix: string,
+  duration: number | null,
+  binaural: boolean,
+  eyesClosed: boolean,
+): string {
   const params = new URLSearchParams();
   if (theme !== 'auto') params.set('theme', theme);
   if (duration !== null) params.set('duration', String(duration));
+  // Only emit non-default values so existing snippets stay short.
+  if (!binaural) params.set('binaural', '0');
+  if (eyesClosed) params.set('eyesClosed', '1');
   const qs = params.toString();
   const base = localePrefix
     ? `https://deepbreathingexercises.com${localePrefix}/embed`
@@ -91,6 +101,10 @@ export function EmbedGenerator() {
   const [theme, setTheme] = useState<ThemeOption>('auto');
   const [locale, setLocale] = useState<LocaleCode>('en');
   const [duration, setDuration] = useState<number | null>(60);
+  const [binaural, setBinaural] = useState(true);
+  // eyesClosed param plumbing kept in URL builder for internal testing, but
+  // not surfaced as a generator toggle until narration ships.
+  const eyesClosed = false;
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
@@ -99,12 +113,14 @@ export function EmbedGenerator() {
 
   const localePrefix = LOCALE_OPTIONS.find(l => l.code === locale)?.prefix ?? '';
   const selected = patterns.find(p => p.slug === selectedSlug) ?? patterns[0];
-  const embedUrl = buildEmbedUrl(selected.slug, theme, localePrefix, duration);
+  const embedUrl = buildEmbedUrl(selected.slug, theme, localePrefix, duration, binaural, eyesClosed);
   const snippet = `<iframe src="${embedUrl}" width="100%" height="500" frameborder="0" allow="autoplay" style="border-radius:16px;"></iframe>`;
 
   const previewParams = new URLSearchParams();
   if (theme !== 'auto') previewParams.set('theme', theme);
   if (duration !== null) previewParams.set('duration', String(duration));
+  if (!binaural) previewParams.set('binaural', '0');
+  if (eyesClosed) previewParams.set('eyesClosed', '1');
   const previewQs = previewParams.toString();
   const previewSrc = `${localePrefix}/embed/${selected.slug}${previewQs ? `?${previewQs}` : ''}`;
 
@@ -195,12 +211,28 @@ export function EmbedGenerator() {
         </div>
       </section>
 
+      {/* Sound options */}
+      <section className="mt-8">
+        <h2 className="text-sm uppercase tracking-widest text-muted-foreground mb-4">Sound</h2>
+        <div className="flex flex-wrap items-center gap-3">
+          <label className="inline-flex cursor-pointer items-center gap-2 rounded-xl border border-border bg-card px-3 py-2 text-sm font-medium text-card-foreground transition-colors hover:border-primary/40">
+            <input
+              type="checkbox"
+              checked={binaural}
+              onChange={e => setBinaural(e.target.checked)}
+              className="h-4 w-4 accent-primary"
+            />
+            Binaural beats (headphones recommended)
+          </label>
+        </div>
+      </section>
+
       {/* Preview */}
       <section className="mt-10">
         <h2 className="text-sm uppercase tracking-widest text-muted-foreground mb-4">Preview</h2>
         <div className="rounded-2xl border border-border overflow-hidden aspect-video">
           <iframe
-            key={`${selected.slug}-${theme}-${locale}-${duration}`}
+            key={`${selected.slug}-${theme}-${locale}-${duration}-${binaural ? 1 : 0}-${eyesClosed ? 1 : 0}`}
             src={previewSrc}
             width="100%"
             height="100%"
