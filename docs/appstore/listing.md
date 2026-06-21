@@ -1,11 +1,33 @@
 # App Store Connect — Listing Copy
 
-## App Name (30 char max)
+## App Name
 
+Two different names, often confused:
+
+1. **Home-screen name** = `CFBundleDisplayName`. Does NOT need to be globally
+   unique. Set this to **`Deep Breathing`** so it shows as just "Deep Breathing"
+   under the icon.
+2. **App Store listing name** (30 char) = the App Store Connect track name. This
+   MUST be globally unique across the whole App Store.
+
+⚠️ **Availability check (live US store, 2026-06-21):** the exact names
+**"Deep Breathing"** (Oratu, s.r.o.) and **"Deep Breathing Exercises"** (Thach
+Nguyen Trong) are BOTH already taken. So the listing name cannot be either — it
+needs a unique differentiator. (Final confirmation happens in App Store Connect
+tomorrow; ASC also blocks names merely *reserved* by others, which the public
+store doesn't show.)
+
+**Listing-name candidates (lead with "Deep Breathing", unique suffix):**
 ```
-Deep Breathing Exercises
+Deep Breathing: Calm & Sleep
+Deep Breathing – Box & 4-7-8
+Deep Breathing: Breathe Easy
+Deep Breathing — Breathing App
 ```
-(24 characters — fits)
+Recommendation: **`Deep Breathing: Calm & Sleep`** — leads with the brand words
+(what shows in search), highest-intent keywords in the suffix, and the home-icon
+name stays the clean "Deep Breathing". Have a 2nd choice ready in case the
+preferred one is reserved.
 
 ---
 
