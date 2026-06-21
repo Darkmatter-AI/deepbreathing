@@ -116,7 +116,7 @@ export default function SupportPage() {
                 >
                   support@deepbreathingexercises.com
                 </a>{" "}
-                with the subject line "Delete my account" and we will permanently remove your data within 30 days.
+                with the subject line &ldquo;Delete my account&rdquo; and we will permanently remove your data within 30 days.
               </p>
             </div>
             <div>
