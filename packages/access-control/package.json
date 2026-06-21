@@ -4,6 +4,9 @@
   "private": true,
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "scripts": {
+    "test": "../../node_modules/.bin/sucrase-node src/resolve-entitlement.test.ts"
+  },
   "dependencies": {
     "@resonance/domain": "workspace:^"
   }

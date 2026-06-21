@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Concept B: Concentric Breathing Rings
+     Concentric ripple rings emanating from a glowing center, echoing the
+     expand/contract breathing cycle. Rings fade and thin toward the outer
+     edge so the motif reads cleanly at small sizes.
+     Background: deep navy with a subtle warm-cool transition.
+     1024 x 1024, no transparency. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+
+    <!-- Background: near-black navy → deep teal-blue -->
+    <linearGradient id="bg-b" x1="0.3" y1="0" x2="0.7" y2="1">
+      <stop offset="0%"   stop-color="#060e1f"/>
+      <stop offset="55%"  stop-color="#0c2645"/>
+      <stop offset="100%" stop-color="#0d3d5c"/>
+    </linearGradient>
+
+    <!-- Center orb glow -->
+    <radialGradient id="center-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#e0f4ff" stop-opacity="1"/>
+      <stop offset="30%"  stop-color="#7cc9ff" stop-opacity="1"/>
+      <stop offset="70%"  stop-color="#2a7fc4" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#0d3268" stop-opacity="1"/>
+    </radialGradient>
+
+    <!-- Specular on center orb -->
+    <radialGradient id="center-spec" cx="38%" cy="30%" r="40%">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="50%"  stop-color="#cceeff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Ring fade: used to blend outer rings into dark bg -->
+    <radialGradient id="ring-mask" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="65%"  stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Bloom/glow filter -->
+    <filter id="glow-b" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Soft outer bloom for the center orb -->
+    <filter id="center-bloom" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="32" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Vignette -->
+    <radialGradient id="vig-b" cx="50%" cy="50%" r="70%">
+      <stop offset="60%"  stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.38"/>
+    </radialGradient>
+
+  </defs>
+
+  <!-- ── Background ── -->
+  <rect width="1024" height="1024" fill="url(#bg-b)"/>
+
+  <!-- ── Concentric rings — outermost to innermost so they layer correctly ── -->
+  <!-- Ring 5 — faintest, widest -->
+  <circle cx="512" cy="512" r="430" fill="none"
+          stroke="#3a8bc4" stroke-width="1.5" stroke-opacity="0.14"/>
+
+  <!-- Ring 4 -->
+  <circle cx="512" cy="512" r="360" fill="none"
+          stroke="#4a9fd8" stroke-width="2.0" stroke-opacity="0.22" filter="url(#glow-b)"/>
+
+  <!-- Ring 3 -->
+  <circle cx="512" cy="512" r="290" fill="none"
+          stroke="#5ab2f0" stroke-width="2.5" stroke-opacity="0.33" filter="url(#glow-b)"/>
+
+  <!-- Ring 2 -->
+  <circle cx="512" cy="512" r="218" fill="none"
+          stroke="#72c4ff" stroke-width="3.5" stroke-opacity="0.48" filter="url(#glow-b)"/>
+
+  <!-- Ring 1 — brightest, closest to center -->
+  <circle cx="512" cy="512" r="148" fill="none"
+          stroke="#a0d8ff" stroke-width="5" stroke-opacity="0.70" filter="url(#glow-b)"/>
+
+  <!-- ── Center orb body ── -->
+  <g filter="url(#center-bloom)">
+    <circle cx="512" cy="512" r="72" fill="url(#center-glow)"/>
+  </g>
+
+  <!-- ── Center orb specular highlight ── -->
+  <ellipse cx="492" cy="494" rx="28" ry="24" fill="url(#center-spec)"/>
+
+  <!-- ── Vignette ── -->
+  <rect width="1024" height="1024" fill="url(#vig-b)"/>
+
+</svg>

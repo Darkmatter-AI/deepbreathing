@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Splash Screen — Dark Mode
+     Same centered orb mark, on a near-black background matching the in-app
+     dark breathing canvas. The glow reads more dramatically on dark.
+     Canvas: 1242 × 2688 (iPhone 14 Pro Max portrait).
+     No transparency. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1242" height="2688" viewBox="0 0 1242 2688">
+  <defs>
+
+    <!-- Dark background: near-black navy -->
+    <linearGradient id="bg-splash-dark" x1="0.3" y1="0" x2="0.7" y2="1">
+      <stop offset="0%"   stop-color="#07101f"/>
+      <stop offset="55%"  stop-color="#0c1f3a"/>
+      <stop offset="100%" stop-color="#102840"/>
+    </linearGradient>
+
+    <!-- Orb body (same as concept A) -->
+    <radialGradient id="orb-dark" cx="42%" cy="35%" r="58%">
+      <stop offset="0%"   stop-color="#e8f6ff"/>
+      <stop offset="22%"  stop-color="#b8deff"/>
+      <stop offset="55%"  stop-color="#4fa3e8"/>
+      <stop offset="85%"  stop-color="#1a5da8"/>
+      <stop offset="100%" stop-color="#0d3268"/>
+    </radialGradient>
+
+    <!-- Orb specular -->
+    <radialGradient id="orb-spec-dark" cx="36%" cy="28%" r="32%">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.88"/>
+      <stop offset="45%"  stop-color="#d0eeff" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Halo -->
+    <radialGradient id="halo-dark" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#6bbfff" stop-opacity="0.48"/>
+      <stop offset="60%"  stop-color="#3a8fd4" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#1a5faa" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Bloom -->
+    <filter id="bloom-dark" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Orb shadow (subtle on dark bg) -->
+    <filter id="orb-shadow-dark" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="44"
+                    flood-color="#6bbfff" flood-opacity="0.22"/>
+    </filter>
+
+    <!-- Vignette -->
+    <radialGradient id="vig-splash-dark" cx="50%" cy="50%" r="70%">
+      <stop offset="60%"  stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.35"/>
+    </radialGradient>
+
+  </defs>
+
+  <!-- ── Background ── -->
+  <rect width="1242" height="2688" fill="url(#bg-splash-dark)"/>
+
+  <!-- ── Mark centered ── -->
+
+  <!-- Outer halo bloom -->
+  <circle cx="621" cy="1130" r="300" fill="url(#halo-dark)" filter="url(#bloom-dark)"/>
+
+  <!-- Breathing ring 1 (outer) -->
+  <circle cx="621" cy="1130" r="220" fill="none"
+          stroke="#5ab2f0" stroke-width="2" stroke-opacity="0.25" filter="url(#bloom-dark)"/>
+
+  <!-- Breathing ring 2 (inner) -->
+  <circle cx="621" cy="1130" r="188" fill="none"
+          stroke="#7cc9ff" stroke-width="3" stroke-opacity="0.42" filter="url(#bloom-dark)"/>
+
+  <!-- Orb body -->
+  <g filter="url(#orb-shadow-dark)">
+    <circle cx="621" cy="1130" r="148" fill="url(#orb-dark)"/>
+  </g>
+
+  <!-- Specular -->
+  <ellipse cx="572" cy="1062" rx="62" ry="52" fill="url(#orb-spec-dark)"/>
+
+  <!-- ── App name wordmark ── -->
+  <text x="621" y="1358"
+        font-family="-apple-system, 'SF Pro Rounded', 'Helvetica Neue', sans-serif"
+        font-size="42"
+        font-weight="300"
+        letter-spacing="8"
+        text-anchor="middle"
+        fill="#7cc9ff"
+        fill-opacity="0.62">DEEP BREATHING</text>
+
+  <!-- ── Vignette ── -->
+  <rect width="1242" height="2688" fill="url(#vig-splash-dark)"/>
+
+</svg>

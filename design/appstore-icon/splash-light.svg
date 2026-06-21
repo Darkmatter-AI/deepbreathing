@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Splash Screen — Light Mode
+     Centered logo mark on cream #fdf8f2 background.
+     The mark is a compact version of Concept A's luminous orb with a
+     single soft breathing ring around it — immediately recognisable but
+     simpler than the icon (no ring cascade) so it scans on a white canvas.
+     Canvas: 1242 × 2688 (iPhone 14 Pro Max portrait logical resolution).
+     No transparency. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1242" height="2688" viewBox="0 0 1242 2688">
+  <defs>
+
+    <!-- Cream background -->
+    <linearGradient id="bg-splash-light" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#fdf8f2"/>
+      <stop offset="100%" stop-color="#f4ede2"/>
+    </linearGradient>
+
+    <!-- Orb body -->
+    <radialGradient id="orb-light" cx="42%" cy="35%" r="58%">
+      <stop offset="0%"   stop-color="#e8f6ff"/>
+      <stop offset="22%"  stop-color="#b8deff"/>
+      <stop offset="55%"  stop-color="#4fa3e8"/>
+      <stop offset="85%"  stop-color="#1a5da8"/>
+      <stop offset="100%" stop-color="#0d3268"/>
+    </radialGradient>
+
+    <!-- Orb specular -->
+    <radialGradient id="orb-spec-light" cx="36%" cy="28%" r="32%">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.88"/>
+      <stop offset="45%"  stop-color="#d0eeff" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Halo ring gradient -->
+    <radialGradient id="halo-light" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#5ab2f0" stop-opacity="0.28"/>
+      <stop offset="70%"  stop-color="#3a8fd4" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#3a8fd4" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Bloom filter -->
+    <filter id="bloom-light" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="22" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Shadow for orb on light bg -->
+    <filter id="orb-shadow-light" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="36"
+                    flood-color="#1a5499" flood-opacity="0.18"/>
+    </filter>
+
+  </defs>
+
+  <!-- ── Background ── -->
+  <rect width="1242" height="2688" fill="url(#bg-splash-light)"/>
+
+  <!-- ── Mark centered at vertical ~42% to feel balanced with status bar ── -->
+  <!-- cx=621, cy≈1130 -->
+
+  <!-- Outer halo -->
+  <circle cx="621" cy="1130" r="250" fill="url(#halo-light)" filter="url(#bloom-light)"/>
+
+  <!-- Breathing ring -->
+  <circle cx="621" cy="1130" r="188" fill="none"
+          stroke="#5ab2f0" stroke-width="3" stroke-opacity="0.35" filter="url(#bloom-light)"/>
+
+  <!-- Orb body -->
+  <g filter="url(#orb-shadow-light)">
+    <circle cx="621" cy="1130" r="148" fill="url(#orb-light)"/>
+  </g>
+
+  <!-- Specular -->
+  <ellipse cx="572" cy="1062" rx="62" ry="52" fill="url(#orb-spec-light)"/>
+
+  <!-- ── App name wordmark — subtle, small, below the mark ── -->
+  <!-- Using SVG text with a clean system-style approach: no thin serifs -->
+  <text x="621" y="1358"
+        font-family="-apple-system, 'SF Pro Rounded', 'Helvetica Neue', sans-serif"
+        font-size="42"
+        font-weight="300"
+        letter-spacing="8"
+        text-anchor="middle"
+        fill="#1a5da8"
+        fill-opacity="0.55">DEEP BREATHING</text>
+
+</svg>
