@@ -2,32 +2,35 @@
 
 ## App Name
 
-Two different names, often confused:
+Brand: **Deep Breathing Exercises** (we own the deepbreathingexercises.com
+domain — strengthens the listing, the marketing URL, and ASO). Three fields,
+often confused:
 
-1. **Home-screen name** = `CFBundleDisplayName`. Does NOT need to be globally
-   unique. Set this to **`Deep Breathing`** so it shows as just "Deep Breathing"
-   under the icon.
-2. **App Store listing name** (30 char) = the App Store Connect track name. This
-   MUST be globally unique across the whole App Store.
+1. **Home-screen name** = `CFBundleDisplayName`. Not globally unique; iOS
+   truncates to ~12 chars under the icon anyway. Set **`Deep Breathing`**.
+2. **App Store listing name** (30 char, MUST be globally unique).
+3. **Subtitle** (separate 30 char field, shown under the name — NOT subject to
+   the name-uniqueness rule). This is where the extra keywords go.
 
-⚠️ **Availability check (live US store, 2026-06-21):** the exact names
-**"Deep Breathing"** (Oratu, s.r.o.) and **"Deep Breathing Exercises"** (Thach
-Nguyen Trong) are BOTH already taken. So the listing name cannot be either — it
-needs a unique differentiator. (Final confirmation happens in App Store Connect
-tomorrow; ASC also blocks names merely *reserved* by others, which the public
-store doesn't show.)
+⚠️ **Two constraints collide:**
+- **Taken:** the exact name **"Deep Breathing Exercises"** (24 ch) is held by
+  another live app (Thach Nguyen Trong). Unless our domain/brand takeover also
+  acquired that app/developer account, ASC will reject the bare exact name.
+- **Length:** the desired **"Deep Breathing Exercises: Calm & Sleep" = 38 ch**,
+  over the 30 limit. "& Sleep" must move to the Subtitle field.
 
-**Listing-name candidates (lead with "Deep Breathing", unique suffix):**
+**Resolution — name vs subtitle split:**
 ```
-Deep Breathing: Calm & Sleep
-Deep Breathing – Box & 4-7-8
-Deep Breathing: Breathe Easy
-Deep Breathing — Breathing App
+Name (30):     Deep Breathing Exercises: Calm     ← 30 ch exactly, unique
+Subtitle (30): Sleep, Box & 4-7-8 Breathing       ← carries "Sleep" + keywords
 ```
-Recommendation: **`Deep Breathing: Calm & Sleep`** — leads with the brand words
-(what shows in search), highest-intent keywords in the suffix, and the home-icon
-name stays the clean "Deep Breathing". Have a 2nd choice ready in case the
-preferred one is reserved.
+This is unique (distinct string from the taken bare name), fits, leads with the
+full brand, and still surfaces Calm + Sleep + the techniques.
+
+Alternatives if "…: Calm" is reserved: `Deep Breathing Exercises: Box` (29) or
+`Deep Breathing Exercises: Relax` (31 — too long, drop). If the takeover DID
+include the existing app, transfer it and use the clean **`Deep Breathing
+Exercises`** as the name with the subtitle above. Confirm in ASC tomorrow.
 
 ---
 
