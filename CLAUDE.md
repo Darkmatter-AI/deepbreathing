@@ -31,6 +31,25 @@ Auth: `Authorization: Bearer $DKMT_CC_KEY`
 
 How we work on `deepbreathingexercises.com`. Read this before starting work; the system here exists so changes don't ship "half-haz" without baselines or measurement.
 
+## Common operations — go straight here
+
+Before exploring, check whether your task is one of these. Each has a canonical path so you don't rediscover it.
+
+| When you need to… | Canonical path |
+|---|---|
+| Check users / traffic / signups / funnel health (GA4) | skill **`dbe-analytics`** |
+| Count real new accounts, or debug signup / auth | skill **`dbe-accounts-auth`** |
+| Submit translated pages to GSC / Bing for indexing | skill **`daily-indexing`** |
+| Add or translate a new language | skill **`add-language`** (then **`seo-keywords`**) |
+| Any SEO change (title, meta, redirect, sitemap, hreflang) | read [`docs/SEO-EXPERIMENTS.md`](docs/SEO-EXPERIMENTS.md) FIRST, then log there |
+| Any product/UX change measured by the funnel | log [`docs/PRODUCT-EXPERIMENTS.md`](docs/PRODUCT-EXPERIMENTS.md) |
+| "How is X doing?" — current funnel state | [`docs/FUNNEL-DASHBOARD.md`](docs/FUNNEL-DASHBOARD.md) |
+| Weekly funnel refresh | [`docs/runbooks/weekly-funnel-refresh.md`](docs/runbooks/weekly-funnel-refresh.md) |
+| Analytics / SEO / DB tool IDs + gotchas | [`docs/runbooks/tools-and-data-sources.md`](docs/runbooks/tools-and-data-sources.md) |
+| Ship a change: merge → deploy to prod → cache-bust → browser-verify | deploy section of [`docs/runbooks/tools-and-data-sources.md`](docs/runbooks/tools-and-data-sources.md) _(dedicated skill pending)_ |
+
+Project skills live in `.claude/skills/` and load on demand by their trigger description; invoke by name.
+
 ## Experiments — before you ship
 
 **STOP — read [`docs/SEO-EXPERIMENTS.md`](docs/SEO-EXPERIMENTS.md) FIRST.** Any SEO-adjacent task — a GSC/Bing alert, an indexing report, a redirect, a title/meta change, a sitemap or hreflang question, a crawl-health investigation — starts by reviewing that log. Many "new" problems are already diagnosed there as benign or already-fixed (e.g. the recurring "Page with redirect" WNC alert is a known no-action finding). Do not re-investigate from scratch and do not ship a change before checking whether it was already tried. This is non-negotiable; it is the whole reason the log exists.
