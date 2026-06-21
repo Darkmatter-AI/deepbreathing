@@ -88,3 +88,5 @@ export function deriveCapabilities(snapshot: EntitlementSnapshot | null): Capabi
   if (snapshot.capabilities.length > 0) return snapshot.capabilities;
   return PLAN_CAPABILITIES[snapshot.plan];
 }
+
+export * from "./resolve-entitlement";

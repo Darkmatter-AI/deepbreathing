@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  transpilePackages: [
+    '@resonance/access-control',
+    '@resonance/api-contracts',
+    '@resonance/domain',
+  ],
   async headers() {
     return [
       {

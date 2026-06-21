@@ -31,6 +31,15 @@ importers:
       '@react-email/render':
         specifier: ^2.0.4
         version: 2.0.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@resonance/access-control':
+        specifier: workspace:^
+        version: link:packages/access-control
+      '@resonance/api-contracts':
+        specifier: workspace:^
+        version: link:packages/api-contracts
+      '@resonance/domain':
+        specifier: workspace:^
+        version: link:packages/domain
       '@vercel/analytics':
         specifier: ^1.5.0
         version: 1.5.0(next@13.5.6(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
