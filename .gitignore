@@ -1,9 +1,11 @@
 # dependencies
 /node_modules
 /.pnpm-store
-apps/mobile/
 apps/resonance-app/
 apps/resonance-mobile/
+# apps/mobile is tracked; its CNG-generated native dirs are not
+apps/mobile/ios/
+apps/mobile/android/
 
 # next
 /.next
