@@ -18,9 +18,9 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
-| 2026-06-15 | [Nofollow + Robots-Disallow ?duration= Timer Deep-Links (Hreflang to Non-Canonical)](#2026-06-15-nofollow--robots-disallow-duration-timer-deep-links-hreflang-to-non-canonical) | 🔄 Implemented |
+| 2026-06-15 | [Nofollow + Robots-Disallow ?duration= Timer Deep-Links (Hreflang to Non-Canonical)](#2026-06-15-nofollow--robots-disallow-duration-timer-deep-links-hreflang-to-non-canonical) | ✅ Success |
 | 2026-06-14 | [GSC "Page with redirect" Alert (WNC-20237597) — Reviewed, Benign](#2026-06-14-gsc-page-with-redirect-alert-wnc-20237597--reviewed-benign) | 📊 Snapshot |
-| 2026-06-13 | [Fix "Hreflang to non-canonical" — home-page trailing slash](#2026-06-13-fix-hreflang-to-non-canonical--home-page-trailing-slash) | 🔄 Implemented |
+| 2026-06-13 | [Fix "Hreflang to non-canonical" — home-page trailing slash](#2026-06-13-fix-hreflang-to-non-canonical--home-page-trailing-slash) | ❌ Failed |
 | 2026-06-13 | [Locale Cache Warmer — Health Score Crash Fix (40→92)](#2026-06-13-locale-cache-warmer--health-score-crash-fix) | ✅ Success |
 | 2026-06-13 | [Tummo CTR Title + Meta Rewrite — /breathe/tummo](#2026-06-13-tummo-ctr-title--meta-rewrite) | 🔄 Implemented |
 | 2026-06-13 | [Owned YouTube Videos + VideoObject Schema on /breathe/* Pages](#2026-06-13-owned-youtube-videos--videoobject-schema) | 🔄 Implemented |
@@ -73,7 +73,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-01-06 | [Navy SEAL Content Expansion](#2026-01-06-navy-seal-content-expansion) | ❌ Failed |
 | 2026-01-06 | [CTR Title Rewrites (Batch 1)](#2026-01-06-ctr-title-rewrites-batch-1) | ✅ Success |
 
-**Roll-up by status (53 entries):** ✅ 3 Success · ❌ 9 Failed · ⚪ 12 Inconclusive · 🟡 1 Mixed · ⏳ 0 Waiting · 🔄 20 Implemented · 📊 8 Snapshot. *(2026-06-21: audio-v2 rebase folded in the 2026-05-18 Indexing-Recovery Checkpoint snapshot. 2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
+**Roll-up by status (53 entries):** ✅ 4 Success · ❌ 10 Failed · ⚪ 12 Inconclusive · 🟡 1 Mixed · ⏳ 0 Waiting · 🔄 18 Implemented · 📊 8 Snapshot. *(2026-06-22: settled the two hreflang entries on the 20 Jun Ahrefs crawl — ?duration= nofollow fix → ✅ Success (50→0), home-page trailing-slash fix → ❌ Failed (didn't move the number, superseded). 2026-06-21: audio-v2 rebase folded in the 2026-05-18 Indexing-Recovery Checkpoint snapshot. 2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
 
 See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of what worked / failed / strategic insights from the first month of experiments.
 
@@ -103,9 +103,14 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 - ⚪ **Inconclusive:** 6–20 (partial; Ahrefs may not have completed a full locale recrawl yet).
 - ❌ **Failed:** stays ≥40 after a confirmed full recrawl → Ahrefs is finding them by a path these two signals don't cover, and the durable proxy-side fix is required.
 
-**Caveats:** Clearance is not instant — needs a full post-deploy Ahrefs recrawl; the 50 count predates this fix. The durable proxy-side fix (eliminates the root asymmetry) is to add `duration` to the tenant's `strip_query_params` in mass-translate KV — but that REPLACES the defaults, so the value must include `utm_*,fbclid,gclid,ref,_ga,mc_*`. Requires the mass-translate team to write tenant KV (no `set_site_config` MCP). Logged as a follow-up; not in scope here.
+**Result (2026-06-22, Ahrefs Site Audit project 9300406 — 20 Jun crawl vs 14 Jun, post-fix): ✅ Success.**
+- "Hreflang to non-canonical": **50 → 0** (Crawled 0; all 50 Missing/Removed). Well under the ≤5 bar — the #1 error class is now empty.
+- Mechanism confirmed (not a robots.txt re-bucket): "Page has nofollow outgoing internal links" rose to **42 new** (36 indexable + 6 not-indexable), so the `rel="nofollow"` on `?duration=` links is live and crawled; "Robots.txt rules disallow to crawl" = **0**. The `?duration=` URLs left the crawl graph because Ahrefs no longer discovers them via the nofollowed links. The same ~50 URLs also dropped out of "Open Graph URL not matching canonical" (Removed 50) and "Indexable page not in sitemap" (Missing 50) — one consistent set leaving the crawl.
+- GSC + Bing `?duration=` impressions (28d): **0 / 0** (per `deepbreathing-hreflang-check`) — zero-value URLs, no ranking loss from removing them.
 
-**Status:** 🔄 Implemented (not yet measured)
+**Caveats:** Clearance is not instant — needs a full post-deploy Ahrefs recrawl; the 50 count predated this fix. The durable proxy-side fix (eliminates the root asymmetry) is to add `duration` to the tenant's `strip_query_params` in mass-translate KV — but that REPLACES the defaults, so the value must include `utm_*,fbclid,gclid,ref,_ga,mc_*`. Requires the mass-translate team to write tenant KV (no `set_site_config` MCP). Not needed now that the nofollow signal cleared the error; keep only as a belt-and-suspenders option if the URLs ever resurface.
+
+**Status:** ✅ Success (measured 2026-06-22)
 
 ---
 
@@ -151,8 +156,10 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 **Measure after:** 2026-06-20
 
 > **Note (2026-06-15):** Superseded — this did **not** move the number. The re-crawl showed "Hreflang to non-canonical" unchanged at 50; the true root cause was `?duration=` timer-param URLs on locale pages, fixed in the [2026-06-15 entry](#2026-06-15-nofollow--robots-disallow-duration-timer-deep-links-hreflang-to-non-canonical). Kept for history; formal status to be settled on the 2026-06-20 measure date.
+>
+> **Settled (2026-06-22): ❌ Failed.** This fix's own hypothesis (home-page trailing slash → ≤5) was wrong: its target metric stayed at 50 on the post-deploy crawl. The error class only cleared (50 → 0, 20 Jun crawl) after the unrelated [2026-06-15 `?duration=` nofollow fix](#2026-06-15-nofollow--robots-disallow-duration-timer-deep-links-hreflang-to-non-canonical) — so the trailing-slash mismatch was not the root cause. The trailing-slash correction is harmless and still shipped, just not what fixed hreflang.
 
-🔄 Implemented
+❌ Failed
 
 ---
 
