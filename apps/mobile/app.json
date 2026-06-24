@@ -16,7 +16,7 @@
     "backgroundColor": "#fdf8f2",
     "ios": {
       "bundleIdentifier": "com.deepbreathing.app",
-      "supportsTablet": true,
+      "supportsTablet": false,
       "privacyManifests": {
         "NSPrivacyTracking": false,
         "NSPrivacyTrackingDomains": [],
@@ -90,7 +90,9 @@
         }
       ],
       "expo-audio",
-      "expo-localization"
+      "expo-localization",
+      "expo-asset",
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true,

@@ -165,27 +165,20 @@ Apple requires screenshots for every device size you support. Required sizes (pi
 
 Review notes are shown to the App Store reviewer. Include:
 
+> **2026-06-24 audit update:** the v1 binary has NO account/sign-in (the "optional account"
+> was never built) and does NOT expose Wim Hof. So: no demo account, and do not mention a Wim
+> Hof safety warning (none exists, because Wim Hof is not in v1). Corrected notes below.
+
 ```
-This app guides users through structured breathing exercises using an animated
-orb visualizer, native haptic feedback, and audio cue tones.
-
-Account creation is optional. To test with an account:
-  Email: [demo account email — create one before submission]
-  Password: [demo account password]
-
-Guest mode is the default and requires no login. All breathing sessions work
-without an account and without network access.
-
-The Wim Hof breathing mode includes an in-app warning advising users not to
-practice breath retention near water and to consult a doctor if they have a
-cardiovascular or respiratory condition.
-
-No special hardware or external services are required to review the app.
+This app requires no account or sign-in. All features (all breathing modes, audio, haptics,
+timer, local stats, dark/light mode) are fully available to any user immediately on launch.
+No demo credentials are needed. The app renders bundled local UI in an embedded view and does
+not load any external website or allow web navigation.
 ```
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 13.1 | Demo account created | 🔲 | Required because optional login exists |
+| 13.1 | Demo account created | ✅ N/A | NOT needed — v1 ships no sign-in/account (audit 2026-06-24). Leave ASC sign-in toggle OFF, demo fields empty |
 | 13.2 | Review notes drafted and entered in ASC | 🔲 | |
 
 ---

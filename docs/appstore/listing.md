@@ -1,5 +1,10 @@
 # App Store Connect — Listing Copy
 
+> ⚠️ **2026-06-24 audit reconciliation:** the feature copy below is PRE-AUDIT and advertises
+> features not reachable in the shipped free v1 (Wim Hof, optional account/sync, a 2-min timer).
+> **Use [`listing-FINAL.md`](./listing-FINAL.md) for the actual values you paste into App Store
+> Connect.** This file is kept for the naming-decision history only.
+
 ## App Name
 
 Brand: **Deep Breathing Exercises** (we own the deepbreathingexercises.com

@@ -1,5 +1,13 @@
 # App Review Risk Audit — Health Claims & Minimum Functionality
 
+> ⚠️ **2026-06-24 audit update — v1 scope:** Wim Hof is NOT exposed in the shipped v1 and has
+> been removed from the listing, which eliminates the highest 1.4.1 item (breath retention /
+> hyperventilation). The promised in-app Wim Hof safety warning is therefore **N/A for v1** (it
+> was never built; do not tell the reviewer it exists). "Physiological Sigh" is advertised
+> without the word "panic"; the in-app mode label is still "Panic Reset (Double Inhale)"
+> (`breathing-web/constants.ts:34`) — relabel to "Stress Reset" in a future build (non-blocking).
+> Anything below referring to a Wim Hof warning applies only once Wim Hof ships in v1.1.
+
 ## Guideline 1.4.1 — Physical Harm (Medical Claims)
 
 ### Risk level: Low-to-Medium (manageable with disclaimers)

@@ -117,7 +117,7 @@ importers:
   apps/mobile:
     dependencies:
       '@expo/ui':
-        specifier: ~56.0.16
+        specifier: ~56.0.18
         version: 56.0.18(@babel/core@7.28.6)(@types/react-dom@18.3.7(@types/react@19.2.17))(@types/react@19.2.17)(expo@56.0.12)(react-dom@19.2.3(react@19.2.3))(react-native-reanimated@4.3.1(react-native-worklets@0.8.3(@babel/core@7.28.6)(@react-native/metro-config@0.85.3(@babel/core@7.28.6))(react-native@0.85.3(@babel/core@7.28.6)(@react-native/metro-config@0.85.3(@babel/core@7.28.6))(@types/react@19.2.17)(react@19.2.3))(react@19.2.3))(react-native@0.85.3(@babel/core@7.28.6)(@react-native/metro-config@0.85.3(@babel/core@7.28.6))(@types/react@19.2.17)(react@19.2.3))(react@19.2.3))(react-native-worklets@0.8.3(@babel/core@7.28.6)(@react-native/metro-config@0.85.3(@babel/core@7.28.6))(react-native@0.85.3(@babel/core@7.28.6)(@react-native/metro-config@0.85.3(@babel/core@7.28.6))(@types/react@19.2.17)(react@19.2.3))(react@19.2.3))(react-native@0.85.3(@babel/core@7.28.6)(@react-native/metro-config@0.85.3(@babel/core@7.28.6))(@types/react@19.2.17)(react@19.2.3))(react@19.2.3)
       '@radix-ui/react-dialog':
         specifier: ^1.1.16
@@ -134,17 +134,20 @@ importers:
       expo:
         specifier: ~56.0.9
         version: 56.0.12(@babel/core@7.28.6)(@expo/dom-webview@56.0.5)(@expo/metro-runtime@6.1.2)(expo-router@56.2.11)(react-dom@19.2.3(react@19.2.3))(react-native-web@0.21.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-native-worklets@0.8.3(@babel/core@7.28.6)(@react-native/metro-config@0.85.3(@babel/core@7.28.6))(react-native@0.85.3(@babel/core@7.28.6)(@react-native/metro-config@0.85.3(@babel/core@7.28.6))(@types/react@19.2.17)(react@19.2.3))(react@19.2.3))(react-native@0.85.3(@babel/core@7.28.6)(@react-native/metro-config@0.85.3(@babel/core@7.28.6))(@types/react@19.2.17)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
+      expo-asset:
+        specifier: ~56.0.17
+        version: 56.0.17(expo@56.0.12)(react-native@0.85.3(@babel/core@7.28.6)(@react-native/metro-config@0.85.3(@babel/core@7.28.6))(@types/react@19.2.17)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
       expo-audio:
         specifier: ~56.0.11
         version: 56.0.12(expo-asset@56.0.17(expo@56.0.12)(react-native@0.85.3(@babel/core@7.28.6)(@react-native/metro-config@0.85.3(@babel/core@7.28.6))(@types/react@19.2.17)(react@19.2.3))(react@19.2.3)(typescript@6.0.3))(expo@56.0.12)(react-native@0.85.3(@babel/core@7.28.6)(@react-native/metro-config@0.85.3(@babel/core@7.28.6))(@types/react@19.2.17)(react@19.2.3))(react@19.2.3)
       expo-constants:
-        specifier: ~56.0.17
+        specifier: ~56.0.18
         version: 56.0.18(expo@56.0.12)(react-native@0.85.3(@babel/core@7.28.6)(@react-native/metro-config@0.85.3(@babel/core@7.28.6))(@types/react@19.2.17)(react@19.2.3))
       expo-device:
         specifier: ~56.0.4
         version: 56.0.4(expo@56.0.12)
       expo-font:
-        specifier: ~56.0.5
+        specifier: ~56.0.7
         version: 56.0.7(expo@56.0.12)(react-native@0.85.3(@babel/core@7.28.6)(@react-native/metro-config@0.85.3(@babel/core@7.28.6))(@types/react@19.2.17)(react@19.2.3))(react@19.2.3)
       expo-glass-effect:
         specifier: ~56.0.4
@@ -165,7 +168,7 @@ importers:
         specifier: ~56.0.6
         version: 56.0.6(expo@56.0.12)(react@19.2.3)
       expo-router:
-        specifier: ~56.2.9
+        specifier: ~56.2.11
         version: 56.2.11(2130b28755f2c7692daa86b22463cf75)
       expo-splash-screen:
         specifier: ~56.0.10
@@ -9874,9 +9877,7 @@ snapshots:
       metro-runtime: 0.84.4
     transitivePeerDependencies:
       - '@babel/core'
-      - bufferutil
       - supports-color
-      - utf-8-validate
 
   '@react-native/normalize-colors@0.74.89': {}
 
@@ -10063,7 +10064,7 @@ snapshots:
 
   '@testing-library/dom@10.4.1':
     dependencies:
-      '@babel/code-frame': 7.28.6
+      '@babel/code-frame': 7.29.7
       '@babel/runtime': 7.28.6
       '@types/aria-query': 5.0.4
       aria-query: 5.3.0
@@ -13365,7 +13366,7 @@ snapshots:
   metro-source-map@0.83.3:
     dependencies:
       '@babel/traverse': 7.28.6
-      '@babel/traverse--for-generate-function-map': '@babel/traverse@7.28.6'
+      '@babel/traverse--for-generate-function-map': '@babel/traverse@7.29.7'
       '@babel/types': 7.28.6
       flow-enums-runtime: 0.0.6
       invariant: 2.2.4
