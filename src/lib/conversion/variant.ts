@@ -15,12 +15,20 @@
  * bucketing.
  */
 
-export type ConversionVariant = "control" | "social_stats" | "loss_aversion";
+export type ConversionVariant =
+  | "control"
+  | "social_stats"
+  | "loss_aversion"
+  | "loss_aversion_banner";
 
 /**
  * The currently active challenger variant. One line to swap challengers.
+ *
+ * 2026-06-26: swapped "loss_aversion" (Prompt C modal) → "loss_aversion_banner"
+ * (non-blocking top notification) and shipped to 100%. Rollback to the Prompt C
+ * modal = set this back to "loss_aversion"; full rollback to control = CHALLENGER_SHARE = 0.
  */
-export const ACTIVE_CHALLENGER: ConversionVariant = "loss_aversion";
+export const ACTIVE_CHALLENGER: ConversionVariant = "loss_aversion_banner";
 
 /**
  * Share of visitors bucketed into the active challenger.
@@ -36,11 +44,18 @@ export const CHALLENGER_SHARE = 1;
  */
 export const SOCIAL_STATS_SHARE = 1;
 
-// v2 key forces re-bucketing of visitors persisted under the old social_stats key.
-const VARIANT_KEY = "resonance_conversion_variant_v2";
+// Bumped v2 → v3 on the 2026-06-26 banner ship so visitors persisted as
+// "loss_aversion" (Prompt C modal) re-draw and land on "loss_aversion_banner" —
+// required for a true 100% swap to returning visitors, not just new ones.
+const VARIANT_KEY = "resonance_conversion_variant_v3";
 
 function isVariant(v: unknown): v is ConversionVariant {
-  return v === "control" || v === "social_stats" || v === "loss_aversion";
+  return (
+    v === "control" ||
+    v === "social_stats" ||
+    v === "loss_aversion" ||
+    v === "loss_aversion_banner"
+  );
 }
 
 /**
@@ -73,5 +88,21 @@ export function readConversionVariant(): ConversionVariant {
     return isVariant(saved) ? saved : "control";
   } catch {
     return "control";
+  }
+}
+
+/**
+ * Force-persist a variant bucket. Used to tag the non-blocking banner cohort
+ * (`loss_aversion_banner`) so the existing funnel events — conversion_prompt_shown,
+ * conversion_signup_completed, signup_user_identified — and the `conversion_variant`
+ * GA4 user property all carry it, segmenting "saw + registered via the banner" from
+ * the modal. Idempotent.
+ */
+export function setConversionVariant(v: ConversionVariant) {
+  if (typeof window === "undefined") return;
+  try {
+    if (localStorage.getItem(VARIANT_KEY) !== v) localStorage.setItem(VARIANT_KEY, v);
+  } catch {
+    /* ignore */
   }
 }

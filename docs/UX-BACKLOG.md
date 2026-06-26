@@ -2,6 +2,10 @@
 
 Compiled from session audit on 2026-04-27. Refreshed 2026-05-05 with post-deploy GA4 data.
 
+## In-flight / queued (tracked in PRODUCT-EXPERIMENTS.md)
+
+- **Non-blocking signup banner (`loss_aversion_banner`)** — ✅ **shipped to prod 2026-06-26 at 100%**, replacing the Prompt C modal (top-anchored notification, tucks away on play, benefit-framed). Full hypothesis + pre-committed intent/retention criteria + GA4 review method: [PRODUCT-EXPERIMENTS.md → 2026-06-26](PRODUCT-EXPERIMENTS.md#2026-06-26-non-blocking-signup-banner-loss_aversion_banner--top-anchored-notification).
+
 ## Context
 
 ### Funnel refresh — 2026-05-05 (last 28 days, Apr 7 – May 4)
