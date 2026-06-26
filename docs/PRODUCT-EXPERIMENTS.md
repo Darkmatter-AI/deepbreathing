@@ -23,6 +23,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-06-26 | [Non-blocking signup banner (`loss_aversion_banner`) — top-anchored notification](#2026-06-26-non-blocking-signup-banner-loss_aversion_banner--top-anchored-notification) | 🔄 Implemented — shipped 100% (replaces Prompt C) |
 | 2026-06-21 | [/stats "Your practice" — retention surface (breath garden + stale-streak reframe)](#2026-06-21-stats-page--streak-calendar--session-stats-for-signed-in-users) | 🔄 Implemented |
 | 2026-06-14 | [Conversion Prompt C (loss_aversion), 100% challenger](#2026-06-14-conversion-prompt-c-loss_aversion-100-challenger) | 🔄 Implemented |
 | 2026-06-01 | [Fix `conversion_prompt_shown` double-fire (impure setState updaters)](#2026-06-01-fix-conversion_prompt_shown-double-fire-impure-setstate-updaters) | 🔄 Implemented |
@@ -39,13 +40,40 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-04-27 | [Mobile Hero Above the Fold](#2026-04-27-mobile-hero-above-the-fold) | 🔄 Implemented |
 | 2026-04-27 | [page_viewed_breathing Event + sessions_completed Sync Fix](#2026-04-27-page_viewed_breathing-event--sessions_completed-sync-fix) | 🔄 Implemented |
 
-**Roll-up by status (13 entries):** 🔄 11 Implemented · ⏸️ 1 Paused (Conversion Prompt B, superseded by Prompt C) · 🟡 1 Inconclusive (the 2026-05-12 Direct surge). First read on the 2026-05-19 checkpoint, full read 2026-06-02; mobile-redesign + UTM-tagging reads 2026-05-22 / 2026-06-05.
+**Roll-up by status (14 entries):** 🔄 12 Implemented (incl. the non-blocking banner, shipped 100% 2026-06-26 replacing Prompt C) · ⏸️ 1 Paused (Conversion Prompt B, superseded by Prompt C) · 🟡 1 Inconclusive (the 2026-05-12 Direct surge). First read on the 2026-05-19 checkpoint, full read 2026-06-02; mobile-redesign + UTM-tagging reads 2026-05-22 / 2026-06-05.
 
 See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state, [docs/UX-BACKLOG.md](UX-BACKLOG.md) for what's next, [docs/runbooks/weekly-funnel-refresh.md](runbooks/weekly-funnel-refresh.md) for how to pull the numbers.
 
 ---
 
 ## Active Experiments
+
+### 2026-06-26: Non-blocking signup banner (`loss_aversion_banner`) — top-anchored notification
+
+> **Shipped to production 2026-06-26 at 100% (`ACTIVE_CHALLENGER = "loss_aversion_banner"`, storage key bumped `_v2` → `_v3` so returning visitors re-draw onto it).** Founder call: put this version up now rather than wait for the Prompt C verdict. This **ends [Prompt C](#2026-06-14-conversion-prompt-c-loss_aversion-100-challenger) early** (it was at 13.8% intent / N=87, directionally positive but underpowered — no formal verdict). Instant rollback: set `ACTIVE_CHALLENGER` back to `"loss_aversion"` (Prompt C modal) or `CHALLENGER_SHARE = 0` (control).
+
+**Hypothesis:** The blocking modal (Prompt C) earns its ~13.8% intent partly *by force* — it walls users off the calm they just earned. We suspect a hidden retention tax. A **non-blocking** banner that drops in from the top like a notification, leaves the orb fully usable, and **tucks away the moment the user starts breathing again** (listens to the existing `resonance:run-state` event) preserves the calm exit, still captures the motivated minority, and stops punishing the ~86% who don't convert. Reframed **benefit-first** ("Save your breathing practice journey") instead of loss-first. The bet is a *tradeoff*: intent may dip, but retention should rise — and a gentler app people return to can out-earn a pushy one.
+
+**Change:** New `NonBlockingSignInBanner` ([`src/components/auth/non-blocking-sign-in-banner.tsx`](../src/components/auth/non-blocking-sign-in-banner.tsx)) — top-anchored, non-blocking, two layouts (**card** primary, **pill** compact). Reuses the loss-aversion cocoa-glass styling and the stats-page morphing **blob** for the session avatar. Wired into [`SessionCompletePrompt`](../src/components/auth/session-complete-prompt.tsx): renders for the `loss_aversion_banner` variant (ship path) **or** via `?promptui=card|pill` (local preview); `?promptdemo=1` opens it on mount for inspection. Hierarchy is headline → session "receipt" card → Google → "or save with email". The X dismisses (no separate "Keep breathing").
+
+**Identification / measurement — reuses existing variant plumbing, no new tracking:** new `ConversionVariant` value **`loss_aversion_banner`**. The entire see→register funnel already reads the variant from one localStorage bucket, so with **zero new event code** these all tag the banner cohort: `conversion_prompt_shown`, `conversion_prompt_dismissed`, `conversion_signup_completed`, `signup_user_identified`, plus the `conversion_variant` **GA4 user property**. Because it is a *distinct* variant, banner traffic does **not** pollute Prompt C's `loss_aversion` numbers — they stay cleanly segmented.
+
+- **GA4 enablement (done 2026-06-26):** registered two custom dimensions so variant is queryable (previously only `seconds_elapsed` existed, so `variant` was collected but *not* segmentable): **"Conversion variant"** (Event scope, param `variant`) and **"Conversion variant user"** (User scope, property `conversion_variant`).
+- **How to review:** open the saved **"Signup Conversion Funnel"** exploration → add a breakdown / segment on **Conversion variant** (or filter to `loss_aversion_banner`); or build a user segment on **Conversion variant user = `loss_aversion_banner`**. Custom dimensions populate **going forward** (~24–48h lag). The demo flag only renders UI — `conversion_prompt_shown` fires on a real ≥60s logged-out session.
+
+**Baseline (Prompt C modal `loss_aversion`, Jun 14–22):** intent **13.8%** (12 signups / 87 prompt-shown), dismiss **86.2%**.
+
+**Pre-committed criteria** (set 2026-06-26; shipped same day; first read **2026-07-03**, verdict **2026-07-17**, or earlier once ≥150 banner impressions accrue — at recent ~40 prompt-shown/day that's ~4 days; score on users):
+- ✅ **Success** if banner intent (`conversion_signup_completed` users / `conversion_prompt_shown` users, variant `loss_aversion_banner`) **≥ 13.8%** AND day-7 return rate for banner-cohort signups ≥ the modal cohort (retention not sacrificed). Ideal outcome: intent flat-or-up **and** retention up.
+- ❌ **Failed** if intent **< ~10%** (banner-blindness cost) with no retention gain.
+- 🟡 **Mixed** if intent dips but retention rises — the tradeoff materialized; decide on net signups over a longer horizon.
+- ⚪ **Inconclusive** if **< 150** banner impressions by the read.
+
+**Open design questions:** top-center vs top-right on mobile (header crowding); the benefit headline currently has no loss/device subline (a lever Prompt C uses — could add back); card vs pill (card is primary).
+
+**Status:** 🔄 Implemented — **shipped to production 2026-06-26 at 100%**, replacing Prompt C. measure-after: 2026-07-03 (first read), 2026-07-17 (verdict).
+
+---
 
 ### 2026-06-21: /stats page — practice calendar + session stats for signed-in users
 
@@ -95,7 +123,7 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 
 **Out of scope (deliberately not built for v1):** translations (English-only, matching how Prompt B shipped — add to the 5 locales if it wins); a 3-way / concurrent split (underpowered at current traffic); a time-aware headline ("tonight's" assumes evening — kept literal per the design; revisit if it reads oddly in morning sessions). The Prompt B real-social-proof rebuild (`feat/prompt-b-real-social-proof`) is **merged alongside this swap (2026-06-15) but dormant** — its presence/streak infra runs in the background so B has real numbers if revived; Prompt C is the active prompt.
 
-**Status:** 🔄 Implemented — branch `feat/conversion-loss-aversion`, commit forthcoming (orchestrator pushes after review). measure-after: 2026-06-28 (first read), 2026-07-12 (verdict).
+**Status:** ⏹️ **Ended early 2026-06-26** — superseded by the [non-blocking banner ship](#2026-06-26-non-blocking-signup-banner-loss_aversion_banner--top-anchored-notification) before its 2026-07-12 verdict (founder call to ship the banner now). Last read (Jun 14–22, N=87): intent **13.8%** vs 10.7% baseline, dismiss 86.2% — directionally positive but underpowered; **no formal verdict**. Branch `feat/conversion-loss-aversion`. _Originally: measure-after 2026-06-28 (first read), 2026-07-12 (verdict)._
 
 ---
 
