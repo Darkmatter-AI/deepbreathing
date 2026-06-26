@@ -3,7 +3,8 @@
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import dynamic from 'next/dynamic';
 import { useRouter, usePathname, useSearchParams } from 'next/navigation';
-import { Volume2, VolumeX, Eye, EyeOff, Activity, Waves, Wind, Sun, Moon, Turtle, Rabbit, X, Settings as SettingsIcon, LogOut } from 'lucide-react';
+import Link from 'next/link';
+import { Volume2, VolumeX, Eye, EyeOff, Activity, Waves, Wind, Sun, Moon, Turtle, Rabbit, X, Settings as SettingsIcon, LogOut, Sprout } from 'lucide-react';
 import { BreathingPhase, ModeName, AIRecommendation, ProtocolPhase, ProtocolState } from './types';
 import { BREATHING_PATTERNS, DEFAULT_SPEED_MULTIPLIER, WIM_HOF_PROTOCOL } from './constants';
 import { AudioService } from './services/audioService';
@@ -1444,6 +1445,14 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                     <p className="truncate px-2 text-sm font-medium text-card-foreground">{user.name || 'Account'}</p>
                     <p className="truncate px-2 text-xs text-muted-foreground">{user.email}</p>
                     <div className="my-2 h-px bg-border/60" />
+                    <Link
+                      href="/stats"
+                      onClick={() => setShowUserMenu(false)}
+                      className="flex w-full items-center gap-2 rounded-xl px-2 py-2 text-sm text-card-foreground transition-colors hover:bg-card"
+                    >
+                      <Sprout size={14} />
+                      Your practice
+                    </Link>
                     <button
                       onClick={() => { setShowUserMenu(false); signOut(); }}
                       className="flex w-full items-center gap-2 rounded-xl px-2 py-2 text-sm text-muted-foreground transition-colors hover:bg-card hover:text-card-foreground"
