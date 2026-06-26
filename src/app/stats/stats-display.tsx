@@ -105,7 +105,7 @@ export function StatsDisplay({
 
   const readout = hover
     ? `${hover.label} · ${hover.active ? "practiced" : "a day of rest"}`
-    : "Hover a day to revisit it";
+    : "Hover a day to view history";
 
   return (
     <div className={styles.page}>
@@ -121,7 +121,7 @@ export function StatsDisplay({
             <span className={styles.orb} aria-hidden />
           </Link>
           <div className={styles.headText}>
-            <div className={styles.eyebrow}>Practice log</div>
+            <div className={styles.eyebrow}>Activity log</div>
             <h1 className={styles.h1}>Your practice</h1>
           </div>
           <Link href={APP_HREF} className={styles.cta}>
@@ -137,10 +137,9 @@ export function StatsDisplay({
           <div className={`${styles.card} ${styles.tile}`}>
             <div className={styles.tileHead}>
               <Timer size={20} />
-              <span className={styles.tileLabel}>Total time</span>
+              <span className={styles.tileLabel}>Total active time</span>
             </div>
             <div className={styles.tileValue}>{timeLabel}</div>
-            <div className={styles.tileSub}>across all sessions</div>
           </div>
 
           <div className={`${styles.card} ${styles.tile}`}>
@@ -150,7 +149,7 @@ export function StatsDisplay({
             </div>
             <div className={styles.tileValue}>{sessionsCompleted}</div>
             <div className={styles.tileSub}>
-              {sessionsCompleted > 0 ? "keep the rhythm going" : "your first awaits"}
+              {sessionsCompleted > 0 ? "keep the rhythm going" : "Ready for your first"}
             </div>
           </div>
 
@@ -174,7 +173,7 @@ export function StatsDisplay({
           <div className={styles.gardenHead}>
             <div>
               <div className={styles.eyebrow}>Practice history</div>
-              <h2 className={styles.gardenTitle}>Your breath garden</h2>
+              <h2 className={styles.gardenTitle}>Breath Garden</h2>
             </div>
             <div className={styles.readout}>
               <span
