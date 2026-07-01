@@ -107,7 +107,13 @@ not load any external website or allow web navigation.
 ```
 Leave the ASC "Sign-in required" toggle OFF and the demo username/password fields empty.
 
-## Screenshots (iPhone 6.7"/6.9" only — phone-only v1, no iPad set)
+## Screenshots (phone-only v1, no iPad set)
+
+> **2026-07-01 as-shipped:** ASC's iPhone slot for this app accepts only 6.5" sizes
+> (1242×2688 / 1284×2778). The final marketing set (photoreal iPhone mockups, Nano Banana 2
+> + composited captions) lives in `screenshots/marketing/`; the resized 1284×2778 uploads in
+> `screenshots/marketing/asc-upload/`. All 6 uploaded to ASC in order 01→06 on 2026-07-01.
+> Raw truthful captures remain in `screenshots/` (kept as the fidelity source).
 Ship 5–6, all from a clean install of the EAS build (real icon, not the Expo placeholder):
 1. Active Box session (orb mid-expansion, phase label) — hero shot
 2. Mode Library sheet open (Box, 4-7-8, Coherent, Physiological Sigh, Ujjayi, Belly, Pursed-Lip). **Do not show Wim Hof.**

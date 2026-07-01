@@ -1,5 +1,12 @@
 # App Store Connect — App Privacy (Nutrition Label)
 
+> ⚠️ **2026-07-01 v1 correction (PUBLISHED in ASC):** this file was written pre-audit, when an
+> optional account was still assumed. **v1 ships NO account/sign-in**, so the Email Address
+> section below does NOT apply and was NOT declared. The published v1 label is exactly:
+> **Device ID** (Analytics, not linked, no tracking) + **Product Interactions / App Activity**
+> (Analytics only, NOT linked to identity, no tracking). Nothing is linked to identity.
+> Re-add Email (and linked-to-identity answers) only when accounts ship in v1.1.
+
 Complete this at: App Store Connect > App > App Privacy > Data Types.
 
 The answers below are conservative and precise. When in doubt we declare rather than omit — Apple's review does not penalise disclosure, but misrepresentation can cause rejection or removal.
