@@ -17,6 +17,9 @@
     "ios": {
       "bundleIdentifier": "com.deepbreathing.app",
       "supportsTablet": false,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      },
       "privacyManifests": {
         "NSPrivacyTracking": false,
         "NSPrivacyTrackingDomains": [],

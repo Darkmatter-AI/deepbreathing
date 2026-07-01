@@ -19,5 +19,14 @@
       "autoIncrement": true,
       "channel": "production"
     }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleId": "amorim.a.ferreira@gmail.com",
+        "ascAppId": "6786431781",
+        "appleTeamId": "M29XZH5LMJ"
+      }
+    }
   }
 }
