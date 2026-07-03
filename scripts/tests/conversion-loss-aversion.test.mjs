@@ -13,18 +13,18 @@ const RESONANCE = path.join(ROOT, "src", "components", "resonance", "Resonance.t
 
 const read = (p) => fs.readFileSync(p, "utf8");
 
-test("variant.ts: loss_aversion is the active challenger at 100% share", () => {
+test("variant.ts: loss_aversion_banner is the active challenger at 100% share", () => {
   const src = read(VARIANT);
 
   assert.match(
     src,
-    /export type ConversionVariant =[^;]*"loss_aversion"/,
-    "ConversionVariant union should include loss_aversion"
+    /export type ConversionVariant =[^;]*"loss_aversion_banner"/,
+    "ConversionVariant union should include loss_aversion_banner (the shipped non-blocking banner)"
   );
   assert.match(
     src,
-    /export const ACTIVE_CHALLENGER:\s*ConversionVariant\s*=\s*"loss_aversion"/,
-    "ACTIVE_CHALLENGER should be loss_aversion (one-line swap point)"
+    /export const ACTIVE_CHALLENGER:\s*ConversionVariant\s*=\s*"loss_aversion_banner"/,
+    "ACTIVE_CHALLENGER should be loss_aversion_banner (shipped 2026-06-26; rollback = loss_aversion)"
   );
   assert.match(
     src,
@@ -39,17 +39,17 @@ test("variant.ts: loss_aversion is the active challenger at 100% share", () => {
   );
   assert.match(
     src,
-    /v === "loss_aversion"/,
-    "isVariant() should accept loss_aversion so a persisted value is honored"
+    /v === "loss_aversion_banner"/,
+    "isVariant() should accept loss_aversion_banner so a persisted value is honored"
   );
 });
 
-test("variant.ts: storage key is bumped to v2 so returning Prompt B visitors re-bucket", () => {
+test("variant.ts: storage key is bumped to v3 so returning Prompt C visitors re-bucket onto the banner", () => {
   const src = read(VARIANT);
   assert.match(
     src,
-    /const VARIANT_KEY\s*=\s*"resonance_conversion_variant_v2"/,
-    "VARIANT_KEY must be the _v2 key to force re-bucketing off the old social_stats value"
+    /const VARIANT_KEY\s*=\s*"resonance_conversion_variant_v3"/,
+    "VARIANT_KEY must be the _v3 key to re-bucket visitors persisted as loss_aversion (Prompt C modal)"
   );
   // The active key const must not still be the un-bumped key.
   assert.doesNotMatch(
@@ -107,4 +107,43 @@ test("Resonance passes activeMode down to SessionCompletePrompt", () => {
   const block = src.match(/<SessionCompletePrompt[\s\S]*?\/>/);
   assert.ok(block, "expected the SessionCompletePrompt render block");
   assert.match(block[0], /activeMode=\{activeMode\}/, "must thread activeMode through");
+});
+
+// ── Shipped non-blocking banner (loss_aversion_banner) ──────────────────────
+const BANNER = path.join(ROOT, "src", "components", "auth", "non-blocking-sign-in-banner.tsx");
+
+test("session-complete-prompt routes loss_aversion_banner to the NonBlockingSignInBanner", () => {
+  const src = read(PROMPT);
+  assert.match(
+    src,
+    /import \{\s*NonBlockingSignInBanner/,
+    "imports the NonBlockingSignInBanner"
+  );
+  assert.match(
+    src,
+    /variant === "loss_aversion_banner"/,
+    "branches on the loss_aversion_banner variant"
+  );
+  assert.match(
+    src,
+    /<NonBlockingSignInBanner[\s\S]*?sessionMode=\{pattern\.name\}[\s\S]*?accentColor=\{pattern\.color\}/,
+    "renders the banner with the resolved mode label + accent color"
+  );
+});
+
+test("non-blocking banner tags signin_* events with surface: banner", () => {
+  const src = read(BANNER);
+  for (const evt of ["signin_prompt_view", "signin_google_clicked", "signin_magic_link_sent"]) {
+    assert.match(
+      src,
+      new RegExp(`trackEvent\\(\\s*"${evt}"[\\s\\S]*?surface:\\s*"banner"`),
+      `${evt} should fire tagged surface: "banner"`
+    );
+  }
+});
+
+test("non-blocking banner hides on play via the resonance:run-state event", () => {
+  const src = read(BANNER);
+  assert.match(src, /resonance:run-state/, "listens to the orb's run-state event");
+  assert.match(src, /setHiddenByPlay\(true\)/, "tucks away when a session starts (disappears on play)");
 });
