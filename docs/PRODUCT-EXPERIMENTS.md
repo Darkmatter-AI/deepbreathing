@@ -27,19 +27,19 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-06-14 | [Conversion Prompt C (loss_aversion), 100% challenger](#2026-06-14-conversion-prompt-c-loss_aversion-100-challenger) | 🔄 Implemented |
 | 2026-06-01 | [Fix `conversion_prompt_shown` double-fire (impure setState updaters)](#2026-06-01-fix-conversion_prompt_shown-double-fire-impure-setstate-updaters) | 🔄 Implemented |
 | 2026-06-01 | [Conversion Prompt B (social proof + personal stats), 100% challenger](#2026-06-01-conversion-prompt-b-social-proof--personal-stats-100-challenger) | ⏸️ Paused (→ Prompt C; social proof made real + merged, dormant) |
-| 2026-05-17 | [Resonance audio v2 — body-resonance, breath-coupled bed, session arc, eyes-closed mode](#2026-05-17-resonance-audio-v2--body-resonance-breath-coupled-bed-session-arc-eyes-closed-mode) | 🔄 Implemented |
+| 2026-05-17 | [Resonance audio v2 — body-resonance, breath-coupled bed, session arc, eyes-closed mode](#2026-05-17-resonance-audio-v2--body-resonance-breath-coupled-bed-session-arc-eyes-closed-mode) | ⚪ Inconclusive |
 | 2026-05-12 | [Direct +47% WoW — hypothesis: organic shares from PT/DE translations](#2026-05-12-direct-47-wow--hypothesis-organic-shares-from-ptde-translations) | 🟡 Inconclusive |
-| 2026-05-12 | [UTM-tag share buttons (attribute outbound shares back to GA4)](#2026-05-12-utm-tag-share-buttons-attribute-outbound-shares-back-to-ga4) | 🔄 Implemented |
-| 2026-05-11 | [Mobile homepage: pills mode picker + full-screen orb + restore hero text](#2026-05-11-mobile-homepage-pills-mode-picker--full-screen-orb--restore-hero-text) | 🔄 Implemented |
-| 2026-05-08 | [Unify session-end events + commit-on-pause](#2026-05-08-unify-session-end-events--commit-on-pause) | 🔄 Implemented |
-| 2026-05-05 | [Engaged-Minutes Tracking — Fix Double-Counting + Stop-Event Sync](#2026-05-05-engaged-minutes-tracking--fix-double-counting--stop-event-sync) | 🔄 Implemented (read 2026-05-18, verdict 2026-06-02) |
+| 2026-05-12 | [UTM-tag share buttons (attribute outbound shares back to GA4)](#2026-05-12-utm-tag-share-buttons-attribute-outbound-shares-back-to-ga4) | ⚪ Inconclusive |
+| 2026-05-11 | [Mobile homepage: pills mode picker + full-screen orb + restore hero text](#2026-05-11-mobile-homepage-pills-mode-picker--full-screen-orb--restore-hero-text) | 🟡 Mixed |
+| 2026-05-08 | [Unify session-end events + commit-on-pause](#2026-05-08-unify-session-end-events--commit-on-pause) | 🟡 Mixed |
+| 2026-05-05 | [Engaged-Minutes Tracking — Fix Double-Counting + Stop-Event Sync](#2026-05-05-engaged-minutes-tracking--fix-double-counting--stop-event-sync) | 🟡 Mixed |
 | 2026-05-05 | [GA4 User Identification (user_id + signed_up property)](#2026-05-05-ga4-user-identification-user_id--signed_up-property) | ✅ Success |
 | 2026-05-05 | [Tap-to-Pause Hint Inside Orb](#2026-05-05-tap-to-pause-hint-inside-orb) | ❌ Failed |
-| 2026-04-27 | [Duration Chips Below Orb](#2026-04-27-duration-chips-below-orb) | 🔄 Implemented |
-| 2026-04-27 | [Mobile Hero Above the Fold](#2026-04-27-mobile-hero-above-the-fold) | 🔄 Implemented |
-| 2026-04-27 | [page_viewed_breathing Event + sessions_completed Sync Fix](#2026-04-27-page_viewed_breathing-event--sessions_completed-sync-fix) | 🔄 Implemented |
+| 2026-04-27 | [Duration Chips Below Orb](#2026-04-27-duration-chips-below-orb) | ✅ Success |
+| 2026-04-27 | [Mobile Hero Above the Fold](#2026-04-27-mobile-hero-above-the-fold) | 🟡 Mixed |
+| 2026-04-27 | [page_viewed_breathing Event + sessions_completed Sync Fix](#2026-04-27-page_viewed_breathing-event--sessions_completed-sync-fix) | 🟡 Mixed |
 
-**Roll-up by status (13 entries):** 🔄 11 Implemented · ⏸️ 1 Paused (Conversion Prompt B, superseded by Prompt C) · 🟡 1 Inconclusive (the 2026-05-12 Direct surge). First read on the 2026-05-19 checkpoint, full read 2026-06-02; mobile-redesign + UTM-tagging reads 2026-05-22 / 2026-06-05.
+**Roll-up by status (15 entries, 2026-07-05 review):** ✅ 2 Success (GA4 user-ID, Duration Chips) · ❌ 1 Failed (Tap-to-Pause) · 🟡 5 Mixed (mobile homepage, unify session-end, engaged-minutes, mobile hero, page_viewed) · ⚪ 3 Inconclusive (Resonance v2, UTM shares, Direct +47%) · ⏸️ 1 Paused (Prompt B → Prompt C) · 🔄 3 Implemented (interim: Prompt C verdict 07-12, /stats re-read 07-21; + the double-fire tracking fix, verified durable). The 2026-07-05 review graduated the stalled Implemented backlog against each experiment's own pre-committed criteria.
 
 See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state, [docs/UX-BACKLOG.md](UX-BACKLOG.md) for what's next, [docs/runbooks/weekly-funnel-refresh.md](runbooks/weekly-funnel-refresh.md) for how to pull the numbers.
 
@@ -69,6 +69,8 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 
 **Status:** 🔄 Implemented (redesigned)
 
+**Interim (2026-07-05):** Only 4 signed-in /stats viewers in 28d (below the ≥10 floor to read retention) — adoption/findability is the blocker. Re-read 2026-07-21; if still <10, ship a header profile/avatar entry point first. Do not close early.
+
 ---
 
 ### 2026-06-14: Conversion Prompt C (loss_aversion), 100% challenger
@@ -97,6 +99,8 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 
 **Status:** 🔄 Implemented — branch `feat/conversion-loss-aversion`, commit forthcoming (orchestrator pushes after review). measure-after: 2026-06-28 (first read), 2026-07-12 (verdict).
 
+**Interim (2026-07-05):** User-based intent 13.4% (30/224) — above control (10.7%) and Prompt B (9.0%) but short of the 16% Success bar; truth 8.5%, dismiss DOWN to 32.6%. Trending right. Verdict due 2026-07-12, do not close early.
+
 ---
 
 ### 2026-06-01: Fix `conversion_prompt_shown` double-fire (impure setState updaters)
@@ -115,6 +119,8 @@ So do **not** compare post-fix rates against the pre-fix logged baseline. Recomp
 **Status:** 🔄 Implemented — shipping to prod 2026-06-01 (pending push approval). Commit: forthcoming. This is a tracking-correctness fix with no measure-after verdict of its own; its effect is folded into the Conversion Prompt B read (2026-06-15 first read, 2026-06-29 verdict), which must account for the prompt_shown drop.
 
 **Prod verification:** fresh logged-out session on deepbreathingexercises.com, `resonance_conversion` cleared, `window.gtag` recorder installed, one auto-completed 1-min session. Assert `conversion_prompt_shown` appears exactly once (was twice), `signin_prompt_view` still fires, and the prompt still opens after ~1.5s.
+
+**Result (2026-07-05 data review):** ✅ verified durable — prompt_shown:start ratio now ~1.1:1 (was ~2:1), no relapse. Tracking-correctness fix; funnel impact folds into the Prompt C read.
 
 ---
 
@@ -194,6 +200,8 @@ This is a perceptual/qualitative change, so the funnel signals are noisier than 
 - **Binaural toggle defaulting ON.** Keeping current behavior to avoid surprise — but if a meaningful chunk of users opt-out, we should consider flipping it OFF for new sessions on speakers. Track `binaural_toggled` GA4 event.
 - **Embed param surface area growing.** With `?duration=`, `?theme=`, now `?eyesClosed=`, `?binaural=`, the embed URL space is starting to matter. Document the schema in the embed generator UI so embedders don't reverse-engineer it from referrer headers.
 
+**Result (2026-07-05 data review):** Measurement window confounded by concurrent ships + the lost session-end `reason` dimension; needs a clean window to score.
+
 ---
 
 ### 2026-05-12: Direct +47% WoW — hypothesis: organic shares from PT/DE translations
@@ -250,6 +258,8 @@ This won't capture pure copy-paste from the browser URL bar (out of our control)
 
 **Risk to watch:** Some messengers (Slack, iMessage, WhatsApp) preserve query strings; others (older Facebook, some email clients) strip them. If `utm_source=share` shows up at much lower volume than expected, the medium-stripping hypothesis is the first thing to check, not the share button itself being unused.
 
+**Result (2026-07-05 data review):** No share_button_clicked denominator event, so outbound-share attribution can't be read.
+
 ---
 
 ### 2026-05-11: Mobile homepage: pills mode picker + full-screen orb + restore hero text
@@ -288,6 +298,8 @@ Restoring intent: small pills make modes visible at a glance (5 visible + "All t
 
 **Risk to watch:** the `noMobileBottomPad` prop changed Resonance's mobile main padding from `pb-44` to `pb-24` for the homepage path. The original `pb-44` was reserving space for the fixed `bottom-6` sound-hint banner. If a user lands on the homepage, hits play with sound muted, and the banner appears, it may now overlap with the duration chips area. Worth a real-device test on iPhone Safari. Also: the absolute-positioned hero on mobile means hero text and the orb's particle field overlap visually — this is intentional (transparent over particles) but watch GSC/PSI for any CLS regression on mobile.
 
+**Result (2026-07-05 data review):** mode_switch engagement up (~1.7%→8.2%) but start-per-page-view dropped ~7pp; net funnel effect negative on the entry step.
+
 ---
 
 ### 2026-05-08: Unify session-end events + commit-on-pause
@@ -317,6 +329,8 @@ Collapsing to a single `breathing_session_end` event with a `reason` parameter (
 - ⚪ Inconclusive if: fewer than 5 new engaged users in the measurement window.
 
 **Risk to watch:** the soft-end-on-pause means a user who paces — pause / resume / pause / resume — emits multiple `breathing_session_end` events for the same session. GA4 funnel reports may need to count distinct `sessionId` (param) not distinct events. Tracked in UX-BACKLOG #20 (custom dimension).
+
+**Result (2026-07-05 data review):** Session-credit leg is a full success (activation now 42%), but event-coverage ~83.3% is short of the 90% target AND it merged pause/complete into a non-queryable `reason` param, deleting the pause-vs-complete metric.
 
 ---
 
@@ -368,6 +382,8 @@ total_minutes | sessions_completed | last_synced
 **Interim read:** the `sessions_completed > 0` half of the criterion is **clearly working** for sessions that happen post-deploy (2/2 hits among users who had any timed completion this week). The "total_min 30-60% lower" half of the criterion **cannot be evaluated from a snapshot** — `user_stats` is overwritten by each sync, so we don't have a before/after for the same user. Need a per-session ledger to verify the double-count fix directly; current data is consistent with the fix working but doesn't prove it.
 
 **Status:** 🔄 Implemented (interim read positive). Full verdict still 2026-06-02 — needs more post-fix engaged users for a confident pattern.
+
+**Result (2026-07-05 data review):** `sessions_completed>0` confirmed firing (29 activated, 152 sessions, 590 min); the double-count-magnitude claim stays unverifiable without a per-session ledger.
 
 ---
 

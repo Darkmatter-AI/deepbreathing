@@ -1,8 +1,53 @@
 # Funnel Dashboard
 
-**Last refreshed:** 2026-05-18 (indexing-recovery checkpoint)
+**Last refreshed:** 2026-07-05 (full data review — first full refresh in ~7 weeks)
 **Refresh cadence:** Weekly (Friday). Runbook: [docs/runbooks/weekly-funnel-refresh.md](runbooks/weekly-funnel-refresh.md)
 **Source of truth:** GA4 property `Deep Breathing Exercises` in DKMT account, ID `527524722`, measurement ID `G-53DLCBMRL3`. ⚠️ NOT the old Abiassi property `G-7GG9WVNBBP` (which has stale 2026-Q1 data only).
+**Pull method (2026-07-05):** durable service-account / API-key, no OAuth — `ga_events.py`, `gsc_query.py`, `search_pull.py`, `funnel_pull.py` on orangepi. See [[dbe-visibility-digest-durable-search]].
+
+---
+
+## Top-line snapshot — 2026-07-05 (full data review)
+
+*Windows: 28d = 2026-06-05..07-02; 7d = 06-26..07-02. User-based = GA4 `totalUsers`.*
+
+### Engagement funnel — user-based (GA4, 28d)
+
+| Step | Users | Conversion |
+|---|---|---|
+| page_viewed_breathing | 1,228 | — |
+| breathing_session_start | 473 | **38.5%** of page-views ⚠️ biggest leak (was ~48% in May) |
+| conversion_prompt_shown | 319 | 67% of starts |
+| breathing_session_end | 334 | 71% of starts |
+| conversion_signup_completed (intent) | 40 | 12.5% of prompts |
+| signup_user_identified (truth) | 25 | **7.8%** of prompts |
+
+### Product funnel (Neon)
+- Total users **69** (all verified) · signups **~5/wk** (5 last-7d, 6 prior) · provider: google 58
+- **Activation 42%** (29/69 with sessions_completed>0) · 152 sessions · 590 engaged minutes — up from **17% in May** ✅ the May 8 session-crediting fix ([35e7f0a](https://github.com/abiassi/deepbreathing/commit/35e7f0a)) is confirmed firing.
+
+### Search (durable direct pulls)
+- **GSC** 7d: 54 clicks · 5,171 impr · CTR 1.04% · pos **15.24** (slid from ~11 in May)
+- **Bing** 7d: **71 clicks** · 4,598 impr — Bing out-clicks Google
+- **Index coverage** (6/30): **293 indexed** (+47 vs May) · 196 not-indexed
+- **Ahrefs:** DR **4.2** · 258 ref domains (+244) · 23 organic keywords · first ChatGPT citations (4 pages)
+
+### Channels (GA4 sessions, 7d vs prior 7d)
+
+| Channel | 7d | prior | note |
+|---|---|---|---|
+| Organic Search | 300 | 301 | flat — the engine |
+| Direct | 183 | 191 | −4% |
+| Referral | 34 | 56 | −39% |
+| AI Assistant | 17 | 36 | **−53%** ⚠️ reversing multi-week growth |
+| Organic Social | 9 | 12 | — |
+
+### The two leaks (highest leverage)
+1. **page_view → start = 38.5%** (regressed from ~48% in May). 61% of people who load a breathing page never start the exercise. Gates the entire funnel.
+2. **prompt → real signup = 7.8%.** 92% of prompted users don't convert; ~319 prompts/28d → ~25 identified signups.
+
+### Experiment scoreboard — 28 Implemented adjudicated 2026-07-05
+**4 ✅ Success · 2 ❌ Failed · 6 🟡 Mixed · 10 ⚪ Inconclusive** (6 of them un-scoreable — shipped with no baseline/criteria) **· 6 ⏳ too-early** (verdicts due 07-08 → 08-08). Per-entry verdicts written back to [SEO-EXPERIMENTS.md](SEO-EXPERIMENTS.md) and [PRODUCT-EXPERIMENTS.md](PRODUCT-EXPERIMENTS.md). Due-date watch: Crawl-hygiene 07-08 · Tummo CTR 07-11 · Prompt C 07-12 · 404 fix 07-13 · /stats 07-21 · YouTube schema 08-08.
 
 ---
 

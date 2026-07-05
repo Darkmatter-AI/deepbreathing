@@ -18,23 +18,23 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
-| 2026-06-15 | [Nofollow + Robots-Disallow ?duration= Timer Deep-Links (Hreflang to Non-Canonical)](#2026-06-15-nofollow--robots-disallow-duration-timer-deep-links-hreflang-to-non-canonical) | 🔄 Implemented |
+| 2026-06-15 | [Nofollow + Robots-Disallow ?duration= Timer Deep-Links (Hreflang to Non-Canonical)](#2026-06-15-nofollow--robots-disallow-duration-timer-deep-links-hreflang-to-non-canonical) | ✅ Success |
 | 2026-06-14 | [GSC "Page with redirect" Alert (WNC-20237597) — Reviewed, Benign](#2026-06-14-gsc-page-with-redirect-alert-wnc-20237597--reviewed-benign) | 📊 Snapshot |
-| 2026-06-13 | [Fix "Hreflang to non-canonical" — home-page trailing slash](#2026-06-13-fix-hreflang-to-non-canonical--home-page-trailing-slash) | 🔄 Implemented |
+| 2026-06-13 | [Fix "Hreflang to non-canonical" — home-page trailing slash](#2026-06-13-fix-hreflang-to-non-canonical--home-page-trailing-slash) | ✅ Success |
 | 2026-06-13 | [Locale Cache Warmer — Health Score Crash Fix (40→92)](#2026-06-13-locale-cache-warmer--health-score-crash-fix) | ✅ Success |
 | 2026-06-13 | [Tummo CTR Title + Meta Rewrite — /breathe/tummo](#2026-06-13-tummo-ctr-title--meta-rewrite) | 🔄 Implemented |
 | 2026-06-13 | [Owned YouTube Videos + VideoObject Schema on /breathe/* Pages](#2026-06-13-owned-youtube-videos--videoobject-schema) | 🔄 Implemented |
 | 2026-06-13 | [404 Root-Cause Fix — Verification](#2026-06-13-404-root-cause-fix--verification) | 🔄 Implemented |
 | 2026-06-10 | [Crawl Hygiene + Schema Cleanup — robots disallows, OG noindex, sitemap, SoftwareApplication, SearchAction](#2026-06-10-crawl-hygiene--schema-cleanup) | 🔄 Implemented |
-| 2026-05-06 | [9D Breathwork Cluster — 2 Pages Riding the Breakout Trend](#2026-05-06-9d-breathwork-cluster--2-pages-riding-the-breakout-trend) | 🔄 Implemented |
+| 2026-05-06 | [9D Breathwork Cluster — 2 Pages Riding the Breakout Trend](#2026-05-06-9d-breathwork-cluster--2-pages-riding-the-breakout-trend) | ⚪ Inconclusive |
 | 2026-05-06 | [Wim Hof Bing CTR — SERP Feature Structural Ceiling (Finding)](#2026-05-06-wim-hof-bing-ctr--serp-feature-structural-ceiling) | 📊 Snapshot |
-| 2026-05-06 | [E-E-A-T Wellness-Class Overhaul — Founder Byline + Lineage + Light Citations](#2026-05-06-e-e-a-t-wellness-class-overhaul--founder-byline--lineage--light-citations) | 🔄 Implemented |
+| 2026-05-06 | [E-E-A-T Wellness-Class Overhaul — Founder Byline + Lineage + Light Citations](#2026-05-06-e-e-a-t-wellness-class-overhaul--founder-byline--lineage--light-citations) | ❌ Failed |
 | 2026-05-18 | [Indexing-Recovery Checkpoint (2-week read)](#2026-05-18-indexing-recovery-checkpoint-2-week-read) | 📊 Snapshot |
 | 2026-05-05 | [Bing Translated-Page Indexing Push — URL + Content Submission](#2026-05-05-bing-translated-page-indexing-push--url--content-submission) | ⏳ Waiting (4w eval 2026-06-02) |
 | 2026-05-05 | [Coherent Page Title Rewrite — Timer Intent Match](#2026-05-05-coherent-page-title-rewrite--timer-intent-match) | ❌ Failed |
 | 2026-05-05 | [Fix 5 GSC 404s — Double-locale + Sub-path Redirects](#2026-05-05-fix-5-gsc-404s--double-locale--sub-path-redirects) | 🟡 Mixed |
 | 2026-05-05 | [CTR Investigation — 4 High-Impression Pages (Diagnostic)](#2026-05-05-ctr-investigation--4-high-impression-pages-diagnostic) | 📊 Snapshot |
-| 2026-04-20 | [Indexing Remediation — Bulk URL Resubmission to GSC + Bing](#2026-04-20-indexing-remediation--bulk-url-resubmission-to-gsc--bing) | 🔄 Implemented |
+| 2026-04-20 | [Indexing Remediation — Bulk URL Resubmission to GSC + Bing](#2026-04-20-indexing-remediation--bulk-url-resubmission-to-gsc--bing) | 🟡 Mixed |
 | 2026-04-01 | [Sitemap Conversion (route.ts) — Caused ~41% De-indexing](#2026-04-01-sitemap-conversion-routets--caused-41-de-indexing) | ❌ Failed |
 | 2026-03-19 | [Embed Widget Page + Share Popover + llms.txt](#2026-03-19-embed-widget-page--share-popover--llmstxt) | ❌ Failed |
 | 2026-02-17 | [Checkpoint Follow-Up — Internal Links + Metadata Alignment](#2026-02-17-checkpoint-follow-up-internal-links--metadata-alignment) | 🟡 Mixed |
@@ -44,14 +44,14 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-02-06 | [Breath of Fire Page (NEW)](#2026-02-06-breath-of-fire-page-new) | ❌ Failed |
 | 2026-02-06 | [Tummo Breathing Page (NEW)](#2026-02-06-tummo-breathing-page-new) | ⚪ Inconclusive |
 | 2026-02-06 | [Breathing Visualizer Landing Page (NEW)](#2026-02-06-breathing-visualizer-landing-page-new) | ⚪ Inconclusive |
-| 2026-02-06 | [Disavow Spam Backlinks + Fix /app/ Route](#2026-02-06-disavow-spam-backlinks--fix-app-route) | 🔄 Implemented |
-| 2026-02-06 | [Huberman / Physiological Sigh Cannibalization Fix](#2026-02-06-huberman--physiological-sigh-cannibalization-fix) | 🔄 Implemented |
-| 2026-02-03 | [Near-Top-10 Tuning Pass — Answer Blocks + Exact-Match Intros](#2026-02-03-near-top-10-tuning-pass-answer-blocks--exact-match-intros) | 🔄 Implemented |
-| 2026-01-27 | [Interactive Tool CTAs in Meta Descriptions](#2026-01-27-interactive-tool-ctas-in-meta-descriptions) | 🔄 Implemented |
-| 2026-01-27 | [Voice Search / Conversational Query Optimization](#2026-01-27-voice-search--conversational-query-optimization) | 🔄 Implemented |
-| 2026-01-27 | [E-E-A-T Enhancement](#2026-01-27-e-e-a-t-enhancement) | 🔄 Implemented |
-| 2026-01-27 | [Programmatic Combination Pages (pSEO)](#2026-01-27-programmatic-combination-pages-pseo) | 🔄 Implemented |
-| 2026-01-27 | [Push Top 10 Pages to Top 5 (Position Consolidation)](#2026-01-27-push-top-10-pages-to-top-5-position-consolidation) | 🔄 Implemented |
+| 2026-02-06 | [Disavow Spam Backlinks + Fix /app/ Route](#2026-02-06-disavow-spam-backlinks--fix-app-route) | ⚪ Inconclusive |
+| 2026-02-06 | [Huberman / Physiological Sigh Cannibalization Fix](#2026-02-06-huberman--physiological-sigh-cannibalization-fix) | ⚪ Inconclusive |
+| 2026-02-03 | [Near-Top-10 Tuning Pass — Answer Blocks + Exact-Match Intros](#2026-02-03-near-top-10-tuning-pass-answer-blocks--exact-match-intros) | ⚪ Inconclusive |
+| 2026-01-27 | [Interactive Tool CTAs in Meta Descriptions](#2026-01-27-interactive-tool-ctas-in-meta-descriptions) | ⚪ Inconclusive |
+| 2026-01-27 | [Voice Search / Conversational Query Optimization](#2026-01-27-voice-search--conversational-query-optimization) | ⚪ Inconclusive |
+| 2026-01-27 | [E-E-A-T Enhancement](#2026-01-27-e-e-a-t-enhancement) | ⚪ Inconclusive |
+| 2026-01-27 | [Programmatic Combination Pages (pSEO)](#2026-01-27-programmatic-combination-pages-pseo) | ⚪ Inconclusive |
+| 2026-01-27 | [Push Top 10 Pages to Top 5 (Position Consolidation)](#2026-01-27-push-top-10-pages-to-top-5-position-consolidation) | ❌ Failed |
 | 2026-01-27 | [GSC Snapshot (Jan 6-27, 2026)](#gsc-snapshot-jan-6-27-2026) | 📊 Snapshot |
 | 2026-01-20 | [Pranayama Hub (NEW)](#2026-01-20-seo-technique-expansion---pranayama-hub-new) | ⚪ Inconclusive |
 | 2026-01-20 | [Buteyko Breathing (NEW)](#2026-01-20-seo-technique-expansion---buteyko-breathing-new) | ⚪ Inconclusive |
@@ -73,7 +73,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-01-06 | [Navy SEAL Content Expansion](#2026-01-06-navy-seal-content-expansion) | ❌ Failed |
 | 2026-01-06 | [CTR Title Rewrites (Batch 1)](#2026-01-06-ctr-title-rewrites-batch-1) | ✅ Success |
 
-**Roll-up by status (53 entries):** ✅ 3 Success · ❌ 9 Failed · ⚪ 12 Inconclusive · 🟡 1 Mixed · ⏳ 0 Waiting · 🔄 20 Implemented · 📊 8 Snapshot. *(2026-06-21: audio-v2 rebase folded in the 2026-05-18 Indexing-Recovery Checkpoint snapshot. 2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
+**Roll-up by status (53 entries):** ✅ 5 Success · ❌ 11 Failed · ⚪ 20 Inconclusive · 🟡 2 Mixed · ⏳ 0 Waiting · 🔄 7 Implemented · 📊 8 Snapshot. *(2026-07-05 full data review: adjudicated the Implemented backlog against its own pre-committed criteria — 2 hreflang fixes → ✅, E-E-A-T overhaul + push-top-10 → ❌, bulk-resubmission → 🟡, 6 pre-2026-03 tests → ⚪ (of which the Jan-27 batch shipped with NO baseline/criteria, un-scoreable per SOP); synced the stale Disavow row. Remaining 7 🔄 are interim/too-early with future measure-after dates.)*
 
 See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of what worked / failed / strategic insights from the first month of experiments.
 
@@ -106,6 +106,8 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 **Caveats:** Clearance is not instant — needs a full post-deploy Ahrefs recrawl; the 50 count predates this fix. The durable proxy-side fix (eliminates the root asymmetry) is to add `duration` to the tenant's `strip_query_params` in mass-translate KV — but that REPLACES the defaults, so the value must include `utm_*,fbclid,gclid,ref,_ga,mc_*`. Requires the mass-translate team to write tenant KV (no `set_site_config` MCP). Logged as a follow-up; not in scope here.
 
 **Status:** 🔄 Implemented (not yet measured)
+
+**Result (2026-07-05 data review):** Ahrefs re-crawl shows "hreflang to non-canonical" 50→5; the entire ?duration= class is cleared (residual 5 are an unrelated /stats-page hreflang cluster). Site Audit health 99.
 
 ---
 
@@ -153,6 +155,8 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 > **Note (2026-06-15):** Superseded — this did **not** move the number. The re-crawl showed "Hreflang to non-canonical" unchanged at 50; the true root cause was `?duration=` timer-param URLs on locale pages, fixed in the [2026-06-15 entry](#2026-06-15-nofollow--robots-disallow-duration-timer-deep-links-hreflang-to-non-canonical). Kept for history; formal status to be settled on the 2026-06-20 measure date.
 
 🔄 Implemented
+
+**Result (2026-07-05 data review):** Same re-crawl, count held at 5 since ~06-20; target class fully resolved.
 
 ---
 
@@ -230,6 +234,8 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 
 **Status:** 🔄 Implemented
 
+**Interim (2026-07-05):** CTR 0.31%→0.43% (real but far short of the 1.5% bar), position slid 8→10.7. Re-adjudicate 2026-07-11, do not close early.
+
 ---
 
 ### 2026-06-13: Owned YouTube Videos + VideoObject Schema
@@ -255,6 +261,8 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 **Measure-after date:** 2026-08-08
 
 **Status:** 🔄 Implemented (not yet measured)
+
+**Interim (2026-07-05):** No video rich result or YouTube-referral channel yet; confirm the GSC Video-Indexing channel-link is verified. Re-adjudicate 2026-08-08, do not close early.
 
 ---
 
@@ -309,6 +317,7 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 
 **Status:** 🔄 Implemented (2026-06-13)
 
+**Interim (2026-07-05):** Re-trigger GSC "Validate Fix" (last attempt failed 6/13). Re-adjudicate 2026-07-13, do not close early.
 
 ---
 
@@ -334,6 +343,8 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 - ❌ **Failed**: GSC indexed count drops below 250 (the 2026-04-01 sitemap conversion caused a ~41% de-indexing — any sitemap touch gets this guardrail), or social card images stop rendering (OG header regression).
 
 **Status:** 🔄 Implemented (not yet measured)
+
+**Interim (2026-07-05):** Needs a fresh Ahrefs Site Audit + GSC crawl-stats pull. Re-adjudicate 2026-07-08, do not close early.
 
 ---
 
@@ -433,6 +444,8 @@ Total addressable cluster volume: **~3.3K monthly searches** in US. Currently ze
 
 **Status:** 🔄 Implemented (not yet measured)
 
+**Result (2026-07-05 data review):** Single-digit clicks; re-measure at the entry's own 12-week checkpoint 2026-07-29.
+
 ---
 
 ### 2026-05-06: Wim Hof Bing CTR — SERP Feature Structural Ceiling
@@ -484,6 +497,8 @@ Total addressable cluster volume: **~3.3K monthly searches** in US. Currently ze
 - App store listing changes
 
 **Watch (2026-06-13):** Sitewide Google impressions dropped ~67% over six weeks: ~1,309/day on Apr 30 fell to ~437/day by Jun 9. The timing correlates with the E-E-A-T batch deploy (May 5–6) — byline, lineage, and citation changes across 22 pages, followed by position volatility. This matches the classic pattern of Google re-evaluating a low-authority domain after a bulk trust-signal rewrite. It is plausible but NOT confirmed as the cause: the April sitemap de-indexing + bulk GSC resubmission is a confound. Implication for the 2026-07-01 read: before calling ❌ Failed, check whether sitewide impressions are recovering toward ~1,000+/day. If recovering, extend rather than fail — the fix is patience (normal re-crawl), not more on-page changes. Checkpoint: assess sitewide impression trend by ~2026-06-27 (the Mon/Thu visibility cron already tracks this).
+
+**Result (2026-07-05 data review):** Cohort avg position ~+9.4 worse, 21/22 pages down; confounded by the April de-indexing but the pre-committed line scores Failed.
 
 ---
 
@@ -646,6 +661,8 @@ Curl-tested all 5 new patterns against prod: **all return 308 to the correct can
 - Discovered - currently not indexed: 113
 
 **Next checkpoint:** 2026-05-19 (scheduled task created). Expect "Discovered not indexed" to drop below 50 if Google is processing normally.
+
+**Result (2026-07-05 data review):** Indexed pages 246→293 (+47) and held; final ✅/❌ needs a same-methodology GSC "Discovered-not-indexed" reason re-pull (UI).
 
 ---
 
@@ -1358,6 +1375,8 @@ The synonyms are not being indexed or ranked. May need more prominent placement 
 
 **Status:** Implemented ✅
 
+**Result (2026-07-05 data review):** All 5 target pages moved AWAY from top-5 (e.g. /for/running 8.0→13.75); title/freshness tweaks alone didn't consolidate rank.
+
 ---
 
 ### 2026-02-03: Near-Top-10 Tuning Pass (Answer Blocks + Exact-Match Intros)
@@ -1382,6 +1401,8 @@ The synonyms are not being indexed or ranked. May need more prominent placement 
 **Measure After:** 2026-02-17 (2 weeks)
 
 **Status:** Implemented ✅
+
+**Result (2026-07-05 data review):** Shipped with NO baseline/pre-committed criteria — un-scoreable per the project SOP.
 
 ---
 
@@ -1421,6 +1442,8 @@ The synonyms are not being indexed or ranked. May need more prominent placement 
 
 **Status:** Implemented ✅
 
+**Result (2026-07-05 data review):** No pre-committed criteria; evidence weak (4/5 combo pages have 0 GSC impressions after 5.5 months).
+
 ---
 
 ### 2026-01-27: E-E-A-T Enhancement
@@ -1451,6 +1474,8 @@ The synonyms are not being indexed or ranked. May need more prominent placement 
 **Measure After:** 2026-02-17 (3 weeks)
 
 **Status:** Implemented ✅
+
+**Result (2026-07-05 data review):** No baseline/criteria captured at ship — un-scoreable per SOP.
 
 ---
 
@@ -1492,6 +1517,8 @@ The synonyms are not being indexed or ranked. May need more prominent placement 
 
 **Status:** Implemented ✅
 
+**Result (2026-07-05 data review):** No baseline/criteria captured at ship — un-scoreable per SOP.
+
 ---
 
 ### 2026-01-27: Interactive Tool CTAs in Meta Descriptions
@@ -1531,6 +1558,8 @@ The synonyms are not being indexed or ranked. May need more prominent placement 
 
 **Status:** Implemented ✅
 
+**Result (2026-07-05 data review):** No baseline/criteria captured at ship — un-scoreable per SOP.
+
 ---
 
 ### 2026-02-06: Huberman / Physiological Sigh Cannibalization Fix
@@ -1556,6 +1585,8 @@ The synonyms are not being indexed or ranked. May need more prominent placement 
 **Result:** ⚪ **Inconclusive** - Cannibalization signal remains noisy. `/for/huberman` stayed essentially flat at 55 impressions, 0 clicks, position 8.1. `/breathe/physiological-sigh` improved from position 13.9 to 11.5 and impressions from 634 to 951, but clicks fell from 1 to 0. Query mix still contains research-style and low-intent physiological-sigh queries.
 
 **Status:** Inconclusive
+
+**Result (2026-07-05 data review):** Both pages in single-digit-click regime; no query-overlap signal to read.
 
 ---
 
