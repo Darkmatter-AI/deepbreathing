@@ -863,13 +863,6 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     handleStop();
   };
 
-  const markSoundConfirmed = () => {
-    setSoundStatus('confirmed');
-    if (typeof window !== 'undefined') {
-      localStorage.setItem(STORAGE_KEYS.SOUND_OK, 'true');
-    }
-  };
-
   const toggleMute = () => {
     const newMute = !muted;
     setMuted(newMute);
@@ -1601,21 +1594,6 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                     {muted ? getSafePhrase('ui.sound_off') : getSafePhrase('ui.sound_on')}
                   </button>
                 </div>
-                {soundStatus !== 'confirmed' && (
-                  <div className="space-y-2 rounded-xl border border-border/60 bg-background/50 p-3 text-xs text-muted-foreground shadow-inner dark:border-border/40 dark:bg-background/20">
-                    <p className="font-semibold text-card-foreground">No sound? Flip your mute switch off and raise volume.</p>
-                    <p>iOS Safari can silence Web Audio when the ringer is off. Try the side switch/volume buttons, then tap Play again.</p>
-                    <div className="flex gap-2">
-                      <button
-                        onClick={markSoundConfirmed}
-                        className="flex-1 rounded-lg bg-card px-3 py-2 text-sm font-medium text-card-foreground shadow-sm"
-                      >
-                        I heard it
-                      </button>
-                    </div>
-                  </div>
-                )}
-
                 {/* v2 audio toggles */}
                 {/*
                   Eyes-closed toggle parked — feature needs voice narration in
