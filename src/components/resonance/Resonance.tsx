@@ -339,6 +339,18 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
   // Mirror sessionSeconds into a ref so the rAF loop can read it without
   // re-creating the animate callback on every tick.
   const sessionSecondsRef = useRef<number>(0);
+  // Guards the signed-out conversion prompt to fire at most once per physical
+  // session. endSession can run several times for one session (a manual
+  // pause, an iOS background pause, then a timer auto-complete), and each such
+  // commit crosses the same >=60s threshold. Without this, onSessionComplete
+  // would be called on every commit and double-count conversion_prompt_shown.
+  // Reset to false only on a true start (not a pause→resume).
+  const sessionPromptFiredRef = useRef<boolean>(false);
+  // Lets the background/pagehide effect (defined above endSession) call the
+  // latest endSession without a TDZ reference in its dependency array.
+  const endSessionRef = useRef<
+    ((reason: 'paused' | 'completed' | 'mode_switched', seconds: number, hard: boolean) => void) | null
+  >(null);
 
   const applyThemePreference = useCallback((mode: 'dark' | 'light') => {
     if (typeof document === 'undefined') return;
@@ -405,6 +417,16 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       if (!isRunning) return;
       setIsRunning(false);
       setInstructionKey('session.paused');
+      // Soft-commit the elapsed time. iOS Safari fires visibilitychange/
+      // pagehide aggressively (screen dim/lock, Control Center, audio
+      // interruption) and throttles background timers, so the auto-complete
+      // effect may never reach selectedDuration. Committing here credits the
+      // minutes AND, past ~60s, triggers the signed-out sign-up prompt — which
+      // it silently never did before. sessionSecondsRef holds the live count
+      // (this effect's closure only re-binds on isRunning). hard=false keeps
+      // sessionId/committedSeconds so a resume doesn't double-count. Called via
+      // endSessionRef because endSession is declared further down the body.
+      endSessionRef.current?.('paused', sessionSecondsRef.current, false);
       void audio.fadeOutAndSuspend({ fadeSeconds: 0.25 });
     };
 
@@ -672,7 +694,16 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
         setCurrentStreak(newStreak);
         setLastSessionDate(sessionDate);
 
-        if (reason === 'completed' || reason === 'mode_switched') {
+        // Offer the signed-out sign-up prompt after ~1 min of real breathing,
+        // however the session ended: a timer auto-complete, a manual stop, a
+        // tap-to-pause, or an iOS background pause (visibilitychange/pagehide).
+        // Previously this only fired for 'completed'/'mode_switched', so an
+        // Open (no-timer) session, a manual pause, or an iOS backgrounded
+        // session never showed the prompt. sessionPromptFiredRef keeps it to
+        // one fire per physical session so onSessionComplete's own accounting
+        // isn't double-counted across pause→resume→pause commits.
+        if (seconds >= 60 && !sessionPromptFiredRef.current) {
+          sessionPromptFiredRef.current = true;
           setLastSessionSeconds(seconds);
           onSessionComplete(seconds);
         }
@@ -701,6 +732,11 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     ]
   );
 
+  // Keep the ref pointed at the latest endSession for the background handler.
+  useEffect(() => {
+    endSessionRef.current = endSession;
+  }, [endSession]);
+
   const handleTogglePlay = useCallback(async () => {
     const audio = getAudioService();
     if (!isRunning) {
@@ -723,6 +759,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
             : `${Date.now()}-${Math.random().toString(36).slice(2)}`
         );
         setSessionCommittedSeconds(0);
+        sessionPromptFiredRef.current = false; // fresh session → prompt may fire again
         trackEvent('breathing_session_start', { mode: activeMode, duration: selectedDuration ?? 0 });
       }
 
