@@ -130,3 +130,24 @@ export const WIM_HOF_PROTOCOL: ProtocolPattern = {
 export const MIN_SPEED_MULTIPLIER = 0.5;
 export const MAX_SPEED_MULTIPLIER = 2.0;
 export const DEFAULT_SPEED_MULTIPLIER = 1.0;
+
+/**
+ * Mode → canonical /breathe/<slug> for client-side navigation.
+ * Mirrors the last-wins result of building modeToBreathingPage from
+ * breathing-pages.ts, but avoids importing that ~200 kB data module into
+ * the client bundle. Keep in sync with breathing-pages.ts `mode` fields.
+ */
+export const modeToSlug: Partial<Record<ModeName, string>> = {
+  [ModeName.Box]: "box",
+  [ModeName.Relax]: "4-7-8",
+  [ModeName.Coherent]: "coherent",
+  [ModeName.Sigh]: "physiological-sigh",
+  [ModeName.WimHof]: "hope-cartel-9d-breathwork",
+  [ModeName.PursedLip]: "pursed-lip",
+  [ModeName.NadiShodhana]: "nadi-shodhana",
+  [ModeName.Ujjayi]: "ujjayi",
+  [ModeName.Belly]: "belly",
+  [ModeName.Buteyko]: "buteyko",
+  [ModeName.Tummo]: "tummo",
+  [ModeName.BreathOfFire]: "breath-of-fire",
+};

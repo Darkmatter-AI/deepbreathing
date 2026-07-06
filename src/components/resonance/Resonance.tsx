@@ -6,7 +6,7 @@ import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { Volume2, VolumeX, Eye, EyeOff, Activity, Waves, Wind, Sun, Moon, Turtle, Rabbit, X, Settings as SettingsIcon, LogOut, Sprout } from 'lucide-react';
 import { BreathingPhase, ModeName, AIRecommendation, ProtocolPhase, ProtocolState } from './types';
-import { BREATHING_PATTERNS, DEFAULT_SPEED_MULTIPLIER, WIM_HOF_PROTOCOL } from './constants';
+import { BREATHING_PATTERNS, DEFAULT_SPEED_MULTIPLIER, WIM_HOF_PROTOCOL, modeToSlug } from './constants';
 import { AudioService } from './services/audioService';
 import Visualizer from './components/Visualizer';
 import { createRuntimePhraseResolver, detectRuntimeLocale, RuntimePhraseKey } from './runtime-phrases';
@@ -36,7 +36,6 @@ const AudioDebugPanel = dynamic(
   () => import('./AudioDebugPanel'),
   { ssr: false }
 );
-import { modeToBreathingPage } from '@/data/breathing-pages';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetClose } from '@/components/ui/sheet';
 import { useAuth } from '@/components/auth/auth-provider';
 import { signOut } from '@/lib/auth-client';
@@ -843,9 +842,9 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
 
       const shouldNavigate = options.navigate ?? true;
       if (shouldNavigate) {
-        const page = modeToBreathingPage[mode];
-        if (page) {
-          const target = `/breathe/${page.slug}`;
+        const slug = modeToSlug[mode];
+        if (slug) {
+          const target = `/breathe/${slug}`;
           if (pathname !== target) {
             router.push(target);
           }
@@ -1233,6 +1232,17 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     if (typeof window === 'undefined') return;
     const event = new CustomEvent('resonance:run-state', { detail: { running: isRunning } });
     window.dispatchEvent(event);
+    // Also expose run-state as a body attribute so the hero can fade via pure CSS
+    // (body[data-resonance-running] .resonance-hero-fade) instead of shipping a
+    // client-side run-state listener component in each route's first-load JS.
+    if (isRunning) {
+      document.body.dataset.resonanceRunning = 'true';
+    } else {
+      delete document.body.dataset.resonanceRunning;
+    }
+    return () => {
+      delete document.body.dataset.resonanceRunning;
+    };
   }, [isRunning]);
 
   // Presence heartbeat: fire on start, then every 60s while running.

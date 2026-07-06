@@ -1,15 +1,12 @@
-import Link from "next/link";
-import { Suspense } from "react";
-
-import { BreathingVisualizer } from "@/components/breathing-visualizer";
+import Resonance from "@/components/resonance/Resonance";
+import type { ModeName } from "@/components/resonance/types";
 import { FadingHeroTitle } from "@/components/breathe/fading-hero-title";
-import { HomeHeroActions } from "@/components/home/home-hero-actions";
 import { JsonLd } from "@/components/seo/json-ld";
 import { cn } from "@/lib/utils";
 import { BREATHING_PATTERNS } from "@/components/resonance/constants";
 import { featuredBreathingPages, breathingPages } from "@/data/breathing-pages";
 import { useCasePages } from "@/data/use-case-pages";
-import { LanguageSwitcherFooter } from "@/components/language-switcher";
+import { LanguageSwitcherFooter } from "@/components/language-switcher-footer-lazy";
 
 const baseUrl = "https://deepbreathingexercises.com";
 
@@ -95,8 +92,36 @@ export default function HomePage() {
         title="Deep Breathing Exercises"
         subtitle="Visual pacing that helps your body downshift. Calm on demand, anytime, anywhere."
         headingLevel={1}
-      />
-      <HomeHeroActions />
+      >
+        <div className="flex flex-wrap gap-4">
+          {/* Server-rendered Start button. The only interactivity is dispatching
+              a resonance:start CustomEvent, wired by a tiny inline delegation
+              script below instead of shipping a "use client" component, so no
+              home-hero-actions chunk lands in the home route's first-load JS.
+              Classes/color mirror the former HomeHeroActions (shadcn Button lg,
+              Box pattern color #e11d48). */}
+          <button
+            type="button"
+            data-resonance-start
+            className="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 disabled:pointer-events-none disabled:opacity-50 h-12 px-6 text-base shadow-none text-white hover:brightness-105 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-white/70"
+            style={{ backgroundColor: "#e11d48", boxShadow: "0 12px 36px #e11d4860" }}
+          >
+            Start session
+          </button>
+          <script
+            dangerouslySetInnerHTML={{
+              __html:
+                "document.addEventListener('click',function(e){var t=e.target.closest&&e.target.closest('[data-resonance-start]');if(t){e.preventDefault();window.dispatchEvent(new CustomEvent('resonance:start'));}});"
+            }}
+          />
+          <a
+            href="#mode-picker"
+            className="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-12 px-6 text-base"
+          >
+            Pick a mode
+          </a>
+        </div>
+      </FadingHeroTitle>
     </div>
   );
 
@@ -105,9 +130,16 @@ export default function HomePage() {
       <JsonLd data={[websiteSchema, faqSchema]} />
 
       <section className="relative isolate z-20 w-full text-foreground min-h-screen">
-        <Suspense fallback={<div className="min-h-screen w-full" aria-hidden="true" />}>
-          <BreathingVisualizer className="min-h-screen" />
-        </Suspense>
+          <section className="relative isolate flex min-h-[60vh] w-full flex-col bg-transparent lg:min-h-screen min-h-screen">
+            <div className="relative flex flex-1 flex-col w-full min-h-0">
+              <Resonance
+                apiKey={process.env.NEXT_PUBLIC_GEMINI_API_KEY}
+                className="flex-1 min-h-[60vh] w-full overflow-hidden lg:min-h-screen"
+                defaultMode={"Box Breathing" as ModeName}
+                noMobileBottomPad
+              />
+            </div>
+          </section>
         {/* Mobile: absolute at bottom so orb fills full screen; fades when running */}
         <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-20 px-6 pb-20 sm:px-8 lg:hidden">
           <div className="pointer-events-auto">
@@ -160,22 +192,22 @@ export default function HomePage() {
               const pattern = BREATHING_PATTERNS[page.mode];
               if (!pattern) return null;
               return (
-                <Link
+                <a
                   key={page.slug}
                   href={`/breathe/${page.slug}`}
                   className="rounded-full border px-4 py-2 text-sm font-semibold transition-colors hover:bg-muted"
                   style={{ borderColor: `${pattern.color}60`, color: pattern.color }}
                 >
                   {pattern.name}
-                </Link>
+                </a>
               );
             })}
-            <Link
+            <a
               href="/breathe"
               className="rounded-full border border-border px-4 py-2 text-sm font-semibold text-muted-foreground transition-colors hover:bg-muted"
             >
               All techniques →
-            </Link>
+            </a>
           </div>
 
           {/* Desktop: card grid */}
@@ -184,7 +216,7 @@ export default function HomePage() {
               const pattern = BREATHING_PATTERNS[page.mode];
               if (!pattern) return null;
               return (
-                <Link
+                <a
                   key={page.slug}
                   href={`/breathe/${page.slug}`}
                   className="group relative rounded-3xl border bg-card p-6 transition-all hover:scale-[1.02]"
@@ -201,7 +233,7 @@ export default function HomePage() {
                   >
                     Start session →
                   </span>
-                </Link>
+                </a>
               );
             })}
           </div>
@@ -258,9 +290,9 @@ export default function HomePage() {
                   ))}
                 </ul>
                 <div className="mt-4 flex flex-wrap gap-2">
-                  <Link href="/1-minute-breathing-exercise" className="text-xs underline underline-offset-2 text-muted-foreground hover:text-foreground">1 min</Link>
-                  <Link href="/2-minute-breathing-exercise" className="text-xs underline underline-offset-2 text-muted-foreground hover:text-foreground">2 min</Link>
-                  <Link href="/5-minute-breathing-exercise" className="text-xs underline underline-offset-2 text-muted-foreground hover:text-foreground">5 min</Link>
+                  <a href="/1-minute-breathing-exercise" className="text-xs underline underline-offset-2 text-muted-foreground hover:text-foreground">1 min</a>
+                  <a href="/2-minute-breathing-exercise" className="text-xs underline underline-offset-2 text-muted-foreground hover:text-foreground">2 min</a>
+                  <a href="/5-minute-breathing-exercise" className="text-xs underline underline-offset-2 text-muted-foreground hover:text-foreground">5 min</a>
                 </div>
               </article>
               <article className={cn(infoCardClass)}>
@@ -307,18 +339,18 @@ export default function HomePage() {
             advanced meditation technique.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
-            <Link href="/box-breathing-app" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">
+            <a href="/box-breathing-app" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">
               Box breathing app
-            </Link>
-            <Link href="/2-minute-breathing-exercise" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">
+            </a>
+            <a href="/2-minute-breathing-exercise" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">
               2 minute reset
-            </Link>
-            <Link href="/for/running" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">
+            </a>
+            <a href="/for/running" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">
               Breathing for running
-            </Link>
-            <Link href="/breathe/tummo" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">
+            </a>
+            <a href="/breathe/tummo" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">
               Tummo breathing
-            </Link>
+            </a>
           </div>
         </section>
       </div>
@@ -333,9 +365,9 @@ export default function HomePage() {
             <ul className="space-y-2 text-xs text-muted-foreground">
               {breathingPages.map((page) => (
                 <li key={page.slug}>
-                  <Link href={`/breathe/${page.slug}`} className="underline underline-offset-2 transition-colors hover:text-foreground">
+                  <a href={`/breathe/${page.slug}`} className="underline underline-offset-2 transition-colors hover:text-foreground">
                     {BREATHING_PATTERNS[page.mode]?.name || page.slug}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -346,9 +378,9 @@ export default function HomePage() {
             <ul className="space-y-2 text-xs text-muted-foreground">
               {useCasePages.map((page) => (
                 <li key={page.slug}>
-                  <Link href={`/for/${page.slug}`} className="underline underline-offset-2 transition-colors hover:text-foreground">
+                  <a href={`/for/${page.slug}`} className="underline underline-offset-2 transition-colors hover:text-foreground">
                     {page.hero.title.replace("Breathing Exercises for ", "").replace("Breathing Exercises to ", "")}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -358,39 +390,39 @@ export default function HomePage() {
             <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-foreground">Timers</p>
             <ul className="space-y-2 text-xs text-muted-foreground">
               <li>
-                <Link href="/1-minute-breathing-exercise" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                <a href="/1-minute-breathing-exercise" className="underline underline-offset-2 transition-colors hover:text-foreground">
                   1 Minute
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/2-minute-breathing-exercise" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                <a href="/2-minute-breathing-exercise" className="underline underline-offset-2 transition-colors hover:text-foreground">
                   2 Minutes
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/5-minute-breathing-exercise" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                <a href="/5-minute-breathing-exercise" className="underline underline-offset-2 transition-colors hover:text-foreground">
                   5 Minutes
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/4-7-8-breathing-timer" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                <a href="/4-7-8-breathing-timer" className="underline underline-offset-2 transition-colors hover:text-foreground">
                   4-7-8 Timer
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/coherent-breathing-app" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                <a href="/coherent-breathing-app" className="underline underline-offset-2 transition-colors hover:text-foreground">
                   Coherent Breathing App
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/box-breathing-app" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                <a href="/box-breathing-app" className="underline underline-offset-2 transition-colors hover:text-foreground">
                   Box Breathing App
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/holiday-breathing-exercises" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                <a href="/holiday-breathing-exercises" className="underline underline-offset-2 transition-colors hover:text-foreground">
                   Holiday Exercises
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -399,54 +431,54 @@ export default function HomePage() {
             <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-foreground">Info</p>
             <ul className="space-y-2 text-xs text-muted-foreground">
               <li>
-                <Link href="/breathe" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                <a href="/breathe" className="underline underline-offset-2 transition-colors hover:text-foreground">
                   All Techniques
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/for" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                <a href="/for" className="underline underline-offset-2 transition-colors hover:text-foreground">
                   All Guides
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/breathing-app" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                <a href="/breathing-app" className="underline underline-offset-2 transition-colors hover:text-foreground">
                   App
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/breathing-visualizer" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                <a href="/breathing-visualizer" className="underline underline-offset-2 transition-colors hover:text-foreground">
                   Breathing Visualizer
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/embed" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                <a href="/embed" className="underline underline-offset-2 transition-colors hover:text-foreground">
                   Embed Widget
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/about" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                <a href="/about" className="underline underline-offset-2 transition-colors hover:text-foreground">
                   About
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/about/abi" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                <a href="/about/abi" className="underline underline-offset-2 transition-colors hover:text-foreground">
                   About Abi
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/about/editorial-policy" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                <a href="/about/editorial-policy" className="underline underline-offset-2 transition-colors hover:text-foreground">
                   Editorial Policy
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/privacy" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                <a href="/privacy" className="underline underline-offset-2 transition-colors hover:text-foreground">
                   Privacy
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/stats" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                <a href="/stats" className="underline underline-offset-2 transition-colors hover:text-foreground">
                   My Stats
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -455,29 +487,29 @@ export default function HomePage() {
             <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-foreground">Situations</p>
             <ul className="space-y-2 text-xs text-muted-foreground">
               <li>
-                <Link href="/breathing-exercises-before-surgery" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                <a href="/breathing-exercises-before-surgery" className="underline underline-offset-2 transition-colors hover:text-foreground">
                   Before Surgery
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/physiological-sigh-panic-attack" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                <a href="/physiological-sigh-panic-attack" className="underline underline-offset-2 transition-colors hover:text-foreground">
                   Panic Attack
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/breathing-exercises-for-labor" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                <a href="/breathing-exercises-for-labor" className="underline underline-offset-2 transition-colors hover:text-foreground">
                   Labor &amp; Birth
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/4-7-8-breathing-for-insomnia" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                <a href="/4-7-8-breathing-for-insomnia" className="underline underline-offset-2 transition-colors hover:text-foreground">
                   Insomnia
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/box-breathing-before-presentation" className="underline underline-offset-2 transition-colors hover:text-foreground">
+                <a href="/box-breathing-before-presentation" className="underline underline-offset-2 transition-colors hover:text-foreground">
                   Before a Presentation
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
