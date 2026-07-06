@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { appendShareUtm, getLocalizedShareText, getLocalizedShareTitle } from '@/lib/share-utm';
 
-interface ShareButtonProps {
+export interface ShareButtonProps {
   url: string;
   title: string;
   text: string;

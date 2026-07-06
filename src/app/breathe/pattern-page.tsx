@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import dynamic from "next/dynamic";
 import { notFound } from "next/navigation";
 
 import { FadingHeroTitle } from "@/components/breathe/fading-hero-title";
@@ -8,26 +6,11 @@ import { BREATHING_PATTERNS } from "@/components/resonance/constants";
 import { JsonLd } from "@/components/seo/json-ld";
 import { breathingPageMap, type BreathingPageContent, type OwnedVideoEmbed } from "@/data/breathing-pages";
 import { LocalizedDate } from "@/components/seo/localized-date";
-import { LanguageSwitcherFooter } from "@/components/language-switcher";
+import { LanguageSwitcherFooter } from "@/components/language-switcher-footer-lazy";
 import { renderInlineLinks } from "@/lib/render-inline-links";
-
-const ShareButton = dynamic(
-  () => import("@/components/ui/share-button").then(mod => ({ default: mod.ShareButton })),
-  { ssr: false }
-);
-
-// Lazy-load Resonance to improve initial page load
-const Resonance = dynamic(
-  () => import("@/components/resonance/Resonance"),
-  {
-    ssr: false,
-    loading: () => (
-      <div className="min-h-screen flex items-center justify-center bg-background" role="status" aria-label="Loading breathing exercise">
-        <div aria-hidden="true" className="h-12 w-12 border-2 border-primary/30 border-t-primary rounded-full animate-spin" />
-      </div>
-    )
-  }
-);
+import Resonance from "@/components/resonance/Resonance";
+// Lazy-load ShareButton via a client wrapper so its chunk stays out of first load.
+import { ShareButton } from "@/components/ui/share-button-lazy";
 
 const baseUrl = "https://deepbreathingexercises.com";
 
@@ -507,7 +490,7 @@ export function PatternPage({ slug }: { slug: string }) {
                 const pattern = relatedPage ? BREATHING_PATTERNS[relatedPage.mode] : BREATHING_PATTERNS[page.mode];
 
                 return (
-                  <Link
+                  <a
                     key={relatedPattern.slug}
                     href={`/breathe/${relatedPattern.slug}`}
                     className="min-w-[70vw] snap-center group rounded-[28px] border bg-card p-5 transition hover:border-primary first:ml-4 sm:first:ml-6 last:mr-4 sm:last:mr-6 md:first:ml-0 md:last:mr-0 sm:min-w-0"
@@ -523,7 +506,7 @@ export function PatternPage({ slug }: { slug: string }) {
                     >
                       Practice →
                     </span>
-                  </Link>
+                  </a>
                 );
               })}
             </div>
@@ -538,7 +521,7 @@ export function PatternPage({ slug }: { slug: string }) {
                 const pattern = BREATHING_PATTERNS[page.mode];
 
                 return (
-                  <Link
+                  <a
                     key={useCase.slug}
                     href={`/for/${useCase.slug}`}
                     className="min-w-[70vw] snap-center group rounded-[28px] border bg-card p-5 transition hover:border-primary first:ml-4 sm:first:ml-6 last:mr-4 sm:last:mr-6 md:first:ml-0 md:last:mr-0 sm:min-w-0"
@@ -554,7 +537,7 @@ export function PatternPage({ slug }: { slug: string }) {
                     >
                       Learn more →
                     </span>
-                  </Link>
+                  </a>
                 );
               })}
             </div>
@@ -569,7 +552,7 @@ export function PatternPage({ slug }: { slug: string }) {
                 const pattern = BREATHING_PATTERNS[page.mode];
 
                 return (
-                  <Link
+                  <a
                     key={guide.href}
                     href={guide.href}
                     className="min-w-[70vw] snap-center group rounded-[28px] border bg-card p-5 transition hover:border-primary first:ml-4 sm:first:ml-6 last:mr-4 sm:last:mr-6 md:first:ml-0 md:last:mr-0 sm:min-w-0"
@@ -585,7 +568,7 @@ export function PatternPage({ slug }: { slug: string }) {
                     >
                       Read guide →
                     </span>
-                  </Link>
+                  </a>
                 );
               })}
             </div>
@@ -601,7 +584,7 @@ export function PatternPage({ slug }: { slug: string }) {
                 const pattern = relatedPage ? BREATHING_PATTERNS[relatedPage.mode] : null;
 
                 return (
-                  <Link
+                  <a
                     key={relatedPattern.slug}
                     href={`/breathe/${relatedPattern.slug}`}
                     className="min-w-[70vw] snap-center group rounded-[28px] border bg-card p-5 transition hover:border-primary first:ml-4 sm:first:ml-6 last:mr-4 sm:last:mr-6 md:first:ml-0 md:last:mr-0 sm:min-w-0"
@@ -617,7 +600,7 @@ export function PatternPage({ slug }: { slug: string }) {
                     >
                       Practice →
                     </span>
-                  </Link>
+                  </a>
                 );
               })}
             </div>
@@ -630,45 +613,45 @@ export function PatternPage({ slug }: { slug: string }) {
             <p className="text-sm uppercase tracking-widest text-primary">Quick sessions</p>
             <p className="mt-2 text-sm text-muted-foreground">Short on time? Try a timed session:</p>
             <div className="mt-4 flex flex-wrap gap-3">
-              <Link href="/1-minute-breathing-exercise" className="rounded-full border border-border px-4 py-2 text-sm font-medium text-card-foreground hover:bg-muted transition-colors">
+              <a href="/1-minute-breathing-exercise" className="rounded-full border border-border px-4 py-2 text-sm font-medium text-card-foreground hover:bg-muted transition-colors">
                 1 minute
-              </Link>
-              <Link href="/2-minute-breathing-exercise" className="rounded-full border border-border px-4 py-2 text-sm font-medium text-card-foreground hover:bg-muted transition-colors">
+              </a>
+              <a href="/2-minute-breathing-exercise" className="rounded-full border border-border px-4 py-2 text-sm font-medium text-card-foreground hover:bg-muted transition-colors">
                 2 minutes
-              </Link>
-              <Link href="/5-minute-breathing-exercise" className="rounded-full border border-border px-4 py-2 text-sm font-medium text-card-foreground hover:bg-muted transition-colors">
+              </a>
+              <a href="/5-minute-breathing-exercise" className="rounded-full border border-border px-4 py-2 text-sm font-medium text-card-foreground hover:bg-muted transition-colors">
                 5 minutes
-              </Link>
+              </a>
             </div>
             {/* Dedicated app links based on breathing technique */}
             {slug === "box" && (
               <div className="mt-4 pt-4 border-t border-border">
-                <Link
+                <a
                   href="/box-breathing-app"
                   className="inline-flex items-center gap-2 text-sm font-medium text-primary transition hover:underline"
                 >
                   Try the dedicated Box Breathing App →
-                </Link>
+                </a>
               </div>
             )}
             {slug === "coherent" && (
               <div className="mt-4 pt-4 border-t border-border">
-                <Link
+                <a
                   href="/coherent-breathing-app"
                   className="inline-flex items-center gap-2 text-sm font-medium text-primary transition hover:underline"
                 >
                   Try the dedicated Coherent Breathing App →
-                </Link>
+                </a>
               </div>
             )}
             {slug === "4-7-8" && (
               <div className="mt-4 pt-4 border-t border-border">
-                <Link
+                <a
                   href="/4-7-8-breathing-timer"
                   className="inline-flex items-center gap-2 text-sm font-medium text-primary transition hover:underline"
                 >
                   Try the dedicated 4-7-8 Breathing Timer →
-                </Link>
+                </a>
               </div>
             )}
           </section>
@@ -697,27 +680,27 @@ export function PatternPage({ slug }: { slug: string }) {
             Stop if dizzy, tingly, or chest-tight. Resume later with shorter, easier breaths.
           </p>
           <div className="mt-4 flex flex-wrap items-center justify-center gap-4 text-xs text-muted-foreground">
-            <Link href="/breathe" className="underline underline-offset-2 transition-colors hover:text-foreground">
+            <a href="/breathe" className="underline underline-offset-2 transition-colors hover:text-foreground">
               Techniques
-            </Link>
-            <Link href="/for" className="underline underline-offset-2 transition-colors hover:text-foreground">
+            </a>
+            <a href="/for" className="underline underline-offset-2 transition-colors hover:text-foreground">
               Guides
-            </Link>
-            <Link href="/breathing-app" className="underline underline-offset-2 transition-colors hover:text-foreground">
+            </a>
+            <a href="/breathing-app" className="underline underline-offset-2 transition-colors hover:text-foreground">
               App
-            </Link>
-            <Link href="/about" className="underline underline-offset-2 transition-colors hover:text-foreground">
+            </a>
+            <a href="/about" className="underline underline-offset-2 transition-colors hover:text-foreground">
               About
-            </Link>
-            <Link href="/about/abi" className="underline underline-offset-2 transition-colors hover:text-foreground">
+            </a>
+            <a href="/about/abi" className="underline underline-offset-2 transition-colors hover:text-foreground">
               About Abi
-            </Link>
-            <Link href="/embed" className="underline underline-offset-2 transition-colors hover:text-foreground">
+            </a>
+            <a href="/embed" className="underline underline-offset-2 transition-colors hover:text-foreground">
               Embed
-            </Link>
-            <Link href="/privacy" className="underline underline-offset-2 transition-colors hover:text-foreground">
+            </a>
+            <a href="/privacy" className="underline underline-offset-2 transition-colors hover:text-foreground">
               Privacy
-            </Link>
+            </a>
           </div>
           <div className="mt-4">
             <LanguageSwitcherFooter />

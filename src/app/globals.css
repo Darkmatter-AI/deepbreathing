@@ -261,3 +261,11 @@ body[data-resonance-immersive="true"] {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+
+/* Hero fade on session start. Resonance sets body[data-resonance-running] while a
+   session runs; the hero (FadingHeroTitle) carries .resonance-hero-fade and fades
+   out via CSS, so no client-side run-state listener ships in first-load JS. */
+body[data-resonance-running] .resonance-hero-fade {
+    opacity: 0;
+    transform: translateY(0.5rem);
+}

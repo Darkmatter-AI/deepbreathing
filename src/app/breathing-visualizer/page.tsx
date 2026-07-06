@@ -1,25 +1,12 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 import { JsonLd } from "@/components/seo/json-ld";
 import { ModeName } from "@/components/resonance/types";
 import { BREATHING_PATTERNS } from "@/components/resonance/constants";
 import { breathingPages } from "@/data/breathing-pages";
 
-import dynamic from "next/dynamic";
 import { createOgImagePath } from "@/lib/seo/og-image";
-
-const Resonance = dynamic(
-  () => import("@/components/resonance/Resonance"),
-  {
-    ssr: false,
-    loading: () => (
-      <div className="min-h-screen flex items-center justify-center bg-background" role="status" aria-label="Loading breathing exercise">
-        <div aria-hidden="true" className="h-12 w-12 border-2 border-primary/30 border-t-primary rounded-full animate-spin" />
-      </div>
-    )
-  }
-);
+import Resonance from "@/components/resonance/Resonance";
 
 const siteUrl = "https://deepbreathingexercises.com";
 const canonicalUrl = `${siteUrl}/breathing-visualizer`;
@@ -204,9 +191,9 @@ export default function BreathingVisualizerPage() {
               nervous system: no download, no signup, works on any device.
             </p>
             <div className="flex flex-wrap gap-3 pt-2">
-              <Link href="/breathe/box" className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground">
+              <a href="/breathe/box" className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground">
                 Start session
-              </Link>
+              </a>
               <a href="#techniques" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-foreground">
                 Pick a technique
               </a>
@@ -250,7 +237,7 @@ export default function BreathingVisualizerPage() {
               if (!pattern) return null;
 
               return (
-                <Link
+                <a
                   key={page.slug}
                   href={`/breathe/${page.slug}`}
                   className="group glow-card rounded-[32px] border bg-card p-6 transition-all hover:scale-[1.02]"
@@ -273,7 +260,7 @@ export default function BreathingVisualizerPage() {
                   >
                     Start session →
                   </span>
-                </Link>
+                </a>
               );
             })}
           </div>
@@ -330,18 +317,18 @@ export default function BreathingVisualizerPage() {
             Looking for a specific timer? Try one of these dedicated breathing tools.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
-            <Link href="/box-breathing-app" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">
+            <a href="/box-breathing-app" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">
               Box breathing app
-            </Link>
-            <Link href="/4-7-8-breathing-timer" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">
+            </a>
+            <a href="/4-7-8-breathing-timer" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">
               4-7-8 breathing timer
-            </Link>
-            <Link href="/coherent-breathing-app" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">
+            </a>
+            <a href="/coherent-breathing-app" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">
               Coherent breathing app
-            </Link>
-            <Link href="/breathing-app" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">
+            </a>
+            <a href="/breathing-app" className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">
               All breathing apps
-            </Link>
+            </a>
           </div>
         </section>
 
@@ -351,27 +338,27 @@ export default function BreathingVisualizerPage() {
             Stop if dizzy, tingly, or chest-tight. Resume later with shorter, easier breaths.
           </p>
           <div className="mt-4 flex flex-wrap items-center justify-center gap-4 text-xs text-muted-foreground">
-            <Link href="/breathe" className="underline underline-offset-2 transition-colors hover:text-foreground">
+            <a href="/breathe" className="underline underline-offset-2 transition-colors hover:text-foreground">
               Techniques
-            </Link>
-            <Link href="/for" className="underline underline-offset-2 transition-colors hover:text-foreground">
+            </a>
+            <a href="/for" className="underline underline-offset-2 transition-colors hover:text-foreground">
               Guides
-            </Link>
-            <Link href="/breathing-app" className="underline underline-offset-2 transition-colors hover:text-foreground">
+            </a>
+            <a href="/breathing-app" className="underline underline-offset-2 transition-colors hover:text-foreground">
               App
-            </Link>
-            <Link href="/about" className="underline underline-offset-2 transition-colors hover:text-foreground">
+            </a>
+            <a href="/about" className="underline underline-offset-2 transition-colors hover:text-foreground">
               About
-            </Link>
-            <Link href="/about/abi" className="underline underline-offset-2 transition-colors hover:text-foreground">
+            </a>
+            <a href="/about/abi" className="underline underline-offset-2 transition-colors hover:text-foreground">
               About Abi
-            </Link>
-            <Link href="/embed" className="underline underline-offset-2 transition-colors hover:text-foreground">
+            </a>
+            <a href="/embed" className="underline underline-offset-2 transition-colors hover:text-foreground">
               Embed
-            </Link>
-            <Link href="/privacy" className="underline underline-offset-2 transition-colors hover:text-foreground">
+            </a>
+            <a href="/privacy" className="underline underline-offset-2 transition-colors hover:text-foreground">
               Privacy
-            </Link>
+            </a>
           </div>
         </footer>
       </div>
