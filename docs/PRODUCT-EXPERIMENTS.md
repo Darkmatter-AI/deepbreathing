@@ -101,6 +101,11 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 
 **Interim (2026-07-05):** User-based intent 13.4% (30/224) — above control (10.7%) and Prompt B (9.0%) but short of the 16% Success bar; truth 8.5%, dismiss DOWN to 32.6%. Trending right. Verdict due 2026-07-12, do not close early.
 
+**⚠️ Trigger change mid-experiment (2026-07-06, PR #32 / commit `523afff`):** `endSession` now offers the prompt after **any ≥60s session end** — timer complete, manual stop, tap-to-pause, and iOS background pause — not just `completed`/`mode_switched`. This **widens the `conversion_prompt_shown` population** for this live experiment, most materially on **iOS**, where backgrounded/abandoned sessions previously fired **no prompt at all** (the prompt was effectively broken on iOS Safari). This is a denominator + composition change, not a copy change. Consequences for the **2026-07-12 verdict**:
+- `conversion_prompt_shown` steps **up** from 2026-07-06, and the newly-qualifying sessions (backgrounded / manually-stopped / abandoned) likely convert at a **lower** rate than clean completions — so the blended intent rate can dip for reasons unrelated to the sheet.
+- **Do not apply the pre-committed criteria across the 2026-07-06 discontinuity.** Either (a) cut the window at 2026-07-06 and read pre-only (the clean series through the 2026-07-05 interim: 13.4% intent, N=224 remains comparable), or (b) segment post-2026-07-06 by end reason (`trigger`) and compare completion-only sessions to the pre-window.
+- Shipped deliberately as a bug fix (recovering lost iOS signups) with this annotation, rather than held to protect the read. See [FUNNEL-DASHBOARD.md] and PR #32 for the mechanism.
+
 ---
 
 ### 2026-06-01: Fix `conversion_prompt_shown` double-fire (impure setState updaters)
