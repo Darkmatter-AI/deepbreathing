@@ -203,7 +203,7 @@ export default function ModeLibrarySheet({ theme, activeModeName, onSelectMode }
         style={[
           styles.sheetContainer,
           {
-            height: SHEET_HEIGHT + TAB_HEIGHT,
+            height: SHEET_HEIGHT + TAB_HEIGHT + insets.bottom,
             bottom: -(SHEET_HEIGHT), // sheet body starts off-screen; tab peeks up
             paddingBottom: insets.bottom,
             backgroundColor: bg,

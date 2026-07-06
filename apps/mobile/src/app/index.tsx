@@ -258,7 +258,11 @@ export default function HomeScreen() {
       <SafeAreaView style={styles.safeArea} edges={[]}>
         {snapshotReady ? (
           <BreathingExperienceDom
-            dom={{ style: { flex: 1 } }}
+            dom={{
+              style: { flex: 1 },
+              automaticallyAdjustContentInsets: false,
+              contentInsetAdjustmentBehavior: 'never',
+            }}
             locale={locale}
             forcedTheme={theme}
             appState={appState}

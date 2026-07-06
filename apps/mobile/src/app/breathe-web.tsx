@@ -51,7 +51,11 @@ export default function BreatheWebScreen() {
       <Stack.Screen options={{ headerShown: false }} />
       <SafeAreaView style={styles.safeArea} edges={[]}>
         <BreathingExperienceDom
-          dom={{ style: { flex: 1 } }}
+          dom={{
+            style: { flex: 1 },
+            automaticallyAdjustContentInsets: false,
+            contentInsetAdjustmentBehavior: 'never',
+          }}
           locale={locale}
           forcedTheme={theme}
           appState={appState}
