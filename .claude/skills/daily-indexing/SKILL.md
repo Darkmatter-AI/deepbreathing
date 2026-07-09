@@ -1,138 +1,76 @@
 ---
 name: daily-indexing
-description: Submit pending translated pages to Google Search Console and Bing Webmaster Tools for indexing. Reads docs/indexing-queue.md, skips URLs already indexed, picks the next pending URLs by priority, submits via the mass-translate MCP API (preferred) or agent-browser UI (fallback), writes submission dates back, and commits the updated queue. Run daily until the queue drains.
+description: Refresh the index status of deepbreathingexercises.com pages from the GSC URL Inspection API and triage anything Google has not indexed. Use when asked about indexing status, "are the translated pages indexed", "submit pages for indexing", "refresh the indexing queue", or to investigate not-indexed URLs. Read this before attempting any URL submission — most submission paths for this site are dead.
 ---
 
-# Daily indexing submission
+# Indexing status + triage
 
-Submits pending URLs from `docs/indexing-queue.md` to Google + Bing and tracks state.
+Refreshes `docs/indexing-queue.md` from Google, then triages what's left.
 
-## Context
+## Read this first: URL submission is mostly not a thing anymore
 
-- The site has ~260 translated pages that indexed slowly after the mid-March rollout. `/languages` is now a crawl hub that accelerates passive indexing, but active submission still helps.
-- The queue file has an **Indexed** column (`✓` = already indexed per GSC). NEVER submit a row with `✓` — skip it.
-- Two submission channels:
-  - **MCP API** (`mass-translate-backend`) — fast, batch. Preferred when OAuth is connected.
-  - **agent-browser UI** — fallback. Works today, slower, UI-throttled on GSC side.
+This skill used to submit URLs to Google and Bing daily. Most of that was ineffective or redundant. Verified 2026-07-09:
 
-## Daily flow
+| Channel | Status | Why |
+|---|---|---|
+| Google Indexing API (`request_indexing`) | **Removed** | Google restricts it to `JobPosting` and `BroadcastEvent` pages. Ours are neither. It returns HTTP 200 for ineligible URLs, so it always looked like it worked. |
+| `google.com/ping?sitemap=` | **Removed** | Endpoint deleted by Google in 2023. Returned 404 on every build. |
+| `bing.com/ping?sitemap=` | **Removed** | Returns 410 Gone. |
+| Bing via `submit_urls_bing` (mass-translate MCP) | **Not needed** | `postbuild` already submits every sitemap URL to IndexNow on each production deploy. See `scripts/ping-sitemap-lib.mjs`. |
+| IndexNow | **Active, automatic** | Runs on every Vercel build. Covers Bing and Yandex. Google does not participate in IndexNow. |
 
-### 1. Check prerequisites
+**Do not reintroduce URL submission to Google.** There is no supported API for it on general pages. Google discovers pages through the sitemap (auto-discovered via `robots.txt`) and the `/languages` crawl hub. What we control is discoverability and page quality, not submission.
 
-```
-mcp__mass-translate-backend__get_site_config
-```
+This also means the `mass-translate-backend` OAuth is no longer needed for indexing. It expired roughly every two weeks and cost several sessions. Nothing here depends on it.
 
-Look at `gsc_connected` and `bing_connected`:
-- Both true → use MCP API for this run (fast path)
-- GSC true, Bing false → MCP for GSC, UI for Bing
-- Either false + token refresh failing → UI fallback for both, and note that OAuth re-auth is needed (don't attempt to re-auth automatically; surface this to the user with the URL from `start_gsc_oauth` / `start_bing_oauth`).
+## Refresh index status
 
-### 2. Read queue
+Durable service-account auth. Nothing expires.
 
-Parse `docs/indexing-queue.md` table rows. Each row is `| P | URL | Indexed | GSC | Bing |`.
-
-Filter to **pending** rows per channel:
-- GSC pending = `Indexed` empty AND `GSC` empty
-- Bing pending = `Indexed` empty AND `Bing` empty
-
-Sort ascending by priority, then URL. Pick the next batch:
-- **MCP path**: GSC batch = 50 URLs (Indexing API is generous); Bing batch = 200 URLs (submit in groups of 10 per call, since `submit_urls_bing` caps at 10/call).
-- **UI fallback**: GSC = 10; Bing = 50.
-
-### 3. Submit — MCP API path (preferred)
-
-**Google (one URL per call):**
-```
-for url in gsc_batch:
-  mcp__mass-translate-backend__request_indexing(url=url)
-```
-Treat `success: true` as submitted. On `Google OAuth access token refresh failed` or similar, stop — ask the user to re-auth (`start_gsc_oauth` → visit URL → `complete_gsc_oauth`). Do NOT mark those URLs submitted.
-
-**Bing (up to 10 per call):**
-```
-for chunk_of_10 in bing_batch:
-  mcp__mass-translate-backend__submit_urls_bing(urls=chunk_of_10)
-```
-On success, mark all URLs in the chunk submitted.
-
-### 4. Submit — agent-browser UI fallback
-
-**Bing** (bulk):
-```
-agent-browser close
-agent-browser --auto-connect open "https://www.bing.com/webmasters/submiturl?siteUrl=https://deepbreathingexercises.com/"
-agent-browser --auto-connect wait --load networkidle
-agent-browser --auto-connect wait 3000
-agent-browser --auto-connect snapshot -i | grep -iE "Submit URLs"
-# click Submit URLs button → opens dialog with textarea
-agent-browser --auto-connect click @e<button>
-agent-browser --auto-connect wait 2000
-agent-browser --auto-connect snapshot -i | grep -iE "textbox|Submit"
-agent-browser --auto-connect fill @e<textarea> "$(printf '%s\n' <URLs>)"
-agent-browser --auto-connect click @e<submit-button>
-agent-browser --auto-connect wait 5000
-agent-browser --auto-connect screenshot /tmp/bing-result.png
-# verify "Success: URL submitted Successfully" appears before marking submitted
+```bash
+GSC_SA_KEY_FILE=~/.config/dbe-ga-visibility-sa.json node scripts/gsc-index-status.mjs
 ```
 
-**GSC** (one URL at a time):
-```
-agent-browser --auto-connect open "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Adeepbreathingexercises.com"
-agent-browser --auto-connect wait --load networkidle
-# for each URL in gsc_batch:
-agent-browser --auto-connect snapshot -i | grep -iE "Inspect any URL"
-agent-browser --auto-connect fill @e<inspect-combobox> "<URL>"
-agent-browser --auto-connect press Enter
-agent-browser --auto-connect wait 10000
-agent-browser --auto-connect snapshot -i | grep -iE "Request indexing"
-agent-browser --auto-connect click @e<request-indexing-button>
-agent-browser --auto-connect wait 20000
-agent-browser --auto-connect screenshot /tmp/gsc-<N>.png
-# confirm "Indexing requested" in screenshot, then dismiss
-agent-browser --auto-connect find text "Dismiss" click
-# re-snapshot to refresh refs for next URL
-```
+Flags: `--dry-run` (report only, no writes), `--limit N` (inspect only the first N pending rows).
 
-If GSC shows "Quota exceeded" or the request-indexing dialog doesn't appear: stop GSC loop, do NOT mark those URLs submitted, resume tomorrow.
+The script inspects every row whose `Indexed` column is empty, marks the newly-indexed ones `✓`, and writes the file back. Rows already marked `✓` are skipped, so it gets cheaper each run.
 
-### 5. Update the queue
+Requirements, both already satisfied:
+- `ga-visibility@deepbreathingexercises.iam.gserviceaccount.com` is an **Owner** of `sc-domain:deepbreathingexercises.com`. Editor is not enough; URL Inspection returns 403.
+- The key lives at `~/.config/dbe-ga-visibility-sa.json` on mbp14 and `~/automations/deepbreathing-visibility/task/ga-sa-key.json` on orangepi. It is the same service account the weekly visibility digest uses.
 
-For each URL successfully submitted, edit its row in `docs/indexing-queue.md` to write today's date (YYYY-MM-DD) in the appropriate column. Use the Edit tool with the unique full row string.
+Cadence: weekly is plenty. Daily runs told us nothing that a week wouldn't.
 
-### 6. Weekly: refresh the Indexed column
+## Triage what is left
 
-Once a week, re-pull the GSC indexed list so the `Indexed` column reflects reality (pages Google has now indexed should be marked `✓` and no longer submitted):
+The script prints a `coverageState` per unindexed URL. Each state means something different, and only some are actionable.
 
-```
-agent-browser --auto-connect open "https://search.google.com/search-console/index?resource_id=sc-domain%3Adeepbreathingexercises.com"
-# click "View data about indexed pages"
-# eval to extract all rows, filter URLs, strip PUA icon chars
-```
+**`Crawled - currently not indexed`** — Google fetched the page and chose not to index it. This is a quality or duplication judgment. Submission cannot fix it and never could. Fix the page: thin content, near-duplicate of the English original, or a machine translation that reads poorly. Concentrated in `ja` and `pt`.
 
-Then update the `Indexed` column for any URL newly present in the indexed list.
+**`Discovered - currently not indexed`** — Google knows the URL but has not crawled it. Usually crawl-budget. It resolves on its own, or improves with internal links from the `/languages` hub.
 
-### 7. Commit
+**`URL is unknown to Google`** — never discovered. Check whether the URL is in the sitemap and returns 200. If it 3xx-redirects, it belongs out of the queue, not in it.
 
-```
+**`Page with redirect`** / **`Duplicate, Google chose different canonical`** — usually correct behavior, not a bug. Check `docs/SEO-EXPERIMENTS.md` before investigating; the recurring "Page with redirect" alert is already logged there as a known no-action finding.
+
+Before filing any of these as a problem, read `docs/SEO-EXPERIMENTS.md`. Most have been diagnosed already.
+
+## Queue hygiene
+
+`docs/indexing-queue.md` accumulates rows for URLs that later became redirects. If a row 3xx-redirects and is absent from `sitemap.xml`, delete the row. It is not an indexing failure.
+
+The `GSC` and `Bing` date columns are historical. They record submissions from the era when we still submitted. Do not write new dates into them.
+
+## Commit
+
+```bash
 git add docs/indexing-queue.md
-git commit -m "Indexing queue: submitted N URLs to GSC, M to Bing ($(date +%Y-%m-%d))"
+git commit -m "chore(indexing): refresh index status from URL Inspection API"
 ```
 
-Do not push — the user reviews and pushes.
+## Report back (≤5 lines)
 
-### 8. Report back (≤5 lines)
-
-- GSC submitted today (N) + any failures
-- Bing submitted today (M) + any failures
-- Pending by priority remaining
-- Next run time / blockers (e.g., "Bing OAuth needs re-auth")
-
-## Expected runtime
-
-- Via MCP API: ~30 seconds for 50 GSC + 200 Bing.
-- Via UI fallback: ~5-8 minutes for 10 GSC + 50 Bing.
-
-## Completion signal
-
-Queue drains when all non-indexed rows have a date in both GSC and Bing columns. At that point, stop daily runs; switch to weekly Indexed-column refresh only. Verify impact via GSC Coverage indexed count trend.
+- Newly indexed since last run, and the current indexed / total
+- Count of each `coverageState` among the unindexed
+- Anything actionable, meaning quality fixes, not submissions
+- Anything that looks like a discoverability bug, meaning sitemap or redirect problems
