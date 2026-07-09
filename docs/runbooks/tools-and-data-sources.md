@@ -78,11 +78,19 @@ The `page=!URL` syntax means "exact URL match." Replace the page URL portion to 
 **Tool:** `mcp__mass-translate-backend__sync_bing_performance` then `mcp__mass-translate-backend__get_bing_search_performance`
 **Gotcha:** Bing OAuth was bricked once (May 5) and re-authed. If 401 errors appear, `mcp__mass-translate-backend__start_bing_oauth`.
 
-### Submit URLs for indexing
+### Check index status (do NOT submit URLs)
 
-**Google:** `mcp__mass-translate-backend__request_indexing` with `type="URL_UPDATED"` (recrawl) or `type="URL_DELETED"` (remove from index — faster than waiting for Validate Fix recrawl).
+**Tool:** `GSC_SA_KEY_FILE=~/.config/dbe-ga-visibility-sa.json node scripts/gsc-index-status.mjs`
+Service-account auth (`ga-visibility@…`), self-signed JWT, nothing expires. The SA must be an **Owner** of the property; Editor 403s on URL Inspection. Refreshes the `Indexed` column of `docs/indexing-queue.md` and prints a `coverageState` for each unindexed URL. See the `daily-indexing` skill.
 
-**Bing:** `mcp__mass-translate-backend__submit_urls_bing` (batch endpoint) or browser-based BWT URL Submission UI as fallback.
+**Gotcha — URL submission is dead on this site (audited 2026-07-09).** Do not reach for these:
+- `mcp__mass-translate-backend__request_indexing` posts to Google's Indexing API, which Google restricts to `JobPosting` / `BroadcastEvent` pages. It returns **HTTP 200 for ineligible URLs**, so it looks like it worked and does nothing.
+- `google.com/ping?sitemap=` → **404** (retired 2023). `bing.com/ping?sitemap=` → **410 Gone**.
+- `mcp__mass-translate-backend__submit_urls_bing` is redundant: `postbuild` submits every sitemap URL to **IndexNow** on each production deploy (`scripts/ping-sitemap-lib.mjs`). Google does not participate in IndexNow.
+
+Google discovers pages via the sitemap and the `/languages` crawl hub. `Crawled - currently not indexed` is a quality verdict, not a submission problem. Full reasoning in the 2026-07-09 entry of `SEO-EXPERIMENTS.md`.
+
+**Consequence:** the mass-translate GSC OAuth (which expired roughly every two weeks) is no longer needed for indexing. It remains only for translation work.
 
 ### Run a SerpApi search to inspect SERP layout
 
