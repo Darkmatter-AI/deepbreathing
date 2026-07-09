@@ -94,10 +94,10 @@ export default function HomePage() {
         headingLevel={1}
       >
         <div className="flex flex-wrap gap-4">
-          {/* Server-rendered Start button. The only interactivity is dispatching
-              a resonance:start CustomEvent, wired by a tiny inline delegation
-              script below instead of shipping a "use client" component, so no
-              home-hero-actions chunk lands in the home route's first-load JS.
+          {/* Server-rendered Start button. It carries no handler of its own —
+              the already-loaded Resonance chunk delegates clicks off the
+              `data-resonance-start` attribute — so no home-hero-actions chunk
+              lands in the home route's first-load JS.
               Classes/color mirror the former HomeHeroActions (shadcn Button lg,
               Box pattern color #e11d48). */}
           <button
@@ -108,12 +108,6 @@ export default function HomePage() {
           >
             Start session
           </button>
-          <script
-            dangerouslySetInnerHTML={{
-              __html:
-                "document.addEventListener('click',function(e){var t=e.target.closest&&e.target.closest('[data-resonance-start]');if(t){e.preventDefault();window.dispatchEvent(new CustomEvent('resonance:start'));}});"
-            }}
-          />
           <a
             href="#mode-picker"
             className="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-12 px-6 text-base"

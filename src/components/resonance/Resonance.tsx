@@ -1314,8 +1314,24 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
         handleTogglePlay();
       }
     };
+    // Start buttons outside this component opt in with `data-resonance-start`.
+    // The delegation must live here rather than in an inline <script>: React
+    // renders script tags by setting innerHTML, which the browser never
+    // executes, so a script-based listener is silently never registered.
+    // Running inside the real click keeps the user-activation needed for audio.
+    const handleDelegatedClick = (event: MouseEvent) => {
+      const target = event.target as Element | null;
+      if (target?.closest?.('[data-resonance-start]')) {
+        event.preventDefault();
+        handleStartRequest();
+      }
+    };
     window.addEventListener('resonance:start', handleStartRequest);
-    return () => window.removeEventListener('resonance:start', handleStartRequest);
+    document.addEventListener('click', handleDelegatedClick);
+    return () => {
+      window.removeEventListener('resonance:start', handleStartRequest);
+      document.removeEventListener('click', handleDelegatedClick);
+    };
   }, [isRunning, handleTogglePlay]);
 
   const getPhaseLabel = (p: BreathingPhase) => {
