@@ -25,9 +25,9 @@ The point of this runbook is reproducibility — same numbers pulled the same wa
 | `first_visit` | Top-of-funnel; new visitors only |
 | `page_viewed_breathing` | Top of breathing-page funnel; deployed Apr 28-29 |
 | `breathing_session_start` | Funnel start |
-| `breathing_session_pause` | First engagement signal |
-| `breathing_session_complete` | End-of-timer signal (only fires when duration set) |
-| `breathing_session_stop` | Manual-stop signal (verify it's firing — was unclear May 5) |
+| ~~`breathing_session_pause`~~ | REMOVED — 0 events since ~mid-June 2026; do not expect it |
+| ~~`breathing_session_complete`~~ | REMOVED — same; `breathing_session_end` is the only end-of-session event now |
+| `breathing_session_end` | Sole session-end signal (fires ~80% of starts as of Jul 2026) |
 | `mode_switch` | Engagement signal — explored techniques |
 | `conversion_prompt_shown` | Bottom-of-funnel ask |
 | `conversion_signup_completed` | Conversion |
@@ -137,7 +137,7 @@ mcp__mass-translate-backend__submit_sitemap_bing
   sitemap_url=https://deepbreathingexercises.com/sitemap.xml
 ```
 
-**Gotcha:** Bing OAuth was bricked once (May 5) and re-authed. If 401 errors appear, run `mcp__mass-translate-backend__start_bing_oauth`.
+**Gotcha:** Bing OAuth was bricked once (May 5) and re-authed; it is **dead again as of 2026-07-10** ("Refresh token is invalid or expired"). Preferred path now: read Bing totals from the orangepi visibility digest (`~/automations/deepbreathing-visibility/digests/latest.md` on orangepi), which pulls Bing via a durable API key. Only re-auth via `start_bing_oauth` if you need per-page MCP queries.
 
 ---
 

@@ -23,7 +23,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
-| 2026-06-26 | [Non-blocking signup banner (`loss_aversion_banner`) — top-anchored notification](#2026-06-26-non-blocking-signup-banner-loss_aversion_banner--top-anchored-notification) | 🔄 Implemented — shipped 100% (replaces Prompt C) |
+| 2026-06-26 | [Non-blocking signup banner (`loss_aversion_banner`) — top-anchored notification](#2026-06-26-non-blocking-signup-banner-loss_aversion_banner--top-anchored-notification) | 🔄 Implemented — first read 2026-07-10: intent 9.3% vs 13.8%, **trending ❌**; verdict 2026-07-17 |
 | 2026-06-21 | [/stats "Your practice" — retention surface (breath garden + stale-streak reframe)](#2026-06-21-stats-page--streak-calendar--session-stats-for-signed-in-users) | 🔄 Implemented |
 | 2026-06-14 | [Conversion Prompt C (loss_aversion), 100% challenger](#2026-06-14-conversion-prompt-c-loss_aversion-100-challenger) | 🔄 Implemented |
 | 2026-06-01 | [Fix `conversion_prompt_shown` double-fire (impure setState updaters)](#2026-06-01-fix-conversion_prompt_shown-double-fire-impure-setstate-updaters) | 🔄 Implemented |
@@ -71,7 +71,9 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 
 **Open design questions:** top-center vs top-right on mobile (header crowding); the benefit headline currently has no loss/device subline (a lever Prompt C uses — could add back); card vs pill (card is primary).
 
-**Status:** 🔄 Implemented — **shipped to production 2026-06-26 at 100%**, replacing Prompt C. measure-after: 2026-07-03 (first read), 2026-07-17 (verdict).
+**First read (2026-07-10, run 7 days late):** Impression gate cleared — 564 banner impressions / 161 prompt-shown users since ship (Jun 26 – Jul 9, GA4 events report; banner is at 100% so the whole period is banner traffic). **Intent = 15 signup users / 161 prompt-shown users = 9.3%**, vs the 13.8% modal baseline — below the pre-committed <10% Failed threshold. Worse, the trailing 7 days (Jul 3–9) read **4.7%** (4/86): intent is decaying within the banner period, the banner-blindness signature the Failed criterion anticipated. Independent corroboration: the orangepi visibility digest flagged DB signups −75% WoW (2 vs 8) on 2026-07-09 and commented on DAR-440. Still open for the verdict: the retention leg (day-7 return of banner-cohort vs modal-cohort signups — needs the Neon pull; blocked this session), which per the criteria converts ❌ to 🟡 Mixed if retention rose. On current evidence expect ❌ Failed on 2026-07-17; be ready with the revert decision (`ACTIVE_CHALLENGER` back to `"loss_aversion"`) or the first iteration (add the loss/device subline back to the banner headline).
+
+**Status:** 🔄 Implemented — **shipped to production 2026-06-26 at 100%**, replacing Prompt C. measure-after: ~~2026-07-03~~ first read done **2026-07-10** (intent 9.3%, trending ❌), verdict **2026-07-17**.
 
 ---
 
