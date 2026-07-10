@@ -87,7 +87,7 @@ When the question is "how is X doing?" — look at the dashboard first, not GA4 
 [`docs/runbooks/tools-and-data-sources.md`](docs/runbooks/tools-and-data-sources.md) is the per-task lookup for analytics, SEO, DB queries, deploy verification. **Read this BEFORE starting any analytics, SEO, or DB work.** It documents project identifiers (Vercel, GA4, Neon) and the gotchas already learned the hard way:
 
 - GA4 lives on the **DKMT** account, property `527524722`, measurement ID `G-53DLCBMRL3`. The OLD `G-7GG9WVNBBP` (Abiassi) is stale.
-- `mcp__gsc__search_analytics` returns **403** for this site — use `mcp__mass-translate-backend__get_search_performance` instead.
+- `mcp__gsc__*` tools work as of 2026-07-10 (the repo's `.mcp.json` points at the `ga-visibility` SA, an Owner of the property). This is the preferred GSC path — durable, nothing expires. The old "403, use mass-translate instead" advice is obsolete; the mass-translate OAuth expires ~2-weekly and is only needed for translation work.
 - The mass-translate **proxy strips one locale prefix** before forwarding to Next.js. Redirect rules in `next.config.js` must target the post-proxy URL.
 - `dkmt-cc` creds **expire ~30 days** — `dkmt-cc login` to refresh, or fall back to `vercel env pull`.
 - Cloudflare + Vercel cache may serve stale 404s for ~5 min after a redirect deploy. Always cache-bust with `?cb=$(date +%s%N)` when verifying.

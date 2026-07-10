@@ -1,6 +1,6 @@
 # Tools and Data Sources
 
-Per-task lookup table for "how do I do X" on the deepbreathingexercises.com project. Read this BEFORE starting any analytics, SEO, or DB work — it'll save you the time of rediscovering that GSC analytics returns 403 for this site, that GA4 is on the DKMT account not Abiassi, and that the proxy strips locales before Next.js sees URLs.
+Per-task lookup table for "how do I do X" on the deepbreathingexercises.com project. Read this BEFORE starting any analytics, SEO, or DB work — it'll save you the time of rediscovering that GA4 is on the DKMT account not Abiassi, that the proxy strips locales before Next.js sees URLs, and that one service account (`ga-visibility@deepbreathingexercises.iam.gserviceaccount.com`) is the durable credential for GSC + GA4 everywhere.
 
 This file is the operational counterpart to:
 - [docs/FUNNEL-DASHBOARD.md](../FUNNEL-DASHBOARD.md) — the *what* (current state)
@@ -47,9 +47,9 @@ If any of these change, update this file FIRST, then update FUNNEL-DASHBOARD.md 
 
 ### Pull GSC search performance data
 
-**Tool:** `mcp__mass-translate-backend__sync_gsc_performance` then `mcp__mass-translate-backend__get_search_performance`
-**Why not `mcp__gsc__*`:** Returns 403 for this site (`User does not have sufficient permission for site 'sc-domain:deepbreathingexercises.com'`). The mass-translate-backend tools have a separate OAuth scope that works.
-**Steps:**
+**Tool (preferred, durable): `mcp__gsc__search_analytics`** with `siteUrl=sc-domain:deepbreathingexercises.com`. Working since 2026-07-10: the repo's `.mcp.json` (mbp14 + mbp16) points the gsc MCP at `~/.config/dbe-ga-visibility-sa.json` — the `ga-visibility` service account, now an **Owner** of the property. Nothing expires. The old 403 was the previous key (`gsc-service-account.json`, an ungranted SA); if you see 403 again, check which key `.mcp.json` names. `mcp__gsc__index_inspect` and the sitemap tools work too. On orangepi the same data comes from `task/gsc_query.py`.
+
+**Fallback (avoid): mass-translate-backend** `sync_gsc_performance` + `get_search_performance`. Its OAuth expires ~2-weekly and re-auth is interactive with two silent failure modes (wrong account, unticked scope checkboxes). Only reach for it if the gsc MCP is somehow down:
 ```
 mcp__mass-translate-backend__sync_gsc_performance \
   site_url=https://deepbreathingexercises.com/ \
@@ -78,11 +78,19 @@ The `page=!URL` syntax means "exact URL match." Replace the page URL portion to 
 **Tool:** `mcp__mass-translate-backend__sync_bing_performance` then `mcp__mass-translate-backend__get_bing_search_performance`
 **Gotcha:** Bing OAuth was bricked once (May 5) and re-authed. If 401 errors appear, `mcp__mass-translate-backend__start_bing_oauth`.
 
-### Submit URLs for indexing
+### Check index status (do NOT submit URLs)
 
-**Google:** `mcp__mass-translate-backend__request_indexing` with `type="URL_UPDATED"` (recrawl) or `type="URL_DELETED"` (remove from index — faster than waiting for Validate Fix recrawl).
+**Tool:** `GSC_SA_KEY_FILE=~/.config/dbe-ga-visibility-sa.json node scripts/gsc-index-status.mjs`
+Service-account auth (`ga-visibility@…`), self-signed JWT, nothing expires. The SA must be an **Owner** of the property; Editor 403s on URL Inspection. Refreshes the `Indexed` column of `docs/indexing-queue.md` and prints a `coverageState` for each unindexed URL. See the `daily-indexing` skill.
 
-**Bing:** `mcp__mass-translate-backend__submit_urls_bing` (batch endpoint) or browser-based BWT URL Submission UI as fallback.
+**Gotcha — URL submission is dead on this site (audited 2026-07-09).** Do not reach for these:
+- `mcp__mass-translate-backend__request_indexing` posts to Google's Indexing API, which Google restricts to `JobPosting` / `BroadcastEvent` pages. It returns **HTTP 200 for ineligible URLs**, so it looks like it worked and does nothing.
+- `google.com/ping?sitemap=` → **404** (retired 2023). `bing.com/ping?sitemap=` → **410 Gone**.
+- `mcp__mass-translate-backend__submit_urls_bing` is redundant: `postbuild` submits every sitemap URL to **IndexNow** on each production deploy (`scripts/ping-sitemap-lib.mjs`). Google does not participate in IndexNow.
+
+Google discovers pages via the sitemap and the `/languages` crawl hub. `Crawled - currently not indexed` is a quality verdict, not a submission problem. Full reasoning in the 2026-07-09 entry of `SEO-EXPERIMENTS.md`.
+
+**Consequence:** the mass-translate GSC OAuth (which expired roughly every two weeks) is no longer needed for indexing. It remains only for translation work.
 
 ### Run a SerpApi search to inspect SERP layout
 
@@ -193,7 +201,7 @@ mcp__scheduled-tasks__create_scheduled_task \
 
 These have all bitten us before. Document in this file the FIRST time they bite, not the third.
 
-1. **GSC `mcp__gsc__*` analytics endpoints return 403 for this site.** Use mass-translate-backend instead. (May 5)
+1. **FIXED 2026-07-10 — `mcp__gsc__*` works now.** The historical 403 came from `.mcp.json` naming an ungranted SA key. It now names `~/.config/dbe-ga-visibility-sa.json` (Owner of the property) on mbp14 + mbp16. Prefer `mcp__gsc__*` over mass-translate for all GSC reads; if 403 recurs, check the key path in `.mcp.json` first. (May 5 → fixed Jul 10)
 
 2. **GA4 was migrated from Abiassi → DKMT account at some point.** Old measurement ID `G-7GG9WVNBBP` shows zero data. Always confirm you're on `527524722` / `G-53DLCBMRL3` before pulling. (May 5)
 
