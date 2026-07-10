@@ -18,7 +18,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
-| 2026-07-10 | [Canonical Hijack — 2 Locale Pages Merged With Casino Domain (747live.bet)](#2026-07-10-canonical-hijack--2-locale-pages-merged-with-casino-domain-747livebet) | ⏳ Waiting |
+| 2026-07-10 | [Canonical Hijack — 2 Locale Pages Merged With Casino Domain (747live.bet)](#2026-07-10-canonical-hijack--2-locale-pages-merged-with-casino-domain-747livebet) | ✅ Success |
 | 2026-07-09 | [Retire Dead Submission Paths — Indexing API, Sitemap Pings; Durable URL Inspection](#2026-07-09-retire-dead-submission-paths) | 📊 Snapshot |
 | 2026-06-15 | [Nofollow + Robots-Disallow ?duration= Timer Deep-Links (Hreflang to Non-Canonical)](#2026-06-15-nofollow--robots-disallow-duration-timer-deep-links-hreflang-to-non-canonical) | 🔄 Implemented |
 | 2026-06-14 | [GSC "Page with redirect" Alert (WNC-20237597) — Reviewed, Benign](#2026-06-14-gsc-page-with-redirect-alert-wnc-20237597--reviewed-benign) | 📊 Snapshot |
@@ -105,6 +105,8 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 4. Optional: Google spam report for 747live.bet.
 
 **Success criteria (measure 2026-08-10):** ✅ if both pages return to self-canonical (`Submitted and indexed` or at least googleCanonical = self) within 4 weeks of the re-index request. ❌ if either still points at 747live.bet — then escalate: spam report + consider serving those routes with rebuilt content (new URL + 301) to break the cluster. Tripwire alert at any point = reopen immediately.
+
+**Result — ✅ Success, same-day (2026-07-10).** The tripwire (`hijack_check.py` on orangepi) shows both pages recovered on the day of the Request-indexing submissions: `Submitted and indexed`, self-canonical, 747live.bet gone. Criterion met 30 days early. Canonical dedup verdicts can flap, so the tripwire stays in the Mon/Thu digest indefinitely — any relapse alert reopens this entry per the clause above. Root-cause work (proxy canonical param echo) continues separately in Linear (mass-translate-backend proxy fix).
 
 ---
 
