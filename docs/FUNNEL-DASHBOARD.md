@@ -1,12 +1,59 @@
 # Funnel Dashboard
 
-**Last refreshed:** 2026-05-18 (indexing-recovery checkpoint)
+**Last refreshed:** 2026-07-10 (weekly refresh; first refresh since 2026-05-18 — 7-week gap)
 **Refresh cadence:** Weekly (Friday). Runbook: [docs/runbooks/weekly-funnel-refresh.md](runbooks/weekly-funnel-refresh.md)
 **Source of truth:** GA4 property `Deep Breathing Exercises` in DKMT account, ID `527524722`, measurement ID `G-53DLCBMRL3`. ⚠️ NOT the old Abiassi property `G-7GG9WVNBBP` (which has stale 2026-Q1 data only).
 
 ---
 
-## Top-line snapshot — last 14 days (May 4 – May 17, 2026)
+## Top-line snapshot — last 7 days (Jul 3 – Jul 9, 2026)
+
+### Engagement funnel (unique users, GA4; Web = All − Mobile)
+
+| Step | All users | Mobile | Web |
+|------|---:|---:|---:|
+| `first_visit` | 337 | 113 | 224 |
+| `page_viewed_breathing` | 366 | 130 | 236 |
+| `breathing_session_start` | **140** | **58** | 82 |
+| `breathing_session_end` | 112 | 41 | 71 |
+| `breathing_session_pause` / `_complete` | **0 — events no longer exist** (see Known issues) | — | — |
+| `mode_switch` | 7 | 2 | 5 |
+| `conversion_prompt_shown` | 86 | 34 | 52 |
+| `conversion_prompt_dismissed` | 21 | 9 | 12 |
+| `conversion_signup_completed` | **4** | 3 | 1 |
+| `signup_user_identified` | 2 | 1 | 1 |
+
+Total active users (7d): 400 (mobile 138). Total events: 4,534. Sessions 572 (−9.8% WoW). Channels (sessions): Organic Search 294, Direct 205, Referral 32 (−47.5%), AI Assistant 26.
+
+### Funnel ratios (7d)
+
+| | All | Mobile | Web |
+|---|---:|---:|---:|
+| viewed → start | 38.3% | 44.6% | 34.7% |
+| start → end | **80.0%** | 70.7% | 86.6% |
+| prompt_shown → signup | **4.7%** | 8.8% | 1.9% |
+
+**The alarm this refresh is the bottom of the funnel, not the top.** Engagement is healthy (80% of started sessions produce a session-end event). But prompt→signup intent is 4.7% — and the [non-blocking banner](PRODUCT-EXPERIMENTS.md#2026-06-26-non-blocking-signup-banner-loss_aversion_banner--top-anchored-notification) verdict landed **❌ Failed (2026-07-10, early per the ≥150-impressions clause)**: cumulative intent since the Jun 26 ship 9.3% (15/161, 564 impressions) vs the 13.8% modal baseline, trailing-7d decaying to 4.7% (banner blindness), and no retention gain (banner cohort 40% returned vs modal cohort 50%). The orangepi visibility digest independently flagged signups −75% WoW (DAR-440). **Revert decision pending** (`ACTIVE_CHALLENGER` back to `"loss_aversion"`).
+
+### Sign-up cohort quality (Neon DB, all-time, pulled 2026-07-10)
+
+| Metric | Count | % |
+|---|---:|---:|
+| Total users | **73** (+47 since May 18) | — |
+| Failed signups (no session row) | 4 | — |
+| Signups in last 28 days | 28 (~7/wk) | — |
+| Signups in last 7 days | **4** | — |
+| Returned after day 1 | 41 | 56% |
+| Logged any minutes | 29 | 40% |
+| Logged 30+ minutes | 6 | 8% |
+| Active in last 7 / 14 days | 13 / 22 | 18% / 30% |
+| `sessions_completed > 0` | 31 | 42% (was 17% May 18) — engaged-minutes fix fully propagated |
+
+**Cohort notes (2026-07-10):** Standout user keithdbrown (+deepbreathing alias) at 142 min / 51 completed sessions since Jun 22 — the most engaged user ever, still active today. Post-banner signups (Jun 26+) skew low-engagement: 6 of 10 never returned after signup day. 65/73 users are gmail.com; no burner-domain pattern.
+
+---
+
+## Top-line snapshot — last 14 days (May 4 – May 17, 2026) — previous refresh, kept for trend reference
 
 ### Engagement funnel (unique users, GA4, mobile + web split)
 
@@ -102,7 +149,33 @@ Total active users (last 7d): 285. Total events: 3,343.
 
 ---
 
-## Search engine traffic — last 14 days (May 4 – May 17, 2026) + GSC indexing status
+## Search engine traffic — last 7 days (Jul 3 – Jul 9, 2026)
+
+### Google Search Console — 7d (via mass-translate sync, Jul 3–9)
+
+| Metric | Value | Note |
+|---|---:|---|
+| Clicks | 81 | ~11.6/day; digest reports +81% WoW — best week since the durable-creds migration |
+| Impressions | 6,977 | |
+| CTR | 1.16% | up from ~0.6% in May |
+| Avg position | 15.1 | worse than May's ~11 — broader query spread from the 9D page |
+
+**Top GSC pages (7d):** /breathe/hope-cartel-9d-breathwork **32 clicks** / 2,630 impr / pos 9.0 (drives ~40% of all Google clicks — the 2026-05-06 9D cluster bet keeps compounding); /box-breathing-app 5; **/es/breathing-visualizer 5**; /coherent-breathing-app 4; /breathing-visualizer 4; /fr/for/huberman 4.
+
+**Translated-page presence:** 8 translated pages with clicks in the top 20 (es/fr/de/ja) — up from 4 at the May 18 refresh. /ja/breathe/9d-breathwork at pos 5.0.
+
+### Bing Webmaster Tools (from orangepi digest, week of 2026-07-09 — API-key pull; MCP OAuth is dead, see Known issues)
+
+| Metric | Value | Note |
+|---|---:|---|
+| Clicks | 77 | +2.7% WoW, steady |
+| Impressions | 4,754 | +15.2% WoW |
+
+Cross-engine: Google and Bing click volumes are now roughly equal (81 vs 77/wk) — Google caught up on the back of the 9D page; the old "Bing ≈ 6× Google" rule of thumb no longer holds.
+
+---
+
+## Search engine traffic — last 14 days (May 4 – May 17, 2026) + GSC indexing status — previous refresh
 
 Both engines pulled together; Bing+DDG+Yahoo combined ≈ 6× Google traffic for this site.
 
@@ -209,16 +282,15 @@ Bing translated-page presence in top 20: /pt/breathing-app (1 click, pos 2), /fr
 
 ## Trends since 2026-04-27 baseline
 
-| Metric | Apr 27 (30d) | May 5 (28d) | May 8 (7d) | **May 18 (14d)** | Δ vs May 8 |
-|---|---:|---:|---:|---:|---|
-| `breathing_session_start` (users) | 338 | 361 | 119 | **234** | ~117/wk vs 119/wk — flat |
-| `breathing_session_pause` (users) | 129 | 150 | 57 | **61** | ~30/wk vs 57/wk — DOWN |
-| `breathing_session_complete` (users) | 13 | 22 | 25 | **46** | ~23/wk vs 25/wk — sustained, not a fluke |
-| `breathing_session_end` (users) | — | — | reported as not firing | **70** | actual event name = `_end`, not `_stop` (correction) |
-| start → pause | 38% | 41.6% | 47.9% | **26.1%** | -21.8 pp (May 8's 47.9% was a small-N spike) |
-| start → complete | 3.8% | 6.1% | 21.0% | **19.7%** | similar — confirms the chips/event-fix combo lift is real, not noise |
-| signup completions (users) | 0 | 12 | 6 | **11** | ~5.5/wk — steady |
-| signup_user_identified (users) | n/a | not seen | 4 | **11** | matches signups → ✅ GA4 user-ID experiment graduates |
+| Metric | Apr 27 (30d) | May 5 (28d) | May 8 (7d) | May 18 (14d) | **Jul 10 (7d)** | Δ vs May 18 (per-wk) |
+|---|---:|---:|---:|---:|---:|---|
+| `breathing_session_start` (users) | 338 | 361 | 119 | 234 | **140** | 140/wk vs ~117/wk — UP ~20% |
+| `breathing_session_pause` (users) | 129 | 150 | 57 | 61 | **event removed** | — |
+| `breathing_session_complete` (users) | 13 | 22 | 25 | 46 | **event removed** | — |
+| `breathing_session_end` (users) | — | — | reported as not firing | 70 | **112** | 112/wk vs ~35/wk — now the sole end-of-session event |
+| start → end | — | — | — | 29.9% | **80.0%** | not comparable — `_end` absorbed pause/complete semantics |
+| signup completions (users) | 0 | 12 | 6 | 11 | **4** | ~4/wk vs ~5.5/wk GA4; DB says 2/wk — DOWN |
+| prompt_shown → signup | — | 23.5% | 11.5% | 7.4% | **4.7%** | steady decline across four refreshes — the whole conversion story |
 
 **The complete-rate held at ~20% across both weekly windows (May 1-7: 21.0% and May 4-17 14d: 19.7%) — the May 8 spike was real and the lift has stuck.** That's the most-important trend confirmation this checkpoint.
 
@@ -230,6 +302,8 @@ Bing translated-page presence in top 20: /pt/breathing-app (1 click, pos 2), /fr
 
 | Date shipped | Experiment | Measure-after | Pre-committed criteria summary |
 |---|---|---|---|
+| 2026-06-21 | [/stats "Your practice" retention surface](PRODUCT-EXPERIMENTS.md#2026-06-21-stats-page--practice-calendar--session-stats-for-signed-in-users) | 2026-07-21 | ≥25% of weekly-active signed-in users reach /stats AND day-7 return ≥75% |
+| ⚠️ | **Rows below are stale (measure-after dates passed during the May 18 → Jul 10 refresh gap)** — verdicts owed; several are entangled with the pause/complete event removal | | |
 | 2026-05-17 | [Resonance audio v2 — body-resonance bed, session arc, eyes-closed mode](PRODUCT-EXPERIMENTS.md#2026-05-17-resonance-audio-v2--body-resonance-breath-coupled-bed-session-arc-eyes-closed-mode) | TBD | (entry pre-dates pre-criteria) |
 | 2026-05-12 | [UTM-tagged share buttons](PRODUCT-EXPERIMENTS.md#2026-05-12-utm-tag-share-buttons-attribute-outbound-shares-back-to-ga4) | 2026-06-05 | Direct surge attributable via UTM tags |
 | 2026-05-12 | [Direct +47% WoW investigation](PRODUCT-EXPERIMENTS.md#2026-05-12-direct-47-wow--hypothesis-organic-shares-from-ptde-translations) | 2026-06-05 | UTM evidence ties Direct lift to translated-page shares |
@@ -245,6 +319,7 @@ Bing translated-page presence in top 20: /pt/breathing-app (1 click, pos 2), /fr
 
 | Experiment | Status | Key finding |
 |---|---|---|
+| [Non-blocking signup banner](PRODUCT-EXPERIMENTS.md#2026-06-26-non-blocking-signup-banner-loss_aversion_banner--top-anchored-notification) | ❌ **Failed** (2026-07-10, early call per impressions clause) | Intent 9.3% vs 13.8% modal baseline (trailing 7d: 4.7% — decaying) AND no retention gain (40% vs 50% returned-after-day-1). **Revert decision pending:** `ACTIVE_CHALLENGER` → `"loss_aversion"` |
 | [GA4 user identification](PRODUCT-EXPERIMENTS.md#2026-05-05-ga4-user-identification-user_id--signed_up-property) | ✅ **Success** (2026-05-18) | `signup_user_identified` (11 users) exactly matches `conversion_signup_completed` (11) over 14d — wiring proven end-to-end |
 | [Tap-to-pause hint inside orb](PRODUCT-EXPERIMENTS.md#2026-05-05-tap-to-pause-hint-inside-orb) | ❌ **Failed** (2026-05-18) | Mobile abandonment moved 74.3% → 82.0% (wrong direction); mobile pause-rate dropped 25.7% → 18.0%. Consider removing the hint. |
 | [Coherent page title rewrite](SEO-EXPERIMENTS.md#2026-05-05-coherent-page-title-rewrite--timer-intent-match) | ❌ **Failed** (2026-05-18) | Top-3 timer-intent queries still 0% CTR; SERP features (Answer Box + YouTube) crowd organic below the fold. Reaffirms link-authority > metadata at DR 0.2. |
@@ -257,6 +332,9 @@ Bing translated-page presence in top 20: /pt/breathing-app (1 click, pos 2), /fr
 
 ## Known measurement issues
 
+- **`breathing_session_pause` / `breathing_session_complete` no longer fire (confirmed 2026-07-10)** — 0 events in the last 28 days; `breathing_session_end` is the only session-end event now. Historic pause/complete trend columns are frozen; start→pause and start→complete ratios can no longer be computed. If per-outcome granularity matters (completed vs abandoned), it needs re-instrumentation — likely lost in the 2026-05-08 "unify session-end events" change.
+- **Bing MCP OAuth refresh token is dead (2026-07-10)** — `sync_bing_performance` fails with "Refresh token is invalid or expired". Not re-authed because the orangepi visibility digest pulls Bing via API key (durable); use its digests for Bing numbers, or re-auth via `start_bing_oauth` only if per-page MCP queries are needed.
+- **GA4 engagement rate declining 3 consecutive digest runs** (48.2% → 44.6% → 41.3%), concentrated in Direct and Referral; Organic Search flat. Digest has recommended a page-speed / landing-page check 3 times without a fix landing.
 - **~~`breathing_session_stop` not firing~~** — **RESOLVED 2026-05-18.** The event actually fires as **`breathing_session_end`** (159 events / 70 users in 14d). The dashboard, runbook, and any code that references `breathing_session_stop` should be updated to `breathing_session_end`. Action item: grep for `breathing_session_stop` references in `src/lib/analytics/` and `docs/` and align naming.
 - **~~`sessions_completed = 0` for everyone~~** — **RESOLVED 2026-05-18.** The [35e7f0a](https://github.com/abiassi/deepbreathing/commit/35e7f0a) fix is now confirmed propagating. 4 of 7 engaged users have `sessions_completed > 0`. Old pre-fix user_stats rows still show 0 (because user_stats is overwritten on each sync; the next session those users complete will refresh the row).
 - **Bing API still returns sparse weekly chunks** — Apr 24, May 1, May 8 only in the 28d window. Bing reporting lag remains typical. Don't compare day-by-day; use 28d totals.

@@ -25,9 +25,9 @@ The point of this runbook is reproducibility — same numbers pulled the same wa
 | `first_visit` | Top-of-funnel; new visitors only |
 | `page_viewed_breathing` | Top of breathing-page funnel; deployed Apr 28-29 |
 | `breathing_session_start` | Funnel start |
-| `breathing_session_pause` | First engagement signal |
-| `breathing_session_complete` | End-of-timer signal (only fires when duration set) |
-| `breathing_session_stop` | Manual-stop signal (verify it's firing — was unclear May 5) |
+| ~~`breathing_session_pause`~~ | REMOVED — 0 events since ~mid-June 2026; do not expect it |
+| ~~`breathing_session_complete`~~ | REMOVED — same; `breathing_session_end` is the only end-of-session event now |
+| `breathing_session_end` | Sole session-end signal (fires ~80% of starts as of Jul 2026) |
 | `mode_switch` | Engagement signal — explored techniques |
 | `conversion_prompt_shown` | Bottom-of-funnel ask |
 | `conversion_signup_completed` | Conversion |
@@ -43,19 +43,16 @@ The point of this runbook is reproducibility — same numbers pulled the same wa
 
 ## Step 2 — Neon DB sign-up cohort check
 
-Use the `darkmatter-db` skill or fall back to `vercel env pull` from this repo.
+**Preferred (2026-07-10+): the read-only role.** A SELECT-only Postgres role `dbe_read` exists (created 2026-07-10; `GRANT SELECT` on all current + future public tables, writes denied). Its connection string is stored as **`POSTGRES_URL_READONLY`** in Vercel env (Production + Development). This avoids handling owner creds for a read query — use it for all analytics pulls:
 
 ```bash
-# Preferred: dkmt-cc env (re-login if 403)
-eval "$(dkmt-cc env pull deep-breathing --export 2>/dev/null)" && \
-  psql "$POSTGRES_URL_NON_POOLING" -f docs/runbooks/sql/cohort-check.sql
-
-# Fallback if dkmt-cc creds stale:
-vercel env pull /tmp/dbenv.txt --environment=production && \
-  eval "$(grep -E '^(POSTGRES_URL_NON_POOLING|POSTGRES_URL)' /tmp/dbenv.txt | sed 's|^|export |')" && \
-  psql "$POSTGRES_URL_NON_POOLING" -f docs/runbooks/sql/cohort-check.sql && \
+vercel env pull /tmp/dbenv.txt --environment=production --yes && \
+  eval "$(grep -E '^POSTGRES_URL_READONLY=' /tmp/dbenv.txt | sed 's|^|export |')" && \
+  psql "$POSTGRES_URL_READONLY" -f docs/runbooks/sql/cohort-check.sql && \
   rm -f /tmp/dbenv.txt
 ```
+
+Fallback if `POSTGRES_URL_READONLY` is ever missing: same pull, grep `POSTGRES_URL_NON_POOLING` instead (owner creds — expect a permission prompt). `dkmt-cc env pull` is deprecated and returns 404 (see tools-and-data-sources gotcha 11).
 
 The query returns:
 - Total users, last 28d signups, last 7d signups
@@ -137,7 +134,7 @@ mcp__mass-translate-backend__submit_sitemap_bing
   sitemap_url=https://deepbreathingexercises.com/sitemap.xml
 ```
 
-**Gotcha:** Bing OAuth was bricked once (May 5) and re-authed. If 401 errors appear, run `mcp__mass-translate-backend__start_bing_oauth`.
+**Gotcha:** Bing OAuth was bricked once (May 5) and re-authed; it is **dead again as of 2026-07-10** ("Refresh token is invalid or expired"). Preferred path now: read Bing totals from the orangepi visibility digest (`~/automations/deepbreathing-visibility/digests/latest.md` on orangepi), which pulls Bing via a durable API key. Only re-auth via `start_bing_oauth` if you need per-page MCP queries.
 
 ---
 
