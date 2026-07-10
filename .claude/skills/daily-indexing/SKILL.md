@@ -17,7 +17,7 @@ This skill used to submit URLs to Google and Bing daily. Most of that was ineffe
 | `google.com/ping?sitemap=` | **Removed** | Endpoint deleted by Google in 2023. Returned 404 on every build. |
 | `bing.com/ping?sitemap=` | **Removed** | Returns 410 Gone. |
 | Bing via `submit_urls_bing` (mass-translate MCP) | **Not needed** | `postbuild` already submits every sitemap URL to IndexNow on each production deploy. See `scripts/ping-sitemap-lib.mjs`. |
-| IndexNow | **Active, automatic** | Runs on every Vercel build. Covers Bing and Yandex. Google does not participate in IndexNow. |
+| IndexNow | **Active, automatic** (since 2026-07-10) | Runs on every Vercel build. Covers Bing and Yandex; Google does not participate. NB: before 2026-07-10 it silently never ran — the CI gate checked `CI === "true"` but Vercel sets `CI=1`. |
 
 **Do not reintroduce URL submission to Google.** There is no supported API for it on general pages. Google discovers pages through the sitemap (auto-discovered via `robots.txt`) and the `/languages` crawl hub. What we control is discoverability and page quality, not submission.
 

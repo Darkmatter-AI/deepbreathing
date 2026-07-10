@@ -118,7 +118,7 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 | `google.com/ping?sitemap=` | Dead | Live check returns **404**. Google [retired the endpoint in 2023](https://developers.google.com/search/blog/2023/06/sitemaps-lastmod-ping). |
 | `bing.com/ping?sitemap=` | Dead | Live check returns **410 Gone**. |
 | `submit_urls_bing` (mass-translate) | Redundant | `postbuild` already pushes every sitemap URL to IndexNow on each production deploy. |
-| IndexNow | Working | Key file serves 200; runs every build. Covers Bing/Yandex. Google does not participate. |
+| IndexNow | Working (from 2026-07-10) | Key file serves 200. **Correction (2026-07-10):** the audit above verified the key + endpoint but not a real build log — the `CI === "true"` gate never matched Vercel's `CI=1`, so IndexNow had never actually run on a deploy. Gate fixed; first real submission (337 URLs, status 200) sent 2026-07-10. |
 
 **Corroborating evidence.** The 2026-04-20 remediation submitted 110 URLs through the Indexing API. Indexing moved 180 → 200 over the following 15 days. For eligible pages that API triggers a crawl within hours. A 15-day, 20-page drift is what unassisted sitemap recrawl looks like. Confounded by the concurrent Bing submissions, so suggestive rather than conclusive, but it points the same way as the docs.
 
