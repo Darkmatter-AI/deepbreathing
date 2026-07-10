@@ -43,19 +43,16 @@ The point of this runbook is reproducibility — same numbers pulled the same wa
 
 ## Step 2 — Neon DB sign-up cohort check
 
-Use the `darkmatter-db` skill or fall back to `vercel env pull` from this repo.
+**Preferred (2026-07-10+): the read-only role.** A SELECT-only Postgres role `dbe_read` exists (created 2026-07-10; `GRANT SELECT` on all current + future public tables, writes denied). Its connection string is stored as **`POSTGRES_URL_READONLY`** in Vercel env (Production + Development). This avoids handling owner creds for a read query — use it for all analytics pulls:
 
 ```bash
-# Preferred: dkmt-cc env (re-login if 403)
-eval "$(dkmt-cc env pull deep-breathing --export 2>/dev/null)" && \
-  psql "$POSTGRES_URL_NON_POOLING" -f docs/runbooks/sql/cohort-check.sql
-
-# Fallback if dkmt-cc creds stale:
-vercel env pull /tmp/dbenv.txt --environment=production && \
-  eval "$(grep -E '^(POSTGRES_URL_NON_POOLING|POSTGRES_URL)' /tmp/dbenv.txt | sed 's|^|export |')" && \
-  psql "$POSTGRES_URL_NON_POOLING" -f docs/runbooks/sql/cohort-check.sql && \
+vercel env pull /tmp/dbenv.txt --environment=production --yes && \
+  eval "$(grep -E '^POSTGRES_URL_READONLY=' /tmp/dbenv.txt | sed 's|^|export |')" && \
+  psql "$POSTGRES_URL_READONLY" -f docs/runbooks/sql/cohort-check.sql && \
   rm -f /tmp/dbenv.txt
 ```
+
+Fallback if `POSTGRES_URL_READONLY` is ever missing: same pull, grep `POSTGRES_URL_NON_POOLING` instead (owner creds — expect a permission prompt). `dkmt-cc env pull` is deprecated and returns 404 (see tools-and-data-sources gotcha 11).
 
 The query returns:
 - Total users, last 28d signups, last 7d signups

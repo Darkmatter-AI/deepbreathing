@@ -23,7 +23,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
-| 2026-06-26 | [Non-blocking signup banner (`loss_aversion_banner`) — top-anchored notification](#2026-06-26-non-blocking-signup-banner-loss_aversion_banner--top-anchored-notification) | 🔄 Implemented — first read 2026-07-10: intent 9.3% vs 13.8%, **trending ❌**; verdict 2026-07-17 |
+| 2026-06-26 | [Non-blocking signup banner (`loss_aversion_banner`) — top-anchored notification](#2026-06-26-non-blocking-signup-banner-loss_aversion_banner--top-anchored-notification) | ❌ **Failed** (verdict 2026-07-10, early per impressions clause): intent 9.3% vs 13.8% AND retention 40% vs 50% — revert decision pending |
 | 2026-06-21 | [/stats "Your practice" — retention surface (breath garden + stale-streak reframe)](#2026-06-21-stats-page--streak-calendar--session-stats-for-signed-in-users) | 🔄 Implemented |
 | 2026-06-14 | [Conversion Prompt C (loss_aversion), 100% challenger](#2026-06-14-conversion-prompt-c-loss_aversion-100-challenger) | 🔄 Implemented |
 | 2026-06-01 | [Fix `conversion_prompt_shown` double-fire (impure setState updaters)](#2026-06-01-fix-conversion_prompt_shown-double-fire-impure-setstate-updaters) | 🔄 Implemented |
@@ -71,9 +71,13 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 
 **Open design questions:** top-center vs top-right on mobile (header crowding); the benefit headline currently has no loss/device subline (a lever Prompt C uses — could add back); card vs pill (card is primary).
 
-**First read (2026-07-10, run 7 days late):** Impression gate cleared — 564 banner impressions / 161 prompt-shown users since ship (Jun 26 – Jul 9, GA4 events report; banner is at 100% so the whole period is banner traffic). **Intent = 15 signup users / 161 prompt-shown users = 9.3%**, vs the 13.8% modal baseline — below the pre-committed <10% Failed threshold. Worse, the trailing 7 days (Jul 3–9) read **4.7%** (4/86): intent is decaying within the banner period, the banner-blindness signature the Failed criterion anticipated. Independent corroboration: the orangepi visibility digest flagged DB signups −75% WoW (2 vs 8) on 2026-07-09 and commented on DAR-440. Still open for the verdict: the retention leg (day-7 return of banner-cohort vs modal-cohort signups — needs the Neon pull; blocked this session), which per the criteria converts ❌ to 🟡 Mixed if retention rose. On current evidence expect ❌ Failed on 2026-07-17; be ready with the revert decision (`ACTIVE_CHALLENGER` back to `"loss_aversion"`) or the first iteration (add the loss/device subline back to the banner headline).
+**First read (2026-07-10, run 7 days late):** Impression gate cleared — 564 banner impressions / 161 prompt-shown users since ship (Jun 26 – Jul 9, GA4 events report; banner is at 100% so the whole period is banner traffic). **Intent = 15 signup users / 161 prompt-shown users = 9.3%**, vs the 13.8% modal baseline — below the pre-committed <10% Failed threshold. Worse, the trailing 7 days (Jul 3–9) read **4.7%** (4/86): intent is decaying within the banner period, the banner-blindness signature the Failed criterion anticipated. Independent corroboration: the orangepi visibility digest flagged DB signups −75% WoW (2 vs 8) on 2026-07-09 and commented on DAR-440. The retention leg was pulled the same day (below).
 
-**Status:** 🔄 Implemented — **shipped to production 2026-06-26 at 100%**, replacing Prompt C. measure-after: ~~2026-07-03~~ first read done **2026-07-10** (intent 9.3%, trending ❌), verdict **2026-07-17**.
+**Retention leg (2026-07-10, Neon cohort pull; method: signup date vs `last_seen` from the canonical cohort-check query):** Banner cohort (signups Jun 26 – Jul 9, N=10, excluding the too-fresh same-day signup): **4/10 (40%) returned after signup day**. Modal cohort (Prompt C, Jun 14–22, N=12): **6/12 (50%)**. No retention gain — the compensating tradeoff the hypothesis bet on did not materialize. Small N on both sides, but the criteria require "banner retention ≥ modal cohort", not significance, and it isn't.
+
+**Verdict: ❌ Failed (called 2026-07-10, early per the pre-committed "or earlier once ≥150 banner impressions accrue" clause — 564 impressions).** Both Failed conditions met: intent 9.3% < 10% (and decaying) AND no retention gain (40% vs 50%). The gentler-app bet cost ~⅓ of signup intent and bought nothing measurable in return. Rollback lever unchanged: `ACTIVE_CHALLENGER` back to `"loss_aversion"` (Prompt C modal) — a decision, not auto-executed with this verdict; the alternative iteration is adding the loss/device subline back to the banner headline, but the decay pattern points at the form factor, not the copy.
+
+**Status:** ❌ **Failed** — verdict 2026-07-10 (early call, impressions gate cleared). Shipped 2026-06-26 at 100%; intent 9.3% vs 13.8% baseline; retention 40% vs 50%. Revert decision pending.
 
 ---
 

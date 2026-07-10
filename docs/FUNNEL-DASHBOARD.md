@@ -33,18 +33,23 @@ Total active users (7d): 400 (mobile 138). Total events: 4,534. Sessions 572 (�
 | start → end | **80.0%** | 70.7% | 86.6% |
 | prompt_shown → signup | **4.7%** | 8.8% | 1.9% |
 
-**The alarm this refresh is the bottom of the funnel, not the top.** Engagement is healthy (80% of started sessions produce a session-end event). But prompt→signup intent is 4.7% — the [non-blocking banner](PRODUCT-EXPERIMENTS.md#2026-06-26-non-blocking-signup-banner-loss_aversion_banner--top-anchored-notification) cumulative read since its Jun 26 ship is **9.3% intent (15 signups / 161 prompt-shown users, 564 impressions) vs the 13.8% modal baseline — below the pre-committed <10% Failed threshold**, and the trailing-7-day figure (4.7%) is worse than the cumulative one, which is the banner-blindness signature. Verdict due 2026-07-17 (retention leg could still make it 🟡 Mixed). The orangepi visibility digest independently flagged signups −75% WoW (DAR-440).
+**The alarm this refresh is the bottom of the funnel, not the top.** Engagement is healthy (80% of started sessions produce a session-end event). But prompt→signup intent is 4.7% — and the [non-blocking banner](PRODUCT-EXPERIMENTS.md#2026-06-26-non-blocking-signup-banner-loss_aversion_banner--top-anchored-notification) verdict landed **❌ Failed (2026-07-10, early per the ≥150-impressions clause)**: cumulative intent since the Jun 26 ship 9.3% (15/161, 564 impressions) vs the 13.8% modal baseline, trailing-7d decaying to 4.7% (banner blindness), and no retention gain (banner cohort 40% returned vs modal cohort 50%). The orangepi visibility digest independently flagged signups −75% WoW (DAR-440). **Revert decision pending** (`ACTIVE_CHALLENGER` back to `"loss_aversion"`).
 
-### Sign-up cohort quality (Neon DB)
+### Sign-up cohort quality (Neon DB, all-time, pulled 2026-07-10)
 
-Direct prod-DB pull was blocked this session (permission classifier); numbers below are from the orangepi visibility digest (2026-07-09), which runs the same funnel pull:
+| Metric | Count | % |
+|---|---:|---:|
+| Total users | **73** (+47 since May 18) | — |
+| Failed signups (no session row) | 4 | — |
+| Signups in last 28 days | 28 (~7/wk) | — |
+| Signups in last 7 days | **4** | — |
+| Returned after day 1 | 41 | 56% |
+| Logged any minutes | 29 | 40% |
+| Logged 30+ minutes | 6 | 8% |
+| Active in last 7 / 14 days | 13 / 22 | 18% / 30% |
+| `sessions_completed > 0` | 31 | 42% (was 17% May 18) — engaged-minutes fix fully propagated |
 
-| Metric | Value |
-|---|---:|
-| Total users | 71 |
-| Signups this week | **2** (−75% WoW; DAR-440) |
-| Logins this week | 3 (−66.7%) |
-| Activated (any session) | 31/71 (43.7%) |
+**Cohort notes (2026-07-10):** Standout user keithdbrown (+deepbreathing alias) at 142 min / 51 completed sessions since Jun 22 — the most engaged user ever, still active today. Post-banner signups (Jun 26+) skew low-engagement: 6 of 10 never returned after signup day. 65/73 users are gmail.com; no burner-domain pattern.
 
 ---
 
@@ -297,7 +302,6 @@ Bing translated-page presence in top 20: /pt/breathing-app (1 click, pos 2), /fr
 
 | Date shipped | Experiment | Measure-after | Pre-committed criteria summary |
 |---|---|---|---|
-| 2026-06-26 | [Non-blocking signup banner](PRODUCT-EXPERIMENTS.md#2026-06-26-non-blocking-signup-banner-loss_aversion_banner--top-anchored-notification) | **2026-07-17 verdict** | First read 2026-07-10: intent **9.3%** vs 13.8% baseline, below the <10% Failed line; retention leg (needs DB) decides Failed vs Mixed |
 | 2026-06-21 | [/stats "Your practice" retention surface](PRODUCT-EXPERIMENTS.md#2026-06-21-stats-page--practice-calendar--session-stats-for-signed-in-users) | 2026-07-21 | ≥25% of weekly-active signed-in users reach /stats AND day-7 return ≥75% |
 | ⚠️ | **Rows below are stale (measure-after dates passed during the May 18 → Jul 10 refresh gap)** — verdicts owed; several are entangled with the pause/complete event removal | | |
 | 2026-05-17 | [Resonance audio v2 — body-resonance bed, session arc, eyes-closed mode](PRODUCT-EXPERIMENTS.md#2026-05-17-resonance-audio-v2--body-resonance-breath-coupled-bed-session-arc-eyes-closed-mode) | TBD | (entry pre-dates pre-criteria) |
@@ -315,6 +319,7 @@ Bing translated-page presence in top 20: /pt/breathing-app (1 click, pos 2), /fr
 
 | Experiment | Status | Key finding |
 |---|---|---|
+| [Non-blocking signup banner](PRODUCT-EXPERIMENTS.md#2026-06-26-non-blocking-signup-banner-loss_aversion_banner--top-anchored-notification) | ❌ **Failed** (2026-07-10, early call per impressions clause) | Intent 9.3% vs 13.8% modal baseline (trailing 7d: 4.7% — decaying) AND no retention gain (40% vs 50% returned-after-day-1). **Revert decision pending:** `ACTIVE_CHALLENGER` → `"loss_aversion"` |
 | [GA4 user identification](PRODUCT-EXPERIMENTS.md#2026-05-05-ga4-user-identification-user_id--signed_up-property) | ✅ **Success** (2026-05-18) | `signup_user_identified` (11 users) exactly matches `conversion_signup_completed` (11) over 14d — wiring proven end-to-end |
 | [Tap-to-pause hint inside orb](PRODUCT-EXPERIMENTS.md#2026-05-05-tap-to-pause-hint-inside-orb) | ❌ **Failed** (2026-05-18) | Mobile abandonment moved 74.3% → 82.0% (wrong direction); mobile pause-rate dropped 25.7% → 18.0%. Consider removing the hint. |
 | [Coherent page title rewrite](SEO-EXPERIMENTS.md#2026-05-05-coherent-page-title-rewrite--timer-intent-match) | ❌ **Failed** (2026-05-18) | Top-3 timer-intent queries still 0% CTR; SERP features (Answer Box + YouTube) crowd organic below the fold. Reaffirms link-authority > metadata at DR 0.2. |

@@ -143,17 +143,18 @@ Concurrency is capped at 6 in the route — **do not raise it**, the proxy 503s 
 
 ### Query the Neon DB
 
-**Tool:** `darkmatter-db` skill — use the eval pattern, never paste connection strings.
+**Preferred (2026-07-10+): the `dbe_read` role via `POSTGRES_URL_READONLY`.** SELECT-only role (all current + future public tables; writes denied), stored in Vercel env (Production + Development). Read queries never need owner creds anymore:
 
 ```bash
-# Preferred
-eval "$(dkmt-cc env pull deep-breathing --export 2>/dev/null)" && \
-  psql "$POSTGRES_URL_NON_POOLING" -f docs/runbooks/sql/cohort-check.sql
+vercel env pull /tmp/dbenv.txt --environment=production --yes && \
+  eval "$(grep -E '^POSTGRES_URL_READONLY=' /tmp/dbenv.txt | sed 's|^|export |')" && \
+  psql "$POSTGRES_URL_READONLY" -f docs/runbooks/sql/cohort-check.sql && \
+  rm -f /tmp/dbenv.txt
 ```
 
-**If dkmt-cc returns 403 / token expired:**
-1. Run `dkmt-cc login` and complete the browser OAuth (~30 sec).
-2. If still failing, fall back to Vercel direct env pull (see weekly-funnel-refresh.md step 2).
+Use the eval pattern, never paste connection strings. To rotate the role's password: connect with `POSTGRES_URL_NON_POOLING` (owner) and `ALTER ROLE dbe_read WITH PASSWORD '...'`, then `vercel env rm/add POSTGRES_URL_READONLY`.
+
+Owner-cred fallback (writes, migrations, role admin): `POSTGRES_URL_NON_POOLING` from the same `vercel env pull`. `dkmt-cc env pull` is deprecated (gotcha 11).
 
 **Schema notes** (also useful for new queries):
 - `"user"` (lowercase, quoted) — better-auth user table
