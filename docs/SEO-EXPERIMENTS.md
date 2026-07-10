@@ -101,7 +101,7 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 **Actions:**
 1. Filed Linear issue for the proxy canonical bug (mass-translate-backend).
 2. Added a hijack tripwire to the orangepi visibility digest: every run inspects the 2 known-hijacked URLs + the EN equivalents; alerts if any `googleCanonical` is off-domain or the count grows.
-3. Abi to hit **Request indexing** in the GSC UI for both URLs (API path doesn't exist for this; UI works and is per-URL).
+3. ✅ **Request indexing** submitted for both URLs via the GSC UI, 2026-07-10 (browser agent, Abi-authorized). Both confirmed "added to a priority crawl queue" — the 4-week recovery clock runs from here.
 4. Optional: Google spam report for 747live.bet.
 
 **Success criteria (measure 2026-08-10):** ✅ if both pages return to self-canonical (`Submitted and indexed` or at least googleCanonical = self) within 4 weeks of the re-index request. ❌ if either still points at 747live.bet — then escalate: spam report + consider serving those routes with rebuilt content (new URL + 301) to break the cluster. Tripwire alert at any point = reopen immediately.
