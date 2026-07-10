@@ -48,7 +48,8 @@ const STORAGE_KEYS = {
   STATS: 'resonance_stats',
   SETTINGS: 'resonance_settings',
   THEME: 'resonance_theme',
-  SOUND_OK: 'resonance_sound_ok'
+  SOUND_OK: 'resonance_sound_ok',
+  ACTIVE_DAYS: 'resonance_active_days'
 };
 
 interface ResonanceProps {
@@ -693,6 +694,21 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
         }
         setCurrentStreak(newStreak);
         setLastSessionDate(sessionDate);
+
+        try {
+          const stored = localStorage.getItem(STORAGE_KEYS.ACTIVE_DAYS);
+          const parsed: unknown = stored ? JSON.parse(stored) : [];
+          const activeDays = Array.isArray(parsed)
+            ? parsed.filter((day): day is string => typeof day === 'string')
+            : [];
+          if (!activeDays.includes(sessionDate)) activeDays.push(sessionDate);
+          localStorage.setItem(
+            STORAGE_KEYS.ACTIVE_DAYS,
+            JSON.stringify(activeDays.slice(-400))
+          );
+        } catch {
+          // Activity history is best-effort local persistence.
+        }
 
         // Offer the signed-out sign-up prompt after ~1 min of real breathing,
         // however the session ended: a timer auto-complete, a manual stop, a
@@ -1846,6 +1862,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
           onSuccess={() => markConverted(currentStreak)}
           totalMinutes={totalMinutes}
           sessionSeconds={lastSessionSeconds}
+          sessionsCompleted={sessionsCompleted}
           dayStreak={currentStreak}
           variant={conversionVariant}
           activeMode={activeMode}

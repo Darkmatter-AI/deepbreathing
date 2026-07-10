@@ -5,7 +5,8 @@
  *
  *  - "control"      = the existing SignInSheet ("Save your progress")
  *  - "social_stats" = Conversion Prompt B (social proof + personal stats) — paused 2026-06-14
- *  - "loss_aversion" = Conversion Prompt C (real session card + loss-aversion copy) — ACTIVE
+ *  - "loss_aversion" = Conversion Prompt C (real session card + loss-aversion copy) — paused
+ *  - "keep_practice" = gain-framed session receipt + cumulative practice — ACTIVE
  *
  * The active challenger is determined by ACTIVE_CHALLENGER. Setting CHALLENGER_SHARE = 0
  * is the instant rollback to control; setting it to 1 ships the challenger to everyone.
@@ -19,16 +20,17 @@ export type ConversionVariant =
   | "control"
   | "social_stats"
   | "loss_aversion"
-  | "loss_aversion_banner";
+  | "loss_aversion_banner"
+  | "keep_practice";
 
 /**
  * The currently active challenger variant. One line to swap challengers.
  *
- * 2026-06-26: swapped "loss_aversion" (Prompt C modal) → "loss_aversion_banner"
- * (non-blocking top notification) and shipped to 100%. Rollback to the Prompt C
- * modal = set this back to "loss_aversion"; full rollback to control = CHALLENGER_SHARE = 0.
+ * 2026-07-10: swapped from "loss_aversion_banner" (❌ Failed verdict) to
+ * "keep_practice" and shipped to 100%. Rollback to Prompt C modal = set this
+ * back to "loss_aversion"; full rollback to control = CHALLENGER_SHARE = 0.
  */
-export const ACTIVE_CHALLENGER: ConversionVariant = "loss_aversion_banner";
+export const ACTIVE_CHALLENGER: ConversionVariant = "keep_practice";
 
 /**
  * Share of visitors bucketed into the active challenger.
@@ -44,17 +46,18 @@ export const CHALLENGER_SHARE = 1;
  */
 export const SOCIAL_STATS_SHARE = 1;
 
-// Bumped v2 → v3 on the 2026-06-26 banner ship so visitors persisted as
-// "loss_aversion" (Prompt C modal) re-draw and land on "loss_aversion_banner" —
-// required for a true 100% swap to returning visitors, not just new ones.
-const VARIANT_KEY = "resonance_conversion_variant_v3";
+// Bumped v3 → v4 on the 2026-07-10 keep_practice ship so returning visitors
+// persisted as "loss_aversion_banner" re-draw and the 100% swap applies to
+// them too, not just new visitors.
+const VARIANT_KEY = "resonance_conversion_variant_v4";
 
 function isVariant(v: unknown): v is ConversionVariant {
   return (
     v === "control" ||
     v === "social_stats" ||
     v === "loss_aversion" ||
-    v === "loss_aversion_banner"
+    v === "loss_aversion_banner" ||
+    v === "keep_practice"
   );
 }
 

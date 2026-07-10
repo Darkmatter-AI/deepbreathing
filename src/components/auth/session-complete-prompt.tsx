@@ -4,6 +4,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { SignInSheet } from "./sign-in-sheet";
 import { SocialStatsSignInSheet } from "./social-stats-sign-in-sheet";
 import { LossAversionSignInSheet } from "./loss-aversion-sign-in-sheet";
+import { KeepPracticeSheet } from "./keep-practice-sheet";
 import { NonBlockingSignInBanner, type BannerLayout } from "./non-blocking-sign-in-banner";
 import { type ConversionVariant, setConversionVariant } from "@/lib/conversion/variant";
 import { ModeName } from "@/components/resonance/types";
@@ -20,6 +21,7 @@ interface SessionCompletePromptProps {
   onSuccess: () => void;
   totalMinutes: number;
   sessionSeconds: number;
+  sessionsCompleted: number;
   dayStreak?: number;
   variant: ConversionVariant;
   activeMode: ModeName;
@@ -32,6 +34,7 @@ export function SessionCompletePrompt({
   onSuccess,
   totalMinutes,
   sessionSeconds,
+  sessionsCompleted,
   dayStreak = 0,
   variant,
   activeMode,
@@ -58,14 +61,20 @@ export function SessionCompletePrompt({
   const [bannerUi, setBannerUi] = useState<BannerLayout | null>(
     variant === "loss_aversion_banner" ? "card" : null
   );
+  const [forceKeep, setForceKeep] = useState(false);
   const [demoOpen, setDemoOpen] = useState(false);
   useEffect(() => {
     if (typeof window === "undefined") return;
     const p = new URLSearchParams(window.location.search);
     const ui = p.get("promptui");
+    const keep = ui === "keep";
     const active = ui === "card" || ui === "pill";
+    if (keep) {
+      setForceKeep(true);
+      setConversionVariant("keep_practice");
+    }
     if (active) setBannerUi(ui as BannerLayout);
-    if (active || variant === "loss_aversion_banner") {
+    if (!keep && (active || variant === "loss_aversion_banner")) {
       setConversionVariant("loss_aversion_banner");
     }
     if (p.get("promptdemo") === "1") {
@@ -83,6 +92,23 @@ export function SessionCompletePrompt({
     }
     onOpenChange(isOpen);
   };
+
+  if (forceKeep || variant === "keep_practice") {
+    const pattern = BREATHING_PATTERNS[activeMode];
+    return (
+      <KeepPracticeSheet
+        open={open || demoOpen}
+        onOpenChange={handleOpenChange}
+        onSuccess={onSuccess}
+        sessionMode={pattern.name}
+        accentColor={pattern.color}
+        sessionSeconds={sessionSeconds}
+        totalMinutes={totalMinutes}
+        sessionsCompleted={sessionsCompleted}
+        dayStreak={dayStreak}
+      />
+    );
+  }
 
   if (bannerUi) {
     const pattern = BREATHING_PATTERNS[activeMode];
