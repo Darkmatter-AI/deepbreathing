@@ -81,3 +81,13 @@ test("IndexNow failure does not fail the build", async () => {
   assert.equal(result.skipped, false);
   assert.equal(result.indexNowSubmitted, false);
 });
+
+test("isCiEnvironment recognizes Vercel builds (CI=1, VERCEL=1), not just CI=true", async () => {
+  const { isCiEnvironment } = await import("../ping-sitemap-lib.mjs");
+  assert.equal(isCiEnvironment({ CI: "true" }), true);
+  assert.equal(isCiEnvironment({ CI: "1" }), true);          // Vercel sets CI=1
+  assert.equal(isCiEnvironment({ VERCEL: "1" }), true);      // belt and braces
+  assert.equal(isCiEnvironment({}), false);                  // local dev
+  assert.equal(isCiEnvironment({ CI: "" }), false);
+  assert.equal(isCiEnvironment({ CI: "false" }), false);
+});

@@ -1,6 +1,6 @@
-import { runSitemapPingWorkflow } from "./ping-sitemap-lib.mjs";
+import { isCiEnvironment, runSitemapPingWorkflow } from "./ping-sitemap-lib.mjs";
 
 await runSitemapPingWorkflow({
-  ci: process.env.CI === "true",
+  ci: isCiEnvironment(process.env),
   sitemapUrl: process.env.SITEMAP_URL,
 });

@@ -3,6 +3,12 @@ const DEFAULT_SITE_URL = `https://${DEFAULT_HOST}`;
 const INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow";
 const DEFAULT_INDEXNOW_KEY = "a3713189855e4e2983f434ab249fcea1";
 
+// Vercel sets CI=1 (not "true") — the old strict check made postbuild skip on every
+// Vercel deploy, so IndexNow never actually ran there (found 2026-07-10 in a prod build log).
+export function isCiEnvironment(env) {
+  return env.CI === "true" || env.CI === "1" || env.VERCEL === "1";
+}
+
 async function fetchSitemapUrls(fetchImpl, sitemapUrl) {
   const res = await fetchImpl(sitemapUrl);
   if (!res.ok) {
