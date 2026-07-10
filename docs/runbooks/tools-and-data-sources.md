@@ -25,6 +25,8 @@ This file is the operational counterpart to:
 | GitHub repo | `abiassi/deepbreathing` |
 | Logged-in Google account | `amorim.a.ferreira@gmail.com` |
 | Bing Webmaster account | same Google login |
+| YouTube channel | `@deepbreathingexercises` (ID `UC17_GvnAKkxsv39BMVE3MdQ`) |
+| YouTube Data API key | `~/.config/dbe-youtube-api-key` (mbp14 + mbp16) · `task/youtube-api-key.txt` (orangepi digest) — restricted to `youtube.googleapis.com`, never expires |
 
 If any of these change, update this file FIRST, then update FUNNEL-DASHBOARD.md and any active runbooks.
 
@@ -77,6 +79,14 @@ The `page=!URL` syntax means "exact URL match." Replace the page URL portion to 
 
 **Tool:** `mcp__mass-translate-backend__sync_bing_performance` then `mcp__mass-translate-backend__get_bing_search_performance`
 **Gotcha:** Bing OAuth was bricked once (May 5) and re-authed. If 401 errors appear, `mcp__mass-translate-backend__start_bing_oauth`.
+
+### Pull YouTube channel stats
+
+**Tool:** YouTube Data API v3 with the API key above (public data: subscribers, total views, per-video views/likes/comments). On orangepi the digest runs `task/youtube_pull.py`; ad-hoc from a Mac:
+```bash
+curl -s "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UC17_GvnAKkxsv39BMVE3MdQ&key=$(cat ~/.config/dbe-youtube-api-key)"
+```
+**Gotcha (2026-07-10):** do NOT use the RSS feed (`feeds/videos.xml`) or page scraping as a primary source — RSS caps at 15 entries (the channel has 45+), YouTube's edge IP-blocked orangepi on 2026-07-09, and `subscriberCountText` was never readable from the page source. **Private** metrics (watch time, impressions, thumbnail CTR, traffic sources) need the YouTube Analytics API, which only supports channel-owner OAuth (no service-account path) — deliberately not wired up while the channel is small; revisit when watch-time decisions matter.
 
 ### Check index status (do NOT submit URLs)
 
