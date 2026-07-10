@@ -94,9 +94,9 @@ export function KeepPracticeSheet({
 
   const headline =
     sessionsCompleted >= 2
-      ? `That's ${sessionsCompleted} sessions of calm — keep it?`
+      ? `That's ${sessionsCompleted} sessions of calm, keep it?`
       : dayStreak >= 2
-        ? `That's a ${dayStreak}-day streak — keep it?`
+        ? `That's a ${dayStreak}-day streak, keep it?`
         : "Save your progress?";
   const minutes =
     totalMinutes === 0 ? Math.max(1, Math.floor(sessionSeconds / 60)) : Math.max(totalMinutes, 1);
@@ -146,7 +146,7 @@ export function KeepPracticeSheet({
               </div>
               <h2 className={`${PREFIX}-title`}>{headline}</h2>
               <p className={`${PREFIX}-stats`}>{stats.join(" · ")}</p>
-              <p className={`${PREFIX}-sub`}>Saved on this device only. A free account keeps it — and every minute after — on any screen you pick up.</p>
+              <p className={`${PREFIX}-sub`}>Saved on this device only. A free account keeps it, and every minute after, on any screen you pick up.</p>
               <button className={`${PREFIX}-google`} onClick={handleGoogle}>
                 <svg viewBox="0 0 24 24" className={`${PREFIX}-g-logo`} aria-hidden="true">
                   <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" />
