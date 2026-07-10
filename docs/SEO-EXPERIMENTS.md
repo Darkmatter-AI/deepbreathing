@@ -18,6 +18,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-07-10 | [Canonical Hijack — 2 Locale Pages Merged With Casino Domain (747live.bet)](#2026-07-10-canonical-hijack--2-locale-pages-merged-with-casino-domain-747livebet) | ⏳ Waiting |
 | 2026-07-09 | [Retire Dead Submission Paths — Indexing API, Sitemap Pings; Durable URL Inspection](#2026-07-09-retire-dead-submission-paths) | 📊 Snapshot |
 | 2026-06-15 | [Nofollow + Robots-Disallow ?duration= Timer Deep-Links (Hreflang to Non-Canonical)](#2026-06-15-nofollow--robots-disallow-duration-timer-deep-links-hreflang-to-non-canonical) | 🔄 Implemented |
 | 2026-06-14 | [GSC "Page with redirect" Alert (WNC-20237597) — Reviewed, Benign](#2026-06-14-gsc-page-with-redirect-alert-wnc-20237597--reviewed-benign) | 📊 Snapshot |
@@ -81,6 +82,31 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 ---
 
 ## Active Experiments
+
+### 2026-07-10: Canonical Hijack — 2 Locale Pages Merged With Casino Domain (747live.bet)
+
+**Incident.** URL Inspection API shows Google's chosen canonical for two of our pages is `https://www.747live.bet/` (a casino site):
+
+- `/es/breathe/physiological-sigh` — `Duplicate, Google chose different canonical than user`, last crawl 2026-07-08
+- `/pt/physiological-sigh-panic-attack` — same state, last crawl 2026-06-19
+
+**Scope verified 2026-07-10:** exactly these 2. Homepage, EN money pages (`/breathe/physiological-sigh`, `/physiological-sigh-panic-attack`, hope-cartel), and all 6 other locale variants of both slugs are self-canonical and indexed. The `Crawled - currently not indexed` pages are NOT hijacked (googleCanonical = self).
+
+**What 747live.bet serves today:** plain casino homepage, self-canonical, zero occurrences of our content (checked with Googlebot UA via curl). So this is the classic sticky-dedup canonical hijack: a scraper/spam cluster matched those URLs at some point, Google merged the cluster and chose the spam side, and the association survives recrawls (es page recrawled Jul 8, verdict unchanged).
+
+**Our pages are clean.** Both serve correct translated content, self-canonical, full hreflang to Googlebot UA. Prior related history: ~27 spam domains disavowed 2026-02-06, including a Chinese spam cluster.
+
+**Plausible contributing vector — proxy canonical param echo.** On proxied locale pages, the mass-translate proxy echoes *unknown* query params into the canonical (`?cb=`, `?foo=`, `?duration=` all echo; `utm_*` is stripped). EN pages are immune (Next.js builds the canonical statically). So any spam link to `/es/...?junk=x` produces a self-canonical duplicate URL on our domain — dedup-cluster pollution. Same bug class as the 2026-06-15 `?duration=` fix, but generic. Fix belongs in mass-translate-backend: canonical must be built from the path, never the request query string.
+
+**Actions:**
+1. Filed Linear issue for the proxy canonical bug (mass-translate-backend).
+2. Added a hijack tripwire to the orangepi visibility digest: every run inspects the 2 known-hijacked URLs + the EN equivalents; alerts if any `googleCanonical` is off-domain or the count grows.
+3. Abi to hit **Request indexing** in the GSC UI for both URLs (API path doesn't exist for this; UI works and is per-URL).
+4. Optional: Google spam report for 747live.bet.
+
+**Success criteria (measure 2026-08-10):** ✅ if both pages return to self-canonical (`Submitted and indexed` or at least googleCanonical = self) within 4 weeks of the re-index request. ❌ if either still points at 747live.bet — then escalate: spam report + consider serving those routes with rebuilt content (new URL + 301) to break the cluster. Tripwire alert at any point = reopen immediately.
+
+---
 
 ### 2026-07-09: Retire Dead Submission Paths
 
