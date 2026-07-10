@@ -23,7 +23,8 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
-| 2026-06-26 | [Non-blocking signup banner (`loss_aversion_banner`) — top-anchored notification](#2026-06-26-non-blocking-signup-banner-loss_aversion_banner--top-anchored-notification) | ❌ **Failed** (verdict 2026-07-10, early per impressions clause): intent 9.3% vs 13.8% AND retention 40% vs 50% — revert decision pending |
+| 2026-07-10 | [Keep Your Practice (`keep_practice`) — gain-framed receipt sheet, phase 1](#2026-07-10-keep-your-practice-keep_practice--gain-framed-receipt-sheet-phase-1) | 🔄 Implemented — PR [#41](https://github.com/Darkmatter-AI/deepbreathing/pull/41); first read once ≥150 prompt-shown (~2wk post-deploy) |
+| 2026-06-26 | [Non-blocking signup banner (`loss_aversion_banner`) — top-anchored notification](#2026-06-26-non-blocking-signup-banner-loss_aversion_banner--top-anchored-notification) | ❌ **Failed** (verdict 2026-07-10, early per impressions clause): intent 9.3% vs 13.8% AND retention 40% vs 50% — **superseded by `keep_practice` (PR #41), which is the revert-plus** |
 | 2026-06-21 | [/stats "Your practice" — retention surface (breath garden + stale-streak reframe)](#2026-06-21-stats-page--streak-calendar--session-stats-for-signed-in-users) | 🔄 Implemented |
 | 2026-06-14 | [Conversion Prompt C (loss_aversion), 100% challenger](#2026-06-14-conversion-prompt-c-loss_aversion-100-challenger) | 🔄 Implemented |
 | 2026-06-01 | [Fix `conversion_prompt_shown` double-fire (impure setState updaters)](#2026-06-01-fix-conversion_prompt_shown-double-fire-impure-setstate-updaters) | 🔄 Implemented |
@@ -47,6 +48,29 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 ---
 
 ## Active Experiments
+
+### 2026-07-10: Keep Your Practice (`keep_practice`) — gain-framed receipt sheet, phase 1
+
+> Successor to the failed banner, designed via a 19-agent research workflow ([docs/research/signup-conversion-2026-07-10.md](research/signup-conversion-2026-07-10.md)) and reviewed line-by-line by Abi (headline copy and receipt-led trigger are his calls, the latter data-backed). **Phase 1 deliberately excludes Google One Tap** so the progress-receipt lever gets a clean causal read; One Tap is phase 2 if this lands ≥13.8%.
+
+**Hypothesis:** Every prior ask told users to "save your progress" without ever showing them the progress. Showing the real accumulated receipt (minutes · sessions · streak) at the session-end modal moment converts better than loss-framed copy about a single session — gain-framing wins for maintenance behaviors (Rothman & Salovey) and endowed progress increases completion (Nunes & Drèze). The GA4 segmented read (2026-07-10, ga-visibility SA): ~24% of prompt-shown users are returning multi-day users who convert no better than new users under past asks (11.1% vs 10.2%) — the untapped segment this targets.
+
+**Change (PR [#41](https://github.com/Darkmatter-AI/deepbreathing/pull/41)):** New `KeepPracticeSheet` (`src/components/auth/keep-practice-sheet.tsx`), forked from the Prompt C sheet. Adaptive headline: `Save your progress?` base; `That's {n} sessions of calm — keep it?` when `sessionsCompleted ≥ 2`; streak variant when only `streak ≥ 2`. Cumulative stats line from real localStorage values only (sessions/streak parts hidden below 2). Dismiss = ✕ only (no "Not now"). `ACTIVE_CHALLENGER = "keep_practice"` at 100%, `VARIANT_KEY` v3→v4 (returning banner-cohort visitors re-draw). Silent `resonance_active_days` logging starts (future breath garden). Auth mechanics untouched. Preview: `?promptui=keep&promptdemo=1`.
+
+**Baseline (GA4 DKMT 527524722):** Prompt C modal intent **13.8%** (12/87, Jun 14–22, directional); banner failed at 9.3%; ~86 prompt-shown users/wk; ~4–7 signups/wk; day-7-ish return of signup cohort ~50% (modal, N=12); returning-user intent 11.1% (28d trailing).
+
+**Pre-committed criteria (evaluate only at ≥150 prompt-shown users post-deploy, ~2 weeks; score on users, variant `keep_practice`):**
+- ✅ **Success:** intent ≥ **16%** AND absolute weekly signups ≥ trailing-4-week baseline AND signup-cohort day-7 return ≥ 45% (directional, small N) AND dismisser 7-day return not down >10pp vs modal-era.
+- ❌ **Failed:** intent ≤ 13.8% OR absolute weekly signups below baseline 2 consecutive weeks.
+- 🟡 **Mixed:** intent 13.8–16% with clearly improved retention (cohort or dismisser).
+- ⚪ **Inconclusive:** <150 prompt-shown by verdict date.
+- Secondary (not gating): returning-user intent should pull ahead of its 11.1% baseline if the receipt mechanism is real — pull via the ga-visibility SA `newVsReturning` split.
+
+**Measure-after:** first read at ≥150 prompt-shown or +14 days post-deploy, whichever first; verdict +21 days, or early once a boundary is crossed (≥16% or ≤10%). Rollback lever: `ACTIVE_CHALLENGER = "loss_aversion"` (Prompt C modal).
+
+**Status:** 🔄 Implemented — PR #41 open; not yet deployed to production.
+
+---
 
 ### 2026-06-26: Non-blocking signup banner (`loss_aversion_banner`) — top-anchored notification
 
