@@ -9,8 +9,8 @@ Status key: ✅ Done | ⏳ Pending | 🔲 Not started
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 1.1 | Apple Developer Program membership active ($99/yr) | ⏳ Verify | Must be active; check at developer.apple.com |
-| 1.2 | Correct team selected in ASC (App Store Connect) | ⏳ Verify | Darkmatter AI Labs or personal account |
+| 1.1 | Apple Developer Program membership active ($99/yr) | ✅ | Active via EAS credentials |
+| 1.2 | Correct team selected in ASC (App Store Connect) | ✅ | M29XZH5LMJ, Reentry Systems Unipessoal Lda |
 
 ---
 
@@ -18,13 +18,13 @@ Status key: ✅ Done | ⏳ Pending | 🔲 Not started
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 2.1 | New app record created in ASC | 🔲 | appstoreconnect.apple.com > My Apps > + |
-| 2.2 | Bundle ID registered: `com.deepbreathing.app` | 🔲 | Must match `app.json`. Current value is `com.deepbreathing.resonance` — align these before building |
+| 2.1 | New app record created in ASC | ✅ | ASC app id `6786431781` |
+| 2.2 | Bundle ID registered: `com.deepbreathing.app` | ✅ | Matches `app.json` and prior TestFlight build |
 | 2.3 | App name set: `Deep Breathing Exercises` | 🔲 | 24 chars — fits 30-char limit |
 | 2.4 | Primary language: English (US) | 🔲 | |
 | 2.5 | SKU: `deep-breathing-exercises-ios` (or similar unique string) | 🔲 | Internal only, never shown to users |
 
-> **Bundle ID conflict:** `app.json` currently uses `com.deepbreathing.resonance`. The task spec says `com.deepbreathing.app`. Decide which to use, update `app.json`, and register that exact bundle ID in the Apple Developer portal before building. This cannot be changed after the first build upload.
+> Bundle ID is locked to `com.deepbreathing.app` by the existing App Store record and prior TestFlight build.
 
 ---
 
@@ -32,10 +32,10 @@ Status key: ✅ Done | ⏳ Pending | 🔲 Not started
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 3.1 | Apple Distribution Certificate in Keychain / EAS credentials | ⏳ | `eas credentials` — EAS can auto-manage |
-| 3.2 | App Store Provisioning Profile for `com.deepbreathing.app` | ⏳ | EAS auto-manages if using managed credentials |
-| 3.3 | `eas.json` `submit.production` configured | ✅ | Entry exists; add `appleId` and `ascAppId` |
-| 3.4 | App-specific password or ASC API key for submission | 🔲 | Needed for `eas submit`. Prefer API key (does not expire every 6 months). Set in EAS Secrets or `~/.npmrc` |
+| 3.1 | Apple Distribution Certificate in Keychain / EAS credentials | ✅ | EAS-managed, expires July 1, 2027 |
+| 3.2 | App Store Provisioning Profile for `com.deepbreathing.app` | ✅ | EAS-managed |
+| 3.3 | `eas.json` `submit.production` configured | ✅ | Apple ID, ASC app id, and team id present |
+| 3.4 | App-specific password or ASC API key for submission | ✅ | ASC API key stored in EAS credentials service |
 
 ```jsonc
 // eas.json submit.production — add these:
@@ -58,7 +58,7 @@ Status key: ✅ Done | ⏳ Pending | 🔲 Not started
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 4.1 | `app.json` `version` and `ios.buildNumber` set correctly | ⏳ | EAS `autoIncrement: true` in eas.json handles build number; confirm version is `1.0.0` |
+| 4.1 | `app.json` `version` and `ios.buildNumber` set correctly | ✅ | Version 1.0.0; build 4 queued with remote auto-increment |
 | 4.2 | `ITSAppUsesNonExemptEncryption = false` in `ios.infoPlist` | ✅ | Already set in `app.json` |
 | 4.3 | `PrivacyInfo.xcprivacy` added to iOS target | 🔲 | See privacy-manifest.md for exact XML |
 | 4.4 | Production build: `eas build --platform ios --profile production` | 🔲 | Creates `.ipa` and uploads to EAS |
@@ -120,8 +120,8 @@ Apple requires screenshots for every device size you support. Required sizes (pi
 |---|---|---|---|
 | 8.1 | App Privacy nutrition label completed in ASC | 🔲 | See app-privacy.md for exact answers |
 | 8.2 | Privacy Policy URL set in ASC | 🔲 | `https://deepbreathingexercises.com/privacy` |
-| 8.3 | Privacy page updated with mobile data section | 🔲 | See app-privacy.md notes — do not rewrite page, add a section |
-| 8.4 | Support page created and live | 🔲 | `src/app/support/page.tsx` — deploy before submission |
+| 8.3 | Privacy page updated with mobile data section | ✅ | Account, sync, analytics, device features, deletion |
+| 8.4 | Support page created and live | ✅ | Account deletion instructions updated locally; deploy pending |
 
 ---
 
@@ -165,20 +165,17 @@ Apple requires screenshots for every device size you support. Required sizes (pi
 
 Review notes are shown to the App Store reviewer. Include:
 
-> **2026-06-24 audit update:** the v1 binary has NO account/sign-in (the "optional account"
-> was never built) and does NOT expose Wim Hof. So: no demo account, and do not mention a Wim
-> Hof safety warning (none exists, because Wim Hof is not in v1). Corrected notes below.
-
 ```
-This app requires no account or sign-in. All features (all breathing modes, audio, haptics,
-timer, local stats, dark/light mode) are fully available to any user immediately on launch.
-No demo credentials are needed. The app renders bundled local UI in an embedded view and does
-not load any external website or allow web navigation.
+The core breathing experience works without an account. Apple and Google sign-in are optional
+and are used only to sync practice sessions and settings between the app and website. Reviewers
+may use Sign in with Apple; no demo credentials are required. Users can delete an account from
+the in-app account sheet. The app renders bundled local UI and opens only provider-controlled
+authentication pages during sign-in.
 ```
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 13.1 | Demo account created | ✅ N/A | NOT needed — v1 ships no sign-in/account (audit 2026-06-24). Leave ASC sign-in toggle OFF, demo fields empty |
+| 13.1 | Demo account created | ✅ N/A | Optional Sign in with Apple is available to reviewers; no demo password account exists |
 | 13.2 | Review notes drafted and entered in ASC | 🔲 | |
 
 ---
