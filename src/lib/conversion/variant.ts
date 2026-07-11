@@ -5,7 +5,8 @@
  *
  *  - "control"      = the existing SignInSheet ("Save your progress")
  *  - "social_stats" = Conversion Prompt B (social proof + personal stats) — paused 2026-06-14
- *  - "loss_aversion" = Conversion Prompt C (real session card + loss-aversion copy) — ACTIVE
+ *  - "loss_aversion" = Conversion Prompt C (real session card + loss-aversion copy) — paused
+ *  - "keep_practice" = gain-framed session receipt + cumulative practice — ACTIVE
  *
  * The active challenger is determined by ACTIVE_CHALLENGER. Setting CHALLENGER_SHARE = 0
  * is the instant rollback to control; setting it to 1 ships the challenger to everyone.
@@ -15,12 +16,21 @@
  * bucketing.
  */
 
-export type ConversionVariant = "control" | "social_stats" | "loss_aversion";
+export type ConversionVariant =
+  | "control"
+  | "social_stats"
+  | "loss_aversion"
+  | "loss_aversion_banner"
+  | "keep_practice";
 
 /**
  * The currently active challenger variant. One line to swap challengers.
+ *
+ * 2026-07-10: swapped from "loss_aversion_banner" (❌ Failed verdict) to
+ * "keep_practice" and shipped to 100%. Rollback to Prompt C modal = set this
+ * back to "loss_aversion"; full rollback to control = CHALLENGER_SHARE = 0.
  */
-export const ACTIVE_CHALLENGER: ConversionVariant = "loss_aversion";
+export const ACTIVE_CHALLENGER: ConversionVariant = "keep_practice";
 
 /**
  * Share of visitors bucketed into the active challenger.
@@ -36,11 +46,19 @@ export const CHALLENGER_SHARE = 1;
  */
 export const SOCIAL_STATS_SHARE = 1;
 
-// v2 key forces re-bucketing of visitors persisted under the old social_stats key.
-const VARIANT_KEY = "resonance_conversion_variant_v2";
+// Bumped v3 → v4 on the 2026-07-10 keep_practice ship so returning visitors
+// persisted as "loss_aversion_banner" re-draw and the 100% swap applies to
+// them too, not just new visitors.
+const VARIANT_KEY = "resonance_conversion_variant_v4";
 
 function isVariant(v: unknown): v is ConversionVariant {
-  return v === "control" || v === "social_stats" || v === "loss_aversion";
+  return (
+    v === "control" ||
+    v === "social_stats" ||
+    v === "loss_aversion" ||
+    v === "loss_aversion_banner" ||
+    v === "keep_practice"
+  );
 }
 
 /**
@@ -73,5 +91,21 @@ export function readConversionVariant(): ConversionVariant {
     return isVariant(saved) ? saved : "control";
   } catch {
     return "control";
+  }
+}
+
+/**
+ * Force-persist a variant bucket. Used to tag the non-blocking banner cohort
+ * (`loss_aversion_banner`) so the existing funnel events — conversion_prompt_shown,
+ * conversion_signup_completed, signup_user_identified — and the `conversion_variant`
+ * GA4 user property all carry it, segmenting "saw + registered via the banner" from
+ * the modal. Idempotent.
+ */
+export function setConversionVariant(v: ConversionVariant) {
+  if (typeof window === "undefined") return;
+  try {
+    if (localStorage.getItem(VARIANT_KEY) !== v) localStorage.setItem(VARIANT_KEY, v);
+  } catch {
+    /* ignore */
   }
 }

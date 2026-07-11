@@ -1,6 +1,6 @@
 # Tools and Data Sources
 
-Per-task lookup table for "how do I do X" on the deepbreathingexercises.com project. Read this BEFORE starting any analytics, SEO, or DB work — it'll save you the time of rediscovering that GSC analytics returns 403 for this site, that GA4 is on the DKMT account not Abiassi, and that the proxy strips locales before Next.js sees URLs.
+Per-task lookup table for "how do I do X" on the deepbreathingexercises.com project. Read this BEFORE starting any analytics, SEO, or DB work — it'll save you the time of rediscovering that GA4 is on the DKMT account not Abiassi, that the proxy strips locales before Next.js sees URLs, and that one service account (`ga-visibility@deepbreathingexercises.iam.gserviceaccount.com`) is the durable credential for GSC + GA4 everywhere.
 
 This file is the operational counterpart to:
 - [docs/FUNNEL-DASHBOARD.md](../FUNNEL-DASHBOARD.md) — the *what* (current state)
@@ -25,6 +25,8 @@ This file is the operational counterpart to:
 | GitHub repo | `abiassi/deepbreathing` |
 | Logged-in Google account | `amorim.a.ferreira@gmail.com` |
 | Bing Webmaster account | same Google login |
+| YouTube channel | `@deepbreathingexercises` (ID `UC17_GvnAKkxsv39BMVE3MdQ`) |
+| YouTube Data API key | `~/.config/dbe-youtube-api-key` (mbp14 + mbp16) · `task/youtube-api-key.txt` (orangepi digest) — restricted to `youtube.googleapis.com`, never expires |
 
 If any of these change, update this file FIRST, then update FUNNEL-DASHBOARD.md and any active runbooks.
 
@@ -47,9 +49,9 @@ If any of these change, update this file FIRST, then update FUNNEL-DASHBOARD.md 
 
 ### Pull GSC search performance data
 
-**Tool:** `mcp__mass-translate-backend__sync_gsc_performance` then `mcp__mass-translate-backend__get_search_performance`
-**Why not `mcp__gsc__*`:** Returns 403 for this site (`User does not have sufficient permission for site 'sc-domain:deepbreathingexercises.com'`). The mass-translate-backend tools have a separate OAuth scope that works.
-**Steps:**
+**Tool (preferred, durable): `mcp__gsc__search_analytics`** with `siteUrl=sc-domain:deepbreathingexercises.com`. Working since 2026-07-10: the repo's `.mcp.json` (mbp14 + mbp16) points the gsc MCP at `~/.config/dbe-ga-visibility-sa.json` — the `ga-visibility` service account, now an **Owner** of the property. Nothing expires. The old 403 was the previous key (`gsc-service-account.json`, an ungranted SA); if you see 403 again, check which key `.mcp.json` names. `mcp__gsc__index_inspect` and the sitemap tools work too. On orangepi the same data comes from `task/gsc_query.py`.
+
+**Fallback (avoid): mass-translate-backend** `sync_gsc_performance` + `get_search_performance`. Its OAuth expires ~2-weekly and re-auth is interactive with two silent failure modes (wrong account, unticked scope checkboxes). Only reach for it if the gsc MCP is somehow down:
 ```
 mcp__mass-translate-backend__sync_gsc_performance \
   site_url=https://deepbreathingexercises.com/ \
@@ -78,11 +80,27 @@ The `page=!URL` syntax means "exact URL match." Replace the page URL portion to 
 **Tool:** `mcp__mass-translate-backend__sync_bing_performance` then `mcp__mass-translate-backend__get_bing_search_performance`
 **Gotcha:** Bing OAuth was bricked once (May 5) and re-authed. If 401 errors appear, `mcp__mass-translate-backend__start_bing_oauth`.
 
-### Submit URLs for indexing
+### Pull YouTube channel stats
 
-**Google:** `mcp__mass-translate-backend__request_indexing` with `type="URL_UPDATED"` (recrawl) or `type="URL_DELETED"` (remove from index — faster than waiting for Validate Fix recrawl).
+**Tool:** YouTube Data API v3 with the API key above (public data: subscribers, total views, per-video views/likes/comments). On orangepi the digest runs `task/youtube_pull.py`; ad-hoc from a Mac:
+```bash
+curl -s "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UC17_GvnAKkxsv39BMVE3MdQ&key=$(cat ~/.config/dbe-youtube-api-key)"
+```
+**Gotcha (2026-07-10):** do NOT use the RSS feed (`feeds/videos.xml`) or page scraping as a primary source — RSS caps at 15 entries (the channel has 45+), YouTube's edge IP-blocked orangepi on 2026-07-09, and `subscriberCountText` was never readable from the page source. **Private** metrics (watch time, impressions, thumbnail CTR, traffic sources) need the YouTube Analytics API, which only supports channel-owner OAuth (no service-account path) — deliberately not wired up while the channel is small; revisit when watch-time decisions matter.
 
-**Bing:** `mcp__mass-translate-backend__submit_urls_bing` (batch endpoint) or browser-based BWT URL Submission UI as fallback.
+### Check index status (do NOT submit URLs)
+
+**Tool:** `GSC_SA_KEY_FILE=~/.config/dbe-ga-visibility-sa.json node scripts/gsc-index-status.mjs`
+Service-account auth (`ga-visibility@…`), self-signed JWT, nothing expires. The SA must be an **Owner** of the property; Editor 403s on URL Inspection. Refreshes the `Indexed` column of `docs/indexing-queue.md` and prints a `coverageState` for each unindexed URL. See the `daily-indexing` skill.
+
+**Gotcha — URL submission is dead on this site (audited 2026-07-09).** Do not reach for these:
+- `mcp__mass-translate-backend__request_indexing` posts to Google's Indexing API, which Google restricts to `JobPosting` / `BroadcastEvent` pages. It returns **HTTP 200 for ineligible URLs**, so it looks like it worked and does nothing.
+- `google.com/ping?sitemap=` → **404** (retired 2023). `bing.com/ping?sitemap=` → **410 Gone**.
+- `mcp__mass-translate-backend__submit_urls_bing` is redundant: `postbuild` submits every sitemap URL to **IndexNow** on each production deploy (`scripts/ping-sitemap-lib.mjs`). Google does not participate in IndexNow. (True since 2026-07-10 — before that the CI gate checked `CI === "true"` while Vercel sets `CI=1`, so IndexNow silently never ran on deploys.)
+
+Google discovers pages via the sitemap and the `/languages` crawl hub. `Crawled - currently not indexed` is a quality verdict, not a submission problem. Full reasoning in the 2026-07-09 entry of `SEO-EXPERIMENTS.md`.
+
+**Consequence:** the mass-translate GSC OAuth (which expired roughly every two weeks) is no longer needed for indexing. It remains only for translation work.
 
 ### Run a SerpApi search to inspect SERP layout
 
@@ -125,17 +143,18 @@ Concurrency is capped at 6 in the route — **do not raise it**, the proxy 503s 
 
 ### Query the Neon DB
 
-**Tool:** `darkmatter-db` skill — use the eval pattern, never paste connection strings.
+**Preferred (2026-07-10+): the `dbe_read` role via `POSTGRES_URL_READONLY`.** SELECT-only role (all current + future public tables; writes denied), stored in Vercel env (Production + Development). Read queries never need owner creds anymore:
 
 ```bash
-# Preferred
-eval "$(dkmt-cc env pull deep-breathing --export 2>/dev/null)" && \
-  psql "$POSTGRES_URL_NON_POOLING" -f docs/runbooks/sql/cohort-check.sql
+vercel env pull /tmp/dbenv.txt --environment=production --yes && \
+  eval "$(grep -E '^POSTGRES_URL_READONLY=' /tmp/dbenv.txt | sed 's|^|export |')" && \
+  psql "$POSTGRES_URL_READONLY" -f docs/runbooks/sql/cohort-check.sql && \
+  rm -f /tmp/dbenv.txt
 ```
 
-**If dkmt-cc returns 403 / token expired:**
-1. Run `dkmt-cc login` and complete the browser OAuth (~30 sec).
-2. If still failing, fall back to Vercel direct env pull (see weekly-funnel-refresh.md step 2).
+Use the eval pattern, never paste connection strings. To rotate the role's password: connect with `POSTGRES_URL_NON_POOLING` (owner) and `ALTER ROLE dbe_read WITH PASSWORD '...'`, then `vercel env rm/add POSTGRES_URL_READONLY`.
+
+Owner-cred fallback (writes, migrations, role admin): `POSTGRES_URL_NON_POOLING` from the same `vercel env pull`. `dkmt-cc env pull` is deprecated (gotcha 11).
 
 **Schema notes** (also useful for new queries):
 - `"user"` (lowercase, quoted) — better-auth user table
@@ -193,7 +212,7 @@ mcp__scheduled-tasks__create_scheduled_task \
 
 These have all bitten us before. Document in this file the FIRST time they bite, not the third.
 
-1. **GSC `mcp__gsc__*` analytics endpoints return 403 for this site.** Use mass-translate-backend instead. (May 5)
+1. **FIXED 2026-07-10 — `mcp__gsc__*` works now.** The historical 403 came from `.mcp.json` naming an ungranted SA key. It now names `~/.config/dbe-ga-visibility-sa.json` (Owner of the property) on mbp14 + mbp16. Prefer `mcp__gsc__*` over mass-translate for all GSC reads; if 403 recurs, check the key path in `.mcp.json` first. (May 5 → fixed Jul 10)
 
 2. **GA4 was migrated from Abiassi → DKMT account at some point.** Old measurement ID `G-7GG9WVNBBP` shows zero data. Always confirm you're on `527524722` / `G-53DLCBMRL3` before pulling. (May 5)
 
@@ -231,7 +250,9 @@ These have all bitten us before. Document in this file the FIRST time they bite,
 
 19. **`public/robots.txt` was a stale duplicate of `src/app/robots.ts` — deleted 2026-06-15.** Next.js App Router serves `robots.txt` from `app/robots.ts`; the `public/robots.txt` copy was redundant and a silent drift risk (it would not carry new rules). Single source of truth is `src/app/robots.ts` — edit only there.
 
-20. **The proxy's query-string canonical asymmetry: English strips `?duration=`, locale pages keep it.** The English origin canonicalizes `/breathe/coherent?duration=60` → `/breathe/coherent`; the proxy preserves `?duration=` in the canonical + hreflang it injects on locale pages, so the `en`/`x-default` hreflang points at a non-canonical URL — this caused 50 Ahrefs "hreflang to non-canonical" errors (2026-06-15). Source-side fix shipped: robots disallow `/*?duration=` + `rel="nofollow"` on all `?duration=` links. The **durable proxy-side fix** is to add `duration` to the tenant's `strip_query_params` in mass-translate KV — but the setting REPLACES the defaults, so the value must include `utm_*,fbclid,gclid,ref,_ga,mc_*`. Requires the mass-translate team to write tenant KV; no `set_site_config` MCP tool exists. (2026-06-15)
+20. **GA4 `engagedSessions` matures over ~48h; `sessions` lands within hours.** Any reporting window that touches the last 2 days systematically understates engagement rate (verified 2026-07-10: a 10h-old day read 8.6% vs ~60% matured). This produced a fake "3-run engagement decline" in the visibility digest (runs 14-16: 48.2%→44.6%→41.3%; matured values were flat ~56-62%). Clamp GA4 windows to end at `today-2` — `funnel_pull.py` on orangepi does this now, same as `search_pull.py` does for GSC. Never compare engagement rates across windows of different maturity. (Jul 10)
+
+21. **The proxy's query-string canonical asymmetry: English strips `?duration=`, locale pages keep it.** The English origin canonicalizes `/breathe/coherent?duration=60` → `/breathe/coherent`; the proxy preserves `?duration=` in the canonical + hreflang it injects on locale pages, so the `en`/`x-default` hreflang points at a non-canonical URL — this caused 50 Ahrefs "hreflang to non-canonical" errors (2026-06-15). Source-side fix shipped: robots disallow `/*?duration=` + `rel="nofollow"` on all `?duration=` links. The **durable proxy-side fix** is to add `duration` to the tenant's `strip_query_params` in mass-translate KV — but the setting REPLACES the defaults, so the value must include `utm_*,fbclid,gclid,ref,_ga,mc_*`. Requires the mass-translate team to write tenant KV; no `set_site_config` MCP tool exists. (2026-06-15)
 
 ---
 

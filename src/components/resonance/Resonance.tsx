@@ -3,9 +3,10 @@
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import dynamic from 'next/dynamic';
 import { useRouter, usePathname, useSearchParams } from 'next/navigation';
-import { Volume2, VolumeX, Eye, EyeOff, Activity, Waves, Wind, Sun, Moon, Turtle, Rabbit, X, Settings as SettingsIcon, LogOut } from 'lucide-react';
+import Link from 'next/link';
+import { Volume2, VolumeX, Eye, EyeOff, Activity, Waves, Wind, Sun, Moon, Turtle, Rabbit, X, Settings as SettingsIcon, LogOut, Sprout } from 'lucide-react';
 import { BreathingPhase, ModeName, AIRecommendation, ProtocolPhase, ProtocolState } from './types';
-import { BREATHING_PATTERNS, DEFAULT_SPEED_MULTIPLIER, WIM_HOF_PROTOCOL } from './constants';
+import { BREATHING_PATTERNS, DEFAULT_SPEED_MULTIPLIER, WIM_HOF_PROTOCOL, modeToSlug } from './constants';
 import { AudioService } from './services/audioService';
 import Visualizer from './components/Visualizer';
 import { createRuntimePhraseResolver, detectRuntimeLocale, RuntimePhraseKey } from './runtime-phrases';
@@ -35,7 +36,6 @@ const AudioDebugPanel = dynamic(
   () => import('./AudioDebugPanel'),
   { ssr: false }
 );
-import { modeToBreathingPage } from '@/data/breathing-pages';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetClose } from '@/components/ui/sheet';
 import { useAuth } from '@/components/auth/auth-provider';
 import { signOut } from '@/lib/auth-client';
@@ -48,7 +48,8 @@ const STORAGE_KEYS = {
   STATS: 'resonance_stats',
   SETTINGS: 'resonance_settings',
   THEME: 'resonance_theme',
-  SOUND_OK: 'resonance_sound_ok'
+  SOUND_OK: 'resonance_sound_ok',
+  ACTIVE_DAYS: 'resonance_active_days'
 };
 
 interface ResonanceProps {
@@ -339,6 +340,18 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
   // Mirror sessionSeconds into a ref so the rAF loop can read it without
   // re-creating the animate callback on every tick.
   const sessionSecondsRef = useRef<number>(0);
+  // Guards the signed-out conversion prompt to fire at most once per physical
+  // session. endSession can run several times for one session (a manual
+  // pause, an iOS background pause, then a timer auto-complete), and each such
+  // commit crosses the same >=60s threshold. Without this, onSessionComplete
+  // would be called on every commit and double-count conversion_prompt_shown.
+  // Reset to false only on a true start (not a pause→resume).
+  const sessionPromptFiredRef = useRef<boolean>(false);
+  // Lets the background/pagehide effect (defined above endSession) call the
+  // latest endSession without a TDZ reference in its dependency array.
+  const endSessionRef = useRef<
+    ((reason: 'paused' | 'completed' | 'mode_switched', seconds: number, hard: boolean) => void) | null
+  >(null);
 
   const applyThemePreference = useCallback((mode: 'dark' | 'light') => {
     if (typeof document === 'undefined') return;
@@ -405,6 +418,16 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       if (!isRunning) return;
       setIsRunning(false);
       setInstructionKey('session.paused');
+      // Soft-commit the elapsed time. iOS Safari fires visibilitychange/
+      // pagehide aggressively (screen dim/lock, Control Center, audio
+      // interruption) and throttles background timers, so the auto-complete
+      // effect may never reach selectedDuration. Committing here credits the
+      // minutes AND, past ~60s, triggers the signed-out sign-up prompt — which
+      // it silently never did before. sessionSecondsRef holds the live count
+      // (this effect's closure only re-binds on isRunning). hard=false keeps
+      // sessionId/committedSeconds so a resume doesn't double-count. Called via
+      // endSessionRef because endSession is declared further down the body.
+      endSessionRef.current?.('paused', sessionSecondsRef.current, false);
       void audio.fadeOutAndSuspend({ fadeSeconds: 0.25 });
     };
 
@@ -672,7 +695,31 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
         setCurrentStreak(newStreak);
         setLastSessionDate(sessionDate);
 
-        if (reason === 'completed' || reason === 'mode_switched') {
+        try {
+          const stored = localStorage.getItem(STORAGE_KEYS.ACTIVE_DAYS);
+          const parsed: unknown = stored ? JSON.parse(stored) : [];
+          const activeDays = Array.isArray(parsed)
+            ? parsed.filter((day): day is string => typeof day === 'string')
+            : [];
+          if (!activeDays.includes(sessionDate)) activeDays.push(sessionDate);
+          localStorage.setItem(
+            STORAGE_KEYS.ACTIVE_DAYS,
+            JSON.stringify(activeDays.slice(-400))
+          );
+        } catch {
+          // Activity history is best-effort local persistence.
+        }
+
+        // Offer the signed-out sign-up prompt after ~1 min of real breathing,
+        // however the session ended: a timer auto-complete, a manual stop, a
+        // tap-to-pause, or an iOS background pause (visibilitychange/pagehide).
+        // Previously this only fired for 'completed'/'mode_switched', so an
+        // Open (no-timer) session, a manual pause, or an iOS backgrounded
+        // session never showed the prompt. sessionPromptFiredRef keeps it to
+        // one fire per physical session so onSessionComplete's own accounting
+        // isn't double-counted across pause→resume→pause commits.
+        if (seconds >= 60 && !sessionPromptFiredRef.current) {
+          sessionPromptFiredRef.current = true;
           setLastSessionSeconds(seconds);
           onSessionComplete(seconds);
         }
@@ -701,6 +748,11 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     ]
   );
 
+  // Keep the ref pointed at the latest endSession for the background handler.
+  useEffect(() => {
+    endSessionRef.current = endSession;
+  }, [endSession]);
+
   const handleTogglePlay = useCallback(async () => {
     const audio = getAudioService();
     if (!isRunning) {
@@ -723,6 +775,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
             : `${Date.now()}-${Math.random().toString(36).slice(2)}`
         );
         setSessionCommittedSeconds(0);
+        sessionPromptFiredRef.current = false; // fresh session → prompt may fire again
         trackEvent('breathing_session_start', { mode: activeMode, duration: selectedDuration ?? 0 });
       }
 
@@ -842,9 +895,9 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
 
       const shouldNavigate = options.navigate ?? true;
       if (shouldNavigate) {
-        const page = modeToBreathingPage[mode];
-        if (page) {
-          const target = `/breathe/${page.slug}`;
+        const slug = modeToSlug[mode];
+        if (slug) {
+          const target = `/breathe/${slug}`;
           if (pathname !== target) {
             router.push(target);
           }
@@ -860,13 +913,6 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     setSpeedMultiplier(rec.suggestedSpeedMultiplier);
     setAiReasoning(rec.explanation);
     handleStop();
-  };
-
-  const markSoundConfirmed = () => {
-    setSoundStatus('confirmed');
-    if (typeof window !== 'undefined') {
-      localStorage.setItem(STORAGE_KEYS.SOUND_OK, 'true');
-    }
   };
 
   const toggleMute = () => {
@@ -1232,6 +1278,17 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     if (typeof window === 'undefined') return;
     const event = new CustomEvent('resonance:run-state', { detail: { running: isRunning } });
     window.dispatchEvent(event);
+    // Also expose run-state as a body attribute so the hero can fade via pure CSS
+    // (body[data-resonance-running] .resonance-hero-fade) instead of shipping a
+    // client-side run-state listener component in each route's first-load JS.
+    if (isRunning) {
+      document.body.dataset.resonanceRunning = 'true';
+    } else {
+      delete document.body.dataset.resonanceRunning;
+    }
+    return () => {
+      delete document.body.dataset.resonanceRunning;
+    };
   }, [isRunning]);
 
   // Presence heartbeat: fire on start, then every 60s while running.
@@ -1273,8 +1330,24 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
         handleTogglePlay();
       }
     };
+    // Start buttons outside this component opt in with `data-resonance-start`.
+    // The delegation must live here rather than in an inline <script>: React
+    // renders script tags by setting innerHTML, which the browser never
+    // executes, so a script-based listener is silently never registered.
+    // Running inside the real click keeps the user-activation needed for audio.
+    const handleDelegatedClick = (event: MouseEvent) => {
+      const target = event.target as Element | null;
+      if (target?.closest?.('[data-resonance-start]')) {
+        event.preventDefault();
+        handleStartRequest();
+      }
+    };
     window.addEventListener('resonance:start', handleStartRequest);
-    return () => window.removeEventListener('resonance:start', handleStartRequest);
+    document.addEventListener('click', handleDelegatedClick);
+    return () => {
+      window.removeEventListener('resonance:start', handleStartRequest);
+      document.removeEventListener('click', handleDelegatedClick);
+    };
   }, [isRunning, handleTogglePlay]);
 
   const getPhaseLabel = (p: BreathingPhase) => {
@@ -1444,6 +1517,14 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                     <p className="truncate px-2 text-sm font-medium text-card-foreground">{user.name || 'Account'}</p>
                     <p className="truncate px-2 text-xs text-muted-foreground">{user.email}</p>
                     <div className="my-2 h-px bg-border/60" />
+                    <Link
+                      href="/stats"
+                      onClick={() => setShowUserMenu(false)}
+                      className="flex w-full items-center gap-2 rounded-xl px-2 py-2 text-sm text-card-foreground transition-colors hover:bg-card"
+                    >
+                      <Sprout size={14} />
+                      Your practice
+                    </Link>
                     <button
                       onClick={() => { setShowUserMenu(false); signOut(); }}
                       className="flex w-full items-center gap-2 rounded-xl px-2 py-2 text-sm text-muted-foreground transition-colors hover:bg-card hover:text-card-foreground"
@@ -1592,21 +1673,6 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                     {muted ? getSafePhrase('ui.sound_off') : getSafePhrase('ui.sound_on')}
                   </button>
                 </div>
-                {soundStatus !== 'confirmed' && (
-                  <div className="space-y-2 rounded-xl border border-border/60 bg-background/50 p-3 text-xs text-muted-foreground shadow-inner dark:border-border/40 dark:bg-background/20">
-                    <p className="font-semibold text-card-foreground">No sound? Flip your mute switch off and raise volume.</p>
-                    <p>iOS Safari can silence Web Audio when the ringer is off. Try the side switch/volume buttons, then tap Play again.</p>
-                    <div className="flex gap-2">
-                      <button
-                        onClick={markSoundConfirmed}
-                        className="flex-1 rounded-lg bg-card px-3 py-2 text-sm font-medium text-card-foreground shadow-sm"
-                      >
-                        I heard it
-                      </button>
-                    </div>
-                  </div>
-                )}
-
                 {/* v2 audio toggles */}
                 {/*
                   Eyes-closed toggle parked — feature needs voice narration in
@@ -1812,6 +1878,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
           onSuccess={() => markConverted(currentStreak)}
           totalMinutes={totalMinutes}
           sessionSeconds={lastSessionSeconds}
+          sessionsCompleted={sessionsCompleted}
           dayStreak={currentStreak}
           variant={conversionVariant}
           activeMode={activeMode}

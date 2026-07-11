@@ -18,6 +18,8 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-07-10 | [Canonical Hijack — 2 Locale Pages Merged With Casino Domain (747live.bet)](#2026-07-10-canonical-hijack--2-locale-pages-merged-with-casino-domain-747livebet) | ✅ Success |
+| 2026-07-09 | [Retire Dead Submission Paths — Indexing API, Sitemap Pings; Durable URL Inspection](#2026-07-09-retire-dead-submission-paths) | 📊 Snapshot |
 | 2026-06-15 | [Nofollow + Robots-Disallow ?duration= Timer Deep-Links (Hreflang to Non-Canonical)](#2026-06-15-nofollow--robots-disallow-duration-timer-deep-links-hreflang-to-non-canonical) | 🔄 Implemented |
 | 2026-06-14 | [GSC "Page with redirect" Alert (WNC-20237597) — Reviewed, Benign](#2026-06-14-gsc-page-with-redirect-alert-wnc-20237597--reviewed-benign) | 📊 Snapshot |
 | 2026-06-13 | [Fix "Hreflang to non-canonical" — home-page trailing slash](#2026-06-13-fix-hreflang-to-non-canonical--home-page-trailing-slash) | 🔄 Implemented |
@@ -80,6 +82,66 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 ---
 
 ## Active Experiments
+
+### 2026-07-10: Canonical Hijack — 2 Locale Pages Merged With Casino Domain (747live.bet)
+
+**Incident.** URL Inspection API shows Google's chosen canonical for two of our pages is `https://www.747live.bet/` (a casino site):
+
+- `/es/breathe/physiological-sigh` — `Duplicate, Google chose different canonical than user`, last crawl 2026-07-08
+- `/pt/physiological-sigh-panic-attack` — same state, last crawl 2026-06-19
+
+**Scope verified 2026-07-10:** exactly these 2. Homepage, EN money pages (`/breathe/physiological-sigh`, `/physiological-sigh-panic-attack`, hope-cartel), and all 6 other locale variants of both slugs are self-canonical and indexed. The `Crawled - currently not indexed` pages are NOT hijacked (googleCanonical = self).
+
+**What 747live.bet serves today:** plain casino homepage, self-canonical, zero occurrences of our content (checked with Googlebot UA via curl). So this is the classic sticky-dedup canonical hijack: a scraper/spam cluster matched those URLs at some point, Google merged the cluster and chose the spam side, and the association survives recrawls (es page recrawled Jul 8, verdict unchanged).
+
+**Our pages are clean.** Both serve correct translated content, self-canonical, full hreflang to Googlebot UA. Prior related history: ~27 spam domains disavowed 2026-02-06, including a Chinese spam cluster.
+
+**Plausible contributing vector — proxy canonical param echo.** On proxied locale pages, the mass-translate proxy echoes *unknown* query params into the canonical (`?cb=`, `?foo=`, `?duration=` all echo; `utm_*` is stripped). EN pages are immune (Next.js builds the canonical statically). So any spam link to `/es/...?junk=x` produces a self-canonical duplicate URL on our domain — dedup-cluster pollution. Same bug class as the 2026-06-15 `?duration=` fix, but generic. Fix belongs in mass-translate-backend: canonical must be built from the path, never the request query string.
+
+**Actions:**
+1. Filed Linear issue for the proxy canonical bug (mass-translate-backend).
+2. Added a hijack tripwire to the orangepi visibility digest: every run inspects the 2 known-hijacked URLs + the EN equivalents; alerts if any `googleCanonical` is off-domain or the count grows.
+3. ✅ **Request indexing** submitted for both URLs via the GSC UI, 2026-07-10 (browser agent, Abi-authorized). Both confirmed "added to a priority crawl queue" — the 4-week recovery clock runs from here.
+4. Optional: Google spam report for 747live.bet.
+
+**Success criteria (measure 2026-08-10):** ✅ if both pages return to self-canonical (`Submitted and indexed` or at least googleCanonical = self) within 4 weeks of the re-index request. ❌ if either still points at 747live.bet — then escalate: spam report + consider serving those routes with rebuilt content (new URL + 301) to break the cluster. Tripwire alert at any point = reopen immediately.
+
+**Result — ✅ Success, same-day (2026-07-10).** The tripwire (`hijack_check.py` on orangepi) shows both pages recovered on the day of the Request-indexing submissions: `Submitted and indexed`, self-canonical, 747live.bet gone. Criterion met 30 days early. Canonical dedup verdicts can flap, so the tripwire stays in the Mon/Thu digest indefinitely — any relapse alert reopens this entry per the clause above. Root-cause work (proxy canonical param echo) continues separately in Linear (mass-translate-backend proxy fix).
+
+---
+
+### 2026-07-09: Retire Dead Submission Paths
+
+**Finding, not an experiment.** Audited every URL-submission path this site uses. Most were dead or redundant, and had been reporting success.
+
+| Path | Verdict | Evidence |
+|---|---|---|
+| Google Indexing API (`request_indexing`) | Ineffective | Google restricts the API to `JobPosting` / `BroadcastEvent` pages ([docs](https://developers.google.com/search/apis/indexing-api/v3/quickstart), reaffirmed 2026-04-23). Ours are neither. Returns HTTP 200 for ineligible URLs, so every call looked successful. |
+| `google.com/ping?sitemap=` | Dead | Live check returns **404**. Google [retired the endpoint in 2023](https://developers.google.com/search/blog/2023/06/sitemaps-lastmod-ping). |
+| `bing.com/ping?sitemap=` | Dead | Live check returns **410 Gone**. |
+| `submit_urls_bing` (mass-translate) | Redundant | `postbuild` already pushes every sitemap URL to IndexNow on each production deploy. |
+| IndexNow | Working (from 2026-07-10) | Key file serves 200. **Correction (2026-07-10):** the audit above verified the key + endpoint but not a real build log — the `CI === "true"` gate never matched Vercel's `CI=1`, so IndexNow had never actually run on a deploy. Gate fixed; first real submission (337 URLs, status 200) sent 2026-07-10. |
+
+**Corroborating evidence.** The 2026-04-20 remediation submitted 110 URLs through the Indexing API. Indexing moved 180 → 200 over the following 15 days. For eligible pages that API triggers a crawl within hours. A 15-day, 20-page drift is what unassisted sitemap recrawl looks like. Confounded by the concurrent Bing submissions, so suggestive rather than conclusive, but it points the same way as the docs.
+
+**Actions taken:**
+- Deleted both retired ping calls from `scripts/ping-sitemap-lib.mjs`. They failed silently on every build and the test asserted `pingFailures = 2` as expected behavior. IndexNow retained.
+- Added `scripts/gsc-index-status.mjs`: refreshes the `Indexed` column from the **URL Inspection API** using the `ga-visibility` service account (self-signed JWT, no deps, nothing expires). Requires the SA be an **Owner** of the property; Editor 403s.
+- Rewrote the `daily-indexing` skill around status refresh and triage rather than submission.
+- The `mass-translate-backend` GSC OAuth is now unused by this repo. It expired roughly every two weeks; that failure class is retired rather than re-credentialed.
+
+**Baseline correction (the real payload).** The queue's `Indexed` column had been stale since 2026-05-18. First full URL Inspection run, 2026-07-09:
+
+- **305 / 331 indexed** (was recorded as 180 / 331). 125 of 151 rows marked "pending" were already indexed.
+- Genuinely unindexed: **26**. Breakdown: 15 `Crawled - currently not indexed` (Google fetched, declined — a quality judgment, unfixable by submission, concentrated in `ja` and `pt`), 6 `URL is unknown to Google`, 2 `Duplicate, Google chose different canonical`, 2 `Discovered - currently not indexed`, 1 `Page with redirect`.
+- Of the 6 "unknown", 4 are `*/about/methodology` (es/de/ja/pt); the fr one reports `Page with redirect`. All five return **308** and are correctly absent from the sitemap. These are stale queue rows, not indexing failures — delete them. The other 2 unknowns are in the sitemap and return 200.
+- `coverageState` is live and drifts between runs: one URL moved `unknown` → `Discovered` across two inspections minutes apart. Do not treat a single read as a fixed fact.
+
+**Consequence for strategy.** No submission channel influences Google here. The levers are discoverability (sitemap, `/languages` crawl hub, internal links) and page quality. The 15 `Crawled - currently not indexed` pages are the only meaningful backlog, and they need better translations, not more submissions.
+
+**Success criteria (measure 2026-08-09):** Call this ✅ if the `Crawled - currently not indexed` count falls below 8 after a translation-quality pass on `ja`/`pt`, with no submission activity of any kind. Call it ❌ if it stays at 13 or above, which would mean the cause is not translation quality. Removing the dead paths is not itself expected to move any metric; it removes false signal.
+
+---
 
 ### 2026-06-15: Nofollow + Robots-Disallow ?duration= Timer Deep-Links (Hreflang to Non-Canonical)
 

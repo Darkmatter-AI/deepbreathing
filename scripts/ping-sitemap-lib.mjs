@@ -3,19 +3,10 @@ const DEFAULT_SITE_URL = `https://${DEFAULT_HOST}`;
 const INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow";
 const DEFAULT_INDEXNOW_KEY = "a3713189855e4e2983f434ab249fcea1";
 
-function createPingTargets(sitemapUrl) {
-  const encoded = encodeURIComponent(sitemapUrl);
-  return [
-    `https://www.google.com/ping?sitemap=${encoded}`,
-    `https://www.bing.com/ping?sitemap=${encoded}`,
-  ];
-}
-
-async function pingTarget(fetchImpl, target) {
-  const res = await fetchImpl(target);
-  if (!res.ok) {
-    throw new Error(`Ping failed for ${target}: ${res.status}`);
-  }
+// Vercel sets CI=1 (not "true") — the old strict check made postbuild skip on every
+// Vercel deploy, so IndexNow never actually ran there (found 2026-07-10 in a prod build log).
+export function isCiEnvironment(env) {
+  return env.CI === "true" || env.CI === "1" || env.VERCEL === "1";
 }
 
 async function fetchSitemapUrls(fetchImpl, sitemapUrl) {
@@ -69,24 +60,9 @@ export async function runSitemapPingWorkflow({
     logger.log("Skipping sitemap ping; CI environment not detected.");
     return {
       skipped: true,
-      pingFailures: 0,
       indexNowSubmitted: false,
     };
   }
-
-  const pingTargets = createPingTargets(sitemapUrl);
-  let pingFailures = 0;
-
-  await Promise.all(
-    pingTargets.map(async (target) => {
-      try {
-        await pingTarget(fetchImpl, target);
-      } catch (error) {
-        pingFailures += 1;
-        logger.warn("Sitemap ping warning", error);
-      }
-    })
-  );
 
   let indexNowSubmitted = false;
 
@@ -110,7 +86,6 @@ export async function runSitemapPingWorkflow({
 
   return {
     skipped: false,
-    pingFailures,
     indexNowSubmitted,
   };
 }

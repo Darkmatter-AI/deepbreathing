@@ -1,8 +1,11 @@
-"use client";
-
-import { useEffect, useState } from "react";
-
-import { cn } from "@/lib/utils";
+// Server component: renders the hero heading/subtitle as static markup. The fade
+// on session start is driven by pure CSS (globals.css:
+// body[data-resonance-running] .resonance-hero-fade) using a body attribute set
+// by the (already-loaded) Resonance chunk, so NO run-state listener component
+// lands in the route's first-load JS.
+function joinClasses(...classes: Array<string | false | null | undefined>): string {
+  return classes.filter(Boolean).join(" ");
+}
 
 interface FadingHeroTitleProps {
   label: string;
@@ -14,24 +17,12 @@ interface FadingHeroTitleProps {
 }
 
 export function FadingHeroTitle({ label, title, subtitle, headingLevel = 1, className, children }: FadingHeroTitleProps) {
-  const [running, setRunning] = useState(false);
   const HeadingTag = headingLevel === 1 ? "h1" : "h2";
-
-  useEffect(() => {
-    const handleRunState = (event: Event) => {
-      const custom = event as CustomEvent<{ running: boolean }>;
-      setRunning(Boolean(custom.detail?.running));
-    };
-
-    window.addEventListener("resonance:run-state", handleRunState);
-    return () => window.removeEventListener("resonance:run-state", handleRunState);
-  }, []);
 
   return (
     <div
-      className={cn(
-        "space-y-4 text-foreground drop-shadow-sm transition-all duration-500",
-        running ? "opacity-0 translate-y-2" : "opacity-100 translate-y-0",
+      className={joinClasses(
+        "resonance-hero-fade space-y-4 text-foreground drop-shadow-sm transition-all duration-500",
         className
       )}
     >

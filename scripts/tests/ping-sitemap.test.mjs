@@ -25,18 +25,10 @@ test("skips workflow outside CI", async () => {
   assert.equal(called, 0);
 });
 
-test("does not fail build when search engine sitemap ping fails", async () => {
+test("submits to IndexNow without calling retired sitemap ping endpoints", async () => {
   const calls = [];
   const fetchImpl = async (url) => {
     calls.push(url);
-
-    if (url.startsWith("https://www.google.com/ping")) {
-      return { ok: false, status: 410, text: async () => "" };
-    }
-
-    if (url.startsWith("https://www.bing.com/ping")) {
-      return { ok: false, status: 410, text: async () => "" };
-    }
 
     if (url === "https://deepbreathingexercises.com/sitemap.xml") {
       return {
@@ -60,6 +52,42 @@ test("does not fail build when search engine sitemap ping fails", async () => {
   });
 
   assert.equal(result.skipped, false);
-  assert.equal(result.pingFailures, 2);
   assert.equal(result.indexNowSubmitted, true);
+  assert.deepEqual(calls, [
+    "https://deepbreathingexercises.com/sitemap.xml",
+    "https://api.indexnow.org/indexnow",
+  ]);
+});
+
+test("IndexNow failure does not fail the build", async () => {
+  const fetchImpl = async (url) => {
+    if (url === "https://deepbreathingexercises.com/sitemap.xml") {
+      return {
+        ok: true,
+        status: 200,
+        text: async () => "<urlset><url><loc>https://deepbreathingexercises.com/</loc></url></urlset>",
+      };
+    }
+
+    return { ok: false, status: 500, text: async () => "boom" };
+  };
+
+  const result = await runSitemapPingWorkflow({
+    ci: true,
+    fetchImpl,
+    logger: silentLogger,
+  });
+
+  assert.equal(result.skipped, false);
+  assert.equal(result.indexNowSubmitted, false);
+});
+
+test("isCiEnvironment recognizes Vercel builds (CI=1, VERCEL=1), not just CI=true", async () => {
+  const { isCiEnvironment } = await import("../ping-sitemap-lib.mjs");
+  assert.equal(isCiEnvironment({ CI: "true" }), true);
+  assert.equal(isCiEnvironment({ CI: "1" }), true);          // Vercel sets CI=1
+  assert.equal(isCiEnvironment({ VERCEL: "1" }), true);      // belt and braces
+  assert.equal(isCiEnvironment({}), false);                  // local dev
+  assert.equal(isCiEnvironment({ CI: "" }), false);
+  assert.equal(isCiEnvironment({ CI: "false" }), false);
 });
