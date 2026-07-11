@@ -38,11 +38,16 @@ const AudioDebugPanel = dynamic(
 );
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetClose } from '@/components/ui/sheet';
 import { useAuth } from '@/components/auth/auth-provider';
-import { signOut } from '@/lib/auth-client';
+import { authClient, signOut } from '@/lib/auth-client';
 import { useConversionTriggers } from '@/lib/conversion/use-conversion-triggers';
 import { SessionCompletePrompt } from '@/components/auth/session-complete-prompt';
 import { ConversionNudge } from '@/components/auth/conversion-nudge';
 import { SignInSheet } from '@/components/auth/sign-in-sheet';
+import {
+  createWebSessionEvent,
+  enqueueWebSessionEvent,
+  flushWebSessionOutbox,
+} from '@/lib/sync/web-session-events';
 
 const STORAGE_KEYS = {
   STATS: 'resonance_stats',
@@ -680,6 +685,23 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
         if (newSessions !== sessionsCompleted) setSessionsCompleted(newSessions);
         setSessionCommittedSeconds(seconds);
 
+        // Persist the immutable delta before any network attempt. A pause keeps
+        // the same practiceId; a hard end clears it after this commit.
+        const practiceId = sessionId ?? crypto.randomUUID();
+        const event = createWebSessionEvent({
+          eventId: crypto.randomUUID(),
+          practiceId: sessionId ?? practiceId,
+          mode: activeMode,
+          reason,
+          elapsedSeconds: seconds,
+          previouslyCommittedSeconds: sessionCommittedSeconds,
+          endedAt: new Date(),
+        });
+        if (event) {
+          enqueueWebSessionEvent(event);
+          if (isAuthenticated) void flushWebSessionOutbox();
+        }
+
         // Compute streak locally (mirrors the SQL CASE in /api/v1/sync/stats).
         // Server is the authoritative store; this keeps the UI in sync immediately.
         const sessionDate = new Date().toISOString().slice(0, 10);
@@ -740,7 +762,9 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       activeMode,
       currentStreak,
       lastSessionDate,
+      isAuthenticated,
       onSessionComplete,
+      sessionId,
       sessionCommittedSeconds,
       sessionsCompleted,
       syncStats,
@@ -1531,6 +1555,18 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                     >
                       <LogOut size={14} />
                       {getSafePhrase('ui.sign_out')}
+                    </button>
+                    <button
+                      onClick={async () => {
+                        if (!window.confirm('Permanently delete your account and all synced practice data? This cannot be undone.')) return;
+                        const result = await authClient.deleteUser({ callbackURL: '/' });
+                        if (result.error) window.alert(result.error.message || 'Could not start account deletion.');
+                        else window.alert('Check your email to confirm permanent account deletion.');
+                      }}
+                      className="flex w-full items-center gap-2 rounded-xl px-2 py-2 text-sm text-destructive transition-colors hover:bg-destructive/10"
+                    >
+                      <X size={14} />
+                      Delete account
                     </button>
                   </div>
                 )}

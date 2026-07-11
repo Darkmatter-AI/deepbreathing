@@ -109,14 +109,7 @@ export default function SupportPage() {
             <div>
               <p className="font-semibold text-card-foreground">How do I delete my account?</p>
               <p className="mt-1">
-                Email us at{" "}
-                <a
-                  href="mailto:support@deepbreathingexercises.com"
-                  className="font-semibold text-primary hover:underline"
-                >
-                  support@deepbreathingexercises.com
-                </a>{" "}
-                with the subject line &ldquo;Delete my account&rdquo; and we will permanently remove your data within 30 days.
+                Open your account menu in the app or website and choose &ldquo;Delete account.&rdquo; We send a confirmation link before permanently removing your account and synced practice data.
               </p>
             </div>
             <div>

@@ -73,6 +73,16 @@ export function SignInSheet({
     }
   };
 
+  const handleApple = async () => {
+    trackEvent("signin_apple_clicked", {});
+    try {
+      await signIn.social({ provider: "apple", callbackURL: "/" });
+      onSuccess?.();
+    } catch {
+      // Apple OAuth redirects — errors are shown by the callback.
+    }
+  };
+
   const handleClose = () => {
     onOpenChange(false);
     setTimeout(() => {
@@ -129,6 +139,13 @@ export function SignInSheet({
             </div>
           ) : (
             <div className="space-y-3">
+              <button
+                onClick={handleApple}
+                className="flex w-full items-center justify-center gap-2.5 rounded-xl bg-black px-4 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-black/85 dark:bg-white dark:text-black dark:hover:bg-white/90"
+              >
+                <span className="text-xl leading-none" aria-hidden="true"></span>
+                Continue with Apple
+              </button>
               <button
                 onClick={handleGoogle}
                 className="flex w-full items-center justify-center gap-2.5 rounded-xl border border-border/60 bg-card px-4 py-3 text-sm font-medium text-card-foreground shadow-sm transition-colors hover:bg-card/80 dark:border-border/40"

@@ -23,6 +23,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-07-11 | [Account-based cross-device practice sync — Apple-first acquisition](#2026-07-11-account-based-cross-device-practice-sync--apple-first-acquisition) | 🔄 Implemented locally — TestFlight + production validation pending |
 | 2026-07-10 | [Keep Your Practice (`keep_practice`) — gain-framed receipt sheet, phase 1](#2026-07-10-keep-your-practice-keep_practice--gain-framed-receipt-sheet-phase-1) | 🔄 Implemented — PR [#41](https://github.com/Darkmatter-AI/deepbreathing/pull/41); first read once ≥150 prompt-shown (~2wk post-deploy) |
 | 2026-06-26 | [Non-blocking signup banner (`loss_aversion_banner`) — top-anchored notification](#2026-06-26-non-blocking-signup-banner-loss_aversion_banner--top-anchored-notification) | ❌ **Failed** (verdict 2026-07-10, early per impressions clause): intent 9.3% vs 13.8% AND retention 40% vs 50% — **superseded by `keep_practice` (PR #41), which is the revert-plus** |
 | 2026-06-21 | [/stats "Your practice" — retention surface (breath garden + stale-streak reframe)](#2026-06-21-stats-page--streak-calendar--session-stats-for-signed-in-users) | 🔄 Implemented |
@@ -48,6 +49,27 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 ---
 
 ## Active Experiments
+
+### 2026-07-11: Account-Based Cross-Device Practice Sync — Apple-First Acquisition
+
+**Hypothesis:** Accounts become worth acquiring when they visibly preserve a real practice across web and phone. Keeping breathing guest-first while presenting Apple as the fastest primary save action, Google second, should unlock account creation without depressing session starts. A gain-framed session receipt should outperform a generic signup wall because it asks only after value has been delivered.
+
+**Baseline:** The iOS build has no account surface and no server-backed per-session history, so native account acquisition and cross-device session sync are both **0**. The current web `keep_practice` experiment baseline is ~86 prompt-shown users/week, 13.8% historical modal intent, and 4–7 signups/week. Existing server sync is aggregate-only and cannot reconstruct an immutable session history.
+
+**Change:** Add Apple-first and Google-secondary auth on iOS and web; secure native Better Auth cookies in Keychain-backed SecureStore; preserve guest mode; write practice deltas to an offline outbox; migrate them after sign-in; persist an idempotent append-only `session_events` ledger; hydrate account history/stats across devices; add verified in-app deletion; use the Keep Practice receipt for guests and a persistent swipe-up success banner for registered users.
+
+**Pre-committed success criteria:**
+- Product correctness gate: 100% of the physical TestFlight matrix passes for guest practice, Apple sign-in, Google sign-in, offline completion/retry, guest migration, web-to-phone hydration, phone-to-web hydration, sign-out persistence, and account deletion initiation.
+- ✅ Success after public rollout if account creation from a completed-session prompt is at least **16%**, weekly signups do not fall below the trailing four-week web baseline, and session-start rate does not fall by more than 5% relative.
+- ❌ Failed if account creation is at or below 13.8%, or if the account surface reduces session-start rate by more than 10% for two consecutive weeks.
+- 🟡 Mixed if acquisition improves but day-7 return or completed sessions per user decline by more than 10%.
+- ⚪ Inconclusive below 150 prompt impressions per platform.
+
+**Measure-after:** First product read after each platform reaches 150 prompt impressions; retention read seven days later. Do not expose monetization gates in this experiment.
+
+**Status:** 🔄 Implemented locally. Production migration, provider credentials, and physical TestFlight validation remain release gates.
+
+---
 
 ### 2026-07-10: Keep Your Practice (`keep_practice`) — gain-framed receipt sheet, phase 1
 

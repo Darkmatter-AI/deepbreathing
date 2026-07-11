@@ -1,95 +1,146 @@
-// Calm, native completion summary shown after a session ends.
-// Theme-aware, auto-dismisses after 6s, tap anywhere to dismiss instantly.
-// No spring, no confetti — fades in gently. Plain RN primitives only.
+import { useCallback, useEffect, useMemo, useRef } from 'react';
+import {
+  Animated,
+  PanResponder,
+  Pressable,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 
-import { useCallback, useEffect, useRef } from 'react';
-import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
+import AuthActions from '../auth/AuthActions';
 
 export interface CompletionSummaryData {
-  /** Seconds completed this session. */
   sessionSeconds: number;
-  /** Total minutes ever (from resonance_stats mirror). null if not yet received. */
   totalMinutes: number | null;
-  /** Sessions completed total (from resonance_stats mirror). null if not yet received. */
   sessionsCompleted: number | null;
 }
 
 interface Props {
   data: CompletionSummaryData;
   theme: 'light' | 'dark';
+  isAuthenticated: boolean;
+  safeAreaTop: number;
   onDismiss: () => void;
 }
 
-const AUTO_DISMISS_MS = 6000;
-const FADE_IN_MS = 500;
-
-export default function CompletionSummary({ data, theme, onDismiss }: Props) {
+export default function CompletionSummary({
+  data,
+  theme,
+  isAuthenticated,
+  safeAreaTop,
+  onDismiss,
+}: Props) {
   const opacity = useRef(new Animated.Value(0)).current;
+  const translateY = useRef(new Animated.Value(isAuthenticated ? -18 : 16)).current;
+  const dark = theme === 'dark';
+  const bg = dark ? '#2b1b15' : '#fff7ef';
+  const text = dark ? '#f5dfcc' : '#452b1d';
+  const subtle = dark ? '#bf9b82' : '#8e6b53';
+  const border = dark ? '#654638' : '#e5cbb7';
 
   const dismiss = useCallback(() => {
-    Animated.timing(opacity, {
-      toValue: 0,
-      duration: 250,
-      useNativeDriver: true,
-    }).start(() => onDismiss());
-  }, [opacity, onDismiss]);
+    Animated.parallel([
+      Animated.timing(opacity, { toValue: 0, duration: 180, useNativeDriver: true }),
+      Animated.timing(translateY, { toValue: -30, duration: 180, useNativeDriver: true }),
+    ]).start(onDismiss);
+  }, [onDismiss, opacity, translateY]);
 
   useEffect(() => {
-    // Fade in.
-    Animated.timing(opacity, {
-      toValue: 1,
-      duration: FADE_IN_MS,
-      useNativeDriver: true,
-    }).start();
+    Animated.parallel([
+      Animated.timing(opacity, { toValue: 1, duration: 260, useNativeDriver: true }),
+      Animated.spring(translateY, {
+        toValue: 0,
+        damping: 18,
+        stiffness: 180,
+        mass: 0.8,
+        useNativeDriver: true,
+      }),
+    ]).start();
+  }, [opacity, translateY]);
 
-    // Auto-dismiss.
-    const timer = setTimeout(dismiss, AUTO_DISMISS_MS);
-    return () => clearTimeout(timer);
-  }, [opacity, dismiss]);
+  const panResponder = useMemo(
+    () =>
+      PanResponder.create({
+        onMoveShouldSetPanResponder: (_, gesture) =>
+          isAuthenticated && gesture.dy < -8,
+        onPanResponderMove: (_, gesture) => {
+          if (gesture.dy < 0) translateY.setValue(gesture.dy);
+        },
+        onPanResponderRelease: (_, gesture) => {
+          if (gesture.dy < -32 || gesture.vy < -0.5) dismiss();
+          else Animated.spring(translateY, { toValue: 0, useNativeDriver: true }).start();
+        },
+      }),
+    [dismiss, isAuthenticated, translateY],
+  );
 
-  const isLight = theme === 'light';
-  const bg = isLight ? '#fdf8f2' : '#221711';
-  const text = isLight ? '#5c3d1e' : '#e8d5b7';
-  const subtle = isLight ? '#a07850' : '#8a6a44';
-  const border = isLight ? '#e8d5b7' : '#3a2a1a';
+  const minutes = Math.floor(data.sessionSeconds / 60);
+  const sessionLabel = minutes < 1 ? `${data.sessionSeconds}s` : `${minutes} min`;
 
-  // Sub-minute sessions show seconds (30s is an offered duration); longer
-  // ones show whole minutes, floored to match how the stats accrue.
-  const sessionMinutes = Math.floor(data.sessionSeconds / 60);
-  const sessionLabel = sessionMinutes < 1
-    ? `${data.sessionSeconds}s`
-    : sessionMinutes === 1 ? '1 min' : `${sessionMinutes} mins`;
+  if (isAuthenticated) {
+    return (
+      <Animated.View
+        {...panResponder.panHandlers}
+        style={[
+          styles.banner,
+          {
+            top: safeAreaTop + 8,
+            backgroundColor: bg,
+            borderColor: border,
+            opacity,
+            transform: [{ translateY }],
+          },
+        ]}
+      >
+        <View style={styles.bannerIcon}><Text style={styles.bannerCheck}>✓</Text></View>
+        <View style={styles.bannerCopy}>
+          <Text style={[styles.bannerTitle, { color: text }]}>Practice saved</Text>
+          <Text style={[styles.bannerSubtitle, { color: subtle }]}>{sessionLabel} synced to your account</Text>
+        </View>
+        <Pressable onPress={dismiss} accessibilityLabel="Dismiss practice saved banner">
+          <Text style={[styles.dismissX, { color: subtle }]}>×</Text>
+        </Pressable>
+      </Animated.View>
+    );
+  }
 
   return (
     <Animated.View style={[styles.overlay, { opacity }]}>
-      {/* The Pressable wraps the card (ancestor, not sibling) so taps ON the
-          card bubble up and dismiss too — "tap anywhere" includes the card. */}
-      <Pressable
-        style={styles.fill}
-        onPress={dismiss}
-        accessibilityRole="button"
-        accessibilityLabel="Dismiss session summary"
-      >
-        <View style={[styles.card, { backgroundColor: bg, borderColor: border }]}>
-          <Text style={[styles.checkmark, { color: subtle }]}>✓</Text>
-          <Text style={[styles.heading, { color: text }]}>Session complete</Text>
-          <Text style={[styles.session, { color: text }]}>{sessionLabel} this session</Text>
-          {(data.totalMinutes != null || data.sessionsCompleted != null) && (
-            <View style={[styles.divider, { borderColor: border }]} />
-          )}
+      <View style={[styles.receipt, { backgroundColor: bg, borderColor: border, transform: [{ translateY }] }]}>
+        <Pressable style={styles.receiptClose} onPress={dismiss} accessibilityLabel="Dismiss keep practice prompt">
+          <Text style={[styles.dismissX, { color: subtle }]}>×</Text>
+        </Pressable>
+        <Text style={[styles.eyebrow, { color: subtle }]}>SESSION COMPLETE</Text>
+        <View style={[styles.activityRing, { borderColor: '#e36c4c' }]}>
+          <View style={[styles.activityRingInner, { borderColor: '#e36c4c55' }]}>
+            <Text style={[styles.ringValue, { color: text }]}>{sessionLabel}</Text>
+            <Text style={[styles.ringLabel, { color: subtle }]}>just now</Text>
+          </View>
+        </View>
+        <Text style={[styles.receiptTitle, { color: text }]}>Keep your practice</Text>
+        <Text style={[styles.receiptBody, { color: subtle }]}>
+          Saved on this phone for now. A free account carries every session, streak, and setting to the web and your next device.
+        </Text>
+        <View style={styles.statsRow}>
           {data.totalMinutes != null && (
-            <Text style={[styles.stat, { color: subtle }]}>
-              {data.totalMinutes} total {data.totalMinutes === 1 ? 'min' : 'mins'}
-            </Text>
+            <View style={styles.statCell}>
+              <Text style={[styles.statValue, { color: text }]}>{data.totalMinutes}</Text>
+              <Text style={[styles.statLabel, { color: subtle }]}>total min</Text>
+            </View>
           )}
           {data.sessionsCompleted != null && (
-            <Text style={[styles.stat, { color: subtle }]}>
-              {data.sessionsCompleted} {data.sessionsCompleted === 1 ? 'session' : 'sessions'} completed
-            </Text>
+            <View style={styles.statCell}>
+              <Text style={[styles.statValue, { color: text }]}>{data.sessionsCompleted}</Text>
+              <Text style={[styles.statLabel, { color: subtle }]}>sessions</Text>
+            </View>
           )}
-          <Text style={[styles.dismiss, { color: subtle }]}>Tap to continue</Text>
         </View>
-      </Pressable>
+        <AuthActions theme={theme} />
+        <Pressable onPress={dismiss} style={styles.notNow}>
+          <Text style={[styles.notNowText, { color: subtle }]}>Not now</Text>
+        </Pressable>
+      </View>
     </Animated.View>
   );
 }
@@ -97,54 +148,58 @@ export default function CompletionSummary({ data, theme, onDismiss }: Props) {
 const styles = StyleSheet.create({
   overlay: {
     ...StyleSheet.absoluteFill,
-    justifyContent: 'center',
-    alignItems: 'center',
-    zIndex: 100,
+    zIndex: 110,
+    backgroundColor: 'rgba(20,10,5,0.48)',
+    justifyContent: 'flex-end',
+    paddingHorizontal: 12,
+    paddingBottom: 12,
   },
-  fill: {
-    ...StyleSheet.absoluteFill,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  card: {
-    width: 240,
-    paddingVertical: 28,
-    paddingHorizontal: 24,
-    borderRadius: 16,
+  receipt: {
+    borderRadius: 30,
     borderWidth: StyleSheet.hairlineWidth,
+    paddingHorizontal: 24,
+    paddingTop: 27,
+    paddingBottom: 18,
     alignItems: 'center',
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.08,
-    shadowRadius: 12,
-    elevation: 4,
+    shadowOffset: { width: 0, height: 16 },
+    shadowOpacity: 0.24,
+    shadowRadius: 30,
   },
-  checkmark: {
-    fontSize: 28,
-    marginBottom: 8,
+  receiptClose: { position: 'absolute', top: 12, right: 16, zIndex: 2 },
+  dismissX: { fontSize: 29, lineHeight: 32, paddingHorizontal: 5 },
+  eyebrow: { fontSize: 10, letterSpacing: 2.4, fontWeight: '800', marginBottom: 14 },
+  activityRing: { width: 126, height: 126, borderRadius: 63, borderWidth: 9, padding: 7 },
+  activityRingInner: { flex: 1, borderRadius: 52, borderWidth: 1, alignItems: 'center', justifyContent: 'center' },
+  ringValue: { fontSize: 27, fontWeight: '800' },
+  ringLabel: { fontSize: 11, marginTop: 1 },
+  receiptTitle: { fontSize: 29, fontWeight: '800', marginTop: 17, letterSpacing: -0.5 },
+  receiptBody: { fontSize: 14, lineHeight: 20, textAlign: 'center', marginTop: 8, marginBottom: 14 },
+  statsRow: { flexDirection: 'row', gap: 30, marginBottom: 16 },
+  statCell: { alignItems: 'center' },
+  statValue: { fontSize: 18, fontWeight: '700' },
+  statLabel: { fontSize: 10, textTransform: 'uppercase', letterSpacing: 1 },
+  notNow: { paddingTop: 13, paddingHorizontal: 22 },
+  notNowText: { fontSize: 13, fontWeight: '600' },
+  banner: {
+    position: 'absolute',
+    left: 12,
+    right: 12,
+    zIndex: 120,
+    minHeight: 72,
+    borderRadius: 20,
+    borderWidth: StyleSheet.hairlineWidth,
+    paddingHorizontal: 14,
+    flexDirection: 'row',
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 8 },
+    shadowOpacity: 0.16,
+    shadowRadius: 18,
   },
-  heading: {
-    fontSize: 17,
-    fontWeight: '500',
-    marginBottom: 4,
-    letterSpacing: 0.1,
-  },
-  session: {
-    fontSize: 15,
-    marginBottom: 2,
-  },
-  divider: {
-    width: '60%',
-    borderTopWidth: StyleSheet.hairlineWidth,
-    marginVertical: 12,
-  },
-  stat: {
-    fontSize: 13,
-    marginBottom: 3,
-  },
-  dismiss: {
-    fontSize: 12,
-    marginTop: 16,
-    opacity: 0.7,
-  },
+  bannerIcon: { width: 38, height: 38, borderRadius: 19, backgroundColor: '#dd684a', alignItems: 'center', justifyContent: 'center' },
+  bannerCheck: { color: '#fff', fontSize: 21, fontWeight: '800' },
+  bannerCopy: { flex: 1, marginLeft: 11 },
+  bannerTitle: { fontSize: 16, fontWeight: '700' },
+  bannerSubtitle: { fontSize: 12, marginTop: 2 },
 });

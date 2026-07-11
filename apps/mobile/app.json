@@ -16,6 +16,7 @@
     "backgroundColor": "#fdf8f2",
     "ios": {
       "bundleIdentifier": "com.deepbreathing.app",
+      "usesAppleSignIn": true,
       "supportsTablet": false,
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
@@ -96,6 +97,7 @@
         }
       ],
       "expo-localization",
+      "expo-apple-authentication",
       "expo-asset",
       "expo-font",
       "expo-image"

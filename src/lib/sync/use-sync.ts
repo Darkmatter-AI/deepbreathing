@@ -1,6 +1,7 @@
 "use client";
 
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { flushWebSessionOutbox } from "@/lib/sync/web-session-events";
 
 const STORAGE_KEYS = {
   SETTINGS: "resonance_settings",
@@ -18,6 +19,9 @@ export function useSync(isAuthenticated: boolean) {
     const stats = localStorage.getItem(STORAGE_KEYS.STATS);
 
     try {
+      // Insert canonical guest ledger rows first. The merge route can then
+      // derive only the untracked legacy remainder as the aggregate baseline.
+      await flushWebSessionOutbox();
       await fetch("/api/v1/sync/merge", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -29,6 +33,14 @@ export function useSync(isAuthenticated: boolean) {
     } catch {
       // Silent fail — data stays in localStorage
     }
+  }, [isAuthenticated]);
+
+  useEffect(() => {
+    if (!isAuthenticated) return;
+    const flush = () => void flushWebSessionOutbox();
+    flush();
+    window.addEventListener("online", flush);
+    return () => window.removeEventListener("online", flush);
   }, [isAuthenticated]);
 
   const hydrateFromServer = useCallback(async () => {

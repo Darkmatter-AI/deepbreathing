@@ -2,7 +2,8 @@ import type { SessionEvent, UserSettings } from "./sessions";
 
 export interface SyncBootstrap {
   settings: UserSettings | null;
-  pendingSessionEvents: SessionEvent[];
+  sessionEvents: SessionEvent[];
+  nextCursor: string | null;
   serverTime: string;
 }
 
@@ -22,5 +23,7 @@ export interface SyncSettingsPayload {
 
 export interface SyncResult {
   accepted: boolean;
+  acceptedCount?: number;
+  duplicateCount?: number;
   serverTime: string;
 }
