@@ -324,6 +324,13 @@ export default function HomeScreen() {
     setSummaryData(null);
   }, []);
 
+  const handleOpenAccount = useCallback(() => {
+    // Opening account controls is a deliberate next action. Registered users'
+    // saved-practice banner should not reappear after the sheet closes.
+    if (authSession?.user.id) setSummaryData(null);
+    setAccountOpen(true);
+  }, [authSession?.user.id]);
+
   // MOB-5: Handle mode selection from the sheet.
   // Sets selectedMode → passed as initialMode prop → webview switches mode.
   // Also fires mode_switch to GA4 (matching the webview's own event params).
@@ -377,7 +384,7 @@ export default function HomeScreen() {
         )}
         {!isSessionRunning && (
           <Pressable
-            onPress={() => setAccountOpen(true)}
+            onPress={handleOpenAccount}
             accessibilityRole="button"
             accessibilityLabel={authSession?.user ? 'Open account' : 'Sign in to sync'}
             style={[

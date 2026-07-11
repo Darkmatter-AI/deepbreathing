@@ -36,3 +36,15 @@ test("completion UI branches between guest receipt and registered banner", () =>
   assert.match(source, /PanResponder/);
   assert.doesNotMatch(source, /AUTO_DISMISS_MS/);
 });
+
+test("registered completion banner clears when account controls become the next action", () => {
+  const source = fs.readFileSync(
+    path.join(ROOT, "apps/mobile/src/app/index.tsx"),
+    "utf8"
+  );
+  assert.match(
+    source,
+    /const handleOpenAccount = useCallback\(\(\) => \{[\s\S]*?authSession\?\.user\.id[\s\S]*?setSummaryData\(null\)[\s\S]*?setAccountOpen\(true\)/
+  );
+  assert.match(source, /onPress=\{handleOpenAccount\}/);
+});
