@@ -33,7 +33,7 @@ export const BREATHING_PATTERNS: Record<ModeName, BreathingPattern> = {
   },
   [ModeName.Sigh]: {
     name: ModeName.Sigh,
-    description: "Panic Reset (Double Inhale)",
+    description: "Stress Reset (Double Inhale)",
     inhale: 2.5,
     inhale2: 1.5,
     holdIn: 0,
@@ -52,7 +52,7 @@ export const BREATHING_PATTERNS: Record<ModeName, BreathingPattern> = {
   },
   [ModeName.PursedLip]: {
     name: ModeName.PursedLip,
-    description: "Respiratory Health (2-4 exhale ratio)",
+    description: "Gentle Longer Exhale (2-4 ratio)",
     inhale: 2,
     holdIn: 0,
     exhale: 4,

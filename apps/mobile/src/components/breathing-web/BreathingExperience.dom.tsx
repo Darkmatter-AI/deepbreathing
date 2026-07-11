@@ -13,8 +13,12 @@ interface BreathingExperienceDomProps {
   initialDuration?: number | null;
   appState?: 'active' | 'background';
   isNativeApp?: boolean;
+  safeAreaInsets?: { top: number; right: number; bottom: number; left: number };
   initialPersistedSnapshot?: ResonancePersistedSnapshot;
-  onSessionComplete?: (seconds: number) => Promise<void>;
+  onSessionComplete?: (
+    seconds: number,
+    stats: { totalMinutes: number; sessionsCompleted: number },
+  ) => Promise<void>;
   onEvent?: (name: string, params?: Record<string, any>) => Promise<void>;
 }
 
@@ -24,6 +28,7 @@ export default function BreathingExperienceDom({
   initialMode,
   initialDuration,
   appState,
+  safeAreaInsets,
   initialPersistedSnapshot,
   onSessionComplete,
   onEvent,
@@ -37,6 +42,7 @@ export default function BreathingExperienceDom({
         initialDuration={initialDuration}
         appState={appState}
         isNativeApp
+        safeAreaInsets={safeAreaInsets}
         initialPersistedSnapshot={initialPersistedSnapshot}
         onSessionComplete={onSessionComplete}
         onEvent={onEvent}

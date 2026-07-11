@@ -6,9 +6,9 @@
 // The earlier native StyleSheet/Reanimated re-implementation (src/breathing/*,
 // components/breathing/*) is retired by this — kept in-repo for reference only.
 
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { AppState, type AppStateStatus, StyleSheet, View, useColorScheme } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Stack } from 'expo-router';
 import * as Localization from 'expo-localization';
 import { setAudioModeAsync } from 'expo-audio';
@@ -23,6 +23,10 @@ import {
   RESONANCE_STORAGE_KEYS,
 } from '../breathing/resonance-mirror';
 import { GA4_FORWARDED_EVENTS, fireGA4Event, warmClientId } from '../breathing/ga4-mp';
+import {
+  useBackgroundAudio,
+  type NativeAudioState,
+} from '../breathing/use-background-audio';
 import CompletionSummary, { type CompletionSummaryData } from '../components/CompletionSummary';
 import ModeLibrarySheet from '../components/ModeLibrarySheet';
 import { ModeName } from '../components/breathing-web/constants';
@@ -30,30 +34,14 @@ import { ModeName } from '../components/breathing-web/constants';
 // Scopes the screen-awake lock to an active session so it releases on pause/stop.
 const KEEP_AWAKE_TAG = 'breathing-session';
 
-// Native haptics bridge — the DOM component's navigator.vibrate is a no-op in the
-// iOS WKWebView, so it emits onEvent('haptic', {phase}) and we map each breath
-// phase to a single, calm expo-haptics tap: a light cue to begin the inhale, a
-// gentle marker at the hold, and a slightly firmer "grounding" tap on the exhale.
-// (The earlier mapping used Heavy on the exhale + a setTimeout double-buzz on the
-// holds — both read as alerts, too jarring for a calming app.)
+// Native haptics bridge. The DOM experience emits this event in the same function
+// call that starts each audio cue, and the native host turns it into the shortest,
+// lightest system haptic. A phase change should feel like a quiet metronome tick,
+// not a notification or alert.
 // NOTE: the simulator produces no haptics, so the *feel* is unverified — confirm
 // the intensities on a real device (see docs/expo-attempt-2-progress.md).
-const fireHaptic = (phase: unknown) => {
-  switch (phase) {
-    case 'Inhale':
-    case 'Inhale (Top up)':
-      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
-      break;
-    case 'Hold In':
-    case 'Hold Out':
-      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
-      break;
-    case 'Exhale':
-      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
-      break;
-    default:
-      break;
-  }
+const firePhaseHaptic = () => {
+  Haptics.selectionAsync().catch(() => {});
 };
 
 const toBreathingAppState = (status: AppStateStatus): 'active' | 'background' =>
@@ -63,20 +51,20 @@ export default function HomeScreen() {
   const colorScheme = useColorScheme();
   const theme: 'light' | 'dark' = colorScheme === 'light' ? 'light' : 'dark';
   const locale = Localization.getLocales()[0]?.languageCode ?? 'en';
+  const safeAreaInsets = useSafeAreaInsets();
 
   const [appState, setAppState] = useState<'active' | 'background'>(
     toBreathingAppState(AppState.currentState),
   );
+  const [nativeAudioState, setNativeAudioState] = useState<NativeAudioState>({
+    active: false,
+    muted: false,
+    elapsedSeconds: 0,
+    duration: null,
+    reportedAtMs: Date.now(),
+  });
   const [snapshotReady, setSnapshotReady] = useState(false);
   const [persistedSnapshot, setPersistedSnapshot] = useState<ResonancePersistedSnapshot>({});
-
-  // Track the latest resonance_stats from persist events so completion summary
-  // can show totals without re-reading AsyncStorage (avoids a race with the
-  // mirror write that happens in the same handleEvent cycle).
-  const latestStatsRef = useRef<{ totalMinutes: number | null; sessionsCompleted: number | null }>({
-    totalMinutes: null,
-    sessionsCompleted: null,
-  });
 
   // Completion summary visibility.
   const [summaryData, setSummaryData] = useState<CompletionSummaryData | null>(null);
@@ -96,6 +84,8 @@ export default function HomeScreen() {
   // Latest active mode name from the persist stream (resonance_settings.mode).
   // Used to show a checkmark on the current mode in the sheet.
   const [activeModeName, setActiveModeName] = useState<string | null>(null);
+
+  useBackgroundAudio({ appState, audioState: nativeAudioState });
 
   // Warm the GA4 client_id cache early so the first event doesn't pay the
   // AsyncStorage round-trip latency.
@@ -132,7 +122,7 @@ export default function HomeScreen() {
           playsInSilentMode: true,
           interruptionMode: 'mixWithOthers',
           allowsRecording: false,
-          shouldPlayInBackground: false,
+          shouldPlayInBackground: true,
           shouldRouteThroughEarpiece: false,
         });
       } catch {
@@ -159,7 +149,10 @@ export default function HomeScreen() {
   // Stable handler identities so the DOM component's effects don't re-fire (and
   // double-tap haptics) on unrelated host re-renders. The DOM bridge requires
   // async callbacks.
-  const handleSessionComplete = useCallback(async (seconds: number) => {
+  const handleSessionComplete = useCallback(async (
+    seconds: number,
+    stats: { totalMinutes: number; sessionsCompleted: number },
+  ) => {
     // Success haptic — signals a positive completion.
     // NOTE: haptics cannot be felt on the simulator; this is code-path verified
     // only (__DEV__ log below). Confirm the feel on a real device (DAR-395).
@@ -170,14 +163,14 @@ export default function HomeScreen() {
 
     setSummaryData({
       sessionSeconds: seconds,
-      totalMinutes: latestStatsRef.current.totalMinutes,
-      sessionsCompleted: latestStatsRef.current.sessionsCompleted,
+      totalMinutes: stats.totalMinutes,
+      sessionsCompleted: stats.sessionsCompleted,
     });
   }, []);
 
   const handleEvent = useCallback(async (name: string, params?: Record<string, any>) => {
-    if (name === 'haptic') {
-      fireHaptic(params?.phase);
+    if (name === 'phase_haptic') {
+      firePhaseHaptic();
       return;
     }
     if (name === 'keep_awake') {
@@ -193,21 +186,20 @@ export default function HomeScreen() {
       }
       return;
     }
+    if (name === 'audio_state') {
+      setNativeAudioState({
+        active: params?.active === true,
+        muted: params?.muted === true,
+        elapsedSeconds:
+          typeof params?.elapsedSeconds === 'number' ? Math.max(0, params.elapsedSeconds) : 0,
+        duration:
+          typeof params?.duration === 'number' && params.duration > 0 ? params.duration : null,
+        reportedAtMs: Date.now(),
+      });
+      return;
+    }
     if (name === 'persist' && typeof params?.key === 'string') {
       const value = typeof params.value === 'string' ? params.value : null;
-      // Keep a live copy of resonance_stats so the completion handler can show
-      // totals without racing the async mirror write.
-      if (params.key === RESONANCE_STORAGE_KEYS.STATS && value != null) {
-        try {
-          const parsed = JSON.parse(value) as Record<string, unknown>;
-          latestStatsRef.current = {
-            totalMinutes: typeof parsed.totalMinutes === 'number' ? parsed.totalMinutes : null,
-            sessionsCompleted: typeof parsed.sessionsCompleted === 'number' ? parsed.sessionsCompleted : null,
-          };
-        } catch {
-          // Malformed JSON — keep the previous ref value.
-        }
-      }
       // MOB-5: Track the active mode from resonance_settings so the sheet can
       // show a checkmark on the currently active mode.
       if (params.key === RESONANCE_STORAGE_KEYS.SETTINGS && value != null) {
@@ -258,11 +250,18 @@ export default function HomeScreen() {
       <SafeAreaView style={styles.safeArea} edges={[]}>
         {snapshotReady ? (
           <BreathingExperienceDom
-            dom={{ style: { flex: 1 } }}
+            dom={{
+              style: { flex: 1 },
+              contentInsetAdjustmentBehavior: 'never',
+              automaticallyAdjustContentInsets: false,
+              automaticallyAdjustsScrollIndicatorInsets: false,
+              contentInset: { top: 0, right: 0, bottom: 0, left: 0 },
+            }}
             locale={locale}
             forcedTheme={theme}
             appState={appState}
             isNativeApp
+            safeAreaInsets={safeAreaInsets}
             initialPersistedSnapshot={persistedSnapshot}
             // MOB-5: Only pass initialMode when the user explicitly selected one
             // from the sheet. On launch this is undefined so the webview loads

@@ -9,6 +9,12 @@ import SnowBackground from './components/SnowBackground';
 import { createRuntimePhraseResolver, RuntimePhraseKey } from './runtime-phrases';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetClose } from './ui/sheet';
 import { seedLocalStorageFromSnapshot, shouldMirrorPersist } from '../../breathing/persist-seed';
+import {
+  commitPracticeStats,
+  hydrateTotalSeconds,
+  type SessionEndReason,
+} from '../../breathing/practice-stats';
+import { getPhaseAudioCue } from '../../breathing/phase-feedback';
 
 const STORAGE_KEYS = {
   STATS: 'resonance_stats',
@@ -27,11 +33,15 @@ interface BreathingExperienceProps {
   snowMode?: boolean;
   backgroundVariant?: 'default' | 'winter-blue';
   appState?: 'active' | 'background';
-  onSessionComplete?: (seconds: number) => void;
+  onSessionComplete?: (
+    seconds: number,
+    stats: { totalMinutes: number; sessionsCompleted: number },
+  ) => void;
   onEvent?: (name: string, params?: Record<string, any>) => void;
   className?: string;
   noMobileBottomPad?: boolean;
   isNativeApp?: boolean;
+  safeAreaInsets?: { top: number; right: number; bottom: number; left: number };
   /** Native AsyncStorage mirror — seeds localStorage when empty (app only). */
   initialPersistedSnapshot?: Partial<Record<string, string | null>>;
 }
@@ -65,6 +75,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   onEvent,
   noMobileBottomPad = false,
   isNativeApp = false,
+  safeAreaInsets = { top: 0, right: 0, bottom: 0, left: 0 },
   initialPersistedSnapshot,
 }) => {
   // `defaultMode` and `initialMode` are aliases — the dom wrapper passes
@@ -80,6 +91,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   const [speedMultiplier, setSpeedMultiplier] = useState(DEFAULT_SPEED_MULTIPLIER);
   const [themeColor, setThemeColor] = useState(BREATHING_PATTERNS[resolvedInitialMode].color);
   const [totalMinutes, setTotalMinutes] = useState(0);
+  const [totalSeconds, setTotalSeconds] = useState(0);
   const [sessionsCompleted, setSessionsCompleted] = useState(0);
   // Identity of the in-progress session. Set on first start, kept across
   // pause/resume, cleared on hard-end (complete/mode-switch). committed
@@ -127,7 +139,9 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     const savedStats = localStorage.getItem(STORAGE_KEYS.STATS);
     if (savedStats) {
       const parsed = JSON.parse(savedStats);
-      setTotalMinutes(parsed.totalMinutes || 0);
+      const hydratedSeconds = hydrateTotalSeconds(parsed.totalMinutes || 0, parsed.totalSeconds);
+      setTotalSeconds(hydratedSeconds);
+      setTotalMinutes(Math.floor(hydratedSeconds / 60));
       setSessionsCompleted(parsed.sessionsCompleted || 0);
     }
 
@@ -206,8 +220,44 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     return audioServiceRef.current;
   }, []);
 
+  const startSoundscape = useCallback(async (mode: ModeName, color: string) => {
+    const audio = getAudioService();
+    if (mode === ModeName.WimHof) {
+      await audio.startDrone(color);
+      await audio.startBinaural(15);
+      return;
+    }
+    if (mode === ModeName.Relax || mode === ModeName.Coherent) {
+      await audio.startPinkNoise();
+      await audio.startBinaural(mode === ModeName.Relax ? 2 : 10);
+      return;
+    }
+    await audio.startDrone(color);
+    await audio.startBinaural(10);
+  }, [getAudioService]);
+
+  const playPhaseCue = useCallback((nextPhase: BreathingPhase) => {
+    const cue = getPhaseAudioCue(nextPhase);
+    if (!cue) return;
+
+    // Keep the audio cue and native haptic dispatch in the same JS turn. The
+    // native host uses a single selection tick, while supported web browsers get
+    // a minimal 10 ms vibration. Do not fire feedback while backgrounded.
+    getAudioService().playCue(cue, themeColor);
+    if (appState !== 'active') return;
+    onEvent?.('phase_haptic', { phase: nextPhase });
+    if (!isNativeApp && typeof navigator !== 'undefined' && typeof navigator.vibrate === 'function') {
+      navigator.vibrate(10);
+    }
+  }, [appState, getAudioService, isNativeApp, onEvent, themeColor]);
+
   const requestRef = useRef<number | null>(null);
   const phaseStartRef = useRef<number>(0);
+  const sessionClockStartRef = useRef<number>(0);
+  const sessionSecondsRef = useRef(0);
+  const lastExternalModeRef = useRef<ModeName | undefined>(effectiveDefaultMode);
+  const previousAppStateRef = useRef(appState);
+  sessionSecondsRef.current = sessionSeconds;
 
   const applyThemePreference = useCallback((mode: 'dark' | 'light') => {
     if (typeof document === 'undefined') return;
@@ -266,6 +316,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   useEffect(() => {
     if (typeof document === 'undefined') return;
     if (typeof window === 'undefined') return;
+    if (isNativeApp) return;
 
     const audio = getAudioService();
 
@@ -293,22 +344,43 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
       document.removeEventListener('visibilitychange', handleVisibility);
       window.removeEventListener('pagehide', handlePageHide);
     };
-  }, [getAudioService, isRunning, setInstructionKey]);
+  }, [getAudioService, isNativeApp, isRunning, setInstructionKey]);
 
-  // React Native app lifecycle bridge: pause + suspend audio when the host
-  // app backgrounds, resume audio when it returns to the foreground.
+  // The native app keeps the logical session running while the screen is
+  // locked. WebKit suspends Web Audio in the background, so the host takes over
+  // with a native ambient loop until foregrounding, when we rebuild the web
+  // soundscape at the wall-clock-correct phase. Browser tabs still pause.
   useEffect(() => {
+    if (previousAppStateRef.current === appState) return;
+    previousAppStateRef.current = appState;
+
     if (appState === 'background') {
       const audio = getAudioService();
       if (isRunning) {
-        setIsRunning(false);
-        setInstructionKey('session.paused');
+        if (!isNativeApp) {
+          setIsRunning(false);
+          setInstructionKey('session.paused');
+        }
         void audio.fadeOutAndSuspend({ fadeSeconds: 0.25 });
       }
     } else if (appState === 'active') {
-      void getAudioService().resume();
+      const audio = getAudioService();
+      void audio.resume().then((ready) => {
+        if (ready && isNativeApp && isRunning) {
+          void startSoundscape(activeMode, themeColor);
+        }
+      });
     }
-  }, [appState, getAudioService, isRunning, setInstructionKey]);
+  }, [
+    activeMode,
+    appState,
+    getAudioService,
+    isNativeApp,
+    isRunning,
+    setInstructionKey,
+    startSoundscape,
+    themeColor,
+  ]);
 
   // Proactively unlock mobile audio on the first user interaction
   useEffect(() => {
@@ -379,39 +451,12 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     if (!mounted) return;
     const value = JSON.stringify({
       totalMinutes,
+      totalSeconds,
       sessionsCompleted
     });
     localStorage.setItem(STORAGE_KEYS.STATS, value);
     mirrorPersist(STORAGE_KEYS.STATS, value);
-  }, [totalMinutes, sessionsCompleted, mounted, mirrorPersist]);
-
-  // --- Haptics Effect ---
-  useEffect(() => {
-    if (!isRunning) return;
-
-    // Native haptics bridge: navigator.vibrate is a no-op inside an iOS WKWebView,
-    // so emit the phase to the native host, which fires expo-haptics. On Expo web /
-    // Android web (where vibrate exists) the web path below still runs.
-    onEvent?.('haptic', { phase });
-
-    if (typeof navigator === 'undefined' || typeof navigator.vibrate !== 'function') return;
-
-    // Trigger haptics on phase change
-    switch (phase) {
-      case BreathingPhase.Inhale:
-      case BreathingPhase.Inhale2:
-        navigator.vibrate(100); // Short buzz to start
-        break;
-      case BreathingPhase.HoldIn:
-      case BreathingPhase.HoldOut:
-        // Heartbeat pattern
-        navigator.vibrate([50, 100, 50]);
-        break;
-      case BreathingPhase.Exhale:
-        navigator.vibrate(200); // Long grounding buzz
-        break;
-    }
-  }, [phase, isRunning, onEvent]);
+  }, [totalMinutes, totalSeconds, sessionsCompleted, mounted, mirrorPersist]);
 
   // --- Keep-awake bridge ---
   // Tell the native host whether a session is actively running so it can keep the
@@ -422,6 +467,20 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   useEffect(() => {
     onEvent?.('keep_awake', { active: isRunning });
   }, [isRunning, onEvent]);
+
+  // Native background-audio handoff. sessionSeconds is intentionally read from
+  // a ref so this only crosses the DOM bridge when playback state/config changes,
+  // not once per second.
+  useEffect(() => {
+    if (!isNativeApp) return;
+    onEvent?.('audio_state', {
+      active: isRunning,
+      muted,
+      mode: activeMode,
+      elapsedSeconds: sessionSecondsRef.current,
+      duration: selectedDuration,
+    });
+  }, [activeMode, isNativeApp, isRunning, muted, onEvent, selectedDuration]);
 
   // Theme: in-app toggle wins, else the native/device theme prop.
   const activeTheme = themeOverride ?? forcedTheme;
@@ -444,23 +503,29 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   // credits the new delta (no double-count).
   const endSession = useCallback(
     (
-      reason: 'paused' | 'completed' | 'mode_switched',
+      reason: SessionEndReason,
       seconds: number,
       hard: boolean
     ) => {
       const delta = seconds - sessionCommittedSeconds;
-      let newMinutes = totalMinutes;
-      let newSessions = sessionsCompleted;
       if (delta > 0) {
-        newMinutes = totalMinutes + Math.floor(delta / 60);
-        // Count the session exactly once — on the first commit. Subsequent
-        // pause→resume→pause cycles update minutes but not the session count.
-        if (sessionCommittedSeconds === 0) newSessions = sessionsCompleted + 1;
-        setTotalMinutes(newMinutes);
-        if (newSessions !== sessionsCompleted) setSessionsCompleted(newSessions);
+        const nextStats = commitPracticeStats(
+          { totalSeconds, sessionsCompleted },
+          {
+            sessionSeconds: seconds,
+            sessionCommittedSeconds,
+            reason,
+          },
+        );
+        setTotalSeconds(nextStats.totalSeconds);
+        setTotalMinutes(nextStats.totalMinutes);
+        setSessionsCompleted(nextStats.sessionsCompleted);
         setSessionCommittedSeconds(seconds);
-        if (reason === 'completed' || reason === 'mode_switched') {
-          onSessionComplete?.(seconds);
+        if (reason === 'completed') {
+          onSessionComplete?.(seconds, {
+            totalMinutes: nextStats.totalMinutes,
+            sessionsCompleted: nextStats.sessionsCompleted,
+          });
         }
       }
       onEvent?.('breathing_session_end', {
@@ -470,6 +535,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
       });
       if (hard) {
         setSessionSeconds(0);
+        sessionClockStartRef.current = 0;
         setSessionId(null);
         setSessionCommittedSeconds(0);
       }
@@ -480,9 +546,43 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
       onEvent,
       sessionCommittedSeconds,
       sessionsCompleted,
-      totalMinutes,
+      totalSeconds,
     ]
   );
+
+  // The native mode library changes initialMode after mount. If a user switches
+  // while paused, the previous implementation kept the old session id and
+  // elapsed seconds, then resumed them under the new mode. Treat an external
+  // mode change as a hard boundary so one practice session never spans patterns.
+  useEffect(() => {
+    if (!mounted || !effectiveDefaultMode) return;
+    if (lastExternalModeRef.current === effectiveDefaultMode) return;
+    lastExternalModeRef.current = effectiveDefaultMode;
+
+    if (sessionId !== null) {
+      const audio = getAudioService();
+      setIsRunning(false);
+      setIsProtocolMode(false);
+      setPhase(BreathingPhase.Idle);
+      setInstructionKey('session.ready_to_start');
+      endSession('mode_switched', sessionSeconds, true);
+      setScale(0);
+      audio.stopDrone();
+      audio.stopPinkNoise();
+      audio.stopBinaural();
+    }
+
+    setActiveMode(effectiveDefaultMode);
+    setThemeColor(BREATHING_PATTERNS[effectiveDefaultMode].color);
+  }, [
+    effectiveDefaultMode,
+    endSession,
+    getAudioService,
+    mounted,
+    sessionId,
+    sessionSeconds,
+    setInstructionKey,
+  ]);
 
   const handleTogglePlay = useCallback(async () => {
     const audio = getAudioService();
@@ -499,6 +599,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
       // true start (not a resume from pause). Resume keeps the same id so
       // the next end-commit credits only the new delta.
       const isResume = sessionId !== null && sessionSeconds > 0;
+      sessionClockStartRef.current = Date.now() - (sessionSeconds * 1000);
       if (!isResume) {
         setSessionId(
           typeof crypto !== 'undefined' && 'randomUUID' in crypto
@@ -522,30 +623,16 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
         protocolPhaseStartRef.current = performance.now();
         setInstructionKey('protocol.power_breathe');
 
-        // Wim Hof uses energizing drone + beta waves
-        await audio.startDrone(themeColor);
-        await audio.startBinaural(15); // Beta waves for alertness
-        audio.playCue('inhale', themeColor);
+        await startSoundscape(activeMode, themeColor);
+        playPhaseCue(BreathingPhase.Inhale);
       } else {
         // Normal pattern mode
         setIsProtocolMode(false);
         setPhase(BreathingPhase.Inhale);
         phaseStartRef.current = performance.now();
 
-        // Adaptive Audio Logic
-        if (activeMode === ModeName.Relax || activeMode === ModeName.Coherent) {
-          // Relax/Coherent get Pink Noise (Rain)
-          await audio.startPinkNoise();
-          // Relax gets Delta Waves (Sleep), Coherent gets Alpha
-          const hz = activeMode === ModeName.Relax ? 2 : 10;
-          await audio.startBinaural(hz);
-        } else {
-          // Others get Drone Synth + Alpha
-          await audio.startDrone(themeColor);
-          await audio.startBinaural(10);
-        }
-
-        audio.playCue('inhale', themeColor);
+        await startSoundscape(activeMode, themeColor);
+        playPhaseCue(BreathingPhase.Inhale);
         setInstructionKey('instruction.inhale_slowly');
       }
 
@@ -556,21 +643,24 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
         soundHintTimeoutRef.current = window.setTimeout(() => setSoundHintVisible(false), 4200);
       }
     } else {
+      const currentSessionSeconds = sessionClockStartRef.current > 0
+        ? Math.max(sessionSeconds, Math.floor((Date.now() - sessionClockStartRef.current) / 1000))
+        : sessionSeconds;
       setIsRunning(false);
       setIsProtocolMode(false);
       setPhase(BreathingPhase.Idle);
       setInstructionKey('session.paused');
       // Soft end: commit elapsed time so a pause-and-walk-away still credits
-      // minutes. Resume keeps sessionId + sessionSeconds, and the next commit
-      // only credits the new delta — server's GREATEST guards against
-      // double-counting if both fire.
-      endSession('paused', sessionSeconds, false);
+      // practice time. Resume keeps sessionId + sessionSeconds, and the next
+      // commit only credits the new delta.
+      setSessionSeconds(currentSessionSeconds);
+      endSession('paused', currentSessionSeconds, false);
       audio.stopDrone();
       audio.stopPinkNoise();
       audio.stopBinaural();
       setScale(0);
     }
-  }, [isRunning, activeMode, themeColor, getAudioService, isIOS, soundStatus, sessionSeconds, selectedDuration, setInstructionKey, sessionId, endSession, onEvent]);
+  }, [isRunning, activeMode, themeColor, getAudioService, isIOS, soundStatus, sessionSeconds, selectedDuration, setInstructionKey, sessionId, endSession, onEvent, playPhaseCue, startSoundscape]);
 
   const handleStop = () => {
     const audio = getAudioService();
@@ -594,14 +684,34 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
 
   const handleModeSelect = useCallback(
     (mode: ModeName) => {
+      if (mode === activeMode) return;
+
+      if (sessionId !== null) {
+        const audio = getAudioService();
+        setIsRunning(false);
+        setIsProtocolMode(false);
+        setPhase(BreathingPhase.Idle);
+        setInstructionKey('session.ready_to_start');
+        endSession('mode_switched', sessionSeconds, true);
+        setScale(0);
+        audio.stopDrone();
+        audio.stopPinkNoise();
+        audio.stopBinaural();
+      }
+
       onEvent?.('mode_switch', { from: activeMode, to: mode });
       setActiveMode(mode);
-
-      if (!isRunning) {
-        setThemeColor(BREATHING_PATTERNS[mode].color);
-      }
+      setThemeColor(BREATHING_PATTERNS[mode].color);
     },
-    [activeMode, isRunning, onEvent]
+    [
+      activeMode,
+      endSession,
+      getAudioService,
+      onEvent,
+      sessionId,
+      sessionSeconds,
+      setInstructionKey,
+    ]
   );
 
   const markSoundConfirmed = () => {
@@ -707,13 +817,11 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
       setPhase(nextPhase);
       phaseStartRef.current = time;
 
-      if (nextPhase === BreathingPhase.Inhale || nextPhase === BreathingPhase.Inhale2) audio.playCue('inhale', themeColor);
-      else if (nextPhase === BreathingPhase.Exhale) audio.playCue('exhale', themeColor);
-      else audio.playCue('hold', themeColor);
+      playPhaseCue(nextPhase);
     }
 
     requestRef.current = requestAnimationFrame(animate);
-  }, [activeMode, getAudioService, getSafePhrase, isRunning, phase, setInstructionKey, speedMultiplier, themeColor]);
+  }, [activeMode, getAudioService, getSafePhrase, isRunning, phase, playPhaseCue, setInstructionKey, speedMultiplier]);
 
   // --- Wim Hof Protocol Animation ---
   const animateProtocol = useCallback((time: number) => {
@@ -748,7 +856,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
           retentionStartRef.current = time;
           protocolPhaseStartRef.current = time;
           setInstructionKey('instruction.hold_your_breath');
-          audio.playCue('hold', themeColor);
+          playPhaseCue(BreathingPhase.HoldOut);
           setScale(0); // Empty lungs
         } else {
           next.currentBreathIndex = breathIndex + 1;
@@ -777,7 +885,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
           next.phase = ProtocolPhase.RecoveryInhale;
           protocolPhaseStartRef.current = time;
           setInstructionKey('instruction.deep_breath_in');
-          audio.playCue('inhale', themeColor);
+          playPhaseCue(BreathingPhase.Inhale);
         }
       }
       else if (prev.phase === ProtocolPhase.RecoveryInhale) {
@@ -788,7 +896,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
           next.phase = ProtocolPhase.RecoveryHold;
           protocolPhaseStartRef.current = time;
           setInstructionKey('instruction.hold');
-          audio.playCue('hold', themeColor);
+          playPhaseCue(BreathingPhase.HoldIn);
         }
       }
       else if (prev.phase === ProtocolPhase.RecoveryHold) {
@@ -823,7 +931,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
           protocolPhaseStartRef.current = time;
           // Clean instruction to allow getLabel() to show Inhale/Exhale
           setInstruction('');
-          audio.playCue('inhale', themeColor);
+          playPhaseCue(BreathingPhase.Inhale);
         }
       }
 
@@ -857,13 +965,12 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     });
 
     requestRef.current = requestAnimationFrame(animateProtocol);
-  }, [isRunning, isProtocolMode, getAudioService, phase, setInstructionKey, themeColor]);
+  }, [isRunning, isProtocolMode, getAudioService, phase, playPhaseCue, setInstructionKey]);
 
   // End hold button handler for Wim Hof
   const handleEndHold = useCallback(() => {
     if (!isProtocolMode || protocolState.phase !== ProtocolPhase.RetentionHold) return;
 
-    const audio = getAudioService();
     setProtocolState(prev => ({
       ...prev,
       phase: ProtocolPhase.RecoveryInhale,
@@ -871,8 +978,8 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     }));
     protocolPhaseStartRef.current = performance.now();
     setInstructionKey('instruction.deep_breath_in');
-    audio.playCue('inhale', themeColor);
-  }, [isProtocolMode, protocolState.phase, getAudioService, setInstructionKey, themeColor]);
+    playPhaseCue(BreathingPhase.Inhale);
+  }, [isProtocolMode, protocolState.phase, playPhaseCue, setInstructionKey]);
 
   useEffect(() => {
     if (isRunning) {
@@ -893,7 +1000,8 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     let interval: ReturnType<typeof setInterval>;
     if (isRunning) {
       interval = setInterval(() => {
-        setSessionSeconds(s => s + 1);
+        if (sessionClockStartRef.current <= 0) return;
+        setSessionSeconds(Math.max(0, Math.floor((Date.now() - sessionClockStartRef.current) / 1000)));
       }, 1000);
     }
     return () => clearInterval(interval);
@@ -907,7 +1015,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
       setPhase(BreathingPhase.Idle);
       // Native app shows its own summary card — suppress the webview overlay text.
       if (!isNativeApp) setInstructionKey('session.complete');
-      endSession('completed', sessionSeconds, true);
+      endSession('completed', selectedDuration, true);
       // Stop all audio
       audio.stopDrone();
       audio.stopPinkNoise();
@@ -1075,7 +1183,14 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
         <ParticleBackground phase={phase} color={themeColor} speedMultiplier={speedMultiplier} />
       )}
 
-      <header className="fixed inset-x-0 top-0 z-30 flex items-center justify-end gap-2 p-6">
+      <header
+        className="fixed inset-x-0 top-0 z-30 flex items-center justify-end gap-2 p-6"
+        style={{
+          paddingTop: safeAreaInsets.top + 24,
+          paddingRight: safeAreaInsets.right + 24,
+          paddingLeft: safeAreaInsets.left + 24,
+        }}
+      >
         <button
           onClick={() => setControlsOpen(true)}
           className="inline-flex items-center justify-center rounded-full border border-border/60 bg-card/80 p-2.5 text-muted-foreground shadow-sm backdrop-blur transition-colors hover:bg-card dark:border-border/40 dark:bg-card/40 dark:text-card-foreground"
@@ -1154,7 +1269,14 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
       </main>
 
       {soundHintMounted && (
-        <div className="pointer-events-none fixed bottom-6 left-0 right-0 z-30 flex justify-center px-4 transition-all duration-500 ease-out">
+        <div
+          className="pointer-events-none fixed bottom-6 left-0 right-0 z-30 flex justify-center px-4 transition-all duration-500 ease-out"
+          style={{
+            bottom: safeAreaInsets.bottom + 24,
+            paddingRight: safeAreaInsets.right + 16,
+            paddingLeft: safeAreaInsets.left + 16,
+          }}
+        >
           <div
             className={`pointer-events-auto max-w-md rounded-2xl bg-card/90 px-4 py-3 text-sm text-card-foreground shadow-lg backdrop-blur supports-[backdrop-filter]:bg-card/70 transition-all duration-500 ease-out ${soundHintVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
               }`}
@@ -1173,7 +1295,14 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
 
       <Sheet open={controlsOpen} onOpenChange={setControlsOpen}>
         <SheetContent side="right" className="bg-transparent shadow-none outline-none border-0 p-0">
-          <div className="fixed right-4 top-4 z-50 w-[360px] max-h-[calc(100vh-2rem)] max-w-[calc(100vw-2rem)] rounded-[32px] border border-border/70 bg-background/95 p-7 text-foreground shadow-[0_35px_90px_rgba(15,23,42,0.25)] backdrop-blur-2xl flex flex-col overflow-hidden sm:right-6 sm:top-20 sm:max-h-[calc(100vh-5rem)]">
+          <div
+            className="fixed right-4 top-4 z-50 w-[360px] max-w-[calc(100vw-2rem)] rounded-[32px] border border-border/70 bg-background/95 p-7 text-foreground shadow-[0_35px_90px_rgba(15,23,42,0.25)] backdrop-blur-2xl flex flex-col overflow-hidden sm:right-6 sm:top-20"
+            style={{
+              top: safeAreaInsets.top + 16,
+              right: safeAreaInsets.right + 16,
+              maxHeight: `calc(100vh - ${safeAreaInsets.top + safeAreaInsets.bottom + 32}px)`,
+            }}
+          >
             <SheetHeader className="mb-6 text-left">
               <div className="flex items-start justify-between">
                 <div>
@@ -1333,6 +1462,13 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
               )}
 
               {renderStats()}
+
+              <div className="rounded-2xl border border-border/60 bg-background/50 p-4 text-sm text-muted-foreground dark:border-border/40 dark:bg-background/20">
+                <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-card-foreground">Safety</p>
+                <p>
+                  Keep every breath comfortable. Stop if you feel dizzy or unwell. This app provides general breathing guidance, not medical advice.
+                </p>
+              </div>
             </div>
           </div>
         </SheetContent>

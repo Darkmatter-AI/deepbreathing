@@ -52,7 +52,7 @@ const SHIPPED_MODES: ModeEntry[] = [
     name: ModeName.Sigh,
     color: BREATHING_PATTERNS[ModeName.Sigh].color,
     phaseLabel: 'Double inhale',
-    use: 'Panic & acute reset',
+    use: 'Stress reset',
   },
   {
     name: ModeName.Ujjayi,
@@ -70,7 +70,7 @@ const SHIPPED_MODES: ModeEntry[] = [
     name: ModeName.PursedLip,
     color: BREATHING_PATTERNS[ModeName.PursedLip].color,
     phaseLabel: '2-4',
-    use: 'Respiratory health & COPD',
+    use: 'Gentle longer-exhale practice',
   },
 ];
 
