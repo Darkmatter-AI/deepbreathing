@@ -23,6 +23,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-07-11 | [TestFlight immersion and control pass — native audio, draggable modes, completion parity](#2026-07-11-testflight-immersion-and-control-pass--native-audio-draggable-modes-completion-parity) | 🔄 Implemented locally — physical build validation pending |
 | 2026-07-11 | [Account-based cross-device practice sync — Apple-first acquisition](#2026-07-11-account-based-cross-device-practice-sync--apple-first-acquisition) | 🔄 Implemented locally — TestFlight + production validation pending |
 | 2026-07-10 | [Keep Your Practice (`keep_practice`) — gain-framed receipt sheet, phase 1](#2026-07-10-keep-your-practice-keep_practice--gain-framed-receipt-sheet-phase-1) | 🔄 Implemented — PR [#41](https://github.com/Darkmatter-AI/deepbreathing/pull/41); first read once ≥150 prompt-shown (~2wk post-deploy) |
 | 2026-06-26 | [Non-blocking signup banner (`loss_aversion_banner`) — top-anchored notification](#2026-06-26-non-blocking-signup-banner-loss_aversion_banner--top-anchored-notification) | ❌ **Failed** (verdict 2026-07-10, early per impressions clause): intent 9.3% vs 13.8% AND retention 40% vs 50% — **superseded by `keep_practice` (PR #41), which is the revert-plus** |
@@ -49,6 +50,26 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 ---
 
 ## Active Experiments
+
+### 2026-07-11: TestFlight Immersion and Control Pass — Native Audio, Draggable Modes, Completion Parity
+
+**Hypothesis:** Removing duplicate controls and making the native shell participate in the breathing experience will make the app feel intentional rather than like a website inside a phone. Native-owned audio should also eliminate the most important iOS reliability failure: silence when the ringer switch is off or the screen locks.
+
+**Baseline:** Physical testing of TestFlight build 5 found eight concrete failures: the mode drawer showed too many rows and was tap-only; tap-away was unreliable; the WebView glow stopped at the top and bottom native safe areas; Web Audio did not reliably survive silent mode; settings duplicated mode and duration controls and carried an obsolete warning; the account entry read as an arrow rather than identity; and the completion prompt used the older activity-ring treatment instead of the shipped `keep_practice` receipt.
+
+**Change:** Limit the mode drawer viewport to four rows with scrolling, add pull-up/pull-down gestures and full-screen tap-away dismissal, tint and pulse the native safe-area backdrop with the active mode at the same phase boundary as audio and haptics, move ambient and phase-cue playback from WKWebView to `expo-audio`, simplify settings, use a portrait/initial/person account entry, and port the real cumulative-progress receipt from `main` while retaining the registered user's persistent swipe-up saved banner.
+
+**Pre-committed success criteria:**
+- Product correctness gate: on a physical iPhone, all seven modes remain reachable; the drawer opens and closes by drag and tap; tap-away closes it; top and bottom safe areas visibly participate in active-mode color changes; audio is audible with the ringer switch off and continues after screen lock; cue and haptic feel synchronized; settings contain no duplicate mode or duration choices; account entry is recognizable; and guest/registered completion states match their intended receipt/banner treatments.
+- ✅ Success if 100% of that physical matrix passes in the next TestFlight build with no regression in session completion, background timing, auth, or sync.
+- ❌ Failed if silent-mode/background audio still drops, session timing diverges after lock/unlock, or any primary control becomes unreachable.
+- 🟡 Mixed if functional gates pass but cue/haptic synchronization or safe-area color continuity still feels visibly discontinuous on hardware.
+
+**Measure-after:** Immediate physical-device read on the next TestFlight build; no public funnel verdict until the parent account-sync experiment reaches its impression gate.
+
+**Status:** 🔄 Implemented locally. Physical TestFlight validation pending.
+
+---
 
 ### 2026-07-11: Account-Based Cross-Device Practice Sync — Apple-First Acquisition
 

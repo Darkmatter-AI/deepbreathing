@@ -7,8 +7,9 @@
 // components/breathing/*) is retired by this — kept in-repo for reference only.
 
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { AppState, type AppStateStatus, Pressable, StyleSheet, Text, View, useColorScheme } from 'react-native';
+import { Animated, AppState, type AppStateStatus, Pressable, StyleSheet, Text, View, useColorScheme } from 'react-native';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
+import { Image } from 'expo-image';
 import { Stack } from 'expo-router';
 import * as Localization from 'expo-localization';
 import { setAudioModeAsync } from 'expo-audio';
@@ -27,9 +28,10 @@ import {
   useBackgroundAudio,
   type NativeAudioState,
 } from '../breathing/use-background-audio';
+import { useNativePhaseAudio } from '../breathing/use-native-phase-audio';
 import CompletionSummary, { type CompletionSummaryData } from '../components/CompletionSummary';
 import ModeLibrarySheet from '../components/ModeLibrarySheet';
-import { ModeName } from '../components/breathing-web/constants';
+import { BREATHING_PATTERNS, ModeName } from '../components/breathing-web/constants';
 import type { BreathingMode, SessionEndReason } from '@resonance/domain';
 import { randomUUID } from 'expo-crypto';
 import { useSession } from '../auth/auth-client';
@@ -59,6 +61,16 @@ const firePhaseHaptic = () => {
 const toBreathingAppState = (status: AppStateStatus): 'active' | 'background' =>
   status === 'active' ? 'active' : 'background';
 
+function blendHex(base: string, tint: string, amount: number) {
+  const channel = (hex: string, offset: number) => Number.parseInt(hex.slice(offset, offset + 2), 16);
+  const mixed = [1, 3, 5].map((offset) =>
+    Math.round(channel(base, offset) * (1 - amount) + channel(tint, offset) * amount)
+      .toString(16)
+      .padStart(2, '0'),
+  );
+  return `#${mixed.join('')}`;
+}
+
 export default function HomeScreen() {
   const { data: authSession } = useSession();
   const colorScheme = useColorScheme();
@@ -83,6 +95,9 @@ export default function HomeScreen() {
   const practiceIdRef = useRef<string | null>(null);
   const committedSecondsRef = useRef(0);
   const hydratedUserIdRef = useRef<string | null>(null);
+  const nativeAudioMutedRef = useRef(false);
+  const edgeGlowOpacity = useRef(new Animated.Value(0)).current;
+  const playNativePhaseAudio = useNativePhaseAudio();
 
   // Completion summary visibility.
   const [summaryData, setSummaryData] = useState<CompletionSummaryData | null>(null);
@@ -105,6 +120,14 @@ export default function HomeScreen() {
   const [activeModeName, setActiveModeName] = useState<string | null>(null);
 
   useBackgroundAudio({ appState, audioState: nativeAudioState });
+
+  useEffect(() => {
+    Animated.timing(edgeGlowOpacity, {
+      toValue: isSessionRunning ? 0.18 : 0,
+      duration: 420,
+      useNativeDriver: true,
+    }).start();
+  }, [edgeGlowOpacity, isSessionRunning]);
 
   // Warm the GA4 client_id cache early so the first event doesn't pay the
   // AsyncStorage round-trip latency.
@@ -199,7 +222,7 @@ export default function HomeScreen() {
   // async callbacks.
   const handleSessionComplete = useCallback(async (
     seconds: number,
-    stats: { totalMinutes: number; sessionsCompleted: number },
+    stats: { totalMinutes: number; sessionsCompleted: number; sessionMode: string },
   ) => {
     // Success haptic — signals a positive completion.
     // NOTE: haptics cannot be felt on the simulator; this is code-path verified
@@ -211,6 +234,7 @@ export default function HomeScreen() {
 
     setSummaryData({
       sessionSeconds: seconds,
+      sessionMode: stats.sessionMode,
       totalMinutes: stats.totalMinutes,
       sessionsCompleted: stats.sessionsCompleted,
     });
@@ -224,6 +248,14 @@ export default function HomeScreen() {
       setSummaryData(null);
     }
     if (name === 'phase_haptic') {
+      void playNativePhaseAudio(params?.phase, nativeAudioMutedRef.current);
+      edgeGlowOpacity.stopAnimation();
+      edgeGlowOpacity.setValue(0.32);
+      Animated.timing(edgeGlowOpacity, {
+        toValue: 0.18,
+        duration: 380,
+        useNativeDriver: true,
+      }).start();
       firePhaseHaptic();
       return;
     }
@@ -241,6 +273,7 @@ export default function HomeScreen() {
       return;
     }
     if (name === 'audio_state') {
+      nativeAudioMutedRef.current = params?.muted === true;
       setNativeAudioState({
         active: params?.active === true,
         muted: params?.muted === true,
@@ -314,11 +347,15 @@ export default function HomeScreen() {
     if (GA4_FORWARDED_EVENTS.has(name)) {
       fireGA4Event(name, params ?? {});
     }
-  }, [authSession?.user.id]);
+  }, [authSession?.user.id, edgeGlowOpacity, playNativePhaseAudio]);
 
   // Match the native safe-area backdrop to the experience's --background token
   // (light: cream 32 72% 97%, dark: warm 20 34% 10%) so there's no black strip.
-  const backdrop = theme === 'light' ? '#fdf8f2' : '#221711';
+  const baseBackdrop = theme === 'light' ? '#fdf8f2' : '#221711';
+  const modeColor = BREATHING_PATTERNS[
+    (activeModeName as ModeName | null) ?? ModeName.Box
+  ]?.color ?? BREATHING_PATTERNS[ModeName.Box].color;
+  const backdrop = isSessionRunning ? blendHex(baseBackdrop, modeColor, 0.16) : baseBackdrop;
 
   const handleDismissSummary = useCallback(() => {
     setSummaryData(null);
@@ -348,6 +385,10 @@ export default function HomeScreen() {
   return (
     <View style={[styles.container, { backgroundColor: backdrop }]}>
       <Stack.Screen options={{ headerShown: false }} />
+      <Animated.View
+        pointerEvents="none"
+        style={[StyleSheet.absoluteFill, { backgroundColor: modeColor, opacity: edgeGlowOpacity }]}
+      />
       <SafeAreaView style={styles.safeArea} edges={[]}>
         {snapshotReady ? (
           <BreathingExperienceDom
@@ -396,9 +437,23 @@ export default function HomeScreen() {
               },
             ]}
           >
-            <Text style={[styles.accountGlyph, { color: theme === 'dark' ? '#f0dac8' : '#5a3826' }]}>
-              {authSession?.user ? (authSession.user.name?.[0] ?? '✓').toUpperCase() : '↗'}
-            </Text>
+            {authSession?.user.image ? (
+              <Image
+                source={authSession.user.image}
+                style={styles.accountImage}
+                contentFit="cover"
+                alt="Account portrait"
+              />
+            ) : authSession?.user ? (
+              <Text style={[styles.accountGlyph, { color: theme === 'dark' ? '#f0dac8' : '#5a3826' }]}>
+                {(authSession.user.name?.[0] ?? '✓').toUpperCase()}
+              </Text>
+            ) : (
+              <View style={styles.guestPortrait}>
+                <View style={[styles.guestHead, { borderColor: theme === 'dark' ? '#f0dac8' : '#5a3826' }]} />
+                <View style={[styles.guestShoulders, { borderColor: theme === 'dark' ? '#f0dac8' : '#5a3826' }]} />
+              </View>
+            )}
           </Pressable>
         )}
         {/* MOB-5: Mode library pull-up tab — hidden while a session is running. */}
@@ -435,4 +490,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   accountGlyph: { fontSize: 16, fontWeight: '800' },
+  accountImage: { width: 38, height: 38, borderRadius: 19 },
+  guestPortrait: { width: 24, height: 24, alignItems: 'center' },
+  guestHead: { width: 8, height: 8, borderRadius: 4, borderWidth: 1.5 },
+  guestShoulders: { width: 17, height: 9, marginTop: 3, borderTopLeftRadius: 9, borderTopRightRadius: 9, borderWidth: 1.5, borderBottomWidth: 0 },
 });

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
-import { Volume2, Activity, Waves, Wind, Sun, Moon, Turtle, Rabbit, X, Settings as SettingsIcon } from 'lucide-react';
+import { Volume2, Activity, Waves, Wind, Sun, Moon, X, Settings as SettingsIcon } from 'lucide-react';
 import { BreathingPhase, ModeName, ProtocolPhase, ProtocolState } from './types';
 import { BREATHING_PATTERNS, DEFAULT_SPEED_MULTIPLIER, WIM_HOF_PROTOCOL } from './constants';
 import { AudioService } from './services/audioService';
@@ -35,7 +35,7 @@ interface BreathingExperienceProps {
   appState?: 'active' | 'background';
   onSessionComplete?: (
     seconds: number,
-    stats: { totalMinutes: number; sessionsCompleted: number },
+    stats: { totalMinutes: number; sessionsCompleted: number; sessionMode: string },
   ) => void;
   onEvent?: (name: string, params?: Record<string, any>) => void;
   className?: string;
@@ -221,6 +221,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   }, []);
 
   const startSoundscape = useCallback(async (mode: ModeName, color: string) => {
+    if (isNativeApp) return;
     const audio = getAudioService();
     if (mode === ModeName.WimHof) {
       await audio.startDrone(color);
@@ -234,7 +235,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     }
     await audio.startDrone(color);
     await audio.startBinaural(10);
-  }, [getAudioService]);
+  }, [getAudioService, isNativeApp]);
 
   const playPhaseCue = useCallback((nextPhase: BreathingPhase) => {
     const cue = getPhaseAudioCue(nextPhase);
@@ -243,9 +244,9 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     // Keep the audio cue and native haptic dispatch in the same JS turn. The
     // native host uses a single selection tick, while supported web browsers get
     // a minimal 10 ms vibration. Do not fire feedback while backgrounded.
-    getAudioService().playCue(cue, themeColor);
+    if (!isNativeApp) getAudioService().playCue(cue, themeColor);
     if (appState !== 'active') return;
-    onEvent?.('phase_haptic', { phase: nextPhase });
+    onEvent?.('phase_haptic', { phase: nextPhase, color: themeColor });
     if (!isNativeApp && typeof navigator !== 'undefined' && typeof navigator.vibrate === 'function') {
       navigator.vibrate(10);
     }
@@ -525,6 +526,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
           onSessionComplete?.(seconds, {
             totalMinutes: nextStats.totalMinutes,
             sessionsCompleted: nextStats.sessionsCompleted,
+            sessionMode: activeMode,
           });
         }
       }
@@ -681,39 +683,6 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     audio.stopPinkNoise();
     audio.stopBinaural();
   };
-
-  const handleModeSelect = useCallback(
-    (mode: ModeName) => {
-      if (mode === activeMode) return;
-
-      if (sessionId !== null) {
-        const audio = getAudioService();
-        setIsRunning(false);
-        setIsProtocolMode(false);
-        setPhase(BreathingPhase.Idle);
-        setInstructionKey('session.ready_to_start');
-        endSession('mode_switched', sessionSeconds, true);
-        setScale(0);
-        audio.stopDrone();
-        audio.stopPinkNoise();
-        audio.stopBinaural();
-      }
-
-      onEvent?.('mode_switch', { from: activeMode, to: mode });
-      setActiveMode(mode);
-      setThemeColor(BREATHING_PATTERNS[mode].color);
-    },
-    [
-      activeMode,
-      endSession,
-      getAudioService,
-      onEvent,
-      sessionId,
-      sessionSeconds,
-      setInstructionKey,
-    ]
-  );
-
 
   const toggleMute = () => {
     const newMute = !muted;
@@ -1052,14 +1021,6 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     return getSafePhrase('phase.ready');
   };
 
-  const durationSummary = useMemo(() => {
-    if (selectedDuration === null) return getSafePhrase('ui.open');
-    if (selectedDuration % 60 === 0) {
-      return getSafePhrase('ui.duration_min', { n: selectedDuration / 60 });
-    }
-    return getSafePhrase('ui.duration_sec', { n: selectedDuration });
-  }, [selectedDuration, getSafePhrase]);
-
   // --- Helper for Stats ---
   const renderStats = () => {
     const p = BREATHING_PATTERNS[activeMode];
@@ -1261,7 +1222,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
         )}
       </main>
 
-      {soundHintMounted && (
+      {soundHintMounted && !isNativeApp && (
         <div
           className="pointer-events-none fixed bottom-6 left-0 right-0 z-30 flex justify-center px-4 transition-all duration-500 ease-out"
           style={{
@@ -1276,11 +1237,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
           >
             <div className="flex items-center gap-2">
               <Volume2 size={18} className="shrink-0" style={{ color: themeColor }} />
-              <span>
-                {isNativeApp
-                  ? 'If you do not hear any sound, raise the volume.'
-                  : getSafePhrase('ui.sound_hint_no_audio')}
-              </span>
+              <span>{getSafePhrase('ui.sound_hint_no_audio')}</span>
             </div>
           </div>
         </div>
@@ -1300,7 +1257,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
               <div className="flex items-start justify-between">
                 <div>
                   <SheetTitle className="text-xl font-semibold text-card-foreground">{getSafePhrase('ui.settings')}</SheetTitle>
-                  <p className="text-sm text-muted-foreground">Adjust modes, pacing, and personalization.</p>
+                  <p className="text-sm text-muted-foreground">Sound, pacing, and appearance.</p>
                 </div>
                 <SheetClose asChild>
                   <button className="rounded-full p-1.5 text-muted-foreground hover:bg-card hover:text-card-foreground transition-colors">
@@ -1334,109 +1291,31 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
                     {activeTheme === 'dark' ? 'Light' : 'Dark'}
                   </button>
                 </div>
-
-                <div className="rounded-2xl bg-background/50 p-3 text-sm text-muted-foreground shadow-inner dark:bg-background/20">
-                  <div className="flex items-center justify-between gap-3">
-                    <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">{getSafePhrase('ui.session_length')}</p>
-                    <p className="text-xs text-muted-foreground">{durationSummary}</p>
-                  </div>
-                  <div className="mt-3 flex flex-wrap gap-2">
-                    {durationOptions.map((option) => {
-                      const isActive = selectedDuration === option.value;
-                      return (
-                        <button
-                          key={option.value ?? 'open'}
-                          onClick={() => handleDurationSelect(option.value)}
-                          disabled={isRunning}
-                          className={`rounded-xl px-3 py-1.5 text-xs font-medium transition ${isActive
-                            ? 'bg-card text-card-foreground shadow-sm'
-                            : 'text-muted-foreground hover:bg-card/60 dark:hover:bg-card/30'
-                            } disabled:cursor-not-allowed disabled:opacity-60`}
-                        >
-                          {option.label}
-                        </button>
-                      );
-                    })}
-                  </div>
-                  {isRunning && (
-                    <p className="mt-2 text-xs text-muted-foreground">{getSafePhrase('ui.pause_to_change')}</p>
-                  )}
-                </div>
               </div>
 
-              {!isRunning ? (
-                <>
-                  <div className="glass-panel flex flex-wrap justify-between gap-1 rounded-2xl p-2">
-                    {Object.values(BREATHING_PATTERNS)
-                      .filter(m => {
-                        const hideUnlessActive = [
-                          ModeName.WimHof,
-                          ModeName.Tummo,
-                          ModeName.BreathOfFire,
-                          ModeName.NadiShodhana,
-                          ModeName.Ujjayi,
-                          ModeName.Buteyko,
-                        ];
-                        if (hideUnlessActive.includes(m.name)) {
-                          return activeMode === m.name || effectiveDefaultMode === m.name;
-                        }
-                        return true;
-                      })
-                      .map((m) => {
-                        // Short labels for mode buttons
-                        let label = m.name.split(' ')[0];
-                        if (m.name === ModeName.Sigh) label = 'Sigh';
-                        if (m.name === ModeName.WimHof) label = 'Wim Hof';
-                        if (m.name === ModeName.Tummo) label = 'Tummo';
-                        if (m.name === ModeName.BreathOfFire) label = 'Fire';
-
-                        return (
-                          <button
-                            key={m.name}
-                            onClick={() => handleModeSelect(m.name)}
-                            className={`flex-1 py-2 px-3 text-xs font-medium rounded-xl transition-all whitespace-nowrap ${activeMode === m.name
-                              ? 'bg-card text-card-foreground shadow-sm'
-                              : 'text-muted-foreground hover:bg-card/60 dark:hover:bg-card/30'
-                              }`}
-                          >
-                            {label}
-                          </button>
-                        );
-                      })}
-                  </div>
-
-                  <div className="space-y-4 rounded-2xl bg-card/70 p-4 shadow-inner dark:bg-card/30">
-                    <div className="space-y-1">
-                      <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Pattern</p>
-                      <p className="text-base text-card-foreground">{currentPattern.description}</p>
-                    </div>
-                    <div className="space-y-2">
-                      <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                        <span>Speed</span>
-                        <span className="text-sm text-card-foreground">{speedMultiplier.toFixed(1)}s per phase</span>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <Turtle className="h-4 w-4 text-muted-foreground" aria-hidden />
-                        <input
-                          type="range"
-                          min="0.5"
-                          max="2.0"
-                          step="0.1"
-                          value={speedMultiplier}
-                          onChange={(e) => setSpeedMultiplier(parseFloat(e.target.value))}
-                          className="h-2 w-full cursor-pointer appearance-none rounded-full bg-muted accent-primary"
-                          aria-label="Breath speed"
-                        />
-                        <Rabbit className="h-4 w-4 text-muted-foreground" aria-hidden />
-                      </div>
-                    </div>
-                  </div>
-                </>
-              ) : (
-                <div className="rounded-2xl bg-muted/60 p-4 text-sm text-muted-foreground dark:bg-muted/30">
-                  {getSafePhrase('ui.pause_session_to_switch')}
+              <div className="space-y-4 rounded-2xl bg-card/70 p-4 shadow-inner dark:bg-card/30">
+                <div className="space-y-1">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Pattern</p>
+                  <p className="text-base text-card-foreground">{currentPattern.description}</p>
                 </div>
-              )}
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                    <span>Speed</span>
+                    <span className="text-sm text-card-foreground">{speedMultiplier.toFixed(1)}s per phase</span>
+                  </div>
+                  <input
+                    type="range"
+                    min="0.5"
+                    max="2.0"
+                    step="0.1"
+                    value={speedMultiplier}
+                    onChange={(e) => setSpeedMultiplier(parseFloat(e.target.value))}
+                    disabled={isRunning}
+                    className="h-2 w-full cursor-pointer appearance-none rounded-full bg-muted accent-primary disabled:cursor-not-allowed disabled:opacity-60"
+                    aria-label="Breath speed"
+                  />
+                </div>
+              </div>
 
               {renderStats()}
 

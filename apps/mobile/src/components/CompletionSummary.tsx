@@ -12,6 +12,7 @@ import AuthActions from '../auth/AuthActions';
 
 export interface CompletionSummaryData {
   sessionSeconds: number;
+  sessionMode: string;
   totalMinutes: number | null;
   sessionsCompleted: number | null;
 }
@@ -77,6 +78,19 @@ export default function CompletionSummary({
 
   const minutes = Math.floor(data.sessionSeconds / 60);
   const sessionLabel = minutes < 1 ? `${data.sessionSeconds}s` : `${minutes} min`;
+  const durationLabel = `${Math.floor(data.sessionSeconds / 60)}:${String(data.sessionSeconds % 60).padStart(2, '0')}`;
+  const headline =
+    data.sessionsCompleted != null && data.sessionsCompleted >= 2
+      ? `That's ${data.sessionsCompleted} sessions of calm, keep it?`
+      : 'Save your progress?';
+  const progressStats = [
+    data.totalMinutes != null
+      ? `${Math.max(data.totalMinutes, 1)} ${Math.max(data.totalMinutes, 1) === 1 ? 'minute' : 'minutes'} of calm`
+      : null,
+    data.sessionsCompleted != null && data.sessionsCompleted >= 2
+      ? `${data.sessionsCompleted} sessions`
+      : null,
+  ].filter(Boolean).join(' · ');
 
   if (isAuthenticated) {
     return (
@@ -111,35 +125,22 @@ export default function CompletionSummary({
         <Pressable style={styles.receiptClose} onPress={dismiss} accessibilityLabel="Dismiss keep practice prompt">
           <Text style={[styles.dismissX, { color: subtle }]}>×</Text>
         </Pressable>
-        <Text style={[styles.eyebrow, { color: subtle }]}>SESSION COMPLETE</Text>
-        <View style={[styles.activityRing, { borderColor: '#e36c4c' }]}>
-          <View style={[styles.activityRingInner, { borderColor: '#e36c4c55' }]}>
-            <Text style={[styles.ringValue, { color: text }]}>{sessionLabel}</Text>
-            <Text style={[styles.ringLabel, { color: subtle }]}>just now</Text>
+        <View style={[styles.sessionCard, { borderColor: border }]}>
+          <View style={[styles.progressRing, { borderColor: '#e36c4c' }]}>
+            <Text style={styles.progressGlyph}>⌁</Text>
+          </View>
+          <View style={styles.sessionCopy}>
+            <Text style={[styles.eyebrow, { color: subtle }]}>✓ SESSION COMPLETE</Text>
+            <Text style={[styles.sessionMode, { color: text }]} numberOfLines={1}>{data.sessionMode}</Text>
+            <Text style={[styles.sessionMeta, { color: subtle }]}>{durationLabel} · just now</Text>
           </View>
         </View>
-        <Text style={[styles.receiptTitle, { color: text }]}>Keep your practice</Text>
+        <Text style={[styles.receiptTitle, { color: text }]}>{headline}</Text>
+        {progressStats ? <Text style={[styles.progressStats, { color: text }]}>{progressStats}</Text> : null}
         <Text style={[styles.receiptBody, { color: subtle }]}>
-          Saved on this phone for now. A free account carries every session, streak, and setting to the web and your next device.
+          Saved on this device only. A free account keeps it, and every minute after, on any screen you pick up.
         </Text>
-        <View style={styles.statsRow}>
-          {data.totalMinutes != null && (
-            <View style={styles.statCell}>
-              <Text style={[styles.statValue, { color: text }]}>{data.totalMinutes}</Text>
-              <Text style={[styles.statLabel, { color: subtle }]}>total min</Text>
-            </View>
-          )}
-          {data.sessionsCompleted != null && (
-            <View style={styles.statCell}>
-              <Text style={[styles.statValue, { color: text }]}>{data.sessionsCompleted}</Text>
-              <Text style={[styles.statLabel, { color: subtle }]}>sessions</Text>
-            </View>
-          )}
-        </View>
         <AuthActions theme={theme} />
-        <Pressable onPress={dismiss} style={styles.notNow}>
-          <Text style={[styles.notNowText, { color: subtle }]}>Not now</Text>
-        </Pressable>
       </View>
     </Animated.View>
   );
@@ -158,8 +159,8 @@ const styles = StyleSheet.create({
     borderRadius: 30,
     borderWidth: StyleSheet.hairlineWidth,
     paddingHorizontal: 24,
-    paddingTop: 27,
-    paddingBottom: 18,
+    paddingTop: 42,
+    paddingBottom: 22,
     alignItems: 'center',
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 16 },
@@ -168,19 +169,16 @@ const styles = StyleSheet.create({
   },
   receiptClose: { position: 'absolute', top: 12, right: 16, zIndex: 2 },
   dismissX: { fontSize: 29, lineHeight: 32, paddingHorizontal: 5 },
-  eyebrow: { fontSize: 10, letterSpacing: 2.4, fontWeight: '800', marginBottom: 14 },
-  activityRing: { width: 126, height: 126, borderRadius: 63, borderWidth: 9, padding: 7 },
-  activityRingInner: { flex: 1, borderRadius: 52, borderWidth: 1, alignItems: 'center', justifyContent: 'center' },
-  ringValue: { fontSize: 27, fontWeight: '800' },
-  ringLabel: { fontSize: 11, marginTop: 1 },
-  receiptTitle: { fontSize: 29, fontWeight: '800', marginTop: 17, letterSpacing: -0.5 },
-  receiptBody: { fontSize: 14, lineHeight: 20, textAlign: 'center', marginTop: 8, marginBottom: 14 },
-  statsRow: { flexDirection: 'row', gap: 30, marginBottom: 16 },
-  statCell: { alignItems: 'center' },
-  statValue: { fontSize: 18, fontWeight: '700' },
-  statLabel: { fontSize: 10, textTransform: 'uppercase', letterSpacing: 1 },
-  notNow: { paddingTop: 13, paddingHorizontal: 22 },
-  notNowText: { fontSize: 13, fontWeight: '600' },
+  sessionCard: { width: '100%', minHeight: 74, borderRadius: 18, borderWidth: StyleSheet.hairlineWidth, paddingHorizontal: 15, flexDirection: 'row', alignItems: 'center' },
+  progressRing: { width: 46, height: 46, borderRadius: 23, borderWidth: 3, alignItems: 'center', justifyContent: 'center' },
+  progressGlyph: { color: '#e36c4c', fontSize: 22, fontWeight: '800' },
+  sessionCopy: { flex: 1, minWidth: 0, marginLeft: 13 },
+  eyebrow: { fontSize: 10, letterSpacing: 1.2, fontWeight: '800' },
+  sessionMode: { fontSize: 15, lineHeight: 20, fontWeight: '700', marginTop: 2 },
+  sessionMeta: { fontSize: 12, marginTop: 2, fontVariant: ['tabular-nums'] },
+  receiptTitle: { width: '100%', fontSize: 24, lineHeight: 29, fontWeight: '700', marginTop: 20, letterSpacing: -0.35 },
+  progressStats: { width: '100%', fontSize: 13, fontWeight: '700', marginTop: 8 },
+  receiptBody: { width: '100%', fontSize: 14, lineHeight: 21, marginTop: 10, marginBottom: 20 },
   banner: {
     position: 'absolute',
     left: 12,

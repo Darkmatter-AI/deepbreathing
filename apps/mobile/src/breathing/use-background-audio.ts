@@ -41,8 +41,9 @@ export function useBackgroundAudio({ appState, audioState }: UseBackgroundAudioI
       void player.seekTo(0).catch(() => {});
     };
 
-    const shouldPlay =
-      appState === 'background' && audioState.active && !audioState.muted;
+    // Native playback owns the ambient bed in foreground and background. This
+    // bypasses WKWebView's silent-switch and screen-lock limitations on iOS.
+    const shouldPlay = audioState.active && !audioState.muted;
 
     if (!shouldPlay) {
       stop();

@@ -3,14 +3,15 @@
 // No external deps beyond what is already installed: Animated, PanResponder,
 // Pressable, react-native-safe-area-context.
 
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useMemo, useRef, useState } from 'react';
 import {
   Animated,
-  Dimensions,
   PanResponder,
   Pressable,
+  ScrollView,
   StyleSheet,
   Text,
+  useWindowDimensions,
   View,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -90,11 +91,11 @@ interface Props {
 // Layout constants
 // ---------------------------------------------------------------------------
 
-const SCREEN_HEIGHT = Dimensions.get('window').height;
-const SHEET_HEIGHT = Math.round(SCREEN_HEIGHT * 0.56); // ~56% of screen
 const DRAG_THRESHOLD = 60; // px drag to close
 const ANIM_DURATION = 280;
 const TAB_HEIGHT = 36; // height of the pull tab area
+const ROW_HEIGHT = 62;
+const VISIBLE_ROWS = 4;
 
 // ---------------------------------------------------------------------------
 // Component
@@ -102,9 +103,14 @@ const TAB_HEIGHT = 36; // height of the pull tab area
 
 export default function ModeLibrarySheet({ theme, activeModeName, onSelectMode }: Props) {
   const insets = useSafeAreaInsets();
+  const { height: windowHeight } = useWindowDimensions();
+  const sheetHeight = Math.min(
+    Math.round(windowHeight * 0.64),
+    ROW_HEIGHT * VISIBLE_ROWS + insets.bottom + 12,
+  );
   const [sheetOpen, setSheetOpen] = useState(false);
   const translateY = useRef(new Animated.Value(0)).current; // 0 = closed
-  const backdropOpacity = useRef(new Animated.Value(0)).current;
+  const dragStartedOpen = useRef(false);
 
   const isLight = theme === 'light';
   const bg = isLight ? '#fdf8f2' : '#221711';
@@ -119,17 +125,12 @@ export default function ModeLibrarySheet({ theme, activeModeName, onSelectMode }
     setSheetOpen(true);
     Animated.parallel([
       Animated.timing(translateY, {
-        toValue: -SHEET_HEIGHT,
-        duration: ANIM_DURATION,
-        useNativeDriver: true,
-      }),
-      Animated.timing(backdropOpacity, {
-        toValue: 1,
+        toValue: -sheetHeight,
         duration: ANIM_DURATION,
         useNativeDriver: true,
       }),
     ]).start();
-  }, [translateY, backdropOpacity]);
+  }, [sheetHeight, translateY]);
 
   // Close the sheet: slide down, fade backdrop out.
   const closeSheet = useCallback(() => {
@@ -139,44 +140,46 @@ export default function ModeLibrarySheet({ theme, activeModeName, onSelectMode }
         duration: ANIM_DURATION,
         useNativeDriver: true,
       }),
-      Animated.timing(backdropOpacity, {
-        toValue: 0,
-        duration: ANIM_DURATION,
-        useNativeDriver: true,
-      }),
     ]).start(() => setSheetOpen(false));
-  }, [translateY, backdropOpacity]);
+  }, [translateY]);
 
-  // PanResponder for drag-to-close.
-  const dragStart = useRef(0);
-  const panResponder = useRef(
-    PanResponder.create({
+  // The tab can be pulled up from closed or pulled down from open.
+  const panResponder = useMemo(
+    () => PanResponder.create({
       onStartShouldSetPanResponder: () => true,
-      onMoveShouldSetPanResponder: (_, { dy }) => dy > 4,
-      onPanResponderGrant: (_, { y0 }) => {
-        dragStart.current = y0;
+      onMoveShouldSetPanResponder: (_, { dy }) => Math.abs(dy) > 4,
+      onPanResponderGrant: () => {
+        dragStartedOpen.current = sheetOpen;
+        if (!sheetOpen) setSheetOpen(true);
       },
       onPanResponderMove: (_, { dy }) => {
-        if (dy > 0) {
-          // Only drag downward (closing direction).
-          translateY.setValue(-SHEET_HEIGHT + dy);
-        }
+        const start = dragStartedOpen.current ? -sheetHeight : 0;
+        translateY.setValue(Math.max(-sheetHeight, Math.min(0, start + dy)));
       },
-      onPanResponderRelease: (_, { dy }) => {
-        if (dy > DRAG_THRESHOLD) {
+      onPanResponderRelease: (_, { dy, vy }) => {
+        const startedOpen = dragStartedOpen.current;
+        const shouldClose = startedOpen
+          ? dy > DRAG_THRESHOLD || vy > 0.5
+          : !(dy < -DRAG_THRESHOLD || vy < -0.5);
+        if (shouldClose) {
           closeSheet();
         } else {
-          // Snap back open.
-          Animated.spring(translateY, {
-            toValue: -SHEET_HEIGHT,
-            useNativeDriver: true,
-            tension: 80,
-            friction: 10,
-          }).start();
+          openSheet();
         }
       },
-    })
-  ).current;
+      onPanResponderTerminate: () => {
+        if (dragStartedOpen.current) openSheet();
+        else closeSheet();
+      },
+    }),
+    [closeSheet, openSheet, sheetHeight, sheetOpen, translateY],
+  );
+
+  const backdropOpacity = translateY.interpolate({
+    inputRange: [-sheetHeight, 0],
+    outputRange: [1, 0],
+    extrapolate: 'clamp',
+  });
 
   const handleRowPress = useCallback(
     (mode: ModeName) => {
@@ -192,9 +195,14 @@ export default function ModeLibrarySheet({ theme, activeModeName, onSelectMode }
       {sheetOpen && (
         <Animated.View
           style={[styles.backdrop, { opacity: backdropOpacity }]}
-          pointerEvents="box-only"
+          pointerEvents="auto"
         >
-          <Pressable style={StyleSheet.absoluteFill} onPress={closeSheet} />
+          <Pressable
+            style={StyleSheet.absoluteFill}
+            onPress={closeSheet}
+            accessibilityRole="button"
+            accessibilityLabel="Close mode library"
+          />
         </Animated.View>
       )}
 
@@ -203,8 +211,8 @@ export default function ModeLibrarySheet({ theme, activeModeName, onSelectMode }
         style={[
           styles.sheetContainer,
           {
-            height: SHEET_HEIGHT + TAB_HEIGHT,
-            bottom: -(SHEET_HEIGHT), // sheet body starts off-screen; tab peeks up
+            height: sheetHeight + TAB_HEIGHT,
+            bottom: -sheetHeight, // sheet body starts off-screen; tab peeks up
             paddingBottom: insets.bottom,
             backgroundColor: bg,
             borderColor: border,
@@ -218,7 +226,7 @@ export default function ModeLibrarySheet({ theme, activeModeName, onSelectMode }
           style={styles.tabArea}
           accessibilityRole="button"
           accessibilityLabel={sheetOpen ? 'Close mode library' : 'Open mode library'}
-          {...(sheetOpen ? panResponder.panHandlers : {})}
+          {...panResponder.panHandlers}
         >
           <View style={[styles.grabber, { backgroundColor: handleColor }]} />
           {!sheetOpen && (
@@ -228,7 +236,12 @@ export default function ModeLibrarySheet({ theme, activeModeName, onSelectMode }
 
         {/* Mode rows — only rendered when open (avoid layout cost while closed) */}
         {sheetOpen && (
-          <View style={styles.rowList}>
+          <ScrollView
+            style={styles.rowList}
+            contentContainerStyle={styles.rowListContent}
+            showsVerticalScrollIndicator
+            nestedScrollEnabled
+          >
             {SHIPPED_MODES.map((entry, idx) => {
               const isActive =
                 activeModeName === entry.name ||
@@ -263,7 +276,7 @@ export default function ModeLibrarySheet({ theme, activeModeName, onSelectMode }
                 </Pressable>
               );
             })}
-          </View>
+          </ScrollView>
         )}
       </Animated.View>
     </>
@@ -314,13 +327,16 @@ const styles = StyleSheet.create({
   },
   rowList: {
     flex: 1,
+  },
+  rowListContent: {
     paddingHorizontal: 20,
     paddingTop: 4,
   },
   row: {
+    minHeight: ROW_HEIGHT,
     flexDirection: 'row',
     alignItems: 'center',
-    paddingVertical: 13,
+    paddingVertical: 10,
     gap: 14,
   },
   dot: {

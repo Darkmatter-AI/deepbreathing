@@ -17,7 +17,7 @@ interface BreathingExperienceDomProps {
   initialPersistedSnapshot?: ResonancePersistedSnapshot;
   onSessionComplete?: (
     seconds: number,
-    stats: { totalMinutes: number; sessionsCompleted: number },
+    stats: { totalMinutes: number; sessionsCompleted: number; sessionMode: string },
   ) => Promise<void>;
   onEvent?: (name: string, params?: Record<string, any>) => Promise<void>;
 }

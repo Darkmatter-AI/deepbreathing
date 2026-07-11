@@ -32,9 +32,46 @@ test("completion UI branches between guest receipt and registered banner", () =>
     "utf8"
   );
   assert.match(source, /isAuthenticated/);
-  assert.match(source, /Keep your practice/);
+  assert.match(source, /Save your progress\?/);
+  assert.match(source, /SESSION COMPLETE/);
+  assert.match(source, /sessionMode/);
+  assert.doesNotMatch(source, /activityRing/);
+  assert.doesNotMatch(source, /Not now/);
   assert.match(source, /PanResponder/);
   assert.doesNotMatch(source, /AUTO_DISMISS_MS/);
+});
+
+test("mode drawer has a four-row scroll viewport, two-way drag, and tap-away dismissal", () => {
+  const source = fs.readFileSync(
+    path.join(ROOT, "apps/mobile/src/components/ModeLibrarySheet.tsx"),
+    "utf8"
+  );
+  assert.match(source, /VISIBLE_ROWS = 4/);
+  assert.match(source, /ScrollView/);
+  assert.match(source, /Math\.abs\(dy\)/);
+  assert.match(source, /style=\{StyleSheet\.absoluteFill\}/);
+  assert.match(source, /onPress=\{closeSheet\}/);
+});
+
+test("native shell owns silent-mode audio, phase cues, edge glow, and account portrait", () => {
+  const host = fs.readFileSync(path.join(ROOT, "apps/mobile/src/app/index.tsx"), "utf8");
+  const experience = fs.readFileSync(
+    path.join(ROOT, "apps/mobile/src/components/breathing-web/BreathingExperience.tsx"),
+    "utf8"
+  );
+  const background = fs.readFileSync(
+    path.join(ROOT, "apps/mobile/src/breathing/use-background-audio.ts"),
+    "utf8"
+  );
+  assert.match(host, /playsInSilentMode: true/);
+  assert.match(host, /useNativePhaseAudio/);
+  assert.match(host, /edgeGlowOpacity/);
+  assert.match(host, /authSession\.user\.image/);
+  assert.match(background, /audioState\.active && !audioState\.muted/);
+  assert.match(experience, /if \(!isNativeApp\) getAudioService\(\)\.playCue/);
+  assert.match(experience, /soundHintMounted && !isNativeApp/);
+  assert.doesNotMatch(experience, /Turtle/);
+  assert.doesNotMatch(experience, /Rabbit/);
 });
 
 test("registered completion banner clears when account controls become the next action", () => {
