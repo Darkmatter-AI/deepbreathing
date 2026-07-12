@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
-import { ActivityIndicator, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
+import { ActivityIndicator, Pressable, StyleSheet, Text, View } from 'react-native';
 import * as AppleAuthentication from 'expo-apple-authentication';
+import { Image } from 'expo-image';
 
 import { authClient } from './auth-client';
+
+const GOOGLE_G_ICON = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgPHBhdGggZmlsbD0iIzQyODVGNCIgZD0iTTIyLjU2IDEyLjI1YzAtLjc4LS4wNy0xLjUzLS4yLTIuMjVIMTJ2NC4yNmg1LjkyYTUuMDYgNS4wNiAwIDAgMS0yLjIgMy4zMnYyLjc3aDMuNTdjMi4wOC0xLjkyIDMuMjgtNC43NCAzLjI4LTguMXoiLz4KICA8cGF0aCBmaWxsPSIjMzRBODUzIiBkPSJNMTIgMjNjMi45NyAwIDUuNDYtLjk4IDcuMjgtMi42NmwtMy41Ny0yLjc3Yy0uOTguNjYtMi4yMyAxLjA2LTMuNzEgMS4wNi0yLjg2IDAtNS4yOS0xLjkzLTYuMTYtNC41M0gyLjE4djIuODRDMy45OSAyMC41MyA3LjcgMjMgMTIgMjN6Ii8+CiAgPHBhdGggZmlsbD0iI0ZCQkMwNSIgZD0iTTUuODQgMTQuMDlBNi40IDYuNCAwIDAgMSA1LjQ5IDEyYzAtLjczLjEzLTEuNDMuMzUtMi4wOVY3LjA3SDIuMThBMTEgMTEgMCAwIDAgMSAxMmMwIDEuNzguNDMgMy40NSAxLjE4IDQuOTN6Ii8+CiAgPHBhdGggZmlsbD0iI0VBNDMzNSIgZD0iTTEyIDUuMzhjMS42MiAwIDMuMDYuNTYgNC4yMSAxLjY0bDMuMTUtMy4xNUMxNy40NSAyLjA5IDE0Ljk3IDEgMTIgMSA3LjcgMSAzLjk5IDMuNDcgMi4xOCA3LjA3bDMuNjYgMi44NGMuODctMi42IDMuMy00LjUzIDYuMTYtNC41M3oiLz4KPC9zdmc+Cg==';
 
 interface Props {
   theme: 'light' | 'dark';
@@ -10,7 +13,7 @@ interface Props {
 }
 
 export default function AuthActions({ theme, onAuthenticated }: Props) {
-  const [appleAvailable, setAppleAvailable] = useState(Platform.OS === 'ios');
+  const [appleAvailable, setAppleAvailable] = useState(process.env.EXPO_OS === 'ios');
   const [pending, setPending] = useState<'apple' | 'google' | null>(null);
   const [error, setError] = useState<string | null>(null);
 
@@ -102,7 +105,12 @@ export default function AuthActions({ theme, onAuthenticated }: Props) {
           <ActivityIndicator color={dark ? '#f1dfce' : '#422a1c'} />
         ) : (
           <>
-            <Text style={styles.googleMark}>G</Text>
+            <Image
+              source={GOOGLE_G_ICON}
+              style={styles.googleIcon}
+              contentFit="contain"
+              alt="Google"
+            />
             <Text style={[styles.googleLabel, { color: dark ? '#f1dfce' : '#422a1c' }]}>
               Continue with Google
             </Text>
@@ -133,7 +141,7 @@ const styles = StyleSheet.create({
     gap: 10,
   },
   pressed: { opacity: 0.72 },
-  googleMark: { color: '#4285f4', fontSize: 18, fontWeight: '700' },
+  googleIcon: { width: 20, height: 20 },
   googleLabel: { fontSize: 16, fontWeight: '600' },
   error: { color: '#c85b4a', fontSize: 12, textAlign: 'center' },
 });

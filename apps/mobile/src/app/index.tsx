@@ -41,9 +41,12 @@ import {
   getClientVersion,
   getOrCreateGuestId,
   hydrateAccountState,
+  loadAccountPracticeSummary,
+  type AccountPracticeSummary,
 } from '../sync/session-sync-client';
 import { createSessionSegment, localCalendarDate } from '../sync/session-sync';
 import AccountSheet from '../auth/AccountSheet';
+import { accountAvatarUri } from '../auth/account-avatar';
 
 // Scopes the screen-awake lock to an active session so it releases on pause/stop.
 const KEEP_AWAKE_TAG = 'breathing-session';
@@ -102,6 +105,7 @@ export default function HomeScreen() {
   // Completion summary visibility.
   const [summaryData, setSummaryData] = useState<CompletionSummaryData | null>(null);
   const [accountOpen, setAccountOpen] = useState(false);
+  const [practiceSummary, setPracticeSummary] = useState<AccountPracticeSummary | null>(null);
 
   // MOB-5: Mode library state.
   // selectedMode starts as undefined so the webview loads from saved settings.
@@ -176,6 +180,7 @@ export default function HomeScreen() {
       const snapshot = await loadPersistedSnapshot();
       setPersistedSnapshot(snapshot);
       setSnapshotVersion((version) => version + 1);
+      setPracticeSummary(await loadAccountPracticeSummary());
     });
   }, [authSession?.user.id, isSessionRunning]);
 
@@ -366,6 +371,12 @@ export default function HomeScreen() {
     // saved-practice banner should not reappear after the sheet closes.
     if (authSession?.user.id) setSummaryData(null);
     setAccountOpen(true);
+    void loadAccountPracticeSummary().then(setPracticeSummary);
+    if (authSession?.user.id) {
+      void hydrateAccountState().then(async (hydrated) => {
+        if (hydrated) setPracticeSummary(await loadAccountPracticeSummary());
+      });
+    }
   }, [authSession?.user.id]);
 
   // MOB-5: Handle mode selection from the sheet.
@@ -437,17 +448,13 @@ export default function HomeScreen() {
               },
             ]}
           >
-            {authSession?.user.image ? (
+            {authSession?.user ? (
               <Image
-                source={authSession.user.image}
+                source={accountAvatarUri(authSession.user)}
                 style={styles.accountImage}
                 contentFit="cover"
                 alt="Account portrait"
               />
-            ) : authSession?.user ? (
-              <Text style={[styles.accountGlyph, { color: theme === 'dark' ? '#f0dac8' : '#5a3826' }]}>
-                {(authSession.user.name?.[0] ?? '✓').toUpperCase()}
-              </Text>
             ) : (
               <View style={styles.guestPortrait}>
                 <View style={[styles.guestHead, { borderColor: theme === 'dark' ? '#f0dac8' : '#5a3826' }]} />
@@ -468,6 +475,7 @@ export default function HomeScreen() {
           open={accountOpen}
           theme={theme}
           user={authSession?.user ?? null}
+          practice={practiceSummary}
           onClose={() => setAccountOpen(false)}
         />
       </SafeAreaView>
@@ -489,7 +497,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  accountGlyph: { fontSize: 16, fontWeight: '800' },
   accountImage: { width: 38, height: 38, borderRadius: 19 },
   guestPortrait: { width: 24, height: 24, alignItems: 'center' },
   guestHead: { width: 8, height: 8, borderRadius: 4, borderWidth: 1.5 },

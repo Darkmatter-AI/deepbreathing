@@ -6,7 +6,7 @@ import type { SessionEvent } from '@resonance/domain';
 
 import { AUTH_API_ORIGIN, authClient } from '../auth/auth-client';
 import { RESONANCE_STORAGE_KEYS } from '../breathing/resonance-mirror';
-import { retryDelayMs } from './session-sync';
+import { localCalendarDate, retryDelayMs } from './session-sync';
 
 const GUEST_ID_KEY = 'deepbreathing.guest-id.v1';
 const OUTBOX_KEY = 'deepbreathing.session-outbox.v1';
@@ -22,9 +22,21 @@ interface BootstrapResponse {
   stats: {
     totalMinutes: number;
     sessionsCompleted: number;
+    currentStreak: number;
+    lastSessionDate: string | null;
   } | null;
+  activeDays?: string[];
   sessionEvents: SessionEvent[];
   nextCursor: string | null;
+}
+
+export interface AccountPracticeSummary {
+  totalMinutes: number;
+  sessionsCompleted: number;
+  currentStreak: number;
+  lastSessionDate: string | null;
+  activeDays: string[];
+  currentMode: string | null;
 }
 
 let flushPromise: Promise<boolean> | null = null;
@@ -231,6 +243,14 @@ export async function hydrateAccountState(): Promise<boolean> {
           totalMinutes * 60,
         ),
         sessionsCompleted,
+        currentStreak: finiteNonNegative(bootstrap.stats.currentStreak),
+        lastSessionDate:
+          typeof bootstrap.stats.lastSessionDate === 'string'
+            ? bootstrap.stats.lastSessionDate.slice(0, 10)
+            : null,
+        activeDays: Array.isArray(bootstrap.activeDays)
+          ? bootstrap.activeDays.filter((day): day is string => typeof day === 'string')
+          : [],
       }),
     );
   }
@@ -247,6 +267,54 @@ export async function hydrateAccountState(): Promise<boolean> {
   for (const event of serverEvents) byId.set(event.id, event);
   await AsyncStorage.setItem(HISTORY_KEY, JSON.stringify([...byId.values()]));
   return true;
+}
+
+function liveStreak(streak: number, lastSessionDate: string | null): number {
+  if (!lastSessionDate) return 0;
+  const today = new Date();
+  const todayKey = localCalendarDate(today);
+  const yesterday = new Date(today);
+  yesterday.setDate(yesterday.getDate() - 1);
+  return lastSessionDate === todayKey || lastSessionDate === localCalendarDate(yesterday)
+    ? streak
+    : 0;
+}
+
+export async function loadAccountPracticeSummary(): Promise<AccountPracticeSummary> {
+  const [statsRaw, settingsRaw, historyRaw] = await Promise.all([
+    AsyncStorage.getItem(RESONANCE_STORAGE_KEYS.STATS),
+    AsyncStorage.getItem(RESONANCE_STORAGE_KEYS.SETTINGS),
+    AsyncStorage.getItem(HISTORY_KEY),
+  ]);
+  let stats: Record<string, unknown> = {};
+  let settings: Record<string, unknown> = {};
+  let history: SessionEvent[] = [];
+  try { stats = statsRaw ? JSON.parse(statsRaw) : {}; } catch { stats = {}; }
+  try { settings = settingsRaw ? JSON.parse(settingsRaw) : {}; } catch { settings = {}; }
+  try {
+    const parsed: unknown = JSON.parse(historyRaw ?? '[]');
+    if (Array.isArray(parsed)) history = parsed as SessionEvent[];
+  } catch { history = []; }
+
+  const storedDays = Array.isArray(stats.activeDays)
+    ? stats.activeDays.filter((day): day is string => typeof day === 'string')
+    : [];
+  const eventDays = history
+    .filter((event) => event.completed && typeof event.localDate === 'string')
+    .map((event) => event.localDate);
+  const lastSessionDate = typeof stats.lastSessionDate === 'string'
+    ? stats.lastSessionDate.slice(0, 10)
+    : null;
+  const currentStreak = finiteNonNegative(stats.currentStreak);
+
+  return {
+    totalMinutes: finiteNonNegative(stats.totalMinutes),
+    sessionsCompleted: finiteNonNegative(stats.sessionsCompleted),
+    currentStreak: liveStreak(currentStreak, lastSessionDate),
+    lastSessionDate,
+    activeDays: [...new Set([...storedDays, ...eventDays])].sort(),
+    currentMode: typeof settings.mode === 'string' ? settings.mode : null,
+  };
 }
 
 export function getClientVersion(): string | undefined {

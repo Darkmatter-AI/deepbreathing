@@ -23,6 +23,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-07-12 | [TestFlight native-sheet and practice-identity pass](#2026-07-12-testflight-native-sheet-and-practice-identity-pass) | 🔄 Implemented locally — physical build validation pending |
 | 2026-07-11 | [TestFlight immersion and control pass — native audio, draggable modes, completion parity](#2026-07-11-testflight-immersion-and-control-pass--native-audio-draggable-modes-completion-parity) | 🔄 Implemented locally — physical build validation pending |
 | 2026-07-11 | [Account-based cross-device practice sync — Apple-first acquisition](#2026-07-11-account-based-cross-device-practice-sync--apple-first-acquisition) | 🔄 Implemented locally — TestFlight + production validation pending |
 | 2026-07-10 | [Keep Your Practice (`keep_practice`) — gain-framed receipt sheet, phase 1](#2026-07-10-keep-your-practice-keep_practice--gain-framed-receipt-sheet-phase-1) | 🔄 Implemented — PR [#41](https://github.com/Darkmatter-AI/deepbreathing/pull/41); first read once ≥150 prompt-shown (~2wk post-deploy) |
@@ -50,6 +51,27 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 ---
 
 ## Active Experiments
+
+### 2026-07-12: TestFlight Native-Sheet and Practice-Identity Pass
+
+**Hypothesis:** Using a maintained gesture sheet for the entire drawer surface, and making the account surface visibly pay off with synced practice data, will turn account acquisition from a utility prompt into an identity/retention surface. Correct provider branding and a deterministic account portrait should also make continuation feel trustworthy and complete.
+
+**Baseline:** Build 6 still used hand-rolled responders with gestures limited to small handle regions. Physical testing found weak drag behavior, lost horizontal spacing in the guest account sheet, a letterform pretending to be Google's mark, a generic completion accent, particle convergence below the orb's visual center, and a post-auth checkmark rather than a durable portrait. The signed-in account sheet showed only email and destructive account controls despite the web product already exposing minutes, sessions, streak, and practice history.
+
+**Change:** Replace both custom drawers with `@gorhom/bottom-sheet` v5, including full-content panning, snap points, pan-down dismissal, scroll handoff, and backdrop-close. Add deliberate content padding; use Google's real four-color G asset; tint completion feedback with the completed mode; move the mobile particle gravity center upward; render a real provider image or deterministic per-account orb immediately after auth; and add synced minutes, sessions, live streak, 28-day breath garden, and current pattern to the account sheet. Keep “Continue” as the single Apple/Google action for both new and returning accounts.
+
+**Pre-committed success criteria:**
+- Product correctness gate: on physical iPhone, both sheets drag from their content and handle, snap without fighting nested scrolling, dismiss by pan and backdrop press, retain safe horizontal spacing at every data state, and expose all seven modes.
+- Identity/data gate: successful continuation immediately replaces the guest icon with a provider portrait or deterministic orb; account data matches the web bootstrap response; the Google mark is visually correct; the completion badge matches the mode color; and the particle convergence center aligns with the orb.
+- ✅ Success if every gate passes in the next TestFlight build without regressions to auth, guest migration, background audio, or session timing.
+- ❌ Failed if either sheet still feels tap-only, synced account values disagree across web and phone, or auth success leaves guest/checkmark UI behind.
+- 🟡 Mixed if correctness passes but the account data surface is too dense for the lower detent.
+
+**Measure-after:** Immediate physical-device validation on the next TestFlight build. Funnel outcomes remain part of the parent account-sync experiment.
+
+**Status:** 🔄 Implemented locally. Physical TestFlight validation pending.
+
+---
 
 ### 2026-07-11: TestFlight Immersion and Control Pass — Native Audio, Draggable Modes, Completion Parity
 

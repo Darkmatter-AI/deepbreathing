@@ -14,6 +14,8 @@ test("native auth actions present Apple before Google", () => {
   assert.ok(apple >= 0, "missing native Apple button");
   assert.ok(google > apple, "Google must be secondary to Apple");
   assert.match(source, /identityToken/);
+  assert.match(source, /GOOGLE_G_ICON/);
+  assert.doesNotMatch(source, /googleMark/);
 });
 
 test("account sheet supports sign out and verified deletion", () => {
@@ -24,6 +26,10 @@ test("account sheet supports sign out and verified deletion", () => {
   assert.match(source, /deleteUser/);
   assert.match(source, /Alert\.alert/);
   assert.match(source, /permanently/i);
+  assert.match(source, /BottomSheetModal/);
+  assert.match(source, /enablePanDownToClose/);
+  assert.match(source, /Your breath garden/);
+  assert.match(source, /practice\.sessionsCompleted/);
 });
 
 test("completion UI branches between guest receipt and registered banner", () => {
@@ -41,16 +47,17 @@ test("completion UI branches between guest receipt and registered banner", () =>
   assert.doesNotMatch(source, /AUTO_DISMISS_MS/);
 });
 
-test("mode drawer has a four-row scroll viewport, two-way drag, and tap-away dismissal", () => {
+test("mode drawer uses a four-row gesture sheet with tap-away dismissal", () => {
   const source = fs.readFileSync(
     path.join(ROOT, "apps/mobile/src/components/ModeLibrarySheet.tsx"),
     "utf8"
   );
   assert.match(source, /VISIBLE_ROWS = 4/);
-  assert.match(source, /ScrollView/);
-  assert.match(source, /Math\.abs\(dy\)/);
-  assert.match(source, /style=\{StyleSheet\.absoluteFill\}/);
-  assert.match(source, /onPress=\{closeSheet\}/);
+  assert.match(source, /BottomSheetScrollView/);
+  assert.match(source, /enablePanDownToClose/);
+  assert.match(source, /enableContentPanningGesture/);
+  assert.match(source, /pressBehavior="close"/);
+  assert.doesNotMatch(source, /PanResponder/);
 });
 
 test("native shell owns silent-mode audio, phase cues, edge glow, and account portrait", () => {
@@ -66,7 +73,7 @@ test("native shell owns silent-mode audio, phase cues, edge glow, and account po
   assert.match(host, /playsInSilentMode: true/);
   assert.match(host, /useNativePhaseAudio/);
   assert.match(host, /edgeGlowOpacity/);
-  assert.match(host, /authSession\.user\.image/);
+  assert.match(host, /accountAvatarUri\(authSession\.user\)/);
   assert.match(background, /audioState\.active && !audioState\.muted/);
   assert.match(experience, /if \(!isNativeApp\) getAudioService\(\)\.playCue/);
   assert.match(experience, /soundHintMounted && !isNativeApp/);

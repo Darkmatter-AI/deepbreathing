@@ -7,8 +7,10 @@ import {
   Text,
   View,
 } from 'react-native';
+import { SymbolView } from 'expo-symbols';
 
 import AuthActions from '../auth/AuthActions';
+import { BREATHING_PATTERNS, ModeName } from './breathing-web/constants';
 
 export interface CompletionSummaryData {
   sessionSeconds: number;
@@ -39,6 +41,7 @@ export default function CompletionSummary({
   const text = dark ? '#f5dfcc' : '#452b1d';
   const subtle = dark ? '#bf9b82' : '#8e6b53';
   const border = dark ? '#654638' : '#e5cbb7';
+  const modeColor = BREATHING_PATTERNS[data.sessionMode as ModeName]?.color ?? '#e36c4c';
 
   const dismiss = useCallback(() => {
     Animated.parallel([
@@ -107,7 +110,7 @@ export default function CompletionSummary({
           },
         ]}
       >
-        <View style={styles.bannerIcon}><Text style={styles.bannerCheck}>✓</Text></View>
+        <View style={[styles.bannerIcon, { backgroundColor: modeColor }]}><Text style={styles.bannerCheck}>✓</Text></View>
         <View style={styles.bannerCopy}>
           <Text style={[styles.bannerTitle, { color: text }]}>Practice saved</Text>
           <Text style={[styles.bannerSubtitle, { color: subtle }]}>{sessionLabel} synced to your account</Text>
@@ -126,8 +129,8 @@ export default function CompletionSummary({
           <Text style={[styles.dismissX, { color: subtle }]}>×</Text>
         </Pressable>
         <View style={[styles.sessionCard, { borderColor: border }]}>
-          <View style={[styles.progressRing, { borderColor: '#e36c4c' }]}>
-            <Text style={styles.progressGlyph}>⌁</Text>
+          <View style={[styles.progressRing, { borderColor: modeColor }]}>
+            <SymbolView name="waveform.path.ecg" tintColor={modeColor} size={20} />
           </View>
           <View style={styles.sessionCopy}>
             <Text style={[styles.eyebrow, { color: subtle }]}>✓ SESSION COMPLETE</Text>
@@ -171,7 +174,6 @@ const styles = StyleSheet.create({
   dismissX: { fontSize: 29, lineHeight: 32, paddingHorizontal: 5 },
   sessionCard: { width: '100%', minHeight: 74, borderRadius: 18, borderWidth: StyleSheet.hairlineWidth, paddingHorizontal: 15, flexDirection: 'row', alignItems: 'center' },
   progressRing: { width: 46, height: 46, borderRadius: 23, borderWidth: 3, alignItems: 'center', justifyContent: 'center' },
-  progressGlyph: { color: '#e36c4c', fontSize: 22, fontWeight: '800' },
   sessionCopy: { flex: 1, minWidth: 0, marginLeft: 13 },
   eyebrow: { fontSize: 10, letterSpacing: 1.2, fontWeight: '800' },
   sessionMode: { fontSize: 15, lineHeight: 20, fontWeight: '700', marginTop: 2 },
@@ -195,7 +197,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.16,
     shadowRadius: 18,
   },
-  bannerIcon: { width: 38, height: 38, borderRadius: 19, backgroundColor: '#dd684a', alignItems: 'center', justifyContent: 'center' },
+  bannerIcon: { width: 38, height: 38, borderRadius: 19, alignItems: 'center', justifyContent: 'center' },
   bannerCheck: { color: '#fff', fontSize: 21, fontWeight: '800' },
   bannerCopy: { flex: 1, marginLeft: 11 },
   bannerTitle: { fontSize: 16, fontWeight: '700' },

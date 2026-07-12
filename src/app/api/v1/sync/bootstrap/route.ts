@@ -12,7 +12,15 @@ export async function GET() {
 
   const userId = session.user.id;
 
-  const [settingsResult, statsResult, sessionEventsResult] = await Promise.all([
+  const activeDaysPromise = pool.query(
+    `SELECT to_char(day, 'YYYY-MM-DD') AS day
+     FROM user_active_days
+     WHERE user_id = $1 AND day >= CURRENT_DATE - interval '140 days'
+     ORDER BY day`,
+    [userId]
+  ).catch(() => ({ rows: [] as Array<{ day: string }> }));
+
+  const [settingsResult, statsResult, sessionEventsResult, activeDaysResult] = await Promise.all([
     pool.query("SELECT * FROM user_settings WHERE user_id = $1", [userId]),
     pool.query("SELECT * FROM user_stats WHERE user_id = $1", [userId]),
     pool.query(
@@ -25,6 +33,7 @@ export async function GET() {
        LIMIT 100`,
       [userId]
     ),
+    activeDaysPromise,
   ]);
 
   const settings = settingsResult.rows[0] ?? null;
@@ -51,6 +60,7 @@ export async function GET() {
           updatedAt: stats.updated_at,
         }
       : null,
+    activeDays: activeDaysResult.rows.map((row) => row.day),
     sessionEvents: sessionEventsResult.rows.map((event) => ({
       id: event.id,
       practiceId: event.practice_id,
