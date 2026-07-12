@@ -17,8 +17,10 @@ import Visualizer from "@/components/resonance/components/Visualizer";
 import { StudioAudioPreview } from "@/components/resonance/services/sensoryAudioPreview";
 import { BreathingPhase } from "@/components/resonance/types";
 import {
-  isLegacyStudioDraft,
+  getStudioDraftVersion,
+  hasProductionAudioEngine,
   migrateLegacyAudioInput,
+  migrateProductionAudioInput,
 } from "./sensoryStudioMigration";
 import {
   Check,
@@ -39,9 +41,19 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 import styles from "./sensory-studio.module.css";
 
-const STORAGE_VERSION = 2;
+const STORAGE_VERSION = 5;
 const STORAGE_KEY = `resonance:sensory-studio:v${STORAGE_VERSION}`;
-const LEGACY_STORAGE_KEY = "resonance:sensory-studio:v1";
+const LEGACY_STORAGE_KEYS = [
+  "resonance:sensory-studio:v4",
+  "resonance:sensory-studio:v3",
+  "resonance:sensory-studio:v2",
+  "resonance:sensory-studio:v1",
+] as const;
+const STORAGE_KEY_VERSION_RE = /:v(\d+)$/;
+const getStorageKeyVersion = (key: string) => {
+  const match = key.match(STORAGE_KEY_VERSION_RE);
+  return match ? Number(match[1]) : null;
+};
 const MAX_HISTORY = 60;
 
 const {
@@ -50,6 +62,7 @@ const {
   motion: MOTION_RANGES,
   phase: PHASE_RANGES,
 } = SENSORY_CONTROL_RANGES;
+const AUDIO_ENGINE_RANGES = AUDIO_RANGES.engine;
 
 type ProfileMap = Record<SensoryModeId, SensoryProfileV1>;
 type SaveState = "loading" | "saving" | "saved" | "unavailable";
@@ -109,6 +122,62 @@ const SOUNDSCAPES = [
   ["soft-noise", "Soft noise"],
 ] as const;
 
+type SoundscapePreset = Pick<
+  SensoryProfileV1["audio"]["engine"],
+  "droneEnabled" | "pinkNoiseEnabled" | "pinkNoiseScale" | "pinkNoiseFilter"
+>;
+
+const SOUNDSCAPE_PRESETS: Record<
+  (typeof SOUNDSCAPES)[number][0],
+  SoundscapePreset
+> = {
+  silence: {
+    droneEnabled: false,
+    pinkNoiseEnabled: false,
+    pinkNoiseScale: 1,
+    pinkNoiseFilter: { baseHz: 480, peakHz: 2_400, q: 0.7 },
+  },
+  air: {
+    droneEnabled: false,
+    pinkNoiseEnabled: true,
+    pinkNoiseScale: 0.82,
+    pinkNoiseFilter: { baseHz: 1_100, peakHz: 4_200, q: 0.35 },
+  },
+  rain: {
+    droneEnabled: false,
+    pinkNoiseEnabled: true,
+    pinkNoiseScale: 1,
+    pinkNoiseFilter: { baseHz: 480, peakHz: 2_400, q: 0.7 },
+  },
+  ocean: {
+    droneEnabled: false,
+    pinkNoiseEnabled: true,
+    pinkNoiseScale: 1.15,
+    pinkNoiseFilter: { baseHz: 300, peakHz: 1_800, q: 0.7 },
+  },
+  "deep-ocean": {
+    droneEnabled: false,
+    pinkNoiseEnabled: true,
+    pinkNoiseScale: 1.12,
+    pinkNoiseFilter: { baseHz: 180, peakHz: 950, q: 0.6 },
+  },
+  "warm-drone": {
+    droneEnabled: true,
+    pinkNoiseEnabled: false,
+    pinkNoiseScale: 1,
+    pinkNoiseFilter: { baseHz: 480, peakHz: 2_400, q: 0.7 },
+  },
+  "soft-noise": {
+    droneEnabled: false,
+    pinkNoiseEnabled: true,
+    pinkNoiseScale: 0.9,
+    pinkNoiseFilter: { baseHz: 350, peakHz: 1_100, q: 0.4 },
+  },
+};
+
+const getAudioSyncSignature = (profile: SensoryProfileV1) =>
+  JSON.stringify([profile.modeId, profile.palette.orb, profile.audio]);
+
 const PHASE_CUES = [
   ["none", "No cue"],
   ["soft-rise", "Production inhale"],
@@ -159,7 +228,7 @@ function makeDraft(profiles: ProfileMap, activeModeId: SensoryModeId): StudioDra
 
 function parseImportedProfiles(
   input: unknown,
-  migrateLegacyAudio = false,
+  sourceStorageVersion: number | null = null,
 ): { profiles: Partial<ProfileMap>; firstMode: SensoryModeId } | null {
   const candidateProfiles =
     typeof input === "object" && input !== null && "profiles" in input && Array.isArray(input.profiles)
@@ -170,9 +239,18 @@ function parseImportedProfiles(
   let firstMode: SensoryModeId | null = null;
 
   for (const candidate of candidateProfiles) {
-    const normalized = normalizeSensoryProfile(
-      migrateLegacyAudio ? migrateLegacyAudioInput(candidate) : candidate,
-    );
+    let migratedCandidate = candidate;
+    const missingProductionEngine = !hasProductionAudioEngine(candidate);
+    if (sourceStorageVersion === 1 || missingProductionEngine) {
+      migratedCandidate = migrateLegacyAudioInput(migratedCandidate);
+    }
+    if (
+      missingProductionEngine ||
+      (sourceStorageVersion !== null && sourceStorageVersion < STORAGE_VERSION)
+    ) {
+      migratedCandidate = migrateProductionAudioInput(migratedCandidate);
+    }
+    const normalized = normalizeSensoryProfile(migratedCandidate);
     if (normalized) {
       profiles[normalized.modeId] = normalized;
       firstMode ??= normalized.modeId;
@@ -422,6 +500,7 @@ function BreathingPreview({
   const profileRef = useRef(profile);
   const audioPreviewRef = useRef<StudioAudioPreview | null>(null);
   const previousModeIdRef = useRef(profile.modeId);
+  const audioSyncSignature = getAudioSyncSignature(profile);
 
   const getAudioPreview = useCallback(() => {
     audioPreviewRef.current ??= new StudioAudioPreview();
@@ -464,14 +543,7 @@ function BreathingPreview({
 
   useEffect(() => {
     void audioPreviewRef.current?.syncProfile(profileRef.current);
-  }, [
-    profile.audio.ambientVolume,
-    profile.audio.breathModulation,
-    profile.audio.cueVolume,
-    profile.audio.soundscape,
-    profile.modeId,
-    profile.palette.orb,
-  ]);
+  }, [audioSyncSignature]);
 
   const stopPlayback = useCallback(() => {
     playbackRequestedRef.current = false;
@@ -787,6 +859,7 @@ export default function SensoryStudio() {
 
   const activeProfile = profiles[activeModeId];
   const phase = activeProfile.phases[selectedPhaseId];
+  const audioEngine = activeProfile.audio.engine;
 
   const replaceProfiles = useCallback((next: ProfileMap) => {
     profilesRef.current = next;
@@ -799,8 +872,13 @@ export default function SensoryStudio() {
     try {
       stored = window.localStorage.getItem(STORAGE_KEY);
       if (!stored) {
-        stored = window.localStorage.getItem(LEGACY_STORAGE_KEY);
-        if (stored) storedKey = LEGACY_STORAGE_KEY;
+        for (const legacyKey of LEGACY_STORAGE_KEYS) {
+          stored = window.localStorage.getItem(legacyKey);
+          if (stored) {
+            storedKey = legacyKey;
+            break;
+          }
+        }
       }
     } catch {
       hydratedRef.current = true;
@@ -812,9 +890,11 @@ export default function SensoryStudio() {
     if (stored) {
       try {
         const parsed = JSON.parse(stored) as unknown;
+        const keyVersion = getStorageKeyVersion(storedKey);
+        const sourceStorageVersion = getStudioDraftVersion(parsed) ?? keyVersion;
         const isLegacyDraft =
-          storedKey === LEGACY_STORAGE_KEY || isLegacyStudioDraft(parsed);
-        const imported = parseImportedProfiles(parsed, isLegacyDraft);
+          sourceStorageVersion !== null && sourceStorageVersion < STORAGE_VERSION;
+        const imported = parseImportedProfiles(parsed, sourceStorageVersion);
         if (imported) {
           const next = createDefaultProfileMap();
           for (const modeId of SENSORY_MODE_IDS) {
@@ -841,8 +921,8 @@ export default function SensoryStudio() {
               if (window.localStorage.getItem(STORAGE_KEY) !== serialized) {
                 throw new Error("Could not verify migrated draft");
               }
-              if (storedKey === LEGACY_STORAGE_KEY) {
-                window.localStorage.removeItem(LEGACY_STORAGE_KEY);
+              if (storedKey !== STORAGE_KEY) {
+                window.localStorage.removeItem(storedKey);
               }
               migratedSavedAt = new Date(migratedDraft.savedAt);
               setNotice("Upgraded the draft to production audio");
@@ -959,6 +1039,21 @@ export default function SensoryStudio() {
     setNotice(`${SENSORY_MODE_LABELS[activeModeId]} reset`);
   };
 
+  const loadProductionAudio = () => {
+    recordSnapshot();
+    const draft = cloneSensoryProfile(profilesRef.current[activeModeId]);
+    const baseline = cloneSensoryProfile(DEFAULT_SENSORY_PROFILES[activeModeId]);
+    draft.audio = baseline.audio;
+    for (const phaseId of Object.keys(draft.phases) as SensoryPhaseId[]) {
+      draft.phases[phaseId].audio = baseline.phases[phaseId].audio;
+    }
+    const normalized = normalizeSensoryProfile(draft);
+    if (!normalized) return;
+    replaceProfiles({ ...profilesRef.current, [activeModeId]: normalized });
+    lastEditRef.current = null;
+    setNotice(`${SENSORY_MODE_LABELS[activeModeId]} production mix loaded`);
+  };
+
   const serializeDraft = () => JSON.stringify(makeDraft(profilesRef.current, activeModeId), null, 2);
 
   const copyJson = async () => {
@@ -1003,8 +1098,10 @@ export default function SensoryStudio() {
 
     try {
       const parsed = JSON.parse(await file.text()) as unknown;
-      const isLegacyDraft = isLegacyStudioDraft(parsed);
-      const imported = parseImportedProfiles(parsed, isLegacyDraft);
+      const sourceStorageVersion = getStudioDraftVersion(parsed);
+      const isLegacyDraft =
+        sourceStorageVersion !== null && sourceStorageVersion < STORAGE_VERSION;
+      const imported = parseImportedProfiles(parsed, sourceStorageVersion);
       if (!imported) throw new Error("No valid sensory profiles");
       recordSnapshot();
       const next = cloneProfileMap(profilesRef.current);
@@ -1344,20 +1441,82 @@ export default function SensoryStudio() {
           </ControlSection>
 
           <ControlSection
-            description="Audition the atmosphere and boundary cue through the production audio engine."
+            defaultOpen
+            description="Start from the current web mix, then decide which production layers are active."
             eyebrow="03 · Sound"
-            title="Audio"
+            title="Audio stack"
           >
+            <div className={styles.landingCard}>
+              <div>
+                <span className={styles.fieldLabel}>Production baseline</span>
+                <p>Restores the exact live layer stack and audio tuning without touching visuals or haptics.</p>
+              </div>
+              <button onClick={loadProductionAudio} type="button">
+                Load mix
+              </button>
+            </div>
             <SelectField
-              label="Soundscape"
+              hint="Loads the bed's layer and filter preset. Individual layer switches remain editable below."
+              label="Base bed preset"
               onChange={(value) =>
                 updateActive("audio.soundscape", (draft) => {
-                  draft.audio.soundscape = value as typeof draft.audio.soundscape;
+                  const soundscape = value as typeof draft.audio.soundscape;
+                  const preset = SOUNDSCAPE_PRESETS[soundscape];
+                  draft.audio.soundscape = soundscape;
+                  draft.audio.engine.droneEnabled = preset.droneEnabled;
+                  draft.audio.engine.pinkNoiseEnabled = preset.pinkNoiseEnabled;
+                  draft.audio.engine.pinkNoiseScale = preset.pinkNoiseScale;
+                  draft.audio.engine.pinkNoiseFilter = { ...preset.pinkNoiseFilter };
                 })
               }
               options={SOUNDSCAPES}
               value={activeProfile.audio.soundscape}
             />
+            <ToggleField
+              checked={audioEngine.droneEnabled}
+              hint="The spatial four-voice pad used by Box, Sigh, Ujjayi, Belly, and Pursed Lip."
+              label="Drone synth"
+              onChange={(value) => updateActive("audio.engine.droneEnabled", (draft) => (draft.audio.engine.droneEnabled = value))}
+            />
+            <ToggleField
+              checked={audioEngine.pinkNoiseEnabled}
+              hint="The filtered rain and ocean bed used by 4-7-8 and Coherent breathing."
+              label="Pink-noise bed"
+              onChange={(value) => updateActive("audio.engine.pinkNoiseEnabled", (draft) => (draft.audio.engine.pinkNoiseEnabled = value))}
+            />
+            <ToggleField
+              checked={audioEngine.subBassEnabled}
+              hint="The low body-resonance oscillator present in every production mode."
+              label="Sub-bass body layer"
+              onChange={(value) => updateActive("audio.engine.subBassEnabled", (draft) => (draft.audio.engine.subBassEnabled = value))}
+            />
+            <ToggleField
+              checked={audioEngine.binauralEnabled}
+              hint="The stereo 200 Hz synth that is enabled by default in the web experience. Headphones recommended."
+              label="Binaural synth"
+              onChange={(value) => updateActive("audio.engine.binauralEnabled", (draft) => (draft.audio.engine.binauralEnabled = value))}
+            />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.binauralBeatHz}
+              hint="Difference between the left and right carrier frequencies. Production uses 2 Hz for 4-7-8 and 10 Hz elsewhere."
+              label="Binaural beat"
+              onChange={(value) => updateActive("audio.engine.binauralBeatHz", (draft) => (draft.audio.engine.binauralBeatHz = value))}
+              value={audioEngine.binauralBeatHz}
+              valueLabel={`${audioEngine.binauralBeatHz.toFixed(1)} Hz`}
+            />
+            <ToggleField
+              checked={audioEngine.phaseEnvelopeEnabled}
+              hint="A separate breath-following tonal synth. Production normally reserves this for Eyes Closed mode."
+              label="Phase-envelope synth"
+              onChange={(value) => updateActive("audio.engine.phaseEnvelopeEnabled", (draft) => (draft.audio.engine.phaseEnvelopeEnabled = value))}
+            />
+            <ToggleField
+              checked={audioEngine.sessionArcEnabled}
+              hint="Gradually deepens and slows the drone over the practice."
+              label="Session evolution"
+              onChange={(value) => updateActive("audio.engine.sessionArcEnabled", (draft) => (draft.audio.engine.sessionArcEnabled = value))}
+            />
+            <div className={styles.controlDivider} />
             <RangeField
               {...AUDIO_RANGES.ambientVolume}
               label="Atmosphere volume"
@@ -1417,13 +1576,229 @@ export default function SensoryStudio() {
               valueLabel={formatSigned(phase.audio.pitchSemitones, " st")}
             />
             <p className={styles.microcopy}>
-              The three cue families are the exact production inhale, hold, and exhale sounds. Ambients fade in over roughly two seconds, matching the live experience.
+              Ambients fade in over roughly two seconds. Phase cues and haptics begin from the same phase boundary after audio unlock.
             </p>
           </ControlSection>
 
           <ControlSection
+            description="Ride every production layer and shape its tonal range while the preview is running."
+            eyebrow="04 · Mixer"
+            title="Layer mixer"
+          >
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.scale}
+              label="Drone level"
+              onChange={(value) => updateActive("audio.engine.droneScale", (draft) => (draft.audio.engine.droneScale = value))}
+              value={audioEngine.droneScale}
+              valueLabel={`${audioEngine.droneScale.toFixed(2)}×`}
+            />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.scale}
+              label="Pink-noise level"
+              onChange={(value) => updateActive("audio.engine.pinkNoiseScale", (draft) => (draft.audio.engine.pinkNoiseScale = value))}
+              value={audioEngine.pinkNoiseScale}
+              valueLabel={`${audioEngine.pinkNoiseScale.toFixed(2)}×`}
+            />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.pinkNoiseFilter.baseHz}
+              label="Noise filter floor"
+              onChange={(value) => updateActive("audio.engine.pinkNoiseFilter.baseHz", (draft) => (draft.audio.engine.pinkNoiseFilter.baseHz = value))}
+              value={audioEngine.pinkNoiseFilter.baseHz}
+              valueLabel={`${audioEngine.pinkNoiseFilter.baseHz.toFixed(0)} Hz`}
+            />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.pinkNoiseFilter.peakHz}
+              label="Noise filter ceiling"
+              onChange={(value) => updateActive("audio.engine.pinkNoiseFilter.peakHz", (draft) => (draft.audio.engine.pinkNoiseFilter.peakHz = value))}
+              value={audioEngine.pinkNoiseFilter.peakHz}
+              valueLabel={`${audioEngine.pinkNoiseFilter.peakHz.toFixed(0)} Hz`}
+            />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.pinkNoiseFilter.q}
+              label="Noise resonance"
+              onChange={(value) => updateActive("audio.engine.pinkNoiseFilter.q", (draft) => (draft.audio.engine.pinkNoiseFilter.q = value))}
+              value={audioEngine.pinkNoiseFilter.q}
+              valueLabel={audioEngine.pinkNoiseFilter.q.toFixed(2)}
+            />
+            <div className={styles.controlDivider} />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.scale}
+              label="Sub-bass level"
+              onChange={(value) => updateActive("audio.engine.subBassScale", (draft) => (draft.audio.engine.subBassScale = value))}
+              value={audioEngine.subBassScale}
+              valueLabel={`${audioEngine.subBassScale.toFixed(2)}×`}
+            />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.frequencyMultiplier}
+              label="Sub-bass pitch"
+              onChange={(value) => updateActive("audio.engine.subBassFreqMultiplier", (draft) => (draft.audio.engine.subBassFreqMultiplier = value))}
+              value={audioEngine.subBassFreqMultiplier}
+              valueLabel={`${audioEngine.subBassFreqMultiplier.toFixed(2)}×`}
+            />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.scale}
+              label="Binaural level"
+              onChange={(value) => updateActive("audio.engine.binauralScale", (draft) => (draft.audio.engine.binauralScale = value))}
+              value={audioEngine.binauralScale}
+              valueLabel={`${audioEngine.binauralScale.toFixed(2)}×`}
+            />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.scale}
+              label="Phase synth level"
+              onChange={(value) => updateActive("audio.engine.phaseEnvelopeScale", (draft) => (draft.audio.engine.phaseEnvelopeScale = value))}
+              value={audioEngine.phaseEnvelopeScale}
+              valueLabel={`${audioEngine.phaseEnvelopeScale.toFixed(2)}×`}
+            />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.frequencyMultiplier}
+              label="Phase synth pitch"
+              onChange={(value) => updateActive("audio.engine.phaseEnvelopeFreqMultiplier", (draft) => (draft.audio.engine.phaseEnvelopeFreqMultiplier = value))}
+              value={audioEngine.phaseEnvelopeFreqMultiplier}
+              valueLabel={`${audioEngine.phaseEnvelopeFreqMultiplier.toFixed(2)}×`}
+            />
+            <div className={styles.controlDivider} />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.scale}
+              label="Cue tone"
+              onChange={(value) => updateActive("audio.engine.cueToneScale", (draft) => (draft.audio.engine.cueToneScale = value))}
+              value={audioEngine.cueToneScale}
+              valueLabel={`${audioEngine.cueToneScale.toFixed(2)}×`}
+            />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.scale}
+              label="Cue transient"
+              onChange={(value) => updateActive("audio.engine.cueNoiseScale", (draft) => (draft.audio.engine.cueNoiseScale = value))}
+              value={audioEngine.cueNoiseScale}
+              valueLabel={`${audioEngine.cueNoiseScale.toFixed(2)}×`}
+            />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.scale}
+              label="Cue reverb"
+              onChange={(value) => updateActive("audio.engine.cueReverbMix", (draft) => (draft.audio.engine.cueReverbMix = value))}
+              value={audioEngine.cueReverbMix}
+              valueLabel={`${audioEngine.cueReverbMix.toFixed(2)}×`}
+            />
+          </ControlSection>
+
+          <ControlSection
+            description="Tune the slow session arc and the same compressor, limiter, and safety trim used in production."
+            eyebrow="05 · Engine"
+            title="Evolution & mastering"
+          >
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.arcWindowSeconds}
+              label="Evolution window"
+              onChange={(value) => updateActive("audio.engine.arcWindowSeconds", (draft) => (draft.audio.engine.arcWindowSeconds = value))}
+              value={audioEngine.arcWindowSeconds}
+              valueLabel={`${audioEngine.arcWindowSeconds.toFixed(0)} s`}
+            />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.arcRootDriftFactor}
+              hint="1.0 holds pitch; lower values let the drone sink over the session."
+              label="Root drift"
+              onChange={(value) => updateActive("audio.engine.arcRootDriftFactor", (draft) => (draft.audio.engine.arcRootDriftFactor = value))}
+              value={audioEngine.arcRootDriftFactor}
+              valueLabel={audioEngine.arcRootDriftFactor.toFixed(3)}
+            />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.arcSlowdown}
+              label="LFO slowdown"
+              onChange={(value) => updateActive("audio.engine.arcLfoSlowdownFactor", (draft) => (draft.audio.engine.arcLfoSlowdownFactor = value))}
+              value={audioEngine.arcLfoSlowdownFactor}
+              valueLabel={formatPercent(audioEngine.arcLfoSlowdownFactor)}
+            />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.arcSlowdown}
+              label="Orbit slowdown"
+              onChange={(value) => updateActive("audio.engine.arcOrbitSlowdownFactor", (draft) => (draft.audio.engine.arcOrbitSlowdownFactor = value))}
+              value={audioEngine.arcOrbitSlowdownFactor}
+              valueLabel={formatPercent(audioEngine.arcOrbitSlowdownFactor)}
+            />
+            <div className={styles.controlDivider} />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.masterTrim}
+              hint="Final safety gain after the limiter. Production uses 0.71, approximately −3 dB."
+              label="Master trim"
+              onChange={(value) => updateActive("audio.engine.masterTrim", (draft) => (draft.audio.engine.masterTrim = value))}
+              value={audioEngine.masterTrim}
+              valueLabel={`${(20 * Math.log10(Math.max(audioEngine.masterTrim, 0.001))).toFixed(1)} dB`}
+            />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.compressor.threshold}
+              label="Compressor threshold"
+              onChange={(value) => updateActive("audio.engine.compressor.threshold", (draft) => (draft.audio.engine.compressor.threshold = value))}
+              value={audioEngine.compressor.threshold}
+              valueLabel={`${audioEngine.compressor.threshold.toFixed(1)} dB`}
+            />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.compressor.knee}
+              label="Compressor knee"
+              onChange={(value) => updateActive("audio.engine.compressor.knee", (draft) => (draft.audio.engine.compressor.knee = value))}
+              value={audioEngine.compressor.knee}
+              valueLabel={audioEngine.compressor.knee.toFixed(0)}
+            />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.compressor.ratio}
+              label="Compressor ratio"
+              onChange={(value) => updateActive("audio.engine.compressor.ratio", (draft) => (draft.audio.engine.compressor.ratio = value))}
+              value={audioEngine.compressor.ratio}
+              valueLabel={`${audioEngine.compressor.ratio.toFixed(1)}:1`}
+            />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.compressor.attack}
+              label="Compressor attack"
+              onChange={(value) => updateActive("audio.engine.compressor.attack", (draft) => (draft.audio.engine.compressor.attack = value))}
+              value={audioEngine.compressor.attack}
+              valueLabel={`${(audioEngine.compressor.attack * 1_000).toFixed(0)} ms`}
+            />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.compressor.release}
+              label="Compressor release"
+              onChange={(value) => updateActive("audio.engine.compressor.release", (draft) => (draft.audio.engine.compressor.release = value))}
+              value={audioEngine.compressor.release}
+              valueLabel={`${(audioEngine.compressor.release * 1_000).toFixed(0)} ms`}
+            />
+            <div className={styles.controlDivider} />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.limiter.threshold}
+              label="Limiter threshold"
+              onChange={(value) => updateActive("audio.engine.limiter.threshold", (draft) => (draft.audio.engine.limiter.threshold = value))}
+              value={audioEngine.limiter.threshold}
+              valueLabel={`${audioEngine.limiter.threshold.toFixed(1)} dB`}
+            />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.limiter.knee}
+              label="Limiter knee"
+              onChange={(value) => updateActive("audio.engine.limiter.knee", (draft) => (draft.audio.engine.limiter.knee = value))}
+              value={audioEngine.limiter.knee}
+              valueLabel={audioEngine.limiter.knee.toFixed(0)}
+            />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.limiter.ratio}
+              label="Limiter ratio"
+              onChange={(value) => updateActive("audio.engine.limiter.ratio", (draft) => (draft.audio.engine.limiter.ratio = value))}
+              value={audioEngine.limiter.ratio}
+              valueLabel={`${audioEngine.limiter.ratio.toFixed(0)}:1`}
+            />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.limiter.attack}
+              label="Limiter attack"
+              onChange={(value) => updateActive("audio.engine.limiter.attack", (draft) => (draft.audio.engine.limiter.attack = value))}
+              value={audioEngine.limiter.attack}
+              valueLabel={`${(audioEngine.limiter.attack * 1_000).toFixed(2)} ms`}
+            />
+            <RangeField
+              {...AUDIO_ENGINE_RANGES.limiter.release}
+              label="Limiter release"
+              onChange={(value) => updateActive("audio.engine.limiter.release", (draft) => (draft.audio.engine.limiter.release = value))}
+              value={audioEngine.limiter.release}
+              valueLabel={`${(audioEngine.limiter.release * 1_000).toFixed(0)} ms`}
+            />
+          </ControlSection>
+
+          <ControlSection
             description="Give each transition a distinct tactile character."
-            eyebrow="04 · Touch"
+            eyebrow="06 · Touch"
             title="Haptics"
           >
             <ToggleField
@@ -1487,7 +1862,7 @@ export default function SensoryStudio() {
 
           <ControlSection
             description="Decide how much instruction remains, then shape the final rest."
-            eyebrow="05 · Direction"
+            eyebrow="07 · Direction"
             title="Guidance & landing"
           >
             <ToggleField

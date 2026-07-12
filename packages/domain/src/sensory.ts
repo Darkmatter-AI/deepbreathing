@@ -110,6 +110,42 @@ export interface SensoryMotionSettings {
   cycleSmoothing: number;
 }
 
+export interface SensoryDynamicsSettings {
+  threshold: number;
+  knee: number;
+  ratio: number;
+  attack: number;
+  release: number;
+}
+
+export interface SensoryAudioEngineSettings {
+  droneEnabled: boolean;
+  pinkNoiseEnabled: boolean;
+  subBassEnabled: boolean;
+  binauralEnabled: boolean;
+  phaseEnvelopeEnabled: boolean;
+  sessionArcEnabled: boolean;
+  binauralBeatHz: number;
+  compressor: SensoryDynamicsSettings;
+  limiter: SensoryDynamicsSettings;
+  masterTrim: number;
+  droneScale: number;
+  subBassScale: number;
+  subBassFreqMultiplier: number;
+  pinkNoiseScale: number;
+  pinkNoiseFilter: { baseHz: number; peakHz: number; q: number };
+  binauralScale: number;
+  phaseEnvelopeScale: number;
+  phaseEnvelopeFreqMultiplier: number;
+  cueToneScale: number;
+  cueNoiseScale: number;
+  cueReverbMix: number;
+  arcWindowSeconds: number;
+  arcRootDriftFactor: number;
+  arcLfoSlowdownFactor: number;
+  arcOrbitSlowdownFactor: number;
+}
+
 export interface SensoryAudioSettings {
   soundscape: SensorySoundscape;
   /** Ambient-bed volume. Range: 0...1. */
@@ -118,6 +154,8 @@ export interface SensoryAudioSettings {
   cueVolume: number;
   /** How strongly the ambient bed follows breath volume. Range: 0...1. */
   breathModulation: number;
+  /** Full production AudioService graph, including layer gates and live tuning. */
+  engine: SensoryAudioEngineSettings;
 }
 
 export interface SensoryGuidanceSettings {
@@ -187,6 +225,34 @@ export const SENSORY_CONTROL_RANGES = {
     ambientVolume: { min: 0, max: 1, step: 0.01 },
     cueVolume: { min: 0, max: 1, step: 0.01 },
     breathModulation: { min: 0, max: 1, step: 0.01 },
+    engine: {
+      binauralBeatHz: { min: 0.5, max: 30, step: 0.5 },
+      masterTrim: { min: 0, max: 1, step: 0.01 },
+      scale: { min: 0, max: 2, step: 0.01 },
+      frequencyMultiplier: { min: 0.5, max: 2, step: 0.05 },
+      pinkNoiseFilter: {
+        baseHz: { min: 100, max: 1_200, step: 10 },
+        peakHz: { min: 500, max: 6_000, step: 50 },
+        q: { min: 0.1, max: 4, step: 0.05 },
+      },
+      compressor: {
+        threshold: { min: -60, max: 0, step: 0.5 },
+        knee: { min: 0, max: 40, step: 1 },
+        ratio: { min: 1, max: 20, step: 0.5 },
+        attack: { min: 0.001, max: 1, step: 0.001 },
+        release: { min: 0.01, max: 2, step: 0.01 },
+      },
+      limiter: {
+        threshold: { min: -30, max: 0, step: 0.5 },
+        knee: { min: 0, max: 40, step: 1 },
+        ratio: { min: 1, max: 20, step: 1 },
+        attack: { min: 0.0001, max: 0.05, step: 0.0001 },
+        release: { min: 0.01, max: 0.5, step: 0.005 },
+      },
+      arcWindowSeconds: { min: 30, max: 600, step: 10 },
+      arcRootDriftFactor: { min: 0.5, max: 1, step: 0.005 },
+      arcSlowdown: { min: 0, max: 1, step: 0.01 },
+    },
   },
   guidance: {
     instructionFadeCycles: { min: 0, max: 20, step: 1 },
@@ -238,11 +304,40 @@ const BASE_MOTION: SensoryMotionSettings = {
   cycleSmoothing: 0.75,
 };
 
+const BASE_AUDIO_ENGINE: SensoryAudioEngineSettings = {
+  droneEnabled: true,
+  pinkNoiseEnabled: false,
+  subBassEnabled: true,
+  binauralEnabled: true,
+  phaseEnvelopeEnabled: false,
+  sessionArcEnabled: true,
+  binauralBeatHz: 10,
+  compressor: { threshold: -14, knee: 24, ratio: 3, attack: 0.02, release: 0.3 },
+  limiter: { threshold: -3, knee: 0, ratio: 20, attack: 0.001, release: 0.05 },
+  masterTrim: 0.71,
+  droneScale: 1,
+  subBassScale: 1,
+  subBassFreqMultiplier: 1,
+  pinkNoiseScale: 1,
+  pinkNoiseFilter: { baseHz: 480, peakHz: 2_400, q: 0.7 },
+  binauralScale: 1,
+  phaseEnvelopeScale: 1,
+  phaseEnvelopeFreqMultiplier: 1,
+  cueToneScale: 1,
+  cueNoiseScale: 1,
+  cueReverbMix: 1,
+  arcWindowSeconds: 240,
+  arcRootDriftFactor: 8 / 9,
+  arcLfoSlowdownFactor: 0.5,
+  arcOrbitSlowdownFactor: 0.4,
+};
+
 const BASE_AUDIO: SensoryAudioSettings = {
-  soundscape: "air",
-  ambientVolume: 0.25,
-  cueVolume: 0.4,
-  breathModulation: 0.55,
+  soundscape: "warm-drone",
+  ambientVolume: 0.3,
+  cueVolume: 0.32,
+  breathModulation: 1,
+  engine: BASE_AUDIO_ENGINE,
 };
 
 const BASE_GUIDANCE: SensoryGuidanceSettings = {
@@ -265,7 +360,7 @@ const BASE_PHASE_VISUAL: SensoryPhaseVisual = {
 
 const BASE_PHASE_AUDIO: SensoryPhaseAudio = {
   cue: "none",
-  volume: 0.35,
+  volume: 1,
   pitchSemitones: 0,
 };
 
@@ -332,7 +427,15 @@ const makePhases = (
 interface ProfileOverrides {
   palette: Partial<SensoryPalette>;
   motion?: Partial<SensoryMotionSettings>;
-  audio?: Partial<SensoryAudioSettings>;
+  audio?: Partial<Omit<SensoryAudioSettings, "engine">> & {
+    engine?: Partial<
+      Omit<SensoryAudioEngineSettings, "compressor" | "limiter" | "pinkNoiseFilter">
+    > & {
+      compressor?: Partial<SensoryDynamicsSettings>;
+      limiter?: Partial<SensoryDynamicsSettings>;
+      pinkNoiseFilter?: Partial<SensoryAudioEngineSettings["pinkNoiseFilter"]>;
+    };
+  };
   guidance?: Partial<SensoryGuidanceSettings>;
   phases?: Partial<Record<SensoryPhaseId, PhaseOverrides>>;
 }
@@ -342,7 +445,26 @@ const makeProfile = (modeId: SensoryModeId, overrides: ProfileOverrides): Sensor
   modeId,
   palette: { ...BASE_PALETTE, ...overrides.palette },
   motion: { ...BASE_MOTION, ...overrides.motion },
-  audio: { ...BASE_AUDIO, ...overrides.audio },
+  audio: {
+    ...BASE_AUDIO,
+    ...overrides.audio,
+    engine: {
+      ...BASE_AUDIO_ENGINE,
+      ...overrides.audio?.engine,
+      compressor: {
+        ...BASE_AUDIO_ENGINE.compressor,
+        ...overrides.audio?.engine?.compressor,
+      },
+      limiter: {
+        ...BASE_AUDIO_ENGINE.limiter,
+        ...overrides.audio?.engine?.limiter,
+      },
+      pinkNoiseFilter: {
+        ...BASE_AUDIO_ENGINE.pinkNoiseFilter,
+        ...overrides.audio?.engine?.pinkNoiseFilter,
+      },
+    },
+  },
   guidance: { ...BASE_GUIDANCE, ...overrides.guidance },
   phases: makePhases(overrides.phases ?? {}),
 });
@@ -364,15 +486,15 @@ export const DEFAULT_SENSORY_PROFILES: Record<SensoryModeId, SensoryProfileV1> =
       cycleSmoothing: 0.22,
     },
     audio: {
-      soundscape: "soft-noise",
-      ambientVolume: 0.14,
-      cueVolume: 0.52,
-      breathModulation: 0.12,
+      soundscape: "warm-drone",
+      ambientVolume: 0.3,
+      cueVolume: 0.32,
+      breathModulation: 1,
     },
     phases: {
       inhale: {
         visual: { curve: "linear", shapeTension: 0.82 },
-        audio: { cue: "crisp-tick", pitchSemitones: 0 },
+        audio: { cue: "soft-rise", pitchSemitones: 0 },
         haptic: { pattern: "crisp", intensity: 0.32, sharpness: 0.78, durationMs: 16 },
       },
       holdIn: {
@@ -382,7 +504,7 @@ export const DEFAULT_SENSORY_PROFILES: Record<SensoryModeId, SensoryProfileV1> =
       },
       exhale: {
         visual: { curve: "linear", shapeTension: 0.82 },
-        audio: { cue: "crisp-tick", pitchSemitones: 0 },
+        audio: { cue: "long-release", pitchSemitones: 0 },
         haptic: { pattern: "crisp", intensity: 0.3, sharpness: 0.72, durationMs: 16 },
       },
       holdOut: {
@@ -412,9 +534,10 @@ export const DEFAULT_SENSORY_PROFILES: Record<SensoryModeId, SensoryProfileV1> =
     },
     audio: {
       soundscape: "rain",
-      ambientVolume: 0.34,
-      cueVolume: 0.24,
-      breathModulation: 0.66,
+      ambientVolume: 0.3,
+      cueVolume: 0.32,
+      breathModulation: 1,
+      engine: { droneEnabled: false, pinkNoiseEnabled: true, binauralBeatHz: 2 },
     },
     guidance: { instructionFadeCycles: 2 },
     phases: {
@@ -424,12 +547,12 @@ export const DEFAULT_SENSORY_PROFILES: Record<SensoryModeId, SensoryProfileV1> =
       },
       holdIn: {
         visual: { curve: "sine", lightIntensity: 0.28, edgeGlow: 0.16, particleFlow: 0 },
-        audio: { cue: "crisp-tick", volume: 0.14, pitchSemitones: 0 },
+        audio: { cue: "crisp-tick", volume: 1, pitchSemitones: 0 },
         haptic: { pattern: "none", intensity: 0, sharpness: 0, durationMs: 0 },
       },
       exhale: {
         visual: { curve: "ease-out", lightIntensity: 0.12, particleVelocity: 0.18 },
-        audio: { cue: "long-release", volume: 0.22, pitchSemitones: 0 },
+        audio: { cue: "long-release", volume: 1, pitchSemitones: 0 },
         haptic: { pattern: "release", intensity: 0.16, sharpness: 0.08, durationMs: 42 },
       },
     },
@@ -453,20 +576,21 @@ export const DEFAULT_SENSORY_PROFILES: Record<SensoryModeId, SensoryProfileV1> =
     },
     audio: {
       soundscape: "ocean",
-      ambientVolume: 0.4,
-      cueVolume: 0.18,
-      breathModulation: 0.92,
+      ambientVolume: 0.3,
+      cueVolume: 0.32,
+      breathModulation: 1,
+      engine: { droneEnabled: false, pinkNoiseEnabled: true },
     },
     guidance: { instructionFadeCycles: 3 },
     phases: {
       inhale: {
         visual: { curve: "sine", particleFlow: -0.32, shapeTension: 0.18 },
-        audio: { cue: "soft-rise", volume: 0.18, pitchSemitones: 0 },
+        audio: { cue: "soft-rise", volume: 1, pitchSemitones: 0 },
         haptic: { pattern: "soft", intensity: 0.16, sharpness: 0.1, durationMs: 36 },
       },
       exhale: {
         visual: { curve: "sine", particleFlow: 0.32, shapeTension: 0.18 },
-        audio: { cue: "long-release", volume: 0.16, pitchSemitones: 0 },
+        audio: { cue: "long-release", volume: 1, pitchSemitones: 0 },
         haptic: { pattern: "release", intensity: 0.14, sharpness: 0.08, durationMs: 38 },
       },
     },
@@ -489,16 +613,16 @@ export const DEFAULT_SENSORY_PROFILES: Record<SensoryModeId, SensoryProfileV1> =
       cycleSmoothing: 0.62,
     },
     audio: {
-      soundscape: "air",
+      soundscape: "warm-drone",
       ambientVolume: 0.3,
-      cueVolume: 0.58,
-      breathModulation: 0.78,
+      cueVolume: 0.32,
+      breathModulation: 1,
     },
     guidance: { instructionFadeCycles: 3 },
     phases: {
       inhale: {
         visual: { orbScale: 0.72, curve: "ease-out", particleFlow: -0.72, particleVelocity: 0.86 },
-        audio: { cue: "soft-rise", volume: 0.52, pitchSemitones: 0 },
+        audio: { cue: "soft-rise", volume: 1, pitchSemitones: 0 },
         haptic: { pattern: "soft", intensity: 0.26, sharpness: 0.28, durationMs: 24 },
       },
       inhale2: {
@@ -512,17 +636,17 @@ export const DEFAULT_SENSORY_PROFILES: Record<SensoryModeId, SensoryProfileV1> =
           hueShiftDegrees: 8,
           curve: "ease-out",
         },
-        audio: { cue: "soft-rise", volume: 0.62, pitchSemitones: 0 },
+        audio: { cue: "soft-rise", volume: 1, pitchSemitones: 0 },
         haptic: { pattern: "top-up", intensity: 0.38, sharpness: 0.7, durationMs: 18 },
       },
       exhale: {
         visual: { orbScale: 0, curve: "ease-out", particleFlow: 1, particleVelocity: 1.2 },
-        audio: { cue: "long-release", volume: 0.62, pitchSemitones: 0 },
+        audio: { cue: "long-release", volume: 1, pitchSemitones: 0 },
         haptic: { pattern: "release", intensity: 0.2, sharpness: 0.08, durationMs: 48 },
       },
       holdOut: {
         visual: { orbScale: 0, lightIntensity: 0.1, edgeGlow: 0.04, particleVelocity: 0.05 },
-        audio: { cue: "crisp-tick", volume: 0.12, pitchSemitones: 0 },
+        audio: { cue: "crisp-tick", volume: 1, pitchSemitones: 0 },
       },
     },
   }),
@@ -542,21 +666,21 @@ export const DEFAULT_SENSORY_PROFILES: Record<SensoryModeId, SensoryProfileV1> =
       cycleSmoothing: 0.92,
     },
     audio: {
-      soundscape: "deep-ocean",
-      ambientVolume: 0.48,
-      cueVolume: 0.16,
-      breathModulation: 0.88,
+      soundscape: "warm-drone",
+      ambientVolume: 0.3,
+      cueVolume: 0.32,
+      breathModulation: 1,
     },
     guidance: { instructionFadeCycles: 3 },
     phases: {
       inhale: {
         visual: { curve: "sine", particleFlow: -0.48, particleVelocity: 0.72 },
-        audio: { cue: "soft-rise", volume: 0.16, pitchSemitones: 0 },
+        audio: { cue: "soft-rise", volume: 1, pitchSemitones: 0 },
         haptic: { pattern: "soft", intensity: 0.14, sharpness: 0.08, durationMs: 38 },
       },
       exhale: {
         visual: { curve: "sine", particleFlow: 0.58, particleVelocity: 0.8 },
-        audio: { cue: "long-release", volume: 0.16, pitchSemitones: 0 },
+        audio: { cue: "long-release", volume: 1, pitchSemitones: 0 },
         haptic: { pattern: "release", intensity: 0.13, sharpness: 0.06, durationMs: 42 },
       },
     },
@@ -580,20 +704,20 @@ export const DEFAULT_SENSORY_PROFILES: Record<SensoryModeId, SensoryProfileV1> =
     },
     audio: {
       soundscape: "warm-drone",
-      ambientVolume: 0.36,
-      cueVolume: 0.25,
-      breathModulation: 0.72,
+      ambientVolume: 0.3,
+      cueVolume: 0.32,
+      breathModulation: 1,
     },
     guidance: { instructionFadeCycles: 4 },
     phases: {
       inhale: {
         visual: { curve: "ease-in-out", hueShiftDegrees: 6, particleVelocity: 0.32 },
-        audio: { cue: "soft-rise", volume: 0.3, pitchSemitones: 0 },
+        audio: { cue: "soft-rise", volume: 1, pitchSemitones: 0 },
         haptic: { pattern: "soft", intensity: 0.2, sharpness: 0.08, durationMs: 40 },
       },
       exhale: {
         visual: { curve: "ease-out", hueShiftDegrees: -5, particleVelocity: 0.28 },
-        audio: { cue: "long-release", volume: 0.22, pitchSemitones: 0 },
+        audio: { cue: "long-release", volume: 1, pitchSemitones: 0 },
         haptic: { pattern: "release", intensity: 0.16, sharpness: 0.05, durationMs: 46 },
       },
     },
@@ -615,21 +739,21 @@ export const DEFAULT_SENSORY_PROFILES: Record<SensoryModeId, SensoryProfileV1> =
       cycleSmoothing: 0.84,
     },
     audio: {
-      soundscape: "soft-noise",
-      ambientVolume: 0.22,
-      cueVolume: 0.38,
-      breathModulation: 0.7,
+      soundscape: "warm-drone",
+      ambientVolume: 0.3,
+      cueVolume: 0.32,
+      breathModulation: 1,
     },
     guidance: { instructionFadeCycles: 4 },
     phases: {
       inhale: {
         visual: { curve: "ease-in", particleFlow: -0.3, particleVelocity: 0.35 },
-        audio: { cue: "soft-rise", volume: 0.32, pitchSemitones: 0 },
+        audio: { cue: "soft-rise", volume: 1, pitchSemitones: 0 },
         haptic: { pattern: "soft", intensity: 0.18, sharpness: 0.12, durationMs: 28 },
       },
       exhale: {
         visual: { curve: "ease-out", particleFlow: 0.74, particleVelocity: 0.42, shapeTension: 0.58 },
-        audio: { cue: "long-release", volume: 0.46, pitchSemitones: 0 },
+        audio: { cue: "long-release", volume: 1, pitchSemitones: 0 },
         haptic: { pattern: "release", intensity: 0.16, sharpness: 0.08, durationMs: 44 },
       },
     },
@@ -672,7 +796,15 @@ export const cloneSensoryProfile = (profile: SensoryProfileV1): SensoryProfileV1
   modeId: profile.modeId,
   palette: { ...profile.palette },
   motion: { ...profile.motion },
-  audio: { ...profile.audio },
+  audio: {
+    ...profile.audio,
+    engine: {
+      ...profile.audio.engine,
+      compressor: { ...profile.audio.engine.compressor },
+      limiter: { ...profile.audio.engine.limiter },
+      pinkNoiseFilter: { ...profile.audio.engine.pinkNoiseFilter },
+    },
+  },
   guidance: { ...profile.guidance },
   phases: {
     inhale: {
@@ -747,6 +879,115 @@ const normalizeMotion = (value: unknown, fallback: SensoryMotionSettings): Senso
   };
 };
 
+const normalizeDynamics = (
+  value: unknown,
+  fallback: SensoryDynamicsSettings,
+  ranges: Record<keyof SensoryDynamicsSettings, ControlRange>,
+): SensoryDynamicsSettings => {
+  const input = asRecord(value);
+  return {
+    threshold: finiteNumber(input?.threshold, fallback.threshold, ranges.threshold),
+    knee: finiteNumber(input?.knee, fallback.knee, ranges.knee),
+    ratio: finiteNumber(input?.ratio, fallback.ratio, ranges.ratio),
+    attack: finiteNumber(input?.attack, fallback.attack, ranges.attack),
+    release: finiteNumber(input?.release, fallback.release, ranges.release),
+  };
+};
+
+const normalizeAudioEngine = (
+  value: unknown,
+  fallback: SensoryAudioEngineSettings,
+): SensoryAudioEngineSettings => {
+  const input = asRecord(value);
+  const filter = asRecord(input?.pinkNoiseFilter);
+  const ranges = SENSORY_CONTROL_RANGES.audio.engine;
+  const baseHz = finiteNumber(
+    filter?.baseHz,
+    fallback.pinkNoiseFilter.baseHz,
+    ranges.pinkNoiseFilter.baseHz,
+  );
+  const importedPeakHz = finiteNumber(
+    filter?.peakHz,
+    fallback.pinkNoiseFilter.peakHz,
+    ranges.pinkNoiseFilter.peakHz,
+  );
+
+  return {
+    droneEnabled: boolean(input?.droneEnabled, fallback.droneEnabled),
+    pinkNoiseEnabled: boolean(input?.pinkNoiseEnabled, fallback.pinkNoiseEnabled),
+    subBassEnabled: boolean(input?.subBassEnabled, fallback.subBassEnabled),
+    binauralEnabled: boolean(input?.binauralEnabled, fallback.binauralEnabled),
+    phaseEnvelopeEnabled: boolean(
+      input?.phaseEnvelopeEnabled,
+      fallback.phaseEnvelopeEnabled,
+    ),
+    sessionArcEnabled: boolean(input?.sessionArcEnabled, fallback.sessionArcEnabled),
+    binauralBeatHz: finiteNumber(
+      input?.binauralBeatHz,
+      fallback.binauralBeatHz,
+      ranges.binauralBeatHz,
+    ),
+    compressor: normalizeDynamics(
+      input?.compressor,
+      fallback.compressor,
+      ranges.compressor,
+    ),
+    limiter: normalizeDynamics(input?.limiter, fallback.limiter, ranges.limiter),
+    masterTrim: finiteNumber(input?.masterTrim, fallback.masterTrim, ranges.masterTrim),
+    droneScale: finiteNumber(input?.droneScale, fallback.droneScale, ranges.scale),
+    subBassScale: finiteNumber(input?.subBassScale, fallback.subBassScale, ranges.scale),
+    subBassFreqMultiplier: finiteNumber(
+      input?.subBassFreqMultiplier,
+      fallback.subBassFreqMultiplier,
+      ranges.frequencyMultiplier,
+    ),
+    pinkNoiseScale: finiteNumber(
+      input?.pinkNoiseScale,
+      fallback.pinkNoiseScale,
+      ranges.scale,
+    ),
+    pinkNoiseFilter: {
+      baseHz,
+      peakHz: Math.max(baseHz, importedPeakHz),
+      q: finiteNumber(filter?.q, fallback.pinkNoiseFilter.q, ranges.pinkNoiseFilter.q),
+    },
+    binauralScale: finiteNumber(input?.binauralScale, fallback.binauralScale, ranges.scale),
+    phaseEnvelopeScale: finiteNumber(
+      input?.phaseEnvelopeScale,
+      fallback.phaseEnvelopeScale,
+      ranges.scale,
+    ),
+    phaseEnvelopeFreqMultiplier: finiteNumber(
+      input?.phaseEnvelopeFreqMultiplier,
+      fallback.phaseEnvelopeFreqMultiplier,
+      ranges.frequencyMultiplier,
+    ),
+    cueToneScale: finiteNumber(input?.cueToneScale, fallback.cueToneScale, ranges.scale),
+    cueNoiseScale: finiteNumber(input?.cueNoiseScale, fallback.cueNoiseScale, ranges.scale),
+    cueReverbMix: finiteNumber(input?.cueReverbMix, fallback.cueReverbMix, ranges.scale),
+    arcWindowSeconds: finiteNumber(
+      input?.arcWindowSeconds,
+      fallback.arcWindowSeconds,
+      ranges.arcWindowSeconds,
+    ),
+    arcRootDriftFactor: finiteNumber(
+      input?.arcRootDriftFactor,
+      fallback.arcRootDriftFactor,
+      ranges.arcRootDriftFactor,
+    ),
+    arcLfoSlowdownFactor: finiteNumber(
+      input?.arcLfoSlowdownFactor,
+      fallback.arcLfoSlowdownFactor,
+      ranges.arcSlowdown,
+    ),
+    arcOrbitSlowdownFactor: finiteNumber(
+      input?.arcOrbitSlowdownFactor,
+      fallback.arcOrbitSlowdownFactor,
+      ranges.arcSlowdown,
+    ),
+  };
+};
+
 const normalizeAudio = (value: unknown, fallback: SensoryAudioSettings): SensoryAudioSettings => {
   const input = asRecord(value);
   const ranges = SENSORY_CONTROL_RANGES.audio;
@@ -761,6 +1002,7 @@ const normalizeAudio = (value: unknown, fallback: SensoryAudioSettings): Sensory
       fallback.breathModulation,
       ranges.breathModulation,
     ),
+    engine: normalizeAudioEngine(input?.engine, fallback.engine),
   };
 };
 

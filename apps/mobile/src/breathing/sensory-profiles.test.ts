@@ -38,6 +38,7 @@ describe('sensory profile contract', () => {
       expect(profile.phases.exhale.visual.particleFlow).toBeGreaterThanOrEqual(0);
       for (const phaseId of SENSORY_PHASE_IDS) {
         expect(profile.phases[phaseId].audio.pitchSemitones).toBe(0);
+        expect(profile.phases[phaseId].audio.volume).toBe(1);
         expect(['none', 'soft-rise', 'crisp-tick', 'long-release']).toContain(
           profile.phases[phaseId].audio.cue,
         );
@@ -59,9 +60,30 @@ describe('sensory profile contract', () => {
     expect(DEFAULT_SENSORY_PROFILES.sigh.phases.inhale2.audio.cue).toBe('soft-rise');
     expect(DEFAULT_SENSORY_PROFILES.sigh.phases.inhale2.haptic.pattern).toBe('top-up');
 
-    expect(DEFAULT_SENSORY_PROFILES.ujjayi.audio.soundscape).toBe('deep-ocean');
+    expect(DEFAULT_SENSORY_PROFILES.ujjayi.audio.soundscape).toBe('warm-drone');
     expect(DEFAULT_SENSORY_PROFILES.belly.palette.orb).toBe('#f59e0b');
     expect(DEFAULT_SENSORY_PROFILES['pursed-lip'].phases.exhale.audio.cue).toBe('long-release');
+  });
+
+  it('starts every mode from the complete production audio stack', () => {
+    expect(DEFAULT_SENSORY_PROFILES.box.audio.soundscape).toBe('warm-drone');
+    expect(DEFAULT_SENSORY_PROFILES.box.audio.engine).toMatchObject({
+      droneEnabled: true,
+      pinkNoiseEnabled: false,
+      subBassEnabled: true,
+      binauralEnabled: true,
+      binauralBeatHz: 10,
+      phaseEnvelopeEnabled: false,
+      sessionArcEnabled: true,
+    });
+    expect(DEFAULT_SENSORY_PROFILES.relax.audio.engine).toMatchObject({
+      droneEnabled: false,
+      pinkNoiseEnabled: true,
+      subBassEnabled: true,
+      binauralEnabled: true,
+      binauralBeatHz: 2,
+    });
+    expect(DEFAULT_SENSORY_PROFILES.coherent.audio.engine.binauralBeatHz).toBe(10);
   });
 
   it('returns deep clones so studio edits cannot mutate the defaults', () => {
@@ -87,7 +109,19 @@ describe('normalizeSensoryProfile', () => {
         particleDensity: 4,
         gravityOffsetY: -9,
       },
-      audio: { ambientVolume: 3, cueVolume: -1, breathModulation: 0.42 },
+      audio: {
+        ambientVolume: 3,
+        cueVolume: -1,
+        breathModulation: 0.42,
+        engine: {
+          binauralBeatHz: 99,
+          masterTrim: -2,
+          droneScale: 9,
+          pinkNoiseFilter: { baseHz: 900, peakHz: 100, q: 99 },
+          compressor: { threshold: 20, ratio: 50 },
+          limiter: { attack: 2 },
+        },
+      },
       guidance: { showLabels: false, instructionFadeCycles: 4.8 },
       phases: {
         inhale: {
@@ -113,6 +147,14 @@ describe('normalizeSensoryProfile', () => {
     expect(profile?.motion.particleDensity).toBe(1);
     expect(profile?.motion.gravityOffsetY).toBe(-0.5);
     expect(profile?.audio).toMatchObject({ ambientVolume: 1, cueVolume: 0, breathModulation: 0.42 });
+    expect(profile?.audio.engine).toMatchObject({
+      binauralBeatHz: 30,
+      masterTrim: 0,
+      droneScale: 2,
+      pinkNoiseFilter: { baseHz: 900, peakHz: 900, q: 4 },
+      compressor: { threshold: 0, ratio: 20 },
+      limiter: { attack: 0.05 },
+    });
     expect(profile?.guidance).toMatchObject({ showLabels: false, instructionFadeCycles: 5 });
     expect(profile?.phases.inhale.visual).toMatchObject({
       orbScale: 1,

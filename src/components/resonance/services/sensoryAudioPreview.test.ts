@@ -33,17 +33,31 @@ class FakeAudioService implements StudioAudioService {
   setThemeColor(color: string) { this.record("setThemeColor", color); }
   setBreathingMode(mode: unknown) { this.record("setBreathingMode", mode); }
   setVolume(cue: number, ambient: number) { this.record("setVolume", cue, ambient); }
+  setCompressorParams(params: unknown) { this.record("setCompressorParams", params); }
+  setLimiterParams(params: unknown) { this.record("setLimiterParams", params); }
+  setMasterTrim(gain: number) { this.record("setMasterTrim", gain); }
   setPinkNoiseFilterRange(range: unknown) { this.record("setPinkNoiseFilterRange", range); }
   setPinkNoiseGain(scale: number) { this.record("setPinkNoiseGain", scale); }
   setDroneGain(scale: number) { this.record("setDroneGain", scale); }
   setSubBassGain(scale: number) { this.record("setSubBassGain", scale); }
+  setSubBassFreqMultiplier(scale: number) { this.record("setSubBassFreqMultiplier", scale); }
+  setBinauralGain(scale: number) { this.record("setBinauralGain", scale); }
   setPhaseEnvelopeGain(scale: number) { this.record("setPhaseEnvelopeGain", scale); }
+  setPhaseEnvelopeFreqMultiplier(scale: number) { this.record("setPhaseEnvelopeFreqMultiplier", scale); }
+  setCueToneScale(scale: number) { this.record("setCueToneScale", scale); }
+  setCueNoiseScale(scale: number) { this.record("setCueNoiseScale", scale); }
+  setCueReverbMix(scale: number) { this.record("setCueReverbMix", scale); }
+  setArcWindowSeconds(seconds: number) { this.record("setArcWindowSeconds", seconds); }
+  setArcRootDriftFactor(scale: number) { this.record("setArcRootDriftFactor", scale); }
+  setArcLfoSlowdownFactor(scale: number) { this.record("setArcLfoSlowdownFactor", scale); }
+  setArcOrbitSlowdownFactor(scale: number) { this.record("setArcOrbitSlowdownFactor", scale); }
   async startPinkNoise() {
     this.record("startPinkNoise");
     if (this.pinkNoiseStartPromise) await this.pinkNoiseStartPromise;
   }
   async startDrone(color: string) { this.record("startDrone", color); }
   async startSubBass(color?: string) { this.record("startSubBass", color); }
+  async startBinaural(beatHz?: number) { this.record("startBinaural", beatHz); }
   async startPhaseEnvelope(color?: string) { this.record("startPhaseEnvelope", color); }
   stopPinkNoise() { this.record("stopPinkNoise"); }
   stopDrone() { this.record("stopDrone"); }
@@ -54,6 +68,7 @@ class FakeAudioService implements StudioAudioService {
   updatePinkNoisePhase(phase: unknown, progress: number) { this.record("updatePinkNoisePhase", phase, progress); }
   updatePhaseEnvelope(phase: unknown, progress: number) { this.record("updatePhaseEnvelope", phase, progress); }
   updateSpatial(time: number) { this.record("updateSpatial", time); }
+  tickSessionArc(elapsedSeconds: number) { this.record("tickSessionArc", elapsedSeconds); }
   playCue(type: CueType, color?: string, options?: CuePlaybackOptions) {
     this.record("playCue", type, color, options);
   }
@@ -108,6 +123,8 @@ describe("StudioAudioPreview", () => {
     await expect(preview.start(profile, "inhale")).resolves.toBe(true);
 
     expect(names(audio)).toContain("startPinkNoise");
+    expect(names(audio)).toContain("startSubBass");
+    expect(names(audio)).toContain("startBinaural");
     expect(names(audio).indexOf("resume")).toBeLessThan(names(audio).indexOf("startPinkNoise"));
     expect(names(audio).indexOf("startPinkNoise")).toBeLessThan(names(audio).indexOf("playCue"));
     expect(audio.calls.find((call) => call.name === "setVolume")?.args).toEqual([
@@ -116,7 +133,7 @@ describe("StudioAudioPreview", () => {
     ]);
   });
 
-  it("maps the warm drone to production drone, sub-bass, and breath envelope layers", async () => {
+  it("maps the production drone stack to drone, sub-bass, and binaural layers", async () => {
     const audio = new FakeAudioService();
     const preview = new StudioAudioPreview(audio);
     const profile = cloneSensoryProfile(DEFAULT_SENSORY_PROFILES.belly);
@@ -126,8 +143,49 @@ describe("StudioAudioPreview", () => {
     expect(names(audio)).toEqual(expect.arrayContaining([
       "startDrone",
       "startSubBass",
-      "startPhaseEnvelope",
+      "startBinaural",
     ]));
+    expect(names(audio)).not.toContain("startPhaseEnvelope");
+  });
+
+  it("applies every authored production tuning value to the live engine", async () => {
+    const audio = new FakeAudioService();
+    const preview = new StudioAudioPreview(audio);
+    const profile = cloneSensoryProfile(DEFAULT_SENSORY_PROFILES.box);
+    profile.audio.engine.masterTrim = 0.62;
+    profile.audio.engine.droneScale = 1.2;
+    profile.audio.engine.binauralBeatHz = 7.5;
+    profile.audio.engine.cueReverbMix = 0.45;
+
+    await preview.start(profile, "inhale");
+
+    expect(audio.calls).toContainEqual({ name: "setMasterTrim", args: [0.62] });
+    expect(audio.calls).toContainEqual({ name: "setDroneGain", args: [1.2] });
+    expect(audio.calls).toContainEqual({ name: "setCueReverbMix", args: [0.45] });
+    expect(audio.calls).toContainEqual({ name: "startBinaural", args: [7.5] });
+    expect(names(audio)).toEqual(expect.arrayContaining([
+      "setCompressorParams",
+      "setLimiterParams",
+      "setSubBassFreqMultiplier",
+      "setPhaseEnvelopeFreqMultiplier",
+      "setCueToneScale",
+      "setCueNoiseScale",
+      "setArcWindowSeconds",
+      "setArcRootDriftFactor",
+      "setArcLfoSlowdownFactor",
+      "setArcOrbitSlowdownFactor",
+    ]));
+  });
+
+  it("starts the phase-following synth only when explicitly enabled", async () => {
+    const audio = new FakeAudioService();
+    const preview = new StudioAudioPreview(audio);
+    const profile = cloneSensoryProfile(DEFAULT_SENSORY_PROFILES.belly);
+    profile.audio.engine.phaseEnvelopeEnabled = true;
+
+    await preview.start(profile, "inhale");
+
+    expect(names(audio)).toContain("startPhaseEnvelope");
   });
 
   it("drives ambient breath modulation and stops every layer on pause", async () => {
@@ -137,9 +195,11 @@ describe("StudioAudioPreview", () => {
 
     await preview.start(profile, "inhale");
     preview.updateFrame("exhale", 0.64, 1234);
+    preview.updateFrame("exhale", 0.7, 2234);
     preview.pause();
 
     expect(audio.calls).toContainEqual({ name: "updatePinkNoisePhase", args: ["exhale", 0.64] });
+    expect(audio.calls).toContainEqual({ name: "tickSessionArc", args: [1] });
     expect(names(audio)).toEqual(expect.arrayContaining([
       "stopPinkNoise",
       "stopDrone",
@@ -200,7 +260,7 @@ describe("StudioAudioPreview", () => {
     expect(names(audio)).toEqual(expect.arrayContaining([
       "startDrone",
       "startSubBass",
-      "startPhaseEnvelope",
+      "startBinaural",
     ]));
     expect(names(audio)).not.toContain("startPinkNoise");
     expect(audio.calls.findLast((call) => call.name === "playCue")?.args[0]).toBe("inhale");
@@ -267,6 +327,10 @@ describe("StudioAudioPreview", () => {
     const preview = new StudioAudioPreview(audio);
     const silentProfile = cloneSensoryProfile(DEFAULT_SENSORY_PROFILES.box);
     silentProfile.audio.soundscape = "silence";
+    silentProfile.audio.engine.droneEnabled = false;
+    silentProfile.audio.engine.pinkNoiseEnabled = false;
+    silentProfile.audio.engine.subBassEnabled = false;
+    silentProfile.audio.engine.binauralEnabled = false;
     await preview.start(silentProfile, "inhale");
 
     audio.pinkNoiseStartPromise = pinkNoiseStarted.promise;
@@ -294,18 +358,17 @@ describe("StudioAudioPreview", () => {
   });
 
   it.each([
-    ["silence", []],
-    ["air", ["startPinkNoise"]],
-    ["rain", ["startPinkNoise"]],
-    ["ocean", ["startPinkNoise"]],
-    ["deep-ocean", ["startPinkNoise", "startSubBass"]],
-    ["warm-drone", ["startDrone", "startSubBass", "startPhaseEnvelope"]],
-    ["soft-noise", ["startPinkNoise"]],
-  ] as const)("maps %s to its production ambient layers", async (soundscape, expectedLayers) => {
+    ["box", ["startDrone", "startSubBass", "startBinaural"]],
+    ["relax", ["startPinkNoise", "startSubBass", "startBinaural"]],
+    ["coherent", ["startPinkNoise", "startSubBass", "startBinaural"]],
+    ["sigh", ["startDrone", "startSubBass", "startBinaural"]],
+    ["ujjayi", ["startDrone", "startSubBass", "startBinaural"]],
+    ["belly", ["startDrone", "startSubBass", "startBinaural"]],
+    ["pursed-lip", ["startDrone", "startSubBass", "startBinaural"]],
+  ] as const)("maps %s to its complete production layer stack", async (modeId, expectedLayers) => {
     const audio = new FakeAudioService();
     const preview = new StudioAudioPreview(audio);
-    const profile = cloneSensoryProfile(DEFAULT_SENSORY_PROFILES.box);
-    profile.audio.soundscape = soundscape;
+    const profile = cloneSensoryProfile(DEFAULT_SENSORY_PROFILES[modeId]);
 
     await preview.start(profile, "inhale");
 

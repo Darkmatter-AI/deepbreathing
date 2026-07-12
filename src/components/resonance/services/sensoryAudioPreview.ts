@@ -3,7 +3,6 @@ import type {
   SensoryAudioCue,
   SensoryPhaseId,
   SensoryProfileV1,
-  SensorySoundscape,
 } from "@resonance/domain";
 
 import { ModeName } from "../types";
@@ -14,21 +13,34 @@ import {
 } from "./audioService";
 
 type BreathAudioPhase = "inhale" | "exhale" | "hold";
-type NoisePreset = { baseHz: number; peakHz: number; q: number; gainScale: number };
 
 export interface StudioAudioService {
   resume(): Promise<boolean>;
   setThemeColor(color: string): void;
   setBreathingMode(mode: ModeName): void;
   setVolume(cueVolume: number, ambientVolume: number): void;
+  setCompressorParams(params: Partial<{ threshold: number; knee: number; ratio: number; attack: number; release: number }>): void;
+  setLimiterParams(params: Partial<{ threshold: number; knee: number; ratio: number; attack: number; release: number }>): void;
+  setMasterTrim(gain: number): void;
   setPinkNoiseFilterRange(range: Partial<{ baseHz: number; peakHz: number; q: number }>): void;
   setPinkNoiseGain(scale: number): void;
   setDroneGain(scale: number): void;
   setSubBassGain(scale: number): void;
+  setSubBassFreqMultiplier(scale: number): void;
+  setBinauralGain(scale: number): void;
   setPhaseEnvelopeGain(scale: number): void;
+  setPhaseEnvelopeFreqMultiplier(scale: number): void;
+  setCueToneScale(scale: number): void;
+  setCueNoiseScale(scale: number): void;
+  setCueReverbMix(scale: number): void;
+  setArcWindowSeconds(seconds: number): void;
+  setArcRootDriftFactor(scale: number): void;
+  setArcLfoSlowdownFactor(scale: number): void;
+  setArcOrbitSlowdownFactor(scale: number): void;
   startPinkNoise(): Promise<void>;
   startDrone(color: string): Promise<void>;
   startSubBass(color?: string): Promise<void>;
+  startBinaural(beatHz?: number): Promise<void>;
   startPhaseEnvelope(color?: string): Promise<void>;
   stopPinkNoise(): void;
   stopDrone(): void;
@@ -39,6 +51,7 @@ export interface StudioAudioService {
   updatePinkNoisePhase(phase: BreathAudioPhase, progress: number): void;
   updatePhaseEnvelope(phase: BreathAudioPhase, progress: number): void;
   updateSpatial(time: number): void;
+  tickSessionArc(elapsedSeconds: number): void;
   playCue(type: CueType, color?: string, options?: CuePlaybackOptions): void;
   dispose(): Promise<void>;
 }
@@ -51,14 +64,6 @@ const MODE_NAMES: Record<SensoryModeId, ModeName> = {
   ujjayi: ModeName.Ujjayi,
   belly: ModeName.Belly,
   "pursed-lip": ModeName.PursedLip,
-};
-
-const NOISE_PRESETS: Partial<Record<SensorySoundscape, NoisePreset>> = {
-  air: { baseHz: 1_100, peakHz: 4_200, q: 0.35, gainScale: 0.82 },
-  rain: { baseHz: 480, peakHz: 2_400, q: 0.7, gainScale: 1.08 },
-  ocean: { baseHz: 300, peakHz: 1_800, q: 0.7, gainScale: 1.15 },
-  "deep-ocean": { baseHz: 180, peakHz: 950, q: 0.6, gainScale: 1.12 },
-  "soft-noise": { baseHz: 350, peakHz: 1_100, q: 0.4, gainScale: 0.9 },
 };
 
 const clamp01 = (value: number) => Math.max(0, Math.min(1, value));
@@ -98,6 +103,7 @@ export class StudioAudioPreview {
   private generation = 0;
   private latestProfile: SensoryProfileV1 | null = null;
   private playing = false;
+  private playbackStartedAtMs: number | null = null;
   private starting = false;
 
   constructor(private readonly audio: StudioAudioService = new AudioService()) {}
@@ -115,6 +121,7 @@ export class StudioAudioPreview {
       this.failStart(generation);
       return false;
     }
+    this.applyStaticProfile(this.latestProfile ?? profile);
 
     while (this.isCurrent(generation)) {
       const currentProfile = this.latestProfile ?? profile;
@@ -130,6 +137,7 @@ export class StudioAudioPreview {
       if (this.getAmbientSignature(latestProfile) !== ambientSignature) continue;
 
       this.starting = false;
+      this.playbackStartedAtMs = null;
       this.playPhaseCue(latestProfile, phase);
       return true;
     }
@@ -142,6 +150,7 @@ export class StudioAudioPreview {
     this.applyStaticProfile(profile);
     const ready = await this.resumeWithTimeout();
     if (!ready || generation !== this.auditionGeneration) return false;
+    this.applyStaticProfile(profile);
     this.playPhaseCue(profile, phase);
     return true;
   }
@@ -164,6 +173,10 @@ export class StudioAudioPreview {
     this.audio.updateSpatial(time);
     this.audio.updatePinkNoisePhase(audioPhase, progress);
     this.audio.updatePhaseEnvelope(audioPhase, progress);
+    if (this.latestProfile?.audio.engine.sessionArcEnabled) {
+      this.playbackStartedAtMs ??= time;
+      this.audio.tickSessionArc(Math.max(0, (time - this.playbackStartedAtMs) / 1_000));
+    }
   }
 
   playPhaseCue(profile: SensoryProfileV1, phase: SensoryPhaseId) {
@@ -184,6 +197,7 @@ export class StudioAudioPreview {
     this.ambientSignature = null;
     this.auditionGeneration += 1;
     this.generation += 1;
+    this.playbackStartedAtMs = null;
     this.stopAmbient();
     this.audio.stopCues();
   }
@@ -194,10 +208,37 @@ export class StudioAudioPreview {
   }
 
   private applyStaticProfile(profile: SensoryProfileV1) {
+    const engine = profile.audio.engine;
     this.audio.setBreathingMode(MODE_NAMES[profile.modeId]);
     this.audio.setThemeColor(profile.palette.orb);
     this.audio.setVolume(profile.audio.cueVolume, profile.audio.ambientVolume);
-    this.audio.setPhaseEnvelopeGain(profile.audio.breathModulation);
+    this.audio.setCompressorParams(engine.compressor);
+    this.audio.setLimiterParams(engine.limiter);
+    this.audio.setMasterTrim(engine.masterTrim);
+    this.audio.setDroneGain(engine.droneScale);
+    this.audio.setSubBassGain(engine.subBassScale);
+    this.audio.setSubBassFreqMultiplier(engine.subBassFreqMultiplier);
+    this.audio.setPinkNoiseGain(engine.pinkNoiseScale);
+    this.audio.setPinkNoiseFilterRange({
+      baseHz: engine.pinkNoiseFilter.baseHz,
+      peakHz:
+        engine.pinkNoiseFilter.baseHz +
+        (engine.pinkNoiseFilter.peakHz - engine.pinkNoiseFilter.baseHz) *
+          clamp01(profile.audio.breathModulation),
+      q: engine.pinkNoiseFilter.q,
+    });
+    this.audio.setBinauralGain(engine.binauralScale);
+    this.audio.setPhaseEnvelopeGain(
+      engine.phaseEnvelopeScale * clamp01(profile.audio.breathModulation),
+    );
+    this.audio.setPhaseEnvelopeFreqMultiplier(engine.phaseEnvelopeFreqMultiplier);
+    this.audio.setCueToneScale(engine.cueToneScale);
+    this.audio.setCueNoiseScale(engine.cueNoiseScale);
+    this.audio.setCueReverbMix(engine.cueReverbMix);
+    this.audio.setArcWindowSeconds(engine.arcWindowSeconds);
+    this.audio.setArcRootDriftFactor(engine.arcRootDriftFactor);
+    this.audio.setArcLfoSlowdownFactor(engine.arcLfoSlowdownFactor);
+    this.audio.setArcOrbitSlowdownFactor(engine.arcOrbitSlowdownFactor);
   }
 
   private async resumeWithTimeout() {
@@ -213,10 +254,15 @@ export class StudioAudioPreview {
   }
 
   private getAmbientSignature(profile: SensoryProfileV1) {
+    const engine = profile.audio.engine;
     return [
-      profile.audio.soundscape,
       profile.palette.orb,
-      profile.audio.breathModulation.toFixed(3),
+      engine.droneEnabled,
+      engine.pinkNoiseEnabled,
+      engine.subBassEnabled,
+      engine.binauralEnabled,
+      engine.phaseEnvelopeEnabled,
+      engine.binauralBeatHz.toFixed(2),
     ].join(":");
   }
 
@@ -243,39 +289,14 @@ export class StudioAudioPreview {
   }
 
   private async startAmbient(profile: SensoryProfileV1) {
-    const { soundscape, breathModulation } = profile.audio;
-    if (soundscape === "silence") return;
-
-    this.audio.setPinkNoiseGain(1);
-    this.audio.setDroneGain(1);
-    this.audio.setSubBassGain(1);
-
-    if (soundscape === "warm-drone") {
-      this.audio.setDroneGain(0.9);
-      this.audio.setSubBassGain(0.6);
-      const starts: Array<Promise<void>> = [
-        this.audio.startDrone(profile.palette.orb),
-        this.audio.startSubBass(profile.palette.orb),
-      ];
-      if (breathModulation > 0) starts.push(this.audio.startPhaseEnvelope(profile.palette.orb));
-      await Promise.all(starts);
-      return;
-    }
-
-    const preset = NOISE_PRESETS[soundscape];
-    if (!preset) return;
-    const modulation = clamp01(breathModulation);
-    this.audio.setPinkNoiseGain(preset.gainScale);
-    this.audio.setPinkNoiseFilterRange({
-      baseHz: preset.baseHz,
-      peakHz: preset.baseHz + (preset.peakHz - preset.baseHz) * modulation,
-      q: preset.q,
-    });
-
-    const starts: Array<Promise<void>> = [this.audio.startPinkNoise()];
-    if (soundscape === "deep-ocean") {
-      this.audio.setSubBassGain(0.72);
-      starts.push(this.audio.startSubBass(profile.palette.orb));
+    const engine = profile.audio.engine;
+    const starts: Array<Promise<void>> = [];
+    if (engine.droneEnabled) starts.push(this.audio.startDrone(profile.palette.orb));
+    if (engine.pinkNoiseEnabled) starts.push(this.audio.startPinkNoise());
+    if (engine.subBassEnabled) starts.push(this.audio.startSubBass(profile.palette.orb));
+    if (engine.binauralEnabled) starts.push(this.audio.startBinaural(engine.binauralBeatHz));
+    if (engine.phaseEnvelopeEnabled) {
+      starts.push(this.audio.startPhaseEnvelope(profile.palette.orb));
     }
     await Promise.all(starts);
   }

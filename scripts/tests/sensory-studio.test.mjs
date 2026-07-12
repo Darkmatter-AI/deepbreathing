@@ -62,6 +62,11 @@ test("sensory studio supports safe no-code profile iteration", () => {
   assert.match(source, /Phase position/);
   assert.match(source, /Color & light/);
   assert.match(source, /Motion & particles/);
+  assert.match(source, /Audio stack/);
+  assert.match(source, /Binaural synth/);
+  assert.match(source, /Layer mixer/);
+  assert.match(source, /Evolution & mastering/);
+  assert.match(source, /Production baseline/);
   assert.match(source, /Guidance & landing/);
   assert.match(
     source,
@@ -102,7 +107,13 @@ test("sensory studio reuses the production audio engine", () => {
   assert.match(audioPreview, /startPinkNoise/);
   assert.match(audioPreview, /startDrone/);
   assert.match(audioPreview, /startSubBass/);
+  assert.match(audioPreview, /startBinaural/);
+  assert.match(audioPreview, /startPhaseEnvelope/);
+  assert.match(audioPreview, /tickSessionArc/);
   assert.match(audioPreview, /updatePinkNoisePhase/);
+  assert.match(audioPreview, /setCompressorParams/);
+  assert.match(audioPreview, /setLimiterParams/);
+  assert.match(audioPreview, /setMasterTrim/);
   assert.match(audioPreview, /pitchSemitones: phaseAudio\.pitchSemitones/);
   assert.match(audioService, /tone\.detune \+ pitchSemitones \* 100/);
   assert.match(audioService, /cueToneScale \* gainScale/);
