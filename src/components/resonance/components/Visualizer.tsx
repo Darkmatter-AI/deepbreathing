@@ -4,7 +4,17 @@ import React, { useMemo } from 'react';
 import { Play } from 'lucide-react';
 import { BreathingPhase } from '../types';
 
-interface VisualizerProps {
+export interface VisualizerTuning {
+  accentColor?: string;
+  edgeGlow?: number;
+  hueShiftDegrees?: number;
+  lightIntensity?: number;
+  maxScale?: number;
+  minScale?: number;
+  morphAmount?: number;
+}
+
+export interface VisualizerProps {
   phase: BreathingPhase;
   progress: number;
   scale: number;
@@ -13,50 +23,79 @@ interface VisualizerProps {
   instructions: string;
   isRunning: boolean;
   onClick: () => void;
+  interactionLabel?: string;
+  tuning?: VisualizerTuning;
 }
 
-const Visualizer: React.FC<VisualizerProps> = ({ scale, color, label, instructions, isRunning, onClick }) => {
-  const blobScale = 0.6 + scale * 0.4;
-  const glowScale = 0.65 + scale * 0.5;
+const clamp01 = (value: number) => Math.max(0, Math.min(1, value));
+
+const Visualizer: React.FC<VisualizerProps> = ({
+  scale,
+  color,
+  label,
+  instructions,
+  isRunning,
+  onClick,
+  interactionLabel,
+  tuning,
+}) => {
+  const normalizedScale = clamp01(scale);
+  const minScale = tuning?.minScale ?? 0.6;
+  const maxScale = tuning?.maxScale ?? 1;
+  const accentColor = tuning?.accentColor ?? color;
+  const lightIntensity = clamp01(tuning?.lightIntensity ?? 1);
+  const edgeGlow = clamp01(tuning?.edgeGlow ?? 1);
+  const morphDuration = tuning?.morphAmount === undefined
+    ? 16
+    : 22 - clamp01(tuning.morphAmount) * 15;
+  const blobScale = minScale + normalizedScale * (maxScale - minScale);
+  const glowScale = 0.65 + normalizedScale * 0.5;
 
   const orbStyle = useMemo(
     () => ({
       backgroundColor: color,
-      boxShadow: `inset 0 0 40px ${color}55`
+      boxShadow: `inset 0 0 40px ${accentColor}55`
     }),
-    [color]
+    [accentColor, color]
   );
 
   const orbTransformStyle = {
     transform: `scale(${blobScale})`,
-    animation: 'morph 16s ease-in-out infinite, hue-rotate 20s linear infinite'
+    animation: `morph ${morphDuration}s ease-in-out infinite, hue-rotate 20s linear infinite`
   };
 
   const glowStyle = useMemo(
     () => ({
-      backgroundColor: color,
+      backgroundColor: accentColor,
       filter: 'blur(50px)',
       transform: `scale(${glowScale})`,
       width: '180%',
       height: '180%',
       borderRadius: '50%',
-      opacity: 0.32,
+      opacity: 0.32 * lightIntensity,
       willChange: 'transform, opacity'
     }),
-    [color, glowScale]
+    [accentColor, glowScale, lightIntensity]
   );
 
   const ringStyle = useMemo(
     () => ({
-      borderColor: `${color}55`,
+      borderColor: `${accentColor}55`,
+      opacity: 0.3 * edgeGlow,
       transform: 'scale(1.08)',
       animation: 'morph 30s ease-in-out infinite'
     }),
-    [color]
+    [accentColor, edgeGlow]
   );
+  const rootStyle = tuning?.hueShiftDegrees === undefined
+    ? undefined
+    : { filter: `hue-rotate(${tuning.hueShiftDegrees}deg)` };
 
   return (
-    <div className="relative z-10 flex h-64 w-64 flex-col items-center justify-center sm:h-80 sm:w-80 md:h-96 md:w-96">
+    <div
+      className="relative z-10 flex h-64 w-64 flex-col items-center justify-center sm:h-80 sm:w-80 md:h-96 md:w-96"
+      style={rootStyle}
+    >
       <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
         <span className="block rounded-full" aria-hidden style={glowStyle} />
       </div>
@@ -72,7 +111,7 @@ const Visualizer: React.FC<VisualizerProps> = ({ scale, color, label, instructio
         onClick={onClick}
         className="group absolute z-20 flex h-full w-full cursor-pointer items-center justify-center rounded-full outline-none hover:brightness-110 animate-blob animate-hue"
         style={{ ...orbStyle, ...orbTransformStyle }}
-        aria-label={isRunning ? 'Pause Session' : 'Start Session'}
+        aria-label={interactionLabel ?? (isRunning ? 'Pause Session' : 'Start Session')}
       />
 
       {/* Overlay Content (Not Scaled) */}

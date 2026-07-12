@@ -1,5 +1,21 @@
 # Progress
 
+## 2026-07-12
+
+### Sensory Studio
+
+Built the first internal authoring surface for composing breathing scenes without editing code.
+
+- Added a shared, versioned sensory-profile contract for web and mobile with authored defaults for Box, 4-7-8, Coherent, Physiological Sigh, Ujjayi, Belly, and Pursed Lip.
+- Added `/sensory-studio`, a no-index live workspace for tuning each mode's palette, motion, particle field, soundscape, phase cues, haptics, instruction fade, and landing state.
+- Reused the production web `Visualizer` and `ParticleBackground` directly in the canvas instead of maintaining a lookalike orb. Both renderers now accept optional tuning values while retaining their shipping defaults when the tuning object is absent.
+- Added phase playback and scrubbing so inhale, top-up, holds, exhale, and settle can be adjusted in context.
+- Added local draft persistence, undo/redo, per-mode reset, normalized JSON import, candidate export, and a Copy for Codex handoff.
+- Isolated the route from the production GA page-view funnel and excluded it, including localized variants, from sitemap discovery.
+- The Studio creates candidates only. It cannot publish to production; user-facing profiles still require code review, physical-device validation, TestFlight, and a logged product experiment.
+
+Next: use Physiological Sigh as the first full sensory-profile vertical slice, consolidate the still-forked TestFlight renderer, then add an authenticated, revisioned candidate workflow if browser-local drafts prove useful.
+
 ## 2026-04-23
 
 ### Brand Exploration Page
