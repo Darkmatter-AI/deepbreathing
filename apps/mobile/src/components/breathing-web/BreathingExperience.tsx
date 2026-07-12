@@ -1137,22 +1137,24 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
         <ParticleBackground phase={phase} color={themeColor} speedMultiplier={speedMultiplier} />
       )}
 
-      <header
-        className="fixed inset-x-0 top-0 z-30 flex items-center justify-end gap-2 p-6"
-        style={{
-          paddingTop: safeAreaInsets.top + 24,
-          paddingRight: safeAreaInsets.right + 24,
-          paddingLeft: safeAreaInsets.left + 24,
-        }}
-      >
-        <button
-          onClick={() => setControlsOpen(true)}
-          className="inline-flex items-center justify-center rounded-full border border-border/60 bg-card/80 p-2.5 text-muted-foreground shadow-sm backdrop-blur transition-colors hover:bg-card dark:border-border/40 dark:bg-card/40 dark:text-card-foreground"
-          aria-label={getSafePhrase('ui.settings')}
+      {!isRunning && (
+        <header
+          className="fixed inset-x-0 top-0 z-30 flex items-center justify-end gap-2 p-6"
+          style={{
+            paddingTop: safeAreaInsets.top + 24,
+            paddingRight: safeAreaInsets.right + 24,
+            paddingLeft: safeAreaInsets.left + 24,
+          }}
         >
-          <SettingsIcon size={16} />
-        </button>
-      </header>
+          <button
+            onClick={() => setControlsOpen(true)}
+            className="inline-flex items-center justify-center rounded-full border border-border/60 bg-card/80 p-2.5 text-muted-foreground shadow-sm backdrop-blur transition-colors hover:bg-card dark:border-border/40 dark:bg-card/40 dark:text-card-foreground"
+            aria-label={getSafePhrase('ui.settings')}
+          >
+            <SettingsIcon size={16} />
+          </button>
+        </header>
+      )}
 
       <main className={`relative z-10 flex flex-1 flex-col items-center justify-center sm:pb-0 ${noMobileBottomPad ? 'pb-24' : 'pb-44'}`}>
         {/* Protocol UI: Round and breath counter */}

@@ -47,16 +47,23 @@ test("completion UI branches between guest receipt and registered banner", () =>
   assert.doesNotMatch(source, /AUTO_DISMISS_MS/);
 });
 
-test("mode drawer uses a four-row gesture sheet with tap-away dismissal", () => {
+test("mode drawer is a persistent two-detent sheet that follows the drag", () => {
   const source = fs.readFileSync(
     path.join(ROOT, "apps/mobile/src/components/ModeLibrarySheet.tsx"),
     "utf8"
   );
   assert.match(source, /VISIBLE_ROWS = 4/);
+  assert.match(source, /<BottomSheet/);
   assert.match(source, /BottomSheetScrollView/);
-  assert.match(source, /enablePanDownToClose/);
+  assert.match(source, /snapPoints=\{snapPoints\}/);
+  assert.match(source, /index=\{0\}/);
+  assert.match(source, /enablePanDownToClose=\{false\}/);
   assert.match(source, /enableContentPanningGesture/);
-  assert.match(source, /pressBehavior="close"/);
+  assert.match(source, /pressBehavior=\{0\}/);
+  assert.match(source, /snapToIndex\(0\)/);
+  assert.match(source, /snapToIndex\(1\)/);
+  assert.doesNotMatch(source, /BottomSheetModal/);
+  assert.doesNotMatch(source, /GestureDetector/);
   assert.doesNotMatch(source, /PanResponder/);
 });
 
@@ -77,6 +84,7 @@ test("native shell owns silent-mode audio, phase cues, edge glow, and account po
   assert.match(background, /audioState\.active && !audioState\.muted/);
   assert.match(experience, /if \(!isNativeApp\) getAudioService\(\)\.playCue/);
   assert.match(experience, /soundHintMounted && !isNativeApp/);
+  assert.match(experience, /\{!isRunning && \(\s*<header/);
   assert.doesNotMatch(experience, /Turtle/);
   assert.doesNotMatch(experience, /Rabbit/);
 });

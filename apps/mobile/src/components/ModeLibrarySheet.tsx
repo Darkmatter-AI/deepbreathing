@@ -1,13 +1,10 @@
 import { useCallback, useMemo, useRef } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
-import {
+import BottomSheet, {
   BottomSheetBackdrop,
-  BottomSheetModal,
   BottomSheetScrollView,
   type BottomSheetBackdropProps,
 } from '@gorhom/bottom-sheet';
-import { Gesture, GestureDetector } from 'react-native-gesture-handler';
-import { runOnJS } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { ModeName, BREATHING_PATTERNS } from './breathing-web/constants';
@@ -37,12 +34,18 @@ interface Props {
 
 const ROW_HEIGHT = 62;
 const VISIBLE_ROWS = 4;
+const HANDLE_HEIGHT = 24;
+const DRAWER_LABEL_HEIGHT = 32;
 
 export default function ModeLibrarySheet({ theme, activeModeName, onSelectMode }: Props) {
   const insets = useSafeAreaInsets();
-  const sheetRef = useRef<BottomSheetModal>(null);
-  const sheetHeight = 24 + ROW_HEIGHT * VISIBLE_ROWS + insets.bottom + 12;
-  const snapPoints = useMemo(() => [sheetHeight], [sheetHeight]);
+  const sheetRef = useRef<BottomSheet>(null);
+  const collapsedHeight = HANDLE_HEIGHT + DRAWER_LABEL_HEIGHT + insets.bottom;
+  const expandedHeight = collapsedHeight + ROW_HEIGHT * VISIBLE_ROWS;
+  const snapPoints = useMemo(
+    () => [collapsedHeight, expandedHeight],
+    [collapsedHeight, expandedHeight],
+  );
 
   const light = theme === 'light';
   const bg = light ? '#fdf8f2' : '#221711';
@@ -52,111 +55,84 @@ export default function ModeLibrarySheet({ theme, activeModeName, onSelectMode }
   const rowSep = light ? '#e8d5b7cc' : '#3a2a1a99';
   const handleColor = light ? '#c4a882' : '#5a4030';
 
-  const openSheet = useCallback(() => sheetRef.current?.present(), []);
-  const closeSheet = useCallback(() => sheetRef.current?.dismiss(), []);
-  const pullGesture = useMemo(
-    () => Gesture.Pan()
-      .activeOffsetY([-999, -8])
-      .onEnd((event) => {
-        if (event.translationY < -8) runOnJS(openSheet)();
-      }),
-    [openSheet],
-  );
   const renderBackdrop = useCallback(
     (props: BottomSheetBackdropProps) => (
       <BottomSheetBackdrop
         {...props}
-        appearsOnIndex={0}
-        disappearsOnIndex={-1}
+        appearsOnIndex={1}
+        disappearsOnIndex={0}
         opacity={0.45}
-        pressBehavior="close"
+        pressBehavior={0}
       />
     ),
     [],
   );
   const handleRowPress = useCallback((mode: ModeName) => {
     onSelectMode(mode);
-    closeSheet();
-  }, [closeSheet, onSelectMode]);
+    sheetRef.current?.snapToIndex(0);
+  }, [onSelectMode]);
 
   return (
-    <>
-      <GestureDetector gesture={pullGesture}>
+    <BottomSheet
+      ref={sheetRef}
+      index={0}
+      snapPoints={snapPoints}
+      animateOnMount={false}
+      enableDynamicSizing={false}
+      enablePanDownToClose={false}
+      enableContentPanningGesture
+      enableHandlePanningGesture
+      backdropComponent={renderBackdrop}
+      backgroundStyle={{ backgroundColor: bg, borderColor: border, borderWidth: StyleSheet.hairlineWidth }}
+      handleIndicatorStyle={{ backgroundColor: handleColor, width: 42 }}
+      style={styles.sheet}
+    >
+      <BottomSheetScrollView
+        contentContainerStyle={styles.rowList}
+        showsVerticalScrollIndicator
+      >
         <Pressable
-          onPress={openSheet}
-          style={[styles.trigger, { bottom: insets.bottom + 2, backgroundColor: bg, borderColor: border }]}
+          onPress={() => sheetRef.current?.snapToIndex(1)}
+          style={[styles.drawerLabel, { height: DRAWER_LABEL_HEIGHT + insets.bottom }]}
           accessibilityRole="button"
           accessibilityLabel="Open mode library"
         >
-          <View style={[styles.triggerHandle, { backgroundColor: handleColor }]} />
-          <Text style={[styles.triggerLabel, { color: subtle }]}>Modes</Text>
+          <Text style={[styles.drawerLabelText, { color: subtle }]}>Modes</Text>
         </Pressable>
-      </GestureDetector>
-
-      <BottomSheetModal
-        ref={sheetRef}
-        index={0}
-        snapPoints={snapPoints}
-        enableDynamicSizing={false}
-        enablePanDownToClose
-        enableContentPanningGesture
-        enableHandlePanningGesture
-        backdropComponent={renderBackdrop}
-        backgroundStyle={{ backgroundColor: bg, borderColor: border, borderWidth: StyleSheet.hairlineWidth }}
-        handleIndicatorStyle={{ backgroundColor: handleColor, width: 42 }}
-      >
-        <BottomSheetScrollView
-          contentContainerStyle={[styles.rowList, { paddingBottom: insets.bottom + 12 }]}
-          showsVerticalScrollIndicator
-        >
-          {SHIPPED_MODES.map((entry, index) => {
-            const active = activeModeName === entry.name || (activeModeName === null && entry.name === ModeName.Box);
-            return (
-              <Pressable
-                key={entry.name}
-                style={({ pressed }) => [
-                  styles.row,
-                  index < SHIPPED_MODES.length - 1 && { borderBottomColor: rowSep, borderBottomWidth: StyleSheet.hairlineWidth },
-                  pressed && styles.pressed,
-                ]}
-                onPress={() => handleRowPress(entry.name)}
-                accessibilityRole="button"
-                accessibilityLabel={`Switch to ${entry.name}`}
-                accessibilityState={{ selected: active }}
-              >
-                <View style={[styles.dot, { backgroundColor: entry.color }]} />
-                <View style={styles.rowText}>
-                  <Text style={[styles.modeName, { color: text }]}>{entry.name}</Text>
-                  <Text style={[styles.modeDetail, { color: subtle }]}>{entry.phaseLabel} · {entry.use}</Text>
-                </View>
-                {active ? <Text style={[styles.check, { color: entry.color }]}>✓</Text> : null}
-              </Pressable>
-            );
-          })}
-        </BottomSheetScrollView>
-      </BottomSheetModal>
-    </>
+        {SHIPPED_MODES.map((entry, index) => {
+          const active = activeModeName === entry.name || (activeModeName === null && entry.name === ModeName.Box);
+          return (
+            <Pressable
+              key={entry.name}
+              style={({ pressed }) => [
+                styles.row,
+                index < SHIPPED_MODES.length - 1 && { borderBottomColor: rowSep, borderBottomWidth: StyleSheet.hairlineWidth },
+                pressed && styles.pressed,
+              ]}
+              onPress={() => handleRowPress(entry.name)}
+              accessibilityRole="button"
+              accessibilityLabel={`Switch to ${entry.name}`}
+              accessibilityState={{ selected: active }}
+            >
+              <View style={[styles.dot, { backgroundColor: entry.color }]} />
+              <View style={styles.rowText}>
+                <Text style={[styles.modeName, { color: text }]}>{entry.name}</Text>
+                <Text style={[styles.modeDetail, { color: subtle }]}>{entry.phaseLabel} · {entry.use}</Text>
+              </View>
+              {active ? <Text style={[styles.check, { color: entry.color }]}>✓</Text> : null}
+            </Pressable>
+          );
+        })}
+      </BottomSheetScrollView>
+    </BottomSheet>
   );
 }
 
 const styles = StyleSheet.create({
-  trigger: {
-    position: 'absolute',
-    zIndex: 90,
-    alignSelf: 'center',
-    minWidth: 92,
-    height: 38,
-    borderTopLeftRadius: 16,
-    borderTopRightRadius: 16,
-    borderWidth: StyleSheet.hairlineWidth,
-    borderBottomWidth: 0,
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 3,
-  },
-  triggerHandle: { width: 34, height: 4, borderRadius: 2, opacity: 0.55 },
-  triggerLabel: { fontSize: 11, fontWeight: '600', letterSpacing: 0.5 },
+  sheet: { zIndex: 90 },
   rowList: { paddingHorizontal: 20 },
+  drawerLabel: { alignItems: 'center', justifyContent: 'flex-start' },
+  drawerLabelText: { fontSize: 11, fontWeight: '600', letterSpacing: 0.5 },
   row: { minHeight: ROW_HEIGHT, flexDirection: 'row', alignItems: 'center', gap: 14, paddingVertical: 10 },
   pressed: { opacity: 0.62 },
   dot: { width: 12, height: 12, borderRadius: 6 },
