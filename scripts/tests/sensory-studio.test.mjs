@@ -14,6 +14,14 @@ const PARTICLES_FILE = path.join(
   ROOT,
   "src/components/resonance/components/ParticleBackground.tsx",
 );
+const AUDIO_PREVIEW_FILE = path.join(
+  ROOT,
+  "src/components/resonance/services/sensoryAudioPreview.ts",
+);
+const AUDIO_SERVICE_FILE = path.join(
+  ROOT,
+  "src/components/resonance/services/audioService.ts",
+);
 
 test("sensory studio is an isolated no-index authoring surface", () => {
   assert.ok(fs.existsSync(PAGE_FILE), "missing sensory studio route");
@@ -80,4 +88,23 @@ test("sensory studio reuses the production visual engine", () => {
   assert.match(particles, /currentTuning\?\.smoothing === undefined[\s\S]*?\? 0\.05/);
   assert.match(particles, /currentTuning\?\.flow/);
   assert.match(particles, /currentTuning\?\.gravityOffsetY/);
+});
+
+test("sensory studio reuses the production audio engine", () => {
+  const studio = fs.readFileSync(STUDIO_FILE, "utf8");
+  const audioPreview = fs.readFileSync(AUDIO_PREVIEW_FILE, "utf8");
+  const audioService = fs.readFileSync(AUDIO_SERVICE_FILE, "utf8");
+
+  assert.match(studio, /services\/sensoryAudioPreview/);
+  assert.match(studio, /new StudioAudioPreview\(\)/);
+  assert.doesNotMatch(studio, /new AudioContext|createOscillator\(|context\.destination/);
+  assert.match(audioPreview, /new AudioService\(\)/);
+  assert.match(audioPreview, /startPinkNoise/);
+  assert.match(audioPreview, /startDrone/);
+  assert.match(audioPreview, /startSubBass/);
+  assert.match(audioPreview, /updatePinkNoisePhase/);
+  assert.match(audioPreview, /pitchSemitones: phaseAudio\.pitchSemitones/);
+  assert.match(audioService, /tone\.detune \+ pitchSemitones \* 100/);
+  assert.match(audioService, /cueToneScale \* gainScale/);
+  assert.match(audioService, /public async dispose\(\)/);
 });

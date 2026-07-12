@@ -36,6 +36,12 @@ describe('sensory profile contract', () => {
       expect(profile.phases.exhale.visual.orbScale).toBe(0);
       expect(profile.phases.inhale.visual.particleFlow).toBeLessThanOrEqual(0);
       expect(profile.phases.exhale.visual.particleFlow).toBeGreaterThanOrEqual(0);
+      for (const phaseId of SENSORY_PHASE_IDS) {
+        expect(profile.phases[phaseId].audio.pitchSemitones).toBe(0);
+        expect(['none', 'soft-rise', 'crisp-tick', 'long-release']).toContain(
+          profile.phases[phaseId].audio.cue,
+        );
+      }
       expect(JSON.parse(JSON.stringify(profile))).toEqual(profile);
     }
   });
@@ -50,7 +56,7 @@ describe('sensory profile contract', () => {
     expect(DEFAULT_SENSORY_PROFILES.coherent.phases.inhale.visual.curve).toBe('sine');
     expect(DEFAULT_SENSORY_PROFILES.coherent.audio.breathModulation).toBeGreaterThan(0.8);
 
-    expect(DEFAULT_SENSORY_PROFILES.sigh.phases.inhale2.audio.cue).toBe('top-up');
+    expect(DEFAULT_SENSORY_PROFILES.sigh.phases.inhale2.audio.cue).toBe('soft-rise');
     expect(DEFAULT_SENSORY_PROFILES.sigh.phases.inhale2.haptic.pattern).toBe('top-up');
 
     expect(DEFAULT_SENSORY_PROFILES.ujjayi.audio.soundscape).toBe('deep-ocean');
@@ -115,7 +121,7 @@ describe('normalizeSensoryProfile', () => {
       hueShiftDegrees: 180,
       curve: 'ease-in',
     });
-    expect(profile?.phases.inhale.audio).toMatchObject({ volume: 0, pitchSemitones: 24, cue: 'soft-bell' });
+    expect(profile?.phases.inhale.audio).toMatchObject({ volume: 0, pitchSemitones: 6, cue: 'soft-bell' });
     expect(profile?.phases.inhale.haptic).toEqual({
       pattern: 'crisp',
       intensity: 1,

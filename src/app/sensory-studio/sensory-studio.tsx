@@ -14,7 +14,12 @@ import {
 } from "@resonance/domain";
 import ParticleBackground from "@/components/resonance/components/ParticleBackground";
 import Visualizer from "@/components/resonance/components/Visualizer";
+import { StudioAudioPreview } from "@/components/resonance/services/sensoryAudioPreview";
 import { BreathingPhase } from "@/components/resonance/types";
+import {
+  isLegacyStudioDraft,
+  migrateLegacyAudioInput,
+} from "./sensoryStudioMigration";
 import {
   Check,
   ChevronDown,
@@ -34,8 +39,9 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 import styles from "./sensory-studio.module.css";
 
-const STORAGE_VERSION = 1;
+const STORAGE_VERSION = 2;
 const STORAGE_KEY = `resonance:sensory-studio:v${STORAGE_VERSION}`;
+const LEGACY_STORAGE_KEY = "resonance:sensory-studio:v1";
 const MAX_HISTORY = 60;
 
 const {
@@ -47,6 +53,7 @@ const {
 
 type ProfileMap = Record<SensoryModeId, SensoryProfileV1>;
 type SaveState = "loading" | "saving" | "saved" | "unavailable";
+type AudioPreviewState = "idle" | "starting" | "live" | "blocked";
 
 type StudioDraft = {
   storageVersion: number;
@@ -104,13 +111,9 @@ const SOUNDSCAPES = [
 
 const PHASE_CUES = [
   ["none", "No cue"],
-  ["soft-rise", "Soft rise"],
-  ["top-up", "Top-up breath"],
-  ["crisp-tick", "Crisp tick"],
-  ["soft-bell", "Soft bell"],
-  ["long-release", "Long release"],
-  ["ocean-turn", "Ocean turn"],
-  ["warm-pulse", "Warm pulse"],
+  ["soft-rise", "Production inhale"],
+  ["crisp-tick", "Production hold"],
+  ["long-release", "Production exhale"],
 ] as const;
 
 const HAPTIC_PATTERNS = [
@@ -154,7 +157,10 @@ function makeDraft(profiles: ProfileMap, activeModeId: SensoryModeId): StudioDra
   };
 }
 
-function parseImportedProfiles(input: unknown): { profiles: Partial<ProfileMap>; firstMode: SensoryModeId } | null {
+function parseImportedProfiles(
+  input: unknown,
+  migrateLegacyAudio = false,
+): { profiles: Partial<ProfileMap>; firstMode: SensoryModeId } | null {
   const candidateProfiles =
     typeof input === "object" && input !== null && "profiles" in input && Array.isArray(input.profiles)
       ? input.profiles
@@ -164,7 +170,9 @@ function parseImportedProfiles(input: unknown): { profiles: Partial<ProfileMap>;
   let firstMode: SensoryModeId | null = null;
 
   for (const candidate of candidateProfiles) {
-    const normalized = normalizeSensoryProfile(candidate);
+    const normalized = normalizeSensoryProfile(
+      migrateLegacyAudio ? migrateLegacyAudioInput(candidate) : candidate,
+    );
     if (normalized) {
       profiles[normalized.modeId] = normalized;
       firstMode ??= normalized.modeId;
@@ -402,77 +410,46 @@ function BreathingPreview({
 }) {
   const sequence = PHASE_SEQUENCES[profile.modeId];
   const [isPlaying, setIsPlaying] = useState(false);
+  const [audioState, setAudioState] = useState<AudioPreviewState>("idle");
   const [previewPhaseId, setPreviewPhaseId] = useState<SensoryPhaseId>(selectedPhaseId);
   const [progress, setProgress] = useState(0.42);
   const progressRef = useRef(progress);
   const phaseRef = useRef(previewPhaseId);
   const isPlayingRef = useRef(isPlaying);
-  const audioContextRef = useRef<AudioContext | null>(null);
+  const playbackRequestedRef = useRef(false);
+  const audioRequestRef = useRef(0);
+  const startAtBeginningRef = useRef(true);
+  const profileRef = useRef(profile);
+  const audioPreviewRef = useRef<StudioAudioPreview | null>(null);
+  const previousModeIdRef = useRef(profile.modeId);
+
+  const getAudioPreview = useCallback(() => {
+    audioPreviewRef.current ??= new StudioAudioPreview();
+    return audioPreviewRef.current;
+  }, []);
+
+  useEffect(() => {
+    profileRef.current = profile;
+  }, [profile]);
 
   useEffect(() => {
     isPlayingRef.current = isPlaying;
   }, [isPlaying]);
 
   useEffect(() => {
-    if (isPlayingRef.current) return;
+    if (playbackRequestedRef.current) return;
     phaseRef.current = selectedPhaseId;
     progressRef.current = 0.42;
+    startAtBeginningRef.current = true;
     setPreviewPhaseId(selectedPhaseId);
     setProgress(0.42);
   }, [selectedPhaseId]);
 
-  const auditionCue = useCallback(
-    (phaseId: SensoryPhaseId, force = false) => {
-      if ((!profile.guidance.audioCues && !force) || typeof window === "undefined") return;
-      const cue = profile.phases[phaseId].audio;
-      if (cue.cue === "none") return;
-
-      const AudioContextConstructor = window.AudioContext;
-      if (!AudioContextConstructor) return;
-
-      const context = audioContextRef.current ?? new AudioContextConstructor();
-      audioContextRef.current = context;
-      void context.resume();
-
-      const oscillator = context.createOscillator();
-      const gain = context.createGain();
-      const now = context.currentTime;
-      const cueFrequency: Record<typeof cue.cue, number> = {
-        "soft-rise": 330,
-        "top-up": 460,
-        "crisp-tick": 720,
-        "soft-bell": 540,
-        "long-release": 260,
-        "ocean-turn": 300,
-        "warm-pulse": 210,
-      };
-      const duration = cue.cue === "long-release" ? 0.7 : cue.cue === "crisp-tick" ? 0.09 : 0.32;
-      const frequency = cueFrequency[cue.cue] * Math.pow(2, cue.pitchSemitones / 12);
-
-      oscillator.type = cue.cue === "crisp-tick" ? "square" : "sine";
-      oscillator.frequency.setValueAtTime(frequency, now);
-      if (cue.cue === "soft-rise" || cue.cue === "top-up") {
-        oscillator.frequency.exponentialRampToValueAtTime(frequency * 1.22, now + duration);
-      } else if (cue.cue === "long-release") {
-        oscillator.frequency.exponentialRampToValueAtTime(frequency * 0.72, now + duration);
-      }
-      gain.gain.setValueAtTime(0.0001, now);
-      gain.gain.exponentialRampToValueAtTime(
-        Math.max(0.0001, cue.volume * profile.audio.cueVolume * 0.12),
-        now + 0.02,
-      );
-      gain.gain.exponentialRampToValueAtTime(0.0001, now + duration);
-      oscillator.connect(gain).connect(context.destination);
-      oscillator.start(now);
-      oscillator.stop(now + duration + 0.03);
-    },
-    [profile],
-  );
-
   const auditionHaptic = useCallback(
     (phaseId: SensoryPhaseId, force = false) => {
-      if ((!profile.guidance.haptics && !force) || !("vibrate" in navigator)) return;
-      const haptic = profile.phases[phaseId].haptic;
+      const currentProfile = profileRef.current;
+      if ((!currentProfile.guidance.haptics && !force) || !("vibrate" in navigator)) return;
+      const haptic = currentProfile.phases[phaseId].haptic;
       if (haptic.pattern === "none") return;
 
       const duration = Math.max(10, Math.round(haptic.durationMs * haptic.intensity));
@@ -482,8 +459,69 @@ function BreathingPreview({
           : duration,
       );
     },
-    [profile],
+    [],
   );
+
+  useEffect(() => {
+    void audioPreviewRef.current?.syncProfile(profileRef.current);
+  }, [
+    profile.audio.ambientVolume,
+    profile.audio.breathModulation,
+    profile.audio.cueVolume,
+    profile.audio.soundscape,
+    profile.modeId,
+    profile.palette.orb,
+  ]);
+
+  const stopPlayback = useCallback(() => {
+    playbackRequestedRef.current = false;
+    audioRequestRef.current += 1;
+    isPlayingRef.current = false;
+    setIsPlaying(false);
+    setAudioState("idle");
+    audioPreviewRef.current?.pause();
+  }, []);
+
+  const startPlayback = useCallback(
+    (startingPhase: SensoryPhaseId) => {
+      playbackRequestedRef.current = true;
+      const requestId = ++audioRequestRef.current;
+      if (startAtBeginningRef.current) {
+        progressRef.current = 0;
+        setProgress(0);
+        startAtBeginningRef.current = false;
+      }
+
+      setAudioState("starting");
+      void getAudioPreview().start(profileRef.current, startingPhase).then((ready) => {
+        if (
+          requestId !== audioRequestRef.current ||
+          !playbackRequestedRef.current
+        ) {
+          return;
+        }
+        isPlayingRef.current = true;
+        setIsPlaying(true);
+        setAudioState(ready ? "live" : "blocked");
+        auditionHaptic(startingPhase);
+      });
+    },
+    [auditionHaptic, getAudioPreview],
+  );
+
+  useEffect(() => {
+    if (previousModeIdRef.current === profile.modeId) return;
+    previousModeIdRef.current = profile.modeId;
+    stopPlayback();
+
+    const firstPhase = PHASE_SEQUENCES[profile.modeId][0];
+    phaseRef.current = firstPhase;
+    progressRef.current = 0.42;
+    startAtBeginningRef.current = true;
+    setPreviewPhaseId(firstPhase);
+    setProgress(0.42);
+    if (selectedPhaseId !== firstPhase) onSelectPhase(firstPhase);
+  }, [onSelectPhase, profile.modeId, selectedPhaseId, stopPlayback]);
 
   useEffect(() => {
     if (!isPlaying) return;
@@ -505,11 +543,12 @@ function BreathingPreview({
         phaseRef.current = nextPhase;
         setPreviewPhaseId(nextPhase);
         onSelectPhase(nextPhase);
-        auditionCue(nextPhase);
+        audioPreviewRef.current?.playPhaseCue(profileRef.current, nextPhase);
         auditionHaptic(nextPhase);
       }
 
       progressRef.current = nextProgress;
+      audioPreviewRef.current?.updateFrame(phaseRef.current, nextProgress, now);
       if (now - lastPaint > 40) {
         setProgress(nextProgress);
         lastPaint = now;
@@ -519,14 +558,24 @@ function BreathingPreview({
 
     frameId = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(frameId);
-  }, [auditionCue, auditionHaptic, isPlaying, onSelectPhase, profile.modeId, sequence]);
+  }, [auditionHaptic, isPlaying, onSelectPhase, profile.modeId, sequence]);
 
-  useEffect(
-    () => () => {
-      void audioContextRef.current?.close();
-    },
-    [],
-  );
+  useEffect(() => {
+    const pauseForHiddenDocument = () => {
+      if (document.visibilityState === "hidden") stopPlayback();
+    };
+    const pauseForPageHide = () => stopPlayback();
+    document.addEventListener("visibilitychange", pauseForHiddenDocument);
+    window.addEventListener("pagehide", pauseForPageHide);
+    return () => {
+      document.removeEventListener("visibilitychange", pauseForHiddenDocument);
+      window.removeEventListener("pagehide", pauseForPageHide);
+      playbackRequestedRef.current = false;
+      audioRequestRef.current += 1;
+      isPlayingRef.current = false;
+      void audioPreviewRef.current?.dispose();
+    };
+  }, [stopPlayback]);
 
   const currentIndex = sequence.indexOf(previewPhaseId);
   const previousPhaseId = sequence[(currentIndex - 1 + sequence.length) % sequence.length];
@@ -544,19 +593,38 @@ function BreathingPreview({
     progressRef.current = 0.42;
     setPreviewPhaseId(phaseId);
     setProgress(0.42);
+    startAtBeginningRef.current = !playbackRequestedRef.current;
     onSelectPhase(phaseId);
-    auditionCue(phaseId);
-    auditionHaptic(phaseId);
+    if (isPlayingRef.current) {
+      audioPreviewRef.current?.playPhaseCue(profileRef.current, phaseId);
+      auditionHaptic(phaseId);
+    } else if (playbackRequestedRef.current) {
+      audioPreviewRef.current?.pause();
+      startPlayback(phaseId);
+    } else {
+      const requestId = ++audioRequestRef.current;
+      setAudioState("starting");
+      void getAudioPreview().auditionCue(profileRef.current, phaseId).then((ready) => {
+        if (requestId !== audioRequestRef.current || playbackRequestedRef.current) return;
+        setAudioState(ready ? "idle" : "blocked");
+        if (ready) auditionHaptic(phaseId);
+      });
+    }
   };
 
   const togglePlayback = () => {
-    const nextPlaying = !isPlaying;
-    setIsPlaying(nextPlaying);
-    if (nextPlaying) {
-      auditionCue(previewPhaseId);
-      auditionHaptic(previewPhaseId);
-    }
+    if (playbackRequestedRef.current) stopPlayback();
+    else startPlayback(phaseRef.current);
   };
+
+  const playbackActive =
+    isPlaying || (audioState === "starting" && playbackRequestedRef.current);
+  let statusLabel = "Ready";
+  if (audioState === "starting") statusLabel = "Starting audio";
+  else if (isPlaying && audioState === "live") statusLabel = "Playing · audio live";
+  else if (isPlaying && audioState === "blocked") statusLabel = "Playing · audio blocked";
+  else if (isPlaying) statusLabel = "Playing";
+  else if (audioState === "blocked") statusLabel = "Audio blocked";
 
   const stageStyle = {
     "--stage-background": profile.palette.background,
@@ -575,9 +643,9 @@ function BreathingPreview({
           <span className={styles.panelEyebrow}>Live web engine</span>
           <h2>{SENSORY_MODE_LABELS[profile.modeId]}</h2>
         </div>
-        <span className={styles.previewStatus}>
+        <span className={styles.previewStatus} data-audio-state={audioState}>
           <span className={isPlaying ? styles.statusLive : undefined} />
-          {isPlaying ? "Playing" : "Ready"}
+          {statusLabel}
         </span>
       </div>
 
@@ -604,7 +672,7 @@ function BreathingPreview({
           <Visualizer
             color={profile.palette.orb}
             instructions=""
-            interactionLabel={isPlaying ? "Pause preview from orb" : "Play preview from orb"}
+            interactionLabel={playbackActive ? "Pause preview from orb" : "Play preview from orb"}
             isRunning={isPlaying}
             label={PHASE_LABELS[previewPhaseId]}
             onClick={togglePlayback}
@@ -630,12 +698,12 @@ function BreathingPreview({
 
       <div className={styles.transport}>
         <button
-          aria-label={isPlaying ? "Pause sensory preview" : "Play sensory preview"}
+          aria-label={playbackActive ? "Pause sensory preview" : "Play sensory preview"}
           className={styles.playButton}
           onClick={togglePlayback}
           type="button"
         >
-          {isPlaying ? <Pause fill="currentColor" size={17} /> : <Play fill="currentColor" size={17} />}
+          {playbackActive ? <Pause fill="currentColor" size={17} /> : <Play fill="currentColor" size={17} />}
         </button>
         <div className={styles.phaseTabs} role="tablist" aria-label="Breathing phase">
           {sequence.map((phaseId) => (
@@ -662,6 +730,7 @@ function BreathingPreview({
           onChange={(event) => {
             const nextProgress = Number(event.currentTarget.value);
             progressRef.current = nextProgress;
+            startAtBeginningRef.current = false;
             setProgress(nextProgress);
           }}
           step={0.01}
@@ -726,8 +795,13 @@ export default function SensoryStudio() {
 
   useEffect(() => {
     let stored: string | null;
+    let storedKey = STORAGE_KEY;
     try {
       stored = window.localStorage.getItem(STORAGE_KEY);
+      if (!stored) {
+        stored = window.localStorage.getItem(LEGACY_STORAGE_KEY);
+        if (stored) storedKey = LEGACY_STORAGE_KEY;
+      }
     } catch {
       hydratedRef.current = true;
       storageAvailableRef.current = false;
@@ -738,11 +812,15 @@ export default function SensoryStudio() {
     if (stored) {
       try {
         const parsed = JSON.parse(stored) as unknown;
-        const imported = parseImportedProfiles(parsed);
+        const isLegacyDraft =
+          storedKey === LEGACY_STORAGE_KEY || isLegacyStudioDraft(parsed);
+        const imported = parseImportedProfiles(parsed, isLegacyDraft);
         if (imported) {
           const next = createDefaultProfileMap();
           for (const modeId of SENSORY_MODE_IDS) {
-            if (imported.profiles[modeId]) next[modeId] = imported.profiles[modeId];
+            const importedProfile = imported.profiles[modeId];
+            if (!importedProfile) continue;
+            next[modeId] = importedProfile;
           }
           replaceProfiles(next);
           const storedMode =
@@ -753,13 +831,42 @@ export default function SensoryStudio() {
               ? (parsed.activeModeId as SensoryModeId)
               : imported.firstMode;
           setActiveModeId(storedMode);
-          if (typeof parsed === "object" && parsed !== null && "savedAt" in parsed && typeof parsed.savedAt === "string") {
+
+          let migratedSavedAt: Date | null = null;
+          if (isLegacyDraft) {
+            try {
+              const migratedDraft = makeDraft(next, storedMode);
+              const serialized = JSON.stringify(migratedDraft);
+              window.localStorage.setItem(STORAGE_KEY, serialized);
+              if (window.localStorage.getItem(STORAGE_KEY) !== serialized) {
+                throw new Error("Could not verify migrated draft");
+              }
+              if (storedKey === LEGACY_STORAGE_KEY) {
+                window.localStorage.removeItem(LEGACY_STORAGE_KEY);
+              }
+              migratedSavedAt = new Date(migratedDraft.savedAt);
+              setNotice("Upgraded the draft to production audio");
+            } catch {
+              storageAvailableRef.current = false;
+              setSaveState("unavailable");
+              setNotice("Draft opened, but its audio upgrade could not be saved");
+            }
+          }
+
+          if (migratedSavedAt) {
+            setSavedAt(migratedSavedAt);
+          } else if (
+            typeof parsed === "object" &&
+            parsed !== null &&
+            "savedAt" in parsed &&
+            typeof parsed.savedAt === "string"
+          ) {
             setSavedAt(new Date(parsed.savedAt));
           }
         }
       } catch {
         try {
-          window.localStorage.removeItem(STORAGE_KEY);
+          window.localStorage.removeItem(storedKey);
         } catch {
           hydratedRef.current = true;
           storageAvailableRef.current = false;
@@ -771,7 +878,7 @@ export default function SensoryStudio() {
     }
 
     hydratedRef.current = true;
-    setSaveState("saved");
+    if (storageAvailableRef.current) setSaveState("saved");
   }, [replaceProfiles]);
 
   useEffect(() => {
@@ -895,7 +1002,9 @@ export default function SensoryStudio() {
     if (!file) return;
 
     try {
-      const imported = parseImportedProfiles(JSON.parse(await file.text()));
+      const parsed = JSON.parse(await file.text()) as unknown;
+      const isLegacyDraft = isLegacyStudioDraft(parsed);
+      const imported = parseImportedProfiles(parsed, isLegacyDraft);
       if (!imported) throw new Error("No valid sensory profiles");
       recordSnapshot();
       const next = cloneProfileMap(profilesRef.current);
@@ -907,7 +1016,11 @@ export default function SensoryStudio() {
       setActiveModeId(imported.firstMode);
       setSelectedPhaseId(PHASE_SEQUENCES[imported.firstMode][0]);
       lastEditRef.current = null;
-      setNotice("Sensory profile imported");
+      setNotice(
+        isLegacyDraft
+          ? "Sensory profile imported and upgraded"
+          : "Sensory profile imported",
+      );
     } catch {
       setNotice("That file is not a valid sensory profile");
     }
@@ -1231,12 +1344,12 @@ export default function SensoryStudio() {
           </ControlSection>
 
           <ControlSection
-            description="Author the intended atmosphere and audition the boundary cue."
+            description="Audition the atmosphere and boundary cue through the production audio engine."
             eyebrow="03 · Sound"
             title="Audio"
           >
             <SelectField
-              label="Target soundscape"
+              label="Soundscape"
               onChange={(value) =>
                 updateActive("audio.soundscape", (draft) => {
                   draft.audio.soundscape = value as typeof draft.audio.soundscape;
@@ -1293,6 +1406,7 @@ export default function SensoryStudio() {
             />
             <RangeField
               {...PHASE_RANGES.audio.pitchSemitones}
+              hint="Keep this subtle so the tone stays fused with its soft transient."
               label="Cue pitch"
               onChange={(value) =>
                 updateActive(`${selectedPhaseId}.audio.pitchSemitones`, (draft) => {
@@ -1303,7 +1417,7 @@ export default function SensoryStudio() {
               valueLabel={formatSigned(phase.audio.pitchSemitones, " st")}
             />
             <p className={styles.microcopy}>
-              Phase cues use a lightweight browser audition. The soundscape and breath mix are stored in the export, but are not a production audio preview yet.
+              The three cue families are the exact production inhale, hold, and exhale sounds. Ambients fade in over roughly two seconds, matching the live experience.
             </p>
           </ControlSection>
 

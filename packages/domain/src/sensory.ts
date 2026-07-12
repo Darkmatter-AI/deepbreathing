@@ -203,7 +203,7 @@ export const SENSORY_CONTROL_RANGES = {
     },
     audio: {
       volume: { min: 0, max: 1, step: 0.01 },
-      pitchSemitones: { min: -24, max: 24, step: 0.1 },
+      pitchSemitones: { min: -6, max: 6, step: 0.1 },
     },
     haptic: {
       intensity: { min: 0, max: 1, step: 0.01 },
@@ -315,7 +315,7 @@ const makePhases = (
     mergePhaseOverrides(
       {
         visual: { orbScale: 0, lightIntensity: 0.25, edgeGlow: 0.15, particleFlow: 0.55 },
-        audio: { cue: "long-release", pitchSemitones: -3 },
+        audio: { cue: "long-release", pitchSemitones: 0 },
         haptic: { pattern: "release", intensity: 0.2, sharpness: 0.12, durationMs: 34 },
       },
       overrides.exhale,
@@ -372,22 +372,22 @@ export const DEFAULT_SENSORY_PROFILES: Record<SensoryModeId, SensoryProfileV1> =
     phases: {
       inhale: {
         visual: { curve: "linear", shapeTension: 0.82 },
-        audio: { cue: "crisp-tick", pitchSemitones: 4 },
+        audio: { cue: "crisp-tick", pitchSemitones: 0 },
         haptic: { pattern: "crisp", intensity: 0.32, sharpness: 0.78, durationMs: 16 },
       },
       holdIn: {
         visual: { curve: "linear", shapeTension: 0.9 },
-        audio: { cue: "crisp-tick", pitchSemitones: 2 },
+        audio: { cue: "crisp-tick", pitchSemitones: 0 },
         haptic: { pattern: "crisp", intensity: 0.32, sharpness: 0.78, durationMs: 16 },
       },
       exhale: {
         visual: { curve: "linear", shapeTension: 0.82 },
-        audio: { cue: "crisp-tick", pitchSemitones: -2 },
+        audio: { cue: "crisp-tick", pitchSemitones: 0 },
         haptic: { pattern: "crisp", intensity: 0.3, sharpness: 0.72, durationMs: 16 },
       },
       holdOut: {
         visual: { curve: "linear", shapeTension: 0.9 },
-        audio: { cue: "crisp-tick", pitchSemitones: -4 },
+        audio: { cue: "crisp-tick", pitchSemitones: 0 },
         haptic: { pattern: "crisp", intensity: 0.3, sharpness: 0.72, durationMs: 16 },
       },
     },
@@ -424,12 +424,12 @@ export const DEFAULT_SENSORY_PROFILES: Record<SensoryModeId, SensoryProfileV1> =
       },
       holdIn: {
         visual: { curve: "sine", lightIntensity: 0.28, edgeGlow: 0.16, particleFlow: 0 },
-        audio: { cue: "soft-bell", volume: 0.14, pitchSemitones: -2 },
+        audio: { cue: "crisp-tick", volume: 0.14, pitchSemitones: 0 },
         haptic: { pattern: "none", intensity: 0, sharpness: 0, durationMs: 0 },
       },
       exhale: {
         visual: { curve: "ease-out", lightIntensity: 0.12, particleVelocity: 0.18 },
-        audio: { cue: "long-release", volume: 0.22, pitchSemitones: -7 },
+        audio: { cue: "long-release", volume: 0.22, pitchSemitones: 0 },
         haptic: { pattern: "release", intensity: 0.16, sharpness: 0.08, durationMs: 42 },
       },
     },
@@ -461,12 +461,12 @@ export const DEFAULT_SENSORY_PROFILES: Record<SensoryModeId, SensoryProfileV1> =
     phases: {
       inhale: {
         visual: { curve: "sine", particleFlow: -0.32, shapeTension: 0.18 },
-        audio: { cue: "ocean-turn", volume: 0.18, pitchSemitones: 1 },
+        audio: { cue: "soft-rise", volume: 0.18, pitchSemitones: 0 },
         haptic: { pattern: "soft", intensity: 0.16, sharpness: 0.1, durationMs: 36 },
       },
       exhale: {
         visual: { curve: "sine", particleFlow: 0.32, shapeTension: 0.18 },
-        audio: { cue: "ocean-turn", volume: 0.16, pitchSemitones: -1 },
+        audio: { cue: "long-release", volume: 0.16, pitchSemitones: 0 },
         haptic: { pattern: "release", intensity: 0.14, sharpness: 0.08, durationMs: 38 },
       },
     },
@@ -498,7 +498,7 @@ export const DEFAULT_SENSORY_PROFILES: Record<SensoryModeId, SensoryProfileV1> =
     phases: {
       inhale: {
         visual: { orbScale: 0.72, curve: "ease-out", particleFlow: -0.72, particleVelocity: 0.86 },
-        audio: { cue: "soft-rise", volume: 0.52, pitchSemitones: 3 },
+        audio: { cue: "soft-rise", volume: 0.52, pitchSemitones: 0 },
         haptic: { pattern: "soft", intensity: 0.26, sharpness: 0.28, durationMs: 24 },
       },
       inhale2: {
@@ -512,17 +512,17 @@ export const DEFAULT_SENSORY_PROFILES: Record<SensoryModeId, SensoryProfileV1> =
           hueShiftDegrees: 8,
           curve: "ease-out",
         },
-        audio: { cue: "top-up", volume: 0.62, pitchSemitones: 8 },
+        audio: { cue: "soft-rise", volume: 0.62, pitchSemitones: 0 },
         haptic: { pattern: "top-up", intensity: 0.38, sharpness: 0.7, durationMs: 18 },
       },
       exhale: {
         visual: { orbScale: 0, curve: "ease-out", particleFlow: 1, particleVelocity: 1.2 },
-        audio: { cue: "long-release", volume: 0.62, pitchSemitones: -8 },
+        audio: { cue: "long-release", volume: 0.62, pitchSemitones: 0 },
         haptic: { pattern: "release", intensity: 0.2, sharpness: 0.08, durationMs: 48 },
       },
       holdOut: {
         visual: { orbScale: 0, lightIntensity: 0.1, edgeGlow: 0.04, particleVelocity: 0.05 },
-        audio: { cue: "soft-bell", volume: 0.12, pitchSemitones: -9 },
+        audio: { cue: "crisp-tick", volume: 0.12, pitchSemitones: 0 },
       },
     },
   }),
@@ -551,12 +551,12 @@ export const DEFAULT_SENSORY_PROFILES: Record<SensoryModeId, SensoryProfileV1> =
     phases: {
       inhale: {
         visual: { curve: "sine", particleFlow: -0.48, particleVelocity: 0.72 },
-        audio: { cue: "ocean-turn", volume: 0.16, pitchSemitones: -1 },
+        audio: { cue: "soft-rise", volume: 0.16, pitchSemitones: 0 },
         haptic: { pattern: "soft", intensity: 0.14, sharpness: 0.08, durationMs: 38 },
       },
       exhale: {
         visual: { curve: "sine", particleFlow: 0.58, particleVelocity: 0.8 },
-        audio: { cue: "ocean-turn", volume: 0.16, pitchSemitones: -4 },
+        audio: { cue: "long-release", volume: 0.16, pitchSemitones: 0 },
         haptic: { pattern: "release", intensity: 0.13, sharpness: 0.06, durationMs: 42 },
       },
     },
@@ -588,12 +588,12 @@ export const DEFAULT_SENSORY_PROFILES: Record<SensoryModeId, SensoryProfileV1> =
     phases: {
       inhale: {
         visual: { curve: "ease-in-out", hueShiftDegrees: 6, particleVelocity: 0.32 },
-        audio: { cue: "warm-pulse", volume: 0.3, pitchSemitones: -2 },
+        audio: { cue: "soft-rise", volume: 0.3, pitchSemitones: 0 },
         haptic: { pattern: "soft", intensity: 0.2, sharpness: 0.08, durationMs: 40 },
       },
       exhale: {
         visual: { curve: "ease-out", hueShiftDegrees: -5, particleVelocity: 0.28 },
-        audio: { cue: "warm-pulse", volume: 0.22, pitchSemitones: -5 },
+        audio: { cue: "long-release", volume: 0.22, pitchSemitones: 0 },
         haptic: { pattern: "release", intensity: 0.16, sharpness: 0.05, durationMs: 46 },
       },
     },
@@ -629,7 +629,7 @@ export const DEFAULT_SENSORY_PROFILES: Record<SensoryModeId, SensoryProfileV1> =
       },
       exhale: {
         visual: { curve: "ease-out", particleFlow: 0.74, particleVelocity: 0.42, shapeTension: 0.58 },
-        audio: { cue: "long-release", volume: 0.46, pitchSemitones: -5 },
+        audio: { cue: "long-release", volume: 0.46, pitchSemitones: 0 },
         haptic: { pattern: "release", intensity: 0.16, sharpness: 0.08, durationMs: 44 },
       },
     },
