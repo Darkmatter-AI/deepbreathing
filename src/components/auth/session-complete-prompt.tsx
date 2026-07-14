@@ -103,7 +103,6 @@ export function SessionCompletePrompt({
         sessionMode={pattern.name}
         accentColor={pattern.color}
         sessionSeconds={sessionSeconds}
-        totalMinutes={totalMinutes}
         sessionsCompleted={sessionsCompleted}
         dayStreak={dayStreak}
       />
