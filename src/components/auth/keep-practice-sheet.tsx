@@ -18,7 +18,6 @@ interface KeepPracticeSheetProps {
   sessionMode: string;
   sessionSeconds: number;
   accentColor?: string;
-  totalMinutes: number;
   sessionsCompleted: number;
   dayStreak: number;
 }
@@ -38,7 +37,6 @@ export function KeepPracticeSheet({
   sessionMode,
   sessionSeconds,
   accentColor = "#f6743b",
-  totalMinutes,
   sessionsCompleted,
   dayStreak,
 }: KeepPracticeSheetProps) {
@@ -98,11 +96,9 @@ export function KeepPracticeSheet({
       : dayStreak >= 2
         ? `That's a ${dayStreak}-day streak, keep it?`
         : "Save your progress?";
-  const minutes =
-    totalMinutes === 0 ? Math.max(1, Math.floor(sessionSeconds / 60)) : Math.max(totalMinutes, 1);
-  const stats = [`${minutes} ${minutes === 1 ? "minute" : "minutes"} of calm`];
-  if (sessionsCompleted >= 2) stats.push(`${sessionsCompleted} sessions`);
-  if (dayStreak >= 2) stats.push(`${dayStreak}-day streak`);
+  const sessionCount = sessionsCompleted > 0
+    ? `${sessionsCompleted} ${sessionsCompleted === 1 ? "session" : "sessions"}`
+    : null;
   const sending = status === "sending";
   const sent = status === "sent";
   const circumference = 100.53;
@@ -142,11 +138,11 @@ export function KeepPracticeSheet({
                     <span className={`${PREFIX}-dot`} aria-hidden="true">·</span>
                     <span>just now</span>
                   </div>
+                  {sessionCount ? <p className={`${PREFIX}-stats`}>{sessionCount}</p> : null}
                 </div>
               </div>
               <h2 className={`${PREFIX}-title`}>{headline}</h2>
-              <p className={`${PREFIX}-stats`}>{stats.join(" · ")}</p>
-              <p className={`${PREFIX}-sub`}>Saved on this device only. A free account keeps it, and every minute after, on any screen you pick up.</p>
+              <p className={`${PREFIX}-sub`}>Your progress is kept on this device only. A free account saves it on any screen.</p>
               <button className={`${PREFIX}-google`} onClick={handleGoogle}>
                 <svg viewBox="0 0 24 24" className={`${PREFIX}-g-logo`} aria-hidden="true">
                   <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" />
@@ -154,7 +150,7 @@ export function KeepPracticeSheet({
                   <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93z" />
                   <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
                 </svg>
-                <span className={`${PREFIX}-g-text`}><span className={`${PREFIX}-g-label`}>Continue with Google</span><span className={`${PREFIX}-g-sub`}>One tap. No password.</span></span>
+                <span>Continue with Google</span>
               </button>
               <div className={`${PREFIX}-email-wrap${emailOpen ? " open" : ""}`}>
                 <form className={`${PREFIX}-email-row`} onSubmit={handleMagicLink}>
@@ -180,8 +176,8 @@ const CSS = `
 .${PREFIX}-sheet{--cream:#fbeede;--cream-80:rgba(251,238,222,.82);--cream-58:rgba(251,238,222,.58);--cream-40:rgba(251,238,222,.40);--coral:#f6743b;--line:rgba(255,255,255,.10);--ease:cubic-bezier(.22,1,.36,1);position:relative;width:min(362px,calc(100vw - 32px));background:rgba(44,29,20,.72);-webkit-backdrop-filter:blur(28px) saturate(1.2);backdrop-filter:blur(28px) saturate(1.2);border:1px solid var(--line);border-radius:30px;color:var(--cream);padding:44px 28px 22px;font-family:var(--font-sans),"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;box-shadow:0 36px 90px -20px rgba(0,0,0,.6),0 0 50px rgba(255,133,158,.14),inset 0 1px 0 rgba(255,255,255,.07)}
 .${PREFIX}-x{position:absolute;top:14px;right:16px;width:28px;height:28px;border:0;background:none;color:var(--cream-40);cursor:pointer;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:color .2s,background .2s}.${PREFIX}-x:hover{color:var(--cream-80);background:rgba(255,255,255,.08)}
 .${PREFIX}-card{display:flex;align-items:center;gap:14px;background:rgba(29,19,13,.55);border:1px solid var(--line);border-radius:18px;padding:14px 16px;margin:0 0 20px}.${PREFIX}-ring-wrap{position:relative;width:44px;height:44px;flex:none;display:flex;align-items:center;justify-content:center}.${PREFIX}-svg{position:absolute;inset:0;width:44px;height:44px}.${PREFIX}-glyph{position:relative;z-index:1}.${PREFIX}-card-text{flex:1;min-width:0}.${PREFIX}-eyebrow{font-size:10px;font-weight:700;letter-spacing:.1em;color:var(--cream-40);margin:0 0 3px}.${PREFIX}-mode{font-size:15px;font-weight:600;color:var(--cream);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.2}.${PREFIX}-meta{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--cream-58);margin-top:4px}.${PREFIX}-dur{font-variant-numeric:tabular-nums;font-weight:500}.${PREFIX}-dot{opacity:.5}
-.${PREFIX}-title{font-size:23px;font-weight:600;letter-spacing:-.015em;line-height:1.14;margin:0 0 9px;color:var(--cream);text-wrap:balance}.${PREFIX}-stats{font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--cream);margin:0 0 10px;white-space:nowrap}.${PREFIX}-sub{font-size:14px;line-height:1.55;color:var(--cream-58);margin:0 0 21px;text-wrap:pretty}
-.${PREFIX}-google{width:100%;min-height:54px;border-radius:999px;border:0;cursor:pointer;background:#fff;color:#241a13;font-family:inherit;font-size:14.5px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:11px;padding:0 20px;transition:transform .18s var(--ease),box-shadow .2s,filter .2s}.${PREFIX}-google:hover{filter:brightness(1.04);transform:translateY(-1px);box-shadow:0 10px 24px -10px rgba(0,0,0,.55)}.${PREFIX}-g-logo{width:18px;height:18px;flex:none}.${PREFIX}-g-text{display:flex;flex-direction:column;align-items:flex-start}.${PREFIX}-g-label{font-size:14.5px;font-weight:600;line-height:1.2}.${PREFIX}-g-sub{font-size:11.5px;font-weight:400;color:#5c4033;line-height:1.2}
+.${PREFIX}-title{font-size:23px;font-weight:600;letter-spacing:-.015em;line-height:1.14;margin:0 0 9px;color:var(--cream);text-wrap:balance}.${PREFIX}-stats{font-size:11px;line-height:1.3;font-weight:400;font-variant-numeric:tabular-nums;color:var(--cream-40);margin:4px 0 0}.${PREFIX}-sub{font-size:14px;line-height:1.55;color:var(--cream-58);margin:0 0 27px;text-wrap:pretty}
+.${PREFIX}-google{width:100%;min-height:54px;border-radius:999px;border:0;cursor:pointer;background:#fff;color:#241a13;font-family:inherit;font-size:14.5px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:11px;padding:0 20px;transition:transform .18s var(--ease),box-shadow .2s,filter .2s}.${PREFIX}-google:hover{filter:brightness(1.04);transform:translateY(-1px);box-shadow:0 10px 24px -10px rgba(0,0,0,.55)}.${PREFIX}-g-logo{width:18px;height:18px;flex:none}
 .${PREFIX}-email-wrap{overflow:hidden;max-height:0;opacity:0;transition:max-height .4s var(--ease),opacity .3s var(--ease),margin .4s var(--ease)}.${PREFIX}-email-wrap.open{max-height:140px;opacity:1;margin-top:12px}.${PREFIX}-email-row{display:flex;gap:8px}.${PREFIX}-email-input{flex:1;min-width:0;height:46px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.05);color:var(--cream);font-family:inherit;font-size:14px;padding:0 18px;outline:none}.${PREFIX}-email-input::placeholder{color:var(--cream-40)}.${PREFIX}-magic{height:46px;border-radius:999px;border:0;cursor:pointer;background:var(--coral);color:#241006;font-family:inherit;font-weight:600;font-size:13.5px;padding:0 16px;white-space:nowrap;display:flex;align-items:center;justify-content:center}.${PREFIX}-magic:disabled{opacity:.55;cursor:default}.${PREFIX}-err{font-size:12px;color:#ff9e7a;text-align:center;margin:10px 0 0}
 .${PREFIX}-email-link{display:block;width:100%;text-align:center;background:none;border:0;cursor:pointer;font-family:inherit;font-size:13px;color:var(--cream-58);margin-top:14px;padding:6px 0}.${PREFIX}-email-link:hover{color:var(--cream)}.${PREFIX}-u{position:relative}.${PREFIX}-u::after{content:"";position:absolute;left:50%;right:50%;bottom:-2px;height:1px;background:currentColor;transition:left .25s,right .25s}.${PREFIX}-email-link:hover .${PREFIX}-u::after{left:0;right:0}
 .${PREFIX}-success{display:flex;flex-direction:column;align-items:center;text-align:center;padding:14px 0 6px}.${PREFIX}-check-ring{width:58px;height:58px;border-radius:50%;background:#46d39b;display:flex;align-items:center;justify-content:center;color:#241006;box-shadow:0 12px 30px -10px rgba(70,211,155,.45);margin-bottom:18px}.${PREFIX}-success h3{font-size:21px;font-weight:600;color:var(--cream);margin:0 0 9px}.${PREFIX}-success p{font-size:14px;line-height:1.5;color:var(--cream-58);margin:0}.${PREFIX}-success p b{color:var(--cream-80);font-weight:600}.${PREFIX}-spin{animation:${PREFIX}-spin .8s linear infinite}@keyframes ${PREFIX}-spin{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){.${PREFIX}-spin{animation:none}}
