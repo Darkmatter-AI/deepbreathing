@@ -290,6 +290,16 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
   const [soundHintVisible, setSoundHintVisible] = useState(false);
   const [soundHintMounted, setSoundHintMounted] = useState(false);
 
+  // Zen mode: while a session is running, fade the interface chrome (header,
+  // language switcher, settings gear) so only the orb remains. Any sign of
+  // intent — mouse move, key press, touch, scroll, or device motion — brings
+  // the chrome back, and it auto-hides again after a few seconds of stillness.
+  // Chrome is always shown when paused/stopped or when the settings sheet is open.
+  const [chromeHidden, setChromeHidden] = useState(false);
+  const [reducedMotion, setReducedMotion] = useState(false);
+  const zenHideTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const revealChromeRef = useRef<() => void>(() => {});
+
   // Animation State
   const [scale, setScale] = useState(0);
   const [runtimeLocale, setRuntimeLocale] = useState('en');
@@ -1291,6 +1301,98 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     };
   }, [isRunning]);
 
+  // Track prefers-reduced-motion so the zen fades can be made instant for users
+  // who ask for less motion.
+  useEffect(() => {
+    if (typeof window === 'undefined' || !window.matchMedia) return;
+    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+    setReducedMotion(mq.matches);
+    const handler = () => setReducedMotion(mq.matches);
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
+  }, []);
+
+  // Zen-mode auto-hide: while running (and no settings sheet open), hide the
+  // chrome after a spell of inactivity and reveal it on any sign of intent.
+  const ZEN_HIDE_DELAY_MS = 3500;
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    // Always show chrome when the session isn't running or a panel/menu is open.
+    if (!isRunning || controlsOpen || showUserMenu) {
+      setChromeHidden(false);
+      revealChromeRef.current = () => {};
+      if (zenHideTimerRef.current) {
+        clearTimeout(zenHideTimerRef.current);
+        zenHideTimerRef.current = null;
+      }
+      return;
+    }
+
+    const scheduleHide = () => {
+      if (zenHideTimerRef.current) clearTimeout(zenHideTimerRef.current);
+      zenHideTimerRef.current = setTimeout(() => setChromeHidden(true), ZEN_HIDE_DELAY_MS);
+    };
+    const reveal = () => {
+      setChromeHidden(false);
+      scheduleHide();
+    };
+    revealChromeRef.current = reveal;
+
+    // Enter zen shortly after the session starts.
+    scheduleHide();
+
+    const passive = { passive: true } as AddEventListenerOptions;
+    window.addEventListener('mousemove', reveal, passive);
+    window.addEventListener('pointermove', reveal, passive);
+    window.addEventListener('pointerdown', reveal, passive);
+    window.addEventListener('touchstart', reveal, passive);
+    window.addEventListener('wheel', reveal, passive);
+    window.addEventListener('keydown', reveal);
+
+    // Device motion — physically moving a phone reveals the chrome. iOS 13+
+    // gates devicemotion behind an explicit permission prompt, which we don't
+    // want to force during a calming session, so this is best-effort: it works
+    // on Android/desktop sensors and no-ops where permission was never granted.
+    // Touch/tap already covers reveal on those devices.
+    let lastMotion = 0;
+    let baseline: number | null = null;
+    const onMotion = (e: DeviceMotionEvent) => {
+      const a = e.accelerationIncludingGravity;
+      if (!a) return;
+      const magnitude = Math.abs(a.x || 0) + Math.abs(a.y || 0) + Math.abs(a.z || 0);
+      if (baseline === null) {
+        baseline = magnitude;
+        return;
+      }
+      // Only react to a deliberate jolt, not the constant gravity reading.
+      if (Math.abs(magnitude - baseline) > 2.2) {
+        const now = Date.now();
+        if (now - lastMotion > 400) {
+          lastMotion = now;
+          reveal();
+        }
+      }
+      baseline = magnitude;
+    };
+    window.addEventListener('devicemotion', onMotion, passive);
+
+    return () => {
+      if (zenHideTimerRef.current) {
+        clearTimeout(zenHideTimerRef.current);
+        zenHideTimerRef.current = null;
+      }
+      revealChromeRef.current = () => {};
+      window.removeEventListener('mousemove', reveal);
+      window.removeEventListener('pointermove', reveal);
+      window.removeEventListener('pointerdown', reveal);
+      window.removeEventListener('touchstart', reveal);
+      window.removeEventListener('wheel', reveal);
+      window.removeEventListener('keydown', reveal);
+      window.removeEventListener('devicemotion', onMotion);
+    };
+  }, [isRunning, controlsOpen, showUserMenu]);
+
   // Presence heartbeat: fire on start, then every 60s while running.
   useEffect(() => {
     if (!isRunning) return;
@@ -1473,6 +1575,19 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     ? { opacity: 0.18, transition: 'opacity 1800ms ease-in-out' }
     : { opacity: 1, transition: 'opacity 1200ms ease-in-out' };
 
+  // Zen chrome: a slow, calm fade that leaves the element focusable (so a
+  // keyboard user can always tab back in — the keydown then re-reveals it) and
+  // out of the pointer flow while hidden so it never blocks the orb.
+  const chromeStyle: React.CSSProperties = {
+    opacity: chromeHidden ? 0 : 1,
+    transform: chromeHidden ? 'translateY(-6px)' : 'translateY(0)',
+    transition: reducedMotion
+      ? 'opacity 200ms linear'
+      : 'opacity 1100ms ease-in-out, transform 1100ms ease-in-out',
+    pointerEvents: chromeHidden ? 'none' : 'auto',
+  };
+  const revealChrome = () => revealChromeRef.current();
+
   return (
     <div
       className={`relative flex h-full w-full flex-col overflow-hidden ${backgroundVariant === 'winter-blue' ? '' : 'bg-background'} transition-colors duration-1000 ${className}`}
@@ -1493,7 +1608,12 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
         )}
       </div>
 
-      <header className="fixed inset-x-0 top-0 z-30 flex items-center justify-end gap-2 p-6">
+      <header
+        className="fixed inset-x-0 top-0 z-30 flex items-center justify-end gap-2 p-6"
+        style={chromeStyle}
+        onFocusCapture={revealChrome}
+        data-zen-hidden={chromeHidden ? 'true' : undefined}
+      >
         {!embedMode && <LanguageSwitcherInline />}
         {!embedMode && (
           <>
