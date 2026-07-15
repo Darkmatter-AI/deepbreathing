@@ -115,6 +115,8 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 
 **Measurement plan:** Capture fresh GSC URL Inspection and Search Performance, Bing performance/index coverage, Ahrefs crawl results, production response headers/HTML, analytics by locale path, and performance telemetry immediately before cutover. Re-run the same URL set and windows at day 7 and day 28.
 
+**Preview deployment safety correction, 2026-07-15:** The first configured native Vercel preview ran the existing `postbuild` hook and submitted the unchanged 337-URL production sitemap to IndexNow because the hook treated every Vercel CI build as eligible. The migration did not alter the sitemap or submit preview URLs, so this is operational noise rather than a translation-result change. The hook now fails closed unless both `VERCEL=1` and `VERCEL_ENV=production`. Focused tests pin production, preview, development, generic CI, and local behavior; a direct preview-environment smoke run logs the skip without fetching or submitting anything. No search-performance measurement is attached to this safety fix because it prevents non-production side effects and does not change production URLs, metadata, or submission behavior.
+
 ---
 
 ### 2026-07-10: Canonical Hijack — 2 Locale Pages Merged With Casino Domain (747live.bet)

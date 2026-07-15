@@ -780,3 +780,71 @@ Next:
 - Retain both structured families in `preview` and run the expanded matrix in a configured Vercel preview.
 - Continue Phase 4 with the next bespoke or application route family under the same deterministic and fail-closed controls.
 - Keep content improvements and new-language research out of the serving-path migration until the native foundation is complete.
+
+## 2026-07-15: Hosted native preview passes the admitted route matrix
+
+Status: Complete for the configured hosted-preview checkpoint; the full migration remains in progress
+
+What changed:
+
+- Committed and pushed the native-preview foundation and both structured route families on `codex/native-i18n` at commit `7302e5ebde1fdf8e74e5963e496b800d6566d8ae`.
+- Scoped `NATIVE_I18N_MODE`, `BETTER_AUTH_SECRET`, and `BETTER_AUTH_URL` to the Vercel Preview environment for the `codex/native-i18n` branch only. Production settings and routing remain unchanged.
+- Created a successful Vercel preview deployment and retained the stable branch alias for repeatable review.
+- Ran the complete admitted hosted server matrix and representative hydrated browser checks across all five translated locales.
+- Ran a focused 390 by 844 mobile check on Japanese Ujjayi without changing application state.
+
+Evidence:
+
+- Stable branch preview: `https://deepbreathing-tmmj-git-codex-native-i18n-darkmatterai.vercel.app`.
+- Immutable deployment: `https://deepbreathing-tmmj-pt9tz5xnh-darkmatterai.vercel.app`, deployment ID `dpl_DnKYw1FxLZm1JbiZqgPgpbwrTx2n`.
+- The hosted build generated 273 of 273 static pages. Compiler output remained at 70 of 70 `/breathe` pairs, 90 of 90 `/for` pairs, 91 reviewed replacements, and zero unresolved values.
+- The hosted server matrix passed all 185 admitted locale-route pairs. Every pair returned 200 with the expected BCP 47 `lang`, localized title, self-canonical production URL, seven hreflang alternates, no Next error document, no legacy `__MT_CONFIG__`, and no unintended standalone US `988` value. Unadmitted `/es/holiday-breathing-exercises` returned 404.
+- Hydrated browser checks passed on the Spanish `/for` hub, localized client navigation to `/es/for/public-speaking`, and representative Portuguese, French, German, Japanese, and Spanish routes. Runtime locale, localized metadata and content, canonical, and alternate links remained stable with no browser console errors.
+- At 390 by 844, Japanese `/ja/breathe/ujjayi` had a 390-pixel document width, no horizontal overflow, visible localized navigation, settings, duration, share, and start controls, the correct `ja-JP` document language and `ja` runtime locale, and no browser console errors.
+
+Blockers and risks:
+
+- The Preview environment intentionally has no Google OAuth credentials. Authenticated social-login behavior was not changed or validated by this checkpoint.
+- The preview deployment's existing `postbuild` hook submitted the unchanged 337-URL production sitemap to IndexNow with status 200. This is a deployment-safety defect in the existing pipeline, not a native translation regression. It must be fixed as a separate narrow change before another preview deployment.
+- Full accessibility, audio, share-target, video, timer-session, and interactive-pacer behavior still require dedicated QA before production admission.
+- No route is `cutover-ready`. Production remains on the MassTranslate proxy and no production environment, DNS, Cloudflare route, sitemap, or alias changed.
+
+Next:
+
+- Review and approve a narrow preview-only guard that prevents IndexNow submission outside production.
+- Continue Phase 4 with the next bespoke or application route family after that deployment-safety decision.
+- Keep translation-content improvements, keyword research, and new-language work separate from migration parity.
+
+## 2026-07-15: Preview IndexNow guard and remaining-page batch map prepared
+
+Status: Complete for deployment safety and launch preparation; no Grok translation worker has been launched
+
+What changed:
+
+- Changed the sitemap submission entrypoint to fail closed unless the build has both `VERCEL=1` and `VERCEL_ENV=production`.
+- Preserved the existing IndexNow submission workflow for Vercel production builds while making Preview, Development, generic CI, and local postbuild runs skip before any network request.
+- Added a machine-readable and human-readable batch map for all 19 intended static translated routes not yet admitted to native preview.
+- Partitioned the remaining work into four integration waves and three future Grok translation batches with exclusive route ownership and risk-based model routing.
+- Recorded a separate strong catalog-audit lane for approved-value fidelity review after compiler source binding.
+
+Evidence:
+
+- `node --test scripts/tests/ping-sitemap.test.mjs` passes 4 of 4 tests, including the production-only environment boundary.
+- `CI=1 VERCEL=1 VERCEL_ENV=preview node scripts/ping-sitemap.mjs` logs `Skipping sitemap ping; production deployment not detected.` and performs no submission.
+- `node --experimental-strip-types --test scripts/tests/native-i18n-remaining-pages-batch-map.test.mjs` passes 3 of 3 tests.
+- The batch-map test proves that exactly 19 intended static routes remain, every route has one integration-wave owner, every route with raw catalog gaps has one Grok translation owner, and all counts reconcile with the preserved catalog manifest.
+- The remaining catalog baseline is 1,463 route segments and 366 untranslated locale cells across 95 locale-route pairs. Eleven routes have no raw catalog gap; eight routes contain all 366 gaps.
+- Grok Build `0.2.101` is authenticated with `grok-composer-2.5-fast` and `grok-4.5` available.
+
+Blockers and risks:
+
+- The 366 cells are raw catalog gaps, not executable assignments. Each integration wave must first emit source-bound compiler contracts; current-source drift, composition, deduplication, and shared chrome can change final counts.
+- The output-only controller cannot be adapted safely until the first remaining-page contract schema exists.
+- No Grok worker may edit application routes, compilers, renderers, generated output, manifests, tests, or documentation.
+- The local guard and batch-map changes are not yet committed or deployed. Another preview should not run until the guard is included in the deployed commit.
+
+Next:
+
+- Extract the shared typed contract for the four zero-gap duration pages in `R-W01` and use it to establish the remaining-page compiler schema.
+- Refresh Grok assignment counts from compiler-emitted manual contracts, then adapt the proven output-only controller.
+- Launch only the exact prepared route jobs after focused validators pass; keep content improvements and production cutover out of scope.

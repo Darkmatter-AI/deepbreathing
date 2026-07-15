@@ -1,0 +1,352 @@
+{
+  "schemaVersion": 1,
+  "status": "prepared-not-launched",
+  "baselineCommit": "7302e5ebde1fdf8e74e5963e496b800d6566d8ae",
+  "locales": ["de-de", "es-es", "fr-fr", "ja-jp", "pt-br"],
+  "routes": [
+    {
+      "path": "/1-minute-breathing-exercise",
+      "integrationWave": "R-W01",
+      "grokTranslationBatch": null,
+      "catalogSegments": 79,
+      "catalogMissingCells": 0,
+      "catalogMissingByLocale": {
+        "de-de": 0,
+        "es-es": 0,
+        "fr-fr": 0,
+        "ja-jp": 0,
+        "pt-br": 0
+      }
+    },
+    {
+      "path": "/2-minute-breathing-exercise",
+      "integrationWave": "R-W01",
+      "grokTranslationBatch": null,
+      "catalogSegments": 78,
+      "catalogMissingCells": 0,
+      "catalogMissingByLocale": {
+        "de-de": 0,
+        "es-es": 0,
+        "fr-fr": 0,
+        "ja-jp": 0,
+        "pt-br": 0
+      }
+    },
+    {
+      "path": "/4-7-8-breathing-for-insomnia",
+      "integrationWave": "R-W01",
+      "grokTranslationBatch": null,
+      "catalogSegments": 82,
+      "catalogMissingCells": 0,
+      "catalogMissingByLocale": {
+        "de-de": 0,
+        "es-es": 0,
+        "fr-fr": 0,
+        "ja-jp": 0,
+        "pt-br": 0
+      }
+    },
+    {
+      "path": "/5-minute-breathing-exercise",
+      "integrationWave": "R-W01",
+      "grokTranslationBatch": null,
+      "catalogSegments": 89,
+      "catalogMissingCells": 0,
+      "catalogMissingByLocale": {
+        "de-de": 0,
+        "es-es": 0,
+        "fr-fr": 0,
+        "ja-jp": 0,
+        "pt-br": 0
+      }
+    },
+    {
+      "path": "/box-breathing-before-presentation",
+      "integrationWave": "R-W02",
+      "grokTranslationBatch": "R-R01",
+      "catalogSegments": 93,
+      "catalogMissingCells": 60,
+      "catalogMissingByLocale": {
+        "de-de": 12,
+        "es-es": 12,
+        "fr-fr": 12,
+        "ja-jp": 12,
+        "pt-br": 12
+      }
+    },
+    {
+      "path": "/breathing-exercises-before-surgery",
+      "integrationWave": "R-W02",
+      "grokTranslationBatch": null,
+      "catalogSegments": 89,
+      "catalogMissingCells": 0,
+      "catalogMissingByLocale": {
+        "de-de": 0,
+        "es-es": 0,
+        "fr-fr": 0,
+        "ja-jp": 0,
+        "pt-br": 0
+      }
+    },
+    {
+      "path": "/breathing-exercises-for-labor",
+      "integrationWave": "R-W02",
+      "grokTranslationBatch": null,
+      "catalogSegments": 89,
+      "catalogMissingCells": 0,
+      "catalogMissingByLocale": {
+        "de-de": 0,
+        "es-es": 0,
+        "fr-fr": 0,
+        "ja-jp": 0,
+        "pt-br": 0
+      }
+    },
+    {
+      "path": "/holiday-breathing-exercises",
+      "integrationWave": "R-W02",
+      "grokTranslationBatch": null,
+      "catalogSegments": 119,
+      "catalogMissingCells": 0,
+      "catalogMissingByLocale": {
+        "de-de": 0,
+        "es-es": 0,
+        "fr-fr": 0,
+        "ja-jp": 0,
+        "pt-br": 0
+      }
+    },
+    {
+      "path": "/physiological-sigh-panic-attack",
+      "integrationWave": "R-W02",
+      "grokTranslationBatch": "R-R01",
+      "catalogSegments": 93,
+      "catalogMissingCells": 55,
+      "catalogMissingByLocale": {
+        "de-de": 11,
+        "es-es": 11,
+        "fr-fr": 11,
+        "ja-jp": 11,
+        "pt-br": 11
+      }
+    },
+    {
+      "path": "/box-breathing-app",
+      "integrationWave": "R-W03",
+      "grokTranslationBatch": null,
+      "catalogSegments": 110,
+      "catalogMissingCells": 0,
+      "catalogMissingByLocale": {
+        "de-de": 0,
+        "es-es": 0,
+        "fr-fr": 0,
+        "ja-jp": 0,
+        "pt-br": 0
+      }
+    },
+    {
+      "path": "/breathing-app",
+      "integrationWave": "R-W03",
+      "grokTranslationBatch": "R-C01",
+      "catalogSegments": 43,
+      "catalogMissingCells": 1,
+      "catalogMissingByLocale": {
+        "de-de": 0,
+        "es-es": 0,
+        "fr-fr": 0,
+        "ja-jp": 0,
+        "pt-br": 1
+      }
+    },
+    {
+      "path": "/breathing-visualizer",
+      "integrationWave": "R-W03",
+      "grokTranslationBatch": "R-C01",
+      "catalogSegments": 132,
+      "catalogMissingCells": 65,
+      "catalogMissingByLocale": {
+        "de-de": 13,
+        "es-es": 13,
+        "fr-fr": 13,
+        "ja-jp": 13,
+        "pt-br": 13
+      }
+    },
+    {
+      "path": "/coherent-breathing-app",
+      "integrationWave": "R-W03",
+      "grokTranslationBatch": null,
+      "catalogSegments": 136,
+      "catalogMissingCells": 0,
+      "catalogMissingByLocale": {
+        "de-de": 0,
+        "es-es": 0,
+        "fr-fr": 0,
+        "ja-jp": 0,
+        "pt-br": 0
+      }
+    },
+    {
+      "path": "/embed",
+      "integrationWave": "R-W03",
+      "grokTranslationBatch": "R-C01",
+      "catalogSegments": 64,
+      "catalogMissingCells": 5,
+      "catalogMissingByLocale": {
+        "de-de": 1,
+        "es-es": 1,
+        "fr-fr": 1,
+        "ja-jp": 1,
+        "pt-br": 1
+      }
+    },
+    {
+      "path": "/about/abi",
+      "integrationWave": "R-W04",
+      "grokTranslationBatch": null,
+      "catalogSegments": 45,
+      "catalogMissingCells": 0,
+      "catalogMissingByLocale": {
+        "de-de": 0,
+        "es-es": 0,
+        "fr-fr": 0,
+        "ja-jp": 0,
+        "pt-br": 0
+      }
+    },
+    {
+      "path": "/about/editorial-policy",
+      "integrationWave": "R-W04",
+      "grokTranslationBatch": null,
+      "catalogSegments": 52,
+      "catalogMissingCells": 0,
+      "catalogMissingByLocale": {
+        "de-de": 0,
+        "es-es": 0,
+        "fr-fr": 0,
+        "ja-jp": 0,
+        "pt-br": 0
+      }
+    },
+    {
+      "path": "/privacy",
+      "integrationWave": "R-W04",
+      "grokTranslationBatch": "R-R02",
+      "catalogSegments": 27,
+      "catalogMissingCells": 15,
+      "catalogMissingByLocale": {
+        "de-de": 3,
+        "es-es": 3,
+        "fr-fr": 3,
+        "ja-jp": 3,
+        "pt-br": 3
+      }
+    },
+    {
+      "path": "/stats",
+      "integrationWave": "R-W04",
+      "grokTranslationBatch": "R-C01",
+      "catalogSegments": 10,
+      "catalogMissingCells": 25,
+      "catalogMissingByLocale": {
+        "de-de": 5,
+        "es-es": 5,
+        "fr-fr": 5,
+        "ja-jp": 5,
+        "pt-br": 5
+      }
+    },
+    {
+      "path": "/support",
+      "integrationWave": "R-W04",
+      "grokTranslationBatch": "R-R02",
+      "catalogSegments": 33,
+      "catalogMissingCells": 140,
+      "catalogMissingByLocale": {
+        "de-de": 28,
+        "es-es": 28,
+        "fr-fr": 28,
+        "ja-jp": 28,
+        "pt-br": 28
+      }
+    }
+  ],
+  "integrationWaves": [
+    {
+      "id": "R-W01",
+      "name": "duration-pages",
+      "routes": [
+        "/1-minute-breathing-exercise",
+        "/2-minute-breathing-exercise",
+        "/4-7-8-breathing-for-insomnia",
+        "/5-minute-breathing-exercise"
+      ]
+    },
+    {
+      "id": "R-W02",
+      "name": "editorial-and-safety-pages",
+      "routes": [
+        "/box-breathing-before-presentation",
+        "/breathing-exercises-before-surgery",
+        "/breathing-exercises-for-labor",
+        "/holiday-breathing-exercises",
+        "/physiological-sigh-panic-attack"
+      ]
+    },
+    {
+      "id": "R-W03",
+      "name": "application-and-embed-pages",
+      "routes": [
+        "/box-breathing-app",
+        "/breathing-app",
+        "/breathing-visualizer",
+        "/coherent-breathing-app",
+        "/embed"
+      ]
+    },
+    {
+      "id": "R-W04",
+      "name": "trust-and-information-pages",
+      "routes": [
+        "/about/abi",
+        "/about/editorial-policy",
+        "/privacy",
+        "/stats",
+        "/support"
+      ]
+    }
+  ],
+  "grokTranslationBatches": [
+    {
+      "id": "R-C01",
+      "lane": "composer-output-only",
+      "model": "grok-composer-2.5-fast",
+      "catalogMissingCells": 96,
+      "routes": ["/breathing-app", "/breathing-visualizer", "/embed", "/stats"]
+    },
+    {
+      "id": "R-R01",
+      "lane": "strong-review",
+      "model": "grok-4.5",
+      "catalogMissingCells": 115,
+      "routes": [
+        "/box-breathing-before-presentation",
+        "/physiological-sigh-panic-attack"
+      ]
+    },
+    {
+      "id": "R-R02",
+      "lane": "strong-review",
+      "model": "grok-4.5",
+      "catalogMissingCells": 155,
+      "routes": ["/privacy", "/support"]
+    }
+  ],
+  "catalogAuditBatch": {
+    "id": "R-A01",
+    "lane": "strong-catalog-audit",
+    "model": "grok-4.5",
+    "routes": "all-remaining",
+    "expectedCells": "compiler-emitted"
+  }
+}

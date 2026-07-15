@@ -2,7 +2,7 @@
 
 Started: 2026-07-15  
 Planning estimate: 20 to 30 focused engineering days  
-Current phase: Phase 3 `/breathe` and `/for` families locally preview-ready; production-admission evidence remains pending; production remains in `proxy` mode
+Current phase: Phase 3 `/breathe` and `/for` families pass the configured hosted-preview matrix; Phase 4 route migration and production-admission evidence remain pending; production remains in `proxy` mode
 
 This is a living plan. Update checkboxes and the progress log as evidence changes. Estimates are planning ranges, not deadlines.
 
@@ -79,7 +79,7 @@ Deliverables:
 - [x] Pass locale-explicit localized values into the proof routes' client components during hydration.
 - [x] Implement preview and cutover publication from the shared route manifest.
 - [x] Render localized metadata, Open Graph data, canonical, hreflang, and structured data for all five proof routes.
-- [~] Make the proof set work in local development and a normal Vercel preview. The five-route matrix works in a production-equivalent local build; a Vercel preview is still required.
+- [x] Make the proof set work in local development and a normal Vercel preview. The five-route matrix passes locally and is included in the successful 185-pair hosted server matrix.
 - [~] Add automated parity and hydration tests for the proof set. Static contracts and production HTML verification pass for all 25 pairs, and hydrated browser checks pass on representative structured, timer, and homepage routes; the full browser matrix remains.
 - [x] Compile complete route-scoped content objects for `/breathe/buteyko` and `/for/anxiety` with no runtime text matching.
 - [x] Add a post-build verifier for the 25 admitted production HTML artifacts and the fail-closed route boundary.
@@ -91,8 +91,8 @@ Deliverables:
 Gate 2:
 
 - [x] A no-JavaScript response contains the intended localized body and metadata. Proven locally for all 25 admitted route-locale pairs.
-- [~] Browser and crawler user agents receive equivalent localized content. Server output and one hydrated browser route agree; the full user-agent matrix remains.
-- [~] No hydration mismatch or post-load language swap occurs. One Spanish proof route completed hydration with stable title, `lang`, H1, and chrome and no hydration console error; the full matrix remains.
+- [~] Browser and crawler user agents receive equivalent localized content. All 185 admitted hosted server responses pass the metadata and body-artifact contract, and representative hydrated browser checks pass across all five translated locales; a dedicated crawler user-agent sweep remains.
+- [~] No hydration mismatch or post-load language swap occurs. Representative proof and structured routes across all five translated locales completed hydration with stable title, `lang`, content, and chrome and no browser console error; the full interactive matrix remains.
 - [~] Existing public paths, query behavior, and English routes remain stable. Local proxy and English status checks pass; production-equivalent crawl remains.
 - [x] The admitted proof routes render without access to MassTranslate.
 - [x] Performance is within the agreed local guardrail relative to English pages. `/about` is 85.3 KB versus 85.1 KB English, the localized timer exactly matches English at 167 KB, and the shared localized catch-all is 170 KB versus the 167 KB English homepage.
@@ -111,8 +111,8 @@ Deliverables:
 - [x] Migrate `/breathe` and all `/breathe/*` pages into deterministic bundles, shared renderers, literal server loaders, and manifest-controlled local preview.
 - [x] Migrate `/for` and all `/for/*` pages into deterministic bundles, reviewed inputs, shared renderers, literal server loaders, and manifest-controlled local preview.
 - [x] Localize shared pattern/use-case sections, citations, warnings, FAQs, calls to action, and structured data for both structured families.
-- [~] Localize the common breathing experience and its client-side controls. Route chrome and locale-explicit runtime phrases are integrated for both structured families; the full browser matrix remains pending.
-- [~] Add route-family coverage, metadata, and screenshot tests. Compiler, manifest, route-shell, renderer, production-build, artifact, and representative hydrated-browser checks pass; screenshot coverage remains pending.
+- [~] Localize the common breathing experience and its client-side controls. Route chrome and locale-explicit runtime phrases are integrated for both structured families; hosted hydration and mobile layout checks pass, while the full interactive browser matrix remains pending.
+- [~] Add route-family coverage, metadata, and screenshot tests. Compiler, manifest, route-shell, renderer, hosted production-build, complete 185-pair server matrix, and representative hydrated-browser checks pass; screenshot coverage remains pending.
 
 Gate 3:
 
@@ -167,6 +167,7 @@ Deliverables:
 - [ ] Validate query-string canonical behavior.
 - [ ] Generate localized Open Graph and social metadata from checked-in content.
 - [ ] Update `docs/SEO-EXPERIMENTS.md` with baseline, guardrails, and a measure-after date before production changes.
+- [x] Prevent non-production deployments from submitting the production sitemap to IndexNow. The first configured native preview exposed the old broad CI gate; the hook now requires `VERCEL=1` and `VERCEL_ENV=production`, with focused production, preview, development, generic-CI, and local tests.
 
 Gate 5:
 
@@ -216,7 +217,7 @@ Owner authorization: granted on 2026-07-15. The authorization becomes actionable
 
 Deliverables:
 
-- [ ] Run the complete automated route and metadata matrix against a production-equivalent preview.
+- [~] Run the complete automated route and metadata matrix against a production-equivalent preview. All 185 currently admitted locale-route pairs pass on the hosted preview; remaining Phase 4 routes must join the matrix before cutover.
 - [ ] Run focused browser QA for all route families and locales.
 - [ ] Capture pre-cutover GSC indexing, search performance, Bing performance, crawl health, page speed, and error baselines.
 - [ ] Freeze unrelated routing and sitemap work during cutover.
