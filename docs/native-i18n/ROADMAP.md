@@ -2,7 +2,7 @@
 
 Started: 2026-07-15  
 Planning estimate: 20 to 30 focused engineering days  
-Current phase: Phase 3 `/breathe` and `/for` families pass the configured hosted-preview matrix; Phase 4 route migration and production-admission evidence remain pending; production remains in `proxy` mode
+Current phase: Phase 3 `/breathe` and `/for` families pass the configured hosted-preview matrix; all 366 known Phase 4 catalog gaps now have source-bound reviewed repository translations; runtime route migration and production-admission evidence remain pending; production remains in `proxy` mode
 
 This is a living plan. Update checkboxes and the progress log as evidence changes. Estimates are planning ranges, not deadlines.
 
@@ -132,7 +132,7 @@ Goal: complete native coverage for the remaining public site.
 
 Deliverables:
 
-- [ ] Migrate bespoke timer, visualizer, application, exercise, informational, and support pages.
+- [~] Migrate bespoke timer, visualizer, application, exercise, informational, and support pages. Source-bound contracts now preserve all 366 previously missing catalog cells with zero unresolved values; typed runtime bundles, renderers, and route admission remain pending for 19 static routes.
 - [ ] Migrate navigation, footer, settings, authentication, session completion, and error-state phrases.
 - [ ] Replace `window.__MT_CONFIG__` locale inference with repository-owned locale state.
 - [ ] Reconcile the existing runtime phrase table with the new shared bundle.

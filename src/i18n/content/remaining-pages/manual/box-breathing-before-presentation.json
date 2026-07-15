@@ -1,0 +1,174 @@
+{
+  "entries": [
+    {
+      "messageId": "catalog-placement.7b7c96b1-3acf-4a72-ac43-92604c90df3a",
+      "reason": "Missing approved catalog translation for attr:div.nbb-panel:aria-label:pos:0",
+      "reviewedSourceHash": "4f338bb6f491836f59e6de2f3c49e8a402e9f646f223a280cb7627d8a5d9229d",
+      "scope": "content",
+      "sourceText": "Save your session",
+      "translations": {
+        "de-de": "Sitzung speichern",
+        "es-es": "Guarda tu sesión",
+        "fr-fr": "Enregistre ta session",
+        "ja-jp": "セッションを保存",
+        "pt-br": "Salve sua sessão"
+      }
+    },
+    {
+      "messageId": "catalog-placement.7f3043c5-a614-461f-b3b8-2329ec9de9a8",
+      "reason": "Missing approved catalog translation for attr:button.nbb-x.nbb-x-card:aria-label:pos:0",
+      "reviewedSourceHash": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed",
+      "scope": "content",
+      "sourceText": "Close",
+      "translations": {
+        "de-de": "Schließen",
+        "es-es": "Cerrar",
+        "fr-fr": "Fermer",
+        "ja-jp": "閉じる",
+        "pt-br": "Fechar"
+      }
+    },
+    {
+      "messageId": "catalog-placement.f931b5cf-b5cd-4afe-9fe2-f7c9b7fe60a1",
+      "reason": "Missing approved catalog translation for sel:h2.nbb-title:ctx:heading:pos:0",
+      "reviewedSourceHash": "dc6151531a9458f0fd1cd4f986e4205ca241f154d7069b4824d2feedbfb812c4",
+      "scope": "content",
+      "sourceText": "Save your breathing practice journey",
+      "translations": {
+        "de-de": "Speichere deinen Atemübungs-Weg",
+        "es-es": "Guarda tu recorrido de práctica de respiración",
+        "fr-fr": "Enregistre ton parcours de pratique de respiration",
+        "ja-jp": "呼吸の練習の旅を保存",
+        "pt-br": "Salve sua jornada de prática de respiração"
+      }
+    },
+    {
+      "messageId": "catalog-placement.3b2d3133-63df-4dc5-9e68-4b9f8927f97c",
+      "reason": "Missing approved catalog translation for sel:div.nbb-eyebrow:ctx:div:pos:0",
+      "reviewedSourceHash": "91aa92ee57681bee4dc26ff99de5f27d024ecca4f583b99b46cc879b0f54cf8c",
+      "scope": "content",
+      "sourceText": "✓ SESSION COMPLETE",
+      "translations": {
+        "de-de": "✓ SITZUNG ABGESCHLOSSEN",
+        "es-es": "✓ SESIÓN COMPLETADA",
+        "fr-fr": "✓ SÉANCE TERMINÉE",
+        "ja-jp": "✓ セッション完了",
+        "pt-br": "✓ SESSÃO CONCLUÍDA"
+      }
+    },
+    {
+      "messageId": "catalog-placement.cd6c1abf-30b9-45ab-8d52-6ebace1826df",
+      "reason": "Missing approved catalog translation for sel:div.nbb-mode:ctx:div:pos:0",
+      "reviewedSourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095",
+      "scope": "chrome",
+      "sourceText": "Box Breathing",
+      "translations": {
+        "de-de": "Box Breathing",
+        "es-es": "Box Breathing",
+        "fr-fr": "Box Breathing",
+        "ja-jp": "Box Breathing",
+        "pt-br": "Box Breathing"
+      }
+    },
+    {
+      "messageId": "catalog-placement.c0339002-dd48-4571-908d-c9c2d8d303aa",
+      "reason": "Missing approved catalog translation for sel:span:ctx:span:pos:0",
+      "reviewedSourceHash": "7ddb44d8a533a7535d85cedddf35d7f3414632ad4e10a0d7ca697723e1d97993",
+      "scope": "content",
+      "sourceText": "just now",
+      "translations": {
+        "de-de": "gerade eben",
+        "es-es": "ahora mismo",
+        "fr-fr": "à l'instant",
+        "ja-jp": "たった今",
+        "pt-br": "agora mesmo"
+      }
+    },
+    {
+      "messageId": "catalog-placement.3706076c-7365-4468-a265-dfe0cc9765b6",
+      "reason": "Missing approved catalog translation for sel:span.nbb-g-label:ctx:span:pos:0",
+      "reviewedSourceHash": "cce937e891444a7417c696cdd80c0eed11deb383f3c42bdb8b591d5dfcaa398e",
+      "scope": "content",
+      "sourceText": "Continue with Google",
+      "translations": {
+        "de-de": "Mit Google fortfahren",
+        "es-es": "Continuar con Google",
+        "fr-fr": "Continuer avec Google",
+        "ja-jp": "Googleで続行",
+        "pt-br": "Continuar com o Google"
+      }
+    },
+    {
+      "messageId": "catalog-placement.82170f15-f88d-452b-974c-8eb2bdea24e4",
+      "reason": "Missing approved catalog translation for sel:span.nbb-g-sub:ctx:span:pos:0",
+      "reviewedSourceHash": "2d05edde2700731b408e66b88b0625ab0122322c3850062c075f16eb43b7d349",
+      "scope": "content",
+      "sourceText": "One tap. No password.",
+      "translations": {
+        "de-de": "Ein Tipp. Kein Passwort.",
+        "es-es": "Un toque. Sin contraseña.",
+        "fr-fr": "Un appui. Pas de mot de passe.",
+        "ja-jp": "ワンタップ。パスワード不要。",
+        "pt-br": "Um toque. Sem senha."
+      }
+    },
+    {
+      "messageId": "catalog-placement.5be0ca2b-372f-46a0-8124-9841dedf4080",
+      "reason": "Missing approved catalog translation for attr:input.nbb-email-input:aria-label:pos:0",
+      "reviewedSourceHash": "f2488fd4ef4adbc6ac61300083f2c33980e48bb4bbf3c540ad760d61fc36f420",
+      "scope": "content",
+      "sourceText": "Email address",
+      "translations": {
+        "de-de": "E-Mail-Adresse",
+        "es-es": "Dirección de correo electrónico",
+        "fr-fr": "Adresse e-mail",
+        "ja-jp": "メールアドレス",
+        "pt-br": "Endereço de e-mail"
+      }
+    },
+    {
+      "messageId": "catalog-placement.b321e665-5bba-4a9f-80b3-0a8bcfd3744c",
+      "reason": "Missing approved catalog translation for attr:input.nbb-email-input:placeholder:pos:0",
+      "reviewedSourceHash": "2837f6fa1c84ecc9f4d745b5df455c27db84dba89d167eb2863ae293994736b5",
+      "scope": "content",
+      "sourceText": "Enter your email",
+      "translations": {
+        "de-de": "E-Mail-Adresse eingeben",
+        "es-es": "Introduce tu correo electrónico",
+        "fr-fr": "Saisis ton e-mail",
+        "ja-jp": "メールアドレスを入力",
+        "pt-br": "Digite seu e-mail"
+      }
+    },
+    {
+      "messageId": "catalog-placement.e76305a2-d202-4cd3-b7df-6bef50334d19",
+      "reason": "Missing approved catalog translation for sel:button.nbb-magic:ctx:cta_button:pos:0",
+      "reviewedSourceHash": "b386634c8b4382c837083126db57b819a9ec415563057903646df6121dd026d1",
+      "scope": "content",
+      "sourceText": "Send link",
+      "translations": {
+        "de-de": "Link senden",
+        "es-es": "Enviar enlace",
+        "fr-fr": "Envoyer le lien",
+        "ja-jp": "リンクを送信",
+        "pt-br": "Enviar link"
+      }
+    },
+    {
+      "messageId": "catalog-placement.7a39bd57-a463-477c-afc6-a812138c6949",
+      "reason": "Missing approved catalog translation for sel:button.nbb-textbtn:ctx:cta_button:pos:0",
+      "reviewedSourceHash": "392502efc3a96ad2eeca901c39fcd6a82f02115ae5fe1018f0bb198d27a6438e",
+      "scope": "content",
+      "sourceText": "or save with email",
+      "translations": {
+        "de-de": "oder mit E-Mail speichern",
+        "es-es": "o guardar con el correo electrónico",
+        "fr-fr": "ou enregistrer par e-mail",
+        "ja-jp": "またはメールで保存",
+        "pt-br": "ou salvar com e-mail"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/box-breathing-before-presentation"
+}

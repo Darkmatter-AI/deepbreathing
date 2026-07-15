@@ -73,7 +73,7 @@ test("batch map covers every intended static route not yet in native preview", (
     .sort();
   const mappedRoutes = batchMap.routes.map(({ path }) => path).sort();
 
-  assert.equal(batchMap.status, "prepared-not-launched");
+  assert.equal(batchMap.status, "translation-complete-integration-pending");
   assert.equal(expectedRoutes.length, 19);
   assert.deepEqual(mappedRoutes, expectedRoutes);
   assertUnique(mappedRoutes, "remaining route paths");
@@ -124,6 +124,8 @@ test("integration waves and Grok lanes have exclusive route ownership", () => {
       0,
     );
     assert.equal(batch.catalogMissingCells, expectedCells, batch.id);
+    assert.equal(batch.completedCells, expectedCells, batch.id);
+    assert.equal(batch.status, "complete", batch.id);
     assert.ok(
       batch.model === "grok-composer-2.5-fast" || batch.model === "grok-4.5",
       `${batch.id}: unexpected model`,

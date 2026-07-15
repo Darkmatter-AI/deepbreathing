@@ -117,6 +117,8 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 
 **Preview deployment safety correction, 2026-07-15:** The first configured native Vercel preview ran the existing `postbuild` hook and submitted the unchanged 337-URL production sitemap to IndexNow because the hook treated every Vercel CI build as eligible. The migration did not alter the sitemap or submit preview URLs, so this is operational noise rather than a translation-result change. The hook now fails closed unless both `VERCEL=1` and `VERCEL_ENV=production`. Focused tests pin production, preview, development, generic CI, and local behavior; a direct preview-environment smoke run logs the skip without fetching or submitting anything. No search-performance measurement is attached to this safety fix because it prevents non-production side effects and does not change production URLs, metadata, or submission behavior.
 
+**Phase 4 translation-input checkpoint, 2026-07-15:** Repository-owned, source-bound contracts now fill all 366 raw catalog gaps across the eight remaining static routes that had missing values. This checkpoint changes no runtime route, localized HTML, canonical, hreflang, sitemap, indexability, proxy behavior, or production traffic. It therefore has no search-performance measurement window yet. Any later runtime admission must preserve the existing migration baseline and receive its own preview crawl plus production measure-after date before cutover.
+
 ---
 
 ### 2026-07-10: Canonical Hijack — 2 Locale Pages Merged With Casino Domain (747live.bet)

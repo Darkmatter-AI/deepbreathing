@@ -848,3 +848,41 @@ Next:
 - Extract the shared typed contract for the four zero-gap duration pages in `R-W01` and use it to establish the remaining-page compiler schema.
 - Refresh Grok assignment counts from compiler-emitted manual contracts, then adapt the proven output-only controller.
 - Launch only the exact prepared route jobs after focused validators pass; keep content improvements and production cutover out of scope.
+
+## 2026-07-15: Remaining-page translation gaps closed under output-only Grok controls
+
+Status: Complete for source-bound missing-translation inputs; runtime integration remains pending
+
+What changed:
+
+- Added a deterministic remaining-page gap compiler that joins all five preserved locale artifacts by page placement, verifies the catalog baseline, hashes the current English source, preserves existing approved values, and emits eight route-scoped repository contracts.
+- Added tested output-only translation and independent-review controllers with explicit prepare, run, validate, and merge boundaries.
+- Kept every Grok process outside the repository with one turn, strict sandboxing, no tools, no web, no memory, no subagents, and schema-constrained JSON output.
+- Filled every one of the 366 raw catalog gaps without editing application routes, runtime bundles, route manifests, publication state, English source, or existing approved catalog translations.
+
+Translation and review evidence:
+
+- `R-C01` completed 96 cells with Composer. Independent Grok 4.5 review approved 92 and corrected four target-language terminology or UI-naturalness defects.
+- `R-R01` completed 115 cells with Grok 4.5. Independent review approved 114 and corrected one Japanese rendering of “journey.”
+- `R-R02` completed 155 cells with Grok 4.5. Independent review approved 154 and corrected one German medical-disclaimer grammar defect without changing its safety meaning.
+- Across all lanes, 360 of 366 values were approved as returned and six received narrow strict-parity corrections. Zero contract cells remain unresolved.
+- The deferred `R-A01` audit of already approved catalog values was not launched, keeping content and translation improvements outside this missing-value milestone.
+
+Validation evidence:
+
+- The gap-contract and two Grok-controller suites pass 8 of 8 tests.
+- Deterministic check mode reports eight contracts, 366 catalog-gap cells, and zero unresolved cells.
+- Every accepted value passed source-hash, immutable-field, locale-key, null-only mutation, number, link, markup, placeholder, and protected-token checks.
+- Compiler reruns preserve reviewed gap values and fail closed on source or existing-catalog drift.
+
+Process learning:
+
+- Full independent review found six correctable language defects even though every first-pass value passed mechanical validation, so review remains valuable while the process is calibrating.
+- The 140-cell support review succeeded but took about 220 seconds. Future review-only artifacts above roughly 100 cells should be split by locale when retry isolation or latency matters, without splitting canonical file ownership.
+- Catalog placement IDs are suitable for recovery provenance but are not runtime message IDs. Each route compiler must bind these values to stable semantic fields before preview admission.
+
+Next:
+
+- Commit this translation-input milestone before runtime route integration.
+- Start `R-W01` duration-page source extraction and prove the reusable typed renderer boundary.
+- Keep all 19 routes outside native preview until their typed bundles, loaders, metadata, hydration, and production-equivalent artifact checks pass.

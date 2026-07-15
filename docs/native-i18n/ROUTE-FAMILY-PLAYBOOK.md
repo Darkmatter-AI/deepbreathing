@@ -349,6 +349,18 @@ Record exact family counts, accepted replacements, unresolved values, publicatio
 
 No step in this sequence authorizes staging, committing, pushing, deploying, sitemap changes, proxy changes, production admission, or production cutover.
 
+### Remaining-page calibration, 2026-07-15
+
+The first Phase 4 gap pass exercised this playbook across eight routes and 366 catalog-null locale cells:
+
+- all 366 first-pass outputs passed the null-only mechanical gate;
+- independent Grok 4.5 review approved 360 values as returned and corrected six values;
+- the six corrections were target-language terminology, natural UI phrasing, one German medical-disclaimer grammar repair, and two closer Japanese renderings of “journey”; none changed source claims or structure;
+- every route used a fresh one-turn process with no tools, web, memory, subagents, or repository access;
+- the 140-cell `/support` review succeeded but took about 220 seconds, while smaller route reviews completed much faster.
+
+For future runs, keep full independent review while the process is still calibrating. Split review-only artifacts above roughly 100 locale cells by locale when lower latency or retry isolation matters, while retaining one canonical route-contract owner and one integrator-controlled merge. Placement IDs are valid provenance bindings for pre-integration gap recovery but must be replaced by stable semantic runtime IDs when the route compiler binds actual source fields.
+
 ## Quality gates
 
 ### Per-entry mechanical gate

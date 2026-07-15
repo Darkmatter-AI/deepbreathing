@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "prepared-not-launched",
+  "status": "translation-complete-integration-pending",
   "baselineCommit": "7302e5ebde1fdf8e74e5963e496b800d6566d8ae",
   "locales": ["de-de", "es-es", "fr-fr", "ja-jp", "pt-br"],
   "routes": [
@@ -322,6 +322,9 @@
       "lane": "composer-output-only",
       "model": "grok-composer-2.5-fast",
       "catalogMissingCells": 96,
+      "completedCells": 96,
+      "independentReviewCorrections": 4,
+      "status": "complete",
       "routes": ["/breathing-app", "/breathing-visualizer", "/embed", "/stats"]
     },
     {
@@ -329,6 +332,9 @@
       "lane": "strong-review",
       "model": "grok-4.5",
       "catalogMissingCells": 115,
+      "completedCells": 115,
+      "independentReviewCorrections": 1,
+      "status": "complete",
       "routes": [
         "/box-breathing-before-presentation",
         "/physiological-sigh-panic-attack"
@@ -339,6 +345,9 @@
       "lane": "strong-review",
       "model": "grok-4.5",
       "catalogMissingCells": 155,
+      "completedCells": 155,
+      "independentReviewCorrections": 1,
+      "status": "complete",
       "routes": ["/privacy", "/support"]
     }
   ],
@@ -347,6 +356,7 @@
     "lane": "strong-catalog-audit",
     "model": "grok-4.5",
     "routes": "all-remaining",
-    "expectedCells": "compiler-emitted"
+    "expectedCells": "compiler-emitted",
+    "status": "deferred-out-of-scope"
   }
 }

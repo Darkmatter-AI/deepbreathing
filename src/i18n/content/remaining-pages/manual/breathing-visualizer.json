@@ -1,0 +1,188 @@
+{
+  "entries": [
+    {
+      "messageId": "catalog-placement.f7b58b94-8f4f-40f1-aef2-8dc0e0645899",
+      "reason": "Missing approved catalog translation for sel:h2:ctx:heading:pos:0",
+      "reviewedSourceHash": "f3f12bcbaf484115a74ed6efa55efbc1aafa67319af7b5c41813fedc7353e6a6",
+      "scope": "content",
+      "sourceText": "Application error: a client-side exception has occurred (see the browser console for more information).",
+      "translations": {
+        "de-de": "Anwendungsfehler: Eine clientseitige Ausnahme ist aufgetreten (weitere Informationen finden Sie in der Browserkonsole).",
+        "es-es": "Error de la aplicación: se ha producido una excepción del lado del cliente (consulte la consola del navegador para obtener más información).",
+        "fr-fr": "Erreur d'application : une exception côté client s'est produite (voir la console du navigateur pour plus d'informations).",
+        "ja-jp": "アプリケーションエラー：クライアント側で例外が発生しました（詳細はブラウザのコンソールをご確認ください）。",
+        "pt-br": "Erro no aplicativo: ocorreu uma exceção no lado do cliente (consulte o console do navegador para mais informações)."
+      }
+    },
+    {
+      "messageId": "catalog-placement.4c60a2ea-12d2-4344-bfee-63c2f0c25a48",
+      "reason": "Missing approved catalog translation for attr:div.nbb-panel:aria-label:pos:0",
+      "reviewedSourceHash": "4f338bb6f491836f59e6de2f3c49e8a402e9f646f223a280cb7627d8a5d9229d",
+      "scope": "content",
+      "sourceText": "Save your session",
+      "translations": {
+        "de-de": "Sitzung speichern",
+        "es-es": "Guardar tu sesión",
+        "fr-fr": "Enregistrer votre session",
+        "ja-jp": "セッションを保存",
+        "pt-br": "Salvar sua sessão"
+      }
+    },
+    {
+      "messageId": "catalog-placement.1d2e5dd0-a140-4601-80ed-78e2c3a90595",
+      "reason": "Missing approved catalog translation for attr:button.nbb-x.nbb-x-card:aria-label:pos:0",
+      "reviewedSourceHash": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed",
+      "scope": "content",
+      "sourceText": "Close",
+      "translations": {
+        "de-de": "Schließen",
+        "es-es": "Cerrar",
+        "fr-fr": "Fermer",
+        "ja-jp": "閉じる",
+        "pt-br": "Fechar"
+      }
+    },
+    {
+      "messageId": "catalog-placement.3ec15fd4-7561-4af9-883c-ed65622fdef6",
+      "reason": "Missing approved catalog translation for sel:h2.nbb-title:ctx:heading:pos:0",
+      "reviewedSourceHash": "dc6151531a9458f0fd1cd4f986e4205ca241f154d7069b4824d2feedbfb812c4",
+      "scope": "content",
+      "sourceText": "Save your breathing practice journey",
+      "translations": {
+        "de-de": "Speichern Sie Ihre Atemübungs-Reise",
+        "es-es": "Guarda tu recorrido de práctica de respiración",
+        "fr-fr": "Enregistrez votre parcours de pratique de respiration",
+        "ja-jp": "呼吸の練習の歩みを保存",
+        "pt-br": "Salve sua jornada de prática de respiração"
+      }
+    },
+    {
+      "messageId": "catalog-placement.3759cf51-cc2f-4a05-9b97-b35f071bbdb3",
+      "reason": "Missing approved catalog translation for sel:div.nbb-eyebrow:ctx:div:pos:0",
+      "reviewedSourceHash": "91aa92ee57681bee4dc26ff99de5f27d024ecca4f583b99b46cc879b0f54cf8c",
+      "scope": "content",
+      "sourceText": "✓ SESSION COMPLETE",
+      "translations": {
+        "de-de": "✓ SITZUNG ABGESCHLOSSEN",
+        "es-es": "✓ SESIÓN COMPLETADA",
+        "fr-fr": "✓ SESSION TERMINÉE",
+        "ja-jp": "✓ セッション完了",
+        "pt-br": "✓ SESSÃO CONCLUÍDA"
+      }
+    },
+    {
+      "messageId": "catalog-placement.814f8fc9-9824-41ad-8db5-a7de431ec73d",
+      "reason": "Missing approved catalog translation for sel:div.nbb-mode:ctx:div:pos:0",
+      "reviewedSourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095",
+      "scope": "chrome",
+      "sourceText": "Box Breathing",
+      "translations": {
+        "de-de": "Box-Atmung",
+        "es-es": "Respiración en caja",
+        "fr-fr": "Respiration carrée",
+        "ja-jp": "ボックス呼吸",
+        "pt-br": "Respiração em caixa"
+      }
+    },
+    {
+      "messageId": "catalog-placement.5881d294-0514-4bd4-b0e9-81abef54ad6a",
+      "reason": "Missing approved catalog translation for sel:span:ctx:span:pos:0",
+      "reviewedSourceHash": "7ddb44d8a533a7535d85cedddf35d7f3414632ad4e10a0d7ca697723e1d97993",
+      "scope": "content",
+      "sourceText": "just now",
+      "translations": {
+        "de-de": "gerade eben",
+        "es-es": "justo ahora",
+        "fr-fr": "à l'instant",
+        "ja-jp": "たった今",
+        "pt-br": "agora mesmo"
+      }
+    },
+    {
+      "messageId": "catalog-placement.102eae7c-a85c-4be7-b562-9a2b7760e62b",
+      "reason": "Missing approved catalog translation for sel:span.nbb-g-label:ctx:span:pos:0",
+      "reviewedSourceHash": "cce937e891444a7417c696cdd80c0eed11deb383f3c42bdb8b591d5dfcaa398e",
+      "scope": "content",
+      "sourceText": "Continue with Google",
+      "translations": {
+        "de-de": "Mit Google fortfahren",
+        "es-es": "Continuar con Google",
+        "fr-fr": "Continuer avec Google",
+        "ja-jp": "Googleで続行",
+        "pt-br": "Continuar com o Google"
+      }
+    },
+    {
+      "messageId": "catalog-placement.a84a28cb-93c0-4544-8e02-654eb2e802dc",
+      "reason": "Missing approved catalog translation for sel:span.nbb-g-sub:ctx:span:pos:0",
+      "reviewedSourceHash": "2d05edde2700731b408e66b88b0625ab0122322c3850062c075f16eb43b7d349",
+      "scope": "content",
+      "sourceText": "One tap. No password.",
+      "translations": {
+        "de-de": "Einmal tippen. Kein Passwort.",
+        "es-es": "Un toque. Sin contraseña.",
+        "fr-fr": "Un appui. Pas de mot de passe.",
+        "ja-jp": "タップ1回。パスワード不要。",
+        "pt-br": "Um toque. Sem senha."
+      }
+    },
+    {
+      "messageId": "catalog-placement.94d33e9c-6068-46aa-a986-0c7a232f6100",
+      "reason": "Missing approved catalog translation for attr:input.nbb-email-input:aria-label:pos:0",
+      "reviewedSourceHash": "f2488fd4ef4adbc6ac61300083f2c33980e48bb4bbf3c540ad760d61fc36f420",
+      "scope": "content",
+      "sourceText": "Email address",
+      "translations": {
+        "de-de": "E-Mail-Adresse",
+        "es-es": "Dirección de correo electrónico",
+        "fr-fr": "Adresse e-mail",
+        "ja-jp": "メールアドレス",
+        "pt-br": "Endereço de e-mail"
+      }
+    },
+    {
+      "messageId": "catalog-placement.9b34e8c5-c93a-436a-abf5-97e3ab3fb5ed",
+      "reason": "Missing approved catalog translation for attr:input.nbb-email-input:placeholder:pos:0",
+      "reviewedSourceHash": "2837f6fa1c84ecc9f4d745b5df455c27db84dba89d167eb2863ae293994736b5",
+      "scope": "content",
+      "sourceText": "Enter your email",
+      "translations": {
+        "de-de": "E-Mail eingeben",
+        "es-es": "Introduce tu correo electrónico",
+        "fr-fr": "Saisissez votre e-mail",
+        "ja-jp": "メールアドレスを入力",
+        "pt-br": "Digite seu e-mail"
+      }
+    },
+    {
+      "messageId": "catalog-placement.17a29464-66c2-468e-b7d4-b3de1d6c9dce",
+      "reason": "Missing approved catalog translation for sel:button.nbb-magic:ctx:cta_button:pos:0",
+      "reviewedSourceHash": "b386634c8b4382c837083126db57b819a9ec415563057903646df6121dd026d1",
+      "scope": "content",
+      "sourceText": "Send link",
+      "translations": {
+        "de-de": "Link senden",
+        "es-es": "Enviar enlace",
+        "fr-fr": "Envoyer le lien",
+        "ja-jp": "リンクを送信",
+        "pt-br": "Enviar link"
+      }
+    },
+    {
+      "messageId": "catalog-placement.51401406-8193-4070-a718-4622b1192091",
+      "reason": "Missing approved catalog translation for sel:button.nbb-textbtn:ctx:cta_button:pos:0",
+      "reviewedSourceHash": "392502efc3a96ad2eeca901c39fcd6a82f02115ae5fe1018f0bb198d27a6438e",
+      "scope": "content",
+      "sourceText": "or save with email",
+      "translations": {
+        "de-de": "oder per E-Mail speichern",
+        "es-es": "o guardar con correo electrónico",
+        "fr-fr": "ou enregistrer par e-mail",
+        "ja-jp": "またはメールで保存",
+        "pt-br": "ou salvar com e-mail"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/breathing-visualizer"
+}
