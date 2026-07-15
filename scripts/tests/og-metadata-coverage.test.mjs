@@ -53,7 +53,7 @@ test('all local metadata pages define openGraph.images and twitter.images', () =
 });
 
 test('use-case metadata uses dynamic OG images per page', () => {
-  const file = path.join(APP_DIR, 'for', 'use-case-page.tsx');
+  const file = path.join(APP_DIR, '(site-en)', 'for', 'use-case-page.tsx');
   const source = fs.readFileSync(file, 'utf8');
 
   assert.match(source, /createOgImagePath\(/, 'use-case metadata should use dynamic OG image URL helper');

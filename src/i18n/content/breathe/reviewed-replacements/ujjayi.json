@@ -1,0 +1,60 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "海の波のような音のヨガの呼吸で深い集中と calm を得る。",
+      "locale": "ja-jp",
+      "reason": "The approved value leaves the English word 'calm' untranslated inside Japanese text.",
+      "replacement": "海の波のような音を生み、深い集中と落ち着きをもたらすヨガの呼吸法です。",
+      "reviewedSourceHash": "6a39548e7c59c5c821eda32ef7740098d400a83a7f78bf2f45941876ac09ad9d",
+      "sourcePath": "hero.subtitle",
+      "sourceText": "The yogic breath that sounds like ocean waves for deep focus and calm."
+    },
+    {
+      "currentCatalogValue": "Domina el ujjayi pranayama: la técnica de respiración",
+      "locale": "es-es",
+      "reason": "The approved metadata candidate loses the defining ocean-breath meaning; the faithful heading candidate already exists in the catalog.",
+      "replacement": "Respiración ujjayi: la técnica de la respiración oceánica",
+      "reviewedSourceHash": "e88e090f9492af5b6ac8f949913be4320488e5dacce3c448cd86b7e8fdb88c9f",
+      "sourcePath": "meta.ogTitle",
+      "sourceText": "Ujjayi Breathing: The Ocean Breath Technique"
+    },
+    {
+      "currentCatalogValue": "Temporizador gratuito de respiración ujjayi: domina la 'respiración oceánica' del yoga para una concentración profunda y calma. Guía paso a paso. Inicia",
+      "locale": "es-es",
+      "reason": "The approved value is truncated after 'Inicia' and does not preserve the complete source.",
+      "replacement": "Aprende la 'respiración oceánica' del yoga que calma el sistema nervioso. Visualizador y guía gratuitos.",
+      "reviewedSourceHash": "b34d6b403b836bca8bb134327ed2b057a2e7c48452506317015b97a5655c8b60",
+      "sourcePath": "meta.twitterDescription",
+      "sourceText": "Learn the yogic 'ocean breath' that calms your nervous system. Free visualizer + guide."
+    },
+    {
+      "currentCatalogValue": "478 呼吸 法と同様に、吸う息4に対して吐く息6という、吐く時間を50%長くする比率は、副交感神経をより強く活性化します。この吐く息を重視するパターンは、心を落ち着かせる多くの呼吸法に見られ、迷走神経のトーン向上やストレス軽減に関連しています。",
+      "locale": "ja-jp",
+      "reason": "The approved value injects an unrelated 4-7-8 keyword and corrupts the 4:6 timing explanation.",
+      "replacement": "吸う息4、吐く息6の比率では、呼気を50%長くすることで、吸気と呼気が同じ長さの場合よりも副交感神経系を強く活性化します。この呼気を重視するパターンは、心を落ち着かせる多くの呼吸法に見られ、迷走神経の緊張改善やストレス軽減に関連しています。",
+      "reviewedSourceHash": "fb24f547682c5bb5d5074ca875e97e9cf7c92d68ef538bdf7f7fc49e7258223a",
+      "sourcePath": "faqs[4].answer",
+      "sourceText": "The 4-6 (inhale-exhale) ratio, with the exhale lasting 50% longer, activates the parasympathetic nervous system more strongly than equal breathing. This exhale-emphasis pattern is found across calming breath techniques and is associated with vagal tone improvement and stress reduction."
+    },
+    {
+      "currentCatalogValue": "Find your rhythm",
+      "locale": "fr-fr",
+      "reason": "The approved value is untranslated English.",
+      "replacement": "Trouvez votre rythme",
+      "reviewedSourceHash": "f019b2e7c4e431b6d70721f03594c3fa228d52468f82c7f56bdc4f79136f415c",
+      "sourcePath": "howTo.steps[4].name",
+      "sourceText": "Find your rhythm"
+    },
+    {
+      "currentCatalogValue": "研究では、深呼吸 効果として知られる毎分5〜6回のスロー呼吸（ウジャイ呼吸のペース）が、迷走神経の活性化を通じて心拍変動を改善し、血圧を下げることを示しています。",
+      "locale": "ja-jp",
+      "reason": "The approved value contains an ungrammatical inserted SEO phrase that is absent from the source.",
+      "replacement": "研究では、毎分5〜6回のゆっくりした呼吸（ウジャイ呼吸の自然なペース）が、迷走神経の活性化を通じて心拍変動を改善し、血圧を下げることが示されています。",
+      "reviewedSourceHash": "3fd796633fec4583485338fdf01d0617820ae5b3171eb95801da322a654f4063",
+      "sourcePath": "research.studies[0].summary",
+      "sourceText": "Research shows slow breathing at 5-6 breaths per minute (the natural rate during ujjayi) improves heart rate variability and reduces blood pressure through vagal activation."
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/breathe/ujjayi"
+}

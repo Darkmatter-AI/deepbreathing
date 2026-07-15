@@ -1,6 +1,12 @@
 "use client";
 
-import { createElement, lazy, Suspense } from "react";
+import {
+  createElement,
+  lazy,
+  Suspense,
+  type ComponentType,
+  type LazyExoticComponent,
+} from "react";
 
 // The footer language switcher renders nothing until it mounts on the client
 // (it returns null until a client-only effect resolves the current locale), so
@@ -13,10 +19,23 @@ const LazyLanguageSwitcherFooter = lazy(() =>
   import("@/components/language-switcher").then((m) => ({
     default: m.LanguageSwitcherFooter,
   }))
-);
+) as LazyExoticComponent<ComponentType<{
+  basePath?: string;
+  locale?: string;
+}>>;
 
-export function LanguageSwitcherFooter() {
+export function LanguageSwitcherFooter({
+  basePath,
+  locale,
+}: {
+  basePath?: string;
+  locale?: string;
+}) {
   // createElement (not JSX) keeps react/jsx-runtime out of the page's first-load
   // client chunk; createElement is already in the shared React framework chunk.
-  return createElement(Suspense, { fallback: null }, createElement(LazyLanguageSwitcherFooter, null));
+  return createElement(
+    Suspense,
+    { fallback: null },
+    createElement(LazyLanguageSwitcherFooter, { basePath, locale }),
+  );
 }

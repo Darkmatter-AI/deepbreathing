@@ -1,0 +1,421 @@
+{
+  "schemaVersion": 1,
+  "status": "proposed-read-only-audit",
+  "scope": "ADR-016 strict migration parity for /breathe and /breathe/*",
+  "generatedAt": "2026-07-15",
+  "catalogAudit": {
+    "structuredRoutes": 14,
+    "routeLocalExactMisses": 313,
+    "recoverableFromGlobalCatalogExact": 2,
+    "recoverableFromGlobalCatalogTypographyNormalization": 75,
+    "genuineGapsPerLocale": 236,
+    "note": "Genuine gaps are intentionally not included here. This file covers only objectively broken existing approved catalog values."
+  },
+  "replacements": [
+    {
+      "route": "/breathe/4-7-8",
+      "sourcePath": "meta.title",
+      "source": "4-7-8 Breathing: Fall Asleep in 2 Minutes (Dr. Weil's Method)",
+      "locale": "pt-br",
+      "current": "Adormeça em 2 minutos com a respiração 4-7-8 (Método do",
+      "replacement": "Respiração 4-7-8: adormeça em 2 minutos (método do Dr. Weil)",
+      "reason": "The approved value is truncated and leaves an open parenthesis."
+    },
+    {
+      "route": "/breathe/4-7-8",
+      "sourcePath": "meta.ogTitle",
+      "source": "4-7-8 Breathing: Fall Asleep in 2 Minutes (Dr. Weil's Method)",
+      "locale": "pt-br",
+      "current": "Adormeça em 2 minutos com a respiração 4-7-8 (Método do",
+      "replacement": "Respiração 4-7-8: adormeça em 2 minutos (método do Dr. Weil)",
+      "reason": "The approved value is truncated and leaves an open parenthesis."
+    },
+    {
+      "route": "/breathe/9d-breathwork",
+      "sourcePath": "meta.description",
+      "source": "What 9D breathwork actually is — the breath protocol, the nine audio layers, session length, cost, and how it compares to Wim Hof. Try the breath part free with our guided pacer.",
+      "locale": "de-de",
+      "current": "Was 9D Atemarbeit ist: Atemprotokoll, neun Audio-Ebenen, Dauer, Kosten & Vergleich zu Wim Hof. Teste den Atemteil gratis mit unserem Pacer. Atemübungen,",
+      "replacement": "Was 9D Breathwork wirklich ist: das Atemprotokoll, die neun Audioebenen, Sitzungsdauer, Kosten und der Vergleich mit Wim Hof. Probieren Sie den Atemteil kostenlos mit unserem geführten Pacer aus.",
+      "reason": "The approved value ends with a stray keyword fragment and comma."
+    },
+    {
+      "route": "/breathe/9d-breathwork",
+      "sourcePath": "meta.description",
+      "source": "What 9D breathwork actually is — the breath protocol, the nine audio layers, session length, cost, and how it compares to Wim Hof. Try the breath part free with our guided pacer.",
+      "locale": "fr-fr",
+      "current": "Découvrez la respiration 9D : protocole, 9 couches audio, durée, coût et comparaison avec Wim Hof. Essayez la partie respiration gratuitement avec notre",
+      "replacement": "Découvrez ce qu'est réellement le breathwork 9D : le protocole respiratoire, les neuf couches audio, la durée des séances, le coût et la comparaison avec Wim Hof. Essayez gratuitement la partie respiratoire avec notre guide.",
+      "reason": "The approved value is truncated after a possessive determiner."
+    },
+    {
+      "route": "/breathe/9d-breathwork",
+      "sourcePath": "meta.ogDescription",
+      "source": "Honest plain-English guide. The breath underneath 9D is free — try it now. The nine-layer audio soundtrack is what 9D Breathwork (the brand) sells.",
+      "locale": "fr-fr",
+      "current": "Guide clair et honnête. La technique de respiration 9D est gratuite – essayez-la. La bande-son audio à neuf couches est ce que la marque 9D Breathwork",
+      "replacement": "Guide clair et honnête. La technique respiratoire sous-jacente au 9D est gratuite : essayez-la maintenant. La bande-son audio à neuf couches est ce que vend la marque 9D Breathwork.",
+      "reason": "The approved value is truncated before the final verb and does not form a complete sentence."
+    },
+    {
+      "route": "/breathe/belly",
+      "sourcePath": "hero.title",
+      "source": "Belly Breathing: Diaphragmatic Breathing Exercises",
+      "locale": "de-de",
+      "current": "Bauchatmung: Zwerchfellatmung Übungen",
+      "replacement": "Bauchatmung: Zwerchfell-Atemübungen",
+      "reason": "The approved heading candidate is grammatically malformed; the replacement is already present as the faithful metadata candidate."
+    },
+    {
+      "route": "/breathe/box",
+      "sourcePath": "meta.ogTitle",
+      "source": "Box Breathing: Navy SEAL Technique to Stop Anxiety Fast",
+      "locale": "es-es",
+      "current": "Descubre la respiración cuadrada: la técnica de los Navy",
+      "replacement": "Respiración cuadrada: técnica de los Navy SEAL para detener la ansiedad rápidamente",
+      "reason": "The approved title is truncated after 'Navy' and loses the technique and outcome."
+    },
+    {
+      "route": "/breathe/box",
+      "sourcePath": "meta.twitterTitle",
+      "source": "Box Breathing: Navy SEAL Technique to Stop Anxiety Fast",
+      "locale": "es-es",
+      "current": "Descubre la respiración cuadrada: la técnica de los Navy",
+      "replacement": "Respiración cuadrada: técnica de los Navy SEAL para detener la ansiedad rápidamente",
+      "reason": "The approved title is truncated after 'Navy' and loses the technique and outcome."
+    },
+    {
+      "route": "/breathe/breath-of-fire",
+      "sourcePath": "meta.description",
+      "source": "Practice breath of fire (Kapalabhati) — the rapid Kundalini yoga breathing technique for energy and mental clarity. Free guided timer with visual pacer.",
+      "locale": "es-es",
+      "current": "Practica la respiración de fuego (Kapalabhati), la técnica rápida de respiración de yoga Kundalini para energía y claridad mental. Temporizador guiado",
+      "replacement": "Practica la respiración de fuego (Kapalabhati), la técnica rápida de respiración del yoga kundalini para obtener energía y claridad mental. Temporizador guiado gratuito con guía visual.",
+      "reason": "The approved value ends in an incomplete fragment and omits that the timer is free and visual."
+    },
+    {
+      "route": "/breathe/breath-of-fire",
+      "sourcePath": "meta.ogDescription",
+      "source": "Practice breath of fire (Kapalabhati) — the rapid Kundalini yoga breathing technique for energy and mental clarity. Free guided timer with visual pacer.",
+      "locale": "es-es",
+      "current": "Practica la respiración de fuego (Kapalabhati), la técnica rápida de respiración de yoga Kundalini para energía y claridad mental. Temporizador guiado",
+      "replacement": "Practica la respiración de fuego (Kapalabhati), la técnica rápida de respiración del yoga kundalini para obtener energía y claridad mental. Temporizador guiado gratuito con guía visual.",
+      "reason": "The approved value ends in an incomplete fragment and omits that the timer is free and visual."
+    },
+    {
+      "route": "/breathe/breath-of-fire",
+      "sourcePath": "meta.twitterDescription",
+      "source": "Practice breath of fire (Kapalabhati) — the rapid Kundalini yoga breathing technique for energy and mental clarity.",
+      "locale": "es-es",
+      "current": "Practica la respiración de fuego (Kapalabhati), la técnica rápida de respiración de yoga Kundalini para energía y claridad mental. Temporizador guiado",
+      "replacement": "Practica la respiración de fuego (Kapalabhati), la técnica rápida de respiración del yoga kundalini para obtener energía y claridad mental.",
+      "reason": "The approved value appends a dangling timer fragment that is absent from this source."
+    },
+    {
+      "route": "/breathe/breath-of-fire",
+      "sourcePath": "related[2].reason",
+      "source": "A calming yoga breath that pairs well with breath of fire — use ujjayi to cool down after intense practice.",
+      "locale": "ja-jp",
+      "current": "火の呼吸の後にクールダウンするためにuindai呼吸を使うと、落ち着くヨガの呼吸になります。",
+      "replacement": "火の呼吸と組み合わせやすい穏やかなヨガ呼吸です。激しい練習の後は、ウジャイ呼吸でクールダウンします。",
+      "reason": "The approved value contains the corrupt technique name 'uindai' instead of ujjayi."
+    },
+    {
+      "route": "/breathe/buteyko",
+      "sourcePath": "research.safety[1]",
+      "source": "If you have asthma or respiratory conditions, consult your doctor before starting.",
+      "locale": "fr-fr",
+      "current": "Si vous souffrez d'asthme, consultez votre médecin avant de commencer.",
+      "replacement": "Si vous souffrez d'asthme ou d'une affection respiratoire, consultez votre médecin avant de commencer.",
+      "reason": "The approved safety text omits respiratory conditions beyond asthma."
+    },
+    {
+      "route": "/breathe/hope-cartel-9d-breathwork",
+      "sourcePath": "meta.description",
+      "source": "Hope Cartel is one of the biggest 9D breathwork delivery brands. What a session looks like, where to find them, what it costs, and how the underlying breath works — try it free here.",
+      "locale": "de-de",
+      "current": "Hope Cartel ist eine der größten 9D-Atemarbeitsmarken. So läuft eine Session ab, wo Sie sie finden, Kosten und die zugrunde liegende Atemtechnik – hier",
+      "replacement": "Hope Cartel ist eine der größten Anbietermarken für 9D Breathwork. Erfahren Sie, wie eine Sitzung abläuft, wo sie angeboten wird, was sie kostet und wie die zugrunde liegende Atemtechnik funktioniert. Probieren Sie sie hier kostenlos aus.",
+      "reason": "The approved value is truncated after 'hier' and loses the final action."
+    },
+    {
+      "route": "/breathe/hope-cartel-9d-breathwork",
+      "sourcePath": "meta.description",
+      "source": "Hope Cartel is one of the biggest 9D breathwork delivery brands. What a session looks like, where to find them, what it costs, and how the underlying breath works — try it free here.",
+      "locale": "es-es",
+      "current": "Hope Cartel, líder en breathwork 9D. Descubre sus sesiones, precios y la técnica de respiración. Prueba gratis el pranayama subyacente.",
+      "replacement": "Hope Cartel es una de las principales marcas que ofrece breathwork 9D. Descubre cómo es una sesión, dónde encontrarla, cuánto cuesta y cómo funciona la respiración subyacente. Pruébala gratis aquí.",
+      "reason": "The approved value misclassifies conscious connected breathing as pranayama."
+    },
+    {
+      "route": "/breathe/hope-cartel-9d-breathwork",
+      "sourcePath": "meta.description",
+      "source": "Hope Cartel is one of the biggest 9D breathwork delivery brands. What a session looks like, where to find them, what it costs, and how the underlying breath works — try it free here.",
+      "locale": "fr-fr",
+      "current": "Hope Cartel, marque majeure de respiration 9D. Découvrez les séances, prix, lieux et le fonctionnement de la respiration. Essayez gratuitement cet",
+      "replacement": "Hope Cartel est l'une des principales marques proposant le breathwork 9D. Découvrez le déroulement d'une séance, où la trouver, son coût et le fonctionnement de la respiration sous-jacente. Essayez-la gratuitement ici.",
+      "reason": "The approved value is truncated after a demonstrative determiner."
+    },
+    {
+      "route": "/breathe/hope-cartel-9d-breathwork",
+      "sourcePath": "meta.ogDescription",
+      "source": "Honest plain-English guide to Hope Cartel — Australian 9D breathwork community founded by Garry Wright. Plus a free pacer for the breath protocol itself.",
+      "locale": "es-es",
+      "current": "Guía de Hope Cartel, comunidad australiana de breathwork 9D de Garry Wright. Incluye un guía de respiración gratuito para el protocolo de pranayama.",
+      "replacement": "Guía clara de Hope Cartel, la comunidad australiana de breathwork 9D fundada por Garry Wright. Incluye un guía de ritmo gratuito para el propio protocolo respiratorio.",
+      "reason": "The approved value misclassifies the breath protocol as pranayama."
+    },
+    {
+      "route": "/breathe/hope-cartel-9d-breathwork",
+      "sourcePath": "meta.ogDescription",
+      "source": "Honest plain-English guide to Hope Cartel — Australian 9D breathwork community founded by Garry Wright. Plus a free pacer for the breath protocol itself.",
+      "locale": "pt-br",
+      "current": "Guia honesto sobre Hope Cartel, comunidade australiana de 9D breathwork de Garry Wright. Inclui um guia gratuito para o protocolo de exercícios",
+      "replacement": "Guia claro sobre a Hope Cartel, comunidade australiana de 9D breathwork fundada por Garry Wright. Inclui um marcador de ritmo gratuito para o próprio protocolo respiratório.",
+      "reason": "The approved value is truncated after 'exercícios' and does not form a complete phrase."
+    },
+    {
+      "route": "/breathe/hope-cartel-9d-breathwork",
+      "sourcePath": "body[1].content",
+      "source": "Like any 9D Breathwork session, the format runs 60 to 120 minutes total. It opens with grounding and intention-setting (~10 minutes), moves into the active breath phase set to the nine-layer audio soundtrack (~45 minutes), and closes with integration in silence (~15 minutes). The breath protocol is conscious connected breathing — continuous, no pauses, mouth-in / mouth-out. Hope Cartel sessions are typically held in dimmed rooms with mats, eye masks, and headphones for the binaural audio layers. Group sessions can run 20-100+ people; private sessions are one-on-one with Wright or a certified facilitator.",
+      "locale": "fr-fr",
+      "current": "Comme toute séance de respiration 9D, le format dure de 60 à 120 minutes au total. Elle débute par un ancrage et la définition d'intentions (~10 minutes), passe à la phase de respiration active sur une bande sonore audio à neuf couches (~45 minutes), et se termine par une intégration en silence (~15 minutes). Le protocole de respiration est une respiration consciente connectée — continue, sans pauses, bouche-ouverte / bouche-fermée. Les séances Hope Cartel se déroulent généralement dans des salles tamisées avec tapis, masques pour les yeux et écouteurs pour les couches audio binaurales. Les séances de groupe peuvent accueillir 20 à 100+ personnes ; les séances privées sont individuelles avec Wright ou un facilitateur certifié.",
+      "replacement": "Comme toute séance de respiration 9D, le format dure de 60 à 120 minutes au total. Elle débute par un ancrage et la définition d'intentions (~10 minutes), passe à la phase de respiration active sur une bande sonore audio à neuf couches (~45 minutes), et se termine par une intégration en silence (~15 minutes). Le protocole est une respiration consciente connectée, continue et sans pauses, avec inspiration par la bouche et expiration par la bouche. Les séances Hope Cartel se déroulent généralement dans des salles tamisées avec tapis, masques pour les yeux et écouteurs pour les couches audio binaurales. Les séances de groupe peuvent accueillir 20 à 100+ personnes ; les séances privées sont individuelles avec Wright ou un facilitateur certifié.",
+      "reason": "The approved value translates mouth-in/mouth-out as mouth-open/mouth-closed, reversing the breathing instruction."
+    },
+    {
+      "route": "/breathe/physiological-sigh",
+      "sourcePath": "faqs[0].answer",
+      "source": "The physiological sigh is a natural stress-relief mechanism your body already uses, validated by Stanford researchers in a 2023 randomized controlled trial (Balban et al., Cell Reports Medicine). It consists of a double inhale through the nose followed by a long exhale through the mouth. The study found that 5 minutes of daily cyclic sighing outperformed mindfulness meditation for mood improvement and anxiety reduction. The technique works because the double inhale reinflates collapsed lung alveoli while the extended exhale activates the parasympathetic nervous system.",
+      "locale": "ja-jp",
+      "current": "生理的ため息は、体が本来持っている自然なストレス解消メカニズムであり、2023年のスタンフォード大学の研究（Balbanら、Cell Reports Medicine）によってその効果が実証されました。鼻から2回吸い、口から長く吐き出すという構成です。この研究では、1日5分間の継続的なため息が、気分の改善や不安の軽減においてマインドフルネス瞑想を上回る結果を示しました。深呼吸 効果を最大限に引き出すこの手法が効果的な理由は、2回目の吸気がしぼんだ肺胞を再膨張させ、長い吐気が副交感神経を活性化させるためです。",
+      "replacement": "生理的ため息は、体が本来備えている自然なストレス緩和の仕組みで、2023年にスタンフォード大学の研究者が実施したランダム化比較試験（Balbanら、Cell Reports Medicine）で検証されました。鼻から2回吸い、その後口から長く吐きます。この研究では、毎日5分の周期的なため息が、気分改善と不安軽減においてマインドフルネス瞑想を上回りました。2回の吸気でつぶれた肺胞を再び膨らませ、長い呼気で副交感神経系を活性化するため、この技法は効果を発揮します。",
+      "reason": "The approved value contains an ungrammatical inserted SEO phrase that is not in the source."
+    },
+    {
+      "route": "/breathe/physiological-sigh",
+      "sourcePath": "voiceSearch[0].answer",
+      "source": "Physiological sigh breathing is two quick nasal inhales followed by a long, relaxed exhale. The second inhale tops off the lungs, and the slow exhale activates the vagus nerve to calm the stress response. Do 1-3 sighs for instant relief or 2-5 minutes for mood.",
+      "locale": "ja-jp",
+      "current": "生理的ため息とは、鼻から素早く2回吸い、その後ゆっくりとリラックスして吐き出す呼吸法です。2回目の吸気で肺を最大限に膨らませ、長い呼気が迷走神経を刺激してストレス反応を鎮めます。深呼吸 効果を実感したい時は1〜3回、気分を整えたい時は2〜5分間行いましょう。",
+      "replacement": "生理的ため息とは、鼻から素早く2回吸い、その後ゆっくりとリラックスして吐き出す呼吸法です。2回目の吸気で肺を十分に満たし、長い呼気が迷走神経を刺激してストレス反応を鎮めます。すぐに楽になるには1〜3回、気分を整えるには2〜5分間行います。",
+      "reason": "The approved value replaces 'instant relief' with an ungrammatical inserted SEO phrase."
+    },
+    {
+      "route": "/breathe/pursed-lip",
+      "sourcePath": "lineage",
+      "source": "Developed in clinical pulmonary medicine and respiratory therapy as a tool for patients with chronic obstructive pulmonary disease (COPD). There is no single originator. It became a standard component of pulmonary rehabilitation programs and was endorsed by the American College of Chest Physicians and AACVPR in 1997.",
+      "locale": "pt-br",
+      "current": "A técnica de respiração freno labial foi desenvolvida na medicina pulmonar clínica e terapia respiratória como uma ferramenta para pacientes com doença pulmonar obstrutiva crônica (DPOC). Não há um único criador. Tornou-se um componente padrão dos programas de reabilitação pulmonar e foi endossada pelo American College of Chest Physicians e AACVPR em 1997.",
+      "replacement": "A respiração com lábios franzidos foi desenvolvida na medicina pulmonar clínica e na terapia respiratória como uma ferramenta para pacientes com doença pulmonar obstrutiva crônica (DPOC). Não há um único criador. Tornou-se um componente padrão dos programas de reabilitação pulmonar e foi endossada pelo American College of Chest Physicians e pela AACVPR em 1997.",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'."
+    },
+    {
+      "route": "/breathe/pursed-lip",
+      "sourcePath": "hero.title",
+      "source": "Pursed Lip Breathing Technique",
+      "locale": "pt-br",
+      "current": "Técnica de respiração freno labial",
+      "replacement": "Técnica de respiração com lábios franzidos",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'."
+    },
+    {
+      "route": "/breathe/pursed-lip",
+      "sourcePath": "hero.intro",
+      "source": "Pursed lip breathing is a simple technique that slows your breathing and helps you get more air out of your lungs. Inhale slowly through your nose, then exhale through pursed lips (like blowing out a candle) for twice as long. Used by respiratory therapists worldwide for COPD, asthma, and exercise recovery.",
+      "locale": "pt-br",
+      "current": "A respiração freno labial é uma técnica simples que desacelera sua respiração e ajuda a expelir mais ar dos pulmões. Inspire lentamente pelo nariz e expire pelos lábios semicerrados (como assoprar uma vela) por duas vezes mais tempo. Usada por fisioterapeutas respiratórios globalmente para DPOC, asma e recuperação pós-exercício.",
+      "replacement": "A respiração com lábios franzidos é uma técnica simples que desacelera sua respiração e ajuda a expelir mais ar dos pulmões. Inspire lentamente pelo nariz e expire pelos lábios franzidos (como ao apagar uma vela) pelo dobro do tempo. É usada por fisioterapeutas respiratórios no mundo todo para DPOC, asma e recuperação após exercícios.",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'."
+    },
+    {
+      "route": "/breathe/pursed-lip",
+      "sourcePath": "meta.ogTitle",
+      "source": "Pursed Lip Breathing: Stop Shortness of Breath Fast",
+      "locale": "pt-br",
+      "current": "Respiração Freno Labial: Pare a Falta de Ar Rapidamente",
+      "replacement": "Respiração com lábios franzidos: alivie rapidamente a falta de ar",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'."
+    },
+    {
+      "route": "/breathe/pursed-lip",
+      "sourcePath": "meta.twitterTitle",
+      "source": "Pursed Lip Breathing: Free Timer",
+      "locale": "pt-br",
+      "current": "Respiração Freno Labial: Timer Grátis",
+      "replacement": "Respiração com lábios franzidos: timer grátis",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'."
+    },
+    {
+      "route": "/breathe/pursed-lip",
+      "sourcePath": "meta.twitterDescription",
+      "source": "Stop shortness of breath with the respiratory therapist-approved technique. Free timer.",
+      "locale": "pt-br",
+      "current": "Pare a falta de ar com a técnica de respiração freno labial aprovada por fisioterapeutas respiratórios. Timer grátis.",
+      "replacement": "Alivie a falta de ar com a técnica de respiração com lábios franzidos aprovada por fisioterapeutas respiratórios. Timer grátis.",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'."
+    },
+    {
+      "route": "/breathe/pursed-lip",
+      "sourcePath": "body[0].heading",
+      "source": "What Is Pursed Lip Breathing?",
+      "locale": "pt-br",
+      "current": "O que é a respiração freno labial?",
+      "replacement": "O que é a respiração com lábios franzidos?",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'."
+    },
+    {
+      "route": "/breathe/pursed-lip",
+      "sourcePath": "body[2].heading",
+      "source": "Pursed Lip Breathing for COPD and Shortness of Breath",
+      "locale": "pt-br",
+      "current": "Respiração freno labial para DPOC e dificuldade ao respirar",
+      "replacement": "Respiração com lábios franzidos para DPOC e falta de ar",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'."
+    },
+    {
+      "route": "/breathe/pursed-lip",
+      "sourcePath": "faqs[0].question",
+      "source": "How long should I do pursed lip breathing?",
+      "locale": "pt-br",
+      "current": "Por quanto tempo devo fazer a respiração freno labial?",
+      "replacement": "Por quanto tempo devo fazer a respiração com lábios franzidos?",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'."
+    },
+    {
+      "route": "/breathe/pursed-lip",
+      "sourcePath": "faqs[1].question",
+      "source": "What's the correct ratio for pursed lip breathing?",
+      "locale": "pt-br",
+      "current": "Qual é a proporção correta para a respiração freno labial?",
+      "replacement": "Qual é a proporção correta para a respiração com lábios franzidos?",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'."
+    },
+    {
+      "route": "/breathe/pursed-lip",
+      "sourcePath": "faqs[2].question",
+      "source": "Does pursed lip breathing help with anxiety?",
+      "locale": "pt-br",
+      "current": "A respiração freno labial ajuda na ansiedade?",
+      "replacement": "A respiração com lábios franzidos ajuda na ansiedade?",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'."
+    },
+    {
+      "route": "/breathe/pursed-lip",
+      "sourcePath": "faqs[3].question",
+      "source": "Can I use pursed lip breathing during exercise?",
+      "locale": "pt-br",
+      "current": "Posso usar a respiração freno labial durante o exercício?",
+      "replacement": "Posso usar a respiração com lábios franzidos durante o exercício?",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'."
+    },
+    {
+      "route": "/breathe/pursed-lip",
+      "sourcePath": "faqs[4].question",
+      "source": "Is pursed lip breathing good for COPD?",
+      "locale": "pt-br",
+      "current": "A respiração freno labial é boa para DPOC?",
+      "replacement": "A respiração com lábios franzidos é boa para DPOC?",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'."
+    },
+    {
+      "route": "/breathe/pursed-lip",
+      "sourcePath": "faqs[5].question",
+      "source": "What's the difference between pursed lip breathing and other techniques?",
+      "locale": "pt-br",
+      "current": "Qual a diferença entre a respiração freno labial e outras técnicas?",
+      "replacement": "Qual é a diferença entre a respiração com lábios franzidos e outras técnicas?",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'."
+    },
+    {
+      "route": "/breathe/pursed-lip",
+      "sourcePath": "related[0].reason",
+      "source": "Master diaphragmatic breathing first. It's the foundation for pursed-lip and all breathing techniques.",
+      "locale": "pt-br",
+      "current": "Domine primeiro a respiração diafragmática. Ela é a base para a respiração freno labial e todas as técnicas respiratórias.",
+      "replacement": "Domine primeiro a respiração diafragmática. Ela é a base da respiração com lábios franzidos e de todas as técnicas respiratórias.",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'."
+    },
+    {
+      "route": "/breathe/pursed-lip",
+      "sourcePath": "video.title",
+      "source": "Pursed Lip Breathing Technique - American Lung Association",
+      "locale": "pt-br",
+      "current": "Técnica de respiração freno labial - American Lung Association",
+      "replacement": "Técnica de respiração com lábios franzidos - American Lung Association",
+      "reason": "The approved Brazilian Portuguese candidate uses the Spanish term 'freno labial'; another approved candidate already uses the faithful Portuguese term."
+    },
+    {
+      "route": "/breathe/pursed-lip",
+      "sourcePath": "research.safety[0]",
+      "source": "Stop if you feel dizzy or faint.",
+      "locale": "ja-jp",
+      "current": "息がくるくる回るのを感じたら、すぐに中止してください。",
+      "replacement": "めまいや失神しそうな感覚がある場合は中止してください。",
+      "reason": "The approved safety text is nonsensical and does not communicate dizziness or faintness."
+    },
+    {
+      "route": "/breathe/tummo",
+      "sourcePath": "body[4].content",
+      "source": "Wim Hof has acknowledged drawing from the tummo tradition. Both techniques use hyperventilation-style breathing to create physiological changes. Key differences: tummo includes visualization of inner fire and is traditionally part of a spiritual practice within Tibetan Buddhism; Wim Hof adds a structured protocol with timed breath retention holds and deliberate cold exposure. The tummo breathing pattern is slower and more intentional than Wim Hof power breathing, which uses 30–40 rapid breaths per round. Tummo is a contemplative practice; Wim Hof is a performance protocol.",
+      "locale": "ja-jp",
+      "current": "ウィム・ホフはツンモの伝統から影響を受けたことを認めています。どちらの技法も、身体に生理的変化をもたらすための過換気スタイルの呼吸を使用します。主な違いは、ツンモが内なる火の視覚化を含むことと、チベット仏教内の霊的実践の一部であることです。ウィム・ホフは時間を取った呼吸保持と意図的な寒冷曝露を加えています。ツンモの呼吸パターンはウィム・ホフのパワーブレスに比べて遅く、意図的です。ツンモは内省的な実践、ウィム・ホフはパフォーマンスのプロトコルです。",
+      "replacement": "ウィム・ホフはツンモの伝統から影響を受けたことを認めています。どちらの技法も、身体に生理的変化をもたらすための過換気スタイルの呼吸を使用します。主な違いは、ツンモが内なる火の視覚化を含み、伝統的にチベット仏教の精神的実践の一部であるのに対し、ウィム・ホフは時間を決めた息止めと意図的な寒冷曝露を含む構造化されたプロトコルを加えている点です。ツンモの呼吸パターンは、1ラウンドあたり30〜40回の速い呼吸を行うウィム・ホフのパワーブレスよりも遅く、意図的です。ツンモは内省的な実践であり、ウィム・ホフはパフォーマンスのプロトコルです。",
+      "reason": "The approved value omits the source's 30–40 breaths-per-round timing detail."
+    },
+    {
+      "route": "/breathe/ujjayi",
+      "sourcePath": "hero.subtitle",
+      "source": "The yogic breath that sounds like ocean waves for deep focus and calm.",
+      "locale": "ja-jp",
+      "current": "海の波のような音のヨガの呼吸で深い集中と calm を得る。",
+      "replacement": "海の波のような音を生み、深い集中と落ち着きをもたらすヨガの呼吸法です。",
+      "reason": "The approved value leaves the English word 'calm' untranslated inside Japanese text."
+    },
+    {
+      "route": "/breathe/ujjayi",
+      "sourcePath": "meta.ogTitle",
+      "source": "Ujjayi Breathing: The Ocean Breath Technique",
+      "locale": "es-es",
+      "current": "Domina el ujjayi pranayama: la técnica de respiración",
+      "replacement": "Respiración ujjayi: la técnica de la respiración oceánica",
+      "reason": "The approved metadata candidate loses the defining ocean-breath meaning; the faithful heading candidate already exists in the catalog."
+    },
+    {
+      "route": "/breathe/ujjayi",
+      "sourcePath": "meta.twitterDescription",
+      "source": "Learn the yogic 'ocean breath' that calms your nervous system. Free visualizer + guide.",
+      "locale": "es-es",
+      "current": "Temporizador gratuito de respiración ujjayi: domina la 'respiración oceánica' del yoga para una concentración profunda y calma. Guía paso a paso. Inicia",
+      "replacement": "Aprende la 'respiración oceánica' del yoga que calma el sistema nervioso. Visualizador y guía gratuitos.",
+      "reason": "The approved value is truncated after 'Inicia' and does not preserve the complete source."
+    },
+    {
+      "route": "/breathe/ujjayi",
+      "sourcePath": "faqs[4].answer",
+      "source": "The 4-6 (inhale-exhale) ratio, with the exhale lasting 50% longer, activates the parasympathetic nervous system more strongly than equal breathing. This exhale-emphasis pattern is found across calming breath techniques and is associated with vagal tone improvement and stress reduction.",
+      "locale": "ja-jp",
+      "current": "478 呼吸 法と同様に、吸う息4に対して吐く息6という、吐く時間を50%長くする比率は、副交感神経をより強く活性化します。この吐く息を重視するパターンは、心を落ち着かせる多くの呼吸法に見られ、迷走神経のトーン向上やストレス軽減に関連しています。",
+      "replacement": "吸う息4、吐く息6の比率では、呼気を50%長くすることで、吸気と呼気が同じ長さの場合よりも副交感神経系を強く活性化します。この呼気を重視するパターンは、心を落ち着かせる多くの呼吸法に見られ、迷走神経の緊張改善やストレス軽減に関連しています。",
+      "reason": "The approved value injects an unrelated 4-7-8 keyword and corrupts the 4:6 timing explanation."
+    },
+    {
+      "route": "/breathe/ujjayi",
+      "sourcePath": "howTo.steps[4].name",
+      "source": "Find your rhythm",
+      "locale": "fr-fr",
+      "current": "Find your rhythm",
+      "replacement": "Trouvez votre rythme",
+      "reason": "The approved value is untranslated English."
+    },
+    {
+      "route": "/breathe/ujjayi",
+      "sourcePath": "research.studies[0].summary",
+      "source": "Research shows slow breathing at 5-6 breaths per minute (the natural rate during ujjayi) improves heart rate variability and reduces blood pressure through vagal activation.",
+      "locale": "ja-jp",
+      "current": "研究では、深呼吸 効果として知られる毎分5〜6回のスロー呼吸（ウジャイ呼吸のペース）が、迷走神経の活性化を通じて心拍変動を改善し、血圧を下げることを示しています。",
+      "replacement": "研究では、毎分5〜6回のゆっくりした呼吸（ウジャイ呼吸の自然なペース）が、迷走神経の活性化を通じて心拍変動を改善し、血圧を下げることが示されています。",
+      "reason": "The approved value contains an ungrammatical inserted SEO phrase that is absent from the source."
+    }
+  ]
+}

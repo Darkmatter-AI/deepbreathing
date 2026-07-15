@@ -1,0 +1,3066 @@
+{
+  "locales": {
+    "de-de": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "14d35bc6474aed9ec9a54f70bb6ae2532b4a214d790df0733877147014ea521a",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "c05ec1e91fd3a4b5310578fe918f43fdff564149437fe7daa382f5fb60454cc3",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.internal-link-pursed-lip-keyword": {
+          "sourceHash": "3b806f008c311e495c646bfb7dcf52ef214278aab0cedfa9fd8c992f8b0e7846",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "d12a4a7e3855759f807d3791d4028eb300fadde57826dee9f909840691e5f1b5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-athletes-title": {
+          "sourceHash": "e9278533c33a8ed15a1645faf5ae8ca8ed10ef7f5c99b7f93ad94af83f21b7f5",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-running-title": {
+          "sourceHash": "1fb54d2b1733f17a0ac791891630eb446ddae518a008d3d8218698cecb2a383d",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-singing-title": {
+          "sourceHash": "26ff10a16e9d0c796b468f5eebc19c4d11727a8e06868ddfd0ecb6c3dab87e8e",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "c33340f03cb3b68f7f21744a1bfd1c9b02c1ff571bfc94302c9fd6b5d39a7670",
+          "sourceText": "If you have a respiratory condition (COPD, asthma, pulmonary fibrosis, or other lung disease), consult your doctor before starting breathing exercises. These exercises complement but don't replace medical treatment. Seek immediate medical attention for sudden shortness of breath, chest pain, or persistent cough.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "a8d4c1ca24ba47befe5d3a913eed0c634cc829bcb635b1ce0cef2dc9a35b0a23",
+          "sourceText": "While you can't grow new lung tissue, you can significantly increase your functional lung capacity, the amount of air you actually use. Breathing exercises strengthen your diaphragm (allowing deeper breaths), improve lung elasticity, reduce residual volume (trapped stale air), and train your respiratory muscles to work more efficiently. Most people see measurable improvement within 2-4 weeks.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "f0f23f221adab3f03e207bba00ae064a9cc2a1cf79a1193eecca6729c20c632c",
+          "sourceText": "Can you actually increase your lung capacity?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "d41500c040714216aac313c976838a33da63d89b91798c1ba09631a51d1b1136",
+          "sourceText": "With consistent daily practice (5-10 minutes, twice daily), most people notice improved breath depth within 1-2 weeks and measurable gains in sustained exhale duration within 3-4 weeks. Significant improvements in exercise endurance typically appear within 4-8 weeks.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].question": {
+          "sourceHash": "35bc4a38b226a666e1c9e5b1b050a054391297f654395d6a8e87d18298a54d17",
+          "sourceText": "How long does it take to increase lung capacity?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "27400def6f7e3ee48d1764791809da9c55925e348c09b66bb844aecb4a2d0704",
+          "sourceText": "Diaphragmatic (belly) breathing is the foundation. It strengthens your primary breathing muscle and increases the volume of air per breath. For additional benefit, combine with pursed-lip exhales (improves air emptying), progressive breath loading (gradually extending inhale/exhale duration), and cardiovascular exercise (challenges your respiratory system under load).",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "6acd6c638e22d6207795263e966487247df59b7d28a09feaa1b40cab556b50b8",
+          "sourceText": "What is the best exercise to increase lung capacity?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "49d6c4596308f3e2c0b4b482dec7ba5f38f5fbb266216fef01f597646482c60e",
+          "sourceText": "Yes, lung capacity naturally declines about 1-2% per year starting in your mid-20s. By age 50, you may have lost 15-25% of your peak capacity. However, breathing exercises and regular physical activity can significantly slow this decline and improve your functional capacity at any age.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].question": {
+          "sourceHash": "55c4297749f76a6af75c846c9ac6d7c2e64d33052703a3a7994dabfabb2636d5",
+          "sourceText": "Does lung capacity decrease with age?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "dd5b49b79a5d61c86401e0692f1a07809d0efb569974215b44e98cf1afc345ba",
+          "sourceText": "Yes, breathing exercises, especially diaphragmatic breathing and pursed-lip breathing, are a core part of pulmonary rehabilitation for COPD and can help manage asthma. However, they complement medical treatment, not replace it. Always consult your doctor before starting a breathing program if you have a respiratory condition.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "ffdc7572e638c916216196b84f2eba39a08e66dc9b130114fa22048b6904efbc",
+          "sourceText": "Can breathing exercises help with COPD or asthma?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "778153ed1e17b993ea50b6d7699487fa8580ea4a0ab84c6196c8a4dd7292fe3c",
+          "sourceText": "A simple test: take the deepest breath you can, then exhale on a sustained 'sss' sound (like a tire deflating). Time how long you can maintain an even, steady sound. Healthy adults typically sustain 25-40 seconds. Under 15 seconds may indicate weak respiratory muscles. Track this weekly to measure improvement.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].question": {
+          "sourceHash": "aba9b886a23eaa04748ff9a46cda01bbc29655d2225fa350b8e14f5f51ebcfba",
+          "sourceText": "How do I measure my lung capacity at home?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "2cb27948e68ddede1fd39d39f4cdc1492bb6c3f5c3b0f40d2270edd94d784af1",
+          "sourceText": "Your lungs can hold about 6 liters of air, but most people use only a fraction of that capacity. Shallow chest breathing, sedentary habits, poor posture, and aging all shrink your functional lung capacity over time. The good news: breathing exercises can reverse this decline. Diaphragmatic breathing strengthens your primary breathing muscle, increases the volume of air you move with each breath, and improves the efficiency of gas exchange in your lungs.",
+          "status": "route-catalog-exact"
+        },
+        "hero.subtitle": {
+          "sourceHash": "414ead3655d383b6dceb79b01f6d1dd8f925b36dc6dab7ddd040d50e628820e9",
+          "sourceText": "Strengthen your diaphragm and expand your breathing power",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "0cf688a2f16e61168d310058a1fb86e7699f9603d9dbed604bf9896c93e87ed9",
+          "sourceText": "Lung Capacity Exercises",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "69bc5424e7aa46944738f706877da6c2ee2734a3b10d56c48c9cc669194eeab8",
+          "sourceText": "Take the deepest breath you can and exhale on a sustained 'sss' sound. Time how long you can maintain the sound with even airflow. This is your baseline exhale duration, aim to increase it by 5-10 seconds over the next month.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "d1d56546d5f3d1a75e6ff44d83797248dfe2ae092e3cbc7dfcf1a9fa5f2a8f98",
+          "sourceText": "Assess your baseline",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "9be4ce2ba674bafb6da9591546558f34a4fd7cd76d482810cddeac5ca11c8c0b",
+          "sourceText": "1 minute to test",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "6c711a109a0b021f631108ed91832b35ce797c56e9e7449847ea9ea557ae7dad",
+          "sourceText": "Use the breathing visualizer with Belly Breathing mode. Inhale through your nose for 4 seconds, feeling your belly and sides expand. Exhale through your nose for 6 seconds, feeling everything deflate. Focus on making each breath as deep and full as possible.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "a802f6b0a423dec279788c9fcb2f2faebd156221078956f4958410e3f110ced8",
+          "sourceText": "Start with belly breathing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "30dd0d14cd4fd1cd7a3d298d467e0595e5bdfa3bd5d5e4dff61ae3ca7658546b",
+          "sourceText": "5 minutes, 2-3 times daily",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "0da50472bc0b49f52829ba88b5472c2e754e73f5221276b098fce2ef0c05981d",
+          "sourceText": "Once comfortable with 4-6 timing, try extending: inhale for 5 seconds, exhale for 7. Then 6-8. Each increase challenges your respiratory muscles to work harder and expand further.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "e6de4dd1fda440f84dc1b5569c82a8990855297326c8a4abb935e1c67992ca65",
+          "sourceText": "Progressive breath loading",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "e17ba46367222721ab6a679d884e25c8dbdb4345ed5b7a2847f07b9ac11e65d2",
+          "sourceText": "Build 1 second per week",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "37671683fa69387d643a3b9510f8bfc44bee35a3d23d4a4f22cdee9ad4f2a44a",
+          "sourceText": "Inhale deeply through your nose, then exhale through pursed lips (like blowing through a straw). This creates back-pressure that keeps airways open longer and improves air emptying from the lower lungs.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "3bd37e965002dad9df1ee2edbf0906a09b06418f63be42e62420e10ec319e059",
+          "sourceText": "Add pursed-lip exhales",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "bcfd302c1fde03a49cc9a77ffb5bd101e368966084416f11d960d3d0dc7a651b",
+          "sourceText": "5 minutes between belly breathing sets",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "facafd5620140d49ce751f5006c28866dbae2d890a7dc2c38596d252cb38b485",
+          "sourceText": "Once your breathing technique is solid, add walking. Breathe in for 4 steps, out for 6 steps. This trains your respiratory system under the mild stress of physical activity, building real-world lung capacity.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "87faf496984bf70db4a66a20c29efceba83f50aab27d1032d96162883859befe",
+          "sourceText": "Combine with movement",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "76a916b8aecd6b816001420225ae5a0199aff35fb5a33265d43674dcbe329a5d",
+          "sourceText": "10-15 minute walks, daily",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "481a75672350d25ac59a160c9f66fb583c13f33709e342aeb45b408112238a07",
+          "sourceText": "Re-test your sustained exhale ('sss' sound) weekly. You should see measurable improvement within 2-3 weeks. A healthy goal is 25-40 seconds of sustained, even exhale.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "5a7e720a9442c83d8391403d265175afba064d435242e9d0ea096da78f1aafa5",
+          "sourceText": "Track your progress",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "3bc389d7a8096bfca21f09cdd437482a7da5171bc8a8543d2aaa4e9d05502ec9",
+          "sourceText": "1 minute, weekly",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "d160b10d88b52e0ffeedb53e578f4aeb78115fd954bc7bc57d324f905100de08",
+          "sourceText": "Consistency beats intensity, 5 minutes twice daily is better than 20 minutes once a week",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "50c86089f36802ef45943b22dc5ccb9e38105e1e5d39089b64c070806679a2aa",
+          "sourceText": "Focus on expanding your sides and back, not just your belly. This engages the full diaphragm",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "09de6b03eede1fee7f26e18d96499a5f70f6638fa2eb786c0f9f969a583f3fea",
+          "sourceText": "Good posture is essential, slouching compresses your diaphragm and limits expansion by up to 30%",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "9e027625d1bc65f96c9638440c2ef5facece2ba7ebed2e32cd57b99e8ed0ffb1",
+          "sourceText": "Stay hydrated, dry airways are less elastic and reduce effective lung capacity",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "d6d252c332b648d9f26b2d87652a05ec9646a2165da6aaf33b7f4bbcda691934",
+          "sourceText": "If you have a respiratory condition, pursed-lip breathing on exhale can significantly improve air emptying",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[5]": {
+          "sourceHash": "10e9272331f4407b13c26b5fc077bb81df6f88fff5a1680fe6bbe40333c9edfa",
+          "sourceText": "Avoid holding your breath excessively, focus on flow and volume rather than holds",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "1c1cf35d3af86f5bba8b7d7e897d150f912be9e34c643fec52cbf2ee82bf8bfb",
+          "sourceText": "Build lung capacity with proven breathing exercises. Strengthen your diaphragm, increase tidal volume, and improve respiratory health. Free guided timer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "24041ad77bf35a713020763a167835429e4f6a90aa4afeb1a47c2dc7ff557410",
+          "sourceText": "Proven breathing exercises to increase lung capacity and strengthen your diaphragm. Free guided timer — start building respiratory power today.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "22829207e462b73e66353388e348ce25db21797ae647f55ed4e3ce39c940c0ec",
+          "sourceText": "Lung Capacity Exercises: Increase Your Breathing Power",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "35d2796919fb8581f30ef5677409addccb50c2b341841b0ba522ae5c17425481",
+          "sourceText": "Lung Capacity Exercises: Increase Your Breathing Power (Free Timer) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "16fedc35c888c19afb9f1c36f1dca08a79ae8cf93cfd71e820b58c5eb1974844",
+          "sourceText": "Build lung capacity with diaphragmatic breathing exercises. Free guided timer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "22829207e462b73e66353388e348ce25db21797ae647f55ed4e3ce39c940c0ec",
+          "sourceText": "Lung Capacity Exercises — Increase Your Breathing Power",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "2aea3e70cdbf58b705c8a36e5fda34f8f97c37c8ab493b527b429416ff788266",
+          "sourceText": "Starting in your mid-20s, lung capacity naturally declines by about 1-2% per year. But lifestyle factors accelerate this decline dramatically. Sitting hunched over a desk compresses your diaphragm. Chronic stress keeps you in shallow, rapid chest breathing mode. Lack of cardiovascular exercise means your respiratory muscles weaken from disuse. The result: even if your lungs are healthy, you may be using only 50-70% of your available capacity.",
+          "status": "route-catalog-exact"
+        },
+        "problem.heading": {
+          "sourceHash": "0be01b286dd337990960a73544735e1d45b5def672ea876c44fe9fccdb975286",
+          "sourceText": "Why Your Lung Capacity Decreases",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "b7b8e3c465727f4e782a816470d39a651f5cec8da975caa8574f8c5898fee1eb",
+          "sourceText": "Getting winded during moderate physical activity",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "9fd92397ac34ed1e552edea732a6848ef75c2950755bd3d9058e1a47673d794b",
+          "sourceText": "Feeling like you can't take a full, deep breath",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "63b32c63bd57a54ab164a4e7f8f3351d81502752b8d75a4f05d2fe9de86bed9a",
+          "sourceText": "Shortness of breath climbing stairs",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "aec73c1f1393a9610d0ee056d8da7a629e5a1465c5999e67a24b158d708204d1",
+          "sourceText": "Low energy and fatigue throughout the day",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "25d5e00b38513e8f3a73416b3de2612713f7e1f5902913efca4861485e8e3969",
+          "sourceText": "Difficulty holding notes while singing or speaking",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "4254705853a8f3ffe491834b1c1a597a20db4767a0a57fefb772064a150c3b59",
+          "sourceText": "Poor exercise endurance and slow recovery",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "0b4cdfa8a2c3cc26831a7d1d78d5626a8ffe32294c9a2359a9ba33d9a795bb2f",
+          "sourceText": "Shallow, rapid breathing pattern at rest",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[7]": {
+          "sourceHash": "3221c3049c747e9b9a2dc91070372244c4c5ce2c56dedc545da4734456cbe083",
+          "sourceText": "Yawning frequently (sign of low oxygen delivery)",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "b9453a95e56cf396b3a375eeaf818360585f33e8f743dadba9a337237475f443",
+          "sourceText": "Study demonstrating that 4 weeks of diaphragmatic breathing exercises significantly improved pulmonary function parameters including FVC and FEV1.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "82216a0f288741bce693c5416b72116f105063818a1b4d4e7847395098646534",
+          "sourceText": "Diaphragmatic Breathing Exercises and Lung Function",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "9ad887de8d806d0c057270d5c02669ae2329be93b86c5d0508f14a71774790a8",
+          "sourceText": "Research showing that targeted respiratory muscle training increases inspiratory muscle strength by 20-30% and improves exercise tolerance in both healthy adults and those with respiratory conditions.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "2f566c788e8d927aed57e87079525527edd6286d72a3ae3f64e1b2237c0b34da",
+          "sourceText": "Inspiratory Muscle Training and Lung Volumes",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "9af2a1424f0fb69b3358d9c1f741ce552511855b0cde113ce57a2cfdcb4988bc",
+          "sourceText": "Longitudinal study documenting age-related lung function decline and identifying modifiable factors including physical activity and respiratory muscle training that can slow the decline.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "7849f4e000f450e2e5ee147c0f6a4e341cd88f82fed6d372c6efa0ccb9d148b7",
+          "sourceText": "Age-Related Decline in Lung Function",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "7985cf9763e528b7c6cd977f3894394dacdb3614477b339f8aa9b3a5ea47c089",
+          "sourceText": "Research demonstrating that pursed-lip breathing improves gas exchange, increases tidal volume, and reduces respiratory rate in both healthy individuals and COPD patients.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "36c4c76f1d2c06b9453d765fc39ed0e9d0173bafdfa29078cd3d4fd092307ddd",
+          "sourceText": "Pursed-Lip Breathing and Gas Exchange",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "2617e25e34736aaf4e2e3d550cb286c2ceedc9880b564ba683619efd6833cf6f",
+          "sourceText": "Start with diaphragmatic breathing to build your lung capacity foundation",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "d46761c9a5343ca749c9f2ddc3836a522d21d80a4af1539422f8d191fc2942d2",
+          "sourceText": "Build the respiratory endurance that fuels athletic performance",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "e9b38f468fcf70137e3d3cc8328644cc834962d2ca5fdc9f632d49579ca02d46",
+          "sourceText": "Increase your breathing efficiency for longer, faster runs",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "1c94e430bf6a2c678ea209ed13c0c9423419daf6945c3daae423dea9e08a6c7c",
+          "sourceText": "Expand your breath capacity for longer phrases and better tone",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "e73848ea06c4840df178242d3595bb88dc65cb2549722e5913a74d1e28c9f8cc",
+          "sourceText": "How Breathing Exercises Increase Lung Capacity",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "9fc7733e68d1578118ea7fcf411edd5343738da345b24b24735b2e943444d3dd",
+          "sourceText": "Tidal volume is the amount of air you move in a normal breath. Most people's tidal volume is only 500ml, about 8% of total lung capacity. [Diaphragmatic breathing training can measurably increase tidal volume](https://doi.org/10.11124/JBISRIR-2017-003848), meaning you move more air with each breath.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "722ff0471aad72898fc0d2aa3fb80c201268097d99449faecc8889cf33eab2bc",
+          "sourceText": "Tidal Volume Improvement",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "e1261f3bb4185fe1861edf332ec15f9e4d5cea02c02461de1f1a451cc6343a05",
+          "sourceText": "The diaphragm is a muscle, and like any muscle, it gets stronger with training. Studies show that inspiratory muscle training increases respiratory muscle strength over weeks of consistent practice, directly improving your ability to take deep breaths.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "710105dfd586c1d81023d098bfd574e6b551c3f16b07ed68971e9fa447a5b8d8",
+          "sourceText": "Inspiratory Muscle Strengthening",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "04b587029c6b9a7491f7033d71849f90c284aed7b23ea8b0f05c8eaa4c7f3304",
+          "sourceText": "The lower lobes of your lungs have the richest blood supply and the most efficient gas exchange. Shallow breathing bypasses these areas. Deep diaphragmatic breathing directs air to the lower lobes, improving oxygen uptake and CO2 elimination per breath.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "4bb0665d4239d60060ddc1358eb401956b9741010882bbe61b3fc975b57e09f1",
+          "sourceText": "Improved Gas Exchange",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "df7f3ce31fd2eecb049680ea91d6fbc9013d73e3673bfad2189ba276d8b50302",
+          "sourceText": "Residual volume is the air trapped in your lungs after a full exhale. With poor breathing habits, this stale air accumulates. Breathing exercises with emphasis on complete exhales (like pursed-lip breathing) help reduce residual volume, making more room for fresh, oxygen-rich air.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "24cc78bf7ccf3e345381ad07366bd2ff791a81c97bc1d016ebaf0e627cd981a3",
+          "sourceText": "Residual Volume Reduction",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "c8b789afc0e8077174cb9fd661ee053c4317a557059c911ebb11784fd24a7b69",
+          "sourceText": "Your diaphragm is a dome-shaped muscle that sits below your lungs. When it contracts, it pulls downward, creating a vacuum that draws air deep into your lungs. Weak diaphragmatic engagement means shallow breaths that only fill the upper lungs. Training your diaphragm through belly breathing exercises increases tidal volume (the amount of air per breath), improves gas exchange efficiency, and strengthens the muscles that power every breath you take.",
+          "status": "route-catalog-exact"
+        },
+        "solution.heading": {
+          "sourceHash": "4032a445211509b2b04a87f1aa949cc14109d6f11a030e4e0cd01476e197507a",
+          "sourceText": "Diaphragmatic Breathing: Rebuild Your Respiratory Foundation",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "ad9037c33fa6fae57a6bad8e430b35d8b681b347c7e63496c321f9c3ed5d808b",
+          "sourceText": "The 4-second inhale, 6-second exhale pattern is ideal for lung capacity training because the slow inhale encourages full diaphragmatic expansion (not just the quick sips of air from chest breathing), while the extended exhale trains your expiratory muscles and improves your ability to completely empty your lungs, which is just as important as filling them. Better emptying means more room for fresh air on the next breath.",
+          "status": "route-catalog-normalized"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "08bd4cf51099e8b8f14b2a1adc2f01f25ecf0b4294814214072cc7a351ac992e",
+          "sourceText": "Practice diaphragmatic breathing for 5-10 minutes twice daily. Breathe in slowly through your nose for 4 seconds, expanding your belly, then exhale for 6 seconds. Gradually increase these durations each week. Combine with pursed-lip exhales and regular walking. Most people see measurable improvement within 2-4 weeks of consistent practice.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "d6c2f2063a04822310d8a7809c15f10c88c80608c5f052f4631e8816912bedc5",
+          "sourceText": "How can I increase my lung capacity?",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "es-es": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "14d35bc6474aed9ec9a54f70bb6ae2532b4a214d790df0733877147014ea521a",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "c05ec1e91fd3a4b5310578fe918f43fdff564149437fe7daa382f5fb60454cc3",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.internal-link-pursed-lip-keyword": {
+          "sourceHash": "3b806f008c311e495c646bfb7dcf52ef214278aab0cedfa9fd8c992f8b0e7846",
+          "status": "global-catalog-normalized"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "d12a4a7e3855759f807d3791d4028eb300fadde57826dee9f909840691e5f1b5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-athletes-title": {
+          "sourceHash": "e9278533c33a8ed15a1645faf5ae8ca8ed10ef7f5c99b7f93ad94af83f21b7f5",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-running-title": {
+          "sourceHash": "1fb54d2b1733f17a0ac791891630eb446ddae518a008d3d8218698cecb2a383d",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-singing-title": {
+          "sourceHash": "26ff10a16e9d0c796b468f5eebc19c4d11727a8e06868ddfd0ecb6c3dab87e8e",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "c33340f03cb3b68f7f21744a1bfd1c9b02c1ff571bfc94302c9fd6b5d39a7670",
+          "sourceText": "If you have a respiratory condition (COPD, asthma, pulmonary fibrosis, or other lung disease), consult your doctor before starting breathing exercises. These exercises complement but don't replace medical treatment. Seek immediate medical attention for sudden shortness of breath, chest pain, or persistent cough.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "a8d4c1ca24ba47befe5d3a913eed0c634cc829bcb635b1ce0cef2dc9a35b0a23",
+          "sourceText": "While you can't grow new lung tissue, you can significantly increase your functional lung capacity, the amount of air you actually use. Breathing exercises strengthen your diaphragm (allowing deeper breaths), improve lung elasticity, reduce residual volume (trapped stale air), and train your respiratory muscles to work more efficiently. Most people see measurable improvement within 2-4 weeks.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "f0f23f221adab3f03e207bba00ae064a9cc2a1cf79a1193eecca6729c20c632c",
+          "sourceText": "Can you actually increase your lung capacity?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "d41500c040714216aac313c976838a33da63d89b91798c1ba09631a51d1b1136",
+          "sourceText": "With consistent daily practice (5-10 minutes, twice daily), most people notice improved breath depth within 1-2 weeks and measurable gains in sustained exhale duration within 3-4 weeks. Significant improvements in exercise endurance typically appear within 4-8 weeks.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].question": {
+          "sourceHash": "35bc4a38b226a666e1c9e5b1b050a054391297f654395d6a8e87d18298a54d17",
+          "sourceText": "How long does it take to increase lung capacity?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "27400def6f7e3ee48d1764791809da9c55925e348c09b66bb844aecb4a2d0704",
+          "sourceText": "Diaphragmatic (belly) breathing is the foundation. It strengthens your primary breathing muscle and increases the volume of air per breath. For additional benefit, combine with pursed-lip exhales (improves air emptying), progressive breath loading (gradually extending inhale/exhale duration), and cardiovascular exercise (challenges your respiratory system under load).",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "6acd6c638e22d6207795263e966487247df59b7d28a09feaa1b40cab556b50b8",
+          "sourceText": "What is the best exercise to increase lung capacity?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "49d6c4596308f3e2c0b4b482dec7ba5f38f5fbb266216fef01f597646482c60e",
+          "sourceText": "Yes, lung capacity naturally declines about 1-2% per year starting in your mid-20s. By age 50, you may have lost 15-25% of your peak capacity. However, breathing exercises and regular physical activity can significantly slow this decline and improve your functional capacity at any age.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].question": {
+          "sourceHash": "55c4297749f76a6af75c846c9ac6d7c2e64d33052703a3a7994dabfabb2636d5",
+          "sourceText": "Does lung capacity decrease with age?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "dd5b49b79a5d61c86401e0692f1a07809d0efb569974215b44e98cf1afc345ba",
+          "sourceText": "Yes, breathing exercises, especially diaphragmatic breathing and pursed-lip breathing, are a core part of pulmonary rehabilitation for COPD and can help manage asthma. However, they complement medical treatment, not replace it. Always consult your doctor before starting a breathing program if you have a respiratory condition.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "ffdc7572e638c916216196b84f2eba39a08e66dc9b130114fa22048b6904efbc",
+          "sourceText": "Can breathing exercises help with COPD or asthma?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "778153ed1e17b993ea50b6d7699487fa8580ea4a0ab84c6196c8a4dd7292fe3c",
+          "sourceText": "A simple test: take the deepest breath you can, then exhale on a sustained 'sss' sound (like a tire deflating). Time how long you can maintain an even, steady sound. Healthy adults typically sustain 25-40 seconds. Under 15 seconds may indicate weak respiratory muscles. Track this weekly to measure improvement.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].question": {
+          "sourceHash": "aba9b886a23eaa04748ff9a46cda01bbc29655d2225fa350b8e14f5f51ebcfba",
+          "sourceText": "How do I measure my lung capacity at home?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "2cb27948e68ddede1fd39d39f4cdc1492bb6c3f5c3b0f40d2270edd94d784af1",
+          "sourceText": "Your lungs can hold about 6 liters of air, but most people use only a fraction of that capacity. Shallow chest breathing, sedentary habits, poor posture, and aging all shrink your functional lung capacity over time. The good news: breathing exercises can reverse this decline. Diaphragmatic breathing strengthens your primary breathing muscle, increases the volume of air you move with each breath, and improves the efficiency of gas exchange in your lungs.",
+          "status": "route-catalog-exact"
+        },
+        "hero.subtitle": {
+          "sourceHash": "414ead3655d383b6dceb79b01f6d1dd8f925b36dc6dab7ddd040d50e628820e9",
+          "sourceText": "Strengthen your diaphragm and expand your breathing power",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "0cf688a2f16e61168d310058a1fb86e7699f9603d9dbed604bf9896c93e87ed9",
+          "sourceText": "Lung Capacity Exercises",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "69bc5424e7aa46944738f706877da6c2ee2734a3b10d56c48c9cc669194eeab8",
+          "sourceText": "Take the deepest breath you can and exhale on a sustained 'sss' sound. Time how long you can maintain the sound with even airflow. This is your baseline exhale duration, aim to increase it by 5-10 seconds over the next month.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "d1d56546d5f3d1a75e6ff44d83797248dfe2ae092e3cbc7dfcf1a9fa5f2a8f98",
+          "sourceText": "Assess your baseline",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "9be4ce2ba674bafb6da9591546558f34a4fd7cd76d482810cddeac5ca11c8c0b",
+          "sourceText": "1 minute to test",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "6c711a109a0b021f631108ed91832b35ce797c56e9e7449847ea9ea557ae7dad",
+          "sourceText": "Use the breathing visualizer with Belly Breathing mode. Inhale through your nose for 4 seconds, feeling your belly and sides expand. Exhale through your nose for 6 seconds, feeling everything deflate. Focus on making each breath as deep and full as possible.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "a802f6b0a423dec279788c9fcb2f2faebd156221078956f4958410e3f110ced8",
+          "sourceText": "Start with belly breathing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "30dd0d14cd4fd1cd7a3d298d467e0595e5bdfa3bd5d5e4dff61ae3ca7658546b",
+          "sourceText": "5 minutes, 2-3 times daily",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "0da50472bc0b49f52829ba88b5472c2e754e73f5221276b098fce2ef0c05981d",
+          "sourceText": "Once comfortable with 4-6 timing, try extending: inhale for 5 seconds, exhale for 7. Then 6-8. Each increase challenges your respiratory muscles to work harder and expand further.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "e6de4dd1fda440f84dc1b5569c82a8990855297326c8a4abb935e1c67992ca65",
+          "sourceText": "Progressive breath loading",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "e17ba46367222721ab6a679d884e25c8dbdb4345ed5b7a2847f07b9ac11e65d2",
+          "sourceText": "Build 1 second per week",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "37671683fa69387d643a3b9510f8bfc44bee35a3d23d4a4f22cdee9ad4f2a44a",
+          "sourceText": "Inhale deeply through your nose, then exhale through pursed lips (like blowing through a straw). This creates back-pressure that keeps airways open longer and improves air emptying from the lower lungs.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "3bd37e965002dad9df1ee2edbf0906a09b06418f63be42e62420e10ec319e059",
+          "sourceText": "Add pursed-lip exhales",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "bcfd302c1fde03a49cc9a77ffb5bd101e368966084416f11d960d3d0dc7a651b",
+          "sourceText": "5 minutes between belly breathing sets",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "facafd5620140d49ce751f5006c28866dbae2d890a7dc2c38596d252cb38b485",
+          "sourceText": "Once your breathing technique is solid, add walking. Breathe in for 4 steps, out for 6 steps. This trains your respiratory system under the mild stress of physical activity, building real-world lung capacity.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "87faf496984bf70db4a66a20c29efceba83f50aab27d1032d96162883859befe",
+          "sourceText": "Combine with movement",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "76a916b8aecd6b816001420225ae5a0199aff35fb5a33265d43674dcbe329a5d",
+          "sourceText": "10-15 minute walks, daily",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "481a75672350d25ac59a160c9f66fb583c13f33709e342aeb45b408112238a07",
+          "sourceText": "Re-test your sustained exhale ('sss' sound) weekly. You should see measurable improvement within 2-3 weeks. A healthy goal is 25-40 seconds of sustained, even exhale.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "5a7e720a9442c83d8391403d265175afba064d435242e9d0ea096da78f1aafa5",
+          "sourceText": "Track your progress",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "3bc389d7a8096bfca21f09cdd437482a7da5171bc8a8543d2aaa4e9d05502ec9",
+          "sourceText": "1 minute, weekly",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "d160b10d88b52e0ffeedb53e578f4aeb78115fd954bc7bc57d324f905100de08",
+          "sourceText": "Consistency beats intensity, 5 minutes twice daily is better than 20 minutes once a week",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "50c86089f36802ef45943b22dc5ccb9e38105e1e5d39089b64c070806679a2aa",
+          "sourceText": "Focus on expanding your sides and back, not just your belly. This engages the full diaphragm",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "09de6b03eede1fee7f26e18d96499a5f70f6638fa2eb786c0f9f969a583f3fea",
+          "sourceText": "Good posture is essential, slouching compresses your diaphragm and limits expansion by up to 30%",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "9e027625d1bc65f96c9638440c2ef5facece2ba7ebed2e32cd57b99e8ed0ffb1",
+          "sourceText": "Stay hydrated, dry airways are less elastic and reduce effective lung capacity",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "d6d252c332b648d9f26b2d87652a05ec9646a2165da6aaf33b7f4bbcda691934",
+          "sourceText": "If you have a respiratory condition, pursed-lip breathing on exhale can significantly improve air emptying",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[5]": {
+          "sourceHash": "10e9272331f4407b13c26b5fc077bb81df6f88fff5a1680fe6bbe40333c9edfa",
+          "sourceText": "Avoid holding your breath excessively, focus on flow and volume rather than holds",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "1c1cf35d3af86f5bba8b7d7e897d150f912be9e34c643fec52cbf2ee82bf8bfb",
+          "sourceText": "Build lung capacity with proven breathing exercises. Strengthen your diaphragm, increase tidal volume, and improve respiratory health. Free guided timer.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "24041ad77bf35a713020763a167835429e4f6a90aa4afeb1a47c2dc7ff557410",
+          "sourceText": "Proven breathing exercises to increase lung capacity and strengthen your diaphragm. Free guided timer: start building respiratory power today.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "22829207e462b73e66353388e348ce25db21797ae647f55ed4e3ce39c940c0ec",
+          "sourceText": "Lung Capacity Exercises: Increase Your Breathing Power",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.title": {
+          "sourceHash": "35d2796919fb8581f30ef5677409addccb50c2b341841b0ba522ae5c17425481",
+          "sourceText": "Lung Capacity Exercises: Increase Breathing Power (Free)",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "16fedc35c888c19afb9f1c36f1dca08a79ae8cf93cfd71e820b58c5eb1974844",
+          "sourceText": "Build lung capacity with diaphragmatic breathing exercises. Free guided timer.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "22829207e462b73e66353388e348ce25db21797ae647f55ed4e3ce39c940c0ec",
+          "sourceText": "Lung Capacity Exercises: Increase Your Breathing Power",
+          "status": "repo-reviewed-replacement"
+        },
+        "problem.content": {
+          "sourceHash": "2aea3e70cdbf58b705c8a36e5fda34f8f97c37c8ab493b527b429416ff788266",
+          "sourceText": "Starting in your mid-20s, lung capacity naturally declines by about 1-2% per year. But lifestyle factors accelerate this decline dramatically. Sitting hunched over a desk compresses your diaphragm. Chronic stress keeps you in shallow, rapid chest breathing mode. Lack of cardiovascular exercise means your respiratory muscles weaken from disuse. The result: even if your lungs are healthy, you may be using only 50-70% of your available capacity.",
+          "status": "route-catalog-exact"
+        },
+        "problem.heading": {
+          "sourceHash": "0be01b286dd337990960a73544735e1d45b5def672ea876c44fe9fccdb975286",
+          "sourceText": "Why Your Lung Capacity Decreases",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "b7b8e3c465727f4e782a816470d39a651f5cec8da975caa8574f8c5898fee1eb",
+          "sourceText": "Getting winded during moderate physical activity",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "9fd92397ac34ed1e552edea732a6848ef75c2950755bd3d9058e1a47673d794b",
+          "sourceText": "Feeling like you can't take a full, deep breath",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "63b32c63bd57a54ab164a4e7f8f3351d81502752b8d75a4f05d2fe9de86bed9a",
+          "sourceText": "Shortness of breath climbing stairs",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "aec73c1f1393a9610d0ee056d8da7a629e5a1465c5999e67a24b158d708204d1",
+          "sourceText": "Low energy and fatigue throughout the day",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "25d5e00b38513e8f3a73416b3de2612713f7e1f5902913efca4861485e8e3969",
+          "sourceText": "Difficulty holding notes while singing or speaking",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "4254705853a8f3ffe491834b1c1a597a20db4767a0a57fefb772064a150c3b59",
+          "sourceText": "Poor exercise endurance and slow recovery",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "0b4cdfa8a2c3cc26831a7d1d78d5626a8ffe32294c9a2359a9ba33d9a795bb2f",
+          "sourceText": "Shallow, rapid breathing pattern at rest",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[7]": {
+          "sourceHash": "3221c3049c747e9b9a2dc91070372244c4c5ce2c56dedc545da4734456cbe083",
+          "sourceText": "Yawning frequently (sign of low oxygen delivery)",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "b9453a95e56cf396b3a375eeaf818360585f33e8f743dadba9a337237475f443",
+          "sourceText": "Study demonstrating that 4 weeks of diaphragmatic breathing exercises significantly improved pulmonary function parameters including FVC and FEV1.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "82216a0f288741bce693c5416b72116f105063818a1b4d4e7847395098646534",
+          "sourceText": "Diaphragmatic Breathing Exercises and Lung Function",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "9ad887de8d806d0c057270d5c02669ae2329be93b86c5d0508f14a71774790a8",
+          "sourceText": "Research showing that targeted respiratory muscle training increases inspiratory muscle strength by 20-30% and improves exercise tolerance in both healthy adults and those with respiratory conditions.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "2f566c788e8d927aed57e87079525527edd6286d72a3ae3f64e1b2237c0b34da",
+          "sourceText": "Inspiratory Muscle Training and Lung Volumes",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "9af2a1424f0fb69b3358d9c1f741ce552511855b0cde113ce57a2cfdcb4988bc",
+          "sourceText": "Longitudinal study documenting age-related lung function decline and identifying modifiable factors including physical activity and respiratory muscle training that can slow the decline.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "7849f4e000f450e2e5ee147c0f6a4e341cd88f82fed6d372c6efa0ccb9d148b7",
+          "sourceText": "Age-Related Decline in Lung Function",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "7985cf9763e528b7c6cd977f3894394dacdb3614477b339f8aa9b3a5ea47c089",
+          "sourceText": "Research demonstrating that pursed-lip breathing improves gas exchange, increases tidal volume, and reduces respiratory rate in both healthy individuals and COPD patients.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "36c4c76f1d2c06b9453d765fc39ed0e9d0173bafdfa29078cd3d4fd092307ddd",
+          "sourceText": "Pursed-Lip Breathing and Gas Exchange",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "2617e25e34736aaf4e2e3d550cb286c2ceedc9880b564ba683619efd6833cf6f",
+          "sourceText": "Start with diaphragmatic breathing to build your lung capacity foundation",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "d46761c9a5343ca749c9f2ddc3836a522d21d80a4af1539422f8d191fc2942d2",
+          "sourceText": "Build the respiratory endurance that fuels athletic performance",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "e9b38f468fcf70137e3d3cc8328644cc834962d2ca5fdc9f632d49579ca02d46",
+          "sourceText": "Increase your breathing efficiency for longer, faster runs",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "1c94e430bf6a2c678ea209ed13c0c9423419daf6945c3daae423dea9e08a6c7c",
+          "sourceText": "Expand your breath capacity for longer phrases and better tone",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "e73848ea06c4840df178242d3595bb88dc65cb2549722e5913a74d1e28c9f8cc",
+          "sourceText": "How Breathing Exercises Increase Lung Capacity",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "9fc7733e68d1578118ea7fcf411edd5343738da345b24b24735b2e943444d3dd",
+          "sourceText": "Tidal volume is the amount of air you move in a normal breath. Most people's tidal volume is only 500ml, about 8% of total lung capacity. [Diaphragmatic breathing training can measurably increase tidal volume](https://doi.org/10.11124/JBISRIR-2017-003848), meaning you move more air with each breath.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "722ff0471aad72898fc0d2aa3fb80c201268097d99449faecc8889cf33eab2bc",
+          "sourceText": "Tidal Volume Improvement",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "e1261f3bb4185fe1861edf332ec15f9e4d5cea02c02461de1f1a451cc6343a05",
+          "sourceText": "The diaphragm is a muscle, and like any muscle, it gets stronger with training. Studies show that inspiratory muscle training increases respiratory muscle strength over weeks of consistent practice, directly improving your ability to take deep breaths.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "710105dfd586c1d81023d098bfd574e6b551c3f16b07ed68971e9fa447a5b8d8",
+          "sourceText": "Inspiratory Muscle Strengthening",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "04b587029c6b9a7491f7033d71849f90c284aed7b23ea8b0f05c8eaa4c7f3304",
+          "sourceText": "The lower lobes of your lungs have the richest blood supply and the most efficient gas exchange. Shallow breathing bypasses these areas. Deep diaphragmatic breathing directs air to the lower lobes, improving oxygen uptake and CO2 elimination per breath.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "4bb0665d4239d60060ddc1358eb401956b9741010882bbe61b3fc975b57e09f1",
+          "sourceText": "Improved Gas Exchange",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "df7f3ce31fd2eecb049680ea91d6fbc9013d73e3673bfad2189ba276d8b50302",
+          "sourceText": "Residual volume is the air trapped in your lungs after a full exhale. With poor breathing habits, this stale air accumulates. Breathing exercises with emphasis on complete exhales (like pursed-lip breathing) help reduce residual volume, making more room for fresh, oxygen-rich air.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "24cc78bf7ccf3e345381ad07366bd2ff791a81c97bc1d016ebaf0e627cd981a3",
+          "sourceText": "Residual Volume Reduction",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "c8b789afc0e8077174cb9fd661ee053c4317a557059c911ebb11784fd24a7b69",
+          "sourceText": "Your diaphragm is a dome-shaped muscle that sits below your lungs. When it contracts, it pulls downward, creating a vacuum that draws air deep into your lungs. Weak diaphragmatic engagement means shallow breaths that only fill the upper lungs. Training your diaphragm through belly breathing exercises increases tidal volume (the amount of air per breath), improves gas exchange efficiency, and strengthens the muscles that power every breath you take.",
+          "status": "route-catalog-exact"
+        },
+        "solution.heading": {
+          "sourceHash": "4032a445211509b2b04a87f1aa949cc14109d6f11a030e4e0cd01476e197507a",
+          "sourceText": "Diaphragmatic Breathing: Rebuild Your Respiratory Foundation",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "ad9037c33fa6fae57a6bad8e430b35d8b681b347c7e63496c321f9c3ed5d808b",
+          "sourceText": "The 4-second inhale, 6-second exhale pattern is ideal for lung capacity training because the slow inhale encourages full diaphragmatic expansion (not just the quick sips of air from chest breathing), while the extended exhale trains your expiratory muscles and improves your ability to completely empty your lungs, which is just as important as filling them. Better emptying means more room for fresh air on the next breath.",
+          "status": "route-catalog-normalized"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "08bd4cf51099e8b8f14b2a1adc2f01f25ecf0b4294814214072cc7a351ac992e",
+          "sourceText": "Practice diaphragmatic breathing for 5-10 minutes twice daily. Breathe in slowly through your nose for 4 seconds, expanding your belly, then exhale for 6 seconds. Gradually increase these durations each week. Combine with pursed-lip exhales and regular walking. Most people see measurable improvement within 2-4 weeks of consistent practice.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "d6c2f2063a04822310d8a7809c15f10c88c80608c5f052f4631e8816912bedc5",
+          "sourceText": "How can I increase my lung capacity?",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "fr-fr": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "14d35bc6474aed9ec9a54f70bb6ae2532b4a214d790df0733877147014ea521a",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "c05ec1e91fd3a4b5310578fe918f43fdff564149437fe7daa382f5fb60454cc3",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.internal-link-pursed-lip-keyword": {
+          "sourceHash": "3b806f008c311e495c646bfb7dcf52ef214278aab0cedfa9fd8c992f8b0e7846",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "d12a4a7e3855759f807d3791d4028eb300fadde57826dee9f909840691e5f1b5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-athletes-title": {
+          "sourceHash": "e9278533c33a8ed15a1645faf5ae8ca8ed10ef7f5c99b7f93ad94af83f21b7f5",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-running-title": {
+          "sourceHash": "1fb54d2b1733f17a0ac791891630eb446ddae518a008d3d8218698cecb2a383d",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-singing-title": {
+          "sourceHash": "26ff10a16e9d0c796b468f5eebc19c4d11727a8e06868ddfd0ecb6c3dab87e8e",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "c33340f03cb3b68f7f21744a1bfd1c9b02c1ff571bfc94302c9fd6b5d39a7670",
+          "sourceText": "If you have a respiratory condition (COPD, asthma, pulmonary fibrosis, or other lung disease), consult your doctor before starting breathing exercises. These exercises complement but don't replace medical treatment. Seek immediate medical attention for sudden shortness of breath, chest pain, or persistent cough.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "a8d4c1ca24ba47befe5d3a913eed0c634cc829bcb635b1ce0cef2dc9a35b0a23",
+          "sourceText": "While you can't grow new lung tissue, you can significantly increase your functional lung capacity, the amount of air you actually use. Breathing exercises strengthen your diaphragm (allowing deeper breaths), improve lung elasticity, reduce residual volume (trapped stale air), and train your respiratory muscles to work more efficiently. Most people see measurable improvement within 2-4 weeks.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "f0f23f221adab3f03e207bba00ae064a9cc2a1cf79a1193eecca6729c20c632c",
+          "sourceText": "Can you actually increase your lung capacity?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "d41500c040714216aac313c976838a33da63d89b91798c1ba09631a51d1b1136",
+          "sourceText": "With consistent daily practice (5-10 minutes, twice daily), most people notice improved breath depth within 1-2 weeks and measurable gains in sustained exhale duration within 3-4 weeks. Significant improvements in exercise endurance typically appear within 4-8 weeks.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].question": {
+          "sourceHash": "35bc4a38b226a666e1c9e5b1b050a054391297f654395d6a8e87d18298a54d17",
+          "sourceText": "How long does it take to increase lung capacity?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "27400def6f7e3ee48d1764791809da9c55925e348c09b66bb844aecb4a2d0704",
+          "sourceText": "Diaphragmatic (belly) breathing is the foundation. It strengthens your primary breathing muscle and increases the volume of air per breath. For additional benefit, combine with pursed-lip exhales (improves air emptying), progressive breath loading (gradually extending inhale/exhale duration), and cardiovascular exercise (challenges your respiratory system under load).",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "6acd6c638e22d6207795263e966487247df59b7d28a09feaa1b40cab556b50b8",
+          "sourceText": "What is the best exercise to increase lung capacity?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "49d6c4596308f3e2c0b4b482dec7ba5f38f5fbb266216fef01f597646482c60e",
+          "sourceText": "Yes, lung capacity naturally declines about 1-2% per year starting in your mid-20s. By age 50, you may have lost 15-25% of your peak capacity. However, breathing exercises and regular physical activity can significantly slow this decline and improve your functional capacity at any age.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].question": {
+          "sourceHash": "55c4297749f76a6af75c846c9ac6d7c2e64d33052703a3a7994dabfabb2636d5",
+          "sourceText": "Does lung capacity decrease with age?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "dd5b49b79a5d61c86401e0692f1a07809d0efb569974215b44e98cf1afc345ba",
+          "sourceText": "Yes, breathing exercises, especially diaphragmatic breathing and pursed-lip breathing, are a core part of pulmonary rehabilitation for COPD and can help manage asthma. However, they complement medical treatment, not replace it. Always consult your doctor before starting a breathing program if you have a respiratory condition.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "ffdc7572e638c916216196b84f2eba39a08e66dc9b130114fa22048b6904efbc",
+          "sourceText": "Can breathing exercises help with COPD or asthma?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "778153ed1e17b993ea50b6d7699487fa8580ea4a0ab84c6196c8a4dd7292fe3c",
+          "sourceText": "A simple test: take the deepest breath you can, then exhale on a sustained 'sss' sound (like a tire deflating). Time how long you can maintain an even, steady sound. Healthy adults typically sustain 25-40 seconds. Under 15 seconds may indicate weak respiratory muscles. Track this weekly to measure improvement.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].question": {
+          "sourceHash": "aba9b886a23eaa04748ff9a46cda01bbc29655d2225fa350b8e14f5f51ebcfba",
+          "sourceText": "How do I measure my lung capacity at home?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "2cb27948e68ddede1fd39d39f4cdc1492bb6c3f5c3b0f40d2270edd94d784af1",
+          "sourceText": "Your lungs can hold about 6 liters of air, but most people use only a fraction of that capacity. Shallow chest breathing, sedentary habits, poor posture, and aging all shrink your functional lung capacity over time. The good news: breathing exercises can reverse this decline. Diaphragmatic breathing strengthens your primary breathing muscle, increases the volume of air you move with each breath, and improves the efficiency of gas exchange in your lungs.",
+          "status": "route-catalog-exact"
+        },
+        "hero.subtitle": {
+          "sourceHash": "414ead3655d383b6dceb79b01f6d1dd8f925b36dc6dab7ddd040d50e628820e9",
+          "sourceText": "Strengthen your diaphragm and expand your breathing power",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "0cf688a2f16e61168d310058a1fb86e7699f9603d9dbed604bf9896c93e87ed9",
+          "sourceText": "Lung Capacity Exercises",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "69bc5424e7aa46944738f706877da6c2ee2734a3b10d56c48c9cc669194eeab8",
+          "sourceText": "Take the deepest breath you can and exhale on a sustained 'sss' sound. Time how long you can maintain the sound with even airflow. This is your baseline exhale duration, aim to increase it by 5-10 seconds over the next month.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "d1d56546d5f3d1a75e6ff44d83797248dfe2ae092e3cbc7dfcf1a9fa5f2a8f98",
+          "sourceText": "Assess your baseline",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "9be4ce2ba674bafb6da9591546558f34a4fd7cd76d482810cddeac5ca11c8c0b",
+          "sourceText": "1 minute to test",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "6c711a109a0b021f631108ed91832b35ce797c56e9e7449847ea9ea557ae7dad",
+          "sourceText": "Use the breathing visualizer with Belly Breathing mode. Inhale through your nose for 4 seconds, feeling your belly and sides expand. Exhale through your nose for 6 seconds, feeling everything deflate. Focus on making each breath as deep and full as possible.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "a802f6b0a423dec279788c9fcb2f2faebd156221078956f4958410e3f110ced8",
+          "sourceText": "Start with belly breathing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "30dd0d14cd4fd1cd7a3d298d467e0595e5bdfa3bd5d5e4dff61ae3ca7658546b",
+          "sourceText": "5 minutes, 2-3 times daily",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "0da50472bc0b49f52829ba88b5472c2e754e73f5221276b098fce2ef0c05981d",
+          "sourceText": "Once comfortable with 4-6 timing, try extending: inhale for 5 seconds, exhale for 7. Then 6-8. Each increase challenges your respiratory muscles to work harder and expand further.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "e6de4dd1fda440f84dc1b5569c82a8990855297326c8a4abb935e1c67992ca65",
+          "sourceText": "Progressive breath loading",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "e17ba46367222721ab6a679d884e25c8dbdb4345ed5b7a2847f07b9ac11e65d2",
+          "sourceText": "Build 1 second per week",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "37671683fa69387d643a3b9510f8bfc44bee35a3d23d4a4f22cdee9ad4f2a44a",
+          "sourceText": "Inhale deeply through your nose, then exhale through pursed lips (like blowing through a straw). This creates back-pressure that keeps airways open longer and improves air emptying from the lower lungs.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "3bd37e965002dad9df1ee2edbf0906a09b06418f63be42e62420e10ec319e059",
+          "sourceText": "Add pursed-lip exhales",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "bcfd302c1fde03a49cc9a77ffb5bd101e368966084416f11d960d3d0dc7a651b",
+          "sourceText": "5 minutes between belly breathing sets",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "facafd5620140d49ce751f5006c28866dbae2d890a7dc2c38596d252cb38b485",
+          "sourceText": "Once your breathing technique is solid, add walking. Breathe in for 4 steps, out for 6 steps. This trains your respiratory system under the mild stress of physical activity, building real-world lung capacity.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "87faf496984bf70db4a66a20c29efceba83f50aab27d1032d96162883859befe",
+          "sourceText": "Combine with movement",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "76a916b8aecd6b816001420225ae5a0199aff35fb5a33265d43674dcbe329a5d",
+          "sourceText": "10-15 minute walks, daily",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "481a75672350d25ac59a160c9f66fb583c13f33709e342aeb45b408112238a07",
+          "sourceText": "Re-test your sustained exhale ('sss' sound) weekly. You should see measurable improvement within 2-3 weeks. A healthy goal is 25-40 seconds of sustained, even exhale.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "5a7e720a9442c83d8391403d265175afba064d435242e9d0ea096da78f1aafa5",
+          "sourceText": "Track your progress",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "3bc389d7a8096bfca21f09cdd437482a7da5171bc8a8543d2aaa4e9d05502ec9",
+          "sourceText": "1 minute, weekly",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "d160b10d88b52e0ffeedb53e578f4aeb78115fd954bc7bc57d324f905100de08",
+          "sourceText": "Consistency beats intensity, 5 minutes twice daily is better than 20 minutes once a week",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "50c86089f36802ef45943b22dc5ccb9e38105e1e5d39089b64c070806679a2aa",
+          "sourceText": "Focus on expanding your sides and back, not just your belly. This engages the full diaphragm",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "09de6b03eede1fee7f26e18d96499a5f70f6638fa2eb786c0f9f969a583f3fea",
+          "sourceText": "Good posture is essential, slouching compresses your diaphragm and limits expansion by up to 30%",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "9e027625d1bc65f96c9638440c2ef5facece2ba7ebed2e32cd57b99e8ed0ffb1",
+          "sourceText": "Stay hydrated, dry airways are less elastic and reduce effective lung capacity",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "d6d252c332b648d9f26b2d87652a05ec9646a2165da6aaf33b7f4bbcda691934",
+          "sourceText": "If you have a respiratory condition, pursed-lip breathing on exhale can significantly improve air emptying",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[5]": {
+          "sourceHash": "10e9272331f4407b13c26b5fc077bb81df6f88fff5a1680fe6bbe40333c9edfa",
+          "sourceText": "Avoid holding your breath excessively, focus on flow and volume rather than holds",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "1c1cf35d3af86f5bba8b7d7e897d150f912be9e34c643fec52cbf2ee82bf8bfb",
+          "sourceText": "Build lung capacity with proven breathing exercises. Strengthen your diaphragm, increase tidal volume, and improve respiratory health. Free guided timer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "24041ad77bf35a713020763a167835429e4f6a90aa4afeb1a47c2dc7ff557410",
+          "sourceText": "Proven breathing exercises to increase lung capacity and strengthen your diaphragm. Free guided timer — start building respiratory power today.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "22829207e462b73e66353388e348ce25db21797ae647f55ed4e3ce39c940c0ec",
+          "sourceText": "Lung Capacity Exercises: Increase Your Breathing Power",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "35d2796919fb8581f30ef5677409addccb50c2b341841b0ba522ae5c17425481",
+          "sourceText": "Lung Capacity Exercises: Increase Your Breathing Power (Free Timer) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "16fedc35c888c19afb9f1c36f1dca08a79ae8cf93cfd71e820b58c5eb1974844",
+          "sourceText": "Build lung capacity with diaphragmatic breathing exercises. Free guided timer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "22829207e462b73e66353388e348ce25db21797ae647f55ed4e3ce39c940c0ec",
+          "sourceText": "Lung Capacity Exercises — Increase Your Breathing Power",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "2aea3e70cdbf58b705c8a36e5fda34f8f97c37c8ab493b527b429416ff788266",
+          "sourceText": "Starting in your mid-20s, lung capacity naturally declines by about 1-2% per year. But lifestyle factors accelerate this decline dramatically. Sitting hunched over a desk compresses your diaphragm. Chronic stress keeps you in shallow, rapid chest breathing mode. Lack of cardiovascular exercise means your respiratory muscles weaken from disuse. The result: even if your lungs are healthy, you may be using only 50-70% of your available capacity.",
+          "status": "route-catalog-exact"
+        },
+        "problem.heading": {
+          "sourceHash": "0be01b286dd337990960a73544735e1d45b5def672ea876c44fe9fccdb975286",
+          "sourceText": "Why Your Lung Capacity Decreases",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "b7b8e3c465727f4e782a816470d39a651f5cec8da975caa8574f8c5898fee1eb",
+          "sourceText": "Getting winded during moderate physical activity",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "9fd92397ac34ed1e552edea732a6848ef75c2950755bd3d9058e1a47673d794b",
+          "sourceText": "Feeling like you can't take a full, deep breath",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "63b32c63bd57a54ab164a4e7f8f3351d81502752b8d75a4f05d2fe9de86bed9a",
+          "sourceText": "Shortness of breath climbing stairs",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "aec73c1f1393a9610d0ee056d8da7a629e5a1465c5999e67a24b158d708204d1",
+          "sourceText": "Low energy and fatigue throughout the day",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "25d5e00b38513e8f3a73416b3de2612713f7e1f5902913efca4861485e8e3969",
+          "sourceText": "Difficulty holding notes while singing or speaking",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "4254705853a8f3ffe491834b1c1a597a20db4767a0a57fefb772064a150c3b59",
+          "sourceText": "Poor exercise endurance and slow recovery",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "0b4cdfa8a2c3cc26831a7d1d78d5626a8ffe32294c9a2359a9ba33d9a795bb2f",
+          "sourceText": "Shallow, rapid breathing pattern at rest",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[7]": {
+          "sourceHash": "3221c3049c747e9b9a2dc91070372244c4c5ce2c56dedc545da4734456cbe083",
+          "sourceText": "Yawning frequently (sign of low oxygen delivery)",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "b9453a95e56cf396b3a375eeaf818360585f33e8f743dadba9a337237475f443",
+          "sourceText": "Study demonstrating that 4 weeks of diaphragmatic breathing exercises significantly improved pulmonary function parameters including FVC and FEV1.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "82216a0f288741bce693c5416b72116f105063818a1b4d4e7847395098646534",
+          "sourceText": "Diaphragmatic Breathing Exercises and Lung Function",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "9ad887de8d806d0c057270d5c02669ae2329be93b86c5d0508f14a71774790a8",
+          "sourceText": "Research showing that targeted respiratory muscle training increases inspiratory muscle strength by 20-30% and improves exercise tolerance in both healthy adults and those with respiratory conditions.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "2f566c788e8d927aed57e87079525527edd6286d72a3ae3f64e1b2237c0b34da",
+          "sourceText": "Inspiratory Muscle Training and Lung Volumes",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "9af2a1424f0fb69b3358d9c1f741ce552511855b0cde113ce57a2cfdcb4988bc",
+          "sourceText": "Longitudinal study documenting age-related lung function decline and identifying modifiable factors including physical activity and respiratory muscle training that can slow the decline.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "7849f4e000f450e2e5ee147c0f6a4e341cd88f82fed6d372c6efa0ccb9d148b7",
+          "sourceText": "Age-Related Decline in Lung Function",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "7985cf9763e528b7c6cd977f3894394dacdb3614477b339f8aa9b3a5ea47c089",
+          "sourceText": "Research demonstrating that pursed-lip breathing improves gas exchange, increases tidal volume, and reduces respiratory rate in both healthy individuals and COPD patients.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "36c4c76f1d2c06b9453d765fc39ed0e9d0173bafdfa29078cd3d4fd092307ddd",
+          "sourceText": "Pursed-Lip Breathing and Gas Exchange",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "2617e25e34736aaf4e2e3d550cb286c2ceedc9880b564ba683619efd6833cf6f",
+          "sourceText": "Start with diaphragmatic breathing to build your lung capacity foundation",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "d46761c9a5343ca749c9f2ddc3836a522d21d80a4af1539422f8d191fc2942d2",
+          "sourceText": "Build the respiratory endurance that fuels athletic performance",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "e9b38f468fcf70137e3d3cc8328644cc834962d2ca5fdc9f632d49579ca02d46",
+          "sourceText": "Increase your breathing efficiency for longer, faster runs",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "1c94e430bf6a2c678ea209ed13c0c9423419daf6945c3daae423dea9e08a6c7c",
+          "sourceText": "Expand your breath capacity for longer phrases and better tone",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "e73848ea06c4840df178242d3595bb88dc65cb2549722e5913a74d1e28c9f8cc",
+          "sourceText": "How Breathing Exercises Increase Lung Capacity",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "9fc7733e68d1578118ea7fcf411edd5343738da345b24b24735b2e943444d3dd",
+          "sourceText": "Tidal volume is the amount of air you move in a normal breath. Most people's tidal volume is only 500ml, about 8% of total lung capacity. [Diaphragmatic breathing training can measurably increase tidal volume](https://doi.org/10.11124/JBISRIR-2017-003848), meaning you move more air with each breath.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "722ff0471aad72898fc0d2aa3fb80c201268097d99449faecc8889cf33eab2bc",
+          "sourceText": "Tidal Volume Improvement",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "e1261f3bb4185fe1861edf332ec15f9e4d5cea02c02461de1f1a451cc6343a05",
+          "sourceText": "The diaphragm is a muscle, and like any muscle, it gets stronger with training. Studies show that inspiratory muscle training increases respiratory muscle strength over weeks of consistent practice, directly improving your ability to take deep breaths.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "710105dfd586c1d81023d098bfd574e6b551c3f16b07ed68971e9fa447a5b8d8",
+          "sourceText": "Inspiratory Muscle Strengthening",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "04b587029c6b9a7491f7033d71849f90c284aed7b23ea8b0f05c8eaa4c7f3304",
+          "sourceText": "The lower lobes of your lungs have the richest blood supply and the most efficient gas exchange. Shallow breathing bypasses these areas. Deep diaphragmatic breathing directs air to the lower lobes, improving oxygen uptake and CO2 elimination per breath.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "4bb0665d4239d60060ddc1358eb401956b9741010882bbe61b3fc975b57e09f1",
+          "sourceText": "Improved Gas Exchange",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "df7f3ce31fd2eecb049680ea91d6fbc9013d73e3673bfad2189ba276d8b50302",
+          "sourceText": "Residual volume is the air trapped in your lungs after a full exhale. With poor breathing habits, this stale air accumulates. Breathing exercises with emphasis on complete exhales (like pursed-lip breathing) help reduce residual volume, making more room for fresh, oxygen-rich air.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "24cc78bf7ccf3e345381ad07366bd2ff791a81c97bc1d016ebaf0e627cd981a3",
+          "sourceText": "Residual Volume Reduction",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "c8b789afc0e8077174cb9fd661ee053c4317a557059c911ebb11784fd24a7b69",
+          "sourceText": "Your diaphragm is a dome-shaped muscle that sits below your lungs. When it contracts, it pulls downward, creating a vacuum that draws air deep into your lungs. Weak diaphragmatic engagement means shallow breaths that only fill the upper lungs. Training your diaphragm through belly breathing exercises increases tidal volume (the amount of air per breath), improves gas exchange efficiency, and strengthens the muscles that power every breath you take.",
+          "status": "route-catalog-exact"
+        },
+        "solution.heading": {
+          "sourceHash": "4032a445211509b2b04a87f1aa949cc14109d6f11a030e4e0cd01476e197507a",
+          "sourceText": "Diaphragmatic Breathing: Rebuild Your Respiratory Foundation",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "ad9037c33fa6fae57a6bad8e430b35d8b681b347c7e63496c321f9c3ed5d808b",
+          "sourceText": "The 4-second inhale, 6-second exhale pattern is ideal for lung capacity training because the slow inhale encourages full diaphragmatic expansion (not just the quick sips of air from chest breathing), while the extended exhale trains your expiratory muscles and improves your ability to completely empty your lungs, which is just as important as filling them. Better emptying means more room for fresh air on the next breath.",
+          "status": "route-catalog-normalized"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "08bd4cf51099e8b8f14b2a1adc2f01f25ecf0b4294814214072cc7a351ac992e",
+          "sourceText": "Practice diaphragmatic breathing for 5-10 minutes twice daily. Breathe in slowly through your nose for 4 seconds, expanding your belly, then exhale for 6 seconds. Gradually increase these durations each week. Combine with pursed-lip exhales and regular walking. Most people see measurable improvement within 2-4 weeks of consistent practice.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "d6c2f2063a04822310d8a7809c15f10c88c80608c5f052f4631e8816912bedc5",
+          "sourceText": "How can I increase my lung capacity?",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "ja-jp": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "14d35bc6474aed9ec9a54f70bb6ae2532b4a214d790df0733877147014ea521a",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "c05ec1e91fd3a4b5310578fe918f43fdff564149437fe7daa382f5fb60454cc3",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.internal-link-pursed-lip-keyword": {
+          "sourceHash": "3b806f008c311e495c646bfb7dcf52ef214278aab0cedfa9fd8c992f8b0e7846",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "d12a4a7e3855759f807d3791d4028eb300fadde57826dee9f909840691e5f1b5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-athletes-title": {
+          "sourceHash": "e9278533c33a8ed15a1645faf5ae8ca8ed10ef7f5c99b7f93ad94af83f21b7f5",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-running-title": {
+          "sourceHash": "1fb54d2b1733f17a0ac791891630eb446ddae518a008d3d8218698cecb2a383d",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-singing-title": {
+          "sourceHash": "26ff10a16e9d0c796b468f5eebc19c4d11727a8e06868ddfd0ecb6c3dab87e8e",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "c33340f03cb3b68f7f21744a1bfd1c9b02c1ff571bfc94302c9fd6b5d39a7670",
+          "sourceText": "If you have a respiratory condition (COPD, asthma, pulmonary fibrosis, or other lung disease), consult your doctor before starting breathing exercises. These exercises complement but don't replace medical treatment. Seek immediate medical attention for sudden shortness of breath, chest pain, or persistent cough.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "a8d4c1ca24ba47befe5d3a913eed0c634cc829bcb635b1ce0cef2dc9a35b0a23",
+          "sourceText": "While you can't grow new lung tissue, you can significantly increase your functional lung capacity, the amount of air you actually use. Breathing exercises strengthen your diaphragm (allowing deeper breaths), improve lung elasticity, reduce residual volume (trapped stale air), and train your respiratory muscles to work more efficiently. Most people see measurable improvement within 2-4 weeks.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "f0f23f221adab3f03e207bba00ae064a9cc2a1cf79a1193eecca6729c20c632c",
+          "sourceText": "Can you actually increase your lung capacity?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "d41500c040714216aac313c976838a33da63d89b91798c1ba09631a51d1b1136",
+          "sourceText": "With consistent daily practice (5-10 minutes, twice daily), most people notice improved breath depth within 1-2 weeks and measurable gains in sustained exhale duration within 3-4 weeks. Significant improvements in exercise endurance typically appear within 4-8 weeks.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].question": {
+          "sourceHash": "35bc4a38b226a666e1c9e5b1b050a054391297f654395d6a8e87d18298a54d17",
+          "sourceText": "How long does it take to increase lung capacity?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "27400def6f7e3ee48d1764791809da9c55925e348c09b66bb844aecb4a2d0704",
+          "sourceText": "Diaphragmatic (belly) breathing is the foundation. It strengthens your primary breathing muscle and increases the volume of air per breath. For additional benefit, combine with pursed-lip exhales (improves air emptying), progressive breath loading (gradually extending inhale/exhale duration), and cardiovascular exercise (challenges your respiratory system under load).",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "6acd6c638e22d6207795263e966487247df59b7d28a09feaa1b40cab556b50b8",
+          "sourceText": "What is the best exercise to increase lung capacity?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "49d6c4596308f3e2c0b4b482dec7ba5f38f5fbb266216fef01f597646482c60e",
+          "sourceText": "Yes, lung capacity naturally declines about 1-2% per year starting in your mid-20s. By age 50, you may have lost 15-25% of your peak capacity. However, breathing exercises and regular physical activity can significantly slow this decline and improve your functional capacity at any age.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].question": {
+          "sourceHash": "55c4297749f76a6af75c846c9ac6d7c2e64d33052703a3a7994dabfabb2636d5",
+          "sourceText": "Does lung capacity decrease with age?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "dd5b49b79a5d61c86401e0692f1a07809d0efb569974215b44e98cf1afc345ba",
+          "sourceText": "Yes, breathing exercises, especially diaphragmatic breathing and pursed-lip breathing, are a core part of pulmonary rehabilitation for COPD and can help manage asthma. However, they complement medical treatment, not replace it. Always consult your doctor before starting a breathing program if you have a respiratory condition.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "ffdc7572e638c916216196b84f2eba39a08e66dc9b130114fa22048b6904efbc",
+          "sourceText": "Can breathing exercises help with COPD or asthma?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "778153ed1e17b993ea50b6d7699487fa8580ea4a0ab84c6196c8a4dd7292fe3c",
+          "sourceText": "A simple test: take the deepest breath you can, then exhale on a sustained 'sss' sound (like a tire deflating). Time how long you can maintain an even, steady sound. Healthy adults typically sustain 25-40 seconds. Under 15 seconds may indicate weak respiratory muscles. Track this weekly to measure improvement.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].question": {
+          "sourceHash": "aba9b886a23eaa04748ff9a46cda01bbc29655d2225fa350b8e14f5f51ebcfba",
+          "sourceText": "How do I measure my lung capacity at home?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "2cb27948e68ddede1fd39d39f4cdc1492bb6c3f5c3b0f40d2270edd94d784af1",
+          "sourceText": "Your lungs can hold about 6 liters of air, but most people use only a fraction of that capacity. Shallow chest breathing, sedentary habits, poor posture, and aging all shrink your functional lung capacity over time. The good news: breathing exercises can reverse this decline. Diaphragmatic breathing strengthens your primary breathing muscle, increases the volume of air you move with each breath, and improves the efficiency of gas exchange in your lungs.",
+          "status": "route-catalog-exact"
+        },
+        "hero.subtitle": {
+          "sourceHash": "414ead3655d383b6dceb79b01f6d1dd8f925b36dc6dab7ddd040d50e628820e9",
+          "sourceText": "Strengthen your diaphragm and expand your breathing power",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "0cf688a2f16e61168d310058a1fb86e7699f9603d9dbed604bf9896c93e87ed9",
+          "sourceText": "Lung Capacity Exercises",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "69bc5424e7aa46944738f706877da6c2ee2734a3b10d56c48c9cc669194eeab8",
+          "sourceText": "Take the deepest breath you can and exhale on a sustained 'sss' sound. Time how long you can maintain the sound with even airflow. This is your baseline exhale duration, aim to increase it by 5-10 seconds over the next month.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "d1d56546d5f3d1a75e6ff44d83797248dfe2ae092e3cbc7dfcf1a9fa5f2a8f98",
+          "sourceText": "Assess your baseline",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "9be4ce2ba674bafb6da9591546558f34a4fd7cd76d482810cddeac5ca11c8c0b",
+          "sourceText": "1 minute to test",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "6c711a109a0b021f631108ed91832b35ce797c56e9e7449847ea9ea557ae7dad",
+          "sourceText": "Use the breathing visualizer with Belly Breathing mode. Inhale through your nose for 4 seconds, feeling your belly and sides expand. Exhale through your nose for 6 seconds, feeling everything deflate. Focus on making each breath as deep and full as possible.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "a802f6b0a423dec279788c9fcb2f2faebd156221078956f4958410e3f110ced8",
+          "sourceText": "Start with belly breathing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "30dd0d14cd4fd1cd7a3d298d467e0595e5bdfa3bd5d5e4dff61ae3ca7658546b",
+          "sourceText": "5 minutes, 2-3 times daily",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "0da50472bc0b49f52829ba88b5472c2e754e73f5221276b098fce2ef0c05981d",
+          "sourceText": "Once comfortable with 4-6 timing, try extending: inhale for 5 seconds, exhale for 7. Then 6-8. Each increase challenges your respiratory muscles to work harder and expand further.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "e6de4dd1fda440f84dc1b5569c82a8990855297326c8a4abb935e1c67992ca65",
+          "sourceText": "Progressive breath loading",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "e17ba46367222721ab6a679d884e25c8dbdb4345ed5b7a2847f07b9ac11e65d2",
+          "sourceText": "Build 1 second per week",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "37671683fa69387d643a3b9510f8bfc44bee35a3d23d4a4f22cdee9ad4f2a44a",
+          "sourceText": "Inhale deeply through your nose, then exhale through pursed lips (like blowing through a straw). This creates back-pressure that keeps airways open longer and improves air emptying from the lower lungs.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "3bd37e965002dad9df1ee2edbf0906a09b06418f63be42e62420e10ec319e059",
+          "sourceText": "Add pursed-lip exhales",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "bcfd302c1fde03a49cc9a77ffb5bd101e368966084416f11d960d3d0dc7a651b",
+          "sourceText": "5 minutes between belly breathing sets",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "facafd5620140d49ce751f5006c28866dbae2d890a7dc2c38596d252cb38b485",
+          "sourceText": "Once your breathing technique is solid, add walking. Breathe in for 4 steps, out for 6 steps. This trains your respiratory system under the mild stress of physical activity, building real-world lung capacity.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "87faf496984bf70db4a66a20c29efceba83f50aab27d1032d96162883859befe",
+          "sourceText": "Combine with movement",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "76a916b8aecd6b816001420225ae5a0199aff35fb5a33265d43674dcbe329a5d",
+          "sourceText": "10-15 minute walks, daily",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "481a75672350d25ac59a160c9f66fb583c13f33709e342aeb45b408112238a07",
+          "sourceText": "Re-test your sustained exhale ('sss' sound) weekly. You should see measurable improvement within 2-3 weeks. A healthy goal is 25-40 seconds of sustained, even exhale.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "5a7e720a9442c83d8391403d265175afba064d435242e9d0ea096da78f1aafa5",
+          "sourceText": "Track your progress",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "3bc389d7a8096bfca21f09cdd437482a7da5171bc8a8543d2aaa4e9d05502ec9",
+          "sourceText": "1 minute, weekly",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "d160b10d88b52e0ffeedb53e578f4aeb78115fd954bc7bc57d324f905100de08",
+          "sourceText": "Consistency beats intensity, 5 minutes twice daily is better than 20 minutes once a week",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "50c86089f36802ef45943b22dc5ccb9e38105e1e5d39089b64c070806679a2aa",
+          "sourceText": "Focus on expanding your sides and back, not just your belly. This engages the full diaphragm",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "09de6b03eede1fee7f26e18d96499a5f70f6638fa2eb786c0f9f969a583f3fea",
+          "sourceText": "Good posture is essential, slouching compresses your diaphragm and limits expansion by up to 30%",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "9e027625d1bc65f96c9638440c2ef5facece2ba7ebed2e32cd57b99e8ed0ffb1",
+          "sourceText": "Stay hydrated, dry airways are less elastic and reduce effective lung capacity",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "d6d252c332b648d9f26b2d87652a05ec9646a2165da6aaf33b7f4bbcda691934",
+          "sourceText": "If you have a respiratory condition, pursed-lip breathing on exhale can significantly improve air emptying",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[5]": {
+          "sourceHash": "10e9272331f4407b13c26b5fc077bb81df6f88fff5a1680fe6bbe40333c9edfa",
+          "sourceText": "Avoid holding your breath excessively, focus on flow and volume rather than holds",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "1c1cf35d3af86f5bba8b7d7e897d150f912be9e34c643fec52cbf2ee82bf8bfb",
+          "sourceText": "Build lung capacity with proven breathing exercises. Strengthen your diaphragm, increase tidal volume, and improve respiratory health. Free guided timer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "24041ad77bf35a713020763a167835429e4f6a90aa4afeb1a47c2dc7ff557410",
+          "sourceText": "Proven breathing exercises to increase lung capacity and strengthen your diaphragm. Free guided timer — start building respiratory power today.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "22829207e462b73e66353388e348ce25db21797ae647f55ed4e3ce39c940c0ec",
+          "sourceText": "Lung Capacity Exercises: Increase Your Breathing Power",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "35d2796919fb8581f30ef5677409addccb50c2b341841b0ba522ae5c17425481",
+          "sourceText": "Lung Capacity Exercises: Increase Your Breathing Power (Free Timer) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "16fedc35c888c19afb9f1c36f1dca08a79ae8cf93cfd71e820b58c5eb1974844",
+          "sourceText": "Build lung capacity with diaphragmatic breathing exercises. Free guided timer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "22829207e462b73e66353388e348ce25db21797ae647f55ed4e3ce39c940c0ec",
+          "sourceText": "Lung Capacity Exercises — Increase Your Breathing Power",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "2aea3e70cdbf58b705c8a36e5fda34f8f97c37c8ab493b527b429416ff788266",
+          "sourceText": "Starting in your mid-20s, lung capacity naturally declines by about 1-2% per year. But lifestyle factors accelerate this decline dramatically. Sitting hunched over a desk compresses your diaphragm. Chronic stress keeps you in shallow, rapid chest breathing mode. Lack of cardiovascular exercise means your respiratory muscles weaken from disuse. The result: even if your lungs are healthy, you may be using only 50-70% of your available capacity.",
+          "status": "route-catalog-exact"
+        },
+        "problem.heading": {
+          "sourceHash": "0be01b286dd337990960a73544735e1d45b5def672ea876c44fe9fccdb975286",
+          "sourceText": "Why Your Lung Capacity Decreases",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "b7b8e3c465727f4e782a816470d39a651f5cec8da975caa8574f8c5898fee1eb",
+          "sourceText": "Getting winded during moderate physical activity",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "9fd92397ac34ed1e552edea732a6848ef75c2950755bd3d9058e1a47673d794b",
+          "sourceText": "Feeling like you can't take a full, deep breath",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "63b32c63bd57a54ab164a4e7f8f3351d81502752b8d75a4f05d2fe9de86bed9a",
+          "sourceText": "Shortness of breath climbing stairs",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "aec73c1f1393a9610d0ee056d8da7a629e5a1465c5999e67a24b158d708204d1",
+          "sourceText": "Low energy and fatigue throughout the day",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "25d5e00b38513e8f3a73416b3de2612713f7e1f5902913efca4861485e8e3969",
+          "sourceText": "Difficulty holding notes while singing or speaking",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "4254705853a8f3ffe491834b1c1a597a20db4767a0a57fefb772064a150c3b59",
+          "sourceText": "Poor exercise endurance and slow recovery",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "0b4cdfa8a2c3cc26831a7d1d78d5626a8ffe32294c9a2359a9ba33d9a795bb2f",
+          "sourceText": "Shallow, rapid breathing pattern at rest",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[7]": {
+          "sourceHash": "3221c3049c747e9b9a2dc91070372244c4c5ce2c56dedc545da4734456cbe083",
+          "sourceText": "Yawning frequently (sign of low oxygen delivery)",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "b9453a95e56cf396b3a375eeaf818360585f33e8f743dadba9a337237475f443",
+          "sourceText": "Study demonstrating that 4 weeks of diaphragmatic breathing exercises significantly improved pulmonary function parameters including FVC and FEV1.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "82216a0f288741bce693c5416b72116f105063818a1b4d4e7847395098646534",
+          "sourceText": "Diaphragmatic Breathing Exercises and Lung Function",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "9ad887de8d806d0c057270d5c02669ae2329be93b86c5d0508f14a71774790a8",
+          "sourceText": "Research showing that targeted respiratory muscle training increases inspiratory muscle strength by 20-30% and improves exercise tolerance in both healthy adults and those with respiratory conditions.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "2f566c788e8d927aed57e87079525527edd6286d72a3ae3f64e1b2237c0b34da",
+          "sourceText": "Inspiratory Muscle Training and Lung Volumes",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "9af2a1424f0fb69b3358d9c1f741ce552511855b0cde113ce57a2cfdcb4988bc",
+          "sourceText": "Longitudinal study documenting age-related lung function decline and identifying modifiable factors including physical activity and respiratory muscle training that can slow the decline.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "7849f4e000f450e2e5ee147c0f6a4e341cd88f82fed6d372c6efa0ccb9d148b7",
+          "sourceText": "Age-Related Decline in Lung Function",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "7985cf9763e528b7c6cd977f3894394dacdb3614477b339f8aa9b3a5ea47c089",
+          "sourceText": "Research demonstrating that pursed-lip breathing improves gas exchange, increases tidal volume, and reduces respiratory rate in both healthy individuals and COPD patients.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "36c4c76f1d2c06b9453d765fc39ed0e9d0173bafdfa29078cd3d4fd092307ddd",
+          "sourceText": "Pursed-Lip Breathing and Gas Exchange",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "2617e25e34736aaf4e2e3d550cb286c2ceedc9880b564ba683619efd6833cf6f",
+          "sourceText": "Start with diaphragmatic breathing to build your lung capacity foundation",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "d46761c9a5343ca749c9f2ddc3836a522d21d80a4af1539422f8d191fc2942d2",
+          "sourceText": "Build the respiratory endurance that fuels athletic performance",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "e9b38f468fcf70137e3d3cc8328644cc834962d2ca5fdc9f632d49579ca02d46",
+          "sourceText": "Increase your breathing efficiency for longer, faster runs",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "1c94e430bf6a2c678ea209ed13c0c9423419daf6945c3daae423dea9e08a6c7c",
+          "sourceText": "Expand your breath capacity for longer phrases and better tone",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "e73848ea06c4840df178242d3595bb88dc65cb2549722e5913a74d1e28c9f8cc",
+          "sourceText": "How Breathing Exercises Increase Lung Capacity",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "9fc7733e68d1578118ea7fcf411edd5343738da345b24b24735b2e943444d3dd",
+          "sourceText": "Tidal volume is the amount of air you move in a normal breath. Most people's tidal volume is only 500ml, about 8% of total lung capacity. [Diaphragmatic breathing training can measurably increase tidal volume](https://doi.org/10.11124/JBISRIR-2017-003848), meaning you move more air with each breath.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "722ff0471aad72898fc0d2aa3fb80c201268097d99449faecc8889cf33eab2bc",
+          "sourceText": "Tidal Volume Improvement",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "e1261f3bb4185fe1861edf332ec15f9e4d5cea02c02461de1f1a451cc6343a05",
+          "sourceText": "The diaphragm is a muscle, and like any muscle, it gets stronger with training. Studies show that inspiratory muscle training increases respiratory muscle strength over weeks of consistent practice, directly improving your ability to take deep breaths.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "710105dfd586c1d81023d098bfd574e6b551c3f16b07ed68971e9fa447a5b8d8",
+          "sourceText": "Inspiratory Muscle Strengthening",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "04b587029c6b9a7491f7033d71849f90c284aed7b23ea8b0f05c8eaa4c7f3304",
+          "sourceText": "The lower lobes of your lungs have the richest blood supply and the most efficient gas exchange. Shallow breathing bypasses these areas. Deep diaphragmatic breathing directs air to the lower lobes, improving oxygen uptake and CO2 elimination per breath.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "4bb0665d4239d60060ddc1358eb401956b9741010882bbe61b3fc975b57e09f1",
+          "sourceText": "Improved Gas Exchange",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "df7f3ce31fd2eecb049680ea91d6fbc9013d73e3673bfad2189ba276d8b50302",
+          "sourceText": "Residual volume is the air trapped in your lungs after a full exhale. With poor breathing habits, this stale air accumulates. Breathing exercises with emphasis on complete exhales (like pursed-lip breathing) help reduce residual volume, making more room for fresh, oxygen-rich air.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "24cc78bf7ccf3e345381ad07366bd2ff791a81c97bc1d016ebaf0e627cd981a3",
+          "sourceText": "Residual Volume Reduction",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "c8b789afc0e8077174cb9fd661ee053c4317a557059c911ebb11784fd24a7b69",
+          "sourceText": "Your diaphragm is a dome-shaped muscle that sits below your lungs. When it contracts, it pulls downward, creating a vacuum that draws air deep into your lungs. Weak diaphragmatic engagement means shallow breaths that only fill the upper lungs. Training your diaphragm through belly breathing exercises increases tidal volume (the amount of air per breath), improves gas exchange efficiency, and strengthens the muscles that power every breath you take.",
+          "status": "route-catalog-exact"
+        },
+        "solution.heading": {
+          "sourceHash": "4032a445211509b2b04a87f1aa949cc14109d6f11a030e4e0cd01476e197507a",
+          "sourceText": "Diaphragmatic Breathing: Rebuild Your Respiratory Foundation",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "ad9037c33fa6fae57a6bad8e430b35d8b681b347c7e63496c321f9c3ed5d808b",
+          "sourceText": "The 4-second inhale, 6-second exhale pattern is ideal for lung capacity training because the slow inhale encourages full diaphragmatic expansion (not just the quick sips of air from chest breathing), while the extended exhale trains your expiratory muscles and improves your ability to completely empty your lungs, which is just as important as filling them. Better emptying means more room for fresh air on the next breath.",
+          "status": "route-catalog-normalized"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "08bd4cf51099e8b8f14b2a1adc2f01f25ecf0b4294814214072cc7a351ac992e",
+          "sourceText": "Practice diaphragmatic breathing for 5-10 minutes twice daily. Breathe in slowly through your nose for 4 seconds, expanding your belly, then exhale for 6 seconds. Gradually increase these durations each week. Combine with pursed-lip exhales and regular walking. Most people see measurable improvement within 2-4 weeks of consistent practice.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "d6c2f2063a04822310d8a7809c15f10c88c80608c5f052f4631e8816912bedc5",
+          "sourceText": "How can I increase my lung capacity?",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "pt-br": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "14d35bc6474aed9ec9a54f70bb6ae2532b4a214d790df0733877147014ea521a",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "c05ec1e91fd3a4b5310578fe918f43fdff564149437fe7daa382f5fb60454cc3",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.internal-link-pursed-lip-keyword": {
+          "sourceHash": "3b806f008c311e495c646bfb7dcf52ef214278aab0cedfa9fd8c992f8b0e7846",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "d12a4a7e3855759f807d3791d4028eb300fadde57826dee9f909840691e5f1b5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-athletes-title": {
+          "sourceHash": "e9278533c33a8ed15a1645faf5ae8ca8ed10ef7f5c99b7f93ad94af83f21b7f5",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-running-title": {
+          "sourceHash": "1fb54d2b1733f17a0ac791891630eb446ddae518a008d3d8218698cecb2a383d",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-singing-title": {
+          "sourceHash": "26ff10a16e9d0c796b468f5eebc19c4d11727a8e06868ddfd0ecb6c3dab87e8e",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "c33340f03cb3b68f7f21744a1bfd1c9b02c1ff571bfc94302c9fd6b5d39a7670",
+          "sourceText": "If you have a respiratory condition (COPD, asthma, pulmonary fibrosis, or other lung disease), consult your doctor before starting breathing exercises. These exercises complement but don't replace medical treatment. Seek immediate medical attention for sudden shortness of breath, chest pain, or persistent cough.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "a8d4c1ca24ba47befe5d3a913eed0c634cc829bcb635b1ce0cef2dc9a35b0a23",
+          "sourceText": "While you can't grow new lung tissue, you can significantly increase your functional lung capacity, the amount of air you actually use. Breathing exercises strengthen your diaphragm (allowing deeper breaths), improve lung elasticity, reduce residual volume (trapped stale air), and train your respiratory muscles to work more efficiently. Most people see measurable improvement within 2-4 weeks.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "f0f23f221adab3f03e207bba00ae064a9cc2a1cf79a1193eecca6729c20c632c",
+          "sourceText": "Can you actually increase your lung capacity?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "d41500c040714216aac313c976838a33da63d89b91798c1ba09631a51d1b1136",
+          "sourceText": "With consistent daily practice (5-10 minutes, twice daily), most people notice improved breath depth within 1-2 weeks and measurable gains in sustained exhale duration within 3-4 weeks. Significant improvements in exercise endurance typically appear within 4-8 weeks.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].question": {
+          "sourceHash": "35bc4a38b226a666e1c9e5b1b050a054391297f654395d6a8e87d18298a54d17",
+          "sourceText": "How long does it take to increase lung capacity?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "27400def6f7e3ee48d1764791809da9c55925e348c09b66bb844aecb4a2d0704",
+          "sourceText": "Diaphragmatic (belly) breathing is the foundation. It strengthens your primary breathing muscle and increases the volume of air per breath. For additional benefit, combine with pursed-lip exhales (improves air emptying), progressive breath loading (gradually extending inhale/exhale duration), and cardiovascular exercise (challenges your respiratory system under load).",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "6acd6c638e22d6207795263e966487247df59b7d28a09feaa1b40cab556b50b8",
+          "sourceText": "What is the best exercise to increase lung capacity?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "49d6c4596308f3e2c0b4b482dec7ba5f38f5fbb266216fef01f597646482c60e",
+          "sourceText": "Yes, lung capacity naturally declines about 1-2% per year starting in your mid-20s. By age 50, you may have lost 15-25% of your peak capacity. However, breathing exercises and regular physical activity can significantly slow this decline and improve your functional capacity at any age.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].question": {
+          "sourceHash": "55c4297749f76a6af75c846c9ac6d7c2e64d33052703a3a7994dabfabb2636d5",
+          "sourceText": "Does lung capacity decrease with age?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "dd5b49b79a5d61c86401e0692f1a07809d0efb569974215b44e98cf1afc345ba",
+          "sourceText": "Yes, breathing exercises, especially diaphragmatic breathing and pursed-lip breathing, are a core part of pulmonary rehabilitation for COPD and can help manage asthma. However, they complement medical treatment, not replace it. Always consult your doctor before starting a breathing program if you have a respiratory condition.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "ffdc7572e638c916216196b84f2eba39a08e66dc9b130114fa22048b6904efbc",
+          "sourceText": "Can breathing exercises help with COPD or asthma?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "778153ed1e17b993ea50b6d7699487fa8580ea4a0ab84c6196c8a4dd7292fe3c",
+          "sourceText": "A simple test: take the deepest breath you can, then exhale on a sustained 'sss' sound (like a tire deflating). Time how long you can maintain an even, steady sound. Healthy adults typically sustain 25-40 seconds. Under 15 seconds may indicate weak respiratory muscles. Track this weekly to measure improvement.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].question": {
+          "sourceHash": "aba9b886a23eaa04748ff9a46cda01bbc29655d2225fa350b8e14f5f51ebcfba",
+          "sourceText": "How do I measure my lung capacity at home?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "2cb27948e68ddede1fd39d39f4cdc1492bb6c3f5c3b0f40d2270edd94d784af1",
+          "sourceText": "Your lungs can hold about 6 liters of air, but most people use only a fraction of that capacity. Shallow chest breathing, sedentary habits, poor posture, and aging all shrink your functional lung capacity over time. The good news: breathing exercises can reverse this decline. Diaphragmatic breathing strengthens your primary breathing muscle, increases the volume of air you move with each breath, and improves the efficiency of gas exchange in your lungs.",
+          "status": "route-catalog-exact"
+        },
+        "hero.subtitle": {
+          "sourceHash": "414ead3655d383b6dceb79b01f6d1dd8f925b36dc6dab7ddd040d50e628820e9",
+          "sourceText": "Strengthen your diaphragm and expand your breathing power",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "0cf688a2f16e61168d310058a1fb86e7699f9603d9dbed604bf9896c93e87ed9",
+          "sourceText": "Lung Capacity Exercises",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "69bc5424e7aa46944738f706877da6c2ee2734a3b10d56c48c9cc669194eeab8",
+          "sourceText": "Take the deepest breath you can and exhale on a sustained 'sss' sound. Time how long you can maintain the sound with even airflow. This is your baseline exhale duration, aim to increase it by 5-10 seconds over the next month.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "d1d56546d5f3d1a75e6ff44d83797248dfe2ae092e3cbc7dfcf1a9fa5f2a8f98",
+          "sourceText": "Assess your baseline",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "9be4ce2ba674bafb6da9591546558f34a4fd7cd76d482810cddeac5ca11c8c0b",
+          "sourceText": "1 minute to test",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "6c711a109a0b021f631108ed91832b35ce797c56e9e7449847ea9ea557ae7dad",
+          "sourceText": "Use the breathing visualizer with Belly Breathing mode. Inhale through your nose for 4 seconds, feeling your belly and sides expand. Exhale through your nose for 6 seconds, feeling everything deflate. Focus on making each breath as deep and full as possible.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "a802f6b0a423dec279788c9fcb2f2faebd156221078956f4958410e3f110ced8",
+          "sourceText": "Start with belly breathing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "30dd0d14cd4fd1cd7a3d298d467e0595e5bdfa3bd5d5e4dff61ae3ca7658546b",
+          "sourceText": "5 minutes, 2-3 times daily",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "0da50472bc0b49f52829ba88b5472c2e754e73f5221276b098fce2ef0c05981d",
+          "sourceText": "Once comfortable with 4-6 timing, try extending: inhale for 5 seconds, exhale for 7. Then 6-8. Each increase challenges your respiratory muscles to work harder and expand further.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "e6de4dd1fda440f84dc1b5569c82a8990855297326c8a4abb935e1c67992ca65",
+          "sourceText": "Progressive breath loading",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "e17ba46367222721ab6a679d884e25c8dbdb4345ed5b7a2847f07b9ac11e65d2",
+          "sourceText": "Build 1 second per week",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "37671683fa69387d643a3b9510f8bfc44bee35a3d23d4a4f22cdee9ad4f2a44a",
+          "sourceText": "Inhale deeply through your nose, then exhale through pursed lips (like blowing through a straw). This creates back-pressure that keeps airways open longer and improves air emptying from the lower lungs.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "3bd37e965002dad9df1ee2edbf0906a09b06418f63be42e62420e10ec319e059",
+          "sourceText": "Add pursed-lip exhales",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "bcfd302c1fde03a49cc9a77ffb5bd101e368966084416f11d960d3d0dc7a651b",
+          "sourceText": "5 minutes between belly breathing sets",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "facafd5620140d49ce751f5006c28866dbae2d890a7dc2c38596d252cb38b485",
+          "sourceText": "Once your breathing technique is solid, add walking. Breathe in for 4 steps, out for 6 steps. This trains your respiratory system under the mild stress of physical activity, building real-world lung capacity.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "87faf496984bf70db4a66a20c29efceba83f50aab27d1032d96162883859befe",
+          "sourceText": "Combine with movement",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "76a916b8aecd6b816001420225ae5a0199aff35fb5a33265d43674dcbe329a5d",
+          "sourceText": "10-15 minute walks, daily",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "481a75672350d25ac59a160c9f66fb583c13f33709e342aeb45b408112238a07",
+          "sourceText": "Re-test your sustained exhale ('sss' sound) weekly. You should see measurable improvement within 2-3 weeks. A healthy goal is 25-40 seconds of sustained, even exhale.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "5a7e720a9442c83d8391403d265175afba064d435242e9d0ea096da78f1aafa5",
+          "sourceText": "Track your progress",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "3bc389d7a8096bfca21f09cdd437482a7da5171bc8a8543d2aaa4e9d05502ec9",
+          "sourceText": "1 minute, weekly",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "d160b10d88b52e0ffeedb53e578f4aeb78115fd954bc7bc57d324f905100de08",
+          "sourceText": "Consistency beats intensity, 5 minutes twice daily is better than 20 minutes once a week",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "50c86089f36802ef45943b22dc5ccb9e38105e1e5d39089b64c070806679a2aa",
+          "sourceText": "Focus on expanding your sides and back, not just your belly. This engages the full diaphragm",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "09de6b03eede1fee7f26e18d96499a5f70f6638fa2eb786c0f9f969a583f3fea",
+          "sourceText": "Good posture is essential, slouching compresses your diaphragm and limits expansion by up to 30%",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "9e027625d1bc65f96c9638440c2ef5facece2ba7ebed2e32cd57b99e8ed0ffb1",
+          "sourceText": "Stay hydrated, dry airways are less elastic and reduce effective lung capacity",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "d6d252c332b648d9f26b2d87652a05ec9646a2165da6aaf33b7f4bbcda691934",
+          "sourceText": "If you have a respiratory condition, pursed-lip breathing on exhale can significantly improve air emptying",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[5]": {
+          "sourceHash": "10e9272331f4407b13c26b5fc077bb81df6f88fff5a1680fe6bbe40333c9edfa",
+          "sourceText": "Avoid holding your breath excessively, focus on flow and volume rather than holds",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "1c1cf35d3af86f5bba8b7d7e897d150f912be9e34c643fec52cbf2ee82bf8bfb",
+          "sourceText": "Build lung capacity with proven breathing exercises. Strengthen your diaphragm, increase tidal volume, and improve respiratory health. Free guided timer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "24041ad77bf35a713020763a167835429e4f6a90aa4afeb1a47c2dc7ff557410",
+          "sourceText": "Proven breathing exercises to increase lung capacity and strengthen your diaphragm. Free guided timer — start building respiratory power today.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "22829207e462b73e66353388e348ce25db21797ae647f55ed4e3ce39c940c0ec",
+          "sourceText": "Lung Capacity Exercises: Increase Your Breathing Power",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "35d2796919fb8581f30ef5677409addccb50c2b341841b0ba522ae5c17425481",
+          "sourceText": "Lung Capacity Exercises: Increase Your Breathing Power (Free Timer) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "16fedc35c888c19afb9f1c36f1dca08a79ae8cf93cfd71e820b58c5eb1974844",
+          "sourceText": "Build lung capacity with diaphragmatic breathing exercises. Free guided timer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "22829207e462b73e66353388e348ce25db21797ae647f55ed4e3ce39c940c0ec",
+          "sourceText": "Lung Capacity Exercises — Increase Your Breathing Power",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "2aea3e70cdbf58b705c8a36e5fda34f8f97c37c8ab493b527b429416ff788266",
+          "sourceText": "Starting in your mid-20s, lung capacity naturally declines by about 1-2% per year. But lifestyle factors accelerate this decline dramatically. Sitting hunched over a desk compresses your diaphragm. Chronic stress keeps you in shallow, rapid chest breathing mode. Lack of cardiovascular exercise means your respiratory muscles weaken from disuse. The result: even if your lungs are healthy, you may be using only 50-70% of your available capacity.",
+          "status": "route-catalog-exact"
+        },
+        "problem.heading": {
+          "sourceHash": "0be01b286dd337990960a73544735e1d45b5def672ea876c44fe9fccdb975286",
+          "sourceText": "Why Your Lung Capacity Decreases",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "b7b8e3c465727f4e782a816470d39a651f5cec8da975caa8574f8c5898fee1eb",
+          "sourceText": "Getting winded during moderate physical activity",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "9fd92397ac34ed1e552edea732a6848ef75c2950755bd3d9058e1a47673d794b",
+          "sourceText": "Feeling like you can't take a full, deep breath",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "63b32c63bd57a54ab164a4e7f8f3351d81502752b8d75a4f05d2fe9de86bed9a",
+          "sourceText": "Shortness of breath climbing stairs",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "aec73c1f1393a9610d0ee056d8da7a629e5a1465c5999e67a24b158d708204d1",
+          "sourceText": "Low energy and fatigue throughout the day",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "25d5e00b38513e8f3a73416b3de2612713f7e1f5902913efca4861485e8e3969",
+          "sourceText": "Difficulty holding notes while singing or speaking",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "4254705853a8f3ffe491834b1c1a597a20db4767a0a57fefb772064a150c3b59",
+          "sourceText": "Poor exercise endurance and slow recovery",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "0b4cdfa8a2c3cc26831a7d1d78d5626a8ffe32294c9a2359a9ba33d9a795bb2f",
+          "sourceText": "Shallow, rapid breathing pattern at rest",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[7]": {
+          "sourceHash": "3221c3049c747e9b9a2dc91070372244c4c5ce2c56dedc545da4734456cbe083",
+          "sourceText": "Yawning frequently (sign of low oxygen delivery)",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "b9453a95e56cf396b3a375eeaf818360585f33e8f743dadba9a337237475f443",
+          "sourceText": "Study demonstrating that 4 weeks of diaphragmatic breathing exercises significantly improved pulmonary function parameters including FVC and FEV1.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "82216a0f288741bce693c5416b72116f105063818a1b4d4e7847395098646534",
+          "sourceText": "Diaphragmatic Breathing Exercises and Lung Function",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "9ad887de8d806d0c057270d5c02669ae2329be93b86c5d0508f14a71774790a8",
+          "sourceText": "Research showing that targeted respiratory muscle training increases inspiratory muscle strength by 20-30% and improves exercise tolerance in both healthy adults and those with respiratory conditions.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "2f566c788e8d927aed57e87079525527edd6286d72a3ae3f64e1b2237c0b34da",
+          "sourceText": "Inspiratory Muscle Training and Lung Volumes",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "9af2a1424f0fb69b3358d9c1f741ce552511855b0cde113ce57a2cfdcb4988bc",
+          "sourceText": "Longitudinal study documenting age-related lung function decline and identifying modifiable factors including physical activity and respiratory muscle training that can slow the decline.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "7849f4e000f450e2e5ee147c0f6a4e341cd88f82fed6d372c6efa0ccb9d148b7",
+          "sourceText": "Age-Related Decline in Lung Function",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "7985cf9763e528b7c6cd977f3894394dacdb3614477b339f8aa9b3a5ea47c089",
+          "sourceText": "Research demonstrating that pursed-lip breathing improves gas exchange, increases tidal volume, and reduces respiratory rate in both healthy individuals and COPD patients.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "36c4c76f1d2c06b9453d765fc39ed0e9d0173bafdfa29078cd3d4fd092307ddd",
+          "sourceText": "Pursed-Lip Breathing and Gas Exchange",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "2617e25e34736aaf4e2e3d550cb286c2ceedc9880b564ba683619efd6833cf6f",
+          "sourceText": "Start with diaphragmatic breathing to build your lung capacity foundation",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "d46761c9a5343ca749c9f2ddc3836a522d21d80a4af1539422f8d191fc2942d2",
+          "sourceText": "Build the respiratory endurance that fuels athletic performance",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "e9b38f468fcf70137e3d3cc8328644cc834962d2ca5fdc9f632d49579ca02d46",
+          "sourceText": "Increase your breathing efficiency for longer, faster runs",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "1c94e430bf6a2c678ea209ed13c0c9423419daf6945c3daae423dea9e08a6c7c",
+          "sourceText": "Expand your breath capacity for longer phrases and better tone",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "e73848ea06c4840df178242d3595bb88dc65cb2549722e5913a74d1e28c9f8cc",
+          "sourceText": "How Breathing Exercises Increase Lung Capacity",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "9fc7733e68d1578118ea7fcf411edd5343738da345b24b24735b2e943444d3dd",
+          "sourceText": "Tidal volume is the amount of air you move in a normal breath. Most people's tidal volume is only 500ml, about 8% of total lung capacity. [Diaphragmatic breathing training can measurably increase tidal volume](https://doi.org/10.11124/JBISRIR-2017-003848), meaning you move more air with each breath.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "722ff0471aad72898fc0d2aa3fb80c201268097d99449faecc8889cf33eab2bc",
+          "sourceText": "Tidal Volume Improvement",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "e1261f3bb4185fe1861edf332ec15f9e4d5cea02c02461de1f1a451cc6343a05",
+          "sourceText": "The diaphragm is a muscle, and like any muscle, it gets stronger with training. Studies show that inspiratory muscle training increases respiratory muscle strength over weeks of consistent practice, directly improving your ability to take deep breaths.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "710105dfd586c1d81023d098bfd574e6b551c3f16b07ed68971e9fa447a5b8d8",
+          "sourceText": "Inspiratory Muscle Strengthening",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "04b587029c6b9a7491f7033d71849f90c284aed7b23ea8b0f05c8eaa4c7f3304",
+          "sourceText": "The lower lobes of your lungs have the richest blood supply and the most efficient gas exchange. Shallow breathing bypasses these areas. Deep diaphragmatic breathing directs air to the lower lobes, improving oxygen uptake and CO2 elimination per breath.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "4bb0665d4239d60060ddc1358eb401956b9741010882bbe61b3fc975b57e09f1",
+          "sourceText": "Improved Gas Exchange",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "df7f3ce31fd2eecb049680ea91d6fbc9013d73e3673bfad2189ba276d8b50302",
+          "sourceText": "Residual volume is the air trapped in your lungs after a full exhale. With poor breathing habits, this stale air accumulates. Breathing exercises with emphasis on complete exhales (like pursed-lip breathing) help reduce residual volume, making more room for fresh, oxygen-rich air.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "24cc78bf7ccf3e345381ad07366bd2ff791a81c97bc1d016ebaf0e627cd981a3",
+          "sourceText": "Residual Volume Reduction",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "c8b789afc0e8077174cb9fd661ee053c4317a557059c911ebb11784fd24a7b69",
+          "sourceText": "Your diaphragm is a dome-shaped muscle that sits below your lungs. When it contracts, it pulls downward, creating a vacuum that draws air deep into your lungs. Weak diaphragmatic engagement means shallow breaths that only fill the upper lungs. Training your diaphragm through belly breathing exercises increases tidal volume (the amount of air per breath), improves gas exchange efficiency, and strengthens the muscles that power every breath you take.",
+          "status": "route-catalog-exact"
+        },
+        "solution.heading": {
+          "sourceHash": "4032a445211509b2b04a87f1aa949cc14109d6f11a030e4e0cd01476e197507a",
+          "sourceText": "Diaphragmatic Breathing: Rebuild Your Respiratory Foundation",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "ad9037c33fa6fae57a6bad8e430b35d8b681b347c7e63496c321f9c3ed5d808b",
+          "sourceText": "The 4-second inhale, 6-second exhale pattern is ideal for lung capacity training because the slow inhale encourages full diaphragmatic expansion (not just the quick sips of air from chest breathing), while the extended exhale trains your expiratory muscles and improves your ability to completely empty your lungs, which is just as important as filling them. Better emptying means more room for fresh air on the next breath.",
+          "status": "route-catalog-normalized"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "08bd4cf51099e8b8f14b2a1adc2f01f25ecf0b4294814214072cc7a351ac992e",
+          "sourceText": "Practice diaphragmatic breathing for 5-10 minutes twice daily. Breathe in slowly through your nose for 4 seconds, expanding your belly, then exhale for 6 seconds. Gradually increase these durations each week. Combine with pursed-lip exhales and regular walking. Most people see measurable improvement within 2-4 weeks of consistent practice.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "d6c2f2063a04822310d8a7809c15f10c88c80608c5f052f4631e8816912bedc5",
+          "sourceText": "How can I increase my lung capacity?",
+          "status": "route-catalog-exact"
+        }
+      }
+    }
+  },
+  "schemaVersion": 1,
+  "sourceRoute": "/for/lung-capacity"
+}

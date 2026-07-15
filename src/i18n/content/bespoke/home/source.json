@@ -1,0 +1,473 @@
+{
+  "site": {
+    "baseUrl": "https://deepbreathingexercises.com"
+  },
+  "metadata": {
+    "twitter": {
+      "creator": "@abiassi_",
+      "title": "Free Breathing Visualizer: Calm Anxiety in 60 Seconds",
+      "description": "Calm anxiety in 60 seconds with our free breathing visualizer. Box breathing, 4-7-8, physiological sigh. Try now—no signup."
+    },
+    "openGraph": {
+      "type": "website",
+      "image": {
+        "width": 1200,
+        "height": 630
+      },
+      "title": "Free Breathing Visualizer: Calm Anxiety in 60 Seconds",
+      "description": "Calm anxiety in 60 seconds with our free breathing visualizer. Box breathing, 4-7-8, physiological sigh. No signup required.",
+      "siteName": "Deep Breathing Exercises",
+      "imageAlt": "Interactive breathing orb expanding against a coral gradient"
+    },
+    "title": "Free Breathing Visualizer: Calm Anxiety in 60 Seconds",
+    "description": "Calm anxiety in 60 seconds with our free breathing visualizer. Box breathing, 4-7-8, physiological sigh—all free, no signup. Used by 10,000+ people. Try now."
+  },
+  "schema": {
+    "website": {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Deep Breathing Exercises",
+      "url": "https://deepbreathingexercises.com",
+      "description": "Guided breathing visualizer with adjustable pacing. Visual pacing that helps your body downshift, anytime, anywhere."
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage"
+    }
+  },
+  "hero": {
+    "startButton": {
+      "color": "#e11d48",
+      "shadow": "0 12px 36px #e11d4860"
+    },
+    "headingLevel": 1,
+    "label": "Free Breathing Visualizer",
+    "title": "Deep Breathing Exercises",
+    "subtitle": "Visual pacing that helps your body downshift. Calm on demand, anytime, anywhere.",
+    "actions": {
+      "startSession": "Start session",
+      "pickMode": "Pick a mode"
+    }
+  },
+  "sections": {
+    "modePicker": {
+      "featured": {
+        "box": {
+          "slug": "box",
+          "displaySlug": "/box",
+          "mode": "Box Breathing",
+          "color": "#e11d48",
+          "pillLabel": "Box Breathing",
+          "cardTitle": "Box Breathing",
+          "description": "Focus & Stress Reduction (4-4-4-4)",
+          "startCta": "Start session →",
+          "href": "/breathe/box"
+        },
+        "fourSevenEight": {
+          "slug": "4-7-8",
+          "displaySlug": "/4-7-8",
+          "mode": "4-7-8 Relax",
+          "color": "#4f46e5",
+          "pillLabel": "4-7-8 Relax",
+          "cardTitle": "4-7-8 Relax",
+          "description": "Sleep & Deep Relaxation (4-7-8)",
+          "startCta": "Start session →",
+          "href": "/breathe/4-7-8"
+        },
+        "coherent": {
+          "slug": "coherent",
+          "displaySlug": "/coherent",
+          "mode": "Coherent Breathing",
+          "color": "#059669",
+          "pillLabel": "Coherent Breathing",
+          "cardTitle": "Coherent Breathing",
+          "description": "Heart Rate Variability (5.5-5.5)",
+          "startCta": "Start session →",
+          "href": "/breathe/coherent"
+        },
+        "physiologicalSigh": {
+          "slug": "physiological-sigh",
+          "displaySlug": "/physiological-sigh",
+          "mode": "Physiological Sigh",
+          "color": "#0ea5e9",
+          "pillLabel": "Physiological Sigh",
+          "cardTitle": "Physiological Sigh",
+          "description": "Panic Reset (Double Inhale)",
+          "startCta": "Start session →",
+          "href": "/breathe/physiological-sigh"
+        },
+        "wimHof": {
+          "slug": "wim-hof",
+          "displaySlug": "/wim-hof",
+          "mode": "Wim Hof Breathing",
+          "color": "#f97316",
+          "pillLabel": "Wim Hof Breathing",
+          "cardTitle": "Wim Hof Breathing",
+          "description": "Energy & Resilience (30 breaths × 3 rounds)",
+          "startCta": "Start session →",
+          "href": "/breathe/wim-hof"
+        }
+      },
+      "title": "Pick a mode",
+      "allTechniquesLabel": "All techniques →"
+    },
+    "infoCards": {
+      "howLong": {
+        "timerLinks": {
+          "oneMin": "1 min",
+          "twoMin": "2 min",
+          "fiveMin": "5 min"
+        },
+        "eyebrow": "How long?",
+        "title": "Match the moment",
+        "items": {
+          "quickReset": "• Quick reset: 1–2 minutes (4–8 cycles).",
+          "deeperShift": "• Deeper shift: 3–5 minutes.",
+          "training": "• Training effect (HRV focus): 5–10 minutes at an easy, equal in/out pace."
+        }
+      },
+      "dialItIn": {
+        "eyebrow": "Dial it in",
+        "title": "Smooth over deep",
+        "body": "Slide between 3–8 s per phase. Start small. Smooth > deep. If holds feel edgy, skip them and keep an even inhale/exhale."
+      },
+      "practiceCues": {
+        "eyebrow": "Practice cues",
+        "title": "What to notice",
+        "items": {
+          "nasal": "• Breathe nasal and quiet; feel low belly rise.",
+          "exhale": "• Exhale ends softly. Don't squeeze empty.",
+          "shoulders": "• Shoulders stay down; jaw unclenched."
+        }
+      },
+      "bestMoments": {
+        "eyebrow": "Best moments",
+        "title": "Slide in anytime",
+        "items": {
+          "beforeEvents": "Before events",
+          "postConflict": "Post-conflict",
+          "bedtime": "Bedtime wind-down",
+          "inFlight": "In-flight",
+          "holidayStress": "Holiday stress"
+        }
+      },
+      "whyItWorks": {
+        "eyebrow": "Why it works",
+        "title": "Calmer in minutes",
+        "items": {
+          "hrv": "• Slow breathing can increase vagally mediated HRV during sessions.",
+          "exhale": "• Exhale-emphasized or 0.1 Hz pacing often feels calmer within minutes.",
+          "consistency": "• Consistency matters; short daily sessions beat rare long ones."
+        }
+      }
+    },
+    "nextLinks": {
+      "links": {
+        "boxApp": "Box breathing app",
+        "twoMinute": "2 minute reset",
+        "running": "Breathing for running",
+        "tummo": "Tummo Breathing"
+      },
+      "title": "Where to go next",
+      "intro": "Start with the page that matches your situation: a quick reset, an app-style timer, a running recovery guide, or an advanced meditation technique."
+    },
+    "precision": {
+      "title": "Precision breathwork.",
+      "body": "Press Start and follow the orb through inhale, pause, exhale, pause. The cadence is adjustable. Sessions are short. Effects are tangible."
+    },
+    "editorialCards": {
+      "calmByDesign": {
+        "eyebrow": "Calm by design",
+        "body": "Slow, even breathing often increases vagally mediated HRV and lowers perceived stress during practice."
+      },
+      "builtForRealLife": {
+        "eyebrow": "Built for real life",
+        "body": "Short sets (1–5 min) before meetings, between tasks, or at lights-out."
+      },
+      "yourPace": {
+        "eyebrow": "Your pace",
+        "body": "Choose 3–8 seconds per phase. Smaller, quieter breaths beat \"big\" breaths."
+      }
+    },
+    "quickAnchor": {
+      "eyebrow": "Quick anchor",
+      "title": "One minute to steady",
+      "intro": "Sit tall. Shoulders soft. Tongue to the roof of your mouth. Inhale gently through the nose; exhale quietly through the nose or pursed lips.",
+      "bullets": {
+        "easy": "• Keep it easy. If dizzy, shorten phases or pause.",
+        "nasal": "• Breathe nasal and quiet; feel the low belly rise.",
+        "exhale": "• Exhale ends softly. Don't squeeze empty."
+      },
+      "closing": "Dial in a smooth cadence, then keep breathing. Small, steady breaths trump deep gasps."
+    },
+    "faq": {
+      "title": "FAQ",
+      "items": {
+        "howLong": {
+          "question": "How long should I practice?",
+          "answer": "Start with 60–120 s. If it's still easy and helpful, extend to 3–5 min. For HRV-focused training, 5–10 min most days."
+        },
+        "bestTime": {
+          "question": "When's the best time?",
+          "answer": "Before a meeting or workout, between blocks of deep work, or before bed. Use physiological sighs for urgent spikes of stress."
+        },
+        "timing": {
+          "question": "Can I change the timing?",
+          "answer": "Yes. That's the point. Use 3–8 s per phase. If holds feel uncomfortable, remove them and keep an even inhale/exhale."
+        },
+        "lightHeaded": {
+          "question": "What if I feel light-headed?",
+          "answer": "You're likely over-breathing. Make breaths smaller and quieter, shorten phases, or pause and breathe normally."
+        },
+        "medical": {
+          "question": "Is this medical treatment?",
+          "answer": "No. It's a self-regulation tool. If you have a cardiopulmonary condition, are pregnant, or have fainting history, avoid long holds and keep everything gentle."
+        }
+      }
+    }
+  },
+  "footer": {
+    "credits": {
+      "abiassi": "Abiassi",
+      "darkmatter": "Darkmatter AI Labs",
+      "prefix": "Created by"
+    },
+    "languagesLink": "Available in Español, Português, Français, Deutsch, 日本語 →",
+    "safetyNote": "Stop if dizzy, tingly, or chest-tight. Resume later with shorter, easier breaths. Skip prolonged holds during pregnancy or if advised by your clinician.",
+    "columns": {
+      "techniques": {
+        "title": "Techniques",
+        "links": {
+          "box": {
+            "label": "Box Breathing",
+            "href": "/breathe/box"
+          },
+          "four-seven-eight": {
+            "label": "4-7-8 Relax",
+            "href": "/breathe/4-7-8"
+          },
+          "coherent": {
+            "label": "Coherent Breathing",
+            "href": "/breathe/coherent"
+          },
+          "physiological-sigh": {
+            "label": "Physiological Sigh",
+            "href": "/breathe/physiological-sigh"
+          },
+          "wim-hof": {
+            "label": "Wim Hof Breathing",
+            "href": "/breathe/wim-hof"
+          },
+          "pursed-lip": {
+            "label": "Pursed Lip Breathing",
+            "href": "/breathe/pursed-lip"
+          },
+          "nadi-shodhana": {
+            "label": "Nadi Shodhana",
+            "href": "/breathe/nadi-shodhana"
+          },
+          "ujjayi": {
+            "label": "Ujjayi Breathing",
+            "href": "/breathe/ujjayi"
+          },
+          "belly": {
+            "label": "Belly Breathing",
+            "href": "/breathe/belly"
+          },
+          "buteyko": {
+            "label": "Buteyko Breathing",
+            "href": "/breathe/buteyko"
+          },
+          "tummo": {
+            "label": "Tummo Breathing",
+            "href": "/breathe/tummo"
+          },
+          "breath-of-fire": {
+            "label": "Breath of Fire",
+            "href": "/breathe/breath-of-fire"
+          }
+        }
+      },
+      "guides": {
+        "title": "Guides",
+        "links": {
+          "public-speaking": {
+            "label": "Public Speaking",
+            "href": "/for/public-speaking"
+          },
+          "high-blood-pressure": {
+            "label": "Lower Your Blood Pressure Naturally with 4-7-8 Breathing",
+            "href": "/for/high-blood-pressure"
+          },
+          "sleep": {
+            "label": "4-7-8 Breathing for Sleep",
+            "href": "/for/sleep"
+          },
+          "running": {
+            "label": "Recover Faster and Stop Side Stitches",
+            "href": "/for/running"
+          },
+          "anxiety": {
+            "label": "How to Stop Anxiety in 60 Seconds with Box Breathing",
+            "href": "/for/anxiety"
+          },
+          "panic-attacks": {
+            "label": "How to Stop a Panic Attack in 30 Seconds",
+            "href": "/for/panic-attacks"
+          },
+          "focus": {
+            "label": "How to Boost Focus by 40% with Coherent Breathing",
+            "href": "/for/focus"
+          },
+          "meditation": {
+            "label": "Can't Meditate? Start with Coherent Breathing",
+            "href": "/for/meditation"
+          },
+          "athletes": {
+            "label": "Faster Recovery Between Sets: Physiological Sigh for Athletes",
+            "href": "/for/athletes"
+          },
+          "pregnancy": {
+            "label": "Breathing for Pregnancy Anxiety and Labor Preparation",
+            "href": "/for/pregnancy"
+          },
+          "holiday-stress": {
+            "label": "How to Handle Holiday Stress in 30 Seconds",
+            "href": "/for/holiday-stress"
+          },
+          "travel-anxiety": {
+            "label": "Travel Anxiety",
+            "href": "/for/travel-anxiety"
+          },
+          "huberman": {
+            "label": "Huberman Lab Breathing Protocols",
+            "href": "/for/huberman"
+          },
+          "stress": {
+            "label": "Stress",
+            "href": "/for/stress"
+          },
+          "kids": {
+            "label": "Kids",
+            "href": "/for/kids"
+          },
+          "pranayama": {
+            "label": "Pranayama Breathing: The Complete Guide to Yogic Breathing",
+            "href": "/for/pranayama"
+          },
+          "singing": {
+            "label": "Singing",
+            "href": "/for/singing"
+          },
+          "lung-capacity": {
+            "label": "Lung Capacity Exercises",
+            "href": "/for/lung-capacity"
+          }
+        }
+      },
+      "timers": {
+        "title": "Timers",
+        "links": {
+          "one-minute": {
+            "label": "1 Minute",
+            "href": "/1-minute-breathing-exercise"
+          },
+          "two-minute": {
+            "label": "2 Minutes",
+            "href": "/2-minute-breathing-exercise"
+          },
+          "five-minute": {
+            "label": "5 Minutes",
+            "href": "/5-minute-breathing-exercise"
+          },
+          "four-seven-eight-timer": {
+            "label": "4-7-8 Timer",
+            "href": "/4-7-8-breathing-timer"
+          },
+          "coherent-app": {
+            "label": "Coherent Breathing App",
+            "href": "/coherent-breathing-app"
+          },
+          "holiday": {
+            "label": "Holiday Exercises",
+            "href": "/holiday-breathing-exercises"
+          },
+          "box-app": {
+            "label": "Box Breathing App",
+            "href": "/box-breathing-app"
+          }
+        }
+      },
+      "info": {
+        "title": "Info",
+        "links": {
+          "all-techniques": {
+            "label": "All Techniques",
+            "href": "/breathe"
+          },
+          "all-guides": {
+            "label": "All Guides",
+            "href": "/for"
+          },
+          "app": {
+            "label": "App",
+            "href": "/breathing-app"
+          },
+          "visualizer": {
+            "label": "Breathing Visualizer",
+            "href": "/breathing-visualizer"
+          },
+          "embed": {
+            "label": "Embed Widget",
+            "href": "/embed"
+          },
+          "about": {
+            "label": "About",
+            "href": "/about"
+          },
+          "about-abi": {
+            "label": "About Abi",
+            "href": "/about/abi"
+          },
+          "editorial-policy": {
+            "label": "Editorial Policy",
+            "href": "/about/editorial-policy"
+          },
+          "privacy": {
+            "label": "Privacy",
+            "href": "/privacy"
+          },
+          "my-stats": {
+            "label": "My Stats",
+            "href": "/stats"
+          }
+        }
+      },
+      "situations": {
+        "title": "Situations",
+        "links": {
+          "before-surgery": {
+            "label": "Before Surgery",
+            "href": "/breathing-exercises-before-surgery"
+          },
+          "panic-attack": {
+            "label": "Panic Attack",
+            "href": "/physiological-sigh-panic-attack"
+          },
+          "labor": {
+            "label": "Labor & Birth",
+            "href": "/breathing-exercises-for-labor"
+          },
+          "insomnia": {
+            "label": "Insomnia",
+            "href": "/4-7-8-breathing-for-insomnia"
+          },
+          "before-presentation": {
+            "label": "Before a Presentation",
+            "href": "/box-breathing-before-presentation"
+          }
+        }
+      }
+    }
+  }
+}

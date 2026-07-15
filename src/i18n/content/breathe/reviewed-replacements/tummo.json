@@ -1,0 +1,15 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "ウィム・ホフはツンモの伝統から影響を受けたことを認めています。どちらの技法も、身体に生理的変化をもたらすための過換気スタイルの呼吸を使用します。主な違いは、ツンモが内なる火の視覚化を含むことと、チベット仏教内の霊的実践の一部であることです。ウィム・ホフは時間を取った呼吸保持と意図的な寒冷曝露を加えています。ツンモの呼吸パターンはウィム・ホフのパワーブレスに比べて遅く、意図的です。ツンモは内省的な実践、ウィム・ホフはパフォーマンスのプロトコルです。",
+      "locale": "ja-jp",
+      "reason": "The approved value omits the source's 30–40 breaths-per-round timing detail.",
+      "replacement": "ウィム・ホフはツンモの伝統から影響を受けたことを認めています。どちらの技法も、身体に生理的変化をもたらすための過換気スタイルの呼吸を使用します。主な違いは、ツンモが内なる火の視覚化を含み、伝統的にチベット仏教の精神的実践の一部であるのに対し、ウィム・ホフは時間を決めた息止めと意図的な寒冷曝露を含む構造化されたプロトコルを加えている点です。ツンモの呼吸パターンは、1ラウンドあたり30〜40回の速い呼吸を行うウィム・ホフのパワーブレスよりも遅く、意図的です。ツンモは内省的な実践であり、ウィム・ホフはパフォーマンスのプロトコルです。",
+      "reviewedSourceHash": "53dfaaee6159fd8c0a4c836130d00671fa48cd69f3a6c34fa7681c7d8a6f3967",
+      "sourcePath": "body[4].content",
+      "sourceText": "Wim Hof has acknowledged drawing from the tummo tradition. Both techniques use hyperventilation-style breathing to create physiological changes. Key differences: tummo includes visualization of inner fire and is traditionally part of a spiritual practice within Tibetan Buddhism; Wim Hof adds a structured protocol with timed breath retention holds and deliberate cold exposure. The tummo breathing pattern is slower and more intentional than Wim Hof power breathing, which uses 30–40 rapid breaths per round. Tummo is a contemplative practice; Wim Hof is a performance protocol."
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/breathe/tummo"
+}

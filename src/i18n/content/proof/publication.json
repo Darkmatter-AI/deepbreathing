@@ -1,0 +1,82 @@
+{
+  "locales": [
+    "de-de",
+    "es-es",
+    "fr-fr",
+    "ja-jp",
+    "pt-br"
+  ],
+  "routes": {
+    "/breathe/buteyko": {
+      "locales": {
+        "de-de": {
+          "expectedMessages": 99,
+          "missingMessages": 0,
+          "presentMessages": 99,
+          "publishable": true
+        },
+        "es-es": {
+          "expectedMessages": 99,
+          "missingMessages": 0,
+          "presentMessages": 99,
+          "publishable": true
+        },
+        "fr-fr": {
+          "expectedMessages": 99,
+          "missingMessages": 0,
+          "presentMessages": 99,
+          "publishable": true
+        },
+        "ja-jp": {
+          "expectedMessages": 99,
+          "missingMessages": 0,
+          "presentMessages": 99,
+          "publishable": true
+        },
+        "pt-br": {
+          "expectedMessages": 99,
+          "missingMessages": 0,
+          "presentMessages": 99,
+          "publishable": true
+        }
+      },
+      "routeId": "breathe.buteyko"
+    },
+    "/for/anxiety": {
+      "locales": {
+        "de-de": {
+          "expectedMessages": 91,
+          "missingMessages": 0,
+          "presentMessages": 91,
+          "publishable": true
+        },
+        "es-es": {
+          "expectedMessages": 91,
+          "missingMessages": 0,
+          "presentMessages": 91,
+          "publishable": true
+        },
+        "fr-fr": {
+          "expectedMessages": 91,
+          "missingMessages": 0,
+          "presentMessages": 91,
+          "publishable": true
+        },
+        "ja-jp": {
+          "expectedMessages": 91,
+          "missingMessages": 0,
+          "presentMessages": 91,
+          "publishable": true
+        },
+        "pt-br": {
+          "expectedMessages": 91,
+          "missingMessages": 0,
+          "presentMessages": 91,
+          "publishable": true
+        }
+      },
+      "routeId": "for.anxiety"
+    }
+  },
+  "schemaVersion": 1
+}

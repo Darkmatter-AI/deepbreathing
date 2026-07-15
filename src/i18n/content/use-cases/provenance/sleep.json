@@ -1,0 +1,3131 @@
+{
+  "locales": {
+    "de-de": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "1a97b917fd6867b3617fd65c0d13e146b0473307ff270ce925a69aa3d7d003d5",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "8c4bfa58c381507e78137f588fe873689c43d6d43ea6410d0283bf79d2db740d",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "7c4312464db54ee766e7ebdb52d452b5d528ee1cdd29dbf0af68ca20114884f5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-high-blood-pressure-title": {
+          "sourceHash": "518144fefb7098ab2ea457c58ea5d3dacbe4e73a98483ebc692d35d93220c691",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-holiday-title": {
+          "sourceHash": "6e6700ebb79acdc6c454084c36419a96e782fd0a47695a71703340fbecade8f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-huberman-title": {
+          "sourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-kids-title": {
+          "sourceHash": "7696120540243ebfa54ae8f92ba7cda3ef477c27e9f3802c0d1b304ccf979643",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-public-speaking-title": {
+          "sourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-4-7-8-timer": {
+          "sourceHash": "555a21b155ab6f695e3d171983318ca957da451e1559229d633d1b28c2edd88c",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "fd08812e968808d1cb68cde13a61a04246029ff67868781328307bdc75dd7e1c",
+          "sourceText": "Most people feel noticeably calmer after just 2-3 cycles (about 1 minute). Falling asleep varies, some drift off within 5 minutes, others may take longer initially. [The technique becomes more effective with regular practice](https://doi.org/10.3390/jcm8020193) as your body learns to associate the pattern with sleep.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[0].question": {
+          "sourceHash": "23151b71d2f2cf7d5beb93343582f4120d2073ec2ea67cc4cb5d632435974b73",
+          "sourceText": "How long does it take to fall asleep with 4-7-8 breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "6dc8468a7156da891a08b1b2e2596d19213ebee62703f0e0e2295faa124e01ba",
+          "sourceText": "4-7-8 breathing works well for middle-of-the-night waking too. Don't look at your phone or clock, just lie comfortably and do 3-4 cycles in the dark. The key is not stimulating your brain with light or time-checking.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "ee9a2e7e7ed34c27f705cbf95c820e85f490a42a9058b98208797368e872020f",
+          "sourceText": "What if I wake up in the middle of the night?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "891320c6b49885cd8b139a717b31d141c763b707df7d8d38bfbdad23ab3cd104",
+          "sourceText": "Yes, but use these precautions: enable night mode or reduce blue light, dim your screen to minimum, and put the phone away after 3-4 cycles. Alternatively, learn the technique by feel so you can practice with eyes closed. The long exhale is what matters most, the visual is just a training aid.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].question": {
+          "sourceHash": "acb8ea872e09c11f7483a07ece55393d8fe89bcd004a0cecb0b6656fbb32b04d",
+          "sourceText": "Can I use the phone visualizer if blue light affects my sleep?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "07d5b60c3e0b355ec679678d9a720227377a54861a8f5f82c439baee2b624503",
+          "sourceText": "Absolutely. The ratio matters more than the exact numbers. Try 2-3.5-4 or 3-5-6 to maintain the same proportions. The extended exhale is the most important part, keep that twice as long as your inhale, and shorten or skip the hold as needed.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "fa0e64ebafbe1285d3204a0ed3cbc572ad340027f28802bf4d2277d9ec11100d",
+          "sourceText": "I can't hold my breath for 7 seconds, is this technique still helpful?",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "e5db03797c23b06b25bc2bbe1c8d3fe49c14b64794de874962d28cc15e93d820",
+          "sourceText": "Breathing techniques are complementary to (not a replacement for) medical treatment. If you're taking sleep medication, continue as prescribed and talk to your doctor about your goals. Many people find that consistent breathing practice allows them to reduce sleep aids over time, but this should always be done with medical guidance.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "10b5260bc921142a8815ebcf1b68a8cd222efa74ee09d256a2dc80c7be80f5c5",
+          "sourceText": "Should I use this instead of sleep medication?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "cd8a5a708c5d4e308aba53b144ac8b6ba54d3e1f809dbfe15130894ee49e44cd",
+          "sourceText": "You're exhausted but your mind won't stop. Racing thoughts, tomorrow's to-do list, that awkward thing you said five years ago. Your brain replays it all the moment your head hits the pillow. The 4-7-8 breathing technique forces a rhythm that's physically incompatible with stress, helping you transition from 'tired but wired' to actually asleep.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "dfc81de4576cadbc0bd3594c7e93f337c2b7de059ebdc4fcc5456cc674b172bc",
+          "sourceText": "Dr. Weil's 'natural tranquilizer' for your nervous system",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "sourceText": "4-7-8 Breathing for Sleep",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "b365b6d44b1dfd68009ca31844f21afadc965996c8ef052c8ba8e78fecea0a83",
+          "sourceText": "Dim the lights. Put your phone face-down or use night mode if using the visualizer. Lie on your back or in your preferred sleep position.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "b182d0de235df8ac57fc78962beabeeaabf69fdbc3aed293e56a14b3f35f5cd2",
+          "sourceText": "Set up your environment",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "ed046125c88791b97a27946ad0af656e6feb594675df6cb5459613d2a449fec2",
+          "sourceText": "5-10 minutes before intended sleep",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "18798084850372bd3b27c2b4882c0c31fa674dbaea8539208f7bfb41fafc1889",
+          "sourceText": "Place the tip of your tongue against the ridge of tissue behind your upper front teeth. Keep it there throughout the practice. This is traditional to the technique.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "9da529857ab04a124a6cd63e8bcbce4b4f6785e161342935ca4408e54af6a20b",
+          "sourceText": "Position your tongue",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "6da62358df43786df4bb1e8ee4942f22923b82348f575dfdc2349d7ee48678e4",
+          "sourceText": "Throughout",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "b4afaf03f4005f1cdabf3e6cf209da3a99247862c757a307ed0175abb1636e6b",
+          "sourceText": "Exhale completely through your mouth, making a whooshing sound. Empty your lungs fully to reset.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "c20ca447c829e5169237fcca3de2fd7c1aa3ceefdbd261bc5632867337ce7fc1",
+          "sourceText": "Start with a full exhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "ab71b8d9a57b88652f4bf7894020c3dc26cad7f74dedc3b9333bc8b4c621aaf8",
+          "sourceText": "Start position",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "3588a1138ac35b590d927d59ceafc179079552eeed5897dfd6ec4c9f0ef151e7",
+          "sourceText": "Close your mouth. Inhale quietly and gently through your nose for a count of 4. Let your belly rise.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "f320adbe95302f1b17c6fdad23ce40670528de85abb9b3a7647531643a809031",
+          "sourceText": "Inhale for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "885fde2c4151a7d90b2ba4bcdcd0cb1cd3fc1457baa2a4158ad2a5b0b6f52f5a",
+          "sourceText": "Hold your breath easily for a count of 7. Stay relaxed. Don't tense up.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "30215bd73cabf25e99388593c39f5ea119673892b8cb04ca17231b98c965bcbc",
+          "sourceText": "Hold for 7 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "0dff3e2b44bcf0861359945c7404341a3730d54a192c82105cec4cdc31ea2411",
+          "sourceText": "7 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "f9034dde3caacdad69583e9cb6dfc207ca83aae0a938201754ac5a6404b2ead2",
+          "sourceText": "Exhale slowly through your mouth with a soft whooshing sound for a count of 8. Let go completely.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "1b490af1be9a4dd46e56364696e7b3ea23111a9235e98ed6a91d11cfa65aeb8d",
+          "sourceText": "Exhale for 8 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "8290a639dc569f2be3d3319de567cca25e237e934a811fef173f421bdd61a2bf",
+          "sourceText": "8 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].instruction": {
+          "sourceHash": "d9f417d3f399368ea2a7be7508e60d23e42f54f18c14ec9a252c61e4582ff241",
+          "sourceText": "Complete 3-4 breath cycles. Don't exceed 4 cycles when you're starting out. Put away any devices and let yourself drift off.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].name": {
+          "sourceHash": "a5d721ea7cf39824495d74150e90e4ccde783b9339cc602d621a36135491cdc2",
+          "sourceText": "Repeat for 3-4 cycles",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].timing": {
+          "sourceHash": "23eac072a3258a9d0151431899b6d790b5d37d4a0abce2e22fc046b8b6df7d01",
+          "sourceText": "About 2 minutes total",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "ff4b31c410d1c0f5f648dd21580dab72913ac9928f471ec1a5e41e05904bf27e",
+          "sourceText": "Use dark mode on your device if following the visualizer before bed",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "70dff5e73fd0ffc2cd8ab0bdcb2126e422fbe3faa602b52bf5d606dd02d77bc8",
+          "sourceText": "Don't force the breath, keep it gentle and quiet",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "e6793d750e251d2f16d989b9e697e73fba666a7561b6405de8e354d48d2a9a79",
+          "sourceText": "If the hold feels uncomfortable, shorten it to 4-5 counts while keeping the 8-count exhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "db10d933706c9391e197b76d720855516bd367f034162f9d4d26c5d35b6f6450",
+          "sourceText": "The technique works better with consistent practice. Try it every night for a week",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "38e4d56f3e3ca1ab69d449a7eaf2a8fe052d7f2acf0ad44f3a57da04810d4cd3",
+          "sourceText": "4-7-8 breathing for sleep: Dr. Weil's 'natural tranquilizer' helps you fall asleep in 2 minutes. Stop racing thoughts. Free sleep visualizer, no download.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "2cf586bd3611e49d4fd2c7f413aacb687f8aa1d56454023016cfe7faa5372056",
+          "sourceText": "4-7-8 breathing for sleep: Dr. Weil's 'natural tranquilizer' helps you fall asleep in minutes. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "27364cef55b3fbe11467d8c2639691fbf8b394f85df9a45f96054f5e19c063ce",
+          "sourceText": "4-7-8 Breathing for Sleep — Fall Asleep in 2 Minutes",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "18d75e2eceb845f85f278e0748b784d7f46d24a5efb86ab8b0461605f6bf90b8",
+          "sourceText": "4-7-8 Breathing for Sleep — Fall Asleep in 2 Minutes (Free) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "35f51fbc7eb9cf2839fac472c65687ea382c258f30290c7b7440e691da55a0b7",
+          "sourceText": "4-7-8 breathing for sleep: Dr. Weil's 'natural tranquilizer'. Fall asleep in minutes without medication. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "ed8c4498037fcd45f35fa9d3ce7a17b53c29e3884cd38991d7c31828e2595e59",
+          "sourceText": "4-7-8 Breathing for Sleep — Fall Asleep Fast",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "f9fb71fbdf7558c081ae798b4a4911ab49d8b61853607ffbfd665212a4df5a92",
+          "sourceText": "Your body is exhausted but your sympathetic nervous system hasn't gotten the memo. Screen light, late caffeine, work stress, or just the habit of mental rumination can keep your fight-or-flight system active even as you lie in bed. This creates a frustrating loop: you're tired so you try harder to sleep, which creates more stress, which keeps you awake.",
+          "status": "route-catalog-exact"
+        },
+        "problem.heading": {
+          "sourceHash": "0dfc0aa2d46009791915322dacb8fef5afb9dd0adb9fe774a30bf8003c3fdda8",
+          "sourceText": "The 'Tired But Wired' Trap",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "f3e1c15ef26876a695ec40c2dc2262a48fc9e0d2b0a319a67529a45dc0c336aa",
+          "sourceText": "Racing thoughts that won't quiet down",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "ff3d2578d45373f89f59346448a5f031333685d3a11c104f32afb8ce5a956d76",
+          "sourceText": "Physical restlessness despite exhaustion",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "7a78a33edfdd86d8756b43730bf3c569f01d94b34cbc4dc3b58de55f811407c3",
+          "sourceText": "Lying awake replaying the day or worrying about tomorrow",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "f3b0a63c70cc025d9235b8dc09db42205e15a2c31b012176be46b0e764455222",
+          "sourceText": "Feeling alert the moment you try to sleep",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "6896642d1e2a1c87ad8970ae724304bcc812a1c9e1fcb23a13d1e664143f4e44",
+          "sourceText": "Waking in the middle of the night unable to return to sleep",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "6e46241da95f7ff57291f27ea3d9f04ab41bf330438c0902f9fe7b97f40c8a44",
+          "sourceText": "Overview of evidence-based breathing techniques for improving sleep onset and quality.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "9c3e00a4fe95a77bce483a8fa103d13cb0b4c519ffd60bb90994db9e75c07731",
+          "sourceText": "Best Breathing Exercises for Sleep",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "d6f8812246568b7cc50b09dcd482adb3bf26ed9f812c28d6492a52571939fc84",
+          "sourceText": "How relaxation techniques activate the parasympathetic nervous system to enable sleep.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "bc79a44747454c7707a892f37b95930ad440a5c1d37b1d1e428fcf78bfd93d93",
+          "sourceText": "Relaxation Exercises to Help Fall Asleep",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "1d7792c759d3d68cfce640c25e8564de39798c249ddb5c6ce380cc390baf52be",
+          "sourceText": "Dr. Weil describes the 4-7-8 technique as a 'natural tranquilizer for the nervous system.'",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "4667c02428b0844f077b8ba4261d284f6cddd6be89cddfa28df2053e7dee6e6b",
+          "sourceText": "Video: Dr. Weil's Breathing Exercises: 4-7-8 Breath",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "0c47283b4d6d0e1367c5c8b3149b7e69d92cc88bdc18e57823a954eb4abaf611",
+          "sourceText": "Medical overview of the 4-7-8 technique's benefits for sleep and stress reduction.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "2b226e7e7c528435cb748c486cf00c4b790724df05c39c74b53fec4e29fa6e4f",
+          "sourceText": "4-7-8 Breathing Method For Sleep and Relaxation",
+          "status": "route-catalog-exact"
+        },
+        "references[4].summary": {
+          "sourceHash": "3950eb2cf12bc953a5ae3f60db5583294f4ef686795e4b18584a3a7082b0845a",
+          "sourceText": "Research review on breathing techniques as complementary treatment for insomnia.",
+          "status": "route-catalog-exact"
+        },
+        "references[4].title": {
+          "sourceHash": "d78e3a5c2455cd24b2640ce78bed930be637cfdd9fdd12bf8175b141d0a4c1e1",
+          "sourceText": "Self-Regulation of Breathing as an Adjunctive Treatment of Insomnia",
+          "status": "route-catalog-exact"
+        },
+        "relatedGuides[0].teaser": {
+          "sourceHash": "4dfb5e0d32b981ee1d7a2b4260233d2c28c3f1d74242bd0a54f293643f356561",
+          "sourceText": "A detailed guide on using 4-7-8 breathing to fall asleep faster, stay asleep, and break the cycle of chronic insomnia",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedGuides[0].title": {
+          "sourceHash": "2968b43d5ce063e7950bcf536fe634d9daf65d7da4e0157e7b2717a1c7114b6a",
+          "sourceText": "4-7-8 Breathing for Insomnia",
+          "status": "global-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "a8f34ed5397ca32dc8e8a747014b394bfebd681eef08ee2c5d38dba790295b95",
+          "sourceText": "Practice with the full-screen 4-7-8 Breathing visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "adf8ff330858828470d070904fa3ebe8cc38c9f6f82d2f98a117f5c286081793",
+          "sourceText": "Stressed at work? Try Box Breathing for high-pressure situations during the day",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "207e17e3d33541c9ca4401088563fbe239332b2bd2e3d5e63f25290cbc31b479",
+          "sourceText": "High blood pressure? See how the same 4-7-8 technique can help manage hypertension",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "f56bba57cdff743c5c7da3b5832487b2064566f69bd14402dda53e6e0c64ec47",
+          "sourceText": "Can't sleep after stressful holiday gatherings? Use this bedtime wind-down routine",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[3].teaser": {
+          "sourceHash": "9ff099ea06e12b81e60a020f0745aaba5cd8e321650ef52bbc45b85f20af1a76",
+          "sourceText": "Kids having trouble sleeping? Bedtime breathing routines for children",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[4].teaser": {
+          "sourceHash": "c8b9f1eed2ba5037fd658ee383ecd73f9ab23ac0489a1cd46d50e52439f1e7ad",
+          "sourceText": "Huberman's sleep-specific breathing stack for winding down and falling asleep faster.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "460a6d071011b4bd432c94b0a50c5d4509f5bedaf8a1558bceb2756369c7525f",
+          "sourceText": "The Sleep Science",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "ab68a3e476a2a1fd20c2593fe0a044d96b372fcc4633f7601cee676c548c08d9",
+          "sourceText": "When you exhale, your heart rate naturally slows. The extended 8-count exhale in this technique maximizes this effect, physically slowing your heart and signaling your brain that it's time to rest.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "c377e3613a87374e9a59b27db6d1d0a5afe0ba28e4a55cbdea96e2b9c4d95940",
+          "sourceText": "Respiratory Sinus Arrhythmia",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "bde2283de48b2ea0e673eeefe3151c75b79848b042a9fa9e14c4d45e320cdadf",
+          "sourceText": "Long exhales stimulate the vagus nerve, triggering the parasympathetic nervous system. This is the opposite of the stress response. It lowers heart rate, relaxes muscles, and prepares your body for sleep.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "43e10b744feece4a0b7ca5f77fc5d0f640770e6f3b5c229ede1793226bd900fc",
+          "sourceText": "Parasympathetic Activation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "9cbd0049f4be33f99ece2cd67c4ad3794e229ec07d8e75a72a133650682e1464",
+          "sourceText": "Following a breath count or visual guide occupies your prefrontal cortex, the part of your brain responsible for planning and worry. This 'crowds out' anxious thoughts and breaks the rumination loop.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "7c30011e39d932078443910bed3560b5a33d262cfee3b9186f64d02efaf99df4",
+          "sourceText": "Focus Displacement",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "74e76b197990b1d453f7ac0bcbf2454e060762cda511f70710e909afa94f03ee",
+          "sourceText": "The breath hold builds tolerance to carbon dioxide, which reduces the breathlessness and air hunger that can come with anxiety. Over time, this makes your baseline breathing slower and calmer.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "91b2a2e8ad38583faca2713e76f189cd9294b279675882466e453e04ebd3c9ca",
+          "sourceText": "CO₂ Tolerance Training",
+          "status": "route-catalog-normalized"
+        },
+        "solution.content": {
+          "sourceHash": "e1f106d934e92d9b92389c66b5c507a492dec4f60581e6b0bdc599c7e0568bf3",
+          "sourceText": "The 4-7-8 technique creates a breathing rhythm that physically forces your nervous system to downshift. By extending your exhale to twice the length of your inhale, you activate the parasympathetic nervous system, the 'rest and digest' mode that enables sleep.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "a9c4730bf0692c71d3a085c33132c5d85f2933e9b7a52fc49cc451f0ee4540e9",
+          "sourceText": "4-7-8: A Rhythm Your Body Can't Fight",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "048986eea720ec95bc9e2caac8bbab5911058a1b2143fa00ae5b0c68c5a2c516",
+          "sourceText": "Following the visual breathing guide serves double duty: the long exhale slows your heart rate while tracking the visual animation occupies your mind. This 'focus displacement' interrupts the internal monologue that keeps you awake. You're essentially giving your brain a simple, calming task instead of letting it ruminate.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "7699ce406f1dfd04351178dffa6ece3f7cde47d48b7d6ed67d4796152a74d0a7",
+          "sourceText": "The best breathing exercise for sleep is the 4-7-8 technique: inhale for 4 seconds, hold for 7 seconds, exhale for 8 seconds. Dr. Andrew Weil calls it a 'natural tranquilizer for the nervous system.' Do 3-4 cycles before bed. The extended exhale activates your parasympathetic nervous system and slows your heart rate. Most people feel noticeably calmer within 1-2 minutes and fall asleep faster with regular practice.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "ee032c9e0e3ca33bf145b1eca31f422ec1644d0a211daf8fb81be2ee48777600",
+          "sourceText": "What are the best breathing exercises for sleep?",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "es-es": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "1a97b917fd6867b3617fd65c0d13e146b0473307ff270ce925a69aa3d7d003d5",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "8c4bfa58c381507e78137f588fe873689c43d6d43ea6410d0283bf79d2db740d",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "7c4312464db54ee766e7ebdb52d452b5d528ee1cdd29dbf0af68ca20114884f5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-high-blood-pressure-title": {
+          "sourceHash": "518144fefb7098ab2ea457c58ea5d3dacbe4e73a98483ebc692d35d93220c691",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-holiday-title": {
+          "sourceHash": "6e6700ebb79acdc6c454084c36419a96e782fd0a47695a71703340fbecade8f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-huberman-title": {
+          "sourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-kids-title": {
+          "sourceHash": "7696120540243ebfa54ae8f92ba7cda3ef477c27e9f3802c0d1b304ccf979643",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-public-speaking-title": {
+          "sourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-4-7-8-timer": {
+          "sourceHash": "555a21b155ab6f695e3d171983318ca957da451e1559229d633d1b28c2edd88c",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "fd08812e968808d1cb68cde13a61a04246029ff67868781328307bdc75dd7e1c",
+          "sourceText": "Most people feel noticeably calmer after just 2-3 cycles (about 1 minute). Falling asleep varies, some drift off within 5 minutes, others may take longer initially. [The technique becomes more effective with regular practice](https://doi.org/10.3390/jcm8020193) as your body learns to associate the pattern with sleep.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[0].question": {
+          "sourceHash": "23151b71d2f2cf7d5beb93343582f4120d2073ec2ea67cc4cb5d632435974b73",
+          "sourceText": "How long does it take to fall asleep with 4-7-8 breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "6dc8468a7156da891a08b1b2e2596d19213ebee62703f0e0e2295faa124e01ba",
+          "sourceText": "4-7-8 breathing works well for middle-of-the-night waking too. Don't look at your phone or clock, just lie comfortably and do 3-4 cycles in the dark. The key is not stimulating your brain with light or time-checking.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "ee9a2e7e7ed34c27f705cbf95c820e85f490a42a9058b98208797368e872020f",
+          "sourceText": "What if I wake up in the middle of the night?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "891320c6b49885cd8b139a717b31d141c763b707df7d8d38bfbdad23ab3cd104",
+          "sourceText": "Yes, but use these precautions: enable night mode or reduce blue light, dim your screen to minimum, and put the phone away after 3-4 cycles. Alternatively, learn the technique by feel so you can practice with eyes closed. The long exhale is what matters most, the visual is just a training aid.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].question": {
+          "sourceHash": "acb8ea872e09c11f7483a07ece55393d8fe89bcd004a0cecb0b6656fbb32b04d",
+          "sourceText": "Can I use the phone visualizer if blue light affects my sleep?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "07d5b60c3e0b355ec679678d9a720227377a54861a8f5f82c439baee2b624503",
+          "sourceText": "Absolutely. The ratio matters more than the exact numbers. Try 2-3.5-4 or 3-5-6 to maintain the same proportions. The extended exhale is the most important part, keep that twice as long as your inhale, and shorten or skip the hold as needed.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "fa0e64ebafbe1285d3204a0ed3cbc572ad340027f28802bf4d2277d9ec11100d",
+          "sourceText": "I can't hold my breath for 7 seconds, is this technique still helpful?",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "e5db03797c23b06b25bc2bbe1c8d3fe49c14b64794de874962d28cc15e93d820",
+          "sourceText": "Breathing techniques are complementary to (not a replacement for) medical treatment. If you're taking sleep medication, continue as prescribed and talk to your doctor about your goals. Many people find that consistent breathing practice allows them to reduce sleep aids over time, but this should always be done with medical guidance.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "10b5260bc921142a8815ebcf1b68a8cd222efa74ee09d256a2dc80c7be80f5c5",
+          "sourceText": "Should I use this instead of sleep medication?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "cd8a5a708c5d4e308aba53b144ac8b6ba54d3e1f809dbfe15130894ee49e44cd",
+          "sourceText": "You're exhausted but your mind won't stop. Racing thoughts, tomorrow's to-do list, that awkward thing you said five years ago. Your brain replays it all the moment your head hits the pillow. The 4-7-8 breathing technique forces a rhythm that's physically incompatible with stress, helping you transition from 'tired but wired' to actually asleep.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "dfc81de4576cadbc0bd3594c7e93f337c2b7de059ebdc4fcc5456cc674b172bc",
+          "sourceText": "Dr. Weil's 'natural tranquilizer' for your nervous system",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "sourceText": "4-7-8 Breathing for Sleep",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "b365b6d44b1dfd68009ca31844f21afadc965996c8ef052c8ba8e78fecea0a83",
+          "sourceText": "Dim the lights. Put your phone face-down or use night mode if using the visualizer. Lie on your back or in your preferred sleep position.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "b182d0de235df8ac57fc78962beabeeaabf69fdbc3aed293e56a14b3f35f5cd2",
+          "sourceText": "Set up your environment",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "ed046125c88791b97a27946ad0af656e6feb594675df6cb5459613d2a449fec2",
+          "sourceText": "5-10 minutes before intended sleep",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "18798084850372bd3b27c2b4882c0c31fa674dbaea8539208f7bfb41fafc1889",
+          "sourceText": "Place the tip of your tongue against the ridge of tissue behind your upper front teeth. Keep it there throughout the practice. This is traditional to the technique.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "9da529857ab04a124a6cd63e8bcbce4b4f6785e161342935ca4408e54af6a20b",
+          "sourceText": "Position your tongue",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "6da62358df43786df4bb1e8ee4942f22923b82348f575dfdc2349d7ee48678e4",
+          "sourceText": "Throughout",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "b4afaf03f4005f1cdabf3e6cf209da3a99247862c757a307ed0175abb1636e6b",
+          "sourceText": "Exhale completely through your mouth, making a whooshing sound. Empty your lungs fully to reset.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "c20ca447c829e5169237fcca3de2fd7c1aa3ceefdbd261bc5632867337ce7fc1",
+          "sourceText": "Start with a full exhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "ab71b8d9a57b88652f4bf7894020c3dc26cad7f74dedc3b9333bc8b4c621aaf8",
+          "sourceText": "Start position",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "3588a1138ac35b590d927d59ceafc179079552eeed5897dfd6ec4c9f0ef151e7",
+          "sourceText": "Close your mouth. Inhale quietly and gently through your nose for a count of 4. Let your belly rise.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "f320adbe95302f1b17c6fdad23ce40670528de85abb9b3a7647531643a809031",
+          "sourceText": "Inhale for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "885fde2c4151a7d90b2ba4bcdcd0cb1cd3fc1457baa2a4158ad2a5b0b6f52f5a",
+          "sourceText": "Hold your breath easily for a count of 7. Stay relaxed. Don't tense up.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "30215bd73cabf25e99388593c39f5ea119673892b8cb04ca17231b98c965bcbc",
+          "sourceText": "Hold for 7 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "0dff3e2b44bcf0861359945c7404341a3730d54a192c82105cec4cdc31ea2411",
+          "sourceText": "7 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "f9034dde3caacdad69583e9cb6dfc207ca83aae0a938201754ac5a6404b2ead2",
+          "sourceText": "Exhale slowly through your mouth with a soft whooshing sound for a count of 8. Let go completely.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "1b490af1be9a4dd46e56364696e7b3ea23111a9235e98ed6a91d11cfa65aeb8d",
+          "sourceText": "Exhale for 8 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "8290a639dc569f2be3d3319de567cca25e237e934a811fef173f421bdd61a2bf",
+          "sourceText": "8 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].instruction": {
+          "sourceHash": "d9f417d3f399368ea2a7be7508e60d23e42f54f18c14ec9a252c61e4582ff241",
+          "sourceText": "Complete 3-4 breath cycles. Don't exceed 4 cycles when you're starting out. Put away any devices and let yourself drift off.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].name": {
+          "sourceHash": "a5d721ea7cf39824495d74150e90e4ccde783b9339cc602d621a36135491cdc2",
+          "sourceText": "Repeat for 3-4 cycles",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].timing": {
+          "sourceHash": "23eac072a3258a9d0151431899b6d790b5d37d4a0abce2e22fc046b8b6df7d01",
+          "sourceText": "About 2 minutes total",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "ff4b31c410d1c0f5f648dd21580dab72913ac9928f471ec1a5e41e05904bf27e",
+          "sourceText": "Use dark mode on your device if following the visualizer before bed",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "70dff5e73fd0ffc2cd8ab0bdcb2126e422fbe3faa602b52bf5d606dd02d77bc8",
+          "sourceText": "Don't force the breath, keep it gentle and quiet",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "e6793d750e251d2f16d989b9e697e73fba666a7561b6405de8e354d48d2a9a79",
+          "sourceText": "If the hold feels uncomfortable, shorten it to 4-5 counts while keeping the 8-count exhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "db10d933706c9391e197b76d720855516bd367f034162f9d4d26c5d35b6f6450",
+          "sourceText": "The technique works better with consistent practice. Try it every night for a week",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "38e4d56f3e3ca1ab69d449a7eaf2a8fe052d7f2acf0ad44f3a57da04810d4cd3",
+          "sourceText": "4-7-8 breathing for sleep: Dr. Weil's 'natural tranquilizer' helps you fall asleep in 2 minutes. Stop racing thoughts. Free sleep visualizer, no download.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "2cf586bd3611e49d4fd2c7f413aacb687f8aa1d56454023016cfe7faa5372056",
+          "sourceText": "4-7-8 breathing for sleep: Dr. Weil's 'natural tranquilizer' helps you fall asleep in minutes. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "27364cef55b3fbe11467d8c2639691fbf8b394f85df9a45f96054f5e19c063ce",
+          "sourceText": "4-7-8 Breathing for Sleep — Fall Asleep in 2 Minutes",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "18d75e2eceb845f85f278e0748b784d7f46d24a5efb86ab8b0461605f6bf90b8",
+          "sourceText": "4-7-8 Breathing for Sleep — Fall Asleep in 2 Minutes (Free) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "35f51fbc7eb9cf2839fac472c65687ea382c258f30290c7b7440e691da55a0b7",
+          "sourceText": "4-7-8 breathing for sleep: Dr. Weil's 'natural tranquilizer'. Fall asleep in minutes without medication. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "ed8c4498037fcd45f35fa9d3ce7a17b53c29e3884cd38991d7c31828e2595e59",
+          "sourceText": "4-7-8 Breathing for Sleep — Fall Asleep Fast",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "f9fb71fbdf7558c081ae798b4a4911ab49d8b61853607ffbfd665212a4df5a92",
+          "sourceText": "Your body is exhausted but your sympathetic nervous system hasn't gotten the memo. Screen light, late caffeine, work stress, or just the habit of mental rumination can keep your fight-or-flight system active even as you lie in bed. This creates a frustrating loop: you're tired so you try harder to sleep, which creates more stress, which keeps you awake.",
+          "status": "route-catalog-exact"
+        },
+        "problem.heading": {
+          "sourceHash": "0dfc0aa2d46009791915322dacb8fef5afb9dd0adb9fe774a30bf8003c3fdda8",
+          "sourceText": "The 'Tired But Wired' Trap",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "f3e1c15ef26876a695ec40c2dc2262a48fc9e0d2b0a319a67529a45dc0c336aa",
+          "sourceText": "Racing thoughts that won't quiet down",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "ff3d2578d45373f89f59346448a5f031333685d3a11c104f32afb8ce5a956d76",
+          "sourceText": "Physical restlessness despite exhaustion",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "7a78a33edfdd86d8756b43730bf3c569f01d94b34cbc4dc3b58de55f811407c3",
+          "sourceText": "Lying awake replaying the day or worrying about tomorrow",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "f3b0a63c70cc025d9235b8dc09db42205e15a2c31b012176be46b0e764455222",
+          "sourceText": "Feeling alert the moment you try to sleep",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "6896642d1e2a1c87ad8970ae724304bcc812a1c9e1fcb23a13d1e664143f4e44",
+          "sourceText": "Waking in the middle of the night unable to return to sleep",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "6e46241da95f7ff57291f27ea3d9f04ab41bf330438c0902f9fe7b97f40c8a44",
+          "sourceText": "Overview of evidence-based breathing techniques for improving sleep onset and quality.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "9c3e00a4fe95a77bce483a8fa103d13cb0b4c519ffd60bb90994db9e75c07731",
+          "sourceText": "Best Breathing Exercises for Sleep",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "d6f8812246568b7cc50b09dcd482adb3bf26ed9f812c28d6492a52571939fc84",
+          "sourceText": "How relaxation techniques activate the parasympathetic nervous system to enable sleep.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "bc79a44747454c7707a892f37b95930ad440a5c1d37b1d1e428fcf78bfd93d93",
+          "sourceText": "Relaxation Exercises to Help Fall Asleep",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "1d7792c759d3d68cfce640c25e8564de39798c249ddb5c6ce380cc390baf52be",
+          "sourceText": "Dr. Weil describes the 4-7-8 technique as a 'natural tranquilizer for the nervous system.'",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "4667c02428b0844f077b8ba4261d284f6cddd6be89cddfa28df2053e7dee6e6b",
+          "sourceText": "Video: Dr. Weil's Breathing Exercises: 4-7-8 Breath",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "0c47283b4d6d0e1367c5c8b3149b7e69d92cc88bdc18e57823a954eb4abaf611",
+          "sourceText": "Medical overview of the 4-7-8 technique's benefits for sleep and stress reduction.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "2b226e7e7c528435cb748c486cf00c4b790724df05c39c74b53fec4e29fa6e4f",
+          "sourceText": "4-7-8 Breathing Method For Sleep and Relaxation",
+          "status": "route-catalog-exact"
+        },
+        "references[4].summary": {
+          "sourceHash": "3950eb2cf12bc953a5ae3f60db5583294f4ef686795e4b18584a3a7082b0845a",
+          "sourceText": "Research review on breathing techniques as complementary treatment for insomnia.",
+          "status": "route-catalog-exact"
+        },
+        "references[4].title": {
+          "sourceHash": "d78e3a5c2455cd24b2640ce78bed930be637cfdd9fdd12bf8175b141d0a4c1e1",
+          "sourceText": "Self-Regulation of Breathing as an Adjunctive Treatment of Insomnia",
+          "status": "route-catalog-exact"
+        },
+        "relatedGuides[0].teaser": {
+          "sourceHash": "4dfb5e0d32b981ee1d7a2b4260233d2c28c3f1d74242bd0a54f293643f356561",
+          "sourceText": "A detailed guide on using 4-7-8 breathing to fall asleep faster, stay asleep, and break the cycle of chronic insomnia",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedGuides[0].title": {
+          "sourceHash": "2968b43d5ce063e7950bcf536fe634d9daf65d7da4e0157e7b2717a1c7114b6a",
+          "sourceText": "4-7-8 Breathing for Insomnia",
+          "status": "global-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "a8f34ed5397ca32dc8e8a747014b394bfebd681eef08ee2c5d38dba790295b95",
+          "sourceText": "Practice with the full-screen 4-7-8 Breathing visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "adf8ff330858828470d070904fa3ebe8cc38c9f6f82d2f98a117f5c286081793",
+          "sourceText": "Stressed at work? Try Box Breathing for high-pressure situations during the day",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "207e17e3d33541c9ca4401088563fbe239332b2bd2e3d5e63f25290cbc31b479",
+          "sourceText": "High blood pressure? See how the same 4-7-8 technique can help manage hypertension",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "f56bba57cdff743c5c7da3b5832487b2064566f69bd14402dda53e6e0c64ec47",
+          "sourceText": "Can't sleep after stressful holiday gatherings? Use this bedtime wind-down routine",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[3].teaser": {
+          "sourceHash": "9ff099ea06e12b81e60a020f0745aaba5cd8e321650ef52bbc45b85f20af1a76",
+          "sourceText": "Kids having trouble sleeping? Bedtime breathing routines for children",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[4].teaser": {
+          "sourceHash": "c8b9f1eed2ba5037fd658ee383ecd73f9ab23ac0489a1cd46d50e52439f1e7ad",
+          "sourceText": "Huberman's sleep-specific breathing stack for winding down and falling asleep faster.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "460a6d071011b4bd432c94b0a50c5d4509f5bedaf8a1558bceb2756369c7525f",
+          "sourceText": "The Sleep Science",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "ab68a3e476a2a1fd20c2593fe0a044d96b372fcc4633f7601cee676c548c08d9",
+          "sourceText": "When you exhale, your heart rate naturally slows. The extended 8-count exhale in this technique maximizes this effect, physically slowing your heart and signaling your brain that it's time to rest.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "c377e3613a87374e9a59b27db6d1d0a5afe0ba28e4a55cbdea96e2b9c4d95940",
+          "sourceText": "Respiratory Sinus Arrhythmia",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "bde2283de48b2ea0e673eeefe3151c75b79848b042a9fa9e14c4d45e320cdadf",
+          "sourceText": "Long exhales stimulate the vagus nerve, triggering the parasympathetic nervous system. This is the opposite of the stress response. It lowers heart rate, relaxes muscles, and prepares your body for sleep.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "43e10b744feece4a0b7ca5f77fc5d0f640770e6f3b5c229ede1793226bd900fc",
+          "sourceText": "Parasympathetic Activation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "9cbd0049f4be33f99ece2cd67c4ad3794e229ec07d8e75a72a133650682e1464",
+          "sourceText": "Following a breath count or visual guide occupies your prefrontal cortex, the part of your brain responsible for planning and worry. This 'crowds out' anxious thoughts and breaks the rumination loop.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "7c30011e39d932078443910bed3560b5a33d262cfee3b9186f64d02efaf99df4",
+          "sourceText": "Focus Displacement",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "74e76b197990b1d453f7ac0bcbf2454e060762cda511f70710e909afa94f03ee",
+          "sourceText": "The breath hold builds tolerance to carbon dioxide, which reduces the breathlessness and air hunger that can come with anxiety. Over time, this makes your baseline breathing slower and calmer.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "91b2a2e8ad38583faca2713e76f189cd9294b279675882466e453e04ebd3c9ca",
+          "sourceText": "CO₂ Tolerance Training",
+          "status": "route-catalog-normalized"
+        },
+        "solution.content": {
+          "sourceHash": "e1f106d934e92d9b92389c66b5c507a492dec4f60581e6b0bdc599c7e0568bf3",
+          "sourceText": "The 4-7-8 technique creates a breathing rhythm that physically forces your nervous system to downshift. By extending your exhale to twice the length of your inhale, you activate the parasympathetic nervous system, the 'rest and digest' mode that enables sleep.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "a9c4730bf0692c71d3a085c33132c5d85f2933e9b7a52fc49cc451f0ee4540e9",
+          "sourceText": "4-7-8: A Rhythm Your Body Can't Fight",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "048986eea720ec95bc9e2caac8bbab5911058a1b2143fa00ae5b0c68c5a2c516",
+          "sourceText": "Following the visual breathing guide serves double duty: the long exhale slows your heart rate while tracking the visual animation occupies your mind. This 'focus displacement' interrupts the internal monologue that keeps you awake. You're essentially giving your brain a simple, calming task instead of letting it ruminate.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "7699ce406f1dfd04351178dffa6ece3f7cde47d48b7d6ed67d4796152a74d0a7",
+          "sourceText": "The best breathing exercise for sleep is the 4-7-8 technique: inhale for 4 seconds, hold for 7 seconds, exhale for 8 seconds. Dr. Andrew Weil calls it a 'natural tranquilizer for the nervous system.' Do 3-4 cycles before bed. The extended exhale activates your parasympathetic nervous system and slows your heart rate. Most people feel noticeably calmer within 1-2 minutes and fall asleep faster with regular practice.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "ee032c9e0e3ca33bf145b1eca31f422ec1644d0a211daf8fb81be2ee48777600",
+          "sourceText": "What are the best breathing exercises for sleep?",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "fr-fr": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "1a97b917fd6867b3617fd65c0d13e146b0473307ff270ce925a69aa3d7d003d5",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "8c4bfa58c381507e78137f588fe873689c43d6d43ea6410d0283bf79d2db740d",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "7c4312464db54ee766e7ebdb52d452b5d528ee1cdd29dbf0af68ca20114884f5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-high-blood-pressure-title": {
+          "sourceHash": "518144fefb7098ab2ea457c58ea5d3dacbe4e73a98483ebc692d35d93220c691",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-holiday-title": {
+          "sourceHash": "6e6700ebb79acdc6c454084c36419a96e782fd0a47695a71703340fbecade8f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-huberman-title": {
+          "sourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-kids-title": {
+          "sourceHash": "7696120540243ebfa54ae8f92ba7cda3ef477c27e9f3802c0d1b304ccf979643",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-public-speaking-title": {
+          "sourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-4-7-8-timer": {
+          "sourceHash": "555a21b155ab6f695e3d171983318ca957da451e1559229d633d1b28c2edd88c",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "fd08812e968808d1cb68cde13a61a04246029ff67868781328307bdc75dd7e1c",
+          "sourceText": "Most people feel noticeably calmer after just 2-3 cycles (about 1 minute). Falling asleep varies, some drift off within 5 minutes, others may take longer initially. [The technique becomes more effective with regular practice](https://doi.org/10.3390/jcm8020193) as your body learns to associate the pattern with sleep.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[0].question": {
+          "sourceHash": "23151b71d2f2cf7d5beb93343582f4120d2073ec2ea67cc4cb5d632435974b73",
+          "sourceText": "How long does it take to fall asleep with 4-7-8 breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "6dc8468a7156da891a08b1b2e2596d19213ebee62703f0e0e2295faa124e01ba",
+          "sourceText": "4-7-8 breathing works well for middle-of-the-night waking too. Don't look at your phone or clock, just lie comfortably and do 3-4 cycles in the dark. The key is not stimulating your brain with light or time-checking.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "ee9a2e7e7ed34c27f705cbf95c820e85f490a42a9058b98208797368e872020f",
+          "sourceText": "What if I wake up in the middle of the night?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "891320c6b49885cd8b139a717b31d141c763b707df7d8d38bfbdad23ab3cd104",
+          "sourceText": "Yes, but use these precautions: enable night mode or reduce blue light, dim your screen to minimum, and put the phone away after 3-4 cycles. Alternatively, learn the technique by feel so you can practice with eyes closed. The long exhale is what matters most, the visual is just a training aid.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].question": {
+          "sourceHash": "acb8ea872e09c11f7483a07ece55393d8fe89bcd004a0cecb0b6656fbb32b04d",
+          "sourceText": "Can I use the phone visualizer if blue light affects my sleep?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "07d5b60c3e0b355ec679678d9a720227377a54861a8f5f82c439baee2b624503",
+          "sourceText": "Absolutely. The ratio matters more than the exact numbers. Try 2-3.5-4 or 3-5-6 to maintain the same proportions. The extended exhale is the most important part, keep that twice as long as your inhale, and shorten or skip the hold as needed.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "fa0e64ebafbe1285d3204a0ed3cbc572ad340027f28802bf4d2277d9ec11100d",
+          "sourceText": "I can't hold my breath for 7 seconds, is this technique still helpful?",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "e5db03797c23b06b25bc2bbe1c8d3fe49c14b64794de874962d28cc15e93d820",
+          "sourceText": "Breathing techniques are complementary to (not a replacement for) medical treatment. If you're taking sleep medication, continue as prescribed and talk to your doctor about your goals. Many people find that consistent breathing practice allows them to reduce sleep aids over time, but this should always be done with medical guidance.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "10b5260bc921142a8815ebcf1b68a8cd222efa74ee09d256a2dc80c7be80f5c5",
+          "sourceText": "Should I use this instead of sleep medication?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "cd8a5a708c5d4e308aba53b144ac8b6ba54d3e1f809dbfe15130894ee49e44cd",
+          "sourceText": "You're exhausted but your mind won't stop. Racing thoughts, tomorrow's to-do list, that awkward thing you said five years ago. Your brain replays it all the moment your head hits the pillow. The 4-7-8 breathing technique forces a rhythm that's physically incompatible with stress, helping you transition from 'tired but wired' to actually asleep.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "dfc81de4576cadbc0bd3594c7e93f337c2b7de059ebdc4fcc5456cc674b172bc",
+          "sourceText": "Dr. Weil's 'natural tranquilizer' for your nervous system",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "sourceText": "4-7-8 Breathing for Sleep",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "b365b6d44b1dfd68009ca31844f21afadc965996c8ef052c8ba8e78fecea0a83",
+          "sourceText": "Dim the lights. Put your phone face-down or use night mode if using the visualizer. Lie on your back or in your preferred sleep position.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "b182d0de235df8ac57fc78962beabeeaabf69fdbc3aed293e56a14b3f35f5cd2",
+          "sourceText": "Set up your environment",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "ed046125c88791b97a27946ad0af656e6feb594675df6cb5459613d2a449fec2",
+          "sourceText": "5-10 minutes before intended sleep",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "18798084850372bd3b27c2b4882c0c31fa674dbaea8539208f7bfb41fafc1889",
+          "sourceText": "Place the tip of your tongue against the ridge of tissue behind your upper front teeth. Keep it there throughout the practice. This is traditional to the technique.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "9da529857ab04a124a6cd63e8bcbce4b4f6785e161342935ca4408e54af6a20b",
+          "sourceText": "Position your tongue",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "6da62358df43786df4bb1e8ee4942f22923b82348f575dfdc2349d7ee48678e4",
+          "sourceText": "Throughout",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "b4afaf03f4005f1cdabf3e6cf209da3a99247862c757a307ed0175abb1636e6b",
+          "sourceText": "Exhale completely through your mouth, making a whooshing sound. Empty your lungs fully to reset.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "c20ca447c829e5169237fcca3de2fd7c1aa3ceefdbd261bc5632867337ce7fc1",
+          "sourceText": "Start with a full exhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "ab71b8d9a57b88652f4bf7894020c3dc26cad7f74dedc3b9333bc8b4c621aaf8",
+          "sourceText": "Start position",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "3588a1138ac35b590d927d59ceafc179079552eeed5897dfd6ec4c9f0ef151e7",
+          "sourceText": "Close your mouth. Inhale quietly and gently through your nose for a count of 4. Let your belly rise.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "f320adbe95302f1b17c6fdad23ce40670528de85abb9b3a7647531643a809031",
+          "sourceText": "Inhale for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "885fde2c4151a7d90b2ba4bcdcd0cb1cd3fc1457baa2a4158ad2a5b0b6f52f5a",
+          "sourceText": "Hold your breath easily for a count of 7. Stay relaxed. Don't tense up.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "30215bd73cabf25e99388593c39f5ea119673892b8cb04ca17231b98c965bcbc",
+          "sourceText": "Hold for 7 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "0dff3e2b44bcf0861359945c7404341a3730d54a192c82105cec4cdc31ea2411",
+          "sourceText": "7 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "f9034dde3caacdad69583e9cb6dfc207ca83aae0a938201754ac5a6404b2ead2",
+          "sourceText": "Exhale slowly through your mouth with a soft whooshing sound for a count of 8. Let go completely.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "1b490af1be9a4dd46e56364696e7b3ea23111a9235e98ed6a91d11cfa65aeb8d",
+          "sourceText": "Exhale for 8 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "8290a639dc569f2be3d3319de567cca25e237e934a811fef173f421bdd61a2bf",
+          "sourceText": "8 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].instruction": {
+          "sourceHash": "d9f417d3f399368ea2a7be7508e60d23e42f54f18c14ec9a252c61e4582ff241",
+          "sourceText": "Complete 3-4 breath cycles. Don't exceed 4 cycles when you're starting out. Put away any devices and let yourself drift off.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].name": {
+          "sourceHash": "a5d721ea7cf39824495d74150e90e4ccde783b9339cc602d621a36135491cdc2",
+          "sourceText": "Repeat for 3-4 cycles",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].timing": {
+          "sourceHash": "23eac072a3258a9d0151431899b6d790b5d37d4a0abce2e22fc046b8b6df7d01",
+          "sourceText": "About 2 minutes total",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "ff4b31c410d1c0f5f648dd21580dab72913ac9928f471ec1a5e41e05904bf27e",
+          "sourceText": "Use dark mode on your device if following the visualizer before bed",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "70dff5e73fd0ffc2cd8ab0bdcb2126e422fbe3faa602b52bf5d606dd02d77bc8",
+          "sourceText": "Don't force the breath, keep it gentle and quiet",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "e6793d750e251d2f16d989b9e697e73fba666a7561b6405de8e354d48d2a9a79",
+          "sourceText": "If the hold feels uncomfortable, shorten it to 4-5 counts while keeping the 8-count exhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "db10d933706c9391e197b76d720855516bd367f034162f9d4d26c5d35b6f6450",
+          "sourceText": "The technique works better with consistent practice. Try it every night for a week",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "38e4d56f3e3ca1ab69d449a7eaf2a8fe052d7f2acf0ad44f3a57da04810d4cd3",
+          "sourceText": "4-7-8 breathing for sleep: Dr. Weil's 'natural tranquilizer' helps you fall asleep in 2 minutes. Stop racing thoughts. Free sleep visualizer, no download.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "2cf586bd3611e49d4fd2c7f413aacb687f8aa1d56454023016cfe7faa5372056",
+          "sourceText": "4-7-8 breathing for sleep: Dr. Weil's 'natural tranquilizer' helps you fall asleep in minutes. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "27364cef55b3fbe11467d8c2639691fbf8b394f85df9a45f96054f5e19c063ce",
+          "sourceText": "4-7-8 Breathing for Sleep — Fall Asleep in 2 Minutes",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "18d75e2eceb845f85f278e0748b784d7f46d24a5efb86ab8b0461605f6bf90b8",
+          "sourceText": "4-7-8 Breathing for Sleep — Fall Asleep in 2 Minutes (Free) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "35f51fbc7eb9cf2839fac472c65687ea382c258f30290c7b7440e691da55a0b7",
+          "sourceText": "4-7-8 breathing for sleep: Dr. Weil's 'natural tranquilizer'. Fall asleep in minutes without medication. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "ed8c4498037fcd45f35fa9d3ce7a17b53c29e3884cd38991d7c31828e2595e59",
+          "sourceText": "4-7-8 Breathing for Sleep — Fall Asleep Fast",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "f9fb71fbdf7558c081ae798b4a4911ab49d8b61853607ffbfd665212a4df5a92",
+          "sourceText": "Your body is exhausted but your sympathetic nervous system hasn't gotten the memo. Screen light, late caffeine, work stress, or just the habit of mental rumination can keep your fight-or-flight system active even as you lie in bed. This creates a frustrating loop: you're tired so you try harder to sleep, which creates more stress, which keeps you awake.",
+          "status": "route-catalog-exact"
+        },
+        "problem.heading": {
+          "sourceHash": "0dfc0aa2d46009791915322dacb8fef5afb9dd0adb9fe774a30bf8003c3fdda8",
+          "sourceText": "The 'Tired But Wired' Trap",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "f3e1c15ef26876a695ec40c2dc2262a48fc9e0d2b0a319a67529a45dc0c336aa",
+          "sourceText": "Racing thoughts that won't quiet down",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "ff3d2578d45373f89f59346448a5f031333685d3a11c104f32afb8ce5a956d76",
+          "sourceText": "Physical restlessness despite exhaustion",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "7a78a33edfdd86d8756b43730bf3c569f01d94b34cbc4dc3b58de55f811407c3",
+          "sourceText": "Lying awake replaying the day or worrying about tomorrow",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "f3b0a63c70cc025d9235b8dc09db42205e15a2c31b012176be46b0e764455222",
+          "sourceText": "Feeling alert the moment you try to sleep",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "6896642d1e2a1c87ad8970ae724304bcc812a1c9e1fcb23a13d1e664143f4e44",
+          "sourceText": "Waking in the middle of the night unable to return to sleep",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "6e46241da95f7ff57291f27ea3d9f04ab41bf330438c0902f9fe7b97f40c8a44",
+          "sourceText": "Overview of evidence-based breathing techniques for improving sleep onset and quality.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "9c3e00a4fe95a77bce483a8fa103d13cb0b4c519ffd60bb90994db9e75c07731",
+          "sourceText": "Best Breathing Exercises for Sleep",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "d6f8812246568b7cc50b09dcd482adb3bf26ed9f812c28d6492a52571939fc84",
+          "sourceText": "How relaxation techniques activate the parasympathetic nervous system to enable sleep.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "bc79a44747454c7707a892f37b95930ad440a5c1d37b1d1e428fcf78bfd93d93",
+          "sourceText": "Relaxation Exercises to Help Fall Asleep",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "1d7792c759d3d68cfce640c25e8564de39798c249ddb5c6ce380cc390baf52be",
+          "sourceText": "Dr. Weil describes the 4-7-8 technique as a 'natural tranquilizer for the nervous system.'",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "4667c02428b0844f077b8ba4261d284f6cddd6be89cddfa28df2053e7dee6e6b",
+          "sourceText": "Video: Dr. Weil's Breathing Exercises: 4-7-8 Breath",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "0c47283b4d6d0e1367c5c8b3149b7e69d92cc88bdc18e57823a954eb4abaf611",
+          "sourceText": "Medical overview of the 4-7-8 technique's benefits for sleep and stress reduction.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "2b226e7e7c528435cb748c486cf00c4b790724df05c39c74b53fec4e29fa6e4f",
+          "sourceText": "4-7-8 Breathing Method For Sleep and Relaxation",
+          "status": "route-catalog-exact"
+        },
+        "references[4].summary": {
+          "sourceHash": "3950eb2cf12bc953a5ae3f60db5583294f4ef686795e4b18584a3a7082b0845a",
+          "sourceText": "Research review on breathing techniques as complementary treatment for insomnia.",
+          "status": "route-catalog-exact"
+        },
+        "references[4].title": {
+          "sourceHash": "d78e3a5c2455cd24b2640ce78bed930be637cfdd9fdd12bf8175b141d0a4c1e1",
+          "sourceText": "Self-Regulation of Breathing as an Adjunctive Treatment of Insomnia",
+          "status": "route-catalog-exact"
+        },
+        "relatedGuides[0].teaser": {
+          "sourceHash": "4dfb5e0d32b981ee1d7a2b4260233d2c28c3f1d74242bd0a54f293643f356561",
+          "sourceText": "A detailed guide on using 4-7-8 breathing to fall asleep faster, stay asleep, and break the cycle of chronic insomnia",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedGuides[0].title": {
+          "sourceHash": "2968b43d5ce063e7950bcf536fe634d9daf65d7da4e0157e7b2717a1c7114b6a",
+          "sourceText": "4-7-8 Breathing for Insomnia",
+          "status": "global-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "a8f34ed5397ca32dc8e8a747014b394bfebd681eef08ee2c5d38dba790295b95",
+          "sourceText": "Practice with the full-screen 4-7-8 Breathing visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "adf8ff330858828470d070904fa3ebe8cc38c9f6f82d2f98a117f5c286081793",
+          "sourceText": "Stressed at work? Try Box Breathing for high-pressure situations during the day",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "207e17e3d33541c9ca4401088563fbe239332b2bd2e3d5e63f25290cbc31b479",
+          "sourceText": "High blood pressure? See how the same 4-7-8 technique can help manage hypertension",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "f56bba57cdff743c5c7da3b5832487b2064566f69bd14402dda53e6e0c64ec47",
+          "sourceText": "Can't sleep after stressful holiday gatherings? Use this bedtime wind-down routine",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[3].teaser": {
+          "sourceHash": "9ff099ea06e12b81e60a020f0745aaba5cd8e321650ef52bbc45b85f20af1a76",
+          "sourceText": "Kids having trouble sleeping? Bedtime breathing routines for children",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[4].teaser": {
+          "sourceHash": "c8b9f1eed2ba5037fd658ee383ecd73f9ab23ac0489a1cd46d50e52439f1e7ad",
+          "sourceText": "Huberman's sleep-specific breathing stack for winding down and falling asleep faster.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "460a6d071011b4bd432c94b0a50c5d4509f5bedaf8a1558bceb2756369c7525f",
+          "sourceText": "The Sleep Science",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "ab68a3e476a2a1fd20c2593fe0a044d96b372fcc4633f7601cee676c548c08d9",
+          "sourceText": "When you exhale, your heart rate naturally slows. The extended 8-count exhale in this technique maximizes this effect, physically slowing your heart and signaling your brain that it's time to rest.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "c377e3613a87374e9a59b27db6d1d0a5afe0ba28e4a55cbdea96e2b9c4d95940",
+          "sourceText": "Respiratory Sinus Arrhythmia",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "bde2283de48b2ea0e673eeefe3151c75b79848b042a9fa9e14c4d45e320cdadf",
+          "sourceText": "Long exhales stimulate the vagus nerve, triggering the parasympathetic nervous system. This is the opposite of the stress response. It lowers heart rate, relaxes muscles, and prepares your body for sleep.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "43e10b744feece4a0b7ca5f77fc5d0f640770e6f3b5c229ede1793226bd900fc",
+          "sourceText": "Parasympathetic Activation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "9cbd0049f4be33f99ece2cd67c4ad3794e229ec07d8e75a72a133650682e1464",
+          "sourceText": "Following a breath count or visual guide occupies your prefrontal cortex, the part of your brain responsible for planning and worry. This 'crowds out' anxious thoughts and breaks the rumination loop.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "7c30011e39d932078443910bed3560b5a33d262cfee3b9186f64d02efaf99df4",
+          "sourceText": "Focus Displacement",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "74e76b197990b1d453f7ac0bcbf2454e060762cda511f70710e909afa94f03ee",
+          "sourceText": "The breath hold builds tolerance to carbon dioxide, which reduces the breathlessness and air hunger that can come with anxiety. Over time, this makes your baseline breathing slower and calmer.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "91b2a2e8ad38583faca2713e76f189cd9294b279675882466e453e04ebd3c9ca",
+          "sourceText": "CO₂ Tolerance Training",
+          "status": "route-catalog-normalized"
+        },
+        "solution.content": {
+          "sourceHash": "e1f106d934e92d9b92389c66b5c507a492dec4f60581e6b0bdc599c7e0568bf3",
+          "sourceText": "The 4-7-8 technique creates a breathing rhythm that physically forces your nervous system to downshift. By extending your exhale to twice the length of your inhale, you activate the parasympathetic nervous system, the 'rest and digest' mode that enables sleep.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "a9c4730bf0692c71d3a085c33132c5d85f2933e9b7a52fc49cc451f0ee4540e9",
+          "sourceText": "4-7-8: A Rhythm Your Body Can't Fight",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "048986eea720ec95bc9e2caac8bbab5911058a1b2143fa00ae5b0c68c5a2c516",
+          "sourceText": "Following the visual breathing guide serves double duty: the long exhale slows your heart rate while tracking the visual animation occupies your mind. This 'focus displacement' interrupts the internal monologue that keeps you awake. You're essentially giving your brain a simple, calming task instead of letting it ruminate.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "7699ce406f1dfd04351178dffa6ece3f7cde47d48b7d6ed67d4796152a74d0a7",
+          "sourceText": "The best breathing exercise for sleep is the 4-7-8 technique: inhale for 4 seconds, hold for 7 seconds, exhale for 8 seconds. Dr. Andrew Weil calls it a 'natural tranquilizer for the nervous system.' Do 3-4 cycles before bed. The extended exhale activates your parasympathetic nervous system and slows your heart rate. Most people feel noticeably calmer within 1-2 minutes and fall asleep faster with regular practice.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "ee032c9e0e3ca33bf145b1eca31f422ec1644d0a211daf8fb81be2ee48777600",
+          "sourceText": "What are the best breathing exercises for sleep?",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "ja-jp": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "1a97b917fd6867b3617fd65c0d13e146b0473307ff270ce925a69aa3d7d003d5",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "8c4bfa58c381507e78137f588fe873689c43d6d43ea6410d0283bf79d2db740d",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "7c4312464db54ee766e7ebdb52d452b5d528ee1cdd29dbf0af68ca20114884f5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-high-blood-pressure-title": {
+          "sourceHash": "518144fefb7098ab2ea457c58ea5d3dacbe4e73a98483ebc692d35d93220c691",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-holiday-title": {
+          "sourceHash": "6e6700ebb79acdc6c454084c36419a96e782fd0a47695a71703340fbecade8f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-huberman-title": {
+          "sourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-kids-title": {
+          "sourceHash": "7696120540243ebfa54ae8f92ba7cda3ef477c27e9f3802c0d1b304ccf979643",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-public-speaking-title": {
+          "sourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-4-7-8-timer": {
+          "sourceHash": "555a21b155ab6f695e3d171983318ca957da451e1559229d633d1b28c2edd88c",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "fd08812e968808d1cb68cde13a61a04246029ff67868781328307bdc75dd7e1c",
+          "sourceText": "Most people feel noticeably calmer after just 2-3 cycles (about 1 minute). Falling asleep varies, some drift off within 5 minutes, others may take longer initially. [The technique becomes more effective with regular practice](https://doi.org/10.3390/jcm8020193) as your body learns to associate the pattern with sleep.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[0].question": {
+          "sourceHash": "23151b71d2f2cf7d5beb93343582f4120d2073ec2ea67cc4cb5d632435974b73",
+          "sourceText": "How long does it take to fall asleep with 4-7-8 breathing?",
+          "status": "repo-reviewed-replacement"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "6dc8468a7156da891a08b1b2e2596d19213ebee62703f0e0e2295faa124e01ba",
+          "sourceText": "4-7-8 breathing works well for middle-of-the-night waking too. Don't look at your phone or clock, just lie comfortably and do 3-4 cycles in the dark. The key is not stimulating your brain with light or time-checking.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "ee9a2e7e7ed34c27f705cbf95c820e85f490a42a9058b98208797368e872020f",
+          "sourceText": "What if I wake up in the middle of the night?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "891320c6b49885cd8b139a717b31d141c763b707df7d8d38bfbdad23ab3cd104",
+          "sourceText": "Yes, but use these precautions: enable night mode or reduce blue light, dim your screen to minimum, and put the phone away after 3-4 cycles. Alternatively, learn the technique by feel so you can practice with eyes closed. The long exhale is what matters most, the visual is just a training aid.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].question": {
+          "sourceHash": "acb8ea872e09c11f7483a07ece55393d8fe89bcd004a0cecb0b6656fbb32b04d",
+          "sourceText": "Can I use the phone visualizer if blue light affects my sleep?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "07d5b60c3e0b355ec679678d9a720227377a54861a8f5f82c439baee2b624503",
+          "sourceText": "Absolutely. The ratio matters more than the exact numbers. Try 2-3.5-4 or 3-5-6 to maintain the same proportions. The extended exhale is the most important part, keep that twice as long as your inhale, and shorten or skip the hold as needed.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "fa0e64ebafbe1285d3204a0ed3cbc572ad340027f28802bf4d2277d9ec11100d",
+          "sourceText": "I can't hold my breath for 7 seconds, is this technique still helpful?",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "e5db03797c23b06b25bc2bbe1c8d3fe49c14b64794de874962d28cc15e93d820",
+          "sourceText": "Breathing techniques are complementary to (not a replacement for) medical treatment. If you're taking sleep medication, continue as prescribed and talk to your doctor about your goals. Many people find that consistent breathing practice allows them to reduce sleep aids over time, but this should always be done with medical guidance.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "10b5260bc921142a8815ebcf1b68a8cd222efa74ee09d256a2dc80c7be80f5c5",
+          "sourceText": "Should I use this instead of sleep medication?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "cd8a5a708c5d4e308aba53b144ac8b6ba54d3e1f809dbfe15130894ee49e44cd",
+          "sourceText": "You're exhausted but your mind won't stop. Racing thoughts, tomorrow's to-do list, that awkward thing you said five years ago. Your brain replays it all the moment your head hits the pillow. The 4-7-8 breathing technique forces a rhythm that's physically incompatible with stress, helping you transition from 'tired but wired' to actually asleep.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "dfc81de4576cadbc0bd3594c7e93f337c2b7de059ebdc4fcc5456cc674b172bc",
+          "sourceText": "Dr. Weil's 'natural tranquilizer' for your nervous system",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "sourceText": "4-7-8 Breathing for Sleep",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "b365b6d44b1dfd68009ca31844f21afadc965996c8ef052c8ba8e78fecea0a83",
+          "sourceText": "Dim the lights. Put your phone face-down or use night mode if using the visualizer. Lie on your back or in your preferred sleep position.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "b182d0de235df8ac57fc78962beabeeaabf69fdbc3aed293e56a14b3f35f5cd2",
+          "sourceText": "Set up your environment",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "ed046125c88791b97a27946ad0af656e6feb594675df6cb5459613d2a449fec2",
+          "sourceText": "5-10 minutes before intended sleep",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "18798084850372bd3b27c2b4882c0c31fa674dbaea8539208f7bfb41fafc1889",
+          "sourceText": "Place the tip of your tongue against the ridge of tissue behind your upper front teeth. Keep it there throughout the practice. This is traditional to the technique.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "9da529857ab04a124a6cd63e8bcbce4b4f6785e161342935ca4408e54af6a20b",
+          "sourceText": "Position your tongue",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "6da62358df43786df4bb1e8ee4942f22923b82348f575dfdc2349d7ee48678e4",
+          "sourceText": "Throughout",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "b4afaf03f4005f1cdabf3e6cf209da3a99247862c757a307ed0175abb1636e6b",
+          "sourceText": "Exhale completely through your mouth, making a whooshing sound. Empty your lungs fully to reset.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "c20ca447c829e5169237fcca3de2fd7c1aa3ceefdbd261bc5632867337ce7fc1",
+          "sourceText": "Start with a full exhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "ab71b8d9a57b88652f4bf7894020c3dc26cad7f74dedc3b9333bc8b4c621aaf8",
+          "sourceText": "Start position",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "3588a1138ac35b590d927d59ceafc179079552eeed5897dfd6ec4c9f0ef151e7",
+          "sourceText": "Close your mouth. Inhale quietly and gently through your nose for a count of 4. Let your belly rise.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "f320adbe95302f1b17c6fdad23ce40670528de85abb9b3a7647531643a809031",
+          "sourceText": "Inhale for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "885fde2c4151a7d90b2ba4bcdcd0cb1cd3fc1457baa2a4158ad2a5b0b6f52f5a",
+          "sourceText": "Hold your breath easily for a count of 7. Stay relaxed. Don't tense up.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "30215bd73cabf25e99388593c39f5ea119673892b8cb04ca17231b98c965bcbc",
+          "sourceText": "Hold for 7 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "0dff3e2b44bcf0861359945c7404341a3730d54a192c82105cec4cdc31ea2411",
+          "sourceText": "7 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "f9034dde3caacdad69583e9cb6dfc207ca83aae0a938201754ac5a6404b2ead2",
+          "sourceText": "Exhale slowly through your mouth with a soft whooshing sound for a count of 8. Let go completely.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "1b490af1be9a4dd46e56364696e7b3ea23111a9235e98ed6a91d11cfa65aeb8d",
+          "sourceText": "Exhale for 8 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "8290a639dc569f2be3d3319de567cca25e237e934a811fef173f421bdd61a2bf",
+          "sourceText": "8 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].instruction": {
+          "sourceHash": "d9f417d3f399368ea2a7be7508e60d23e42f54f18c14ec9a252c61e4582ff241",
+          "sourceText": "Complete 3-4 breath cycles. Don't exceed 4 cycles when you're starting out. Put away any devices and let yourself drift off.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].name": {
+          "sourceHash": "a5d721ea7cf39824495d74150e90e4ccde783b9339cc602d621a36135491cdc2",
+          "sourceText": "Repeat for 3-4 cycles",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].timing": {
+          "sourceHash": "23eac072a3258a9d0151431899b6d790b5d37d4a0abce2e22fc046b8b6df7d01",
+          "sourceText": "About 2 minutes total",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "ff4b31c410d1c0f5f648dd21580dab72913ac9928f471ec1a5e41e05904bf27e",
+          "sourceText": "Use dark mode on your device if following the visualizer before bed",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "70dff5e73fd0ffc2cd8ab0bdcb2126e422fbe3faa602b52bf5d606dd02d77bc8",
+          "sourceText": "Don't force the breath, keep it gentle and quiet",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "e6793d750e251d2f16d989b9e697e73fba666a7561b6405de8e354d48d2a9a79",
+          "sourceText": "If the hold feels uncomfortable, shorten it to 4-5 counts while keeping the 8-count exhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "db10d933706c9391e197b76d720855516bd367f034162f9d4d26c5d35b6f6450",
+          "sourceText": "The technique works better with consistent practice. Try it every night for a week",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "38e4d56f3e3ca1ab69d449a7eaf2a8fe052d7f2acf0ad44f3a57da04810d4cd3",
+          "sourceText": "4-7-8 breathing for sleep: Dr. Weil's 'natural tranquilizer' helps you fall asleep in 2 minutes. Stop racing thoughts. Free sleep visualizer, no download.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "2cf586bd3611e49d4fd2c7f413aacb687f8aa1d56454023016cfe7faa5372056",
+          "sourceText": "4-7-8 breathing for sleep: Dr. Weil's 'natural tranquilizer' helps you fall asleep in minutes. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "27364cef55b3fbe11467d8c2639691fbf8b394f85df9a45f96054f5e19c063ce",
+          "sourceText": "4-7-8 Breathing for Sleep — Fall Asleep in 2 Minutes",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "18d75e2eceb845f85f278e0748b784d7f46d24a5efb86ab8b0461605f6bf90b8",
+          "sourceText": "4-7-8 Breathing for Sleep — Fall Asleep in 2 Minutes (Free) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "35f51fbc7eb9cf2839fac472c65687ea382c258f30290c7b7440e691da55a0b7",
+          "sourceText": "4-7-8 breathing for sleep: Dr. Weil's 'natural tranquilizer'. Fall asleep in minutes without medication. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "ed8c4498037fcd45f35fa9d3ce7a17b53c29e3884cd38991d7c31828e2595e59",
+          "sourceText": "4-7-8 Breathing for Sleep — Fall Asleep Fast",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "f9fb71fbdf7558c081ae798b4a4911ab49d8b61853607ffbfd665212a4df5a92",
+          "sourceText": "Your body is exhausted but your sympathetic nervous system hasn't gotten the memo. Screen light, late caffeine, work stress, or just the habit of mental rumination can keep your fight-or-flight system active even as you lie in bed. This creates a frustrating loop: you're tired so you try harder to sleep, which creates more stress, which keeps you awake.",
+          "status": "route-catalog-exact"
+        },
+        "problem.heading": {
+          "sourceHash": "0dfc0aa2d46009791915322dacb8fef5afb9dd0adb9fe774a30bf8003c3fdda8",
+          "sourceText": "The 'Tired But Wired' Trap",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "f3e1c15ef26876a695ec40c2dc2262a48fc9e0d2b0a319a67529a45dc0c336aa",
+          "sourceText": "Racing thoughts that won't quiet down",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "ff3d2578d45373f89f59346448a5f031333685d3a11c104f32afb8ce5a956d76",
+          "sourceText": "Physical restlessness despite exhaustion",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "7a78a33edfdd86d8756b43730bf3c569f01d94b34cbc4dc3b58de55f811407c3",
+          "sourceText": "Lying awake replaying the day or worrying about tomorrow",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "f3b0a63c70cc025d9235b8dc09db42205e15a2c31b012176be46b0e764455222",
+          "sourceText": "Feeling alert the moment you try to sleep",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "6896642d1e2a1c87ad8970ae724304bcc812a1c9e1fcb23a13d1e664143f4e44",
+          "sourceText": "Waking in the middle of the night unable to return to sleep",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "6e46241da95f7ff57291f27ea3d9f04ab41bf330438c0902f9fe7b97f40c8a44",
+          "sourceText": "Overview of evidence-based breathing techniques for improving sleep onset and quality.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "9c3e00a4fe95a77bce483a8fa103d13cb0b4c519ffd60bb90994db9e75c07731",
+          "sourceText": "Best Breathing Exercises for Sleep",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "d6f8812246568b7cc50b09dcd482adb3bf26ed9f812c28d6492a52571939fc84",
+          "sourceText": "How relaxation techniques activate the parasympathetic nervous system to enable sleep.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "bc79a44747454c7707a892f37b95930ad440a5c1d37b1d1e428fcf78bfd93d93",
+          "sourceText": "Relaxation Exercises to Help Fall Asleep",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "1d7792c759d3d68cfce640c25e8564de39798c249ddb5c6ce380cc390baf52be",
+          "sourceText": "Dr. Weil describes the 4-7-8 technique as a 'natural tranquilizer for the nervous system.'",
+          "status": "repo-reviewed-replacement"
+        },
+        "references[2].title": {
+          "sourceHash": "4667c02428b0844f077b8ba4261d284f6cddd6be89cddfa28df2053e7dee6e6b",
+          "sourceText": "Video: Dr. Weil's Breathing Exercises: 4-7-8 Breath",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "0c47283b4d6d0e1367c5c8b3149b7e69d92cc88bdc18e57823a954eb4abaf611",
+          "sourceText": "Medical overview of the 4-7-8 technique's benefits for sleep and stress reduction.",
+          "status": "repo-reviewed-replacement"
+        },
+        "references[3].title": {
+          "sourceHash": "2b226e7e7c528435cb748c486cf00c4b790724df05c39c74b53fec4e29fa6e4f",
+          "sourceText": "4-7-8 Breathing Method For Sleep and Relaxation",
+          "status": "repo-reviewed-replacement"
+        },
+        "references[4].summary": {
+          "sourceHash": "3950eb2cf12bc953a5ae3f60db5583294f4ef686795e4b18584a3a7082b0845a",
+          "sourceText": "Research review on breathing techniques as complementary treatment for insomnia.",
+          "status": "route-catalog-exact"
+        },
+        "references[4].title": {
+          "sourceHash": "d78e3a5c2455cd24b2640ce78bed930be637cfdd9fdd12bf8175b141d0a4c1e1",
+          "sourceText": "Self-Regulation of Breathing as an Adjunctive Treatment of Insomnia",
+          "status": "route-catalog-exact"
+        },
+        "relatedGuides[0].teaser": {
+          "sourceHash": "4dfb5e0d32b981ee1d7a2b4260233d2c28c3f1d74242bd0a54f293643f356561",
+          "sourceText": "A detailed guide on using 4-7-8 breathing to fall asleep faster, stay asleep, and break the cycle of chronic insomnia",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedGuides[0].title": {
+          "sourceHash": "2968b43d5ce063e7950bcf536fe634d9daf65d7da4e0157e7b2717a1c7114b6a",
+          "sourceText": "4-7-8 Breathing for Insomnia",
+          "status": "global-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "a8f34ed5397ca32dc8e8a747014b394bfebd681eef08ee2c5d38dba790295b95",
+          "sourceText": "Practice with the full-screen 4-7-8 Breathing visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "adf8ff330858828470d070904fa3ebe8cc38c9f6f82d2f98a117f5c286081793",
+          "sourceText": "Stressed at work? Try Box Breathing for high-pressure situations during the day",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "207e17e3d33541c9ca4401088563fbe239332b2bd2e3d5e63f25290cbc31b479",
+          "sourceText": "High blood pressure? See how the same 4-7-8 technique can help manage hypertension",
+          "status": "repo-reviewed-replacement"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "f56bba57cdff743c5c7da3b5832487b2064566f69bd14402dda53e6e0c64ec47",
+          "sourceText": "Can't sleep after stressful holiday gatherings? Use this bedtime wind-down routine",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[3].teaser": {
+          "sourceHash": "9ff099ea06e12b81e60a020f0745aaba5cd8e321650ef52bbc45b85f20af1a76",
+          "sourceText": "Kids having trouble sleeping? Bedtime breathing routines for children",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[4].teaser": {
+          "sourceHash": "c8b9f1eed2ba5037fd658ee383ecd73f9ab23ac0489a1cd46d50e52439f1e7ad",
+          "sourceText": "Huberman's sleep-specific breathing stack for winding down and falling asleep faster.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "460a6d071011b4bd432c94b0a50c5d4509f5bedaf8a1558bceb2756369c7525f",
+          "sourceText": "The Sleep Science",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "ab68a3e476a2a1fd20c2593fe0a044d96b372fcc4633f7601cee676c548c08d9",
+          "sourceText": "When you exhale, your heart rate naturally slows. The extended 8-count exhale in this technique maximizes this effect, physically slowing your heart and signaling your brain that it's time to rest.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "c377e3613a87374e9a59b27db6d1d0a5afe0ba28e4a55cbdea96e2b9c4d95940",
+          "sourceText": "Respiratory Sinus Arrhythmia",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "bde2283de48b2ea0e673eeefe3151c75b79848b042a9fa9e14c4d45e320cdadf",
+          "sourceText": "Long exhales stimulate the vagus nerve, triggering the parasympathetic nervous system. This is the opposite of the stress response. It lowers heart rate, relaxes muscles, and prepares your body for sleep.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "43e10b744feece4a0b7ca5f77fc5d0f640770e6f3b5c229ede1793226bd900fc",
+          "sourceText": "Parasympathetic Activation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "9cbd0049f4be33f99ece2cd67c4ad3794e229ec07d8e75a72a133650682e1464",
+          "sourceText": "Following a breath count or visual guide occupies your prefrontal cortex, the part of your brain responsible for planning and worry. This 'crowds out' anxious thoughts and breaks the rumination loop.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "7c30011e39d932078443910bed3560b5a33d262cfee3b9186f64d02efaf99df4",
+          "sourceText": "Focus Displacement",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "74e76b197990b1d453f7ac0bcbf2454e060762cda511f70710e909afa94f03ee",
+          "sourceText": "The breath hold builds tolerance to carbon dioxide, which reduces the breathlessness and air hunger that can come with anxiety. Over time, this makes your baseline breathing slower and calmer.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "91b2a2e8ad38583faca2713e76f189cd9294b279675882466e453e04ebd3c9ca",
+          "sourceText": "CO₂ Tolerance Training",
+          "status": "route-catalog-normalized"
+        },
+        "solution.content": {
+          "sourceHash": "e1f106d934e92d9b92389c66b5c507a492dec4f60581e6b0bdc599c7e0568bf3",
+          "sourceText": "The 4-7-8 technique creates a breathing rhythm that physically forces your nervous system to downshift. By extending your exhale to twice the length of your inhale, you activate the parasympathetic nervous system, the 'rest and digest' mode that enables sleep.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "a9c4730bf0692c71d3a085c33132c5d85f2933e9b7a52fc49cc451f0ee4540e9",
+          "sourceText": "4-7-8: A Rhythm Your Body Can't Fight",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "048986eea720ec95bc9e2caac8bbab5911058a1b2143fa00ae5b0c68c5a2c516",
+          "sourceText": "Following the visual breathing guide serves double duty: the long exhale slows your heart rate while tracking the visual animation occupies your mind. This 'focus displacement' interrupts the internal monologue that keeps you awake. You're essentially giving your brain a simple, calming task instead of letting it ruminate.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "7699ce406f1dfd04351178dffa6ece3f7cde47d48b7d6ed67d4796152a74d0a7",
+          "sourceText": "The best breathing exercise for sleep is the 4-7-8 technique: inhale for 4 seconds, hold for 7 seconds, exhale for 8 seconds. Dr. Andrew Weil calls it a 'natural tranquilizer for the nervous system.' Do 3-4 cycles before bed. The extended exhale activates your parasympathetic nervous system and slows your heart rate. Most people feel noticeably calmer within 1-2 minutes and fall asleep faster with regular practice.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "ee032c9e0e3ca33bf145b1eca31f422ec1644d0a211daf8fb81be2ee48777600",
+          "sourceText": "What are the best breathing exercises for sleep?",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "pt-br": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "1a97b917fd6867b3617fd65c0d13e146b0473307ff270ce925a69aa3d7d003d5",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "8c4bfa58c381507e78137f588fe873689c43d6d43ea6410d0283bf79d2db740d",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "7c4312464db54ee766e7ebdb52d452b5d528ee1cdd29dbf0af68ca20114884f5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-high-blood-pressure-title": {
+          "sourceHash": "518144fefb7098ab2ea457c58ea5d3dacbe4e73a98483ebc692d35d93220c691",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-holiday-title": {
+          "sourceHash": "6e6700ebb79acdc6c454084c36419a96e782fd0a47695a71703340fbecade8f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-huberman-title": {
+          "sourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-kids-title": {
+          "sourceHash": "7696120540243ebfa54ae8f92ba7cda3ef477c27e9f3802c0d1b304ccf979643",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-public-speaking-title": {
+          "sourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-4-7-8-timer": {
+          "sourceHash": "555a21b155ab6f695e3d171983318ca957da451e1559229d633d1b28c2edd88c",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "fd08812e968808d1cb68cde13a61a04246029ff67868781328307bdc75dd7e1c",
+          "sourceText": "Most people feel noticeably calmer after just 2-3 cycles (about 1 minute). Falling asleep varies, some drift off within 5 minutes, others may take longer initially. [The technique becomes more effective with regular practice](https://doi.org/10.3390/jcm8020193) as your body learns to associate the pattern with sleep.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[0].question": {
+          "sourceHash": "23151b71d2f2cf7d5beb93343582f4120d2073ec2ea67cc4cb5d632435974b73",
+          "sourceText": "How long does it take to fall asleep with 4-7-8 breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "6dc8468a7156da891a08b1b2e2596d19213ebee62703f0e0e2295faa124e01ba",
+          "sourceText": "4-7-8 breathing works well for middle-of-the-night waking too. Don't look at your phone or clock, just lie comfortably and do 3-4 cycles in the dark. The key is not stimulating your brain with light or time-checking.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "ee9a2e7e7ed34c27f705cbf95c820e85f490a42a9058b98208797368e872020f",
+          "sourceText": "What if I wake up in the middle of the night?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "891320c6b49885cd8b139a717b31d141c763b707df7d8d38bfbdad23ab3cd104",
+          "sourceText": "Yes, but use these precautions: enable night mode or reduce blue light, dim your screen to minimum, and put the phone away after 3-4 cycles. Alternatively, learn the technique by feel so you can practice with eyes closed. The long exhale is what matters most, the visual is just a training aid.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].question": {
+          "sourceHash": "acb8ea872e09c11f7483a07ece55393d8fe89bcd004a0cecb0b6656fbb32b04d",
+          "sourceText": "Can I use the phone visualizer if blue light affects my sleep?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "07d5b60c3e0b355ec679678d9a720227377a54861a8f5f82c439baee2b624503",
+          "sourceText": "Absolutely. The ratio matters more than the exact numbers. Try 2-3.5-4 or 3-5-6 to maintain the same proportions. The extended exhale is the most important part, keep that twice as long as your inhale, and shorten or skip the hold as needed.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "fa0e64ebafbe1285d3204a0ed3cbc572ad340027f28802bf4d2277d9ec11100d",
+          "sourceText": "I can't hold my breath for 7 seconds, is this technique still helpful?",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "e5db03797c23b06b25bc2bbe1c8d3fe49c14b64794de874962d28cc15e93d820",
+          "sourceText": "Breathing techniques are complementary to (not a replacement for) medical treatment. If you're taking sleep medication, continue as prescribed and talk to your doctor about your goals. Many people find that consistent breathing practice allows them to reduce sleep aids over time, but this should always be done with medical guidance.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "10b5260bc921142a8815ebcf1b68a8cd222efa74ee09d256a2dc80c7be80f5c5",
+          "sourceText": "Should I use this instead of sleep medication?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "cd8a5a708c5d4e308aba53b144ac8b6ba54d3e1f809dbfe15130894ee49e44cd",
+          "sourceText": "You're exhausted but your mind won't stop. Racing thoughts, tomorrow's to-do list, that awkward thing you said five years ago. Your brain replays it all the moment your head hits the pillow. The 4-7-8 breathing technique forces a rhythm that's physically incompatible with stress, helping you transition from 'tired but wired' to actually asleep.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "dfc81de4576cadbc0bd3594c7e93f337c2b7de059ebdc4fcc5456cc674b172bc",
+          "sourceText": "Dr. Weil's 'natural tranquilizer' for your nervous system",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "sourceText": "4-7-8 Breathing for Sleep",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "b365b6d44b1dfd68009ca31844f21afadc965996c8ef052c8ba8e78fecea0a83",
+          "sourceText": "Dim the lights. Put your phone face-down or use night mode if using the visualizer. Lie on your back or in your preferred sleep position.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "b182d0de235df8ac57fc78962beabeeaabf69fdbc3aed293e56a14b3f35f5cd2",
+          "sourceText": "Set up your environment",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "ed046125c88791b97a27946ad0af656e6feb594675df6cb5459613d2a449fec2",
+          "sourceText": "5-10 minutes before intended sleep",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "18798084850372bd3b27c2b4882c0c31fa674dbaea8539208f7bfb41fafc1889",
+          "sourceText": "Place the tip of your tongue against the ridge of tissue behind your upper front teeth. Keep it there throughout the practice. This is traditional to the technique.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "9da529857ab04a124a6cd63e8bcbce4b4f6785e161342935ca4408e54af6a20b",
+          "sourceText": "Position your tongue",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "6da62358df43786df4bb1e8ee4942f22923b82348f575dfdc2349d7ee48678e4",
+          "sourceText": "Throughout",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "b4afaf03f4005f1cdabf3e6cf209da3a99247862c757a307ed0175abb1636e6b",
+          "sourceText": "Exhale completely through your mouth, making a whooshing sound. Empty your lungs fully to reset.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "c20ca447c829e5169237fcca3de2fd7c1aa3ceefdbd261bc5632867337ce7fc1",
+          "sourceText": "Start with a full exhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "ab71b8d9a57b88652f4bf7894020c3dc26cad7f74dedc3b9333bc8b4c621aaf8",
+          "sourceText": "Start position",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "3588a1138ac35b590d927d59ceafc179079552eeed5897dfd6ec4c9f0ef151e7",
+          "sourceText": "Close your mouth. Inhale quietly and gently through your nose for a count of 4. Let your belly rise.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "f320adbe95302f1b17c6fdad23ce40670528de85abb9b3a7647531643a809031",
+          "sourceText": "Inhale for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "885fde2c4151a7d90b2ba4bcdcd0cb1cd3fc1457baa2a4158ad2a5b0b6f52f5a",
+          "sourceText": "Hold your breath easily for a count of 7. Stay relaxed. Don't tense up.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "30215bd73cabf25e99388593c39f5ea119673892b8cb04ca17231b98c965bcbc",
+          "sourceText": "Hold for 7 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "0dff3e2b44bcf0861359945c7404341a3730d54a192c82105cec4cdc31ea2411",
+          "sourceText": "7 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "f9034dde3caacdad69583e9cb6dfc207ca83aae0a938201754ac5a6404b2ead2",
+          "sourceText": "Exhale slowly through your mouth with a soft whooshing sound for a count of 8. Let go completely.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "1b490af1be9a4dd46e56364696e7b3ea23111a9235e98ed6a91d11cfa65aeb8d",
+          "sourceText": "Exhale for 8 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "8290a639dc569f2be3d3319de567cca25e237e934a811fef173f421bdd61a2bf",
+          "sourceText": "8 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].instruction": {
+          "sourceHash": "d9f417d3f399368ea2a7be7508e60d23e42f54f18c14ec9a252c61e4582ff241",
+          "sourceText": "Complete 3-4 breath cycles. Don't exceed 4 cycles when you're starting out. Put away any devices and let yourself drift off.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].name": {
+          "sourceHash": "a5d721ea7cf39824495d74150e90e4ccde783b9339cc602d621a36135491cdc2",
+          "sourceText": "Repeat for 3-4 cycles",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].timing": {
+          "sourceHash": "23eac072a3258a9d0151431899b6d790b5d37d4a0abce2e22fc046b8b6df7d01",
+          "sourceText": "About 2 minutes total",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "ff4b31c410d1c0f5f648dd21580dab72913ac9928f471ec1a5e41e05904bf27e",
+          "sourceText": "Use dark mode on your device if following the visualizer before bed",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "70dff5e73fd0ffc2cd8ab0bdcb2126e422fbe3faa602b52bf5d606dd02d77bc8",
+          "sourceText": "Don't force the breath, keep it gentle and quiet",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "e6793d750e251d2f16d989b9e697e73fba666a7561b6405de8e354d48d2a9a79",
+          "sourceText": "If the hold feels uncomfortable, shorten it to 4-5 counts while keeping the 8-count exhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "db10d933706c9391e197b76d720855516bd367f034162f9d4d26c5d35b6f6450",
+          "sourceText": "The technique works better with consistent practice. Try it every night for a week",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "38e4d56f3e3ca1ab69d449a7eaf2a8fe052d7f2acf0ad44f3a57da04810d4cd3",
+          "sourceText": "4-7-8 breathing for sleep: Dr. Weil's 'natural tranquilizer' helps you fall asleep in 2 minutes. Stop racing thoughts. Free sleep visualizer, no download.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "2cf586bd3611e49d4fd2c7f413aacb687f8aa1d56454023016cfe7faa5372056",
+          "sourceText": "4-7-8 breathing for sleep: Dr. Weil's 'natural tranquilizer' helps you fall asleep in minutes. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "27364cef55b3fbe11467d8c2639691fbf8b394f85df9a45f96054f5e19c063ce",
+          "sourceText": "4-7-8 Breathing for Sleep — Fall Asleep in 2 Minutes",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "18d75e2eceb845f85f278e0748b784d7f46d24a5efb86ab8b0461605f6bf90b8",
+          "sourceText": "4-7-8 Breathing for Sleep — Fall Asleep in 2 Minutes (Free) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "35f51fbc7eb9cf2839fac472c65687ea382c258f30290c7b7440e691da55a0b7",
+          "sourceText": "4-7-8 breathing for sleep: Dr. Weil's 'natural tranquilizer'. Fall asleep in minutes without medication. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "ed8c4498037fcd45f35fa9d3ce7a17b53c29e3884cd38991d7c31828e2595e59",
+          "sourceText": "4-7-8 Breathing for Sleep — Fall Asleep Fast",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "f9fb71fbdf7558c081ae798b4a4911ab49d8b61853607ffbfd665212a4df5a92",
+          "sourceText": "Your body is exhausted but your sympathetic nervous system hasn't gotten the memo. Screen light, late caffeine, work stress, or just the habit of mental rumination can keep your fight-or-flight system active even as you lie in bed. This creates a frustrating loop: you're tired so you try harder to sleep, which creates more stress, which keeps you awake.",
+          "status": "route-catalog-exact"
+        },
+        "problem.heading": {
+          "sourceHash": "0dfc0aa2d46009791915322dacb8fef5afb9dd0adb9fe774a30bf8003c3fdda8",
+          "sourceText": "The 'Tired But Wired' Trap",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "f3e1c15ef26876a695ec40c2dc2262a48fc9e0d2b0a319a67529a45dc0c336aa",
+          "sourceText": "Racing thoughts that won't quiet down",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "ff3d2578d45373f89f59346448a5f031333685d3a11c104f32afb8ce5a956d76",
+          "sourceText": "Physical restlessness despite exhaustion",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "7a78a33edfdd86d8756b43730bf3c569f01d94b34cbc4dc3b58de55f811407c3",
+          "sourceText": "Lying awake replaying the day or worrying about tomorrow",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "f3b0a63c70cc025d9235b8dc09db42205e15a2c31b012176be46b0e764455222",
+          "sourceText": "Feeling alert the moment you try to sleep",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "6896642d1e2a1c87ad8970ae724304bcc812a1c9e1fcb23a13d1e664143f4e44",
+          "sourceText": "Waking in the middle of the night unable to return to sleep",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "6e46241da95f7ff57291f27ea3d9f04ab41bf330438c0902f9fe7b97f40c8a44",
+          "sourceText": "Overview of evidence-based breathing techniques for improving sleep onset and quality.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "9c3e00a4fe95a77bce483a8fa103d13cb0b4c519ffd60bb90994db9e75c07731",
+          "sourceText": "Best Breathing Exercises for Sleep",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "d6f8812246568b7cc50b09dcd482adb3bf26ed9f812c28d6492a52571939fc84",
+          "sourceText": "How relaxation techniques activate the parasympathetic nervous system to enable sleep.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "bc79a44747454c7707a892f37b95930ad440a5c1d37b1d1e428fcf78bfd93d93",
+          "sourceText": "Relaxation Exercises to Help Fall Asleep",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "1d7792c759d3d68cfce640c25e8564de39798c249ddb5c6ce380cc390baf52be",
+          "sourceText": "Dr. Weil describes the 4-7-8 technique as a 'natural tranquilizer for the nervous system.'",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "4667c02428b0844f077b8ba4261d284f6cddd6be89cddfa28df2053e7dee6e6b",
+          "sourceText": "Video: Dr. Weil's Breathing Exercises: 4-7-8 Breath",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "0c47283b4d6d0e1367c5c8b3149b7e69d92cc88bdc18e57823a954eb4abaf611",
+          "sourceText": "Medical overview of the 4-7-8 technique's benefits for sleep and stress reduction.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "2b226e7e7c528435cb748c486cf00c4b790724df05c39c74b53fec4e29fa6e4f",
+          "sourceText": "4-7-8 Breathing Method For Sleep and Relaxation",
+          "status": "route-catalog-exact"
+        },
+        "references[4].summary": {
+          "sourceHash": "3950eb2cf12bc953a5ae3f60db5583294f4ef686795e4b18584a3a7082b0845a",
+          "sourceText": "Research review on breathing techniques as complementary treatment for insomnia.",
+          "status": "route-catalog-exact"
+        },
+        "references[4].title": {
+          "sourceHash": "d78e3a5c2455cd24b2640ce78bed930be637cfdd9fdd12bf8175b141d0a4c1e1",
+          "sourceText": "Self-Regulation of Breathing as an Adjunctive Treatment of Insomnia",
+          "status": "route-catalog-exact"
+        },
+        "relatedGuides[0].teaser": {
+          "sourceHash": "4dfb5e0d32b981ee1d7a2b4260233d2c28c3f1d74242bd0a54f293643f356561",
+          "sourceText": "A detailed guide on using 4-7-8 breathing to fall asleep faster, stay asleep, and break the cycle of chronic insomnia",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedGuides[0].title": {
+          "sourceHash": "2968b43d5ce063e7950bcf536fe634d9daf65d7da4e0157e7b2717a1c7114b6a",
+          "sourceText": "4-7-8 Breathing for Insomnia",
+          "status": "global-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "a8f34ed5397ca32dc8e8a747014b394bfebd681eef08ee2c5d38dba790295b95",
+          "sourceText": "Practice with the full-screen 4-7-8 Breathing visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "adf8ff330858828470d070904fa3ebe8cc38c9f6f82d2f98a117f5c286081793",
+          "sourceText": "Stressed at work? Try Box Breathing for high-pressure situations during the day",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "207e17e3d33541c9ca4401088563fbe239332b2bd2e3d5e63f25290cbc31b479",
+          "sourceText": "High blood pressure? See how the same 4-7-8 technique can help manage hypertension",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "f56bba57cdff743c5c7da3b5832487b2064566f69bd14402dda53e6e0c64ec47",
+          "sourceText": "Can't sleep after stressful holiday gatherings? Use this bedtime wind-down routine",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[3].teaser": {
+          "sourceHash": "9ff099ea06e12b81e60a020f0745aaba5cd8e321650ef52bbc45b85f20af1a76",
+          "sourceText": "Kids having trouble sleeping? Bedtime breathing routines for children",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[4].teaser": {
+          "sourceHash": "c8b9f1eed2ba5037fd658ee383ecd73f9ab23ac0489a1cd46d50e52439f1e7ad",
+          "sourceText": "Huberman's sleep-specific breathing stack for winding down and falling asleep faster.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "460a6d071011b4bd432c94b0a50c5d4509f5bedaf8a1558bceb2756369c7525f",
+          "sourceText": "The Sleep Science",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "ab68a3e476a2a1fd20c2593fe0a044d96b372fcc4633f7601cee676c548c08d9",
+          "sourceText": "When you exhale, your heart rate naturally slows. The extended 8-count exhale in this technique maximizes this effect, physically slowing your heart and signaling your brain that it's time to rest.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "c377e3613a87374e9a59b27db6d1d0a5afe0ba28e4a55cbdea96e2b9c4d95940",
+          "sourceText": "Respiratory Sinus Arrhythmia",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "bde2283de48b2ea0e673eeefe3151c75b79848b042a9fa9e14c4d45e320cdadf",
+          "sourceText": "Long exhales stimulate the vagus nerve, triggering the parasympathetic nervous system. This is the opposite of the stress response. It lowers heart rate, relaxes muscles, and prepares your body for sleep.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "43e10b744feece4a0b7ca5f77fc5d0f640770e6f3b5c229ede1793226bd900fc",
+          "sourceText": "Parasympathetic Activation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "9cbd0049f4be33f99ece2cd67c4ad3794e229ec07d8e75a72a133650682e1464",
+          "sourceText": "Following a breath count or visual guide occupies your prefrontal cortex, the part of your brain responsible for planning and worry. This 'crowds out' anxious thoughts and breaks the rumination loop.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "7c30011e39d932078443910bed3560b5a33d262cfee3b9186f64d02efaf99df4",
+          "sourceText": "Focus Displacement",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "74e76b197990b1d453f7ac0bcbf2454e060762cda511f70710e909afa94f03ee",
+          "sourceText": "The breath hold builds tolerance to carbon dioxide, which reduces the breathlessness and air hunger that can come with anxiety. Over time, this makes your baseline breathing slower and calmer.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "91b2a2e8ad38583faca2713e76f189cd9294b279675882466e453e04ebd3c9ca",
+          "sourceText": "CO₂ Tolerance Training",
+          "status": "route-catalog-normalized"
+        },
+        "solution.content": {
+          "sourceHash": "e1f106d934e92d9b92389c66b5c507a492dec4f60581e6b0bdc599c7e0568bf3",
+          "sourceText": "The 4-7-8 technique creates a breathing rhythm that physically forces your nervous system to downshift. By extending your exhale to twice the length of your inhale, you activate the parasympathetic nervous system, the 'rest and digest' mode that enables sleep.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "a9c4730bf0692c71d3a085c33132c5d85f2933e9b7a52fc49cc451f0ee4540e9",
+          "sourceText": "4-7-8: A Rhythm Your Body Can't Fight",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "048986eea720ec95bc9e2caac8bbab5911058a1b2143fa00ae5b0c68c5a2c516",
+          "sourceText": "Following the visual breathing guide serves double duty: the long exhale slows your heart rate while tracking the visual animation occupies your mind. This 'focus displacement' interrupts the internal monologue that keeps you awake. You're essentially giving your brain a simple, calming task instead of letting it ruminate.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "7699ce406f1dfd04351178dffa6ece3f7cde47d48b7d6ed67d4796152a74d0a7",
+          "sourceText": "The best breathing exercise for sleep is the 4-7-8 technique: inhale for 4 seconds, hold for 7 seconds, exhale for 8 seconds. Dr. Andrew Weil calls it a 'natural tranquilizer for the nervous system.' Do 3-4 cycles before bed. The extended exhale activates your parasympathetic nervous system and slows your heart rate. Most people feel noticeably calmer within 1-2 minutes and fall asleep faster with regular practice.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "ee032c9e0e3ca33bf145b1eca31f422ec1644d0a211daf8fb81be2ee48777600",
+          "sourceText": "What are the best breathing exercises for sleep?",
+          "status": "route-catalog-exact"
+        }
+      }
+    }
+  },
+  "schemaVersion": 1,
+  "sourceRoute": "/for/sleep"
+}

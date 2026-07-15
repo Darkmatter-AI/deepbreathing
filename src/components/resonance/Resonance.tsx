@@ -11,6 +11,7 @@ import { AudioService } from './services/audioService';
 import Visualizer from './components/Visualizer';
 import { createRuntimePhraseResolver, detectRuntimeLocale, RuntimePhraseKey } from './runtime-phrases';
 import { LanguageSwitcherInline } from '@/components/language-switcher';
+import { localizePathname, stripLocalePrefix } from '@/i18n';
 
 // GA4 event helper — safe to call even if gtag isn't loaded
 function trackEvent(name: string, params?: Record<string, string | number | boolean>) {
@@ -67,6 +68,12 @@ interface ResonanceProps {
   backgroundVariant?: 'default' | 'winter-blue';
   embedMode?: boolean;
   noMobileBottomPad?: boolean;
+  /** Explicit native locale. Legacy proxy pages may omit it and use browser detection. */
+  locale?: string;
+  /** Canonical route paths that exist in the current native serving mode. */
+  localizedRoutePaths?: readonly string[];
+  /** Localized visible name for the route's initial breathing mode. */
+  modeDisplayName?: string;
 }
 
 // Valid duration values in seconds (clamped to prevent abuse)
@@ -108,10 +115,22 @@ const toRgba = (hex: string, alpha: number) => {
   return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 };
 
-const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMode, immersive, snowMode = false, forcedTheme, backgroundVariant = 'default', embedMode = false, noMobileBottomPad = false }) => {
+const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMode, immersive, snowMode = false, forcedTheme, backgroundVariant = 'default', embedMode = false, noMobileBottomPad = false, locale, localizedRoutePaths, modeDisplayName }) => {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const localizedRoutePathSet = useMemo(
+    () => new Set(localizedRoutePaths ?? []),
+    [localizedRoutePaths]
+  );
+  const resolveClientHref = useCallback((path: string) => {
+    const englishPath = stripLocalePrefix(path);
+    const queryIndex = englishPath.search(/[?#]/);
+    const routePath = queryIndex === -1 ? englishPath : englishPath.slice(0, queryIndex);
+    return locale && localizedRoutePathSet.has(routePath)
+      ? localizePathname(englishPath, locale)
+      : englishPath;
+  }, [locale, localizedRoutePathSet]);
 
   // Parse duration from URL params client-side (keeps page static)
   const durationFromUrl = useMemo(
@@ -184,7 +203,6 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
 
   useEffect(() => {
     setMounted(true);
-    setRuntimeLocale(detectRuntimeLocale());
 
     const savedSettings = localStorage.getItem(STORAGE_KEYS.SETTINGS);
     if (savedSettings) {
@@ -245,6 +263,10 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
   }, [defaultMode]);
 
   useEffect(() => {
+    setRuntimeLocale(locale ?? detectRuntimeLocale());
+  }, [locale]);
+
+  useEffect(() => {
     if (durationFromUrl === undefined) return;
     setSelectedDuration(durationFromUrl);
   }, [durationFromUrl]);
@@ -297,7 +319,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
 
   // Animation State
   const [scale, setScale] = useState(0);
-  const [runtimeLocale, setRuntimeLocale] = useState('en');
+  const [runtimeLocale, setRuntimeLocale] = useState(() => locale ?? 'en');
   const runtimePhrases = useMemo(() => createRuntimePhraseResolver(runtimeLocale), [runtimeLocale]);
   const [instruction, setInstruction] = useState(() => runtimePhrases.resolve('session.ready_to_start').text);
   const [runtimeFallbackCount, setRuntimeFallbackCount] = useState(0);
@@ -587,10 +609,8 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
   const currentPattern = BREATHING_PATTERNS[activeMode];
   const isDarkTheme = activeTheme === 'dark';
   const appearanceLabel = themePreference === 'system'
-    ? `Auto (${systemPrefersDark ? 'Dark' : 'Light'})`
-    : themePreference === 'dark'
-      ? 'Dark'
-      : 'Light';
+    ? getSafePhrase(systemPrefersDark ? 'ui.auto_dark' : 'ui.auto_light')
+    : getSafePhrase(themePreference === 'dark' ? 'ui.dark' : 'ui.light');
 
   const handleThemeToggle = useCallback(() => {
     setThemePreference(prev => {
@@ -921,14 +941,15 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       if (shouldNavigate) {
         const slug = modeToSlug[mode];
         if (slug) {
-          const target = `/breathe/${slug}`;
+          const baseTarget = `/breathe/${slug}`;
+          const target = resolveClientHref(baseTarget);
           if (pathname !== target) {
             router.push(target);
           }
         }
       }
     },
-    [activeMode, isRunning, pathname, router]
+    [activeMode, isRunning, pathname, resolveClientHref, router]
   );
 
   const handleAIRecommendation = (rec: AIRecommendation) => {
@@ -1423,39 +1444,39 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
             </div>
             <div className="flex items-center gap-2">
               <Waves size={12} className="text-primary" />
-              <span className="font-medium text-card-foreground">Drone Synth</span>
-              <span className="ml-auto text-muted-foreground">8D Audio</span>
+              <span className="font-medium text-card-foreground">{getSafePhrase('ui.drone_synth')}</span>
+              <span className="ml-auto text-muted-foreground">{getSafePhrase('ui.audio_8d')}</span>
             </div>
           </div>
         </div>
       );
     }
 
-    const waveType = isRelax ? "Delta Waves (2Hz)" : "Alpha Waves (10Hz)";
-    const waveDesc = isRelax ? "Deep Sleep" : "Flow State";
-    const ambienceType = (activeMode === ModeName.Relax || activeMode === ModeName.Coherent) ? "Pink Noise (Rain)" : "Drone Synth";
+    const waveType = isRelax ? "Delta Waves (2Hz)" : getSafePhrase('ui.alpha_waves');
+    const waveDesc = isRelax ? "Deep Sleep" : getSafePhrase('ui.flow_state');
+    const ambienceType = (activeMode === ModeName.Relax || activeMode === ModeName.Coherent) ? "Pink Noise (Rain)" : getSafePhrase('ui.drone_synth');
 
     return (
       <div className="mt-4 rounded-lg bg-card/70 p-3 text-xs text-muted-foreground shadow-inner backdrop-blur supports-[backdrop-filter]:bg-card/60 dark:bg-card/30">
         <div className="grid grid-cols-4 gap-2 text-center divide-x divide-border/60">
           <div>
             <span className="block font-bold text-card-foreground">{(p.inhale * speedMultiplier).toFixed(1)}s</span>
-            <span className="text-[10px] uppercase tracking-wide">Inhale</span>
+            <span className="text-[10px] uppercase tracking-wide">{getSafePhrase('phase.inhale')}</span>
           </div>
           {p.holdIn > 0 && (
             <div>
               <span className="block font-bold text-card-foreground">{(p.holdIn * speedMultiplier).toFixed(1)}s</span>
-              <span className="text-[10px] uppercase tracking-wide">Hold</span>
+              <span className="text-[10px] uppercase tracking-wide">{getSafePhrase('phase.hold')}</span>
             </div>
           )}
           <div>
             <span className="block font-bold text-card-foreground">{(p.exhale * speedMultiplier).toFixed(1)}s</span>
-            <span className="text-[10px] uppercase tracking-wide">Exhale</span>
+            <span className="text-[10px] uppercase tracking-wide">{getSafePhrase('phase.exhale')}</span>
           </div>
           {p.holdOut > 0 && (
             <div>
               <span className="block font-bold text-card-foreground">{(p.holdOut * speedMultiplier).toFixed(1)}s</span>
-              <span className="text-[10px] uppercase tracking-wide">Hold</span>
+              <span className="text-[10px] uppercase tracking-wide">{getSafePhrase('phase.hold')}</span>
             </div>
           )}
         </div>
@@ -1469,7 +1490,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
           <div className="flex items-center gap-2">
             {ambienceType.includes("Rain") ? <Wind size={12} className="text-primary" /> : <Waves size={12} className="text-primary" />}
             <span className="font-medium text-card-foreground">{ambienceType}</span>
-            <span className="ml-auto text-muted-foreground">8D Audio</span>
+            <span className="ml-auto text-muted-foreground">{getSafePhrase('ui.audio_8d')}</span>
           </div>
         </div>
       </div>
@@ -1518,7 +1539,12 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       </div>
 
       <header className="fixed inset-x-0 top-0 z-30 flex items-center justify-end gap-2 p-6">
-        {!embedMode && <LanguageSwitcherInline />}
+        {!embedMode && (
+          <LanguageSwitcherInline
+            basePath={stripLocalePrefix(pathname)}
+            locale={locale}
+          />
+        )}
         {!embedMode && (
           <>
             {isAuthenticated && user ? (
@@ -1526,7 +1552,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                 <button
                   onClick={() => setShowUserMenu(prev => !prev)}
                   className="inline-flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border border-border/60 bg-card/80 shadow-sm backdrop-blur transition-colors hover:bg-card dark:border-border/40 dark:bg-card/40"
-                  aria-label="Account menu"
+                  aria-label={getSafePhrase('ui.account_menu')}
                 >
                   {user.image ? (
                     <img src={user.image} alt="" className="h-[calc(100%-8px)] w-[calc(100%-8px)] rounded-full object-cover" />
@@ -1538,16 +1564,16 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                 </button>
                 {showUserMenu && (
                   <div className="absolute right-0 top-10 z-50 min-w-[200px] rounded-2xl border border-border/70 bg-background/95 p-3 shadow-lg backdrop-blur-2xl">
-                    <p className="truncate px-2 text-sm font-medium text-card-foreground">{user.name || 'Account'}</p>
+                    <p className="truncate px-2 text-sm font-medium text-card-foreground">{user.name || getSafePhrase('ui.account')}</p>
                     <p className="truncate px-2 text-xs text-muted-foreground">{user.email}</p>
                     <div className="my-2 h-px bg-border/60" />
                     <Link
-                      href="/stats"
+                      href={resolveClientHref("/stats")}
                       onClick={() => setShowUserMenu(false)}
                       className="flex w-full items-center gap-2 rounded-xl px-2 py-2 text-sm text-card-foreground transition-colors hover:bg-card"
                     >
                       <Sprout size={14} />
-                      Your practice
+                      {getSafePhrase('ui.your_practice')}
                     </Link>
                     <button
                       onClick={() => { setShowUserMenu(false); signOut(); }}
@@ -1558,15 +1584,16 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                     </button>
                     <button
                       onClick={async () => {
-                        if (!window.confirm('Permanently delete your account and all synced practice data? This cannot be undone.')) return;
-                        const result = await authClient.deleteUser({ callbackURL: '/' });
-                        if (result.error) window.alert(result.error.message || 'Could not start account deletion.');
-                        else window.alert('Check your email to confirm permanent account deletion.');
+                        if (!window.confirm(getSafePhrase('ui.delete_account_confirm'))) return;
+                        const callbackURL = `${window.location.pathname}${window.location.search}`;
+                        const result = await authClient.deleteUser({ callbackURL });
+                        if (result.error) window.alert(result.error.message || getSafePhrase('ui.delete_account_start_error'));
+                        else window.alert(getSafePhrase('ui.delete_account_check_email'));
                       }}
                       className="flex w-full items-center gap-2 rounded-xl px-2 py-2 text-sm text-destructive transition-colors hover:bg-destructive/10"
                     >
                       <X size={14} />
-                      Delete account
+                      {getSafePhrase('ui.delete_account')}
                     </button>
                   </div>
                 )}
@@ -1626,6 +1653,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
           progress={0}
           isRunning={isRunning}
           onClick={handleTogglePlay}
+          interactionLabel={getSafePhrase(isRunning ? 'ui.pause_session' : 'ui.start_session')}
         />
 
         {/* Duration chips — visible before session starts */}
@@ -1683,10 +1711,10 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
               <div className="flex items-start justify-between">
                 <div>
                   <SheetTitle className="text-xl font-semibold text-card-foreground">{getSafePhrase('ui.settings')}</SheetTitle>
-                  <p className="text-sm text-muted-foreground">Adjust modes, pacing, and personalization.</p>
+                  <p className="text-sm text-muted-foreground">{getSafePhrase('ui.settings_description')}</p>
                 </div>
                 <SheetClose asChild>
-                  <button className="rounded-full p-1.5 text-muted-foreground hover:bg-card hover:text-card-foreground transition-colors">
+                  <button aria-label={getSafePhrase('ui.close')} className="rounded-full p-1.5 text-muted-foreground hover:bg-card hover:text-card-foreground transition-colors">
                     <X size={20} />
                   </button>
                 </SheetClose>
@@ -1695,7 +1723,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
             <div className="flex-1 space-y-6 overflow-y-auto pb-12 min-h-0">
               <div className="flex flex-col gap-4 rounded-2xl bg-card/70 p-4 shadow-inner dark:bg-card/30">
                 <div>
-                  <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">Session</p>
+                  <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">{getSafePhrase('ui.session')}</p>
                   <p className="text-3xl font-semibold text-card-foreground tabular-nums">
                     {Math.floor(sessionSeconds / 60)}:{String(sessionSeconds % 60).padStart(2, '0')}
                   </p>
@@ -1721,8 +1749,8 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                 <div className="rounded-2xl bg-background/50 p-3 text-sm text-muted-foreground shadow-inner dark:bg-background/20">
                   <div className="flex items-center justify-between gap-3">
                     <div>
-                      <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">Binaural beats</p>
-                      <p className="text-base font-semibold text-card-foreground">{binauralEnabled ? 'On' : 'Off'}</p>
+                      <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">{getSafePhrase('ui.binaural_beats')}</p>
+                      <p className="text-base font-semibold text-card-foreground">{getSafePhrase(binauralEnabled ? 'ui.on' : 'ui.off')}</p>
                     </div>
                     <button
                       type="button"
@@ -1739,14 +1767,14 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                     </button>
                   </div>
                   <p className="mt-2 text-xs text-muted-foreground">
-                    Best with headphones. Speakers mix both channels in air, which cancels the beat.
+                    {getSafePhrase('ui.binaural_help')}
                   </p>
                 </div>
 
                 <div className="rounded-2xl bg-background/50 p-3 text-sm text-muted-foreground shadow-inner dark:bg-background/20">
                   <div className="flex items-center justify-between gap-3">
                     <div>
-                      <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">Appearance</p>
+                      <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">{getSafePhrase('ui.appearance')}</p>
                       <p className="text-base font-semibold text-card-foreground">{appearanceLabel}</p>
                     </div>
                     <button
@@ -1772,7 +1800,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                       {getSafePhrase('ui.match_system_default')}
                     </button>
                   ) : (
-                    <p className="mt-2 text-xs text-muted-foreground">Following your device preference.</p>
+                    <p className="mt-2 text-xs text-muted-foreground">{getSafePhrase('ui.following_device')}</p>
                   )}
                 </div>
 
@@ -1807,7 +1835,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
               {aiReasoning && (
                 <div className="rounded-xl border border-border/70 bg-card/70 p-4 text-sm text-card-foreground shadow-sm dark:bg-card/30">
                   <div className="mb-1 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-primary">
-                    AI Suggestion
+                    {getSafePhrase('ui.ai_suggestion')}
                     <button onClick={() => setAiReasoning(null)} className="text-muted-foreground underline hover:text-primary">
                       {getSafePhrase('ui.dismiss')}
                     </button>
@@ -1818,7 +1846,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
 
               {!isRunning ? (
                 <>
-                  <div className="glass-panel flex flex-wrap justify-between gap-1 rounded-2xl p-2">
+                  {!locale && <div className="glass-panel flex flex-wrap justify-between gap-1 rounded-2xl p-2">
                     {Object.values(BREATHING_PATTERNS)
                       .filter(m => {
                         const hideUnlessActive = [
@@ -1855,17 +1883,17 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                           </button>
                         );
                       })}
-                  </div>
+                  </div>}
 
                   <div className="space-y-4 rounded-2xl bg-card/70 p-4 shadow-inner dark:bg-card/30">
                     <div className="space-y-1">
-                      <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Pattern</p>
-                      <p className="text-base text-card-foreground">{currentPattern.description}</p>
+                      <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{getSafePhrase('ui.pattern')}</p>
+                      <p className="text-base text-card-foreground">{locale ? (modeDisplayName ?? currentPattern.name) : currentPattern.description}</p>
                     </div>
                     <div className="space-y-2">
                       <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                        <span>Speed</span>
-                        <span className="text-sm text-card-foreground">{speedMultiplier.toFixed(1)}s per phase</span>
+                        <span>{getSafePhrase('ui.speed')}</span>
+                        <span className="text-sm text-card-foreground">{getSafePhrase('ui.seconds_per_phase', { n: speedMultiplier.toFixed(1) })}</span>
                       </div>
                       <div className="flex items-center gap-3">
                         <Turtle className="h-4 w-4 text-muted-foreground" aria-hidden />
@@ -1877,7 +1905,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                           value={speedMultiplier}
                           onChange={(e) => setSpeedMultiplier(parseFloat(e.target.value))}
                           className="h-2 w-full cursor-pointer appearance-none rounded-full bg-muted accent-primary"
-                          aria-label="Breath speed"
+                          aria-label={getSafePhrase('ui.breath_speed')}
                         />
                         <Rabbit className="h-4 w-4 text-muted-foreground" aria-hidden />
                       </div>
@@ -1892,11 +1920,14 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
 
               {showSettingsNudge && !isAuthenticated && (
                 <ConversionNudge
+                  dismissLabel={getSafePhrase('ui.dismiss')}
                   onSignIn={() => {
                     dismissSettings();
                     setShowSignInSheet(true);
                   }}
                   onDismiss={dismissSettings}
+                  signInLabel={getSafePhrase('auth.sign_in_to_save')}
+                  title={getSafePhrase('auth.save_settings')}
                 />
               )}
 
@@ -1918,6 +1949,8 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
           dayStreak={currentStreak}
           variant={conversionVariant}
           activeMode={activeMode}
+          locale={runtimeLocale}
+          modeDisplayName={modeDisplayName}
         />
       )}
 
@@ -1926,6 +1959,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
           open={showSignInSheet}
           onOpenChange={setShowSignInSheet}
           onSuccess={markConverted}
+          locale={runtimeLocale}
         />
       )}
 

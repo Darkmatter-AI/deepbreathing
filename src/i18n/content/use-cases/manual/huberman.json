@@ -1,0 +1,70 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.use-case.box-breathing-name",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f",
+      "scope": "chrome",
+      "sourceText": "Physiological Sigh",
+      "translations": {
+        "de-de": "Physiologischer Seufzer",
+        "fr-fr": "Soupir physiologique",
+        "ja-jp": "生理的なため息"
+      }
+    },
+    {
+      "messageId": "chrome.use-case.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "977fc48cfd3727f4b5feb2b0833e8453637e7e08864178616a6b15681d2c839e",
+      "scope": "chrome",
+      "sourceText": "Try this guided breathing exercise for huberman lab breathing protocols.",
+      "translations": {
+        "de-de": "Probieren Sie diese geführte Atemübung für die Atemprotokolle von Huberman Lab.",
+        "es-es": "Prueba este ejercicio de respiración guiada para los protocolos de respiración de Huberman Lab.",
+        "fr-fr": "Essayez cet exercice de respiration guidée pour les protocoles de respiration Huberman Lab.",
+        "ja-jp": "Huberman Labの呼吸プロトコル向けの、このガイド付き呼吸エクササイズをお試しください。",
+        "pt-br": "Experimente este exercício de respiração guiado para os protocolos de respiração do Huberman Lab."
+      }
+    },
+    {
+      "messageId": "chrome.use-case.learn-box-breathing",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "fd75a0c1418a75fb7860da61b872c9881106748e5beac6d999f31ad4b09d2a60",
+      "scope": "chrome",
+      "sourceText": "Learn more about Physiological Sigh →",
+      "translations": {
+        "de-de": "Mehr über den physiologischen Seufzer erfahren →",
+        "es-es": "Más información sobre el suspiro fisiológico →",
+        "fr-fr": "En savoir plus sur le soupir physiologique →",
+        "ja-jp": "生理的なため息について詳しく見る →",
+        "pt-br": "Saiba mais sobre o suspiro fisiológico →"
+      }
+    },
+    {
+      "messageId": "relatedTechnique.callToAction",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "ac6f605b6634fb6c554deb1ab314ac7e1b43918b2c1c662c0f37f1e447763f1d",
+      "scope": "content",
+      "sourceText": "Practice the full physiological sigh technique with our guided visualizer",
+      "translations": {
+        "de-de": "Üben Sie die vollständige Technik des physiologischen Seufzers mit unserem geführten Visualizer",
+        "es-es": "Practica la técnica completa del suspiro fisiológico con nuestro visualizador guiado",
+        "fr-fr": "Pratiquez la technique complète du soupir physiologique avec notre visualiseur guidé",
+        "ja-jp": "ガイド付きビジュアライザーで、生理的なため息の技法を最初から最後まで実践しましょう",
+        "pt-br": "Pratique a técnica completa do suspiro fisiológico com nosso visualizador guiado"
+      }
+    },
+    {
+      "messageId": "video.title",
+      "reason": "route-catalog-exact-conflict",
+      "reviewedSourceHash": "2c439c44bc008e8dd6ff0f0052ba000a65e2e1538aba76db7a058503a1de1d12",
+      "scope": "content",
+      "sourceText": "Dr. Andrew Huberman Explains the Physiological Sigh",
+      "translations": {
+        "pt-br": "Dr. Andrew Huberman explica o suspiro fisiológico"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/huberman"
+}

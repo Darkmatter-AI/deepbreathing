@@ -16,15 +16,15 @@ test("resonance header uses a visible Sign up button for signed-out users", () =
   assert.ok(signUpButtonBlock, "expected to find the signed-out auth button block");
   assert.match(
     signUpButtonBlock[0],
-    />\s*Sign up\s*</,
-    "signed-out users should see a visible 'Sign up' button instead of an icon-only control"
+    /aria-label=\{getSafePhrase\('ui\.sign_up'\)\}[\s\S]*?>\s*\{getSafePhrase\('ui\.sign_up'\)\}\s*</,
+    "signed-out users should see the locale-aware Sign up phrase instead of an icon-only control"
   );
 });
 
 test("resonance account portrait keeps the same fixed circular button size as other header controls", () => {
   const source = fs.readFileSync(RESONANCE_COMPONENT, "utf8");
   const accountButtonBlock = source.match(
-    /<button[\s\S]*?aria-label="Account menu"[\s\S]*?<\/button>/
+    /<button[\s\S]*?aria-label=\{getSafePhrase\('ui\.account_menu'\)\}[\s\S]*?<\/button>/
   );
 
   assert.ok(accountButtonBlock, "expected to find the signed-in account menu button block");

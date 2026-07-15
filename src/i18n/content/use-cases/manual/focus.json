@@ -1,0 +1,112 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.use-case.box-breathing-name",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "f10268a765bb0ecf0afdfae16a75bb2587e2c730d3f1f1b776a4cafc877308ea",
+      "scope": "chrome",
+      "sourceText": "Coherent Breathing",
+      "translations": {
+        "de-de": "Kohärente Atmung",
+        "fr-fr": "Respiration cohérente",
+        "ja-jp": "コヒーレント呼吸"
+      }
+    },
+    {
+      "messageId": "chrome.use-case.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "d2f0841c7ea7def332ab7593579b5c7641f6413e5370c90320d8219c9fb09892",
+      "scope": "chrome",
+      "sourceText": "Try this guided breathing exercise for how to boost focus by 40% with coherent breathing.",
+      "translations": {
+        "de-de": "Probieren Sie diese geführte Atemübung, um mit kohärenter Atmung den Fokus um 40 % zu steigern.",
+        "es-es": "Prueba este ejercicio de respiración guiada para aumentar el enfoque un 40 % con la respiración coherente.",
+        "fr-fr": "Essayez cet exercice de respiration guidée pour augmenter la concentration de 40 % grâce à la respiration cohérente.",
+        "ja-jp": "コヒーレント呼吸で集中力を40%向上させる方法として、このガイド付き呼吸エクササイズをお試しください。",
+        "pt-br": "Experimente este exercício de respiração guiada para aumentar o foco em 40% com a respiração coerente."
+      }
+    },
+    {
+      "messageId": "chrome.use-case.learn-box-breathing",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "f607a43ced7c5ce11c681d395d966d0d1a214221d59fcba2227a52b39e36f0a9",
+      "scope": "chrome",
+      "sourceText": "Learn more about Coherent Breathing →",
+      "translations": {
+        "de-de": "Mehr über kohärente Atmung erfahren →",
+        "es-es": "Más información sobre la respiración coherente →",
+        "fr-fr": "En savoir plus sur la respiration cohérente →",
+        "ja-jp": "コヒーレント呼吸について詳しく見る →",
+        "pt-br": "Saiba mais sobre a respiração coerente →"
+      }
+    },
+    {
+      "messageId": "howTo.steps[0].timing",
+      "reason": "route-catalog-normalized-conflict",
+      "reviewedSourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+      "scope": "content",
+      "sourceText": "1 minute",
+      "translations": {
+        "ja-jp": "1分"
+      }
+    },
+    {
+      "messageId": "relatedTechnique.callToAction",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "895d6093911acc0862d90fca818072cdd14ed89878b315c9a6a0498d05ae56c0",
+      "scope": "content",
+      "sourceText": "Practice with the full coherent breathing visualizer and learn the complete HRV optimization protocol",
+      "translations": {
+        "de-de": "Üben Sie mit dem vollständigen Visualizer für kohärente Atmung und lernen Sie das komplette HRV-Optimierungsprotokoll",
+        "es-es": "Practica con el visualizador completo de respiración coherente y aprende el protocolo completo de optimización de la VFC",
+        "fr-fr": "Entraînez-vous avec le visualiseur complet de respiration cohérente et découvrez le protocole complet d'optimisation de la VFC",
+        "ja-jp": "コヒーレント呼吸のフルビジュアライザーで練習し、HRV最適化プロトコルの全体を学びましょう",
+        "pt-br": "Pratique com o visualizador completo de respiração coerente e aprenda o protocolo completo de otimização da VFC"
+      }
+    },
+    {
+      "messageId": "relatedUseCases[2].teaser",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "542ebf656b2ebd59e0c98729fc36207d08d5abfebb46005271e3b4965ff55d14",
+      "scope": "content",
+      "sourceText": "The exact breathing protocols Huberman uses before deep work and sustained focus sessions.",
+      "translations": {
+        "de-de": "Die exakten Atemprotokolle, die Huberman vor Deep Work und anhaltenden Fokussitzungen anwendet.",
+        "es-es": "Los protocolos de respiración exactos que Huberman utiliza antes del trabajo profundo y las sesiones de concentración sostenida.",
+        "fr-fr": "Les protocoles de respiration précis qu'utilise Huberman avant le deep work et les séances de concentration prolongée.",
+        "ja-jp": "深い作業や持続的な集中セッションの前にHubermanが使う、正確な呼吸プロトコル。",
+        "pt-br": "Os protocolos de respiração exatos que Huberman usa antes do deep work e sessões de foco sustentado."
+      }
+    },
+    {
+      "messageId": "science.points[0].explanation",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "eec339f62202229ca95bb00b05f8cf8e38e05a3a0da645728bd44f724364a6e9",
+      "scope": "content",
+      "sourceText": "HRV measures the variation in time between heartbeats. Higher HRV during practice is associated with parasympathetic activity and a more flexible nervous system. Studies show that coherent breathing at around 5 breaths per minute markedly increases HRV during the session itself, and that higher HRV correlates with attention, working memory, and cognitive control.",
+      "translations": {
+        "de-de": "HRV misst die zeitliche Variation zwischen Herzschlägen. Eine höhere HRV während der Übung wird mit parasympathischer Aktivität und einem flexibleren Nervensystem in Verbindung gebracht. Studien zeigen, dass kohärente Atmung mit etwa 5 Atemzügen pro Minute die HRV während der Sitzung selbst deutlich erhöht und dass eine höhere HRV mit Aufmerksamkeit, Arbeitsgedächtnis und kognitiver Kontrolle korreliert.",
+        "es-es": "La VFC mide la variación en el tiempo entre latidos. Una VFC más alta durante la práctica se asocia con la actividad parasimpática y un sistema nervioso más flexible. Los estudios muestran que la respiración coherente a alrededor de 5 respiraciones por minuto aumenta notablemente la VFC durante la propia sesión, y que una VFC más alta se correlaciona con la atención, la memoria de trabajo y el control cognitivo.",
+        "fr-fr": "La VFC mesure la variation du temps entre les battements cardiaques. Une VFC plus élevée pendant la pratique est associée à l'activité parasympathique et à un système nerveux plus flexible. Les études montrent que la respiration cohérente à environ 5 respirations par minute augmente nettement la VFC pendant la séance elle-même, et qu'une VFC plus élevée est corrélée à l'attention, à la mémoire de travail et au contrôle cognitif.",
+        "ja-jp": "HRVは心拍間の時間のばらつきを測定します。練習中のHRVが高いことは副交感神経活動およびより柔軟な神経系と関連づけられます。研究では、1分あたり約5回のコヒーレント呼吸がセッション中のHRVを著しく高め、HRVが高いほど注意力、ワーキングメモリ、認知制御と相関することが示されています。",
+        "pt-br": "A VFC mede a variação no tempo entre batimentos cardíacos. Uma VFC mais alta durante a prática está associada à atividade parassimpática e a um sistema nervoso mais flexível. Estudos mostram que a respiração coerente em cerca de 5 respirações por minuto aumenta marcadamente a VFC durante a própria sessão, e que uma VFC mais alta se correlaciona com atenção, memória de trabalho e controle cognitivo."
+      }
+    },
+    {
+      "messageId": "solution.content",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "e9ff6ff87c57be53ddb611bcea875c090db738b674529433bc9b0aac41e0c33e",
+      "scope": "content",
+      "sourceText": "Coherent breathing (also called resonance frequency breathing) is breathing at a rate of 5 breaths per minute (0.1 Hz). This specific rate is associated with peak heart rate variability (HRV) during practice, a biomarker linked to nervous system regulation and cognitive performance. [Research suggests that a brief slow-breathing session before deep work can improve attention and working memory, particularly under stress](https://doi.org/10.1007/s41465-021-00218-3).",
+      "translations": {
+        "de-de": "Kohärente Atmung (auch Resonanzfrequenz-Atmung genannt) ist Atmen mit einer Rate von 5 Atemzügen pro Minute (0,1 Hz). Diese spezifische Rate wird mit maximaler Herzfrequenzvariabilität (HRV) während der Übung in Verbindung gebracht, einem Biomarker, der mit der Regulation des Nervensystems und der kognitiven Leistung zusammenhängt. [Forschung legt nahe, dass eine kurze langsame Atemsitzung vor Deep Work Aufmerksamkeit und Arbeitsgedächtnis verbessern kann, insbesondere unter Stress](https://doi.org/10.1007/s41465-021-00218-3).",
+        "es-es": "La respiración coherente (también llamada respiración a frecuencia de resonancia) consiste en respirar a un ritmo de 5 respiraciones por minuto (0,1 Hz). Esta frecuencia específica se asocia con la variabilidad de la frecuencia cardíaca (VFC) máxima durante la práctica, un biomarcador vinculado a la regulación del sistema nervioso y al rendimiento cognitivo. [La investigación sugiere que una breve sesión de respiración lenta antes del trabajo profundo puede mejorar la atención y la memoria de trabajo, en particular bajo estrés](https://doi.org/10.1007/s41465-021-00218-3).",
+        "fr-fr": "La respiration cohérente (également appelée respiration à fréquence de résonance) consiste à respirer à un rythme de 5 respirations par minute (0,1 Hz). Ce rythme précis est associé à une variabilité de la fréquence cardiaque (VFC) maximale pendant la pratique, un biomarqueur lié à la régulation du système nerveux et aux performances cognitives. [La recherche suggère qu'une brève séance de respiration lente avant le deep work peut améliorer l'attention et la mémoire de travail, en particulier sous stress](https://doi.org/10.1007/s41465-021-00218-3).",
+        "ja-jp": "コヒーレント呼吸（共鳴周波数呼吸とも呼ばれる）は、1分あたり5回（0.1 Hz）のペースで呼吸することです。この特定のペースは、練習中の心拍変動（HRV）のピークと関連づけられ、神経系の調節および認知パフォーマンスに結びつくバイオマーカーです。[研究は、深い作業の前に短いスロー呼吸セッションを行うと、特にストレス下で注意力とワーキングメモリが改善される可能性があることを示唆しています](https://doi.org/10.1007/s41465-021-00218-3)。",
+        "pt-br": "A respiração coerente (também chamada de respiração na frequência de ressonância) é respirar a uma taxa de 5 respirações por minuto (0,1 Hz). Essa taxa específica está associada ao pico da variabilidade da frequência cardíaca (VFC) durante a prática, um biomarcador ligado à regulação do sistema nervoso e ao desempenho cognitivo. [Pesquisas sugerem que uma breve sessão de respiração lenta antes do deep work pode melhorar a atenção e a memória de trabalho, particularmente sob estresse](https://doi.org/10.1007/s41465-021-00218-3)."
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/focus"
+}

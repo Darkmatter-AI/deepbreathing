@@ -1,0 +1,51 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "478呼吸法で眠りにつくまで、どのくらいの時間がかかりますか？",
+      "locale": "ja-jp",
+      "reason": "The approved value corrupts the 4-7-8 technique name by removing its separators.",
+      "replacement": "4-7-8呼吸法で眠りにつくまで、どのくらいかかりますか？",
+      "reviewedSourceHash": "23151b71d2f2cf7d5beb93343582f4120d2073ec2ea67cc4cb5d632435974b73",
+      "sourcePath": "faqs[0].question",
+      "sourceText": "How long does it take to fall asleep with 4-7-8 breathing?"
+    },
+    {
+      "currentCatalogValue": "ワイル博士は、478呼吸法を「神経系のための自然な鎮静剤」と表現しています。",
+      "locale": "ja-jp",
+      "reason": "The approved value corrupts the 4-7-8 technique name by removing its separators.",
+      "replacement": "ワイル博士は、4-7-8呼吸法を「神経系のための自然な鎮静剤」と表現しています。",
+      "reviewedSourceHash": "1d7792c759d3d68cfce640c25e8564de39798c249ddb5c6ce380cc390baf52be",
+      "sourcePath": "references[2].summary",
+      "sourceText": "Dr. Weil describes the 4-7-8 technique as a 'natural tranquilizer for the nervous system.'"
+    },
+    {
+      "currentCatalogValue": "睡眠とストレス軽減に対する478呼吸法の効果に関する医学的概要。",
+      "locale": "ja-jp",
+      "reason": "The approved value corrupts the 4-7-8 technique name by removing its separators.",
+      "replacement": "睡眠とストレス軽減に対する4-7-8呼吸法の効果に関する医学的概要。",
+      "reviewedSourceHash": "0c47283b4d6d0e1367c5c8b3149b7e69d92cc88bdc18e57823a954eb4abaf611",
+      "sourcePath": "references[3].summary",
+      "sourceText": "Medical overview of the 4-7-8 technique's benefits for sleep and stress reduction."
+    },
+    {
+      "currentCatalogValue": "睡眠とリラックスのための478呼吸法",
+      "locale": "ja-jp",
+      "reason": "The approved value corrupts the 4-7-8 technique name by removing its separators.",
+      "replacement": "睡眠とリラクゼーションのための4-7-8呼吸法",
+      "reviewedSourceHash": "2b226e7e7c528435cb748c486cf00c4b790724df05c39c74b53fec4e29fa6e4f",
+      "sourcePath": "references[3].title",
+      "sourceText": "4-7-8 Breathing Method For Sleep and Relaxation"
+    },
+    {
+      "currentCatalogValue": "高血圧でお悩みですか？同じ478呼吸法が高血圧の管理にどのように役立つかご覧ください。",
+      "locale": "ja-jp",
+      "reason": "The approved value corrupts the 4-7-8 technique name by removing its separators.",
+      "replacement": "高血圧でお悩みですか？同じ4-7-8呼吸法が高血圧の管理にどのように役立つかをご覧ください。",
+      "reviewedSourceHash": "207e17e3d33541c9ca4401088563fbe239332b2bd2e3d5e63f25290cbc31b479",
+      "sourcePath": "relatedUseCases[1].teaser",
+      "sourceText": "High blood pressure? See how the same 4-7-8 technique can help manage hypertension"
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/sleep"
+}

@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "title": "About Deep Breathing Exercises",
+    "description": "Deep Breathing Exercises is a free breathing visualizer and set of evidence-informed breathing guides for calm, focus, and sleep.",
+    "socialTitle": "About Deep Breathing Exercises",
+    "socialDescription": "A free breathing visualizer and evidence-informed guides for calm, focus, and sleep."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "about": "About"
+  },
+  "hero": {
+    "eyebrow": "DEEP BREATHING EXERCISES",
+    "title": "About",
+    "intro": "Deep Breathing Exercises is a free breathing visualizer and a set of evidence-informed guides for calm, focus, and sleep."
+  },
+  "sections": {
+    "whatThisIs": {
+      "title": "What this is",
+      "beforeLink": "This site provides simple, guided breathing sessions (box breathing, 4-7-8, coherent breathing for HRV, and ",
+      "linkLabel": "the physiological sigh",
+      "afterLink": ") plus short guides explaining when to use each technique."
+    },
+    "disclaimer": {
+      "title": "What this is not",
+      "body": "This is not medical treatment. If you have a cardiopulmonary condition, are pregnant, or have a history of fainting, keep breathing gentle, avoid long breath holds, and consult a clinician for personalized advice."
+    },
+    "whoBuilt": {
+      "title": "Who built this",
+      "beforeLink": "Deep Breathing Exercises is built by ",
+      "linkLabel": "Abi Abiassi",
+      "afterLink": ", founder, photographer, and breathwork practitioner. He built it as a free visualizer for the techniques he uses daily."
+    },
+    "editorial": {
+      "title": "Editorial approach",
+      "body": "Each technique page names the practitioner or tradition it comes from, links out to the peer-reviewed research that informs the claims, and shows when it was last updated. Where evidence is weak, we say so.",
+      "linkLabel": "Read our editorial policy →"
+    },
+    "links": {
+      "title": "Links",
+      "breathingTechniques": "Breathing techniques",
+      "guidesByGoal": "Guides by goal",
+      "aboutAbi": "About Abi",
+      "editorialPolicy": "Editorial policy",
+      "privacy": "Privacy"
+    },
+    "credits": {
+      "title": "Created by",
+      "abiassi": "Abiassi",
+      "darkmatter": "Darkmatter AI Labs"
+    }
+  }
+}

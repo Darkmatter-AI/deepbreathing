@@ -1,0 +1,83 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.use-case.box-breathing-name",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "62093b8b8d59db7b2a2c7dd4ee6f9268bc78440b3a4fd6dffcca574a73cd9420",
+      "scope": "chrome",
+      "sourceText": "Nadi Shodhana",
+      "translations": {
+        "es-es": "Nadi Shodhana",
+        "ja-jp": "ナディ・ショーダナ"
+      }
+    },
+    {
+      "messageId": "chrome.use-case.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "bc2a13197014310f39c7b3ce10f86e5022e363be3ecb0868444a9903ca1a561e",
+      "scope": "chrome",
+      "sourceText": "Try this guided breathing exercise for pranayama breathing: the complete guide to yogic breathing.",
+      "translations": {
+        "de-de": "Probiere diese geführte Atemübung für Pranayama-Atmung: der vollständige Leitfaden zur yogischen Atmung.",
+        "es-es": "Prueba este ejercicio de respiración guiada para la respiración pranayama: la guía completa de la respiración yóguica.",
+        "fr-fr": "Essayez cet exercice de respiration guidée pour la respiration pranayama : le guide complet de la respiration yogique.",
+        "ja-jp": "プラナヤマ呼吸のための、このガイド付き呼吸エクササイズを試してみましょう：ヨガ呼吸の完全ガイド。",
+        "pt-br": "Experimente este exercício de respiração guiada para respiração pranayama: o guia completo da respiração iogue."
+      }
+    },
+    {
+      "messageId": "chrome.use-case.learn-box-breathing",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "2b34c5441d772fb250d987d0e073777b7faca11f35f20e4ce9824f79902253d6",
+      "scope": "chrome",
+      "sourceText": "Learn more about Nadi Shodhana →",
+      "translations": {
+        "de-de": "Mehr über Nadi Shodhana erfahren →",
+        "es-es": "Más información sobre Nadi Shodhana →",
+        "fr-fr": "En savoir plus sur Nadi Shodhana →",
+        "ja-jp": "ナディ・ショーダナについて詳しく見る →",
+        "pt-br": "Saiba mais sobre Nadi Shodhana →"
+      }
+    },
+    {
+      "messageId": "hero.title",
+      "reason": "route-catalog-exact-conflict",
+      "reviewedSourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+      "scope": "content",
+      "sourceText": "Pranayama Breathing: The Complete Guide to Yogic Breathing",
+      "translations": {
+        "de-de": "Pranayama-Atmung: Der vollständige Leitfaden zur yogischen Atmung",
+        "es-es": "Respiración pranayama: la guía completa de la respiración yóguica",
+        "fr-fr": "Respiration pranayama : le guide complet de la respiration yogique",
+        "ja-jp": "プラナヤマ呼吸：ヨガ呼吸の完全ガイド",
+        "pt-br": "Respiração pranayama: o guia completo da respiração iogue"
+      }
+    },
+    {
+      "messageId": "relatedTechnique.callToAction",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "2a7b6982078dbb12ba6ddc33a5254f9555a2f407df668127772be9876a0744aa",
+      "scope": "content",
+      "sourceText": "Practice Nadi Shodhana with our interactive visualizer",
+      "translations": {
+        "de-de": "Übe Nadi Shodhana mit unserem interaktiven Visualizer",
+        "es-es": "Practica Nadi Shodhana con nuestro visualizador interactivo",
+        "fr-fr": "Pratiquez Nadi Shodhana avec notre visualiseur interactif",
+        "ja-jp": "インタラクティブなビジュアライザーでナディ・ショーダナを練習する",
+        "pt-br": "Pratique Nadi Shodhana com nosso visualizador interativo"
+      }
+    },
+    {
+      "messageId": "video.title",
+      "reason": "route-catalog-exact-conflict",
+      "reviewedSourceHash": "ab8ec13e5e7a98dd73f271548ab96f92aa638f92fed61d0f38c655a3ecfda086",
+      "scope": "content",
+      "sourceText": "James Nestor on the Perfect Breath",
+      "translations": {
+        "es-es": "James Nestor sobre la respiración perfecta"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/pranayama"
+}

@@ -1,0 +1,42 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "Practica la respiración de fuego (Kapalabhati), la técnica rápida de respiración de yoga Kundalini para energía y claridad mental. Temporizador guiado",
+      "locale": "es-es",
+      "reason": "The approved value ends in an incomplete fragment and omits that the timer is free and visual.",
+      "replacement": "Practica la respiración de fuego (Kapalabhati), la técnica rápida de respiración del yoga kundalini para obtener energía y claridad mental. Temporizador guiado gratuito con guía visual.",
+      "reviewedSourceHash": "7ee9952b44247e098a13ef0c094dc9223a84a7e74c0c1a0171fcfe00d2a58e03",
+      "sourcePath": "meta.description",
+      "sourceText": "Practice breath of fire (Kapalabhati) — the rapid Kundalini yoga breathing technique for energy and mental clarity. Free guided timer with visual pacer."
+    },
+    {
+      "currentCatalogValue": "Practica la respiración de fuego (Kapalabhati), la técnica rápida de respiración de yoga Kundalini para energía y claridad mental. Temporizador guiado",
+      "locale": "es-es",
+      "reason": "The approved value ends in an incomplete fragment and omits that the timer is free and visual.",
+      "replacement": "Practica la respiración de fuego (Kapalabhati), la técnica rápida de respiración del yoga kundalini para obtener energía y claridad mental. Temporizador guiado gratuito con guía visual.",
+      "reviewedSourceHash": "7ee9952b44247e098a13ef0c094dc9223a84a7e74c0c1a0171fcfe00d2a58e03",
+      "sourcePath": "meta.ogDescription",
+      "sourceText": "Practice breath of fire (Kapalabhati) — the rapid Kundalini yoga breathing technique for energy and mental clarity. Free guided timer with visual pacer."
+    },
+    {
+      "currentCatalogValue": "Practica la respiración de fuego (Kapalabhati), la técnica rápida de respiración de yoga Kundalini para energía y claridad mental. Temporizador guiado",
+      "locale": "es-es",
+      "reason": "The approved value appends a dangling timer fragment that is absent from this source.",
+      "replacement": "Practica la respiración de fuego (Kapalabhati), la técnica rápida de respiración del yoga kundalini para obtener energía y claridad mental.",
+      "reviewedSourceHash": "f7f1c5afe5825966e8a7be56de8b35a196097a2ad64de10742cef71e7ab68a32",
+      "sourcePath": "meta.twitterDescription",
+      "sourceText": "Practice breath of fire (Kapalabhati) — the rapid Kundalini yoga breathing technique for energy and mental clarity."
+    },
+    {
+      "currentCatalogValue": "火の呼吸の後にクールダウンするためにuindai呼吸を使うと、落ち着くヨガの呼吸になります。",
+      "locale": "ja-jp",
+      "reason": "The approved value contains the corrupt technique name 'uindai' instead of ujjayi.",
+      "replacement": "火の呼吸と組み合わせやすい穏やかなヨガ呼吸です。激しい練習の後は、ウジャイ呼吸でクールダウンします。",
+      "reviewedSourceHash": "87bba192325109d008fdb116690afc4d4bbe4af51e66ce19dfbc74075bacc5b6",
+      "sourcePath": "related[2].reason",
+      "sourceText": "A calming yoga breath that pairs well with breath of fire — use ujjayi to cool down after intense practice."
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/breathe/breath-of-fire"
+}

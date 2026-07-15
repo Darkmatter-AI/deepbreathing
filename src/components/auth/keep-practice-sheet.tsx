@@ -1,9 +1,13 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { Activity, Check, Loader2, X } from "lucide-react";
 import { signIn } from "@/lib/auth-client";
 import { Sheet, SheetContent } from "@/components/ui/sheet";
+import {
+  createRuntimePhraseResolver,
+  type RuntimePhraseKey,
+} from "@/components/resonance/runtime-phrases";
 
 function trackEvent(name: string, params?: Record<string, string | number | boolean>) {
   if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
@@ -20,6 +24,7 @@ interface KeepPracticeSheetProps {
   accentColor?: string;
   sessionsCompleted: number;
   dayStreak: number;
+  locale?: string;
 }
 
 const PREFIX = "cpk";
@@ -28,6 +33,11 @@ function formatDuration(seconds: number): string {
   const minutes = Math.floor(seconds / 60);
   const remainingSeconds = seconds % 60;
   return `${minutes}:${String(remainingSeconds).padStart(2, "0")}`;
+}
+
+function getAuthCallbackURL() {
+  if (typeof window === "undefined") return "/";
+  return `${window.location.pathname}${window.location.search}`;
 }
 
 export function KeepPracticeSheet({
@@ -39,11 +49,15 @@ export function KeepPracticeSheet({
   accentColor = "#f6743b",
   sessionsCompleted,
   dayStreak,
+  locale = "en",
 }: KeepPracticeSheetProps) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [emailOpen, setEmailOpen] = useState(false);
   const swapTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const phrases = useMemo(() => createRuntimePhraseResolver(locale), [locale]);
+  const t = (key: RuntimePhraseKey, vars?: Record<string, string | number>) =>
+    phrases.resolve(key, vars).text;
 
   useEffect(() => {
     if (open) trackEvent("signin_prompt_view", { variant: "keep_practice" });
@@ -70,7 +84,7 @@ export function KeepPracticeSheet({
   const handleApple = async () => {
     trackEvent("signin_apple_clicked", { variant: "keep_practice" });
     try {
-      await signIn.social({ provider: "apple", callbackURL: "/" });
+      await signIn.social({ provider: "apple", callbackURL: getAuthCallbackURL() });
       onSuccess?.();
     } catch {
       // Apple OAuth redirects; errors are shown by the provider callback.
@@ -79,7 +93,7 @@ export function KeepPracticeSheet({
   const handleGoogle = async () => {
     trackEvent("signin_google_clicked", { variant: "keep_practice" });
     try {
-      await signIn.social({ provider: "google", callbackURL: "/" });
+      await signIn.social({ provider: "google", callbackURL: getAuthCallbackURL() });
       onSuccess?.();
     } catch {
       // Google OAuth redirects; errors are rare here.
@@ -91,7 +105,7 @@ export function KeepPracticeSheet({
     setStatus("sending");
     trackEvent("signin_magic_link_sent", { variant: "keep_practice" });
     try {
-      await signIn.magicLink({ email, callbackURL: "/" });
+      await signIn.magicLink({ email, callbackURL: getAuthCallbackURL() });
       onSuccess?.();
       swapTimer.current = setTimeout(() => setStatus("sent"), 300);
     } catch {
@@ -101,12 +115,12 @@ export function KeepPracticeSheet({
 
   const headline =
     sessionsCompleted >= 2
-      ? `That's ${sessionsCompleted} sessions of calm, keep it?`
+      ? t("auth.sessions_keep", { n: sessionsCompleted })
       : dayStreak >= 2
-        ? `That's a ${dayStreak}-day streak, keep it?`
-        : "Save your progress?";
+        ? t("auth.streak_keep", { n: dayStreak })
+        : t("auth.save_progress_question");
   const sessionCount = sessionsCompleted > 0
-    ? `${sessionsCompleted} ${sessionsCompleted === 1 ? "session" : "sessions"}`
+    ? t(sessionsCompleted === 1 ? "auth.session_count" : "auth.sessions_count", { n: sessionsCompleted })
     : null;
   const sending = status === "sending";
   const sent = status === "sent";
@@ -119,15 +133,15 @@ export function KeepPracticeSheet({
         className="inset-0 flex items-center justify-center border-0 bg-transparent p-4 shadow-none outline-none"
       >
         <style>{CSS}</style>
-        <div className={`${PREFIX}-sheet`} role="dialog" aria-label="Create a free account">
-          <button className={`${PREFIX}-x`} onClick={handleClose} aria-label="Close">
+        <div className={`${PREFIX}-sheet`} role="dialog" aria-label={t("auth.create_free_account")}>
+          <button className={`${PREFIX}-x`} onClick={handleClose} aria-label={t("ui.close")}>
             <X size={17} />
           </button>
           {sent ? (
             <div className={`${PREFIX}-success`}>
               <div className={`${PREFIX}-check-ring`}><Check size={26} /></div>
-              <h3>Check your email</h3>
-              <p>We sent a link to <b>{email.trim() || "you"}</b></p>
+              <h3>{t("auth.check_email")}</h3>
+              <p>{t("auth.sent_link_to")} <b>{email.trim() || t("auth.you")}</b></p>
             </div>
           ) : (
             <>
@@ -140,21 +154,21 @@ export function KeepPracticeSheet({
                   <Activity size={13} className={`${PREFIX}-glyph`} style={{ color: accentColor }} />
                 </div>
                 <div className={`${PREFIX}-card-text`}>
-                  <div className={`${PREFIX}-eyebrow`}>✓ SESSION COMPLETE</div>
+                  <div className={`${PREFIX}-eyebrow`}>✓ {t("session.complete")}</div>
                   <div className={`${PREFIX}-mode`}>{sessionMode}</div>
                   <div className={`${PREFIX}-meta`}>
                     <span className={`${PREFIX}-dur`}>{formatDuration(sessionSeconds)}</span>
                     <span className={`${PREFIX}-dot`} aria-hidden="true">·</span>
-                    <span>just now</span>
+                    <span>{t("auth.just_now")}</span>
                   </div>
                   {sessionCount ? <p className={`${PREFIX}-stats`}>{sessionCount}</p> : null}
                 </div>
               </div>
               <h2 className={`${PREFIX}-title`}>{headline}</h2>
-              <p className={`${PREFIX}-sub`}>Your progress is kept on this device only. A free account saves it on any screen.</p>
+              <p className={`${PREFIX}-sub`}>{t("auth.local_only")}</p>
               <button className={`${PREFIX}-apple`} onClick={handleApple}>
                 <span className={`${PREFIX}-apple-logo`} aria-hidden="true"></span>
-                <span>Continue with Apple</span>
+                <span>{t("auth.continue_apple")}</span>
               </button>
               <button className={`${PREFIX}-google`} onClick={handleGoogle}>
                 <svg viewBox="0 0 24 24" className={`${PREFIX}-g-logo`} aria-hidden="true">
@@ -163,19 +177,19 @@ export function KeepPracticeSheet({
                   <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93z" />
                   <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
                 </svg>
-                <span>Continue with Google</span>
+                <span>{t("auth.continue_google")}</span>
               </button>
               <div className={`${PREFIX}-email-wrap${emailOpen ? " open" : ""}`}>
                 <form className={`${PREFIX}-email-row`} onSubmit={handleMagicLink}>
-                  <input className={`${PREFIX}-email-input`} type="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="Enter your email" aria-label="Email address" required />
+                  <input className={`${PREFIX}-email-input`} type="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder={t("auth.enter_email")} aria-label={t("auth.email_address")} required />
                   <button className={`${PREFIX}-magic`} type="submit" disabled={sending || !email.trim()}>
-                    {sending ? <Loader2 size={15} className={`${PREFIX}-spin`} /> : "Send link"}
+                    {sending ? <Loader2 size={15} className={`${PREFIX}-spin`} /> : t("auth.send_link")}
                   </button>
                 </form>
-                {status === "error" && <p className={`${PREFIX}-err`}>Something went wrong. Please try again.</p>}
+                {status === "error" && <p className={`${PREFIX}-err`}>{t("auth.something_went_wrong")}</p>}
               </div>
               <button className={`${PREFIX}-email-link`} onClick={() => setEmailOpen((value) => !value)} aria-expanded={emailOpen}>
-                <span className={`${PREFIX}-u`}>or save with email</span>
+                <span className={`${PREFIX}-u`}>{t("auth.save_with_email")}</span>
               </button>
             </>
           )}

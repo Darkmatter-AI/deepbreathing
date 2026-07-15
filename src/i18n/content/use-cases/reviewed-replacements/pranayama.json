@@ -1,0 +1,79 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "Respiração Pranayama: O Guia Completo de Respiração Iogue",
+      "locale": "pt-br",
+      "reason": "The approved value injects literal Markdown emphasis into plain text.",
+      "replacement": "Respiração pranayama: o guia completo da respiração iogue",
+      "reviewedSourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+      "sourcePath": "hero.title",
+      "sourceText": "Pranayama Breathing: The Complete Guide to Yogic Breathing"
+    },
+    {
+      "currentCatalogValue": "**Pranayama Respiração**: Guia Completo de Respiração Iogue",
+      "locale": "pt-br",
+      "reason": "The approved value injects literal Markdown emphasis into plain text.",
+      "replacement": "Respiração pranayama: guia completo da respiração iogue",
+      "reviewedSourceHash": "83e0df869953bf80f6c8468ed477bc99a3c9826a4dc48438ca3faa9e22b3d4d6",
+      "sourcePath": "meta.ogTitle",
+      "sourceText": "Pranayama Breathing: Complete Guide to Yogic Breathing"
+    },
+    {
+      "currentCatalogValue": "Práticas de respiração ancestrais para a vida moderna. Aprenda técnicas de **pranayama respiração** com visualizadores gratuitos.",
+      "locale": "pt-br",
+      "reason": "The approved value injects literal Markdown emphasis into plain text.",
+      "replacement": "Práticas respiratórias ancestrais para a vida moderna. Aprenda técnicas de pranayama com visualizadores gratuitos.",
+      "reviewedSourceHash": "520b7a7167579c1910f565b021f7e29e6999ed699418fbd11a0bde75cd51caba",
+      "sourcePath": "meta.twitterDescription",
+      "sourceText": "Ancient breath practices for modern life. Learn pranayama techniques with free visualizers."
+    },
+    {
+      "currentCatalogValue": "**Pranayama Respiração**: O Guia Completo para a Respiração Iogue",
+      "locale": "pt-br",
+      "reason": "The approved value injects literal Markdown emphasis into plain text.",
+      "replacement": "Respiração pranayama: o guia completo da respiração iogue",
+      "reviewedSourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+      "sourcePath": "meta.twitterTitle",
+      "sourceText": "Pranayama Breathing: The Complete Guide to Yogic Breathing"
+    },
+    {
+      "currentCatalogValue": "Guía completa de los pranayamas: técnicas de respiración",
+      "locale": "es-es",
+      "reason": "The approved metadata value omits the source's date marker.",
+      "replacement": "Pranayama: guía completa de la respiración yóguica (2026)",
+      "reviewedSourceHash": "83a1f76c71eda60015f80ba4f2b33eb71521b9f2c70b463e1e1fbaca91dba550",
+      "sourcePath": "meta.title",
+      "sourceText": "Pranayama: Complete Guide to Yogic Breathing (2026)",
+      "numericReviewReason": "The replacement restores the source's 2026 date marker, which the approved value omits."
+    },
+    {
+      "currentCatalogValue": "Aprende técnicas de respiración pranayama: Nadi Shodhana, Ujjayi, Kapalabhati y más. Prácticas yoguis ancestrales con la ciencia moderna. Incluye",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Aprende técnicas de respiración pranayama: Nadi Shodhana, Ujjayi, Kapalabhati y más. Prácticas yóguicas ancestrales con ciencia moderna. Incluye visualizadores gratuitos.",
+      "reviewedSourceHash": "7df145ab5dc845fc145feed7724f63628b0685f34b9be74074f83518032befb5",
+      "sourcePath": "meta.description",
+      "sourceText": "Learn pranayama breathing techniques: Nadi Shodhana, Ujjayi, Kapalabhati, and more. Ancient yogic practices with modern science. Free visualizers included."
+    },
+    {
+      "currentCatalogValue": "Aprende técnicas de respiración pranayama: Nadi Shodhana, Ujjayi, Kapalabhati y más. Prácticas yoguis ancestrales con la ciencia moderna. Incluye",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Aprende pranayama, la ciencia yóguica del control de la respiración. Nadi Shodhana, Ujjayi y más. Visualizadores gratuitos.",
+      "reviewedSourceHash": "43c64bb5f32a7af6b7acd4750185d5fc229ab324a10e10aee7176a0060c9d8e8",
+      "sourcePath": "meta.ogDescription",
+      "sourceText": "Learn pranayama: the yogic science of breath control. Nadi Shodhana, Ujjayi, and more. Free visualizers."
+    },
+    {
+      "currentCatalogValue": "Aprende técnicas de respiración pranayama: Nadi Shodhana, Ujjayi, Kapalabhati y más. Prácticas yoguis ancestrales con la ciencia moderna. Incluye",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Prácticas respiratorias ancestrales para la vida moderna. Aprende técnicas de pranayama con visualizadores gratuitos.",
+      "reviewedSourceHash": "520b7a7167579c1910f565b021f7e29e6999ed699418fbd11a0bde75cd51caba",
+      "sourcePath": "meta.twitterDescription",
+      "sourceText": "Ancient breath practices for modern life. Learn pranayama techniques with free visualizers."
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/pranayama"
+}

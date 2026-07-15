@@ -1,0 +1,190 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.pattern.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "b7e7abd7b06f0625cfd5c7289f597ecd7c5e4b0044e0cdf7f20840eb44ab8e04",
+      "scope": "chrome",
+      "sourceText": "Try this guided belly breathing: diaphragmatic breathing exercises exercise — it really helps.",
+      "translations": {
+        "de-de": "Probiere diese geführte Übung zur Bauchatmung mit Zwerchfellatmung aus – sie hilft wirklich.",
+        "es-es": "Prueba este ejercicio guiado de respiración abdominal y diafragmática: realmente ayuda.",
+        "fr-fr": "Essayez cet exercice guidé de respiration abdominale et diaphragmatique : il aide vraiment.",
+        "ja-jp": "このガイド付きの腹式呼吸・横隔膜呼吸エクササイズを試してみてください。本当に役立ちます。",
+        "pt-br": "Experimente este exercício guiado de respiração abdominal e diafragmática: ele realmente ajuda."
+      }
+    },
+    {
+      "messageId": "chrome.pattern.og-alt",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "d9b65a923229b9f96c857a5113e4ef2cf4d9694b1891aff0053437d280a31b43",
+      "scope": "chrome",
+      "sourceText": "Belly Breathing: Diaphragmatic Breathing Exercises – Interactive breathing visualizer",
+      "translations": {
+        "de-de": "Bauchatmung: Zwerchfell-Atemübungen – interaktiver Atemvisualisierer",
+        "es-es": "Respiración abdominal: ejercicios de respiración diafragmática – visualizador de respiración interactivo",
+        "fr-fr": "Respiration abdominale : exercices de respiration diaphragmatique – visualiseur de respiration interactif",
+        "ja-jp": "腹式呼吸：横隔膜呼吸エクササイズ – インタラクティブ呼吸ビジュアライザー",
+        "pt-br": "Respiração abdominal: exercícios de respiração diafragmática – visualizador interativo da respiração"
+      }
+    },
+    {
+      "messageId": "chrome.pattern.related-pursed-lip-title",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "b44d6b2987526fe1ecca59bd20db1dfa5478a2ed3fd051905793342a73747bd2",
+      "scope": "chrome",
+      "sourceText": "Pursed Lip Breathing Technique",
+      "translations": {
+        "de-de": "Atemtechnik mit Lippenbremse",
+        "pt-br": "Técnica de respiração com lábios franzidos"
+      }
+    },
+    {
+      "messageId": "chrome.pattern.share-section-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "6231847c1dcf6dd250070e561a84fbb98d4770a66fdae5c4a50b5e2cbda67153",
+      "scope": "chrome",
+      "sourceText": "Know someone who could benefit from belly breathing: diaphragmatic breathing exercises? Send them a direct link.",
+      "translations": {
+        "de-de": "Kennst du jemanden, der von Bauchatmung und Zwerchfell-Atemübungen profitieren könnte? Schick der Person einen direkten Link.",
+        "es-es": "¿Conoces a alguien que podría beneficiarse de la respiración abdominal y los ejercicios de respiración diafragmática? Envíale un enlace directo.",
+        "fr-fr": "Vous connaissez quelqu’un qui pourrait bénéficier de la respiration abdominale et des exercices de respiration diaphragmatique ? Envoyez-lui un lien direct.",
+        "ja-jp": "腹式呼吸や横隔膜呼吸エクササイズが役立ちそうな人をご存じですか？直接リンクを送ってください。",
+        "pt-br": "Conhece alguém que poderia se beneficiar da respiração abdominal e dos exercícios de respiração diafragmática? Envie um link direto."
+      }
+    },
+    {
+      "messageId": "body[3].content",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "e63b8cf339f8b2f8fd5be04694249cedca5e18b68322f9338caf6a52d9c08b70",
+      "scope": "content",
+      "sourceText": "Deep diaphragmatic breaths stimulate the vagus nerve, activating the parasympathetic 'rest and digest' response. [Studies show regular practice can lower cortisol](https://doi.org/10.3389/fpsyg.2017.00874), reduce blood pressure, improve heart rate variability, and decrease anxiety. It's also the foundation for singing, public speaking, and athletic performance.",
+      "translations": {
+        "de-de": "Tiefe Zwerchfellatemzüge stimulieren den Vagusnerv und aktivieren die parasympathische Reaktion für Ruhe und Verdauung. [Studien zeigen, dass regelmäßiges Üben den Cortisolspiegel senken kann](https://doi.org/10.3389/fpsyg.2017.00874), den Blutdruck reduziert, die Herzfrequenzvariabilität verbessert und Angst verringert. Sie bildet außerdem die Grundlage für Gesang, öffentliches Sprechen und sportliche Leistung.",
+        "es-es": "Las respiraciones diafragmáticas profundas estimulan el nervio vago y activan la respuesta parasimpática de «descanso y digestión». [Los estudios muestran que la práctica regular puede reducir el cortisol](https://doi.org/10.3389/fpsyg.2017.00874), disminuir la presión arterial, mejorar la variabilidad de la frecuencia cardíaca y reducir la ansiedad. También es la base para cantar, hablar en público y el rendimiento deportivo.",
+        "fr-fr": "Les respirations diaphragmatiques profondes stimulent le nerf vague et activent la réponse parasympathique de « repos et digestion ». [Des études montrent qu’une pratique régulière peut réduire le cortisol](https://doi.org/10.3389/fpsyg.2017.00874), faire baisser la tension artérielle, améliorer la variabilité de la fréquence cardiaque et diminuer l’anxiété. Elle constitue également la base du chant, de la prise de parole en public et des performances sportives.",
+        "ja-jp": "横隔膜を使った深い呼吸は迷走神経を刺激し、副交感神経の「休息と消化」反応を活性化します。[定期的な練習によってコルチゾールが低下する可能性があることが研究で示されています](https://doi.org/10.3389/fpsyg.2017.00874)。また、血圧を下げ、心拍変動を改善し、不安を軽減します。歌唱、人前で話すこと、運動能力の基礎にもなります。",
+        "pt-br": "Respirações diafragmáticas profundas estimulam o nervo vago, ativando a resposta parassimpática de “descansar e digerir”. [Estudos mostram que a prática regular pode reduzir o cortisol](https://doi.org/10.3389/fpsyg.2017.00874), diminuir a pressão arterial, melhorar a variabilidade da frequência cardíaca e reduzir a ansiedade. Ela também é a base para cantar, falar em público e ter um bom desempenho esportivo."
+      }
+    },
+    {
+      "messageId": "hero.title",
+      "reason": "route-catalog-exact-conflict",
+      "reviewedSourceHash": "b0a5eb5ee5f57c475a7026cded2abb30698da9e3ccf7c5428a76b80d0d0bb6f1",
+      "scope": "content",
+      "sourceText": "Belly Breathing: Diaphragmatic Breathing Exercises",
+      "translations": {
+        "es-es": "Respiración abdominal: ejercicios de respiración diafragmática",
+        "fr-fr": "Respiration abdominale : exercices de respiration diaphragmatique",
+        "ja-jp": "腹式呼吸：横隔膜呼吸エクササイズ"
+      }
+    },
+    {
+      "messageId": "howTo.steps[5].duration",
+      "reason": "route-catalog-exact-conflict",
+      "reviewedSourceHash": "e8c7a71c947569b39b0d6cea1cbe950d8591b711b84828f28babd72ffb21b652",
+      "scope": "content",
+      "sourceText": "5–10 minutes",
+      "translations": {
+        "de-de": "5–10 Minuten",
+        "es-es": "5–10 minutos"
+      }
+    },
+    {
+      "messageId": "howTo.tools[0]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "abe2d70767266e33ec1ba0541667f149335402362ee87341a83e473f8f503902",
+      "scope": "content",
+      "sourceText": "Comfortable surface to lie on (bed, yoga mat)",
+      "translations": {
+        "de-de": "Bequeme Unterlage zum Hinlegen (Bett, Yogamatte)",
+        "es-es": "Superficie cómoda para tumbarse (cama, esterilla de yoga)",
+        "fr-fr": "Surface confortable pour s’allonger (lit, tapis de yoga)",
+        "ja-jp": "横になるための快適な場所（ベッド、ヨガマット）",
+        "pt-br": "Superfície confortável para se deitar (cama, tapete de yoga)"
+      }
+    },
+    {
+      "messageId": "howTo.tools[1]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "d61b42a33cbe33b7beedf6bd940bcba2dec66781ba0cdedd3c57de8d7a6ad5c2",
+      "scope": "content",
+      "sourceText": "On-screen timer (optional)",
+      "translations": {
+        "de-de": "Bildschirm-Timer (optional)",
+        "es-es": "Temporizador en pantalla (opcional)",
+        "fr-fr": "Minuteur à l’écran (facultatif)",
+        "ja-jp": "画面上のタイマー（任意）",
+        "pt-br": "Temporizador na tela (opcional)"
+      }
+    },
+    {
+      "messageId": "howTo.totalTime",
+      "reason": "route-catalog-exact-conflict",
+      "reviewedSourceHash": "e8c7a71c947569b39b0d6cea1cbe950d8591b711b84828f28babd72ffb21b652",
+      "scope": "content",
+      "sourceText": "5–10 minutes",
+      "translations": {
+        "de-de": "5–10 Minuten",
+        "es-es": "5–10 minutos"
+      }
+    },
+    {
+      "messageId": "ownedVideo.description",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "206b9305b2f2d44a48c4e04091d86d6da41d177818f43043d37458fc6944f07e",
+      "scope": "content",
+      "sourceText": "A 5-minute guided belly breathing session using our interactive pacer. Let your belly rise on the inhale and fall on the exhale, the foundational diaphragmatic breathing pattern.",
+      "translations": {
+        "de-de": "Eine geführte 5-minütige Bauchatmungssitzung mit unserem interaktiven Taktgeber. Lass deinen Bauch beim Einatmen steigen und beim Ausatmen sinken – das grundlegende Muster der Zwerchfellatmung.",
+        "es-es": "Una sesión guiada de respiración abdominal de 5 minutos con nuestro marcador de ritmo interactivo. Deja que el abdomen se eleve al inhalar y descienda al exhalar, el patrón fundamental de la respiración diafragmática.",
+        "fr-fr": "Une séance guidée de respiration abdominale de 5 minutes avec notre rythmeur interactif. Laissez votre ventre se soulever à l’inspiration et s’abaisser à l’expiration, le schéma fondamental de la respiration diaphragmatique.",
+        "ja-jp": "インタラクティブなペーサーを使った5分間のガイド付き腹式呼吸セッションです。横隔膜呼吸の基本パターンに従い、吸うときにお腹を膨らませ、吐くときにへこませます。",
+        "pt-br": "Uma sessão guiada de respiração abdominal de 5 minutos com nosso marcador de ritmo interativo. Deixe a barriga subir ao inspirar e descer ao expirar, o padrão fundamental da respiração diafragmática."
+      }
+    },
+    {
+      "messageId": "ownedVideo.title",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "cf006c3322ddcaf5d625b4367110821ba8627face62a579c13a18fd4419fe5e6",
+      "scope": "content",
+      "sourceText": "Belly Breathing Timer: 5 Minutes (Diaphragmatic Breathing)",
+      "translations": {
+        "de-de": "Timer für Bauchatmung: 5 Minuten (Zwerchfellatmung)",
+        "es-es": "Temporizador de respiración abdominal: 5 minutos (respiración diafragmática)",
+        "fr-fr": "Minuteur de respiration abdominale : 5 minutes (respiration diaphragmatique)",
+        "ja-jp": "腹式呼吸タイマー：5分間（横隔膜呼吸）",
+        "pt-br": "Temporizador de respiração abdominal: 5 minutos (respiração diafragmática)"
+      }
+    },
+    {
+      "messageId": "practiceTips[2].title",
+      "reason": "route-catalog-exact-conflict",
+      "reviewedSourceHash": "4b3aff14432579cc38d0ae5eaebce559b7d08eb90aec6926a1435d7b1f4f8c8b",
+      "scope": "content",
+      "sourceText": "Keep it gentle",
+      "translations": {
+        "de-de": "Bleib sanft",
+        "fr-fr": "Restez en douceur",
+        "ja-jp": "無理なく穏やかに",
+        "pt-br": "Mantenha a suavidade"
+      }
+    },
+    {
+      "messageId": "related[4].reason",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "66119258a70a019ca5a9815720b3dc0006769eb4cb1836833c36eac10f6a26ad",
+      "scope": "content",
+      "sourceText": "Adds exhale resistance on top of diaphragmatic breathing—helpful for COPD and shortness of breath.",
+      "translations": {
+        "de-de": "Ergänzt die Zwerchfellatmung um einen Ausatemwiderstand – hilfreich bei COPD und Kurzatmigkeit.",
+        "es-es": "Añade resistencia a la exhalación a la respiración diafragmática, lo que resulta útil para la EPOC y la falta de aire.",
+        "fr-fr": "Ajoute une résistance à l’expiration à la respiration diaphragmatique, ce qui est utile en cas de BPCO et d’essoufflement.",
+        "ja-jp": "横隔膜呼吸に呼気抵抗を加えます。COPDや息切れに役立ちます。",
+        "pt-br": "Acrescenta resistência à expiração à respiração diafragmática, o que ajuda em casos de DPOC e falta de ar."
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/breathe/belly"
+}

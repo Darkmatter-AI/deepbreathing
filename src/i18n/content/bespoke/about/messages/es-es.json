@@ -1,0 +1,53 @@
+{
+  "breadcrumb": {
+    "about": "Sobre nosotros",
+    "home": "Inicio"
+  },
+  "hero": {
+    "eyebrow": "Ejercicios de respiración profunda",
+    "intro": "Deep Breathing Exercises es un visualizador de respiración gratuito y un conjunto de guías basadas en evidencia para la calma, el enfoque y el sueño.",
+    "title": "Sobre nosotros"
+  },
+  "metadata": {
+    "description": "En esta sección sobre nosotros, ejercicios de respiración guiados te ayudarán a lograr calma, enfoque y sueño con nuestro visualizador gratuito.",
+    "socialDescription": "Visualizador gratuito y ejercicios de respiración basados en evidencia para lograr calma, enfoque y un mejor sueño.",
+    "socialTitle": "Sobre nosotros: ejercicios de respiración",
+    "title": "Sobre nosotros: ejercicios de respiración"
+  },
+  "sections": {
+    "credits": {
+      "abiassi": "Abiassi",
+      "darkmatter": "Darkmatter AI Labs",
+      "title": "Creado por"
+    },
+    "disclaimer": {
+      "body": "Esto no es un tratamiento médico. Si tiene una afección cardiopulmonar, está embarazada o tiene antecedentes de desmayos, mantenga una respiración suave, evite las retenciones prolongadas y consulte a un profesional médico para obtener asesoramiento personalizado.",
+      "title": "Qué no es esto"
+    },
+    "editorial": {
+      "body": "Cada página de técnica nombra al practicante o la tradición de la que proviene, enlaza a la investigación revisada por pares que respalda las afirmaciones y muestra cuándo fue la última actualización. Cuando la evidencia es débil, lo indicamos.",
+      "linkLabel": "Lee nuestra política editorial →",
+      "title": "Enfoque editorial"
+    },
+    "links": {
+      "aboutAbi": "Sobre Abi",
+      "breathingTechniques": "Técnicas de respiración",
+      "editorialPolicy": "Política editorial",
+      "guidesByGoal": "Guías por objetivo",
+      "privacy": "Privacidad",
+      "title": "Enlaces"
+    },
+    "whatThisIs": {
+      "afterLink": "), además de breves guías que explican cuándo utilizar cada técnica.",
+      "beforeLink": "Este sitio ofrece sesiones de respiración guiadas y sencillas (respiración cuadrada, 4-7-8, respiración coherente para la VFC y ",
+      "linkLabel": "el suspiro fisiológico",
+      "title": "Qué es esto"
+    },
+    "whoBuilt": {
+      "afterLink": ", fundador, fotógrafo y practicante de respiración. Lo creó como un visualizador gratuito para las técnicas que utiliza a diario.",
+      "beforeLink": "Deep Breathing Exercises ha sido creado por ",
+      "linkLabel": "Abi Abiassi",
+      "title": "Quién lo construyó"
+    }
+  }
+}

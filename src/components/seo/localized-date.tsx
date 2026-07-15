@@ -1,27 +1,33 @@
-// Server component: the origin only ever renders English, and this is used
-// exclusively inside Server Components (pattern-page, use-case-page). Keeping it
-// server-only removes its client chunk from those routes' first-load JS. The
-// SSR HTML (English "Last updated" + date) is identical to what the old client
-// component produced on the origin; translated pages get the text localized by
-// the mass-translate proxy, which reads it straight from this SSR output.
+import type { LocaleCode } from "@/i18n";
+
+// This stays a Server Component so locale-aware date formatting and labels do
+// not add any client JavaScript. The optional values preserve the current
+// English output for routes that have not moved to native rendering yet.
 
 export function LocalizedDate({
   date,
+  lastUpdatedLabel = "Last updated",
+  locale = "en-US",
+  reviewedByLabel = "Reviewed by",
   reviewerName,
 }: {
   date: string;
+  lastUpdatedLabel?: string;
+  locale?: LocaleCode;
+  reviewedByLabel?: string;
   reviewerName?: string | null;
 }) {
-  const formatted = new Date(date).toLocaleDateString("en-US", {
+  const formatted = new Intl.DateTimeFormat(locale, {
     year: "numeric",
     month: "long",
     day: "numeric",
-  });
+    timeZone: "UTC",
+  }).format(new Date(date));
 
   return (
     <>
-      Last updated: {formatted}
-      {reviewerName ? <> • Reviewed by {reviewerName}</> : null}
+      {lastUpdatedLabel}: {formatted}
+      {reviewerName ? <> • {reviewedByLabel} {reviewerName}</> : null}
     </>
   );
 }

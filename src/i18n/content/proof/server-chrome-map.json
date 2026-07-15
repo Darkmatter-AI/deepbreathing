@@ -1,0 +1,557 @@
+{
+  "routes": [
+    {
+      "messages": [
+        {
+          "messageId": "chrome.shared.brand-eyebrow",
+          "reviewedSourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "sourceText": "DEEP BREATHING EXERCISES"
+        },
+        {
+          "messageId": "chrome.shared.breadcrumb-home",
+          "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "sourceText": "Home"
+        },
+        {
+          "messageId": "chrome.shared.date-last-updated",
+          "reviewedSourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "sourceText": "Last updated"
+        },
+        {
+          "messageId": "chrome.shared.date-reviewed-by",
+          "reviewedSourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "sourceText": "Reviewed by"
+        },
+        {
+          "messageId": "chrome.shared.quick-sessions",
+          "reviewedSourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "sourceText": "Quick sessions"
+        },
+        {
+          "messageId": "chrome.shared.quick-sessions-description",
+          "reviewedSourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "sourceText": "Short on time? Try a timed session:"
+        },
+        {
+          "messageId": "chrome.shared.one-minute",
+          "reviewedSourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "sourceText": "1 minute"
+        },
+        {
+          "messageId": "chrome.shared.two-minutes",
+          "reviewedSourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "sourceText": "2 minutes"
+        },
+        {
+          "messageId": "chrome.shared.five-minutes",
+          "reviewedSourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "sourceText": "5 minutes"
+        },
+        {
+          "messageId": "chrome.shared.share-exercise",
+          "reviewedSourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "sourceText": "Share this exercise"
+        },
+        {
+          "messageId": "chrome.shared.safety-warning",
+          "reviewedSourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "sourceText": "Stop if dizzy, tingly, or chest-tight. Resume later with shorter, easier breaths."
+        },
+        {
+          "messageId": "chrome.shared.footer-techniques",
+          "reviewedSourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "sourceText": "Techniques"
+        },
+        {
+          "messageId": "chrome.shared.footer-guides",
+          "reviewedSourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "sourceText": "Guides"
+        },
+        {
+          "messageId": "chrome.shared.footer-app",
+          "reviewedSourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "sourceText": "App"
+        },
+        {
+          "messageId": "chrome.shared.footer-about",
+          "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "sourceText": "About"
+        },
+        {
+          "messageId": "chrome.shared.footer-about-abi",
+          "reviewedSourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "sourceText": "About Abi"
+        },
+        {
+          "messageId": "chrome.shared.footer-embed",
+          "reviewedSourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "sourceText": "Embed"
+        },
+        {
+          "messageId": "chrome.shared.footer-privacy",
+          "reviewedSourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "sourceText": "Privacy"
+        },
+        {
+          "messageId": "chrome.pattern.og-alt",
+          "reviewedSourceHash": "a53ed881fadd277cbdc99847f9cc6402774892dbb16b8dbe608c017dd46aa20a",
+          "sourceText": "Buteyko Breathing: Light, Nasal Breathing Method – Interactive breathing visualizer"
+        },
+        {
+          "messageId": "chrome.pattern.breadcrumb-techniques",
+          "reviewedSourceHash": "37b5f87273b794d1da69aca7c5bd665712303c9f0dcb428ad5a88923012e2b1c",
+          "sourceText": "Breathing Techniques"
+        },
+        {
+          "messageId": "chrome.pattern.hero-share-text",
+          "reviewedSourceHash": "28b863bd55b255cc31fdbb658034f8c1004c8b77fa80f1383b96a712c4bea83b",
+          "sourceText": "Try this guided buteyko breathing: light, nasal breathing method exercise — it really helps."
+        },
+        {
+          "messageId": "chrome.pattern.technique-overview",
+          "reviewedSourceHash": "60bf6e41f9cfb46f95321125485042495264fabfd34ec662bda141d2fbf17455",
+          "sourceText": "Technique overview"
+        },
+        {
+          "messageId": "chrome.pattern.benefit",
+          "reviewedSourceHash": "0c0829d3e30125b0e9350631b17c2102c298265645d8252eefdc45831517521a",
+          "sourceText": "Benefit"
+        },
+        {
+          "messageId": "chrome.pattern.step-by-step",
+          "reviewedSourceHash": "83c008a92e4280e61a22a6b6780ff90bcb3f05bed958ce97fe7408050d21ddad",
+          "sourceText": "Step-by-step"
+        },
+        {
+          "messageId": "chrome.pattern.how-to-practice",
+          "reviewedSourceHash": "2a9206c87d0f17f88f49ffb32c92a2d48d1e1ddbada1d216c854b73f9e666c42",
+          "sourceText": "How to practice"
+        },
+        {
+          "messageId": "chrome.pattern.how-to-description",
+          "reviewedSourceHash": "19245bd9459b04747ca278ce4bc39e8ef933cff79ac31d197f2d076edd9d6657",
+          "sourceText": "Structured walkthrough pulled from the editorial brief."
+        },
+        {
+          "messageId": "chrome.pattern.total-time",
+          "reviewedSourceHash": "f448bdef375a1f9e82b495d3228fc5c23a2acf6b986ffcf12e74094c14a4bc4d",
+          "sourceText": "Total time"
+        },
+        {
+          "messageId": "chrome.pattern.difficulty",
+          "reviewedSourceHash": "be44133ed57f9e44f829282224b15981f033e9b0acc5458070e10104509eb398",
+          "sourceText": "Difficulty"
+        },
+        {
+          "messageId": "chrome.pattern.tools",
+          "reviewedSourceHash": "ea93d6a262ecb87a9fa4d09edbd7654c046597936a8e235fc3949eb01775ff99",
+          "sourceText": "Tools"
+        },
+        {
+          "messageId": "chrome.pattern.supplies",
+          "reviewedSourceHash": "6be75605dc98cd51ce12599df98d8ecc5a24dbfb0acb0336228d3d7eea77f846",
+          "sourceText": "Supplies"
+        },
+        {
+          "messageId": "chrome.pattern.use-cases",
+          "reviewedSourceHash": "ff27a991e8559d6a53024fb888d0b9f062f31154593bf4db2c6431ace2d7d05a",
+          "sourceText": "Use cases"
+        },
+        {
+          "messageId": "chrome.pattern.where-it-fits",
+          "reviewedSourceHash": "f895e63320934fe16a50ff39692a90c084868ec6ff756d08a971b42f9f0242f4",
+          "sourceText": "Where it fits"
+        },
+        {
+          "messageId": "chrome.pattern.use-cases-description",
+          "reviewedSourceHash": "200d003a07e004a353760d59dfb301e5a22d04b700c4fa5aaebf1ed07b82e305",
+          "sourceText": "Situations where this breathing cadence excels."
+        },
+        {
+          "messageId": "chrome.pattern.suggested-frequency",
+          "reviewedSourceHash": "5f6427c54ebaf87e89974b491feec81415318835960e501b9fda10c257d57b05",
+          "sourceText": "Suggested frequency"
+        },
+        {
+          "messageId": "chrome.pattern.practice-notes",
+          "reviewedSourceHash": "966c14f18db88384cc9c484065e9148a7745b46aaf59b4f617c08b606d8b25d1",
+          "sourceText": "Practice notes"
+        },
+        {
+          "messageId": "chrome.pattern.keep-it-gentle",
+          "reviewedSourceHash": "4b3aff14432579cc38d0ae5eaebce559b7d08eb90aec6926a1435d7b1f4f8c8b",
+          "sourceText": "Keep it gentle"
+        },
+        {
+          "messageId": "chrome.pattern.practice-notes-description",
+          "reviewedSourceHash": "9c4dfaa2346b55e927f3b967c2e9d7d16d3311c8c56e551a9ef3f8f31b603ca7",
+          "sourceText": "Helpful reminders so the pattern stays sustainable day after day."
+        },
+        {
+          "messageId": "chrome.pattern.faq",
+          "reviewedSourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "sourceText": "FAQ"
+        },
+        {
+          "messageId": "chrome.pattern.common-questions",
+          "reviewedSourceHash": "dfb8a3d41335746f8b5879f9c3a372ecfa4d1e7b6495d7376f335084fa3c46f2",
+          "sourceText": "Common questions"
+        },
+        {
+          "messageId": "chrome.pattern.faq-description",
+          "reviewedSourceHash": "cac341e9fbdbeddc88ae5baaa72d5862ca026803916675fa95c879382425e8a1",
+          "sourceText": "Evidence-backed answers we hear from practitioners most often."
+        },
+        {
+          "messageId": "chrome.pattern.research-safety",
+          "reviewedSourceHash": "2bad807b4f017eae3c380287f5340b9257ef6f7e350b7a56c7ec86377941fa54",
+          "sourceText": "Research & safety"
+        },
+        {
+          "messageId": "chrome.pattern.what-evidence-says",
+          "reviewedSourceHash": "6dff2aa4f71bdb673399f3689cdff90db2ef2b5978b67a86c6aea68a8da24f40",
+          "sourceText": "What evidence says"
+        },
+        {
+          "messageId": "chrome.pattern.research-description",
+          "reviewedSourceHash": "331557d6854d6ca5305b7f6d53fc18cedf75d0c398cfd2161a53427b8be001d7",
+          "sourceText": "Peer-reviewed highlights and guardrails pulled from the content brief."
+        },
+        {
+          "messageId": "chrome.pattern.study-highlights",
+          "reviewedSourceHash": "f65e736d9839cab1eb3b9b67c04253c0639b2a9fd5944621b56c61fb617c93a4",
+          "sourceText": "Study highlights"
+        },
+        {
+          "messageId": "chrome.pattern.safety-notes",
+          "reviewedSourceHash": "7e092bf4ecfb7a89cf31e69503c4c2e56726061b4234e1a07b38b757f1e3a599",
+          "sourceText": "Safety notes"
+        },
+        {
+          "messageId": "chrome.pattern.related-techniques",
+          "reviewedSourceHash": "58ff22fb23c4b03c33d59472ca5863c357076f1b7b4e9b666525af213d69e363",
+          "sourceText": "Related techniques"
+        },
+        {
+          "messageId": "chrome.pattern.related-use-cases",
+          "reviewedSourceHash": "59d9b0677baf7f4ba4d8421daeba7c457a582292fdf2e5cce8aed7b1dc62f54b",
+          "sourceText": "Use case guides"
+        },
+        {
+          "messageId": "chrome.pattern.related-patterns",
+          "reviewedSourceHash": "4f8c2a5e8574ad2710020a69b41eeafb1d1ad5d87f78241f5a1715c651fa723d",
+          "sourceText": "Related patterns"
+        },
+        {
+          "messageId": "chrome.pattern.practice-action",
+          "reviewedSourceHash": "aaefeb15dba1049f9e232401aa1729aa5582328b239ed15f7bdec1bd5cdf3c26",
+          "sourceText": "Practice →"
+        },
+        {
+          "messageId": "chrome.pattern.learn-more-action",
+          "reviewedSourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "sourceText": "Learn more →"
+        },
+        {
+          "messageId": "chrome.pattern.related-pursed-lip-title",
+          "reviewedSourceHash": "b44d6b2987526fe1ecca59bd20db1dfa5478a2ed3fd051905793342a73747bd2",
+          "sourceText": "Pursed Lip Breathing Technique"
+        },
+        {
+          "messageId": "chrome.pattern.related-coherent-title",
+          "reviewedSourceHash": "4c6e34da239e136a2b5d96c1bc328ff0f810abfb71f7047ad9027d548b509101",
+          "sourceText": "Coherent Breathing Trainer"
+        },
+        {
+          "messageId": "chrome.pattern.related-belly-title",
+          "reviewedSourceHash": "b0a5eb5ee5f57c475a7026cded2abb30698da9e3ccf7c5428a76b80d0d0bb6f1",
+          "sourceText": "Belly Breathing: Diaphragmatic Breathing Exercises"
+        },
+        {
+          "messageId": "chrome.pattern.related-physiological-sigh-title",
+          "reviewedSourceHash": "b328eabea77dd51370eb8e6ce397ac46cee3df995cd9515e8a1a7e9b35e9bdd7",
+          "sourceText": "Physiological Sigh: Instant Stress Relief"
+        },
+        {
+          "messageId": "chrome.pattern.share-technique",
+          "reviewedSourceHash": "37d5cf900d5f4c126284817e2f262b0536528ba9cfa0846ad0344b73f1e30455",
+          "sourceText": "Share this technique"
+        },
+        {
+          "messageId": "chrome.pattern.share-section-text",
+          "reviewedSourceHash": "3db8d31b2be1c99331d4cbc1a4d43494c213c592b12efa874c3beeaf7854efdf",
+          "sourceText": "Know someone who could benefit from buteyko breathing: light, nasal breathing method? Send them a direct link."
+        }
+      ],
+      "routeId": "breathe.buteyko",
+      "sourceRoute": "/breathe/buteyko"
+    },
+    {
+      "messages": [
+        {
+          "messageId": "chrome.shared.brand-eyebrow",
+          "reviewedSourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "sourceText": "DEEP BREATHING EXERCISES"
+        },
+        {
+          "messageId": "chrome.shared.breadcrumb-home",
+          "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "sourceText": "Home"
+        },
+        {
+          "messageId": "chrome.shared.date-last-updated",
+          "reviewedSourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "sourceText": "Last updated"
+        },
+        {
+          "messageId": "chrome.shared.date-reviewed-by",
+          "reviewedSourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "sourceText": "Reviewed by"
+        },
+        {
+          "messageId": "chrome.shared.quick-sessions",
+          "reviewedSourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "sourceText": "Quick sessions"
+        },
+        {
+          "messageId": "chrome.shared.quick-sessions-description",
+          "reviewedSourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "sourceText": "Short on time? Try a timed session:"
+        },
+        {
+          "messageId": "chrome.shared.one-minute",
+          "reviewedSourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "sourceText": "1 minute"
+        },
+        {
+          "messageId": "chrome.shared.two-minutes",
+          "reviewedSourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "sourceText": "2 minutes"
+        },
+        {
+          "messageId": "chrome.shared.five-minutes",
+          "reviewedSourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "sourceText": "5 minutes"
+        },
+        {
+          "messageId": "chrome.shared.share-exercise",
+          "reviewedSourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "sourceText": "Share this exercise"
+        },
+        {
+          "messageId": "chrome.shared.safety-warning",
+          "reviewedSourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "sourceText": "Stop if dizzy, tingly, or chest-tight. Resume later with shorter, easier breaths."
+        },
+        {
+          "messageId": "chrome.shared.footer-techniques",
+          "reviewedSourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "sourceText": "Techniques"
+        },
+        {
+          "messageId": "chrome.shared.footer-guides",
+          "reviewedSourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "sourceText": "Guides"
+        },
+        {
+          "messageId": "chrome.shared.footer-app",
+          "reviewedSourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "sourceText": "App"
+        },
+        {
+          "messageId": "chrome.shared.footer-about",
+          "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "sourceText": "About"
+        },
+        {
+          "messageId": "chrome.shared.footer-about-abi",
+          "reviewedSourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "sourceText": "About Abi"
+        },
+        {
+          "messageId": "chrome.shared.footer-embed",
+          "reviewedSourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "sourceText": "Embed"
+        },
+        {
+          "messageId": "chrome.shared.footer-privacy",
+          "reviewedSourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "sourceText": "Privacy"
+        },
+        {
+          "messageId": "chrome.use-case.breadcrumb-use-cases",
+          "reviewedSourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "sourceText": "Use Cases"
+        },
+        {
+          "messageId": "chrome.use-case.hero-share-text",
+          "reviewedSourceHash": "66561092b274cd700e3826e1be1e7616956eeaf670afdfafedf0b1262fb2c472",
+          "sourceText": "Try this guided breathing exercise for how to stop anxiety in 60 seconds with box breathing."
+        },
+        {
+          "messageId": "chrome.use-case.share-with-someone",
+          "reviewedSourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "sourceText": "Share with someone"
+        },
+        {
+          "messageId": "chrome.use-case.important",
+          "reviewedSourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "sourceText": "Important"
+        },
+        {
+          "messageId": "chrome.use-case.problem",
+          "reviewedSourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "sourceText": "The Problem"
+        },
+        {
+          "messageId": "chrome.use-case.common-symptoms",
+          "reviewedSourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "sourceText": "Common symptoms"
+        },
+        {
+          "messageId": "chrome.use-case.solution",
+          "reviewedSourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "sourceText": "The Solution"
+        },
+        {
+          "messageId": "chrome.use-case.why-this-technique",
+          "reviewedSourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "sourceText": "Why this technique"
+        },
+        {
+          "messageId": "chrome.use-case.start-practicing",
+          "reviewedSourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "sourceText": "Start practicing now →"
+        },
+        {
+          "messageId": "chrome.use-case.learn-box-breathing",
+          "reviewedSourceHash": "77e3c5fdb098a727e4a3b38cb4b78ed851d9032b53bb0c59440f74b2bef1ffec",
+          "sourceText": "Learn more about Box Breathing →"
+        },
+        {
+          "messageId": "chrome.use-case.box-breathing-name",
+          "reviewedSourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095",
+          "sourceText": "Box Breathing"
+        },
+        {
+          "messageId": "chrome.use-case.why-it-works",
+          "reviewedSourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "sourceText": "Why It Works"
+        },
+        {
+          "messageId": "chrome.use-case.step-by-step",
+          "reviewedSourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "sourceText": "Step-by-Step"
+        },
+        {
+          "messageId": "chrome.use-case.how-to-practice",
+          "reviewedSourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "sourceText": "How to Practice"
+        },
+        {
+          "messageId": "chrome.use-case.pro-tips",
+          "reviewedSourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "sourceText": "Pro tips"
+        },
+        {
+          "messageId": "chrome.use-case.research-references",
+          "reviewedSourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "sourceText": "Research & References"
+        },
+        {
+          "messageId": "chrome.use-case.scientific-sources",
+          "reviewedSourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "sourceText": "Scientific Sources"
+        },
+        {
+          "messageId": "chrome.use-case.faq",
+          "reviewedSourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "sourceText": "FAQ"
+        },
+        {
+          "messageId": "chrome.use-case.common-questions",
+          "reviewedSourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "sourceText": "Common Questions"
+        },
+        {
+          "messageId": "chrome.use-case.more-guides",
+          "reviewedSourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "sourceText": "More Breathing Guides"
+        },
+        {
+          "messageId": "chrome.use-case.learn-more-action",
+          "reviewedSourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "sourceText": "Learn more →"
+        },
+        {
+          "messageId": "chrome.use-case.related-panic-title",
+          "reviewedSourceHash": "60b19b4a8b0ebd154f5fe7b84fcb735a5d21fc617898a56d2250c637f22338e7",
+          "sourceText": "How to Stop a Panic Attack in 30 Seconds"
+        },
+        {
+          "messageId": "chrome.use-case.related-public-speaking-title",
+          "reviewedSourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+          "sourceText": "Breathing Exercises for Public Speaking"
+        },
+        {
+          "messageId": "chrome.use-case.related-holiday-title",
+          "reviewedSourceHash": "6e6700ebb79acdc6c454084c36419a96e782fd0a47695a71703340fbecade8f8",
+          "sourceText": "How to Handle Holiday Stress in 30 Seconds"
+        },
+        {
+          "messageId": "chrome.use-case.related-travel-title",
+          "reviewedSourceHash": "e5c60420f1dc4545b5ab361b44ed15afd6515b07967f0d0410b9639fcf5f4887",
+          "sourceText": "Breathing Exercises for Travel Anxiety"
+        },
+        {
+          "messageId": "chrome.use-case.related-kids-title",
+          "reviewedSourceHash": "7696120540243ebfa54ae8f92ba7cda3ef477c27e9f3802c0d1b304ccf979643",
+          "sourceText": "Deep Breathing Exercises for Kids"
+        },
+        {
+          "messageId": "chrome.use-case.related-huberman-title",
+          "reviewedSourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+          "sourceText": "Huberman Lab Breathing Protocols"
+        },
+        {
+          "messageId": "chrome.use-case.in-depth-guides",
+          "reviewedSourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "sourceText": "In-Depth Guides"
+        },
+        {
+          "messageId": "chrome.use-case.read-guide-action",
+          "reviewedSourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "sourceText": "Read guide →"
+        },
+        {
+          "messageId": "chrome.use-case.ready-to-practice",
+          "reviewedSourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "sourceText": "Ready to practice?"
+        },
+        {
+          "messageId": "chrome.use-case.start-session",
+          "reviewedSourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "sourceText": "Start Your Session"
+        },
+        {
+          "messageId": "chrome.use-case.visualizer-description",
+          "reviewedSourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "sourceText": "Use the interactive visualizer above to guide your breathing. Follow the animation and let your body relax."
+        },
+        {
+          "messageId": "chrome.use-case.go-to-visualizer",
+          "reviewedSourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "sourceText": "Go to visualizer →"
+        },
+        {
+          "messageId": "chrome.use-case.try-box-app",
+          "reviewedSourceHash": "7f77c1557f9441a20a2bcf9985050eae3c16380e63d8ef10af1f7aae4fdae7f4",
+          "sourceText": "Try the dedicated Box Breathing App →"
+        }
+      ],
+      "routeId": "for.anxiety",
+      "sourceRoute": "/for/anxiety"
+    }
+  ],
+  "schemaVersion": 1
+}

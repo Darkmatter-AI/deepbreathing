@@ -18,6 +18,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-07-15 | [Native Translation Serving Migration — Preserve Locale URLs, Remove Proxy Rendering](#2026-07-15-native-translation-serving-migration--preserve-locale-urls-remove-proxy-rendering) | ⏳ Waiting (preview gates) |
 | 2026-07-10 | [Canonical Hijack — 2 Locale Pages Merged With Casino Domain (747live.bet)](#2026-07-10-canonical-hijack--2-locale-pages-merged-with-casino-domain-747livebet) | ✅ Success |
 | 2026-07-09 | [Retire Dead Submission Paths — Indexing API, Sitemap Pings; Durable URL Inspection](#2026-07-09-retire-dead-submission-paths) | 📊 Snapshot |
 | 2026-06-15 | [Nofollow + Robots-Disallow ?duration= Timer Deep-Links (Hreflang to Non-Canonical)](#2026-06-15-nofollow--robots-disallow-duration-timer-deep-links-hreflang-to-non-canonical) | 🔄 Implemented |
@@ -75,13 +76,46 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-01-06 | [Navy SEAL Content Expansion](#2026-01-06-navy-seal-content-expansion) | ❌ Failed |
 | 2026-01-06 | [CTR Title Rewrites (Batch 1)](#2026-01-06-ctr-title-rewrites-batch-1) | ✅ Success |
 
-**Roll-up by status (53 entries):** ✅ 3 Success · ❌ 9 Failed · ⚪ 12 Inconclusive · 🟡 1 Mixed · ⏳ 0 Waiting · 🔄 20 Implemented · 📊 8 Snapshot. *(2026-06-21: audio-v2 rebase folded in the 2026-05-18 Indexing-Recovery Checkpoint snapshot. 2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
+**Roll-up by status (54 entries):** ✅ 3 Success · ❌ 9 Failed · ⚪ 12 Inconclusive · 🟡 1 Mixed · ⏳ 1 Waiting · 🔄 20 Implemented · 📊 8 Snapshot. *(2026-07-15: +native translation serving migration planning entry. 2026-06-21: audio-v2 rebase folded in the 2026-05-18 Indexing-Recovery Checkpoint snapshot. 2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
 
 See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of what worked / failed / strategic insights from the first month of experiments.
 
 ---
 
 ## Active Experiments
+
+### 2026-07-15: Native Translation Serving Migration — Preserve Locale URLs, Remove Proxy Rendering
+
+**Status:** Planning and preview implementation only. Nothing in this entry authorizes a production routing, sitemap, canonical, or hreflang change before the migration gates pass.
+
+**Hypothesis:** Serving the existing `/es`, `/pt`, `/fr`, `/de`, and `/ja` pages directly from repository-owned, server-rendered bundles will preserve current search visibility while eliminating proxy-created browser/crawler differences, post-render language swaps, cache warming, and query-dependent canonical behavior.
+
+**Pre-implementation baseline:**
+
+- Public URL contract: English remains unprefixed; the five existing locale prefixes remain unchanged.
+- Current sitemap inventory: 57 English URLs plus 56 URLs for each locale, 337 total.
+- Latest full GSC URL Inspection checkpoint (2026-07-09): 305 of 331 inspected URLs indexed; 26 genuinely unindexed. The difference between the inspection queue and sitemap inventory is existing baseline scope, not a migration result.
+- Existing known defects remain baseline defects: `/stats` is noindex while present in the sitemap; some localized canonical output can echo unknown query parameters; 15 pages were `Crawled - currently not indexed`, concentrated in Japanese and Portuguese; the two off-domain canonical incidents had recovered by 2026-07-10.
+- Exact Bing indexed/performance counts, production locale response timings, and the final pre-cutover GSC comparison window still need fresh capture immediately before cutover. They must not be backfilled after the change.
+
+**Preview gate before any production cutover:**
+
+1. Every currently published locale-route pair returns the intended localized server HTML in a production-equivalent preview with JavaScript disabled and enabled.
+2. The URL matrix has no unexpected status, redirect, canonical, `hreflang`, `lang`, metadata, or indexability differences from the public contract.
+3. No route silently falls back to English, no hydration language swap occurs, and high-stakes safety copy is explicitly reviewed.
+4. A preview crawl reports zero migration-created broken internal links, double-locale paths, non-reciprocal alternates, or sitemap/publication mismatches.
+5. Localized page performance stays within 10% of the corresponding English route for response time and rendered page weight, or any exception is documented and accepted before cutover.
+6. The exact Cloudflare/Vercel reversal procedure is tested and assigned before traffic changes.
+
+**Pre-committed production success criteria:** Measure at 7 and 28 days after cutover, using the final pre-cutover snapshots as the comparison baseline.
+
+- ✅ **Success:** no migration-created canonical or indexing exclusion cluster exceeds 5 URLs; inspected indexed coverage remains at least 98% of the final pre-cutover count; localized organic clicks and impressions remain at least 90% of the matched pre-period after excluding clearly sitewide demand changes; and p75 localized performance does not regress by more than 10%.
+- 🟡 **Mixed:** technical parity holds, but indexed coverage or localized search demand lands between 85% and 98% of baseline without a migration-specific error cluster. Keep native serving only if the evidence points to normal crawl lag or demand variance and recovery is visible by day 28.
+- ❌ **Failed / rollback:** any off-domain or wrong-language canonical caused by the migration; more than 5 published locale URLs serving English, erroring, or dropping from discovery because of native routing; indexed coverage below 85% of baseline; or a localized organic decline greater than 25% with a migration-specific technical cause. Roll back routing first and diagnose from the preserved native preview.
+
+**Measurement plan:** Capture fresh GSC URL Inspection and Search Performance, Bing performance/index coverage, Ahrefs crawl results, production response headers/HTML, analytics by locale path, and performance telemetry immediately before cutover. Re-run the same URL set and windows at day 7 and day 28.
+
+---
 
 ### 2026-07-10: Canonical Hijack — 2 Locale Pages Merged With Casino Domain (747live.bet)
 

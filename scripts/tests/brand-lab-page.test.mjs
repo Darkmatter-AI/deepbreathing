@@ -4,12 +4,19 @@ import fs from "node:fs";
 import path from "node:path";
 
 const ROOT = process.cwd();
-const PAGE_FILE = path.join(ROOT, "src", "app", "brand-lab", "page.tsx");
+const PAGE_FILE = path.join(
+  ROOT,
+  "src",
+  "app",
+  "(site-en)",
+  "brand-lab",
+  "page.tsx",
+);
 
 test("brand lab page exists with metadata and multiple visual concept sections", () => {
   assert.ok(
     fs.existsSync(PAGE_FILE),
-    "expected src/app/brand-lab/page.tsx to exist"
+    "expected the English brand-lab page to exist"
   );
 
   const source = fs.readFileSync(PAGE_FILE, "utf8");

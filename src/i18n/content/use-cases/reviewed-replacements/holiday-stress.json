@@ -1,0 +1,87 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "いいえ。通常の深呼吸は、過呼吸やCO₂の減少によってストレスを悪化させることがあります。生理的なため息は迅速なストレス解消のために特別に設計されています：ダブルインハイルは酸素の取り込みを最大化し、collapsed lung tissueを再び膨らませ、延長された吐き出しが迷走神経を活性化します。これは単なる「リラクゼーション」ではなく、生理的なメカニズムです。スタンフォードの研究では、急性ストレスに対してボックスブリージングや瞑想を上回ることが示されています。",
+      "locale": "ja-jp",
+      "reason": "The approved Japanese value leaves a medical phrase in English.",
+      "replacement": "いいえ。通常の深呼吸は、過剰に呼吸してCO₂を減らすことでストレスを悪化させる場合があります。生理的ため息は、二段階の吸気で酸素の取り込みを最大化してしぼんだ肺組織を再び膨らませ、長い呼気で迷走神経を活性化する、迅速なストレス軽減のための方法です。これは単なる「リラクゼーション」ではなく、生理的な仕組みです。スタンフォード大学の研究では、急性ストレスに対してボックス呼吸や瞑想よりも効果的でした。",
+      "reviewedSourceHash": "6163f1e88a0537be793a4ad90cd03751cea21c6aabb07dcc7f7fe2701b743690",
+      "sourcePath": "faqs[2].answer",
+      "sourceText": "No. Regular deep breathing often makes stress worse by over-breathing and depleting CO₂. The physiological sigh is specifically designed for rapid stress relief: the double inhale maximizes oxygen uptake and re-inflates collapsed lung tissue, while the extended exhale activates the vagus nerve. It's a physiological mechanism, not just 'relaxation.' Stanford research shows it outperforms both box breathing and meditation for acute stress."
+    },
+    {
+      "currentCatalogValue": "¿Abrumado en las reuniones navideñas? Aprende cómo manejar el estrés y reinicia tu sistema nervioso en 30 segundos con el suspiro fisiológico, la técnica",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "¿Te abruman las reuniones navideñas? Reinicia tu sistema nervioso en 30 segundos con el suspiro fisiológico, la técnica probada en Stanford para aliviar el estrés agudo. Visualizador gratuito.",
+      "reviewedSourceHash": "41ba585619679f43431badbc4b52ffd300ce8586e5ad658bba1a1914da2f0ee4",
+      "sourcePath": "meta.description",
+      "sourceText": "Overwhelmed at holiday gatherings? Reset your nervous system in 30 seconds with the physiological sigh: the Stanford-tested technique for acute stress relief. Free visualizer."
+    },
+    {
+      "currentCatalogValue": "¿Abrumado en las reuniones navideñas? Aprende cómo manejar el estrés y reinicia tu sistema nervioso en 30 segundos con el suspiro fisiológico, la técnica",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Técnica de respiración probada en Stanford que detiene el estrés navideño en 30 segundos. Funciona en la mesa, entre multitudes o a solas en el baño.",
+      "reviewedSourceHash": "47ed5b205a3bae34cbabbf293e084c1a27ca9d5ee8b5a20108f3256b99c8def9",
+      "sourcePath": "meta.ogDescription",
+      "sourceText": "The Stanford-tested breathing technique that stops holiday stress in 30 seconds. Works at the dinner table, in crowds, or hiding in the bathroom."
+    },
+    {
+      "currentCatalogValue": "Cómo manejar el estrés en vacaciones en 30 segundos: la",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Alivio del estrés navideño en 30 segundos: suspiro fisiológico",
+      "reviewedSourceHash": "185fb5908e42466130f676b61eeb2c4c7a2e88f925a1e3367ed0ce230bdf4228",
+      "sourcePath": "meta.ogTitle",
+      "sourceText": "Holiday Stress Relief in 30 Seconds: Physiological Sigh"
+    },
+    {
+      "currentCatalogValue": "Cómo manejar el estrés en vacaciones en 30 segundos: la",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Alivio del estrés navideño en 30 segundos: técnica del suspiro fisiológico",
+      "reviewedSourceHash": "2490acac3b333e79e21a299cec1695c5c93f62dcf6ed9b8784a446beac437e70",
+      "sourcePath": "meta.title",
+      "sourceText": "Holiday Stress Relief in 30 Seconds: Physiological Sigh Technique"
+    },
+    {
+      "currentCatalogValue": "¿Abrumado en las reuniones navideñas? Aprende cómo manejar el estrés y reinicia tu sistema nervioso en 30 segundos con el suspiro fisiológico, la técnica",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Técnica de Stanford para el estrés navideño. Funciona en 30 segundos. Visualizador gratuito.",
+      "reviewedSourceHash": "76a0017b84a534d8c23b7af6fd7b9609be3fa9138b623b7d43ff38195cbe1e27",
+      "sourcePath": "meta.twitterDescription",
+      "sourceText": "Stanford-tested breathing technique for holiday stress. Works in 30 seconds. Free visualizer."
+    },
+    {
+      "currentCatalogValue": "Cómo manejar el estrés en vacaciones en 30 segundos: la",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Alivio del estrés navideño en 30 segundos: suspiro fisiológico",
+      "reviewedSourceHash": "185fb5908e42466130f676b61eeb2c4c7a2e88f925a1e3367ed0ce230bdf4228",
+      "sourcePath": "meta.twitterTitle",
+      "sourceText": "Holiday Stress Relief in 30 Seconds: Physiological Sigh"
+    },
+    {
+      "currentCatalogValue": "スタンフォードの研究（Balban et al., 2023）は、わずか5分のサイクリングを行うことで、不安が大幅に軽減され、気分が改善されたことを発見しました。ですが、1-3回のため息でも、急性ストレスに即効の救済を提供します。",
+      "locale": "ja-jp",
+      "reason": "The approved value mistranslates cyclic sighing as cycling.",
+      "replacement": "スタンフォード大学の研究（Balban et al., 2023）では、毎日わずか5分の周期的ため息が、マインドフルネス瞑想よりも不安を大きく軽減し、気分を改善しました。ただし、1〜3回のため息でも急性ストレスをすぐに和らげます。",
+      "reviewedSourceHash": "0079c63fcac66106b52c7727155c81798bc74974a604e33e15ac4f38fd17d275",
+      "sourcePath": "science.points[2].explanation",
+      "sourceText": "Stanford research (Balban et al., 2023) found that just 5 minutes of cyclic sighing per day produced greater reductions in anxiety and improved mood compared to mindfulness meditation. But even 1-3 sighs provide immediate relief for acute stress."
+    },
+    {
+      "currentCatalogValue": "他の呼吸法は効果が出るのに2-5分かかるのに対し、生理的ため息は1-3回の呼吸で測定可能なストレスの軽減をもたらします。2回の吸気は肺内の collapsed air sacsを再膨張させ（酸素を最大化）、長い吐き出しは迷走神経を活性化させ（鎮静反応を引き起こす）ます。食卓で、トイレで、車に歩いている間でも discreetly 実行できます。",
+      "locale": "ja-jp",
+      "reason": "The approved Japanese value leaves two English fragments untranslated.",
+      "replacement": "効果が出るまで2〜5分かかる他の呼吸法とは異なり、生理的ため息はわずか1〜3回の呼吸で測定可能なストレス軽減をもたらします。二段階の吸気で肺のしぼんだ肺胞を再び膨らませて酸素を最大限に取り込み、長い呼気で迷走神経を活性化して鎮静反応を引き起こします。食卓でも、浴室でも、車へ歩く途中でも目立たずに行えます。",
+      "reviewedSourceHash": "373a50274c097965f7a41fe3cfd79e2fc173073b55eb82810b95b48bf2151876",
+      "sourcePath": "solution.whyThisPattern",
+      "sourceText": "Unlike other breathing techniques that require 2-5 minutes to work, the physiological sigh produces measurable stress reduction in just 1-3 breaths. The double inhale re-inflates collapsed air sacs in your lungs (maximizing oxygen), while the long exhale activates your vagus nerve (triggering the calm-down response). You can do it discreetly at the dinner table, in a bathroom, or walking to your car."
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/holiday-stress"
+}

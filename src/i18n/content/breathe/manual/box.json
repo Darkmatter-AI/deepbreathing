@@ -1,0 +1,157 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.pattern.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "d567015ad38c9821cc0b779879f284b6229b7cc48fa8e9503236b16c761f8c9f",
+      "scope": "chrome",
+      "sourceText": "Try this guided box breathing (4-4-4-4) visualizer exercise — it really helps.",
+      "translations": {
+        "de-de": "Probiere diese geführte Box-Atmungsübung (4-4-4-4) mit Visualisierer aus – sie hilft wirklich.",
+        "es-es": "Prueba este ejercicio guiado de respiración cuadrada (4-4-4-4) con visualizador: realmente ayuda.",
+        "fr-fr": "Essayez cet exercice guidé de respiration carrée (4-4-4-4) avec visualiseur : il aide vraiment.",
+        "ja-jp": "このガイド付きボックス呼吸法（4-4-4-4）ビジュアライザーのエクササイズを試してみてください。本当に役立ちます。",
+        "pt-br": "Experimente este exercício guiado de respiração quadrada (4-4-4-4) com visualizador: ele realmente ajuda."
+      }
+    },
+    {
+      "messageId": "chrome.pattern.og-alt",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "6f1018fb33123bebfe2d005370a9b86f98c25ffdcf9f8e474cae8beb196861b2",
+      "scope": "chrome",
+      "sourceText": "Box Breathing (4-4-4-4) Visualizer – Interactive breathing visualizer",
+      "translations": {
+        "de-de": "Box-Atmung (4-4-4-4) – interaktiver Atemvisualisierer",
+        "es-es": "Visualizador de respiración cuadrada (4-4-4-4): visualizador de respiración interactivo",
+        "fr-fr": "Visualiseur de respiration carrée (4-4-4-4) – visualiseur de respiration interactif",
+        "ja-jp": "ボックス呼吸法（4-4-4-4）ビジュアライザー – インタラクティブ呼吸ビジュアライザー",
+        "pt-br": "Visualizador de respiração quadrada (4-4-4-4) – visualizador interativo da respiração"
+      }
+    },
+    {
+      "messageId": "benefits[0].description",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "c1d36ac67c0386ef459015106d06d7c17ad3a15e1cd7f465006556d2a9da9fc7",
+      "scope": "content",
+      "sourceText": "Slow, even pacing increases parasympathetic activity and can [lower perceived stress in minutes](https://doi.org/10.1016/j.xcrm.2022.100895).",
+      "translations": {
+        "de-de": "Ein langsamer, gleichmäßiger Rhythmus erhöht die parasympathische Aktivität und kann [den empfundenen Stress innerhalb weniger Minuten senken](https://doi.org/10.1016/j.xcrm.2022.100895).",
+        "es-es": "Un ritmo lento y uniforme aumenta la actividad parasimpática y puede [reducir el estrés percibido en cuestión de minutos](https://doi.org/10.1016/j.xcrm.2022.100895).",
+        "fr-fr": "Un rythme lent et régulier augmente l’activité parasympathique et peut [réduire le stress perçu en quelques minutes](https://doi.org/10.1016/j.xcrm.2022.100895).",
+        "ja-jp": "ゆっくりと均等なペースは副交感神経の活動を高め、[数分で自覚するストレスを軽減できる](https://doi.org/10.1016/j.xcrm.2022.100895)場合があります。",
+        "pt-br": "Um ritmo lento e uniforme aumenta a atividade parassimpática e pode [reduzir o estresse percebido em poucos minutos](https://doi.org/10.1016/j.xcrm.2022.100895)."
+      }
+    },
+    {
+      "messageId": "body[0].content",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "7b4041b470cc3c154b1dfcaf75b0c86f1526cef4c67e297ad7c43fa4cc5c8872",
+      "scope": "content",
+      "sourceText": "Box breathing is a four-phase breathing technique where you inhale, hold, exhale, and hold again for equal counts—typically 4 seconds each. Popularized by Navy SEAL Commander Mark Divine, it activates the parasympathetic nervous system to reduce stress in as little as 60 seconds. What makes it unique is the symmetrical structure: four equal sides, like a box, giving the mind a simple pattern to follow under pressure.\n\nAdjust counts to 3–6 seconds for comfort. Breathe quietly through the nose, keep shoulders and jaw soft, let your belly lead. If holds feel uncomfortable or cause dizziness, drop them and maintain an even inhale/exhale instead.",
+      "translations": {
+        "de-de": "Box-Atmung ist eine vierphasige Atemtechnik, bei der Sie für gleich lange Zählzeiten einatmen, den Atem halten, ausatmen und erneut halten – normalerweise jeweils 4 Sekunden. Sie wurde von Navy-SEAL-Kommandeur Mark Divine bekannt gemacht und aktiviert das parasympathische Nervensystem, um Stress in nur 60 Sekunden zu reduzieren. Einzigartig ist ihre symmetrische Struktur: vier gleich lange Seiten wie bei einem Quadrat, die dem Geist unter Druck ein einfaches Muster geben.\n\nPassen Sie die Zählzeiten für mehr Komfort auf 3–6 Sekunden an. Atmen Sie ruhig durch die Nase, halten Sie Schultern und Kiefer locker und lassen Sie den Bauch die Bewegung führen. Wenn das Anhalten unangenehm ist oder Schwindel verursacht, lassen Sie es weg und atmen Sie stattdessen gleichmäßig ein und aus.",
+        "es-es": "La respiración cuadrada es una técnica de cuatro fases en la que inhalas, mantienes el aire, exhalas y vuelves a mantenerlo durante tiempos iguales, normalmente 4 segundos cada uno. Popularizada por el comandante de los Navy SEAL Mark Divine, activa el sistema nervioso parasimpático para reducir el estrés en tan solo 60 segundos. Lo que la hace única es su estructura simétrica: cuatro lados iguales, como un cuadrado, que ofrecen a la mente un patrón sencillo que seguir bajo presión.\n\nAjusta los tiempos a 3–6 segundos para estar cómodo. Respira suavemente por la nariz, mantén relajados los hombros y la mandíbula y deja que el abdomen guíe el movimiento. Si las retenciones resultan incómodas o causan mareo, elimínalas y mantén en su lugar una inhalación y exhalación uniformes.",
+        "fr-fr": "La respiration carrée est une technique en quatre phases où vous inspirez, retenez votre souffle, expirez, puis retenez à nouveau votre souffle pendant des durées égales, généralement 4 secondes chacune. Popularisée par Mark Divine, commandant des Navy SEAL, elle active le système nerveux parasympathique afin de réduire le stress en seulement 60 secondes. Sa particularité est sa structure symétrique : quatre côtés égaux, comme un carré, qui donnent à l’esprit un schéma simple à suivre sous pression.\n\nPour votre confort, adaptez les durées entre 3 et 6 secondes. Respirez doucement par le nez, gardez les épaules et la mâchoire détendues et laissez le ventre guider le mouvement. Si les rétentions sont inconfortables ou provoquent des vertiges, supprimez-les et maintenez plutôt une inspiration et une expiration régulières.",
+        "ja-jp": "ボックス呼吸法は、同じカウント数で息を吸い、止め、吐き、もう一度止める4段階の呼吸法で、通常は各段階を4秒ずつ行います。Navy SEAL司令官のMark Divineが広めたもので、副交感神経系を活性化し、わずか60秒でストレスを軽減します。特徴は、正方形のように4辺が等しい対称的な構造で、プレッシャー下でも意識がたどりやすいシンプルなパターンになっていることです。\n\n楽に行えるよう、カウントは3～6秒に調整してください。鼻から静かに呼吸し、肩と顎を緩め、腹部が先に動くようにします。息止めが不快だったり、めまいを引き起こしたりする場合は、息止めを省き、代わりに吸う時間と吐く時間を同じにしてください。",
+        "pt-br": "A respiração quadrada é uma técnica de quatro fases em que você inspira, segura o ar, expira e segura novamente por tempos iguais, geralmente 4 segundos cada. Popularizada pelo comandante dos Navy SEAL Mark Divine, ela ativa o sistema nervoso parassimpático para reduzir o estresse em apenas 60 segundos. O que a torna única é a estrutura simétrica: quatro lados iguais, como um quadrado, oferecendo à mente um padrão simples para seguir sob pressão.\n\nAjuste os tempos para 3–6 segundos para ficar confortável. Respire suavemente pelo nariz, mantenha os ombros e a mandíbula relaxados e deixe o abdômen conduzir o movimento. Se as retenções forem desconfortáveis ou causarem tontura, elimine-as e mantenha, em vez disso, uma inspiração e uma expiração uniformes."
+      }
+    },
+    {
+      "messageId": "body[2].content",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "b994aae950ea4d0f6c43e64cb729746bb20c624fe5c5f455c698688a24737dfb",
+      "scope": "content",
+      "sourceText": "1. Sit upright with your shoulders soft, jaw relaxed, and mouth closed. Breathe through your nose.\n2. Inhale slowly through your nose for 4 seconds, letting your belly rise.\n3. Hold your breath gently for 4 seconds—no straining.\n4. Exhale quietly through your nose (or pursed lips) for 4 seconds, letting your belly fall.\n5. Hold again at the bottom for 4 seconds, staying relaxed.\n6. Repeat for 6–12 cycles (about 2–5 minutes). If holds feel uncomfortable, shorten the counts or remove holds entirely.",
+      "translations": {
+        "de-de": "1. Setzen Sie sich aufrecht hin, lassen Sie die Schultern locker, entspannen Sie den Kiefer und schließen Sie den Mund. Atmen Sie durch die Nase.\n2. Atmen Sie 4 Sekunden lang langsam durch die Nase ein und lassen Sie dabei den Bauch anheben.\n3. Halten Sie den Atem sanft 4 Sekunden lang an – ohne Anstrengung.\n4. Atmen Sie 4 Sekunden lang ruhig durch die Nase (oder durch gespitzte Lippen) aus und lassen Sie dabei den Bauch sinken.\n5. Halten Sie am Ende der Ausatmung erneut 4 Sekunden lang an und bleiben Sie entspannt.\n6. Wiederholen Sie 6–12 Zyklen lang (etwa 2–5 Minuten). Wenn das Anhalten unangenehm ist, verkürzen Sie die Zählzeiten oder lassen Sie die Atempausen ganz weg.",
+        "es-es": "1. Siéntate erguido, con los hombros sueltos, la mandíbula relajada y la boca cerrada. Respira por la nariz.\n2. Inhala lentamente por la nariz durante 4 segundos y deja que el abdomen se eleve.\n3. Mantén el aire suavemente durante 4 segundos, sin forzar.\n4. Exhala suavemente por la nariz (o con los labios fruncidos) durante 4 segundos y deja que el abdomen baje.\n5. Vuelve a mantener la pausa al final de la exhalación durante 4 segundos, sin dejar de relajarte.\n6. Repite durante 6–12 ciclos (unos 2–5 minutos). Si las retenciones resultan incómodas, acorta los tiempos o elimínalas por completo.",
+        "fr-fr": "1. Asseyez-vous bien droit, les épaules relâchées, la mâchoire détendue et la bouche fermée. Respirez par le nez.\n2. Inspirez lentement par le nez pendant 4 secondes en laissant le ventre se soulever.\n3. Retenez doucement votre souffle pendant 4 secondes, sans forcer.\n4. Expirez doucement par le nez (ou les lèvres pincées) pendant 4 secondes en laissant le ventre redescendre.\n5. Retenez à nouveau votre souffle en fin d’expiration pendant 4 secondes, en restant détendu.\n6. Répétez pendant 6 à 12 cycles (environ 2 à 5 minutes). Si les rétentions sont inconfortables, raccourcissez les durées ou supprimez-les complètement.",
+        "ja-jp": "1. 肩の力を抜き、顎を緩め、口を閉じて背筋を伸ばして座ります。鼻で呼吸します。\n2. 4秒かけて鼻からゆっくり息を吸い、腹部を膨らませます。\n3. 力まずに、4秒間やさしく息を止めます。\n4. 4秒かけて鼻（またはすぼめた唇）から静かに息を吐き、腹部をへこませます。\n5. 吐き切ったところでもう一度4秒間息を止め、リラックスしたままにします。\n6. 6～12サイクル（約2～5分）繰り返します。息止めが不快な場合は、カウントを短くするか、息止めを完全に省いてください。",
+        "pt-br": "1. Sente-se com a coluna ereta, os ombros soltos, a mandíbula relaxada e a boca fechada. Respire pelo nariz.\n2. Inspire lentamente pelo nariz por 4 segundos, deixando o abdômen subir.\n3. Segure suavemente a respiração por 4 segundos, sem fazer esforço.\n4. Expire suavemente pelo nariz (ou com os lábios semicerrados) por 4 segundos, deixando o abdômen baixar.\n5. Segure novamente ao final da expiração por 4 segundos, mantendo-se relaxado.\n6. Repita por 6–12 ciclos (cerca de 2–5 minutos). Se as retenções forem desconfortáveis, reduza os tempos ou elimine-as completamente."
+      }
+    },
+    {
+      "messageId": "body[2].heading",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "1c4a5f9ea8cadcf67e0567a26d036b4c506745a7ec30b42fbbdafd89cb8678c3",
+      "scope": "content",
+      "sourceText": "How to Do Box Breathing (Step by Step)",
+      "translations": {
+        "de-de": "Box-Atmung: Schritt-für-Schritt-Anleitung",
+        "es-es": "Cómo hacer la respiración cuadrada (paso a paso)",
+        "fr-fr": "Comment pratiquer la respiration carrée (étape par étape)",
+        "ja-jp": "ボックス呼吸法のやり方（手順）",
+        "pt-br": "Como fazer a respiração quadrada (passo a passo)"
+      }
+    },
+    {
+      "messageId": "howTo.tools[0]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "62964eb8e185d53602cab306178b138e24a3800b42af546648bdd3369353df7e",
+      "scope": "content",
+      "sourceText": "Chair or comfortable seat",
+      "translations": {
+        "de-de": "Stuhl oder bequeme Sitzgelegenheit",
+        "es-es": "Silla o asiento cómodo",
+        "fr-fr": "Chaise ou siège confortable",
+        "ja-jp": "椅子または快適な座席",
+        "pt-br": "Cadeira ou assento confortável"
+      }
+    },
+    {
+      "messageId": "howTo.tools[1]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "106570559fda8d2f5a104a59b69253581d17ce97fd24963cce8f3fa556223ee2",
+      "scope": "content",
+      "sourceText": "On-screen timer or haptics (optional)",
+      "translations": {
+        "de-de": "Bildschirm-Timer oder Haptik (optional)",
+        "es-es": "Temporizador en pantalla o respuesta háptica (opcional)",
+        "fr-fr": "Minuteur à l’écran ou retours haptiques (facultatif)",
+        "ja-jp": "画面上のタイマーまたは触覚フィードバック（任意）",
+        "pt-br": "Temporizador na tela ou resposta tátil (opcional)"
+      }
+    },
+    {
+      "messageId": "ownedVideo.description",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "dbb1f03aac5d67857328901657f3cfa9bbce667e6b05cd5c2b489d69fa62d355",
+      "scope": "content",
+      "sourceText": "A 5-minute guided box breathing session using our interactive pacer. Follow the animated cue to inhale, hold, exhale, and hold for equal 4-second counts.",
+      "translations": {
+        "de-de": "Eine geführte 5-minütige Box-Atmungssitzung mit unserem interaktiven Taktgeber. Folge dem animierten Hinweis, um jeweils 4 Sekunden lang einzuatmen, den Atem zu halten, auszuatmen und erneut zu halten.",
+        "es-es": "Una sesión guiada de respiración cuadrada de 5 minutos con nuestro marcador de ritmo interactivo. Sigue la señal animada para inhalar, mantener, exhalar y volver a mantener durante tiempos iguales de 4 segundos.",
+        "fr-fr": "Une séance guidée de respiration carrée de 5 minutes avec notre rythmeur interactif. Suivez le repère animé pour inspirer, retenir votre souffle, expirer et retenir à nouveau pendant des durées égales de 4 secondes.",
+        "ja-jp": "インタラクティブなペーサーを使った5分間のガイド付きボックス呼吸セッションです。アニメーションの合図に従い、4秒ずつ息を吸い、止め、吐き、もう一度止めます。",
+        "pt-br": "Uma sessão guiada de respiração quadrada de 5 minutos com nosso marcador de ritmo interativo. Siga a indicação animada para inspirar, segurar, expirar e segurar novamente por tempos iguais de 4 segundos."
+      }
+    },
+    {
+      "messageId": "ownedVideo.title",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "e116608416a30032660eb04e4710e9342343639fb0a06f2eb1ba36f6be314976",
+      "scope": "content",
+      "sourceText": "Box Breathing Timer: 5 Minutes (Square Breathing)",
+      "translations": {
+        "de-de": "Box-Atmungs-Timer: 5 Minuten (Quadratatmung)",
+        "es-es": "Temporizador de respiración cuadrada: 5 minutos",
+        "fr-fr": "Minuteur de respiration carrée : 5 minutes",
+        "ja-jp": "ボックス呼吸タイマー：5分間（スクエア呼吸法）",
+        "pt-br": "Temporizador de respiração quadrada: 5 minutos"
+      }
+    },
+    {
+      "messageId": "video.title",
+      "reason": "route-catalog-exact-conflict",
+      "reviewedSourceHash": "68743215e02aee2c0a62c2b03d32c8780b671a853c8d2ca1d002ec4c93160f0c",
+      "scope": "content",
+      "sourceText": "Box Breathing with Mark Divine (Navy SEAL Commander)",
+      "translations": {
+        "es-es": "Respiración cuadrada con Mark Divine (comandante de los Navy SEAL)",
+        "pt-br": "Respiração quadrada com Mark Divine (comandante dos Navy SEAL)"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/breathe/box"
+}

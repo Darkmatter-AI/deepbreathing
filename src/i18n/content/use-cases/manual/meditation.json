@@ -1,0 +1,74 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.use-case.box-breathing-name",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "f10268a765bb0ecf0afdfae16a75bb2587e2c730d3f1f1b776a4cafc877308ea",
+      "scope": "chrome",
+      "sourceText": "Coherent Breathing",
+      "translations": {
+        "de-de": "Kohärente Atmung",
+        "fr-fr": "Respiration cohérente",
+        "ja-jp": "コヒーレント呼吸"
+      }
+    },
+    {
+      "messageId": "chrome.use-case.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "3534328e2a443a5547397ac4885276ebc00ef326e655d7366c017ef471ad6172",
+      "scope": "chrome",
+      "sourceText": "Try this guided breathing exercise for can't meditate? start with coherent breathing.",
+      "translations": {
+        "de-de": "Probiere diese geführte Atemübung zu „Kannst du nicht meditieren? Beginne mit kohärenter Atmung“.",
+        "es-es": "Prueba este ejercicio de respiración guiada para «¿No puedes meditar? Empieza con la respiración coherente».",
+        "fr-fr": "Essayez cet exercice de respiration guidée pour « Vous n'arrivez pas à méditer ? Commencez par la respiration cohérente ».",
+        "ja-jp": "「瞑想できない？コヒーレント呼吸から始めましょう」のガイド付き呼吸エクササイズをお試しください。",
+        "pt-br": "Experimente este exercício de respiração guiada para «Não consegue meditar? Comece com a respiração coerente»."
+      }
+    },
+    {
+      "messageId": "chrome.use-case.learn-box-breathing",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "f607a43ced7c5ce11c681d395d966d0d1a214221d59fcba2227a52b39e36f0a9",
+      "scope": "chrome",
+      "sourceText": "Learn more about Coherent Breathing →",
+      "translations": {
+        "de-de": "Mehr über kohärente Atmung erfahren →",
+        "es-es": "Más información sobre la respiración coherente →",
+        "fr-fr": "En savoir plus sur la respiration cohérente →",
+        "ja-jp": "コヒーレント呼吸について詳しく見る →",
+        "pt-br": "Saiba mais sobre a respiração coerente →"
+      }
+    },
+    {
+      "messageId": "hero.title",
+      "reason": "route-catalog-exact-conflict",
+      "reviewedSourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+      "scope": "content",
+      "sourceText": "Can't Meditate? Start with Coherent Breathing",
+      "translations": {
+        "de-de": "Kannst du nicht meditieren? Beginne mit kohärenter Atmung",
+        "es-es": "¿No puedes meditar? Empieza con la respiración coherente",
+        "fr-fr": "Vous n'arrivez pas à méditer ? Commencez par la respiration cohérente",
+        "ja-jp": "瞑想できない？コヒーレント呼吸から始めましょう",
+        "pt-br": "Não consegue meditar? Comece com a respiração coerente"
+      }
+    },
+    {
+      "messageId": "relatedTechnique.callToAction",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "72c4f42c75d2b8d5f4c9af7b9db772f9629dd90f23f37374013e7942ffb41885",
+      "scope": "content",
+      "sourceText": "Practice with the full coherent breathing visualizer and explore the complete HRV optimization protocol",
+      "translations": {
+        "de-de": "Übe mit dem vollständigen Visualisierer für kohärente Atmung und entdecke das komplette HRV-Optimierungsprotokoll",
+        "es-es": "Practica con el visualizador completo de respiración coherente y explora el protocolo completo de optimización de la VFC",
+        "fr-fr": "Entraînez-vous avec le visualiseur complet de respiration cohérente et explorez le protocole complet d'optimisation de la VFC",
+        "ja-jp": "フルのコヒーレント呼吸ビジュアライザーで練習し、完全なHRV最適化プロトコルを探索してください",
+        "pt-br": "Pratique com o visualizador completo de respiração coerente e explore o protocolo completo de otimização de VFC"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/meditation"
+}

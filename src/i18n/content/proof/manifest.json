@@ -1,0 +1,227 @@
+{
+  "allLocaleRoutesPublishable": true,
+  "digest": "438d36c57602197eec088e0a171ae889e901d8a744471852cae1c65c80b48e8b",
+  "files": [
+    {
+      "bytes": 17202,
+      "path": "messages/de-de/breathe-buteyko.json",
+      "role": "runtime-messages",
+      "sha256": "e118bfe4acf49507c007b44b29758fc0b513280b1babe9f11641ec141cbddbbb"
+    },
+    {
+      "bytes": 19411,
+      "path": "messages/de-de/for-anxiety.json",
+      "role": "runtime-messages",
+      "sha256": "9ce0965bfdf5a6376e63354d1164c0d72024f80852c6e861daff734e7af0f46b"
+    },
+    {
+      "bytes": 17626,
+      "path": "messages/es-es/breathe-buteyko.json",
+      "role": "runtime-messages",
+      "sha256": "0795b17dd51b48a51bc7fb96849c369fe5ffa71a60370c2e566e47be51aec11a"
+    },
+    {
+      "bytes": 19496,
+      "path": "messages/es-es/for-anxiety.json",
+      "role": "runtime-messages",
+      "sha256": "aac8b79a2859b167c04e525b4854dc39dc5305f4b1f98b724777a5448f6e98b0"
+    },
+    {
+      "bytes": 18022,
+      "path": "messages/fr-fr/breathe-buteyko.json",
+      "role": "runtime-messages",
+      "sha256": "b50d3001d5324d57fc51a45d40a880d06f5667943cdba62537ad8ec1b007ec00"
+    },
+    {
+      "bytes": 20555,
+      "path": "messages/fr-fr/for-anxiety.json",
+      "role": "runtime-messages",
+      "sha256": "646ad90026477e4740bc99fd53ee3daad32d59f6824d9305394c2933295be8e6"
+    },
+    {
+      "bytes": 18869,
+      "path": "messages/ja-jp/breathe-buteyko.json",
+      "role": "runtime-messages",
+      "sha256": "64dba18f6240052a088925f14c4256f0a4069990b73a852e66b780e1e78c5cd0"
+    },
+    {
+      "bytes": 20759,
+      "path": "messages/ja-jp/for-anxiety.json",
+      "role": "runtime-messages",
+      "sha256": "f4d4c8757572e758a444093c2883a41b8451d43f3d1f71b30462c88fd7adba3f"
+    },
+    {
+      "bytes": 17363,
+      "path": "messages/pt-br/breathe-buteyko.json",
+      "role": "runtime-messages",
+      "sha256": "2404487ec469f2bbfe57e0b341d5990d53b4ff50eab34b3dee0e62fca9c4a2b9"
+    },
+    {
+      "bytes": 19302,
+      "path": "messages/pt-br/for-anxiety.json",
+      "role": "runtime-messages",
+      "sha256": "be9711271bd6ce611c0ad2eec7672f0967a2e19cd2880082e7625bff9ffafaa2"
+    },
+    {
+      "bytes": 1899,
+      "path": "publication.json",
+      "role": "runtime-publication-gate",
+      "sha256": "cb228dcd04067605f6abb038d27e4dc7b14c79e8a2c7606e857d05e9e379d302"
+    },
+    {
+      "bytes": 209165,
+      "path": "source-metadata/breathe-buteyko.json",
+      "role": "build-time-source-metadata",
+      "sha256": "6961b8143c3638549b285a919711767148bfdca27a59a7b859cdfbc50f9341f8"
+    },
+    {
+      "bytes": 199029,
+      "path": "source-metadata/for-anxiety.json",
+      "role": "build-time-source-metadata",
+      "sha256": "09cee1b1657a9a4748ad79f264be8c1245eac14d3a6ebd2a8d8391a708d5c65e"
+    },
+    {
+      "bytes": 231,
+      "path": "unresolved-report.json",
+      "role": "build-time-unresolved-report",
+      "sha256": "44657fdbbe18da9f11b5639511971855e44c455c7d1c5e0107a101bc8bfd3706"
+    }
+  ],
+  "generatedFrom": {
+    "catalogSnapshotUpdatedThrough": "2026-07-15T07:05:12.173Z",
+    "overridesSha256": "c05ae38ca31e837f2c1fc7d28695e789aa4f8cd8a36f82f6bfa09c91d1800e3d",
+    "reviewedReplacementsSha256": "d4c019c086c8b7ee902fd3e84ab724329b111788bda2ab862e805832643f3a0c",
+    "semanticMapSha256": "2195dd8c8866fc5b6ff260d04409e0428ea06210a63934b080293afe718eb443",
+    "structuredAuditDigest": "a2198562bae800bcf7f2c324914829606087ac6f320b6d7e2391ee7f1bdbb75d",
+    "tenantId": "deepbreathingexercises_com_ac8ae5"
+  },
+  "locales": [
+    "de-de",
+    "es-es",
+    "fr-fr",
+    "ja-jp",
+    "pt-br"
+  ],
+  "routes": {
+    "/breathe/buteyko": {
+      "expectedMessages": 99,
+      "locales": {
+        "de-de": {
+          "expectedMessages": 99,
+          "messageFile": "messages/de-de/breathe-buteyko.json",
+          "missingMessageIds": [],
+          "missingMessages": 0,
+          "presentMessages": 99,
+          "publishable": true,
+          "sha256": "e118bfe4acf49507c007b44b29758fc0b513280b1babe9f11641ec141cbddbbb"
+        },
+        "es-es": {
+          "expectedMessages": 99,
+          "messageFile": "messages/es-es/breathe-buteyko.json",
+          "missingMessageIds": [],
+          "missingMessages": 0,
+          "presentMessages": 99,
+          "publishable": true,
+          "sha256": "0795b17dd51b48a51bc7fb96849c369fe5ffa71a60370c2e566e47be51aec11a"
+        },
+        "fr-fr": {
+          "expectedMessages": 99,
+          "messageFile": "messages/fr-fr/breathe-buteyko.json",
+          "missingMessageIds": [],
+          "missingMessages": 0,
+          "presentMessages": 99,
+          "publishable": true,
+          "sha256": "b50d3001d5324d57fc51a45d40a880d06f5667943cdba62537ad8ec1b007ec00"
+        },
+        "ja-jp": {
+          "expectedMessages": 99,
+          "messageFile": "messages/ja-jp/breathe-buteyko.json",
+          "missingMessageIds": [],
+          "missingMessages": 0,
+          "presentMessages": 99,
+          "publishable": true,
+          "sha256": "64dba18f6240052a088925f14c4256f0a4069990b73a852e66b780e1e78c5cd0"
+        },
+        "pt-br": {
+          "expectedMessages": 99,
+          "messageFile": "messages/pt-br/breathe-buteyko.json",
+          "missingMessageIds": [],
+          "missingMessages": 0,
+          "presentMessages": 99,
+          "publishable": true,
+          "sha256": "2404487ec469f2bbfe57e0b341d5990d53b4ff50eab34b3dee0e62fca9c4a2b9"
+        }
+      },
+      "overrideMessages": 22,
+      "reviewedReplacementMessages": 0,
+      "routeId": "breathe.buteyko",
+      "safeSeedMessages": 77,
+      "unresolvedMessages": 0
+    },
+    "/for/anxiety": {
+      "expectedMessages": 91,
+      "locales": {
+        "de-de": {
+          "expectedMessages": 91,
+          "messageFile": "messages/de-de/for-anxiety.json",
+          "missingMessageIds": [],
+          "missingMessages": 0,
+          "presentMessages": 91,
+          "publishable": true,
+          "sha256": "9ce0965bfdf5a6376e63354d1164c0d72024f80852c6e861daff734e7af0f46b"
+        },
+        "es-es": {
+          "expectedMessages": 91,
+          "messageFile": "messages/es-es/for-anxiety.json",
+          "missingMessageIds": [],
+          "missingMessages": 0,
+          "presentMessages": 91,
+          "publishable": true,
+          "sha256": "aac8b79a2859b167c04e525b4854dc39dc5305f4b1f98b724777a5448f6e98b0"
+        },
+        "fr-fr": {
+          "expectedMessages": 91,
+          "messageFile": "messages/fr-fr/for-anxiety.json",
+          "missingMessageIds": [],
+          "missingMessages": 0,
+          "presentMessages": 91,
+          "publishable": true,
+          "sha256": "646ad90026477e4740bc99fd53ee3daad32d59f6824d9305394c2933295be8e6"
+        },
+        "ja-jp": {
+          "expectedMessages": 91,
+          "messageFile": "messages/ja-jp/for-anxiety.json",
+          "missingMessageIds": [],
+          "missingMessages": 0,
+          "presentMessages": 91,
+          "publishable": true,
+          "sha256": "f4d4c8757572e758a444093c2883a41b8451d43f3d1f71b30462c88fd7adba3f"
+        },
+        "pt-br": {
+          "expectedMessages": 91,
+          "messageFile": "messages/pt-br/for-anxiety.json",
+          "missingMessageIds": [],
+          "missingMessages": 0,
+          "presentMessages": 91,
+          "publishable": true,
+          "sha256": "be9711271bd6ce611c0ad2eec7672f0967a2e19cd2880082e7625bff9ffafaa2"
+        }
+      },
+      "overrideMessages": 27,
+      "reviewedReplacementMessages": 1,
+      "routeId": "for.anxiety",
+      "safeSeedMessages": 64,
+      "unresolvedMessages": 0
+    }
+  },
+  "schemaVersion": 1,
+  "summary": {
+    "expectedMessages": 190,
+    "localeMessageValues": 950,
+    "overrideMessages": 49,
+    "reviewedReplacementMessages": 1,
+    "routes": 2,
+    "safeSeedMessages": 141,
+    "unresolvedMessages": 0
+  }
+}

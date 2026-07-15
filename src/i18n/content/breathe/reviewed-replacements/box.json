@@ -1,0 +1,24 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "Descubre la respiración cuadrada: la técnica de los Navy",
+      "locale": "es-es",
+      "reason": "The approved title is truncated after 'Navy' and loses the technique and outcome.",
+      "replacement": "Respiración cuadrada: técnica de los Navy SEAL para detener la ansiedad rápidamente",
+      "reviewedSourceHash": "ccb0ad3d551b05f39f36f7de5ad4af3d5226582ceff8900dc7fe74baa2a23b65",
+      "sourcePath": "meta.ogTitle",
+      "sourceText": "Box Breathing: Navy SEAL Technique to Stop Anxiety Fast"
+    },
+    {
+      "currentCatalogValue": "Descubre la respiración cuadrada: la técnica de los Navy",
+      "locale": "es-es",
+      "reason": "The approved title is truncated after 'Navy' and loses the technique and outcome.",
+      "replacement": "Respiración cuadrada: técnica de los Navy SEAL para detener la ansiedad rápidamente",
+      "reviewedSourceHash": "ccb0ad3d551b05f39f36f7de5ad4af3d5226582ceff8900dc7fe74baa2a23b65",
+      "sourcePath": "meta.twitterTitle",
+      "sourceText": "Box Breathing: Navy SEAL Technique to Stop Anxiety Fast"
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/breathe/box"
+}
