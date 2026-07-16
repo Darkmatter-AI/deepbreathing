@@ -1945,6 +1945,57 @@ The synonyms are not being indexed or ranked. May need more prominent placement 
 
 ---
 
+### 2026-07-16: Native i18n serving migration baseline
+
+**Hypothesis:** Replacing the MassTranslate reverse-proxy serving path with repository-owned native rendering will preserve the existing localized search contract and product behavior while removing translation-cache latency and a recurring source of routing complexity. Translation quality, keywords, claims, design, URLs, and sitemap membership are deliberately unchanged so the serving migration can be measured independently.
+
+**Pre-cutover state:** Production still uses the MassTranslate apex ALIAS. The release candidate is validated but not yet routed to production at the time of this entry.
+
+**GSC finalized baseline:** 2026-06-17 through 2026-07-14
+
+| Scope | Clicks | Impressions | CTR | Position | Pages with impressions |
+|-------|-------:|------------:|----:|---------:|-----------------------:|
+| Sitewide | 207 | 19,875 | 1.04% | 15.32 | — |
+| All localized | 41 | 1,573 | 2.61% | 15.54 | 158 |
+| Spanish | 14 | 312 | — | — | 29 |
+| Portuguese | 1 | 241 | — | — | 35 |
+| French | 8 | 308 | — | — | 32 |
+| German | 3 | 246 | — | — | 31 |
+| Japanese | 15 | 466 | — | — | 31 |
+
+The preceding localized window recorded 37 clicks and 1,233 impressions. Current localized clicks are 10.8% higher and impressions are 27.6% higher, but the per-locale click counts are small and volatile.
+
+**Indexing baseline:** GSC URL Inspection dry-run reports 312 of 331 inspected URLs indexed and 19 not indexed. The dry-run did not write the queue or submit URLs.
+
+**Bing finalized baseline:** 2026-06-13 through 2026-07-10
+
+| Scope | Clicks | Impressions | CTR | Position | Pages with impressions |
+|-------|-------:|------------:|----:|---------:|-----------------------:|
+| Sitewide | 306 | 14,134 | 2.17% | 5.78 | — |
+| All localized | 29 | 696 | 4.17% | 6.30 | 88 |
+| Spanish | 5 | 131 | — | — | 17 |
+| Portuguese | 5 | 140 | — | — | 19 |
+| French | 5 | 175 | — | — | 17 |
+| German | 2 | 151 | — | — | 15 |
+| Japanese | 12 | 99 | — | — | 20 |
+
+**Technical baseline:** The native production candidate passes a 350-URL Googlebot matrix with no failures. Same-deployment rendered transfer weight is 0% to 6% above English across five representative pairs. Vercel's preceding 24 hours contain two malformed-JSON sync 500s and one OAuth state mismatch, with no localized route-serving cluster. Ahrefs was not authenticated when this baseline was captured; the previously documented health score of 92 from 2026-06-13 is stale.
+
+**Pre-committed guardrails:**
+
+- Immediate and T+24 crawler sweeps must keep 350 of 350 localized responses at HTTP 200 with the expected language, title, self-canonical, seven alternates, indexability, and no proxy global or Next error document.
+- No new locale-related 4xx/5xx cluster, hydration failure, or critical auth/interactive regression may appear after cutover.
+- Representative localized response time must remain within 10% of the same-deployment English guardrail after caches settle.
+- The GSC inspected-indexed total should remain at or above 296, which is 95% of the 312-URL baseline, unless individual losses are confirmed as pre-existing or intentional.
+- At T+28, localized GSC clicks or impressions falling more than 20% against an equivalent matured comparison window triggers route-level investigation before the proxy is decommissioned. Low-volume locale click changes alone are not sufficient evidence.
+- Sitemap membership and public URL paths must remain unchanged during the migration measurement window.
+
+**Measure after:** T+24 hours for technical parity, T+7 days for crawl/indexing early warning, and T+28 days for the search outcome. Replace the T-relative markers with calendar dates when production routing changes.
+
+**Status:** Prepared, not launched
+
+---
+
 ## Completed Experiments
 
 ## Recent Follow-Up Log

@@ -1025,3 +1025,50 @@ Next:
 - Review this complete local Phase 4 baseline, then publish it only to the configured branch preview for the expanded hosted matrix.
 - Finish the remaining shared UI and proxy-independence gates without mixing copy, keyword, claim, design, or new-language improvements into the migration baseline.
 - Capture fresh search and operational baselines only when the production cutover candidate is ready.
+
+## 2026-07-16: Native production candidate and cutover controls prepared
+
+Status: Release candidate validated; production remains on the MassTranslate proxy while the release commit, native production deployment, and apex cutover are executed
+
+What changed:
+
+- Advanced all 56 translated parent route definitions from `preview` to `cutover-ready`, which publishes all 280 parent locale-route pairs only when `NATIVE_I18N_MODE=native` is selected. Proxy remains the fail-closed default and `native-preview` keeps its existing behavior.
+- Tightened the manifest contracts so the native publication set must equal the complete preview set: 265 catch-all static paths, five explicit timer paths, five explicit About paths, five dynamic stats paths, and the 70 localized embed children governed by the `/embed` parent.
+- Added canonical and seven-language alternate metadata to localized embed children after the production-mode Googlebot crawl found that the native children omitted tags the proxy currently injects. This was a strict parity repair; content, indexability, query behavior, and design did not change.
+- Added `CUTOVER-RUNBOOK.md` with the exact Vercel DNS scope, current MassTranslate apex ALIAS record, cutover and rollback commands, prior production deployment, owners, verification matrix, stop conditions, and observation schedule.
+
+Validation evidence:
+
+- The route-manifest test was changed first and failed eight cutover-publication assertions while every route remained `preview`. After the mechanical status promotion, all 14 manifest tests passed. The related route-shell, batch-map, embed, and stats checks passed 20 of 20 before the metadata parity repair; the focused embed suite then passed 6 of 6.
+- A production-configured `NATIVE_I18N_MODE=native` direct Next build completed without invoking the postbuild hook and generated 433 of 433 pages. The static verifier accepted all 275 localized parent artifacts.
+- The first 350-URL production-mode Googlebot sweep passed all 280 localized sitemap URLs and correctly exposed one family-wide metadata gap on the 70 localized embed children. After the test-first parity repair and rebuild, the same sweep passed 350 of 350 with HTTP 200, exact BCP 47 language, localized title, self-canonical, seven alternates, expected noindex behavior, no proxy global, and no Next error document.
+- The hosted native preview had already passed the complete 350-response server matrix and representative hydrated browser checks across all route classes and five locales. Mobile checks passed at 390 by 844 on visualizer, embed, holiday, and stats. The German embed generator produced a coherent Japanese dark-theme 180-second no-binaural child URL and its localized child preserved the full query contract.
+- Same-deployment rendered transfer weight was 0% to 6% above the corresponding English route across five representative pairs. First Contentful Paint was equal or faster on four pairs and 2% slower on one.
+- Production authentication remains healthy: the Google button reaches the chooser. The branch preview cannot complete Google auth because the preview environment lacks the production OAuth credentials and its hostname is not a trusted origin; a production-configured local native request returned a valid OAuth handoff for the apex origin.
+
+Pre-cutover baselines:
+
+- GSC URL Inspection dry-run: 312 of 331 inspected URLs are indexed and 19 are not indexed. The remaining states are eight crawled-not-indexed, four Google-selected alternate canonicals, four unknown methodology URLs, two discovered-not-indexed, and one redirect. No queue or submission changed.
+- GSC Search Analytics through the finalized 2026-07-14 date, last 28 days: sitewide 207 clicks and 19,875 impressions; localized 41 clicks and 1,573 impressions across 158 pages. Localized clicks are 10.8% above the previous period and impressions are 27.6% above it, with locale-level volatility that should not be overinterpreted.
+- Bing through 2026-07-10, last 28 days: sitewide 306 clicks and 14,134 impressions; localized 29 clicks and 696 impressions across 88 pages. The read was live and did not sync, persist, submit, or refresh OAuth state.
+- Vercel production errors over the preceding 24 hours: 19 error-level entries, of which 16 were successful requests carrying the existing Postgres SSL warning, one was a 302 OAuth state mismatch, and two were malformed-JSON 500s on `/api/v1/sync/merge` and `/api/v1/sync/settings`. There was no localized route-serving cluster.
+- Ahrefs could not be refreshed because Chrome did not have an authenticated Ahrefs application session available to automation. The documented score of 92 from 2026-06-13 is stale and is not treated as current release evidence. The deterministic 350-URL crawler sweep is the current crawl baseline.
+
+Routing and rollback evidence:
+
+- Vercel DNS is authoritative for `deepbreathingexercises.com` under `amorimferreiras-projects`.
+- Explicit apex record `rec_446e9b673d3eff0e30137ce3` is an ALIAS to `proxy-fallback.masstranslate.ai.` and overrides the default Vercel ALIAS to `cname.vercel-dns-017.com.`.
+- Cutover deletes only that explicit record. Rollback recreates `@ ALIAS proxy-fallback.masstranslate.ai.` and, if the application also needs restoration, rolls back to deployment `dpl_38pH8mJzwttsA8rtYX5L5KnymYBh`.
+- The MassTranslate Worker, tenant state, credentials, and cleanup remain untouched through the 28-day observation window.
+
+Known parity exceptions:
+
+- Localized `/stats` remains noindex while present in the sitemap, matching the current production contract.
+- Dormant proxy compatibility reads remain in shared code, but native output does not expose `__MT_CONFIG__` and the complete localized matrix works without it. Removing those reads is post-cutover debt cleanup, not a release improvement.
+- Existing English metadata and root client-rendering warnings remain unchanged and are outside the native localized parity change.
+
+Next:
+
+- Commit and push the release candidate.
+- Add `NATIVE_I18N_MODE=native` to Vercel Production, deploy the release commit, and verify the immutable deployment plus origin before DNS changes.
+- Remove only the recorded apex MassTranslate ALIAS, run the production browser and Googlebot matrices, and begin the observation schedule in `CUTOVER-RUNBOOK.md`.

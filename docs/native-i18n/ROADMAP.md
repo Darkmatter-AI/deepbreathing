@@ -2,7 +2,7 @@
 
 Started: 2026-07-15  
 Planning estimate: 20 to 30 focused engineering days  
-Current phase: all four Phase 4 waves are integrated in local `native-preview`; all 19 parent routes, 95 parent locale-route pairs, and 70 localized embed children pass the production-equivalent local proof; zero Phase 4 parent routes remain; production remains in `proxy` mode
+Current phase: the complete native production candidate passes the hosted browser checks, production-equivalent build, 275-artifact verifier, and 350-URL Googlebot matrix; search and error baselines plus an exact DNS rollback are recorded; production remains in `proxy` mode until the release commit is deployed and the apex override is removed
 
 This is a living plan. Update checkboxes and the progress log as evidence changes. Estimates are planning ranges, not deadlines.
 
@@ -21,18 +21,18 @@ Deliverables:
 
 - [x] Create the native-i18n objective, roadmap, decision log, and progress log.
 - [x] Inventory every currently published locale-route pair.
-- [ ] Capture existing English and localized URL behavior, including status, canonical, hreflang, `lang`, title, description, and indexability.
+- [x] Capture existing English and localized URL behavior, including status, canonical, hreflang, `lang`, title, description, and indexability. The hosted and local route matrices distinguish the current proxy contract from native output across all published localized routes and embed children.
 - [x] Record the existing translation catalog counts and any known incomplete pages.
 - [~] Identify every repository and infrastructure dependency on MassTranslate.
-- [ ] Add or preserve baseline route, sitemap, metadata, and language-switcher tests.
-- [ ] Record the exact production proxy configuration and reversal procedure before it changes.
+- [x] Add or preserve baseline route, sitemap, metadata, and language-switcher tests.
+- [x] Record the exact production proxy configuration and reversal procedure before it changes. `CUTOVER-RUNBOOK.md` records the Vercel DNS scope, apex override record, removal command, rollback command, prior deployment, owner, verification matrix, and stop conditions.
 - [x] Define a representative proof set: `/`, `/breathe/buteyko`, `/for/anxiety`, `/about`, and `/4-7-8-breathing-timer`.
 
 Gate 0:
 
 - [x] The public URL inventory is versioned and reproducible.
-- [ ] Known baseline defects are distinguished from migration regressions.
-- [ ] A production rollback owner and exact routing reversal are documented.
+- [x] Known baseline defects are distinguished from migration regressions.
+- [x] A production rollback owner and exact routing reversal are documented.
 - [x] The proof set covers structured, bespoke, metadata-heavy, and interactive behavior.
 
 ## Phase 1: Translation data contract and one-time import
@@ -91,9 +91,9 @@ Deliverables:
 Gate 2:
 
 - [x] A no-JavaScript response contains the intended localized body and metadata. Proven locally for all 25 admitted route-locale pairs.
-- [~] Browser and crawler user agents receive equivalent localized content. All 185 admitted hosted server responses pass the metadata and body-artifact contract, and representative hydrated browser checks pass across all five translated locales; a dedicated crawler user-agent sweep remains.
-- [~] No hydration mismatch or post-load language swap occurs. Representative proof and structured routes across all five translated locales completed hydration with stable title, `lang`, content, and chrome and no browser console error; the full interactive matrix remains.
-- [~] Existing public paths, query behavior, and English routes remain stable. Local proxy and English status checks pass; production-equivalent crawl remains.
+- [x] Browser and crawler user agents receive equivalent localized content. The hosted matrix and final 350-URL local Googlebot sweep pass, and representative hydrated browser checks cover every route class and all five translated locales.
+- [x] No hydration mismatch or post-load language swap occurs. Representative routes across all five translated locales completed hydration with stable title, `lang`, content, and chrome and no reproducible browser exception.
+- [x] Existing public paths, query behavior, and English routes remain stable. The final production-equivalent crawl preserves all existing localized paths and embed query behavior.
 - [x] The admitted proof routes render without access to MassTranslate.
 - [x] Performance is within the agreed local guardrail relative to English pages. `/about` is 85.3 KB versus 85.1 KB English, the localized timer exactly matches English at 167 KB, and the shared localized catch-all is 170 KB versus the 167 KB English homepage.
 
@@ -142,9 +142,9 @@ Deliverables:
 
 Gate 4:
 
-- [~] All currently published localized routes have native parity. The complete local static artifact set and dynamic stats matrix pass; expanded hosted-preview and final production-equivalent crawl evidence remain pending.
+- [x] All currently published localized routes have native parity. The hosted route/browser matrix, complete local static artifact set, dynamic stats checks, and final 350-URL production-equivalent crawler sweep pass. The crawler found and gated one localized embed metadata omission; the focused parity fix restored the proxy's self-canonical and seven-alternate contract on all 70 children.
 - [ ] No code path depends on DOM text replacement or `window.__MT_CONFIG__`.
-- [~] No public localized route silently falls back to English. Deterministic coverage checks and the 275-artifact local verifier pass; full hosted browser and crawler evidence remains pending.
+- [x] No public localized route silently falls back to English. Deterministic coverage checks, the 275-artifact verifier, hosted hydrated QA, and the complete 350-URL crawler evidence pass.
 - [ ] All user-visible shared UI strings use the native bundle contract.
 
 Rollback:
@@ -217,10 +217,10 @@ Owner authorization: granted on 2026-07-15. The authorization becomes actionable
 
 Deliverables:
 
-- [~] Run the complete automated route and metadata matrix against a production-equivalent preview. The last hosted checkpoint passes its earlier 185 admitted locale-route pairs. The final local production-equivalent baseline passes all 275 static localized artifacts, all five dynamic localized stats routes, all 95 Phase 4 parent responses, and all 70 localized embed children. The expanded set must still join a configured hosted matrix before cutover.
-- [ ] Run focused browser QA for all route families and locales.
-- [ ] Capture pre-cutover GSC indexing, search performance, Bing performance, crawl health, page speed, and error baselines.
-- [ ] Freeze unrelated routing and sitemap work during cutover.
+- [x] Run the complete automated route and metadata matrix against a production-equivalent preview. The hosted matrix covers all published route classes; the final native build generates 433 pages, the artifact verifier accepts 275 localized parents, and the production-mode Googlebot sweep accepts 280 localized sitemap URLs plus 70 localized embed children.
+- [x] Run focused browser QA for all route families and locales. Hydrated desktop checks span every route class and all five locales; mobile checks cover visualizer, embed, holiday, and stats; interactive checks cover the embed generator and breathing controls. The preview-only Google OAuth limitation is documented and the production handoff is verified separately.
+- [~] Capture pre-cutover GSC indexing, search performance, Bing performance, crawl health, page speed, and error baselines. GSC, Bing, the 350-URL crawler sweep, rendered transfer weight, and Vercel errors are captured. Ahrefs remains the only stale external baseline because no signed-in session was available.
+- [x] Freeze unrelated routing and sitemap work during cutover. The release scope is migration parity only; `CUTOVER-RUNBOOK.md` lists the excluded improvement classes.
 - [ ] Change the edge routing so locale requests reach Next.js natively.
 - [ ] Verify the production URL matrix immediately after cutover.
 - [ ] Monitor errors, latency, hydration, indexing, canonicals, and crawler behavior through the observation window.

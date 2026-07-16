@@ -163,7 +163,7 @@ test("catalog facts cover 59 static routes and every translated sitemap route", 
   }
 });
 
-test("translated migration state starts fail-closed", () => {
+test("translated migration state admits the complete cutover candidate", () => {
   const semanticReadyPaths = new Set([
     "/",
     "/1-minute-breathing-exercise",
@@ -218,26 +218,30 @@ test("translated migration state starts fail-closed", () => {
         isNativeRoutePreviewable(route, locale.code),
         expectedSemanticReady,
       );
-      assert.equal(isNativeRoutePublished(route, locale.code), false);
+      assert.equal(
+        isNativeRoutePublished(route, locale.code),
+        expectedSemanticReady,
+        `${route.path} ${locale.code} native publication`,
+      );
     }
   }
 
   const allStatuses = NATIVE_ROUTE_MANIFEST.flatMap((route) =>
     SUPPORTED_LOCALES.map((locale) => route.nativeStatus[locale]),
   );
-  assert.ok(allStatuses.includes("preview"));
-  assert.ok(!allStatuses.includes("cutover-ready"));
+  assert.ok(!allStatuses.includes("preview"));
+  assert.ok(allStatuses.includes("cutover-ready"));
 
   assert.ok(
-    TRANSLATED_LOCALES.every(({ code }) => !isNativeLocalePublished(code)),
+    TRANSLATED_LOCALES.every(({ code }) => isNativeLocalePublished(code)),
   );
-  assert.deepEqual(getLocalizedStaticParams(), []);
+  assert.equal(getLocalizedStaticParams().length, 265);
   // Explicit bespoke routes own their params outside the shared catch-all.
   assert.equal(getPreviewLocalizedStaticParams().length, 265);
   assert.equal(isNativeLocalePublished(DEFAULT_LOCALE), false);
 });
 
-test("the breathe and use-case families and their hubs are preview-ready", () => {
+test("the breathe and use-case families and their hubs are cutover-ready", () => {
   const structured = NATIVE_ROUTE_MANIFEST.filter(
     (route) =>
       route.kind === "structured-breathing" ||
@@ -254,7 +258,7 @@ test("the breathe and use-case families and their hubs are preview-ready", () =>
   );
   const semanticReady = structured.filter((route) =>
     TRANSLATED_LOCALES.every(
-      ({ code }) => route.nativeStatus[code] === "preview",
+      ({ code }) => route.nativeStatus[code] === "cutover-ready",
     ),
   );
   assert.equal(semanticReady.length, 32);
@@ -276,17 +280,17 @@ test("the breathe and use-case families and their hubs are preview-ready", () =>
   assert.ok(forIndex);
   assert.ok(
     TRANSLATED_LOCALES.every(
-      ({ code }) => home.nativeStatus[code] === "preview",
+      ({ code }) => home.nativeStatus[code] === "cutover-ready",
     ),
   );
   assert.ok(
     TRANSLATED_LOCALES.every(
-      ({ code }) => forIndex.nativeStatus[code] === "preview",
+      ({ code }) => forIndex.nativeStatus[code] === "cutover-ready",
     ),
   );
 });
 
-test("the R-W01 duration and insomnia routes are preview-ready", () => {
+test("the R-W01 duration and insomnia routes are cutover-ready", () => {
   const routePaths = [
     "/1-minute-breathing-exercise",
     "/2-minute-breathing-exercise",
@@ -300,14 +304,14 @@ test("the R-W01 duration and insomnia routes are preview-ready", () => {
     assert.equal(route.localizedHandler, "catch-all");
     assert.ok(
       TRANSLATED_LOCALES.every(
-        ({ code }) => route.nativeStatus[code] === "preview",
+        ({ code }) => route.nativeStatus[code] === "cutover-ready",
       ),
       path,
     );
   }
 });
 
-test("the R-W02 Resonance guides and holiday route are preview-ready", () => {
+test("the R-W02 Resonance guides and holiday route are cutover-ready", () => {
   const routePaths = [
     "/box-breathing-before-presentation",
     "/breathing-exercises-before-surgery",
@@ -322,14 +326,14 @@ test("the R-W02 Resonance guides and holiday route are preview-ready", () => {
     assert.equal(route.localizedHandler, "catch-all");
     assert.ok(
       TRANSLATED_LOCALES.every(
-        ({ code }) => route.nativeStatus[code] === "preview",
+        ({ code }) => route.nativeStatus[code] === "cutover-ready",
       ),
       path,
     );
   }
 });
 
-test("the R-W03 application, visualizer, and embed routes are preview-ready", () => {
+test("the R-W03 application, visualizer, and embed routes are cutover-ready", () => {
   const routePaths = [
     "/box-breathing-app",
     "/breathing-app",
@@ -344,7 +348,7 @@ test("the R-W03 application, visualizer, and embed routes are preview-ready", ()
     assert.equal(route.localizedHandler, "catch-all");
     assert.ok(
       TRANSLATED_LOCALES.every(
-        ({ code }) => route.nativeStatus[code] === "preview",
+        ({ code }) => route.nativeStatus[code] === "cutover-ready",
       ),
       path,
     );
@@ -357,7 +361,7 @@ test("the R-W03 application, visualizer, and embed routes are preview-ready", ()
   assert.equal(isNativeRoutePreviewable(embedSlug, "es-ES"), false);
 });
 
-test("the R-W04 trust and information routes are preview-ready", () => {
+test("the R-W04 trust and information routes are cutover-ready", () => {
   const catchAllPaths = [
     "/about/abi",
     "/about/editorial-policy",
@@ -371,7 +375,7 @@ test("the R-W04 trust and information routes are preview-ready", () => {
     assert.equal(route.localizedHandler, "catch-all");
     assert.ok(
       TRANSLATED_LOCALES.every(
-        ({ code }) => route.nativeStatus[code] === "preview",
+        ({ code }) => route.nativeStatus[code] === "cutover-ready",
       ),
       path,
     );
@@ -383,7 +387,7 @@ test("the R-W04 trust and information routes are preview-ready", () => {
   assert.equal(stats.indexable, false);
   assert.ok(
     TRANSLATED_LOCALES.every(
-      ({ code }) => stats.nativeStatus[code] === "preview",
+      ({ code }) => stats.nativeStatus[code] === "cutover-ready",
     ),
   );
 });
@@ -512,7 +516,10 @@ test("partial native links keep preview targets localized and fall back elsewher
   assert.ok(previewPaths.includes("/privacy"));
   assert.ok(previewPaths.includes("/stats"));
   assert.ok(previewPaths.includes("/support"));
-  assert.deepEqual(getNativeLocalizedRoutePaths("es-ES", "native"), []);
+  assert.deepEqual(
+    getNativeLocalizedRoutePaths("es-ES", "native"),
+    previewPaths,
+  );
   assert.equal(
     resolveNativeInternalHref(
       "/breathe/buteyko?duration=60",
@@ -523,7 +530,7 @@ test("partial native links keep preview targets localized and fall back elsewher
   );
   assert.equal(
     resolveNativeInternalHref("/es/for/anxiety", "es-ES", "native"),
-    "/for/anxiety",
+    "/es/for/anxiety",
   );
   assert.equal(
     resolveNativeInternalHref(
@@ -569,7 +576,7 @@ test("semantic proof route IDs are owned by the route manifest", async () => {
     assert.equal(manifestRoute?.id, proofRoute.routeId, proofRoute.sourceRoute);
     assert.ok(
       TRANSLATED_LOCALES.every(
-        ({ code }) => manifestRoute.nativeStatus[code] === "preview",
+        ({ code }) => manifestRoute.nativeStatus[code] === "cutover-ready",
       ),
     );
     assert.ok(

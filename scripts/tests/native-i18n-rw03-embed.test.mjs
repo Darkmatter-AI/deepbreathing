@@ -204,6 +204,11 @@ test("R-W03 localized embed players gate on the parent route and preserve dynami
   assert.match(route, /notFound\(\)/);
   assert.match(route, /loadBreatheContent/);
   assert.match(route, /getNativeLocalizedRoutePaths/);
+  assert.match(route, /buildHreflangAlternates/);
+  assert.match(route, /SUPPORTED_LOCALES/);
+  assert.match(route, /alternates:\s*\{/);
+  assert.match(route, /canonical:\s*new URL\(request\.canonicalPath, siteUrl\)/);
+  assert.match(route, /languages:\s*buildHreflangAlternates\(/);
   assert.match(route, /searchParams/);
   assert.doesNotMatch(route, /isNativeRoutePreviewable\([^)]*embed-slug/);
   assert.match(route, /export const dynamicParams\s*=\s*false/);

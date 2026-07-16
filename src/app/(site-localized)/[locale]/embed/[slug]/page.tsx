@@ -7,7 +7,9 @@ import {
   type EmbedPlayerSearchParams,
 } from "@/app/(site-en)/embed/[slug]/embed-player";
 import {
+  SUPPORTED_LOCALES,
   TRANSLATED_LOCALES,
+  buildHreflangAlternates,
   getLocaleByPrefix,
   localizePathname,
 } from "@/i18n";
@@ -31,6 +33,7 @@ import {
 import { getNativeLinkMode, resolveNativeI18nMode } from "@/i18n/serving-mode";
 
 const sourceRoute = "/embed";
+const siteUrl = "https://deepbreathingexercises.com";
 const validSlugs = new Set<string>(VALID_EMBED_SLUGS);
 
 export const dynamicParams = false;
@@ -91,7 +94,22 @@ export async function generateMetadata({
     ),
     loadEmbedContent(request.contentLocale),
   ]);
-  return createEmbedPlayerMetadata(content, embedContent.player.embedLabel);
+  const metadata = createEmbedPlayerMetadata(
+    content,
+    embedContent.player.embedLabel,
+  );
+
+  return {
+    ...metadata,
+    alternates: {
+      canonical: new URL(request.canonicalPath, siteUrl).toString(),
+      languages: buildHreflangAlternates(
+        siteUrl,
+        request.canonicalPath,
+        SUPPORTED_LOCALES,
+      ),
+    },
+  };
 }
 
 export default async function LocalizedEmbedPlayerPage({
