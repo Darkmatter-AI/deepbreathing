@@ -187,4 +187,14 @@ Do not roll back for a stale Ahrefs score alone. Confirm the affected URLs with 
 - T+7 days, due 2026-07-23: refresh GSC indexing and performance, Bing performance, Ahrefs crawl health, and localized funnel signals.
 - T+28 days, due 2026-08-13: complete the migration outcome comparison against the pre-cutover baseline.
 
+### Checkpoint register
+
+| Gate | Due | Required evidence | Pass or escalation rule | Record the result in |
+|------|-----|-------------------|-------------------------|----------------------|
+| T+24 technical parity | 2026-07-17 after 13:53 WEST | Repeat the same 350-URL Googlebot matrix; compare median, p95, and production errors; smoke signed-out session, Google OAuth handoff, language switching, and one interactive surface in each translated locale | Keep 350 of 350 responses valid with no new locale-related error cluster, hydration failure, auth regression, or material latency regression. A one-off client error is actionable only if it recurs after a hard refresh or appears in a clean session. | Append a dated result to `PROGRESS.md` and update this row's outcome in the observation section |
+| T+7 crawl and early search warning | 2026-07-23 | Refresh GSC URL Inspection and Search Analytics using the latest finalized date; refresh Bing, Ahrefs crawl health, and localized funnel signals | Investigate migration-created canonical, language, discovery, or exclusion clusters. Do not bulk-submit or request re-indexing. Keep the GSC inspected-indexed total at or above the pre-committed 296 floor unless losses are pre-existing or intentional. | Append the dated comparison to the native migration entry in `docs/SEO-EXPERIMENTS.md` and summarize it in `PROGRESS.md` |
+| T+28 outcome and decommission decision | 2026-08-13 | Repeat the T+7 sources with equivalent matured comparison windows and review localized clicks, impressions, indexing, crawl health, funnel, errors, and latency | A migration-specific localized GSC click or impression decline greater than 20%, or a technical regression cluster, blocks proxy decommissioning. Otherwise record the outcome and approve the cleanup phase separately. | Mark the migration verdict in `docs/SEO-EXPERIMENTS.md`, close the observation items in `ROADMAP.md`, and append the decommission decision to `PROGRESS.md` |
+
+At every checkpoint, preserve migration-only scope. Do not mix translation-quality, keyword, design, sitemap, auth-architecture, or proxy-cleanup changes into the measurement read.
+
 The old proxy remains intact until the T+28 review is accepted. Removing proxy code, cache warmers, credentials, DNS rollback knowledge, and operational workarounds is a later cleanup phase.

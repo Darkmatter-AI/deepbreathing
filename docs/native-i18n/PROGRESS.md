@@ -1122,3 +1122,23 @@ Current state and next checks:
 - T+7 search, crawl, and funnel check is due 2026-07-23.
 - T+28 migration outcome review and proxy-decommission decision is due 2026-08-13.
 - Do not mix translation quality, keyword, claim, design, sitemap, auth-architecture, or proxy-cleanup improvements into the observation window.
+
+## 2026-07-16: Production handoff and checkpoint register recorded
+
+Status: Production release accepted; full branch merge to `main` authorized; observation checkpoints remain pending
+
+Handoff:
+
+- The owner confirmed that all 26 commits on `codex/native-i18n` belong in `main`; the release will be merged as the complete branch rather than reduced to a migration-only cherry-pick.
+- The one-off Chrome application-error screen after switching to Japanese is accepted as non-blocking release noise. A clean English-to-Japanese switch and Japanese-to-Portuguese switch both returned localized pages with no console errors, and the contemporaneous Vercel error read showed no locale-serving failure cluster. Reopen only if the crash recurs after a hard refresh or in a clean session, then capture the first console exception.
+- Google re-indexing is not a follow-up action. Public URLs, sitemap membership, canonicals, and hreflang remained stable, while the production build submitted the unchanged sitemap through IndexNow for participating engines.
+
+Return points:
+
+| Gate | Due | Durable result location |
+|------|-----|-------------------------|
+| T+24 technical parity | 2026-07-17 after 13:53 WEST | This progress log plus the checkpoint register in `CUTOVER-RUNBOOK.md` |
+| T+7 crawl and early search warning | 2026-07-23 | Native migration entry in `docs/SEO-EXPERIMENTS.md`, then a short summary here |
+| T+28 outcome and proxy-decommission decision | 2026-08-13 | Final verdict in `docs/SEO-EXPERIMENTS.md`, closed observation items in `ROADMAP.md`, and the decision here |
+
+The exact evidence and pass or escalation rules are pinned in `CUTOVER-RUNBOOK.md`. MassTranslate remains rollback-only until the T+28 verdict is accepted.

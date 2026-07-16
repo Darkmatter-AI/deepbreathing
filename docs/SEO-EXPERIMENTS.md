@@ -1994,6 +1994,12 @@ The preceding localized window recorded 37 clicks and 1,233 impressions. Current
 
 **Measure after:** 2026-07-17 after 13:53 WEST for T+24 technical parity, 2026-07-23 for T+7 crawl/indexing early warning, and 2026-08-13 for the T+28 search outcome.
 
+**Return-to-log instructions:**
+
+- At T+24, record the technical matrix, errors, latency, auth, language-switch, and interactive-surface result in `docs/native-i18n/PROGRESS.md` and the checkpoint register in `docs/native-i18n/CUTOVER-RUNBOOK.md`. Do not interpret same-day GSC data as a migration result.
+- At T+7, append a dated subsection here with the latest finalized GSC URL Inspection and Search Analytics data, Bing performance, Ahrefs crawl health, and localized funnel read. Compare against the pinned baselines and do not request indexing.
+- At T+28, append the final equivalent-window comparison here, apply the pre-committed verdict without changing its thresholds, and explicitly approve or deny MassTranslate decommissioning. Then close the observation items in `docs/native-i18n/ROADMAP.md` and record the decision in `docs/native-i18n/PROGRESS.md`.
+
 **Status:** Active observation
 
 ---
@@ -2004,6 +2010,7 @@ The preceding localized window recorded 37 clicks and 1,233 impressions. Current
 
 | Experiment | Launched | Follow-up due | Measured | Outcome |
 |------------|----------|---------------|----------|---------|
+| Native Translation Serving Migration | 2026-07-16 | T+24 2026-07-17; T+7 2026-07-23; T+28 2026-08-13 | Pending | Active observation |
 | Checkpoint Follow-Up (Internal Links + Metadata Alignment) | 2026-02-17 | 2026-03-03 | 2026-03-05 | Success ✅ |
 | Huberman / Physiological Sigh Cannibalization Fix | 2026-02-06 | 2026-02-20 | 2026-03-05 | Inconclusive |
 | Disavow Spam Backlinks + Fix /app/ Route | 2026-02-06 | 2026-02-20 | 2026-03-05 | Inconclusive |
