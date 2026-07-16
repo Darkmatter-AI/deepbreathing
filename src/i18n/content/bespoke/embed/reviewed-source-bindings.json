@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "reviewedSourceHash": "41b1c0787ba6580a2791ca9b194fdb3f350a59107e00555c6fbd9867d07ccc32",
+  "bindings": {
+    "metadata.title": {
+      "occurrenceKey": "head:title",
+      "catalogSourceText": "Embed a Breathing Exercise on Your Website — Free Widget | Deep Breathing Exercises",
+      "reason": "The English layout adds the site-name suffix while the localized layout consumes the final reviewed head title."
+    },
+    "metadata.description": {
+      "occurrenceKey": "head:meta:name:description",
+      "catalogSourceText": "Add a free interactive breathing exercise widget to your website. Choose from 12 patterns including box breathing, 4-7-8, and coherent breathing. Copy the embed code and paste it into your HTML.",
+      "reason": "The same English description appears in multiple metadata placements."
+    },
+    "metadata.socialDescription": {
+      "occurrenceKey": "head:meta:property:og:description",
+      "catalogSourceText": "Add a free interactive breathing exercise widget to your website. Choose from 12 patterns including box breathing, 4-7-8, and coherent breathing. Copy the embed code and paste it into your HTML.",
+      "reason": "The same English description appears in multiple metadata placements."
+    },
+    "generator.patterns.wim-hof.description": {
+      "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:4",
+      "catalogSourceText": "Energy & Resilience (30 breaths × 3 rounds)",
+      "reason": "The preservation snapshot contains this text for multiple historical pattern cards; position four is the current Wim Hof card."
+    },
+    "generator.patterns.9d-breathwork.description": {
+      "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:7",
+      "catalogSourceText": "Energy & Resilience (30 breaths × 3 rounds)",
+      "reason": "The preservation snapshot contains this text for multiple pattern cards; position seven is the current 9D Breathwork card."
+    },
+    "generator.patterns.hope-cartel-9d-breathwork.description": {
+      "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:8",
+      "catalogSourceText": "Energy & Resilience (30 breaths × 3 rounds)",
+      "reason": "The preservation snapshot contains this text for multiple pattern cards; position eight is the current Hope Cartel card."
+    },
+    "generator.localeLabels.en": {
+      "occurrenceKey": "sel:option:ctx:option:pos:0",
+      "catalogSourceText": "English",
+      "reason": "The language option and the hydrated footer switcher both contain English."
+    },
+    "generator.snippet.title": {
+      "occurrenceKey": "sel:h2.text-sm.uppercase:ctx:heading:pos:4",
+      "catalogSourceText": "Embed code",
+      "reason": "The preservation snapshot contains a stale duplicate; the later placement is the current snippet heading."
+    }
+  }
+}

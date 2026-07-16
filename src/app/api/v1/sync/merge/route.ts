@@ -41,11 +41,40 @@ export async function POST(request: NextRequest) {
 
     if (stats) {
       await client.query(
-        `INSERT INTO user_stats (user_id, total_minutes, sessions_completed, updated_at)
-         VALUES ($1, $2, $3, now())
+        `WITH ledger AS (
+           SELECT
+             FLOOR(COALESCE(SUM(seconds), 0) / 60.0)::integer AS minutes,
+             COUNT(*) FILTER (WHERE completed)::integer AS sessions
+           FROM session_events
+           WHERE user_id = $1
+         ), incoming AS (
+           SELECT
+             GREATEST(0, $2::integer) AS total_minutes,
+             GREATEST(0, $3::integer) AS sessions_completed
+         )
+         INSERT INTO user_stats (
+           user_id, total_minutes, sessions_completed,
+           ledger_baseline_minutes, ledger_baseline_sessions, updated_at
+         )
+         SELECT
+           $1,
+           incoming.total_minutes,
+           incoming.sessions_completed,
+           GREATEST(0, incoming.total_minutes - ledger.minutes),
+           GREATEST(0, incoming.sessions_completed - ledger.sessions),
+           now()
+         FROM ledger, incoming
          ON CONFLICT (user_id) DO UPDATE SET
            total_minutes = GREATEST(user_stats.total_minutes, EXCLUDED.total_minutes),
            sessions_completed = GREATEST(user_stats.sessions_completed, EXCLUDED.sessions_completed),
+           ledger_baseline_minutes = GREATEST(
+             user_stats.ledger_baseline_minutes,
+             EXCLUDED.ledger_baseline_minutes
+           ),
+           ledger_baseline_sessions = GREATEST(
+             user_stats.ledger_baseline_sessions,
+             EXCLUDED.ledger_baseline_sessions
+           ),
            updated_at = now()`,
         [userId, stats.totalMinutes ?? 0, stats.sessionsCompleted ?? 0]
       );

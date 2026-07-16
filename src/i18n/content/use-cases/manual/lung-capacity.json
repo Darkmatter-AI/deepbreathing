@@ -1,0 +1,101 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.use-case.box-breathing-name",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "14d35bc6474aed9ec9a54f70bb6ae2532b4a214d790df0733877147014ea521a",
+      "scope": "chrome",
+      "sourceText": "Belly Breathing",
+      "translations": {
+        "es-es": "Respiración abdominal",
+        "fr-fr": "Respiration ventrale",
+        "ja-jp": "腹式呼吸"
+      }
+    },
+    {
+      "messageId": "chrome.use-case.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "c05ec1e91fd3a4b5310578fe918f43fdff564149437fe7daa382f5fb60454cc3",
+      "scope": "chrome",
+      "sourceText": "Try this guided breathing exercise for lung capacity exercises.",
+      "translations": {
+        "de-de": "Probiere diese geführte Atemübung für Übungen zur Lungenkapazität.",
+        "es-es": "Prueba este ejercicio de respiración guiada para ejercicios de capacidad pulmonar.",
+        "fr-fr": "Essayez cet exercice de respiration guidée pour des exercices de capacité pulmonaire.",
+        "ja-jp": "肺活量エクササイズのための、このガイド付き呼吸エクササイズを試してみましょう。",
+        "pt-br": "Experimente este exercício de respiração guiada para exercícios de capacidade pulmonar."
+      }
+    },
+    {
+      "messageId": "chrome.use-case.internal-link-pursed-lip-keyword",
+      "reason": "global-catalog-normalized-conflict",
+      "reviewedSourceHash": "3b806f008c311e495c646bfb7dcf52ef214278aab0cedfa9fd8c992f8b0e7846",
+      "scope": "chrome",
+      "sourceText": "pursed-lip breathing",
+      "translations": {
+        "de-de": "Lippenbremse-Atmung",
+        "fr-fr": "respiration à lèvres pincées",
+        "ja-jp": "口すぼめ呼吸",
+        "pt-br": "respiração com lábios semicerrados"
+      }
+    },
+    {
+      "messageId": "chrome.use-case.learn-box-breathing",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "d12a4a7e3855759f807d3791d4028eb300fadde57826dee9f909840691e5f1b5",
+      "scope": "chrome",
+      "sourceText": "Learn more about Belly Breathing →",
+      "translations": {
+        "de-de": "Mehr über Bauchatmung erfahren →",
+        "es-es": "Más información sobre la respiración abdominal →",
+        "fr-fr": "En savoir plus sur la respiration ventrale →",
+        "ja-jp": "腹式呼吸について詳しく見る →",
+        "pt-br": "Saiba mais sobre a respiração abdominal →"
+      }
+    },
+    {
+      "messageId": "relatedTechnique.callToAction",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "2617e25e34736aaf4e2e3d550cb286c2ceedc9880b564ba683619efd6833cf6f",
+      "scope": "content",
+      "sourceText": "Start with diaphragmatic breathing to build your lung capacity foundation",
+      "translations": {
+        "de-de": "Beginne mit der Zwerchfellatmung, um die Grundlage deiner Lungenkapazität aufzubauen",
+        "es-es": "Empieza con la respiración diafragmática para construir la base de tu capacidad pulmonar",
+        "fr-fr": "Commencez par la respiration diaphragmatique pour construire les bases de votre capacité pulmonaire",
+        "ja-jp": "肺活量の土台を築くために、横隔膜呼吸から始めましょう",
+        "pt-br": "Comece com a respiração diafragmática para construir a base da sua capacidade pulmonar"
+      }
+    },
+    {
+      "messageId": "science.points[0].explanation",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "9fc7733e68d1578118ea7fcf411edd5343738da345b24b24735b2e943444d3dd",
+      "scope": "content",
+      "sourceText": "Tidal volume is the amount of air you move in a normal breath. Most people's tidal volume is only 500ml, about 8% of total lung capacity. [Diaphragmatic breathing training can measurably increase tidal volume](https://doi.org/10.11124/JBISRIR-2017-003848), meaning you move more air with each breath.",
+      "translations": {
+        "de-de": "Das Atemzugvolumen ist die Luftmenge, die du bei einem normalen Atemzug bewegst. Bei den meisten Menschen beträgt das Atemzugvolumen nur 500ml, etwa 8% der gesamten Lungenkapazität. [Training der Zwerchfellatmung kann das Atemzugvolumen messbar erhöhen](https://doi.org/10.11124/JBISRIR-2017-003848), das heißt, du bewegst mit jedem Atemzug mehr Luft.",
+        "es-es": "El volumen corriente es la cantidad de aire que mueves en una respiración normal. El volumen corriente de la mayoría de las personas es de solo 500ml, alrededor del 8% de la capacidad pulmonar total. [El entrenamiento de la respiración diafragmática puede aumentar de forma medible el volumen corriente](https://doi.org/10.11124/JBISRIR-2017-003848), lo que significa que mueves más aire con cada respiración.",
+        "fr-fr": "Le volume courant est la quantité d'air que vous déplacez lors d'une respiration normale. Le volume courant de la plupart des gens n'est que de 500ml, soit environ 8% de la capacité pulmonaire totale. [L'entraînement à la respiration diaphragmatique peut augmenter de façon mesurable le volume courant](https://doi.org/10.11124/JBISRIR-2017-003848), ce qui signifie que vous déplacez plus d'air à chaque respiration.",
+        "ja-jp": "1回換気量とは、通常の呼吸で動かす空気の量です。ほとんどの人の1回換気量はわずか500mlで、全肺活量の約8%です。[横隔膜呼吸のトレーニングは1回換気量を測定可能なほど増やせます](https://doi.org/10.11124/JBISRIR-2017-003848)。つまり、1回の呼吸でより多くの空気を動かします。",
+        "pt-br": "O volume corrente é a quantidade de ar que você move em uma respiração normal. O volume corrente da maioria das pessoas é de apenas 500ml, cerca de 8% da capacidade pulmonar total. [O treino de respiração diafragmática pode aumentar de forma mensurável o volume corrente](https://doi.org/10.11124/JBISRIR-2017-003848), o que significa que você move mais ar a cada respiração."
+      }
+    },
+    {
+      "messageId": "science.points[1].explanation",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "e1261f3bb4185fe1861edf332ec15f9e4d5cea02c02461de1f1a451cc6343a05",
+      "scope": "content",
+      "sourceText": "The diaphragm is a muscle, and like any muscle, it gets stronger with training. Studies show that inspiratory muscle training increases respiratory muscle strength over weeks of consistent practice, directly improving your ability to take deep breaths.",
+      "translations": {
+        "de-de": "Das Zwerchfell ist ein Muskel, und wie jeder Muskel wird es durch Training stärker. Studien zeigen, dass inspiratorisches Muskeltraining die Kraft der Atemmuskulatur über Wochen konsequenter Praxis erhöht und so direkt deine Fähigkeit verbessert, tief einzuatmen.",
+        "es-es": "El diafragma es un músculo y, como cualquier músculo, se fortalece con el entrenamiento. Los estudios muestran que el entrenamiento de los músculos inspiratorios aumenta la fuerza de los músculos respiratorios a lo largo de semanas de práctica constante, mejorando directamente tu capacidad de hacer respiraciones profundas.",
+        "fr-fr": "Le diaphragme est un muscle et, comme tout muscle, il se renforce avec l'entraînement. Des études montrent que l'entraînement des muscles inspiratoires augmente la force des muscles respiratoires au fil de semaines de pratique régulière, améliorant directement votre capacité à prendre de grandes inspirations.",
+        "ja-jp": "横隔膜は筋肉であり、他の筋肉と同様、トレーニングで強くなります。研究によると、吸気筋トレーニングは一貫した練習を数週間続けることで呼吸筋の筋力を高め、深く息を吸う能力を直接向上させます。",
+        "pt-br": "O diafragma é um músculo e, como qualquer músculo, fica mais forte com o treino. Estudos mostram que o treino dos músculos inspiratórios aumenta a força dos músculos respiratórios ao longo de semanas de prática consistente, melhorando diretamente sua capacidade de fazer respirações profundas."
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/lung-capacity"
+}

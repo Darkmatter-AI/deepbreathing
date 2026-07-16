@@ -1,0 +1,312 @@
+{
+  "comfortTips": {
+    "items": [
+      "Trouvez un endroit calme si possible — même 30 secondes seul aident.",
+      "Ne forcez pas les inspirations profondes — des respirations plus douces sont plus efficaces.",
+      "Commencez par seulement 1 minute — c'est souvent suffisant.",
+      "Sauter les rétentions si elles sont inconfortables.",
+      "En cas de vertiges ou de picotements, reprenez une respiration normale."
+    ],
+    "title": "Conseils de confort"
+  },
+  "dayPlans": {
+    "items": [
+      {
+        "steps": [
+          {
+            "action": "5 min de cohérence cardiaque en se préparant",
+            "timing": "Matin"
+          },
+          {
+            "action": "3 soupirs physiologiques dans la voiture",
+            "timing": "Avant l'arrivée"
+          },
+          {
+            "action": "Soupirs lors des pauses si nécessaire",
+            "timing": "Pendant"
+          },
+          {
+            "action": "3 min de respiration 4-7-8 avant de dormir",
+            "timing": "Après l'événement"
+          }
+        ],
+        "title": "Jour de réception"
+      },
+      {
+        "steps": [
+          {
+            "action": "5 min de cohérence cardiaque",
+            "timing": "Avant le départ"
+          },
+          {
+            "action": "2 min de cohérence cardiaque pendant l'attente",
+            "timing": "Retards"
+          },
+          {
+            "action": "Soupirs physiologiques pour les turbulences",
+            "timing": "En vol"
+          },
+          {
+            "action": "60s de respiration carrée",
+            "timing": "Arrivée"
+          }
+        ],
+        "title": "Jour de voyage"
+      },
+      {
+        "steps": [
+          {
+            "action": "5 min de cohérence cardiaque",
+            "timing": "Préparation matinale"
+          },
+          {
+            "action": "3 soupirs rapides à l'écart",
+            "timing": "Arrivée des invités"
+          },
+          {
+            "action": "Pause de 2 min de cohérence cardiaque",
+            "timing": "Pendant la fête"
+          },
+          {
+            "action": "3 min de 4-7-8 avant de dormir",
+            "timing": "Après le rangement"
+          }
+        ],
+        "title": "Jour de réception (hôte)"
+      }
+    ],
+    "title": "Planning pour les jours de fête"
+  },
+  "faq": {
+    "items": [
+      {
+        "answer": {
+          "parts": [
+            {
+              "text": "Oui. Le soupir physiologique (double inspiration + longue expiration) agit en 1 à 3 cycles. C'est un exercice de respiration idéal quand on ne peut pas s'isoler."
+            }
+          ]
+        },
+        "question": "Je n'ai que 30 secondes. Est-ce utile ?"
+      },
+      {
+        "answer": {
+          "parts": [
+            {
+              "text": "Absolument. "
+            },
+            {
+              "linkText": "Le soupir physiologique"
+            },
+            {
+              "text": " peut passer pour un soupir de fatigue naturel, les gens soupirent tout le temps. Pour des techniques plus longues, éclipsez-vous un instant."
+            }
+          ]
+        },
+        "question": "Puis-je le faire à table sans paraître bizarre ?"
+      },
+      {
+        "answer": {
+          "parts": [
+            {
+              "text": "Utilisez le guide visuel sur votre téléphone. Regarder l'animation est plus facile que de compter. Commencez par un seul soupir pour apaiser la tension."
+            }
+          ]
+        },
+        "question": "Et si je suis trop stressé pour me concentrer ?"
+      },
+      {
+        "answer": {
+          "parts": [
+            {
+              "text": "Le soupir physiologique pour les moments critiques. La cohérence cardiaque pour un calme durable. Le 4-7-8 pour se relaxer avant de dormir."
+            }
+          ]
+        },
+        "question": "Quelle technique est la meilleure pour le stress des fêtes ?"
+      },
+      {
+        "answer": {
+          "parts": [
+            {
+              "text": "Prendre de grandes inspirations au hasard peut aggraver l'anxiété. Ces techniques utilisent des rythmes spécifiques pour activer votre système nerveux parasympathique."
+            }
+          ]
+        },
+        "question": "En quoi est-ce différent de simplement « prendre de grandes inspirations » ?"
+      },
+      {
+        "answer": {
+          "parts": [
+            {
+              "text": "Oui. La cohérence cardiaque procure un calme durable. Consultez notre guide sur l'anxiété en voyage pour le protocole complet."
+            }
+          ]
+        },
+        "question": "Cela aide-t-il aussi pour l'anxiété liée aux voyages ?"
+      }
+    ],
+    "title": "FAQ"
+  },
+  "footer": "Arrêtez en cas de vertiges ou d'oppression. Ce sont des outils d'autorégulation, pas des traitements médicaux. Consultez un professionnel pour tout problème de santé mentale persistant.",
+  "hero": {
+    "action": "Pause détente 30s →",
+    "eyebrow": "Calme saisonnier",
+    "intro": "Retrouvez la sérénité pendant les fêtes. Des exercices rapides pour les réunions, les retards de voyage et les moments où vous avez besoin de souffler.",
+    "title": "Exercices de respiration pour les fêtes"
+  },
+  "holidayGuides": {
+    "action": "Apprendre la technique →",
+    "items": [
+      {
+        "description": "Gérez les réunions de famille et les moments de tension grâce au soupir physiologique.",
+        "timing": "30 secondes",
+        "title": "Respiration anti stress pour les fêtes"
+      },
+      {
+        "description": "Restez calme pendant les vols, les retards, la foule et les longs trajets.",
+        "timing": "5-10 minutes",
+        "title": "Anxiété liée aux voyages"
+      }
+    ],
+    "title": "Guides pour les fêtes"
+  },
+  "metadata": {
+    "description": "Des exercices de respiration anti-stress pour les fêtes. Des pauses rapides pour les réunions, les voyages et le surmenage. Des techniques efficaces de 60 secondes à 3 minutes. Visualiseur gratuit avec effet neige.",
+    "imageAlt": "Exercices de respiration pour les fêtes : trouvez le calme pendant la saison.",
+    "imageSubtitle": "Pauses rapides pour les réunions et le stress du voyage",
+    "imageTitle": "Exercices de respiration pour les fêtes : trouvez le calme pendant la saison.",
+    "socialDescription": "Des exercices de respiration rapides pour les réunions de famille, le stress des voyages et le surmenage saisonnier. Des techniques de 60 secondes qui fonctionnent vraiment.",
+    "socialTitle": "Exercices de respiration pour les fêtes : trouvez le calme pendant la saison.",
+    "title": "Trouvez la sérénité pendant les fêtes grâce à des exercices de respiration",
+    "twitterDescription": "Des exercices de respiration rapides pour les réunions de famille, le stress des voyages et le surmenage saisonnier. Visualiseur gratuit.",
+    "twitterTitle": "Exercices de respiration pour les fêtes : trouvez le calme pendant la saison."
+  },
+  "moments": {
+    "items": [
+      {
+        "description": "Dans la voiture, devant la porte ou en vous préparant.",
+        "technique": "Soupir physiologique",
+        "title": "Avant la réunion"
+      },
+      {
+        "description": "Pause aux toilettes, aide en cuisine ou coin tranquille.",
+        "technique": "Soupir physiologique",
+        "title": "Pendant la réunion"
+      },
+      {
+        "description": "Sur le chemin du retour ou avant de dormir.",
+        "technique": "Respiration 4-7-8",
+        "title": "Après la réunion"
+      },
+      {
+        "description": "Aéroports, embouteillages, turbulences ou salles d'attente.",
+        "technique": "Cohérence cardiaque",
+        "title": "Stress des transports"
+      },
+      {
+        "description": "La panique monte, besoin d'un soulagement immédiat.",
+        "technique": "Soupir physiologique",
+        "title": "Angoisse aiguë"
+      }
+    ],
+    "title": "Choisissez votre moment"
+  },
+  "quickStart": {
+    "action": "Commencer →",
+    "items": [
+      {
+        "description": "Soulagement instantané quand la tension monte — efficace en 1 à 3 respirations.",
+        "timing": "30 secondes",
+        "title": "Gérer le stress intense"
+      },
+      {
+        "description": "Recentrez-vous avant de plonger dans l'agitation.",
+        "timing": "1 minute",
+        "title": "Se calmer avant une réunion"
+      },
+      {
+        "description": "Retrouvez votre équilibre lors d'une courte escapade à la cuisine ou ailleurs.",
+        "timing": "2 minutes",
+        "title": "Pause au calme"
+      },
+      {
+        "description": "Décompressez après une journée sociale épuisante.",
+        "timing": "3 minutes",
+        "title": "Détente avant de dormir"
+      }
+    ],
+    "title": "Démarrage rapide"
+  },
+  "relatedGuides": {
+    "items": [
+      {
+        "description": "Respiration carrée pour l'anxiété générale",
+        "title": "Soulager l'anxiété"
+      },
+      {
+        "description": "Stopper la panique avec le soupir physiologique",
+        "title": "Crises de panique"
+      },
+      {
+        "description": "Respiration 4-7-8 pour des nuits reposantes",
+        "title": "Mieux dormir"
+      },
+      {
+        "description": "Explorer toutes les méthodes de respiration",
+        "title": "Toutes les techniques"
+      }
+    ],
+    "title": "Guides associés"
+  },
+  "schema": {
+    "articleDescription": "Exercices de respiration pour soulager le stress des fêtes. Pauses rapides pour les réunions, les voyages et les moments de débordement.",
+    "articleHeadline": "Exercices de respiration pour les fêtes : trouvez le calme pendant la saison.",
+    "howToDescription": "Utilisez la technique du soupir physiologique pour calmer rapidement le stress des fêtes en 30 secondes.",
+    "howToName": "Comment calmer le stress des fêtes par la respiration",
+    "howToSteps": [
+      {
+        "name": "Repérez le stress",
+        "text": "Repérez le moment où vous vous crispez : mâchoire serrée, épaules tendues, pensées qui s'emballent ou envie de vous emporter."
+      },
+      {
+        "name": "Première inspiration",
+        "text": "Inspirez profondément par le nez en remplissant vos poumons à environ 80-90%. Laissez votre ventre se gonfler."
+      },
+      {
+        "name": "Deuxième inspiration (complément)",
+        "text": "Sans expirer, prenez une deuxième inspiration plus courte par le nez afin de remplir complètement vos poumons."
+      },
+      {
+        "name": "Longue expiration",
+        "text": "Expirez lentement et complètement par la bouche, en faisant durer l'expiration plus longtemps que les deux inspirations réunies."
+      },
+      {
+        "name": "Répétez si nécessaire",
+        "text": "Un soupir procure souvent un soulagement immédiat. Faites-en 2-3 si vous avez besoin d'une remise à zéro complète."
+      }
+    ]
+  },
+  "share": {
+    "buttonText": "Partager avec un proche",
+    "copiedText": "Lien copié !",
+    "text": "Stress des fêtes ? Cet exercice de respiration aide en 30 secondes."
+  },
+  "whyItWorks": {
+    "items": [
+      {
+        "description": "Les expirations longues activent le système nerveux parasympathique, le mode « repos et digestion » qui contre le stress.",
+        "title": "L'importance de l'expiration"
+      },
+      {
+        "description": "Respirer à un rythme de 5-6 cycles par minute maximise la variabilité de la fréquence cardiaque (VFC), marqueur de la résilience au stress.",
+        "title": "Rythme optimal"
+      },
+      {
+        "description": "Compter les phases de respiration interrompt les ruminations et les pensées catastrophiques : on ne peut pas paniquer et compter en même temps.",
+        "title": "Ancrage de l'attention"
+      }
+    ],
+    "title": "Pourquoi ça marche"
+  }
+}

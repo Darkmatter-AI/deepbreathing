@@ -1,0 +1,323 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.pattern.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "b828fd26b4700f5f7960c300c8de80a2533a96d5ae422ee35c77c5227b5580c9",
+      "scope": "chrome",
+      "sourceText": "Try this guided 9d breathwork explained exercise — it really helps.",
+      "translations": {
+        "de-de": "Probiere diese geführte Übung zur Erklärung von 9D Breathwork aus — sie hilft wirklich.",
+        "es-es": "Prueba este ejercicio guiado que explica 9D Breathwork — de verdad ayuda.",
+        "fr-fr": "Essayez cet exercice guidé qui explique le 9D Breathwork — il aide vraiment.",
+        "ja-jp": "この9D Breathwork解説のガイド付きエクササイズを試してみてください。本当に役立ちます。",
+        "pt-br": "Experimente este exercício guiado que explica o 9D Breathwork — ele realmente ajuda."
+      }
+    },
+    {
+      "messageId": "chrome.pattern.og-alt",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "54c20a80b2a88c549ed99c431e0401b2795702098f080c61cea17382e60f5e1c",
+      "scope": "chrome",
+      "sourceText": "9D Breathwork Explained – Interactive breathing visualizer",
+      "translations": {
+        "de-de": "9D Breathwork erklärt – Interaktiver Atemvisualisierer",
+        "es-es": "Explicación de 9D Breathwork – Visualizador interactivo de respiración",
+        "fr-fr": "Explication du 9D Breathwork – Visualiseur de respiration interactif",
+        "ja-jp": "9D Breathwork解説 – インタラクティブな呼吸ビジュアライザー",
+        "pt-br": "Explicação do 9D Breathwork – Visualizador interativo de respiração"
+      }
+    },
+    {
+      "messageId": "chrome.pattern.related-4-7-8-title",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "61bc7df0643742b926fa603a5bb211bd432b1789c6e4bc4258e41a29826b436e",
+      "scope": "chrome",
+      "sourceText": "4-7-8 Breathing Visualizer",
+      "translations": {
+        "de-de": "4-7-8-Atemvisualisierer",
+        "fr-fr": "Visualiseur de respiration 4-7-8"
+      }
+    },
+    {
+      "messageId": "chrome.pattern.related-physiological-sigh-title",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "b328eabea77dd51370eb8e6ce397ac46cee3df995cd9515e8a1a7e9b35e9bdd7",
+      "scope": "chrome",
+      "sourceText": "Physiological Sigh: Instant Stress Relief",
+      "translations": {
+        "de-de": "Physiologischer Seufzer: Sofortige Stresslinderung",
+        "es-es": "Suspiro fisiológico: alivio inmediato del estrés",
+        "fr-fr": "Soupir physiologique : soulagement immédiat du stress",
+        "ja-jp": "生理的ため息：ストレスをすぐに緩和",
+        "pt-br": "Suspiro fisiológico: alívio imediato do estresse"
+      }
+    },
+    {
+      "messageId": "chrome.pattern.related-wim-hof-title",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "0fc2745ef83bc7cefb27f9424a6b131460b3fd197f069edb7f3534db9987f059",
+      "scope": "chrome",
+      "sourceText": "Wim Hof Breathing Method",
+      "translations": {
+        "de-de": "Wim-Hof-Atemmethode",
+        "fr-fr": "Méthode de respiration Wim Hof",
+        "ja-jp": "ウィム・ホフ呼吸法"
+      }
+    },
+    {
+      "messageId": "chrome.pattern.share-section-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "55252416e1bf24e45be0dc9e287fae7bc7de714e4afef2436e0c45fb50e7094d",
+      "scope": "chrome",
+      "sourceText": "Know someone who could benefit from 9d breathwork explained? Send them a direct link.",
+      "translations": {
+        "de-de": "Kennst du jemanden, dem diese Erklärung von 9D Breathwork helfen könnte? Schicke der Person einen direkten Link.",
+        "es-es": "¿Conoces a alguien a quien podría ayudar esta explicación de 9D Breathwork? Envíale un enlace directo.",
+        "fr-fr": "Vous connaissez quelqu’un à qui cette explication du 9D Breathwork pourrait être utile ? Envoyez-lui un lien direct.",
+        "ja-jp": "この9D Breathwork解説が役立ちそうな人をご存じですか？直接リンクを送ってください。",
+        "pt-br": "Conhece alguém que poderia se beneficiar desta explicação do 9D Breathwork? Envie um link direto para essa pessoa."
+      }
+    },
+    {
+      "messageId": "benefits[0].description",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "b78bbc4b56dd49fd1e8e694bc3345843bae5870020f59ea572322f3cc87815db",
+      "scope": "content",
+      "sourceText": "Conscious connected breathing reliably triggers respiratory alkalosis, tetany (tingling), and altered states of consciousness. These are mechanistic, not mystical — and well-documented across the [broader breathwork literature](https://www.nature.com/articles/s41598-022-27247-y).",
+      "translations": {
+        "de-de": "Bewusstes verbundenes Atmen löst zuverlässig respiratorische Alkalose, Tetanie (Kribbeln) und veränderte Bewusstseinszustände aus. Diese Effekte sind mechanistisch, nicht mystisch — und in der [breiteren Breathwork-Literatur](https://www.nature.com/articles/s41598-022-27247-y) gut dokumentiert.",
+        "es-es": "La respiración consciente conectada desencadena de forma fiable alcalosis respiratoria, tetania (hormigueo) y estados alterados de conciencia. Son fenómenos mecánicos, no místicos, y están bien documentados en la [literatura más amplia sobre trabajo respiratorio](https://www.nature.com/articles/s41598-022-27247-y).",
+        "fr-fr": "La respiration consciente connectée déclenche de manière fiable une alcalose respiratoire, une tétanie (picotements) et des états de conscience modifiés. Ces effets sont mécaniques, pas mystiques — et bien documentés dans la [littérature plus large sur les pratiques respiratoires](https://www.nature.com/articles/s41598-022-27247-y).",
+        "ja-jp": "意識的連続呼吸は、呼吸性アルカローシス、テタニー（しびれ）、変性意識状態を確実に引き起こします。これらは神秘的な現象ではなく、メカニズムによるものであり、[ブレスワーク全般の文献](https://www.nature.com/articles/s41598-022-27247-y)で十分に記録されています。",
+        "pt-br": "A respiração consciente conectada desencadeia de forma confiável alcalose respiratória, tetania (formigamento) e estados alterados de consciência. Esses efeitos são mecânicos, não místicos — e estão bem documentados na [literatura mais ampla sobre práticas respiratórias](https://www.nature.com/articles/s41598-022-27247-y)."
+      }
+    },
+    {
+      "messageId": "body[1].content",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "9e1c0083bdf86e72cbdd3af5869543afb0412e7d384056d085f6f10aa9df88cc",
+      "scope": "content",
+      "sourceText": "Conscious connected breathing has been practiced for fifty years under different names — rebirthing, holotropic breathwork, the activating phase of the [Wim Hof Method](/breathe/wim-hof). It is the same breath in each tradition: continuous, mouth-in / mouth-out, no pause. You can practice it right now using our guided pacer (set to the Wim Hof rhythm — the closest pre-built analog). Two to five minutes is plenty for a first try; the full 45-minute active phase belongs in a guided 9D session, not solo.",
+      "translations": {
+        "de-de": "Bewusstes verbundenes Atmen wird seit fünfzig Jahren unter verschiedenen Namen praktiziert — Rebirthing, holotropes Atmen und die aktivierende Phase der [Wim-Hof-Methode](/breathe/wim-hof). In jeder Tradition ist es derselbe Atem: kontinuierlich durch den Mund ein / durch den Mund aus, ohne Pause. Du kannst ihn sofort mit unserem geführten Atemgeber üben (eingestellt auf den Wim-Hof-Rhythmus — das ähnlichste vorgefertigte Muster). Zwei bis fünf Minuten reichen für einen ersten Versuch völlig aus; die vollständige aktive Phase von 45 Minuten gehört in eine geführte 9D-Sitzung und sollte nicht allein durchgeführt werden.",
+        "es-es": "La respiración consciente conectada se practica desde hace cincuenta años con distintos nombres: rebirthing, respiración holotrópica y la fase de activación del [método Wim Hof](/breathe/wim-hof). En todas estas tradiciones es la misma respiración: continua, inhalando por la boca y exhalando por la boca, sin pausas. Puedes practicarla ahora mismo con nuestro marcador de ritmo guiado (configurado con el ritmo Wim Hof, el equivalente prediseñado más cercano). De dos a cinco minutos es suficiente para un primer intento; la fase activa completa de 45 minutos corresponde a una sesión 9D guiada, no a una práctica en solitario.",
+        "fr-fr": "La respiration consciente connectée est pratiquée depuis cinquante ans sous différents noms — rebirth, respiration holotropique et phase d’activation de la [méthode Wim Hof](/breathe/wim-hof). Il s’agit de la même respiration dans chaque tradition : continue, inspiration par la bouche / expiration par la bouche, sans pause. Vous pouvez la pratiquer dès maintenant avec notre guide de rythme (réglé sur le rythme Wim Hof — l’équivalent prédéfini le plus proche). Deux à cinq minutes suffisent largement pour un premier essai ; la phase active complète de 45 minutes doit se faire dans le cadre d’une séance 9D guidée, pas en solo.",
+        "ja-jp": "意識的連続呼吸は、リバーシング、ホロトロピック・ブレスワーク、[ウィム・ホフ・メソッド](/breathe/wim-hof)の活性化フェーズなど、さまざまな名称で50年にわたり実践されてきました。どの伝統でも呼吸は同じです。口から吸い、口から吐く動作を、休止せず連続して行います。今すぐガイド付きペーサーで実践できます（既成のパターンで最も近いウィム・ホフのリズムに設定されています）。初めてなら2～5分で十分です。45分間の完全なアクティブフェーズは、単独ではなく、ガイド付きの9Dセッションで行うものです。",
+        "pt-br": "A respiração consciente conectada é praticada há cinquenta anos com nomes diferentes — renascimento, respiração holotrópica e a fase de ativação do [método Wim Hof](/breathe/wim-hof). É a mesma respiração em cada tradição: contínua, inspirando pela boca e expirando pela boca, sem pausa. Você pode praticá-la agora mesmo com o nosso marcador de ritmo guiado (configurado no ritmo Wim Hof — o padrão predefinido mais próximo). Dois a cinco minutos são suficientes para uma primeira tentativa; a fase ativa completa de 45 minutos deve acontecer em uma sessão 9D guiada, não em uma prática individual."
+      }
+    },
+    {
+      "messageId": "body[3].content",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "8258a3422dd80a1f62bb0eed09ed995559e0db6ef1d76916a498b78d9dba1e69",
+      "scope": "content",
+      "sourceText": "Yes for the breath, partially for the audio. The conscious connected breath itself is free and right here. The official app from [9dbreathwork.com](https://9dbreathwork.com) sells full audio sessions, and a few free guided 9D sessions live on YouTube. What you can't replicate at home alone is the live facilitator presence — many people find the held container of an in-person session is what makes the difference. If it's your first time with intense breathwork, a live session is safer than going solo.",
+      "translations": {
+        "de-de": "Für den Atem ja, für die Audioinhalte teilweise. Der bewusste verbundene Atem selbst ist kostenlos und direkt hier verfügbar. Die offizielle App von [9dbreathwork.com](https://9dbreathwork.com) verkauft vollständige Audiositzungen, und einige kostenlose geführte 9D-Sitzungen sind auf YouTube verfügbar. Was du allein zu Hause nicht nachbilden kannst, ist die Anwesenheit eines Live-Facilitators — viele Menschen empfinden den geschützten Rahmen einer persönlichen Sitzung als entscheidenden Unterschied. Wenn du intensives Breathwork zum ersten Mal ausprobierst, ist eine Live-Sitzung sicherer als ein Versuch allein.",
+        "es-es": "Sí para la respiración y parcialmente para el audio. La respiración consciente conectada en sí es gratuita y está disponible aquí. La aplicación oficial de [9dbreathwork.com](https://9dbreathwork.com) vende sesiones de audio completas, y en YouTube hay algunas sesiones 9D guiadas gratuitas. Lo que no puedes reproducir en casa por tu cuenta es la presencia en directo de un facilitador; muchas personas consideran que el entorno contenido de una sesión presencial es lo que marca la diferencia. Si es tu primera vez con un trabajo respiratorio intenso, una sesión en directo es más segura que practicar a solas.",
+        "fr-fr": "Oui pour la respiration, partiellement pour l’audio. La respiration consciente connectée elle-même est gratuite et disponible ici. L’application officielle de [9dbreathwork.com](https://9dbreathwork.com) vend des séances audio complètes, et quelques séances 9D guidées gratuites sont disponibles sur YouTube. Ce que vous ne pouvez pas reproduire seul chez vous, c’est la présence en direct d’un facilitateur — de nombreuses personnes estiment que le cadre sécurisant d’une séance en personne fait toute la différence. Si c’est votre première expérience de pratique respiratoire intense, une séance en direct est plus sûre qu’une pratique en solo.",
+        "ja-jp": "呼吸については可能ですが、音声については一部のみです。意識的連続呼吸そのものは無料で、ここですぐに行えます。[9dbreathwork.com](https://9dbreathwork.com)の公式アプリでは完全版の音声セッションを販売しており、YouTubeにも無料のガイド付き9Dセッションがいくつかあります。自宅で一人では再現できないのが、ファシリテーターがその場にいることです。対面セッションの守られた環境こそが違いを生むと感じる人は少なくありません。強度の高いブレスワークが初めてなら、一人で行うよりライブセッションのほうが安全です。",
+        "pt-br": "Sim para a respiração e parcialmente para o áudio. A respiração consciente conectada em si é gratuita e está disponível aqui. O aplicativo oficial do [9dbreathwork.com](https://9dbreathwork.com) vende sessões completas em áudio, e há algumas sessões 9D guiadas e gratuitas no YouTube. O que você não consegue reproduzir sozinho em casa é a presença de um facilitador ao vivo — muitas pessoas consideram que o ambiente acolhedor de uma sessão presencial é o que faz a diferença. Se for a sua primeira experiência com uma prática respiratória intensa, uma sessão ao vivo é mais segura do que praticar sozinho."
+      }
+    },
+    {
+      "messageId": "howTo.tools[0]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "7c52adaab480c338b412c7b4088a20fda704fe6b4de6b6429a50d9193b3fe3fd",
+      "scope": "content",
+      "sourceText": "Headphones (for full 9D audio sessions, not for our free pacer)",
+      "translations": {
+        "de-de": "Kopfhörer (für vollständige 9D-Audiositzungen, nicht für unseren kostenlosen Atemgeber)",
+        "es-es": "Auriculares (para las sesiones de audio 9D completas, no para nuestro marcador de ritmo gratuito)",
+        "fr-fr": "Casque (pour les séances audio 9D complètes, pas pour notre guide de rythme gratuit)",
+        "ja-jp": "ヘッドホン（完全版の9D音声セッション用。無料ペーサーには不要）",
+        "pt-br": "Fones de ouvido (para sessões completas de áudio 9D, não para o nosso marcador de ritmo gratuito)"
+      }
+    },
+    {
+      "messageId": "howTo.tools[1]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "e4a0b6fe1178850c8f72be9268eeb533ac259736500e6f34b5dee0e754dbadbc",
+      "scope": "content",
+      "sourceText": "Lying-down space with no sharp edges nearby",
+      "translations": {
+        "de-de": "Platz zum Hinlegen ohne scharfe Kanten in der Nähe",
+        "es-es": "Espacio para tumbarte sin bordes afilados cerca",
+        "fr-fr": "Espace pour s’allonger, sans arêtes vives à proximité",
+        "ja-jp": "近くに鋭い角がない、横になれる場所",
+        "pt-br": "Espaço para se deitar, sem quinas afiadas por perto"
+      }
+    },
+    {
+      "messageId": "howTo.tools[2]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "05580ffdc3571917b29f280766f30e2fc6ed8be71616f1bd91abe10c6808dec8",
+      "scope": "content",
+      "sourceText": "Optional: facilitator, app, or friend present",
+      "translations": {
+        "de-de": "Optional: Facilitator, App oder anwesende Begleitperson",
+        "es-es": "Opcional: un facilitador, una aplicación o un amigo presente",
+        "fr-fr": "Facultatif : facilitateur, application ou ami présent",
+        "ja-jp": "任意：ファシリテーター、アプリ、または同席する友人",
+        "pt-br": "Opcional: facilitador, aplicativo ou amigo presente"
+      }
+    },
+    {
+      "messageId": "related[0].reason",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "28abb06486f65f339fee6decdce99920de2311c770b3adf62854fc68056c42fc",
+      "scope": "content",
+      "sourceText": "The Wim Hof Method's activating phase is the closest pre-built analog to conscious connected breathing — and the protocol Gary Brecka actually pushes.",
+      "translations": {
+        "de-de": "Die aktivierende Phase der Wim-Hof-Methode ist das ähnlichste vorgefertigte Muster für bewusstes verbundenes Atmen — und das Protokoll, das Gary Brecka tatsächlich propagiert.",
+        "es-es": "La fase de activación del método Wim Hof es el equivalente prediseñado más cercano a la respiración consciente conectada, y es el protocolo que Gary Brecka realmente promueve.",
+        "fr-fr": "La phase d’activation de la méthode Wim Hof est l’équivalent prédéfini le plus proche de la respiration consciente connectée — et le protocole que Gary Brecka promeut réellement.",
+        "ja-jp": "ウィム・ホフ・メソッドの活性化フェーズは、意識的連続呼吸に最も近い既成のパターンであり、Gary Breckaが実際に推しているプロトコルです。",
+        "pt-br": "A fase de ativação do método Wim Hof é o padrão predefinido mais próximo da respiração consciente conectada — e o protocolo que Gary Brecka de fato promove."
+      }
+    },
+    {
+      "messageId": "related[1].reason",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "9c5ef265d895cbd458c05051cbe6a53e18028f50525636e1fca94eb9e58d84ac",
+      "scope": "content",
+      "sourceText": "If conscious connected breathing feels too intense, the calming 4-7-8 pattern is the gentler alternative for downshifting.",
+      "translations": {
+        "de-de": "Wenn sich bewusstes verbundenes Atmen zu intensiv anfühlt, ist das beruhigende 4-7-8-Muster die sanftere Alternative zum Herunterfahren.",
+        "es-es": "Si la respiración consciente conectada te resulta demasiado intensa, el relajante patrón 4-7-8 es la alternativa más suave para bajar el ritmo.",
+        "fr-fr": "Si la respiration consciente connectée vous semble trop intense, le rythme apaisant 4-7-8 est l’alternative plus douce pour ralentir.",
+        "ja-jp": "意識的連続呼吸が強すぎると感じる場合、心身を落ち着かせる4-7-8パターンが、より穏やかな代替方法です。",
+        "pt-br": "Se a respiração consciente conectada parecer intensa demais, o padrão calmante 4-7-8 é a alternativa mais suave para desacelerar."
+      }
+    },
+    {
+      "messageId": "related[2].reason",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "1a1b5e134ce5e9c7381c4ef2b4489bd855eca0fb5622bc62cc6a991a40f2ef01",
+      "scope": "content",
+      "sourceText": "When you want a 60-second nervous-system reset rather than a 45-minute journey, the physiological sigh is the right tool.",
+      "translations": {
+        "de-de": "Wenn du statt einer 45-minütigen Reise einen 60-sekündigen Reset für das Nervensystem möchtest, ist der physiologische Seufzer das richtige Werkzeug.",
+        "es-es": "Cuando buscas un reinicio del sistema nervioso de 60 segundos en lugar de un recorrido de 45 minutos, el suspiro fisiológico es la herramienta adecuada.",
+        "fr-fr": "Si vous recherchez une réinitialisation du système nerveux en 60 secondes plutôt qu’un voyage de 45 minutes, le soupir physiologique est l’outil adapté.",
+        "ja-jp": "45分間の体験ではなく、60秒で神経系をリセットしたいときは、生理的ため息が適しています。",
+        "pt-br": "Quando você quer uma reinicialização do sistema nervoso em 60 segundos, em vez de uma jornada de 45 minutos, o suspiro fisiológico é a ferramenta certa."
+      }
+    },
+    {
+      "messageId": "research.safety[1]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "f713afae9b665d1794e928cd931f29e718d1072579b1a8036d3259ab97c61ffe",
+      "scope": "content",
+      "sourceText": "Lie down on a soft surface with no sharp edges nearby.",
+      "translations": {
+        "de-de": "Lege dich auf eine weiche Unterlage, in deren Nähe sich keine scharfen Kanten befinden.",
+        "es-es": "Túmbate sobre una superficie blanda sin bordes afilados cerca.",
+        "fr-fr": "Allongez-vous sur une surface souple, sans arêtes vives à proximité.",
+        "ja-jp": "近くに鋭い角がない柔らかい場所に横になってください。",
+        "pt-br": "Deite-se em uma superfície macia, sem quinas afiadas por perto."
+      }
+    },
+    {
+      "messageId": "research.safety[2]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "8664766757d1c54753919dfa9e8574543b9f44b9393cb5000554d82a7c5fc6f0",
+      "scope": "content",
+      "sourceText": "Tetany (tingling and involuntary muscle tightening), dizziness, and emotional release are normal — slow the breath if overwhelming.",
+      "translations": {
+        "de-de": "Tetanie (Kribbeln und unwillkürliche Muskelanspannung), Schwindel und emotionale Entladung sind normal — verlangsame den Atem, wenn es dich überfordert.",
+        "es-es": "La tetania (hormigueo y contracción muscular involuntaria), los mareos y la liberación emocional son normales; ralentiza la respiración si te resultan abrumadores.",
+        "fr-fr": "La tétanie (picotements et contractions musculaires involontaires), les étourdissements et la libération émotionnelle sont normaux — ralentissez la respiration si cela devient trop intense.",
+        "ja-jp": "テタニー（しびれや不随意の筋肉の収縮）、めまい、感情の解放は正常な反応です。圧倒されるように感じたら、呼吸を遅くしてください。",
+        "pt-br": "Tetania (formigamento e contração muscular involuntária), tontura e liberação emocional são normais — desacelere a respiração se a experiência ficar intensa demais."
+      }
+    },
+    {
+      "messageId": "research.safety[3]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "70c2f37bafecf6163d31bef26d073d1361042ca0d5e171d138c178e8ed031c03",
+      "scope": "content",
+      "sourceText": "Contraindicated in pregnancy, epilepsy, cardiac conditions, glaucoma, recent surgery, and unmanaged asthma.",
+      "translations": {
+        "de-de": "Kontraindiziert bei Schwangerschaft, Epilepsie, Herzerkrankungen, Glaukom, kürzlich erfolgten Operationen und nicht eingestelltem Asthma.",
+        "es-es": "Contraindicado durante el embarazo y en caso de epilepsia, afecciones cardíacas, glaucoma, cirugía reciente y asma no controlada.",
+        "fr-fr": "Contre-indiqué en cas de grossesse, d’épilepsie, de troubles cardiaques, de glaucome, d’intervention chirurgicale récente et d’asthme non contrôlé.",
+        "ja-jp": "妊娠中、てんかん、心疾患、緑内障、最近手術を受けた場合、管理されていない喘息がある場合は禁忌です。",
+        "pt-br": "Contraindicado em casos de gravidez, epilepsia, problemas cardíacos, glaucoma, cirurgia recente e asma não controlada."
+      }
+    },
+    {
+      "messageId": "research.safety[4]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "e661749cf2d681c3502a0737448042ffde934aef6f907f23bc92ab1622d9dc09",
+      "scope": "content",
+      "sourceText": "If trying the full 45-minute active phase, do it with a facilitator or app guidance — not solo on your first time.",
+      "translations": {
+        "de-de": "Wenn du die vollständige aktive Phase von 45 Minuten ausprobierst, tue dies mit einem Facilitator oder unter Anleitung einer App — beim ersten Mal nicht allein.",
+        "es-es": "Si vas a probar la fase activa completa de 45 minutos, hazlo con un facilitador o con la guía de una aplicación; no la practiques a solas la primera vez.",
+        "fr-fr": "Si vous essayez la phase active complète de 45 minutes, faites-le avec un facilitateur ou guidé par une application — pas seul la première fois.",
+        "ja-jp": "45分間の完全なアクティブフェーズを試す場合は、ファシリテーターまたはアプリのガイドを利用し、初回は一人で行わないでください。",
+        "pt-br": "Se você experimentar a fase ativa completa de 45 minutos, faça isso com um facilitador ou com a orientação de um aplicativo — não pratique sozinho na primeira vez."
+      }
+    },
+    {
+      "messageId": "research.studies[0].summary",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "170d25b2bddb9d5e4af828f0142a34492710e2c2826395b95afbd5bfceaea9f9",
+      "scope": "content",
+      "sourceText": "Meta-analysis of 12 randomized controlled trials found breathwork practices produced significant reductions in stress, anxiety, and depressive symptoms compared to control conditions. Underlying conscious-connected breath protocols are studied; the 9D audio format specifically has no peer-reviewed studies.",
+      "translations": {
+        "de-de": "Eine Metaanalyse von 12 randomisierten kontrollierten Studien ergab, dass Breathwork-Praktiken im Vergleich zu Kontrollbedingungen Stress, Angst und depressive Symptome signifikant reduzierten. Die zugrunde liegenden Protokolle des bewussten verbundenen Atmens wurden untersucht; speziell für das 9D-Audioformat gibt es keine begutachteten Studien.",
+        "es-es": "Un metaanálisis de 12 ensayos controlados aleatorizados concluyó que las prácticas de trabajo respiratorio producían reducciones significativas del estrés, la ansiedad y los síntomas depresivos frente a las condiciones de control. Se han estudiado los protocolos subyacentes de respiración consciente conectada; el formato de audio 9D en concreto no cuenta con estudios revisados por pares.",
+        "fr-fr": "Une méta-analyse de 12 essais contrôlés randomisés a montré que les pratiques respiratoires réduisaient significativement le stress, l’anxiété et les symptômes dépressifs par rapport aux groupes témoins. Les protocoles sous-jacents de respiration consciente connectée ont été étudiés ; le format audio 9D en particulier ne dispose d’aucune étude évaluée par les pairs.",
+        "ja-jp": "12件のランダム化比較試験を対象としたメタ分析では、ブレスワークの実践により、対照条件と比べてストレス、不安、抑うつ症状が有意に軽減したことが示されました。基礎となる意識的連続呼吸のプロトコルは研究されていますが、9Dの音声形式自体を対象とした査読済み研究はありません。",
+        "pt-br": "Uma metanálise de 12 ensaios clínicos randomizados e controlados constatou que as práticas respiratórias produziram reduções significativas no estresse, na ansiedade e nos sintomas depressivos em comparação com as condições de controle. Os protocolos subjacentes de respiração consciente conectada foram estudados; o formato de áudio 9D especificamente não tem estudos revisados por pares."
+      }
+    },
+    {
+      "messageId": "research.studies[1].summary",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "6406eb2696da633a6806911ff49babdc85ce5380c00694b53956affae8a59c41",
+      "scope": "content",
+      "sourceText": "Systematic review of WHM trials confirmed measurable physiological effects (sympathetic nervous system activation, immune response modulation) from the breath protocol most similar to 9D's active phase.",
+      "translations": {
+        "de-de": "Eine systematische Übersichtsarbeit zu WHM-Studien bestätigte messbare physiologische Effekte (Aktivierung des sympathischen Nervensystems, Modulation der Immunantwort) durch das Atemprotokoll, das der aktiven Phase von 9D am ähnlichsten ist.",
+        "es-es": "Una revisión sistemática de ensayos sobre el WHM confirmó efectos fisiológicos medibles (activación del sistema nervioso simpático y modulación de la respuesta inmunitaria) del protocolo respiratorio más parecido a la fase activa de 9D.",
+        "fr-fr": "Une revue systématique des essais sur la WHM a confirmé les effets physiologiques mesurables (activation du système nerveux sympathique, modulation de la réponse immunitaire) du protocole respiratoire le plus proche de la phase active du 9D.",
+        "ja-jp": "WHMの試験に関する系統的レビューにより、9Dのアクティブフェーズに最も近い呼吸プロトコルが、測定可能な生理学的効果（交感神経系の活性化、免疫反応の調節）をもたらすことが確認されました。",
+        "pt-br": "Uma revisão sistemática de estudos sobre o WHM confirmou efeitos fisiológicos mensuráveis (ativação do sistema nervoso simpático e modulação da resposta imunológica) do protocolo respiratório mais semelhante à fase ativa do 9D."
+      }
+    },
+    {
+      "messageId": "research.studies[2].summary",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "7a9940a2c6440ee7b9585e1ec52e51bf6e5dc38c962ac51ea3080f92f973c4c1",
+      "scope": "content",
+      "sourceText": "We could not find peer-reviewed clinical evidence for 9D Breathwork as a distinct format. The breath protocol underneath has supportive evidence (above); the layered audio production stack (binaural beats, solfeggio frequencies) has not been independently studied as part of 9D specifically.",
+      "translations": {
+        "de-de": "Wir konnten keine begutachteten klinischen Belege für 9D Breathwork als eigenständiges Format finden. Für das zugrunde liegende Atemprotokoll gibt es unterstützende Belege (siehe oben); der mehrschichtige Audio-Produktions-Stack (binaurale Beats, Solfeggio-Frequenzen) wurde nicht unabhängig als spezifischer Bestandteil von 9D untersucht.",
+        "es-es": "No pudimos encontrar pruebas clínicas revisadas por pares sobre 9D Breathwork como formato diferenciado. El protocolo respiratorio subyacente cuenta con pruebas que lo respaldan (arriba); la estructura de producción de audio por capas (ritmos binaurales y frecuencias solfeggio) no se ha estudiado de forma independiente como parte específica de 9D.",
+        "fr-fr": "Nous n’avons trouvé aucune preuve clinique évaluée par les pairs concernant le 9D Breathwork en tant que format distinct. Le protocole respiratoire sous-jacent dispose de données probantes favorables (ci-dessus) ; la pile de production audio en couches (battements binauraux, fréquences solfeggio) n’a pas fait l’objet d’une étude indépendante en tant que composante spécifique du 9D.",
+        "ja-jp": "独自の形式としての9D Breathworkについて、査読済みの臨床的エビデンスは見つかりませんでした。基礎となる呼吸プロトコルには、それを支持するエビデンスがあります（上記）。一方、重層的な音声制作構成（バイノーラルビート、ソルフェジオ周波数）は、9D固有の一部として独立した研究が行われていません。",
+        "pt-br": "Não encontramos evidências clínicas revisadas por pares sobre o 9D Breathwork como um formato distinto. O protocolo respiratório subjacente tem evidências de apoio (acima); a estrutura de produção de áudio em camadas (batidas binaurais e frequências solfeggio) não foi estudada de forma independente como parte específica do 9D."
+      }
+    },
+    {
+      "messageId": "research.studies[2].title",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "0dbf4767772b275474fbe0dcf5e7bf880a0e02f29e44279b2de6cc4fa7576551",
+      "scope": "content",
+      "sourceText": "On 9D-specific evidence",
+      "translations": {
+        "de-de": "Zu 9D-spezifischer Evidenz",
+        "es-es": "Sobre las pruebas específicas de 9D",
+        "fr-fr": "À propos des données probantes propres au 9D",
+        "ja-jp": "9D固有のエビデンスについて",
+        "pt-br": "Sobre as evidências específicas do 9D"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/breathe/9d-breathwork"
+}

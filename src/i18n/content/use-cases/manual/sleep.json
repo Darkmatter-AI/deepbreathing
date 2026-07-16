@@ -1,0 +1,90 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.use-case.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "8c4bfa58c381507e78137f588fe873689c43d6d43ea6410d0283bf79d2db740d",
+      "scope": "chrome",
+      "sourceText": "Try this guided breathing exercise for 4-7-8 breathing for sleep.",
+      "translations": {
+        "de-de": "Probieren Sie diese geführte Atemübung für die 4-7-8-Atmung zum Einschlafen.",
+        "es-es": "Prueba este ejercicio de respiración guiada de respiración 4-7-8 para dormir.",
+        "fr-fr": "Essayez cet exercice de respiration guidée pour la respiration 4-7-8 pour le sommeil.",
+        "ja-jp": "睡眠のための4-7-8呼吸のガイド付き呼吸エクササイズをお試しください。",
+        "pt-br": "Experimente este exercício de respiração guiada de respiração 4-7-8 para dormir."
+      }
+    },
+    {
+      "messageId": "chrome.use-case.learn-box-breathing",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "7c4312464db54ee766e7ebdb52d452b5d528ee1cdd29dbf0af68ca20114884f5",
+      "scope": "chrome",
+      "sourceText": "Learn more about 4-7-8 Relax →",
+      "translations": {
+        "de-de": "Mehr über 4-7-8 Relax erfahren →",
+        "es-es": "Más información sobre 4-7-8 Relax →",
+        "fr-fr": "En savoir plus sur 4-7-8 Relax →",
+        "ja-jp": "4-7-8 Relaxについて詳しく見る →",
+        "pt-br": "Saiba mais sobre 4-7-8 Relax →"
+      }
+    },
+    {
+      "messageId": "faqs[0].answer",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "fd08812e968808d1cb68cde13a61a04246029ff67868781328307bdc75dd7e1c",
+      "scope": "content",
+      "sourceText": "Most people feel noticeably calmer after just 2-3 cycles (about 1 minute). Falling asleep varies, some drift off within 5 minutes, others may take longer initially. [The technique becomes more effective with regular practice](https://doi.org/10.3390/jcm8020193) as your body learns to associate the pattern with sleep.",
+      "translations": {
+        "de-de": "Die meisten Menschen fühlen sich nach nur 2-3 Zyklen (etwa 1 Minute) spürbar ruhiger. Das Einschlafen variiert: Manche schlummern innerhalb von 5 Minuten ein, andere brauchen anfangs länger. [Die Technik wird mit regelmäßiger Übung wirksamer](https://doi.org/10.3390/jcm8020193), wenn Ihr Körper lernt, das Muster mit dem Schlaf zu verbinden.",
+        "es-es": "La mayoría de las personas se sienten notablemente más tranquilas tras solo 2-3 ciclos (unos 1 minuto). Conciliar el sueño varía: algunos se duermen en 5 minutos, otros pueden tardar más al principio. [La técnica se vuelve más efectiva con la práctica regular](https://doi.org/10.3390/jcm8020193) a medida que el cuerpo aprende a asociar el patrón con el sueño.",
+        "fr-fr": "La plupart des gens se sentent nettement plus calmes après seulement 2 à 3 cycles (environ 1 minute). S'endormir varie : certains s'endorment en 5 minutes, d'autres peuvent mettre plus de temps au début. [La technique devient plus efficace avec une pratique régulière](https://doi.org/10.3390/jcm8020193) à mesure que le corps apprend à associer le schéma au sommeil.",
+        "ja-jp": "ほとんどの人はわずか2-3サイクル（約1分）で明らかに落ち着きを感じます。眠りにつくまでの時間は人それぞれで、5分以内に眠りに落ちる人もいれば、最初はもう少し時間がかかる人もいます。[定期的な練習で技法はより効果的になります](https://doi.org/10.3390/jcm8020193)。体がそのパターンを睡眠と結びつけるようになります。",
+        "pt-br": "A maioria das pessoas se sente visivelmente mais calma após apenas 2-3 ciclos (cerca de 1 minuto). Adormecer varia: alguns adormecem em 5 minutos, outros podem demorar mais no início. [A técnica torna-se mais eficaz com a prática regular](https://doi.org/10.3390/jcm8020193) à medida que o corpo aprende a associar o padrão ao sono."
+      }
+    },
+    {
+      "messageId": "relatedGuides[0].teaser",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "4dfb5e0d32b981ee1d7a2b4260233d2c28c3f1d74242bd0a54f293643f356561",
+      "scope": "content",
+      "sourceText": "A detailed guide on using 4-7-8 breathing to fall asleep faster, stay asleep, and break the cycle of chronic insomnia",
+      "translations": {
+        "de-de": "Ein ausführlicher Leitfaden zur Nutzung von 4-7-8-Atmen, um schneller einzuschlafen, durchzuschlafen und den Kreislauf chronischer Schlaflosigkeit zu durchbrechen",
+        "es-es": "Una guía detallada sobre el uso de la respiración 4-7-8 para conciliar el sueño más rápido, mantener el sueño y romper el ciclo de insomnio crónico",
+        "fr-fr": "Un guide détaillé sur l'utilisation de la respiration 4-7-8 pour s'endormir plus vite, rester endormi et sortir du cycle d'insomnie chronique",
+        "ja-jp": "4-7-8呼吸を使ってより早く眠りにつき、眠りを保ち、慢性不眠の悪循環を断ち切るための詳しいガイド",
+        "pt-br": "Um guia detalhado sobre como usar a respiração 4-7-8 para adormecer mais rápido, permanecer dormindo e romper o ciclo de insônia crônica"
+      }
+    },
+    {
+      "messageId": "relatedTechnique.callToAction",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "a8f34ed5397ca32dc8e8a747014b394bfebd681eef08ee2c5d38dba790295b95",
+      "scope": "content",
+      "sourceText": "Practice with the full-screen 4-7-8 Breathing visualizer",
+      "translations": {
+        "de-de": "Üben Sie mit dem Vollbild-4-7-8-Atem-Visualizer",
+        "es-es": "Practica con el visualizador de respiración 4-7-8 a pantalla completa",
+        "fr-fr": "Entraînez-vous avec le visualiseur de respiration 4-7-8 en plein écran",
+        "ja-jp": "全画面の4-7-8呼吸ビジュアライザーで練習する",
+        "pt-br": "Pratique com o visualizador de respiração 4-7-8 em tela cheia"
+      }
+    },
+    {
+      "messageId": "relatedUseCases[4].teaser",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "c8b9f1eed2ba5037fd658ee383ecd73f9ab23ac0489a1cd46d50e52439f1e7ad",
+      "scope": "content",
+      "sourceText": "Huberman's sleep-specific breathing stack for winding down and falling asleep faster.",
+      "translations": {
+        "de-de": "Hubermans schlafspezifischer Atem-Stack zum Entspannen und schnelleren Einschlafen.",
+        "es-es": "La secuencia de respiración específica para el sueño de Huberman para relajarse y conciliar el sueño más rápido.",
+        "fr-fr": "La pile de respiration spécifique au sommeil de Huberman pour se détendre et s'endormir plus vite.",
+        "ja-jp": "リラックスしてより早く眠りにつくためのHubermanの睡眠向け呼吸スタック。",
+        "pt-br": "A sequência de respiração específica para o sono de Huberman para relaxar e adormecer mais rápido."
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/sleep"
+}

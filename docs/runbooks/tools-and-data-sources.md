@@ -96,7 +96,7 @@ Service-account auth (`ga-visibility@…`), self-signed JWT, nothing expires. Th
 **Gotcha — URL submission is dead on this site (audited 2026-07-09).** Do not reach for these:
 - `mcp__mass-translate-backend__request_indexing` posts to Google's Indexing API, which Google restricts to `JobPosting` / `BroadcastEvent` pages. It returns **HTTP 200 for ineligible URLs**, so it looks like it worked and does nothing.
 - `google.com/ping?sitemap=` → **404** (retired 2023). `bing.com/ping?sitemap=` → **410 Gone**.
-- `mcp__mass-translate-backend__submit_urls_bing` is redundant: `postbuild` submits every sitemap URL to **IndexNow** on each production deploy (`scripts/ping-sitemap-lib.mjs`). Google does not participate in IndexNow. (True since 2026-07-10 — before that the CI gate checked `CI === "true"` while Vercel sets `CI=1`, so IndexNow silently never ran on deploys.)
+- `mcp__mass-translate-backend__submit_urls_bing` is redundant: `postbuild` submits every sitemap URL to **IndexNow** on each Vercel production deploy (`scripts/ping-sitemap-lib.mjs`). Preview and development builds fail closed unless `VERCEL=1` and `VERCEL_ENV=production`, so they never notify search engines. Google does not participate in IndexNow. (The original submission path became active on 2026-07-10 after fixing the old `CI === "true"` mismatch; the production-only guard was added on 2026-07-15 after a preview exposed the broader CI gate.)
 
 Google discovers pages via the sitemap and the `/languages` crawl hub. `Crawled - currently not indexed` is a quality verdict, not a submission problem. Full reasoning in the 2026-07-09 entry of `SEO-EXPERIMENTS.md`.
 

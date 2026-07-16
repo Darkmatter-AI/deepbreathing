@@ -12,7 +12,7 @@ const HOLIDAY_PATHS = [
   '/for/travel-anxiety',
 ];
 
-export function SeasonalBanner() {
+export function SeasonalBanner({ disabled = false }: { disabled?: boolean }) {
   const pathname = usePathname();
   const [shouldShow, setShouldShow] = useState(false);
   const [dismissed, setDismissed] = useState(false);
@@ -20,7 +20,7 @@ export function SeasonalBanner() {
   useEffect(() => {
     // Check feature flag
     const featureEnabled = process.env.NEXT_PUBLIC_HOLIDAY_BANNER === 'true';
-    if (!featureEnabled) {
+    if (disabled || !featureEnabled) {
       setShouldShow(false);
       return;
     }
@@ -41,7 +41,7 @@ export function SeasonalBanner() {
     // Check if user dismissed it this session
     const wasDismissed = sessionStorage.getItem('holiday-banner-dismissed');
     if (wasDismissed) setDismissed(true);
-  }, [pathname]);
+  }, [disabled, pathname]);
 
   const handleDismiss = (e: React.MouseEvent) => {
     e.preventDefault();

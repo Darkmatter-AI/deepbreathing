@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { auth } from "@/lib/auth";
 import { pool } from "@/lib/db";
 import { headers } from "next/headers";
+import { encodeSessionCursor } from "@/lib/sync/session-events";
 
 export async function GET() {
   const session = await auth.api.getSession({ headers: headers() });
@@ -11,13 +12,33 @@ export async function GET() {
 
   const userId = session.user.id;
 
-  const [settingsResult, statsResult] = await Promise.all([
+  const activeDaysPromise = pool.query(
+    `SELECT to_char(day, 'YYYY-MM-DD') AS day
+     FROM user_active_days
+     WHERE user_id = $1 AND day >= CURRENT_DATE - interval '140 days'
+     ORDER BY day`,
+    [userId]
+  ).catch(() => ({ rows: [] as Array<{ day: string }> }));
+
+  const [settingsResult, statsResult, sessionEventsResult, activeDaysResult] = await Promise.all([
     pool.query("SELECT * FROM user_settings WHERE user_id = $1", [userId]),
     pool.query("SELECT * FROM user_stats WHERE user_id = $1", [userId]),
+    pool.query(
+      `SELECT
+         id, practice_id, guest_id, started_at, ended_at, seconds, mode, completed,
+         end_reason, platform, local_date::text, client_version, created_at
+       FROM session_events
+       WHERE user_id = $1
+       ORDER BY created_at, id
+       LIMIT 100`,
+      [userId]
+    ),
+    activeDaysPromise,
   ]);
 
   const settings = settingsResult.rows[0] ?? null;
   const stats = statsResult.rows[0] ?? null;
+  const lastSessionEvent = sessionEventsResult.rows.at(-1);
 
   return NextResponse.json({
     settings: settings
@@ -39,5 +60,27 @@ export async function GET() {
           updatedAt: stats.updated_at,
         }
       : null,
+    activeDays: activeDaysResult.rows.map((row) => row.day),
+    sessionEvents: sessionEventsResult.rows.map((event) => ({
+      id: event.id,
+      practiceId: event.practice_id,
+      ...(event.guest_id ? { guestId: event.guest_id } : {}),
+      startedAt: event.started_at.toISOString(),
+      endedAt: event.ended_at.toISOString(),
+      seconds: event.seconds,
+      mode: event.mode,
+      completed: event.completed,
+      endReason: event.end_reason,
+      platform: event.platform,
+      localDate: event.local_date,
+      ...(event.client_version ? { clientVersion: event.client_version } : {}),
+    })),
+    nextCursor: lastSessionEvent
+      ? encodeSessionCursor(
+          lastSessionEvent.created_at.toISOString(),
+          lastSessionEvent.id
+        )
+      : null,
+    serverTime: new Date().toISOString(),
   });
 }

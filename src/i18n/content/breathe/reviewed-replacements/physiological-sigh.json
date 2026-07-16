@@ -1,0 +1,24 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "生理的ため息は、体が本来持っている自然なストレス解消メカニズムであり、2023年のスタンフォード大学の研究（Balbanら、Cell Reports Medicine）によってその効果が実証されました。鼻から2回吸い、口から長く吐き出すという構成です。この研究では、1日5分間の継続的なため息が、気分の改善や不安の軽減においてマインドフルネス瞑想を上回る結果を示しました。深呼吸 効果を最大限に引き出すこの手法が効果的な理由は、2回目の吸気がしぼんだ肺胞を再膨張させ、長い吐気が副交感神経を活性化させるためです。",
+      "locale": "ja-jp",
+      "reason": "The approved value contains an ungrammatical inserted SEO phrase that is not in the source.",
+      "replacement": "生理的ため息は、体が本来備えている自然なストレス緩和の仕組みで、2023年にスタンフォード大学の研究者が実施したランダム化比較試験（Balbanら、Cell Reports Medicine）で検証されました。鼻から2回吸い、その後口から長く吐きます。この研究では、毎日5分の周期的なため息が、気分改善と不安軽減においてマインドフルネス瞑想を上回りました。2回の吸気でつぶれた肺胞を再び膨らませ、長い呼気で副交感神経系を活性化するため、この技法は効果を発揮します。",
+      "reviewedSourceHash": "f29acd883162a6047df1b081c21ea9a2882c5d8e26208165716eefcb90f1a63f",
+      "sourcePath": "faqs[0].answer",
+      "sourceText": "The physiological sigh is a natural stress-relief mechanism your body already uses, validated by Stanford researchers in a 2023 randomized controlled trial (Balban et al., Cell Reports Medicine). It consists of a double inhale through the nose followed by a long exhale through the mouth. The study found that 5 minutes of daily cyclic sighing outperformed mindfulness meditation for mood improvement and anxiety reduction. The technique works because the double inhale reinflates collapsed lung alveoli while the extended exhale activates the parasympathetic nervous system."
+    },
+    {
+      "currentCatalogValue": "生理的ため息とは、鼻から素早く2回吸い、その後ゆっくりとリラックスして吐き出す呼吸法です。2回目の吸気で肺を最大限に膨らませ、長い呼気が迷走神経を刺激してストレス反応を鎮めます。深呼吸 効果を実感したい時は1〜3回、気分を整えたい時は2〜5分間行いましょう。",
+      "locale": "ja-jp",
+      "reason": "The approved value replaces 'instant relief' with an ungrammatical inserted SEO phrase.",
+      "replacement": "生理的ため息とは、鼻から素早く2回吸い、その後ゆっくりとリラックスして吐き出す呼吸法です。2回目の吸気で肺を十分に満たし、長い呼気が迷走神経を刺激してストレス反応を鎮めます。すぐに楽になるには1〜3回、気分を整えるには2〜5分間行います。",
+      "reviewedSourceHash": "02ecb7ffb213d9edc4a292e1b9bcbc7d7a781293e8d01afc31df3873397b5edc",
+      "sourcePath": "voiceSearch[0].answer",
+      "sourceText": "Physiological sigh breathing is two quick nasal inhales followed by a long, relaxed exhale. The second inhale tops off the lungs, and the slow exhale activates the vagus nerve to calm the stress response. Do 1-3 sighs for instant relief or 2-5 minutes for mood."
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/breathe/physiological-sigh"
+}

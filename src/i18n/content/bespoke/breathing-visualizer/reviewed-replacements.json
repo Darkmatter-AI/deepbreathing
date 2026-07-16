@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "replacements": [
+    {
+      "messagePath": "schema.howToName",
+      "sourceText": "How to use a breathing visualizer",
+      "reviewedSourceHash": "5f2b7d29d64574b522ab44f86aefc15f7c9c5ae4a4cb2479c344d7c465b9ee62",
+      "reason": "Current HowTo schema name is not present in the preservation catalog.",
+      "translations": {
+        "de-de": "So verwenden Sie einen Atem-Visualizer",
+        "es-es": "Cómo usar un visualizador de respiración",
+        "fr-fr": "Comment utiliser un visualiseur de respiration",
+        "ja-jp": "呼吸ビジュアライザーの使い方",
+        "pt-br": "Como usar um visualizador de respiração"
+      }
+    },
+    {
+      "messagePath": "schema.howToDescription",
+      "sourceText": "Start a guided breathing session in three steps.",
+      "reviewedSourceHash": "803afd1c41ccca5d1430d0b7a2138c235671f8a5e038a4fbab18fdc9ee3cc27c",
+      "reason": "Current HowTo schema description is not present in the preservation catalog.",
+      "translations": {
+        "de-de": "Starten Sie eine geführte Atemsitzung in drei Schritten.",
+        "es-es": "Inicia una sesión de respiración guiada en tres pasos.",
+        "fr-fr": "Commencez une séance de respiration guidée en trois étapes.",
+        "ja-jp": "3つのステップでガイド付き呼吸セッションを始めましょう。",
+        "pt-br": "Inicie uma sessão de respiração guiada em três etapas."
+      }
+    }
+  ]
+}

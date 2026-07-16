@@ -1,0 +1,750 @@
+{
+  "locales": [
+    "de-de",
+    "es-es",
+    "fr-fr",
+    "ja-jp",
+    "pt-br"
+  ],
+  "routes": {
+    "/for/anxiety": {
+      "contentMessages": 91,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 52,
+          "chromePath": "chrome/de-de/anxiety.json",
+          "publishable": true,
+          "routePath": "routes/de-de/anxiety.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 52,
+          "chromePath": "chrome/es-es/anxiety.json",
+          "publishable": true,
+          "routePath": "routes/es-es/anxiety.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 52,
+          "chromePath": "chrome/fr-fr/anxiety.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/anxiety.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 52,
+          "chromePath": "chrome/ja-jp/anxiety.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/anxiety.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 52,
+          "chromePath": "chrome/pt-br/anxiety.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/anxiety.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "for.anxiety"
+    },
+    "/for/athletes": {
+      "contentMessages": 87,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 50,
+          "chromePath": "chrome/de-de/athletes.json",
+          "publishable": true,
+          "routePath": "routes/de-de/athletes.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 50,
+          "chromePath": "chrome/es-es/athletes.json",
+          "publishable": true,
+          "routePath": "routes/es-es/athletes.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 50,
+          "chromePath": "chrome/fr-fr/athletes.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/athletes.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 50,
+          "chromePath": "chrome/ja-jp/athletes.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/athletes.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 50,
+          "chromePath": "chrome/pt-br/athletes.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/athletes.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "for-athletes"
+    },
+    "/for/focus": {
+      "contentMessages": 85,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 49,
+          "chromePath": "chrome/de-de/focus.json",
+          "publishable": true,
+          "routePath": "routes/de-de/focus.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 49,
+          "chromePath": "chrome/es-es/focus.json",
+          "publishable": true,
+          "routePath": "routes/es-es/focus.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 49,
+          "chromePath": "chrome/fr-fr/focus.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/focus.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 49,
+          "chromePath": "chrome/ja-jp/focus.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/focus.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 49,
+          "chromePath": "chrome/pt-br/focus.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/focus.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "for-focus"
+    },
+    "/for/high-blood-pressure": {
+      "contentMessages": 77,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 48,
+          "chromePath": "chrome/de-de/high-blood-pressure.json",
+          "publishable": true,
+          "routePath": "routes/de-de/high-blood-pressure.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 48,
+          "chromePath": "chrome/es-es/high-blood-pressure.json",
+          "publishable": true,
+          "routePath": "routes/es-es/high-blood-pressure.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 48,
+          "chromePath": "chrome/fr-fr/high-blood-pressure.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/high-blood-pressure.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 48,
+          "chromePath": "chrome/ja-jp/high-blood-pressure.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/high-blood-pressure.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 48,
+          "chromePath": "chrome/pt-br/high-blood-pressure.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/high-blood-pressure.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "for-high-blood-pressure"
+    },
+    "/for/holiday-stress": {
+      "contentMessages": 78,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 54,
+          "chromePath": "chrome/de-de/holiday-stress.json",
+          "publishable": true,
+          "routePath": "routes/de-de/holiday-stress.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 54,
+          "chromePath": "chrome/es-es/holiday-stress.json",
+          "publishable": true,
+          "routePath": "routes/es-es/holiday-stress.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 54,
+          "chromePath": "chrome/fr-fr/holiday-stress.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/holiday-stress.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 54,
+          "chromePath": "chrome/ja-jp/holiday-stress.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/holiday-stress.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 54,
+          "chromePath": "chrome/pt-br/holiday-stress.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/holiday-stress.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "for-holiday-stress"
+    },
+    "/for/huberman": {
+      "contentMessages": 88,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 50,
+          "chromePath": "chrome/de-de/huberman.json",
+          "publishable": true,
+          "routePath": "routes/de-de/huberman.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 50,
+          "chromePath": "chrome/es-es/huberman.json",
+          "publishable": true,
+          "routePath": "routes/es-es/huberman.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 50,
+          "chromePath": "chrome/fr-fr/huberman.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/huberman.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 50,
+          "chromePath": "chrome/ja-jp/huberman.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/huberman.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 50,
+          "chromePath": "chrome/pt-br/huberman.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/huberman.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "for-huberman"
+    },
+    "/for/kids": {
+      "contentMessages": 78,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 50,
+          "chromePath": "chrome/de-de/kids.json",
+          "publishable": true,
+          "routePath": "routes/de-de/kids.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 50,
+          "chromePath": "chrome/es-es/kids.json",
+          "publishable": true,
+          "routePath": "routes/es-es/kids.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 50,
+          "chromePath": "chrome/fr-fr/kids.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/kids.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 50,
+          "chromePath": "chrome/ja-jp/kids.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/kids.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 50,
+          "chromePath": "chrome/pt-br/kids.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/kids.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "for-kids"
+    },
+    "/for/lung-capacity": {
+      "contentMessages": 82,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 49,
+          "chromePath": "chrome/de-de/lung-capacity.json",
+          "publishable": true,
+          "routePath": "routes/de-de/lung-capacity.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 49,
+          "chromePath": "chrome/es-es/lung-capacity.json",
+          "publishable": true,
+          "routePath": "routes/es-es/lung-capacity.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 49,
+          "chromePath": "chrome/fr-fr/lung-capacity.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/lung-capacity.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 49,
+          "chromePath": "chrome/ja-jp/lung-capacity.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/lung-capacity.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 49,
+          "chromePath": "chrome/pt-br/lung-capacity.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/lung-capacity.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "for-lung-capacity"
+    },
+    "/for/meditation": {
+      "contentMessages": 85,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 49,
+          "chromePath": "chrome/de-de/meditation.json",
+          "publishable": true,
+          "routePath": "routes/de-de/meditation.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 49,
+          "chromePath": "chrome/es-es/meditation.json",
+          "publishable": true,
+          "routePath": "routes/es-es/meditation.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 49,
+          "chromePath": "chrome/fr-fr/meditation.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/meditation.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 49,
+          "chromePath": "chrome/ja-jp/meditation.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/meditation.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 49,
+          "chromePath": "chrome/pt-br/meditation.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/meditation.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "for-meditation"
+    },
+    "/for/panic-attacks": {
+      "contentMessages": 85,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 48,
+          "chromePath": "chrome/de-de/panic-attacks.json",
+          "publishable": true,
+          "routePath": "routes/de-de/panic-attacks.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 48,
+          "chromePath": "chrome/es-es/panic-attacks.json",
+          "publishable": true,
+          "routePath": "routes/es-es/panic-attacks.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 48,
+          "chromePath": "chrome/fr-fr/panic-attacks.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/panic-attacks.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 48,
+          "chromePath": "chrome/ja-jp/panic-attacks.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/panic-attacks.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 48,
+          "chromePath": "chrome/pt-br/panic-attacks.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/panic-attacks.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "for-panic-attacks"
+    },
+    "/for/pranayama": {
+      "contentMessages": 80,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 48,
+          "chromePath": "chrome/de-de/pranayama.json",
+          "publishable": true,
+          "routePath": "routes/de-de/pranayama.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 48,
+          "chromePath": "chrome/es-es/pranayama.json",
+          "publishable": true,
+          "routePath": "routes/es-es/pranayama.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 48,
+          "chromePath": "chrome/fr-fr/pranayama.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/pranayama.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 48,
+          "chromePath": "chrome/ja-jp/pranayama.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/pranayama.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 48,
+          "chromePath": "chrome/pt-br/pranayama.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/pranayama.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "for-pranayama"
+    },
+    "/for/pregnancy": {
+      "contentMessages": 88,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 48,
+          "chromePath": "chrome/de-de/pregnancy.json",
+          "publishable": true,
+          "routePath": "routes/de-de/pregnancy.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 48,
+          "chromePath": "chrome/es-es/pregnancy.json",
+          "publishable": true,
+          "routePath": "routes/es-es/pregnancy.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 48,
+          "chromePath": "chrome/fr-fr/pregnancy.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/pregnancy.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 48,
+          "chromePath": "chrome/ja-jp/pregnancy.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/pregnancy.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 48,
+          "chromePath": "chrome/pt-br/pregnancy.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/pregnancy.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "for-pregnancy"
+    },
+    "/for/public-speaking": {
+      "contentMessages": 78,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 49,
+          "chromePath": "chrome/de-de/public-speaking.json",
+          "publishable": true,
+          "routePath": "routes/de-de/public-speaking.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 49,
+          "chromePath": "chrome/es-es/public-speaking.json",
+          "publishable": true,
+          "routePath": "routes/es-es/public-speaking.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 49,
+          "chromePath": "chrome/fr-fr/public-speaking.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/public-speaking.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 49,
+          "chromePath": "chrome/ja-jp/public-speaking.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/public-speaking.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 49,
+          "chromePath": "chrome/pt-br/public-speaking.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/public-speaking.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "for-public-speaking"
+    },
+    "/for/running": {
+      "contentMessages": 74,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 48,
+          "chromePath": "chrome/de-de/running.json",
+          "publishable": true,
+          "routePath": "routes/de-de/running.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 48,
+          "chromePath": "chrome/es-es/running.json",
+          "publishable": true,
+          "routePath": "routes/es-es/running.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 48,
+          "chromePath": "chrome/fr-fr/running.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/running.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 48,
+          "chromePath": "chrome/ja-jp/running.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/running.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 48,
+          "chromePath": "chrome/pt-br/running.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/running.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "for-running"
+    },
+    "/for/singing": {
+      "contentMessages": 81,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 49,
+          "chromePath": "chrome/de-de/singing.json",
+          "publishable": true,
+          "routePath": "routes/de-de/singing.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 49,
+          "chromePath": "chrome/es-es/singing.json",
+          "publishable": true,
+          "routePath": "routes/es-es/singing.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 49,
+          "chromePath": "chrome/fr-fr/singing.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/singing.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 49,
+          "chromePath": "chrome/ja-jp/singing.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/singing.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 49,
+          "chromePath": "chrome/pt-br/singing.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/singing.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "for-singing"
+    },
+    "/for/sleep": {
+      "contentMessages": 83,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 51,
+          "chromePath": "chrome/de-de/sleep.json",
+          "publishable": true,
+          "routePath": "routes/de-de/sleep.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 51,
+          "chromePath": "chrome/es-es/sleep.json",
+          "publishable": true,
+          "routePath": "routes/es-es/sleep.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 51,
+          "chromePath": "chrome/fr-fr/sleep.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/sleep.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 51,
+          "chromePath": "chrome/ja-jp/sleep.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/sleep.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 51,
+          "chromePath": "chrome/pt-br/sleep.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/sleep.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "for-sleep"
+    },
+    "/for/stress": {
+      "contentMessages": 78,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 51,
+          "chromePath": "chrome/de-de/stress.json",
+          "publishable": true,
+          "routePath": "routes/de-de/stress.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 51,
+          "chromePath": "chrome/es-es/stress.json",
+          "publishable": true,
+          "routePath": "routes/es-es/stress.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 51,
+          "chromePath": "chrome/fr-fr/stress.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/stress.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 51,
+          "chromePath": "chrome/ja-jp/stress.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/stress.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 51,
+          "chromePath": "chrome/pt-br/stress.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/stress.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "for-stress"
+    },
+    "/for/travel-anxiety": {
+      "contentMessages": 81,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 55,
+          "chromePath": "chrome/de-de/travel-anxiety.json",
+          "publishable": true,
+          "routePath": "routes/de-de/travel-anxiety.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 55,
+          "chromePath": "chrome/es-es/travel-anxiety.json",
+          "publishable": true,
+          "routePath": "routes/es-es/travel-anxiety.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 55,
+          "chromePath": "chrome/fr-fr/travel-anxiety.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/travel-anxiety.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 55,
+          "chromePath": "chrome/ja-jp/travel-anxiety.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/travel-anxiety.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 55,
+          "chromePath": "chrome/pt-br/travel-anxiety.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/travel-anxiety.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "for-travel-anxiety"
+    }
+  },
+  "schemaVersion": 1
+}

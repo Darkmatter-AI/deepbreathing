@@ -1,0 +1,98 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.use-case.box-breathing-name",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f",
+      "scope": "chrome",
+      "sourceText": "Physiological Sigh",
+      "translations": {
+        "de-de": "Physiologischer Seufzer",
+        "fr-fr": "Soupir physiologique",
+        "ja-jp": "生理的なため息"
+      }
+    },
+    {
+      "messageId": "chrome.use-case.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "2262a33791016722580d031680ed6958ca2552f711ef535f54a37798dfe5334c",
+      "scope": "chrome",
+      "sourceText": "Try this guided breathing exercise for stress.",
+      "translations": {
+        "de-de": "Probiere diese geführte Atemübung bei Stress.",
+        "es-es": "Prueba este ejercicio de respiración guiada para el estrés.",
+        "fr-fr": "Essayez cet exercice de respiration guidée pour le stress.",
+        "ja-jp": "ストレス向けのこのガイド付き呼吸エクササイズをお試しください。",
+        "pt-br": "Experimente este exercício de respiração guiado para o estresse."
+      }
+    },
+    {
+      "messageId": "chrome.use-case.learn-box-breathing",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "fd75a0c1418a75fb7860da61b872c9881106748e5beac6d999f31ad4b09d2a60",
+      "scope": "chrome",
+      "sourceText": "Learn more about Physiological Sigh →",
+      "translations": {
+        "de-de": "Mehr über den physiologischen Seufzer erfahren →",
+        "es-es": "Más información sobre el suspiro fisiológico →",
+        "fr-fr": "En savoir plus sur le soupir physiologique →",
+        "ja-jp": "生理的なため息について詳しく見る →",
+        "pt-br": "Saiba mais sobre o suspiro fisiológico →"
+      }
+    },
+    {
+      "messageId": "relatedTechnique.callToAction",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "3d4c2305da3bb74fb5ee3166bfa2abe345509e955b7ebdcce638f62eb4f64a86",
+      "scope": "content",
+      "sourceText": "Try the full physiological sigh technique with our guided visualizer",
+      "translations": {
+        "de-de": "Probieren Sie die vollständige Technik des physiologischen Seufzers mit unserem geführten Visualizer",
+        "es-es": "Prueba la técnica completa del suspiro fisiológico con nuestro visualizador guiado",
+        "fr-fr": "Essayez la technique complète du soupir physiologique avec notre visualiseur guidé",
+        "ja-jp": "ガイド付きビジュアライザーで生理的なため息の技法をすべてお試しください",
+        "pt-br": "Experimente a técnica completa do suspiro fisiológico com nosso visualizador guiado"
+      }
+    },
+    {
+      "messageId": "relatedUseCases[4].teaser",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "08f1d1e26917e35c2aa1848d065d0dce0744285eb058f7ea326cf0caaa61e181",
+      "scope": "content",
+      "sourceText": "All 6 Huberman Lab breathing protocols matched to your stress type.",
+      "translations": {
+        "de-de": "Alle 6 Atemprotokolle von Huberman Lab, abgestimmt auf Ihren Stresstyp.",
+        "es-es": "Los 6 protocolos de respiración de Huberman Lab adaptados a tu tipo de estrés.",
+        "fr-fr": "Les 6 protocoles de respiration du Huberman Lab adaptés à votre type de stress.",
+        "ja-jp": "Huberman Labの呼吸プロトコル6種を、あなたのストレスタイプに合わせてご紹介。",
+        "pt-br": "Todos os 6 protocolos de respiração do Huberman Lab adaptados ao seu tipo de estresse."
+      }
+    },
+    {
+      "messageId": "solution.content",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "3e337e5cfe652dfcf79af1f28c0feca76cfeef0e0451de92871604dbfa776bb7",
+      "scope": "content",
+      "sourceText": "The physiological sigh is a double inhale followed by a long exhale, a pattern your body uses naturally when crying or transitioning from sleep. Done deliberately, it's a quick way to shift from stress to calm. [A 2023 Stanford study found that just 5 minutes of daily 'cyclic sighing' improved mood more than mindfulness meditation](https://doi.org/10.1016/j.xcrm.2022.100895). For acute stress, even 1-3 sighs (about 30 seconds) can noticeably reduce tension.",
+      "translations": {
+        "de-de": "Der physiologische Seufzer ist ein doppeltes Einatmen, gefolgt von einem langen Ausatmen – ein Muster, das Ihr Körper natürlich beim Weinen oder beim Übergang aus dem Schlaf verwendet. Bewusst ausgeführt ist es ein schneller Weg, von Stress zu Ruhe zu wechseln. [Eine Studie der Stanford University aus dem Jahr 2023 ergab, dass nur 5 Minuten tägliches ‚zyklisches Seufzen‘ die Stimmung stärker verbesserte als Achtsamkeitsmeditation](https://doi.org/10.1016/j.xcrm.2022.100895). Bei akutem Stress können schon 1-3 Seufzer (etwa 30 Sekunden) die Spannung spürbar reduzieren.",
+        "es-es": "El suspiro fisiológico es una doble inhalación seguida de una exhalación larga, un patrón que tu cuerpo usa de forma natural al llorar o al pasar del sueño a la vigilia. Hecho deliberadamente, es una forma rápida de pasar del estrés a la calma. [Un estudio de Stanford de 2023 encontró que solo 5 minutos diarios de 'suspiro cíclico' mejoró el estado de ánimo más que la meditación de atención plena](https://doi.org/10.1016/j.xcrm.2022.100895). Para el estrés agudo, incluso 1-3 suspiros (unos 30 segundos) pueden reducir notablemente la tensión.",
+        "fr-fr": "Le soupir physiologique est une double inspiration suivie d'une longue expiration, un schéma que votre corps utilise naturellement lorsqu'il pleure ou passe du sommeil à l'éveil. Pratiqué délibérément, c'est un moyen rapide de passer du stress au calme. [Une étude de Stanford de 2023 a montré que seulement 5 minutes par jour de « soupir cyclique » amélioraient l'humeur plus que la méditation de pleine conscience](https://doi.org/10.1016/j.xcrm.2022.100895). En cas de stress aigu, même 1-3 soupirs (environ 30 secondes) peuvent réduire sensiblement la tension.",
+        "ja-jp": "生理的なため息は、長い吐息の前に二回吸い込むパターンで、泣いているときや眠りから覚めるときなど、体が自然に使うものです。意図的に行うと、ストレスから落ち着きへ素早く切り替えられます。[2023年のスタンフォード大学の研究では、毎日わずか5分の「サイクリックため息」が、マインドフルネス瞑想よりも気分の改善に効果的であることが示されました](https://doi.org/10.1016/j.xcrm.2022.100895)。急性のストレスでは、1-3回のため息（約30秒）でも緊張を目に見て和らげられます。",
+        "pt-br": "O suspiro fisiológico é uma inspiração dupla seguida de uma expiração longa, um padrão que seu corpo usa naturalmente ao chorar ou ao passar do sono para a vigília. Feito de forma deliberada, é uma forma rápida de sair do estresse e entrar em calma. [Um estudo de Stanford de 2023 encontrou que apenas 5 minutos diários de 'suspiro cíclico' melhoraram o humor mais do que a meditação mindfulness](https://doi.org/10.1016/j.xcrm.2022.100895). Para estresse agudo, mesmo 1-3 suspiros (cerca de 30 segundos) podem reduzir visivelmente a tensão."
+      }
+    },
+    {
+      "messageId": "video.title",
+      "reason": "route-catalog-exact-conflict",
+      "reviewedSourceHash": "2c439c44bc008e8dd6ff0f0052ba000a65e2e1538aba76db7a058503a1de1d12",
+      "scope": "content",
+      "sourceText": "Dr. Andrew Huberman Explains the Physiological Sigh",
+      "translations": {
+        "pt-br": "Dr. Andrew Huberman explica o suspiro fisiológico"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/stress"
+}

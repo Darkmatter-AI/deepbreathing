@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "replacements": [
+    {
+      "route": "box-breathing-before-presentation",
+      "messageId": "metadata.imageAlt",
+      "sourceText": "Box Breathing Before Presentation, Calm Nerves in 60 Seconds",
+      "reviewedSourceHash": "c5884ad9790ad7941befad562ed898beb3f38da0c7082a21d4f346304649bc8f",
+      "reason": "Source-only metadata or schema text absent from the approved page catalog.",
+      "translations": {
+        "de-de": "Box Breathing vor der Präsentation, Nerven in 60 Sekunden beruhigen",
+        "es-es": "Respiración en caja antes de la presentación, calma los nervios en 60 segundos",
+        "fr-fr": "Respiration en carré avant une présentation, calmez vos nerfs en 60 secondes",
+        "ja-jp": "プレゼン前のボックス呼吸法、60秒で緊張を鎮める",
+        "pt-br": "Respiração quadrada antes da apresentação, acalme os nervos em 60 segundos"
+      }
+    },
+    {
+      "route": "box-breathing-before-presentation",
+      "messageId": "schema.articleDescription",
+      "sourceText": "How Navy SEALs use box breathing to stay calm under pressure: and how you can use it before your next presentation.",
+      "reviewedSourceHash": "a627c2f564f302d2ecb0e87cd6fc33971b867071c07960efea37ee8aa5f22163",
+      "reason": "Source-only metadata or schema text absent from the approved page catalog.",
+      "translations": {
+        "de-de": "Wie Navy SEALs Box Breathing nutzen, um unter Druck ruhig zu bleiben: und wie du es vor deiner nächsten Präsentation einsetzen kannst.",
+        "es-es": "Cómo los Navy SEALs usan la respiración en caja para mantener la calma bajo presión: y cómo puedes usarla antes de tu próxima presentación.",
+        "fr-fr": "Comment les Navy SEALs utilisent la respiration en carré pour rester calmes sous pression : et comment vous pouvez l'utiliser avant votre prochaine présentation.",
+        "ja-jp": "Navy SEALsがプレッシャー下で冷静を保つためにボックス呼吸法を使う方法：そして次のプレゼン前にあなたが使える方法。",
+        "pt-br": "Como os Navy SEALs usam a respiração quadrada para manter a calma sob pressão: e como você pode usá-la antes da sua próxima apresentação."
+      }
+    },
+    {
+      "route": "box-breathing-before-presentation",
+      "messageId": "schema.breadcrumbCurrent",
+      "sourceText": "Box Breathing Before Presentation",
+      "reviewedSourceHash": "423ab23ac47534c2739965f89da009357f1876e1d2b42b3d4118a625542f55b4",
+      "reason": "Source-only metadata or schema text absent from the approved page catalog.",
+      "translations": {
+        "de-de": "Box Breathing vor der Präsentation",
+        "es-es": "Respiración en caja antes de la presentación",
+        "fr-fr": "Respiration en carré avant la présentation",
+        "ja-jp": "プレゼン前のボックス呼吸法",
+        "pt-br": "Respiração quadrada antes da apresentação"
+      }
+    },
+    {
+      "route": "box-breathing-before-presentation",
+      "messageId": "schema.faq.0.answer",
+      "sourceText": "Start 5-10 minutes before your presentation for best results. Do 4-6 cycles (about 90 seconds) in a quiet spot: a bathroom stall, your car, or a hallway works fine. If you feel nerves rising while waiting, do another quick set of 2-3 cycles. The effects last 15-30 minutes.",
+      "reviewedSourceHash": "d0eb718f07d164bf7a55fedc33edd8b0924ff5ea8af23c6baeb6bbc07aeccf52",
+      "reason": "Source-only metadata or schema text absent from the approved page catalog.",
+      "translations": {
+        "de-de": "Beginne 5-10 Minuten vor deiner Präsentation für beste Ergebnisse. Mache 4-6 Zyklen (etwa 90 Sekunden) an einem ruhigen Ort: eine Toilettenkabine, dein Auto oder ein Flur eignen sich gut. Wenn du beim Warten merkst, dass die Nervosität steigt, mache noch schnell 2-3 Zyklen. Die Wirkung hält 15-30 Minuten an.",
+        "es-es": "Empieza 5-10 minutos antes de tu presentación para obtener los mejores resultados. Haz 4-6 ciclos (unos 90 segundos) en un lugar tranquilo: un cubículo del baño, tu coche o un pasillo sirven perfectamente. Si sientes que los nervios suben mientras esperas, haz otro set rápido de 2-3 ciclos. Los efectos duran 15-30 minutos.",
+        "fr-fr": "Commencez 5-10 minutes avant votre présentation pour de meilleurs résultats. Faites 4-6 cycles (environ 90 secondes) dans un endroit calme : une cabine de toilettes, votre voiture ou un couloir conviennent parfaitement. Si vous sentez les nerfs monter en attendant, faites un autre set rapide de 2-3 cycles. Les effets durent 15-30 minutes.",
+        "ja-jp": "最良の結果を得るには、プレゼンの5-10分前に始めましょう。静かな場所で4-6サイクル（約90秒）行います。トイレの個室、車の中、廊下でも問題ありません。待っている間に緊張が高まったら、もう2-3サイクル素早く行いましょう。効果は15-30分間続きます。",
+        "pt-br": "Comece 5-10 minutos antes da sua apresentação para obter os melhores resultados. Faça 4-6 ciclos (cerca de 90 segundos) em um local silencioso: um box do banheiro, seu carro ou um corredor funcionam bem. Se sentir os nervos subindo enquanto espera, faça outro conjunto rápido de 2-3 ciclos. Os efeitos duram 15-30 minutos."
+      }
+    },
+    {
+      "route": "box-breathing-before-presentation",
+      "messageId": "schema.faq.1.answer",
+      "sourceText": "Navy SEALs use box breathing because it reliably activates the parasympathetic nervous system within 60-90 seconds. Mark Divine, a retired SEAL Commander, introduced it to BUD/S training. The structured 4-count rhythm gives the mind something to focus on while the slow pace physiologically lowers heart rate and cortisol, exactly what you need before high-stakes situations.",
+      "reviewedSourceHash": "3827d3fa96cdb54793107d9693e70108a99e29a64ac83c332a94c84c253512be",
+      "reason": "Source-only metadata or schema text absent from the approved page catalog.",
+      "translations": {
+        "de-de": "Navy SEALs nutzen Box Breathing, weil es das parasympathische Nervensystem innerhalb von 60-90 Sekunden zuverlässig aktiviert. Mark Divine, ein pensionierter SEAL Commander, führte es im BUD/S-Training ein. Der strukturierte 4-zählige Rhythmus gibt dem Geist etwas, worauf er sich konzentrieren kann, während das langsame Tempo physiologisch Herzfrequenz und Cortisol senkt, genau das, was du vor Situationen mit hohem Einsatz brauchst.",
+        "es-es": "Los Navy SEALs usan la respiración en caja porque activa de forma fiable el sistema nervioso parasimpático en 60-90 segundos. Mark Divine, un comandante SEAL retirado, la introdujo en el entrenamiento BUD/S. El ritmo estructurado de 4 tiempos da a la mente algo en lo que centrarse mientras el ritmo lento reduce fisiológicamente la frecuencia cardíaca y el cortisol, exactamente lo que necesitas antes de situaciones de alto riesgo.",
+        "fr-fr": "Les Navy SEALs utilisent la respiration en carré parce qu'elle active de façon fiable le système nerveux parasympathique en 60-90 secondes. Mark Divine, un commandant SEAL à la retraite, l'a introduite dans l'entraînement BUD/S. Le rythme structuré en 4 temps donne à l'esprit quelque chose sur quoi se concentrer tandis que le rythme lent abaisse physiologiquement le rythme cardiaque et le cortisol, exactement ce dont vous avez besoin avant des situations à enjeux élevés.",
+        "ja-jp": "Navy SEALsがボックス呼吸法を使うのは、60-90秒以内に副交感神経系を確実に活性化するからです。退役したSEAL司令官のMark Divineが、これをBUD/S訓練に導入しました。構造化された4カウントのリズムは心に集中するものを与え、一方でゆっくりしたペースが生理学的に心拍数とコルチゾールを下げます。これは高リスクの状況の前にちょうど必要なものです。",
+        "pt-br": "Os Navy SEALs usam a respiração quadrada porque ela ativa de forma confiável o sistema nervoso parassimpático em 60-90 segundos. Mark Divine, um comandante SEAL aposentado, a introduziu no treinamento BUD/S. O ritmo estruturado de 4 contagens dá à mente algo em que se concentrar enquanto o ritmo lento reduz fisiologicamente a frequência cardíaca e o cortisol, exatamente o que você precisa antes de situações de alto risco."
+      }
+    },
+    {
+      "route": "breathing-exercises-before-surgery",
+      "messageId": "metadata.imageAlt",
+      "sourceText": "Breathing Exercises Before Surgery, Calm Pre-Op Anxiety",
+      "reviewedSourceHash": "678bef4362f70847024483831410dffc420ea8a4f78830670abc9ddfe1b2b2af",
+      "reason": "Source-only metadata or schema text absent from the approved page catalog.",
+      "translations": {
+        "de-de": "Atemübungen vor der Operation, präoperative Angst beruhigen",
+        "es-es": "Ejercicios de respiración antes de la cirugía, calmar la ansiedad preoperatoria",
+        "fr-fr": "Exercices de respiration avant la chirurgie, calmer l'anxiété préopératoire",
+        "ja-jp": "手術前の呼吸エクササイズ、術前の不安を落ち着かせる",
+        "pt-br": "Exercícios de respiração antes da cirurgia, acalmar a ansiedade pré-operatória"
+      }
+    },
+    {
+      "route": "breathing-exercises-before-surgery",
+      "messageId": "schema.articleDescription",
+      "sourceText": "Hospital-approved breathing exercises to calm pre-surgery anxiety. Box breathing helps you arrive at your procedure relaxed and prepared.",
+      "reviewedSourceHash": "509a1cfe4490092ce8ff37700b3e4d1e587562c019db242a7ccf28cdbfa5441b",
+      "reason": "Source-only metadata or schema text absent from the approved page catalog.",
+      "translations": {
+        "de-de": "Krankenhausgeprüfte Atemübungen zur Beruhigung von Angst vor der Operation. Box Breathing hilft Ihnen, entspannt und vorbereitet zu Ihrem Eingriff zu kommen.",
+        "es-es": "Ejercicios de respiración aprobados por hospitales para calmar la ansiedad antes de la cirugía. La respiración en caja (box breathing) te ayuda a llegar a tu procedimiento relajado y preparado.",
+        "fr-fr": "Exercices de respiration approuvés par les hôpitaux pour calmer l'anxiété avant l'opération. La box breathing vous aide à arriver à votre intervention détendu et préparé.",
+        "ja-jp": "手術前の不安を落ち着かせるための病院承認の呼吸エクササイズ。ボックスブリージングは、リラックスして準備ができた状態で処置に臨むのに役立ちます。",
+        "pt-br": "Exercícios de respiração aprovados por hospitais para acalmar a ansiedade pré-cirúrgica. O box breathing ajuda você a chegar ao procedimento relaxado e preparado."
+      }
+    },
+    {
+      "route": "breathing-exercises-before-surgery",
+      "messageId": "schema.faq.1.answer",
+      "sourceText": "Start practicing 2-3 days before your surgery so the technique feels natural. On surgery day, do 5-10 minutes of breathing exercises at home before leaving, then again in the waiting room. Continue until you're taken to pre-op. The calming effects last 15-30 minutes.",
+      "reviewedSourceHash": "5f0d0868b6a38461e4dd9c2315c9ce0c0e4be3a82d67b73a13fa6ed62c76e9bd",
+      "reason": "Source-only metadata or schema text absent from the approved page catalog.",
+      "translations": {
+        "de-de": "Beginnen Sie 2-3 Tage vor Ihrer Operation zu üben, damit sich die Technik natürlich anfühlt. Am Operationstag machen Sie 5-10 Minuten Atemübungen zu Hause, bevor Sie losfahren, und dann noch einmal im Wartezimmer. Machen Sie weiter, bis Sie in die Prä-OP gebracht werden. Die beruhigende Wirkung hält 15-30 Minuten an.",
+        "es-es": "Empieza a practicar 2-3 días antes de tu cirugía para que la técnica se sienta natural. El día de la cirugía, haz 5-10 minutos de ejercicios de respiración en casa antes de salir y luego otra vez en la sala de espera. Continúa hasta que te lleven a preoperatorio. Los efectos calmantes duran 15-30 minutos.",
+        "fr-fr": "Commencez à vous entraîner 2-3 jours avant votre chirurgie pour que la technique paraisse naturelle. Le jour de l'opération, faites 5-10 minutes d'exercices de respiration à la maison avant de partir, puis à nouveau en salle d'attente. Continuez jusqu'à ce qu'on vous emmène en préopératoire. Les effets apaisants durent 15-30 minutes.",
+        "ja-jp": "テクニックが自然に感じられるよう、手術の2-3日前から練習を始めましょう。手術当日は、出発前に自宅で5-10分間の呼吸エクササイズを行い、待合室でも再度行います。術前準備室に連れていかれるまで続けてください。落ち着きの効果は15-30分間続きます。",
+        "pt-br": "Comece a praticar 2-3 dias antes da sua cirurgia para que a técnica se sinta natural. No dia da cirurgia, faça 5-10 minutos de exercícios de respiração em casa antes de sair e depois de novo na sala de espera. Continue até ser levado para o pré-operatório. Os efeitos calmantes duram 15-30 minutos."
+      }
+    },
+    {
+      "route": "breathing-exercises-before-surgery",
+      "messageId": "schema.faq.2.answer",
+      "sourceText": "Yes! Tell your nurse you'd like to do some breathing exercises. They'll likely encourage it. You can practice while lying on the gurney or sitting in a chair. Keep it gentle and quiet. If you have an IV, keep that arm still and focus on belly breathing.",
+      "reviewedSourceHash": "679020661c6e97f184be7d33ac177b6260ecd6aafd6dfc5ecd3b280b96c7d79d",
+      "reason": "Source-only metadata or schema text absent from the approved page catalog.",
+      "translations": {
+        "de-de": "Ja! Sagen Sie Ihrer Pflegekraft, dass Sie gerne einige Atemübungen machen möchten. Sie werden das wahrscheinlich unterstützen. Sie können üben, während Sie auf der Trage liegen oder auf einem Stuhl sitzen. Halten Sie es sanft und leise. Wenn Sie eine Infusion haben, halten Sie diesen Arm still und konzentrieren Sie sich auf die Bauchatmung.",
+        "es-es": "¡Sí! Dile a tu enfermera que te gustaría hacer algunos ejercicios de respiración. Es probable que te anime a hacerlo. Puedes practicar tumbado en la camilla o sentado en una silla. Hazlo de forma suave y silenciosa. Si tienes una vía intravenosa, mantén ese brazo quieto y concéntrate en la respiración abdominal.",
+        "fr-fr": "Oui ! Dites à votre infirmier ou infirmière que vous aimeriez faire quelques exercices de respiration. Il ou elle vous y encouragera probablement. Vous pouvez vous entraîner allongé sur le brancard ou assis sur une chaise. Restez doux et silencieux. Si vous avez une perfusion, gardez ce bras immobile et concentrez-vous sur la respiration abdominale.",
+        "ja-jp": "はい！看護師に呼吸エクササイズをしたいと伝えてください。おそらく勧めてくれるでしょう。担架に横になったまま、または椅子に座ったままで練習できます。優しく静かに行いましょう。点滴がある場合は、その腕を動かさず、腹式呼吸に集中してください。",
+        "pt-br": "Sim! Diga à sua enfermeira que você gostaria de fazer alguns exercícios de respiração. É provável que ela incentive. Você pode praticar deitado na maca ou sentado em uma cadeira. Mantenha suave e em silêncio. Se você tiver um acesso intravenoso (IV), mantenha esse braço parado e foque na respiração abdominal."
+      }
+    },
+    {
+      "route": "breathing-exercises-for-labor",
+      "messageId": "metadata.imageAlt",
+      "sourceText": "Breathing Exercises for Labor, Manage Contractions Naturally",
+      "reviewedSourceHash": "7b7f60a83b24662855aefd0c95374dc709f238a85f526898d7be0353ab8f0541",
+      "reason": "Source-only metadata or schema text absent from the approved page catalog.",
+      "translations": {
+        "de-de": "Atemübungen für die Geburt, Wehen natürlich bewältigen",
+        "es-es": "Ejercicios de respiración para el parto, controla las contracciones de forma natural",
+        "fr-fr": "Exercices de respiration pour le travail, gérer les contractions naturellement",
+        "ja-jp": "分娩のための呼吸エクササイズ、収縮を自然にコントロール",
+        "pt-br": "Exercícios de respiração para o trabalho de parto, gerencie as contrações naturalmente"
+      }
+    },
+    {
+      "route": "breathing-exercises-for-labor",
+      "messageId": "schema.articleDescription",
+      "sourceText": "Midwife-approved breathing techniques for labor and childbirth. Slow breathing helps manage contractions and promotes calm.",
+      "reviewedSourceHash": "c2510b3fe2dbbf7d62a591c206526f13c091d7015bd30f01b64260312cf2f865",
+      "reason": "Source-only metadata or schema text absent from the approved page catalog.",
+      "translations": {
+        "de-de": "Von Hebammen empfohlene Atemtechniken für Wehen und Geburt. Langsames Atmen hilft, Wehen zu bewältigen und fördert Ruhe.",
+        "es-es": "Técnicas de respiración aprobadas por matronas para el trabajo de parto y el parto. La respiración lenta ayuda a controlar las contracciones y promueve la calma.",
+        "fr-fr": "Techniques de respiration approuvées par les sages-femmes pour le travail et l'accouchement. La respiration lente aide à gérer les contractions et favorise le calme.",
+        "ja-jp": "助産師が推奨する分娩・出産のための呼吸法。ゆっくりした呼吸は収縮のコントロールを助け、落ち着きを促します。",
+        "pt-br": "Técnicas de respiração aprovadas por parteiras para o trabalho de parto e o parto. A respiração lenta ajuda a gerenciar as contrações e promove a calma."
+      }
+    },
+    {
+      "route": "breathing-exercises-for-labor",
+      "messageId": "schema.faq.0.answer",
+      "sourceText": "Slow, deep breathing (4-6 seconds in, 6-8 seconds out) is the most effective technique for labor. The extended exhale activates your parasympathetic nervous system, promoting relaxation and helping your body work with contractions rather than against them. Many midwives recommend breathing in through the nose and out through the mouth during contractions.",
+      "reviewedSourceHash": "7e12124e5ff94fc0d6fc9737f4ad63bd4225435fbb07cd7d4ecccfbd8a41235a",
+      "reason": "Source-only metadata or schema text absent from the approved page catalog.",
+      "translations": {
+        "de-de": "Langsames, tiefes Atmen (4–6 Sekunden ein, 6–8 Sekunden aus) ist die wirksamste Technik für die Geburt. Das verlängerte Ausatmen aktiviert Ihr parasympathisches Nervensystem, fördert Entspannung und hilft Ihrem Körper, mit den Wehen zu arbeiten statt gegen sie. Viele Hebammen empfehlen, während der Wehen durch die Nase ein- und durch den Mund auszuatmen.",
+        "es-es": "La respiración lenta y profunda (4-6 segundos de inspiración, 6-8 segundos de espiración) es la técnica más eficaz para el parto. La espiración prolongada activa el sistema nervioso parasimpático, favorece la relajación y ayuda a tu cuerpo a trabajar con las contracciones en lugar de contra ellas. Muchas matronas recomiendan inspirar por la nariz y espirar por la boca durante las contracciones.",
+        "fr-fr": "La respiration lente et profonde (4 à 6 secondes d'inspiration, 6 à 8 secondes d'expiration) est la technique la plus efficace pour le travail. L'expiration prolongée active votre système nerveux parasympathique, favorise la relaxation et aide votre corps à travailler avec les contractions plutôt que contre elles. De nombreuses sages-femmes recommandent d'inspirer par le nez et d'expirer par la bouche pendant les contractions.",
+        "ja-jp": "ゆっくりとした深い呼吸（吸気4〜6秒、呼気6〜8秒）が分娩で最も効果的なテクニックです。長い呼気は副交感神経系を活性化し、リラックスを促し、体が収縮に逆らわずに協力して働けるようにします。多くの助産師は、収縮中は鼻から吸い、口から吐くことを勧めています。",
+        "pt-br": "A respiração lenta e profunda (4-6 segundos inspirando, 6-8 segundos expirando) é a técnica mais eficaz para o trabalho de parto. A expiração prolongada ativa o sistema nervoso parassimpático, promove o relaxamento e ajuda o corpo a trabalhar com as contrações em vez de contra elas. Muitas parteiras recomendam inspirar pelo nariz e expirar pela boca durante as contrações."
+      }
+    },
+    {
+      "route": "breathing-exercises-for-labor",
+      "messageId": "schema.faq.1.answer",
+      "sourceText": "Start practicing at least 4-6 weeks before your due date. Practice for 5-10 minutes daily so the breathing pattern becomes automatic. This way, when labor begins, you won't have to think about the technique. Your body will know what to do.",
+      "reviewedSourceHash": "8548f2bda0d105f64f53a96c0c34248475c471bb0e83004b9630346a85298823",
+      "reason": "Source-only metadata or schema text absent from the approved page catalog.",
+      "translations": {
+        "de-de": "Beginnen Sie mindestens 4–6 Wochen vor dem errechneten Geburtstermin mit dem Üben. Üben Sie täglich 5–10 Minuten, damit das Atemmuster automatisch wird. So müssen Sie, wenn die Wehen beginnen, nicht über die Technik nachdenken. Ihr Körper weiß, was zu tun ist.",
+        "es-es": "Empieza a practicar al menos 4-6 semanas antes de la fecha prevista de parto. Practica entre 5 y 10 minutos al día para que el patrón de respiración se vuelva automático. Así, cuando comience el trabajo de parto, no tendrás que pensar en la técnica. Tu cuerpo sabrá qué hacer.",
+        "fr-fr": "Commencez à pratiquer au moins 4 à 6 semaines avant la date prévue d'accouchement. Pratiquez 5 à 10 minutes par jour pour que le schéma respiratoire devienne automatique. Ainsi, lorsque le travail commence, vous n'aurez pas à réfléchir à la technique. Votre corps saura quoi faire.",
+        "ja-jp": "予定日の少なくとも4〜6週間前から練習を始めましょう。呼吸のパターンが自動的になるよう、毎日5〜10分練習します。こうすれば、分娩が始まったときにテクニックを考えずに済みます。体が何をすべきか知っています。",
+        "pt-br": "Comece a praticar pelo menos 4-6 semanas antes da data prevista do parto. Pratique de 5 a 10 minutos por dia para que o padrão de respiração se torne automático. Assim, quando o trabalho de parto começar, você não precisará pensar na técnica. Seu corpo saberá o que fazer."
+      }
+    },
+    {
+      "route": "breathing-exercises-for-labor",
+      "messageId": "schema.faq.1.question",
+      "sourceText": "When should I start practicing breathing for labor?",
+      "reviewedSourceHash": "25cdae591e9de7d14a31b64a44035a88d7c4667bd6dba69b92a295457700f06c",
+      "reason": "Source-only metadata or schema text absent from the approved page catalog.",
+      "translations": {
+        "de-de": "Wann sollte ich mit dem Üben der Atmung für die Geburt beginnen?",
+        "es-es": "¿Cuándo debo empezar a practicar la respiración para el parto?",
+        "fr-fr": "Quand dois-je commencer à pratiquer la respiration pour le travail ?",
+        "ja-jp": "分娩のための呼吸練習はいつから始めるべきですか？",
+        "pt-br": "Quando devo começar a praticar a respiração para o trabalho de parto?"
+      }
+    },
+    {
+      "route": "breathing-exercises-for-labor",
+      "messageId": "schema.faq.2.answer",
+      "sourceText": "As a contraction begins, start slow breathing: inhale through your nose for 4-6 seconds, then exhale slowly through your mouth for 6-8 seconds. Focus on making your exhale longer than your inhale. Continue this pattern throughout the contraction. Between contractions, return to normal breathing and rest.",
+      "reviewedSourceHash": "6ce9e86defd862ff9920906995a7bfafba46f80932bece2e5c7226365685b5a2",
+      "reason": "Source-only metadata or schema text absent from the approved page catalog.",
+      "translations": {
+        "de-de": "Wenn eine Wehe beginnt, starten Sie mit langsamer Atmung: atmen Sie 4–6 Sekunden durch die Nase ein, dann langsam 6–8 Sekunden durch den Mund aus. Konzentrieren Sie sich darauf, dass das Ausatmen länger dauert als das Einatmen. Setzen Sie dieses Muster während der gesamten Wehe fort. Zwischen den Wehen kehren Sie zur normalen Atmung zurück und ruhen sich aus.",
+        "es-es": "Cuando comienza una contracción, inicia la respiración lenta: inspira por la nariz durante 4-6 segundos y luego expira lentamente por la boca durante 6-8 segundos. Concéntrate en que la espiración sea más larga que la inspiración. Mantén este patrón durante toda la contracción. Entre contracciones, vuelve a la respiración normal y descansa.",
+        "fr-fr": "Lorsqu'une contraction commence, démarrez une respiration lente : inspirez par le nez pendant 4 à 6 secondes, puis expirez lentement par la bouche pendant 6 à 8 secondes. Concentrez-vous sur une expiration plus longue que l'inspiration. Continuez ce schéma tout au long de la contraction. Entre les contractions, revenez à une respiration normale et reposez-vous.",
+        "ja-jp": "収縮が始まったら、ゆっくりした呼吸を始めます。鼻から4〜6秒吸い、口から6〜8秒ゆっくり吐きます。呼気が吸気より長くなるように意識します。収縮の間ずっとこのパターンを続けます。収縮の合間は通常の呼吸に戻して休みます。",
+        "pt-br": "Quando uma contração começa, inicie a respiração lenta: inspire pelo nariz por 4-6 segundos e depois expire lentamente pela boca por 6-8 segundos. Concentre-se em tornar a expiração mais longa do que a inspiração. Continue esse padrão durante toda a contração. Entre as contrações, volte à respiração normal e descanse."
+      }
+    },
+    {
+      "route": "physiological-sigh-panic-attack",
+      "messageId": "metadata.imageAlt",
+      "sourceText": "Breathing Technique for Panic Attack. Stop Panic in 30 Seconds",
+      "reviewedSourceHash": "ad6965ed1b51c228d2f3d61356f64f2dd868319e78d445bfeb182fcf801fece1",
+      "reason": "Source-only metadata or schema text absent from the approved page catalog.",
+      "translations": {
+        "de-de": "Atemtechnik bei Panikattacke. Stoppe Panik in 30 Sekunden",
+        "es-es": "Técnica de respiración para el ataque de pánico. Detén el pánico en 30 segundos",
+        "fr-fr": "Technique de respiration pour la crise de panique. Arrêtez la panique en 30 secondes",
+        "ja-jp": "パニック発作のための呼吸法。30秒でパニックを止める",
+        "pt-br": "Técnica de respiração para ataque de pânico. Pare o pânico em 30 segundos"
+      }
+    },
+    {
+      "route": "physiological-sigh-panic-attack",
+      "messageId": "schema.articleDescription",
+      "sourceText": "The physiological sigh is the fastest way to stop a panic attack: just 1-3 breaths. Stanford-tested technique from Dr. Andrew Huberman.",
+      "reviewedSourceHash": "6248d1219d258ca5fa7b2af8b2ebbd9e58b5c74ae9fd64dbd6265fcc8206dce6",
+      "reason": "Source-only metadata or schema text absent from the approved page catalog.",
+      "translations": {
+        "de-de": "Der physiologische Seufzer ist der schnellste Weg, eine Panikattacke zu stoppen: nur 1-3 Atemzüge. An der Stanford getestete Technik von Dr. Andrew Huberman.",
+        "es-es": "El suspiro fisiológico es la forma más rápida de detener un ataque de pánico: solo 1-3 respiraciones. Técnica probada en Stanford del Dr. Andrew Huberman.",
+        "fr-fr": "Le soupir physiologique est le moyen le plus rapide d'arrêter une crise de panique : seulement 1-3 respirations. Technique testée à Stanford du Dr Andrew Huberman.",
+        "ja-jp": "フィジオロジカル・サイ（生理的ため息）は、パニック発作を止める最速の方法です：わずか1-3回の呼吸。スタンフォードで検証された、アンドリュー・ヒューバーマン博士の技法です。",
+        "pt-br": "O suspiro fisiológico é a forma mais rápida de parar um ataque de pânico: apenas 1-3 respirações. Técnica testada em Stanford do Dr. Andrew Huberman."
+      }
+    },
+    {
+      "route": "physiological-sigh-panic-attack",
+      "messageId": "schema.breadcrumbCurrent",
+      "sourceText": "Physiological Sigh for Panic Attack",
+      "reviewedSourceHash": "35aca4e13882fc7d727bed4b1435d95ab7b3768fb841ee5f34b8426d08547a52",
+      "reason": "Source-only metadata or schema text absent from the approved page catalog.",
+      "translations": {
+        "de-de": "Physiologischer Seufzer bei Panikattacke",
+        "es-es": "Suspiro fisiológico para el ataque de pánico",
+        "fr-fr": "Soupir physiologique pour la crise de panique",
+        "ja-jp": "パニック発作のためのフィジオロジカル・サイ",
+        "pt-br": "Suspiro fisiológico para ataque de pânico"
+      }
+    },
+    {
+      "route": "physiological-sigh-panic-attack",
+      "messageId": "schema.faq.0.answer",
+      "sourceText": "The physiological sigh is the fastest breathing technique for panic attacks. It works in just 1-3 breaths (about 30 seconds). The pattern is: two quick inhales through your nose (the second is a short 'top-up'), then one long, slow exhale through your mouth. This immediately activates your vagus nerve and interrupts the panic response.",
+      "reviewedSourceHash": "12e3985fe0959f44989a61219885537686ee724da1f632ce2bbaa4c5cdcab69e",
+      "reason": "Source-only metadata or schema text absent from the approved page catalog.",
+      "translations": {
+        "de-de": "Der physiologische Seufzer ist die schnellste Atemtechnik bei Panikattacken. Er wirkt in nur 1-3 Atemzügen (etwa 30 Sekunden). Das Muster lautet: zwei schnelle Einatmungen durch die Nase (die zweite ist ein kurzes 'Auffüllen'), dann eine lange, langsame Ausatmung durch den Mund. Das aktiviert sofort deinen Vagusnerv und unterbricht die Panikreaktion.",
+        "es-es": "El suspiro fisiológico es la técnica de respiración más rápida para los ataques de pánico. Funciona en solo 1-3 respiraciones (unos 30 segundos). El patrón es: dos inhalaciones rápidas por la nariz (la segunda es un breve 'relleno'), luego una exhalación larga y lenta por la boca. Esto activa de inmediato tu nervio vago e interrumpe la respuesta de pánico.",
+        "fr-fr": "Le soupir physiologique est la technique de respiration la plus rapide pour les crises de panique. Elle agit en seulement 1-3 respirations (environ 30 secondes). Le schéma est : deux inspirations rapides par le nez (la seconde est un court 'complément'), puis une longue expiration lente par la bouche. Cela active immédiatement votre nerf vague et interrompt la réponse de panique.",
+        "ja-jp": "フィジオロジカル・サイは、パニック発作に対する最速の呼吸法です。わずか1-3回の呼吸（約30秒）で効果があります。パターンは次のとおりです：鼻から素早く2回吸う（2回目は短い「追加吸入」）、その後口から長くゆっくり吐く。これにより迷走神経が即座に活性化し、パニック反応が中断されます。",
+        "pt-br": "O suspiro fisiológico é a técnica de respiração mais rápida para ataques de pânico. Funciona em apenas 1-3 respirações (cerca de 30 segundos). O padrão é: duas inalações rápidas pelo nariz (a segunda é um curto 'complemento'), depois uma exalação longa e lenta pela boca. Isso ativa imediatamente o seu nervo vago e interrompe a resposta de pânico."
+      }
+    },
+    {
+      "route": "physiological-sigh-panic-attack",
+      "messageId": "schema.faq.1.answer",
+      "sourceText": "During a panic attack, your lung alveoli collapse and your nervous system is in overdrive. The double inhale reinflates these collapsed air sacs, improving oxygen exchange. The long exhale stimulates the vagus nerve, which activates your parasympathetic 'calm down' system. This two-step mechanism interrupts panic faster than any other breathing technique.",
+      "reviewedSourceHash": "6a4954bbcf6cc7fe839201eb135f9f60eed0fb34cde44660d076f083ef3dfdcd",
+      "reason": "Source-only metadata or schema text absent from the approved page catalog.",
+      "translations": {
+        "de-de": "Während einer Panikattacke kollabieren deine Lungenalveolen und dein Nervensystem ist im Überantrieb. Die doppelte Einatmung bläht diese kollabierten Luftsäcke wieder auf und verbessert den Sauerstoffaustausch. Die lange Ausatmung stimuliert den Vagusnerv, der dein parasympathisches 'Beruhigungs'-System aktiviert. Dieser zweistufige Mechanismus unterbricht Panik schneller als jede andere Atemtechnik.",
+        "es-es": "Durante un ataque de pánico, los alvéolos de tus pulmones se colapsan y tu sistema nervioso está en sobremarcha. La doble inhalación reinfunde estos sacos de aire colapsados, mejorando el intercambio de oxígeno. La exhalación larga estimula el nervio vago, que activa tu sistema parasimpático de 'calmarte'. Este mecanismo de dos pasos interrumpe el pánico más rápido que cualquier otra técnica de respiración.",
+        "fr-fr": "Pendant une crise de panique, vos alvéoles pulmonaires s'affaissent et votre système nerveux est en surrégime. La double inspiration regonfle ces sacs d'air affaissés, améliorant les échanges d'oxygène. La longue expiration stimule le nerf vague, qui active votre système parasympathique de 'calme'. Ce mécanisme en deux étapes interrompt la panique plus rapidement que toute autre technique de respiration.",
+        "ja-jp": "パニック発作中、肺の肺胞は虚脱し、神経系は過活動状態になります。二重吸入はこれらの虚脱した空気袋を再び膨らませ、酸素交換を改善します。長い呼気は迷走神経を刺激し、副交感神経の「落ち着く」システムを活性化します。この2段階の仕組みは、他のどの呼吸法よりも速くパニックを中断します。",
+        "pt-br": "Durante um ataque de pânico, os alvéolos dos seus pulmões colapsam e o seu sistema nervoso está em sobrecarga. A dupla inalação reinfla esses sacos de ar colapsados, melhorando a troca de oxigênio. A longa exalação estimula o nervo vago, que ativa o seu sistema parassimpático de 'acalmar'. Esse mecanismo de duas etapas interrompe o pânico mais rápido do que qualquer outra técnica de respiração."
+      }
+    }
+  ]
+}

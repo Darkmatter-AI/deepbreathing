@@ -1,0 +1,56 @@
+{
+  "breadcrumb": {
+    "current": "Privacidad",
+    "home": "Inicio"
+  },
+  "hero": {
+    "eyebrow": "Ejercicios de respiración profunda",
+    "intro": "Los ejercicios de respiración funcionan sin una cuenta. Si decides iniciar sesión, usamos tus datos únicamente para prestar y mejorar el servicio.",
+    "lastUpdated": "Última actualización: 11 de julio de 2026.",
+    "title": "Privacidad"
+  },
+  "metadata": {
+    "description": "Política de privacidad de Deep Breathing Exercises, incluidas las cuentas opcionales, la sincronización de prácticas, el análisis y la eliminación.",
+    "imageAlt": "Conoce nuestra política de privacidad para una respiración",
+    "socialDescription": "Consulta la política de privacidad respiración de Deep Breathing Exercises. Infórmate sobre los datos que recopilamos (si los hay), cómo se utilizan y",
+    "socialTitle": "Conoce nuestra política de privacidad para una respiración",
+    "title": "Conoce nuestra política de privacidad para una respiración",
+    "twitterDescription": "Consulta la política de privacidad respiración de Deep Breathing Exercises. Infórmate sobre los datos que recopilamos (si los hay), cómo se utilizan y",
+    "twitterTitle": "Conoce nuestra política de privacidad para una respiración"
+  },
+  "sections": {
+    "accounts": {
+      "body": "Si inicias sesión con Apple o Google, recibimos el identificador de la cuenta, la dirección de correo electrónico y cualquier nombre que comparta el proveedor. Guardamos el historial de tus sesiones de respiración, los totales, los días de racha y la configuración para que puedan sincronizarse entre el sitio web y tu teléfono. Las prácticas registradas sin haber iniciado sesión permanecen en tu dispositivo hasta que decidas iniciar sesión.",
+      "title": "Cuentas opcionales y sincronización"
+    },
+    "collection": {
+      "body": "Los invitados pueden practicar sin facilitarnos un nombre ni un correo electrónico. La app y el sitio web recopilan eventos básicos de uso, como el inicio, el final y la duración de las sesiones, el modo de respiración y la plataforma. La app móvil usa un identificador de análisis aleatorio por instalación. No usa el identificador de publicidad ni solicita permiso de seguimiento.",
+      "title": "Qué datos recopilamos"
+    },
+    "contact": {
+      "abiassiLabel": "Abiassi",
+      "backLink": "Volver al visualizador →",
+      "darkmatterLabel": "Darkmatter AI Labs",
+      "intro": "Si tienes preguntas sobre la privacidad, puedes contactar con los creadores a través de:",
+      "title": "Contacto"
+    },
+    "deletion": {
+      "action": "Eliminar cuenta.",
+      "afterAction": "Tras la confirmación, eliminamos permanentemente la cuenta y los datos de prácticas sincronizados. Los datos locales pueden eliminarse borrando la app o los datos del sitio en tu navegador.",
+      "beforeAction": "Puedes usar la experiencia principal de respiración como invitado. Los usuarios que hayan iniciado sesión pueden abrir el menú de la cuenta y elegir",
+      "title": "Tus opciones y la eliminación"
+    },
+    "device": {
+      "body": "El audio y la respuesta háptica se generan o reproducen en tu dispositivo. No utilizamos el micrófono, HealthKit, la ubicación precisa, los contactos, las fotos ni el identificador de publicidad.",
+      "title": "Funciones del dispositivo"
+    },
+    "thirdParty": {
+      "body": "Algunas páginas contienen enlaces a investigaciones o recursos externos. Esos sitios tienen sus propias políticas de privacidad.",
+      "title": "Enlaces de terceros"
+    },
+    "useAndShare": {
+      "body": "Usamos esta información para el funcionamiento de la app, la asistencia de cuentas, el análisis, la supervisión del rendimiento y la corrección de errores. Los proveedores de servicios nos ayudan con la autenticación, el correo electrónico, el análisis, el alojamiento y el almacenamiento de la base de datos. No vendemos información personal ni usamos los datos de respiración para publicidad.",
+      "title": "Cómo usamos y compartimos los datos"
+    }
+  }
+}

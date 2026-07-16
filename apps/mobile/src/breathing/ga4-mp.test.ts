@@ -32,8 +32,7 @@ vi.mock('@react-native-async-storage/async-storage', () => {
 });
 
 // Mock __DEV__ global (defined by Metro but not Node).
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-(globalThis as any).__DEV__ = false;
+(globalThis as typeof globalThis & { __DEV__: boolean }).__DEV__ = false;
 
 // Mock process.env for EXPO_PUBLIC_ vars.
 const MOCK_API_SECRET = 'test-secret-xyz';

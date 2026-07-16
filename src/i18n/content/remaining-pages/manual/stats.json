@@ -1,0 +1,76 @@
+{
+  "entries": [
+    {
+      "messageId": "catalog-placement.5058f6f2-8927-4881-8fe7-4c6256faa90d",
+      "reason": "Missing approved catalog translation for head:title",
+      "reviewedSourceHash": "b974024a208a91fcdf95c931866f4906439f8da48fa3f4424539cf4acb582485",
+      "scope": "content",
+      "sourceText": "Your Practice Stats — Deep Breathing Exercises | Deep Breathing Exercises",
+      "translations": {
+        "de-de": "Deine Übungsstatistiken — Deep Breathing Exercises | Deep Breathing Exercises",
+        "es-es": "Tus estadísticas de práctica — Deep Breathing Exercises | Deep Breathing Exercises",
+        "fr-fr": "Vos statistiques de pratique — Deep Breathing Exercises | Deep Breathing Exercises",
+        "ja-jp": "練習の統計 — Deep Breathing Exercises | Deep Breathing Exercises",
+        "pt-br": "Suas estatísticas de prática — Deep Breathing Exercises | Deep Breathing Exercises"
+      }
+    },
+    {
+      "messageId": "catalog-placement.80ed7efe-cc78-48ee-9bc6-f023a787ad70",
+      "reason": "Missing approved catalog translation for head:meta:name:description",
+      "reviewedSourceHash": "3b1b3dfd2c8276b4521d8fd0bbe1da4543132d7276f6847f9c17d2260e7d551b",
+      "scope": "content",
+      "sourceText": "See your total breathing minutes, session count, streak, and practice calendar.",
+      "translations": {
+        "de-de": "Sieh deine gesamten Atemminuten, Sitzungsanzahl, Serie und Übungskalender.",
+        "es-es": "Consulta tus minutos totales de respiración, el número de sesiones, la racha y el calendario de práctica.",
+        "fr-fr": "Consultez vos minutes de respiration totales, le nombre de séances, votre série et votre calendrier de pratique.",
+        "ja-jp": "合計の呼吸分数、セッション数、連続記録、練習カレンダーを確認できます。",
+        "pt-br": "Veja seus minutos totais de respiração, a contagem de sessões, a sequência e o calendário de prática."
+      }
+    },
+    {
+      "messageId": "catalog-placement.e90a6857-08f2-4bdb-a432-b317b67afe04",
+      "reason": "Missing approved catalog translation for sel:h1.mb-2.text-xl:ctx:heading:pos:0",
+      "reviewedSourceHash": "ce8936353df8e4ace4f1029cf47d8312c234c382d3bb53b885f6f06ecc7d58d1",
+      "scope": "content",
+      "sourceText": "Track your practice",
+      "translations": {
+        "de-de": "Verfolge deine Übung",
+        "es-es": "Sigue tu práctica",
+        "fr-fr": "Suivez votre pratique",
+        "ja-jp": "練習を記録する",
+        "pt-br": "Acompanhe sua prática"
+      }
+    },
+    {
+      "messageId": "catalog-placement.4a29c275-12ce-4693-8378-2865062758d9",
+      "reason": "Missing approved catalog translation for sel:p.mb-6.text-sm:ctx:p:pos:0",
+      "reviewedSourceHash": "435d341b19d6558116de5bb0719348d95e876a773b417a7b454471411187ee5e",
+      "scope": "content",
+      "sourceText": "Sign in to see your total minutes, session count, streak, and a practice calendar. Your data syncs across devices.",
+      "translations": {
+        "de-de": "Melde dich an, um deine Gesamtminuten, Sitzungsanzahl, Serie und einen Übungskalender zu sehen. Deine Daten werden geräteübergreifend synchronisiert.",
+        "es-es": "Inicia sesión para ver tus minutos totales, el número de sesiones, la racha y un calendario de práctica. Tus datos se sincronizan entre dispositivos.",
+        "fr-fr": "Connectez-vous pour voir vos minutes totales, le nombre de séances, votre série et un calendrier de pratique. Vos données se synchronisent sur tous vos appareils.",
+        "ja-jp": "サインインして、合計分数、セッション数、連続記録、練習カレンダーを表示します。データはデバイス間で同期されます。",
+        "pt-br": "Entre para ver seus minutos totais, a contagem de sessões, a sequência e um calendário de prática. Seus dados sincronizam entre dispositivos."
+      }
+    },
+    {
+      "messageId": "catalog-placement.9e1c30fb-0330-4a81-ad2d-b7df38bec0f0",
+      "reason": "Missing approved catalog translation for sel:button.rounded-xl.bg-primary:ctx:cta_button:pos:0",
+      "reviewedSourceHash": "3fdfeb81fe1eb97177668ad7d60817490e1c46f616da93d588c580e8b7d5b8d0",
+      "scope": "content",
+      "sourceText": "Sign in to view your stats",
+      "translations": {
+        "de-de": "Anmelden, um deine Statistiken anzuzeigen",
+        "es-es": "Inicia sesión para ver tus estadísticas",
+        "fr-fr": "Connectez-vous pour voir vos statistiques",
+        "ja-jp": "サインインして統計を表示",
+        "pt-br": "Entre para ver suas estatísticas"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/stats"
+}

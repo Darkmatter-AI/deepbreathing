@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "locales": [
+    "de-de",
+    "es-es",
+    "fr-fr",
+    "ja-jp",
+    "pt-br"
+  ],
+  "routes": [
+    {
+      "sourceRoute": "/breathe/buteyko",
+      "routeId": "breathe.buteyko",
+      "messages": []
+    },
+    {
+      "sourceRoute": "/for/anxiety",
+      "routeId": "for.anxiety",
+      "messages": [
+        {
+          "messageId": "for.anxiety.disclaimer",
+          "sourcePath": "disclaimer",
+          "reason": "regional_safety_resource",
+          "translations": {
+            "de-de": "Diese Atemtechnik ist kein Ersatz für eine professionelle psychische Behandlung. Wenn Sie unter starker Angst, Panikattacken oder Suizidgedanken leiden, wenden Sie sich bitte an eine Fachkraft für psychische Gesundheit oder rufen Sie die TelefonSeelsorge unter 116 123 an.",
+            "es-es": "Esta técnica de respiración no sustituye el tratamiento profesional de salud mental. Si experimentas ansiedad grave, ataques de pánico o pensamientos suicidas, ponte en contacto con un profesional de salud mental o llama a la Línea 024.",
+            "fr-fr": "Cette technique de respiration ne remplace pas une prise en charge professionnelle en santé mentale. Si vous souffrez d’anxiété sévère, de crises de panique ou de pensées suicidaires, contactez un professionnel de santé mentale ou appelez le 3114, numéro national de prévention du suicide.",
+            "ja-jp": "この呼吸法は、専門的なメンタルヘルス治療の代わりになるものではありません。強い不安、パニック発作、または自殺念慮がある場合は、メンタルヘルスの専門家に相談するか、こころの健康相談統一ダイヤル（0570-064-556）に電話してください。",
+            "pt-br": "Esta técnica de respiração não substitui o tratamento profissional de saúde mental. Se você estiver enfrentando ansiedade intensa, ataques de pânico ou pensamentos suicidas, procure um profissional de saúde mental ou ligue para o CVV pelo 188."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "Pesquisa de Harvard: a respiração lenta pode reduzir a pressão arterial em até 10 pontos. A técnica de respiração 478 do Dr. Weil. Visualizador gratuito.",
+      "locale": "pt-br",
+      "reason": "The approved value corrupts the 4-7-8 technique name and preserves an obsolete stronger reduction claim.",
+      "replacement": "A respiração lenta favorece uma pressão arterial mais saudável. Técnica 4-7-8 do Dr. Weil com visualizador guiado gratuito.",
+      "reviewedSourceHash": "e0041bf8fcc594869aad1e622bf4b380dc0a4ed90dfee7435ee31d08f8e06d2b",
+      "sourcePath": "meta.ogDescription",
+      "sourceText": "Slow breathing supports healthier blood pressure. Dr. Weil's 4-7-8 technique with a free guided visualizer."
+    },
+    {
+      "currentCatalogValue": "Pesquisa de Harvard: a respiração 478 do Dr. Weil pode reduzir a PA em até 10 pontos. Visualizador gratuito.",
+      "locale": "pt-br",
+      "reason": "The approved value corrupts the 4-7-8 technique name and preserves an obsolete stronger reduction claim.",
+      "replacement": "A respiração lenta favorece uma pressão arterial mais saudável. Técnica 4-7-8 do Dr. Weil. Visualizador gratuito.",
+      "reviewedSourceHash": "cf16c92becfc4b3bec1401d673150582f0a160f61522113fe36e0182a160c87f",
+      "sourcePath": "meta.twitterDescription",
+      "sourceText": "Slow breathing supports healthier blood pressure. Dr. Weil's 4-7-8 technique. Free visualizer."
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/high-blood-pressure"
+}

@@ -1,5 +1,13 @@
 # App Review Risk Audit — Health Claims & Minimum Functionality
 
+> ⚠️ **2026-06-24 audit update — v1 scope:** Wim Hof is NOT exposed in the shipped v1 and has
+> been removed from the listing, which eliminates the highest 1.4.1 item (breath retention /
+> hyperventilation). The promised in-app Wim Hof safety warning is therefore **N/A for v1** (it
+> was never built; do not tell the reviewer it exists). The mobile app now uses "Stress Reset"
+> for Physiological Sigh, removes the condition-specific COPD copy from Pursed-Lip Breathing,
+> and includes a short in-app Safety note in Settings.
+> Anything below referring to a Wim Hof warning applies only once Wim Hof ships in v1.1.
+
 ## Guideline 1.4.1 — Physical Harm (Medical Claims)
 
 ### Risk level: Low-to-Medium (manageable with disclaimers)
@@ -27,7 +35,8 @@ Scan all strings in the app (mode descriptions, UI copy, onboarding text, and th
 | Box | "Focus & Stress Reduction (4-4-4-4)" | Low | Fine as-is |
 | Relax | "Sleep & Deep Relaxation (4-7-8)" | Low-Medium | "Relaxation" is fine; avoid claiming it "treats" sleep disorders |
 | Coherent | "Heart Rate Variability (5.5-5.5)" | Low | HRV is a measurable biometric, not a medical diagnosis; fine as scientific context |
-| Sigh | "Panic Reset (Double Inhale)" | Medium | "Panic Reset" could imply treatment of panic disorder. Consider "Stress Reset" |
+| Sigh | "Stress Reset (Double Inhale)" | Low | Updated for v1 to avoid implying treatment of panic disorder |
+| Pursed Lip | "Gentle Longer Exhale (2-4 ratio)" | Low | Updated for v1 to remove condition-specific COPD copy |
 | Wim Hof | "Energy & Resilience (30 breaths × 3 rounds)" | High (see below) | |
 
 #### Wim Hof — elevated scrutiny
@@ -116,9 +125,9 @@ Standard remediation is to add at least one more screen of native-only content. 
 - [x] Export compliance declaration set
 
 ### Amber (needs action before submission)
-- [ ] "Panic Reset" mode label — consider renaming to "Stress Reset" to reduce 1.4.1 risk
+- [x] "Panic Reset" mobile label renamed to "Stress Reset"
 - [ ] Wim Hof in-app warning screen — must be added before review
-- [ ] Disclaimer text visible in-app (Info/About sheet or onboarding)
+- [x] Short safety/disclaimer text visible in the mobile Settings sheet
 - [ ] Support page live at deepbreathingexercises.com/support
 - [ ] Privacy page updated with mobile-app data collection section
 - [ ] Demo account credentials ready for reviewer (required since login exists)

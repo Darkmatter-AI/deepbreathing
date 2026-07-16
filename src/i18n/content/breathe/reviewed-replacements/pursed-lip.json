@@ -1,0 +1,159 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "A técnica de respiração freno labial foi desenvolvida na medicina pulmonar clínica e terapia respiratória como uma ferramenta para pacientes com doença pulmonar obstrutiva crônica (DPOC). Não há um único criador. Tornou-se um componente padrão dos programas de reabilitação pulmonar e foi endossada pelo American College of Chest Physicians e AACVPR em 1997.",
+      "locale": "pt-br",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'.",
+      "replacement": "A respiração com lábios franzidos foi desenvolvida na medicina pulmonar clínica e na terapia respiratória como uma ferramenta para pacientes com doença pulmonar obstrutiva crônica (DPOC). Não há um único criador. Tornou-se um componente padrão dos programas de reabilitação pulmonar e foi endossada pelo American College of Chest Physicians e pela AACVPR em 1997.",
+      "reviewedSourceHash": "68b637d6745044bff51f47fa65dc46c4d61eb93694c579a3d076278077b4ea9c",
+      "sourcePath": "lineage",
+      "sourceText": "Developed in clinical pulmonary medicine and respiratory therapy as a tool for patients with chronic obstructive pulmonary disease (COPD). There is no single originator. It became a standard component of pulmonary rehabilitation programs and was endorsed by the American College of Chest Physicians and AACVPR in 1997."
+    },
+    {
+      "currentCatalogValue": "Técnica de respiração freno labial",
+      "locale": "pt-br",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'.",
+      "replacement": "Técnica de respiração com lábios franzidos",
+      "reviewedSourceHash": "b44d6b2987526fe1ecca59bd20db1dfa5478a2ed3fd051905793342a73747bd2",
+      "sourcePath": "hero.title",
+      "sourceText": "Pursed Lip Breathing Technique"
+    },
+    {
+      "currentCatalogValue": "A respiração freno labial é uma técnica simples que desacelera sua respiração e ajuda a expelir mais ar dos pulmões. Inspire lentamente pelo nariz e expire pelos lábios semicerrados (como assoprar uma vela) por duas vezes mais tempo. Usada por fisioterapeutas respiratórios globalmente para DPOC, asma e recuperação pós-exercício.",
+      "locale": "pt-br",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'.",
+      "replacement": "A respiração com lábios franzidos é uma técnica simples que desacelera sua respiração e ajuda a expelir mais ar dos pulmões. Inspire lentamente pelo nariz e expire pelos lábios franzidos (como ao apagar uma vela) pelo dobro do tempo. É usada por fisioterapeutas respiratórios no mundo todo para DPOC, asma e recuperação após exercícios.",
+      "reviewedSourceHash": "4f89449d617e2f5650a25c1a6a58fec847d18571ece2e4f566ae87558b06f7f7",
+      "sourcePath": "hero.intro",
+      "sourceText": "Pursed lip breathing is a simple technique that slows your breathing and helps you get more air out of your lungs. Inhale slowly through your nose, then exhale through pursed lips (like blowing out a candle) for twice as long. Used by respiratory therapists worldwide for COPD, asthma, and exercise recovery."
+    },
+    {
+      "currentCatalogValue": "Respiração Freno Labial: Pare a Falta de Ar Rapidamente",
+      "locale": "pt-br",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'.",
+      "replacement": "Respiração com lábios franzidos: alivie rapidamente a falta de ar",
+      "reviewedSourceHash": "6dfb9ea8191daa7807801c527db4a2ac572d1df44c4110d77ea7965f590a3171",
+      "sourcePath": "meta.ogTitle",
+      "sourceText": "Pursed Lip Breathing: Stop Shortness of Breath Fast"
+    },
+    {
+      "currentCatalogValue": "Respiração Freno Labial: Timer Grátis",
+      "locale": "pt-br",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'.",
+      "replacement": "Respiração com lábios franzidos: timer grátis",
+      "reviewedSourceHash": "d629bb1130b16d91e3922895a5f172059e7742f43da4df6e620e000317707b6c",
+      "sourcePath": "meta.twitterTitle",
+      "sourceText": "Pursed Lip Breathing: Free Timer"
+    },
+    {
+      "currentCatalogValue": "Pare a falta de ar com a técnica de respiração freno labial aprovada por fisioterapeutas respiratórios. Timer grátis.",
+      "locale": "pt-br",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'.",
+      "replacement": "Alivie a falta de ar com a técnica de respiração com lábios franzidos aprovada por fisioterapeutas respiratórios. Timer grátis.",
+      "reviewedSourceHash": "6f6b6a7e9b5373c423b36a11c8ab54b678c8d3c7d035777afb23f9e5591bad81",
+      "sourcePath": "meta.twitterDescription",
+      "sourceText": "Stop shortness of breath with the respiratory therapist-approved technique. Free timer."
+    },
+    {
+      "currentCatalogValue": "O que é a respiração freno labial?",
+      "locale": "pt-br",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'.",
+      "replacement": "O que é a respiração com lábios franzidos?",
+      "reviewedSourceHash": "58a182883b07b97fa3a2e7d4f53da4453a584da6a632ed9b6b5c4313e6df506b",
+      "sourcePath": "body[0].heading",
+      "sourceText": "What Is Pursed Lip Breathing?"
+    },
+    {
+      "currentCatalogValue": "Respiração freno labial para DPOC e dificuldade ao respirar",
+      "locale": "pt-br",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'.",
+      "replacement": "Respiração com lábios franzidos para DPOC e falta de ar",
+      "reviewedSourceHash": "b08d1a5e511f2a66e7ce74737570283c092fd2ce52dea8b257a2afcb60957d37",
+      "sourcePath": "body[2].heading",
+      "sourceText": "Pursed Lip Breathing for COPD and Shortness of Breath"
+    },
+    {
+      "currentCatalogValue": "Por quanto tempo devo fazer a respiração freno labial?",
+      "locale": "pt-br",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'.",
+      "replacement": "Por quanto tempo devo fazer a respiração com lábios franzidos?",
+      "reviewedSourceHash": "32e30b1e44d9ce4fb88498d1af13ab90629de9950adf315b40508f653b4dd497",
+      "sourcePath": "faqs[0].question",
+      "sourceText": "How long should I do pursed lip breathing?"
+    },
+    {
+      "currentCatalogValue": "Qual é a proporção correta para a respiração freno labial?",
+      "locale": "pt-br",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'.",
+      "replacement": "Qual é a proporção correta para a respiração com lábios franzidos?",
+      "reviewedSourceHash": "d06ec45d16663ea1d038bad398718b2d30dbf3eb23befe88943296c4ff6a88a8",
+      "sourcePath": "faqs[1].question",
+      "sourceText": "What's the correct ratio for pursed lip breathing?"
+    },
+    {
+      "currentCatalogValue": "A respiração freno labial ajuda na ansiedade?",
+      "locale": "pt-br",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'.",
+      "replacement": "A respiração com lábios franzidos ajuda na ansiedade?",
+      "reviewedSourceHash": "f2413f738ca6262d2ef0d2d623f311673998bdd60cbb74ad6c7c45e67c8b16f8",
+      "sourcePath": "faqs[2].question",
+      "sourceText": "Does pursed lip breathing help with anxiety?"
+    },
+    {
+      "currentCatalogValue": "Posso usar a respiração freno labial durante o exercício?",
+      "locale": "pt-br",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'.",
+      "replacement": "Posso usar a respiração com lábios franzidos durante o exercício?",
+      "reviewedSourceHash": "a8ce87a98c74867881b7e629530a56c740a6170f1a9a9ecd7443dad11dd5f077",
+      "sourcePath": "faqs[3].question",
+      "sourceText": "Can I use pursed lip breathing during exercise?"
+    },
+    {
+      "currentCatalogValue": "A respiração freno labial é boa para DPOC?",
+      "locale": "pt-br",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'.",
+      "replacement": "A respiração com lábios franzidos é boa para DPOC?",
+      "reviewedSourceHash": "41d0fd31591b50a640a318dbeba9e3809983553d2774b4d453f5a97c43cc33f2",
+      "sourcePath": "faqs[4].question",
+      "sourceText": "Is pursed lip breathing good for COPD?"
+    },
+    {
+      "currentCatalogValue": "Qual a diferença entre a respiração freno labial e outras técnicas?",
+      "locale": "pt-br",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'.",
+      "replacement": "Qual é a diferença entre a respiração com lábios franzidos e outras técnicas?",
+      "reviewedSourceHash": "9933cf11cde547fb492513b04137bbb68c973e8ab03456b7b67ddad2ad88422d",
+      "sourcePath": "faqs[5].question",
+      "sourceText": "What's the difference between pursed lip breathing and other techniques?"
+    },
+    {
+      "currentCatalogValue": "Domine primeiro a respiração diafragmática. Ela é a base para a respiração freno labial e todas as técnicas respiratórias.",
+      "locale": "pt-br",
+      "reason": "The approved Brazilian Portuguese value uses the Spanish term 'freno labial'.",
+      "replacement": "Domine primeiro a respiração diafragmática. Ela é a base da respiração com lábios franzidos e de todas as técnicas respiratórias.",
+      "reviewedSourceHash": "75dd2ba162891f538f445d54aea66fd5b7c0fb757bb23cb57b0dd87e80337184",
+      "sourcePath": "related[0].reason",
+      "sourceText": "Master diaphragmatic breathing first. It's the foundation for pursed-lip and all breathing techniques."
+    },
+    {
+      "currentCatalogValue": "Técnica de respiração freno labial - American Lung Association",
+      "locale": "pt-br",
+      "reason": "The approved Brazilian Portuguese candidate uses the Spanish term 'freno labial'; another approved candidate already uses the faithful Portuguese term.",
+      "replacement": "Técnica de respiração com lábios franzidos - American Lung Association",
+      "reviewedSourceHash": "cfaacec6ec24ea3fc0110c5d2f97b8ffb4ec09e07e2e5dfc08a0e2605e1c4232",
+      "sourcePath": "video.title",
+      "sourceText": "Pursed Lip Breathing Technique - American Lung Association"
+    },
+    {
+      "currentCatalogValue": "息がくるくる回るのを感じたら、すぐに中止してください。",
+      "locale": "ja-jp",
+      "reason": "The approved safety text is nonsensical and does not communicate dizziness or faintness.",
+      "replacement": "めまいや失神しそうな感覚がある場合は中止してください。",
+      "reviewedSourceHash": "4d39c351dd0d6aa293684bc301d66e77e1bd7d621a0efd9366d7b1421888d7d7",
+      "sourcePath": "research.safety[0]",
+      "sourceText": "Stop if you feel dizzy or faint."
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/breathe/pursed-lip"
+}

@@ -1,0 +1,100 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.use-case.box-breathing-name",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f",
+      "scope": "chrome",
+      "sourceText": "Physiological Sigh",
+      "translations": {
+        "de-de": "Physiologischer Seufzer",
+        "fr-fr": "Soupir physiologique",
+        "ja-jp": "フィジオロジカル・サイ"
+      }
+    },
+    {
+      "messageId": "chrome.use-case.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "d23a7e015a8c6a4b8b3c08604d2595e688a95959bf110126ce15520998508862",
+      "scope": "chrome",
+      "sourceText": "Try this guided breathing exercise for how to stop a panic attack in 30 seconds.",
+      "translations": {
+        "de-de": "Probiere diese geführte Atemübung, um eine Panikattacke in 30 Sekunden zu stoppen.",
+        "es-es": "Prueba este ejercicio de respiración guiada para detener un ataque de pánico en 30 segundos.",
+        "fr-fr": "Essayez cet exercice de respiration guidée pour arrêter une crise de panique en 30 secondes.",
+        "ja-jp": "パニック発作を30秒で止めるための、このガイド付き呼吸エクササイズを試してみましょう。",
+        "pt-br": "Experimente este exercício de respiração guiada para interromper um ataque de pânico em 30 segundos."
+      }
+    },
+    {
+      "messageId": "chrome.use-case.learn-box-breathing",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "fd75a0c1418a75fb7860da61b872c9881106748e5beac6d999f31ad4b09d2a60",
+      "scope": "chrome",
+      "sourceText": "Learn more about Physiological Sigh →",
+      "translations": {
+        "de-de": "Mehr über den Physiologischen Seufzer erfahren →",
+        "es-es": "Más información sobre el suspiro fisiológico →",
+        "fr-fr": "En savoir plus sur le soupir physiologique →",
+        "ja-jp": "フィジオロジカル・サイについて詳しく見る →",
+        "pt-br": "Saiba mais sobre o suspiro fisiológico →"
+      }
+    },
+    {
+      "messageId": "problem.content",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "34918793b44b846c04abe6211ae19b6ef3ce15c4fccc76bdce6e11e7a04ad6fb",
+      "scope": "content",
+      "sourceText": "A panic attack is your body's alarm system firing at maximum intensity, even though there's no actual danger. Your amygdala (fear center) floods your system with adrenaline, [your breathing becomes rapid and shallow (hyperventilation), and you blow off too much CO₂](https://doi.org/10.1037/a0019552). Low CO₂ causes blood vessels to constrict, making you feel dizzy, tingly, and short of breath, which makes you panic MORE, creating a vicious spiral.",
+      "translations": {
+        "de-de": "Eine Panikattacke ist das Alarmsystem deines Körpers, das mit maximaler Intensität auslöst, obwohl keine tatsächliche Gefahr besteht. Deine Amygdala (Angstzentrum) überschwemmt dein System mit Adrenalin, [deine Atmung wird schnell und flach (Hyperventilation), und du stößt zu viel CO₂ aus](https://doi.org/10.1037/a0019552). Niedriges CO₂ lässt die Blutgefäße sich verengen, wodurch du dich schwindelig, kribbelig und kurzatmig fühlst, was dich NOCH MEHR in Panik versetzt und eine Teufelsspirale erzeugt.",
+        "es-es": "Un ataque de pánico es el sistema de alarma de tu cuerpo disparándose a máxima intensidad, aunque no haya un peligro real. Tu amígdala (centro del miedo) inunda tu sistema de adrenalina, [tu respiración se vuelve rápida y superficial (hiperventilación) y eliminas demasiado CO₂](https://doi.org/10.1037/a0019552). El CO₂ bajo hace que los vasos sanguíneos se contraigan, lo que te provoca mareo, hormigueo y falta de aire, lo que te hace entrar en pánico AÚN MÁS y crea una espiral viciosa.",
+        "fr-fr": "Une crise de panique, c'est le système d'alarme de votre corps qui se déclenche à intensité maximale, même s'il n'y a pas de danger réel. Votre amygdale (centre de la peur) inonde votre système d'adrénaline, [votre respiration devient rapide et superficielle (hyperventilation) et vous éliminez trop de CO₂](https://doi.org/10.1037/a0019552). Un faible taux de CO₂ provoque une constriction des vaisseaux sanguins, ce qui vous donne des vertiges, des picotements et un essoufflement, ce qui vous fait paniquer ENCORE PLUS et crée une spirale vicieuse.",
+        "ja-jp": "パニック発作とは、実際の危険がないのに、体の警報システムが最大強度で作動することです。扁桃体（恐怖中枢）がアドレナリンであなたの体を満たし、[呼吸が速く浅くなり（過呼吸）、CO₂を出しすぎます](https://doi.org/10.1037/a0019552)。CO₂が低いと血管が収縮し、めまい、しびれ、息切れを感じさせ、それがさらにパニックを強め、悪循環を生みます。",
+        "pt-br": "Um ataque de pânico é o sistema de alarme do seu corpo disparando na intensidade máxima, mesmo sem perigo real. Sua amígdala (centro do medo) inunda seu sistema com adrenalina, [sua respiração fica rápida e superficial (hiperventilação) e você elimina CO₂ demais](https://doi.org/10.1037/a0019552). O CO₂ baixo faz os vasos sanguíneos se contraírem, o que causa tontura, formigamento e falta de ar, o que te faz entrar em pânico AINDA MAIS e cria uma espiral viciosa."
+      }
+    },
+    {
+      "messageId": "relatedGuides[0].teaser",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "7fb303d01c5f017c7b780821b2f0c08496c294575f3dd5d731f978d93e431950",
+      "scope": "content",
+      "sourceText": "A Stanford-backed emergency protocol for stopping a panic attack in 30 seconds using the double-inhale exhale technique",
+      "translations": {
+        "de-de": "Ein von Stanford gestütztes Notfallprotokoll, um eine Panikattacke in 30 Sekunden mit der Doppel-Einatmung-Ausatmung-Technik zu stoppen",
+        "es-es": "Un protocolo de emergencia respaldado por Stanford para detener un ataque de pánico en 30 segundos con la técnica de doble inhalación y exhalación",
+        "fr-fr": "Un protocole d'urgence soutenu par Stanford pour arrêter une crise de panique en 30 secondes avec la technique double inspiration-expiration",
+        "ja-jp": "ダブル吸気・呼気テクニックを使い、パニック発作を30秒で止めるスタンフォード支持の緊急プロトコル",
+        "pt-br": "Um protocolo de emergência com respaldo de Stanford para interromper um ataque de pânico em 30 segundos usando a técnica de dupla inspiração e expiração"
+      }
+    },
+    {
+      "messageId": "relatedGuides[0].title",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "63f9a125a08f4dc4f31790eb5f489b95cf0434c813011ebe9b0e3da889718a94",
+      "scope": "content",
+      "sourceText": "Physiological Sigh for Panic Attacks",
+      "translations": {
+        "de-de": "Physiologischer Seufzer bei Panikattacken",
+        "ja-jp": "パニック発作のためのフィジオロジカル・サイ",
+        "pt-br": "Suspiro fisiológico para ataques de pânico"
+      }
+    },
+    {
+      "messageId": "relatedTechnique.callToAction",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "a1bd9a1897ba81c5721139b3ef4b604d736c9edc1ac32463d6f25122076d0209",
+      "scope": "content",
+      "sourceText": "Learn the full physiological sigh technique with research, tips, and guided timer",
+      "translations": {
+        "de-de": "Lerne die vollständige Technik des physiologischen Seufzers mit Forschung, Tipps und geführtem Timer",
+        "es-es": "Aprende la técnica completa del suspiro fisiológico con investigación, consejos y temporizador guiado",
+        "fr-fr": "Apprenez la technique complète du soupir physiologique avec recherches, conseils et minuteur guidé",
+        "ja-jp": "研究、ヒント、ガイド付きタイマー付きで、フィジオロジカル・サイの完全なテクニックを学ぶ",
+        "pt-br": "Aprenda a técnica completa do suspiro fisiológico com pesquisas, dicas e timer guiado"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/panic-attacks"
+}

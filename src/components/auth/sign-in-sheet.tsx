@@ -16,6 +16,11 @@ function trackEvent(name: string, params?: Record<string, string | number | bool
   }
 }
 
+function getAuthCallbackURL() {
+  if (typeof window === "undefined") return "/";
+  return `${window.location.pathname}${window.location.search}`;
+}
+
 interface SignInSheetProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
@@ -23,6 +28,7 @@ interface SignInSheetProps {
   headline?: string;
   subtitle?: string;
   totalMinutes?: number;
+  locale?: string;
 }
 
 export function SignInSheet({
@@ -32,14 +38,15 @@ export function SignInSheet({
   headline,
   subtitle,
   totalMinutes,
+  locale: explicitLocale,
 }: SignInSheetProps) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
-  const [locale, setLocale] = useState("en");
+  const [locale, setLocale] = useState(() => explicitLocale ?? "en");
 
   useEffect(() => {
-    setLocale(detectRuntimeLocale());
-  }, [open]);
+    setLocale(explicitLocale ?? detectRuntimeLocale());
+  }, [explicitLocale, open]);
 
   const phrases = useMemo(() => createRuntimePhraseResolver(locale), [locale]);
   const t = (key: RuntimePhraseKey, vars?: Record<string, string | number>) =>
@@ -55,7 +62,7 @@ export function SignInSheet({
     setStatus("sending");
     trackEvent("signin_magic_link_sent", {});
     try {
-      await signIn.magicLink({ email, callbackURL: "/" });
+      await signIn.magicLink({ email, callbackURL: getAuthCallbackURL() });
       setStatus("sent");
       onSuccess?.();
     } catch {
@@ -66,10 +73,20 @@ export function SignInSheet({
   const handleGoogle = async () => {
     trackEvent("signin_google_clicked", {});
     try {
-      await signIn.social({ provider: "google", callbackURL: "/" });
+      await signIn.social({ provider: "google", callbackURL: getAuthCallbackURL() });
       onSuccess?.();
     } catch {
       // Google OAuth redirects — errors are rare here
+    }
+  };
+
+  const handleApple = async () => {
+    trackEvent("signin_apple_clicked", {});
+    try {
+      await signIn.social({ provider: "apple", callbackURL: getAuthCallbackURL() });
+      onSuccess?.();
+    } catch {
+      // Apple OAuth redirects — errors are shown by the callback.
     }
   };
 
@@ -97,6 +114,7 @@ export function SignInSheet({
             </div>
             <button
               onClick={handleClose}
+              aria-label={t("ui.dismiss")}
               className="rounded-full p-1.5 text-muted-foreground transition-colors hover:bg-card hover:text-card-foreground"
             >
               <X size={18} />
@@ -129,6 +147,13 @@ export function SignInSheet({
             </div>
           ) : (
             <div className="space-y-3">
+              <button
+                onClick={handleApple}
+                className="flex w-full items-center justify-center gap-2.5 rounded-xl bg-black px-4 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-black/85 dark:bg-white dark:text-black dark:hover:bg-white/90"
+              >
+                <span className="text-xl leading-none" aria-hidden="true"></span>
+                {t("auth.continue_apple")}
+              </button>
               <button
                 onClick={handleGoogle}
                 className="flex w-full items-center justify-center gap-2.5 rounded-xl border border-border/60 bg-card px-4 py-3 text-sm font-medium text-card-foreground shadow-sm transition-colors hover:bg-card/80 dark:border-border/40"

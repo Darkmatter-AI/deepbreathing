@@ -1,0 +1,612 @@
+{
+  "locales": [
+    "de-de",
+    "es-es",
+    "fr-fr",
+    "ja-jp",
+    "pt-br"
+  ],
+  "routes": [
+    {
+      "messages": [
+        {
+          "messageId": "breathe.buteyko.meta.title",
+          "reason": "catalog_source_miss",
+          "sourcePath": "meta.title",
+          "translations": {
+            "de-de": "Buteyko-Atemmethode: Übungen zur Nasenatmung für die Gesundheit der Atemwege",
+            "es-es": "Método de respiración Buteyko: ejercicios de respiración nasal para la salud respiratoria",
+            "fr-fr": "Méthode respiratoire Buteyko : exercices de respiration nasale pour la santé respiratoire",
+            "ja-jp": "ブテイコ呼吸法：呼吸器の健康のための鼻呼吸エクササイズ",
+            "pt-br": "Método de Respiração Buteyko: Exercícios de Respiração Nasal para a Saúde Respiratória"
+          }
+        },
+        {
+          "messageId": "breathe.buteyko.meta.description",
+          "reason": "catalog_source_miss",
+          "sourcePath": "meta.description",
+          "translations": {
+            "de-de": "Kostenloser Buteyko-Atemtimer: leichte Nasenatmung bei Asthma und für die Gesundheit der Atemwege. Mit Anleitung zur Kontrollpause. Starten Sie jetzt Ihre Sitzung.",
+            "es-es": "Temporizador gratuito de respiración Buteyko: respiración nasal ligera para el asma y la salud respiratoria. Incluye una guía de la Pausa de Control. Empieza tu sesión ahora.",
+            "fr-fr": "Minuteur de respiration Buteyko gratuit : respiration nasale légère pour l’asthme et la santé respiratoire. Guide de la Pause de Contrôle inclus. Commencez votre séance maintenant.",
+            "ja-jp": "無料のブテイコ呼吸タイマー：喘息と呼吸器の健康のための軽い鼻呼吸。コントロール・ポーズのガイド付き。今すぐセッションを始めましょう。",
+            "pt-br": "Temporizador gratuito de respiração Buteyko: respiração nasal leve para asma e saúde respiratória. Inclui um guia da Pausa de Controle. Comece sua sessão agora."
+          }
+        },
+        {
+          "messageId": "breathe.buteyko.body.what-it-is.content",
+          "reason": "catalog_source_miss",
+          "sourcePath": "body[0].content",
+          "translations": {
+            "de-de": "Die Buteyko-Methode trainiert Sie darin, weniger statt mehr zu atmen. Durch leichtere, ruhigere Atemzüge durch die Nase kann sich der Kohlendioxidspiegel (CO₂) normalisieren. Der Buteyko-Theorie zufolge verringert chronisches Überatmen (Hyperventilation) den CO₂-Spiegel, wodurch Sauerstoff tatsächlich schwerer in das Gewebe gelangt (Bohr-Effekt). Der Rhythmus beträgt 3 Sekunden einatmen, 3 Sekunden ausatmen und 3 Sekunden Pause.",
+            "es-es": "El método Buteyko te entrena para respirar menos, no más. Al respirar de forma más ligera y silenciosa por la nariz, permites que los niveles de dióxido de carbono (CO₂) se normalicen. La teoría de Buteyko propone que la respiración excesiva crónica (hiperventilación) reduce el CO₂, lo que en realidad dificulta que el oxígeno llegue a los tejidos (el efecto Bohr). El ritmo es de 3 segundos al inhalar, 3 segundos al exhalar y una pausa de 3 segundos.",
+            "fr-fr": "La méthode Buteyko vous apprend à respirer moins, et non davantage. En adoptant une respiration nasale plus légère et plus silencieuse, vous permettez au taux de dioxyde de carbone (CO₂) de se normaliser. La théorie Buteyko avance que l’hyperrespiration chronique (hyperventilation) réduit le CO₂, ce qui rend en réalité plus difficile l’acheminement de l’oxygène vers les tissus (effet Bohr). Le rythme est de 3 secondes d’inspiration, 3 secondes d’expiration et une pause de 3 secondes.",
+            "ja-jp": "ブテイコ呼吸法は、呼吸を増やすのではなく減らすことを身につける方法です。より軽く静かに鼻から呼吸することで、二酸化炭素（CO₂）濃度の正常化を促します。ブテイコ理論では、慢性的な過剰呼吸（過換気）によってCO₂が減少し、その結果、実際には酸素が組織に届きにくくなる（ボーア効果）と考えられています。リズムは3秒吸い、3秒吐き、3秒休止です。",
+            "pt-br": "O método Buteyko ensina você a respirar menos, não mais. Ao respirar de forma mais leve e silenciosa pelo nariz, você permite que os níveis de dióxido de carbono (CO₂) se normalizem. A teoria de Buteyko propõe que a respiração excessiva crônica (hiperventilação) reduz o CO₂, o que, na verdade, dificulta a chegada do oxigênio aos tecidos (efeito Bohr). O ritmo é de 3 segundos inspirando, 3 segundos expirando e uma pausa de 3 segundos."
+          }
+        },
+        {
+          "messageId": "breathe.buteyko.body.benefits.content",
+          "reason": "catalog_source_miss",
+          "sourcePath": "body[2].content",
+          "translations": {
+            "de-de": "[Studien zeigen, dass Buteyko-Training Asthmasymptome und den Medikamentenbedarf verringern kann, obwohl es die Messwerte der Lungenfunktion nicht verbessert](https://doi.org/10.1002/14651858.CD001277.pub4). Die Methode betont die Nasenatmung, die die Luft filtert, erwärmt und befeuchtet und dabei Stickstoffmonoxid produziert. Viele Anwender berichten von besserem Schlaf, weniger Angst und einer verbesserten Belastbarkeit.",
+            "es-es": "[Los estudios muestran que el entrenamiento Buteyko puede reducir los síntomas del asma y el uso de medicación, aunque no mejora las mediciones de la función pulmonar](https://doi.org/10.1002/14651858.CD001277.pub4). El método pone énfasis en la respiración nasal, que filtra, calienta y humidifica el aire, además de producir óxido nítrico. Muchas personas que lo practican informan de un mejor sueño, menos ansiedad y una mayor tolerancia al ejercicio.",
+            "fr-fr": "[Des études montrent que l’entraînement Buteyko peut réduire les symptômes de l’asthme et le recours aux médicaments, bien qu’il n’améliore pas les mesures de la fonction pulmonaire](https://doi.org/10.1002/14651858.CD001277.pub4). La méthode privilégie la respiration nasale, qui filtre, réchauffe et humidifie l’air tout en produisant du monoxyde d’azote. De nombreux pratiquants font état d’un meilleur sommeil, d’une diminution de l’anxiété et d’une meilleure tolérance à l’effort.",
+            "ja-jp": "[研究では、ブテイコ・トレーニングによって喘息の症状や薬の使用を減らせる可能性がある一方、肺機能の測定値は改善しないことが示されています](https://doi.org/10.1002/14651858.CD001277.pub4)。この方法では鼻呼吸を重視します。鼻呼吸は空気をろ過し、温め、加湿するとともに、一酸化窒素を生成します。実践者の多くが、睡眠の改善、不安の軽減、運動耐容能の向上を報告しています。",
+            "pt-br": "[Estudos mostram que o treinamento Buteyko pode reduzir os sintomas da asma e o uso de medicamentos, embora não melhore as medições da função pulmonar](https://doi.org/10.1002/14651858.CD001277.pub4). O método enfatiza a respiração nasal, que filtra, aquece e umidifica o ar, além de produzir óxido nítrico. Muitos praticantes relatam melhora do sono, redução da ansiedade e maior tolerância ao exercício."
+          }
+        },
+        {
+          "messageId": "breathe.buteyko.body.when-to-use.content",
+          "reason": "catalog_source_miss",
+          "sourcePath": "body[3].content",
+          "translations": {
+            "de-de": "Für Menschen mit Asthma, chronischem Überatmen oder der Gewohnheit, durch den Mund zu atmen. Auch für Sportler geeignet, die ihre Atemeffizienz verbessern möchten. Üben Sie über den Tag verteilt: Buteyko ist ebenso eine Veränderung des Lebensstils wie eine Technik.",
+            "es-es": "Para personas con asma, respiración excesiva crónica o el hábito de respirar por la boca. También es útil para deportistas que quieren mejorar la eficiencia respiratoria. Practícalo a lo largo del día: Buteyko es tanto un cambio de estilo de vida como una técnica.",
+            "fr-fr": "Pour les personnes souffrant d’asthme ou d’hyperrespiration chronique, ou ayant l’habitude de respirer par la bouche. La méthode est également utile aux sportifs qui souhaitent améliorer leur efficacité respiratoire. Pratiquez-la tout au long de la journée : Buteyko est autant un changement de mode de vie qu’une technique.",
+            "ja-jp": "喘息、慢性的な過剰呼吸、口呼吸の習慣がある方に適しています。呼吸効率を高めたいアスリートにも役立ちます。一日を通して実践してください。ブテイコは単なる技法ではなく、生活習慣を変える取り組みでもあります。",
+            "pt-br": "Para pessoas com asma, respiração excessiva crônica ou o hábito de respirar pela boca. Também é útil para atletas que desejam melhorar a eficiência respiratória. Pratique ao longo do dia: o Buteyko é tanto uma mudança de estilo de vida quanto uma técnica."
+          }
+        },
+        {
+          "messageId": "breathe.buteyko.body.versus-deep-breathing.content",
+          "reason": "catalog_source_miss",
+          "sourcePath": "body[5].content",
+          "translations": {
+            "de-de": "Buteyko und traditionelle Tiefenatmungsübungen verfolgen entgegengesetzte Ansätze. Tiefes Atmen, etwa bei der 4-7-8- oder Bauchatmung, betont volle, langsame Atemzüge, um die Entspannungsreaktion zu aktivieren, und eignet sich gut zur akuten Stresslinderung. Buteyko lehrt dagegen leichteres, reduziertes Atmen, um den Kohlendioxidspiegel mit der Zeit zu normalisieren. Tiefes Atmen sagt: „Atmen Sie mehr und langsamer.“ Buteyko sagt: „Atmen Sie weniger und leichter.“ Beide Ansätze sind wissenschaftlich belegt. Nutzen Sie tiefes Atmen für sofortige Ruhe; nutzen Sie Buteyko, wenn Sie an chronischen Überatmungsmustern, dem Umgang mit Asthma oder Ihrer langfristigen CO₂-Toleranz arbeiten.",
+            "es-es": "Buteyko y los ejercicios tradicionales de respiración profunda representan enfoques opuestos. La respiración profunda (como la 4-7-8 o la respiración abdominal) pone énfasis en respiraciones completas y lentas para activar la respuesta de relajación, por lo que resulta muy útil para aliviar el estrés agudo. Buteyko, en cambio, enseña una respiración más ligera y reducida para normalizar los niveles de dióxido de carbono con el tiempo. La respiración profunda dice: «respira más, respira más despacio». Buteyko dice: «respira menos, respira más ligero». Ambos enfoques cuentan con evidencia. Usa la respiración profunda para calmarte de inmediato; usa Buteyko si estás trabajando patrones de respiración excesiva crónica, el manejo del asma o el desarrollo de tolerancia al CO₂ a largo plazo.",
+            "fr-fr": "Buteyko et les exercices traditionnels de respiration profonde représentent des approches opposées. La respiration profonde, comme la respiration 4-7-8 ou abdominale, privilégie des respirations amples et lentes pour activer la réponse de relaxation, ce qui est idéal pour soulager un stress aigu. Buteyko enseigne au contraire une respiration plus légère et réduite afin de normaliser progressivement le taux de dioxyde de carbone. La respiration profonde dit : « respirez davantage, respirez plus lentement ». Buteyko dit : « respirez moins, respirez plus légèrement ». Les deux approches reposent sur des données probantes. Utilisez la respiration profonde pour retrouver un calme immédiat ; utilisez Buteyko si vous travaillez sur des schémas d’hyperrespiration chronique, la gestion de l’asthme ou le développement d’une tolérance durable au CO₂.",
+            "ja-jp": "ブテイコ呼吸法と従来の深呼吸エクササイズは、対照的なアプローチです。4-7-8呼吸法や腹式呼吸などの深呼吸は、ゆっくりと大きく呼吸してリラックス反応を活性化するため、急なストレスの緩和に適しています。一方、ブテイコは、時間をかけて二酸化炭素濃度を正常化するために、より軽く呼吸量を抑える方法を教えます。深呼吸は「もっと、ゆっくり呼吸する」、ブテイコは「少なく、軽く呼吸する」という考え方です。どちらにも根拠があります。すぐに落ち着きたいときは深呼吸を、慢性的な過剰呼吸の改善、喘息の管理、長期的なCO₂耐性の向上に取り組む場合はブテイコを活用してください。",
+            "pt-br": "O Buteyko e os exercícios tradicionais de respiração profunda representam abordagens opostas. A respiração profunda, como a técnica 4-7-8 ou a respiração abdominal, enfatiza respirações completas e lentas para ativar a resposta de relaxamento, sendo ótima para aliviar o estresse agudo. Já o Buteyko ensina uma respiração mais leve e reduzida para normalizar os níveis de dióxido de carbono ao longo do tempo. A respiração profunda diz: “respire mais, respire mais devagar”. O Buteyko diz: “respire menos, respire mais leve”. As duas abordagens têm evidências a seu favor. Use a respiração profunda para se acalmar imediatamente; use o Buteyko se estiver trabalhando padrões de respiração excessiva crônica, o manejo da asma ou o desenvolvimento de tolerância ao CO₂ a longo prazo."
+          }
+        },
+        {
+          "messageId": "breathe.buteyko.practice-tips.light-is-right.description",
+          "reason": "catalog_source_miss",
+          "sourcePath": "practiceTips[1].description",
+          "translations": {
+            "de-de": "Die Atemzüge sollten ruhig und klein sein: Brustkorb oder Bauch sollten sich kaum sichtbar bewegen. Keine großen, tiefen Atemzüge.",
+            "es-es": "Las respiraciones deben ser silenciosas y pequeñas: apenas deberías ver moverse el pecho o el abdomen. Evita las respiraciones grandes y profundas.",
+            "fr-fr": "Les respirations doivent être silencieuses et légères : votre poitrine ou votre ventre doivent à peine bouger. Évitez les grandes respirations profondes.",
+            "ja-jp": "静かに小さく呼吸してください。胸やお腹の動きがほとんど見えない程度が目安です。大きな深呼吸はしないでください。",
+            "pt-br": "As respirações devem ser silenciosas e pequenas: você quase não deve ver o peito ou a barriga se mover. Evite respirações grandes e profundas."
+          }
+        },
+        {
+          "messageId": "breathe.buteyko.faqs.asthma-cure.answer",
+          "reason": "catalog_source_miss",
+          "sourcePath": "faqs[0].answer",
+          "translations": {
+            "de-de": "Nein. Buteyko heilt Asthma nicht und verbessert auch nicht die gemessene Lungenfunktion. Mehrere randomisierte kontrollierte Studien zeigen jedoch, dass die Methode Asthmasymptome lindern, die Lebensqualität verbessern und den Einsatz von Bedarfsmedikamenten (Notfallsprays) verringern kann. Sie sollte ergänzend zur medizinischen Behandlung eingesetzt werden, nicht an deren Stelle. Befolgen Sie stets die Anweisungen Ihres Arztes.",
+            "es-es": "No. Buteyko no cura el asma ni mejora la función pulmonar medida. Sin embargo, varios ensayos controlados aleatorizados muestran que puede reducir los síntomas del asma, mejorar la calidad de vida y disminuir el uso de medicación de alivio (inhalador de rescate). Debe utilizarse junto con el tratamiento médico, no en su lugar. Sigue siempre las indicaciones de tu médico.",
+            "fr-fr": "Non. Buteyko ne guérit pas l’asthme et n’améliore pas la fonction pulmonaire mesurée. Toutefois, plusieurs essais contrôlés randomisés montrent que la méthode peut réduire les symptômes de l’asthme, améliorer la qualité de vie et diminuer le recours aux médicaments de soulagement (inhalateur de secours). Elle doit être utilisée en complément du traitement médical, et non à sa place. Suivez toujours les recommandations de votre médecin.",
+            "ja-jp": "いいえ。ブテイコ呼吸法は喘息を治すものではなく、測定上の肺機能を改善するものでもありません。ただし、複数のランダム化比較試験で、喘息症状の軽減、生活の質の改善、症状緩和薬（救急用吸入器）の使用減少に役立つ可能性が示されています。医療上の治療に代えてではなく、治療と併用してください。必ず医師の指示に従ってください。",
+            "pt-br": "Não. O Buteyko não cura a asma nem melhora a função pulmonar medida. No entanto, vários ensaios clínicos randomizados e controlados mostram que ele pode reduzir os sintomas da asma, melhorar a qualidade de vida e diminuir o uso de medicação de alívio (inalador de resgate). Deve ser usado em conjunto com o tratamento médico, não no lugar dele. Siga sempre as orientações do seu médico."
+          }
+        },
+        {
+          "messageId": "breathe.buteyko.faqs.control-pause.answer",
+          "reason": "catalog_source_miss",
+          "sourcePath": "faqs[1].answer",
+          "translations": {
+            "de-de": "Die Kontrollpause (KP) misst Ihre Toleranz gegenüber Kohlendioxid. Messen Sie nach einem normalen, nicht forcierten Ausatmen, wie lange es dauert, bis Sie den ersten deutlichen Atemreiz verspüren. Eine gesunde KP liegt bei mindestens 40 Sekunden; unter 20 Sekunden deutet auf Überatmungsmuster hin. Die Buteyko-Praxis soll Ihre KP schrittweise erhöhen. Beenden Sie die Messung immer beim ersten Atemreiz. Dies ist kein Wettbewerb im Luftanhalten.",
+            "es-es": "La Pausa de Control (PC) mide tu tolerancia al dióxido de carbono. Tras una exhalación normal, sin forzarla, cronometra cuánto tardas en sentir la primera necesidad clara de respirar. Una PC saludable es de más de 40 segundos; menos de 20 segundos sugiere patrones de respiración excesiva. La práctica de Buteyko busca aumentar gradualmente tu PC. Detente siempre al sentir la primera necesidad de respirar. No es una competición para ver quién aguanta más la respiración.",
+            "fr-fr": "La Pause de Contrôle (PC) mesure votre tolérance au dioxyde de carbone. Après une expiration normale, sans forcer, chronométrez le délai avant de ressentir la première envie nette de respirer. Une PC saine est de 40 secondes ou plus ; moins de 20 secondes suggère des schémas d’hyperrespiration. La pratique Buteyko vise à augmenter progressivement votre PC. Arrêtez-vous toujours à la première envie de respirer. Il ne s’agit pas d’un concours d’apnée.",
+            "ja-jp": "コントロール・ポーズ（CP）は、二酸化炭素に対する耐性を測る指標です。無理のない通常の呼気の後、初めてはっきりと息を吸いたいと感じるまでの時間を測ります。健康的なCPは40秒以上とされ、20秒未満の場合は過剰呼吸の傾向が示唆されます。ブテイコの実践では、CPを徐々に延ばすことを目指します。最初に息を吸いたいと感じた時点で必ず止めてください。息止めの長さを競うものではありません。",
+            "pt-br": "A Pausa de Controle (PC) mede sua tolerância ao dióxido de carbono. Após uma expiração normal, sem forçar, cronometre quanto tempo leva até sentir a primeira vontade clara de respirar. Uma PC saudável é de 40 segundos ou mais; menos de 20 segundos sugere padrões de respiração excessiva. A prática Buteyko busca aumentar gradualmente sua PC. Pare sempre na primeira vontade de respirar. Isto não é uma competição para ver quem prende a respiração por mais tempo."
+          }
+        },
+        {
+          "messageId": "breathe.buteyko.faqs.mouth-taping-safety.answer",
+          "reason": "catalog_source_miss",
+          "sourcePath": "faqs[4].answer",
+          "translations": {
+            "de-de": "Das Zukleben des Mundes mit Tape ist eine Buteyko-Praxis, die während des Schlafs die Nasenatmung fördern soll. Für gesunde Erwachsene gilt dies im Allgemeinen als sicher. Sprechen Sie jedoch zuerst mit Ihrem Arzt, besonders wenn Sie eine verstopfte Nase, Schlafapnoe oder Atembeschwerden haben. Verwenden Sie hautverträgliches medizinisches Klebeband und testen Sie Ihre Verträglichkeit zunächst einige Stunden im Wachzustand.",
+            "es-es": "Taparse la boca con cinta es una práctica de Buteyko destinada a fomentar la respiración nasal durante el sueño. Por lo general es segura para adultos sanos, pero consulta primero a tu médico, especialmente si tienes obstrucción nasal, apnea del sueño o dificultades respiratorias. Usa cinta de grado médico diseñada para la piel y empieza probándola durante unas horas mientras estás despierto para comprobar tu tolerancia.",
+            "fr-fr": "Se couvrir la bouche avec un ruban adhésif est une pratique Buteyko destinée à favoriser la respiration nasale pendant le sommeil. Elle est généralement sans danger pour les adultes en bonne santé, mais consultez d’abord votre médecin, surtout si vous souffrez d’une obstruction nasale, d’apnée du sommeil ou de difficultés respiratoires. Utilisez un ruban adhésif de qualité médicale conçu pour la peau et commencez par le tester quelques heures pendant que vous êtes éveillé afin d’évaluer votre tolérance.",
+            "ja-jp": "口にテープを貼るのは、睡眠中の鼻呼吸を促すためのブテイコの実践法です。健康な成人には一般に安全とされていますが、まず医師に相談してください。特に、鼻づまり、睡眠時無呼吸症候群、呼吸困難がある場合は必ず相談が必要です。皮膚用の医療用テープを使用し、最初は起きている間に数時間だけ試して、耐えられるか確認してください。",
+            "pt-br": "Tapar a boca com fita é uma prática do Buteyko para incentivar a respiração nasal durante o sono. Em geral, é segura para adultos saudáveis, mas consulte seu médico primeiro, especialmente se você tiver obstrução nasal, apneia do sono ou dificuldades respiratórias. Use fita de grau médico própria para a pele e comece testando por apenas algumas horas enquanto estiver acordado para avaliar sua tolerância."
+          }
+        },
+        {
+          "messageId": "breathe.buteyko.faqs.results-timeline.answer",
+          "reason": "catalog_source_miss",
+          "sourcePath": "faqs[5].answer",
+          "translations": {
+            "de-de": "Die meisten Menschen bemerken nach 1-2 Wochen konsequenter Praxis (2-3 Sitzungen täglich) erste Veränderungen. Deutliche Verbesserungen der Kontrollpause und eine Linderung der Symptome benötigen in der Regel 4-8 Wochen. Buteyko ist eine Fähigkeit, die sich schrittweise entwickelt; Eile oder Anstrengung wirken kontraproduktiv.",
+            "es-es": "La mayoría de las personas nota algunos cambios tras 1-2 semanas de práctica constante (2-3 sesiones al día). Las mejoras significativas en la Pausa de Control y la reducción de los síntomas suelen tardar entre 4 y 8 semanas. Buteyko es una habilidad que se desarrolla de forma gradual; apresurarse o forzar la respiración resulta contraproducente.",
+            "fr-fr": "La plupart des personnes remarquent certains changements après 1 à 2 semaines de pratique régulière (2 à 3 séances par jour). Une amélioration significative de la Pause de Contrôle et une diminution des symptômes prennent généralement 4 à 8 semaines. Buteyko est une compétence qui s’acquiert progressivement ; se précipiter ou forcer est contre-productif.",
+            "ja-jp": "多くの方は、継続して毎日2～3回実践すると、1～2週間で何らかの変化に気づきます。コントロール・ポーズの大幅な改善や症状の軽減には、通常4～8週間かかります。ブテイコは徐々に身につく技術です。急いだり無理をしたりすると逆効果です。",
+            "pt-br": "A maioria das pessoas percebe algumas mudanças após 1 a 2 semanas de prática consistente (2 a 3 sessões por dia). Melhoras significativas na Pausa de Controle e a redução dos sintomas geralmente levam de 4 a 8 semanas. O Buteyko é uma habilidade que se desenvolve aos poucos; apressar ou forçar a prática é contraproducente."
+          }
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.tools.comfortable-seated-position",
+          "reason": "catalog_source_miss",
+          "sourcePath": "howTo.tools[0]",
+          "translations": {
+            "de-de": "Bequeme Sitzposition",
+            "es-es": "Una posición sentada cómoda",
+            "fr-fr": "Une position assise confortable",
+            "ja-jp": "快適な座位",
+            "pt-br": "Uma posição sentada confortável"
+          }
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.tools.control-pause-timer",
+          "reason": "catalog_source_miss",
+          "sourcePath": "howTo.tools[1]",
+          "translations": {
+            "de-de": "Timer zur Messung der Kontrollpause",
+            "es-es": "Temporizador para medir la Pausa de Control",
+            "fr-fr": "Un minuteur pour mesurer la Pause de Contrôle",
+            "ja-jp": "コントロール・ポーズ測定用タイマー",
+            "pt-br": "Temporizador para medir a Pausa de Controle"
+          }
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.tools.visualizer",
+          "reason": "catalog_source_miss",
+          "sourcePath": "howTo.tools[2]",
+          "translations": {
+            "de-de": "Visualisierung auf dem Bildschirm (optional)",
+            "es-es": "Visualizador en pantalla (opcional)",
+            "fr-fr": "Un visualiseur à l’écran (facultatif)",
+            "ja-jp": "画面上のビジュアライザー（任意）",
+            "pt-br": "Visualizador na tela (opcional)"
+          }
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.steps.sit-upright.instruction",
+          "reason": "catalog_source_miss",
+          "sourcePath": "howTo.steps[0].instruction",
+          "translations": {
+            "de-de": "Setzen Sie sich bequem und mit guter Haltung hin. Schließen Sie den Mund und atmen Sie ausschließlich durch die Nase.",
+            "es-es": "Siéntate cómodamente y mantén una buena postura. Cierra la boca y respira únicamente por la nariz.",
+            "fr-fr": "Asseyez-vous confortablement en adoptant une bonne posture. Fermez la bouche et respirez uniquement par le nez.",
+            "ja-jp": "姿勢を整えて楽に座ります。口を閉じ、すべて鼻から呼吸してください。",
+            "pt-br": "Sente-se confortavelmente e mantenha uma boa postura. Feche a boca e respire apenas pelo nariz."
+          }
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.steps.observe-breathing.duration",
+          "reason": "catalog_source_miss",
+          "sourcePath": "howTo.steps[1].duration",
+          "translations": {
+            "de-de": "1 Minute",
+            "es-es": "1 minuto",
+            "fr-fr": "1 minute",
+            "ja-jp": "1分",
+            "pt-br": "1 minuto"
+          }
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.steps.measure-control-pause.instruction",
+          "reason": "catalog_source_miss",
+          "sourcePath": "howTo.steps[2].instruction",
+          "translations": {
+            "de-de": "Halten Sie sich nach einem normalen Ausatmen die Nase zu und messen Sie die Zeit, bis Sie den ersten deutlichen Atemreiz verspüren. Notieren Sie Ihre KP-Zeit. Erzwingen Sie nichts. Beenden Sie die Messung beim ersten Atemreiz.",
+            "es-es": "Tras una exhalación normal, tápate la nariz y cronometra hasta que sientas la primera necesidad clara de respirar. Anota el tiempo de tu PC. No lo fuerces. Detente al sentir la primera necesidad.",
+            "fr-fr": "Après une expiration normale, pincez-vous le nez et chronométrez le délai jusqu’à la première envie nette de respirer. Notez la durée de votre PC. Ne forcez pas. Arrêtez-vous à la première envie.",
+            "ja-jp": "通常どおり息を吐いた後に鼻をつまみ、初めてはっきりと息を吸いたいと感じるまでの時間を測ります。CPの時間を記録してください。無理は禁物です。最初に息を吸いたいと感じた時点で止めてください。",
+            "pt-br": "Após uma expiração normal, tampe o nariz e cronometre até sentir a primeira vontade clara de respirar. Anote o tempo da sua PC. Não force. Pare na primeira vontade."
+          }
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.steps.practice-reduced-breathing.instruction",
+          "reason": "catalog_source_miss",
+          "sourcePath": "howTo.steps[3].instruction",
+          "translations": {
+            "de-de": "Atmen Sie leicht durch die Nase: 3 Sekunden ein, 3 Sekunden aus, 3 Sekunden Pause. Die Atembewegung sollte kaum sichtbar sein. Akzeptieren Sie ein leichtes Gefühl von Lufthunger. Das ist normal.",
+            "es-es": "Respira ligeramente por la nariz: inhala durante 3 segundos, exhala durante 3 segundos y haz una pausa de 3 segundos. Mantén las respiraciones apenas visibles. Acepta una ligera sensación de falta de aire. Es normal.",
+            "fr-fr": "Respirez légèrement par le nez : inspirez pendant 3 secondes, expirez pendant 3 secondes, puis faites une pause de 3 secondes. Vos respirations doivent être à peine visibles. Acceptez une légère sensation de manque d’air. C’est normal.",
+            "ja-jp": "鼻から軽く呼吸します。3秒吸い、3秒吐き、3秒休止します。呼吸の動きがほとんど見えない程度に保ってください。空気が少し足りないような感覚は受け入れましょう。これは正常です。",
+            "pt-br": "Respire levemente pelo nariz: inspire por 3 segundos, expire por 3 segundos e faça uma pausa de 3 segundos. Mantenha a respiração quase imperceptível. Aceite uma leve sensação de falta de ar. Isso é normal."
+          }
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.steps.return-to-normal.duration",
+          "reason": "catalog_source_miss",
+          "sourcePath": "howTo.steps[5].duration",
+          "translations": {
+            "de-de": "1 Minute",
+            "es-es": "1 minuto",
+            "fr-fr": "1 minute",
+            "ja-jp": "1分",
+            "pt-br": "1 minuto"
+          }
+        },
+        {
+          "messageId": "breathe.buteyko.research.studies.nasal-nitric-oxide.summary",
+          "reason": "catalog_source_miss",
+          "sourcePath": "research.studies[2].summary",
+          "translations": {
+            "de-de": "Die Nasenatmung, ein zentraler Bestandteil von Buteyko, erhöht das Stickstoffmonoxid in den Atemwegen. Dies verbessert die Sauerstoffaufnahme und hat antimikrobielle Wirkungen. Bei der Mundatmung gehen diese Vorteile verloren.",
+            "es-es": "La respiración nasal, que es fundamental en Buteyko, aumenta el óxido nítrico en las vías respiratorias, lo que mejora la captación de oxígeno y tiene efectos antimicrobianos. Estos beneficios se pierden al respirar por la boca.",
+            "fr-fr": "La respiration nasale, au cœur de la méthode Buteyko, augmente le monoxyde d’azote dans les voies respiratoires, ce qui améliore l’absorption de l’oxygène et produit des effets antimicrobiens. Ces bienfaits disparaissent avec la respiration par la bouche.",
+            "ja-jp": "ブテイコの中心となる鼻呼吸は、気道内の一酸化窒素を増やします。これにより酸素の取り込みが改善し、抗菌作用も得られますが、口呼吸ではこれらの利点が失われます。",
+            "pt-br": "A respiração nasal, que é central no Buteyko, aumenta o óxido nítrico nas vias aéreas. Isso melhora a captação de oxigênio e tem efeitos antimicrobianos, benefícios que se perdem ao respirar pela boca."
+          }
+        },
+        {
+          "messageId": "breathe.buteyko.research.safety.mild-air-hunger",
+          "reason": "catalog_source_miss",
+          "sourcePath": "research.safety[4]",
+          "translations": {
+            "de-de": "Das Gefühl von „Lufthunger“ sollte nur leicht sein. Wenn es belastend wird, gehen Sie zu weit.",
+            "es-es": "La sensación de falta de aire debe ser leve. Si resulta angustiosa, estás forzando demasiado.",
+            "fr-fr": "La sensation de « manque d’air » doit rester légère. Si elle devient pénible, vous forcez trop.",
+            "ja-jp": "「空気が足りない」という感覚は軽い程度にとどめてください。つらく感じる場合は、無理をしすぎています。",
+            "pt-br": "A sensação de “fome de ar” deve ser leve. Se ela causar angústia, você está forçando demais."
+          }
+        },
+        {
+          "messageId": "breathe.buteyko.research.quotes.breathe-less-better.text",
+          "reason": "catalog_source_miss",
+          "sourcePath": "research.quotes[0].text",
+          "translations": {
+            "de-de": "Sie müssen weniger atmen, um besser zu atmen.",
+            "es-es": "Debes respirar menos para respirar mejor.",
+            "fr-fr": "Vous devez respirer moins pour mieux respirer.",
+            "ja-jp": "よりよく呼吸するためには、呼吸を減らさなければならない。",
+            "pt-br": "É preciso respirar menos para respirar melhor."
+          }
+        }
+      ],
+      "routeId": "breathe.buteyko",
+      "sourceRoute": "/breathe/buteyko"
+    },
+    {
+      "messages": [
+        {
+          "messageId": "for.anxiety.hero.intro",
+          "reason": "catalog_source_miss",
+          "sourcePath": "hero.intro",
+          "translations": {
+            "de-de": "Ihre Brust fühlt sich eng an. Ihre Gedanken rasen unaufhörlich. Sie haben das Gefühl, nicht richtig durchatmen zu können. Angst ist keine Schwäche. Ihr Nervensystem steckt im Hochbetrieb fest. Box-Atmung, dieselbe Technik, die Navy SEALs vor besonders belastenden Einsätzen nutzen, kann diese Angstreaktion in weniger als einer Minute unterbrechen.",
+            "es-es": "Sientes opresión en el pecho. Tus pensamientos no dejan de acelerarse. Sientes que no puedes recuperar el aliento. La ansiedad no es una debilidad. Es tu sistema nervioso atrapado en un estado de máxima activación. La respiración cuadrada, la misma técnica que usan los Navy SEALs antes de misiones de alto estrés, puede interrumpir esta respuesta de ansiedad en menos de un minuto.",
+            "fr-fr": "Votre poitrine est oppressée. Vos pensées s’emballent sans s’arrêter. Vous avez l’impression de manquer d’air. L’anxiété n’est pas une faiblesse. C’est votre système nerveux qui reste bloqué en état d’alerte maximale. La respiration carrée, la même technique que celle utilisée par les Navy SEALs avant des missions à haut risque, peut interrompre cette réponse anxieuse en moins d’une minute.",
+            "ja-jp": "胸が締めつけられる。思考が止まらず駆け巡る。うまく息ができないように感じる。不安は弱さではありません。神経系が過剰に働いたままになっている状態です。ネイビーシールズが緊張の大きい任務の前に使うのと同じボックス呼吸法で、この不安反応を1分以内に断ち切ることができます。",
+            "pt-br": "Seu peito parece apertado. Seus pensamentos não param de correr. Você sente que não consegue recuperar o fôlego. A ansiedade não é uma fraqueza. É seu sistema nervoso preso em um estado de hiperatividade. A respiração quadrada, a mesma técnica que os Navy SEALs usam antes de missões de alto estresse, pode interromper essa resposta de ansiedade em menos de um minuto."
+          }
+        },
+        {
+          "messageId": "for.anxiety.meta.title",
+          "reason": "catalog_source_miss",
+          "sourcePath": "meta.title",
+          "translations": {
+            "de-de": "Angst in 60 Sekunden stoppen: Navy-SEAL-Box-Atmung (kostenlos)",
+            "es-es": "Detén la ansiedad en 60 segundos: respiración cuadrada de los Navy SEALs (gratis)",
+            "fr-fr": "Stoppez l’anxiété en 60 secondes : respiration carrée des Navy SEALs (gratuite)",
+            "ja-jp": "60秒で不安を止める：ネイビーシールズ式ボックス呼吸法（無料）",
+            "pt-br": "Pare a ansiedade em 60 segundos: respiração quadrada dos Navy SEALs (grátis)"
+          }
+        },
+        {
+          "messageId": "for.anxiety.meta.description",
+          "reason": "catalog_source_miss",
+          "sourcePath": "meta.description",
+          "translations": {
+            "de-de": "Engegefühl in der Brust. Rasende Gedanken. Stoppen Sie Angst in 60 Sekunden mit der Box-Atmung der Navy SEALs. Täglich von Tausenden genutzt. Kostenloser geführter Visualisierer.",
+            "es-es": "Opresión en el pecho. Pensamientos acelerados. Detén la ansiedad en 60 segundos con la respiración cuadrada de los Navy SEALs. Utilizada por miles de personas a diario. Visualizador guiado gratuito.",
+            "fr-fr": "Oppression thoracique. Pensées qui s’emballent. Stoppez l’anxiété en 60 secondes grâce à la respiration carrée des Navy SEALs. Utilisée chaque jour par des milliers de personnes. Visualiseur guidé gratuit.",
+            "ja-jp": "胸の圧迫感。止まらない思考。ネイビーシールズ式ボックス呼吸法で不安を60秒で止めましょう。毎日何千人もの人が利用。無料のガイド付きビジュアライザー。",
+            "pt-br": "Aperto no peito. Pensamentos acelerados. Pare a ansiedade em 60 segundos com a respiração quadrada dos Navy SEALs. Usada diariamente por milhares de pessoas. Visualizador guiado gratuito."
+          }
+        },
+        {
+          "messageId": "for.anxiety.problem.content",
+          "reason": "catalog_source_miss",
+          "sourcePath": "problem.content",
+          "translations": {
+            "de-de": "Wenn Angst aufkommt, aktiviert Ihr Körper das sympathische Nervensystem, dasselbe System, das bei einer tatsächlichen Gefahr anspringt. Ihre Atmung wird schnell und flach (Hyperventilation), wodurch paradoxerweise das Gefühl entsteht, nicht genug Luft zu bekommen. So entsteht ein Teufelskreis: flache Atmung → mehr CO₂ wird abgeatmet → das Gehirn nimmt Gefahr wahr → mehr Angst → noch flachere Atmung.",
+            "es-es": "Cuando aparece la ansiedad, el cuerpo activa el sistema nervioso simpático, el mismo que entra en acción ante un peligro real. La respiración se vuelve rápida y superficial (hiperventilación), lo que, paradójicamente, te hace sentir que no recibes suficiente aire. Esto crea un círculo vicioso: respiración superficial → expulsas más CO₂ → el cerebro percibe peligro → aumenta la ansiedad → la respiración se vuelve aún más superficial.",
+            "fr-fr": "Lorsque l’anxiété survient, votre corps active le système nerveux sympathique, le même système qui se déclenche face à un danger réel. Votre respiration devient rapide et superficielle (hyperventilation), ce qui vous donne paradoxalement l’impression de manquer d’air. Un cercle vicieux se crée : respiration superficielle → davantage de CO₂ évacué → le cerveau perçoit un danger → l’anxiété augmente → la respiration devient encore plus superficielle.",
+            "ja-jp": "不安が起こると、体は実際に危険が迫ったときと同じ交感神経系を活性化します。呼吸が速く浅くなり（過換気）、逆に空気が足りないように感じます。これにより悪循環が生まれます：浅い呼吸 → CO₂をより多く排出 → 脳が危険を察知 → 不安が増す → 呼吸がさらに浅くなる。",
+            "pt-br": "Quando a ansiedade aparece, seu corpo ativa o sistema nervoso simpático, o mesmo sistema que entra em ação diante de um perigo real. Sua respiração fica rápida e superficial (hiperventilação), o que, paradoxalmente, faz você sentir que não está recebendo ar suficiente. Isso cria um ciclo vicioso: respiração superficial → mais CO₂ expelido → o cérebro percebe perigo → mais ansiedade → respiração ainda mais superficial."
+          }
+        },
+        {
+          "messageId": "for.anxiety.solution.content",
+          "reason": "catalog_source_miss",
+          "sourcePath": "solution.content",
+          "translations": {
+            "de-de": "Die Box-Atmung, auch quadratische oder taktische Atmung genannt, nutzt vier gleich lange Phasen (Einatmen-Anhalten-Ausatmen-Anhalten), um Ihr autonomes Nervensystem zu regulieren. Der 4-Sekunden-Rhythmus ist langsam genug, um Ihr parasympathisches „Ruhe-und-Verdauungs-System“ zu aktivieren, aber schnell genug, um keine Panik auszulösen, wenn Sie bereits ängstlich sind.",
+            "es-es": "La respiración cuadrada, también llamada respiración en caja o respiración táctica, utiliza cuatro fases iguales (inhalar-retener-exhalar-retener) para regular el sistema nervioso autónomo. El ritmo de 4 segundos es lo bastante lento como para activar el sistema parasimpático de «descanso y digestión», pero lo bastante rápido como para no desencadenar pánico si ya sientes ansiedad.",
+            "fr-fr": "La respiration carrée, également appelée respiration en carré ou respiration tactique, utilise quatre phases de même durée (inspirer-retenir-expirer-retenir) pour réguler votre système nerveux autonome. Le rythme de 4 secondes est assez lent pour activer le système parasympathique de « repos et digestion », mais assez rapide pour ne pas déclencher de panique si vous êtes déjà anxieux.",
+            "ja-jp": "ボックス呼吸法（スクエア呼吸法、タクティカル呼吸法とも呼ばれます）は、4つの同じ長さの段階（吸う-止める-吐く-止める）を使って自律神経系を調整します。4秒のリズムは、副交感神経の「休息と消化」機能を活性化できるほどゆっくりでありながら、すでに不安を感じているときにパニックを引き起こしにくい速さです。",
+            "pt-br": "A respiração quadrada, também chamada de respiração em caixa ou respiração tática, usa quatro fases iguais (inspirar-segurar-expirar-segurar) para regular o sistema nervoso autônomo. O ritmo de 4 segundos é lento o suficiente para ativar o sistema parassimpático de “descanso e digestão”, mas rápido o bastante para não desencadear pânico se você já estiver ansioso."
+          }
+        },
+        {
+          "messageId": "for.anxiety.solution.why-this-pattern",
+          "reason": "catalog_source_miss",
+          "sourcePath": "solution.whyThisPattern",
+          "translations": {
+            "de-de": "Die Atempausen sind die Geheimwaffe. Wenn Sie mit dem Atmen pausieren, steigt der CO₂-Gehalt in Ihrem Blut leicht an. Dies signalisiert Ihrem Gehirn, dass Sie sicher sind. Bei einer tatsächlichen Gefahr würden Sie nicht den Atem anhalten. Die gleichmäßigen Zählzeiten geben Ihren rasenden Gedanken eine einfache Struktur und unterbrechen die Grübelschleife, die Angst verstärkt.",
+            "es-es": "Las pausas son el arma secreta. Al detener la respiración, el CO₂ aumenta ligeramente en la sangre. Esto indica al cerebro que estás a salvo. No aguantarías la respiración si estuvieras en peligro de verdad. Los intervalos iguales ofrecen a tu mente acelerada una estructura sencilla que seguir y rompen el bucle de rumiación que alimenta la ansiedad.",
+            "fr-fr": "Les pauses respiratoires sont l’arme secrète. Lorsque vous interrompez votre respiration, le taux de CO₂ dans votre sang augmente légèrement. Cela indique à votre cerveau que vous êtes en sécurité. Vous ne retiendriez pas votre souffle si vous étiez réellement en danger. Les durées égales donnent à vos pensées qui s’emballent une structure simple à suivre et interrompent la boucle de rumination qui alimente l’anxiété.",
+            "ja-jp": "呼吸を止める時間が決め手です。呼吸を一時停止すると、血液中のCO₂がわずかに増えます。これは、今は安全だという信号を脳に送ります。本当に危険な状況なら、息を止めることはないでしょう。各段階を同じ数で数えることで、駆け巡る思考に従いやすい単純な枠組みが生まれ、不安を強める反復思考のループを断ち切ります。",
+            "pt-br": "As pausas na respiração são a arma secreta. Quando você pausa a respiração, o CO₂ aumenta ligeiramente no sangue. Isso sinaliza ao cérebro que você está em segurança. Você não prenderia a respiração se estivesse realmente em perigo. As contagens iguais oferecem uma estrutura simples para sua mente acelerada seguir, interrompendo o ciclo de ruminação que alimenta a ansiedade."
+          }
+        },
+        {
+          "messageId": "for.anxiety.science.points.vagus-nerve.explanation",
+          "reason": "catalog_source_miss",
+          "sourcePath": "science.points[0].explanation",
+          "translations": {
+            "de-de": "Langsames, kontrolliertes Atmen stimuliert den Vagusnerv, den wichtigsten Nerv des parasympathischen Nervensystems. Dadurch wird die „Entspannungsreaktion“ ausgelöst, die der angstbedingten Kampf-oder-Flucht-Reaktion entgegenwirkt. Studien zeigen, dass langsames Atmen den Vagustonus und die Herzfrequenzvariabilität (HRV) erhöht. Beides sind Anzeichen für eine bessere Stressresilienz.",
+            "es-es": "La respiración lenta y controlada estimula el nervio vago, el nervio principal del sistema nervioso parasimpático. Esto activa la «respuesta de relajación», que contrarresta la respuesta de lucha o huida asociada a la ansiedad. Los estudios muestran que la respiración lenta aumenta el tono vagal y la variabilidad de la frecuencia cardíaca (VFC), ambos indicadores de una mayor resiliencia al estrés.",
+            "fr-fr": "Une respiration lente et contrôlée stimule le nerf vague, le principal nerf de votre système nerveux parasympathique. Cela déclenche la « réponse de relaxation », qui neutralise la réponse anxieuse de combat ou de fuite. Les études montrent qu’une respiration lente augmente le tonus vagal et la variabilité de la fréquence cardiaque (VFC), deux marqueurs d’une meilleure résilience au stress.",
+            "ja-jp": "ゆっくりとコントロールされた呼吸は、副交感神経系の主要な神経である迷走神経を刺激します。これにより「リラクゼーション反応」が起こり、不安に伴う闘争・逃走反応を打ち消します。研究では、ゆっくりした呼吸によって迷走神経の活動と心拍変動（HRV）が高まることが示されています。どちらも、ストレスに対する回復力が高いことを示す指標です。",
+            "pt-br": "A respiração lenta e controlada estimula o nervo vago, o principal nervo do sistema nervoso parassimpático. Isso ativa a “resposta de relaxamento”, que neutraliza a resposta de luta ou fuga associada à ansiedade. Estudos mostram que a respiração lenta aumenta o tônus vagal e a variabilidade da frequência cardíaca (VFC), ambos indicadores de maior resiliência ao estresse."
+          }
+        },
+        {
+          "messageId": "for.anxiety.science.points.co2-levels.explanation",
+          "reason": "catalog_source_miss",
+          "sourcePath": "science.points[1].explanation",
+          "translations": {
+            "de-de": "Angst führt häufig zu Hyperventilation (schneller, flacher Atmung), die den CO₂-Gehalt im Blut senkt. Ein niedriger CO₂-Gehalt verengt die Blutgefäße und verringert die Sauerstoffversorgung des Gehirns, wodurch paradoxerweise ein Gefühl von Atemnot entsteht. Die Atempausen der Box-Atmung ermöglichen es dem CO₂-Gehalt, sich zu normalisieren, und signalisieren dem Nervensystem Sicherheit.",
+            "es-es": "La ansiedad suele provocar hiperventilación (respiración rápida y superficial), que reduce el CO₂ en la sangre. Un nivel bajo de CO₂ contrae los vasos sanguíneos y reduce el aporte de oxígeno al cerebro, lo que, paradójicamente, hace que sientas falta de aire. Las pausas de la respiración cuadrada permiten que el CO₂ se normalice y transmiten una señal de seguridad al sistema nervioso.",
+            "fr-fr": "L’anxiété provoque souvent une hyperventilation (respiration rapide et superficielle), qui fait baisser le taux de CO₂ dans le sang. Un faible taux de CO₂ resserre les vaisseaux sanguins et réduit l’apport d’oxygène au cerveau, ce qui vous donne paradoxalement l’impression de manquer d’air. Les pauses de la respiration carrée permettent au CO₂ de se normaliser et signalent à votre système nerveux que vous êtes en sécurité.",
+            "ja-jp": "不安はしばしば過換気（速く浅い呼吸）を引き起こし、血液中のCO₂を減少させます。CO₂が少ないと血管が収縮して脳への酸素供給が減るため、逆に息苦しく感じます。ボックス呼吸法の息止めによってCO₂が正常な状態に戻りやすくなり、神経系に安全だという信号が送られます。",
+            "pt-br": "A ansiedade costuma causar hiperventilação (respiração rápida e superficial), que reduz o CO₂ no sangue. Níveis baixos de CO₂ contraem os vasos sanguíneos e diminuem o fornecimento de oxigênio ao cérebro, o que, paradoxalmente, faz você sentir falta de ar. As pausas da respiração quadrada permitem que o CO₂ se normalize, sinalizando segurança ao sistema nervoso."
+          }
+        },
+        {
+          "messageId": "for.anxiety.science.points.rumination-loop.explanation",
+          "reason": "catalog_source_miss",
+          "sourcePath": "science.points[2].explanation",
+          "translations": {
+            "de-de": "Ängstliche Gedanken geraten in eine Spirale, weil die Amygdala (das Angstzentrum) den präfrontalen Kortex (das rationale Gehirn) überfordert. Der 4-4-4-4-Rhythmus gibt Ihrem Geist eine einfache, sich wiederholende Aufgabe, das Zählen. Dadurch wird der präfrontale Kortex aktiviert und die Grübelschleife unterbrochen. Es ist wie eine Musterunterbrechung für Ihr Gehirn.",
+            "es-es": "Los pensamientos ansiosos entran en espiral porque la amígdala (centro del miedo) sobrecarga la corteza prefrontal (cerebro racional). El conteo 4-4-4-4 da a la mente una tarea sencilla y repetitiva, contar, que activa la corteza prefrontal e interrumpe el ciclo de rumiación. Es como interrumpir el patrón que sigue el cerebro.",
+            "fr-fr": "Les pensées anxieuses s’emballent parce que l’amygdale (le centre de la peur) submerge le cortex préfrontal (le cerveau rationnel). Le compte 4-4-4-4 donne à votre esprit une tâche simple et répétitive, compter, qui mobilise le cortex préfrontal et interrompt le cycle de rumination. C’est comme une rupture de schéma pour votre cerveau.",
+            "ja-jp": "不安な思考が悪循環に陥るのは、扁桃体（恐怖を司る中枢）が前頭前野（理性的な脳）を圧倒するためです。4-4-4-4のカウントは、数えるという単純で反復的な課題を心に与えます。これが前頭前野を働かせ、反復思考のサイクルを中断します。脳のパターンをいったん断ち切るような働きです。",
+            "pt-br": "Os pensamentos ansiosos entram em espiral porque a amígdala (centro do medo) sobrecarrega o córtex pré-frontal (cérebro racional). A contagem 4-4-4-4 oferece à mente uma tarefa simples e repetitiva, contar, que envolve o córtex pré-frontal e interrompe o ciclo de ruminação. É como uma quebra de padrão para o cérebro."
+          }
+        },
+        {
+          "messageId": "for.anxiety.science.points.cortisol-heart-rate.explanation",
+          "reason": "catalog_source_miss",
+          "sourcePath": "science.points[3].explanation",
+          "translations": {
+            "de-de": "[Mehrere Studien zeigen, dass langsames Atmen Cortisol (Ihr wichtigstes Stresshormon) reduziert und die Herzfrequenz innerhalb weniger Minuten senkt](https://doi.org/10.1016/j.cpr.2021.101980). Eine Studie aus dem Jahr 2017 ergab, dass die Resonanzfrequenzatmung, die der Box-Atmung ähnelt, die Blutdruckreaktion auf Stress verringerte und die Stimmung im Vergleich zu Kontrollgruppen verbesserte.",
+            "es-es": "[Varios estudios muestran que la respiración lenta reduce el cortisol (la principal hormona del estrés) y disminuye la frecuencia cardíaca en cuestión de minutos](https://doi.org/10.1016/j.cpr.2021.101980). Un estudio de 2017 descubrió que la respiración a la frecuencia de resonancia, similar a la respiración cuadrada, reducía la reactividad de la presión arterial ante el estrés y mejoraba el estado de ánimo en comparación con los grupos de control.",
+            "fr-fr": "[Plusieurs études montrent qu’une respiration lente réduit le cortisol (votre principale hormone du stress) et abaisse la fréquence cardiaque en quelques minutes](https://doi.org/10.1016/j.cpr.2021.101980). Une étude de 2017 a constaté que la respiration à fréquence de résonance, semblable à la respiration carrée, réduisait la réactivité de la pression artérielle au stress et améliorait l’humeur par rapport aux groupes témoins.",
+            "ja-jp": "[複数の研究で、ゆっくりした呼吸はコルチゾール（主なストレスホルモン）を減らし、数分以内に心拍数を下げることが示されています](https://doi.org/10.1016/j.cpr.2021.101980)。2017年の研究では、ボックス呼吸法に似た共鳴周波数呼吸が、対照群と比べてストレスに対する血圧反応を抑え、気分を改善することが確認されました。",
+            "pt-br": "[Vários estudos mostram que a respiração lenta reduz o cortisol (seu principal hormônio do estresse) e diminui a frequência cardíaca em poucos minutos](https://doi.org/10.1016/j.cpr.2021.101980). Um estudo de 2017 constatou que a respiração na frequência de ressonância, semelhante à respiração quadrada, reduziu a reatividade da pressão arterial ao estresse e melhorou o humor em comparação com os grupos de controle."
+          }
+        },
+        {
+          "messageId": "for.anxiety.how-to.steps.inhale.instruction",
+          "reason": "catalog_source_miss",
+          "sourcePath": "howTo.steps[2].instruction",
+          "translations": {
+            "de-de": "Atmen Sie langsam durch die Nase ein und zählen Sie dabei bis 4. Spüren Sie, wie sich zuerst Ihr Bauch und dann Ihr Brustkorb hebt. Atmen Sie sanft ein, ohne hastig nach Luft zu schnappen.",
+            "es-es": "Inhala lentamente por la nariz mientras cuentas hasta 4. Siente cómo se expande primero el abdomen y luego el pecho. Hazlo con suavidad, sin tomar grandes bocanadas de aire.",
+            "fr-fr": "Inspirez lentement par le nez en comptant jusqu’à 4. Sentez d’abord votre ventre se gonfler, puis votre poitrine. Inspirez doucement, sans aspirer de grandes goulées d’air.",
+            "ja-jp": "4まで数えながら、鼻からゆっくり息を吸います。まずお腹が膨らみ、次に胸が広がるのを感じてください。空気を勢いよく吸い込まず、やさしく行います。",
+            "pt-br": "Inspire lentamente pelo nariz enquanto conta até 4. Sinta primeiro a barriga se expandir e depois o peito. Faça isso suavemente, sem puxar grandes quantidades de ar."
+          }
+        },
+        {
+          "messageId": "for.anxiety.how-to.steps.top-hold.instruction",
+          "reason": "catalog_source_miss",
+          "sourcePath": "howTo.steps[3].instruction",
+          "translations": {
+            "de-de": "Machen Sie am Ende des Einatmens eine Pause. Lassen Sie den Hals locker und verengen Sie ihn nicht. Die Pause sollte sich sanft und nicht angestrengt anfühlen.",
+            "es-es": "Haz una pausa al terminar de inhalar. Mantén la garganta relajada. No la cierres con fuerza. Debe sentirse como una pausa suave, sin esfuerzo.",
+            "fr-fr": "Faites une pause à la fin de l’inspiration. Gardez la gorge détendue. Ne la contractez pas. Cette phase doit ressembler à une pause douce, sans effort.",
+            "ja-jp": "息を吸いきったところで止めます。喉をゆるめたままにし、締めつけないでください。力むのではなく、やさしく一時停止する感覚です。",
+            "pt-br": "Faça uma pausa ao final da inspiração. Mantenha a garganta relaxada. Não a contraia. Deve parecer uma pausa suave, sem esforço."
+          }
+        },
+        {
+          "messageId": "for.anxiety.how-to.tips.silent-smooth-breathing",
+          "reason": "catalog_source_miss",
+          "sourcePath": "howTo.tips[1]",
+          "translations": {
+            "de-de": "Atmen Sie leise und gleichmäßig, ohne hörbares Ein- oder Ausatmen",
+            "es-es": "Respira de forma silenciosa y fluida, sin que se oigan las inhalaciones ni las exhalaciones",
+            "fr-fr": "Gardez une respiration silencieuse et fluide, sans inspiration ni expiration audible",
+            "ja-jp": "吸う音や吐く音が聞こえないよう、静かで滑らかな呼吸を保ちましょう",
+            "pt-br": "Mantenha a respiração silenciosa e suave, sem inspirações ou expirações audíveis"
+          }
+        },
+        {
+          "messageId": "for.anxiety.how-to.tips.daily-practice",
+          "reason": "catalog_source_miss",
+          "sourcePath": "howTo.tips[3]",
+          "translations": {
+            "de-de": "Üben Sie täglich, auch wenn Sie nicht ängstlich sind. Dadurch wird Ihr Nervensystem „trainiert“, schneller zu reagieren, wenn Sie es brauchen",
+            "es-es": "Practica a diario incluso cuando no sientas ansiedad. Esto «entrena» al sistema nervioso para responder más rápido cuando lo necesites",
+            "fr-fr": "Pratiquez chaque jour, même lorsque vous n’êtes pas anxieux. Cela « entraîne » votre système nerveux à répondre plus rapidement lorsque vous en avez besoin",
+            "ja-jp": "不安がないときも毎日練習しましょう。必要なときにより速く反応できるよう、神経系を「訓練」できます",
+            "pt-br": "Pratique diariamente, mesmo quando não estiver ansioso. Isso “treina” o sistema nervoso para responder mais rápido quando você precisar"
+          }
+        },
+        {
+          "messageId": "for.anxiety.how-to.tips.use-visualizer",
+          "reason": "catalog_source_miss",
+          "sourcePath": "howTo.tips[4]",
+          "translations": {
+            "de-de": "Nutzen Sie den Visualisierer auf dieser Seite für ein geführtes Tempo. So entfällt die geistige Anstrengung des Zählens",
+            "es-es": "Utiliza el visualizador de esta página para seguir un ritmo guiado. Así eliminas el esfuerzo mental de contar",
+            "fr-fr": "Utilisez le visualiseur de cette page pour suivre un rythme guidé. Il vous évite l’effort mental nécessaire pour compter",
+            "ja-jp": "このページのビジュアライザーを使い、ガイドに沿ってペースを整えましょう。数えるための精神的な負担を減らせます",
+            "pt-br": "Use o visualizador desta página para acompanhar um ritmo guiado. Ele elimina o esforço mental de contar"
+          }
+        },
+        {
+          "messageId": "for.anxiety.references.slow-breathing-hrv-meta-analysis.summary",
+          "reason": "catalog_source_miss",
+          "sourcePath": "references[0].summary",
+          "translations": {
+            "de-de": "Eine systematische Übersichtsarbeit und Metaanalyse ergab, dass bewusstes langsames Atmen die vom Vagusnerv vermittelte Herzfrequenzvariabilität während der Sitzungen, unmittelbar danach und nach einem Training über mehrere Sitzungen erhöht. Dies deutet auf eine verbesserte Stressregulation hin.",
+            "es-es": "Una revisión sistemática y metaanálisis concluyó que la respiración lenta voluntaria aumenta la variabilidad de la frecuencia cardíaca mediada por el nervio vago durante las sesiones, justo después de ellas y tras un entrenamiento de varias sesiones, lo que indica una mejor regulación del estrés.",
+            "fr-fr": "Une revue systématique et méta-analyse a conclu que la respiration lente volontaire augmente la variabilité de la fréquence cardiaque sous contrôle vagal pendant les séances, immédiatement après celles-ci et après un entraînement sur plusieurs séances, ce qui indique une meilleure régulation du stress.",
+            "ja-jp": "系統的レビューとメタ解析により、自発的なゆっくりした呼吸は、セッション中、セッション直後、複数回のトレーニング後のいずれでも、迷走神経に関連する心拍変動を高めることが確認されました。これはストレス調整の改善を示しています。",
+            "pt-br": "Uma revisão sistemática e metanálise constatou que a respiração lenta voluntária aumenta a variabilidade da frequência cardíaca mediada pelo nervo vago durante as sessões, imediatamente após elas e depois de um treinamento com várias sessões, indicando melhora na regulação do estresse."
+          }
+        },
+        {
+          "messageId": "for.anxiety.related-technique.call-to-action",
+          "reason": "catalog_source_miss",
+          "sourcePath": "relatedTechnique.callToAction",
+          "translations": {
+            "de-de": "Erlernen Sie die vollständige Box-Atemtechnik mit Forschungsergebnissen, Tipps und geführten Übungen",
+            "es-es": "Domina la técnica completa de respiración cuadrada con estudios, consejos y una práctica guiada",
+            "fr-fr": "Maîtrisez toute la technique de respiration carrée grâce aux recherches, aux conseils et à la pratique guidée",
+            "ja-jp": "研究、コツ、ガイド付き練習を通して、ボックス呼吸法のすべてを身につけましょう",
+            "pt-br": "Domine a técnica completa de respiração quadrada com pesquisas, dicas e prática guiada"
+          }
+        },
+        {
+          "messageId": "for.anxiety.related-use-cases.huberman.teaser",
+          "reason": "catalog_source_miss",
+          "sourcePath": "relatedUseCases[5].teaser",
+          "translations": {
+            "de-de": "Die von Dr. Huberman empfohlenen Protokolle gegen Angst, vom physiologischen Seufzer bis zum zyklischen Seufzen.",
+            "es-es": "Los protocolos que recomienda el Dr. Huberman para la ansiedad, desde el suspiro fisiológico hasta los suspiros cíclicos.",
+            "fr-fr": "Les protocoles recommandés par le Dr Huberman contre l’anxiété, du soupir physiologique aux soupirs cycliques.",
+            "ja-jp": "生理的なため息から周期的なため息まで、ハバーマン博士が不安に推奨するプロトコル。",
+            "pt-br": "Os protocolos recomendados pelo Dr. Huberman para a ansiedade, do suspiro fisiológico aos suspiros cíclicos."
+          }
+        },
+        {
+          "messageId": "for.anxiety.related-guides.surgery.title",
+          "reason": "catalog_source_miss",
+          "sourcePath": "relatedGuides[0].title",
+          "translations": {
+            "de-de": "Atemübungen vor einer Operation",
+            "es-es": "Ejercicios de respiración antes de una cirugía",
+            "fr-fr": "Exercices de respiration avant une opération",
+            "ja-jp": "手術前の呼吸エクササイズ",
+            "pt-br": "Exercícios de respiração antes de uma cirurgia"
+          }
+        },
+        {
+          "messageId": "for.anxiety.related-guides.surgery.teaser",
+          "reason": "catalog_source_miss",
+          "sourcePath": "relatedGuides[0].teaser",
+          "translations": {
+            "de-de": "Wie Sie Atemtechniken nutzen, um Angst vor einer Operation zu lindern, Cortisol zu senken und eine schnellere Genesung zu unterstützen",
+            "es-es": "Cómo utilizar técnicas de respiración para reducir la ansiedad preoperatoria, disminuir el cortisol y favorecer una recuperación más rápida",
+            "fr-fr": "Comment utiliser des techniques de respiration pour réduire l’anxiété préopératoire, diminuer le cortisol et favoriser un rétablissement plus rapide",
+            "ja-jp": "呼吸法を使って手術前の不安を軽減し、コルチゾールを下げ、より早い回復を支える方法",
+            "pt-br": "Como usar técnicas de respiração para reduzir a ansiedade pré-operatória, diminuir o cortisol e favorecer uma recuperação mais rápida"
+          }
+        },
+        {
+          "messageId": "for.anxiety.faqs.anxiety-versus-panic.answer",
+          "reason": "catalog_source_miss",
+          "sourcePath": "faqs[0].answer",
+          "translations": {
+            "de-de": "Angst ist chronisch und anhaltend. Ihr Nervensystem befindet sich dauerhaft in einem Zustand erhöhter Erregung, der über den Tag hinweg zu anhaltender Sorge, Muskelverspannungen und flacher Atmung führt. Eine Panikattacke ist akut und intensiv: eine plötzliche Welle überwältigender Angst mit Herzrasen, Hyperventilation und dem Gefühl, sterben oder die Kontrolle verlieren zu können. Bei chronischer Angst eignet sich die Box-Atmung (4-4-4-4), da sie sich über längere Sitzungen aufrechterhalten lässt. Bei Panikattacken wirkt der physiologische Seufzer (doppeltes Einatmen, langes Ausatmen) häufig schneller, weil er CO₂ rasch abführt und den akuten Hyperventilationszyklus unterbricht.",
+            "es-es": "La ansiedad es crónica y continua. El sistema nervioso permanece en un estado sostenido de activación elevada, lo que provoca preocupación persistente, tensión muscular y respiración superficial a lo largo del día. Un ataque de pánico es agudo e intenso: una oleada repentina de miedo abrumador acompañada de latidos rápidos, hiperventilación y la sensación de que podrías morir o perder el control. Para la ansiedad crónica, la respiración cuadrada (4-4-4-4) funciona bien porque puede mantenerse durante sesiones más largas. Para los ataques de pánico, el suspiro fisiológico (doble inhalación y exhalación larga) suele actuar más rápido porque descarga rápidamente el CO₂ e interrumpe el ciclo de hiperventilación aguda.",
+            "fr-fr": "L’anxiété est chronique et persistante. Votre système nerveux reste dans un état durable d’activation élevée, ce qui provoque une inquiétude constante, des tensions musculaires et une respiration superficielle tout au long de la journée. Une crise de panique est aiguë et intense : une montée soudaine de peur accablante accompagnée d’un rythme cardiaque rapide, d’hyperventilation et de l’impression que vous allez mourir ou perdre le contrôle. Pour l’anxiété chronique, la respiration carrée (4-4-4-4) fonctionne bien, car elle peut être maintenue pendant des séances plus longues. Pour les crises de panique, le soupir physiologique (double inspiration, longue expiration) agit souvent plus rapidement, car il évacue vite le CO₂ et interrompt le cycle aigu d’hyperventilation.",
+            "ja-jp": "不安は慢性的で持続します。神経系が高ぶった状態が続き、一日を通して絶え間ない心配、筋肉の緊張、浅い呼吸を引き起こします。パニック発作は急性で強く、激しい恐怖が突然押し寄せ、心拍数の上昇、過換気、死ぬのではないか、または自制を失うのではないかという感覚を伴います。慢性的な不安には、長めのセッションでも続けやすいボックス呼吸法（4-4-4-4）が適しています。パニック発作には、生理的なため息（2回吸って長く吐く）のほうが、CO₂をすばやく排出して急性の過換気サイクルを断ち切るため、より速く作用することがあります。",
+            "pt-br": "A ansiedade é crônica e contínua. Seu sistema nervoso permanece em um estado prolongado de ativação elevada, causando preocupação persistente, tensão muscular e respiração superficial ao longo do dia. Um ataque de pânico é agudo e intenso: uma onda repentina de medo avassalador, com batimento cardíaco acelerado, hiperventilação e a sensação de que você pode morrer ou perder o controle. Para a ansiedade crônica, a respiração quadrada (4-4-4-4) funciona bem porque pode ser mantida em sessões mais longas. Para ataques de pânico, o suspiro fisiológico (duas inspirações e uma expiração longa) costuma agir mais rápido, pois elimina rapidamente o CO₂ e interrompe o ciclo agudo de hiperventilação."
+          }
+        },
+        {
+          "messageId": "for.anxiety.faqs.medication.answer",
+          "reason": "catalog_source_miss",
+          "sourcePath": "faqs[1].answer",
+          "translations": {
+            "de-de": "Box-Atmung ist ein wirksames Mittel zur Selbstregulation, ersetzt jedoch weder Medikamente noch eine Therapie. Betrachten Sie sie als ergänzende Fähigkeit, ähnlich wie Bewegung oder Schlafhygiene. Studien zeigen, dass Atemtraining die Angstsymptome gering bis moderat reduzieren kann. Das ist bedeutsam, aber kein Wundermittel. Wenn Sie Medikamente einnehmen, setzen Sie diese fort und ergänzen Sie die Box-Atmung als tägliche Praxis. Wenn Sie Ihre Medikamente reduzieren möchten, erarbeiten Sie gemeinsam mit Ihrem Arzt einen Plan. Viele Menschen erleben Atemtraining als besonders wirksam, wenn es mit kognitiver Verhaltenstherapie (KVT) und Veränderungen des Lebensstils (Bewegung, Schlaf und weniger Koffein) kombiniert wird.",
+            "es-es": "La respiración cuadrada es una potente herramienta de autorregulación, pero no sustituye a la medicación ni a la terapia. Considérala una habilidad complementaria, como el ejercicio o una buena higiene del sueño. Los estudios muestran que el trabajo respiratorio produce reducciones pequeñas o moderadas de los síntomas de ansiedad: son significativas, pero no milagrosas. Si tomas medicación, continúa con ella y añade la respiración cuadrada como práctica diaria. Si quieres reducirla, trabaja con tu médico para crear un plan. Muchas personas encuentran que el trabajo respiratorio es más eficaz cuando se combina con terapia cognitivo-conductual (TCC) y cambios en el estilo de vida (ejercicio, sueño y reducción de la cafeína).",
+            "fr-fr": "La respiration carrée est un puissant outil d’autorégulation, mais elle ne remplace ni les médicaments ni la thérapie. Considérez-la comme une compétence complémentaire, au même titre que l’exercice physique ou une bonne hygiène du sommeil. Les études montrent que le travail respiratoire entraîne des diminutions faibles à modérées des symptômes d’anxiété : elles sont significatives, mais ne tiennent pas du miracle. Si vous prenez des médicaments, poursuivez votre traitement et ajoutez la respiration carrée à votre pratique quotidienne. Si vous souhaitez les réduire, élaborez un plan avec votre médecin. De nombreuses personnes trouvent le travail respiratoire plus efficace lorsqu’il est associé à une thérapie cognitivo-comportementale (TCC) et à des changements de mode de vie (activité physique, sommeil et réduction de la caféine).",
+            "ja-jp": "ボックス呼吸法は効果的な自己調整の手段ですが、薬物療法や心理療法の代わりにはなりません。運動や睡眠習慣と同じように、補助的なスキルと考えてください。研究では、呼吸法によって不安症状が小程度から中程度軽減することが示されています。意味のある効果ですが、奇跡的なものではありません。薬を服用している場合は継続し、毎日の習慣としてボックス呼吸法を加えてください。薬を減らしたい場合は、医師と相談して計画を立てましょう。呼吸法は、認知行動療法（CBT）や生活習慣の改善（運動、睡眠、カフェインの削減）と組み合わせると最も効果的だと感じる方が多くいます。",
+            "pt-br": "A respiração quadrada é uma ferramenta poderosa de autorregulação, mas não substitui medicamentos nem terapia. Pense nela como uma habilidade complementar, assim como exercícios físicos ou uma boa higiene do sono. Estudos mostram que o trabalho respiratório produz reduções pequenas a moderadas nos sintomas de ansiedade: são significativas, mas não milagrosas. Se você toma medicamentos, continue o tratamento e acrescente a respiração quadrada como prática diária. Se quiser reduzir a medicação, trabalhe com seu médico para criar um plano. Muitas pessoas consideram o trabalho respiratório mais eficaz quando combinado com terapia cognitivo-comportamental (TCC) e mudanças no estilo de vida (exercícios, sono e redução da cafeína)."
+          }
+        },
+        {
+          "messageId": "for.anxiety.faqs.practice-frequency.answer",
+          "reason": "catalog_source_miss",
+          "sourcePath": "faqs[2].answer",
+          "translations": {
+            "de-de": "Üben Sie bei chronischer Angst zweimal täglich: einmal morgens (um eine ruhige Grundlage für den Tag zu schaffen) und einmal vor dem Schlafengehen (um ängstliches Grübeln zu verhindern). Jede Sitzung sollte 3-5 Minuten dauern (10-15 Zyklen). Wenden Sie die Technik außerdem „im Moment“ an, sobald Sie merken, dass die Angst zunimmt: vor Besprechungen, bei belastenden Aufgaben oder wenn Sie sich in einer Sorgenspirale wiederfinden. Entscheidend ist die Beständigkeit. Tägliche Praxis „trainiert“ Ihr Nervensystem, schneller zu reagieren, wenn Sie es brauchen. Die meisten Studien, die eine Wirkung gegen Angst zeigten, nutzten täglich 5-10 Minuten über 4-8 Wochen.",
+            "es-es": "Para la ansiedad crónica, practica dos veces al día: una por la mañana (para establecer una base de calma durante el día) y otra antes de acostarte (para evitar la rumiación ansiosa). Cada sesión debe durar de 3 a 5 minutos (10-15 ciclos). Utilízala también «en el momento» cuando notes que aumenta la ansiedad: antes de reuniones, durante tareas estresantes o cuando te descubras entrando en una espiral de preocupación. La clave es la constancia: la práctica diaria «entrena» al sistema nervioso para responder más rápido cuando lo necesitas. La mayoría de los estudios que observaron beneficios para la ansiedad utilizaron entre 5 y 10 minutos diarios durante 4-8 semanas.",
+            "fr-fr": "Pour l’anxiété chronique, pratiquez deux fois par jour : une fois le matin (pour établir une base calme pour la journée) et une fois avant de vous coucher (pour éviter les ruminations anxieuses). Chaque séance doit durer 3 à 5 minutes (10-15 cycles). Utilisez-la aussi « sur le moment » chaque fois que vous sentez l’anxiété monter : avant une réunion, pendant une tâche stressante ou lorsque vous vous surprenez à entrer dans une spirale d’inquiétude. La clé est la régularité : une pratique quotidienne « entraîne » votre système nerveux à répondre plus rapidement lorsque vous en avez besoin. La plupart des études montrant des bienfaits contre l’anxiété ont utilisé 5 à 10 minutes par jour pendant 4 à 8 semaines.",
+            "ja-jp": "慢性的な不安には、1日2回練習してください。朝に1回（落ち着いた状態で一日を始めるため）、就寝前に1回（不安な反復思考を防ぐため）行います。各セッションは3-5分（10-15サイクル）が目安です。不安が高まり始めたときにも「その場で」使いましょう。会議の前、ストレスの多い作業中、心配の悪循環に陥りかけていると気づいたときなどです。大切なのは継続です。毎日の練習によって、必要なときにより速く反応できるよう神経系を「訓練」できます。不安への効果を示した研究の多くでは、1日5-10分を4-8週間実践しています。",
+            "pt-br": "Para a ansiedade crônica, pratique duas vezes ao dia: uma pela manhã (para estabelecer uma base de calma para o dia) e outra antes de dormir (para evitar a ruminação ansiosa). Cada sessão deve durar 3-5 minutos (10-15 ciclos). Use também “no momento” sempre que perceber a ansiedade aumentando: antes de reuniões, durante tarefas estressantes ou quando notar que está entrando em uma espiral de preocupação. A chave é a consistência: a prática diária “treina” o sistema nervoso para responder mais rápido quando você precisa. A maioria dos estudos que demonstrou benefícios para a ansiedade usou 5-10 minutos por dia durante 4-8 semanas."
+          }
+        },
+        {
+          "messageId": "for.anxiety.faqs.why-holds-help.answer",
+          "reason": "catalog_source_miss",
+          "sourcePath": "faqs[3].answer",
+          "translations": {
+            "de-de": "Die Atempausen erfüllen zwei Zwecke: (1) Sie lassen den CO₂-Gehalt in Ihrem Blut leicht ansteigen, was Ihrem Gehirn signalisiert, dass Sie sicher sind. Bei einer tatsächlichen Gefahr würden Sie nicht den Atem anhalten. Dies durchbricht den bei Angst häufigen Hyperventilationszyklus. (2) Die Pausen geben Ihren rasenden Gedanken eine klare Struktur und unterbrechen die Grübelschleife. Wenn die Pausen jedoch MEHR Angst auslösen (manche Menschen empfinden das Gefühl als unangenehm), lassen Sie sie ganz weg und atmen Sie ohne Pausen lediglich 4 Sekunden ein und 4 Sekunden aus. Das langsame Tempo ist am wichtigsten.",
+            "es-es": "Las pausas cumplen dos funciones: (1) Permiten que el CO₂ aumente ligeramente en la sangre, lo que indica al cerebro que estás a salvo. No aguantarías la respiración si estuvieras en peligro real. Esto rompe el ciclo de hiperventilación frecuente en la ansiedad. (2) Las pausas ofrecen a tu mente acelerada una estructura clara que seguir e interrumpen el bucle de rumiación. Sin embargo, si las pausas te hacen sentir MÁS ansiedad (a algunas personas no les gusta la sensación), elimínalas por completo y limita el ejercicio a inhalar durante 4 segundos y exhalar durante 4 segundos, sin pausas. Lo más importante es el ritmo lento.",
+            "fr-fr": "Les pauses respiratoires ont deux fonctions : (1) Elles permettent au CO₂ d’augmenter légèrement dans votre sang, ce qui indique à votre cerveau que vous êtes en sécurité. Vous ne retiendriez pas votre souffle si vous étiez réellement en danger. Cela rompt le cycle d’hyperventilation fréquent dans l’anxiété. (2) Les pauses donnent à vos pensées qui s’emballent une structure claire à suivre et interrompent la boucle de rumination. Toutefois, si les pauses vous rendent ENCORE PLUS anxieux (certaines personnes n’aiment pas cette sensation), supprimez-les complètement et contentez-vous d’inspirer pendant 4 secondes et d’expirer pendant 4 secondes, sans pause. Le rythme lent est l’élément le plus important.",
+            "ja-jp": "息止めには2つの役割があります。(1) 血液中のCO₂をわずかに増やし、今は安全だという信号を脳に送ります。本当に危険な状況なら、息を止めることはないでしょう。これによって、不安によく見られる過換気のサイクルが断ち切られます。(2) 息止めは、駆け巡る思考に従いやすい明確な枠組みを与え、反復思考のループを中断します。ただし、息止めによって不安がさらに強くなる場合（この感覚が苦手な方もいます）は、完全に省略し、休止せずに4秒吸って4秒吐くだけにしてください。最も重要なのは、ゆっくりしたペースです。",
+            "pt-br": "As pausas têm duas funções: (1) Elas permitem que o CO₂ aumente ligeiramente no sangue, o que sinaliza ao cérebro que você está em segurança. Você não prenderia a respiração se estivesse realmente em perigo. Isso interrompe o ciclo de hiperventilação comum na ansiedade. (2) As pausas oferecem uma estrutura clara para sua mente acelerada seguir, interrompendo o ciclo de ruminação. No entanto, se as pausas fizerem você sentir MAIS ansiedade (algumas pessoas não gostam dessa sensação), elimine-as por completo e apenas inspire por 4 segundos e expire por 4 segundos, sem pausas. O ritmo lento é o mais importante."
+          }
+        },
+        {
+          "messageId": "for.anxiety.faqs.increased-anxiety.answer",
+          "reason": "catalog_source_miss",
+          "sourcePath": "faqs[4].answer",
+          "translations": {
+            "de-de": "Das kommt häufig vor und bedeutet nicht, dass Sie etwas falsch gemacht haben. Mögliche Ursachen: (1) Sie haben den Atem zu kraftvoll angehalten. Atempausen sollten sanft und nicht angestrengt sein. Versuchen Sie kürzere Pausen (2 Sekunden) oder lassen Sie sie ganz weg. (2) Sie haben zu tief geatmet. Angst führt häufig dazu, dass Menschen große Luftzüge nehmen, was noch mehr Panik auslösen kann. Halten Sie Ihre Atemzüge klein, ruhig und gleichmäßig. (3) Sie haben sich zu sehr darauf konzentriert, es „richtig zu machen“. Dadurch wird Ihr ängstlicher Perfektionismus aktiviert. Nutzen Sie einen geführten Visualisierer wie den auf dieser Seite, damit Sie nicht über das Zählen nachdenken müssen. (4) Sie befinden sich mitten in einer Panikattacke. Wechseln Sie bei akuten Episoden zu physiologischen Seufzern (doppeltes Einatmen, langes Ausatmen); die Box-Atmung eignet sich besser bei anhaltender Angst.",
+            "es-es": "Esto es frecuente y no significa que hayas hecho nada mal. Posibles causas: (1) Aguantaste la respiración con demasiada fuerza; las retenciones deben ser pausas suaves, sin esfuerzo. Prueba pausas más cortas (2 segundos) o elimínalas por completo. (2) Respiraste demasiado profundo; la ansiedad suele hacer que las personas tomen grandes bocanadas de aire, lo que puede provocar más pánico. Mantén las respiraciones pequeñas, silenciosas y fluidas. (3) Te concentraste demasiado en «hacerlo bien». Esto activa tu perfeccionismo ansioso. Utiliza un visualizador guiado, como el de esta página, para no tener que pensar en contar. (4) Estás en medio de un ataque de pánico; para los episodios agudos, cambia a suspiros fisiológicos (doble inhalación y exhalación larga). La respiración cuadrada funciona mejor para la ansiedad continua.",
+            "fr-fr": "C’est fréquent et cela ne signifie pas que vous avez fait quelque chose de mal. Causes possibles : (1) Vous avez retenu votre souffle avec trop de force. Les rétentions doivent être de légères pauses, sans effort. Essayez des pauses plus courtes (2 secondes) ou supprimez-les complètement. (2) Vous avez respiré trop profondément. L’anxiété pousse souvent à prendre de grandes goulées d’air, ce qui peut déclencher davantage de panique. Gardez des respirations légères, silencieuses et fluides. (3) Vous vous êtes trop concentré sur le fait de « bien faire ». Cela active votre perfectionnisme anxieux. Utilisez un visualiseur guidé, comme celui de cette page, pour ne pas avoir à penser au comptage. (4) Vous êtes en pleine crise de panique. Pour les épisodes aigus, passez aux soupirs physiologiques (double inspiration, longue expiration) ; la respiration carrée convient mieux à l’anxiété persistante.",
+            "ja-jp": "これはよくあることで、何かを間違えたという意味ではありません。考えられる原因：(1) 力を入れすぎて息を止めた。息止めは、力むのではなく、やさしい一時停止にしてください。短めの息止め（2秒）を試すか、完全に省略しましょう。(2) 深く呼吸しすぎた。不安があると大きく空気を吸い込みがちで、それがさらなるパニックを引き起こすことがあります。小さく、静かで、滑らかな呼吸を保ってください。(3) 「正しくやること」に集中しすぎた。これは不安からくる完璧主義を刺激します。このページのようなガイド付きビジュアライザーを使えば、数えることを考えずに済みます。(4) パニック発作の最中である。急性の症状には、生理的なため息（2回吸って長く吐く）に切り替えてください。ボックス呼吸法は、持続する不安により適しています。",
+            "pt-br": "Isso é comum e não significa que você tenha feito algo errado. Possíveis causas: (1) Você prendeu a respiração com força demais. As pausas devem ser suaves, sem esforço. Tente pausas mais curtas (2 segundos) ou elimine-as por completo. (2) Você respirou fundo demais. A ansiedade costuma levar as pessoas a puxar grandes quantidades de ar, o que pode desencadear ainda mais pânico. Mantenha a respiração pequena, silenciosa e suave. (3) Você se concentrou demais em “fazer certo”. Isso ativa seu perfeccionismo ansioso. Use um visualizador guiado, como o desta página, para não precisar pensar na contagem. (4) Você está no meio de um ataque de pânico. Para episódios agudos, mude para suspiros fisiológicos (duas inspirações e uma expiração longa); a respiração quadrada funciona melhor para a ansiedade contínua."
+          }
+        },
+        {
+          "messageId": "for.anxiety.faqs.results-timeline.answer",
+          "reason": "catalog_source_miss",
+          "sourcePath": "faqs[5].answer",
+          "translations": {
+            "de-de": "Möglicherweise bemerken Sie bereits in den ersten 1-3 Minuten der Praxis eine leichte Veränderung (niedrigere Herzfrequenz, weniger Engegefühl in der Brust). Die größten Vorteile entstehen jedoch durch eine beständige tägliche Praxis über mehrere Wochen. Studien zeigen, dass 4-8 Wochen regelmäßigen langsamen Atmens die Angstsymptome, die Ruheherzfrequenz und den Stresshormonspiegel messbar senken. Stellen Sie es sich wie Krafttraining vor: Eine Sitzung hilft ein wenig, die wirklichen Veränderungen entstehen aber durch anhaltendes Üben. Die meisten Menschen berichten nach 2-3 Wochen zweimal täglicher Praxis von einer spürbaren Verringerung ihrer Angst.",
+            "es-es": "Puedes notar un cambio sutil durante los primeros 1-3 minutos de práctica (menor frecuencia cardíaca y menos opresión en el pecho). Sin embargo, los mayores beneficios proceden de la práctica diaria constante durante varias semanas. Los estudios muestran que entre 4 y 8 semanas de respiración lenta regular producen reducciones medibles de los síntomas de ansiedad, la frecuencia cardíaca en reposo y los niveles de las hormonas del estrés. Considéralo como un entrenamiento de fuerza: una sesión ayuda un poco, pero los cambios reales aparecen con la práctica sostenida. La mayoría de las personas informa de una reducción perceptible de la ansiedad tras 2-3 semanas de práctica dos veces al día.",
+            "fr-fr": "Vous pouvez remarquer un changement subtil dès les 1 à 3 premières minutes de pratique (fréquence cardiaque plus basse, diminution de l’oppression thoracique). Toutefois, les bienfaits les plus importants proviennent d’une pratique quotidienne régulière pendant plusieurs semaines. Les études montrent que 4 à 8 semaines de respiration lente régulière entraînent des diminutions mesurables des symptômes d’anxiété, de la fréquence cardiaque au repos et des taux d’hormones du stress. Pensez-y comme à un entraînement musculaire : une séance aide un peu, mais les véritables changements apparaissent avec une pratique soutenue. La plupart des personnes font état d’une diminution perceptible de l’anxiété après 2 à 3 semaines de pratique deux fois par jour.",
+            "ja-jp": "練習を始めて1-3分以内に、心拍数の低下や胸の圧迫感の軽減といった小さな変化に気づくことがあります。ただし、最も大きな効果は、数週間にわたって毎日継続することで得られます。研究では、4-8週間にわたり定期的にゆっくりした呼吸を行うと、不安症状、安静時心拍数、ストレスホルモンの値が測定可能な程度に低下することが示されています。筋力トレーニングと同じように考えてください。1回でも少しは役立ちますが、本当の変化は継続的な練習によって起こります。多くの方は、1日2回の練習を2-3週間続けると、不安が目に見えて軽減したと報告しています。",
+            "pt-br": "Você pode notar uma mudança sutil nos primeiros 1-3 minutos de prática (frequência cardíaca mais baixa e menos aperto no peito). No entanto, os maiores benefícios vêm da prática diária consistente ao longo de várias semanas. Estudos mostram que 4-8 semanas de respiração lenta regular produzem reduções mensuráveis nos sintomas de ansiedade, na frequência cardíaca em repouso e nos níveis dos hormônios do estresse. Pense nisso como um treinamento de força: uma sessão ajuda um pouco, mas as mudanças reais acontecem com a prática contínua. A maioria das pessoas relata uma redução perceptível da ansiedade após 2-3 semanas de prática duas vezes ao dia."
+          }
+        },
+        {
+          "messageId": "for.anxiety.voice-search.best-technique.answer",
+          "reason": "catalog_source_miss",
+          "sourcePath": "voiceSearch[0].answer",
+          "translations": {
+            "de-de": "Die beste Atemtechnik gegen Angst ist die Box-Atmung, auch taktische oder quadratische Atmung genannt. Atmen Sie 4 Sekunden ein, halten Sie 4 Sekunden, atmen Sie 4 Sekunden aus, halten Sie 4 Sekunden und wiederholen Sie dies 1-3 Minuten lang. Dieses Muster aktiviert Ihr parasympathisches Nervensystem, senkt Cortisol und durchbricht die Grübelschleife, die Angst verstärkt. Navy SEALs nutzen diese Technik vor besonders belastenden Einsätzen. Wechseln Sie bei akuten Panikattacken stattdessen zum physiologischen Seufzer.",
+            "es-es": "La mejor técnica de respiración para la ansiedad es la respiración cuadrada, también llamada respiración táctica o respiración en caja. Inhala durante 4 segundos, mantén durante 4 segundos, exhala durante 4 segundos, mantén durante 4 segundos y repite durante 1-3 minutos. Este patrón activa el sistema nervioso parasimpático, reduce el cortisol y rompe el bucle de rumiación que alimenta la ansiedad. Los Navy SEALs utilizan esta técnica antes de misiones de alto estrés. Para los ataques de pánico agudos, utiliza en su lugar el suspiro fisiológico.",
+            "fr-fr": "La meilleure technique respiratoire contre l’anxiété est la respiration carrée, également appelée respiration tactique ou respiration en carré. Inspirez pendant 4 secondes, retenez votre souffle pendant 4 secondes, expirez pendant 4 secondes, retenez à nouveau pendant 4 secondes, puis répétez pendant 1 à 3 minutes. Ce schéma active votre système nerveux parasympathique, réduit le cortisol et interrompt la boucle de rumination qui alimente l’anxiété. Les Navy SEALs utilisent cette technique avant des missions à haut risque. Pour les crises de panique aiguës, utilisez plutôt le soupir physiologique.",
+            "ja-jp": "不安に最も適した呼吸法は、タクティカル呼吸法やスクエア呼吸法とも呼ばれるボックス呼吸法です。4秒吸い、4秒止め、4秒吐き、4秒止める動作を1-3分繰り返します。このパターンは副交感神経系を活性化し、コルチゾールを下げ、不安を強める反復思考のループを断ち切ります。ネイビーシールズも緊張の大きい任務の前にこの方法を使います。急性のパニック発作には、代わりに生理的なため息を行ってください。",
+            "pt-br": "A melhor técnica de respiração para a ansiedade é a respiração quadrada, também chamada de respiração tática ou respiração em caixa. Inspire por 4 segundos, segure por 4 segundos, expire por 4 segundos, segure por 4 segundos e repita por 1-3 minutos. Esse padrão ativa o sistema nervoso parassimpático, reduz o cortisol e interrompe o ciclo de ruminação que alimenta a ansiedade. Os Navy SEALs usam essa técnica antes de missões de alto estresse. Para ataques de pânico agudos, use o suspiro fisiológico."
+          }
+        }
+      ],
+      "routeId": "for.anxiety",
+      "sourceRoute": "/for/anxiety"
+    }
+  ],
+  "schemaVersion": 1
+}

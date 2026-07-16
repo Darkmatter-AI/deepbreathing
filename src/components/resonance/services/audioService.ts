@@ -7,7 +7,12 @@
  */
  import { ModeName } from '../types';
 
-type CueType = 'inhale' | 'exhale' | 'hold';
+export type CueType = 'inhale' | 'exhale' | 'hold';
+
+export interface CuePlaybackOptions {
+  gainScale?: number;
+  pitchSemitones?: number;
+}
 
 // Pink-noise bed breath-coupled filter cutoff range. Tuned by ear: opens
 // enough to feel like the texture "brightens" on inhale without becoming
@@ -118,6 +123,8 @@ export class AudioService {
   private pinkNoiseAnalyser: AnalyserNode | null = null;
   private envelopeAnalyser: AnalyserNode | null = null;
   private debug = false;
+  private disposed = false;
+  private activeCueBuses = new Set<GainNode>();
   private mediaUnlocking: Promise<void> | null = null;
   private mediaUnlocked = false;
 
@@ -232,6 +239,7 @@ export class AudioService {
   }
 
   private initContext() {
+    if (this.disposed) return;
     if (!this.ctx && typeof window !== 'undefined') {
       const AudioCtor = window.AudioContext || (window as any).webkitAudioContext;
       if (!AudioCtor) return;
@@ -314,6 +322,7 @@ export class AudioService {
    * Handles Safari's "interrupted" state and recreates the context if it was closed.
    */
   private async ensureContextReady() {
+    if (this.disposed) return false;
     this.log('ensureContextReady:begin');
     this.initContext();
     if (!this.ctx) return false;
@@ -411,7 +420,7 @@ export class AudioService {
     }
 
     this.log('ensureContextReady:end', { state: this.ctx?.state });
-    return this.ctx?.state === 'running';
+    return !this.disposed && this.ctx?.state === 'running';
   }
 
   public async resume() {
@@ -566,6 +575,82 @@ export class AudioService {
     }
   }
 
+  public stopAmbient() {
+    this.stopDrone();
+    this.stopSubBass();
+    this.stopPhaseEnvelope();
+    this.stopPinkNoise();
+    this.stopBinaural();
+  }
+
+  public stopCues() {
+    if (!this.ctx) {
+      this.activeCueBuses.clear();
+      return;
+    }
+
+    const now = this.ctx.currentTime;
+    this.activeCueBuses.forEach((cueBus) => {
+      try {
+        cueBus.gain.cancelScheduledValues(now);
+        cueBus.gain.setValueAtTime(cueBus.gain.value, now);
+        cueBus.gain.linearRampToValueAtTime(0, now + 0.03);
+      } catch {
+        // Cue may already have ended while the page was backgrounding.
+      }
+    });
+  }
+
+  public async dispose() {
+    if (this.disposed) return;
+    this.disposed = true;
+
+    const context = this.ctx;
+    if (context && this.masterGain && context.state !== 'closed') {
+      try {
+        const now = context.currentTime;
+        this.masterGain.gain.cancelScheduledValues(now);
+        this.masterGain.gain.setValueAtTime(0, now);
+      } catch {
+        // Context may already be closing.
+      }
+    }
+
+    this.stopCues();
+    this.stopAmbient();
+
+    if (context && context.state !== 'closed') {
+      try {
+        await context.close();
+      } catch {
+        // Ignore browser shutdown races.
+      }
+    }
+
+    this.ctx = null;
+    this.masterGain = null;
+    this.masterCompressor = null;
+    this.masterLimiter = null;
+    this.masterTrim = null;
+    this.preCompAnalyser = null;
+    this.postLimitAnalyser = null;
+    this.droneAnalyser = null;
+    this.subBassAnalyser = null;
+    this.pinkNoiseAnalyser = null;
+    this.envelopeAnalyser = null;
+    this.droneNodes = [];
+    this.droneLfoNodes = [];
+    this.binauralNodes = [];
+    this.noiseNode = null;
+    this.subBassNode = null;
+    this.phaseEnvelopeNode = null;
+    this.droneLowpass = null;
+    this.droneArc = null;
+    this.cueNoiseBuffer = null;
+    this.cueReverbCache.clear();
+    this.activeCueBuses.clear();
+  }
+
   public async fadeOutAndSuspend(options: { fadeSeconds?: number } = {}) {
     const fadeSeconds = options.fadeSeconds ?? 0.35;
     if (!this.ctx || !this.masterGain) return;
@@ -607,7 +692,7 @@ export class AudioService {
   /**
    * Breathing cues now adapt oscillator types/envelopes to the color palette.
    */
-  public playCue(type: CueType, colorHex?: string) {
+  public playCue(type: CueType, colorHex?: string, options: CuePlaybackOptions = {}) {
     if (this.isMuted || !this.ctx || !this.masterGain) {
       // If context is suspended, try to resume
       if (this.ctx?.state === 'suspended') {
@@ -625,9 +710,16 @@ export class AudioService {
     const preset = this.getCuePreset(this.breathingMode, type, theme);
     const t = this.ctx.currentTime;
     const endTime = t + preset.duration;
+    const gainScale = Math.max(0, options.gainScale ?? 1);
+    const pitchSemitones = Math.max(-24, Math.min(24, options.pitchSemitones ?? 0));
 
     const cueBus = this.ctx.createGain();
     cueBus.gain.setValueAtTime(1, t);
+
+    const cueOutput = this.ctx.createGain();
+    cueOutput.gain.setValueAtTime(1, t);
+    cueOutput.connect(this.masterGain);
+    this.activeCueBuses.add(cueOutput);
 
     const masterLowpass = this.ctx.createBiquadFilter();
     masterLowpass.type = 'lowpass';
@@ -637,10 +729,9 @@ export class AudioService {
     const dryGain = this.ctx.createGain();
     dryGain.gain.setValueAtTime(1, t);
 
-    const output = this.masterGain;
     cueBus.connect(masterLowpass);
     masterLowpass.connect(dryGain);
-    dryGain.connect(output);
+    dryGain.connect(cueOutput);
 
     let convolver: ConvolverNode | null = null;
     let wetGain: GainNode | null = null;
@@ -652,13 +743,15 @@ export class AudioService {
         wetGain.gain.setValueAtTime(mix, t);
         masterLowpass.connect(convolver);
         convolver.connect(wetGain);
-        wetGain.connect(output);
+        wetGain.connect(cueOutput);
       }
     }
 
     const cleanup = () => {
+      this.activeCueBuses.delete(cueOutput);
       try {
         cueBus.disconnect();
+        cueOutput.disconnect();
         masterLowpass.disconnect();
         dryGain.disconnect();
         convolver?.disconnect();
@@ -691,7 +784,10 @@ export class AudioService {
         highpass.frequency.setValueAtTime(n.highpass, t);
 
         gain.gain.setValueAtTime(0.0001, t);
-        gain.gain.linearRampToValueAtTime(n.gain * this.cueVolume * this.cueNoiseScale, t + n.attack);
+        gain.gain.linearRampToValueAtTime(
+          n.gain * this.cueVolume * this.cueNoiseScale * gainScale,
+          t + n.attack,
+        );
         gain.gain.exponentialRampToValueAtTime(0.0001, t + n.attack + n.release);
 
         src.connect(lowpass);
@@ -710,12 +806,15 @@ export class AudioService {
       const gain = this.ctx.createGain();
 
       osc.type = tone.oscType;
-      osc.detune.setValueAtTime(tone.detune, t);
+      osc.detune.setValueAtTime(tone.detune + pitchSemitones * 100, t);
       osc.frequency.setValueAtTime(tone.freqStart, t);
       osc.frequency.exponentialRampToValueAtTime(Math.max(20, tone.freqEnd), endTime);
 
       gain.gain.setValueAtTime(0.0001, t);
-      gain.gain.linearRampToValueAtTime(tone.gain * this.cueVolume * this.cueToneScale, t + tone.attack);
+      gain.gain.linearRampToValueAtTime(
+        tone.gain * this.cueVolume * this.cueToneScale * gainScale,
+        t + tone.attack,
+      );
       gain.gain.exponentialRampToValueAtTime(0.0001, t + tone.attack + tone.release);
 
       osc.connect(gain);

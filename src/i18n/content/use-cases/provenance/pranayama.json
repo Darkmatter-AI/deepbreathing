@@ -1,0 +1,2996 @@
+{
+  "locales": {
+    "de-de": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "62093b8b8d59db7b2a2c7dd4ee6f9268bc78440b3a4fd6dffcca574a73cd9420",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "bc2a13197014310f39c7b3ce10f86e5022e363be3ecb0868444a9903ca1a561e",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "2b34c5441d772fb250d987d0e073777b7faca11f35f20e4ce9824f79902253d6",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-focus-title": {
+          "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-meditation-title": {
+          "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.watch-learn": {
+          "sourceHash": "749c5b04beadcb04ba360343552137e698cb4c1ff10cb680445f8b1f9ea5c543",
+          "status": "route-catalog-normalized"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "c00819ebeeee6739110e2031e5fb541760ef76e5f6aba229270bae3a22de7ab7",
+          "sourceText": "While pranayama is generally safe, some advanced techniques (vigorous breathing, extended retention) have contraindications. People with cardiovascular conditions, respiratory disorders, pregnancy, or recent surgery should consult a healthcare provider before beginning pranayama practice.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "ba6bbb3da36a14888fb2f34ab060770ae064ea7217ac0cb444a6aa99c4d66fb4",
+          "sourceText": "Pranayama comes from two Sanskrit words: 'prana' (life force, breath, vital energy) and 'ayama' (extension, expansion, control). It's often translated as 'breath control' or 'extension of the life force.' In yoga philosophy, prana is more than physical breath. It's the subtle energy that animates all life.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "aa8ab1dc53f8042381e6ada8317252dbb4009ff93beab8b3de38c0dacb2f27c4",
+          "sourceText": "What does pranayama mean?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "67959de408641702c7c621cef578a4549ca1ebc16e87411c4d257a2f2f8ab0dc",
+          "sourceText": "While there's overlap, pranayama traditionally includes philosophical context (prana, nadis, chakras), specific hand positions (mudras), and is practiced as part of the eight limbs of yoga. Modern breathing exercises often focus purely on physiological effects. That said, many 'breathing exercises' taught today derive directly from pranayama techniques.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].question": {
+          "sourceHash": "f54019837a495df25cb3290568e9f46b87a4e2219dde24eb438e77aa32bd93a5",
+          "sourceText": "What's the difference between pranayama and regular breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "fe46545696a8278e2d2eaba8d58587529afd523755b89e4e2a8e967a4853605c",
+          "sourceText": "Start with Nadi Shodhana (alternate nostril breathing). It's safe, balancing, and accessible. Once comfortable, add Ujjayi for yoga practice. Avoid vigorous techniques like Kapalabhati or Bhastrika until you have several months of foundational practice.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "8ee99824043c4b9368f51a4c2d31cc5d38f0c0e4157b0bd4462a22f5ddc54f8c",
+          "sourceText": "Which pranayama is best for beginners?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "186a7bad09e9b496e41331d8c42f80acbccaaa032eea829660a3c69cf13047e8",
+          "sourceText": "Yes, extensively. Slow pranayama techniques like Nadi Shodhana activate the parasympathetic nervous system, directly countering the anxiety response. Research shows regular practice reduces cortisol levels and anxiety symptoms. However, avoid vigorous breathing during acute anxiety, stick to slow, gentle techniques.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "978ae42143bbe5b015d767f301a4876f78a9b66f085880153c638284a4dcf14d",
+          "sourceText": "Can pranayama help with anxiety?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "fcb783531d527638758d8ca91d9348a097a844677848ab0dee976c64db28aa75",
+          "sourceText": "For beginners, 5-10 minutes daily is sufficient. Consistency matters more than duration, daily short practice builds habit and creates cumulative benefits. Advanced practitioners may practice 20-30 minutes or longer, but this should develop gradually over months and years.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "b94ef9ed6b38731a55487173df5a27867df446cfacf68069cb127b983e07ad05",
+          "sourceText": "How long should I practice pranayama each day?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "e127925ee710c1db61aa4a54fd349c87788cb4de025121ec58368dee40667680",
+          "sourceText": "We currently offer visualizers for Nadi Shodhana (alternate nostril breathing) and Ujjayi (ocean breath). Both are foundational pranayama techniques suitable for beginners. Use the links below to practice with guided timing.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].question": {
+          "sourceHash": "54844f51429a3a597aa976cd89f0fdf358b9ee6d6ac2af6f286242f3c366b18e",
+          "sourceText": "What pranayama techniques do you offer on this site?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[6].answer": {
+          "sourceHash": "6103d634dbbaac3ae26ffb7611133fa1229143c98c81bc89c7dd5317eccf9df9",
+          "sourceText": "Modern Western breathing exercises (box breathing, 4-7-8, coherent breathing) are often simplified, secularized versions of pranayama techniques. The key differences: (1) Context, pranayama is traditionally practiced as part of yoga's eight limbs, with philosophical underpinnings about prana and subtle energy. Western approaches focus purely on physiology. (2) Techniques, pranayama includes advanced practices like vigorous breathing (Kapalabhati), breath retention (Kumbhaka), and energy locks (Bandhas) that aren't common in Western exercises. (3) Goals, Western exercises typically target specific outcomes (stress relief, focus); pranayama aims for broader transformation of body-mind-spirit. For practical daily use, they're often interchangeable, the breath doesn't know which tradition you're following.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[6].question": {
+          "sourceHash": "7a723f31bb9819831b7791ded33770256919202dd3864f4dee1ea6892179f743",
+          "sourceText": "What's the difference between pranayama and Western breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "b94663fa7c49d48e0ea8b9abd39dc92e0c8e2715bfc644a5c43808266a087784",
+          "sourceText": "Pranayama breathing is the yogic science of breath control, a 5,000-year-old practice that modern science is finally catching up with. Far more than simple deep breathing, pranayama offers specific techniques for energy, relaxation, focus, and spiritual practice. This guide introduces the most effective pranayama techniques and how to practice them safely.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "2fbd7d92ac0f8363b0ea0339ddb9ba6bfd2d488ce410c010e7cc606c07689230",
+          "sourceText": "Ancient breath practices for modern life",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+          "sourceText": "Pranayama Breathing: The Complete Guide to Yogic Breathing",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "043f78408c697e999b20dc3aab2ea9e227408cef5f64a448c665405b9ded1193",
+          "sourceText": "Begin with diaphragmatic breathing (belly breathing) before trying specific pranayama techniques. This is the foundation of all yogic breath practices.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "fcd48afeaa3af83287028cfa130e6be9bf3e08e16fa8695002bb31d73a63c9bc",
+          "sourceText": "Start with the basics",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "f0799cf8848c0b5158c213f1549169e38d6e997d29c87da4e09fa3680680df5e",
+          "sourceText": "1-2 weeks",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "3076f07da1f4fc7a5b69b4f072fedbfd37229e02b4021fa6248c46a789a03661",
+          "sourceText": "Alternate nostril breathing is the gateway to pranayama: safe, balancing, and suitable for beginners. Practice 5-10 minutes daily until it becomes comfortable.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "6fd8ced4a9e8e979787111ef7909e2da27220698b9a9ea8587dbd9de83aeb2e4",
+          "sourceText": "Learn Nadi Shodhana first",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "56d555b5d565e8f66b3ad679135fc828f9df5e8c7bfbb8e8a57bc8d2e37ab918",
+          "sourceText": "5-10 minutes daily",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "ab1aaf04906f48fb9cdfc3654fdee887b82bda34fe31afe9a77c721c67a27169",
+          "sourceText": "Learn the ocean breath (Ujjayi) for use during asana practice. The slight throat constriction creates heat and focus. Practice separately before integrating with movement.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "6a94c9bdee5add946e7380080e3edefd4bbc95a09e9636cbbb5299b7e94f8c3e",
+          "sourceText": "Add Ujjayi for yoga practice",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "8d59e6f5a117c9e5904585499a3c470be5c2bbe25ce2122dc6b576b209a3d0b2",
+          "sourceText": "During yoga",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "e3ae0a20e8d29d2c1381f57a1e80c917c2c14b3218fd654dfc58feda83ee9e6b",
+          "sourceText": "Traditional guidance recommends pranayama at least 3 hours after eating. Morning practice before breakfast is ideal. Light clothing and fresh air support the practice.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "cffd90a28878a51ac5fd57541f0843101bb1c2ad71b461f263a338bb689cc6a0",
+          "sourceText": "Practice on an empty stomach",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "f2733c2776032dedec4f716ebdec0ec82aa8d35a5f5d420f6f98a164cf210cb3",
+          "sourceText": "Morning, empty stomach",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "194ace24c82f577c9634457476d144ec288dea3d53c010afafd6bc1c96fbad0e",
+          "sourceText": "Start with short sessions (5 minutes) and simple techniques. Advanced practices like Kapalabhati or extended retention should only be attempted after establishing a foundation.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "ef2b571ae30e2f448e7d786e5b492e4f6c6a24698be15ebb499d97ecd228f4d1",
+          "sourceText": "Build gradually",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "76c40426131cff273280588897c9739d49bfd224a18b99fb3150d47f1c913cb0",
+          "sourceText": "Build over months",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "1a215d7dbd7d7e45f139e62bff1f3360b4aee7b753b2c444bfa36add7688ab4c",
+          "sourceText": "While basic pranayama is safe for self-study, advanced techniques benefit from in-person guidance. A qualified teacher can correct subtle errors and adapt practices to your needs.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "7fd4656c919210df9ec146218dc99aeae6e763c3fd05e0a106f2c0cc256e1e59",
+          "sourceText": "Work with a teacher for advanced practices",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "1b7811fc29fe6f0318524026f405e5e17e04b25825d3f7bdf03c671521eb7526",
+          "sourceText": "For advanced techniques",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "364952cd1a52bd18e890dfd259538112c36af6648870d3fa1211e704202ce53a",
+          "sourceText": "Consistency matters more than duration, 5 minutes daily beats 30 minutes weekly",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "93d08dbbabea89ae8d2df84253f92ebee0b7a8805e9b462f9bd58d3f933af2f9",
+          "sourceText": "Practice in a clean, quiet space with good ventilation",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "8661f41efb21553cb19c74f6c4b9034ebd46d4de2be98b7d60d27fc8eeee92f9",
+          "sourceText": "Never strain or force the breath, ease is the sign of correct practice",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "b6739c06b4b8824002fe0b3253e04645d24b660c1c7fa0aab0d018ebc553f1a4",
+          "sourceText": "Avoid vigorous pranayama (Kapalabhati, Bhastrika) during pregnancy or menstruation",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "468ed07377d58372909d740616c784111436cead3204c70962f62d22059c96b5",
+          "sourceText": "If you feel dizzy or anxious, stop immediately and return to normal breathing",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "7df145ab5dc845fc145feed7724f63628b0685f34b9be74074f83518032befb5",
+          "sourceText": "Learn pranayama breathing techniques: Nadi Shodhana, Ujjayi, Kapalabhati, and more. Ancient yogic practices with modern science. Free visualizers included.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "43c64bb5f32a7af6b7acd4750185d5fc229ab324a10e10aee7176a0060c9d8e8",
+          "sourceText": "Learn pranayama—the yogic science of breath control. Nadi Shodhana, Ujjayi, and more. Free visualizers.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "83e0df869953bf80f6c8468ed477bc99a3c9826a4dc48438ca3faa9e22b3d4d6",
+          "sourceText": "Pranayama Breathing: Complete Guide to Yogic Breathing",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "83a1f76c71eda60015f80ba4f2b33eb71521b9f2c70b463e1e1fbaca91dba550",
+          "sourceText": "Pranayama Breathing: Complete Guide to Yogic Breathing Techniques (2026) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "520b7a7167579c1910f565b021f7e29e6999ed699418fbd11a0bde75cd51caba",
+          "sourceText": "Ancient breath practices for modern life. Learn pranayama techniques with free visualizers.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+          "sourceText": "Pranayama Breathing: The Complete Guide to Yogic Breathing",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "060d81b385fb7db6d7c1ddebfed929cc2be3a3d823bb24a789665e840dc2c2b6",
+          "sourceText": "Modern life is filled with chronic, low-grade stress that our bodies weren't designed for. We breathe shallowly, live in fight-or-flight mode, and rarely give our nervous systems a chance to rest. The ancient yogis understood that breath is the bridge between body and mind, and developed specific techniques to shift our physiology and mental state at will.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "472c137720d6b9fefc769491fc71ab8a6c96afb8738c4764b0e9fbc59de32e64",
+          "sourceText": "Modern Stress, Ancient Solutions",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "8719c79ae7225cf3fd0d3834622d25eac37a23697500ffe93ce2cf95772df80a",
+          "sourceText": "Chronic shallow breathing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "b729e65126454155ca645323699158008018490093906574d5c1af542140fae4",
+          "sourceText": "Feeling 'wired but tired'",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "0168c8e956d9d9efc1b98446359085b627ddb4b6e4ae40b412ccc0ede16eafb3",
+          "sourceText": "Difficulty concentrating or meditating",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "a5d8725807db249adc287c2ad5b16c1d53a80872c0ab5180a103a9cc8f312357",
+          "sourceText": "Anxiety and racing thoughts",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "26d36fd030b4bd2d64a1d1712ae35894cfc3f1af5c1048280cea16bdc4e4d1b3",
+          "sourceText": "Low energy despite adequate sleep",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "03fda5b5ceaf0fdd71bb5fa74187b2583c31631675a65bc76e0840d1b37e35e8",
+          "sourceText": "Disconnection from body and present moment",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "7abae0de83e1498395fd72ac38d44b5679e21e25e53d17d45d6c4cb681af3bc5",
+          "sourceText": "Research showing pranayama practices improve cardiovascular function and reduce stress markers.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "538605b9be680641b1314fb87aaf2b993e02a00cbfac09ef78913cb748d2b02a",
+          "sourceText": "Effect of pranayama on stress and cardiovascular function",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "44c54fb03a9f3acce44536740ad47d7599678256093b01f65a86d21d720be1f5",
+          "sourceText": "Comprehensive review of pranayama research covering neurological, respiratory, and psychological effects.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "ff2410a3a047fa1b06051177d342315aa635622011f70d6145db880f54241b98",
+          "sourceText": "Effects of yogic breath regulation: A narrative review",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "33090a398a4207c08dc6f17591848f65de62d3b71c50abb39b8fbfbaf8dbb4c7",
+          "sourceText": "Study demonstrating that Nadi Shodhana shifts autonomic balance toward parasympathetic dominance.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "e026076c549140b8851cebcf01f0c8ed026851fd21ee35d4bb52c3b55906ec02",
+          "sourceText": "Alternate nostril breathing and autonomic function",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "2a7b6982078dbb12ba6ddc33a5254f9555a2f407df668127772be9876a0744aa",
+          "sourceText": "Practice Nadi Shodhana with our interactive visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "eb153116d5268f090fc0d7fa452140bde05e1a22e09071fa54160ccacf6cfc3a",
+          "sourceText": "Pranayama is traditional preparation for meditation",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "405b8c52b32ff75cf8824195a7d47a6c566861bc58eb3188f05eb5a99ec4488a",
+          "sourceText": "Use pranayama techniques to sharpen concentration",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "c7e964aa268161933d62c6b7b5c150043f3374d47ff0a9e66e4da3112943dfbf",
+          "sourceText": "The Science of Pranayama",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "3ae647c237688904b6ae8a0b5055309b3ba550efb37faf500a8e7fd91cbf7e0a",
+          "sourceText": "Different pranayama techniques shift the balance between sympathetic (fight-or-flight) and parasympathetic (rest-and-digest) nervous systems. Slow techniques calm; vigorous ones energize.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "947f62145a7608201af9f0b4d7b5c533d2938589c7cc50836c61d09d2a06e0df",
+          "sourceText": "Autonomic Balance",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "f3a6262c9e705e36588451f64d1e08a272861d1f725d3d0cfdb8184cd61d5afd",
+          "sourceText": "Alternate nostril breathing (Nadi Shodhana) has been shown to balance activity between left and right brain hemispheres, which may explain its effects on focus and emotional equilibrium.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "6e3c74ba60aa102535e00ea280b6d5f7b24952fcd0d189e63241430f81fd616a",
+          "sourceText": "Brain Hemisphere Balance",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "3facaf4ff7c6a36eaff021c92718798e55cc33b4c40c9f286fe435f86492ed4f",
+          "sourceText": "Slow pranayama practices increase heart rate variability (HRV), a key marker of stress resilience and overall health. Higher HRV is associated with better emotional regulation and longevity.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "986bd4d046b4baec8f949c7bafdd36b24d608a4f50dda165acbf9a5fc824f050",
+          "sourceText": "Heart Rate Variability",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "20e02ce1df9af4e9221607f1ba42b53ce4f7a8b1e157f77bcf1a7e5bf7de65b5",
+          "sourceText": "Pranayama with breath retention (kumbhaka) gradually increases tolerance to carbon dioxide, which can reduce anxiety and improve breath efficiency.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "9a59dc6459553aea233518634d5fbdc8762f9954c22d88178bd822e2899d8662",
+          "sourceText": "Carbon Dioxide Tolerance",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "14fdea8d88e795af05d7b7d6a4848eef5d874d7332d2b375a0873b74633ddbf6",
+          "sourceText": "Pranayama comes from 'prana' (life force/breath) and 'ayama' (extension/control). Unlike simple relaxation breathing, pranayama includes specific techniques for different purposes: calming (Nadi Shodhana), energizing (Kapalabhati), focusing (Ujjayi), and more. Regular practice creates lasting changes in your nervous system and mental clarity.",
+          "status": "route-catalog-exact"
+        },
+        "solution.heading": {
+          "sourceHash": "367d255faebbdcb333f44440e5f6fa8e2922625dd979ab1ab9f136dc016cc0c4",
+          "sourceText": "Pranayama: The Breath of Life",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "8d58c87f3e3161ca91cc4bc22ad2f6923454d44fce8ed743845cec8c00a69c67",
+          "sourceText": "We recommend starting with Nadi Shodhana (alternate nostril breathing) because it's safe, accessible, and profoundly balancing. It calms without sedating, focuses without stimulating, and is used across traditions as a preparation for meditation.",
+          "status": "route-catalog-exact"
+        },
+        "video.description": {
+          "sourceHash": "c201c4d294aaf56d8e67a930c5235fb36827a39be7f55e3e5abf0836ff793e04",
+          "sourceText": "Bestselling author James Nestor (Breath: The New Science of a Lost Art) explains the ancient yogic breathing pattern rediscovered by modern science: 5.5 seconds in, 5.5 seconds out: a rhythm found across pranayama traditions.",
+          "status": "route-catalog-normalized"
+        },
+        "video.title": {
+          "sourceHash": "ab8ec13e5e7a98dd73f271548ab96f92aa638f92fed61d0f38c655a3ecfda086",
+          "sourceText": "James Nestor on the Perfect Breath",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "9007b02e2f3d49f243807213398026984abfb1ff971f15f60a644622e8814e4f",
+          "sourceText": "Pranayama breathing is the yogic practice of controlling the breath to influence energy, mood, and focus. Common pranayama breathing techniques include Nadi Shodhana (alternate nostril), Ujjayi (ocean breath), and slow counted breathing. Practice gently for 5-10 minutes to calm the nervous system and prepare for meditation.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "cf2f51525851007010981ae2a08b9ebbfef096c11cfea8bc5360c3c3e16c5166",
+          "sourceText": "What is pranayama breathing?",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "es-es": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "62093b8b8d59db7b2a2c7dd4ee6f9268bc78440b3a4fd6dffcca574a73cd9420",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "bc2a13197014310f39c7b3ce10f86e5022e363be3ecb0868444a9903ca1a561e",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "2b34c5441d772fb250d987d0e073777b7faca11f35f20e4ce9824f79902253d6",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-focus-title": {
+          "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-meditation-title": {
+          "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.watch-learn": {
+          "sourceHash": "749c5b04beadcb04ba360343552137e698cb4c1ff10cb680445f8b1f9ea5c543",
+          "status": "route-catalog-normalized"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "c00819ebeeee6739110e2031e5fb541760ef76e5f6aba229270bae3a22de7ab7",
+          "sourceText": "While pranayama is generally safe, some advanced techniques (vigorous breathing, extended retention) have contraindications. People with cardiovascular conditions, respiratory disorders, pregnancy, or recent surgery should consult a healthcare provider before beginning pranayama practice.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "ba6bbb3da36a14888fb2f34ab060770ae064ea7217ac0cb444a6aa99c4d66fb4",
+          "sourceText": "Pranayama comes from two Sanskrit words: 'prana' (life force, breath, vital energy) and 'ayama' (extension, expansion, control). It's often translated as 'breath control' or 'extension of the life force.' In yoga philosophy, prana is more than physical breath. It's the subtle energy that animates all life.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "aa8ab1dc53f8042381e6ada8317252dbb4009ff93beab8b3de38c0dacb2f27c4",
+          "sourceText": "What does pranayama mean?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "67959de408641702c7c621cef578a4549ca1ebc16e87411c4d257a2f2f8ab0dc",
+          "sourceText": "While there's overlap, pranayama traditionally includes philosophical context (prana, nadis, chakras), specific hand positions (mudras), and is practiced as part of the eight limbs of yoga. Modern breathing exercises often focus purely on physiological effects. That said, many 'breathing exercises' taught today derive directly from pranayama techniques.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].question": {
+          "sourceHash": "f54019837a495df25cb3290568e9f46b87a4e2219dde24eb438e77aa32bd93a5",
+          "sourceText": "What's the difference between pranayama and regular breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "fe46545696a8278e2d2eaba8d58587529afd523755b89e4e2a8e967a4853605c",
+          "sourceText": "Start with Nadi Shodhana (alternate nostril breathing). It's safe, balancing, and accessible. Once comfortable, add Ujjayi for yoga practice. Avoid vigorous techniques like Kapalabhati or Bhastrika until you have several months of foundational practice.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "8ee99824043c4b9368f51a4c2d31cc5d38f0c0e4157b0bd4462a22f5ddc54f8c",
+          "sourceText": "Which pranayama is best for beginners?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "186a7bad09e9b496e41331d8c42f80acbccaaa032eea829660a3c69cf13047e8",
+          "sourceText": "Yes, extensively. Slow pranayama techniques like Nadi Shodhana activate the parasympathetic nervous system, directly countering the anxiety response. Research shows regular practice reduces cortisol levels and anxiety symptoms. However, avoid vigorous breathing during acute anxiety, stick to slow, gentle techniques.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "978ae42143bbe5b015d767f301a4876f78a9b66f085880153c638284a4dcf14d",
+          "sourceText": "Can pranayama help with anxiety?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "fcb783531d527638758d8ca91d9348a097a844677848ab0dee976c64db28aa75",
+          "sourceText": "For beginners, 5-10 minutes daily is sufficient. Consistency matters more than duration, daily short practice builds habit and creates cumulative benefits. Advanced practitioners may practice 20-30 minutes or longer, but this should develop gradually over months and years.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "b94ef9ed6b38731a55487173df5a27867df446cfacf68069cb127b983e07ad05",
+          "sourceText": "How long should I practice pranayama each day?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "e127925ee710c1db61aa4a54fd349c87788cb4de025121ec58368dee40667680",
+          "sourceText": "We currently offer visualizers for Nadi Shodhana (alternate nostril breathing) and Ujjayi (ocean breath). Both are foundational pranayama techniques suitable for beginners. Use the links below to practice with guided timing.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].question": {
+          "sourceHash": "54844f51429a3a597aa976cd89f0fdf358b9ee6d6ac2af6f286242f3c366b18e",
+          "sourceText": "What pranayama techniques do you offer on this site?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[6].answer": {
+          "sourceHash": "6103d634dbbaac3ae26ffb7611133fa1229143c98c81bc89c7dd5317eccf9df9",
+          "sourceText": "Modern Western breathing exercises (box breathing, 4-7-8, coherent breathing) are often simplified, secularized versions of pranayama techniques. The key differences: (1) Context, pranayama is traditionally practiced as part of yoga's eight limbs, with philosophical underpinnings about prana and subtle energy. Western approaches focus purely on physiology. (2) Techniques, pranayama includes advanced practices like vigorous breathing (Kapalabhati), breath retention (Kumbhaka), and energy locks (Bandhas) that aren't common in Western exercises. (3) Goals, Western exercises typically target specific outcomes (stress relief, focus); pranayama aims for broader transformation of body-mind-spirit. For practical daily use, they're often interchangeable, the breath doesn't know which tradition you're following.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[6].question": {
+          "sourceHash": "7a723f31bb9819831b7791ded33770256919202dd3864f4dee1ea6892179f743",
+          "sourceText": "What's the difference between pranayama and Western breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "b94663fa7c49d48e0ea8b9abd39dc92e0c8e2715bfc644a5c43808266a087784",
+          "sourceText": "Pranayama breathing is the yogic science of breath control, a 5,000-year-old practice that modern science is finally catching up with. Far more than simple deep breathing, pranayama offers specific techniques for energy, relaxation, focus, and spiritual practice. This guide introduces the most effective pranayama techniques and how to practice them safely.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "2fbd7d92ac0f8363b0ea0339ddb9ba6bfd2d488ce410c010e7cc606c07689230",
+          "sourceText": "Ancient breath practices for modern life",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+          "sourceText": "Pranayama Breathing: The Complete Guide to Yogic Breathing",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "043f78408c697e999b20dc3aab2ea9e227408cef5f64a448c665405b9ded1193",
+          "sourceText": "Begin with diaphragmatic breathing (belly breathing) before trying specific pranayama techniques. This is the foundation of all yogic breath practices.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "fcd48afeaa3af83287028cfa130e6be9bf3e08e16fa8695002bb31d73a63c9bc",
+          "sourceText": "Start with the basics",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "f0799cf8848c0b5158c213f1549169e38d6e997d29c87da4e09fa3680680df5e",
+          "sourceText": "1-2 weeks",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "3076f07da1f4fc7a5b69b4f072fedbfd37229e02b4021fa6248c46a789a03661",
+          "sourceText": "Alternate nostril breathing is the gateway to pranayama: safe, balancing, and suitable for beginners. Practice 5-10 minutes daily until it becomes comfortable.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "6fd8ced4a9e8e979787111ef7909e2da27220698b9a9ea8587dbd9de83aeb2e4",
+          "sourceText": "Learn Nadi Shodhana first",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "56d555b5d565e8f66b3ad679135fc828f9df5e8c7bfbb8e8a57bc8d2e37ab918",
+          "sourceText": "5-10 minutes daily",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "ab1aaf04906f48fb9cdfc3654fdee887b82bda34fe31afe9a77c721c67a27169",
+          "sourceText": "Learn the ocean breath (Ujjayi) for use during asana practice. The slight throat constriction creates heat and focus. Practice separately before integrating with movement.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "6a94c9bdee5add946e7380080e3edefd4bbc95a09e9636cbbb5299b7e94f8c3e",
+          "sourceText": "Add Ujjayi for yoga practice",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "8d59e6f5a117c9e5904585499a3c470be5c2bbe25ce2122dc6b576b209a3d0b2",
+          "sourceText": "During yoga",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "e3ae0a20e8d29d2c1381f57a1e80c917c2c14b3218fd654dfc58feda83ee9e6b",
+          "sourceText": "Traditional guidance recommends pranayama at least 3 hours after eating. Morning practice before breakfast is ideal. Light clothing and fresh air support the practice.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "cffd90a28878a51ac5fd57541f0843101bb1c2ad71b461f263a338bb689cc6a0",
+          "sourceText": "Practice on an empty stomach",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "f2733c2776032dedec4f716ebdec0ec82aa8d35a5f5d420f6f98a164cf210cb3",
+          "sourceText": "Morning, empty stomach",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "194ace24c82f577c9634457476d144ec288dea3d53c010afafd6bc1c96fbad0e",
+          "sourceText": "Start with short sessions (5 minutes) and simple techniques. Advanced practices like Kapalabhati or extended retention should only be attempted after establishing a foundation.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "ef2b571ae30e2f448e7d786e5b492e4f6c6a24698be15ebb499d97ecd228f4d1",
+          "sourceText": "Build gradually",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "76c40426131cff273280588897c9739d49bfd224a18b99fb3150d47f1c913cb0",
+          "sourceText": "Build over months",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "1a215d7dbd7d7e45f139e62bff1f3360b4aee7b753b2c444bfa36add7688ab4c",
+          "sourceText": "While basic pranayama is safe for self-study, advanced techniques benefit from in-person guidance. A qualified teacher can correct subtle errors and adapt practices to your needs.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "7fd4656c919210df9ec146218dc99aeae6e763c3fd05e0a106f2c0cc256e1e59",
+          "sourceText": "Work with a teacher for advanced practices",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "1b7811fc29fe6f0318524026f405e5e17e04b25825d3f7bdf03c671521eb7526",
+          "sourceText": "For advanced techniques",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "364952cd1a52bd18e890dfd259538112c36af6648870d3fa1211e704202ce53a",
+          "sourceText": "Consistency matters more than duration, 5 minutes daily beats 30 minutes weekly",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "93d08dbbabea89ae8d2df84253f92ebee0b7a8805e9b462f9bd58d3f933af2f9",
+          "sourceText": "Practice in a clean, quiet space with good ventilation",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "8661f41efb21553cb19c74f6c4b9034ebd46d4de2be98b7d60d27fc8eeee92f9",
+          "sourceText": "Never strain or force the breath, ease is the sign of correct practice",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "b6739c06b4b8824002fe0b3253e04645d24b660c1c7fa0aab0d018ebc553f1a4",
+          "sourceText": "Avoid vigorous pranayama (Kapalabhati, Bhastrika) during pregnancy or menstruation",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "468ed07377d58372909d740616c784111436cead3204c70962f62d22059c96b5",
+          "sourceText": "If you feel dizzy or anxious, stop immediately and return to normal breathing",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "7df145ab5dc845fc145feed7724f63628b0685f34b9be74074f83518032befb5",
+          "sourceText": "Learn pranayama breathing techniques: Nadi Shodhana, Ujjayi, Kapalabhati, and more. Ancient yogic practices with modern science. Free visualizers included.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "43c64bb5f32a7af6b7acd4750185d5fc229ab324a10e10aee7176a0060c9d8e8",
+          "sourceText": "Learn pranayama: the yogic science of breath control. Nadi Shodhana, Ujjayi, and more. Free visualizers.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "83e0df869953bf80f6c8468ed477bc99a3c9826a4dc48438ca3faa9e22b3d4d6",
+          "sourceText": "Pranayama Breathing: Complete Guide to Yogic Breathing",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "83a1f76c71eda60015f80ba4f2b33eb71521b9f2c70b463e1e1fbaca91dba550",
+          "sourceText": "Pranayama: Complete Guide to Yogic Breathing (2026)",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "520b7a7167579c1910f565b021f7e29e6999ed699418fbd11a0bde75cd51caba",
+          "sourceText": "Ancient breath practices for modern life. Learn pranayama techniques with free visualizers.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+          "sourceText": "Pranayama Breathing: The Complete Guide to Yogic Breathing",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "060d81b385fb7db6d7c1ddebfed929cc2be3a3d823bb24a789665e840dc2c2b6",
+          "sourceText": "Modern life is filled with chronic, low-grade stress that our bodies weren't designed for. We breathe shallowly, live in fight-or-flight mode, and rarely give our nervous systems a chance to rest. The ancient yogis understood that breath is the bridge between body and mind, and developed specific techniques to shift our physiology and mental state at will.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "472c137720d6b9fefc769491fc71ab8a6c96afb8738c4764b0e9fbc59de32e64",
+          "sourceText": "Modern Stress, Ancient Solutions",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "8719c79ae7225cf3fd0d3834622d25eac37a23697500ffe93ce2cf95772df80a",
+          "sourceText": "Chronic shallow breathing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "b729e65126454155ca645323699158008018490093906574d5c1af542140fae4",
+          "sourceText": "Feeling 'wired but tired'",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "0168c8e956d9d9efc1b98446359085b627ddb4b6e4ae40b412ccc0ede16eafb3",
+          "sourceText": "Difficulty concentrating or meditating",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "a5d8725807db249adc287c2ad5b16c1d53a80872c0ab5180a103a9cc8f312357",
+          "sourceText": "Anxiety and racing thoughts",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "26d36fd030b4bd2d64a1d1712ae35894cfc3f1af5c1048280cea16bdc4e4d1b3",
+          "sourceText": "Low energy despite adequate sleep",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "03fda5b5ceaf0fdd71bb5fa74187b2583c31631675a65bc76e0840d1b37e35e8",
+          "sourceText": "Disconnection from body and present moment",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "7abae0de83e1498395fd72ac38d44b5679e21e25e53d17d45d6c4cb681af3bc5",
+          "sourceText": "Research showing pranayama practices improve cardiovascular function and reduce stress markers.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "538605b9be680641b1314fb87aaf2b993e02a00cbfac09ef78913cb748d2b02a",
+          "sourceText": "Effect of pranayama on stress and cardiovascular function",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "44c54fb03a9f3acce44536740ad47d7599678256093b01f65a86d21d720be1f5",
+          "sourceText": "Comprehensive review of pranayama research covering neurological, respiratory, and psychological effects.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "ff2410a3a047fa1b06051177d342315aa635622011f70d6145db880f54241b98",
+          "sourceText": "Effects of yogic breath regulation: A narrative review",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "33090a398a4207c08dc6f17591848f65de62d3b71c50abb39b8fbfbaf8dbb4c7",
+          "sourceText": "Study demonstrating that Nadi Shodhana shifts autonomic balance toward parasympathetic dominance.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "e026076c549140b8851cebcf01f0c8ed026851fd21ee35d4bb52c3b55906ec02",
+          "sourceText": "Alternate nostril breathing and autonomic function",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "2a7b6982078dbb12ba6ddc33a5254f9555a2f407df668127772be9876a0744aa",
+          "sourceText": "Practice Nadi Shodhana with our interactive visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "eb153116d5268f090fc0d7fa452140bde05e1a22e09071fa54160ccacf6cfc3a",
+          "sourceText": "Pranayama is traditional preparation for meditation",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "405b8c52b32ff75cf8824195a7d47a6c566861bc58eb3188f05eb5a99ec4488a",
+          "sourceText": "Use pranayama techniques to sharpen concentration",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "c7e964aa268161933d62c6b7b5c150043f3374d47ff0a9e66e4da3112943dfbf",
+          "sourceText": "The Science of Pranayama",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "3ae647c237688904b6ae8a0b5055309b3ba550efb37faf500a8e7fd91cbf7e0a",
+          "sourceText": "Different pranayama techniques shift the balance between sympathetic (fight-or-flight) and parasympathetic (rest-and-digest) nervous systems. Slow techniques calm; vigorous ones energize.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "947f62145a7608201af9f0b4d7b5c533d2938589c7cc50836c61d09d2a06e0df",
+          "sourceText": "Autonomic Balance",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "f3a6262c9e705e36588451f64d1e08a272861d1f725d3d0cfdb8184cd61d5afd",
+          "sourceText": "Alternate nostril breathing (Nadi Shodhana) has been shown to balance activity between left and right brain hemispheres, which may explain its effects on focus and emotional equilibrium.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "6e3c74ba60aa102535e00ea280b6d5f7b24952fcd0d189e63241430f81fd616a",
+          "sourceText": "Brain Hemisphere Balance",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "3facaf4ff7c6a36eaff021c92718798e55cc33b4c40c9f286fe435f86492ed4f",
+          "sourceText": "Slow pranayama practices increase heart rate variability (HRV), a key marker of stress resilience and overall health. Higher HRV is associated with better emotional regulation and longevity.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "986bd4d046b4baec8f949c7bafdd36b24d608a4f50dda165acbf9a5fc824f050",
+          "sourceText": "Heart Rate Variability",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "20e02ce1df9af4e9221607f1ba42b53ce4f7a8b1e157f77bcf1a7e5bf7de65b5",
+          "sourceText": "Pranayama with breath retention (kumbhaka) gradually increases tolerance to carbon dioxide, which can reduce anxiety and improve breath efficiency.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "9a59dc6459553aea233518634d5fbdc8762f9954c22d88178bd822e2899d8662",
+          "sourceText": "Carbon Dioxide Tolerance",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "14fdea8d88e795af05d7b7d6a4848eef5d874d7332d2b375a0873b74633ddbf6",
+          "sourceText": "Pranayama comes from 'prana' (life force/breath) and 'ayama' (extension/control). Unlike simple relaxation breathing, pranayama includes specific techniques for different purposes: calming (Nadi Shodhana), energizing (Kapalabhati), focusing (Ujjayi), and more. Regular practice creates lasting changes in your nervous system and mental clarity.",
+          "status": "route-catalog-exact"
+        },
+        "solution.heading": {
+          "sourceHash": "367d255faebbdcb333f44440e5f6fa8e2922625dd979ab1ab9f136dc016cc0c4",
+          "sourceText": "Pranayama: The Breath of Life",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "8d58c87f3e3161ca91cc4bc22ad2f6923454d44fce8ed743845cec8c00a69c67",
+          "sourceText": "We recommend starting with Nadi Shodhana (alternate nostril breathing) because it's safe, accessible, and profoundly balancing. It calms without sedating, focuses without stimulating, and is used across traditions as a preparation for meditation.",
+          "status": "route-catalog-exact"
+        },
+        "video.description": {
+          "sourceHash": "c201c4d294aaf56d8e67a930c5235fb36827a39be7f55e3e5abf0836ff793e04",
+          "sourceText": "Bestselling author James Nestor (Breath: The New Science of a Lost Art) explains the ancient yogic breathing pattern rediscovered by modern science: 5.5 seconds in, 5.5 seconds out: a rhythm found across pranayama traditions.",
+          "status": "route-catalog-normalized"
+        },
+        "video.title": {
+          "sourceHash": "ab8ec13e5e7a98dd73f271548ab96f92aa638f92fed61d0f38c655a3ecfda086",
+          "sourceText": "James Nestor on the Perfect Breath",
+          "status": "repo-reviewed-manual"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "9007b02e2f3d49f243807213398026984abfb1ff971f15f60a644622e8814e4f",
+          "sourceText": "Pranayama breathing is the yogic practice of controlling the breath to influence energy, mood, and focus. Common pranayama breathing techniques include Nadi Shodhana (alternate nostril), Ujjayi (ocean breath), and slow counted breathing. Practice gently for 5-10 minutes to calm the nervous system and prepare for meditation.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "cf2f51525851007010981ae2a08b9ebbfef096c11cfea8bc5360c3c3e16c5166",
+          "sourceText": "What is pranayama breathing?",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "fr-fr": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "62093b8b8d59db7b2a2c7dd4ee6f9268bc78440b3a4fd6dffcca574a73cd9420",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "bc2a13197014310f39c7b3ce10f86e5022e363be3ecb0868444a9903ca1a561e",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "2b34c5441d772fb250d987d0e073777b7faca11f35f20e4ce9824f79902253d6",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-focus-title": {
+          "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-meditation-title": {
+          "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.watch-learn": {
+          "sourceHash": "749c5b04beadcb04ba360343552137e698cb4c1ff10cb680445f8b1f9ea5c543",
+          "status": "route-catalog-normalized"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "c00819ebeeee6739110e2031e5fb541760ef76e5f6aba229270bae3a22de7ab7",
+          "sourceText": "While pranayama is generally safe, some advanced techniques (vigorous breathing, extended retention) have contraindications. People with cardiovascular conditions, respiratory disorders, pregnancy, or recent surgery should consult a healthcare provider before beginning pranayama practice.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "ba6bbb3da36a14888fb2f34ab060770ae064ea7217ac0cb444a6aa99c4d66fb4",
+          "sourceText": "Pranayama comes from two Sanskrit words: 'prana' (life force, breath, vital energy) and 'ayama' (extension, expansion, control). It's often translated as 'breath control' or 'extension of the life force.' In yoga philosophy, prana is more than physical breath. It's the subtle energy that animates all life.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "aa8ab1dc53f8042381e6ada8317252dbb4009ff93beab8b3de38c0dacb2f27c4",
+          "sourceText": "What does pranayama mean?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "67959de408641702c7c621cef578a4549ca1ebc16e87411c4d257a2f2f8ab0dc",
+          "sourceText": "While there's overlap, pranayama traditionally includes philosophical context (prana, nadis, chakras), specific hand positions (mudras), and is practiced as part of the eight limbs of yoga. Modern breathing exercises often focus purely on physiological effects. That said, many 'breathing exercises' taught today derive directly from pranayama techniques.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].question": {
+          "sourceHash": "f54019837a495df25cb3290568e9f46b87a4e2219dde24eb438e77aa32bd93a5",
+          "sourceText": "What's the difference between pranayama and regular breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "fe46545696a8278e2d2eaba8d58587529afd523755b89e4e2a8e967a4853605c",
+          "sourceText": "Start with Nadi Shodhana (alternate nostril breathing). It's safe, balancing, and accessible. Once comfortable, add Ujjayi for yoga practice. Avoid vigorous techniques like Kapalabhati or Bhastrika until you have several months of foundational practice.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "8ee99824043c4b9368f51a4c2d31cc5d38f0c0e4157b0bd4462a22f5ddc54f8c",
+          "sourceText": "Which pranayama is best for beginners?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "186a7bad09e9b496e41331d8c42f80acbccaaa032eea829660a3c69cf13047e8",
+          "sourceText": "Yes, extensively. Slow pranayama techniques like Nadi Shodhana activate the parasympathetic nervous system, directly countering the anxiety response. Research shows regular practice reduces cortisol levels and anxiety symptoms. However, avoid vigorous breathing during acute anxiety, stick to slow, gentle techniques.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "978ae42143bbe5b015d767f301a4876f78a9b66f085880153c638284a4dcf14d",
+          "sourceText": "Can pranayama help with anxiety?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "fcb783531d527638758d8ca91d9348a097a844677848ab0dee976c64db28aa75",
+          "sourceText": "For beginners, 5-10 minutes daily is sufficient. Consistency matters more than duration, daily short practice builds habit and creates cumulative benefits. Advanced practitioners may practice 20-30 minutes or longer, but this should develop gradually over months and years.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "b94ef9ed6b38731a55487173df5a27867df446cfacf68069cb127b983e07ad05",
+          "sourceText": "How long should I practice pranayama each day?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "e127925ee710c1db61aa4a54fd349c87788cb4de025121ec58368dee40667680",
+          "sourceText": "We currently offer visualizers for Nadi Shodhana (alternate nostril breathing) and Ujjayi (ocean breath). Both are foundational pranayama techniques suitable for beginners. Use the links below to practice with guided timing.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].question": {
+          "sourceHash": "54844f51429a3a597aa976cd89f0fdf358b9ee6d6ac2af6f286242f3c366b18e",
+          "sourceText": "What pranayama techniques do you offer on this site?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[6].answer": {
+          "sourceHash": "6103d634dbbaac3ae26ffb7611133fa1229143c98c81bc89c7dd5317eccf9df9",
+          "sourceText": "Modern Western breathing exercises (box breathing, 4-7-8, coherent breathing) are often simplified, secularized versions of pranayama techniques. The key differences: (1) Context, pranayama is traditionally practiced as part of yoga's eight limbs, with philosophical underpinnings about prana and subtle energy. Western approaches focus purely on physiology. (2) Techniques, pranayama includes advanced practices like vigorous breathing (Kapalabhati), breath retention (Kumbhaka), and energy locks (Bandhas) that aren't common in Western exercises. (3) Goals, Western exercises typically target specific outcomes (stress relief, focus); pranayama aims for broader transformation of body-mind-spirit. For practical daily use, they're often interchangeable, the breath doesn't know which tradition you're following.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[6].question": {
+          "sourceHash": "7a723f31bb9819831b7791ded33770256919202dd3864f4dee1ea6892179f743",
+          "sourceText": "What's the difference between pranayama and Western breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "b94663fa7c49d48e0ea8b9abd39dc92e0c8e2715bfc644a5c43808266a087784",
+          "sourceText": "Pranayama breathing is the yogic science of breath control, a 5,000-year-old practice that modern science is finally catching up with. Far more than simple deep breathing, pranayama offers specific techniques for energy, relaxation, focus, and spiritual practice. This guide introduces the most effective pranayama techniques and how to practice them safely.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "2fbd7d92ac0f8363b0ea0339ddb9ba6bfd2d488ce410c010e7cc606c07689230",
+          "sourceText": "Ancient breath practices for modern life",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+          "sourceText": "Pranayama Breathing: The Complete Guide to Yogic Breathing",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "043f78408c697e999b20dc3aab2ea9e227408cef5f64a448c665405b9ded1193",
+          "sourceText": "Begin with diaphragmatic breathing (belly breathing) before trying specific pranayama techniques. This is the foundation of all yogic breath practices.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "fcd48afeaa3af83287028cfa130e6be9bf3e08e16fa8695002bb31d73a63c9bc",
+          "sourceText": "Start with the basics",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "f0799cf8848c0b5158c213f1549169e38d6e997d29c87da4e09fa3680680df5e",
+          "sourceText": "1-2 weeks",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "3076f07da1f4fc7a5b69b4f072fedbfd37229e02b4021fa6248c46a789a03661",
+          "sourceText": "Alternate nostril breathing is the gateway to pranayama: safe, balancing, and suitable for beginners. Practice 5-10 minutes daily until it becomes comfortable.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "6fd8ced4a9e8e979787111ef7909e2da27220698b9a9ea8587dbd9de83aeb2e4",
+          "sourceText": "Learn Nadi Shodhana first",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "56d555b5d565e8f66b3ad679135fc828f9df5e8c7bfbb8e8a57bc8d2e37ab918",
+          "sourceText": "5-10 minutes daily",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "ab1aaf04906f48fb9cdfc3654fdee887b82bda34fe31afe9a77c721c67a27169",
+          "sourceText": "Learn the ocean breath (Ujjayi) for use during asana practice. The slight throat constriction creates heat and focus. Practice separately before integrating with movement.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "6a94c9bdee5add946e7380080e3edefd4bbc95a09e9636cbbb5299b7e94f8c3e",
+          "sourceText": "Add Ujjayi for yoga practice",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "8d59e6f5a117c9e5904585499a3c470be5c2bbe25ce2122dc6b576b209a3d0b2",
+          "sourceText": "During yoga",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "e3ae0a20e8d29d2c1381f57a1e80c917c2c14b3218fd654dfc58feda83ee9e6b",
+          "sourceText": "Traditional guidance recommends pranayama at least 3 hours after eating. Morning practice before breakfast is ideal. Light clothing and fresh air support the practice.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "cffd90a28878a51ac5fd57541f0843101bb1c2ad71b461f263a338bb689cc6a0",
+          "sourceText": "Practice on an empty stomach",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "f2733c2776032dedec4f716ebdec0ec82aa8d35a5f5d420f6f98a164cf210cb3",
+          "sourceText": "Morning, empty stomach",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "194ace24c82f577c9634457476d144ec288dea3d53c010afafd6bc1c96fbad0e",
+          "sourceText": "Start with short sessions (5 minutes) and simple techniques. Advanced practices like Kapalabhati or extended retention should only be attempted after establishing a foundation.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "ef2b571ae30e2f448e7d786e5b492e4f6c6a24698be15ebb499d97ecd228f4d1",
+          "sourceText": "Build gradually",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "76c40426131cff273280588897c9739d49bfd224a18b99fb3150d47f1c913cb0",
+          "sourceText": "Build over months",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "1a215d7dbd7d7e45f139e62bff1f3360b4aee7b753b2c444bfa36add7688ab4c",
+          "sourceText": "While basic pranayama is safe for self-study, advanced techniques benefit from in-person guidance. A qualified teacher can correct subtle errors and adapt practices to your needs.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "7fd4656c919210df9ec146218dc99aeae6e763c3fd05e0a106f2c0cc256e1e59",
+          "sourceText": "Work with a teacher for advanced practices",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "1b7811fc29fe6f0318524026f405e5e17e04b25825d3f7bdf03c671521eb7526",
+          "sourceText": "For advanced techniques",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "364952cd1a52bd18e890dfd259538112c36af6648870d3fa1211e704202ce53a",
+          "sourceText": "Consistency matters more than duration, 5 minutes daily beats 30 minutes weekly",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "93d08dbbabea89ae8d2df84253f92ebee0b7a8805e9b462f9bd58d3f933af2f9",
+          "sourceText": "Practice in a clean, quiet space with good ventilation",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "8661f41efb21553cb19c74f6c4b9034ebd46d4de2be98b7d60d27fc8eeee92f9",
+          "sourceText": "Never strain or force the breath, ease is the sign of correct practice",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "b6739c06b4b8824002fe0b3253e04645d24b660c1c7fa0aab0d018ebc553f1a4",
+          "sourceText": "Avoid vigorous pranayama (Kapalabhati, Bhastrika) during pregnancy or menstruation",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "468ed07377d58372909d740616c784111436cead3204c70962f62d22059c96b5",
+          "sourceText": "If you feel dizzy or anxious, stop immediately and return to normal breathing",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "7df145ab5dc845fc145feed7724f63628b0685f34b9be74074f83518032befb5",
+          "sourceText": "Learn pranayama breathing techniques: Nadi Shodhana, Ujjayi, Kapalabhati, and more. Ancient yogic practices with modern science. Free visualizers included.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "43c64bb5f32a7af6b7acd4750185d5fc229ab324a10e10aee7176a0060c9d8e8",
+          "sourceText": "Learn pranayama—the yogic science of breath control. Nadi Shodhana, Ujjayi, and more. Free visualizers.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "83e0df869953bf80f6c8468ed477bc99a3c9826a4dc48438ca3faa9e22b3d4d6",
+          "sourceText": "Pranayama Breathing: Complete Guide to Yogic Breathing",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "83a1f76c71eda60015f80ba4f2b33eb71521b9f2c70b463e1e1fbaca91dba550",
+          "sourceText": "Pranayama Breathing: Complete Guide to Yogic Breathing Techniques (2026) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "520b7a7167579c1910f565b021f7e29e6999ed699418fbd11a0bde75cd51caba",
+          "sourceText": "Ancient breath practices for modern life. Learn pranayama techniques with free visualizers.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+          "sourceText": "Pranayama Breathing: The Complete Guide to Yogic Breathing",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "060d81b385fb7db6d7c1ddebfed929cc2be3a3d823bb24a789665e840dc2c2b6",
+          "sourceText": "Modern life is filled with chronic, low-grade stress that our bodies weren't designed for. We breathe shallowly, live in fight-or-flight mode, and rarely give our nervous systems a chance to rest. The ancient yogis understood that breath is the bridge between body and mind, and developed specific techniques to shift our physiology and mental state at will.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "472c137720d6b9fefc769491fc71ab8a6c96afb8738c4764b0e9fbc59de32e64",
+          "sourceText": "Modern Stress, Ancient Solutions",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "8719c79ae7225cf3fd0d3834622d25eac37a23697500ffe93ce2cf95772df80a",
+          "sourceText": "Chronic shallow breathing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "b729e65126454155ca645323699158008018490093906574d5c1af542140fae4",
+          "sourceText": "Feeling 'wired but tired'",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "0168c8e956d9d9efc1b98446359085b627ddb4b6e4ae40b412ccc0ede16eafb3",
+          "sourceText": "Difficulty concentrating or meditating",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "a5d8725807db249adc287c2ad5b16c1d53a80872c0ab5180a103a9cc8f312357",
+          "sourceText": "Anxiety and racing thoughts",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "26d36fd030b4bd2d64a1d1712ae35894cfc3f1af5c1048280cea16bdc4e4d1b3",
+          "sourceText": "Low energy despite adequate sleep",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "03fda5b5ceaf0fdd71bb5fa74187b2583c31631675a65bc76e0840d1b37e35e8",
+          "sourceText": "Disconnection from body and present moment",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "7abae0de83e1498395fd72ac38d44b5679e21e25e53d17d45d6c4cb681af3bc5",
+          "sourceText": "Research showing pranayama practices improve cardiovascular function and reduce stress markers.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "538605b9be680641b1314fb87aaf2b993e02a00cbfac09ef78913cb748d2b02a",
+          "sourceText": "Effect of pranayama on stress and cardiovascular function",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "44c54fb03a9f3acce44536740ad47d7599678256093b01f65a86d21d720be1f5",
+          "sourceText": "Comprehensive review of pranayama research covering neurological, respiratory, and psychological effects.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "ff2410a3a047fa1b06051177d342315aa635622011f70d6145db880f54241b98",
+          "sourceText": "Effects of yogic breath regulation: A narrative review",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "33090a398a4207c08dc6f17591848f65de62d3b71c50abb39b8fbfbaf8dbb4c7",
+          "sourceText": "Study demonstrating that Nadi Shodhana shifts autonomic balance toward parasympathetic dominance.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "e026076c549140b8851cebcf01f0c8ed026851fd21ee35d4bb52c3b55906ec02",
+          "sourceText": "Alternate nostril breathing and autonomic function",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "2a7b6982078dbb12ba6ddc33a5254f9555a2f407df668127772be9876a0744aa",
+          "sourceText": "Practice Nadi Shodhana with our interactive visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "eb153116d5268f090fc0d7fa452140bde05e1a22e09071fa54160ccacf6cfc3a",
+          "sourceText": "Pranayama is traditional preparation for meditation",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "405b8c52b32ff75cf8824195a7d47a6c566861bc58eb3188f05eb5a99ec4488a",
+          "sourceText": "Use pranayama techniques to sharpen concentration",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "c7e964aa268161933d62c6b7b5c150043f3374d47ff0a9e66e4da3112943dfbf",
+          "sourceText": "The Science of Pranayama",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "3ae647c237688904b6ae8a0b5055309b3ba550efb37faf500a8e7fd91cbf7e0a",
+          "sourceText": "Different pranayama techniques shift the balance between sympathetic (fight-or-flight) and parasympathetic (rest-and-digest) nervous systems. Slow techniques calm; vigorous ones energize.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "947f62145a7608201af9f0b4d7b5c533d2938589c7cc50836c61d09d2a06e0df",
+          "sourceText": "Autonomic Balance",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "f3a6262c9e705e36588451f64d1e08a272861d1f725d3d0cfdb8184cd61d5afd",
+          "sourceText": "Alternate nostril breathing (Nadi Shodhana) has been shown to balance activity between left and right brain hemispheres, which may explain its effects on focus and emotional equilibrium.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "6e3c74ba60aa102535e00ea280b6d5f7b24952fcd0d189e63241430f81fd616a",
+          "sourceText": "Brain Hemisphere Balance",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "3facaf4ff7c6a36eaff021c92718798e55cc33b4c40c9f286fe435f86492ed4f",
+          "sourceText": "Slow pranayama practices increase heart rate variability (HRV), a key marker of stress resilience and overall health. Higher HRV is associated with better emotional regulation and longevity.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "986bd4d046b4baec8f949c7bafdd36b24d608a4f50dda165acbf9a5fc824f050",
+          "sourceText": "Heart Rate Variability",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "20e02ce1df9af4e9221607f1ba42b53ce4f7a8b1e157f77bcf1a7e5bf7de65b5",
+          "sourceText": "Pranayama with breath retention (kumbhaka) gradually increases tolerance to carbon dioxide, which can reduce anxiety and improve breath efficiency.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "9a59dc6459553aea233518634d5fbdc8762f9954c22d88178bd822e2899d8662",
+          "sourceText": "Carbon Dioxide Tolerance",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "14fdea8d88e795af05d7b7d6a4848eef5d874d7332d2b375a0873b74633ddbf6",
+          "sourceText": "Pranayama comes from 'prana' (life force/breath) and 'ayama' (extension/control). Unlike simple relaxation breathing, pranayama includes specific techniques for different purposes: calming (Nadi Shodhana), energizing (Kapalabhati), focusing (Ujjayi), and more. Regular practice creates lasting changes in your nervous system and mental clarity.",
+          "status": "route-catalog-exact"
+        },
+        "solution.heading": {
+          "sourceHash": "367d255faebbdcb333f44440e5f6fa8e2922625dd979ab1ab9f136dc016cc0c4",
+          "sourceText": "Pranayama: The Breath of Life",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "8d58c87f3e3161ca91cc4bc22ad2f6923454d44fce8ed743845cec8c00a69c67",
+          "sourceText": "We recommend starting with Nadi Shodhana (alternate nostril breathing) because it's safe, accessible, and profoundly balancing. It calms without sedating, focuses without stimulating, and is used across traditions as a preparation for meditation.",
+          "status": "route-catalog-exact"
+        },
+        "video.description": {
+          "sourceHash": "c201c4d294aaf56d8e67a930c5235fb36827a39be7f55e3e5abf0836ff793e04",
+          "sourceText": "Bestselling author James Nestor (Breath: The New Science of a Lost Art) explains the ancient yogic breathing pattern rediscovered by modern science: 5.5 seconds in, 5.5 seconds out: a rhythm found across pranayama traditions.",
+          "status": "route-catalog-normalized"
+        },
+        "video.title": {
+          "sourceHash": "ab8ec13e5e7a98dd73f271548ab96f92aa638f92fed61d0f38c655a3ecfda086",
+          "sourceText": "James Nestor on the Perfect Breath",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "9007b02e2f3d49f243807213398026984abfb1ff971f15f60a644622e8814e4f",
+          "sourceText": "Pranayama breathing is the yogic practice of controlling the breath to influence energy, mood, and focus. Common pranayama breathing techniques include Nadi Shodhana (alternate nostril), Ujjayi (ocean breath), and slow counted breathing. Practice gently for 5-10 minutes to calm the nervous system and prepare for meditation.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "cf2f51525851007010981ae2a08b9ebbfef096c11cfea8bc5360c3c3e16c5166",
+          "sourceText": "What is pranayama breathing?",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "ja-jp": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "62093b8b8d59db7b2a2c7dd4ee6f9268bc78440b3a4fd6dffcca574a73cd9420",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "bc2a13197014310f39c7b3ce10f86e5022e363be3ecb0868444a9903ca1a561e",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "2b34c5441d772fb250d987d0e073777b7faca11f35f20e4ce9824f79902253d6",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-focus-title": {
+          "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-meditation-title": {
+          "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.watch-learn": {
+          "sourceHash": "749c5b04beadcb04ba360343552137e698cb4c1ff10cb680445f8b1f9ea5c543",
+          "status": "route-catalog-normalized"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "c00819ebeeee6739110e2031e5fb541760ef76e5f6aba229270bae3a22de7ab7",
+          "sourceText": "While pranayama is generally safe, some advanced techniques (vigorous breathing, extended retention) have contraindications. People with cardiovascular conditions, respiratory disorders, pregnancy, or recent surgery should consult a healthcare provider before beginning pranayama practice.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "ba6bbb3da36a14888fb2f34ab060770ae064ea7217ac0cb444a6aa99c4d66fb4",
+          "sourceText": "Pranayama comes from two Sanskrit words: 'prana' (life force, breath, vital energy) and 'ayama' (extension, expansion, control). It's often translated as 'breath control' or 'extension of the life force.' In yoga philosophy, prana is more than physical breath. It's the subtle energy that animates all life.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "aa8ab1dc53f8042381e6ada8317252dbb4009ff93beab8b3de38c0dacb2f27c4",
+          "sourceText": "What does pranayama mean?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "67959de408641702c7c621cef578a4549ca1ebc16e87411c4d257a2f2f8ab0dc",
+          "sourceText": "While there's overlap, pranayama traditionally includes philosophical context (prana, nadis, chakras), specific hand positions (mudras), and is practiced as part of the eight limbs of yoga. Modern breathing exercises often focus purely on physiological effects. That said, many 'breathing exercises' taught today derive directly from pranayama techniques.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].question": {
+          "sourceHash": "f54019837a495df25cb3290568e9f46b87a4e2219dde24eb438e77aa32bd93a5",
+          "sourceText": "What's the difference between pranayama and regular breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "fe46545696a8278e2d2eaba8d58587529afd523755b89e4e2a8e967a4853605c",
+          "sourceText": "Start with Nadi Shodhana (alternate nostril breathing). It's safe, balancing, and accessible. Once comfortable, add Ujjayi for yoga practice. Avoid vigorous techniques like Kapalabhati or Bhastrika until you have several months of foundational practice.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "8ee99824043c4b9368f51a4c2d31cc5d38f0c0e4157b0bd4462a22f5ddc54f8c",
+          "sourceText": "Which pranayama is best for beginners?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "186a7bad09e9b496e41331d8c42f80acbccaaa032eea829660a3c69cf13047e8",
+          "sourceText": "Yes, extensively. Slow pranayama techniques like Nadi Shodhana activate the parasympathetic nervous system, directly countering the anxiety response. Research shows regular practice reduces cortisol levels and anxiety symptoms. However, avoid vigorous breathing during acute anxiety, stick to slow, gentle techniques.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "978ae42143bbe5b015d767f301a4876f78a9b66f085880153c638284a4dcf14d",
+          "sourceText": "Can pranayama help with anxiety?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "fcb783531d527638758d8ca91d9348a097a844677848ab0dee976c64db28aa75",
+          "sourceText": "For beginners, 5-10 minutes daily is sufficient. Consistency matters more than duration, daily short practice builds habit and creates cumulative benefits. Advanced practitioners may practice 20-30 minutes or longer, but this should develop gradually over months and years.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "b94ef9ed6b38731a55487173df5a27867df446cfacf68069cb127b983e07ad05",
+          "sourceText": "How long should I practice pranayama each day?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "e127925ee710c1db61aa4a54fd349c87788cb4de025121ec58368dee40667680",
+          "sourceText": "We currently offer visualizers for Nadi Shodhana (alternate nostril breathing) and Ujjayi (ocean breath). Both are foundational pranayama techniques suitable for beginners. Use the links below to practice with guided timing.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].question": {
+          "sourceHash": "54844f51429a3a597aa976cd89f0fdf358b9ee6d6ac2af6f286242f3c366b18e",
+          "sourceText": "What pranayama techniques do you offer on this site?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[6].answer": {
+          "sourceHash": "6103d634dbbaac3ae26ffb7611133fa1229143c98c81bc89c7dd5317eccf9df9",
+          "sourceText": "Modern Western breathing exercises (box breathing, 4-7-8, coherent breathing) are often simplified, secularized versions of pranayama techniques. The key differences: (1) Context, pranayama is traditionally practiced as part of yoga's eight limbs, with philosophical underpinnings about prana and subtle energy. Western approaches focus purely on physiology. (2) Techniques, pranayama includes advanced practices like vigorous breathing (Kapalabhati), breath retention (Kumbhaka), and energy locks (Bandhas) that aren't common in Western exercises. (3) Goals, Western exercises typically target specific outcomes (stress relief, focus); pranayama aims for broader transformation of body-mind-spirit. For practical daily use, they're often interchangeable, the breath doesn't know which tradition you're following.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[6].question": {
+          "sourceHash": "7a723f31bb9819831b7791ded33770256919202dd3864f4dee1ea6892179f743",
+          "sourceText": "What's the difference between pranayama and Western breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "b94663fa7c49d48e0ea8b9abd39dc92e0c8e2715bfc644a5c43808266a087784",
+          "sourceText": "Pranayama breathing is the yogic science of breath control, a 5,000-year-old practice that modern science is finally catching up with. Far more than simple deep breathing, pranayama offers specific techniques for energy, relaxation, focus, and spiritual practice. This guide introduces the most effective pranayama techniques and how to practice them safely.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "2fbd7d92ac0f8363b0ea0339ddb9ba6bfd2d488ce410c010e7cc606c07689230",
+          "sourceText": "Ancient breath practices for modern life",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+          "sourceText": "Pranayama Breathing: The Complete Guide to Yogic Breathing",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "043f78408c697e999b20dc3aab2ea9e227408cef5f64a448c665405b9ded1193",
+          "sourceText": "Begin with diaphragmatic breathing (belly breathing) before trying specific pranayama techniques. This is the foundation of all yogic breath practices.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "fcd48afeaa3af83287028cfa130e6be9bf3e08e16fa8695002bb31d73a63c9bc",
+          "sourceText": "Start with the basics",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "f0799cf8848c0b5158c213f1549169e38d6e997d29c87da4e09fa3680680df5e",
+          "sourceText": "1-2 weeks",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "3076f07da1f4fc7a5b69b4f072fedbfd37229e02b4021fa6248c46a789a03661",
+          "sourceText": "Alternate nostril breathing is the gateway to pranayama: safe, balancing, and suitable for beginners. Practice 5-10 minutes daily until it becomes comfortable.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "6fd8ced4a9e8e979787111ef7909e2da27220698b9a9ea8587dbd9de83aeb2e4",
+          "sourceText": "Learn Nadi Shodhana first",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "56d555b5d565e8f66b3ad679135fc828f9df5e8c7bfbb8e8a57bc8d2e37ab918",
+          "sourceText": "5-10 minutes daily",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "ab1aaf04906f48fb9cdfc3654fdee887b82bda34fe31afe9a77c721c67a27169",
+          "sourceText": "Learn the ocean breath (Ujjayi) for use during asana practice. The slight throat constriction creates heat and focus. Practice separately before integrating with movement.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "6a94c9bdee5add946e7380080e3edefd4bbc95a09e9636cbbb5299b7e94f8c3e",
+          "sourceText": "Add Ujjayi for yoga practice",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "8d59e6f5a117c9e5904585499a3c470be5c2bbe25ce2122dc6b576b209a3d0b2",
+          "sourceText": "During yoga",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "e3ae0a20e8d29d2c1381f57a1e80c917c2c14b3218fd654dfc58feda83ee9e6b",
+          "sourceText": "Traditional guidance recommends pranayama at least 3 hours after eating. Morning practice before breakfast is ideal. Light clothing and fresh air support the practice.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "cffd90a28878a51ac5fd57541f0843101bb1c2ad71b461f263a338bb689cc6a0",
+          "sourceText": "Practice on an empty stomach",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "f2733c2776032dedec4f716ebdec0ec82aa8d35a5f5d420f6f98a164cf210cb3",
+          "sourceText": "Morning, empty stomach",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "194ace24c82f577c9634457476d144ec288dea3d53c010afafd6bc1c96fbad0e",
+          "sourceText": "Start with short sessions (5 minutes) and simple techniques. Advanced practices like Kapalabhati or extended retention should only be attempted after establishing a foundation.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "ef2b571ae30e2f448e7d786e5b492e4f6c6a24698be15ebb499d97ecd228f4d1",
+          "sourceText": "Build gradually",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "76c40426131cff273280588897c9739d49bfd224a18b99fb3150d47f1c913cb0",
+          "sourceText": "Build over months",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "1a215d7dbd7d7e45f139e62bff1f3360b4aee7b753b2c444bfa36add7688ab4c",
+          "sourceText": "While basic pranayama is safe for self-study, advanced techniques benefit from in-person guidance. A qualified teacher can correct subtle errors and adapt practices to your needs.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "7fd4656c919210df9ec146218dc99aeae6e763c3fd05e0a106f2c0cc256e1e59",
+          "sourceText": "Work with a teacher for advanced practices",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "1b7811fc29fe6f0318524026f405e5e17e04b25825d3f7bdf03c671521eb7526",
+          "sourceText": "For advanced techniques",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "364952cd1a52bd18e890dfd259538112c36af6648870d3fa1211e704202ce53a",
+          "sourceText": "Consistency matters more than duration, 5 minutes daily beats 30 minutes weekly",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "93d08dbbabea89ae8d2df84253f92ebee0b7a8805e9b462f9bd58d3f933af2f9",
+          "sourceText": "Practice in a clean, quiet space with good ventilation",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "8661f41efb21553cb19c74f6c4b9034ebd46d4de2be98b7d60d27fc8eeee92f9",
+          "sourceText": "Never strain or force the breath, ease is the sign of correct practice",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "b6739c06b4b8824002fe0b3253e04645d24b660c1c7fa0aab0d018ebc553f1a4",
+          "sourceText": "Avoid vigorous pranayama (Kapalabhati, Bhastrika) during pregnancy or menstruation",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "468ed07377d58372909d740616c784111436cead3204c70962f62d22059c96b5",
+          "sourceText": "If you feel dizzy or anxious, stop immediately and return to normal breathing",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "7df145ab5dc845fc145feed7724f63628b0685f34b9be74074f83518032befb5",
+          "sourceText": "Learn pranayama breathing techniques: Nadi Shodhana, Ujjayi, Kapalabhati, and more. Ancient yogic practices with modern science. Free visualizers included.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "43c64bb5f32a7af6b7acd4750185d5fc229ab324a10e10aee7176a0060c9d8e8",
+          "sourceText": "Learn pranayama—the yogic science of breath control. Nadi Shodhana, Ujjayi, and more. Free visualizers.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "83e0df869953bf80f6c8468ed477bc99a3c9826a4dc48438ca3faa9e22b3d4d6",
+          "sourceText": "Pranayama Breathing: Complete Guide to Yogic Breathing",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "83a1f76c71eda60015f80ba4f2b33eb71521b9f2c70b463e1e1fbaca91dba550",
+          "sourceText": "Pranayama Breathing: Complete Guide to Yogic Breathing Techniques (2026) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "520b7a7167579c1910f565b021f7e29e6999ed699418fbd11a0bde75cd51caba",
+          "sourceText": "Ancient breath practices for modern life. Learn pranayama techniques with free visualizers.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+          "sourceText": "Pranayama Breathing: The Complete Guide to Yogic Breathing",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "060d81b385fb7db6d7c1ddebfed929cc2be3a3d823bb24a789665e840dc2c2b6",
+          "sourceText": "Modern life is filled with chronic, low-grade stress that our bodies weren't designed for. We breathe shallowly, live in fight-or-flight mode, and rarely give our nervous systems a chance to rest. The ancient yogis understood that breath is the bridge between body and mind, and developed specific techniques to shift our physiology and mental state at will.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "472c137720d6b9fefc769491fc71ab8a6c96afb8738c4764b0e9fbc59de32e64",
+          "sourceText": "Modern Stress, Ancient Solutions",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "8719c79ae7225cf3fd0d3834622d25eac37a23697500ffe93ce2cf95772df80a",
+          "sourceText": "Chronic shallow breathing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "b729e65126454155ca645323699158008018490093906574d5c1af542140fae4",
+          "sourceText": "Feeling 'wired but tired'",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "0168c8e956d9d9efc1b98446359085b627ddb4b6e4ae40b412ccc0ede16eafb3",
+          "sourceText": "Difficulty concentrating or meditating",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "a5d8725807db249adc287c2ad5b16c1d53a80872c0ab5180a103a9cc8f312357",
+          "sourceText": "Anxiety and racing thoughts",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "26d36fd030b4bd2d64a1d1712ae35894cfc3f1af5c1048280cea16bdc4e4d1b3",
+          "sourceText": "Low energy despite adequate sleep",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "03fda5b5ceaf0fdd71bb5fa74187b2583c31631675a65bc76e0840d1b37e35e8",
+          "sourceText": "Disconnection from body and present moment",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "7abae0de83e1498395fd72ac38d44b5679e21e25e53d17d45d6c4cb681af3bc5",
+          "sourceText": "Research showing pranayama practices improve cardiovascular function and reduce stress markers.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "538605b9be680641b1314fb87aaf2b993e02a00cbfac09ef78913cb748d2b02a",
+          "sourceText": "Effect of pranayama on stress and cardiovascular function",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "44c54fb03a9f3acce44536740ad47d7599678256093b01f65a86d21d720be1f5",
+          "sourceText": "Comprehensive review of pranayama research covering neurological, respiratory, and psychological effects.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "ff2410a3a047fa1b06051177d342315aa635622011f70d6145db880f54241b98",
+          "sourceText": "Effects of yogic breath regulation: A narrative review",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "33090a398a4207c08dc6f17591848f65de62d3b71c50abb39b8fbfbaf8dbb4c7",
+          "sourceText": "Study demonstrating that Nadi Shodhana shifts autonomic balance toward parasympathetic dominance.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "e026076c549140b8851cebcf01f0c8ed026851fd21ee35d4bb52c3b55906ec02",
+          "sourceText": "Alternate nostril breathing and autonomic function",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "2a7b6982078dbb12ba6ddc33a5254f9555a2f407df668127772be9876a0744aa",
+          "sourceText": "Practice Nadi Shodhana with our interactive visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "eb153116d5268f090fc0d7fa452140bde05e1a22e09071fa54160ccacf6cfc3a",
+          "sourceText": "Pranayama is traditional preparation for meditation",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "405b8c52b32ff75cf8824195a7d47a6c566861bc58eb3188f05eb5a99ec4488a",
+          "sourceText": "Use pranayama techniques to sharpen concentration",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "c7e964aa268161933d62c6b7b5c150043f3374d47ff0a9e66e4da3112943dfbf",
+          "sourceText": "The Science of Pranayama",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "3ae647c237688904b6ae8a0b5055309b3ba550efb37faf500a8e7fd91cbf7e0a",
+          "sourceText": "Different pranayama techniques shift the balance between sympathetic (fight-or-flight) and parasympathetic (rest-and-digest) nervous systems. Slow techniques calm; vigorous ones energize.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "947f62145a7608201af9f0b4d7b5c533d2938589c7cc50836c61d09d2a06e0df",
+          "sourceText": "Autonomic Balance",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "f3a6262c9e705e36588451f64d1e08a272861d1f725d3d0cfdb8184cd61d5afd",
+          "sourceText": "Alternate nostril breathing (Nadi Shodhana) has been shown to balance activity between left and right brain hemispheres, which may explain its effects on focus and emotional equilibrium.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "6e3c74ba60aa102535e00ea280b6d5f7b24952fcd0d189e63241430f81fd616a",
+          "sourceText": "Brain Hemisphere Balance",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "3facaf4ff7c6a36eaff021c92718798e55cc33b4c40c9f286fe435f86492ed4f",
+          "sourceText": "Slow pranayama practices increase heart rate variability (HRV), a key marker of stress resilience and overall health. Higher HRV is associated with better emotional regulation and longevity.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "986bd4d046b4baec8f949c7bafdd36b24d608a4f50dda165acbf9a5fc824f050",
+          "sourceText": "Heart Rate Variability",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "20e02ce1df9af4e9221607f1ba42b53ce4f7a8b1e157f77bcf1a7e5bf7de65b5",
+          "sourceText": "Pranayama with breath retention (kumbhaka) gradually increases tolerance to carbon dioxide, which can reduce anxiety and improve breath efficiency.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "9a59dc6459553aea233518634d5fbdc8762f9954c22d88178bd822e2899d8662",
+          "sourceText": "Carbon Dioxide Tolerance",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "14fdea8d88e795af05d7b7d6a4848eef5d874d7332d2b375a0873b74633ddbf6",
+          "sourceText": "Pranayama comes from 'prana' (life force/breath) and 'ayama' (extension/control). Unlike simple relaxation breathing, pranayama includes specific techniques for different purposes: calming (Nadi Shodhana), energizing (Kapalabhati), focusing (Ujjayi), and more. Regular practice creates lasting changes in your nervous system and mental clarity.",
+          "status": "route-catalog-exact"
+        },
+        "solution.heading": {
+          "sourceHash": "367d255faebbdcb333f44440e5f6fa8e2922625dd979ab1ab9f136dc016cc0c4",
+          "sourceText": "Pranayama: The Breath of Life",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "8d58c87f3e3161ca91cc4bc22ad2f6923454d44fce8ed743845cec8c00a69c67",
+          "sourceText": "We recommend starting with Nadi Shodhana (alternate nostril breathing) because it's safe, accessible, and profoundly balancing. It calms without sedating, focuses without stimulating, and is used across traditions as a preparation for meditation.",
+          "status": "route-catalog-exact"
+        },
+        "video.description": {
+          "sourceHash": "c201c4d294aaf56d8e67a930c5235fb36827a39be7f55e3e5abf0836ff793e04",
+          "sourceText": "Bestselling author James Nestor (Breath: The New Science of a Lost Art) explains the ancient yogic breathing pattern rediscovered by modern science: 5.5 seconds in, 5.5 seconds out: a rhythm found across pranayama traditions.",
+          "status": "route-catalog-normalized"
+        },
+        "video.title": {
+          "sourceHash": "ab8ec13e5e7a98dd73f271548ab96f92aa638f92fed61d0f38c655a3ecfda086",
+          "sourceText": "James Nestor on the Perfect Breath",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "9007b02e2f3d49f243807213398026984abfb1ff971f15f60a644622e8814e4f",
+          "sourceText": "Pranayama breathing is the yogic practice of controlling the breath to influence energy, mood, and focus. Common pranayama breathing techniques include Nadi Shodhana (alternate nostril), Ujjayi (ocean breath), and slow counted breathing. Practice gently for 5-10 minutes to calm the nervous system and prepare for meditation.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "cf2f51525851007010981ae2a08b9ebbfef096c11cfea8bc5360c3c3e16c5166",
+          "sourceText": "What is pranayama breathing?",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "pt-br": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "62093b8b8d59db7b2a2c7dd4ee6f9268bc78440b3a4fd6dffcca574a73cd9420",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "bc2a13197014310f39c7b3ce10f86e5022e363be3ecb0868444a9903ca1a561e",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "2b34c5441d772fb250d987d0e073777b7faca11f35f20e4ce9824f79902253d6",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-focus-title": {
+          "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-meditation-title": {
+          "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.watch-learn": {
+          "sourceHash": "749c5b04beadcb04ba360343552137e698cb4c1ff10cb680445f8b1f9ea5c543",
+          "status": "route-catalog-normalized"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "c00819ebeeee6739110e2031e5fb541760ef76e5f6aba229270bae3a22de7ab7",
+          "sourceText": "While pranayama is generally safe, some advanced techniques (vigorous breathing, extended retention) have contraindications. People with cardiovascular conditions, respiratory disorders, pregnancy, or recent surgery should consult a healthcare provider before beginning pranayama practice.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "ba6bbb3da36a14888fb2f34ab060770ae064ea7217ac0cb444a6aa99c4d66fb4",
+          "sourceText": "Pranayama comes from two Sanskrit words: 'prana' (life force, breath, vital energy) and 'ayama' (extension, expansion, control). It's often translated as 'breath control' or 'extension of the life force.' In yoga philosophy, prana is more than physical breath. It's the subtle energy that animates all life.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "aa8ab1dc53f8042381e6ada8317252dbb4009ff93beab8b3de38c0dacb2f27c4",
+          "sourceText": "What does pranayama mean?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "67959de408641702c7c621cef578a4549ca1ebc16e87411c4d257a2f2f8ab0dc",
+          "sourceText": "While there's overlap, pranayama traditionally includes philosophical context (prana, nadis, chakras), specific hand positions (mudras), and is practiced as part of the eight limbs of yoga. Modern breathing exercises often focus purely on physiological effects. That said, many 'breathing exercises' taught today derive directly from pranayama techniques.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].question": {
+          "sourceHash": "f54019837a495df25cb3290568e9f46b87a4e2219dde24eb438e77aa32bd93a5",
+          "sourceText": "What's the difference between pranayama and regular breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "fe46545696a8278e2d2eaba8d58587529afd523755b89e4e2a8e967a4853605c",
+          "sourceText": "Start with Nadi Shodhana (alternate nostril breathing). It's safe, balancing, and accessible. Once comfortable, add Ujjayi for yoga practice. Avoid vigorous techniques like Kapalabhati or Bhastrika until you have several months of foundational practice.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "8ee99824043c4b9368f51a4c2d31cc5d38f0c0e4157b0bd4462a22f5ddc54f8c",
+          "sourceText": "Which pranayama is best for beginners?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "186a7bad09e9b496e41331d8c42f80acbccaaa032eea829660a3c69cf13047e8",
+          "sourceText": "Yes, extensively. Slow pranayama techniques like Nadi Shodhana activate the parasympathetic nervous system, directly countering the anxiety response. Research shows regular practice reduces cortisol levels and anxiety symptoms. However, avoid vigorous breathing during acute anxiety, stick to slow, gentle techniques.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "978ae42143bbe5b015d767f301a4876f78a9b66f085880153c638284a4dcf14d",
+          "sourceText": "Can pranayama help with anxiety?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "fcb783531d527638758d8ca91d9348a097a844677848ab0dee976c64db28aa75",
+          "sourceText": "For beginners, 5-10 minutes daily is sufficient. Consistency matters more than duration, daily short practice builds habit and creates cumulative benefits. Advanced practitioners may practice 20-30 minutes or longer, but this should develop gradually over months and years.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "b94ef9ed6b38731a55487173df5a27867df446cfacf68069cb127b983e07ad05",
+          "sourceText": "How long should I practice pranayama each day?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "e127925ee710c1db61aa4a54fd349c87788cb4de025121ec58368dee40667680",
+          "sourceText": "We currently offer visualizers for Nadi Shodhana (alternate nostril breathing) and Ujjayi (ocean breath). Both are foundational pranayama techniques suitable for beginners. Use the links below to practice with guided timing.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].question": {
+          "sourceHash": "54844f51429a3a597aa976cd89f0fdf358b9ee6d6ac2af6f286242f3c366b18e",
+          "sourceText": "What pranayama techniques do you offer on this site?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[6].answer": {
+          "sourceHash": "6103d634dbbaac3ae26ffb7611133fa1229143c98c81bc89c7dd5317eccf9df9",
+          "sourceText": "Modern Western breathing exercises (box breathing, 4-7-8, coherent breathing) are often simplified, secularized versions of pranayama techniques. The key differences: (1) Context, pranayama is traditionally practiced as part of yoga's eight limbs, with philosophical underpinnings about prana and subtle energy. Western approaches focus purely on physiology. (2) Techniques, pranayama includes advanced practices like vigorous breathing (Kapalabhati), breath retention (Kumbhaka), and energy locks (Bandhas) that aren't common in Western exercises. (3) Goals, Western exercises typically target specific outcomes (stress relief, focus); pranayama aims for broader transformation of body-mind-spirit. For practical daily use, they're often interchangeable, the breath doesn't know which tradition you're following.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[6].question": {
+          "sourceHash": "7a723f31bb9819831b7791ded33770256919202dd3864f4dee1ea6892179f743",
+          "sourceText": "What's the difference between pranayama and Western breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "b94663fa7c49d48e0ea8b9abd39dc92e0c8e2715bfc644a5c43808266a087784",
+          "sourceText": "Pranayama breathing is the yogic science of breath control, a 5,000-year-old practice that modern science is finally catching up with. Far more than simple deep breathing, pranayama offers specific techniques for energy, relaxation, focus, and spiritual practice. This guide introduces the most effective pranayama techniques and how to practice them safely.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "2fbd7d92ac0f8363b0ea0339ddb9ba6bfd2d488ce410c010e7cc606c07689230",
+          "sourceText": "Ancient breath practices for modern life",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+          "sourceText": "Pranayama Breathing: The Complete Guide to Yogic Breathing",
+          "status": "repo-reviewed-replacement"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "043f78408c697e999b20dc3aab2ea9e227408cef5f64a448c665405b9ded1193",
+          "sourceText": "Begin with diaphragmatic breathing (belly breathing) before trying specific pranayama techniques. This is the foundation of all yogic breath practices.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "fcd48afeaa3af83287028cfa130e6be9bf3e08e16fa8695002bb31d73a63c9bc",
+          "sourceText": "Start with the basics",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "f0799cf8848c0b5158c213f1549169e38d6e997d29c87da4e09fa3680680df5e",
+          "sourceText": "1-2 weeks",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "3076f07da1f4fc7a5b69b4f072fedbfd37229e02b4021fa6248c46a789a03661",
+          "sourceText": "Alternate nostril breathing is the gateway to pranayama: safe, balancing, and suitable for beginners. Practice 5-10 minutes daily until it becomes comfortable.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "6fd8ced4a9e8e979787111ef7909e2da27220698b9a9ea8587dbd9de83aeb2e4",
+          "sourceText": "Learn Nadi Shodhana first",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "56d555b5d565e8f66b3ad679135fc828f9df5e8c7bfbb8e8a57bc8d2e37ab918",
+          "sourceText": "5-10 minutes daily",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "ab1aaf04906f48fb9cdfc3654fdee887b82bda34fe31afe9a77c721c67a27169",
+          "sourceText": "Learn the ocean breath (Ujjayi) for use during asana practice. The slight throat constriction creates heat and focus. Practice separately before integrating with movement.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "6a94c9bdee5add946e7380080e3edefd4bbc95a09e9636cbbb5299b7e94f8c3e",
+          "sourceText": "Add Ujjayi for yoga practice",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "8d59e6f5a117c9e5904585499a3c470be5c2bbe25ce2122dc6b576b209a3d0b2",
+          "sourceText": "During yoga",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "e3ae0a20e8d29d2c1381f57a1e80c917c2c14b3218fd654dfc58feda83ee9e6b",
+          "sourceText": "Traditional guidance recommends pranayama at least 3 hours after eating. Morning practice before breakfast is ideal. Light clothing and fresh air support the practice.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "cffd90a28878a51ac5fd57541f0843101bb1c2ad71b461f263a338bb689cc6a0",
+          "sourceText": "Practice on an empty stomach",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "f2733c2776032dedec4f716ebdec0ec82aa8d35a5f5d420f6f98a164cf210cb3",
+          "sourceText": "Morning, empty stomach",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "194ace24c82f577c9634457476d144ec288dea3d53c010afafd6bc1c96fbad0e",
+          "sourceText": "Start with short sessions (5 minutes) and simple techniques. Advanced practices like Kapalabhati or extended retention should only be attempted after establishing a foundation.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "ef2b571ae30e2f448e7d786e5b492e4f6c6a24698be15ebb499d97ecd228f4d1",
+          "sourceText": "Build gradually",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "76c40426131cff273280588897c9739d49bfd224a18b99fb3150d47f1c913cb0",
+          "sourceText": "Build over months",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "1a215d7dbd7d7e45f139e62bff1f3360b4aee7b753b2c444bfa36add7688ab4c",
+          "sourceText": "While basic pranayama is safe for self-study, advanced techniques benefit from in-person guidance. A qualified teacher can correct subtle errors and adapt practices to your needs.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "7fd4656c919210df9ec146218dc99aeae6e763c3fd05e0a106f2c0cc256e1e59",
+          "sourceText": "Work with a teacher for advanced practices",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "1b7811fc29fe6f0318524026f405e5e17e04b25825d3f7bdf03c671521eb7526",
+          "sourceText": "For advanced techniques",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "364952cd1a52bd18e890dfd259538112c36af6648870d3fa1211e704202ce53a",
+          "sourceText": "Consistency matters more than duration, 5 minutes daily beats 30 minutes weekly",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "93d08dbbabea89ae8d2df84253f92ebee0b7a8805e9b462f9bd58d3f933af2f9",
+          "sourceText": "Practice in a clean, quiet space with good ventilation",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "8661f41efb21553cb19c74f6c4b9034ebd46d4de2be98b7d60d27fc8eeee92f9",
+          "sourceText": "Never strain or force the breath, ease is the sign of correct practice",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "b6739c06b4b8824002fe0b3253e04645d24b660c1c7fa0aab0d018ebc553f1a4",
+          "sourceText": "Avoid vigorous pranayama (Kapalabhati, Bhastrika) during pregnancy or menstruation",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "468ed07377d58372909d740616c784111436cead3204c70962f62d22059c96b5",
+          "sourceText": "If you feel dizzy or anxious, stop immediately and return to normal breathing",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "7df145ab5dc845fc145feed7724f63628b0685f34b9be74074f83518032befb5",
+          "sourceText": "Learn pranayama breathing techniques: Nadi Shodhana, Ujjayi, Kapalabhati, and more. Ancient yogic practices with modern science. Free visualizers included.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "43c64bb5f32a7af6b7acd4750185d5fc229ab324a10e10aee7176a0060c9d8e8",
+          "sourceText": "Learn pranayama—the yogic science of breath control. Nadi Shodhana, Ujjayi, and more. Free visualizers.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "83e0df869953bf80f6c8468ed477bc99a3c9826a4dc48438ca3faa9e22b3d4d6",
+          "sourceText": "Pranayama Breathing: Complete Guide to Yogic Breathing",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.title": {
+          "sourceHash": "83a1f76c71eda60015f80ba4f2b33eb71521b9f2c70b463e1e1fbaca91dba550",
+          "sourceText": "Pranayama Breathing: Complete Guide to Yogic Breathing Techniques (2026) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "520b7a7167579c1910f565b021f7e29e6999ed699418fbd11a0bde75cd51caba",
+          "sourceText": "Ancient breath practices for modern life. Learn pranayama techniques with free visualizers.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+          "sourceText": "Pranayama Breathing: The Complete Guide to Yogic Breathing",
+          "status": "repo-reviewed-replacement"
+        },
+        "problem.content": {
+          "sourceHash": "060d81b385fb7db6d7c1ddebfed929cc2be3a3d823bb24a789665e840dc2c2b6",
+          "sourceText": "Modern life is filled with chronic, low-grade stress that our bodies weren't designed for. We breathe shallowly, live in fight-or-flight mode, and rarely give our nervous systems a chance to rest. The ancient yogis understood that breath is the bridge between body and mind, and developed specific techniques to shift our physiology and mental state at will.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "472c137720d6b9fefc769491fc71ab8a6c96afb8738c4764b0e9fbc59de32e64",
+          "sourceText": "Modern Stress, Ancient Solutions",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "8719c79ae7225cf3fd0d3834622d25eac37a23697500ffe93ce2cf95772df80a",
+          "sourceText": "Chronic shallow breathing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "b729e65126454155ca645323699158008018490093906574d5c1af542140fae4",
+          "sourceText": "Feeling 'wired but tired'",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "0168c8e956d9d9efc1b98446359085b627ddb4b6e4ae40b412ccc0ede16eafb3",
+          "sourceText": "Difficulty concentrating or meditating",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "a5d8725807db249adc287c2ad5b16c1d53a80872c0ab5180a103a9cc8f312357",
+          "sourceText": "Anxiety and racing thoughts",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "26d36fd030b4bd2d64a1d1712ae35894cfc3f1af5c1048280cea16bdc4e4d1b3",
+          "sourceText": "Low energy despite adequate sleep",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "03fda5b5ceaf0fdd71bb5fa74187b2583c31631675a65bc76e0840d1b37e35e8",
+          "sourceText": "Disconnection from body and present moment",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "7abae0de83e1498395fd72ac38d44b5679e21e25e53d17d45d6c4cb681af3bc5",
+          "sourceText": "Research showing pranayama practices improve cardiovascular function and reduce stress markers.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "538605b9be680641b1314fb87aaf2b993e02a00cbfac09ef78913cb748d2b02a",
+          "sourceText": "Effect of pranayama on stress and cardiovascular function",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "44c54fb03a9f3acce44536740ad47d7599678256093b01f65a86d21d720be1f5",
+          "sourceText": "Comprehensive review of pranayama research covering neurological, respiratory, and psychological effects.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "ff2410a3a047fa1b06051177d342315aa635622011f70d6145db880f54241b98",
+          "sourceText": "Effects of yogic breath regulation: A narrative review",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "33090a398a4207c08dc6f17591848f65de62d3b71c50abb39b8fbfbaf8dbb4c7",
+          "sourceText": "Study demonstrating that Nadi Shodhana shifts autonomic balance toward parasympathetic dominance.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "e026076c549140b8851cebcf01f0c8ed026851fd21ee35d4bb52c3b55906ec02",
+          "sourceText": "Alternate nostril breathing and autonomic function",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "2a7b6982078dbb12ba6ddc33a5254f9555a2f407df668127772be9876a0744aa",
+          "sourceText": "Practice Nadi Shodhana with our interactive visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "eb153116d5268f090fc0d7fa452140bde05e1a22e09071fa54160ccacf6cfc3a",
+          "sourceText": "Pranayama is traditional preparation for meditation",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "405b8c52b32ff75cf8824195a7d47a6c566861bc58eb3188f05eb5a99ec4488a",
+          "sourceText": "Use pranayama techniques to sharpen concentration",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "c7e964aa268161933d62c6b7b5c150043f3374d47ff0a9e66e4da3112943dfbf",
+          "sourceText": "The Science of Pranayama",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "3ae647c237688904b6ae8a0b5055309b3ba550efb37faf500a8e7fd91cbf7e0a",
+          "sourceText": "Different pranayama techniques shift the balance between sympathetic (fight-or-flight) and parasympathetic (rest-and-digest) nervous systems. Slow techniques calm; vigorous ones energize.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "947f62145a7608201af9f0b4d7b5c533d2938589c7cc50836c61d09d2a06e0df",
+          "sourceText": "Autonomic Balance",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "f3a6262c9e705e36588451f64d1e08a272861d1f725d3d0cfdb8184cd61d5afd",
+          "sourceText": "Alternate nostril breathing (Nadi Shodhana) has been shown to balance activity between left and right brain hemispheres, which may explain its effects on focus and emotional equilibrium.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "6e3c74ba60aa102535e00ea280b6d5f7b24952fcd0d189e63241430f81fd616a",
+          "sourceText": "Brain Hemisphere Balance",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "3facaf4ff7c6a36eaff021c92718798e55cc33b4c40c9f286fe435f86492ed4f",
+          "sourceText": "Slow pranayama practices increase heart rate variability (HRV), a key marker of stress resilience and overall health. Higher HRV is associated with better emotional regulation and longevity.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "986bd4d046b4baec8f949c7bafdd36b24d608a4f50dda165acbf9a5fc824f050",
+          "sourceText": "Heart Rate Variability",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "20e02ce1df9af4e9221607f1ba42b53ce4f7a8b1e157f77bcf1a7e5bf7de65b5",
+          "sourceText": "Pranayama with breath retention (kumbhaka) gradually increases tolerance to carbon dioxide, which can reduce anxiety and improve breath efficiency.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "9a59dc6459553aea233518634d5fbdc8762f9954c22d88178bd822e2899d8662",
+          "sourceText": "Carbon Dioxide Tolerance",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "14fdea8d88e795af05d7b7d6a4848eef5d874d7332d2b375a0873b74633ddbf6",
+          "sourceText": "Pranayama comes from 'prana' (life force/breath) and 'ayama' (extension/control). Unlike simple relaxation breathing, pranayama includes specific techniques for different purposes: calming (Nadi Shodhana), energizing (Kapalabhati), focusing (Ujjayi), and more. Regular practice creates lasting changes in your nervous system and mental clarity.",
+          "status": "route-catalog-exact"
+        },
+        "solution.heading": {
+          "sourceHash": "367d255faebbdcb333f44440e5f6fa8e2922625dd979ab1ab9f136dc016cc0c4",
+          "sourceText": "Pranayama: The Breath of Life",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "8d58c87f3e3161ca91cc4bc22ad2f6923454d44fce8ed743845cec8c00a69c67",
+          "sourceText": "We recommend starting with Nadi Shodhana (alternate nostril breathing) because it's safe, accessible, and profoundly balancing. It calms without sedating, focuses without stimulating, and is used across traditions as a preparation for meditation.",
+          "status": "route-catalog-exact"
+        },
+        "video.description": {
+          "sourceHash": "c201c4d294aaf56d8e67a930c5235fb36827a39be7f55e3e5abf0836ff793e04",
+          "sourceText": "Bestselling author James Nestor (Breath: The New Science of a Lost Art) explains the ancient yogic breathing pattern rediscovered by modern science: 5.5 seconds in, 5.5 seconds out: a rhythm found across pranayama traditions.",
+          "status": "route-catalog-normalized"
+        },
+        "video.title": {
+          "sourceHash": "ab8ec13e5e7a98dd73f271548ab96f92aa638f92fed61d0f38c655a3ecfda086",
+          "sourceText": "James Nestor on the Perfect Breath",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "9007b02e2f3d49f243807213398026984abfb1ff971f15f60a644622e8814e4f",
+          "sourceText": "Pranayama breathing is the yogic practice of controlling the breath to influence energy, mood, and focus. Common pranayama breathing techniques include Nadi Shodhana (alternate nostril), Ujjayi (ocean breath), and slow counted breathing. Practice gently for 5-10 minutes to calm the nervous system and prepare for meditation.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "cf2f51525851007010981ae2a08b9ebbfef096c11cfea8bc5360c3c3e16c5166",
+          "sourceText": "What is pranayama breathing?",
+          "status": "route-catalog-exact"
+        }
+      }
+    }
+  },
+  "schemaVersion": 1,
+  "sourceRoute": "/for/pranayama"
+}

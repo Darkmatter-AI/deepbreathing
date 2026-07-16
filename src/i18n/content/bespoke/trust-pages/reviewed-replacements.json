@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "reviewedSourceHash": "8128efc60f899d568db15ff8b20263cc1c5c697e38787622f70b770db86a1d2f",
+  "replacements": {
+    "abi.methodology.steps.lineage.afterBook": {
+      "reason": "Compose the approved French route fragments without repeating the separately rendered book title, and carry the approved XVe siècle qualifier into the trailing fragment.",
+      "locales": {
+        "fr-fr": {
+          "translation": "du XVe siècle pour Nadi Shodhana et Kapalabhati). S'il n'y a pas d'origine unique (lèvres pincées, abdominale), le préciser.",
+          "evidence": [
+            {
+              "catalogRoute": "/about/abi",
+              "occurrenceKey": "sel:div:ctx:div:pos:1",
+              "catalogSourceText": "Who actually came up with this. Mark Divine for box. Andrew Weil for 4-7-8. Wim Hof for WHM. Konstantin Buteyko for his method. For the older yoga practices, the earliest text we can point to (the 15th-century",
+              "catalogTranslationText": "Qui en est l'auteur. Mark Divine pour la respiration carrée. Andrew Weil pour le 4-7-8. Wim Hof pour sa méthode. Konstantin Buteyko pour sa méthode. Pour les pratiques de yoga plus anciennes, le texte le plus ancien que nous puissions citer (le",
+              "reason": "Approved French leading fragment establishes the article immediately before the separately rendered book title."
+            },
+            {
+              "catalogRoute": "/about/abi",
+              "occurrenceKey": "sel:div:ctx:div:pos:2",
+              "catalogSourceText": "for Nadi Shodhana and Kapalabhati). Where there's no single originator (pursed-lip, belly), say so.",
+              "catalogTranslationText": "Hatha Yoga Pradipika pour Nadi Shodhana et Kapalabhati). S'il n'y a pas d'origine unique (lèvres pincées, abdominale), le préciser.",
+              "reason": "Approved French trailing fragment supplies the post-title sentence while exposing the duplicated embedded title to remove."
+            },
+            {
+              "catalogRoute": "/breathe/breath-of-fire",
+              "occurrenceKey": "sel:cite.mt-2.block:ctx:cite:pos:0",
+              "catalogSourceText": "Hatha Yoga Pradipika, 15th century",
+              "catalogTranslationText": "Hatha Yoga Pradipika, XVe siècle",
+              "reason": "Approved French catalog evidence supplies the XVe siècle rendering of the source qualifier."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -10,14 +10,21 @@
     },
     "preview": {
       "distribution": "internal",
-      "channel": "preview",
       "ios": {
         "simulator": false
       }
     },
     "production": {
-      "autoIncrement": true,
-      "channel": "production"
+      "autoIncrement": true
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleId": "amorim.a.ferreira@gmail.com",
+        "ascAppId": "6786431781",
+        "appleTeamId": "M29XZH5LMJ"
+      }
     }
   }
 }

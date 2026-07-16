@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { AppState, type AppStateStatus, StyleSheet, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Stack } from 'expo-router';
 import * as Localization from 'expo-localization';
 import { useColorScheme } from 'react-native';
@@ -16,6 +16,7 @@ export default function BreatheWebScreen() {
   const colorScheme = useColorScheme();
   const theme: 'light' | 'dark' = colorScheme === 'light' ? 'light' : 'dark';
   const locale = Localization.getLocales()[0]?.languageCode ?? 'en';
+  const safeAreaInsets = useSafeAreaInsets();
 
   const [appState, setAppState] = useState<'active' | 'background'>(
     toBreathingAppState(AppState.currentState),
@@ -51,12 +52,19 @@ export default function BreatheWebScreen() {
       <Stack.Screen options={{ headerShown: false }} />
       <SafeAreaView style={styles.safeArea} edges={[]}>
         <BreathingExperienceDom
-          dom={{ style: { flex: 1 } }}
+          dom={{
+            style: { flex: 1 },
+            contentInsetAdjustmentBehavior: 'never',
+            automaticallyAdjustContentInsets: false,
+            automaticallyAdjustsScrollIndicatorInsets: false,
+            contentInset: { top: 0, right: 0, bottom: 0, left: 0 },
+          }}
           locale={locale}
           forcedTheme={theme}
           appState={appState}
           isNativeApp
-          onSessionComplete={async (_seconds) => {}}
+          safeAreaInsets={safeAreaInsets}
+          onSessionComplete={async (_seconds, _stats) => {}}
           onEvent={async (_name, _params) => {}}
         />
       </SafeAreaView>

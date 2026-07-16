@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "sourceRoute": "/physiological-sigh-panic-attack",
+  "aliases": [
+    {
+      "messageId": "metadata.title",
+      "occurrenceKey": "head:title",
+      "sourceText": "Breathing Technique for Panic Attack: Stop Panic in 30 Seconds (Free Timer)",
+      "catalogSourceText": "Breathing Technique for Panic Attack: Stop Panic in 30 Seconds (Free Timer) | Deep Breathing Exercises",
+      "reviewedSourceHash": "6cedb9b533ecda451986e072be7baba197c59a3b09adec78b63698ed3d0e928b",
+      "reason": "Audited current English source differs from the captured catalog source."
+    },
+    {
+      "messageId": "hero.eyebrow",
+      "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+      "sourceText": "PANIC ATTACK RELIEF",
+      "catalogSourceText": "Panic Attack Relief",
+      "reviewedSourceHash": "c25e33ec9207ebd6b2945853ab44cb0c73a81352d364810e5e5d603283b33125",
+      "reason": "Audited current English source differs from the captured catalog source."
+    },
+    {
+      "messageId": "related.label",
+      "occurrenceKey": "sel:p.text-sm.uppercase:ctx:p:pos:0",
+      "sourceText": "Related guides",
+      "catalogSourceText": "Related Guides",
+      "reviewedSourceHash": "1e5b36078e376cd4606154d914ba9eba7c5cb5aa0c5d35f1c86e4749c54d3279",
+      "reason": "Audited current English source differs from the captured catalog source."
+    }
+  ]
+}

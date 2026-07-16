@@ -38,20 +38,20 @@ class Particle {
   }
 
   // Reset particle to a random position near the center
-  resetToCenter(w: number, h: number) {
+  resetToCenter(w: number, centerY: number) {
     const angle = Math.random() * Math.PI * 2;
     const radius = Math.random() * 50; // Start slightly off-center
     this.x = w / 2 + Math.cos(angle) * radius;
-    this.y = h / 2 + Math.sin(angle) * radius;
+    this.y = centerY + Math.sin(angle) * radius;
     this.alpha = 0; // Fade in
   }
 
-  update(radialSpeed: number, driftSpeed: number, deltaTime: number, w: number, h: number) {
+  update(radialSpeed: number, driftSpeed: number, deltaTime: number, w: number, h: number, centerY: number) {
     // Fade in effect if alpha was reset
     if (this.alpha < 0.5) this.alpha += 0.01;
 
     const cx = w / 2;
-    const cy = h / 2;
+    const cy = centerY;
     const dx = this.x - cx;
     const dy = this.y - cy;
     const dist = Math.hypot(dx, dy);
@@ -80,7 +80,7 @@ class Particle {
     // Case 2: Strong Exhale (Blowing out)
     // If particle goes off screen, respawn near center
     else if (radialSpeed > 1 && (this.x < 0 || this.x > w || this.y < 0 || this.y > h)) {
-      this.resetToCenter(w, h);
+      this.resetToCenter(w, centerY);
     }
     // Case 3: Idle/Hold (Drift)
     // Standard screen wrapping
@@ -218,8 +218,11 @@ const ParticleBackground: React.FC<ParticleProps> = ({ phase, color, speedMultip
       smoothedDriftSpeedRef.current += (targetDriftSpeed - smoothedDriftSpeedRef.current) * 0.05;
 
       // Batch drawing operations for better mobile performance
+      const centerY = displayHeight / 2 - (
+        displayWidth < 640 ? Math.min(72, displayHeight * 0.085) : 0
+      );
       particles.current.forEach(p => {
-        p.update(smoothedRadialSpeedRef.current, smoothedDriftSpeedRef.current, deltaSeconds, displayWidth, displayHeight);
+        p.update(smoothedRadialSpeedRef.current, smoothedDriftSpeedRef.current, deltaSeconds, displayWidth, displayHeight, centerY);
         p.draw(ctx, currentColor);
       });
 

@@ -6,7 +6,14 @@ import path from "node:path";
 const ROOT = process.cwd();
 const TRACKER_PATH = path.join(ROOT, "src", "components", "analytics", "PageViewTracker.tsx");
 const CONFIG_PATH = path.join(ROOT, "src", "lib", "analytics", "google-analytics.ts");
-const LAYOUT_PATH = path.join(ROOT, "src", "app", "layout.tsx");
+const LAYOUT_PATH = path.join(ROOT, "src", "app", "(site-en)", "layout.tsx");
+const SITE_DOCUMENT_PATH = path.join(
+  ROOT,
+  "src",
+  "components",
+  "layout",
+  "site-document.tsx"
+);
 
 test("PageViewTracker client component exists", () => {
   assert.ok(
@@ -41,8 +48,14 @@ test("GA config disables auto page_view so PageViewTracker is the single source"
   );
 });
 
-test("Root layout mounts PageViewTracker", () => {
-  const src = fs.readFileSync(LAYOUT_PATH, "utf8");
-  assert.match(src, /PageViewTracker/, "layout must import and render PageViewTracker");
-  assert.match(src, /<Suspense/, "PageViewTracker uses useSearchParams; must be wrapped in Suspense");
+test("Root document mounts PageViewTracker", () => {
+  const layout = fs.readFileSync(LAYOUT_PATH, "utf8");
+  const document = fs.readFileSync(SITE_DOCUMENT_PATH, "utf8");
+  assert.match(layout, /SiteDocument/, "root layout must render the shared document shell");
+  assert.match(document, /PageViewTracker/, "document shell must import and render PageViewTracker");
+  assert.match(
+    document,
+    /<Suspense/,
+    "PageViewTracker uses useSearchParams; it must remain wrapped in Suspense"
+  );
 });

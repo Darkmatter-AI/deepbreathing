@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "aliases": [
+    {
+      "route": "box-breathing-app",
+      "messageId": "moreTimers.links.0.label",
+      "sourceText": "4-7-8 timer",
+      "reviewedSourceHash": "4843f7b941d95d1a84d615151bda00ff709390fa281e14db8bbb12379297b283",
+      "catalogRoute": "/box-breathing-app",
+      "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:1",
+      "catalogSourceText": "4-7-8 Timer",
+      "reason": "Current label changes catalog capitalization only."
+    },
+    {
+      "route": "box-breathing-app",
+      "messageId": "breadcrumb.current",
+      "sourceText": "Box Breathing App",
+      "reviewedSourceHash": "4087c608a137d397d4a84dc34d31f9ea3117cce4d932beb88bf015b739efe62b",
+      "catalogRoute": "/box-breathing-app",
+      "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+      "catalogSourceText": "Box breathing app",
+      "reason": "Current breadcrumb label changes catalog capitalization only."
+    },
+    {
+      "route": "box-breathing-app",
+      "messageId": "hero.intro",
+      "sourceText": "Box breathing app and timer for the 4-4-4-4 pattern you can use instantly in your browser. Follow the visual guide, adjust the counts, and start in seconds, no download and no signup.",
+      "reviewedSourceHash": "07dfdd7f829039f5922b74111daee640357c236890693350a1578d87e9899660",
+      "catalogRoute": "/box-breathing-app",
+      "occurrenceKey": "sel:p.max-w-xl.text-lg:ctx:p:pos:0",
+      "catalogSourceText": "Box breathing app and timer for the 4-4-4-4 pattern you can use instantly in your browser. Follow the visual guide, adjust the counts, and start in seconds—no download and no signup.",
+      "reason": "Current source replaces the catalog dash with a comma."
+    },
+    {
+      "route": "box-breathing-app",
+      "messageId": "mechanism.paragraphs.0",
+      "sourceText": "Box breathing works by engaging your autonomic nervous system, the unconscious system that controls functions like heart rate, digestion, and stress response. When you're anxious or stressed, your sympathetic nervous system (fight-or-flight) dominates. Box breathing activates the opposing parasympathetic nervous system (rest-and-digest).",
+      "reviewedSourceHash": "ea3079b3ba4de513a3207366e8a42c62142fc81f7a027549b106266277a37b94",
+      "catalogRoute": "/box-breathing-app",
+      "occurrenceKey": "sel:p:ctx:p:pos:4",
+      "catalogSourceText": "Box breathing works by engaging your autonomic nervous system—the unconscious system that controls functions like heart rate, digestion, and stress response. When you're anxious or stressed, your sympathetic nervous system (fight-or-flight) dominates. Box breathing activates the opposing parasympathetic nervous system (rest-and-digest).",
+      "reason": "Current source replaces the catalog dash with a comma."
+    },
+    {
+      "route": "box-breathing-app",
+      "messageId": "hero.eyebrow",
+      "sourceText": "DEEP BREATHING EXERCISES",
+      "reviewedSourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+      "catalogRoute": "/box-breathing-app",
+      "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+      "catalogSourceText": "Deep Breathing Exercises",
+      "reason": "Current source is uppercase while presentation already enforces uppercase."
+    },
+    {
+      "route": "box-breathing-app",
+      "messageId": "features.items.1.body",
+      "sourceText": "Shorten or remove holds if they feel uncomfortable, comfort beats intensity.",
+      "reviewedSourceHash": "f66cc0e3fa583064b4573d76b5575fd802e429691eab50e7ff3070cc86dfb94c",
+      "catalogRoute": "/box-breathing-app",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:9",
+      "catalogSourceText": "Shorten or remove holds if they feel uncomfortable—comfort beats intensity.",
+      "reason": "Current source replaces the catalog dash with a comma."
+    },
+    {
+      "route": "box-breathing-app",
+      "messageId": "footer.safety",
+      "sourceText": "Stop if dizzy, tingly, or chest-tight. Resume later with shorter, easier breaths.",
+      "reviewedSourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+      "catalogRoute": "/box-breathing-app",
+      "occurrenceKey": "sel:p.text-xs.text-muted-foreground:ctx:p:pos:0",
+      "catalogSourceText": "Stop if dizzy, tingly, or chest‑tight. Resume later with shorter, easier breaths.",
+      "reason": "Current source uses an ASCII hyphen where the catalog uses a nonbreaking hyphen."
+    },
+    {
+      "route": "box-breathing-app",
+      "messageId": "faq.items.3.answer",
+      "sourceText": "Yes, box breathing is beginner-friendly. If the 4-4-4-4 pattern feels challenging, start with 3-3-3-3 or even remove the holds entirely. The key is comfort. You should never feel breathless or strained.",
+      "reviewedSourceHash": "ee3f03427b25f696aaba6052991c690ca15aec3cc90bd7c3266fe457a75cdf56",
+      "catalogRoute": "/box-breathing-app",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:5",
+      "catalogSourceText": "Yes, box breathing is beginner-friendly. If the 4-4-4-4 pattern feels challenging, start with 3-3-3-3 or even remove the holds entirely. The key is comfort—you should never feel breathless or strained.",
+      "reason": "Current source replaces the catalog dash with a sentence break."
+    },
+    {
+      "route": "box-breathing-app",
+      "messageId": "metadata.twitterDescription",
+      "sourceText": "The Navy SEAL breathing technique for calm under pressure. Free 4-4-4-4 timer, no download. Try now.",
+      "reviewedSourceHash": "bcc4a1f9ac11f183e8da91eaf88b8aaea9e725390e0bbc974e0ebb983c6bd503",
+      "catalogRoute": "/box-breathing-app",
+      "occurrenceKey": "head:meta:name:twitter:description",
+      "catalogSourceText": "The Navy SEAL breathing technique for calm under pressure. Free 4-4-4-4 timer—no download. Try now.",
+      "reason": "Current metadata replaces the catalog dash with a comma."
+    },
+    {
+      "route": "breathing-app",
+      "messageId": "hero.intro",
+      "sourceText": "A simple breathing app that runs in your browser, no download and no signup. Use it for calm, focus, sleep, or a quick stress reset.",
+      "reviewedSourceHash": "b116704d8f057c8cab01948f5abcd4ac777b9ba5f53885697ae539f639e527c5",
+      "catalogRoute": "/breathing-app",
+      "occurrenceKey": "sel:p.max-w-2xl.text-lg:ctx:p:pos:0",
+      "catalogSourceText": "A simple breathing app that runs in your browser—no download and no signup. Use it for calm, focus, sleep, or a quick stress reset.",
+      "reason": "Current source replaces the catalog dash with a comma."
+    },
+    {
+      "route": "breathing-app",
+      "messageId": "visualizer.title",
+      "sourceText": "Breathing visualizer",
+      "reviewedSourceHash": "4969a08dcdb31e574f9fde8cd018483da4392921277f061210a6cd706ff19a59",
+      "catalogRoute": "/breathing-app",
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:3",
+      "catalogSourceText": "Breathing Visualizer",
+      "reason": "Current heading changes catalog capitalization only."
+    },
+    {
+      "route": "breathing-app",
+      "messageId": "hero.eyebrow",
+      "sourceText": "DEEP BREATHING EXERCISES",
+      "reviewedSourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+      "catalogRoute": "/breathing-app",
+      "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+      "catalogSourceText": "Deep Breathing Exercises",
+      "reason": "Current source is uppercase while presentation already enforces uppercase."
+    },
+    {
+      "route": "breathing-app",
+      "messageId": "included.items.3.linkLabel",
+      "sourceText": "Physiological sigh",
+      "reviewedSourceHash": "2b19c9c60b3f04181e98f2689fd35e98a5bc1c9cb624d1bad627ffa201776993",
+      "catalogRoute": "/breathing-app",
+      "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:0",
+      "catalogSourceText": "Physiological Sigh",
+      "reason": "Current link changes catalog capitalization only."
+    },
+    {
+      "route": "breathing-app",
+      "messageId": "goals.links.2.label",
+      "sourceText": "Tummo breathing",
+      "reviewedSourceHash": "a5c336dd358375539e062b18bf3f8f5a47bf3432519e6ae1fda1788e0bab0823",
+      "catalogRoute": "/breathing-app",
+      "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:7",
+      "catalogSourceText": "Tummo Breathing",
+      "reason": "Current link changes catalog capitalization only."
+    },
+    {
+      "route": "breathing-app",
+      "messageId": "metadata.description",
+      "sourceText": "Free breathing app: box breathing, 4-7-8, coherent breathing, and physiological sigh timers. No download, no signup. Start your session now.",
+      "reviewedSourceHash": "e96b6f40270ec325fbca9ab5d46fb8c7b62c88bd8d5e56ad733a8af00c2835d8",
+      "catalogRoute": "/breathing-app",
+      "occurrenceKey": "head:meta:name:description",
+      "catalogSourceText": "Free breathing app — box breathing, 4-7-8, coherent breathing, and physiological sigh timers. No download, no signup. Start your session now.",
+      "reason": "Current metadata replaces the catalog dash with a colon."
+    },
+    {
+      "route": "coherent-breathing-app",
+      "messageId": "moreTools.links.1.label",
+      "sourceText": "4-7-8 timer",
+      "reviewedSourceHash": "4843f7b941d95d1a84d615151bda00ff709390fa281e14db8bbb12379297b283",
+      "catalogRoute": "/coherent-breathing-app",
+      "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:2",
+      "catalogSourceText": "4-7-8 Timer",
+      "reason": "Current label changes catalog capitalization only."
+    },
+    {
+      "route": "coherent-breathing-app",
+      "messageId": "schemaFaq.items.6.answer",
+      "sourceText": "Both terms refer to the same technique. 'Coherent breathing' is the most common name, describing the coherent state you achieve. 'Coherence breathing' or 'cardiac coherence breathing' emphasizes the heart-brain coherence that results from the practice. You may also see it called 'resonant frequency breathing' or 'HRV breathing.' All describe the same 5-6 breaths per minute technique.",
+      "reviewedSourceHash": "2b0eb57959d8b9a09e87b288a9bcd8e52d0ba7deae12c04cc4df0adfe6a592fc",
+      "catalogRoute": "/coherent-breathing-app",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:8",
+      "catalogSourceText": "Both terms refer to the same technique. \"Coherent breathing\" is the most common name, describing the coherent state you achieve. \"Coherence breathing\" or \"cardiac coherence breathing\" emphasizes the heart-brain coherence that results from the practice. You may also see it called \"resonant frequency breathing\" or \"HRV breathing.\" All describe the same 5-6 breaths per minute technique.",
+      "reason": "Schema copy uses single quotes while the visible catalog source uses double quotes."
+    },
+    {
+      "route": "coherent-breathing-app",
+      "messageId": "definition.paragraphs.0",
+      "sourceText": "Coherent breathing is a paced breathing technique where you breathe at approximately 5-6 breaths per minute with equal inhale and exhale durations. This specific breathing rate (around 10-12 seconds per breath cycle) aligns your breathing with your cardiovascular rhythms, creating a state of “coherence” in your autonomic nervous system.",
+      "reviewedSourceHash": "85c7bf38d30f91bc624555266fcf529822668650998a17c64605d263132646da",
+      "catalogRoute": "/coherent-breathing-app",
+      "occurrenceKey": "sel:p:ctx:p:pos:0",
+      "catalogSourceText": "Coherent breathing is a paced breathing technique where you breathe at approximately 5-6 breaths per minute with equal inhale and exhale durations. This specific breathing rate—around 10-12 seconds per breath cycle—aligns your breathing with your cardiovascular rhythms, creating a state of “coherence” in your autonomic nervous system.",
+      "reason": "Current source replaces catalog dashes with parentheses."
+    },
+    {
+      "route": "coherent-breathing-app",
+      "messageId": "faq.items.0.answer",
+      "sourceText": "Coherent breathing is a technique where you breathe at a specific pace (typically around 5-6 breaths per minute) with equal inhale and exhale durations. This rate, often called the resonance frequency, maximizes heart rate variability (HRV) and promotes optimal balance in the autonomic nervous system.",
+      "reviewedSourceHash": "d0a0420594eae47ba5cdb58b4065e6f4ea74a5f75206e053b13d0af23eb4d63b",
+      "catalogRoute": "/coherent-breathing-app",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+      "catalogSourceText": "Coherent breathing is a technique where you breathe at a specific pace—typically around 5-6 breaths per minute—with equal inhale and exhale durations. This rate, often called the resonance frequency, maximizes heart rate variability (HRV) and promotes optimal balance in the autonomic nervous system.",
+      "reason": "Current source replaces catalog dashes with parentheses."
+    },
+    {
+      "route": "coherent-breathing-app",
+      "messageId": "mechanism.paragraphs.0",
+      "sourceText": "Coherent breathing works by synchronizing multiple physiological rhythms in your body: primarily your breathing, heart rate, and blood pressure. This synchronization occurs at what's called your “resonance frequency,” typically around 5-6 breaths per minute for most adults.",
+      "reviewedSourceHash": "b06c592471e3f215dc33f409cfe6fc06394716b04b2dd43bba276c18e943ffc2",
+      "catalogRoute": "/coherent-breathing-app",
+      "occurrenceKey": "sel:p:ctx:p:pos:5",
+      "catalogSourceText": "Coherent breathing works by synchronizing multiple physiological rhythms in your body—primarily your breathing, heart rate, and blood pressure. This synchronization occurs at what's called your “resonance frequency,” typically around 5-6 breaths per minute for most adults.",
+      "reason": "Current source replaces the catalog dash with a colon."
+    },
+    {
+      "route": "coherent-breathing-app",
+      "messageId": "hero.eyebrow",
+      "sourceText": "DEEP BREATHING EXERCISES",
+      "reviewedSourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+      "catalogRoute": "/coherent-breathing-app",
+      "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+      "catalogSourceText": "Deep Breathing Exercises",
+      "reason": "Current source is uppercase while presentation already enforces uppercase."
+    },
+    {
+      "route": "coherent-breathing-app",
+      "messageId": "features.items.1.body",
+      "sourceText": "Equal inhale/exhale pacing with no holds, simple and sustainable.",
+      "reviewedSourceHash": "0676eddeb4f4c5381de2d61b608ec51c038cc11c7f50ff407e084b0a59ef2388",
+      "catalogRoute": "/coherent-breathing-app",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+      "catalogSourceText": "Equal inhale/exhale pacing with no holds—simple and sustainable.",
+      "reason": "Current source replaces the catalog dash with a comma."
+    },
+    {
+      "route": "coherent-breathing-app",
+      "messageId": "faq.items.1.answer",
+      "sourceText": "HRV breathing refers to breathing techniques designed to increase heart rate variability, the variation in time between heartbeats. Higher HRV indicates a flexible, resilient nervous system and is associated with better stress resilience, cardiovascular health, and emotional regulation. Coherent breathing is one of the most effective HRV training methods.",
+      "reviewedSourceHash": "7dfdd6c6c418f920412a6b481452c1f1cda527c75eb1388ac029fef5108569b7",
+      "catalogRoute": "/coherent-breathing-app",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:3",
+      "catalogSourceText": "HRV breathing refers to breathing techniques designed to increase heart rate variability—the variation in time between heartbeats. Higher HRV indicates a flexible, resilient nervous system and is associated with better stress resilience, cardiovascular health, and emotional regulation. Coherent breathing is one of the most effective HRV training methods.",
+      "reason": "Current source replaces the catalog dash with a comma."
+    },
+    {
+      "route": "coherent-breathing-app",
+      "messageId": "schemaFaq.items.6.question",
+      "sourceText": "Is it 'coherent' or 'coherence' breathing?",
+      "reviewedSourceHash": "a5f1a510dd00b3d20780b46b48b6e2eeb1584a2b7efe9eb862b313a21836cafc",
+      "catalogRoute": "/coherent-breathing-app",
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:6",
+      "catalogSourceText": "Is it \"coherent\" or \"coherence\" breathing?",
+      "reason": "Schema copy uses single quotes while the visible catalog source uses double quotes."
+    },
+    {
+      "route": "coherent-breathing-app",
+      "messageId": "settings.intro",
+      "sourceText": "Most people land in a range, treat the number as flexible.",
+      "reviewedSourceHash": "bbf0c738c5e2e081098302e4204dca0252816e9db61dbd42a57a042602909183",
+      "catalogRoute": "/coherent-breathing-app",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:1",
+      "catalogSourceText": "Most people land in a range—treat the number as flexible.",
+      "reason": "Current source replaces the catalog dash with a comma."
+    },
+    {
+      "route": "coherent-breathing-app",
+      "messageId": "footer.safety",
+      "sourceText": "Stop if dizzy, tingly, or chest-tight. Resume later with shorter, easier breaths.",
+      "reviewedSourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+      "catalogRoute": "/coherent-breathing-app",
+      "occurrenceKey": "sel:p.text-xs.text-muted-foreground:ctx:p:pos:1",
+      "catalogSourceText": "Stop if dizzy, tingly, or chest‑tight. Resume later with shorter, easier breaths.",
+      "reason": "Current source uses an ASCII hyphen where the catalog uses a nonbreaking hyphen."
+    },
+    {
+      "route": "coherent-breathing-app",
+      "messageId": "mechanism.paragraphs.2",
+      "sourceText": "This maximized HRV isn't just a number. It reflects optimal coordination between your sympathetic (activation) and parasympathetic (relaxation) nervous systems. Instead of one dominating the other or fighting for control, they work together in a balanced, flexible rhythm. Think of it like tuning an instrument: when you hit the right frequency, everything resonates together perfectly.",
+      "reviewedSourceHash": "e7e253cf41fc741a586e91c87d165ae96a92b74a0ca6782f3469cceb9a8036a0",
+      "catalogRoute": "/coherent-breathing-app",
+      "occurrenceKey": "sel:p:ctx:p:pos:7",
+      "catalogSourceText": "This maximized HRV isn't just a number—it reflects optimal coordination between your sympathetic (activation) and parasympathetic (relaxation) nervous systems. Instead of one dominating the other or fighting for control, they work together in a balanced, flexible rhythm. Think of it like tuning an instrument: when you hit the right frequency, everything resonates together perfectly.",
+      "reason": "Current source replaces the catalog dash with a sentence break."
+    },
+    {
+      "route": "coherent-breathing-app",
+      "messageId": "definition.paragraphs.2",
+      "sourceText": "Unlike techniques with breath holds (like box breathing or 4-7-8), coherent breathing uses continuous, smooth breathing with no pauses. This makes it ideal for longer practice sessions of 10-20 minutes, which is where the most significant benefits emerge. The simplicity of the pattern (just equal in and out breathing) allows you to sustain the practice without strain or discomfort.",
+      "reviewedSourceHash": "321766758d1b82edc449bf66d054b918e875ffba8c56de9842bfad5c327bfcd5",
+      "catalogRoute": "/coherent-breathing-app",
+      "occurrenceKey": "sel:p:ctx:p:pos:2",
+      "catalogSourceText": "Unlike techniques with breath holds (like box breathing or 4-7-8), coherent breathing uses continuous, smooth breathing with no pauses. This makes it ideal for longer practice sessions of 10-20 minutes, which is where the most significant benefits emerge. The simplicity of the pattern—just equal in and out breathing—allows you to sustain the practice without strain or discomfort.",
+      "reason": "Current source replaces the catalog dash with parentheses."
+    },
+    {
+      "route": "coherent-breathing-app",
+      "messageId": "mechanism.paragraphs.1",
+      "sourceText": "When you breathe, your heart rate naturally speeds up slightly on the inhale and slows down on the exhale. This is called respiratory sinus arrhythmia (RSA), and it's a sign of healthy autonomic function. At your resonance frequency, this heart rate oscillation reaches its maximum amplitude. Your HRV is at its peak.",
+      "reviewedSourceHash": "d5de142e42ba172922893fe11db2a8dac1a70d2e0efc09bd52cd32d8b7806269",
+      "catalogRoute": "/coherent-breathing-app",
+      "occurrenceKey": "sel:p:ctx:p:pos:6",
+      "catalogSourceText": "When you breathe, your heart rate naturally speeds up slightly on the inhale and slows down on the exhale. This is called respiratory sinus arrhythmia (RSA), and it's a sign of healthy autonomic function. At your resonance frequency, this heart rate oscillation reaches its maximum amplitude—your HRV is at its peak.",
+      "reason": "Current source replaces the catalog dash with a sentence break."
+    },
+    {
+      "route": "coherent-breathing-app",
+      "messageId": "metadata.description",
+      "sourceText": "Free coherent breathing timer, train HRV with 5-6 breaths/min pacing. No download, no signup. Start your guided session now.",
+      "reviewedSourceHash": "7f371af231a2e1ce50eb13bb52cb0b53ac0f7337603d3352bbb03d5c23761ec9",
+      "catalogRoute": "/coherent-breathing-app",
+      "occurrenceKey": "head:meta:name:description",
+      "catalogSourceText": "Free coherent breathing timer — train HRV with 5-6 breaths/min pacing. No download, no signup. Start your guided session now.",
+      "reason": "Current metadata replaces the catalog dash with a comma."
+    },
+    {
+      "route": "coherent-breathing-app",
+      "messageId": "metadata.socialTitle",
+      "sourceText": "Coherent Breathing App: Free Browser Timer",
+      "reviewedSourceHash": "8feb9150c8384e425fc6716bc131390261f3363a49d197ff0138b7fd3ae0cfe8",
+      "catalogRoute": "/coherent-breathing-app",
+      "occurrenceKey": "head:meta:property:og:title",
+      "catalogSourceText": "Coherent Breathing App — Free Browser Timer",
+      "reason": "Current metadata replaces the catalog dash with a colon."
+    },
+    {
+      "route": "coherent-breathing-app",
+      "messageId": "metadata.twitterTitle",
+      "sourceText": "Coherent Breathing App: Free, No Download",
+      "reviewedSourceHash": "4e7308b62294d2592e72d72ae393980ba6f6250c05bdf93cb20c561cc6e1cd85",
+      "catalogRoute": "/coherent-breathing-app",
+      "occurrenceKey": "head:meta:name:twitter:title",
+      "catalogSourceText": "Coherent Breathing App — Free, No Download",
+      "reason": "Current metadata replaces the catalog dash with a colon."
+    }
+  ]
+}

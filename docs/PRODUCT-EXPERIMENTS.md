@@ -23,6 +23,9 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-07-12 | [TestFlight native-sheet and practice-identity pass](#2026-07-12-testflight-native-sheet-and-practice-identity-pass) | 🔄 Implemented locally — physical build validation pending |
+| 2026-07-11 | [TestFlight immersion and control pass — native audio, draggable modes, completion parity](#2026-07-11-testflight-immersion-and-control-pass--native-audio-draggable-modes-completion-parity) | 🔄 Implemented locally — physical build validation pending |
+| 2026-07-11 | [Account-based cross-device practice sync — Apple-first acquisition](#2026-07-11-account-based-cross-device-practice-sync--apple-first-acquisition) | 🔄 Implemented locally — TestFlight + production validation pending |
 | 2026-07-10 | [Keep Your Practice (`keep_practice`) — gain-framed receipt sheet, phase 1](#2026-07-10-keep-your-practice-keep_practice--gain-framed-receipt-sheet-phase-1) | 🔄 Implemented — PR [#41](https://github.com/Darkmatter-AI/deepbreathing/pull/41); first read once ≥150 prompt-shown (~2wk post-deploy) |
 | 2026-06-26 | [Non-blocking signup banner (`loss_aversion_banner`) — top-anchored notification](#2026-06-26-non-blocking-signup-banner-loss_aversion_banner--top-anchored-notification) | ❌ **Failed** (verdict 2026-07-10, early per impressions clause): intent 9.3% vs 13.8% AND retention 40% vs 50% — **superseded by `keep_practice` (PR #41), which is the revert-plus** |
 | 2026-06-21 | [/stats "Your practice" — retention surface (breath garden + stale-streak reframe)](#2026-06-21-stats-page--streak-calendar--session-stats-for-signed-in-users) | 🔄 Implemented |
@@ -48,6 +51,68 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 ---
 
 ## Active Experiments
+
+### 2026-07-12: TestFlight Native-Sheet and Practice-Identity Pass
+
+**Hypothesis:** Using a maintained gesture sheet for the entire drawer surface, and making the account surface visibly pay off with synced practice data, will turn account acquisition from a utility prompt into an identity/retention surface. Correct provider branding and a deterministic account portrait should also make continuation feel trustworthy and complete.
+
+**Baseline:** Build 6 still used hand-rolled responders with gestures limited to small handle regions. Physical testing found weak drag behavior, lost horizontal spacing in the guest account sheet, a letterform pretending to be Google's mark, a generic completion accent, particle convergence below the orb's visual center, and a post-auth checkmark rather than a durable portrait. The signed-in account sheet showed only email and destructive account controls despite the web product already exposing minutes, sessions, streak, and practice history.
+
+**Change:** Replace both custom drawers with `@gorhom/bottom-sheet` v5, including full-content panning, snap points, scroll handoff, and backdrop interaction. The first physical pass exposed that the mode control was still a floating trigger that only presented its sheet after the gesture ended. Replace that split control with one persistent two-detent sheet: the bottom-aligned “Modes” tab is its collapsed state, follows the finger continuously, expands to exactly four visible rows, and collapses on backdrop press. Hide the settings control during playback. Add deliberate account-sheet content padding; use Google's real four-color G asset; tint completion feedback with the completed mode; move the mobile particle gravity center upward; render a real provider image or deterministic per-account orb immediately after auth; and add synced minutes, sessions, live streak, 28-day breath garden, and current pattern to the account sheet. Keep “Continue” as the single Apple/Google action for both new and returning accounts.
+
+**Pre-committed success criteria:**
+- Product correctness gate: on physical iPhone, both sheets drag from their content and handle, snap without fighting nested scrolling, dismiss by pan and backdrop press, retain safe horizontal spacing at every data state, and expose all seven modes.
+- Identity/data gate: successful continuation immediately replaces the guest icon with a provider portrait or deterministic orb; account data matches the web bootstrap response; the Google mark is visually correct; the completion badge matches the mode color; and the particle convergence center aligns with the orb.
+- ✅ Success if every gate passes in the next TestFlight build without regressions to auth, guest migration, background audio, or session timing.
+- ❌ Failed if either sheet still feels tap-only, synced account values disagree across web and phone, or auth success leaves guest/checkmark UI behind.
+- 🟡 Mixed if correctness passes but the account data surface is too dense for the lower detent.
+
+**Measure-after:** Immediate physical-device validation on the next TestFlight build. Funnel outcomes remain part of the parent account-sync experiment.
+
+**Status:** 🔄 Implemented locally. Physical TestFlight validation pending.
+
+---
+
+### 2026-07-11: TestFlight Immersion and Control Pass — Native Audio, Draggable Modes, Completion Parity
+
+**Hypothesis:** Removing duplicate controls and making the native shell participate in the breathing experience will make the app feel intentional rather than like a website inside a phone. Native-owned audio should also eliminate the most important iOS reliability failure: silence when the ringer switch is off or the screen locks.
+
+**Baseline:** Physical testing of TestFlight build 5 found eight concrete failures: the mode drawer showed too many rows and was tap-only; tap-away was unreliable; the WebView glow stopped at the top and bottom native safe areas; Web Audio did not reliably survive silent mode; settings duplicated mode and duration controls and carried an obsolete warning; the account entry read as an arrow rather than identity; and the completion prompt used the older activity-ring treatment instead of the shipped `keep_practice` receipt.
+
+**Change:** Limit the mode drawer viewport to four rows with scrolling, add pull-up/pull-down gestures and full-screen tap-away dismissal, tint and pulse the native safe-area backdrop with the active mode at the same phase boundary as audio and haptics, move ambient and phase-cue playback from WKWebView to `expo-audio`, simplify settings, use a portrait/initial/person account entry, and port the real cumulative-progress receipt from `main` while retaining the registered user's persistent swipe-up saved banner.
+
+**Pre-committed success criteria:**
+- Product correctness gate: on a physical iPhone, all seven modes remain reachable; the drawer opens and closes by drag and tap; tap-away closes it; top and bottom safe areas visibly participate in active-mode color changes; audio is audible with the ringer switch off and continues after screen lock; cue and haptic feel synchronized; settings contain no duplicate mode or duration choices; account entry is recognizable; and guest/registered completion states match their intended receipt/banner treatments.
+- ✅ Success if 100% of that physical matrix passes in the next TestFlight build with no regression in session completion, background timing, auth, or sync.
+- ❌ Failed if silent-mode/background audio still drops, session timing diverges after lock/unlock, or any primary control becomes unreachable.
+- 🟡 Mixed if functional gates pass but cue/haptic synchronization or safe-area color continuity still feels visibly discontinuous on hardware.
+
+**Measure-after:** Immediate physical-device read on the next TestFlight build; no public funnel verdict until the parent account-sync experiment reaches its impression gate.
+
+**Status:** 🔄 Implemented locally. Physical TestFlight validation pending.
+
+---
+
+### 2026-07-11: Account-Based Cross-Device Practice Sync — Apple-First Acquisition
+
+**Hypothesis:** Accounts become worth acquiring when they visibly preserve a real practice across web and phone. Keeping breathing guest-first while presenting Apple as the fastest primary save action, Google second, should unlock account creation without depressing session starts. A gain-framed session receipt should outperform a generic signup wall because it asks only after value has been delivered.
+
+**Baseline:** The iOS build has no account surface and no server-backed per-session history, so native account acquisition and cross-device session sync are both **0**. The current web `keep_practice` experiment baseline is ~86 prompt-shown users/week, 13.8% historical modal intent, and 4–7 signups/week. Existing server sync is aggregate-only and cannot reconstruct an immutable session history.
+
+**Change:** Add Apple-first and Google-secondary auth on iOS and web; secure native Better Auth cookies in Keychain-backed SecureStore; preserve guest mode; write practice deltas to an offline outbox; migrate them after sign-in; persist an idempotent append-only `session_events` ledger; hydrate account history/stats across devices; add verified in-app deletion; use the Keep Practice receipt for guests and a persistent swipe-up success banner for registered users.
+
+**Pre-committed success criteria:**
+- Product correctness gate: 100% of the physical TestFlight matrix passes for guest practice, Apple sign-in, Google sign-in, offline completion/retry, guest migration, web-to-phone hydration, phone-to-web hydration, sign-out persistence, and account deletion initiation.
+- ✅ Success after public rollout if account creation from a completed-session prompt is at least **16%**, weekly signups do not fall below the trailing four-week web baseline, and session-start rate does not fall by more than 5% relative.
+- ❌ Failed if account creation is at or below 13.8%, or if the account surface reduces session-start rate by more than 10% for two consecutive weeks.
+- 🟡 Mixed if acquisition improves but day-7 return or completed sessions per user decline by more than 10%.
+- ⚪ Inconclusive below 150 prompt impressions per platform.
+
+**Measure-after:** First product read after each platform reaches 150 prompt impressions; retention read seven days later. Do not expose monetization gates in this experiment.
+
+**Status:** 🔄 Implemented locally. Production migration, provider credentials, and physical TestFlight validation remain release gates.
+
+---
 
 ### 2026-07-10: Keep Your Practice (`keep_practice`) — gain-framed receipt sheet, phase 1
 

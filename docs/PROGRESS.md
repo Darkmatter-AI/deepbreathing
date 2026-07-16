@@ -1,5 +1,24 @@
 # Progress
 
+## 2026-07-12
+
+### Sensory Studio
+
+Built the first internal authoring surface for composing breathing scenes without editing code.
+
+- Added a shared, versioned sensory-profile contract for web and mobile with authored defaults for Box, 4-7-8, Coherent, Physiological Sigh, Ujjayi, Belly, and Pursed Lip.
+- Added `/sensory-studio`, a no-index live workspace for tuning each mode's palette, motion, particle field, soundscape, phase cues, haptics, instruction fade, and landing state.
+- Reused the production web `Visualizer` and `ParticleBackground` directly in the canvas instead of maintaining a lookalike orb. Both renderers now accept optional tuning values while retaining their shipping defaults when the tuning object is absent.
+- Replaced the placeholder Studio chirps with a Studio-owned adapter around the production `AudioService`. The preview now starts audible noise/drone/sub-bass beds, drives breath modulation, routes cues through the live filter/compressor/limiter chain, and disposes its private audio graph without creating sessions or analytics.
+- Reset the placeholder-era pitch offsets to the production cue baseline and migrate older local drafts to the current Studio schema while preserving authored changes.
+- Expanded the Studio to the complete production audio graph: drone and pink-noise layers, sub-bass, binaural and phase-envelope synths, session evolution, layer tuning, cue composition, compressor, limiter, and master trim. Audio defaults now begin from the current web mix, with a one-click production reset and selective v1/v2 draft migration.
+- Added phase playback and scrubbing so inhale, top-up, holds, exhale, and settle can be adjusted in context.
+- Added local draft persistence, undo/redo, per-mode reset, normalized JSON import, candidate export, and a Copy for Codex handoff.
+- Isolated the route from the production GA page-view funnel and excluded it, including localized variants, from sitemap discovery.
+- The Studio creates candidates only. It cannot publish to production; user-facing profiles still require code review, physical-device validation, TestFlight, and a logged product experiment.
+
+Next: use Physiological Sigh as the first full sensory-profile vertical slice, consolidate the still-forked TestFlight renderer, then add an authenticated, revisioned candidate workflow if browser-local drafts prove useful.
+
 ## 2026-04-23
 
 ### Brand Exploration Page

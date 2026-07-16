@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "replacements": [
+    {
+      "messageId": "article.mechanism.paragraph2",
+      "sourceText": "The extended exhale (8 counts) is the key. When you exhale slowly and completely, you stimulate pressure receptors in your lungs and chest that signal the vagus nerve to activate. This triggers a cascade of calming effects: slowed heart rate, lowered blood pressure, relaxed muscles, and reduced cortisol (stress hormone) production.",
+      "reviewedSourceHash": "26b79fdd730734d1c7784e90d34d66bc00634b97b4b2d5cb7b774fc38a18d132",
+      "reason": "The German catalog value converts 8 adjustable counts into 8 fixed seconds; this replacement restores source fidelity without changing the claim.",
+      "translations": {
+        "de-de": "Das verlängerte Ausatmen (8 Zählzeiten) ist der Schlüssel. Wenn Sie langsam und vollständig ausatmen, stimulieren Sie Druckrezeptoren in Lunge und Brustkorb, die dem Vagusnerv das Signal zur Aktivierung geben. Dies löst eine Kaskade beruhigender Effekte aus: Der Puls sinkt, der Blutdruck geht zurück, die Muskeln entspannen sich und die Produktion von Cortisol (dem Stresshormon) wird gedrosselt."
+      }
+    },
+    {
+      "messageId": "article.mechanism.paragraph3",
+      "sourceText": "The 7-count breath hold also plays an important role. Holding your breath after inhaling allows oxygen to fully saturate your blood and reach your tissues. More importantly, the hold causes a slight buildup of carbon dioxide (CO₂) in your bloodstream. While we typically think of CO₂ as waste, moderate increases actually have a calming effect on the nervous system and improve oxygen delivery to your cells, a phenomenon called the Bohr effect.",
+      "reviewedSourceHash": "a3b1786755eaecf82d2d468be212063c3c45a49e6f6cb325ba78aef8c7c03558",
+      "reason": "The German catalog value converts 7 adjustable counts into 7 fixed seconds; this replacement restores source fidelity without changing the claims.",
+      "translations": {
+        "de-de": "Auch das Atemanhalten über 7 Zählzeiten spielt eine wichtige Rolle. Wenn Sie nach dem Einatmen die Luft anhalten, kann der Sauerstoff das Blut vollständig sättigen und das Gewebe erreichen. Noch wichtiger ist, dass das Halten zu einem leichten Anstieg von Kohlendioxid (CO₂) im Blutkreislauf führt. Obwohl CO₂ meist als Abfallprodukt gilt, wirken moderate Erhöhungen beruhigend auf das Nervensystem und verbessern die Sauerstoffabgabe an die Zellen – ein Phänomen, das als Bohr-Effekt bekannt ist."
+      }
+    },
+    {
+      "messageId": "article.whatIs.paragraph1",
+      "sourceText": "4-7-8 breathing is a powerful relaxation technique developed and popularized by Dr. Andrew Weil, a Harvard-trained physician and pioneer in integrative medicine. The method follows a simple but specific pattern: inhale through your nose for 4 counts, hold your breath for 7 counts, then exhale completely through your mouth for 8 counts.",
+      "reviewedSourceHash": "5de15c9e1e684dde08a37ff55f97938cc98a640af1e5e6b6be2ef63ad134ad6f",
+      "reason": "The German catalog value converts the source counts into fixed seconds; this replacement restores the adjustable count semantics without changing the claims.",
+      "translations": {
+        "de-de": "Die 4-7-8 Atemtechnik ist eine hochwirksame Entspannungsmethode, die von Dr. Andrew Weil, einem in Harvard ausgebildeten Arzt und Pionier der integrativen Medizin, entwickelt und bekannt gemacht wurde. Die Methode folgt einem einfachen, aber präzisen Muster: Atmen Sie über 4 Zählzeiten durch die Nase ein, halten Sie den Atem 7 Zählzeiten lang an und atmen Sie dann über 8 Zählzeiten vollständig durch den Mund aus."
+      }
+    },
+    {
+      "messageId": "article.whatIs.paragraph2",
+      "sourceText": "What makes 4-7-8 breathing unique is its emphasis on the exhale. The 8-count exhale is twice as long as the inhale, creating an exhale-dominant pattern that actively engages the parasympathetic nervous system. Your body's built-in relaxation mechanism. This makes it particularly effective for sleep and anxiety relief.",
+      "reviewedSourceHash": "102979843687500edf100a5ea96e352c4e9820af6f9bc9facc94d6c2ff7bcbb2",
+      "reason": "The German catalog value converts the 8-count exhale into 8 fixed seconds; this replacement restores source fidelity without changing the claims.",
+      "translations": {
+        "de-de": "Das Besondere an der 4-7-8 Atemtechnik ist die Betonung der Ausatmung. Das Ausatmen über 8 Zählzeiten dauert doppelt so lang wie das Einatmen. Dieses ausatmungsdominierte Muster aktiviert gezielt das parasympathische Nervensystem – den körpereigenen Entspannungsmodus. Das macht sie besonders effektiv zur Einschlafhilfe und Angstlinderung."
+      }
+    },
+    {
+      "messageId": "article.whatIs.paragraph3.beforeSleep",
+      "sourceText": "Dr. Weil calls 4-7-8 breathing a “natural tranquilizer for the nervous system.” Unlike pharmaceutical tranquilizers that can lose effectiveness over time, 4-7-8 breathing actually becomes more powerful with practice. The technique is based on pranayama, an ancient yogic practice of breath control, but adapted for modern use without any spiritual or cultural requirements. If you struggle with",
+      "reviewedSourceHash": "9353fd31efe449a0089720e3df893de61ef2f319fcfa75d948028ba4aa94f416",
+      "reason": "The Japanese catalog value contains the corrupted mixed-language phrase 天然 of 精神安定剤; this replacement restores grammatical source fidelity without changing the claims or linked-fragment composition.",
+      "translations": {
+        "ja-jp": "ワイル博士は4-7-8呼吸法を「神経系のための天然の精神安定剤」と呼んでいます。時間の経過とともに効果が薄れる可能性のある医薬品の精神安定剤とは異なり、4-7-8呼吸法は実践を重ねるほど実際に効果が高まります。この技法は、古代ヨガの呼吸制御法である「プラーナヤーマ」に基づき、精神的・文化的な要件なしで現代向けに適応されたものです。もしあなたが"
+      }
+    },
+    {
+      "messageId": "faq.items.0.answer",
+      "sourceText": "4-7-8 breathing is a breathing technique popularized by Dr. Andrew Weil that follows a specific pattern: inhale for 4 counts, hold for 7 counts, exhale for 8 counts. The extended exhale activates the parasympathetic nervous system, promoting relaxation and calm.",
+      "reviewedSourceHash": "ce724f809eced381cfe81d7a86831c1c3c1d39e3c4a77a6c6a5bf77866c0744c",
+      "reason": "The German catalog value converts the source counts into fixed seconds; this replacement restores count semantics without changing the claim.",
+      "translations": {
+        "de-de": "Die 4-7-8 Atemtechnik ist eine von Dr. Andrew Weil bekannt gemachte Methode, die einem bestimmten Muster folgt: über 4 Zählzeiten einatmen, 7 Zählzeiten halten und über 8 Zählzeiten ausatmen. Das verlängerte Ausatmen aktiviert das parasympathische Nervensystem und sorgt für tiefe Entspannung und Ruhe."
+      }
+    },
+    {
+      "messageId": "faq.items.4.answer",
+      "sourceText": "If holding for 7 counts feels uncomfortable, modify the pattern while keeping the ratio similar. Try 2-3.5-4 or 3-5.25-6 (half or three-quarters of the original). The key is maintaining the exhale-emphasis pattern. Comfort should always come first, never strain.",
+      "reviewedSourceHash": "36137675f845a0bb565304ccf0141248a2d2fb594f60ffca2709018245df8558",
+      "reason": "The German catalog value converts 7 adjustable counts into 7 fixed seconds; this replacement restores source fidelity.",
+      "translations": {
+        "de-de": "Wenn sich das Halten über 7 Zählzeiten unangenehm anfühlt, passen Sie das Muster an, während Sie das Verhältnis beibehalten. Versuchen Sie es mit 2-3,5-4 oder 3-5,25-6 (die Hälfte oder drei Viertel des Originals). Wichtig ist, dass die Ausatmung betont bleibt. Ihr Wohlbefinden steht immer an erster Stelle – erzwingen Sie nichts."
+      }
+    },
+    {
+      "messageId": "faq.items.4.question",
+      "sourceText": "What if I can't hold my breath for 7 counts?",
+      "reviewedSourceHash": "3e1f2eb8304b9dd748e70f42aa8d3b06a710dccd3e160fcc944dc86c089ee10e",
+      "reason": "The German catalog value converts 7 adjustable counts into 7 fixed seconds; this replacement restores source fidelity.",
+      "translations": {
+        "de-de": "Was tun, wenn ich den Atem nicht über 7 Zählzeiten anhalten kann?"
+      }
+    },
+    {
+      "messageId": "faq.items.6.answer",
+      "sourceText": "The correct order is 4-7-8: inhale for 4 counts, hold for 7 counts, exhale for 8 counts. The numbers describe the sequence of the breath cycle. \"7-8-4\" is a common mix-up, but the technique starts with the 4-count inhale and ends with the 8-count exhale. The extended exhale is what activates the relaxation response.",
+      "reviewedSourceHash": "c7194ae475fb596de8515449999d229f944bf26774a00382ffd7a8a6c701e064",
+      "reason": "The German catalog value converts adjustable count semantics into fixed seconds; this replacement restores source fidelity without changing the claim.",
+      "translations": {
+        "de-de": "Die richtige Reihenfolge ist 4-7-8: über 4 Zählzeiten einatmen, 7 Zählzeiten halten und über 8 Zählzeiten ausatmen. Die Zahlen beschreiben den Ablauf des Atemzyklus. „7-8-4“ ist ein häufiger Dreher, aber die Technik beginnt mit dem Einatmen über 4 Zählzeiten und endet mit dem Ausatmen über 8 Zählzeiten – und genau dieses verlängerte Ausatmen aktiviert die Entspannungsreaktion."
+      }
+    },
+    {
+      "messageId": "faq.items.7.answer",
+      "sourceText": "For sleep, do 4-8 cycles of 4-7-8 breathing when you get into bed. Each cycle takes about 15-20 seconds, so 4 cycles is roughly 1 minute and 8 cycles is about 2-3 minutes. Many people fall asleep before completing all cycles. Dr. Weil recommends starting with 4 cycles and gradually increasing to 8 as you get comfortable with the technique.",
+      "reviewedSourceHash": "675239bac0cf667731aa97b91825cff05db1dd34b8a69a1446a33a077ce01e98",
+      "reason": "The Japanese catalog value misspells Dr. Weil as ワイエル博士; this replacement restores the name and sentence fidelity without changing the claims.",
+      "translations": {
+        "ja-jp": "睡眠のためには、ベッドに入ったら4-7-8呼吸法を4〜8サイクル行います。1サイクルは約15〜20秒なので、4サイクルで約1分、8サイクルで約2〜3分です。多くの人が、すべてのサイクルを終える前に眠りにつきます。ワイル博士は、4サイクルから始め、この技法に慣れるにつれて徐々に8サイクルまで増やすことを勧めています。"
+      }
+    },
+    {
+      "messageId": "features.adjustable.body",
+      "sourceText": "Treat the counts as a starting point. Comfort comes first.",
+      "reviewedSourceHash": "830cc288fd371d55e54a667c49178beb90018b96dd6e655495d60f1634343cfe",
+      "reason": "The German catalog value calls the adjustable counts seconds; this replacement restores source fidelity.",
+      "translations": {
+        "de-de": "Betrachten Sie die Zählzeiten als Ausgangspunkt. Ihr Wohlbefinden steht an erster Stelle."
+      }
+    },
+    {
+      "messageId": "hero.intro",
+      "sourceText": "4-7-8 breathing is a calming pattern: inhale for 4, hold for 7, exhale for 8. This free timer (Dr. Andrew Weil's method) lets you follow the pacing instantly in your browser and adjust the counts if you need a gentler version.",
+      "reviewedSourceHash": "ae9971b495edd58370fa887423719a2da56dada3e3cd3aeba7b42d18876dc928",
+      "reason": "The German catalog value presents the adjustable count pattern as fixed seconds; this replacement restores the source’s adjustable count semantics.",
+      "translations": {
+        "de-de": "Die 4-7-8 Atemtechnik ist ein beruhigendes Atemmuster: über 4 Zählzeiten einatmen, 7 Zählzeiten halten und über 8 Zählzeiten ausatmen. Mit diesem kostenlosen Timer (nach der Methode von Dr. Andrew Weil) können Sie den Rhythmus direkt im Browser mitmachen und die Zählzeiten anpassen, falls Sie eine sanftere Variante bevorzugen."
+      }
+    },
+    {
+      "messageId": "quickAnswer.body",
+      "sourceText": "4-7-8 breathing is a relaxation technique: inhale for 4 counts, hold for 7, exhale for 8. The long exhale activates the parasympathetic nervous system, helping with sleep and anxiety. Do 4-8 cycles at bedtime or anytime you need to calm down.",
+      "reviewedSourceHash": "c68b8c5b518b0faa9b35a27a56d7b3f1cba290904e713bffdee8baa62ef861c9",
+      "reason": "The German value converts counts into fixed seconds, while the Japanese value contains the corrupted phrase 長い呼気が478呼吸法自律神経; these replacements restore source fidelity without changing the claim.",
+      "translations": {
+        "de-de": "Die 4-7-8 Atemtechnik ist eine Entspannungsmethode: über 4 Zählzeiten einatmen, 7 Zählzeiten den Atem anhalten und über 8 Zählzeiten ausatmen. Das lange Ausatmen aktiviert das parasympathische Nervensystem, was bei Schlafstörungen und Angstzuständen hilft. Machen Sie vor dem Schlafengehen oder bei Bedarf 4 bis 8 Zyklen, um zur Ruhe zu kommen.",
+        "ja-jp": "4-7-8呼吸法は、4カウントで吸い、7カウント止め、8カウントで吐くリラクゼーション法です。長い呼気が副交感神経系を活性化し、睡眠や不安の軽減に役立ちます。就寝前や、気持ちを落ち着かせたいときに4〜8サイクル行います。"
+      }
+    },
+    {
+      "messageId": "settings.beginners.body",
+      "sourceText": "Start with 2-3-4 and work up to full counts",
+      "reviewedSourceHash": "8d9ff4bd1c1125101f60d84a54616fed517bd9df52b7f8a359916d387b16b7a4",
+      "reason": "The German catalog value converts the adjustable 2-3-4 count pattern into fixed seconds; this replacement restores source fidelity.",
+      "translations": {
+        "de-de": "Beginnen Sie mit 2-3-4 und steigern Sie sich langsam auf die vollen Zählzeiten."
+      }
+    }
+  ]
+}

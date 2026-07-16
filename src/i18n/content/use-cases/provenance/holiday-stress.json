@@ -1,0 +1,3066 @@
+{
+  "locales": {
+    "de-de": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.back-to-holiday-hub": {
+          "sourceHash": "c1e300ed5fc4efbc2468ac1567e4fb20646b1182825fa3e26de23cb8c7d7f0f7",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "c50584c908ea33b9df7b011f0c9bd5ae524e8724a72b154d0f2c6769ea294fc1",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.holiday-1min-breather": {
+          "sourceHash": "d6a638e0d8f511ecdff5ea5180d83000a3fdc9c3c9710bfefe17cf4b5ec27cf6",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.holiday-2min-calm-down": {
+          "sourceHash": "16b5409e983d1dcac9227f8d19a4188410d08c5d55da1827bda4e6d3b7362c85",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.holiday-30s-reset": {
+          "sourceHash": "eba7fc02f58a8508a07a7a6284155e81335089b04396b8d6b56d525d3ec91774",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.holiday-ready-sessions": {
+          "sourceHash": "265ebf22957a0afa4262caee5a09241bad88fe078493ff72efc3142195f2cbc3",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "fd75a0c1418a75fb7860da61b872c9881106748e5beac6d999f31ad4b09d2a60",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-panic-title": {
+          "sourceHash": "60b19b4a8b0ebd154f5fe7b84fcb735a5d21fc617898a56d2250c637f22338e7",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-travel-title": {
+          "sourceHash": "e5c60420f1dc4545b5ab361b44ed15afd6515b07967f0d0410b9639fcf5f4887",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "7bf99b940ff60b9598683889d1790b2a5d780c893f79fa0f17b60668de95f577",
+          "sourceText": "Yes. The physiological sigh can be disguised as a natural 'tired sigh' or deep breath. People sigh all the time. It's socially invisible. The key is making it look casual: don't close your eyes or make a production of it. Just sigh like you would naturally, but with the double-inhale technique. If you need multiple sighs, excuse yourself briefly.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "5f6569a85450a2811fdf68cfce5495b6c56e8232d584a30c5540ec3f7b1629cf",
+          "sourceText": "Can I really do this at the dinner table without anyone noticing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "2e734df1f422c44c575826c9af1cb691d60115ba13839a7474eb29c85d77277e",
+          "sourceText": "You don't need time to 'prepare.' The physiological sigh takes 10 seconds and works immediately. Before responding to a provocative comment, take one sigh. The brief pause will feel like you're considering your response (which you are), and you'll answer from a calmer state. The few seconds of silence won't be awkward. It shows thoughtfulness.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "26c488ba2489caa27a0265081bcd78629a62d81fffda1cfb358cbfed201ea4cf",
+          "sourceText": "What if I need to respond immediately to something stressful?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "6163f1e88a0537be793a4ad90cd03751cea21c6aabb07dcc7f7fe2701b743690",
+          "sourceText": "No. Regular deep breathing often makes stress worse by over-breathing and depleting CO₂. The physiological sigh is specifically designed for rapid stress relief: the double inhale maximizes oxygen uptake and re-inflates collapsed lung tissue, while the extended exhale activates the vagus nerve. It's a physiological mechanism, not just 'relaxation.' Stanford research shows it outperforms both box breathing and meditation for acute stress.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "208d9ff8a86a3ee385f47431f451fd5438e473ad361713e26010201569d89137",
+          "sourceText": "Is this just 'deep breathing'? I've tried that and it doesn't work.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "dec185d9a00768b33ac3350bcf891179dd213c6eae1656fff1974874c1f1d32b",
+          "sourceText": "Do 5-10 physiological sighs before you arrive: in your car, outside the venue, or during your commute. This pre-emptively lowers your baseline stress level so you have more capacity for the event. You can also set phone reminders to take 'sigh breaks' every 30-60 minutes during long gatherings.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "e054a66ae4f01d916913f3a71f2a6f6aca34502b23ebc091832fd74461798c09",
+          "sourceText": "I get stressed before the gathering even starts. How can I prepare?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "647f4bc3794631aeb4e4e188936fd78cb8e2dbaffd74060181f8d1264dc99ded",
+          "sourceText": "The physiological sigh works for any acute stress situation. Use it when stuck in traffic, waiting in long checkout lines, navigating crowded stores, or dealing with flight delays. It's particularly useful because you can do it anywhere without special equipment or time commitment. For sustained stress during travel, consider coherent breathing for the longer-term calm.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].question": {
+          "sourceHash": "949c19557ffc87c2c32c93d2871b2e34ec3d64c85af0c891e2e7fc4166a1ca72",
+          "sourceText": "What about other holiday stressors like travel or shopping crowds?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "3e2e38cf1f346cfb7a4c3c76a84b5d08d775ef2caad44aac5fd4f67dc68cc636",
+          "sourceText": "The physiological sigh is designed for acute stress moments. For the chronic background anxiety of the holiday season, you'll benefit more from a daily breathing practice: 5-10 minutes of coherent breathing each morning, plus physiological sighs as needed for acute flare-ups. Think of coherent breathing as daily maintenance, and the sigh as your emergency tool.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].question": {
+          "sourceHash": "b5cf220e2aaac74e8393ab192aa09a0670ca9f7cbf15a5b8c41d444ccc855815",
+          "sourceText": "My stress isn't acute. It's a constant low-grade dread about the holidays. Will this help?",
+          "status": "route-catalog-normalized"
+        },
+        "hero.intro": {
+          "sourceHash": "c9511922b4797b15960f7322cbf91afbf852a6b567e15430e8454c29fbaeef3b",
+          "sourceText": "The dinner table conversation turns tense. Your in-laws start their usual comments. The kids are melting down. Holiday gatherings are supposed to be joyful, but your nervous system is screaming. The physiological sigh (a double-inhale-long-exhale that takes just 30 seconds) can reset your stress response before anyone notices.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "30aceed66eb2a3518548872f6e36dd182cdc6a073e7f7992fe3d58fabcd013d1",
+          "sourceText": "The physiological sigh technique for family gatherings and social overwhelm",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "6e6700ebb79acdc6c454084c36419a96e782fd0a47695a71703340fbecade8f8",
+          "sourceText": "How to Handle Holiday Stress in 30 Seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "3a45bc0667fc92f29d78a4ee03f630e4dd3c9771b4ea0cb18233f68a23af1a5f",
+          "sourceText": "Notice when you're tensing up: clenching jaw, tight shoulders, racing thoughts, or the urge to snap. This is your cue to use the technique, before you react.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "5172db6678d5aef61704925d88d065f2fccddb38687c8b8ad0141d7994c1814c",
+          "sourceText": "Recognize the trigger",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "693870f367705dcdbf8478ccb82c5d65026eb4068e24178fe9db1124bc37fb35",
+          "sourceText": "Immediately when stressed",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "0d04c5e7d1be8e9315659e22e63bc186af96f715371e147e2ed84fb468d4bb90",
+          "sourceText": "If possible, step away briefly: bathroom, kitchen, outside for 'fresh air.' But you can also do this discreetly at the table by disguising it as a big sigh.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "36644e3e22213cb001ebc114e245cb7880e5aa89083bc11b892893919b870846",
+          "sourceText": "Excuse yourself if needed",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "59be71333c960fd08e7e4fe9862206d9355f0a9884121a5b50ef8b36efdfe4cf",
+          "sourceText": "Optional",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "9dbb83308338d82973800c3098b210cc44e44c6b9f6db9911a937ed9db2b3fd7",
+          "sourceText": "Breathe in deeply through your nose, filling your lungs about 80-90%. Let your belly expand. This takes about 2-3 seconds.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "f7e5ff148c20e42e86e33cef162cd56e244fe87f6ebb2438ffa48d2465719857",
+          "sourceText": "First inhale (deep)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "79763be2db3c5115a2c8c2eddffcfc2be45269397f7cc0e4c5d84a18d1790ef1",
+          "sourceText": "2-3 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "bcf90bebad69eba2d79d6690cb446076f597ba15b99ce9933faf2aa985685cfa",
+          "sourceText": "Without exhaling, take a second, shorter sniff through your nose, like you're sniffing a flower. This 'top-up' breath re-inflates collapsed air sacs and maximizes oxygen.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "fec9fa732e0c8d6f92080a533f67f25a374fe9b8225a767a7eb11d0804bfe70d",
+          "sourceText": "Second inhale (top-up)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "c75d29e33bde84dcac6cc2ae1a0d75dd8d1f40e6a384b62f5541163e3788f59a",
+          "sourceText": "1-2 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "164d75e185967e11705d4e172750b495623d718e6621fbe2d9cdc58d782d48dc",
+          "sourceText": "Exhale slowly and completely through your mouth, making the exhale longer than both inhales combined. Let your shoulders drop. Feel the tension release.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "3ab558748b3522079566ec2ab17431f59befdcff26215ae144167dd692ba52f5",
+          "sourceText": "Long exhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "d0d78b02bf9528df659c59b2f7571ba0391524054912245d54c453c77b007e99",
+          "sourceText": "6-8 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "36a656a714207826f7d6c2f314a111ff1fe017daa1eec6bfe7fb7c39f3c0e5bb",
+          "sourceText": "One sigh often provides immediate relief. Do 2-3 if you need a full reset. Then return to the situation with a calmer nervous system.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "c24190d287e575f67201e84307201b4bd756932c3dc92966281f31479581f52a",
+          "sourceText": "Repeat 1-3 times",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "657ba576fceaacace6ad5fcfc74e91557645f9f941dc21cc10ab4d68d5cd5bfe",
+          "sourceText": "30 seconds to 1 minute",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "7e2f604370ccc35cf5f0a12468baf2caa32f335e3a96657533af6a8d09cde2ae",
+          "sourceText": "The exhale is the most important part. Make it slow and complete",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "4821e156ecc41a4f37b66df8f8b6dae762c29107332a5b67cef0b224803250ad",
+          "sourceText": "You can disguise this as a 'tired sigh' so no one notices",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "8d4362eceda3f834ad6a60b13745ad083a8308c7099707144dc4437623bc3db5",
+          "sourceText": "Practice when calm so it's automatic when you need it",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "aeca4cfb7fc7b5e42e2937f1a8bba42d736ff7a9c98d0bb93f6c528a960ebc0c",
+          "sourceText": "Do one before entering a stressful situation (prevention, not just cure)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "18bb34d3ee19295e6fabe0ca07ae16edfe59ccba36f77125a994dee03cce1f07",
+          "sourceText": "Combine with a quick walk or bathroom break for maximum effect",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "41ba585619679f43431badbc4b52ffd300ce8586e5ad658bba1a1914da2f0ee4",
+          "sourceText": "Overwhelmed at holiday gatherings? Reset your nervous system in 30 seconds with the physiological sigh—the Stanford-tested technique for acute stress relief. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "47ed5b205a3bae34cbabbf293e084c1a27ca9d5ee8b5a20108f3256b99c8def9",
+          "sourceText": "The Stanford-tested breathing technique that stops holiday stress in 30 seconds. Works at the dinner table, in crowds, or hiding in the bathroom.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "185fb5908e42466130f676b61eeb2c4c7a2e88f925a1e3367ed0ce230bdf4228",
+          "sourceText": "Holiday Stress Relief in 30 Seconds — Physiological Sigh",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "2490acac3b333e79e21a299cec1695c5c93f62dcf6ed9b8784a446beac437e70",
+          "sourceText": "Holiday Stress Relief in 30 Seconds: Physiological Sigh Technique | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "76a0017b84a534d8c23b7af6fd7b9609be3fa9138b623b7d43ff38195cbe1e27",
+          "sourceText": "Stanford-tested breathing technique for holiday stress. Works in 30 seconds. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "185fb5908e42466130f676b61eeb2c4c7a2e88f925a1e3367ed0ce230bdf4228",
+          "sourceText": "Holiday Stress Relief in 30 Seconds — Physiological Sigh",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "da4b17552b616654039e7596af13d2d7ecf2705f728165592de9e8d7fcba0105",
+          "sourceText": "Holiday stress is unique because it combines multiple triggers at once: social pressure to be 'merry,' financial strain from gift-giving, disrupted routines, difficult family dynamics, overstimulation from crowds and noise, and the impossible expectation to feel grateful while exhausted. Your nervous system can't distinguish between a passive-aggressive comment and a genuine threat. It activates the same fight-or-flight response either way.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "2bb511b1c41d263f08bf10916d0dd0980820f9ed21e505a7c975b62463e5c391",
+          "sourceText": "Why Holidays Overwhelm Your Nervous System",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "741953c0620076374f908f262e3bd54b0f5de215b7bc67f7fd65a223102cad0d",
+          "sourceText": "Jaw clenching and shoulder tension at family gatherings",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "2147e57a5f788838a50b02b9bc4823df49c4357950b34b69656caaa5e26344d5",
+          "sourceText": "Snapping at loved ones over minor issues",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "09713501338bb058a568ecd61c143c1291c5f10f25e1922eaf262b3b9da05fa8",
+          "sourceText": "Feeling like you can't escape or get a moment alone",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "198c7c447a629a2653493e19b38eefc70c0417ea1c7f5bc1019c12617facfaa2",
+          "sourceText": "Racing thoughts about everything you need to do",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "a0a2496738dc61cfc4ab3fb15dfd543a58ef422b564c6a33d400160b297786bb",
+          "sourceText": "Sensory overload from noise, crowds, and chaos",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "d0fe27bd7f1eec673179c0b0e1383fb6045b1ac13115a574e338c241683f5cef",
+          "sourceText": "Post-event exhaustion that lasts for days",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "09b5fd4b5077ecc2b529b997e4a719dccd0e232bde8a88ec1456afc0d0b3871e",
+          "sourceText": "Dreading events you're supposed to enjoy",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "f311937fc08ceb149ef69678cc813102127f578bbe266ec1a756579796e3e433",
+          "sourceText": "Stanford study showing cyclic sighing (physiological sigh) outperformed box breathing and mindfulness meditation for stress reduction and mood improvement.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "2dfc5c3bdc39bc5a5a2adf200c87c1ada83ffdcbc3a1e08638d6a9c1522b0ce8",
+          "sourceText": "Brief structured respiration practices enhance mood and reduce physiological arousal",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "0c6ebaadf4bd5b33fbe68b0109c215e1acce3bdeb011150e086a0437752424d1",
+          "sourceText": "Dr. Andrew Huberman explains the neuroscience of stress and how the physiological sigh works as a real-time intervention.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "b282db437e7bb98f8998cd81816545b6151e141895650585e1597f3669263fcf",
+          "sourceText": "How stress affects your brain and how to reverse it",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "085d951f8599f599cfd24279323010442ce6d226f7b041b281ec028e762fa1b0",
+          "sourceText": "Practical guide to the physiological sigh with HRV and heart rate data showing rapid stress reduction.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "b1bc19d1e4737f7d7264b971b43558001a5975a4f2385c59ebc6575ce195ee06",
+          "sourceText": "The Physiological Sigh: A 30-Second Breathing Exercise to Lower Stress",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "0d5bd0e1d4af6fbcac5d53a3f90a6d6f2b31e426fec42e0acd4773fc543b40bf",
+          "sourceText": "Medical overview of holiday-specific stressors and evidence-based coping strategies.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "57be113f9563765115503618d7fc712601078c03955f6b92312395b91cb50020",
+          "sourceText": "Holiday stress: Tips for coping",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "c639d79d47d91f7038efd8ae488e79d207f81574613172beb0fe1fdd674898f4",
+          "sourceText": "Practice with the full-screen Physiological Sigh visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "52b2d8253dfcb0e11fad4899e024e14459211303385972cfa33a17aeea97ed1d",
+          "sourceText": "Traveling for the holidays? Coherent breathing keeps you calm through flights and crowds",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "78d009cc343bd6d028f6b4b4804f94adc449e596c1504cd55e87c517bb05d094",
+          "sourceText": "For ongoing anxiety throughout the season, try box breathing for sustained calm",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "b18bef5639278e063f610fa657d5520c01ccdf7ce0fa4d5342b35e37db124fd7",
+          "sourceText": "If holiday stress escalates to panic, this technique stops panic attacks fast",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[3].teaser": {
+          "sourceHash": "fb4690eab0668ed644d6513677200c700b441d74703c5a3953b23ee15ffd42be",
+          "sourceText": "Can't sleep after stressful gatherings? 4-7-8 breathing is designed for bedtime",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "97690da0cbaf4830944bbed3e75abdb6245e6f5870d095eeb96b3e0ba40d1798",
+          "sourceText": "Why This Works for Holiday Stress",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "6ceca280d98f3553aae718ee29c3cd597f33e12ccaeb7a9a61db50534b3f9953",
+          "sourceText": "The long exhale phase is key. When you exhale, your heart rate naturally slows (this is called respiratory sinus arrhythmia). A 6-8 second exhale stimulates the vagus nerve more powerfully than any other breathing pattern, rapidly shifting you from fight-or-flight to rest-and-digest.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "162494d07e39d89c818da18f632fd467f540cad144b5319bce04a69457efd6b9",
+          "sourceText": "Fastest Vagus Nerve Activation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "0dd35640f230c5bf1680ed54dd6c0217b5718c6fa3c69534ccdcbb49ba1e8c66",
+          "sourceText": "When stressed, you tend to over-breathe, depleting carbon dioxide and causing tingling, dizziness, or feeling 'unreal.' The controlled exhale normalizes CO₂ levels, resolving these physical symptoms within seconds.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "42a1c85211f0dccb4804fd470feb8bc37ca039a6b376252eb2f2b6d7d039bcff",
+          "sourceText": "CO₂ Rebalancing",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "0079c63fcac66106b52c7727155c81798bc74974a604e33e15ac4f38fd17d275",
+          "sourceText": "Stanford research (Balban et al., 2023) found that just 5 minutes of cyclic sighing per day produced greater reductions in anxiety and improved mood compared to mindfulness meditation. But even 1-3 sighs provide immediate relief for acute stress.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "51d33015d694e1c667d0acf87272995b0e2078a98bbdba817798141ed80984cd",
+          "sourceText": "Immediate Cortisol Reduction",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "ffb1c03101501b773134a30ab7d08efcd1d44324ea595da79cd083f94e1a0974",
+          "sourceText": "The double-inhale pattern requires momentary focus. You can't simultaneously sigh properly and spiral into anxious thoughts. It's a physiological pattern interrupt that breaks the stress-thought-stress loop.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "6b6c5018d9d67f9ad6121764be9b45fcaee759a7ffa49cecb4a4313baef012a8",
+          "sourceText": "Interrupts Rumination",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "98b2976bb8e58921d5cf4d3ab4e8dccda426a3dfbf5e2fc9cee4bd96275dc8bf",
+          "sourceText": "The physiological sigh is the fastest way to shift your nervous system from stress to calm. It's the same pattern your body uses naturally when you sob or when you transition from sleep. The technique is simple: two inhales through your nose (a big breath, then a small 'top-up'), followed by one long exhale through your mouth. Stanford research shows it's more effective than box breathing or meditation for acute stress relief.",
+          "status": "route-catalog-exact"
+        },
+        "solution.heading": {
+          "sourceHash": "4c97384a475a0ff39d4d2628de827092a0b7d2a60a28dff70e9f4ece58e52599",
+          "sourceText": "The Physiological Sigh: Your 30-Second Escape",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "373a50274c097965f7a41fe3cfd79e2fc173073b55eb82810b95b48bf2151876",
+          "sourceText": "Unlike other breathing techniques that require 2-5 minutes to work, the physiological sigh produces measurable stress reduction in just 1-3 breaths. The double inhale re-inflates collapsed air sacs in your lungs (maximizing oxygen), while the long exhale activates your vagus nerve (triggering the calm-down response). You can do it discreetly at the dinner table, in a bathroom, or walking to your car.",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "es-es": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.back-to-holiday-hub": {
+          "sourceHash": "c1e300ed5fc4efbc2468ac1567e4fb20646b1182825fa3e26de23cb8c7d7f0f7",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "c50584c908ea33b9df7b011f0c9bd5ae524e8724a72b154d0f2c6769ea294fc1",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.holiday-1min-breather": {
+          "sourceHash": "d6a638e0d8f511ecdff5ea5180d83000a3fdc9c3c9710bfefe17cf4b5ec27cf6",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.holiday-2min-calm-down": {
+          "sourceHash": "16b5409e983d1dcac9227f8d19a4188410d08c5d55da1827bda4e6d3b7362c85",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.holiday-30s-reset": {
+          "sourceHash": "eba7fc02f58a8508a07a7a6284155e81335089b04396b8d6b56d525d3ec91774",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.holiday-ready-sessions": {
+          "sourceHash": "265ebf22957a0afa4262caee5a09241bad88fe078493ff72efc3142195f2cbc3",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "fd75a0c1418a75fb7860da61b872c9881106748e5beac6d999f31ad4b09d2a60",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-panic-title": {
+          "sourceHash": "60b19b4a8b0ebd154f5fe7b84fcb735a5d21fc617898a56d2250c637f22338e7",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-travel-title": {
+          "sourceHash": "e5c60420f1dc4545b5ab361b44ed15afd6515b07967f0d0410b9639fcf5f4887",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "7bf99b940ff60b9598683889d1790b2a5d780c893f79fa0f17b60668de95f577",
+          "sourceText": "Yes. The physiological sigh can be disguised as a natural 'tired sigh' or deep breath. People sigh all the time. It's socially invisible. The key is making it look casual: don't close your eyes or make a production of it. Just sigh like you would naturally, but with the double-inhale technique. If you need multiple sighs, excuse yourself briefly.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "5f6569a85450a2811fdf68cfce5495b6c56e8232d584a30c5540ec3f7b1629cf",
+          "sourceText": "Can I really do this at the dinner table without anyone noticing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "2e734df1f422c44c575826c9af1cb691d60115ba13839a7474eb29c85d77277e",
+          "sourceText": "You don't need time to 'prepare.' The physiological sigh takes 10 seconds and works immediately. Before responding to a provocative comment, take one sigh. The brief pause will feel like you're considering your response (which you are), and you'll answer from a calmer state. The few seconds of silence won't be awkward. It shows thoughtfulness.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "26c488ba2489caa27a0265081bcd78629a62d81fffda1cfb358cbfed201ea4cf",
+          "sourceText": "What if I need to respond immediately to something stressful?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "6163f1e88a0537be793a4ad90cd03751cea21c6aabb07dcc7f7fe2701b743690",
+          "sourceText": "No. Regular deep breathing often makes stress worse by over-breathing and depleting CO₂. The physiological sigh is specifically designed for rapid stress relief: the double inhale maximizes oxygen uptake and re-inflates collapsed lung tissue, while the extended exhale activates the vagus nerve. It's a physiological mechanism, not just 'relaxation.' Stanford research shows it outperforms both box breathing and meditation for acute stress.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "208d9ff8a86a3ee385f47431f451fd5438e473ad361713e26010201569d89137",
+          "sourceText": "Is this just 'deep breathing'? I've tried that and it doesn't work.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "dec185d9a00768b33ac3350bcf891179dd213c6eae1656fff1974874c1f1d32b",
+          "sourceText": "Do 5-10 physiological sighs before you arrive: in your car, outside the venue, or during your commute. This pre-emptively lowers your baseline stress level so you have more capacity for the event. You can also set phone reminders to take 'sigh breaks' every 30-60 minutes during long gatherings.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "e054a66ae4f01d916913f3a71f2a6f6aca34502b23ebc091832fd74461798c09",
+          "sourceText": "I get stressed before the gathering even starts. How can I prepare?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "647f4bc3794631aeb4e4e188936fd78cb8e2dbaffd74060181f8d1264dc99ded",
+          "sourceText": "The physiological sigh works for any acute stress situation. Use it when stuck in traffic, waiting in long checkout lines, navigating crowded stores, or dealing with flight delays. It's particularly useful because you can do it anywhere without special equipment or time commitment. For sustained stress during travel, consider coherent breathing for the longer-term calm.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].question": {
+          "sourceHash": "949c19557ffc87c2c32c93d2871b2e34ec3d64c85af0c891e2e7fc4166a1ca72",
+          "sourceText": "What about other holiday stressors like travel or shopping crowds?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "3e2e38cf1f346cfb7a4c3c76a84b5d08d775ef2caad44aac5fd4f67dc68cc636",
+          "sourceText": "The physiological sigh is designed for acute stress moments. For the chronic background anxiety of the holiday season, you'll benefit more from a daily breathing practice: 5-10 minutes of coherent breathing each morning, plus physiological sighs as needed for acute flare-ups. Think of coherent breathing as daily maintenance, and the sigh as your emergency tool.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].question": {
+          "sourceHash": "b5cf220e2aaac74e8393ab192aa09a0670ca9f7cbf15a5b8c41d444ccc855815",
+          "sourceText": "My stress isn't acute. It's a constant low-grade dread about the holidays. Will this help?",
+          "status": "route-catalog-normalized"
+        },
+        "hero.intro": {
+          "sourceHash": "c9511922b4797b15960f7322cbf91afbf852a6b567e15430e8454c29fbaeef3b",
+          "sourceText": "The dinner table conversation turns tense. Your in-laws start their usual comments. The kids are melting down. Holiday gatherings are supposed to be joyful, but your nervous system is screaming. The physiological sigh (a double-inhale-long-exhale that takes just 30 seconds) can reset your stress response before anyone notices.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "30aceed66eb2a3518548872f6e36dd182cdc6a073e7f7992fe3d58fabcd013d1",
+          "sourceText": "The physiological sigh technique for family gatherings and social overwhelm",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "6e6700ebb79acdc6c454084c36419a96e782fd0a47695a71703340fbecade8f8",
+          "sourceText": "How to Handle Holiday Stress in 30 Seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "3a45bc0667fc92f29d78a4ee03f630e4dd3c9771b4ea0cb18233f68a23af1a5f",
+          "sourceText": "Notice when you're tensing up: clenching jaw, tight shoulders, racing thoughts, or the urge to snap. This is your cue to use the technique, before you react.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "5172db6678d5aef61704925d88d065f2fccddb38687c8b8ad0141d7994c1814c",
+          "sourceText": "Recognize the trigger",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "693870f367705dcdbf8478ccb82c5d65026eb4068e24178fe9db1124bc37fb35",
+          "sourceText": "Immediately when stressed",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "0d04c5e7d1be8e9315659e22e63bc186af96f715371e147e2ed84fb468d4bb90",
+          "sourceText": "If possible, step away briefly: bathroom, kitchen, outside for 'fresh air.' But you can also do this discreetly at the table by disguising it as a big sigh.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "36644e3e22213cb001ebc114e245cb7880e5aa89083bc11b892893919b870846",
+          "sourceText": "Excuse yourself if needed",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "59be71333c960fd08e7e4fe9862206d9355f0a9884121a5b50ef8b36efdfe4cf",
+          "sourceText": "Optional",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "9dbb83308338d82973800c3098b210cc44e44c6b9f6db9911a937ed9db2b3fd7",
+          "sourceText": "Breathe in deeply through your nose, filling your lungs about 80-90%. Let your belly expand. This takes about 2-3 seconds.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "f7e5ff148c20e42e86e33cef162cd56e244fe87f6ebb2438ffa48d2465719857",
+          "sourceText": "First inhale (deep)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "79763be2db3c5115a2c8c2eddffcfc2be45269397f7cc0e4c5d84a18d1790ef1",
+          "sourceText": "2-3 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "bcf90bebad69eba2d79d6690cb446076f597ba15b99ce9933faf2aa985685cfa",
+          "sourceText": "Without exhaling, take a second, shorter sniff through your nose, like you're sniffing a flower. This 'top-up' breath re-inflates collapsed air sacs and maximizes oxygen.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "fec9fa732e0c8d6f92080a533f67f25a374fe9b8225a767a7eb11d0804bfe70d",
+          "sourceText": "Second inhale (top-up)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "c75d29e33bde84dcac6cc2ae1a0d75dd8d1f40e6a384b62f5541163e3788f59a",
+          "sourceText": "1-2 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "164d75e185967e11705d4e172750b495623d718e6621fbe2d9cdc58d782d48dc",
+          "sourceText": "Exhale slowly and completely through your mouth, making the exhale longer than both inhales combined. Let your shoulders drop. Feel the tension release.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "3ab558748b3522079566ec2ab17431f59befdcff26215ae144167dd692ba52f5",
+          "sourceText": "Long exhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "d0d78b02bf9528df659c59b2f7571ba0391524054912245d54c453c77b007e99",
+          "sourceText": "6-8 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "36a656a714207826f7d6c2f314a111ff1fe017daa1eec6bfe7fb7c39f3c0e5bb",
+          "sourceText": "One sigh often provides immediate relief. Do 2-3 if you need a full reset. Then return to the situation with a calmer nervous system.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "c24190d287e575f67201e84307201b4bd756932c3dc92966281f31479581f52a",
+          "sourceText": "Repeat 1-3 times",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "657ba576fceaacace6ad5fcfc74e91557645f9f941dc21cc10ab4d68d5cd5bfe",
+          "sourceText": "30 seconds to 1 minute",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "7e2f604370ccc35cf5f0a12468baf2caa32f335e3a96657533af6a8d09cde2ae",
+          "sourceText": "The exhale is the most important part. Make it slow and complete",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "4821e156ecc41a4f37b66df8f8b6dae762c29107332a5b67cef0b224803250ad",
+          "sourceText": "You can disguise this as a 'tired sigh' so no one notices",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "8d4362eceda3f834ad6a60b13745ad083a8308c7099707144dc4437623bc3db5",
+          "sourceText": "Practice when calm so it's automatic when you need it",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "aeca4cfb7fc7b5e42e2937f1a8bba42d736ff7a9c98d0bb93f6c528a960ebc0c",
+          "sourceText": "Do one before entering a stressful situation (prevention, not just cure)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "18bb34d3ee19295e6fabe0ca07ae16edfe59ccba36f77125a994dee03cce1f07",
+          "sourceText": "Combine with a quick walk or bathroom break for maximum effect",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "41ba585619679f43431badbc4b52ffd300ce8586e5ad658bba1a1914da2f0ee4",
+          "sourceText": "Overwhelmed at holiday gatherings? Reset your nervous system in 30 seconds with the physiological sigh: the Stanford-tested technique for acute stress relief. Free visualizer.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "47ed5b205a3bae34cbabbf293e084c1a27ca9d5ee8b5a20108f3256b99c8def9",
+          "sourceText": "The Stanford-tested breathing technique that stops holiday stress in 30 seconds. Works at the dinner table, in crowds, or hiding in the bathroom.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "185fb5908e42466130f676b61eeb2c4c7a2e88f925a1e3367ed0ce230bdf4228",
+          "sourceText": "Holiday Stress Relief in 30 Seconds: Physiological Sigh",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.title": {
+          "sourceHash": "2490acac3b333e79e21a299cec1695c5c93f62dcf6ed9b8784a446beac437e70",
+          "sourceText": "Holiday Stress Relief in 30 Seconds: Physiological Sigh Technique",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "76a0017b84a534d8c23b7af6fd7b9609be3fa9138b623b7d43ff38195cbe1e27",
+          "sourceText": "Stanford-tested breathing technique for holiday stress. Works in 30 seconds. Free visualizer.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "185fb5908e42466130f676b61eeb2c4c7a2e88f925a1e3367ed0ce230bdf4228",
+          "sourceText": "Holiday Stress Relief in 30 Seconds: Physiological Sigh",
+          "status": "repo-reviewed-replacement"
+        },
+        "problem.content": {
+          "sourceHash": "da4b17552b616654039e7596af13d2d7ecf2705f728165592de9e8d7fcba0105",
+          "sourceText": "Holiday stress is unique because it combines multiple triggers at once: social pressure to be 'merry,' financial strain from gift-giving, disrupted routines, difficult family dynamics, overstimulation from crowds and noise, and the impossible expectation to feel grateful while exhausted. Your nervous system can't distinguish between a passive-aggressive comment and a genuine threat. It activates the same fight-or-flight response either way.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "2bb511b1c41d263f08bf10916d0dd0980820f9ed21e505a7c975b62463e5c391",
+          "sourceText": "Why Holidays Overwhelm Your Nervous System",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "741953c0620076374f908f262e3bd54b0f5de215b7bc67f7fd65a223102cad0d",
+          "sourceText": "Jaw clenching and shoulder tension at family gatherings",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "2147e57a5f788838a50b02b9bc4823df49c4357950b34b69656caaa5e26344d5",
+          "sourceText": "Snapping at loved ones over minor issues",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "09713501338bb058a568ecd61c143c1291c5f10f25e1922eaf262b3b9da05fa8",
+          "sourceText": "Feeling like you can't escape or get a moment alone",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "198c7c447a629a2653493e19b38eefc70c0417ea1c7f5bc1019c12617facfaa2",
+          "sourceText": "Racing thoughts about everything you need to do",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "a0a2496738dc61cfc4ab3fb15dfd543a58ef422b564c6a33d400160b297786bb",
+          "sourceText": "Sensory overload from noise, crowds, and chaos",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "d0fe27bd7f1eec673179c0b0e1383fb6045b1ac13115a574e338c241683f5cef",
+          "sourceText": "Post-event exhaustion that lasts for days",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "09b5fd4b5077ecc2b529b997e4a719dccd0e232bde8a88ec1456afc0d0b3871e",
+          "sourceText": "Dreading events you're supposed to enjoy",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "f311937fc08ceb149ef69678cc813102127f578bbe266ec1a756579796e3e433",
+          "sourceText": "Stanford study showing cyclic sighing (physiological sigh) outperformed box breathing and mindfulness meditation for stress reduction and mood improvement.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "2dfc5c3bdc39bc5a5a2adf200c87c1ada83ffdcbc3a1e08638d6a9c1522b0ce8",
+          "sourceText": "Brief structured respiration practices enhance mood and reduce physiological arousal",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "0c6ebaadf4bd5b33fbe68b0109c215e1acce3bdeb011150e086a0437752424d1",
+          "sourceText": "Dr. Andrew Huberman explains the neuroscience of stress and how the physiological sigh works as a real-time intervention.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "b282db437e7bb98f8998cd81816545b6151e141895650585e1597f3669263fcf",
+          "sourceText": "How stress affects your brain and how to reverse it",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "085d951f8599f599cfd24279323010442ce6d226f7b041b281ec028e762fa1b0",
+          "sourceText": "Practical guide to the physiological sigh with HRV and heart rate data showing rapid stress reduction.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "b1bc19d1e4737f7d7264b971b43558001a5975a4f2385c59ebc6575ce195ee06",
+          "sourceText": "The Physiological Sigh: A 30-Second Breathing Exercise to Lower Stress",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "0d5bd0e1d4af6fbcac5d53a3f90a6d6f2b31e426fec42e0acd4773fc543b40bf",
+          "sourceText": "Medical overview of holiday-specific stressors and evidence-based coping strategies.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "57be113f9563765115503618d7fc712601078c03955f6b92312395b91cb50020",
+          "sourceText": "Holiday stress: Tips for coping",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "c639d79d47d91f7038efd8ae488e79d207f81574613172beb0fe1fdd674898f4",
+          "sourceText": "Practice with the full-screen Physiological Sigh visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "52b2d8253dfcb0e11fad4899e024e14459211303385972cfa33a17aeea97ed1d",
+          "sourceText": "Traveling for the holidays? Coherent breathing keeps you calm through flights and crowds",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "78d009cc343bd6d028f6b4b4804f94adc449e596c1504cd55e87c517bb05d094",
+          "sourceText": "For ongoing anxiety throughout the season, try box breathing for sustained calm",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "b18bef5639278e063f610fa657d5520c01ccdf7ce0fa4d5342b35e37db124fd7",
+          "sourceText": "If holiday stress escalates to panic, this technique stops panic attacks fast",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[3].teaser": {
+          "sourceHash": "fb4690eab0668ed644d6513677200c700b441d74703c5a3953b23ee15ffd42be",
+          "sourceText": "Can't sleep after stressful gatherings? 4-7-8 breathing is designed for bedtime",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "97690da0cbaf4830944bbed3e75abdb6245e6f5870d095eeb96b3e0ba40d1798",
+          "sourceText": "Why This Works for Holiday Stress",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "6ceca280d98f3553aae718ee29c3cd597f33e12ccaeb7a9a61db50534b3f9953",
+          "sourceText": "The long exhale phase is key. When you exhale, your heart rate naturally slows (this is called respiratory sinus arrhythmia). A 6-8 second exhale stimulates the vagus nerve more powerfully than any other breathing pattern, rapidly shifting you from fight-or-flight to rest-and-digest.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "162494d07e39d89c818da18f632fd467f540cad144b5319bce04a69457efd6b9",
+          "sourceText": "Fastest Vagus Nerve Activation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "0dd35640f230c5bf1680ed54dd6c0217b5718c6fa3c69534ccdcbb49ba1e8c66",
+          "sourceText": "When stressed, you tend to over-breathe, depleting carbon dioxide and causing tingling, dizziness, or feeling 'unreal.' The controlled exhale normalizes CO₂ levels, resolving these physical symptoms within seconds.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "42a1c85211f0dccb4804fd470feb8bc37ca039a6b376252eb2f2b6d7d039bcff",
+          "sourceText": "CO₂ Rebalancing",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "0079c63fcac66106b52c7727155c81798bc74974a604e33e15ac4f38fd17d275",
+          "sourceText": "Stanford research (Balban et al., 2023) found that just 5 minutes of cyclic sighing per day produced greater reductions in anxiety and improved mood compared to mindfulness meditation. But even 1-3 sighs provide immediate relief for acute stress.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "51d33015d694e1c667d0acf87272995b0e2078a98bbdba817798141ed80984cd",
+          "sourceText": "Immediate Cortisol Reduction",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "ffb1c03101501b773134a30ab7d08efcd1d44324ea595da79cd083f94e1a0974",
+          "sourceText": "The double-inhale pattern requires momentary focus. You can't simultaneously sigh properly and spiral into anxious thoughts. It's a physiological pattern interrupt that breaks the stress-thought-stress loop.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "6b6c5018d9d67f9ad6121764be9b45fcaee759a7ffa49cecb4a4313baef012a8",
+          "sourceText": "Interrupts Rumination",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "98b2976bb8e58921d5cf4d3ab4e8dccda426a3dfbf5e2fc9cee4bd96275dc8bf",
+          "sourceText": "The physiological sigh is the fastest way to shift your nervous system from stress to calm. It's the same pattern your body uses naturally when you sob or when you transition from sleep. The technique is simple: two inhales through your nose (a big breath, then a small 'top-up'), followed by one long exhale through your mouth. Stanford research shows it's more effective than box breathing or meditation for acute stress relief.",
+          "status": "route-catalog-exact"
+        },
+        "solution.heading": {
+          "sourceHash": "4c97384a475a0ff39d4d2628de827092a0b7d2a60a28dff70e9f4ece58e52599",
+          "sourceText": "The Physiological Sigh: Your 30-Second Escape",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "373a50274c097965f7a41fe3cfd79e2fc173073b55eb82810b95b48bf2151876",
+          "sourceText": "Unlike other breathing techniques that require 2-5 minutes to work, the physiological sigh produces measurable stress reduction in just 1-3 breaths. The double inhale re-inflates collapsed air sacs in your lungs (maximizing oxygen), while the long exhale activates your vagus nerve (triggering the calm-down response). You can do it discreetly at the dinner table, in a bathroom, or walking to your car.",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "fr-fr": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.back-to-holiday-hub": {
+          "sourceHash": "c1e300ed5fc4efbc2468ac1567e4fb20646b1182825fa3e26de23cb8c7d7f0f7",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "c50584c908ea33b9df7b011f0c9bd5ae524e8724a72b154d0f2c6769ea294fc1",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.holiday-1min-breather": {
+          "sourceHash": "d6a638e0d8f511ecdff5ea5180d83000a3fdc9c3c9710bfefe17cf4b5ec27cf6",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.holiday-2min-calm-down": {
+          "sourceHash": "16b5409e983d1dcac9227f8d19a4188410d08c5d55da1827bda4e6d3b7362c85",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.holiday-30s-reset": {
+          "sourceHash": "eba7fc02f58a8508a07a7a6284155e81335089b04396b8d6b56d525d3ec91774",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.holiday-ready-sessions": {
+          "sourceHash": "265ebf22957a0afa4262caee5a09241bad88fe078493ff72efc3142195f2cbc3",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "fd75a0c1418a75fb7860da61b872c9881106748e5beac6d999f31ad4b09d2a60",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-panic-title": {
+          "sourceHash": "60b19b4a8b0ebd154f5fe7b84fcb735a5d21fc617898a56d2250c637f22338e7",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-travel-title": {
+          "sourceHash": "e5c60420f1dc4545b5ab361b44ed15afd6515b07967f0d0410b9639fcf5f4887",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "7bf99b940ff60b9598683889d1790b2a5d780c893f79fa0f17b60668de95f577",
+          "sourceText": "Yes. The physiological sigh can be disguised as a natural 'tired sigh' or deep breath. People sigh all the time. It's socially invisible. The key is making it look casual: don't close your eyes or make a production of it. Just sigh like you would naturally, but with the double-inhale technique. If you need multiple sighs, excuse yourself briefly.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "5f6569a85450a2811fdf68cfce5495b6c56e8232d584a30c5540ec3f7b1629cf",
+          "sourceText": "Can I really do this at the dinner table without anyone noticing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "2e734df1f422c44c575826c9af1cb691d60115ba13839a7474eb29c85d77277e",
+          "sourceText": "You don't need time to 'prepare.' The physiological sigh takes 10 seconds and works immediately. Before responding to a provocative comment, take one sigh. The brief pause will feel like you're considering your response (which you are), and you'll answer from a calmer state. The few seconds of silence won't be awkward. It shows thoughtfulness.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "26c488ba2489caa27a0265081bcd78629a62d81fffda1cfb358cbfed201ea4cf",
+          "sourceText": "What if I need to respond immediately to something stressful?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "6163f1e88a0537be793a4ad90cd03751cea21c6aabb07dcc7f7fe2701b743690",
+          "sourceText": "No. Regular deep breathing often makes stress worse by over-breathing and depleting CO₂. The physiological sigh is specifically designed for rapid stress relief: the double inhale maximizes oxygen uptake and re-inflates collapsed lung tissue, while the extended exhale activates the vagus nerve. It's a physiological mechanism, not just 'relaxation.' Stanford research shows it outperforms both box breathing and meditation for acute stress.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "208d9ff8a86a3ee385f47431f451fd5438e473ad361713e26010201569d89137",
+          "sourceText": "Is this just 'deep breathing'? I've tried that and it doesn't work.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "dec185d9a00768b33ac3350bcf891179dd213c6eae1656fff1974874c1f1d32b",
+          "sourceText": "Do 5-10 physiological sighs before you arrive: in your car, outside the venue, or during your commute. This pre-emptively lowers your baseline stress level so you have more capacity for the event. You can also set phone reminders to take 'sigh breaks' every 30-60 minutes during long gatherings.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "e054a66ae4f01d916913f3a71f2a6f6aca34502b23ebc091832fd74461798c09",
+          "sourceText": "I get stressed before the gathering even starts. How can I prepare?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "647f4bc3794631aeb4e4e188936fd78cb8e2dbaffd74060181f8d1264dc99ded",
+          "sourceText": "The physiological sigh works for any acute stress situation. Use it when stuck in traffic, waiting in long checkout lines, navigating crowded stores, or dealing with flight delays. It's particularly useful because you can do it anywhere without special equipment or time commitment. For sustained stress during travel, consider coherent breathing for the longer-term calm.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].question": {
+          "sourceHash": "949c19557ffc87c2c32c93d2871b2e34ec3d64c85af0c891e2e7fc4166a1ca72",
+          "sourceText": "What about other holiday stressors like travel or shopping crowds?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "3e2e38cf1f346cfb7a4c3c76a84b5d08d775ef2caad44aac5fd4f67dc68cc636",
+          "sourceText": "The physiological sigh is designed for acute stress moments. For the chronic background anxiety of the holiday season, you'll benefit more from a daily breathing practice: 5-10 minutes of coherent breathing each morning, plus physiological sighs as needed for acute flare-ups. Think of coherent breathing as daily maintenance, and the sigh as your emergency tool.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].question": {
+          "sourceHash": "b5cf220e2aaac74e8393ab192aa09a0670ca9f7cbf15a5b8c41d444ccc855815",
+          "sourceText": "My stress isn't acute. It's a constant low-grade dread about the holidays. Will this help?",
+          "status": "route-catalog-normalized"
+        },
+        "hero.intro": {
+          "sourceHash": "c9511922b4797b15960f7322cbf91afbf852a6b567e15430e8454c29fbaeef3b",
+          "sourceText": "The dinner table conversation turns tense. Your in-laws start their usual comments. The kids are melting down. Holiday gatherings are supposed to be joyful, but your nervous system is screaming. The physiological sigh (a double-inhale-long-exhale that takes just 30 seconds) can reset your stress response before anyone notices.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "30aceed66eb2a3518548872f6e36dd182cdc6a073e7f7992fe3d58fabcd013d1",
+          "sourceText": "The physiological sigh technique for family gatherings and social overwhelm",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "6e6700ebb79acdc6c454084c36419a96e782fd0a47695a71703340fbecade8f8",
+          "sourceText": "How to Handle Holiday Stress in 30 Seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "3a45bc0667fc92f29d78a4ee03f630e4dd3c9771b4ea0cb18233f68a23af1a5f",
+          "sourceText": "Notice when you're tensing up: clenching jaw, tight shoulders, racing thoughts, or the urge to snap. This is your cue to use the technique, before you react.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "5172db6678d5aef61704925d88d065f2fccddb38687c8b8ad0141d7994c1814c",
+          "sourceText": "Recognize the trigger",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "693870f367705dcdbf8478ccb82c5d65026eb4068e24178fe9db1124bc37fb35",
+          "sourceText": "Immediately when stressed",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "0d04c5e7d1be8e9315659e22e63bc186af96f715371e147e2ed84fb468d4bb90",
+          "sourceText": "If possible, step away briefly: bathroom, kitchen, outside for 'fresh air.' But you can also do this discreetly at the table by disguising it as a big sigh.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "36644e3e22213cb001ebc114e245cb7880e5aa89083bc11b892893919b870846",
+          "sourceText": "Excuse yourself if needed",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "59be71333c960fd08e7e4fe9862206d9355f0a9884121a5b50ef8b36efdfe4cf",
+          "sourceText": "Optional",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "9dbb83308338d82973800c3098b210cc44e44c6b9f6db9911a937ed9db2b3fd7",
+          "sourceText": "Breathe in deeply through your nose, filling your lungs about 80-90%. Let your belly expand. This takes about 2-3 seconds.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "f7e5ff148c20e42e86e33cef162cd56e244fe87f6ebb2438ffa48d2465719857",
+          "sourceText": "First inhale (deep)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "79763be2db3c5115a2c8c2eddffcfc2be45269397f7cc0e4c5d84a18d1790ef1",
+          "sourceText": "2-3 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "bcf90bebad69eba2d79d6690cb446076f597ba15b99ce9933faf2aa985685cfa",
+          "sourceText": "Without exhaling, take a second, shorter sniff through your nose, like you're sniffing a flower. This 'top-up' breath re-inflates collapsed air sacs and maximizes oxygen.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "fec9fa732e0c8d6f92080a533f67f25a374fe9b8225a767a7eb11d0804bfe70d",
+          "sourceText": "Second inhale (top-up)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "c75d29e33bde84dcac6cc2ae1a0d75dd8d1f40e6a384b62f5541163e3788f59a",
+          "sourceText": "1-2 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "164d75e185967e11705d4e172750b495623d718e6621fbe2d9cdc58d782d48dc",
+          "sourceText": "Exhale slowly and completely through your mouth, making the exhale longer than both inhales combined. Let your shoulders drop. Feel the tension release.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "3ab558748b3522079566ec2ab17431f59befdcff26215ae144167dd692ba52f5",
+          "sourceText": "Long exhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "d0d78b02bf9528df659c59b2f7571ba0391524054912245d54c453c77b007e99",
+          "sourceText": "6-8 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "36a656a714207826f7d6c2f314a111ff1fe017daa1eec6bfe7fb7c39f3c0e5bb",
+          "sourceText": "One sigh often provides immediate relief. Do 2-3 if you need a full reset. Then return to the situation with a calmer nervous system.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "c24190d287e575f67201e84307201b4bd756932c3dc92966281f31479581f52a",
+          "sourceText": "Repeat 1-3 times",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "657ba576fceaacace6ad5fcfc74e91557645f9f941dc21cc10ab4d68d5cd5bfe",
+          "sourceText": "30 seconds to 1 minute",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "7e2f604370ccc35cf5f0a12468baf2caa32f335e3a96657533af6a8d09cde2ae",
+          "sourceText": "The exhale is the most important part. Make it slow and complete",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "4821e156ecc41a4f37b66df8f8b6dae762c29107332a5b67cef0b224803250ad",
+          "sourceText": "You can disguise this as a 'tired sigh' so no one notices",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "8d4362eceda3f834ad6a60b13745ad083a8308c7099707144dc4437623bc3db5",
+          "sourceText": "Practice when calm so it's automatic when you need it",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "aeca4cfb7fc7b5e42e2937f1a8bba42d736ff7a9c98d0bb93f6c528a960ebc0c",
+          "sourceText": "Do one before entering a stressful situation (prevention, not just cure)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "18bb34d3ee19295e6fabe0ca07ae16edfe59ccba36f77125a994dee03cce1f07",
+          "sourceText": "Combine with a quick walk or bathroom break for maximum effect",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "41ba585619679f43431badbc4b52ffd300ce8586e5ad658bba1a1914da2f0ee4",
+          "sourceText": "Overwhelmed at holiday gatherings? Reset your nervous system in 30 seconds with the physiological sigh—the Stanford-tested technique for acute stress relief. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "47ed5b205a3bae34cbabbf293e084c1a27ca9d5ee8b5a20108f3256b99c8def9",
+          "sourceText": "The Stanford-tested breathing technique that stops holiday stress in 30 seconds. Works at the dinner table, in crowds, or hiding in the bathroom.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "185fb5908e42466130f676b61eeb2c4c7a2e88f925a1e3367ed0ce230bdf4228",
+          "sourceText": "Holiday Stress Relief in 30 Seconds — Physiological Sigh",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "2490acac3b333e79e21a299cec1695c5c93f62dcf6ed9b8784a446beac437e70",
+          "sourceText": "Holiday Stress Relief in 30 Seconds: Physiological Sigh Technique | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "76a0017b84a534d8c23b7af6fd7b9609be3fa9138b623b7d43ff38195cbe1e27",
+          "sourceText": "Stanford-tested breathing technique for holiday stress. Works in 30 seconds. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "185fb5908e42466130f676b61eeb2c4c7a2e88f925a1e3367ed0ce230bdf4228",
+          "sourceText": "Holiday Stress Relief in 30 Seconds — Physiological Sigh",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "da4b17552b616654039e7596af13d2d7ecf2705f728165592de9e8d7fcba0105",
+          "sourceText": "Holiday stress is unique because it combines multiple triggers at once: social pressure to be 'merry,' financial strain from gift-giving, disrupted routines, difficult family dynamics, overstimulation from crowds and noise, and the impossible expectation to feel grateful while exhausted. Your nervous system can't distinguish between a passive-aggressive comment and a genuine threat. It activates the same fight-or-flight response either way.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "2bb511b1c41d263f08bf10916d0dd0980820f9ed21e505a7c975b62463e5c391",
+          "sourceText": "Why Holidays Overwhelm Your Nervous System",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "741953c0620076374f908f262e3bd54b0f5de215b7bc67f7fd65a223102cad0d",
+          "sourceText": "Jaw clenching and shoulder tension at family gatherings",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "2147e57a5f788838a50b02b9bc4823df49c4357950b34b69656caaa5e26344d5",
+          "sourceText": "Snapping at loved ones over minor issues",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "09713501338bb058a568ecd61c143c1291c5f10f25e1922eaf262b3b9da05fa8",
+          "sourceText": "Feeling like you can't escape or get a moment alone",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "198c7c447a629a2653493e19b38eefc70c0417ea1c7f5bc1019c12617facfaa2",
+          "sourceText": "Racing thoughts about everything you need to do",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "a0a2496738dc61cfc4ab3fb15dfd543a58ef422b564c6a33d400160b297786bb",
+          "sourceText": "Sensory overload from noise, crowds, and chaos",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "d0fe27bd7f1eec673179c0b0e1383fb6045b1ac13115a574e338c241683f5cef",
+          "sourceText": "Post-event exhaustion that lasts for days",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "09b5fd4b5077ecc2b529b997e4a719dccd0e232bde8a88ec1456afc0d0b3871e",
+          "sourceText": "Dreading events you're supposed to enjoy",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "f311937fc08ceb149ef69678cc813102127f578bbe266ec1a756579796e3e433",
+          "sourceText": "Stanford study showing cyclic sighing (physiological sigh) outperformed box breathing and mindfulness meditation for stress reduction and mood improvement.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "2dfc5c3bdc39bc5a5a2adf200c87c1ada83ffdcbc3a1e08638d6a9c1522b0ce8",
+          "sourceText": "Brief structured respiration practices enhance mood and reduce physiological arousal",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "0c6ebaadf4bd5b33fbe68b0109c215e1acce3bdeb011150e086a0437752424d1",
+          "sourceText": "Dr. Andrew Huberman explains the neuroscience of stress and how the physiological sigh works as a real-time intervention.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "b282db437e7bb98f8998cd81816545b6151e141895650585e1597f3669263fcf",
+          "sourceText": "How stress affects your brain and how to reverse it",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "085d951f8599f599cfd24279323010442ce6d226f7b041b281ec028e762fa1b0",
+          "sourceText": "Practical guide to the physiological sigh with HRV and heart rate data showing rapid stress reduction.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "b1bc19d1e4737f7d7264b971b43558001a5975a4f2385c59ebc6575ce195ee06",
+          "sourceText": "The Physiological Sigh: A 30-Second Breathing Exercise to Lower Stress",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "0d5bd0e1d4af6fbcac5d53a3f90a6d6f2b31e426fec42e0acd4773fc543b40bf",
+          "sourceText": "Medical overview of holiday-specific stressors and evidence-based coping strategies.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "57be113f9563765115503618d7fc712601078c03955f6b92312395b91cb50020",
+          "sourceText": "Holiday stress: Tips for coping",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "c639d79d47d91f7038efd8ae488e79d207f81574613172beb0fe1fdd674898f4",
+          "sourceText": "Practice with the full-screen Physiological Sigh visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "52b2d8253dfcb0e11fad4899e024e14459211303385972cfa33a17aeea97ed1d",
+          "sourceText": "Traveling for the holidays? Coherent breathing keeps you calm through flights and crowds",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "78d009cc343bd6d028f6b4b4804f94adc449e596c1504cd55e87c517bb05d094",
+          "sourceText": "For ongoing anxiety throughout the season, try box breathing for sustained calm",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "b18bef5639278e063f610fa657d5520c01ccdf7ce0fa4d5342b35e37db124fd7",
+          "sourceText": "If holiday stress escalates to panic, this technique stops panic attacks fast",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[3].teaser": {
+          "sourceHash": "fb4690eab0668ed644d6513677200c700b441d74703c5a3953b23ee15ffd42be",
+          "sourceText": "Can't sleep after stressful gatherings? 4-7-8 breathing is designed for bedtime",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "97690da0cbaf4830944bbed3e75abdb6245e6f5870d095eeb96b3e0ba40d1798",
+          "sourceText": "Why This Works for Holiday Stress",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "6ceca280d98f3553aae718ee29c3cd597f33e12ccaeb7a9a61db50534b3f9953",
+          "sourceText": "The long exhale phase is key. When you exhale, your heart rate naturally slows (this is called respiratory sinus arrhythmia). A 6-8 second exhale stimulates the vagus nerve more powerfully than any other breathing pattern, rapidly shifting you from fight-or-flight to rest-and-digest.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "162494d07e39d89c818da18f632fd467f540cad144b5319bce04a69457efd6b9",
+          "sourceText": "Fastest Vagus Nerve Activation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "0dd35640f230c5bf1680ed54dd6c0217b5718c6fa3c69534ccdcbb49ba1e8c66",
+          "sourceText": "When stressed, you tend to over-breathe, depleting carbon dioxide and causing tingling, dizziness, or feeling 'unreal.' The controlled exhale normalizes CO₂ levels, resolving these physical symptoms within seconds.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "42a1c85211f0dccb4804fd470feb8bc37ca039a6b376252eb2f2b6d7d039bcff",
+          "sourceText": "CO₂ Rebalancing",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "0079c63fcac66106b52c7727155c81798bc74974a604e33e15ac4f38fd17d275",
+          "sourceText": "Stanford research (Balban et al., 2023) found that just 5 minutes of cyclic sighing per day produced greater reductions in anxiety and improved mood compared to mindfulness meditation. But even 1-3 sighs provide immediate relief for acute stress.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "51d33015d694e1c667d0acf87272995b0e2078a98bbdba817798141ed80984cd",
+          "sourceText": "Immediate Cortisol Reduction",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "ffb1c03101501b773134a30ab7d08efcd1d44324ea595da79cd083f94e1a0974",
+          "sourceText": "The double-inhale pattern requires momentary focus. You can't simultaneously sigh properly and spiral into anxious thoughts. It's a physiological pattern interrupt that breaks the stress-thought-stress loop.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "6b6c5018d9d67f9ad6121764be9b45fcaee759a7ffa49cecb4a4313baef012a8",
+          "sourceText": "Interrupts Rumination",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "98b2976bb8e58921d5cf4d3ab4e8dccda426a3dfbf5e2fc9cee4bd96275dc8bf",
+          "sourceText": "The physiological sigh is the fastest way to shift your nervous system from stress to calm. It's the same pattern your body uses naturally when you sob or when you transition from sleep. The technique is simple: two inhales through your nose (a big breath, then a small 'top-up'), followed by one long exhale through your mouth. Stanford research shows it's more effective than box breathing or meditation for acute stress relief.",
+          "status": "route-catalog-exact"
+        },
+        "solution.heading": {
+          "sourceHash": "4c97384a475a0ff39d4d2628de827092a0b7d2a60a28dff70e9f4ece58e52599",
+          "sourceText": "The Physiological Sigh: Your 30-Second Escape",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "373a50274c097965f7a41fe3cfd79e2fc173073b55eb82810b95b48bf2151876",
+          "sourceText": "Unlike other breathing techniques that require 2-5 minutes to work, the physiological sigh produces measurable stress reduction in just 1-3 breaths. The double inhale re-inflates collapsed air sacs in your lungs (maximizing oxygen), while the long exhale activates your vagus nerve (triggering the calm-down response). You can do it discreetly at the dinner table, in a bathroom, or walking to your car.",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "ja-jp": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.back-to-holiday-hub": {
+          "sourceHash": "c1e300ed5fc4efbc2468ac1567e4fb20646b1182825fa3e26de23cb8c7d7f0f7",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "c50584c908ea33b9df7b011f0c9bd5ae524e8724a72b154d0f2c6769ea294fc1",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.holiday-1min-breather": {
+          "sourceHash": "d6a638e0d8f511ecdff5ea5180d83000a3fdc9c3c9710bfefe17cf4b5ec27cf6",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.holiday-2min-calm-down": {
+          "sourceHash": "16b5409e983d1dcac9227f8d19a4188410d08c5d55da1827bda4e6d3b7362c85",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.holiday-30s-reset": {
+          "sourceHash": "eba7fc02f58a8508a07a7a6284155e81335089b04396b8d6b56d525d3ec91774",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.holiday-ready-sessions": {
+          "sourceHash": "265ebf22957a0afa4262caee5a09241bad88fe078493ff72efc3142195f2cbc3",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "fd75a0c1418a75fb7860da61b872c9881106748e5beac6d999f31ad4b09d2a60",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-panic-title": {
+          "sourceHash": "60b19b4a8b0ebd154f5fe7b84fcb735a5d21fc617898a56d2250c637f22338e7",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-travel-title": {
+          "sourceHash": "e5c60420f1dc4545b5ab361b44ed15afd6515b07967f0d0410b9639fcf5f4887",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "7bf99b940ff60b9598683889d1790b2a5d780c893f79fa0f17b60668de95f577",
+          "sourceText": "Yes. The physiological sigh can be disguised as a natural 'tired sigh' or deep breath. People sigh all the time. It's socially invisible. The key is making it look casual: don't close your eyes or make a production of it. Just sigh like you would naturally, but with the double-inhale technique. If you need multiple sighs, excuse yourself briefly.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "5f6569a85450a2811fdf68cfce5495b6c56e8232d584a30c5540ec3f7b1629cf",
+          "sourceText": "Can I really do this at the dinner table without anyone noticing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "2e734df1f422c44c575826c9af1cb691d60115ba13839a7474eb29c85d77277e",
+          "sourceText": "You don't need time to 'prepare.' The physiological sigh takes 10 seconds and works immediately. Before responding to a provocative comment, take one sigh. The brief pause will feel like you're considering your response (which you are), and you'll answer from a calmer state. The few seconds of silence won't be awkward. It shows thoughtfulness.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "26c488ba2489caa27a0265081bcd78629a62d81fffda1cfb358cbfed201ea4cf",
+          "sourceText": "What if I need to respond immediately to something stressful?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "6163f1e88a0537be793a4ad90cd03751cea21c6aabb07dcc7f7fe2701b743690",
+          "sourceText": "No. Regular deep breathing often makes stress worse by over-breathing and depleting CO₂. The physiological sigh is specifically designed for rapid stress relief: the double inhale maximizes oxygen uptake and re-inflates collapsed lung tissue, while the extended exhale activates the vagus nerve. It's a physiological mechanism, not just 'relaxation.' Stanford research shows it outperforms both box breathing and meditation for acute stress.",
+          "status": "repo-reviewed-replacement"
+        },
+        "faqs[2].question": {
+          "sourceHash": "208d9ff8a86a3ee385f47431f451fd5438e473ad361713e26010201569d89137",
+          "sourceText": "Is this just 'deep breathing'? I've tried that and it doesn't work.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "dec185d9a00768b33ac3350bcf891179dd213c6eae1656fff1974874c1f1d32b",
+          "sourceText": "Do 5-10 physiological sighs before you arrive: in your car, outside the venue, or during your commute. This pre-emptively lowers your baseline stress level so you have more capacity for the event. You can also set phone reminders to take 'sigh breaks' every 30-60 minutes during long gatherings.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "e054a66ae4f01d916913f3a71f2a6f6aca34502b23ebc091832fd74461798c09",
+          "sourceText": "I get stressed before the gathering even starts. How can I prepare?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "647f4bc3794631aeb4e4e188936fd78cb8e2dbaffd74060181f8d1264dc99ded",
+          "sourceText": "The physiological sigh works for any acute stress situation. Use it when stuck in traffic, waiting in long checkout lines, navigating crowded stores, or dealing with flight delays. It's particularly useful because you can do it anywhere without special equipment or time commitment. For sustained stress during travel, consider coherent breathing for the longer-term calm.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].question": {
+          "sourceHash": "949c19557ffc87c2c32c93d2871b2e34ec3d64c85af0c891e2e7fc4166a1ca72",
+          "sourceText": "What about other holiday stressors like travel or shopping crowds?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "3e2e38cf1f346cfb7a4c3c76a84b5d08d775ef2caad44aac5fd4f67dc68cc636",
+          "sourceText": "The physiological sigh is designed for acute stress moments. For the chronic background anxiety of the holiday season, you'll benefit more from a daily breathing practice: 5-10 minutes of coherent breathing each morning, plus physiological sighs as needed for acute flare-ups. Think of coherent breathing as daily maintenance, and the sigh as your emergency tool.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].question": {
+          "sourceHash": "b5cf220e2aaac74e8393ab192aa09a0670ca9f7cbf15a5b8c41d444ccc855815",
+          "sourceText": "My stress isn't acute. It's a constant low-grade dread about the holidays. Will this help?",
+          "status": "route-catalog-normalized"
+        },
+        "hero.intro": {
+          "sourceHash": "c9511922b4797b15960f7322cbf91afbf852a6b567e15430e8454c29fbaeef3b",
+          "sourceText": "The dinner table conversation turns tense. Your in-laws start their usual comments. The kids are melting down. Holiday gatherings are supposed to be joyful, but your nervous system is screaming. The physiological sigh (a double-inhale-long-exhale that takes just 30 seconds) can reset your stress response before anyone notices.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "30aceed66eb2a3518548872f6e36dd182cdc6a073e7f7992fe3d58fabcd013d1",
+          "sourceText": "The physiological sigh technique for family gatherings and social overwhelm",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "6e6700ebb79acdc6c454084c36419a96e782fd0a47695a71703340fbecade8f8",
+          "sourceText": "How to Handle Holiday Stress in 30 Seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "3a45bc0667fc92f29d78a4ee03f630e4dd3c9771b4ea0cb18233f68a23af1a5f",
+          "sourceText": "Notice when you're tensing up: clenching jaw, tight shoulders, racing thoughts, or the urge to snap. This is your cue to use the technique, before you react.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "5172db6678d5aef61704925d88d065f2fccddb38687c8b8ad0141d7994c1814c",
+          "sourceText": "Recognize the trigger",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "693870f367705dcdbf8478ccb82c5d65026eb4068e24178fe9db1124bc37fb35",
+          "sourceText": "Immediately when stressed",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "0d04c5e7d1be8e9315659e22e63bc186af96f715371e147e2ed84fb468d4bb90",
+          "sourceText": "If possible, step away briefly: bathroom, kitchen, outside for 'fresh air.' But you can also do this discreetly at the table by disguising it as a big sigh.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "36644e3e22213cb001ebc114e245cb7880e5aa89083bc11b892893919b870846",
+          "sourceText": "Excuse yourself if needed",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "59be71333c960fd08e7e4fe9862206d9355f0a9884121a5b50ef8b36efdfe4cf",
+          "sourceText": "Optional",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "9dbb83308338d82973800c3098b210cc44e44c6b9f6db9911a937ed9db2b3fd7",
+          "sourceText": "Breathe in deeply through your nose, filling your lungs about 80-90%. Let your belly expand. This takes about 2-3 seconds.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "f7e5ff148c20e42e86e33cef162cd56e244fe87f6ebb2438ffa48d2465719857",
+          "sourceText": "First inhale (deep)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "79763be2db3c5115a2c8c2eddffcfc2be45269397f7cc0e4c5d84a18d1790ef1",
+          "sourceText": "2-3 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "bcf90bebad69eba2d79d6690cb446076f597ba15b99ce9933faf2aa985685cfa",
+          "sourceText": "Without exhaling, take a second, shorter sniff through your nose, like you're sniffing a flower. This 'top-up' breath re-inflates collapsed air sacs and maximizes oxygen.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "fec9fa732e0c8d6f92080a533f67f25a374fe9b8225a767a7eb11d0804bfe70d",
+          "sourceText": "Second inhale (top-up)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "c75d29e33bde84dcac6cc2ae1a0d75dd8d1f40e6a384b62f5541163e3788f59a",
+          "sourceText": "1-2 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "164d75e185967e11705d4e172750b495623d718e6621fbe2d9cdc58d782d48dc",
+          "sourceText": "Exhale slowly and completely through your mouth, making the exhale longer than both inhales combined. Let your shoulders drop. Feel the tension release.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "3ab558748b3522079566ec2ab17431f59befdcff26215ae144167dd692ba52f5",
+          "sourceText": "Long exhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "d0d78b02bf9528df659c59b2f7571ba0391524054912245d54c453c77b007e99",
+          "sourceText": "6-8 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "36a656a714207826f7d6c2f314a111ff1fe017daa1eec6bfe7fb7c39f3c0e5bb",
+          "sourceText": "One sigh often provides immediate relief. Do 2-3 if you need a full reset. Then return to the situation with a calmer nervous system.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "c24190d287e575f67201e84307201b4bd756932c3dc92966281f31479581f52a",
+          "sourceText": "Repeat 1-3 times",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "657ba576fceaacace6ad5fcfc74e91557645f9f941dc21cc10ab4d68d5cd5bfe",
+          "sourceText": "30 seconds to 1 minute",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "7e2f604370ccc35cf5f0a12468baf2caa32f335e3a96657533af6a8d09cde2ae",
+          "sourceText": "The exhale is the most important part. Make it slow and complete",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "4821e156ecc41a4f37b66df8f8b6dae762c29107332a5b67cef0b224803250ad",
+          "sourceText": "You can disguise this as a 'tired sigh' so no one notices",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "8d4362eceda3f834ad6a60b13745ad083a8308c7099707144dc4437623bc3db5",
+          "sourceText": "Practice when calm so it's automatic when you need it",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "aeca4cfb7fc7b5e42e2937f1a8bba42d736ff7a9c98d0bb93f6c528a960ebc0c",
+          "sourceText": "Do one before entering a stressful situation (prevention, not just cure)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "18bb34d3ee19295e6fabe0ca07ae16edfe59ccba36f77125a994dee03cce1f07",
+          "sourceText": "Combine with a quick walk or bathroom break for maximum effect",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "41ba585619679f43431badbc4b52ffd300ce8586e5ad658bba1a1914da2f0ee4",
+          "sourceText": "Overwhelmed at holiday gatherings? Reset your nervous system in 30 seconds with the physiological sigh—the Stanford-tested technique for acute stress relief. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "47ed5b205a3bae34cbabbf293e084c1a27ca9d5ee8b5a20108f3256b99c8def9",
+          "sourceText": "The Stanford-tested breathing technique that stops holiday stress in 30 seconds. Works at the dinner table, in crowds, or hiding in the bathroom.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "185fb5908e42466130f676b61eeb2c4c7a2e88f925a1e3367ed0ce230bdf4228",
+          "sourceText": "Holiday Stress Relief in 30 Seconds — Physiological Sigh",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "2490acac3b333e79e21a299cec1695c5c93f62dcf6ed9b8784a446beac437e70",
+          "sourceText": "Holiday Stress Relief in 30 Seconds: Physiological Sigh Technique | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "76a0017b84a534d8c23b7af6fd7b9609be3fa9138b623b7d43ff38195cbe1e27",
+          "sourceText": "Stanford-tested breathing technique for holiday stress. Works in 30 seconds. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "185fb5908e42466130f676b61eeb2c4c7a2e88f925a1e3367ed0ce230bdf4228",
+          "sourceText": "Holiday Stress Relief in 30 Seconds — Physiological Sigh",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "da4b17552b616654039e7596af13d2d7ecf2705f728165592de9e8d7fcba0105",
+          "sourceText": "Holiday stress is unique because it combines multiple triggers at once: social pressure to be 'merry,' financial strain from gift-giving, disrupted routines, difficult family dynamics, overstimulation from crowds and noise, and the impossible expectation to feel grateful while exhausted. Your nervous system can't distinguish between a passive-aggressive comment and a genuine threat. It activates the same fight-or-flight response either way.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "2bb511b1c41d263f08bf10916d0dd0980820f9ed21e505a7c975b62463e5c391",
+          "sourceText": "Why Holidays Overwhelm Your Nervous System",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "741953c0620076374f908f262e3bd54b0f5de215b7bc67f7fd65a223102cad0d",
+          "sourceText": "Jaw clenching and shoulder tension at family gatherings",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "2147e57a5f788838a50b02b9bc4823df49c4357950b34b69656caaa5e26344d5",
+          "sourceText": "Snapping at loved ones over minor issues",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "09713501338bb058a568ecd61c143c1291c5f10f25e1922eaf262b3b9da05fa8",
+          "sourceText": "Feeling like you can't escape or get a moment alone",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "198c7c447a629a2653493e19b38eefc70c0417ea1c7f5bc1019c12617facfaa2",
+          "sourceText": "Racing thoughts about everything you need to do",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "a0a2496738dc61cfc4ab3fb15dfd543a58ef422b564c6a33d400160b297786bb",
+          "sourceText": "Sensory overload from noise, crowds, and chaos",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "d0fe27bd7f1eec673179c0b0e1383fb6045b1ac13115a574e338c241683f5cef",
+          "sourceText": "Post-event exhaustion that lasts for days",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "09b5fd4b5077ecc2b529b997e4a719dccd0e232bde8a88ec1456afc0d0b3871e",
+          "sourceText": "Dreading events you're supposed to enjoy",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "f311937fc08ceb149ef69678cc813102127f578bbe266ec1a756579796e3e433",
+          "sourceText": "Stanford study showing cyclic sighing (physiological sigh) outperformed box breathing and mindfulness meditation for stress reduction and mood improvement.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "2dfc5c3bdc39bc5a5a2adf200c87c1ada83ffdcbc3a1e08638d6a9c1522b0ce8",
+          "sourceText": "Brief structured respiration practices enhance mood and reduce physiological arousal",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "0c6ebaadf4bd5b33fbe68b0109c215e1acce3bdeb011150e086a0437752424d1",
+          "sourceText": "Dr. Andrew Huberman explains the neuroscience of stress and how the physiological sigh works as a real-time intervention.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "b282db437e7bb98f8998cd81816545b6151e141895650585e1597f3669263fcf",
+          "sourceText": "How stress affects your brain and how to reverse it",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "085d951f8599f599cfd24279323010442ce6d226f7b041b281ec028e762fa1b0",
+          "sourceText": "Practical guide to the physiological sigh with HRV and heart rate data showing rapid stress reduction.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "b1bc19d1e4737f7d7264b971b43558001a5975a4f2385c59ebc6575ce195ee06",
+          "sourceText": "The Physiological Sigh: A 30-Second Breathing Exercise to Lower Stress",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "0d5bd0e1d4af6fbcac5d53a3f90a6d6f2b31e426fec42e0acd4773fc543b40bf",
+          "sourceText": "Medical overview of holiday-specific stressors and evidence-based coping strategies.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "57be113f9563765115503618d7fc712601078c03955f6b92312395b91cb50020",
+          "sourceText": "Holiday stress: Tips for coping",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "c639d79d47d91f7038efd8ae488e79d207f81574613172beb0fe1fdd674898f4",
+          "sourceText": "Practice with the full-screen Physiological Sigh visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "52b2d8253dfcb0e11fad4899e024e14459211303385972cfa33a17aeea97ed1d",
+          "sourceText": "Traveling for the holidays? Coherent breathing keeps you calm through flights and crowds",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "78d009cc343bd6d028f6b4b4804f94adc449e596c1504cd55e87c517bb05d094",
+          "sourceText": "For ongoing anxiety throughout the season, try box breathing for sustained calm",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "b18bef5639278e063f610fa657d5520c01ccdf7ce0fa4d5342b35e37db124fd7",
+          "sourceText": "If holiday stress escalates to panic, this technique stops panic attacks fast",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[3].teaser": {
+          "sourceHash": "fb4690eab0668ed644d6513677200c700b441d74703c5a3953b23ee15ffd42be",
+          "sourceText": "Can't sleep after stressful gatherings? 4-7-8 breathing is designed for bedtime",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "97690da0cbaf4830944bbed3e75abdb6245e6f5870d095eeb96b3e0ba40d1798",
+          "sourceText": "Why This Works for Holiday Stress",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "6ceca280d98f3553aae718ee29c3cd597f33e12ccaeb7a9a61db50534b3f9953",
+          "sourceText": "The long exhale phase is key. When you exhale, your heart rate naturally slows (this is called respiratory sinus arrhythmia). A 6-8 second exhale stimulates the vagus nerve more powerfully than any other breathing pattern, rapidly shifting you from fight-or-flight to rest-and-digest.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "162494d07e39d89c818da18f632fd467f540cad144b5319bce04a69457efd6b9",
+          "sourceText": "Fastest Vagus Nerve Activation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "0dd35640f230c5bf1680ed54dd6c0217b5718c6fa3c69534ccdcbb49ba1e8c66",
+          "sourceText": "When stressed, you tend to over-breathe, depleting carbon dioxide and causing tingling, dizziness, or feeling 'unreal.' The controlled exhale normalizes CO₂ levels, resolving these physical symptoms within seconds.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "42a1c85211f0dccb4804fd470feb8bc37ca039a6b376252eb2f2b6d7d039bcff",
+          "sourceText": "CO₂ Rebalancing",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "0079c63fcac66106b52c7727155c81798bc74974a604e33e15ac4f38fd17d275",
+          "sourceText": "Stanford research (Balban et al., 2023) found that just 5 minutes of cyclic sighing per day produced greater reductions in anxiety and improved mood compared to mindfulness meditation. But even 1-3 sighs provide immediate relief for acute stress.",
+          "status": "repo-reviewed-replacement"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "51d33015d694e1c667d0acf87272995b0e2078a98bbdba817798141ed80984cd",
+          "sourceText": "Immediate Cortisol Reduction",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "ffb1c03101501b773134a30ab7d08efcd1d44324ea595da79cd083f94e1a0974",
+          "sourceText": "The double-inhale pattern requires momentary focus. You can't simultaneously sigh properly and spiral into anxious thoughts. It's a physiological pattern interrupt that breaks the stress-thought-stress loop.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "6b6c5018d9d67f9ad6121764be9b45fcaee759a7ffa49cecb4a4313baef012a8",
+          "sourceText": "Interrupts Rumination",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "98b2976bb8e58921d5cf4d3ab4e8dccda426a3dfbf5e2fc9cee4bd96275dc8bf",
+          "sourceText": "The physiological sigh is the fastest way to shift your nervous system from stress to calm. It's the same pattern your body uses naturally when you sob or when you transition from sleep. The technique is simple: two inhales through your nose (a big breath, then a small 'top-up'), followed by one long exhale through your mouth. Stanford research shows it's more effective than box breathing or meditation for acute stress relief.",
+          "status": "route-catalog-exact"
+        },
+        "solution.heading": {
+          "sourceHash": "4c97384a475a0ff39d4d2628de827092a0b7d2a60a28dff70e9f4ece58e52599",
+          "sourceText": "The Physiological Sigh: Your 30-Second Escape",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "373a50274c097965f7a41fe3cfd79e2fc173073b55eb82810b95b48bf2151876",
+          "sourceText": "Unlike other breathing techniques that require 2-5 minutes to work, the physiological sigh produces measurable stress reduction in just 1-3 breaths. The double inhale re-inflates collapsed air sacs in your lungs (maximizing oxygen), while the long exhale activates your vagus nerve (triggering the calm-down response). You can do it discreetly at the dinner table, in a bathroom, or walking to your car.",
+          "status": "repo-reviewed-replacement"
+        }
+      }
+    },
+    "pt-br": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.back-to-holiday-hub": {
+          "sourceHash": "c1e300ed5fc4efbc2468ac1567e4fb20646b1182825fa3e26de23cb8c7d7f0f7",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "c50584c908ea33b9df7b011f0c9bd5ae524e8724a72b154d0f2c6769ea294fc1",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.holiday-1min-breather": {
+          "sourceHash": "d6a638e0d8f511ecdff5ea5180d83000a3fdc9c3c9710bfefe17cf4b5ec27cf6",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.holiday-2min-calm-down": {
+          "sourceHash": "16b5409e983d1dcac9227f8d19a4188410d08c5d55da1827bda4e6d3b7362c85",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.holiday-30s-reset": {
+          "sourceHash": "eba7fc02f58a8508a07a7a6284155e81335089b04396b8d6b56d525d3ec91774",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.holiday-ready-sessions": {
+          "sourceHash": "265ebf22957a0afa4262caee5a09241bad88fe078493ff72efc3142195f2cbc3",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "fd75a0c1418a75fb7860da61b872c9881106748e5beac6d999f31ad4b09d2a60",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-panic-title": {
+          "sourceHash": "60b19b4a8b0ebd154f5fe7b84fcb735a5d21fc617898a56d2250c637f22338e7",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-travel-title": {
+          "sourceHash": "e5c60420f1dc4545b5ab361b44ed15afd6515b07967f0d0410b9639fcf5f4887",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "7bf99b940ff60b9598683889d1790b2a5d780c893f79fa0f17b60668de95f577",
+          "sourceText": "Yes. The physiological sigh can be disguised as a natural 'tired sigh' or deep breath. People sigh all the time. It's socially invisible. The key is making it look casual: don't close your eyes or make a production of it. Just sigh like you would naturally, but with the double-inhale technique. If you need multiple sighs, excuse yourself briefly.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "5f6569a85450a2811fdf68cfce5495b6c56e8232d584a30c5540ec3f7b1629cf",
+          "sourceText": "Can I really do this at the dinner table without anyone noticing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "2e734df1f422c44c575826c9af1cb691d60115ba13839a7474eb29c85d77277e",
+          "sourceText": "You don't need time to 'prepare.' The physiological sigh takes 10 seconds and works immediately. Before responding to a provocative comment, take one sigh. The brief pause will feel like you're considering your response (which you are), and you'll answer from a calmer state. The few seconds of silence won't be awkward. It shows thoughtfulness.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "26c488ba2489caa27a0265081bcd78629a62d81fffda1cfb358cbfed201ea4cf",
+          "sourceText": "What if I need to respond immediately to something stressful?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "6163f1e88a0537be793a4ad90cd03751cea21c6aabb07dcc7f7fe2701b743690",
+          "sourceText": "No. Regular deep breathing often makes stress worse by over-breathing and depleting CO₂. The physiological sigh is specifically designed for rapid stress relief: the double inhale maximizes oxygen uptake and re-inflates collapsed lung tissue, while the extended exhale activates the vagus nerve. It's a physiological mechanism, not just 'relaxation.' Stanford research shows it outperforms both box breathing and meditation for acute stress.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "208d9ff8a86a3ee385f47431f451fd5438e473ad361713e26010201569d89137",
+          "sourceText": "Is this just 'deep breathing'? I've tried that and it doesn't work.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "dec185d9a00768b33ac3350bcf891179dd213c6eae1656fff1974874c1f1d32b",
+          "sourceText": "Do 5-10 physiological sighs before you arrive: in your car, outside the venue, or during your commute. This pre-emptively lowers your baseline stress level so you have more capacity for the event. You can also set phone reminders to take 'sigh breaks' every 30-60 minutes during long gatherings.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "e054a66ae4f01d916913f3a71f2a6f6aca34502b23ebc091832fd74461798c09",
+          "sourceText": "I get stressed before the gathering even starts. How can I prepare?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "647f4bc3794631aeb4e4e188936fd78cb8e2dbaffd74060181f8d1264dc99ded",
+          "sourceText": "The physiological sigh works for any acute stress situation. Use it when stuck in traffic, waiting in long checkout lines, navigating crowded stores, or dealing with flight delays. It's particularly useful because you can do it anywhere without special equipment or time commitment. For sustained stress during travel, consider coherent breathing for the longer-term calm.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].question": {
+          "sourceHash": "949c19557ffc87c2c32c93d2871b2e34ec3d64c85af0c891e2e7fc4166a1ca72",
+          "sourceText": "What about other holiday stressors like travel or shopping crowds?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "3e2e38cf1f346cfb7a4c3c76a84b5d08d775ef2caad44aac5fd4f67dc68cc636",
+          "sourceText": "The physiological sigh is designed for acute stress moments. For the chronic background anxiety of the holiday season, you'll benefit more from a daily breathing practice: 5-10 minutes of coherent breathing each morning, plus physiological sighs as needed for acute flare-ups. Think of coherent breathing as daily maintenance, and the sigh as your emergency tool.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].question": {
+          "sourceHash": "b5cf220e2aaac74e8393ab192aa09a0670ca9f7cbf15a5b8c41d444ccc855815",
+          "sourceText": "My stress isn't acute. It's a constant low-grade dread about the holidays. Will this help?",
+          "status": "route-catalog-normalized"
+        },
+        "hero.intro": {
+          "sourceHash": "c9511922b4797b15960f7322cbf91afbf852a6b567e15430e8454c29fbaeef3b",
+          "sourceText": "The dinner table conversation turns tense. Your in-laws start their usual comments. The kids are melting down. Holiday gatherings are supposed to be joyful, but your nervous system is screaming. The physiological sigh (a double-inhale-long-exhale that takes just 30 seconds) can reset your stress response before anyone notices.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "30aceed66eb2a3518548872f6e36dd182cdc6a073e7f7992fe3d58fabcd013d1",
+          "sourceText": "The physiological sigh technique for family gatherings and social overwhelm",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "6e6700ebb79acdc6c454084c36419a96e782fd0a47695a71703340fbecade8f8",
+          "sourceText": "How to Handle Holiday Stress in 30 Seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "3a45bc0667fc92f29d78a4ee03f630e4dd3c9771b4ea0cb18233f68a23af1a5f",
+          "sourceText": "Notice when you're tensing up: clenching jaw, tight shoulders, racing thoughts, or the urge to snap. This is your cue to use the technique, before you react.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "5172db6678d5aef61704925d88d065f2fccddb38687c8b8ad0141d7994c1814c",
+          "sourceText": "Recognize the trigger",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "693870f367705dcdbf8478ccb82c5d65026eb4068e24178fe9db1124bc37fb35",
+          "sourceText": "Immediately when stressed",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "0d04c5e7d1be8e9315659e22e63bc186af96f715371e147e2ed84fb468d4bb90",
+          "sourceText": "If possible, step away briefly: bathroom, kitchen, outside for 'fresh air.' But you can also do this discreetly at the table by disguising it as a big sigh.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "36644e3e22213cb001ebc114e245cb7880e5aa89083bc11b892893919b870846",
+          "sourceText": "Excuse yourself if needed",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "59be71333c960fd08e7e4fe9862206d9355f0a9884121a5b50ef8b36efdfe4cf",
+          "sourceText": "Optional",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "9dbb83308338d82973800c3098b210cc44e44c6b9f6db9911a937ed9db2b3fd7",
+          "sourceText": "Breathe in deeply through your nose, filling your lungs about 80-90%. Let your belly expand. This takes about 2-3 seconds.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "f7e5ff148c20e42e86e33cef162cd56e244fe87f6ebb2438ffa48d2465719857",
+          "sourceText": "First inhale (deep)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "79763be2db3c5115a2c8c2eddffcfc2be45269397f7cc0e4c5d84a18d1790ef1",
+          "sourceText": "2-3 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "bcf90bebad69eba2d79d6690cb446076f597ba15b99ce9933faf2aa985685cfa",
+          "sourceText": "Without exhaling, take a second, shorter sniff through your nose, like you're sniffing a flower. This 'top-up' breath re-inflates collapsed air sacs and maximizes oxygen.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "fec9fa732e0c8d6f92080a533f67f25a374fe9b8225a767a7eb11d0804bfe70d",
+          "sourceText": "Second inhale (top-up)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "c75d29e33bde84dcac6cc2ae1a0d75dd8d1f40e6a384b62f5541163e3788f59a",
+          "sourceText": "1-2 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "164d75e185967e11705d4e172750b495623d718e6621fbe2d9cdc58d782d48dc",
+          "sourceText": "Exhale slowly and completely through your mouth, making the exhale longer than both inhales combined. Let your shoulders drop. Feel the tension release.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "3ab558748b3522079566ec2ab17431f59befdcff26215ae144167dd692ba52f5",
+          "sourceText": "Long exhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "d0d78b02bf9528df659c59b2f7571ba0391524054912245d54c453c77b007e99",
+          "sourceText": "6-8 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "36a656a714207826f7d6c2f314a111ff1fe017daa1eec6bfe7fb7c39f3c0e5bb",
+          "sourceText": "One sigh often provides immediate relief. Do 2-3 if you need a full reset. Then return to the situation with a calmer nervous system.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "c24190d287e575f67201e84307201b4bd756932c3dc92966281f31479581f52a",
+          "sourceText": "Repeat 1-3 times",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "657ba576fceaacace6ad5fcfc74e91557645f9f941dc21cc10ab4d68d5cd5bfe",
+          "sourceText": "30 seconds to 1 minute",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "7e2f604370ccc35cf5f0a12468baf2caa32f335e3a96657533af6a8d09cde2ae",
+          "sourceText": "The exhale is the most important part. Make it slow and complete",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "4821e156ecc41a4f37b66df8f8b6dae762c29107332a5b67cef0b224803250ad",
+          "sourceText": "You can disguise this as a 'tired sigh' so no one notices",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "8d4362eceda3f834ad6a60b13745ad083a8308c7099707144dc4437623bc3db5",
+          "sourceText": "Practice when calm so it's automatic when you need it",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "aeca4cfb7fc7b5e42e2937f1a8bba42d736ff7a9c98d0bb93f6c528a960ebc0c",
+          "sourceText": "Do one before entering a stressful situation (prevention, not just cure)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "18bb34d3ee19295e6fabe0ca07ae16edfe59ccba36f77125a994dee03cce1f07",
+          "sourceText": "Combine with a quick walk or bathroom break for maximum effect",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "41ba585619679f43431badbc4b52ffd300ce8586e5ad658bba1a1914da2f0ee4",
+          "sourceText": "Overwhelmed at holiday gatherings? Reset your nervous system in 30 seconds with the physiological sigh—the Stanford-tested technique for acute stress relief. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "47ed5b205a3bae34cbabbf293e084c1a27ca9d5ee8b5a20108f3256b99c8def9",
+          "sourceText": "The Stanford-tested breathing technique that stops holiday stress in 30 seconds. Works at the dinner table, in crowds, or hiding in the bathroom.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "185fb5908e42466130f676b61eeb2c4c7a2e88f925a1e3367ed0ce230bdf4228",
+          "sourceText": "Holiday Stress Relief in 30 Seconds — Physiological Sigh",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "2490acac3b333e79e21a299cec1695c5c93f62dcf6ed9b8784a446beac437e70",
+          "sourceText": "Holiday Stress Relief in 30 Seconds: Physiological Sigh Technique | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "76a0017b84a534d8c23b7af6fd7b9609be3fa9138b623b7d43ff38195cbe1e27",
+          "sourceText": "Stanford-tested breathing technique for holiday stress. Works in 30 seconds. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "185fb5908e42466130f676b61eeb2c4c7a2e88f925a1e3367ed0ce230bdf4228",
+          "sourceText": "Holiday Stress Relief in 30 Seconds — Physiological Sigh",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "da4b17552b616654039e7596af13d2d7ecf2705f728165592de9e8d7fcba0105",
+          "sourceText": "Holiday stress is unique because it combines multiple triggers at once: social pressure to be 'merry,' financial strain from gift-giving, disrupted routines, difficult family dynamics, overstimulation from crowds and noise, and the impossible expectation to feel grateful while exhausted. Your nervous system can't distinguish between a passive-aggressive comment and a genuine threat. It activates the same fight-or-flight response either way.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "2bb511b1c41d263f08bf10916d0dd0980820f9ed21e505a7c975b62463e5c391",
+          "sourceText": "Why Holidays Overwhelm Your Nervous System",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "741953c0620076374f908f262e3bd54b0f5de215b7bc67f7fd65a223102cad0d",
+          "sourceText": "Jaw clenching and shoulder tension at family gatherings",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "2147e57a5f788838a50b02b9bc4823df49c4357950b34b69656caaa5e26344d5",
+          "sourceText": "Snapping at loved ones over minor issues",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "09713501338bb058a568ecd61c143c1291c5f10f25e1922eaf262b3b9da05fa8",
+          "sourceText": "Feeling like you can't escape or get a moment alone",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "198c7c447a629a2653493e19b38eefc70c0417ea1c7f5bc1019c12617facfaa2",
+          "sourceText": "Racing thoughts about everything you need to do",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "a0a2496738dc61cfc4ab3fb15dfd543a58ef422b564c6a33d400160b297786bb",
+          "sourceText": "Sensory overload from noise, crowds, and chaos",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "d0fe27bd7f1eec673179c0b0e1383fb6045b1ac13115a574e338c241683f5cef",
+          "sourceText": "Post-event exhaustion that lasts for days",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "09b5fd4b5077ecc2b529b997e4a719dccd0e232bde8a88ec1456afc0d0b3871e",
+          "sourceText": "Dreading events you're supposed to enjoy",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "f311937fc08ceb149ef69678cc813102127f578bbe266ec1a756579796e3e433",
+          "sourceText": "Stanford study showing cyclic sighing (physiological sigh) outperformed box breathing and mindfulness meditation for stress reduction and mood improvement.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "2dfc5c3bdc39bc5a5a2adf200c87c1ada83ffdcbc3a1e08638d6a9c1522b0ce8",
+          "sourceText": "Brief structured respiration practices enhance mood and reduce physiological arousal",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "0c6ebaadf4bd5b33fbe68b0109c215e1acce3bdeb011150e086a0437752424d1",
+          "sourceText": "Dr. Andrew Huberman explains the neuroscience of stress and how the physiological sigh works as a real-time intervention.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "b282db437e7bb98f8998cd81816545b6151e141895650585e1597f3669263fcf",
+          "sourceText": "How stress affects your brain and how to reverse it",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "085d951f8599f599cfd24279323010442ce6d226f7b041b281ec028e762fa1b0",
+          "sourceText": "Practical guide to the physiological sigh with HRV and heart rate data showing rapid stress reduction.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "b1bc19d1e4737f7d7264b971b43558001a5975a4f2385c59ebc6575ce195ee06",
+          "sourceText": "The Physiological Sigh: A 30-Second Breathing Exercise to Lower Stress",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "0d5bd0e1d4af6fbcac5d53a3f90a6d6f2b31e426fec42e0acd4773fc543b40bf",
+          "sourceText": "Medical overview of holiday-specific stressors and evidence-based coping strategies.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "57be113f9563765115503618d7fc712601078c03955f6b92312395b91cb50020",
+          "sourceText": "Holiday stress: Tips for coping",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "c639d79d47d91f7038efd8ae488e79d207f81574613172beb0fe1fdd674898f4",
+          "sourceText": "Practice with the full-screen Physiological Sigh visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "52b2d8253dfcb0e11fad4899e024e14459211303385972cfa33a17aeea97ed1d",
+          "sourceText": "Traveling for the holidays? Coherent breathing keeps you calm through flights and crowds",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "78d009cc343bd6d028f6b4b4804f94adc449e596c1504cd55e87c517bb05d094",
+          "sourceText": "For ongoing anxiety throughout the season, try box breathing for sustained calm",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "b18bef5639278e063f610fa657d5520c01ccdf7ce0fa4d5342b35e37db124fd7",
+          "sourceText": "If holiday stress escalates to panic, this technique stops panic attacks fast",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[3].teaser": {
+          "sourceHash": "fb4690eab0668ed644d6513677200c700b441d74703c5a3953b23ee15ffd42be",
+          "sourceText": "Can't sleep after stressful gatherings? 4-7-8 breathing is designed for bedtime",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "97690da0cbaf4830944bbed3e75abdb6245e6f5870d095eeb96b3e0ba40d1798",
+          "sourceText": "Why This Works for Holiday Stress",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "6ceca280d98f3553aae718ee29c3cd597f33e12ccaeb7a9a61db50534b3f9953",
+          "sourceText": "The long exhale phase is key. When you exhale, your heart rate naturally slows (this is called respiratory sinus arrhythmia). A 6-8 second exhale stimulates the vagus nerve more powerfully than any other breathing pattern, rapidly shifting you from fight-or-flight to rest-and-digest.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "162494d07e39d89c818da18f632fd467f540cad144b5319bce04a69457efd6b9",
+          "sourceText": "Fastest Vagus Nerve Activation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "0dd35640f230c5bf1680ed54dd6c0217b5718c6fa3c69534ccdcbb49ba1e8c66",
+          "sourceText": "When stressed, you tend to over-breathe, depleting carbon dioxide and causing tingling, dizziness, or feeling 'unreal.' The controlled exhale normalizes CO₂ levels, resolving these physical symptoms within seconds.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "42a1c85211f0dccb4804fd470feb8bc37ca039a6b376252eb2f2b6d7d039bcff",
+          "sourceText": "CO₂ Rebalancing",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "0079c63fcac66106b52c7727155c81798bc74974a604e33e15ac4f38fd17d275",
+          "sourceText": "Stanford research (Balban et al., 2023) found that just 5 minutes of cyclic sighing per day produced greater reductions in anxiety and improved mood compared to mindfulness meditation. But even 1-3 sighs provide immediate relief for acute stress.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "51d33015d694e1c667d0acf87272995b0e2078a98bbdba817798141ed80984cd",
+          "sourceText": "Immediate Cortisol Reduction",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "ffb1c03101501b773134a30ab7d08efcd1d44324ea595da79cd083f94e1a0974",
+          "sourceText": "The double-inhale pattern requires momentary focus. You can't simultaneously sigh properly and spiral into anxious thoughts. It's a physiological pattern interrupt that breaks the stress-thought-stress loop.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "6b6c5018d9d67f9ad6121764be9b45fcaee759a7ffa49cecb4a4313baef012a8",
+          "sourceText": "Interrupts Rumination",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "98b2976bb8e58921d5cf4d3ab4e8dccda426a3dfbf5e2fc9cee4bd96275dc8bf",
+          "sourceText": "The physiological sigh is the fastest way to shift your nervous system from stress to calm. It's the same pattern your body uses naturally when you sob or when you transition from sleep. The technique is simple: two inhales through your nose (a big breath, then a small 'top-up'), followed by one long exhale through your mouth. Stanford research shows it's more effective than box breathing or meditation for acute stress relief.",
+          "status": "route-catalog-exact"
+        },
+        "solution.heading": {
+          "sourceHash": "4c97384a475a0ff39d4d2628de827092a0b7d2a60a28dff70e9f4ece58e52599",
+          "sourceText": "The Physiological Sigh: Your 30-Second Escape",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "373a50274c097965f7a41fe3cfd79e2fc173073b55eb82810b95b48bf2151876",
+          "sourceText": "Unlike other breathing techniques that require 2-5 minutes to work, the physiological sigh produces measurable stress reduction in just 1-3 breaths. The double inhale re-inflates collapsed air sacs in your lungs (maximizing oxygen), while the long exhale activates your vagus nerve (triggering the calm-down response). You can do it discreetly at the dinner table, in a bathroom, or walking to your car.",
+          "status": "route-catalog-exact"
+        }
+      }
+    }
+  },
+  "schemaVersion": 1,
+  "sourceRoute": "/for/holiday-stress"
+}

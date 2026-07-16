@@ -1,0 +1,76 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.use-case.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "67a2d21640324366741a8a9e32cf1149206280675da519eb476e1a68242d967f",
+      "scope": "chrome",
+      "sourceText": "Try this guided breathing exercise for pregnancy anxiety and labor preparation.",
+      "translations": {
+        "de-de": "Probiere diese geführte Atemübung bei Schwangerschaftsangst und zur Geburtsvorbereitung.",
+        "es-es": "Prueba este ejercicio de respiración guiada para la ansiedad en el embarazo y la preparación al parto.",
+        "fr-fr": "Essayez cet exercice de respiration guidée pour l'anxiété pendant la grossesse et la préparation à l'accouchement.",
+        "ja-jp": "妊娠中の不安と分娩の準備のための、このガイド付き呼吸エクササイズを試してみましょう。",
+        "pt-br": "Experimente este exercício de respiração guiada para ansiedade na gravidez e preparação para o parto."
+      }
+    },
+    {
+      "messageId": "chrome.use-case.learn-box-breathing",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "7c4312464db54ee766e7ebdb52d452b5d528ee1cdd29dbf0af68ca20114884f5",
+      "scope": "chrome",
+      "sourceText": "Learn more about 4-7-8 Relax →",
+      "translations": {
+        "de-de": "Mehr über 4-7-8 Relax erfahren →",
+        "es-es": "Más información sobre 4-7-8 Relax →",
+        "fr-fr": "En savoir plus sur 4-7-8 Relax →",
+        "ja-jp": "4-7-8 Relaxについて詳しく見る →",
+        "pt-br": "Saiba mais sobre 4-7-8 Relax →"
+      }
+    },
+    {
+      "messageId": "relatedGuides[0].teaser",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "51aac942e6bb32f46e478edbc54467ba5729b7a7c77d0fb332adf86df9399988",
+      "scope": "content",
+      "sourceText": "A comprehensive guide to breathing techniques for every stage of labor — from early contractions to active pushing",
+      "translations": {
+        "de-de": "Ein umfassender Leitfaden zu Atemtechniken für jede Phase der Geburt — von frühen Wehen bis zum aktiven Pressen",
+        "es-es": "Una guía completa de técnicas de respiración para cada etapa del parto — desde las contracciones tempranas hasta el pujar activo",
+        "fr-fr": "Un guide complet des techniques de respiration pour chaque étape du travail — des premières contractions jusqu'aux poussées actives",
+        "ja-jp": "分娩のあらゆる段階に対応する呼吸法の総合ガイド — 初期の陣痛から積極的ないきみまで",
+        "pt-br": "Um guia completo de técnicas de respiração para cada estágio do trabalho de parto — das contrações iniciais ao puxo ativo"
+      }
+    },
+    {
+      "messageId": "relatedTechnique.callToAction",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "8cd06ca783cf277184ecc0be2527d13af2407f48f534ac5337a8ff7606e7c91d",
+      "scope": "content",
+      "sourceText": "Practice with the full 4-7-8 breathing visualizer and learn the complete Dr. Weil protocol (postpartum use)",
+      "translations": {
+        "de-de": "Übe mit dem vollständigen 4-7-8-Atemvisualizer und lerne das komplette Dr.-Weil-Protokoll (Anwendung nach der Geburt)",
+        "es-es": "Practica con el visualizador completo de respiración 4-7-8 y aprende el protocolo completo del Dr. Weil (uso posparto)",
+        "fr-fr": "Pratiquez avec le visualiseur complet de respiration 4-7-8 et apprenez le protocole complet du Dr Weil (utilisation post-partum)",
+        "ja-jp": "完全版4-7-8呼吸ビジュアライザーで練習し、Dr. Weilの完全プロトコルを学ぶ（産後の使用）",
+        "pt-br": "Pratique com o visualizador completo de respiração 4-7-8 e aprenda o protocolo completo do Dr. Weil (uso no pós-parto)"
+      }
+    },
+    {
+      "messageId": "science.points[2].explanation",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "1de488705e43304c9bc2d6ee80ddcd76fb153a60faa44f9e2502d5e19e89af09",
+      "scope": "content",
+      "sourceText": "Labor pain management isn't about eliminating pain. It's about staying calm and in control despite pain. Slow breathing during contractions helps by: (1) Giving you something to focus on (mental distraction). (2) Preventing hyperventilation and panic. (3) Activating endorphins (natural pain relief). [Many childbirth educators teach 4-7-8 or similar patterns as core labor coping tools](https://doi.org/10.7189/jogh.13.04023).",
+      "translations": {
+        "de-de": "Schmerzmanagement unter der Geburt bedeutet nicht, Schmerzen zu beseitigen. Es geht darum, trotz Schmerzen ruhig und in Kontrolle zu bleiben. Langsames Atmen während der Wehen hilft, indem es: (1) Dir etwas gibt, worauf du dich konzentrieren kannst (mentale Ablenkung). (2) Hyperventilation und Panik verhindert. (3) Endorphine aktiviert (natürliche Schmerzlinderung). [Viele Geburtsbegleiter lehren 4-7-8 oder ähnliche Muster als zentrale Bewältigungswerkzeuge unter der Geburt](https://doi.org/10.7189/jogh.13.04023).",
+        "es-es": "El manejo del dolor del parto no consiste en eliminar el dolor. Se trata de mantener la calma y el control a pesar del dolor. La respiración lenta durante las contracciones ayuda: (1) Dándote algo en lo que centrarte (distracción mental). (2) Previniendo la hiperventilación y el pánico. (3) Activando endorfinas (alivio natural del dolor). [Muchos educadores del parto enseñan el 4-7-8 o patrones similares como herramientas básicas de afrontamiento del parto](https://doi.org/10.7189/jogh.13.04023).",
+        "fr-fr": "La gestion de la douleur pendant le travail ne vise pas à éliminer la douleur. Il s'agit de rester calme et maître de soi malgré la douleur. La respiration lente pendant les contractions aide en : (1) Vous donnant quelque chose sur quoi vous concentrer (distraction mentale). (2) Prévenant l'hyperventilation et la panique. (3) Activant les endorphines (soulagement naturel de la douleur). [De nombreux éducateurs en préparation à la naissance enseignent le 4-7-8 ou des schémas similaires comme outils centraux d'adaptation au travail](https://doi.org/10.7189/jogh.13.04023).",
+        "ja-jp": "分娩時の痛みの管理は、痛みをなくすことではありません。痛みがあっても落ち着きとコントロールを保つことです。陣痛中のゆっくりした呼吸は次のように役立ちます。(1) 集中するものを与える（心の気そらし）。(2) 過呼吸とパニックを防ぐ。(3) エンドルフィンを活性化する（自然な痛みの緩和）。[多くの出産教育者は、4-7-8や類似のパターンを分娩対処の中核ツールとして教えています](https://doi.org/10.7189/jogh.13.04023)。",
+        "pt-br": "O manejo da dor no trabalho de parto não é sobre eliminar a dor. É sobre manter a calma e o controle apesar da dor. A respiração lenta durante as contrações ajuda ao: (1) Dar a você algo em que se concentrar (distração mental). (2) Prevenir a hiperventilação e o pânico. (3) Ativar endorfinas (alívio natural da dor). [Muitos educadores de parto ensinam o 4-7-8 ou padrões semelhantes como ferramentas centrais de enfrentamento do trabalho de parto](https://doi.org/10.7189/jogh.13.04023)."
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/pregnancy"
+}

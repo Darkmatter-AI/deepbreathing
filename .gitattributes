@@ -1,0 +1,8 @@
+# Preservation and compiler outputs are reproducible generated artifacts.
+# Keep the reviewed semantic map and override scaffold visible as normal diffs.
+src/i18n/catalog/**/*.json linguist-generated=true
+src/i18n/content/proof/messages/**/*.json linguist-generated=true
+src/i18n/content/proof/source-metadata/**/*.json linguist-generated=true
+src/i18n/content/proof/manifest.json linguist-generated=true
+src/i18n/content/proof/publication.json linguist-generated=true
+src/i18n/content/proof/unresolved-report.json linguist-generated=true

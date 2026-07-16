@@ -1,0 +1,50 @@
+[
+  {
+    "cells": 5,
+    "classification": "stale-pre-confirmation-link-deletion-copy",
+    "locales": [
+      "de-de",
+      "es-es",
+      "fr-fr",
+      "ja-jp",
+      "pt-br"
+    ],
+    "placementId": "9f612281-a2a5-4945-9de9-e8c2f7a5ec58",
+    "reason": "The current account-deletion flow uses the in-product account menu and a confirmation link, not an email request.",
+    "reviewedSourceHash": "530783f5271b83853ee3215bb9ec7ea82beddfb16a504933241677e964d28b7a",
+    "route": "/support",
+    "sourceText": "Email us at"
+  },
+  {
+    "cells": 5,
+    "classification": "stale-pre-confirmation-link-deletion-copy",
+    "locales": [
+      "de-de",
+      "es-es",
+      "fr-fr",
+      "ja-jp",
+      "pt-br"
+    ],
+    "placementId": "67fd3430-18e2-404f-be61-3f299f76bc63",
+    "reason": "The current account-deletion flow no longer makes the email-subject or 30-day claim.",
+    "reviewedSourceHash": "7c90988ee49599e24284445881927e99d65089ea1050f69c9017f2341da93f7c",
+    "route": "/support",
+    "sourceText": "with the subject line “Delete my account” and we will permanently remove your data within 30 days."
+  },
+  {
+    "cells": 5,
+    "classification": "stale-pre-confirmation-link-deletion-copy",
+    "locales": [
+      "de-de",
+      "es-es",
+      "fr-fr",
+      "ja-jp",
+      "pt-br"
+    ],
+    "placementId": "49738ee4-5d9b-4249-a948-18bd229af85b",
+    "reason": "This duplicate email placement belonged to the removed email-based deletion instructions; the live contact email remains separately bound.",
+    "reviewedSourceHash": "4a0fa35ee26d21cf99e3ad76b6a67edd0855141418846ba61a1de7a8f64e8bdb",
+    "route": "/support",
+    "sourceText": "support@deepbreathingexercises.com"
+  }
+]

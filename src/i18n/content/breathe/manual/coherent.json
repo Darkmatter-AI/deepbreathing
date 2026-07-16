@@ -1,0 +1,206 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.pattern.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "0a5a417edea30e1ce3980ce2e39cba8c462b569223199f511700549406c51de1",
+      "scope": "chrome",
+      "sourceText": "Try this guided coherent breathing trainer exercise — it really helps.",
+      "translations": {
+        "de-de": "Probiere diese geführte Übung mit dem Trainer für kohärente Atmung aus – sie hilft wirklich.",
+        "es-es": "Prueba este ejercicio guiado con entrenador de respiración coherente: realmente ayuda.",
+        "fr-fr": "Essayez cet exercice guidé avec l’entraîneur de respiration cohérente : il aide vraiment.",
+        "ja-jp": "このガイド付きコヒーレント呼吸トレーナーのエクササイズを試してみてください。本当に役立ちます。",
+        "pt-br": "Experimente este exercício guiado com o treinador de respiração coerente: ele realmente ajuda."
+      }
+    },
+    {
+      "messageId": "chrome.pattern.og-alt",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "32618ca056dc5be406fd1d30273e5f996c190dcdfa54e55bd4e8ae6997d311f1",
+      "scope": "chrome",
+      "sourceText": "Coherent Breathing Trainer – Interactive breathing visualizer",
+      "translations": {
+        "de-de": "Trainer für kohärente Atmung – interaktiver Atemvisualisierer",
+        "es-es": "Entrenador de respiración coherente: visualizador de respiración interactivo",
+        "fr-fr": "Entraîneur de respiration cohérente – visualiseur de respiration interactif",
+        "ja-jp": "コヒーレント呼吸トレーナー – インタラクティブ呼吸ビジュアライザー",
+        "pt-br": "Treinador de respiração coerente – visualizador interativo da respiração"
+      }
+    },
+    {
+      "messageId": "benefits[0].description",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "2a418ba6316d5adbf10754b17a583ee077104614694259cabd1d66f2cef37704",
+      "scope": "content",
+      "sourceText": "Breathing ~5–6 bpm often [maximizes RSA and baroreflex effects during practice](https://doi.org/10.3389/fpsyg.2014.00756).",
+      "translations": {
+        "de-de": "Eine Atemfrequenz von etwa 5–6 Atemzügen pro Minute [maximiert während der Übung häufig die RSA- und Baroreflex-Effekte](https://doi.org/10.3389/fpsyg.2014.00756).",
+        "es-es": "Respirar a unas 5–6 respiraciones por minuto suele [maximizar los efectos de la arritmia sinusal respiratoria y del barorreflejo durante la práctica](https://doi.org/10.3389/fpsyg.2014.00756).",
+        "fr-fr": "Respirer à environ 5–6 respirations par minute [maximise souvent les effets de l’ASR et du baroréflexe pendant la pratique](https://doi.org/10.3389/fpsyg.2014.00756).",
+        "ja-jp": "1分あたり約5～6回の呼吸は、練習中に[RSAと圧反射の効果を最大化することがよくあります](https://doi.org/10.3389/fpsyg.2014.00756)。",
+        "pt-br": "Respirar a cerca de 5–6 respirações por minuto muitas vezes [maximiza os efeitos da arritmia sinusal respiratória e do barorreflexo durante a prática](https://doi.org/10.3389/fpsyg.2014.00756)."
+      }
+    },
+    {
+      "messageId": "body[0].content",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "566c1948da3bb446ee9d4b0006a6d93b65dafa92689f4c3ec6de7245a5cd006f",
+      "scope": "content",
+      "sourceText": "Coherent breathing is a slow breathing technique where you inhale and exhale for equal durations at a rate of about 5–6 breaths per minute (typically 5 seconds in, 5 seconds out). This specific pace targets the ~0.1 Hz resonance frequency where heart rate and blood pressure oscillations synchronize, producing the largest possible increase in heart rate variability (HRV). Unlike box breathing or 4-7-8, coherent breathing uses no breath holds—just smooth, continuous nasal breathing.\n\nKeep breaths quiet and small; let your belly lead. This pace aligns your heart rhythm and breath, maximizing HRV during the session.",
+      "translations": {
+        "de-de": "Kohärente Atmung ist eine langsame Atemtechnik, bei der Sie etwa 5–6 Mal pro Minute gleich lang ein- und ausatmen (normalerweise 5 Sekunden ein, 5 Sekunden aus). Dieses Tempo zielt auf die Resonanzfrequenz von etwa 0,1 Hz, bei der sich die Schwankungen von Herzfrequenz und Blutdruck synchronisieren und den größtmöglichen Anstieg der Herzfrequenzvariabilität (HRV) erzeugen. Anders als bei der Box-Atmung oder der 4-7-8-Atmung gibt es bei der kohärenten Atmung keine Atempausen – nur eine ruhige, kontinuierliche Nasenatmung.\n\nHalten Sie die Atemzüge ruhig und klein und lassen Sie den Bauch die Bewegung führen. Dieses Tempo bringt Herzrhythmus und Atmung in Einklang und maximiert die HRV während der Sitzung.",
+        "es-es": "La respiración coherente es una técnica de respiración lenta en la que inhalas y exhalas durante el mismo tiempo a un ritmo de unas 5–6 respiraciones por minuto (normalmente 5 segundos al inhalar y 5 segundos al exhalar). Este ritmo específico se dirige a la frecuencia de resonancia de unos 0,1 Hz, donde se sincronizan las oscilaciones del ritmo cardíaco y la presión arterial, lo que produce el mayor aumento posible de la variabilidad de la frecuencia cardíaca (VFC). A diferencia de la respiración cuadrada o la 4-7-8, la respiración coherente no incluye retenciones, solo una respiración nasal suave y continua.\n\nMantén las respiraciones suaves y pequeñas y deja que el abdomen guíe el movimiento. Este ritmo alinea el ritmo cardíaco con la respiración y maximiza la VFC durante la sesión.",
+        "fr-fr": "La respiration cohérente est une technique de respiration lente dans laquelle vous inspirez et expirez pendant des durées égales, à un rythme d’environ 5 à 6 respirations par minute (généralement 5 secondes d’inspiration et 5 secondes d’expiration). Ce rythme précis cible la fréquence de résonance d’environ 0,1 Hz, à laquelle les oscillations de la fréquence cardiaque et de la pression artérielle se synchronisent, produisant la plus forte augmentation possible de la variabilité de la fréquence cardiaque (VFC). Contrairement à la respiration carrée ou à la méthode 4-7-8, la respiration cohérente ne comporte aucune rétention du souffle, seulement une respiration nasale fluide et continue.\n\nGardez une respiration douce et légère et laissez le ventre guider le mouvement. Ce rythme aligne le rythme cardiaque sur la respiration et maximise la VFC pendant la séance.",
+        "ja-jp": "コヒーレント呼吸は、1分あたり約5～6回（通常は5秒吸って5秒吐く）のペースで、吸う時間と吐く時間を同じにするゆっくりとした呼吸法です。この特定のペースは約0.1 Hzの共振周波数を目標とします。この周波数では心拍数と血圧の変動が同期し、心拍変動（HRV）が可能な限り大きくなります。ボックス呼吸法や4-7-8呼吸法とは異なり、コヒーレント呼吸には息止めがなく、滑らかで連続した鼻呼吸だけを行います。\n\n呼吸は静かで小さく保ち、腹部が先に動くようにします。このペースにより心臓のリズムと呼吸がそろい、セッション中のHRVが最大化されます。",
+        "pt-br": "A respiração coerente é uma técnica de respiração lenta em que você inspira e expira por tempos iguais, em um ritmo de cerca de 5–6 respirações por minuto (geralmente 5 segundos inspirando e 5 segundos expirando). Esse ritmo específico busca a frequência de ressonância de cerca de 0,1 Hz, na qual as oscilações da frequência cardíaca e da pressão arterial se sincronizam, produzindo o maior aumento possível da variabilidade da frequência cardíaca (VFC). Ao contrário da respiração quadrada ou da 4-7-8, a respiração coerente não usa retenções, apenas uma respiração nasal suave e contínua.\n\nMantenha as respirações suaves e pequenas e deixe o abdômen conduzir o movimento. Esse ritmo alinha o ritmo cardíaco à respiração e maximiza a VFC durante a sessão."
+      }
+    },
+    {
+      "messageId": "body[1].content",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "5a9a7fcc470c1a37cee1aa631621c6b8ce425dae77c721440514bd8f7447fb19",
+      "scope": "content",
+      "sourceText": "1. Sit upright in a comfortable position. Relax your shoulders and jaw. Close your mouth and breathe through your nose.\n2. Choose your tempo: start with 5 seconds inhale, 5 seconds exhale (6 breaths per minute). Adjust to 5.5:5.5 or 6:6 if comfortable.\n3. Inhale gently through your nose, letting your low belly rise. Keep the breath quiet and small.\n4. Exhale smoothly through your nose (or pursed lips), letting your belly fall naturally.\n5. Continue for 5–10 minutes without pausing between breaths. Keep the rhythm steady and seamless.\n6. If you feel dizzy or air-hungry, make breaths smaller and softer—comfort always beats depth.",
+      "translations": {
+        "de-de": "1. Setzen Sie sich in einer bequemen Position aufrecht hin. Entspannen Sie Schultern und Kiefer. Schließen Sie den Mund und atmen Sie durch die Nase.\n2. Wählen Sie Ihr Tempo: Beginnen Sie mit 5 Sekunden Einatmung und 5 Sekunden Ausatmung (6 Atemzüge pro Minute). Passen Sie es bei Bedarf auf 5,5:5,5 oder 6:6 an.\n3. Atmen Sie sanft durch die Nase ein und lassen Sie den Unterbauch anheben. Halten Sie den Atem ruhig und klein.\n4. Atmen Sie gleichmäßig durch die Nase (oder durch gespitzte Lippen) aus und lassen Sie den Bauch natürlich sinken.\n5. Fahren Sie 5–10 Minuten lang fort, ohne zwischen den Atemzügen zu pausieren. Halten Sie den Rhythmus gleichmäßig und fließend.\n6. Wenn Ihnen schwindelig wird oder Sie Lufthunger verspüren, atmen Sie kleiner und sanfter – Komfort ist immer wichtiger als Tiefe.",
+        "es-es": "1. Siéntate erguido en una posición cómoda. Relaja los hombros y la mandíbula. Cierra la boca y respira por la nariz.\n2. Elige el ritmo: empieza con 5 segundos de inhalación y 5 segundos de exhalación (6 respiraciones por minuto). Ajústalo a 5,5:5,5 o 6:6 si te resulta cómodo.\n3. Inhala suavemente por la nariz y deja que se eleve la parte baja del abdomen. Mantén la respiración suave y pequeña.\n4. Exhala con fluidez por la nariz (o con los labios fruncidos) y deja que el abdomen baje de forma natural.\n5. Continúa durante 5–10 minutos sin hacer pausas entre respiraciones. Mantén el ritmo constante y fluido.\n6. Si sientes mareo o falta de aire, haz las respiraciones más pequeñas y suaves: la comodidad siempre es más importante que la profundidad.",
+        "fr-fr": "1. Asseyez-vous bien droit dans une position confortable. Détendez les épaules et la mâchoire. Fermez la bouche et respirez par le nez.\n2. Choisissez votre rythme : commencez par 5 secondes d’inspiration et 5 secondes d’expiration (6 respirations par minute). Passez à 5,5:5,5 ou 6:6 si cela vous convient.\n3. Inspirez doucement par le nez en laissant le bas du ventre se soulever. Gardez une respiration douce et légère.\n4. Expirez de façon fluide par le nez (ou les lèvres pincées) en laissant le ventre redescendre naturellement.\n5. Continuez pendant 5 à 10 minutes sans pause entre les respirations. Gardez un rythme régulier et continu.\n6. Si vous avez des vertiges ou une sensation de manque d’air, respirez plus légèrement et plus doucement : le confort passe toujours avant la profondeur.",
+        "ja-jp": "1. 楽な姿勢で背筋を伸ばして座ります。肩と顎の力を抜きます。口を閉じて鼻で呼吸します。\n2. テンポを選びます。まずは5秒吸って5秒吐くペース（1分あたり6呼吸）から始めます。楽に行える場合は5.5:5.5または6:6に調整します。\n3. 鼻からやさしく息を吸い、下腹部を膨らませます。呼吸は静かで小さく保ちます。\n4. 鼻（またはすぼめた唇）から滑らかに息を吐き、腹部を自然にへこませます。\n5. 呼吸の間に止めず、5～10分間続けます。一定で途切れないリズムを保ちます。\n6. めまいや息苦しさを感じたら、呼吸をより小さくやさしくしてください。深さよりも楽に行えることが常に大切です。",
+        "pt-br": "1. Sente-se com a coluna ereta em uma posição confortável. Relaxe os ombros e a mandíbula. Feche a boca e respire pelo nariz.\n2. Escolha o ritmo: comece inspirando por 5 segundos e expirando por 5 segundos (6 respirações por minuto). Ajuste para 5,5:5,5 ou 6:6 se for confortável.\n3. Inspire suavemente pelo nariz, deixando a parte inferior do abdômen subir. Mantenha a respiração suave e pequena.\n4. Expire de forma fluida pelo nariz (ou com os lábios semicerrados), deixando o abdômen baixar naturalmente.\n5. Continue por 5–10 minutos sem pausar entre as respirações. Mantenha o ritmo constante e contínuo.\n6. Se sentir tontura ou falta de ar, faça respirações menores e mais suaves: o conforto sempre é mais importante que a profundidade."
+      }
+    },
+    {
+      "messageId": "body[1].heading",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "0eb95dc61f31f4092e87cc6af70f70a26219867bf9d59691b289481bef38449a",
+      "scope": "content",
+      "sourceText": "How to Do Coherent Breathing (Step by Step)",
+      "translations": {
+        "de-de": "Kohärente Atmung: Schritt-für-Schritt-Anleitung",
+        "es-es": "Cómo hacer la respiración coherente (paso a paso)",
+        "fr-fr": "Comment pratiquer la respiration cohérente (étape par étape)",
+        "ja-jp": "コヒーレント呼吸のやり方（手順）",
+        "pt-br": "Como fazer a respiração coerente (passo a passo)"
+      }
+    },
+    {
+      "messageId": "howTo.steps[5].duration",
+      "reason": "route-catalog-exact-conflict",
+      "reviewedSourceHash": "e8c7a71c947569b39b0d6cea1cbe950d8591b711b84828f28babd72ffb21b652",
+      "scope": "content",
+      "sourceText": "5–10 minutes",
+      "translations": {
+        "de-de": "5–10 Minuten",
+        "es-es": "5–10 minutos"
+      }
+    },
+    {
+      "messageId": "howTo.tools[0]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "62964eb8e185d53602cab306178b138e24a3800b42af546648bdd3369353df7e",
+      "scope": "content",
+      "sourceText": "Chair or comfortable seat",
+      "translations": {
+        "de-de": "Stuhl oder bequeme Sitzgelegenheit",
+        "es-es": "Silla o asiento cómodo",
+        "fr-fr": "Chaise ou siège confortable",
+        "ja-jp": "椅子または快適な座席",
+        "pt-br": "Cadeira ou assento confortável"
+      }
+    },
+    {
+      "messageId": "howTo.tools[1]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "550975f3d9af7f5d8c9f90fa413eaaf4eb6502e35f431d624f4b1c298fbd1158",
+      "scope": "content",
+      "sourceText": "On-screen timer or haptics",
+      "translations": {
+        "de-de": "Bildschirm-Timer oder Haptik",
+        "es-es": "Temporizador en pantalla o respuesta háptica",
+        "fr-fr": "Minuteur à l’écran ou retours haptiques",
+        "ja-jp": "画面上のタイマーまたは触覚フィードバック",
+        "pt-br": "Temporizador na tela ou resposta tátil"
+      }
+    },
+    {
+      "messageId": "howTo.tools[2]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "cfbd882bfc9cbaa56c21281dc1bcf5f30e568ea83ab2ba90a9b849f2c200b9c9",
+      "scope": "content",
+      "sourceText": "Optional heart-rate sensor",
+      "translations": {
+        "de-de": "Optionaler Herzfrequenzsensor",
+        "es-es": "Sensor de frecuencia cardíaca opcional",
+        "fr-fr": "Capteur de fréquence cardiaque facultatif",
+        "ja-jp": "任意の心拍センサー",
+        "pt-br": "Sensor de frequência cardíaca opcional"
+      }
+    },
+    {
+      "messageId": "howTo.totalTime",
+      "reason": "route-catalog-exact-conflict",
+      "reviewedSourceHash": "e8c7a71c947569b39b0d6cea1cbe950d8591b711b84828f28babd72ffb21b652",
+      "scope": "content",
+      "sourceText": "5–10 minutes",
+      "translations": {
+        "de-de": "5–10 Minuten",
+        "es-es": "5–10 minutos"
+      }
+    },
+    {
+      "messageId": "lineage",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "85f10ac11d53c2c855edc1367e926c7077cc287653bfd4940f180fe1e0197b51",
+      "scope": "content",
+      "sourceText": "Developed by Stephen Elliott of COHERENCE LLC in 2005, building on the heart-rate-variability biofeedback research of Paul Lehrer and Evgeny Vaschillo, who identified the cardiovascular \"resonance frequency\" near 0.1 Hz (about six breaths per minute). Mainstreamed by science journalist James Nestor's 2020 book *Breath*, which fixed the rounded \"5.5 breaths per minute\" cadence in popular awareness.",
+      "translations": {
+        "de-de": "Entwickelt wurde die Methode 2005 von Stephen Elliott von COHERENCE LLC. Sie baut auf der Forschung von Paul Lehrer und Evgeny Vaschillo zum Biofeedback der Herzfrequenzvariabilität auf. Die beiden identifizierten die kardiovaskuläre „Resonanzfrequenz“ nahe 0,1 Hz (etwa sechs Atemzüge pro Minute). Bekannt wurde sie durch das 2020 erschienene Buch *Breath* des Wissenschaftsjournalisten James Nestor, das den gerundeten Rhythmus von „5,5 Atemzügen pro Minute“ im allgemeinen Bewusstsein verankerte.",
+        "es-es": "Desarrollada en 2005 por Stephen Elliott, de COHERENCE LLC, a partir de la investigación sobre biorretroalimentación de la variabilidad de la frecuencia cardíaca de Paul Lehrer y Evgeny Vaschillo, quienes identificaron la «frecuencia de resonancia» cardiovascular cercana a 0,1 Hz (unas seis respiraciones por minuto). El periodista científico James Nestor la popularizó con su libro *Breath*, publicado en 2020, que fijó en el conocimiento popular el ritmo redondeado de «5,5 respiraciones por minuto».",
+        "fr-fr": "Développée en 2005 par Stephen Elliott de COHERENCE LLC, à partir des recherches de Paul Lehrer et Evgeny Vaschillo sur le biofeedback de la variabilité de la fréquence cardiaque. Ces chercheurs ont identifié la « fréquence de résonance » cardiovasculaire proche de 0,1 Hz (environ six respirations par minute). La méthode a été popularisée par le livre *Breath*, publié en 2020 par le journaliste scientifique James Nestor, qui a ancré dans le grand public le rythme arrondi de « 5,5 respirations par minute ».",
+        "ja-jp": "COHERENCE LLCのStephen Elliottが、心拍変動バイオフィードバックを研究したPaul LehrerとEvgeny Vaschilloの成果を基に、2005年に開発しました。両研究者は、約0.1 Hz（1分あたり約6呼吸）付近に心血管系の「共振周波数」があることを特定しました。科学ジャーナリストJames Nestorが2020年に出版した著書*Breath*によって広く知られるようになり、「1分あたり5.5呼吸」という丸めたペースが一般に定着しました。",
+        "pt-br": "Desenvolvida em 2005 por Stephen Elliott, da COHERENCE LLC, com base nas pesquisas de Paul Lehrer e Evgeny Vaschillo sobre biofeedback da variabilidade da frequência cardíaca. Eles identificaram a “frequência de ressonância” cardiovascular próxima de 0,1 Hz (cerca de seis respirações por minuto). A técnica foi popularizada pelo livro *Breath*, de 2020, do jornalista científico James Nestor, que fixou no conhecimento popular a cadência arredondada de “5,5 respirações por minuto”."
+      }
+    },
+    {
+      "messageId": "ownedVideo.description",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "62a89ccc5983b246640ae1b58bcd5d459a414db40d647e0381a0d4f343ef9692",
+      "scope": "content",
+      "sourceText": "A 5-minute guided coherent breathing session using our interactive pacer. Breathe at ~5–6 breaths per minute with equal inhales and exhales to maximize HRV.",
+      "translations": {
+        "de-de": "Eine geführte 5-minütige Sitzung mit kohärenter Atmung und unserem interaktiven Taktgeber. Atme mit etwa 5–6 Atemzügen pro Minute, wobei Ein- und Ausatmung gleich lang sind, um die HRV zu maximieren.",
+        "es-es": "Una sesión guiada de respiración coherente de 5 minutos con nuestro marcador de ritmo interactivo. Respira a unas 5–6 respiraciones por minuto, con inhalaciones y exhalaciones de la misma duración, para maximizar la VFC.",
+        "fr-fr": "Une séance guidée de respiration cohérente de 5 minutes avec notre rythmeur interactif. Respirez à environ 5–6 respirations par minute avec des inspirations et des expirations de même durée afin de maximiser la VFC.",
+        "ja-jp": "インタラクティブなペーサーを使った5分間のガイド付きコヒーレント呼吸セッションです。HRVを最大化するため、吸う時間と吐く時間を同じにして、1分あたり約5～6回呼吸します。",
+        "pt-br": "Uma sessão guiada de respiração coerente de 5 minutos com nosso marcador de ritmo interativo. Respire a cerca de 5–6 respirações por minuto, com inspirações e expirações de mesma duração, para maximizar a VFC."
+      }
+    },
+    {
+      "messageId": "ownedVideo.title",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "5a5ec21825efb9148c5303504c4b0c982efeca2fbdc87275eeacd4ef58958b3b",
+      "scope": "content",
+      "sourceText": "Coherent Breathing Timer: 5 Minutes (Resonance Breathing)",
+      "translations": {
+        "de-de": "Timer für kohärente Atmung: 5 Minuten (Resonanzatmung)",
+        "es-es": "Temporizador de respiración coherente: 5 minutos (respiración de resonancia)",
+        "fr-fr": "Minuteur de respiration cohérente : 5 minutes (respiration de résonance)",
+        "ja-jp": "コヒーレント呼吸タイマー：5分間（共鳴呼吸）",
+        "pt-br": "Temporizador de respiração coerente: 5 minutos (respiração de ressonância)"
+      }
+    },
+    {
+      "messageId": "video.title",
+      "reason": "route-catalog-exact-conflict",
+      "reviewedSourceHash": "ab8ec13e5e7a98dd73f271548ab96f92aa638f92fed61d0f38c655a3ecfda086",
+      "scope": "content",
+      "sourceText": "James Nestor on the Perfect Breath",
+      "translations": {
+        "es-es": "James Nestor habla sobre la respiración perfecta"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/breathe/coherent"
+}

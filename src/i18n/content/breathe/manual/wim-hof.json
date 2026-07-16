@@ -1,0 +1,118 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.pattern.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "943f51002c3eaadb9e8003d1644f237bff6d9c74a7276ef16aa3d01162fb9fb0",
+      "scope": "chrome",
+      "sourceText": "Try this guided wim hof breathing method exercise — it really helps.",
+      "translations": {
+        "de-de": "Probiere diese geführte Übung zur Wim-Hof-Atemmethode aus — sie hilft wirklich.",
+        "es-es": "Prueba este ejercicio guiado del método de respiración Wim Hof — de verdad ayuda.",
+        "fr-fr": "Essayez cet exercice guidé de la méthode de respiration Wim Hof — il aide vraiment.",
+        "ja-jp": "このウィム・ホフ呼吸法のガイド付きエクササイズを試してみてください。本当に役立ちます。",
+        "pt-br": "Experimente este exercício guiado do método de respiração Wim Hof — ele realmente ajuda."
+      }
+    },
+    {
+      "messageId": "chrome.pattern.og-alt",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "28c2e3a3c78291f1c4f86a4bfdf27019d20b396389e4aba05ac056ade6b63f2d",
+      "scope": "chrome",
+      "sourceText": "Wim Hof Breathing Method – Interactive breathing visualizer",
+      "translations": {
+        "de-de": "Wim-Hof-Atemmethode – Interaktiver Atemvisualisierer",
+        "es-es": "Método de respiración Wim Hof – Visualizador interactivo de respiración",
+        "fr-fr": "Méthode de respiration Wim Hof – Visualiseur de respiration interactif",
+        "ja-jp": "ウィム・ホフ呼吸法 – インタラクティブな呼吸ビジュアライザー",
+        "pt-br": "Método de respiração Wim Hof – Visualizador interativo de respiração"
+      }
+    },
+    {
+      "messageId": "body[0].content",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "7a0e01c92b9e0058a15a5343d1d51246a554bc9a7ad03e566699d3abc52b3137",
+      "scope": "content",
+      "sourceText": "Wim Hof breathing is a controlled hyperventilation technique consisting of 30 rapid, deep breaths followed by a breath-hold on empty lungs, repeated for 3 rounds. Developed by Dutch extreme athlete Wim \"The Iceman\" Hof, it is backed by research showing voluntary activation of the sympathetic nervous system and modulation of the immune response (Kox et al., 2014, PNAS). What sets it apart from other breathwork is its intensity—the power breaths temporarily alter blood chemistry, producing tingling, light-headedness, and a surge of energy that practitioners describe as a natural high.\n\nEach round consists of 30 rhythmic 'power breaths' (deep inhale, relaxed exhale), followed by a breath retention on empty lungs for up to 90+ seconds, and finishing with a 15-second recovery breath.",
+      "translations": {
+        "de-de": "Die Wim-Hof-Atmung ist eine Technik der kontrollierten Hyperventilation, die aus 30 schnellen, tiefen Atemzügen besteht, gefolgt von einem Atemanhalten bei leerer Lunge, und über 3 Runden wiederholt wird. Sie wurde vom niederländischen Extremsportler Wim \"The Iceman\" Hof entwickelt und wird durch Forschung gestützt, die eine willentliche Aktivierung des sympathischen Nervensystems und eine Modulation der Immunantwort zeigt (Kox et al., 2014, PNAS). Was sie von anderen Atemübungen unterscheidet, ist ihre Intensität — die kraftvollen Atemzüge verändern vorübergehend die Blutchemie und erzeugen Kribbeln, Benommenheit und einen Energieschub, den Praktizierende als natürliches Hochgefühl beschreiben.\n\nJede Runde besteht aus 30 rhythmischen „Power-Atemzügen“ (tief einatmen, entspannt ausatmen), gefolgt von einem Atemanhalten bei leerer Lunge für bis zu 90+ Sekunden und abschließend einem 15-sekündigen Erholungsatemzug.",
+        "es-es": "La respiración Wim Hof es una técnica de hiperventilación controlada que consta de 30 respiraciones rápidas y profundas seguidas de una retención con los pulmones vacíos, repetida durante 3 rondas. Desarrollada por el atleta extremo neerlandés Wim \"The Iceman\" Hof, está respaldada por investigaciones que muestran la activación voluntaria del sistema nervioso simpático y la modulación de la respuesta inmunitaria (Kox et al., 2014, PNAS). Lo que la distingue de otras prácticas de respiración es su intensidad: las respiraciones potentes alteran temporalmente la química sanguínea y producen hormigueo, aturdimiento y una oleada de energía que los practicantes describen como un subidón natural.\n\nCada ronda consta de 30 «respiraciones potentes» rítmicas (inhalación profunda, exhalación relajada), seguidas de una retención con los pulmones vacíos de hasta 90+ segundos y, para terminar, una respiración de recuperación de 15 segundos.",
+        "fr-fr": "La respiration Wim Hof est une technique d’hyperventilation contrôlée composée de 30 respirations rapides et profondes, suivies d’une rétention du souffle poumons vides, le tout répété pendant 3 cycles. Développée par l’athlète extrême néerlandais Wim « The Iceman » Hof, elle s’appuie sur des recherches montrant une activation volontaire du système nerveux sympathique et une modulation de la réponse immunitaire (Kox et al., 2014, PNAS). Ce qui la distingue des autres pratiques respiratoires, c’est son intensité : les respirations puissantes modifient temporairement la chimie du sang, provoquant des picotements, des étourdissements et un regain d’énergie que les pratiquants décrivent comme une euphorie naturelle.\n\nChaque cycle comprend 30 « respirations puissantes » rythmiques (inspiration profonde, expiration relâchée), suivies d’une rétention poumons vides allant jusqu’à 90+ secondes, puis d’une respiration de récupération de 15 secondes.",
+        "ja-jp": "ウィム・ホフ呼吸法は、素早く深い呼吸を30回行った後、肺を空にした状態で息を止める動作を3ラウンド繰り返す、制御された過換気の技法です。オランダのエクストリームアスリート、ウィム・「アイスマン」・ホフが開発したもので、交感神経系を自発的に活性化し、免疫反応を調節できることを示す研究に裏づけられています（Kox et al., 2014, PNAS）。ほかの呼吸法との違いはその強度にあります。力強い呼吸によって血液の化学的状態が一時的に変化し、しびれ、ふらつき、そして実践者が自然な高揚感と表現するエネルギーの急増が生じます。\n\n各ラウンドは、リズミカルな「パワーブレス」30回（深く吸い、力を抜いて吐く）、肺を空にした状態で最大90秒以上の息止め、最後に15秒間の回復呼吸で構成されます。",
+        "pt-br": "A respiração Wim Hof é uma técnica de hiperventilação controlada composta por 30 respirações rápidas e profundas, seguidas de uma retenção com os pulmões vazios, repetida por 3 rodadas. Desenvolvida pelo atleta radical holandês Wim \"The Iceman\" Hof, ela é respaldada por pesquisas que mostram a ativação voluntária do sistema nervoso simpático e a modulação da resposta imunológica (Kox et al., 2014, PNAS). O que a diferencia de outras práticas respiratórias é sua intensidade — as respirações potentes alteram temporariamente a química do sangue, produzindo formigamento, tontura e uma onda de energia que os praticantes descrevem como uma euforia natural.\n\nCada rodada consiste em 30 “respirações potentes” rítmicas (inspiração profunda, expiração relaxada), seguidas de uma retenção com os pulmões vazios por até 90+ segundos e, por fim, uma respiração de recuperação de 15 segundos."
+      }
+    },
+    {
+      "messageId": "body[1].content",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "387bc9a86545e1a23ddbde4e5fa222d06695e01f6e4c3919a3a568581d239dcd",
+      "scope": "content",
+      "sourceText": "1. Sit or lie down in a safe, comfortable position. Never practice standing, in water, or while driving.\n2. Take 30 deep, rhythmic breaths: inhale fully through your nose or mouth (belly and chest expand), then exhale relaxed—don't force the air out. Keep a steady rhythm.\n3. After the 30th exhale, stop breathing and hold on empty lungs. Relax your body completely. Hold as long as comfortable (30–90+ seconds).\n4. When you need to breathe, take one deep breath in and hold for 10–15 seconds with full lungs. Then exhale and relax.\n5. That completes one round. Rest for a few normal breaths, then repeat for a total of 3 rounds.\n6. After all 3 rounds, sit quietly and notice the tingling, warmth, and mental clarity.",
+      "translations": {
+        "de-de": "1. Setze oder lege dich in einer sicheren, bequemen Position hin. Übe niemals im Stehen, im Wasser oder während der Fahrt.\n2. Nimm 30 tiefe, rhythmische Atemzüge: Atme vollständig durch Nase oder Mund ein (Bauch und Brustkorb weiten sich), dann entspannt aus — drücke die Luft nicht mit Kraft heraus. Halte einen gleichmäßigen Rhythmus.\n3. Höre nach dem 30. Ausatmen auf zu atmen und halte bei leerer Lunge die Luft an. Entspanne deinen Körper vollständig. Halte so lange, wie es angenehm ist (30–90+ Sekunden).\n4. Wenn du atmen musst, atme einmal tief ein und halte den Atem bei voller Lunge 10–15 Sekunden lang an. Atme dann aus und entspanne dich.\n5. Damit ist eine Runde abgeschlossen. Ruhe dich für ein paar normale Atemzüge aus und wiederhole den Ablauf dann für insgesamt 3 Runden.\n6. Sitze nach allen 3 Runden ruhig da und nimm das Kribbeln, die Wärme und die geistige Klarheit wahr.",
+        "es-es": "1. Siéntate o túmbate en una posición segura y cómoda. Nunca practiques de pie, en el agua ni mientras conduces.\n2. Haz 30 respiraciones profundas y rítmicas: inhala por completo por la nariz o la boca (el abdomen y el pecho se expanden) y después exhala de forma relajada, sin forzar la salida del aire. Mantén un ritmo constante.\n3. Después de la 30.ª exhalación, deja de respirar y mantén la retención con los pulmones vacíos. Relaja el cuerpo por completo. Aguanta mientras te resulte cómodo (30–90+ segundos).\n4. Cuando necesites respirar, haz una inhalación profunda y mantén el aire con los pulmones llenos durante 10–15 segundos. Después exhala y relájate.\n5. Así se completa una ronda. Descansa durante unas cuantas respiraciones normales y repite hasta completar un total de 3 rondas.\n6. Después de las 3 rondas, permanece sentado en silencio y observa el hormigueo, el calor y la claridad mental.",
+        "fr-fr": "1. Asseyez-vous ou allongez-vous dans une position sûre et confortable. Ne pratiquez jamais debout, dans l’eau ou en conduisant.\n2. Prenez 30 respirations profondes et rythmiques : inspirez pleinement par le nez ou la bouche (le ventre et la poitrine se gonflent), puis expirez de manière relâchée, sans forcer l’air à sortir. Gardez un rythme régulier.\n3. Après la 30e expiration, cessez de respirer et retenez votre souffle poumons vides. Détendez complètement votre corps. Tenez aussi longtemps que cela reste confortable (30–90+ secondes).\n4. Lorsque vous avez besoin de respirer, prenez une profonde inspiration et retenez-la poumons pleins pendant 10–15 secondes. Puis expirez et détendez-vous.\n5. Cela termine un cycle. Reposez-vous pendant quelques respirations normales, puis répétez jusqu’à effectuer 3 cycles au total.\n6. Après les 3 cycles, restez assis calmement et observez les picotements, la chaleur et la clarté mentale.",
+        "ja-jp": "1. 安全で快適な姿勢で座るか横になります。立ったまま、水中、運転中には絶対に行わないでください。\n2. 深くリズミカルな呼吸を30回行います。鼻または口から十分に吸い（腹部と胸部を広げる）、力を入れずに吐きます。無理に空気を押し出さず、一定のリズムを保ってください。\n3. 30回目に吐いた後、呼吸を止め、肺を空にした状態で息を止めます。全身の力を完全に抜き、苦しくない範囲で続けます（30～90秒以上）。\n4. 息を吸う必要を感じたら、深く1回吸い、肺を満たした状態で10～15秒間息を止めます。その後、吐いてリラックスします。\n5. これで1ラウンド終了です。通常の呼吸を数回して休み、合計3ラウンドになるまで繰り返します。\n6. 3ラウンドすべてを終えたら、静かに座り、しびれ、温かさ、頭の明晰さを感じ取ります。",
+        "pt-br": "1. Sente-se ou deite-se em uma posição segura e confortável. Nunca pratique em pé, na água ou enquanto dirige.\n2. Faça 30 respirações profundas e rítmicas: inspire completamente pelo nariz ou pela boca (o abdômen e o peito se expandem) e depois expire de forma relaxada — não force a saída do ar. Mantenha um ritmo constante.\n3. Após a 30ª expiração, pare de respirar e segure o ar com os pulmões vazios. Relaxe o corpo completamente. Segure pelo tempo que for confortável (30–90+ segundos).\n4. Quando precisar respirar, inspire profundamente uma vez e segure o ar por 10–15 segundos com os pulmões cheios. Depois expire e relaxe.\n5. Isso completa uma rodada. Descanse por algumas respirações normais e repita até completar um total de 3 rodadas.\n6. Após as 3 rodadas, permaneça sentado em silêncio e perceba o formigamento, o calor e a clareza mental."
+      }
+    },
+    {
+      "messageId": "body[1].heading",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "6189013b6ac47e2069fc45a0891e51fc87707fa93845e5562fa0966b668f5e12",
+      "scope": "content",
+      "sourceText": "How to Do Wim Hof Breathing (Step by Step)",
+      "translations": {
+        "de-de": "So führst du die Wim-Hof-Atmung aus (Schritt für Schritt)",
+        "es-es": "Cómo hacer la respiración Wim Hof (paso a paso)",
+        "fr-fr": "Comment pratiquer la respiration Wim Hof (étape par étape)",
+        "ja-jp": "ウィム・ホフ呼吸法のやり方（ステップごと）",
+        "pt-br": "Como fazer a respiração Wim Hof (passo a passo)"
+      }
+    },
+    {
+      "messageId": "body[2].content",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "be85dc36f0655f2172008d932c84e1ce24acf435af45f278850add4a3f293100",
+      "scope": "content",
+      "sourceText": "Practitioners report increased energy, improved focus, reduced stress, and enhanced cold tolerance. [Research shows the method can influence the autonomic nervous system and immune response](https://doi.org/10.1073/pnas.1322174111). The breath holds train CO2 tolerance and mental resilience. Many use it as a morning ritual for energy or before cold exposure.",
+      "translations": {
+        "de-de": "Praktizierende berichten von mehr Energie, besserer Konzentration, weniger Stress und einer erhöhten Kältetoleranz. [Forschung zeigt, dass die Methode das autonome Nervensystem und die Immunantwort beeinflussen kann](https://doi.org/10.1073/pnas.1322174111). Das Atemanhalten trainiert die CO2-Toleranz und die mentale Widerstandsfähigkeit. Viele nutzen die Methode als morgendliches Ritual für mehr Energie oder vor Kälteexposition.",
+        "es-es": "Los practicantes informan de más energía, mayor concentración, menos estrés y una mejor tolerancia al frío. [Las investigaciones muestran que el método puede influir en el sistema nervioso autónomo y la respuesta inmunitaria](https://doi.org/10.1073/pnas.1322174111). Las retenciones entrenan la tolerancia al CO2 y la resiliencia mental. Muchas personas lo utilizan como ritual matutino para obtener energía o antes de exponerse al frío.",
+        "fr-fr": "Les pratiquants font état d’une énergie accrue, d’une meilleure concentration, d’une réduction du stress et d’une tolérance au froid renforcée. [Les recherches montrent que la méthode peut influencer le système nerveux autonome et la réponse immunitaire](https://doi.org/10.1073/pnas.1322174111). Les rétentions du souffle entraînent la tolérance au CO2 et la résilience mentale. Beaucoup l’utilisent comme rituel matinal pour retrouver de l’énergie ou avant une exposition au froid.",
+        "ja-jp": "実践者からは、エネルギーの増加、集中力の向上、ストレスの軽減、寒さへの耐性の向上が報告されています。[研究では、この方法が自律神経系と免疫反応に影響を与えられることが示されています](https://doi.org/10.1073/pnas.1322174111)。息止めはCO2耐性と精神的な回復力を鍛えます。朝に活力を得るための習慣として、または寒冷環境に身をさらす前に行う人も多くいます。",
+        "pt-br": "Os praticantes relatam aumento de energia, melhora do foco, redução do estresse e maior tolerância ao frio. [Pesquisas mostram que o método pode influenciar o sistema nervoso autônomo e a resposta imunológica](https://doi.org/10.1073/pnas.1322174111). As retenções de ar treinam a tolerância ao CO2 e a resiliência mental. Muitas pessoas o usam como ritual matinal para obter energia ou antes da exposição ao frio."
+      }
+    },
+    {
+      "messageId": "howTo.tools[0]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "3a0eaa5a9894bf7f69eb9810996defe598e9d75ef3e25ee043ef30412fbc2ea3",
+      "scope": "content",
+      "sourceText": "Comfortable seated or lying position",
+      "translations": {
+        "de-de": "Bequeme Sitz- oder Liegeposition",
+        "es-es": "Posición cómoda, sentado o tumbado",
+        "fr-fr": "Position assise ou allongée confortable",
+        "ja-jp": "快適な座位または横になれる姿勢",
+        "pt-br": "Posição confortável, sentada ou deitada"
+      }
+    },
+    {
+      "messageId": "howTo.tools[1]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "d3a8ef3f1a4022f95fc61b8a48415cc8853746f39aad980d30b71c6eaee87f80",
+      "scope": "content",
+      "sourceText": "Timer or guided audio (optional)",
+      "translations": {
+        "de-de": "Timer oder geführte Audioaufnahme (optional)",
+        "es-es": "Temporizador o audio guiado (opcional)",
+        "fr-fr": "Minuteur ou audio guidé (facultatif)",
+        "ja-jp": "タイマーまたはガイド音声（任意）",
+        "pt-br": "Cronômetro ou áudio guiado (opcional)"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/breathe/wim-hof"
+}

@@ -1,0 +1,56 @@
+{
+  "breadcrumb": {
+    "current": "Confidentialité",
+    "home": "Accueil"
+  },
+  "hero": {
+    "eyebrow": "Exercices de respiration profonde",
+    "intro": "Les exercices de respiration fonctionnent sans compte. Si vous choisissez de vous connecter, nous utilisons vos données uniquement pour fournir et améliorer le service.",
+    "lastUpdated": "Dernière mise à jour le 11 juillet 2026.",
+    "title": "Confidentialité"
+  },
+  "metadata": {
+    "description": "Politique de confidentialité de Deep Breathing Exercises, y compris les comptes facultatifs, la synchronisation des pratiques, les analyses et la suppression.",
+    "imageAlt": "Politique de confidentialité",
+    "socialDescription": "Politique de confidentialité pour les exercices de respiration profonde.",
+    "socialTitle": "Politique de confidentialité",
+    "title": "Notre politique de confidentialité pour les techniques de respiration profonde",
+    "twitterDescription": "Politique de confidentialité pour les exercices de respiration profonde.",
+    "twitterTitle": "Politique de confidentialité"
+  },
+  "sections": {
+    "accounts": {
+      "body": "Si vous vous connectez avec Apple ou Google, nous recevons l'identifiant du compte, l'adresse e-mail et tout nom communiqué par le fournisseur. Nous stockons l'historique de vos séances de respiration, les totaux, les jours de série et les paramètres afin qu'ils puissent être synchronisés entre le site web et votre téléphone. Les pratiques enregistrées lorsque vous êtes déconnecté restent sur votre appareil jusqu'à ce que vous choisissiez de vous connecter.",
+      "title": "Comptes facultatifs et synchronisation"
+    },
+    "collection": {
+      "body": "Les utilisateurs peuvent pratiquer sans nous communiquer de nom ni d'adresse e-mail. L'application et le site web collectent des événements d'utilisation de base, tels que le début, la fin et la durée des séances, le mode de respiration et la plateforme. L'application mobile utilise un identifiant d'analyse aléatoire propre à chaque installation. Elle n'utilise pas l'identifiant publicitaire et ne demande pas l'autorisation de suivi.",
+      "title": "Données collectées"
+    },
+    "contact": {
+      "abiassiLabel": "Abiassi",
+      "backLink": "Retour au visualiseur →",
+      "darkmatterLabel": "Darkmatter AI Labs",
+      "intro": "Pour toute question sur notre politique de confidentialité, contactez les créateurs via :",
+      "title": "Contact"
+    },
+    "deletion": {
+      "action": "Supprimer le compte.",
+      "afterAction": "Après confirmation, nous supprimons définitivement le compte et les données de pratique synchronisées. Les données locales peuvent être supprimées en désinstallant l'application ou en effaçant les données du site dans votre navigateur.",
+      "beforeAction": "Vous pouvez utiliser l'expérience de respiration principale en tant qu'utilisateur non connecté. Les utilisateurs connectés peuvent ouvrir le menu du compte et choisir",
+      "title": "Vos choix et la suppression"
+    },
+    "device": {
+      "body": "L'audio et le retour haptique sont générés ou lus sur votre appareil. Nous n'utilisons pas le microphone, HealthKit, la localisation précise, les contacts, les photos ni l'identifiant publicitaire.",
+      "title": "Fonctionnalités de l'appareil"
+    },
+    "thirdParty": {
+      "body": "Certaines pages contiennent des liens vers des recherches ou des ressources externes sur la respiration abdominale ou le pranayama. Ces sites ont leurs propres politiques de confidentialité.",
+      "title": "Liens vers des tiers"
+    },
+    "useAndShare": {
+      "body": "Nous utilisons ces informations pour le fonctionnement de l'application, l'assistance liée aux comptes, les analyses, la surveillance des performances et la correction des bugs. Des prestataires nous aident à assurer l'authentification, les e-mails, les analyses, l'hébergement et le stockage de la base de données. Nous ne vendons pas d'informations personnelles et n'utilisons pas les données de respiration à des fins publicitaires.",
+      "title": "Comment nous utilisons et partageons les données"
+    }
+  }
+}

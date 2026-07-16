@@ -1,0 +1,90 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "口または鼻からゆっくりと息を吐き出します。吸う時間の合計よりも長く吐くようにしましょう。口すぼめ呼吸のように吐き出すのも効果的です。吐き出すときに肩の力を抜いてください。",
+      "locale": "ja-jp",
+      "reason": "The approved value contains an injected search-keyword or unrelated fragment that is absent from the source.",
+      "replacement": "口または鼻からゆっくり息を吐きます。二回の吸気を合わせた時間より長く吐いてください。息を吐きながら肩の力を抜きます。",
+      "reviewedSourceHash": "76c683aff956c907fe4c0e7f2bd3aa59aeaad65955ef406eccfaafaee8fdd617",
+      "sourcePath": "howTo.steps[3].instruction",
+      "sourceText": "Exhale slowly through your mouth or nose. Make it longer than both inhales combined. Let your shoulders drop as you exhale."
+    },
+    {
+      "currentCatalogValue": "慢性的なストレスには、毎日5分間のサイクリック・サイイング（連続したため息）を実践してください。478 呼吸 法のようにリズムを意識するのも良いでしょう。",
+      "locale": "ja-jp",
+      "reason": "The approved value contains an injected search-keyword or unrelated fragment that is absent from the source.",
+      "replacement": "慢性的なストレスには、複数のため息を続ける周期的ため息を毎日5分間行ってください。",
+      "reviewedSourceHash": "fc162b52496887e2a2668458aaa477470cf9665f0c5b1ac1dae901c3260e7b2e",
+      "sourcePath": "howTo.tips[2]",
+      "sourceText": "For chronic stress, practice 5 minutes of cyclic sighing daily (multiple sighs in a row)"
+    },
+    {
+      "currentCatalogValue": "ストレスに最適な呼吸法は、即効性のある「生理的なため息」（2回の素早い吸入と長い吐出）、安定した落ち着きをもたらす「ボックスブリージング」、そして穏やかにリラックスさせる腹式呼吸です。ラマーズ法のようにリズムを刻む呼吸も知られていますが、まずは30〜60秒のため息から始め、その後2〜5分間、ゆっくりと楽な呼吸を続けましょう。",
+      "locale": "ja-jp",
+      "reason": "The approved value contains an injected search-keyword or unrelated fragment that is absent from the source.",
+      "replacement": "ストレスに最適な呼吸法は、すぐに楽になる生理的ため息（二回の素早い吸気と長い呼気）、安定した落ち着きを得るボックス呼吸、穏やかに鎮静する腹式呼吸です。まず30〜60秒間ため息を行い、その後2〜5分間、ゆっくり楽に呼吸します。",
+      "reviewedSourceHash": "c0003401c587525f18c94ff5fe3fe2cd37f2b768cb01bfcab2a19b7ed3825808",
+      "sourcePath": "voiceSearch[0].answer",
+      "sourceText": "The best breathing exercises for stress are the physiological sigh (two quick inhales, long exhale) for immediate relief, box breathing for steady calm, and belly breathing for gentle downshifting. Start with 30-60 seconds of sighs, then 2-5 minutes of slow, easy breaths."
+    },
+    {
+      "currentCatalogValue": "La respiración para relajarse: ejercicios para el estrés",
+      "locale": "es-es",
+      "reason": "The approved metadata value omits the source's 30-second result and free-tool qualifier.",
+      "replacement": "Ejercicios de respiración para el estrés: cálmate en 30 segundos (herramienta gratuita)",
+      "reviewedSourceHash": "b17719855193f2ca6a3bc32c01847fad78eb388d469c4149329841d3a68bfb87",
+      "sourcePath": "meta.title",
+      "sourceText": "Breathing Exercises for Stress: Calm Down in 30 Seconds (Free Tool)",
+      "numericReviewReason": "The replacement restores the source's 30-second timing."
+    },
+    {
+      "currentCatalogValue": "La técnica de respiración más rápida para la relajación y el alivio del estrés — funciona en 30 segundos. El suspiro fisiológico, probado en Stanford, es",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "La técnica de respiración más rápida para aliviar el estrés: funciona en 30 segundos. El suspiro fisiológico, probado en Stanford, es más eficaz que la meditación para reducir el estrés en tiempo real. Herramienta guiada gratuita.",
+      "reviewedSourceHash": "384f9449789a3396ec36d68ab3b9ec6fe62715e336e7b1a2272036f07d7e0c2b",
+      "sourcePath": "meta.description",
+      "sourceText": "The fastest breathing technique for stress relief: works in 30 seconds. The Stanford-tested physiological sigh is more effective than meditation for real-time stress reduction. Free guided tool."
+    },
+    {
+      "currentCatalogValue": "La respiración para relajarse: ejercicios para el estrés",
+      "locale": "es-es",
+      "reason": "The approved metadata value omits the source's 30-second timing.",
+      "replacement": "Ejercicios de respiración para el estrés: cálmate en 30 segundos",
+      "reviewedSourceHash": "ca5883db568349f438589d0904a82fe225930ee2c122f0e95f872760129878f9",
+      "sourcePath": "meta.ogTitle",
+      "sourceText": "Breathing Exercises for Stress: Calm Down in 30 Seconds",
+      "numericReviewReason": "The replacement restores the source's 30-second timing."
+    },
+    {
+      "currentCatalogValue": "La técnica de respiración más rápida para la relajación y el alivio del estrés — funciona en 30 segundos. El suspiro fisiológico, probado en Stanford, es",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Técnica de respiración probada en Stanford que supera a la meditación para aliviar el estrés. Funciona en 30 segundos. Herramienta gratuita.",
+      "reviewedSourceHash": "04527d7bc53f8d696d4226eafe322e3f62c0d5ac8c8af73c21029d02b060ac59",
+      "sourcePath": "meta.ogDescription",
+      "sourceText": "The Stanford-tested breathing technique that beats meditation for stress relief. Works in 30 seconds. Free tool."
+    },
+    {
+      "currentCatalogValue": "La respiración para relajarse: ejercicios para el estrés",
+      "locale": "es-es",
+      "reason": "The approved metadata value omits the source's 30-second timing.",
+      "replacement": "Ejercicios de respiración para el estrés: reinicio en 30 segundos",
+      "reviewedSourceHash": "88f29314cb8039283c33d952bec475add5911f49d4828e43dfd6ef8cd125d9e4",
+      "sourcePath": "meta.twitterTitle",
+      "sourceText": "Breathing Exercises for Stress: 30 Second Reset",
+      "numericReviewReason": "The replacement restores the source's 30-second timing."
+    },
+    {
+      "currentCatalogValue": "La técnica de respiración más rápida para la relajación y el alivio del estrés — funciona en 30 segundos. El suspiro fisiológico, probado en Stanford, es",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Técnica de respiración probada en Stanford que calma el estrés en 30 segundos. Herramienta guiada gratuita.",
+      "reviewedSourceHash": "3bd9e2401a16e6b8d1a95473e68d254242f5b6e1116118d554e64708c87d92dc",
+      "sourcePath": "meta.twitterDescription",
+      "sourceText": "Stanford-tested breathing technique calms stress in 30 seconds. Free guided tool."
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/stress"
+}

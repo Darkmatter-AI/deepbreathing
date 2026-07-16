@@ -1,0 +1,912 @@
+{
+  "aliases": [
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "Share this exercise",
+      "messagePath": "practiceCards[0].shareButtonText",
+      "occurrenceKey": "sel:button.inline-flex.items-center:ctx:cta_button:pos:0",
+      "reviewedSourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": "Share this exercise"
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "Hold for 4 seconds",
+      "messagePath": "pattern.items[1]",
+      "occurrenceKey": "sel:li:ctx:li:pos:1",
+      "reviewedSourceHash": "1ee0ca64cf307bc7d7e2101470553762e77a6bbe031cb09cf900afc1df1c8f9b",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": "Hold for 4 seconds"
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "Hold for 4 seconds",
+      "messagePath": "pattern.items[3]",
+      "occurrenceKey": "sel:li:ctx:li:pos:3",
+      "reviewedSourceHash": "1ee0ca64cf307bc7d7e2101470553762e77a6bbe031cb09cf900afc1df1c8f9b",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": "Hold for 4 seconds"
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "Share this exercise",
+      "messagePath": "share.buttonText",
+      "occurrenceKey": "sel:button.inline-flex.items-center:ctx:cta_button:pos:1",
+      "reviewedSourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": "Share this exercise"
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "Privacy",
+      "messagePath": "footer.labels[6]",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:6",
+      "reviewedSourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": "Privacy"
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "Share this exercise",
+      "messagePath": "practiceCards[0].shareButtonText",
+      "occurrenceKey": "sel:button.inline-flex.items-center:ctx:cta_button:pos:0",
+      "reviewedSourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "Share this exercise"
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "Share this exercise",
+      "messagePath": "practiceCards[1].shareButtonText",
+      "occurrenceKey": "sel:button.inline-flex.items-center:ctx:cta_button:pos:1",
+      "reviewedSourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "Share this exercise"
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "For focus",
+      "messagePath": "moreOptions.labels[6]",
+      "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:6",
+      "reviewedSourceHash": "ad8f934d2b09cdffa5d52aee2704a1f4e2617d56f1dad446b04ce28a90e0c8b7",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "For focus"
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "Browse all techniques",
+      "messagePath": "moreOptions.labels[7]",
+      "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:7",
+      "reviewedSourceHash": "8db47002e901ffcf16e6480902032286036875772a636b91f6c99c6906f14f7f",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "Browse all techniques"
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "Share this exercise",
+      "messagePath": "share.buttonText",
+      "occurrenceKey": "sel:button.inline-flex.items-center:ctx:cta_button:pos:2",
+      "reviewedSourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "Share this exercise"
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "Privacy",
+      "messagePath": "footer.labels[6]",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:6",
+      "reviewedSourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "Privacy"
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "Privacy",
+      "messagePath": "footer.labels[6]",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:6",
+      "reviewedSourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "Privacy"
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "1 Minute Breathing Exercise — Quick Calm, No App Needed | Deep Breathing Exercises",
+      "messagePath": "metadata.title",
+      "occurrenceKey": "head:title",
+      "reviewedSourceHash": "e2380a5f0b44b19b6873d44befcc403a79a9e145fc8c4a351be787017adc6033",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": "1 Minute Breathing Exercise: Quick Calm, No App Needed"
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "A free 1 minute breathing exercise you can do anywhere. Box breathing (4-4-4-4) for instant stress relief. Start now—no download, no signup.",
+      "messagePath": "metadata.description",
+      "occurrenceKey": "head:meta:name:description",
+      "reviewedSourceHash": "bf7dcc473c4c38bb8a4196722597efc250f579dd6de896afc130ce2f1b2ef1f7",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": "A free 1 minute breathing exercise you can do anywhere. Box breathing (4-4-4-4) for instant stress relief. Start now, no download, no signup."
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "1 Minute Breathing Exercise — Quick Calm",
+      "messagePath": "metadata.socialTitle",
+      "occurrenceKey": "head:meta:property:og:title",
+      "reviewedSourceHash": "270db153a668adbbc31fd000fb8ee401b409bc0988cdf6a6e50d65b01d723ffe",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": "1 Minute Breathing Exercise: Quick Calm"
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "1 Minute Breathing Exercise — Quick Calm",
+      "messagePath": "metadata.imageAlt",
+      "occurrenceKey": "head:meta:property:og:title",
+      "reviewedSourceHash": "687609b3ad3c95a6a04b83d005c66bd0050c4bc327aaac7e76f01cefde34fe56",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": "1 Minute Breathing Exercise, Quick Calm"
+    },
+    {
+      "catalogRoute": "/languages",
+      "catalogSourceText": "Home",
+      "messagePath": "breadcrumb.home",
+      "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+      "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": "Home"
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "1 minute breathing exercise",
+      "messagePath": "breadcrumb.current",
+      "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+      "reviewedSourceHash": "537d50c6799b19bb0fd5bc316326481c9c59ee39d9c77b2f62ffd474e2cc9ffc",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": "1 Minute Breathing Exercise"
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "A quick breathing exercise you can do anywhere—no app download needed. Four cycles of box breathing (4-4-4-4) take about 60 seconds and can help you reset before a meeting, calm nerves, or regain focus.",
+      "messagePath": "hero.intro",
+      "occurrenceKey": "sel:p.max-w-2xl.text-lg:ctx:p:pos:0",
+      "reviewedSourceHash": "78ae14a04b48baf264d271eac7fcb739b7a69b7c85bd0f2d5dd7f9f9eea28eff",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": "A quick breathing exercise you can do anywhere, no app download needed. Four cycles of box breathing (4-4-4-4) take about 60 seconds and can help you reset before a meeting, calm nerves, or regain focus."
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "1 minute breathing exercise",
+      "messagePath": "practiceCards[0].shareTitle",
+      "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+      "reviewedSourceHash": "537d50c6799b19bb0fd5bc316326481c9c59ee39d9c77b2f62ffd474e2cc9ffc",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": "1 Minute Breathing Exercise"
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "1 Minute Breathing Exercise — Quick Calm",
+      "messagePath": "practiceCards[0].shareText",
+      "occurrenceKey": "head:meta:property:og:title",
+      "reviewedSourceHash": "9c848507f9333112e90cdf08a7b0bcbed775b903e8daa2c85f56f70f7f70986b",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": "Try this 1-minute breathing exercise. It's the fastest way to calm down."
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "One minute of controlled breathing is enough to activate your parasympathetic nervous system—the “rest and digest” mode that counteracts stress. The equal phases of box breathing create a rhythmic pattern that interrupts racing thoughts and gives your nervous system a clear signal to calm down.",
+      "messagePath": "primarySection.paragraphs[0]",
+      "occurrenceKey": "sel:p:ctx:p:pos:0",
+      "reviewedSourceHash": "408d98d1de2d86cc552390b80f2858d6f0ae1984f1c4b226fcfcafb60d0667a0",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": "One minute of controlled breathing is enough to activate your parasympathetic nervous system, the “rest and digest” mode that counteracts stress. The equal phases of box breathing create a rhythmic pattern that interrupts racing thoughts and gives your nervous system a clear signal to calm down."
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "The breath holds are what make this technique so effective for quick resets. Holding your breath briefly allows CO₂ to build up slightly, which paradoxically signals safety to your brain—you wouldn't hold your breath if you were actually in danger. This interrupts the fight-or-flight response.",
+      "messagePath": "primarySection.paragraphs[1]",
+      "occurrenceKey": "sel:p:ctx:p:pos:1",
+      "reviewedSourceHash": "52705142bb6b5bbbf9a0e0f5cb53d048f5dcead5826584bbbe8a1793b7331997",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": "The breath holds are what make this technique so effective for quick resets. Holding your breath briefly allows CO₂ to build up slightly, which paradoxically signals safety to your brain. You wouldn't hold your breath if you were actually in danger. This interrupts the fight-or-flight response."
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "Yes. Research shows that even 60 seconds of slow, controlled breathing can activate the parasympathetic nervous system and reduce heart rate. You won't reach deep relaxation, but you can interrupt stress and regain composure—often enough to handle the next moment better.",
+      "messagePath": "schemaFaq[0].answer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+      "reviewedSourceHash": "fa86ffd4aa12b53e2a1f562db57e8c3d5bf47cd703ed2dd85710290efea025b0",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": "Yes. Research shows that even 60 seconds of slow, controlled breathing can activate the parasympathetic nervous system and reduce heart rate. You won't reach deep relaxation, but you can interrupt stress and regain composure, often enough to handle the next moment better."
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "One minute won't eliminate anxiety, but it can take the edge off and prevent escalation. Think of it as a circuit breaker—it stops the stress spiral so you can think more clearly. For deeper anxiety relief, longer sessions (5-10 minutes) work better.",
+      "messagePath": "schemaFaq[3].answer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:5",
+      "reviewedSourceHash": "5f4c0b8c6c2cb09b9e1ce4c36755fc44bc6ce30c35502c4173f4e1065af0697f",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": "One minute won't eliminate anxiety, but it can take the edge off and prevent escalation. Think of it as a circuit breaker. It stops the stress spiral so you can think more clearly. For deeper anxiety relief, longer sessions (5-10 minutes) work better."
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "breathing exercises for deeper relaxation. Or use the",
+      "messagePath": "schemaFaq[5].answer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:9",
+      "reviewedSourceHash": "182fc289dd3f2ab55034ef20c13cbb507cd23972f3a29772baf8932e029c1290",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": "Try our 2-minute or 5-minute breathing exercises for deeper relaxation. Or use the full breathing app to customize your session length and choose different techniques like 4-7-8 or coherent breathing."
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "Yes. Research shows that even 60 seconds of slow, controlled breathing can activate the parasympathetic nervous system and reduce heart rate. You won't reach deep relaxation, but you can interrupt stress and regain composure—often enough to handle the next moment better.",
+      "messagePath": "faq.items[0].answerFragments[0]",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+      "reviewedSourceHash": "fa86ffd4aa12b53e2a1f562db57e8c3d5bf47cd703ed2dd85710290efea025b0",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": "Yes. Research shows that even 60 seconds of slow, controlled breathing can activate the parasympathetic nervous system and reduce heart rate. You won't reach deep relaxation, but you can interrupt stress and regain composure, often enough to handle the next moment better."
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "One minute won't eliminate anxiety, but it can take the edge off and prevent escalation. Think of it as a circuit breaker—it stops the stress spiral so you can think more clearly. For deeper anxiety relief, longer sessions (5-10 minutes) work better.",
+      "messagePath": "faq.items[3].answerFragments[0]",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:5",
+      "reviewedSourceHash": "5f4c0b8c6c2cb09b9e1ce4c36755fc44bc6ce30c35502c4173f4e1065af0697f",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": "One minute won't eliminate anxiety, but it can take the edge off and prevent escalation. Think of it as a circuit breaker. It stops the stress spiral so you can think more clearly. For deeper anxiety relief, longer sessions (5-10 minutes) work better."
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "Try our",
+      "messagePath": "faq.items[5].answerFragments[0]",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:7",
+      "reviewedSourceHash": "c61eaf35396afcf09b50fc0fa2505c26ff440781f01cfadab3885e80d44c1fed",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": "Try our "
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "or",
+      "messagePath": "faq.items[5].answerFragments[2]",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:8",
+      "reviewedSourceHash": "e1a3e78cb5c8858631bf81f94369a0be3fd2aebb9e852e66368b381c8feef91f",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": " or "
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "breathing exercises for deeper relaxation. Or use the",
+      "messagePath": "faq.items[5].answerFragments[4]",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:9",
+      "reviewedSourceHash": "e230811bb0d631ee7b651cc5a1eea611fa8895c0db5d6d8b6092b824dd5ef329",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": " breathing exercises for deeper relaxation. Or use the "
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "to customize your session length.",
+      "messagePath": "faq.items[5].answerFragments[6]",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+      "reviewedSourceHash": "7c2ae0c0e7287f2eee3b97343a485101deb838b57de15937006e8b0a76278b4b",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": " to customize your session length."
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "1 minute breathing exercise",
+      "messagePath": "share.shareTitle",
+      "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+      "reviewedSourceHash": "537d50c6799b19bb0fd5bc316326481c9c59ee39d9c77b2f62ffd474e2cc9ffc",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": "1 Minute Breathing Exercise"
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "1 Minute Breathing Exercise — Quick Calm",
+      "messagePath": "share.shareText",
+      "occurrenceKey": "head:meta:property:og:title",
+      "reviewedSourceHash": "9c848507f9333112e90cdf08a7b0bcbed775b903e8daa2c85f56f70f7f70986b",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": "Try this 1-minute breathing exercise. It's the fastest way to calm down."
+    },
+    {
+      "catalogRoute": "/4-7-8-breathing-for-insomnia",
+      "catalogSourceText": "About Abi",
+      "messagePath": "footer.labels[4]",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+      "reviewedSourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "sourceText": "About Abi"
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "2 Minute Breathing Exercise — Quick Reset, No Download | Deep Breathing Exercises",
+      "messagePath": "metadata.title",
+      "occurrenceKey": "head:title",
+      "reviewedSourceHash": "05ec41472432c74985cedce5a4f13b702bca1141c4078a23a25b69c5693c17dd",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "2 Minute Breathing Exercise: Quick Reset, No Download"
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "A free 2 minute breathing exercise for stress relief and focus. Box breathing or coherent breathing—your choice. Start now in your browser.",
+      "messagePath": "metadata.description",
+      "occurrenceKey": "head:meta:name:description",
+      "reviewedSourceHash": "2add65954581c32834e1c964c8aafb6183ba3c769cb8f05ae56fce545821d4d0",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "A free 2 minute breathing exercise for stress relief and focus. Box breathing or coherent breathing. Your choice. Start now in your browser."
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "2 Minute Breathing Exercise — Quick Reset",
+      "messagePath": "metadata.socialTitle",
+      "occurrenceKey": "head:meta:property:og:title",
+      "reviewedSourceHash": "bf0872bd7386e048743387c5e465c3a19c66c837a8c83bd1dd2d5be5d6fe3727",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "2 Minute Breathing Exercise: Quick Reset"
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "A free 2 minute breathing exercise for stress relief. Box breathing or coherent breathing. No download needed.",
+      "messagePath": "metadata.socialDescription",
+      "occurrenceKey": "head:meta:property:og:description",
+      "reviewedSourceHash": "cedea59b8b88c84a83cf7c95522e147a1824f35a5774bc856daeff03875baa74",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "Follow a free 2 minute breathing exercise online with box breathing or coherent breathing. Start now in your browser."
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "A free 2 minute breathing exercise for stress relief. Box breathing or coherent breathing.",
+      "messagePath": "metadata.twitterDescription",
+      "occurrenceKey": "head:meta:name:twitter:description",
+      "reviewedSourceHash": "d7fa40108da72d26c6b376452eb93e5d2e286c468638a0dd2e47c2da9d7eeea5",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "Free guided 2 minute breathing exercise for stress relief and focus. Start online in seconds."
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "2 Minute Breathing Exercise — Quick Reset",
+      "messagePath": "metadata.imageAlt",
+      "occurrenceKey": "head:meta:property:og:title",
+      "reviewedSourceHash": "a1759ded0f17e01d8ae5eab070618f506723bcb14d8dc10777536295752ec74e",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "2 Minute Breathing Exercise, Quick Reset"
+    },
+    {
+      "catalogRoute": "/languages",
+      "catalogSourceText": "Home",
+      "messagePath": "breadcrumb.home",
+      "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+      "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "Home"
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "2 minute breathing exercise",
+      "messagePath": "breadcrumb.current",
+      "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+      "reviewedSourceHash": "7076d869679614abf054be51853b397abd6cae1135657c7da4effe4da1437d05",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "2 Minute Breathing Exercise"
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "A 2 minute breathing exercise that fits between meetings, tasks, or any moment you need to reset. Two minutes is enough to shift your nervous system from stress to calm—choose box breathing or coherent breathing based on what you need.",
+      "messagePath": "hero.intro",
+      "occurrenceKey": "sel:p.max-w-2xl.text-lg:ctx:p:pos:0",
+      "reviewedSourceHash": "a00cfe59b69c527c57982b54f221492d7bf170c253a9f45b4ddf9dea32d6e3a0",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "A 2 minute breathing exercise that fits between meetings, tasks, or any moment you need to reset. Two minutes is enough to shift your nervous system from stress to calm. Choose box breathing or coherent breathing based on what you need."
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "A 2 minute breathing exercise is a fast reset: do 8 cycles of 4-4-4-4 (box breathing) or 10-12 slow breaths at 5 seconds in and 5 seconds out (coherent breathing). Two minutes is enough to slow your breath, calm the nervous system, and improve focus.",
+      "messagePath": "quickAnswer.body",
+      "occurrenceKey": "sel:p.mt-3.text-sm:ctx:p:pos:0",
+      "reviewedSourceHash": "776a030e25d84fecf80dc9c91e3e4337060cbc72006d656af7724d92109cce70",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "A guided 2 minute breathing exercise gives you a fast reset: do 8 cycles of 4-4-4-4 (box breathing) or 10-12 slow breaths at 5 seconds in and 5 seconds out (coherent breathing). Two minutes is enough to slow your breath, calm the nervous system, and improve focus."
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "2 minute breathing exercise",
+      "messagePath": "practiceCards[0].shareTitle",
+      "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+      "reviewedSourceHash": "7076d869679614abf054be51853b397abd6cae1135657c7da4effe4da1437d05",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "2 Minute Breathing Exercise"
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "2 Minute Breathing Exercise — Quick Reset",
+      "messagePath": "practiceCards[0].shareText",
+      "occurrenceKey": "head:meta:property:og:title",
+      "reviewedSourceHash": "78d0d2b443cbacb544123e130ecc64baf3cd3b4f0951b2fad2c85763546bdd86",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "Try this 2-minute box breathing exercise, a quick reset that actually works."
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "10-12 breaths at 5s in, 5s out. No holds—easier to sustain. Best for a softer reset.",
+      "messagePath": "practiceCards[1].body",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:1",
+      "reviewedSourceHash": "fb440827c97b64908dcc2bf969eb592400db34c4024cccaa98604a244bf5d064",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "10-12 breaths at 5s in, 5s out. No holds, easier to sustain. Best for a softer reset."
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "2 minute breathing exercise",
+      "messagePath": "practiceCards[1].shareTitle",
+      "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+      "reviewedSourceHash": "7076d869679614abf054be51853b397abd6cae1135657c7da4effe4da1437d05",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "2 Minute Breathing Exercise"
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "2 Minute Breathing Exercise — Quick Reset",
+      "messagePath": "practiceCards[1].shareText",
+      "occurrenceKey": "head:meta:property:og:title",
+      "reviewedSourceHash": "ff46e255de77ac19fc528c754d067b3b6bd3e872c6f819f807e6550ae665a874",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "Try this 2-minute coherent breathing exercise, a gentle reset that works."
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "Two minutes of controlled breathing is the sweet spot between a quick reset and a proper session. It's long enough for your body to register the shift—your heart rate starts to drop, blood pressure decreases, and the stress hormone cortisol begins to clear.",
+      "messagePath": "primarySection.paragraphs[0]",
+      "occurrenceKey": "sel:p:ctx:p:pos:0",
+      "reviewedSourceHash": "e97031a598c550561483bd16d0d79039113c22fc8f6599b4505a6183f8dd750b",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "Two minutes of controlled breathing is the sweet spot between a quick reset and a proper session. It's long enough for your body to register the shift. Your heart rate starts to drop, blood pressure decreases, and the stress hormone cortisol begins to clear."
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "Research on heart rate variability (HRV) shows that significant changes in autonomic nervous system balance can occur within 90-120 seconds of slow breathing. You're not just feeling calmer—your physiology is measurably different.",
+      "messagePath": "primarySection.paragraphs[1]",
+      "occurrenceKey": "sel:p:ctx:p:pos:1",
+      "reviewedSourceHash": "aab2eea3f05e4f7ae5f23eed8f2a081139d57719895dcd00ebd5ee5d275e679e",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "Research on heart rate variability (HRV) shows that significant changes in autonomic nervous system balance can occur within 90-120 seconds of slow breathing. You're not just feeling calmer. Your physiology is measurably different."
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "For quick stress relief with structure, use box breathing: 8 cycles of 4-4-4-4 takes about 2 minutes. For a gentler, no-hold approach, try coherent breathing: 10-12 breaths at 5 seconds in, 5 seconds out. Both work well—box breathing is better for acute stress, coherent breathing for a softer reset.",
+      "messagePath": "schemaFaq[0].answer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+      "reviewedSourceHash": "5f9119759f7ed3ee25f9410426dc400922c043869b1648ec03bc5e4c2df0ff0c",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "For quick stress relief with structure, use box breathing: 8 cycles of 4-4-4-4 takes about 2 minutes. For a gentler, no-hold approach, try coherent breathing: 10-12 breaths at 5 seconds in, 5 seconds out. Both work well, box breathing is better for acute stress, coherent breathing for a softer reset."
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "Best times for a 2 minute reset",
+      "messagePath": "schemaFaq[2].question",
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:4",
+      "reviewedSourceHash": "cbb49c680748ae88a24423abbb4e0dbae65bde05a84e08d5e202361389f94827",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "When should I do a 2 minute breathing exercise?"
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "A 2 minute breathing exercise that fits between meetings, tasks, or any moment you need to reset. Two minutes is enough to shift your nervous system from stress to calm—choose box breathing or coherent breathing based on what you need.",
+      "messagePath": "schemaFaq[2].answer",
+      "occurrenceKey": "sel:p.max-w-2xl.text-lg:ctx:p:pos:0",
+      "reviewedSourceHash": "36db310fb7601f688a664f0c628b52c278dd5db3f7ea9f256e95b3caa3c7a493",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "Between meetings or tasks for a mental reset. Before important calls or presentations. After stressful interactions. During your commute (as a passenger). On a lunch break. Anytime you have 2 minutes and want to feel more centered."
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "Should I use box breathing or coherent breathing?",
+      "messagePath": "schemaFaq[3].question",
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:2",
+      "reviewedSourceHash": "a50befa5f56c6ce3bb78fdd307cee166b922b176e94fe38ac7c14fbe968a8e80",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "Should I use box breathing or coherent breathing for 2 minutes?"
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "Use box breathing (with holds) when you need to actively calm down from stress or anxiety—the holds help interrupt racing thoughts. Use coherent breathing (no holds) when you want a gentler practice that's easier to sustain, or when breath holds feel uncomfortable. Both produce calming effects.",
+      "messagePath": "schemaFaq[3].answer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:4",
+      "reviewedSourceHash": "b285493bda7ebd48f81001a9c543241f527545999955c41fa1426b7836b5718b",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "Use box breathing (with holds) when you need to actively calm down from stress or anxiety, the holds help interrupt racing thoughts. Use coherent breathing (no holds) when you want a gentler practice that's easier to sustain, or when breath holds feel uncomfortable. Both produce calming effects."
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "Can I do 2 minute exercises throughout the day?",
+      "messagePath": "schemaFaq[4].question",
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:3",
+      "reviewedSourceHash": "a27ad34b9bfbfd4054036d8425bea8e9b219bbeb4eb889b97e2ebb09d3d27a8e",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "Can I do 2 minute breathing exercises throughout the day?"
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "What if I need more or less time?",
+      "messagePath": "schemaFaq[5].question",
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:4",
+      "reviewedSourceHash": "bd5a5f203a741d542c295465fd45bcf745d2b7f96d482e2f43ad58cc3ccd1859",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "What if I need more time?"
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "For deeper relaxation, try our",
+      "messagePath": "schemaFaq[5].answer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:6",
+      "reviewedSourceHash": "0b4c2f7632241dab970dada50b4714c4944ca643c58138955ab111c92736c706",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "For deeper relaxation or HRV training, try our 5-minute breathing exercise. For a quick interrupt when time is very short, the 1-minute exercise works well. The full breathing app lets you set any duration you want."
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "For quick stress relief with structure, use box breathing: 8 cycles of 4-4-4-4 takes about 2 minutes. For a gentler, no-hold approach, try coherent breathing: 10-12 breaths at 5 seconds in, 5 seconds out. Both work well—box breathing is better for acute stress, coherent breathing for a softer reset.",
+      "messagePath": "faq.items[0].answerFragments[0]",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+      "reviewedSourceHash": "5f9119759f7ed3ee25f9410426dc400922c043869b1648ec03bc5e4c2df0ff0c",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "For quick stress relief with structure, use box breathing: 8 cycles of 4-4-4-4 takes about 2 minutes. For a gentler, no-hold approach, try coherent breathing: 10-12 breaths at 5 seconds in, 5 seconds out. Both work well, box breathing is better for acute stress, coherent breathing for a softer reset."
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "Use box breathing (with holds) when you need to actively calm down from stress or anxiety—the holds help interrupt racing thoughts. Use coherent breathing (no holds) when you want a gentler practice that's easier to sustain, or when breath holds feel uncomfortable. Both produce calming effects.",
+      "messagePath": "faq.items[2].answerFragments[0]",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:4",
+      "reviewedSourceHash": "b285493bda7ebd48f81001a9c543241f527545999955c41fa1426b7836b5718b",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "Use box breathing (with holds) when you need to actively calm down from stress or anxiety, the holds help interrupt racing thoughts. Use coherent breathing (no holds) when you want a gentler practice that's easier to sustain, or when breath holds feel uncomfortable. Both produce calming effects."
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "For deeper relaxation, try our",
+      "messagePath": "faq.items[4].answerFragments[0]",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:6",
+      "reviewedSourceHash": "16eba361eff9fe027a2ee80c2f87a59d9540b80d4ec9ce5873deedd3c4b114e0",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "For deeper relaxation, try our "
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": ". For a quicker reset, the",
+      "messagePath": "faq.items[4].answerFragments[2]",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:7",
+      "reviewedSourceHash": "7cd1d4482f7a4e9af99c4922cdf5ce1c9a28632f1c0875b03dda55e747a99323",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": ". For a quicker reset, the "
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "works well. The",
+      "messagePath": "faq.items[4].answerFragments[4]",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:8",
+      "reviewedSourceHash": "7a9dd6c4f38eccc187d88e5a6aa15e17790270abe5fa8695f5d3a2ee3ebbeb2e",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": " works well. The "
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "lets you customize any duration.",
+      "messagePath": "faq.items[4].answerFragments[6]",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:9",
+      "reviewedSourceHash": "74206a9a02e78ff6bb6ed1984b50b23c932a682f5c41948538523b34044605e9",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": " lets you customize any duration."
+    },
+    {
+      "catalogRoute": "/",
+      "catalogSourceText": "4-7-8 Timer",
+      "messagePath": "moreOptions.labels[2]",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:33",
+      "reviewedSourceHash": "4843f7b941d95d1a84d615151bda00ff709390fa281e14db8bbb12379297b283",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "4-7-8 timer"
+    },
+    {
+      "catalogRoute": "/4-7-8-breathing-timer",
+      "catalogSourceText": "Box breathing app",
+      "messagePath": "moreOptions.labels[3]",
+      "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:1",
+      "reviewedSourceHash": "359654c2b97a67074f3bc18291c030956e46bc8aa6cff24c1cb727bb5091d6a4",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "Box breathing app"
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "2 minute breathing exercise",
+      "messagePath": "share.shareTitle",
+      "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+      "reviewedSourceHash": "7076d869679614abf054be51853b397abd6cae1135657c7da4effe4da1437d05",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "2 Minute Breathing Exercise"
+    },
+    {
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "catalogSourceText": "2 Minute Breathing Exercise — Quick Reset",
+      "messagePath": "share.shareText",
+      "occurrenceKey": "head:meta:property:og:title",
+      "reviewedSourceHash": "c225ce9ff71747222db30519ef09181613793b952f8d932ce9214b00a60d137c",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "Try this 2-minute breathing exercise. It's a quick reset that actually works."
+    },
+    {
+      "catalogRoute": "/4-7-8-breathing-for-insomnia",
+      "catalogSourceText": "About Abi",
+      "messagePath": "footer.labels[4]",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+      "reviewedSourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "sourceText": "About Abi"
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "5 Minute Breathing Exercise — Deep Relaxation & HRV Training | Deep Breathing Exercises",
+      "messagePath": "metadata.title",
+      "occurrenceKey": "head:title",
+      "reviewedSourceHash": "fcf0c6d7200382a9c9955c02f6d6c0277c3ffd6e808202d024cf95e0b7e97635",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "5 Minute Breathing Exercise: Deep Relaxation & HRV Training"
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "A free 5 minute breathing exercise for deep relaxation and HRV training. Coherent breathing at your resonance frequency. Start now—no download, no signup.",
+      "messagePath": "metadata.description",
+      "occurrenceKey": "head:meta:name:description",
+      "reviewedSourceHash": "083a257a9dece8f98a2d02ad6a124d7bcc2d1bba674b2cfd88c58202cf536c8e",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "A free 5 minute breathing exercise for deep relaxation and HRV training. Coherent breathing at your resonance frequency. Start now, no download, no signup."
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "5 Minute Breathing Exercise — Deep Relaxation",
+      "messagePath": "metadata.socialTitle",
+      "occurrenceKey": "head:meta:property:og:title",
+      "reviewedSourceHash": "76607ec1cd487dc88d10e9c95035cbeef39e61309d37d0beb4b089c1bb290ad7",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "5 Minute Breathing Exercise: Deep Relaxation"
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "5 Minute Breathing Exercise — Deep Relaxation",
+      "messagePath": "metadata.imageAlt",
+      "occurrenceKey": "head:meta:property:og:title",
+      "reviewedSourceHash": "1f2b3557b766cd356bedf19e0de0e9c330458bae8b344b0a17499e53a612dc3c",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "5 Minute Breathing Exercise, Deep Relaxation"
+    },
+    {
+      "catalogRoute": "/languages",
+      "catalogSourceText": "Home",
+      "messagePath": "breadcrumb.home",
+      "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+      "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "Home"
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "5 minute breathing exercise",
+      "messagePath": "breadcrumb.current",
+      "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+      "reviewedSourceHash": "82ae12b9dc70b1f146046640f48ecfbd29f465db0726529a728deda94767b3b9",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "5 Minute Breathing Exercise"
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "5 minute breathing exercise",
+      "messagePath": "practiceCards[0].shareTitle",
+      "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+      "reviewedSourceHash": "82ae12b9dc70b1f146046640f48ecfbd29f465db0726529a728deda94767b3b9",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "5 Minute Breathing Exercise"
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "A free 5 minute breathing exercise for deep relaxation and HRV training. Coherent breathing.",
+      "messagePath": "practiceCards[0].shareText",
+      "occurrenceKey": "head:meta:name:twitter:description",
+      "reviewedSourceHash": "a7cccbdd740bbe6f9eeca9a073c44113215af81f8fe8c7378ea558e143b01828",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "Try this 5-minute breathing exercise, great for deep relaxation and HRV training."
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "Share this exercise",
+      "messagePath": "practiceCards[0].shareButtonText",
+      "occurrenceKey": "sel:button.inline-flex.items-center:ctx:cta_button:pos:0",
+      "reviewedSourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "Share this exercise"
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "No holds—continuous flow",
+      "messagePath": "pattern.items[2]",
+      "occurrenceKey": "sel:li:ctx:li:pos:2",
+      "reviewedSourceHash": "9c9da4426ca92894f227c54e643ed1dfb7fc6cd0797541ce2c95ce41acf41d58",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "No holds, continuous flow"
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "HRV—the variation between heartbeats—rises significantly. Higher HRV indicates a more flexible, resilient nervous system.",
+      "messagePath": "primarySection.items[0].body",
+      "occurrenceKey": "sel:span:ctx:span:pos:0",
+      "reviewedSourceHash": "035bdb59aad91cf311c8095f8363f140ae73105fc201a563eac648d85968db80",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "HRV (the variation between heartbeats) rises significantly. Higher HRV indicates a more flexible, resilient nervous system."
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "This breathing rate—around 0.1 Hz—happens to match the natural resonance frequency of your cardiovascular system. When you breathe at this rate, your heart rate, blood pressure, and breathing rhythms synchronize, creating a state of “coherence” that maximizes the benefits of the practice.",
+      "messagePath": "secondarySection.paragraphs[1]",
+      "occurrenceKey": "sel:p:ctx:p:pos:2",
+      "reviewedSourceHash": "f0ebba3db742d6e4c244c2e7dcd503fb9475b43e88837f0356139eaf0362a7ff",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "This breathing rate, around 0.1 Hz, happens to match the natural resonance frequency of your cardiovascular system. When you breathe at this rate, your heart rate, blood pressure, and breathing rhythms synchronize, creating a state of “coherence” that maximizes the benefits of the practice."
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "Before important meetings, presentations, or challenging conversations—5 minutes to arrive centered.",
+      "messagePath": "useCases.items[1].body",
+      "occurrenceKey": "sel:span:ctx:span:pos:6",
+      "reviewedSourceHash": "afbb6cc37f33fba8af199214d1675e39327c74a1fef778a43c995be2c4292d98",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "Before important meetings, presentations, or challenging conversations, 5 minutes to arrive centered."
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "Best times for 5 minute sessions",
+      "messagePath": "schemaFaq[3].question",
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:4",
+      "reviewedSourceHash": "b90b6569620edc920509ff8c38e4e4ee7f50322d812e2b9f667a5a329e2813ff",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "When is the best time for a 5 minute breathing session?"
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "Prevent afternoon stress accumulation with a midday breathing break.",
+      "messagePath": "schemaFaq[3].answer",
+      "occurrenceKey": "sel:span:ctx:span:pos:8",
+      "reviewedSourceHash": "c6ac5615b4f390e86a29597d9b2c15c1474c9ec076b16a58b49ef6ab0479a798",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "Morning (sets a calm baseline for the day), before high-stakes situations (interviews, presentations, difficult conversations), post-workout (accelerates recovery), evening wind-down (improves sleep quality), or during lunch break (prevents afternoon stress accumulation)."
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "Should I use coherent breathing or 4-7-8?",
+      "messagePath": "schemaFaq[4].question",
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:3",
+      "reviewedSourceHash": "123f4e9d468b057d10ac10400e7103fc6cfa38fb6c8316d4e2b65eb5c1007741",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "Should I use coherent breathing or 4-7-8 for 5 minutes?"
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "Coherent breathing is better for 5-minute sessions because it's easier to sustain—no breath holds that can become tiring. 4-7-8 is more intense and works better for shorter sessions (1-2 minutes) or specifically for sleep. For general stress relief and HRV training, coherent breathing is the better choice.",
+      "messagePath": "schemaFaq[4].answer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:5",
+      "reviewedSourceHash": "a12f9e3f3167e84b8461459d8acf2d84e5e0a00a9448ae2a44ebb949919f19d2",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "Coherent breathing is better for 5-minute sessions because it's easier to sustain, no breath holds that can become tiring. 4-7-8 is more intense and works better for shorter sessions (1-2 minutes) or specifically for sleep. For general stress relief and HRV training, coherent breathing is the better choice."
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "Absolutely—daily practice is where the real benefits emerge. Research shows that consistent daily practice of coherent breathing produces cumulative improvements in baseline stress resilience, emotional regulation, and HRV that persist even when you're not actively practicing.",
+      "messagePath": "schemaFaq[5].answer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:6",
+      "reviewedSourceHash": "340d656d43a056f8fc8da051ebc8fa27da2bfe73d0ae634bf28b71d747a9a09c",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "Absolutely, daily practice is where the real benefits emerge. Research shows that consistent daily practice of coherent breathing produces cumulative improvements in baseline stress resilience, emotional regulation, and HRV that persist even when you're not actively practicing."
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "Coherent breathing is better for 5-minute sessions because it's easier to sustain—no breath holds that can become tiring. 4-7-8 is more intense and works better for shorter sessions (1-2 minutes) or specifically for sleep. For general stress relief and HRV training, coherent breathing is the better choice.",
+      "messagePath": "faq.items[3].answerFragments[0]",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:5",
+      "reviewedSourceHash": "a12f9e3f3167e84b8461459d8acf2d84e5e0a00a9448ae2a44ebb949919f19d2",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "Coherent breathing is better for 5-minute sessions because it's easier to sustain, no breath holds that can become tiring. 4-7-8 is more intense and works better for shorter sessions (1-2 minutes) or specifically for sleep. For general stress relief and HRV training, coherent breathing is the better choice."
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "Absolutely—daily practice is where the real benefits emerge. Research shows that consistent daily practice of coherent breathing produces cumulative improvements in baseline stress resilience, emotional regulation, and HRV that persist even when you're not actively practicing.",
+      "messagePath": "faq.items[4].answerFragments[0]",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:6",
+      "reviewedSourceHash": "340d656d43a056f8fc8da051ebc8fa27da2bfe73d0ae634bf28b71d747a9a09c",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "Absolutely, daily practice is where the real benefits emerge. Research shows that consistent daily practice of coherent breathing produces cumulative improvements in baseline stress resilience, emotional regulation, and HRV that persist even when you're not actively practicing."
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "For quick resets, try our",
+      "messagePath": "faq.items[5].answerFragments[0]",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:7",
+      "reviewedSourceHash": "b41b2f176974773eb14c82c99458b0fcc2c5c986c06e9f43409da47afa14ec91",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "For quick resets, try our "
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "or",
+      "messagePath": "faq.items[5].answerFragments[2]",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:8",
+      "reviewedSourceHash": "e1a3e78cb5c8858631bf81f94369a0be3fd2aebb9e852e66368b381c8feef91f",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": " or "
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "exercises. For deeper HRV training, extend to 10-20 minutes using the",
+      "messagePath": "faq.items[5].answerFragments[4]",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:9",
+      "reviewedSourceHash": "5987a759f44299670526173f0f95e901c6ab4ef8ec99e3962dada12d435c3df0",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": " exercises. For deeper HRV training, extend to 10-20 minutes using the "
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "Coherent Breathing App",
+      "messagePath": "faq.items[5].answerFragments[5]",
+      "occurrenceKey": "sel:a.underline.hover:text-foreground:ctx:link:pos:2",
+      "reviewedSourceHash": "67bb68dd589337428affe64b4c18b3e8c89c551ffe73021b89352ff99bf31539",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "coherent breathing app"
+    },
+    {
+      "literal": true,
+      "messagePath": "faq.items[5].answerFragments[6]",
+      "reviewedSourceHash": "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "."
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "Coherent breathing with no holds—easy to maintain for 5+ minutes.",
+      "messagePath": "features[1].body",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:11",
+      "reviewedSourceHash": "c405a7141753f2f923704680bbd9b9095fdf71a8cd21c3fcc7d8f1719ad97dee",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "Coherent breathing with no holds, easy to maintain for 5+ minutes."
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "5 minute breathing exercise",
+      "messagePath": "share.shareTitle",
+      "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+      "reviewedSourceHash": "82ae12b9dc70b1f146046640f48ecfbd29f465db0726529a728deda94767b3b9",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "5 Minute Breathing Exercise"
+    },
+    {
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "catalogSourceText": "A free 5 minute breathing exercise for deep relaxation and HRV training. Coherent breathing.",
+      "messagePath": "share.shareText",
+      "occurrenceKey": "head:meta:name:twitter:description",
+      "reviewedSourceHash": "1443650fea916eb385dac2e9d2525755e68cceb0443c0fc2e410ce313c554c8e",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "Try this 5-minute breathing exercise. It's great for deep relaxation and HRV training."
+    },
+    {
+      "catalogRoute": "/1-minute-breathing-exercise",
+      "catalogSourceText": "Share this exercise",
+      "messagePath": "share.buttonText",
+      "occurrenceKey": "sel:button.inline-flex.items-center:ctx:cta_button:pos:0",
+      "reviewedSourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "Share this exercise"
+    },
+    {
+      "catalogRoute": "/4-7-8-breathing-for-insomnia",
+      "catalogSourceText": "About Abi",
+      "messagePath": "footer.labels[4]",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+      "reviewedSourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "sourceText": "About Abi"
+    }
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,114 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "重度の飛行機恐怖症、閉所恐怖症、または旅行に支障をきたすパニック障害がある場合は、専門家に相談してください。呼吸法は有用なツールですが、臨床的な不安障害には不十分な場合があります。認知行動療法（CBT）や、場合によっては薬物療法が飛行機 不安 対処 法として非常に効果的です。",
+      "locale": "ja-jp",
+      "reason": "The approved value contains an injected search-keyword or unrelated fragment that is absent from the source.",
+      "replacement": "旅行に大きな支障をきたす重度の飛行不安、閉所恐怖症、またはパニック障害がある場合は、メンタルヘルスの専門家に相談してください。呼吸法は有用ですが、臨床的な不安障害には十分でない場合があります。認知行動療法（CBT）や、場合によっては薬物療法が、旅行不安に非常に有効なことがあります。",
+      "reviewedSourceHash": "9293b7ad06b204b27d375d5190243a182d7a9b6f405ea5cb6b00c22822c48cd2",
+      "sourcePath": "disclaimer",
+      "sourceText": "If you have severe flight anxiety, claustrophobia, or panic disorder that significantly impacts your ability to travel, please consult a mental health professional. Breathing techniques are a helpful tool but may not be sufficient for clinical anxiety disorders. Cognitive-behavioral therapy (CBT) and, in some cases, medication can be very effective for travel anxiety."
+    },
+    {
+      "currentCatalogValue": "揺れによって急激なパニックが起きた場合は、生理的ため息に切り替えてください：2回吸い（大きく吸った後に小さく吸い足す）、口すぼめ呼吸のように長く吐き出します。これにより即座に緩和されます。揺れが収まったらコヒーレント呼吸に戻ります。",
+      "locale": "ja-jp",
+      "reason": "The approved value contains an injected search-keyword or unrelated fragment that is absent from the source.",
+      "replacement": "乱気流で急なパニックが起きたら、生理的ため息に切り替えます。大きな吸気と小さな追加吸気を続けて行い、その後長く息を吐きます。すぐに楽になります。乱気流が収まったらコヒーレント呼吸に戻ります。",
+      "reviewedSourceHash": "0f6e4e44b2705f94fd7bca266f2a7aeca95249960f5e189be691293316d2ddb0",
+      "sourcePath": "howTo.steps[4].instruction",
+      "sourceText": "If turbulence triggers acute panic, switch to the physiological sigh: double inhale (big breath + small sniff), long exhale. This provides immediate relief. Then return to coherent breathing once the turbulence passes."
+    },
+    {
+      "currentCatalogValue": "1〜2時間おきに2〜3分間のコヒーレント呼吸を行い、穏やかな状態を維持しましょう。**旅行 不安 呼吸法**として、静かなアラームを設定するか、緊張を感じた時に行います。これにより、疲労につながるストレスの蓄積を防げます。",
+      "locale": "ja-jp",
+      "reason": "The approved value injects literal Markdown emphasis into plain text.",
+      "replacement": "1〜2時間おきに2〜3分間のコヒーレント呼吸を行い、穏やかな状態を保ちます。静かなアラームを設定するか、緊張が高まっていることに気づいたときに行ってください。疲労につながるストレスの蓄積を防ぎます。",
+      "reviewedSourceHash": "5eea9f944a28bb968f2be6281878f3d4e53d94a23796bd53859a227c56d5b8ef",
+      "sourcePath": "howTo.steps[5].instruction",
+      "sourceText": "Every 1-2 hours, do 2-3 minutes of coherent breathing to maintain your calm state. Set a silent alarm or do it whenever you notice tension building. This prevents the gradual stress accumulation that leads to exhaustion."
+    },
+    {
+      "currentCatalogValue": "¿Miedo a volar? ¿Pánico en multitudes? La respiración coherente te mantiene en calma durante horas: durante el despegue, las turbulencias, los retrasos y",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "¿Ansiedad al volar? ¿Pánico entre multitudes? La respiración coherente te mantiene en calma durante horas, en el despegue, la turbulencia, los retrasos y los aeropuertos llenos. Investigación de Stanford. Visualizador gratuito.",
+      "reviewedSourceHash": "0d9fbf0d1c5167ca832154901105d5846cb45e7a0300843ad8c5b3c0992754ac",
+      "sourcePath": "meta.description",
+      "sourceText": "Flight anxiety? Panic in crowds? Coherent breathing keeps you calm for hours: through takeoff, turbulence, delays, and crowded airports. Stanford research. Free visualizer."
+    },
+    {
+      "currentCatalogValue": "¿Miedo a volar? ¿Pánico en multitudes? La respiración coherente te mantiene en calma durante horas: durante el despegue, las turbulencias, los retrasos y",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "La técnica de respiración que te mantiene en calma durante vuelos, retrasos y multitudes. Funciona durante horas, no minutos. Visualizador gratuito.",
+      "reviewedSourceHash": "29effa45141b3a0541e4f079409afef6ef6f84365a586a9d340a5e1a8911a95f",
+      "sourcePath": "meta.ogDescription",
+      "sourceText": "The breathing technique that keeps you calm through flights, delays, and crowds. Works for hours, not minutes. Free visualizer."
+    },
+    {
+      "currentCatalogValue": "Ejercicios de respiración para el miedo a volar: vuelos",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Ejercicios de respiración para la ansiedad al viajar: mantén la calma durante horas",
+      "reviewedSourceHash": "8e7957eea6c9ceea0c326302bbd56c69720c34447f3f5f1d48d21b415ba82a06",
+      "sourcePath": "meta.ogTitle",
+      "sourceText": "Breathing Exercises for Travel Anxiety: Stay Calm for Hours"
+    },
+    {
+      "currentCatalogValue": "Ejercicios de respiración para el miedo a volar: vuelos",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Ejercicios de respiración para la ansiedad al viajar: calma en vuelos y multitudes",
+      "reviewedSourceHash": "e0e983d315eb7963eea5220e4c33705701ed47a6c97f2ba9b9289dcea02067c8",
+      "sourcePath": "meta.title",
+      "sourceText": "Breathing Exercises for Travel Anxiety: Calm Flights & Crowds"
+    },
+    {
+      "currentCatalogValue": "¿Miedo a volar? ¿Pánico en multitudes? La respiración coherente te mantiene en calma durante horas: durante el despegue, las turbulencias, los retrasos y",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Mantén la calma en vuelos, turbulencias, retrasos y multitudes. La respiración coherente funciona durante horas. Visualizador gratuito.",
+      "reviewedSourceHash": "0a6c292fa9f8986011d593892afdbaf12d2313b56a53cc06d23633d838cfee7a",
+      "sourcePath": "meta.twitterDescription",
+      "sourceText": "Stay calm through flights, turbulence, delays, and crowds. Coherent breathing works for hours. Free visualizer."
+    },
+    {
+      "currentCatalogValue": "Ejercicios de respiración para el miedo a volar: vuelos",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Ejercicios de respiración para la ansiedad al viajar: calma en vuelos y multitudes",
+      "reviewedSourceHash": "e0e983d315eb7963eea5220e4c33705701ed47a6c97f2ba9b9289dcea02067c8",
+      "sourcePath": "meta.twitterTitle",
+      "sourceText": "Breathing Exercises for Travel Anxiety: Calm Flights & Crowds"
+    },
+    {
+      "currentCatalogValue": "制御されたゆっくりとした呼吸が、**乗り物 酔い 呼吸 法**として症状を50%以上軽減することを示す研究。",
+      "locale": "ja-jp",
+      "reason": "The approved value injects literal Markdown emphasis into plain text.",
+      "replacement": "制御されたゆっくりした呼吸が、乗り物酔いの症状を50%以上軽減することを示す研究。",
+      "reviewedSourceHash": "0e0690c4c23c7d923601adc61c60ff65199163a8c8bd994ad0e2edad8dc64019",
+      "sourcePath": "references[2].summary",
+      "sourceText": "Research showing that controlled slow breathing reduces motion sickness symptoms by 50% or more."
+    },
+    {
+      "currentCatalogValue": "スロー呼吸と**乗り物酔い 呼吸法**",
+      "locale": "ja-jp",
+      "reason": "The approved value injects literal Markdown emphasis into plain text.",
+      "replacement": "ゆっくりした呼吸と乗り物酔い",
+      "reviewedSourceHash": "4f6a1ce5dc2294690946226f640ba1d098db87c68ee2579b8f863face4f4ca15",
+      "sourcePath": "references[2].title",
+      "sourceText": "Slow Breathing and Motion Sickness"
+    },
+    {
+      "currentCatalogValue": "**飛行機恐怖症 呼吸**テクニックを効果的な介入の構成要素として含む、エビデンスに基づいた治療法のレビュー。",
+      "locale": "ja-jp",
+      "reason": "The approved value injects literal Markdown emphasis into plain text.",
+      "replacement": "効果的な介入の一部として呼吸法を含む、飛行不安に対するエビデンスに基づく治療法のレビュー。",
+      "reviewedSourceHash": "4c54bad19efdfc6b49381389f7643edf43c4e2cc6e2fd452cb6fe528267c15b3",
+      "sourcePath": "references[3].summary",
+      "sourceText": "Review of evidence-based treatments for flight anxiety, including breathing techniques as a component of effective interventions."
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/travel-anxiety"
+}

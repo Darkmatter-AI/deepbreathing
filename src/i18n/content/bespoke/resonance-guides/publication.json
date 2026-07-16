@@ -1,0 +1,166 @@
+{
+  "coverage": {
+    "box-breathing-before-presentation": {
+      "de-de": {
+        "expectedMessages": 81,
+        "path": "messages/de-de/box-breathing-before-presentation.json",
+        "publishable": true,
+        "resolvedMessages": 81,
+        "sha256": "fad8851157fd892648109df7bfc7ea8caa671c84a3e4126cf3c6ee10dfa770cd"
+      },
+      "es-es": {
+        "expectedMessages": 81,
+        "path": "messages/es-es/box-breathing-before-presentation.json",
+        "publishable": true,
+        "resolvedMessages": 81,
+        "sha256": "3f1f737096f69231623d089202f7458dd8ad41c3bf029d568d7e466e37cb826d"
+      },
+      "fr-fr": {
+        "expectedMessages": 81,
+        "path": "messages/fr-fr/box-breathing-before-presentation.json",
+        "publishable": true,
+        "resolvedMessages": 81,
+        "sha256": "bf2a9ead3b48a326168de3e6f4b4e6492b2d6d681636828c3e9098fb512d6fcd"
+      },
+      "ja-jp": {
+        "expectedMessages": 81,
+        "path": "messages/ja-jp/box-breathing-before-presentation.json",
+        "publishable": true,
+        "resolvedMessages": 81,
+        "sha256": "4ffec0ccf0de843eea39396befbdf5ae842c4dfb064694b72c2c06b03ccf8c9b"
+      },
+      "pt-br": {
+        "expectedMessages": 81,
+        "path": "messages/pt-br/box-breathing-before-presentation.json",
+        "publishable": true,
+        "resolvedMessages": 81,
+        "sha256": "8dbb0c9f3c0a787551f4e1d910ab1c11a43ba1ec44e4ed0a296e026591e30b00"
+      }
+    },
+    "breathing-exercises-before-surgery": {
+      "de-de": {
+        "expectedMessages": 90,
+        "path": "messages/de-de/breathing-exercises-before-surgery.json",
+        "publishable": true,
+        "resolvedMessages": 90,
+        "sha256": "111c130b29ce8c530ea73237c11936764594dd719f1ba2e83c015637472971eb"
+      },
+      "es-es": {
+        "expectedMessages": 90,
+        "path": "messages/es-es/breathing-exercises-before-surgery.json",
+        "publishable": true,
+        "resolvedMessages": 90,
+        "sha256": "a240c0014fef8b963abe97f8e7919c3813a2441b513e357e2c65ce0d5fb76bef"
+      },
+      "fr-fr": {
+        "expectedMessages": 90,
+        "path": "messages/fr-fr/breathing-exercises-before-surgery.json",
+        "publishable": true,
+        "resolvedMessages": 90,
+        "sha256": "37e5854a4ca69ba5c39a227fa871ce5b7d40c10d18cf96bd087c4fdf01411067"
+      },
+      "ja-jp": {
+        "expectedMessages": 90,
+        "path": "messages/ja-jp/breathing-exercises-before-surgery.json",
+        "publishable": true,
+        "resolvedMessages": 90,
+        "sha256": "7aecfef87ee0739174dd634aafc21f54a2b7304e33e200a986e280f165932348"
+      },
+      "pt-br": {
+        "expectedMessages": 90,
+        "path": "messages/pt-br/breathing-exercises-before-surgery.json",
+        "publishable": true,
+        "resolvedMessages": 90,
+        "sha256": "7952df19aafa59ad09cf72dd1649ac6d34b137861dc9355a304671efde444c02"
+      }
+    },
+    "breathing-exercises-for-labor": {
+      "de-de": {
+        "expectedMessages": 90,
+        "path": "messages/de-de/breathing-exercises-for-labor.json",
+        "publishable": true,
+        "resolvedMessages": 90,
+        "sha256": "3e40aed3763ec7a0732e34fa65f09ebedc3fd515d8f092965bec1507f9929006"
+      },
+      "es-es": {
+        "expectedMessages": 90,
+        "path": "messages/es-es/breathing-exercises-for-labor.json",
+        "publishable": true,
+        "resolvedMessages": 90,
+        "sha256": "736042cc9a34bb23ab48fd85c6401f4269fbb637bd6b4d203c7f43462f7e4b01"
+      },
+      "fr-fr": {
+        "expectedMessages": 90,
+        "path": "messages/fr-fr/breathing-exercises-for-labor.json",
+        "publishable": true,
+        "resolvedMessages": 90,
+        "sha256": "66d4e1bc706bdeb63d86cb4aed37e57392cb2876275ed9f93a3c95f3a9c80f83"
+      },
+      "ja-jp": {
+        "expectedMessages": 90,
+        "path": "messages/ja-jp/breathing-exercises-for-labor.json",
+        "publishable": true,
+        "resolvedMessages": 90,
+        "sha256": "02078ff1c1f574caa4731e3ac2ecb9efe0cce51b28cb932a05c518a415bb5a5a"
+      },
+      "pt-br": {
+        "expectedMessages": 90,
+        "path": "messages/pt-br/breathing-exercises-for-labor.json",
+        "publishable": true,
+        "resolvedMessages": 90,
+        "sha256": "10dfa87128e053cf56759e85db227639510bed0912d6872f59e4072fe5d0aba9"
+      }
+    },
+    "physiological-sigh-panic-attack": {
+      "de-de": {
+        "expectedMessages": 82,
+        "path": "messages/de-de/physiological-sigh-panic-attack.json",
+        "publishable": true,
+        "resolvedMessages": 82,
+        "sha256": "f59c8c3ed87670a9e9a945ed0e73d2977e56d0464b4ce78f3ff4601a6aa1b85e"
+      },
+      "es-es": {
+        "expectedMessages": 82,
+        "path": "messages/es-es/physiological-sigh-panic-attack.json",
+        "publishable": true,
+        "resolvedMessages": 82,
+        "sha256": "549e108440450537d91a6423b2e08141fff1b00e4511e4cc05c1f13f227a41ec"
+      },
+      "fr-fr": {
+        "expectedMessages": 82,
+        "path": "messages/fr-fr/physiological-sigh-panic-attack.json",
+        "publishable": true,
+        "resolvedMessages": 82,
+        "sha256": "4088d002b8505fa56c3549feac65ffee9751fc5ff5a60c5d65b855e0ff8b477d"
+      },
+      "ja-jp": {
+        "expectedMessages": 82,
+        "path": "messages/ja-jp/physiological-sigh-panic-attack.json",
+        "publishable": true,
+        "resolvedMessages": 82,
+        "sha256": "8d12c9ed17fb1e653da09258ef7d62cec682355a42473621809fb04ce7498d6a"
+      },
+      "pt-br": {
+        "expectedMessages": 82,
+        "path": "messages/pt-br/physiological-sigh-panic-attack.json",
+        "publishable": true,
+        "resolvedMessages": 82,
+        "sha256": "93c8df33b3dfbdcfadf7a2a136f786d5aca6a8a3ad83af6c4a8cb78dcc1c45a6"
+      }
+    }
+  },
+  "locales": [
+    "de-de",
+    "es-es",
+    "fr-fr",
+    "ja-jp",
+    "pt-br"
+  ],
+  "routes": [
+    "box-breathing-before-presentation",
+    "breathing-exercises-before-surgery",
+    "breathing-exercises-for-labor",
+    "physiological-sigh-panic-attack"
+  ],
+  "schemaVersion": 1
+}

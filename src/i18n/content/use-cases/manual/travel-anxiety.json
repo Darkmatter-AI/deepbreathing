@@ -1,0 +1,209 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.use-case.box-breathing-name",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "f10268a765bb0ecf0afdfae16a75bb2587e2c730d3f1f1b776a4cafc877308ea",
+      "scope": "chrome",
+      "sourceText": "Coherent Breathing",
+      "translations": {
+        "de-de": "Kohärentes Atmen",
+        "fr-fr": "Respiration cohérente",
+        "ja-jp": "コヒーレント呼吸"
+      }
+    },
+    {
+      "messageId": "chrome.use-case.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "2733df13664a5e0b512028b11c6bc898078aa3ccffdfa65ad8e29374ab6a84a9",
+      "scope": "chrome",
+      "sourceText": "Try this guided breathing exercise for travel anxiety.",
+      "translations": {
+        "de-de": "Probiere diese geführte Atemübung bei Reiseangst.",
+        "es-es": "Prueba este ejercicio de respiración guiada para la ansiedad por viajar.",
+        "fr-fr": "Essayez cet exercice de respiration guidée pour l'anxiété liée aux voyages.",
+        "ja-jp": "旅行不安向けのこのガイド付き呼吸エクササイズをお試しください。",
+        "pt-br": "Experimente este exercício de respiração guiada para ansiedade de viagem."
+      }
+    },
+    {
+      "messageId": "chrome.use-case.learn-box-breathing",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "f607a43ced7c5ce11c681d395d966d0d1a214221d59fcba2227a52b39e36f0a9",
+      "scope": "chrome",
+      "sourceText": "Learn more about Coherent Breathing →",
+      "translations": {
+        "de-de": "Mehr über kohärentes Atmen erfahren →",
+        "es-es": "Más información sobre la respiración coherente →",
+        "fr-fr": "En savoir plus sur la respiration cohérente →",
+        "ja-jp": "コヒーレント呼吸について詳しく見る →",
+        "pt-br": "Saiba mais sobre a respiração coerente →"
+      }
+    },
+    {
+      "messageId": "chrome.use-case.related-anxiety-title",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+      "scope": "chrome",
+      "sourceText": "How to Stop Anxiety in 60 Seconds with Box Breathing",
+      "translations": {
+        "de-de": "Wie Sie Angst in 60 Sekunden mit Box Breathing stoppen",
+        "fr-fr": "Comment arrêter l'anxiété en 60 secondes avec la respiration en carré",
+        "ja-jp": "ボックス呼吸で60秒で不安を止める方法",
+        "pt-br": "Como parar a ansiedade em 60 segundos com a respiração em caixa"
+      }
+    },
+    {
+      "messageId": "chrome.use-case.related-holiday-title",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "6e6700ebb79acdc6c454084c36419a96e782fd0a47695a71703340fbecade8f8",
+      "scope": "chrome",
+      "sourceText": "How to Handle Holiday Stress in 30 Seconds",
+      "translations": {
+        "de-de": "Feiertagsstress in 30 Sekunden bewältigen",
+        "es-es": "Cómo manejar el estrés navideño en 30 segundos",
+        "fr-fr": "Comment gérer le stress des fêtes en 30 secondes",
+        "ja-jp": "30秒でホリデーストレスに対処する方法",
+        "pt-br": "Como lidar com o estresse das festas em 30 segundos"
+      }
+    },
+    {
+      "messageId": "chrome.use-case.related-panic-title",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "60b19b4a8b0ebd154f5fe7b84fcb735a5d21fc617898a56d2250c637f22338e7",
+      "scope": "chrome",
+      "sourceText": "How to Stop a Panic Attack in 30 Seconds",
+      "translations": {
+        "es-es": "Cómo detener un ataque de pánico en 30 segundos",
+        "fr-fr": "Comment arrêter une crise de panique en 30 secondes",
+        "pt-br": "Como parar um ataque de pânico em 30 segundos"
+      }
+    },
+    {
+      "messageId": "chrome.use-case.related-sleep-title",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+      "scope": "chrome",
+      "sourceText": "4-7-8 Breathing for Sleep",
+      "translations": {
+        "de-de": "4-7-8-Atmung zum Einschlafen",
+        "fr-fr": "Respiration 4-7-8 pour le sommeil",
+        "pt-br": "Respiração 4-7-8 para dormir"
+      }
+    },
+    {
+      "messageId": "faqs[4].answer",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "135083cfcb679b4779664e7403a79269703d04f9eb9cd66de80dbf2f18e2de8f",
+      "scope": "content",
+      "sourceText": "Use the visual guide, watching the animation is easier than counting in your head. You can also try the 'sigh first, then slow down' approach: do 2-3 physiological sighs to take the edge off acute anxiety, then transition to coherent breathing for sustained calm. If you're extremely anxious, even partial success is helpful. Breathing at 8 breaths/minute is still better than panicked hyperventilation.",
+      "translations": {
+        "de-de": "Nutzen Sie die visuelle Anleitung – die Animation anzuschauen ist einfacher als im Kopf zu zählen. Sie können auch den Ansatz „zuerst seufzen, dann langsamer werden“ ausprobieren: Machen Sie 2–3 physiologische Seufzer, um die akute Angst abzumildern, und wechseln Sie dann zum kohärenten Atmen für anhaltende Ruhe. Wenn Sie extrem ängstlich sind, ist auch Teilerfolg hilfreich. 8 Atemzüge pro Minute sind immer noch besser als panische Hyperventilation.",
+        "es-es": "Usa la guía visual: ver la animación es más fácil que contar en la cabeza. También puedes probar el enfoque «primero suspira, luego reduce el ritmo»: haz 2-3 suspiros fisiológicos para aliviar la ansiedad aguda y luego pasa a la respiración coherente para una calma sostenida. Si estás muy ansioso, incluso un éxito parcial ayuda. Respirar a 8 respiraciones por minuto sigue siendo mejor que la hiperventilación del pánico.",
+        "fr-fr": "Utilisez le guide visuel : regarder l'animation est plus facile que de compter dans votre tête. Vous pouvez aussi essayer l'approche « d'abord soupirer, puis ralentir » : faites 2 à 3 soupirs physiologiques pour atténuer l'anxiété aiguë, puis passez à la respiration cohérente pour un calme durable. Si vous êtes extrêmement anxieux, même un succès partiel est utile. Respirer à 8 respirations par minute reste préférable à une hyperventilation paniquée.",
+        "ja-jp": "ビジュアルガイドを使いましょう。頭の中で数えるより、アニメーションを見る方が簡単です。「まずため息、それからゆっくり」という方法も試せます。急性の不安を和らげるために生理的ため息を2〜3回行い、その後持続的な落ち着きのためにコヒーレント呼吸に移行します。非常に不安な場合でも、部分的な成功でも役に立ちます。1分あたり8回の呼吸は、パニックによる過換気よりまだ良いです。",
+        "pt-br": "Use o guia visual: assistir à animação é mais fácil do que contar na cabeça. Você também pode tentar a abordagem «suspire primeiro, depois diminua o ritmo»: faça 2-3 suspiros fisiológicos para amenizar a ansiedade aguda e depois passe para a respiração coerente para uma calma sustentada. Se você estiver extremamente ansioso, até um sucesso parcial ajuda. Respirar a 8 respirações por minuto ainda é melhor do que hiperventilação em pânico."
+      }
+    },
+    {
+      "messageId": "faqs[5].answer",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "e7d65180bc994678e53fd78804abc7dda36524d9bcbbb7d21e59cd5869d3d7d8",
+      "scope": "content",
+      "sourceText": "Ear pain is caused by pressure differences, not anxiety, so breathing won't directly help. But if anxiety makes you clench your jaw and stiffen your neck (which it often does), relaxing through breathwork can make the pressure equalization easier. For ear pressure specifically: yawn, swallow, chew gum, or do the Valsalva maneuver (pinch nose, close mouth, gently blow). Some people find that coherent breathing during descent reduces ear discomfort because they're more relaxed.",
+      "translations": {
+        "de-de": "Ohrenschmerzen entstehen durch Druckunterschiede, nicht durch Angst – Atmen hilft daher nicht direkt. Wenn Angst Sie jedoch den Kiefer anspannen und den Nacken versteifen lässt (was oft vorkommt), kann Entspannung durch Atemarbeit den Druckausgleich erleichtern. Bei Ohrendruck konkret: gähnen, schlucken, Kaugummi kauen oder das Valsalva-Manöver (Nase zuhalten, Mund schließen, sanft blasen). Manche finden, dass kohärentes Atmen beim Sinkflug das Ohrbeschwerden lindert, weil sie entspannter sind.",
+        "es-es": "El dolor de oídos lo causan las diferencias de presión, no la ansiedad, así que respirar no ayuda directamente. Pero si la ansiedad te hace apretar la mandíbula y tensar el cuello (algo frecuente), relajarte con ejercicios de respiración puede facilitar la compensación de presión. Para la presión en los oídos en concreto: bosteza, traga, mastica chicle o haz la maniobra de Valsalva (pellizca la nariz, cierra la boca y sopla suavemente). Algunas personas encuentran que la respiración coherente durante el descenso reduce las molestias en los oídos porque están más relajadas.",
+        "fr-fr": "Les douleurs d'oreille sont causées par des différences de pression, pas par l'anxiété, donc la respiration n'aide pas directement. Mais si l'anxiété vous fait serrer la mâchoire et raidir la nuque (ce qui arrive souvent), se détendre par le travail respiratoire peut faciliter l'équilibrage de la pression. Pour la pression dans les oreilles en particulier : bâillez, déglutissez, mâchez du chewing-gum ou faites la manœuvre de Valsalva (pincez le nez, fermez la bouche, soufflez doucement). Certaines personnes trouvent que la respiration cohérente pendant la descente réduit l'inconfort auriculaire parce qu'elles sont plus détendues.",
+        "ja-jp": "耳の痛みは不安ではなく気圧差が原因なので、呼吸だけでは直接的には役立ちません。ただし不安で顎を食いしばったり首をこわばらせたりすることが多い場合、呼吸法でリラックスすると気圧平衡がしやすくなることがあります。耳の圧については、あくび、飲み込み、ガムを噛む、またはバルサルバ手技（鼻をつまみ、口を閉じて軽く息を出す）を試してください。下降中にコヒーレント呼吸をするとリラックスでき、耳の不快感が和らぐと感じる人もいます。",
+        "pt-br": "A dor de ouvido é causada por diferenças de pressão, não por ansiedade, então a respiração não ajuda diretamente. Mas se a ansiedade faz você cerrar a mandíbula e enrijecer o pescoço (o que é comum), relaxar com exercícios respiratórios pode facilitar a equalização de pressão. Para pressão no ouvido especificamente: boceje, engula, mastigue chiclete ou faça a manobra de Valsalva (feche o nariz, feche a boca e sopre suavemente). Algumas pessoas acham que a respiração coerente durante a descida reduz o desconforto no ouvido porque ficam mais relaxadas."
+      }
+    },
+    {
+      "messageId": "faqs[5].question",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "7a50865a18fdd90a4f025b04b48e749147e0fe76f24f6fc6ef759b3155a06a62",
+      "scope": "content",
+      "sourceText": "My ears hurt when flying. Does this help with that?",
+      "translations": {
+        "de-de": "Meine Ohren tun beim Fliegen weh. Hilft das dabei?",
+        "es-es": "Me duelen los oídos al volar. ¿Esto ayuda con eso?",
+        "fr-fr": "J'ai mal aux oreilles en avion. Est-ce que cela aide ?",
+        "ja-jp": "飛行機で耳が痛くなります。これは役に立ちますか？",
+        "pt-br": "Minhas orelhas doem quando voo. Isso ajuda com isso?"
+      }
+    },
+    {
+      "messageId": "relatedTechnique.callToAction",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "f661c0f9c08ea42d86e64d35e1a7d9f19ffef1f48e79f5b5bc90a110d36c1f8f",
+      "scope": "content",
+      "sourceText": "Practice with the full coherent breathing visualizer, download for offline use",
+      "translations": {
+        "de-de": "Mit dem vollständigen Visualizer für kohärentes Atmen üben, zum Offline-Gebrauch herunterladen",
+        "es-es": "Practica con el visualizador completo de respiración coherente; descárgalo para usar sin conexión",
+        "fr-fr": "Entraînez-vous avec le visualiseur complet de respiration cohérente, téléchargez-le pour une utilisation hors ligne",
+        "ja-jp": "フルのコヒーレント呼吸ビジュアライザーで練習し、オフライン利用のためにダウンロード",
+        "pt-br": "Pratique com o visualizador completo de respiração coerente; baixe para uso offline"
+      }
+    },
+    {
+      "messageId": "relatedUseCases[0].teaser",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "b288191267cff6e8fca325ee7954d9555d1f517d0f45ef611babd39d0c803d99",
+      "scope": "content",
+      "sourceText": "Dreading family gatherings? The physiological sigh works in 30 seconds for acute stress",
+      "translations": {
+        "de-de": "Familientreffen mit Grauen erwartet? Der physiologische Seufzer wirkt in 30 Sekunden bei akutem Stress",
+        "es-es": "¿Le da pavor reunirse con la familia? El suspiro fisiológico funciona en 30 segundos para el estrés agudo",
+        "fr-fr": "Les réunions de famille vous angoissent ? Le soupir physiologique agit en 30 secondes sur le stress aigu",
+        "ja-jp": "家族の集まりが憂鬱ですか？生理的ため息は急性ストレスに30秒で効きます",
+        "pt-br": "Teme reuniões de família? O suspiro fisiológico funciona em 30 segundos para estresse agudo"
+      }
+    },
+    {
+      "messageId": "relatedUseCases[1].teaser",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "69f6a7dbe5afb2044d0a194e20d9cd4a9daa864679b0b09c7148d1fdbba07ae8",
+      "scope": "content",
+      "sourceText": "If travel triggers full panic attacks, learn the physiological sigh for immediate relief",
+      "translations": {
+        "de-de": "Wenn Reisen vollständige Panikattacken auslöst, lernen Sie den physiologischen Seufzer für sofortige Linderung",
+        "es-es": "Si viajar desencadena ataques de pánico completos, aprende el suspiro fisiológico para alivio inmediato",
+        "fr-fr": "Si le voyage déclenche de vraies crises de panique, apprenez le soupir physiologique pour un soulagement immédiat",
+        "ja-jp": "旅行で本格的なパニック発作が起きるなら、即時の緩和のために生理的ため息を学びましょう",
+        "pt-br": "Se viagens desencadeiam ataques de pânico completos, aprenda o suspiro fisiológico para alívio imediato"
+      }
+    },
+    {
+      "messageId": "relatedUseCases[2].teaser",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "cb07c65cd22e624133d609354035ab7a901490e14ffc438a752a08055824e95b",
+      "scope": "content",
+      "sourceText": "For general anxiety that extends beyond travel, box breathing provides quick relief",
+      "translations": {
+        "de-de": "Bei allgemeiner Angst, die über Reisen hinausgeht, bietet Box Breathing schnelle Linderung",
+        "es-es": "Para la ansiedad general que va más allá de los viajes, la respiración en caja proporciona alivio rápido",
+        "fr-fr": "Pour l'anxiété générale qui dépasse le voyage, la respiration en carré apporte un soulagement rapide",
+        "ja-jp": "旅行を超える一般的な不安には、ボックス呼吸が素早い緩和をもたらします",
+        "pt-br": "Para ansiedade geral que vai além de viagens, a respiração em caixa oferece alívio rápido"
+      }
+    },
+    {
+      "messageId": "relatedUseCases[3].teaser",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "93dfd0bbb3ef03914315829859e9c7daf259c776e554d12a75f0322d1550e0e8",
+      "scope": "content",
+      "sourceText": "Jet-lagged? Use 4-7-8 breathing to fall asleep faster in new time zones",
+      "translations": {
+        "de-de": "Jetlag? Nutzen Sie 4-7-8-Atmung, um in neuen Zeitzonen schneller einzuschlafen",
+        "es-es": "¿Jet lag? Usa la respiración 4-7-8 para conciliar el sueño más rápido en nuevas zonas horarias",
+        "fr-fr": "Jet lag ? Utilisez la respiration 4-7-8 pour vous endormir plus vite dans de nouveaux fuseaux horaires",
+        "ja-jp": "ジェットラグですか？新しいタイムゾーンでは4-7-8呼吸でより早く眠りにつきましょう",
+        "pt-br": "Jet lag? Use a respiração 4-7-8 para adormecer mais rápido em novos fusos horários"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/travel-anxiety"
+}

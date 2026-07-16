@@ -1,0 +1,20 @@
+{
+  "entries": [
+    {
+      "messageId": "catalog-placement.32a1c28b-1fab-4ff6-920b-6ece8b8d5b63",
+      "reason": "Missing approved catalog translation for sel:a.rounded-full.border:ctx:link:pos:4",
+      "reviewedSourceHash": "38ea6f348c65cfc4554ff6af758fcd55a3731384c4d2d6b401adaaf4f1ce01ef",
+      "scope": "chrome",
+      "sourceText": "2 minute breathing exercise",
+      "translations": {
+        "de-de": "2-minütige Atemübung",
+        "es-es": "ejercicio de respiración de 2 minutos",
+        "fr-fr": "Exercice de respiration de 2 minutes",
+        "ja-jp": "2分間の呼吸エクササイズ",
+        "pt-br": "exercício de respiração de 2 minutos"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/breathing-app"
+}

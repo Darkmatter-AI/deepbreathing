@@ -57,6 +57,15 @@ test('sitemap includes translated locale-prefixed URLs when configured', () => {
   );
 });
 
+test('sitemap excludes the internal sensory studio and localized variants', () => {
+  const pathnames = new Set(getEntries().map((entry) => new URL(entry.url).pathname));
+
+  assert.equal(pathnames.has('/sensory-studio'), false);
+  for (const locale of EDGE_PROXY_LOCALE_PREFIXES) {
+    assert.equal(pathnames.has(`/${locale}/sensory-studio`), false);
+  }
+});
+
 test('sitemap entries include hreflang alternates for all languages', () => {
   const entries = getEntries();
 

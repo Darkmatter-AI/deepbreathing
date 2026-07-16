@@ -1,0 +1,47 @@
+{
+  "replacements": [
+    {
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "messagePath": "metadata.socialDescription",
+      "sourceText": "Follow a free 2 minute breathing exercise online with box breathing or coherent breathing. Start now in your browser.",
+      "reviewedSourceHash": "cedea59b8b88c84a83cf7c95522e147a1824f35a5774bc856daeff03875baa74",
+      "reason": "The current social description is substantively different from the preserved catalog source.",
+      "translations": {
+        "de-de": "Folge online einer kostenlosen 2-minütigen Atemübung mit Box-Atmung oder kohärenter Atmung. Starte jetzt direkt im Browser.",
+        "es-es": "Sigue online un ejercicio de respiración gratuito de 2 minutos con respiración cuadrada o respiración coherente. Empieza ahora en tu navegador.",
+        "fr-fr": "Suivez en ligne un exercice de respiration gratuit de 2 minutes, avec la respiration carrée ou la respiration cohérente. Commencez maintenant dans votre navigateur.",
+        "ja-jp": "ボックス呼吸またはコヒーレント呼吸を使った無料の2分間呼吸エクササイズをオンラインで行えます。ブラウザですぐに始められます。",
+        "pt-br": "Faça online um exercício respiratório gratuito de 2 minutos com respiração quadrada ou respiração coerente. Comece agora no navegador."
+      }
+    },
+    {
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "messagePath": "metadata.twitterDescription",
+      "sourceText": "Free guided 2 minute breathing exercise for stress relief and focus. Start online in seconds.",
+      "reviewedSourceHash": "d7fa40108da72d26c6b376452eb93e5d2e286c468638a0dd2e47c2da9d7eeea5",
+      "reason": "The current social description adds guided practice, focus, and immediate online access.",
+      "translations": {
+        "de-de": "Kostenlose geführte 2-minütige Atemübung für Stressabbau und Konzentration. In Sekunden online starten.",
+        "es-es": "Ejercicio de respiración guiado y gratuito de 2 minutos para aliviar el estrés y mejorar la concentración. Empieza online en segundos.",
+        "fr-fr": "Exercice de respiration guidé et gratuit de 2 minutes pour soulager le stress et améliorer la concentration. Commencez en ligne en quelques secondes.",
+        "ja-jp": "ストレス軽減と集中力向上のための無料ガイド付き2分間呼吸エクササイズ。オンラインですぐに始められます。",
+        "pt-br": "Exercício respiratório guiado e gratuito de 2 minutos para aliviar o estresse e melhorar o foco. Comece online em segundos."
+      }
+    },
+    {
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "messagePath": "quickAnswer.body",
+      "sourceText": "A guided 2 minute breathing exercise gives you a fast reset: do 8 cycles of 4-4-4-4 (box breathing) or 10-12 slow breaths at 5 seconds in and 5 seconds out (coherent breathing). Two minutes is enough to slow your breath, calm the nervous system, and improve focus.",
+      "reviewedSourceHash": "776a030e25d84fecf80dc9c91e3e4337060cbc72006d656af7724d92109cce70",
+      "reason": "The current quick answer adds the guided-practice qualification and removes an obsolete German keyword fragment.",
+      "translations": {
+        "de-de": "Eine geführte 2-minütige Atemübung sorgt für einen schnellen Neustart: Führe 8 Zyklen im 4-4-4-4-Rhythmus (Box-Atmung) oder 10-12 langsame Atemzüge mit 5 Sekunden Einatmen und 5 Sekunden Ausatmen (kohärente Atmung) durch. Zwei Minuten reichen aus, um den Atem zu verlangsamen, das Nervensystem zu beruhigen und die Konzentration zu verbessern.",
+        "es-es": "Un ejercicio de respiración guiado de 2 minutos te permite reiniciarte rápidamente: realiza 8 ciclos de 4-4-4-4 (respiración cuadrada) o 10-12 respiraciones lentas, inhalando durante 5 segundos y exhalando durante 5 segundos (respiración coherente). Dos minutos bastan para ralentizar la respiración, calmar el sistema nervioso y mejorar la concentración.",
+        "fr-fr": "Un exercice de respiration guidé de 2 minutes permet de se recentrer rapidement : effectuez 8 cycles de 4-4-4-4 (respiration carrée) ou 10 à 12 respirations lentes, avec 5 secondes d'inspiration et 5 secondes d'expiration (respiration cohérente). Deux minutes suffisent pour ralentir la respiration, calmer le système nerveux et améliorer la concentration.",
+        "ja-jp": "ガイド付きの2分間呼吸エクササイズで、すばやく気持ちを切り替えられます。4-4-4-4のサイクルを8回（ボックス呼吸）、または5秒吸って5秒吐くゆっくりとした呼吸を10〜12回（コヒーレント呼吸）行います。2分あれば、呼吸をゆっくりにし、神経系を落ち着かせ、集中力を高めることができます。",
+        "pt-br": "Um exercício respiratório guiado de 2 minutos proporciona uma rápida reinicialização: faça 8 ciclos de 4-4-4-4 (respiração quadrada) ou 10-12 respirações lentas, inspirando por 5 segundos e expirando por 5 segundos (respiração coerente). Dois minutos são suficientes para desacelerar a respiração, acalmar o sistema nervoso e melhorar o foco."
+      }
+    }
+  ],
+  "schemaVersion": 1
+}

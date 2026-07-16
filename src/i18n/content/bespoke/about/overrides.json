@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "overrides": [
+    {
+      "messagePath": "sections.editorial.title",
+      "sourceText": "Editorial approach",
+      "reviewedSourceHash": "ebf8d1090289230451e1604d4ac110bfca5c6b7c08611d075d93c2642bc93971",
+      "reason": "Current source text is absent from the preserved route catalog; translated by the approved content subagent.",
+      "translations": {
+        "de-de": "Redaktioneller Ansatz",
+        "es-es": "Enfoque editorial",
+        "fr-fr": "Approche éditoriale",
+        "ja-jp": "編集方針",
+        "pt-br": "Abordagem editorial"
+      }
+    },
+    {
+      "messagePath": "sections.editorial.linkLabel",
+      "sourceText": "Read our editorial policy →",
+      "reviewedSourceHash": "1a3ae26b53e8e30cf238a24857fedb19635a732c6d553c41209959f659c70642",
+      "reason": "Current source text is absent from the preserved route catalog; translated by the approved content subagent.",
+      "translations": {
+        "de-de": "Unsere redaktionellen Richtlinien lesen →",
+        "es-es": "Lee nuestra política editorial →",
+        "fr-fr": "Lire notre politique éditoriale →",
+        "ja-jp": "編集方針を読む →",
+        "pt-br": "Leia nossa política editorial →"
+      }
+    }
+  ]
+}

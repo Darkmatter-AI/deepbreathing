@@ -16,7 +16,11 @@
     "backgroundColor": "#fdf8f2",
     "ios": {
       "bundleIdentifier": "com.deepbreathing.app",
-      "supportsTablet": true,
+      "usesAppleSignIn": true,
+      "supportsTablet": false,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      },
       "privacyManifests": {
         "NSPrivacyTracking": false,
         "NSPrivacyTrackingDomains": [],
@@ -56,13 +60,7 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false,
-      "permissions": [
-        "android.permission.RECORD_AUDIO",
-        "android.permission.MODIFY_AUDIO_SETTINGS",
-        "android.permission.FOREGROUND_SERVICE",
-        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
-      ]
+      "predictiveBackGestureEnabled": false
     },
     "web": {
       "output": "static",
@@ -89,8 +87,20 @@
           }
         }
       ],
-      "expo-audio",
-      "expo-localization"
+      [
+        "expo-audio",
+        {
+          "microphonePermission": false,
+          "recordAudioAndroid": false,
+          "enableBackgroundPlayback": true,
+          "enableBackgroundRecording": false
+        }
+      ],
+      "expo-localization",
+      "expo-apple-authentication",
+      "expo-asset",
+      "expo-font",
+      "expo-image"
     ],
     "experiments": {
       "typedRoutes": true,

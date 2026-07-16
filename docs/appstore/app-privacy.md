@@ -1,5 +1,10 @@
 # App Store Connect — App Privacy (Nutrition Label)
 
+> ⚠️ **2026-07-11 account update:** v1 now includes optional Apple and Google sign-in plus
+> cross-device practice sync. Before external TestFlight or App Review, update the already
+> published ASC label to include Email Address and Name for App Functionality, and mark synced
+> App Activity as linked to identity for signed-in users. Guest breathing remains available.
+
 Complete this at: App Store Connect > App > App Privacy > Data Types.
 
 The answers below are conservative and precise. When in doubt we declare rather than omit — Apple's review does not penalise disclosure, but misrepresentation can cause rejection or removal.
@@ -44,7 +49,11 @@ The answers below are conservative and precise. When in doubt we declare rather 
 
 | Field | Answer |
 |---|---|
-| Data type | Not collected. We do not ask for a display name or full name. |
+| Data type | **Contact Info > Name** |
+| Collection condition | Only if Apple or Google shares a name during voluntary sign-in. |
+| Linked to identity | **Yes** |
+| Used for tracking | **No** |
+| Purposes | App Functionality (account display and management) |
 
 ---
 
@@ -94,6 +103,7 @@ No data collected by this app is combined with data from other apps or websites 
 |---|---|---|---|---|
 | Other Device IDs (per-install UUID) | Yes | No | No | Analytics |
 | Email Address | Yes (accounts only) | Yes | No | App Functionality |
+| Name | Yes (accounts only, if provider shares it) | Yes | No | App Functionality |
 | App Activity (session events) | Yes | Conditional* | No | Analytics, App Functionality |
 
 *Linked to identity for authenticated users; not linked for guests.
@@ -105,7 +115,7 @@ No data collected by this app is combined with data from other apps or websites 
 The current `/privacy` page at `deepbreathingexercises.com/privacy` covers the web product only and mentions "Vercel Analytics and Vercel Speed Insights." Before App Store submission, add a section to that page (or create a separate mobile addendum) covering:
 
 1. **Mobile app analytics:** Per-install random UUID sent to GA4 via Measurement Protocol. Not the IDFA. Not used for advertising.
-2. **Optional accounts:** Email collected only on voluntary sign-up. Google OAuth as an alternative. Data used for session sync and account management.
+2. **Optional accounts:** Email and provider-shared name collected only on voluntary Apple or Google sign-in. Data used for session sync and account management.
 3. **Audio and haptics:** Used for local playback and device feedback only. No microphone access.
 4. **Data deletion:** How to delete your account (required by App Store Guidelines 5.1.1(v)).
 

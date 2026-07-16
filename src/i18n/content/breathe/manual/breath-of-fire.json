@@ -1,0 +1,171 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.pattern.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "21546603d388b8d12657787696f2bafb5938b0b1b851079302edee36b02315f3",
+      "scope": "chrome",
+      "sourceText": "Try this guided breath of fire: kundalini yoga breathing exercise exercise — it really helps.",
+      "translations": {
+        "de-de": "Probiere diese geführte Übung zur Feueratmung: Kundalini-Yoga-Atemübung aus — sie hilft wirklich.",
+        "es-es": "Prueba este ejercicio guiado de respiración de fuego: ejercicio respiratorio de yoga kundalini — de verdad ayuda.",
+        "fr-fr": "Essayez cet exercice guidé de respiration du feu : exercice respiratoire de yoga kundalini — il aide vraiment.",
+        "ja-jp": "この火の呼吸：クンダリーニヨガ呼吸エクササイズのガイド付きエクササイズを試してみてください。本当に役立ちます。",
+        "pt-br": "Experimente este exercício guiado de respiração do fogo: exercício respiratório de kundalini yoga — ele realmente ajuda."
+      }
+    },
+    {
+      "messageId": "chrome.pattern.og-alt",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "0d4ca67f02761529682423847aedcebdb243af925c1ab6a011d26ea757f145cf",
+      "scope": "chrome",
+      "sourceText": "Breath of Fire: Kundalini Yoga Breathing Exercise – Interactive breathing visualizer",
+      "translations": {
+        "de-de": "Feueratmung: Kundalini-Yoga-Atemübung – Interaktiver Atemvisualisierer",
+        "es-es": "Respiración de fuego: ejercicio respiratorio de yoga kundalini – Visualizador interactivo de respiración",
+        "fr-fr": "Respiration du feu : exercice respiratoire de yoga kundalini – Visualiseur de respiration interactif",
+        "ja-jp": "火の呼吸：クンダリーニヨガ呼吸エクササイズ – インタラクティブな呼吸ビジュアライザー",
+        "pt-br": "Respiração do fogo: exercício respiratório de kundalini yoga – Visualizador interativo de respiração"
+      }
+    },
+    {
+      "messageId": "chrome.pattern.related-physiological-sigh-title",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "b328eabea77dd51370eb8e6ce397ac46cee3df995cd9515e8a1a7e9b35e9bdd7",
+      "scope": "chrome",
+      "sourceText": "Physiological Sigh: Instant Stress Relief",
+      "translations": {
+        "de-de": "Physiologischer Seufzer: Sofortige Stresslinderung",
+        "es-es": "Suspiro fisiológico: alivio inmediato del estrés",
+        "fr-fr": "Soupir physiologique : soulagement immédiat du stress",
+        "ja-jp": "生理的ため息：ストレスをすぐに緩和",
+        "pt-br": "Suspiro fisiológico: alívio imediato do estresse"
+      }
+    },
+    {
+      "messageId": "chrome.pattern.related-pursed-lip-title",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "b44d6b2987526fe1ecca59bd20db1dfa5478a2ed3fd051905793342a73747bd2",
+      "scope": "chrome",
+      "sourceText": "Pursed Lip Breathing Technique",
+      "translations": {
+        "de-de": "Atemtechnik mit Lippenbremse",
+        "pt-br": "Técnica de respiração com lábios semicerrados"
+      }
+    },
+    {
+      "messageId": "chrome.pattern.related-tummo-title",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "e1f67e927d8c0895219627e68aa1c826e51a78c10a2b583971861c3535eb0d28",
+      "scope": "chrome",
+      "sourceText": "Tummo Breathing: How to Do the Tibetan Inner Fire Technique",
+      "translations": {
+        "de-de": "Tummo-Atmung: So führst du die tibetische Technik des inneren Feuers aus",
+        "es-es": "Respiración Tummo: cómo hacer la técnica tibetana del fuego interior",
+        "fr-fr": "Respiration Tummo : comment pratiquer la technique tibétaine du feu intérieur",
+        "ja-jp": "トゥモ呼吸法：チベットの内なる火の技法のやり方",
+        "pt-br": "Respiração Tummo: como fazer a técnica tibetana do fogo interior"
+      }
+    },
+    {
+      "messageId": "chrome.pattern.share-section-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "d158df2914473e6b54be63b67088e3722f2af55b398960aa9ef5185612ef2a3f",
+      "scope": "chrome",
+      "sourceText": "Know someone who could benefit from breath of fire: kundalini yoga breathing exercise? Send them a direct link.",
+      "translations": {
+        "de-de": "Kennst du jemanden, dem die Feueratmung: Kundalini-Yoga-Atemübung helfen könnte? Schicke der Person einen direkten Link.",
+        "es-es": "¿Conoces a alguien a quien podría ayudar la respiración de fuego: ejercicio respiratorio de yoga kundalini? Envíale un enlace directo.",
+        "fr-fr": "Vous connaissez quelqu’un à qui la respiration du feu : exercice respiratoire de yoga kundalini pourrait être utile ? Envoyez-lui un lien direct.",
+        "ja-jp": "火の呼吸：クンダリーニヨガ呼吸エクササイズが役立ちそうな人をご存じですか？直接リンクを送ってください。",
+        "pt-br": "Conhece alguém que poderia se beneficiar da respiração do fogo: exercício respiratório de kundalini yoga? Envie um link direto para essa pessoa."
+      }
+    },
+    {
+      "messageId": "hero.intro",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "8a78779df919e363aed76ac9b4a9e61b51718d35010bcd24529e9c8824cb27ec",
+      "scope": "content",
+      "sourceText": "Breath of Fire (Agni Prasana) is a core Kundalini yoga breathing technique involving rapid, rhythmic breaths with equal emphasis on forceful exhales and passive inhales. Known as Kapalabhati (‘skull-shining breath’) in classical yoga, this technique energizes the body, clears the mind, and strengthens the core. Each breath cycle takes about 1.5 seconds — much faster than typical breathwork.",
+      "translations": {
+        "de-de": "Die Feueratmung (Agni Prasana) ist eine zentrale Atemtechnik des Kundalini-Yoga. Sie umfasst schnelle, rhythmische Atemzüge, bei denen kraftvolles Ausatmen und passives Einatmen gleich stark betont werden. Im klassischen Yoga ist sie als Kapalabhati („schädelleuchtender Atem“) bekannt. Diese Technik aktiviert den Körper, klärt den Geist und stärkt die Körpermitte. Jeder Atemzyklus dauert etwa 1,5 Sekunden — deutlich schneller als bei typischen Atemübungen.",
+        "es-es": "La respiración de fuego (Agni Prasana) es una técnica respiratoria fundamental del yoga kundalini que consiste en respiraciones rápidas y rítmicas, con el mismo énfasis en las exhalaciones enérgicas y las inhalaciones pasivas. Conocida como Kapalabhati («respiración que ilumina el cráneo») en el yoga clásico, esta técnica energiza el cuerpo, despeja la mente y fortalece el core. Cada ciclo respiratorio dura unos 1,5 segundos, mucho menos que en las prácticas respiratorias habituales.",
+        "fr-fr": "La respiration du feu (Agni Prasana) est une technique respiratoire fondamentale du yoga kundalini qui consiste en des respirations rapides et rythmiques, en accordant la même importance aux expirations puissantes et aux inspirations passives. Connue sous le nom de Kapalabhati (« respiration qui fait briller le crâne ») dans le yoga classique, cette technique dynamise le corps, clarifie l’esprit et renforce le centre du corps. Chaque cycle respiratoire dure environ 1,5 seconde — bien plus rapide que les pratiques respiratoires habituelles.",
+        "ja-jp": "火の呼吸（Agni Prasana）はクンダリーニヨガの中核的な呼吸法で、力強く吐くことと受動的に吸うことを同じように重視しながら、素早くリズミカルに呼吸します。古典ヨガではKapalabhati（「頭蓋骨を輝かせる呼吸」）として知られ、体に活力を与え、頭をすっきりさせ、体幹を強化します。1回の呼吸サイクルは約1.5秒で、一般的な呼吸法よりはるかに速いペースです。",
+        "pt-br": "A respiração do fogo (Agni Prasana) é uma técnica respiratória central da kundalini yoga que envolve respirações rápidas e rítmicas, com a mesma ênfase nas expirações fortes e nas inspirações passivas. Conhecida como Kapalabhati (“respiração que ilumina o crânio”) na yoga clássica, essa técnica energiza o corpo, clareia a mente e fortalece o core. Cada ciclo respiratório leva cerca de 1,5 segundo — muito mais rápido do que nas práticas respiratórias típicas."
+      }
+    },
+    {
+      "messageId": "howTo.tools[0]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "10505aeb5ec3458599a65ff69bc4d9817ce855fe8ecc612d131dfaeaaa087487",
+      "scope": "content",
+      "sourceText": "Comfortable seated position",
+      "translations": {
+        "de-de": "Bequeme Sitzposition",
+        "es-es": "Posición sentada cómoda",
+        "fr-fr": "Position assise confortable",
+        "ja-jp": "快適な座位",
+        "pt-br": "Posição sentada confortável"
+      }
+    },
+    {
+      "messageId": "howTo.tools[1]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "d61b42a33cbe33b7beedf6bd940bcba2dec66781ba0cdedd3c57de8d7a6ad5c2",
+      "scope": "content",
+      "sourceText": "On-screen timer (optional)",
+      "translations": {
+        "de-de": "Timer auf dem Bildschirm (optional)",
+        "es-es": "Temporizador en pantalla (opcional)",
+        "fr-fr": "Minuteur à l’écran (facultatif)",
+        "ja-jp": "画面上のタイマー（任意）",
+        "pt-br": "Cronômetro na tela (opcional)"
+      }
+    },
+    {
+      "messageId": "lineage",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "9bc2595001ada4991107aa0f04288019dca4983d721454543ed48bcada5a0d75",
+      "scope": "content",
+      "sourceText": "Documented as Kapalabhati (\"skull-shining breath\") in the 15th-century *Hatha Yoga Pradipika*, where it appears among the six purification practices (*shatkarmas*) of Hatha Yoga. The \"Breath of Fire\" name and faster, sustained variation were popularized in the West through the Kundalini Yoga lineage taught by Yogi Bhajan from the late 1960s onward.",
+      "translations": {
+        "de-de": "Als Kapalabhati („schädelleuchtender Atem“) in der *Hatha Yoga Pradipika* aus dem 15. Jahrhundert dokumentiert, wo es unter den sechs Reinigungspraktiken (*shatkarmas*) des Hatha Yoga aufgeführt wird. Die Bezeichnung „Feueratmung“ und die schnellere, anhaltende Variante wurden im Westen durch die von Yogi Bhajan gelehrte Kundalini-Yoga-Traditionslinie ab den späten 1960er-Jahren bekannt gemacht.",
+        "es-es": "Documentada como Kapalabhati («respiración que ilumina el cráneo») en la *Hatha Yoga Pradipika* del siglo 15, donde figura entre las seis prácticas de purificación (*shatkarmas*) del hatha yoga. El nombre «respiración de fuego» y la variante más rápida y sostenida se popularizaron en Occidente a través del linaje del yoga kundalini enseñado por Yogi Bhajan desde finales de la década de 1960.",
+        "fr-fr": "Documentée sous le nom de Kapalabhati (« respiration qui fait briller le crâne ») dans la *Hatha Yoga Pradipika* du 15e siècle, où elle figure parmi les six pratiques de purification (*shatkarmas*) du hatha yoga. Le nom « respiration du feu » et sa variante plus rapide et soutenue ont été popularisés en Occident par la lignée du yoga kundalini enseignée par Yogi Bhajan à partir de la fin des années 1960.",
+        "ja-jp": "15世紀の*Hatha Yoga Pradipika*にはKapalabhati（「頭蓋骨を輝かせる呼吸」）として記録されており、ハタヨガの6つの浄化法（*shatkarmas*）の一つとして登場します。「火の呼吸」という名称と、より速く持続的に行う変法は、1960年代後半以降、Yogi Bhajanが教えたクンダリーニヨガの系譜を通じて西洋に広まりました。",
+        "pt-br": "Documentada como Kapalabhati (“respiração que ilumina o crânio”) no *Hatha Yoga Pradipika*, do século 15, onde aparece entre as seis práticas de purificação (*shatkarmas*) da hatha yoga. O nome “respiração do fogo” e a variação mais rápida e sustentada foram popularizados no Ocidente por meio da linhagem da kundalini yoga ensinada por Yogi Bhajan a partir do fim da década de 1960."
+      }
+    },
+    {
+      "messageId": "related[3].reason",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "24964a02b59f414321aec19629f030621141515ecea62f8be2434cfb6ab76082",
+      "scope": "content",
+      "sourceText": "After a rapid breath-of-fire session, one physiological sigh quickly calms the nervous system.",
+      "translations": {
+        "de-de": "Nach einer schnellen Feueratmungssitzung beruhigt ein physiologischer Seufzer das Nervensystem schnell.",
+        "es-es": "Después de una sesión rápida de respiración de fuego, un suspiro fisiológico calma rápidamente el sistema nervioso.",
+        "fr-fr": "Après une séance rapide de respiration du feu, un soupir physiologique calme rapidement le système nerveux.",
+        "ja-jp": "速い火の呼吸のセッション後は、生理的ため息を1回行うと神経系がすぐに落ち着きます。",
+        "pt-br": "Depois de uma sessão rápida de respiração do fogo, um suspiro fisiológico acalma rapidamente o sistema nervoso."
+      }
+    },
+    {
+      "messageId": "related[4].reason",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "b09d235d6f8c6870b84febd7467cf3a387310e93582bbc64b83fcd0bbc244ee1",
+      "scope": "content",
+      "sourceText": "For those who find rapid breathing intense, pursed-lip is the slow, calming counterpart.",
+      "translations": {
+        "de-de": "Für Menschen, denen schnelles Atmen zu intensiv ist, bildet die Lippenbremse das langsame, beruhigende Gegenstück.",
+        "es-es": "Para quienes encuentran intensa la respiración rápida, la respiración con labios fruncidos es la alternativa lenta y relajante.",
+        "fr-fr": "Pour les personnes qui trouvent la respiration rapide trop intense, la respiration à lèvres pincées constitue le pendant lent et apaisant.",
+        "ja-jp": "速い呼吸が強すぎると感じる人には、口すぼめ呼吸がゆっくりと落ち着ける対照的な方法です。",
+        "pt-br": "Para quem considera a respiração rápida intensa, a respiração com lábios semicerrados é a contraparte lenta e calmante."
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/breathe/breath-of-fire"
+}

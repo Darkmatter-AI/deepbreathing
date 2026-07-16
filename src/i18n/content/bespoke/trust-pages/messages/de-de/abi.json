@@ -1,0 +1,75 @@
+{
+  "contact": {
+    "afterEmail": ". Sie geht direkt an mich.",
+    "beforeEmail": "Fehler gefunden? Haben Sie einen Funktionswunsch? Senden Sie mir eine Nachricht an",
+    "email": "hi@abiassi.com",
+    "title": "Kontakt"
+  },
+  "elsewhere": {
+    "linkedin": "LinkedIn →",
+    "personalSite": "abiassi.com (meine persönliche Website, getrennt von diesem Projekt) →",
+    "title": "Mich anderswo finden",
+    "twitter": "X / Twitter (@abiassi_) →"
+  },
+  "footer": {
+    "about": "Über uns",
+    "editorialPolicy": "Redaktionsrichtlinie",
+    "embed": "Einbetten",
+    "guides": "Anleitungen",
+    "privacy": "Datenschutz",
+    "techniques": "Techniken"
+  },
+  "hero": {
+    "eyebrow": "Tiefe Atemübungen",
+    "imageAlt": "Abi Abiassi",
+    "intro": "Gründer. Fotograf. Diese Seite habe ich für die Atemtechniken erstellt, die ich täglich nutze.",
+    "title": "Über Abi"
+  },
+  "metadata": {
+    "description": "Abi Abiassi entwickelte Deep Breathing Exercises als kostenlosen Visualizer für Atemtechniken, die er täglich nutzt. Fotograf, Gründer, Atemtrainer.",
+    "socialDescription": "Diese Seite wurde als kostenloser Visualizer für meine täglichen Atemtechniken erstellt. Fotograf, Gründer.",
+    "socialTitle": "Über Abi Abiassi, Gründer von Deep Breathing Exercises",
+    "title": "Über Abi Abiassi, Gründer von Deep Breathing Exercises",
+    "twitterDescription": "Diese Seite wurde als kostenloser Visualizer für meine täglichen Atemtechniken erstellt.",
+    "twitterTitle": "Über Abi Abiassi"
+  },
+  "methodology": {
+    "disclaimer": "Ich bin kein Kliniker. Wenn Sie eine medizinische Erkrankung haben, sprechen Sie bitte mit Ihrem Arzt, bevor Sie eine neue Atemübung beginnen.",
+    "intro": "Jede Technik auf der Website durchläuft in dieser Reihenfolge denselben Rechercheprozess.",
+    "policyLink": "Die vollständige Redaktionsrichtlinie lesen →",
+    "steps": {
+      "coverage": {
+        "body": "Die Atemtechniken, nach denen Menschen tatsächlich suchen und die sie praktizieren: Box-Atmung, 4-7-8 Atemtechnik, kohärentes Atmen, der physiologische Seufzer, Wim Hof Methode, die Pranayama-Varianten, COPD-basierte Techniken wie Lippenbremse und Buteyko. Plus die Anwendungsfälle: Angst, Schlaf, Fokus, Blutdruck.",
+        "title": "Auswahl der Themen."
+      },
+      "evidence": {
+        "body": "Starke Beweise werden direkt genannt. Kleinere Studien erhalten ein „Forschung deutet darauf hin“. Schwache, umstrittene oder nichtige Ergebnisse werden klar benannt. Die Wim Hof Methode ist für die Stimmung nicht besser als langsames Atmen. Die Kehlkopfverengung bei Ujjayi übertrifft einfaches langsames Atmen beim Baroreflex nicht.",
+        "title": "Sprache an Beweise anpassen."
+      },
+      "lineage": {
+        "afterBook": "für Nadi Shodhana und Kapalabhati). Wo es keinen einzelnen Ursprung gibt (Lippenbremse, Bauchatmung), wird dies erwähnt.",
+        "beforeBook": "Wer hat es tatsächlich entwickelt? Mark Divine für Box-Atmung. Andrew Weil für 4-7-8. Wim Hof für WHM. Konstantin Buteyko für seine Methode. Für die älteren Yoga-Praktiken ist der früheste Text, auf den wir verweisen können (das 15. Jahrhundert,",
+        "bookTitle": "Hatha Yoga Pradipika",
+        "title": "Herkunft recherchieren."
+      },
+      "research": {
+        "body": "PubMed, DOI-Register, Cochrane. Systematische Übersichten und RCTs sind Einzelstudien vorzuziehen. Mechanismusstudien, insbesondere Mausstudien, werden als solche gekennzeichnet, damit sie nicht mit klinischen Beweisen verwechselt werden.",
+        "title": "Forschung finden."
+      },
+      "sources": {
+        "body": "Ein bis drei peer-reviewte Links pro Seite, auf die spezifische Behauptung verlinkt. Keine nummerierten Fußnoten. Keine Literaturverzeichnisse am Artikelende. Klicken Sie auf eine Phrase, gelangen Sie zur Studie.",
+        "title": "Quellen dort platzieren, wo sie nützlich sind."
+      },
+      "verification": {
+        "body": "Jede Zitations-URL wird vor der Veröffentlichung abgerufen und bestätigt. Wenn eine Studie hinter einer Paywall liegt, führt der Link zur kostenlosen PubMed Central-Version.",
+        "title": "Alles überprüfen."
+      }
+    },
+    "title": "Methodik"
+  },
+  "story": {
+    "family": "Ich wuchs in einer Familie von Meditationspraktizierenden auf. Erst später im Leben begann ich, mich bewusster mit Atemübungen zu beschäftigen. Als ich das tat, erkannte ich, wie nützlich diese Praktiken im Alltag sind. Sie waren auch für meine fotografische Arbeit von unschätzbarem Wert.",
+    "hope": "Ich hoffe, diese Seite ist für Sie genauso nützlich wie für mich.",
+    "visualizer": "Ich begann, sie für mich selbst zu recherchieren und zu strukturieren, und dachte, ein Visualizer, der einen durch jede dieser Atemtechniken führt, wäre nützlicher, als sich durch endlose YouTube-Videos und unklare Websites zu kämpfen."
+  }
+}

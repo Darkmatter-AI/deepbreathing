@@ -1,0 +1,1716 @@
+{
+  "locales": {
+    "de-de": {
+      "breadcrumb.home": {
+        "reason": "schema-only breadcrumb text is not present in the route catalog",
+        "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+        "status": "repo-reviewed-override"
+      },
+      "breadcrumb.useCases": {
+        "reason": "schema-only breadcrumb text is not present in the route catalog",
+        "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+        "status": "repo-reviewed-override"
+      },
+      "cardAction": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Read guide →",
+        "occurrenceKey": "sel:p.mt-5.text-sm:ctx:p:pos:0",
+        "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.anxiety.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The Navy SEAL breathing method that calms racing thoughts and chest tightness",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:4",
+        "sourceHash": "d330687a8be218a2c9b95a7aa8c0738de1a185d8246d911e29b6b17f7af828fd",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.anxiety.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "How to Stop Anxiety in 60 Seconds with Box Breathing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:4",
+        "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.athletes.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The Stanford-tested breathing technique that brings your heart rate down 2x faster",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:8",
+        "sourceHash": "7eb55981d9d4684c6939997cff69cc01534ce64228f39cd824a67ac9d065336a",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.athletes.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Faster Recovery Between Sets: Physiological Sigh for Athletes",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:8",
+        "sourceHash": "e9278533c33a8ed15a1645faf5ae8ca8ed10ef7f5c99b7f93ad94af83f21b7f5",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.focus.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The 5-minute breathing technique top performers use before deep work",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:6",
+        "sourceHash": "692e046ed0021981102c78ea2a6be01e387d51ddb8eaa4ab74b72afd8e6009f4",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.focus.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "How to Boost Focus by 40% with Coherent Breathing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:6",
+        "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.high-blood-pressure.subtitle": {
+        "reason": "the hub catalog retains an older stronger blood-pressure claim; preserve the current repo-owned wording",
+        "sourceHash": "165a54ca2fc804949b9bb690d450e1d9ee5814928000f79a2fa44cf1777eba7c",
+        "status": "repo-reviewed-override"
+      },
+      "cards.high-blood-pressure.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Lower Your Blood Pressure Naturally with 4-7-8 Breathing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:1",
+        "sourceHash": "518144fefb7098ab2ea457c58ea5d3dacbe4e73a98483ebc692d35d93220c691",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.holiday-stress.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The physiological sigh technique for family gatherings and social overwhelm",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+        "sourceHash": "30aceed66eb2a3518548872f6e36dd182cdc6a073e7f7992fe3d58fabcd013d1",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.holiday-stress.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "How to Handle Holiday Stress in 30 Seconds",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:10",
+        "sourceHash": "6e6700ebb79acdc6c454084c36419a96e782fd0a47695a71703340fbecade8f8",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.huberman.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Every breathing technique Dr. Huberman recommends, matched to your goal",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:12",
+        "sourceHash": "97c6285ccdfaf93f1941342eb8346012f3f076936b76830463a1857c2f31605b",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.huberman.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Huberman Lab Breathing Protocols",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:12",
+        "sourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.kids.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Simple calming techniques children can use anywhere",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:14",
+        "sourceHash": "df9461935001e5bfe58d04f0af81b66184188bf52e6156474e96f846524ed598",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.kids.title": {
+        "reason": "the hub catalog omits deep from the current card title; preserve the repo-owned wording using reviewed route evidence",
+        "sourceHash": "7696120540243ebfa54ae8f92ba7cda3ef477c27e9f3802c0d1b304ccf979643",
+        "status": "repo-reviewed-override"
+      },
+      "cards.lung-capacity.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Strengthen your diaphragm and expand your breathing power",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:17",
+        "sourceHash": "414ead3655d383b6dceb79b01f6d1dd8f925b36dc6dab7ddd040d50e628820e9",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.lung-capacity.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Lung Capacity Exercises",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:17",
+        "sourceHash": "0cf688a2f16e61168d310058a1fb86e7699f9603d9dbed604bf9896c93e87ed9",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.meditation.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The structured breathing pattern that makes meditation accessible for beginners",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:7",
+        "sourceHash": "b8f16b8d48afd36d37a7ba96ee45fa8fc804d43ee01e271eaade88f2068cefab",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.meditation.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Can't Meditate? Start with Coherent Breathing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:7",
+        "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.panic-attacks.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The physiological sigh: Stanford's double-inhale technique for acute panic",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:5",
+        "sourceHash": "f7a8146cc371a7ae9e9cfff7d88497d3061135b183e7730e946bd8e96fee67af",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.panic-attacks.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "How to Stop a Panic Attack in 30 Seconds",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:5",
+        "sourceHash": "60b19b4a8b0ebd154f5fe7b84fcb735a5d21fc617898a56d2250c637f22338e7",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.pranayama.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Ancient breath practices for modern life",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:15",
+        "sourceHash": "2fbd7d92ac0f8363b0ea0339ddb9ba6bfd2d488ce410c010e7cc606c07689230",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.pranayama.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Pranayama Breathing: The Complete Guide to Yogic Breathing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:15",
+        "sourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.pregnancy.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Modified 4-7-8 breathing: safe, gentle, and used in childbirth education",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:9",
+        "sourceHash": "f1c58786e7d70b43b7248fdfc138df06423e78328fec59dfd678775990ab91d0",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.pregnancy.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing for Pregnancy Anxiety and Labor Preparation",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:9",
+        "sourceHash": "eafd26ebcc68883f164ff87119284c19afe73c14fb3cbbb8dfa66c0667019c83",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.public-speaking.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Stop stage fright in 60 seconds with the Navy SEAL method",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0",
+        "sourceHash": "c52f3499b481a65ea4d5212ee68152f690afc311697d25709a704056554142b5",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.public-speaking.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Exercises for Public Speaking",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:0",
+        "sourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.running.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The physiological sigh technique for runners",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:3",
+        "sourceHash": "3b6d4a34bb14b2bb8a9dc6f747c2931e839d74218b1263faa07e4762faaa5d54",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.running.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Recover Faster and Stop Side Stitches",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:3",
+        "sourceHash": "1fb54d2b1733f17a0ac791891630eb446ddae518a008d3d8218698cecb2a383d",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.singing.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Build the diaphragmatic breath support that powers every great voice",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:16",
+        "sourceHash": "451909703afcdb966c7e93ea8013230286d3ba2d994cb068d3492b5d9b11f9a5",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.singing.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Exercises for Singing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:16",
+        "sourceHash": "26ff10a16e9d0c796b468f5eebc19c4d11727a8e06868ddfd0ecb6c3dab87e8e",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.sleep.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Dr. Weil's 'natural tranquilizer' for your nervous system",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+        "sourceHash": "dfc81de4576cadbc0bd3594c7e93f337c2b7de059ebdc4fcc5456cc674b172bc",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.sleep.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "4-7-8 Breathing for Sleep",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:2",
+        "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.stress.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Calm down in 30 seconds with the physiological sigh",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:13",
+        "sourceHash": "788072250c874f36d3179a7b730baf17a89d6c80cd2b1e21842741e297db17d0",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.stress.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Exercises for Stress",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:13",
+        "sourceHash": "ee2c33f0f54000ace4d8bd4d4947d68b6ac5f3e967debecea1ad44deb68819f3",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.travel-anxiety.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Stay calm through flights, delays, and crowds with coherent breathing",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:11",
+        "sourceHash": "d1edecf31d787d38581e6618cec2b0498c410153377e368460ad6b0c90ec1890",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.travel-anxiety.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Exercises for Travel Anxiety",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:11",
+        "sourceHash": "e5c60420f1dc4545b5ab361b44ed15afd6515b07967f0d0410b9639fcf5f4887",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "hero.description": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Pick a situation and follow a step-by-step guide—each one links to a matching breathing visualizer.",
+        "occurrenceKey": "sel:p.max-w-2xl.text-lg:ctx:p:pos:0",
+        "sourceHash": "aee36d6be2696f463206b83f4d8361f16f9bb5e9e7f869fe9ddefd0329756b32",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "hero.eyebrow": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Deep Breathing Exercises",
+        "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+        "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "hero.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Guides by Goal",
+        "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "e78dcab3d35e2162ddede382d4e21aa026ba5baa4491b8daa64fab32891d3757",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "metadata.description": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Science-based breathing guides for common situations—paired with free interactive visualizers. Pick a goal and start practicing.",
+        "occurrenceKey": "head:meta:name:description",
+        "sourceHash": "98dd85a4967c777f98b95443921323b8c44084b58f1ba734970bae295c1f836f",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "metadata.socialDescription": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Sleep, anxiety, panic, focus, athletic performance, public speaking and more—breathing guides paired with free interactive visualizers.",
+        "occurrenceKey": "head:meta:property:og:description",
+        "sourceHash": "c86038a7f699d3af33fa212c4ab6a83fcdecbde192b710858256c507368006dd",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "metadata.socialTitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Guides by Goal",
+        "occurrenceKey": "head:meta:property:og:title",
+        "sourceHash": "792da4ac3c54b89704eec4f1bcdb0afae3bc95d6b113fa8c063494b2e97b0096",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "metadata.title": {
+        "reason": "the route catalog head title is stale and still claims panic and performance; preserve the current repo-owned title",
+        "sourceHash": "6825497cb76018bafb1011b766d2efab28bf4b1dfa99ebbab74a4a1bef850de5",
+        "status": "repo-reviewed-override"
+      },
+      "metadata.twitterDescription": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Sleep, anxiety, panic, focus, athletic performance, public speaking and more—breathing guides paired with free interactive visualizers.",
+        "occurrenceKey": "head:meta:name:twitter:description",
+        "sourceHash": "c86038a7f699d3af33fa212c4ab6a83fcdecbde192b710858256c507368006dd",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "techniques.action": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Browse all breathing techniques →",
+        "occurrenceKey": "sel:a.text-sm.font-semibold:ctx:link:pos:0",
+        "sourceHash": "a53e508919fc0a2b8730aa8cdf09edd626ad42ab7530bcc3989fe9569767c74d",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "techniques.description": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Browse the breathing patterns and jump straight into a guided session.",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:18",
+        "sourceHash": "654212ff7ef43ad79b983a54dfda132a535f4f275d594769a63e5e2a638d8442",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "techniques.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Want the techniques list?",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "9a395696ab2562a5409d87001641ada56ecc2fc82da4fb4bc49757d3b2ba8fc6",
+        "status": "route-catalog-occurrence-exact"
+      }
+    },
+    "es-es": {
+      "breadcrumb.home": {
+        "reason": "schema-only breadcrumb text is not present in the route catalog",
+        "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+        "status": "repo-reviewed-override"
+      },
+      "breadcrumb.useCases": {
+        "reason": "schema-only breadcrumb text is not present in the route catalog",
+        "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+        "status": "repo-reviewed-override"
+      },
+      "cardAction": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Read guide →",
+        "occurrenceKey": "sel:p.mt-5.text-sm:ctx:p:pos:0",
+        "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.anxiety.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The Navy SEAL breathing method that calms racing thoughts and chest tightness",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:4",
+        "sourceHash": "d330687a8be218a2c9b95a7aa8c0738de1a185d8246d911e29b6b17f7af828fd",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.anxiety.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "How to Stop Anxiety in 60 Seconds with Box Breathing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:4",
+        "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.athletes.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The Stanford-tested breathing technique that brings your heart rate down 2x faster",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:8",
+        "sourceHash": "7eb55981d9d4684c6939997cff69cc01534ce64228f39cd824a67ac9d065336a",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.athletes.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Faster Recovery Between Sets: Physiological Sigh for Athletes",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:8",
+        "sourceHash": "e9278533c33a8ed15a1645faf5ae8ca8ed10ef7f5c99b7f93ad94af83f21b7f5",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.focus.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The 5-minute breathing technique top performers use before deep work",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:6",
+        "sourceHash": "692e046ed0021981102c78ea2a6be01e387d51ddb8eaa4ab74b72afd8e6009f4",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.focus.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "How to Boost Focus by 40% with Coherent Breathing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:6",
+        "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.high-blood-pressure.subtitle": {
+        "reason": "the hub catalog retains an older stronger blood-pressure claim; preserve the current repo-owned wording",
+        "sourceHash": "165a54ca2fc804949b9bb690d450e1d9ee5814928000f79a2fa44cf1777eba7c",
+        "status": "repo-reviewed-override"
+      },
+      "cards.high-blood-pressure.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Lower Your Blood Pressure Naturally with 4-7-8 Breathing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:1",
+        "sourceHash": "518144fefb7098ab2ea457c58ea5d3dacbe4e73a98483ebc692d35d93220c691",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.holiday-stress.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The physiological sigh technique for family gatherings and social overwhelm",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+        "sourceHash": "30aceed66eb2a3518548872f6e36dd182cdc6a073e7f7992fe3d58fabcd013d1",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.holiday-stress.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "How to Handle Holiday Stress in 30 Seconds",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:10",
+        "sourceHash": "6e6700ebb79acdc6c454084c36419a96e782fd0a47695a71703340fbecade8f8",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.huberman.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Every breathing technique Dr. Huberman recommends, matched to your goal",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:12",
+        "sourceHash": "97c6285ccdfaf93f1941342eb8346012f3f076936b76830463a1857c2f31605b",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.huberman.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Huberman Lab Breathing Protocols",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:12",
+        "sourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.kids.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Simple calming techniques children can use anywhere",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:14",
+        "sourceHash": "df9461935001e5bfe58d04f0af81b66184188bf52e6156474e96f846524ed598",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.kids.title": {
+        "reason": "the hub catalog omits deep from the current card title; preserve the repo-owned wording using reviewed route evidence",
+        "sourceHash": "7696120540243ebfa54ae8f92ba7cda3ef477c27e9f3802c0d1b304ccf979643",
+        "status": "repo-reviewed-override"
+      },
+      "cards.lung-capacity.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Strengthen your diaphragm and expand your breathing power",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:17",
+        "sourceHash": "414ead3655d383b6dceb79b01f6d1dd8f925b36dc6dab7ddd040d50e628820e9",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.lung-capacity.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Lung Capacity Exercises",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:17",
+        "sourceHash": "0cf688a2f16e61168d310058a1fb86e7699f9603d9dbed604bf9896c93e87ed9",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.meditation.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The structured breathing pattern that makes meditation accessible for beginners",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:7",
+        "sourceHash": "b8f16b8d48afd36d37a7ba96ee45fa8fc804d43ee01e271eaade88f2068cefab",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.meditation.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Can't Meditate? Start with Coherent Breathing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:7",
+        "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.panic-attacks.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The physiological sigh: Stanford's double-inhale technique for acute panic",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:5",
+        "sourceHash": "f7a8146cc371a7ae9e9cfff7d88497d3061135b183e7730e946bd8e96fee67af",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.panic-attacks.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "How to Stop a Panic Attack in 30 Seconds",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:5",
+        "sourceHash": "60b19b4a8b0ebd154f5fe7b84fcb735a5d21fc617898a56d2250c637f22338e7",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.pranayama.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Ancient breath practices for modern life",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:15",
+        "sourceHash": "2fbd7d92ac0f8363b0ea0339ddb9ba6bfd2d488ce410c010e7cc606c07689230",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.pranayama.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Pranayama Breathing: The Complete Guide to Yogic Breathing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:15",
+        "sourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.pregnancy.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Modified 4-7-8 breathing: safe, gentle, and used in childbirth education",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:9",
+        "sourceHash": "f1c58786e7d70b43b7248fdfc138df06423e78328fec59dfd678775990ab91d0",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.pregnancy.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing for Pregnancy Anxiety and Labor Preparation",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:9",
+        "sourceHash": "eafd26ebcc68883f164ff87119284c19afe73c14fb3cbbb8dfa66c0667019c83",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.public-speaking.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Stop stage fright in 60 seconds with the Navy SEAL method",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0",
+        "sourceHash": "c52f3499b481a65ea4d5212ee68152f690afc311697d25709a704056554142b5",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.public-speaking.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Exercises for Public Speaking",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:0",
+        "sourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.running.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The physiological sigh technique for runners",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:3",
+        "sourceHash": "3b6d4a34bb14b2bb8a9dc6f747c2931e839d74218b1263faa07e4762faaa5d54",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.running.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Recover Faster and Stop Side Stitches",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:3",
+        "sourceHash": "1fb54d2b1733f17a0ac791891630eb446ddae518a008d3d8218698cecb2a383d",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.singing.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Build the diaphragmatic breath support that powers every great voice",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:16",
+        "sourceHash": "451909703afcdb966c7e93ea8013230286d3ba2d994cb068d3492b5d9b11f9a5",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.singing.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Exercises for Singing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:16",
+        "sourceHash": "26ff10a16e9d0c796b468f5eebc19c4d11727a8e06868ddfd0ecb6c3dab87e8e",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.sleep.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Dr. Weil's 'natural tranquilizer' for your nervous system",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+        "sourceHash": "dfc81de4576cadbc0bd3594c7e93f337c2b7de059ebdc4fcc5456cc674b172bc",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.sleep.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "4-7-8 Breathing for Sleep",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:2",
+        "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.stress.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Calm down in 30 seconds with the physiological sigh",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:13",
+        "sourceHash": "788072250c874f36d3179a7b730baf17a89d6c80cd2b1e21842741e297db17d0",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.stress.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Exercises for Stress",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:13",
+        "sourceHash": "ee2c33f0f54000ace4d8bd4d4947d68b6ac5f3e967debecea1ad44deb68819f3",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.travel-anxiety.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Stay calm through flights, delays, and crowds with coherent breathing",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:11",
+        "sourceHash": "d1edecf31d787d38581e6618cec2b0498c410153377e368460ad6b0c90ec1890",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.travel-anxiety.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Exercises for Travel Anxiety",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:11",
+        "sourceHash": "e5c60420f1dc4545b5ab361b44ed15afd6515b07967f0d0410b9639fcf5f4887",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "hero.description": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Pick a situation and follow a step-by-step guide—each one links to a matching breathing visualizer.",
+        "occurrenceKey": "sel:p.max-w-2xl.text-lg:ctx:p:pos:0",
+        "sourceHash": "aee36d6be2696f463206b83f4d8361f16f9bb5e9e7f869fe9ddefd0329756b32",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "hero.eyebrow": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Deep Breathing Exercises",
+        "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+        "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "hero.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Guides by Goal",
+        "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "e78dcab3d35e2162ddede382d4e21aa026ba5baa4491b8daa64fab32891d3757",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "metadata.description": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Science-based breathing guides for common situations—paired with free interactive visualizers. Pick a goal and start practicing.",
+        "occurrenceKey": "head:meta:name:description",
+        "sourceHash": "98dd85a4967c777f98b95443921323b8c44084b58f1ba734970bae295c1f836f",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "metadata.socialDescription": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Sleep, anxiety, panic, focus, athletic performance, public speaking and more—breathing guides paired with free interactive visualizers.",
+        "occurrenceKey": "head:meta:property:og:description",
+        "sourceHash": "c86038a7f699d3af33fa212c4ab6a83fcdecbde192b710858256c507368006dd",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "metadata.socialTitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Guides by Goal",
+        "occurrenceKey": "head:meta:property:og:title",
+        "sourceHash": "792da4ac3c54b89704eec4f1bcdb0afae3bc95d6b113fa8c063494b2e97b0096",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "metadata.title": {
+        "reason": "the route catalog head title is stale and still claims panic and performance; preserve the current repo-owned title",
+        "sourceHash": "6825497cb76018bafb1011b766d2efab28bf4b1dfa99ebbab74a4a1bef850de5",
+        "status": "repo-reviewed-override"
+      },
+      "metadata.twitterDescription": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Sleep, anxiety, panic, focus, athletic performance, public speaking and more—breathing guides paired with free interactive visualizers.",
+        "occurrenceKey": "head:meta:name:twitter:description",
+        "sourceHash": "c86038a7f699d3af33fa212c4ab6a83fcdecbde192b710858256c507368006dd",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "techniques.action": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Browse all breathing techniques →",
+        "occurrenceKey": "sel:a.text-sm.font-semibold:ctx:link:pos:0",
+        "sourceHash": "a53e508919fc0a2b8730aa8cdf09edd626ad42ab7530bcc3989fe9569767c74d",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "techniques.description": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Browse the breathing patterns and jump straight into a guided session.",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:18",
+        "sourceHash": "654212ff7ef43ad79b983a54dfda132a535f4f275d594769a63e5e2a638d8442",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "techniques.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Want the techniques list?",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "9a395696ab2562a5409d87001641ada56ecc2fc82da4fb4bc49757d3b2ba8fc6",
+        "status": "route-catalog-occurrence-exact"
+      }
+    },
+    "fr-fr": {
+      "breadcrumb.home": {
+        "reason": "schema-only breadcrumb text is not present in the route catalog",
+        "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+        "status": "repo-reviewed-override"
+      },
+      "breadcrumb.useCases": {
+        "reason": "schema-only breadcrumb text is not present in the route catalog",
+        "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+        "status": "repo-reviewed-override"
+      },
+      "cardAction": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Read guide →",
+        "occurrenceKey": "sel:p.mt-5.text-sm:ctx:p:pos:0",
+        "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.anxiety.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The Navy SEAL breathing method that calms racing thoughts and chest tightness",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:4",
+        "sourceHash": "d330687a8be218a2c9b95a7aa8c0738de1a185d8246d911e29b6b17f7af828fd",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.anxiety.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "How to Stop Anxiety in 60 Seconds with Box Breathing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:4",
+        "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.athletes.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The Stanford-tested breathing technique that brings your heart rate down 2x faster",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:8",
+        "sourceHash": "7eb55981d9d4684c6939997cff69cc01534ce64228f39cd824a67ac9d065336a",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.athletes.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Faster Recovery Between Sets: Physiological Sigh for Athletes",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:8",
+        "sourceHash": "e9278533c33a8ed15a1645faf5ae8ca8ed10ef7f5c99b7f93ad94af83f21b7f5",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.focus.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The 5-minute breathing technique top performers use before deep work",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:6",
+        "sourceHash": "692e046ed0021981102c78ea2a6be01e387d51ddb8eaa4ab74b72afd8e6009f4",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.focus.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "How to Boost Focus by 40% with Coherent Breathing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:6",
+        "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.high-blood-pressure.subtitle": {
+        "reason": "the hub catalog retains an older stronger blood-pressure claim; preserve the current repo-owned wording",
+        "sourceHash": "165a54ca2fc804949b9bb690d450e1d9ee5814928000f79a2fa44cf1777eba7c",
+        "status": "repo-reviewed-override"
+      },
+      "cards.high-blood-pressure.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Lower Your Blood Pressure Naturally with 4-7-8 Breathing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:1",
+        "sourceHash": "518144fefb7098ab2ea457c58ea5d3dacbe4e73a98483ebc692d35d93220c691",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.holiday-stress.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The physiological sigh technique for family gatherings and social overwhelm",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+        "sourceHash": "30aceed66eb2a3518548872f6e36dd182cdc6a073e7f7992fe3d58fabcd013d1",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.holiday-stress.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "How to Handle Holiday Stress in 30 Seconds",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:10",
+        "sourceHash": "6e6700ebb79acdc6c454084c36419a96e782fd0a47695a71703340fbecade8f8",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.huberman.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Every breathing technique Dr. Huberman recommends, matched to your goal",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:12",
+        "sourceHash": "97c6285ccdfaf93f1941342eb8346012f3f076936b76830463a1857c2f31605b",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.huberman.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Huberman Lab Breathing Protocols",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:12",
+        "sourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.kids.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Simple calming techniques children can use anywhere",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:14",
+        "sourceHash": "df9461935001e5bfe58d04f0af81b66184188bf52e6156474e96f846524ed598",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.kids.title": {
+        "reason": "the hub catalog omits deep from the current card title; preserve the repo-owned wording using reviewed route evidence",
+        "sourceHash": "7696120540243ebfa54ae8f92ba7cda3ef477c27e9f3802c0d1b304ccf979643",
+        "status": "repo-reviewed-override"
+      },
+      "cards.lung-capacity.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Strengthen your diaphragm and expand your breathing power",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:17",
+        "sourceHash": "414ead3655d383b6dceb79b01f6d1dd8f925b36dc6dab7ddd040d50e628820e9",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.lung-capacity.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Lung Capacity Exercises",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:17",
+        "sourceHash": "0cf688a2f16e61168d310058a1fb86e7699f9603d9dbed604bf9896c93e87ed9",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.meditation.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The structured breathing pattern that makes meditation accessible for beginners",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:7",
+        "sourceHash": "b8f16b8d48afd36d37a7ba96ee45fa8fc804d43ee01e271eaade88f2068cefab",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.meditation.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Can't Meditate? Start with Coherent Breathing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:7",
+        "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.panic-attacks.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The physiological sigh: Stanford's double-inhale technique for acute panic",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:5",
+        "sourceHash": "f7a8146cc371a7ae9e9cfff7d88497d3061135b183e7730e946bd8e96fee67af",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.panic-attacks.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "How to Stop a Panic Attack in 30 Seconds",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:5",
+        "sourceHash": "60b19b4a8b0ebd154f5fe7b84fcb735a5d21fc617898a56d2250c637f22338e7",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.pranayama.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Ancient breath practices for modern life",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:15",
+        "sourceHash": "2fbd7d92ac0f8363b0ea0339ddb9ba6bfd2d488ce410c010e7cc606c07689230",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.pranayama.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Pranayama Breathing: The Complete Guide to Yogic Breathing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:15",
+        "sourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.pregnancy.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Modified 4-7-8 breathing: safe, gentle, and used in childbirth education",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:9",
+        "sourceHash": "f1c58786e7d70b43b7248fdfc138df06423e78328fec59dfd678775990ab91d0",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.pregnancy.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing for Pregnancy Anxiety and Labor Preparation",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:9",
+        "sourceHash": "eafd26ebcc68883f164ff87119284c19afe73c14fb3cbbb8dfa66c0667019c83",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.public-speaking.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Stop stage fright in 60 seconds with the Navy SEAL method",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0",
+        "sourceHash": "c52f3499b481a65ea4d5212ee68152f690afc311697d25709a704056554142b5",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.public-speaking.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Exercises for Public Speaking",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:0",
+        "sourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.running.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The physiological sigh technique for runners",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:3",
+        "sourceHash": "3b6d4a34bb14b2bb8a9dc6f747c2931e839d74218b1263faa07e4762faaa5d54",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.running.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Recover Faster and Stop Side Stitches",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:3",
+        "sourceHash": "1fb54d2b1733f17a0ac791891630eb446ddae518a008d3d8218698cecb2a383d",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.singing.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Build the diaphragmatic breath support that powers every great voice",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:16",
+        "sourceHash": "451909703afcdb966c7e93ea8013230286d3ba2d994cb068d3492b5d9b11f9a5",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.singing.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Exercises for Singing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:16",
+        "sourceHash": "26ff10a16e9d0c796b468f5eebc19c4d11727a8e06868ddfd0ecb6c3dab87e8e",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.sleep.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Dr. Weil's 'natural tranquilizer' for your nervous system",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+        "sourceHash": "dfc81de4576cadbc0bd3594c7e93f337c2b7de059ebdc4fcc5456cc674b172bc",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.sleep.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "4-7-8 Breathing for Sleep",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:2",
+        "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.stress.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Calm down in 30 seconds with the physiological sigh",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:13",
+        "sourceHash": "788072250c874f36d3179a7b730baf17a89d6c80cd2b1e21842741e297db17d0",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.stress.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Exercises for Stress",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:13",
+        "sourceHash": "ee2c33f0f54000ace4d8bd4d4947d68b6ac5f3e967debecea1ad44deb68819f3",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.travel-anxiety.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Stay calm through flights, delays, and crowds with coherent breathing",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:11",
+        "sourceHash": "d1edecf31d787d38581e6618cec2b0498c410153377e368460ad6b0c90ec1890",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.travel-anxiety.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Exercises for Travel Anxiety",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:11",
+        "sourceHash": "e5c60420f1dc4545b5ab361b44ed15afd6515b07967f0d0410b9639fcf5f4887",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "hero.description": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Pick a situation and follow a step-by-step guide—each one links to a matching breathing visualizer.",
+        "occurrenceKey": "sel:p.max-w-2xl.text-lg:ctx:p:pos:0",
+        "sourceHash": "aee36d6be2696f463206b83f4d8361f16f9bb5e9e7f869fe9ddefd0329756b32",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "hero.eyebrow": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Deep Breathing Exercises",
+        "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+        "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "hero.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Guides by Goal",
+        "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "e78dcab3d35e2162ddede382d4e21aa026ba5baa4491b8daa64fab32891d3757",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "metadata.description": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Science-based breathing guides for common situations—paired with free interactive visualizers. Pick a goal and start practicing.",
+        "occurrenceKey": "head:meta:name:description",
+        "sourceHash": "98dd85a4967c777f98b95443921323b8c44084b58f1ba734970bae295c1f836f",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "metadata.socialDescription": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Sleep, anxiety, panic, focus, athletic performance, public speaking and more—breathing guides paired with free interactive visualizers.",
+        "occurrenceKey": "head:meta:property:og:description",
+        "sourceHash": "c86038a7f699d3af33fa212c4ab6a83fcdecbde192b710858256c507368006dd",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "metadata.socialTitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Guides by Goal",
+        "occurrenceKey": "head:meta:property:og:title",
+        "sourceHash": "792da4ac3c54b89704eec4f1bcdb0afae3bc95d6b113fa8c063494b2e97b0096",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "metadata.title": {
+        "reason": "the route catalog head title is stale and still claims panic and performance; preserve the current repo-owned title",
+        "sourceHash": "6825497cb76018bafb1011b766d2efab28bf4b1dfa99ebbab74a4a1bef850de5",
+        "status": "repo-reviewed-override"
+      },
+      "metadata.twitterDescription": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Sleep, anxiety, panic, focus, athletic performance, public speaking and more—breathing guides paired with free interactive visualizers.",
+        "occurrenceKey": "head:meta:name:twitter:description",
+        "sourceHash": "c86038a7f699d3af33fa212c4ab6a83fcdecbde192b710858256c507368006dd",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "techniques.action": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Browse all breathing techniques →",
+        "occurrenceKey": "sel:a.text-sm.font-semibold:ctx:link:pos:0",
+        "sourceHash": "a53e508919fc0a2b8730aa8cdf09edd626ad42ab7530bcc3989fe9569767c74d",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "techniques.description": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Browse the breathing patterns and jump straight into a guided session.",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:18",
+        "sourceHash": "654212ff7ef43ad79b983a54dfda132a535f4f275d594769a63e5e2a638d8442",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "techniques.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Want the techniques list?",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "9a395696ab2562a5409d87001641ada56ecc2fc82da4fb4bc49757d3b2ba8fc6",
+        "status": "route-catalog-occurrence-exact"
+      }
+    },
+    "ja-jp": {
+      "breadcrumb.home": {
+        "reason": "schema-only breadcrumb text is not present in the route catalog",
+        "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+        "status": "repo-reviewed-override"
+      },
+      "breadcrumb.useCases": {
+        "reason": "schema-only breadcrumb text is not present in the route catalog",
+        "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+        "status": "repo-reviewed-override"
+      },
+      "cardAction": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Read guide →",
+        "occurrenceKey": "sel:p.mt-5.text-sm:ctx:p:pos:0",
+        "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.anxiety.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The Navy SEAL breathing method that calms racing thoughts and chest tightness",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:4",
+        "sourceHash": "d330687a8be218a2c9b95a7aa8c0738de1a185d8246d911e29b6b17f7af828fd",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.anxiety.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "How to Stop Anxiety in 60 Seconds with Box Breathing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:4",
+        "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.athletes.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The Stanford-tested breathing technique that brings your heart rate down 2x faster",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:8",
+        "sourceHash": "7eb55981d9d4684c6939997cff69cc01534ce64228f39cd824a67ac9d065336a",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.athletes.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Faster Recovery Between Sets: Physiological Sigh for Athletes",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:8",
+        "sourceHash": "e9278533c33a8ed15a1645faf5ae8ca8ed10ef7f5c99b7f93ad94af83f21b7f5",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.focus.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The 5-minute breathing technique top performers use before deep work",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:6",
+        "sourceHash": "692e046ed0021981102c78ea2a6be01e387d51ddb8eaa4ab74b72afd8e6009f4",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.focus.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "How to Boost Focus by 40% with Coherent Breathing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:6",
+        "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.high-blood-pressure.subtitle": {
+        "reason": "the hub catalog retains an older stronger blood-pressure claim; preserve the current repo-owned wording",
+        "sourceHash": "165a54ca2fc804949b9bb690d450e1d9ee5814928000f79a2fa44cf1777eba7c",
+        "status": "repo-reviewed-override"
+      },
+      "cards.high-blood-pressure.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Lower Your Blood Pressure Naturally with 4-7-8 Breathing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:1",
+        "sourceHash": "518144fefb7098ab2ea457c58ea5d3dacbe4e73a98483ebc692d35d93220c691",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.holiday-stress.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The physiological sigh technique for family gatherings and social overwhelm",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+        "sourceHash": "30aceed66eb2a3518548872f6e36dd182cdc6a073e7f7992fe3d58fabcd013d1",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.holiday-stress.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "How to Handle Holiday Stress in 30 Seconds",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:10",
+        "sourceHash": "6e6700ebb79acdc6c454084c36419a96e782fd0a47695a71703340fbecade8f8",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.huberman.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Every breathing technique Dr. Huberman recommends, matched to your goal",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:12",
+        "sourceHash": "97c6285ccdfaf93f1941342eb8346012f3f076936b76830463a1857c2f31605b",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.huberman.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Huberman Lab Breathing Protocols",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:12",
+        "sourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.kids.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Simple calming techniques children can use anywhere",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:14",
+        "sourceHash": "df9461935001e5bfe58d04f0af81b66184188bf52e6156474e96f846524ed598",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.kids.title": {
+        "reason": "the hub catalog omits deep from the current card title; preserve the repo-owned wording using reviewed route evidence",
+        "sourceHash": "7696120540243ebfa54ae8f92ba7cda3ef477c27e9f3802c0d1b304ccf979643",
+        "status": "repo-reviewed-override"
+      },
+      "cards.lung-capacity.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Strengthen your diaphragm and expand your breathing power",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:17",
+        "sourceHash": "414ead3655d383b6dceb79b01f6d1dd8f925b36dc6dab7ddd040d50e628820e9",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.lung-capacity.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Lung Capacity Exercises",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:17",
+        "sourceHash": "0cf688a2f16e61168d310058a1fb86e7699f9603d9dbed604bf9896c93e87ed9",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.meditation.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The structured breathing pattern that makes meditation accessible for beginners",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:7",
+        "sourceHash": "b8f16b8d48afd36d37a7ba96ee45fa8fc804d43ee01e271eaade88f2068cefab",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.meditation.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Can't Meditate? Start with Coherent Breathing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:7",
+        "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.panic-attacks.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The physiological sigh: Stanford's double-inhale technique for acute panic",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:5",
+        "sourceHash": "f7a8146cc371a7ae9e9cfff7d88497d3061135b183e7730e946bd8e96fee67af",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.panic-attacks.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "How to Stop a Panic Attack in 30 Seconds",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:5",
+        "sourceHash": "60b19b4a8b0ebd154f5fe7b84fcb735a5d21fc617898a56d2250c637f22338e7",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.pranayama.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Ancient breath practices for modern life",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:15",
+        "sourceHash": "2fbd7d92ac0f8363b0ea0339ddb9ba6bfd2d488ce410c010e7cc606c07689230",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.pranayama.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Pranayama Breathing: The Complete Guide to Yogic Breathing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:15",
+        "sourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.pregnancy.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Modified 4-7-8 breathing: safe, gentle, and used in childbirth education",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:9",
+        "sourceHash": "f1c58786e7d70b43b7248fdfc138df06423e78328fec59dfd678775990ab91d0",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.pregnancy.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing for Pregnancy Anxiety and Labor Preparation",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:9",
+        "sourceHash": "eafd26ebcc68883f164ff87119284c19afe73c14fb3cbbb8dfa66c0667019c83",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.public-speaking.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Stop stage fright in 60 seconds with the Navy SEAL method",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0",
+        "sourceHash": "c52f3499b481a65ea4d5212ee68152f690afc311697d25709a704056554142b5",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.public-speaking.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Exercises for Public Speaking",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:0",
+        "sourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.running.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The physiological sigh technique for runners",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:3",
+        "sourceHash": "3b6d4a34bb14b2bb8a9dc6f747c2931e839d74218b1263faa07e4762faaa5d54",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.running.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Recover Faster and Stop Side Stitches",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:3",
+        "sourceHash": "1fb54d2b1733f17a0ac791891630eb446ddae518a008d3d8218698cecb2a383d",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.singing.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Build the diaphragmatic breath support that powers every great voice",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:16",
+        "sourceHash": "451909703afcdb966c7e93ea8013230286d3ba2d994cb068d3492b5d9b11f9a5",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.singing.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Exercises for Singing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:16",
+        "sourceHash": "26ff10a16e9d0c796b468f5eebc19c4d11727a8e06868ddfd0ecb6c3dab87e8e",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.sleep.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Dr. Weil's 'natural tranquilizer' for your nervous system",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+        "sourceHash": "dfc81de4576cadbc0bd3594c7e93f337c2b7de059ebdc4fcc5456cc674b172bc",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.sleep.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "4-7-8 Breathing for Sleep",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:2",
+        "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.stress.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Calm down in 30 seconds with the physiological sigh",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:13",
+        "sourceHash": "788072250c874f36d3179a7b730baf17a89d6c80cd2b1e21842741e297db17d0",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.stress.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Exercises for Stress",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:13",
+        "sourceHash": "ee2c33f0f54000ace4d8bd4d4947d68b6ac5f3e967debecea1ad44deb68819f3",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.travel-anxiety.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Stay calm through flights, delays, and crowds with coherent breathing",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:11",
+        "sourceHash": "d1edecf31d787d38581e6618cec2b0498c410153377e368460ad6b0c90ec1890",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.travel-anxiety.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Exercises for Travel Anxiety",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:11",
+        "sourceHash": "e5c60420f1dc4545b5ab361b44ed15afd6515b07967f0d0410b9639fcf5f4887",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "hero.description": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Pick a situation and follow a step-by-step guide—each one links to a matching breathing visualizer.",
+        "occurrenceKey": "sel:p.max-w-2xl.text-lg:ctx:p:pos:0",
+        "sourceHash": "aee36d6be2696f463206b83f4d8361f16f9bb5e9e7f869fe9ddefd0329756b32",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "hero.eyebrow": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Deep Breathing Exercises",
+        "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+        "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "hero.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Guides by Goal",
+        "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "e78dcab3d35e2162ddede382d4e21aa026ba5baa4491b8daa64fab32891d3757",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "metadata.description": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Science-based breathing guides for common situations—paired with free interactive visualizers. Pick a goal and start practicing.",
+        "occurrenceKey": "head:meta:name:description",
+        "sourceHash": "98dd85a4967c777f98b95443921323b8c44084b58f1ba734970bae295c1f836f",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "metadata.socialDescription": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Sleep, anxiety, panic, focus, athletic performance, public speaking and more—breathing guides paired with free interactive visualizers.",
+        "occurrenceKey": "head:meta:property:og:description",
+        "sourceHash": "c86038a7f699d3af33fa212c4ab6a83fcdecbde192b710858256c507368006dd",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "metadata.socialTitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Guides by Goal",
+        "occurrenceKey": "head:meta:property:og:title",
+        "sourceHash": "792da4ac3c54b89704eec4f1bcdb0afae3bc95d6b113fa8c063494b2e97b0096",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "metadata.title": {
+        "reason": "the route catalog head title is stale and still claims panic and performance; preserve the current repo-owned title",
+        "sourceHash": "6825497cb76018bafb1011b766d2efab28bf4b1dfa99ebbab74a4a1bef850de5",
+        "status": "repo-reviewed-override"
+      },
+      "metadata.twitterDescription": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Sleep, anxiety, panic, focus, athletic performance, public speaking and more—breathing guides paired with free interactive visualizers.",
+        "occurrenceKey": "head:meta:name:twitter:description",
+        "sourceHash": "c86038a7f699d3af33fa212c4ab6a83fcdecbde192b710858256c507368006dd",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "techniques.action": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Browse all breathing techniques →",
+        "occurrenceKey": "sel:a.text-sm.font-semibold:ctx:link:pos:0",
+        "sourceHash": "a53e508919fc0a2b8730aa8cdf09edd626ad42ab7530bcc3989fe9569767c74d",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "techniques.description": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Browse the breathing patterns and jump straight into a guided session.",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:18",
+        "sourceHash": "654212ff7ef43ad79b983a54dfda132a535f4f275d594769a63e5e2a638d8442",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "techniques.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Want the techniques list?",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "9a395696ab2562a5409d87001641ada56ecc2fc82da4fb4bc49757d3b2ba8fc6",
+        "status": "route-catalog-occurrence-exact"
+      }
+    },
+    "pt-br": {
+      "breadcrumb.home": {
+        "reason": "schema-only breadcrumb text is not present in the route catalog",
+        "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+        "status": "repo-reviewed-override"
+      },
+      "breadcrumb.useCases": {
+        "reason": "schema-only breadcrumb text is not present in the route catalog",
+        "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+        "status": "repo-reviewed-override"
+      },
+      "cardAction": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Read guide →",
+        "occurrenceKey": "sel:p.mt-5.text-sm:ctx:p:pos:0",
+        "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.anxiety.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The Navy SEAL breathing method that calms racing thoughts and chest tightness",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:4",
+        "sourceHash": "d330687a8be218a2c9b95a7aa8c0738de1a185d8246d911e29b6b17f7af828fd",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.anxiety.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "How to Stop Anxiety in 60 Seconds with Box Breathing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:4",
+        "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.athletes.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The Stanford-tested breathing technique that brings your heart rate down 2x faster",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:8",
+        "sourceHash": "7eb55981d9d4684c6939997cff69cc01534ce64228f39cd824a67ac9d065336a",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.athletes.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Faster Recovery Between Sets: Physiological Sigh for Athletes",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:8",
+        "sourceHash": "e9278533c33a8ed15a1645faf5ae8ca8ed10ef7f5c99b7f93ad94af83f21b7f5",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.focus.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The 5-minute breathing technique top performers use before deep work",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:6",
+        "sourceHash": "692e046ed0021981102c78ea2a6be01e387d51ddb8eaa4ab74b72afd8e6009f4",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.focus.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "How to Boost Focus by 40% with Coherent Breathing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:6",
+        "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.high-blood-pressure.subtitle": {
+        "reason": "the hub catalog retains an older stronger blood-pressure claim; preserve the current repo-owned wording",
+        "sourceHash": "165a54ca2fc804949b9bb690d450e1d9ee5814928000f79a2fa44cf1777eba7c",
+        "status": "repo-reviewed-override"
+      },
+      "cards.high-blood-pressure.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Lower Your Blood Pressure Naturally with 4-7-8 Breathing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:1",
+        "sourceHash": "518144fefb7098ab2ea457c58ea5d3dacbe4e73a98483ebc692d35d93220c691",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.holiday-stress.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The physiological sigh technique for family gatherings and social overwhelm",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+        "sourceHash": "30aceed66eb2a3518548872f6e36dd182cdc6a073e7f7992fe3d58fabcd013d1",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.holiday-stress.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "How to Handle Holiday Stress in 30 Seconds",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:10",
+        "sourceHash": "6e6700ebb79acdc6c454084c36419a96e782fd0a47695a71703340fbecade8f8",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.huberman.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Every breathing technique Dr. Huberman recommends, matched to your goal",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:12",
+        "sourceHash": "97c6285ccdfaf93f1941342eb8346012f3f076936b76830463a1857c2f31605b",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.huberman.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Huberman Lab Breathing Protocols",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:12",
+        "sourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.kids.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Simple calming techniques children can use anywhere",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:14",
+        "sourceHash": "df9461935001e5bfe58d04f0af81b66184188bf52e6156474e96f846524ed598",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.kids.title": {
+        "reason": "the hub catalog omits deep from the current card title; preserve the repo-owned wording using reviewed route evidence",
+        "sourceHash": "7696120540243ebfa54ae8f92ba7cda3ef477c27e9f3802c0d1b304ccf979643",
+        "status": "repo-reviewed-override"
+      },
+      "cards.lung-capacity.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Strengthen your diaphragm and expand your breathing power",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:17",
+        "sourceHash": "414ead3655d383b6dceb79b01f6d1dd8f925b36dc6dab7ddd040d50e628820e9",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.lung-capacity.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Lung Capacity Exercises",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:17",
+        "sourceHash": "0cf688a2f16e61168d310058a1fb86e7699f9603d9dbed604bf9896c93e87ed9",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.meditation.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The structured breathing pattern that makes meditation accessible for beginners",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:7",
+        "sourceHash": "b8f16b8d48afd36d37a7ba96ee45fa8fc804d43ee01e271eaade88f2068cefab",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.meditation.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Can't Meditate? Start with Coherent Breathing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:7",
+        "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.panic-attacks.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The physiological sigh: Stanford's double-inhale technique for acute panic",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:5",
+        "sourceHash": "f7a8146cc371a7ae9e9cfff7d88497d3061135b183e7730e946bd8e96fee67af",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.panic-attacks.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "How to Stop a Panic Attack in 30 Seconds",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:5",
+        "sourceHash": "60b19b4a8b0ebd154f5fe7b84fcb735a5d21fc617898a56d2250c637f22338e7",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.pranayama.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Ancient breath practices for modern life",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:15",
+        "sourceHash": "2fbd7d92ac0f8363b0ea0339ddb9ba6bfd2d488ce410c010e7cc606c07689230",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.pranayama.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Pranayama Breathing: The Complete Guide to Yogic Breathing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:15",
+        "sourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.pregnancy.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Modified 4-7-8 breathing: safe, gentle, and used in childbirth education",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:9",
+        "sourceHash": "f1c58786e7d70b43b7248fdfc138df06423e78328fec59dfd678775990ab91d0",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.pregnancy.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing for Pregnancy Anxiety and Labor Preparation",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:9",
+        "sourceHash": "eafd26ebcc68883f164ff87119284c19afe73c14fb3cbbb8dfa66c0667019c83",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.public-speaking.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Stop stage fright in 60 seconds with the Navy SEAL method",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0",
+        "sourceHash": "c52f3499b481a65ea4d5212ee68152f690afc311697d25709a704056554142b5",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.public-speaking.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Exercises for Public Speaking",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:0",
+        "sourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.running.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "The physiological sigh technique for runners",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:3",
+        "sourceHash": "3b6d4a34bb14b2bb8a9dc6f747c2931e839d74218b1263faa07e4762faaa5d54",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.running.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Recover Faster and Stop Side Stitches",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:3",
+        "sourceHash": "1fb54d2b1733f17a0ac791891630eb446ddae518a008d3d8218698cecb2a383d",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.singing.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Build the diaphragmatic breath support that powers every great voice",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:16",
+        "sourceHash": "451909703afcdb966c7e93ea8013230286d3ba2d994cb068d3492b5d9b11f9a5",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.singing.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Exercises for Singing",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:16",
+        "sourceHash": "26ff10a16e9d0c796b468f5eebc19c4d11727a8e06868ddfd0ecb6c3dab87e8e",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.sleep.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Dr. Weil's 'natural tranquilizer' for your nervous system",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+        "sourceHash": "dfc81de4576cadbc0bd3594c7e93f337c2b7de059ebdc4fcc5456cc674b172bc",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.sleep.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "4-7-8 Breathing for Sleep",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:2",
+        "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.stress.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Calm down in 30 seconds with the physiological sigh",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:13",
+        "sourceHash": "788072250c874f36d3179a7b730baf17a89d6c80cd2b1e21842741e297db17d0",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.stress.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Exercises for Stress",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:13",
+        "sourceHash": "ee2c33f0f54000ace4d8bd4d4947d68b6ac5f3e967debecea1ad44deb68819f3",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.travel-anxiety.subtitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Stay calm through flights, delays, and crowds with coherent breathing",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:11",
+        "sourceHash": "d1edecf31d787d38581e6618cec2b0498c410153377e368460ad6b0c90ec1890",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "cards.travel-anxiety.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Exercises for Travel Anxiety",
+        "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:11",
+        "sourceHash": "e5c60420f1dc4545b5ab361b44ed15afd6515b07967f0d0410b9639fcf5f4887",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "hero.description": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Pick a situation and follow a step-by-step guide—each one links to a matching breathing visualizer.",
+        "occurrenceKey": "sel:p.max-w-2xl.text-lg:ctx:p:pos:0",
+        "sourceHash": "aee36d6be2696f463206b83f4d8361f16f9bb5e9e7f869fe9ddefd0329756b32",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "hero.eyebrow": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Deep Breathing Exercises",
+        "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+        "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "hero.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Guides by Goal",
+        "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "e78dcab3d35e2162ddede382d4e21aa026ba5baa4491b8daa64fab32891d3757",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "metadata.description": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Science-based breathing guides for common situations—paired with free interactive visualizers. Pick a goal and start practicing.",
+        "occurrenceKey": "head:meta:name:description",
+        "sourceHash": "98dd85a4967c777f98b95443921323b8c44084b58f1ba734970bae295c1f836f",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "metadata.socialDescription": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Sleep, anxiety, panic, focus, athletic performance, public speaking and more—breathing guides paired with free interactive visualizers.",
+        "occurrenceKey": "head:meta:property:og:description",
+        "sourceHash": "c86038a7f699d3af33fa212c4ab6a83fcdecbde192b710858256c507368006dd",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "metadata.socialTitle": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Breathing Guides by Goal",
+        "occurrenceKey": "head:meta:property:og:title",
+        "sourceHash": "792da4ac3c54b89704eec4f1bcdb0afae3bc95d6b113fa8c063494b2e97b0096",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "metadata.title": {
+        "reason": "the route catalog head title is stale and still claims panic and performance; preserve the current repo-owned title",
+        "sourceHash": "6825497cb76018bafb1011b766d2efab28bf4b1dfa99ebbab74a4a1bef850de5",
+        "status": "repo-reviewed-override"
+      },
+      "metadata.twitterDescription": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Sleep, anxiety, panic, focus, athletic performance, public speaking and more—breathing guides paired with free interactive visualizers.",
+        "occurrenceKey": "head:meta:name:twitter:description",
+        "sourceHash": "c86038a7f699d3af33fa212c4ab6a83fcdecbde192b710858256c507368006dd",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "techniques.action": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Browse all breathing techniques →",
+        "occurrenceKey": "sel:a.text-sm.font-semibold:ctx:link:pos:0",
+        "sourceHash": "a53e508919fc0a2b8730aa8cdf09edd626ad42ab7530bcc3989fe9569767c74d",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "techniques.description": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Browse the breathing patterns and jump straight into a guided session.",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:18",
+        "sourceHash": "654212ff7ef43ad79b983a54dfda132a535f4f275d594769a63e5e2a638d8442",
+        "status": "route-catalog-occurrence-exact"
+      },
+      "techniques.title": {
+        "catalogRoute": "/for",
+        "catalogSourceText": "Want the techniques list?",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "9a395696ab2562a5409d87001641ada56ecc2fc82da4fb4bc49757d3b2ba8fc6",
+        "status": "route-catalog-occurrence-exact"
+      }
+    }
+  },
+  "schemaVersion": 1,
+  "sourceRoute": "/for"
+}

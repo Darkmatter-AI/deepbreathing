@@ -1,0 +1,24 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "Adormeça em 2 minutos com a respiração 4-7-8 (Método do",
+      "locale": "pt-br",
+      "reason": "The approved value is truncated and leaves an open parenthesis.",
+      "replacement": "Respiração 4-7-8: adormeça em 2 minutos (método do Dr. Weil)",
+      "reviewedSourceHash": "f9f0d754036e38e179a34ef5979ac6e3c0ff706605d87a9612e2628a4014d106",
+      "sourcePath": "meta.title",
+      "sourceText": "4-7-8 Breathing: Fall Asleep in 2 Minutes (Dr. Weil's Method)"
+    },
+    {
+      "currentCatalogValue": "Adormeça em 2 minutos com a respiração 4-7-8 (Método do",
+      "locale": "pt-br",
+      "reason": "The approved value is truncated and leaves an open parenthesis.",
+      "replacement": "Respiração 4-7-8: adormeça em 2 minutos (método do Dr. Weil)",
+      "reviewedSourceHash": "f9f0d754036e38e179a34ef5979ac6e3c0ff706605d87a9612e2628a4014d106",
+      "sourcePath": "meta.ogTitle",
+      "sourceText": "4-7-8 Breathing: Fall Asleep in 2 Minutes (Dr. Weil's Method)"
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/breathe/4-7-8"
+}

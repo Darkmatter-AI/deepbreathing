@@ -18,6 +18,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-07-15 | [Native Translation Serving Migration — Preserve Locale URLs, Remove Proxy Rendering](#2026-07-15-native-translation-serving-migration--preserve-locale-urls-remove-proxy-rendering) | ⏳ Waiting (preview gates) |
 | 2026-07-10 | [Canonical Hijack — 2 Locale Pages Merged With Casino Domain (747live.bet)](#2026-07-10-canonical-hijack--2-locale-pages-merged-with-casino-domain-747livebet) | ✅ Success |
 | 2026-07-09 | [Retire Dead Submission Paths — Indexing API, Sitemap Pings; Durable URL Inspection](#2026-07-09-retire-dead-submission-paths) | 📊 Snapshot |
 | 2026-06-15 | [Nofollow + Robots-Disallow ?duration= Timer Deep-Links (Hreflang to Non-Canonical)](#2026-06-15-nofollow--robots-disallow-duration-timer-deep-links-hreflang-to-non-canonical) | 🔄 Implemented |
@@ -75,13 +76,60 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-01-06 | [Navy SEAL Content Expansion](#2026-01-06-navy-seal-content-expansion) | ❌ Failed |
 | 2026-01-06 | [CTR Title Rewrites (Batch 1)](#2026-01-06-ctr-title-rewrites-batch-1) | ✅ Success |
 
-**Roll-up by status (53 entries):** ✅ 3 Success · ❌ 9 Failed · ⚪ 12 Inconclusive · 🟡 1 Mixed · ⏳ 0 Waiting · 🔄 20 Implemented · 📊 8 Snapshot. *(2026-06-21: audio-v2 rebase folded in the 2026-05-18 Indexing-Recovery Checkpoint snapshot. 2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
+**Roll-up by status (54 entries):** ✅ 3 Success · ❌ 9 Failed · ⚪ 12 Inconclusive · 🟡 1 Mixed · ⏳ 1 Waiting · 🔄 20 Implemented · 📊 8 Snapshot. *(2026-07-15: +native translation serving migration planning entry. 2026-06-21: audio-v2 rebase folded in the 2026-05-18 Indexing-Recovery Checkpoint snapshot. 2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
 
 See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of what worked / failed / strategic insights from the first month of experiments.
 
 ---
 
 ## Active Experiments
+
+### 2026-07-15: Native Translation Serving Migration — Preserve Locale URLs, Remove Proxy Rendering
+
+**Status:** Planning and preview implementation only. Nothing in this entry authorizes a production routing, sitemap, canonical, or hreflang change before the migration gates pass.
+
+**Hypothesis:** Serving the existing `/es`, `/pt`, `/fr`, `/de`, and `/ja` pages directly from repository-owned, server-rendered bundles will preserve current search visibility while eliminating proxy-created browser/crawler differences, post-render language swaps, cache warming, and query-dependent canonical behavior.
+
+**Pre-implementation baseline:**
+
+- Public URL contract: English remains unprefixed; the five existing locale prefixes remain unchanged.
+- Current sitemap inventory: 57 English URLs plus 56 URLs for each locale, 337 total.
+- Latest full GSC URL Inspection checkpoint (2026-07-09): 305 of 331 inspected URLs indexed; 26 genuinely unindexed. The difference between the inspection queue and sitemap inventory is existing baseline scope, not a migration result.
+- Existing known defects remain baseline defects: `/stats` is noindex while present in the sitemap; some localized canonical output can echo unknown query parameters; 15 pages were `Crawled - currently not indexed`, concentrated in Japanese and Portuguese; the two off-domain canonical incidents had recovered by 2026-07-10.
+- Exact Bing indexed/performance counts, production locale response timings, and the final pre-cutover GSC comparison window still need fresh capture immediately before cutover. They must not be backfilled after the change.
+
+**Preview gate before any production cutover:**
+
+1. Every currently published locale-route pair returns the intended localized server HTML in a production-equivalent preview with JavaScript disabled and enabled.
+2. The URL matrix has no unexpected status, redirect, canonical, `hreflang`, `lang`, metadata, or indexability differences from the public contract.
+3. No route silently falls back to English, no hydration language swap occurs, and high-stakes safety copy is explicitly reviewed.
+4. A preview crawl reports zero migration-created broken internal links, double-locale paths, non-reciprocal alternates, or sitemap/publication mismatches.
+5. Localized page performance stays within 10% of the corresponding English route for response time and rendered page weight, or any exception is documented and accepted before cutover.
+6. The exact Cloudflare/Vercel reversal procedure is tested and assigned before traffic changes.
+
+**Pre-committed production success criteria:** Measure at 7 and 28 days after cutover, using the final pre-cutover snapshots as the comparison baseline.
+
+- ✅ **Success:** no migration-created canonical or indexing exclusion cluster exceeds 5 URLs; inspected indexed coverage remains at least 98% of the final pre-cutover count; localized organic clicks and impressions remain at least 90% of the matched pre-period after excluding clearly sitewide demand changes; and p75 localized performance does not regress by more than 10%.
+- 🟡 **Mixed:** technical parity holds, but indexed coverage or localized search demand lands between 85% and 98% of baseline without a migration-specific error cluster. Keep native serving only if the evidence points to normal crawl lag or demand variance and recovery is visible by day 28.
+- ❌ **Failed / rollback:** any off-domain or wrong-language canonical caused by the migration; more than 5 published locale URLs serving English, erroring, or dropping from discovery because of native routing; indexed coverage below 85% of baseline; or a localized organic decline greater than 25% with a migration-specific technical cause. Roll back routing first and diagnose from the preserved native preview.
+
+**Measurement plan:** Capture fresh GSC URL Inspection and Search Performance, Bing performance/index coverage, Ahrefs crawl results, production response headers/HTML, analytics by locale path, and performance telemetry immediately before cutover. Re-run the same URL set and windows at day 7 and day 28.
+
+**Preview deployment safety correction, 2026-07-15:** The first configured native Vercel preview ran the existing `postbuild` hook and submitted the unchanged 337-URL production sitemap to IndexNow because the hook treated every Vercel CI build as eligible. The migration did not alter the sitemap or submit preview URLs, so this is operational noise rather than a translation-result change. The hook now fails closed unless both `VERCEL=1` and `VERCEL_ENV=production`. Focused tests pin production, preview, development, generic CI, and local behavior; a direct preview-environment smoke run logs the skip without fetching or submitting anything. No search-performance measurement is attached to this safety fix because it prevents non-production side effects and does not change production URLs, metadata, or submission behavior.
+
+**Phase 4 translation-input checkpoint, 2026-07-15:** Repository-owned, source-bound contracts now fill all 366 raw catalog gaps across the eight remaining static routes that had missing values. This checkpoint changes no runtime route, localized HTML, canonical, hreflang, sitemap, indexability, proxy behavior, or production traffic. It therefore has no search-performance measurement window yet. Any later runtime admission must preserve the existing migration baseline and receive its own preview crawl plus production measure-after date before cutover.
+
+**Phase 4 `R-W01` local runtime checkpoint, 2026-07-15:** The three duration exercises and the separate 4-7-8 insomnia guide now render from repository-owned typed bundles for all five translated locales in `native-preview`. The production-equivalent build generated 293 static pages, and the verifier accepted all 205 locally admitted locale-route artifacts with localized titles, self-canonicals, seven alternates, correct BCP 47 language, and no proxy global or Next error document. Representative hydrated checks passed in Spanish, Portuguese, Japanese, and German, including the client-only breathing experience and localized admitted-link behavior. This is preview-only migration parity: production remains on the proxy, no sitemap or external search surface changed, and there is no search-performance measurement window until hosted admission and the final pre-cutover baseline.
+
+**Phase 4 `R-W02` local runtime checkpoint, 2026-07-15:** Four shared Resonance guides and the separate holiday page now render from repository-owned semantic bundles for all five translated locales in `native-preview`. The production-equivalent build generated 318 static pages, and the verifier accepted all 230 locally admitted locale-route artifacts with localized titles, self-canonicals, seven alternates, correct BCP 47 language, and no proxy global or Next error document. Hydrated checks passed in Spanish, Portuguese, Japanese, French, and German with localized internal links and localized Resonance controls; no runtime exception or Next error UI appeared. The only browser resource failures were the expected local Vercel Analytics and Speed Insights script 404s. This remains preview-only migration parity: production stays on the proxy, no sitemap, indexability, canonical publication, deployment, or external search surface changed, and there is no search-performance measurement window until hosted admission and the final pre-cutover baseline.
+
+**Phase 4 `R-W03` local runtime checkpoint, 2026-07-15:** The box, general, coherent, and visualizer application pages plus the embed generator now render from repository-owned typed bundles for all five translated locales. Explicit localized embed routes preserve all fourteen current players, producing 70 noindex children with locale-preserving full-page links and unchanged query behavior. Independent parity review restored all fourteen visualizer technique cards and all nine generator choices before admission. Representative hydrated checks passed across Spanish, Portuguese, French, Japanese, and German, and a live sweep accepted all 70 embed children. This is migration parity only: no title, claim, keyword, design, indexability, public route, or production routing improvement was introduced.
+
+**Phase 4 `R-W04` and local route-completion checkpoint, 2026-07-15:** About Abi, editorial policy, privacy, support, and the dynamic stats surface now render natively for all five translated locales. The final direct production-equivalent Next build generated 433 pages, the verifier accepted all 275 static localized artifacts, and a live sweep accepted all 95 Phase 4 parent responses plus 70 embed children. Localized stats preserves the existing self-canonical, seven-alternate, `noindex` behavior. The verifier caught a visualizer client-rendering bailout before completion; a narrow Suspense boundary restored the localized server shell and all five rebuilt artifacts passed. Production remains on the proxy, no route is cutover-ready, and this local checkpoint has no search-performance measurement window until hosted admission and a fresh pre-cutover baseline.
+
+**Local validation IndexNow side effect, 2026-07-15:** One earlier local validation sourced the production-equivalent environment and ran the repository build lifecycle. Because those environment values retained both Vercel production flags, the postbuild hook submitted the unchanged 337-URL production sitemap to IndexNow and received status 200. No sitemap, URL, metadata, deployment, routing, or page content changed, so this is operational submission noise rather than a migration result, but it was unintended and cannot be undone. All subsequent builds invoked Next directly and bypassed the postbuild hook; no further sitemap submission occurred. This event does not start a measurement window, but it remains recorded so any crawl timing noise is not misattributed later.
+
+---
 
 ### 2026-07-10: Canonical Hijack — 2 Locale Pages Merged With Casino Domain (747live.bet)
 
@@ -1897,12 +1945,72 @@ The synonyms are not being indexed or ranked. May need more prominent placement 
 
 ---
 
+### 2026-07-16: Native i18n serving migration baseline
+
+**Hypothesis:** Replacing the MassTranslate reverse-proxy serving path with repository-owned native rendering will preserve the existing localized search contract and product behavior while removing translation-cache latency and a recurring source of routing complexity. Translation quality, keywords, claims, design, URLs, and sitemap membership are deliberately unchanged so the serving migration can be measured independently.
+
+**Pre-cutover state:** Production still used the MassTranslate apex ALIAS when this baseline was captured. Native serving launched on 2026-07-16 and the corrected cutover was verified by 13:53 WEST.
+
+**GSC finalized baseline:** 2026-06-17 through 2026-07-14
+
+| Scope | Clicks | Impressions | CTR | Position | Pages with impressions |
+|-------|-------:|------------:|----:|---------:|-----------------------:|
+| Sitewide | 207 | 19,875 | 1.04% | 15.32 | — |
+| All localized | 41 | 1,573 | 2.61% | 15.54 | 158 |
+| Spanish | 14 | 312 | — | — | 29 |
+| Portuguese | 1 | 241 | — | — | 35 |
+| French | 8 | 308 | — | — | 32 |
+| German | 3 | 246 | — | — | 31 |
+| Japanese | 15 | 466 | — | — | 31 |
+
+The preceding localized window recorded 37 clicks and 1,233 impressions. Current localized clicks are 10.8% higher and impressions are 27.6% higher, but the per-locale click counts are small and volatile.
+
+**Indexing baseline:** GSC URL Inspection dry-run reports 312 of 331 inspected URLs indexed and 19 not indexed. The dry-run did not write the queue or submit URLs.
+
+**Bing finalized baseline:** 2026-06-13 through 2026-07-10
+
+| Scope | Clicks | Impressions | CTR | Position | Pages with impressions |
+|-------|-------:|------------:|----:|---------:|-----------------------:|
+| Sitewide | 306 | 14,134 | 2.17% | 5.78 | — |
+| All localized | 29 | 696 | 4.17% | 6.30 | 88 |
+| Spanish | 5 | 131 | — | — | 17 |
+| Portuguese | 5 | 140 | — | — | 19 |
+| French | 5 | 175 | — | — | 17 |
+| German | 2 | 151 | — | — | 15 |
+| Japanese | 12 | 99 | — | — | 20 |
+
+**Technical baseline:** The native production candidate passes a 350-URL Googlebot matrix with no failures. Same-deployment rendered transfer weight is 0% to 6% above English across five representative pairs. Vercel's preceding 24 hours contain two malformed-JSON sync 500s and one OAuth state mismatch, with no localized route-serving cluster. Ahrefs was not authenticated when this baseline was captured; the previously documented health score of 92 from 2026-06-13 is stale.
+
+**Pre-committed guardrails:**
+
+- Immediate and T+24 crawler sweeps must keep 350 of 350 localized responses at HTTP 200 with the expected language, title, self-canonical, seven alternates, indexability, and no proxy global or Next error document.
+- No new locale-related 4xx/5xx cluster, hydration failure, or critical auth/interactive regression may appear after cutover.
+- Representative localized response time must remain within 10% of the same-deployment English guardrail after caches settle.
+- The GSC inspected-indexed total should remain at or above 296, which is 95% of the 312-URL baseline, unless individual losses are confirmed as pre-existing or intentional.
+- At T+28, localized GSC clicks or impressions falling more than 20% against an equivalent matured comparison window triggers route-level investigation before the proxy is decommissioned. Low-volume locale click changes alone are not sufficient evidence.
+- Sitemap membership and public URL paths must remain unchanged during the migration measurement window.
+
+**Launch evidence:** The first DNS attempt correctly rolled back after direct Vercel checks exposed an apex/www redirect loop caused by the apex not being assigned to the project. After adding and verifying the apex behind the restored proxy, the corrected cutover passed 350 of 350 public Googlebot checks with a 204 ms median and 520 ms p95, five-locale hydrated checks, public auth handoff, and the immediate Vercel error guardrail. URLs, sitemap membership, translations, and page behavior remained unchanged.
+
+**Measure after:** 2026-07-17 after 13:53 WEST for T+24 technical parity, 2026-07-23 for T+7 crawl/indexing early warning, and 2026-08-13 for the T+28 search outcome.
+
+**Return-to-log instructions:**
+
+- At T+24, record the technical matrix, errors, latency, auth, language-switch, and interactive-surface result in `docs/native-i18n/PROGRESS.md` and the checkpoint register in `docs/native-i18n/CUTOVER-RUNBOOK.md`. Do not interpret same-day GSC data as a migration result.
+- At T+7, append a dated subsection here with the latest finalized GSC URL Inspection and Search Analytics data, Bing performance, Ahrefs crawl health, and localized funnel read. Compare against the pinned baselines and do not request indexing.
+- At T+28, append the final equivalent-window comparison here, apply the pre-committed verdict without changing its thresholds, and explicitly approve or deny MassTranslate decommissioning. Then close the observation items in `docs/native-i18n/ROADMAP.md` and record the decision in `docs/native-i18n/PROGRESS.md`.
+
+**Status:** Active observation
+
+---
+
 ## Completed Experiments
 
 ## Recent Follow-Up Log
 
 | Experiment | Launched | Follow-up due | Measured | Outcome |
 |------------|----------|---------------|----------|---------|
+| Native Translation Serving Migration | 2026-07-16 | T+24 2026-07-17; T+7 2026-07-23; T+28 2026-08-13 | Pending | Active observation |
 | Checkpoint Follow-Up (Internal Links + Metadata Alignment) | 2026-02-17 | 2026-03-03 | 2026-03-05 | Success ✅ |
 | Huberman / Physiological Sigh Cannibalization Fix | 2026-02-06 | 2026-02-20 | 2026-03-05 | Inconclusive |
 | Disavow Spam Backlinks + Fix /app/ Route | 2026-02-06 | 2026-02-20 | 2026-03-05 | Inconclusive |

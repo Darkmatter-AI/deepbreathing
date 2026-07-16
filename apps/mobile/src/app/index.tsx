@@ -7,8 +7,9 @@
 // components/breathing/*) is retired by this — kept in-repo for reference only.
 
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { AppState, type AppStateStatus, StyleSheet, View, useColorScheme } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { Animated, AppState, type AppStateStatus, Pressable, StyleSheet, Text, View, useColorScheme } from 'react-native';
+import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
+import { Image } from 'expo-image';
 import { Stack } from 'expo-router';
 import * as Localization from 'expo-localization';
 import { setAudioModeAsync } from 'expo-audio';
@@ -23,63 +24,88 @@ import {
   RESONANCE_STORAGE_KEYS,
 } from '../breathing/resonance-mirror';
 import { GA4_FORWARDED_EVENTS, fireGA4Event, warmClientId } from '../breathing/ga4-mp';
+import {
+  useBackgroundAudio,
+  type NativeAudioState,
+} from '../breathing/use-background-audio';
+import { useNativePhaseAudio } from '../breathing/use-native-phase-audio';
 import CompletionSummary, { type CompletionSummaryData } from '../components/CompletionSummary';
 import ModeLibrarySheet from '../components/ModeLibrarySheet';
-import { ModeName } from '../components/breathing-web/constants';
+import { BREATHING_PATTERNS, ModeName } from '../components/breathing-web/constants';
+import type { BreathingMode, SessionEndReason } from '@resonance/domain';
+import { randomUUID } from 'expo-crypto';
+import { useSession } from '../auth/auth-client';
+import {
+  enqueueSessionEvent,
+  flushSessionOutbox,
+  getClientVersion,
+  getOrCreateGuestId,
+  hydrateAccountState,
+  loadAccountPracticeSummary,
+  type AccountPracticeSummary,
+} from '../sync/session-sync-client';
+import { createSessionSegment, localCalendarDate } from '../sync/session-sync';
+import AccountSheet from '../auth/AccountSheet';
+import { accountAvatarUri } from '../auth/account-avatar';
 
 // Scopes the screen-awake lock to an active session so it releases on pause/stop.
 const KEEP_AWAKE_TAG = 'breathing-session';
 
-// Native haptics bridge — the DOM component's navigator.vibrate is a no-op in the
-// iOS WKWebView, so it emits onEvent('haptic', {phase}) and we map each breath
-// phase to a single, calm expo-haptics tap: a light cue to begin the inhale, a
-// gentle marker at the hold, and a slightly firmer "grounding" tap on the exhale.
-// (The earlier mapping used Heavy on the exhale + a setTimeout double-buzz on the
-// holds — both read as alerts, too jarring for a calming app.)
+// Native haptics bridge. The DOM experience emits this event in the same function
+// call that starts each audio cue, and the native host turns it into the shortest,
+// lightest system haptic. A phase change should feel like a quiet metronome tick,
+// not a notification or alert.
 // NOTE: the simulator produces no haptics, so the *feel* is unverified — confirm
 // the intensities on a real device (see docs/expo-attempt-2-progress.md).
-const fireHaptic = (phase: unknown) => {
-  switch (phase) {
-    case 'Inhale':
-    case 'Inhale (Top up)':
-      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
-      break;
-    case 'Hold In':
-    case 'Hold Out':
-      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
-      break;
-    case 'Exhale':
-      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
-      break;
-    default:
-      break;
-  }
+const firePhaseHaptic = () => {
+  Haptics.selectionAsync().catch(() => {});
 };
 
 const toBreathingAppState = (status: AppStateStatus): 'active' | 'background' =>
   status === 'active' ? 'active' : 'background';
 
+function blendHex(base: string, tint: string, amount: number) {
+  const channel = (hex: string, offset: number) => Number.parseInt(hex.slice(offset, offset + 2), 16);
+  const mixed = [1, 3, 5].map((offset) =>
+    Math.round(channel(base, offset) * (1 - amount) + channel(tint, offset) * amount)
+      .toString(16)
+      .padStart(2, '0'),
+  );
+  return `#${mixed.join('')}`;
+}
+
 export default function HomeScreen() {
+  const { data: authSession } = useSession();
   const colorScheme = useColorScheme();
   const theme: 'light' | 'dark' = colorScheme === 'light' ? 'light' : 'dark';
   const locale = Localization.getLocales()[0]?.languageCode ?? 'en';
+  const safeAreaInsets = useSafeAreaInsets();
 
   const [appState, setAppState] = useState<'active' | 'background'>(
     toBreathingAppState(AppState.currentState),
   );
+  const [nativeAudioState, setNativeAudioState] = useState<NativeAudioState>({
+    active: false,
+    muted: false,
+    elapsedSeconds: 0,
+    duration: null,
+    reportedAtMs: Date.now(),
+  });
   const [snapshotReady, setSnapshotReady] = useState(false);
   const [persistedSnapshot, setPersistedSnapshot] = useState<ResonancePersistedSnapshot>({});
-
-  // Track the latest resonance_stats from persist events so completion summary
-  // can show totals without re-reading AsyncStorage (avoids a race with the
-  // mirror write that happens in the same handleEvent cycle).
-  const latestStatsRef = useRef<{ totalMinutes: number | null; sessionsCompleted: number | null }>({
-    totalMinutes: null,
-    sessionsCompleted: null,
-  });
+  const [snapshotVersion, setSnapshotVersion] = useState(0);
+  const guestIdRef = useRef<string | null>(null);
+  const practiceIdRef = useRef<string | null>(null);
+  const committedSecondsRef = useRef(0);
+  const hydratedUserIdRef = useRef<string | null>(null);
+  const nativeAudioMutedRef = useRef(false);
+  const edgeGlowOpacity = useRef(new Animated.Value(0)).current;
+  const playNativePhaseAudio = useNativePhaseAudio();
 
   // Completion summary visibility.
   const [summaryData, setSummaryData] = useState<CompletionSummaryData | null>(null);
+  const [accountOpen, setAccountOpen] = useState(false);
+  const [practiceSummary, setPracticeSummary] = useState<AccountPracticeSummary | null>(null);
 
   // MOB-5: Mode library state.
   // selectedMode starts as undefined so the webview loads from saved settings.
@@ -97,6 +123,16 @@ export default function HomeScreen() {
   // Used to show a checkmark on the current mode in the sheet.
   const [activeModeName, setActiveModeName] = useState<string | null>(null);
 
+  useBackgroundAudio({ appState, audioState: nativeAudioState });
+
+  useEffect(() => {
+    Animated.timing(edgeGlowOpacity, {
+      toValue: isSessionRunning ? 0.18 : 0,
+      duration: 420,
+      useNativeDriver: true,
+    }).start();
+  }, [edgeGlowOpacity, isSessionRunning]);
+
   // Warm the GA4 client_id cache early so the first event doesn't pay the
   // AsyncStorage round-trip latency.
   useEffect(() => {
@@ -106,6 +142,9 @@ export default function HomeScreen() {
   // Load the native mirror before mounting the DOM component so the webview's
   // first commit never sees an empty snapshot and clobber the AsyncStorage mirror.
   useEffect(() => {
+    getOrCreateGuestId().then((guestId) => {
+      guestIdRef.current = guestId;
+    });
     loadPersistedSnapshot().then((snapshot) => {
       setPersistedSnapshot(snapshot);
       setSnapshotReady(true);
@@ -124,6 +163,33 @@ export default function HomeScreen() {
     });
   }, []);
 
+  // A successful account bootstrap refreshes the DOM mirror while idle. This
+  // is what makes web practice appear on phone (and vice versa) without ever
+  // making the breathing runtime depend on the network.
+  useEffect(() => {
+    const userId = authSession?.user.id;
+    if (!userId) {
+      hydratedUserIdRef.current = null;
+      return;
+    }
+    if (hydratedUserIdRef.current === userId) return;
+    hydratedUserIdRef.current = userId;
+
+    hydrateAccountState().then(async (hydrated) => {
+      if (!hydrated || isSessionRunning) return;
+      const snapshot = await loadPersistedSnapshot();
+      setPersistedSnapshot(snapshot);
+      setSnapshotVersion((version) => version + 1);
+      setPracticeSummary(await loadAccountPracticeSummary());
+    });
+  }, [authSession?.user.id, isSessionRunning]);
+
+  useEffect(() => {
+    if (appState === 'active' && authSession?.user.id) {
+      void flushSessionOutbox();
+    }
+  }, [appState, authSession?.user.id]);
+
   // Best-effort audio session setup on mount (so cues play with the ringer off).
   useEffect(() => {
     (async () => {
@@ -132,7 +198,7 @@ export default function HomeScreen() {
           playsInSilentMode: true,
           interruptionMode: 'mixWithOthers',
           allowsRecording: false,
-          shouldPlayInBackground: false,
+          shouldPlayInBackground: true,
           shouldRouteThroughEarpiece: false,
         });
       } catch {
@@ -159,7 +225,10 @@ export default function HomeScreen() {
   // Stable handler identities so the DOM component's effects don't re-fire (and
   // double-tap haptics) on unrelated host re-renders. The DOM bridge requires
   // async callbacks.
-  const handleSessionComplete = useCallback(async (seconds: number) => {
+  const handleSessionComplete = useCallback(async (
+    seconds: number,
+    stats: { totalMinutes: number; sessionsCompleted: number; sessionMode: string },
+  ) => {
     // Success haptic — signals a positive completion.
     // NOTE: haptics cannot be felt on the simulator; this is code-path verified
     // only (__DEV__ log below). Confirm the feel on a real device (DAR-395).
@@ -170,14 +239,29 @@ export default function HomeScreen() {
 
     setSummaryData({
       sessionSeconds: seconds,
-      totalMinutes: latestStatsRef.current.totalMinutes,
-      sessionsCompleted: latestStatsRef.current.sessionsCompleted,
+      sessionMode: stats.sessionMode,
+      totalMinutes: stats.totalMinutes,
+      sessionsCompleted: stats.sessionsCompleted,
     });
   }, []);
 
   const handleEvent = useCallback(async (name: string, params?: Record<string, any>) => {
-    if (name === 'haptic') {
-      fireHaptic(params?.phase);
+    if (
+      authSession?.user.id &&
+      (name === 'breathing_session_start' || name === 'mode_switch')
+    ) {
+      setSummaryData(null);
+    }
+    if (name === 'phase_haptic') {
+      void playNativePhaseAudio(params?.phase, nativeAudioMutedRef.current);
+      edgeGlowOpacity.stopAnimation();
+      edgeGlowOpacity.setValue(0.32);
+      Animated.timing(edgeGlowOpacity, {
+        toValue: 0.18,
+        duration: 380,
+        useNativeDriver: true,
+      }).start();
+      firePhaseHaptic();
       return;
     }
     if (name === 'keep_awake') {
@@ -193,21 +277,61 @@ export default function HomeScreen() {
       }
       return;
     }
-    if (name === 'persist' && typeof params?.key === 'string') {
-      const value = typeof params.value === 'string' ? params.value : null;
-      // Keep a live copy of resonance_stats so the completion handler can show
-      // totals without racing the async mirror write.
-      if (params.key === RESONANCE_STORAGE_KEYS.STATS && value != null) {
-        try {
-          const parsed = JSON.parse(value) as Record<string, unknown>;
-          latestStatsRef.current = {
-            totalMinutes: typeof parsed.totalMinutes === 'number' ? parsed.totalMinutes : null,
-            sessionsCompleted: typeof parsed.sessionsCompleted === 'number' ? parsed.sessionsCompleted : null,
-          };
-        } catch {
-          // Malformed JSON — keep the previous ref value.
+    if (name === 'audio_state') {
+      nativeAudioMutedRef.current = params?.muted === true;
+      setNativeAudioState({
+        active: params?.active === true,
+        muted: params?.muted === true,
+        elapsedSeconds:
+          typeof params?.elapsedSeconds === 'number' ? Math.max(0, params.elapsedSeconds) : 0,
+        duration:
+          typeof params?.duration === 'number' && params.duration > 0 ? params.duration : null,
+        reportedAtMs: Date.now(),
+      });
+      return;
+    }
+    if (name === 'breathing_session_start') {
+      practiceIdRef.current = randomUUID();
+      committedSecondsRef.current = 0;
+    }
+    if (name === 'breathing_session_end') {
+      const elapsedSeconds =
+        typeof params?.seconds_elapsed === 'number'
+          ? Math.max(0, Math.floor(params.seconds_elapsed))
+          : 0;
+      const reason = params?.reason as SessionEndReason | undefined;
+      const mode = params?.mode as BreathingMode | undefined;
+      const guestId = guestIdRef.current ?? (await getOrCreateGuestId());
+      guestIdRef.current = guestId;
+      const practiceId = practiceIdRef.current ?? randomUUID();
+      practiceIdRef.current = practiceId;
+      if (reason && mode) {
+        const endedAt = new Date();
+        const event = createSessionSegment({
+          eventId: randomUUID(),
+          practiceId,
+          guestId,
+          mode,
+          reason,
+          elapsedSeconds,
+          previouslyCommittedSeconds: committedSecondsRef.current,
+          endedAt,
+          localDate: localCalendarDate(endedAt),
+          clientVersion: getClientVersion(),
+        });
+        if (event) {
+          await enqueueSessionEvent(event);
+          committedSecondsRef.current = elapsedSeconds;
+          if (authSession?.user.id) void flushSessionOutbox();
         }
       }
+      if (reason === 'completed' || reason === 'mode_switched') {
+        practiceIdRef.current = null;
+        committedSecondsRef.current = 0;
+      }
+    }
+    if (name === 'persist' && typeof params?.key === 'string') {
+      const value = typeof params.value === 'string' ? params.value : null;
       // MOB-5: Track the active mode from resonance_settings so the sheet can
       // show a checkmark on the currently active mode.
       if (params.key === RESONANCE_STORAGE_KEYS.SETTINGS && value != null) {
@@ -228,15 +352,32 @@ export default function HomeScreen() {
     if (GA4_FORWARDED_EVENTS.has(name)) {
       fireGA4Event(name, params ?? {});
     }
-  }, []);
+  }, [authSession?.user.id, edgeGlowOpacity, playNativePhaseAudio]);
 
   // Match the native safe-area backdrop to the experience's --background token
   // (light: cream 32 72% 97%, dark: warm 20 34% 10%) so there's no black strip.
-  const backdrop = theme === 'light' ? '#fdf8f2' : '#221711';
+  const baseBackdrop = theme === 'light' ? '#fdf8f2' : '#221711';
+  const modeColor = BREATHING_PATTERNS[
+    (activeModeName as ModeName | null) ?? ModeName.Box
+  ]?.color ?? BREATHING_PATTERNS[ModeName.Box].color;
+  const backdrop = isSessionRunning ? blendHex(baseBackdrop, modeColor, 0.16) : baseBackdrop;
 
   const handleDismissSummary = useCallback(() => {
     setSummaryData(null);
   }, []);
+
+  const handleOpenAccount = useCallback(() => {
+    // Opening account controls is a deliberate next action. Registered users'
+    // saved-practice banner should not reappear after the sheet closes.
+    if (authSession?.user.id) setSummaryData(null);
+    setAccountOpen(true);
+    void loadAccountPracticeSummary().then(setPracticeSummary);
+    if (authSession?.user.id) {
+      void hydrateAccountState().then(async (hydrated) => {
+        if (hydrated) setPracticeSummary(await loadAccountPracticeSummary());
+      });
+    }
+  }, [authSession?.user.id]);
 
   // MOB-5: Handle mode selection from the sheet.
   // Sets selectedMode → passed as initialMode prop → webview switches mode.
@@ -255,14 +396,26 @@ export default function HomeScreen() {
   return (
     <View style={[styles.container, { backgroundColor: backdrop }]}>
       <Stack.Screen options={{ headerShown: false }} />
+      <Animated.View
+        pointerEvents="none"
+        style={[StyleSheet.absoluteFill, { backgroundColor: modeColor, opacity: edgeGlowOpacity }]}
+      />
       <SafeAreaView style={styles.safeArea} edges={[]}>
         {snapshotReady ? (
           <BreathingExperienceDom
-            dom={{ style: { flex: 1 } }}
+            key={snapshotVersion}
+            dom={{
+              style: { flex: 1 },
+              contentInsetAdjustmentBehavior: 'never',
+              automaticallyAdjustContentInsets: false,
+              automaticallyAdjustsScrollIndicatorInsets: false,
+              contentInset: { top: 0, right: 0, bottom: 0, left: 0 },
+            }}
             locale={locale}
             forcedTheme={theme}
             appState={appState}
             isNativeApp
+            safeAreaInsets={safeAreaInsets}
             initialPersistedSnapshot={persistedSnapshot}
             // MOB-5: Only pass initialMode when the user explicitly selected one
             // from the sheet. On launch this is undefined so the webview loads
@@ -276,8 +429,39 @@ export default function HomeScreen() {
           <CompletionSummary
             data={summaryData}
             theme={theme}
+            isAuthenticated={Boolean(authSession?.user.id)}
+            safeAreaTop={safeAreaInsets.top}
             onDismiss={handleDismissSummary}
           />
+        )}
+        {!isSessionRunning && (
+          <Pressable
+            onPress={handleOpenAccount}
+            accessibilityRole="button"
+            accessibilityLabel={authSession?.user ? 'Open account' : 'Sign in to sync'}
+            style={[
+              styles.accountButton,
+              {
+                top: safeAreaInsets.top + 14,
+                backgroundColor: theme === 'dark' ? 'rgba(49,31,24,0.78)' : 'rgba(255,249,243,0.82)',
+                borderColor: theme === 'dark' ? '#604536' : '#e3cdbb',
+              },
+            ]}
+          >
+            {authSession?.user ? (
+              <Image
+                source={accountAvatarUri(authSession.user)}
+                style={styles.accountImage}
+                contentFit="cover"
+                alt="Account portrait"
+              />
+            ) : (
+              <View style={styles.guestPortrait}>
+                <View style={[styles.guestHead, { borderColor: theme === 'dark' ? '#f0dac8' : '#5a3826' }]} />
+                <View style={[styles.guestShoulders, { borderColor: theme === 'dark' ? '#f0dac8' : '#5a3826' }]} />
+              </View>
+            )}
+          </Pressable>
         )}
         {/* MOB-5: Mode library pull-up tab — hidden while a session is running. */}
         {!isSessionRunning && (
@@ -287,6 +471,13 @@ export default function HomeScreen() {
             onSelectMode={handleSelectMode}
           />
         )}
+        <AccountSheet
+          open={accountOpen}
+          theme={theme}
+          user={authSession?.user ?? null}
+          practice={practiceSummary}
+          onClose={() => setAccountOpen(false)}
+        />
       </SafeAreaView>
     </View>
   );
@@ -295,4 +486,19 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#000' },
   safeArea: { flex: 1 },
+  accountButton: {
+    position: 'absolute',
+    left: 16,
+    zIndex: 95,
+    width: 42,
+    height: 42,
+    borderRadius: 21,
+    borderWidth: StyleSheet.hairlineWidth,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  accountImage: { width: 38, height: 38, borderRadius: 19 },
+  guestPortrait: { width: 24, height: 24, alignItems: 'center' },
+  guestHead: { width: 8, height: 8, borderRadius: 4, borderWidth: 1.5 },
+  guestShoulders: { width: 17, height: 9, marginTop: 3, borderTopLeftRadius: 9, borderTopRightRadius: 9, borderWidth: 1.5, borderBottomWidth: 0 },
 });

@@ -1,0 +1,86 @@
+{
+  "content": {
+    "attribution": {
+      "longerLineage": "Lorsque la vulgarisation simplifie à l'excès (par exemple, la respiration carrée est plus ancienne que son association avec les Navy SEAL), nous mettons en avant la lignée plus longue plutôt que de répéter la légende.",
+      "originators": "Chaque page de technique nomme l'initiateur, le vulgarisateur ou la tradition d'où provient la technique. Mark Divine pour la respiration carrée. Dr Andrew Weil pour le 4-7-8. Wim Hof pour la méthode Wim Hof. La tradition Hatha Yoga pour Nadi Shodhana et Kapalabhati. Lorsque la technique n'a pas d'initiateur unique (respiration à lèvres pincées, respiration abdominale), nous le précisons.",
+      "title": "Comment nous attribuons les techniques"
+    },
+    "citations": {
+      "intro": "Lorsqu'une affirmation est solide, nous la lions. Nous utilisons un style d'hyperlien léger : une à trois citations évaluées par des pairs par page, ancrées sur la phrase spécifique que la recherche soutient. Nous n'utilisons pas de notes de bas de page numérotées denses ou de listes de références en fin d'article.",
+      "priorities": {
+        "mechanisms": {
+          "body": "qui expliquent pourquoi une technique fonctionne physiologiquement, clairement étiquetées lorsqu'elles proviennent de modèles animaux.",
+          "title": "Études de mécanisme"
+        },
+        "practitioners": {
+          "body": "(les écrits de l'initiateur) pour l'attribution, non comme preuve d'efficacité.",
+          "title": "Sources de praticiens"
+        },
+        "reviews": {
+          "body": "issues de revues indexées dans PubMed (Cochrane, Frontiers, JAMA, Nature, Science).",
+          "title": "Revues systématiques et méta-analyses"
+        },
+        "trials": {
+          "body": "avec une taille d'échantillon adéquate et des contrôles actifs.",
+          "title": "Essais contrôlés randomisés"
+        }
+      },
+      "priorityIntro": "Sources que nous priorisons, par ordre :",
+      "title": "Comment nous citons la recherche"
+    },
+    "claims": {
+      "evidence": "Nous nous efforçons d'adapter la force du langage à la force des preuves. Si une méta-analyse soutient une affirmation, nous le disons. Si seul un petit essai contrôlé randomisé la soutient, nous utilisons des expressions comme « la recherche suggère » ou « peut aider ».",
+      "scrutiny": "Certaines affirmations populaires sur la respiration ne résistent pas à un examen minutieux. Lorsque les preuves sont faibles ou contestées, nous le disons aussi, même si la technique elle-même est largement promue.",
+      "title": "Comment nous formulons les affirmations"
+    },
+    "exclusions": {
+      "credentials": "Nous ne falsifions pas les qualifications ni n'affichons de mention « médicalement examiné par » que nous ne pouvons pas justifier.",
+      "cures": "Nous n'affirmons pas que les techniques de respiration guérissent des maladies ou remplacent un traitement médical.",
+      "diagnoses": "Nous ne fournissons pas de diagnostics médicaux ni de recommandations de traitement.",
+      "overstatement": "Nous n'exagérons pas les résultats de recherche ni ne présentons des études préliminaires comme des faits établis.",
+      "title": "Ce que nous ne faisons pas"
+    },
+    "updates": {
+      "afterEmail": ". Les corrections sont directement transmises à Abi.",
+      "beforeEmail": "Chaque page de technique affiche une date de « Dernière mise à jour ». Nous réexaminons les pages lorsque de nouvelles recherches sont publiées ou lorsque les lecteurs signalent un problème. Si vous repérez une erreur, veuillez envoyer un message à",
+      "email": "hi@abiassi.com",
+      "title": "Mises à jour et corrections"
+    },
+    "whatSiteIs": {
+      "abiName": "Abi Abiassi",
+      "afterAbi": "comme un moyen de pratiquer les techniques qu'il utilise quotidiennement. C'est un produit de bien-être et de respiration, pas un site médical. Nous ne sommes pas des cliniciens. Rien ici n'est un diagnostic ou un plan de traitement.",
+      "beforeAbi": "Exercices de Respiration Profonde est un visualiseur interactif gratuit pour les techniques de respiration, créé par",
+      "title": "Ce qu'est ce site"
+    },
+    "whoBuilt": {
+      "abiName": "Abi Abiassi",
+      "beforeAbi": "Exercices de Respiration Profonde est créé par",
+      "beforeDarkmatter": "avec",
+      "darkmatterName": "Darkmatter AI Labs",
+      "disclaimer": "Nous ne sommes pas des professionnels de la santé. Ce site est à des fins éducatives et doit compléter les conseils de professionnels de la santé, et non les remplacer.",
+      "title": "Qui a créé ce site"
+    }
+  },
+  "footer": {
+    "about": "À propos",
+    "aboutAbi": "À propos d'Abi",
+    "embed": "Intégrer",
+    "guides": "Guides",
+    "privacy": "Politique de confidentialité",
+    "techniques": "Techniques"
+  },
+  "hero": {
+    "eyebrow": "À propos",
+    "intro": "Comment nous recherchons, rédigeons et mettons à jour nos guides d'exercices de respiration.",
+    "lastUpdated": "Dernière mise à jour : 6 mai 2026",
+    "title": "Politique éditoriale"
+  },
+  "metadata": {
+    "description": "Découvrez comment nous créons et mettons à jour nos guides de respiration : recherche, rédaction, attribution, citations et présentation honnête.",
+    "socialDescription": "Comment nous recherchons, rédigeons et mettons à jour nos guides d'exercices de respiration. Attribution, citations validées et cadre honnête.",
+    "socialTitle": "Notre Politique Éditoriale",
+    "title": "Politique éditoriale | Exercices de Respiration Profonde",
+    "twitterDescription": "Comment nous recherchons, rédigeons et mettons à jour nos guides d'exercices de respiration.",
+    "twitterTitle": "Notre Politique Éditoriale"
+  }
+}

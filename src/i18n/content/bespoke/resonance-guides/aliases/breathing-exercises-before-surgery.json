@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "sourceRoute": "/breathing-exercises-before-surgery",
+  "aliases": [
+    {
+      "messageId": "metadata.title",
+      "occurrenceKey": "head:title",
+      "sourceText": "Breathing Exercises Before Surgery: Calm Pre-Op Anxiety (Free Timer)",
+      "catalogSourceText": "Breathing Exercises Before Surgery: Calm Pre-Op Anxiety (Free Timer) | Deep Breathing Exercises",
+      "reviewedSourceHash": "8b9dd9735d71423f69a9dc6327f4af0dd04309b62dcbde2de2bfda498afedef9",
+      "reason": "Audited current English source differs from the captured catalog source."
+    },
+    {
+      "messageId": "related.label",
+      "occurrenceKey": "sel:p.text-sm.uppercase:ctx:p:pos:0",
+      "sourceText": "Related guides",
+      "catalogSourceText": "Related Guides",
+      "reviewedSourceHash": "1e5b36078e376cd4606154d914ba9eba7c5cb5aa0c5d35f1c86e4749c54d3279",
+      "reason": "Audited current English source differs from the captured catalog source."
+    },
+    {
+      "messageId": "related.cards.2.title",
+      "occurrenceKey": "sel:p.text-lg.font-semibold:ctx:product:pos:2",
+      "sourceText": "Quick Calm (30 sec)",
+      "catalogSourceText": "Quick calm (30 sec)",
+      "reviewedSourceHash": "31840d6e7edca4ce713c102b9434cc296385436dd287501e053ab9156c11d0c8",
+      "reason": "Audited current English source differs from the captured catalog source."
+    }
+  ]
+}

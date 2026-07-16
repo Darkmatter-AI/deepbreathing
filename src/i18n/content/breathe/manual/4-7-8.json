@@ -1,0 +1,104 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.pattern.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "f654b3b409f5fe2ce1cced860c70586d5276ad078fb3cae548237f76a6687834",
+      "scope": "chrome",
+      "sourceText": "Try this guided 4-7-8 breathing visualizer exercise — it really helps.",
+      "translations": {
+        "de-de": "Probiere diese geführte 4-7-8-Atemvisualisierungsübung aus – sie hilft wirklich.",
+        "es-es": "Prueba este ejercicio guiado con visualizador de respiración 4-7-8: realmente ayuda.",
+        "fr-fr": "Essayez cet exercice guidé avec visualiseur de respiration 4-7-8 : il aide vraiment.",
+        "ja-jp": "このガイド付き4-7-8呼吸ビジュアライザーのエクササイズを試してみてください。本当に役立ちます。",
+        "pt-br": "Experimente este exercício guiado com visualizador da respiração 4-7-8: ele realmente ajuda."
+      }
+    },
+    {
+      "messageId": "chrome.pattern.og-alt",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "a768467fa0a7d9aad7036658f231eda42f3341ace50c82c9919802cb34f8b304",
+      "scope": "chrome",
+      "sourceText": "4-7-8 Breathing Visualizer – Interactive breathing visualizer",
+      "translations": {
+        "de-de": "4-7-8-Atemvisualisierer – interaktiver Atemvisualisierer",
+        "es-es": "Visualizador de respiración 4-7-8: visualizador de respiración interactivo",
+        "fr-fr": "Visualiseur de respiration 4-7-8 – visualiseur de respiration interactif",
+        "ja-jp": "4-7-8呼吸ビジュアライザー – インタラクティブ呼吸ビジュアライザー",
+        "pt-br": "Visualizador da respiração 4-7-8 – visualizador interativo da respiração"
+      }
+    },
+    {
+      "messageId": "benefits[0].description",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "e65d49ce05c0ca70a7fb8a2e155f44b51c8f816ccda7fcc8b7d9a1824cace4e8",
+      "scope": "content",
+      "sourceText": "Long exhales slow respiration and often [increase parasympathetic markers during practice](https://doi.org/10.14814/phy2.15389).",
+      "translations": {
+        "de-de": "Langes Ausatmen verlangsamt die Atmung und [erhöht während der Übung häufig die parasympathischen Marker](https://doi.org/10.14814/phy2.15389).",
+        "es-es": "Las exhalaciones largas ralentizan la respiración y a menudo [aumentan los marcadores parasimpáticos durante la práctica](https://doi.org/10.14814/phy2.15389).",
+        "fr-fr": "Les longues expirations ralentissent la respiration et [augmentent souvent les marqueurs parasympathiques pendant la pratique](https://doi.org/10.14814/phy2.15389).",
+        "ja-jp": "長い呼気は呼吸をゆっくりにし、練習中に[副交感神経の指標を高めることがよくあります](https://doi.org/10.14814/phy2.15389)。",
+        "pt-br": "Expirações longas desaceleram a respiração e muitas vezes [aumentam os marcadores parassimpáticos durante a prática](https://doi.org/10.14814/phy2.15389)."
+      }
+    },
+    {
+      "messageId": "howTo.tools[0]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "b2e5fd11b1709d50e991e62dfa109ccd40c307322a8901610c7f21bcf8bce2be",
+      "scope": "content",
+      "sourceText": "Chair or bed",
+      "translations": {
+        "de-de": "Stuhl oder Bett",
+        "es-es": "Silla o cama",
+        "fr-fr": "Chaise ou lit",
+        "ja-jp": "椅子またはベッド",
+        "pt-br": "Cadeira ou cama"
+      }
+    },
+    {
+      "messageId": "howTo.tools[1]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "106570559fda8d2f5a104a59b69253581d17ce97fd24963cce8f3fa556223ee2",
+      "scope": "content",
+      "sourceText": "On-screen timer or haptics (optional)",
+      "translations": {
+        "de-de": "Bildschirm-Timer oder Haptik (optional)",
+        "es-es": "Temporizador en pantalla o respuesta háptica (opcional)",
+        "fr-fr": "Minuteur à l’écran ou retours haptiques (facultatif)",
+        "ja-jp": "画面上のタイマーまたは触覚フィードバック（任意）",
+        "pt-br": "Temporizador na tela ou resposta tátil (opcional)"
+      }
+    },
+    {
+      "messageId": "ownedVideo.description",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "b38d271268fd1d5b6fe0dad968a0e3821ed3fba615681b572a52a932dfb28951",
+      "scope": "content",
+      "sourceText": "A 5-minute guided 4-7-8 breathing session using our interactive pacer. Follow the animated cue: inhale for 4 counts, hold for 7, exhale for 8.",
+      "translations": {
+        "de-de": "Eine geführte 5-minütige 4-7-8-Atemsitzung mit unserem interaktiven Taktgeber. Folge dem animierten Hinweis: 4 Zählzeiten einatmen, 7 halten, 8 ausatmen.",
+        "es-es": "Una sesión guiada de respiración 4-7-8 de 5 minutos con nuestro marcador de ritmo interactivo. Sigue la señal animada: inhala durante 4 tiempos, mantén durante 7 y exhala durante 8.",
+        "fr-fr": "Une séance guidée de respiration 4-7-8 de 5 minutes avec notre rythmeur interactif. Suivez le repère animé : inspirez pendant 4 temps, retenez pendant 7 et expirez pendant 8.",
+        "ja-jp": "インタラクティブなペーサーを使った5分間のガイド付き4-7-8呼吸セッションです。アニメーションの合図に従い、4カウントで吸い、7カウント止め、8カウントで吐きます。",
+        "pt-br": "Uma sessão guiada de respiração 4-7-8 de 5 minutos com nosso marcador de ritmo interativo. Siga a indicação animada: inspire por 4 tempos, segure por 7 e expire por 8."
+      }
+    },
+    {
+      "messageId": "ownedVideo.title",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "c08521bcc510e123d9a93299c109d5eb9ec293abe6cf33a13cd69be3b6db5afe",
+      "scope": "content",
+      "sourceText": "4-7-8 Breathing Timer: 5 Minutes (478 Breathing)",
+      "translations": {
+        "de-de": "4-7-8-Atemtimer: 5 Minuten (478-Atmung)",
+        "es-es": "Temporizador de respiración 4-7-8: 5 minutos (respiración 478)",
+        "fr-fr": "Minuteur de respiration 4-7-8 : 5 minutes (respiration 478)",
+        "ja-jp": "4-7-8呼吸タイマー：5分間（478呼吸法）",
+        "pt-br": "Temporizador de respiração 4-7-8: 5 minutos (respiração 478)"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/breathe/4-7-8"
+}

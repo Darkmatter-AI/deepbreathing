@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "sourceRoute": "/breathing-exercises-for-labor",
+  "aliases": [
+    {
+      "messageId": "metadata.title",
+      "occurrenceKey": "head:title",
+      "sourceText": "Breathing Exercises for Labor: Manage Contractions Naturally (Free Timer)",
+      "catalogSourceText": "Breathing Exercises for Labor: Manage Contractions Naturally (Free Timer) | Deep Breathing Exercises",
+      "reviewedSourceHash": "685e9abcf08b918d2de3d066737b7265dc96f07510208050fc33b9e574c8be5c",
+      "reason": "Audited current English source differs from the captured catalog source."
+    },
+    {
+      "messageId": "related.label",
+      "occurrenceKey": "sel:p.text-sm.uppercase:ctx:p:pos:0",
+      "sourceText": "Related guides",
+      "catalogSourceText": "Related Guides",
+      "reviewedSourceHash": "1e5b36078e376cd4606154d914ba9eba7c5cb5aa0c5d35f1c86e4749c54d3279",
+      "reason": "Audited current English source differs from the captured catalog source."
+    }
+  ]
+}

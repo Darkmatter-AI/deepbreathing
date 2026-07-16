@@ -1,0 +1,493 @@
+{
+  "routes": {
+    "/box-breathing-before-presentation": {
+      "locales": {
+        "de-de": {
+          "closeAria": {
+            "placementId": "7f3043c5-a614-461f-b3b8-2329ec9de9a8",
+            "reviewedSourceHash": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed"
+          },
+          "continueWithGoogle": {
+            "placementId": "3706076c-7365-4468-a265-dfe0cc9765b6",
+            "reviewedSourceHash": "cce937e891444a7417c696cdd80c0eed11deb383f3c42bdb8b591d5dfcaa398e"
+          },
+          "emailAddressAria": {
+            "placementId": "5be0ca2b-372f-46a0-8124-9841dedf4080",
+            "reviewedSourceHash": "f2488fd4ef4adbc6ac61300083f2c33980e48bb4bbf3c540ad760d61fc36f420"
+          },
+          "emailPlaceholder": {
+            "placementId": "b321e665-5bba-4a9f-80b3-0a8bcfd3744c",
+            "reviewedSourceHash": "2837f6fa1c84ecc9f4d745b5df455c27db84dba89d167eb2863ae293994736b5"
+          },
+          "justNow": {
+            "placementId": "c0339002-dd48-4571-908d-c9c2d8d303aa",
+            "reviewedSourceHash": "7ddb44d8a533a7535d85cedddf35d7f3414632ad4e10a0d7ca697723e1d97993"
+          },
+          "modeName": {
+            "placementId": "cd6c1abf-30b9-45ab-8d52-6ebace1826df",
+            "reviewedSourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095"
+          },
+          "oneTapNoPassword": {
+            "placementId": "82170f15-f88d-452b-974c-8eb2bdea24e4",
+            "reviewedSourceHash": "2d05edde2700731b408e66b88b0625ab0122322c3850062c075f16eb43b7d349"
+          },
+          "saveSessionAria": {
+            "placementId": "7b7c96b1-3acf-4a72-ac43-92604c90df3a",
+            "reviewedSourceHash": "4f338bb6f491836f59e6de2f3c49e8a402e9f646f223a280cb7627d8a5d9229d"
+          },
+          "saveWithEmail": {
+            "placementId": "7a39bd57-a463-477c-afc6-a812138c6949",
+            "reviewedSourceHash": "392502efc3a96ad2eeca901c39fcd6a82f02115ae5fe1018f0bb198d27a6438e"
+          },
+          "sendLink": {
+            "placementId": "e76305a2-d202-4cd3-b7df-6bef50334d19",
+            "reviewedSourceHash": "b386634c8b4382c837083126db57b819a9ec415563057903646df6121dd026d1"
+          },
+          "sessionComplete": {
+            "placementId": "3b2d3133-63df-4dc5-9e68-4b9f8927f97c",
+            "reviewedSourceHash": "91aa92ee57681bee4dc26ff99de5f27d024ecca4f583b99b46cc879b0f54cf8c"
+          },
+          "title": {
+            "placementId": "f931b5cf-b5cd-4afe-9fe2-f7c9b7fe60a1",
+            "reviewedSourceHash": "dc6151531a9458f0fd1cd4f986e4205ca241f154d7069b4824d2feedbfb812c4"
+          }
+        },
+        "es-es": {
+          "closeAria": {
+            "placementId": "7f3043c5-a614-461f-b3b8-2329ec9de9a8",
+            "reviewedSourceHash": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed"
+          },
+          "continueWithGoogle": {
+            "placementId": "3706076c-7365-4468-a265-dfe0cc9765b6",
+            "reviewedSourceHash": "cce937e891444a7417c696cdd80c0eed11deb383f3c42bdb8b591d5dfcaa398e"
+          },
+          "emailAddressAria": {
+            "placementId": "5be0ca2b-372f-46a0-8124-9841dedf4080",
+            "reviewedSourceHash": "f2488fd4ef4adbc6ac61300083f2c33980e48bb4bbf3c540ad760d61fc36f420"
+          },
+          "emailPlaceholder": {
+            "placementId": "b321e665-5bba-4a9f-80b3-0a8bcfd3744c",
+            "reviewedSourceHash": "2837f6fa1c84ecc9f4d745b5df455c27db84dba89d167eb2863ae293994736b5"
+          },
+          "justNow": {
+            "placementId": "c0339002-dd48-4571-908d-c9c2d8d303aa",
+            "reviewedSourceHash": "7ddb44d8a533a7535d85cedddf35d7f3414632ad4e10a0d7ca697723e1d97993"
+          },
+          "modeName": {
+            "placementId": "cd6c1abf-30b9-45ab-8d52-6ebace1826df",
+            "reviewedSourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095"
+          },
+          "oneTapNoPassword": {
+            "placementId": "82170f15-f88d-452b-974c-8eb2bdea24e4",
+            "reviewedSourceHash": "2d05edde2700731b408e66b88b0625ab0122322c3850062c075f16eb43b7d349"
+          },
+          "saveSessionAria": {
+            "placementId": "7b7c96b1-3acf-4a72-ac43-92604c90df3a",
+            "reviewedSourceHash": "4f338bb6f491836f59e6de2f3c49e8a402e9f646f223a280cb7627d8a5d9229d"
+          },
+          "saveWithEmail": {
+            "placementId": "7a39bd57-a463-477c-afc6-a812138c6949",
+            "reviewedSourceHash": "392502efc3a96ad2eeca901c39fcd6a82f02115ae5fe1018f0bb198d27a6438e"
+          },
+          "sendLink": {
+            "placementId": "e76305a2-d202-4cd3-b7df-6bef50334d19",
+            "reviewedSourceHash": "b386634c8b4382c837083126db57b819a9ec415563057903646df6121dd026d1"
+          },
+          "sessionComplete": {
+            "placementId": "3b2d3133-63df-4dc5-9e68-4b9f8927f97c",
+            "reviewedSourceHash": "91aa92ee57681bee4dc26ff99de5f27d024ecca4f583b99b46cc879b0f54cf8c"
+          },
+          "title": {
+            "placementId": "f931b5cf-b5cd-4afe-9fe2-f7c9b7fe60a1",
+            "reviewedSourceHash": "dc6151531a9458f0fd1cd4f986e4205ca241f154d7069b4824d2feedbfb812c4"
+          }
+        },
+        "fr-fr": {
+          "closeAria": {
+            "placementId": "7f3043c5-a614-461f-b3b8-2329ec9de9a8",
+            "reviewedSourceHash": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed"
+          },
+          "continueWithGoogle": {
+            "placementId": "3706076c-7365-4468-a265-dfe0cc9765b6",
+            "reviewedSourceHash": "cce937e891444a7417c696cdd80c0eed11deb383f3c42bdb8b591d5dfcaa398e"
+          },
+          "emailAddressAria": {
+            "placementId": "5be0ca2b-372f-46a0-8124-9841dedf4080",
+            "reviewedSourceHash": "f2488fd4ef4adbc6ac61300083f2c33980e48bb4bbf3c540ad760d61fc36f420"
+          },
+          "emailPlaceholder": {
+            "placementId": "b321e665-5bba-4a9f-80b3-0a8bcfd3744c",
+            "reviewedSourceHash": "2837f6fa1c84ecc9f4d745b5df455c27db84dba89d167eb2863ae293994736b5"
+          },
+          "justNow": {
+            "placementId": "c0339002-dd48-4571-908d-c9c2d8d303aa",
+            "reviewedSourceHash": "7ddb44d8a533a7535d85cedddf35d7f3414632ad4e10a0d7ca697723e1d97993"
+          },
+          "modeName": {
+            "placementId": "cd6c1abf-30b9-45ab-8d52-6ebace1826df",
+            "reviewedSourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095"
+          },
+          "oneTapNoPassword": {
+            "placementId": "82170f15-f88d-452b-974c-8eb2bdea24e4",
+            "reviewedSourceHash": "2d05edde2700731b408e66b88b0625ab0122322c3850062c075f16eb43b7d349"
+          },
+          "saveSessionAria": {
+            "placementId": "7b7c96b1-3acf-4a72-ac43-92604c90df3a",
+            "reviewedSourceHash": "4f338bb6f491836f59e6de2f3c49e8a402e9f646f223a280cb7627d8a5d9229d"
+          },
+          "saveWithEmail": {
+            "placementId": "7a39bd57-a463-477c-afc6-a812138c6949",
+            "reviewedSourceHash": "392502efc3a96ad2eeca901c39fcd6a82f02115ae5fe1018f0bb198d27a6438e"
+          },
+          "sendLink": {
+            "placementId": "e76305a2-d202-4cd3-b7df-6bef50334d19",
+            "reviewedSourceHash": "b386634c8b4382c837083126db57b819a9ec415563057903646df6121dd026d1"
+          },
+          "sessionComplete": {
+            "placementId": "3b2d3133-63df-4dc5-9e68-4b9f8927f97c",
+            "reviewedSourceHash": "91aa92ee57681bee4dc26ff99de5f27d024ecca4f583b99b46cc879b0f54cf8c"
+          },
+          "title": {
+            "placementId": "f931b5cf-b5cd-4afe-9fe2-f7c9b7fe60a1",
+            "reviewedSourceHash": "dc6151531a9458f0fd1cd4f986e4205ca241f154d7069b4824d2feedbfb812c4"
+          }
+        },
+        "ja-jp": {
+          "closeAria": {
+            "placementId": "7f3043c5-a614-461f-b3b8-2329ec9de9a8",
+            "reviewedSourceHash": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed"
+          },
+          "continueWithGoogle": {
+            "placementId": "3706076c-7365-4468-a265-dfe0cc9765b6",
+            "reviewedSourceHash": "cce937e891444a7417c696cdd80c0eed11deb383f3c42bdb8b591d5dfcaa398e"
+          },
+          "emailAddressAria": {
+            "placementId": "5be0ca2b-372f-46a0-8124-9841dedf4080",
+            "reviewedSourceHash": "f2488fd4ef4adbc6ac61300083f2c33980e48bb4bbf3c540ad760d61fc36f420"
+          },
+          "emailPlaceholder": {
+            "placementId": "b321e665-5bba-4a9f-80b3-0a8bcfd3744c",
+            "reviewedSourceHash": "2837f6fa1c84ecc9f4d745b5df455c27db84dba89d167eb2863ae293994736b5"
+          },
+          "justNow": {
+            "placementId": "c0339002-dd48-4571-908d-c9c2d8d303aa",
+            "reviewedSourceHash": "7ddb44d8a533a7535d85cedddf35d7f3414632ad4e10a0d7ca697723e1d97993"
+          },
+          "modeName": {
+            "placementId": "cd6c1abf-30b9-45ab-8d52-6ebace1826df",
+            "reviewedSourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095"
+          },
+          "oneTapNoPassword": {
+            "placementId": "82170f15-f88d-452b-974c-8eb2bdea24e4",
+            "reviewedSourceHash": "2d05edde2700731b408e66b88b0625ab0122322c3850062c075f16eb43b7d349"
+          },
+          "saveSessionAria": {
+            "placementId": "7b7c96b1-3acf-4a72-ac43-92604c90df3a",
+            "reviewedSourceHash": "4f338bb6f491836f59e6de2f3c49e8a402e9f646f223a280cb7627d8a5d9229d"
+          },
+          "saveWithEmail": {
+            "placementId": "7a39bd57-a463-477c-afc6-a812138c6949",
+            "reviewedSourceHash": "392502efc3a96ad2eeca901c39fcd6a82f02115ae5fe1018f0bb198d27a6438e"
+          },
+          "sendLink": {
+            "placementId": "e76305a2-d202-4cd3-b7df-6bef50334d19",
+            "reviewedSourceHash": "b386634c8b4382c837083126db57b819a9ec415563057903646df6121dd026d1"
+          },
+          "sessionComplete": {
+            "placementId": "3b2d3133-63df-4dc5-9e68-4b9f8927f97c",
+            "reviewedSourceHash": "91aa92ee57681bee4dc26ff99de5f27d024ecca4f583b99b46cc879b0f54cf8c"
+          },
+          "title": {
+            "placementId": "f931b5cf-b5cd-4afe-9fe2-f7c9b7fe60a1",
+            "reviewedSourceHash": "dc6151531a9458f0fd1cd4f986e4205ca241f154d7069b4824d2feedbfb812c4"
+          }
+        },
+        "pt-br": {
+          "closeAria": {
+            "placementId": "7f3043c5-a614-461f-b3b8-2329ec9de9a8",
+            "reviewedSourceHash": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed"
+          },
+          "continueWithGoogle": {
+            "placementId": "3706076c-7365-4468-a265-dfe0cc9765b6",
+            "reviewedSourceHash": "cce937e891444a7417c696cdd80c0eed11deb383f3c42bdb8b591d5dfcaa398e"
+          },
+          "emailAddressAria": {
+            "placementId": "5be0ca2b-372f-46a0-8124-9841dedf4080",
+            "reviewedSourceHash": "f2488fd4ef4adbc6ac61300083f2c33980e48bb4bbf3c540ad760d61fc36f420"
+          },
+          "emailPlaceholder": {
+            "placementId": "b321e665-5bba-4a9f-80b3-0a8bcfd3744c",
+            "reviewedSourceHash": "2837f6fa1c84ecc9f4d745b5df455c27db84dba89d167eb2863ae293994736b5"
+          },
+          "justNow": {
+            "placementId": "c0339002-dd48-4571-908d-c9c2d8d303aa",
+            "reviewedSourceHash": "7ddb44d8a533a7535d85cedddf35d7f3414632ad4e10a0d7ca697723e1d97993"
+          },
+          "modeName": {
+            "placementId": "cd6c1abf-30b9-45ab-8d52-6ebace1826df",
+            "reviewedSourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095"
+          },
+          "oneTapNoPassword": {
+            "placementId": "82170f15-f88d-452b-974c-8eb2bdea24e4",
+            "reviewedSourceHash": "2d05edde2700731b408e66b88b0625ab0122322c3850062c075f16eb43b7d349"
+          },
+          "saveSessionAria": {
+            "placementId": "7b7c96b1-3acf-4a72-ac43-92604c90df3a",
+            "reviewedSourceHash": "4f338bb6f491836f59e6de2f3c49e8a402e9f646f223a280cb7627d8a5d9229d"
+          },
+          "saveWithEmail": {
+            "placementId": "7a39bd57-a463-477c-afc6-a812138c6949",
+            "reviewedSourceHash": "392502efc3a96ad2eeca901c39fcd6a82f02115ae5fe1018f0bb198d27a6438e"
+          },
+          "sendLink": {
+            "placementId": "e76305a2-d202-4cd3-b7df-6bef50334d19",
+            "reviewedSourceHash": "b386634c8b4382c837083126db57b819a9ec415563057903646df6121dd026d1"
+          },
+          "sessionComplete": {
+            "placementId": "3b2d3133-63df-4dc5-9e68-4b9f8927f97c",
+            "reviewedSourceHash": "91aa92ee57681bee4dc26ff99de5f27d024ecca4f583b99b46cc879b0f54cf8c"
+          },
+          "title": {
+            "placementId": "f931b5cf-b5cd-4afe-9fe2-f7c9b7fe60a1",
+            "reviewedSourceHash": "dc6151531a9458f0fd1cd4f986e4205ca241f154d7069b4824d2feedbfb812c4"
+          }
+        }
+      }
+    },
+    "/physiological-sigh-panic-attack": {
+      "locales": {
+        "de-de": {
+          "closeAria": {
+            "placementId": "f9cc6164-eaf1-4861-831d-920323e8c506",
+            "reviewedSourceHash": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed"
+          },
+          "continueWithGoogle": {
+            "placementId": "a566a83e-4026-4709-8784-37378aee071d",
+            "reviewedSourceHash": "cce937e891444a7417c696cdd80c0eed11deb383f3c42bdb8b591d5dfcaa398e"
+          },
+          "emailAddressAria": {
+            "placementId": "b1b4731b-21d9-437d-81e3-f21e4da08d22",
+            "reviewedSourceHash": "f2488fd4ef4adbc6ac61300083f2c33980e48bb4bbf3c540ad760d61fc36f420"
+          },
+          "emailPlaceholder": {
+            "placementId": "fdf7e5cc-12a3-4331-bf21-038981fc633c",
+            "reviewedSourceHash": "2837f6fa1c84ecc9f4d745b5df455c27db84dba89d167eb2863ae293994736b5"
+          },
+          "modeName": {
+            "placementId": "cff705c7-8ea3-4685-927a-532b9f522588",
+            "reviewedSourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f"
+          },
+          "oneTapNoPassword": {
+            "placementId": "9e6c34a1-8f54-49a1-8828-24998fbce638",
+            "reviewedSourceHash": "2d05edde2700731b408e66b88b0625ab0122322c3850062c075f16eb43b7d349"
+          },
+          "saveSessionAria": {
+            "placementId": "0f4a0236-fdd2-4659-b7ae-53f4b9f4dcef",
+            "reviewedSourceHash": "4f338bb6f491836f59e6de2f3c49e8a402e9f646f223a280cb7627d8a5d9229d"
+          },
+          "saveWithEmail": {
+            "placementId": "943a0735-d10c-43e1-a41e-d074158e9165",
+            "reviewedSourceHash": "392502efc3a96ad2eeca901c39fcd6a82f02115ae5fe1018f0bb198d27a6438e"
+          },
+          "sendLink": {
+            "placementId": "d70802d0-12d5-4ea2-a567-b6b435dfa6db",
+            "reviewedSourceHash": "b386634c8b4382c837083126db57b819a9ec415563057903646df6121dd026d1"
+          },
+          "sessionComplete": {
+            "placementId": "95bc85dd-49a9-469c-a4e7-2b6608e5b481",
+            "reviewedSourceHash": "91aa92ee57681bee4dc26ff99de5f27d024ecca4f583b99b46cc879b0f54cf8c"
+          },
+          "title": {
+            "placementId": "a3a2517d-c46e-4861-8df8-3f351ca33f7a",
+            "reviewedSourceHash": "dc6151531a9458f0fd1cd4f986e4205ca241f154d7069b4824d2feedbfb812c4"
+          }
+        },
+        "es-es": {
+          "closeAria": {
+            "placementId": "f9cc6164-eaf1-4861-831d-920323e8c506",
+            "reviewedSourceHash": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed"
+          },
+          "continueWithGoogle": {
+            "placementId": "a566a83e-4026-4709-8784-37378aee071d",
+            "reviewedSourceHash": "cce937e891444a7417c696cdd80c0eed11deb383f3c42bdb8b591d5dfcaa398e"
+          },
+          "emailAddressAria": {
+            "placementId": "b1b4731b-21d9-437d-81e3-f21e4da08d22",
+            "reviewedSourceHash": "f2488fd4ef4adbc6ac61300083f2c33980e48bb4bbf3c540ad760d61fc36f420"
+          },
+          "emailPlaceholder": {
+            "placementId": "fdf7e5cc-12a3-4331-bf21-038981fc633c",
+            "reviewedSourceHash": "2837f6fa1c84ecc9f4d745b5df455c27db84dba89d167eb2863ae293994736b5"
+          },
+          "modeName": {
+            "placementId": "cff705c7-8ea3-4685-927a-532b9f522588",
+            "reviewedSourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f"
+          },
+          "oneTapNoPassword": {
+            "placementId": "9e6c34a1-8f54-49a1-8828-24998fbce638",
+            "reviewedSourceHash": "2d05edde2700731b408e66b88b0625ab0122322c3850062c075f16eb43b7d349"
+          },
+          "saveSessionAria": {
+            "placementId": "0f4a0236-fdd2-4659-b7ae-53f4b9f4dcef",
+            "reviewedSourceHash": "4f338bb6f491836f59e6de2f3c49e8a402e9f646f223a280cb7627d8a5d9229d"
+          },
+          "saveWithEmail": {
+            "placementId": "943a0735-d10c-43e1-a41e-d074158e9165",
+            "reviewedSourceHash": "392502efc3a96ad2eeca901c39fcd6a82f02115ae5fe1018f0bb198d27a6438e"
+          },
+          "sendLink": {
+            "placementId": "d70802d0-12d5-4ea2-a567-b6b435dfa6db",
+            "reviewedSourceHash": "b386634c8b4382c837083126db57b819a9ec415563057903646df6121dd026d1"
+          },
+          "sessionComplete": {
+            "placementId": "95bc85dd-49a9-469c-a4e7-2b6608e5b481",
+            "reviewedSourceHash": "91aa92ee57681bee4dc26ff99de5f27d024ecca4f583b99b46cc879b0f54cf8c"
+          },
+          "title": {
+            "placementId": "a3a2517d-c46e-4861-8df8-3f351ca33f7a",
+            "reviewedSourceHash": "dc6151531a9458f0fd1cd4f986e4205ca241f154d7069b4824d2feedbfb812c4"
+          }
+        },
+        "fr-fr": {
+          "closeAria": {
+            "placementId": "f9cc6164-eaf1-4861-831d-920323e8c506",
+            "reviewedSourceHash": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed"
+          },
+          "continueWithGoogle": {
+            "placementId": "a566a83e-4026-4709-8784-37378aee071d",
+            "reviewedSourceHash": "cce937e891444a7417c696cdd80c0eed11deb383f3c42bdb8b591d5dfcaa398e"
+          },
+          "emailAddressAria": {
+            "placementId": "b1b4731b-21d9-437d-81e3-f21e4da08d22",
+            "reviewedSourceHash": "f2488fd4ef4adbc6ac61300083f2c33980e48bb4bbf3c540ad760d61fc36f420"
+          },
+          "emailPlaceholder": {
+            "placementId": "fdf7e5cc-12a3-4331-bf21-038981fc633c",
+            "reviewedSourceHash": "2837f6fa1c84ecc9f4d745b5df455c27db84dba89d167eb2863ae293994736b5"
+          },
+          "modeName": {
+            "placementId": "cff705c7-8ea3-4685-927a-532b9f522588",
+            "reviewedSourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f"
+          },
+          "oneTapNoPassword": {
+            "placementId": "9e6c34a1-8f54-49a1-8828-24998fbce638",
+            "reviewedSourceHash": "2d05edde2700731b408e66b88b0625ab0122322c3850062c075f16eb43b7d349"
+          },
+          "saveSessionAria": {
+            "placementId": "0f4a0236-fdd2-4659-b7ae-53f4b9f4dcef",
+            "reviewedSourceHash": "4f338bb6f491836f59e6de2f3c49e8a402e9f646f223a280cb7627d8a5d9229d"
+          },
+          "saveWithEmail": {
+            "placementId": "943a0735-d10c-43e1-a41e-d074158e9165",
+            "reviewedSourceHash": "392502efc3a96ad2eeca901c39fcd6a82f02115ae5fe1018f0bb198d27a6438e"
+          },
+          "sendLink": {
+            "placementId": "d70802d0-12d5-4ea2-a567-b6b435dfa6db",
+            "reviewedSourceHash": "b386634c8b4382c837083126db57b819a9ec415563057903646df6121dd026d1"
+          },
+          "sessionComplete": {
+            "placementId": "95bc85dd-49a9-469c-a4e7-2b6608e5b481",
+            "reviewedSourceHash": "91aa92ee57681bee4dc26ff99de5f27d024ecca4f583b99b46cc879b0f54cf8c"
+          },
+          "title": {
+            "placementId": "a3a2517d-c46e-4861-8df8-3f351ca33f7a",
+            "reviewedSourceHash": "dc6151531a9458f0fd1cd4f986e4205ca241f154d7069b4824d2feedbfb812c4"
+          }
+        },
+        "ja-jp": {
+          "closeAria": {
+            "placementId": "f9cc6164-eaf1-4861-831d-920323e8c506",
+            "reviewedSourceHash": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed"
+          },
+          "continueWithGoogle": {
+            "placementId": "a566a83e-4026-4709-8784-37378aee071d",
+            "reviewedSourceHash": "cce937e891444a7417c696cdd80c0eed11deb383f3c42bdb8b591d5dfcaa398e"
+          },
+          "emailAddressAria": {
+            "placementId": "b1b4731b-21d9-437d-81e3-f21e4da08d22",
+            "reviewedSourceHash": "f2488fd4ef4adbc6ac61300083f2c33980e48bb4bbf3c540ad760d61fc36f420"
+          },
+          "emailPlaceholder": {
+            "placementId": "fdf7e5cc-12a3-4331-bf21-038981fc633c",
+            "reviewedSourceHash": "2837f6fa1c84ecc9f4d745b5df455c27db84dba89d167eb2863ae293994736b5"
+          },
+          "modeName": {
+            "placementId": "cff705c7-8ea3-4685-927a-532b9f522588",
+            "reviewedSourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f"
+          },
+          "oneTapNoPassword": {
+            "placementId": "9e6c34a1-8f54-49a1-8828-24998fbce638",
+            "reviewedSourceHash": "2d05edde2700731b408e66b88b0625ab0122322c3850062c075f16eb43b7d349"
+          },
+          "saveSessionAria": {
+            "placementId": "0f4a0236-fdd2-4659-b7ae-53f4b9f4dcef",
+            "reviewedSourceHash": "4f338bb6f491836f59e6de2f3c49e8a402e9f646f223a280cb7627d8a5d9229d"
+          },
+          "saveWithEmail": {
+            "placementId": "943a0735-d10c-43e1-a41e-d074158e9165",
+            "reviewedSourceHash": "392502efc3a96ad2eeca901c39fcd6a82f02115ae5fe1018f0bb198d27a6438e"
+          },
+          "sendLink": {
+            "placementId": "d70802d0-12d5-4ea2-a567-b6b435dfa6db",
+            "reviewedSourceHash": "b386634c8b4382c837083126db57b819a9ec415563057903646df6121dd026d1"
+          },
+          "sessionComplete": {
+            "placementId": "95bc85dd-49a9-469c-a4e7-2b6608e5b481",
+            "reviewedSourceHash": "91aa92ee57681bee4dc26ff99de5f27d024ecca4f583b99b46cc879b0f54cf8c"
+          },
+          "title": {
+            "placementId": "a3a2517d-c46e-4861-8df8-3f351ca33f7a",
+            "reviewedSourceHash": "dc6151531a9458f0fd1cd4f986e4205ca241f154d7069b4824d2feedbfb812c4"
+          }
+        },
+        "pt-br": {
+          "closeAria": {
+            "placementId": "f9cc6164-eaf1-4861-831d-920323e8c506",
+            "reviewedSourceHash": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed"
+          },
+          "continueWithGoogle": {
+            "placementId": "a566a83e-4026-4709-8784-37378aee071d",
+            "reviewedSourceHash": "cce937e891444a7417c696cdd80c0eed11deb383f3c42bdb8b591d5dfcaa398e"
+          },
+          "emailAddressAria": {
+            "placementId": "b1b4731b-21d9-437d-81e3-f21e4da08d22",
+            "reviewedSourceHash": "f2488fd4ef4adbc6ac61300083f2c33980e48bb4bbf3c540ad760d61fc36f420"
+          },
+          "emailPlaceholder": {
+            "placementId": "fdf7e5cc-12a3-4331-bf21-038981fc633c",
+            "reviewedSourceHash": "2837f6fa1c84ecc9f4d745b5df455c27db84dba89d167eb2863ae293994736b5"
+          },
+          "modeName": {
+            "placementId": "cff705c7-8ea3-4685-927a-532b9f522588",
+            "reviewedSourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f"
+          },
+          "oneTapNoPassword": {
+            "placementId": "9e6c34a1-8f54-49a1-8828-24998fbce638",
+            "reviewedSourceHash": "2d05edde2700731b408e66b88b0625ab0122322c3850062c075f16eb43b7d349"
+          },
+          "saveSessionAria": {
+            "placementId": "0f4a0236-fdd2-4659-b7ae-53f4b9f4dcef",
+            "reviewedSourceHash": "4f338bb6f491836f59e6de2f3c49e8a402e9f646f223a280cb7627d8a5d9229d"
+          },
+          "saveWithEmail": {
+            "placementId": "943a0735-d10c-43e1-a41e-d074158e9165",
+            "reviewedSourceHash": "392502efc3a96ad2eeca901c39fcd6a82f02115ae5fe1018f0bb198d27a6438e"
+          },
+          "sendLink": {
+            "placementId": "d70802d0-12d5-4ea2-a567-b6b435dfa6db",
+            "reviewedSourceHash": "b386634c8b4382c837083126db57b819a9ec415563057903646df6121dd026d1"
+          },
+          "sessionComplete": {
+            "placementId": "95bc85dd-49a9-469c-a4e7-2b6608e5b481",
+            "reviewedSourceHash": "91aa92ee57681bee4dc26ff99de5f27d024ecca4f583b99b46cc879b0f54cf8c"
+          },
+          "title": {
+            "placementId": "a3a2517d-c46e-4861-8df8-3f351ca33f7a",
+            "reviewedSourceHash": "dc6151531a9458f0fd1cd4f986e4205ca241f154d7069b4824d2feedbfb812c4"
+          }
+        }
+      }
+    }
+  },
+  "schemaVersion": 1
+}

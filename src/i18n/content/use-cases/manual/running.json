@@ -1,0 +1,396 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.use-case.box-breathing-name",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f",
+      "scope": "chrome",
+      "sourceText": "Physiological Sigh",
+      "translations": {
+        "de-de": "Physiologischer Seufzer",
+        "fr-fr": "Soupir physiologique",
+        "ja-jp": "生理的サイズ"
+      }
+    },
+    {
+      "messageId": "chrome.use-case.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "6c547dfda626d88f9f390056cf7a14fc4e242b5128bf5c31a364435d24f1321a",
+      "scope": "chrome",
+      "sourceText": "Try this guided breathing exercise for recover faster and stop side stitches.",
+      "translations": {
+        "de-de": "Probieren Sie diese geführte Atemübung, um schneller zu erholen und Seitenstechen zu stoppen.",
+        "es-es": "Prueba este ejercicio de respiración guiada para recuperarte más rápido y detener los puntos laterales.",
+        "fr-fr": "Essayez cet exercice de respiration guidée pour récupérer plus vite et arrêter les points latéraux.",
+        "ja-jp": "このガイド付き呼吸エクササイズで、より早く回復し、脇腹の痛みを止めてみてください。",
+        "pt-br": "Experimente este exercício de respiração guiada para se recuperar mais rápido e parar as pontadas laterais."
+      }
+    },
+    {
+      "messageId": "chrome.use-case.learn-box-breathing",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "fd75a0c1418a75fb7860da61b872c9881106748e5beac6d999f31ad4b09d2a60",
+      "scope": "chrome",
+      "sourceText": "Learn more about Physiological Sigh →",
+      "translations": {
+        "de-de": "Mehr über den physiologischen Seufzer erfahren →",
+        "es-es": "Más información sobre el suspiro fisiológico →",
+        "fr-fr": "En savoir plus sur le soupir physiologique →",
+        "ja-jp": "生理的サイズについて詳しく見る →",
+        "pt-br": "Saiba mais sobre o suspiro fisiológico →"
+      }
+    },
+    {
+      "messageId": "faqs[0].answer",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "e86a295961ee650b75c8cffc4fc71af0c0ea6de82b803145e6ab0e51e15c8940",
+      "scope": "content",
+      "sourceText": "The best breathing technique for running depends on pace. For easy runs, low diaphragmatic breathing with a relaxed stride rhythm works best. For hard efforts, mouth breathing is normal. For side stitches or post-run recovery, the physiological sigh is the fastest reset because it quickly settles the diaphragm and heart rate.",
+      "translations": {
+        "de-de": "Die beste Atemtechnik beim Laufen hängt vom Tempo ab. Bei lockeren Läufen funktioniert tiefes Zwerchfellatmen mit einem entspannten Schrittrhythmus am besten. Bei harten Belastungen ist Mundatmen normal. Bei Seitenstechen oder Erholung nach dem Lauf ist der physiologische Seufzer der schnellste Reset, weil er Zwerchfell und Herzfrequenz schnell beruhigt.",
+        "es-es": "La mejor técnica de respiración para correr depende del ritmo. En carreras suaves, la respiración diafragmática baja con un ritmo de zancada relajado funciona mejor. En esfuerzos intensos, respirar por la boca es normal. Para puntos laterales o recuperación tras la carrera, el suspiro fisiológico es el reinicio más rápido porque calma rápidamente el diafragma y la frecuencia cardíaca.",
+        "fr-fr": "La meilleure technique de respiration pour la course dépend de l'allure. Pour les sorties faciles, une respiration diaphragmatique basse avec un rythme de foulée détendu fonctionne le mieux. Pour les efforts intenses, la respiration buccale est normale. Pour les points latéraux ou la récupération après la course, le soupir physiologique est la remise à zéro la plus rapide, car il calme rapidement le diaphragme et la fréquence cardiaque.",
+        "ja-jp": "ランニングに最適な呼吸法はペースによって異なります。イージーランでは、リラックスした歩調に合わせた低い横隔膜呼吸が最も効果的です。ハードな運動では口呼吸は普通です。脇腹の痛みやラン後の回復には、生理的サイズが最も早いリセットになります。横隔膜と心拍数を素早く落ち着かせるためです。",
+        "pt-br": "A melhor técnica de respiração para corrida depende do ritmo. Em corridas leves, a respiração diafragmática baixa com um ritmo de passada relaxado funciona melhor. Em esforços intensos, respirar pela boca é normal. Para pontadas laterais ou recuperação pós-corrida, o suspiro fisiológico é o reset mais rápido porque acalma rapidamente o diafragma e a frequência cardíaca."
+      }
+    },
+    {
+      "messageId": "faqs[0].question",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "ee70d75d4391bb0a93abb4eea5a08e00a48c4e7750addd83c83d2d7c50864db2",
+      "scope": "content",
+      "sourceText": "What is the best breathing technique for running?",
+      "translations": {
+        "de-de": "Was ist die beste Atemtechnik beim Laufen?",
+        "es-es": "¿Cuál es la mejor técnica de respiración para correr?",
+        "fr-fr": "Quelle est la meilleure technique de respiration pour la course ?",
+        "ja-jp": "ランニングに最適な呼吸法は何ですか？",
+        "pt-br": "Qual é a melhor técnica de respiração para corrida?"
+      }
+    },
+    {
+      "messageId": "faqs[4].answer",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "e98ecb98a02a9a4df8e72e56ac233bc4bb37c21e5df85ce3f4deed56f6a2a6e3",
+      "scope": "content",
+      "sourceText": "Yes. Practice low belly breathing during warm-ups, use stride-linked breathing on easy runs, and do short guided recovery breathing after hard sessions. Over time your breathing becomes quieter, more efficient, and easier to control when fatigue hits.",
+      "translations": {
+        "de-de": "Ja. Üben Sie tiefes Bauchatmen beim Aufwärmen, nutzen Sie schrittgebundenes Atmen bei lockeren Läufen und machen Sie nach harten Einheiten kurze geführte Erholungsatmung. Mit der Zeit wird Ihre Atmung leiser, effizienter und leichter zu kontrollieren, wenn die Müdigkeit einsetzt.",
+        "es-es": "Sí. Practica la respiración baja en el vientre durante los calentamientos, usa la respiración ligada a la zancada en carreras suaves y haz respiración guiada corta de recuperación tras sesiones intensas. Con el tiempo, tu respiración se vuelve más silenciosa, más eficiente y más fácil de controlar cuando llega la fatiga.",
+        "fr-fr": "Oui. Pratiquez une respiration basse dans le ventre pendant l'échauffement, utilisez une respiration liée à la foulée sur les sorties faciles et faites une courte respiration guidée de récupération après les séances intenses. Avec le temps, votre respiration devient plus silencieuse, plus efficace et plus facile à contrôler quand la fatigue arrive.",
+        "ja-jp": "はい。ウォームアップ中は低いお腹の呼吸を練習し、イージーランでは歩調に合わせた呼吸を使い、ハードなセッション後は短いガイド付き回復呼吸を行います。時間が経つと、疲労が来たときに呼吸がより静かで効率的になり、コントロールしやすくなります。",
+        "pt-br": "Sim. Pratique respiração baixa no abdômen durante o aquecimento, use respiração ligada à passada em corridas leves e faça respiração guiada curta de recuperação após sessões intensas. Com o tempo, sua respiração fica mais silenciosa, mais eficiente e mais fácil de controlar quando a fadiga chega."
+      }
+    },
+    {
+      "messageId": "faqs[4].question",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "7f9291333d24bf4bf6f38e658303b469bac70df313eb85097ca572441cc8049e",
+      "scope": "content",
+      "sourceText": "Can I train my breathing for running?",
+      "translations": {
+        "de-de": "Kann ich meine Atmung fürs Laufen trainieren?",
+        "es-es": "¿Puedo entrenar mi respiración para correr?",
+        "fr-fr": "Puis-je entraîner ma respiration pour la course ?",
+        "ja-jp": "ランニングのために呼吸をトレーニングできますか？",
+        "pt-br": "Posso treinar minha respiração para corrida?"
+      }
+    },
+    {
+      "messageId": "howTo.steps[0].instruction",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "1b88bcfb1d9b9d03c47be22d2d6bc05eb187b632a29a3c70f67bb7643a53b7b0",
+      "scope": "content",
+      "sourceText": "On easy runs, breathe low into your belly instead of lifting your chest and shoulders. Think about expanding your lower ribs and keeping your jaw loose.",
+      "translations": {
+        "de-de": "Atmen Sie bei lockeren Läufen tief in den Bauch, statt Brust und Schultern anzuheben. Denken Sie daran, die unteren Rippen zu weiten und den Kiefer locker zu halten.",
+        "es-es": "En carreras suaves, respira bajo hacia el vientre en lugar de levantar el pecho y los hombros. Piensa en expandir las costillas inferiores y mantener la mandíbula relajada.",
+        "fr-fr": "Sur les sorties faciles, respirez bas dans le ventre au lieu de lever la poitrine et les épaules. Pensez à dilater les côtes inférieures et à garder la mâchoire détendue.",
+        "ja-jp": "イージーランでは、胸や肩を持ち上げるのではなく、お腹の低い位置で呼吸します。下の肋骨を広げ、顎をリラックスさせることを意識してください。",
+        "pt-br": "Em corridas leves, respire baixo no abdômen em vez de levantar o peito e os ombros. Pense em expandir as costelas inferiores e manter a mandíbula relaxada."
+      }
+    },
+    {
+      "messageId": "howTo.steps[0].name",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "7f32937fea8398b02c2d553a88f3a79ffc9cd4e93995a4283b205deef146683e",
+      "scope": "content",
+      "sourceText": "Start low and relaxed",
+      "translations": {
+        "de-de": "Tief und entspannt starten",
+        "es-es": "Empieza bajo y relajado",
+        "fr-fr": "Commencer bas et détendu",
+        "ja-jp": "低くリラックスして始める",
+        "pt-br": "Comece baixo e relaxado"
+      }
+    },
+    {
+      "messageId": "howTo.steps[0].timing",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "da28b5f0aeb31a22f6c17f1102622fa5c2620ccb21edaf2655dbd4c40dc8f468",
+      "scope": "content",
+      "sourceText": "First 5-10 minutes",
+      "translations": {
+        "de-de": "Erste 5-10 Minuten",
+        "es-es": "Primeros 5-10 minutos",
+        "fr-fr": "Premières 5-10 minutes",
+        "ja-jp": "最初の5〜10分",
+        "pt-br": "Primeiros 5-10 minutos"
+      }
+    },
+    {
+      "messageId": "howTo.steps[2].instruction",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "f0405e4b0cdae3cebf70d0e57386103e407f2e9417455a3a9c5212941a141c10",
+      "scope": "content",
+      "sourceText": "During intervals, hills, or race efforts, let mouth breathing happen naturally. The goal is enough airflow, not perfect nasal breathing under load.",
+      "translations": {
+        "de-de": "Bei Intervallen, Hügeln oder Wettkampfbelastungen lassen Sie Mundatmen natürlich geschehen. Das Ziel ist genug Luftstrom, nicht perfektes Nasenatmen unter Belastung.",
+        "es-es": "Durante intervalos, cuestas o esfuerzos de carrera, deja que la respiración por la boca ocurra de forma natural. El objetivo es suficiente flujo de aire, no una respiración nasal perfecta bajo carga.",
+        "fr-fr": "Pendant les intervalles, les côtes ou les efforts de course, laissez la respiration buccale se faire naturellement. L'objectif est un débit d'air suffisant, pas une respiration nasale parfaite sous charge.",
+        "ja-jp": "インターバル、坂、レース努力中は、口呼吸が自然に起こるようにします。目標は十分な気流であり、負荷下での完璧な鼻呼吸ではありません。",
+        "pt-br": "Durante intervalos, subidas ou esforços de corrida, deixe a respiração pela boca acontecer naturalmente. O objetivo é fluxo de ar suficiente, não respiração nasal perfeita sob carga."
+      }
+    },
+    {
+      "messageId": "howTo.steps[2].name",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "9f2d60e6c29a6d9a27eee2cb7de56aea981a4d2ae6e11885da103179de15af7a",
+      "scope": "content",
+      "sourceText": "Open the mouth when pace rises",
+      "translations": {
+        "de-de": "Mund öffnen, wenn das Tempo steigt",
+        "es-es": "Abre la boca cuando sube el ritmo",
+        "fr-fr": "Ouvrir la bouche quand l'allure augmente",
+        "ja-jp": "ペースが上がったら口を開ける",
+        "pt-br": "Abra a boca quando o ritmo aumentar"
+      }
+    },
+    {
+      "messageId": "howTo.steps[2].timing",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "21191a3c17335a93d3ea844467c118d92b67c0f53e2dbc058a06f2a99054ca9e",
+      "scope": "content",
+      "sourceText": "During hard efforts",
+      "translations": {
+        "de-de": "Bei harten Belastungen",
+        "es-es": "Durante esfuerzos intensos",
+        "fr-fr": "Pendant les efforts intenses",
+        "ja-jp": "ハードな運動中",
+        "pt-br": "Durante esforços intensos"
+      }
+    },
+    {
+      "messageId": "howTo.steps[4].instruction",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "b2214170473966befa8e20c0088706c7d3a88d38cdb54f9d342c221178d75b36",
+      "scope": "content",
+      "sourceText": "After a hard effort, keep walking and use 3-5 physiological sighs or a minute of slow guided breathing until your heart rate and breathing settle.",
+      "translations": {
+        "de-de": "Nach einer harten Belastung weitergehen und 3-5 physiologische Seufzer oder eine Minute langsame geführte Atmung nutzen, bis Herzfrequenz und Atmung sich beruhigen.",
+        "es-es": "Tras un esfuerzo intenso, sigue caminando y usa 3-5 suspiros fisiológicos o un minuto de respiración guiada lenta hasta que se calmen la frecuencia cardíaca y la respiración.",
+        "fr-fr": "Après un effort intense, continuez à marcher et utilisez 3-5 soupirs physiologiques ou une minute de respiration guidée lente jusqu'à ce que votre fréquence cardiaque et votre respiration se calment.",
+        "ja-jp": "ハードな運動の後は歩き続け、心拍数と呼吸が落ち着くまで、3〜5回の生理的サイズまたは1分間のゆっくりしたガイド付き呼吸を使います。",
+        "pt-br": "Após um esforço intenso, continue caminhando e use 3-5 suspiros fisiológicos ou um minuto de respiração guiada lenta até a frequência cardíaca e a respiração se acalmarem."
+      }
+    },
+    {
+      "messageId": "howTo.steps[4].name",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "82bdd2e04d334462f941799b694a6d3392b93c63ec82f34db365f6cdbf28514c",
+      "scope": "content",
+      "sourceText": "Recover with 60-120 seconds of guided breathing",
+      "translations": {
+        "de-de": "Mit 60-120 Sekunden geführter Atmung erholen",
+        "es-es": "Recupérate con 60-120 segundos de respiración guiada",
+        "fr-fr": "Récupérer avec 60-120 secondes de respiration guidée",
+        "ja-jp": "60〜120秒のガイド付き呼吸で回復する",
+        "pt-br": "Recupere com 60-120 segundos de respiração guiada"
+      }
+    },
+    {
+      "messageId": "howTo.steps[4].timing",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "1c3bb852ca632da174943b232d1b4f46d60c4a8ff639e31a96b408bc6ad29753",
+      "scope": "content",
+      "sourceText": "1-2 minutes post-effort",
+      "translations": {
+        "de-de": "1-2 Minuten nach der Belastung",
+        "es-es": "1-2 minutos después del esfuerzo",
+        "fr-fr": "1-2 minutes après l'effort",
+        "ja-jp": "運動後1〜2分",
+        "pt-br": "1-2 minutos após o esforço"
+      }
+    },
+    {
+      "messageId": "howTo.tips[0]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "cfcafe7ed3be3495c4c203ca8377d2ff9411c73ba72ac2f38ab96fef335e99b5",
+      "scope": "content",
+      "sourceText": "Practice low belly breathing during warm-ups so it feels automatic later",
+      "translations": {
+        "de-de": "Üben Sie tiefes Bauchatmen beim Aufwärmen, damit es später automatisch wirkt",
+        "es-es": "Practica la respiración baja en el vientre durante los calentamientos para que luego se sienta automática",
+        "fr-fr": "Pratiquez une respiration basse dans le ventre pendant l'échauffement pour qu'elle devienne automatique ensuite",
+        "ja-jp": "ウォームアップ中に低いお腹の呼吸を練習し、後で自動的に感じられるようにする",
+        "pt-br": "Pratique respiração baixa no abdômen durante o aquecimento para que pareça automática depois"
+      }
+    },
+    {
+      "messageId": "problem.symptoms[0]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "b0a786974289baa9fc52057ae6d5f9379073239251da4bc4bdf316de40bf514e",
+      "scope": "content",
+      "sourceText": "Breathing high into the chest instead of low into the belly",
+      "translations": {
+        "de-de": "Hoch in die Brust statt tief in den Bauch atmen",
+        "es-es": "Respirar alto en el pecho en lugar de bajo en el vientre",
+        "fr-fr": "Respirer haut dans la poitrine au lieu de bas dans le ventre",
+        "ja-jp": "お腹の低い位置ではなく胸の高い位置で呼吸する",
+        "pt-br": "Respirar alto no peito em vez de baixo no abdômen"
+      }
+    },
+    {
+      "messageId": "problem.symptoms[1]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "a05de615fd1f6700112ae7d6d5986f805b6886a010e89d5460234c750a193df7",
+      "scope": "content",
+      "sourceText": "Heavy panting that doesn't settle after a hard effort",
+      "translations": {
+        "de-de": "Starkes Keuchen, das sich nach einer harten Belastung nicht beruhigt",
+        "es-es": "Jadeo intenso que no se calma tras un esfuerzo intenso",
+        "fr-fr": "Halètement intense qui ne se calme pas après un effort intense",
+        "ja-jp": "ハードな運動後も落ち着かない激しいあえぎ",
+        "pt-br": "Ofegante intenso que não se acalma após um esforço intenso"
+      }
+    },
+    {
+      "messageId": "problem.symptoms[4]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "e5d684108d5e1bd72fadb9a6f6448d137bb31bc6c6e0f91a21837c471f43241b",
+      "scope": "content",
+      "sourceText": "Feeling out of rhythm with your stride or cadence",
+      "translations": {
+        "de-de": "Gefühl, nicht im Rhythmus mit Schritt oder Kadenz zu sein",
+        "es-es": "Sensación de estar fuera de ritmo con la zancada o la cadencia",
+        "fr-fr": "Sensation d'être hors rythme avec votre foulée ou votre cadence",
+        "ja-jp": "歩調やケイデンスとリズムが合わない感覚",
+        "pt-br": "Sensação de estar fora do ritmo com a passada ou a cadência"
+      }
+    },
+    {
+      "messageId": "relatedTechnique.callToAction",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "c639d79d47d91f7038efd8ae488e79d207f81574613172beb0fe1fdd674898f4",
+      "scope": "content",
+      "sourceText": "Practice with the full-screen Physiological Sigh visualizer",
+      "translations": {
+        "de-de": "Üben Sie mit dem Vollbild-Visualizer für den physiologischen Seufzer",
+        "es-es": "Practica con el visualizador de pantalla completa del suspiro fisiológico",
+        "fr-fr": "Pratiquez avec le visualiseur plein écran du soupir physiologique",
+        "ja-jp": "全画面の生理的サイズビジュアライザーで練習する",
+        "pt-br": "Pratique com o visualizador em tela cheia do suspiro fisiológico"
+      }
+    },
+    {
+      "messageId": "relatedUseCases[2].teaser",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "3f593495e2326263cd27dcefae35f97e2f6bf38e51b5044633c3ebb9e1c313cf",
+      "scope": "content",
+      "sourceText": "Increase your lung capacity for longer, stronger runs.",
+      "translations": {
+        "de-de": "Steigern Sie Ihre Lungenkapazität für längere, stärkere Läufe.",
+        "es-es": "Aumenta tu capacidad pulmonar para carreras más largas y más fuertes.",
+        "fr-fr": "Augmentez votre capacité pulmonaire pour des courses plus longues et plus fortes.",
+        "ja-jp": "より長く、より強いランのために肺活量を増やす。",
+        "pt-br": "Aumente sua capacidade pulmonar para corridas mais longas e mais fortes."
+      }
+    },
+    {
+      "messageId": "science.points[2].explanation",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "38cabae477e319c40ece48a9e8771c095bc55f6278a3a2496d44301e7ab6c3cc",
+      "scope": "content",
+      "sourceText": "Nasal breathing can work well at easy intensity, but hard efforts demand more airflow. Mouth breathing is not failure — it is a normal response to higher carbon dioxide production and oxygen demand.",
+      "translations": {
+        "de-de": "Nasenatmen kann bei lockerer Intensität gut funktionieren, aber harte Belastungen erfordern mehr Luftstrom. Mundatmen ist kein Versagen — es ist eine normale Reaktion auf höhere Kohlendioxidproduktion und Sauerstoffbedarf.",
+        "es-es": "La respiración nasal puede funcionar bien a intensidad suave, pero los esfuerzos intensos exigen más flujo de aire. Respirar por la boca no es un fallo — es una respuesta normal a una mayor producción de dióxido de carbono y demanda de oxígeno.",
+        "fr-fr": "La respiration nasale peut bien fonctionner à intensité facile, mais les efforts intenses exigent plus de débit d'air. La respiration buccale n'est pas un échec — c'est une réponse normale à une production accrue de dioxyde de carbone et à une demande en oxygène plus élevée.",
+        "ja-jp": "鼻呼吸はイージーな強度ではうまく機能しますが、ハードな運動にはより多くの気流が必要です。口呼吸は失敗ではありません — 二酸化炭素の産生と酸素需要の増加に対する正常な反応です。",
+        "pt-br": "A respiração nasal pode funcionar bem em intensidade leve, mas esforços intensos exigem mais fluxo de ar. Respirar pela boca não é falha — é uma resposta normal à maior produção de dióxido de carbono e demanda de oxigênio."
+      }
+    },
+    {
+      "messageId": "science.points[2].mechanism",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "be0620a12b2a7adb3ffbcf4673c12babe17223c68bcb1e9058cd17c48904cc36",
+      "scope": "content",
+      "sourceText": "Mouth vs nose breathing",
+      "translations": {
+        "de-de": "Mund- vs. Nasenatmen",
+        "es-es": "Respiración por la boca frente a la nariz",
+        "fr-fr": "Respiration buccale vs nasale",
+        "ja-jp": "口呼吸と鼻呼吸",
+        "pt-br": "Respiração pela boca vs nariz"
+      }
+    },
+    {
+      "messageId": "science.points[3].explanation",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "2bc9e98d3962a07d0e4be1561683eebcc595b24fec9ea68feb9884493720c1a8",
+      "scope": "content",
+      "sourceText": "Stanford research found that the physiological sigh brings heart rate down faster than box breathing or meditation. The double inhale re-expands alveoli and the long exhale relaxes the diaphragm, which is why it works so well for side stitches and post-sprint recovery.",
+      "translations": {
+        "de-de": "Stanford-Forschung fand heraus, dass der physiologische Seufzer die Herzfrequenz schneller senkt als Box Breathing oder Meditation. Die doppelte Einatmung dehnt die Alveolen wieder aus und die lange Ausatmung entspannt das Zwerchfell, weshalb er bei Seitenstechen und Erholung nach dem Sprint so gut wirkt.",
+        "es-es": "La investigación de Stanford encontró que el suspiro fisiológico baja la frecuencia cardíaca más rápido que la respiración en caja o la meditación. La doble inhalación reexpande los alvéolos y la exhalación larga relaja el diafragma, por eso funciona tan bien para los puntos laterales y la recuperación tras el sprint.",
+        "fr-fr": "La recherche de Stanford a constaté que le soupir physiologique fait baisser la fréquence cardiaque plus vite que la respiration en carré ou la méditation. La double inspiration réexpand les alvéoles et la longue expiration détend le diaphragme, ce qui explique pourquoi il fonctionne si bien pour les points latéraux et la récupération après le sprint.",
+        "ja-jp": "スタンフォードの研究では、生理的サイズはボックス呼吸や瞑想よりも心拍数を早く下げることがわかりました。二重の吸気は肺胞を再拡張し、長い呼気は横隔膜をリラックスさせるため、脇腹の痛みやスプリント後の回復に非常に効果的です。",
+        "pt-br": "Pesquisas de Stanford descobriram que o suspiro fisiológico reduz a frequência cardíaca mais rápido que a respiração em caixa ou a meditação. A inspiração dupla reexpande os alvéolos e a expiração longa relaxa o diafragma, por isso funciona tão bem para pontadas laterais e recuperação pós-sprint."
+      }
+    },
+    {
+      "messageId": "science.points[3].mechanism",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "c6fbbeb7dde75c15cb10f91c22735a9b0ee8409c26b2d67fd47b805833fb934c",
+      "scope": "content",
+      "sourceText": "Rapid reset after hard efforts",
+      "translations": {
+        "de-de": "Schneller Reset nach harten Belastungen",
+        "es-es": "Reinicio rápido tras esfuerzos intensos",
+        "fr-fr": "Remise à zéro rapide après les efforts intenses",
+        "ja-jp": "ハードな運動後の素早いリセット",
+        "pt-br": "Reset rápido após esforços intensos"
+      }
+    },
+    {
+      "messageId": "voiceSearch[0].answer",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "a65fa23e2af0e59d72c8769f62af95efdd5d9fcb27287e447b76e93e3c5d140a",
+      "scope": "content",
+      "sourceText": "Breathe low into your belly, match your breath to your stride, and let mouth breathing happen naturally as pace rises. Use a 3:3 or 2:2 rhythm during steady running, then switch to a physiological sigh if a side stitch or post-sprint breathlessness hits.",
+      "translations": {
+        "de-de": "Atmen Sie tief in den Bauch, passen Sie die Atmung an Ihren Schritt an und lassen Sie Mundatmen natürlich geschehen, wenn das Tempo steigt. Nutzen Sie ein 3:3- oder 2:2-Rhythmus beim gleichmäßigen Laufen und wechseln Sie zum physiologischen Seufzer, wenn Seitenstechen oder Atemnot nach dem Sprint auftritt.",
+        "es-es": "Respira bajo hacia el vientre, sincroniza la respiración con la zancada y deja que la respiración por la boca ocurra de forma natural cuando sube el ritmo. Usa un ritmo 3:3 o 2:2 durante la carrera constante y cambia a un suspiro fisiológico si aparece un punto lateral o falta de aire tras el sprint.",
+        "fr-fr": "Respirez bas dans le ventre, synchronisez votre respiration avec votre foulée et laissez la respiration buccale se faire naturellement quand l'allure augmente. Utilisez un rythme 3:3 ou 2:2 pendant la course régulière, puis passez à un soupir physiologique en cas de point latéral ou d'essoufflement après le sprint.",
+        "ja-jp": "お腹の低い位置で呼吸し、呼吸を歩調に合わせ、ペースが上がったら口呼吸が自然に起こるようにします。一定のランニング中は3:3または2:2のリズムを使い、脇腹の痛みやスプリント後の息切れが起きたら生理的サイズに切り替えます。",
+        "pt-br": "Respire baixo no abdômen, combine a respiração com a passada e deixe a respiração pela boca acontecer naturalmente quando o ritmo aumentar. Use um ritmo 3:3 ou 2:2 durante a corrida constante e mude para um suspiro fisiológico se surgir pontada lateral ou falta de ar pós-sprint."
+      }
+    },
+    {
+      "messageId": "voiceSearch[0].question",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "3eb216d5746fafaea5414b131d1c6e98ebc7f6a158c3799b90b826263d61db90",
+      "scope": "content",
+      "sourceText": "How do you breathe while running?",
+      "translations": {
+        "de-de": "Wie atmet man beim Laufen?",
+        "es-es": "¿Cómo respiras mientras corres?",
+        "fr-fr": "Comment respirez-vous en courant ?",
+        "ja-jp": "ランニング中はどう呼吸しますか？",
+        "pt-br": "Como você respira enquanto corre?"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/running"
+}

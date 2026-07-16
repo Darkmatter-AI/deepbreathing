@@ -1,0 +1,24 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "Técnicas de respiración para la relajación infantil que",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Ejercicios de respiración profunda para niños: técnicas para calmarse",
+      "reviewedSourceHash": "0e67263991fd8556eef474bec7d4dd043b5551c74cc6004a71d78ba668be2029",
+      "sourcePath": "meta.title",
+      "sourceText": "Deep Breathing Exercises for Kids: Calm Techniques"
+    },
+    {
+      "currentCatalogValue": "Ejercicios de respiración sencillos para la relajación infantil. Calma rabietas, alivia la ansiedad y ayuda a dormir. Técnicas probadas con visualizador",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Ejercicios de respiración sencillos para niños que detienen rabietas, alivian la ansiedad y ayudan a dormir. Técnicas probadas por padres, con visualizador gratuito. Para niños de 4 años o más.",
+      "reviewedSourceHash": "daa4d671bcc049658f6095d50a8ffda59216262d17c72cd9d436c6457c870d65",
+      "sourcePath": "meta.description",
+      "sourceText": "Simple breathing exercises for kids that stop tantrums, ease anxiety, and help children fall asleep. Parent-tested with free visualizer. Ages 4+."
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/kids"
+}

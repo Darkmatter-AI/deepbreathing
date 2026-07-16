@@ -1,0 +1,473 @@
+{
+  "footer": {
+    "columns": {
+      "guides": {
+        "links": {
+          "anxiety": {
+            "href": "/for/anxiety",
+            "label": "So stoppen Sie Angst in 60 Sekunden mit Boxatmung"
+          },
+          "athletes": {
+            "href": "/for/athletes",
+            "label": "Schnellere Erholung zwischen den Sätzen: Physiologisches Seufzen für Sportler"
+          },
+          "focus": {
+            "href": "/for/focus",
+            "label": "So steigern Sie die Konzentration um 40 % mit kohärenter Atmung"
+          },
+          "high-blood-pressure": {
+            "href": "/for/high-blood-pressure",
+            "label": "Senken Sie Ihren Blutdruck natürlich mit der 4-7-8 Atemtechnik"
+          },
+          "holiday-stress": {
+            "href": "/for/holiday-stress",
+            "label": "So bewältigen Sie den Stress während der Feiertage in 30 Sekunden"
+          },
+          "huberman": {
+            "href": "/for/huberman",
+            "label": "Huberman Lab Atemprotokolle"
+          },
+          "kids": {
+            "href": "/for/kids",
+            "label": "Kinder"
+          },
+          "lung-capacity": {
+            "href": "/for/lung-capacity",
+            "label": "Übungen zur Verbesserung der Lungenkapazität"
+          },
+          "meditation": {
+            "href": "/for/meditation",
+            "label": "Können Sie nicht meditieren? Beginnen Sie mit kohärenter Atmung"
+          },
+          "panic-attacks": {
+            "href": "/for/panic-attacks",
+            "label": "So stoppen Sie einen Panikanfall in 30 Sekunden"
+          },
+          "pranayama": {
+            "href": "/for/pranayama",
+            "label": "Pranayama Atmung: Der vollständige Leitfaden zur yogischen Atmung"
+          },
+          "pregnancy": {
+            "href": "/for/pregnancy",
+            "label": "Atmung für Schwangerschaftsangst und Vorbereitung auf die Geburt"
+          },
+          "public-speaking": {
+            "href": "/for/public-speaking",
+            "label": "Öffentliches Sprechen"
+          },
+          "running": {
+            "href": "/for/running",
+            "label": "Schnellere Genesung und Behebung von Seitenstechen"
+          },
+          "singing": {
+            "href": "/for/singing",
+            "label": "Singen"
+          },
+          "sleep": {
+            "href": "/for/sleep",
+            "label": "4-7-8 Atemtechnik für besseren Schlaf"
+          },
+          "stress": {
+            "href": "/for/stress",
+            "label": "Stress"
+          },
+          "travel-anxiety": {
+            "href": "/for/travel-anxiety",
+            "label": "Reiseangst"
+          }
+        },
+        "title": "Anleitungen"
+      },
+      "info": {
+        "links": {
+          "about": {
+            "href": "/about",
+            "label": "Über uns"
+          },
+          "about-abi": {
+            "href": "/about/abi",
+            "label": "Über Abi"
+          },
+          "all-guides": {
+            "href": "/for",
+            "label": "Alle Leitfäden"
+          },
+          "all-techniques": {
+            "href": "/breathe",
+            "label": "Alle Techniken"
+          },
+          "app": {
+            "href": "/breathing-app",
+            "label": "App"
+          },
+          "editorial-policy": {
+            "href": "/about/editorial-policy",
+            "label": "Redaktionsrichtlinie"
+          },
+          "embed": {
+            "href": "/embed",
+            "label": "Embed-Widget"
+          },
+          "my-stats": {
+            "href": "/stats",
+            "label": "Meine Statistiken"
+          },
+          "privacy": {
+            "href": "/privacy",
+            "label": "Datenschutz"
+          },
+          "visualizer": {
+            "href": "/breathing-visualizer",
+            "label": "Atem-Visualizer"
+          }
+        },
+        "title": "Info"
+      },
+      "situations": {
+        "links": {
+          "before-presentation": {
+            "href": "/box-breathing-before-presentation",
+            "label": "Vor einer Präsentation"
+          },
+          "before-surgery": {
+            "href": "/breathing-exercises-before-surgery",
+            "label": "Vor einer Operation"
+          },
+          "insomnia": {
+            "href": "/4-7-8-breathing-for-insomnia",
+            "label": "Schlaflosigkeit"
+          },
+          "labor": {
+            "href": "/breathing-exercises-for-labor",
+            "label": "Wehen & Geburt"
+          },
+          "panic-attack": {
+            "href": "/physiological-sigh-panic-attack",
+            "label": "Panikattacke"
+          }
+        },
+        "title": "Situationen"
+      },
+      "techniques": {
+        "links": {
+          "belly": {
+            "href": "/breathe/belly",
+            "label": "Bauchatmung"
+          },
+          "box": {
+            "href": "/breathe/box",
+            "label": "Box-Atmung"
+          },
+          "breath-of-fire": {
+            "href": "/breathe/breath-of-fire",
+            "label": "Feueratmung"
+          },
+          "buteyko": {
+            "href": "/breathe/buteyko",
+            "label": "Buteyko-Atmung"
+          },
+          "coherent": {
+            "href": "/breathe/coherent",
+            "label": "Kohärente Atmen"
+          },
+          "four-seven-eight": {
+            "href": "/breathe/4-7-8",
+            "label": "4-7-8 Atemtechnik"
+          },
+          "nadi-shodhana": {
+            "href": "/breathe/nadi-shodhana",
+            "label": "Nadi Shodhana"
+          },
+          "physiological-sigh": {
+            "href": "/breathe/physiological-sigh",
+            "label": "Physiologische Seufzer"
+          },
+          "pursed-lip": {
+            "href": "/breathe/pursed-lip",
+            "label": "Lippenbremse"
+          },
+          "tummo": {
+            "href": "/breathe/tummo",
+            "label": "Tummo-Atmung"
+          },
+          "ujjayi": {
+            "href": "/breathe/ujjayi",
+            "label": "Ujjayi-Atmung"
+          },
+          "wim-hof": {
+            "href": "/breathe/wim-hof",
+            "label": "Wim Hof Atmung"
+          }
+        },
+        "title": "Atemtechniken"
+      },
+      "timers": {
+        "links": {
+          "box-app": {
+            "href": "/box-breathing-app",
+            "label": "Box-Breathing-App"
+          },
+          "coherent-app": {
+            "href": "/coherent-breathing-app",
+            "label": "Kohärente Atmung App"
+          },
+          "five-minute": {
+            "href": "/5-minute-breathing-exercise",
+            "label": "5 Minuten"
+          },
+          "four-seven-eight-timer": {
+            "href": "/4-7-8-breathing-timer",
+            "label": "4-7-8 Timer"
+          },
+          "holiday": {
+            "href": "/holiday-breathing-exercises",
+            "label": "Urlaubsübungen"
+          },
+          "one-minute": {
+            "href": "/1-minute-breathing-exercise",
+            "label": "1 Minute"
+          },
+          "two-minute": {
+            "href": "/2-minute-breathing-exercise",
+            "label": "2 Minuten"
+          }
+        },
+        "title": "Timer"
+      }
+    },
+    "credits": {
+      "abiassi": "Abiassi",
+      "darkmatter": "Darkmatter AI Labs",
+      "prefix": "Erstellt von"
+    },
+    "languagesLink": "Verfügbar in Español, Português, Français, Deutsch, 日本語 →",
+    "safetyNote": "Stoppen Sie bei Schwindel, Kribbeln oder Engegefühl in der Brust. Setzen Sie später mit kürzeren, leichteren Atemzügen fort. Verzichten Sie während der Schwangerschaft oder auf ärztlichen Rat auf längere Atempausen."
+  },
+  "hero": {
+    "actions": {
+      "pickMode": "Modus wählen",
+      "startSession": "Sitzung starten"
+    },
+    "headingLevel": 1,
+    "label": "Kostenloser Visualisierer für Atemübungen",
+    "startButton": {
+      "color": "#e11d48",
+      "shadow": "0 12px 36px #e11d4860"
+    },
+    "subtitle": "Visuelle Taktvorgabe, die Ihrem Körper beim Entspannen hilft. Ruhe auf Abruf, jederzeit und überall.",
+    "title": "Tiefe Atemübungen"
+  },
+  "metadata": {
+    "description": "Beruhigen Sie Angst in 60 Sekunden mit unserem kostenlosen Atemvisualisierer. Entdecken Sie effektive Atemübungen wie Kastenatmung, die 4-7-8-Atemtechnik und das physiologische Seufzen – alles kostenlos und ohne Anmeldung. Bereits von über 10.000 Menschen genutzt. Probieren Sie es jetzt aus.",
+    "openGraph": {
+      "description": "Beruhigen Sie Angst in 60 Sekunden mit unserem kostenlosen Atem-Visualizer. Box-Atmung, 4-7-8 Atemtechnik, physiologisches Seufzen. Keine Anmeldung nötig.",
+      "image": {
+        "height": 630,
+        "width": 1200
+      },
+      "imageAlt": "Interaktiver Atem-Orb, der sich vor einem Korallenverlauf ausdehnt",
+      "siteName": "Tiefe Atemübungen",
+      "title": "Kostenloser Atem-Visualizer: Angst in 60 Sekunden beruhigen",
+      "type": "website"
+    },
+    "title": "Effektive Atemübungen: Angst in 60 Sekunden beruhigen mit unserem kostenlosen Visualizer",
+    "twitter": {
+      "creator": "@abiassi_",
+      "description": "Beruhigen Sie Angst in 60 Sekunden mit unserem kostenlosen Atem-Visualizer. Box-Atmung, 4-7-8 Atemtechnik, physiologisches Seufzen. Jetzt testen – keine Anmeldung.",
+      "title": "Kostenloser Atem-Visualizer: Angst in 60 Sekunden beruhigen"
+    }
+  },
+  "schema": {
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage"
+    },
+    "website": {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "description": "Geführter Atem-Visualizer mit einstellbarem Tempo. Visuelles Tempo, das deinem Körper hilft, jederzeit und überall herunterzuschalten.",
+      "name": "Tiefe Atemübungen",
+      "url": "https://deepbreathingexercises.com"
+    }
+  },
+  "sections": {
+    "editorialCards": {
+      "builtForRealLife": {
+        "body": "Kurze Einheiten (1–5 Min.) vor Meetings, zwischen Aufgaben oder zum Einschlafen.",
+        "eyebrow": "Für das echte Leben gemacht"
+      },
+      "calmByDesign": {
+        "body": "Langsames, gleichmäßiges Atmen erhöht oft die vagal vermittelte Herzratenvariabilität und senkt den wahrgenommenen Stress.",
+        "eyebrow": "Ruhe durch Design"
+      },
+      "yourPace": {
+        "body": "Wählen Sie 3–8 Sekunden pro Phase. Kleine, leise Atemzüge sind effektiver als „große“ Atemzüge.",
+        "eyebrow": "Ihr eigenes Tempo"
+      }
+    },
+    "faq": {
+      "items": {
+        "bestTime": {
+          "answer": "Vor einem Meeting oder Training, zwischen Phasen konzentrierter Arbeit oder vor dem Schlafengehen. Nutzen Sie physiologische Seufzer bei akuten Stressspitzen.",
+          "question": "Wann ist der beste Zeitpunkt?"
+        },
+        "howLong": {
+          "answer": "Beginnen Sie mit 60–120 Sek. Wenn es hilfreich ist, erweitern Sie auf 3–5 Min. Für HRV-Training sind 5–10 Min. ideal.",
+          "question": "Wie lange sollte ich üben?"
+        },
+        "lightHeaded": {
+          "answer": "Wahrscheinlich atmen Sie zu intensiv. Atmen Sie leiser, verkürzen Sie die Phasen oder machen Sie eine Pause.",
+          "question": "Was tun bei Schwindelgefühl?"
+        },
+        "medical": {
+          "answer": "Nein. Es ist ein Werkzeug zur Selbstregulierung. Wenn Sie an einer Herz-Lungen-Erkrankung leiden, schwanger sind oder schon einmal ohnmächtig geworden sind, vermeiden Sie lange Atempausen und halten Sie alles sanft.",
+          "question": "Ist das eine medizinische Behandlung?"
+        },
+        "timing": {
+          "answer": "Ja. Genau darum geht es. Nutzen Sie 3–8 Sek. pro Phase. Wenn Atempausen unangenehm sind, lassen Sie sie weg und atmen Sie gleichmäßig ein und aus.",
+          "question": "Kann ich die Zeiten anpassen?"
+        }
+      },
+      "title": "FAQ"
+    },
+    "infoCards": {
+      "bestMoments": {
+        "eyebrow": "Beste Gelegenheiten",
+        "items": {
+          "bedtime": "Zum Herunterfahren vor dem Schlafen",
+          "beforeEvents": "Vor Ereignissen",
+          "holidayStress": "Feiertagsstress",
+          "inFlight": "Während des Fluges",
+          "postConflict": "Nach Konflikten"
+        },
+        "title": "Jederzeit einschieben"
+      },
+      "dialItIn": {
+        "body": "Wählen Sie zwischen 3–8 Sek. pro Phase. Fangen Sie klein an. Gleichmäßigkeit ist wichtiger als Tiefe. Wenn Atempausen unangenehm sind, lassen Sie diese weg.",
+        "eyebrow": "Den Rhythmus finden",
+        "title": "Gleichmäßig statt tief"
+      },
+      "howLong": {
+        "eyebrow": "Wie lange?",
+        "items": {
+          "deeperShift": "• Tiefergehende Entspannung: 3–5 Minuten.",
+          "quickReset": "• Schneller Reset: 1–2 Minuten (4–8 Zyklen).",
+          "training": "• Trainingseffekt (Fokus auf Herzratenvariabilität): 5–10 Minuten bei gleichmäßigem Tempo."
+        },
+        "timerLinks": {
+          "fiveMin": "5 Min.",
+          "oneMin": "1 Min.",
+          "twoMin": "2 Min."
+        },
+        "title": "Passend für jeden Moment"
+      },
+      "practiceCues": {
+        "eyebrow": "Übungshinweise",
+        "items": {
+          "exhale": "• Das Ausatmen endet sanft – nicht mit Gewalt leer pressen.",
+          "nasal": "• Atmen Sie leise durch die Nase; spüren Sie, wie sich die Bauchatmung aktiviert.",
+          "shoulders": "• Schultern bleiben unten; Kiefer locker lassen."
+        },
+        "title": "Worauf Sie achten sollten"
+      },
+      "whyItWorks": {
+        "eyebrow": "Warum es funktioniert",
+        "items": {
+          "consistency": "• Beständigkeit zählt; kurze tägliche Einheiten sind besser als seltene lange.",
+          "exhale": "• Ein Fokus auf das Ausatmen oder ein 0,1-Hz-Rhythmus wirkt oft innerhalb von Minuten beruhigend.",
+          "hrv": "• Langsame Atemübungen können die Herzratenvariabilität während der Sitzung steigern."
+        },
+        "title": "Ruhiger in wenigen Minuten"
+      }
+    },
+    "modePicker": {
+      "allTechniquesLabel": "Alle Techniken →",
+      "featured": {
+        "box": {
+          "cardTitle": "Box-Atmung",
+          "color": "#e11d48",
+          "description": "Fokus & Stressreduktion (4-4-4-4)",
+          "displaySlug": "/box",
+          "href": "/breathe/box",
+          "mode": "Box Breathing",
+          "pillLabel": "Box-Atmung",
+          "slug": "box",
+          "startCta": "Sitzung starten →"
+        },
+        "coherent": {
+          "cardTitle": "Kohärente Atmung",
+          "color": "#059669",
+          "description": "Herzratenvariabilität (5.5-5.5)",
+          "displaySlug": "/coherent",
+          "href": "/breathe/coherent",
+          "mode": "Coherent Breathing",
+          "pillLabel": "Kohärente Atmen",
+          "slug": "coherent",
+          "startCta": "Sitzung starten →"
+        },
+        "fourSevenEight": {
+          "cardTitle": "4-7-8 Entspannung",
+          "color": "#4f46e5",
+          "description": "Schlaf & tiefe Entspannung (4-7-8)",
+          "displaySlug": "/4-7-8",
+          "href": "/breathe/4-7-8",
+          "mode": "4-7-8 Relax",
+          "pillLabel": "4-7-8 Atemtechnik",
+          "slug": "4-7-8",
+          "startCta": "Sitzung starten →"
+        },
+        "physiologicalSigh": {
+          "cardTitle": "Physiologischer Seufzer",
+          "color": "#0ea5e9",
+          "description": "Panik-Reset (Doppel-Inhale)",
+          "displaySlug": "/physiological-sigh",
+          "href": "/breathe/physiological-sigh",
+          "mode": "Physiological Sigh",
+          "pillLabel": "Physiologische Seufzer",
+          "slug": "physiological-sigh",
+          "startCta": "Sitzung starten →"
+        },
+        "wimHof": {
+          "cardTitle": "Wim Hof Atemtechnik",
+          "color": "#f97316",
+          "description": "Energie & Belastbarkeit (30 Atemzüge × 3 Runden)",
+          "displaySlug": "/wim-hof",
+          "href": "/breathe/wim-hof",
+          "mode": "Wim Hof Breathing",
+          "pillLabel": "Wim Hof Atmung",
+          "slug": "wim-hof",
+          "startCta": "Sitzung starten →"
+        }
+      },
+      "title": "Modus wählen"
+    },
+    "nextLinks": {
+      "intro": "Beginnen Sie mit der Seite, die zu Ihrer Situation passt: ein schneller Reset, ein Timer im App-Stil, ein Leitfaden zur Erholung beim Laufen oder eine fortgeschrittene Meditationstechnik.",
+      "links": {
+        "boxApp": "Box-Breathing-App",
+        "running": "Atemübungen für Läufer",
+        "tummo": "Tummo-Atmung",
+        "twoMinute": "2-Minuten-Reset"
+      },
+      "title": "Wohin als Nächstes?"
+    },
+    "precision": {
+      "body": "Drücken Sie Start und folgen Sie dem Kreis durch Einatmen, Pause, Ausatmen, Pause. Der Rhythmus ist anpassbar. Die Sitzungen sind kurz, die Wirkung spürbar.",
+      "title": "Präzise Atemtechniken."
+    },
+    "quickAnchor": {
+      "bullets": {
+        "easy": "• Bleiben Sie entspannt. Bei Schwindel Phasen verkürzen oder pausieren.",
+        "exhale": "• Das Ausatmen endet sanft – nicht mit Gewalt leer pressen.",
+        "nasal": "• Atmen Sie leise durch die Nase; spüren Sie, wie sich die Bauchatmung aktiviert."
+      },
+      "closing": "Finden Sie einen fließenden Rhythmus. Kleine, stetige Atemzüge sind besser als tiefes Luftschnappen.",
+      "eyebrow": "Schneller Anker",
+      "intro": "Aufrecht sitzen. Schultern locker. Zunge am Gaumen. Sanft durch die Nase einatmen; leise durch die Nase oder mit der Lippenbremse ausatmen.",
+      "title": "In einer Minute zur inneren Ruhe"
+    }
+  },
+  "site": {
+    "baseUrl": "https://deepbreathingexercises.com"
+  }
+}

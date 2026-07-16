@@ -1,0 +1,68 @@
+{
+  "expectedMessages": 50,
+  "locales": {
+    "de-de": {
+      "bytes": 4809,
+      "catalogExact": 45,
+      "catalogNormalized": 0,
+      "override": 5,
+      "path": "messages/de-de.json",
+      "publishable": true,
+      "replacement": 0,
+      "resolvedMessages": 50,
+      "sha256": "4258d06ca3738c122718c44619659ee21313c0ca0e37e15e7c2126ab9620dd3e",
+      "unresolved": 0
+    },
+    "es-es": {
+      "bytes": 4968,
+      "catalogExact": 45,
+      "catalogNormalized": 0,
+      "override": 5,
+      "path": "messages/es-es.json",
+      "publishable": true,
+      "replacement": 0,
+      "resolvedMessages": 50,
+      "sha256": "cada3864b90e1fe8ca872806db87606ad4555a3cf0b55e47277918b0b39a7a03",
+      "unresolved": 0
+    },
+    "fr-fr": {
+      "bytes": 5303,
+      "catalogExact": 45,
+      "catalogNormalized": 0,
+      "override": 5,
+      "path": "messages/fr-fr.json",
+      "publishable": true,
+      "replacement": 0,
+      "resolvedMessages": 50,
+      "sha256": "0f9d20d9e27f71304fc14e345425b6e7f2c1816359bd61b3de11936b629f289d",
+      "unresolved": 0
+    },
+    "ja-jp": {
+      "bytes": 5189,
+      "catalogExact": 45,
+      "catalogNormalized": 0,
+      "override": 5,
+      "path": "messages/ja-jp.json",
+      "publishable": true,
+      "replacement": 0,
+      "resolvedMessages": 50,
+      "sha256": "ca7694aedd8fbf4bb0ddd48995725aca62a8604596a9add335e23889cca784b5",
+      "unresolved": 0
+    },
+    "pt-br": {
+      "bytes": 5068,
+      "catalogExact": 45,
+      "catalogNormalized": 0,
+      "override": 5,
+      "path": "messages/pt-br.json",
+      "publishable": true,
+      "replacement": 0,
+      "resolvedMessages": 50,
+      "sha256": "81609b0c61595d0b50659a5a7f5063d8100b2adb51ae555909f85eb80c224404",
+      "unresolved": 0
+    }
+  },
+  "routeId": "for",
+  "schemaVersion": 1,
+  "sourceRoute": "/for"
+}

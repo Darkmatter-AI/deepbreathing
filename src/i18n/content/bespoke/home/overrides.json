@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "overrides": [
+    {
+      "messagePath": "metadata.openGraph.imageAlt",
+      "sourceText": "Interactive breathing orb expanding against a coral gradient",
+      "reviewedSourceHash": "a84e8e876522f398580c271b925306a16e54fb15191bddd3b7ab58c47c2d21ec",
+      "reason": "Reviewed translation for a current source string absent from the preserved root catalog.",
+      "translations": {
+        "de-de": "Interaktiver Atem-Orb, der sich vor einem Korallenverlauf ausdehnt",
+        "es-es": "Orbe de respiración interactivo expandiéndose sobre un degradado coral",
+        "fr-fr": "Orbe de respiration interactif se dilatant sur un dégradé corail",
+        "ja-jp": "コーラルグラデーションを背景に広がるインタラクティブな呼吸オーブ",
+        "pt-br": "Orbe de respiração interativo expandindo-se contra um gradiente coral"
+      }
+    },
+    {
+      "messagePath": "schema.website.description",
+      "sourceText": "Guided breathing visualizer with adjustable pacing. Visual pacing that helps your body downshift, anytime, anywhere.",
+      "reviewedSourceHash": "fb8fbd828d5be1fa6c417bb9c41782c8a6be181db93e06639d0f4c0e76fbee7f",
+      "reason": "Reviewed translation for a current source string absent from the preserved root catalog.",
+      "translations": {
+        "de-de": "Geführter Atem-Visualizer mit einstellbarem Tempo. Visuelles Tempo, das deinem Körper hilft, jederzeit und überall herunterzuschalten.",
+        "es-es": "Visualizador de respiración guiada con ritmo ajustable. Ritmo visual que ayuda a tu cuerpo a desacelerar, en cualquier momento y en cualquier lugar.",
+        "fr-fr": "Visualiseur de respiration guidée avec rythme réglable. Un rythme visuel qui aide votre corps à décélérer, n'importe quand, n'importe où.",
+        "ja-jp": "ペース調整可能なガイド付き呼吸ビジュアライザー。いつでもどこでも、体のギアを落とすのを助ける視覚的なペーシング。",
+        "pt-br": "Visualizador de respiração guiada com ritmo ajustável. Ritmo visual que ajuda o seu corpo a desacelerar, a qualquer hora, em qualquer lugar."
+      }
+    },
+    {
+      "messagePath": "footer.columns.info.links.embed.label",
+      "sourceText": "Embed Widget",
+      "reviewedSourceHash": "7037a05c29d1dcaad44428710e56238c83ea26fcd398f46cf67ce701ed821a12",
+      "reason": "Reviewed translation for a current source string absent from the preserved root catalog.",
+      "translations": {
+        "de-de": "Embed-Widget",
+        "es-es": "Widget de inserción",
+        "fr-fr": "Widget d'intégration",
+        "ja-jp": "埋め込みウィジェット",
+        "pt-br": "Widget de Incorporação"
+      }
+    },
+    {
+      "messagePath": "footer.columns.info.links.my-stats.label",
+      "sourceText": "My Stats",
+      "reviewedSourceHash": "88fc5597a9704339e3b4a7237ed4ed4f54635ad01a5bcc92ddb2f797fc85d1cb",
+      "reason": "Reviewed translation for a current source string absent from the preserved root catalog.",
+      "translations": {
+        "de-de": "Meine Statistiken",
+        "es-es": "Mis estadísticas",
+        "fr-fr": "Mes statistiques",
+        "ja-jp": "マイ統計",
+        "pt-br": "Minhas Estatísticas"
+      }
+    }
+  ]
+}

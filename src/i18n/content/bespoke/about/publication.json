@@ -1,0 +1,58 @@
+{
+  "expectedMessages": 31,
+  "locales": {
+    "de-de": {
+      "bytes": 2530,
+      "catalogMessages": 29,
+      "overrideMessages": 2,
+      "path": "messages/de-de.json",
+      "publishable": true,
+      "resolvedMessages": 31,
+      "reviewedReplacementMessages": 0,
+      "sha256": "6b6f96bb20a41bdbe46183c8672cb653ee137cca674f60f3a27e63f5598efd62"
+    },
+    "es-es": {
+      "bytes": 2621,
+      "catalogMessages": 29,
+      "overrideMessages": 2,
+      "path": "messages/es-es.json",
+      "publishable": true,
+      "resolvedMessages": 31,
+      "reviewedReplacementMessages": 0,
+      "sha256": "22d01ad15cc80e2643902036a2561d715639fc6fae30d7c5c500bf215bc847ef"
+    },
+    "fr-fr": {
+      "bytes": 2816,
+      "catalogMessages": 29,
+      "overrideMessages": 2,
+      "path": "messages/fr-fr.json",
+      "publishable": true,
+      "resolvedMessages": 31,
+      "reviewedReplacementMessages": 0,
+      "sha256": "4a4356746239fe176265b4d8b8d0443c44972d180d55675ee78358e3909127ad"
+    },
+    "ja-jp": {
+      "bytes": 2842,
+      "catalogMessages": 27,
+      "overrideMessages": 2,
+      "path": "messages/ja-jp.json",
+      "publishable": true,
+      "resolvedMessages": 31,
+      "reviewedReplacementMessages": 2,
+      "sha256": "9acec68500cfa30d583e9ba05d31a569bdf5edde07b191cbfd08a12bd749b39e"
+    },
+    "pt-br": {
+      "bytes": 2843,
+      "catalogMessages": 29,
+      "overrideMessages": 2,
+      "path": "messages/pt-br.json",
+      "publishable": true,
+      "resolvedMessages": 31,
+      "reviewedReplacementMessages": 0,
+      "sha256": "93ded25df67acbd07e7ba9acd87533648746b4dbd5db36077fa0822da74b3a7e"
+    }
+  },
+  "routeId": "about",
+  "schemaVersion": 1,
+  "sourceRoute": "/about"
+}

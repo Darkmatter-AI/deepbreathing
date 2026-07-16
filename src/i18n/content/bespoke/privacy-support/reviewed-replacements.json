@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "replacements": [
+    {
+      "route": "/privacy",
+      "messagePath": "metadata.description",
+      "sourceText": "Privacy policy for Deep Breathing Exercises, including optional accounts, practice sync, analytics, and deletion.",
+      "reviewedSourceHash": "b84b9a07f0434762b88e79f2638c05c15bcb908bf7642ffeb5e2dd5ea793cea5",
+      "reason": "Current privacy metadata is newer than the preservation catalog and is translated without changing its scope.",
+      "translations": {
+        "de-de": "Datenschutzerklärung für Deep Breathing Exercises, einschließlich optionaler Konten, Synchronisierung der Atemübungen, Analysen und Löschung.",
+        "es-es": "Política de privacidad de Deep Breathing Exercises, incluidas las cuentas opcionales, la sincronización de prácticas, el análisis y la eliminación.",
+        "fr-fr": "Politique de confidentialité de Deep Breathing Exercises, y compris les comptes facultatifs, la synchronisation des pratiques, les analyses et la suppression.",
+        "ja-jp": "Deep Breathing Exercisesのプライバシーポリシー。任意のアカウント、練習データの同期、分析、削除について説明します。",
+        "pt-br": "Política de privacidade do Deep Breathing Exercises, incluindo contas opcionais, sincronização de práticas, análises e exclusão."
+      }
+    },
+    {
+      "route": "/privacy",
+      "messagePath": "hero.intro",
+      "sourceText": "Breathing works without an account. If you choose to sign in, we use your data only to provide and improve the service.",
+      "reviewedSourceHash": "c84e3d013a80da579cc36b418f037d9db4e7a87bd12af9756e2980430eba7904",
+      "reason": "Current account-optional privacy claim is absent from the preservation catalog.",
+      "translations": {
+        "de-de": "Die Atemübungen funktionieren ohne Konto. Wenn Sie sich anmelden, verwenden wir Ihre Daten nur, um den Dienst bereitzustellen und zu verbessern.",
+        "es-es": "Los ejercicios de respiración funcionan sin una cuenta. Si decides iniciar sesión, usamos tus datos únicamente para prestar y mejorar el servicio.",
+        "fr-fr": "Les exercices de respiration fonctionnent sans compte. Si vous choisissez de vous connecter, nous utilisons vos données uniquement pour fournir et améliorer le service.",
+        "ja-jp": "呼吸エクササイズはアカウントなしで利用できます。サインインを選択した場合、データはサービスの提供と改善のためにのみ使用します。",
+        "pt-br": "Os exercícios de respiração funcionam sem uma conta. Se você optar por entrar, usamos seus dados somente para fornecer e melhorar o serviço."
+      }
+    },
+    {
+      "route": "/privacy",
+      "messagePath": "sections.collection.body",
+      "sourceText": "Guests can practice without giving us a name or email. The app and website collect basic usage events such as session starts, ends, duration, breathing mode, and platform. The mobile app uses a random per-install analytics identifier. It does not use the advertising identifier and does not request tracking permission.",
+      "reviewedSourceHash": "3d768176144c4699d2cfb9d2176c8255cf46c33d7befde73db4ef8aeb8d35188",
+      "reason": "Current collection disclosure replaced the older catalog text and must retain every data-minimization claim.",
+      "translations": {
+        "de-de": "Gäste können üben, ohne uns einen Namen oder eine E-Mail-Adresse anzugeben. Die App und die Website erfassen grundlegende Nutzungsereignisse wie Beginn, Ende und Dauer einer Sitzung sowie Atemmodus und Plattform. Die mobile App verwendet eine zufällige Analysekennung pro Installation. Sie verwendet weder die Werbe-ID noch fordert sie eine Tracking-Berechtigung an.",
+        "es-es": "Los invitados pueden practicar sin facilitarnos un nombre ni un correo electrónico. La app y el sitio web recopilan eventos básicos de uso, como el inicio, el final y la duración de las sesiones, el modo de respiración y la plataforma. La app móvil usa un identificador de análisis aleatorio por instalación. No usa el identificador de publicidad ni solicita permiso de seguimiento.",
+        "fr-fr": "Les utilisateurs peuvent pratiquer sans nous communiquer de nom ni d'adresse e-mail. L'application et le site web collectent des événements d'utilisation de base, tels que le début, la fin et la durée des séances, le mode de respiration et la plateforme. L'application mobile utilise un identifiant d'analyse aléatoire propre à chaque installation. Elle n'utilise pas l'identifiant publicitaire et ne demande pas l'autorisation de suivi.",
+        "ja-jp": "ゲストは名前やメールアドレスを提供せずに練習できます。アプリとウェブサイトは、セッションの開始、終了、継続時間、呼吸モード、プラットフォームなどの基本的な利用イベントを収集します。モバイルアプリは、インストールごとにランダムな分析識別子を使用します。広告識別子は使用せず、トラッキング許可も要求しません。",
+        "pt-br": "Visitantes podem praticar sem nos fornecer nome ou e-mail. O app e o site coletam eventos básicos de uso, como início, término e duração da sessão, modo de respiração e plataforma. O app móvel usa um identificador de análise aleatório por instalação. Ele não usa o identificador de publicidade nem solicita permissão de rastreamento."
+      }
+    },
+    {
+      "route": "/privacy",
+      "messagePath": "sections.accounts.title",
+      "sourceText": "Optional accounts and sync",
+      "reviewedSourceHash": "6bd79b7e7d961a1463b5910e47cb973daa1d7a5fe67fcb3deef83298ae15d421",
+      "reason": "Current account and synchronization heading is absent from the preservation catalog.",
+      "translations": {
+        "de-de": "Optionale Konten und Synchronisierung",
+        "es-es": "Cuentas opcionales y sincronización",
+        "fr-fr": "Comptes facultatifs et synchronisation",
+        "ja-jp": "任意のアカウントと同期",
+        "pt-br": "Contas opcionais e sincronização"
+      }
+    },
+    {
+      "route": "/privacy",
+      "messagePath": "sections.accounts.body",
+      "sourceText": "If you sign in with Apple or Google, we receive the account identifier, email address, and any name the provider shares. We store your breathing session history, totals, streak days, and settings so they can sync between the website and your phone. Practice recorded while signed out stays on your device until you choose to sign in.",
+      "reviewedSourceHash": "f81b1d0f20b34556dde299585e515d652266e222acf0aeb1dfab578bc496ac90",
+      "reason": "Current provider, synchronization, and signed-out storage disclosure is absent from the preservation catalog.",
+      "translations": {
+        "de-de": "Wenn Sie sich mit Apple oder Google anmelden, erhalten wir die Kontokennung, die E-Mail-Adresse und jeden Namen, den der Anbieter weitergibt. Wir speichern den Verlauf Ihrer Atemsitzungen, Gesamtwerte, Serientage und Einstellungen, damit sie zwischen der Website und Ihrem Smartphone synchronisiert werden können. Übungen, die im abgemeldeten Zustand aufgezeichnet werden, bleiben auf Ihrem Gerät, bis Sie sich anmelden.",
+        "es-es": "Si inicias sesión con Apple o Google, recibimos el identificador de la cuenta, la dirección de correo electrónico y cualquier nombre que comparta el proveedor. Guardamos el historial de tus sesiones de respiración, los totales, los días de racha y la configuración para que puedan sincronizarse entre el sitio web y tu teléfono. Las prácticas registradas sin haber iniciado sesión permanecen en tu dispositivo hasta que decidas iniciar sesión.",
+        "fr-fr": "Si vous vous connectez avec Apple ou Google, nous recevons l'identifiant du compte, l'adresse e-mail et tout nom communiqué par le fournisseur. Nous stockons l'historique de vos séances de respiration, les totaux, les jours de série et les paramètres afin qu'ils puissent être synchronisés entre le site web et votre téléphone. Les pratiques enregistrées lorsque vous êtes déconnecté restent sur votre appareil jusqu'à ce que vous choisissiez de vous connecter.",
+        "ja-jp": "AppleまたはGoogleでサインインすると、当社はアカウント識別子、メールアドレス、およびプロバイダーが共有する名前を受け取ります。呼吸セッションの履歴、合計、連続日数、設定を保存し、ウェブサイトとスマートフォンの間で同期できるようにします。サインアウト中に記録された練習は、サインインを選択するまでデバイス上に残ります。",
+        "pt-br": "Se você entrar com a Apple ou o Google, recebemos o identificador da conta, o endereço de e-mail e qualquer nome compartilhado pelo provedor. Armazenamos o histórico das suas sessões de respiração, os totais, os dias de sequência e as configurações para que possam ser sincronizados entre o site e o seu telefone. As práticas registradas enquanto você está desconectado permanecem no dispositivo até que você opte por entrar."
+      }
+    },
+    {
+      "route": "/privacy",
+      "messagePath": "sections.useAndShare.title",
+      "sourceText": "How we use and share data",
+      "reviewedSourceHash": "2cd18c6e98edb2ef9724e84edb8ae546422623d6236bf2e8c8d2976e95f8857b",
+      "reason": "Current use-and-sharing heading is absent from the preservation catalog.",
+      "translations": {
+        "de-de": "Wie wir Daten verwenden und weitergeben",
+        "es-es": "Cómo usamos y compartimos los datos",
+        "fr-fr": "Comment nous utilisons et partageons les données",
+        "ja-jp": "データの使用と共有方法",
+        "pt-br": "Como usamos e compartilhamos dados"
+      }
+    },
+    {
+      "route": "/privacy",
+      "messagePath": "sections.useAndShare.body",
+      "sourceText": "We use this information for app functionality, account support, analytics, performance monitoring, and bug fixes. Service providers help us run authentication, email, analytics, hosting, and database storage. We do not sell personal information or use breathing data for advertising.",
+      "reviewedSourceHash": "0daed4c2d3288a4f849c1f461371f6d675a8fd505ff81104d673f7b3d82be2a9",
+      "reason": "Current use, processor, no-sale, and no-advertising disclosure is absent from the preservation catalog.",
+      "translations": {
+        "de-de": "Wir verwenden diese Informationen für die App-Funktionalität, den Kontosupport, Analysen, die Leistungsüberwachung und Fehlerbehebungen. Dienstanbieter helfen uns bei Authentifizierung, E-Mail, Analysen, Hosting und Datenbankspeicherung. Wir verkaufen keine personenbezogenen Informationen und verwenden Atemdaten nicht für Werbung.",
+        "es-es": "Usamos esta información para el funcionamiento de la app, la asistencia de cuentas, el análisis, la supervisión del rendimiento y la corrección de errores. Los proveedores de servicios nos ayudan con la autenticación, el correo electrónico, el análisis, el alojamiento y el almacenamiento de la base de datos. No vendemos información personal ni usamos los datos de respiración para publicidad.",
+        "fr-fr": "Nous utilisons ces informations pour le fonctionnement de l'application, l'assistance liée aux comptes, les analyses, la surveillance des performances et la correction des bugs. Des prestataires nous aident à assurer l'authentification, les e-mails, les analyses, l'hébergement et le stockage de la base de données. Nous ne vendons pas d'informations personnelles et n'utilisons pas les données de respiration à des fins publicitaires.",
+        "ja-jp": "この情報は、アプリの機能、アカウントサポート、分析、パフォーマンス監視、バグ修正のために使用します。サービスプロバイダーは、認証、メール、分析、ホスティング、データベース保存の運用を支援します。個人情報を販売したり、呼吸データを広告に使用したりすることはありません。",
+        "pt-br": "Usamos essas informações para o funcionamento do app, suporte à conta, análises, monitoramento de desempenho e correções de erros. Prestadores de serviços nos ajudam a operar autenticação, e-mail, análises, hospedagem e armazenamento de banco de dados. Não vendemos informações pessoais nem usamos dados de respiração para publicidade."
+      }
+    },
+    {
+      "route": "/privacy",
+      "messagePath": "sections.deletion.title",
+      "sourceText": "Your choices and deletion",
+      "reviewedSourceHash": "43e623b4b0a31d446e48e09b2407a2713805c67ccd532345df84f60dc81a717f",
+      "reason": "Current choices and deletion heading is absent from the preservation catalog.",
+      "translations": {
+        "de-de": "Ihre Wahlmöglichkeiten und Löschung",
+        "es-es": "Tus opciones y la eliminación",
+        "fr-fr": "Vos choix et la suppression",
+        "ja-jp": "選択肢と削除",
+        "pt-br": "Suas escolhas e exclusão"
+      }
+    },
+    {
+      "route": "/privacy",
+      "messagePath": "sections.deletion.beforeAction",
+      "sourceText": "You may use the core breathing experience as a guest. Signed-in users can open the account menu and choose",
+      "reviewedSourceHash": "bd4e84e40d3705795a441f73eb524bb7908958ece94b3c1f21cc20d3275cd648",
+      "reason": "Current guest-use and in-product deletion instructions are absent from the preservation catalog.",
+      "translations": {
+        "de-de": "Sie können das grundlegende Atemangebot als Gast nutzen. Angemeldete Nutzer können das Kontomenü öffnen und Folgendes auswählen",
+        "es-es": "Puedes usar la experiencia principal de respiración como invitado. Los usuarios que hayan iniciado sesión pueden abrir el menú de la cuenta y elegir",
+        "fr-fr": "Vous pouvez utiliser l'expérience de respiration principale en tant qu'utilisateur non connecté. Les utilisateurs connectés peuvent ouvrir le menu du compte et choisir",
+        "ja-jp": "ゲストとして中核となる呼吸体験を利用できます。サインインしているユーザーはアカウントメニューを開き、次を選択できます",
+        "pt-br": "Você pode usar a experiência principal de respiração como visitante. Usuários conectados podem abrir o menu da conta e escolher"
+      }
+    },
+    {
+      "route": "/privacy",
+      "messagePath": "sections.deletion.action",
+      "sourceText": "Delete account.",
+      "reviewedSourceHash": "8a17ab9433bbc3f1b4ba75ca3cb8e86652d40589e8ec51f69eb93aadb94e4fbe",
+      "reason": "Current in-product action label is absent from the preservation catalog.",
+      "translations": {
+        "de-de": "Konto löschen.",
+        "es-es": "Eliminar cuenta.",
+        "fr-fr": "Supprimer le compte.",
+        "ja-jp": "アカウントを削除。",
+        "pt-br": "Excluir conta."
+      }
+    },
+    {
+      "route": "/privacy",
+      "messagePath": "sections.deletion.afterAction",
+      "sourceText": "After confirmation, we permanently delete the account and synced practice data. Local data can be removed by deleting the app or clearing site data in your browser.",
+      "reviewedSourceHash": "a50d32b28113e9cbbb454c0a9b046943af40137ec7e337459e4cf1c6f695c17a",
+      "reason": "Current confirmed permanent deletion and local-data instructions supersede the stale email-based claim.",
+      "translations": {
+        "de-de": "Nach der Bestätigung löschen wir das Konto und die synchronisierten Übungsdaten dauerhaft. Lokale Daten können entfernt werden, indem Sie die App löschen oder die Websitedaten in Ihrem Browser löschen.",
+        "es-es": "Tras la confirmación, eliminamos permanentemente la cuenta y los datos de prácticas sincronizados. Los datos locales pueden eliminarse borrando la app o los datos del sitio en tu navegador.",
+        "fr-fr": "Après confirmation, nous supprimons définitivement le compte et les données de pratique synchronisées. Les données locales peuvent être supprimées en désinstallant l'application ou en effaçant les données du site dans votre navigateur.",
+        "ja-jp": "確認後、アカウントと同期された練習データを完全に削除します。ローカルデータは、アプリを削除するか、ブラウザでサイトデータを消去することで削除できます。",
+        "pt-br": "Após a confirmação, excluímos permanentemente a conta e os dados de prática sincronizados. Os dados locais podem ser removidos ao excluir o app ou limpar os dados do site no navegador."
+      }
+    },
+    {
+      "route": "/support",
+      "messagePath": "commonQuestions.deletion.beforeAction",
+      "sourceText": "Open your account menu in the app or website and choose",
+      "reviewedSourceHash": "77e79a722a22b3f564091cee5ac3717b15ffc07fd2a54a1aff0c8b6db4ce8161",
+      "reason": "Current in-product deletion instructions supersede the stale email-based catalog fragments.",
+      "translations": {
+        "de-de": "Öffnen Sie Ihr Kontomenü in der App oder auf der Website und wählen Sie",
+        "es-es": "Abre el menú de tu cuenta en la app o el sitio web y elige",
+        "fr-fr": "Ouvrez le menu de votre compte dans l'application ou sur le site web et choisissez",
+        "ja-jp": "アプリまたはウェブサイトでアカウントメニューを開き、次を選択します",
+        "pt-br": "Abra o menu da sua conta no app ou no site e escolha"
+      }
+    },
+    {
+      "route": "/support",
+      "messagePath": "commonQuestions.deletion.action",
+      "sourceText": "Delete account.",
+      "reviewedSourceHash": "8a17ab9433bbc3f1b4ba75ca3cb8e86652d40589e8ec51f69eb93aadb94e4fbe",
+      "reason": "Current in-product action label supersedes the stale email-based catalog fragments.",
+      "translations": {
+        "de-de": "Konto löschen.",
+        "es-es": "Eliminar cuenta.",
+        "fr-fr": "Supprimer le compte.",
+        "ja-jp": "アカウントを削除。",
+        "pt-br": "Excluir conta."
+      }
+    },
+    {
+      "route": "/support",
+      "messagePath": "commonQuestions.deletion.afterAction",
+      "sourceText": "We send a confirmation link before permanently removing your account and synced practice data.",
+      "reviewedSourceHash": "cabe7ea15d9592fe2f32f577e0f5c1d51f2489609953fdadf3f9bc084517ea97",
+      "reason": "Current confirmation-link deletion claim supersedes the stale email-subject and 30-day catalog claim.",
+      "translations": {
+        "de-de": "Wir senden einen Bestätigungslink, bevor wir Ihr Konto und die synchronisierten Übungsdaten dauerhaft entfernen.",
+        "es-es": "Enviamos un enlace de confirmación antes de eliminar permanentemente tu cuenta y los datos de prácticas sincronizados.",
+        "fr-fr": "Nous envoyons un lien de confirmation avant de supprimer définitivement votre compte et les données de pratique synchronisées.",
+        "ja-jp": "アカウントと同期された練習データを完全に削除する前に、確認リンクを送信します。",
+        "pt-br": "Enviamos um link de confirmação antes de remover permanentemente sua conta e os dados de prática sincronizados."
+      }
+    }
+  ]
+}

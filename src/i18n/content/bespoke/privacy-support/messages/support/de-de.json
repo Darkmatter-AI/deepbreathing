@@ -1,0 +1,60 @@
+{
+  "backLink": "Zurück zum Visualisierer →",
+  "breadcrumb": {
+    "current": "Support",
+    "home": "Startseite"
+  },
+  "commonQuestions": {
+    "account": {
+      "answer": "Nein. Die App funktioniert ohne Konto. Sitzungen, Statistiken und Einstellungen werden lokal auf Ihrem Gerät gespeichert. Erstellen Sie nur dann ein Konto, wenn Sie Ihre Daten geräteübergreifend synchronisieren möchten.",
+      "question": "Brauche ich ein Konto?"
+    },
+    "audio": {
+      "answer": "Das ist beabsichtigt. Die App lässt akustische Hinweise weiterlaufen, damit Sie mit geschlossenen Augen atmen können, während das Telefon in der Tasche steckt. Sie können den Ton in den App-Einstellungen stummschalten.",
+      "question": "Warum läuft das Audio weiter, wenn ich den Bildschirm sperre?"
+    },
+    "data": {
+      "bodyAfterLink": "für alle Details.",
+      "bodyBeforeLink": "Nein. Sitzungsdaten werden auf Ihrem Gerät gespeichert. Wenn Sie ein Konto erstellen, werden Sitzungsstatistiken zur geräteübergreifenden Kontinuität auf unsere Server synchronisiert. Wir verkaufen keine Daten. Siehe unsere",
+      "linkLabel": "Datenschutzerklärung",
+      "question": "Werden meine Atemdaten weitergegeben?"
+    },
+    "deletion": {
+      "action": "Konto löschen.",
+      "afterAction": "Wir senden einen Bestätigungslink, bevor wir Ihr Konto und die synchronisierten Übungsdaten dauerhaft entfernen.",
+      "beforeAction": "Öffnen Sie Ihr Kontomenü in der App oder auf der Website und wählen Sie",
+      "question": "Wie lösche ich mein Konto?"
+    },
+    "medical": {
+      "answer": "Nein. Deep Breathing Exercises bietet geführte Atemsitzungen auf der Grundlage etablierter Techniken. Es handelt sich nicht um ein Medizinprodukt und diagnostiziert, behandelt oder verhindert keine Erkrankung. Konsultieren Sie einen Arzt oder eine Ärztin, bevor Sie mit einer neuen Atemübungspraxis beginnen, wenn Sie eine gesundheitliche Beeinträchtigung haben.",
+      "question": "Ist dies eine medizinische App?"
+    },
+    "title": "Häufige Fragen"
+  },
+  "contact": {
+    "darkmatterLabel": "Darkmatter AI Labs",
+    "emailAddress": "support@deepbreathingexercises.com",
+    "emailAfter": "und wir melden uns innerhalb eines Werktags bei Ihnen.",
+    "emailBefore": "Schreiben Sie uns an",
+    "teamBefore": "Sie erreichen das Team auch über",
+    "title": "Kontakt"
+  },
+  "hero": {
+    "eyebrow": "Tiefe Atemübungen",
+    "intro": "Wir helfen Ihnen gerne. Melden Sie sich bei Fragen zur App, zu Ihrem Konto oder zu Ihren Daten.",
+    "title": "Support"
+  },
+  "metadata": {
+    "description": "Holen Sie sich Hilfe zu Deep Breathing Exercises. Kontaktieren Sie uns bei Fragen zur App, zu Ihrem Konto oder zur Datenlöschung.",
+    "imageAlt": "Support",
+    "socialDescription": "Holen Sie sich Hilfe zu Deep Breathing Exercises.",
+    "socialTitle": "Support — Deep Breathing Exercises",
+    "title": "Support | Deep Breathing Exercises",
+    "twitterDescription": "Holen Sie sich Hilfe zu Deep Breathing Exercises.",
+    "twitterTitle": "Support — Deep Breathing Exercises"
+  },
+  "safety": {
+    "body": "Die Wim-Hof-Atemsequenz umfasst absichtliche Hyperventilation und Atemanhalten. Üben Sie Atemanhalten nicht im oder in der Nähe von Wasser. Beenden Sie die Übung, wenn Ihnen schwindelig oder benommen wird. Konsultieren Sie einen Arzt, bevor Sie beginnen, wenn Sie eine Herz-Kreislauf-Erkrankung, eine Atemwegserkrankung haben oder schwanger sind.",
+    "title": "Wim-Hof-Atmung — Sicherheitshinweis"
+  }
+}

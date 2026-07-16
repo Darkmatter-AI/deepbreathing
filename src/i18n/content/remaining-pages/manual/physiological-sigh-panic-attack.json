@@ -1,0 +1,160 @@
+{
+  "entries": [
+    {
+      "messageId": "catalog-placement.0f4a0236-fdd2-4659-b7ae-53f4b9f4dcef",
+      "reason": "Missing approved catalog translation for attr:div.nbb-panel:aria-label:pos:0",
+      "reviewedSourceHash": "4f338bb6f491836f59e6de2f3c49e8a402e9f646f223a280cb7627d8a5d9229d",
+      "scope": "content",
+      "sourceText": "Save your session",
+      "translations": {
+        "de-de": "Sitzung speichern",
+        "es-es": "Guarda tu sesión",
+        "fr-fr": "Enregistrez votre session",
+        "ja-jp": "セッションを保存",
+        "pt-br": "Salve sua sessão"
+      }
+    },
+    {
+      "messageId": "catalog-placement.f9cc6164-eaf1-4861-831d-920323e8c506",
+      "reason": "Missing approved catalog translation for attr:button.nbb-x.nbb-x-card:aria-label:pos:0",
+      "reviewedSourceHash": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed",
+      "scope": "content",
+      "sourceText": "Close",
+      "translations": {
+        "de-de": "Schließen",
+        "es-es": "Cerrar",
+        "fr-fr": "Fermer",
+        "ja-jp": "閉じる",
+        "pt-br": "Fechar"
+      }
+    },
+    {
+      "messageId": "catalog-placement.a3a2517d-c46e-4861-8df8-3f351ca33f7a",
+      "reason": "Missing approved catalog translation for sel:h2.nbb-title:ctx:heading:pos:0",
+      "reviewedSourceHash": "dc6151531a9458f0fd1cd4f986e4205ca241f154d7069b4824d2feedbfb812c4",
+      "scope": "content",
+      "sourceText": "Save your breathing practice journey",
+      "translations": {
+        "de-de": "Speichere deinen Atemübungs-Weg",
+        "es-es": "Guarda tu recorrido de práctica de respiración",
+        "fr-fr": "Enregistrez votre parcours de pratique respiratoire",
+        "ja-jp": "呼吸の練習の歩みを保存",
+        "pt-br": "Salve sua jornada de prática de respiração"
+      }
+    },
+    {
+      "messageId": "catalog-placement.95bc85dd-49a9-469c-a4e7-2b6608e5b481",
+      "reason": "Missing approved catalog translation for sel:div.nbb-eyebrow:ctx:div:pos:0",
+      "reviewedSourceHash": "91aa92ee57681bee4dc26ff99de5f27d024ecca4f583b99b46cc879b0f54cf8c",
+      "scope": "content",
+      "sourceText": "✓ SESSION COMPLETE",
+      "translations": {
+        "de-de": "✓ SITZUNG ABGESCHLOSSEN",
+        "es-es": "✓ SESIÓN COMPLETADA",
+        "fr-fr": "✓ SESSION TERMINÉE",
+        "ja-jp": "✓ セッション完了",
+        "pt-br": "✓ SESSÃO CONCLUÍDA"
+      }
+    },
+    {
+      "messageId": "catalog-placement.cff705c7-8ea3-4685-927a-532b9f522588",
+      "reason": "Missing approved catalog translation for sel:div.nbb-mode:ctx:div:pos:0",
+      "reviewedSourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f",
+      "scope": "chrome",
+      "sourceText": "Physiological Sigh",
+      "translations": {
+        "de-de": "Physiologischer Seufzer",
+        "es-es": "Suspiro fisiológico",
+        "fr-fr": "Soupir physiologique",
+        "ja-jp": "生理学的ため息",
+        "pt-br": "Suspiro fisiológico"
+      }
+    },
+    {
+      "messageId": "catalog-placement.a566a83e-4026-4709-8784-37378aee071d",
+      "reason": "Missing approved catalog translation for sel:span.nbb-g-label:ctx:span:pos:0",
+      "reviewedSourceHash": "cce937e891444a7417c696cdd80c0eed11deb383f3c42bdb8b591d5dfcaa398e",
+      "scope": "content",
+      "sourceText": "Continue with Google",
+      "translations": {
+        "de-de": "Mit Google fortfahren",
+        "es-es": "Continuar con Google",
+        "fr-fr": "Continuer avec Google",
+        "ja-jp": "Googleで続行",
+        "pt-br": "Continuar com o Google"
+      }
+    },
+    {
+      "messageId": "catalog-placement.9e6c34a1-8f54-49a1-8828-24998fbce638",
+      "reason": "Missing approved catalog translation for sel:span.nbb-g-sub:ctx:span:pos:0",
+      "reviewedSourceHash": "2d05edde2700731b408e66b88b0625ab0122322c3850062c075f16eb43b7d349",
+      "scope": "content",
+      "sourceText": "One tap. No password.",
+      "translations": {
+        "de-de": "Ein Tipp. Kein Passwort.",
+        "es-es": "Un toque. Sin contraseña.",
+        "fr-fr": "Un seul appui. Pas de mot de passe.",
+        "ja-jp": "ワンタップ。パスワード不要。",
+        "pt-br": "Um toque. Sem senha."
+      }
+    },
+    {
+      "messageId": "catalog-placement.b1b4731b-21d9-437d-81e3-f21e4da08d22",
+      "reason": "Missing approved catalog translation for attr:input.nbb-email-input:aria-label:pos:0",
+      "reviewedSourceHash": "f2488fd4ef4adbc6ac61300083f2c33980e48bb4bbf3c540ad760d61fc36f420",
+      "scope": "content",
+      "sourceText": "Email address",
+      "translations": {
+        "de-de": "E-Mail-Adresse",
+        "es-es": "Dirección de correo electrónico",
+        "fr-fr": "Adresse e-mail",
+        "ja-jp": "メールアドレス",
+        "pt-br": "Endereço de e-mail"
+      }
+    },
+    {
+      "messageId": "catalog-placement.fdf7e5cc-12a3-4331-bf21-038981fc633c",
+      "reason": "Missing approved catalog translation for attr:input.nbb-email-input:placeholder:pos:0",
+      "reviewedSourceHash": "2837f6fa1c84ecc9f4d745b5df455c27db84dba89d167eb2863ae293994736b5",
+      "scope": "content",
+      "sourceText": "Enter your email",
+      "translations": {
+        "de-de": "E-Mail-Adresse eingeben",
+        "es-es": "Introduce tu correo electrónico",
+        "fr-fr": "Saisissez votre e-mail",
+        "ja-jp": "メールアドレスを入力",
+        "pt-br": "Digite seu e-mail"
+      }
+    },
+    {
+      "messageId": "catalog-placement.d70802d0-12d5-4ea2-a567-b6b435dfa6db",
+      "reason": "Missing approved catalog translation for sel:button.nbb-magic:ctx:cta_button:pos:0",
+      "reviewedSourceHash": "b386634c8b4382c837083126db57b819a9ec415563057903646df6121dd026d1",
+      "scope": "content",
+      "sourceText": "Send link",
+      "translations": {
+        "de-de": "Link senden",
+        "es-es": "Enviar enlace",
+        "fr-fr": "Envoyer le lien",
+        "ja-jp": "リンクを送信",
+        "pt-br": "Enviar link"
+      }
+    },
+    {
+      "messageId": "catalog-placement.943a0735-d10c-43e1-a41e-d074158e9165",
+      "reason": "Missing approved catalog translation for sel:button.nbb-textbtn:ctx:cta_button:pos:0",
+      "reviewedSourceHash": "392502efc3a96ad2eeca901c39fcd6a82f02115ae5fe1018f0bb198d27a6438e",
+      "scope": "content",
+      "sourceText": "or save with email",
+      "translations": {
+        "de-de": "oder per E-Mail speichern",
+        "es-es": "o guardar con el correo",
+        "fr-fr": "ou enregistrer par e-mail",
+        "ja-jp": "またはメールで保存",
+        "pt-br": "ou salve com e-mail"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/physiological-sigh-panic-attack"
+}

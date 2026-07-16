@@ -7,8 +7,8 @@ const ROOT = process.cwd();
 const HELPER_PATH = path.join(ROOT, "src", "lib", "share-utm.ts");
 const SHARE_BUTTON_FILES = [
   "src/components/ui/share-button.tsx",
-  "src/app/for/share-button.tsx",
-  "src/app/holiday-breathing-exercises/share-button.tsx",
+  "src/app/(site-en)/for/share-button.tsx",
+  "src/app/(site-en)/holiday-breathing-exercises/share-button.tsx",
 ];
 
 test("appendShareUtm helper exists and sets utm_source/medium/campaign", () => {

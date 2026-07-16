@@ -1,0 +1,75 @@
+{
+  "contact": {
+    "afterEmail": ". Il me parviendra directement.",
+    "beforeEmail": "Vous avez trouvé une erreur ? Une suggestion de fonctionnalité ? Envoyez-moi un message à",
+    "email": "hi@abiassi.com",
+    "title": "Contactez-moi"
+  },
+  "elsewhere": {
+    "linkedin": "LinkedIn →",
+    "personalSite": "abiassi.com (mon site personnel, distinct de ce projet) →",
+    "title": "Retrouvez-moi ailleurs",
+    "twitter": "X / Twitter (@abiassi_) →"
+  },
+  "footer": {
+    "about": "À propos",
+    "editorialPolicy": "Politique éditoriale",
+    "embed": "Intégrer",
+    "guides": "Guides",
+    "privacy": "Politique de confidentialité",
+    "techniques": "Techniques"
+  },
+  "hero": {
+    "eyebrow": "Exercices de respiration profonde",
+    "imageAlt": "Abi Abiassi",
+    "intro": "Fondateur. Photographe. J'ai créé ce site pour les techniques de respiration que j'utilise chaque jour.",
+    "title": "À propos d'Abi"
+  },
+  "metadata": {
+    "description": "Abi Abiassi a créé Deep Breathing Exercises comme un visualiseur gratuit pour les exercices de respiration qu'il utilise quotidiennement. Photographe,",
+    "socialDescription": "J'ai créé ce site comme visualiseur gratuit pour les techniques de respiration que j'utilise quotidiennement. Photographe, fondateur.",
+    "socialTitle": "À propos d'Abi Abiassi, fondateur de Deep Breathing Exercises",
+    "title": "À propos d'Abi Abiassi, fondateur de Deep Breathing Exercises",
+    "twitterDescription": "J'ai créé ce site comme visualiseur gratuit pour les techniques de respiration que j'utilise quotidiennement.",
+    "twitterTitle": "À propos d'Abi Abiassi"
+  },
+  "methodology": {
+    "disclaimer": "Je ne suis pas clinicien. Si vous avez un problème de santé, veuillez consulter votre médecin avant d'adopter une nouvelle pratique de respiration.",
+    "intro": "Chaque technique présentée sur le site suit le même processus de recherche, dans cet ordre.",
+    "policyLink": "Lire la politique éditoriale complète →",
+    "steps": {
+      "coverage": {
+        "body": "Les techniques que les gens recherchent et pratiquent réellement : respiration carrée, 4-7-8, cohérence cardiaque, soupir physiologique, Wim Hof, les variantes de pranayama, celles liées à la BPCO comme la respiration à lèvres pincées et Buteyko. Ainsi que leurs applications : anxiété, sommeil, concentration, tension artérielle.",
+        "title": "Choisir les sujets à couvrir."
+      },
+      "evidence": {
+        "body": "Les preuves solides sont énoncées directement. Les études plus modestes sont précédées de « la recherche suggère ». Les résultats faibles, contestés ou nuls sont clairement mentionnés. La méthode Wim Hof n'est pas plus efficace que la respiration lente pour l'humeur. La constriction de la gorge d'Ujjayi ne surpasse pas la respiration lente simple sur le baroréflexe.",
+        "title": "Adapter le langage aux preuves."
+      },
+      "lineage": {
+        "afterBook": "du XVe siècle pour Nadi Shodhana et Kapalabhati). S'il n'y a pas d'origine unique (lèvres pincées, abdominale), le préciser.",
+        "beforeBook": "Qui en est l'auteur. Mark Divine pour la respiration carrée. Andrew Weil pour le 4-7-8. Wim Hof pour sa méthode. Konstantin Buteyko pour sa méthode. Pour les pratiques de yoga plus anciennes, le texte le plus ancien que nous puissions citer (le",
+        "bookTitle": "Hatha Yoga Pradipika",
+        "title": "Identifier l'origine."
+      },
+      "research": {
+        "body": "PubMed, registres DOI, Cochrane. Les revues systématiques et les essais contrôlés randomisés (ECR) sont préférables aux études isolées. Les travaux sur les mécanismes, en particulier les études sur les souris, sont signalés comme tels afin de ne pas être confondus avec des preuves cliniques.",
+        "title": "Rechercher les études."
+      },
+      "sources": {
+        "body": "Un à trois liens évalués par des pairs par page, hyperliés sur l'affirmation spécifique. Pas de notes de bas de page numérotées. Pas de listes de références en fin d'article. Cliquez sur une phrase, accédez à l'étude.",
+        "title": "Placer les sources là où elles sont utiles."
+      },
+      "verification": {
+        "body": "Chaque URL de citation est récupérée et confirmée avant publication. Si une étude est payante, le lien renvoie à la version gratuite de PubMed Central.",
+        "title": "Tout vérifier."
+      }
+    },
+    "title": "Méthodologie"
+  },
+  "story": {
+    "family": "J'ai grandi dans une famille de méditants. Ce n'est que plus tard dans ma vie que j'ai commencé à pratiquer la respiration de manière plus intentionnelle. J'ai alors réalisé à quel point ces pratiques étaient utiles au quotidien. Elles ont également été inestimables pour mon travail de photographe.",
+    "hope": "J'espère que ce site vous sera aussi utile qu'il l'a été pour moi.",
+    "visualizer": "J'ai commencé à les rechercher et à les structurer pour moi-même, et j'ai pensé qu'un visualiseur pour vous guider à travers ces exercices serait plus utile que de naviguer dans d'innombrables vidéos YouTube et des sites web peu clairs."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "¿No puedes concentrarte? ¿Te distraes? Mejora tu concentración un 40% con respiración coherente, la técnica de 5 min que usan los mejores. Visualizador +",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "¿No puedes concentrarte? ¿Lees los mismos párrafos una y otra vez? ¿Te distraes cada 30 segundos? Mejora la concentración un 40 % con la respiración coherente, la técnica de 5 minutos que usan los mejores antes del trabajo profundo. Visualizador gratuito e investigación de Stanford.",
+      "reviewedSourceHash": "d3d47aae6b2ccca7cdd81f9537c6e85fe6f75ab14008a9c8cac0129fcc8c4007",
+      "sourcePath": "meta.description",
+      "sourceText": "Can't focus? Reread paragraphs? Distracted every 30 seconds? Boost focus by 40% with coherent breathing: the 5-minute technique top performers use before deep work. Free visualizer + Stanford research."
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/focus"
+}

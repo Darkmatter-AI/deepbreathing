@@ -1,0 +1,69 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "息を吐かずに、鼻から少しだけ空気を吸い込んで肺を完全に満たしてください。これが「ダブルインハル」で、 collapsed alveoli（虚脱した肺胞）を再膨張させます。",
+      "locale": "ja-jp",
+      "reason": "The approved Japanese value leaves the medical phrase 'collapsed alveoli' in English.",
+      "replacement": "息を吐かずに、鼻からもう一度少量の空気を吸い、肺を完全に満たします。これが、しぼんだ肺胞を再び膨らませる「二段階吸気」です。",
+      "reviewedSourceHash": "655327e54f12f5021f25ecc67dac73aa6f1d1dd5ef1ddfcd263919a4fca8e82a",
+      "sourcePath": "howTo.steps[2].instruction",
+      "sourceText": "Without exhaling, take a small second sip of air through your nose to completely fill your lungs. This is the 'double-inhale' that re-inflates collapsed alveoli."
+    },
+    {
+      "currentCatalogValue": "Corazón acelerado. Dificultad para respirar. Sensación de muerte inminente. Detén un ataque de pánico en 30 segundos con el suspiro fisiológico. Una de",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Corazón acelerado. Sensación de que vas a morir. Detén un ataque de pánico en 30 segundos con el suspiro fisiológico. Probado en Stanford. Temporizador gratuito.",
+      "reviewedSourceHash": "d1172e2259aa399b9deee7e0bead66e2cc4796e3e70d76f4434d497ac30cca81",
+      "sourcePath": "meta.description",
+      "sourceText": "Heart racing. Feel like you're dying. Stop a panic attack in 30 seconds with the physiological sigh. Stanford-tested. Free timer."
+    },
+    {
+      "currentCatalogValue": "Corazón acelerado. Dificultad para respirar. Sensación de muerte inminente. Detén un ataque de pánico en 30 segundos con el suspiro fisiológico. Una de",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Técnica de respiración probada en Stanford que detiene los ataques de pánico en 30 segundos. Para hiperventilación aguda y miedo abrumador. Temporizador gratuito.",
+      "reviewedSourceHash": "eefe758454aa203b2d61cfa712262af41043bca6d86d443822353304cad60195",
+      "sourcePath": "meta.ogDescription",
+      "sourceText": "Stanford-tested breathing technique stops panic attacks in 30 seconds. Used for acute hyperventilation and overwhelming fear. Free timer."
+    },
+    {
+      "currentCatalogValue": "Detén un ataque de pánico en 30 segundos: la técnica del",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Detén un ataque de pánico en 30 segundos: suspiro fisiológico",
+      "reviewedSourceHash": "ef43ed53712c0b304a8aac7e04aa73994bcfc9a3c5a8f7facf890055bcae0bce",
+      "sourcePath": "meta.ogTitle",
+      "sourceText": "Stop a Panic Attack in 30 Seconds - Physiological Sigh"
+    },
+    {
+      "currentCatalogValue": "Detén un ataque de pánico en 30 segundos: la técnica del",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Detén un ataque de pánico en 30 segundos: suspiro fisiológico",
+      "reviewedSourceHash": "508f662338f437543ad6f941d0c90c81e178bba69cbf46d176ea639085ee3536",
+      "sourcePath": "meta.title",
+      "sourceText": "Stop a Panic Attack in 30 Seconds: Physiological Sigh"
+    },
+    {
+      "currentCatalogValue": "Corazón acelerado. Dificultad para respirar. Sensación de muerte inminente. Detén un ataque de pánico en 30 segundos con el suspiro fisiológico. Una de",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Técnica de doble inhalación probada en Stanford que detiene los ataques de pánico en segundos. Temporizador gratuito.",
+      "reviewedSourceHash": "41593fc0d2c3ae44644b0d0ae0ec416e278bb86d8aa2e62f4ddd0b454281c446",
+      "sourcePath": "meta.twitterDescription",
+      "sourceText": "Stanford-tested double-inhale technique stops panic attacks in seconds. Free timer."
+    },
+    {
+      "currentCatalogValue": "Detén un ataque de pánico en 30 segundos: la técnica del",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Detén un ataque de pánico en 30 segundos: suspiro fisiológico",
+      "reviewedSourceHash": "3b974d7aef59f641bceef950d50b4df4bc66b6c412f7f8cde81864fec85dddff",
+      "sourcePath": "meta.twitterTitle",
+      "sourceText": "Stop Panic Attack in 30 Seconds - Physiological Sigh"
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/panic-attacks"
+}

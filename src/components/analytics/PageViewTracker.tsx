@@ -5,6 +5,12 @@ import { usePathname, useSearchParams } from "next/navigation";
 
 type Gtag = (command: "event", name: "page_view", params: Record<string, string>) => void;
 
+const INTERNAL_ROUTES = new Set(["/sensory-studio"]);
+
+function shouldTrackPageView(pathname: string) {
+  return !INTERNAL_ROUTES.has(pathname);
+}
+
 function getGtag(): Gtag | undefined {
   if (typeof window === "undefined") return undefined;
   const fn = (window as unknown as { gtag?: Gtag }).gtag;
@@ -26,7 +32,7 @@ export function PageViewTracker() {
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    if (!pathname) return;
+    if (!pathname || !shouldTrackPageView(pathname)) return;
     const query = searchParams?.toString();
     const path = query ? `${pathname}?${query}` : pathname;
     sendPageView(path);
@@ -36,6 +42,7 @@ export function PageViewTracker() {
     if (typeof document === "undefined") return;
     const onVisibility = () => {
       if (document.visibilityState !== "visible") return;
+      if (!shouldTrackPageView(window.location.pathname)) return;
       sendPageView(window.location.pathname + window.location.search);
     };
     document.addEventListener("visibilitychange", onVisibility);

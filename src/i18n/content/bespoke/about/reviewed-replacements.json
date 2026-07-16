@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "replacements": [
+    {
+      "messagePath": "sections.whoBuilt.title",
+      "sourceText": "Who built this",
+      "reviewedSourceHash": "53a097715029ef58b85621dda354e6e9ad80298dc498e0fa1f8e166357d4146c",
+      "reason": "The approved catalog heading is technically correct but unnatural in Japanese page context.",
+      "translations": {
+        "ja-jp": "このサイトを作った人"
+      }
+    },
+    {
+      "messagePath": "sections.whoBuilt.afterLink",
+      "sourceText": ", founder, photographer, and breathwork practitioner. He built it as a free visualizer for the techniques he uses daily.",
+      "reviewedSourceHash": "666cf2ceeef2a41e27e9741a3d10b61fbd4eafea220bd510d6a32dbdc46d23de",
+      "reason": "The independently translated Japanese fragments do not compose grammatically around the linked person name.",
+      "translations": {
+        "ja-jp": "（創設者・写真家・ブレスワーク実践者）が、日々実践している呼吸法を可視化する無料ツールとして制作しました。"
+      }
+    }
+  ]
+}

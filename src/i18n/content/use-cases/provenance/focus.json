@@ -1,0 +1,3141 @@
+{
+  "locales": {
+    "de-de": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "f10268a765bb0ecf0afdfae16a75bb2587e2c730d3f1f1b776a4cafc877308ea",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "d2f0841c7ea7def332ab7593579b5c7641f6413e5370c90320d8219c9fb09892",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "f607a43ced7c5ce11c681d395d966d0d1a214221d59fcba2227a52b39e36f0a9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-huberman-title": {
+          "sourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-meditation-title": {
+          "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-coherent-app": {
+          "sourceHash": "010fb498f61fb71ff823061853b1087f16d25ddccd8f102487e0542c1070e24a",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "48e8928bb649cacec18dd5c181848ec83e8f1c57c123b623207abe4d366326b6",
+          "sourceText": "This breathing technique is not a substitute for medical treatment of attention disorders like ADHD. If you have chronic difficulty with focus, distractibility, or executive function, consult a physician or psychologist for proper evaluation. Coherent breathing is a complementary practice, not a replacement for medication or therapy when clinically indicated.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "554b6259391538c5e97f20c717b5a84a4692f0e657f04ca469f14d38f038a84b",
+          "sourceText": "Box breathing (4-4-4-4 with holds) is great for acute stress relief and calming anxiety, but it's not optimized for sustained focus. Coherent breathing (6-6 with no holds) specifically targets the 0.1 Hz resonance frequency that maximizes HRV and cognitive performance. Box breathing is like a quick stress reset; coherent breathing is like tuning your entire nervous system for deep work. Use box breathing when you're anxious; use coherent breathing when you need to focus.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].question": {
+          "sourceHash": "2accd68dc950fbd19e11aa65c07b350e8d9278e268129d41fc0a5fc44dd7203f",
+          "sourceText": "How is this different from box breathing for focus?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "aacfbdc9da05806e5097ba80ff051917c17a2c7f673d3af914c99f0279b1b11c",
+          "sourceText": "Research suggests yes, but with caveats. Studies show that HRV biofeedback training (which includes coherent breathing) improves attention and reduces impulsivity in people with ADHD. However, it's not a replacement for medication or behavioral therapy. It's a complementary tool. If you have ADHD, you'll likely need: (1) Daily coherent breathing practice (10-20 min/day). (2) Medication if prescribed. (3) Behavioral strategies (time blocking, external structure). (4) Exercise and sleep optimization. Breathing alone won't 'fix' ADHD, but it can help.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "a269e3d387637e092a429a18580dfdf7913bd73a40c753b3506f53f78b6b158e",
+          "sourceText": "Can coherent breathing help with ADHD?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "1328de921d13166734dae2656d488bac6514832a096dd6a8d0e9d528e0be99e1",
+          "sourceText": "The coherence state typically lasts 60-120 minutes after a 5-10 minute session. Your HRV remains elevated, your nervous system stays balanced, and your prefrontal cortex remains optimally oxygenated. After 2 hours, the effect fades. This is why top performers do coherent breathing 2-3 times daily: once in the morning before deep work, once after lunch to combat the afternoon slump, and once in the evening to transition from work to rest.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "7e1deb7127bea1e20d9fc435d3645977584713d9270b26a337b076063fec7d28",
+          "sourceText": "How long does the focus boost last after I stop breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "43b4f179a4d3715144e0d9e3f0c098e6768e19dcc872cc094cb935fe63da850f",
+          "sourceText": "Three solutions: (1) Sit upright in a chair, not lying down or reclined, posture cues your nervous system for alertness. (2) Do this BEFORE you're exhausted. If you're sleep-deprived, no breathing technique will compensate; take a nap instead. (3) Keep your eyes open and focused on the visual guide. This engages your visual cortex and prevents drowsiness. If you're consistently falling asleep, it's a sign you need more actual sleep, not more breathwork.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "b4b6dee8ff656960ef8fed79022ba854c18e9ad6522b128043b06bd17e0fb66c",
+          "sourceText": "I fall asleep when I do this. How do I stay alert?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "131bbef01bcaaf24a17dbccd6c02024a093c91d3336968d08e7a9ed0f36d3b1e",
+          "sourceText": "Do it BEFORE working, not during. Coherent breathing requires your full attention for 5-10 minutes to reach the resonance frequency and create coherence. Trying to multitask defeats the purpose. Think of it like sharpening a knife before chopping vegetables. You stop, sharpen, then chop with a sharp blade. You breathe, reach coherence, then work with a focused brain. That said, once you're experienced (months of practice), you can use a modified version during low-intensity work (emails, admin tasks) to maintain calm.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "94d5d5d4c6ade1ca6b0706559f6349687c4acf1cabea2ae1143c36a847f84d38",
+          "sourceText": "Can I do this while working, or does it have to be separate?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "3d1b9c2a72d7a64689a3e8421b74c98dde6b15891dd316a384f912d33f180d32",
+          "sourceText": "Three strategic times: (1) Morning (7-9 AM): Do 10 minutes before your most important deep work block. Your cortisol is naturally high, so coherent breathing channels that energy into focus instead of anxiety. (2) Post-Lunch (1-3 PM): Combat the afternoon slump with 5 minutes to reset your nervous system. (3) Before High-Stakes Tasks: Do 5-10 minutes before presentations, difficult conversations, or creative work. Avoid doing it right before bed. It energizes and clarifies, which can interfere with sleep.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[5].question": {
+          "sourceHash": "b4c115c9e0c8c85f14665dceb50095a3be7a7642a3105e13edebf7b81c627353",
+          "sourceText": "What's the optimal time of day to do this for focus?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "70caedf1edb2f4d64638a9f4c3820b9a6ab7d1df065dd2237092993ebc4ffbeb",
+          "sourceText": "You sit down to focus but your mind won't cooperate. You reread the same paragraph three times. Notifications pull your attention in ten directions. Your prefrontal cortex (the CEO of your brain) is offline, hijacked by distractions. Coherent breathing brings it back online.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "692e046ed0021981102c78ea2a6be01e387d51ddb8eaa4ab74b72afd8e6009f4",
+          "sourceText": "The 5-minute breathing technique top performers use before deep work",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+          "sourceText": "How to Boost Focus by 40% with Coherent Breathing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "78c968305795a5e272dde96dc02768e05bdd4d5d1caa88b5ae48a0b20da3d859",
+          "sourceText": "Clear your workspace of distractions. Close browser tabs, silence phone, put on noise-canceling headphones if needed. Sit upright in a chair with both feet on the floor, posture matters for breathing mechanics and alertness.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "b182d0de235df8ac57fc78962beabeeaabf69fdbc3aed293e56a14b3f35f5cd2",
+          "sourceText": "Set up your environment",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "sourceText": "1 minute",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "8cfd233f0a6ffd3c2b3eb1e1200f73ff8f8f26c2ef348db343c35e1666605bc7",
+          "sourceText": "Use the coherent breathing visualizer below. Set to 5 breaths per minute (6-second inhale, 6-second exhale). The visual pacing helps maintain the precise rhythm needed for resonance.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "b89f8f0db202b53f9416c4d0c4f3350fcdb8e10bf1c5a867b91b1beb0d61b238",
+          "sourceText": "Start the visualizer",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "fa2600037624cc09a9fd01742a4fceb7760766c2d007e695d4ff0607f0643f16",
+          "sourceText": "30 seconds to set up",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "ecc2bdce9ef7e9a519b9d00a6c329aced5201cfa2823b7a1dc24b3d47a63c75e",
+          "sourceText": "Inhale slowly through your nose for 6 seconds, letting your belly expand. Exhale slowly through your nose for 6 seconds, letting your belly fall. The exhale should be relaxed, not forced. Focus on smooth, continuous airflow, no pauses between inhale and exhale.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "e4121a8f7c28410869cb6367d8c6a46a51c6d6405369dcd0f6a6b731983cdac1",
+          "sourceText": "Breathe through your nose",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "a79f6361979be92123f8156947ed763b30bd847cce6a75cc699d6f52905e0858",
+          "sourceText": "6 seconds in, 6 seconds out",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "35495249cf2f39b04b3fd8981dc0307efa43bab396f0bc63011be83067f51ae6",
+          "sourceText": "For the first minute, just follow the visual guide and find the rhythm. Don't worry about perfect technique, focus on consistency. Your breathing will naturally deepen and smooth out as you continue.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "f019b2e7c4e431b6d70721f03594c3fa228d52468f82c7f56bdc4f79136f415c",
+          "sourceText": "Find your rhythm",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "899252d922ea5ac312e8ad8bf665af7edcfdc0f9051f3364f5697cc7d71cbec7",
+          "sourceText": "First 1-2 minutes",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "1fe48fb756cfbaf24591fd1b7316898c215532bfdabe1370ad864577e9c685d9",
+          "sourceText": "After 2-3 minutes, you'll feel a shift: breathing becomes effortless, your mind quiets, you feel 'centered.' This is coherence. Your heart, brain, and nervous system are synchronized. Stay with this for at least 5 minutes total.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "5c7747139c4d02321982ad6c4d96d72f02755268723d02458e6aa71c22b2a146",
+          "sourceText": "Enter coherence",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "55170bd00e66c1b5a41c128d6c21af48dbf2a53c87505a7b874f09d67c911506",
+          "sourceText": "5-10 minutes total",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "75e9bd96d51652ad1946cc1e333e61356d4d803b0f81054f7789006de348b972",
+          "sourceText": "When done, don't jump straight to your task. Take 30 seconds to set a clear intention: 'For the next 90 minutes, I will focus only on [specific task].' Then begin. The coherence state will carry over for 60-120 minutes.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "f8eeda317ba6163dc76785afda8407cc0e721445a37b6705282b99c8d2c97ae7",
+          "sourceText": "Transition to work",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "f3d19541f3a5a842ce81be1a788750b3c7ae27c6328e6829ef0ab6e95ba1fae5",
+          "sourceText": "30 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].instruction": {
+          "sourceHash": "5b5eafda40ce069fd09e23dee1e7df88f24e777cd903897b5e1659213f7890d8",
+          "sourceText": "Between deep work blocks, use 2-3 minutes of coherent breathing to reset. This prevents decision fatigue and maintains high performance across multiple sessions.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].name": {
+          "sourceHash": "514e83463de6899b9fcd2b440740274b83a792517e70317e4d4a65cf603dd337",
+          "sourceText": "Use as a reset between tasks",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].timing": {
+          "sourceHash": "24eb99ceac9b0b55bed5cfafd2f6ce996d363705d4e7f717ffd2773db36f7edb",
+          "sourceText": "2-3 minutes between blocks",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "a91c82b3076845e472415a32dd86ab264fe71d5d332f41a966ff0d5d4c2404a2",
+          "sourceText": "Do this BEFORE you need to focus, not after you've already lost it. It's a proactive tool, not reactive",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "8f0c547cd3a97c1b5b1a94c514ea5f3ef165ed6c9f99dcc50fc6b0a4ca3235d2",
+          "sourceText": "5 minutes minimum to reach coherence; 10 minutes is ideal for maximum effect",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "7c35e72c5dfbd9680d52528602b86a8126423a1865ee23390d0638417a7e4ac0",
+          "sourceText": "Some people prefer 5.5 breaths/min (5.5-second inhale, 5.5-second exhale), experiment to find your resonance frequency",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "61490dcd764450982da111f67c25a70eb93d41b89d93eacf1d93f6c99211bc62",
+          "sourceText": "Nose breathing is critical, mouth breathing doesn't produce the same HRV response",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "5e8251133b63e2b6a0b10f3822d4a9ecf32b9f10de1dbda4fee52ba8e617f67f",
+          "sourceText": "Consistency matters more than duration: 5 minutes daily beats 30 minutes once a week",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[5]": {
+          "sourceHash": "28ae713b55c33c584dad0fc7b036881f8aecf118a35a3b8e8a45ffe5fc2bf516",
+          "sourceText": "Use this before: writing, coding, studying, creative work, important meetings, difficult conversations",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "d3d47aae6b2ccca7cdd81f9537c6e85fe6f75ab14008a9c8cac0129fcc8c4007",
+          "sourceText": "Can't focus? Reread paragraphs? Distracted every 30 seconds? Boost focus by 40% with coherent breathing—the 5-minute technique top performers use before deep work. Free visualizer + Stanford research.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "776b515f6bbd7b6c103432d22da40863e88ea1e0505d7827a0b27c776133c677",
+          "sourceText": "The 5-minute breathing technique top performers use before deep work. Boost focus by 40% with coherent breathing.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "ad545a075ef3ea4bfd3a6338f9a9d5e508f3cd6fcf74dda1afd39ed85986ee82",
+          "sourceText": "Boost Focus by 40%: Coherent Breathing for Concentration",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "7aa59645cf8a92741ae3a255429384ed6859a51488a8e5a423693a47d2994702",
+          "sourceText": "Boost Focus by 40%: Coherent Breathing for Concentration (5 Min/Day) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "36cf3e9284aeb53c817e2d50527b518a8709dd6f04b698e91029a599cf19b8ed",
+          "sourceText": "The 5-minute breathing technique top performers use before deep work. Free visualizer + research.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "ad545a075ef3ea4bfd3a6338f9a9d5e508f3cd6fcf74dda1afd39ed85986ee82",
+          "sourceText": "Boost Focus by 40%: Coherent Breathing for Concentration",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "4d85d8214bc08fbf1a43356a446f67983f3ca37dd6c3f0fa2b3e3b4c0da7c0a8",
+          "sourceText": "Attention fragmentation isn't laziness. It's physiology. When you're stressed, distracted, or sleep-deprived, your autonomic nervous system is imbalanced. Your sympathetic 'fight-or-flight' system is overactive (scanning for threats, jumping between tasks), while your parasympathetic 'rest-and-digest' system is suppressed. This imbalance starves your prefrontal cortex of the calm, oxygenated state it needs for sustained attention.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "26a116949df99056602851a0c23db0281fe3439428acc8908a403bbf26f0372f",
+          "sourceText": "Why Your Brain Can't Focus",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "f496a383e8585dfde723041210b058a9a5bcdbe35b4e9524344352d9f441d427",
+          "sourceText": "Rereading the same paragraph multiple times without comprehension",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "d6dc2e51e2634108eb989893c9a5371e6eeaaa03df86afb6337eb48fd11379c3",
+          "sourceText": "Unable to work for more than 10-15 minutes before needing a break",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "108d50ce52d63b9dc35242c8c0b6553b132da27a9a033c0f1c31f4399b04c6e1",
+          "sourceText": "Mind wandering constantly, even during important tasks",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "ff6b367896d878512a475d64e1322a9e989ce53f522c17fa6746a51e920528ff",
+          "sourceText": "Physical restlessness, can't sit still",
+          "status": "route-catalog-normalized"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "7655d88eb7a5ac55d9b33c3098965b62b6ffc2ea6dac144806d3763014e6ad2b",
+          "sourceText": "Feeling 'wired but tired' (anxious energy but mental exhaustion)",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "8a6ab05ba59bcec5984d5b172d07c5d2c62e80e74143bbd1e40af2e98ac5bca8",
+          "sourceText": "Taking hours to complete tasks that should take 30 minutes",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "da571ed60e6532307f993702b4e6b9030edfc2ae80f4a23e22a9bcbb7b508c32",
+          "sourceText": "Overwhelmed by decision fatigue and simple choices",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[7]": {
+          "sourceHash": "00c2bb38ac8f4743dfa8e2ff3980915cfe93d86ec5cb9744401559bdf2095317",
+          "sourceText": "Constantly checking phone, email, or notifications",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "e691ca28490510e88b3c299bfba69a331e4da8b98166e6ae1842f35c7507d960",
+          "sourceText": "Foundational research showing that HRV biofeedback training (coherent breathing at resonance frequency) improves attention, working memory, and cognitive flexibility.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "e0287dd7170d6155a193e136b82507c09f93896f0378cdbf122cfcc766baa72f",
+          "sourceText": "Heart Rate Variability Biofeedback and Cognitive Performance",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "7b58dbfa946230ac085107ef847a4dc5cb52d8f1ece5d691d62946fe3f5a1c0d",
+          "sourceText": "Study demonstrating that individuals with higher respiratory sinus arrhythmia (RSA, a component of HRV) show better performance on cognitive tasks requiring sustained attention.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "29efb72d78301470429641cd2a8f692bed935f13e92225751bdbbf8c9ce1a8bf",
+          "sourceText": "Respiratory Sinus Arrhythmia and Cognitive Performance",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "2affebbb6b3fcf92598bc9ce73264b5083d3c7dc40014f90c6fba770cb81086a",
+          "sourceText": "8-week study showing that slow diaphragmatic breathing training improved sustained attention and reduced negative affect in young adults.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "d863b7eff524919851ba5248ee7824be679b4f8d222a08fbb37ea921fc5a8763",
+          "sourceText": "The Effect of Diaphragmatic Breathing on Attention, Negative Affect and Stress",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "8fe02de367d900db6181904e70953a197c75fc33d8d723f11961730448eb2d47",
+          "sourceText": "Medical review explaining the relationship between HRV and executive function, including attention, decision-making, and emotional regulation.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "5d947496640c56f39c0fc5cada53a11e05d3564d6a7b23c12163efc8981806d8",
+          "sourceText": "Heart Rate Variability and Cognitive Function",
+          "status": "route-catalog-exact"
+        },
+        "references[4].summary": {
+          "sourceHash": "cbf4f2061299ef1f180aa31f354377cc8ad8a01724836ba61737f8126552ed3b",
+          "sourceText": "Practical overview of resonance frequency breathing research and protocols for improving HRV and performance.",
+          "status": "route-catalog-exact"
+        },
+        "references[4].title": {
+          "sourceHash": "aa192da46dbde75e9fed7a70a10aba672735883c118436eb3c82fee41e77b166",
+          "sourceText": "Resonance Frequency Breathing: A Science-Based Guide",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "895d6093911acc0862d90fca818072cdd14ed89878b315c9a6a0498d05ae56c0",
+          "sourceText": "Practice with the full coherent breathing visualizer and learn the complete HRV optimization protocol",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "16ac44b7afc4daa254717bc631330f1d30daa22231472b8e893be3b5b4689c6e",
+          "sourceText": "Want to deepen your meditation practice? Coherent breathing is the perfect entry point for beginners",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "314579db2589b8a4f5f7f72a7b463b4d89edf3abeb8ab4f0f4131aa019e781ee",
+          "sourceText": "Anxiety ruining your concentration? Try box breathing for acute stress relief",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "542ebf656b2ebd59e0c98729fc36207d08d5abfebb46005271e3b4965ff55d14",
+          "sourceText": "The exact breathing protocols Huberman uses before deep work and sustained focus sessions.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "7dc3bec3d805fae5f762d51d591ec30e5df6efe3e64ce81da76fa2381257f7e8",
+          "sourceText": "Why Coherent Breathing Works for Focus",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "eec339f62202229ca95bb00b05f8cf8e38e05a3a0da645728bd44f724364a6e9",
+          "sourceText": "HRV measures the variation in time between heartbeats. Higher HRV during practice is associated with parasympathetic activity and a more flexible nervous system. Studies show that coherent breathing at around 5 breaths per minute markedly increases HRV during the session itself, and that higher HRV correlates with attention, working memory, and cognitive control.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "42436c1486f9353726c6cbaf6c5c0c64584795f266ac5503158d5d3f97f38948",
+          "sourceText": "Maximizes Heart Rate Variability (HRV)",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "710d121ee4beaff6ddd36258437e8a16945a9e31c671b6792f712ee037fe01bc",
+          "sourceText": "Slow, rhythmic breathing (5 breaths/min) optimizes gas exchange in your lungs and increases oxygen delivery to the brain: especially the prefrontal cortex, which handles focus, decision-making, and impulse control. Studies using functional MRI show increased activation in attention networks after coherent breathing.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "b376a76d4458cc4e0575cf4d0b1951e76a8de7124a4dd8bb58602ee82e5a8021",
+          "sourceText": "Increases Prefrontal Cortex Oxygenation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "073129c54d4c60ec0fd3ea0e8416d5090348bd09a69caf476a8c1ef5bf349684",
+          "sourceText": "EEG research shows that coherent breathing increases alpha wave activity (8-12 Hz), the brain state associated with 'relaxed alertness', calm but focused. This is the ideal state for deep work, creative problem-solving, and learning. Too much beta (stress) = scattered. Too much theta (drowsy) = sluggish. Alpha = Goldilocks zone.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "6154a269835591b9ef53371998d93ef80a4aa3ee63584852923024aa8f6fbec3",
+          "sourceText": "Shifts Brain Waves to Alpha State",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "7bd4b2a51defffdd7696ca6659b75aabfc0548831d0b659a8ac23af9fa13f532",
+          "sourceText": "Coherent breathing creates a state of 'autonomic balance', equal activity in sympathetic (alertness) and parasympathetic (calm) branches. This balance is critical for sustained focus: you need enough sympathetic drive to stay engaged, but enough parasympathetic activity to avoid anxiety and distraction. It's the sweet spot for flow states.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "51f021ca47af646abf14dff8d35407b6bbd4bc97674934ea32913adfca1f7f6f",
+          "sourceText": "Balances Autonomic Nervous System",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "e9ff6ff87c57be53ddb611bcea875c090db738b674529433bc9b0aac41e0c33e",
+          "sourceText": "Coherent breathing (also called resonance frequency breathing) is breathing at a rate of 5 breaths per minute (0.1 Hz). This specific rate is associated with peak heart rate variability (HRV) during practice, a biomarker linked to nervous system regulation and cognitive performance. [Research suggests that a brief slow-breathing session before deep work can improve attention and working memory, particularly under stress](https://doi.org/10.1007/s41465-021-00218-3).",
+          "status": "repo-reviewed-manual"
+        },
+        "solution.heading": {
+          "sourceHash": "9da392f321aa43f63f6700f46562e5ab6a4ce3dee9278008b2234586147edc0b",
+          "sourceText": "Coherent Breathing: The 0.1 Hz Focus Protocol",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "aad0a6614e5ebcee24385fd8859172cd1512cbf65db38e96ea22b89d40a87d04",
+          "sourceText": "Your cardiovascular and nervous systems have a natural resonance frequency around 0.1 Hz (5 breaths/min). Breathing at this rate synchronizes your heart rhythms, blood pressure oscillations, and autonomic nervous system, creating a state of 'coherence' that optimizes brain function. It's like tuning a radio to the exact frequency for the clearest signal.",
+          "status": "route-catalog-normalized"
+        }
+      }
+    },
+    "es-es": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "f10268a765bb0ecf0afdfae16a75bb2587e2c730d3f1f1b776a4cafc877308ea",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "d2f0841c7ea7def332ab7593579b5c7641f6413e5370c90320d8219c9fb09892",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "f607a43ced7c5ce11c681d395d966d0d1a214221d59fcba2227a52b39e36f0a9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-huberman-title": {
+          "sourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-meditation-title": {
+          "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-coherent-app": {
+          "sourceHash": "010fb498f61fb71ff823061853b1087f16d25ddccd8f102487e0542c1070e24a",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "48e8928bb649cacec18dd5c181848ec83e8f1c57c123b623207abe4d366326b6",
+          "sourceText": "This breathing technique is not a substitute for medical treatment of attention disorders like ADHD. If you have chronic difficulty with focus, distractibility, or executive function, consult a physician or psychologist for proper evaluation. Coherent breathing is a complementary practice, not a replacement for medication or therapy when clinically indicated.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "554b6259391538c5e97f20c717b5a84a4692f0e657f04ca469f14d38f038a84b",
+          "sourceText": "Box breathing (4-4-4-4 with holds) is great for acute stress relief and calming anxiety, but it's not optimized for sustained focus. Coherent breathing (6-6 with no holds) specifically targets the 0.1 Hz resonance frequency that maximizes HRV and cognitive performance. Box breathing is like a quick stress reset; coherent breathing is like tuning your entire nervous system for deep work. Use box breathing when you're anxious; use coherent breathing when you need to focus.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].question": {
+          "sourceHash": "2accd68dc950fbd19e11aa65c07b350e8d9278e268129d41fc0a5fc44dd7203f",
+          "sourceText": "How is this different from box breathing for focus?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "aacfbdc9da05806e5097ba80ff051917c17a2c7f673d3af914c99f0279b1b11c",
+          "sourceText": "Research suggests yes, but with caveats. Studies show that HRV biofeedback training (which includes coherent breathing) improves attention and reduces impulsivity in people with ADHD. However, it's not a replacement for medication or behavioral therapy. It's a complementary tool. If you have ADHD, you'll likely need: (1) Daily coherent breathing practice (10-20 min/day). (2) Medication if prescribed. (3) Behavioral strategies (time blocking, external structure). (4) Exercise and sleep optimization. Breathing alone won't 'fix' ADHD, but it can help.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "a269e3d387637e092a429a18580dfdf7913bd73a40c753b3506f53f78b6b158e",
+          "sourceText": "Can coherent breathing help with ADHD?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "1328de921d13166734dae2656d488bac6514832a096dd6a8d0e9d528e0be99e1",
+          "sourceText": "The coherence state typically lasts 60-120 minutes after a 5-10 minute session. Your HRV remains elevated, your nervous system stays balanced, and your prefrontal cortex remains optimally oxygenated. After 2 hours, the effect fades. This is why top performers do coherent breathing 2-3 times daily: once in the morning before deep work, once after lunch to combat the afternoon slump, and once in the evening to transition from work to rest.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "7e1deb7127bea1e20d9fc435d3645977584713d9270b26a337b076063fec7d28",
+          "sourceText": "How long does the focus boost last after I stop breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "43b4f179a4d3715144e0d9e3f0c098e6768e19dcc872cc094cb935fe63da850f",
+          "sourceText": "Three solutions: (1) Sit upright in a chair, not lying down or reclined, posture cues your nervous system for alertness. (2) Do this BEFORE you're exhausted. If you're sleep-deprived, no breathing technique will compensate; take a nap instead. (3) Keep your eyes open and focused on the visual guide. This engages your visual cortex and prevents drowsiness. If you're consistently falling asleep, it's a sign you need more actual sleep, not more breathwork.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "b4b6dee8ff656960ef8fed79022ba854c18e9ad6522b128043b06bd17e0fb66c",
+          "sourceText": "I fall asleep when I do this. How do I stay alert?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "131bbef01bcaaf24a17dbccd6c02024a093c91d3336968d08e7a9ed0f36d3b1e",
+          "sourceText": "Do it BEFORE working, not during. Coherent breathing requires your full attention for 5-10 minutes to reach the resonance frequency and create coherence. Trying to multitask defeats the purpose. Think of it like sharpening a knife before chopping vegetables. You stop, sharpen, then chop with a sharp blade. You breathe, reach coherence, then work with a focused brain. That said, once you're experienced (months of practice), you can use a modified version during low-intensity work (emails, admin tasks) to maintain calm.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "94d5d5d4c6ade1ca6b0706559f6349687c4acf1cabea2ae1143c36a847f84d38",
+          "sourceText": "Can I do this while working, or does it have to be separate?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "3d1b9c2a72d7a64689a3e8421b74c98dde6b15891dd316a384f912d33f180d32",
+          "sourceText": "Three strategic times: (1) Morning (7-9 AM): Do 10 minutes before your most important deep work block. Your cortisol is naturally high, so coherent breathing channels that energy into focus instead of anxiety. (2) Post-Lunch (1-3 PM): Combat the afternoon slump with 5 minutes to reset your nervous system. (3) Before High-Stakes Tasks: Do 5-10 minutes before presentations, difficult conversations, or creative work. Avoid doing it right before bed. It energizes and clarifies, which can interfere with sleep.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[5].question": {
+          "sourceHash": "b4c115c9e0c8c85f14665dceb50095a3be7a7642a3105e13edebf7b81c627353",
+          "sourceText": "What's the optimal time of day to do this for focus?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "70caedf1edb2f4d64638a9f4c3820b9a6ab7d1df065dd2237092993ebc4ffbeb",
+          "sourceText": "You sit down to focus but your mind won't cooperate. You reread the same paragraph three times. Notifications pull your attention in ten directions. Your prefrontal cortex (the CEO of your brain) is offline, hijacked by distractions. Coherent breathing brings it back online.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "692e046ed0021981102c78ea2a6be01e387d51ddb8eaa4ab74b72afd8e6009f4",
+          "sourceText": "The 5-minute breathing technique top performers use before deep work",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+          "sourceText": "How to Boost Focus by 40% with Coherent Breathing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "78c968305795a5e272dde96dc02768e05bdd4d5d1caa88b5ae48a0b20da3d859",
+          "sourceText": "Clear your workspace of distractions. Close browser tabs, silence phone, put on noise-canceling headphones if needed. Sit upright in a chair with both feet on the floor, posture matters for breathing mechanics and alertness.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "b182d0de235df8ac57fc78962beabeeaabf69fdbc3aed293e56a14b3f35f5cd2",
+          "sourceText": "Set up your environment",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "sourceText": "1 minute",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "8cfd233f0a6ffd3c2b3eb1e1200f73ff8f8f26c2ef348db343c35e1666605bc7",
+          "sourceText": "Use the coherent breathing visualizer below. Set to 5 breaths per minute (6-second inhale, 6-second exhale). The visual pacing helps maintain the precise rhythm needed for resonance.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "b89f8f0db202b53f9416c4d0c4f3350fcdb8e10bf1c5a867b91b1beb0d61b238",
+          "sourceText": "Start the visualizer",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "fa2600037624cc09a9fd01742a4fceb7760766c2d007e695d4ff0607f0643f16",
+          "sourceText": "30 seconds to set up",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "ecc2bdce9ef7e9a519b9d00a6c329aced5201cfa2823b7a1dc24b3d47a63c75e",
+          "sourceText": "Inhale slowly through your nose for 6 seconds, letting your belly expand. Exhale slowly through your nose for 6 seconds, letting your belly fall. The exhale should be relaxed, not forced. Focus on smooth, continuous airflow, no pauses between inhale and exhale.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "e4121a8f7c28410869cb6367d8c6a46a51c6d6405369dcd0f6a6b731983cdac1",
+          "sourceText": "Breathe through your nose",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "a79f6361979be92123f8156947ed763b30bd847cce6a75cc699d6f52905e0858",
+          "sourceText": "6 seconds in, 6 seconds out",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "35495249cf2f39b04b3fd8981dc0307efa43bab396f0bc63011be83067f51ae6",
+          "sourceText": "For the first minute, just follow the visual guide and find the rhythm. Don't worry about perfect technique, focus on consistency. Your breathing will naturally deepen and smooth out as you continue.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "f019b2e7c4e431b6d70721f03594c3fa228d52468f82c7f56bdc4f79136f415c",
+          "sourceText": "Find your rhythm",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "899252d922ea5ac312e8ad8bf665af7edcfdc0f9051f3364f5697cc7d71cbec7",
+          "sourceText": "First 1-2 minutes",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "1fe48fb756cfbaf24591fd1b7316898c215532bfdabe1370ad864577e9c685d9",
+          "sourceText": "After 2-3 minutes, you'll feel a shift: breathing becomes effortless, your mind quiets, you feel 'centered.' This is coherence. Your heart, brain, and nervous system are synchronized. Stay with this for at least 5 minutes total.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "5c7747139c4d02321982ad6c4d96d72f02755268723d02458e6aa71c22b2a146",
+          "sourceText": "Enter coherence",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "55170bd00e66c1b5a41c128d6c21af48dbf2a53c87505a7b874f09d67c911506",
+          "sourceText": "5-10 minutes total",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "75e9bd96d51652ad1946cc1e333e61356d4d803b0f81054f7789006de348b972",
+          "sourceText": "When done, don't jump straight to your task. Take 30 seconds to set a clear intention: 'For the next 90 minutes, I will focus only on [specific task].' Then begin. The coherence state will carry over for 60-120 minutes.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "f8eeda317ba6163dc76785afda8407cc0e721445a37b6705282b99c8d2c97ae7",
+          "sourceText": "Transition to work",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "f3d19541f3a5a842ce81be1a788750b3c7ae27c6328e6829ef0ab6e95ba1fae5",
+          "sourceText": "30 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].instruction": {
+          "sourceHash": "5b5eafda40ce069fd09e23dee1e7df88f24e777cd903897b5e1659213f7890d8",
+          "sourceText": "Between deep work blocks, use 2-3 minutes of coherent breathing to reset. This prevents decision fatigue and maintains high performance across multiple sessions.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].name": {
+          "sourceHash": "514e83463de6899b9fcd2b440740274b83a792517e70317e4d4a65cf603dd337",
+          "sourceText": "Use as a reset between tasks",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].timing": {
+          "sourceHash": "24eb99ceac9b0b55bed5cfafd2f6ce996d363705d4e7f717ffd2773db36f7edb",
+          "sourceText": "2-3 minutes between blocks",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "a91c82b3076845e472415a32dd86ab264fe71d5d332f41a966ff0d5d4c2404a2",
+          "sourceText": "Do this BEFORE you need to focus, not after you've already lost it. It's a proactive tool, not reactive",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "8f0c547cd3a97c1b5b1a94c514ea5f3ef165ed6c9f99dcc50fc6b0a4ca3235d2",
+          "sourceText": "5 minutes minimum to reach coherence; 10 minutes is ideal for maximum effect",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "7c35e72c5dfbd9680d52528602b86a8126423a1865ee23390d0638417a7e4ac0",
+          "sourceText": "Some people prefer 5.5 breaths/min (5.5-second inhale, 5.5-second exhale), experiment to find your resonance frequency",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "61490dcd764450982da111f67c25a70eb93d41b89d93eacf1d93f6c99211bc62",
+          "sourceText": "Nose breathing is critical, mouth breathing doesn't produce the same HRV response",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "5e8251133b63e2b6a0b10f3822d4a9ecf32b9f10de1dbda4fee52ba8e617f67f",
+          "sourceText": "Consistency matters more than duration: 5 minutes daily beats 30 minutes once a week",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[5]": {
+          "sourceHash": "28ae713b55c33c584dad0fc7b036881f8aecf118a35a3b8e8a45ffe5fc2bf516",
+          "sourceText": "Use this before: writing, coding, studying, creative work, important meetings, difficult conversations",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "d3d47aae6b2ccca7cdd81f9537c6e85fe6f75ab14008a9c8cac0129fcc8c4007",
+          "sourceText": "Can't focus? Reread paragraphs? Distracted every 30 seconds? Boost focus by 40% with coherent breathing: the 5-minute technique top performers use before deep work. Free visualizer + Stanford research.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "776b515f6bbd7b6c103432d22da40863e88ea1e0505d7827a0b27c776133c677",
+          "sourceText": "The 5-minute breathing technique top performers use before deep work. Boost focus by 40% with coherent breathing.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "ad545a075ef3ea4bfd3a6338f9a9d5e508f3cd6fcf74dda1afd39ed85986ee82",
+          "sourceText": "Boost Focus by 40%: Coherent Breathing for Concentration",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "7aa59645cf8a92741ae3a255429384ed6859a51488a8e5a423693a47d2994702",
+          "sourceText": "Boost Focus by 40%: Coherent Breathing for Concentration (5 Min/Day) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "36cf3e9284aeb53c817e2d50527b518a8709dd6f04b698e91029a599cf19b8ed",
+          "sourceText": "The 5-minute breathing technique top performers use before deep work. Free visualizer + research.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "ad545a075ef3ea4bfd3a6338f9a9d5e508f3cd6fcf74dda1afd39ed85986ee82",
+          "sourceText": "Boost Focus by 40%: Coherent Breathing for Concentration",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "4d85d8214bc08fbf1a43356a446f67983f3ca37dd6c3f0fa2b3e3b4c0da7c0a8",
+          "sourceText": "Attention fragmentation isn't laziness. It's physiology. When you're stressed, distracted, or sleep-deprived, your autonomic nervous system is imbalanced. Your sympathetic 'fight-or-flight' system is overactive (scanning for threats, jumping between tasks), while your parasympathetic 'rest-and-digest' system is suppressed. This imbalance starves your prefrontal cortex of the calm, oxygenated state it needs for sustained attention.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "26a116949df99056602851a0c23db0281fe3439428acc8908a403bbf26f0372f",
+          "sourceText": "Why Your Brain Can't Focus",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "f496a383e8585dfde723041210b058a9a5bcdbe35b4e9524344352d9f441d427",
+          "sourceText": "Rereading the same paragraph multiple times without comprehension",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "d6dc2e51e2634108eb989893c9a5371e6eeaaa03df86afb6337eb48fd11379c3",
+          "sourceText": "Unable to work for more than 10-15 minutes before needing a break",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "108d50ce52d63b9dc35242c8c0b6553b132da27a9a033c0f1c31f4399b04c6e1",
+          "sourceText": "Mind wandering constantly, even during important tasks",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "ff6b367896d878512a475d64e1322a9e989ce53f522c17fa6746a51e920528ff",
+          "sourceText": "Physical restlessness, can't sit still",
+          "status": "route-catalog-normalized"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "7655d88eb7a5ac55d9b33c3098965b62b6ffc2ea6dac144806d3763014e6ad2b",
+          "sourceText": "Feeling 'wired but tired' (anxious energy but mental exhaustion)",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "8a6ab05ba59bcec5984d5b172d07c5d2c62e80e74143bbd1e40af2e98ac5bca8",
+          "sourceText": "Taking hours to complete tasks that should take 30 minutes",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "da571ed60e6532307f993702b4e6b9030edfc2ae80f4a23e22a9bcbb7b508c32",
+          "sourceText": "Overwhelmed by decision fatigue and simple choices",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[7]": {
+          "sourceHash": "00c2bb38ac8f4743dfa8e2ff3980915cfe93d86ec5cb9744401559bdf2095317",
+          "sourceText": "Constantly checking phone, email, or notifications",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "e691ca28490510e88b3c299bfba69a331e4da8b98166e6ae1842f35c7507d960",
+          "sourceText": "Foundational research showing that HRV biofeedback training (coherent breathing at resonance frequency) improves attention, working memory, and cognitive flexibility.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "e0287dd7170d6155a193e136b82507c09f93896f0378cdbf122cfcc766baa72f",
+          "sourceText": "Heart Rate Variability Biofeedback and Cognitive Performance",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "7b58dbfa946230ac085107ef847a4dc5cb52d8f1ece5d691d62946fe3f5a1c0d",
+          "sourceText": "Study demonstrating that individuals with higher respiratory sinus arrhythmia (RSA, a component of HRV) show better performance on cognitive tasks requiring sustained attention.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "29efb72d78301470429641cd2a8f692bed935f13e92225751bdbbf8c9ce1a8bf",
+          "sourceText": "Respiratory Sinus Arrhythmia and Cognitive Performance",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "2affebbb6b3fcf92598bc9ce73264b5083d3c7dc40014f90c6fba770cb81086a",
+          "sourceText": "8-week study showing that slow diaphragmatic breathing training improved sustained attention and reduced negative affect in young adults.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "d863b7eff524919851ba5248ee7824be679b4f8d222a08fbb37ea921fc5a8763",
+          "sourceText": "The Effect of Diaphragmatic Breathing on Attention, Negative Affect and Stress",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "8fe02de367d900db6181904e70953a197c75fc33d8d723f11961730448eb2d47",
+          "sourceText": "Medical review explaining the relationship between HRV and executive function, including attention, decision-making, and emotional regulation.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "5d947496640c56f39c0fc5cada53a11e05d3564d6a7b23c12163efc8981806d8",
+          "sourceText": "Heart Rate Variability and Cognitive Function",
+          "status": "route-catalog-exact"
+        },
+        "references[4].summary": {
+          "sourceHash": "cbf4f2061299ef1f180aa31f354377cc8ad8a01724836ba61737f8126552ed3b",
+          "sourceText": "Practical overview of resonance frequency breathing research and protocols for improving HRV and performance.",
+          "status": "route-catalog-exact"
+        },
+        "references[4].title": {
+          "sourceHash": "aa192da46dbde75e9fed7a70a10aba672735883c118436eb3c82fee41e77b166",
+          "sourceText": "Resonance Frequency Breathing: A Science-Based Guide",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "895d6093911acc0862d90fca818072cdd14ed89878b315c9a6a0498d05ae56c0",
+          "sourceText": "Practice with the full coherent breathing visualizer and learn the complete HRV optimization protocol",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "16ac44b7afc4daa254717bc631330f1d30daa22231472b8e893be3b5b4689c6e",
+          "sourceText": "Want to deepen your meditation practice? Coherent breathing is the perfect entry point for beginners",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "314579db2589b8a4f5f7f72a7b463b4d89edf3abeb8ab4f0f4131aa019e781ee",
+          "sourceText": "Anxiety ruining your concentration? Try box breathing for acute stress relief",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "542ebf656b2ebd59e0c98729fc36207d08d5abfebb46005271e3b4965ff55d14",
+          "sourceText": "The exact breathing protocols Huberman uses before deep work and sustained focus sessions.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "7dc3bec3d805fae5f762d51d591ec30e5df6efe3e64ce81da76fa2381257f7e8",
+          "sourceText": "Why Coherent Breathing Works for Focus",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "eec339f62202229ca95bb00b05f8cf8e38e05a3a0da645728bd44f724364a6e9",
+          "sourceText": "HRV measures the variation in time between heartbeats. Higher HRV during practice is associated with parasympathetic activity and a more flexible nervous system. Studies show that coherent breathing at around 5 breaths per minute markedly increases HRV during the session itself, and that higher HRV correlates with attention, working memory, and cognitive control.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "42436c1486f9353726c6cbaf6c5c0c64584795f266ac5503158d5d3f97f38948",
+          "sourceText": "Maximizes Heart Rate Variability (HRV)",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "710d121ee4beaff6ddd36258437e8a16945a9e31c671b6792f712ee037fe01bc",
+          "sourceText": "Slow, rhythmic breathing (5 breaths/min) optimizes gas exchange in your lungs and increases oxygen delivery to the brain: especially the prefrontal cortex, which handles focus, decision-making, and impulse control. Studies using functional MRI show increased activation in attention networks after coherent breathing.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "b376a76d4458cc4e0575cf4d0b1951e76a8de7124a4dd8bb58602ee82e5a8021",
+          "sourceText": "Increases Prefrontal Cortex Oxygenation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "073129c54d4c60ec0fd3ea0e8416d5090348bd09a69caf476a8c1ef5bf349684",
+          "sourceText": "EEG research shows that coherent breathing increases alpha wave activity (8-12 Hz), the brain state associated with 'relaxed alertness', calm but focused. This is the ideal state for deep work, creative problem-solving, and learning. Too much beta (stress) = scattered. Too much theta (drowsy) = sluggish. Alpha = Goldilocks zone.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "6154a269835591b9ef53371998d93ef80a4aa3ee63584852923024aa8f6fbec3",
+          "sourceText": "Shifts Brain Waves to Alpha State",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "7bd4b2a51defffdd7696ca6659b75aabfc0548831d0b659a8ac23af9fa13f532",
+          "sourceText": "Coherent breathing creates a state of 'autonomic balance', equal activity in sympathetic (alertness) and parasympathetic (calm) branches. This balance is critical for sustained focus: you need enough sympathetic drive to stay engaged, but enough parasympathetic activity to avoid anxiety and distraction. It's the sweet spot for flow states.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "51f021ca47af646abf14dff8d35407b6bbd4bc97674934ea32913adfca1f7f6f",
+          "sourceText": "Balances Autonomic Nervous System",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "e9ff6ff87c57be53ddb611bcea875c090db738b674529433bc9b0aac41e0c33e",
+          "sourceText": "Coherent breathing (also called resonance frequency breathing) is breathing at a rate of 5 breaths per minute (0.1 Hz). This specific rate is associated with peak heart rate variability (HRV) during practice, a biomarker linked to nervous system regulation and cognitive performance. [Research suggests that a brief slow-breathing session before deep work can improve attention and working memory, particularly under stress](https://doi.org/10.1007/s41465-021-00218-3).",
+          "status": "repo-reviewed-manual"
+        },
+        "solution.heading": {
+          "sourceHash": "9da392f321aa43f63f6700f46562e5ab6a4ce3dee9278008b2234586147edc0b",
+          "sourceText": "Coherent Breathing: The 0.1 Hz Focus Protocol",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "aad0a6614e5ebcee24385fd8859172cd1512cbf65db38e96ea22b89d40a87d04",
+          "sourceText": "Your cardiovascular and nervous systems have a natural resonance frequency around 0.1 Hz (5 breaths/min). Breathing at this rate synchronizes your heart rhythms, blood pressure oscillations, and autonomic nervous system, creating a state of 'coherence' that optimizes brain function. It's like tuning a radio to the exact frequency for the clearest signal.",
+          "status": "route-catalog-normalized"
+        }
+      }
+    },
+    "fr-fr": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "f10268a765bb0ecf0afdfae16a75bb2587e2c730d3f1f1b776a4cafc877308ea",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "d2f0841c7ea7def332ab7593579b5c7641f6413e5370c90320d8219c9fb09892",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "f607a43ced7c5ce11c681d395d966d0d1a214221d59fcba2227a52b39e36f0a9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-huberman-title": {
+          "sourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-meditation-title": {
+          "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-coherent-app": {
+          "sourceHash": "010fb498f61fb71ff823061853b1087f16d25ddccd8f102487e0542c1070e24a",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "48e8928bb649cacec18dd5c181848ec83e8f1c57c123b623207abe4d366326b6",
+          "sourceText": "This breathing technique is not a substitute for medical treatment of attention disorders like ADHD. If you have chronic difficulty with focus, distractibility, or executive function, consult a physician or psychologist for proper evaluation. Coherent breathing is a complementary practice, not a replacement for medication or therapy when clinically indicated.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "554b6259391538c5e97f20c717b5a84a4692f0e657f04ca469f14d38f038a84b",
+          "sourceText": "Box breathing (4-4-4-4 with holds) is great for acute stress relief and calming anxiety, but it's not optimized for sustained focus. Coherent breathing (6-6 with no holds) specifically targets the 0.1 Hz resonance frequency that maximizes HRV and cognitive performance. Box breathing is like a quick stress reset; coherent breathing is like tuning your entire nervous system for deep work. Use box breathing when you're anxious; use coherent breathing when you need to focus.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].question": {
+          "sourceHash": "2accd68dc950fbd19e11aa65c07b350e8d9278e268129d41fc0a5fc44dd7203f",
+          "sourceText": "How is this different from box breathing for focus?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "aacfbdc9da05806e5097ba80ff051917c17a2c7f673d3af914c99f0279b1b11c",
+          "sourceText": "Research suggests yes, but with caveats. Studies show that HRV biofeedback training (which includes coherent breathing) improves attention and reduces impulsivity in people with ADHD. However, it's not a replacement for medication or behavioral therapy. It's a complementary tool. If you have ADHD, you'll likely need: (1) Daily coherent breathing practice (10-20 min/day). (2) Medication if prescribed. (3) Behavioral strategies (time blocking, external structure). (4) Exercise and sleep optimization. Breathing alone won't 'fix' ADHD, but it can help.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "a269e3d387637e092a429a18580dfdf7913bd73a40c753b3506f53f78b6b158e",
+          "sourceText": "Can coherent breathing help with ADHD?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "1328de921d13166734dae2656d488bac6514832a096dd6a8d0e9d528e0be99e1",
+          "sourceText": "The coherence state typically lasts 60-120 minutes after a 5-10 minute session. Your HRV remains elevated, your nervous system stays balanced, and your prefrontal cortex remains optimally oxygenated. After 2 hours, the effect fades. This is why top performers do coherent breathing 2-3 times daily: once in the morning before deep work, once after lunch to combat the afternoon slump, and once in the evening to transition from work to rest.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "7e1deb7127bea1e20d9fc435d3645977584713d9270b26a337b076063fec7d28",
+          "sourceText": "How long does the focus boost last after I stop breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "43b4f179a4d3715144e0d9e3f0c098e6768e19dcc872cc094cb935fe63da850f",
+          "sourceText": "Three solutions: (1) Sit upright in a chair, not lying down or reclined, posture cues your nervous system for alertness. (2) Do this BEFORE you're exhausted. If you're sleep-deprived, no breathing technique will compensate; take a nap instead. (3) Keep your eyes open and focused on the visual guide. This engages your visual cortex and prevents drowsiness. If you're consistently falling asleep, it's a sign you need more actual sleep, not more breathwork.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "b4b6dee8ff656960ef8fed79022ba854c18e9ad6522b128043b06bd17e0fb66c",
+          "sourceText": "I fall asleep when I do this. How do I stay alert?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "131bbef01bcaaf24a17dbccd6c02024a093c91d3336968d08e7a9ed0f36d3b1e",
+          "sourceText": "Do it BEFORE working, not during. Coherent breathing requires your full attention for 5-10 minutes to reach the resonance frequency and create coherence. Trying to multitask defeats the purpose. Think of it like sharpening a knife before chopping vegetables. You stop, sharpen, then chop with a sharp blade. You breathe, reach coherence, then work with a focused brain. That said, once you're experienced (months of practice), you can use a modified version during low-intensity work (emails, admin tasks) to maintain calm.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "94d5d5d4c6ade1ca6b0706559f6349687c4acf1cabea2ae1143c36a847f84d38",
+          "sourceText": "Can I do this while working, or does it have to be separate?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "3d1b9c2a72d7a64689a3e8421b74c98dde6b15891dd316a384f912d33f180d32",
+          "sourceText": "Three strategic times: (1) Morning (7-9 AM): Do 10 minutes before your most important deep work block. Your cortisol is naturally high, so coherent breathing channels that energy into focus instead of anxiety. (2) Post-Lunch (1-3 PM): Combat the afternoon slump with 5 minutes to reset your nervous system. (3) Before High-Stakes Tasks: Do 5-10 minutes before presentations, difficult conversations, or creative work. Avoid doing it right before bed. It energizes and clarifies, which can interfere with sleep.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[5].question": {
+          "sourceHash": "b4c115c9e0c8c85f14665dceb50095a3be7a7642a3105e13edebf7b81c627353",
+          "sourceText": "What's the optimal time of day to do this for focus?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "70caedf1edb2f4d64638a9f4c3820b9a6ab7d1df065dd2237092993ebc4ffbeb",
+          "sourceText": "You sit down to focus but your mind won't cooperate. You reread the same paragraph three times. Notifications pull your attention in ten directions. Your prefrontal cortex (the CEO of your brain) is offline, hijacked by distractions. Coherent breathing brings it back online.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "692e046ed0021981102c78ea2a6be01e387d51ddb8eaa4ab74b72afd8e6009f4",
+          "sourceText": "The 5-minute breathing technique top performers use before deep work",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+          "sourceText": "How to Boost Focus by 40% with Coherent Breathing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "78c968305795a5e272dde96dc02768e05bdd4d5d1caa88b5ae48a0b20da3d859",
+          "sourceText": "Clear your workspace of distractions. Close browser tabs, silence phone, put on noise-canceling headphones if needed. Sit upright in a chair with both feet on the floor, posture matters for breathing mechanics and alertness.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "b182d0de235df8ac57fc78962beabeeaabf69fdbc3aed293e56a14b3f35f5cd2",
+          "sourceText": "Set up your environment",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "sourceText": "1 minute",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "8cfd233f0a6ffd3c2b3eb1e1200f73ff8f8f26c2ef348db343c35e1666605bc7",
+          "sourceText": "Use the coherent breathing visualizer below. Set to 5 breaths per minute (6-second inhale, 6-second exhale). The visual pacing helps maintain the precise rhythm needed for resonance.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "b89f8f0db202b53f9416c4d0c4f3350fcdb8e10bf1c5a867b91b1beb0d61b238",
+          "sourceText": "Start the visualizer",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "fa2600037624cc09a9fd01742a4fceb7760766c2d007e695d4ff0607f0643f16",
+          "sourceText": "30 seconds to set up",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "ecc2bdce9ef7e9a519b9d00a6c329aced5201cfa2823b7a1dc24b3d47a63c75e",
+          "sourceText": "Inhale slowly through your nose for 6 seconds, letting your belly expand. Exhale slowly through your nose for 6 seconds, letting your belly fall. The exhale should be relaxed, not forced. Focus on smooth, continuous airflow, no pauses between inhale and exhale.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "e4121a8f7c28410869cb6367d8c6a46a51c6d6405369dcd0f6a6b731983cdac1",
+          "sourceText": "Breathe through your nose",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "a79f6361979be92123f8156947ed763b30bd847cce6a75cc699d6f52905e0858",
+          "sourceText": "6 seconds in, 6 seconds out",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "35495249cf2f39b04b3fd8981dc0307efa43bab396f0bc63011be83067f51ae6",
+          "sourceText": "For the first minute, just follow the visual guide and find the rhythm. Don't worry about perfect technique, focus on consistency. Your breathing will naturally deepen and smooth out as you continue.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "f019b2e7c4e431b6d70721f03594c3fa228d52468f82c7f56bdc4f79136f415c",
+          "sourceText": "Find your rhythm",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "899252d922ea5ac312e8ad8bf665af7edcfdc0f9051f3364f5697cc7d71cbec7",
+          "sourceText": "First 1-2 minutes",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "1fe48fb756cfbaf24591fd1b7316898c215532bfdabe1370ad864577e9c685d9",
+          "sourceText": "After 2-3 minutes, you'll feel a shift: breathing becomes effortless, your mind quiets, you feel 'centered.' This is coherence. Your heart, brain, and nervous system are synchronized. Stay with this for at least 5 minutes total.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "5c7747139c4d02321982ad6c4d96d72f02755268723d02458e6aa71c22b2a146",
+          "sourceText": "Enter coherence",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "55170bd00e66c1b5a41c128d6c21af48dbf2a53c87505a7b874f09d67c911506",
+          "sourceText": "5-10 minutes total",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "75e9bd96d51652ad1946cc1e333e61356d4d803b0f81054f7789006de348b972",
+          "sourceText": "When done, don't jump straight to your task. Take 30 seconds to set a clear intention: 'For the next 90 minutes, I will focus only on [specific task].' Then begin. The coherence state will carry over for 60-120 minutes.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "f8eeda317ba6163dc76785afda8407cc0e721445a37b6705282b99c8d2c97ae7",
+          "sourceText": "Transition to work",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "f3d19541f3a5a842ce81be1a788750b3c7ae27c6328e6829ef0ab6e95ba1fae5",
+          "sourceText": "30 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].instruction": {
+          "sourceHash": "5b5eafda40ce069fd09e23dee1e7df88f24e777cd903897b5e1659213f7890d8",
+          "sourceText": "Between deep work blocks, use 2-3 minutes of coherent breathing to reset. This prevents decision fatigue and maintains high performance across multiple sessions.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].name": {
+          "sourceHash": "514e83463de6899b9fcd2b440740274b83a792517e70317e4d4a65cf603dd337",
+          "sourceText": "Use as a reset between tasks",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].timing": {
+          "sourceHash": "24eb99ceac9b0b55bed5cfafd2f6ce996d363705d4e7f717ffd2773db36f7edb",
+          "sourceText": "2-3 minutes between blocks",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "a91c82b3076845e472415a32dd86ab264fe71d5d332f41a966ff0d5d4c2404a2",
+          "sourceText": "Do this BEFORE you need to focus, not after you've already lost it. It's a proactive tool, not reactive",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "8f0c547cd3a97c1b5b1a94c514ea5f3ef165ed6c9f99dcc50fc6b0a4ca3235d2",
+          "sourceText": "5 minutes minimum to reach coherence; 10 minutes is ideal for maximum effect",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "7c35e72c5dfbd9680d52528602b86a8126423a1865ee23390d0638417a7e4ac0",
+          "sourceText": "Some people prefer 5.5 breaths/min (5.5-second inhale, 5.5-second exhale), experiment to find your resonance frequency",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "61490dcd764450982da111f67c25a70eb93d41b89d93eacf1d93f6c99211bc62",
+          "sourceText": "Nose breathing is critical, mouth breathing doesn't produce the same HRV response",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "5e8251133b63e2b6a0b10f3822d4a9ecf32b9f10de1dbda4fee52ba8e617f67f",
+          "sourceText": "Consistency matters more than duration: 5 minutes daily beats 30 minutes once a week",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[5]": {
+          "sourceHash": "28ae713b55c33c584dad0fc7b036881f8aecf118a35a3b8e8a45ffe5fc2bf516",
+          "sourceText": "Use this before: writing, coding, studying, creative work, important meetings, difficult conversations",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "d3d47aae6b2ccca7cdd81f9537c6e85fe6f75ab14008a9c8cac0129fcc8c4007",
+          "sourceText": "Can't focus? Reread paragraphs? Distracted every 30 seconds? Boost focus by 40% with coherent breathing—the 5-minute technique top performers use before deep work. Free visualizer + Stanford research.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "776b515f6bbd7b6c103432d22da40863e88ea1e0505d7827a0b27c776133c677",
+          "sourceText": "The 5-minute breathing technique top performers use before deep work. Boost focus by 40% with coherent breathing.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "ad545a075ef3ea4bfd3a6338f9a9d5e508f3cd6fcf74dda1afd39ed85986ee82",
+          "sourceText": "Boost Focus by 40%: Coherent Breathing for Concentration",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "7aa59645cf8a92741ae3a255429384ed6859a51488a8e5a423693a47d2994702",
+          "sourceText": "Boost Focus by 40%: Coherent Breathing for Concentration (5 Min/Day) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "36cf3e9284aeb53c817e2d50527b518a8709dd6f04b698e91029a599cf19b8ed",
+          "sourceText": "The 5-minute breathing technique top performers use before deep work. Free visualizer + research.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "ad545a075ef3ea4bfd3a6338f9a9d5e508f3cd6fcf74dda1afd39ed85986ee82",
+          "sourceText": "Boost Focus by 40%: Coherent Breathing for Concentration",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "4d85d8214bc08fbf1a43356a446f67983f3ca37dd6c3f0fa2b3e3b4c0da7c0a8",
+          "sourceText": "Attention fragmentation isn't laziness. It's physiology. When you're stressed, distracted, or sleep-deprived, your autonomic nervous system is imbalanced. Your sympathetic 'fight-or-flight' system is overactive (scanning for threats, jumping between tasks), while your parasympathetic 'rest-and-digest' system is suppressed. This imbalance starves your prefrontal cortex of the calm, oxygenated state it needs for sustained attention.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "26a116949df99056602851a0c23db0281fe3439428acc8908a403bbf26f0372f",
+          "sourceText": "Why Your Brain Can't Focus",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "f496a383e8585dfde723041210b058a9a5bcdbe35b4e9524344352d9f441d427",
+          "sourceText": "Rereading the same paragraph multiple times without comprehension",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "d6dc2e51e2634108eb989893c9a5371e6eeaaa03df86afb6337eb48fd11379c3",
+          "sourceText": "Unable to work for more than 10-15 minutes before needing a break",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "108d50ce52d63b9dc35242c8c0b6553b132da27a9a033c0f1c31f4399b04c6e1",
+          "sourceText": "Mind wandering constantly, even during important tasks",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "ff6b367896d878512a475d64e1322a9e989ce53f522c17fa6746a51e920528ff",
+          "sourceText": "Physical restlessness, can't sit still",
+          "status": "route-catalog-normalized"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "7655d88eb7a5ac55d9b33c3098965b62b6ffc2ea6dac144806d3763014e6ad2b",
+          "sourceText": "Feeling 'wired but tired' (anxious energy but mental exhaustion)",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "8a6ab05ba59bcec5984d5b172d07c5d2c62e80e74143bbd1e40af2e98ac5bca8",
+          "sourceText": "Taking hours to complete tasks that should take 30 minutes",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "da571ed60e6532307f993702b4e6b9030edfc2ae80f4a23e22a9bcbb7b508c32",
+          "sourceText": "Overwhelmed by decision fatigue and simple choices",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[7]": {
+          "sourceHash": "00c2bb38ac8f4743dfa8e2ff3980915cfe93d86ec5cb9744401559bdf2095317",
+          "sourceText": "Constantly checking phone, email, or notifications",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "e691ca28490510e88b3c299bfba69a331e4da8b98166e6ae1842f35c7507d960",
+          "sourceText": "Foundational research showing that HRV biofeedback training (coherent breathing at resonance frequency) improves attention, working memory, and cognitive flexibility.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "e0287dd7170d6155a193e136b82507c09f93896f0378cdbf122cfcc766baa72f",
+          "sourceText": "Heart Rate Variability Biofeedback and Cognitive Performance",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "7b58dbfa946230ac085107ef847a4dc5cb52d8f1ece5d691d62946fe3f5a1c0d",
+          "sourceText": "Study demonstrating that individuals with higher respiratory sinus arrhythmia (RSA, a component of HRV) show better performance on cognitive tasks requiring sustained attention.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "29efb72d78301470429641cd2a8f692bed935f13e92225751bdbbf8c9ce1a8bf",
+          "sourceText": "Respiratory Sinus Arrhythmia and Cognitive Performance",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "2affebbb6b3fcf92598bc9ce73264b5083d3c7dc40014f90c6fba770cb81086a",
+          "sourceText": "8-week study showing that slow diaphragmatic breathing training improved sustained attention and reduced negative affect in young adults.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "d863b7eff524919851ba5248ee7824be679b4f8d222a08fbb37ea921fc5a8763",
+          "sourceText": "The Effect of Diaphragmatic Breathing on Attention, Negative Affect and Stress",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "8fe02de367d900db6181904e70953a197c75fc33d8d723f11961730448eb2d47",
+          "sourceText": "Medical review explaining the relationship between HRV and executive function, including attention, decision-making, and emotional regulation.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "5d947496640c56f39c0fc5cada53a11e05d3564d6a7b23c12163efc8981806d8",
+          "sourceText": "Heart Rate Variability and Cognitive Function",
+          "status": "route-catalog-exact"
+        },
+        "references[4].summary": {
+          "sourceHash": "cbf4f2061299ef1f180aa31f354377cc8ad8a01724836ba61737f8126552ed3b",
+          "sourceText": "Practical overview of resonance frequency breathing research and protocols for improving HRV and performance.",
+          "status": "route-catalog-exact"
+        },
+        "references[4].title": {
+          "sourceHash": "aa192da46dbde75e9fed7a70a10aba672735883c118436eb3c82fee41e77b166",
+          "sourceText": "Resonance Frequency Breathing: A Science-Based Guide",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "895d6093911acc0862d90fca818072cdd14ed89878b315c9a6a0498d05ae56c0",
+          "sourceText": "Practice with the full coherent breathing visualizer and learn the complete HRV optimization protocol",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "16ac44b7afc4daa254717bc631330f1d30daa22231472b8e893be3b5b4689c6e",
+          "sourceText": "Want to deepen your meditation practice? Coherent breathing is the perfect entry point for beginners",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "314579db2589b8a4f5f7f72a7b463b4d89edf3abeb8ab4f0f4131aa019e781ee",
+          "sourceText": "Anxiety ruining your concentration? Try box breathing for acute stress relief",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "542ebf656b2ebd59e0c98729fc36207d08d5abfebb46005271e3b4965ff55d14",
+          "sourceText": "The exact breathing protocols Huberman uses before deep work and sustained focus sessions.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "7dc3bec3d805fae5f762d51d591ec30e5df6efe3e64ce81da76fa2381257f7e8",
+          "sourceText": "Why Coherent Breathing Works for Focus",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "eec339f62202229ca95bb00b05f8cf8e38e05a3a0da645728bd44f724364a6e9",
+          "sourceText": "HRV measures the variation in time between heartbeats. Higher HRV during practice is associated with parasympathetic activity and a more flexible nervous system. Studies show that coherent breathing at around 5 breaths per minute markedly increases HRV during the session itself, and that higher HRV correlates with attention, working memory, and cognitive control.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "42436c1486f9353726c6cbaf6c5c0c64584795f266ac5503158d5d3f97f38948",
+          "sourceText": "Maximizes Heart Rate Variability (HRV)",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "710d121ee4beaff6ddd36258437e8a16945a9e31c671b6792f712ee037fe01bc",
+          "sourceText": "Slow, rhythmic breathing (5 breaths/min) optimizes gas exchange in your lungs and increases oxygen delivery to the brain: especially the prefrontal cortex, which handles focus, decision-making, and impulse control. Studies using functional MRI show increased activation in attention networks after coherent breathing.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "b376a76d4458cc4e0575cf4d0b1951e76a8de7124a4dd8bb58602ee82e5a8021",
+          "sourceText": "Increases Prefrontal Cortex Oxygenation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "073129c54d4c60ec0fd3ea0e8416d5090348bd09a69caf476a8c1ef5bf349684",
+          "sourceText": "EEG research shows that coherent breathing increases alpha wave activity (8-12 Hz), the brain state associated with 'relaxed alertness', calm but focused. This is the ideal state for deep work, creative problem-solving, and learning. Too much beta (stress) = scattered. Too much theta (drowsy) = sluggish. Alpha = Goldilocks zone.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "6154a269835591b9ef53371998d93ef80a4aa3ee63584852923024aa8f6fbec3",
+          "sourceText": "Shifts Brain Waves to Alpha State",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "7bd4b2a51defffdd7696ca6659b75aabfc0548831d0b659a8ac23af9fa13f532",
+          "sourceText": "Coherent breathing creates a state of 'autonomic balance', equal activity in sympathetic (alertness) and parasympathetic (calm) branches. This balance is critical for sustained focus: you need enough sympathetic drive to stay engaged, but enough parasympathetic activity to avoid anxiety and distraction. It's the sweet spot for flow states.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "51f021ca47af646abf14dff8d35407b6bbd4bc97674934ea32913adfca1f7f6f",
+          "sourceText": "Balances Autonomic Nervous System",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "e9ff6ff87c57be53ddb611bcea875c090db738b674529433bc9b0aac41e0c33e",
+          "sourceText": "Coherent breathing (also called resonance frequency breathing) is breathing at a rate of 5 breaths per minute (0.1 Hz). This specific rate is associated with peak heart rate variability (HRV) during practice, a biomarker linked to nervous system regulation and cognitive performance. [Research suggests that a brief slow-breathing session before deep work can improve attention and working memory, particularly under stress](https://doi.org/10.1007/s41465-021-00218-3).",
+          "status": "repo-reviewed-manual"
+        },
+        "solution.heading": {
+          "sourceHash": "9da392f321aa43f63f6700f46562e5ab6a4ce3dee9278008b2234586147edc0b",
+          "sourceText": "Coherent Breathing: The 0.1 Hz Focus Protocol",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "aad0a6614e5ebcee24385fd8859172cd1512cbf65db38e96ea22b89d40a87d04",
+          "sourceText": "Your cardiovascular and nervous systems have a natural resonance frequency around 0.1 Hz (5 breaths/min). Breathing at this rate synchronizes your heart rhythms, blood pressure oscillations, and autonomic nervous system, creating a state of 'coherence' that optimizes brain function. It's like tuning a radio to the exact frequency for the clearest signal.",
+          "status": "route-catalog-normalized"
+        }
+      }
+    },
+    "ja-jp": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "f10268a765bb0ecf0afdfae16a75bb2587e2c730d3f1f1b776a4cafc877308ea",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "d2f0841c7ea7def332ab7593579b5c7641f6413e5370c90320d8219c9fb09892",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "f607a43ced7c5ce11c681d395d966d0d1a214221d59fcba2227a52b39e36f0a9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-huberman-title": {
+          "sourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-meditation-title": {
+          "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-coherent-app": {
+          "sourceHash": "010fb498f61fb71ff823061853b1087f16d25ddccd8f102487e0542c1070e24a",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "48e8928bb649cacec18dd5c181848ec83e8f1c57c123b623207abe4d366326b6",
+          "sourceText": "This breathing technique is not a substitute for medical treatment of attention disorders like ADHD. If you have chronic difficulty with focus, distractibility, or executive function, consult a physician or psychologist for proper evaluation. Coherent breathing is a complementary practice, not a replacement for medication or therapy when clinically indicated.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "554b6259391538c5e97f20c717b5a84a4692f0e657f04ca469f14d38f038a84b",
+          "sourceText": "Box breathing (4-4-4-4 with holds) is great for acute stress relief and calming anxiety, but it's not optimized for sustained focus. Coherent breathing (6-6 with no holds) specifically targets the 0.1 Hz resonance frequency that maximizes HRV and cognitive performance. Box breathing is like a quick stress reset; coherent breathing is like tuning your entire nervous system for deep work. Use box breathing when you're anxious; use coherent breathing when you need to focus.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].question": {
+          "sourceHash": "2accd68dc950fbd19e11aa65c07b350e8d9278e268129d41fc0a5fc44dd7203f",
+          "sourceText": "How is this different from box breathing for focus?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "aacfbdc9da05806e5097ba80ff051917c17a2c7f673d3af914c99f0279b1b11c",
+          "sourceText": "Research suggests yes, but with caveats. Studies show that HRV biofeedback training (which includes coherent breathing) improves attention and reduces impulsivity in people with ADHD. However, it's not a replacement for medication or behavioral therapy. It's a complementary tool. If you have ADHD, you'll likely need: (1) Daily coherent breathing practice (10-20 min/day). (2) Medication if prescribed. (3) Behavioral strategies (time blocking, external structure). (4) Exercise and sleep optimization. Breathing alone won't 'fix' ADHD, but it can help.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "a269e3d387637e092a429a18580dfdf7913bd73a40c753b3506f53f78b6b158e",
+          "sourceText": "Can coherent breathing help with ADHD?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "1328de921d13166734dae2656d488bac6514832a096dd6a8d0e9d528e0be99e1",
+          "sourceText": "The coherence state typically lasts 60-120 minutes after a 5-10 minute session. Your HRV remains elevated, your nervous system stays balanced, and your prefrontal cortex remains optimally oxygenated. After 2 hours, the effect fades. This is why top performers do coherent breathing 2-3 times daily: once in the morning before deep work, once after lunch to combat the afternoon slump, and once in the evening to transition from work to rest.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "7e1deb7127bea1e20d9fc435d3645977584713d9270b26a337b076063fec7d28",
+          "sourceText": "How long does the focus boost last after I stop breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "43b4f179a4d3715144e0d9e3f0c098e6768e19dcc872cc094cb935fe63da850f",
+          "sourceText": "Three solutions: (1) Sit upright in a chair, not lying down or reclined, posture cues your nervous system for alertness. (2) Do this BEFORE you're exhausted. If you're sleep-deprived, no breathing technique will compensate; take a nap instead. (3) Keep your eyes open and focused on the visual guide. This engages your visual cortex and prevents drowsiness. If you're consistently falling asleep, it's a sign you need more actual sleep, not more breathwork.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "b4b6dee8ff656960ef8fed79022ba854c18e9ad6522b128043b06bd17e0fb66c",
+          "sourceText": "I fall asleep when I do this. How do I stay alert?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "131bbef01bcaaf24a17dbccd6c02024a093c91d3336968d08e7a9ed0f36d3b1e",
+          "sourceText": "Do it BEFORE working, not during. Coherent breathing requires your full attention for 5-10 minutes to reach the resonance frequency and create coherence. Trying to multitask defeats the purpose. Think of it like sharpening a knife before chopping vegetables. You stop, sharpen, then chop with a sharp blade. You breathe, reach coherence, then work with a focused brain. That said, once you're experienced (months of practice), you can use a modified version during low-intensity work (emails, admin tasks) to maintain calm.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "94d5d5d4c6ade1ca6b0706559f6349687c4acf1cabea2ae1143c36a847f84d38",
+          "sourceText": "Can I do this while working, or does it have to be separate?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "3d1b9c2a72d7a64689a3e8421b74c98dde6b15891dd316a384f912d33f180d32",
+          "sourceText": "Three strategic times: (1) Morning (7-9 AM): Do 10 minutes before your most important deep work block. Your cortisol is naturally high, so coherent breathing channels that energy into focus instead of anxiety. (2) Post-Lunch (1-3 PM): Combat the afternoon slump with 5 minutes to reset your nervous system. (3) Before High-Stakes Tasks: Do 5-10 minutes before presentations, difficult conversations, or creative work. Avoid doing it right before bed. It energizes and clarifies, which can interfere with sleep.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[5].question": {
+          "sourceHash": "b4c115c9e0c8c85f14665dceb50095a3be7a7642a3105e13edebf7b81c627353",
+          "sourceText": "What's the optimal time of day to do this for focus?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "70caedf1edb2f4d64638a9f4c3820b9a6ab7d1df065dd2237092993ebc4ffbeb",
+          "sourceText": "You sit down to focus but your mind won't cooperate. You reread the same paragraph three times. Notifications pull your attention in ten directions. Your prefrontal cortex (the CEO of your brain) is offline, hijacked by distractions. Coherent breathing brings it back online.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "692e046ed0021981102c78ea2a6be01e387d51ddb8eaa4ab74b72afd8e6009f4",
+          "sourceText": "The 5-minute breathing technique top performers use before deep work",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+          "sourceText": "How to Boost Focus by 40% with Coherent Breathing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "78c968305795a5e272dde96dc02768e05bdd4d5d1caa88b5ae48a0b20da3d859",
+          "sourceText": "Clear your workspace of distractions. Close browser tabs, silence phone, put on noise-canceling headphones if needed. Sit upright in a chair with both feet on the floor, posture matters for breathing mechanics and alertness.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "b182d0de235df8ac57fc78962beabeeaabf69fdbc3aed293e56a14b3f35f5cd2",
+          "sourceText": "Set up your environment",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "sourceText": "1 minute",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "8cfd233f0a6ffd3c2b3eb1e1200f73ff8f8f26c2ef348db343c35e1666605bc7",
+          "sourceText": "Use the coherent breathing visualizer below. Set to 5 breaths per minute (6-second inhale, 6-second exhale). The visual pacing helps maintain the precise rhythm needed for resonance.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "b89f8f0db202b53f9416c4d0c4f3350fcdb8e10bf1c5a867b91b1beb0d61b238",
+          "sourceText": "Start the visualizer",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "fa2600037624cc09a9fd01742a4fceb7760766c2d007e695d4ff0607f0643f16",
+          "sourceText": "30 seconds to set up",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "ecc2bdce9ef7e9a519b9d00a6c329aced5201cfa2823b7a1dc24b3d47a63c75e",
+          "sourceText": "Inhale slowly through your nose for 6 seconds, letting your belly expand. Exhale slowly through your nose for 6 seconds, letting your belly fall. The exhale should be relaxed, not forced. Focus on smooth, continuous airflow, no pauses between inhale and exhale.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "e4121a8f7c28410869cb6367d8c6a46a51c6d6405369dcd0f6a6b731983cdac1",
+          "sourceText": "Breathe through your nose",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "a79f6361979be92123f8156947ed763b30bd847cce6a75cc699d6f52905e0858",
+          "sourceText": "6 seconds in, 6 seconds out",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "35495249cf2f39b04b3fd8981dc0307efa43bab396f0bc63011be83067f51ae6",
+          "sourceText": "For the first minute, just follow the visual guide and find the rhythm. Don't worry about perfect technique, focus on consistency. Your breathing will naturally deepen and smooth out as you continue.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "f019b2e7c4e431b6d70721f03594c3fa228d52468f82c7f56bdc4f79136f415c",
+          "sourceText": "Find your rhythm",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "899252d922ea5ac312e8ad8bf665af7edcfdc0f9051f3364f5697cc7d71cbec7",
+          "sourceText": "First 1-2 minutes",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "1fe48fb756cfbaf24591fd1b7316898c215532bfdabe1370ad864577e9c685d9",
+          "sourceText": "After 2-3 minutes, you'll feel a shift: breathing becomes effortless, your mind quiets, you feel 'centered.' This is coherence. Your heart, brain, and nervous system are synchronized. Stay with this for at least 5 minutes total.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "5c7747139c4d02321982ad6c4d96d72f02755268723d02458e6aa71c22b2a146",
+          "sourceText": "Enter coherence",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "55170bd00e66c1b5a41c128d6c21af48dbf2a53c87505a7b874f09d67c911506",
+          "sourceText": "5-10 minutes total",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "75e9bd96d51652ad1946cc1e333e61356d4d803b0f81054f7789006de348b972",
+          "sourceText": "When done, don't jump straight to your task. Take 30 seconds to set a clear intention: 'For the next 90 minutes, I will focus only on [specific task].' Then begin. The coherence state will carry over for 60-120 minutes.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "f8eeda317ba6163dc76785afda8407cc0e721445a37b6705282b99c8d2c97ae7",
+          "sourceText": "Transition to work",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "f3d19541f3a5a842ce81be1a788750b3c7ae27c6328e6829ef0ab6e95ba1fae5",
+          "sourceText": "30 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].instruction": {
+          "sourceHash": "5b5eafda40ce069fd09e23dee1e7df88f24e777cd903897b5e1659213f7890d8",
+          "sourceText": "Between deep work blocks, use 2-3 minutes of coherent breathing to reset. This prevents decision fatigue and maintains high performance across multiple sessions.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].name": {
+          "sourceHash": "514e83463de6899b9fcd2b440740274b83a792517e70317e4d4a65cf603dd337",
+          "sourceText": "Use as a reset between tasks",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].timing": {
+          "sourceHash": "24eb99ceac9b0b55bed5cfafd2f6ce996d363705d4e7f717ffd2773db36f7edb",
+          "sourceText": "2-3 minutes between blocks",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "a91c82b3076845e472415a32dd86ab264fe71d5d332f41a966ff0d5d4c2404a2",
+          "sourceText": "Do this BEFORE you need to focus, not after you've already lost it. It's a proactive tool, not reactive",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "8f0c547cd3a97c1b5b1a94c514ea5f3ef165ed6c9f99dcc50fc6b0a4ca3235d2",
+          "sourceText": "5 minutes minimum to reach coherence; 10 minutes is ideal for maximum effect",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "7c35e72c5dfbd9680d52528602b86a8126423a1865ee23390d0638417a7e4ac0",
+          "sourceText": "Some people prefer 5.5 breaths/min (5.5-second inhale, 5.5-second exhale), experiment to find your resonance frequency",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "61490dcd764450982da111f67c25a70eb93d41b89d93eacf1d93f6c99211bc62",
+          "sourceText": "Nose breathing is critical, mouth breathing doesn't produce the same HRV response",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "5e8251133b63e2b6a0b10f3822d4a9ecf32b9f10de1dbda4fee52ba8e617f67f",
+          "sourceText": "Consistency matters more than duration: 5 minutes daily beats 30 minutes once a week",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[5]": {
+          "sourceHash": "28ae713b55c33c584dad0fc7b036881f8aecf118a35a3b8e8a45ffe5fc2bf516",
+          "sourceText": "Use this before: writing, coding, studying, creative work, important meetings, difficult conversations",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "d3d47aae6b2ccca7cdd81f9537c6e85fe6f75ab14008a9c8cac0129fcc8c4007",
+          "sourceText": "Can't focus? Reread paragraphs? Distracted every 30 seconds? Boost focus by 40% with coherent breathing—the 5-minute technique top performers use before deep work. Free visualizer + Stanford research.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "776b515f6bbd7b6c103432d22da40863e88ea1e0505d7827a0b27c776133c677",
+          "sourceText": "The 5-minute breathing technique top performers use before deep work. Boost focus by 40% with coherent breathing.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "ad545a075ef3ea4bfd3a6338f9a9d5e508f3cd6fcf74dda1afd39ed85986ee82",
+          "sourceText": "Boost Focus by 40%: Coherent Breathing for Concentration",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "7aa59645cf8a92741ae3a255429384ed6859a51488a8e5a423693a47d2994702",
+          "sourceText": "Boost Focus by 40%: Coherent Breathing for Concentration (5 Min/Day) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "36cf3e9284aeb53c817e2d50527b518a8709dd6f04b698e91029a599cf19b8ed",
+          "sourceText": "The 5-minute breathing technique top performers use before deep work. Free visualizer + research.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "ad545a075ef3ea4bfd3a6338f9a9d5e508f3cd6fcf74dda1afd39ed85986ee82",
+          "sourceText": "Boost Focus by 40%: Coherent Breathing for Concentration",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "4d85d8214bc08fbf1a43356a446f67983f3ca37dd6c3f0fa2b3e3b4c0da7c0a8",
+          "sourceText": "Attention fragmentation isn't laziness. It's physiology. When you're stressed, distracted, or sleep-deprived, your autonomic nervous system is imbalanced. Your sympathetic 'fight-or-flight' system is overactive (scanning for threats, jumping between tasks), while your parasympathetic 'rest-and-digest' system is suppressed. This imbalance starves your prefrontal cortex of the calm, oxygenated state it needs for sustained attention.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "26a116949df99056602851a0c23db0281fe3439428acc8908a403bbf26f0372f",
+          "sourceText": "Why Your Brain Can't Focus",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "f496a383e8585dfde723041210b058a9a5bcdbe35b4e9524344352d9f441d427",
+          "sourceText": "Rereading the same paragraph multiple times without comprehension",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "d6dc2e51e2634108eb989893c9a5371e6eeaaa03df86afb6337eb48fd11379c3",
+          "sourceText": "Unable to work for more than 10-15 minutes before needing a break",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "108d50ce52d63b9dc35242c8c0b6553b132da27a9a033c0f1c31f4399b04c6e1",
+          "sourceText": "Mind wandering constantly, even during important tasks",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "ff6b367896d878512a475d64e1322a9e989ce53f522c17fa6746a51e920528ff",
+          "sourceText": "Physical restlessness, can't sit still",
+          "status": "route-catalog-normalized"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "7655d88eb7a5ac55d9b33c3098965b62b6ffc2ea6dac144806d3763014e6ad2b",
+          "sourceText": "Feeling 'wired but tired' (anxious energy but mental exhaustion)",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "8a6ab05ba59bcec5984d5b172d07c5d2c62e80e74143bbd1e40af2e98ac5bca8",
+          "sourceText": "Taking hours to complete tasks that should take 30 minutes",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "da571ed60e6532307f993702b4e6b9030edfc2ae80f4a23e22a9bcbb7b508c32",
+          "sourceText": "Overwhelmed by decision fatigue and simple choices",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[7]": {
+          "sourceHash": "00c2bb38ac8f4743dfa8e2ff3980915cfe93d86ec5cb9744401559bdf2095317",
+          "sourceText": "Constantly checking phone, email, or notifications",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "e691ca28490510e88b3c299bfba69a331e4da8b98166e6ae1842f35c7507d960",
+          "sourceText": "Foundational research showing that HRV biofeedback training (coherent breathing at resonance frequency) improves attention, working memory, and cognitive flexibility.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "e0287dd7170d6155a193e136b82507c09f93896f0378cdbf122cfcc766baa72f",
+          "sourceText": "Heart Rate Variability Biofeedback and Cognitive Performance",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "7b58dbfa946230ac085107ef847a4dc5cb52d8f1ece5d691d62946fe3f5a1c0d",
+          "sourceText": "Study demonstrating that individuals with higher respiratory sinus arrhythmia (RSA, a component of HRV) show better performance on cognitive tasks requiring sustained attention.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "29efb72d78301470429641cd2a8f692bed935f13e92225751bdbbf8c9ce1a8bf",
+          "sourceText": "Respiratory Sinus Arrhythmia and Cognitive Performance",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "2affebbb6b3fcf92598bc9ce73264b5083d3c7dc40014f90c6fba770cb81086a",
+          "sourceText": "8-week study showing that slow diaphragmatic breathing training improved sustained attention and reduced negative affect in young adults.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "d863b7eff524919851ba5248ee7824be679b4f8d222a08fbb37ea921fc5a8763",
+          "sourceText": "The Effect of Diaphragmatic Breathing on Attention, Negative Affect and Stress",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "8fe02de367d900db6181904e70953a197c75fc33d8d723f11961730448eb2d47",
+          "sourceText": "Medical review explaining the relationship between HRV and executive function, including attention, decision-making, and emotional regulation.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "5d947496640c56f39c0fc5cada53a11e05d3564d6a7b23c12163efc8981806d8",
+          "sourceText": "Heart Rate Variability and Cognitive Function",
+          "status": "route-catalog-exact"
+        },
+        "references[4].summary": {
+          "sourceHash": "cbf4f2061299ef1f180aa31f354377cc8ad8a01724836ba61737f8126552ed3b",
+          "sourceText": "Practical overview of resonance frequency breathing research and protocols for improving HRV and performance.",
+          "status": "route-catalog-exact"
+        },
+        "references[4].title": {
+          "sourceHash": "aa192da46dbde75e9fed7a70a10aba672735883c118436eb3c82fee41e77b166",
+          "sourceText": "Resonance Frequency Breathing: A Science-Based Guide",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "895d6093911acc0862d90fca818072cdd14ed89878b315c9a6a0498d05ae56c0",
+          "sourceText": "Practice with the full coherent breathing visualizer and learn the complete HRV optimization protocol",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "16ac44b7afc4daa254717bc631330f1d30daa22231472b8e893be3b5b4689c6e",
+          "sourceText": "Want to deepen your meditation practice? Coherent breathing is the perfect entry point for beginners",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "314579db2589b8a4f5f7f72a7b463b4d89edf3abeb8ab4f0f4131aa019e781ee",
+          "sourceText": "Anxiety ruining your concentration? Try box breathing for acute stress relief",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "542ebf656b2ebd59e0c98729fc36207d08d5abfebb46005271e3b4965ff55d14",
+          "sourceText": "The exact breathing protocols Huberman uses before deep work and sustained focus sessions.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "7dc3bec3d805fae5f762d51d591ec30e5df6efe3e64ce81da76fa2381257f7e8",
+          "sourceText": "Why Coherent Breathing Works for Focus",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "eec339f62202229ca95bb00b05f8cf8e38e05a3a0da645728bd44f724364a6e9",
+          "sourceText": "HRV measures the variation in time between heartbeats. Higher HRV during practice is associated with parasympathetic activity and a more flexible nervous system. Studies show that coherent breathing at around 5 breaths per minute markedly increases HRV during the session itself, and that higher HRV correlates with attention, working memory, and cognitive control.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "42436c1486f9353726c6cbaf6c5c0c64584795f266ac5503158d5d3f97f38948",
+          "sourceText": "Maximizes Heart Rate Variability (HRV)",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "710d121ee4beaff6ddd36258437e8a16945a9e31c671b6792f712ee037fe01bc",
+          "sourceText": "Slow, rhythmic breathing (5 breaths/min) optimizes gas exchange in your lungs and increases oxygen delivery to the brain: especially the prefrontal cortex, which handles focus, decision-making, and impulse control. Studies using functional MRI show increased activation in attention networks after coherent breathing.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "b376a76d4458cc4e0575cf4d0b1951e76a8de7124a4dd8bb58602ee82e5a8021",
+          "sourceText": "Increases Prefrontal Cortex Oxygenation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "073129c54d4c60ec0fd3ea0e8416d5090348bd09a69caf476a8c1ef5bf349684",
+          "sourceText": "EEG research shows that coherent breathing increases alpha wave activity (8-12 Hz), the brain state associated with 'relaxed alertness', calm but focused. This is the ideal state for deep work, creative problem-solving, and learning. Too much beta (stress) = scattered. Too much theta (drowsy) = sluggish. Alpha = Goldilocks zone.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "6154a269835591b9ef53371998d93ef80a4aa3ee63584852923024aa8f6fbec3",
+          "sourceText": "Shifts Brain Waves to Alpha State",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "7bd4b2a51defffdd7696ca6659b75aabfc0548831d0b659a8ac23af9fa13f532",
+          "sourceText": "Coherent breathing creates a state of 'autonomic balance', equal activity in sympathetic (alertness) and parasympathetic (calm) branches. This balance is critical for sustained focus: you need enough sympathetic drive to stay engaged, but enough parasympathetic activity to avoid anxiety and distraction. It's the sweet spot for flow states.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "51f021ca47af646abf14dff8d35407b6bbd4bc97674934ea32913adfca1f7f6f",
+          "sourceText": "Balances Autonomic Nervous System",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "e9ff6ff87c57be53ddb611bcea875c090db738b674529433bc9b0aac41e0c33e",
+          "sourceText": "Coherent breathing (also called resonance frequency breathing) is breathing at a rate of 5 breaths per minute (0.1 Hz). This specific rate is associated with peak heart rate variability (HRV) during practice, a biomarker linked to nervous system regulation and cognitive performance. [Research suggests that a brief slow-breathing session before deep work can improve attention and working memory, particularly under stress](https://doi.org/10.1007/s41465-021-00218-3).",
+          "status": "repo-reviewed-manual"
+        },
+        "solution.heading": {
+          "sourceHash": "9da392f321aa43f63f6700f46562e5ab6a4ce3dee9278008b2234586147edc0b",
+          "sourceText": "Coherent Breathing: The 0.1 Hz Focus Protocol",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "aad0a6614e5ebcee24385fd8859172cd1512cbf65db38e96ea22b89d40a87d04",
+          "sourceText": "Your cardiovascular and nervous systems have a natural resonance frequency around 0.1 Hz (5 breaths/min). Breathing at this rate synchronizes your heart rhythms, blood pressure oscillations, and autonomic nervous system, creating a state of 'coherence' that optimizes brain function. It's like tuning a radio to the exact frequency for the clearest signal.",
+          "status": "route-catalog-normalized"
+        }
+      }
+    },
+    "pt-br": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "f10268a765bb0ecf0afdfae16a75bb2587e2c730d3f1f1b776a4cafc877308ea",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "d2f0841c7ea7def332ab7593579b5c7641f6413e5370c90320d8219c9fb09892",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "f607a43ced7c5ce11c681d395d966d0d1a214221d59fcba2227a52b39e36f0a9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-huberman-title": {
+          "sourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-meditation-title": {
+          "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-coherent-app": {
+          "sourceHash": "010fb498f61fb71ff823061853b1087f16d25ddccd8f102487e0542c1070e24a",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "48e8928bb649cacec18dd5c181848ec83e8f1c57c123b623207abe4d366326b6",
+          "sourceText": "This breathing technique is not a substitute for medical treatment of attention disorders like ADHD. If you have chronic difficulty with focus, distractibility, or executive function, consult a physician or psychologist for proper evaluation. Coherent breathing is a complementary practice, not a replacement for medication or therapy when clinically indicated.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "554b6259391538c5e97f20c717b5a84a4692f0e657f04ca469f14d38f038a84b",
+          "sourceText": "Box breathing (4-4-4-4 with holds) is great for acute stress relief and calming anxiety, but it's not optimized for sustained focus. Coherent breathing (6-6 with no holds) specifically targets the 0.1 Hz resonance frequency that maximizes HRV and cognitive performance. Box breathing is like a quick stress reset; coherent breathing is like tuning your entire nervous system for deep work. Use box breathing when you're anxious; use coherent breathing when you need to focus.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].question": {
+          "sourceHash": "2accd68dc950fbd19e11aa65c07b350e8d9278e268129d41fc0a5fc44dd7203f",
+          "sourceText": "How is this different from box breathing for focus?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "aacfbdc9da05806e5097ba80ff051917c17a2c7f673d3af914c99f0279b1b11c",
+          "sourceText": "Research suggests yes, but with caveats. Studies show that HRV biofeedback training (which includes coherent breathing) improves attention and reduces impulsivity in people with ADHD. However, it's not a replacement for medication or behavioral therapy. It's a complementary tool. If you have ADHD, you'll likely need: (1) Daily coherent breathing practice (10-20 min/day). (2) Medication if prescribed. (3) Behavioral strategies (time blocking, external structure). (4) Exercise and sleep optimization. Breathing alone won't 'fix' ADHD, but it can help.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "a269e3d387637e092a429a18580dfdf7913bd73a40c753b3506f53f78b6b158e",
+          "sourceText": "Can coherent breathing help with ADHD?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "1328de921d13166734dae2656d488bac6514832a096dd6a8d0e9d528e0be99e1",
+          "sourceText": "The coherence state typically lasts 60-120 minutes after a 5-10 minute session. Your HRV remains elevated, your nervous system stays balanced, and your prefrontal cortex remains optimally oxygenated. After 2 hours, the effect fades. This is why top performers do coherent breathing 2-3 times daily: once in the morning before deep work, once after lunch to combat the afternoon slump, and once in the evening to transition from work to rest.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "7e1deb7127bea1e20d9fc435d3645977584713d9270b26a337b076063fec7d28",
+          "sourceText": "How long does the focus boost last after I stop breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "43b4f179a4d3715144e0d9e3f0c098e6768e19dcc872cc094cb935fe63da850f",
+          "sourceText": "Three solutions: (1) Sit upright in a chair, not lying down or reclined, posture cues your nervous system for alertness. (2) Do this BEFORE you're exhausted. If you're sleep-deprived, no breathing technique will compensate; take a nap instead. (3) Keep your eyes open and focused on the visual guide. This engages your visual cortex and prevents drowsiness. If you're consistently falling asleep, it's a sign you need more actual sleep, not more breathwork.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "b4b6dee8ff656960ef8fed79022ba854c18e9ad6522b128043b06bd17e0fb66c",
+          "sourceText": "I fall asleep when I do this. How do I stay alert?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "131bbef01bcaaf24a17dbccd6c02024a093c91d3336968d08e7a9ed0f36d3b1e",
+          "sourceText": "Do it BEFORE working, not during. Coherent breathing requires your full attention for 5-10 minutes to reach the resonance frequency and create coherence. Trying to multitask defeats the purpose. Think of it like sharpening a knife before chopping vegetables. You stop, sharpen, then chop with a sharp blade. You breathe, reach coherence, then work with a focused brain. That said, once you're experienced (months of practice), you can use a modified version during low-intensity work (emails, admin tasks) to maintain calm.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "94d5d5d4c6ade1ca6b0706559f6349687c4acf1cabea2ae1143c36a847f84d38",
+          "sourceText": "Can I do this while working, or does it have to be separate?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "3d1b9c2a72d7a64689a3e8421b74c98dde6b15891dd316a384f912d33f180d32",
+          "sourceText": "Three strategic times: (1) Morning (7-9 AM): Do 10 minutes before your most important deep work block. Your cortisol is naturally high, so coherent breathing channels that energy into focus instead of anxiety. (2) Post-Lunch (1-3 PM): Combat the afternoon slump with 5 minutes to reset your nervous system. (3) Before High-Stakes Tasks: Do 5-10 minutes before presentations, difficult conversations, or creative work. Avoid doing it right before bed. It energizes and clarifies, which can interfere with sleep.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[5].question": {
+          "sourceHash": "b4c115c9e0c8c85f14665dceb50095a3be7a7642a3105e13edebf7b81c627353",
+          "sourceText": "What's the optimal time of day to do this for focus?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "70caedf1edb2f4d64638a9f4c3820b9a6ab7d1df065dd2237092993ebc4ffbeb",
+          "sourceText": "You sit down to focus but your mind won't cooperate. You reread the same paragraph three times. Notifications pull your attention in ten directions. Your prefrontal cortex (the CEO of your brain) is offline, hijacked by distractions. Coherent breathing brings it back online.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "692e046ed0021981102c78ea2a6be01e387d51ddb8eaa4ab74b72afd8e6009f4",
+          "sourceText": "The 5-minute breathing technique top performers use before deep work",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+          "sourceText": "How to Boost Focus by 40% with Coherent Breathing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "78c968305795a5e272dde96dc02768e05bdd4d5d1caa88b5ae48a0b20da3d859",
+          "sourceText": "Clear your workspace of distractions. Close browser tabs, silence phone, put on noise-canceling headphones if needed. Sit upright in a chair with both feet on the floor, posture matters for breathing mechanics and alertness.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "b182d0de235df8ac57fc78962beabeeaabf69fdbc3aed293e56a14b3f35f5cd2",
+          "sourceText": "Set up your environment",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "sourceText": "1 minute",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "8cfd233f0a6ffd3c2b3eb1e1200f73ff8f8f26c2ef348db343c35e1666605bc7",
+          "sourceText": "Use the coherent breathing visualizer below. Set to 5 breaths per minute (6-second inhale, 6-second exhale). The visual pacing helps maintain the precise rhythm needed for resonance.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "b89f8f0db202b53f9416c4d0c4f3350fcdb8e10bf1c5a867b91b1beb0d61b238",
+          "sourceText": "Start the visualizer",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "fa2600037624cc09a9fd01742a4fceb7760766c2d007e695d4ff0607f0643f16",
+          "sourceText": "30 seconds to set up",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "ecc2bdce9ef7e9a519b9d00a6c329aced5201cfa2823b7a1dc24b3d47a63c75e",
+          "sourceText": "Inhale slowly through your nose for 6 seconds, letting your belly expand. Exhale slowly through your nose for 6 seconds, letting your belly fall. The exhale should be relaxed, not forced. Focus on smooth, continuous airflow, no pauses between inhale and exhale.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "e4121a8f7c28410869cb6367d8c6a46a51c6d6405369dcd0f6a6b731983cdac1",
+          "sourceText": "Breathe through your nose",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "a79f6361979be92123f8156947ed763b30bd847cce6a75cc699d6f52905e0858",
+          "sourceText": "6 seconds in, 6 seconds out",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "35495249cf2f39b04b3fd8981dc0307efa43bab396f0bc63011be83067f51ae6",
+          "sourceText": "For the first minute, just follow the visual guide and find the rhythm. Don't worry about perfect technique, focus on consistency. Your breathing will naturally deepen and smooth out as you continue.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "f019b2e7c4e431b6d70721f03594c3fa228d52468f82c7f56bdc4f79136f415c",
+          "sourceText": "Find your rhythm",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "899252d922ea5ac312e8ad8bf665af7edcfdc0f9051f3364f5697cc7d71cbec7",
+          "sourceText": "First 1-2 minutes",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "1fe48fb756cfbaf24591fd1b7316898c215532bfdabe1370ad864577e9c685d9",
+          "sourceText": "After 2-3 minutes, you'll feel a shift: breathing becomes effortless, your mind quiets, you feel 'centered.' This is coherence. Your heart, brain, and nervous system are synchronized. Stay with this for at least 5 minutes total.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "5c7747139c4d02321982ad6c4d96d72f02755268723d02458e6aa71c22b2a146",
+          "sourceText": "Enter coherence",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "55170bd00e66c1b5a41c128d6c21af48dbf2a53c87505a7b874f09d67c911506",
+          "sourceText": "5-10 minutes total",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "75e9bd96d51652ad1946cc1e333e61356d4d803b0f81054f7789006de348b972",
+          "sourceText": "When done, don't jump straight to your task. Take 30 seconds to set a clear intention: 'For the next 90 minutes, I will focus only on [specific task].' Then begin. The coherence state will carry over for 60-120 minutes.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "f8eeda317ba6163dc76785afda8407cc0e721445a37b6705282b99c8d2c97ae7",
+          "sourceText": "Transition to work",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "f3d19541f3a5a842ce81be1a788750b3c7ae27c6328e6829ef0ab6e95ba1fae5",
+          "sourceText": "30 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].instruction": {
+          "sourceHash": "5b5eafda40ce069fd09e23dee1e7df88f24e777cd903897b5e1659213f7890d8",
+          "sourceText": "Between deep work blocks, use 2-3 minutes of coherent breathing to reset. This prevents decision fatigue and maintains high performance across multiple sessions.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].name": {
+          "sourceHash": "514e83463de6899b9fcd2b440740274b83a792517e70317e4d4a65cf603dd337",
+          "sourceText": "Use as a reset between tasks",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].timing": {
+          "sourceHash": "24eb99ceac9b0b55bed5cfafd2f6ce996d363705d4e7f717ffd2773db36f7edb",
+          "sourceText": "2-3 minutes between blocks",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "a91c82b3076845e472415a32dd86ab264fe71d5d332f41a966ff0d5d4c2404a2",
+          "sourceText": "Do this BEFORE you need to focus, not after you've already lost it. It's a proactive tool, not reactive",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "8f0c547cd3a97c1b5b1a94c514ea5f3ef165ed6c9f99dcc50fc6b0a4ca3235d2",
+          "sourceText": "5 minutes minimum to reach coherence; 10 minutes is ideal for maximum effect",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "7c35e72c5dfbd9680d52528602b86a8126423a1865ee23390d0638417a7e4ac0",
+          "sourceText": "Some people prefer 5.5 breaths/min (5.5-second inhale, 5.5-second exhale), experiment to find your resonance frequency",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "61490dcd764450982da111f67c25a70eb93d41b89d93eacf1d93f6c99211bc62",
+          "sourceText": "Nose breathing is critical, mouth breathing doesn't produce the same HRV response",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "5e8251133b63e2b6a0b10f3822d4a9ecf32b9f10de1dbda4fee52ba8e617f67f",
+          "sourceText": "Consistency matters more than duration: 5 minutes daily beats 30 minutes once a week",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[5]": {
+          "sourceHash": "28ae713b55c33c584dad0fc7b036881f8aecf118a35a3b8e8a45ffe5fc2bf516",
+          "sourceText": "Use this before: writing, coding, studying, creative work, important meetings, difficult conversations",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "d3d47aae6b2ccca7cdd81f9537c6e85fe6f75ab14008a9c8cac0129fcc8c4007",
+          "sourceText": "Can't focus? Reread paragraphs? Distracted every 30 seconds? Boost focus by 40% with coherent breathing—the 5-minute technique top performers use before deep work. Free visualizer + Stanford research.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "776b515f6bbd7b6c103432d22da40863e88ea1e0505d7827a0b27c776133c677",
+          "sourceText": "The 5-minute breathing technique top performers use before deep work. Boost focus by 40% with coherent breathing.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "ad545a075ef3ea4bfd3a6338f9a9d5e508f3cd6fcf74dda1afd39ed85986ee82",
+          "sourceText": "Boost Focus by 40%: Coherent Breathing for Concentration",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "7aa59645cf8a92741ae3a255429384ed6859a51488a8e5a423693a47d2994702",
+          "sourceText": "Boost Focus by 40%: Coherent Breathing for Concentration (5 Min/Day) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "36cf3e9284aeb53c817e2d50527b518a8709dd6f04b698e91029a599cf19b8ed",
+          "sourceText": "The 5-minute breathing technique top performers use before deep work. Free visualizer + research.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "ad545a075ef3ea4bfd3a6338f9a9d5e508f3cd6fcf74dda1afd39ed85986ee82",
+          "sourceText": "Boost Focus by 40%: Coherent Breathing for Concentration",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "4d85d8214bc08fbf1a43356a446f67983f3ca37dd6c3f0fa2b3e3b4c0da7c0a8",
+          "sourceText": "Attention fragmentation isn't laziness. It's physiology. When you're stressed, distracted, or sleep-deprived, your autonomic nervous system is imbalanced. Your sympathetic 'fight-or-flight' system is overactive (scanning for threats, jumping between tasks), while your parasympathetic 'rest-and-digest' system is suppressed. This imbalance starves your prefrontal cortex of the calm, oxygenated state it needs for sustained attention.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "26a116949df99056602851a0c23db0281fe3439428acc8908a403bbf26f0372f",
+          "sourceText": "Why Your Brain Can't Focus",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "f496a383e8585dfde723041210b058a9a5bcdbe35b4e9524344352d9f441d427",
+          "sourceText": "Rereading the same paragraph multiple times without comprehension",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "d6dc2e51e2634108eb989893c9a5371e6eeaaa03df86afb6337eb48fd11379c3",
+          "sourceText": "Unable to work for more than 10-15 minutes before needing a break",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "108d50ce52d63b9dc35242c8c0b6553b132da27a9a033c0f1c31f4399b04c6e1",
+          "sourceText": "Mind wandering constantly, even during important tasks",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "ff6b367896d878512a475d64e1322a9e989ce53f522c17fa6746a51e920528ff",
+          "sourceText": "Physical restlessness, can't sit still",
+          "status": "route-catalog-normalized"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "7655d88eb7a5ac55d9b33c3098965b62b6ffc2ea6dac144806d3763014e6ad2b",
+          "sourceText": "Feeling 'wired but tired' (anxious energy but mental exhaustion)",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "8a6ab05ba59bcec5984d5b172d07c5d2c62e80e74143bbd1e40af2e98ac5bca8",
+          "sourceText": "Taking hours to complete tasks that should take 30 minutes",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "da571ed60e6532307f993702b4e6b9030edfc2ae80f4a23e22a9bcbb7b508c32",
+          "sourceText": "Overwhelmed by decision fatigue and simple choices",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[7]": {
+          "sourceHash": "00c2bb38ac8f4743dfa8e2ff3980915cfe93d86ec5cb9744401559bdf2095317",
+          "sourceText": "Constantly checking phone, email, or notifications",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "e691ca28490510e88b3c299bfba69a331e4da8b98166e6ae1842f35c7507d960",
+          "sourceText": "Foundational research showing that HRV biofeedback training (coherent breathing at resonance frequency) improves attention, working memory, and cognitive flexibility.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "e0287dd7170d6155a193e136b82507c09f93896f0378cdbf122cfcc766baa72f",
+          "sourceText": "Heart Rate Variability Biofeedback and Cognitive Performance",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "7b58dbfa946230ac085107ef847a4dc5cb52d8f1ece5d691d62946fe3f5a1c0d",
+          "sourceText": "Study demonstrating that individuals with higher respiratory sinus arrhythmia (RSA, a component of HRV) show better performance on cognitive tasks requiring sustained attention.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "29efb72d78301470429641cd2a8f692bed935f13e92225751bdbbf8c9ce1a8bf",
+          "sourceText": "Respiratory Sinus Arrhythmia and Cognitive Performance",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "2affebbb6b3fcf92598bc9ce73264b5083d3c7dc40014f90c6fba770cb81086a",
+          "sourceText": "8-week study showing that slow diaphragmatic breathing training improved sustained attention and reduced negative affect in young adults.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "d863b7eff524919851ba5248ee7824be679b4f8d222a08fbb37ea921fc5a8763",
+          "sourceText": "The Effect of Diaphragmatic Breathing on Attention, Negative Affect and Stress",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "8fe02de367d900db6181904e70953a197c75fc33d8d723f11961730448eb2d47",
+          "sourceText": "Medical review explaining the relationship between HRV and executive function, including attention, decision-making, and emotional regulation.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "5d947496640c56f39c0fc5cada53a11e05d3564d6a7b23c12163efc8981806d8",
+          "sourceText": "Heart Rate Variability and Cognitive Function",
+          "status": "route-catalog-exact"
+        },
+        "references[4].summary": {
+          "sourceHash": "cbf4f2061299ef1f180aa31f354377cc8ad8a01724836ba61737f8126552ed3b",
+          "sourceText": "Practical overview of resonance frequency breathing research and protocols for improving HRV and performance.",
+          "status": "route-catalog-exact"
+        },
+        "references[4].title": {
+          "sourceHash": "aa192da46dbde75e9fed7a70a10aba672735883c118436eb3c82fee41e77b166",
+          "sourceText": "Resonance Frequency Breathing: A Science-Based Guide",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "895d6093911acc0862d90fca818072cdd14ed89878b315c9a6a0498d05ae56c0",
+          "sourceText": "Practice with the full coherent breathing visualizer and learn the complete HRV optimization protocol",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "16ac44b7afc4daa254717bc631330f1d30daa22231472b8e893be3b5b4689c6e",
+          "sourceText": "Want to deepen your meditation practice? Coherent breathing is the perfect entry point for beginners",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "314579db2589b8a4f5f7f72a7b463b4d89edf3abeb8ab4f0f4131aa019e781ee",
+          "sourceText": "Anxiety ruining your concentration? Try box breathing for acute stress relief",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "542ebf656b2ebd59e0c98729fc36207d08d5abfebb46005271e3b4965ff55d14",
+          "sourceText": "The exact breathing protocols Huberman uses before deep work and sustained focus sessions.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "7dc3bec3d805fae5f762d51d591ec30e5df6efe3e64ce81da76fa2381257f7e8",
+          "sourceText": "Why Coherent Breathing Works for Focus",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "eec339f62202229ca95bb00b05f8cf8e38e05a3a0da645728bd44f724364a6e9",
+          "sourceText": "HRV measures the variation in time between heartbeats. Higher HRV during practice is associated with parasympathetic activity and a more flexible nervous system. Studies show that coherent breathing at around 5 breaths per minute markedly increases HRV during the session itself, and that higher HRV correlates with attention, working memory, and cognitive control.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "42436c1486f9353726c6cbaf6c5c0c64584795f266ac5503158d5d3f97f38948",
+          "sourceText": "Maximizes Heart Rate Variability (HRV)",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "710d121ee4beaff6ddd36258437e8a16945a9e31c671b6792f712ee037fe01bc",
+          "sourceText": "Slow, rhythmic breathing (5 breaths/min) optimizes gas exchange in your lungs and increases oxygen delivery to the brain: especially the prefrontal cortex, which handles focus, decision-making, and impulse control. Studies using functional MRI show increased activation in attention networks after coherent breathing.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "b376a76d4458cc4e0575cf4d0b1951e76a8de7124a4dd8bb58602ee82e5a8021",
+          "sourceText": "Increases Prefrontal Cortex Oxygenation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "073129c54d4c60ec0fd3ea0e8416d5090348bd09a69caf476a8c1ef5bf349684",
+          "sourceText": "EEG research shows that coherent breathing increases alpha wave activity (8-12 Hz), the brain state associated with 'relaxed alertness', calm but focused. This is the ideal state for deep work, creative problem-solving, and learning. Too much beta (stress) = scattered. Too much theta (drowsy) = sluggish. Alpha = Goldilocks zone.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "6154a269835591b9ef53371998d93ef80a4aa3ee63584852923024aa8f6fbec3",
+          "sourceText": "Shifts Brain Waves to Alpha State",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "7bd4b2a51defffdd7696ca6659b75aabfc0548831d0b659a8ac23af9fa13f532",
+          "sourceText": "Coherent breathing creates a state of 'autonomic balance', equal activity in sympathetic (alertness) and parasympathetic (calm) branches. This balance is critical for sustained focus: you need enough sympathetic drive to stay engaged, but enough parasympathetic activity to avoid anxiety and distraction. It's the sweet spot for flow states.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "51f021ca47af646abf14dff8d35407b6bbd4bc97674934ea32913adfca1f7f6f",
+          "sourceText": "Balances Autonomic Nervous System",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "e9ff6ff87c57be53ddb611bcea875c090db738b674529433bc9b0aac41e0c33e",
+          "sourceText": "Coherent breathing (also called resonance frequency breathing) is breathing at a rate of 5 breaths per minute (0.1 Hz). This specific rate is associated with peak heart rate variability (HRV) during practice, a biomarker linked to nervous system regulation and cognitive performance. [Research suggests that a brief slow-breathing session before deep work can improve attention and working memory, particularly under stress](https://doi.org/10.1007/s41465-021-00218-3).",
+          "status": "repo-reviewed-manual"
+        },
+        "solution.heading": {
+          "sourceHash": "9da392f321aa43f63f6700f46562e5ab6a4ce3dee9278008b2234586147edc0b",
+          "sourceText": "Coherent Breathing: The 0.1 Hz Focus Protocol",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "aad0a6614e5ebcee24385fd8859172cd1512cbf65db38e96ea22b89d40a87d04",
+          "sourceText": "Your cardiovascular and nervous systems have a natural resonance frequency around 0.1 Hz (5 breaths/min). Breathing at this rate synchronizes your heart rhythms, blood pressure oscillations, and autonomic nervous system, creating a state of 'coherence' that optimizes brain function. It's like tuning a radio to the exact frequency for the clearest signal.",
+          "status": "route-catalog-normalized"
+        }
+      }
+    }
+  },
+  "schemaVersion": 1,
+  "sourceRoute": "/for/focus"
+}

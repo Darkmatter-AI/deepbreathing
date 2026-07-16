@@ -1,0 +1,48 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.pattern.guided-session",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "ef54a61172d7faeb3e83c2be02a95845cdd4645923d4b2484a6ad7f06cb0d0d6",
+      "scope": "chrome",
+      "sourceText": "Guided session",
+      "translations": {
+        "de-de": "Geführte Sitzung",
+        "es-es": "Sesión guiada",
+        "fr-fr": "Séance guidée",
+        "ja-jp": "ガイド付きセッション",
+        "pt-br": "Sessão guiada"
+      }
+    },
+    {
+      "messageId": "chrome.pattern.guided-session-description",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "2fdfac26a8bd88168b39579e21ce58c1c261da641443306b24f566d3a1d3c4b4",
+      "scope": "chrome",
+      "sourceText": "Watch the guided pacer session — the same exercise as above, recorded as a video you can follow anywhere.",
+      "translations": {
+        "de-de": "Sehen Sie sich die geführte Sitzung mit dem Atemtaktgeber an – dieselbe Übung wie oben, als Video aufgezeichnet, dem Sie überall folgen können.",
+        "es-es": "Mira la sesión guiada con el marcador de ritmo: el mismo ejercicio de arriba, grabado en un vídeo que puedes seguir en cualquier lugar.",
+        "fr-fr": "Regardez la séance guidée avec le rythmeur : le même exercice que ci-dessus, enregistré en vidéo pour que vous puissiez le suivre n’importe où.",
+        "ja-jp": "ガイド付きペーサーセッションをご覧ください。上記と同じエクササイズを、どこでも実践できる動画として収録しています。",
+        "pt-br": "Assista à sessão guiada com o marcador de ritmo: o mesmo exercício acima, gravado em vídeo para você acompanhar em qualquer lugar."
+      }
+    },
+    {
+      "messageId": "chrome.pattern.in-depth-guides",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "bbce1f27d0f6dc1e621db13fcf94eafd36b1fe6deea8bab8f0b7614501f117f4",
+      "scope": "chrome",
+      "sourceText": "In-depth guides",
+      "translations": {
+        "de-de": "Ausführliche Leitfäden",
+        "es-es": "Guías detalladas",
+        "fr-fr": "Guides détaillés",
+        "ja-jp": "詳しいガイド",
+        "pt-br": "Guias detalhados"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "*"
+}
