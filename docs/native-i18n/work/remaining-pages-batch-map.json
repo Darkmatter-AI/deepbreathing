@@ -1,65 +1,10 @@
 {
   "schemaVersion": 1,
-  "status": "translation-complete-integration-pending",
+  "status": "integration-complete-preview-only",
   "baselineCommit": "7302e5ebde1fdf8e74e5963e496b800d6566d8ae",
   "locales": ["de-de", "es-es", "fr-fr", "ja-jp", "pt-br"],
-  "routes": [
-    {
-      "path": "/1-minute-breathing-exercise",
-      "integrationWave": "R-W01",
-      "grokTranslationBatch": null,
-      "catalogSegments": 79,
-      "catalogMissingCells": 0,
-      "catalogMissingByLocale": {
-        "de-de": 0,
-        "es-es": 0,
-        "fr-fr": 0,
-        "ja-jp": 0,
-        "pt-br": 0
-      }
-    },
-    {
-      "path": "/2-minute-breathing-exercise",
-      "integrationWave": "R-W01",
-      "grokTranslationBatch": null,
-      "catalogSegments": 78,
-      "catalogMissingCells": 0,
-      "catalogMissingByLocale": {
-        "de-de": 0,
-        "es-es": 0,
-        "fr-fr": 0,
-        "ja-jp": 0,
-        "pt-br": 0
-      }
-    },
-    {
-      "path": "/4-7-8-breathing-for-insomnia",
-      "integrationWave": "R-W01",
-      "grokTranslationBatch": null,
-      "catalogSegments": 82,
-      "catalogMissingCells": 0,
-      "catalogMissingByLocale": {
-        "de-de": 0,
-        "es-es": 0,
-        "fr-fr": 0,
-        "ja-jp": 0,
-        "pt-br": 0
-      }
-    },
-    {
-      "path": "/5-minute-breathing-exercise",
-      "integrationWave": "R-W01",
-      "grokTranslationBatch": null,
-      "catalogSegments": 89,
-      "catalogMissingCells": 0,
-      "catalogMissingByLocale": {
-        "de-de": 0,
-        "es-es": 0,
-        "fr-fr": 0,
-        "ja-jp": 0,
-        "pt-br": 0
-      }
-    },
+  "routes": [],
+  "completedGapRoutes": [
     {
       "path": "/box-breathing-before-presentation",
       "integrationWave": "R-W02",
@@ -72,48 +17,6 @@
         "fr-fr": 12,
         "ja-jp": 12,
         "pt-br": 12
-      }
-    },
-    {
-      "path": "/breathing-exercises-before-surgery",
-      "integrationWave": "R-W02",
-      "grokTranslationBatch": null,
-      "catalogSegments": 89,
-      "catalogMissingCells": 0,
-      "catalogMissingByLocale": {
-        "de-de": 0,
-        "es-es": 0,
-        "fr-fr": 0,
-        "ja-jp": 0,
-        "pt-br": 0
-      }
-    },
-    {
-      "path": "/breathing-exercises-for-labor",
-      "integrationWave": "R-W02",
-      "grokTranslationBatch": null,
-      "catalogSegments": 89,
-      "catalogMissingCells": 0,
-      "catalogMissingByLocale": {
-        "de-de": 0,
-        "es-es": 0,
-        "fr-fr": 0,
-        "ja-jp": 0,
-        "pt-br": 0
-      }
-    },
-    {
-      "path": "/holiday-breathing-exercises",
-      "integrationWave": "R-W02",
-      "grokTranslationBatch": null,
-      "catalogSegments": 119,
-      "catalogMissingCells": 0,
-      "catalogMissingByLocale": {
-        "de-de": 0,
-        "es-es": 0,
-        "fr-fr": 0,
-        "ja-jp": 0,
-        "pt-br": 0
       }
     },
     {
@@ -131,23 +34,9 @@
       }
     },
     {
-      "path": "/box-breathing-app",
-      "integrationWave": "R-W03",
-      "grokTranslationBatch": null,
-      "catalogSegments": 110,
-      "catalogMissingCells": 0,
-      "catalogMissingByLocale": {
-        "de-de": 0,
-        "es-es": 0,
-        "fr-fr": 0,
-        "ja-jp": 0,
-        "pt-br": 0
-      }
-    },
-    {
       "path": "/breathing-app",
       "integrationWave": "R-W03",
-      "grokTranslationBatch": "R-C01",
+      "grokTranslationBatch": "R-C01-RW03",
       "catalogSegments": 43,
       "catalogMissingCells": 1,
       "catalogMissingByLocale": {
@@ -161,7 +50,7 @@
     {
       "path": "/breathing-visualizer",
       "integrationWave": "R-W03",
-      "grokTranslationBatch": "R-C01",
+      "grokTranslationBatch": "R-C01-RW03",
       "catalogSegments": 132,
       "catalogMissingCells": 65,
       "catalogMissingByLocale": {
@@ -173,23 +62,9 @@
       }
     },
     {
-      "path": "/coherent-breathing-app",
-      "integrationWave": "R-W03",
-      "grokTranslationBatch": null,
-      "catalogSegments": 136,
-      "catalogMissingCells": 0,
-      "catalogMissingByLocale": {
-        "de-de": 0,
-        "es-es": 0,
-        "fr-fr": 0,
-        "ja-jp": 0,
-        "pt-br": 0
-      }
-    },
-    {
       "path": "/embed",
       "integrationWave": "R-W03",
-      "grokTranslationBatch": "R-C01",
+      "grokTranslationBatch": "R-C01-RW03",
       "catalogSegments": 64,
       "catalogMissingCells": 5,
       "catalogMissingByLocale": {
@@ -198,34 +73,6 @@
         "fr-fr": 1,
         "ja-jp": 1,
         "pt-br": 1
-      }
-    },
-    {
-      "path": "/about/abi",
-      "integrationWave": "R-W04",
-      "grokTranslationBatch": null,
-      "catalogSegments": 45,
-      "catalogMissingCells": 0,
-      "catalogMissingByLocale": {
-        "de-de": 0,
-        "es-es": 0,
-        "fr-fr": 0,
-        "ja-jp": 0,
-        "pt-br": 0
-      }
-    },
-    {
-      "path": "/about/editorial-policy",
-      "integrationWave": "R-W04",
-      "grokTranslationBatch": null,
-      "catalogSegments": 52,
-      "catalogMissingCells": 0,
-      "catalogMissingByLocale": {
-        "de-de": 0,
-        "es-es": 0,
-        "fr-fr": 0,
-        "ja-jp": 0,
-        "pt-br": 0
       }
     },
     {
@@ -245,7 +92,7 @@
     {
       "path": "/stats",
       "integrationWave": "R-W04",
-      "grokTranslationBatch": "R-C01",
+      "grokTranslationBatch": "R-C01-RW04",
       "catalogSegments": 10,
       "catalogMissingCells": 25,
       "catalogMissingByLocale": {
@@ -271,10 +118,11 @@
       }
     }
   ],
-  "integrationWaves": [
+  "completedIntegrationWaves": [
     {
       "id": "R-W01",
       "name": "duration-pages",
+      "completedAt": "2026-07-15",
       "routes": [
         "/1-minute-breathing-exercise",
         "/2-minute-breathing-exercise",
@@ -285,6 +133,7 @@
     {
       "id": "R-W02",
       "name": "editorial-and-safety-pages",
+      "completedAt": "2026-07-15",
       "routes": [
         "/box-breathing-before-presentation",
         "/breathing-exercises-before-surgery",
@@ -296,6 +145,7 @@
     {
       "id": "R-W03",
       "name": "application-and-embed-pages",
+      "completedAt": "2026-07-15",
       "routes": [
         "/box-breathing-app",
         "/breathing-app",
@@ -307,6 +157,7 @@
     {
       "id": "R-W04",
       "name": "trust-and-information-pages",
+      "completedAt": "2026-07-15",
       "routes": [
         "/about/abi",
         "/about/editorial-policy",
@@ -316,16 +167,28 @@
       ]
     }
   ],
-  "grokTranslationBatches": [
+  "integrationWaves": [],
+  "grokTranslationBatches": [],
+  "completedGrokTranslationBatches": [
     {
-      "id": "R-C01",
+      "id": "R-C01-RW04",
       "lane": "composer-output-only",
       "model": "grok-composer-2.5-fast",
-      "catalogMissingCells": 96,
-      "completedCells": 96,
-      "independentReviewCorrections": 4,
+      "catalogMissingCells": 25,
+      "completedCells": 25,
+      "independentReviewCorrections": 0,
       "status": "complete",
-      "routes": ["/breathing-app", "/breathing-visualizer", "/embed", "/stats"]
+      "routes": ["/stats"]
+    },
+    {
+      "id": "R-R02",
+      "lane": "strong-review",
+      "model": "grok-4.5",
+      "catalogMissingCells": 155,
+      "completedCells": 155,
+      "independentReviewCorrections": 1,
+      "status": "complete",
+      "routes": ["/privacy", "/support"]
     },
     {
       "id": "R-R01",
@@ -341,14 +204,14 @@
       ]
     },
     {
-      "id": "R-R02",
-      "lane": "strong-review",
-      "model": "grok-4.5",
-      "catalogMissingCells": 155,
-      "completedCells": 155,
-      "independentReviewCorrections": 1,
+      "id": "R-C01-RW03",
+      "lane": "composer-output-only",
+      "model": "grok-composer-2.5-fast",
+      "catalogMissingCells": 71,
+      "completedCells": 71,
+      "independentReviewCorrections": 4,
       "status": "complete",
-      "routes": ["/privacy", "/support"]
+      "routes": ["/breathing-app", "/breathing-visualizer", "/embed"]
     }
   ],
   "catalogAuditBatch": {

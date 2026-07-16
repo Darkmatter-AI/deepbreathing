@@ -92,7 +92,7 @@ The current multiplier is therefore 56 translated English routes × 5 locale var
 | `/breathing-exercises-for-labor` | `src/app/(site-en)/breathing-exercises-for-labor/page.tsx` | index (default) | yes | yes | yes | yes | yes | yes | yes | - |
 | `/breathing-visualizer` | `src/app/(site-en)/breathing-visualizer/page.tsx` | index (default) | yes | yes | yes | yes | yes | yes | yes | - |
 | `/coherent-breathing-app` | `src/app/(site-en)/coherent-breathing-app/page.tsx` | index (default) | yes | yes | yes | yes | yes | yes | yes | - |
-| `/embed` | `src/app/(site-en)/embed/page.tsx` | index (explicit) | yes | yes | yes | yes | yes | yes | yes | - |
+| `/embed` | `src/app/(site-en)/embed/page.tsx` | index (default) | yes | yes | yes | yes | yes | yes | yes | - |
 | `/for` | `src/app/(site-en)/for/page.tsx` | index (default) | yes | yes | yes | yes | yes | yes | yes | - |
 | `/for/anxiety` | `src/app/(site-en)/for/anxiety/page.tsx` | index (default) | yes | yes | yes | yes | yes | yes | yes | - |
 | `/for/athletes` | `src/app/(site-en)/for/athletes/page.tsx` | index (default) | yes | yes | yes | yes | yes | yes | yes | - |
@@ -251,7 +251,6 @@ The groups below separate live coupling from migration provenance and historical
 | `src/components/resonance/Resonance.tsx:12` | Consumes the runtime phrase resolver and reports fallback misses; native routing must provide its locale explicitly. |
 | `src/components/auth/sign-in-sheet.tsx:9` | Detects the proxy-backed runtime locale before resolving sign-in copy. |
 | `src/components/auth/session-complete-prompt.tsx:14` | Detects the proxy-backed runtime locale before resolving conversion-prompt copy. |
-| `src/app/(site-en)/embed/embed-generator.tsx:47` | Detects proxy locale and constructs locale-prefixed iframe URLs. |
 | `src/lib/share-utm.ts:23` | Reads proxy-mutated `document.title` and `<html lang>` because localized meta descriptions are unavailable. |
 | `src/lib/render-inline-links.tsx:10` | Assumes the proxy preserves citation link URLs; this is compatibility coupling rather than locale detection. |
 
@@ -295,7 +294,9 @@ The groups below separate live coupling from migration provenance and historical
 | `scripts/i18n/semantic-proof/build-semantic-proof.mjs:349` | Compiles approved preservation records into frozen semantic IDs and fail-closed route bundles; it is migration tooling, not a runtime lookup path. |
 | `scripts/tests/native-i18n-semantic-proof.test.mjs:217` | Pins semantic IDs, provenance separation, deterministic generation, runtime bundle shape, and incomplete-route refusal. |
 | `scripts/tests/native-i18n-route-shell.test.mjs:49` | Pins the fail-closed serving-mode boundary so proxy, preview, and cutover builds cannot accidentally expose the wrong route set. |
-| `scripts/i18n/verify-native-preview-build.mjs:108` | Post-build migration verifier rejects client-render error fallbacks, legacy translation globals, unsafe crisis numbers, and incomplete locale metadata in proof HTML. |
+| `scripts/tests/native-i18n-rw03-embed.test.mjs:37` | Proves the repository-owned embed generator no longer reads the legacy translation global or proxy locale state. |
+| `scripts/tests/native-i18n-rw04-trust-pages.test.mjs:49` | Proves the repository-owned trust-page renderers do not inspect or mutate proxy-translated browser state. |
+| `scripts/i18n/verify-native-preview-build.mjs:126` | Post-build migration verifier rejects client-render error fallbacks, legacy translation globals, unsafe crisis numbers, and incomplete locale metadata in proof HTML. |
 
 ### Tests that pin current proxy behavior (rewrite or retire at cutover)
 
@@ -322,7 +323,7 @@ The groups below separate live coupling from migration provenance and historical
 
 | Evidence | Dependency / cutover implication |
 |---|---|
-| `docs/SEO-EXPERIMENTS.md:137` | Permanent experiment history for proxy defects, mitigations, and indexing outcomes. |
+| `docs/SEO-EXPERIMENTS.md:147` | Permanent experiment history for proxy defects, mitigations, and indexing outcomes. |
 | `docs/UX-BACKLOG.md:71` | Historical ownership and translation-coverage findings. |
 | `docs/qa-reports/traction-pages-2026-06-06.md:9` | Production evidence for delayed translation, partial coverage, and hydration failures. |
 | `docs/research/eeat-citations-2026-05.md:16` | A dated content-research decision record. |
@@ -330,7 +331,7 @@ The groups below separate live coupling from migration provenance and historical
 
 ### Explicit-marker coverage audit
 
-The deterministic marker scan found 44 files with explicit MassTranslate/proxy/origin coupling. All must be classified above.
+The deterministic marker scan found 45 files with explicit MassTranslate/proxy/origin coupling. All must be classified above.
 
 Unclassified marker files: none.
 

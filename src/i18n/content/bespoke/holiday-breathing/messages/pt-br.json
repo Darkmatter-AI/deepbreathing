@@ -1,0 +1,312 @@
+{
+  "comfortTips": {
+    "items": [
+      "Encontre um local silencioso quando possível — até 30 segundos sozinho ajuda",
+      "Não force respirações profundas — respirações menores e mais suaves funcionam melhor",
+      "Comece com apenas 1 minuto — isso geralmente é o suficiente",
+      "Pule as retenções de respiração se parecerem desconfortáveis",
+      "Se sentir tontura ou formigamento, retorne à respiração normal"
+    ],
+    "title": "Dicas de conforto"
+  },
+  "dayPlans": {
+    "items": [
+      {
+        "steps": [
+          {
+            "action": "5 min de respiração coerente enquanto se prepara",
+            "timing": "Manhã"
+          },
+          {
+            "action": "3 suspiros fisiológicos no carro",
+            "timing": "Pré-chegada"
+          },
+          {
+            "action": "Suspiros no banheiro conforme necessário",
+            "timing": "Durante"
+          },
+          {
+            "action": "3 min de respiração 4-7-8 antes de dormir",
+            "timing": "Pós-evento"
+          }
+        ],
+        "title": "Dia da Reunião"
+      },
+      {
+        "steps": [
+          {
+            "action": "5 min de respiração coerente",
+            "timing": "Pré-partida"
+          },
+          {
+            "action": "2 min de respiração coerente durante esperas",
+            "timing": "Atrasos"
+          },
+          {
+            "action": "Suspiros fisiológicos para turbulência",
+            "timing": "Durante o voo"
+          },
+          {
+            "action": "Reset de 60s com respiração quadrada",
+            "timing": "Chegada"
+          }
+        ],
+        "title": "Dia de Viagem"
+      },
+      {
+        "steps": [
+          {
+            "action": "5 min de respiração coerente",
+            "timing": "Preparação matinal"
+          },
+          {
+            "action": "3 suspiros rápidos na despensa",
+            "timing": "Chegada dos convidados"
+          },
+          {
+            "action": "Pausa de 2 min de respiração coerente",
+            "timing": "Durante o evento"
+          },
+          {
+            "action": "3 min de 4-7-8 antes de dormir",
+            "timing": "Pós-limpeza"
+          }
+        ],
+        "title": "Dia de Receber Convidados"
+      }
+    ],
+    "title": "Planos para o dia de festa"
+  },
+  "faq": {
+    "items": [
+      {
+        "answer": {
+          "parts": [
+            {
+              "text": "Sim. O suspiro fisiológico (inalação dupla + expiração longa) funciona em apenas 1 a 3 respirações. É projetado especificamente para alívio de estresse agudo quando você não pode se afastar."
+            }
+          ]
+        },
+        "question": "Tenho apenas 30 segundos. Isso vai ajudar?"
+      },
+      {
+        "answer": {
+          "parts": [
+            {
+              "text": "Com certeza. "
+            },
+            {
+              "linkText": "O suspiro fisiológico"
+            },
+            {
+              "text": " pode ser disfarçado como um suspiro natural de cansaço, as pessoas suspiram o tempo todo. Para técnicas mais longas, peça licença brevemente."
+            }
+          ]
+        },
+        "question": "Posso fazer isso na mesa de jantar sem parecer estranho?"
+      },
+      {
+        "answer": {
+          "parts": [
+            {
+              "text": "Use o guia visual no seu celular — assistir à animação é mais fácil do que contar. Comece com apenas um suspiro fisiológico para aliviar a tensão."
+            }
+          ]
+        },
+        "question": "E se eu estiver muito estressado para focar na respiração?"
+      },
+      {
+        "answer": {
+          "parts": [
+            {
+              "text": "Suspiro fisiológico para momentos agudos (tensão crescente, pânico). Respiração coerente para calma sustentada (viagens, longas reuniões). 4-7-8 para a hora de dormir após dias exaustivos."
+            }
+          ]
+        },
+        "question": "Qual técnica é melhor para o estresse das festas?"
+      },
+      {
+        "answer": {
+          "parts": [
+            {
+              "text": "Respirações profundas aleatórias muitas vezes pioram a ansiedade por hiperventilação. Essas técnicas usam ritmos específicos que ativam seu sistema nervoso parassimpático."
+            }
+          ]
+        },
+        "question": "Como isso é diferente de apenas 'respirar fundo'?"
+      },
+      {
+        "answer": {
+          "parts": [
+            {
+              "text": "Sim. A respiração coerente cria uma calma sustentada que dura horas. Veja nosso guia de ansiedade de viagem para o protocolo completo."
+            }
+          ]
+        },
+        "question": "Isso ajudará com a ansiedade de viagem nas festas também?"
+      }
+    ],
+    "title": "Perguntas Frequentes"
+  },
+  "footer": "Pare se sentir tontura, formigamento ou aperto no peito. Estas são ferramentas de autorregulação, não tratamento médico. Se você tiver preocupações contínuas de saúde mental, consulte um profissional.",
+  "hero": {
+    "action": "Reset de 30s para as Festas →",
+    "eyebrow": "Calma Sazonal",
+    "intro": "Encontre calma durante a temporada de festas. Resets rápidos para reuniões, atrasos em viagens e momentos em que você precisa se afastar e respirar.",
+    "title": "Exercícios de respiração para as festas"
+  },
+  "holidayGuides": {
+    "action": "Aprenda a técnica →",
+    "items": [
+      {
+        "description": "Lide com reuniões familiares, sobrecarga social e momentos tensos com o suspiro fisiológico",
+        "timing": "30 segundos",
+        "title": "Alívio do estresse nas festas"
+      },
+      {
+        "description": "Mantenha a calma durante voos, atrasos, multidões e longas jornadas",
+        "timing": "5-10 minutos",
+        "title": "Ansiedade em viagens"
+      }
+    ],
+    "title": "Guias para as festas"
+  },
+  "metadata": {
+    "description": "Exercícios de respiração para aliviar a ansiedade de fim de ano. Redefinições rápidas para encontros, viagens e momentos de sobrecarga. Técnicas eficazes de 60 segundos a 3 minutos. Visualizador gratuito com efeito de neve.",
+    "imageAlt": "Exercícios de Respiração para Superar a Ansiedade de Fim de Ano e Encontrar a Calma na Temporada Festiva",
+    "imageSubtitle": "Pausas rápidas para encontros e estresse em viagens",
+    "imageTitle": "Exercícios de Respiração para Superar a Ansiedade de Fim de Ano e Encontrar a Calma na Temporada Festiva",
+    "socialDescription": "Resets rápidos de respiração para lidar com a ansiedade de fim de ano em reuniões, o estresse de viagens e a sobrecarga sazonal. Técnicas de 60 segundos que realmente funcionam.",
+    "socialTitle": "Exercícios de Respiração para Superar a Ansiedade de Fim de Ano e Encontrar a Calma na Temporada Festiva",
+    "title": "Exercícios de Respiração para Superar a Ansiedade de Fim de Ano e Encontrar a Calma na Temporada | Deep Breathing Exercises",
+    "twitterDescription": "Resets rápidos de respiração para a ansiedade de fim de ano em reuniões, o estresse de viagens e a sobrecarga sazonal. Visualizador gratuito.",
+    "twitterTitle": "Exercícios de Respiração para Superar a Ansiedade de Fim de Ano e Encontrar a Calma na Temporada Festiva"
+  },
+  "moments": {
+    "items": [
+      {
+        "description": "No seu carro, na porta ou enquanto se prepara",
+        "technique": "Suspiro Fisiológico",
+        "title": "Antes da reunião"
+      },
+      {
+        "description": "Pausa no banheiro, ajudando na cozinha ou em um canto silencioso",
+        "technique": "Suspiro Fisiológico",
+        "title": "Durante a reunião"
+      },
+      {
+        "description": "Na viagem de volta para casa ou antes de dormir",
+        "technique": "Respiração 4-7-8",
+        "title": "Após a reunião"
+      },
+      {
+        "description": "Aeroportos, trânsito, turbulência ou salas de espera",
+        "technique": "Respiração Coerente",
+        "title": "Estresse de viagem"
+      },
+      {
+        "description": "Pânico aumentando, preciso de alívio imediato",
+        "technique": "Suspiro Fisiológico",
+        "title": "Sobrecarga aguda"
+      }
+    ],
+    "title": "Escolha o seu momento"
+  },
+  "quickStart": {
+    "action": "Começar →",
+    "items": [
+      {
+        "description": "Alívio instantâneo quando a tensão aumenta — funciona em 1 a 3 respirações",
+        "timing": "30 segundos",
+        "title": "Reset para estresse agudo"
+      },
+      {
+        "description": "Centralize-se antes de entrar no caos",
+        "timing": "1 Minuto",
+        "title": "Calma antes das reuniões"
+      },
+      {
+        "description": "Encontre seu centro durante uma escapada ao banheiro ou cozinha",
+        "timing": "2 Minutos",
+        "title": "Pausa em local tranquilo"
+      },
+      {
+        "description": "Descomprima após um dia exaustivo de socialização",
+        "timing": "3 minutos",
+        "title": "Relaxamento antes de dormir"
+      }
+    ],
+    "title": "Início rápido"
+  },
+  "relatedGuides": {
+    "items": [
+      {
+        "description": "Respiração quadrada para ansiedade geral",
+        "title": "Alívio da ansiedade"
+      },
+      {
+        "description": "Pare o pânico rapidamente com o suspiro fisiológico",
+        "title": "Ataques de pânico"
+      },
+      {
+        "description": "Respiração 4-7-8 para noites tranquilas",
+        "title": "Melhor sono"
+      },
+      {
+        "description": "Explore todos os métodos de respiração",
+        "title": "Todas as técnicas"
+      }
+    ],
+    "title": "Guias relacionados"
+  },
+  "schema": {
+    "articleDescription": "Exercícios de respiração para aliviar o estresse das festas. Pausas rápidas para encontros, viagens e momentos de sobrecarga.",
+    "articleHeadline": "Exercícios de Respiração para Superar a Ansiedade de Fim de Ano e Encontrar a Calma na Temporada Festiva",
+    "howToDescription": "Use a técnica do suspiro fisiológico para acalmar rapidamente o estresse das festas em 30 segundos.",
+    "howToName": "Como acalmar o estresse das festas com a respiração",
+    "howToSteps": [
+      {
+        "name": "Perceba o estresse",
+        "text": "Perceba quando estiver ficando tenso: mandíbula cerrada, ombros rígidos, pensamentos acelerados ou vontade de responder de forma ríspida."
+      },
+      {
+        "name": "Primeira inspiração",
+        "text": "Inspire profundamente pelo nariz, enchendo os pulmões até cerca de 80-90%. Deixe a barriga expandir."
+      },
+      {
+        "name": "Segunda inspiração (complemento)",
+        "text": "Sem expirar, faça uma segunda inspiração mais curta pelo nariz para encher completamente os pulmões."
+      },
+      {
+        "name": "Expiração longa",
+        "text": "Expire lenta e completamente pela boca, fazendo a expiração durar mais do que as duas inspirações juntas."
+      },
+      {
+        "name": "Repita se necessário",
+        "text": "Um suspiro costuma proporcionar alívio imediato. Faça 2-3 se precisar de um reinício completo."
+      }
+    ]
+  },
+  "share": {
+    "buttonText": "Compartilhe com alguém",
+    "copiedText": "Link copiado!",
+    "text": "Estresse nas festas? Este exercício de respiração ajuda em 30 segundos."
+  },
+  "whyItWorks": {
+    "items": [
+      {
+        "description": "Expirações longas ativam seu sistema nervoso parassimpático — o modo de 'descanso e digestão' que combate o estresse.",
+        "title": "Ênfase na expiração"
+      },
+      {
+        "description": "Respirar a 5-6 ciclos por minuto maximiza a variabilidade da frequência cardíaca (VFC), o marcador de resiliência ao estresse do seu corpo.",
+        "title": "Ritmo ideal"
+      },
+      {
+        "description": "Contar as fases da respiração interrompe a ruminação e o pensamento catastrófico — você não pode entrar em pânico e contar simultaneamente.",
+        "title": "Âncora de atenção"
+      }
+    ],
+    "title": "Por que funciona"
+  }
+}

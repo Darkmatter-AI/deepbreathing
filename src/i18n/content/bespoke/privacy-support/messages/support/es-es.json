@@ -1,0 +1,60 @@
+{
+  "backLink": "Volver al visualizador →",
+  "breadcrumb": {
+    "current": "Soporte",
+    "home": "Inicio"
+  },
+  "commonQuestions": {
+    "account": {
+      "answer": "No. La app funciona sin cuenta. Las sesiones, las estadísticas y la configuración se guardan localmente en tu dispositivo. Crea una cuenta solo si quieres sincronizar tus datos entre dispositivos.",
+      "question": "¿Necesito una cuenta?"
+    },
+    "audio": {
+      "answer": "Esto es intencionado. La app mantiene las señales de audio para que puedas respirar con los ojos cerrados y el teléfono en el bolsillo. Puedes silenciar el audio en los ajustes de la app.",
+      "question": "¿Por qué sigue sonando el audio cuando bloqueo la pantalla?"
+    },
+    "data": {
+      "bodyAfterLink": "para todos los detalles.",
+      "bodyBeforeLink": "No. Los datos de las sesiones se almacenan en tu dispositivo. Si creas una cuenta, las estadísticas de sesión se sincronizan con nuestros servidores para la continuidad entre dispositivos. No vendemos datos. Consulta nuestra",
+      "linkLabel": "Política de privacidad",
+      "question": "¿Se comparten mis datos de respiración?"
+    },
+    "deletion": {
+      "action": "Eliminar cuenta.",
+      "afterAction": "Enviamos un enlace de confirmación antes de eliminar permanentemente tu cuenta y los datos de prácticas sincronizados.",
+      "beforeAction": "Abre el menú de tu cuenta en la app o el sitio web y elige",
+      "question": "¿Cómo elimino mi cuenta?"
+    },
+    "medical": {
+      "answer": "No. Deep Breathing Exercises ofrece sesiones de respiración guiadas basadas en técnicas consolidadas. No es un dispositivo médico y no diagnostica, trata ni previene ninguna afección. Consulta a un profesional sanitario antes de comenzar una nueva práctica de respiración si tienes una condición de salud.",
+      "question": "¿Es esta una app médica?"
+    },
+    "title": "Preguntas comunes"
+  },
+  "contact": {
+    "darkmatterLabel": "Darkmatter AI Labs",
+    "emailAddress": "support@deepbreathingexercises.com",
+    "emailAfter": "y te responderemos en un día laborable.",
+    "emailBefore": "Escríbenos a",
+    "teamBefore": "También puedes contactar con el equipo a través de",
+    "title": "Contacto"
+  },
+  "hero": {
+    "eyebrow": "Ejercicios de respiración profunda",
+    "intro": "Estamos encantados de ayudarte. Contacta con nosotros si tienes cualquier pregunta sobre la app, tu cuenta o tus datos.",
+    "title": "Soporte"
+  },
+  "metadata": {
+    "description": "Obtén ayuda con Deep Breathing Exercises. Contáctanos si tienes preguntas sobre la app, tu cuenta o la eliminación de datos.",
+    "imageAlt": "Soporte",
+    "socialDescription": "Obtén ayuda con Deep Breathing Exercises.",
+    "socialTitle": "Soporte — Deep Breathing Exercises",
+    "title": "Soporte | Deep Breathing Exercises",
+    "twitterDescription": "Obtén ayuda con Deep Breathing Exercises.",
+    "twitterTitle": "Soporte — Deep Breathing Exercises"
+  },
+  "safety": {
+    "body": "La secuencia de respiración Wim Hof implica hiperventilación intencionada y retención de la respiración. No practiques la retención de la respiración en el agua o cerca de ella. Detente si sientes mareo o aturdimiento. Consulta a un médico antes de empezar si tienes una afección cardiovascular, una afección respiratoria o estás embarazada.",
+    "title": "Respiración Wim Hof — nota de seguridad"
+  }
+}

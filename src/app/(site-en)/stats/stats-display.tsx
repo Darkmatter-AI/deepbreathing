@@ -2,110 +2,226 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { Flame, Timer, Activity, Sprout } from "lucide-react";
-import {
-  computeLiveStreak,
-  computeLongestRun,
-  buildGardenWeeks,
-  last7Days,
-} from "@/lib/stats/streak-calendar";
+import { Activity, Flame, Sprout, Timer } from "lucide-react";
+
+import { SignInSheet } from "@/components/auth/sign-in-sheet";
 import { BREATHING_PATTERNS } from "@/components/resonance/constants";
 import type { BreathingPattern, ModeName } from "@/components/resonance/types";
-import { SignInSheet } from "@/components/auth/sign-in-sheet";
+import type {
+  StatsContent,
+  StatsMessageId,
+} from "@/i18n/content/bespoke/stats/types";
+import {
+  buildGardenWeeks,
+  computeLiveStreak,
+  computeLongestRun,
+  last7Days,
+} from "@/lib/stats/streak-calendar";
+
 import styles from "./stats.module.css";
 
-// The breath garden renders this many week-columns (GitHub-contributions style).
 const GARDEN_WEEKS = 18;
-// Where "Begin session" / "Practice again" lead. The home app restores the
-// user's last pattern from their synced settings, so no deep-link param is needed.
-const APP_HREF = "/";
 
-const SHORT_MONTHS = [
-  "Jan", "Feb", "Mar", "Apr", "May", "Jun",
-  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
-];
-const SHORT_DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-
-/** "Mon, Jun 15" from a YYYY-MM-DD string (UTC, matching the DB date semantics). */
-function formatDayLabel(dateStr: string): string {
-  const d = new Date(`${dateStr}T00:00:00Z`);
-  return `${SHORT_DAYS[d.getUTCDay()]}, ${SHORT_MONTHS[d.getUTCMonth()]} ${d.getUTCDate()}`;
+export interface StatsRenderContext {
+  appHref: string;
+  authLocale: string;
+  locale: string;
 }
 
-/** Concise cadence line, e.g. "5.5s in · 5.5s out" or "4s in · 4s hold · 4s out · 4s hold". */
-function patternCadence(p: BreathingPattern): string {
-  const parts: string[] = [`${p.inhale}s in`];
-  if (p.inhale2) parts.push(`${p.inhale2}s in`);
-  if (p.holdIn) parts.push(`${p.holdIn}s hold`);
-  parts.push(`${p.exhale}s out`);
-  if (p.holdOut) parts.push(`${p.holdOut}s hold`);
+const PATTERN_MESSAGE_IDS: Record<
+  ModeName,
+  { description: StatsMessageId; name: StatsMessageId }
+> = {
+  "4-7-8 Relax": {
+    description: "pattern.relax478.description",
+    name: "pattern.relax478.name",
+  },
+  "Belly Breathing": {
+    description: "pattern.belly.description",
+    name: "pattern.belly.name",
+  },
+  "Box Breathing": {
+    description: "pattern.box.description",
+    name: "pattern.box.name",
+  },
+  "Breath of Fire": {
+    description: "pattern.breathOfFire.description",
+    name: "pattern.breathOfFire.name",
+  },
+  "Buteyko Breathing": {
+    description: "pattern.buteyko.description",
+    name: "pattern.buteyko.name",
+  },
+  "Coherent Breathing": {
+    description: "pattern.coherent.description",
+    name: "pattern.coherent.name",
+  },
+  "Nadi Shodhana": {
+    description: "pattern.nadi.description",
+    name: "pattern.nadi.name",
+  },
+  "Physiological Sigh": {
+    description: "pattern.physiologicalSigh.description",
+    name: "pattern.physiologicalSigh.name",
+  },
+  "Pursed Lip Breathing": {
+    description: "pattern.pursedLip.description",
+    name: "pattern.pursedLip.name",
+  },
+  "Tummo Breathing": {
+    description: "pattern.tummo.description",
+    name: "pattern.tummo.name",
+  },
+  "Ujjayi Breathing": {
+    description: "pattern.ujjayi.description",
+    name: "pattern.ujjayi.name",
+  },
+  "Wim Hof Breathing": {
+    description: "pattern.wimHof.description",
+    name: "pattern.wimHof.name",
+  },
+};
+
+function formatMessage(
+  template: string,
+  variables: Record<string, string | number>,
+): string {
+  return template.replace(/\{([a-z]+)\}/g, (_, key: string) =>
+    Object.prototype.hasOwnProperty.call(variables, key)
+      ? String(variables[key])
+      : `{${key}}`,
+  );
+}
+
+function dateFromIso(date: string): Date {
+  return new Date(`${date}T00:00:00Z`);
+}
+
+function formatDayLabel(date: string, locale: string): string {
+  return new Intl.DateTimeFormat(locale, {
+    day: "numeric",
+    month: "short",
+    timeZone: "UTC",
+    weekday: "short",
+  }).format(dateFromIso(date));
+}
+
+function formatMonthLabel(date: string, locale: string): string {
+  return new Intl.DateTimeFormat(locale, {
+    month: "short",
+    timeZone: "UTC",
+  }).format(dateFromIso(date));
+}
+
+function formatWeekdayLabel(
+  date: string,
+  locale: string,
+  width: "narrow" | "short",
+): string {
+  return new Intl.DateTimeFormat(locale, {
+    timeZone: "UTC",
+    weekday: width,
+  }).format(dateFromIso(date));
+}
+
+function patternCadence(
+  pattern: BreathingPattern,
+  content: StatsContent,
+): string {
+  const part = (
+    messageId: "cadence.in" | "cadence.hold" | "cadence.out",
+    seconds: number,
+  ) => formatMessage(content[messageId], { seconds });
+  const parts: string[] = [part("cadence.in", pattern.inhale)];
+  if (pattern.inhale2) parts.push(part("cadence.in", pattern.inhale2));
+  if (pattern.holdIn) parts.push(part("cadence.hold", pattern.holdIn));
+  parts.push(part("cadence.out", pattern.exhale));
+  if (pattern.holdOut) parts.push(part("cadence.hold", pattern.holdOut));
   return parts.join(" · ");
 }
 
-/** The benefit phrase from a pattern description, dropping the "(4-4-4-4)" tail. */
-function patternBenefit(p: BreathingPattern): string {
-  return p.description.replace(/\s*\(.*\)\s*$/, "").trim();
+function patternBenefit(description: string): string {
+  return description.replace(/\s*[（(].*[)）]\s*$/, "").trim();
 }
 
 interface StatsDisplayProps {
-  totalMinutes: number;
-  sessionsCompleted: number;
+  activeDays: string[];
+  content: StatsContent;
+  currentMode: string | null;
   currentStreak: number;
   lastSessionDate: string | null;
-  currentMode: string | null;
-  activeDays: string[];
+  renderContext: StatsRenderContext;
+  sessionsCompleted: number;
+  totalMinutes: number;
 }
 
 export function StatsDisplay({
-  totalMinutes,
-  sessionsCompleted,
+  activeDays,
+  content,
+  currentMode,
   currentStreak,
   lastSessionDate,
-  currentMode,
-  activeDays,
+  renderContext,
+  sessionsCompleted,
+  totalMinutes,
 }: StatsDisplayProps) {
-  // UTC on the server for hydration parity, local after mount so the garden and
-  // streak align with the user's real "today" (sv-SE yields YYYY-MM-DD).
-  const [today, setToday] = useState(() => new Date().toISOString().slice(0, 10));
+  const [today, setToday] = useState(() =>
+    new Date().toISOString().slice(0, 10),
+  );
   useEffect(() => {
     setToday(new Date().toLocaleDateString("sv-SE"));
   }, []);
 
-  const [hover, setHover] = useState<{ label: string; active: boolean } | null>(null);
+  const [hover, setHover] = useState<{ active: boolean; label: string } | null>(
+    null,
+  );
 
   const liveStreak = computeLiveStreak(currentStreak, lastSessionDate, today);
   const longestRun = useMemo(() => computeLongestRun(activeDays), [activeDays]);
   const weeks = useMemo(
     () => buildGardenWeeks(activeDays, today, GARDEN_WEEKS),
-    [activeDays, today]
+    [activeDays, today],
   );
   const week = useMemo(() => last7Days(activeDays, today), [activeDays, today]);
-  const weekActiveCount = week.filter((d) => d.active).length;
+  const weekActiveCount = week.filter((day) => day.active).length;
 
   const hours = Math.floor(totalMinutes / 60);
   const mins = totalMinutes % 60;
   const timeLabel =
-    hours > 0 ? `${hours}h${mins > 0 ? ` ${mins}m` : ""}` : `${totalMinutes}m`;
+    hours > 0
+      ? `${hours}${content["stats.hoursUnit"]}${mins > 0 ? ` ${mins}${content["stats.minutesUnit"]}` : ""}`
+      : `${totalMinutes}${content["stats.minutesUnit"]}`;
 
-  // Streak reframe — a stale or zero streak reads as a fresh start, never a sad "0".
   const streakActive = liveStreak > 0;
-  const streakBig = streakActive ? String(liveStreak) : "Today";
-  const streakUnit = streakActive ? (liveStreak === 1 ? "day" : "days") : "";
-  const streakLabel = streakActive ? "Day streak" : "Fresh start";
+  const streakBig = streakActive ? String(liveStreak) : content["stats.today"];
+  const streakUnit = streakActive
+    ? content[liveStreak === 1 ? "stats.daySingular" : "stats.dayPlural"]
+    : "";
+  const streakLabel =
+    content[streakActive ? "stats.dayStreak" : "stats.freshStart"];
+  const longestUnit =
+    content[longestRun === 1 ? "stats.daySingular" : "stats.dayPlural"];
   const streakSub = streakActive
-    ? `Longest: ${longestRun} ${longestRun === 1 ? "day" : "days"}`
-    : "One breath plants a new streak";
+    ? formatMessage(content["stats.longest"], {
+        count: longestRun,
+        unit: longestUnit,
+      })
+    : content["stats.freshStartSub"];
 
-  // Favorite pattern from the user's synced mode (no per-pattern counts are stored).
   const pattern: BreathingPattern | null =
     currentMode &&
     Object.prototype.hasOwnProperty.call(BREATHING_PATTERNS, currentMode)
       ? BREATHING_PATTERNS[currentMode as ModeName]
       : null;
+  const patternMessages = pattern ? PATTERN_MESSAGE_IDS[pattern.name] : null;
 
   const readout = hover
-    ? `${hover.label} · ${hover.active ? "practiced" : "a day of rest"}`
-    : "Hover a day to view history";
+    ? `${hover.label} · ${
+        content[hover.active ? "garden.practiced" : "garden.rest"]
+      }`
+    : content["garden.hoverPrompt"];
+
+  const weekdayDates = ["2024-01-08", "2024-01-10", "2024-01-12"];
 
   return (
     <div className={styles.page}>
@@ -114,30 +230,34 @@ export function StatsDisplay({
       <div className={styles.orbB} aria-hidden />
 
       <div className={styles.inner}>
-        {/* Header */}
         <header className={styles.header}>
-          <Link href={APP_HREF} aria-label="Back to breathing" className={styles.orbWrap}>
+          <Link
+            href={renderContext.appHref}
+            aria-label={content["header.backAria"]}
+            className={styles.orbWrap}
+          >
             <span className={styles.orbGlow} aria-hidden />
             <span className={styles.orb} aria-hidden />
           </Link>
           <div className={styles.headText}>
-            <div className={styles.eyebrow}>Activity log</div>
-            <h1 className={styles.h1}>Your practice</h1>
+            <div className={styles.eyebrow}>{content["header.eyebrow"]}</div>
+            <h1 className={styles.h1}>{content["header.title"]}</h1>
           </div>
-          <Link href={APP_HREF} className={styles.cta}>
-            Begin session
+          <Link href={renderContext.appHref} className={styles.cta}>
+            {content["header.beginSession"]}
             <span className={styles.ctaArrow} aria-hidden>
               &rarr;
             </span>
           </Link>
         </header>
 
-        {/* Stat tiles */}
         <section className={styles.tiles}>
           <div className={`${styles.card} ${styles.tile}`}>
             <div className={styles.tileHead}>
               <Timer size={20} />
-              <span className={styles.tileLabel}>Total active time</span>
+              <span className={styles.tileLabel}>
+                {content["stats.totalActiveTime"]}
+              </span>
             </div>
             <div className={styles.tileValue}>{timeLabel}</div>
           </div>
@@ -145,11 +265,19 @@ export function StatsDisplay({
           <div className={`${styles.card} ${styles.tile}`}>
             <div className={styles.tileHead}>
               <Activity size={20} />
-              <span className={styles.tileLabel}>Sessions</span>
+              <span className={styles.tileLabel}>
+                {content["stats.sessions"]}
+              </span>
             </div>
             <div className={styles.tileValue}>{sessionsCompleted}</div>
             <div className={styles.tileSub}>
-              {sessionsCompleted > 0 ? "keep the rhythm going" : "Ready for your first"}
+              {
+                content[
+                  sessionsCompleted > 0
+                    ? "stats.sessionsActiveSub"
+                    : "stats.sessionsEmptySub"
+                ]
+              }
             </div>
           </div>
 
@@ -162,18 +290,19 @@ export function StatsDisplay({
             </div>
             <div className={styles.streakRow}>
               <div className={styles.tileValue}>{streakBig}</div>
-              {streakUnit && <div className={styles.streakUnit}>{streakUnit}</div>}
+              {streakUnit && (
+                <div className={styles.streakUnit}>{streakUnit}</div>
+              )}
             </div>
             <div className={styles.tileSub}>{streakSub}</div>
           </div>
         </section>
 
-        {/* Breath garden */}
         <section className={`${styles.card} ${styles.garden}`}>
           <div className={styles.gardenHead}>
             <div>
-              <div className={styles.eyebrow}>Practice history</div>
-              <h2 className={styles.gardenTitle}>Breath Garden</h2>
+              <div className={styles.eyebrow}>{content["garden.subtitle"]}</div>
+              <h2 className={styles.gardenTitle}>{content["garden.title"]}</h2>
             </div>
             <div className={styles.readout}>
               <span
@@ -187,26 +316,53 @@ export function StatsDisplay({
           <div className={styles.gardenScroll}>
             <div className={styles.gardenGrid}>
               <div className={styles.monthRow}>
-                {weeks.map((w, i) => (
-                  <div key={`m-${i}`} className={styles.monthLabel}>
-                    {w.monthLabel}
+                {weeks.map((gardenWeek, index) => (
+                  <div key={`m-${index}`} className={styles.monthLabel}>
+                    {gardenWeek.monthLabel
+                      ? formatMonthLabel(
+                          gardenWeek.days[0].date,
+                          renderContext.locale,
+                        )
+                      : ""}
                   </div>
                 ))}
               </div>
               <div className={styles.weeksRow}>
                 <div className={styles.weekdayCol}>
                   <div className={styles.weekdaySpacer} />
-                  <div className={styles.weekdayLabel}>Mon</div>
+                  <div className={styles.weekdayLabel}>
+                    {formatWeekdayLabel(
+                      weekdayDates[0],
+                      renderContext.locale,
+                      "short",
+                    )}
+                  </div>
                   <div className={styles.weekdaySpacer} />
-                  <div className={styles.weekdayLabel}>Wed</div>
+                  <div className={styles.weekdayLabel}>
+                    {formatWeekdayLabel(
+                      weekdayDates[1],
+                      renderContext.locale,
+                      "short",
+                    )}
+                  </div>
                   <div className={styles.weekdaySpacer} />
-                  <div className={styles.weekdayLabel}>Fri</div>
+                  <div className={styles.weekdayLabel}>
+                    {formatWeekdayLabel(
+                      weekdayDates[2],
+                      renderContext.locale,
+                      "short",
+                    )}
+                  </div>
                   <div className={styles.weekdaySpacer} />
                 </div>
-                {weeks.map((w, wi) => (
-                  <div key={`w-${wi}`} className={styles.week}>
-                    {w.days.map((day) => {
-                      const cls = [
+                {weeks.map((gardenWeek, weekIndex) => (
+                  <div key={`w-${weekIndex}`} className={styles.week}>
+                    {gardenWeek.days.map((day) => {
+                      const dayLabel = formatDayLabel(
+                        day.date,
+                        renderContext.locale,
+                      );
+                      const className = [
                         styles.day,
                         day.future ? styles.dayFuture : "",
                         day.active ? styles.dayActive : "",
@@ -217,15 +373,15 @@ export function StatsDisplay({
                       return (
                         <div
                           key={day.date}
-                          className={cls}
-                          title={day.future ? undefined : formatDayLabel(day.date)}
+                          className={className}
+                          title={day.future ? undefined : dayLabel}
                           onMouseEnter={
                             day.future
                               ? undefined
                               : () =>
                                   setHover({
-                                    label: formatDayLabel(day.date),
                                     active: day.active,
+                                    label: dayLabel,
                                   })
                           }
                           onMouseLeave={() => setHover(null)}
@@ -239,18 +395,22 @@ export function StatsDisplay({
           </div>
 
           <div className={styles.legend}>
-            <span>Rest</span>
-            <span className={styles.legendSwatch} style={{ background: "var(--yp-rest)" }} />
+            <span>{content["garden.restLegend"]}</span>
+            <span
+              className={styles.legendSwatch}
+              style={{ background: "var(--yp-rest)" }}
+            />
             <span className={`${styles.legendSwatch} ${styles.dayActive}`} />
-            <span>Practiced</span>
+            <span>{content["garden.practicedLegend"]}</span>
           </div>
         </section>
 
-        {/* Bottom row */}
         <section className={styles.bottom}>
-          {pattern && (
+          {pattern && patternMessages && (
             <div className={`${styles.card} ${styles.panel}`}>
-              <div className={styles.panelEyebrow}>Favorite pattern</div>
+              <div className={styles.panelEyebrow}>
+                {content["pattern.favorite"]}
+              </div>
               <div className={styles.favRow}>
                 <div className={styles.favOrbWrap}>
                   <span
@@ -265,14 +425,20 @@ export function StatsDisplay({
                   />
                 </div>
                 <div>
-                  <div className={styles.favName}>{pattern.name}</div>
-                  <div className={styles.favCadence}>{patternCadence(pattern)}</div>
+                  <div className={styles.favName}>
+                    {content[patternMessages.name]}
+                  </div>
+                  <div className={styles.favCadence}>
+                    {patternCadence(pattern, content)}
+                  </div>
                 </div>
               </div>
               <div className={styles.favFoot}>
-                <span className={styles.favCount}>{patternBenefit(pattern)}</span>
-                <Link href={APP_HREF} className={styles.favCta}>
-                  Practice again &rarr;
+                <span className={styles.favCount}>
+                  {patternBenefit(content[patternMessages.description])}
+                </span>
+                <Link href={renderContext.appHref} className={styles.favCta}>
+                  {content["pattern.practiceAgain"]} &rarr;
                 </Link>
               </div>
             </div>
@@ -281,26 +447,38 @@ export function StatsDisplay({
           <div className={`${styles.card} ${styles.panel}`}>
             <div className={styles.weekHead}>
               <div className={styles.panelEyebrow} style={{ marginBottom: 0 }}>
-                Last 7 days
+                {content["week.lastSevenDays"]}
               </div>
-              <div className={styles.weekSub}>{weekActiveCount} of 7 days</div>
+              <div className={styles.weekSub}>
+                {formatMessage(content["week.summary"], {
+                  count: weekActiveCount,
+                })}
+              </div>
             </div>
             <div className={styles.strip}>
-              {week.map((d) => (
-                <div key={d.date} className={styles.stripDay} title={formatDayLabel(d.date)}>
+              {week.map((day) => (
+                <div
+                  key={day.date}
+                  className={styles.stripDay}
+                  title={formatDayLabel(day.date, renderContext.locale)}
+                >
                   <div
                     className={[
                       styles.stripPill,
-                      d.active ? styles.stripPillActive : "",
-                      d.isToday ? styles.stripPillToday : "",
+                      day.active ? styles.stripPillActive : "",
+                      day.isToday ? styles.stripPillToday : "",
                     ]
                       .filter(Boolean)
                       .join(" ")}
                   />
                   <span
-                    className={`${styles.stripLabel} ${d.isToday ? styles.stripLabelToday : ""}`}
+                    className={`${styles.stripLabel} ${day.isToday ? styles.stripLabelToday : ""}`}
                   >
-                    {d.label}
+                    {formatWeekdayLabel(
+                      day.date,
+                      renderContext.locale,
+                      "narrow",
+                    )}
                   </span>
                 </div>
               ))}
@@ -313,10 +491,16 @@ export function StatsDisplay({
 }
 
 interface StatsSignedOutProps {
+  content: StatsContent;
+  renderContext: StatsRenderContext;
   totalMinutes?: number;
 }
 
-export function StatsSignedOut({ totalMinutes }: StatsSignedOutProps) {
+export function StatsSignedOut({
+  content,
+  renderContext,
+  totalMinutes,
+}: StatsSignedOutProps) {
   const [sheetOpen, setSheetOpen] = useState(false);
 
   return (
@@ -324,26 +508,26 @@ export function StatsSignedOut({ totalMinutes }: StatsSignedOutProps) {
       <div className="glow-card rounded-[32px] border border-border bg-card p-8 text-center">
         <Flame className="mx-auto mb-4 text-primary" size={32} />
         <h1 className="mb-2 text-xl font-semibold text-card-foreground">
-          Track your practice
+          {content["signedOut.title"]}
         </h1>
         <p className="mb-6 text-sm text-muted-foreground">
-          Sign in to see your total minutes, session count, streak, and a
-          practice calendar. Your data syncs across devices.
+          {content["signedOut.body"]}
         </p>
         <button
           onClick={() => setSheetOpen(true)}
           className="rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
         >
-          Sign in to view your stats
+          {content["signedOut.button"]}
         </button>
       </div>
 
       <SignInSheet
         open={sheetOpen}
         onOpenChange={setSheetOpen}
-        headline="Sign in to track your practice"
-        subtitle="See your streak, total time, and session history."
+        headline={content["signedOut.sheetHeadline"]}
+        subtitle={content["signedOut.sheetSubtitle"]}
         totalMinutes={totalMinutes}
+        locale={renderContext.authLocale}
       />
     </div>
   );

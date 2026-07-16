@@ -1,48 +1,55 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { appendShareUtm, getLocalizedShareText, getLocalizedShareTitle } from '@/lib/share-utm';
+import { useState } from "react";
 
-export function HolidayShareButton() {
+import { appendShareUtm } from "@/lib/share-utm";
+
+export interface HolidayShareButtonProps {
+  url: string;
+  title: string;
+  text: string;
+  buttonText: string;
+  copiedText: string;
+}
+
+export function HolidayShareButton({
+  url,
+  title,
+  text,
+  buttonText,
+  copiedText,
+}: HolidayShareButtonProps) {
   const [copied, setCopied] = useState(false);
 
-  const shareUrl = 'https://deepbreathingexercises.com/holiday-breathing-exercises';
-  const shareText = 'Holiday stress? This breathing exercise helps in 30 seconds.';
+  const markCopied = () => {
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   const handleShare = async () => {
-    const liveTitle = getLocalizedShareTitle('Holiday Breathing Exercises');
-    const liveText = getLocalizedShareText(shareText);
-    // Try native share first (mobile)
     if (navigator.share) {
       try {
         await navigator.share({
-          title: liveTitle,
-          text: liveText,
-          url: appendShareUtm(shareUrl, 'native'),
+          title,
+          text,
+          url: appendShareUtm(url, "native"),
         });
         return;
-      } catch (err) {
-        // User cancelled or share failed, fall through to copy
-      }
+      } catch {}
     }
 
-    const taggedUrl = appendShareUtm(shareUrl, 'copy');
-
-    // Fallback: copy to clipboard
+    const copyValue = `${text} ${appendShareUtm(url, "copy")}`;
     try {
-      await navigator.clipboard.writeText(`${liveText} ${taggedUrl}`);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch (err) {
-      // Fallback for older browsers
-      const textArea = document.createElement('textarea');
-      textArea.value = `${liveText} ${taggedUrl}`;
+      await navigator.clipboard.writeText(copyValue);
+      markCopied();
+    } catch {
+      const textArea = document.createElement("textarea");
+      textArea.value = copyValue;
       document.body.appendChild(textArea);
       textArea.select();
-      document.execCommand('copy');
+      document.execCommand("copy");
       document.body.removeChild(textArea);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+      markCopied();
     }
   };
 
@@ -54,12 +61,12 @@ export function HolidayShareButton() {
       {copied ? (
         <>
           <CheckIcon className="h-4 w-4" />
-          Link copied!
+          {copiedText}
         </>
       ) : (
         <>
           <ShareIcon className="h-4 w-4" />
-          Share with someone
+          {buttonText}
         </>
       )}
     </button>

@@ -1,0 +1,224 @@
+{
+  "bindings": {
+    "metadata.title": {
+      "catalogSourceText": "Holiday Breathing Exercises — Find Calm During the Season | Deep Breathing Exercises",
+      "occurrenceKey": "head:title"
+    },
+    "metadata.socialTitle": {
+      "catalogSourceText": "Holiday Breathing Exercises — Find Calm During the Season",
+      "occurrenceKey": "head:meta:property:og:title"
+    },
+    "metadata.twitterTitle": {
+      "catalogSourceText": "Holiday Breathing Exercises — Find Calm During the Season",
+      "occurrenceKey": "head:meta:name:twitter:title"
+    },
+    "metadata.imageTitle": {
+      "catalogSourceText": "Holiday Breathing Exercises — Find Calm During the Season",
+      "occurrenceKey": "head:meta:property:og:title"
+    },
+    "metadata.imageAlt": {
+      "catalogSourceText": "Holiday Breathing Exercises — Find Calm During the Season",
+      "occurrenceKey": "head:meta:property:og:title"
+    },
+    "holidayGuides.action": {
+      "catalogSourceText": "Learn the technique →",
+      "occurrenceKey": "sel:span.mt-4.inline-flex:ctx:span:pos:0"
+    },
+    "holidayGuides.items[0].timing": {
+      "catalogSourceText": "30 seconds",
+      "occurrenceKey": "sel:div.absolute.top-4:ctx:div:pos:0"
+    },
+    "quickStart.action": {
+      "catalogSourceText": "Start →",
+      "occurrenceKey": "sel:span.mt-4.inline-flex:ctx:span:pos:2"
+    },
+    "quickStart.items[0].description": {
+      "catalogSourceText": "Instant relief when tensions rise—works in 1-3 breaths",
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:0"
+    },
+    "quickStart.items[0].timing": {
+      "catalogSourceText": "30 seconds",
+      "occurrenceKey": "sel:p.text-xs.font-medium:ctx:p:pos:0"
+    },
+    "quickStart.items[1].timing": {
+      "catalogSourceText": "1 Minute",
+      "occurrenceKey": "sel:p.text-xs.font-medium:ctx:p:pos:1"
+    },
+    "quickStart.items[2].timing": {
+      "catalogSourceText": "2 Minutes",
+      "occurrenceKey": "sel:p.text-xs.font-medium:ctx:p:pos:2"
+    },
+    "quickStart.items[3].title": {
+      "catalogSourceText": "Bedtime wind-down",
+      "occurrenceKey": "sel:h3.mt-2.text-lg:ctx:heading:pos:3"
+    },
+    "moments.items[0].technique": {
+      "catalogSourceText": "Physiological Sigh",
+      "occurrenceKey": "sel:p.mt-3.text-xs:ctx:p:pos:0"
+    },
+    "moments.items[1].technique": {
+      "catalogSourceText": "Physiological Sigh",
+      "occurrenceKey": "sel:p.mt-3.text-xs:ctx:p:pos:1"
+    },
+    "moments.items[2].technique": {
+      "catalogSourceText": "4-7-8 Breathing",
+      "occurrenceKey": "sel:p.mt-3.text-xs:ctx:p:pos:2"
+    },
+    "moments.items[3].technique": {
+      "catalogSourceText": "Coherent Breathing",
+      "occurrenceKey": "sel:p.mt-3.text-xs:ctx:p:pos:3"
+    },
+    "moments.items[4].technique": {
+      "catalogSourceText": "Physiological Sigh",
+      "occurrenceKey": "sel:p.mt-3.text-xs:ctx:p:pos:4"
+    },
+    "dayPlans.items[1].steps[0].action": {
+      "catalogSourceText": "5 min coherent breathing",
+      "occurrenceKey": "sel:span.text-sm.text-slate-300:ctx:span:pos:4"
+    },
+    "dayPlans.items[2].steps[0].action": {
+      "catalogSourceText": "5 min coherent breathing",
+      "occurrenceKey": "sel:span.text-sm.text-slate-300:ctx:span:pos:8"
+    },
+    "whyItWorks.title": {
+      "catalogSourceText": "Why it works",
+      "occurrenceKey": "sel:h2.mb-6.text-2xl:ctx:heading:pos:4"
+    },
+    "whyItWorks.items[0].description": {
+      "catalogSourceText": "Long exhales activate your parasympathetic nervous system—the 'rest and digest' mode that counters stress.",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0"
+    },
+    "whyItWorks.items[2].description": {
+      "catalogSourceText": "Counting breath phases interrupts rumination and catastrophic thinking—you can't panic and count simultaneously.",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2"
+    },
+    "comfortTips.items[0]": {
+      "catalogSourceText": "Find a quiet spot when possible—even 30 seconds alone helps",
+      "occurrenceKey": "sel:span:ctx:span:pos:0"
+    },
+    "comfortTips.items[1]": {
+      "catalogSourceText": "Don't force deep breaths—smaller, smoother breaths work better",
+      "occurrenceKey": "sel:span:ctx:span:pos:1"
+    },
+    "comfortTips.items[2]": {
+      "catalogSourceText": "Start with just 1 minute—that's often enough",
+      "occurrenceKey": "sel:span:ctx:span:pos:2"
+    },
+    "faq.items[2].answer.parts[0].text": {
+      "catalogSourceText": "Use the visual guide on your phone—watching the animation is easier than counting. Start with just one physiological sigh to take the edge off.",
+      "occurrenceKey": "sel:p.border-t.border-slate-700/50:ctx:p:pos:2"
+    },
+    "faq.items[5].answer.parts[0].text": {
+      "catalogSourceText": "Yes. Coherent breathing creates sustained calm that lasts for hours. See our travel anxiety guide for the complete protocol.",
+      "occurrenceKey": "sel:p.border-t.border-slate-700/50:ctx:p:pos:6"
+    },
+    "schema.articleHeadline": {
+      "catalogSourceText": "Holiday Breathing Exercises — Find Calm During the Season",
+      "occurrenceKey": "head:meta:property:og:title"
+    }
+  },
+  "drifts": [
+    {
+      "id": "drift-01",
+      "messagePaths": ["metadata.title"],
+      "reason": "Reviewed title colon and dash drift."
+    },
+    {
+      "id": "drift-02",
+      "messagePaths": ["metadata.socialTitle"],
+      "reason": "Reviewed title colon and dash drift."
+    },
+    {
+      "id": "drift-03",
+      "messagePaths": ["metadata.twitterTitle"],
+      "reason": "Reviewed title colon and dash drift."
+    },
+    {
+      "id": "drift-04",
+      "messagePaths": ["quickStart.items[0].description"],
+      "reason": "Reviewed casing or punctuation drift."
+    },
+    {
+      "id": "drift-05",
+      "messagePaths": ["quickStart.items[1].timing"],
+      "reason": "Reviewed casing or punctuation drift."
+    },
+    {
+      "id": "drift-06",
+      "messagePaths": ["quickStart.items[2].timing"],
+      "reason": "Reviewed casing or punctuation drift."
+    },
+    {
+      "id": "drift-07",
+      "messagePaths": ["quickStart.items[3].title"],
+      "reason": "Reviewed casing or punctuation drift."
+    },
+    {
+      "id": "drift-08",
+      "messagePaths": ["moments.items[0].technique"],
+      "reason": "Reviewed casing or punctuation drift."
+    },
+    {
+      "id": "drift-09",
+      "messagePaths": ["moments.items[1].technique"],
+      "reason": "Reviewed casing or punctuation drift."
+    },
+    {
+      "id": "drift-10",
+      "messagePaths": ["moments.items[2].technique"],
+      "reason": "Reviewed casing or punctuation drift."
+    },
+    {
+      "id": "drift-11",
+      "messagePaths": ["moments.items[3].technique"],
+      "reason": "Reviewed casing or punctuation drift."
+    },
+    {
+      "id": "drift-12",
+      "messagePaths": ["moments.items[4].technique"],
+      "reason": "Reviewed casing or punctuation drift."
+    },
+    {
+      "id": "drift-13",
+      "messagePaths": ["whyItWorks.title"],
+      "reason": "Reviewed casing or punctuation drift."
+    },
+    {
+      "id": "drift-14",
+      "messagePaths": ["whyItWorks.items[0].description"],
+      "reason": "Reviewed casing or punctuation drift."
+    },
+    {
+      "id": "drift-15",
+      "messagePaths": ["whyItWorks.items[2].description"],
+      "reason": "Reviewed casing or punctuation drift."
+    },
+    {
+      "id": "drift-16",
+      "messagePaths": ["comfortTips.items[0]"],
+      "reason": "Reviewed casing or punctuation drift."
+    },
+    {
+      "id": "drift-17",
+      "messagePaths": ["comfortTips.items[1]"],
+      "reason": "Reviewed casing or punctuation drift."
+    },
+    {
+      "id": "drift-18",
+      "messagePaths": ["comfortTips.items[2]"],
+      "reason": "Reviewed casing or punctuation drift."
+    },
+    {
+      "id": "drift-19",
+      "messagePaths": [
+        "faq.items[1].answer.parts[0].text",
+        "faq.items[1].answer.parts[1].linkText",
+        "faq.items[1].answer.parts[2].text",
+        "faq.items[2].answer.parts[0].text"
+      ],
+      "reason": "Reviewed FAQ rich-link segmentation and punctuation drift."
+    }
+  ],
+  "reviewedSourceHash": "d7d9dd2d10c37affc02bf8e27a1f9a977c76736db0c501d8cdc47eb62ee68c67",
+  "schemaVersion": 1
+}

@@ -1,0 +1,57 @@
+{
+  "expectedMessages": 134,
+  "locales": {
+    "de-de": {
+      "binding": 29,
+      "bytes": 11882,
+      "catalog": 86,
+      "path": "messages/de-de.json",
+      "publishable": true,
+      "replacement": 19,
+      "resolvedMessages": 134,
+      "sha256": "6a5124d5c0abd0eda200a8bba05475c178b00b35865421e4a6f3bb3d8013fdf7"
+    },
+    "es-es": {
+      "binding": 29,
+      "bytes": 11703,
+      "catalog": 86,
+      "path": "messages/es-es.json",
+      "publishable": true,
+      "replacement": 19,
+      "resolvedMessages": 134,
+      "sha256": "8b3633d03b07d741bb16459fd07127c76e85b7a241518a711315e21bea23af9a"
+    },
+    "fr-fr": {
+      "binding": 29,
+      "bytes": 11868,
+      "catalog": 86,
+      "path": "messages/fr-fr.json",
+      "publishable": true,
+      "replacement": 19,
+      "resolvedMessages": 134,
+      "sha256": "eefffb6114cc2620d8f853fc6e1383a1e63fd22870942e342adc17cf4de11b06"
+    },
+    "ja-jp": {
+      "binding": 29,
+      "bytes": 12876,
+      "catalog": 86,
+      "path": "messages/ja-jp.json",
+      "publishable": true,
+      "replacement": 19,
+      "resolvedMessages": 134,
+      "sha256": "27c5c2e6cef6a7a49001e33457c3cb2c70c4c55637276aabf3ca9e09e8d6db61"
+    },
+    "pt-br": {
+      "binding": 29,
+      "bytes": 12075,
+      "catalog": 86,
+      "path": "messages/pt-br.json",
+      "publishable": true,
+      "replacement": 19,
+      "resolvedMessages": 134,
+      "sha256": "e27a6f80c0197edb5dbbae974c815d908bc76f4770c727984c5cdedb4d6eba4a"
+    }
+  },
+  "route": "/holiday-breathing-exercises",
+  "schemaVersion": 1
+}

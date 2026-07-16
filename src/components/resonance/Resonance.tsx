@@ -12,6 +12,7 @@ import Visualizer from './components/Visualizer';
 import { createRuntimePhraseResolver, detectRuntimeLocale, RuntimePhraseKey } from './runtime-phrases';
 import { LanguageSwitcherInline } from '@/components/language-switcher';
 import { localizePathname, stripLocalePrefix } from '@/i18n';
+import type { ResonanceRouteClientMessages } from '@/i18n/content/remaining-pages/rw02-route-client/types';
 
 // GA4 event helper — safe to call even if gtag isn't loaded
 function trackEvent(name: string, params?: Record<string, string | number | boolean>) {
@@ -74,6 +75,8 @@ interface ResonanceProps {
   localizedRoutePaths?: readonly string[];
   /** Localized visible name for the route's initial breathing mode. */
   modeDisplayName?: string;
+  /** Route-owned post-session client chrome. Omitted routes keep existing defaults. */
+  routeClientMessages?: ResonanceRouteClientMessages;
 }
 
 // Valid duration values in seconds (clamped to prevent abuse)
@@ -115,7 +118,7 @@ const toRgba = (hex: string, alpha: number) => {
   return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 };
 
-const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMode, immersive, snowMode = false, forcedTheme, backgroundVariant = 'default', embedMode = false, noMobileBottomPad = false, locale, localizedRoutePaths, modeDisplayName }) => {
+const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMode, immersive, snowMode = false, forcedTheme, backgroundVariant = 'default', embedMode = false, noMobileBottomPad = false, locale, localizedRoutePaths, modeDisplayName, routeClientMessages }) => {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -1951,6 +1954,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
           activeMode={activeMode}
           locale={runtimeLocale}
           modeDisplayName={modeDisplayName}
+          routeClientMessages={routeClientMessages}
         />
       )}
 

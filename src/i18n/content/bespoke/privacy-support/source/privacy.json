@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "title": "Privacy Policy",
+    "description": "Privacy policy for Deep Breathing Exercises, including optional accounts, practice sync, analytics, and deletion.",
+    "socialTitle": "Privacy Policy",
+    "socialDescription": "Privacy policy for Deep Breathing Exercises.",
+    "twitterTitle": "Privacy Policy",
+    "twitterDescription": "Privacy policy for Deep Breathing Exercises.",
+    "imageAlt": "Privacy Policy"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Privacy"
+  },
+  "hero": {
+    "eyebrow": "DEEP BREATHING EXERCISES",
+    "title": "Privacy",
+    "intro": "Breathing works without an account. If you choose to sign in, we use your data only to provide and improve the service.",
+    "lastUpdated": "Last updated July 11, 2026."
+  },
+  "sections": {
+    "collection": {
+      "title": "What we collect",
+      "body": "Guests can practice without giving us a name or email. The app and website collect basic usage events such as session starts, ends, duration, breathing mode, and platform. The mobile app uses a random per-install analytics identifier. It does not use the advertising identifier and does not request tracking permission."
+    },
+    "accounts": {
+      "title": "Optional accounts and sync",
+      "body": "If you sign in with Apple or Google, we receive the account identifier, email address, and any name the provider shares. We store your breathing session history, totals, streak days, and settings so they can sync between the website and your phone. Practice recorded while signed out stays on your device until you choose to sign in."
+    },
+    "useAndShare": {
+      "title": "How we use and share data",
+      "body": "We use this information for app functionality, account support, analytics, performance monitoring, and bug fixes. Service providers help us run authentication, email, analytics, hosting, and database storage. We do not sell personal information or use breathing data for advertising."
+    },
+    "deletion": {
+      "title": "Your choices and deletion",
+      "beforeAction": "You may use the core breathing experience as a guest. Signed-in users can open the account menu and choose",
+      "action": "Delete account.",
+      "afterAction": "After confirmation, we permanently delete the account and synced practice data. Local data can be removed by deleting the app or clearing site data in your browser."
+    },
+    "device": {
+      "title": "Device features",
+      "body": "Audio and haptics are generated or played on your device. We do not use the microphone, HealthKit, precise location, contacts, photos, or the advertising identifier."
+    },
+    "thirdParty": {
+      "title": "Third-party links",
+      "body": "Some pages link to external research or resources. Those sites have their own privacy policies."
+    },
+    "contact": {
+      "title": "Contact",
+      "intro": "If you have questions about privacy, you can reach the creators via:",
+      "abiassiLabel": "Abiassi",
+      "darkmatterLabel": "Darkmatter AI Labs",
+      "backLink": "Back to the visualizer →"
+    }
+  }
+}

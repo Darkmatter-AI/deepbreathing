@@ -1,0 +1,79 @@
+{
+  "reviewedCells": 115,
+  "routes": {
+    "/box-breathing-before-presentation": {
+      "locales": {
+        "de-de": {
+          "path": "messages/box-breathing-before-presentation/de-de.json",
+          "publishable": true,
+          "resolvedMessages": 12,
+          "sha256": "19d9e9f63bdf8e14f900e81f3a05c32b4e4f25de0907f9449bad48eacd8b03b0"
+        },
+        "es-es": {
+          "path": "messages/box-breathing-before-presentation/es-es.json",
+          "publishable": true,
+          "resolvedMessages": 12,
+          "sha256": "44ab2ff4079b78397b9ee8c055a799032f8c78f346c0ef17446693244da92925"
+        },
+        "fr-fr": {
+          "path": "messages/box-breathing-before-presentation/fr-fr.json",
+          "publishable": true,
+          "resolvedMessages": 12,
+          "sha256": "0e2f3f46c84d9f4c0f04b19ecaf2d2de5ad99d2e7a4e899228e466bec90522d7"
+        },
+        "ja-jp": {
+          "path": "messages/box-breathing-before-presentation/ja-jp.json",
+          "publishable": true,
+          "resolvedMessages": 12,
+          "sha256": "5d8b1e1c72b4bce11bc86c20232faabcb265c89d016d17388716aeb0bae7c478"
+        },
+        "pt-br": {
+          "path": "messages/box-breathing-before-presentation/pt-br.json",
+          "publishable": true,
+          "resolvedMessages": 12,
+          "sha256": "724c72f9943b980ba62d91eefff49e00702beb0eb1e3a21780b89adb1059bb81"
+        }
+      },
+      "messagesPerLocale": 12,
+      "reviewedCells": 60
+    },
+    "/physiological-sigh-panic-attack": {
+      "locales": {
+        "de-de": {
+          "path": "messages/physiological-sigh-panic-attack/de-de.json",
+          "publishable": true,
+          "resolvedMessages": 11,
+          "sha256": "a6c9750e67b6e0d21b7321c54e96d09e7bfd9a9f54039c048b6a424867fbc821"
+        },
+        "es-es": {
+          "path": "messages/physiological-sigh-panic-attack/es-es.json",
+          "publishable": true,
+          "resolvedMessages": 11,
+          "sha256": "2e8e61aedf2fe2470b0e899a231ba0638242407d914b2b3b1087b2f7d9b862b3"
+        },
+        "fr-fr": {
+          "path": "messages/physiological-sigh-panic-attack/fr-fr.json",
+          "publishable": true,
+          "resolvedMessages": 11,
+          "sha256": "639548fcc4f8407357f445b98e3b19f36fc9ae5e3ebcee35c98e5b38dda38a4b"
+        },
+        "ja-jp": {
+          "path": "messages/physiological-sigh-panic-attack/ja-jp.json",
+          "publishable": true,
+          "resolvedMessages": 11,
+          "sha256": "5d9011b4ca428a544419c242556a5a9b152fd9d3fdaaec9d86ce9132dee3698a"
+        },
+        "pt-br": {
+          "path": "messages/physiological-sigh-panic-attack/pt-br.json",
+          "publishable": true,
+          "resolvedMessages": 11,
+          "sha256": "66598c32d76f100db011126fa68fad7513f746eb0f35b0974eb49785113c4dda"
+        }
+      },
+      "messagesPerLocale": 11,
+      "reviewedCells": 55
+    }
+  },
+  "schemaVersion": 1,
+  "unresolvedCells": 0
+}

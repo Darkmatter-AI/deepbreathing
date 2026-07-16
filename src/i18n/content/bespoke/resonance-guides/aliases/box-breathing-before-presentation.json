@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "sourceRoute": "/box-breathing-before-presentation",
+  "aliases": [
+    {
+      "messageId": "metadata.title",
+      "occurrenceKey": "head:title",
+      "sourceText": "Box Breathing Before Presentation: Calm Nerves in 60 Seconds (Free Timer)",
+      "catalogSourceText": "Box Breathing Before Presentation: Calm Nerves in 60 Seconds (Free Timer) | Deep Breathing Exercises",
+      "reviewedSourceHash": "3b4f503e23c0baf107334c062195b833d94ba13605072c414d84c0383b7060f3",
+      "reason": "Audited current English source differs from the captured catalog source."
+    },
+    {
+      "messageId": "related.label",
+      "occurrenceKey": "sel:p.text-sm.uppercase:ctx:p:pos:0",
+      "sourceText": "Related guides",
+      "catalogSourceText": "Related Guides",
+      "reviewedSourceHash": "1e5b36078e376cd4606154d914ba9eba7c5cb5aa0c5d35f1c86e4749c54d3279",
+      "reason": "Audited current English source differs from the captured catalog source."
+    }
+  ]
+}

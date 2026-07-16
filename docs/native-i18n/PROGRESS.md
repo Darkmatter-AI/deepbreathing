@@ -886,3 +886,142 @@ Next:
 - Commit this translation-input milestone before runtime route integration.
 - Start `R-W01` duration-page source extraction and prove the reusable typed renderer boundary.
 - Keep all 19 routes outside native preview until their typed bundles, loaders, metadata, hydration, and production-equivalent artifact checks pass.
+
+## 2026-07-15: Phase 4 wave `R-W01` reaches local native preview
+
+Status: Complete for deterministic bundles, typed renderer integration, local route admission, production-equivalent build, artifact verification, and representative hydrated QA; hosted-preview admission remains pending
+
+What changed:
+
+- Added one shared typed duration renderer for `/1-minute-breathing-exercise`, `/2-minute-breathing-exercise`, and `/5-minute-breathing-exercise`, plus a separate typed article and Resonance boundary for `/4-7-8-breathing-for-insomnia`.
+- Added deterministic route-specific compilers, values-only runtime bundles, literal server loaders, publication gates, localized metadata and structured data, and source-bound provenance for all four routes in all five translated locales.
+- Bound current-source drift through explicit reviewed placements. Repeated duration strings use occurrence-bound aliases, and the insomnia compiler derives only the two byte-identical structured FAQ questions while keeping the other schema values distinct.
+- Routed admitted internal destinations through the locale resolver while preserving English fallbacks for routes that have not joined native preview. Query strings and the existing English route behavior remain unchanged.
+- Advanced all 20 `R-W01` locale-route pairs to `preview`. The batch map now records `R-W01` as complete and reconciles 15 remaining static routes.
+
+Validation evidence:
+
+- The duration compiler reports 18 checked source bindings with zero stale entries; the insomnia compiler reports eight checked bindings with zero stale entries.
+- The complete native-i18n suite passes 130 of 130 tests. TypeScript and `git diff --check` pass.
+- A configured production-equivalent `native-preview` build completed successfully and generated 293 of 293 static pages.
+- The post-build verifier accepted all 205 admitted localized HTML artifacts with correct BCP 47 language, localized title, self-canonical, seven alternates, no Next error document, no legacy proxy global, and no unintended standalone US `988` crisis number.
+- Hydrated checks passed on Spanish one-minute, Portuguese two-minute, Japanese five-minute, and German insomnia routes. Localized metadata, H1s, duration queries, admitted links, client controls, and the client-only Resonance experience remained stable with no browser console errors. Ahrefs Analytics only logged its expected localhost-ignore warning.
+- The configured build reports 97.4 KB first-load JavaScript for the three English duration routes and 86.9 KB for the English insomnia route. The shared localized catch-all remains 170 KB.
+
+Blockers and risks:
+
+- The 20 new pairs have not yet joined a configured hosted-preview matrix, crawler sweep, mobile matrix, accessibility pass, or complete interactive exercise test.
+- The build requires the repository's configured production-equivalent environment because existing Better Auth initialization and local database behavior fail without it. No secret or environment value was printed or changed.
+- Existing English copy, claims, design, keywords, and translation quality outside objective strict-parity repairs remain intentionally unchanged.
+- No deployment, sitemap publication, production environment, DNS, Cloudflare route, proxy setting, or external service state changed.
+
+Next:
+
+- Begin `R-W02` with red contracts for the four shared Resonance guides, their route-scoped client chrome, and the separate holiday page.
+- Retain exclusive ownership for the shared guide foundation, runtime client bridge, route content, and holiday renderer so parallel integration cannot collide.
+- Keep all five `R-W02` routes outside native preview until their complete 25-pair static and hydrated evidence passes.
+
+## 2026-07-15: Phase 4 wave `R-W02` reaches local native preview
+
+Status: Complete for deterministic bundles, typed renderer and client integration, local route admission, production-equivalent build, artifact verification, and representative hydrated QA; hosted-preview admission remains pending
+
+What changed:
+
+- Added one typed guide renderer for `/box-breathing-before-presentation`, `/breathing-exercises-before-surgery`, `/breathing-exercises-for-labor`, and `/physiological-sigh-panic-attack`, plus a separate typed renderer for `/holiday-breathing-exercises`.
+- Added deterministic route-specific compilers, values-only runtime bundles, literal server loaders, localized metadata and structured data, and source-bound provenance for all five routes in all five translated locales.
+- Rejected selector- and attribute-derived runtime keys during review and replaced them with semantic guide fields before admission. Only byte-identical structured values are derived; every other metadata and schema value remains explicit.
+- Added a route-scoped client-message bridge for the presentation and panic guides while preserving the existing shared Resonance runtime phrase system and English defaults for routes without route-specific messages.
+- Preserved the holiday page's share behavior, typed FAQ link slots, duration-query links, Snow client island, and current nofollow behavior without changing copy, design, claims, or information architecture.
+- Advanced all 25 `R-W02` locale-route pairs to `preview`. The batch map now records `R-W02` as complete and reconciles 10 remaining static routes across `R-W03` and `R-W04`.
+
+Validation evidence:
+
+- The four-guide compiler reports current artifacts with zero unresolved or stale bindings across 1,715 route-locale cells. The route-client compiler reports 115 current cells, and the holiday compiler reports 134 checked leaves per locale with zero unresolved or stale values.
+- The complete native-i18n suite passes 146 of 146 tests. TypeScript and `git diff --check` pass.
+- A configured production-equivalent `native-preview` build completed successfully and generated 318 of 318 static pages. Its non-production postbuild skipped the sitemap ping.
+- The post-build verifier accepted all 230 admitted localized HTML artifacts with correct BCP 47 language, localized title, self-canonical, seven alternates, no Next error document, no legacy proxy global, and no unintended standalone US `988` crisis number.
+- Hydrated checks passed on Spanish presentation, Portuguese surgery, Japanese labor, French holiday, and German panic routes. Titles, document language, canonicals, alternates, localized internal links, localized Resonance controls, and route body content remained stable with no runtime exception or Next error UI.
+- The only browser resource failures were the expected local 404 responses for `/_vercel/insights/script.js` and `/_vercel/speed-insights/script.js`; neither endpoint exists under local `next start`.
+
+Blockers and risks:
+
+- The 25 new pairs have not yet joined a configured hosted-preview matrix, crawler sweep, mobile matrix, accessibility pass, or complete interactive exercise test.
+- The configured build still reports pre-existing metadata-base warnings on English routes outside this wave and client-side-rendering deoptimization warnings on `/` and `/breathing-visualizer`; neither warning was introduced or changed in `R-W02`.
+- Existing English copy, claims, design, keywords, and translation quality outside objective strict-parity repairs remain intentionally unchanged.
+- No deployment, sitemap publication, production environment, DNS, Cloudflare route, proxy setting, or external service state changed.
+
+Next:
+
+- Begin `R-W03` with separate red contracts for the application pages, breathing visualizer, and embed generator plus localized embed children.
+- Keep the application, visualizer, and embed lanes under exclusive file ownership so they can run in parallel without changing shared routing or manifest files.
+- Keep all five `R-W03` parent routes and localized embed children outside native preview until typed content, query behavior, client hydration, and production-equivalent artifact checks pass.
+
+## 2026-07-15: Phase 4 wave `R-W03` reaches local native preview
+
+Status: Complete for deterministic bundles, typed application and embed integration, local route admission, production-equivalent generation, artifact verification, and representative hydrated QA; hosted-preview admission remains pending
+
+What changed:
+
+- Added typed, route-scoped content and client boundaries for `/box-breathing-app`, `/breathing-app`, `/breathing-visualizer`, `/coherent-breathing-app`, and `/embed` in all five translated locales.
+- Added explicit localized `/[locale]/embed/[slug]` routes for the existing fourteen breathing players, producing 70 noindex embed children while preserving duration, binaural, theme, and full-page-link behavior.
+- Added deterministic compilers, literal server loaders, localized metadata and structured data, manifest admission, route-client messages, and source-bound provenance without runtime text matching or proxy access.
+- Preserved the production page structures after independent parity review restored all fourteen visualizer technique cards and all nine embed-generator pattern choices. The initial integration had reduced those sets to five each and was corrected before admission.
+- Completed the `R-C01-RW03` output-only translation lane for 71 catalog-gap cells. Independent Grok 4.5 review retained 67 values and made four narrow target-language corrections.
+
+Validation evidence:
+
+- The visualizer contract contains 112 server messages and 12 explicit client messages per locale, and the embed contract contains 66 semantic messages per locale with zero unresolved values.
+- Focused R-W03 compiler, source-binding, loader, renderer, client, and embed tests pass. The final independent route review passed after the card-set corrections.
+- The production-equivalent build generates all 70 localized embed children, and a live local matrix returned 200 for every child with the expected BCP 47 language, `noindex, nofollow`, localized full-page link, and no Next error document.
+- Hydrated checks passed on Spanish box breathing, Portuguese general app, French coherent breathing, Japanese visualizer, German embed generator, and a Spanish Buteyko embed child. The visualizer rendered all fourteen technique cards, the generator rendered all nine pattern choices, and the embed child retained its duration, binaural, and dark-theme query behavior.
+
+Blockers and risks:
+
+- These routes and embed children have not yet joined a configured hosted-preview, crawler, mobile, accessibility, or complete interactive-session matrix.
+- Existing English copy, claims, design, keyword choices, and information architecture remain intentionally unchanged so later improvements can be measured separately.
+- No deployment, production route, sitemap content, DNS, Cloudflare configuration, proxy setting, or environment value changed.
+
+Next:
+
+- Complete `R-W04` for trust, privacy, support, and the dynamic authenticated stats surface.
+- Run one final production-equivalent build, static artifact verifier, live Phase 4 matrix, and representative hydrated browser pass.
+- Keep production in `proxy` mode until the hosted matrix, remaining shared UI work, and cutover gates are reviewed.
+
+## 2026-07-15: Phase 4 route waves complete in local native preview
+
+Status: Complete for all 19 Phase 4 parent routes, all 95 parent locale-route pairs, 70 localized embed children, and the local production-equivalent proof; hosted-preview and production-admission gates remain pending
+
+What changed:
+
+- Added typed repository-owned content for `/about/abi`, `/about/editorial-policy`, `/privacy`, `/support`, and `/stats` in all five translated locales.
+- Kept the four static trust and information routes inside the fail-closed localized catch-all, and added an explicit dynamic localized stats route so authentication, database-backed totals, streak and calendar logic, and the existing 140-day fallback remain unchanged.
+- Preserved the existing `/stats` discovery contradiction as migration parity: localized stats is self-canonical with seven alternates but remains `noindex`.
+- Completed the remaining output-only translation lanes and source bindings. All eight catalog-gap contracts now account for 366 completed cells with zero unresolved values.
+- Independent review corrected a duplicated French century reference on the Abi page and localized one visible Japanese About label. Privacy and support passed review with current deletion instructions preserved and stale email and 30-day source claims unable to reach runtime. Stats passed a separate behavioral and data-flow review.
+- Marked `R-W01` through `R-W04` complete in the batch map. No Phase 4 parent route remains unassigned or pending integration.
+
+Validation evidence:
+
+- The complete native-i18n suite passes 185 of 185 tests. TypeScript, compiler preflight checks, inventory checks, and `git diff --check` pass.
+- The final direct production-equivalent Next build generated 433 of 433 pages. The catch-all generated 265 localized paths, the explicit embed route generated 70 localized children, and localized stats remained a dynamic server route.
+- The post-build verifier accepted all 275 admitted static localized HTML artifacts with correct language, localized title, self-canonical, seven alternates, and no proxy global or Next error document.
+- A live local sweep accepted all 95 Phase 4 parent locale-route responses and all 70 localized embed children. All five dynamic stats pages returned localized signed-out content, correct language, self-canonical, seven alternates, and `noindex`.
+- The artifact verifier initially caught all five localized visualizer artifacts as client-rendering error fallbacks. A red test and a minimal Suspense boundary around only the client visualizer island restored the real localized server shell; the rebuilt verifier then passed 275 of 275.
+- Representative hydrated checks passed across R-W03 and R-W04 in every translated locale. Japanese visualizer rendered fourteen cards; German embed rendered nine choices; the localized child preserved its query options and noindex state; and Portuguese stats rendered its localized signed-out state. No browser page exception or Next error UI appeared.
+
+Operational note:
+
+- One earlier local validation used the repository `build` lifecycle after sourcing the production-equivalent environment. Because that environment retained `VERCEL=1` and `VERCEL_ENV=production`, the postbuild hook submitted the unchanged 337-URL production sitemap to IndexNow and received status 200. No sitemap, URL, deployment, routing, or page content changed, but the submission was an unintended external side effect and cannot be undone.
+- Every subsequent validation used `pnpm exec next build` directly, bypassing the postbuild hook. No further sitemap submission occurred.
+
+Blockers and risks:
+
+- The final 90 locally added parent pairs and 70 embed children have not joined the configured hosted-preview matrix. The last hosted checkpoint still covers the earlier 185 admitted pairs.
+- Navigation, language switching, remaining shared application UI, proxy dependency removal, production crawl evidence, and the full browser, crawler, mobile, accessibility, authenticated, and interactive matrices remain later gates.
+- Production remains on the MassTranslate proxy. No deployment, cutover, DNS, Cloudflare route, production environment, sitemap publication, or proxy configuration changed.
+
+Next:
+
+- Review this complete local Phase 4 baseline, then publish it only to the configured branch preview for the expanded hosted matrix.
+- Finish the remaining shared UI and proxy-independence gates without mixing copy, keyword, claim, design, or new-language improvements into the migration baseline.
+- Capture fresh search and operational baselines only when the production cutover candidate is ready.

@@ -1,0 +1,60 @@
+{
+  "backLink": "ビジュアライザーに戻る →",
+  "breadcrumb": {
+    "current": "サポート",
+    "home": "ホーム"
+  },
+  "commonQuestions": {
+    "account": {
+      "answer": "いいえ。アプリはアカウントなしで動作します。セッション、統計、設定はお使いのデバイスにローカル保存されます。デバイス間でデータを同期したい場合のみ、アカウントを作成してください。",
+      "question": "アカウントは必要ですか？"
+    },
+    "audio": {
+      "answer": "これは意図的な仕様です。アプリは音声ガイドを再生し続け、スマートフォンをポケットに入れたまま目を閉じて呼吸できるようにしています。音声はアプリの設定でミュートできます。",
+      "question": "画面をロックしても音声が再生され続けるのはなぜですか？"
+    },
+    "data": {
+      "bodyAfterLink": "をご覧ください。",
+      "bodyBeforeLink": "いいえ。セッションデータはお使いのデバイスに保存されます。アカウントを作成すると、デバイス間の継続性のためにセッション統計が当社のサーバーに同期されます。データを販売することはありません。詳しくは",
+      "linkLabel": "プライバシーポリシー",
+      "question": "呼吸データは共有されますか？"
+    },
+    "deletion": {
+      "action": "アカウントを削除。",
+      "afterAction": "アカウントと同期された練習データを完全に削除する前に、確認リンクを送信します。",
+      "beforeAction": "アプリまたはウェブサイトでアカウントメニューを開き、次を選択します",
+      "question": "アカウントを削除するにはどうすればよいですか？"
+    },
+    "medical": {
+      "answer": "いいえ。Deep Breathing Exercisesは確立された技法に基づくガイド付き呼吸セッションを提供します。医療機器ではなく、いかなる疾患の診断、治療、予防も行いません。健康上の問題がある場合は、新しい呼吸の実践を始める前に医療機関に相談してください。",
+      "question": "これは医療アプリですか？"
+    },
+    "title": "よくある質問"
+  },
+  "contact": {
+    "darkmatterLabel": "Darkmatter AI Labs",
+    "emailAddress": "support@deepbreathingexercises.com",
+    "emailAfter": "1営業日以内にご返信いたします。",
+    "emailBefore": "次のアドレスまでメールでご連絡ください",
+    "teamBefore": "チームへのご連絡は次からも可能です",
+    "title": "お問い合わせ"
+  },
+  "hero": {
+    "eyebrow": "深呼吸エクササイズ",
+    "intro": "喜んでお手伝いします。アプリ、アカウント、またはデータに関するご質問がございましたらお問い合わせください。",
+    "title": "サポート"
+  },
+  "metadata": {
+    "description": "Deep Breathing Exercisesに関するサポートを受ける。アプリ、アカウント、またはデータ削除に関するご質問はお問い合わせください。",
+    "imageAlt": "サポート",
+    "socialDescription": "Deep Breathing Exercisesに関するサポートを受ける。",
+    "socialTitle": "サポート — Deep Breathing Exercises",
+    "title": "サポート | Deep Breathing Exercises",
+    "twitterDescription": "Deep Breathing Exercisesに関するサポートを受ける。",
+    "twitterTitle": "サポート — Deep Breathing Exercises"
+  },
+  "safety": {
+    "body": "Wim Hof呼吸のシークエンスには、意図的な過換気と息止めが含まれます。水中または水辺で息止めを行わないでください。めまいやふらつきを感じたら中止してください。心血管疾患、呼吸器疾患がある場合、または妊娠中の場合は、始める前に医師に相談してください。",
+    "title": "Wim Hof呼吸 — 安全上の注意"
+  }
+}

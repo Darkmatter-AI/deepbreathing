@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "sourceRoute": "/breathing-visualizer",
+  "messages": {
+    "saveSessionAria": {
+      "placementId": "4c60a2ea-12d2-4344-bfee-63c2f0c25a48",
+      "reviewedSourceHash": "4f338bb6f491836f59e6de2f3c49e8a402e9f646f223a280cb7627d8a5d9229d",
+      "sourceText": "Save your session"
+    },
+    "closeAria": {
+      "placementId": "1d2e5dd0-a140-4601-80ed-78e2c3a90595",
+      "reviewedSourceHash": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed",
+      "sourceText": "Close"
+    },
+    "title": {
+      "placementId": "3ec15fd4-7561-4af9-883c-ed65622fdef6",
+      "reviewedSourceHash": "dc6151531a9458f0fd1cd4f986e4205ca241f154d7069b4824d2feedbfb812c4",
+      "sourceText": "Save your breathing practice journey"
+    },
+    "sessionComplete": {
+      "placementId": "3759cf51-cc2f-4a05-9b97-b35f071bbdb3",
+      "reviewedSourceHash": "91aa92ee57681bee4dc26ff99de5f27d024ecca4f583b99b46cc879b0f54cf8c",
+      "sourceText": "✓ SESSION COMPLETE"
+    },
+    "modeName": {
+      "placementId": "814f8fc9-9824-41ad-8db5-a7de431ec73d",
+      "reviewedSourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095",
+      "sourceText": "Box Breathing"
+    },
+    "justNow": {
+      "placementId": "5881d294-0514-4bd4-b0e9-81abef54ad6a",
+      "reviewedSourceHash": "7ddb44d8a533a7535d85cedddf35d7f3414632ad4e10a0d7ca697723e1d97993",
+      "sourceText": "just now"
+    },
+    "continueWithGoogle": {
+      "placementId": "102eae7c-a85c-4be7-b562-9a2b7760e62b",
+      "reviewedSourceHash": "cce937e891444a7417c696cdd80c0eed11deb383f3c42bdb8b591d5dfcaa398e",
+      "sourceText": "Continue with Google"
+    },
+    "oneTapNoPassword": {
+      "placementId": "a84a28cb-93c0-4544-8e02-654eb2e802dc",
+      "reviewedSourceHash": "2d05edde2700731b408e66b88b0625ab0122322c3850062c075f16eb43b7d349",
+      "sourceText": "One tap. No password."
+    },
+    "emailAddressAria": {
+      "placementId": "94d33e9c-6068-46aa-a986-0c7a232f6100",
+      "reviewedSourceHash": "f2488fd4ef4adbc6ac61300083f2c33980e48bb4bbf3c540ad760d61fc36f420",
+      "sourceText": "Email address"
+    },
+    "emailPlaceholder": {
+      "placementId": "9b34e8c5-c93a-436a-abf5-97e3ab3fb5ed",
+      "reviewedSourceHash": "2837f6fa1c84ecc9f4d745b5df455c27db84dba89d167eb2863ae293994736b5",
+      "sourceText": "Enter your email"
+    },
+    "sendLink": {
+      "placementId": "17a29464-66c2-468e-b7d4-b3de1d6c9dce",
+      "reviewedSourceHash": "b386634c8b4382c837083126db57b819a9ec415563057903646df6121dd026d1",
+      "sourceText": "Send link"
+    },
+    "saveWithEmail": {
+      "placementId": "51401406-8193-4070-a718-4622b1192091",
+      "reviewedSourceHash": "392502efc3a96ad2eeca901c39fcd6a82f02115ae5fe1018f0bb198d27a6438e",
+      "sourceText": "or save with email"
+    }
+  },
+  "catalogOnly": [
+    {
+      "placementId": "f7b58b94-8f4f-40f1-aef2-8dc0e0645899",
+      "reviewedSourceHash": "f3f12bcbaf484115a74ed6efa55efbc1aafa67319af7b5c41813fedc7353e6a6",
+      "sourceText": "Application error: a client-side exception has occurred (see the browser console for more information).",
+      "classification": "stale-catalog-only",
+      "reason": "Transient translated browser exception from the preservation crawl; it is not current route source and must never render."
+    }
+  ]
+}

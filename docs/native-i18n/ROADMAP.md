@@ -2,7 +2,7 @@
 
 Started: 2026-07-15  
 Planning estimate: 20 to 30 focused engineering days  
-Current phase: Phase 3 `/breathe` and `/for` families pass the configured hosted-preview matrix; all 366 known Phase 4 catalog gaps now have source-bound reviewed repository translations; runtime route migration and production-admission evidence remain pending; production remains in `proxy` mode
+Current phase: all four Phase 4 waves are integrated in local `native-preview`; all 19 parent routes, 95 parent locale-route pairs, and 70 localized embed children pass the production-equivalent local proof; zero Phase 4 parent routes remain; production remains in `proxy` mode
 
 This is a living plan. Update checkboxes and the progress log as evidence changes. Estimates are planning ranges, not deadlines.
 
@@ -132,19 +132,19 @@ Goal: complete native coverage for the remaining public site.
 
 Deliverables:
 
-- [~] Migrate bespoke timer, visualizer, application, exercise, informational, and support pages. Source-bound contracts now preserve all 366 previously missing catalog cells with zero unresolved values; typed runtime bundles, renderers, and route admission remain pending for 19 static routes.
+- [x] Migrate bespoke timer, visualizer, application, exercise, informational, and support pages. All 19 Phase 4 parent routes are integrated for all five translated locales. Source-bound contracts preserve all 366 previously missing catalog cells with zero unresolved values, and the embed family adds 70 explicit localized noindex children.
 - [ ] Migrate navigation, footer, settings, authentication, session completion, and error-state phrases.
 - [ ] Replace `window.__MT_CONFIG__` locale inference with repository-owned locale state.
 - [ ] Reconcile the existing runtime phrase table with the new shared bundle.
 - [ ] Localize route-specific Open Graph images without scraping production.
 - [ ] Define intentional English-only routes in the route manifest.
-- [ ] Test every route across desktop, mobile, JavaScript-disabled, and hydrated states.
+- [~] Test every route across desktop, mobile, JavaScript-disabled, and hydrated states. The final production-equivalent build generated 433 pages; all 275 admitted static localized artifacts, all 95 Phase 4 live parent responses, and all 70 localized embed children pass. Representative hydrated checks cover every Phase 4 route class and all five translated locales; the complete hosted, mobile, accessibility, crawler, authenticated, and interactive matrices remain pending.
 
 Gate 4:
 
-- [ ] All currently published localized routes have native parity.
+- [~] All currently published localized routes have native parity. The complete local static artifact set and dynamic stats matrix pass; expanded hosted-preview and final production-equivalent crawl evidence remain pending.
 - [ ] No code path depends on DOM text replacement or `window.__MT_CONFIG__`.
-- [ ] No public localized route silently falls back to English.
+- [~] No public localized route silently falls back to English. Deterministic coverage checks and the 275-artifact local verifier pass; full hosted browser and crawler evidence remains pending.
 - [ ] All user-visible shared UI strings use the native bundle contract.
 
 Rollback:
@@ -217,7 +217,7 @@ Owner authorization: granted on 2026-07-15. The authorization becomes actionable
 
 Deliverables:
 
-- [~] Run the complete automated route and metadata matrix against a production-equivalent preview. All 185 currently admitted locale-route pairs pass on the hosted preview; remaining Phase 4 routes must join the matrix before cutover.
+- [~] Run the complete automated route and metadata matrix against a production-equivalent preview. The last hosted checkpoint passes its earlier 185 admitted locale-route pairs. The final local production-equivalent baseline passes all 275 static localized artifacts, all five dynamic localized stats routes, all 95 Phase 4 parent responses, and all 70 localized embed children. The expanded set must still join a configured hosted matrix before cutover.
 - [ ] Run focused browser QA for all route families and locales.
 - [ ] Capture pre-cutover GSC indexing, search performance, Bing performance, crawl health, page speed, and error baselines.
 - [ ] Freeze unrelated routing and sitemap work during cutover.

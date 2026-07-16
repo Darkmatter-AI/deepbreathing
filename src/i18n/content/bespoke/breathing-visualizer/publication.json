@@ -1,0 +1,56 @@
+{
+  "expectedServerMessages": 112,
+  "locales": {
+    "de-de": {
+      "contentPath": "messages/de-de.json",
+      "contentSha256": "9d3bc43494dd0c22e3a28423da3da93d11880565b1037a982d171604588f14ee",
+      "publishable": true,
+      "resolvedRouteClientMessages": 12,
+      "resolvedServerMessages": 112,
+      "routeClientPath": "route-client/messages/de-de.json",
+      "routeClientSha256": "92b1e9566c98f5fe8b14507ffdc2b861a5ee176e114ee97213209b30e113a514"
+    },
+    "es-es": {
+      "contentPath": "messages/es-es.json",
+      "contentSha256": "649fd31ef2d16dae9ed9f7467c32dbe753c863336d7158060160e971de2e56a7",
+      "publishable": true,
+      "resolvedRouteClientMessages": 12,
+      "resolvedServerMessages": 112,
+      "routeClientPath": "route-client/messages/es-es.json",
+      "routeClientSha256": "eb275154600a884f9b5aea97f8c8d0c4b40d9e8c99d8d13a9c878dba5f44b97c"
+    },
+    "fr-fr": {
+      "contentPath": "messages/fr-fr.json",
+      "contentSha256": "370f40c128236db49fdd7e6af65eddeeb569c4871f2a151c33b02b5066408afe",
+      "publishable": true,
+      "resolvedRouteClientMessages": 12,
+      "resolvedServerMessages": 112,
+      "routeClientPath": "route-client/messages/fr-fr.json",
+      "routeClientSha256": "c52e67a0121a619a048b94f0f3deddd728931bef87c9d71198473952d027d93f"
+    },
+    "ja-jp": {
+      "contentPath": "messages/ja-jp.json",
+      "contentSha256": "c90c220e36d49631c3609438c8d5983d3cc80803e6909e3bdb666b5b40a48e0e",
+      "publishable": true,
+      "resolvedRouteClientMessages": 12,
+      "resolvedServerMessages": 112,
+      "routeClientPath": "route-client/messages/ja-jp.json",
+      "routeClientSha256": "922b5d7cf34e5b6658d7c80a4cfcf9129c55d84a566d2736a734b92d14ea6c48"
+    },
+    "pt-br": {
+      "contentPath": "messages/pt-br.json",
+      "contentSha256": "4fe45cef27f568c9270da6490955c236c7becdee5141c1c6c9f03d90669511f5",
+      "publishable": true,
+      "resolvedRouteClientMessages": 12,
+      "resolvedServerMessages": 112,
+      "routeClientPath": "route-client/messages/pt-br.json",
+      "routeClientSha256": "5c9ca9c23c62a4c44de71beefffdd9c8a9654ec2f696cb22cc0051e0b9e85e2c"
+    }
+  },
+  "route": "/breathing-visualizer",
+  "routeClientMessagesPerLocale": 12,
+  "routeClientReviewedCells": 60,
+  "schemaVersion": 1,
+  "staleCatalogOnlyCells": 5,
+  "unresolvedCells": 0
+}

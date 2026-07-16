@@ -1,0 +1,2591 @@
+{
+  "locales": {
+    "de-de": {
+      "breadcrumb.home": {
+        "catalogRoute": "/languages",
+        "catalogSegmentId": "c1673bf2-cc1a-48d0-825f-a7e33b1c44f8",
+        "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+        "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+        "status": "route-catalog-explicit"
+      },
+      "footer.about": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "788b0e11-29ce-4d5b-a380-7d07da1275f0",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:3",
+        "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+        "status": "route-catalog-explicit"
+      },
+      "footer.aboutAbi": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "5774876d-f0e0-4298-be35-7a85b32262b8",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+        "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+        "status": "route-catalog-explicit"
+      },
+      "footer.app": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "cf704181-ea4d-4cdc-be2f-23118765bca7",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+        "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+        "status": "route-catalog-explicit"
+      },
+      "footer.embed": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "da16fb2e-cd82-43cf-aa15-6d1192c405da",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:5",
+        "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+        "status": "route-catalog-explicit"
+      },
+      "footer.guides": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "ab32c627-d109-43e6-98b6-0a5f4f6b5292",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+        "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+        "status": "route-catalog-explicit"
+      },
+      "footer.safety": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "101c5bac-8c13-4d34-8351-076ab2ec5a52",
+        "occurrenceKey": "sel:p.text-xs.text-muted-foreground:ctx:p:pos:0",
+        "sourceHash": "dbd9c240b2d41239e69de338bc871690ee28f129d2c205c37c42cf547e70850f",
+        "status": "route-catalog-explicit"
+      },
+      "footer.techniques": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "298ce0b2-9cc2-42aa-9f64-ca6fa17667d5",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+        "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+        "status": "route-catalog-explicit"
+      },
+      "hero.eyebrow": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "58e0726e-fda0-4522-bfcd-4dcd84cb0064",
+        "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+        "sourceHash": "0a800218f62d328f392fabe6ded3b64bbaec53675d663ebcd9f1fb2bb7b3fef9",
+        "status": "route-catalog-explicit"
+      },
+      "hero.intro": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "21b8f873-28b5-4c6a-aa62-5b8912befc24",
+        "occurrenceKey": "sel:p.max-w-xl.text-lg:ctx:p:pos:0",
+        "sourceHash": "9b57f2c79f8aab69fcd619a1cbf2fbc4a05becca0d7423a2b96f03130ccba95a",
+        "status": "route-catalog-explicit"
+      },
+      "hero.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "deafe3a4-1ca5-4c18-b07d-ad5b8fbb39eb",
+        "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "2968b43d5ce063e7950bcf536fe634d9daf65d7da4e0157e7b2717a1c7114b6a",
+        "status": "route-catalog-explicit"
+      },
+      "loading.ariaLabel": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "581cbb49-090e-426a-8d76-342ff36cafa5",
+        "occurrenceKey": "attr:div.min-h-screen.flex:aria-label:pos:0",
+        "sourceHash": "dd71f41a16a5c572c4612ec3da376e68c7afec80395b903936605ec251f04e87",
+        "status": "route-catalog-explicit"
+      },
+      "metadata.description": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "181e3bce-4510-4aea-8543-4894c754d80d",
+        "occurrenceKey": "head:meta:name:description",
+        "sourceHash": "ffec7532f10aea0fcfa2a43f6f801deeef183cb1f551fef7327bc85317504ecf",
+        "status": "route-catalog-explicit"
+      },
+      "metadata.imageAlt": {
+        "derivedFrom": "metadata.socialTitle",
+        "sourceHash": "d0dcf064df5e399d3353910e92783f8dc43d7ada697c5811d2849ee559a1295f",
+        "status": "display-derived-from-explicit-page-binding"
+      },
+      "metadata.socialDescription": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "c3fb330d-2051-45d5-87b5-cbe6549b4baa",
+        "occurrenceKey": "head:meta:property:og:description",
+        "sourceHash": "58580a66bc7e465b1190c6dc69507682628a17cee9ba547e3eff4a672af9a66e",
+        "status": "route-catalog-explicit"
+      },
+      "metadata.socialTitle": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "afdbe1e1-0d46-43d6-8a0c-bbc447cf10df",
+        "occurrenceKey": "head:meta:property:og:title",
+        "sourceHash": "f285db0fb808a3dc2f63d87db81acb5b93d7ec47ea34a656f3bb69075ae0429c",
+        "status": "route-catalog-explicit"
+      },
+      "metadata.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "04ff5acc-bc12-40d0-bc39-1b120108d8a8",
+        "occurrenceKey": "head:title",
+        "sourceHash": "d5f77f74824e126eb6c97da65da3b6db66d456a9cd226d4351bbbde4eb7560d9",
+        "status": "route-catalog-rendered-source"
+      },
+      "metadata.twitterDescription": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "4e58e711-077b-4b61-9ca9-80646e6069dc",
+        "occurrenceKey": "head:meta:name:twitter:description",
+        "sourceHash": "01648c9aaa6d4c12a8c643555dd5fe0f642b8fdaf215606f08a274988badc389",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.anxiety.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "50b70292-56cb-47a5-8d1c-abaa46cfe2e4",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:8",
+        "sourceHash": "45feac2d3800d7659d3fd25a180ab77d9c87e192e779c873fcee48dc6843d58b",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.anxiety.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "e3a95c56-503c-42c4-b80c-b5b31fe1187c",
+        "occurrenceKey": "sel:p.text-lg.font-semibold:ctx:product:pos:2",
+        "sourceHash": "324af3a7f1b77322470f4e5be00928e27075415a7baf6172996a4906ec9e9d00",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.sleep.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "397fa03f-6fc7-48ee-b112-da94f4bae15d",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:6",
+        "sourceHash": "11ad70ac6a55893f8e225bec5e7864c5cdb289a878c00c1b448d456a513b81df",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.sleep.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "45b62d96-c38d-4884-a77e-aa747dfcf73a",
+        "occurrenceKey": "sel:p.text-lg.font-semibold:ctx:product:pos:0",
+        "sourceHash": "48cb1d3ed1c4af0663146c1a7f710e0a3a536302de60133e9521112200aafc29",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.timer.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "2f9ce305-c278-4d13-974e-53611713e4b1",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:7",
+        "sourceHash": "07a46417f0ca181377df167c43a59c9575b7164b1905bd1c67c860938b1b94c5",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.timer.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "b478450d-d290-40d8-a145-fe9d0556140f",
+        "occurrenceKey": "sel:p.text-lg.font-semibold:ctx:product:pos:1",
+        "sourceHash": "6248ec0e2cbb0cdd706174ef7ca2bb9cdbe571f3bc2dd17d16296832527e1bf5",
+        "status": "route-catalog-explicit"
+      },
+      "related.label": {
+        "reason": "Reviewed case-only source alias from the preserved catalog's `Related Guides` placement to the current English `Related guides` copy.",
+        "sourceHash": "1e5b36078e376cd4606154d914ba9eba7c5cb5aa0c5d35f1c86e4749c54d3279",
+        "status": "repo-reviewed-source-alias"
+      },
+      "related.learnMore": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "36aa985b-1b4a-4d60-b662-a0e0b08959a8",
+        "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:0",
+        "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+        "status": "route-catalog-explicit"
+      },
+      "schema.articleDescription": {
+        "reason": "Reviewed translation for the Article schema description, whose English semantics are distinct from the page metadata description.",
+        "sourceHash": "15e162d00bd38a20c1bab4ef3efac40909ee3930b2a90e52a50d1884474ebcf7",
+        "status": "repo-reviewed-source-alias"
+      },
+      "schema.authorName": {
+        "sourceHash": "2d6040623d71ef93da49a7faf035ccbb84481b58935f7618b6114af9760a4b7f",
+        "status": "schema-proper-name-invariant"
+      },
+      "schema.faq.items.0.answer": {
+        "reason": "Reviewed translation for the structured FAQ answer, preserving its source-specific quotation style independently of visible copy.",
+        "sourceHash": "37ccd03bb7fc79fc833213b7e84e8c2d6eb77816163b9f6f0d85674f3ec31383",
+        "status": "repo-reviewed-source-alias"
+      },
+      "schema.faq.items.0.question": {
+        "derivedFrom": "sections.faq.items.0.question",
+        "sourceHash": "45e68998638dd3adc87097243d311174bd2d38de80ac2e848117b9bc3813e2df",
+        "status": "schema-byte-identical-page-binding"
+      },
+      "schema.faq.items.1.answer": {
+        "reason": "Reviewed translation for the structured FAQ answer, preserving the source's attribution of the eight-cycle recommendation to Dr. Weil.",
+        "sourceHash": "42b1f2e8361b1b3852d3d23f584402d74555635f964aa993a74e538250a7f636",
+        "status": "repo-reviewed-source-alias"
+      },
+      "schema.faq.items.1.question": {
+        "reason": "Reviewed translation for the structured FAQ question, which explicitly names 4-7-8 breathing unlike the shorter visible question.",
+        "sourceHash": "6aac07bd3f00e4f6562411d8a0d7b89ffdebc3a923dea8ec8f63c1dc302d18b0",
+        "status": "repo-reviewed-source-alias"
+      },
+      "schema.faq.items.2.answer": {
+        "reason": "Reviewed translation for the structured FAQ answer, preserving its explicit statement that the mechanisms explain the sleep effect.",
+        "sourceHash": "0b24624bdfeb8766b79c3bddaa1466b0b616fd4fc4c0068398263c9b083748c0",
+        "status": "repo-reviewed-source-alias"
+      },
+      "schema.faq.items.2.question": {
+        "derivedFrom": "sections.faq.items.2.question",
+        "sourceHash": "2a551a6f7b1905a3c4f233f082bbaa4f56d2d3c37728bc8c9f216643ab2ed2a4",
+        "status": "schema-byte-identical-page-binding"
+      },
+      "schema.publisherName": {
+        "sourceHash": "17554deb9a254e83e4e4a8f1213423428b48b3bb25c5d515a622192defa720a7",
+        "status": "schema-proper-name-invariant"
+      },
+      "sections.faq.items.0.answer": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "9a517d64-6117-4be9-a112-d273d5e49399",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:1",
+        "sourceHash": "188b55ed9f6d77f857bc5ba7d5b877337e2a0c17f9d7b805866672a27371fb00",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.items.0.question": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "1ad56f14-54b2-4073-a1f7-029f6a424f46",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "45e68998638dd3adc87097243d311174bd2d38de80ac2e848117b9bc3813e2df",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.items.1.answer": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "3f6edf0e-b59a-4854-ba8f-4613623bad98",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+        "sourceHash": "230cc755699dff83eb2b475e9481a6459a0268a06aaf50fe8e66c50310ed12b9",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.items.1.question": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "ad6fad89-8b13-4f3a-9ab7-77cad59cd120",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:1",
+        "sourceHash": "c4254b408f57a8d7db5e9be8350ad8b2ea44bf6685fcf5091b35fafa06d30e5f",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.items.2.answer": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "ea402d60-9834-46bf-9b4d-963f46a6d8d9",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:3",
+        "sourceHash": "a21c83fdff930686e617cf4b7ed0a20bef6d1f0349f299eb10687d7dcd040b2d",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.items.2.question": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "2b8f4549-9f8b-4c3e-a2f3-07d015736315",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:2",
+        "sourceHash": "2a551a6f7b1905a3c4f233f082bbaa4f56d2d3c37728bc8c9f216643ab2ed2a4",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "8e2e9956-6056-40cf-ac03-fdd28c7e1bec",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:4",
+        "sourceHash": "e956a9404b467e6b372e082d28cb9d4710af764c2fa5e56a415211e12166be0e",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.cycles.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "900983d2-7d88-4a5c-a809-6f50cb6d361c",
+        "occurrenceKey": "sel:li:ctx:li:pos:1",
+        "sourceHash": "50cf2b4bd54e21d47e51cca1b0110e70cd97397fbbac602761b214c7a1bc7cab",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.cycles.label": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "aa23736b-f485-4f79-8f0b-d26d5892bdee",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:1",
+        "sourceHash": "523ca4f53e6353844c2891abf77671efda83c3411d312e64cd243d5fd9833541",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.pattern.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "00c8d863-8fa2-4a90-99f3-792797edc45a",
+        "occurrenceKey": "sel:li:ctx:li:pos:0",
+        "sourceHash": "6f40fb690d1553a1b7ab45b398a8632cf39b644c429b23bd2826693632aa144c",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.pattern.label": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "39baa982-e488-4cbf-af97-eb2e48b1f15e",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:0",
+        "sourceHash": "50625632208924ee56cc6c606015026eb05a2e8622ed49599f0e212a366cfc68",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.position.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "accad0b9-5c57-4613-a4fd-718ed6e259f4",
+        "occurrenceKey": "sel:li:ctx:li:pos:2",
+        "sourceHash": "f1417614e1061fb2a9189225bd6de0948e04325b9d938af549bae7c2155cf470",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.position.label": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "84851eb1-4990-4500-8db6-7afb878c36a4",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:2",
+        "sourceHash": "64b368ff80764ee44f495b88f5ab1cf26a9292f06056ef71c2657e911c02fda9",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.restless.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "e0d555cc-fa38-4c46-99c0-401468fb272e",
+        "occurrenceKey": "sel:li:ctx:li:pos:3",
+        "sourceHash": "2f72af88ee6a7bfe76007ed6a65fdcffeac46d09bc497320bbf8f99e7958b884",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.restless.label": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "1af0bf30-720e-430c-a8db-135d50c53a04",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:3",
+        "sourceHash": "220fa135b218eb4f1b07afe5ff851b05cc9565dce04e85fc16e7ba41a2385050",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "3868e2a8-5711-4eff-814a-e3d32b2b560b",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
+        "sourceHash": "93c4b4d3c71356288ae35f724479873d955d9cf652c4eff58dffd3c83f8bbb4d",
+        "status": "route-catalog-explicit"
+      },
+      "sections.start.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "882efcb7-d3db-4e1c-8e51-41af0a00d819",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0",
+        "sourceHash": "291140bed0480bdf2bbc7a70c943c339fb963af80d0d46f59179fbbe181b2984",
+        "status": "route-catalog-explicit"
+      },
+      "sections.start.guideLink": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "6efa638f-a1b2-4484-a5c5-2ea222b30426",
+        "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:0",
+        "sourceHash": "bd7adbcbe06f92231e84a189ef7ce059849f47ec60e367b5d78dbb2aad820187",
+        "status": "route-catalog-explicit"
+      },
+      "sections.start.timerLink": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "31377bfb-e791-4c5a-8c5f-3d2bf72ff539",
+        "occurrenceKey": "sel:a.rounded-full.bg-primary:ctx:link:pos:0",
+        "sourceHash": "a637054d5be5b61b82a316894455530bf2da87447eb4c806c8db0f9331381f32",
+        "status": "route-catalog-explicit"
+      },
+      "sections.start.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "160e7504-25ae-47ed-801b-eb07a09e435b",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "b79601b77bb6ceb70ccb61bcf77d40d08ed7f51b7b97cde7456421fd284a03f1",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.0.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "5a546d5c-fa69-4ba4-b636-24fa65c3294f",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:0",
+        "sourceHash": "fea17e41f7250a71066a8468c40c2b371e29f6f1584f8b91f4bc83a22fde4431",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.0.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "8633bb84-f718-47e7-a05a-478cbde1844d",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:5",
+        "sourceHash": "1a0b64563a0be80f1c4ed63e5b5b1e14b9f35e5dbf2877716d4f97a8cb961a26",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.1.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "3064eb84-a5e8-4a9e-8026-13ea2ba15bd6",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:1",
+        "sourceHash": "06c99b63f9725b66f0be49adc5d784b2faec1b4a40542e2c53cef732f2fe5e65",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.1.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "fa2e96f6-dc04-440b-b2c2-d616eb3bedcb",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:6",
+        "sourceHash": "5c99e17bf15a4fe259c5842df4c0307948fe72c76c960b1a5185e77aa31e5aa3",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.2.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "11c73cd5-9b6d-4ab5-bc5c-af3b9c2f768d",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:2",
+        "sourceHash": "a497295ae49ea27155c1e88c39daedc772bb781598f01763f327a6f2805e9a26",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.2.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "effd3a5d-7fae-46ca-a8f2-439f0d257b79",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:7",
+        "sourceHash": "3dfc41a70f1884119c1a50b50a795f441181a04d1ea62b9b07b38c1a4a51a446",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.3.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "21740095-756d-4ed3-8041-e5d301d3c088",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:3",
+        "sourceHash": "d959e7dcb9ae108719d14cffaef0045f293e7891bf39bbb629877ef3c5370aef",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.3.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "90fafc27-e00f-4f82-9a65-02cb6ab0ac7c",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:8",
+        "sourceHash": "bd7fd29c32545766f25e5bfed3b7ee7bbd9597889305b9a9c928880b2b23a3d3",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.4.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "6592fbc2-3aad-479c-8fad-4ae11b922eb6",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:4",
+        "sourceHash": "f7b1d25c2c106927cbfde9b20a82ffd197df621b3d572a06b01bb106251deab3",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.4.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "4e99e222-e0ba-41a5-acf0-8b527df80387",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:9",
+        "sourceHash": "a5503e5694a3decf73f24521350cacb83fe933f41441660f6bb4fc67eb122b73",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.5.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "8405057c-e7a1-4512-a905-aa8aea9fc508",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:5",
+        "sourceHash": "9fd7a45d0937cb1eb2102fc096b7db5c9d89732ad85a3c6da608425b7d82aa08",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.5.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "9416d358-abb7-4087-9ddb-c60426216467",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:10",
+        "sourceHash": "8ce5113eccf651e4b396de946e69c5071bce30adf4c96bc956cc4716308c7527",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "939c2286-89db-4cbd-bc65-6c54ab11af5d",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:3",
+        "sourceHash": "987fabba9bea93a5b03460c00bf3ca9ad57caa2c14ae5079144b46ec7ce8a76f",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph1": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "8ae348dc-ab4d-48de-9ad3-42627eb6daa2",
+        "occurrenceKey": "sel:p:ctx:p:pos:0",
+        "sourceHash": "a1e84b0255a306f035a04818a9244e023428f909a659eaecc35ff4e6847d3957",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph2.afterEmphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "55038cf4-3efe-438b-8775-4fafd593b75f",
+        "occurrenceKey": "sel:p:ctx:p:pos:2",
+        "sourceHash": "f3dc516665a8bcd2eeb08b4c1fbed828d864dd8e9149499ccd6bafa1135ad72a",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph2.beforeEmphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "529e8d2b-9732-4569-956c-17cff2e2a207",
+        "occurrenceKey": "sel:p:ctx:p:pos:1",
+        "sourceHash": "3ab42877cdf8eedef549216619a6c750677cd92fe3205b9f579779a2024d8f7f",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph2.emphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "372582ae-2358-4857-a6a8-18bfc944e2b3",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:4",
+        "sourceHash": "b1de456666f2a0800aed2fbaf415d6c7bf19000e445635b3032022ad6663196c",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph3.afterEmphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "ef2cc144-1b83-4a26-8337-8662ebdb422e",
+        "occurrenceKey": "sel:p:ctx:p:pos:4",
+        "sourceHash": "5002ba2045b1a463b2be143f08ad21ad915ea8f7e712b2776e22d1d2e6fd81fe",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph3.beforeEmphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "4c3a1b85-eb92-4688-ac51-7f3e8df622d6",
+        "occurrenceKey": "sel:p:ctx:p:pos:3",
+        "sourceHash": "e231410216be044a05558e9d9dc6e845c6926f8889af6b733ee68d801c377cd5",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph3.emphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "98678437-5b17-4c44-a167-757d37366b2d",
+        "occurrenceKey": "sel:em:ctx:em:pos:0",
+        "sourceHash": "187897ce0afcf20b50ba2b37dca84a951b7046f29ed5ab94f010619f69d6e189",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "83354dad-bcc2-47dc-80c4-b8215fdc39d8",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:2",
+        "sourceHash": "146661bfd83743656ccc83b0f53cac49bf74292a0460c67ed5a86ee708af3da7",
+        "status": "route-catalog-explicit"
+      },
+      "updated": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "d9bac204-355f-49b3-9d77-69355678841d",
+        "occurrenceKey": "sel:p.mb-6.text-xs:ctx:p:pos:0",
+        "sourceHash": "8a80edacaf3fe3da0db188b93764e5ebe881b5fe2432eee4ef1949f16a80f323",
+        "status": "route-catalog-explicit"
+      }
+    },
+    "es-es": {
+      "breadcrumb.home": {
+        "catalogRoute": "/languages",
+        "catalogSegmentId": "c1673bf2-cc1a-48d0-825f-a7e33b1c44f8",
+        "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+        "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+        "status": "route-catalog-explicit"
+      },
+      "footer.about": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "788b0e11-29ce-4d5b-a380-7d07da1275f0",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:3",
+        "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+        "status": "route-catalog-explicit"
+      },
+      "footer.aboutAbi": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "5774876d-f0e0-4298-be35-7a85b32262b8",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+        "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+        "status": "route-catalog-explicit"
+      },
+      "footer.app": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "cf704181-ea4d-4cdc-be2f-23118765bca7",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+        "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+        "status": "route-catalog-explicit"
+      },
+      "footer.embed": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "da16fb2e-cd82-43cf-aa15-6d1192c405da",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:5",
+        "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+        "status": "route-catalog-explicit"
+      },
+      "footer.guides": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "ab32c627-d109-43e6-98b6-0a5f4f6b5292",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+        "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+        "status": "route-catalog-explicit"
+      },
+      "footer.safety": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "101c5bac-8c13-4d34-8351-076ab2ec5a52",
+        "occurrenceKey": "sel:p.text-xs.text-muted-foreground:ctx:p:pos:0",
+        "sourceHash": "dbd9c240b2d41239e69de338bc871690ee28f129d2c205c37c42cf547e70850f",
+        "status": "route-catalog-explicit"
+      },
+      "footer.techniques": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "298ce0b2-9cc2-42aa-9f64-ca6fa17667d5",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+        "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+        "status": "route-catalog-explicit"
+      },
+      "hero.eyebrow": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "58e0726e-fda0-4522-bfcd-4dcd84cb0064",
+        "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+        "sourceHash": "0a800218f62d328f392fabe6ded3b64bbaec53675d663ebcd9f1fb2bb7b3fef9",
+        "status": "route-catalog-explicit"
+      },
+      "hero.intro": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "21b8f873-28b5-4c6a-aa62-5b8912befc24",
+        "occurrenceKey": "sel:p.max-w-xl.text-lg:ctx:p:pos:0",
+        "sourceHash": "9b57f2c79f8aab69fcd619a1cbf2fbc4a05becca0d7423a2b96f03130ccba95a",
+        "status": "route-catalog-explicit"
+      },
+      "hero.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "deafe3a4-1ca5-4c18-b07d-ad5b8fbb39eb",
+        "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "2968b43d5ce063e7950bcf536fe634d9daf65d7da4e0157e7b2717a1c7114b6a",
+        "status": "route-catalog-explicit"
+      },
+      "loading.ariaLabel": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "581cbb49-090e-426a-8d76-342ff36cafa5",
+        "occurrenceKey": "attr:div.min-h-screen.flex:aria-label:pos:0",
+        "sourceHash": "dd71f41a16a5c572c4612ec3da376e68c7afec80395b903936605ec251f04e87",
+        "status": "route-catalog-explicit"
+      },
+      "metadata.description": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "181e3bce-4510-4aea-8543-4894c754d80d",
+        "occurrenceKey": "head:meta:name:description",
+        "sourceHash": "ffec7532f10aea0fcfa2a43f6f801deeef183cb1f551fef7327bc85317504ecf",
+        "status": "route-catalog-explicit"
+      },
+      "metadata.imageAlt": {
+        "derivedFrom": "metadata.socialTitle",
+        "sourceHash": "d0dcf064df5e399d3353910e92783f8dc43d7ada697c5811d2849ee559a1295f",
+        "status": "display-derived-from-explicit-page-binding"
+      },
+      "metadata.socialDescription": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "c3fb330d-2051-45d5-87b5-cbe6549b4baa",
+        "occurrenceKey": "head:meta:property:og:description",
+        "sourceHash": "58580a66bc7e465b1190c6dc69507682628a17cee9ba547e3eff4a672af9a66e",
+        "status": "route-catalog-explicit"
+      },
+      "metadata.socialTitle": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "afdbe1e1-0d46-43d6-8a0c-bbc447cf10df",
+        "occurrenceKey": "head:meta:property:og:title",
+        "sourceHash": "f285db0fb808a3dc2f63d87db81acb5b93d7ec47ea34a656f3bb69075ae0429c",
+        "status": "route-catalog-explicit"
+      },
+      "metadata.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "04ff5acc-bc12-40d0-bc39-1b120108d8a8",
+        "occurrenceKey": "head:title",
+        "sourceHash": "d5f77f74824e126eb6c97da65da3b6db66d456a9cd226d4351bbbde4eb7560d9",
+        "status": "route-catalog-rendered-source"
+      },
+      "metadata.twitterDescription": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "4e58e711-077b-4b61-9ca9-80646e6069dc",
+        "occurrenceKey": "head:meta:name:twitter:description",
+        "sourceHash": "01648c9aaa6d4c12a8c643555dd5fe0f642b8fdaf215606f08a274988badc389",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.anxiety.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "50b70292-56cb-47a5-8d1c-abaa46cfe2e4",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:8",
+        "sourceHash": "45feac2d3800d7659d3fd25a180ab77d9c87e192e779c873fcee48dc6843d58b",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.anxiety.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "e3a95c56-503c-42c4-b80c-b5b31fe1187c",
+        "occurrenceKey": "sel:p.text-lg.font-semibold:ctx:product:pos:2",
+        "sourceHash": "324af3a7f1b77322470f4e5be00928e27075415a7baf6172996a4906ec9e9d00",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.sleep.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "397fa03f-6fc7-48ee-b112-da94f4bae15d",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:6",
+        "sourceHash": "11ad70ac6a55893f8e225bec5e7864c5cdb289a878c00c1b448d456a513b81df",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.sleep.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "45b62d96-c38d-4884-a77e-aa747dfcf73a",
+        "occurrenceKey": "sel:p.text-lg.font-semibold:ctx:product:pos:0",
+        "sourceHash": "48cb1d3ed1c4af0663146c1a7f710e0a3a536302de60133e9521112200aafc29",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.timer.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "2f9ce305-c278-4d13-974e-53611713e4b1",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:7",
+        "sourceHash": "07a46417f0ca181377df167c43a59c9575b7164b1905bd1c67c860938b1b94c5",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.timer.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "b478450d-d290-40d8-a145-fe9d0556140f",
+        "occurrenceKey": "sel:p.text-lg.font-semibold:ctx:product:pos:1",
+        "sourceHash": "6248ec0e2cbb0cdd706174ef7ca2bb9cdbe571f3bc2dd17d16296832527e1bf5",
+        "status": "route-catalog-explicit"
+      },
+      "related.label": {
+        "reason": "Reviewed case-only source alias from the preserved catalog's `Related Guides` placement to the current English `Related guides` copy.",
+        "sourceHash": "1e5b36078e376cd4606154d914ba9eba7c5cb5aa0c5d35f1c86e4749c54d3279",
+        "status": "repo-reviewed-source-alias"
+      },
+      "related.learnMore": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "36aa985b-1b4a-4d60-b662-a0e0b08959a8",
+        "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:0",
+        "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+        "status": "route-catalog-explicit"
+      },
+      "schema.articleDescription": {
+        "reason": "Reviewed translation for the Article schema description, whose English semantics are distinct from the page metadata description.",
+        "sourceHash": "15e162d00bd38a20c1bab4ef3efac40909ee3930b2a90e52a50d1884474ebcf7",
+        "status": "repo-reviewed-source-alias"
+      },
+      "schema.authorName": {
+        "sourceHash": "2d6040623d71ef93da49a7faf035ccbb84481b58935f7618b6114af9760a4b7f",
+        "status": "schema-proper-name-invariant"
+      },
+      "schema.faq.items.0.answer": {
+        "reason": "Reviewed translation for the structured FAQ answer, preserving its source-specific quotation style independently of visible copy.",
+        "sourceHash": "37ccd03bb7fc79fc833213b7e84e8c2d6eb77816163b9f6f0d85674f3ec31383",
+        "status": "repo-reviewed-source-alias"
+      },
+      "schema.faq.items.0.question": {
+        "derivedFrom": "sections.faq.items.0.question",
+        "sourceHash": "45e68998638dd3adc87097243d311174bd2d38de80ac2e848117b9bc3813e2df",
+        "status": "schema-byte-identical-page-binding"
+      },
+      "schema.faq.items.1.answer": {
+        "reason": "Reviewed translation for the structured FAQ answer, preserving the source's attribution of the eight-cycle recommendation to Dr. Weil.",
+        "sourceHash": "42b1f2e8361b1b3852d3d23f584402d74555635f964aa993a74e538250a7f636",
+        "status": "repo-reviewed-source-alias"
+      },
+      "schema.faq.items.1.question": {
+        "reason": "Reviewed translation for the structured FAQ question, which explicitly names 4-7-8 breathing unlike the shorter visible question.",
+        "sourceHash": "6aac07bd3f00e4f6562411d8a0d7b89ffdebc3a923dea8ec8f63c1dc302d18b0",
+        "status": "repo-reviewed-source-alias"
+      },
+      "schema.faq.items.2.answer": {
+        "reason": "Reviewed translation for the structured FAQ answer, preserving its explicit statement that the mechanisms explain the sleep effect.",
+        "sourceHash": "0b24624bdfeb8766b79c3bddaa1466b0b616fd4fc4c0068398263c9b083748c0",
+        "status": "repo-reviewed-source-alias"
+      },
+      "schema.faq.items.2.question": {
+        "derivedFrom": "sections.faq.items.2.question",
+        "sourceHash": "2a551a6f7b1905a3c4f233f082bbaa4f56d2d3c37728bc8c9f216643ab2ed2a4",
+        "status": "schema-byte-identical-page-binding"
+      },
+      "schema.publisherName": {
+        "sourceHash": "17554deb9a254e83e4e4a8f1213423428b48b3bb25c5d515a622192defa720a7",
+        "status": "schema-proper-name-invariant"
+      },
+      "sections.faq.items.0.answer": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "9a517d64-6117-4be9-a112-d273d5e49399",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:1",
+        "sourceHash": "188b55ed9f6d77f857bc5ba7d5b877337e2a0c17f9d7b805866672a27371fb00",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.items.0.question": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "1ad56f14-54b2-4073-a1f7-029f6a424f46",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "45e68998638dd3adc87097243d311174bd2d38de80ac2e848117b9bc3813e2df",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.items.1.answer": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "3f6edf0e-b59a-4854-ba8f-4613623bad98",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+        "sourceHash": "230cc755699dff83eb2b475e9481a6459a0268a06aaf50fe8e66c50310ed12b9",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.items.1.question": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "ad6fad89-8b13-4f3a-9ab7-77cad59cd120",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:1",
+        "sourceHash": "c4254b408f57a8d7db5e9be8350ad8b2ea44bf6685fcf5091b35fafa06d30e5f",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.items.2.answer": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "ea402d60-9834-46bf-9b4d-963f46a6d8d9",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:3",
+        "sourceHash": "a21c83fdff930686e617cf4b7ed0a20bef6d1f0349f299eb10687d7dcd040b2d",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.items.2.question": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "2b8f4549-9f8b-4c3e-a2f3-07d015736315",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:2",
+        "sourceHash": "2a551a6f7b1905a3c4f233f082bbaa4f56d2d3c37728bc8c9f216643ab2ed2a4",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "8e2e9956-6056-40cf-ac03-fdd28c7e1bec",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:4",
+        "sourceHash": "e956a9404b467e6b372e082d28cb9d4710af764c2fa5e56a415211e12166be0e",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.cycles.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "900983d2-7d88-4a5c-a809-6f50cb6d361c",
+        "occurrenceKey": "sel:li:ctx:li:pos:1",
+        "sourceHash": "50cf2b4bd54e21d47e51cca1b0110e70cd97397fbbac602761b214c7a1bc7cab",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.cycles.label": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "aa23736b-f485-4f79-8f0b-d26d5892bdee",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:1",
+        "sourceHash": "523ca4f53e6353844c2891abf77671efda83c3411d312e64cd243d5fd9833541",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.pattern.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "00c8d863-8fa2-4a90-99f3-792797edc45a",
+        "occurrenceKey": "sel:li:ctx:li:pos:0",
+        "sourceHash": "6f40fb690d1553a1b7ab45b398a8632cf39b644c429b23bd2826693632aa144c",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.pattern.label": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "39baa982-e488-4cbf-af97-eb2e48b1f15e",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:0",
+        "sourceHash": "50625632208924ee56cc6c606015026eb05a2e8622ed49599f0e212a366cfc68",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.position.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "accad0b9-5c57-4613-a4fd-718ed6e259f4",
+        "occurrenceKey": "sel:li:ctx:li:pos:2",
+        "sourceHash": "f1417614e1061fb2a9189225bd6de0948e04325b9d938af549bae7c2155cf470",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.position.label": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "84851eb1-4990-4500-8db6-7afb878c36a4",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:2",
+        "sourceHash": "64b368ff80764ee44f495b88f5ab1cf26a9292f06056ef71c2657e911c02fda9",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.restless.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "e0d555cc-fa38-4c46-99c0-401468fb272e",
+        "occurrenceKey": "sel:li:ctx:li:pos:3",
+        "sourceHash": "2f72af88ee6a7bfe76007ed6a65fdcffeac46d09bc497320bbf8f99e7958b884",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.restless.label": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "1af0bf30-720e-430c-a8db-135d50c53a04",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:3",
+        "sourceHash": "220fa135b218eb4f1b07afe5ff851b05cc9565dce04e85fc16e7ba41a2385050",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "3868e2a8-5711-4eff-814a-e3d32b2b560b",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
+        "sourceHash": "93c4b4d3c71356288ae35f724479873d955d9cf652c4eff58dffd3c83f8bbb4d",
+        "status": "route-catalog-explicit"
+      },
+      "sections.start.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "882efcb7-d3db-4e1c-8e51-41af0a00d819",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0",
+        "sourceHash": "291140bed0480bdf2bbc7a70c943c339fb963af80d0d46f59179fbbe181b2984",
+        "status": "route-catalog-explicit"
+      },
+      "sections.start.guideLink": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "6efa638f-a1b2-4484-a5c5-2ea222b30426",
+        "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:0",
+        "sourceHash": "bd7adbcbe06f92231e84a189ef7ce059849f47ec60e367b5d78dbb2aad820187",
+        "status": "route-catalog-explicit"
+      },
+      "sections.start.timerLink": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "31377bfb-e791-4c5a-8c5f-3d2bf72ff539",
+        "occurrenceKey": "sel:a.rounded-full.bg-primary:ctx:link:pos:0",
+        "sourceHash": "a637054d5be5b61b82a316894455530bf2da87447eb4c806c8db0f9331381f32",
+        "status": "route-catalog-explicit"
+      },
+      "sections.start.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "160e7504-25ae-47ed-801b-eb07a09e435b",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "b79601b77bb6ceb70ccb61bcf77d40d08ed7f51b7b97cde7456421fd284a03f1",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.0.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "5a546d5c-fa69-4ba4-b636-24fa65c3294f",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:0",
+        "sourceHash": "fea17e41f7250a71066a8468c40c2b371e29f6f1584f8b91f4bc83a22fde4431",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.0.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "8633bb84-f718-47e7-a05a-478cbde1844d",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:5",
+        "sourceHash": "1a0b64563a0be80f1c4ed63e5b5b1e14b9f35e5dbf2877716d4f97a8cb961a26",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.1.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "3064eb84-a5e8-4a9e-8026-13ea2ba15bd6",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:1",
+        "sourceHash": "06c99b63f9725b66f0be49adc5d784b2faec1b4a40542e2c53cef732f2fe5e65",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.1.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "fa2e96f6-dc04-440b-b2c2-d616eb3bedcb",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:6",
+        "sourceHash": "5c99e17bf15a4fe259c5842df4c0307948fe72c76c960b1a5185e77aa31e5aa3",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.2.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "11c73cd5-9b6d-4ab5-bc5c-af3b9c2f768d",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:2",
+        "sourceHash": "a497295ae49ea27155c1e88c39daedc772bb781598f01763f327a6f2805e9a26",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.2.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "effd3a5d-7fae-46ca-a8f2-439f0d257b79",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:7",
+        "sourceHash": "3dfc41a70f1884119c1a50b50a795f441181a04d1ea62b9b07b38c1a4a51a446",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.3.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "21740095-756d-4ed3-8041-e5d301d3c088",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:3",
+        "sourceHash": "d959e7dcb9ae108719d14cffaef0045f293e7891bf39bbb629877ef3c5370aef",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.3.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "90fafc27-e00f-4f82-9a65-02cb6ab0ac7c",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:8",
+        "sourceHash": "bd7fd29c32545766f25e5bfed3b7ee7bbd9597889305b9a9c928880b2b23a3d3",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.4.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "6592fbc2-3aad-479c-8fad-4ae11b922eb6",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:4",
+        "sourceHash": "f7b1d25c2c106927cbfde9b20a82ffd197df621b3d572a06b01bb106251deab3",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.4.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "4e99e222-e0ba-41a5-acf0-8b527df80387",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:9",
+        "sourceHash": "a5503e5694a3decf73f24521350cacb83fe933f41441660f6bb4fc67eb122b73",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.5.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "8405057c-e7a1-4512-a905-aa8aea9fc508",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:5",
+        "sourceHash": "9fd7a45d0937cb1eb2102fc096b7db5c9d89732ad85a3c6da608425b7d82aa08",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.5.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "9416d358-abb7-4087-9ddb-c60426216467",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:10",
+        "sourceHash": "8ce5113eccf651e4b396de946e69c5071bce30adf4c96bc956cc4716308c7527",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "939c2286-89db-4cbd-bc65-6c54ab11af5d",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:3",
+        "sourceHash": "987fabba9bea93a5b03460c00bf3ca9ad57caa2c14ae5079144b46ec7ce8a76f",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph1": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "8ae348dc-ab4d-48de-9ad3-42627eb6daa2",
+        "occurrenceKey": "sel:p:ctx:p:pos:0",
+        "sourceHash": "a1e84b0255a306f035a04818a9244e023428f909a659eaecc35ff4e6847d3957",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph2.afterEmphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "55038cf4-3efe-438b-8775-4fafd593b75f",
+        "occurrenceKey": "sel:p:ctx:p:pos:2",
+        "sourceHash": "f3dc516665a8bcd2eeb08b4c1fbed828d864dd8e9149499ccd6bafa1135ad72a",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph2.beforeEmphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "529e8d2b-9732-4569-956c-17cff2e2a207",
+        "occurrenceKey": "sel:p:ctx:p:pos:1",
+        "sourceHash": "3ab42877cdf8eedef549216619a6c750677cd92fe3205b9f579779a2024d8f7f",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph2.emphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "372582ae-2358-4857-a6a8-18bfc944e2b3",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:4",
+        "sourceHash": "b1de456666f2a0800aed2fbaf415d6c7bf19000e445635b3032022ad6663196c",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph3.afterEmphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "ef2cc144-1b83-4a26-8337-8662ebdb422e",
+        "occurrenceKey": "sel:p:ctx:p:pos:4",
+        "sourceHash": "5002ba2045b1a463b2be143f08ad21ad915ea8f7e712b2776e22d1d2e6fd81fe",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph3.beforeEmphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "4c3a1b85-eb92-4688-ac51-7f3e8df622d6",
+        "occurrenceKey": "sel:p:ctx:p:pos:3",
+        "sourceHash": "e231410216be044a05558e9d9dc6e845c6926f8889af6b733ee68d801c377cd5",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph3.emphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "98678437-5b17-4c44-a167-757d37366b2d",
+        "occurrenceKey": "sel:em:ctx:em:pos:0",
+        "sourceHash": "187897ce0afcf20b50ba2b37dca84a951b7046f29ed5ab94f010619f69d6e189",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "83354dad-bcc2-47dc-80c4-b8215fdc39d8",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:2",
+        "sourceHash": "146661bfd83743656ccc83b0f53cac49bf74292a0460c67ed5a86ee708af3da7",
+        "status": "route-catalog-explicit"
+      },
+      "updated": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "d9bac204-355f-49b3-9d77-69355678841d",
+        "occurrenceKey": "sel:p.mb-6.text-xs:ctx:p:pos:0",
+        "sourceHash": "8a80edacaf3fe3da0db188b93764e5ebe881b5fe2432eee4ef1949f16a80f323",
+        "status": "route-catalog-explicit"
+      }
+    },
+    "fr-fr": {
+      "breadcrumb.home": {
+        "catalogRoute": "/languages",
+        "catalogSegmentId": "c1673bf2-cc1a-48d0-825f-a7e33b1c44f8",
+        "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+        "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+        "status": "route-catalog-explicit"
+      },
+      "footer.about": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "788b0e11-29ce-4d5b-a380-7d07da1275f0",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:3",
+        "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+        "status": "route-catalog-explicit"
+      },
+      "footer.aboutAbi": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "5774876d-f0e0-4298-be35-7a85b32262b8",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+        "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+        "status": "route-catalog-explicit"
+      },
+      "footer.app": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "cf704181-ea4d-4cdc-be2f-23118765bca7",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+        "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+        "status": "route-catalog-explicit"
+      },
+      "footer.embed": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "da16fb2e-cd82-43cf-aa15-6d1192c405da",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:5",
+        "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+        "status": "route-catalog-explicit"
+      },
+      "footer.guides": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "ab32c627-d109-43e6-98b6-0a5f4f6b5292",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+        "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+        "status": "route-catalog-explicit"
+      },
+      "footer.safety": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "101c5bac-8c13-4d34-8351-076ab2ec5a52",
+        "occurrenceKey": "sel:p.text-xs.text-muted-foreground:ctx:p:pos:0",
+        "sourceHash": "dbd9c240b2d41239e69de338bc871690ee28f129d2c205c37c42cf547e70850f",
+        "status": "route-catalog-explicit"
+      },
+      "footer.techniques": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "298ce0b2-9cc2-42aa-9f64-ca6fa17667d5",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+        "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+        "status": "route-catalog-explicit"
+      },
+      "hero.eyebrow": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "58e0726e-fda0-4522-bfcd-4dcd84cb0064",
+        "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+        "sourceHash": "0a800218f62d328f392fabe6ded3b64bbaec53675d663ebcd9f1fb2bb7b3fef9",
+        "status": "route-catalog-explicit"
+      },
+      "hero.intro": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "21b8f873-28b5-4c6a-aa62-5b8912befc24",
+        "occurrenceKey": "sel:p.max-w-xl.text-lg:ctx:p:pos:0",
+        "sourceHash": "9b57f2c79f8aab69fcd619a1cbf2fbc4a05becca0d7423a2b96f03130ccba95a",
+        "status": "route-catalog-explicit"
+      },
+      "hero.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "deafe3a4-1ca5-4c18-b07d-ad5b8fbb39eb",
+        "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "2968b43d5ce063e7950bcf536fe634d9daf65d7da4e0157e7b2717a1c7114b6a",
+        "status": "route-catalog-explicit"
+      },
+      "loading.ariaLabel": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "581cbb49-090e-426a-8d76-342ff36cafa5",
+        "occurrenceKey": "attr:div.min-h-screen.flex:aria-label:pos:0",
+        "sourceHash": "dd71f41a16a5c572c4612ec3da376e68c7afec80395b903936605ec251f04e87",
+        "status": "route-catalog-explicit"
+      },
+      "metadata.description": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "181e3bce-4510-4aea-8543-4894c754d80d",
+        "occurrenceKey": "head:meta:name:description",
+        "sourceHash": "ffec7532f10aea0fcfa2a43f6f801deeef183cb1f551fef7327bc85317504ecf",
+        "status": "route-catalog-explicit"
+      },
+      "metadata.imageAlt": {
+        "derivedFrom": "metadata.socialTitle",
+        "sourceHash": "d0dcf064df5e399d3353910e92783f8dc43d7ada697c5811d2849ee559a1295f",
+        "status": "display-derived-from-explicit-page-binding"
+      },
+      "metadata.socialDescription": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "c3fb330d-2051-45d5-87b5-cbe6549b4baa",
+        "occurrenceKey": "head:meta:property:og:description",
+        "sourceHash": "58580a66bc7e465b1190c6dc69507682628a17cee9ba547e3eff4a672af9a66e",
+        "status": "route-catalog-explicit"
+      },
+      "metadata.socialTitle": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "afdbe1e1-0d46-43d6-8a0c-bbc447cf10df",
+        "occurrenceKey": "head:meta:property:og:title",
+        "sourceHash": "f285db0fb808a3dc2f63d87db81acb5b93d7ec47ea34a656f3bb69075ae0429c",
+        "status": "route-catalog-explicit"
+      },
+      "metadata.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "04ff5acc-bc12-40d0-bc39-1b120108d8a8",
+        "occurrenceKey": "head:title",
+        "sourceHash": "d5f77f74824e126eb6c97da65da3b6db66d456a9cd226d4351bbbde4eb7560d9",
+        "status": "route-catalog-rendered-source"
+      },
+      "metadata.twitterDescription": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "4e58e711-077b-4b61-9ca9-80646e6069dc",
+        "occurrenceKey": "head:meta:name:twitter:description",
+        "sourceHash": "01648c9aaa6d4c12a8c643555dd5fe0f642b8fdaf215606f08a274988badc389",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.anxiety.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "50b70292-56cb-47a5-8d1c-abaa46cfe2e4",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:8",
+        "sourceHash": "45feac2d3800d7659d3fd25a180ab77d9c87e192e779c873fcee48dc6843d58b",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.anxiety.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "e3a95c56-503c-42c4-b80c-b5b31fe1187c",
+        "occurrenceKey": "sel:p.text-lg.font-semibold:ctx:product:pos:2",
+        "sourceHash": "324af3a7f1b77322470f4e5be00928e27075415a7baf6172996a4906ec9e9d00",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.sleep.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "397fa03f-6fc7-48ee-b112-da94f4bae15d",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:6",
+        "sourceHash": "11ad70ac6a55893f8e225bec5e7864c5cdb289a878c00c1b448d456a513b81df",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.sleep.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "45b62d96-c38d-4884-a77e-aa747dfcf73a",
+        "occurrenceKey": "sel:p.text-lg.font-semibold:ctx:product:pos:0",
+        "sourceHash": "48cb1d3ed1c4af0663146c1a7f710e0a3a536302de60133e9521112200aafc29",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.timer.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "2f9ce305-c278-4d13-974e-53611713e4b1",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:7",
+        "sourceHash": "07a46417f0ca181377df167c43a59c9575b7164b1905bd1c67c860938b1b94c5",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.timer.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "b478450d-d290-40d8-a145-fe9d0556140f",
+        "occurrenceKey": "sel:p.text-lg.font-semibold:ctx:product:pos:1",
+        "sourceHash": "6248ec0e2cbb0cdd706174ef7ca2bb9cdbe571f3bc2dd17d16296832527e1bf5",
+        "status": "route-catalog-explicit"
+      },
+      "related.label": {
+        "reason": "Reviewed case-only source alias from the preserved catalog's `Related Guides` placement to the current English `Related guides` copy.",
+        "sourceHash": "1e5b36078e376cd4606154d914ba9eba7c5cb5aa0c5d35f1c86e4749c54d3279",
+        "status": "repo-reviewed-source-alias"
+      },
+      "related.learnMore": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "36aa985b-1b4a-4d60-b662-a0e0b08959a8",
+        "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:0",
+        "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+        "status": "route-catalog-explicit"
+      },
+      "schema.articleDescription": {
+        "reason": "Reviewed translation for the Article schema description, whose English semantics are distinct from the page metadata description.",
+        "sourceHash": "15e162d00bd38a20c1bab4ef3efac40909ee3930b2a90e52a50d1884474ebcf7",
+        "status": "repo-reviewed-source-alias"
+      },
+      "schema.authorName": {
+        "sourceHash": "2d6040623d71ef93da49a7faf035ccbb84481b58935f7618b6114af9760a4b7f",
+        "status": "schema-proper-name-invariant"
+      },
+      "schema.faq.items.0.answer": {
+        "reason": "Reviewed translation for the structured FAQ answer, preserving its source-specific quotation style independently of visible copy.",
+        "sourceHash": "37ccd03bb7fc79fc833213b7e84e8c2d6eb77816163b9f6f0d85674f3ec31383",
+        "status": "repo-reviewed-source-alias"
+      },
+      "schema.faq.items.0.question": {
+        "derivedFrom": "sections.faq.items.0.question",
+        "sourceHash": "45e68998638dd3adc87097243d311174bd2d38de80ac2e848117b9bc3813e2df",
+        "status": "schema-byte-identical-page-binding"
+      },
+      "schema.faq.items.1.answer": {
+        "reason": "Reviewed translation for the structured FAQ answer, preserving the source's attribution of the eight-cycle recommendation to Dr. Weil.",
+        "sourceHash": "42b1f2e8361b1b3852d3d23f584402d74555635f964aa993a74e538250a7f636",
+        "status": "repo-reviewed-source-alias"
+      },
+      "schema.faq.items.1.question": {
+        "reason": "Reviewed translation for the structured FAQ question, which explicitly names 4-7-8 breathing unlike the shorter visible question.",
+        "sourceHash": "6aac07bd3f00e4f6562411d8a0d7b89ffdebc3a923dea8ec8f63c1dc302d18b0",
+        "status": "repo-reviewed-source-alias"
+      },
+      "schema.faq.items.2.answer": {
+        "reason": "Reviewed translation for the structured FAQ answer, preserving its explicit statement that the mechanisms explain the sleep effect.",
+        "sourceHash": "0b24624bdfeb8766b79c3bddaa1466b0b616fd4fc4c0068398263c9b083748c0",
+        "status": "repo-reviewed-source-alias"
+      },
+      "schema.faq.items.2.question": {
+        "derivedFrom": "sections.faq.items.2.question",
+        "sourceHash": "2a551a6f7b1905a3c4f233f082bbaa4f56d2d3c37728bc8c9f216643ab2ed2a4",
+        "status": "schema-byte-identical-page-binding"
+      },
+      "schema.publisherName": {
+        "sourceHash": "17554deb9a254e83e4e4a8f1213423428b48b3bb25c5d515a622192defa720a7",
+        "status": "schema-proper-name-invariant"
+      },
+      "sections.faq.items.0.answer": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "9a517d64-6117-4be9-a112-d273d5e49399",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:1",
+        "sourceHash": "188b55ed9f6d77f857bc5ba7d5b877337e2a0c17f9d7b805866672a27371fb00",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.items.0.question": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "1ad56f14-54b2-4073-a1f7-029f6a424f46",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "45e68998638dd3adc87097243d311174bd2d38de80ac2e848117b9bc3813e2df",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.items.1.answer": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "3f6edf0e-b59a-4854-ba8f-4613623bad98",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+        "sourceHash": "230cc755699dff83eb2b475e9481a6459a0268a06aaf50fe8e66c50310ed12b9",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.items.1.question": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "ad6fad89-8b13-4f3a-9ab7-77cad59cd120",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:1",
+        "sourceHash": "c4254b408f57a8d7db5e9be8350ad8b2ea44bf6685fcf5091b35fafa06d30e5f",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.items.2.answer": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "ea402d60-9834-46bf-9b4d-963f46a6d8d9",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:3",
+        "sourceHash": "a21c83fdff930686e617cf4b7ed0a20bef6d1f0349f299eb10687d7dcd040b2d",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.items.2.question": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "2b8f4549-9f8b-4c3e-a2f3-07d015736315",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:2",
+        "sourceHash": "2a551a6f7b1905a3c4f233f082bbaa4f56d2d3c37728bc8c9f216643ab2ed2a4",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "8e2e9956-6056-40cf-ac03-fdd28c7e1bec",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:4",
+        "sourceHash": "e956a9404b467e6b372e082d28cb9d4710af764c2fa5e56a415211e12166be0e",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.cycles.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "900983d2-7d88-4a5c-a809-6f50cb6d361c",
+        "occurrenceKey": "sel:li:ctx:li:pos:1",
+        "sourceHash": "50cf2b4bd54e21d47e51cca1b0110e70cd97397fbbac602761b214c7a1bc7cab",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.cycles.label": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "aa23736b-f485-4f79-8f0b-d26d5892bdee",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:1",
+        "sourceHash": "523ca4f53e6353844c2891abf77671efda83c3411d312e64cd243d5fd9833541",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.pattern.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "00c8d863-8fa2-4a90-99f3-792797edc45a",
+        "occurrenceKey": "sel:li:ctx:li:pos:0",
+        "sourceHash": "6f40fb690d1553a1b7ab45b398a8632cf39b644c429b23bd2826693632aa144c",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.pattern.label": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "39baa982-e488-4cbf-af97-eb2e48b1f15e",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:0",
+        "sourceHash": "50625632208924ee56cc6c606015026eb05a2e8622ed49599f0e212a366cfc68",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.position.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "accad0b9-5c57-4613-a4fd-718ed6e259f4",
+        "occurrenceKey": "sel:li:ctx:li:pos:2",
+        "sourceHash": "f1417614e1061fb2a9189225bd6de0948e04325b9d938af549bae7c2155cf470",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.position.label": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "84851eb1-4990-4500-8db6-7afb878c36a4",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:2",
+        "sourceHash": "64b368ff80764ee44f495b88f5ab1cf26a9292f06056ef71c2657e911c02fda9",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.restless.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "e0d555cc-fa38-4c46-99c0-401468fb272e",
+        "occurrenceKey": "sel:li:ctx:li:pos:3",
+        "sourceHash": "2f72af88ee6a7bfe76007ed6a65fdcffeac46d09bc497320bbf8f99e7958b884",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.restless.label": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "1af0bf30-720e-430c-a8db-135d50c53a04",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:3",
+        "sourceHash": "220fa135b218eb4f1b07afe5ff851b05cc9565dce04e85fc16e7ba41a2385050",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "3868e2a8-5711-4eff-814a-e3d32b2b560b",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
+        "sourceHash": "93c4b4d3c71356288ae35f724479873d955d9cf652c4eff58dffd3c83f8bbb4d",
+        "status": "route-catalog-explicit"
+      },
+      "sections.start.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "882efcb7-d3db-4e1c-8e51-41af0a00d819",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0",
+        "sourceHash": "291140bed0480bdf2bbc7a70c943c339fb963af80d0d46f59179fbbe181b2984",
+        "status": "route-catalog-explicit"
+      },
+      "sections.start.guideLink": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "6efa638f-a1b2-4484-a5c5-2ea222b30426",
+        "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:0",
+        "sourceHash": "bd7adbcbe06f92231e84a189ef7ce059849f47ec60e367b5d78dbb2aad820187",
+        "status": "route-catalog-explicit"
+      },
+      "sections.start.timerLink": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "31377bfb-e791-4c5a-8c5f-3d2bf72ff539",
+        "occurrenceKey": "sel:a.rounded-full.bg-primary:ctx:link:pos:0",
+        "sourceHash": "a637054d5be5b61b82a316894455530bf2da87447eb4c806c8db0f9331381f32",
+        "status": "route-catalog-explicit"
+      },
+      "sections.start.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "160e7504-25ae-47ed-801b-eb07a09e435b",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "b79601b77bb6ceb70ccb61bcf77d40d08ed7f51b7b97cde7456421fd284a03f1",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.0.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "5a546d5c-fa69-4ba4-b636-24fa65c3294f",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:0",
+        "sourceHash": "fea17e41f7250a71066a8468c40c2b371e29f6f1584f8b91f4bc83a22fde4431",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.0.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "8633bb84-f718-47e7-a05a-478cbde1844d",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:5",
+        "sourceHash": "1a0b64563a0be80f1c4ed63e5b5b1e14b9f35e5dbf2877716d4f97a8cb961a26",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.1.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "3064eb84-a5e8-4a9e-8026-13ea2ba15bd6",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:1",
+        "sourceHash": "06c99b63f9725b66f0be49adc5d784b2faec1b4a40542e2c53cef732f2fe5e65",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.1.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "fa2e96f6-dc04-440b-b2c2-d616eb3bedcb",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:6",
+        "sourceHash": "5c99e17bf15a4fe259c5842df4c0307948fe72c76c960b1a5185e77aa31e5aa3",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.2.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "11c73cd5-9b6d-4ab5-bc5c-af3b9c2f768d",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:2",
+        "sourceHash": "a497295ae49ea27155c1e88c39daedc772bb781598f01763f327a6f2805e9a26",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.2.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "effd3a5d-7fae-46ca-a8f2-439f0d257b79",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:7",
+        "sourceHash": "3dfc41a70f1884119c1a50b50a795f441181a04d1ea62b9b07b38c1a4a51a446",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.3.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "21740095-756d-4ed3-8041-e5d301d3c088",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:3",
+        "sourceHash": "d959e7dcb9ae108719d14cffaef0045f293e7891bf39bbb629877ef3c5370aef",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.3.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "90fafc27-e00f-4f82-9a65-02cb6ab0ac7c",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:8",
+        "sourceHash": "bd7fd29c32545766f25e5bfed3b7ee7bbd9597889305b9a9c928880b2b23a3d3",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.4.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "6592fbc2-3aad-479c-8fad-4ae11b922eb6",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:4",
+        "sourceHash": "f7b1d25c2c106927cbfde9b20a82ffd197df621b3d572a06b01bb106251deab3",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.4.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "4e99e222-e0ba-41a5-acf0-8b527df80387",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:9",
+        "sourceHash": "a5503e5694a3decf73f24521350cacb83fe933f41441660f6bb4fc67eb122b73",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.5.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "8405057c-e7a1-4512-a905-aa8aea9fc508",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:5",
+        "sourceHash": "9fd7a45d0937cb1eb2102fc096b7db5c9d89732ad85a3c6da608425b7d82aa08",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.5.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "9416d358-abb7-4087-9ddb-c60426216467",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:10",
+        "sourceHash": "8ce5113eccf651e4b396de946e69c5071bce30adf4c96bc956cc4716308c7527",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "939c2286-89db-4cbd-bc65-6c54ab11af5d",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:3",
+        "sourceHash": "987fabba9bea93a5b03460c00bf3ca9ad57caa2c14ae5079144b46ec7ce8a76f",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph1": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "8ae348dc-ab4d-48de-9ad3-42627eb6daa2",
+        "occurrenceKey": "sel:p:ctx:p:pos:0",
+        "sourceHash": "a1e84b0255a306f035a04818a9244e023428f909a659eaecc35ff4e6847d3957",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph2.afterEmphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "55038cf4-3efe-438b-8775-4fafd593b75f",
+        "occurrenceKey": "sel:p:ctx:p:pos:2",
+        "sourceHash": "f3dc516665a8bcd2eeb08b4c1fbed828d864dd8e9149499ccd6bafa1135ad72a",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph2.beforeEmphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "529e8d2b-9732-4569-956c-17cff2e2a207",
+        "occurrenceKey": "sel:p:ctx:p:pos:1",
+        "sourceHash": "3ab42877cdf8eedef549216619a6c750677cd92fe3205b9f579779a2024d8f7f",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph2.emphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "372582ae-2358-4857-a6a8-18bfc944e2b3",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:4",
+        "sourceHash": "b1de456666f2a0800aed2fbaf415d6c7bf19000e445635b3032022ad6663196c",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph3.afterEmphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "ef2cc144-1b83-4a26-8337-8662ebdb422e",
+        "occurrenceKey": "sel:p:ctx:p:pos:4",
+        "sourceHash": "5002ba2045b1a463b2be143f08ad21ad915ea8f7e712b2776e22d1d2e6fd81fe",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph3.beforeEmphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "4c3a1b85-eb92-4688-ac51-7f3e8df622d6",
+        "occurrenceKey": "sel:p:ctx:p:pos:3",
+        "sourceHash": "e231410216be044a05558e9d9dc6e845c6926f8889af6b733ee68d801c377cd5",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph3.emphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "98678437-5b17-4c44-a167-757d37366b2d",
+        "occurrenceKey": "sel:em:ctx:em:pos:0",
+        "sourceHash": "187897ce0afcf20b50ba2b37dca84a951b7046f29ed5ab94f010619f69d6e189",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "83354dad-bcc2-47dc-80c4-b8215fdc39d8",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:2",
+        "sourceHash": "146661bfd83743656ccc83b0f53cac49bf74292a0460c67ed5a86ee708af3da7",
+        "status": "route-catalog-explicit"
+      },
+      "updated": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "d9bac204-355f-49b3-9d77-69355678841d",
+        "occurrenceKey": "sel:p.mb-6.text-xs:ctx:p:pos:0",
+        "sourceHash": "8a80edacaf3fe3da0db188b93764e5ebe881b5fe2432eee4ef1949f16a80f323",
+        "status": "route-catalog-explicit"
+      }
+    },
+    "ja-jp": {
+      "breadcrumb.home": {
+        "catalogRoute": "/languages",
+        "catalogSegmentId": "c1673bf2-cc1a-48d0-825f-a7e33b1c44f8",
+        "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+        "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+        "status": "route-catalog-explicit"
+      },
+      "footer.about": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "788b0e11-29ce-4d5b-a380-7d07da1275f0",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:3",
+        "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+        "status": "route-catalog-explicit"
+      },
+      "footer.aboutAbi": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "5774876d-f0e0-4298-be35-7a85b32262b8",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+        "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+        "status": "route-catalog-explicit"
+      },
+      "footer.app": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "cf704181-ea4d-4cdc-be2f-23118765bca7",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+        "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+        "status": "route-catalog-explicit"
+      },
+      "footer.embed": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "da16fb2e-cd82-43cf-aa15-6d1192c405da",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:5",
+        "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+        "status": "route-catalog-explicit"
+      },
+      "footer.guides": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "ab32c627-d109-43e6-98b6-0a5f4f6b5292",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+        "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+        "status": "route-catalog-explicit"
+      },
+      "footer.safety": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "101c5bac-8c13-4d34-8351-076ab2ec5a52",
+        "occurrenceKey": "sel:p.text-xs.text-muted-foreground:ctx:p:pos:0",
+        "sourceHash": "dbd9c240b2d41239e69de338bc871690ee28f129d2c205c37c42cf547e70850f",
+        "status": "route-catalog-explicit"
+      },
+      "footer.techniques": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "298ce0b2-9cc2-42aa-9f64-ca6fa17667d5",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+        "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+        "status": "route-catalog-explicit"
+      },
+      "hero.eyebrow": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "58e0726e-fda0-4522-bfcd-4dcd84cb0064",
+        "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+        "sourceHash": "0a800218f62d328f392fabe6ded3b64bbaec53675d663ebcd9f1fb2bb7b3fef9",
+        "status": "route-catalog-explicit"
+      },
+      "hero.intro": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "21b8f873-28b5-4c6a-aa62-5b8912befc24",
+        "occurrenceKey": "sel:p.max-w-xl.text-lg:ctx:p:pos:0",
+        "sourceHash": "9b57f2c79f8aab69fcd619a1cbf2fbc4a05becca0d7423a2b96f03130ccba95a",
+        "status": "route-catalog-explicit"
+      },
+      "hero.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "deafe3a4-1ca5-4c18-b07d-ad5b8fbb39eb",
+        "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "2968b43d5ce063e7950bcf536fe634d9daf65d7da4e0157e7b2717a1c7114b6a",
+        "status": "route-catalog-explicit"
+      },
+      "loading.ariaLabel": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "581cbb49-090e-426a-8d76-342ff36cafa5",
+        "occurrenceKey": "attr:div.min-h-screen.flex:aria-label:pos:0",
+        "sourceHash": "dd71f41a16a5c572c4612ec3da376e68c7afec80395b903936605ec251f04e87",
+        "status": "route-catalog-explicit"
+      },
+      "metadata.description": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "181e3bce-4510-4aea-8543-4894c754d80d",
+        "occurrenceKey": "head:meta:name:description",
+        "sourceHash": "ffec7532f10aea0fcfa2a43f6f801deeef183cb1f551fef7327bc85317504ecf",
+        "status": "route-catalog-explicit"
+      },
+      "metadata.imageAlt": {
+        "derivedFrom": "metadata.socialTitle",
+        "sourceHash": "d0dcf064df5e399d3353910e92783f8dc43d7ada697c5811d2849ee559a1295f",
+        "status": "display-derived-from-explicit-page-binding"
+      },
+      "metadata.socialDescription": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "c3fb330d-2051-45d5-87b5-cbe6549b4baa",
+        "occurrenceKey": "head:meta:property:og:description",
+        "sourceHash": "58580a66bc7e465b1190c6dc69507682628a17cee9ba547e3eff4a672af9a66e",
+        "status": "route-catalog-explicit"
+      },
+      "metadata.socialTitle": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "afdbe1e1-0d46-43d6-8a0c-bbc447cf10df",
+        "occurrenceKey": "head:meta:property:og:title",
+        "sourceHash": "f285db0fb808a3dc2f63d87db81acb5b93d7ec47ea34a656f3bb69075ae0429c",
+        "status": "route-catalog-explicit"
+      },
+      "metadata.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "04ff5acc-bc12-40d0-bc39-1b120108d8a8",
+        "occurrenceKey": "head:title",
+        "sourceHash": "d5f77f74824e126eb6c97da65da3b6db66d456a9cd226d4351bbbde4eb7560d9",
+        "status": "route-catalog-rendered-source"
+      },
+      "metadata.twitterDescription": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "4e58e711-077b-4b61-9ca9-80646e6069dc",
+        "occurrenceKey": "head:meta:name:twitter:description",
+        "sourceHash": "01648c9aaa6d4c12a8c643555dd5fe0f642b8fdaf215606f08a274988badc389",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.anxiety.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "50b70292-56cb-47a5-8d1c-abaa46cfe2e4",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:8",
+        "sourceHash": "45feac2d3800d7659d3fd25a180ab77d9c87e192e779c873fcee48dc6843d58b",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.anxiety.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "e3a95c56-503c-42c4-b80c-b5b31fe1187c",
+        "occurrenceKey": "sel:p.text-lg.font-semibold:ctx:product:pos:2",
+        "sourceHash": "324af3a7f1b77322470f4e5be00928e27075415a7baf6172996a4906ec9e9d00",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.sleep.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "397fa03f-6fc7-48ee-b112-da94f4bae15d",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:6",
+        "sourceHash": "11ad70ac6a55893f8e225bec5e7864c5cdb289a878c00c1b448d456a513b81df",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.sleep.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "45b62d96-c38d-4884-a77e-aa747dfcf73a",
+        "occurrenceKey": "sel:p.text-lg.font-semibold:ctx:product:pos:0",
+        "sourceHash": "48cb1d3ed1c4af0663146c1a7f710e0a3a536302de60133e9521112200aafc29",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.timer.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "2f9ce305-c278-4d13-974e-53611713e4b1",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:7",
+        "sourceHash": "07a46417f0ca181377df167c43a59c9575b7164b1905bd1c67c860938b1b94c5",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.timer.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "b478450d-d290-40d8-a145-fe9d0556140f",
+        "occurrenceKey": "sel:p.text-lg.font-semibold:ctx:product:pos:1",
+        "sourceHash": "6248ec0e2cbb0cdd706174ef7ca2bb9cdbe571f3bc2dd17d16296832527e1bf5",
+        "status": "route-catalog-explicit"
+      },
+      "related.label": {
+        "reason": "Reviewed case-only source alias from the preserved catalog's `Related Guides` placement to the current English `Related guides` copy.",
+        "sourceHash": "1e5b36078e376cd4606154d914ba9eba7c5cb5aa0c5d35f1c86e4749c54d3279",
+        "status": "repo-reviewed-source-alias"
+      },
+      "related.learnMore": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "36aa985b-1b4a-4d60-b662-a0e0b08959a8",
+        "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:0",
+        "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+        "status": "route-catalog-explicit"
+      },
+      "schema.articleDescription": {
+        "reason": "Reviewed translation for the Article schema description, whose English semantics are distinct from the page metadata description.",
+        "sourceHash": "15e162d00bd38a20c1bab4ef3efac40909ee3930b2a90e52a50d1884474ebcf7",
+        "status": "repo-reviewed-source-alias"
+      },
+      "schema.authorName": {
+        "sourceHash": "2d6040623d71ef93da49a7faf035ccbb84481b58935f7618b6114af9760a4b7f",
+        "status": "schema-proper-name-invariant"
+      },
+      "schema.faq.items.0.answer": {
+        "reason": "Reviewed translation for the structured FAQ answer, preserving its source-specific quotation style independently of visible copy.",
+        "sourceHash": "37ccd03bb7fc79fc833213b7e84e8c2d6eb77816163b9f6f0d85674f3ec31383",
+        "status": "repo-reviewed-source-alias"
+      },
+      "schema.faq.items.0.question": {
+        "derivedFrom": "sections.faq.items.0.question",
+        "sourceHash": "45e68998638dd3adc87097243d311174bd2d38de80ac2e848117b9bc3813e2df",
+        "status": "schema-byte-identical-page-binding"
+      },
+      "schema.faq.items.1.answer": {
+        "reason": "Reviewed translation for the structured FAQ answer, preserving the source's attribution of the eight-cycle recommendation to Dr. Weil.",
+        "sourceHash": "42b1f2e8361b1b3852d3d23f584402d74555635f964aa993a74e538250a7f636",
+        "status": "repo-reviewed-source-alias"
+      },
+      "schema.faq.items.1.question": {
+        "reason": "Reviewed translation for the structured FAQ question, which explicitly names 4-7-8 breathing unlike the shorter visible question.",
+        "sourceHash": "6aac07bd3f00e4f6562411d8a0d7b89ffdebc3a923dea8ec8f63c1dc302d18b0",
+        "status": "repo-reviewed-source-alias"
+      },
+      "schema.faq.items.2.answer": {
+        "reason": "Reviewed translation for the structured FAQ answer, preserving its explicit statement that the mechanisms explain the sleep effect.",
+        "sourceHash": "0b24624bdfeb8766b79c3bddaa1466b0b616fd4fc4c0068398263c9b083748c0",
+        "status": "repo-reviewed-source-alias"
+      },
+      "schema.faq.items.2.question": {
+        "derivedFrom": "sections.faq.items.2.question",
+        "sourceHash": "2a551a6f7b1905a3c4f233f082bbaa4f56d2d3c37728bc8c9f216643ab2ed2a4",
+        "status": "schema-byte-identical-page-binding"
+      },
+      "schema.publisherName": {
+        "sourceHash": "17554deb9a254e83e4e4a8f1213423428b48b3bb25c5d515a622192defa720a7",
+        "status": "schema-proper-name-invariant"
+      },
+      "sections.faq.items.0.answer": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "9a517d64-6117-4be9-a112-d273d5e49399",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:1",
+        "sourceHash": "188b55ed9f6d77f857bc5ba7d5b877337e2a0c17f9d7b805866672a27371fb00",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.items.0.question": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "1ad56f14-54b2-4073-a1f7-029f6a424f46",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "45e68998638dd3adc87097243d311174bd2d38de80ac2e848117b9bc3813e2df",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.items.1.answer": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "3f6edf0e-b59a-4854-ba8f-4613623bad98",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+        "sourceHash": "230cc755699dff83eb2b475e9481a6459a0268a06aaf50fe8e66c50310ed12b9",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.items.1.question": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "ad6fad89-8b13-4f3a-9ab7-77cad59cd120",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:1",
+        "sourceHash": "c4254b408f57a8d7db5e9be8350ad8b2ea44bf6685fcf5091b35fafa06d30e5f",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.items.2.answer": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "ea402d60-9834-46bf-9b4d-963f46a6d8d9",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:3",
+        "sourceHash": "a21c83fdff930686e617cf4b7ed0a20bef6d1f0349f299eb10687d7dcd040b2d",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.items.2.question": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "2b8f4549-9f8b-4c3e-a2f3-07d015736315",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:2",
+        "sourceHash": "2a551a6f7b1905a3c4f233f082bbaa4f56d2d3c37728bc8c9f216643ab2ed2a4",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "8e2e9956-6056-40cf-ac03-fdd28c7e1bec",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:4",
+        "sourceHash": "e956a9404b467e6b372e082d28cb9d4710af764c2fa5e56a415211e12166be0e",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.cycles.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "900983d2-7d88-4a5c-a809-6f50cb6d361c",
+        "occurrenceKey": "sel:li:ctx:li:pos:1",
+        "sourceHash": "50cf2b4bd54e21d47e51cca1b0110e70cd97397fbbac602761b214c7a1bc7cab",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.cycles.label": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "aa23736b-f485-4f79-8f0b-d26d5892bdee",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:1",
+        "sourceHash": "523ca4f53e6353844c2891abf77671efda83c3411d312e64cd243d5fd9833541",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.pattern.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "00c8d863-8fa2-4a90-99f3-792797edc45a",
+        "occurrenceKey": "sel:li:ctx:li:pos:0",
+        "sourceHash": "6f40fb690d1553a1b7ab45b398a8632cf39b644c429b23bd2826693632aa144c",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.pattern.label": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "39baa982-e488-4cbf-af97-eb2e48b1f15e",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:0",
+        "sourceHash": "50625632208924ee56cc6c606015026eb05a2e8622ed49599f0e212a366cfc68",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.position.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "accad0b9-5c57-4613-a4fd-718ed6e259f4",
+        "occurrenceKey": "sel:li:ctx:li:pos:2",
+        "sourceHash": "f1417614e1061fb2a9189225bd6de0948e04325b9d938af549bae7c2155cf470",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.position.label": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "84851eb1-4990-4500-8db6-7afb878c36a4",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:2",
+        "sourceHash": "64b368ff80764ee44f495b88f5ab1cf26a9292f06056ef71c2657e911c02fda9",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.restless.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "e0d555cc-fa38-4c46-99c0-401468fb272e",
+        "occurrenceKey": "sel:li:ctx:li:pos:3",
+        "sourceHash": "2f72af88ee6a7bfe76007ed6a65fdcffeac46d09bc497320bbf8f99e7958b884",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.restless.label": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "1af0bf30-720e-430c-a8db-135d50c53a04",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:3",
+        "sourceHash": "220fa135b218eb4f1b07afe5ff851b05cc9565dce04e85fc16e7ba41a2385050",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "3868e2a8-5711-4eff-814a-e3d32b2b560b",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
+        "sourceHash": "93c4b4d3c71356288ae35f724479873d955d9cf652c4eff58dffd3c83f8bbb4d",
+        "status": "route-catalog-explicit"
+      },
+      "sections.start.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "882efcb7-d3db-4e1c-8e51-41af0a00d819",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0",
+        "sourceHash": "291140bed0480bdf2bbc7a70c943c339fb963af80d0d46f59179fbbe181b2984",
+        "status": "route-catalog-explicit"
+      },
+      "sections.start.guideLink": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "6efa638f-a1b2-4484-a5c5-2ea222b30426",
+        "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:0",
+        "sourceHash": "bd7adbcbe06f92231e84a189ef7ce059849f47ec60e367b5d78dbb2aad820187",
+        "status": "route-catalog-explicit"
+      },
+      "sections.start.timerLink": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "31377bfb-e791-4c5a-8c5f-3d2bf72ff539",
+        "occurrenceKey": "sel:a.rounded-full.bg-primary:ctx:link:pos:0",
+        "sourceHash": "a637054d5be5b61b82a316894455530bf2da87447eb4c806c8db0f9331381f32",
+        "status": "route-catalog-explicit"
+      },
+      "sections.start.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "160e7504-25ae-47ed-801b-eb07a09e435b",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "b79601b77bb6ceb70ccb61bcf77d40d08ed7f51b7b97cde7456421fd284a03f1",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.0.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "5a546d5c-fa69-4ba4-b636-24fa65c3294f",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:0",
+        "sourceHash": "fea17e41f7250a71066a8468c40c2b371e29f6f1584f8b91f4bc83a22fde4431",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.0.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "8633bb84-f718-47e7-a05a-478cbde1844d",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:5",
+        "sourceHash": "1a0b64563a0be80f1c4ed63e5b5b1e14b9f35e5dbf2877716d4f97a8cb961a26",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.1.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "3064eb84-a5e8-4a9e-8026-13ea2ba15bd6",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:1",
+        "sourceHash": "06c99b63f9725b66f0be49adc5d784b2faec1b4a40542e2c53cef732f2fe5e65",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.1.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "fa2e96f6-dc04-440b-b2c2-d616eb3bedcb",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:6",
+        "sourceHash": "5c99e17bf15a4fe259c5842df4c0307948fe72c76c960b1a5185e77aa31e5aa3",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.2.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "11c73cd5-9b6d-4ab5-bc5c-af3b9c2f768d",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:2",
+        "sourceHash": "a497295ae49ea27155c1e88c39daedc772bb781598f01763f327a6f2805e9a26",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.2.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "effd3a5d-7fae-46ca-a8f2-439f0d257b79",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:7",
+        "sourceHash": "3dfc41a70f1884119c1a50b50a795f441181a04d1ea62b9b07b38c1a4a51a446",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.3.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "21740095-756d-4ed3-8041-e5d301d3c088",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:3",
+        "sourceHash": "d959e7dcb9ae108719d14cffaef0045f293e7891bf39bbb629877ef3c5370aef",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.3.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "90fafc27-e00f-4f82-9a65-02cb6ab0ac7c",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:8",
+        "sourceHash": "bd7fd29c32545766f25e5bfed3b7ee7bbd9597889305b9a9c928880b2b23a3d3",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.4.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "6592fbc2-3aad-479c-8fad-4ae11b922eb6",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:4",
+        "sourceHash": "f7b1d25c2c106927cbfde9b20a82ffd197df621b3d572a06b01bb106251deab3",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.4.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "4e99e222-e0ba-41a5-acf0-8b527df80387",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:9",
+        "sourceHash": "a5503e5694a3decf73f24521350cacb83fe933f41441660f6bb4fc67eb122b73",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.5.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "8405057c-e7a1-4512-a905-aa8aea9fc508",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:5",
+        "sourceHash": "9fd7a45d0937cb1eb2102fc096b7db5c9d89732ad85a3c6da608425b7d82aa08",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.5.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "9416d358-abb7-4087-9ddb-c60426216467",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:10",
+        "sourceHash": "8ce5113eccf651e4b396de946e69c5071bce30adf4c96bc956cc4716308c7527",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "939c2286-89db-4cbd-bc65-6c54ab11af5d",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:3",
+        "sourceHash": "987fabba9bea93a5b03460c00bf3ca9ad57caa2c14ae5079144b46ec7ce8a76f",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph1": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "8ae348dc-ab4d-48de-9ad3-42627eb6daa2",
+        "occurrenceKey": "sel:p:ctx:p:pos:0",
+        "sourceHash": "a1e84b0255a306f035a04818a9244e023428f909a659eaecc35ff4e6847d3957",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph2.afterEmphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "55038cf4-3efe-438b-8775-4fafd593b75f",
+        "occurrenceKey": "sel:p:ctx:p:pos:2",
+        "sourceHash": "f3dc516665a8bcd2eeb08b4c1fbed828d864dd8e9149499ccd6bafa1135ad72a",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph2.beforeEmphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "529e8d2b-9732-4569-956c-17cff2e2a207",
+        "occurrenceKey": "sel:p:ctx:p:pos:1",
+        "sourceHash": "3ab42877cdf8eedef549216619a6c750677cd92fe3205b9f579779a2024d8f7f",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph2.emphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "372582ae-2358-4857-a6a8-18bfc944e2b3",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:4",
+        "sourceHash": "b1de456666f2a0800aed2fbaf415d6c7bf19000e445635b3032022ad6663196c",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph3.afterEmphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "ef2cc144-1b83-4a26-8337-8662ebdb422e",
+        "occurrenceKey": "sel:p:ctx:p:pos:4",
+        "sourceHash": "5002ba2045b1a463b2be143f08ad21ad915ea8f7e712b2776e22d1d2e6fd81fe",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph3.beforeEmphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "4c3a1b85-eb92-4688-ac51-7f3e8df622d6",
+        "occurrenceKey": "sel:p:ctx:p:pos:3",
+        "sourceHash": "e231410216be044a05558e9d9dc6e845c6926f8889af6b733ee68d801c377cd5",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph3.emphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "98678437-5b17-4c44-a167-757d37366b2d",
+        "occurrenceKey": "sel:em:ctx:em:pos:0",
+        "sourceHash": "187897ce0afcf20b50ba2b37dca84a951b7046f29ed5ab94f010619f69d6e189",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "83354dad-bcc2-47dc-80c4-b8215fdc39d8",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:2",
+        "sourceHash": "146661bfd83743656ccc83b0f53cac49bf74292a0460c67ed5a86ee708af3da7",
+        "status": "route-catalog-explicit"
+      },
+      "updated": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "d9bac204-355f-49b3-9d77-69355678841d",
+        "occurrenceKey": "sel:p.mb-6.text-xs:ctx:p:pos:0",
+        "sourceHash": "8a80edacaf3fe3da0db188b93764e5ebe881b5fe2432eee4ef1949f16a80f323",
+        "status": "route-catalog-explicit"
+      }
+    },
+    "pt-br": {
+      "breadcrumb.home": {
+        "catalogRoute": "/languages",
+        "catalogSegmentId": "c1673bf2-cc1a-48d0-825f-a7e33b1c44f8",
+        "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+        "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+        "status": "route-catalog-explicit"
+      },
+      "footer.about": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "788b0e11-29ce-4d5b-a380-7d07da1275f0",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:3",
+        "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+        "status": "route-catalog-explicit"
+      },
+      "footer.aboutAbi": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "5774876d-f0e0-4298-be35-7a85b32262b8",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+        "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+        "status": "route-catalog-explicit"
+      },
+      "footer.app": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "cf704181-ea4d-4cdc-be2f-23118765bca7",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+        "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+        "status": "route-catalog-explicit"
+      },
+      "footer.embed": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "da16fb2e-cd82-43cf-aa15-6d1192c405da",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:5",
+        "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+        "status": "route-catalog-explicit"
+      },
+      "footer.guides": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "ab32c627-d109-43e6-98b6-0a5f4f6b5292",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+        "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+        "status": "route-catalog-explicit"
+      },
+      "footer.safety": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "101c5bac-8c13-4d34-8351-076ab2ec5a52",
+        "occurrenceKey": "sel:p.text-xs.text-muted-foreground:ctx:p:pos:0",
+        "sourceHash": "dbd9c240b2d41239e69de338bc871690ee28f129d2c205c37c42cf547e70850f",
+        "status": "route-catalog-explicit"
+      },
+      "footer.techniques": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "298ce0b2-9cc2-42aa-9f64-ca6fa17667d5",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+        "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+        "status": "route-catalog-explicit"
+      },
+      "hero.eyebrow": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "58e0726e-fda0-4522-bfcd-4dcd84cb0064",
+        "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+        "sourceHash": "0a800218f62d328f392fabe6ded3b64bbaec53675d663ebcd9f1fb2bb7b3fef9",
+        "status": "route-catalog-explicit"
+      },
+      "hero.intro": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "21b8f873-28b5-4c6a-aa62-5b8912befc24",
+        "occurrenceKey": "sel:p.max-w-xl.text-lg:ctx:p:pos:0",
+        "sourceHash": "9b57f2c79f8aab69fcd619a1cbf2fbc4a05becca0d7423a2b96f03130ccba95a",
+        "status": "route-catalog-explicit"
+      },
+      "hero.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "deafe3a4-1ca5-4c18-b07d-ad5b8fbb39eb",
+        "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "2968b43d5ce063e7950bcf536fe634d9daf65d7da4e0157e7b2717a1c7114b6a",
+        "status": "route-catalog-explicit"
+      },
+      "loading.ariaLabel": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "581cbb49-090e-426a-8d76-342ff36cafa5",
+        "occurrenceKey": "attr:div.min-h-screen.flex:aria-label:pos:0",
+        "sourceHash": "dd71f41a16a5c572c4612ec3da376e68c7afec80395b903936605ec251f04e87",
+        "status": "route-catalog-explicit"
+      },
+      "metadata.description": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "181e3bce-4510-4aea-8543-4894c754d80d",
+        "occurrenceKey": "head:meta:name:description",
+        "sourceHash": "ffec7532f10aea0fcfa2a43f6f801deeef183cb1f551fef7327bc85317504ecf",
+        "status": "route-catalog-explicit"
+      },
+      "metadata.imageAlt": {
+        "derivedFrom": "metadata.socialTitle",
+        "sourceHash": "d0dcf064df5e399d3353910e92783f8dc43d7ada697c5811d2849ee559a1295f",
+        "status": "display-derived-from-explicit-page-binding"
+      },
+      "metadata.socialDescription": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "c3fb330d-2051-45d5-87b5-cbe6549b4baa",
+        "occurrenceKey": "head:meta:property:og:description",
+        "sourceHash": "58580a66bc7e465b1190c6dc69507682628a17cee9ba547e3eff4a672af9a66e",
+        "status": "route-catalog-explicit"
+      },
+      "metadata.socialTitle": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "afdbe1e1-0d46-43d6-8a0c-bbc447cf10df",
+        "occurrenceKey": "head:meta:property:og:title",
+        "sourceHash": "f285db0fb808a3dc2f63d87db81acb5b93d7ec47ea34a656f3bb69075ae0429c",
+        "status": "route-catalog-explicit"
+      },
+      "metadata.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "04ff5acc-bc12-40d0-bc39-1b120108d8a8",
+        "occurrenceKey": "head:title",
+        "sourceHash": "d5f77f74824e126eb6c97da65da3b6db66d456a9cd226d4351bbbde4eb7560d9",
+        "status": "route-catalog-rendered-source"
+      },
+      "metadata.twitterDescription": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "4e58e711-077b-4b61-9ca9-80646e6069dc",
+        "occurrenceKey": "head:meta:name:twitter:description",
+        "sourceHash": "01648c9aaa6d4c12a8c643555dd5fe0f642b8fdaf215606f08a274988badc389",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.anxiety.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "50b70292-56cb-47a5-8d1c-abaa46cfe2e4",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:8",
+        "sourceHash": "45feac2d3800d7659d3fd25a180ab77d9c87e192e779c873fcee48dc6843d58b",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.anxiety.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "e3a95c56-503c-42c4-b80c-b5b31fe1187c",
+        "occurrenceKey": "sel:p.text-lg.font-semibold:ctx:product:pos:2",
+        "sourceHash": "324af3a7f1b77322470f4e5be00928e27075415a7baf6172996a4906ec9e9d00",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.sleep.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "397fa03f-6fc7-48ee-b112-da94f4bae15d",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:6",
+        "sourceHash": "11ad70ac6a55893f8e225bec5e7864c5cdb289a878c00c1b448d456a513b81df",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.sleep.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "45b62d96-c38d-4884-a77e-aa747dfcf73a",
+        "occurrenceKey": "sel:p.text-lg.font-semibold:ctx:product:pos:0",
+        "sourceHash": "48cb1d3ed1c4af0663146c1a7f710e0a3a536302de60133e9521112200aafc29",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.timer.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "2f9ce305-c278-4d13-974e-53611713e4b1",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:7",
+        "sourceHash": "07a46417f0ca181377df167c43a59c9575b7164b1905bd1c67c860938b1b94c5",
+        "status": "route-catalog-explicit"
+      },
+      "related.cards.timer.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "b478450d-d290-40d8-a145-fe9d0556140f",
+        "occurrenceKey": "sel:p.text-lg.font-semibold:ctx:product:pos:1",
+        "sourceHash": "6248ec0e2cbb0cdd706174ef7ca2bb9cdbe571f3bc2dd17d16296832527e1bf5",
+        "status": "route-catalog-explicit"
+      },
+      "related.label": {
+        "reason": "Reviewed case-only source alias from the preserved catalog's `Related Guides` placement to the current English `Related guides` copy.",
+        "sourceHash": "1e5b36078e376cd4606154d914ba9eba7c5cb5aa0c5d35f1c86e4749c54d3279",
+        "status": "repo-reviewed-source-alias"
+      },
+      "related.learnMore": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "36aa985b-1b4a-4d60-b662-a0e0b08959a8",
+        "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:0",
+        "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+        "status": "route-catalog-explicit"
+      },
+      "schema.articleDescription": {
+        "reason": "Reviewed translation for the Article schema description, whose English semantics are distinct from the page metadata description.",
+        "sourceHash": "15e162d00bd38a20c1bab4ef3efac40909ee3930b2a90e52a50d1884474ebcf7",
+        "status": "repo-reviewed-source-alias"
+      },
+      "schema.authorName": {
+        "sourceHash": "2d6040623d71ef93da49a7faf035ccbb84481b58935f7618b6114af9760a4b7f",
+        "status": "schema-proper-name-invariant"
+      },
+      "schema.faq.items.0.answer": {
+        "reason": "Reviewed translation for the structured FAQ answer, preserving its source-specific quotation style independently of visible copy.",
+        "sourceHash": "37ccd03bb7fc79fc833213b7e84e8c2d6eb77816163b9f6f0d85674f3ec31383",
+        "status": "repo-reviewed-source-alias"
+      },
+      "schema.faq.items.0.question": {
+        "derivedFrom": "sections.faq.items.0.question",
+        "sourceHash": "45e68998638dd3adc87097243d311174bd2d38de80ac2e848117b9bc3813e2df",
+        "status": "schema-byte-identical-page-binding"
+      },
+      "schema.faq.items.1.answer": {
+        "reason": "Reviewed translation for the structured FAQ answer, preserving the source's attribution of the eight-cycle recommendation to Dr. Weil.",
+        "sourceHash": "42b1f2e8361b1b3852d3d23f584402d74555635f964aa993a74e538250a7f636",
+        "status": "repo-reviewed-source-alias"
+      },
+      "schema.faq.items.1.question": {
+        "reason": "Reviewed translation for the structured FAQ question, which explicitly names 4-7-8 breathing unlike the shorter visible question.",
+        "sourceHash": "6aac07bd3f00e4f6562411d8a0d7b89ffdebc3a923dea8ec8f63c1dc302d18b0",
+        "status": "repo-reviewed-source-alias"
+      },
+      "schema.faq.items.2.answer": {
+        "reason": "Reviewed translation for the structured FAQ answer, preserving its explicit statement that the mechanisms explain the sleep effect.",
+        "sourceHash": "0b24624bdfeb8766b79c3bddaa1466b0b616fd4fc4c0068398263c9b083748c0",
+        "status": "repo-reviewed-source-alias"
+      },
+      "schema.faq.items.2.question": {
+        "derivedFrom": "sections.faq.items.2.question",
+        "sourceHash": "2a551a6f7b1905a3c4f233f082bbaa4f56d2d3c37728bc8c9f216643ab2ed2a4",
+        "status": "schema-byte-identical-page-binding"
+      },
+      "schema.publisherName": {
+        "sourceHash": "17554deb9a254e83e4e4a8f1213423428b48b3bb25c5d515a622192defa720a7",
+        "status": "schema-proper-name-invariant"
+      },
+      "sections.faq.items.0.answer": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "9a517d64-6117-4be9-a112-d273d5e49399",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:1",
+        "sourceHash": "188b55ed9f6d77f857bc5ba7d5b877337e2a0c17f9d7b805866672a27371fb00",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.items.0.question": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "1ad56f14-54b2-4073-a1f7-029f6a424f46",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "45e68998638dd3adc87097243d311174bd2d38de80ac2e848117b9bc3813e2df",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.items.1.answer": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "3f6edf0e-b59a-4854-ba8f-4613623bad98",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+        "sourceHash": "230cc755699dff83eb2b475e9481a6459a0268a06aaf50fe8e66c50310ed12b9",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.items.1.question": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "ad6fad89-8b13-4f3a-9ab7-77cad59cd120",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:1",
+        "sourceHash": "c4254b408f57a8d7db5e9be8350ad8b2ea44bf6685fcf5091b35fafa06d30e5f",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.items.2.answer": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "ea402d60-9834-46bf-9b4d-963f46a6d8d9",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:3",
+        "sourceHash": "a21c83fdff930686e617cf4b7ed0a20bef6d1f0349f299eb10687d7dcd040b2d",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.items.2.question": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "2b8f4549-9f8b-4c3e-a2f3-07d015736315",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:2",
+        "sourceHash": "2a551a6f7b1905a3c4f233f082bbaa4f56d2d3c37728bc8c9f216643ab2ed2a4",
+        "status": "route-catalog-explicit"
+      },
+      "sections.faq.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "8e2e9956-6056-40cf-ac03-fdd28c7e1bec",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:4",
+        "sourceHash": "e956a9404b467e6b372e082d28cb9d4710af764c2fa5e56a415211e12166be0e",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.cycles.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "900983d2-7d88-4a5c-a809-6f50cb6d361c",
+        "occurrenceKey": "sel:li:ctx:li:pos:1",
+        "sourceHash": "50cf2b4bd54e21d47e51cca1b0110e70cd97397fbbac602761b214c7a1bc7cab",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.cycles.label": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "aa23736b-f485-4f79-8f0b-d26d5892bdee",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:1",
+        "sourceHash": "523ca4f53e6353844c2891abf77671efda83c3411d312e64cd243d5fd9833541",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.pattern.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "00c8d863-8fa2-4a90-99f3-792797edc45a",
+        "occurrenceKey": "sel:li:ctx:li:pos:0",
+        "sourceHash": "6f40fb690d1553a1b7ab45b398a8632cf39b644c429b23bd2826693632aa144c",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.pattern.label": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "39baa982-e488-4cbf-af97-eb2e48b1f15e",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:0",
+        "sourceHash": "50625632208924ee56cc6c606015026eb05a2e8622ed49599f0e212a366cfc68",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.position.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "accad0b9-5c57-4613-a4fd-718ed6e259f4",
+        "occurrenceKey": "sel:li:ctx:li:pos:2",
+        "sourceHash": "f1417614e1061fb2a9189225bd6de0948e04325b9d938af549bae7c2155cf470",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.position.label": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "84851eb1-4990-4500-8db6-7afb878c36a4",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:2",
+        "sourceHash": "64b368ff80764ee44f495b88f5ab1cf26a9292f06056ef71c2657e911c02fda9",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.restless.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "e0d555cc-fa38-4c46-99c0-401468fb272e",
+        "occurrenceKey": "sel:li:ctx:li:pos:3",
+        "sourceHash": "2f72af88ee6a7bfe76007ed6a65fdcffeac46d09bc497320bbf8f99e7958b884",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.items.restless.label": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "1af0bf30-720e-430c-a8db-135d50c53a04",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:3",
+        "sourceHash": "220fa135b218eb4f1b07afe5ff851b05cc9565dce04e85fc16e7ba41a2385050",
+        "status": "route-catalog-explicit"
+      },
+      "sections.settings.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "3868e2a8-5711-4eff-814a-e3d32b2b560b",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
+        "sourceHash": "93c4b4d3c71356288ae35f724479873d955d9cf652c4eff58dffd3c83f8bbb4d",
+        "status": "route-catalog-explicit"
+      },
+      "sections.start.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "882efcb7-d3db-4e1c-8e51-41af0a00d819",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0",
+        "sourceHash": "291140bed0480bdf2bbc7a70c943c339fb963af80d0d46f59179fbbe181b2984",
+        "status": "route-catalog-explicit"
+      },
+      "sections.start.guideLink": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "6efa638f-a1b2-4484-a5c5-2ea222b30426",
+        "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:0",
+        "sourceHash": "bd7adbcbe06f92231e84a189ef7ce059849f47ec60e367b5d78dbb2aad820187",
+        "status": "route-catalog-explicit"
+      },
+      "sections.start.timerLink": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "31377bfb-e791-4c5a-8c5f-3d2bf72ff539",
+        "occurrenceKey": "sel:a.rounded-full.bg-primary:ctx:link:pos:0",
+        "sourceHash": "a637054d5be5b61b82a316894455530bf2da87447eb4c806c8db0f9331381f32",
+        "status": "route-catalog-explicit"
+      },
+      "sections.start.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "160e7504-25ae-47ed-801b-eb07a09e435b",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "b79601b77bb6ceb70ccb61bcf77d40d08ed7f51b7b97cde7456421fd284a03f1",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.0.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "5a546d5c-fa69-4ba4-b636-24fa65c3294f",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:0",
+        "sourceHash": "fea17e41f7250a71066a8468c40c2b371e29f6f1584f8b91f4bc83a22fde4431",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.0.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "8633bb84-f718-47e7-a05a-478cbde1844d",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:5",
+        "sourceHash": "1a0b64563a0be80f1c4ed63e5b5b1e14b9f35e5dbf2877716d4f97a8cb961a26",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.1.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "3064eb84-a5e8-4a9e-8026-13ea2ba15bd6",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:1",
+        "sourceHash": "06c99b63f9725b66f0be49adc5d784b2faec1b4a40542e2c53cef732f2fe5e65",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.1.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "fa2e96f6-dc04-440b-b2c2-d616eb3bedcb",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:6",
+        "sourceHash": "5c99e17bf15a4fe259c5842df4c0307948fe72c76c960b1a5185e77aa31e5aa3",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.2.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "11c73cd5-9b6d-4ab5-bc5c-af3b9c2f768d",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:2",
+        "sourceHash": "a497295ae49ea27155c1e88c39daedc772bb781598f01763f327a6f2805e9a26",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.2.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "effd3a5d-7fae-46ca-a8f2-439f0d257b79",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:7",
+        "sourceHash": "3dfc41a70f1884119c1a50b50a795f441181a04d1ea62b9b07b38c1a4a51a446",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.3.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "21740095-756d-4ed3-8041-e5d301d3c088",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:3",
+        "sourceHash": "d959e7dcb9ae108719d14cffaef0045f293e7891bf39bbb629877ef3c5370aef",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.3.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "90fafc27-e00f-4f82-9a65-02cb6ab0ac7c",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:8",
+        "sourceHash": "bd7fd29c32545766f25e5bfed3b7ee7bbd9597889305b9a9c928880b2b23a3d3",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.4.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "6592fbc2-3aad-479c-8fad-4ae11b922eb6",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:4",
+        "sourceHash": "f7b1d25c2c106927cbfde9b20a82ffd197df621b3d572a06b01bb106251deab3",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.4.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "4e99e222-e0ba-41a5-acf0-8b527df80387",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:9",
+        "sourceHash": "a5503e5694a3decf73f24521350cacb83fe933f41441660f6bb4fc67eb122b73",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.5.body": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "8405057c-e7a1-4512-a905-aa8aea9fc508",
+        "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:5",
+        "sourceHash": "9fd7a45d0937cb1eb2102fc096b7db5c9d89732ad85a3c6da608425b7d82aa08",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.items.5.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "9416d358-abb7-4087-9ddb-c60426216467",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:10",
+        "sourceHash": "8ce5113eccf651e4b396de946e69c5071bce30adf4c96bc956cc4716308c7527",
+        "status": "route-catalog-explicit"
+      },
+      "sections.steps.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "939c2286-89db-4cbd-bc65-6c54ab11af5d",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:3",
+        "sourceHash": "987fabba9bea93a5b03460c00bf3ca9ad57caa2c14ae5079144b46ec7ce8a76f",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph1": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "8ae348dc-ab4d-48de-9ad3-42627eb6daa2",
+        "occurrenceKey": "sel:p:ctx:p:pos:0",
+        "sourceHash": "a1e84b0255a306f035a04818a9244e023428f909a659eaecc35ff4e6847d3957",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph2.afterEmphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "55038cf4-3efe-438b-8775-4fafd593b75f",
+        "occurrenceKey": "sel:p:ctx:p:pos:2",
+        "sourceHash": "f3dc516665a8bcd2eeb08b4c1fbed828d864dd8e9149499ccd6bafa1135ad72a",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph2.beforeEmphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "529e8d2b-9732-4569-956c-17cff2e2a207",
+        "occurrenceKey": "sel:p:ctx:p:pos:1",
+        "sourceHash": "3ab42877cdf8eedef549216619a6c750677cd92fe3205b9f579779a2024d8f7f",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph2.emphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "372582ae-2358-4857-a6a8-18bfc944e2b3",
+        "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:4",
+        "sourceHash": "b1de456666f2a0800aed2fbaf415d6c7bf19000e445635b3032022ad6663196c",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph3.afterEmphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "ef2cc144-1b83-4a26-8337-8662ebdb422e",
+        "occurrenceKey": "sel:p:ctx:p:pos:4",
+        "sourceHash": "5002ba2045b1a463b2be143f08ad21ad915ea8f7e712b2776e22d1d2e6fd81fe",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph3.beforeEmphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "4c3a1b85-eb92-4688-ac51-7f3e8df622d6",
+        "occurrenceKey": "sel:p:ctx:p:pos:3",
+        "sourceHash": "e231410216be044a05558e9d9dc6e845c6926f8889af6b733ee68d801c377cd5",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.paragraph3.emphasis": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "98678437-5b17-4c44-a167-757d37366b2d",
+        "occurrenceKey": "sel:em:ctx:em:pos:0",
+        "sourceHash": "187897ce0afcf20b50ba2b37dca84a951b7046f29ed5ab94f010619f69d6e189",
+        "status": "route-catalog-explicit"
+      },
+      "sections.why.title": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "83354dad-bcc2-47dc-80c4-b8215fdc39d8",
+        "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:2",
+        "sourceHash": "146661bfd83743656ccc83b0f53cac49bf74292a0460c67ed5a86ee708af3da7",
+        "status": "route-catalog-explicit"
+      },
+      "updated": {
+        "catalogRoute": "/4-7-8-breathing-for-insomnia",
+        "catalogSegmentId": "d9bac204-355f-49b3-9d77-69355678841d",
+        "occurrenceKey": "sel:p.mb-6.text-xs:ctx:p:pos:0",
+        "sourceHash": "8a80edacaf3fe3da0db188b93764e5ebe881b5fe2432eee4ef1949f16a80f323",
+        "status": "route-catalog-explicit"
+      }
+    }
+  },
+  "schemaVersion": 1,
+  "sourceRoute": "/4-7-8-breathing-for-insomnia"
+}

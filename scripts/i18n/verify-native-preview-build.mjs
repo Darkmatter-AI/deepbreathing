@@ -18,8 +18,16 @@ const LOCALES = Object.freeze([
 
 const ROUTES = Object.freeze([
   "",
+  "1-minute-breathing-exercise",
+  "2-minute-breathing-exercise",
+  "4-7-8-breathing-for-insomnia",
   "4-7-8-breathing-timer",
+  "5-minute-breathing-exercise",
   "about",
+  "about/abi",
+  "about/editorial-policy",
+  "box-breathing-app",
+  "box-breathing-before-presentation",
   "breathe",
   "breathe/4-7-8",
   "breathe/9d-breathwork",
@@ -35,6 +43,12 @@ const ROUTES = Object.freeze([
   "breathe/tummo",
   "breathe/ujjayi",
   "breathe/wim-hof",
+  "breathing-exercises-before-surgery",
+  "breathing-exercises-for-labor",
+  "breathing-app",
+  "breathing-visualizer",
+  "coherent-breathing-app",
+  "embed",
   "for",
   "for/anxiety",
   "for/athletes",
@@ -54,6 +68,10 @@ const ROUTES = Object.freeze([
   "for/sleep",
   "for/stress",
   "for/travel-anxiety",
+  "holiday-breathing-exercises",
+  "physiological-sigh-panic-attack",
+  "privacy",
+  "support",
 ]);
 
 function matchAttribute(html, pattern) {
@@ -131,11 +149,11 @@ export function verifyNativePreviewBuild(repoRoot = DEFAULT_REPO_ROOT) {
 
   const unapprovedArtifact = path.join(
     repoRoot,
-    ".next/server/app/es/holiday-breathing-exercises.html",
+    ".next/server/app/es/languages.html",
   );
   if (fs.existsSync(unapprovedArtifact)) {
     failures.push(
-      "/es/holiday-breathing-exercises: unapproved localized artifact exists",
+      "/es/languages: unapproved localized artifact exists",
     );
   }
 

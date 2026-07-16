@@ -177,14 +177,17 @@ export const NATIVE_ROUTE_MANIFEST = Object.freeze([
   defineRoute({
     id: "1-minute-breathing-exercise",
     path: "/1-minute-breathing-exercise",
+    translatedStatus: "preview",
   }),
   defineRoute({
     id: "2-minute-breathing-exercise",
     path: "/2-minute-breathing-exercise",
+    translatedStatus: "preview",
   }),
   defineRoute({
     id: "4-7-8-breathing-for-insomnia",
     path: "/4-7-8-breathing-for-insomnia",
+    translatedStatus: "preview",
   }),
   defineRoute({
     id: "4-7-8-breathing-timer",
@@ -195,6 +198,7 @@ export const NATIVE_ROUTE_MANIFEST = Object.freeze([
   defineRoute({
     id: "5-minute-breathing-exercise",
     path: "/5-minute-breathing-exercise",
+    translatedStatus: "preview",
   }),
   defineRoute({
     id: "about",
@@ -202,15 +206,25 @@ export const NATIVE_ROUTE_MANIFEST = Object.freeze([
     localizedHandler: "explicit",
     translatedStatus: "preview",
   }),
-  defineRoute({ id: "about-abi", path: "/about/abi" }),
+  defineRoute({
+    id: "about-abi",
+    path: "/about/abi",
+    translatedStatus: "preview",
+  }),
   defineRoute({
     id: "about-editorial-policy",
     path: "/about/editorial-policy",
+    translatedStatus: "preview",
   }),
-  defineRoute({ id: "box-breathing-app", path: "/box-breathing-app" }),
+  defineRoute({
+    id: "box-breathing-app",
+    path: "/box-breathing-app",
+    translatedStatus: "preview",
+  }),
   defineRoute({
     id: "box-breathing-before-presentation",
     path: "/box-breathing-before-presentation",
+    translatedStatus: "preview",
   }),
   defineRoute({
     id: "brand-lab",
@@ -307,21 +321,36 @@ export const NATIVE_ROUTE_MANIFEST = Object.freeze([
     kind: "structured-breathing",
     translatedStatus: "preview",
   }),
-  defineRoute({ id: "breathing-app", path: "/breathing-app" }),
+  defineRoute({
+    id: "breathing-app",
+    path: "/breathing-app",
+    translatedStatus: "preview",
+  }),
   defineRoute({
     id: "breathing-exercises-before-surgery",
     path: "/breathing-exercises-before-surgery",
+    translatedStatus: "preview",
   }),
   defineRoute({
     id: "breathing-exercises-for-labor",
     path: "/breathing-exercises-for-labor",
+    translatedStatus: "preview",
   }),
-  defineRoute({ id: "breathing-visualizer", path: "/breathing-visualizer" }),
+  defineRoute({
+    id: "breathing-visualizer",
+    path: "/breathing-visualizer",
+    translatedStatus: "preview",
+  }),
   defineRoute({
     id: "coherent-breathing-app",
     path: "/coherent-breathing-app",
+    translatedStatus: "preview",
   }),
-  defineRoute({ id: "embed", path: "/embed" }),
+  defineRoute({
+    id: "embed",
+    path: "/embed",
+    translatedStatus: "preview",
+  }),
   defineRoute({ id: "for", path: "/for", translatedStatus: "preview" }),
   defineRoute({
     id: "for.anxiety",
@@ -434,6 +463,7 @@ export const NATIVE_ROUTE_MANIFEST = Object.freeze([
   defineRoute({
     id: "holiday-breathing-exercises",
     path: "/holiday-breathing-exercises",
+    translatedStatus: "preview",
   }),
   defineRoute({
     id: "languages",
@@ -449,8 +479,13 @@ export const NATIVE_ROUTE_MANIFEST = Object.freeze([
   defineRoute({
     id: "physiological-sigh-panic-attack",
     path: "/physiological-sigh-panic-attack",
+    translatedStatus: "preview",
   }),
-  defineRoute({ id: "privacy", path: "/privacy" }),
+  defineRoute({
+    id: "privacy",
+    path: "/privacy",
+    translatedStatus: "preview",
+  }),
   defineRoute({
     id: "sensory-studio",
     path: "/sensory-studio",
@@ -464,8 +499,13 @@ export const NATIVE_ROUTE_MANIFEST = Object.freeze([
     indexable: false,
     localizedHandler: "explicit",
     knownContradiction: "noindex-in-sitemap",
+    translatedStatus: "preview",
   }),
-  defineRoute({ id: "support", path: "/support" }),
+  defineRoute({
+    id: "support",
+    path: "/support",
+    translatedStatus: "preview",
+  }),
   defineRoute({
     id: "embed-slug",
     path: "/embed/[slug]",

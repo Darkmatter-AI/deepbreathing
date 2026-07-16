@@ -1,0 +1,75 @@
+{
+  "contact": {
+    "afterEmail": ". Me llegará directamente.",
+    "beforeEmail": "¿Has encontrado un error? ¿Tienes una sugerencia? Envíame un mensaje a",
+    "email": "hi@abiassi.com",
+    "title": "Contacta conmigo"
+  },
+  "elsewhere": {
+    "linkedin": "LinkedIn →",
+    "personalSite": "abiassi.com (mi sitio personal, aparte de este proyecto) →",
+    "title": "Encuéntrame en otros lugares",
+    "twitter": "X / Twitter (@abiassi_) →"
+  },
+  "footer": {
+    "about": "Acerca de",
+    "editorialPolicy": "Política editorial",
+    "embed": "Insertar",
+    "guides": "Guías",
+    "privacy": "Privacidad",
+    "techniques": "Técnicas"
+  },
+  "hero": {
+    "eyebrow": "Ejercicios de respiración profunda",
+    "imageAlt": "Abi Abiassi",
+    "intro": "Fundador. Fotógrafo. Creé este sitio para las técnicas de respiración que uso a diario.",
+    "title": "Sobre Abi"
+  },
+  "metadata": {
+    "description": "Abi Abiassi creó Ejercicios de Respiración Profunda como visualizador gratuito de técnicas de respiración que usa a diario. Fotógrafo, fundador, experto",
+    "socialDescription": "Creé este sitio como visualizador gratuito de las técnicas de respiración que uso a diario. Fotógrafo, fundador.",
+    "socialTitle": "Sobre Abi Abiassi, Fundador de Ejercicios de Respiración Profunda",
+    "title": "Sobre Abi Abiassi, Fundador de Ejercicios de Respiración Profunda",
+    "twitterDescription": "Creé este sitio como visualizador gratuito de las técnicas de respiración que uso a diario.",
+    "twitterTitle": "Sobre Abi Abiassi"
+  },
+  "methodology": {
+    "disclaimer": "No soy médico. Si tienes alguna condición médica, consulta a tu médico antes de adoptar una nueva práctica de respiración.",
+    "intro": "Cada técnica del sitio pasa por el mismo proceso de investigación, en este orden.",
+    "policyLink": "Leer la política editorial completa →",
+    "steps": {
+      "coverage": {
+        "body": "Las técnicas que la gente realmente busca y practica. Box, 4-7-8, respiración coherente, el suspiro fisiológico, Wim Hof, las variantes de pranayama, las arraigadas en EPOC como la respiración con labios fruncidos y Buteyko. Además de los casos de uso para los que aparecen: ansiedad, sueño, concentración, tensión arterial.",
+        "title": "Elegir qué cubrir."
+      },
+      "evidence": {
+        "body": "La evidencia sólida se expone directamente. Los estudios más pequeños se presentan con un «la investigación sugiere». Los hallazgos débiles, controvertidos o nulos se mencionan explícitamente. El Método Wim Hof no funciona mejor que la respiración lenta para el estado de ánimo. La constricción de garganta de Ujjayi no supera a la respiración lenta simple en el barorreflejo.",
+        "title": "Ajustar el lenguaje a la evidencia."
+      },
+      "lineage": {
+        "afterBook": "para Nadi Shodhana y Kapalabhati). Donde no hay un único creador (labios fruncidos, abdominal), se indica.",
+        "beforeBook": "Quién lo ideó realmente. Mark Divine para Box. Andrew Weil para 4-7-8. Wim Hof para WHM. Konstantin Buteyko para su método. Para las prácticas de yoga más antiguas, el texto más temprano al que podemos referirnos (el del siglo XV",
+        "bookTitle": "Hatha Yoga Pradipika",
+        "title": "Investigar el linaje."
+      },
+      "research": {
+        "body": "PubMed, registros DOI, Cochrane. Las revisiones sistemáticas y los ECA superan a los estudios individuales. Los trabajos sobre mecanismos, especialmente los estudios en ratones, se señalan como tales para que no se confundan con evidencia clínica.",
+        "title": "Encontrar la investigación."
+      },
+      "sources": {
+        "body": "De uno a tres enlaces revisados por pares por página, hipervinculados a la afirmación específica. Sin notas a pie de página numeradas. Sin listas de referencias al final del artículo. Haz clic en una frase y accede al estudio.",
+        "title": "Colocar las fuentes donde puedan ser útiles."
+      },
+      "verification": {
+        "body": "Cada URL de cita se obtiene y confirma antes de su publicación. Cuando un estudio está detrás de un muro de pago, el enlace dirige a la versión gratuita de PubMed Central.",
+        "title": "Verificar todo."
+      }
+    },
+    "title": "Metodología"
+  },
+  "story": {
+    "family": "Crecí en una familia de practicantes de meditación. No fue hasta más tarde en la vida que empecé a ser más intencional con la respiración consciente. Una vez que lo hice, me di cuenta de lo útiles que eran estas prácticas en el día a día. También han sido invaluables para avanzar en mi trabajo fotográfico.",
+    "hope": "Espero que este sitio te sea tan útil como lo ha sido para mí.",
+    "visualizer": "Empecé a investigarlas y estructurarlas para mí, y pensé que un visualizador que te guiara a través de cualquiera de ellas sería más útil que navegar por interminables vídeos de YouTube y sitios web poco claros."
+  }
+}

@@ -1,0 +1,558 @@
+{
+  "replacements": [
+    {
+      "messageId": "cadence.hold",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "32690d8ae9b898c31fac60c5e0a4e512be32ea107603803d95fec27c2e5f1543",
+      "scope": "content",
+      "sourceText": "{seconds}s hold",
+      "translations": {
+        "de-de": "{seconds}s halten",
+        "es-es": "{seconds}s de retención",
+        "fr-fr": "{seconds}s de maintien",
+        "ja-jp": "{seconds}秒保持",
+        "pt-br": "{seconds}s de retenção"
+      }
+    },
+    {
+      "messageId": "cadence.in",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "02e1c6e221430fd40d3ce8fab5313ab9908172188f2f3198dd35588e591a0a57",
+      "scope": "content",
+      "sourceText": "{seconds}s in",
+      "translations": {
+        "de-de": "{seconds}s ein",
+        "es-es": "{seconds}s inspiración",
+        "fr-fr": "{seconds}s inspiration",
+        "ja-jp": "{seconds}秒吸気",
+        "pt-br": "{seconds}s inspirar"
+      }
+    },
+    {
+      "messageId": "cadence.out",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "1279180506b7d6fd0772216fe16467661c79607260a4388e1841cb569be3a516",
+      "scope": "content",
+      "sourceText": "{seconds}s out",
+      "translations": {
+        "de-de": "{seconds}s aus",
+        "es-es": "{seconds}s espiración",
+        "fr-fr": "{seconds}s expiration",
+        "ja-jp": "{seconds}秒呼気",
+        "pt-br": "{seconds}s expirar"
+      }
+    },
+    {
+      "messageId": "garden.hoverPrompt",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "a19029d716371c67d0518531fb70a79db10dd8eef65242ec1241159e133972e0",
+      "scope": "content",
+      "sourceText": "Hover a day to view history",
+      "translations": {
+        "de-de": "Bewege den Mauszeiger über einen Tag, um den Verlauf anzuzeigen",
+        "es-es": "Pasa el cursor sobre un día para ver el historial",
+        "fr-fr": "Survolez un jour pour voir l'historique",
+        "ja-jp": "日付にカーソルを合わせると履歴が表示されます",
+        "pt-br": "Passe o mouse sobre um dia para ver o histórico"
+      }
+    },
+    {
+      "messageId": "garden.practiced",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "ed16fa00d54518629206e858890427242ec8c229a600046f60078ad9e437e09d",
+      "scope": "content",
+      "sourceText": "practiced",
+      "translations": {
+        "de-de": "geübt",
+        "es-es": "practicado",
+        "fr-fr": "pratiqué",
+        "ja-jp": "実践済み",
+        "pt-br": "praticado"
+      }
+    },
+    {
+      "messageId": "garden.practicedLegend",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "9891aee311b83f08be1089961723b9158e65611381c3d269dfee4f05580413a0",
+      "scope": "content",
+      "sourceText": "Practiced",
+      "translations": {
+        "de-de": "Geübt",
+        "es-es": "Practicado",
+        "fr-fr": "Pratiqué",
+        "ja-jp": "実践",
+        "pt-br": "Praticado"
+      }
+    },
+    {
+      "messageId": "garden.rest",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "6362c0ded507a2d0dbaab876594bc9935331487ba482fcbff0eb98901747c76b",
+      "scope": "content",
+      "sourceText": "a day of rest",
+      "translations": {
+        "de-de": "ein Ruhetag",
+        "es-es": "un día de descanso",
+        "fr-fr": "un jour de repos",
+        "ja-jp": "休息の日",
+        "pt-br": "um dia de descanso"
+      }
+    },
+    {
+      "messageId": "garden.restLegend",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "05863ec2c378927634badbb44e31103dc47f0a0f4df78ae2fcbcc4d915899f5e",
+      "scope": "content",
+      "sourceText": "Rest",
+      "translations": {
+        "de-de": "Ruhe",
+        "es-es": "Descanso",
+        "fr-fr": "Repos",
+        "ja-jp": "休息",
+        "pt-br": "Descanso"
+      }
+    },
+    {
+      "messageId": "garden.subtitle",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "27ed37b317224a28b3ff41940629fb82fca13b927a334e1315d996f4b0246ceb",
+      "scope": "content",
+      "sourceText": "Practice history",
+      "translations": {
+        "de-de": "Übungsverlauf",
+        "es-es": "Historial de práctica",
+        "fr-fr": "Historique de pratique",
+        "ja-jp": "練習履歴",
+        "pt-br": "Histórico de prática"
+      }
+    },
+    {
+      "messageId": "garden.title",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "4b06c11b9100798939e0eed3b5f7f50e8e924adee13af03e4f320c6ac0ee0d26",
+      "scope": "content",
+      "sourceText": "Breath Garden",
+      "translations": {
+        "de-de": "Atemgarten",
+        "es-es": "Jardín de la respiración",
+        "fr-fr": "Jardin de la respiration",
+        "ja-jp": "ブレスガーデン",
+        "pt-br": "Jardim da respiração"
+      }
+    },
+    {
+      "messageId": "header.backAria",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "fd72ac2646cdb7a9d20aa6e138cbd6babaf97974598fdbe91b2f26d5a7393cc4",
+      "scope": "content",
+      "sourceText": "Back to breathing",
+      "translations": {
+        "de-de": "Zurück zum Atmen",
+        "es-es": "Volver a la respiración",
+        "fr-fr": "Retour à la respiration",
+        "ja-jp": "呼吸に戻る",
+        "pt-br": "Voltar à respiração"
+      }
+    },
+    {
+      "messageId": "header.beginSession",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "5cbdb97d4f8fcf182dba0466543335ca5d5180e93d54c252e31cf3dccdf2218c",
+      "scope": "content",
+      "sourceText": "Begin session",
+      "translations": {
+        "de-de": "Sitzung beginnen",
+        "es-es": "Iniciar práctica",
+        "fr-fr": "Commencer la séance",
+        "ja-jp": "セッションを開始",
+        "pt-br": "Iniciar prática"
+      }
+    },
+    {
+      "messageId": "header.eyebrow",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "a9d562d6b494c89cdfe492bd7127b246f1b267c2f213dabfdc7206e0c2d39c45",
+      "scope": "content",
+      "sourceText": "Activity log",
+      "translations": {
+        "de-de": "Aktivitätsprotokoll",
+        "es-es": "Registro de actividad",
+        "fr-fr": "Journal d'activité",
+        "ja-jp": "アクティビティログ",
+        "pt-br": "Registro de atividade"
+      }
+    },
+    {
+      "messageId": "header.title",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "7a23c0d6159cceadd3891c12b2bbcec9a72b37203e65b50286e9d80ebd364693",
+      "scope": "content",
+      "sourceText": "Your practice",
+      "translations": {
+        "de-de": "Deine Praxis",
+        "es-es": "Tu práctica",
+        "fr-fr": "Votre pratique",
+        "ja-jp": "あなたの練習",
+        "pt-br": "Sua prática"
+      }
+    },
+    {
+      "messageId": "metadata.description",
+      "reason": "Completed 25-cell stats catalog gap reused for the native stats contract.",
+      "reviewedSourceHash": "3b1b3dfd2c8276b4521d8fd0bbe1da4543132d7276f6847f9c17d2260e7d551b",
+      "sourceText": "See your total breathing minutes, session count, streak, and practice calendar.",
+      "translations": {
+        "de-de": "Sieh deine gesamten Atemminuten, Sitzungsanzahl, Serie und Übungskalender.",
+        "es-es": "Consulta tus minutos totales de respiración, el número de sesiones, la racha y el calendario de práctica.",
+        "fr-fr": "Consultez vos minutes de respiration totales, le nombre de séances, votre série et votre calendrier de pratique.",
+        "ja-jp": "合計の呼吸分数、セッション数、連続記録、練習カレンダーを確認できます。",
+        "pt-br": "Veja seus minutos totais de respiração, a contagem de sessões, a sequência e o calendário de prática."
+      },
+      "catalogGapBinding": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "See your total breathing minutes, session count, streak, and practice calendar.",
+        "occurrenceKey": "head:meta:name:description"
+      }
+    },
+    {
+      "messageId": "metadata.title",
+      "reason": "Completed 25-cell stats catalog gap; current page title intentionally omits the root-layout suffix, so this reviewed binding reuses its approved translations against the live source.",
+      "reviewedSourceHash": "25c90118d0e18124bf06566df484be9fe3c1a50109c3e0a7867bc40f16f69a67",
+      "sourceText": "Your Practice Stats — Deep Breathing Exercises",
+      "translations": {
+        "de-de": "Deine Übungsstatistiken — Deep Breathing Exercises | Deep Breathing Exercises",
+        "es-es": "Tus estadísticas de práctica — Deep Breathing Exercises | Deep Breathing Exercises",
+        "fr-fr": "Vos statistiques de pratique — Deep Breathing Exercises | Deep Breathing Exercises",
+        "ja-jp": "練習の統計 — Deep Breathing Exercises | Deep Breathing Exercises",
+        "pt-br": "Suas estatísticas de prática — Deep Breathing Exercises | Deep Breathing Exercises"
+      },
+      "catalogGapBinding": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "Your Practice Stats — Deep Breathing Exercises | Deep Breathing Exercises",
+        "occurrenceKey": "head:title"
+      }
+    },
+    {
+      "messageId": "pattern.favorite",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "8eaecec022dae3c7a827a0d978ca9dc588c732146f8610e2f05d99d2fe038f63",
+      "scope": "content",
+      "sourceText": "Favorite pattern",
+      "translations": {
+        "de-de": "Lieblingsmuster",
+        "es-es": "Patrón favorito",
+        "fr-fr": "Schéma favori",
+        "ja-jp": "お気に入りのパターン",
+        "pt-br": "Padrão favorito"
+      }
+    },
+    {
+      "messageId": "pattern.practiceAgain",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "5154621cce5ce8b2b4d38c4408df4e33e015db0139bae0399aa2907aee8f0512",
+      "scope": "content",
+      "sourceText": "Practice again",
+      "translations": {
+        "de-de": "Erneut üben",
+        "es-es": "Practicar de nuevo",
+        "fr-fr": "Pratiquer à nouveau",
+        "ja-jp": "もう一度練習",
+        "pt-br": "Praticar novamente"
+      }
+    },
+    {
+      "messageId": "signedOut.body",
+      "reason": "Completed 25-cell stats catalog gap reused for the native stats contract.",
+      "reviewedSourceHash": "435d341b19d6558116de5bb0719348d95e876a773b417a7b454471411187ee5e",
+      "sourceText": "Sign in to see your total minutes, session count, streak, and a practice calendar. Your data syncs across devices.",
+      "translations": {
+        "de-de": "Melde dich an, um deine Gesamtminuten, Sitzungsanzahl, Serie und einen Übungskalender zu sehen. Deine Daten werden geräteübergreifend synchronisiert.",
+        "es-es": "Inicia sesión para ver tus minutos totales, el número de sesiones, la racha y un calendario de práctica. Tus datos se sincronizan entre dispositivos.",
+        "fr-fr": "Connectez-vous pour voir vos minutes totales, le nombre de séances, votre série et un calendrier de pratique. Vos données se synchronisent sur tous vos appareils.",
+        "ja-jp": "サインインして、合計分数、セッション数、連続記録、練習カレンダーを表示します。データはデバイス間で同期されます。",
+        "pt-br": "Entre para ver seus minutos totais, a contagem de sessões, a sequência e um calendário de prática. Seus dados sincronizam entre dispositivos."
+      },
+      "catalogGapBinding": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "Sign in to see your total minutes, session count, streak, and a practice calendar. Your data syncs across devices.",
+        "occurrenceKey": "sel:p.mb-6.text-sm:ctx:p:pos:0"
+      }
+    },
+    {
+      "messageId": "signedOut.button",
+      "reason": "Completed 25-cell stats catalog gap reused for the native stats contract.",
+      "reviewedSourceHash": "3fdfeb81fe1eb97177668ad7d60817490e1c46f616da93d588c580e8b7d5b8d0",
+      "sourceText": "Sign in to view your stats",
+      "translations": {
+        "de-de": "Anmelden, um deine Statistiken anzuzeigen",
+        "es-es": "Inicia sesión para ver tus estadísticas",
+        "fr-fr": "Connectez-vous pour voir vos statistiques",
+        "ja-jp": "サインインして統計を表示",
+        "pt-br": "Entre para ver suas estatísticas"
+      },
+      "catalogGapBinding": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "Sign in to view your stats",
+        "occurrenceKey": "sel:button.rounded-xl.bg-primary:ctx:cta_button:pos:0"
+      }
+    },
+    {
+      "messageId": "signedOut.sheetHeadline",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "9ab584e449a1e656292071acab8d2a0c945f4d766210b8938bfac22b10ff962e",
+      "scope": "content",
+      "sourceText": "Sign in to track your practice",
+      "translations": {
+        "de-de": "Melde dich an, um deine Übung zu verfolgen",
+        "es-es": "Inicia sesión para registrar tu práctica",
+        "fr-fr": "Connectez-vous pour suivre votre pratique",
+        "ja-jp": "サインインして練習を記録",
+        "pt-br": "Entre para acompanhar sua prática"
+      }
+    },
+    {
+      "messageId": "signedOut.sheetSubtitle",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "799351e9d3bbf0812c7e360dc9bcc7b7f780356cae61c7a4b76533b3aa816618",
+      "scope": "content",
+      "sourceText": "See your streak, total time, and session history.",
+      "translations": {
+        "de-de": "Sieh deine Serie, Gesamtzeit und Sitzungsverlauf.",
+        "es-es": "Consulta tu racha, el tiempo total y el historial de sesiones.",
+        "fr-fr": "Consultez votre série, le temps total et l'historique des séances.",
+        "ja-jp": "連続日数、合計時間、セッション履歴を確認できます。",
+        "pt-br": "Veja sua sequência, tempo total e histórico de sessões."
+      }
+    },
+    {
+      "messageId": "signedOut.title",
+      "reason": "Completed 25-cell stats catalog gap reused for the native stats contract.",
+      "reviewedSourceHash": "ce8936353df8e4ace4f1029cf47d8312c234c382d3bb53b885f6f06ecc7d58d1",
+      "sourceText": "Track your practice",
+      "translations": {
+        "de-de": "Verfolge deine Übung",
+        "es-es": "Sigue tu práctica",
+        "fr-fr": "Suivez votre pratique",
+        "ja-jp": "練習を記録する",
+        "pt-br": "Acompanhe sua prática"
+      },
+      "catalogGapBinding": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "Track your practice",
+        "occurrenceKey": "sel:h1.mb-2.text-xl:ctx:heading:pos:0"
+      }
+    },
+    {
+      "messageId": "stats.dayPlural",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "ab51004e9d71a485f160f655fb9e72bcdef8f5ca4178b26938b49471456fd11c",
+      "scope": "content",
+      "sourceText": "days",
+      "translations": {
+        "de-de": "Tage",
+        "es-es": "días",
+        "fr-fr": "jours",
+        "ja-jp": "日",
+        "pt-br": "dias"
+      }
+    },
+    {
+      "messageId": "stats.daySingular",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "944c27e5b97ab7793e4b6e9ff29384890ece0c7c04d2e2bf81c5f763469cc66b",
+      "scope": "content",
+      "sourceText": "day",
+      "translations": {
+        "de-de": "Tag",
+        "es-es": "día",
+        "fr-fr": "jour",
+        "ja-jp": "日",
+        "pt-br": "dia"
+      }
+    },
+    {
+      "messageId": "stats.dayStreak",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "4575171b4873ea0c62c3a5187abdeab21f3fc1acecf792c189dc6cdf5e2b5326",
+      "scope": "content",
+      "sourceText": "Day streak",
+      "translations": {
+        "de-de": "Tages-Serie",
+        "es-es": "Racha de días",
+        "fr-fr": "Série de jours",
+        "ja-jp": "連続日数",
+        "pt-br": "Sequência de dias"
+      }
+    },
+    {
+      "messageId": "stats.freshStart",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "47016c34c794cc92a9e5b6f6a4f52f5c794b6e65df304567d3d20a545fd285b8",
+      "scope": "content",
+      "sourceText": "Fresh start",
+      "translations": {
+        "de-de": "Neuer Start",
+        "es-es": "Nuevo comienzo",
+        "fr-fr": "Nouveau départ",
+        "ja-jp": "新しいスタート",
+        "pt-br": "Novo começo"
+      }
+    },
+    {
+      "messageId": "stats.freshStartSub",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "0b1077637d204bdbdd0fd0519669a91ec44835ecacddb7de7054ebe66c344d9c",
+      "scope": "content",
+      "sourceText": "One breath plants a new streak",
+      "translations": {
+        "de-de": "Ein Atemzug pflanzt eine neue Serie",
+        "es-es": "Una respiración planta una nueva racha",
+        "fr-fr": "Une respiration plante une nouvelle série",
+        "ja-jp": "ひと呼吸で新しい連続記録の始まり",
+        "pt-br": "Uma respiração planta uma nova sequência"
+      }
+    },
+    {
+      "messageId": "stats.hoursUnit",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123",
+      "scope": "content",
+      "sourceText": "h",
+      "translations": {
+        "de-de": "h",
+        "es-es": "h",
+        "fr-fr": "h",
+        "ja-jp": "h",
+        "pt-br": "h"
+      }
+    },
+    {
+      "messageId": "stats.longest",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "b2b6ef4d02065774b228d8e0a41dbc7dd9261a2037ed46b91894db3d2a348585",
+      "scope": "content",
+      "sourceText": "Longest: {count} {unit}",
+      "translations": {
+        "de-de": "Längste: {count} {unit}",
+        "es-es": "Máximo: {count} {unit}",
+        "fr-fr": "Plus longue : {count} {unit}",
+        "ja-jp": "最長: {count} {unit}",
+        "pt-br": "Mais longa: {count} {unit}"
+      }
+    },
+    {
+      "messageId": "stats.minutesUnit",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a",
+      "scope": "content",
+      "sourceText": "m",
+      "translations": {
+        "de-de": "m",
+        "es-es": "m",
+        "fr-fr": "m",
+        "ja-jp": "m",
+        "pt-br": "m"
+      }
+    },
+    {
+      "messageId": "stats.sessions",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "6fa3cbf451b2a1d54159d42c3ea5ab8725b0c8620d831f8c1602676b38ab00e6",
+      "scope": "content",
+      "sourceText": "Sessions",
+      "translations": {
+        "de-de": "Sitzungen",
+        "es-es": "Sesiones",
+        "fr-fr": "Séances",
+        "ja-jp": "セッション",
+        "pt-br": "Sessões"
+      }
+    },
+    {
+      "messageId": "stats.sessionsActiveSub",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "2ba6e306ceb8c1f44c41b9169d54d61fe96b97d8b6e5a74a8d37602f7045281c",
+      "scope": "content",
+      "sourceText": "keep the rhythm going",
+      "translations": {
+        "de-de": "Halte den Rhythmus aufrecht",
+        "es-es": "mantén el ritmo",
+        "fr-fr": "gardez le rythme",
+        "ja-jp": "リズムを続けましょう",
+        "pt-br": "mantenha o ritmo"
+      }
+    },
+    {
+      "messageId": "stats.sessionsEmptySub",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "95d86d82ad5deb2984a3a26c1600af25ac754de335aa89d0c64f799a58a8c137",
+      "scope": "content",
+      "sourceText": "Ready for your first",
+      "translations": {
+        "de-de": "Bereit für deine erste",
+        "es-es": "Listo para tu primera",
+        "fr-fr": "Prêt pour votre première",
+        "ja-jp": "最初のセッションへ",
+        "pt-br": "Pronto para a primeira"
+      }
+    },
+    {
+      "messageId": "stats.today",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "2b065c7c9ce466e5ebcad757987d5d660ee4c9ea708bc62c43444b53334738ba",
+      "scope": "content",
+      "sourceText": "Today",
+      "translations": {
+        "de-de": "Heute",
+        "es-es": "Hoy",
+        "fr-fr": "Aujourd'hui",
+        "ja-jp": "今日",
+        "pt-br": "Hoje"
+      }
+    },
+    {
+      "messageId": "stats.totalActiveTime",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "2cde9c5fcd09cea8f31128ce4f010fbb3f9cedeb923c07fb6e7052af362d1e2b",
+      "scope": "content",
+      "sourceText": "Total active time",
+      "translations": {
+        "de-de": "Gesamte aktive Zeit",
+        "es-es": "Tiempo activo total",
+        "fr-fr": "Temps actif total",
+        "ja-jp": "合計アクティブ時間",
+        "pt-br": "Tempo ativo total"
+      }
+    },
+    {
+      "messageId": "week.lastSevenDays",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "0603deca4fcb660f1c06a02621423721bd48084970ecf2b2de0e326dc783d191",
+      "scope": "content",
+      "sourceText": "Last 7 days",
+      "translations": {
+        "de-de": "Letzte 7 Tage",
+        "es-es": "Últimos 7 días",
+        "fr-fr": "7 derniers jours",
+        "ja-jp": "過去7日間",
+        "pt-br": "Últimos 7 dias"
+      }
+    },
+    {
+      "messageId": "week.summary",
+      "reason": "Catalog-absent stats UI copy translated by output-only Grok Composer and independently approved or corrected by Grok 4.5 for migration parity.",
+      "reviewedSourceHash": "bdc75740cfc0170c822c6dc2ed68a941dcc0a57d79aa3fda269c275d641229d7",
+      "scope": "content",
+      "sourceText": "{count} of 7 days",
+      "translations": {
+        "de-de": "{count} von 7 Tagen",
+        "es-es": "{count} de 7 días",
+        "fr-fr": "{count} jours sur 7",
+        "ja-jp": "7日中{count}日",
+        "pt-br": "{count} de 7 dias"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/stats"
+}

@@ -271,11 +271,17 @@ export function preserveReviewedGapValues(generated, existing, locales) {
 
 export async function buildRemainingPageGapContracts() {
   const batchMap = await readJson(batchMapPath);
-  const routes = batchMap.routes
+  const routes = [
+    ...batchMap.routes,
+    ...(batchMap.completedGapRoutes ?? []),
+  ]
     .filter((route) => route.catalogMissingCells > 0)
     .sort((left, right) => compareText(left.path, right.path));
   const assignedRoutes = new Set(
-    batchMap.grokTranslationBatches.flatMap((batch) => batch.routes),
+    [
+      ...batchMap.grokTranslationBatches,
+      ...(batchMap.completedGrokTranslationBatches ?? []),
+    ].flatMap((batch) => batch.routes),
   );
   assert(
     routes.every((route) => assignedRoutes.has(route.path)),
@@ -342,7 +348,10 @@ async function main() {
 
   process.stdout.write(
     stableJson({
-      catalogGapCells: batchMap.routes.reduce(
+      catalogGapCells: [
+        ...batchMap.routes,
+        ...(batchMap.completedGapRoutes ?? []),
+      ].reduce(
         (total, route) => total + route.catalogMissingCells,
         0,
       ),

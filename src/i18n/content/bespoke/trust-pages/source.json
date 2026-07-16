@@ -1,0 +1,163 @@
+{
+  "abi": {
+    "metadata": {
+      "title": "About Abi Abiassi, Founder of Deep Breathing Exercises",
+      "description": "Abi Abiassi built Deep Breathing Exercises as a free visualizer for breathing techniques he uses daily. Photographer, founder, breathwork practitioner.",
+      "socialTitle": "About Abi Abiassi, Founder of Deep Breathing Exercises",
+      "socialDescription": "Built this site as a free visualizer for the breathing techniques I use daily. Photographer, founder.",
+      "twitterTitle": "About Abi Abiassi",
+      "twitterDescription": "Built this site as a free visualizer for the breathing techniques I use daily."
+    },
+    "hero": {
+      "imageAlt": "Abi Abiassi",
+      "eyebrow": "DEEP BREATHING EXERCISES",
+      "title": "About Abi",
+      "intro": "Founder. Photographer. Built this site for the breathing techniques I use every day."
+    },
+    "story": {
+      "family": "I grew up in a family of meditation practitioners. It wasn't until later in life that I started being more intentional about breathwork. Once I did, I realized how useful these practices were on a day-to-day basis. They've been invaluable in furthering my photography work too.",
+      "visualizer": "I started researching and structuring them for myself, and figured a visualizer to guide you through any of them would be more useful than wading through endless YouTube videos and not-so-clear websites.",
+      "hope": "Hope this site is as useful to you as it has been to me."
+    },
+    "elsewhere": {
+      "title": "Find me elsewhere",
+      "personalSite": "abiassi.com (my personal site, separate from this project) →",
+      "linkedin": "LinkedIn →",
+      "twitter": "X / Twitter (@abiassi_) →"
+    },
+    "methodology": {
+      "title": "Methodology",
+      "intro": "Every technique on the site goes through the same research pass, in this order.",
+      "steps": {
+        "coverage": {
+          "title": "Pick what to cover.",
+          "body": "The techniques people actually search for and practice. Box, 4-7-8, coherent breathing, the physiological sigh, Wim Hof, the pranayama variants, the COPD-rooted ones like pursed-lip and Buteyko. Plus the use cases they show up against: anxiety, sleep, focus, blood pressure."
+        },
+        "lineage": {
+          "title": "Source the lineage.",
+          "beforeBook": "Who actually came up with this. Mark Divine for box. Andrew Weil for 4-7-8. Wim Hof for WHM. Konstantin Buteyko for his method. For the older yoga practices, the earliest text we can point to (the 15th-century",
+          "bookTitle": "Hatha Yoga Pradipika",
+          "afterBook": "for Nadi Shodhana and Kapalabhati). Where there's no single originator (pursed-lip, belly), say so."
+        },
+        "research": {
+          "title": "Find the research.",
+          "body": "PubMed, DOI registries, Cochrane. Systematic reviews and RCTs beat single studies. Mechanism work, especially mouse studies, gets called out as such so it doesn't get mistaken for clinical evidence."
+        },
+        "verification": {
+          "title": "Verify everything.",
+          "body": "Every citation URL gets fetched and confirmed before it ships. Where a study is paywalled, the link goes to the free PubMed Central version."
+        },
+        "evidence": {
+          "title": "Match language to evidence.",
+          "body": "Strong evidence gets stated directly. Smaller studies get a “research suggests.” Weak, contested, or null findings get said out loud. The Wim Hof Method works no better than slow breathing for mood. Ujjayi's throat constriction doesn't actually outperform plain slow breathing on baroreflex."
+        },
+        "sources": {
+          "title": "Place sources where you can use them.",
+          "body": "One to three peer-reviewed links per page, hyperlinked on the specific claim. No numbered footnotes. No end-of-article reference lists. Click a phrase, land on the study."
+        }
+      },
+      "disclaimer": "I'm not a clinician. If you have a medical condition, please talk to your doctor before adopting a new breathing practice.",
+      "policyLink": "Read the full editorial policy →"
+    },
+    "contact": {
+      "title": "Get in touch",
+      "beforeEmail": "Found an error? Have a feature request? Send me a note at",
+      "email": "hi@abiassi.com",
+      "afterEmail": ". It goes straight to me."
+    },
+    "footer": {
+      "about": "About",
+      "editorialPolicy": "Editorial policy",
+      "techniques": "Techniques",
+      "guides": "Guides",
+      "embed": "Embed",
+      "privacy": "Privacy"
+    }
+  },
+  "editorialPolicy": {
+    "metadata": {
+      "title": "Editorial Policy | Deep Breathing Exercises",
+      "description": "How we research, write, and update our breathing-technique guides. Lineage attribution, peer-reviewed citations, honest framing, and what we don't claim.",
+      "socialTitle": "Our Editorial Policy",
+      "socialDescription": "How we research, write, and update our breathing-technique guides. Lineage attribution, peer-reviewed citations, and honest framing.",
+      "twitterTitle": "Our Editorial Policy",
+      "twitterDescription": "How we research, write, and update our breathing-technique guides."
+    },
+    "hero": {
+      "eyebrow": "ABOUT",
+      "title": "Editorial Policy",
+      "intro": "How we research, write, and update our breathing-technique guides.",
+      "lastUpdated": "Last updated: May 6, 2026"
+    },
+    "content": {
+      "whatSiteIs": {
+        "title": "What this site is",
+        "beforeAbi": "Deep Breathing Exercises is a free interactive visualizer for breathing techniques, built by",
+        "abiName": "Abi Abiassi",
+        "afterAbi": "as a way to practice the techniques he uses daily. It is a wellness and breathwork product, not a medical site. We're not clinicians. Nothing here is a diagnosis or a treatment plan."
+      },
+      "attribution": {
+        "title": "How we attribute techniques",
+        "originators": "Each technique page names the originator, popularizer, or tradition the technique comes from. Mark Divine for box breathing. Dr. Andrew Weil for 4-7-8. Wim Hof for the Wim Hof Method. The Hatha Yoga tradition for Nadi Shodhana and Kapalabhati. When the technique has no single originator (pursed-lip, belly breathing), we say so.",
+        "longerLineage": "Where popular framing oversimplifies (e.g., box breathing is older than its Navy SEAL association), we surface the longer lineage rather than repeat the legend."
+      },
+      "citations": {
+        "title": "How we cite research",
+        "intro": "Where a claim is strong, we link to it. We use a light-touch hyperlink style: one to three peer-reviewed citations per page, anchored on the specific phrase the research supports. We don't use dense numbered footnotes or end-of-article reference lists.",
+        "priorityIntro": "Sources we prioritize, in order:",
+        "priorities": {
+          "reviews": {
+            "title": "Systematic reviews and meta-analyses",
+            "body": "from journals indexed in PubMed (Cochrane, Frontiers, JAMA, Nature, Science)."
+          },
+          "trials": {
+            "title": "Randomized controlled trials",
+            "body": "with adequate sample size and active controls."
+          },
+          "mechanisms": {
+            "title": "Mechanism studies",
+            "body": "that explain why a technique works physiologically, clearly labeled when from animal models."
+          },
+          "practitioners": {
+            "title": "Practitioner sources",
+            "body": "(the originator's own writing) for attribution, not as evidence of efficacy."
+          }
+        }
+      },
+      "claims": {
+        "title": "How we frame claims",
+        "evidence": "We try to match the strength of the language to the strength of the evidence. If a meta-analysis supports a claim, we say so. If only a single small RCT supports it, we hedge with “research suggests” or “may help.”",
+        "scrutiny": "Some popular claims about breathwork don't hold up under scrutiny. Where the evidence is weak or contested, we say that too, even when the technique itself is widely promoted."
+      },
+      "exclusions": {
+        "title": "What we don't do",
+        "diagnoses": "We don't provide medical diagnoses or treatment recommendations.",
+        "cures": "We don't claim breathing techniques cure diseases or replace medical treatment.",
+        "credentials": "We don't fake credentials or display a “medically reviewed by” line we can't back up.",
+        "overstatement": "We don't overstate research findings or present preliminary studies as established fact."
+      },
+      "updates": {
+        "title": "Updates and corrections",
+        "beforeEmail": "Every technique page shows a “Last updated” date. We re-review pages when new research lands or when readers flag a problem. If you spot an error, please send a note to",
+        "email": "hi@abiassi.com",
+        "afterEmail": ". Corrections go straight to Abi."
+      },
+      "whoBuilt": {
+        "title": "Who built this",
+        "beforeAbi": "Deep Breathing Exercises is created by",
+        "abiName": "Abi Abiassi",
+        "beforeDarkmatter": "with",
+        "darkmatterName": "Darkmatter AI Labs",
+        "disclaimer": "We're not medical professionals. This site is for educational purposes and should complement professional healthcare advice, not replace it."
+      }
+    },
+    "footer": {
+      "about": "About",
+      "aboutAbi": "About Abi",
+      "techniques": "Techniques",
+      "guides": "Guides",
+      "embed": "Embed",
+      "privacy": "Privacy"
+    }
+  }
+}

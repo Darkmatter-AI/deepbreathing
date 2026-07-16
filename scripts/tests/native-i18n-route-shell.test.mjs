@@ -90,6 +90,8 @@ test("the route groups keep English URLs stable and give localized pages their o
     localizedPage,
     localizedAboutPage,
     localizedTimerPage,
+    localizedStatsPage,
+    statsServerPage,
   ] = await Promise.all([
     readFile(
       new URL("../../src/app/(site-en)/layout.tsx", import.meta.url),
@@ -123,6 +125,20 @@ test("the route groups keep English URLs stable and give localized pages their o
       ),
       "utf8",
     ),
+    readFile(
+      new URL(
+        "../../src/app/(site-localized)/[locale]/stats/page.tsx",
+        import.meta.url,
+      ),
+      "utf8",
+    ),
+    readFile(
+      new URL(
+        "../../src/app/(site-en)/stats/stats-page.tsx",
+        import.meta.url,
+      ),
+      "utf8",
+    ),
   ]);
 
   assert.match(englishLayout, /<SiteDocument htmlLang="en">/);
@@ -147,6 +163,18 @@ test("the route groups keep English URLs stable and give localized pages their o
   assert.match(localizedPage, /BREATHE_CONTENT_SLUGS/);
   assert.match(localizedPage, /getNativeRouteByPath/);
   assert.match(localizedPage, /loadHomeContent/);
+  assert.match(localizedPage, /loadDurationContent/);
+  assert.match(localizedPage, /loadInsomniaContent/);
+  assert.match(localizedPage, /DURATION_CONTENT_ROUTES/);
+  assert.match(localizedPage, /loadResonanceGuideContent/);
+  assert.match(localizedPage, /RESONANCE_GUIDE_ROUTES/);
+  assert.match(localizedPage, /loadHolidayContent/);
+  assert.match(localizedPage, /loadRw03AppContent/);
+  assert.match(localizedPage, /loadBreathingVisualizerContent/);
+  assert.match(localizedPage, /loadEmbedContent/);
+  assert.match(localizedPage, /loadTrustPageContent/);
+  assert.match(localizedPage, /loadPrivacyContent/);
+  assert.match(localizedPage, /loadSupportContent/);
   assert.match(localizedPage, /createHomeMetadataFromContent/);
   assert.match(localizedPage, /<LocalizedHomeResonance/);
   assert.match(localizedPage, /<HomePage/);
@@ -154,6 +182,19 @@ test("the route groups keep English URLs stable and give localized pages their o
   assert.match(localizedPage, /<PatternPage/);
   assert.match(localizedPage, /<ForIndexPage/);
   assert.match(localizedPage, /<UseCasePage/);
+  assert.match(localizedPage, /<DurationExercisePage/);
+  assert.match(localizedPage, /<InsomniaPage/);
+  assert.match(localizedPage, /<ResonanceGuidePage/);
+  assert.match(localizedPage, /<HolidayBreathingPage/);
+  assert.match(localizedPage, /<BoxBreathingAppPage/);
+  assert.match(localizedPage, /<BreathingAppPage/);
+  assert.match(localizedPage, /<BreathingVisualizerPage/);
+  assert.match(localizedPage, /<CoherentBreathingAppPage/);
+  assert.match(localizedPage, /<EmbedPage/);
+  assert.match(localizedPage, /<AbiPage/);
+  assert.match(localizedPage, /<EditorialPolicyPage/);
+  assert.match(localizedPage, /<PrivacyPage/);
+  assert.match(localizedPage, /<SupportPage/);
   assert.doesNotMatch(localizedPage, /sourceRoute === "\/breathe\/buteyko"/);
   assert.doesNotMatch(localizedPage, /sourceRoute === "\/for\/anxiety"/);
   assert.doesNotMatch(localizedPage, /loadProofContent|loadProofServerChrome/);
@@ -174,4 +215,15 @@ test("the route groups keep English URLs stable and give localized pages their o
   assert.match(localizedTimerPage, /loadTimerContent/);
   assert.match(localizedTimerPage, /createTimerMetadataFromContent/);
   assert.match(localizedTimerPage, /buildHreflangAlternates/);
+
+  assert.match(localizedStatsPage, /dynamic = "force-dynamic"/);
+  assert.match(localizedStatsPage, /resolveNativeI18nMode/);
+  assert.match(localizedStatsPage, /isNativeRoutePreviewable/);
+  assert.match(localizedStatsPage, /isNativeRoutePublished/);
+  assert.match(localizedStatsPage, /loadStatsContent/);
+  assert.match(localizedStatsPage, /createStatsMetadataFromContent/);
+  assert.match(localizedStatsPage, /buildHreflangAlternates/);
+  assert.match(localizedStatsPage, /SUPPORTED_LOCALES/);
+  assert.doesNotMatch(localizedStatsPage, /generateStaticParams|dynamicParams/);
+  assert.match(statsServerPage, /robots:\s*\{\s*index:\s*false/);
 });

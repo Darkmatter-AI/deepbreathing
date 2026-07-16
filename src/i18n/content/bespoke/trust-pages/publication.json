@@ -1,0 +1,117 @@
+{
+  "routes": {
+    "abi": {
+      "expectedMessages": 45,
+      "locales": {
+        "de-de": {
+          "binding": 1,
+          "bytes": 4934,
+          "catalog": 44,
+          "path": "messages/de-de/abi.json",
+          "publishable": true,
+          "replacement": 0,
+          "resolvedMessages": 45,
+          "sha256": "2fc9720d65306bf22d1188a254d50e429a4c9a62b43f98ea830a74ff2e3665e9"
+        },
+        "es-es": {
+          "binding": 1,
+          "bytes": 5010,
+          "catalog": 44,
+          "path": "messages/es-es/abi.json",
+          "publishable": true,
+          "replacement": 0,
+          "resolvedMessages": 45,
+          "sha256": "ed79e29a1e30ad9b0cf1e4531a6fee2a8b17b9083bcc1f94c1030c05134668dc"
+        },
+        "fr-fr": {
+          "binding": 1,
+          "bytes": 5220,
+          "catalog": 43,
+          "path": "messages/fr-fr/abi.json",
+          "publishable": true,
+          "replacement": 1,
+          "resolvedMessages": 45,
+          "sha256": "8ce000143e15fd088da4e84b5ab69aca05c2e0c82a99dbd62cc7d8e0df46aae8"
+        },
+        "ja-jp": {
+          "binding": 2,
+          "bytes": 5848,
+          "catalog": 43,
+          "path": "messages/ja-jp/abi.json",
+          "publishable": true,
+          "replacement": 0,
+          "resolvedMessages": 45,
+          "sha256": "96a4df714e28383bf371d5bab5a07f8fef41403e02fc4fcc36d943ff5a2edecc"
+        },
+        "pt-br": {
+          "binding": 1,
+          "bytes": 4926,
+          "catalog": 44,
+          "path": "messages/pt-br/abi.json",
+          "publishable": true,
+          "replacement": 0,
+          "resolvedMessages": 45,
+          "sha256": "81635a405d9c1578824d602ba74e8aca60d3c93a3e509f30b5cbb7bfc208a268"
+        }
+      },
+      "sourceRoute": "/about/abi"
+    },
+    "editorialPolicy": {
+      "expectedMessages": 52,
+      "locales": {
+        "de-de": {
+          "binding": 10,
+          "bytes": 5510,
+          "catalog": 42,
+          "path": "messages/de-de/editorialPolicy.json",
+          "publishable": true,
+          "replacement": 0,
+          "resolvedMessages": 52,
+          "sha256": "3912369d0e831647bf04e961be639e3f6e52f1cc7186ec377d5898a39f5a6efb"
+        },
+        "es-es": {
+          "binding": 10,
+          "bytes": 5584,
+          "catalog": 42,
+          "path": "messages/es-es/editorialPolicy.json",
+          "publishable": true,
+          "replacement": 0,
+          "resolvedMessages": 52,
+          "sha256": "ea8a2b17e765f092bf2f28c86923830bf9481a16efd2ae8d9a22185529d56b91"
+        },
+        "fr-fr": {
+          "binding": 10,
+          "bytes": 5863,
+          "catalog": 42,
+          "path": "messages/fr-fr/editorialPolicy.json",
+          "publishable": true,
+          "replacement": 0,
+          "resolvedMessages": 52,
+          "sha256": "f439541c5be876fc2639077734cce83a168133c006d6da7c3bd170e536dc1ace"
+        },
+        "ja-jp": {
+          "binding": 10,
+          "bytes": 6140,
+          "catalog": 42,
+          "path": "messages/ja-jp/editorialPolicy.json",
+          "publishable": true,
+          "replacement": 0,
+          "resolvedMessages": 52,
+          "sha256": "45fdfe013145dca5436bda4086eecd7554a66d2ce6b329ab6681ecc854e3c4f2"
+        },
+        "pt-br": {
+          "binding": 10,
+          "bytes": 5454,
+          "catalog": 42,
+          "path": "messages/pt-br/editorialPolicy.json",
+          "publishable": true,
+          "replacement": 0,
+          "resolvedMessages": 52,
+          "sha256": "ca6e03693c1a23eb5366691611d426189bcd0b61ebeca823413e2e3486ea0681"
+        }
+      },
+      "sourceRoute": "/about/editorial-policy"
+    }
+  },
+  "schemaVersion": 1
+}

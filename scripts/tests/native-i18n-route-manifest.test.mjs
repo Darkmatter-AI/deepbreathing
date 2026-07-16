@@ -166,9 +166,23 @@ test("catalog facts cover 59 static routes and every translated sitemap route", 
 test("translated migration state starts fail-closed", () => {
   const semanticReadyPaths = new Set([
     "/",
+    "/1-minute-breathing-exercise",
+    "/2-minute-breathing-exercise",
+    "/4-7-8-breathing-for-insomnia",
     "/4-7-8-breathing-timer",
+    "/5-minute-breathing-exercise",
     "/about",
+    "/about/abi",
+    "/about/editorial-policy",
+    "/box-breathing-app",
+    "/box-breathing-before-presentation",
     "/breathe",
+    "/breathing-app",
+    "/breathing-exercises-before-surgery",
+    "/breathing-exercises-for-labor",
+    "/breathing-visualizer",
+    "/coherent-breathing-app",
+    "/embed",
     ...NATIVE_ROUTE_MANIFEST.filter(
       (route) => route.kind === "structured-breathing",
     ).map((route) => route.path),
@@ -176,6 +190,11 @@ test("translated migration state starts fail-closed", () => {
     ...NATIVE_ROUTE_MANIFEST.filter(
       (route) => route.kind === "structured-use-case",
     ).map((route) => route.path),
+    "/holiday-breathing-exercises",
+    "/physiological-sigh-panic-attack",
+    "/privacy",
+    "/stats",
+    "/support",
   ]);
 
   for (const route of NATIVE_ROUTE_MANIFEST) {
@@ -214,7 +233,7 @@ test("translated migration state starts fail-closed", () => {
   );
   assert.deepEqual(getLocalizedStaticParams(), []);
   // Explicit bespoke routes own their params outside the shared catch-all.
-  assert.equal(getPreviewLocalizedStaticParams().length, 175);
+  assert.equal(getPreviewLocalizedStaticParams().length, 265);
   assert.equal(isNativeLocalePublished(DEFAULT_LOCALE), false);
 });
 
@@ -263,6 +282,108 @@ test("the breathe and use-case families and their hubs are preview-ready", () =>
   assert.ok(
     TRANSLATED_LOCALES.every(
       ({ code }) => forIndex.nativeStatus[code] === "preview",
+    ),
+  );
+});
+
+test("the R-W01 duration and insomnia routes are preview-ready", () => {
+  const routePaths = [
+    "/1-minute-breathing-exercise",
+    "/2-minute-breathing-exercise",
+    "/4-7-8-breathing-for-insomnia",
+    "/5-minute-breathing-exercise",
+  ];
+
+  for (const path of routePaths) {
+    const route = getNativeRouteByPath(path);
+    assert.ok(route, path);
+    assert.equal(route.localizedHandler, "catch-all");
+    assert.ok(
+      TRANSLATED_LOCALES.every(
+        ({ code }) => route.nativeStatus[code] === "preview",
+      ),
+      path,
+    );
+  }
+});
+
+test("the R-W02 Resonance guides and holiday route are preview-ready", () => {
+  const routePaths = [
+    "/box-breathing-before-presentation",
+    "/breathing-exercises-before-surgery",
+    "/breathing-exercises-for-labor",
+    "/holiday-breathing-exercises",
+    "/physiological-sigh-panic-attack",
+  ];
+
+  for (const path of routePaths) {
+    const route = getNativeRouteByPath(path);
+    assert.ok(route, path);
+    assert.equal(route.localizedHandler, "catch-all");
+    assert.ok(
+      TRANSLATED_LOCALES.every(
+        ({ code }) => route.nativeStatus[code] === "preview",
+      ),
+      path,
+    );
+  }
+});
+
+test("the R-W03 application, visualizer, and embed routes are preview-ready", () => {
+  const routePaths = [
+    "/box-breathing-app",
+    "/breathing-app",
+    "/breathing-visualizer",
+    "/coherent-breathing-app",
+    "/embed",
+  ];
+
+  for (const path of routePaths) {
+    const route = getNativeRouteByPath(path);
+    assert.ok(route, path);
+    assert.equal(route.localizedHandler, "catch-all");
+    assert.ok(
+      TRANSLATED_LOCALES.every(
+        ({ code }) => route.nativeStatus[code] === "preview",
+      ),
+      path,
+    );
+  }
+
+  const embedSlug = getNativeRouteById("embed-slug");
+  assert.ok(embedSlug);
+  assert.equal(embedSlug.dynamic, true);
+  assert.equal(embedSlug.indexable, false);
+  assert.equal(isNativeRoutePreviewable(embedSlug, "es-ES"), false);
+});
+
+test("the R-W04 trust and information routes are preview-ready", () => {
+  const catchAllPaths = [
+    "/about/abi",
+    "/about/editorial-policy",
+    "/privacy",
+    "/support",
+  ];
+
+  for (const path of catchAllPaths) {
+    const route = getNativeRouteByPath(path);
+    assert.ok(route, path);
+    assert.equal(route.localizedHandler, "catch-all");
+    assert.ok(
+      TRANSLATED_LOCALES.every(
+        ({ code }) => route.nativeStatus[code] === "preview",
+      ),
+      path,
+    );
+  }
+
+  const stats = getNativeRouteByPath("/stats");
+  assert.ok(stats);
+  assert.equal(stats.localizedHandler, "explicit");
+  assert.equal(stats.indexable, false);
+  assert.ok(
+    TRANSLATED_LOCALES.every(
+      ({ code }) => stats.nativeStatus[code] === "preview",
     ),
   );
 });
@@ -365,13 +486,32 @@ test("native publication requires cutover-ready, intent, and a static route", ()
 
 test("partial native links keep preview targets localized and fall back elsewhere", () => {
   const previewPaths = getNativeLocalizedRoutePaths("es-ES", "native-preview");
-  assert.equal(previewPaths.length, 37);
+  assert.equal(previewPaths.length, 56);
+  assert.ok(previewPaths.includes("/1-minute-breathing-exercise"));
+  assert.ok(previewPaths.includes("/2-minute-breathing-exercise"));
+  assert.ok(previewPaths.includes("/4-7-8-breathing-for-insomnia"));
+  assert.ok(previewPaths.includes("/5-minute-breathing-exercise"));
   assert.ok(previewPaths.includes("/breathe"));
   assert.ok(previewPaths.includes("/breathe/box"));
   assert.ok(previewPaths.includes("/breathe/buteyko"));
   assert.ok(previewPaths.includes("/for/anxiety"));
   assert.ok(previewPaths.includes("/for"));
   assert.ok(previewPaths.includes("/for/travel-anxiety"));
+  assert.ok(previewPaths.includes("/box-breathing-before-presentation"));
+  assert.ok(previewPaths.includes("/breathing-exercises-before-surgery"));
+  assert.ok(previewPaths.includes("/breathing-exercises-for-labor"));
+  assert.ok(previewPaths.includes("/holiday-breathing-exercises"));
+  assert.ok(previewPaths.includes("/physiological-sigh-panic-attack"));
+  assert.ok(previewPaths.includes("/box-breathing-app"));
+  assert.ok(previewPaths.includes("/breathing-app"));
+  assert.ok(previewPaths.includes("/breathing-visualizer"));
+  assert.ok(previewPaths.includes("/coherent-breathing-app"));
+  assert.ok(previewPaths.includes("/embed"));
+  assert.ok(previewPaths.includes("/about/abi"));
+  assert.ok(previewPaths.includes("/about/editorial-policy"));
+  assert.ok(previewPaths.includes("/privacy"));
+  assert.ok(previewPaths.includes("/stats"));
+  assert.ok(previewPaths.includes("/support"));
   assert.deepEqual(getNativeLocalizedRoutePaths("es-ES", "native"), []);
   assert.equal(
     resolveNativeInternalHref(

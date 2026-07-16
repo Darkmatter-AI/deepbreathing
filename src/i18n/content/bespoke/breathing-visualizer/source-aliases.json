@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "aliases": [
+    {
+      "messagePath": "metadata.title",
+      "reviewedSourceHash": "a844960b6682a79d53bb8036b0d71694b930350f1242388d1f417755a9d23a35",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "head:title",
+      "catalogSourceText": "Free Online Breathing Visualizer (2026) — 10 Techniques, No Download | Deep Breathing Exercises",
+      "reason": "Explicit source-bound preservation alias.",
+      "numericReviewReasons": {
+        "de-de": "The approved preservation translation omits the year 2026 while retaining the 10-technique claim; preserve the reviewed catalog text for migration parity.",
+        "es-es": "The approved preservation translation retains the year 2026 but omits the 10-technique claim; preserve the reviewed catalog text for migration parity."
+      }
+    },
+    {
+      "messagePath": "metadata.description",
+      "reviewedSourceHash": "7bb5f35b22af307cfc8e93b3ee5a69d9884cf4d994e3d72fc81220891a68ae8d",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "head:meta:name:description",
+      "catalogSourceText": "Free breathing visualizer with 10 guided techniques — box breathing, 4-7-8, physiological sigh, and more. Adjustable pacing, no download, no signup. Start now.",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "metadata.socialTitle",
+      "reviewedSourceHash": "e625ed394e4e888f66a3b6f13ef7acd69c8c587c55607cd84fa6af6cdbd6e8a7",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "head:meta:property:og:title",
+      "catalogSourceText": "Free Online Breathing Visualizer — 10 Techniques, No Download",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "metadata.twitterTitle",
+      "reviewedSourceHash": "5369e4d123c65081b1a24d92d7894d54ee96450e09c66886985f5bc8779a1112",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "head:meta:name:twitter:title",
+      "catalogSourceText": "Free Online Breathing Visualizer — 10 Techniques",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "metadata.twitterDescription",
+      "reviewedSourceHash": "18dac1314e98f38ae63a5590b4fc40d0816804ff223882889bbf8093adb985be",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "head:meta:name:twitter:description",
+      "catalogSourceText": "Free breathing visualizer with 10 guided techniques — box breathing, 4-7-8, physiological sigh, and more. Start now.",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "metadata.imageAlt",
+      "reviewedSourceHash": "bbf3da4af872c7d456f3f7211e290ecd997d87adb18feb55036ef778d9231f1a",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "head:meta:property:og:title",
+      "catalogSourceText": "Free Online Breathing Visualizer — 10 Techniques, No Download",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "breadcrumb.home",
+      "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+      "catalogRoute": "/languages",
+      "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+      "catalogSourceText": "Home",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "hero.eyebrow",
+      "reviewedSourceHash": "5cf5a342bb2d2be7537bd52cf55105ee4f3c10ae93c528822abac68cfd81fe84",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+      "catalogSourceText": "Breathing Visualizer",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "hero.intro",
+      "reviewedSourceHash": "d4542db1eddf621c2aa03a3361bd60927177451712ce96cf88d19e49bf22dd93",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:p.max-w-xl.text-lg:ctx:p:pos:0",
+      "catalogSourceText": "A free interactive breathing visualizer with 10 guided techniques. Follow the visual pacer to calm your nervous system — no download, no signup, works on any device.",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "hero.startAction",
+      "reviewedSourceHash": "b1c52ee3677debeb3b2e7dc8b41d1da1b08c02241ec1cc1f35d28637afcecf5c",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:a.rounded-full.bg-primary:ctx:link:pos:0",
+      "catalogSourceText": "Start Session",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "quickAnswer.body",
+      "reviewedSourceHash": "b45b2793086cf6f98ee5ed4c74b5f1dab9527346afdb1773a97c6045b0ccfbb2",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:p.mt-3.text-sm:ctx:p:pos:0",
+      "catalogSourceText": "A breathing visualizer is an interactive tool that guides your breathing with animation. You follow an expanding and contracting shape — inhaling as it grows, exhaling as it shrinks. The visual pacing replaces manual counting, helps you maintain a steady rhythm, and activates your parasympathetic nervous system for calm, focus, or sleep.",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "benefits.items[1].body",
+      "reviewedSourceHash": "cbecde0119b05e2f408478b7f6f317c04920b81dbe27fb00c1952d636c12241d",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:1",
+      "catalogSourceText": "Box breathing, 4-7-8, physiological sigh, coherent breathing, Wim Hof, and more — each with adjustable timing.",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "benefits.items[5].body",
+      "reviewedSourceHash": "c72436d635bf4a0490151d3300c100e49cb68f584de8be5979629a23c7be2c91",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:5",
+      "catalogSourceText": "Turn on sound or vibration feedback for eyes-free practice. Or keep it silent — your choice.",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "techniques.items.box.action",
+      "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:0",
+      "catalogSourceText": "Start session →",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "techniques.items.4-7-8.action",
+      "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:1",
+      "catalogSourceText": "Start session →",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "techniques.items.coherent.action",
+      "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:2",
+      "catalogSourceText": "Start session →",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "techniques.items.physiological-sigh.action",
+      "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:3",
+      "catalogSourceText": "Start session →",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "techniques.items.wim-hof.action",
+      "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:4",
+      "catalogSourceText": "Start session →",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "techniques.items.pursed-lip.action",
+      "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:5",
+      "catalogSourceText": "Start session →",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "techniques.items.nadi-shodhana.action",
+      "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:6",
+      "catalogSourceText": "Start session →",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "techniques.items.ujjayi.action",
+      "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:7",
+      "catalogSourceText": "Start session →",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "techniques.items.belly.action",
+      "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:8",
+      "catalogSourceText": "Start session →",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "techniques.items.buteyko.action",
+      "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:9",
+      "catalogSourceText": "Start session →",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "techniques.items.tummo.action",
+      "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:10",
+      "catalogSourceText": "Start session →",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "techniques.items.breath-of-fire.action",
+      "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:11",
+      "catalogSourceText": "Start session →",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "techniques.items.9d-breathwork.action",
+      "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:12",
+      "catalogSourceText": "Start session →",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "techniques.items.hope-cartel-9d-breathwork.action",
+      "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:13",
+      "catalogSourceText": "Start session →",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "howItWorks.steps[0].body",
+      "reviewedSourceHash": "5ea9754bd648b2ed44252d8b294ac6272d15beb7bee96cb0c4ff6866a0d4eb8a",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:18",
+      "catalogSourceText": "Pick from 10 breathing patterns — box breathing, 4-7-8, physiological sigh, coherent breathing, and more. Each suits a different goal.",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "faq.items[0].answer",
+      "reviewedSourceHash": "86858b2caf248d8974d084e9b80b7a426dfed1e019c8e5d2b9e8231a21483263",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:21",
+      "catalogSourceText": "Yes, completely free — no account, no download, no hidden costs. Open the page and start breathing. The tool runs in your browser on any device.",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "faq.items[3].answer",
+      "reviewedSourceHash": "cd96ee11183fbb6b9aa6fa7e1b4556f33655538b1634a0b48a6056e4db5a5494",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:24",
+      "catalogSourceText": "Yes. The visualizer is fully responsive and works on phones, tablets, and desktops. You can add it to your home screen for an app-like experience — no App Store download needed.",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "faq.items[4].question",
+      "reviewedSourceHash": "3cd039c4c57c0ab4a578cf37d321202ac52532106a2debf6f284f78e6c3f4148",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:22",
+      "catalogSourceText": "How does a breathing visualizer help with anxiety?",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "faq.items[5].question",
+      "reviewedSourceHash": "917306f04386d301551ad94f6d409a2bc8a489bad152321086b7afc025b89c30",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:23",
+      "catalogSourceText": "Do breathing visualizers actually work?",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "moreTools.body",
+      "reviewedSourceHash": "17fd44746d1258368adbff4fda60b3b2c9c883f73161495572fd1f5298a5b909",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:29",
+      "catalogSourceText": "Looking for a specific timer? Try one of these dedicated breathing tools.",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "moreTools.links[2]",
+      "reviewedSourceHash": "1230ed3dc5abc72aae7b8b60c4a23e4262b728573041d7c50ac5f299dd1c4635",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:3",
+      "catalogSourceText": "Coherent Breathing App",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "footer.links[4]",
+      "reviewedSourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+      "catalogRoute": "/box-breathing-before-presentation",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+      "catalogSourceText": "About Abi",
+      "reason": "Explicit source-bound preservation alias."
+    },
+    {
+      "messagePath": "footer.links[6]",
+      "reviewedSourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:6",
+      "catalogSourceText": "Privacy",
+      "reason": "Explicit source-bound preservation alias."
+    }
+  ]
+}

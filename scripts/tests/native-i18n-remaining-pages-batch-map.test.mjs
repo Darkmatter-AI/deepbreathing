@@ -73,8 +73,8 @@ test("batch map covers every intended static route not yet in native preview", (
     .sort();
   const mappedRoutes = batchMap.routes.map(({ path }) => path).sort();
 
-  assert.equal(batchMap.status, "translation-complete-integration-pending");
-  assert.equal(expectedRoutes.length, 19);
+  assert.equal(batchMap.status, "integration-complete-preview-only");
+  assert.equal(expectedRoutes.length, 0);
   assert.deepEqual(mappedRoutes, expectedRoutes);
   assertUnique(mappedRoutes, "remaining route paths");
 });
@@ -94,7 +94,7 @@ test("route counts match the preserved catalog baseline", () => {
     missingTotal += route.catalogMissingCells;
   }
 
-  assert.equal(missingTotal, 366);
+  assert.equal(missingTotal, 0);
 });
 
 test("integration waves and Grok lanes have exclusive route ownership", () => {
@@ -150,6 +150,32 @@ test("integration waves and Grok lanes have exclusive route ownership", () => {
       (total, batch) => total + batch.catalogMissingCells,
       0,
     ),
+    0,
+  );
+});
+
+test("completed ledgers retain all four waves and all 366 source catalog gaps", () => {
+  const completedRoutes = batchMap.completedIntegrationWaves.flatMap(
+    ({ routes }) => routes,
+  );
+  assert.equal(batchMap.completedIntegrationWaves.length, 4);
+  assert.equal(completedRoutes.length, 19);
+  assertUnique(completedRoutes, "completed integration routes");
+
+  const completedGapRoutes = batchMap.completedGapRoutes.map(({ path }) => path);
+  assert.equal(completedGapRoutes.length, 8);
+  assertUnique(completedGapRoutes, "completed gap routes");
+  assert.equal(
+    batchMap.completedGapRoutes.reduce(
+      (total, route) => total + route.catalogMissingCells,
+      0,
+    ),
     366,
   );
+
+  const completedBatchRoutes = batchMap.completedGrokTranslationBatches
+    .flatMap(({ routes }) => routes)
+    .sort();
+  assert.deepEqual(completedBatchRoutes, [...completedGapRoutes].sort());
+  assertUnique(completedBatchRoutes, "completed Grok routes");
 });

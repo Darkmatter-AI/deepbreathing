@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "reviewedSourceHash": "41b1c0787ba6580a2791ca9b194fdb3f350a59107e00555c6fbd9867d07ccc32",
+  "replacements": {
+    "metadata.twitterTitle": {
+      "reason": "The captured Twitter title predates the current page metadata; reuse the approved current Open Graph title translation.",
+      "translations": {
+        "de-de": "Kostenloses Atemübung Widget für Ihre Website einbetten",
+        "es-es": "Integra un widget de respiración gratis en tu web",
+        "fr-fr": "Intégrez une animation respiration sur votre site – Widget gratuit",
+        "ja-jp": "ウェブサイトに無料の呼吸法ウィジェットを埋め込みましょう",
+        "pt-br": "Widget grátis: animação de respiração para seu site"
+      }
+    },
+    "metadata.twitterDescription": {
+      "reason": "The captured Twitter description predates the current page metadata; reuse the approved current Open Graph description translation.",
+      "translations": {
+        "de-de": "Fügen Sie ein kostenloses interaktives Atemübung Widget zu Ihrer Website hinzu. Wählen Sie aus 12 Atemtechniken wie Box-Atmung, 4-7-8 und kohärenter",
+        "es-es": "Añade un widget de respiración interactivo y gratuito a tu web. 12 patrones (respiración cuadrada, 4-7-8, etc.). Copia el código y pégalo en tu HTML.",
+        "fr-fr": "Ajoutez un widget gratuit d'animation respiration interactive à votre site. Choisissez parmi 12 exercices (respiration carrée, 4-7-8, cohérence",
+        "ja-jp": "ウェブサイトに無料のインタラクティブな呼吸法ウィジェットを追加しましょう。ボックス呼吸、4-7-8呼吸法など12種類のパターンから選択可能。埋め込みコードをコピーしてHTMLに貼り付けるだけです。",
+        "pt-br": "Adicione uma animação de respiração interativa grátis ao seu site. Escolha entre 12 padrões, como respiração quadrada e 4-7-8. Copie o código HTML."
+      }
+    },
+    "metadata.imageAlt": {
+      "reason": "The current Open Graph image alt was added after the preservation snapshot.",
+      "translations": {
+        "de-de": "Kostenloses Widget zum Einbetten einer Atemübung",
+        "es-es": "Widget gratuito para integrar ejercicios de respiración",
+        "fr-fr": "Widget gratuit pour intégrer un exercice de respiration",
+        "ja-jp": "無料の呼吸エクササイズ埋め込みウィジェット",
+        "pt-br": "Widget gratuito para incorporar exercícios de respiração"
+      }
+    },
+    "generator.sound.title": {
+      "reason": "The Sound grouping heading was added after the preservation snapshot.",
+      "translations": {
+        "de-de": "Ton",
+        "es-es": "Sonido",
+        "fr-fr": "Son",
+        "ja-jp": "サウンド",
+        "pt-br": "Som"
+      }
+    },
+    "generator.preview.iframeTitleTemplate": {
+      "reason": "Only the default pattern's hydrated iframe title was captured; the native generator needs the same accessible title for every selected pattern.",
+      "translations": {
+        "de-de": "{pattern} Einbettungsvorschau",
+        "es-es": "Vista previa de {pattern}",
+        "fr-fr": "Aperçu de l'intégration {pattern}",
+        "ja-jp": "{pattern} 埋め込みプレビュー",
+        "pt-br": "Prévia da incorporação de {pattern}"
+      }
+    },
+    "generator.snippet.copied": {
+      "reason": "The transient copied state was not active in the preservation snapshot.",
+      "translations": {
+        "de-de": "Kopiert!",
+        "es-es": "¡Copiado!",
+        "fr-fr": "Copié !",
+        "ja-jp": "コピーしました！",
+        "pt-br": "Copiado!"
+      }
+    },
+    "player.loadingAriaLabel": {
+      "reason": "The dynamic embed player is not cataloged; reuse the approved visualizer loading label.",
+      "translations": {
+        "de-de": "Atemübung wird geladen",
+        "es-es": "Cargando ejercicio de respiración",
+        "fr-fr": "Chargement de l'exercice de respiration",
+        "ja-jp": "呼吸エクササイズを読み込み中",
+        "pt-br": "Carregando exercício de respiração"
+      }
+    },
+    "player.embedLabel": {
+      "reason": "The dynamic embed player is not cataloged; reuse the approved visualizer footer label in its noindex title.",
+      "translations": {
+        "de-de": "Einbetten",
+        "es-es": "Insertar",
+        "fr-fr": "Intégrer",
+        "ja-jp": "埋め込み",
+        "pt-br": "Incorporar"
+      }
+    }
+  }
+}

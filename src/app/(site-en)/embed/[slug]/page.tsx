@@ -1,84 +1,57 @@
-import type { Metadata } from "next";
-import dynamic from "next/dynamic";
 import { notFound } from "next/navigation";
 
 import { breathingPageMap } from "@/data/breathing-pages";
-import { BREATHING_PATTERNS } from "@/components/resonance/constants";
+import sourceContent from "@/i18n/content/bespoke/embed/source.json";
+import type { EmbedContent } from "@/i18n/content/bespoke/embed/types";
+import {
+  VALID_EMBED_SLUGS,
+  type EmbedSlug,
+} from "@/i18n/content/bespoke/embed/types";
 
-const Resonance = dynamic(
-  () => import("@/components/resonance/Resonance"),
-  {
-    ssr: false,
-    loading: () => (
-      <div className="min-h-screen flex items-center justify-center bg-background" role="status" aria-label="Loading breathing exercise">
-        <div aria-hidden="true" className="h-12 w-12 border-2 border-primary/30 border-t-primary rounded-full animate-spin" />
-      </div>
-    )
-  }
-);
+import {
+  createEmbedPlayerMetadata,
+  EmbedPlayer,
+  type EmbedPlayerSearchParams,
+} from "./embed-player";
 
-const baseUrl = "https://deepbreathingexercises.com";
-
-const validSlugs = Object.keys(breathingPageMap);
+const embedContent = sourceContent as EmbedContent;
+const validSlugs = new Set<string>(VALID_EMBED_SLUGS);
 
 export function generateStaticParams() {
-  return validSlugs.map((slug) => ({ slug }));
+  return VALID_EMBED_SLUGS.map((slug) => ({ slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const page = breathingPageMap[params.slug];
-  if (!page) return {};
+function getPage(slug: string) {
+  if (!validSlugs.has(slug)) notFound();
+  const page = breathingPageMap[slug as EmbedSlug];
+  if (!page) notFound();
+  return page;
+}
 
+export function generateMetadata({ params }: { params: { slug: string } }) {
+  const metadata = createEmbedPlayerMetadata(
+    getPage(params.slug),
+    embedContent.player.embedLabel,
+  );
   return {
-    title: `${page.hero.title} — Embed`,
-    description: page.meta.description,
+    ...metadata,
+    // Keep the route-level crawler contract explicit for inventory tooling and review.
     robots: { index: false, follow: false },
   };
 }
 
-export default function EmbedPage({
+export default function EmbedPageRoute({
   params,
   searchParams,
 }: {
   params: { slug: string };
-  searchParams: { theme?: string };
+  searchParams: EmbedPlayerSearchParams;
 }) {
-  const page = breathingPageMap[params.slug];
-  if (!page) {
-    notFound();
-  }
-
-  const pattern = BREATHING_PATTERNS[page.mode];
-  const fullPageUrl = `${baseUrl}/breathe/${page.slug}`;
-
-  const forcedTheme = searchParams.theme === 'dark' || searchParams.theme === 'light'
-    ? searchParams.theme
-    : undefined;
-
   return (
-    <main className="relative min-h-screen w-full">
-      <Resonance
-        defaultMode={page.mode}
-        className="min-h-screen"
-        embedMode
-        forcedTheme={forcedTheme}
-      />
-      <div className="absolute bottom-4 left-4 z-30">
-        <a
-          href={fullPageUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium text-white/80 backdrop-blur-sm transition hover:text-white"
-          style={{ backgroundColor: `${pattern.color}40` }}
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-            <polyline points="15 3 21 3 21 9" />
-            <line x1="10" y1="14" x2="21" y2="3" />
-          </svg>
-          deepbreathingexercises.com
-        </a>
-      </div>
-    </main>
+    <EmbedPlayer
+      content={getPage(params.slug)}
+      playerContent={embedContent.player}
+      searchParams={searchParams}
+    />
   );
 }

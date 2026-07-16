@@ -1,0 +1,92 @@
+{
+  "routes": {
+    "privacy": {
+      "catalogBindings": 16,
+      "expectedMessages": 32,
+      "gapBindings": 3,
+      "locales": {
+        "de-de": {
+          "path": "messages/privacy/de-de.json",
+          "publishable": true,
+          "resolvedMessages": 32,
+          "sha256": "fd46cf58773d4f65031b2317c7378198cee96a0c6813014273d075719f3abaa0"
+        },
+        "es-es": {
+          "path": "messages/privacy/es-es.json",
+          "publishable": true,
+          "resolvedMessages": 32,
+          "sha256": "615d063da99ae1b1f183faa1fe1d96ce8282c8132920cc3fc5d47ab8cce22d03"
+        },
+        "fr-fr": {
+          "path": "messages/privacy/fr-fr.json",
+          "publishable": true,
+          "resolvedMessages": 32,
+          "sha256": "4bcc12c53fcf3d5a5b1fb01c05795c48c46347d06ee767de098eb97e71bca21d"
+        },
+        "ja-jp": {
+          "path": "messages/privacy/ja-jp.json",
+          "publishable": true,
+          "resolvedMessages": 32,
+          "sha256": "2d9f44b0bd28437f7bc6dbcd466af68b09e68363c4720f4cebf820858c19b810"
+        },
+        "pt-br": {
+          "path": "messages/privacy/pt-br.json",
+          "publishable": true,
+          "resolvedMessages": 32,
+          "sha256": "6d237f4b8e3826e7735a38c5c582689d125827795a825bf466a39710829608fa"
+        }
+      },
+      "mirrorBindings": 2,
+      "renderedGapCells": 15,
+      "replacementBindings": 11,
+      "replacementCells": 55,
+      "reviewedGapCells": 15,
+      "staleGapCells": 0
+    },
+    "support": {
+      "catalogBindings": 6,
+      "expectedMessages": 36,
+      "gapBindings": 25,
+      "locales": {
+        "de-de": {
+          "path": "messages/support/de-de.json",
+          "publishable": true,
+          "resolvedMessages": 36,
+          "sha256": "8a2bfa68c2bbe4458725524531cded45459c6b858698694b1d40309e3670e31a"
+        },
+        "es-es": {
+          "path": "messages/support/es-es.json",
+          "publishable": true,
+          "resolvedMessages": 36,
+          "sha256": "423ef77d836e78ebbe0b79c45b9ec0071dbdb02a9a9b4c7677b3d62c6fec3c1c"
+        },
+        "fr-fr": {
+          "path": "messages/support/fr-fr.json",
+          "publishable": true,
+          "resolvedMessages": 36,
+          "sha256": "73a67ca31e83110f92d1319f26c6c85fd330f8d113b651dda7b8466c62496aaf"
+        },
+        "ja-jp": {
+          "path": "messages/support/ja-jp.json",
+          "publishable": true,
+          "resolvedMessages": 36,
+          "sha256": "558b4135d31edd1fd3da3602ef9e772a1cd1d41020d6eb4e9d8a1ef589b2a615"
+        },
+        "pt-br": {
+          "path": "messages/support/pt-br.json",
+          "publishable": true,
+          "resolvedMessages": 36,
+          "sha256": "63cfaeb3472bac41eb5c3fef0eceeb35979f8d6b87404ec8c0d9247eda7ff403"
+        }
+      },
+      "mirrorBindings": 2,
+      "renderedGapCells": 125,
+      "replacementBindings": 3,
+      "replacementCells": 15,
+      "reviewedGapCells": 140,
+      "staleGapCells": 15
+    }
+  },
+  "schemaVersion": 1,
+  "unresolvedCells": 0
+}

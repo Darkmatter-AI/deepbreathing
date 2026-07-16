@@ -22,6 +22,58 @@ import {
   createBreatheIndexMetadataFromContent,
 } from "@/app/(site-en)/breathe/breathe-index-page";
 import {
+  DurationExercisePage,
+  createDurationMetadataFromContent,
+} from "@/app/(site-en)/duration-exercise-page";
+import {
+  InsomniaPage,
+  createInsomniaMetadataFromContent,
+} from "@/app/(site-en)/4-7-8-breathing-for-insomnia/insomnia-page";
+import {
+  ResonanceGuidePage,
+  createResonanceGuideMetadataFromContent,
+} from "@/app/(site-en)/resonance-guide-page";
+import {
+  HolidayBreathingPage,
+  createHolidayMetadataFromContent,
+} from "@/app/(site-en)/holiday-breathing-exercises/holiday-breathing-page";
+import {
+  EmbedPage,
+  createEmbedMetadataFromContent,
+} from "@/app/(site-en)/embed/embed-page";
+import {
+  BreathingVisualizerPage,
+  createBreathingVisualizerMetadataFromContent,
+} from "@/app/(site-en)/breathing-visualizer/visualizer-page";
+import {
+  BoxBreathingAppPage,
+  createBoxBreathingAppMetadataFromContent,
+} from "@/app/(site-en)/box-breathing-app/box-breathing-app-page";
+import {
+  BreathingAppPage,
+  createBreathingAppMetadataFromContent,
+} from "@/app/(site-en)/breathing-app/breathing-app-page";
+import {
+  CoherentBreathingAppPage,
+  createCoherentBreathingAppMetadataFromContent,
+} from "@/app/(site-en)/coherent-breathing-app/coherent-breathing-app-page";
+import {
+  AbiPage,
+  createAbiMetadataFromContent,
+} from "@/app/(site-en)/about/abi/abi-page";
+import {
+  createEditorialPolicyMetadataFromContent,
+  EditorialPolicyPage,
+} from "@/app/(site-en)/about/editorial-policy/editorial-policy-page";
+import {
+  createPrivacyMetadataFromContent,
+  PrivacyPage,
+} from "@/app/(site-en)/privacy/privacy-page";
+import {
+  createSupportMetadataFromContent,
+  SupportPage,
+} from "@/app/(site-en)/support/support-page";
+import {
   loadBreatheIndexContent,
   type BreatheIndexContentLocale,
 } from "@/i18n/content/bespoke/breathe-index/server/load-breathe-index-content";
@@ -35,6 +87,50 @@ import {
   loadHomeContent,
   type HomeContentLocale,
 } from "@/i18n/content/bespoke/home/server/load-home-content";
+import {
+  loadDurationContent,
+} from "@/i18n/content/bespoke/duration-exercises/server/load-duration-content";
+import {
+  DURATION_CONTENT_ROUTES,
+  type DurationContentLocale,
+  type DurationContentRoute,
+} from "@/i18n/content/bespoke/duration-exercises/types";
+import {
+  loadInsomniaContent,
+  type InsomniaContentLocale,
+} from "@/i18n/content/bespoke/insomnia-4-7-8/server/load-insomnia-content";
+import {
+  loadResonanceGuideContent,
+  RESONANCE_GUIDE_ROUTES,
+  type ResonanceGuideContentLocale,
+  type ResonanceGuideRoute,
+} from "@/i18n/content/bespoke/resonance-guides/server/load-resonance-guide-content";
+import { loadHolidayContent } from "@/i18n/content/bespoke/holiday-breathing/server/load-holiday-content";
+import type { HolidayContentLocale } from "@/i18n/content/bespoke/holiday-breathing/types";
+import { loadEmbedContent } from "@/i18n/content/bespoke/embed/server/load-embed-content";
+import type { EmbedContentLocale } from "@/i18n/content/bespoke/embed/types";
+import { loadBreathingVisualizerContent } from "@/i18n/content/bespoke/breathing-visualizer/server/load-breathing-visualizer-content";
+import type { BreathingVisualizerLocale } from "@/i18n/content/bespoke/breathing-visualizer/types";
+import {
+  loadRw03AppContent,
+  RW03_APP_ROUTES,
+  type Rw03AppContentLocale,
+  type Rw03AppRoute,
+} from "@/i18n/content/bespoke/rw03-app-pages/server/load-rw03-app-content";
+import { loadTrustPageContent } from "@/i18n/content/bespoke/trust-pages/server/load-trust-page-content";
+import type { TrustPageContentLocale } from "@/i18n/content/bespoke/trust-pages/types";
+import {
+  loadPrivacyContent,
+  loadSupportContent,
+} from "@/i18n/content/bespoke/privacy-support/server/load-privacy-support-content";
+import type { PrivacySupportLocale } from "@/i18n/content/bespoke/privacy-support/types";
+import {
+  loadRw02RouteClientMessages,
+} from "@/i18n/content/remaining-pages/rw02-route-client/server/load-rw02-route-client-messages";
+import {
+  RW02_ROUTE_CLIENT_ROUTES,
+  type Rw02RouteClientRoute,
+} from "@/i18n/content/remaining-pages/rw02-route-client/types";
 import {
   loadForIndexContent,
   type ForIndexContentLocale,
@@ -66,7 +162,19 @@ import { LocalizedHomeResonance } from "./localized-home-resonance";
 
 const siteUrl = "https://deepbreathingexercises.com";
 const breatheContentSlugs = new Set<string>(BREATHE_CONTENT_SLUGS);
+const durationContentRoutes = new Set<string>(DURATION_CONTENT_ROUTES);
 const forContentSlugs = new Set<string>(FOR_CONTENT_SLUGS);
+const insomniaSourceRoute = "/4-7-8-breathing-for-insomnia";
+const resonanceGuideRoutes = new Set<string>(RESONANCE_GUIDE_ROUTES);
+const rw02RouteClientRoutes = new Set<string>(RW02_ROUTE_CLIENT_ROUTES);
+const holidaySourceRoute = "/holiday-breathing-exercises";
+const embedSourceRoute = "/embed";
+const visualizerSourceRoute = "/breathing-visualizer";
+const rw03AppRoutes = new Set<string>(RW03_APP_ROUTES);
+const abiSourceRoute = "/about/abi";
+const editorialPolicySourceRoute = "/about/editorial-policy";
+const privacySourceRoute = "/privacy";
+const supportSourceRoute = "/support";
 
 export const dynamicParams = false;
 
@@ -103,6 +211,40 @@ function getForContentSlug(sourceRoute: string): ForContentSlug | null {
   return segments[1] as ForContentSlug;
 }
 
+function getDurationContentRoute(
+  sourceRoute: string,
+): DurationContentRoute | null {
+  const segments = sourceRoute.split("/").filter(Boolean);
+  if (segments.length !== 1 || !durationContentRoutes.has(segments[0])) {
+    return null;
+  }
+  return segments[0] as DurationContentRoute;
+}
+
+function getResonanceGuideRoute(
+  sourceRoute: string,
+): ResonanceGuideRoute | null {
+  const segments = sourceRoute.split("/").filter(Boolean);
+  if (segments.length !== 1 || !resonanceGuideRoutes.has(segments[0])) {
+    return null;
+  }
+  return segments[0] as ResonanceGuideRoute;
+}
+
+function getRw02RouteClientRoute(
+  sourceRoute: string,
+): Rw02RouteClientRoute | null {
+  return rw02RouteClientRoutes.has(sourceRoute)
+    ? (sourceRoute as Rw02RouteClientRoute)
+    : null;
+}
+
+function getRw03AppRoute(sourceRoute: string): Rw03AppRoute | null {
+  const segments = sourceRoute.split("/").filter(Boolean);
+  if (segments.length !== 1 || !rw03AppRoutes.has(segments[0])) return null;
+  return segments[0] as Rw03AppRoute;
+}
+
 function resolveLocalizedRequest(params: {
   locale: string;
   segments?: string[];
@@ -121,13 +263,39 @@ function resolveLocalizedRequest(params: {
       ? isNativeRoutePreviewable(sourceRoute, locale.code)
       : isNativeRoutePublished(sourceRoute, locale.code);
   const breatheSlug = getBreatheContentSlug(sourceRoute);
+  const durationRoute = getDurationContentRoute(sourceRoute);
   const forSlug = getForContentSlug(sourceRoute);
+  const isInsomniaRoute = sourceRoute === insomniaSourceRoute;
+  const resonanceGuideRoute = getResonanceGuideRoute(sourceRoute);
+  const rw02RouteClientRoute = getRw02RouteClientRoute(sourceRoute);
+  const isHolidayRoute = sourceRoute === holidaySourceRoute;
+  const isEmbedRoute = sourceRoute === embedSourceRoute;
+  const isVisualizerRoute = sourceRoute === visualizerSourceRoute;
+  const rw03AppRoute = getRw03AppRoute(sourceRoute);
+  const trustPageKey =
+    sourceRoute === abiSourceRoute
+      ? "abi"
+      : sourceRoute === editorialPolicySourceRoute
+        ? "editorialPolicy"
+        : null;
+  const isPrivacyRoute = sourceRoute === privacySourceRoute;
+  const isSupportRoute = sourceRoute === supportSourceRoute;
   if (
     !routeDefinition ||
     routeDefinition.localizedHandler !== "catch-all" ||
     (sourceRoute !== "/" &&
       sourceRoute !== "/breathe" &&
       !breatheSlug &&
+      !durationRoute &&
+      !isInsomniaRoute &&
+      !resonanceGuideRoute &&
+      !isHolidayRoute &&
+      !isEmbedRoute &&
+      !isVisualizerRoute &&
+      !rw03AppRoute &&
+      !trustPageKey &&
+      !isPrivacyRoute &&
+      !isSupportRoute &&
       sourceRoute !== "/for" &&
       !forSlug) ||
     !routeIsAvailable
@@ -140,7 +308,18 @@ function resolveLocalizedRequest(params: {
     linkMode,
     locale,
     breatheSlug,
+    durationRoute,
     forSlug,
+    isInsomniaRoute,
+    resonanceGuideRoute,
+    rw02RouteClientRoute,
+    isHolidayRoute,
+    isEmbedRoute,
+    isVisualizerRoute,
+    rw03AppRoute,
+    trustPageKey,
+    isPrivacyRoute,
+    isSupportRoute,
     contentLocale: locale.code.toLowerCase(),
     routeDefinition,
     sourceRoute,
@@ -187,6 +366,158 @@ export async function generateMetadata({
     );
     return withLocalizedAlternates(
       createBreatheIndexMetadataFromContent(content, request.canonicalPath),
+      request.canonicalPath,
+    );
+  }
+
+  if (request.durationRoute) {
+    const content = await loadDurationContent(
+      request.durationRoute,
+      request.contentLocale as DurationContentLocale,
+    );
+    return withLocalizedAlternates(
+      createDurationMetadataFromContent(content, request.canonicalPath),
+      request.canonicalPath,
+    );
+  }
+
+  if (request.isInsomniaRoute) {
+    const content = await loadInsomniaContent(
+      request.contentLocale as InsomniaContentLocale,
+    );
+    return withLocalizedAlternates(
+      createInsomniaMetadataFromContent(content, request.canonicalPath),
+      request.canonicalPath,
+    );
+  }
+
+  if (request.resonanceGuideRoute) {
+    const content = await loadResonanceGuideContent(
+      request.resonanceGuideRoute,
+      request.contentLocale as ResonanceGuideContentLocale,
+    );
+    return withLocalizedAlternates(
+      createResonanceGuideMetadataFromContent(
+        content,
+        request.canonicalPath,
+      ),
+      request.canonicalPath,
+    );
+  }
+
+  if (request.isHolidayRoute) {
+    const content = await loadHolidayContent(
+      request.contentLocale as HolidayContentLocale,
+    );
+    return withLocalizedAlternates(
+      createHolidayMetadataFromContent(content, request.canonicalPath),
+      request.canonicalPath,
+    );
+  }
+
+  if (request.isEmbedRoute) {
+    const content = await loadEmbedContent(
+      request.contentLocale as EmbedContentLocale,
+    );
+    return withLocalizedAlternates(
+      createEmbedMetadataFromContent(content, request.canonicalPath),
+      request.canonicalPath,
+    );
+  }
+
+  if (request.isVisualizerRoute) {
+    const { content } = await loadBreathingVisualizerContent(
+      request.contentLocale as BreathingVisualizerLocale,
+    );
+    return withLocalizedAlternates(
+      createBreathingVisualizerMetadataFromContent(
+        content,
+        request.canonicalPath,
+      ),
+      request.canonicalPath,
+    );
+  }
+
+  if (request.rw03AppRoute === "box-breathing-app") {
+    const content = await loadRw03AppContent(
+      "box-breathing-app",
+      request.contentLocale as Rw03AppContentLocale,
+    );
+    return withLocalizedAlternates(
+      createBoxBreathingAppMetadataFromContent(
+        content,
+        request.canonicalPath,
+      ),
+      request.canonicalPath,
+    );
+  }
+
+  if (request.rw03AppRoute === "breathing-app") {
+    const content = await loadRw03AppContent(
+      "breathing-app",
+      request.contentLocale as Rw03AppContentLocale,
+    );
+    return withLocalizedAlternates(
+      createBreathingAppMetadataFromContent(content, request.canonicalPath),
+      request.canonicalPath,
+    );
+  }
+
+  if (request.rw03AppRoute === "coherent-breathing-app") {
+    const content = await loadRw03AppContent(
+      "coherent-breathing-app",
+      request.contentLocale as Rw03AppContentLocale,
+    );
+    return withLocalizedAlternates(
+      createCoherentBreathingAppMetadataFromContent(
+        content,
+        request.canonicalPath,
+      ),
+      request.canonicalPath,
+    );
+  }
+
+  if (request.trustPageKey === "abi") {
+    const content = await loadTrustPageContent(
+      "abi",
+      request.contentLocale as TrustPageContentLocale,
+    );
+    return withLocalizedAlternates(
+      createAbiMetadataFromContent(content, request.canonicalPath),
+      request.canonicalPath,
+    );
+  }
+
+  if (request.trustPageKey === "editorialPolicy") {
+    const content = await loadTrustPageContent(
+      "editorialPolicy",
+      request.contentLocale as TrustPageContentLocale,
+    );
+    return withLocalizedAlternates(
+      createEditorialPolicyMetadataFromContent(
+        content,
+        request.canonicalPath,
+      ),
+      request.canonicalPath,
+    );
+  }
+
+  if (request.isPrivacyRoute) {
+    const content = await loadPrivacyContent(
+      request.contentLocale as PrivacySupportLocale,
+    );
+    return withLocalizedAlternates(
+      createPrivacyMetadataFromContent(content, request.canonicalPath),
+      request.canonicalPath,
+    );
+  }
+
+  if (request.isSupportRoute) {
+    const content = await loadSupportContent(
+      request.contentLocale as PrivacySupportLocale,
+    );
+    return withLocalizedAlternates(
+      createSupportMetadataFromContent(content, request.canonicalPath),
       request.canonicalPath,
     );
   }
@@ -274,6 +605,197 @@ export default async function LocalizedContentPage({
       routeId: "breathe",
     };
     return <BreatheIndexPage content={content} renderContext={renderContext} />;
+  }
+
+  if (request.durationRoute) {
+    const content = await loadDurationContent(
+      request.durationRoute,
+      request.contentLocale as DurationContentLocale,
+    );
+    const renderContext: NativeRouteRenderContext = {
+      ...baseRenderContext,
+      routeId: request.routeDefinition.id,
+    };
+    return (
+      <DurationExercisePage
+        content={content}
+        renderContext={renderContext}
+        route={request.durationRoute}
+      />
+    );
+  }
+
+  if (request.isInsomniaRoute) {
+    const content = await loadInsomniaContent(
+      request.contentLocale as InsomniaContentLocale,
+    );
+    const renderContext: NativeRouteRenderContext = {
+      ...baseRenderContext,
+      routeId: request.routeDefinition.id,
+    };
+    return <InsomniaPage content={content} renderContext={renderContext} />;
+  }
+
+  if (request.resonanceGuideRoute) {
+    const [content, routeClientMessages] = await Promise.all([
+      loadResonanceGuideContent(
+        request.resonanceGuideRoute,
+        request.contentLocale as ResonanceGuideContentLocale,
+      ),
+      request.rw02RouteClientRoute
+        ? loadRw02RouteClientMessages(
+            request.rw02RouteClientRoute,
+            request.contentLocale as ResonanceGuideContentLocale,
+          )
+        : Promise.resolve(undefined),
+    ]);
+    const renderContext: NativeRouteRenderContext = {
+      ...baseRenderContext,
+      routeId: request.routeDefinition.id,
+    };
+    return (
+      <ResonanceGuidePage
+        content={content}
+        renderContext={renderContext}
+        route={request.resonanceGuideRoute}
+        routeClientMessages={routeClientMessages}
+      />
+    );
+  }
+
+  if (request.isHolidayRoute) {
+    const content = await loadHolidayContent(
+      request.contentLocale as HolidayContentLocale,
+    );
+    const renderContext: NativeRouteRenderContext = {
+      ...baseRenderContext,
+      routeId: request.routeDefinition.id,
+    };
+    return (
+      <HolidayBreathingPage
+        content={content}
+        renderContext={renderContext}
+      />
+    );
+  }
+
+  if (request.isEmbedRoute) {
+    const content = await loadEmbedContent(
+      request.contentLocale as EmbedContentLocale,
+    );
+    const renderContext: NativeRouteRenderContext = {
+      ...baseRenderContext,
+      routeId: request.routeDefinition.id,
+    };
+    return <EmbedPage content={content} renderContext={renderContext} />;
+  }
+
+  if (request.isVisualizerRoute) {
+    const { content, routeClientMessages } =
+      await loadBreathingVisualizerContent(
+        request.contentLocale as BreathingVisualizerLocale,
+      );
+    const renderContext: NativeRouteRenderContext = {
+      ...baseRenderContext,
+      routeId: request.routeDefinition.id,
+    };
+    return (
+      <BreathingVisualizerPage
+        content={content}
+        renderContext={renderContext}
+        routeClientMessages={routeClientMessages}
+      />
+    );
+  }
+
+  if (request.rw03AppRoute) {
+    const renderContext: NativeRouteRenderContext = {
+      ...baseRenderContext,
+      routeId: request.routeDefinition.id,
+    };
+
+    if (request.rw03AppRoute === "box-breathing-app") {
+      const content = await loadRw03AppContent(
+        "box-breathing-app",
+        request.contentLocale as Rw03AppContentLocale,
+      );
+      return (
+        <BoxBreathingAppPage
+          content={content}
+          renderContext={renderContext}
+        />
+      );
+    }
+
+    if (request.rw03AppRoute === "breathing-app") {
+      const content = await loadRw03AppContent(
+        "breathing-app",
+        request.contentLocale as Rw03AppContentLocale,
+      );
+      return <BreathingAppPage content={content} renderContext={renderContext} />;
+    }
+
+    const content = await loadRw03AppContent(
+      "coherent-breathing-app",
+      request.contentLocale as Rw03AppContentLocale,
+    );
+    return (
+      <CoherentBreathingAppPage
+        content={content}
+        renderContext={renderContext}
+      />
+    );
+  }
+
+  if (request.trustPageKey === "abi") {
+    const content = await loadTrustPageContent(
+      "abi",
+      request.contentLocale as TrustPageContentLocale,
+    );
+    const renderContext: NativeRouteRenderContext = {
+      ...baseRenderContext,
+      routeId: request.routeDefinition.id,
+    };
+    return <AbiPage content={content} renderContext={renderContext} />;
+  }
+
+  if (request.trustPageKey === "editorialPolicy") {
+    const content = await loadTrustPageContent(
+      "editorialPolicy",
+      request.contentLocale as TrustPageContentLocale,
+    );
+    const renderContext: NativeRouteRenderContext = {
+      ...baseRenderContext,
+      routeId: request.routeDefinition.id,
+    };
+    return (
+      <EditorialPolicyPage
+        content={content}
+        renderContext={renderContext}
+      />
+    );
+  }
+
+  if (request.isPrivacyRoute) {
+    const content = await loadPrivacyContent(
+      request.contentLocale as PrivacySupportLocale,
+    );
+    const renderContext: NativeRouteRenderContext = {
+      ...baseRenderContext,
+      routeId: request.routeDefinition.id,
+    };
+    return <PrivacyPage content={content} renderContext={renderContext} />;
+  }
+
+  if (request.isSupportRoute) {
+    const content = await loadSupportContent(
+      request.contentLocale as PrivacySupportLocale,
+    );
+    const renderContext: NativeRouteRenderContext = {
+      ...baseRenderContext,
+      routeId: request.routeDefinition.id,
+    };
+    return <SupportPage content={content} renderContext={renderContext} />;
   }
 
   if (request.breatheSlug) {

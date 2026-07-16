@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "title": "Support",
+    "description": "Get help with Deep Breathing Exercises. Contact us with questions about the app, your account, or data deletion.",
+    "socialTitle": "Support — Deep Breathing Exercises",
+    "socialDescription": "Get help with Deep Breathing Exercises.",
+    "twitterTitle": "Support — Deep Breathing Exercises",
+    "twitterDescription": "Get help with Deep Breathing Exercises.",
+    "imageAlt": "Support"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Support"
+  },
+  "hero": {
+    "eyebrow": "DEEP BREATHING EXERCISES",
+    "title": "Support",
+    "intro": "We are happy to help. Reach out with any questions about the app, your account, or your data."
+  },
+  "contact": {
+    "title": "Contact",
+    "emailBefore": "Email us at",
+    "emailAddress": "support@deepbreathingexercises.com",
+    "emailAfter": "and we will get back to you within one business day.",
+    "teamBefore": "You can also reach the team through",
+    "darkmatterLabel": "Darkmatter AI Labs"
+  },
+  "commonQuestions": {
+    "title": "Common questions",
+    "account": {
+      "question": "Do I need an account?",
+      "answer": "No. The app works without an account. Sessions, stats, and settings are saved locally on your device. Create an account only if you want to sync your data across devices."
+    },
+    "deletion": {
+      "question": "How do I delete my account?",
+      "beforeAction": "Open your account menu in the app or website and choose",
+      "action": "Delete account.",
+      "afterAction": "We send a confirmation link before permanently removing your account and synced practice data."
+    },
+    "data": {
+      "question": "Is my breathing data shared?",
+      "bodyBeforeLink": "No. Session data is stored on your device. If you create an account, session stats sync to our servers for cross-device continuity. We do not sell data. See our",
+      "linkLabel": "Privacy Policy",
+      "bodyAfterLink": "for full details."
+    },
+    "audio": {
+      "question": "Why does the audio keep playing when I lock my screen?",
+      "answer": "This is intentional. The app keeps audio cues playing so you can breathe eyes-closed with your phone in your pocket. You can mute audio in the app settings."
+    },
+    "medical": {
+      "question": "Is this a medical app?",
+      "answer": "No. Deep Breathing Exercises provides guided breathing sessions based on established techniques. It is not a medical device and does not diagnose, treat, or prevent any condition. Consult a healthcare provider before beginning a new breathing practice if you have a health condition."
+    }
+  },
+  "safety": {
+    "title": "Wim Hof breathing — safety note",
+    "body": "The Wim Hof breathing sequence involves intentional hyperventilation and breath retention. Do not practice breath retention in or near water. Stop if you feel dizzy or lightheaded. Consult a doctor before beginning if you have a cardiovascular condition, respiratory condition, or are pregnant."
+  },
+  "backLink": "Back to the visualizer →"
+}

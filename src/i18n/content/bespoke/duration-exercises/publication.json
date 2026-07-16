@@ -1,0 +1,186 @@
+{
+  "coverage": {
+    "1-minute-breathing-exercise": {
+      "de-de": {
+        "alias": 28,
+        "bytes": 10098,
+        "catalog": 68,
+        "literal": 0,
+        "path": "messages/de-de/1-minute-breathing-exercise.json",
+        "publishable": true,
+        "replacement": 0,
+        "resolvedMessages": 96,
+        "sha256": "82123e1aff8adad7a52e3ca3b8dc07321966f9174c1e01c43b05be19e01b1c96"
+      },
+      "es-es": {
+        "alias": 28,
+        "bytes": 10194,
+        "catalog": 68,
+        "literal": 0,
+        "path": "messages/es-es/1-minute-breathing-exercise.json",
+        "publishable": true,
+        "replacement": 0,
+        "resolvedMessages": 96,
+        "sha256": "ecfeeec549963df62523761614aa8d66aaec790e572bdd4175cfd7438cf6ab36"
+      },
+      "fr-fr": {
+        "alias": 28,
+        "bytes": 10945,
+        "catalog": 68,
+        "literal": 0,
+        "path": "messages/fr-fr/1-minute-breathing-exercise.json",
+        "publishable": true,
+        "replacement": 0,
+        "resolvedMessages": 96,
+        "sha256": "33bcaaebab0de5cd1ca6a4b8d123d0c22f81fb5cfd11ac9a30a735375af3b777"
+      },
+      "ja-jp": {
+        "alias": 28,
+        "bytes": 11471,
+        "catalog": 68,
+        "literal": 0,
+        "path": "messages/ja-jp/1-minute-breathing-exercise.json",
+        "publishable": true,
+        "replacement": 0,
+        "resolvedMessages": 96,
+        "sha256": "eb56b2eb15650be12385fad7539ec3de47ed8c53a7d7866867a7eedf2694b9f5"
+      },
+      "pt-br": {
+        "alias": 28,
+        "bytes": 10580,
+        "catalog": 68,
+        "literal": 0,
+        "path": "messages/pt-br/1-minute-breathing-exercise.json",
+        "publishable": true,
+        "replacement": 0,
+        "resolvedMessages": 96,
+        "sha256": "d7d247f55b8a7b2a8212bbdd2bd0f7e4adf254fc5f80101a7cfcae422b4e29da"
+      }
+    },
+    "2-minute-breathing-exercise": {
+      "de-de": {
+        "alias": 39,
+        "bytes": 10123,
+        "catalog": 56,
+        "literal": 0,
+        "path": "messages/de-de/2-minute-breathing-exercise.json",
+        "publishable": true,
+        "replacement": 3,
+        "resolvedMessages": 98,
+        "sha256": "5933b99429c749fb531e627c516d29a5e03e9906a05ae61451c4d5362b05ac6f"
+      },
+      "es-es": {
+        "alias": 39,
+        "bytes": 10846,
+        "catalog": 56,
+        "literal": 0,
+        "path": "messages/es-es/2-minute-breathing-exercise.json",
+        "publishable": true,
+        "replacement": 3,
+        "resolvedMessages": 98,
+        "sha256": "08ca3bb0e74814efed973c442028e0341869ec521a5f5697ed5d2ee126aa62e4"
+      },
+      "fr-fr": {
+        "alias": 39,
+        "bytes": 11472,
+        "catalog": 56,
+        "literal": 0,
+        "path": "messages/fr-fr/2-minute-breathing-exercise.json",
+        "publishable": true,
+        "replacement": 3,
+        "resolvedMessages": 98,
+        "sha256": "e6c720464c04c3370d560fb0ab8563d5f4257bdd55798d276711b0a6944765f1"
+      },
+      "ja-jp": {
+        "alias": 39,
+        "bytes": 12609,
+        "catalog": 56,
+        "literal": 0,
+        "path": "messages/ja-jp/2-minute-breathing-exercise.json",
+        "publishable": true,
+        "replacement": 3,
+        "resolvedMessages": 98,
+        "sha256": "51dc29af631bb9453265da58ed3d0b70b8a9aee8fbf8fbbce96f15578b0a14e8"
+      },
+      "pt-br": {
+        "alias": 39,
+        "bytes": 11079,
+        "catalog": 56,
+        "literal": 0,
+        "path": "messages/pt-br/2-minute-breathing-exercise.json",
+        "publishable": true,
+        "replacement": 3,
+        "resolvedMessages": 98,
+        "sha256": "d1c11fbbd2b9b95e571b01d5b35dbc87ed8f352020ae5d093565234c821a92db"
+      }
+    },
+    "5-minute-breathing-exercise": {
+      "de-de": {
+        "alias": 30,
+        "bytes": 11953,
+        "catalog": 78,
+        "literal": 1,
+        "path": "messages/de-de/5-minute-breathing-exercise.json",
+        "publishable": true,
+        "replacement": 0,
+        "resolvedMessages": 109,
+        "sha256": "2350c2f1583ad60eeb83a18f9c96ee7267dc868c978b7a56569a94c7feefb2f0"
+      },
+      "es-es": {
+        "alias": 30,
+        "bytes": 12149,
+        "catalog": 78,
+        "literal": 1,
+        "path": "messages/es-es/5-minute-breathing-exercise.json",
+        "publishable": true,
+        "replacement": 0,
+        "resolvedMessages": 109,
+        "sha256": "a6c073a5339e430f26cdee5aa37382672465cd36ced6743830caae2a39b06704"
+      },
+      "fr-fr": {
+        "alias": 30,
+        "bytes": 13642,
+        "catalog": 78,
+        "literal": 1,
+        "path": "messages/fr-fr/5-minute-breathing-exercise.json",
+        "publishable": true,
+        "replacement": 0,
+        "resolvedMessages": 109,
+        "sha256": "7eb10b217953e077ad31f73933a70670ffffacf148f6fd59962406e1b7cfddb0"
+      },
+      "ja-jp": {
+        "alias": 30,
+        "bytes": 13350,
+        "catalog": 78,
+        "literal": 1,
+        "path": "messages/ja-jp/5-minute-breathing-exercise.json",
+        "publishable": true,
+        "replacement": 0,
+        "resolvedMessages": 109,
+        "sha256": "37da79a228288559a3ec0093ddca76c175fb8ae8ec23eac4a1a3218123f8ea62"
+      },
+      "pt-br": {
+        "alias": 30,
+        "bytes": 12636,
+        "catalog": 78,
+        "literal": 1,
+        "path": "messages/pt-br/5-minute-breathing-exercise.json",
+        "publishable": true,
+        "replacement": 0,
+        "resolvedMessages": 109,
+        "sha256": "0980ab466b0a2020d72ecc7da3cb0b296d78042882563b720f6c00d15a0a3146"
+      }
+    }
+  },
+  "expectedMessages": {
+    "1-minute-breathing-exercise": 96,
+    "2-minute-breathing-exercise": 98,
+    "5-minute-breathing-exercise": 109
+  },
+  "routes": [
+    "1-minute-breathing-exercise",
+    "2-minute-breathing-exercise",
+    "5-minute-breathing-exercise"
+  ],
+  "schemaVersion": 1
+}

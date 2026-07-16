@@ -13,6 +13,7 @@ import {
   createRuntimePhraseResolver,
   detectRuntimeLocale,
 } from "@/components/resonance/runtime-phrases";
+import type { ResonanceRouteClientMessages } from "@/i18n/content/remaining-pages/rw02-route-client/types";
 
 interface SessionCompletePromptProps {
   open: boolean;
@@ -27,6 +28,7 @@ interface SessionCompletePromptProps {
   activeMode: ModeName;
   locale?: string;
   modeDisplayName?: string;
+  routeClientMessages?: ResonanceRouteClientMessages;
 }
 
 export function SessionCompletePrompt({
@@ -42,6 +44,7 @@ export function SessionCompletePrompt({
   activeMode,
   locale: explicitLocale,
   modeDisplayName,
+  routeClientMessages,
 }: SessionCompletePromptProps) {
   const [locale, setLocale] = useState(() => explicitLocale ?? "en");
 
@@ -125,6 +128,7 @@ export function SessionCompletePrompt({
         accentColor={pattern.color}
         sessionSeconds={sessionSeconds || 90}
         layout={bannerUi}
+        messages={routeClientMessages}
       />
     );
   }

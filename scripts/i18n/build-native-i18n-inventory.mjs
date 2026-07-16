@@ -114,11 +114,6 @@ export const DEPENDENCY_GROUPS = Object.freeze([
         detail: "Detects the proxy-backed runtime locale before resolving conversion-prompt copy.",
       },
       {
-        file: "src/app/(site-en)/embed/embed-generator.tsx",
-        marker: "__MT_CONFIG__",
-        detail: "Detects proxy locale and constructs locale-prefixed iframe URLs.",
-      },
-      {
         file: "src/lib/share-utm.ts",
         marker: "mass-translate",
         detail:
@@ -262,6 +257,18 @@ export const DEPENDENCY_GROUPS = Object.freeze([
         marker: "legacy proxy",
         detail:
           "Pins the fail-closed serving-mode boundary so proxy, preview, and cutover builds cannot accidentally expose the wrong route set.",
+      },
+      {
+        file: "scripts/tests/native-i18n-rw03-embed.test.mjs",
+        marker: "__MT_CONFIG__",
+        detail:
+          "Proves the repository-owned embed generator no longer reads the legacy translation global or proxy locale state.",
+      },
+      {
+        file: "scripts/tests/native-i18n-rw04-trust-pages.test.mjs",
+        marker: "__MT_CONFIG__",
+        detail:
+          "Proves the repository-owned trust-page renderers do not inspect or mutate proxy-translated browser state.",
       },
       {
         file: "scripts/i18n/verify-native-preview-build.mjs",

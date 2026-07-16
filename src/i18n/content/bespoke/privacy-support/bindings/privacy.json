@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "route": "/privacy",
+  "catalog": [
+    {
+      "messagePath": "metadata.title",
+      "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+      "catalogRoute": "/privacy",
+      "occurrenceKey": "head:title",
+      "catalogSourceText": "Privacy Policy | Deep Breathing Exercises",
+      "reason": "The English layout appends the site-name title template; the localized layout needs the approved complete rendered title."
+    },
+    {
+      "messagePath": "metadata.socialTitle",
+      "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+      "catalogRoute": "/privacy",
+      "occurrenceKey": "head:meta:property:og:title",
+      "catalogSourceText": "Privacy Policy",
+      "reason": "Explicit metadata occurrence binding."
+    },
+    {
+      "messagePath": "metadata.socialDescription",
+      "reviewedSourceHash": "51e04dbeb12eb3c0e1387068be7629c79a2f7aa3f7cd5360ae4b5473136f0fc8",
+      "catalogRoute": "/privacy",
+      "occurrenceKey": "head:meta:property:og:description",
+      "catalogSourceText": "Privacy policy for Deep Breathing Exercises.",
+      "reason": "Explicit metadata occurrence binding."
+    },
+    {
+      "messagePath": "metadata.twitterTitle",
+      "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+      "catalogRoute": "/privacy",
+      "occurrenceKey": "head:meta:name:twitter:title",
+      "catalogSourceText": "Privacy Policy",
+      "reason": "Explicit metadata occurrence binding."
+    },
+    {
+      "messagePath": "metadata.twitterDescription",
+      "reviewedSourceHash": "51e04dbeb12eb3c0e1387068be7629c79a2f7aa3f7cd5360ae4b5473136f0fc8",
+      "catalogRoute": "/privacy",
+      "occurrenceKey": "head:meta:name:twitter:description",
+      "catalogSourceText": "Privacy policy for Deep Breathing Exercises.",
+      "reason": "Explicit metadata occurrence binding."
+    },
+    {
+      "messagePath": "breadcrumb.home",
+      "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+      "catalogRoute": "/languages",
+      "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+      "catalogSourceText": "Home",
+      "reason": "The breadcrumb label is JSON-LD-only on this route, so it is bound to the approved shared Home placement."
+    },
+    {
+      "messagePath": "hero.eyebrow",
+      "reviewedSourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+      "catalogRoute": "/privacy",
+      "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+      "catalogSourceText": "Deep Breathing Exercises",
+      "reason": "CSS uppercasing caused preservation-source case drift."
+    },
+    {
+      "messagePath": "hero.title",
+      "reviewedSourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+      "catalogRoute": "/privacy",
+      "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+      "catalogSourceText": "Privacy",
+      "reason": "Explicit visible heading binding."
+    },
+    {
+      "messagePath": "sections.collection.title",
+      "reviewedSourceHash": "bef04e58c3f6e2505a8e57cac0bca3c7c700952a2a4032a879bafcd2e99c9bb6",
+      "catalogRoute": "/privacy",
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+      "catalogSourceText": "What we collect",
+      "reason": "Explicit section heading binding."
+    },
+    {
+      "messagePath": "sections.thirdParty.title",
+      "reviewedSourceHash": "f4c0f0ab2af419afc9c23a49e3f8049d89fc30f1c83d2c77d3a4b6ff0d7c5db1",
+      "catalogRoute": "/privacy",
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:5",
+      "catalogSourceText": "Third-party links",
+      "reason": "Explicit current-section occurrence binding."
+    },
+    {
+      "messagePath": "sections.thirdParty.body",
+      "reviewedSourceHash": "1acb759ed5a85713e094fbdd4e58ad41f226433035a6f8c5e05420316a26e854",
+      "catalogRoute": "/privacy",
+      "occurrenceKey": "sel:p.mt-3:ctx:p:pos:5",
+      "catalogSourceText": "Some pages link to external research or resources. Those sites have their own privacy policies.",
+      "reason": "Explicit current-section occurrence binding."
+    },
+    {
+      "messagePath": "sections.contact.title",
+      "reviewedSourceHash": "2b5c3d26721ae9c350cf3009318b626f0fc8a90b4a2ac0ca8099c05aa849282e",
+      "catalogRoute": "/privacy",
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:6",
+      "catalogSourceText": "Contact",
+      "reason": "Explicit current-section occurrence binding."
+    },
+    {
+      "messagePath": "sections.contact.intro",
+      "reviewedSourceHash": "dbe73cbdc31d29a8b305099d530bdbd328ec14c5aaae5beab14e4b3986f6de1a",
+      "catalogRoute": "/privacy",
+      "occurrenceKey": "sel:p.mt-3:ctx:p:pos:6",
+      "catalogSourceText": "If you have questions about privacy, you can reach the creators via:",
+      "reason": "Explicit current-section occurrence binding."
+    },
+    {
+      "messagePath": "sections.contact.abiassiLabel",
+      "reviewedSourceHash": "19ebecf85239d19c75a1d5dc737d9afe820568f4a950a3b26e85d00c93261931",
+      "catalogRoute": "/privacy",
+      "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:0",
+      "catalogSourceText": "Abiassi",
+      "reason": "Explicit external-link label binding."
+    },
+    {
+      "messagePath": "sections.contact.darkmatterLabel",
+      "reviewedSourceHash": "46d9902e7bdf4e44566ba128ac4d2a0ed7f68f5ef925e9968d5574391ce16c79",
+      "catalogRoute": "/privacy",
+      "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:1",
+      "catalogSourceText": "Darkmatter AI Labs",
+      "reason": "Explicit external-link label binding."
+    },
+    {
+      "messagePath": "sections.contact.backLink",
+      "reviewedSourceHash": "a8e75b814e600400a66751578855d1f1148fbf3d59ac19b3f2e241932a1f8c5b",
+      "catalogRoute": "/privacy",
+      "occurrenceKey": "sel:a.text-sm.font-semibold:ctx:link:pos:0",
+      "catalogSourceText": "Back to the visualizer →",
+      "reason": "Explicit internal-link label binding."
+    }
+  ],
+  "gaps": [
+    {
+      "messagePath": "hero.lastUpdated",
+      "reviewedSourceHash": "1b70573e21817810dcb159db9a98b3fe1bddf07b05905a383ab2153b863a2bca",
+      "placementId": "a0101b73-09e7-45ff-a603-61599e530e96"
+    },
+    {
+      "messagePath": "sections.device.title",
+      "reviewedSourceHash": "5c99c329e170834e3acb8af54691f3c95f065489c02573e55e6f2218161d63c7",
+      "placementId": "b6e7325c-d55d-4fed-9967-f9f460f05b46"
+    },
+    {
+      "messagePath": "sections.device.body",
+      "reviewedSourceHash": "4595b885ab1b539a4bab43628e1a169be813f7cbbbd352772500495abfed9f65",
+      "placementId": "3e3145d4-5921-4996-938d-75690c554220"
+    }
+  ],
+  "mirrors": [
+    {
+      "messagePath": "metadata.imageAlt",
+      "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+      "sourceMessagePath": "metadata.socialTitle",
+      "reason": "The English image alt duplicates the social title."
+    },
+    {
+      "messagePath": "breadcrumb.current",
+      "reviewedSourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+      "sourceMessagePath": "hero.title",
+      "reason": "The breadcrumb current label duplicates the visible title."
+    }
+  ],
+  "staleGaps": []
+}

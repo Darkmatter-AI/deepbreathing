@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "replacements": [
+    {
+      "messageId": "related.label",
+      "reason": "Reviewed case-only source alias from the preserved catalog's `Related Guides` placement to the current English `Related guides` copy.",
+      "reviewedSourceHash": "1e5b36078e376cd4606154d914ba9eba7c5cb5aa0c5d35f1c86e4749c54d3279",
+      "sourceText": "Related guides",
+      "translations": {
+        "de-de": "Verwandte Anleitungen",
+        "es-es": "Guías relacionadas",
+        "fr-fr": "Guides associés",
+        "ja-jp": "関連ガイド",
+        "pt-br": "Guias Relacionados"
+      }
+    },
+    {
+      "messageId": "schema.articleDescription",
+      "reason": "Reviewed translation for the Article schema description, whose English semantics are distinct from the page metadata description.",
+      "reviewedSourceHash": "15e162d00bd38a20c1bab4ef3efac40909ee3930b2a90e52a50d1884474ebcf7",
+      "sourceText": "How to use 4-7-8 breathing to overcome insomnia naturally. Dr. Weil's technique that works in 2-5 minutes.",
+      "translations": {
+        "de-de": "So wenden Sie die 4-7-8-Atemtechnik an, um Schlaflosigkeit auf natürliche Weise zu überwinden. Dr. Weils Technik wirkt innerhalb von 2–5 Minuten.",
+        "es-es": "Cómo usar la respiración 4-7-8 para superar el insomnio de forma natural. La técnica del Dr. Weil funciona en 2-5 minutos.",
+        "fr-fr": "Comment utiliser la respiration 4-7-8 pour surmonter naturellement l'insomnie. La technique du Dr Weil agit en 2 à 5 minutes.",
+        "ja-jp": "4-7-8呼吸法で不眠を自然に改善する方法。2～5分で効果を発揮するワイル博士のテクニックです。",
+        "pt-br": "Como usar a respiração 4-7-8 para superar a insônia naturalmente. A técnica do Dr. Weil funciona em 2-5 minutos."
+      }
+    },
+    {
+      "messageId": "schema.faq.items.0.answer",
+      "reason": "Reviewed translation for the structured FAQ answer, preserving its source-specific quotation style independently of visible copy.",
+      "reviewedSourceHash": "37ccd03bb7fc79fc833213b7e84e8c2d6eb77816163b9f6f0d85674f3ec31383",
+      "sourceText": "Yes, 4-7-8 breathing is one of the most effective natural techniques for insomnia. The extended exhale (8 counts) activates your parasympathetic nervous system, slowing your heart rate and signaling your body it's safe to sleep. Dr. Andrew Weil, who popularized the technique, calls it a 'natural tranquilizer' that becomes more effective with regular practice.",
+      "translations": {
+        "de-de": "Ja, die 4-7-8-Atemtechnik ist eine der effektivsten natürlichen Techniken bei Schlaflosigkeit. Das verlängerte Ausatmen (8 Zählzeiten) aktiviert Ihr parasympathisches Nervensystem, verlangsamt Ihre Herzfrequenz und signalisiert Ihrem Körper, dass es sicher ist zu schlafen. Dr. Andrew Weil, der die Technik populär gemacht hat, nennt sie ein „natürliches Beruhigungsmittel“, das mit regelmäßiger Anwendung wirksamer wird.",
+        "es-es": "Sí, la respiración 4-7-8 es una de las técnicas naturales más eficaces para el insomnio. La exhalación prolongada (8 tiempos) activa tu sistema nervioso parasimpático, ralentizando tu ritmo cardíaco y señalando a tu cuerpo que es seguro dormir. El Dr. Andrew Weil, quien popularizó la técnica, la llama un “tranquilizante natural” que se vuelve más eficaz con la práctica regular.",
+        "fr-fr": "Oui, la respiration 4-7-8 est l'une des techniques naturelles les plus efficaces contre l'insomnie. L'expiration prolongée (8 temps) active votre système nerveux parasympathique, ralentissant votre rythme cardiaque et signalant à votre corps qu'il est sûr de dormir. Le Dr Andrew Weil, qui a popularisé cette technique, la qualifie de « tranquillisant naturel » qui devient plus efficace avec une pratique régulière.",
+        "ja-jp": "はい、4-7-8呼吸法は不眠症に最も効果的な自然療法の一つです。長い呼気（8カウント）が副交感神経を活性化させ、心拍数を遅くし、体が安全に眠れることを知らせます。このテクニックを広めたアンドリュー・ワイル博士は、定期的な実践によって効果が高まる「天然の精神安定剤」と呼んでいます。",
+        "pt-br": "Sim, a respiração 4-7-8 é uma das técnicas naturais mais eficazes para a insônia. A expiração prolongada (8 tempos) ativa seu sistema nervoso parassimpático, diminuindo a frequência cardíaca e sinalizando ao seu corpo que é seguro dormir. Dr. Andrew Weil, que popularizou a técnica, a chama de “tranquilizante natural” que se torna mais eficaz com a prática regular."
+      }
+    },
+    {
+      "messageId": "schema.faq.items.1.question",
+      "reason": "Reviewed translation for the structured FAQ question, which explicitly names 4-7-8 breathing unlike the shorter visible question.",
+      "reviewedSourceHash": "6aac07bd3f00e4f6562411d8a0d7b89ffdebc3a923dea8ec8f63c1dc302d18b0",
+      "sourceText": "How many cycles of 4-7-8 should I do for insomnia?",
+      "translations": {
+        "de-de": "Wie viele Zyklen der 4-7-8-Atemtechnik sollte ich bei Schlaflosigkeit machen?",
+        "es-es": "¿Cuántos ciclos de respiración 4-7-8 debo hacer para el insomnio?",
+        "fr-fr": "Combien de cycles de respiration 4-7-8 dois-je faire contre l'insomnie ?",
+        "ja-jp": "不眠症には4-7-8呼吸法を何サイクル行うべきですか？",
+        "pt-br": "Quantos ciclos da respiração 4-7-8 devo fazer para a insônia?"
+      }
+    },
+    {
+      "messageId": "schema.faq.items.1.answer",
+      "reason": "Reviewed translation for the structured FAQ answer, preserving the source's attribution of the eight-cycle recommendation to Dr. Weil.",
+      "reviewedSourceHash": "42b1f2e8361b1b3852d3d23f584402d74555635f964aa993a74e538250a7f636",
+      "sourceText": "Start with 4 cycles (about 1 minute) when you get into bed. Most people start feeling drowsy within 2-4 cycles. If you're still awake after 4 cycles, rest for 30 seconds and do another 4 cycles. Dr. Weil recommends not exceeding 8 cycles in one session when you're new to the technique.",
+      "translations": {
+        "de-de": "Beginnen Sie mit 4 Zyklen (ca. 1 Minute), wenn Sie ins Bett gehen. Die meisten Menschen werden innerhalb von 2-4 Zyklen schläfrig. Wenn Sie nach 4 Zyklen immer noch wach sind, ruhen Sie sich 30 Sekunden aus und machen Sie weitere 4 Zyklen. Dr. Weil empfiehlt, nicht mehr als 8 Zyklen in einer Sitzung zu machen, wenn Sie mit der Technik noch nicht vertraut sind.",
+        "es-es": "Empieza con 4 ciclos (aproximadamente 1 minuto) al acostarte. La mayoría empieza a sentir somnolencia en 2-4 ciclos. Si sigues despierto después de 4 ciclos, descansa 30 segundos y haz otros 4 ciclos. El Dr. Weil recomienda no superar los 8 ciclos en una sesión cuando estás empezando con la técnica.",
+        "fr-fr": "Commencez par 4 cycles (environ 1 minute) une fois au lit. La plupart des gens ressentent de la somnolence en 2 à 4 cycles. Si vous êtes toujours éveillé après 4 cycles, reposez-vous 30 secondes et faites 4 cycles supplémentaires. Le Dr Weil recommande de ne pas dépasser 8 cycles par séance lorsque vous débutez.",
+        "ja-jp": "ベッドに入ったら、まず4サイクル（約1分）から始めましょう。ほとんどの人は2～4サイクルで眠気を感じ始めます。4サイクル後もまだ眠れない場合は、30秒休憩してからさらに4サイクル行います。ワイル博士は、このテクニックに慣れていないうちは、1回のセッションで8サイクルを超えないよう勧めています。",
+        "pt-br": "Comece com 4 ciclos (cerca de 1 minuto) ao deitar. A maioria das pessoas começa a sentir sono em 2-4 ciclos. Se ainda estiver acordado após 4 ciclos, descanse por 30 segundos e faça mais 4 ciclos. O Dr. Weil recomenda não exceder 8 ciclos em uma sessão quando você ainda é iniciante na técnica."
+      }
+    },
+    {
+      "messageId": "schema.faq.items.2.answer",
+      "reason": "Reviewed translation for the structured FAQ answer, preserving its explicit statement that the mechanisms explain the sleep effect.",
+      "reviewedSourceHash": "0b24624bdfeb8766b79c3bddaa1466b0b616fd4fc4c0068398263c9b083748c0",
+      "sourceText": "4-7-8 works for sleep through three mechanisms: (1) the long exhale activates the vagus nerve, triggering relaxation, (2) the breath hold allows CO2 to build slightly, which has a calming effect, and (3) the counting gives your mind a single focus, interrupting racing thoughts that keep you awake.",
+      "translations": {
+        "de-de": "Die 4-7-8-Atemtechnik unterstützt den Schlaf durch drei Mechanismen: (1) Das lange Ausatmen aktiviert den Vagusnerv und löst Entspannung aus, (2) das Anhalten des Atems ermöglicht einen leichten CO2-Aufbau, der eine beruhigende Wirkung hat, und (3) das Zählen gibt Ihrem Geist einen einzigen Fokus und unterbricht rasende Gedanken, die Sie wach halten.",
+        "es-es": "La respiración 4-7-8 favorece el sueño a través de tres mecanismos: (1) la exhalación prolongada activa el nervio vago, provocando relajación; (2) la retención de la respiración permite que el CO2 se acumule ligeramente, lo que tiene un efecto calmante; y (3) el conteo le da a tu mente un único enfoque, interrumpiendo los pensamientos acelerados que te mantienen despierto.",
+        "fr-fr": "La respiration 4-7-8 favorise le sommeil grâce à trois mécanismes : (1) la longue expiration active le nerf vague, déclenchant la relaxation ; (2) la rétention du souffle permet une légère accumulation de CO2, qui a un effet calmant ; et (3) le comptage offre à l'esprit un point de concentration unique, interrompant les pensées qui vous tiennent éveillé.",
+        "ja-jp": "4-7-8呼吸法が睡眠に効果をもたらす仕組みは3つあります。(1) 長い呼気が迷走神経を活性化させ、リラックスを促す、(2) 息を止めることで二酸化炭素がわずかに蓄積され、鎮静効果をもたらす、(3) カウントすることで心が一点に集中し、覚醒状態を保つ思考の暴走を中断させる、という仕組みです。",
+        "pt-br": "A respiração 4-7-8 favorece o sono por meio de três mecanismos: (1) a expiração longa ativa o nervo vago, desencadeando o relaxamento, (2) a retenção da respiração permite um leve acúmulo de CO2, que tem um efeito calmante, e (3) a contagem dá à sua mente um foco único, interrompendo pensamentos acelerados que o mantêm acordado."
+      }
+    }
+  ]
+}
