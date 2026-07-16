@@ -2,7 +2,7 @@
 
 Started: 2026-07-15  
 Planning estimate: 20 to 30 focused engineering days  
-Current phase: the complete native production candidate passes the hosted browser checks, production-equivalent build, 275-artifact verifier, and 350-URL Googlebot matrix; search and error baselines plus an exact DNS rollback are recorded; production remains in `proxy` mode until the release commit is deployed and the apex override is removed
+Current phase: native locale serving is live on the production apex; the corrected cutover passes the 350-URL public crawler matrix, five-locale hydrated checks, auth smoke, DNS verification, and immediate error guardrail; the MassTranslate rollback path remains intact while the T+24, T+7, and T+28 observation gates run
 
 This is a living plan. Update checkboxes and the progress log as evidence changes. Estimates are planning ranges, not deadlines.
 
@@ -221,15 +221,15 @@ Deliverables:
 - [x] Run focused browser QA for all route families and locales. Hydrated desktop checks span every route class and all five locales; mobile checks cover visualizer, embed, holiday, and stats; interactive checks cover the embed generator and breathing controls. The preview-only Google OAuth limitation is documented and the production handoff is verified separately.
 - [~] Capture pre-cutover GSC indexing, search performance, Bing performance, crawl health, page speed, and error baselines. GSC, Bing, the 350-URL crawler sweep, rendered transfer weight, and Vercel errors are captured. Ahrefs remains the only stale external baseline because no signed-in session was available.
 - [x] Freeze unrelated routing and sitemap work during cutover. The release scope is migration parity only; `CUTOVER-RUNBOOK.md` lists the excluded improvement classes.
-- [ ] Change the edge routing so locale requests reach Next.js natively.
-- [ ] Verify the production URL matrix immediately after cutover.
-- [ ] Monitor errors, latency, hydration, indexing, canonicals, and crawler behavior through the observation window.
+- [x] Change the edge routing so locale requests reach Next.js natively. The first attempt correctly triggered rollback on an apex/www redirect loop; after attaching and verifying the apex on the project, the corrected cutover removed only the MassTranslate ALIAS and left the proxy service intact.
+- [x] Verify the production URL matrix immediately after cutover. The public apex passes 350 of 350 crawler checks with a 204 ms median and 520 ms p95, hydrated five-locale checks, and the signed-out session plus Google OAuth handoff.
+- [~] Monitor errors, latency, hydration, indexing, canonicals, and crawler behavior through the observation window. Immediate errors, latency, hydration, auth, canonical, hreflang, and crawler checks pass; T+24, T+7, and T+28 checkpoints remain.
 
 Gate 7:
 
-- [ ] All representative and high-traffic localized URLs return correct native HTML in production.
-- [ ] Error rate and latency stay within the agreed baseline guardrails.
-- [ ] No sitemap, canonical, hreflang, or redirect regression appears in the post-cutover crawl.
+- [x] All representative and high-traffic localized URLs return correct native HTML in production.
+- [~] Error rate and latency stay within the agreed baseline guardrails. The immediate 350-URL sweep is faster than the pre-cutover origin baseline and the first Vercel log comparison shows no new failing request; the time-based observation checks remain.
+- [x] No sitemap, canonical, hreflang, or redirect regression appears in the immediate post-cutover crawl.
 - [ ] GSC indexed translated pages remain above the pre-committed floor.
 - [ ] Product funnel guardrails show no material localized-session regression.
 - [ ] The observation window completes before the old proxy is decommissioned.

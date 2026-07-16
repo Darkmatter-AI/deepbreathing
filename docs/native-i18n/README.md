@@ -1,6 +1,6 @@
 # Native internationalization migration
 
-Status: approved and in progress; the original proof, complete 15-route `/breathe` family, and complete 19-route `/for` family are available in local `native-preview`; production remains on the proxy path  
+Status: native serving is live on the production apex as of 2026-07-16; all existing English and five-locale public paths remain unchanged, the immediate 350-URL and hydrated production gates pass, and the MassTranslate rollback path remains preserved through the observation window
 Started: 2026-07-15  
 Locales in scope: English, Spanish, Brazilian Portuguese, French, German, Japanese
 

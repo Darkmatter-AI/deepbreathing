@@ -1072,3 +1072,53 @@ Next:
 - Commit and push the release candidate.
 - Add `NATIVE_I18N_MODE=native` to Vercel Production, deploy the release commit, and verify the immutable deployment plus origin before DNS changes.
 - Remove only the recorded apex MassTranslate ALIAS, run the production browser and Googlebot matrices, and begin the observation schedule in `CUTOVER-RUNBOOK.md`.
+
+## 2026-07-16: Native production cutover completed after one safe rollback
+
+Status: Native serving is live on the production apex; immediate technical gates pass and the observation window is active
+
+Release:
+
+- Commit: `e6a6516ae5f022d29619d015b077cec970a90699`
+- Vercel deployment: `dpl_6X7Sq9RD76iVpzr78T8LfoN94VUq`
+- Production deployment URL: `https://deepbreathing-tmmj-hqrjbpmgl-darkmatterai.vercel.app`
+- Corrected cutover verified: 2026-07-16 13:53 WEST
+
+Deployment and pre-cutover proof:
+
+- Added `NATIVE_I18N_MODE=native` only to Vercel Production and deployed the release commit while the MassTranslate apex override remained active.
+- Vercel generated 433 of 433 pages, all deterministic translation preflight checks passed, and the unchanged 337-URL sitemap was submitted to IndexNow with status 200 as part of the normal production postbuild.
+- The native production origin passed 350 of 350 Googlebot checks before DNS changes with a 369 ms median and 733 ms p95 under twelve-request concurrency.
+- Hydrated origin checks passed on Spanish Ujjayi, Portuguese stats, French holiday, German embed, and Japanese visualizer. Each retained its exact language, localized title and H1, self-canonical, seven alternates, no proxy global, no Next error document, and zero console errors.
+- The origin signed-out session returned 200 and `null`; the Google sign-in endpoint returned 200 with an `accounts.google.com` handoff containing state and PKCE challenge values.
+
+First attempt and rollback:
+
+- Removed explicit apex record `rec_446e9b673d3eff0e30137ce3` at approximately 13:42 WEST.
+- Authoritative and public A records moved to Vercel, while this machine still briefly retained the prior Cloudflare AAAA response. That allowed a clear comparison between the old proxy and direct Vercel routing.
+- Direct Vercel requests exposed a release-blocking redirect loop: apex returned 307 to `www`, and `www` returned 308 to apex. Project-domain inspection showed that only `www.deepbreathingexercises.com` and `origin.deepbreathingexercises.com` were attached to the Vercel project.
+- The rollback condition fired immediately. The exact MassTranslate apex ALIAS was recreated and received the same record ID. Authoritative A and AAAA answers returned to the Cloudflare proxy, so production remained on the known path while the domain assignment was fixed.
+- The failed high-concurrency apex sweep during propagation hit the old proxy rather than native Vercel and produced proxy 503s. Those responses are not native application failures and stopped once the diagnostic sweep ended.
+
+Domain fix behind the restored proxy:
+
+- Added `deepbreathingexercises.com` to Vercel project `prj_zcWnwD9I2TinOJjvzFyamBJMLL8T` with no redirect target.
+- Added ownership TXT record `rec_ef98ba4196e3177bc51a3ec9` at `_vercel.deepbreathingexercises.com` and triggered Vercel project-domain verification.
+- Vercel reported the apex verified. Direct requests to `64.29.17.1`, `64.29.17.65`, `216.198.79.1`, and `216.198.79.65` all returned HTTP 200 with no redirect and native localized metadata.
+
+Corrected cutover evidence:
+
+- Removed only the MassTranslate apex ALIAS a second time. Authoritative, Cloudflare, and Google resolvers returned Vercel A records and no AAAA record.
+- The public apex passed 350 of 350 localized Googlebot checks: 280 sitemap URLs plus 70 localized embed children. Median response time was 204 ms and p95 was 520 ms under twelve-request concurrency, faster than the pre-cutover origin sweep.
+- Hydrated public-apex checks passed across all five locales with zero console errors. One Portuguese stats read initially reflected stale browser state, while simultaneous browser-UA, no-cache, Googlebot, and origin server responses were all correct; a fresh navigation returned the correct Portuguese page with seven alternates and self-canonical.
+- Public auth remained healthy: session and Google OAuth handoff both returned 200, with state and PKCE challenge present.
+- The first post-cutover Vercel error query returned one error-level entry, which was the successful 200 OAuth smoke carrying the existing Postgres SSL warning. No new 4xx, 5xx, hydration, locale-routing, or auth failure cluster appeared.
+- `vercel domains verify` reports `ok: true`, `misconfigured: false`, and the apex attached and verified. It recommends newer project-specific DNS targets, but the current Vercel-managed default ALIAS is valid; changing those targets is outside this parity cutover.
+
+Current state and next checks:
+
+- Production apex traffic is native. The MassTranslate service, tenant state, and rollback command remain preserved through the observation window.
+- T+24 technical check is due after 2026-07-17 13:53 WEST.
+- T+7 search, crawl, and funnel check is due 2026-07-23.
+- T+28 migration outcome review and proxy-decommission decision is due 2026-08-13.
+- Do not mix translation quality, keyword, claim, design, sitemap, auth-architecture, or proxy-cleanup improvements into the observation window.

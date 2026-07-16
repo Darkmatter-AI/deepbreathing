@@ -1949,7 +1949,7 @@ The synonyms are not being indexed or ranked. May need more prominent placement 
 
 **Hypothesis:** Replacing the MassTranslate reverse-proxy serving path with repository-owned native rendering will preserve the existing localized search contract and product behavior while removing translation-cache latency and a recurring source of routing complexity. Translation quality, keywords, claims, design, URLs, and sitemap membership are deliberately unchanged so the serving migration can be measured independently.
 
-**Pre-cutover state:** Production still uses the MassTranslate apex ALIAS. The release candidate is validated but not yet routed to production at the time of this entry.
+**Pre-cutover state:** Production still used the MassTranslate apex ALIAS when this baseline was captured. Native serving launched on 2026-07-16 and the corrected cutover was verified by 13:53 WEST.
 
 **GSC finalized baseline:** 2026-06-17 through 2026-07-14
 
@@ -1990,9 +1990,11 @@ The preceding localized window recorded 37 clicks and 1,233 impressions. Current
 - At T+28, localized GSC clicks or impressions falling more than 20% against an equivalent matured comparison window triggers route-level investigation before the proxy is decommissioned. Low-volume locale click changes alone are not sufficient evidence.
 - Sitemap membership and public URL paths must remain unchanged during the migration measurement window.
 
-**Measure after:** T+24 hours for technical parity, T+7 days for crawl/indexing early warning, and T+28 days for the search outcome. Replace the T-relative markers with calendar dates when production routing changes.
+**Launch evidence:** The first DNS attempt correctly rolled back after direct Vercel checks exposed an apex/www redirect loop caused by the apex not being assigned to the project. After adding and verifying the apex behind the restored proxy, the corrected cutover passed 350 of 350 public Googlebot checks with a 204 ms median and 520 ms p95, five-locale hydrated checks, public auth handoff, and the immediate Vercel error guardrail. URLs, sitemap membership, translations, and page behavior remained unchanged.
 
-**Status:** Prepared, not launched
+**Measure after:** 2026-07-17 after 13:53 WEST for T+24 technical parity, 2026-07-23 for T+7 crawl/indexing early warning, and 2026-08-13 for the T+28 search outcome.
+
+**Status:** Active observation
 
 ---
 

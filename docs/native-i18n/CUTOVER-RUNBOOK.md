@@ -15,9 +15,10 @@ Scope: route the existing English and five translated URL families to the reposi
 
 Record the release commit and new native production deployment here before changing DNS:
 
-- Release commit: `TBD`
-- Native production deployment: `TBD`
-- Cutover time in Europe/Lisbon: `TBD`
+- Release commit: `e6a6516ae5f022d29619d015b077cec970a90699`
+- Native production deployment: `dpl_6X7Sq9RD76iVpzr78T8LfoN94VUq`
+- Native production URL: `https://deepbreathing-tmmj-hqrjbpmgl-darkmatterai.vercel.app`
+- Corrected cutover verified: 2026-07-16 13:53 WEST
 
 ## Frozen scope
 
@@ -42,7 +43,7 @@ Known parity exceptions that are not migration regressions:
 - English embed metadata and the English homepage rendering warning are unchanged.
 - Dormant proxy compatibility reads remain in shared code, but native server output contains no `__MT_CONFIG__` and the full localized matrix works without it.
 
-## Current routing snapshot
+## Pre-cutover routing snapshot and current state
 
 The domain uses Vercel nameservers under the `amorimferreiras-projects` scope. One explicit apex ALIAS overrides the Vercel default:
 
@@ -55,6 +56,15 @@ created: 132 days before 2026-07-16
 ```
 
 The default apex and wildcard ALIAS target is `cname.vercel-dns-017.com.`. Deleting only the explicit record exposes the default Vercel apex routing. Do not delete or modify the default records, TXT records, mail records, CAA records, nameservers, the MassTranslate Worker, or its tenant configuration.
+
+Cutover outcome on 2026-07-16:
+
+- The first removal at approximately 13:42 WEST exposed a pre-existing Vercel domain-assignment gap: the project owned `www` and `origin`, but not the apex. Direct Vercel requests redirected apex to `www` while `www` redirected to apex.
+- The stop condition fired before public resolver caches had fully moved. The exact MassTranslate ALIAS was restored, producing the same record ID `rec_446e9b673d3eff0e30137ce3`, and authoritative A and AAAA answers returned to Cloudflare.
+- While the proxy was restored, the apex was added to project `prj_zcWnwD9I2TinOJjvzFyamBJMLL8T`, ownership TXT record `rec_ef98ba4196e3177bc51a3ec9` was added, and Vercel verified the apex without a redirect.
+- Direct checks against all four observed Vercel edge IPv4 addresses returned HTTP 200 with no redirect.
+- The explicit MassTranslate ALIAS was removed again. The corrected cutover passed the public 350-URL matrix, hydrated checks across all five locales, and the auth handoff check by 13:53 WEST.
+- Current state: apex routing is native on Vercel; the MassTranslate service and the exact rollback command remain intact, but the override record is absent.
 
 Read-only snapshot commands:
 
@@ -173,8 +183,8 @@ Do not roll back for a stale Ahrefs score alone. Confirm the affected URLs with 
 ## Observation window
 
 - T+0 to T+2 hours: repeat representative browser and Googlebot checks and inspect production errors every 15 to 30 minutes.
-- T+24 hours: repeat the 350-URL crawl, compare Vercel errors and latency, and test auth plus one interactive surface per locale.
-- T+7 days: refresh GSC indexing and performance, Bing performance, Ahrefs crawl health, and localized funnel signals.
-- T+28 days: complete the migration outcome comparison against the pre-cutover baseline.
+- T+24 hours, due 2026-07-17 after 13:53 WEST: repeat the 350-URL crawl, compare Vercel errors and latency, and test auth plus one interactive surface per locale.
+- T+7 days, due 2026-07-23: refresh GSC indexing and performance, Bing performance, Ahrefs crawl health, and localized funnel signals.
+- T+28 days, due 2026-08-13: complete the migration outcome comparison against the pre-cutover baseline.
 
 The old proxy remains intact until the T+28 review is accepted. Removing proxy code, cache warmers, credentials, DNS rollback knowledge, and operational workarounds is a later cleanup phase.
