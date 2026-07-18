@@ -119,6 +119,10 @@ export default function HomeScreen() {
   // running, active=false on pause/stop/complete). The tab is hidden while running.
   const [isSessionRunning, setIsSessionRunning] = useState(false);
 
+  // True while the webview's full-page settings covers the screen. Native
+  // overlays (mode drawer, account button) hide so they don't float above it.
+  const [settingsOpen, setSettingsOpen] = useState(false);
+
   // Latest active mode name from the persist stream (resonance_settings.mode).
   // Used to show a checkmark on the current mode in the sheet.
   const [activeModeName, setActiveModeName] = useState<string | null>(null);
@@ -262,6 +266,10 @@ export default function HomeScreen() {
         useNativeDriver: true,
       }).start();
       firePhaseHaptic();
+      return;
+    }
+    if (name === 'settings_open') {
+      setSettingsOpen(params?.open === true);
       return;
     }
     if (name === 'keep_awake') {
@@ -434,7 +442,7 @@ export default function HomeScreen() {
             onDismiss={handleDismissSummary}
           />
         )}
-        {!isSessionRunning && (
+        {!isSessionRunning && !settingsOpen && (
           <Pressable
             onPress={handleOpenAccount}
             accessibilityRole="button"
@@ -463,8 +471,9 @@ export default function HomeScreen() {
             )}
           </Pressable>
         )}
-        {/* MOB-5: Mode library pull-up tab — hidden while a session is running. */}
-        {!isSessionRunning && (
+        {/* MOB-5: Mode library pull-up tab — hidden while a session is running
+            and while the full-page settings covers the screen. */}
+        {!isSessionRunning && !settingsOpen && (
           <ModeLibrarySheet
             theme={theme}
             activeModeName={activeModeName}

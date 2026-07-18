@@ -1,8 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ActivityIndicator, Alert, Pressable, StyleSheet, Text, View } from 'react-native';
-import {
+import BottomSheet, {
   BottomSheetBackdrop,
-  BottomSheetModal,
   BottomSheetScrollView,
   type BottomSheetBackdropProps,
 } from '@gorhom/bottom-sheet';
@@ -46,7 +45,7 @@ function recentDays(count: number) {
 }
 
 export default function AccountSheet({ open, theme, user, practice, onClose }: Props) {
-  const sheetRef = useRef<BottomSheetModal>(null);
+  const sheetRef = useRef<BottomSheet>(null);
   const insets = useSafeAreaInsets();
   const [message, setMessage] = useState<string | null>(null);
   const dark = theme === 'dark';
@@ -60,9 +59,12 @@ export default function AccountSheet({ open, theme, user, practice, onClose }: P
   const days = useMemo(() => recentDays(28), []);
   const activeDays = useMemo(() => new Set(practice?.activeDays ?? []), [practice?.activeDays]);
 
+  // Plain BottomSheet (not BottomSheetModal): present() on the modal variant
+  // no-ops silently under reanimated 4 / RN new architecture, which left the
+  // account button doing nothing. ModeLibrarySheet uses this same pattern.
   useEffect(() => {
-    if (open) sheetRef.current?.present();
-    else sheetRef.current?.dismiss();
+    if (open) sheetRef.current?.snapToIndex(0);
+    else sheetRef.current?.close();
   }, [open]);
 
   const renderBackdrop = useCallback(
@@ -99,16 +101,18 @@ export default function AccountSheet({ open, theme, user, practice, onClose }: P
   };
 
   return (
-    <BottomSheetModal
+    <BottomSheet
       ref={sheetRef}
-      index={0}
+      index={-1}
       snapPoints={snapPoints}
+      animateOnMount={false}
       enableDynamicSizing={false}
       enablePanDownToClose
       enableContentPanningGesture
       enableHandlePanningGesture
       backdropComponent={renderBackdrop}
-      onDismiss={onClose}
+      onClose={onClose}
+      style={styles.sheet}
       backgroundStyle={{ backgroundColor: background, borderColor: border, borderWidth: StyleSheet.hairlineWidth }}
       handleIndicatorStyle={{ backgroundColor: dark ? '#745746' : '#c9aa94', width: 42 }}
     >
@@ -121,7 +125,7 @@ export default function AccountSheet({ open, theme, user, practice, onClose }: P
             <Text style={[styles.eyebrow, { color: subtle }]}>YOUR PRACTICE</Text>
             <Text style={[styles.title, { color: text }]}>{user ? 'Your practice' : 'Keep it with you'}</Text>
           </View>
-          <Pressable onPress={() => sheetRef.current?.dismiss()} accessibilityLabel="Close account sheet" style={styles.close}>
+          <Pressable onPress={() => sheetRef.current?.close()} accessibilityLabel="Close account sheet" style={styles.close}>
             <Text style={[styles.closeText, { color: subtle }]}>×</Text>
           </Pressable>
         </View>
@@ -202,7 +206,7 @@ export default function AccountSheet({ open, theme, user, practice, onClose }: P
               style={[styles.action, { borderColor: border }]}
               onPress={async () => {
                 await signOut();
-                sheetRef.current?.dismiss();
+                sheetRef.current?.close();
               }}
             >
               <Text style={[styles.actionText, { color: text }]}>Sign out</Text>
@@ -215,16 +219,17 @@ export default function AccountSheet({ open, theme, user, practice, onClose }: P
         ) : (
           <View style={styles.guestBody}>
             <Text style={[styles.bodyCopy, { color: subtle }]}>Continue to carry sessions, streaks, and settings between this phone and the web.</Text>
-            <AuthActions theme={theme} onAuthenticated={() => sheetRef.current?.dismiss()} />
+            <AuthActions theme={theme} onAuthenticated={() => sheetRef.current?.close()} />
             <Text style={[styles.privacy, { color: subtle }]}>Breathing always works without an account.</Text>
           </View>
         )}
       </BottomSheetScrollView>
-    </BottomSheetModal>
+    </BottomSheet>
   );
 }
 
 const styles = StyleSheet.create({
+  sheet: { zIndex: 100 },
   content: { paddingHorizontal: 24, paddingTop: 8 },
   header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', gap: 16 },
   headerCopy: { flex: 1, minWidth: 0 },

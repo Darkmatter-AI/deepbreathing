@@ -7,7 +7,6 @@ import Visualizer from './components/Visualizer';
 import ParticleBackground from './components/ParticleBackground';
 import SnowBackground from './components/SnowBackground';
 import { createRuntimePhraseResolver, RuntimePhraseKey } from './runtime-phrases';
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetClose } from './ui/sheet';
 import { seedLocalStorageFromSnapshot, shouldMirrorPersist } from '../../breathing/persist-seed';
 import {
   commitPracticeStats,
@@ -468,6 +467,13 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   useEffect(() => {
     onEvent?.('keep_awake', { active: isRunning });
   }, [isRunning, onEvent]);
+
+  // Settings visibility bridge: the native host layers its own overlays (mode
+  // drawer, account button) above this webview, so it must know when the
+  // full-page settings covers the screen to get them out of the way.
+  useEffect(() => {
+    onEvent?.('settings_open', { open: controlsOpen });
+  }, [controlsOpen, onEvent]);
 
   // Native background-audio handoff. sessionSeconds is intentionally read from
   // a ref so this only crosses the DOM bridge when playback state/config changes,
@@ -1245,29 +1251,29 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
         </div>
       )}
 
-      <Sheet open={controlsOpen} onOpenChange={setControlsOpen}>
-        <SheetContent side="right" className="bg-transparent shadow-none outline-none border-0 p-0">
-          <div
-            className="fixed right-4 top-4 z-50 w-[360px] max-w-[calc(100vw-2rem)] rounded-[32px] border border-border/70 bg-background/95 p-7 text-foreground shadow-[0_35px_90px_rgba(15,23,42,0.25)] backdrop-blur-2xl flex flex-col overflow-hidden sm:right-6 sm:top-20"
-            style={{
-              top: safeAreaInsets.top + 16,
-              right: safeAreaInsets.right + 16,
-              maxHeight: `calc(100vh - ${safeAreaInsets.top + safeAreaInsets.bottom + 32}px)`,
-            }}
-          >
-            <SheetHeader className="mb-6 text-left">
-              <div className="flex items-start justify-between">
-                <div>
-                  <SheetTitle className="text-xl font-semibold text-card-foreground">{getSafePhrase('ui.settings')}</SheetTitle>
-                  <p className="text-sm text-muted-foreground">Sound, pacing, and appearance.</p>
-                </div>
-                <SheetClose asChild>
-                  <button className="rounded-full p-1.5 text-muted-foreground hover:bg-card hover:text-card-foreground transition-colors">
-                    <X size={20} />
-                  </button>
-                </SheetClose>
+      {controlsOpen && (
+        <div
+          className="fixed inset-0 z-50 flex flex-col bg-background text-foreground"
+          style={{
+            paddingTop: safeAreaInsets.top + 20,
+            paddingBottom: safeAreaInsets.bottom + 16,
+            paddingLeft: safeAreaInsets.left + 24,
+            paddingRight: safeAreaInsets.right + 24,
+          }}
+        >
+            <div className="mb-6 flex items-start justify-between">
+              <div>
+                <h2 className="text-xl font-semibold text-card-foreground">{getSafePhrase('ui.settings')}</h2>
+                <p className="text-sm text-muted-foreground">Sound, pacing, and appearance.</p>
               </div>
-            </SheetHeader>
+              <button
+                onClick={() => setControlsOpen(false)}
+                className="rounded-full p-1.5 text-muted-foreground hover:bg-card hover:text-card-foreground transition-colors"
+                aria-label="Close settings"
+              >
+                <X size={20} />
+              </button>
+            </div>
             <div className="flex-1 space-y-6 overflow-y-auto pb-12 min-h-0">
               <div className="flex flex-col gap-4 rounded-2xl bg-card/70 p-4 shadow-inner dark:bg-card/30">
                 <div>
@@ -1328,9 +1334,8 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
                 </p>
               </div>
             </div>
-          </div>
-        </SheetContent>
-      </Sheet>
+        </div>
+      )}
     </div>
   );
 };
