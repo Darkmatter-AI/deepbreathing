@@ -475,6 +475,17 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     onEvent?.('settings_open', { open: controlsOpen });
   }, [controlsOpen, onEvent]);
 
+  // Keyboard escape hatch for the full-page settings — matters on the web
+  // target where the removed Radix Sheet used to provide it.
+  useEffect(() => {
+    if (!controlsOpen) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setControlsOpen(false);
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [controlsOpen]);
+
   // Native background-audio handoff. sessionSeconds is intentionally read from
   // a ref so this only crosses the DOM bridge when playback state/config changes,
   // not once per second.
@@ -1253,6 +1264,9 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
 
       {controlsOpen && (
         <div
+          role="dialog"
+          aria-modal="true"
+          aria-label={getSafePhrase('ui.settings')}
           className="fixed inset-0 z-50 flex flex-col bg-background text-foreground"
           style={{
             paddingTop: safeAreaInsets.top + 20,
