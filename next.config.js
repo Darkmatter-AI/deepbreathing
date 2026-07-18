@@ -20,6 +20,41 @@ const proxyLocalePrefixRedirects = nativeI18nMode === 'proxy'
     ]
   : [];
 
+// Native and native-preview modes: locale-aware redirects for legacy URLs and double-locale paths
+const nativeLocaleRedirects = nativeI18nMode === 'proxy'
+  ? []
+  : [
+      // Legacy /about/methodology redirects for all locales
+      {
+        source: '/:locale(es|pt|fr|de|ja)/about/methodology',
+        destination: '/:locale/about/editorial-policy',
+        permanent: true,
+      },
+      {
+        source: '/:locale(es|pt|fr|de|ja)/about/methodology/:path*',
+        destination: '/:locale/about/editorial-policy',
+        permanent: true,
+      },
+      // /languages is EN-only route; localized paths redirect to root
+      {
+        source: '/:locale(es|pt|fr|de|ja)/languages',
+        destination: '/languages',
+        permanent: true,
+      },
+      // Double-locale bare paths: /:outer/:inner -> /:outer/
+      {
+        source: '/:outer(es|pt|fr|de|ja)/:inner(es|pt|fr|de|ja)',
+        destination: '/:outer/',
+        permanent: true,
+      },
+      // Double-locale nested paths: /:outer/:inner/:rest* -> /:outer/:rest*
+      {
+        source: '/:outer(es|pt|fr|de|ja)/:inner(es|pt|fr|de|ja)/:rest*',
+        destination: '/:outer/:rest*',
+        permanent: true,
+      },
+    ];
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -228,6 +263,8 @@ const nextConfig = {
       // Proxy mode keeps the legacy locale stripping contract. Native preview
       // and native modes must let the App Router own recognized prefixes.
       ...proxyLocalePrefixRedirects,
+      // Native modes add locale-aware redirects for legacy URLs and double-locale paths.
+      ...nativeLocaleRedirects,
       // Single-page routes with no nested children — collapse stray sub-paths to root.
       {
         source: '/breathing-app/:path+',
