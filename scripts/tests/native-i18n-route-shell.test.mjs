@@ -41,8 +41,9 @@ async function loadRedirects(mode) {
 }
 
 function localeStrippingRedirects(redirects) {
+  const localePrefix = "/:locale(es|pt|fr|de|ja)";
   return redirects.filter(({ source }) =>
-    source.startsWith("/:locale(es|pt|fr|de|ja)"),
+    source === localePrefix || source === `${localePrefix}/:rest+`,
   );
 }
 
