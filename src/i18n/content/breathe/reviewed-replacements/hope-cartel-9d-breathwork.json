@@ -1,33 +1,6 @@
 {
   "replacements": [
     {
-      "currentCatalogValue": "Hope Cartel ist eine der größten 9D-Atemarbeitsmarken. So läuft eine Session ab, wo Sie sie finden, Kosten und die zugrunde liegende Atemtechnik – hier",
-      "locale": "de-de",
-      "reason": "The approved value is truncated after 'hier' and loses the final action.",
-      "replacement": "Hope Cartel ist eine der größten Anbietermarken für 9D Breathwork. Erfahren Sie, wie eine Sitzung abläuft, wo sie angeboten wird, was sie kostet und wie die zugrunde liegende Atemtechnik funktioniert. Probieren Sie sie hier kostenlos aus.",
-      "reviewedSourceHash": "c3b0922eac283c2f9b7c4660e8432f701cc3869b50ca3a8e3c842b8f2a57bd1f",
-      "sourcePath": "meta.description",
-      "sourceText": "Hope Cartel is one of the biggest 9D breathwork delivery brands. What a session looks like, where to find them, what it costs, and how the underlying breath works — try it free here."
-    },
-    {
-      "currentCatalogValue": "Hope Cartel, líder en breathwork 9D. Descubre sus sesiones, precios y la técnica de respiración. Prueba gratis el pranayama subyacente.",
-      "locale": "es-es",
-      "reason": "The approved value misclassifies conscious connected breathing as pranayama.",
-      "replacement": "Hope Cartel es una de las principales marcas que ofrece breathwork 9D. Descubre cómo es una sesión, dónde encontrarla, cuánto cuesta y cómo funciona la respiración subyacente. Pruébala gratis aquí.",
-      "reviewedSourceHash": "c3b0922eac283c2f9b7c4660e8432f701cc3869b50ca3a8e3c842b8f2a57bd1f",
-      "sourcePath": "meta.description",
-      "sourceText": "Hope Cartel is one of the biggest 9D breathwork delivery brands. What a session looks like, where to find them, what it costs, and how the underlying breath works — try it free here."
-    },
-    {
-      "currentCatalogValue": "Hope Cartel, marque majeure de respiration 9D. Découvrez les séances, prix, lieux et le fonctionnement de la respiration. Essayez gratuitement cet",
-      "locale": "fr-fr",
-      "reason": "The approved value is truncated after a demonstrative determiner.",
-      "replacement": "Hope Cartel est l'une des principales marques proposant le breathwork 9D. Découvrez le déroulement d'une séance, où la trouver, son coût et le fonctionnement de la respiration sous-jacente. Essayez-la gratuitement ici.",
-      "reviewedSourceHash": "c3b0922eac283c2f9b7c4660e8432f701cc3869b50ca3a8e3c842b8f2a57bd1f",
-      "sourcePath": "meta.description",
-      "sourceText": "Hope Cartel is one of the biggest 9D breathwork delivery brands. What a session looks like, where to find them, what it costs, and how the underlying breath works — try it free here."
-    },
-    {
       "currentCatalogValue": "Guía de Hope Cartel, comunidad australiana de breathwork 9D de Garry Wright. Incluye un guía de respiración gratuito para el protocolo de pranayama.",
       "locale": "es-es",
       "reason": "The approved value misclassifies the breath protocol as pranayama.",

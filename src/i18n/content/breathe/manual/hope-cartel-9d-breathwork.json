@@ -77,6 +77,20 @@
       }
     },
     {
+      "messageId": "meta.description",
+      "reason": "Source description rewritten for the 2026-07-18 reviews-intent SEO experiment; prior reviewed replacements for the old source re-authored here for the new text.",
+      "reviewedSourceHash": "7c6a1627c63a123999f88d75766e25216c8859ce587c340824c63b9f9510a7d1",
+      "scope": "content",
+      "sourceText": "Hope Cartel reviews, pricing, and what a 9D breathwork session is really like. Independent guide to Australia's biggest 9D delivery brand — plus the breath itself, free.",
+      "translations": {
+        "de-de": "Hope Cartel: Erfahrungsberichte, Preise und wie eine 9D-Breathwork-Session wirklich abläuft. Unabhängiger Guide zu Australiens größter 9D-Anbietermarke – plus die Atemtechnik selbst, kostenlos.",
+        "es-es": "Opiniones sobre Hope Cartel, precios y cómo es realmente una sesión de breathwork 9D. Guía independiente de la mayor marca de 9D de Australia, más la propia respiración, gratis.",
+        "fr-fr": "Avis sur Hope Cartel, tarifs et déroulement réel d'une séance de breathwork 9D. Guide indépendant de la plus grande marque 9D d'Australie, plus la respiration elle-même, gratuitement.",
+        "ja-jp": "Hope Cartelの口コミ・料金・9Dブレスワークのセッションの実際を解説。オーストラリア最大級の9D提供ブランドの独立ガイド。呼吸法そのものは無料で試せます。",
+        "pt-br": "Avaliações da Hope Cartel, preços e como é de verdade uma sessão de 9D breathwork. Guia independente da maior marca de 9D da Austrália — e a própria respiração, grátis."
+      }
+    },
+    {
       "messageId": "body[0].content",
       "reason": "global-catalog-normalized-miss",
       "reviewedSourceHash": "4dd77c1ed89efd8ea3f1c1eba684b3ed08406ae2d554729d6f8e72fbf510d460",
@@ -105,7 +119,7 @@
       }
     },
     {
-      "messageId": "body[3].content",
+      "messageId": "body[4].content",
       "reason": "global-catalog-normalized-miss",
       "reviewedSourceHash": "c2c1f89778bb277ab7b5eeb0ea1d0c820513aafea6f4e2f10380f8792965854a",
       "scope": "content",

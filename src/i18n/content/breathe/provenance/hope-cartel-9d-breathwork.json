@@ -285,21 +285,31 @@
           "status": "route-catalog-exact"
         },
         "body[3].content": {
+          "sourceHash": "5468c916e42a93f850b4a3d7d12345099fd1a7169459c6e4b3b7b10e27ab54d5",
+          "sourceText": "We're independent — not affiliated with Hope Cartel — so treat this as a map to the real reviews rather than a verdict. The most useful places to read first-hand accounts: the Google reviews on the Hope HQ venue in Melton, the comment threads under Hope Cartel's own TikTok and Instagram posts, and Australian breathwork groups on Facebook. Publicly posted attendee accounts tend to repeat the same themes: the emotional release is far more intense than people expect from \"a breathing class\", the group atmosphere is welcoming to first-timers, and Garry Wright's facilitation and recovery story are a big part of why people come back. The recurring caveats are the flip side of the same coin — the intensity catches some first-timers off guard (tetany, crying, feeling wiped out afterward is normal for this style of breathwork), and popular sessions book out. If you're weighing it up, read the venue reviews for the session you'd actually attend (Melton HQ vs a touring event in Sydney, Brisbane, or Perth), and skim the session walkthrough above so the intensity isn't a surprise.",
+          "status": "global-catalog-normalized-miss"
+        },
+        "body[3].heading": {
+          "sourceHash": "8bc22ddaba422e56a225107dc759246d00e13f706756d6fd31e224b60bb40e30",
+          "sourceText": "Hope Cartel reviews: what attendees say",
+          "status": "global-catalog-normalized-miss"
+        },
+        "body[4].content": {
           "sourceHash": "c2c1f89778bb277ab7b5eeb0ea1d0c820513aafea6f4e2f10380f8792965854a",
           "sourceText": "The breath itself — what makes a Hope Cartel session physiologically effective — is conscious connected breathing. It's not new: same protocol as the [Wim Hof Method](/breathe/wim-hof) activating phase, similar to Stanislav Grof's Holotropic Breathwork from the 1970s, similar to rebirthing traditions. Continuous mouth breathing, no pause at top or bottom, into the belly first then the chest. Triggers respiratory alkalosis, tetany (tingling), and altered states. The nine-layer audio stack on top is what 9D Breathwork as a format adds — the breath itself is universal and free.",
           "status": "repo-reviewed-manual"
         },
-        "body[3].heading": {
+        "body[4].heading": {
           "sourceHash": "8919fea4643f1f2618ec53bf24ba84a3187a0c11cf3e4182d22267fb8dcccfff",
           "sourceText": "How the breath underneath works",
           "status": "route-catalog-exact"
         },
-        "body[4].content": {
+        "body[5].content": {
           "sourceHash": "470675d7d5bcaca371697117dfa15c9c7ffb0c42a531e3a6208d7053ea720c91",
           "sourceText": "If you're curious about the physiological experience before paying for a Hope Cartel session, you can practice the underlying conscious connected breath right here using our guided pacer (set to the Wim Hof rhythm — the closest pre-built analog). Two to five minutes is plenty for a first try. The full 45-minute active phase belongs in a guided session, not solo — but the short version gives you a real sense of the sensation.",
           "status": "route-catalog-exact"
         },
-        "body[4].heading": {
+        "body[5].heading": {
           "sourceHash": "6f7e5f62de1707f627ce8c70228f8520226a0d8ee58846177d38359075c78a77",
           "sourceText": "Try the breath now (free)",
           "status": "route-catalog-exact"
@@ -310,9 +320,9 @@
           "status": "route-catalog-exact"
         },
         "faqs[0].question": {
-          "sourceHash": "5ffee7399996ab7e8b4385fe2e10a5fdf1256de828566f0633d9890d98c20d3b",
-          "sourceText": "What is Hope Cartel 9D breathwork?",
-          "status": "route-catalog-exact"
+          "sourceHash": "57e66654f533c61631c1efcb5f474d3ef5b91ccd0970d7daec57ff108309b3ba",
+          "sourceText": "What is Hope Cartel?",
+          "status": "global-catalog-normalized-miss"
         },
         "faqs[1].answer": {
           "sourceHash": "96693ebe912c2d3904fcd2402e7e289b7486e8b8736af4dbc90f1abcd26e60c9",
@@ -335,31 +345,51 @@
           "status": "route-catalog-exact"
         },
         "faqs[3].answer": {
+          "sourceHash": "4ef2208eaa53a4db62ffdcfe9bad23811ee0a54fd4e4e9d3e591842d841ba74f",
+          "sourceText": "First-hand reviews live on the Hope HQ Melton Google listing, in comments under Hope Cartel's TikTok and Instagram posts, and in Australian breathwork Facebook groups. Common themes in public attendee accounts: the emotional release is more intense than expected, the group container feels welcoming to first-timers, and Garry Wright's facilitation is the draw. Common caveats: the intensity (tetany, crying, post-session fatigue) surprises people who expected a relaxation class, and popular sessions book out. We're independent of Hope Cartel — read the reviews for the specific venue or event you'd attend.",
+          "status": "global-catalog-normalized-miss"
+        },
+        "faqs[3].question": {
+          "sourceHash": "76e0784ee99009223f4f94deb082f90092d582e940e9391d5816a77abf0fd8cf",
+          "sourceText": "What do Hope Cartel reviews say?",
+          "status": "global-catalog-normalized-miss"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "9fb1b080b296ce54d43b4176d3dafc42d4ab43aede9f4aa36a65cb3b407c00e8",
+          "sourceText": "Hope Cartel's home venue is in Melton, Victoria, but they run touring events across Australian capital cities, and Perth has appeared on past tour schedules alongside Sydney, Brisbane, and Adelaide. Dates change, so check the current schedule at hopecartel.com.au. If no Perth date is listed, their online group sessions are the alternative — or search for other certified 9D Breathwork facilitators in WA, since the format is licensed to many delivery brands.",
+          "status": "global-catalog-normalized-miss"
+        },
+        "faqs[4].question": {
+          "sourceHash": "bf869aff7e9b2aad05caf725aa200801444e17c125301cdc7154342f80cfa16b",
+          "sourceText": "Does Hope Cartel run sessions in Perth?",
+          "status": "global-catalog-normalized-miss"
+        },
+        "faqs[5].answer": {
           "sourceHash": "4ce4fad4c09ad72709f83af763d08aa288830721fdf90dbb24c164a9d0426224",
           "sourceText": "No. 9D Breathwork is a licensed format created by Brian Kelly (9dbreathwork.com), with 1,300+ certified facilitators worldwide. Hope Cartel is one of those delivery brands — they run the format but don't own it. Other 9D delivery brands exist globally; Hope Cartel is one of the largest in the English-speaking market.",
           "status": "route-catalog-exact"
         },
-        "faqs[3].question": {
+        "faqs[5].question": {
           "sourceHash": "66b20a065b7985a78bf83fb73e3625d2149abe9393481c789b0c5965add85fc4",
           "sourceText": "Is Hope Cartel the same as 9D Breathwork the brand?",
           "status": "route-catalog-exact"
         },
-        "faqs[4].answer": {
+        "faqs[6].answer": {
           "sourceHash": "8963b0130dd063c456a51bc8dd63de7d9ddf0a12c1f1b72131773507073d64c0",
           "sourceText": "Their digital \"Breathe Bundle\" audio package is designed for at-home practice. The breath protocol itself — conscious connected breathing — is universal and free; you can practice it right now with our guided pacer above. What you can't replicate at home is the live facilitator presence and group container of an in-person session.",
           "status": "route-catalog-exact"
         },
-        "faqs[4].question": {
+        "faqs[6].question": {
           "sourceHash": "d98de86cce52d4903c12583621dc7f60ed891d3d87d3a0091956788f8280049e",
           "sourceText": "Can I do Hope Cartel breathwork at home?",
           "status": "route-catalog-exact"
         },
-        "faqs[5].answer": {
+        "faqs[7].answer": {
           "sourceHash": "34724af4ad6c607f0bd97005b754acb65414e36dac7d64ec866ac52797c7b148",
           "sourceText": "The breath protocol is the same conscious connected breathing practiced for 50+ years across rebirthing and holotropic traditions — broadly safe for healthy adults but intense (tetany, dizziness, emotional release are common). Contraindicated in pregnancy, epilepsy, cardiac conditions, glaucoma, recent surgery, and unmanaged asthma. Hope Cartel facilitators screen attendees before sessions; mention any of these conditions when booking.",
           "status": "route-catalog-exact"
         },
-        "faqs[5].question": {
+        "faqs[7].question": {
           "sourceHash": "ae643d020f80477c28337ec25d6a827dfe37641785da4739448eaafb62ba2c63",
           "sourceText": "Is Hope Cartel breathwork safe?",
           "status": "route-catalog-exact"
@@ -495,9 +525,9 @@
           "status": "route-catalog-exact"
         },
         "meta.description": {
-          "sourceHash": "c3b0922eac283c2f9b7c4660e8432f701cc3869b50ca3a8e3c842b8f2a57bd1f",
-          "sourceText": "Hope Cartel is one of the biggest 9D breathwork delivery brands. What a session looks like, where to find them, what it costs, and how the underlying breath works — try it free here.",
-          "status": "repo-reviewed-replacement"
+          "sourceHash": "7c6a1627c63a123999f88d75766e25216c8859ce587c340824c63b9f9510a7d1",
+          "sourceText": "Hope Cartel reviews, pricing, and what a 9D breathwork session is really like. Independent guide to Australia's biggest 9D delivery brand — plus the breath itself, free.",
+          "status": "repo-reviewed-manual"
         },
         "meta.ogDescription": {
           "sourceHash": "5e24b54f01d0ea8959b5617a4601bd1bee4135950ade5d25d8c53ea8cf8b2eed",
@@ -505,12 +535,12 @@
           "status": "route-catalog-head-occurrence"
         },
         "meta.ogTitle": {
-          "sourceHash": "fadf918ba998ae08c2762797e51ea19f970976a653be3f26564724f1d41c3a91",
+          "sourceHash": "eb9b286f86895e9298656e1c4d17fb0f8551ed14e4c942e00c834d2aaf722d27",
           "sourceText": "Hope Cartel 9D Breathwork: Sessions, Pricing, What to Expect",
           "status": "route-catalog-head-occurrence"
         },
         "meta.title": {
-          "sourceHash": "fadf918ba998ae08c2762797e51ea19f970976a653be3f26564724f1d41c3a91",
+          "sourceHash": "eb9b286f86895e9298656e1c4d17fb0f8551ed14e4c942e00c834d2aaf722d27",
           "sourceText": "Hope Cartel 9D Breathwork: Sessions, Pricing, What to Expect | Deep Breathing Exercises",
           "status": "route-catalog-head-occurrence"
         },
@@ -946,21 +976,31 @@
           "status": "route-catalog-exact"
         },
         "body[3].content": {
+          "sourceHash": "5468c916e42a93f850b4a3d7d12345099fd1a7169459c6e4b3b7b10e27ab54d5",
+          "sourceText": "We're independent — not affiliated with Hope Cartel — so treat this as a map to the real reviews rather than a verdict. The most useful places to read first-hand accounts: the Google reviews on the Hope HQ venue in Melton, the comment threads under Hope Cartel's own TikTok and Instagram posts, and Australian breathwork groups on Facebook. Publicly posted attendee accounts tend to repeat the same themes: the emotional release is far more intense than people expect from \"a breathing class\", the group atmosphere is welcoming to first-timers, and Garry Wright's facilitation and recovery story are a big part of why people come back. The recurring caveats are the flip side of the same coin — the intensity catches some first-timers off guard (tetany, crying, feeling wiped out afterward is normal for this style of breathwork), and popular sessions book out. If you're weighing it up, read the venue reviews for the session you'd actually attend (Melton HQ vs a touring event in Sydney, Brisbane, or Perth), and skim the session walkthrough above so the intensity isn't a surprise.",
+          "status": "global-catalog-normalized-miss"
+        },
+        "body[3].heading": {
+          "sourceHash": "8bc22ddaba422e56a225107dc759246d00e13f706756d6fd31e224b60bb40e30",
+          "sourceText": "Hope Cartel reviews: what attendees say",
+          "status": "global-catalog-normalized-miss"
+        },
+        "body[4].content": {
           "sourceHash": "c2c1f89778bb277ab7b5eeb0ea1d0c820513aafea6f4e2f10380f8792965854a",
           "sourceText": "The breath itself — what makes a Hope Cartel session physiologically effective — is conscious connected breathing. It's not new: same protocol as the [Wim Hof Method](/breathe/wim-hof) activating phase, similar to Stanislav Grof's Holotropic Breathwork from the 1970s, similar to rebirthing traditions. Continuous mouth breathing, no pause at top or bottom, into the belly first then the chest. Triggers respiratory alkalosis, tetany (tingling), and altered states. The nine-layer audio stack on top is what 9D Breathwork as a format adds — the breath itself is universal and free.",
           "status": "repo-reviewed-manual"
         },
-        "body[3].heading": {
+        "body[4].heading": {
           "sourceHash": "8919fea4643f1f2618ec53bf24ba84a3187a0c11cf3e4182d22267fb8dcccfff",
           "sourceText": "How the breath underneath works",
           "status": "route-catalog-exact"
         },
-        "body[4].content": {
+        "body[5].content": {
           "sourceHash": "470675d7d5bcaca371697117dfa15c9c7ffb0c42a531e3a6208d7053ea720c91",
           "sourceText": "If you're curious about the physiological experience before paying for a Hope Cartel session, you can practice the underlying conscious connected breath right here using our guided pacer (set to the Wim Hof rhythm — the closest pre-built analog). Two to five minutes is plenty for a first try. The full 45-minute active phase belongs in a guided session, not solo — but the short version gives you a real sense of the sensation.",
           "status": "route-catalog-exact"
         },
-        "body[4].heading": {
+        "body[5].heading": {
           "sourceHash": "6f7e5f62de1707f627ce8c70228f8520226a0d8ee58846177d38359075c78a77",
           "sourceText": "Try the breath now (free)",
           "status": "route-catalog-exact"
@@ -971,9 +1011,9 @@
           "status": "route-catalog-exact"
         },
         "faqs[0].question": {
-          "sourceHash": "5ffee7399996ab7e8b4385fe2e10a5fdf1256de828566f0633d9890d98c20d3b",
-          "sourceText": "What is Hope Cartel 9D breathwork?",
-          "status": "route-catalog-exact"
+          "sourceHash": "57e66654f533c61631c1efcb5f474d3ef5b91ccd0970d7daec57ff108309b3ba",
+          "sourceText": "What is Hope Cartel?",
+          "status": "global-catalog-normalized-miss"
         },
         "faqs[1].answer": {
           "sourceHash": "96693ebe912c2d3904fcd2402e7e289b7486e8b8736af4dbc90f1abcd26e60c9",
@@ -996,31 +1036,51 @@
           "status": "route-catalog-exact"
         },
         "faqs[3].answer": {
+          "sourceHash": "4ef2208eaa53a4db62ffdcfe9bad23811ee0a54fd4e4e9d3e591842d841ba74f",
+          "sourceText": "First-hand reviews live on the Hope HQ Melton Google listing, in comments under Hope Cartel's TikTok and Instagram posts, and in Australian breathwork Facebook groups. Common themes in public attendee accounts: the emotional release is more intense than expected, the group container feels welcoming to first-timers, and Garry Wright's facilitation is the draw. Common caveats: the intensity (tetany, crying, post-session fatigue) surprises people who expected a relaxation class, and popular sessions book out. We're independent of Hope Cartel — read the reviews for the specific venue or event you'd attend.",
+          "status": "global-catalog-normalized-miss"
+        },
+        "faqs[3].question": {
+          "sourceHash": "76e0784ee99009223f4f94deb082f90092d582e940e9391d5816a77abf0fd8cf",
+          "sourceText": "What do Hope Cartel reviews say?",
+          "status": "global-catalog-normalized-miss"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "9fb1b080b296ce54d43b4176d3dafc42d4ab43aede9f4aa36a65cb3b407c00e8",
+          "sourceText": "Hope Cartel's home venue is in Melton, Victoria, but they run touring events across Australian capital cities, and Perth has appeared on past tour schedules alongside Sydney, Brisbane, and Adelaide. Dates change, so check the current schedule at hopecartel.com.au. If no Perth date is listed, their online group sessions are the alternative — or search for other certified 9D Breathwork facilitators in WA, since the format is licensed to many delivery brands.",
+          "status": "global-catalog-normalized-miss"
+        },
+        "faqs[4].question": {
+          "sourceHash": "bf869aff7e9b2aad05caf725aa200801444e17c125301cdc7154342f80cfa16b",
+          "sourceText": "Does Hope Cartel run sessions in Perth?",
+          "status": "global-catalog-normalized-miss"
+        },
+        "faqs[5].answer": {
           "sourceHash": "4ce4fad4c09ad72709f83af763d08aa288830721fdf90dbb24c164a9d0426224",
           "sourceText": "No. 9D Breathwork is a licensed format created by Brian Kelly (9dbreathwork.com), with 1,300+ certified facilitators worldwide. Hope Cartel is one of those delivery brands — they run the format but don't own it. Other 9D delivery brands exist globally; Hope Cartel is one of the largest in the English-speaking market.",
           "status": "route-catalog-exact"
         },
-        "faqs[3].question": {
+        "faqs[5].question": {
           "sourceHash": "66b20a065b7985a78bf83fb73e3625d2149abe9393481c789b0c5965add85fc4",
           "sourceText": "Is Hope Cartel the same as 9D Breathwork the brand?",
           "status": "route-catalog-exact"
         },
-        "faqs[4].answer": {
+        "faqs[6].answer": {
           "sourceHash": "8963b0130dd063c456a51bc8dd63de7d9ddf0a12c1f1b72131773507073d64c0",
           "sourceText": "Their digital \"Breathe Bundle\" audio package is designed for at-home practice. The breath protocol itself — conscious connected breathing — is universal and free; you can practice it right now with our guided pacer above. What you can't replicate at home is the live facilitator presence and group container of an in-person session.",
           "status": "route-catalog-exact"
         },
-        "faqs[4].question": {
+        "faqs[6].question": {
           "sourceHash": "d98de86cce52d4903c12583621dc7f60ed891d3d87d3a0091956788f8280049e",
           "sourceText": "Can I do Hope Cartel breathwork at home?",
           "status": "route-catalog-exact"
         },
-        "faqs[5].answer": {
+        "faqs[7].answer": {
           "sourceHash": "34724af4ad6c607f0bd97005b754acb65414e36dac7d64ec866ac52797c7b148",
           "sourceText": "The breath protocol is the same conscious connected breathing practiced for 50+ years across rebirthing and holotropic traditions — broadly safe for healthy adults but intense (tetany, dizziness, emotional release are common). Contraindicated in pregnancy, epilepsy, cardiac conditions, glaucoma, recent surgery, and unmanaged asthma. Hope Cartel facilitators screen attendees before sessions; mention any of these conditions when booking.",
           "status": "route-catalog-exact"
         },
-        "faqs[5].question": {
+        "faqs[7].question": {
           "sourceHash": "ae643d020f80477c28337ec25d6a827dfe37641785da4739448eaafb62ba2c63",
           "sourceText": "Is Hope Cartel breathwork safe?",
           "status": "route-catalog-exact"
@@ -1156,9 +1216,9 @@
           "status": "route-catalog-exact"
         },
         "meta.description": {
-          "sourceHash": "c3b0922eac283c2f9b7c4660e8432f701cc3869b50ca3a8e3c842b8f2a57bd1f",
-          "sourceText": "Hope Cartel is one of the biggest 9D breathwork delivery brands. What a session looks like, where to find them, what it costs, and how the underlying breath works — try it free here.",
-          "status": "repo-reviewed-replacement"
+          "sourceHash": "7c6a1627c63a123999f88d75766e25216c8859ce587c340824c63b9f9510a7d1",
+          "sourceText": "Hope Cartel reviews, pricing, and what a 9D breathwork session is really like. Independent guide to Australia's biggest 9D delivery brand — plus the breath itself, free.",
+          "status": "repo-reviewed-manual"
         },
         "meta.ogDescription": {
           "sourceHash": "5e24b54f01d0ea8959b5617a4601bd1bee4135950ade5d25d8c53ea8cf8b2eed",
@@ -1166,12 +1226,12 @@
           "status": "repo-reviewed-replacement"
         },
         "meta.ogTitle": {
-          "sourceHash": "fadf918ba998ae08c2762797e51ea19f970976a653be3f26564724f1d41c3a91",
+          "sourceHash": "eb9b286f86895e9298656e1c4d17fb0f8551ed14e4c942e00c834d2aaf722d27",
           "sourceText": "Hope Cartel 9D Breathwork: Sessions, Pricing, What to Expect",
           "status": "route-catalog-head-occurrence"
         },
         "meta.title": {
-          "sourceHash": "fadf918ba998ae08c2762797e51ea19f970976a653be3f26564724f1d41c3a91",
+          "sourceHash": "eb9b286f86895e9298656e1c4d17fb0f8551ed14e4c942e00c834d2aaf722d27",
           "sourceText": "Hope Cartel 9D Breathwork: Sessions, Pricing, What to Expect | Deep Breathing Exercises",
           "status": "route-catalog-head-occurrence"
         },
@@ -1607,21 +1667,31 @@
           "status": "route-catalog-exact"
         },
         "body[3].content": {
+          "sourceHash": "5468c916e42a93f850b4a3d7d12345099fd1a7169459c6e4b3b7b10e27ab54d5",
+          "sourceText": "We're independent — not affiliated with Hope Cartel — so treat this as a map to the real reviews rather than a verdict. The most useful places to read first-hand accounts: the Google reviews on the Hope HQ venue in Melton, the comment threads under Hope Cartel's own TikTok and Instagram posts, and Australian breathwork groups on Facebook. Publicly posted attendee accounts tend to repeat the same themes: the emotional release is far more intense than people expect from \"a breathing class\", the group atmosphere is welcoming to first-timers, and Garry Wright's facilitation and recovery story are a big part of why people come back. The recurring caveats are the flip side of the same coin — the intensity catches some first-timers off guard (tetany, crying, feeling wiped out afterward is normal for this style of breathwork), and popular sessions book out. If you're weighing it up, read the venue reviews for the session you'd actually attend (Melton HQ vs a touring event in Sydney, Brisbane, or Perth), and skim the session walkthrough above so the intensity isn't a surprise.",
+          "status": "global-catalog-normalized-miss"
+        },
+        "body[3].heading": {
+          "sourceHash": "8bc22ddaba422e56a225107dc759246d00e13f706756d6fd31e224b60bb40e30",
+          "sourceText": "Hope Cartel reviews: what attendees say",
+          "status": "global-catalog-normalized-miss"
+        },
+        "body[4].content": {
           "sourceHash": "c2c1f89778bb277ab7b5eeb0ea1d0c820513aafea6f4e2f10380f8792965854a",
           "sourceText": "The breath itself — what makes a Hope Cartel session physiologically effective — is conscious connected breathing. It's not new: same protocol as the [Wim Hof Method](/breathe/wim-hof) activating phase, similar to Stanislav Grof's Holotropic Breathwork from the 1970s, similar to rebirthing traditions. Continuous mouth breathing, no pause at top or bottom, into the belly first then the chest. Triggers respiratory alkalosis, tetany (tingling), and altered states. The nine-layer audio stack on top is what 9D Breathwork as a format adds — the breath itself is universal and free.",
           "status": "repo-reviewed-manual"
         },
-        "body[3].heading": {
+        "body[4].heading": {
           "sourceHash": "8919fea4643f1f2618ec53bf24ba84a3187a0c11cf3e4182d22267fb8dcccfff",
           "sourceText": "How the breath underneath works",
           "status": "route-catalog-exact"
         },
-        "body[4].content": {
+        "body[5].content": {
           "sourceHash": "470675d7d5bcaca371697117dfa15c9c7ffb0c42a531e3a6208d7053ea720c91",
           "sourceText": "If you're curious about the physiological experience before paying for a Hope Cartel session, you can practice the underlying conscious connected breath right here using our guided pacer (set to the Wim Hof rhythm — the closest pre-built analog). Two to five minutes is plenty for a first try. The full 45-minute active phase belongs in a guided session, not solo — but the short version gives you a real sense of the sensation.",
           "status": "route-catalog-exact"
         },
-        "body[4].heading": {
+        "body[5].heading": {
           "sourceHash": "6f7e5f62de1707f627ce8c70228f8520226a0d8ee58846177d38359075c78a77",
           "sourceText": "Try the breath now (free)",
           "status": "route-catalog-exact"
@@ -1632,9 +1702,9 @@
           "status": "route-catalog-exact"
         },
         "faqs[0].question": {
-          "sourceHash": "5ffee7399996ab7e8b4385fe2e10a5fdf1256de828566f0633d9890d98c20d3b",
-          "sourceText": "What is Hope Cartel 9D breathwork?",
-          "status": "route-catalog-exact"
+          "sourceHash": "57e66654f533c61631c1efcb5f474d3ef5b91ccd0970d7daec57ff108309b3ba",
+          "sourceText": "What is Hope Cartel?",
+          "status": "global-catalog-normalized-miss"
         },
         "faqs[1].answer": {
           "sourceHash": "96693ebe912c2d3904fcd2402e7e289b7486e8b8736af4dbc90f1abcd26e60c9",
@@ -1657,31 +1727,51 @@
           "status": "route-catalog-exact"
         },
         "faqs[3].answer": {
+          "sourceHash": "4ef2208eaa53a4db62ffdcfe9bad23811ee0a54fd4e4e9d3e591842d841ba74f",
+          "sourceText": "First-hand reviews live on the Hope HQ Melton Google listing, in comments under Hope Cartel's TikTok and Instagram posts, and in Australian breathwork Facebook groups. Common themes in public attendee accounts: the emotional release is more intense than expected, the group container feels welcoming to first-timers, and Garry Wright's facilitation is the draw. Common caveats: the intensity (tetany, crying, post-session fatigue) surprises people who expected a relaxation class, and popular sessions book out. We're independent of Hope Cartel — read the reviews for the specific venue or event you'd attend.",
+          "status": "global-catalog-normalized-miss"
+        },
+        "faqs[3].question": {
+          "sourceHash": "76e0784ee99009223f4f94deb082f90092d582e940e9391d5816a77abf0fd8cf",
+          "sourceText": "What do Hope Cartel reviews say?",
+          "status": "global-catalog-normalized-miss"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "9fb1b080b296ce54d43b4176d3dafc42d4ab43aede9f4aa36a65cb3b407c00e8",
+          "sourceText": "Hope Cartel's home venue is in Melton, Victoria, but they run touring events across Australian capital cities, and Perth has appeared on past tour schedules alongside Sydney, Brisbane, and Adelaide. Dates change, so check the current schedule at hopecartel.com.au. If no Perth date is listed, their online group sessions are the alternative — or search for other certified 9D Breathwork facilitators in WA, since the format is licensed to many delivery brands.",
+          "status": "global-catalog-normalized-miss"
+        },
+        "faqs[4].question": {
+          "sourceHash": "bf869aff7e9b2aad05caf725aa200801444e17c125301cdc7154342f80cfa16b",
+          "sourceText": "Does Hope Cartel run sessions in Perth?",
+          "status": "global-catalog-normalized-miss"
+        },
+        "faqs[5].answer": {
           "sourceHash": "4ce4fad4c09ad72709f83af763d08aa288830721fdf90dbb24c164a9d0426224",
           "sourceText": "No. 9D Breathwork is a licensed format created by Brian Kelly (9dbreathwork.com), with 1,300+ certified facilitators worldwide. Hope Cartel is one of those delivery brands — they run the format but don't own it. Other 9D delivery brands exist globally; Hope Cartel is one of the largest in the English-speaking market.",
           "status": "route-catalog-exact"
         },
-        "faqs[3].question": {
+        "faqs[5].question": {
           "sourceHash": "66b20a065b7985a78bf83fb73e3625d2149abe9393481c789b0c5965add85fc4",
           "sourceText": "Is Hope Cartel the same as 9D Breathwork the brand?",
           "status": "route-catalog-exact"
         },
-        "faqs[4].answer": {
+        "faqs[6].answer": {
           "sourceHash": "8963b0130dd063c456a51bc8dd63de7d9ddf0a12c1f1b72131773507073d64c0",
           "sourceText": "Their digital \"Breathe Bundle\" audio package is designed for at-home practice. The breath protocol itself — conscious connected breathing — is universal and free; you can practice it right now with our guided pacer above. What you can't replicate at home is the live facilitator presence and group container of an in-person session.",
           "status": "route-catalog-exact"
         },
-        "faqs[4].question": {
+        "faqs[6].question": {
           "sourceHash": "d98de86cce52d4903c12583621dc7f60ed891d3d87d3a0091956788f8280049e",
           "sourceText": "Can I do Hope Cartel breathwork at home?",
           "status": "route-catalog-exact"
         },
-        "faqs[5].answer": {
+        "faqs[7].answer": {
           "sourceHash": "34724af4ad6c607f0bd97005b754acb65414e36dac7d64ec866ac52797c7b148",
           "sourceText": "The breath protocol is the same conscious connected breathing practiced for 50+ years across rebirthing and holotropic traditions — broadly safe for healthy adults but intense (tetany, dizziness, emotional release are common). Contraindicated in pregnancy, epilepsy, cardiac conditions, glaucoma, recent surgery, and unmanaged asthma. Hope Cartel facilitators screen attendees before sessions; mention any of these conditions when booking.",
           "status": "route-catalog-exact"
         },
-        "faqs[5].question": {
+        "faqs[7].question": {
           "sourceHash": "ae643d020f80477c28337ec25d6a827dfe37641785da4739448eaafb62ba2c63",
           "sourceText": "Is Hope Cartel breathwork safe?",
           "status": "route-catalog-exact"
@@ -1817,9 +1907,9 @@
           "status": "route-catalog-exact"
         },
         "meta.description": {
-          "sourceHash": "c3b0922eac283c2f9b7c4660e8432f701cc3869b50ca3a8e3c842b8f2a57bd1f",
-          "sourceText": "Hope Cartel is one of the biggest 9D breathwork delivery brands. What a session looks like, where to find them, what it costs, and how the underlying breath works — try it free here.",
-          "status": "repo-reviewed-replacement"
+          "sourceHash": "7c6a1627c63a123999f88d75766e25216c8859ce587c340824c63b9f9510a7d1",
+          "sourceText": "Hope Cartel reviews, pricing, and what a 9D breathwork session is really like. Independent guide to Australia's biggest 9D delivery brand — plus the breath itself, free.",
+          "status": "repo-reviewed-manual"
         },
         "meta.ogDescription": {
           "sourceHash": "5e24b54f01d0ea8959b5617a4601bd1bee4135950ade5d25d8c53ea8cf8b2eed",
@@ -1827,12 +1917,12 @@
           "status": "route-catalog-head-occurrence"
         },
         "meta.ogTitle": {
-          "sourceHash": "fadf918ba998ae08c2762797e51ea19f970976a653be3f26564724f1d41c3a91",
+          "sourceHash": "eb9b286f86895e9298656e1c4d17fb0f8551ed14e4c942e00c834d2aaf722d27",
           "sourceText": "Hope Cartel 9D Breathwork: Sessions, Pricing, What to Expect",
           "status": "route-catalog-head-occurrence"
         },
         "meta.title": {
-          "sourceHash": "fadf918ba998ae08c2762797e51ea19f970976a653be3f26564724f1d41c3a91",
+          "sourceHash": "eb9b286f86895e9298656e1c4d17fb0f8551ed14e4c942e00c834d2aaf722d27",
           "sourceText": "Hope Cartel 9D Breathwork: Sessions, Pricing, What to Expect | Deep Breathing Exercises",
           "status": "route-catalog-head-occurrence"
         },
@@ -2268,21 +2358,31 @@
           "status": "route-catalog-exact"
         },
         "body[3].content": {
+          "sourceHash": "5468c916e42a93f850b4a3d7d12345099fd1a7169459c6e4b3b7b10e27ab54d5",
+          "sourceText": "We're independent — not affiliated with Hope Cartel — so treat this as a map to the real reviews rather than a verdict. The most useful places to read first-hand accounts: the Google reviews on the Hope HQ venue in Melton, the comment threads under Hope Cartel's own TikTok and Instagram posts, and Australian breathwork groups on Facebook. Publicly posted attendee accounts tend to repeat the same themes: the emotional release is far more intense than people expect from \"a breathing class\", the group atmosphere is welcoming to first-timers, and Garry Wright's facilitation and recovery story are a big part of why people come back. The recurring caveats are the flip side of the same coin — the intensity catches some first-timers off guard (tetany, crying, feeling wiped out afterward is normal for this style of breathwork), and popular sessions book out. If you're weighing it up, read the venue reviews for the session you'd actually attend (Melton HQ vs a touring event in Sydney, Brisbane, or Perth), and skim the session walkthrough above so the intensity isn't a surprise.",
+          "status": "global-catalog-normalized-miss"
+        },
+        "body[3].heading": {
+          "sourceHash": "8bc22ddaba422e56a225107dc759246d00e13f706756d6fd31e224b60bb40e30",
+          "sourceText": "Hope Cartel reviews: what attendees say",
+          "status": "global-catalog-normalized-miss"
+        },
+        "body[4].content": {
           "sourceHash": "c2c1f89778bb277ab7b5eeb0ea1d0c820513aafea6f4e2f10380f8792965854a",
           "sourceText": "The breath itself — what makes a Hope Cartel session physiologically effective — is conscious connected breathing. It's not new: same protocol as the [Wim Hof Method](/breathe/wim-hof) activating phase, similar to Stanislav Grof's Holotropic Breathwork from the 1970s, similar to rebirthing traditions. Continuous mouth breathing, no pause at top or bottom, into the belly first then the chest. Triggers respiratory alkalosis, tetany (tingling), and altered states. The nine-layer audio stack on top is what 9D Breathwork as a format adds — the breath itself is universal and free.",
           "status": "repo-reviewed-manual"
         },
-        "body[3].heading": {
+        "body[4].heading": {
           "sourceHash": "8919fea4643f1f2618ec53bf24ba84a3187a0c11cf3e4182d22267fb8dcccfff",
           "sourceText": "How the breath underneath works",
           "status": "route-catalog-exact"
         },
-        "body[4].content": {
+        "body[5].content": {
           "sourceHash": "470675d7d5bcaca371697117dfa15c9c7ffb0c42a531e3a6208d7053ea720c91",
           "sourceText": "If you're curious about the physiological experience before paying for a Hope Cartel session, you can practice the underlying conscious connected breath right here using our guided pacer (set to the Wim Hof rhythm — the closest pre-built analog). Two to five minutes is plenty for a first try. The full 45-minute active phase belongs in a guided session, not solo — but the short version gives you a real sense of the sensation.",
           "status": "route-catalog-exact"
         },
-        "body[4].heading": {
+        "body[5].heading": {
           "sourceHash": "6f7e5f62de1707f627ce8c70228f8520226a0d8ee58846177d38359075c78a77",
           "sourceText": "Try the breath now (free)",
           "status": "route-catalog-exact"
@@ -2293,9 +2393,9 @@
           "status": "route-catalog-exact"
         },
         "faqs[0].question": {
-          "sourceHash": "5ffee7399996ab7e8b4385fe2e10a5fdf1256de828566f0633d9890d98c20d3b",
-          "sourceText": "What is Hope Cartel 9D breathwork?",
-          "status": "route-catalog-exact"
+          "sourceHash": "57e66654f533c61631c1efcb5f474d3ef5b91ccd0970d7daec57ff108309b3ba",
+          "sourceText": "What is Hope Cartel?",
+          "status": "global-catalog-normalized-miss"
         },
         "faqs[1].answer": {
           "sourceHash": "96693ebe912c2d3904fcd2402e7e289b7486e8b8736af4dbc90f1abcd26e60c9",
@@ -2318,31 +2418,51 @@
           "status": "route-catalog-exact"
         },
         "faqs[3].answer": {
+          "sourceHash": "4ef2208eaa53a4db62ffdcfe9bad23811ee0a54fd4e4e9d3e591842d841ba74f",
+          "sourceText": "First-hand reviews live on the Hope HQ Melton Google listing, in comments under Hope Cartel's TikTok and Instagram posts, and in Australian breathwork Facebook groups. Common themes in public attendee accounts: the emotional release is more intense than expected, the group container feels welcoming to first-timers, and Garry Wright's facilitation is the draw. Common caveats: the intensity (tetany, crying, post-session fatigue) surprises people who expected a relaxation class, and popular sessions book out. We're independent of Hope Cartel — read the reviews for the specific venue or event you'd attend.",
+          "status": "global-catalog-normalized-miss"
+        },
+        "faqs[3].question": {
+          "sourceHash": "76e0784ee99009223f4f94deb082f90092d582e940e9391d5816a77abf0fd8cf",
+          "sourceText": "What do Hope Cartel reviews say?",
+          "status": "global-catalog-normalized-miss"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "9fb1b080b296ce54d43b4176d3dafc42d4ab43aede9f4aa36a65cb3b407c00e8",
+          "sourceText": "Hope Cartel's home venue is in Melton, Victoria, but they run touring events across Australian capital cities, and Perth has appeared on past tour schedules alongside Sydney, Brisbane, and Adelaide. Dates change, so check the current schedule at hopecartel.com.au. If no Perth date is listed, their online group sessions are the alternative — or search for other certified 9D Breathwork facilitators in WA, since the format is licensed to many delivery brands.",
+          "status": "global-catalog-normalized-miss"
+        },
+        "faqs[4].question": {
+          "sourceHash": "bf869aff7e9b2aad05caf725aa200801444e17c125301cdc7154342f80cfa16b",
+          "sourceText": "Does Hope Cartel run sessions in Perth?",
+          "status": "global-catalog-normalized-miss"
+        },
+        "faqs[5].answer": {
           "sourceHash": "4ce4fad4c09ad72709f83af763d08aa288830721fdf90dbb24c164a9d0426224",
           "sourceText": "No. 9D Breathwork is a licensed format created by Brian Kelly (9dbreathwork.com), with 1,300+ certified facilitators worldwide. Hope Cartel is one of those delivery brands — they run the format but don't own it. Other 9D delivery brands exist globally; Hope Cartel is one of the largest in the English-speaking market.",
           "status": "route-catalog-exact"
         },
-        "faqs[3].question": {
+        "faqs[5].question": {
           "sourceHash": "66b20a065b7985a78bf83fb73e3625d2149abe9393481c789b0c5965add85fc4",
           "sourceText": "Is Hope Cartel the same as 9D Breathwork the brand?",
           "status": "route-catalog-exact"
         },
-        "faqs[4].answer": {
+        "faqs[6].answer": {
           "sourceHash": "8963b0130dd063c456a51bc8dd63de7d9ddf0a12c1f1b72131773507073d64c0",
           "sourceText": "Their digital \"Breathe Bundle\" audio package is designed for at-home practice. The breath protocol itself — conscious connected breathing — is universal and free; you can practice it right now with our guided pacer above. What you can't replicate at home is the live facilitator presence and group container of an in-person session.",
           "status": "route-catalog-exact"
         },
-        "faqs[4].question": {
+        "faqs[6].question": {
           "sourceHash": "d98de86cce52d4903c12583621dc7f60ed891d3d87d3a0091956788f8280049e",
           "sourceText": "Can I do Hope Cartel breathwork at home?",
           "status": "route-catalog-exact"
         },
-        "faqs[5].answer": {
+        "faqs[7].answer": {
           "sourceHash": "34724af4ad6c607f0bd97005b754acb65414e36dac7d64ec866ac52797c7b148",
           "sourceText": "The breath protocol is the same conscious connected breathing practiced for 50+ years across rebirthing and holotropic traditions — broadly safe for healthy adults but intense (tetany, dizziness, emotional release are common). Contraindicated in pregnancy, epilepsy, cardiac conditions, glaucoma, recent surgery, and unmanaged asthma. Hope Cartel facilitators screen attendees before sessions; mention any of these conditions when booking.",
           "status": "route-catalog-exact"
         },
-        "faqs[5].question": {
+        "faqs[7].question": {
           "sourceHash": "ae643d020f80477c28337ec25d6a827dfe37641785da4739448eaafb62ba2c63",
           "sourceText": "Is Hope Cartel breathwork safe?",
           "status": "route-catalog-exact"
@@ -2478,9 +2598,9 @@
           "status": "route-catalog-exact"
         },
         "meta.description": {
-          "sourceHash": "c3b0922eac283c2f9b7c4660e8432f701cc3869b50ca3a8e3c842b8f2a57bd1f",
-          "sourceText": "Hope Cartel is one of the biggest 9D breathwork delivery brands. What a session looks like, where to find them, what it costs, and how the underlying breath works — try it free here.",
-          "status": "route-catalog-head-occurrence"
+          "sourceHash": "7c6a1627c63a123999f88d75766e25216c8859ce587c340824c63b9f9510a7d1",
+          "sourceText": "Hope Cartel reviews, pricing, and what a 9D breathwork session is really like. Independent guide to Australia's biggest 9D delivery brand — plus the breath itself, free.",
+          "status": "repo-reviewed-manual"
         },
         "meta.ogDescription": {
           "sourceHash": "5e24b54f01d0ea8959b5617a4601bd1bee4135950ade5d25d8c53ea8cf8b2eed",
@@ -2488,12 +2608,12 @@
           "status": "route-catalog-head-occurrence"
         },
         "meta.ogTitle": {
-          "sourceHash": "fadf918ba998ae08c2762797e51ea19f970976a653be3f26564724f1d41c3a91",
+          "sourceHash": "eb9b286f86895e9298656e1c4d17fb0f8551ed14e4c942e00c834d2aaf722d27",
           "sourceText": "Hope Cartel 9D Breathwork: Sessions, Pricing, What to Expect",
           "status": "route-catalog-head-occurrence"
         },
         "meta.title": {
-          "sourceHash": "fadf918ba998ae08c2762797e51ea19f970976a653be3f26564724f1d41c3a91",
+          "sourceHash": "eb9b286f86895e9298656e1c4d17fb0f8551ed14e4c942e00c834d2aaf722d27",
           "sourceText": "Hope Cartel 9D Breathwork: Sessions, Pricing, What to Expect | Deep Breathing Exercises",
           "status": "route-catalog-head-occurrence"
         },
@@ -2929,21 +3049,31 @@
           "status": "route-catalog-exact"
         },
         "body[3].content": {
+          "sourceHash": "5468c916e42a93f850b4a3d7d12345099fd1a7169459c6e4b3b7b10e27ab54d5",
+          "sourceText": "We're independent — not affiliated with Hope Cartel — so treat this as a map to the real reviews rather than a verdict. The most useful places to read first-hand accounts: the Google reviews on the Hope HQ venue in Melton, the comment threads under Hope Cartel's own TikTok and Instagram posts, and Australian breathwork groups on Facebook. Publicly posted attendee accounts tend to repeat the same themes: the emotional release is far more intense than people expect from \"a breathing class\", the group atmosphere is welcoming to first-timers, and Garry Wright's facilitation and recovery story are a big part of why people come back. The recurring caveats are the flip side of the same coin — the intensity catches some first-timers off guard (tetany, crying, feeling wiped out afterward is normal for this style of breathwork), and popular sessions book out. If you're weighing it up, read the venue reviews for the session you'd actually attend (Melton HQ vs a touring event in Sydney, Brisbane, or Perth), and skim the session walkthrough above so the intensity isn't a surprise.",
+          "status": "global-catalog-normalized-miss"
+        },
+        "body[3].heading": {
+          "sourceHash": "8bc22ddaba422e56a225107dc759246d00e13f706756d6fd31e224b60bb40e30",
+          "sourceText": "Hope Cartel reviews: what attendees say",
+          "status": "global-catalog-normalized-miss"
+        },
+        "body[4].content": {
           "sourceHash": "c2c1f89778bb277ab7b5eeb0ea1d0c820513aafea6f4e2f10380f8792965854a",
           "sourceText": "The breath itself — what makes a Hope Cartel session physiologically effective — is conscious connected breathing. It's not new: same protocol as the [Wim Hof Method](/breathe/wim-hof) activating phase, similar to Stanislav Grof's Holotropic Breathwork from the 1970s, similar to rebirthing traditions. Continuous mouth breathing, no pause at top or bottom, into the belly first then the chest. Triggers respiratory alkalosis, tetany (tingling), and altered states. The nine-layer audio stack on top is what 9D Breathwork as a format adds — the breath itself is universal and free.",
           "status": "repo-reviewed-manual"
         },
-        "body[3].heading": {
+        "body[4].heading": {
           "sourceHash": "8919fea4643f1f2618ec53bf24ba84a3187a0c11cf3e4182d22267fb8dcccfff",
           "sourceText": "How the breath underneath works",
           "status": "route-catalog-exact"
         },
-        "body[4].content": {
+        "body[5].content": {
           "sourceHash": "470675d7d5bcaca371697117dfa15c9c7ffb0c42a531e3a6208d7053ea720c91",
           "sourceText": "If you're curious about the physiological experience before paying for a Hope Cartel session, you can practice the underlying conscious connected breath right here using our guided pacer (set to the Wim Hof rhythm — the closest pre-built analog). Two to five minutes is plenty for a first try. The full 45-minute active phase belongs in a guided session, not solo — but the short version gives you a real sense of the sensation.",
           "status": "route-catalog-exact"
         },
-        "body[4].heading": {
+        "body[5].heading": {
           "sourceHash": "6f7e5f62de1707f627ce8c70228f8520226a0d8ee58846177d38359075c78a77",
           "sourceText": "Try the breath now (free)",
           "status": "route-catalog-exact"
@@ -2954,9 +3084,9 @@
           "status": "route-catalog-exact"
         },
         "faqs[0].question": {
-          "sourceHash": "5ffee7399996ab7e8b4385fe2e10a5fdf1256de828566f0633d9890d98c20d3b",
-          "sourceText": "What is Hope Cartel 9D breathwork?",
-          "status": "route-catalog-exact"
+          "sourceHash": "57e66654f533c61631c1efcb5f474d3ef5b91ccd0970d7daec57ff108309b3ba",
+          "sourceText": "What is Hope Cartel?",
+          "status": "global-catalog-normalized-miss"
         },
         "faqs[1].answer": {
           "sourceHash": "96693ebe912c2d3904fcd2402e7e289b7486e8b8736af4dbc90f1abcd26e60c9",
@@ -2979,31 +3109,51 @@
           "status": "route-catalog-exact"
         },
         "faqs[3].answer": {
+          "sourceHash": "4ef2208eaa53a4db62ffdcfe9bad23811ee0a54fd4e4e9d3e591842d841ba74f",
+          "sourceText": "First-hand reviews live on the Hope HQ Melton Google listing, in comments under Hope Cartel's TikTok and Instagram posts, and in Australian breathwork Facebook groups. Common themes in public attendee accounts: the emotional release is more intense than expected, the group container feels welcoming to first-timers, and Garry Wright's facilitation is the draw. Common caveats: the intensity (tetany, crying, post-session fatigue) surprises people who expected a relaxation class, and popular sessions book out. We're independent of Hope Cartel — read the reviews for the specific venue or event you'd attend.",
+          "status": "global-catalog-normalized-miss"
+        },
+        "faqs[3].question": {
+          "sourceHash": "76e0784ee99009223f4f94deb082f90092d582e940e9391d5816a77abf0fd8cf",
+          "sourceText": "What do Hope Cartel reviews say?",
+          "status": "global-catalog-normalized-miss"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "9fb1b080b296ce54d43b4176d3dafc42d4ab43aede9f4aa36a65cb3b407c00e8",
+          "sourceText": "Hope Cartel's home venue is in Melton, Victoria, but they run touring events across Australian capital cities, and Perth has appeared on past tour schedules alongside Sydney, Brisbane, and Adelaide. Dates change, so check the current schedule at hopecartel.com.au. If no Perth date is listed, their online group sessions are the alternative — or search for other certified 9D Breathwork facilitators in WA, since the format is licensed to many delivery brands.",
+          "status": "global-catalog-normalized-miss"
+        },
+        "faqs[4].question": {
+          "sourceHash": "bf869aff7e9b2aad05caf725aa200801444e17c125301cdc7154342f80cfa16b",
+          "sourceText": "Does Hope Cartel run sessions in Perth?",
+          "status": "global-catalog-normalized-miss"
+        },
+        "faqs[5].answer": {
           "sourceHash": "4ce4fad4c09ad72709f83af763d08aa288830721fdf90dbb24c164a9d0426224",
           "sourceText": "No. 9D Breathwork is a licensed format created by Brian Kelly (9dbreathwork.com), with 1,300+ certified facilitators worldwide. Hope Cartel is one of those delivery brands — they run the format but don't own it. Other 9D delivery brands exist globally; Hope Cartel is one of the largest in the English-speaking market.",
           "status": "route-catalog-exact"
         },
-        "faqs[3].question": {
+        "faqs[5].question": {
           "sourceHash": "66b20a065b7985a78bf83fb73e3625d2149abe9393481c789b0c5965add85fc4",
           "sourceText": "Is Hope Cartel the same as 9D Breathwork the brand?",
           "status": "route-catalog-exact"
         },
-        "faqs[4].answer": {
+        "faqs[6].answer": {
           "sourceHash": "8963b0130dd063c456a51bc8dd63de7d9ddf0a12c1f1b72131773507073d64c0",
           "sourceText": "Their digital \"Breathe Bundle\" audio package is designed for at-home practice. The breath protocol itself — conscious connected breathing — is universal and free; you can practice it right now with our guided pacer above. What you can't replicate at home is the live facilitator presence and group container of an in-person session.",
           "status": "route-catalog-exact"
         },
-        "faqs[4].question": {
+        "faqs[6].question": {
           "sourceHash": "d98de86cce52d4903c12583621dc7f60ed891d3d87d3a0091956788f8280049e",
           "sourceText": "Can I do Hope Cartel breathwork at home?",
           "status": "route-catalog-exact"
         },
-        "faqs[5].answer": {
+        "faqs[7].answer": {
           "sourceHash": "34724af4ad6c607f0bd97005b754acb65414e36dac7d64ec866ac52797c7b148",
           "sourceText": "The breath protocol is the same conscious connected breathing practiced for 50+ years across rebirthing and holotropic traditions — broadly safe for healthy adults but intense (tetany, dizziness, emotional release are common). Contraindicated in pregnancy, epilepsy, cardiac conditions, glaucoma, recent surgery, and unmanaged asthma. Hope Cartel facilitators screen attendees before sessions; mention any of these conditions when booking.",
           "status": "route-catalog-exact"
         },
-        "faqs[5].question": {
+        "faqs[7].question": {
           "sourceHash": "ae643d020f80477c28337ec25d6a827dfe37641785da4739448eaafb62ba2c63",
           "sourceText": "Is Hope Cartel breathwork safe?",
           "status": "route-catalog-exact"
@@ -3139,9 +3289,9 @@
           "status": "route-catalog-exact"
         },
         "meta.description": {
-          "sourceHash": "c3b0922eac283c2f9b7c4660e8432f701cc3869b50ca3a8e3c842b8f2a57bd1f",
-          "sourceText": "Hope Cartel is one of the biggest 9D breathwork delivery brands. What a session looks like, where to find them, what it costs, and how the underlying breath works — try it free here.",
-          "status": "route-catalog-head-occurrence"
+          "sourceHash": "7c6a1627c63a123999f88d75766e25216c8859ce587c340824c63b9f9510a7d1",
+          "sourceText": "Hope Cartel reviews, pricing, and what a 9D breathwork session is really like. Independent guide to Australia's biggest 9D delivery brand — plus the breath itself, free.",
+          "status": "repo-reviewed-manual"
         },
         "meta.ogDescription": {
           "sourceHash": "5e24b54f01d0ea8959b5617a4601bd1bee4135950ade5d25d8c53ea8cf8b2eed",
@@ -3149,12 +3299,12 @@
           "status": "repo-reviewed-replacement"
         },
         "meta.ogTitle": {
-          "sourceHash": "fadf918ba998ae08c2762797e51ea19f970976a653be3f26564724f1d41c3a91",
+          "sourceHash": "eb9b286f86895e9298656e1c4d17fb0f8551ed14e4c942e00c834d2aaf722d27",
           "sourceText": "Hope Cartel 9D Breathwork: Sessions, Pricing, What to Expect",
           "status": "route-catalog-head-occurrence"
         },
         "meta.title": {
-          "sourceHash": "fadf918ba998ae08c2762797e51ea19f970976a653be3f26564724f1d41c3a91",
+          "sourceHash": "eb9b286f86895e9298656e1c4d17fb0f8551ed14e4c942e00c834d2aaf722d27",
           "sourceText": "Hope Cartel 9D Breathwork: Sessions, Pricing, What to Expect | Deep Breathing Exercises",
           "status": "route-catalog-head-occurrence"
         },
