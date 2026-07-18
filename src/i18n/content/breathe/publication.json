@@ -300,37 +300,37 @@
         "de-de": {
           "chromeMessages": 55,
           "chromePath": "chrome/de-de/hope-cartel-9d-breathwork.json",
-          "publishable": false,
+          "publishable": true,
           "routePath": "routes/de-de/hope-cartel-9d-breathwork.json",
-          "unresolved": 7
+          "unresolved": 0
         },
         "es-es": {
           "chromeMessages": 55,
           "chromePath": "chrome/es-es/hope-cartel-9d-breathwork.json",
-          "publishable": false,
+          "publishable": true,
           "routePath": "routes/es-es/hope-cartel-9d-breathwork.json",
-          "unresolved": 7
+          "unresolved": 0
         },
         "fr-fr": {
           "chromeMessages": 55,
           "chromePath": "chrome/fr-fr/hope-cartel-9d-breathwork.json",
-          "publishable": false,
+          "publishable": true,
           "routePath": "routes/fr-fr/hope-cartel-9d-breathwork.json",
-          "unresolved": 7
+          "unresolved": 0
         },
         "ja-jp": {
           "chromeMessages": 55,
           "chromePath": "chrome/ja-jp/hope-cartel-9d-breathwork.json",
-          "publishable": false,
+          "publishable": true,
           "routePath": "routes/ja-jp/hope-cartel-9d-breathwork.json",
-          "unresolved": 7
+          "unresolved": 0
         },
         "pt-br": {
           "chromeMessages": 55,
           "chromePath": "chrome/pt-br/hope-cartel-9d-breathwork.json",
-          "publishable": false,
+          "publishable": true,
           "routePath": "routes/pt-br/hope-cartel-9d-breathwork.json",
-          "unresolved": 7
+          "unresolved": 0
         }
       },
       "routeId": "breathe-hope-cartel-9d-breathwork"
