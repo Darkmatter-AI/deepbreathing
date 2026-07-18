@@ -18,17 +18,18 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-07-18 | [Hope Cartel Reviews-Intent Capture — Reviews Section + Exact-Match FAQs + Title](#2026-07-18-hope-cartel-reviews-intent-capture--reviews-section--exact-match-faqs--title) | 🔄 Implemented |
 | 2026-07-15 | [Native Translation Serving Migration — Preserve Locale URLs, Remove Proxy Rendering](#2026-07-15-native-translation-serving-migration--preserve-locale-urls-remove-proxy-rendering) | ⏳ Waiting (preview gates) |
 | 2026-07-10 | [Canonical Hijack — 2 Locale Pages Merged With Casino Domain (747live.bet)](#2026-07-10-canonical-hijack--2-locale-pages-merged-with-casino-domain-747livebet) | ✅ Success |
 | 2026-07-09 | [Retire Dead Submission Paths — Indexing API, Sitemap Pings; Durable URL Inspection](#2026-07-09-retire-dead-submission-paths) | 📊 Snapshot |
-| 2026-06-15 | [Nofollow + Robots-Disallow ?duration= Timer Deep-Links (Hreflang to Non-Canonical)](#2026-06-15-nofollow--robots-disallow-duration-timer-deep-links-hreflang-to-non-canonical) | 🔄 Implemented |
+| 2026-06-15 | [Nofollow + Robots-Disallow ?duration= Timer Deep-Links (Hreflang to Non-Canonical)](#2026-06-15-nofollow--robots-disallow-duration-timer-deep-links-hreflang-to-non-canonical) | ✅ Success |
 | 2026-06-14 | [GSC "Page with redirect" Alert (WNC-20237597) — Reviewed, Benign](#2026-06-14-gsc-page-with-redirect-alert-wnc-20237597--reviewed-benign) | 📊 Snapshot |
-| 2026-06-13 | [Fix "Hreflang to non-canonical" — home-page trailing slash](#2026-06-13-fix-hreflang-to-non-canonical--home-page-trailing-slash) | 🔄 Implemented |
+| 2026-06-13 | [Fix "Hreflang to non-canonical" — home-page trailing slash](#2026-06-13-fix-hreflang-to-non-canonical--home-page-trailing-slash) | ❌ Failed |
 | 2026-06-13 | [Locale Cache Warmer — Health Score Crash Fix (40→92)](#2026-06-13-locale-cache-warmer--health-score-crash-fix) | ✅ Success |
-| 2026-06-13 | [Tummo CTR Title + Meta Rewrite — /breathe/tummo](#2026-06-13-tummo-ctr-title--meta-rewrite) | 🔄 Implemented |
+| 2026-06-13 | [Tummo CTR Title + Meta Rewrite — /breathe/tummo](#2026-06-13-tummo-ctr-title--meta-rewrite) | 🟡 Mixed |
 | 2026-06-13 | [Owned YouTube Videos + VideoObject Schema on /breathe/* Pages](#2026-06-13-owned-youtube-videos--videoobject-schema) | 🔄 Implemented |
-| 2026-06-13 | [404 Root-Cause Fix — Verification](#2026-06-13-404-root-cause-fix--verification) | 🔄 Implemented |
-| 2026-06-10 | [Crawl Hygiene + Schema Cleanup — robots disallows, OG noindex, sitemap, SoftwareApplication, SearchAction](#2026-06-10-crawl-hygiene--schema-cleanup) | 🔄 Implemented |
+| 2026-06-13 | [404 Root-Cause Fix — Verification](#2026-06-13-404-root-cause-fix--verification) | ❌ Failed |
+| 2026-06-10 | [Crawl Hygiene + Schema Cleanup — robots disallows, OG noindex, sitemap, SoftwareApplication, SearchAction](#2026-06-10-crawl-hygiene--schema-cleanup) | 🟡 Mixed |
 | 2026-05-06 | [9D Breathwork Cluster — 2 Pages Riding the Breakout Trend](#2026-05-06-9d-breathwork-cluster--2-pages-riding-the-breakout-trend) | 🔄 Implemented |
 | 2026-05-06 | [Wim Hof Bing CTR — SERP Feature Structural Ceiling (Finding)](#2026-05-06-wim-hof-bing-ctr--serp-feature-structural-ceiling) | 📊 Snapshot |
 | 2026-05-06 | [E-E-A-T Wellness-Class Overhaul — Founder Byline + Lineage + Light Citations](#2026-05-06-e-e-a-t-wellness-class-overhaul--founder-byline--lineage--light-citations) | 🔄 Implemented |
@@ -76,13 +77,49 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-01-06 | [Navy SEAL Content Expansion](#2026-01-06-navy-seal-content-expansion) | ❌ Failed |
 | 2026-01-06 | [CTR Title Rewrites (Batch 1)](#2026-01-06-ctr-title-rewrites-batch-1) | ✅ Success |
 
-**Roll-up by status (54 entries):** ✅ 3 Success · ❌ 9 Failed · ⚪ 12 Inconclusive · 🟡 1 Mixed · ⏳ 1 Waiting · 🔄 20 Implemented · 📊 8 Snapshot. *(2026-07-15: +native translation serving migration planning entry. 2026-06-21: audio-v2 rebase folded in the 2026-05-18 Indexing-Recovery Checkpoint snapshot. 2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
+**Roll-up by status (55 entries):** ✅ 4 Success · ❌ 11 Failed · ⚪ 12 Inconclusive · 🟡 3 Mixed · ⏳ 1 Waiting · 🔄 16 Implemented · 📊 8 Snapshot. *(2026-07-18 autoresearch cycle 1: settled 5 overdue verdicts — ?duration= hreflang ✅, trailing-slash ❌ superseded, Tummo 🟡, 404 root-cause ❌, crawl hygiene 🟡; +hope-cartel reviews-intent entry. 2026-07-15: +native translation serving migration planning entry. 2026-06-21: audio-v2 rebase folded in the 2026-05-18 Indexing-Recovery Checkpoint snapshot. 2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
 
 See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of what worked / failed / strategic insights from the first month of experiments.
 
 ---
 
 ## Active Experiments
+
+### 2026-07-18: Hope Cartel Reviews-Intent Capture — Reviews Section + Exact-Match FAQs + Title
+
+**Context.** First ship of the SEO autoresearch loop (cycle 1). GSC quick-wins detection (30d, Jun 18 – Jul 17) put 7 of the top 8 opportunities on `/breathe/hope-cartel-9d-breathwork` — and the intent cluster is unserved: the page has pricing and location content but **zero reviews content**, while ~450 impressions/30d land on reviews queries.
+
+**Hypothesis:** Adding an honest independent reviews section (map to where real reviews live + recurring themes/caveats in public attendee accounts), exact-match FAQ variants ("What is Hope Cartel?", "What do Hope Cartel reviews say?", "Does Hope Cartel run sessions in Perth?"), and putting "Reviews" first in the title lifts CTR on the reviews/what-is intent cluster without hurting the head-term position. Same playbook as the Jan-6 CTR batch (✅) applied to intent coverage, on the page that already drives ~40% of all Google clicks.
+
+**Baseline (GSC, 2026-06-18 → 2026-07-17, page = /breathe/hope-cartel-9d-breathwork):**
+
+| Query | Impr | Clicks | CTR | Pos |
+|---|---:|---:|---:|---:|
+| hope cartel melton reviews | 225 | 3 | 1.33% | 5.1 |
+| hope cartel reviews | 218 | 3 | 1.38% | 6.5 |
+| what is hope cartel | 127 | 0 | 0% | 8.6 |
+| hope cartel 9d breathwork price | 121 | 1 | 0.83% | 5.7 |
+| hope cartel 9d breathwork location | 93 | 0 | 0% | 7.9 |
+| hope cartel perth | 80 | 0 | 0% | 8.1 |
+| hope cartel breathwork | 60 | 1 | 1.67% | 8.8 |
+
+Tracked-cluster totals: **8 clicks / 924 impressions / 0.87% CTR**. Whole page (7d Jul 3–9): 32 clicks / 2,630 impr / pos 9.0.
+
+**What shipped (`src/data/breathing-pages.ts`, hopeCartelPage):**
+1. Title/ogTitle: "Hope Cartel 9D Breathwork: Sessions, Pricing, What to Expect" → "Hope Cartel 9D Breathwork: Reviews, Pricing & What to Expect" (60 chars). Meta description leads with "Hope Cartel reviews, pricing…" + "Independent guide".
+2. New body section "Hope Cartel reviews: what attendees say" — explicitly independent/unaffiliated, points to where first-hand reviews live (Google reviews on Hope HQ Melton, TikTok/IG comments, AU breathwork Facebook groups), summarizes recurring public themes (intensity, welcoming group container, Wright's facilitation) and caveats (tetany/crying/fatigue surprises first-timers, sessions book out). No fabricated review quotes or ratings — and deliberately NO AggregateRating schema (we hold no rating data; also see 2026-06-10: SoftwareApplication was removed for exactly that reason).
+3. FAQ: first question exact-matched to "What is Hope Cartel?"; new FAQs for reviews and Perth (both hedged, honest).
+4. Keywords array: + "hope cartel melton reviews", "hope cartel perth", "what is hope cartel". dateModified → 2026-07-18.
+
+**Pre-committed success criteria (measure 2026-08-15, GSC 28d window Jul 18 – Aug 14, same 7 tracked queries):**
+- ✅ **Success**: tracked-cluster clicks ≥ 16 (2x baseline 8) AND cluster CTR ≥ 1.6% (~2x 0.87%), with "hope cartel reviews"/"melton reviews" positions no worse than baseline +1.
+- 🟡 **Mixed**: clicks 11–15, OR CTR 1.2–1.6%.
+- ⚪ **Inconclusive**: clicks 8–10 with positions/impressions materially shifted (re-measure at 56d).
+- ❌ **Failed**: clicks ≤ 8 AND CTR ≤ baseline at 28d, or head-term "hope cartel 9d breathwork" position degrades >2 spots (title change backfired — revert title).
+
+**Status:** 🔄 Implemented (2026-07-18)
+
+---
 
 ### 2026-07-15: Native Translation Serving Migration — Preserve Locale URLs, Remove Proxy Rendering
 
@@ -215,7 +252,9 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 
 **Caveats:** Clearance is not instant — needs a full post-deploy Ahrefs recrawl; the 50 count predates this fix. The durable proxy-side fix (eliminates the root asymmetry) is to add `duration` to the tenant's `strip_query_params` in mass-translate KV — but that REPLACES the defaults, so the value must include `utm_*,fbclid,gclid,ref,_ga,mc_*`. Requires the mass-translate team to write tenant KV (no `set_site_config` MCP). Logged as a follow-up; not in scope here.
 
-**Status:** 🔄 Implemented (not yet measured)
+**Result — ✅ Success (measured 2026-07-18, Ahrefs Site Audit project 9300406, latest crawl).** "Hreflang to non-canonical" is down to **5** (from 50), meeting the ≤5 success bar. Health Score 98 (Excellent). Late measurement (due 2026-06-22) — settled in autoresearch cycle 1. Note for future crawls: the remaining error classes are now "Noindex page in sitemap" (6) and "Non-canonical page in sitemap" (1) — new small issues, see the 2026-06-10 crawl-hygiene verdict.
+
+**Status:** ✅ Success (not yet measured)
 
 ---
 
@@ -262,7 +301,9 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 
 > **Note (2026-06-15):** Superseded — this did **not** move the number. The re-crawl showed "Hreflang to non-canonical" unchanged at 50; the true root cause was `?duration=` timer-param URLs on locale pages, fixed in the [2026-06-15 entry](#2026-06-15-nofollow--robots-disallow-duration-timer-deep-links-hreflang-to-non-canonical). Kept for history; formal status to be settled on the 2026-06-20 measure date.
 
-🔄 Implemented
+**Result — ❌ Failed (settled 2026-07-18).** Per the note above: the post-deploy re-crawl left the count at 50; the hypothesis (trailing-slash mismatch) was not the cause. The error class was cleared by the `?duration=` fix instead (now at 5). The trailing-slash change itself is harmless and stays in.
+
+❌ Failed
 
 ---
 
@@ -338,7 +379,9 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 - ⚪ **Inconclusive**: CTR 0.32%–0.59%. Not enough signal — re-measure at 56 days before calling.
 - ❌ **Failed**: CTR ≤ 0.31% at 28d AND no trend. Revert and investigate whether snippet/featured-snippet overlay is eating clicks (structural ceiling like Wim Hof/Bing finding).
 
-**Status:** 🔄 Implemented
+**Result — 🟡 Mixed (measured 2026-07-18, GSC 2026-06-13 → 2026-07-11).** 9 clicks / 1,908 impressions / CTR 0.47% / avg position 10.8. Clicks land in the Mixed band (6–11, a 3x lift from the ~3-click baseline), but CTR 0.47% is below the 0.6% Mixed floor and position slipped 8 → 10.8 while impressions doubled (959 → 1,908). Reading: the new title is winning broader/lower-position impressions, which dilutes CTR; absolute clicks are up 3x. Keep the title. Optional re-read at 56d (2026-08-08) alongside the owned-videos measurement.
+
+**Status:** 🟡 Mixed
 
 ---
 
@@ -417,7 +460,9 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 
 **Measure-after date:** 2026-07-13
 
-**Status:** 🔄 Implemented (2026-06-13)
+**Result — ❌ Failed by the letter (measured 2026-07-18, GSC Pages report, last update 7/10/26).** "Not found (404)" = **14** (criterion: ❌ at ≥12) and GSC validation shows **Failed**. Mechanism nuance: the engineering fix is verified working — URL Inspection shows `/fr/languages` recrawled 2026-07-05 now reports "Page with redirect" (correct), while `/pt/fr/breathe/breath-of-fire` still shows 404 with **last crawl 2026-05-04**, i.e. Google simply hasn't recrawled most of the bucket since the Jun 13 deploy. No new 404 URL classes observed. The failure is of the *timeline hypothesis* (4 weeks was too optimistic for recrawl of low-value 404 URLs), not of the fix. No further action: URL_DELETED resubmission is a dead path (see 2026-07-09 entry), and the bucket should decay as Google recrawls. Re-check passively via the Mon/Thu digest; escalate only if a *new* URL class appears.
+
+**Status:** ❌ Failed (fix verified; criterion missed on recrawl lag)
 
 
 ---
@@ -443,7 +488,9 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 - ⚪ **Inconclusive**: Ahrefs issues clear but crawl-stats mix unchanged (Google may take >4 weeks to rebalance).
 - ❌ **Failed**: GSC indexed count drops below 250 (the 2026-04-01 sitemap conversion caused a ~41% de-indexing — any sitemap touch gets this guardrail), or social card images stop rendering (OG header regression).
 
-**Status:** 🔄 Implemented (not yet measured)
+**Result — 🟡 Mixed (measured 2026-07-18).** Guardrail passed decisively: GSC indexed = **292** (≥260 required; new all-time high). Ahrefs: "Structured data has Google rich results validation error" no longer appears in Top Issues (was 56 → effectively cleared), but "Noindex page in sitemap" is at **6**, not 0 (was 12), plus 1 new "Non-canonical page in sitemap". Health Score 98. Crawl-stats mix (Vercel insights / bundle share) not re-pulled this pass. Follow-up for a future cycle: identify the 6 noindex-in-sitemap + 1 non-canonical-in-sitemap URLs and fix the generator condition.
+
+**Status:** 🟡 Mixed (schema cleanup ✅, sitemap noindex residual)
 
 ---
 

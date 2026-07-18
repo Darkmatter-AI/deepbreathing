@@ -3644,9 +3644,9 @@ const hopeCartelPage: BreathingPageContent = {
     intro: "Hope Cartel is one of the largest delivery brands for 9D Breathwork — the audio-layered guided breathing format created by Brian Kelly. Based in Melton, Victoria, they run group sessions at their dedicated venue, private 1:1s, online sessions, and touring events across Australia. Below: who they are, what a Hope Cartel session actually looks like, what it costs, and how the underlying breath protocol works (which you can try right now, free)."
   },
   meta: {
-    title: "Hope Cartel 9D Breathwork: Sessions, Pricing, What to Expect",
-    description: "Hope Cartel is one of the biggest 9D breathwork delivery brands. What a session looks like, where to find them, what it costs, and how the underlying breath works — try it free here.",
-    ogTitle: "Hope Cartel 9D Breathwork: Sessions, Pricing, What to Expect",
+    title: "Hope Cartel 9D Breathwork: Reviews, Pricing & What to Expect",
+    description: "Hope Cartel reviews, pricing, and what a 9D breathwork session is really like. Independent guide to Australia's biggest 9D delivery brand — plus the breath itself, free.",
+    ogTitle: "Hope Cartel 9D Breathwork: Reviews, Pricing & What to Expect",
     ogDescription: "Honest plain-English guide to Hope Cartel — Australian 9D breathwork community founded by Garry Wright. Plus a free pacer for the breath protocol itself.",
     ogImage: "og/breathe-hope-cartel-9d-breathwork.png",
     twitterTitle: "Hope Cartel 9D Breathwork Explained",
@@ -3654,7 +3654,7 @@ const hopeCartelPage: BreathingPageContent = {
     author: "Abi Abiassi",
     reviewer: "",
     datePublished: "2026-05-06",
-    dateModified: "2026-05-06"
+    dateModified: "2026-07-18"
   },
   body: [
     {
@@ -3668,6 +3668,10 @@ const hopeCartelPage: BreathingPageContent = {
     {
       heading: "Pricing and where to find them",
       content: "Hope Cartel's pricing isn't always published publicly — most listings are gated behind a booking flow at [hopecartel.com.au](https://hopecartel.com.au). Industry-standard 9D pricing in Australia runs roughly AUD $40-80 for group sessions, AUD $150-300 for private 1:1s. Their physical venue is in Melton, Victoria; touring schedules cover Sydney, Brisbane, Perth, and other major cities throughout the year. They also sell digital audio packages (the \"Breathe Bundle\") for at-home practice. International audiences typically can't attend live but can buy the audio."
+    },
+    {
+      heading: "Hope Cartel reviews: what attendees say",
+      content: "We're independent — not affiliated with Hope Cartel — so treat this as a map to the real reviews rather than a verdict. The most useful places to read first-hand accounts: the Google reviews on the Hope HQ venue in Melton, the comment threads under Hope Cartel's own TikTok and Instagram posts, and Australian breathwork groups on Facebook. Publicly posted attendee accounts tend to repeat the same themes: the emotional release is far more intense than people expect from \"a breathing class\", the group atmosphere is welcoming to first-timers, and Garry Wright's facilitation and recovery story are a big part of why people come back. The recurring caveats are the flip side of the same coin — the intensity catches some first-timers off guard (tetany, crying, feeling wiped out afterward is normal for this style of breathwork), and popular sessions book out. If you're weighing it up, read the venue reviews for the session you'd actually attend (Melton HQ vs a touring event in Sydney, Brisbane, or Perth), and skim the session walkthrough above so the intensity isn't a surprise."
     },
     {
       heading: "How the breath underneath works",
@@ -3708,7 +3712,7 @@ const hopeCartelPage: BreathingPageContent = {
   ],
   faqs: [
     {
-      question: "What is Hope Cartel 9D breathwork?",
+      question: "What is Hope Cartel?",
       answer: "Hope Cartel is an Australian breathwork community delivering the 9D Breathwork format. Founded by Garry \"Gaz\" Wright, they run in-person group sessions at \"Hope HQ\" in Melton VIC, plus private 1:1s, online sessions, and touring events. The format is a 60-120 minute guided session combining conscious connected breathing with a nine-layer audio soundtrack. They are not the protocol owner — that's Brian Kelly's licensed 9D system — but they're one of the largest English-speaking delivery brands."
     },
     {
@@ -3718,6 +3722,14 @@ const hopeCartelPage: BreathingPageContent = {
     {
       question: "How much does a Hope Cartel session cost?",
       answer: "Hope Cartel doesn't publish pricing publicly — most listings are behind a booking flow. Industry-standard 9D pricing in Australia runs roughly AUD $40-80 for group sessions and AUD $150-300 for private 1:1s. Their digital \"Breathe Bundle\" audio package is sold separately for at-home practice."
+    },
+    {
+      question: "What do Hope Cartel reviews say?",
+      answer: "First-hand reviews live on the Hope HQ Melton Google listing, in comments under Hope Cartel's TikTok and Instagram posts, and in Australian breathwork Facebook groups. Common themes in public attendee accounts: the emotional release is more intense than expected, the group container feels welcoming to first-timers, and Garry Wright's facilitation is the draw. Common caveats: the intensity (tetany, crying, post-session fatigue) surprises people who expected a relaxation class, and popular sessions book out. We're independent of Hope Cartel — read the reviews for the specific venue or event you'd attend."
+    },
+    {
+      question: "Does Hope Cartel run sessions in Perth?",
+      answer: "Hope Cartel's home venue is in Melton, Victoria, but they run touring events across Australian capital cities, and Perth has appeared on past tour schedules alongside Sydney, Brisbane, and Adelaide. Dates change, so check the current schedule at hopecartel.com.au. If no Perth date is listed, their online group sessions are the alternative — or search for other certified 9D Breathwork facilitators in WA, since the format is licensed to many delivery brands."
     },
     {
       question: "Is Hope Cartel the same as 9D Breathwork the brand?",
@@ -3830,6 +3842,9 @@ const hopeCartelPage: BreathingPageContent = {
     "hope cartel sessions",
     "hope cartel pricing",
     "hope cartel melton",
+    "hope cartel melton reviews",
+    "hope cartel perth",
+    "what is hope cartel",
     "garry wright breathwork",
     "9d breathwork australia",
     "9d breathwork melbourne",
