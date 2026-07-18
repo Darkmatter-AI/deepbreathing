@@ -295,42 +295,42 @@
       "routeId": "breathe-coherent"
     },
     "/breathe/hope-cartel-9d-breathwork": {
-      "contentMessages": 87,
+      "contentMessages": 93,
       "locales": {
         "de-de": {
           "chromeMessages": 55,
           "chromePath": "chrome/de-de/hope-cartel-9d-breathwork.json",
-          "publishable": true,
+          "publishable": false,
           "routePath": "routes/de-de/hope-cartel-9d-breathwork.json",
-          "unresolved": 0
+          "unresolved": 7
         },
         "es-es": {
           "chromeMessages": 55,
           "chromePath": "chrome/es-es/hope-cartel-9d-breathwork.json",
-          "publishable": true,
+          "publishable": false,
           "routePath": "routes/es-es/hope-cartel-9d-breathwork.json",
-          "unresolved": 0
+          "unresolved": 7
         },
         "fr-fr": {
           "chromeMessages": 55,
           "chromePath": "chrome/fr-fr/hope-cartel-9d-breathwork.json",
-          "publishable": true,
+          "publishable": false,
           "routePath": "routes/fr-fr/hope-cartel-9d-breathwork.json",
-          "unresolved": 0
+          "unresolved": 7
         },
         "ja-jp": {
           "chromeMessages": 55,
           "chromePath": "chrome/ja-jp/hope-cartel-9d-breathwork.json",
-          "publishable": true,
+          "publishable": false,
           "routePath": "routes/ja-jp/hope-cartel-9d-breathwork.json",
-          "unresolved": 0
+          "unresolved": 7
         },
         "pt-br": {
           "chromeMessages": 55,
           "chromePath": "chrome/pt-br/hope-cartel-9d-breathwork.json",
-          "publishable": true,
+          "publishable": false,
           "routePath": "routes/pt-br/hope-cartel-9d-breathwork.json",
-          "unresolved": 0
+          "unresolved": 7
         }
       },
       "routeId": "breathe-hope-cartel-9d-breathwork"
