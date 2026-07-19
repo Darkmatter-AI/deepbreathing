@@ -40,22 +40,36 @@ export function useNativePhaseAudio() {
   }, []);
 
   return useCallback(async (phase: unknown, muted: boolean) => {
-    if (muted) return;
     const cue = cueForPhase(phase);
-    if (!cue) return;
+    if (__DEV__) {
+      console.log(`[cue-audio] phase=${String(phase)} cue=${cue ?? 'none'} muted=${muted}`);
+    }
+    if (muted || !cue) return;
 
-    try {
-      let player = playersRef.current[cue];
-      if (!player) {
+    let player = playersRef.current[cue];
+    if (!player) {
+      try {
         player = createAudioPlayer(cueSources[cue]);
         player.loop = false;
         player.volume = 1;
         playersRef.current[cue] = player;
+      } catch (error) {
+        if (__DEV__) console.warn('[cue-audio] player create failed', error);
+        return;
       }
+    }
+    // seekTo can reject while the source is still loading; a failed rewind
+    // must not block the play attempt (a cue that starts at 0 anyway).
+    try {
       await player.seekTo(0);
+    } catch (error) {
+      if (__DEV__) console.warn('[cue-audio] seekTo failed', error);
+    }
+    try {
       player.play();
-    } catch {
-      // Audio feedback must never interrupt the breathing clock.
+      if (__DEV__) console.log(`[cue-audio] play() ok — ${cue}`);
+    } catch (error) {
+      if (__DEV__) console.warn('[cue-audio] play failed', error);
     }
   }, []);
 }

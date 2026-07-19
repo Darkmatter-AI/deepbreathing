@@ -100,6 +100,7 @@ export default function HomeScreen() {
   const hydratedUserIdRef = useRef<string | null>(null);
   const nativeAudioMutedRef = useRef(false);
   const edgeGlowOpacity = useRef(new Animated.Value(0)).current;
+  const accountButtonOpacity = useRef(new Animated.Value(1)).current;
   const playNativePhaseAudio = useNativePhaseAudio();
 
   // Completion summary visibility.
@@ -136,6 +137,17 @@ export default function HomeScreen() {
       useNativeDriver: true,
     }).start();
   }, [edgeGlowOpacity, isSessionRunning]);
+
+  // Native overlays fade instead of popping out when a session starts or the
+  // full-page settings covers the screen (matches the webview's own fades).
+  const overlaysVisible = !isSessionRunning && !settingsOpen;
+  useEffect(() => {
+    Animated.timing(accountButtonOpacity, {
+      toValue: overlaysVisible ? 1 : 0,
+      duration: 420,
+      useNativeDriver: true,
+    }).start();
+  }, [accountButtonOpacity, overlaysVisible]);
 
   // Warm the GA4 client_id cache early so the first event doesn't pay the
   // AsyncStorage round-trip latency.
@@ -442,15 +454,21 @@ export default function HomeScreen() {
             onDismiss={handleDismissSummary}
           />
         )}
-        {!isSessionRunning && !settingsOpen && (
+        <Animated.View
+          pointerEvents={overlaysVisible ? 'auto' : 'none'}
+          style={[
+            styles.accountButtonWrap,
+            { top: safeAreaInsets.top + 14, opacity: accountButtonOpacity },
+          ]}
+        >
           <Pressable
             onPress={handleOpenAccount}
             accessibilityRole="button"
             accessibilityLabel={authSession?.user ? 'Open account' : 'Sign in to sync'}
+            accessibilityElementsHidden={!overlaysVisible}
             style={[
               styles.accountButton,
               {
-                top: safeAreaInsets.top + 14,
                 backgroundColor: theme === 'dark' ? 'rgba(49,31,24,0.78)' : 'rgba(255,249,243,0.82)',
                 borderColor: theme === 'dark' ? '#604536' : '#e3cdbb',
               },
@@ -470,16 +488,15 @@ export default function HomeScreen() {
               </View>
             )}
           </Pressable>
-        )}
-        {/* MOB-5: Mode library pull-up tab — hidden while a session is running
-            and while the full-page settings covers the screen. */}
-        {!isSessionRunning && !settingsOpen && (
-          <ModeLibrarySheet
-            theme={theme}
-            activeModeName={activeModeName}
-            onSelectMode={handleSelectMode}
-          />
-        )}
+        </Animated.View>
+        {/* MOB-5: Mode library pull-up tab — slides away while a session is
+            running or the full-page settings covers the screen. */}
+        <ModeLibrarySheet
+          theme={theme}
+          hidden={!overlaysVisible}
+          activeModeName={activeModeName}
+          onSelectMode={handleSelectMode}
+        />
         <AccountSheet
           open={accountOpen}
           theme={theme}
@@ -495,10 +512,12 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#000' },
   safeArea: { flex: 1 },
-  accountButton: {
+  accountButtonWrap: {
     position: 'absolute',
     left: 16,
     zIndex: 95,
+  },
+  accountButton: {
     width: 42,
     height: 42,
     borderRadius: 21,

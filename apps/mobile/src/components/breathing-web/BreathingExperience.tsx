@@ -1154,24 +1154,25 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
         <ParticleBackground phase={phase} color={themeColor} speedMultiplier={speedMultiplier} />
       )}
 
-      {!isRunning && (
-        <header
-          className="fixed inset-x-0 top-0 z-30 flex items-center justify-end gap-2 p-6"
-          style={{
-            paddingTop: safeAreaInsets.top + 24,
-            paddingRight: safeAreaInsets.right + 24,
-            paddingLeft: safeAreaInsets.left + 24,
-          }}
-        >
+      <header
+        className={`fixed inset-x-0 top-0 z-30 flex items-center justify-end gap-2 p-6 transition-all duration-700 ease-out ${
+          isRunning ? 'pointer-events-none -translate-y-2 opacity-0' : 'translate-y-0 opacity-100'
+        }`}
+        style={{
+          paddingTop: safeAreaInsets.top + 24,
+          paddingRight: safeAreaInsets.right + 24,
+          paddingLeft: safeAreaInsets.left + 24,
+        }}
+      >
           <button
             onClick={() => setControlsOpen(true)}
+            tabIndex={isRunning ? -1 : 0}
             className="inline-flex items-center justify-center rounded-full border border-border/60 bg-card/80 p-2.5 text-muted-foreground shadow-sm backdrop-blur transition-colors hover:bg-card dark:border-border/40 dark:bg-card/40 dark:text-card-foreground"
             aria-label={getSafePhrase('ui.settings')}
           >
             <SettingsIcon size={16} />
           </button>
         </header>
-      )}
 
       <main className={`relative z-10 flex flex-1 flex-col items-center justify-center sm:pb-0 ${noMobileBottomPad ? 'pb-24' : 'pb-44'}`}>
         {/* Protocol UI: Round and breath counter */}
@@ -1207,27 +1208,32 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
           onClick={handleTogglePlay}
         />
 
-        {/* Duration chips — visible before session starts */}
-        {!isRunning && (
-          <div className="mt-5 flex items-center gap-1.5">
-            {durationOptions.filter(o => o.value !== null).map((option) => {
-              const isSelected = selectedDuration === option.value;
-              return (
-                <button
-                  key={option.value ?? 'open'}
-                  onClick={() => handleDurationSelect(option.value)}
-                  className={`rounded-full px-3 py-1 text-xs font-medium transition-all ${
-                    isSelected
-                      ? 'bg-card/80 text-card-foreground shadow-sm backdrop-blur'
-                      : 'text-muted-foreground hover:text-card-foreground'
-                  }`}
-                >
-                  {option.label}
-                </button>
-              );
-            })}
-          </div>
-        )}
+        {/* Duration chips — fade out on session start. Stays mounted so the
+            layout doesn't reflow and shift the visualizer mid-transition. */}
+        <div
+          className={`mt-5 flex items-center gap-1.5 transition-all duration-700 ease-out ${
+            isRunning ? 'pointer-events-none translate-y-2 opacity-0' : 'translate-y-0 opacity-100'
+          }`}
+          aria-hidden={isRunning}
+        >
+          {durationOptions.filter(o => o.value !== null).map((option) => {
+            const isSelected = selectedDuration === option.value;
+            return (
+              <button
+                key={option.value ?? 'open'}
+                onClick={() => handleDurationSelect(option.value)}
+                tabIndex={isRunning ? -1 : 0}
+                className={`rounded-full px-3 py-1 text-xs font-medium transition-all ${
+                  isSelected
+                    ? 'bg-card/80 text-card-foreground shadow-sm backdrop-blur'
+                    : 'text-muted-foreground hover:text-card-foreground'
+                }`}
+              >
+                {option.label}
+              </button>
+            );
+          })}
+        </div>
 
         {/* End Hold button for Wim Hof retention phase */}
         {isProtocolMode && protocolState.phase === ProtocolPhase.RetentionHold && protocolState.retentionTime >= WIM_HOF_PROTOCOL.retentionHoldMin && (
