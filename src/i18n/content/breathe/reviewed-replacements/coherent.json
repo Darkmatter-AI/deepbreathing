@@ -1,0 +1,24 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "Maîtriser la cohérence cardiaque : la science des 5 respirations par minute (Entraîneur gratuit) | Exercices de Respiration Profonde",
+      "locale": "fr-fr",
+      "reason": "Bing CTR experiment 2026-07-19: FR queries are exercise/timer-intent (cohérence cardiaque exercice / 5 minutes / avec minuteur, 819 impressions, 0.24% CTR); the science-first title mismatches that intent.",
+      "replacement": "Cohérence cardiaque : exercice guidé gratuit de 5 minutes (avec minuteur) | Exercices de Respiration Profonde",
+      "reviewedSourceHash": "5de10a43a6eaaf3fce0a7983f2af32b27d4c763d03ebe50983084096509d1716",
+      "sourcePath": "meta.title",
+      "sourceText": "Coherent Breathing Timer: 5-6 Breaths Per Minute for HRV (Free)"
+    },
+    {
+      "currentCatalogValue": "Minuteur gratuit pour la cohérence cardiaque – entraînez votre VRC et votre résilience au stress en 5 minutes. Rythme de 5-6 respirations/min. Démarrez votre séance guidée dès maintenant.",
+      "locale": "fr-fr",
+      "reason": "Bing CTR experiment 2026-07-19: align the description with exercise intent and the French méthode 365 vocabulary searchers use.",
+      "replacement": "Exercice de cohérence cardiaque gratuit : 5 minutes guidées au rythme de 5 à 6 respirations par minute (compatible méthode 365). Minuteur visuel dans le navigateur, sans inscription.",
+      "reviewedSourceHash": "a6b324b1689c92cb548e3460f7242b7cc1dcb8fa5e108da268d5fa178a7c3da5",
+      "sourcePath": "meta.description",
+      "sourceText": "Free coherent breathing timer: train HRV and stress resilience in 5 minutes. 5-6 breaths/min pace. Start your guided session now."
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/breathe/coherent"
+}

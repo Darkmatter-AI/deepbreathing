@@ -18,6 +18,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-07-19 | [FR Coherent Bing CTR — Exercise-Intent Title + Meta Rewrite](#2026-07-19-fr-coherent-bing-ctr--exercise-intent-title--meta-rewrite) | 🔄 Implemented |
 | 2026-07-18 | [Hope Cartel Reviews-Intent Capture — Reviews Section + Exact-Match FAQs + Title](#2026-07-18-hope-cartel-reviews-intent-capture--reviews-section--exact-match-faqs--title) | 🔄 Implemented |
 | 2026-07-15 | [Native Translation Serving Migration — Preserve Locale URLs, Remove Proxy Rendering](#2026-07-15-native-translation-serving-migration--preserve-locale-urls-remove-proxy-rendering) | ⏳ Waiting (preview gates) |
 | 2026-07-10 | [Canonical Hijack — 2 Locale Pages Merged With Casino Domain (747live.bet)](#2026-07-10-canonical-hijack--2-locale-pages-merged-with-casino-domain-747livebet) | ✅ Success |
@@ -77,13 +78,33 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-01-06 | [Navy SEAL Content Expansion](#2026-01-06-navy-seal-content-expansion) | ❌ Failed |
 | 2026-01-06 | [CTR Title Rewrites (Batch 1)](#2026-01-06-ctr-title-rewrites-batch-1) | ✅ Success |
 
-**Roll-up by status (55 entries):** ✅ 4 Success · ❌ 11 Failed · ⚪ 12 Inconclusive · 🟡 3 Mixed · ⏳ 1 Waiting · 🔄 16 Implemented · 📊 8 Snapshot. *(2026-07-18 autoresearch cycle 1: settled 5 overdue verdicts — ?duration= hreflang ✅, trailing-slash ❌ superseded, Tummo 🟡, 404 root-cause ❌, crawl hygiene 🟡; +hope-cartel reviews-intent entry. 2026-07-15: +native translation serving migration planning entry. 2026-06-21: audio-v2 rebase folded in the 2026-05-18 Indexing-Recovery Checkpoint snapshot. 2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
+**Roll-up by status (56 entries):** ✅ 4 Success · ❌ 11 Failed · ⚪ 12 Inconclusive · 🟡 3 Mixed · ⏳ 1 Waiting · 🔄 17 Implemented · 📊 8 Snapshot. *(2026-07-19: +FR coherent Bing CTR rewrite. 2026-07-18 autoresearch cycle 1: settled 5 overdue verdicts — ?duration= hreflang ✅, trailing-slash ❌ superseded, Tummo 🟡, 404 root-cause ❌, crawl hygiene 🟡; +hope-cartel reviews-intent entry. 2026-07-15: +native translation serving migration planning entry. 2026-06-21: audio-v2 rebase folded in the 2026-05-18 Indexing-Recovery Checkpoint snapshot. 2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
 
 See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of what worked / failed / strategic insights from the first month of experiments.
 
 ---
 
 ## Active Experiments
+
+### 2026-07-19: FR Coherent Bing CTR — Exercise-Intent Title + Meta Rewrite
+
+**Context.** The 2026-07-18 Bing research workflow found `/fr/breathe/coherent` is the single biggest underperforming locale pool on Bing: **819 impressions / 2 clicks (0.24% CTR) at pos 6–9** over the rolling ~6-month page stats, and **zero Google queries** for the page (Bing-only surface). Live Bing query pull (GetPageQueryStats, 2026-07-19): `cohérence cardiaque` 98 impr, `coherence cardiaque exercice` 95, `cohérence cardiaque 5 minutes` 80, `cohérence cardiaque avec minuteur` (pos 2!) — all ~0% CTR. The intent is exercise/timer; the FR title led with "la science des 5 respirations par minute" (a stale translation of the pre-May-5 EN title — the May 5 EN rewrite was never re-translated).
+
+**Hypothesis:** Retitling to lead with the head term + exercise intent ("Cohérence cardiaque : exercice guidé gratuit de 5 minutes (avec minuteur)") and rewriting the description around exercise vocabulary + the French `méthode 365` term lifts Bing CTR on a pool where we already hold pos 6–9 (and pos 2 on the minuteur query). Same "Free X Timer" tool-intent playbook that works for EN, applied where the impressions actually are. Note: the EN version of this exact play FAILED on Google (2026-05-05 coherent rewrite) because Google's SERP was click-killed; Bing's is not (site CTR on Bing runs ~2.5%).
+
+**Change:** New `src/i18n/content/breathe/reviewed-replacements/coherent.json` pinning fr-fr `meta.title` and `meta.description` overrides to the current EN source (hash-bound); recompiled structured-breathe artifacts (70/70 publishable, 0 unresolved). FR only — es/de/ja/pt untouched.
+
+**Baseline (Bing Webmaster, pulled 2026-07-19):** page rolling ~6mo: 819 impr / 2 clicks / 0.24% CTR / pos 6–9. Top queries all ≈0% CTR (see Context).
+
+**Pre-committed criteria (evaluate 2026-08-16, on the 28d post-deploy Bing window for the page):**
+- ✅ **Success:** page CTR ≥ **1.5%** (28d) OR ≥ 8 clicks/28d (vs ~0.3/28d-equivalent baseline)
+- ❌ **Failed:** CTR < 0.5% AND avg position degrades > 2 spots → revert the replacement file
+- ⚪ **Inconclusive:** in between, or < 150 impressions in the window
+- Guardrail: `cohérence cardiaque avec minuteur` (pos 2) must not fall out of top 5.
+
+**Measure-after:** 2026-08-16 (pull via orangepi digest API key: GetPageStats + GetPageQueryStats). Status: 🔄 Implemented.
+
+---
 
 ### 2026-07-18: Hope Cartel Reviews-Intent Capture — Reviews Section + Exact-Match FAQs + Title
 
