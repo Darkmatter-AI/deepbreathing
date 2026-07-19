@@ -48,9 +48,11 @@ Stopped at 24 as instructed.
 
 ## Blocker before the first send
 
-**Pull the Ahrefs referring-domain baseline manually on the Mac first.** The CRM requires this batch to be logged in [SEO-EXPERIMENTS.md](../SEO-EXPERIMENTS.md) with baseline referring-domain counts and pre-committed success criteria *before* it ships. Without the baseline pulled at a known timestamp, there is no way to attribute any later gain to this batch, and the entry drifts to inconclusive by default. Ahrefs is browser-only and was not touched here.
+~~Pull the Ahrefs referring-domain baseline manually on the Mac first.~~ **Done 2026-07-19.** Baseline pinned and the experiment logged in [SEO-EXPERIMENTS.md](../SEO-EXPERIMENTS.md) → "Link Outreach Batch — 24 Verified Targets".
 
-Suggested pre-commitment, to fill in once the baseline number exists: **Success = +6 referring domains from these 16 targets within 90 days of first send.**
+Baseline: **300** referring domains all link types, **28** dofollow only (Ahrefs Site Explorer, subdomains mode, http + https, live).
+
+**Read the criteria before measuring anything.** Referring domains grew +279 in 6 months and it is almost all SPAM-tagged link-farm junk we did not buy, running at roughly +46/month. The all-link-types count is therefore noise and is explicitly *not* a success criterion. Success is measured as **≥6 of the 24 named targets carrying a live link at 90 days** (verified by fetching each page), with dofollow refdomains ≥34 as the secondary Ahrefs read.
 
 ## Ranked send order for Monday
 

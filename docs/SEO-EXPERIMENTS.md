@@ -18,6 +18,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-07-19 | [Link Outreach Batch — 24 Verified Targets (Baseline + Pre-Commitment)](#2026-07-19-link-outreach-batch--24-verified-targets-baseline--pre-commitment) | 🔄 Implemented |
 | 2026-07-19 | [FR Coherent Bing CTR — Exercise-Intent Title + Meta Rewrite](#2026-07-19-fr-coherent-bing-ctr--exercise-intent-title--meta-rewrite) | 🔄 Implemented |
 | 2026-07-19 | [Homepage Server-Rendered Content — Fix Full-Page CSR Bailout](#2026-07-19-homepage-server-rendered-content--fix-full-page-csr-bailout) | 🔄 Implemented |
 | 2026-07-18 | [Hope Cartel Reviews-Intent Capture — Reviews Section + Exact-Match FAQs + Title](#2026-07-18-hope-cartel-reviews-intent-capture--reviews-section--exact-match-faqs--title) | 🔄 Implemented |
@@ -86,6 +87,46 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 ---
 
 ## Active Experiments
+
+### 2026-07-19: Link Outreach Batch — 24 Verified Targets (Baseline + Pre-Commitment)
+
+**Context.** First real link-outreach push. [`docs/OUTREACH-CRM.md`](OUTREACH-CRM.md) holds 48 verified targets; 24 have drafted outreach in [`docs/outreach-drafts/`](outreach-drafts/) with send order and effort estimates in [`outreach-drafts/SUMMARY.md`](outreach-drafts/SUMMARY.md). Nothing has been sent yet — this entry exists so the baseline is pinned *before* the first send, per the CRM's own rule. The recurring hook across targets is dead-app rot: Breathe2Relax, Tactical Breather, MyLife/Stop-Breathe-&-Think and Pacifica are discontinued but still linked on university, library and school-counselor resource pages.
+
+Prior related result: [Embed Widget Page](#2026-03-19-embed-widget-page--share-popover--llmstxt) ❌ Failed 2026-03-19 (0 referring domains in 3 months) established that passive linkability does not work. This batch is the active-outreach counterpart.
+
+**Hypothesis:** Direct, specific outreach that names a concrete dead link on the target's own page converts materially better than generic tool pitches, and a handful of genuine editorial links is enough to compete in these SERPs — because neither ranking competitor has real authority (breathwork.tools and box-breathing.org are ~95% purchased spam and nofollow blog-comment spam respectively, per the Ahrefs competitor pull in the CRM).
+
+**Baseline (Ahrefs Site Explorer, pulled 2026-07-19 via browser, Darkmatter account, projectId 9300406):**
+
+Exact metric scope, because the headline number is misleading and the definition matters:
+
+| Metric | Value | Scope |
+|---|---:|---|
+| Referring domains, **all link types** (live) | **300** | Referring domains report; target `deepbreathingexercises.com/`, mode **Subdomains**, protocol **http + https**, Best links **Off**, filter **All** |
+| Referring domains, **dofollow only** (live) | **28** | Same scope, filter **Dofollow** |
+| Referring domains (Overview card, live) | 299 | Same scope. The 300/299 gap is report-vs-overview snapshot timing, not a real difference |
+| Referring domains, all time | 464 | Includes lost |
+| Backlinks (live / all time) | 308 / 822 | Same scope |
+| DR | 4.3 | +4.3 over the last 6 months |
+
+**⚠️ Finding that changes how this must be measured.** Referring domains grew **+279 in the last 6 months** (20 → 299), and the growth is almost entirely SPAM-tagged link farms we did not buy: `rankyour.website` (DR 74), `buybacklinks.agency` (DR 71), `fiverr-affordable-seo-services.site` (DR 70), `rank-optimizer.website` (DR 66), `rank-top.click` (DR 60), `linkrankpro.ch`. That is roughly **+46 junk domains/month**. The entire +4.3 DR rise is this noise.
+
+So the all-link-types referring-domain count is **unusable** as an outreach metric: at ~46/month of inbound junk, a real gain of 6 links over 90 days sits inside a noise band of ~140. Measuring on it would guarantee an unreadable verdict. Criteria below are therefore bound to metrics where the signal survives.
+
+(Separately: ~27 spam domains were disavowed [2026-02-06](#2026-02-06-disavow-spam-backlinks--fix-app-route). The problem has escalated roughly 10× since. That needs its own entry and is **not** in scope here.)
+
+**Pre-committed criteria (evaluate 90 days after the first send):**
+
+- ✅ **Success (primary, attribution-based):** ≥ **6 of the 24 named targets** carry a live link to deepbreathingexercises.com, verified by fetching each target page individually. Noise-immune — it does not depend on Ahrefs at all.
+- ✅ **Success (secondary, Ahrefs):** **dofollow** referring domains ≥ **34** (28 + 6), same scope as the baseline table above.
+- ❌ **Failed:** ≤ 1 target linked AND dofollow refdomains ≤ 29. Conclusion would be that cold outreach does not convert for this category, and the next lever is directories and press rather than curator email.
+- ⚪ **Inconclusive:** 2–5 targets linked, or fewer than 16 of the 24 actually sent inside the window (under-execution, not a failed hypothesis — re-run rather than judge).
+- **Explicitly not a criterion:** the all-link-types referring-domain count. Recorded above for completeness only.
+- Reply rate is worth logging per target in the CRM but is not a success criterion; a reply that never becomes a link is not a result.
+
+**Measure-after:** 90 days from first send. First send planned for the week of 2026-07-20 → **evaluate 2026-10-19**. If the first send slips more than two weeks, re-pull the baseline before starting the clock, since the spam influx moves the dofollow figure too. Status: 🔄 Implemented (baseline pinned, nothing sent).
+
+---
 
 ### 2026-07-19: FR Coherent Bing CTR — Exercise-Intent Title + Meta Rewrite
 
