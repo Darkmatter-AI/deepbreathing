@@ -21,6 +21,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-07-19 | [FR Coherent Bing CTR — Exercise-Intent Title + Meta Rewrite](#2026-07-19-fr-coherent-bing-ctr--exercise-intent-title--meta-rewrite) | 🔄 Implemented |
 | 2026-07-19 | [Homepage Server-Rendered Content — Fix Full-Page CSR Bailout](#2026-07-19-homepage-server-rendered-content--fix-full-page-csr-bailout) | 🔄 Implemented |
 | 2026-07-18 | [Hope Cartel Reviews-Intent Capture — Reviews Section + Exact-Match FAQs + Title](#2026-07-18-hope-cartel-reviews-intent-capture--reviews-section--exact-match-faqs--title) | 🔄 Implemented |
+| 2026-07-18 | [Post-Translation Migration Audit — Native Routing + GA4 Integrity](#2026-07-18-post-translation-migration-audit--native-routing--ga4-integrity) | 📊 Snapshot |
 | 2026-07-15 | [Native Translation Serving Migration — Preserve Locale URLs, Remove Proxy Rendering](#2026-07-15-native-translation-serving-migration--preserve-locale-urls-remove-proxy-rendering) | ⏳ Waiting (preview gates) |
 | 2026-07-10 | [Canonical Hijack — 2 Locale Pages Merged With Casino Domain (747live.bet)](#2026-07-10-canonical-hijack--2-locale-pages-merged-with-casino-domain-747livebet) | ✅ Success |
 | 2026-07-09 | [Retire Dead Submission Paths — Indexing API, Sitemap Pings; Durable URL Inspection](#2026-07-09-retire-dead-submission-paths) | 📊 Snapshot |
@@ -79,7 +80,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-01-06 | [Navy SEAL Content Expansion](#2026-01-06-navy-seal-content-expansion) | ❌ Failed |
 | 2026-01-06 | [CTR Title Rewrites (Batch 1)](#2026-01-06-ctr-title-rewrites-batch-1) | ✅ Success |
 
-**Roll-up by status (57 entries):** ✅ 4 Success · ❌ 11 Failed · ⚪ 12 Inconclusive · 🟡 3 Mixed · ⏳ 1 Waiting · 🔄 18 Implemented · 📊 8 Snapshot. *(2026-07-19: +FR coherent Bing CTR rewrite; +homepage server-rendered content fix. 2026-07-18 autoresearch cycle 1: settled 5 overdue verdicts — ?duration= hreflang ✅, trailing-slash ❌ superseded, Tummo 🟡, 404 root-cause ❌, crawl hygiene 🟡; +hope-cartel reviews-intent entry. 2026-07-15: +native translation serving migration planning entry. 2026-06-21: audio-v2 rebase folded in the 2026-05-18 Indexing-Recovery Checkpoint snapshot. 2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
+**Roll-up by status (61 entries):** ✅ 6 Success · ❌ 12 Failed · ⚪ 12 Inconclusive · 🟡 4 Mixed · ⏳ 2 Waiting · 🔄 15 Implemented · 📊 10 Snapshot. *(2026-07-19: roll-up recounted directly from the Index rows while merging the 07-18 audit entry. +FR coherent Bing CTR rewrite; +homepage server-rendered content fix. 2026-07-18 autoresearch cycle 1: settled 5 overdue verdicts — ?duration= hreflang ✅, trailing-slash ❌ superseded, Tummo 🟡, 404 root-cause ❌, crawl hygiene 🟡; +hope-cartel reviews-intent entry. 2026-07-18: roll-up reconciled to the actual Index rows; +post-translation migration audit and verified native-routing/GA4-integrity repairs. 2026-06-21: audio-v2 rebase folded in the 2026-05-18 Indexing-Recovery Checkpoint snapshot. 2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
 
 See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of what worked / failed / strategic insights from the first month of experiments.
 
@@ -166,6 +167,58 @@ Tracked-cluster totals: **8 clicks / 924 impressions / 0.87% CTR**. Whole page (
 **Status:** 🔄 Implemented (2026-07-18)
 
 ---
+
+### 2026-07-18: Post-Translation Migration Audit — Native Routing + GA4 Integrity
+
+**Verdict after remediation: HEALTHY WITH WATCH ITEMS.** The audit covered the full migrated locale cohort (`/es`, `/pt`, `/fr`, `/de`, `/ja`) after the 2026-07-16 native-i18n cutover. Live GSC and GA4 access were proven; this was not an inferred or access-limited review.
+
+**Evidence dates and cohort:**
+
+- GSC Search Analytics finalized through **2026-07-16**.
+- Mature GA4 cutoff **2026-07-16**, using the 28-day window **2026-06-19 through 2026-07-16** so `engagedSessions` had its required ~48 h to settle.
+- URL Inspection states pulled live **2026-07-18**; these states can drift between reads.
+- Tracked indexing cohort: **312/331 indexed**, including 7 newly indexed since the 2026-07-09 refresh. The 19 non-pass rows comprised 5 stale proxy-era methodology rows and 14 valid URLs.
+- Valid non-pass URLs: 8 crawled-not-indexed, 2 discovered-not-indexed, and 4 duplicate-canonical states. Only `/fr/breathe/physiological-sigh` choosing `/es/breathe/physiological-sigh` remained an actionable canonical watch item; its last crawl predated the native cutover.
+- Representative Googlebot fetches returned localized native HTML with the intended `lang`, localized titles, self-canonicals, hreflang, and substantial translated content. No broad translation/template leakage or content-quality regression was established.
+
+**Confirmed issues found and disposition:**
+
+1. **Native legacy-route parity regression — fixed.** Proxy-era URL classes such as double-locale paths, `/{locale}/languages`, and `/{locale}/about/methodology` returned 404 after native cutover. [PR #44](https://github.com/Darkmatter-AI/deepbreathing/pull/44) restored native/native-preview redirects while leaving proxy mode unchanged. It merged into `main` as `230fe99` on 2026-07-18.
+2. **GA4 host contamination and page-path semantics — fixed prospectively.** In the mature 28-day baseline, about **16% of ~7,004 screen page views** came from non-production hosts (`origin.`, Vercel previews, localhost, or LAN IPs). `page_path` also included query-string fragmentation. [PR #43](https://github.com/Darkmatter-AI/deepbreathing/pull/43) now initializes GA4 only on the apex/www production hosts, keeps `page_path` pathname-only, and retains the full URL in `page_location`. Historical contaminated data remains historical; the fix cleans new collection.
+3. **Stale GSC sitemap registrations — still administrative follow-up.** Eleven obsolete locale/http sitemap registrations remained in GSC and some now return 404. The canonical sitemap is healthy. Removing obsolete registrations is a GSC-admin cleanup, not a repository or indexing-submission change.
+
+**Production verification on deployment `dpl_EwzJs9BvnWPqD2jfUKKaL2TvrKMN`:** GitHub and Vercel reported combined commit `230fe9924471f7da78756328788eb9c68fe7cc52` ready on production. Cache-busted live checks returned:
+
+| URL checked | Expected live result | Verified |
+|---|---|---|
+| `/fr/about/methodology` | 308 → `/fr/about/editorial-policy` | Yes |
+| `/es/about/methodology/path` | 308 → `/es/about/editorial-policy` | Yes |
+| `/de/languages` | 308 → `/languages` | Yes |
+| `/de/fr` | 308 → `/de/` | Yes |
+| `/de/fr/breathe/breath-of-fire` | 308 → `/de/breathe/breath-of-fire` | Yes |
+| `/fr/breathe/physiological-sigh` | 200, no redirect regression | Yes |
+
+Hydrated-browser verification also showed the GA script present on `deepbreathingexercises.com` and absent on both `origin.deepbreathingexercises.com` and the Vercel deployment hostname. The deployed JavaScript contains pathname-only `page_path` plus full-URL `page_location` behavior.
+
+**Known benign findings — do not reopen as new incidents without changed evidence:**
+
+- Five methodology queue rows are stale proxy-era redirect URLs absent from the sitemap, not five failed content pages.
+- The recurring GSC "Page with redirect" alert remains a known crawl-history class.
+- Two discovered-not-indexed URLs and three duplicate-with-self-canonical states are normal post-migration lag/flapping.
+- The recovered 747live.bet canonical-hijack pair remained self-canonical and indexed.
+- Do not rewrite the eight crawled-not-indexed translated pages before the native recrawl checkpoint; live content checks did not justify a quality rewrite.
+
+**Open measurement blind spots / watch items:**
+
+- Locale remains path-derived in GA4. No registered `locale` custom dimension or `locale_switch` event was added by these fixes.
+- Consent Mode/CMP behavior remains a product/legal decision; a future consent implementation will create a measurement discontinuity that must be annotated.
+- No post-cutover CrUX/field p75 claim was made. Recheck GSC Core Web Vitals and Speed Insights by locale once enough field data exists.
+- Watch `/fr/breathe/physiological-sigh` for the French→Spanish Google canonical mismatch after recrawl.
+- Watch the crawled-not-indexed count against the pre-committed 2026-08-09 criterion: success `<8`, failure `>=13`; it was exactly 8 on 2026-07-18.
+
+**Next checkpoints:** T+7 **2026-07-23** for early crawl/measurement drift; T+28 **2026-08-13** for the native-migration indexing/canonical verdict. Use finalized GSC data and a GA4 window ending at least two days before the run date. Do not request indexing merely because a translated page is still in normal post-migration lag.
+
+**Side-effect record:** The audit itself was read-only. It submitted no URLs or sitemaps and changed no GSC/GA4 admin configuration. The two confirmed repository defects were subsequently fixed through PRs #43 and #44, merged, automatically deployed, and verified live. The deliberately dirty `appstore/v1-submission-prep` checkout was preserved.
 
 ### 2026-07-15: Native Translation Serving Migration — Preserve Locale URLs, Remove Proxy Rendering
 
