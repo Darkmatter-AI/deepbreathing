@@ -29,6 +29,23 @@ Hook verification was read-only GET, performed 2026-07-19 between roughly 21:48 
 
 14 of 16 verified. The two unverified are both bot walls on login-gated pages, not evidence of anything wrong with the targets.
 
+## The next 8 (bonus batch, drafted after the 16)
+
+Continuing in CRM order. Fetched 2026-07-19 ~21:57 UTC. These are lower priority and several have weaker contact routes, so they sit below the 16 in the send order.
+
+| # | Target | Hook verified | Channel | Send effort |
+|---|---|---|---|---|
+| 17 | Art of Living | Yes | Contact form | 5 min, one try only |
+| 18 | ASU Library | Partial | Email Sierra.Schuman@asu.edu | 20 min, read subpage in browser first |
+| 19 | Pacific CAPS | Yes (**CRM row was wrong**) | Phone 209-946-2315 | 20 min, call |
+| 20 | NKU Steely Library | Yes | Report-a-problem link | 15 min, find guide owner first |
+| 21 | U Dayton | Partial (**CRM hook unconfirmable**) | Email counselingcenter@udayton.edu | 10 min |
+| 22 | JMU Counseling | Yes | Phone (540) 568-6552 | 20 min, call |
+| 23 | MindApps.org | Partial (JS-rendered) | digitalpsych.org contact | 10 min, ask-first message |
+| 24 | findly.tools | Yes (**with caveats**) | Submit form | 10 min, free tier only |
+
+Stopped at 24 as instructed.
+
 ## Blocker before the first send
 
 **Pull the Ahrefs referring-domain baseline manually on the Mac first.** The CRM requires this batch to be logged in [SEO-EXPERIMENTS.md](../SEO-EXPERIMENTS.md) with baseline referring-domain counts and pre-committed success criteria *before* it ships. Without the baseline pulled at a known timestamp, there is no way to attribute any later gain to this batch, and the entry drifts to inconclusive by default. Ahrefs is browser-only and was not touched here.
@@ -65,6 +82,19 @@ Suggested pre-commitment, to fill in once the baseline number exists: **Success 
 
 Rough load: blocks 1 to 4 are about 2 hours total. Product Hunt is a separate half day.
 
+**Block 6 — bonus batch, after the 16 have gone out**
+
+Send these only once the first 16 are away, and only if the reply rate justifies more volume.
+
+17. **Pacific CAPS** — three verified broken outbound links makes this the strongest hook of the bonus batch, but it is phone-only, so it costs more than its rank suggests.
+18. **JMU** — dead One Mind Psyber link plus no breathing tool at all. Also phone-only.
+19. **NKU Steely Library** — already links Do Nothing for 2 Minutes, same precedent as UMD.
+20. **ASU Library** — named librarian, but read the Wellness Resources subpage in a browser before writing.
+21. **findly.tools** — free tier only, and the category fit is thinner than the CRM implies.
+22. **MindApps.org** — ask-first message, not a submission.
+23. **U Dayton** — the CRM's dead-page hook could not be reproduced; the draft falls back to a weaker gap argument.
+24. **Art of Living** — one cheap try, expect nothing.
+
 ## Rules carried into these drafts
 
 - No payment for placement anywhere. Mindful Suite's $150/mo tier is refused in the draft's own notes.
@@ -81,3 +111,9 @@ Not applied here, since the CRM is not to be edited in this batch.
 - **Florida Tech** row: the breathing cluster is bigger than "has a breathing-apps cluster" implies. BellyBio, Breathe and Ripple are all present, which makes it a cleaner add than the row suggests.
 - **Mindful Suite** row: add the dead-Breathe2Relax hook. A 2026 roundup still listing a withdrawn DoD app is a stronger opener than the category-fit argument.
 - **Undulate** row: the author already ships his own free browser tool at undulate.app/calm and recommends it as the no-download pick. Pitching him a browser tool needs care, hence the A/B variants.
+- **Pacific CAPS** row: **the hook as written is wrong.** The row says to verify "the exact dead audio URLs". Both hws.edu mp3s return 200 and play fine. The real rot is elsewhere on the page: the Iowa State mind-body spa link is a hard 404, the UCLA MARC link redirects to a different page, and the UT Austin "Stress Recess" link lands on a generic homepage. Rewrite the hook around those three.
+- **U Dayton** row: the claim that "their legacy public breathing page 301s to an error page (verified)" could not be reproduced, because the row does not record which URL that was. Either add the URL or drop the claim.
+- **JMU** row: add the One Mind Psyber hook. They link it, and the CRM's own skip-list already records that project as dead. That is a stronger opener than "no dedicated breathing tool".
+- **NKU** row: the guide has a "Virtual Breath of Fresh Air Patio" page, which is a better target than the Meditation Alcove the row points at. Guide last updated Feb 2025.
+- **findly.tools** row: the site sells an "SEO Growth Package ($79)" and markets its backlinks as an SEO product, and its category taxonomy is maker/dev tools with no wellness section. Both facts belong in the row given the never-pay-for-placement rule.
+- **MindApps.org** row: the site is a client-side React app, so it cannot be verified by fetch. Any future check needs a browser.
