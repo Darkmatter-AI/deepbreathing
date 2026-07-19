@@ -113,7 +113,7 @@ Exact metric scope, because the headline number is misleading and the definition
 
 So the all-link-types referring-domain count is **unusable** as an outreach metric: at ~46/month of inbound junk, a real gain of 6 links over 90 days sits inside a noise band of ~140. Measuring on it would guarantee an unreadable verdict. Criteria below are therefore bound to metrics where the signal survives.
 
-(Separately: ~27 spam domains were disavowed [2026-02-06](#2026-02-06-disavow-spam-backlinks--fix-app-route). The problem has escalated roughly 10× since. That needs its own entry and is **not** in scope here.)
+(Separately: ~27 spam domains were disavowed [2026-02-06](#2026-02-06-disavow-spam-backlinks--fix-app-route). The problem has escalated roughly 10× since. Analysed 2026-07-19 in [`docs/analysis/backlink-spam-2026-07-19.md`](analysis/backlink-spam-2026-07-19.md): 281 of 300 referring domains are link-farm spam across 8 clusters, but traffic and keywords rose throughout the influx, so the recommendation is **do not disavow yet** — draft file ready at [`docs/disavow-2026-07-19-draft.txt`](disavow-2026-07-19-draft.txt), submit only on a manual action or an unexplained drop. Not in scope for this experiment; do not change the link profile mid-window, it would confound the measurement. One correction from that pass: the spam domain cited above as `linkrankpro.ch` is actually `linkrankpro.shop`.)
 
 **Pre-committed criteria (evaluate 90 days after the first send):**
 
