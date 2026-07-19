@@ -19,6 +19,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | Date | Entry | Status |
 |------|-------|--------|
 | 2026-07-19 | [FR Coherent Bing CTR — Exercise-Intent Title + Meta Rewrite](#2026-07-19-fr-coherent-bing-ctr--exercise-intent-title--meta-rewrite) | 🔄 Implemented |
+| 2026-07-19 | [Homepage Server-Rendered Content — Fix Full-Page CSR Bailout](#2026-07-19-homepage-server-rendered-content--fix-full-page-csr-bailout) | 🔄 Implemented |
 | 2026-07-18 | [Hope Cartel Reviews-Intent Capture — Reviews Section + Exact-Match FAQs + Title](#2026-07-18-hope-cartel-reviews-intent-capture--reviews-section--exact-match-faqs--title) | 🔄 Implemented |
 | 2026-07-15 | [Native Translation Serving Migration — Preserve Locale URLs, Remove Proxy Rendering](#2026-07-15-native-translation-serving-migration--preserve-locale-urls-remove-proxy-rendering) | ⏳ Waiting (preview gates) |
 | 2026-07-10 | [Canonical Hijack — 2 Locale Pages Merged With Casino Domain (747live.bet)](#2026-07-10-canonical-hijack--2-locale-pages-merged-with-casino-domain-747livebet) | ✅ Success |
@@ -78,7 +79,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-01-06 | [Navy SEAL Content Expansion](#2026-01-06-navy-seal-content-expansion) | ❌ Failed |
 | 2026-01-06 | [CTR Title Rewrites (Batch 1)](#2026-01-06-ctr-title-rewrites-batch-1) | ✅ Success |
 
-**Roll-up by status (56 entries):** ✅ 4 Success · ❌ 11 Failed · ⚪ 12 Inconclusive · 🟡 3 Mixed · ⏳ 1 Waiting · 🔄 17 Implemented · 📊 8 Snapshot. *(2026-07-19: +FR coherent Bing CTR rewrite. 2026-07-18 autoresearch cycle 1: settled 5 overdue verdicts — ?duration= hreflang ✅, trailing-slash ❌ superseded, Tummo 🟡, 404 root-cause ❌, crawl hygiene 🟡; +hope-cartel reviews-intent entry. 2026-07-15: +native translation serving migration planning entry. 2026-06-21: audio-v2 rebase folded in the 2026-05-18 Indexing-Recovery Checkpoint snapshot. 2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
+**Roll-up by status (57 entries):** ✅ 4 Success · ❌ 11 Failed · ⚪ 12 Inconclusive · 🟡 3 Mixed · ⏳ 1 Waiting · 🔄 18 Implemented · 📊 8 Snapshot. *(2026-07-19: +FR coherent Bing CTR rewrite; +homepage server-rendered content fix. 2026-07-18 autoresearch cycle 1: settled 5 overdue verdicts — ?duration= hreflang ✅, trailing-slash ❌ superseded, Tummo 🟡, 404 root-cause ❌, crawl hygiene 🟡; +hope-cartel reviews-intent entry. 2026-07-15: +native translation serving migration planning entry. 2026-06-21: audio-v2 rebase folded in the 2026-05-18 Indexing-Recovery Checkpoint snapshot. 2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
 
 See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of what worked / failed / strategic insights from the first month of experiments.
 
@@ -103,6 +104,29 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 - Guardrail: `cohérence cardiaque avec minuteur` (pos 2) must not fall out of top 5.
 
 **Measure-after:** 2026-08-16 (pull via orangepi digest API key: GetPageStats + GetPageQueryStats). Status: 🔄 Implemented.
+
+---
+
+### 2026-07-19: Homepage Server-Rendered Content — Fix Full-Page CSR Bailout
+
+**Context.** The 2026-07-18 GEO research workflow found the homepage serves **zero server-rendered body text** — the `<body>` contains only script tags for every crawler (verified with Mozilla, Googlebot, and GPTBot UAs; 0 visible chars vs 12,979 on `/breathe/box`). Root cause: `src/app/(site-en)/page.tsx` statically imports the `Resonance` client component, whose unsuspended `useSearchParams` bails the entire route out to client-side rendering. Pattern pages and the localized homepage already avoid this via `next/dynamic` `ssr: false` client islands; only the EN homepage missed the idiom. Consequence: the site's highest-authority URL is invisible to non-JS crawlers (GPTBot, ClaudeBot, PerplexityBot) and depends on Google's JS-rendering second pass — likely why the homepage has only 46 impressions/28d.
+
+**Hypothesis:** Restoring server HTML for the homepage's hero, sections, FAQ, and footer (the content already exists in `home-page.tsx`; it just never reaches the HTML) makes the page extractable/citable for AI assistants and gives Google first-pass indexable content, lifting homepage impressions and AI-assistant referrals.
+
+**Change:** Import `Resonance` in `src/app/(site-en)/page.tsx` via `next/dynamic` with `ssr: false` and a spinner placeholder — the exact idiom already used in `breathe/pattern-page.tsx` and `localized-home-resonance.tsx`. No content, metadata, or UX changes; the orb still client-renders identically.
+
+**Baseline (pulled 2026-07-19):**
+- Homepage server-rendered visible text: **0 chars** (body is script-only)
+- Homepage GSC 28d (Jun 20 – Jul 17): **7 clicks / 46 impressions / 15.2% CTR / pos 12.2**
+- AI-assistant sessions (true sessionSource count, 90d): ~421 (~32/wk), flat 13 weeks, 95% ChatGPT
+
+**Pre-committed criteria (evaluate 2026-08-16, 28d post-deploy):**
+- ✅ **Success:** homepage GSC impressions ≥ 92/28d (2× baseline) OR AI-assistant sessions ≥ 45/wk sustained over 2 consecutive weeks (+40% vs the flat ~32/wk baseline)
+- ❌ **Failed:** homepage impressions < 46/28d AND AI sessions ≤ 32/wk (no movement anywhere) — keep the SSR fix anyway (it is correctness, not a bet), but log that rendering was not the constraint
+- ⚪ **Inconclusive:** in between
+- Guardrail: homepage position must not degrade > 2 spots (12.2 → worse than 14.2); engineering gate at deploy time: server-rendered visible text > 5,000 chars verified with GPTBot UA + cache-bust
+
+**Measure-after:** 2026-08-16. Status: 🔄 Implemented.
 
 ---
 
