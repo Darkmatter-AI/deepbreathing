@@ -107,6 +107,7 @@ docs/
 ├── FUNNEL-DASHBOARD.md            Current state, refreshed weekly
 ├── UX-BACKLOG.md                  Open ideas not yet shipped
 ├── indexing-queue.md              Operational state for GSC/Bing submissions
+├── OUTREACH-CRM.md                Link-outreach targets + contact status (never double-contact)
 └── runbooks/
     ├── weekly-funnel-refresh.md   Friday refresh procedure
     ├── tools-and-data-sources.md  Per-task lookup + gotchas
