@@ -33,7 +33,7 @@ Total active users (7d): 400 (mobile 138). Total events: 4,534. Sessions 572 (�
 | start → end | **80.0%** | 70.7% | 86.6% |
 | prompt_shown → signup | **4.7%** | 8.8% | 1.9% |
 
-**The alarm this refresh is the bottom of the funnel, not the top.** Engagement is healthy (80% of started sessions produce a session-end event). But prompt→signup intent is 4.7% — and the [non-blocking banner](PRODUCT-EXPERIMENTS.md#2026-06-26-non-blocking-signup-banner-loss_aversion_banner--top-anchored-notification) verdict landed **❌ Failed (2026-07-10, early per the ≥150-impressions clause)**: cumulative intent since the Jun 26 ship 9.3% (15/161, 564 impressions) vs the 13.8% modal baseline, trailing-7d decaying to 4.7% (banner blindness), and no retention gain (banner cohort 40% returned vs modal cohort 50%). The orangepi visibility digest independently flagged signups −75% WoW (DAR-440). **Revert decision pending** (`ACTIVE_CHALLENGER` back to `"loss_aversion"`).
+**The alarm this refresh is the bottom of the funnel, not the top.** Engagement is healthy (80% of started sessions produce a session-end event). But prompt→signup intent is 4.7% — and the [non-blocking banner](PRODUCT-EXPERIMENTS.md#2026-06-26-non-blocking-signup-banner-loss_aversion_banner--top-anchored-notification) verdict landed **❌ Failed (2026-07-10, early per the ≥150-impressions clause)**: cumulative intent since the Jun 26 ship 9.3% (15/161, 564 impressions) vs the 13.8% modal baseline, trailing-7d decaying to 4.7% (banner blindness), and no retention gain (banner cohort 40% returned vs modal cohort 50%). The orangepi visibility digest independently flagged signups −75% WoW (DAR-440). ~~Revert decision pending~~ — resolved 2026-07-10: superseded by `keep_practice` (PR #41, the revert-plus successor).
 
 ### Sign-up cohort quality (Neon DB, all-time, pulled 2026-07-10)
 
@@ -171,13 +171,13 @@ Total active users (last 7d): 285. Total events: 3,343.
 | Clicks | 77 | +2.7% WoW, steady |
 | Impressions | 4,754 | +15.2% WoW |
 
-Cross-engine: Google and Bing click volumes are now roughly equal (81 vs 77/wk) — Google caught up on the back of the 9D page; the old "Bing ≈ 6× Google" rule of thumb no longer holds.
+Cross-engine: Google and Bing click volumes are now roughly equal (81 vs 77/wk) — Google caught up on the back of the 9D page. ⚠️ **The old "Bing ≈ 6× Google" rule of thumb was never true of clicks** — it was a misquote of the May 5 audit's CTR ratio (Bing CTR 3.28% ≈ 6× Google's 0.53%; clicks were ~1.1× parity). Bing did not decline; it stepped UP ~2× in June (weekly clicks ~25–54 Mar–May → 72–100 Jun–Jul, per Bing API daily history pulled 2026-07-18). GA4 sessions confirm: bing+ddg+yahoo vs google peaked at 2.8× (June), never 6×.
 
 ---
 
 ## Search engine traffic — last 14 days (May 4 – May 17, 2026) + GSC indexing status — previous refresh
 
-Both engines pulled together; Bing+DDG+Yahoo combined ≈ 6× Google traffic for this site.
+Both engines pulled together. ~~Bing+DDG+Yahoo combined ≈ 6× Google traffic for this site~~ — corrected 2026-07-18: the 6× was the CTR ratio in the May 5 audit, not traffic; click volumes were near parity then.
 
 ### GSC Page indexing (pulled via Chrome MCP, last update 5/15/26)
 
@@ -290,7 +290,9 @@ Bing translated-page presence in top 20: /pt/breathing-app (1 click, pos 2), /fr
 | `breathing_session_end` (users) | — | — | reported as not firing | 70 | **112** | 112/wk vs ~35/wk — now the sole end-of-session event |
 | start → end | — | — | — | 29.9% | **80.0%** | not comparable — `_end` absorbed pause/complete semantics |
 | signup completions (users) | 0 | 12 | 6 | 11 | **4** | ~4/wk vs ~5.5/wk GA4; DB says 2/wk — DOWN |
-| prompt_shown → signup | — | 23.5% | 11.5% | 7.4% | **4.7%** | steady decline across four refreshes — the whole conversion story |
+| prompt_shown → signup | — | 23.5% | 11.5% | 7.4% | **4.7%** | ⚠️ superseded reading — see regime-change note below |
+
+**⚠️ Intent-trend correction (2026-07-18, GA4 Data API decomposition):** the "steady decline across four refreshes" framing is wrong. The 23.5% (12/51 users, Apr 7–May 4) was a pre-regime small-N figure: a tiny hyper-engaged cohort (10.3 prompt events/user, ~half returning). In the week of May 4–10 prompt reach quadrupled (~15–20 → 77–98 prompt-shown users/wk, contemporaneous with the May 4–5 deploy cluster), and since then **user-based intent has been stable at ~10–11%** (pooled May 4–Jun 25: 63/586 = 10.8%). The weekly series oscillates 4.5%–14.3% with no monotone trend; the 4.7% endpoint is a single noise-level week (4/86, p=0.078 vs era mean — an identical 4.7% week occurred in mid-May under the modal later credited with 13.8%). The banner's genuine regression is ~1–1.5pp and not statistically significant (9.3% vs 10.8% pooled, p=0.60). Rules going forward: (1) intent is only comparable within the post-May-4 regime; (2) judge on ≥4-week pooled windows (weekly noise at ~85 prompts/wk ≈ ±7pp); (3) never cite 23.5% as an achievable target. `keep_practice` first week: 9.8% (6/61) — underpowered, hold to its ≥150 gate; note 16 post-deploy users still fired `loss_aversion_banner`-tagged prompts (stale cached bundles).
 
 **The complete-rate held at ~20% across both weekly windows (May 1-7: 21.0% and May 4-17 14d: 19.7%) — the May 8 spike was real and the lift has stuck.** That's the most-important trend confirmation this checkpoint.
 
@@ -319,7 +321,7 @@ Bing translated-page presence in top 20: /pt/breathing-app (1 click, pos 2), /fr
 
 | Experiment | Status | Key finding |
 |---|---|---|
-| [Non-blocking signup banner](PRODUCT-EXPERIMENTS.md#2026-06-26-non-blocking-signup-banner-loss_aversion_banner--top-anchored-notification) | ❌ **Failed** (2026-07-10, early call per impressions clause) | Intent 9.3% vs 13.8% modal baseline (trailing 7d: 4.7% — decaying) AND no retention gain (40% vs 50% returned-after-day-1). **Revert decision pending:** `ACTIVE_CHALLENGER` → `"loss_aversion"` |
+| [Non-blocking signup banner](PRODUCT-EXPERIMENTS.md#2026-06-26-non-blocking-signup-banner-loss_aversion_banner--top-anchored-notification) | ❌ **Failed** (2026-07-10, early call per impressions clause) | Intent 9.3% vs 13.8% modal baseline AND no retention gain (40% vs 50%). Superseded by `keep_practice` (PR #41, 2026-07-10). Note (2026-07-18): vs the pooled modal-era 10.8%, the banner effect is only ~1.5pp, p=0.60 — the 13.8% baseline was set in the series' two best weeks |
 | [GA4 user identification](PRODUCT-EXPERIMENTS.md#2026-05-05-ga4-user-identification-user_id--signed_up-property) | ✅ **Success** (2026-05-18) | `signup_user_identified` (11 users) exactly matches `conversion_signup_completed` (11) over 14d — wiring proven end-to-end |
 | [Tap-to-pause hint inside orb](PRODUCT-EXPERIMENTS.md#2026-05-05-tap-to-pause-hint-inside-orb) | ❌ **Failed** (2026-05-18) | Mobile abandonment moved 74.3% → 82.0% (wrong direction); mobile pause-rate dropped 25.7% → 18.0%. Consider removing the hint. |
 | [Coherent page title rewrite](SEO-EXPERIMENTS.md#2026-05-05-coherent-page-title-rewrite--timer-intent-match) | ❌ **Failed** (2026-05-18) | Top-3 timer-intent queries still 0% CTR; SERP features (Answer Box + YouTube) crowd organic below the fold. Reaffirms link-authority > metadata at DR 0.2. |

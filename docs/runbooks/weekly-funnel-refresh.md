@@ -70,7 +70,7 @@ The query returns:
 
 ## Step 3 — Search engine performance (Google + Bing)
 
-Both engines pulled every refresh. Bing matters disproportionately for this site — Bing + DuckDuckGo + Yahoo combined ≈ 6× Google traffic per the project memory. Never report Google numbers without the matching Bing pull alongside.
+Both engines pulled every refresh. Bing matters for this site — click volumes are roughly at parity with Google (the old "≈ 6× Google traffic" line was a misquote of the May 5 audit's **CTR** ratio, corrected 2026-07-18; Bing clicks actually stepped up ~2× in June 2026). Never report Google numbers without the matching Bing pull alongside.
 
 ### 3a. Google Search Console
 
