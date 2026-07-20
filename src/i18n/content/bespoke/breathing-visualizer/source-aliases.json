@@ -2,47 +2,11 @@
   "schemaVersion": 1,
   "aliases": [
     {
-      "messagePath": "metadata.title",
-      "reviewedSourceHash": "a844960b6682a79d53bb8036b0d71694b930350f1242388d1f417755a9d23a35",
-      "catalogRoute": "/breathing-visualizer",
-      "occurrenceKey": "head:title",
-      "catalogSourceText": "Free Online Breathing Visualizer (2026) — 10 Techniques, No Download | Deep Breathing Exercises",
-      "reason": "Explicit source-bound preservation alias.",
-      "numericReviewReasons": {
-        "de-de": "The approved preservation translation omits the year 2026 while retaining the 10-technique claim; preserve the reviewed catalog text for migration parity.",
-        "es-es": "The approved preservation translation retains the year 2026 but omits the 10-technique claim; preserve the reviewed catalog text for migration parity."
-      }
-    },
-    {
-      "messagePath": "metadata.description",
-      "reviewedSourceHash": "7bb5f35b22af307cfc8e93b3ee5a69d9884cf4d994e3d72fc81220891a68ae8d",
-      "catalogRoute": "/breathing-visualizer",
-      "occurrenceKey": "head:meta:name:description",
-      "catalogSourceText": "Free breathing visualizer with 10 guided techniques — box breathing, 4-7-8, physiological sigh, and more. Adjustable pacing, no download, no signup. Start now.",
-      "reason": "Explicit source-bound preservation alias."
-    },
-    {
       "messagePath": "metadata.socialTitle",
       "reviewedSourceHash": "e625ed394e4e888f66a3b6f13ef7acd69c8c587c55607cd84fa6af6cdbd6e8a7",
       "catalogRoute": "/breathing-visualizer",
       "occurrenceKey": "head:meta:property:og:title",
       "catalogSourceText": "Free Online Breathing Visualizer — 10 Techniques, No Download",
-      "reason": "Explicit source-bound preservation alias."
-    },
-    {
-      "messagePath": "metadata.twitterTitle",
-      "reviewedSourceHash": "5369e4d123c65081b1a24d92d7894d54ee96450e09c66886985f5bc8779a1112",
-      "catalogRoute": "/breathing-visualizer",
-      "occurrenceKey": "head:meta:name:twitter:title",
-      "catalogSourceText": "Free Online Breathing Visualizer — 10 Techniques",
-      "reason": "Explicit source-bound preservation alias."
-    },
-    {
-      "messagePath": "metadata.twitterDescription",
-      "reviewedSourceHash": "18dac1314e98f38ae63a5590b4fc40d0816804ff223882889bbf8093adb985be",
-      "catalogRoute": "/breathing-visualizer",
-      "occurrenceKey": "head:meta:name:twitter:description",
-      "catalogSourceText": "Free breathing visualizer with 10 guided techniques — box breathing, 4-7-8, physiological sigh, and more. Start now.",
       "reason": "Explicit source-bound preservation alias."
     },
     {

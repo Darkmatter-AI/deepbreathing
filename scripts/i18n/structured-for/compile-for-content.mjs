@@ -50,6 +50,11 @@ const HEAD_OCCURRENCES = {
   "meta.twitterDescription": "head:meta:name:twitter:description",
 };
 
+const ANXIETY_PROOF_HEAD_PATHS = new Set([
+  "meta.ogDescription",
+  "meta.twitterDescription",
+]);
+
 const BASE_CHROME = {
   "chrome.shared.brand-eyebrow": "DEEP BREATHING EXERCISES",
   "chrome.shared.breadcrumb-home": "Home",
@@ -1043,7 +1048,17 @@ export async function buildForArtifacts() {
             status: "repo-reviewed-manual",
             translation: manualRecord.translation,
           };
-        } else if (HEAD_OCCURRENCES[leaf.path])
+        } else if (
+          slug === "anxiety" &&
+          ANXIETY_PROOF_HEAD_PATHS.has(leaf.path) &&
+          anxietyProof[locale].has(leaf.path)
+        )
+          resolution = {
+            sourceText: leaf.sourceText,
+            status: "proof-preserved",
+            translation: anxietyProof[locale].get(leaf.path),
+          };
+        else if (HEAD_OCCURRENCES[leaf.path])
           resolution = resolveHead(
             catalogs[locale],
             HEAD_OCCURRENCES[leaf.path],

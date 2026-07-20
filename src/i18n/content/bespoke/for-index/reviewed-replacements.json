@@ -1,4 +1,32 @@
 {
   "schemaVersion": 1,
-  "replacements": []
+  "replacements": [
+    {
+      "messagePath": "metadata.description",
+      "sourceText": "Science-based breathing guides for common situations—paired with free interactive visualizers. Pick a goal and start practicing.",
+      "reviewedSourceHash": "98dd85a4967c777f98b95443921323b8c44084b58f1ba734970bae295c1f836f",
+      "reason": "The preserved Spanish metadata was truncated; this reviewed replacement restores the complete source meaning.",
+      "translations": {
+        "es-es": "Guías de ejercicios de respiración basadas en la ciencia para situaciones comunes, acompañadas de visualizadores interactivos gratuitos. Elige un objetivo y empieza a practicar."
+      }
+    },
+    {
+      "messagePath": "metadata.socialDescription",
+      "sourceText": "Sleep, anxiety, panic, focus, athletic performance, public speaking and more—breathing guides paired with free interactive visualizers.",
+      "reviewedSourceHash": "c86038a7f699d3af33fa212c4ab6a83fcdecbde192b710858256c507368006dd",
+      "reason": "The preserved Spanish Open Graph description was truncated; this reviewed replacement restores the complete source meaning.",
+      "translations": {
+        "es-es": "Guías de respiración para dormir, aliviar la ansiedad y el pánico, mejorar la concentración, el rendimiento deportivo, hablar en público y más, con visualizadores interactivos gratuitos."
+      }
+    },
+    {
+      "messagePath": "metadata.twitterDescription",
+      "sourceText": "Sleep, anxiety, panic, focus, athletic performance, public speaking and more—breathing guides paired with free interactive visualizers.",
+      "reviewedSourceHash": "c86038a7f699d3af33fa212c4ab6a83fcdecbde192b710858256c507368006dd",
+      "reason": "The preserved Spanish Twitter description was truncated; this reviewed replacement restores the complete source meaning.",
+      "translations": {
+        "es-es": "Guías de respiración para dormir, aliviar la ansiedad y el pánico, mejorar la concentración, el rendimiento deportivo, hablar en público y más, con visualizadores interactivos gratuitos."
+      }
+    }
+  ]
 }

@@ -72,6 +72,15 @@
       "reviewedSourceHash": "520b7a7167579c1910f565b021f7e29e6999ed699418fbd11a0bde75cd51caba",
       "sourcePath": "meta.twitterDescription",
       "sourceText": "Ancient breath practices for modern life. Learn pranayama techniques with free visualizers."
+    },
+    {
+      "currentCatalogValue": "Descubra a **pranayama respiração**: um guia completo de técnicas iogues (2026) para exercícios de respiração profunda | Deep Breathing Exercises",
+      "locale": "pt-br",
+      "reason": "The approved metadata contains Markdown and an unrelated site-name suffix; the replacement preserves the recognized exercise name and current source meaning.",
+      "replacement": "Pranayama: guia completo da respiração iogue (2026)",
+      "reviewedSourceHash": "83a1f76c71eda60015f80ba4f2b33eb71521b9f2c70b463e1e1fbaca91dba550",
+      "sourcePath": "meta.title",
+      "sourceText": "Pranayama: Complete Guide to Yogic Breathing (2026)"
     }
   ],
   "schemaVersion": 1,

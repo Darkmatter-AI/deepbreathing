@@ -233,13 +233,13 @@ The groups below separate live coupling from migration provenance and historical
 
 | Evidence | Dependency / cutover implication |
 |---|---|
-| `next.config.js:228` | Keeps locale-prefix stripping only in the legacy proxy build mode; native serving modes release those paths to the App Router. |
+| `next.config.js:263` | Keeps locale-prefix stripping only in the legacy proxy build mode; native serving modes release those paths to the App Router. |
 | `src/lib/seo/sitemap-routes.mjs:8` | Owns the five proxy prefixes, manufactures locale URLs/hreflang, and keeps `/languages` English-only. |
 | `src/lib/seo/sitemap-routes.ts:6` | Typed adapter exposes proxy-specific sitemap constants and URL classification. |
 | `src/app/sitemap.xml/route.ts:5` | Publishes locale-prefixed URLs even though the current Next.js app has no native locale route tree. |
 | `src/app/robots.ts:8` | Carries `/api/proxy/` crawl cleanup and query-parameter rules created for proxy canonical behavior. |
 | `src/app/(site-en)/layout.tsx:72` | The English root explicitly selects the shared document language; the proxy currently changes locale-facing HTML outside the app. |
-| `src/app/(site-en)/languages/page.tsx:65` | Hardcodes the locale discovery hub; proxy anchor rewriting is why this route is published only in English. |
+| `src/app/(site-en)/languages/page.tsx:328` | Hardcodes the locale discovery hub; proxy anchor rewriting is why this route is published only in English. |
 
 ### Browser locale and translated-DOM contracts (active)
 
@@ -291,9 +291,10 @@ The groups below separate live coupling from migration provenance and historical
 | `scripts/tests/i18n-catalog-export.test.mjs:13` | Validates preservation counts, checksums, and translation-record identity. |
 | `scripts/i18n/catalog-README.md:4` | Documents the immutable snapshot boundary, reproduction command, and rule that native runtime/build code must not contact MassTranslate. |
 | `scripts/i18n/semantic-proof/README.md:3` | Documents the isolated two-route semantic compiler and its strict separation between build-time catalog evidence and runtime messages. |
-| `scripts/i18n/semantic-proof/build-semantic-proof.mjs:349` | Compiles approved preservation records into frozen semantic IDs and fail-closed route bundles; it is migration tooling, not a runtime lookup path. |
-| `scripts/tests/native-i18n-semantic-proof.test.mjs:217` | Pins semantic IDs, provenance separation, deterministic generation, runtime bundle shape, and incomplete-route refusal. |
-| `scripts/tests/native-i18n-route-shell.test.mjs:49` | Pins the fail-closed serving-mode boundary so proxy, preview, and cutover builds cannot accidentally expose the wrong route set. |
+| `scripts/i18n/semantic-proof/build-semantic-proof.mjs:353` | Compiles approved preservation records into frozen semantic IDs and fail-closed route bundles; it is migration tooling, not a runtime lookup path. |
+| `scripts/tests/native-i18n-semantic-proof.test.mjs:238` | Pins semantic IDs, provenance separation, deterministic generation, runtime bundle shape, and incomplete-route refusal. |
+| `scripts/tests/native-i18n-route-shell.test.mjs:50` | Pins the fail-closed serving-mode boundary so proxy, preview, and cutover builds cannot accidentally expose the wrong route set. |
+| `scripts/tests/next-config-locale-redirects.test.js:142` | Pins locale redirect behavior across legacy proxy and native serving modes so stable translated URLs remain reachable. |
 | `scripts/tests/native-i18n-rw03-embed.test.mjs:37` | Proves the repository-owned embed generator no longer reads the legacy translation global or proxy locale state. |
 | `scripts/tests/native-i18n-rw04-trust-pages.test.mjs:49` | Proves the repository-owned trust-page renderers do not inspect or mutate proxy-translated browser state. |
 | `scripts/i18n/verify-native-preview-build.mjs:126` | Post-build migration verifier rejects client-render error fallbacks, legacy translation globals, unsafe crisis numbers, and incomplete locale metadata in proof HTML. |
@@ -304,7 +305,7 @@ The groups below separate live coupling from migration provenance and historical
 |---|---|
 | `scripts/tests/sitemap-coverage.test.mjs:9` | Pins proxy-prefixed publication, hreflang, and the English-only `/languages` rule. |
 | `scripts/tests/warm-cache-locale-split.test.mjs:9` | Pins English-versus-proxy URL classification and the five-locale multiplier. |
-| `scripts/tests/languages-page-ssr.test.mjs:10` | Pins the client-only switcher and hardcoded locale discovery links. |
+| `scripts/tests/languages-page-ssr.test.mjs:16` | Pins the client-only switcher and hardcoded locale discovery links. |
 | `scripts/tests/share-utm.test.mjs:62` | Pins share-copy behavior against proxy-mutated page metadata. |
 
 ### Operational instructions and analytics integrations (mixed active and stale)
@@ -323,7 +324,7 @@ The groups below separate live coupling from migration provenance and historical
 
 | Evidence | Dependency / cutover implication |
 |---|---|
-| `docs/SEO-EXPERIMENTS.md:147` | Permanent experiment history for proxy defects, mitigations, and indexing outcomes. |
+| `docs/SEO-EXPERIMENTS.md:256` | Permanent experiment history for proxy defects, mitigations, and indexing outcomes. |
 | `docs/UX-BACKLOG.md:71` | Historical ownership and translation-coverage findings. |
 | `docs/qa-reports/traction-pages-2026-06-06.md:9` | Production evidence for delayed translation, partial coverage, and hydration failures. |
 | `docs/research/eeat-citations-2026-05.md:16` | A dated content-research decision record. |
@@ -331,7 +332,7 @@ The groups below separate live coupling from migration provenance and historical
 
 ### Explicit-marker coverage audit
 
-The deterministic marker scan found 45 files with explicit MassTranslate/proxy/origin coupling. All must be classified above.
+The deterministic marker scan found 46 files with explicit MassTranslate/proxy/origin coupling. All must be classified above.
 
 Unclassified marker files: none.
 

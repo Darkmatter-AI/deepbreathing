@@ -196,14 +196,22 @@ test("metadata uses catalog head occurrences unless explicitly replaced", () => 
     const replacements = readdirSync(path.dirname(replacementFile)).includes(`${slug}.json`)
       ? json(replacementFile).replacements
       : [];
+    const manual = json(path.join(root, "manual", `${slug}.json`)).entries;
     for (const locale of locales) {
       const content = json(path.join(root, "routes", locale, `${slug}.json`));
       const catalog = json(path.join(repoRoot, "src/i18n/catalog", locale, "pages/breathe", `${slug}.json`));
       for (const [field, occurrenceKey] of Object.entries(headOccurrences)) {
         const replacement = replacements.find((entry) => entry.locale === locale && entry.sourcePath === `meta.${field}`);
+        const manualRecord = manual.find(
+          (entry) => entry.scope === "content" && entry.messageId === `meta.${field}`,
+        );
         const head = catalog.segments.find((segment) => segment.occurrenceKey === occurrenceKey);
         assert.ok(head?.translation?.text, `${locale}:${slug}:${field} lacks head evidence`);
-        assert.equal(content.meta[field], replacement?.replacement ?? head.translation.text, `${locale}:${slug}:${field}`);
+        assert.equal(
+          content.meta[field],
+          replacement?.replacement ?? manualRecord?.translations?.[locale] ?? head.translation.text,
+          `${locale}:${slug}:${field}`,
+        );
       }
     }
   }
@@ -269,5 +277,5 @@ test("normalized, global, and reviewed replacement provenance remain explicit", 
   }
   assert.ok(normalized > 0);
   assert.ok(global > 0);
-  assert.equal(replacements, 45);
+  assert.equal(replacements, 50);
 });

@@ -7,16 +7,6 @@
       "catalogSourceText": "Embed a Breathing Exercise on Your Website — Free Widget | Deep Breathing Exercises",
       "reason": "The English layout adds the site-name suffix while the localized layout consumes the final reviewed head title."
     },
-    "metadata.description": {
-      "occurrenceKey": "head:meta:name:description",
-      "catalogSourceText": "Add a free interactive breathing exercise widget to your website. Choose from 12 patterns including box breathing, 4-7-8, and coherent breathing. Copy the embed code and paste it into your HTML.",
-      "reason": "The same English description appears in multiple metadata placements."
-    },
-    "metadata.socialDescription": {
-      "occurrenceKey": "head:meta:property:og:description",
-      "catalogSourceText": "Add a free interactive breathing exercise widget to your website. Choose from 12 patterns including box breathing, 4-7-8, and coherent breathing. Copy the embed code and paste it into your HTML.",
-      "reason": "The same English description appears in multiple metadata placements."
-    },
     "generator.patterns.wim-hof.description": {
       "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:4",
       "catalogSourceText": "Energy & Resilience (30 breaths × 3 rounds)",

@@ -444,10 +444,8 @@
           "status": "route-catalog-exact"
         },
         "footer.links[3]": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:3",
-          "sourceHash": "a4262e1c9bcbc1721eb3fe13558154460a2b2a2d307daa32532478526ce6ccb1",
-          "status": "route-catalog-exact"
+          "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "reviewed-replacement"
         },
         "footer.links[4]": {
           "catalogRoute": "/box-breathing-before-presentation",
@@ -558,16 +556,12 @@
           "status": "route-catalog-exact"
         },
         "howItWorks.title": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
-          "sourceHash": "5e61e86cdc3e3476b9f34e9899402a6a1041e0a429dbd0a61f444dd97dd69a24",
-          "status": "route-catalog-exact"
+          "reviewedSourceHash": "9c870aa6e5e93270170d5a81277ad3e623afe8d4efd186d3e28f3d2b646d52e6",
+          "status": "reviewed-replacement"
         },
         "metadata.description": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "head:meta:name:description",
           "reviewedSourceHash": "7bb5f35b22af307cfc8e93b3ee5a69d9884cf4d994e3d72fc81220891a68ae8d",
-          "status": "explicit-source-alias"
+          "status": "reviewed-replacement"
         },
         "metadata.imageAlt": {
           "catalogRoute": "/breathing-visualizer",
@@ -576,10 +570,8 @@
           "status": "explicit-source-alias"
         },
         "metadata.socialDescription": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "head:meta:property:og:description",
-          "sourceHash": "49aa0d9e0f58cdee2f8fd9bec1a3aadcd0ba18e5f383d39d40c539b7ef345cb8",
-          "status": "route-catalog-exact"
+          "reviewedSourceHash": "8e06ea8720b796069dbcc59bced331f3b7f7bdefe0eda4c9481c93a601b58d6a",
+          "status": "reviewed-replacement"
         },
         "metadata.socialTitle": {
           "catalogRoute": "/breathing-visualizer",
@@ -588,22 +580,16 @@
           "status": "explicit-source-alias"
         },
         "metadata.title": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "head:title",
           "reviewedSourceHash": "a844960b6682a79d53bb8036b0d71694b930350f1242388d1f417755a9d23a35",
-          "status": "explicit-source-alias"
+          "status": "reviewed-replacement"
         },
         "metadata.twitterDescription": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "head:meta:name:twitter:description",
           "reviewedSourceHash": "18dac1314e98f38ae63a5590b4fc40d0816804ff223882889bbf8093adb985be",
-          "status": "explicit-source-alias"
+          "status": "reviewed-replacement"
         },
         "metadata.twitterTitle": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "head:meta:name:twitter:title",
           "reviewedSourceHash": "5369e4d123c65081b1a24d92d7894d54ee96450e09c66886985f5bc8779a1112",
-          "status": "explicit-source-alias"
+          "status": "reviewed-replacement"
         },
         "moreTools.body": {
           "catalogRoute": "/breathing-visualizer",
@@ -1113,10 +1099,8 @@
           "status": "route-catalog-exact"
         },
         "footer.links[3]": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:3",
-          "sourceHash": "a4262e1c9bcbc1721eb3fe13558154460a2b2a2d307daa32532478526ce6ccb1",
-          "status": "route-catalog-exact"
+          "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "reviewed-replacement"
         },
         "footer.links[4]": {
           "catalogRoute": "/box-breathing-before-presentation",
@@ -1227,16 +1211,12 @@
           "status": "route-catalog-exact"
         },
         "howItWorks.title": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
-          "sourceHash": "5e61e86cdc3e3476b9f34e9899402a6a1041e0a429dbd0a61f444dd97dd69a24",
-          "status": "route-catalog-exact"
+          "reviewedSourceHash": "9c870aa6e5e93270170d5a81277ad3e623afe8d4efd186d3e28f3d2b646d52e6",
+          "status": "reviewed-replacement"
         },
         "metadata.description": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "head:meta:name:description",
           "reviewedSourceHash": "7bb5f35b22af307cfc8e93b3ee5a69d9884cf4d994e3d72fc81220891a68ae8d",
-          "status": "explicit-source-alias"
+          "status": "reviewed-replacement"
         },
         "metadata.imageAlt": {
           "catalogRoute": "/breathing-visualizer",
@@ -1245,10 +1225,8 @@
           "status": "explicit-source-alias"
         },
         "metadata.socialDescription": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "head:meta:property:og:description",
-          "sourceHash": "49aa0d9e0f58cdee2f8fd9bec1a3aadcd0ba18e5f383d39d40c539b7ef345cb8",
-          "status": "route-catalog-exact"
+          "reviewedSourceHash": "8e06ea8720b796069dbcc59bced331f3b7f7bdefe0eda4c9481c93a601b58d6a",
+          "status": "reviewed-replacement"
         },
         "metadata.socialTitle": {
           "catalogRoute": "/breathing-visualizer",
@@ -1257,22 +1235,16 @@
           "status": "explicit-source-alias"
         },
         "metadata.title": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "head:title",
           "reviewedSourceHash": "a844960b6682a79d53bb8036b0d71694b930350f1242388d1f417755a9d23a35",
-          "status": "explicit-source-alias"
+          "status": "reviewed-replacement"
         },
         "metadata.twitterDescription": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "head:meta:name:twitter:description",
           "reviewedSourceHash": "18dac1314e98f38ae63a5590b4fc40d0816804ff223882889bbf8093adb985be",
-          "status": "explicit-source-alias"
+          "status": "reviewed-replacement"
         },
         "metadata.twitterTitle": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "head:meta:name:twitter:title",
           "reviewedSourceHash": "5369e4d123c65081b1a24d92d7894d54ee96450e09c66886985f5bc8779a1112",
-          "status": "explicit-source-alias"
+          "status": "reviewed-replacement"
         },
         "moreTools.body": {
           "catalogRoute": "/breathing-visualizer",
@@ -1782,10 +1754,8 @@
           "status": "route-catalog-exact"
         },
         "footer.links[3]": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:3",
-          "sourceHash": "a4262e1c9bcbc1721eb3fe13558154460a2b2a2d307daa32532478526ce6ccb1",
-          "status": "route-catalog-exact"
+          "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "reviewed-replacement"
         },
         "footer.links[4]": {
           "catalogRoute": "/box-breathing-before-presentation",
@@ -1896,16 +1866,12 @@
           "status": "route-catalog-exact"
         },
         "howItWorks.title": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
-          "sourceHash": "5e61e86cdc3e3476b9f34e9899402a6a1041e0a429dbd0a61f444dd97dd69a24",
-          "status": "route-catalog-exact"
+          "reviewedSourceHash": "9c870aa6e5e93270170d5a81277ad3e623afe8d4efd186d3e28f3d2b646d52e6",
+          "status": "reviewed-replacement"
         },
         "metadata.description": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "head:meta:name:description",
           "reviewedSourceHash": "7bb5f35b22af307cfc8e93b3ee5a69d9884cf4d994e3d72fc81220891a68ae8d",
-          "status": "explicit-source-alias"
+          "status": "reviewed-replacement"
         },
         "metadata.imageAlt": {
           "catalogRoute": "/breathing-visualizer",
@@ -1914,10 +1880,8 @@
           "status": "explicit-source-alias"
         },
         "metadata.socialDescription": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "head:meta:property:og:description",
-          "sourceHash": "49aa0d9e0f58cdee2f8fd9bec1a3aadcd0ba18e5f383d39d40c539b7ef345cb8",
-          "status": "route-catalog-exact"
+          "reviewedSourceHash": "8e06ea8720b796069dbcc59bced331f3b7f7bdefe0eda4c9481c93a601b58d6a",
+          "status": "reviewed-replacement"
         },
         "metadata.socialTitle": {
           "catalogRoute": "/breathing-visualizer",
@@ -1926,22 +1890,16 @@
           "status": "explicit-source-alias"
         },
         "metadata.title": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "head:title",
           "reviewedSourceHash": "a844960b6682a79d53bb8036b0d71694b930350f1242388d1f417755a9d23a35",
-          "status": "explicit-source-alias"
+          "status": "reviewed-replacement"
         },
         "metadata.twitterDescription": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "head:meta:name:twitter:description",
           "reviewedSourceHash": "18dac1314e98f38ae63a5590b4fc40d0816804ff223882889bbf8093adb985be",
-          "status": "explicit-source-alias"
+          "status": "reviewed-replacement"
         },
         "metadata.twitterTitle": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "head:meta:name:twitter:title",
           "reviewedSourceHash": "5369e4d123c65081b1a24d92d7894d54ee96450e09c66886985f5bc8779a1112",
-          "status": "explicit-source-alias"
+          "status": "reviewed-replacement"
         },
         "moreTools.body": {
           "catalogRoute": "/breathing-visualizer",
@@ -2451,10 +2409,8 @@
           "status": "route-catalog-exact"
         },
         "footer.links[3]": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:3",
-          "sourceHash": "a4262e1c9bcbc1721eb3fe13558154460a2b2a2d307daa32532478526ce6ccb1",
-          "status": "route-catalog-exact"
+          "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "reviewed-replacement"
         },
         "footer.links[4]": {
           "catalogRoute": "/box-breathing-before-presentation",
@@ -2565,16 +2521,12 @@
           "status": "route-catalog-exact"
         },
         "howItWorks.title": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
-          "sourceHash": "5e61e86cdc3e3476b9f34e9899402a6a1041e0a429dbd0a61f444dd97dd69a24",
-          "status": "route-catalog-exact"
+          "reviewedSourceHash": "9c870aa6e5e93270170d5a81277ad3e623afe8d4efd186d3e28f3d2b646d52e6",
+          "status": "reviewed-replacement"
         },
         "metadata.description": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "head:meta:name:description",
           "reviewedSourceHash": "7bb5f35b22af307cfc8e93b3ee5a69d9884cf4d994e3d72fc81220891a68ae8d",
-          "status": "explicit-source-alias"
+          "status": "reviewed-replacement"
         },
         "metadata.imageAlt": {
           "catalogRoute": "/breathing-visualizer",
@@ -2583,10 +2535,8 @@
           "status": "explicit-source-alias"
         },
         "metadata.socialDescription": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "head:meta:property:og:description",
-          "sourceHash": "49aa0d9e0f58cdee2f8fd9bec1a3aadcd0ba18e5f383d39d40c539b7ef345cb8",
-          "status": "route-catalog-exact"
+          "reviewedSourceHash": "8e06ea8720b796069dbcc59bced331f3b7f7bdefe0eda4c9481c93a601b58d6a",
+          "status": "reviewed-replacement"
         },
         "metadata.socialTitle": {
           "catalogRoute": "/breathing-visualizer",
@@ -2595,22 +2545,16 @@
           "status": "explicit-source-alias"
         },
         "metadata.title": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "head:title",
           "reviewedSourceHash": "a844960b6682a79d53bb8036b0d71694b930350f1242388d1f417755a9d23a35",
-          "status": "explicit-source-alias"
+          "status": "reviewed-replacement"
         },
         "metadata.twitterDescription": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "head:meta:name:twitter:description",
           "reviewedSourceHash": "18dac1314e98f38ae63a5590b4fc40d0816804ff223882889bbf8093adb985be",
-          "status": "explicit-source-alias"
+          "status": "reviewed-replacement"
         },
         "metadata.twitterTitle": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "head:meta:name:twitter:title",
           "reviewedSourceHash": "5369e4d123c65081b1a24d92d7894d54ee96450e09c66886985f5bc8779a1112",
-          "status": "explicit-source-alias"
+          "status": "reviewed-replacement"
         },
         "moreTools.body": {
           "catalogRoute": "/breathing-visualizer",
@@ -3120,10 +3064,8 @@
           "status": "route-catalog-exact"
         },
         "footer.links[3]": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:3",
-          "sourceHash": "a4262e1c9bcbc1721eb3fe13558154460a2b2a2d307daa32532478526ce6ccb1",
-          "status": "route-catalog-exact"
+          "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "reviewed-replacement"
         },
         "footer.links[4]": {
           "catalogRoute": "/box-breathing-before-presentation",
@@ -3234,16 +3176,12 @@
           "status": "route-catalog-exact"
         },
         "howItWorks.title": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
-          "sourceHash": "5e61e86cdc3e3476b9f34e9899402a6a1041e0a429dbd0a61f444dd97dd69a24",
-          "status": "route-catalog-exact"
+          "reviewedSourceHash": "9c870aa6e5e93270170d5a81277ad3e623afe8d4efd186d3e28f3d2b646d52e6",
+          "status": "reviewed-replacement"
         },
         "metadata.description": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "head:meta:name:description",
           "reviewedSourceHash": "7bb5f35b22af307cfc8e93b3ee5a69d9884cf4d994e3d72fc81220891a68ae8d",
-          "status": "explicit-source-alias"
+          "status": "reviewed-replacement"
         },
         "metadata.imageAlt": {
           "catalogRoute": "/breathing-visualizer",
@@ -3252,10 +3190,8 @@
           "status": "explicit-source-alias"
         },
         "metadata.socialDescription": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "head:meta:property:og:description",
-          "sourceHash": "49aa0d9e0f58cdee2f8fd9bec1a3aadcd0ba18e5f383d39d40c539b7ef345cb8",
-          "status": "route-catalog-exact"
+          "reviewedSourceHash": "8e06ea8720b796069dbcc59bced331f3b7f7bdefe0eda4c9481c93a601b58d6a",
+          "status": "reviewed-replacement"
         },
         "metadata.socialTitle": {
           "catalogRoute": "/breathing-visualizer",
@@ -3264,22 +3200,16 @@
           "status": "explicit-source-alias"
         },
         "metadata.title": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "head:title",
           "reviewedSourceHash": "a844960b6682a79d53bb8036b0d71694b930350f1242388d1f417755a9d23a35",
-          "status": "explicit-source-alias"
+          "status": "reviewed-replacement"
         },
         "metadata.twitterDescription": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "head:meta:name:twitter:description",
           "reviewedSourceHash": "18dac1314e98f38ae63a5590b4fc40d0816804ff223882889bbf8093adb985be",
-          "status": "explicit-source-alias"
+          "status": "reviewed-replacement"
         },
         "metadata.twitterTitle": {
-          "catalogRoute": "/breathing-visualizer",
-          "occurrenceKey": "head:meta:name:twitter:title",
           "reviewedSourceHash": "5369e4d123c65081b1a24d92d7894d54ee96450e09c66886985f5bc8779a1112",
-          "status": "explicit-source-alias"
+          "status": "reviewed-replacement"
         },
         "moreTools.body": {
           "catalogRoute": "/breathing-visualizer",

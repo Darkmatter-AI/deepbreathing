@@ -24,6 +24,19 @@ export interface LocaleDefinition {
 
 export const DEFAULT_LOCALE: LocaleCode = "en-US";
 
+const HOME_LABELS: Readonly<Record<LocaleCode, string>> = Object.freeze({
+  "en-US": "Home",
+  "es-ES": "Inicio",
+  "pt-BR": "Início",
+  "fr-FR": "Accueil",
+  "de-DE": "Startseite",
+  "ja-JP": "ホーム",
+});
+
+export function getLocalizedHomeLabel(locale: LocaleCode): string {
+  return HOME_LABELS[locale];
+}
+
 /**
  * The single source of truth for languages the native app can serve.
  *

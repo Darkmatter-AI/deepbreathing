@@ -283,9 +283,20 @@ test("metadata uses catalog head occurrences unless explicitly replaced", () => 
           head?.translation?.text,
           `${locale}:${slug}:${field} lacks head evidence`,
         );
+        const proofCorrection = slug === "anxiety" && [
+          "ogDescription",
+          "twitterDescription",
+        ].includes(field)
+          ? json(path.join(
+              repoRoot,
+              "src/i18n/content/proof/routes",
+              locale,
+              "for-anxiety.json",
+            )).meta[field]
+          : undefined;
         assert.equal(
           content.meta[field],
-          replacement?.replacement ?? head.translation.text,
+          replacement?.replacement ?? proofCorrection ?? head.translation.text,
           `${locale}:${slug}:${field}`,
         );
       }

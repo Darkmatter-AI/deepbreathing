@@ -28,6 +28,30 @@
             "ja-jp": "この呼吸法は、専門的なメンタルヘルス治療の代わりになるものではありません。強い不安、パニック発作、または自殺念慮がある場合は、メンタルヘルスの専門家に相談するか、こころの健康相談統一ダイヤル（0570-064-556）に電話してください。",
             "pt-br": "Esta técnica de respiração não substitui o tratamento profissional de saúde mental. Se você estiver enfrentando ansiedade intensa, ataques de pânico ou pensamentos suicidas, procure um profissional de saúde mental ou ligue para o CVV pelo 188."
           }
+        },
+        {
+          "messageId": "for.anxiety.meta.og-description",
+          "sourcePath": "meta.ogDescription",
+          "reason": "translation_quality_correction",
+          "translations": {
+            "de-de": "Entdecken Sie die Atemübungen gegen Angst, die Navy SEALs nutzen. Stoppen Sie rasende Gedanken und Brustenge in nur 60 Sekunden. Kostenloser Visualizer.",
+            "es-es": "La técnica respiratoria que usan los Navy SEALs para la ansiedad. Detén los pensamientos acelerados y la opresión en el pecho en 60 segundos. Visualizador gratuito.",
+            "fr-fr": "Découvrez la technique de respiration que les Navy SEALs utilisent pour l'anxiété. Stoppez les pensées envahissantes et l'oppression thoracique en 60 secondes. Visualiseur gratuit.",
+            "ja-jp": "ネイビーシールズが不安のために実践する呼吸法。60秒で思考の暴走と胸の圧迫感を止めましょう。無料のビジュアライザーで不安 呼吸法を試す。",
+            "pt-br": "A técnica de respiração quadrada que os Navy SEALs usam para a ansiedade. Pare pensamentos acelerados e aperto no peito em 60 segundos. Visualizador gratuito."
+          }
+        },
+        {
+          "messageId": "for.anxiety.meta.twitter-description",
+          "sourcePath": "meta.twitterDescription",
+          "reason": "translation_quality_correction",
+          "translations": {
+            "de-de": "Die Atemübungen gegen Angst der Navy SEALs stoppen Panik in 60 Sekunden. Kostenloser geführter Visualizer.",
+            "es-es": "La técnica respiratoria de los Navy SEALs detiene la ansiedad en 60 segundos. Visualizador guiado gratuito.",
+            "fr-fr": "La respiration anxiété : la technique des Navy SEAL pour la stopper en 60 secondes. Visualiseur guidé gratuit.",
+            "ja-jp": "ネイビーシールズの不安 呼吸法で60秒で不安を解消。無料のガイド付きビジュアライザー。",
+            "pt-br": "A técnica de respiração quadrada dos Navy SEALs para ansiedade acalma em 60 segundos. Visualizador guiado gratuito."
+          }
         }
       ]
     }

@@ -630,18 +630,14 @@
         "status": "route-catalog-occurrence-exact"
       },
       "metadata.description": {
-        "catalogRoute": "/for",
-        "catalogSourceText": "Science-based breathing guides for common situations—paired with free interactive visualizers. Pick a goal and start practicing.",
-        "occurrenceKey": "head:meta:name:description",
+        "reason": "The preserved Spanish metadata was truncated; this reviewed replacement restores the complete source meaning.",
         "sourceHash": "98dd85a4967c777f98b95443921323b8c44084b58f1ba734970bae295c1f836f",
-        "status": "route-catalog-occurrence-exact"
+        "status": "repo-reviewed-replacement"
       },
       "metadata.socialDescription": {
-        "catalogRoute": "/for",
-        "catalogSourceText": "Sleep, anxiety, panic, focus, athletic performance, public speaking and more—breathing guides paired with free interactive visualizers.",
-        "occurrenceKey": "head:meta:property:og:description",
+        "reason": "The preserved Spanish Open Graph description was truncated; this reviewed replacement restores the complete source meaning.",
         "sourceHash": "c86038a7f699d3af33fa212c4ab6a83fcdecbde192b710858256c507368006dd",
-        "status": "route-catalog-occurrence-exact"
+        "status": "repo-reviewed-replacement"
       },
       "metadata.socialTitle": {
         "catalogRoute": "/for",
@@ -656,11 +652,9 @@
         "status": "repo-reviewed-override"
       },
       "metadata.twitterDescription": {
-        "catalogRoute": "/for",
-        "catalogSourceText": "Sleep, anxiety, panic, focus, athletic performance, public speaking and more—breathing guides paired with free interactive visualizers.",
-        "occurrenceKey": "head:meta:name:twitter:description",
+        "reason": "The preserved Spanish Twitter description was truncated; this reviewed replacement restores the complete source meaning.",
         "sourceHash": "c86038a7f699d3af33fa212c4ab6a83fcdecbde192b710858256c507368006dd",
-        "status": "route-catalog-occurrence-exact"
+        "status": "repo-reviewed-replacement"
       },
       "techniques.action": {
         "catalogRoute": "/for",

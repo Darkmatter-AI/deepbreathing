@@ -196,6 +196,34 @@
         "ja-jp": "アカウントと同期された練習データを完全に削除する前に、確認リンクを送信します。",
         "pt-br": "Enviamos um link de confirmação antes de remover permanentemente sua conta e os dados de prática sincronizados."
       }
+    },
+    {
+      "route": "/privacy",
+      "messagePath": "metadata.socialDescription",
+      "sourceText": "Privacy policy for Deep Breathing Exercises.",
+      "reviewedSourceHash": "51e04dbeb12eb3c0e1387068be7629c79a2f7aa3f7cd5360ae4b5473136f0fc8",
+      "reason": "The preserved Spanish Open Graph description was truncated; this reviewed record restores a complete source-faithful sentence.",
+      "translations": {
+        "de-de": "Datenschutzerklärung für Deep Breathing Exercises.",
+        "es-es": "Política de privacidad de Deep Breathing Exercises.",
+        "fr-fr": "Politique de confidentialité de Deep Breathing Exercises.",
+        "ja-jp": "Deep Breathing Exercisesのプライバシーポリシー。",
+        "pt-br": "Política de privacidade do Deep Breathing Exercises."
+      }
+    },
+    {
+      "route": "/privacy",
+      "messagePath": "metadata.twitterDescription",
+      "sourceText": "Privacy policy for Deep Breathing Exercises.",
+      "reviewedSourceHash": "51e04dbeb12eb3c0e1387068be7629c79a2f7aa3f7cd5360ae4b5473136f0fc8",
+      "reason": "The preserved Spanish Twitter description was truncated; this reviewed record restores a complete source-faithful sentence.",
+      "translations": {
+        "de-de": "Datenschutzerklärung für Deep Breathing Exercises.",
+        "es-es": "Política de privacidad de Deep Breathing Exercises.",
+        "fr-fr": "Politique de confidentialité de Deep Breathing Exercises.",
+        "ja-jp": "Deep Breathing Exercisesのプライバシーポリシー。",
+        "pt-br": "Política de privacidade do Deep Breathing Exercises."
+      }
     }
   ]
 }

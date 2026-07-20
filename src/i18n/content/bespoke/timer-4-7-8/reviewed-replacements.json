@@ -127,6 +127,15 @@
       "translations": {
         "de-de": "Beginnen Sie mit 2-3-4 und steigern Sie sich langsam auf die vollen Zählzeiten."
       }
+    },
+    {
+      "messageId": "footer.about",
+      "sourceText": "About",
+      "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+      "reason": "The preserved Japanese footer label leaked the English source; this reviewed replacement localizes the shared navigation label.",
+      "translations": {
+        "ja-jp": "概要"
+      }
     }
   ]
 }

@@ -19,27 +19,11 @@
       "reason": "Explicit metadata occurrence binding."
     },
     {
-      "messagePath": "metadata.socialDescription",
-      "reviewedSourceHash": "51e04dbeb12eb3c0e1387068be7629c79a2f7aa3f7cd5360ae4b5473136f0fc8",
-      "catalogRoute": "/privacy",
-      "occurrenceKey": "head:meta:property:og:description",
-      "catalogSourceText": "Privacy policy for Deep Breathing Exercises.",
-      "reason": "Explicit metadata occurrence binding."
-    },
-    {
       "messagePath": "metadata.twitterTitle",
       "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
       "catalogRoute": "/privacy",
       "occurrenceKey": "head:meta:name:twitter:title",
       "catalogSourceText": "Privacy Policy",
-      "reason": "Explicit metadata occurrence binding."
-    },
-    {
-      "messagePath": "metadata.twitterDescription",
-      "reviewedSourceHash": "51e04dbeb12eb3c0e1387068be7629c79a2f7aa3f7cd5360ae4b5473136f0fc8",
-      "catalogRoute": "/privacy",
-      "occurrenceKey": "head:meta:name:twitter:description",
-      "catalogSourceText": "Privacy policy for Deep Breathing Exercises.",
       "reason": "Explicit metadata occurrence binding."
     },
     {

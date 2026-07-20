@@ -32,6 +32,35 @@
           ]
         }
       }
+    },
+    "abi.metadata.description": {
+      "reason": "The approved French and Portuguese metadata descriptions are truncated after the role list begins; these reviewed values restore the complete source meaning.",
+      "locales": {
+        "fr-fr": {
+          "translation": "Abi Abiassi a créé Deep Breathing Exercises comme visualiseur gratuit des techniques de respiration qu'il utilise quotidiennement. Photographe, fondateur et pratiquant de respiration consciente.",
+          "evidence": [
+            {
+              "catalogRoute": "/about/abi",
+              "occurrenceKey": "head:meta:name:description",
+              "catalogSourceText": "Abi Abiassi built Deep Breathing Exercises as a free visualizer for breathing techniques he uses daily. Photographer, founder, breathwork practitioner.",
+              "catalogTranslationText": "Abi Abiassi a créé Deep Breathing Exercises comme un visualiseur gratuit pour les exercices de respiration qu'il utilise quotidiennement. Photographe,",
+              "reason": "The approved catalog placement proves the intended French metadata context and exposes the clipped role list."
+            }
+          ]
+        },
+        "pt-br": {
+          "translation": "Abi Abiassi criou Deep Breathing Exercises como um visualizador gratuito das técnicas de respiração que usa diariamente. Fotógrafo, fundador e praticante de técnicas de respiração.",
+          "evidence": [
+            {
+              "catalogRoute": "/about/abi",
+              "occurrenceKey": "head:meta:name:description",
+              "catalogSourceText": "Abi Abiassi built Deep Breathing Exercises as a free visualizer for breathing techniques he uses daily. Photographer, founder, breathwork practitioner.",
+              "catalogTranslationText": "Abi Abiassi criou Exercícios de Respiração Profunda como um visualizador gratuito de técnicas de respiração que usa diariamente. Fotógrafo, fundador,",
+              "reason": "The approved catalog placement proves the intended Portuguese metadata context and exposes the clipped role list."
+            }
+          ]
+        }
+      }
     }
   }
 }

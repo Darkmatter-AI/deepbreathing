@@ -26,6 +26,97 @@
         "ja-jp": "3つのステップでガイド付き呼吸セッションを始めましょう。",
         "pt-br": "Inicie uma sessão de respiração guiada em três etapas."
       }
+    },
+    {
+      "messagePath": "metadata.title",
+      "sourceText": "Free Online Breathing Visualizer (2026): 10 Techniques, No Download",
+      "reviewedSourceHash": "a844960b6682a79d53bb8036b0d71694b930350f1242388d1f417755a9d23a35",
+      "reason": "Replace malformed or Markdown-bearing catalog titles with complete plain-text translations.",
+      "translations": {
+        "de-de": "Kostenloser Online-Atem-Visualizer (2026): 10 Techniken, kein Download",
+        "es-es": "Visualizador de respiración guiada online gratis (2026): 10 técnicas, sin descargas",
+        "fr-fr": "Visualiseur de respiration gratuit en ligne (2026) : 10 techniques, sans téléchargement",
+        "ja-jp": "深呼吸 アプリで実践！無料で使えるオンライン呼吸ビジュアライザー（2026年版）— 10種類のテクニック、ダウンロード不要",
+        "pt-br": "Visualizador gratuito de respiração guiada online (2026): 10 técnicas, sem download"
+      }
+    },
+    {
+      "messagePath": "metadata.description",
+      "sourceText": "Free breathing visualizer with 10 guided techniques: box breathing, 4-7-8, physiological sigh, and more. Adjustable pacing, no download, no signup. Start now.",
+      "reviewedSourceHash": "7bb5f35b22af307cfc8e93b3ee5a69d9884cf4d994e3d72fc81220891a68ae8d",
+      "reason": "Replace the truncated Spanish value and remove literal Markdown emphasis from the Portuguese plain-text metadata.",
+      "translations": {
+        "de-de": "Kostenloser Atem-Visualizer mit 10 geführten Atemtechniken – Box-Atmung, 4-7-8 Atemtechnik, physiologisches Seufzen und mehr. Anpassbares Tempo, kein Download, keine Anmeldung. Starten Sie jetzt.",
+        "es-es": "Visualizador de respiración guiada gratis con 10 técnicas: respiración cuadrada, 4-7-8, suspiro fisiológico y más. Ritmo ajustable, sin descargas ni registro. Empieza ahora.",
+        "fr-fr": "Une animation respiration gratuite avec 10 techniques de respiration guidée – respiration carrée, 4-7-8, soupir physiologique, et plus encore. Rythme ajustable, sans téléchargement ni inscription. Commencez dès maintenant.",
+        "ja-jp": "ボックス呼吸、4-7-8呼吸法、生理的ため息など、10種類のガイド付きテクニックを無料で体験できる呼吸ビジュアライザー。ペース調整可能、ダウンロード・登録不要。今すぐ始めましょう。",
+        "pt-br": "Visualizador gratuito de respiração guiada com 10 técnicas, incluindo respiração quadrada, 4-7-8, suspiro fisiológico e mais. Ritmo ajustável, sem download ou cadastro. Comece agora."
+      }
+    },
+    {
+      "messagePath": "metadata.socialDescription",
+      "sourceText": "Free breathing visualizer with 10 guided techniques. Adjustable pacing, works on any device. No download, no signup.",
+      "reviewedSourceHash": "8e06ea8720b796069dbcc59bced331f3b7f7bdefe0eda4c9481c93a601b58d6a",
+      "reason": "Remove literal Markdown emphasis from Portuguese plain-text social metadata.",
+      "translations": {
+        "de-de": "Kostenloser Visualizer für Atemübungen mit 10 geführten Techniken. Anpassbares Tempo, funktioniert auf jedem Gerät. Kein Download, keine Anmeldung.",
+        "es-es": "Visualizador de respiración guiada gratis con 10 técnicas. Ritmo ajustable, funciona en cualquier dispositivo. Sin descargas ni registro.",
+        "fr-fr": "Visualiseur de respiration gratuit avec 10 techniques guidées. Rythme ajustable, compatible avec tous les appareils. Sans téléchargement ni inscription.",
+        "ja-jp": "10種類のガイド付き呼吸法を無料で体験できる呼吸ビジュアライザー。ペース調整可能で、どのデバイスでも動作します。ダウンロードや登録は不要です。",
+        "pt-br": "Visualizador gratuito de respiração guiada com 10 técnicas. Ritmo ajustável, funciona em qualquer dispositivo. Sem download ou cadastro."
+      }
+    },
+    {
+      "messagePath": "metadata.twitterTitle",
+      "sourceText": "Free Online Breathing Visualizer: 10 Techniques",
+      "reviewedSourceHash": "5369e4d123c65081b1a24d92d7894d54ee96450e09c66886985f5bc8779a1112",
+      "reason": "Remove literal Markdown emphasis from Portuguese plain-text Twitter metadata.",
+      "translations": {
+        "de-de": "Kostenloser Online-Atem-Visualizer: 10 Techniken",
+        "es-es": "Visualizador de respiración guiada online gratis: 10 técnicas",
+        "fr-fr": "Visualiseur de respiration gratuit en ligne : 10 techniques",
+        "ja-jp": "無料のオンライン呼吸ビジュアライザー：10種類のテクニック",
+        "pt-br": "Visualizador online gratuito de respiração guiada: 10 técnicas"
+      }
+    },
+    {
+      "messagePath": "metadata.twitterDescription",
+      "sourceText": "Free breathing visualizer with 10 guided techniques: box breathing, 4-7-8, physiological sigh, and more. Start now.",
+      "reviewedSourceHash": "18dac1314e98f38ae63a5590b4fc40d0816804ff223882889bbf8093adb985be",
+      "reason": "Remove literal Markdown emphasis from Portuguese plain-text Twitter metadata.",
+      "translations": {
+        "de-de": "Kostenloser Atem-Visualizer mit 10 geführten Techniken: Box-Atmung, 4-7-8 Atemtechnik, physiologisches Seufzen und mehr. Starten Sie jetzt.",
+        "es-es": "Visualizador de respiración guiada gratis con 10 técnicas: respiración cuadrada, 4-7-8, suspiro fisiológico y más. ¡Empieza ya!",
+        "fr-fr": "Visualiseur de respiration gratuit avec 10 techniques guidées : respiration carrée, 4-7-8, soupir physiologique et plus encore. Commencez maintenant.",
+        "ja-jp": "ボックス呼吸、4-7-8呼吸法、生理的ため息など、10種類のガイド付きテクニックを無料で体験できます。今すぐ始めましょう。",
+        "pt-br": "Visualizador gratuito de respiração guiada com 10 técnicas: respiração quadrada, 4-7-8, suspiro fisiológico e muito mais. Comece agora."
+      }
+    },
+    {
+      "messagePath": "howItWorks.title",
+      "sourceText": "How it works",
+      "reviewedSourceHash": "9c870aa6e5e93270170d5a81277ad3e623afe8d4efd186d3e28f3d2b646d52e6",
+      "reason": "Replace the unrelated Portuguese fire-breathing heading with the route's actual section heading.",
+      "translations": {
+        "de-de": "Wie es funktioniert",
+        "es-es": "Cómo funciona",
+        "fr-fr": "Fonctionnement",
+        "ja-jp": "仕組み",
+        "pt-br": "Como funciona"
+      }
+    },
+    {
+      "messagePath": "footer.links[3]",
+      "sourceText": "About",
+      "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+      "reason": "Replace the untranslated Japanese footer label with the approved About-page heading.",
+      "translations": {
+        "de-de": "Über uns",
+        "es-es": "Acerca de",
+        "fr-fr": "À propos",
+        "ja-jp": "概要",
+        "pt-br": "Sobre"
+      }
     }
   ]
 }

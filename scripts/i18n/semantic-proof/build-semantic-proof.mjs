@@ -302,7 +302,9 @@ function validateReviewedReplacements(replacements, mapping, auditedPages, local
       assert(!seenMessageIds.has(replacement.messageId), `Duplicate reviewed replacement ${replacement.messageId}`);
       seenMessageIds.add(replacement.messageId);
       assert(
-        replacement.reason === "regional_safety_resource",
+        ["regional_safety_resource", "translation_quality_correction"].includes(
+          replacement.reason,
+        ),
         `Unsupported reviewed replacement reason at ${replacement.sourcePath}`,
       );
       assertExactMembers(
@@ -310,21 +312,23 @@ function validateReviewedReplacements(replacements, mapping, auditedPages, local
         locales,
         `Reviewed replacement locales at ${replacement.sourcePath}`,
       );
-      assert(
-        numericTokens(leaf.sourceText).length > 0,
-        `${replacement.messageId} regional replacement source has no numeric resource`,
-      );
       for (const locale of locales) {
         const value = replacement.translations[locale];
         validateMessageSafety(leaf.sourceText, value, `${replacement.messageId}:${locale}`);
-        assert(
-          numericTokens(value).length > 0,
-          `${replacement.messageId}:${locale} must name a reviewed regional resource`,
-        );
-        assert(
-          JSON.stringify(numericTokens(value)) !== JSON.stringify(numericTokens(leaf.sourceText)),
-          `${replacement.messageId}:${locale} did not replace the source-region resource`,
-        );
+        if (replacement.reason === "regional_safety_resource") {
+          assert(
+            numericTokens(leaf.sourceText).length > 0,
+            `${replacement.messageId} regional replacement source has no numeric resource`,
+          );
+          assert(
+            numericTokens(value).length > 0,
+            `${replacement.messageId}:${locale} must name a reviewed regional resource`,
+          );
+          assert(
+            JSON.stringify(numericTokens(value)) !== JSON.stringify(numericTokens(leaf.sourceText)),
+            `${replacement.messageId}:${locale} did not replace the source-region resource`,
+          );
+        }
       }
     }
   }

@@ -241,6 +241,22 @@
         "ja-jp": "構造化されたもの、短いもの、睡眠向け、回復向けのものをお探しですか？こちらをお試しください：",
         "pt-br": "Quer algo estruturado, mais curto, focado no sono ou na recuperação? Experimente estes:"
       }
+    },
+    {
+      "messageId": "footer.links.3.label",
+      "reason": "The preserved Japanese footer label leaked the English source; this reviewed replacement localizes the shared navigation label.",
+      "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+      "route": "box-breathing-app",
+      "sourceText": "About",
+      "translations": { "de-de": "Über uns", "es-es": "Acerca de", "fr-fr": "À propos", "ja-jp": "概要", "pt-br": "Sobre" }
+    },
+    {
+      "messageId": "footer.links.3.label",
+      "reason": "The preserved Japanese footer label leaked the English source; this reviewed replacement localizes the shared navigation label.",
+      "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+      "route": "coherent-breathing-app",
+      "sourceText": "About",
+      "translations": { "de-de": "Über uns", "es-es": "Acerca de", "fr-fr": "À propos", "ja-jp": "概要", "pt-br": "Sobre" }
     }
   ],
   "schemaVersion": 1
