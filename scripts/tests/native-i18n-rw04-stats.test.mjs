@@ -184,3 +184,27 @@ test("stats renderers consume typed messages and explicit locale context", async
   assert.doesNotMatch(display, /const SHORT_MONTHS|const SHORT_DAYS/);
   assert.doesNotMatch(display, /copy\.(?:[a-z0-9]+-){3,}/);
 });
+
+test("authenticated stats reach is tracked only from the production display", async () => {
+  const display = await readFile(
+    new URL("../../src/app/(site-en)/stats/stats-display.tsx", import.meta.url),
+    "utf8",
+  );
+  const authenticatedDisplay = display.slice(
+    display.indexOf("export function StatsDisplay"),
+    display.indexOf("export function StatsSignedOut"),
+  );
+  const signedOutDisplay = display.slice(
+    display.indexOf("export function StatsSignedOut"),
+  );
+
+  assert.match(display, /ANALYTICS_PRODUCTION_HOSTNAMES/);
+  assert.match(display, /deepbreathingexercises\.com/);
+  assert.match(display, /www\.deepbreathingexercises\.com/);
+  assert.match(
+    authenticatedDisplay,
+    /trackAuthenticatedStatsView\(renderContext\.locale\)/,
+  );
+  assert.match(display, /"stats_authenticated_view"/);
+  assert.doesNotMatch(signedOutDisplay, /trackAuthenticatedStatsView/);
+});

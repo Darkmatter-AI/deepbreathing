@@ -21,6 +21,31 @@ import {
 import styles from "./stats.module.css";
 
 const GARDEN_WEEKS = 18;
+const ANALYTICS_PRODUCTION_HOSTNAMES = new Set([
+  "deepbreathingexercises.com",
+  "www.deepbreathingexercises.com",
+]);
+
+function trackAuthenticatedStatsView(locale: string) {
+  if (typeof window === "undefined") return;
+  if (!ANALYTICS_PRODUCTION_HOSTNAMES.has(window.location.hostname)) return;
+
+  const gtag = (
+    window as unknown as {
+      gtag?: (
+        command: "event",
+        name: "stats_authenticated_view",
+        params: { locale: string; page_path: string },
+      ) => void;
+    }
+  ).gtag;
+  if (typeof gtag !== "function") return;
+
+  gtag("event", "stats_authenticated_view", {
+    locale,
+    page_path: window.location.pathname,
+  });
+}
 
 export interface StatsRenderContext {
   appHref: string;
@@ -165,6 +190,10 @@ export function StatsDisplay({
   sessionsCompleted,
   totalMinutes,
 }: StatsDisplayProps) {
+  useEffect(() => {
+    trackAuthenticatedStatsView(renderContext.locale);
+  }, [renderContext.locale]);
+
   const [today, setToday] = useState(() =>
     new Date().toISOString().slice(0, 10),
   );
