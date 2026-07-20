@@ -2097,6 +2097,24 @@ The preceding localized window recorded 37 clicks and 1,233 impressions. Current
 
 ---
 
+### 2026-07-20: Localized labels on the `/languages` crawl hub
+
+**Hypothesis:** Replacing the repeated English anchor labels under the Spanish, Portuguese, French, German, and Japanese sections with each destination language's own terminology will make the directory understandable to multilingual visitors and give crawlers language-matched internal anchor text, without changing the public URL contract or the active native-i18n serving experiment.
+
+**Baseline:** `/languages` server-renders `150` absolute internal links: `25` destinations for each of `6` language sections. Before this change, all `125` labels in the five translated sections repeated the English titles. The active native-i18n baseline remains `312/331` inspected URLs indexed and, for `2026-06-17..2026-07-14`, `41` localized clicks and `1,573` localized impressions across `158` pages. Those search figures are guardrails, not an attribution baseline, because the serving migration remains under observation.
+
+**Pre-committed success criteria:**
+
+- Immediate technical success requires all `150/150` existing hrefs to remain present in server-rendered HTML, the five translated sections to expose matching `lang` attributes, and representative terminology checks to pass in every locale.
+- At T+7, no new locale crawl, canonical, or response failure may be attributable to the hub change.
+- At T+28, matched mature localized impressions must not decline by more than `20%` from the pinned migration baseline. Do not claim a positive SEO effect without page- or query-level evidence that separates this anchor-text change from the native serving migration.
+
+**Measure after:** `2026-07-27` for the technical/crawl guardrail and `2026-08-17` for the mature search guardrail.
+
+**Status:** 🔄 Implemented locally; merge pending.
+
+---
+
 ## Completed Experiments
 
 ## Recent Follow-Up Log
