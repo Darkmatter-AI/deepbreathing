@@ -18,6 +18,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-07-20 | [Stop Proxy Cache Warming After Native Translation Cutover](#2026-07-20-stop-proxy-cache-warming-after-native-translation-cutover) | 🔄 Implemented |
 | 2026-07-20 | [Post-Migration Locale Metadata Hygiene — Translation Leakage + Truncation Corrections](#2026-07-20-post-migration-locale-metadata-hygiene--translation-leakage--truncation-corrections) | 🔄 Implemented |
 | 2026-07-19 | [FR Coherent Bing CTR — Exercise-Intent Title + Meta Rewrite](#2026-07-19-fr-coherent-bing-ctr--exercise-intent-title--meta-rewrite) | 🔄 Implemented |
 | 2026-07-19 | [Homepage Server-Rendered Content — Fix Full-Page CSR Bailout](#2026-07-19-homepage-server-rendered-content--fix-full-page-csr-bailout) | 🔄 Implemented |
@@ -80,13 +81,25 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-01-06 | [Navy SEAL Content Expansion](#2026-01-06-navy-seal-content-expansion) | ❌ Failed |
 | 2026-01-06 | [CTR Title Rewrites (Batch 1)](#2026-01-06-ctr-title-rewrites-batch-1) | ✅ Success |
 
-**Roll-up by status (58 entries):** ✅ 4 Success · ❌ 11 Failed · ⚪ 12 Inconclusive · 🟡 3 Mixed · ⏳ 1 Waiting · 🔄 19 Implemented · 📊 8 Snapshot. *(2026-07-20: +post-migration locale metadata hygiene corrections. 2026-07-19: +FR coherent Bing CTR rewrite; +homepage server-rendered content fix. 2026-07-18 autoresearch cycle 1: settled 5 overdue verdicts — ?duration= hreflang ✅, trailing-slash ❌ superseded, Tummo 🟡, 404 root-cause ❌, crawl hygiene 🟡; +hope-cartel reviews-intent entry. 2026-07-15: +native translation serving migration planning entry. 2026-06-21: audio-v2 rebase folded in the 2026-05-18 Indexing-Recovery Checkpoint snapshot. 2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
+**Roll-up by status (59 entries):** ✅ 4 Success · ❌ 11 Failed · ⚪ 12 Inconclusive · 🟡 3 Mixed · ⏳ 1 Waiting · 🔄 20 Implemented · 📊 8 Snapshot. *(2026-07-20: +native-mode proxy cache-warmer guard; +post-migration locale metadata hygiene corrections. 2026-07-19: +FR coherent Bing CTR rewrite; +homepage server-rendered content fix. 2026-07-18 autoresearch cycle 1: settled 5 overdue verdicts — ?duration= hreflang ✅, trailing-slash ❌ superseded, Tummo 🟡, 404 root-cause ❌, crawl hygiene 🟡; +hope-cartel reviews-intent entry. 2026-07-15: +native translation serving migration planning entry. 2026-06-21: audio-v2 rebase folded in the 2026-05-18 Indexing-Recovery Checkpoint snapshot. 2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
 
 See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of what worked / failed / strategic insights from the first month of experiments.
 
 ---
 
 ## Active Experiments
+
+### 2026-07-20: Stop Proxy Cache Warming After Native Translation Cutover
+
+**Context.** The 2026-07-16 native-i18n cutover moved localized page serving to repository-owned Vercel routes, but the proxy-era `/api/warm-cache` Vercel Cron remained active every two hours. Its Googlebot requests were designed to trigger MassTranslate translation assembly and could continue consuming the legacy API after clients timed out. This is automated maintenance traffic, not customer translation demand.
+
+**Change.** Authenticate the warmer as before, then return a successful skipped response unless `NATIVE_I18N_MODE=proxy`. `native` and `native-preview` perform no sitemap or page fetches. Rollback remains available by explicitly restoring `proxy` mode.
+
+**Baseline (2026-07-20):** MassTranslate recorded Deep Breathing proxy translation requests taking about 134 seconds during API health-alert windows. The warmer used concurrency 6 with a 15-second client timeout, while production page serving was already native.
+
+**Pre-committed verification:** focused serving-mode and warmer tests must prove that only `proxy` returns true; the deployed native endpoint must return `200` with `skipped: true` and `reason: mass-translate-proxy-disabled`; no new `deepbreathingexercises_com_ac8ae5` proxy translation requests should appear for one full two-hour cron interval after deployment. Roll back only if the serving mode itself is reverted to `proxy`.
+
+**Status:** 🔄 Implemented locally; deployment and one-cron-window production verification pending.
 
 ### 2026-07-20: Post-Migration Locale Metadata Hygiene — Translation Leakage + Truncation Corrections
 

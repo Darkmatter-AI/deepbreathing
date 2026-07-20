@@ -1,5 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 
+import {
+  resolveNativeI18nMode,
+  usesMassTranslateProxy,
+} from "@/i18n/serving-mode";
 import { isLocaleUrl as isLocaleUrlForSite } from "@/lib/seo/sitemap-routes";
 
 // Keep this on Node and never statically optimized — it must run on every hit.
@@ -118,6 +122,16 @@ export async function GET(req: NextRequest) {
     if (authHeader !== `Bearer ${secret}` && token !== secret) {
       return NextResponse.json({ error: "unauthorized" }, { status: 401 });
     }
+  }
+
+  const servingMode = resolveNativeI18nMode();
+  if (!usesMassTranslateProxy(servingMode)) {
+    return NextResponse.json({
+      ok: true,
+      skipped: true,
+      reason: "mass-translate-proxy-disabled",
+      servingMode,
+    });
   }
 
   const started = Date.now();

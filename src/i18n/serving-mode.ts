@@ -25,3 +25,10 @@ export function getNativeLinkMode(
 ): NativeLinkMode | null {
   return mode === "proxy" ? null : mode;
 }
+
+/** MassTranslate proxy maintenance must run only while the proxy serves locales. */
+export function usesMassTranslateProxy(
+  mode: NativeI18nMode = resolveNativeI18nMode(),
+): boolean {
+  return mode === "proxy";
+}
