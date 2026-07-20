@@ -6011,14 +6011,9 @@
         "status": "route-catalog-exact"
       },
       "footer.about": {
-        "catalogRoutes": [
-          "/4-7-8-breathing-timer"
-        ],
-        "catalogSourceTexts": [
-          "About"
-        ],
+        "reason": "The preserved Japanese footer label leaked the English source; this reviewed replacement localizes the shared navigation label.",
         "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
-        "status": "route-catalog-exact"
+        "status": "repo-reviewed-replacement"
       },
       "footer.aboutAbi": {
         "reason": "The Japanese source text is unresolved in the preserved approved catalog.",

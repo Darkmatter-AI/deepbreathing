@@ -35,7 +35,7 @@ test("builds the two-route semantic proof deterministically", async () => {
     expectedMessages: 190,
     localeMessageValues: 950,
     overrideMessages: 49,
-    reviewedReplacementMessages: 1,
+    reviewedReplacementMessages: 3,
     routes: 2,
     safeSeedMessages: 141,
     unresolvedMessages: 0,
@@ -49,7 +49,7 @@ test("builds the two-route semantic proof deterministically", async () => {
   assert.equal(first.manifest.routes["/for/anxiety"].expectedMessages, 91);
   assert.equal(first.manifest.routes["/for/anxiety"].safeSeedMessages, 64);
   assert.equal(first.manifest.routes["/for/anxiety"].overrideMessages, 27);
-  assert.equal(first.manifest.routes["/for/anxiety"].reviewedReplacementMessages, 1);
+  assert.equal(first.manifest.routes["/for/anxiety"].reviewedReplacementMessages, 3);
   assert.equal(first.manifest.routes["/for/anxiety"].unresolvedMessages, 0);
   assert.equal(first.outputs.size, 15);
 });
@@ -122,8 +122,11 @@ test("supersedes unsafe regional crisis resources through an explicit reviewed l
     await readFile(join(proofRoot, "reviewed-replacements.json"), "utf8"),
   );
   const messages = replacements.routes.flatMap((route) => route.messages);
-  assert.equal(messages.length, 1);
-  const [replacement] = messages;
+  assert.equal(messages.length, 3);
+  const replacement = messages.find(
+    (message) => message.reason === "regional_safety_resource",
+  );
+  assert.ok(replacement);
   assert.equal(replacement.messageId, "for.anxiety.disclaimer");
   assert.equal(replacement.sourcePath, "disclaimer");
   assert.equal(replacement.reason, "regional_safety_resource");
@@ -137,6 +140,24 @@ test("supersedes unsafe regional crisis resources through an explicit reviewed l
   assert.match(replacement.translations["ja-jp"], /0570-064-556/);
   assert.match(replacement.translations["pt-br"], /188/);
   assert.equal(Object.values(replacement.translations).some((value) => /988/.test(value)), false);
+});
+
+test("keeps reviewed anxiety metadata quality corrections inside the proof layer", async () => {
+  const replacements = JSON.parse(
+    await readFile(join(proofRoot, "reviewed-replacements.json"), "utf8"),
+  );
+  const qualityCorrections = replacements.routes
+    .flatMap((route) => route.messages)
+    .filter((message) => message.reason === "translation_quality_correction");
+  assert.deepEqual(
+    qualityCorrections.map((message) => message.sourcePath).sort(),
+    ["meta.ogDescription", "meta.twitterDescription"],
+  );
+  assert.ok(qualityCorrections.every(
+    (message) => Object.keys(message.translations).length === 5,
+  ));
+  assert.match(qualityCorrections[0].translations["es-es"], /Visualizador gratuito\.$/);
+  assert.match(qualityCorrections[1].translations["es-es"], /Visualizador guiado gratuito\.$/);
 });
 
 test("runtime message maps contain only semantic IDs and localized values", async () => {

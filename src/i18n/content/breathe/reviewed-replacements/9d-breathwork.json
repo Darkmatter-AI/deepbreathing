@@ -26,6 +26,15 @@
       "reviewedSourceHash": "bc839030d8490b5e0f44bcf2343f73adbea1abcafb3ef0d7a7d7817a7c65c0db",
       "sourcePath": "meta.ogDescription",
       "sourceText": "Honest plain-English guide. The breath underneath 9D is free — try it now. The nine-layer audio soundtrack is what 9D Breathwork (the brand) sells."
+    },
+    {
+      "currentCatalogValue": "9D Breathwork expliqué : Respiration, audio, coût (Pacer",
+      "locale": "fr-fr",
+      "reason": "The approved title is truncated inside its closing parenthetical.",
+      "replacement": "9D Breathwork expliqué : respiration, audio, coût (pacer gratuit)",
+      "reviewedSourceHash": "f6052d4ef1fd37dcd68105bb84cda476c3d19009fdffd29f26153ff02e422749",
+      "sourcePath": "meta.title",
+      "sourceText": "9D Breathwork Explained: The Breath, the Audio, the Cost (Free Pacer)"
     }
   ],
   "schemaVersion": 1,

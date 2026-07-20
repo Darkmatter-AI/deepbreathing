@@ -659,10 +659,15 @@
             "status": "route-catalog-exact"
           },
           "metadata.description": {
-            "catalogRoute": "/about/abi",
-            "occurrenceKey": "head:meta:name:description",
+            "evidence": [
+              {
+                "catalogRoute": "/about/abi",
+                "occurrenceKey": "head:meta:name:description"
+              }
+            ],
+            "reason": "The approved French and Portuguese metadata descriptions are truncated after the role list begins; these reviewed values restore the complete source meaning.",
             "sourceHash": "6d0d18a3a3c3ce01c60440ecc7023dd46ce2bba6e3d54c207bc3b5ffd8ff3cbd",
-            "status": "route-catalog-exact"
+            "status": "repo-reviewed-replacement"
           },
           "metadata.socialDescription": {
             "catalogRoute": "/about/abi",
@@ -1219,10 +1224,15 @@
             "status": "route-catalog-exact"
           },
           "metadata.description": {
-            "catalogRoute": "/about/abi",
-            "occurrenceKey": "head:meta:name:description",
+            "evidence": [
+              {
+                "catalogRoute": "/about/abi",
+                "occurrenceKey": "head:meta:name:description"
+              }
+            ],
+            "reason": "The approved French and Portuguese metadata descriptions are truncated after the role list begins; these reviewed values restore the complete source meaning.",
             "sourceHash": "6d0d18a3a3c3ce01c60440ecc7023dd46ce2bba6e3d54c207bc3b5ffd8ff3cbd",
-            "status": "route-catalog-exact"
+            "status": "repo-reviewed-replacement"
           },
           "metadata.socialDescription": {
             "catalogRoute": "/about/abi",

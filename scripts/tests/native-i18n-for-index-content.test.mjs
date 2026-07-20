@@ -63,10 +63,10 @@ test("compiles the 50-field for index deterministically", async () => {
 
   for (const locale of FOR_INDEX_LOCALES) {
     const coverage = first.publication.locales[locale];
-    assert.equal(coverage.catalogExact, 45);
+    assert.equal(coverage.catalogExact, locale === "es-es" ? 42 : 45);
     assert.equal(coverage.catalogNormalized, 0);
     assert.equal(coverage.override, 5);
-    assert.equal(coverage.replacement, 0);
+    assert.equal(coverage.replacement, locale === "es-es" ? 3 : 0);
     assert.equal(coverage.resolvedMessages, 50);
     assert.equal(coverage.publishable, true);
     assert.equal(coverage.unresolved, 0);

@@ -225,6 +225,9 @@ const SCHEMA_DERIVED = {
 
 const INVARIANT = new Set(["schema.authorName", "schema.publisherName"]);
 const REPLACED = new Set([
+  "footer.about",
+  "metadata.description",
+  "metadata.title",
   "related.label",
   "schema.articleDescription",
   "schema.faq.items.0.answer",

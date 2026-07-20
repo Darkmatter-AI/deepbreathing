@@ -49,7 +49,8 @@
     "check:native-i18n-for-pages": "pnpm run check:native-i18n-for-replacements && node ./scripts/i18n/structured-for/compile-for-content.mjs --check",
     "build:native-i18n-timer": "node ./scripts/i18n/bespoke/compile-timer-content.mjs",
     "check:native-i18n-timer": "node ./scripts/i18n/bespoke/compile-timer-content.mjs --check",
-    "verify:native-i18n-preview": "node ./scripts/i18n/verify-native-preview-build.mjs"
+    "verify:native-i18n-preview": "node ./scripts/i18n/verify-native-preview-build.mjs",
+    "test:i18n-content-quality": "node --test ./scripts/tests/native-i18n-content-quality.test.mjs"
   },
   "dependencies": {
     "@better-auth/expo": "1.5.5",

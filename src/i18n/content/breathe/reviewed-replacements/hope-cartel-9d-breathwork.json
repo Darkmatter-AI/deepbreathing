@@ -26,6 +26,24 @@
       "reviewedSourceHash": "7adda07f281c3dc46421cfae4890be943977e3f005a4cf462cd3d7d47f3d35ff",
       "sourcePath": "body[1].content",
       "sourceText": "Like any 9D Breathwork session, the format runs 60 to 120 minutes total. It opens with grounding and intention-setting (~10 minutes), moves into the active breath phase set to the nine-layer audio soundtrack (~45 minutes), and closes with integration in silence (~15 minutes). The breath protocol is conscious connected breathing — continuous, no pauses, mouth-in / mouth-out. Hope Cartel sessions are typically held in dimmed rooms with mats, eye masks, and headphones for the binaural audio layers. Group sessions can run 20-100+ people; private sessions are one-on-one with Wright or a certified facilitator."
+    },
+    {
+      "currentCatalogValue": "Hope Cartel 9D Breathwork : Séances, Prix, Attentes |",
+      "locale": "fr-fr",
+      "reason": "The approved title ends with a dangling separator and no following text.",
+      "replacement": "Hope Cartel 9D Breathwork : séances, prix et avis",
+      "reviewedSourceHash": "eb9b286f86895e9298656e1c4d17fb0f8551ed14e4c942e00c834d2aaf722d27",
+      "sourcePath": "meta.title",
+      "sourceText": "Hope Cartel 9D Breathwork: Reviews, Pricing & What to Expect"
+    },
+    {
+      "currentCatalogValue": "Hope Cartel 9D Breathwork: Sessions, Preise, Erwartungen |",
+      "locale": "de-de",
+      "reason": "The approved title ends with a dangling separator and no following text.",
+      "replacement": "Hope Cartel 9D Breathwork: Erfahrungen, Preise und Ablauf",
+      "reviewedSourceHash": "eb9b286f86895e9298656e1c4d17fb0f8551ed14e4c942e00c834d2aaf722d27",
+      "sourcePath": "meta.title",
+      "sourceText": "Hope Cartel 9D Breathwork: Reviews, Pricing & What to Expect"
     }
   ],
   "schemaVersion": 1,

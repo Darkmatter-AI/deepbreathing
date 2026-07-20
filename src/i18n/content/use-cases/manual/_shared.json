@@ -1,5 +1,16 @@
 {
-  "entries": [],
+  "entries": [
+    {
+      "messageId": "chrome.shared.footer-about",
+      "reason": "The preserved Japanese route-footer occurrence retained the English label; reuse the approved Japanese About-page heading.",
+      "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+      "scope": "chrome",
+      "sourceText": "About",
+      "translations": {
+        "ja-jp": "概要"
+      }
+    }
+  ],
   "schemaVersion": 1,
   "sourceRoute": "*"
 }

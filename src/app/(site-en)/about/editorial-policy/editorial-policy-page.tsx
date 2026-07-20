@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { JsonLd } from "@/components/seo/json-ld";
 import type { EditorialPolicyPageContent } from "@/i18n/content/bespoke/trust-pages/types";
+import { getLocalizedHomeLabel } from "@/i18n";
 import type { NativeRouteRenderContext } from "@/i18n/render-context";
 import { resolveNativeInternalHref } from "@/i18n/route-manifest";
 import { createOgImagePath } from "@/lib/seo/og-image";
@@ -77,7 +78,9 @@ export function EditorialPolicyPage({
       {
         "@type": "ListItem",
         position: 1,
-        name: "Home",
+        name: renderContext
+          ? getLocalizedHomeLabel(renderContext.locale)
+          : "Home",
         item: siteUrl,
       },
       {

@@ -280,6 +280,136 @@
         "ja-jp": "パニック発作中、肺の肺胞は虚脱し、神経系は過活動状態になります。二重吸入はこれらの虚脱した空気袋を再び膨らませ、酸素交換を改善します。長い呼気は迷走神経を刺激し、副交感神経の「落ち着く」システムを活性化します。この2段階の仕組みは、他のどの呼吸法よりも速くパニックを中断します。",
         "pt-br": "Durante um ataque de pânico, os alvéolos dos seus pulmões colapsam e o seu sistema nervoso está em sobrecarga. A dupla inalação reinfla esses sacos de ar colapsados, melhorando a troca de oxigênio. A longa exalação estimula o nervo vago, que ativa o seu sistema parassimpático de 'acalmar'. Esse mecanismo de duas etapas interrompe o pânico mais rápido do que qualquer outra técnica de respiração."
       }
+    },
+    {
+      "route": "box-breathing-before-presentation",
+      "messageId": "metadata.title",
+      "sourceText": "Box Breathing Before Presentation: Calm Nerves in 60 Seconds (Free Timer)",
+      "reviewedSourceHash": "3b4f503e23c0baf107334c062195b833d94ba13605072c414d84c0383b7060f3",
+      "reason": "The preserved Portuguese title ended with a dangling separator; this reviewed record provides complete metadata in every locale.",
+      "translations": {
+        "de-de": "Box-Atmung vor Präsentation: Nerven beruhigen in 60 Sek.",
+        "es-es": "Respiración cuadrada antes de presentar: calma en 60 s",
+        "fr-fr": "Respiration carrée avant une présentation : calmez-vous en 60 s",
+        "ja-jp": "プレゼン前のボックス呼吸：60秒で緊張を和らげる（無料タイマー付き） | 深呼吸エクササイズ",
+        "pt-br": "Respiração quadrada para apresentações: acalme-se em 60s (timer grátis)"
+      }
+    },
+    {
+      "route": "breathing-exercises-before-surgery",
+      "messageId": "metadata.title",
+      "sourceText": "Breathing Exercises Before Surgery: Calm Pre-Op Anxiety (Free Timer)",
+      "reviewedSourceHash": "8b9dd9735d71423f69a9dc6327f4af0dd04309b62dcbde2de2bfda498afedef9",
+      "reason": "The preserved German title ended with a dangling separator; this reviewed record provides complete metadata in every locale.",
+      "translations": {
+        "de-de": "Atemübungen vor der OP: Angst lindern (Gratis-Timer)",
+        "es-es": "Ejercicios de respiración: calma la ansiedad preoperatoria",
+        "fr-fr": "Exercices de respiration préopératoires : calmez l’anxiété",
+        "ja-jp": "手術前の呼吸法：術前の不安を和らげる（無料タイマー） | 深呼吸エクササイズ",
+        "pt-br": "Exercícios de respiração pré-cirurgia: calma (timer grátis)"
+      }
+    },
+    {
+      "route": "physiological-sigh-panic-attack",
+      "messageId": "metadata.title",
+      "sourceText": "Breathing Technique for Panic Attack: Stop Panic in 30 Seconds (Free Timer)",
+      "reviewedSourceHash": "6cedb9b533ecda451986e072be7baba197c59a3b09adec78b63698ed3d0e928b",
+      "reason": "The preserved French title was truncated mid-parenthesis; this reviewed record provides complete metadata in every locale.",
+      "translations": {
+        "de-de": "Atemtechnik bei Panikattacken: Panik in 30 Sek. stoppen",
+        "es-es": "Técnica para ataques de pánico: frena el pánico en 30 s",
+        "fr-fr": "Technique respiratoire anti-panique : stop en 30 s (minuteur gratuit)",
+        "ja-jp": "パニック発作の呼吸法：30秒で止める（無料タイマー） | 深呼吸エクササイズ",
+        "pt-br": "Técnica de respiração para pânico: pare em 30s | Exercícios"
+      }
+    },
+    {
+      "route": "box-breathing-before-presentation",
+      "messageId": "metadata.description",
+      "sourceText": "Free box breathing timer for presentations, the Navy SEAL technique to stop stage fright in 60 seconds. Calm your nerves before you speak. Try now.",
+      "reviewedSourceHash": "18b8bf4f1ddf6b1bf4248d3475f61a815f9a6bdd47c72a2ff31f7416a285f742",
+      "reason": "Several preserved descriptions were clipped; these reviewed values restore complete source meaning.",
+      "translations": {
+        "de-de": "Kostenloser Box-Atmungs-Timer für Präsentationen. Die Navy-SEAL-Technik stoppt Lampenfieber in 60 Sekunden. Beruhigen Sie Ihre Nerven vor dem Sprechen. Jetzt testen.",
+        "es-es": "Temporizador gratuito de respiración cuadrada para presentaciones. La técnica de los Navy SEALs frena el miedo escénico en 60 segundos. Calma tus nervios antes de hablar. Pruébalo ahora.",
+        "fr-fr": "Minuteur gratuit de respiration carrée pour les présentations. La technique des Navy SEALs stoppe le trac en 60 secondes. Calmez vos nerfs avant de parler. Essayez maintenant.",
+        "ja-jp": "プレゼン用の無料ボックス呼吸タイマー。60秒で舞台恐怖症を止めるネイビーシールズのテクニック。話す前の緊張を和らげます。今すぐお試しください。",
+        "pt-br": "Timer grátis de respiração quadrada para apresentações. A técnica dos Navy SEALs combate o medo de falar em público em 60 segundos. Acalme os nervos antes de falar. Experimente agora."
+      }
+    },
+    {
+      "route": "breathing-exercises-before-surgery",
+      "messageId": "metadata.description",
+      "sourceText": "Free breathing exercises for pre-surgery anxiety, box breathing calms nerves in 2 minutes. Used in hospitals worldwide. Prepare for your procedure calmly.",
+      "reviewedSourceHash": "d83a4b9bbb08e14a40c8bda309ff5a24df9637e7fa73d1f0f8517e06ee065786",
+      "reason": "Several preserved descriptions were clipped; these reviewed values restore complete source meaning.",
+      "translations": {
+        "de-de": "Kostenlose Atemübungen gegen präoperative Angst. Box-Atmung beruhigt die Nerven in 2 Minuten. Weltweit in Kliniken genutzt. Bereiten Sie sich ruhig auf den Eingriff vor.",
+        "es-es": "Ejercicios de respiración gratuitos para la ansiedad preoperatoria. La respiración cuadrada calma los nervios en 2 minutos. Se usan en hospitales de todo el mundo. Prepárate con calma para el procedimiento.",
+        "fr-fr": "Exercices respiratoires gratuits contre l’anxiété préopératoire. La respiration carrée calme les nerfs en 2 minutes. Utilisés dans les hôpitaux du monde entier. Préparez votre intervention sereinement.",
+        "ja-jp": "手術前の不安を和らげる無料の呼吸法。ボックス呼吸で2分で神経を落ち着かせます。世界中の病院で採用。落ち着いて手術に備えましょう。",
+        "pt-br": "Exercícios de respiração gratuitos para a ansiedade pré-cirúrgica. A respiração quadrada acalma os nervos em 2 minutos. Usados em hospitais no mundo todo. Prepare-se com calma para o procedimento."
+      }
+    },
+    {
+      "route": "breathing-exercises-for-labor",
+      "messageId": "metadata.description",
+      "sourceText": "Free breathing timer for labor and childbirth, slow breathing helps manage contractions and stay calm. Practice before your due date. Midwife-approved techniques.",
+      "reviewedSourceHash": "ce7130ca64e733c18d9e59494309e31c43d9144bc7a1016fef5df8c2e1cdec1e",
+      "reason": "The preserved Spanish and French descriptions were clipped; these reviewed values restore complete source meaning.",
+      "translations": {
+        "de-de": "Kostenloser Atem-Timer für Geburt und Wehen. Langsames Atmen hilft, Wehen zu bewältigen und ruhig zu bleiben. Üben Sie vor dem Geburtstermin. Von Hebammen empfohlene Techniken.",
+        "es-es": "Temporizador de respiración gratuito para el parto. La respiración lenta ayuda a controlar las contracciones y mantener la calma. Practica antes de la fecha prevista. Técnicas recomendadas por matronas.",
+        "fr-fr": "Minuteur de respiration gratuit pour le travail et l’accouchement. La respiration lente aide à gérer les contractions et à rester calme. Entraînez-vous avant le terme. Techniques recommandées par des sages-femmes.",
+        "ja-jp": "陣痛・出産のための無料呼吸タイマー。ゆっくりとした呼吸で陣痛を管理し、落ち着きを保ちます。出産予定日前に練習しましょう。助産師推奨のテクニック。",
+        "pt-br": "Timer grátis de respiração para o trabalho de parto. A respiração lenta ajuda a controlar as contrações e manter a calma. Pratique antes da data prevista. Técnicas recomendadas por parteiras."
+      }
+    },
+    {
+      "route": "physiological-sigh-panic-attack",
+      "messageId": "metadata.description",
+      "sourceText": "Free panic attack breathing timer, the physiological sigh stops panic in just 1-3 breaths (30 seconds). Stanford-tested technique. Use it right now.",
+      "reviewedSourceHash": "70f97fcab2dcb86857e3a63ae3d46062202fa90713f36f76f3c7de92f14c0c26",
+      "reason": "The preserved French description was clipped; these reviewed values restore complete source meaning.",
+      "translations": {
+        "de-de": "Kostenloser Atem-Timer für Panikattacken. Der physiologische Seufzer stoppt Panik in nur 1-3 Atemzügen (30 Sekunden). In Stanford getestete Technik. Jetzt anwenden.",
+        "es-es": "Temporizador gratuito para ataques de pánico. El suspiro fisiológico frena el pánico en 1-3 respiraciones (30 segundos). Técnica probada en Stanford. Úsala ahora mismo.",
+        "fr-fr": "Minuteur respiratoire gratuit pour les crises de panique. Le soupir physiologique stoppe la panique en 1 à 3 respirations (30 secondes). Technique testée à Stanford. Utilisez-la maintenant.",
+        "ja-jp": "無料のパニック発作呼吸タイマー。生理的ため息は1～3回の呼吸（30秒）でパニックを止めます。スタンフォード大学で検証済みのテクニック。今すぐお試しください。",
+        "pt-br": "Timer grátis de respiração para crises de pânico. O suspiro fisiológico interrompe o pânico em apenas 1-3 respirações (30 segundos). Técnica testada em Stanford. Use agora mesmo."
+      }
+    },
+    {
+      "route": "box-breathing-before-presentation",
+      "messageId": "footer.links.3",
+      "sourceText": "About",
+      "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+      "reason": "The preserved Japanese footer label leaked the English source.",
+      "translations": { "de-de": "Über uns", "es-es": "Acerca de", "fr-fr": "À propos", "ja-jp": "概要", "pt-br": "Sobre" }
+    },
+    {
+      "route": "breathing-exercises-before-surgery",
+      "messageId": "footer.links.3",
+      "sourceText": "About",
+      "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+      "reason": "The preserved Japanese footer label leaked the English source.",
+      "translations": { "de-de": "Über uns", "es-es": "Acerca de", "fr-fr": "À propos", "ja-jp": "概要", "pt-br": "Sobre" }
+    },
+    {
+      "route": "breathing-exercises-for-labor",
+      "messageId": "footer.links.3",
+      "sourceText": "About",
+      "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+      "reason": "The preserved Japanese footer label leaked the English source.",
+      "translations": { "de-de": "Über uns", "es-es": "Acerca de", "fr-fr": "À propos", "ja-jp": "概要", "pt-br": "Sobre" }
+    },
+    {
+      "route": "physiological-sigh-panic-attack",
+      "messageId": "footer.links.3",
+      "sourceText": "About",
+      "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+      "reason": "The preserved Japanese footer label leaked the English source.",
+      "translations": { "de-de": "Über uns", "es-es": "Acerca de", "fr-fr": "À propos", "ja-jp": "概要", "pt-br": "Sobre" }
     }
   ]
 }

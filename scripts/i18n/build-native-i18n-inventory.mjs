@@ -259,6 +259,12 @@ export const DEPENDENCY_GROUPS = Object.freeze([
           "Pins the fail-closed serving-mode boundary so proxy, preview, and cutover builds cannot accidentally expose the wrong route set.",
       },
       {
+        file: "scripts/tests/next-config-locale-redirects.test.js",
+        marker: "proxy mode",
+        detail:
+          "Pins locale redirect behavior across legacy proxy and native serving modes so stable translated URLs remain reachable.",
+      },
+      {
         file: "scripts/tests/native-i18n-rw03-embed.test.mjs",
         marker: "__MT_CONFIG__",
         detail:

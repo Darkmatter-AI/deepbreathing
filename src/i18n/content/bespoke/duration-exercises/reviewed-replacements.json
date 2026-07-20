@@ -41,6 +41,30 @@
         "ja-jp": "ガイド付きの2分間呼吸エクササイズで、すばやく気持ちを切り替えられます。4-4-4-4のサイクルを8回（ボックス呼吸）、または5秒吸って5秒吐くゆっくりとした呼吸を10〜12回（コヒーレント呼吸）行います。2分あれば、呼吸をゆっくりにし、神経系を落ち着かせ、集中力を高めることができます。",
         "pt-br": "Um exercício respiratório guiado de 2 minutos proporciona uma rápida reinicialização: faça 8 ciclos de 4-4-4-4 (respiração quadrada) ou 10-12 respirações lentas, inspirando por 5 segundos e expirando por 5 segundos (respiração coerente). Dois minutos são suficientes para desacelerar a respiração, acalmar o sistema nervoso e melhorar o foco."
       }
+    },
+    {
+      "sourceRoute": "/1-minute-breathing-exercise",
+      "messagePath": "footer.labels[3]",
+      "sourceText": "About",
+      "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+      "reason": "The preserved Japanese footer label leaked the English source; this reviewed replacement localizes the shared navigation label.",
+      "translations": { "de-de": "Über uns", "es-es": "Acerca de", "fr-fr": "À propos", "ja-jp": "概要", "pt-br": "Sobre" }
+    },
+    {
+      "sourceRoute": "/2-minute-breathing-exercise",
+      "messagePath": "footer.labels[3]",
+      "sourceText": "About",
+      "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+      "reason": "The preserved Japanese footer label leaked the English source; this reviewed replacement localizes the shared navigation label.",
+      "translations": { "de-de": "Über uns", "es-es": "Acerca de", "fr-fr": "À propos", "ja-jp": "概要", "pt-br": "Sobre" }
+    },
+    {
+      "sourceRoute": "/5-minute-breathing-exercise",
+      "messagePath": "footer.labels[3]",
+      "sourceText": "About",
+      "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+      "reason": "The preserved Japanese footer label leaked the English source; this reviewed replacement localizes the shared navigation label.",
+      "translations": { "de-de": "Über uns", "es-es": "Acerca de", "fr-fr": "À propos", "ja-jp": "概要", "pt-br": "Sobre" }
     }
   ],
   "schemaVersion": 1

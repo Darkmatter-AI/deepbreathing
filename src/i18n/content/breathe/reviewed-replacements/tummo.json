@@ -8,6 +8,33 @@
       "reviewedSourceHash": "53dfaaee6159fd8c0a4c836130d00671fa48cd69f3a6c34fa7681c7d8a6f3967",
       "sourcePath": "body[4].content",
       "sourceText": "Wim Hof has acknowledged drawing from the tummo tradition. Both techniques use hyperventilation-style breathing to create physiological changes. Key differences: tummo includes visualization of inner fire and is traditionally part of a spiritual practice within Tibetan Buddhism; Wim Hof adds a structured protocol with timed breath retention holds and deliberate cold exposure. The tummo breathing pattern is slower and more intentional than Wim Hof power breathing, which uses 30–40 rapid breaths per round. Tummo is a contemplative practice; Wim Hof is a performance protocol."
+    },
+    {
+      "currentCatalogValue": "Practica la respiración tummo, la antigua técnica tibetana del fuego interno. Temporizador guiado gratuito con indicador visual. Genera calor interior y",
+      "locale": "es-es",
+      "reason": "The approved description is truncated after a conjunction.",
+      "replacement": "Practica la respiración tummo, la técnica tibetana del fuego interno que inspiró a Wim Hof. Temporizador online gratuito con guía paso a paso, beneficios y notas de seguridad. Sin descargas.",
+      "reviewedSourceHash": "ac5ad5897f43063403c0a3e2498b8383f3c102380a7f09999dca799ebcd98ed2",
+      "sourcePath": "meta.description",
+      "sourceText": "Practice tummo breathing — the Tibetan inner fire technique behind Wim Hof. Free online timer with step-by-step guide, benefits, and safety notes. No download."
+    },
+    {
+      "currentCatalogValue": "Practica la respiración tummo, la antigua técnica tibetana del fuego interno. Temporizador guiado gratuito con indicador visual. Genera calor interior y",
+      "locale": "es-es",
+      "reason": "The approved social description is truncated after a conjunction.",
+      "replacement": "Temporizador online gratuito de respiración tummo con guía paso a paso, indicaciones para visualizar el fuego interno y comparación con Wim Hof. Sin descargas.",
+      "reviewedSourceHash": "b68fa733cb7c4b6c7ad43107e0fb65a62bbb5a8aac868c4ed719658dd18ff900",
+      "sourcePath": "meta.ogDescription",
+      "sourceText": "Free online tummo breathing timer with step-by-step guide, inner fire visualization cues, and Wim Hof comparison. No download needed."
+    },
+    {
+      "currentCatalogValue": "Practica la respiración tummo, la antigua técnica tibetana del fuego interno. Temporizador guiado gratuito con indicador visual. Genera calor interior y",
+      "locale": "es-es",
+      "reason": "The approved Twitter description is truncated after a conjunction.",
+      "replacement": "Temporizador gratuito de respiración tummo, la técnica tibetana del fuego interno. Indicador visual, pasos y notas de seguridad.",
+      "reviewedSourceHash": "cfe6316290073197d9db7dcca478c181b8f8c1a6be04a272f192f5a8b0c53cae",
+      "sourcePath": "meta.twitterDescription",
+      "sourceText": "Free tummo breathing timer — the Tibetan inner fire technique. Visual pacer, steps, and safety notes."
     }
   ],
   "schemaVersion": 1,

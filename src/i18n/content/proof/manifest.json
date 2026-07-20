@@ -1,6 +1,6 @@
 {
   "allLocaleRoutesPublishable": true,
-  "digest": "438d36c57602197eec088e0a171ae889e901d8a744471852cae1c65c80b48e8b",
+  "digest": "9641a9f7f33d6f9537eab84e65ea7b7216f92594b7cc25a04233b4ad2536a086",
   "files": [
     {
       "bytes": 17202,
@@ -21,10 +21,10 @@
       "sha256": "0795b17dd51b48a51bc7fb96849c369fe5ffa71a60370c2e566e47be51aec11a"
     },
     {
-      "bytes": 19496,
+      "bytes": 19469,
       "path": "messages/es-es/for-anxiety.json",
       "role": "runtime-messages",
-      "sha256": "aac8b79a2859b167c04e525b4854dc39dc5305f4b1f98b724777a5448f6e98b0"
+      "sha256": "f73b8a2b1d468b0d22d11814d18f9c44e869e8f6974e5f3ee7eeba2ab0a8a192"
     },
     {
       "bytes": 18022,
@@ -75,10 +75,10 @@
       "sha256": "6961b8143c3638549b285a919711767148bfdca27a59a7b859cdfbc50f9341f8"
     },
     {
-      "bytes": 199029,
+      "bytes": 199075,
       "path": "source-metadata/for-anxiety.json",
       "role": "build-time-source-metadata",
-      "sha256": "09cee1b1657a9a4748ad79f264be8c1245eac14d3a6ebd2a8d8391a708d5c65e"
+      "sha256": "c940284eb4694293a551d2c1d6aa5b7bf6737da4772925a88b52e69c66659c61"
     },
     {
       "bytes": 231,
@@ -90,9 +90,9 @@
   "generatedFrom": {
     "catalogSnapshotUpdatedThrough": "2026-07-15T07:05:12.173Z",
     "overridesSha256": "c05ae38ca31e837f2c1fc7d28695e789aa4f8cd8a36f82f6bfa09c91d1800e3d",
-    "reviewedReplacementsSha256": "d4c019c086c8b7ee902fd3e84ab724329b111788bda2ab862e805832643f3a0c",
+    "reviewedReplacementsSha256": "434c543631bcc7712a1dc5c94d2ec000431a93b555ae17b1ea98ecbca419b983",
     "semanticMapSha256": "2195dd8c8866fc5b6ff260d04409e0428ea06210a63934b080293afe718eb443",
-    "structuredAuditDigest": "a2198562bae800bcf7f2c324914829606087ac6f320b6d7e2391ee7f1bdbb75d",
+    "structuredAuditDigest": "298e0c6f2525e499790a76605e14a22f359d7f4fcee397578597903a195b5c2e",
     "tenantId": "deepbreathingexercises_com_ac8ae5"
   },
   "locales": [
@@ -177,7 +177,7 @@
           "missingMessages": 0,
           "presentMessages": 91,
           "publishable": true,
-          "sha256": "aac8b79a2859b167c04e525b4854dc39dc5305f4b1f98b724777a5448f6e98b0"
+          "sha256": "f73b8a2b1d468b0d22d11814d18f9c44e869e8f6974e5f3ee7eeba2ab0a8a192"
         },
         "fr-fr": {
           "expectedMessages": 91,
@@ -208,7 +208,7 @@
         }
       },
       "overrideMessages": 27,
-      "reviewedReplacementMessages": 1,
+      "reviewedReplacementMessages": 3,
       "routeId": "for.anxiety",
       "safeSeedMessages": 64,
       "unresolvedMessages": 0
@@ -219,7 +219,7 @@
     "expectedMessages": 190,
     "localeMessageValues": 950,
     "overrideMessages": 49,
-    "reviewedReplacementMessages": 1,
+    "reviewedReplacementMessages": 3,
     "routes": 2,
     "safeSeedMessages": 141,
     "unresolvedMessages": 0

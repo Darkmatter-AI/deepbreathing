@@ -18,6 +18,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-07-20 | [Post-Migration Locale Metadata Hygiene — Translation Leakage + Truncation Corrections](#2026-07-20-post-migration-locale-metadata-hygiene--translation-leakage--truncation-corrections) | 🔄 Implemented |
 | 2026-07-19 | [FR Coherent Bing CTR — Exercise-Intent Title + Meta Rewrite](#2026-07-19-fr-coherent-bing-ctr--exercise-intent-title--meta-rewrite) | 🔄 Implemented |
 | 2026-07-19 | [Homepage Server-Rendered Content — Fix Full-Page CSR Bailout](#2026-07-19-homepage-server-rendered-content--fix-full-page-csr-bailout) | 🔄 Implemented |
 | 2026-07-18 | [Hope Cartel Reviews-Intent Capture — Reviews Section + Exact-Match FAQs + Title](#2026-07-18-hope-cartel-reviews-intent-capture--reviews-section--exact-match-faqs--title) | 🔄 Implemented |
@@ -79,13 +80,38 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-01-06 | [Navy SEAL Content Expansion](#2026-01-06-navy-seal-content-expansion) | ❌ Failed |
 | 2026-01-06 | [CTR Title Rewrites (Batch 1)](#2026-01-06-ctr-title-rewrites-batch-1) | ✅ Success |
 
-**Roll-up by status (57 entries):** ✅ 4 Success · ❌ 11 Failed · ⚪ 12 Inconclusive · 🟡 3 Mixed · ⏳ 1 Waiting · 🔄 18 Implemented · 📊 8 Snapshot. *(2026-07-19: +FR coherent Bing CTR rewrite; +homepage server-rendered content fix. 2026-07-18 autoresearch cycle 1: settled 5 overdue verdicts — ?duration= hreflang ✅, trailing-slash ❌ superseded, Tummo 🟡, 404 root-cause ❌, crawl hygiene 🟡; +hope-cartel reviews-intent entry. 2026-07-15: +native translation serving migration planning entry. 2026-06-21: audio-v2 rebase folded in the 2026-05-18 Indexing-Recovery Checkpoint snapshot. 2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
+**Roll-up by status (58 entries):** ✅ 4 Success · ❌ 11 Failed · ⚪ 12 Inconclusive · 🟡 3 Mixed · ⏳ 1 Waiting · 🔄 19 Implemented · 📊 8 Snapshot. *(2026-07-20: +post-migration locale metadata hygiene corrections. 2026-07-19: +FR coherent Bing CTR rewrite; +homepage server-rendered content fix. 2026-07-18 autoresearch cycle 1: settled 5 overdue verdicts — ?duration= hreflang ✅, trailing-slash ❌ superseded, Tummo 🟡, 404 root-cause ❌, crawl hygiene 🟡; +hope-cartel reviews-intent entry. 2026-07-15: +native translation serving migration planning entry. 2026-06-21: audio-v2 rebase folded in the 2026-05-18 Indexing-Recovery Checkpoint snapshot. 2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
 
 See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of what worked / failed / strategic insights from the first month of experiments.
 
 ---
 
 ## Active Experiments
+
+### 2026-07-20: Post-Migration Locale Metadata Hygiene — Translation Leakage + Truncation Corrections
+
+**Context.** A complete post-migration source and production audit covered all **280 translated route-locale pages** across `es`, `pt`, `fr`, `de`, and `ja`. Routing, stable post-prefix slugs, canonicals, hreflang, and indexing behavior remained healthy. The migration refactor made repository-owned locale bundles and their provenance directly inspectable, exposing pre-existing translation defects that the proxy-era HTML made difficult to inventory: malformed or clipped titles, clipped metadata descriptions, one Portuguese visualizer heading from the wrong exercise, repeated Japanese `About` fallback labels, English `Home` in localized breadcrumb schema, and an English Person description on localized `/about/abi` pages. Recognized exercise names, brands, and stable English slugs remain intentional and are not relabeled as defects.
+
+**Change.** Correct the confirmed source-faithful translation defects through compiler-owned reviewed replacement and manual records, then regenerate the localized runtime bundles. The implementation also:
+
+- makes the anxiety proof compiler's reviewed translation-quality corrections authoritative for its metadata rather than falling back to clipped catalog head placements;
+- localizes breadcrumb `Home` labels for all five translated locales and derives localized Person schema description from the route metadata;
+- adds a cohort-wide regression test that rejects Markdown or dangling title fragments, Japanese footer `About` fallbacks, and regressions in the confirmed correction manifest;
+- preserves every existing pathname, redirect, canonical, hreflang pair, sitemap entry, analytics path, and keyword-led proper name.
+
+**Baseline (audit 2026-07-20):** 280 translated pages reviewed. Confirmed defects included 11 malformed/truncated titles, recurring clipped descriptions/social descriptions across shared compiler families, 45 Japanese footer fallback occurrences, 3 Japanese 4-7-8 internal-anchor fallbacks, one unrelated Portuguese H2, English breadcrumb labels on the localized trust pages, and an English Person description across all five localized `/about/abi` pages. These are content-quality defects, not evidence that the native migration harmed indexing or analytics.
+
+**Expected effect:** Cleaner snippets and social previews, better language consistency and user trust, and a modest CTR upside where Google uses the corrected title/description. No immediate ranking increase is assumed. Because slugs, canonicals, and internal URL identity do not change, the correction should not trigger redirect, reindexing, hreflang, sitemap, or analytics-series fragmentation.
+
+**Pre-committed verification:**
+
+- Deploy gate: all native-i18n compiler checks pass with zero unresolved records; production cache-busted checks show the corrected title, description, visible heading, footer label, and schema values on the affected locale routes.
+- T+7 watch: no new localized-route 404/canonical/hreflang regressions and no unexpected locale landing-page drop in mature GA4 data.
+- T+28 read: compare corrected affected-page cohort in finalized GSC data against the preceding 28 days. Treat snippet/CTR movement as directional only because query mix and Google title rewriting can dominate. Keep the corrections unless language accuracy regresses; this is primarily a correctness release, not a reversible keyword experiment.
+
+**Status:** 🔄 Implemented. URL/slug localization and unproven keyword/taste changes remain explicitly out of scope.
+
+---
 
 ### 2026-07-19: FR Coherent Bing CTR — Exercise-Intent Title + Meta Rewrite
 

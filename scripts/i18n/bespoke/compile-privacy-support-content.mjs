@@ -24,10 +24,10 @@ const ROUTES = {
   privacy: {
     sourceRoute: "/privacy",
     expectedMessages: 32,
-    expectedCatalogBindings: 16,
+    expectedCatalogBindings: 14,
     expectedGapBindings: 3,
     expectedMirrorBindings: 2,
-    expectedReplacementBindings: 11,
+    expectedReplacementBindings: 13,
     expectedReviewedGapCells: 15,
     expectedRenderedGapCells: 15,
     expectedStaleGapCells: 0,

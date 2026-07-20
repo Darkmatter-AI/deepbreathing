@@ -836,6 +836,24 @@
       "replacement": "Usa la respiración del suspiro fisiológico para aliviar el flato y recuperarte más rápido después de esfuerzos intensos al correr.",
       "reason": "The approved value retains superseded attribution, immediacy, and multiplier claims that are absent from the current source.",
       "numericReviewReason": "Strict parity removes the approved value's 2x claim because it is absent from the current source."
+    },
+    {
+      "route": "/for/pranayama",
+      "sourcePath": "meta.title",
+      "source": "Pranayama: Complete Guide to Yogic Breathing (2026)",
+      "locale": "pt-br",
+      "current": "Descubra a **pranayama respiração**: um guia completo de técnicas iogues (2026) para exercícios de respiração profunda | Deep Breathing Exercises",
+      "replacement": "Pranayama: guia completo da respiração iogue (2026)",
+      "reason": "The approved metadata contains Markdown and an unrelated site-name suffix; the replacement preserves the recognized exercise name and current source meaning."
+    },
+    {
+      "route": "/for/public-speaking",
+      "sourcePath": "meta.title",
+      "source": "Breathing Exercises for Public Speaking: Stop Stage Fright in 60 Seconds",
+      "locale": "pt-br",
+      "current": "Exercícios de respiração para falar em público — Elimine o",
+      "replacement": "Exercícios de respiração para falar em público: elimine o medo de palco em 60 segundos",
+      "reason": "The approved metadata is truncated; the replacement restores the source's stage-fright outcome and 60-second timing."
     }
   ]
 }

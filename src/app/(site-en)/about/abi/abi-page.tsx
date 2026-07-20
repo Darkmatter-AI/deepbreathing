@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import { JsonLd } from "@/components/seo/json-ld";
 import type { AbiPageContent } from "@/i18n/content/bespoke/trust-pages/types";
+import { getLocalizedHomeLabel } from "@/i18n";
 import type { NativeRouteRenderContext } from "@/i18n/render-context";
 import { resolveNativeInternalHref } from "@/i18n/route-manifest";
 import { createOgImagePath } from "@/lib/seo/og-image";
@@ -12,8 +13,6 @@ const siteUrl = "https://deepbreathingexercises.com";
 const sourceRoute = "/about/abi";
 const headshotUrl = `${siteUrl}/abi.jpg`;
 const personJobTitle = "Founder, Deep Breathing Exercises";
-const personDescription =
-  "Founder of Deep Breathing Exercises. Photographer. Built the site as a free visualizer for the breathing techniques he uses daily.";
 const personKnowsAbout = [
   "Breathing exercises",
   "Breathwork",
@@ -96,7 +95,9 @@ export function AbiPage({
       {
         "@type": "ListItem",
         position: 1,
-        name: "Home",
+        name: renderContext
+          ? getLocalizedHomeLabel(renderContext.locale)
+          : "Home",
         item: siteUrl,
       },
       {
@@ -121,7 +122,7 @@ export function AbiPage({
     url: canonicalUrl,
     image: headshotUrl,
     jobTitle: personJobTitle,
-    description: personDescription,
+    description: content.metadata.description,
     knowsAbout: personKnowsAbout,
     sameAs: personSameAs,
     worksFor: {

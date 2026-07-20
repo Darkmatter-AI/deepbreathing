@@ -78,6 +78,45 @@
         "ja-jp": "4-7-8呼吸法が睡眠に効果をもたらす仕組みは3つあります。(1) 長い呼気が迷走神経を活性化させ、リラックスを促す、(2) 息を止めることで二酸化炭素がわずかに蓄積され、鎮静効果をもたらす、(3) カウントすることで心が一点に集中し、覚醒状態を保つ思考の暴走を中断させる、という仕組みです。",
         "pt-br": "A respiração 4-7-8 favorece o sono por meio de três mecanismos: (1) a expiração longa ativa o nervo vago, desencadeando o relaxamento, (2) a retenção da respiração permite um leve acúmulo de CO2, que tem um efeito calmante, e (3) a contagem dá à sua mente um foco único, interrompendo pensamentos acelerados que o mantêm acordado."
       }
+    },
+    {
+      "messageId": "metadata.title",
+      "reason": "The preserved German title was truncated mid-parenthesis; this reviewed replacement restores a complete title.",
+      "reviewedSourceHash": "d5f77f74824e126eb6c97da65da3b6db66d456a9cd226d4351bbbde4eb7560d9",
+      "sourceText": "4-7-8 Breathing for Insomnia: Fall Asleep in Minutes (Free Timer)",
+      "translations": {
+        "de-de": "4-7-8 Atemtechnik bei Schlaflosigkeit: Einschlafen (Gratis-Timer)",
+        "es-es": "Respiración 4-7-8 para insomnio | Ejercicios de respiración",
+        "fr-fr": "Respiration 4-7-8 : endormez-vous vite (Minuteur gratuit)",
+        "ja-jp": "不眠症のための4-7-8呼吸法：数分で眠りにつく（無料タイマー） | 深呼吸エクササイズ",
+        "pt-br": "Respiração 4-7-8 para Insônia: Durma Rápido (Timer Grátis)"
+      }
+    },
+    {
+      "messageId": "metadata.description",
+      "reason": "The preserved German and Spanish descriptions were truncated; these reviewed replacements restore the complete source meaning.",
+      "reviewedSourceHash": "ffec7532f10aea0fcfa2a43f6f801deeef183cb1f551fef7327bc85317504ecf",
+      "sourceText": "Free 4-7-8 breathing timer for insomnia, Dr. Weil's 'natural tranquilizer' helps you fall asleep in 2-5 minutes. No pills, no download. Start tonight.",
+      "translations": {
+        "de-de": "Kostenloser 4-7-8 Atemtimer gegen Schlaflosigkeit. Dr. Weils 'natürliches Beruhigungsmittel' lässt Sie in 2-5 Min. einschlafen. Keine Pillen, kein Download. Heute Abend beginnen.",
+        "es-es": "Temporizador gratis de respiración 4-7-8 para insomnio. El 'tranquilizante natural' del Dr. Weil te ayuda a dormir en 2-5 min. Sin pastillas ni descargas. Empieza esta noche.",
+        "fr-fr": "Minuteur gratuit de respiration 4-7-8 contre l'insomnie. Le « tranquillisant naturel » du Dr Weil vous aide à vous endormir en 2 à 5 minutes. Sans pilules ni téléchargement. Commencez ce soir.",
+        "ja-jp": "不眠症のための無料4-7-8呼吸法タイマー。ワイル博士の「天然の精神安定剤」で2～5分で入眠。薬不要、ダウンロード不要。今夜から始めましょう。",
+        "pt-br": "Timer grátis de respiração 4-7-8 para insônia. O 'tranquilizante natural' do Dr. Weil ajuda a dormir em 2-5 minutos. Sem pílulas. Comece hoje."
+      }
+    },
+    {
+      "messageId": "footer.about",
+      "reason": "The preserved Japanese footer label leaked the English source; this reviewed replacement localizes the shared navigation label.",
+      "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+      "sourceText": "About",
+      "translations": {
+        "de-de": "Über uns",
+        "es-es": "Acerca de",
+        "fr-fr": "À propos",
+        "ja-jp": "概要",
+        "pt-br": "Sobre"
+      }
     }
   ]
 }
