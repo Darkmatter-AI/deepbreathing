@@ -62,8 +62,9 @@ Status key: ✅ Done | ⏳ Pending | 🔲 Not started
 | 4.2 | `ITSAppUsesNonExemptEncryption = false` in `ios.infoPlist` | ✅ | Already set in `app.json` |
 | 4.3 | `PrivacyInfo.xcprivacy` added to iOS target | ✅ | Declared via `ios.privacyManifests` in `app.json` (UserDefaults CA92.1, SystemBootTime 35F9.1, FileTimestamp C617.1, DiskSpace E174.1); Expo generates the manifest at prebuild |
 | 4.4 | GA4 env vars set for EAS production builds | 🔲 | **Blocker for analytics:** `.env` is gitignored and EAS cloud builds only see git-tracked files, so `EXPO_PUBLIC_GA4_MEASUREMENT_ID` / `EXPO_PUBLIC_GA4_MP_API_SECRET` are `undefined` at bundle time and `ga4-mp.ts` silently no-ops every event. Fix before building: `cd apps/mobile && set -a && source .env && set +a && npx eas env:create --environment production --name EXPO_PUBLIC_GA4_MEASUREMENT_ID --value "$EXPO_PUBLIC_GA4_MEASUREMENT_ID" --visibility plaintext --scope project --non-interactive && npx eas env:create --environment production --name EXPO_PUBLIC_GA4_MP_API_SECRET --value "$EXPO_PUBLIC_GA4_MP_API_SECRET" --visibility sensitive --scope project --non-interactive` |
-| 4.5 | Production build: `eas build --platform ios --profile production` | 🔲 | Creates `.ipa` and uploads to EAS |
-| 4.6 | Build passes all Apple validations (check build log in EAS dashboard) | 🔲 | Privacy manifest warnings appear here |
+| 4.5 | Ears-on audio parity pass on a real device (TestFlight or dev build) | 🔲 | 2026-07-22: mobile now runs the shared `@resonance/audio` engine natively (react-native-audio-api). Simulator-verified rendering + gain ramps; timbre/parity vs web needs human ears. Check: per-mode ambient differs (Relax=noise bed, Box=drone), cues match web, silent switch + screen lock keep audio alive. |
+| 4.6 | Production build: `eas build --platform ios --profile production` | 🔲 | Creates `.ipa` and uploads to EAS |
+| 4.7 | Build passes all Apple validations (check build log in EAS dashboard) | 🔲 | Privacy manifest warnings appear here |
 
 ---
 
