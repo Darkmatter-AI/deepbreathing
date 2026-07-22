@@ -376,8 +376,11 @@ export class AudioService {
       this.masterSoftClip.oversample = '2x';
     }
 
+    // -3 dBFS safety margin. The soft-clip path also gets +1.6dB make-up gain
+    // (×1.2): the compressor stage on the web chain adds loudness this chain
+    // lacks, leaving native ~20% quieter than web at identical source levels.
     this.masterTrim = this.ctx.createGain();
-    this.masterTrim.gain.value = 0.71; // -3 dBFS safety margin
+    this.masterTrim.gain.value = supportsCompressor ? 0.71 : 0.71 * 1.2;
 
     // Diagnostic analyser taps — always present (cheap when no consumer is
     // reading) so the debug panel can show where in the chain a peak lives
