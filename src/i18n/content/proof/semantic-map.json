@@ -1,0 +1,967 @@
+{
+  "schemaVersion": 1,
+  "routes": [
+    {
+      "messages": [
+        {
+          "messageId": "breathe.buteyko.lineage",
+          "reviewedSourceHash": "6622f09068869c32516c276a354265fb851017c14d468c4b32fcfc80a12c3e66",
+          "sourcePath": "lineage"
+        },
+        {
+          "messageId": "breathe.buteyko.hero.title",
+          "reviewedSourceHash": "6e5af0031ccdda555bd6fe13f19ecf553320dc5f40ea7693e4ab79506db70e85",
+          "sourcePath": "hero.title"
+        },
+        {
+          "messageId": "breathe.buteyko.hero.subtitle",
+          "reviewedSourceHash": "2cc968fad9e75cb71be6cd9d75ec9cedfc356b41910bc0a0a6e0882a109f331f",
+          "sourcePath": "hero.subtitle"
+        },
+        {
+          "messageId": "breathe.buteyko.hero.intro",
+          "reviewedSourceHash": "04b799a50e953d1b0d5a0ebf9613fb98ec368273d28528de9a9f7ef9f42071d8",
+          "sourcePath": "hero.intro"
+        },
+        {
+          "messageId": "breathe.buteyko.meta.title",
+          "reviewedSourceHash": "55311b1a4a9efa35128b3f063d750292930029bd41a0e1a80f9ec6ba426d65da",
+          "sourcePath": "meta.title"
+        },
+        {
+          "messageId": "breathe.buteyko.meta.description",
+          "reviewedSourceHash": "d533bd733188d4050bd0614fe4ffc7c3a8d4544ec2c0209c7a5d975e6f986860",
+          "sourcePath": "meta.description"
+        },
+        {
+          "messageId": "breathe.buteyko.meta.og-title",
+          "reviewedSourceHash": "e351e8538cc262888634b98f86dcf2692e9637e56166af9978b75d2460a365c8",
+          "sourcePath": "meta.ogTitle"
+        },
+        {
+          "messageId": "breathe.buteyko.meta.og-description",
+          "reviewedSourceHash": "8b3fc84ce8cb23c61fad59118b4c74cf0fde408a7cf2f94f0d7911481ae33682",
+          "sourcePath": "meta.ogDescription"
+        },
+        {
+          "messageId": "breathe.buteyko.meta.twitter-title",
+          "reviewedSourceHash": "acd30cf1ddaca26a26d83739d2710536d23ec5f6c7b5c07409bef0aae67b286b",
+          "sourcePath": "meta.twitterTitle"
+        },
+        {
+          "messageId": "breathe.buteyko.meta.twitter-description",
+          "reviewedSourceHash": "25c204a2c91fef70ba5ea81c4d872b7d7619787c8f34057af4223dd7e70be0dc",
+          "sourcePath": "meta.twitterDescription"
+        },
+        {
+          "messageId": "breathe.buteyko.body.what-it-is.heading",
+          "reviewedSourceHash": "1f36becc3aa7c8a8893bc0688d52b8bef91dae5528528706003bc4f45e409f96",
+          "sourcePath": "body[0].heading"
+        },
+        {
+          "messageId": "breathe.buteyko.body.what-it-is.content",
+          "reviewedSourceHash": "68576f884c4f2f2fb39ca0ae535a4b967e8dfe99ecce57e29719fee95101d657",
+          "sourcePath": "body[0].content"
+        },
+        {
+          "messageId": "breathe.buteyko.body.control-pause.heading",
+          "reviewedSourceHash": "80c21cee552a010088e3f18dce592d370ed4085c5558ba6df9d2a32a1c3479a4",
+          "sourcePath": "body[1].heading"
+        },
+        {
+          "messageId": "breathe.buteyko.body.control-pause.content",
+          "reviewedSourceHash": "e75c857b35356895c41f46f1ff40d6916f82ecfd36e4e0bdef501414ac0c2a89",
+          "sourcePath": "body[1].content"
+        },
+        {
+          "messageId": "breathe.buteyko.body.benefits.heading",
+          "reviewedSourceHash": "d5b67bc930cd33c0c62c478cb250387d18e05304ba7d0e02fd1acea699044d20",
+          "sourcePath": "body[2].heading"
+        },
+        {
+          "messageId": "breathe.buteyko.body.benefits.content",
+          "reviewedSourceHash": "24c95e846527e76b07e9dee7b714bf51c5621b43b481d9a303268eb5ee8740f0",
+          "sourcePath": "body[2].content"
+        },
+        {
+          "messageId": "breathe.buteyko.body.when-to-use.heading",
+          "reviewedSourceHash": "5c06b51a4d33dd354e9a862dc06e40a051cda2eac3aa766442fe48332e988be0",
+          "sourcePath": "body[3].heading"
+        },
+        {
+          "messageId": "breathe.buteyko.body.when-to-use.content",
+          "reviewedSourceHash": "7614886239b53b55d9c33354c98f0d66bca5c1aaf5373c115d21da428a62ee65",
+          "sourcePath": "body[3].content"
+        },
+        {
+          "messageId": "breathe.buteyko.body.important-disclaimer.heading",
+          "reviewedSourceHash": "b808b0f86eea32a2c25aade344263ec29207770b374860a6c4b25ba8377d948c",
+          "sourcePath": "body[4].heading"
+        },
+        {
+          "messageId": "breathe.buteyko.body.important-disclaimer.content",
+          "reviewedSourceHash": "476d1a4d9a751caa6829d13479509b7baad44f2e0a678dc02af2f7dfe4bf5630",
+          "sourcePath": "body[4].content"
+        },
+        {
+          "messageId": "breathe.buteyko.body.versus-deep-breathing.heading",
+          "reviewedSourceHash": "a3e7019976c0ca9e5e288c7db103b1319951bd0b1f5a2a5dd15d9eb05293818a",
+          "sourcePath": "body[5].heading"
+        },
+        {
+          "messageId": "breathe.buteyko.body.versus-deep-breathing.content",
+          "reviewedSourceHash": "9b1e2f831f491f0e75885a6aac645ec79c000d6c1ab578dd20a345f167c4b7ab",
+          "sourcePath": "body[5].content"
+        },
+        {
+          "messageId": "breathe.buteyko.benefits.nasal-breathing-habit.title",
+          "reviewedSourceHash": "81e792fc48593d52ea109f5a23846b276593db5fedadf27dc78e4d4a7567a398",
+          "sourcePath": "benefits[0].title"
+        },
+        {
+          "messageId": "breathe.buteyko.benefits.nasal-breathing-habit.description",
+          "reviewedSourceHash": "8344a8d2d7ae532539e2e0e7c228e95ad9741d4687267ddfece0625bad562d9a",
+          "sourcePath": "benefits[0].description"
+        },
+        {
+          "messageId": "breathe.buteyko.benefits.co2-tolerance-training.title",
+          "reviewedSourceHash": "e439d1055d2f6f5794e402786c34bce923b715120bbe2f2e948e6b2cdcb896e2",
+          "sourcePath": "benefits[1].title"
+        },
+        {
+          "messageId": "breathe.buteyko.benefits.co2-tolerance-training.description",
+          "reviewedSourceHash": "48f78be45c92f6b1e84c919188d6bd96f0ef3958b28bb1b390c1f4731141bc1d",
+          "sourcePath": "benefits[1].description"
+        },
+        {
+          "messageId": "breathe.buteyko.benefits.asthma-symptom-support.title",
+          "reviewedSourceHash": "962bc2c2e18e202c92912d5a16b744cb9139340b5954942037bc92c666b29cc5",
+          "sourcePath": "benefits[2].title"
+        },
+        {
+          "messageId": "breathe.buteyko.benefits.asthma-symptom-support.description",
+          "reviewedSourceHash": "6f3e2e5d32f2c3553ad116c2338a3be59459c270bd6e58807605bb3b670339e2",
+          "sourcePath": "benefits[2].description"
+        },
+        {
+          "messageId": "breathe.buteyko.practice-tips.always-use-nasal-breathing.title",
+          "reviewedSourceHash": "e5effa2111c946bf7400b3b4f10aaa1748aea33b9a0e17c6e3d0ae33b0639812",
+          "sourcePath": "practiceTips[0].title"
+        },
+        {
+          "messageId": "breathe.buteyko.practice-tips.always-use-nasal-breathing.description",
+          "reviewedSourceHash": "b8719f825ebf11930e9d0d39cf9846d04cdb67da0160b999f127eaf33aa57cca",
+          "sourcePath": "practiceTips[0].description"
+        },
+        {
+          "messageId": "breathe.buteyko.practice-tips.light-is-right.title",
+          "reviewedSourceHash": "7e9dc31af194b20dd9f5fd255677da951310fab90bfc396575379a1bc1a43c7c",
+          "sourcePath": "practiceTips[1].title"
+        },
+        {
+          "messageId": "breathe.buteyko.practice-tips.light-is-right.description",
+          "reviewedSourceHash": "0a0e010490c89d5261fb5b6d9bc7a60bcc12658a28ff27cd7374061c6ee07eb0",
+          "sourcePath": "practiceTips[1].description"
+        },
+        {
+          "messageId": "breathe.buteyko.practice-tips.mild-air-hunger.title",
+          "reviewedSourceHash": "b6ada1e222715c51440af94b2511e331a825c0e4315c666fc054c298646360c0",
+          "sourcePath": "practiceTips[2].title"
+        },
+        {
+          "messageId": "breathe.buteyko.practice-tips.mild-air-hunger.description",
+          "reviewedSourceHash": "a8df2aa98c7b3058b94071e670e94384216e7fdc49e49afc3284265d9e0a40ac",
+          "sourcePath": "practiceTips[2].description"
+        },
+        {
+          "messageId": "breathe.buteyko.faqs.asthma-cure.question",
+          "reviewedSourceHash": "68e23f6dff76c77f67d5195f1a9a54d063a3584042f786246d0f45157567ccf2",
+          "sourcePath": "faqs[0].question"
+        },
+        {
+          "messageId": "breathe.buteyko.faqs.asthma-cure.answer",
+          "reviewedSourceHash": "2fd1b65a89fd45af2b8dd5e25ee2b59b2903fc4e22ed277bc43b9495f199ed5a",
+          "sourcePath": "faqs[0].answer"
+        },
+        {
+          "messageId": "breathe.buteyko.faqs.control-pause.question",
+          "reviewedSourceHash": "309746b349d8c166e66a9a1152a45a16f395aaf5a93cc623cd4f719e96feef29",
+          "sourcePath": "faqs[1].question"
+        },
+        {
+          "messageId": "breathe.buteyko.faqs.control-pause.answer",
+          "reviewedSourceHash": "b4b29d2cc6333f9b084a2fe029682fc14d58d1e55de00c943d51bfbedd50827a",
+          "sourcePath": "faqs[1].answer"
+        },
+        {
+          "messageId": "breathe.buteyko.faqs.versus-deep-breathing.question",
+          "reviewedSourceHash": "cffe6a68a9affe249887a7b3b24286a4c022915d710ab95263450838a214d20e",
+          "sourcePath": "faqs[2].question"
+        },
+        {
+          "messageId": "breathe.buteyko.faqs.versus-deep-breathing.answer",
+          "reviewedSourceHash": "21f42a2489e537127c327336c3188b51933c897b6038c173a0ea566021e9e1f3",
+          "sourcePath": "faqs[2].answer"
+        },
+        {
+          "messageId": "breathe.buteyko.faqs.anxiety-support.question",
+          "reviewedSourceHash": "f62f6e212952e69a4b20753123307d8297878c753ec09e261c81291a4640bf28",
+          "sourcePath": "faqs[3].question"
+        },
+        {
+          "messageId": "breathe.buteyko.faqs.anxiety-support.answer",
+          "reviewedSourceHash": "f6f92300fc930cc7fc6b81a6b1ce4a8f04a4c2ff769a2b0843b7e6d415b0d2e5",
+          "sourcePath": "faqs[3].answer"
+        },
+        {
+          "messageId": "breathe.buteyko.faqs.mouth-taping-safety.question",
+          "reviewedSourceHash": "43883769ff1a2bfc926f7cf1c2b07df1ab589b9ad6de17f39d1979c3be3054ae",
+          "sourcePath": "faqs[4].question"
+        },
+        {
+          "messageId": "breathe.buteyko.faqs.mouth-taping-safety.answer",
+          "reviewedSourceHash": "65e0951831a26c23482ddb612c6003a78288bac23f75b438801e64a7ab4333a5",
+          "sourcePath": "faqs[4].answer"
+        },
+        {
+          "messageId": "breathe.buteyko.faqs.results-timeline.question",
+          "reviewedSourceHash": "650fe6c80167ba14eab15608f3697714c466b01d3914d4bba39fc2170806aa1e",
+          "sourcePath": "faqs[5].question"
+        },
+        {
+          "messageId": "breathe.buteyko.faqs.results-timeline.answer",
+          "reviewedSourceHash": "99450713a144ab77519a3d7358c7df3e09b4f420d571506abfd26ab533e97783",
+          "sourcePath": "faqs[5].answer"
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.total-time",
+          "reviewedSourceHash": "3a85e750a2dbc0772088dbfcc4adda8bb62b6659d751873311c939dab40c7353",
+          "sourcePath": "howTo.totalTime"
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.difficulty",
+          "reviewedSourceHash": "dff22754ace5cbab4fbb2da37f8e9b377303c66d157e0b5262182108604ed637",
+          "sourcePath": "howTo.difficulty"
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.tools.comfortable-seated-position",
+          "reviewedSourceHash": "10505aeb5ec3458599a65ff69bc4d9817ce855fe8ecc612d131dfaeaaa087487",
+          "sourcePath": "howTo.tools[0]"
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.tools.control-pause-timer",
+          "reviewedSourceHash": "d25eb63506112db9a932ea11ea10725c31f5783c73a597d116831de42807a6b5",
+          "sourcePath": "howTo.tools[1]"
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.tools.visualizer",
+          "reviewedSourceHash": "84f841fcabdf037baae9a1ed179e9844028cc19b9ec6badd2bc6b59d209119ac",
+          "sourcePath": "howTo.tools[2]"
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.steps.sit-upright.name",
+          "reviewedSourceHash": "2ad8722d3ac17843c5bc9954363726be020020878ac2dd9cd301a2176a8759a6",
+          "sourcePath": "howTo.steps[0].name"
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.steps.sit-upright.instruction",
+          "reviewedSourceHash": "b24f84e54045292e6718a6ae2ff80c55a50bc1ac172e458f44e2979197cc01f0",
+          "sourcePath": "howTo.steps[0].instruction"
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.steps.sit-upright.duration",
+          "reviewedSourceHash": "f3d19541f3a5a842ce81be1a788750b3c7ae27c6328e6829ef0ab6e95ba1fae5",
+          "sourcePath": "howTo.steps[0].duration"
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.steps.observe-breathing.name",
+          "reviewedSourceHash": "02357e9220c4d1b436a77571a1c402bbe08a67e8c6d1d72b80f167dc861d2c0d",
+          "sourcePath": "howTo.steps[1].name"
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.steps.observe-breathing.instruction",
+          "reviewedSourceHash": "a446d434f87ba8d1fdf612c57f5dcafd3cf23cdb97226eeefe57d8f526ada2cf",
+          "sourcePath": "howTo.steps[1].instruction"
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.steps.observe-breathing.duration",
+          "reviewedSourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "sourcePath": "howTo.steps[1].duration"
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.steps.measure-control-pause.name",
+          "reviewedSourceHash": "431a2617804b0f39bff8e8cb8e6ffde20440a48800a7227190e34c8658d2e6f6",
+          "sourcePath": "howTo.steps[2].name"
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.steps.measure-control-pause.instruction",
+          "reviewedSourceHash": "b6ca7636be81bf00ac67f7c68f4ec07d50f05a2e5796723fcc5221b80337ecaf",
+          "sourcePath": "howTo.steps[2].instruction"
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.steps.measure-control-pause.duration",
+          "reviewedSourceHash": "a8fffc036bacb50fd9d1b0c8b7e7e2ea4eed6be37ff0207f9685adc54c0a3edc",
+          "sourcePath": "howTo.steps[2].duration"
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.steps.practice-reduced-breathing.name",
+          "reviewedSourceHash": "679bc02d8c8b4e9f7edd2a7d4bba84ba5bf411c7e3ec64718396eeb1ef4e2869",
+          "sourcePath": "howTo.steps[3].name"
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.steps.practice-reduced-breathing.instruction",
+          "reviewedSourceHash": "ca45ca49cdb997b9c80f1be21339088f3b09c2a080025bd8c89314c61754f5f8",
+          "sourcePath": "howTo.steps[3].instruction"
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.steps.practice-reduced-breathing.duration",
+          "reviewedSourceHash": "8f29fbcc89869bc9e63d04ee585f5f9c7d8720de08807021032f96f66e88f4d9",
+          "sourcePath": "howTo.steps[3].duration"
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.steps.remeasure-control-pause.name",
+          "reviewedSourceHash": "d9c3f4b18a29d3f3ee054367306184337ae7e07514db6ae8a76fbedb60f4c3e0",
+          "sourcePath": "howTo.steps[4].name"
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.steps.remeasure-control-pause.instruction",
+          "reviewedSourceHash": "3d5467d5e3ba98495a6687d577dd6b9096b37a30c1528dc468d350a6708f7a42",
+          "sourcePath": "howTo.steps[4].instruction"
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.steps.remeasure-control-pause.duration",
+          "reviewedSourceHash": "a8fffc036bacb50fd9d1b0c8b7e7e2ea4eed6be37ff0207f9685adc54c0a3edc",
+          "sourcePath": "howTo.steps[4].duration"
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.steps.return-to-normal.name",
+          "reviewedSourceHash": "8023ad637f5abce4fba515bb262de2560d4ae22469cf82ea18ed847c9386f35e",
+          "sourcePath": "howTo.steps[5].name"
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.steps.return-to-normal.instruction",
+          "reviewedSourceHash": "17ffb64afa08c84f0d7729d80e8bd8b9315f50b703e3d284604b761d6647ee00",
+          "sourcePath": "howTo.steps[5].instruction"
+        },
+        {
+          "messageId": "breathe.buteyko.how-to.steps.return-to-normal.duration",
+          "reviewedSourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "sourcePath": "howTo.steps[5].duration"
+        },
+        {
+          "messageId": "breathe.buteyko.use-cases.asthma-management.name",
+          "reviewedSourceHash": "0af5c6fd51ba7ecdbdd79d3b0da34b2b8d4566de0846ae5adbf2f21bd2bb7ae7",
+          "sourcePath": "useCases[0].name"
+        },
+        {
+          "messageId": "breathe.buteyko.use-cases.asthma-management.description",
+          "reviewedSourceHash": "ea5ce74703146838f29b5291d494cdccba9dda549b5c4f0fb7448fe44542b49c",
+          "sourcePath": "useCases[0].description"
+        },
+        {
+          "messageId": "breathe.buteyko.use-cases.asthma-management.dose",
+          "reviewedSourceHash": "ae6f1d960baa9fcd23a0be2a4a2f5642b3e7b2b5d6c61dadb6c7fd2ccbc94f8c",
+          "sourcePath": "useCases[0].dose"
+        },
+        {
+          "messageId": "breathe.buteyko.use-cases.mouth-breathing-correction.name",
+          "reviewedSourceHash": "3456e078541b20b995666263e2a186e9190931515e9808ea3ff38834792ac551",
+          "sourcePath": "useCases[1].name"
+        },
+        {
+          "messageId": "breathe.buteyko.use-cases.mouth-breathing-correction.description",
+          "reviewedSourceHash": "9ac944abde7302207c9c596fc20476f7a3acafab64e58ad5626eaf07dd50aa85",
+          "sourcePath": "useCases[1].description"
+        },
+        {
+          "messageId": "breathe.buteyko.use-cases.mouth-breathing-correction.dose",
+          "reviewedSourceHash": "56b7f9842312dfd2267e94dd139e58e113d91dbf860428e7bb23ef146b04804c",
+          "sourcePath": "useCases[1].dose"
+        },
+        {
+          "messageId": "breathe.buteyko.use-cases.athletic-breathing.name",
+          "reviewedSourceHash": "22cac250731492b9235faddcce407fdf7c673da12b35c949d31f6e30407b12c3",
+          "sourcePath": "useCases[2].name"
+        },
+        {
+          "messageId": "breathe.buteyko.use-cases.athletic-breathing.description",
+          "reviewedSourceHash": "0fecef63e75bf9403bac89890368476de4072fadaf8da9d594154baaa169f1b3",
+          "sourcePath": "useCases[2].description"
+        },
+        {
+          "messageId": "breathe.buteyko.use-cases.athletic-breathing.dose",
+          "reviewedSourceHash": "95af6d47e2c01468d08f3cd3dddf38281c93f47db9030b342bbe781b3b2f1fbe",
+          "sourcePath": "useCases[2].dose"
+        },
+        {
+          "messageId": "breathe.buteyko.research.studies.cochrane-asthma-review.title",
+          "reviewedSourceHash": "aefbb66d143d62c24c6f0fdce1e9b0e6e2865878969ea3ff50555e865ee91408",
+          "sourcePath": "research.studies[0].title"
+        },
+        {
+          "messageId": "breathe.buteyko.research.studies.cochrane-asthma-review.summary",
+          "reviewedSourceHash": "b027809b80c41b8400931897730e14852298d08e8200289cdda5454700c59afd",
+          "sourcePath": "research.studies[0].summary"
+        },
+        {
+          "messageId": "breathe.buteyko.research.studies.conventional-exercises-comparison.title",
+          "reviewedSourceHash": "4e25d9f2de6e4a3cda64be3c54ea03cb8edd18120c942186468e82d7392e5fb8",
+          "sourcePath": "research.studies[1].title"
+        },
+        {
+          "messageId": "breathe.buteyko.research.studies.conventional-exercises-comparison.summary",
+          "reviewedSourceHash": "93e3ba08ce00007847995af962b74c908b2251a77cbac86dd6911fbc860c9dce",
+          "sourcePath": "research.studies[1].summary"
+        },
+        {
+          "messageId": "breathe.buteyko.research.studies.nasal-nitric-oxide.title",
+          "reviewedSourceHash": "9c9654da5b01d0fdeddda09dc46d84dea6f370636f992ed584b7e14a34e2fed5",
+          "sourcePath": "research.studies[2].title"
+        },
+        {
+          "messageId": "breathe.buteyko.research.studies.nasal-nitric-oxide.summary",
+          "reviewedSourceHash": "41f39ecb388aa4ee7e449edc3f384bb6288ee0370f9cc30d3ba0097afe6629d1",
+          "sourcePath": "research.studies[2].summary"
+        },
+        {
+          "messageId": "breathe.buteyko.research.safety.not-medical-replacement",
+          "reviewedSourceHash": "b9f4553055be12c6bc35f8940a9d115a56528d5fa96e17dc9164b360ce283d3e",
+          "sourcePath": "research.safety[0]"
+        },
+        {
+          "messageId": "breathe.buteyko.research.safety.clinician-consultation",
+          "reviewedSourceHash": "7439187a4706ff7d84e2d37dda7d1f642146d7e02d40234137bd76c146452d0a",
+          "sourcePath": "research.safety[1]"
+        },
+        {
+          "messageId": "breathe.buteyko.research.safety.maintain-medication",
+          "reviewedSourceHash": "dfa0e8a2900efd563fe49d5a15098eb782ffea9a02653ad5c0b7a5ba3b34d1d6",
+          "sourcePath": "research.safety[2]"
+        },
+        {
+          "messageId": "breathe.buteyko.research.safety.stop-on-symptoms",
+          "reviewedSourceHash": "1acfb11c2373033c1a335abf875798b13c9180fe343a7f7eaa9ef267bc1cba18",
+          "sourcePath": "research.safety[3]"
+        },
+        {
+          "messageId": "breathe.buteyko.research.safety.mild-air-hunger",
+          "reviewedSourceHash": "4180808e3720c515212a257c758beca6defc307fb21155a1a17b6f7b812341d5",
+          "sourcePath": "research.safety[4]"
+        },
+        {
+          "messageId": "breathe.buteyko.research.quotes.breathe-less-better.text",
+          "reviewedSourceHash": "601aee52834013d31299fecca27ef996943e34dd25159f5093b48f868fc3394e",
+          "sourcePath": "research.quotes[0].text"
+        },
+        {
+          "messageId": "breathe.buteyko.related.pursed-lip.reason",
+          "reviewedSourceHash": "660a2bd208d8b92f0c105ea54881a8c53fe14b0afd41031f58eaa9d997531dfe",
+          "sourcePath": "related[0].reason"
+        },
+        {
+          "messageId": "breathe.buteyko.related.coherent.reason",
+          "reviewedSourceHash": "15ceb75c3e44ab6d7224cd644b633c357fb7846ed0946f6b8a5fb0fc96f7cecb",
+          "sourcePath": "related[1].reason"
+        },
+        {
+          "messageId": "breathe.buteyko.related.belly.reason",
+          "reviewedSourceHash": "13c3c698cf1084037b30f337072ab805c66440eab0b1667a10602f6baedbd778",
+          "sourcePath": "related[2].reason"
+        },
+        {
+          "messageId": "breathe.buteyko.related.physiological-sigh.reason",
+          "reviewedSourceHash": "2850d1077bd81ae19b34703fe5125996b29cd95489b6b831be960b368275d2d5",
+          "sourcePath": "related[3].reason"
+        },
+        {
+          "messageId": "breathe.buteyko.related-use-cases.sleep.title",
+          "reviewedSourceHash": "48cb1d3ed1c4af0663146c1a7f710e0a3a536302de60133e9521112200aafc29",
+          "sourcePath": "relatedUseCases[0].title"
+        },
+        {
+          "messageId": "breathe.buteyko.related-use-cases.sleep.teaser",
+          "reviewedSourceHash": "a2b634a03b02c58f59b47fca0608141221d6ecbf18e4c72440283068a403e0dd",
+          "sourcePath": "relatedUseCases[0].teaser"
+        },
+        {
+          "messageId": "breathe.buteyko.related-use-cases.athletes.title",
+          "reviewedSourceHash": "eb3ac46858f2074543591da8334c8ce8d9914365a50566c7465ede50e82637dc",
+          "sourcePath": "relatedUseCases[1].title"
+        },
+        {
+          "messageId": "breathe.buteyko.related-use-cases.athletes.teaser",
+          "reviewedSourceHash": "fd02de3a50229164fff40694a0b57328ad7e7fe1a8896e1b7dfb614989be09f3",
+          "sourcePath": "relatedUseCases[1].teaser"
+        },
+        {
+          "messageId": "breathe.buteyko.frequency",
+          "reviewedSourceHash": "2e1b489ca5ae450d770c11a0002d582461bc5efdb9ab6a924cc0de40e8da9070",
+          "sourcePath": "frequency"
+        }
+      ],
+      "routeId": "breathe.buteyko",
+      "sourceRoute": "/breathe/buteyko"
+    },
+    {
+      "messages": [
+        {
+          "messageId": "for.anxiety.hero.title",
+          "reviewedSourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "sourcePath": "hero.title"
+        },
+        {
+          "messageId": "for.anxiety.hero.subtitle",
+          "reviewedSourceHash": "d330687a8be218a2c9b95a7aa8c0738de1a185d8246d911e29b6b17f7af828fd",
+          "sourcePath": "hero.subtitle"
+        },
+        {
+          "messageId": "for.anxiety.hero.intro",
+          "reviewedSourceHash": "8497796b0ae2d1a4a9a6a26aebd3cbb9cf69d490111fa91ea8972bfee96b854a",
+          "sourcePath": "hero.intro"
+        },
+        {
+          "messageId": "for.anxiety.meta.title",
+          "reviewedSourceHash": "44d825bf6198a5dfcecd3158fef96038b56763f8c645b51af6d7ded3c0f9dd9a",
+          "sourcePath": "meta.title"
+        },
+        {
+          "messageId": "for.anxiety.meta.description",
+          "reviewedSourceHash": "b45a60d1805650afae194687cabe57168995564188f66fa5610acf5620e49242",
+          "sourcePath": "meta.description"
+        },
+        {
+          "messageId": "for.anxiety.meta.og-title",
+          "reviewedSourceHash": "bad7003f42e776b71393ffc1ff3272702dc6727b71be8a420ca16d9864b141bc",
+          "sourcePath": "meta.ogTitle"
+        },
+        {
+          "messageId": "for.anxiety.meta.og-description",
+          "reviewedSourceHash": "26184d8b04418a4ce200ecdb840b4467e55973e222ab7c1696bfbe66bddb6d06",
+          "sourcePath": "meta.ogDescription"
+        },
+        {
+          "messageId": "for.anxiety.meta.twitter-title",
+          "reviewedSourceHash": "acdc45fe1bd13a57db440d5b5385c70d741d2d795e0fb5b9ef9f5e097edfeb38",
+          "sourcePath": "meta.twitterTitle"
+        },
+        {
+          "messageId": "for.anxiety.meta.twitter-description",
+          "reviewedSourceHash": "7ac1dd7a987a87565c676dc8dedb598b929c4d59214b097f99665d8bd3be01aa",
+          "sourcePath": "meta.twitterDescription"
+        },
+        {
+          "messageId": "for.anxiety.problem.heading",
+          "reviewedSourceHash": "ac8b818f530f5401a1fbf8d11c138a5f19805a22b776bf74dd21c63e162a8d69",
+          "sourcePath": "problem.heading"
+        },
+        {
+          "messageId": "for.anxiety.problem.content",
+          "reviewedSourceHash": "b9d46a83ec14ebfbf06a1be45c021dd67bba733704fbdb1afcea8d7fe906e287",
+          "sourcePath": "problem.content"
+        },
+        {
+          "messageId": "for.anxiety.problem.symptoms.chest-tightness",
+          "reviewedSourceHash": "d5ef076039919e954d4a10f36cae938be85e3243ede72e5ddac78bd9c9637a8a",
+          "sourcePath": "problem.symptoms[0]"
+        },
+        {
+          "messageId": "for.anxiety.problem.symptoms.racing-thoughts",
+          "reviewedSourceHash": "9ac977e1abe8f603911cc04115797aca8f31f1b63516a582458f398e5a8783db",
+          "sourcePath": "problem.symptoms[1]"
+        },
+        {
+          "messageId": "for.anxiety.problem.symptoms.constant-worry",
+          "reviewedSourceHash": "54d0f8bb6f2e1acc04e2381666ff31952df7d713e0f8b5fdd35e37e0c750cd53",
+          "sourcePath": "problem.symptoms[2]"
+        },
+        {
+          "messageId": "for.anxiety.problem.symptoms.keyed-up",
+          "reviewedSourceHash": "9a937195abc1953936c5e6d630197074c326255fb3a3739cedfa574da492b285",
+          "sourcePath": "problem.symptoms[3]"
+        },
+        {
+          "messageId": "for.anxiety.problem.symptoms.concentration",
+          "reviewedSourceHash": "525fcc0b1100868c3d24af3b8590536a10202ffb6d3811f5e2c34eb85795a4a3",
+          "sourcePath": "problem.symptoms[4]"
+        },
+        {
+          "messageId": "for.anxiety.problem.symptoms.physical-tension",
+          "reviewedSourceHash": "50f90490d3f2a4614b3814f41be2c4a54f99367204780e088e83dd09381d2e52",
+          "sourcePath": "problem.symptoms[5]"
+        },
+        {
+          "messageId": "for.anxiety.problem.symptoms.rapid-heartbeat",
+          "reviewedSourceHash": "7d4c888bd368c8fcd80daee7816374cc774244427de7c10838e97e5088329303",
+          "sourcePath": "problem.symptoms[6]"
+        },
+        {
+          "messageId": "for.anxiety.problem.symptoms.impending-danger",
+          "reviewedSourceHash": "640b75b02e1bc3e2302e5a9f8f40124b0000cde8cd8b4c58204f7c124dcddfbc",
+          "sourcePath": "problem.symptoms[7]"
+        },
+        {
+          "messageId": "for.anxiety.solution.heading",
+          "reviewedSourceHash": "d458f73bccfa1682dd4376069fc518f48350042b483c6779d35e4016e375b9e4",
+          "sourcePath": "solution.heading"
+        },
+        {
+          "messageId": "for.anxiety.solution.content",
+          "reviewedSourceHash": "8754967fe0b5e3fdf5a8e1754d12e36e87571ba9bf0f9a305092c273119b394b",
+          "sourcePath": "solution.content"
+        },
+        {
+          "messageId": "for.anxiety.solution.why-this-pattern",
+          "reviewedSourceHash": "2d4d97945ae38ee41123560aec9b5773e080b95e0c2bcc4d52ec426182a9e777",
+          "sourcePath": "solution.whyThisPattern"
+        },
+        {
+          "messageId": "for.anxiety.science.heading",
+          "reviewedSourceHash": "076115752a773aa6853f8305129215fe154e31654a87f0e2c7ae2923722c78eb",
+          "sourcePath": "science.heading"
+        },
+        {
+          "messageId": "for.anxiety.science.points.vagus-nerve.mechanism",
+          "reviewedSourceHash": "a14d43b365cc4c24611cfac34928817a03e1aa40532a39c46a5a8d5dce73014a",
+          "sourcePath": "science.points[0].mechanism"
+        },
+        {
+          "messageId": "for.anxiety.science.points.vagus-nerve.explanation",
+          "reviewedSourceHash": "f242d9cadae162e64033a95a0d9723ec794ba4f58175bb4ee6fae710a3efeb0d",
+          "sourcePath": "science.points[0].explanation"
+        },
+        {
+          "messageId": "for.anxiety.science.points.co2-levels.mechanism",
+          "reviewedSourceHash": "b0a577dd91a1cff7e6a5ac19014bac98f51fe271a7dea3ce6b4cf7a47bd8d504",
+          "sourcePath": "science.points[1].mechanism"
+        },
+        {
+          "messageId": "for.anxiety.science.points.co2-levels.explanation",
+          "reviewedSourceHash": "4aff3548bf9cce579ec0ffcce2b656bcf50caffef8b0fd10cd514d114b715a65",
+          "sourcePath": "science.points[1].explanation"
+        },
+        {
+          "messageId": "for.anxiety.science.points.rumination-loop.mechanism",
+          "reviewedSourceHash": "16039efd612d32cf5d0605ea1663d005f8d8e26bba073314a9c0f7556571e868",
+          "sourcePath": "science.points[2].mechanism"
+        },
+        {
+          "messageId": "for.anxiety.science.points.rumination-loop.explanation",
+          "reviewedSourceHash": "960c2d964c9f78c4da3f55f3a075b1ebbe1951b21fab2749cb146c225ec08086",
+          "sourcePath": "science.points[2].explanation"
+        },
+        {
+          "messageId": "for.anxiety.science.points.cortisol-heart-rate.mechanism",
+          "reviewedSourceHash": "f6b5b5a28a06030caae6b46a6e81ca8e452f7da889c20b618bb768506ca40c71",
+          "sourcePath": "science.points[3].mechanism"
+        },
+        {
+          "messageId": "for.anxiety.science.points.cortisol-heart-rate.explanation",
+          "reviewedSourceHash": "bd7b824eff66fa24971c3c2ef3991bf8a7a3b446744ba354761c20e48dc71700",
+          "sourcePath": "science.points[3].explanation"
+        },
+        {
+          "messageId": "for.anxiety.how-to.steps.prepare.name",
+          "reviewedSourceHash": "be99b260247c36cc7ceb52b958e215696ccf5a2d3b24a8aa068ffa8e95f3015d",
+          "sourcePath": "howTo.steps[0].name"
+        },
+        {
+          "messageId": "for.anxiety.how-to.steps.prepare.instruction",
+          "reviewedSourceHash": "ee52856d9381735ef6fceba6c84d22c5794f379287849dd573452c818582b81b",
+          "sourcePath": "howTo.steps[0].instruction"
+        },
+        {
+          "messageId": "for.anxiety.how-to.steps.prepare.timing",
+          "reviewedSourceHash": "218ffc0593c1daaed29e9a040b7ddcc3706dab7d424bf18d45a6b1c81853381a",
+          "sourcePath": "howTo.steps[0].timing"
+        },
+        {
+          "messageId": "for.anxiety.how-to.steps.exhale-completely.name",
+          "reviewedSourceHash": "88caa787124d1f4d678cc11718b07eaac469fb0132a83151411d11f88e96866d",
+          "sourcePath": "howTo.steps[1].name"
+        },
+        {
+          "messageId": "for.anxiety.how-to.steps.exhale-completely.instruction",
+          "reviewedSourceHash": "2234dd31487024be394fc07235af5017810a23c670b7829e932d83e55edc8c40",
+          "sourcePath": "howTo.steps[1].instruction"
+        },
+        {
+          "messageId": "for.anxiety.how-to.steps.exhale-completely.timing",
+          "reviewedSourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourcePath": "howTo.steps[1].timing"
+        },
+        {
+          "messageId": "for.anxiety.how-to.steps.inhale.name",
+          "reviewedSourceHash": "9c64794185f5c06813748f5bf7928ab6a5131fcb0afad7a7b43c67b7059afea2",
+          "sourcePath": "howTo.steps[2].name"
+        },
+        {
+          "messageId": "for.anxiety.how-to.steps.inhale.instruction",
+          "reviewedSourceHash": "1bba7e8fd20b3e4ca4560baa287b0f376267b47f9ee51ae3a94b2737433cd3bc",
+          "sourcePath": "howTo.steps[2].instruction"
+        },
+        {
+          "messageId": "for.anxiety.how-to.steps.inhale.timing",
+          "reviewedSourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourcePath": "howTo.steps[2].timing"
+        },
+        {
+          "messageId": "for.anxiety.how-to.steps.top-hold.name",
+          "reviewedSourceHash": "1d1027b72d9e2cd2ed40f11f4a6399b762924091b68577ca8ed699f42dcdccf3",
+          "sourcePath": "howTo.steps[3].name"
+        },
+        {
+          "messageId": "for.anxiety.how-to.steps.top-hold.instruction",
+          "reviewedSourceHash": "b6298405ae39e608c4ce68f3e50c74f1eafba48e5afa811fe194373c8a243ebd",
+          "sourcePath": "howTo.steps[3].instruction"
+        },
+        {
+          "messageId": "for.anxiety.how-to.steps.top-hold.timing",
+          "reviewedSourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourcePath": "howTo.steps[3].timing"
+        },
+        {
+          "messageId": "for.anxiety.how-to.steps.controlled-exhale.name",
+          "reviewedSourceHash": "9963a0c8b60d7ab8c3aa9aaefdc8678c07285051364bba0438a5cd73442d8bb7",
+          "sourcePath": "howTo.steps[4].name"
+        },
+        {
+          "messageId": "for.anxiety.how-to.steps.controlled-exhale.instruction",
+          "reviewedSourceHash": "44107dae4ed4870a252f4bc2e168652e036a52d60db08099e8093456a565dab8",
+          "sourcePath": "howTo.steps[4].instruction"
+        },
+        {
+          "messageId": "for.anxiety.how-to.steps.controlled-exhale.timing",
+          "reviewedSourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourcePath": "howTo.steps[4].timing"
+        },
+        {
+          "messageId": "for.anxiety.how-to.steps.bottom-hold.name",
+          "reviewedSourceHash": "8da4337628c475759aa3cd5e3990fea681d465764961ebc4ffc73a5b20caf58d",
+          "sourcePath": "howTo.steps[5].name"
+        },
+        {
+          "messageId": "for.anxiety.how-to.steps.bottom-hold.instruction",
+          "reviewedSourceHash": "8ecc2f39168352054a92c4fbb0ce900589f96aaec24360bb6c5e8078c79b8b18",
+          "sourcePath": "howTo.steps[5].instruction"
+        },
+        {
+          "messageId": "for.anxiety.how-to.steps.bottom-hold.timing",
+          "reviewedSourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourcePath": "howTo.steps[5].timing"
+        },
+        {
+          "messageId": "for.anxiety.how-to.steps.repeat-cycles.name",
+          "reviewedSourceHash": "8deafe74bd00455179afa1cc0b89cd7f151d57ce62340ef768388ff7691d1a68",
+          "sourcePath": "howTo.steps[6].name"
+        },
+        {
+          "messageId": "for.anxiety.how-to.steps.repeat-cycles.instruction",
+          "reviewedSourceHash": "ae162eee488b0f31798f0a27410b5eabec12395b8abcdddea01eee72f71361c5",
+          "sourcePath": "howTo.steps[6].instruction"
+        },
+        {
+          "messageId": "for.anxiety.how-to.steps.repeat-cycles.timing",
+          "reviewedSourceHash": "1f536dec0a31847089ad2cb05292f4adf819bcd02824507911816f157c173af3",
+          "sourcePath": "howTo.steps[6].timing"
+        },
+        {
+          "messageId": "for.anxiety.how-to.tips.shorter-counts",
+          "reviewedSourceHash": "0c02ec9acead4e1d009cf4244c19844fdd4ca0ae5dda91b063be1abd75ec7362",
+          "sourcePath": "howTo.tips[0]"
+        },
+        {
+          "messageId": "for.anxiety.how-to.tips.silent-smooth-breathing",
+          "reviewedSourceHash": "b1b9bc9357f278484b7f56c97194fc5e4c002df73e573b0071519dab4cd17f47",
+          "sourcePath": "howTo.tips[1]"
+        },
+        {
+          "messageId": "for.anxiety.how-to.tips.reduce-depth-if-dizzy",
+          "reviewedSourceHash": "3dfbbcb207c4b51bcaf2fd0575ea2a9988c5f3b38cc57510a3f2ad9b3e145eb6",
+          "sourcePath": "howTo.tips[2]"
+        },
+        {
+          "messageId": "for.anxiety.how-to.tips.daily-practice",
+          "reviewedSourceHash": "b259372830ae43c7f97ef244893e01b6e4c6600d3d21a29391eff0554d0727a4",
+          "sourcePath": "howTo.tips[3]"
+        },
+        {
+          "messageId": "for.anxiety.how-to.tips.use-visualizer",
+          "reviewedSourceHash": "dad3502ae5da9960daf8d4e8b2efd5bb7352ae514a2412d2f0829010d3d5e1c1",
+          "sourcePath": "howTo.tips[4]"
+        },
+        {
+          "messageId": "for.anxiety.references.slow-breathing-hrv-meta-analysis.title",
+          "reviewedSourceHash": "1619f5416d13c380942bbd50fa95456a739627d5bf78217006893d521c43edf6",
+          "sourcePath": "references[0].title"
+        },
+        {
+          "messageId": "for.anxiety.references.slow-breathing-hrv-meta-analysis.summary",
+          "reviewedSourceHash": "fbc1591f9540d474644239c70e22c8f49767c9a53316912f9abb8bd1c3cd5c63",
+          "sourcePath": "references[0].summary"
+        },
+        {
+          "messageId": "for.anxiety.references.resonance-breathing-stress-rct.title",
+          "reviewedSourceHash": "29b21e8b3c94f62e9863062a8305a4e5ed7c26d84d9593fbe4d08de1bd0b12be",
+          "sourcePath": "references[1].title"
+        },
+        {
+          "messageId": "for.anxiety.references.resonance-breathing-stress-rct.summary",
+          "reviewedSourceHash": "3bf8cc05e9d55ba6b5c91fe29933e3d595c1938f26194d435bcc5f0543f97898",
+          "sourcePath": "references[1].summary"
+        },
+        {
+          "messageId": "for.anxiety.references.breathwork-anxiety-depression-meta-analysis.title",
+          "reviewedSourceHash": "af26f7879d277b570b04caf1adc8e66a79bf4751b2d1176873db613c91c1a50e",
+          "sourcePath": "references[2].title"
+        },
+        {
+          "messageId": "for.anxiety.references.breathwork-anxiety-depression-meta-analysis.summary",
+          "reviewedSourceHash": "1a6a43fc2ec11295308478ae1fa9c83ced170daf1f9106cfbfc0754c2680fbc8",
+          "sourcePath": "references[2].summary"
+        },
+        {
+          "messageId": "for.anxiety.references.slow-breathing-physiology-review.title",
+          "reviewedSourceHash": "06d74a0dda3640b5241b9bf13db5e357623a813e9e09cf43e4cf03d5d94fe5e9",
+          "sourcePath": "references[3].title"
+        },
+        {
+          "messageId": "for.anxiety.references.slow-breathing-physiology-review.summary",
+          "reviewedSourceHash": "edd514eee430a7e6468f367793bcb7268327cee1829ebc891f27251bac2052a7",
+          "sourcePath": "references[3].summary"
+        },
+        {
+          "messageId": "for.anxiety.references.breathing-cortisol-study.title",
+          "reviewedSourceHash": "2087124e82c1ef4f2542e4518d745edf2198a393ab3672ab1c034370397f599d",
+          "sourcePath": "references[4].title"
+        },
+        {
+          "messageId": "for.anxiety.references.breathing-cortisol-study.summary",
+          "reviewedSourceHash": "22c9a0ff5eb03bf14e93a92124bbbb30350bf8654c73c8a708438c03d8e3fde2",
+          "sourcePath": "references[4].summary"
+        },
+        {
+          "messageId": "for.anxiety.disclaimer",
+          "reviewedSourceHash": "1a4a9264d43a997ec27a1a9886ed0c9ce322b190cdac47be334cfc529e54abcf",
+          "sourcePath": "disclaimer"
+        },
+        {
+          "messageId": "for.anxiety.related-technique.call-to-action",
+          "reviewedSourceHash": "304289ac34c35dee8ba829dbea17bd0503df023cb36318a630b2311aaaaef9ea",
+          "sourcePath": "relatedTechnique.callToAction"
+        },
+        {
+          "messageId": "for.anxiety.related-use-cases.panic-attacks.teaser",
+          "reviewedSourceHash": "3313d7a3649f2bd032aeaacf9f69728c73ab89c36ba25f0ea69669cc4f287513",
+          "sourcePath": "relatedUseCases[0].teaser"
+        },
+        {
+          "messageId": "for.anxiety.related-use-cases.public-speaking.teaser",
+          "reviewedSourceHash": "080d637a11b04b7d34069e5b6200395549bc3e48824758e1976a531031586b3f",
+          "sourcePath": "relatedUseCases[1].teaser"
+        },
+        {
+          "messageId": "for.anxiety.related-use-cases.holiday-stress.teaser",
+          "reviewedSourceHash": "d2efe6f0ae0ecc1082191ec4e79443c5c6ea12b28740413e3f4ad81205a95917",
+          "sourcePath": "relatedUseCases[2].teaser"
+        },
+        {
+          "messageId": "for.anxiety.related-use-cases.travel-anxiety.teaser",
+          "reviewedSourceHash": "7d1abdc1a4969700d3d3210646cb9d618eb7013ff1b3930a32420434ff46e822",
+          "sourcePath": "relatedUseCases[3].teaser"
+        },
+        {
+          "messageId": "for.anxiety.related-use-cases.kids.teaser",
+          "reviewedSourceHash": "b1e23b2e12e18cee86f449f7bda0f213f4473a30d36e5ad347cf074185441904",
+          "sourcePath": "relatedUseCases[4].teaser"
+        },
+        {
+          "messageId": "for.anxiety.related-use-cases.huberman.teaser",
+          "reviewedSourceHash": "12945e10500e6ef856b5e8a2a1dc72cd0cfde320d0f47e1bd50c9b103aaa0f81",
+          "sourcePath": "relatedUseCases[5].teaser"
+        },
+        {
+          "messageId": "for.anxiety.related-guides.surgery.title",
+          "reviewedSourceHash": "c3eae05e1a246a92f492e3b5cafa01fb508983dd778f3ceba96b08edfd446c07",
+          "sourcePath": "relatedGuides[0].title"
+        },
+        {
+          "messageId": "for.anxiety.related-guides.surgery.teaser",
+          "reviewedSourceHash": "0e7205fc84437f5eebf2fafbcac4330e39599d0344ba46210fdd24a9e0347e39",
+          "sourcePath": "relatedGuides[0].teaser"
+        },
+        {
+          "messageId": "for.anxiety.faqs.anxiety-versus-panic.question",
+          "reviewedSourceHash": "9cb9d6cc92d9933ebb5fe2f602acbd618e4227b6b6c1f18dbdb77424b2731b89",
+          "sourcePath": "faqs[0].question"
+        },
+        {
+          "messageId": "for.anxiety.faqs.anxiety-versus-panic.answer",
+          "reviewedSourceHash": "aebde0efe9f1041a952865f459b3a75f2de7401d70a312cfb43f1f2de1c09a61",
+          "sourcePath": "faqs[0].answer"
+        },
+        {
+          "messageId": "for.anxiety.faqs.medication.question",
+          "reviewedSourceHash": "df05c3b0d49977b9c1d4da6fac1bd8145eefa8ca65f037d634d3b25d1cd0df9b",
+          "sourcePath": "faqs[1].question"
+        },
+        {
+          "messageId": "for.anxiety.faqs.medication.answer",
+          "reviewedSourceHash": "211ad2bcc9bb9e2e90bc795cd8154dc8348f92988b3eebfd81a3c689046f3d8d",
+          "sourcePath": "faqs[1].answer"
+        },
+        {
+          "messageId": "for.anxiety.faqs.practice-frequency.question",
+          "reviewedSourceHash": "08e3cef38a3cb5c2bf5c014beb8427fc901d98b1c7f8341979ad57844b17abd6",
+          "sourcePath": "faqs[2].question"
+        },
+        {
+          "messageId": "for.anxiety.faqs.practice-frequency.answer",
+          "reviewedSourceHash": "d3ac880472b8aec459f52ccec4dc2dcd44cd51ff79cfdd141f7c4b6260c318fc",
+          "sourcePath": "faqs[2].answer"
+        },
+        {
+          "messageId": "for.anxiety.faqs.why-holds-help.question",
+          "reviewedSourceHash": "d46a18ab4d88e46b2d395953a5cd5b03055231a3075048396ae4b242d00e096a",
+          "sourcePath": "faqs[3].question"
+        },
+        {
+          "messageId": "for.anxiety.faqs.why-holds-help.answer",
+          "reviewedSourceHash": "410ab64e25cc64d255fded43406691fe7047f8cabc6f5f24919c607e5ac908b5",
+          "sourcePath": "faqs[3].answer"
+        },
+        {
+          "messageId": "for.anxiety.faqs.increased-anxiety.question",
+          "reviewedSourceHash": "8cabbae5f15c6e132c5ef4c622760d020b1927bc2d10624c8db03230707ae790",
+          "sourcePath": "faqs[4].question"
+        },
+        {
+          "messageId": "for.anxiety.faqs.increased-anxiety.answer",
+          "reviewedSourceHash": "936a6f70eb615de8e29df3b6e8eeda69f02f0d9a196ceac7178300c17ac989b4",
+          "sourcePath": "faqs[4].answer"
+        },
+        {
+          "messageId": "for.anxiety.faqs.results-timeline.question",
+          "reviewedSourceHash": "9c26d9b0b84c88a9d069647c70dd6892122b0d7ad004e5f2dc185bedcd4c8f49",
+          "sourcePath": "faqs[5].question"
+        },
+        {
+          "messageId": "for.anxiety.faqs.results-timeline.answer",
+          "reviewedSourceHash": "000264fd6b00edc36a6eb4e75e969eff0e5ace0174abfec688e9c6dc7ad67ac6",
+          "sourcePath": "faqs[5].answer"
+        },
+        {
+          "messageId": "for.anxiety.voice-search.best-technique.question",
+          "reviewedSourceHash": "b5c3eb21d32fc04da0b1e5230bb1a54e8b64dc4b3536d37b36202173d4bd5f75",
+          "sourcePath": "voiceSearch[0].question"
+        },
+        {
+          "messageId": "for.anxiety.voice-search.best-technique.answer",
+          "reviewedSourceHash": "33994c6ac0f5ef6fd3e53b23f5b611457f16db39f61f859aa849a7e481ab0d05",
+          "sourcePath": "voiceSearch[0].answer"
+        }
+      ],
+      "routeId": "for.anxiety",
+      "sourceRoute": "/for/anxiety"
+    }
+  ]
+}

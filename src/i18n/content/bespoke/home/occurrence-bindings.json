@@ -1,0 +1,959 @@
+{
+  "schemaVersion": 1,
+  "bindings": [
+    {
+      "catalogSourceText": "How to Stop Anxiety in 60 Seconds with Box Breathing",
+      "messagePath": "footer.columns.guides.links.anxiety.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:16",
+      "sourceText": "How to Stop Anxiety in 60 Seconds with Box Breathing"
+    },
+    {
+      "catalogSourceText": "Faster Recovery Between Sets: Physiological Sigh for Athletes",
+      "messagePath": "footer.columns.guides.links.athletes.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:20",
+      "sourceText": "Faster Recovery Between Sets: Physiological Sigh for Athletes"
+    },
+    {
+      "catalogSourceText": "How to Boost Focus by 40% with Coherent Breathing",
+      "messagePath": "footer.columns.guides.links.focus.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:18",
+      "sourceText": "How to Boost Focus by 40% with Coherent Breathing"
+    },
+    {
+      "catalogSourceText": "Lower Your Blood Pressure Naturally with 4-7-8 Breathing",
+      "messagePath": "footer.columns.guides.links.high-blood-pressure.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:13",
+      "sourceText": "Lower Your Blood Pressure Naturally with 4-7-8 Breathing"
+    },
+    {
+      "catalogSourceText": "How to Handle Holiday Stress in 30 Seconds",
+      "messagePath": "footer.columns.guides.links.holiday-stress.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:22",
+      "sourceText": "How to Handle Holiday Stress in 30 Seconds"
+    },
+    {
+      "catalogSourceText": "Huberman Lab Breathing Protocols",
+      "messagePath": "footer.columns.guides.links.huberman.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:24",
+      "sourceText": "Huberman Lab Breathing Protocols"
+    },
+    {
+      "catalogSourceText": "Kids",
+      "messagePath": "footer.columns.guides.links.kids.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:26",
+      "sourceText": "Kids"
+    },
+    {
+      "catalogSourceText": "Lung Capacity Exercises",
+      "messagePath": "footer.columns.guides.links.lung-capacity.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:29",
+      "sourceText": "Lung Capacity Exercises"
+    },
+    {
+      "catalogSourceText": "Can't Meditate? Start with Coherent Breathing",
+      "messagePath": "footer.columns.guides.links.meditation.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:19",
+      "sourceText": "Can't Meditate? Start with Coherent Breathing"
+    },
+    {
+      "catalogSourceText": "How to Stop a Panic Attack in 30 Seconds",
+      "messagePath": "footer.columns.guides.links.panic-attacks.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:17",
+      "sourceText": "How to Stop a Panic Attack in 30 Seconds"
+    },
+    {
+      "catalogSourceText": "Pranayama Breathing: The Complete Guide to Yogic Breathing",
+      "messagePath": "footer.columns.guides.links.pranayama.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:27",
+      "sourceText": "Pranayama Breathing: The Complete Guide to Yogic Breathing"
+    },
+    {
+      "catalogSourceText": "Breathing for Pregnancy Anxiety and Labor Preparation",
+      "messagePath": "footer.columns.guides.links.pregnancy.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:21",
+      "sourceText": "Breathing for Pregnancy Anxiety and Labor Preparation"
+    },
+    {
+      "catalogSourceText": "Public Speaking",
+      "messagePath": "footer.columns.guides.links.public-speaking.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:12",
+      "sourceText": "Public Speaking"
+    },
+    {
+      "catalogSourceText": "Recover Faster and Stop Side Stitches",
+      "messagePath": "footer.columns.guides.links.running.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:15",
+      "sourceText": "Recover Faster and Stop Side Stitches"
+    },
+    {
+      "catalogSourceText": "Singing",
+      "messagePath": "footer.columns.guides.links.singing.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:28",
+      "sourceText": "Singing"
+    },
+    {
+      "catalogSourceText": "4-7-8 Breathing for Sleep",
+      "messagePath": "footer.columns.guides.links.sleep.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:14",
+      "sourceText": "4-7-8 Breathing for Sleep"
+    },
+    {
+      "catalogSourceText": "Stress",
+      "messagePath": "footer.columns.guides.links.stress.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:25",
+      "sourceText": "Stress"
+    },
+    {
+      "catalogSourceText": "Travel Anxiety",
+      "messagePath": "footer.columns.guides.links.travel-anxiety.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:23",
+      "sourceText": "Travel Anxiety"
+    },
+    {
+      "catalogSourceText": "Guides",
+      "messagePath": "footer.columns.guides.title",
+      "occurrenceKey": "sel:p.mb-3.text-xs:ctx:p:pos:1",
+      "sourceText": "Guides"
+    },
+    {
+      "catalogSourceText": "About Abi",
+      "messagePath": "footer.columns.info.links.about-abi.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:45",
+      "sourceText": "About Abi"
+    },
+    {
+      "catalogSourceText": "About",
+      "messagePath": "footer.columns.info.links.about.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:40",
+      "sourceText": "About"
+    },
+    {
+      "catalogSourceText": "All Guides",
+      "messagePath": "footer.columns.info.links.all-guides.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:37",
+      "sourceText": "All Guides"
+    },
+    {
+      "catalogSourceText": "All Techniques",
+      "messagePath": "footer.columns.info.links.all-techniques.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:36",
+      "sourceText": "All Techniques"
+    },
+    {
+      "catalogSourceText": "App",
+      "messagePath": "footer.columns.info.links.app.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:38",
+      "sourceText": "App"
+    },
+    {
+      "catalogSourceText": "Editorial policy",
+      "messagePath": "footer.columns.info.links.editorial-policy.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:46",
+      "sourceText": "Editorial Policy"
+    },
+    {
+      "catalogSourceText": "Embed Widget",
+      "messagePath": "footer.columns.info.links.embed.label",
+      "occurrenceKey": null,
+      "sourceText": "Embed Widget"
+    },
+    {
+      "catalogSourceText": "My Stats",
+      "messagePath": "footer.columns.info.links.my-stats.label",
+      "occurrenceKey": null,
+      "sourceText": "My Stats"
+    },
+    {
+      "catalogSourceText": "Privacy",
+      "messagePath": "footer.columns.info.links.privacy.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:47",
+      "sourceText": "Privacy"
+    },
+    {
+      "catalogSourceText": "Breathing Visualizer",
+      "messagePath": "footer.columns.info.links.visualizer.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:39",
+      "sourceText": "Breathing Visualizer"
+    },
+    {
+      "catalogSourceText": "Info",
+      "messagePath": "footer.columns.info.title",
+      "occurrenceKey": "sel:p.mb-3.text-xs:ctx:p:pos:3",
+      "sourceText": "Info"
+    },
+    {
+      "catalogSourceText": "Before a presentation",
+      "messagePath": "footer.columns.situations.links.before-presentation.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:52",
+      "sourceText": "Before a Presentation"
+    },
+    {
+      "catalogSourceText": "Before Surgery",
+      "messagePath": "footer.columns.situations.links.before-surgery.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:48",
+      "sourceText": "Before Surgery"
+    },
+    {
+      "catalogSourceText": "Insomnia",
+      "messagePath": "footer.columns.situations.links.insomnia.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:51",
+      "sourceText": "Insomnia"
+    },
+    {
+      "catalogSourceText": "Labor & Birth",
+      "messagePath": "footer.columns.situations.links.labor.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:50",
+      "sourceText": "Labor & Birth"
+    },
+    {
+      "catalogSourceText": "Panic Attack",
+      "messagePath": "footer.columns.situations.links.panic-attack.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:49",
+      "sourceText": "Panic Attack"
+    },
+    {
+      "catalogSourceText": "Situations",
+      "messagePath": "footer.columns.situations.title",
+      "occurrenceKey": "sel:p.mb-3.text-xs:ctx:p:pos:4",
+      "sourceText": "Situations"
+    },
+    {
+      "catalogSourceText": "Belly Breathing",
+      "messagePath": "footer.columns.techniques.links.belly.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:8",
+      "sourceText": "Belly Breathing"
+    },
+    {
+      "catalogSourceText": "Box Breathing",
+      "messagePath": "footer.columns.techniques.links.box.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+      "sourceText": "Box Breathing"
+    },
+    {
+      "catalogSourceText": "Breath of Fire",
+      "messagePath": "footer.columns.techniques.links.breath-of-fire.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:11",
+      "sourceText": "Breath of Fire"
+    },
+    {
+      "catalogSourceText": "Buteyko Breathing",
+      "messagePath": "footer.columns.techniques.links.buteyko.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:9",
+      "sourceText": "Buteyko Breathing"
+    },
+    {
+      "catalogSourceText": "Coherent Breathing",
+      "messagePath": "footer.columns.techniques.links.coherent.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+      "sourceText": "Coherent Breathing"
+    },
+    {
+      "catalogSourceText": "4-7-8 Relax",
+      "messagePath": "footer.columns.techniques.links.four-seven-eight.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+      "sourceText": "4-7-8 Relax"
+    },
+    {
+      "catalogSourceText": "Nadi Shodhana",
+      "messagePath": "footer.columns.techniques.links.nadi-shodhana.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:6",
+      "sourceText": "Nadi Shodhana"
+    },
+    {
+      "catalogSourceText": "Physiological Sigh",
+      "messagePath": "footer.columns.techniques.links.physiological-sigh.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:3",
+      "sourceText": "Physiological Sigh"
+    },
+    {
+      "catalogSourceText": "Pursed Lip Breathing",
+      "messagePath": "footer.columns.techniques.links.pursed-lip.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:5",
+      "sourceText": "Pursed Lip Breathing"
+    },
+    {
+      "catalogSourceText": "Tummo Breathing",
+      "messagePath": "footer.columns.techniques.links.tummo.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:10",
+      "sourceText": "Tummo Breathing"
+    },
+    {
+      "catalogSourceText": "Ujjayi Breathing",
+      "messagePath": "footer.columns.techniques.links.ujjayi.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:7",
+      "sourceText": "Ujjayi Breathing"
+    },
+    {
+      "catalogSourceText": "Wim Hof Breathing",
+      "messagePath": "footer.columns.techniques.links.wim-hof.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+      "sourceText": "Wim Hof Breathing"
+    },
+    {
+      "catalogSourceText": "Techniques",
+      "messagePath": "footer.columns.techniques.title",
+      "occurrenceKey": "sel:p.mb-3.text-xs:ctx:p:pos:0",
+      "sourceText": "Techniques"
+    },
+    {
+      "catalogSourceText": "Box breathing app",
+      "messagePath": "footer.columns.timers.links.box-app.label",
+      "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:6",
+      "sourceText": "Box Breathing App"
+    },
+    {
+      "catalogSourceText": "Coherent Breathing App",
+      "messagePath": "footer.columns.timers.links.coherent-app.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:34",
+      "sourceText": "Coherent Breathing App"
+    },
+    {
+      "catalogSourceText": "5 Minutes",
+      "messagePath": "footer.columns.timers.links.five-minute.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:32",
+      "sourceText": "5 Minutes"
+    },
+    {
+      "catalogSourceText": "4-7-8 Timer",
+      "messagePath": "footer.columns.timers.links.four-seven-eight-timer.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:33",
+      "sourceText": "4-7-8 Timer"
+    },
+    {
+      "catalogSourceText": "Holiday Exercises",
+      "messagePath": "footer.columns.timers.links.holiday.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:35",
+      "sourceText": "Holiday Exercises"
+    },
+    {
+      "catalogSourceText": "1 Minute",
+      "messagePath": "footer.columns.timers.links.one-minute.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:30",
+      "sourceText": "1 Minute"
+    },
+    {
+      "catalogSourceText": "2 Minutes",
+      "messagePath": "footer.columns.timers.links.two-minute.label",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:31",
+      "sourceText": "2 Minutes"
+    },
+    {
+      "catalogSourceText": "Timers",
+      "messagePath": "footer.columns.timers.title",
+      "occurrenceKey": "sel:p.mb-3.text-xs:ctx:p:pos:2",
+      "sourceText": "Timers"
+    },
+    {
+      "catalogSourceText": "Abiassi",
+      "messagePath": "footer.credits.abiassi",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:53",
+      "sourceText": "Abiassi"
+    },
+    {
+      "catalogSourceText": "Darkmatter AI Labs",
+      "messagePath": "footer.credits.darkmatter",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:54",
+      "sourceText": "Darkmatter AI Labs"
+    },
+    {
+      "catalogSourceText": "Created by",
+      "messagePath": "footer.credits.prefix",
+      "occurrenceKey": "sel:p.text-center.text-xs:ctx:p:pos:0",
+      "sourceText": "Created by"
+    },
+    {
+      "catalogSourceText": "Available in Español, Português, Français, Deutsch, 日本語 →",
+      "messagePath": "footer.languagesLink",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:55",
+      "sourceText": "Available in Español, Português, Français, Deutsch, 日本語 →"
+    },
+    {
+      "catalogSourceText": "Stop if dizzy, tingly, or chest‑tight. Resume later with shorter, easier breaths. Skip prolonged holds during pregnancy or if advised by your clinician.",
+      "messagePath": "footer.safetyNote",
+      "occurrenceKey": "sel:p.mb-8.text-center:ctx:p:pos:0",
+      "sourceText": "Stop if dizzy, tingly, or chest-tight. Resume later with shorter, easier breaths. Skip prolonged holds during pregnancy or if advised by your clinician."
+    },
+    {
+      "catalogSourceText": "Pick a mode",
+      "messagePath": "hero.actions.pickMode",
+      "occurrenceKey": "sel:a.inline-flex.items-center:ctx:link:pos:0",
+      "sourceText": "Pick a mode"
+    },
+    {
+      "catalogSourceText": "Start Session",
+      "messagePath": "hero.actions.startSession",
+      "occurrenceKey": "sel:button.inline-flex.items-center:ctx:cta_button:pos:1",
+      "sourceText": "Start session"
+    },
+    {
+      "catalogSourceText": "Free Breathing Visualizer",
+      "messagePath": "hero.label",
+      "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+      "sourceText": "Free Breathing Visualizer"
+    },
+    {
+      "catalogSourceText": "Visual pacing that helps your body downshift. Calm on demand, anytime, anywhere.",
+      "messagePath": "hero.subtitle",
+      "occurrenceKey": "sel:p.mt-4.text-lg:ctx:p:pos:0",
+      "sourceText": "Visual pacing that helps your body downshift. Calm on demand, anytime, anywhere."
+    },
+    {
+      "catalogSourceText": "Deep Breathing Exercises",
+      "messagePath": "hero.title",
+      "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+      "sourceText": "Deep Breathing Exercises"
+    },
+    {
+      "catalogSourceText": "Calm anxiety in 60 seconds with our free breathing visualizer. Box breathing, 4-7-8, physiological sigh—all free, no signup. Used by 10,000+ people. Try now.",
+      "messagePath": "metadata.description",
+      "occurrenceKey": "head:meta:name:description",
+      "sourceText": "Calm anxiety in 60 seconds with our free breathing visualizer. Box breathing, 4-7-8, physiological sigh—all free, no signup. Used by 10,000+ people. Try now."
+    },
+    {
+      "catalogSourceText": "Calm anxiety in 60 seconds with our free breathing visualizer. Box breathing, 4-7-8, physiological sigh. No signup required.",
+      "messagePath": "metadata.openGraph.description",
+      "occurrenceKey": "head:meta:property:og:description",
+      "sourceText": "Calm anxiety in 60 seconds with our free breathing visualizer. Box breathing, 4-7-8, physiological sigh. No signup required."
+    },
+    {
+      "catalogSourceText": "Interactive breathing orb expanding against a coral gradient",
+      "messagePath": "metadata.openGraph.imageAlt",
+      "occurrenceKey": null,
+      "sourceText": "Interactive breathing orb expanding against a coral gradient"
+    },
+    {
+      "catalogSourceText": "Deep Breathing Exercises",
+      "messagePath": "metadata.openGraph.siteName",
+      "occurrenceKey": "head:meta:property:og:site_name",
+      "sourceText": "Deep Breathing Exercises"
+    },
+    {
+      "catalogSourceText": "Free Breathing Visualizer: Calm Anxiety in 60 Seconds",
+      "messagePath": "metadata.openGraph.title",
+      "occurrenceKey": "head:meta:property:og:title",
+      "sourceText": "Free Breathing Visualizer: Calm Anxiety in 60 Seconds"
+    },
+    {
+      "catalogSourceText": "Free Breathing Visualizer: Calm Anxiety in 60 Seconds",
+      "messagePath": "metadata.title",
+      "occurrenceKey": "head:title",
+      "sourceText": "Free Breathing Visualizer: Calm Anxiety in 60 Seconds"
+    },
+    {
+      "catalogSourceText": "Calm anxiety in 60 seconds with our free breathing visualizer. Box breathing, 4-7-8, physiological sigh. Try now—no signup.",
+      "messagePath": "metadata.twitter.description",
+      "occurrenceKey": "head:meta:name:twitter:description",
+      "sourceText": "Calm anxiety in 60 seconds with our free breathing visualizer. Box breathing, 4-7-8, physiological sigh. Try now—no signup."
+    },
+    {
+      "catalogSourceText": "Free Breathing Visualizer: Calm Anxiety in 60 Seconds",
+      "messagePath": "metadata.twitter.title",
+      "occurrenceKey": "head:meta:name:twitter:title",
+      "sourceText": "Free Breathing Visualizer: Calm Anxiety in 60 Seconds"
+    },
+    {
+      "catalogSourceText": "Guided breathing visualizer with adjustable pacing. Visual pacing that helps your body downshift, anytime, anywhere.",
+      "messagePath": "schema.website.description",
+      "occurrenceKey": null,
+      "sourceText": "Guided breathing visualizer with adjustable pacing. Visual pacing that helps your body downshift, anytime, anywhere."
+    },
+    {
+      "messagePath": "schema.website.name",
+      "occurrenceKey": "head:meta:property:og:site_name",
+      "sourceText": "Deep Breathing Exercises",
+      "catalogSourceText": "Deep Breathing Exercises"
+    },
+    {
+      "catalogSourceText": "Short sets (1–5 min) before meetings, between tasks, or at lights-out.",
+      "messagePath": "sections.editorialCards.builtForRealLife.body",
+      "occurrenceKey": "sel:p.mt-3.text-muted-foreground:ctx:p:pos:1",
+      "sourceText": "Short sets (1–5 min) before meetings, between tasks, or at lights-out."
+    },
+    {
+      "catalogSourceText": "Built for real life",
+      "messagePath": "sections.editorialCards.builtForRealLife.eyebrow",
+      "occurrenceKey": "sel:p.text-sm.uppercase:ctx:p:pos:1",
+      "sourceText": "Built for real life"
+    },
+    {
+      "catalogSourceText": "Slow, even breathing often increases vagally mediated HRV and lowers perceived stress during practice.",
+      "messagePath": "sections.editorialCards.calmByDesign.body",
+      "occurrenceKey": "sel:p.mt-3.text-muted-foreground:ctx:p:pos:0",
+      "sourceText": "Slow, even breathing often increases vagally mediated HRV and lowers perceived stress during practice."
+    },
+    {
+      "catalogSourceText": "Calm by design",
+      "messagePath": "sections.editorialCards.calmByDesign.eyebrow",
+      "occurrenceKey": "sel:p.text-sm.uppercase:ctx:p:pos:0",
+      "sourceText": "Calm by design"
+    },
+    {
+      "catalogSourceText": "Choose 3–8 seconds per phase. Smaller, quieter breaths beat \"big\" breaths.",
+      "messagePath": "sections.editorialCards.yourPace.body",
+      "occurrenceKey": "sel:p.mt-3.text-muted-foreground:ctx:p:pos:2",
+      "sourceText": "Choose 3–8 seconds per phase. Smaller, quieter breaths beat \"big\" breaths."
+    },
+    {
+      "catalogSourceText": "Your pace",
+      "messagePath": "sections.editorialCards.yourPace.eyebrow",
+      "occurrenceKey": "sel:p.text-sm.uppercase:ctx:p:pos:2",
+      "sourceText": "Your pace"
+    },
+    {
+      "catalogSourceText": "Before a meeting or workout, between blocks of deep work, or before bed. Use physiological sighs for urgent spikes of stress.",
+      "messagePath": "sections.faq.items.bestTime.answer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:6",
+      "sourceText": "Before a meeting or workout, between blocks of deep work, or before bed. Use physiological sighs for urgent spikes of stress."
+    },
+    {
+      "catalogSourceText": "When's the best time?",
+      "messagePath": "sections.faq.items.bestTime.question",
+      "occurrenceKey": "sel:summary.cursor-pointer.text-lg:ctx:summary:pos:1",
+      "sourceText": "When's the best time?"
+    },
+    {
+      "catalogSourceText": "Start with 60–120 s. If it's still easy and helpful, extend to 3–5 min. For HRV‑focused training, 5–10 min most days.",
+      "messagePath": "sections.faq.items.howLong.answer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:5",
+      "sourceText": "Start with 60–120 s. If it's still easy and helpful, extend to 3–5 min. For HRV-focused training, 5–10 min most days."
+    },
+    {
+      "catalogSourceText": "How long should I practice?",
+      "messagePath": "sections.faq.items.howLong.question",
+      "occurrenceKey": "sel:summary.cursor-pointer.text-lg:ctx:summary:pos:0",
+      "sourceText": "How long should I practice?"
+    },
+    {
+      "catalogSourceText": "You're likely over‑breathing. Make breaths smaller and quieter, shorten phases, or pause and breathe normally.",
+      "messagePath": "sections.faq.items.lightHeaded.answer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:8",
+      "sourceText": "You're likely over-breathing. Make breaths smaller and quieter, shorten phases, or pause and breathe normally."
+    },
+    {
+      "catalogSourceText": "What if I feel light‑headed?",
+      "messagePath": "sections.faq.items.lightHeaded.question",
+      "occurrenceKey": "sel:summary.cursor-pointer.text-lg:ctx:summary:pos:3",
+      "sourceText": "What if I feel light-headed?"
+    },
+    {
+      "catalogSourceText": "No. It's a self‑regulation tool. If you have a cardiopulmonary condition, are pregnant, or have fainting history, avoid long holds and keep everything gentle.",
+      "messagePath": "sections.faq.items.medical.answer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:9",
+      "sourceText": "No. It's a self-regulation tool. If you have a cardiopulmonary condition, are pregnant, or have fainting history, avoid long holds and keep everything gentle."
+    },
+    {
+      "catalogSourceText": "Is this medical treatment?",
+      "messagePath": "sections.faq.items.medical.question",
+      "occurrenceKey": "sel:summary.cursor-pointer.text-lg:ctx:summary:pos:4",
+      "sourceText": "Is this medical treatment?"
+    },
+    {
+      "catalogSourceText": "Yes. That's the point. Use 3–8 s per phase. If holds feel uncomfortable, remove them and keep an even inhale/exhale.",
+      "messagePath": "sections.faq.items.timing.answer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:7",
+      "sourceText": "Yes. That's the point. Use 3–8 s per phase. If holds feel uncomfortable, remove them and keep an even inhale/exhale."
+    },
+    {
+      "catalogSourceText": "Can I change the timing?",
+      "messagePath": "sections.faq.items.timing.question",
+      "occurrenceKey": "sel:summary.cursor-pointer.text-lg:ctx:summary:pos:2",
+      "sourceText": "Can I change the timing?"
+    },
+    {
+      "catalogSourceText": "FAQ",
+      "messagePath": "sections.faq.title",
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+      "sourceText": "FAQ"
+    },
+    {
+      "catalogSourceText": "Best moments",
+      "messagePath": "sections.infoCards.bestMoments.eyebrow",
+      "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:6",
+      "sourceText": "Best moments"
+    },
+    {
+      "catalogSourceText": "Bedtime wind-down",
+      "messagePath": "sections.infoCards.bestMoments.items.bedtime",
+      "occurrenceKey": "sel:p:ctx:p:pos:2",
+      "sourceText": "Bedtime wind-down"
+    },
+    {
+      "catalogSourceText": "Before events",
+      "messagePath": "sections.infoCards.bestMoments.items.beforeEvents",
+      "occurrenceKey": "sel:p:ctx:p:pos:0",
+      "sourceText": "Before events"
+    },
+    {
+      "catalogSourceText": "Holiday stress",
+      "messagePath": "sections.infoCards.bestMoments.items.holidayStress",
+      "occurrenceKey": "sel:p:ctx:p:pos:4",
+      "sourceText": "Holiday stress"
+    },
+    {
+      "catalogSourceText": "In-flight",
+      "messagePath": "sections.infoCards.bestMoments.items.inFlight",
+      "occurrenceKey": "sel:p:ctx:p:pos:3",
+      "sourceText": "In-flight"
+    },
+    {
+      "catalogSourceText": "Post-conflict",
+      "messagePath": "sections.infoCards.bestMoments.items.postConflict",
+      "occurrenceKey": "sel:p:ctx:p:pos:1",
+      "sourceText": "Post-conflict"
+    },
+    {
+      "catalogSourceText": "Slide in anytime",
+      "messagePath": "sections.infoCards.bestMoments.title",
+      "occurrenceKey": "sel:h3.mt-2.text-2xl:ctx:heading:pos:3",
+      "sourceText": "Slide in anytime"
+    },
+    {
+      "catalogSourceText": "Slide between 3–8 s per phase. Start small. Smooth > deep. If holds feel edgy, skip them and keep an even inhale/exhale.",
+      "messagePath": "sections.infoCards.dialItIn.body",
+      "occurrenceKey": "sel:p.mt-3.text-sm:ctx:p:pos:0",
+      "sourceText": "Slide between 3–8 s per phase. Start small. Smooth > deep. If holds feel edgy, skip them and keep an even inhale/exhale."
+    },
+    {
+      "catalogSourceText": "Dial it in",
+      "messagePath": "sections.infoCards.dialItIn.eyebrow",
+      "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:3",
+      "sourceText": "Dial it in"
+    },
+    {
+      "catalogSourceText": "Smooth over deep",
+      "messagePath": "sections.infoCards.dialItIn.title",
+      "occurrenceKey": "sel:h3.mt-2.text-2xl:ctx:heading:pos:0",
+      "sourceText": "Smooth over deep"
+    },
+    {
+      "catalogSourceText": "How long?",
+      "messagePath": "sections.infoCards.howLong.eyebrow",
+      "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:5",
+      "sourceText": "How long?"
+    },
+    {
+      "catalogSourceText": "• Deeper shift: 3–5 minutes.",
+      "messagePath": "sections.infoCards.howLong.items.deeperShift",
+      "occurrenceKey": "sel:li:ctx:li:pos:7",
+      "sourceText": "• Deeper shift: 3–5 minutes."
+    },
+    {
+      "catalogSourceText": "• Quick reset: 1–2 minutes (4–8 cycles).",
+      "messagePath": "sections.infoCards.howLong.items.quickReset",
+      "occurrenceKey": "sel:li:ctx:li:pos:6",
+      "sourceText": "• Quick reset: 1–2 minutes (4–8 cycles)."
+    },
+    {
+      "catalogSourceText": "• Training effect (HRV focus): 5–10 minutes at an easy, equal in/out pace.",
+      "messagePath": "sections.infoCards.howLong.items.training",
+      "occurrenceKey": "sel:li:ctx:li:pos:8",
+      "sourceText": "• Training effect (HRV focus): 5–10 minutes at an easy, equal in/out pace."
+    },
+    {
+      "catalogSourceText": "5 min",
+      "messagePath": "sections.infoCards.howLong.timerLinks.fiveMin",
+      "occurrenceKey": "sel:a.text-xs.underline:ctx:link:pos:2",
+      "sourceText": "5 min"
+    },
+    {
+      "catalogSourceText": "1 min",
+      "messagePath": "sections.infoCards.howLong.timerLinks.oneMin",
+      "occurrenceKey": "sel:a.text-xs.underline:ctx:link:pos:0",
+      "sourceText": "1 min"
+    },
+    {
+      "catalogSourceText": "2 min",
+      "messagePath": "sections.infoCards.howLong.timerLinks.twoMin",
+      "occurrenceKey": "sel:a.text-xs.underline:ctx:link:pos:1",
+      "sourceText": "2 min"
+    },
+    {
+      "catalogSourceText": "Match the moment",
+      "messagePath": "sections.infoCards.howLong.title",
+      "occurrenceKey": "sel:h3.mt-2.text-2xl:ctx:heading:pos:2",
+      "sourceText": "Match the moment"
+    },
+    {
+      "catalogSourceText": "Practice cues",
+      "messagePath": "sections.infoCards.practiceCues.eyebrow",
+      "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:4",
+      "sourceText": "Practice cues"
+    },
+    {
+      "catalogSourceText": "• Exhale ends softly—don't squeeze empty.",
+      "messagePath": "sections.infoCards.practiceCues.items.exhale",
+      "occurrenceKey": "sel:li:ctx:li:pos:4",
+      "sourceText": "• Exhale ends softly. Don't squeeze empty."
+    },
+    {
+      "catalogSourceText": "• Breathe nasal and quiet; feel low belly rise.",
+      "messagePath": "sections.infoCards.practiceCues.items.nasal",
+      "occurrenceKey": "sel:li:ctx:li:pos:3",
+      "sourceText": "• Breathe nasal and quiet; feel low belly rise."
+    },
+    {
+      "catalogSourceText": "• Shoulders stay down; jaw unclenched.",
+      "messagePath": "sections.infoCards.practiceCues.items.shoulders",
+      "occurrenceKey": "sel:li:ctx:li:pos:5",
+      "sourceText": "• Shoulders stay down; jaw unclenched."
+    },
+    {
+      "catalogSourceText": "What to notice",
+      "messagePath": "sections.infoCards.practiceCues.title",
+      "occurrenceKey": "sel:h3.mt-2.text-2xl:ctx:heading:pos:1",
+      "sourceText": "What to notice"
+    },
+    {
+      "catalogSourceText": "Why it works",
+      "messagePath": "sections.infoCards.whyItWorks.eyebrow",
+      "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:7",
+      "sourceText": "Why it works"
+    },
+    {
+      "catalogSourceText": "• Consistency matters; short daily sessions beat rare long ones.",
+      "messagePath": "sections.infoCards.whyItWorks.items.consistency",
+      "occurrenceKey": "sel:li:ctx:li:pos:11",
+      "sourceText": "• Consistency matters; short daily sessions beat rare long ones."
+    },
+    {
+      "catalogSourceText": "• Exhale-emphasized or 0.1 Hz pacing often feels calmer within minutes.",
+      "messagePath": "sections.infoCards.whyItWorks.items.exhale",
+      "occurrenceKey": "sel:li:ctx:li:pos:10",
+      "sourceText": "• Exhale-emphasized or 0.1 Hz pacing often feels calmer within minutes."
+    },
+    {
+      "catalogSourceText": "• Slow breathing can increase vagally mediated HRV during sessions.",
+      "messagePath": "sections.infoCards.whyItWorks.items.hrv",
+      "occurrenceKey": "sel:li:ctx:li:pos:9",
+      "sourceText": "• Slow breathing can increase vagally mediated HRV during sessions."
+    },
+    {
+      "catalogSourceText": "Calmer in minutes",
+      "messagePath": "sections.infoCards.whyItWorks.title",
+      "occurrenceKey": "sel:h3.mt-2.text-2xl:ctx:heading:pos:4",
+      "sourceText": "Calmer in minutes"
+    },
+    {
+      "catalogSourceText": "All techniques →",
+      "messagePath": "sections.modePicker.allTechniquesLabel",
+      "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:5",
+      "sourceText": "All techniques →"
+    },
+    {
+      "catalogSourceText": "Box Breathing",
+      "messagePath": "sections.modePicker.featured.box.cardTitle",
+      "occurrenceKey": "sel:h3.mt-3.text-2xl:ctx:heading:pos:0",
+      "sourceText": "Box Breathing"
+    },
+    {
+      "catalogSourceText": "Focus & Stress Reduction (4-4-4-4)",
+      "messagePath": "sections.modePicker.featured.box.description",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0",
+      "sourceText": "Focus & Stress Reduction (4-4-4-4)"
+    },
+    {
+      "catalogSourceText": "Box Breathing",
+      "messagePath": "sections.modePicker.featured.box.pillLabel",
+      "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:0",
+      "sourceText": "Box Breathing"
+    },
+    {
+      "catalogSourceText": "Start session →",
+      "messagePath": "sections.modePicker.featured.box.startCta",
+      "occurrenceKey": "sel:span.mt-6.inline-flex:ctx:product:pos:0",
+      "sourceText": "Start session →"
+    },
+    {
+      "catalogSourceText": "Coherent Breathing",
+      "messagePath": "sections.modePicker.featured.coherent.cardTitle",
+      "occurrenceKey": "sel:h3.mt-3.text-2xl:ctx:heading:pos:2",
+      "sourceText": "Coherent Breathing"
+    },
+    {
+      "catalogSourceText": "Heart Rate Variability (5.5-5.5)",
+      "messagePath": "sections.modePicker.featured.coherent.description",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+      "sourceText": "Heart Rate Variability (5.5-5.5)"
+    },
+    {
+      "catalogSourceText": "Coherent Breathing",
+      "messagePath": "sections.modePicker.featured.coherent.pillLabel",
+      "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:2",
+      "sourceText": "Coherent Breathing"
+    },
+    {
+      "catalogSourceText": "Start session →",
+      "messagePath": "sections.modePicker.featured.coherent.startCta",
+      "occurrenceKey": "sel:span.mt-6.inline-flex:ctx:product:pos:2",
+      "sourceText": "Start session →"
+    },
+    {
+      "catalogSourceText": "4-7-8 Relax",
+      "messagePath": "sections.modePicker.featured.fourSevenEight.cardTitle",
+      "occurrenceKey": "sel:h3.mt-3.text-2xl:ctx:heading:pos:1",
+      "sourceText": "4-7-8 Relax"
+    },
+    {
+      "catalogSourceText": "Sleep & Deep Relaxation (4-7-8)",
+      "messagePath": "sections.modePicker.featured.fourSevenEight.description",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:1",
+      "sourceText": "Sleep & Deep Relaxation (4-7-8)"
+    },
+    {
+      "catalogSourceText": "4-7-8 Relax",
+      "messagePath": "sections.modePicker.featured.fourSevenEight.pillLabel",
+      "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:1",
+      "sourceText": "4-7-8 Relax"
+    },
+    {
+      "catalogSourceText": "Start session →",
+      "messagePath": "sections.modePicker.featured.fourSevenEight.startCta",
+      "occurrenceKey": "sel:span.mt-6.inline-flex:ctx:product:pos:1",
+      "sourceText": "Start session →"
+    },
+    {
+      "catalogSourceText": "Physiological Sigh",
+      "messagePath": "sections.modePicker.featured.physiologicalSigh.cardTitle",
+      "occurrenceKey": "sel:h3.mt-3.text-2xl:ctx:heading:pos:3",
+      "sourceText": "Physiological Sigh"
+    },
+    {
+      "catalogSourceText": "Panic Reset (Double Inhale)",
+      "messagePath": "sections.modePicker.featured.physiologicalSigh.description",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:3",
+      "sourceText": "Panic Reset (Double Inhale)"
+    },
+    {
+      "catalogSourceText": "Physiological Sigh",
+      "messagePath": "sections.modePicker.featured.physiologicalSigh.pillLabel",
+      "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:3",
+      "sourceText": "Physiological Sigh"
+    },
+    {
+      "catalogSourceText": "Start session →",
+      "messagePath": "sections.modePicker.featured.physiologicalSigh.startCta",
+      "occurrenceKey": "sel:span.mt-6.inline-flex:ctx:product:pos:3",
+      "sourceText": "Start session →"
+    },
+    {
+      "catalogSourceText": "Wim Hof Breathing",
+      "messagePath": "sections.modePicker.featured.wimHof.cardTitle",
+      "occurrenceKey": "sel:h3.mt-3.text-2xl:ctx:heading:pos:4",
+      "sourceText": "Wim Hof Breathing"
+    },
+    {
+      "catalogSourceText": "Energy & Resilience (30 breaths × 3 rounds)",
+      "messagePath": "sections.modePicker.featured.wimHof.description",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:4",
+      "sourceText": "Energy & Resilience (30 breaths × 3 rounds)"
+    },
+    {
+      "catalogSourceText": "Wim Hof Breathing",
+      "messagePath": "sections.modePicker.featured.wimHof.pillLabel",
+      "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:4",
+      "sourceText": "Wim Hof Breathing"
+    },
+    {
+      "catalogSourceText": "Start session →",
+      "messagePath": "sections.modePicker.featured.wimHof.startCta",
+      "occurrenceKey": "sel:span.mt-6.inline-flex:ctx:product:pos:4",
+      "sourceText": "Start session →"
+    },
+    {
+      "catalogSourceText": "Pick a mode",
+      "messagePath": "sections.modePicker.title",
+      "occurrenceKey": "sel:h2.text-3xl.font-semibold:ctx:heading:pos:1",
+      "sourceText": "Pick a mode"
+    },
+    {
+      "catalogSourceText": "Start with the page that matches your situation: a quick reset, an app-style timer, a running recovery guide, or an advanced meditation technique.",
+      "messagePath": "sections.nextLinks.intro",
+      "occurrenceKey": "sel:p.mt-3.max-w-2xl:ctx:p:pos:0",
+      "sourceText": "Start with the page that matches your situation: a quick reset, an app-style timer, a running recovery guide, or an advanced meditation technique."
+    },
+    {
+      "catalogSourceText": "Box breathing app",
+      "messagePath": "sections.nextLinks.links.boxApp",
+      "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:6",
+      "sourceText": "Box breathing app"
+    },
+    {
+      "catalogSourceText": "Breathing for running",
+      "messagePath": "sections.nextLinks.links.running",
+      "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:8",
+      "sourceText": "Breathing for running"
+    },
+    {
+      "catalogSourceText": "Tummo Breathing",
+      "messagePath": "sections.nextLinks.links.tummo",
+      "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:9",
+      "sourceText": "Tummo Breathing"
+    },
+    {
+      "catalogSourceText": "2 minute reset",
+      "messagePath": "sections.nextLinks.links.twoMinute",
+      "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:7",
+      "sourceText": "2 minute reset"
+    },
+    {
+      "catalogSourceText": "Where to go next",
+      "messagePath": "sections.nextLinks.title",
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
+      "sourceText": "Where to go next"
+    },
+    {
+      "catalogSourceText": "Press Start and follow the orb through inhale, pause, exhale, pause. The cadence is adjustable. Sessions are short. Effects are tangible.",
+      "messagePath": "sections.precision.body",
+      "occurrenceKey": "sel:p.mx-auto.mt-4:ctx:p:pos:0",
+      "sourceText": "Press Start and follow the orb through inhale, pause, exhale, pause. The cadence is adjustable. Sessions are short. Effects are tangible."
+    },
+    {
+      "catalogSourceText": "Precision breathwork.",
+      "messagePath": "sections.precision.title",
+      "occurrenceKey": "sel:h2.text-3xl.font-semibold:ctx:heading:pos:0",
+      "sourceText": "Precision breathwork."
+    },
+    {
+      "catalogSourceText": "• Keep it easy. If dizzy, shorten phases or pause.",
+      "messagePath": "sections.quickAnchor.bullets.easy",
+      "occurrenceKey": "sel:li:ctx:li:pos:0",
+      "sourceText": "• Keep it easy. If dizzy, shorten phases or pause."
+    },
+    {
+      "catalogSourceText": "• Exhale ends softly—don't squeeze empty.",
+      "messagePath": "sections.quickAnchor.bullets.exhale",
+      "occurrenceKey": "sel:li:ctx:li:pos:2",
+      "sourceText": "• Exhale ends softly. Don't squeeze empty."
+    },
+    {
+      "catalogSourceText": "• Breathe nasal and quiet; feel the low belly rise.",
+      "messagePath": "sections.quickAnchor.bullets.nasal",
+      "occurrenceKey": "sel:li:ctx:li:pos:1",
+      "sourceText": "• Breathe nasal and quiet; feel the low belly rise."
+    },
+    {
+      "catalogSourceText": "Dial in a smooth cadence, then keep breathing. Small, steady breaths trump deep gasps.",
+      "messagePath": "sections.quickAnchor.closing",
+      "occurrenceKey": "sel:p.mt-5.text-sm:ctx:p:pos:0",
+      "sourceText": "Dial in a smooth cadence, then keep breathing. Small, steady breaths trump deep gasps."
+    },
+    {
+      "catalogSourceText": "Quick anchor",
+      "messagePath": "sections.quickAnchor.eyebrow",
+      "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:2",
+      "sourceText": "Quick anchor"
+    },
+    {
+      "catalogSourceText": "Sit tall. Shoulders soft. Tongue to the roof of your mouth. Inhale gently through the nose; exhale quietly through the nose or pursed lips.",
+      "messagePath": "sections.quickAnchor.intro",
+      "occurrenceKey": "sel:p.mt-4.text-lg:ctx:p:pos:2",
+      "sourceText": "Sit tall. Shoulders soft. Tongue to the roof of your mouth. Inhale gently through the nose; exhale quietly through the nose or pursed lips."
+    },
+    {
+      "catalogSourceText": "One minute to steady",
+      "messagePath": "sections.quickAnchor.title",
+      "occurrenceKey": "sel:h2.mt-3.text-4xl:ctx:heading:pos:0",
+      "sourceText": "One minute to steady"
+    }
+  ]
+}

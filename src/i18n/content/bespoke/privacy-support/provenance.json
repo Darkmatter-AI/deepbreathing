@@ -1,0 +1,1753 @@
+{
+  "routes": {
+    "privacy": {
+      "locales": {
+        "de-de": {
+          "breadcrumb.current": {
+            "reviewedSourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+            "sourceMessagePath": "hero.title",
+            "status": "semantic-mirror"
+          },
+          "breadcrumb.home": {
+            "catalogRoute": "/languages",
+            "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+            "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+            "status": "explicit-catalog-alias"
+          },
+          "hero.eyebrow": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+            "reviewedSourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+            "status": "explicit-catalog-alias"
+          },
+          "hero.intro": {
+            "reviewedSourceHash": "c84e3d013a80da579cc36b418f037d9db4e7a87bd12af9756e2980430eba7904",
+            "status": "reviewed-replacement"
+          },
+          "hero.lastUpdated": {
+            "placementId": "a0101b73-09e7-45ff-a603-61599e530e96",
+            "reviewedSourceHash": "1b70573e21817810dcb159db9a98b3fe1bddf07b05905a383ab2153b863a2bca",
+            "status": "reviewed-gap"
+          },
+          "hero.title": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+            "reviewedSourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+            "status": "explicit-catalog-alias"
+          },
+          "metadata.description": {
+            "reviewedSourceHash": "b84b9a07f0434762b88e79f2638c05c15bcb908bf7642ffeb5e2dd5ea793cea5",
+            "status": "reviewed-replacement"
+          },
+          "metadata.imageAlt": {
+            "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "sourceMessagePath": "metadata.socialTitle",
+            "status": "semantic-mirror"
+          },
+          "metadata.socialDescription": {
+            "reviewedSourceHash": "51e04dbeb12eb3c0e1387068be7629c79a2f7aa3f7cd5360ae4b5473136f0fc8",
+            "status": "reviewed-replacement"
+          },
+          "metadata.socialTitle": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "head:meta:property:og:title",
+            "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "status": "explicit-catalog-alias"
+          },
+          "metadata.title": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "head:title",
+            "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "status": "explicit-catalog-alias"
+          },
+          "metadata.twitterDescription": {
+            "reviewedSourceHash": "51e04dbeb12eb3c0e1387068be7629c79a2f7aa3f7cd5360ae4b5473136f0fc8",
+            "status": "reviewed-replacement"
+          },
+          "metadata.twitterTitle": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "head:meta:name:twitter:title",
+            "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.accounts.body": {
+            "reviewedSourceHash": "f81b1d0f20b34556dde299585e515d652266e222acf0aeb1dfab578bc496ac90",
+            "status": "reviewed-replacement"
+          },
+          "sections.accounts.title": {
+            "reviewedSourceHash": "6bd79b7e7d961a1463b5910e47cb973daa1d7a5fe67fcb3deef83298ae15d421",
+            "status": "reviewed-replacement"
+          },
+          "sections.collection.body": {
+            "reviewedSourceHash": "3d768176144c4699d2cfb9d2176c8255cf46c33d7befde73db4ef8aeb8d35188",
+            "status": "reviewed-replacement"
+          },
+          "sections.collection.title": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+            "reviewedSourceHash": "bef04e58c3f6e2505a8e57cac0bca3c7c700952a2a4032a879bafcd2e99c9bb6",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.contact.abiassiLabel": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:0",
+            "reviewedSourceHash": "19ebecf85239d19c75a1d5dc737d9afe820568f4a950a3b26e85d00c93261931",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.contact.backLink": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:a.text-sm.font-semibold:ctx:link:pos:0",
+            "reviewedSourceHash": "a8e75b814e600400a66751578855d1f1148fbf3d59ac19b3f2e241932a1f8c5b",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.contact.darkmatterLabel": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:1",
+            "reviewedSourceHash": "46d9902e7bdf4e44566ba128ac4d2a0ed7f68f5ef925e9968d5574391ce16c79",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.contact.intro": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:p.mt-3:ctx:p:pos:6",
+            "reviewedSourceHash": "dbe73cbdc31d29a8b305099d530bdbd328ec14c5aaae5beab14e4b3986f6de1a",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.contact.title": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:6",
+            "reviewedSourceHash": "2b5c3d26721ae9c350cf3009318b626f0fc8a90b4a2ac0ca8099c05aa849282e",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.deletion.action": {
+            "reviewedSourceHash": "8a17ab9433bbc3f1b4ba75ca3cb8e86652d40589e8ec51f69eb93aadb94e4fbe",
+            "status": "reviewed-replacement"
+          },
+          "sections.deletion.afterAction": {
+            "reviewedSourceHash": "a50d32b28113e9cbbb454c0a9b046943af40137ec7e337459e4cf1c6f695c17a",
+            "status": "reviewed-replacement"
+          },
+          "sections.deletion.beforeAction": {
+            "reviewedSourceHash": "bd4e84e40d3705795a441f73eb524bb7908958ece94b3c1f21cc20d3275cd648",
+            "status": "reviewed-replacement"
+          },
+          "sections.deletion.title": {
+            "reviewedSourceHash": "43e623b4b0a31d446e48e09b2407a2713805c67ccd532345df84f60dc81a717f",
+            "status": "reviewed-replacement"
+          },
+          "sections.device.body": {
+            "placementId": "3e3145d4-5921-4996-938d-75690c554220",
+            "reviewedSourceHash": "4595b885ab1b539a4bab43628e1a169be813f7cbbbd352772500495abfed9f65",
+            "status": "reviewed-gap"
+          },
+          "sections.device.title": {
+            "placementId": "b6e7325c-d55d-4fed-9967-f9f460f05b46",
+            "reviewedSourceHash": "5c99c329e170834e3acb8af54691f3c95f065489c02573e55e6f2218161d63c7",
+            "status": "reviewed-gap"
+          },
+          "sections.thirdParty.body": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:p.mt-3:ctx:p:pos:5",
+            "reviewedSourceHash": "1acb759ed5a85713e094fbdd4e58ad41f226433035a6f8c5e05420316a26e854",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.thirdParty.title": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:5",
+            "reviewedSourceHash": "f4c0f0ab2af419afc9c23a49e3f8049d89fc30f1c83d2c77d3a4b6ff0d7c5db1",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.useAndShare.body": {
+            "reviewedSourceHash": "0daed4c2d3288a4f849c1f461371f6d675a8fd505ff81104d673f7b3d82be2a9",
+            "status": "reviewed-replacement"
+          },
+          "sections.useAndShare.title": {
+            "reviewedSourceHash": "2cd18c6e98edb2ef9724e84edb8ae546422623d6236bf2e8c8d2976e95f8857b",
+            "status": "reviewed-replacement"
+          }
+        },
+        "es-es": {
+          "breadcrumb.current": {
+            "reviewedSourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+            "sourceMessagePath": "hero.title",
+            "status": "semantic-mirror"
+          },
+          "breadcrumb.home": {
+            "catalogRoute": "/languages",
+            "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+            "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+            "status": "explicit-catalog-alias"
+          },
+          "hero.eyebrow": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+            "reviewedSourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+            "status": "explicit-catalog-alias"
+          },
+          "hero.intro": {
+            "reviewedSourceHash": "c84e3d013a80da579cc36b418f037d9db4e7a87bd12af9756e2980430eba7904",
+            "status": "reviewed-replacement"
+          },
+          "hero.lastUpdated": {
+            "placementId": "a0101b73-09e7-45ff-a603-61599e530e96",
+            "reviewedSourceHash": "1b70573e21817810dcb159db9a98b3fe1bddf07b05905a383ab2153b863a2bca",
+            "status": "reviewed-gap"
+          },
+          "hero.title": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+            "reviewedSourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+            "status": "explicit-catalog-alias"
+          },
+          "metadata.description": {
+            "reviewedSourceHash": "b84b9a07f0434762b88e79f2638c05c15bcb908bf7642ffeb5e2dd5ea793cea5",
+            "status": "reviewed-replacement"
+          },
+          "metadata.imageAlt": {
+            "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "sourceMessagePath": "metadata.socialTitle",
+            "status": "semantic-mirror"
+          },
+          "metadata.socialDescription": {
+            "reviewedSourceHash": "51e04dbeb12eb3c0e1387068be7629c79a2f7aa3f7cd5360ae4b5473136f0fc8",
+            "status": "reviewed-replacement"
+          },
+          "metadata.socialTitle": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "head:meta:property:og:title",
+            "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "status": "explicit-catalog-alias"
+          },
+          "metadata.title": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "head:title",
+            "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "status": "explicit-catalog-alias"
+          },
+          "metadata.twitterDescription": {
+            "reviewedSourceHash": "51e04dbeb12eb3c0e1387068be7629c79a2f7aa3f7cd5360ae4b5473136f0fc8",
+            "status": "reviewed-replacement"
+          },
+          "metadata.twitterTitle": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "head:meta:name:twitter:title",
+            "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.accounts.body": {
+            "reviewedSourceHash": "f81b1d0f20b34556dde299585e515d652266e222acf0aeb1dfab578bc496ac90",
+            "status": "reviewed-replacement"
+          },
+          "sections.accounts.title": {
+            "reviewedSourceHash": "6bd79b7e7d961a1463b5910e47cb973daa1d7a5fe67fcb3deef83298ae15d421",
+            "status": "reviewed-replacement"
+          },
+          "sections.collection.body": {
+            "reviewedSourceHash": "3d768176144c4699d2cfb9d2176c8255cf46c33d7befde73db4ef8aeb8d35188",
+            "status": "reviewed-replacement"
+          },
+          "sections.collection.title": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+            "reviewedSourceHash": "bef04e58c3f6e2505a8e57cac0bca3c7c700952a2a4032a879bafcd2e99c9bb6",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.contact.abiassiLabel": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:0",
+            "reviewedSourceHash": "19ebecf85239d19c75a1d5dc737d9afe820568f4a950a3b26e85d00c93261931",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.contact.backLink": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:a.text-sm.font-semibold:ctx:link:pos:0",
+            "reviewedSourceHash": "a8e75b814e600400a66751578855d1f1148fbf3d59ac19b3f2e241932a1f8c5b",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.contact.darkmatterLabel": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:1",
+            "reviewedSourceHash": "46d9902e7bdf4e44566ba128ac4d2a0ed7f68f5ef925e9968d5574391ce16c79",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.contact.intro": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:p.mt-3:ctx:p:pos:6",
+            "reviewedSourceHash": "dbe73cbdc31d29a8b305099d530bdbd328ec14c5aaae5beab14e4b3986f6de1a",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.contact.title": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:6",
+            "reviewedSourceHash": "2b5c3d26721ae9c350cf3009318b626f0fc8a90b4a2ac0ca8099c05aa849282e",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.deletion.action": {
+            "reviewedSourceHash": "8a17ab9433bbc3f1b4ba75ca3cb8e86652d40589e8ec51f69eb93aadb94e4fbe",
+            "status": "reviewed-replacement"
+          },
+          "sections.deletion.afterAction": {
+            "reviewedSourceHash": "a50d32b28113e9cbbb454c0a9b046943af40137ec7e337459e4cf1c6f695c17a",
+            "status": "reviewed-replacement"
+          },
+          "sections.deletion.beforeAction": {
+            "reviewedSourceHash": "bd4e84e40d3705795a441f73eb524bb7908958ece94b3c1f21cc20d3275cd648",
+            "status": "reviewed-replacement"
+          },
+          "sections.deletion.title": {
+            "reviewedSourceHash": "43e623b4b0a31d446e48e09b2407a2713805c67ccd532345df84f60dc81a717f",
+            "status": "reviewed-replacement"
+          },
+          "sections.device.body": {
+            "placementId": "3e3145d4-5921-4996-938d-75690c554220",
+            "reviewedSourceHash": "4595b885ab1b539a4bab43628e1a169be813f7cbbbd352772500495abfed9f65",
+            "status": "reviewed-gap"
+          },
+          "sections.device.title": {
+            "placementId": "b6e7325c-d55d-4fed-9967-f9f460f05b46",
+            "reviewedSourceHash": "5c99c329e170834e3acb8af54691f3c95f065489c02573e55e6f2218161d63c7",
+            "status": "reviewed-gap"
+          },
+          "sections.thirdParty.body": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:p.mt-3:ctx:p:pos:5",
+            "reviewedSourceHash": "1acb759ed5a85713e094fbdd4e58ad41f226433035a6f8c5e05420316a26e854",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.thirdParty.title": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:5",
+            "reviewedSourceHash": "f4c0f0ab2af419afc9c23a49e3f8049d89fc30f1c83d2c77d3a4b6ff0d7c5db1",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.useAndShare.body": {
+            "reviewedSourceHash": "0daed4c2d3288a4f849c1f461371f6d675a8fd505ff81104d673f7b3d82be2a9",
+            "status": "reviewed-replacement"
+          },
+          "sections.useAndShare.title": {
+            "reviewedSourceHash": "2cd18c6e98edb2ef9724e84edb8ae546422623d6236bf2e8c8d2976e95f8857b",
+            "status": "reviewed-replacement"
+          }
+        },
+        "fr-fr": {
+          "breadcrumb.current": {
+            "reviewedSourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+            "sourceMessagePath": "hero.title",
+            "status": "semantic-mirror"
+          },
+          "breadcrumb.home": {
+            "catalogRoute": "/languages",
+            "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+            "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+            "status": "explicit-catalog-alias"
+          },
+          "hero.eyebrow": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+            "reviewedSourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+            "status": "explicit-catalog-alias"
+          },
+          "hero.intro": {
+            "reviewedSourceHash": "c84e3d013a80da579cc36b418f037d9db4e7a87bd12af9756e2980430eba7904",
+            "status": "reviewed-replacement"
+          },
+          "hero.lastUpdated": {
+            "placementId": "a0101b73-09e7-45ff-a603-61599e530e96",
+            "reviewedSourceHash": "1b70573e21817810dcb159db9a98b3fe1bddf07b05905a383ab2153b863a2bca",
+            "status": "reviewed-gap"
+          },
+          "hero.title": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+            "reviewedSourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+            "status": "explicit-catalog-alias"
+          },
+          "metadata.description": {
+            "reviewedSourceHash": "b84b9a07f0434762b88e79f2638c05c15bcb908bf7642ffeb5e2dd5ea793cea5",
+            "status": "reviewed-replacement"
+          },
+          "metadata.imageAlt": {
+            "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "sourceMessagePath": "metadata.socialTitle",
+            "status": "semantic-mirror"
+          },
+          "metadata.socialDescription": {
+            "reviewedSourceHash": "51e04dbeb12eb3c0e1387068be7629c79a2f7aa3f7cd5360ae4b5473136f0fc8",
+            "status": "reviewed-replacement"
+          },
+          "metadata.socialTitle": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "head:meta:property:og:title",
+            "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "status": "explicit-catalog-alias"
+          },
+          "metadata.title": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "head:title",
+            "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "status": "explicit-catalog-alias"
+          },
+          "metadata.twitterDescription": {
+            "reviewedSourceHash": "51e04dbeb12eb3c0e1387068be7629c79a2f7aa3f7cd5360ae4b5473136f0fc8",
+            "status": "reviewed-replacement"
+          },
+          "metadata.twitterTitle": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "head:meta:name:twitter:title",
+            "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.accounts.body": {
+            "reviewedSourceHash": "f81b1d0f20b34556dde299585e515d652266e222acf0aeb1dfab578bc496ac90",
+            "status": "reviewed-replacement"
+          },
+          "sections.accounts.title": {
+            "reviewedSourceHash": "6bd79b7e7d961a1463b5910e47cb973daa1d7a5fe67fcb3deef83298ae15d421",
+            "status": "reviewed-replacement"
+          },
+          "sections.collection.body": {
+            "reviewedSourceHash": "3d768176144c4699d2cfb9d2176c8255cf46c33d7befde73db4ef8aeb8d35188",
+            "status": "reviewed-replacement"
+          },
+          "sections.collection.title": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+            "reviewedSourceHash": "bef04e58c3f6e2505a8e57cac0bca3c7c700952a2a4032a879bafcd2e99c9bb6",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.contact.abiassiLabel": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:0",
+            "reviewedSourceHash": "19ebecf85239d19c75a1d5dc737d9afe820568f4a950a3b26e85d00c93261931",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.contact.backLink": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:a.text-sm.font-semibold:ctx:link:pos:0",
+            "reviewedSourceHash": "a8e75b814e600400a66751578855d1f1148fbf3d59ac19b3f2e241932a1f8c5b",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.contact.darkmatterLabel": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:1",
+            "reviewedSourceHash": "46d9902e7bdf4e44566ba128ac4d2a0ed7f68f5ef925e9968d5574391ce16c79",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.contact.intro": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:p.mt-3:ctx:p:pos:6",
+            "reviewedSourceHash": "dbe73cbdc31d29a8b305099d530bdbd328ec14c5aaae5beab14e4b3986f6de1a",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.contact.title": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:6",
+            "reviewedSourceHash": "2b5c3d26721ae9c350cf3009318b626f0fc8a90b4a2ac0ca8099c05aa849282e",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.deletion.action": {
+            "reviewedSourceHash": "8a17ab9433bbc3f1b4ba75ca3cb8e86652d40589e8ec51f69eb93aadb94e4fbe",
+            "status": "reviewed-replacement"
+          },
+          "sections.deletion.afterAction": {
+            "reviewedSourceHash": "a50d32b28113e9cbbb454c0a9b046943af40137ec7e337459e4cf1c6f695c17a",
+            "status": "reviewed-replacement"
+          },
+          "sections.deletion.beforeAction": {
+            "reviewedSourceHash": "bd4e84e40d3705795a441f73eb524bb7908958ece94b3c1f21cc20d3275cd648",
+            "status": "reviewed-replacement"
+          },
+          "sections.deletion.title": {
+            "reviewedSourceHash": "43e623b4b0a31d446e48e09b2407a2713805c67ccd532345df84f60dc81a717f",
+            "status": "reviewed-replacement"
+          },
+          "sections.device.body": {
+            "placementId": "3e3145d4-5921-4996-938d-75690c554220",
+            "reviewedSourceHash": "4595b885ab1b539a4bab43628e1a169be813f7cbbbd352772500495abfed9f65",
+            "status": "reviewed-gap"
+          },
+          "sections.device.title": {
+            "placementId": "b6e7325c-d55d-4fed-9967-f9f460f05b46",
+            "reviewedSourceHash": "5c99c329e170834e3acb8af54691f3c95f065489c02573e55e6f2218161d63c7",
+            "status": "reviewed-gap"
+          },
+          "sections.thirdParty.body": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:p.mt-3:ctx:p:pos:5",
+            "reviewedSourceHash": "1acb759ed5a85713e094fbdd4e58ad41f226433035a6f8c5e05420316a26e854",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.thirdParty.title": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:5",
+            "reviewedSourceHash": "f4c0f0ab2af419afc9c23a49e3f8049d89fc30f1c83d2c77d3a4b6ff0d7c5db1",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.useAndShare.body": {
+            "reviewedSourceHash": "0daed4c2d3288a4f849c1f461371f6d675a8fd505ff81104d673f7b3d82be2a9",
+            "status": "reviewed-replacement"
+          },
+          "sections.useAndShare.title": {
+            "reviewedSourceHash": "2cd18c6e98edb2ef9724e84edb8ae546422623d6236bf2e8c8d2976e95f8857b",
+            "status": "reviewed-replacement"
+          }
+        },
+        "ja-jp": {
+          "breadcrumb.current": {
+            "reviewedSourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+            "sourceMessagePath": "hero.title",
+            "status": "semantic-mirror"
+          },
+          "breadcrumb.home": {
+            "catalogRoute": "/languages",
+            "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+            "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+            "status": "explicit-catalog-alias"
+          },
+          "hero.eyebrow": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+            "reviewedSourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+            "status": "explicit-catalog-alias"
+          },
+          "hero.intro": {
+            "reviewedSourceHash": "c84e3d013a80da579cc36b418f037d9db4e7a87bd12af9756e2980430eba7904",
+            "status": "reviewed-replacement"
+          },
+          "hero.lastUpdated": {
+            "placementId": "a0101b73-09e7-45ff-a603-61599e530e96",
+            "reviewedSourceHash": "1b70573e21817810dcb159db9a98b3fe1bddf07b05905a383ab2153b863a2bca",
+            "status": "reviewed-gap"
+          },
+          "hero.title": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+            "reviewedSourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+            "status": "explicit-catalog-alias"
+          },
+          "metadata.description": {
+            "reviewedSourceHash": "b84b9a07f0434762b88e79f2638c05c15bcb908bf7642ffeb5e2dd5ea793cea5",
+            "status": "reviewed-replacement"
+          },
+          "metadata.imageAlt": {
+            "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "sourceMessagePath": "metadata.socialTitle",
+            "status": "semantic-mirror"
+          },
+          "metadata.socialDescription": {
+            "reviewedSourceHash": "51e04dbeb12eb3c0e1387068be7629c79a2f7aa3f7cd5360ae4b5473136f0fc8",
+            "status": "reviewed-replacement"
+          },
+          "metadata.socialTitle": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "head:meta:property:og:title",
+            "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "status": "explicit-catalog-alias"
+          },
+          "metadata.title": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "head:title",
+            "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "status": "explicit-catalog-alias"
+          },
+          "metadata.twitterDescription": {
+            "reviewedSourceHash": "51e04dbeb12eb3c0e1387068be7629c79a2f7aa3f7cd5360ae4b5473136f0fc8",
+            "status": "reviewed-replacement"
+          },
+          "metadata.twitterTitle": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "head:meta:name:twitter:title",
+            "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.accounts.body": {
+            "reviewedSourceHash": "f81b1d0f20b34556dde299585e515d652266e222acf0aeb1dfab578bc496ac90",
+            "status": "reviewed-replacement"
+          },
+          "sections.accounts.title": {
+            "reviewedSourceHash": "6bd79b7e7d961a1463b5910e47cb973daa1d7a5fe67fcb3deef83298ae15d421",
+            "status": "reviewed-replacement"
+          },
+          "sections.collection.body": {
+            "reviewedSourceHash": "3d768176144c4699d2cfb9d2176c8255cf46c33d7befde73db4ef8aeb8d35188",
+            "status": "reviewed-replacement"
+          },
+          "sections.collection.title": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+            "reviewedSourceHash": "bef04e58c3f6e2505a8e57cac0bca3c7c700952a2a4032a879bafcd2e99c9bb6",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.contact.abiassiLabel": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:0",
+            "reviewedSourceHash": "19ebecf85239d19c75a1d5dc737d9afe820568f4a950a3b26e85d00c93261931",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.contact.backLink": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:a.text-sm.font-semibold:ctx:link:pos:0",
+            "reviewedSourceHash": "a8e75b814e600400a66751578855d1f1148fbf3d59ac19b3f2e241932a1f8c5b",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.contact.darkmatterLabel": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:1",
+            "reviewedSourceHash": "46d9902e7bdf4e44566ba128ac4d2a0ed7f68f5ef925e9968d5574391ce16c79",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.contact.intro": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:p.mt-3:ctx:p:pos:6",
+            "reviewedSourceHash": "dbe73cbdc31d29a8b305099d530bdbd328ec14c5aaae5beab14e4b3986f6de1a",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.contact.title": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:6",
+            "reviewedSourceHash": "2b5c3d26721ae9c350cf3009318b626f0fc8a90b4a2ac0ca8099c05aa849282e",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.deletion.action": {
+            "reviewedSourceHash": "8a17ab9433bbc3f1b4ba75ca3cb8e86652d40589e8ec51f69eb93aadb94e4fbe",
+            "status": "reviewed-replacement"
+          },
+          "sections.deletion.afterAction": {
+            "reviewedSourceHash": "a50d32b28113e9cbbb454c0a9b046943af40137ec7e337459e4cf1c6f695c17a",
+            "status": "reviewed-replacement"
+          },
+          "sections.deletion.beforeAction": {
+            "reviewedSourceHash": "bd4e84e40d3705795a441f73eb524bb7908958ece94b3c1f21cc20d3275cd648",
+            "status": "reviewed-replacement"
+          },
+          "sections.deletion.title": {
+            "reviewedSourceHash": "43e623b4b0a31d446e48e09b2407a2713805c67ccd532345df84f60dc81a717f",
+            "status": "reviewed-replacement"
+          },
+          "sections.device.body": {
+            "placementId": "3e3145d4-5921-4996-938d-75690c554220",
+            "reviewedSourceHash": "4595b885ab1b539a4bab43628e1a169be813f7cbbbd352772500495abfed9f65",
+            "status": "reviewed-gap"
+          },
+          "sections.device.title": {
+            "placementId": "b6e7325c-d55d-4fed-9967-f9f460f05b46",
+            "reviewedSourceHash": "5c99c329e170834e3acb8af54691f3c95f065489c02573e55e6f2218161d63c7",
+            "status": "reviewed-gap"
+          },
+          "sections.thirdParty.body": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:p.mt-3:ctx:p:pos:5",
+            "reviewedSourceHash": "1acb759ed5a85713e094fbdd4e58ad41f226433035a6f8c5e05420316a26e854",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.thirdParty.title": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:5",
+            "reviewedSourceHash": "f4c0f0ab2af419afc9c23a49e3f8049d89fc30f1c83d2c77d3a4b6ff0d7c5db1",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.useAndShare.body": {
+            "reviewedSourceHash": "0daed4c2d3288a4f849c1f461371f6d675a8fd505ff81104d673f7b3d82be2a9",
+            "status": "reviewed-replacement"
+          },
+          "sections.useAndShare.title": {
+            "reviewedSourceHash": "2cd18c6e98edb2ef9724e84edb8ae546422623d6236bf2e8c8d2976e95f8857b",
+            "status": "reviewed-replacement"
+          }
+        },
+        "pt-br": {
+          "breadcrumb.current": {
+            "reviewedSourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+            "sourceMessagePath": "hero.title",
+            "status": "semantic-mirror"
+          },
+          "breadcrumb.home": {
+            "catalogRoute": "/languages",
+            "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+            "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+            "status": "explicit-catalog-alias"
+          },
+          "hero.eyebrow": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+            "reviewedSourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+            "status": "explicit-catalog-alias"
+          },
+          "hero.intro": {
+            "reviewedSourceHash": "c84e3d013a80da579cc36b418f037d9db4e7a87bd12af9756e2980430eba7904",
+            "status": "reviewed-replacement"
+          },
+          "hero.lastUpdated": {
+            "placementId": "a0101b73-09e7-45ff-a603-61599e530e96",
+            "reviewedSourceHash": "1b70573e21817810dcb159db9a98b3fe1bddf07b05905a383ab2153b863a2bca",
+            "status": "reviewed-gap"
+          },
+          "hero.title": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+            "reviewedSourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+            "status": "explicit-catalog-alias"
+          },
+          "metadata.description": {
+            "reviewedSourceHash": "b84b9a07f0434762b88e79f2638c05c15bcb908bf7642ffeb5e2dd5ea793cea5",
+            "status": "reviewed-replacement"
+          },
+          "metadata.imageAlt": {
+            "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "sourceMessagePath": "metadata.socialTitle",
+            "status": "semantic-mirror"
+          },
+          "metadata.socialDescription": {
+            "reviewedSourceHash": "51e04dbeb12eb3c0e1387068be7629c79a2f7aa3f7cd5360ae4b5473136f0fc8",
+            "status": "reviewed-replacement"
+          },
+          "metadata.socialTitle": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "head:meta:property:og:title",
+            "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "status": "explicit-catalog-alias"
+          },
+          "metadata.title": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "head:title",
+            "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "status": "explicit-catalog-alias"
+          },
+          "metadata.twitterDescription": {
+            "reviewedSourceHash": "51e04dbeb12eb3c0e1387068be7629c79a2f7aa3f7cd5360ae4b5473136f0fc8",
+            "status": "reviewed-replacement"
+          },
+          "metadata.twitterTitle": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "head:meta:name:twitter:title",
+            "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.accounts.body": {
+            "reviewedSourceHash": "f81b1d0f20b34556dde299585e515d652266e222acf0aeb1dfab578bc496ac90",
+            "status": "reviewed-replacement"
+          },
+          "sections.accounts.title": {
+            "reviewedSourceHash": "6bd79b7e7d961a1463b5910e47cb973daa1d7a5fe67fcb3deef83298ae15d421",
+            "status": "reviewed-replacement"
+          },
+          "sections.collection.body": {
+            "reviewedSourceHash": "3d768176144c4699d2cfb9d2176c8255cf46c33d7befde73db4ef8aeb8d35188",
+            "status": "reviewed-replacement"
+          },
+          "sections.collection.title": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+            "reviewedSourceHash": "bef04e58c3f6e2505a8e57cac0bca3c7c700952a2a4032a879bafcd2e99c9bb6",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.contact.abiassiLabel": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:0",
+            "reviewedSourceHash": "19ebecf85239d19c75a1d5dc737d9afe820568f4a950a3b26e85d00c93261931",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.contact.backLink": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:a.text-sm.font-semibold:ctx:link:pos:0",
+            "reviewedSourceHash": "a8e75b814e600400a66751578855d1f1148fbf3d59ac19b3f2e241932a1f8c5b",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.contact.darkmatterLabel": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:1",
+            "reviewedSourceHash": "46d9902e7bdf4e44566ba128ac4d2a0ed7f68f5ef925e9968d5574391ce16c79",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.contact.intro": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:p.mt-3:ctx:p:pos:6",
+            "reviewedSourceHash": "dbe73cbdc31d29a8b305099d530bdbd328ec14c5aaae5beab14e4b3986f6de1a",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.contact.title": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:6",
+            "reviewedSourceHash": "2b5c3d26721ae9c350cf3009318b626f0fc8a90b4a2ac0ca8099c05aa849282e",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.deletion.action": {
+            "reviewedSourceHash": "8a17ab9433bbc3f1b4ba75ca3cb8e86652d40589e8ec51f69eb93aadb94e4fbe",
+            "status": "reviewed-replacement"
+          },
+          "sections.deletion.afterAction": {
+            "reviewedSourceHash": "a50d32b28113e9cbbb454c0a9b046943af40137ec7e337459e4cf1c6f695c17a",
+            "status": "reviewed-replacement"
+          },
+          "sections.deletion.beforeAction": {
+            "reviewedSourceHash": "bd4e84e40d3705795a441f73eb524bb7908958ece94b3c1f21cc20d3275cd648",
+            "status": "reviewed-replacement"
+          },
+          "sections.deletion.title": {
+            "reviewedSourceHash": "43e623b4b0a31d446e48e09b2407a2713805c67ccd532345df84f60dc81a717f",
+            "status": "reviewed-replacement"
+          },
+          "sections.device.body": {
+            "placementId": "3e3145d4-5921-4996-938d-75690c554220",
+            "reviewedSourceHash": "4595b885ab1b539a4bab43628e1a169be813f7cbbbd352772500495abfed9f65",
+            "status": "reviewed-gap"
+          },
+          "sections.device.title": {
+            "placementId": "b6e7325c-d55d-4fed-9967-f9f460f05b46",
+            "reviewedSourceHash": "5c99c329e170834e3acb8af54691f3c95f065489c02573e55e6f2218161d63c7",
+            "status": "reviewed-gap"
+          },
+          "sections.thirdParty.body": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:p.mt-3:ctx:p:pos:5",
+            "reviewedSourceHash": "1acb759ed5a85713e094fbdd4e58ad41f226433035a6f8c5e05420316a26e854",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.thirdParty.title": {
+            "catalogRoute": "/privacy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:5",
+            "reviewedSourceHash": "f4c0f0ab2af419afc9c23a49e3f8049d89fc30f1c83d2c77d3a4b6ff0d7c5db1",
+            "status": "explicit-catalog-alias"
+          },
+          "sections.useAndShare.body": {
+            "reviewedSourceHash": "0daed4c2d3288a4f849c1f461371f6d675a8fd505ff81104d673f7b3d82be2a9",
+            "status": "reviewed-replacement"
+          },
+          "sections.useAndShare.title": {
+            "reviewedSourceHash": "2cd18c6e98edb2ef9724e84edb8ae546422623d6236bf2e8c8d2976e95f8857b",
+            "status": "reviewed-replacement"
+          }
+        }
+      }
+    },
+    "support": {
+      "locales": {
+        "de-de": {
+          "backLink": {
+            "catalogRoute": "/support",
+            "occurrenceKey": "sel:a.text-sm.font-semibold:ctx:link:pos:0",
+            "reviewedSourceHash": "a8e75b814e600400a66751578855d1f1148fbf3d59ac19b3f2e241932a1f8c5b",
+            "status": "explicit-catalog-alias"
+          },
+          "breadcrumb.current": {
+            "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+            "sourceMessagePath": "hero.title",
+            "status": "semantic-mirror"
+          },
+          "breadcrumb.home": {
+            "catalogRoute": "/languages",
+            "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+            "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+            "status": "explicit-catalog-alias"
+          },
+          "commonQuestions.account.answer": {
+            "placementId": "7ade7672-799a-4eae-9e4f-c7465c6e5af0",
+            "reviewedSourceHash": "bdef5efe180d8adc9c680c7a8d848e0a4eaef730efc28f355f4a83f98454c6ac",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.account.question": {
+            "placementId": "afdac9ef-82f4-47f0-b983-073f5d6e413d",
+            "reviewedSourceHash": "d35bfd4806eda1929cb0313e714b98a8e649a532e0fa19d18912ec7916affb16",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.audio.answer": {
+            "placementId": "22bce113-2784-4abd-96e0-1ed37f327ba6",
+            "reviewedSourceHash": "8aad8aa45ee9edf4505eff4ff0ecb783696fc750f068b1d208c8d3381052f3ed",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.audio.question": {
+            "placementId": "1a82ab8e-903e-4138-81b2-ab034bc1e747",
+            "reviewedSourceHash": "4347054785c47a6ad782f574d9c59a02afa866fd89cde0e2bab8d82d40dbd28b",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.data.bodyAfterLink": {
+            "placementId": "01081371-2f39-411c-9179-dc8fdccc7816",
+            "reviewedSourceHash": "28e19c6e69c7a2aa071951dda3ff0a11ca178e3fb295dae8d6ed7dcc994434a4",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.data.bodyBeforeLink": {
+            "placementId": "7ad4405c-8060-4a6e-b446-4425ebf000a0",
+            "reviewedSourceHash": "5c977dfd6fa85d81d37f0a3e2e8a2f6d04cf904c90f189981dcabba7374f495f",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.data.linkLabel": {
+            "placementId": "072f0df5-eba9-4f73-9047-d76025d65855",
+            "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.data.question": {
+            "placementId": "bccdd27c-04c6-4a84-89b3-39c449846a24",
+            "reviewedSourceHash": "925edc61b511165e785699cb26e89c5c3b008eb2a6d96e0c2c2f2a05f6a3b57e",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.deletion.action": {
+            "reviewedSourceHash": "8a17ab9433bbc3f1b4ba75ca3cb8e86652d40589e8ec51f69eb93aadb94e4fbe",
+            "status": "reviewed-replacement"
+          },
+          "commonQuestions.deletion.afterAction": {
+            "reviewedSourceHash": "cabe7ea15d9592fe2f32f577e0f5c1d51f2489609953fdadf3f9bc084517ea97",
+            "status": "reviewed-replacement"
+          },
+          "commonQuestions.deletion.beforeAction": {
+            "reviewedSourceHash": "77e79a722a22b3f564091cee5ac3717b15ffc07fd2a54a1aff0c8b6db4ce8161",
+            "status": "reviewed-replacement"
+          },
+          "commonQuestions.deletion.question": {
+            "placementId": "ba9ea446-5c5e-49b6-8cf1-9903e65c905f",
+            "reviewedSourceHash": "39c9658206ff45cf1d86a41957dafa63022309b2a3b041d5c3b02c47d05693b7",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.medical.answer": {
+            "placementId": "1e4755bb-5696-4921-bb11-e7d5bef05d5b",
+            "reviewedSourceHash": "8f0b9d3dc7a3f4977950d485f0f5e0a54ae4ce5cb4e9219b3a1bee51a6cf049f",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.medical.question": {
+            "placementId": "5212352b-04e6-4882-a9a5-eb15fb29b335",
+            "reviewedSourceHash": "d797bcc201cf8ec32456d7d23df6575fe8f3836cf104ff6681c81cca4019ef0a",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.title": {
+            "catalogRoute": "/support",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
+            "reviewedSourceHash": "dfb8a3d41335746f8b5879f9c3a372ecfa4d1e7b6495d7376f335084fa3c46f2",
+            "status": "explicit-catalog-alias"
+          },
+          "contact.darkmatterLabel": {
+            "catalogRoute": "/support",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:1",
+            "reviewedSourceHash": "46d9902e7bdf4e44566ba128ac4d2a0ed7f68f5ef925e9968d5574391ce16c79",
+            "status": "explicit-catalog-alias"
+          },
+          "contact.emailAddress": {
+            "placementId": "3a4416fd-1a0e-4b5c-87d2-8fd6fb8b282a",
+            "reviewedSourceHash": "4a0fa35ee26d21cf99e3ad76b6a67edd0855141418846ba61a1de7a8f64e8bdb",
+            "status": "reviewed-gap"
+          },
+          "contact.emailAfter": {
+            "placementId": "7d9f25ea-0f02-4030-9acb-fac55f37ded3",
+            "reviewedSourceHash": "72d41a7625465584e816ae266b1d08548eaa227ef4c9fd07a9a5c128386917a7",
+            "status": "reviewed-gap"
+          },
+          "contact.emailBefore": {
+            "placementId": "929ea4d5-3ade-4fe9-9620-1f211d8e095d",
+            "reviewedSourceHash": "530783f5271b83853ee3215bb9ec7ea82beddfb16a504933241677e964d28b7a",
+            "status": "reviewed-gap"
+          },
+          "contact.teamBefore": {
+            "placementId": "d283a3f2-fe15-47c0-adb3-67328923a49d",
+            "reviewedSourceHash": "2ee2340f93d5b8323ca6cc171120a2ea6e755598435ddd804cdb22bf668cc968",
+            "status": "reviewed-gap"
+          },
+          "contact.title": {
+            "catalogRoute": "/support",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+            "reviewedSourceHash": "2b5c3d26721ae9c350cf3009318b626f0fc8a90b4a2ac0ca8099c05aa849282e",
+            "status": "explicit-catalog-alias"
+          },
+          "hero.eyebrow": {
+            "catalogRoute": "/support",
+            "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+            "reviewedSourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+            "status": "explicit-catalog-alias"
+          },
+          "hero.intro": {
+            "placementId": "28e3eb25-5d02-481d-bfd0-c60e4e04f0b7",
+            "reviewedSourceHash": "70592ed23fa3ad55eb9ecc4c06147c197a6c2024a6fb393670729471927163a1",
+            "status": "reviewed-gap"
+          },
+          "hero.title": {
+            "placementId": "8889de0b-16a4-49d2-bd0b-b9ff6c612990",
+            "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+            "status": "reviewed-gap"
+          },
+          "metadata.description": {
+            "placementId": "8cffeadb-3b3e-4117-a33b-40a92d653a6b",
+            "reviewedSourceHash": "f220b2117712cce5866a0b6c7aa1d5c0b3fc6aa6be5b21454bddadb043b7bf20",
+            "status": "reviewed-gap"
+          },
+          "metadata.imageAlt": {
+            "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+            "sourceMessagePath": "hero.title",
+            "status": "semantic-mirror"
+          },
+          "metadata.socialDescription": {
+            "placementId": "04969818-b686-4339-a71f-260fc2be4ac2",
+            "reviewedSourceHash": "511bd2e8ed543474a1ceb59f6e614994e53581443362f8f8eed5ab0cec57bed9",
+            "status": "reviewed-gap"
+          },
+          "metadata.socialTitle": {
+            "placementId": "c105bc14-0f9b-48c9-8775-e1a569730bdb",
+            "reviewedSourceHash": "77162b9de440ee52f748c5bf7bccbe7f6030cc5503cfaa27cf27c10f2e1d7b5f",
+            "status": "reviewed-gap"
+          },
+          "metadata.title": {
+            "placementId": "310bb676-7683-47b2-b03b-b5b836b2cd4a",
+            "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+            "status": "reviewed-gap"
+          },
+          "metadata.twitterDescription": {
+            "placementId": "852cc707-ec5e-416b-91f4-fb11e1256fb5",
+            "reviewedSourceHash": "511bd2e8ed543474a1ceb59f6e614994e53581443362f8f8eed5ab0cec57bed9",
+            "status": "reviewed-gap"
+          },
+          "metadata.twitterTitle": {
+            "placementId": "b436f8d0-155c-4dad-b7a9-f94cc9f9d537",
+            "reviewedSourceHash": "77162b9de440ee52f748c5bf7bccbe7f6030cc5503cfaa27cf27c10f2e1d7b5f",
+            "status": "reviewed-gap"
+          },
+          "safety.body": {
+            "placementId": "91f1a01b-907d-4ab4-85aa-41d79e794ea1",
+            "reviewedSourceHash": "e9bdc07f1dcb6d04db2b8b49fc28e1563e0ea2b4a49cb7476de74cbff32a0a03",
+            "status": "reviewed-gap"
+          },
+          "safety.title": {
+            "placementId": "498a679c-4e30-42cb-8b67-5fa65c33a46b",
+            "reviewedSourceHash": "c972053617c5412086293cc63ece831d4731e1e488fe412755702f85f26da7c8",
+            "status": "reviewed-gap"
+          }
+        },
+        "es-es": {
+          "backLink": {
+            "catalogRoute": "/support",
+            "occurrenceKey": "sel:a.text-sm.font-semibold:ctx:link:pos:0",
+            "reviewedSourceHash": "a8e75b814e600400a66751578855d1f1148fbf3d59ac19b3f2e241932a1f8c5b",
+            "status": "explicit-catalog-alias"
+          },
+          "breadcrumb.current": {
+            "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+            "sourceMessagePath": "hero.title",
+            "status": "semantic-mirror"
+          },
+          "breadcrumb.home": {
+            "catalogRoute": "/languages",
+            "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+            "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+            "status": "explicit-catalog-alias"
+          },
+          "commonQuestions.account.answer": {
+            "placementId": "7ade7672-799a-4eae-9e4f-c7465c6e5af0",
+            "reviewedSourceHash": "bdef5efe180d8adc9c680c7a8d848e0a4eaef730efc28f355f4a83f98454c6ac",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.account.question": {
+            "placementId": "afdac9ef-82f4-47f0-b983-073f5d6e413d",
+            "reviewedSourceHash": "d35bfd4806eda1929cb0313e714b98a8e649a532e0fa19d18912ec7916affb16",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.audio.answer": {
+            "placementId": "22bce113-2784-4abd-96e0-1ed37f327ba6",
+            "reviewedSourceHash": "8aad8aa45ee9edf4505eff4ff0ecb783696fc750f068b1d208c8d3381052f3ed",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.audio.question": {
+            "placementId": "1a82ab8e-903e-4138-81b2-ab034bc1e747",
+            "reviewedSourceHash": "4347054785c47a6ad782f574d9c59a02afa866fd89cde0e2bab8d82d40dbd28b",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.data.bodyAfterLink": {
+            "placementId": "01081371-2f39-411c-9179-dc8fdccc7816",
+            "reviewedSourceHash": "28e19c6e69c7a2aa071951dda3ff0a11ca178e3fb295dae8d6ed7dcc994434a4",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.data.bodyBeforeLink": {
+            "placementId": "7ad4405c-8060-4a6e-b446-4425ebf000a0",
+            "reviewedSourceHash": "5c977dfd6fa85d81d37f0a3e2e8a2f6d04cf904c90f189981dcabba7374f495f",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.data.linkLabel": {
+            "placementId": "072f0df5-eba9-4f73-9047-d76025d65855",
+            "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.data.question": {
+            "placementId": "bccdd27c-04c6-4a84-89b3-39c449846a24",
+            "reviewedSourceHash": "925edc61b511165e785699cb26e89c5c3b008eb2a6d96e0c2c2f2a05f6a3b57e",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.deletion.action": {
+            "reviewedSourceHash": "8a17ab9433bbc3f1b4ba75ca3cb8e86652d40589e8ec51f69eb93aadb94e4fbe",
+            "status": "reviewed-replacement"
+          },
+          "commonQuestions.deletion.afterAction": {
+            "reviewedSourceHash": "cabe7ea15d9592fe2f32f577e0f5c1d51f2489609953fdadf3f9bc084517ea97",
+            "status": "reviewed-replacement"
+          },
+          "commonQuestions.deletion.beforeAction": {
+            "reviewedSourceHash": "77e79a722a22b3f564091cee5ac3717b15ffc07fd2a54a1aff0c8b6db4ce8161",
+            "status": "reviewed-replacement"
+          },
+          "commonQuestions.deletion.question": {
+            "placementId": "ba9ea446-5c5e-49b6-8cf1-9903e65c905f",
+            "reviewedSourceHash": "39c9658206ff45cf1d86a41957dafa63022309b2a3b041d5c3b02c47d05693b7",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.medical.answer": {
+            "placementId": "1e4755bb-5696-4921-bb11-e7d5bef05d5b",
+            "reviewedSourceHash": "8f0b9d3dc7a3f4977950d485f0f5e0a54ae4ce5cb4e9219b3a1bee51a6cf049f",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.medical.question": {
+            "placementId": "5212352b-04e6-4882-a9a5-eb15fb29b335",
+            "reviewedSourceHash": "d797bcc201cf8ec32456d7d23df6575fe8f3836cf104ff6681c81cca4019ef0a",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.title": {
+            "catalogRoute": "/support",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
+            "reviewedSourceHash": "dfb8a3d41335746f8b5879f9c3a372ecfa4d1e7b6495d7376f335084fa3c46f2",
+            "status": "explicit-catalog-alias"
+          },
+          "contact.darkmatterLabel": {
+            "catalogRoute": "/support",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:1",
+            "reviewedSourceHash": "46d9902e7bdf4e44566ba128ac4d2a0ed7f68f5ef925e9968d5574391ce16c79",
+            "status": "explicit-catalog-alias"
+          },
+          "contact.emailAddress": {
+            "placementId": "3a4416fd-1a0e-4b5c-87d2-8fd6fb8b282a",
+            "reviewedSourceHash": "4a0fa35ee26d21cf99e3ad76b6a67edd0855141418846ba61a1de7a8f64e8bdb",
+            "status": "reviewed-gap"
+          },
+          "contact.emailAfter": {
+            "placementId": "7d9f25ea-0f02-4030-9acb-fac55f37ded3",
+            "reviewedSourceHash": "72d41a7625465584e816ae266b1d08548eaa227ef4c9fd07a9a5c128386917a7",
+            "status": "reviewed-gap"
+          },
+          "contact.emailBefore": {
+            "placementId": "929ea4d5-3ade-4fe9-9620-1f211d8e095d",
+            "reviewedSourceHash": "530783f5271b83853ee3215bb9ec7ea82beddfb16a504933241677e964d28b7a",
+            "status": "reviewed-gap"
+          },
+          "contact.teamBefore": {
+            "placementId": "d283a3f2-fe15-47c0-adb3-67328923a49d",
+            "reviewedSourceHash": "2ee2340f93d5b8323ca6cc171120a2ea6e755598435ddd804cdb22bf668cc968",
+            "status": "reviewed-gap"
+          },
+          "contact.title": {
+            "catalogRoute": "/support",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+            "reviewedSourceHash": "2b5c3d26721ae9c350cf3009318b626f0fc8a90b4a2ac0ca8099c05aa849282e",
+            "status": "explicit-catalog-alias"
+          },
+          "hero.eyebrow": {
+            "catalogRoute": "/support",
+            "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+            "reviewedSourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+            "status": "explicit-catalog-alias"
+          },
+          "hero.intro": {
+            "placementId": "28e3eb25-5d02-481d-bfd0-c60e4e04f0b7",
+            "reviewedSourceHash": "70592ed23fa3ad55eb9ecc4c06147c197a6c2024a6fb393670729471927163a1",
+            "status": "reviewed-gap"
+          },
+          "hero.title": {
+            "placementId": "8889de0b-16a4-49d2-bd0b-b9ff6c612990",
+            "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+            "status": "reviewed-gap"
+          },
+          "metadata.description": {
+            "placementId": "8cffeadb-3b3e-4117-a33b-40a92d653a6b",
+            "reviewedSourceHash": "f220b2117712cce5866a0b6c7aa1d5c0b3fc6aa6be5b21454bddadb043b7bf20",
+            "status": "reviewed-gap"
+          },
+          "metadata.imageAlt": {
+            "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+            "sourceMessagePath": "hero.title",
+            "status": "semantic-mirror"
+          },
+          "metadata.socialDescription": {
+            "placementId": "04969818-b686-4339-a71f-260fc2be4ac2",
+            "reviewedSourceHash": "511bd2e8ed543474a1ceb59f6e614994e53581443362f8f8eed5ab0cec57bed9",
+            "status": "reviewed-gap"
+          },
+          "metadata.socialTitle": {
+            "placementId": "c105bc14-0f9b-48c9-8775-e1a569730bdb",
+            "reviewedSourceHash": "77162b9de440ee52f748c5bf7bccbe7f6030cc5503cfaa27cf27c10f2e1d7b5f",
+            "status": "reviewed-gap"
+          },
+          "metadata.title": {
+            "placementId": "310bb676-7683-47b2-b03b-b5b836b2cd4a",
+            "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+            "status": "reviewed-gap"
+          },
+          "metadata.twitterDescription": {
+            "placementId": "852cc707-ec5e-416b-91f4-fb11e1256fb5",
+            "reviewedSourceHash": "511bd2e8ed543474a1ceb59f6e614994e53581443362f8f8eed5ab0cec57bed9",
+            "status": "reviewed-gap"
+          },
+          "metadata.twitterTitle": {
+            "placementId": "b436f8d0-155c-4dad-b7a9-f94cc9f9d537",
+            "reviewedSourceHash": "77162b9de440ee52f748c5bf7bccbe7f6030cc5503cfaa27cf27c10f2e1d7b5f",
+            "status": "reviewed-gap"
+          },
+          "safety.body": {
+            "placementId": "91f1a01b-907d-4ab4-85aa-41d79e794ea1",
+            "reviewedSourceHash": "e9bdc07f1dcb6d04db2b8b49fc28e1563e0ea2b4a49cb7476de74cbff32a0a03",
+            "status": "reviewed-gap"
+          },
+          "safety.title": {
+            "placementId": "498a679c-4e30-42cb-8b67-5fa65c33a46b",
+            "reviewedSourceHash": "c972053617c5412086293cc63ece831d4731e1e488fe412755702f85f26da7c8",
+            "status": "reviewed-gap"
+          }
+        },
+        "fr-fr": {
+          "backLink": {
+            "catalogRoute": "/support",
+            "occurrenceKey": "sel:a.text-sm.font-semibold:ctx:link:pos:0",
+            "reviewedSourceHash": "a8e75b814e600400a66751578855d1f1148fbf3d59ac19b3f2e241932a1f8c5b",
+            "status": "explicit-catalog-alias"
+          },
+          "breadcrumb.current": {
+            "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+            "sourceMessagePath": "hero.title",
+            "status": "semantic-mirror"
+          },
+          "breadcrumb.home": {
+            "catalogRoute": "/languages",
+            "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+            "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+            "status": "explicit-catalog-alias"
+          },
+          "commonQuestions.account.answer": {
+            "placementId": "7ade7672-799a-4eae-9e4f-c7465c6e5af0",
+            "reviewedSourceHash": "bdef5efe180d8adc9c680c7a8d848e0a4eaef730efc28f355f4a83f98454c6ac",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.account.question": {
+            "placementId": "afdac9ef-82f4-47f0-b983-073f5d6e413d",
+            "reviewedSourceHash": "d35bfd4806eda1929cb0313e714b98a8e649a532e0fa19d18912ec7916affb16",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.audio.answer": {
+            "placementId": "22bce113-2784-4abd-96e0-1ed37f327ba6",
+            "reviewedSourceHash": "8aad8aa45ee9edf4505eff4ff0ecb783696fc750f068b1d208c8d3381052f3ed",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.audio.question": {
+            "placementId": "1a82ab8e-903e-4138-81b2-ab034bc1e747",
+            "reviewedSourceHash": "4347054785c47a6ad782f574d9c59a02afa866fd89cde0e2bab8d82d40dbd28b",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.data.bodyAfterLink": {
+            "placementId": "01081371-2f39-411c-9179-dc8fdccc7816",
+            "reviewedSourceHash": "28e19c6e69c7a2aa071951dda3ff0a11ca178e3fb295dae8d6ed7dcc994434a4",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.data.bodyBeforeLink": {
+            "placementId": "7ad4405c-8060-4a6e-b446-4425ebf000a0",
+            "reviewedSourceHash": "5c977dfd6fa85d81d37f0a3e2e8a2f6d04cf904c90f189981dcabba7374f495f",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.data.linkLabel": {
+            "placementId": "072f0df5-eba9-4f73-9047-d76025d65855",
+            "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.data.question": {
+            "placementId": "bccdd27c-04c6-4a84-89b3-39c449846a24",
+            "reviewedSourceHash": "925edc61b511165e785699cb26e89c5c3b008eb2a6d96e0c2c2f2a05f6a3b57e",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.deletion.action": {
+            "reviewedSourceHash": "8a17ab9433bbc3f1b4ba75ca3cb8e86652d40589e8ec51f69eb93aadb94e4fbe",
+            "status": "reviewed-replacement"
+          },
+          "commonQuestions.deletion.afterAction": {
+            "reviewedSourceHash": "cabe7ea15d9592fe2f32f577e0f5c1d51f2489609953fdadf3f9bc084517ea97",
+            "status": "reviewed-replacement"
+          },
+          "commonQuestions.deletion.beforeAction": {
+            "reviewedSourceHash": "77e79a722a22b3f564091cee5ac3717b15ffc07fd2a54a1aff0c8b6db4ce8161",
+            "status": "reviewed-replacement"
+          },
+          "commonQuestions.deletion.question": {
+            "placementId": "ba9ea446-5c5e-49b6-8cf1-9903e65c905f",
+            "reviewedSourceHash": "39c9658206ff45cf1d86a41957dafa63022309b2a3b041d5c3b02c47d05693b7",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.medical.answer": {
+            "placementId": "1e4755bb-5696-4921-bb11-e7d5bef05d5b",
+            "reviewedSourceHash": "8f0b9d3dc7a3f4977950d485f0f5e0a54ae4ce5cb4e9219b3a1bee51a6cf049f",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.medical.question": {
+            "placementId": "5212352b-04e6-4882-a9a5-eb15fb29b335",
+            "reviewedSourceHash": "d797bcc201cf8ec32456d7d23df6575fe8f3836cf104ff6681c81cca4019ef0a",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.title": {
+            "catalogRoute": "/support",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
+            "reviewedSourceHash": "dfb8a3d41335746f8b5879f9c3a372ecfa4d1e7b6495d7376f335084fa3c46f2",
+            "status": "explicit-catalog-alias"
+          },
+          "contact.darkmatterLabel": {
+            "catalogRoute": "/support",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:1",
+            "reviewedSourceHash": "46d9902e7bdf4e44566ba128ac4d2a0ed7f68f5ef925e9968d5574391ce16c79",
+            "status": "explicit-catalog-alias"
+          },
+          "contact.emailAddress": {
+            "placementId": "3a4416fd-1a0e-4b5c-87d2-8fd6fb8b282a",
+            "reviewedSourceHash": "4a0fa35ee26d21cf99e3ad76b6a67edd0855141418846ba61a1de7a8f64e8bdb",
+            "status": "reviewed-gap"
+          },
+          "contact.emailAfter": {
+            "placementId": "7d9f25ea-0f02-4030-9acb-fac55f37ded3",
+            "reviewedSourceHash": "72d41a7625465584e816ae266b1d08548eaa227ef4c9fd07a9a5c128386917a7",
+            "status": "reviewed-gap"
+          },
+          "contact.emailBefore": {
+            "placementId": "929ea4d5-3ade-4fe9-9620-1f211d8e095d",
+            "reviewedSourceHash": "530783f5271b83853ee3215bb9ec7ea82beddfb16a504933241677e964d28b7a",
+            "status": "reviewed-gap"
+          },
+          "contact.teamBefore": {
+            "placementId": "d283a3f2-fe15-47c0-adb3-67328923a49d",
+            "reviewedSourceHash": "2ee2340f93d5b8323ca6cc171120a2ea6e755598435ddd804cdb22bf668cc968",
+            "status": "reviewed-gap"
+          },
+          "contact.title": {
+            "catalogRoute": "/support",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+            "reviewedSourceHash": "2b5c3d26721ae9c350cf3009318b626f0fc8a90b4a2ac0ca8099c05aa849282e",
+            "status": "explicit-catalog-alias"
+          },
+          "hero.eyebrow": {
+            "catalogRoute": "/support",
+            "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+            "reviewedSourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+            "status": "explicit-catalog-alias"
+          },
+          "hero.intro": {
+            "placementId": "28e3eb25-5d02-481d-bfd0-c60e4e04f0b7",
+            "reviewedSourceHash": "70592ed23fa3ad55eb9ecc4c06147c197a6c2024a6fb393670729471927163a1",
+            "status": "reviewed-gap"
+          },
+          "hero.title": {
+            "placementId": "8889de0b-16a4-49d2-bd0b-b9ff6c612990",
+            "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+            "status": "reviewed-gap"
+          },
+          "metadata.description": {
+            "placementId": "8cffeadb-3b3e-4117-a33b-40a92d653a6b",
+            "reviewedSourceHash": "f220b2117712cce5866a0b6c7aa1d5c0b3fc6aa6be5b21454bddadb043b7bf20",
+            "status": "reviewed-gap"
+          },
+          "metadata.imageAlt": {
+            "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+            "sourceMessagePath": "hero.title",
+            "status": "semantic-mirror"
+          },
+          "metadata.socialDescription": {
+            "placementId": "04969818-b686-4339-a71f-260fc2be4ac2",
+            "reviewedSourceHash": "511bd2e8ed543474a1ceb59f6e614994e53581443362f8f8eed5ab0cec57bed9",
+            "status": "reviewed-gap"
+          },
+          "metadata.socialTitle": {
+            "placementId": "c105bc14-0f9b-48c9-8775-e1a569730bdb",
+            "reviewedSourceHash": "77162b9de440ee52f748c5bf7bccbe7f6030cc5503cfaa27cf27c10f2e1d7b5f",
+            "status": "reviewed-gap"
+          },
+          "metadata.title": {
+            "placementId": "310bb676-7683-47b2-b03b-b5b836b2cd4a",
+            "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+            "status": "reviewed-gap"
+          },
+          "metadata.twitterDescription": {
+            "placementId": "852cc707-ec5e-416b-91f4-fb11e1256fb5",
+            "reviewedSourceHash": "511bd2e8ed543474a1ceb59f6e614994e53581443362f8f8eed5ab0cec57bed9",
+            "status": "reviewed-gap"
+          },
+          "metadata.twitterTitle": {
+            "placementId": "b436f8d0-155c-4dad-b7a9-f94cc9f9d537",
+            "reviewedSourceHash": "77162b9de440ee52f748c5bf7bccbe7f6030cc5503cfaa27cf27c10f2e1d7b5f",
+            "status": "reviewed-gap"
+          },
+          "safety.body": {
+            "placementId": "91f1a01b-907d-4ab4-85aa-41d79e794ea1",
+            "reviewedSourceHash": "e9bdc07f1dcb6d04db2b8b49fc28e1563e0ea2b4a49cb7476de74cbff32a0a03",
+            "status": "reviewed-gap"
+          },
+          "safety.title": {
+            "placementId": "498a679c-4e30-42cb-8b67-5fa65c33a46b",
+            "reviewedSourceHash": "c972053617c5412086293cc63ece831d4731e1e488fe412755702f85f26da7c8",
+            "status": "reviewed-gap"
+          }
+        },
+        "ja-jp": {
+          "backLink": {
+            "catalogRoute": "/support",
+            "occurrenceKey": "sel:a.text-sm.font-semibold:ctx:link:pos:0",
+            "reviewedSourceHash": "a8e75b814e600400a66751578855d1f1148fbf3d59ac19b3f2e241932a1f8c5b",
+            "status": "explicit-catalog-alias"
+          },
+          "breadcrumb.current": {
+            "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+            "sourceMessagePath": "hero.title",
+            "status": "semantic-mirror"
+          },
+          "breadcrumb.home": {
+            "catalogRoute": "/languages",
+            "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+            "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+            "status": "explicit-catalog-alias"
+          },
+          "commonQuestions.account.answer": {
+            "placementId": "7ade7672-799a-4eae-9e4f-c7465c6e5af0",
+            "reviewedSourceHash": "bdef5efe180d8adc9c680c7a8d848e0a4eaef730efc28f355f4a83f98454c6ac",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.account.question": {
+            "placementId": "afdac9ef-82f4-47f0-b983-073f5d6e413d",
+            "reviewedSourceHash": "d35bfd4806eda1929cb0313e714b98a8e649a532e0fa19d18912ec7916affb16",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.audio.answer": {
+            "placementId": "22bce113-2784-4abd-96e0-1ed37f327ba6",
+            "reviewedSourceHash": "8aad8aa45ee9edf4505eff4ff0ecb783696fc750f068b1d208c8d3381052f3ed",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.audio.question": {
+            "placementId": "1a82ab8e-903e-4138-81b2-ab034bc1e747",
+            "reviewedSourceHash": "4347054785c47a6ad782f574d9c59a02afa866fd89cde0e2bab8d82d40dbd28b",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.data.bodyAfterLink": {
+            "placementId": "01081371-2f39-411c-9179-dc8fdccc7816",
+            "reviewedSourceHash": "28e19c6e69c7a2aa071951dda3ff0a11ca178e3fb295dae8d6ed7dcc994434a4",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.data.bodyBeforeLink": {
+            "placementId": "7ad4405c-8060-4a6e-b446-4425ebf000a0",
+            "reviewedSourceHash": "5c977dfd6fa85d81d37f0a3e2e8a2f6d04cf904c90f189981dcabba7374f495f",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.data.linkLabel": {
+            "placementId": "072f0df5-eba9-4f73-9047-d76025d65855",
+            "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.data.question": {
+            "placementId": "bccdd27c-04c6-4a84-89b3-39c449846a24",
+            "reviewedSourceHash": "925edc61b511165e785699cb26e89c5c3b008eb2a6d96e0c2c2f2a05f6a3b57e",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.deletion.action": {
+            "reviewedSourceHash": "8a17ab9433bbc3f1b4ba75ca3cb8e86652d40589e8ec51f69eb93aadb94e4fbe",
+            "status": "reviewed-replacement"
+          },
+          "commonQuestions.deletion.afterAction": {
+            "reviewedSourceHash": "cabe7ea15d9592fe2f32f577e0f5c1d51f2489609953fdadf3f9bc084517ea97",
+            "status": "reviewed-replacement"
+          },
+          "commonQuestions.deletion.beforeAction": {
+            "reviewedSourceHash": "77e79a722a22b3f564091cee5ac3717b15ffc07fd2a54a1aff0c8b6db4ce8161",
+            "status": "reviewed-replacement"
+          },
+          "commonQuestions.deletion.question": {
+            "placementId": "ba9ea446-5c5e-49b6-8cf1-9903e65c905f",
+            "reviewedSourceHash": "39c9658206ff45cf1d86a41957dafa63022309b2a3b041d5c3b02c47d05693b7",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.medical.answer": {
+            "placementId": "1e4755bb-5696-4921-bb11-e7d5bef05d5b",
+            "reviewedSourceHash": "8f0b9d3dc7a3f4977950d485f0f5e0a54ae4ce5cb4e9219b3a1bee51a6cf049f",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.medical.question": {
+            "placementId": "5212352b-04e6-4882-a9a5-eb15fb29b335",
+            "reviewedSourceHash": "d797bcc201cf8ec32456d7d23df6575fe8f3836cf104ff6681c81cca4019ef0a",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.title": {
+            "catalogRoute": "/support",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
+            "reviewedSourceHash": "dfb8a3d41335746f8b5879f9c3a372ecfa4d1e7b6495d7376f335084fa3c46f2",
+            "status": "explicit-catalog-alias"
+          },
+          "contact.darkmatterLabel": {
+            "catalogRoute": "/support",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:1",
+            "reviewedSourceHash": "46d9902e7bdf4e44566ba128ac4d2a0ed7f68f5ef925e9968d5574391ce16c79",
+            "status": "explicit-catalog-alias"
+          },
+          "contact.emailAddress": {
+            "placementId": "3a4416fd-1a0e-4b5c-87d2-8fd6fb8b282a",
+            "reviewedSourceHash": "4a0fa35ee26d21cf99e3ad76b6a67edd0855141418846ba61a1de7a8f64e8bdb",
+            "status": "reviewed-gap"
+          },
+          "contact.emailAfter": {
+            "placementId": "7d9f25ea-0f02-4030-9acb-fac55f37ded3",
+            "reviewedSourceHash": "72d41a7625465584e816ae266b1d08548eaa227ef4c9fd07a9a5c128386917a7",
+            "status": "reviewed-gap"
+          },
+          "contact.emailBefore": {
+            "placementId": "929ea4d5-3ade-4fe9-9620-1f211d8e095d",
+            "reviewedSourceHash": "530783f5271b83853ee3215bb9ec7ea82beddfb16a504933241677e964d28b7a",
+            "status": "reviewed-gap"
+          },
+          "contact.teamBefore": {
+            "placementId": "d283a3f2-fe15-47c0-adb3-67328923a49d",
+            "reviewedSourceHash": "2ee2340f93d5b8323ca6cc171120a2ea6e755598435ddd804cdb22bf668cc968",
+            "status": "reviewed-gap"
+          },
+          "contact.title": {
+            "catalogRoute": "/support",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+            "reviewedSourceHash": "2b5c3d26721ae9c350cf3009318b626f0fc8a90b4a2ac0ca8099c05aa849282e",
+            "status": "explicit-catalog-alias"
+          },
+          "hero.eyebrow": {
+            "catalogRoute": "/support",
+            "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+            "reviewedSourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+            "status": "explicit-catalog-alias"
+          },
+          "hero.intro": {
+            "placementId": "28e3eb25-5d02-481d-bfd0-c60e4e04f0b7",
+            "reviewedSourceHash": "70592ed23fa3ad55eb9ecc4c06147c197a6c2024a6fb393670729471927163a1",
+            "status": "reviewed-gap"
+          },
+          "hero.title": {
+            "placementId": "8889de0b-16a4-49d2-bd0b-b9ff6c612990",
+            "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+            "status": "reviewed-gap"
+          },
+          "metadata.description": {
+            "placementId": "8cffeadb-3b3e-4117-a33b-40a92d653a6b",
+            "reviewedSourceHash": "f220b2117712cce5866a0b6c7aa1d5c0b3fc6aa6be5b21454bddadb043b7bf20",
+            "status": "reviewed-gap"
+          },
+          "metadata.imageAlt": {
+            "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+            "sourceMessagePath": "hero.title",
+            "status": "semantic-mirror"
+          },
+          "metadata.socialDescription": {
+            "placementId": "04969818-b686-4339-a71f-260fc2be4ac2",
+            "reviewedSourceHash": "511bd2e8ed543474a1ceb59f6e614994e53581443362f8f8eed5ab0cec57bed9",
+            "status": "reviewed-gap"
+          },
+          "metadata.socialTitle": {
+            "placementId": "c105bc14-0f9b-48c9-8775-e1a569730bdb",
+            "reviewedSourceHash": "77162b9de440ee52f748c5bf7bccbe7f6030cc5503cfaa27cf27c10f2e1d7b5f",
+            "status": "reviewed-gap"
+          },
+          "metadata.title": {
+            "placementId": "310bb676-7683-47b2-b03b-b5b836b2cd4a",
+            "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+            "status": "reviewed-gap"
+          },
+          "metadata.twitterDescription": {
+            "placementId": "852cc707-ec5e-416b-91f4-fb11e1256fb5",
+            "reviewedSourceHash": "511bd2e8ed543474a1ceb59f6e614994e53581443362f8f8eed5ab0cec57bed9",
+            "status": "reviewed-gap"
+          },
+          "metadata.twitterTitle": {
+            "placementId": "b436f8d0-155c-4dad-b7a9-f94cc9f9d537",
+            "reviewedSourceHash": "77162b9de440ee52f748c5bf7bccbe7f6030cc5503cfaa27cf27c10f2e1d7b5f",
+            "status": "reviewed-gap"
+          },
+          "safety.body": {
+            "placementId": "91f1a01b-907d-4ab4-85aa-41d79e794ea1",
+            "reviewedSourceHash": "e9bdc07f1dcb6d04db2b8b49fc28e1563e0ea2b4a49cb7476de74cbff32a0a03",
+            "status": "reviewed-gap"
+          },
+          "safety.title": {
+            "placementId": "498a679c-4e30-42cb-8b67-5fa65c33a46b",
+            "reviewedSourceHash": "c972053617c5412086293cc63ece831d4731e1e488fe412755702f85f26da7c8",
+            "status": "reviewed-gap"
+          }
+        },
+        "pt-br": {
+          "backLink": {
+            "catalogRoute": "/support",
+            "occurrenceKey": "sel:a.text-sm.font-semibold:ctx:link:pos:0",
+            "reviewedSourceHash": "a8e75b814e600400a66751578855d1f1148fbf3d59ac19b3f2e241932a1f8c5b",
+            "status": "explicit-catalog-alias"
+          },
+          "breadcrumb.current": {
+            "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+            "sourceMessagePath": "hero.title",
+            "status": "semantic-mirror"
+          },
+          "breadcrumb.home": {
+            "catalogRoute": "/languages",
+            "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+            "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+            "status": "explicit-catalog-alias"
+          },
+          "commonQuestions.account.answer": {
+            "placementId": "7ade7672-799a-4eae-9e4f-c7465c6e5af0",
+            "reviewedSourceHash": "bdef5efe180d8adc9c680c7a8d848e0a4eaef730efc28f355f4a83f98454c6ac",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.account.question": {
+            "placementId": "afdac9ef-82f4-47f0-b983-073f5d6e413d",
+            "reviewedSourceHash": "d35bfd4806eda1929cb0313e714b98a8e649a532e0fa19d18912ec7916affb16",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.audio.answer": {
+            "placementId": "22bce113-2784-4abd-96e0-1ed37f327ba6",
+            "reviewedSourceHash": "8aad8aa45ee9edf4505eff4ff0ecb783696fc750f068b1d208c8d3381052f3ed",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.audio.question": {
+            "placementId": "1a82ab8e-903e-4138-81b2-ab034bc1e747",
+            "reviewedSourceHash": "4347054785c47a6ad782f574d9c59a02afa866fd89cde0e2bab8d82d40dbd28b",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.data.bodyAfterLink": {
+            "placementId": "01081371-2f39-411c-9179-dc8fdccc7816",
+            "reviewedSourceHash": "28e19c6e69c7a2aa071951dda3ff0a11ca178e3fb295dae8d6ed7dcc994434a4",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.data.bodyBeforeLink": {
+            "placementId": "7ad4405c-8060-4a6e-b446-4425ebf000a0",
+            "reviewedSourceHash": "5c977dfd6fa85d81d37f0a3e2e8a2f6d04cf904c90f189981dcabba7374f495f",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.data.linkLabel": {
+            "placementId": "072f0df5-eba9-4f73-9047-d76025d65855",
+            "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.data.question": {
+            "placementId": "bccdd27c-04c6-4a84-89b3-39c449846a24",
+            "reviewedSourceHash": "925edc61b511165e785699cb26e89c5c3b008eb2a6d96e0c2c2f2a05f6a3b57e",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.deletion.action": {
+            "reviewedSourceHash": "8a17ab9433bbc3f1b4ba75ca3cb8e86652d40589e8ec51f69eb93aadb94e4fbe",
+            "status": "reviewed-replacement"
+          },
+          "commonQuestions.deletion.afterAction": {
+            "reviewedSourceHash": "cabe7ea15d9592fe2f32f577e0f5c1d51f2489609953fdadf3f9bc084517ea97",
+            "status": "reviewed-replacement"
+          },
+          "commonQuestions.deletion.beforeAction": {
+            "reviewedSourceHash": "77e79a722a22b3f564091cee5ac3717b15ffc07fd2a54a1aff0c8b6db4ce8161",
+            "status": "reviewed-replacement"
+          },
+          "commonQuestions.deletion.question": {
+            "placementId": "ba9ea446-5c5e-49b6-8cf1-9903e65c905f",
+            "reviewedSourceHash": "39c9658206ff45cf1d86a41957dafa63022309b2a3b041d5c3b02c47d05693b7",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.medical.answer": {
+            "placementId": "1e4755bb-5696-4921-bb11-e7d5bef05d5b",
+            "reviewedSourceHash": "8f0b9d3dc7a3f4977950d485f0f5e0a54ae4ce5cb4e9219b3a1bee51a6cf049f",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.medical.question": {
+            "placementId": "5212352b-04e6-4882-a9a5-eb15fb29b335",
+            "reviewedSourceHash": "d797bcc201cf8ec32456d7d23df6575fe8f3836cf104ff6681c81cca4019ef0a",
+            "status": "reviewed-gap"
+          },
+          "commonQuestions.title": {
+            "catalogRoute": "/support",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
+            "reviewedSourceHash": "dfb8a3d41335746f8b5879f9c3a372ecfa4d1e7b6495d7376f335084fa3c46f2",
+            "status": "explicit-catalog-alias"
+          },
+          "contact.darkmatterLabel": {
+            "catalogRoute": "/support",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:1",
+            "reviewedSourceHash": "46d9902e7bdf4e44566ba128ac4d2a0ed7f68f5ef925e9968d5574391ce16c79",
+            "status": "explicit-catalog-alias"
+          },
+          "contact.emailAddress": {
+            "placementId": "3a4416fd-1a0e-4b5c-87d2-8fd6fb8b282a",
+            "reviewedSourceHash": "4a0fa35ee26d21cf99e3ad76b6a67edd0855141418846ba61a1de7a8f64e8bdb",
+            "status": "reviewed-gap"
+          },
+          "contact.emailAfter": {
+            "placementId": "7d9f25ea-0f02-4030-9acb-fac55f37ded3",
+            "reviewedSourceHash": "72d41a7625465584e816ae266b1d08548eaa227ef4c9fd07a9a5c128386917a7",
+            "status": "reviewed-gap"
+          },
+          "contact.emailBefore": {
+            "placementId": "929ea4d5-3ade-4fe9-9620-1f211d8e095d",
+            "reviewedSourceHash": "530783f5271b83853ee3215bb9ec7ea82beddfb16a504933241677e964d28b7a",
+            "status": "reviewed-gap"
+          },
+          "contact.teamBefore": {
+            "placementId": "d283a3f2-fe15-47c0-adb3-67328923a49d",
+            "reviewedSourceHash": "2ee2340f93d5b8323ca6cc171120a2ea6e755598435ddd804cdb22bf668cc968",
+            "status": "reviewed-gap"
+          },
+          "contact.title": {
+            "catalogRoute": "/support",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+            "reviewedSourceHash": "2b5c3d26721ae9c350cf3009318b626f0fc8a90b4a2ac0ca8099c05aa849282e",
+            "status": "explicit-catalog-alias"
+          },
+          "hero.eyebrow": {
+            "catalogRoute": "/support",
+            "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+            "reviewedSourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+            "status": "explicit-catalog-alias"
+          },
+          "hero.intro": {
+            "placementId": "28e3eb25-5d02-481d-bfd0-c60e4e04f0b7",
+            "reviewedSourceHash": "70592ed23fa3ad55eb9ecc4c06147c197a6c2024a6fb393670729471927163a1",
+            "status": "reviewed-gap"
+          },
+          "hero.title": {
+            "placementId": "8889de0b-16a4-49d2-bd0b-b9ff6c612990",
+            "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+            "status": "reviewed-gap"
+          },
+          "metadata.description": {
+            "placementId": "8cffeadb-3b3e-4117-a33b-40a92d653a6b",
+            "reviewedSourceHash": "f220b2117712cce5866a0b6c7aa1d5c0b3fc6aa6be5b21454bddadb043b7bf20",
+            "status": "reviewed-gap"
+          },
+          "metadata.imageAlt": {
+            "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+            "sourceMessagePath": "hero.title",
+            "status": "semantic-mirror"
+          },
+          "metadata.socialDescription": {
+            "placementId": "04969818-b686-4339-a71f-260fc2be4ac2",
+            "reviewedSourceHash": "511bd2e8ed543474a1ceb59f6e614994e53581443362f8f8eed5ab0cec57bed9",
+            "status": "reviewed-gap"
+          },
+          "metadata.socialTitle": {
+            "placementId": "c105bc14-0f9b-48c9-8775-e1a569730bdb",
+            "reviewedSourceHash": "77162b9de440ee52f748c5bf7bccbe7f6030cc5503cfaa27cf27c10f2e1d7b5f",
+            "status": "reviewed-gap"
+          },
+          "metadata.title": {
+            "placementId": "310bb676-7683-47b2-b03b-b5b836b2cd4a",
+            "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+            "status": "reviewed-gap"
+          },
+          "metadata.twitterDescription": {
+            "placementId": "852cc707-ec5e-416b-91f4-fb11e1256fb5",
+            "reviewedSourceHash": "511bd2e8ed543474a1ceb59f6e614994e53581443362f8f8eed5ab0cec57bed9",
+            "status": "reviewed-gap"
+          },
+          "metadata.twitterTitle": {
+            "placementId": "b436f8d0-155c-4dad-b7a9-f94cc9f9d537",
+            "reviewedSourceHash": "77162b9de440ee52f748c5bf7bccbe7f6030cc5503cfaa27cf27c10f2e1d7b5f",
+            "status": "reviewed-gap"
+          },
+          "safety.body": {
+            "placementId": "91f1a01b-907d-4ab4-85aa-41d79e794ea1",
+            "reviewedSourceHash": "e9bdc07f1dcb6d04db2b8b49fc28e1563e0ea2b4a49cb7476de74cbff32a0a03",
+            "status": "reviewed-gap"
+          },
+          "safety.title": {
+            "placementId": "498a679c-4e30-42cb-8b67-5fa65c33a46b",
+            "reviewedSourceHash": "c972053617c5412086293cc63ece831d4731e1e488fe412755702f85f26da7c8",
+            "status": "reviewed-gap"
+          }
+        }
+      }
+    }
+  },
+  "schemaVersion": 1
+}

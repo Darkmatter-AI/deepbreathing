@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "reviewedSourceHash": "41b1c0787ba6580a2791ca9b194fdb3f350a59107e00555c6fbd9867d07ccc32",
+  "replacements": {
+    "metadata.description": {
+      "reason": "The preserved metadata descriptions were clipped in several locales; these reviewed values restore the complete source meaning.",
+      "translations": {
+        "de-de": "Fügen Sie Ihrer Website ein kostenloses interaktives Atemübungs-Widget hinzu. Wählen Sie aus 12 Mustern, darunter Box-Atmung, 4-7-8-Atmung und kohärente Atmung. Kopieren Sie den Einbettungscode und fügen Sie ihn in Ihr HTML ein.",
+        "es-es": "Añade un widget gratuito de ejercicios de respiración interactivos a tu web. Elige entre 12 patrones, como respiración cuadrada, 4-7-8 y respiración coherente. Copia el código de inserción y pégalo en tu HTML.",
+        "fr-fr": "Ajoutez gratuitement un widget interactif d’exercices de respiration à votre site. Choisissez parmi 12 modèles, dont la respiration carrée, 4-7-8 et la cohérence cardiaque. Copiez le code d’intégration et collez-le dans votre HTML.",
+        "ja-jp": "ウェブサイトに無料のインタラクティブな呼吸法ウィジェットを追加しましょう。ボックス呼吸、4-7-8呼吸法、コヒーレント呼吸など12種類のパターンから選べます。埋め込みコードをコピーしてHTMLに貼り付けてください。",
+        "pt-br": "Adicione um widget gratuito de exercícios de respiração interativos ao seu site. Escolha entre 12 padrões, incluindo respiração quadrada, 4-7-8 e respiração coerente. Copie o código de incorporação e cole no seu HTML."
+      }
+    },
+    "metadata.socialDescription": {
+      "reason": "The preserved Open Graph descriptions were clipped in several locales; these reviewed values restore the complete source meaning.",
+      "translations": {
+        "de-de": "Fügen Sie Ihrer Website ein kostenloses interaktives Atemübungs-Widget hinzu. Wählen Sie aus 12 Mustern, darunter Box-Atmung, 4-7-8-Atmung und kohärente Atmung. Kopieren Sie den Einbettungscode und fügen Sie ihn in Ihr HTML ein.",
+        "es-es": "Añade un widget gratuito de ejercicios de respiración interactivos a tu web. Elige entre 12 patrones, como respiración cuadrada, 4-7-8 y respiración coherente. Copia el código de inserción y pégalo en tu HTML.",
+        "fr-fr": "Ajoutez gratuitement un widget interactif d’exercices de respiration à votre site. Choisissez parmi 12 modèles, dont la respiration carrée, 4-7-8 et la cohérence cardiaque. Copiez le code d’intégration et collez-le dans votre HTML.",
+        "ja-jp": "ウェブサイトに無料のインタラクティブな呼吸法ウィジェットを追加しましょう。ボックス呼吸、4-7-8呼吸法、コヒーレント呼吸など12種類のパターンから選べます。埋め込みコードをコピーしてHTMLに貼り付けてください。",
+        "pt-br": "Adicione um widget gratuito de exercícios de respiração interativos ao seu site. Escolha entre 12 padrões, incluindo respiração quadrada, 4-7-8 e respiração coerente. Copie o código de incorporação e cole no seu HTML."
+      }
+    },
+    "metadata.twitterTitle": {
+      "reason": "The captured Twitter title predates the current page metadata; reuse the approved current Open Graph title translation.",
+      "translations": {
+        "de-de": "Kostenloses Atemübung Widget für Ihre Website einbetten",
+        "es-es": "Integra un widget de respiración gratis en tu web",
+        "fr-fr": "Intégrez une animation respiration sur votre site – Widget gratuit",
+        "ja-jp": "ウェブサイトに無料の呼吸法ウィジェットを埋め込みましょう",
+        "pt-br": "Widget grátis: animação de respiração para seu site"
+      }
+    },
+    "metadata.twitterDescription": {
+      "reason": "The captured Twitter description predates the current page metadata; reuse the approved current Open Graph description translation.",
+      "translations": {
+        "de-de": "Fügen Sie Ihrer Website ein kostenloses interaktives Atemübungs-Widget hinzu. Wählen Sie aus 12 Mustern, darunter Box-Atmung, 4-7-8-Atmung und kohärente Atmung. Kopieren Sie den Einbettungscode und fügen Sie ihn in Ihr HTML ein.",
+        "es-es": "Añade un widget gratuito de ejercicios de respiración interactivos a tu web. Elige entre 12 patrones, como respiración cuadrada, 4-7-8 y respiración coherente. Copia el código de inserción y pégalo en tu HTML.",
+        "fr-fr": "Ajoutez gratuitement un widget interactif d’exercices de respiration à votre site. Choisissez parmi 12 modèles, dont la respiration carrée, 4-7-8 et la cohérence cardiaque. Copiez le code d’intégration et collez-le dans votre HTML.",
+        "ja-jp": "ウェブサイトに無料のインタラクティブな呼吸法ウィジェットを追加しましょう。ボックス呼吸、4-7-8呼吸法、コヒーレント呼吸など12種類のパターンから選べます。埋め込みコードをコピーしてHTMLに貼り付けてください。",
+        "pt-br": "Adicione um widget gratuito de exercícios de respiração interativos ao seu site. Escolha entre 12 padrões, incluindo respiração quadrada, 4-7-8 e respiração coerente. Copie o código de incorporação e cole no seu HTML."
+      }
+    },
+    "generator.footer.about": {
+      "reason": "The preserved Japanese footer label leaked the English source; this reviewed replacement localizes the shared navigation label.",
+      "translations": {
+        "de-de": "Über uns",
+        "es-es": "Acerca de",
+        "fr-fr": "À propos",
+        "ja-jp": "概要",
+        "pt-br": "Sobre"
+      }
+    },
+    "metadata.imageAlt": {
+      "reason": "The current Open Graph image alt was added after the preservation snapshot.",
+      "translations": {
+        "de-de": "Kostenloses Widget zum Einbetten einer Atemübung",
+        "es-es": "Widget gratuito para integrar ejercicios de respiración",
+        "fr-fr": "Widget gratuit pour intégrer un exercice de respiration",
+        "ja-jp": "無料の呼吸エクササイズ埋め込みウィジェット",
+        "pt-br": "Widget gratuito para incorporar exercícios de respiração"
+      }
+    },
+    "generator.sound.title": {
+      "reason": "The Sound grouping heading was added after the preservation snapshot.",
+      "translations": {
+        "de-de": "Ton",
+        "es-es": "Sonido",
+        "fr-fr": "Son",
+        "ja-jp": "サウンド",
+        "pt-br": "Som"
+      }
+    },
+    "generator.preview.iframeTitleTemplate": {
+      "reason": "Only the default pattern's hydrated iframe title was captured; the native generator needs the same accessible title for every selected pattern.",
+      "translations": {
+        "de-de": "{pattern} Einbettungsvorschau",
+        "es-es": "Vista previa de {pattern}",
+        "fr-fr": "Aperçu de l'intégration {pattern}",
+        "ja-jp": "{pattern} 埋め込みプレビュー",
+        "pt-br": "Prévia da incorporação de {pattern}"
+      }
+    },
+    "generator.snippet.copied": {
+      "reason": "The transient copied state was not active in the preservation snapshot.",
+      "translations": {
+        "de-de": "Kopiert!",
+        "es-es": "¡Copiado!",
+        "fr-fr": "Copié !",
+        "ja-jp": "コピーしました！",
+        "pt-br": "Copiado!"
+      }
+    },
+    "player.loadingAriaLabel": {
+      "reason": "The dynamic embed player is not cataloged; reuse the approved visualizer loading label.",
+      "translations": {
+        "de-de": "Atemübung wird geladen",
+        "es-es": "Cargando ejercicio de respiración",
+        "fr-fr": "Chargement de l'exercice de respiration",
+        "ja-jp": "呼吸エクササイズを読み込み中",
+        "pt-br": "Carregando exercício de respiração"
+      }
+    },
+    "player.embedLabel": {
+      "reason": "The dynamic embed player is not cataloged; reuse the approved visualizer footer label in its noindex title.",
+      "translations": {
+        "de-de": "Einbetten",
+        "es-es": "Insertar",
+        "fr-fr": "Intégrer",
+        "ja-jp": "埋め込み",
+        "pt-br": "Incorporar"
+      }
+    }
+  }
+}

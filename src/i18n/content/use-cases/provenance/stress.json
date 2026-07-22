@@ -1,0 +1,3006 @@
+{
+  "locales": {
+    "de-de": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "2262a33791016722580d031680ed6958ca2552f711ef535f54a37798dfe5334c",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "fd75a0c1418a75fb7860da61b872c9881106748e5beac6d999f31ad4b09d2a60",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-focus-title": {
+          "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-huberman-title": {
+          "sourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-kids-title": {
+          "sourceHash": "7696120540243ebfa54ae8f92ba7cda3ef477c27e9f3802c0d1b304ccf979643",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.watch-learn": {
+          "sourceHash": "749c5b04beadcb04ba360343552137e698cb4c1ff10cb680445f8b1f9ea5c543",
+          "status": "route-catalog-normalized"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "8d435671ba243fc10a0aea0cb406a7feab35d7a66e371fcc7ee63b8134657c48",
+          "sourceText": "Stress is typically a response to an external trigger (deadlines, traffic, conflict) and often resolves when the trigger is removed. Anxiety can persist without a clear external cause and may involve excessive worry about future events. The physiological sigh works for both, but if you experience persistent anxiety that interferes with daily life, consider speaking with a mental health professional.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].question": {
+          "sourceHash": "872adf10c45abda82af2914be36a07b304380ed10a5fa53e52959c278b4a2c45",
+          "sourceText": "What's the difference between stress and anxiety?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "783e9e83daf2c0c41485295124ea3d2750fab5bb1321e0290ca814f154d7bca1",
+          "sourceText": "Use the physiological sigh whenever you notice stress building. There's no limit. For preventive benefits, the Stanford study found 5 minutes of daily practice improved overall mood. Many people benefit from short 'resets' throughout the day: before meetings, after checking email, during commutes.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "e045b4f11e97f1a131f738062e9cb6b7c1896511a0c3928920d3b0ddb1909674",
+          "sourceText": "How often should I use breathing exercises for stress?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "1a77126ca940cf86f353256b547278cbbb5aaf9c1ab8b956f201f4d5d21281f3",
+          "sourceText": "Regular deep breathing can sometimes increase stress if you over-breathe (depleting CO2). The physiological sigh's double-inhale/long-exhale pattern is specifically designed to maximize parasympathetic activation while normalizing blood chemistry. It's working with your body's natural calming reflex, not against it.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "cf1f51766c8692a6a693c6d76424d189d4a8e3c47fa9919b50c091bd0d9fee84",
+          "sourceText": "Why doesn't regular deep breathing work as well?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "f4442c7fe2e738bc93bde663660ae14464623e22b92741ecda0981f1eb83b722",
+          "sourceText": "Breathing exercises are a complementary tool, not a replacement for medical treatment. They work well alongside therapy, medication, or lifestyle changes. If stress is significantly impacting your life, work, or relationships, consult a healthcare provider for a comprehensive approach.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].question": {
+          "sourceHash": "93572d12e6e9b27a7643c6cb90b80dab95a1ba2178b71e7a90b061f3119a1711",
+          "sourceText": "Can breathing exercises replace medication for stress?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "f40861f47cf98a6f6d61fe0f4125b1872764158321ab7381e71f59031fb1d476",
+          "sourceText": "This can happen if you're over-breathing (taking breaths that are too deep) or focusing too intensely on 'doing it right.' Try making your breaths smaller and quieter. The exhale should feel like a relief, not a strain. If focusing on breath triggers anxiety, start with just one sigh and see how it feels before continuing.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].question": {
+          "sourceHash": "7c788df50c45dcd8b91cbbdff147374c349c2d9a22ce17f8281551f78865cae8",
+          "sourceText": "I tried breathing exercises and they made me more anxious. Why?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "7338ef459e3fd7d1883a4b88fb3b4b11c48f06fbc824158d0bcd82acc4697a62",
+          "sourceText": "Anytime stress arises. That said, many people find proactive practice helpful: first thing in the morning (before checking your phone), during lunch breaks, after meetings, and before bed. Building it into transitions (before/after activities) creates natural reminders.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].question": {
+          "sourceHash": "cf35550980691d63da94661e4a5ca8ef27094e3cbd1eaf76a04e999ae1040d51",
+          "sourceText": "What's the best time of day to practice stress-relief breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[6].answer": {
+          "sourceHash": "88f597b9311e0d972ada91690183748b44e3f5ad214228ff9d18307161ef85be",
+          "sourceText": "The physiological sigh is faster. It works in 1-3 breaths (about 30 seconds). Box breathing takes 2-5 minutes for full effect. Use the physiological sigh as a 'fire extinguisher' for acute, in-the-moment stress. Use box breathing as 'climate control' when you have time for a longer practice and want sustained calm. Both activate the parasympathetic nervous system, but through different mechanisms: the sigh uses a double-inhale to reinflate lung tissue, while box breathing uses breath holds to reset your autonomic rhythm.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[6].question": {
+          "sourceHash": "853873df882ff544e9f3f52bfb9b28a98833246e10a9047d0a0d7dbc547608f3",
+          "sourceText": "How does the physiological sigh compare to box breathing for stress?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "1e02ab256da5648ea24a8e22c7f45cbf41ec1f7b2627540baaba40f5d9225c0f",
+          "sourceText": "Breathing exercises for stress can calm your nervous system in 30 seconds. Deadlines piling up. Notifications buzzing. That constant low-grade tension that won't let go. Stress isn't just 'feeling busy'. It's your nervous system stuck in overdrive, draining your energy and clouding your thinking. The physiological sigh is the fastest way to break the stress response, just 1-3 breaths can shift your state in under 30 seconds.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "788072250c874f36d3179a7b730baf17a89d6c80cd2b1e21842741e297db17d0",
+          "sourceText": "Calm down in 30 seconds with the physiological sigh",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "ee2c33f0f54000ace4d8bd4d4947d68b6ac5f3e967debecea1ad44deb68819f3",
+          "sourceText": "Breathing Exercises for Stress",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "fa912317e905c957a6b9299ac8e335a99952c308b4a74d51c45032bafb8476f1",
+          "sourceText": "You don't need to find a quiet room. The physiological sigh works at your desk, in a meeting, or in traffic. Just pause your current train of thought.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "906c2281496a572203a7c5e74f445e436eb3f4ebbf6b7e4af59ae8d8f079f1a3",
+          "sourceText": "Pause what you're doing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "f5a3319576b25975fd05af1bc00bee9d8faf8887759588f293dfd8a25d279b32",
+          "sourceText": "2 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "fd75a9e5294981e9dc4089f0f7aa47699a590ea2816fc9825299bd132b8893de",
+          "sourceText": "Breathe in through your nose until your lungs feel full. Let your belly expand rather than your chest.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "f18bd91cd85160a6c6db94a517a014d742b98d66dff5a16480e870caa49186d1",
+          "sourceText": "First inhale through your nose",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "8e2db17becacd6e83a56049641f2d2594639605df3140e1b25f118140e5f24c8",
+          "sourceText": "3-4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "dddc46a63dcaa5b4ec81ce761ffb9fb6269b61b86f04e2b38ae5bacbf9cfdf23",
+          "sourceText": "Take a second, shorter breath on top of the first one. This fills the upper lungs completely. Don't force it. It's like a sip of air.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "aa12bae77f24b5ef3cdd1030eb19dc35cc372984762939d05554b08b3a0849c0",
+          "sourceText": "Second inhale (the top-up)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "c75d29e33bde84dcac6cc2ae1a0d75dd8d1f40e6a384b62f5541163e3788f59a",
+          "sourceText": "1-2 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "76c683aff956c907fe4c0e7f2bd3aa59aeaad65955ef406eccfaafaee8fdd617",
+          "sourceText": "Exhale slowly through your mouth or nose. Make it longer than both inhales combined. Let your shoulders drop as you exhale.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "bfe0fe2efae3bfb799b75c769d5fd96f67081c85edf1e2f5d22da010d87ee868",
+          "sourceText": "Long, slow exhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "d0d78b02bf9528df659c59b2f7571ba0391524054912245d54c453c77b007e99",
+          "sourceText": "6-8 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "ef23bfbe1ceb8c54173c7c4f881cc526df61a5bcaebaa8894b2b0e5af7cfca21",
+          "sourceText": "One sigh often provides noticeable relief. For deeper stress, do 2-3 sighs. For daily practice, continue for 2-5 minutes.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "facd6cfc291773a79e7fa3574f31d3b81fcc1ff7cb5bc7bc86bcbbf9fcfc4c4a",
+          "sourceText": "Repeat 1-2 more times if needed",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "eb5a88cac9bbc83980555fa71bf7c2630e7376edce16b0366dc5c3b4cdbe8d25",
+          "sourceText": "As needed",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "a0e0695d0ebab5795178f5251a715bc5a49be7fcbafc654bcb3351d58b471f2a",
+          "sourceText": "The second inhale is key. It's what makes this a 'physiological' sigh, not just a deep breath",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "4fa0612b35a966b37a33778220d91dfd632a4b9fbdbd26e46bf469e315195ed2",
+          "sourceText": "You can do this invisibly in meetings, just make the exhale through your nose",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "fc162b52496887e2a2668458aaa477470cf9665f0c5b1ac1dae901c3260e7b2e",
+          "sourceText": "For chronic stress, practice 5 minutes of cyclic sighing daily (multiple sighs in a row)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "7a2acc57022c128b7d954bf56f2ac68489cbd30531de4396ca26660503844566",
+          "sourceText": "Pair with a physical 'shake off', drop your shoulders, unclench your jaw",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "384f9449789a3396ec36d68ab3b9ec6fe62715e336e7b1a2272036f07d7e0c2b",
+          "sourceText": "The fastest breathing technique for stress relief—works in 30 seconds. The Stanford-tested physiological sigh is more effective than meditation for real-time stress reduction. Free guided tool.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "04527d7bc53f8d696d4226eafe322e3f62c0d5ac8c8af73c21029d02b060ac59",
+          "sourceText": "The Stanford-tested breathing technique that beats meditation for stress relief. Works in 30 seconds. Free tool.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "ca5883db568349f438589d0904a82fe225930ee2c122f0e95f872760129878f9",
+          "sourceText": "Breathing Exercises for Stress — Calm Down in 30 Seconds",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "b17719855193f2ca6a3bc32c01847fad78eb388d469c4149329841d3a68bfb87",
+          "sourceText": "Breathing Exercises for Stress — Calm Down in 30 Seconds (Free Tool) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "3bd9e2401a16e6b8d1a95473e68d254242f5b6e1116118d554e64708c87d92dc",
+          "sourceText": "Stanford-tested breathing technique calms stress in 30 seconds. Free guided tool.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "88f29314cb8039283c33d952bec475add5911f49d4828e43dfd6ef8cd125d9e4",
+          "sourceText": "Breathing Exercises for Stress — 30 Second Reset",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "69d1df817f47e694186d7479ed369f2cb898fa0f73c3126e02f6bbb47399c90f",
+          "sourceText": "Your body's stress response evolved to help you escape predators, not answer emails. When stress becomes chronic, your sympathetic nervous system stays activated: cortisol floods your bloodstream, your heart rate stays elevated, your muscles stay tense. This 'always-on' state drains your energy, disrupts sleep, clouds thinking, and over time contributes to serious health issues. The challenge isn't avoiding stress. It's learning to reset your nervous system quickly and often.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "194b085982240f183787f93d0deb4e61fcd20fdfbae87fe8f5a9d92cfccba89f",
+          "sourceText": "The Stress Response That Won't Turn Off",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "274a8786560c701bf1ace2fe15ef2b979557e721918d17aa462376d4a3e55eb3",
+          "sourceText": "Constant mental tension and inability to relax",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "60000a0f90ef9a14a0c004c790a64d7b1970c7093b192aaaa44c52762f2df625",
+          "sourceText": "Muscle tightness in shoulders, neck, and jaw",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "26833553f95e870c3845ece2c0b6142eb47d0170653e6126824bc1ca029cff72",
+          "sourceText": "Racing thoughts that jump between worries",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "508db7bf3042e8ae9dcd60d22d9ef954eeb80884be3f1a78ab97c7fa6868e411",
+          "sourceText": "Difficulty concentrating on one thing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "a5a8c2fac2753485ba98d7c59f0458b900a4b6a96585e2e3890e95688ce0c2bc",
+          "sourceText": "Feeling tired but wired",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "bf2a111f39f65808a9f67876bd6e372cc3d7370ac4b89dc3987e673021dff0e7",
+          "sourceText": "Shallow, rapid breathing without noticing",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "2b790c9bcabb090fc1f769a5c0b7bbfd59f9960e2a0d330f84a6db3ea44f06a2",
+          "sourceText": "RCT comparing breathwork protocols to mindfulness meditation found cyclic sighing produced the largest improvements in mood and respiratory rate.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "910f33300e22b61cb84863c1027a95f55f26dc17c282d4de194691d048ca9f75",
+          "sourceText": "Balban et al., 2023 - Cell Reports Medicine",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "1ea080ed6e7c9ad39d0e56aa106c0566c0009371eaa98cdd03aa6c1f9c6083f0",
+          "sourceText": "Meta-analysis of breathwork RCTs found small-to-moderate reductions in stress, anxiety, and depressive symptoms.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "361da0bc83864d05b5f4e52ad4a5d57db1b4e9129cbfbe2c8d511b8f61a13f80",
+          "sourceText": "Fincham et al., 2023 - Scientific Reports",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "bd7afd39a4403c62ff2bbb6df167d9cf30734542062d60c1b6c724a4cd6c19b7",
+          "sourceText": "Systematic review found slow breathing reliably increases heart rate variability, a marker of stress resilience.",
+          "status": "route-catalog-normalized"
+        },
+        "references[2].title": {
+          "sourceHash": "c9d7276a85c0b92b54d52592d474c0e673aa0f318dc9613522d60b382e88298a",
+          "sourceText": "Laborde et al., 2022 - Psychophysiology",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "3d4c2305da3bb74fb5ee3166bfa2abe345509e955b7ebdcce638f62eb4f64a86",
+          "sourceText": "Try the full physiological sigh technique with our guided visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "7ca9228da50bba2819f08d29aa0f18881cd33ded91b5264c1cfc9d5696915359",
+          "sourceText": "For clinical anxiety or panic, box breathing provides structured relief",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "4f8fed5287abe0fc306c9ae038460b15552a7ad8c7a1c0dda1cf2805b21134e8",
+          "sourceText": "Once stress is cleared, coherent breathing helps maintain calm focus",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "e732b7c1e84e68ed0e2cff6cbb42dcae07349cbd38e6618b6ddd6b7c297b4ecb",
+          "sourceText": "Use the physiological sigh to wind down before bed, then switch to 4-7-8 for sleep",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[3].teaser": {
+          "sourceHash": "268e8b192e0c935c121106ab1efa31eb8a2c591e9d0f8c84cf5ba361a41e4bc9",
+          "sourceText": "Teaching kids to manage stress? Simple breathing games they can use at school or home",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[4].teaser": {
+          "sourceHash": "08f1d1e26917e35c2aa1848d065d0dce0744285eb058f7ea326cf0caaa61e181",
+          "sourceText": "All 6 Huberman Lab breathing protocols matched to your stress type.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "3d86ce605ab64a1005cf932df03f83019609f349e20d72996837f5fa55e53a1b",
+          "sourceText": "The Science of Stress Relief",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "2b9999da3a1b2c7a81b51e86f6d06757574e6f0c9d9208f7148a55ce10b2dd34",
+          "sourceText": "The long exhale stimulates the vagus nerve, which runs from your brainstem to your gut. This activates your parasympathetic nervous system, the calming counterbalance to stress.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "c7a452daf06299bccfb1672d08426e3266868caeb6f534287c38cad5bf74490a",
+          "sourceText": "Vagal activation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "622d222ecc8dc6b69068bf86e2bc2cf7064e9371891970efbbb7a2a0ac1cade2",
+          "sourceText": "The double inhale reopens collapsed air sacs in your lungs. This improves oxygen exchange and sends 'safety' signals to your brain.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "d234914dd635106f384fbab809e9b5a570177658414efff2f1d344f46f7d8ece",
+          "sourceText": "Alveolar reinflation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "5845a8194d096a482ed92b53c1cfa48b8e1b760a519eccd47ca9d81eccb16aef",
+          "sourceText": "Stress often causes over-breathing, which depletes CO2 and causes anxiety symptoms like tingling and dizziness. The slow exhale helps normalize CO2 levels.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "e834981fe629ba1d880a7cf4562bd99a8558d8a966d712cdcef6d60ed9a0e4e6",
+          "sourceText": "CO2 normalization",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "4f1212aeb43979a1fc4db2182a883460cc73df6ca0164cc791ba7478fc3560be",
+          "sourceText": "Controlled breathing can lower cortisol (the stress hormone) within minutes, reducing the physical wear of chronic stress on your body.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "73807a3ad112d9445eb297187939068d58c763843546c0a64394ce03a6c0816e",
+          "sourceText": "Cortisol reduction",
+          "status": "route-catalog-normalized"
+        },
+        "solution.content": {
+          "sourceHash": "3e337e5cfe652dfcf79af1f28c0feca76cfeef0e0451de92871604dbfa776bb7",
+          "sourceText": "The physiological sigh is a double inhale followed by a long exhale, a pattern your body uses naturally when crying or transitioning from sleep. Done deliberately, it's a quick way to shift from stress to calm. [A 2023 Stanford study found that just 5 minutes of daily 'cyclic sighing' improved mood more than mindfulness meditation](https://doi.org/10.1016/j.xcrm.2022.100895). For acute stress, even 1-3 sighs (about 30 seconds) can noticeably reduce tension.",
+          "status": "repo-reviewed-manual"
+        },
+        "solution.heading": {
+          "sourceHash": "300d0021bbbb312086bf248e1f9ad53231fa9f357f62207543b2157fa3b1e71f",
+          "sourceText": "The Physiological Sigh: Your 30-Second Reset",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "536008afbfa86eb0f29a9aa5e8920bfbc4b49cd0f7d13e6a530fe9775094df46",
+          "sourceText": "The double inhale reinflates collapsed lung tissue, maximizing oxygen exchange. The long exhale directly stimulates your vagus nerve, shifting your nervous system from 'fight-or-flight' to 'rest-and-digest.' Unlike techniques that require minutes of practice, the physiological sigh works in seconds because it leverages your body's built-in calming reflex.",
+          "status": "route-catalog-exact"
+        },
+        "video.description": {
+          "sourceHash": "b6526fd10c63ff6754ba6b0f3c18805830507f6d50fd2c83e1ec64af30f2b60c",
+          "sourceText": "Stanford neuroscientist Dr. Andrew Huberman demonstrates the physiological sigh: the fastest way to reduce stress in real-time. This technique works in just 1-3 breaths.",
+          "status": "route-catalog-normalized"
+        },
+        "video.title": {
+          "sourceHash": "2c439c44bc008e8dd6ff0f0052ba000a65e2e1538aba76db7a058503a1de1d12",
+          "sourceText": "Dr. Andrew Huberman Explains the Physiological Sigh",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "c0003401c587525f18c94ff5fe3fe2cd37f2b768cb01bfcab2a19b7ed3825808",
+          "sourceText": "The best breathing exercises for stress are the physiological sigh (two quick inhales, long exhale) for immediate relief, box breathing for steady calm, and belly breathing for gentle downshifting. Start with 30-60 seconds of sighs, then 2-5 minutes of slow, easy breaths.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "598cf6691257f796c91db9fd43aaa8dc3dbcd7a309acaa636812ae455d89d427",
+          "sourceText": "What are the best breathing exercises for stress?",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "es-es": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "2262a33791016722580d031680ed6958ca2552f711ef535f54a37798dfe5334c",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "fd75a0c1418a75fb7860da61b872c9881106748e5beac6d999f31ad4b09d2a60",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-focus-title": {
+          "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-huberman-title": {
+          "sourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-kids-title": {
+          "sourceHash": "7696120540243ebfa54ae8f92ba7cda3ef477c27e9f3802c0d1b304ccf979643",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.watch-learn": {
+          "sourceHash": "749c5b04beadcb04ba360343552137e698cb4c1ff10cb680445f8b1f9ea5c543",
+          "status": "route-catalog-normalized"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "8d435671ba243fc10a0aea0cb406a7feab35d7a66e371fcc7ee63b8134657c48",
+          "sourceText": "Stress is typically a response to an external trigger (deadlines, traffic, conflict) and often resolves when the trigger is removed. Anxiety can persist without a clear external cause and may involve excessive worry about future events. The physiological sigh works for both, but if you experience persistent anxiety that interferes with daily life, consider speaking with a mental health professional.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].question": {
+          "sourceHash": "872adf10c45abda82af2914be36a07b304380ed10a5fa53e52959c278b4a2c45",
+          "sourceText": "What's the difference between stress and anxiety?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "783e9e83daf2c0c41485295124ea3d2750fab5bb1321e0290ca814f154d7bca1",
+          "sourceText": "Use the physiological sigh whenever you notice stress building. There's no limit. For preventive benefits, the Stanford study found 5 minutes of daily practice improved overall mood. Many people benefit from short 'resets' throughout the day: before meetings, after checking email, during commutes.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "e045b4f11e97f1a131f738062e9cb6b7c1896511a0c3928920d3b0ddb1909674",
+          "sourceText": "How often should I use breathing exercises for stress?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "1a77126ca940cf86f353256b547278cbbb5aaf9c1ab8b956f201f4d5d21281f3",
+          "sourceText": "Regular deep breathing can sometimes increase stress if you over-breathe (depleting CO2). The physiological sigh's double-inhale/long-exhale pattern is specifically designed to maximize parasympathetic activation while normalizing blood chemistry. It's working with your body's natural calming reflex, not against it.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "cf1f51766c8692a6a693c6d76424d189d4a8e3c47fa9919b50c091bd0d9fee84",
+          "sourceText": "Why doesn't regular deep breathing work as well?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "f4442c7fe2e738bc93bde663660ae14464623e22b92741ecda0981f1eb83b722",
+          "sourceText": "Breathing exercises are a complementary tool, not a replacement for medical treatment. They work well alongside therapy, medication, or lifestyle changes. If stress is significantly impacting your life, work, or relationships, consult a healthcare provider for a comprehensive approach.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].question": {
+          "sourceHash": "93572d12e6e9b27a7643c6cb90b80dab95a1ba2178b71e7a90b061f3119a1711",
+          "sourceText": "Can breathing exercises replace medication for stress?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "f40861f47cf98a6f6d61fe0f4125b1872764158321ab7381e71f59031fb1d476",
+          "sourceText": "This can happen if you're over-breathing (taking breaths that are too deep) or focusing too intensely on 'doing it right.' Try making your breaths smaller and quieter. The exhale should feel like a relief, not a strain. If focusing on breath triggers anxiety, start with just one sigh and see how it feels before continuing.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].question": {
+          "sourceHash": "7c788df50c45dcd8b91cbbdff147374c349c2d9a22ce17f8281551f78865cae8",
+          "sourceText": "I tried breathing exercises and they made me more anxious. Why?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "7338ef459e3fd7d1883a4b88fb3b4b11c48f06fbc824158d0bcd82acc4697a62",
+          "sourceText": "Anytime stress arises. That said, many people find proactive practice helpful: first thing in the morning (before checking your phone), during lunch breaks, after meetings, and before bed. Building it into transitions (before/after activities) creates natural reminders.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].question": {
+          "sourceHash": "cf35550980691d63da94661e4a5ca8ef27094e3cbd1eaf76a04e999ae1040d51",
+          "sourceText": "What's the best time of day to practice stress-relief breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[6].answer": {
+          "sourceHash": "88f597b9311e0d972ada91690183748b44e3f5ad214228ff9d18307161ef85be",
+          "sourceText": "The physiological sigh is faster. It works in 1-3 breaths (about 30 seconds). Box breathing takes 2-5 minutes for full effect. Use the physiological sigh as a 'fire extinguisher' for acute, in-the-moment stress. Use box breathing as 'climate control' when you have time for a longer practice and want sustained calm. Both activate the parasympathetic nervous system, but through different mechanisms: the sigh uses a double-inhale to reinflate lung tissue, while box breathing uses breath holds to reset your autonomic rhythm.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[6].question": {
+          "sourceHash": "853873df882ff544e9f3f52bfb9b28a98833246e10a9047d0a0d7dbc547608f3",
+          "sourceText": "How does the physiological sigh compare to box breathing for stress?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "1e02ab256da5648ea24a8e22c7f45cbf41ec1f7b2627540baaba40f5d9225c0f",
+          "sourceText": "Breathing exercises for stress can calm your nervous system in 30 seconds. Deadlines piling up. Notifications buzzing. That constant low-grade tension that won't let go. Stress isn't just 'feeling busy'. It's your nervous system stuck in overdrive, draining your energy and clouding your thinking. The physiological sigh is the fastest way to break the stress response, just 1-3 breaths can shift your state in under 30 seconds.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "788072250c874f36d3179a7b730baf17a89d6c80cd2b1e21842741e297db17d0",
+          "sourceText": "Calm down in 30 seconds with the physiological sigh",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "ee2c33f0f54000ace4d8bd4d4947d68b6ac5f3e967debecea1ad44deb68819f3",
+          "sourceText": "Breathing Exercises for Stress",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "fa912317e905c957a6b9299ac8e335a99952c308b4a74d51c45032bafb8476f1",
+          "sourceText": "You don't need to find a quiet room. The physiological sigh works at your desk, in a meeting, or in traffic. Just pause your current train of thought.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "906c2281496a572203a7c5e74f445e436eb3f4ebbf6b7e4af59ae8d8f079f1a3",
+          "sourceText": "Pause what you're doing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "f5a3319576b25975fd05af1bc00bee9d8faf8887759588f293dfd8a25d279b32",
+          "sourceText": "2 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "fd75a9e5294981e9dc4089f0f7aa47699a590ea2816fc9825299bd132b8893de",
+          "sourceText": "Breathe in through your nose until your lungs feel full. Let your belly expand rather than your chest.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "f18bd91cd85160a6c6db94a517a014d742b98d66dff5a16480e870caa49186d1",
+          "sourceText": "First inhale through your nose",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "8e2db17becacd6e83a56049641f2d2594639605df3140e1b25f118140e5f24c8",
+          "sourceText": "3-4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "dddc46a63dcaa5b4ec81ce761ffb9fb6269b61b86f04e2b38ae5bacbf9cfdf23",
+          "sourceText": "Take a second, shorter breath on top of the first one. This fills the upper lungs completely. Don't force it. It's like a sip of air.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "aa12bae77f24b5ef3cdd1030eb19dc35cc372984762939d05554b08b3a0849c0",
+          "sourceText": "Second inhale (the top-up)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "c75d29e33bde84dcac6cc2ae1a0d75dd8d1f40e6a384b62f5541163e3788f59a",
+          "sourceText": "1-2 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "76c683aff956c907fe4c0e7f2bd3aa59aeaad65955ef406eccfaafaee8fdd617",
+          "sourceText": "Exhale slowly through your mouth or nose. Make it longer than both inhales combined. Let your shoulders drop as you exhale.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "bfe0fe2efae3bfb799b75c769d5fd96f67081c85edf1e2f5d22da010d87ee868",
+          "sourceText": "Long, slow exhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "d0d78b02bf9528df659c59b2f7571ba0391524054912245d54c453c77b007e99",
+          "sourceText": "6-8 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "ef23bfbe1ceb8c54173c7c4f881cc526df61a5bcaebaa8894b2b0e5af7cfca21",
+          "sourceText": "One sigh often provides noticeable relief. For deeper stress, do 2-3 sighs. For daily practice, continue for 2-5 minutes.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "facd6cfc291773a79e7fa3574f31d3b81fcc1ff7cb5bc7bc86bcbbf9fcfc4c4a",
+          "sourceText": "Repeat 1-2 more times if needed",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "eb5a88cac9bbc83980555fa71bf7c2630e7376edce16b0366dc5c3b4cdbe8d25",
+          "sourceText": "As needed",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "a0e0695d0ebab5795178f5251a715bc5a49be7fcbafc654bcb3351d58b471f2a",
+          "sourceText": "The second inhale is key. It's what makes this a 'physiological' sigh, not just a deep breath",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "4fa0612b35a966b37a33778220d91dfd632a4b9fbdbd26e46bf469e315195ed2",
+          "sourceText": "You can do this invisibly in meetings, just make the exhale through your nose",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "fc162b52496887e2a2668458aaa477470cf9665f0c5b1ac1dae901c3260e7b2e",
+          "sourceText": "For chronic stress, practice 5 minutes of cyclic sighing daily (multiple sighs in a row)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "7a2acc57022c128b7d954bf56f2ac68489cbd30531de4396ca26660503844566",
+          "sourceText": "Pair with a physical 'shake off', drop your shoulders, unclench your jaw",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "384f9449789a3396ec36d68ab3b9ec6fe62715e336e7b1a2272036f07d7e0c2b",
+          "sourceText": "The fastest breathing technique for stress relief: works in 30 seconds. The Stanford-tested physiological sigh is more effective than meditation for real-time stress reduction. Free guided tool.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "04527d7bc53f8d696d4226eafe322e3f62c0d5ac8c8af73c21029d02b060ac59",
+          "sourceText": "The Stanford-tested breathing technique that beats meditation for stress relief. Works in 30 seconds. Free tool.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "ca5883db568349f438589d0904a82fe225930ee2c122f0e95f872760129878f9",
+          "sourceText": "Breathing Exercises for Stress: Calm Down in 30 Seconds",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.title": {
+          "sourceHash": "b17719855193f2ca6a3bc32c01847fad78eb388d469c4149329841d3a68bfb87",
+          "sourceText": "Breathing Exercises for Stress: Calm Down in 30 Seconds (Free Tool)",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "3bd9e2401a16e6b8d1a95473e68d254242f5b6e1116118d554e64708c87d92dc",
+          "sourceText": "Stanford-tested breathing technique calms stress in 30 seconds. Free guided tool.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "88f29314cb8039283c33d952bec475add5911f49d4828e43dfd6ef8cd125d9e4",
+          "sourceText": "Breathing Exercises for Stress: 30 Second Reset",
+          "status": "repo-reviewed-replacement"
+        },
+        "problem.content": {
+          "sourceHash": "69d1df817f47e694186d7479ed369f2cb898fa0f73c3126e02f6bbb47399c90f",
+          "sourceText": "Your body's stress response evolved to help you escape predators, not answer emails. When stress becomes chronic, your sympathetic nervous system stays activated: cortisol floods your bloodstream, your heart rate stays elevated, your muscles stay tense. This 'always-on' state drains your energy, disrupts sleep, clouds thinking, and over time contributes to serious health issues. The challenge isn't avoiding stress. It's learning to reset your nervous system quickly and often.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "194b085982240f183787f93d0deb4e61fcd20fdfbae87fe8f5a9d92cfccba89f",
+          "sourceText": "The Stress Response That Won't Turn Off",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "274a8786560c701bf1ace2fe15ef2b979557e721918d17aa462376d4a3e55eb3",
+          "sourceText": "Constant mental tension and inability to relax",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "60000a0f90ef9a14a0c004c790a64d7b1970c7093b192aaaa44c52762f2df625",
+          "sourceText": "Muscle tightness in shoulders, neck, and jaw",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "26833553f95e870c3845ece2c0b6142eb47d0170653e6126824bc1ca029cff72",
+          "sourceText": "Racing thoughts that jump between worries",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "508db7bf3042e8ae9dcd60d22d9ef954eeb80884be3f1a78ab97c7fa6868e411",
+          "sourceText": "Difficulty concentrating on one thing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "a5a8c2fac2753485ba98d7c59f0458b900a4b6a96585e2e3890e95688ce0c2bc",
+          "sourceText": "Feeling tired but wired",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "bf2a111f39f65808a9f67876bd6e372cc3d7370ac4b89dc3987e673021dff0e7",
+          "sourceText": "Shallow, rapid breathing without noticing",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "2b790c9bcabb090fc1f769a5c0b7bbfd59f9960e2a0d330f84a6db3ea44f06a2",
+          "sourceText": "RCT comparing breathwork protocols to mindfulness meditation found cyclic sighing produced the largest improvements in mood and respiratory rate.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "910f33300e22b61cb84863c1027a95f55f26dc17c282d4de194691d048ca9f75",
+          "sourceText": "Balban et al., 2023 - Cell Reports Medicine",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "1ea080ed6e7c9ad39d0e56aa106c0566c0009371eaa98cdd03aa6c1f9c6083f0",
+          "sourceText": "Meta-analysis of breathwork RCTs found small-to-moderate reductions in stress, anxiety, and depressive symptoms.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "361da0bc83864d05b5f4e52ad4a5d57db1b4e9129cbfbe2c8d511b8f61a13f80",
+          "sourceText": "Fincham et al., 2023 - Scientific Reports",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "bd7afd39a4403c62ff2bbb6df167d9cf30734542062d60c1b6c724a4cd6c19b7",
+          "sourceText": "Systematic review found slow breathing reliably increases heart rate variability, a marker of stress resilience.",
+          "status": "route-catalog-normalized"
+        },
+        "references[2].title": {
+          "sourceHash": "c9d7276a85c0b92b54d52592d474c0e673aa0f318dc9613522d60b382e88298a",
+          "sourceText": "Laborde et al., 2022 - Psychophysiology",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "3d4c2305da3bb74fb5ee3166bfa2abe345509e955b7ebdcce638f62eb4f64a86",
+          "sourceText": "Try the full physiological sigh technique with our guided visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "7ca9228da50bba2819f08d29aa0f18881cd33ded91b5264c1cfc9d5696915359",
+          "sourceText": "For clinical anxiety or panic, box breathing provides structured relief",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "4f8fed5287abe0fc306c9ae038460b15552a7ad8c7a1c0dda1cf2805b21134e8",
+          "sourceText": "Once stress is cleared, coherent breathing helps maintain calm focus",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "e732b7c1e84e68ed0e2cff6cbb42dcae07349cbd38e6618b6ddd6b7c297b4ecb",
+          "sourceText": "Use the physiological sigh to wind down before bed, then switch to 4-7-8 for sleep",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[3].teaser": {
+          "sourceHash": "268e8b192e0c935c121106ab1efa31eb8a2c591e9d0f8c84cf5ba361a41e4bc9",
+          "sourceText": "Teaching kids to manage stress? Simple breathing games they can use at school or home",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[4].teaser": {
+          "sourceHash": "08f1d1e26917e35c2aa1848d065d0dce0744285eb058f7ea326cf0caaa61e181",
+          "sourceText": "All 6 Huberman Lab breathing protocols matched to your stress type.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "3d86ce605ab64a1005cf932df03f83019609f349e20d72996837f5fa55e53a1b",
+          "sourceText": "The Science of Stress Relief",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "2b9999da3a1b2c7a81b51e86f6d06757574e6f0c9d9208f7148a55ce10b2dd34",
+          "sourceText": "The long exhale stimulates the vagus nerve, which runs from your brainstem to your gut. This activates your parasympathetic nervous system, the calming counterbalance to stress.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "c7a452daf06299bccfb1672d08426e3266868caeb6f534287c38cad5bf74490a",
+          "sourceText": "Vagal activation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "622d222ecc8dc6b69068bf86e2bc2cf7064e9371891970efbbb7a2a0ac1cade2",
+          "sourceText": "The double inhale reopens collapsed air sacs in your lungs. This improves oxygen exchange and sends 'safety' signals to your brain.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "d234914dd635106f384fbab809e9b5a570177658414efff2f1d344f46f7d8ece",
+          "sourceText": "Alveolar reinflation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "5845a8194d096a482ed92b53c1cfa48b8e1b760a519eccd47ca9d81eccb16aef",
+          "sourceText": "Stress often causes over-breathing, which depletes CO2 and causes anxiety symptoms like tingling and dizziness. The slow exhale helps normalize CO2 levels.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "e834981fe629ba1d880a7cf4562bd99a8558d8a966d712cdcef6d60ed9a0e4e6",
+          "sourceText": "CO2 normalization",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "4f1212aeb43979a1fc4db2182a883460cc73df6ca0164cc791ba7478fc3560be",
+          "sourceText": "Controlled breathing can lower cortisol (the stress hormone) within minutes, reducing the physical wear of chronic stress on your body.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "73807a3ad112d9445eb297187939068d58c763843546c0a64394ce03a6c0816e",
+          "sourceText": "Cortisol reduction",
+          "status": "route-catalog-normalized"
+        },
+        "solution.content": {
+          "sourceHash": "3e337e5cfe652dfcf79af1f28c0feca76cfeef0e0451de92871604dbfa776bb7",
+          "sourceText": "The physiological sigh is a double inhale followed by a long exhale, a pattern your body uses naturally when crying or transitioning from sleep. Done deliberately, it's a quick way to shift from stress to calm. [A 2023 Stanford study found that just 5 minutes of daily 'cyclic sighing' improved mood more than mindfulness meditation](https://doi.org/10.1016/j.xcrm.2022.100895). For acute stress, even 1-3 sighs (about 30 seconds) can noticeably reduce tension.",
+          "status": "repo-reviewed-manual"
+        },
+        "solution.heading": {
+          "sourceHash": "300d0021bbbb312086bf248e1f9ad53231fa9f357f62207543b2157fa3b1e71f",
+          "sourceText": "The Physiological Sigh: Your 30-Second Reset",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "536008afbfa86eb0f29a9aa5e8920bfbc4b49cd0f7d13e6a530fe9775094df46",
+          "sourceText": "The double inhale reinflates collapsed lung tissue, maximizing oxygen exchange. The long exhale directly stimulates your vagus nerve, shifting your nervous system from 'fight-or-flight' to 'rest-and-digest.' Unlike techniques that require minutes of practice, the physiological sigh works in seconds because it leverages your body's built-in calming reflex.",
+          "status": "route-catalog-exact"
+        },
+        "video.description": {
+          "sourceHash": "b6526fd10c63ff6754ba6b0f3c18805830507f6d50fd2c83e1ec64af30f2b60c",
+          "sourceText": "Stanford neuroscientist Dr. Andrew Huberman demonstrates the physiological sigh: the fastest way to reduce stress in real-time. This technique works in just 1-3 breaths.",
+          "status": "route-catalog-normalized"
+        },
+        "video.title": {
+          "sourceHash": "2c439c44bc008e8dd6ff0f0052ba000a65e2e1538aba76db7a058503a1de1d12",
+          "sourceText": "Dr. Andrew Huberman Explains the Physiological Sigh",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "c0003401c587525f18c94ff5fe3fe2cd37f2b768cb01bfcab2a19b7ed3825808",
+          "sourceText": "The best breathing exercises for stress are the physiological sigh (two quick inhales, long exhale) for immediate relief, box breathing for steady calm, and belly breathing for gentle downshifting. Start with 30-60 seconds of sighs, then 2-5 minutes of slow, easy breaths.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "598cf6691257f796c91db9fd43aaa8dc3dbcd7a309acaa636812ae455d89d427",
+          "sourceText": "What are the best breathing exercises for stress?",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "fr-fr": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "2262a33791016722580d031680ed6958ca2552f711ef535f54a37798dfe5334c",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "fd75a0c1418a75fb7860da61b872c9881106748e5beac6d999f31ad4b09d2a60",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-focus-title": {
+          "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-huberman-title": {
+          "sourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-kids-title": {
+          "sourceHash": "7696120540243ebfa54ae8f92ba7cda3ef477c27e9f3802c0d1b304ccf979643",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.watch-learn": {
+          "sourceHash": "749c5b04beadcb04ba360343552137e698cb4c1ff10cb680445f8b1f9ea5c543",
+          "status": "route-catalog-normalized"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "8d435671ba243fc10a0aea0cb406a7feab35d7a66e371fcc7ee63b8134657c48",
+          "sourceText": "Stress is typically a response to an external trigger (deadlines, traffic, conflict) and often resolves when the trigger is removed. Anxiety can persist without a clear external cause and may involve excessive worry about future events. The physiological sigh works for both, but if you experience persistent anxiety that interferes with daily life, consider speaking with a mental health professional.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].question": {
+          "sourceHash": "872adf10c45abda82af2914be36a07b304380ed10a5fa53e52959c278b4a2c45",
+          "sourceText": "What's the difference between stress and anxiety?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "783e9e83daf2c0c41485295124ea3d2750fab5bb1321e0290ca814f154d7bca1",
+          "sourceText": "Use the physiological sigh whenever you notice stress building. There's no limit. For preventive benefits, the Stanford study found 5 minutes of daily practice improved overall mood. Many people benefit from short 'resets' throughout the day: before meetings, after checking email, during commutes.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "e045b4f11e97f1a131f738062e9cb6b7c1896511a0c3928920d3b0ddb1909674",
+          "sourceText": "How often should I use breathing exercises for stress?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "1a77126ca940cf86f353256b547278cbbb5aaf9c1ab8b956f201f4d5d21281f3",
+          "sourceText": "Regular deep breathing can sometimes increase stress if you over-breathe (depleting CO2). The physiological sigh's double-inhale/long-exhale pattern is specifically designed to maximize parasympathetic activation while normalizing blood chemistry. It's working with your body's natural calming reflex, not against it.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "cf1f51766c8692a6a693c6d76424d189d4a8e3c47fa9919b50c091bd0d9fee84",
+          "sourceText": "Why doesn't regular deep breathing work as well?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "f4442c7fe2e738bc93bde663660ae14464623e22b92741ecda0981f1eb83b722",
+          "sourceText": "Breathing exercises are a complementary tool, not a replacement for medical treatment. They work well alongside therapy, medication, or lifestyle changes. If stress is significantly impacting your life, work, or relationships, consult a healthcare provider for a comprehensive approach.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].question": {
+          "sourceHash": "93572d12e6e9b27a7643c6cb90b80dab95a1ba2178b71e7a90b061f3119a1711",
+          "sourceText": "Can breathing exercises replace medication for stress?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "f40861f47cf98a6f6d61fe0f4125b1872764158321ab7381e71f59031fb1d476",
+          "sourceText": "This can happen if you're over-breathing (taking breaths that are too deep) or focusing too intensely on 'doing it right.' Try making your breaths smaller and quieter. The exhale should feel like a relief, not a strain. If focusing on breath triggers anxiety, start with just one sigh and see how it feels before continuing.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].question": {
+          "sourceHash": "7c788df50c45dcd8b91cbbdff147374c349c2d9a22ce17f8281551f78865cae8",
+          "sourceText": "I tried breathing exercises and they made me more anxious. Why?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "7338ef459e3fd7d1883a4b88fb3b4b11c48f06fbc824158d0bcd82acc4697a62",
+          "sourceText": "Anytime stress arises. That said, many people find proactive practice helpful: first thing in the morning (before checking your phone), during lunch breaks, after meetings, and before bed. Building it into transitions (before/after activities) creates natural reminders.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].question": {
+          "sourceHash": "cf35550980691d63da94661e4a5ca8ef27094e3cbd1eaf76a04e999ae1040d51",
+          "sourceText": "What's the best time of day to practice stress-relief breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[6].answer": {
+          "sourceHash": "88f597b9311e0d972ada91690183748b44e3f5ad214228ff9d18307161ef85be",
+          "sourceText": "The physiological sigh is faster. It works in 1-3 breaths (about 30 seconds). Box breathing takes 2-5 minutes for full effect. Use the physiological sigh as a 'fire extinguisher' for acute, in-the-moment stress. Use box breathing as 'climate control' when you have time for a longer practice and want sustained calm. Both activate the parasympathetic nervous system, but through different mechanisms: the sigh uses a double-inhale to reinflate lung tissue, while box breathing uses breath holds to reset your autonomic rhythm.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[6].question": {
+          "sourceHash": "853873df882ff544e9f3f52bfb9b28a98833246e10a9047d0a0d7dbc547608f3",
+          "sourceText": "How does the physiological sigh compare to box breathing for stress?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "1e02ab256da5648ea24a8e22c7f45cbf41ec1f7b2627540baaba40f5d9225c0f",
+          "sourceText": "Breathing exercises for stress can calm your nervous system in 30 seconds. Deadlines piling up. Notifications buzzing. That constant low-grade tension that won't let go. Stress isn't just 'feeling busy'. It's your nervous system stuck in overdrive, draining your energy and clouding your thinking. The physiological sigh is the fastest way to break the stress response, just 1-3 breaths can shift your state in under 30 seconds.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "788072250c874f36d3179a7b730baf17a89d6c80cd2b1e21842741e297db17d0",
+          "sourceText": "Calm down in 30 seconds with the physiological sigh",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "ee2c33f0f54000ace4d8bd4d4947d68b6ac5f3e967debecea1ad44deb68819f3",
+          "sourceText": "Breathing Exercises for Stress",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "fa912317e905c957a6b9299ac8e335a99952c308b4a74d51c45032bafb8476f1",
+          "sourceText": "You don't need to find a quiet room. The physiological sigh works at your desk, in a meeting, or in traffic. Just pause your current train of thought.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "906c2281496a572203a7c5e74f445e436eb3f4ebbf6b7e4af59ae8d8f079f1a3",
+          "sourceText": "Pause what you're doing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "f5a3319576b25975fd05af1bc00bee9d8faf8887759588f293dfd8a25d279b32",
+          "sourceText": "2 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "fd75a9e5294981e9dc4089f0f7aa47699a590ea2816fc9825299bd132b8893de",
+          "sourceText": "Breathe in through your nose until your lungs feel full. Let your belly expand rather than your chest.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "f18bd91cd85160a6c6db94a517a014d742b98d66dff5a16480e870caa49186d1",
+          "sourceText": "First inhale through your nose",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "8e2db17becacd6e83a56049641f2d2594639605df3140e1b25f118140e5f24c8",
+          "sourceText": "3-4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "dddc46a63dcaa5b4ec81ce761ffb9fb6269b61b86f04e2b38ae5bacbf9cfdf23",
+          "sourceText": "Take a second, shorter breath on top of the first one. This fills the upper lungs completely. Don't force it. It's like a sip of air.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "aa12bae77f24b5ef3cdd1030eb19dc35cc372984762939d05554b08b3a0849c0",
+          "sourceText": "Second inhale (the top-up)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "c75d29e33bde84dcac6cc2ae1a0d75dd8d1f40e6a384b62f5541163e3788f59a",
+          "sourceText": "1-2 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "76c683aff956c907fe4c0e7f2bd3aa59aeaad65955ef406eccfaafaee8fdd617",
+          "sourceText": "Exhale slowly through your mouth or nose. Make it longer than both inhales combined. Let your shoulders drop as you exhale.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "bfe0fe2efae3bfb799b75c769d5fd96f67081c85edf1e2f5d22da010d87ee868",
+          "sourceText": "Long, slow exhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "d0d78b02bf9528df659c59b2f7571ba0391524054912245d54c453c77b007e99",
+          "sourceText": "6-8 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "ef23bfbe1ceb8c54173c7c4f881cc526df61a5bcaebaa8894b2b0e5af7cfca21",
+          "sourceText": "One sigh often provides noticeable relief. For deeper stress, do 2-3 sighs. For daily practice, continue for 2-5 minutes.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "facd6cfc291773a79e7fa3574f31d3b81fcc1ff7cb5bc7bc86bcbbf9fcfc4c4a",
+          "sourceText": "Repeat 1-2 more times if needed",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "eb5a88cac9bbc83980555fa71bf7c2630e7376edce16b0366dc5c3b4cdbe8d25",
+          "sourceText": "As needed",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "a0e0695d0ebab5795178f5251a715bc5a49be7fcbafc654bcb3351d58b471f2a",
+          "sourceText": "The second inhale is key. It's what makes this a 'physiological' sigh, not just a deep breath",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "4fa0612b35a966b37a33778220d91dfd632a4b9fbdbd26e46bf469e315195ed2",
+          "sourceText": "You can do this invisibly in meetings, just make the exhale through your nose",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "fc162b52496887e2a2668458aaa477470cf9665f0c5b1ac1dae901c3260e7b2e",
+          "sourceText": "For chronic stress, practice 5 minutes of cyclic sighing daily (multiple sighs in a row)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "7a2acc57022c128b7d954bf56f2ac68489cbd30531de4396ca26660503844566",
+          "sourceText": "Pair with a physical 'shake off', drop your shoulders, unclench your jaw",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "384f9449789a3396ec36d68ab3b9ec6fe62715e336e7b1a2272036f07d7e0c2b",
+          "sourceText": "The fastest breathing technique for stress relief—works in 30 seconds. The Stanford-tested physiological sigh is more effective than meditation for real-time stress reduction. Free guided tool.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "04527d7bc53f8d696d4226eafe322e3f62c0d5ac8c8af73c21029d02b060ac59",
+          "sourceText": "The Stanford-tested breathing technique that beats meditation for stress relief. Works in 30 seconds. Free tool.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "ca5883db568349f438589d0904a82fe225930ee2c122f0e95f872760129878f9",
+          "sourceText": "Breathing Exercises for Stress — Calm Down in 30 Seconds",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "b17719855193f2ca6a3bc32c01847fad78eb388d469c4149329841d3a68bfb87",
+          "sourceText": "Breathing Exercises for Stress — Calm Down in 30 Seconds (Free Tool) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "3bd9e2401a16e6b8d1a95473e68d254242f5b6e1116118d554e64708c87d92dc",
+          "sourceText": "Stanford-tested breathing technique calms stress in 30 seconds. Free guided tool.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "88f29314cb8039283c33d952bec475add5911f49d4828e43dfd6ef8cd125d9e4",
+          "sourceText": "Breathing Exercises for Stress — 30 Second Reset",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "69d1df817f47e694186d7479ed369f2cb898fa0f73c3126e02f6bbb47399c90f",
+          "sourceText": "Your body's stress response evolved to help you escape predators, not answer emails. When stress becomes chronic, your sympathetic nervous system stays activated: cortisol floods your bloodstream, your heart rate stays elevated, your muscles stay tense. This 'always-on' state drains your energy, disrupts sleep, clouds thinking, and over time contributes to serious health issues. The challenge isn't avoiding stress. It's learning to reset your nervous system quickly and often.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "194b085982240f183787f93d0deb4e61fcd20fdfbae87fe8f5a9d92cfccba89f",
+          "sourceText": "The Stress Response That Won't Turn Off",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "274a8786560c701bf1ace2fe15ef2b979557e721918d17aa462376d4a3e55eb3",
+          "sourceText": "Constant mental tension and inability to relax",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "60000a0f90ef9a14a0c004c790a64d7b1970c7093b192aaaa44c52762f2df625",
+          "sourceText": "Muscle tightness in shoulders, neck, and jaw",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "26833553f95e870c3845ece2c0b6142eb47d0170653e6126824bc1ca029cff72",
+          "sourceText": "Racing thoughts that jump between worries",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "508db7bf3042e8ae9dcd60d22d9ef954eeb80884be3f1a78ab97c7fa6868e411",
+          "sourceText": "Difficulty concentrating on one thing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "a5a8c2fac2753485ba98d7c59f0458b900a4b6a96585e2e3890e95688ce0c2bc",
+          "sourceText": "Feeling tired but wired",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "bf2a111f39f65808a9f67876bd6e372cc3d7370ac4b89dc3987e673021dff0e7",
+          "sourceText": "Shallow, rapid breathing without noticing",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "2b790c9bcabb090fc1f769a5c0b7bbfd59f9960e2a0d330f84a6db3ea44f06a2",
+          "sourceText": "RCT comparing breathwork protocols to mindfulness meditation found cyclic sighing produced the largest improvements in mood and respiratory rate.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "910f33300e22b61cb84863c1027a95f55f26dc17c282d4de194691d048ca9f75",
+          "sourceText": "Balban et al., 2023 - Cell Reports Medicine",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "1ea080ed6e7c9ad39d0e56aa106c0566c0009371eaa98cdd03aa6c1f9c6083f0",
+          "sourceText": "Meta-analysis of breathwork RCTs found small-to-moderate reductions in stress, anxiety, and depressive symptoms.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "361da0bc83864d05b5f4e52ad4a5d57db1b4e9129cbfbe2c8d511b8f61a13f80",
+          "sourceText": "Fincham et al., 2023 - Scientific Reports",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "bd7afd39a4403c62ff2bbb6df167d9cf30734542062d60c1b6c724a4cd6c19b7",
+          "sourceText": "Systematic review found slow breathing reliably increases heart rate variability, a marker of stress resilience.",
+          "status": "route-catalog-normalized"
+        },
+        "references[2].title": {
+          "sourceHash": "c9d7276a85c0b92b54d52592d474c0e673aa0f318dc9613522d60b382e88298a",
+          "sourceText": "Laborde et al., 2022 - Psychophysiology",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "3d4c2305da3bb74fb5ee3166bfa2abe345509e955b7ebdcce638f62eb4f64a86",
+          "sourceText": "Try the full physiological sigh technique with our guided visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "7ca9228da50bba2819f08d29aa0f18881cd33ded91b5264c1cfc9d5696915359",
+          "sourceText": "For clinical anxiety or panic, box breathing provides structured relief",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "4f8fed5287abe0fc306c9ae038460b15552a7ad8c7a1c0dda1cf2805b21134e8",
+          "sourceText": "Once stress is cleared, coherent breathing helps maintain calm focus",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "e732b7c1e84e68ed0e2cff6cbb42dcae07349cbd38e6618b6ddd6b7c297b4ecb",
+          "sourceText": "Use the physiological sigh to wind down before bed, then switch to 4-7-8 for sleep",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[3].teaser": {
+          "sourceHash": "268e8b192e0c935c121106ab1efa31eb8a2c591e9d0f8c84cf5ba361a41e4bc9",
+          "sourceText": "Teaching kids to manage stress? Simple breathing games they can use at school or home",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[4].teaser": {
+          "sourceHash": "08f1d1e26917e35c2aa1848d065d0dce0744285eb058f7ea326cf0caaa61e181",
+          "sourceText": "All 6 Huberman Lab breathing protocols matched to your stress type.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "3d86ce605ab64a1005cf932df03f83019609f349e20d72996837f5fa55e53a1b",
+          "sourceText": "The Science of Stress Relief",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "2b9999da3a1b2c7a81b51e86f6d06757574e6f0c9d9208f7148a55ce10b2dd34",
+          "sourceText": "The long exhale stimulates the vagus nerve, which runs from your brainstem to your gut. This activates your parasympathetic nervous system, the calming counterbalance to stress.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "c7a452daf06299bccfb1672d08426e3266868caeb6f534287c38cad5bf74490a",
+          "sourceText": "Vagal activation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "622d222ecc8dc6b69068bf86e2bc2cf7064e9371891970efbbb7a2a0ac1cade2",
+          "sourceText": "The double inhale reopens collapsed air sacs in your lungs. This improves oxygen exchange and sends 'safety' signals to your brain.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "d234914dd635106f384fbab809e9b5a570177658414efff2f1d344f46f7d8ece",
+          "sourceText": "Alveolar reinflation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "5845a8194d096a482ed92b53c1cfa48b8e1b760a519eccd47ca9d81eccb16aef",
+          "sourceText": "Stress often causes over-breathing, which depletes CO2 and causes anxiety symptoms like tingling and dizziness. The slow exhale helps normalize CO2 levels.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "e834981fe629ba1d880a7cf4562bd99a8558d8a966d712cdcef6d60ed9a0e4e6",
+          "sourceText": "CO2 normalization",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "4f1212aeb43979a1fc4db2182a883460cc73df6ca0164cc791ba7478fc3560be",
+          "sourceText": "Controlled breathing can lower cortisol (the stress hormone) within minutes, reducing the physical wear of chronic stress on your body.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "73807a3ad112d9445eb297187939068d58c763843546c0a64394ce03a6c0816e",
+          "sourceText": "Cortisol reduction",
+          "status": "route-catalog-normalized"
+        },
+        "solution.content": {
+          "sourceHash": "3e337e5cfe652dfcf79af1f28c0feca76cfeef0e0451de92871604dbfa776bb7",
+          "sourceText": "The physiological sigh is a double inhale followed by a long exhale, a pattern your body uses naturally when crying or transitioning from sleep. Done deliberately, it's a quick way to shift from stress to calm. [A 2023 Stanford study found that just 5 minutes of daily 'cyclic sighing' improved mood more than mindfulness meditation](https://doi.org/10.1016/j.xcrm.2022.100895). For acute stress, even 1-3 sighs (about 30 seconds) can noticeably reduce tension.",
+          "status": "repo-reviewed-manual"
+        },
+        "solution.heading": {
+          "sourceHash": "300d0021bbbb312086bf248e1f9ad53231fa9f357f62207543b2157fa3b1e71f",
+          "sourceText": "The Physiological Sigh: Your 30-Second Reset",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "536008afbfa86eb0f29a9aa5e8920bfbc4b49cd0f7d13e6a530fe9775094df46",
+          "sourceText": "The double inhale reinflates collapsed lung tissue, maximizing oxygen exchange. The long exhale directly stimulates your vagus nerve, shifting your nervous system from 'fight-or-flight' to 'rest-and-digest.' Unlike techniques that require minutes of practice, the physiological sigh works in seconds because it leverages your body's built-in calming reflex.",
+          "status": "route-catalog-exact"
+        },
+        "video.description": {
+          "sourceHash": "b6526fd10c63ff6754ba6b0f3c18805830507f6d50fd2c83e1ec64af30f2b60c",
+          "sourceText": "Stanford neuroscientist Dr. Andrew Huberman demonstrates the physiological sigh: the fastest way to reduce stress in real-time. This technique works in just 1-3 breaths.",
+          "status": "route-catalog-normalized"
+        },
+        "video.title": {
+          "sourceHash": "2c439c44bc008e8dd6ff0f0052ba000a65e2e1538aba76db7a058503a1de1d12",
+          "sourceText": "Dr. Andrew Huberman Explains the Physiological Sigh",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "c0003401c587525f18c94ff5fe3fe2cd37f2b768cb01bfcab2a19b7ed3825808",
+          "sourceText": "The best breathing exercises for stress are the physiological sigh (two quick inhales, long exhale) for immediate relief, box breathing for steady calm, and belly breathing for gentle downshifting. Start with 30-60 seconds of sighs, then 2-5 minutes of slow, easy breaths.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "598cf6691257f796c91db9fd43aaa8dc3dbcd7a309acaa636812ae455d89d427",
+          "sourceText": "What are the best breathing exercises for stress?",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "ja-jp": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "2262a33791016722580d031680ed6958ca2552f711ef535f54a37798dfe5334c",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "fd75a0c1418a75fb7860da61b872c9881106748e5beac6d999f31ad4b09d2a60",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-focus-title": {
+          "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-huberman-title": {
+          "sourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-kids-title": {
+          "sourceHash": "7696120540243ebfa54ae8f92ba7cda3ef477c27e9f3802c0d1b304ccf979643",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.watch-learn": {
+          "sourceHash": "749c5b04beadcb04ba360343552137e698cb4c1ff10cb680445f8b1f9ea5c543",
+          "status": "route-catalog-normalized"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "8d435671ba243fc10a0aea0cb406a7feab35d7a66e371fcc7ee63b8134657c48",
+          "sourceText": "Stress is typically a response to an external trigger (deadlines, traffic, conflict) and often resolves when the trigger is removed. Anxiety can persist without a clear external cause and may involve excessive worry about future events. The physiological sigh works for both, but if you experience persistent anxiety that interferes with daily life, consider speaking with a mental health professional.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].question": {
+          "sourceHash": "872adf10c45abda82af2914be36a07b304380ed10a5fa53e52959c278b4a2c45",
+          "sourceText": "What's the difference between stress and anxiety?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "783e9e83daf2c0c41485295124ea3d2750fab5bb1321e0290ca814f154d7bca1",
+          "sourceText": "Use the physiological sigh whenever you notice stress building. There's no limit. For preventive benefits, the Stanford study found 5 minutes of daily practice improved overall mood. Many people benefit from short 'resets' throughout the day: before meetings, after checking email, during commutes.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "e045b4f11e97f1a131f738062e9cb6b7c1896511a0c3928920d3b0ddb1909674",
+          "sourceText": "How often should I use breathing exercises for stress?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "1a77126ca940cf86f353256b547278cbbb5aaf9c1ab8b956f201f4d5d21281f3",
+          "sourceText": "Regular deep breathing can sometimes increase stress if you over-breathe (depleting CO2). The physiological sigh's double-inhale/long-exhale pattern is specifically designed to maximize parasympathetic activation while normalizing blood chemistry. It's working with your body's natural calming reflex, not against it.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "cf1f51766c8692a6a693c6d76424d189d4a8e3c47fa9919b50c091bd0d9fee84",
+          "sourceText": "Why doesn't regular deep breathing work as well?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "f4442c7fe2e738bc93bde663660ae14464623e22b92741ecda0981f1eb83b722",
+          "sourceText": "Breathing exercises are a complementary tool, not a replacement for medical treatment. They work well alongside therapy, medication, or lifestyle changes. If stress is significantly impacting your life, work, or relationships, consult a healthcare provider for a comprehensive approach.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].question": {
+          "sourceHash": "93572d12e6e9b27a7643c6cb90b80dab95a1ba2178b71e7a90b061f3119a1711",
+          "sourceText": "Can breathing exercises replace medication for stress?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "f40861f47cf98a6f6d61fe0f4125b1872764158321ab7381e71f59031fb1d476",
+          "sourceText": "This can happen if you're over-breathing (taking breaths that are too deep) or focusing too intensely on 'doing it right.' Try making your breaths smaller and quieter. The exhale should feel like a relief, not a strain. If focusing on breath triggers anxiety, start with just one sigh and see how it feels before continuing.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].question": {
+          "sourceHash": "7c788df50c45dcd8b91cbbdff147374c349c2d9a22ce17f8281551f78865cae8",
+          "sourceText": "I tried breathing exercises and they made me more anxious. Why?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "7338ef459e3fd7d1883a4b88fb3b4b11c48f06fbc824158d0bcd82acc4697a62",
+          "sourceText": "Anytime stress arises. That said, many people find proactive practice helpful: first thing in the morning (before checking your phone), during lunch breaks, after meetings, and before bed. Building it into transitions (before/after activities) creates natural reminders.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].question": {
+          "sourceHash": "cf35550980691d63da94661e4a5ca8ef27094e3cbd1eaf76a04e999ae1040d51",
+          "sourceText": "What's the best time of day to practice stress-relief breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[6].answer": {
+          "sourceHash": "88f597b9311e0d972ada91690183748b44e3f5ad214228ff9d18307161ef85be",
+          "sourceText": "The physiological sigh is faster. It works in 1-3 breaths (about 30 seconds). Box breathing takes 2-5 minutes for full effect. Use the physiological sigh as a 'fire extinguisher' for acute, in-the-moment stress. Use box breathing as 'climate control' when you have time for a longer practice and want sustained calm. Both activate the parasympathetic nervous system, but through different mechanisms: the sigh uses a double-inhale to reinflate lung tissue, while box breathing uses breath holds to reset your autonomic rhythm.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[6].question": {
+          "sourceHash": "853873df882ff544e9f3f52bfb9b28a98833246e10a9047d0a0d7dbc547608f3",
+          "sourceText": "How does the physiological sigh compare to box breathing for stress?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "1e02ab256da5648ea24a8e22c7f45cbf41ec1f7b2627540baaba40f5d9225c0f",
+          "sourceText": "Breathing exercises for stress can calm your nervous system in 30 seconds. Deadlines piling up. Notifications buzzing. That constant low-grade tension that won't let go. Stress isn't just 'feeling busy'. It's your nervous system stuck in overdrive, draining your energy and clouding your thinking. The physiological sigh is the fastest way to break the stress response, just 1-3 breaths can shift your state in under 30 seconds.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "788072250c874f36d3179a7b730baf17a89d6c80cd2b1e21842741e297db17d0",
+          "sourceText": "Calm down in 30 seconds with the physiological sigh",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "ee2c33f0f54000ace4d8bd4d4947d68b6ac5f3e967debecea1ad44deb68819f3",
+          "sourceText": "Breathing Exercises for Stress",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "fa912317e905c957a6b9299ac8e335a99952c308b4a74d51c45032bafb8476f1",
+          "sourceText": "You don't need to find a quiet room. The physiological sigh works at your desk, in a meeting, or in traffic. Just pause your current train of thought.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "906c2281496a572203a7c5e74f445e436eb3f4ebbf6b7e4af59ae8d8f079f1a3",
+          "sourceText": "Pause what you're doing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "f5a3319576b25975fd05af1bc00bee9d8faf8887759588f293dfd8a25d279b32",
+          "sourceText": "2 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "fd75a9e5294981e9dc4089f0f7aa47699a590ea2816fc9825299bd132b8893de",
+          "sourceText": "Breathe in through your nose until your lungs feel full. Let your belly expand rather than your chest.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "f18bd91cd85160a6c6db94a517a014d742b98d66dff5a16480e870caa49186d1",
+          "sourceText": "First inhale through your nose",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "8e2db17becacd6e83a56049641f2d2594639605df3140e1b25f118140e5f24c8",
+          "sourceText": "3-4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "dddc46a63dcaa5b4ec81ce761ffb9fb6269b61b86f04e2b38ae5bacbf9cfdf23",
+          "sourceText": "Take a second, shorter breath on top of the first one. This fills the upper lungs completely. Don't force it. It's like a sip of air.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "aa12bae77f24b5ef3cdd1030eb19dc35cc372984762939d05554b08b3a0849c0",
+          "sourceText": "Second inhale (the top-up)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "c75d29e33bde84dcac6cc2ae1a0d75dd8d1f40e6a384b62f5541163e3788f59a",
+          "sourceText": "1-2 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "76c683aff956c907fe4c0e7f2bd3aa59aeaad65955ef406eccfaafaee8fdd617",
+          "sourceText": "Exhale slowly through your mouth or nose. Make it longer than both inhales combined. Let your shoulders drop as you exhale.",
+          "status": "repo-reviewed-replacement"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "bfe0fe2efae3bfb799b75c769d5fd96f67081c85edf1e2f5d22da010d87ee868",
+          "sourceText": "Long, slow exhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "d0d78b02bf9528df659c59b2f7571ba0391524054912245d54c453c77b007e99",
+          "sourceText": "6-8 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "ef23bfbe1ceb8c54173c7c4f881cc526df61a5bcaebaa8894b2b0e5af7cfca21",
+          "sourceText": "One sigh often provides noticeable relief. For deeper stress, do 2-3 sighs. For daily practice, continue for 2-5 minutes.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "facd6cfc291773a79e7fa3574f31d3b81fcc1ff7cb5bc7bc86bcbbf9fcfc4c4a",
+          "sourceText": "Repeat 1-2 more times if needed",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "eb5a88cac9bbc83980555fa71bf7c2630e7376edce16b0366dc5c3b4cdbe8d25",
+          "sourceText": "As needed",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "a0e0695d0ebab5795178f5251a715bc5a49be7fcbafc654bcb3351d58b471f2a",
+          "sourceText": "The second inhale is key. It's what makes this a 'physiological' sigh, not just a deep breath",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "4fa0612b35a966b37a33778220d91dfd632a4b9fbdbd26e46bf469e315195ed2",
+          "sourceText": "You can do this invisibly in meetings, just make the exhale through your nose",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "fc162b52496887e2a2668458aaa477470cf9665f0c5b1ac1dae901c3260e7b2e",
+          "sourceText": "For chronic stress, practice 5 minutes of cyclic sighing daily (multiple sighs in a row)",
+          "status": "repo-reviewed-replacement"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "7a2acc57022c128b7d954bf56f2ac68489cbd30531de4396ca26660503844566",
+          "sourceText": "Pair with a physical 'shake off', drop your shoulders, unclench your jaw",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "384f9449789a3396ec36d68ab3b9ec6fe62715e336e7b1a2272036f07d7e0c2b",
+          "sourceText": "The fastest breathing technique for stress relief—works in 30 seconds. The Stanford-tested physiological sigh is more effective than meditation for real-time stress reduction. Free guided tool.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "04527d7bc53f8d696d4226eafe322e3f62c0d5ac8c8af73c21029d02b060ac59",
+          "sourceText": "The Stanford-tested breathing technique that beats meditation for stress relief. Works in 30 seconds. Free tool.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "ca5883db568349f438589d0904a82fe225930ee2c122f0e95f872760129878f9",
+          "sourceText": "Breathing Exercises for Stress — Calm Down in 30 Seconds",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "b17719855193f2ca6a3bc32c01847fad78eb388d469c4149329841d3a68bfb87",
+          "sourceText": "Breathing Exercises for Stress — Calm Down in 30 Seconds (Free Tool) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "3bd9e2401a16e6b8d1a95473e68d254242f5b6e1116118d554e64708c87d92dc",
+          "sourceText": "Stanford-tested breathing technique calms stress in 30 seconds. Free guided tool.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "88f29314cb8039283c33d952bec475add5911f49d4828e43dfd6ef8cd125d9e4",
+          "sourceText": "Breathing Exercises for Stress — 30 Second Reset",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "69d1df817f47e694186d7479ed369f2cb898fa0f73c3126e02f6bbb47399c90f",
+          "sourceText": "Your body's stress response evolved to help you escape predators, not answer emails. When stress becomes chronic, your sympathetic nervous system stays activated: cortisol floods your bloodstream, your heart rate stays elevated, your muscles stay tense. This 'always-on' state drains your energy, disrupts sleep, clouds thinking, and over time contributes to serious health issues. The challenge isn't avoiding stress. It's learning to reset your nervous system quickly and often.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "194b085982240f183787f93d0deb4e61fcd20fdfbae87fe8f5a9d92cfccba89f",
+          "sourceText": "The Stress Response That Won't Turn Off",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "274a8786560c701bf1ace2fe15ef2b979557e721918d17aa462376d4a3e55eb3",
+          "sourceText": "Constant mental tension and inability to relax",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "60000a0f90ef9a14a0c004c790a64d7b1970c7093b192aaaa44c52762f2df625",
+          "sourceText": "Muscle tightness in shoulders, neck, and jaw",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "26833553f95e870c3845ece2c0b6142eb47d0170653e6126824bc1ca029cff72",
+          "sourceText": "Racing thoughts that jump between worries",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "508db7bf3042e8ae9dcd60d22d9ef954eeb80884be3f1a78ab97c7fa6868e411",
+          "sourceText": "Difficulty concentrating on one thing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "a5a8c2fac2753485ba98d7c59f0458b900a4b6a96585e2e3890e95688ce0c2bc",
+          "sourceText": "Feeling tired but wired",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "bf2a111f39f65808a9f67876bd6e372cc3d7370ac4b89dc3987e673021dff0e7",
+          "sourceText": "Shallow, rapid breathing without noticing",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "2b790c9bcabb090fc1f769a5c0b7bbfd59f9960e2a0d330f84a6db3ea44f06a2",
+          "sourceText": "RCT comparing breathwork protocols to mindfulness meditation found cyclic sighing produced the largest improvements in mood and respiratory rate.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "910f33300e22b61cb84863c1027a95f55f26dc17c282d4de194691d048ca9f75",
+          "sourceText": "Balban et al., 2023 - Cell Reports Medicine",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "1ea080ed6e7c9ad39d0e56aa106c0566c0009371eaa98cdd03aa6c1f9c6083f0",
+          "sourceText": "Meta-analysis of breathwork RCTs found small-to-moderate reductions in stress, anxiety, and depressive symptoms.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "361da0bc83864d05b5f4e52ad4a5d57db1b4e9129cbfbe2c8d511b8f61a13f80",
+          "sourceText": "Fincham et al., 2023 - Scientific Reports",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "bd7afd39a4403c62ff2bbb6df167d9cf30734542062d60c1b6c724a4cd6c19b7",
+          "sourceText": "Systematic review found slow breathing reliably increases heart rate variability, a marker of stress resilience.",
+          "status": "route-catalog-normalized"
+        },
+        "references[2].title": {
+          "sourceHash": "c9d7276a85c0b92b54d52592d474c0e673aa0f318dc9613522d60b382e88298a",
+          "sourceText": "Laborde et al., 2022 - Psychophysiology",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "3d4c2305da3bb74fb5ee3166bfa2abe345509e955b7ebdcce638f62eb4f64a86",
+          "sourceText": "Try the full physiological sigh technique with our guided visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "7ca9228da50bba2819f08d29aa0f18881cd33ded91b5264c1cfc9d5696915359",
+          "sourceText": "For clinical anxiety or panic, box breathing provides structured relief",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "4f8fed5287abe0fc306c9ae038460b15552a7ad8c7a1c0dda1cf2805b21134e8",
+          "sourceText": "Once stress is cleared, coherent breathing helps maintain calm focus",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "e732b7c1e84e68ed0e2cff6cbb42dcae07349cbd38e6618b6ddd6b7c297b4ecb",
+          "sourceText": "Use the physiological sigh to wind down before bed, then switch to 4-7-8 for sleep",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[3].teaser": {
+          "sourceHash": "268e8b192e0c935c121106ab1efa31eb8a2c591e9d0f8c84cf5ba361a41e4bc9",
+          "sourceText": "Teaching kids to manage stress? Simple breathing games they can use at school or home",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[4].teaser": {
+          "sourceHash": "08f1d1e26917e35c2aa1848d065d0dce0744285eb058f7ea326cf0caaa61e181",
+          "sourceText": "All 6 Huberman Lab breathing protocols matched to your stress type.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "3d86ce605ab64a1005cf932df03f83019609f349e20d72996837f5fa55e53a1b",
+          "sourceText": "The Science of Stress Relief",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "2b9999da3a1b2c7a81b51e86f6d06757574e6f0c9d9208f7148a55ce10b2dd34",
+          "sourceText": "The long exhale stimulates the vagus nerve, which runs from your brainstem to your gut. This activates your parasympathetic nervous system, the calming counterbalance to stress.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "c7a452daf06299bccfb1672d08426e3266868caeb6f534287c38cad5bf74490a",
+          "sourceText": "Vagal activation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "622d222ecc8dc6b69068bf86e2bc2cf7064e9371891970efbbb7a2a0ac1cade2",
+          "sourceText": "The double inhale reopens collapsed air sacs in your lungs. This improves oxygen exchange and sends 'safety' signals to your brain.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "d234914dd635106f384fbab809e9b5a570177658414efff2f1d344f46f7d8ece",
+          "sourceText": "Alveolar reinflation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "5845a8194d096a482ed92b53c1cfa48b8e1b760a519eccd47ca9d81eccb16aef",
+          "sourceText": "Stress often causes over-breathing, which depletes CO2 and causes anxiety symptoms like tingling and dizziness. The slow exhale helps normalize CO2 levels.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "e834981fe629ba1d880a7cf4562bd99a8558d8a966d712cdcef6d60ed9a0e4e6",
+          "sourceText": "CO2 normalization",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "4f1212aeb43979a1fc4db2182a883460cc73df6ca0164cc791ba7478fc3560be",
+          "sourceText": "Controlled breathing can lower cortisol (the stress hormone) within minutes, reducing the physical wear of chronic stress on your body.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "73807a3ad112d9445eb297187939068d58c763843546c0a64394ce03a6c0816e",
+          "sourceText": "Cortisol reduction",
+          "status": "route-catalog-normalized"
+        },
+        "solution.content": {
+          "sourceHash": "3e337e5cfe652dfcf79af1f28c0feca76cfeef0e0451de92871604dbfa776bb7",
+          "sourceText": "The physiological sigh is a double inhale followed by a long exhale, a pattern your body uses naturally when crying or transitioning from sleep. Done deliberately, it's a quick way to shift from stress to calm. [A 2023 Stanford study found that just 5 minutes of daily 'cyclic sighing' improved mood more than mindfulness meditation](https://doi.org/10.1016/j.xcrm.2022.100895). For acute stress, even 1-3 sighs (about 30 seconds) can noticeably reduce tension.",
+          "status": "repo-reviewed-manual"
+        },
+        "solution.heading": {
+          "sourceHash": "300d0021bbbb312086bf248e1f9ad53231fa9f357f62207543b2157fa3b1e71f",
+          "sourceText": "The Physiological Sigh: Your 30-Second Reset",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "536008afbfa86eb0f29a9aa5e8920bfbc4b49cd0f7d13e6a530fe9775094df46",
+          "sourceText": "The double inhale reinflates collapsed lung tissue, maximizing oxygen exchange. The long exhale directly stimulates your vagus nerve, shifting your nervous system from 'fight-or-flight' to 'rest-and-digest.' Unlike techniques that require minutes of practice, the physiological sigh works in seconds because it leverages your body's built-in calming reflex.",
+          "status": "route-catalog-exact"
+        },
+        "video.description": {
+          "sourceHash": "b6526fd10c63ff6754ba6b0f3c18805830507f6d50fd2c83e1ec64af30f2b60c",
+          "sourceText": "Stanford neuroscientist Dr. Andrew Huberman demonstrates the physiological sigh: the fastest way to reduce stress in real-time. This technique works in just 1-3 breaths.",
+          "status": "route-catalog-normalized"
+        },
+        "video.title": {
+          "sourceHash": "2c439c44bc008e8dd6ff0f0052ba000a65e2e1538aba76db7a058503a1de1d12",
+          "sourceText": "Dr. Andrew Huberman Explains the Physiological Sigh",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "c0003401c587525f18c94ff5fe3fe2cd37f2b768cb01bfcab2a19b7ed3825808",
+          "sourceText": "The best breathing exercises for stress are the physiological sigh (two quick inhales, long exhale) for immediate relief, box breathing for steady calm, and belly breathing for gentle downshifting. Start with 30-60 seconds of sighs, then 2-5 minutes of slow, easy breaths.",
+          "status": "repo-reviewed-replacement"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "598cf6691257f796c91db9fd43aaa8dc3dbcd7a309acaa636812ae455d89d427",
+          "sourceText": "What are the best breathing exercises for stress?",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "pt-br": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "2262a33791016722580d031680ed6958ca2552f711ef535f54a37798dfe5334c",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "fd75a0c1418a75fb7860da61b872c9881106748e5beac6d999f31ad4b09d2a60",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-focus-title": {
+          "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-huberman-title": {
+          "sourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-kids-title": {
+          "sourceHash": "7696120540243ebfa54ae8f92ba7cda3ef477c27e9f3802c0d1b304ccf979643",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.watch-learn": {
+          "sourceHash": "749c5b04beadcb04ba360343552137e698cb4c1ff10cb680445f8b1f9ea5c543",
+          "status": "route-catalog-normalized"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "8d435671ba243fc10a0aea0cb406a7feab35d7a66e371fcc7ee63b8134657c48",
+          "sourceText": "Stress is typically a response to an external trigger (deadlines, traffic, conflict) and often resolves when the trigger is removed. Anxiety can persist without a clear external cause and may involve excessive worry about future events. The physiological sigh works for both, but if you experience persistent anxiety that interferes with daily life, consider speaking with a mental health professional.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].question": {
+          "sourceHash": "872adf10c45abda82af2914be36a07b304380ed10a5fa53e52959c278b4a2c45",
+          "sourceText": "What's the difference between stress and anxiety?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "783e9e83daf2c0c41485295124ea3d2750fab5bb1321e0290ca814f154d7bca1",
+          "sourceText": "Use the physiological sigh whenever you notice stress building. There's no limit. For preventive benefits, the Stanford study found 5 minutes of daily practice improved overall mood. Many people benefit from short 'resets' throughout the day: before meetings, after checking email, during commutes.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "e045b4f11e97f1a131f738062e9cb6b7c1896511a0c3928920d3b0ddb1909674",
+          "sourceText": "How often should I use breathing exercises for stress?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "1a77126ca940cf86f353256b547278cbbb5aaf9c1ab8b956f201f4d5d21281f3",
+          "sourceText": "Regular deep breathing can sometimes increase stress if you over-breathe (depleting CO2). The physiological sigh's double-inhale/long-exhale pattern is specifically designed to maximize parasympathetic activation while normalizing blood chemistry. It's working with your body's natural calming reflex, not against it.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "cf1f51766c8692a6a693c6d76424d189d4a8e3c47fa9919b50c091bd0d9fee84",
+          "sourceText": "Why doesn't regular deep breathing work as well?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "f4442c7fe2e738bc93bde663660ae14464623e22b92741ecda0981f1eb83b722",
+          "sourceText": "Breathing exercises are a complementary tool, not a replacement for medical treatment. They work well alongside therapy, medication, or lifestyle changes. If stress is significantly impacting your life, work, or relationships, consult a healthcare provider for a comprehensive approach.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].question": {
+          "sourceHash": "93572d12e6e9b27a7643c6cb90b80dab95a1ba2178b71e7a90b061f3119a1711",
+          "sourceText": "Can breathing exercises replace medication for stress?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "f40861f47cf98a6f6d61fe0f4125b1872764158321ab7381e71f59031fb1d476",
+          "sourceText": "This can happen if you're over-breathing (taking breaths that are too deep) or focusing too intensely on 'doing it right.' Try making your breaths smaller and quieter. The exhale should feel like a relief, not a strain. If focusing on breath triggers anxiety, start with just one sigh and see how it feels before continuing.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].question": {
+          "sourceHash": "7c788df50c45dcd8b91cbbdff147374c349c2d9a22ce17f8281551f78865cae8",
+          "sourceText": "I tried breathing exercises and they made me more anxious. Why?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "7338ef459e3fd7d1883a4b88fb3b4b11c48f06fbc824158d0bcd82acc4697a62",
+          "sourceText": "Anytime stress arises. That said, many people find proactive practice helpful: first thing in the morning (before checking your phone), during lunch breaks, after meetings, and before bed. Building it into transitions (before/after activities) creates natural reminders.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].question": {
+          "sourceHash": "cf35550980691d63da94661e4a5ca8ef27094e3cbd1eaf76a04e999ae1040d51",
+          "sourceText": "What's the best time of day to practice stress-relief breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[6].answer": {
+          "sourceHash": "88f597b9311e0d972ada91690183748b44e3f5ad214228ff9d18307161ef85be",
+          "sourceText": "The physiological sigh is faster. It works in 1-3 breaths (about 30 seconds). Box breathing takes 2-5 minutes for full effect. Use the physiological sigh as a 'fire extinguisher' for acute, in-the-moment stress. Use box breathing as 'climate control' when you have time for a longer practice and want sustained calm. Both activate the parasympathetic nervous system, but through different mechanisms: the sigh uses a double-inhale to reinflate lung tissue, while box breathing uses breath holds to reset your autonomic rhythm.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[6].question": {
+          "sourceHash": "853873df882ff544e9f3f52bfb9b28a98833246e10a9047d0a0d7dbc547608f3",
+          "sourceText": "How does the physiological sigh compare to box breathing for stress?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "1e02ab256da5648ea24a8e22c7f45cbf41ec1f7b2627540baaba40f5d9225c0f",
+          "sourceText": "Breathing exercises for stress can calm your nervous system in 30 seconds. Deadlines piling up. Notifications buzzing. That constant low-grade tension that won't let go. Stress isn't just 'feeling busy'. It's your nervous system stuck in overdrive, draining your energy and clouding your thinking. The physiological sigh is the fastest way to break the stress response, just 1-3 breaths can shift your state in under 30 seconds.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "788072250c874f36d3179a7b730baf17a89d6c80cd2b1e21842741e297db17d0",
+          "sourceText": "Calm down in 30 seconds with the physiological sigh",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "ee2c33f0f54000ace4d8bd4d4947d68b6ac5f3e967debecea1ad44deb68819f3",
+          "sourceText": "Breathing Exercises for Stress",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "fa912317e905c957a6b9299ac8e335a99952c308b4a74d51c45032bafb8476f1",
+          "sourceText": "You don't need to find a quiet room. The physiological sigh works at your desk, in a meeting, or in traffic. Just pause your current train of thought.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "906c2281496a572203a7c5e74f445e436eb3f4ebbf6b7e4af59ae8d8f079f1a3",
+          "sourceText": "Pause what you're doing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "f5a3319576b25975fd05af1bc00bee9d8faf8887759588f293dfd8a25d279b32",
+          "sourceText": "2 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "fd75a9e5294981e9dc4089f0f7aa47699a590ea2816fc9825299bd132b8893de",
+          "sourceText": "Breathe in through your nose until your lungs feel full. Let your belly expand rather than your chest.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "f18bd91cd85160a6c6db94a517a014d742b98d66dff5a16480e870caa49186d1",
+          "sourceText": "First inhale through your nose",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "8e2db17becacd6e83a56049641f2d2594639605df3140e1b25f118140e5f24c8",
+          "sourceText": "3-4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "dddc46a63dcaa5b4ec81ce761ffb9fb6269b61b86f04e2b38ae5bacbf9cfdf23",
+          "sourceText": "Take a second, shorter breath on top of the first one. This fills the upper lungs completely. Don't force it. It's like a sip of air.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "aa12bae77f24b5ef3cdd1030eb19dc35cc372984762939d05554b08b3a0849c0",
+          "sourceText": "Second inhale (the top-up)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "c75d29e33bde84dcac6cc2ae1a0d75dd8d1f40e6a384b62f5541163e3788f59a",
+          "sourceText": "1-2 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "76c683aff956c907fe4c0e7f2bd3aa59aeaad65955ef406eccfaafaee8fdd617",
+          "sourceText": "Exhale slowly through your mouth or nose. Make it longer than both inhales combined. Let your shoulders drop as you exhale.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "bfe0fe2efae3bfb799b75c769d5fd96f67081c85edf1e2f5d22da010d87ee868",
+          "sourceText": "Long, slow exhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "d0d78b02bf9528df659c59b2f7571ba0391524054912245d54c453c77b007e99",
+          "sourceText": "6-8 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "ef23bfbe1ceb8c54173c7c4f881cc526df61a5bcaebaa8894b2b0e5af7cfca21",
+          "sourceText": "One sigh often provides noticeable relief. For deeper stress, do 2-3 sighs. For daily practice, continue for 2-5 minutes.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "facd6cfc291773a79e7fa3574f31d3b81fcc1ff7cb5bc7bc86bcbbf9fcfc4c4a",
+          "sourceText": "Repeat 1-2 more times if needed",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "eb5a88cac9bbc83980555fa71bf7c2630e7376edce16b0366dc5c3b4cdbe8d25",
+          "sourceText": "As needed",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "a0e0695d0ebab5795178f5251a715bc5a49be7fcbafc654bcb3351d58b471f2a",
+          "sourceText": "The second inhale is key. It's what makes this a 'physiological' sigh, not just a deep breath",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "4fa0612b35a966b37a33778220d91dfd632a4b9fbdbd26e46bf469e315195ed2",
+          "sourceText": "You can do this invisibly in meetings, just make the exhale through your nose",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "fc162b52496887e2a2668458aaa477470cf9665f0c5b1ac1dae901c3260e7b2e",
+          "sourceText": "For chronic stress, practice 5 minutes of cyclic sighing daily (multiple sighs in a row)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "7a2acc57022c128b7d954bf56f2ac68489cbd30531de4396ca26660503844566",
+          "sourceText": "Pair with a physical 'shake off', drop your shoulders, unclench your jaw",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "384f9449789a3396ec36d68ab3b9ec6fe62715e336e7b1a2272036f07d7e0c2b",
+          "sourceText": "The fastest breathing technique for stress relief—works in 30 seconds. The Stanford-tested physiological sigh is more effective than meditation for real-time stress reduction. Free guided tool.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "04527d7bc53f8d696d4226eafe322e3f62c0d5ac8c8af73c21029d02b060ac59",
+          "sourceText": "The Stanford-tested breathing technique that beats meditation for stress relief. Works in 30 seconds. Free tool.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "ca5883db568349f438589d0904a82fe225930ee2c122f0e95f872760129878f9",
+          "sourceText": "Breathing Exercises for Stress — Calm Down in 30 Seconds",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "b17719855193f2ca6a3bc32c01847fad78eb388d469c4149329841d3a68bfb87",
+          "sourceText": "Breathing Exercises for Stress — Calm Down in 30 Seconds (Free Tool) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "3bd9e2401a16e6b8d1a95473e68d254242f5b6e1116118d554e64708c87d92dc",
+          "sourceText": "Stanford-tested breathing technique calms stress in 30 seconds. Free guided tool.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "88f29314cb8039283c33d952bec475add5911f49d4828e43dfd6ef8cd125d9e4",
+          "sourceText": "Breathing Exercises for Stress — 30 Second Reset",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "69d1df817f47e694186d7479ed369f2cb898fa0f73c3126e02f6bbb47399c90f",
+          "sourceText": "Your body's stress response evolved to help you escape predators, not answer emails. When stress becomes chronic, your sympathetic nervous system stays activated: cortisol floods your bloodstream, your heart rate stays elevated, your muscles stay tense. This 'always-on' state drains your energy, disrupts sleep, clouds thinking, and over time contributes to serious health issues. The challenge isn't avoiding stress. It's learning to reset your nervous system quickly and often.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "194b085982240f183787f93d0deb4e61fcd20fdfbae87fe8f5a9d92cfccba89f",
+          "sourceText": "The Stress Response That Won't Turn Off",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "274a8786560c701bf1ace2fe15ef2b979557e721918d17aa462376d4a3e55eb3",
+          "sourceText": "Constant mental tension and inability to relax",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "60000a0f90ef9a14a0c004c790a64d7b1970c7093b192aaaa44c52762f2df625",
+          "sourceText": "Muscle tightness in shoulders, neck, and jaw",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "26833553f95e870c3845ece2c0b6142eb47d0170653e6126824bc1ca029cff72",
+          "sourceText": "Racing thoughts that jump between worries",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "508db7bf3042e8ae9dcd60d22d9ef954eeb80884be3f1a78ab97c7fa6868e411",
+          "sourceText": "Difficulty concentrating on one thing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "a5a8c2fac2753485ba98d7c59f0458b900a4b6a96585e2e3890e95688ce0c2bc",
+          "sourceText": "Feeling tired but wired",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "bf2a111f39f65808a9f67876bd6e372cc3d7370ac4b89dc3987e673021dff0e7",
+          "sourceText": "Shallow, rapid breathing without noticing",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "2b790c9bcabb090fc1f769a5c0b7bbfd59f9960e2a0d330f84a6db3ea44f06a2",
+          "sourceText": "RCT comparing breathwork protocols to mindfulness meditation found cyclic sighing produced the largest improvements in mood and respiratory rate.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "910f33300e22b61cb84863c1027a95f55f26dc17c282d4de194691d048ca9f75",
+          "sourceText": "Balban et al., 2023 - Cell Reports Medicine",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "1ea080ed6e7c9ad39d0e56aa106c0566c0009371eaa98cdd03aa6c1f9c6083f0",
+          "sourceText": "Meta-analysis of breathwork RCTs found small-to-moderate reductions in stress, anxiety, and depressive symptoms.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "361da0bc83864d05b5f4e52ad4a5d57db1b4e9129cbfbe2c8d511b8f61a13f80",
+          "sourceText": "Fincham et al., 2023 - Scientific Reports",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "bd7afd39a4403c62ff2bbb6df167d9cf30734542062d60c1b6c724a4cd6c19b7",
+          "sourceText": "Systematic review found slow breathing reliably increases heart rate variability, a marker of stress resilience.",
+          "status": "route-catalog-normalized"
+        },
+        "references[2].title": {
+          "sourceHash": "c9d7276a85c0b92b54d52592d474c0e673aa0f318dc9613522d60b382e88298a",
+          "sourceText": "Laborde et al., 2022 - Psychophysiology",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "3d4c2305da3bb74fb5ee3166bfa2abe345509e955b7ebdcce638f62eb4f64a86",
+          "sourceText": "Try the full physiological sigh technique with our guided visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "7ca9228da50bba2819f08d29aa0f18881cd33ded91b5264c1cfc9d5696915359",
+          "sourceText": "For clinical anxiety or panic, box breathing provides structured relief",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "4f8fed5287abe0fc306c9ae038460b15552a7ad8c7a1c0dda1cf2805b21134e8",
+          "sourceText": "Once stress is cleared, coherent breathing helps maintain calm focus",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "e732b7c1e84e68ed0e2cff6cbb42dcae07349cbd38e6618b6ddd6b7c297b4ecb",
+          "sourceText": "Use the physiological sigh to wind down before bed, then switch to 4-7-8 for sleep",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[3].teaser": {
+          "sourceHash": "268e8b192e0c935c121106ab1efa31eb8a2c591e9d0f8c84cf5ba361a41e4bc9",
+          "sourceText": "Teaching kids to manage stress? Simple breathing games they can use at school or home",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[4].teaser": {
+          "sourceHash": "08f1d1e26917e35c2aa1848d065d0dce0744285eb058f7ea326cf0caaa61e181",
+          "sourceText": "All 6 Huberman Lab breathing protocols matched to your stress type.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "3d86ce605ab64a1005cf932df03f83019609f349e20d72996837f5fa55e53a1b",
+          "sourceText": "The Science of Stress Relief",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "2b9999da3a1b2c7a81b51e86f6d06757574e6f0c9d9208f7148a55ce10b2dd34",
+          "sourceText": "The long exhale stimulates the vagus nerve, which runs from your brainstem to your gut. This activates your parasympathetic nervous system, the calming counterbalance to stress.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "c7a452daf06299bccfb1672d08426e3266868caeb6f534287c38cad5bf74490a",
+          "sourceText": "Vagal activation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "622d222ecc8dc6b69068bf86e2bc2cf7064e9371891970efbbb7a2a0ac1cade2",
+          "sourceText": "The double inhale reopens collapsed air sacs in your lungs. This improves oxygen exchange and sends 'safety' signals to your brain.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "d234914dd635106f384fbab809e9b5a570177658414efff2f1d344f46f7d8ece",
+          "sourceText": "Alveolar reinflation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "5845a8194d096a482ed92b53c1cfa48b8e1b760a519eccd47ca9d81eccb16aef",
+          "sourceText": "Stress often causes over-breathing, which depletes CO2 and causes anxiety symptoms like tingling and dizziness. The slow exhale helps normalize CO2 levels.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "e834981fe629ba1d880a7cf4562bd99a8558d8a966d712cdcef6d60ed9a0e4e6",
+          "sourceText": "CO2 normalization",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "4f1212aeb43979a1fc4db2182a883460cc73df6ca0164cc791ba7478fc3560be",
+          "sourceText": "Controlled breathing can lower cortisol (the stress hormone) within minutes, reducing the physical wear of chronic stress on your body.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "73807a3ad112d9445eb297187939068d58c763843546c0a64394ce03a6c0816e",
+          "sourceText": "Cortisol reduction",
+          "status": "route-catalog-normalized"
+        },
+        "solution.content": {
+          "sourceHash": "3e337e5cfe652dfcf79af1f28c0feca76cfeef0e0451de92871604dbfa776bb7",
+          "sourceText": "The physiological sigh is a double inhale followed by a long exhale, a pattern your body uses naturally when crying or transitioning from sleep. Done deliberately, it's a quick way to shift from stress to calm. [A 2023 Stanford study found that just 5 minutes of daily 'cyclic sighing' improved mood more than mindfulness meditation](https://doi.org/10.1016/j.xcrm.2022.100895). For acute stress, even 1-3 sighs (about 30 seconds) can noticeably reduce tension.",
+          "status": "repo-reviewed-manual"
+        },
+        "solution.heading": {
+          "sourceHash": "300d0021bbbb312086bf248e1f9ad53231fa9f357f62207543b2157fa3b1e71f",
+          "sourceText": "The Physiological Sigh: Your 30-Second Reset",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "536008afbfa86eb0f29a9aa5e8920bfbc4b49cd0f7d13e6a530fe9775094df46",
+          "sourceText": "The double inhale reinflates collapsed lung tissue, maximizing oxygen exchange. The long exhale directly stimulates your vagus nerve, shifting your nervous system from 'fight-or-flight' to 'rest-and-digest.' Unlike techniques that require minutes of practice, the physiological sigh works in seconds because it leverages your body's built-in calming reflex.",
+          "status": "route-catalog-exact"
+        },
+        "video.description": {
+          "sourceHash": "b6526fd10c63ff6754ba6b0f3c18805830507f6d50fd2c83e1ec64af30f2b60c",
+          "sourceText": "Stanford neuroscientist Dr. Andrew Huberman demonstrates the physiological sigh: the fastest way to reduce stress in real-time. This technique works in just 1-3 breaths.",
+          "status": "route-catalog-normalized"
+        },
+        "video.title": {
+          "sourceHash": "2c439c44bc008e8dd6ff0f0052ba000a65e2e1538aba76db7a058503a1de1d12",
+          "sourceText": "Dr. Andrew Huberman Explains the Physiological Sigh",
+          "status": "repo-reviewed-manual"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "c0003401c587525f18c94ff5fe3fe2cd37f2b768cb01bfcab2a19b7ed3825808",
+          "sourceText": "The best breathing exercises for stress are the physiological sigh (two quick inhales, long exhale) for immediate relief, box breathing for steady calm, and belly breathing for gentle downshifting. Start with 30-60 seconds of sighs, then 2-5 minutes of slow, easy breaths.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "598cf6691257f796c91db9fd43aaa8dc3dbcd7a309acaa636812ae455d89d427",
+          "sourceText": "What are the best breathing exercises for stress?",
+          "status": "route-catalog-exact"
+        }
+      }
+    }
+  },
+  "schemaVersion": 1,
+  "sourceRoute": "/for/stress"
+}

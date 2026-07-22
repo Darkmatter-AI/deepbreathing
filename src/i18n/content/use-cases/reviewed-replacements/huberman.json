@@ -1,0 +1,69 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "Las 6 técnicas de respiración que el Dr. Andrew Huberman recomienda: suspiro fisiológico, respiración cuadrada (box breathing), respiración coherente y",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Las 6 técnicas de respiración que recomienda el Dr. Andrew Huberman: suspiro fisiológico, respiración cuadrada, respiración coherente y más. Elige el protocolo adecuado para tu objetivo. Temporizadores guiados gratuitos.",
+      "reviewedSourceHash": "1efd409b0cf20a629611f610d8ea04e14ccbf9703a061efdf64edd0fad43f0fb",
+      "sourcePath": "meta.description",
+      "sourceText": "All 6 breathing techniques Dr. Andrew Huberman recommends: physiological sigh, box breathing, coherent breathing, and more. Match the right protocol to your goal. Free guided timers."
+    },
+    {
+      "currentCatalogValue": "Las 6 técnicas de respiración que el Dr. Andrew Huberman recomienda: suspiro fisiológico, respiración cuadrada (box breathing), respiración coherente y",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Todas las técnicas de respiración que recomienda el Dr. Huberman, desde el suspiro fisiológico hasta la respiración cuadrada. Temporizadores guiados gratuitos para cada protocolo.",
+      "reviewedSourceHash": "7f9905d4459c1103d8c8d757cfe570f38bcfead8bb6eabd67e8737f8cd537f1b",
+      "sourcePath": "meta.ogDescription",
+      "sourceText": "Every breathing technique Dr. Huberman recommends, from physiological sigh to box breathing. Free guided timers for each protocol."
+    },
+    {
+      "currentCatalogValue": "Protocolos de Respiración de Huberman: 6 Técnicas para el",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Protocolos de respiración de Huberman Lab: 6 técnicas para tu objetivo",
+      "reviewedSourceHash": "c9b2146b7282f41461d1329460632244fa72f0c3d6702999b3df6e8dbacbf4a5",
+      "sourcePath": "meta.ogTitle",
+      "sourceText": "Huberman Lab Breathing Protocols: 6 Techniques Matched to Your Goal"
+    },
+    {
+      "currentCatalogValue": "Protocolos de Respiración de Huberman: 6 Técnicas para el",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Protocolos de respiración de Huberman: 6 técnicas para el estrés, el sueño y la concentración (temporizadores gratuitos)",
+      "reviewedSourceHash": "868aabc84319e439452e40bb6b1f511e13ef7ff5736d7c7daf678e53ce51942d",
+      "sourcePath": "meta.title",
+      "sourceText": "Huberman Breathing Protocols: 6 Techniques for Stress, Sleep & Focus (Free Timers)"
+    },
+    {
+      "currentCatalogValue": "Pratique o suspiro fisiológico Huberman",
+      "locale": "pt-br",
+      "reason": "The approved title is a call to practice one technique and loses the six-protocol page scope.",
+      "replacement": "Protocolos de respiração de Huberman: 6 técnicas para estresse, sono e foco (temporizadores gratuitos)",
+      "reviewedSourceHash": "868aabc84319e439452e40bb6b1f511e13ef7ff5736d7c7daf678e53ce51942d",
+      "sourcePath": "meta.title",
+      "sourceText": "Huberman Breathing Protocols: 6 Techniques for Stress, Sleep & Focus (Free Timers)"
+    },
+    {
+      "currentCatalogValue": "Las 6 técnicas de respiración que el Dr. Andrew Huberman recomienda: suspiro fisiológico, respiración cuadrada (box breathing), respiración coherente y",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Las 6 técnicas de respiración de Huberman Lab para objetivos de estrés, sueño y concentración. Temporizadores gratuitos.",
+      "reviewedSourceHash": "855fc9cbc6e40000de556ed3bd6a7d7fa6bca14dc90be90cfe0e82f242ae921e",
+      "sourcePath": "meta.twitterDescription",
+      "sourceText": "All 6 Huberman Lab breathing techniques matched to stress, sleep & focus goals. Free timers."
+    },
+    {
+      "currentCatalogValue": "Protocolos de Respiración de Huberman: 6 Técnicas para el",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Protocolos de respiración de Huberman: 6 técnicas (temporizadores gratuitos)",
+      "reviewedSourceHash": "75deae0f2a75ecac67477fa813d1fe1e4a518b4e51ec1621b41fc07731bebbc4",
+      "sourcePath": "meta.twitterTitle",
+      "sourceText": "Huberman Breathing Protocols: 6 Techniques (Free Timers)"
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/huberman"
+}

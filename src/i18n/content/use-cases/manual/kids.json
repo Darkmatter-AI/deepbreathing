@@ -1,0 +1,75 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.use-case.box-breathing-name",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095",
+      "scope": "chrome",
+      "sourceText": "Box Breathing",
+      "translations": {
+        "de-de": "Box Breathing",
+        "fr-fr": "Respiration en carré",
+        "ja-jp": "ボックス呼吸",
+        "pt-br": "Respiração em caixa"
+      }
+    },
+    {
+      "messageId": "chrome.use-case.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "3d4e1df147583f32dd5a40c3d1a2aca8d8421feb3b7d575b79b34bf06d27e6c5",
+      "scope": "chrome",
+      "sourceText": "Try this guided breathing exercise for deep breathing exercises for kids.",
+      "translations": {
+        "de-de": "Probiere diese geführte Atemübung für tiefes Atmen bei Kindern.",
+        "es-es": "Prueba este ejercicio de respiración guiada para ejercicios de respiración profunda para niños.",
+        "fr-fr": "Essayez cet exercice de respiration guidée pour des exercices de respiration profonde pour les enfants.",
+        "ja-jp": "お子さま向けの深呼吸エクササイズとして、このガイド付き呼吸エクササイズをお試しください。",
+        "pt-br": "Experimente este exercício de respiração guiada para exercícios de respiração profunda para crianças."
+      }
+    },
+    {
+      "messageId": "chrome.use-case.learn-box-breathing",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "77e3c5fdb098a727e4a3b38cb4b78ed851d9032b53bb0c59440f74b2bef1ffec",
+      "scope": "chrome",
+      "sourceText": "Learn more about Box Breathing →",
+      "translations": {
+        "de-de": "Mehr über Box Breathing erfahren →",
+        "es-es": "Más información sobre la respiración en caja →",
+        "fr-fr": "En savoir plus sur la respiration en carré →",
+        "ja-jp": "ボックス呼吸について詳しく見る →",
+        "pt-br": "Saiba mais sobre a respiração em caixa →"
+      }
+    },
+    {
+      "messageId": "relatedTechnique.callToAction",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "9cce245efc10bb6e4784af545be7b356c179aabab99b5a3cbcecb96200a0c445",
+      "scope": "content",
+      "sourceText": "Learn the full Box Breathing technique",
+      "translations": {
+        "de-de": "Lerne die vollständige Box-Breathing-Technik",
+        "es-es": "Aprende la técnica completa de respiración en caja",
+        "fr-fr": "Apprenez la technique complète de respiration en carré",
+        "ja-jp": "ボックス呼吸の手法をすべて学ぶ",
+        "pt-br": "Aprenda a técnica completa de respiração em caixa"
+      }
+    },
+    {
+      "messageId": "science.points[0].explanation",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "ffb4535649c0870c9101812aaa6d8d1dec10792e66623c6d473bd5cd2cb01e1d",
+      "scope": "content",
+      "sourceText": "Slow breathing activates the vagus nerve, which triggers the parasympathetic nervous system, the body's natural 'brake pedal' that counters fight-or-flight responses. [This works in children just as it does in adults](https://doi.org/10.1111/jcpp.12980).",
+      "translations": {
+        "de-de": "Langsames Atmen aktiviert den Vagusnerv, der das parasympathische Nervensystem auslöst, den natürlichen „Bremspedal“-Mechanismus des Körpers, der Kampf-oder-Flucht-Reaktionen entgegenwirkt. [Das wirkt bei Kindern genauso wie bei Erwachsenen](https://doi.org/10.1111/jcpp.12980).",
+        "es-es": "La respiración lenta activa el nervio vago, que activa el sistema nervioso parasimpático, el «pedal de freno» natural del cuerpo que contrarresta las respuestas de lucha o huida. [Esto funciona en los niños igual que en los adultos](https://doi.org/10.1111/jcpp.12980).",
+        "fr-fr": "Une respiration lente active le nerf vague, qui déclenche le système nerveux parasympathique, le « frein » naturel du corps qui contrebalance les réactions de combat ou de fuite. [Cela fonctionne chez les enfants comme chez les adultes](https://doi.org/10.1111/jcpp.12980).",
+        "ja-jp": "ゆっくりとした呼吸は迷走神経を活性化し、闘争・逃走反応に対抗する身体の自然な「ブレーキ」である副交感神経系を起動します。[これは大人と同様に子どもにも効果があります](https://doi.org/10.1111/jcpp.12980)。",
+        "pt-br": "A respiração lenta ativa o nervo vago, que aciona o sistema nervoso parassimpático, o «pedal de freio» natural do corpo que contraria as respostas de luta ou fuga. [Isso funciona em crianças assim como em adultos](https://doi.org/10.1111/jcpp.12980)."
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/kids"
+}

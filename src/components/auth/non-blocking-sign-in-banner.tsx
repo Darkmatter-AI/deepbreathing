@@ -20,6 +20,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { X, Check, Loader2 } from "lucide-react";
 import { signIn } from "@/lib/auth-client";
+import type { ResonanceRouteClientMessages } from "@/i18n/content/remaining-pages/rw02-route-client/types";
 
 function trackEvent(name: string, params?: Record<string, string | number | boolean>) {
   if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
@@ -37,6 +38,7 @@ interface NonBlockingSignInBannerProps {
   sessionSeconds: number;
   accentColor?: string;
   layout?: BannerLayout;
+  messages?: ResonanceRouteClientMessages;
 }
 
 const PREFIX = "nbb"; // non-blocking banner
@@ -55,6 +57,7 @@ export function NonBlockingSignInBanner({
   sessionSeconds,
   accentColor = "#f6743b",
   layout = "card",
+  messages,
 }: NonBlockingSignInBannerProps) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
@@ -146,12 +149,16 @@ export function NonBlockingSignInBanner({
         <span className={`${PREFIX}-blob`} style={{ background: accentColor }} aria-hidden="true" />
       </div>
       <div className={`${PREFIX}-card-text`}>
-        <div className={`${PREFIX}-eyebrow`}>✓ SESSION COMPLETE</div>
-        <div className={`${PREFIX}-mode`}>{sessionMode}</div>
+        <div className={`${PREFIX}-eyebrow`}>
+          {messages?.sessionComplete ?? "✓ SESSION COMPLETE"}
+        </div>
+        <div className={`${PREFIX}-mode`}>
+          {messages?.modeName ?? sessionMode}
+        </div>
         <div className={`${PREFIX}-meta`}>
           <span className={`${PREFIX}-dur`}>{duration}</span>
           <span className={`${PREFIX}-dot`} aria-hidden="true">·</span>
-          <span>just now</span>
+          <span>{messages?.justNow ?? "just now"}</span>
         </div>
       </div>
     </div>
@@ -160,7 +167,11 @@ export function NonBlockingSignInBanner({
   return (
     <div className={`${PREFIX}-root ${PREFIX}-${layout}${visible ? " open" : ""}`} aria-hidden={!visible}>
       <style>{CSS}</style>
-      <div className={`${PREFIX}-panel`} role="dialog" aria-label="Save your session">
+      <div
+        className={`${PREFIX}-panel`}
+        role="dialog"
+        aria-label={messages?.saveSessionAria ?? "Save your session"}
+      >
         {layout === "pill" ? (
           <>
             {SessionCard}
@@ -188,16 +199,26 @@ export function NonBlockingSignInBanner({
           </div>
         ) : (
           <>
-            <button className={`${PREFIX}-x ${PREFIX}-x-card`} onClick={handleClose} aria-label="Close">
+            <button
+              className={`${PREFIX}-x ${PREFIX}-x-card`}
+              onClick={handleClose}
+              aria-label={messages?.closeAria ?? "Close"}
+            >
               <X size={16} />
             </button>
-            <h2 className={`${PREFIX}-title`}>Save your breathing practice journey</h2>
+            <h2 className={`${PREFIX}-title`}>
+              {messages?.title ?? "Save your breathing practice journey"}
+            </h2>
             {SessionCard}
             <button className={`${PREFIX}-google`} onClick={handleGoogle}>
               {GoogleLogo}
               <span className={`${PREFIX}-g-text`}>
-                <span className={`${PREFIX}-g-label`}>Continue with Google</span>
-                <span className={`${PREFIX}-g-sub`}>One tap. No password.</span>
+                <span className={`${PREFIX}-g-label`}>
+                  {messages?.continueWithGoogle ?? "Continue with Google"}
+                </span>
+                <span className={`${PREFIX}-g-sub`}>
+                  {messages?.oneTapNoPassword ?? "One tap. No password."}
+                </span>
               </span>
             </button>
 
@@ -208,12 +229,16 @@ export function NonBlockingSignInBanner({
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email"
-                  aria-label="Email address"
+                  placeholder={messages?.emailPlaceholder ?? "Enter your email"}
+                  aria-label={messages?.emailAddressAria ?? "Email address"}
                   required
                 />
                 <button className={`${PREFIX}-magic`} type="submit" disabled={sending || !email.trim()}>
-                  {sending ? <Loader2 size={15} className={`${PREFIX}-spin`} /> : "Send link"}
+                  {sending ? (
+                    <Loader2 size={15} className={`${PREFIX}-spin`} />
+                  ) : (
+                    messages?.sendLink ?? "Send link"
+                  )}
                 </button>
               </form>
               {status === "error" && <p className={`${PREFIX}-err`}>Something went wrong. Please try again.</p>}
@@ -221,7 +246,7 @@ export function NonBlockingSignInBanner({
 
             <div className={`${PREFIX}-row2`}>
               <button className={`${PREFIX}-textbtn`} onClick={() => setEmailOpen((v) => !v)} aria-expanded={emailOpen}>
-                or save with email
+                {messages?.saveWithEmail ?? "or save with email"}
               </button>
             </div>
           </>

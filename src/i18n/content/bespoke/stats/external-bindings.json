@@ -1,0 +1,198 @@
+{
+  "bindings": [
+    {
+      "messageId": "pattern.belly.description",
+      "reason": "Reuse the approved breathing-visualizer catalog value for the same pattern label shown on authenticated stats.",
+      "reviewedSourceHash": "4d7fcbb841e8d21479a1422efdc5a61b526064a6e4a486ca4a48b36c2804e22a",
+      "sourceText": "Diaphragmatic Breathing Foundation (4-0-6-0)",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:14"
+    },
+    {
+      "messageId": "pattern.belly.name",
+      "reason": "Reuse the approved breathing-visualizer catalog value for the same pattern label shown on authenticated stats.",
+      "reviewedSourceHash": "14d35bc6474aed9ec9a54f70bb6ae2532b4a214d790df0733877147014ea521a",
+      "sourceText": "Belly Breathing",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:14"
+    },
+    {
+      "messageId": "pattern.box.description",
+      "reason": "Reuse the approved breathing-visualizer catalog value for the same pattern label shown on authenticated stats.",
+      "reviewedSourceHash": "ee391164f2071fff155d7c0940b42168ecd0f512199e4381a06a271806e713b0",
+      "sourceText": "Focus & Stress Reduction (4-4-4-4)",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:6"
+    },
+    {
+      "messageId": "pattern.box.name",
+      "reason": "Reuse the approved breathing-visualizer catalog value for the same pattern label shown on authenticated stats.",
+      "reviewedSourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095",
+      "sourceText": "Box Breathing",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:6"
+    },
+    {
+      "messageId": "pattern.breathOfFire.description",
+      "reason": "Reuse the approved breathing-visualizer catalog value for the same pattern label shown on authenticated stats.",
+      "reviewedSourceHash": "9dc6463fe1310ed7e92e8b0819ae9de3a771706f2598ffc8eb29a308b1c5e24b",
+      "sourceText": "Rapid Rhythmic Breathing (0.75-0-0.75-0)",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:17"
+    },
+    {
+      "messageId": "pattern.breathOfFire.name",
+      "reason": "Reuse the approved breathing-visualizer catalog value for the same pattern label shown on authenticated stats.",
+      "reviewedSourceHash": "5fb28125b2b9c2ab47833de780c06b0765cc962559e09159f3349f3217383e47",
+      "sourceText": "Breath of Fire",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:17"
+    },
+    {
+      "messageId": "pattern.buteyko.description",
+      "reason": "Reuse the approved breathing-visualizer catalog value for the same pattern label shown on authenticated stats.",
+      "reviewedSourceHash": "06a3a698355a962d857697259569e2c611313b9772eb7ff9e027d09fa71e29dc",
+      "sourceText": "Light Nasal Breathing (3-0-3-3)",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:15"
+    },
+    {
+      "messageId": "pattern.buteyko.name",
+      "reason": "Reuse the approved breathing-visualizer catalog value for the same pattern label shown on authenticated stats.",
+      "reviewedSourceHash": "e0819f5a9eff8dffd64446781bf123b8b2070e9f27c6cf650f79debb76efbf15",
+      "sourceText": "Buteyko Breathing",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:15"
+    },
+    {
+      "messageId": "pattern.coherent.description",
+      "reason": "Reuse the approved breathing-visualizer catalog value for the same pattern label shown on authenticated stats.",
+      "reviewedSourceHash": "464d74fe901b6f34df442e2d5cdacc64ee78b031858bb7b10dc9e267bdcef76f",
+      "sourceText": "Heart Rate Variability (5.5-5.5)",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:8"
+    },
+    {
+      "messageId": "pattern.coherent.name",
+      "reason": "Reuse the approved breathing-visualizer catalog value for the same pattern label shown on authenticated stats.",
+      "reviewedSourceHash": "f10268a765bb0ecf0afdfae16a75bb2587e2c730d3f1f1b776a4cafc877308ea",
+      "sourceText": "Coherent Breathing",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:8"
+    },
+    {
+      "messageId": "pattern.nadi.description",
+      "reason": "Reuse the approved breathing-visualizer catalog value for the same pattern label shown on authenticated stats.",
+      "reviewedSourceHash": "830d77894549b3f902630b003dfcd8dce2e04408b58f1307e8b2dc78606a08ab",
+      "sourceText": "Balance & Focus (alternate nostril)",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:12"
+    },
+    {
+      "messageId": "pattern.nadi.name",
+      "reason": "Reuse the approved breathing-visualizer catalog value for the same pattern label shown on authenticated stats.",
+      "reviewedSourceHash": "62093b8b8d59db7b2a2c7dd4ee6f9268bc78440b3a4fd6dffcca574a73cd9420",
+      "sourceText": "Nadi Shodhana",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:12"
+    },
+    {
+      "messageId": "pattern.physiologicalSigh.description",
+      "reason": "Reuse the approved breathing-visualizer catalog value for the same pattern label shown on authenticated stats.",
+      "reviewedSourceHash": "e1e84863be1d6d0ea6a4e3bccf32c7985a3a671e0e6ab327794cf59ad11d1de1",
+      "sourceText": "Panic Reset (Double Inhale)",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:9"
+    },
+    {
+      "messageId": "pattern.physiologicalSigh.name",
+      "reason": "Reuse the approved breathing-visualizer catalog value for the same pattern label shown on authenticated stats.",
+      "reviewedSourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f",
+      "sourceText": "Physiological Sigh",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:9"
+    },
+    {
+      "messageId": "pattern.pursedLip.description",
+      "reason": "Reuse the approved breathing-visualizer catalog value for the same pattern label shown on authenticated stats.",
+      "reviewedSourceHash": "cfc4972d7a50a08b4c0640992c37f5d13a3a9a2b0a97f23aefda08efc44aa955",
+      "sourceText": "Respiratory Health (2-4 exhale ratio)",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:11"
+    },
+    {
+      "messageId": "pattern.pursedLip.name",
+      "reason": "Reuse the approved breathing-visualizer catalog value for the same pattern label shown on authenticated stats.",
+      "reviewedSourceHash": "eeef18570cefea9a3e886a54c649bef58fb6503cd530b16c3f981a6ca4d3a069",
+      "sourceText": "Pursed Lip Breathing",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:11"
+    },
+    {
+      "messageId": "pattern.relax478.description",
+      "reason": "Reuse the approved breathing-visualizer catalog value for the same pattern label shown on authenticated stats.",
+      "reviewedSourceHash": "d0de1c617518543a41e0021755554800f494aeac2ffad3d056453c6726bec0a7",
+      "sourceText": "Sleep & Deep Relaxation (4-7-8)",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:7"
+    },
+    {
+      "messageId": "pattern.relax478.name",
+      "reason": "Reuse the approved breathing-visualizer catalog value for the same pattern label shown on authenticated stats.",
+      "reviewedSourceHash": "1a97b917fd6867b3617fd65c0d13e146b0473307ff270ce925a69aa3d7d003d5",
+      "sourceText": "4-7-8 Relax",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:7"
+    },
+    {
+      "messageId": "pattern.tummo.description",
+      "reason": "Reuse the approved breathing-visualizer catalog value for the same pattern label shown on authenticated stats.",
+      "reviewedSourceHash": "8c967ab44ae98bd82c5679c778f595e8aa5ae9287fa3e300f03c81bc4685781e",
+      "sourceText": "Tibetan Inner Heat Breathing (2-0-1-0)",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:16"
+    },
+    {
+      "messageId": "pattern.tummo.name",
+      "reason": "Reuse the approved breathing-visualizer catalog value for the same pattern label shown on authenticated stats.",
+      "reviewedSourceHash": "b990522457ff0c458333e5fd6f51844631f0e7a4159e66c3b12186af5b30615a",
+      "sourceText": "Tummo Breathing",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:16"
+    },
+    {
+      "messageId": "pattern.ujjayi.description",
+      "reason": "Reuse the approved breathing-visualizer catalog value for the same pattern label shown on authenticated stats.",
+      "reviewedSourceHash": "23076f5f059a485b487c7efc82adc2bd1996672d216297766111c17e3233eda0",
+      "sourceText": "Ocean Breath for Yoga & Focus (4-0-6-0)",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:13"
+    },
+    {
+      "messageId": "pattern.ujjayi.name",
+      "reason": "Reuse the approved breathing-visualizer catalog value for the same pattern label shown on authenticated stats.",
+      "reviewedSourceHash": "d1e630b829cc12bd5818e66f2e5ca2691dba923e7fe7d48d2be6e4a4abf0be01",
+      "sourceText": "Ujjayi Breathing",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:13"
+    },
+    {
+      "messageId": "pattern.wimHof.description",
+      "reason": "Reuse the approved breathing-visualizer catalog value for the same pattern label shown on authenticated stats.",
+      "reviewedSourceHash": "5e784153d00c4b5a2ed489dd36fa4bb490d67ed00bec80c1a59d154ad7615f2e",
+      "sourceText": "Energy & Resilience (30 breaths × 3 rounds)",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10"
+    },
+    {
+      "messageId": "pattern.wimHof.name",
+      "reason": "Reuse the approved breathing-visualizer catalog value for the same pattern label shown on authenticated stats.",
+      "reviewedSourceHash": "f304e41e87f006b1e09b53f1705df771ea4a63917b334a3202f292e715d8e047",
+      "sourceText": "Wim Hof Breathing",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:10"
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/stats"
+}

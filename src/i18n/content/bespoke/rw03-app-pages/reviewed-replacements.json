@@ -1,0 +1,263 @@
+{
+  "replacements": [
+    {
+      "messageId": "hero.title",
+      "reason": "Current repository source has no approved exact catalog translation or compatible reviewed alias.",
+      "reviewedSourceHash": "e0f359a34975ec56c8282812633524f22c679c0929fef2daf0e422421f6bb6ad",
+      "route": "box-breathing-app",
+      "sourceText": "Box breathing app: free online 4-4-4-4 timer",
+      "translations": {
+        "de-de": "Box-Breathing-App: Kostenloser Online-4-4-4-4-Timer",
+        "es-es": "App de respiración en caja: temporizador 4-4-4-4 gratuito en línea",
+        "fr-fr": "Application de respiration en carré : minuteur 4-4-4-4 gratuit en ligne",
+        "ja-jp": "ボックス呼吸アプリ：無料のオンライン4-4-4-4タイマー",
+        "pt-br": "App de respiração em caixa: temporizador 4-4-4-4 grátis online"
+      }
+    },
+    {
+      "messageId": "metadata.description",
+      "reason": "Current repository source has no approved exact catalog translation or compatible reviewed alias.",
+      "reviewedSourceHash": "4d5f237119c5e00201198771836304105d4f7faf0006351ef49c5f4b5d7ac811",
+      "route": "box-breathing-app",
+      "sourceText": "Free box breathing app with a guided 4-4-4-4 timer. Use box breathing online for stress, focus, anxiety, and quick resets. No download or signup.",
+      "translations": {
+        "de-de": "Kostenlose Box-Breathing-App mit geführtem 4-4-4-4-Timer. Nutzen Sie Box Breathing online für Stress, Fokus, Angst und schnelle Resets. Kein Download oder Anmeldung.",
+        "es-es": "App de respiración en caja gratuita con temporizador guiado 4-4-4-4. Usa la respiración en caja en línea para el estrés, la concentración, la ansiedad y reinicios rápidos. Sin descarga ni registro.",
+        "fr-fr": "Application de respiration en carré gratuite avec minuteur guidé 4-4-4-4. Utilisez la respiration en carré en ligne pour le stress, la concentration, l'anxiété et les réinitialisations rapides. Aucun téléchargement ni inscription.",
+        "ja-jp": "ガイド付き4-4-4-4タイマーの無料ボックス呼吸アプリ。ストレス、集中、不安、クイックリセットにオンラインでボックス呼吸をお使いください。ダウンロードや登録は不要です。",
+        "pt-br": "App de respiração em caixa grátis com temporizador guiado 4-4-4-4. Use a respiração em caixa online para estresse, foco, ansiedade e reinícios rápidos. Sem download nem cadastro."
+      }
+    },
+    {
+      "messageId": "metadata.socialDescription",
+      "reason": "Current repository source has no approved exact catalog translation or compatible reviewed alias.",
+      "reviewedSourceHash": "9a3c549dbd868982223f9f52a62074ba44da2af0012e50bbb692ab6386b8753a",
+      "route": "box-breathing-app",
+      "sourceText": "Free box breathing app with a guided 4-4-4-4 timer. Use it online for calm, focus, and quick resets.",
+      "translations": {
+        "de-de": "Kostenlose Box-Breathing-App mit geführtem 4-4-4-4-Timer. Nutzen Sie sie online für Ruhe, Fokus und schnelle Resets.",
+        "es-es": "App de respiración en caja gratuita con temporizador guiado 4-4-4-4. Úsala en línea para la calma, la concentración y reinicios rápidos.",
+        "fr-fr": "Application de respiration en carré gratuite avec minuteur guidé 4-4-4-4. Utilisez-la en ligne pour le calme, la concentration et les réinitialisations rapides.",
+        "ja-jp": "ガイド付き4-4-4-4タイマーの無料ボックス呼吸アプリ。落ち着き、集中、クイックリセットにオンラインでご利用ください。",
+        "pt-br": "App de respiração em caixa grátis com temporizador guiado 4-4-4-4. Use online para calma, foco e reinícios rápidos."
+      }
+    },
+    {
+      "messageId": "metadata.socialTitle",
+      "reason": "Current repository source has no approved exact catalog translation or compatible reviewed alias.",
+      "reviewedSourceHash": "e13543f175f28fd86970f7e5ceb2bba098c9ab780cfb73095da46e8b80e0eab7",
+      "route": "box-breathing-app",
+      "sourceText": "Box Breathing App: Free Online 4-4-4-4 Timer",
+      "translations": {
+        "de-de": "Box-Breathing-App: Kostenloser Online-4-4-4-4-Timer",
+        "es-es": "App de respiración en caja: temporizador 4-4-4-4 gratuito en línea",
+        "fr-fr": "Application Box Breathing : minuteur 4-4-4-4 gratuit en ligne",
+        "ja-jp": "ボックス呼吸アプリ：無料のオンライン4-4-4-4タイマー",
+        "pt-br": "App Box Breathing: temporizador 4-4-4-4 grátis online"
+      }
+    },
+    {
+      "messageId": "metadata.title",
+      "reason": "Current repository source has no approved exact catalog translation or compatible reviewed alias.",
+      "reviewedSourceHash": "e13543f175f28fd86970f7e5ceb2bba098c9ab780cfb73095da46e8b80e0eab7",
+      "route": "box-breathing-app",
+      "sourceText": "Box Breathing App: Free Online 4-4-4-4 Timer",
+      "translations": {
+        "de-de": "Box-Breathing-App: Kostenloser Online-4-4-4-4-Timer",
+        "es-es": "App de respiración en caja: temporizador 4-4-4-4 gratuito en línea",
+        "fr-fr": "Application Box Breathing : minuteur 4-4-4-4 gratuit en ligne",
+        "ja-jp": "ボックス呼吸アプリ：無料のオンライン4-4-4-4タイマー",
+        "pt-br": "App Box Breathing: temporizador 4-4-4-4 grátis online"
+      }
+    },
+    {
+      "messageId": "metadata.twitterTitle",
+      "reason": "Current repository source has no approved exact catalog translation or compatible reviewed alias.",
+      "reviewedSourceHash": "e13543f175f28fd86970f7e5ceb2bba098c9ab780cfb73095da46e8b80e0eab7",
+      "route": "box-breathing-app",
+      "sourceText": "Box Breathing App: Free Online 4-4-4-4 Timer",
+      "translations": {
+        "de-de": "Box-Breathing-App: Kostenloser Online-4-4-4-4-Timer",
+        "es-es": "App de respiración en caja: temporizador 4-4-4-4 gratuito en línea",
+        "fr-fr": "Application Box Breathing : minuteur 4-4-4-4 gratuit en ligne",
+        "ja-jp": "ボックス呼吸アプリ：無料のオンライン4-4-4-4タイマー",
+        "pt-br": "App Box Breathing: temporizador 4-4-4-4 grátis online"
+      }
+    },
+    {
+      "messageId": "quickAnswer.body",
+      "reason": "Current repository source has no approved exact catalog translation or compatible reviewed alias.",
+      "reviewedSourceHash": "732cf39ba74cebf71026d5938dae1946ea0ca7c5dbd00a06984938b4c319845e",
+      "route": "box-breathing-app",
+      "sourceText": "This free box breathing app gives you a guided 4-4-4-4 timer in your browser. Follow inhale 4, hold 4, exhale 4, hold 4 for 1-3 minutes to calm stress, steady focus, and reset your breathing without downloading anything.",
+      "translations": {
+        "de-de": "Diese kostenlose Box-Breathing-App bietet Ihnen einen geführten 4-4-4-4-Timer im Browser. Folgen Sie: 4 einatmen, 4 halten, 4 ausatmen, 4 halten für 1-3 Minuten, um Stress zu beruhigen, den Fokus zu stabilisieren und Ihre Atmung zurückzusetzen, ohne etwas herunterzuladen.",
+        "es-es": "Esta app de respiración en caja gratuita te ofrece un temporizador guiado 4-4-4-4 en el navegador. Sigue: inhalar 4, mantener 4, exhalar 4, mantener 4 durante 1-3 minutos para calmar el estrés, estabilizar la concentración y reiniciar la respiración sin descargar nada.",
+        "fr-fr": "Cette application de respiration en carré gratuite vous offre un minuteur guidé 4-4-4-4 dans votre navigateur. Suivez : inspirez 4, retenez 4, expirez 4, retenez 4 pendant 1-3 minutes pour apaiser le stress, stabiliser la concentration et réinitialiser votre respiration sans rien télécharger.",
+        "ja-jp": "この無料のボックス呼吸アプリは、ブラウザでガイド付き4-4-4-4タイマーを提供します。4秒吸って、4秒止めて、4秒吐いて、4秒止めるを1〜3分間行い、ストレスを落ち着かせ、集中を安定させ、何もダウンロードせずに呼吸をリセットできます。",
+        "pt-br": "Este app de respiração em caixa grátis oferece um temporizador guiado 4-4-4-4 no navegador. Siga: inspirar 4, segurar 4, expirar 4, segurar 4 por 1-3 minutos para acalmar o estresse, estabilizar o foco e reiniciar a respiração sem baixar nada."
+      }
+    },
+    {
+      "messageId": "breadcrumb.current",
+      "reason": "Current repository source has no approved exact catalog translation or compatible reviewed alias.",
+      "reviewedSourceHash": "494a4a5d83a60ce0f439a4e87a7a98bded0ed9941dc1f17aa51a34aa616710b2",
+      "route": "breathing-app",
+      "sourceText": "Breathing App",
+      "translations": {
+        "de-de": "Atem-App",
+        "es-es": "App de respiración",
+        "fr-fr": "Application de respiration",
+        "ja-jp": "呼吸アプリ",
+        "pt-br": "App de respiração"
+      }
+    },
+    {
+      "messageId": "goals.intro",
+      "reason": "Current repository source has no approved exact catalog translation or compatible reviewed alias.",
+      "reviewedSourceHash": "0c00c0cb19c9e00673d374f21f0f28ffacbf70ebf20b73ee2555c80295e71dc8",
+      "route": "breathing-app",
+      "sourceText": "Use a quick reset, a running-specific recovery guide, or an advanced technique when you want a different kind of session.",
+      "translations": {
+        "de-de": "Nutzen Sie einen schnellen Reset, eine laufbezogene Erholungsanleitung oder eine fortgeschrittene Technik, wenn Sie eine andere Art von Sitzung wünschen.",
+        "es-es": "Usa un reinicio rápido, una guía de recuperación específica para correr o una técnica avanzada cuando quieras un tipo de sesión diferente.",
+        "fr-fr": "Utilisez une réinitialisation rapide, un guide de récupération spécifique à la course ou une technique avancée lorsque vous souhaitez un type de séance différent.",
+        "ja-jp": "別の種類のセッションが欲しいときは、クイックリセット、ランニング向けの回復ガイド、または上級テクニックをお使いください。",
+        "pt-br": "Use um reinício rápido, um guia de recuperação específico para corrida ou uma técnica avançada quando quiser um tipo de sessão diferente."
+      }
+    },
+    {
+      "messageId": "goals.title",
+      "reason": "Current repository source has no approved exact catalog translation or compatible reviewed alias.",
+      "reviewedSourceHash": "6d107805128f9fabcd2a4fed53e0c09428ff559dd6f19d12f8a9393d2329044a",
+      "route": "breathing-app",
+      "sourceText": "Explore by goal",
+      "translations": {
+        "de-de": "Nach Ziel erkunden",
+        "es-es": "Explorar por objetivo",
+        "fr-fr": "Explorer par objectif",
+        "ja-jp": "目的別に探す",
+        "pt-br": "Explorar por objetivo"
+      }
+    },
+    {
+      "messageId": "included.items.3.suffix",
+      "reason": "Current repository source has no approved exact catalog translation or compatible reviewed alias.",
+      "reviewedSourceHash": "e87c271c51605a977e6f007e54ea3ef7270020e70d9f789fb6b4287b71075160",
+      "route": "breathing-app",
+      "sourceText": "for rapid stress relief",
+      "translations": {
+        "de-de": "für schnelle Stresslinderung",
+        "es-es": "para alivio rápido del estrés",
+        "fr-fr": "pour un soulagement rapide du stress",
+        "ja-jp": "急速なストレス解消のために",
+        "pt-br": "para alívio rápido do estresse"
+      }
+    },
+    {
+      "messageId": "metadata.title",
+      "reason": "Current repository source has no approved exact catalog translation or compatible reviewed alias.",
+      "reviewedSourceHash": "9ef442469b1610157e9378e946abadf99801abf550fb7e16163db65732896232",
+      "route": "breathing-app",
+      "sourceText": "Free Breathing App (No Download): Calm Anxiety, Sleep & Focus",
+      "translations": {
+        "de-de": "Kostenlose Atem-App (ohne Download): Angst beruhigen, Schlaf & Fokus",
+        "es-es": "App de respiración gratuita (sin descarga): calma la ansiedad, sueño y concentración",
+        "fr-fr": "Application de respiration gratuite (sans téléchargement) : calmer l'anxiété, sommeil et concentration",
+        "ja-jp": "無料の呼吸アプリ（ダウンロード不要）：不安の鎮静、睡眠と集中",
+        "pt-br": "App de respiração grátis (sem download): acalme a ansiedade, sono e foco"
+      }
+    },
+    {
+      "catalogGapBinding": {
+        "catalogRoute": "/breathing-app",
+        "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:4"
+      },
+      "messageId": "popularTimers.links.3.label",
+      "reason": "Bind the one missing Portuguese catalog cell to the fourth Popular Timers label and its reviewed remaining-page replacement.",
+      "reviewedSourceHash": "38ea6f348c65cfc4554ff6af758fcd55a3731384c4d2d6b401adaaf4f1ce01ef",
+      "route": "breathing-app",
+      "sourceText": "2 minute breathing exercise",
+      "translations": {
+        "de-de": "2-minütige Atemübung",
+        "es-es": "ejercicio de respiración de 2 minutos",
+        "fr-fr": "Exercice de respiration de 2 minutes",
+        "ja-jp": "2分間の呼吸エクササイズ",
+        "pt-br": "exercício de respiração de 2 minutos"
+      }
+    },
+    {
+      "messageId": "comparison.rows.1.duration",
+      "reason": "The approved German catalog cell is shifted from the next row and requires a reviewed correction.",
+      "reviewedSourceHash": "02c36ba975f4f8dfa28f3c38db415347151a71cccb16d4d8087b2e1c952c5d03",
+      "route": "coherent-breathing-app",
+      "sourceText": "2-5 min as needed",
+      "translations": {
+        "de-de": "2-5 Min. nach Bedarf",
+        "es-es": "2-5 min según sea necesario",
+        "fr-fr": "2-5 min selon les besoins",
+        "ja-jp": "必要に応じて2〜5分",
+        "pt-br": "2-5 min conforme necessário"
+      }
+    },
+    {
+      "messageId": "metadata.imageAlt",
+      "reason": "Current repository source has no approved exact catalog translation or compatible reviewed alias.",
+      "reviewedSourceHash": "7ce6533f9950c4aa151ca1c78f026c2c476dd5ca8de569b8583c89bda9264b9e",
+      "route": "coherent-breathing-app",
+      "sourceText": "Coherent Breathing App, Free Browser Timer",
+      "translations": {
+        "de-de": "Kohärente-Atem-App, kostenloser Browser-Timer",
+        "es-es": "App de respiración coherente, temporizador gratuito en el navegador",
+        "fr-fr": "Application de respiration cohérente, minuteur gratuit dans le navigateur",
+        "ja-jp": "コヒーレント呼吸アプリ、無料のブラウザタイマー",
+        "pt-br": "App de respiração coerente, temporizador grátis no navegador"
+      }
+    },
+    {
+      "messageId": "metadata.title",
+      "reason": "Current repository source has no approved exact catalog translation or compatible reviewed alias.",
+      "reviewedSourceHash": "99520d41423c2de568ce6e18b804186e0f6fc3e36c80959322160d8b1d2a8cdd",
+      "route": "coherent-breathing-app",
+      "sourceText": "Coherent Breathing App (Free, 2026): No Download, Start Instantly",
+      "translations": {
+        "de-de": "Kohärente-Atem-App (kostenlos, 2026): Kein Download, sofort starten",
+        "es-es": "App de respiración coherente (gratis, 2026): sin descarga, empieza al instante",
+        "fr-fr": "Application de respiration cohérente (gratuite, 2026) : aucun téléchargement, démarrage instantané",
+        "ja-jp": "コヒーレント呼吸アプリ（無料、2026）：ダウンロード不要、すぐに開始",
+        "pt-br": "App de respiração coerente (grátis, 2026): sem download, comece na hora"
+      }
+    },
+    {
+      "messageId": "moreTools.intro",
+      "reason": "Current repository source has no approved exact catalog translation or compatible reviewed alias.",
+      "reviewedSourceHash": "0b9cd941c0212bdc88a7619743643e5eba9d47280f42667051df7810d1903d35",
+      "route": "coherent-breathing-app",
+      "sourceText": "Want something structured, shorter, sleep-focused, or recovery-focused? Try these:",
+      "translations": {
+        "de-de": "Möchten Sie etwas Strukturiertes, Kürzeres, Schlafbezogenes oder Erholungsbezogenes? Probieren Sie diese:",
+        "es-es": "¿Quieres algo estructurado, más corto, enfocado en el sueño o en la recuperación? Prueba estos:",
+        "fr-fr": "Vous voulez quelque chose de structuré, plus court, axé sur le sommeil ou la récupération ? Essayez ceux-ci :",
+        "ja-jp": "構造化されたもの、短いもの、睡眠向け、回復向けのものをお探しですか？こちらをお試しください：",
+        "pt-br": "Quer algo estruturado, mais curto, focado no sono ou na recuperação? Experimente estes:"
+      }
+    },
+    {
+      "messageId": "footer.links.3.label",
+      "reason": "The preserved Japanese footer label leaked the English source; this reviewed replacement localizes the shared navigation label.",
+      "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+      "route": "box-breathing-app",
+      "sourceText": "About",
+      "translations": { "de-de": "Über uns", "es-es": "Acerca de", "fr-fr": "À propos", "ja-jp": "概要", "pt-br": "Sobre" }
+    },
+    {
+      "messageId": "footer.links.3.label",
+      "reason": "The preserved Japanese footer label leaked the English source; this reviewed replacement localizes the shared navigation label.",
+      "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+      "route": "coherent-breathing-app",
+      "sourceText": "About",
+      "translations": { "de-de": "Über uns", "es-es": "Acerca de", "fr-fr": "À propos", "ja-jp": "概要", "pt-br": "Sobre" }
+    }
+  ],
+  "schemaVersion": 1
+}

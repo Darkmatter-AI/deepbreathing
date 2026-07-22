@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "invariants": [
+    {
+      "route": "coherent-breathing-app",
+      "messageId": "comparison.rows.1.pattern",
+      "sourceText": "4-4-4-4",
+      "reviewedSourceHash": "8aaf429cd85503b6e09121063c358327b7970bc8320fb530bd540a4aadde2eb5",
+      "reason": "Numeric breathing pattern is locale-invariant."
+    },
+    {
+      "route": "coherent-breathing-app",
+      "messageId": "comparison.rows.2.technique",
+      "sourceText": "4-7-8",
+      "reviewedSourceHash": "b7828a394d01e8b7596df9f2cca26428e28a14fb0a675c39834ff118c2eb0abb",
+      "reason": "Numeric technique name is locale-invariant."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "metadata": {
+    "title": "Embed a Breathing Exercise on Your Website — Free Widget",
+    "description": "Add a free interactive breathing exercise widget to your website. Choose from 12 patterns including box breathing, 4-7-8, and coherent breathing. Copy the embed code and paste it into your HTML.",
+    "socialTitle": "Embed a Breathing Exercise on Your Website — Free Widget",
+    "socialDescription": "Add a free interactive breathing exercise widget to your website. Choose from 12 patterns including box breathing, 4-7-8, and coherent breathing. Copy the embed code and paste it into your HTML.",
+    "twitterTitle": "Embed a Breathing Exercise on Your Website — Free Widget",
+    "twitterDescription": "Add a free interactive breathing exercise widget to your website. Choose from 12 patterns including box breathing, 4-7-8, and coherent breathing. Copy the embed code and paste it into your HTML.",
+    "imageAlt": "Free breathing exercise embed widget"
+  },
+  "generator": {
+    "eyebrow": "Free Widget",
+    "title": "Embed a breathing exercise",
+    "intro": "Add an interactive breathing visualizer to your website, blog, or app. Pick a pattern, copy the snippet, paste into your HTML. Free forever.",
+    "choosePattern": "Choose a pattern",
+    "patterns": {
+      "box": {
+        "title": "Box Breathing (4-4-4-4) Visualizer",
+        "description": "Focus & Stress Reduction (4-4-4-4)"
+      },
+      "4-7-8": {
+        "title": "4-7-8 Breathing Visualizer",
+        "description": "Sleep & Deep Relaxation (4-7-8)"
+      },
+      "coherent": {
+        "title": "Coherent Breathing Trainer",
+        "description": "Heart Rate Variability (5.5-5.5)"
+      },
+      "physiological-sigh": {
+        "title": "Physiological Sigh: Instant Stress Relief",
+        "description": "Panic Reset (Double Inhale)"
+      },
+      "wim-hof": {
+        "title": "Wim Hof Breathing Method",
+        "description": "Energy & Resilience (30 breaths × 3 rounds)"
+      },
+      "pursed-lip": {
+        "title": "Pursed Lip Breathing Technique",
+        "description": "Respiratory Health (2-4 exhale ratio)"
+      },
+      "belly": {
+        "title": "Belly Breathing: Diaphragmatic Breathing Exercises",
+        "description": "Diaphragmatic Breathing Foundation (4-0-6-0)"
+      },
+      "9d-breathwork": {
+        "title": "9D Breathwork Explained",
+        "description": "Energy & Resilience (30 breaths × 3 rounds)"
+      },
+      "hope-cartel-9d-breathwork": {
+        "title": "Hope Cartel 9D Breathwork",
+        "description": "Energy & Resilience (30 breaths × 3 rounds)"
+      }
+    },
+    "appearance": {
+      "title": "Appearance",
+      "auto": "Auto",
+      "light": "Light",
+      "dark": "Dark"
+    },
+    "widgetLanguageAria": "Widget language",
+    "localeLabels": {
+      "en": "English",
+      "es": "Español",
+      "pt": "Português",
+      "fr": "Français",
+      "de": "Deutsch",
+      "ja": "日本語"
+    },
+    "durationAria": "Session duration",
+    "durationLabels": {
+      "open": "Open",
+      "seconds30": "30s",
+      "minute1": "1 min",
+      "minutes3": "3 min",
+      "minutes5": "5 min",
+      "minutes10": "10 min"
+    },
+    "sound": {
+      "title": "Sound",
+      "binauralLabel": "Binaural beats (headphones recommended)"
+    },
+    "preview": {
+      "title": "Preview",
+      "iframeTitleTemplate": "{pattern} embed preview"
+    },
+    "snippet": {
+      "title": "Embed code",
+      "copy": "Copy snippet",
+      "copied": "Copied!"
+    },
+    "info": {
+      "free": {
+        "title": "Free forever",
+        "description": "No API key, no account, no usage limits. Just paste the snippet."
+      },
+      "responsive": {
+        "title": "Responsive",
+        "description": "Width adapts to any container. Works on desktop, tablet, and mobile."
+      },
+      "theme": {
+        "title": "Light & dark mode",
+        "description": "Auto-detects user preference, or force light/dark to match your site."
+      }
+    },
+    "footer": {
+      "techniques": "Techniques",
+      "guides": "Guides",
+      "app": "App",
+      "about": "About"
+    }
+  },
+  "player": {
+    "loadingAriaLabel": "Loading breathing exercise",
+    "embedLabel": "Embed"
+  }
+}

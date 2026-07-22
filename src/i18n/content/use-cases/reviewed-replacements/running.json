@@ -1,0 +1,74 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "良い睡眠は回復を助けます。トレーニング日の就寝前に478呼吸法を試してみてください。",
+      "locale": "ja-jp",
+      "reason": "The approved value corrupts the 4-7-8 technique name by removing its separators.",
+      "replacement": "良質な睡眠は回復を助けます。トレーニングをした日の就寝前に4-7-8呼吸法を試してください。",
+      "reviewedSourceHash": "ed573bfe10915cad735fad85ae131d6c7f263f4d7526ce4f5023a41cfcb9db50",
+      "sourcePath": "relatedUseCases[1].teaser",
+      "sourceText": "Better sleep aids recovery. Try 4-7-8 breathing before bed after training days"
+    },
+    {
+      "currentCatalogValue": "Cómo respirar corriendo: evita el flato y recupera rápido",
+      "locale": "es-es",
+      "reason": "The approved value belongs to the superseded claim-led metadata and does not preserve the current source wording.",
+      "replacement": "Respiración para recuperarte al correr: elimina rápido el flato (temporizador gratuito)",
+      "reviewedSourceHash": "db6b2fdcec81448099d16006f3ed95852fed8512eeec4fe713befb65aafd3d3f",
+      "sourcePath": "meta.title",
+      "sourceText": "Breathing for Running Recovery: Stop Side Stitches Fast (Free Timer)"
+    },
+    {
+      "currentCatalogValue": "¿Flato al correr? Aprende cómo respirar corriendo para eliminar el dolor en 30 segundos y recuperar 2x más rápido. Técnica de respiración probada en",
+      "locale": "es-es",
+      "reason": "The approved value is truncated and retains superseded numeric claims that are absent from the current source.",
+      "replacement": "Respiración para recuperarte al correr mediante el suspiro fisiológico. Alivia el flato, reduce la frecuencia cardíaca después de los intervalos y recupérate más rápido con un temporizador guiado gratuito.",
+      "reviewedSourceHash": "79b55b4059bd6b4b5b75ee496aaf3bd6da1e7df80b1aaa2c552a3f6c892d54cb",
+      "sourcePath": "meta.description",
+      "sourceText": "Breathing for running recovery using the physiological sigh. Relieve side stitches, lower heart rate after intervals, and recover faster with a free guided timer.",
+      "numericReviewReason": "Strict parity removes the approved value's 30-second and 2x claims because neither appears in the current source."
+    },
+    {
+      "currentCatalogValue": "Cómo respirar corriendo: detén el flato en 30s (temporizador)",
+      "locale": "es-es",
+      "reason": "The approved value retains a superseded timing claim that is absent from the current source.",
+      "replacement": "Respiración para recuperarte al correr: elimina rápido el flato",
+      "reviewedSourceHash": "bf7457d5ee38c477ff6e058fcf492c138bbf694cb0a31b42ac8fe91f16ca063f",
+      "sourcePath": "meta.ogTitle",
+      "sourceText": "Breathing for Running Recovery: Stop Side Stitches Fast",
+      "numericReviewReason": "Strict parity removes the approved value's 30-second claim because it is absent from the current source."
+    },
+    {
+      "currentCatalogValue": "Respiración de doble inhalación (Stanford) detiene el flato en 30s y acelera la recuperación 2x. Descubre cómo respirar corriendo. ¡Temporizador gratis!",
+      "locale": "es-es",
+      "reason": "The approved value retains superseded attribution, timing, multiplier, and free-timer claims that are absent from the current source.",
+      "replacement": "Usa la respiración del suspiro fisiológico para aliviar el flato y recuperarte más rápido después de esfuerzos intensos al correr.",
+      "reviewedSourceHash": "012105870c0d5776b6e066b34d0e706d4cf41c9afdbff04aaf8c4f604d0f1d3c",
+      "sourcePath": "meta.ogDescription",
+      "sourceText": "Use physiological sigh breathing to stop side stitches and recover faster after hard running efforts.",
+      "numericReviewReason": "Strict parity removes the approved value's 30-second and 2x claims because neither appears in the current source."
+    },
+    {
+      "currentCatalogValue": "Aprende cómo respirar corriendo para detener el flato en 30 segundos. ¡Temporizador gratis!",
+      "locale": "es-es",
+      "reason": "The approved value retains a superseded timing claim and omits the current source's recovery framing.",
+      "replacement": "Respiración para recuperarte al correr (temporizador gratuito)",
+      "reviewedSourceHash": "18eb764c105f42136929c96c74f9b05a473e9d81b169a961b837ed97a51bfeff",
+      "sourcePath": "meta.twitterTitle",
+      "sourceText": "Breathing for Running Recovery (Free Timer)",
+      "numericReviewReason": "Strict parity removes the approved value's 30-second claim because it is absent from the current source."
+    },
+    {
+      "currentCatalogValue": "El suspiro fisiológico, probado en Stanford, detiene el flato al instante y acelera la recuperación 2x. Mejora cómo respirar corriendo. ¡Pruébalo!",
+      "locale": "es-es",
+      "reason": "The approved value retains superseded attribution, immediacy, and multiplier claims that are absent from the current source.",
+      "replacement": "Usa la respiración del suspiro fisiológico para aliviar el flato y recuperarte más rápido después de esfuerzos intensos al correr.",
+      "reviewedSourceHash": "012105870c0d5776b6e066b34d0e706d4cf41c9afdbff04aaf8c4f604d0f1d3c",
+      "sourcePath": "meta.twitterDescription",
+      "sourceText": "Use physiological sigh breathing to stop side stitches and recover faster after hard running efforts.",
+      "numericReviewReason": "Strict parity removes the approved value's 2x claim because it is absent from the current source."
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/running"
+}

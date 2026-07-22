@@ -1,0 +1,116 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.use-case.box-breathing-name",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f",
+      "scope": "chrome",
+      "sourceText": "Physiological Sigh",
+      "translations": {
+        "de-de": "Physiologischer Seufzer",
+        "fr-fr": "Soupir physiologique",
+        "ja-jp": "生理的ため息"
+      }
+    },
+    {
+      "messageId": "chrome.use-case.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "c3682a4774bbd96eea022e972db37fc8b6cbe937fb0d48be715f9696f22ecb3d",
+      "scope": "chrome",
+      "sourceText": "Try this guided breathing exercise for faster recovery between sets: physiological sigh for athletes.",
+      "translations": {
+        "de-de": "Probieren Sie diese geführte Atemübung für eine schnellere Erholung zwischen den Sätzen aus: physiologischer Seufzer für Athleten.",
+        "es-es": "Prueba este ejercicio de respiración guiada para una recuperación más rápida entre series: suspiro fisiológico para atletas.",
+        "fr-fr": "Essayez cet exercice de respiration guidée pour une récupération plus rapide entre les séries : soupir physiologique pour les athlètes.",
+        "ja-jp": "セット間の回復を速めるためのこのガイド付き呼吸エクササイズを試してみてください：アスリート向け生理的ため息。",
+        "pt-br": "Experimente este exercício de respiração guiada para uma recuperação mais rápida entre as séries: suspiro fisiológico para atletas."
+      }
+    },
+    {
+      "messageId": "chrome.use-case.learn-box-breathing",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "fd75a0c1418a75fb7860da61b872c9881106748e5beac6d999f31ad4b09d2a60",
+      "scope": "chrome",
+      "sourceText": "Learn more about Physiological Sigh →",
+      "translations": {
+        "de-de": "Erfahren Sie mehr über den physiologischen Seufzer →",
+        "es-es": "Aprende más sobre el Suspiro Fisiológico →",
+        "fr-fr": "En savoir plus sur le Soupir Physiologique →",
+        "ja-jp": "生理的ため息について詳しく学ぶ →",
+        "pt-br": "Saiba mais sobre o Suspiro Fisiológico →"
+      }
+    },
+    {
+      "messageId": "chrome.use-case.related-lung-capacity-title",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "0cf688a2f16e61168d310058a1fb86e7699f9603d9dbed604bf9896c93e87ed9",
+      "scope": "chrome",
+      "sourceText": "Lung Capacity Exercises",
+      "translations": {
+        "de-de": "Lungenkapazitätsübungen",
+        "es-es": "Ejercicios de capacidad pulmonar",
+        "fr-fr": "Exercices de capacité pulmonaire",
+        "ja-jp": "肺活量エクササイズ",
+        "pt-br": "Exercícios de Capacidade Pulmonar"
+      }
+    },
+    {
+      "messageId": "relatedTechnique.callToAction",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "42bcd97c3fc488b7d99c1cdb69dd5d71da11ef9de6230053d6f89d8c8b75daa2",
+      "scope": "content",
+      "sourceText": "Practice with the full physiological sigh timer and learn the complete Stanford-tested protocol",
+      "translations": {
+        "de-de": "Üben Sie mit dem vollständigen physiologischen Seufzer-Timer und lernen Sie das vollständige, von Stanford getestete Protokoll kennen",
+        "es-es": "Practica con el temporizador completo de suspiro fisiológico y aprende el protocolo completo probado por Stanford",
+        "fr-fr": "Pratiquez avec le minuteur de soupir physiologique complet et apprenez le protocole complet testé par Stanford",
+        "ja-jp": "完全な生理的ため息タイマーで練習し、スタンフォードでテストされた完全なプロトコルを学びましょう",
+        "pt-br": "Pratique com o timer completo de suspiro fisiológico e aprenda o protocolo completo testado pela Stanford"
+      }
+    },
+    {
+      "messageId": "relatedUseCases[3].teaser",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "52b7767b541e22dc71aba9bfddd737ef2faf5aed472c59e5e20c64925991514e",
+      "scope": "content",
+      "sourceText": "Huberman's recovery and performance breathing protocols for athletes.",
+      "translations": {
+        "de-de": "Hubermans Erholungs- und Leistungs-Atemprotokolle für Athleten.",
+        "es-es": "Protocolos de respiración de recuperación y rendimiento de Huberman para atletas.",
+        "fr-fr": "Protocoles de respiration de récupération et de performance de Huberman pour les athlètes.",
+        "ja-jp": "Hubermanのアスリート向け回復とパフォーマンス呼吸プロトコル。",
+        "pt-br": "Protocolos de respiração de recuperação e desempenho de Huberman para atletas."
+      }
+    },
+    {
+      "messageId": "relatedUseCases[4].teaser",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "b9c3c6198052e88c6c68e565d689d29cb8929f87faef2cc3e1643655e7e73d2e",
+      "scope": "content",
+      "sourceText": "Build breathing power with targeted lung capacity exercises.",
+      "translations": {
+        "de-de": "Bauen Sie Atemkraft mit gezielten Lungenkapazitätsübungen auf.",
+        "es-es": "Construye poder respiratorio con ejercicios específicos de capacidad pulmonar.",
+        "fr-fr": "Développez votre puissance respiratoire avec des exercices ciblés de capacité pulmonaire.",
+        "ja-jp": "ターゲットを絞った肺活量エクササイズで呼吸力を構築する。",
+        "pt-br": "Construa poder respiratório com exercícios direcionados de capacidade pulmonar."
+      }
+    },
+    {
+      "messageId": "science.points[0].explanation",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "8bbb7fd00c90f726932c49774089502d168415ff7e029d04fceb7bc84ab9f352",
+      "scope": "content",
+      "sourceText": "[Stanford's 2023 RCT (Balban et al.) compared cyclic sighing vs box breathing vs coherent breathing vs mindfulness meditation](https://doi.org/10.1016/j.xcrm.2022.100895). Cyclic sighing produced the greatest reduction in resting heart rate and respiratory rate over 4 weeks. For acute recovery (post-effort), 3-5 physiological sighs can drop heart rate by 20-30 BPM within 60-90 seconds, faster than passive recovery or panting.",
+      "translations": {
+        "de-de": "[Stanfords 2023 RCT (Balban et al.) verglich zyklisches Seufzen vs. Box-Atmung vs. kohärente Atmung vs. Achtsamkeitsmeditation](https://doi.org/10.1016/j.xcrm.2022.100895). Zyklisches Seufzen führte zur größten Reduktion der Ruheherzfrequenz und Atemfrequenz über 4 Wochen. Zur akuten Erholung (nach Belastung) können 3-5 physiologische Seufzer die Herzfrequenz innerhalb von 60-90 Sekunden um 20-30 BPM senken, schneller als passive Erholung oder Keuchen.",
+        "es-es": "[El RCT de Stanford de 2023 (Balban et al.) comparó el suspiro cíclico vs. respiración en caja vs. respiración coherente vs. meditación mindfulness](https://doi.org/10.1016/j.xcrm.2022.100895). El suspiro cíclico produjo la mayor reducción en la frecuencia cardíaca en reposo y la frecuencia respiratoria durante 4 semanas. Para la recuperación aguda (post-esfuerzo), 3-5 suspiros fisiológicos pueden bajar la frecuencia cardíaca en 20-30 BPM dentro de 60-90 segundos, más rápido que la recuperación pasiva o el jadeo.",
+        "fr-fr": "[L'essai contrôlé randomisé de Stanford 2023 (Balban et al.) a comparé le soupir cyclique vs. respiration en boîte vs. respiration cohérente vs. méditation de pleine conscience](https://doi.org/10.1016/j.xcrm.2022.100895). Le soupir cyclique a produit la plus grande réduction de la fréquence cardiaque au repos et de la fréquence respiratoire sur 4 semaines. Pour la récupération aiguë (post-effort), 3-5 soupirs physiologiques peuvent faire baisser la fréquence cardiaque de 20-30 BPM en 60-90 secondes, plus rapidement que la récupération passive ou l'essoufflement.",
+        "ja-jp": "[スタンフォードの2023年RCT（Balban et al.）は、周期的ため息 vs ボックス呼吸 vs コヒーレント呼吸 vs マインドフルネス瞑想を比較しました](https://doi.org/10.1016/j.xcrm.2022.100895)。周期的ため息は4週間で安静時心拍数と呼吸数の最大の減少をもたらしました。急性回復（努力後）では、3-5回の生理的ため息で60-90秒以内に心拍数を20-30 BPM低下させることができ、パッシブ回復やパンティングよりも速いです。",
+        "pt-br": "[O RCT de Stanford de 2023 (Balban et al.) comparou o suspiro cíclico vs. respiração em caixa vs. respiração coerente vs. meditação mindfulness](https://doi.org/10.1016/j.xcrm.2022.100895). O suspiro cíclico produziu a maior redução na frequência cardíaca em repouso e na frequência respiratória ao longo de 4 semanas. Para recuperação aguda (pós-esforço), 3-5 suspiros fisiológicos podem reduzir a frequência cardíaca em 20-30 BPM em 60-90 segundos, mais rápido que a recuperação passiva ou o ofegar."
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/athletes"
+}

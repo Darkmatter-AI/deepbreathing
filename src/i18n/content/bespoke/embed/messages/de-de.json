@@ -1,0 +1,116 @@
+{
+  "generator": {
+    "appearance": {
+      "auto": "Automatisch",
+      "dark": "Dunkel",
+      "light": "Hell",
+      "title": "Aussehen"
+    },
+    "choosePattern": "Muster wählen",
+    "durationAria": "Sitzungsdauer",
+    "durationLabels": {
+      "minute1": "1 Min.",
+      "minutes10": "10 Min.",
+      "minutes3": "3 Min.",
+      "minutes5": "5 Min.",
+      "open": "Offen",
+      "seconds30": "30s"
+    },
+    "eyebrow": "Kostenloses Widget",
+    "footer": {
+      "about": "Über uns",
+      "app": "App",
+      "guides": "Anleitungen",
+      "techniques": "Techniken"
+    },
+    "info": {
+      "free": {
+        "description": "Kein API-Schlüssel, kein Konto, keine Nutzungslimits. Einfach den Code einfügen.",
+        "title": "Kostenlos für immer"
+      },
+      "responsive": {
+        "description": "Breite passt sich jedem Container an. Funktioniert auf Desktop, Tablet und Mobilgeräten.",
+        "title": "Responsiv"
+      },
+      "theme": {
+        "description": "Erkennt automatisch die Benutzerpräferenz oder erzwingt hell/dunkel passend zu Ihrer Website.",
+        "title": "Hell- & Dunkelmodus"
+      }
+    },
+    "intro": "Fügen Sie Ihrer Website, Ihrem Blog oder Ihrer App einen interaktiven Atem-Visualizer hinzu. Wählen Sie ein Muster, kopieren Sie den Code und fügen Sie ihn in Ihr HTML ein. Kostenlos für immer.",
+    "localeLabels": {
+      "de": "Deutsch",
+      "en": "Englisch",
+      "es": "Spanisch",
+      "fr": "Französisch",
+      "ja": "Japanisch",
+      "pt": "Portugiesisch"
+    },
+    "patterns": {
+      "4-7-8": {
+        "description": "Schlaf & tiefe Entspannung (4-7-8)",
+        "title": "4-7-8 Atemtechnik Visualizer"
+      },
+      "9d-breathwork": {
+        "description": "Energie & Belastbarkeit (30 Atemzüge × 3 Runden)",
+        "title": "9D Atemarbeit erklärt"
+      },
+      "belly": {
+        "description": "Zwerchfellatmung Grundlegend (4-0-6-0)",
+        "title": "Bauchatmung: Zwerchfellatmung Übungen"
+      },
+      "box": {
+        "description": "Fokus & Stressreduktion (4-4-4-4)",
+        "title": "Box-Breathing-Visualisierung (4-4-4-4)"
+      },
+      "coherent": {
+        "description": "Herzratenvariabilität (5.5-5.5)",
+        "title": "Kohärentes Atemtraining"
+      },
+      "hope-cartel-9d-breathwork": {
+        "description": "Energie & Belastbarkeit (30 Atemzüge × 3 Runden)",
+        "title": "Hope Cartel 9D Atemarbeit"
+      },
+      "physiological-sigh": {
+        "description": "Panik-Reset (Doppel-Inhale)",
+        "title": "Physiologischer Seufzer: Sofortige Stresslinderung"
+      },
+      "pursed-lip": {
+        "description": "Atemgesundheit (2-4 Ausatemverhältnis)",
+        "title": "Lippenbremse: Atemtechnik"
+      },
+      "wim-hof": {
+        "description": "Energie & Belastbarkeit (30 Atemzüge × 3 Runden)",
+        "title": "Wim Hof Atemmethode"
+      }
+    },
+    "preview": {
+      "iframeTitleTemplate": "{pattern} Einbettungsvorschau",
+      "title": "Vorschau"
+    },
+    "snippet": {
+      "copied": "Kopiert!",
+      "copy": "Code-Snippet kopieren",
+      "title": "Einbettungscode"
+    },
+    "sound": {
+      "binauralLabel": "Binaurale Beats (Kopfhörer empfohlen)",
+      "title": "Ton"
+    },
+    "title": "Atemübung einbetten",
+    "widgetLanguageAria": "Widget-Sprache"
+  },
+  "metadata": {
+    "description": "Fügen Sie Ihrer Website ein kostenloses interaktives Atemübungs-Widget hinzu. Wählen Sie aus 12 Mustern, darunter Box-Atmung, 4-7-8-Atmung und kohärente Atmung. Kopieren Sie den Einbettungscode und fügen Sie ihn in Ihr HTML ein.",
+    "imageAlt": "Kostenloses Widget zum Einbetten einer Atemübung",
+    "socialDescription": "Fügen Sie Ihrer Website ein kostenloses interaktives Atemübungs-Widget hinzu. Wählen Sie aus 12 Mustern, darunter Box-Atmung, 4-7-8-Atmung und kohärente Atmung. Kopieren Sie den Einbettungscode und fügen Sie ihn in Ihr HTML ein.",
+    "socialTitle": "Kostenloses Atemübung Widget für Ihre Website einbetten",
+    "title": "Kostenloses Atemübung Widget für Ihre Website einbetten",
+    "twitterDescription": "Fügen Sie Ihrer Website ein kostenloses interaktives Atemübungs-Widget hinzu. Wählen Sie aus 12 Mustern, darunter Box-Atmung, 4-7-8-Atmung und kohärente Atmung. Kopieren Sie den Einbettungscode und fügen Sie ihn in Ihr HTML ein.",
+    "twitterTitle": "Kostenloses Atemübung Widget für Ihre Website einbetten"
+  },
+  "player": {
+    "embedLabel": "Einbetten",
+    "loadingAriaLabel": "Atemübung wird geladen"
+  }
+}

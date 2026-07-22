@@ -1,3 +1,60 @@
+const nativeI18nMode = process.env.NATIVE_I18N_MODE || 'proxy';
+const supportedNativeI18nModes = new Set(['proxy', 'native-preview', 'native']);
+
+if (!supportedNativeI18nModes.has(nativeI18nMode)) {
+  throw new Error(`Unsupported NATIVE_I18N_MODE: ${nativeI18nMode}`);
+}
+
+const proxyLocalePrefixRedirects = nativeI18nMode === 'proxy'
+  ? [
+      {
+        source: '/:locale(es|pt|fr|de|ja)/:rest+',
+        destination: '/:rest+',
+        permanent: true,
+      },
+      {
+        source: '/:locale(es|pt|fr|de|ja)',
+        destination: '/',
+        permanent: true,
+      },
+    ]
+  : [];
+
+// Native and native-preview modes: locale-aware redirects for legacy URLs and double-locale paths
+const nativeLocaleRedirects = nativeI18nMode === 'proxy'
+  ? []
+  : [
+      // Legacy /about/methodology redirects for all locales
+      {
+        source: '/:locale(es|pt|fr|de|ja)/about/methodology',
+        destination: '/:locale/about/editorial-policy',
+        permanent: true,
+      },
+      {
+        source: '/:locale(es|pt|fr|de|ja)/about/methodology/:path*',
+        destination: '/:locale/about/editorial-policy',
+        permanent: true,
+      },
+      // /languages is EN-only route; localized paths redirect to root
+      {
+        source: '/:locale(es|pt|fr|de|ja)/languages',
+        destination: '/languages',
+        permanent: true,
+      },
+      // Double-locale bare paths: /:outer/:inner -> /:outer/
+      {
+        source: '/:outer(es|pt|fr|de|ja)/:inner(es|pt|fr|de|ja)',
+        destination: '/:outer/',
+        permanent: true,
+      },
+      // Double-locale nested paths: /:outer/:inner/:rest* -> /:outer/:rest*
+      {
+        source: '/:outer(es|pt|fr|de|ja)/:inner(es|pt|fr|de|ja)/:rest*',
+        destination: '/:outer/:rest*',
+        permanent: true,
+      },
+    ];
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -204,27 +261,11 @@ const nextConfig = {
         destination: '/breathing-app',
         permanent: true,
       },
-      // Strip locale prefix on URLs that reach Next.js with one — the mass-translate
-      // proxy normally strips locales before forwarding, so Next.js seeing /es/...
-      // means the original URL was doubly-prefixed (/de/es/...) and the proxy
-      // stripped the outer one. Redirect to the canonical (un-prefixed) path; the
-      // proxy will re-add the user-facing locale on the response. Eliminates 404s
-      // flagged in GSC for stale doubly-prefixed crawls.
-      {
-        source: '/:locale(es|pt|fr|de|ja)/:rest+',
-        destination: '/:rest+',
-        permanent: true,
-      },
-      // Same case, but a BARE doubly-prefixed locale (e.g. /pt/fr): the proxy strips
-      // the outer locale and forwards /fr with no :rest, so the rule above never
-      // matched and Next.js 404'd. Collapse a lone locale segment to root; the proxy
-      // re-adds the user-facing locale on the response. This was the remaining GSC
-      // "Not found (404)" (e.g. /pt/fr — all 20 locale pairs were affected).
-      {
-        source: '/:locale(es|pt|fr|de|ja)',
-        destination: '/',
-        permanent: true,
-      },
+      // Proxy mode keeps the legacy locale stripping contract. Native preview
+      // and native modes must let the App Router own recognized prefixes.
+      ...proxyLocalePrefixRedirects,
+      // Native modes add locale-aware redirects for legacy URLs and double-locale paths.
+      ...nativeLocaleRedirects,
       // Single-page routes with no nested children — collapse stray sub-paths to root.
       {
         source: '/breathing-app/:path+',

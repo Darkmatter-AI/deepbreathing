@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "route": "/support",
+  "catalog": [
+    {
+      "messagePath": "breadcrumb.home",
+      "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+      "catalogRoute": "/languages",
+      "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+      "catalogSourceText": "Home",
+      "reason": "The breadcrumb label is JSON-LD-only on this route, so it is bound to the approved shared Home placement."
+    },
+    {
+      "messagePath": "hero.eyebrow",
+      "reviewedSourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+      "catalogRoute": "/support",
+      "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+      "catalogSourceText": "Deep Breathing Exercises",
+      "reason": "CSS uppercasing caused preservation-source case drift."
+    },
+    {
+      "messagePath": "contact.title",
+      "reviewedSourceHash": "2b5c3d26721ae9c350cf3009318b626f0fc8a90b4a2ac0ca8099c05aa849282e",
+      "catalogRoute": "/support",
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+      "catalogSourceText": "Contact",
+      "reason": "Explicit section heading binding."
+    },
+    {
+      "messagePath": "contact.darkmatterLabel",
+      "reviewedSourceHash": "46d9902e7bdf4e44566ba128ac4d2a0ed7f68f5ef925e9968d5574391ce16c79",
+      "catalogRoute": "/support",
+      "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:1",
+      "catalogSourceText": "Darkmatter AI Labs",
+      "reason": "Explicit external-link label binding."
+    },
+    {
+      "messagePath": "commonQuestions.title",
+      "reviewedSourceHash": "dfb8a3d41335746f8b5879f9c3a372ecfa4d1e7b6495d7376f335084fa3c46f2",
+      "catalogRoute": "/support",
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
+      "catalogSourceText": "Common questions",
+      "reason": "Explicit section heading binding."
+    },
+    {
+      "messagePath": "backLink",
+      "reviewedSourceHash": "a8e75b814e600400a66751578855d1f1148fbf3d59ac19b3f2e241932a1f8c5b",
+      "catalogRoute": "/support",
+      "occurrenceKey": "sel:a.text-sm.font-semibold:ctx:link:pos:0",
+      "catalogSourceText": "Back to the visualizer →",
+      "reason": "Explicit internal-link label binding."
+    }
+  ],
+  "gaps": [
+    {
+      "messagePath": "metadata.title",
+      "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+      "placementId": "310bb676-7683-47b2-b03b-b5b836b2cd4a",
+      "gapSourceText": "Support | Deep Breathing Exercises",
+      "reason": "The English layout appends the site-name title template; the localized layout needs the reviewed complete rendered title."
+    },
+    {
+      "messagePath": "metadata.description",
+      "reviewedSourceHash": "f220b2117712cce5866a0b6c7aa1d5c0b3fc6aa6be5b21454bddadb043b7bf20",
+      "placementId": "8cffeadb-3b3e-4117-a33b-40a92d653a6b"
+    },
+    {
+      "messagePath": "metadata.socialTitle",
+      "reviewedSourceHash": "77162b9de440ee52f748c5bf7bccbe7f6030cc5503cfaa27cf27c10f2e1d7b5f",
+      "placementId": "c105bc14-0f9b-48c9-8775-e1a569730bdb"
+    },
+    {
+      "messagePath": "metadata.socialDescription",
+      "reviewedSourceHash": "511bd2e8ed543474a1ceb59f6e614994e53581443362f8f8eed5ab0cec57bed9",
+      "placementId": "04969818-b686-4339-a71f-260fc2be4ac2"
+    },
+    {
+      "messagePath": "metadata.twitterTitle",
+      "reviewedSourceHash": "77162b9de440ee52f748c5bf7bccbe7f6030cc5503cfaa27cf27c10f2e1d7b5f",
+      "placementId": "b436f8d0-155c-4dad-b7a9-f94cc9f9d537"
+    },
+    {
+      "messagePath": "metadata.twitterDescription",
+      "reviewedSourceHash": "511bd2e8ed543474a1ceb59f6e614994e53581443362f8f8eed5ab0cec57bed9",
+      "placementId": "852cc707-ec5e-416b-91f4-fb11e1256fb5"
+    },
+    {
+      "messagePath": "hero.title",
+      "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+      "placementId": "8889de0b-16a4-49d2-bd0b-b9ff6c612990"
+    },
+    {
+      "messagePath": "hero.intro",
+      "reviewedSourceHash": "70592ed23fa3ad55eb9ecc4c06147c197a6c2024a6fb393670729471927163a1",
+      "placementId": "28e3eb25-5d02-481d-bfd0-c60e4e04f0b7"
+    },
+    {
+      "messagePath": "contact.emailBefore",
+      "reviewedSourceHash": "530783f5271b83853ee3215bb9ec7ea82beddfb16a504933241677e964d28b7a",
+      "placementId": "929ea4d5-3ade-4fe9-9620-1f211d8e095d"
+    },
+    {
+      "messagePath": "contact.emailAddress",
+      "reviewedSourceHash": "4a0fa35ee26d21cf99e3ad76b6a67edd0855141418846ba61a1de7a8f64e8bdb",
+      "placementId": "3a4416fd-1a0e-4b5c-87d2-8fd6fb8b282a"
+    },
+    {
+      "messagePath": "contact.emailAfter",
+      "reviewedSourceHash": "72d41a7625465584e816ae266b1d08548eaa227ef4c9fd07a9a5c128386917a7",
+      "placementId": "7d9f25ea-0f02-4030-9acb-fac55f37ded3"
+    },
+    {
+      "messagePath": "contact.teamBefore",
+      "reviewedSourceHash": "2ee2340f93d5b8323ca6cc171120a2ea6e755598435ddd804cdb22bf668cc968",
+      "placementId": "d283a3f2-fe15-47c0-adb3-67328923a49d"
+    },
+    {
+      "messagePath": "commonQuestions.account.question",
+      "reviewedSourceHash": "d35bfd4806eda1929cb0313e714b98a8e649a532e0fa19d18912ec7916affb16",
+      "placementId": "afdac9ef-82f4-47f0-b983-073f5d6e413d"
+    },
+    {
+      "messagePath": "commonQuestions.account.answer",
+      "reviewedSourceHash": "bdef5efe180d8adc9c680c7a8d848e0a4eaef730efc28f355f4a83f98454c6ac",
+      "placementId": "7ade7672-799a-4eae-9e4f-c7465c6e5af0"
+    },
+    {
+      "messagePath": "commonQuestions.deletion.question",
+      "reviewedSourceHash": "39c9658206ff45cf1d86a41957dafa63022309b2a3b041d5c3b02c47d05693b7",
+      "placementId": "ba9ea446-5c5e-49b6-8cf1-9903e65c905f"
+    },
+    {
+      "messagePath": "commonQuestions.data.question",
+      "reviewedSourceHash": "925edc61b511165e785699cb26e89c5c3b008eb2a6d96e0c2c2f2a05f6a3b57e",
+      "placementId": "bccdd27c-04c6-4a84-89b3-39c449846a24"
+    },
+    {
+      "messagePath": "commonQuestions.data.bodyBeforeLink",
+      "reviewedSourceHash": "5c977dfd6fa85d81d37f0a3e2e8a2f6d04cf904c90f189981dcabba7374f495f",
+      "placementId": "7ad4405c-8060-4a6e-b446-4425ebf000a0"
+    },
+    {
+      "messagePath": "commonQuestions.data.linkLabel",
+      "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+      "placementId": "072f0df5-eba9-4f73-9047-d76025d65855"
+    },
+    {
+      "messagePath": "commonQuestions.audio.question",
+      "reviewedSourceHash": "4347054785c47a6ad782f574d9c59a02afa866fd89cde0e2bab8d82d40dbd28b",
+      "placementId": "1a82ab8e-903e-4138-81b2-ab034bc1e747"
+    },
+    {
+      "messagePath": "commonQuestions.data.bodyAfterLink",
+      "reviewedSourceHash": "28e19c6e69c7a2aa071951dda3ff0a11ca178e3fb295dae8d6ed7dcc994434a4",
+      "placementId": "01081371-2f39-411c-9179-dc8fdccc7816"
+    },
+    {
+      "messagePath": "commonQuestions.medical.question",
+      "reviewedSourceHash": "d797bcc201cf8ec32456d7d23df6575fe8f3836cf104ff6681c81cca4019ef0a",
+      "placementId": "5212352b-04e6-4882-a9a5-eb15fb29b335"
+    },
+    {
+      "messagePath": "commonQuestions.audio.answer",
+      "reviewedSourceHash": "8aad8aa45ee9edf4505eff4ff0ecb783696fc750f068b1d208c8d3381052f3ed",
+      "placementId": "22bce113-2784-4abd-96e0-1ed37f327ba6"
+    },
+    {
+      "messagePath": "safety.title",
+      "reviewedSourceHash": "c972053617c5412086293cc63ece831d4731e1e488fe412755702f85f26da7c8",
+      "placementId": "498a679c-4e30-42cb-8b67-5fa65c33a46b"
+    },
+    {
+      "messagePath": "commonQuestions.medical.answer",
+      "reviewedSourceHash": "8f0b9d3dc7a3f4977950d485f0f5e0a54ae4ce5cb4e9219b3a1bee51a6cf049f",
+      "placementId": "1e4755bb-5696-4921-bb11-e7d5bef05d5b"
+    },
+    {
+      "messagePath": "safety.body",
+      "reviewedSourceHash": "e9bdc07f1dcb6d04db2b8b49fc28e1563e0ea2b4a49cb7476de74cbff32a0a03",
+      "placementId": "91f1a01b-907d-4ab4-85aa-41d79e794ea1"
+    }
+  ],
+  "mirrors": [
+    {
+      "messagePath": "metadata.imageAlt",
+      "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+      "sourceMessagePath": "hero.title",
+      "reason": "The image alt duplicates the visible title."
+    },
+    {
+      "messagePath": "breadcrumb.current",
+      "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+      "sourceMessagePath": "hero.title",
+      "reason": "The breadcrumb current label duplicates the visible title."
+    }
+  ],
+  "staleGaps": [
+    {
+      "placementId": "9f612281-a2a5-4945-9de9-e8c2f7a5ec58",
+      "sourceText": "Email us at",
+      "reviewedSourceHash": "530783f5271b83853ee3215bb9ec7ea82beddfb16a504933241677e964d28b7a",
+      "classification": "stale-pre-confirmation-link-deletion-copy",
+      "reason": "The current account-deletion flow uses the in-product account menu and a confirmation link, not an email request."
+    },
+    {
+      "placementId": "67fd3430-18e2-404f-be61-3f299f76bc63",
+      "sourceText": "with the subject line “Delete my account” and we will permanently remove your data within 30 days.",
+      "reviewedSourceHash": "7c90988ee49599e24284445881927e99d65089ea1050f69c9017f2341da93f7c",
+      "classification": "stale-pre-confirmation-link-deletion-copy",
+      "reason": "The current account-deletion flow no longer makes the email-subject or 30-day claim."
+    },
+    {
+      "placementId": "49738ee4-5d9b-4249-a948-18bd229af85b",
+      "sourceText": "support@deepbreathingexercises.com",
+      "reviewedSourceHash": "4a0fa35ee26d21cf99e3ad76b6a67edd0855141418846ba61a1de7a8f64e8bdb",
+      "classification": "stale-pre-confirmation-link-deletion-copy",
+      "reason": "This duplicate email placement belonged to the removed email-based deletion instructions; the live contact email remains separately bound."
+    }
+  ]
+}

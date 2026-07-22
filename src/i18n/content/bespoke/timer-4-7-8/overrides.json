@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "overrides": [
+    {
+      "messageId": "article.description",
+      "sourceText": "Dr. Weil's 4-7-8 breathing timer for sleep. The 'natural tranquilizer' technique: fall asleep faster, calm anxiety in minutes.",
+      "reviewedSourceHash": "79ddf05926cbdb10812ea07ea95aa23f16626c08b39d08fa4a1fc6daff5ca5aa",
+      "reason": "Current source text is unresolved in the preserved approved catalog; translated under the strict migration-parity rule without changing its claims.",
+      "translations": {
+        "de-de": "Dr. Weils 4-7-8-Atemtimer für den Schlaf. Die Technik des „natürlichen Beruhigungsmittels“: schneller einschlafen und Ängste innerhalb weniger Minuten beruhigen.",
+        "es-es": "Temporizador de respiración 4-7-8 del Dr. Weil para dormir. La técnica del «tranquilizante natural»: concíliate el sueño más rápido y calma la ansiedad en minutos.",
+        "fr-fr": "Minuteur de respiration 4-7-8 du Dr Weil pour le sommeil. La technique du « tranquillisant naturel » : endormez-vous plus vite et apaisez l’anxiété en quelques minutes.",
+        "ja-jp": "睡眠のためのワイル博士の4-7-8呼吸タイマー。「天然の精神安定剤」と呼ばれるテクニックで、より早く眠りにつき、不安を数分で鎮めます。",
+        "pt-br": "Temporizador de respiração 4-7-8 do Dr. Weil para dormir. A técnica do “tranquilizante natural”: adormeça mais rápido e acalme a ansiedade em minutos."
+      }
+    },
+    {
+      "messageId": "article.headline",
+      "sourceText": "4-7-8 Breathing Timer: Fall Asleep in 2 Minutes",
+      "reviewedSourceHash": "4449d87cb7b6b3799b04d86a3313d2659bcd35ba048db473bab2df9e480208de",
+      "reason": "Current source text is unresolved in the preserved approved catalog; translated under the strict migration-parity rule without changing its claim.",
+      "translations": {
+        "de-de": "4-7-8-Atemtimer: In 2 Minuten einschlafen",
+        "es-es": "Temporizador de respiración 4-7-8: concíliate el sueño en 2 minutos",
+        "fr-fr": "Minuteur de respiration 4-7-8 : endormez-vous en 2 minutes",
+        "ja-jp": "4-7-8呼吸タイマー：2分で眠りにつく",
+        "pt-br": "Temporizador de respiração 4-7-8: adormeça em 2 minutos"
+      }
+    },
+    {
+      "messageId": "footer.aboutAbi",
+      "sourceText": "About Abi",
+      "reviewedSourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+      "reason": "The Japanese source text is unresolved in the preserved approved catalog.",
+      "translations": {
+        "ja-jp": "Abiについて"
+      }
+    },
+    {
+      "messageId": "hero.title",
+      "sourceText": "4-7-8 breathing timer (free online)",
+      "reviewedSourceHash": "7e22bb96d162307a11867f903b22e0a5404c9382cde0931d607ab2286ec97f6c",
+      "reason": "Current source text is unresolved in the preserved approved catalog; translated under the strict migration-parity rule.",
+      "translations": {
+        "de-de": "4-7-8-Atemtimer (kostenlos online)",
+        "es-es": "Temporizador de respiración 4-7-8 (gratis en línea)",
+        "fr-fr": "Minuteur de respiration 4-7-8 (gratuit en ligne)",
+        "ja-jp": "4-7-8呼吸タイマー（無料オンライン）",
+        "pt-br": "Temporizador de respiração 4-7-8 (grátis online)"
+      }
+    },
+    {
+      "messageId": "howTo.description",
+      "sourceText": "Dr. Andrew Weil's 4-7-8 breathing technique to fall asleep faster and calm anxiety. Follow this step-by-step guide.",
+      "reviewedSourceHash": "ae0a8e91b043cd53b93b297b61ee6c6fd46c04ab53423b97c39511abcf4cb828",
+      "reason": "Current source text is unresolved in the preserved approved catalog; translated under the strict migration-parity rule without changing its claims.",
+      "translations": {
+        "de-de": "Dr. Andrew Weils 4-7-8-Atemtechnik, um schneller einzuschlafen und Ängste zu beruhigen. Folgen Sie dieser Schritt-für-Schritt-Anleitung.",
+        "es-es": "La técnica de respiración 4-7-8 del Dr. Andrew Weil para conciliar el sueño más rápido y calmar la ansiedad. Sigue esta guía paso a paso.",
+        "fr-fr": "La technique de respiration 4-7-8 du Dr Andrew Weil pour s’endormir plus vite et apaiser l’anxiété. Suivez ce guide étape par étape.",
+        "ja-jp": "より早く眠りにつき、不安を鎮めるためのアンドルー・ワイル博士の4-7-8呼吸法。このステップごとのガイドに従ってください。",
+        "pt-br": "A técnica de respiração 4-7-8 do Dr. Andrew Weil para adormecer mais rápido e acalmar a ansiedade. Siga este guia passo a passo."
+      }
+    },
+    {
+      "messageId": "howTo.name",
+      "sourceText": "How to Do 4-7-8 Breathing for Sleep",
+      "reviewedSourceHash": "82fa442c44161cf466e6edff7aba304ec79aa609b7175851d28e67c75cc35014",
+      "reason": "Current source text is unresolved in the preserved approved catalog; translated under the strict migration-parity rule.",
+      "translations": {
+        "de-de": "So wenden Sie die 4-7-8-Atemtechnik zum Einschlafen an",
+        "es-es": "Cómo hacer la respiración 4-7-8 para dormir",
+        "fr-fr": "Comment pratiquer la respiration 4-7-8 pour dormir",
+        "ja-jp": "睡眠のための4-7-8呼吸法のやり方",
+        "pt-br": "Como fazer a respiração 4-7-8 para dormir"
+      }
+    },
+    {
+      "messageId": "howTo.steps.0.text",
+      "sourceText": "Sit or lie down in a comfortable position. Place the tip of your tongue against the ridge behind your upper front teeth.",
+      "reviewedSourceHash": "d4ed41ac018bf6bdb7bf731e775e4d49e7458b1251969784183b7d2b2547375a",
+      "reason": "Current source text is unresolved in the preserved approved catalog; translated under the strict migration-parity rule.",
+      "translations": {
+        "de-de": "Setzen oder legen Sie sich in eine bequeme Position. Legen Sie die Zungenspitze an den Gaumenwulst direkt hinter den oberen Schneidezähnen.",
+        "es-es": "Siéntate o túmbate en una posición cómoda. Coloca la punta de la lengua contra el reborde justo detrás de los dientes frontales superiores.",
+        "fr-fr": "Asseyez-vous ou allongez-vous dans une position confortable. Placez le bout de votre langue contre la crête située derrière vos incisives supérieures.",
+        "ja-jp": "楽な姿勢で座るか横になります。舌先を上の前歯のすぐ後ろにある歯茎の盛り上がりに当てます。",
+        "pt-br": "Sente-se ou deite-se em uma posição confortável. Coloque a ponta da língua contra a saliência logo atrás dos dentes superiores da frente."
+      }
+    },
+    {
+      "messageId": "howTo.steps.1.text",
+      "sourceText": "Exhale completely through your mouth, making a whoosh sound.",
+      "reviewedSourceHash": "cec7a79cbd389c968880036658549d93428f903892cd1df54e701ba437fb9f29",
+      "reason": "Current source text is unresolved in the preserved approved catalog; translated under the strict migration-parity rule.",
+      "translations": {
+        "de-de": "Atmen Sie vollständig durch den Mund aus und erzeugen Sie dabei ein rauschendes Geräusch.",
+        "es-es": "Exhala completamente por la boca, haciendo un sonido de soplido.",
+        "fr-fr": "Expirez complètement par la bouche en produisant un bruit de souffle.",
+        "ja-jp": "シューッという音を立てながら、口から完全に息を吐きます。",
+        "pt-br": "Expire completamente pela boca, fazendo um som de sopro."
+      }
+    },
+    {
+      "messageId": "howTo.steps.2.text",
+      "sourceText": "Close your mouth and inhale quietly through your nose for a mental count of 4.",
+      "reviewedSourceHash": "10ebe0117e8939152eefe48bf5cede8b8c0ddb70c815a4c09edb0bfb2fc300db",
+      "reason": "Current source text is unresolved in the preserved approved catalog; translated while preserving count rather than fixed-second semantics.",
+      "translations": {
+        "de-de": "Schließen Sie den Mund und atmen Sie leise durch die Nase ein, während Sie innerlich bis 4 zählen.",
+        "es-es": "Cierra la boca e inhala silenciosamente por la nariz mientras cuentas mentalmente hasta 4.",
+        "fr-fr": "Fermez la bouche et inspirez doucement par le nez en comptant mentalement jusqu’à 4.",
+        "ja-jp": "口を閉じ、心の中で4つ数えながら、鼻から静かに息を吸います。",
+        "pt-br": "Feche a boca e inspire silenciosamente pelo nariz enquanto conta mentalmente até 4."
+      }
+    },
+    {
+      "messageId": "howTo.steps.3.text",
+      "sourceText": "Hold your breath for a count of 7. Keep your body relaxed.",
+      "reviewedSourceHash": "9462f343b2c34f6e1a48b3c231034c8251de5ded8af9b2289f463a8436bb41d8",
+      "reason": "Current source text is unresolved in the preserved approved catalog; translated while preserving count rather than fixed-second semantics.",
+      "translations": {
+        "de-de": "Halten Sie den Atem 7 Zählzeiten lang an. Lassen Sie den Körper entspannt.",
+        "es-es": "Aguanta la respiración durante 7 tiempos. Mantén el cuerpo relajado.",
+        "fr-fr": "Retenez votre respiration pendant 7 temps. Gardez le corps détendu.",
+        "ja-jp": "7カウントの間、息を止めます。体の力を抜いたままにします。",
+        "pt-br": "Prenda a respiração durante uma contagem de 7. Mantenha o corpo relaxado."
+      }
+    },
+    {
+      "messageId": "howTo.steps.4.text",
+      "sourceText": "Exhale completely through your mouth, making a whoosh sound, for a count of 8.",
+      "reviewedSourceHash": "e6c1e7abe4ee56aa673eac8ee501784641a9cf0e375cc48a7d69eed857a52b1c",
+      "reason": "Current source text is unresolved in the preserved approved catalog; translated while preserving count rather than fixed-second semantics.",
+      "translations": {
+        "de-de": "Atmen Sie vollständig durch den Mund aus, erzeugen Sie dabei ein rauschendes Geräusch und zählen Sie bis 8.",
+        "es-es": "Exhala completamente por la boca, haciendo un sonido de soplido, durante 8 tiempos.",
+        "fr-fr": "Expirez complètement par la bouche en produisant un bruit de souffle, pendant 8 temps.",
+        "ja-jp": "シューッという音を立てながら、8カウントかけて口から完全に息を吐きます。",
+        "pt-br": "Expire completamente pela boca, fazendo um som de sopro, durante uma contagem de 8."
+      }
+    },
+    {
+      "messageId": "howTo.steps.5.name",
+      "sourceText": "Repeat 4 cycles",
+      "reviewedSourceHash": "579fa3596492abf4b49cc784756bb2d9c55e6957fa8f441147f076a23df691c9",
+      "reason": "Current source text is unresolved in the preserved approved catalog; translated under the strict migration-parity rule.",
+      "translations": {
+        "de-de": "4 Zyklen wiederholen",
+        "es-es": "Repite 4 ciclos",
+        "fr-fr": "Répétez 4 cycles",
+        "ja-jp": "4サイクル繰り返す",
+        "pt-br": "Repita 4 ciclos"
+      }
+    },
+    {
+      "messageId": "howTo.steps.5.text",
+      "sourceText": "This completes one breath cycle. Repeat for a total of 4 cycles when starting out, working up to 8 cycles.",
+      "reviewedSourceHash": "14ecacaee78e8c03ed27f86280057133658878d0a55a385ebcb08f7e8f1d8dd6",
+      "reason": "Current source text is unresolved in the preserved approved catalog; translated under the strict migration-parity rule.",
+      "translations": {
+        "de-de": "Damit ist ein Atemzyklus abgeschlossen. Wiederholen Sie zu Beginn insgesamt 4 Zyklen und steigern Sie sich allmählich auf 8 Zyklen.",
+        "es-es": "Esto completa un ciclo de respiración. Al comenzar, repite un total de 4 ciclos y aumenta progresivamente hasta 8 ciclos.",
+        "fr-fr": "Cela termine un cycle respiratoire. Au début, répétez 4 cycles au total, puis augmentez progressivement jusqu’à 8 cycles.",
+        "ja-jp": "これで1回の呼吸サイクルが完了します。始めたばかりの時は合計4サイクル繰り返し、徐々に8サイクルまで増やします。",
+        "pt-br": "Isso completa um ciclo de respiração. Ao começar, repita um total de 4 ciclos e aumente gradualmente até 8 ciclos."
+      }
+    },
+    {
+      "messageId": "metadata.description",
+      "sourceText": "Use a free 4-7-8 breathing timer online. Follow Dr. Andrew Weil's 4-7-8 pattern for sleep and anxiety relief. No app, no signup.",
+      "reviewedSourceHash": "484f9a156b7052e0c67bdd12cc37cbe713e831f9eb8f49cea68157ae0f979c39",
+      "reason": "Current source text is unresolved in the preserved approved catalog; translated under the strict migration-parity rule without changing its claims.",
+      "translations": {
+        "de-de": "Nutzen Sie online einen kostenlosen 4-7-8-Atemtimer. Folgen Sie Dr. Andrew Weils 4-7-8-Muster für Schlaf und Angstlinderung. Keine App, keine Anmeldung.",
+        "es-es": "Usa gratis un temporizador de respiración 4-7-8 en línea. Sigue el patrón 4-7-8 del Dr. Andrew Weil para dormir y aliviar la ansiedad. Sin aplicación ni registro.",
+        "fr-fr": "Utilisez gratuitement un minuteur de respiration 4-7-8 en ligne. Suivez le rythme 4-7-8 du Dr Andrew Weil pour le sommeil et le soulagement de l’anxiété. Sans application ni inscription.",
+        "ja-jp": "無料の4-7-8呼吸タイマーをオンラインで使えます。睡眠と不安の緩和に向けたアンドルー・ワイル博士の4-7-8パターンに従います。アプリも登録も不要です。",
+        "pt-br": "Use grátis um temporizador de respiração 4-7-8 online. Siga o padrão 4-7-8 do Dr. Andrew Weil para dormir e aliviar a ansiedade. Sem aplicativo e sem cadastro."
+      }
+    },
+    {
+      "messageId": "metadata.socialDescription",
+      "sourceText": "Free 4-7-8 breathing timer online. Dr. Weil's sleep and anxiety breathing pattern with guided pacing in your browser.",
+      "reviewedSourceHash": "9434a3b5dfb0358eeb02c177d528ce84b4ea95d426ccd59ccc7019a58160b5b1",
+      "reason": "Current source text is unresolved in the preserved approved catalog; translated under the strict migration-parity rule.",
+      "translations": {
+        "de-de": "Kostenloser 4-7-8-Atemtimer online. Dr. Weils Atemmuster für Schlaf und Angst mit geführtem Rhythmus direkt im Browser.",
+        "es-es": "Temporizador de respiración 4-7-8 gratis en línea. El patrón respiratorio del Dr. Weil para el sueño y la ansiedad, con ritmo guiado en tu navegador.",
+        "fr-fr": "Minuteur de respiration 4-7-8 gratuit en ligne. Le rythme respiratoire du Dr Weil pour le sommeil et l’anxiété, guidé dans votre navigateur.",
+        "ja-jp": "無料の4-7-8呼吸タイマーをオンラインで。睡眠と不安のためのワイル博士の呼吸パターンを、ブラウザ上のガイド付きペースで実践できます。",
+        "pt-br": "Temporizador de respiração 4-7-8 grátis online. O padrão respiratório do Dr. Weil para sono e ansiedade, com ritmo guiado no navegador."
+      }
+    },
+    {
+      "messageId": "metadata.socialTitle",
+      "sourceText": "4-7-8 Breathing Timer (Free Online)",
+      "reviewedSourceHash": "4df6176e014a931d8c5f8fa6d2e5a86981ba1550d9b09a1e0f04a069ef337da4",
+      "reason": "Current source text is unresolved in the preserved approved catalog; translated under the strict migration-parity rule.",
+      "translations": {
+        "de-de": "4-7-8-Atemtimer (kostenlos online)",
+        "es-es": "Temporizador de respiración 4-7-8 (gratis en línea)",
+        "fr-fr": "Minuteur de respiration 4-7-8 (gratuit en ligne)",
+        "ja-jp": "4-7-8呼吸タイマー（無料オンライン）",
+        "pt-br": "Temporizador de respiração 4-7-8 (grátis online)"
+      }
+    },
+    {
+      "messageId": "metadata.title",
+      "sourceText": "4-7-8 Breathing Timer (Free Online) — Dr. Weil",
+      "reviewedSourceHash": "e88f0a3c184195ee9d0b27ab7b94bf915aa71c9fbbc007123882f0dff6a46bca",
+      "reason": "Current source text is unresolved in the preserved approved catalog; translated under the strict migration-parity rule.",
+      "translations": {
+        "de-de": "4-7-8-Atemtimer (kostenlos online) — Dr. Weil",
+        "es-es": "Temporizador de respiración 4-7-8 (gratis en línea) — Dr. Weil",
+        "fr-fr": "Minuteur de respiration 4-7-8 (gratuit en ligne) — Dr Weil",
+        "ja-jp": "4-7-8呼吸タイマー（無料オンライン）— ワイル博士",
+        "pt-br": "Temporizador de respiração 4-7-8 (grátis online) — Dr. Weil"
+      }
+    },
+    {
+      "messageId": "moreApps.twoMinute",
+      "sourceText": "2 minute breathing exercise",
+      "reviewedSourceHash": "38ea6f348c65cfc4554ff6af758fcd55a3731384c4d2d6b401adaaf4f1ce01ef",
+      "reason": "Current source text is unresolved only for the listed locales in the preserved approved catalog.",
+      "translations": {
+        "de-de": "2-minütige Atemübung",
+        "es-es": "Ejercicio de respiración de 2 minutos",
+        "ja-jp": "2分間の呼吸エクササイズ"
+      }
+    },
+    {
+      "messageId": "useCases.running.body",
+      "sourceText": "Recover between efforts and stop side stitches with guided breathing",
+      "reviewedSourceHash": "948c185e429bbbf12d6829e7056250e975c81362c58700a3ce3a1ea65dfa76b2",
+      "reason": "Current source text is unresolved in the preserved approved catalog; translated under the strict migration-parity rule without changing its claim.",
+      "translations": {
+        "de-de": "Erholen Sie sich zwischen Belastungsphasen und stoppen Sie Seitenstechen mit geführter Atmung.",
+        "es-es": "Recupérate entre esfuerzos y detén el flato con respiración guiada.",
+        "fr-fr": "Récupérez entre les efforts et stoppez les points de côté grâce à la respiration guidée.",
+        "ja-jp": "ガイド付き呼吸で運動の合間に回復し、脇腹の痛みを止めます。",
+        "pt-br": "Recupere-se entre os esforços e pare a dor de lado com respiração guiada."
+      }
+    }
+  ]
+}

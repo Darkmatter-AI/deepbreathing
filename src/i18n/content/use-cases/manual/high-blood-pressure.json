@@ -1,0 +1,104 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.use-case.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "e57ac85f9a9b7bc50ab93392ac397ed10edec67b9f1376e7e86112b0976916b9",
+      "scope": "chrome",
+      "sourceText": "Try this guided breathing exercise for lower your blood pressure naturally with 4-7-8 breathing.",
+      "translations": {
+        "de-de": "Probiere diese geführte Atemübung, um deinen Blutdruck natürlich mit 4-7-8-Atmung zu senken.",
+        "es-es": "Prueba este ejercicio de respiración guiada para bajar la tensión arterial de forma natural con la respiración 4-7-8.",
+        "fr-fr": "Essayez cet exercice de respiration guidée pour faire baisser naturellement votre tension artérielle avec la respiration 4-7-8.",
+        "ja-jp": "4-7-8呼吸で血圧を自然に下げるための、このガイド付き呼吸エクササイズを試してみましょう。",
+        "pt-br": "Experimente este exercício de respiração guiada para baixar a pressão arterial de forma natural com a respiração 4-7-8."
+      }
+    },
+    {
+      "messageId": "chrome.use-case.learn-box-breathing",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "7c4312464db54ee766e7ebdb52d452b5d528ee1cdd29dbf0af68ca20114884f5",
+      "scope": "chrome",
+      "sourceText": "Learn more about 4-7-8 Relax →",
+      "translations": {
+        "de-de": "Mehr über 4-7-8 Relax erfahren →",
+        "es-es": "Más información sobre 4-7-8 Relax →",
+        "fr-fr": "En savoir plus sur 4-7-8 Relax →",
+        "ja-jp": "4-7-8呼吸法について詳しく見る →",
+        "pt-br": "Saiba mais sobre 4-7-8 Relax →"
+      }
+    },
+    {
+      "messageId": "faqs[0].answer",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "d6263abd9f967a8b038d78a613438d33adb96eeccabf3122bdd7a1bd42d0bf72",
+      "scope": "content",
+      "sourceText": "Some people notice an immediate drop of a few points right after a session. [For sustained improvements, most studies show benefits after 4-8 weeks of daily practice](https://doi.org/10.1016/j.ctim.2019.03.005). Track your readings to see your personal response, everyone's different.",
+      "translations": {
+        "de-de": "Manche Menschen bemerken direkt nach einer Sitzung einen sofortigen Abfall um einige Punkte. [Für anhaltende Verbesserungen zeigen die meisten Studien Vorteile nach 4-8 Wochen täglicher Praxis](https://doi.org/10.1016/j.ctim.2019.03.005). Verfolge deine Messwerte, um deine persönliche Reaktion zu sehen – jeder ist anders.",
+        "es-es": "Algunas personas notan un descenso inmediato de unos pocos puntos justo después de una sesión. [Para mejoras sostenidas, la mayoría de los estudios muestran beneficios tras 4-8 semanas de práctica diaria](https://doi.org/10.1016/j.ctim.2019.03.005). Registra tus lecturas para ver tu respuesta personal; cada persona es diferente.",
+        "fr-fr": "Certaines personnes remarquent une baisse immédiate de quelques points juste après une séance. [Pour des améliorations durables, la plupart des études montrent des bienfaits après 4-8 semaines de pratique quotidienne](https://doi.org/10.1016/j.ctim.2019.03.005). Suivez vos mesures pour voir votre réponse personnelle, tout le monde est différent.",
+        "ja-jp": "セッション直後に数ポイントの即時低下に気づく人もいます。[持続的な改善については、ほとんどの研究で1日の練習を4〜8週間続けた後に効果が示されています](https://doi.org/10.1016/j.ctim.2019.03.005)。測定値を記録して、あなた自身の反応を確認してください。人それぞれ違います。",
+        "pt-br": "Algumas pessoas notam uma queda imediata de alguns pontos logo após uma sessão. [Para melhorias sustentadas, a maioria dos estudos mostra benefícios após 4-8 semanas de prática diária](https://doi.org/10.1016/j.ctim.2019.03.005). Acompanhe suas medições para ver sua resposta pessoal; cada pessoa é diferente."
+      }
+    },
+    {
+      "messageId": "faqs[1].answer",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "b9d9f31e51fd1e938cb4499814642d9dc84f3c3fdf71e4b91926762332e1fe33",
+      "scope": "content",
+      "sourceText": "No. [Breathing exercises are complementary. They work alongside medication and lifestyle changes, not instead of them](https://doi.org/10.1001/jamainternmed.2014.4336). Never reduce or stop medication without your doctor's guidance. That said, some patients working with their doctors have been able to reduce dosages over time with consistent lifestyle interventions including breathing practice.",
+      "translations": {
+        "de-de": "Nein. [Atemübungen sind ergänzend. Sie wirken zusammen mit Medikamenten und Lebensstiländerungen, nicht an deren Stelle](https://doi.org/10.1001/jamainternmed.2014.4336). Reduziere oder setze Medikamente niemals ohne Anleitung deines Arztes ab. Allerdings konnten einige Patienten in Zusammenarbeit mit ihren Ärzten die Dosierung im Laufe der Zeit durch konsequente Lebensstilmaßnahmen einschließlich Atempraxis senken.",
+        "es-es": "No. [Los ejercicios de respiración son complementarios. Funcionan junto con la medicación y los cambios de estilo de vida, no en su lugar](https://doi.org/10.1001/jamainternmed.2014.4336). Nunca reduzcas ni dejes la medicación sin la orientación de tu médico. Dicho esto, algunos pacientes que trabajan con sus médicos han podido reducir las dosis con el tiempo mediante intervenciones de estilo de vida constantes, incluida la práctica de la respiración.",
+        "fr-fr": "Non. [Les exercices de respiration sont complémentaires. Ils agissent en complément des médicaments et des changements de mode de vie, et non à leur place](https://doi.org/10.1001/jamainternmed.2014.4336). Ne réduisez ni n'arrêtez jamais un médicament sans l'avis de votre médecin. Cela dit, certains patients travaillant avec leurs médecins ont pu réduire les dosages au fil du temps grâce à des interventions de mode de vie constantes, y compris la pratique de la respiration.",
+        "ja-jp": "いいえ。[呼吸エクササイズは補完的なものです。薬や生活習慣の変化と併用するものであり、それらの代わりではありません](https://doi.org/10.1001/jamainternmed.2014.4336)。医師の指導なしに薬を減らしたり中止したりしないでください。とはいえ、医師と協力しながら、呼吸の練習を含む一貫した生活習慣の介入により、時間をかけて用量を減らせた患者もいます。",
+        "pt-br": "Não. [Os exercícios de respiração são complementares. Eles funcionam junto com a medicação e as mudanças de estilo de vida, não no lugar delas](https://doi.org/10.1001/jamainternmed.2014.4336). Nunca reduza ou pare a medicação sem a orientação do seu médico. Dito isso, alguns pacientes que trabalham com seus médicos conseguiram reduzir as dosagens ao longo do tempo com intervenções consistentes de estilo de vida, incluindo a prática da respiração."
+      }
+    },
+    {
+      "messageId": "faqs[4].answer",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "70bce2b035f1d30912fdc54f760f50c5402a0e91759be5e28e737ddf65267bb3",
+      "scope": "content",
+      "sourceText": "[Breathing exercises work best as part of a comprehensive approach](https://doi.org/10.1161/HYP.0b013e318293645f): regular physical activity, reducing sodium intake, maintaining a healthy weight, limiting alcohol, managing stress, and getting adequate sleep. The DASH diet and Mediterranean diet are both associated with lower blood pressure.",
+      "translations": {
+        "de-de": "[Atemübungen wirken am besten als Teil eines umfassenden Ansatzes](https://doi.org/10.1161/HYP.0b013e318293645f): regelmäßige körperliche Aktivität, Reduzierung der Natriumaufnahme, Aufrechterhaltung eines gesunden Gewichts, Begrenzung von Alkohol, Stressmanagement und ausreichend Schlaf. Die DASH-Diät und die mediterrane Ernährung werden beide mit niedrigerem Blutdruck in Verbindung gebracht.",
+        "es-es": "[Los ejercicios de respiración funcionan mejor como parte de un enfoque integral](https://doi.org/10.1161/HYP.0b013e318293645f): actividad física regular, reducción de la ingesta de sodio, mantenimiento de un peso saludable, limitación del alcohol, gestión del estrés y sueño adecuado. La dieta DASH y la dieta mediterránea se asocian ambas con una tensión arterial más baja.",
+        "fr-fr": "[Les exercices de respiration sont plus efficaces dans le cadre d'une approche globale](https://doi.org/10.1161/HYP.0b013e318293645f) : activité physique régulière, réduction de l'apport en sodium, maintien d'un poids santé, limitation de l'alcool, gestion du stress et sommeil suffisant. Le régime DASH et le régime méditerranéen sont tous deux associés à une tension artérielle plus basse.",
+        "ja-jp": "[呼吸エクササイズは包括的なアプローチの一部として最も効果的です](https://doi.org/10.1161/HYP.0b013e318293645f)：定期的な身体活動、ナトリウム摂取の削減、健康的な体重の維持、アルコールの制限、ストレス管理、十分な睡眠。DASH食と地中海食はいずれも血圧低下と関連しています。",
+        "pt-br": "[Os exercícios de respiração funcionam melhor como parte de uma abordagem abrangente](https://doi.org/10.1161/HYP.0b013e318293645f): atividade física regular, redução da ingestão de sódio, manutenção de um peso saudável, limitação do álcool, gerenciamento do estresse e sono adequado. A dieta DASH e a dieta mediterrânea estão ambas associadas a uma pressão arterial mais baixa."
+      }
+    },
+    {
+      "messageId": "hero.subtitle",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "165a54ca2fc804949b9bb690d450e1d9ee5814928000f79a2fa44cf1777eba7c",
+      "scope": "content",
+      "sourceText": "A research-informed breathing technique that supports healthier blood pressure when practiced regularly",
+      "translations": {
+        "de-de": "Eine forschungsbasierte Atemtechnik, die bei regelmäßiger Praxis einen gesünderen Blutdruck unterstützt",
+        "es-es": "Una técnica de respiración respaldada por la investigación que favorece una tensión arterial más saludable cuando se practica con regularidad",
+        "fr-fr": "Une technique de respiration fondée sur la recherche qui favorise une tension artérielle plus saine lorsqu'elle est pratiquée régulièrement",
+        "ja-jp": "定期的に実践すると、より健康的な血圧を支える研究に基づく呼吸法",
+        "pt-br": "Uma técnica de respiração embasada em pesquisas que favorece uma pressão arterial mais saudável quando praticada regularmente"
+      }
+    },
+    {
+      "messageId": "relatedTechnique.callToAction",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "a8f34ed5397ca32dc8e8a747014b394bfebd681eef08ee2c5d38dba790295b95",
+      "scope": "content",
+      "sourceText": "Practice with the full-screen 4-7-8 Breathing visualizer",
+      "translations": {
+        "de-de": "Übe mit dem Vollbild-Visualizer für 4-7-8-Atmung",
+        "es-es": "Practica con el visualizador a pantalla completa de respiración 4-7-8",
+        "fr-fr": "Pratiquez avec le visualiseur plein écran de respiration 4-7-8",
+        "ja-jp": "フルスクリーンの4-7-8呼吸ビジュアライザーで練習する",
+        "pt-br": "Pratique com o visualizador em tela cheia de respiração 4-7-8"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/high-blood-pressure"
+}

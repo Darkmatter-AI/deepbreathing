@@ -1,0 +1,310 @@
+{
+  "schemaVersion": 1,
+  "sourceRoute": "/breathing-exercises-for-labor",
+  "bindings": {
+    "metadata.title": {
+      "occurrenceKey": "head:title",
+      "catalogSourceText": "Breathing Exercises for Labor: Manage Contractions Naturally (Free Timer) | Deep Breathing Exercises"
+    },
+    "metadata.description": {
+      "occurrenceKey": "head:meta:name:description",
+      "catalogSourceText": "Free breathing timer for labor and childbirth, slow breathing helps manage contractions and stay calm. Practice before your due date. Midwife-approved techniques."
+    },
+    "metadata.socialTitle": {
+      "occurrenceKey": "head:meta:property:og:title",
+      "catalogSourceText": "Breathing Exercises for Labor: Manage Contractions Naturally"
+    },
+    "metadata.socialDescription": {
+      "occurrenceKey": "head:meta:property:og:description",
+      "catalogSourceText": "Midwife-approved breathing techniques for labor. Slow breathing helps manage contractions and stay calm. Free timer to practice now."
+    },
+    "metadata.twitterTitle": {
+      "occurrenceKey": "head:meta:name:twitter:title",
+      "catalogSourceText": "Breathing Exercises for Labor: Manage Contractions Naturally"
+    },
+    "metadata.twitterDescription": {
+      "occurrenceKey": "head:meta:name:twitter:description",
+      "catalogSourceText": "Midwife-approved breathing for labor. Manage contractions and stay calm. Free timer. Practice now."
+    },
+    "loading.ariaLabel": {
+      "occurrenceKey": "attr:div.min-h-screen.flex:aria-label:pos:0",
+      "catalogSourceText": "Loading breathing exercise"
+    },
+    "hero.eyebrow": {
+      "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+      "catalogSourceText": "LABOR & CHILDBIRTH"
+    },
+    "hero.title": {
+      "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+      "catalogSourceText": "Breathing Exercises for Labor"
+    },
+    "hero.intro": {
+      "occurrenceKey": "sel:p.max-w-xl.text-lg:ctx:p:pos:0",
+      "catalogSourceText": "Slow breathing helps your body work with contractions, not against them. Practice these midwife-approved techniques before your due date so they become second nature during labor."
+    },
+    "updated": {
+      "occurrenceKey": "sel:p.mb-6.text-xs:ctx:p:pos:0",
+      "catalogSourceText": "Last updated: January 27, 2026"
+    },
+    "alert.label": {
+      "occurrenceKey": "sel:p.font-medium.text-amber-700:ctx:p:pos:0",
+      "catalogSourceText": "Important"
+    },
+    "alert.body": {
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0",
+      "catalogSourceText": "This guide is for educational purposes. Always follow your healthcare provider's or midwife's guidance for your specific situation. Every labor is different, and your care team knows your needs best."
+    },
+    "starterGrid.starter.title": {
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+      "catalogSourceText": "Practice breathing now"
+    },
+    "starterGrid.starter.body": {
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:1",
+      "catalogSourceText": "Slow exhale-focused breathing is ideal for labor. Practice daily so it becomes automatic."
+    },
+    "starterGrid.starter.primaryAction": {
+      "occurrenceKey": "sel:a.rounded-full.bg-primary:ctx:link:pos:0",
+      "catalogSourceText": "Practice slow breathing"
+    },
+    "starterGrid.starter.secondaryAction": {
+      "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:0",
+      "catalogSourceText": "Pregnancy breathing guide"
+    },
+    "starterGrid.protocol.title": {
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
+      "catalogSourceText": "Labor breathing pattern"
+    },
+    "starterGrid.protocol.items.0.label": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:0",
+      "catalogSourceText": "Inhale:"
+    },
+    "starterGrid.protocol.items.0.body": {
+      "occurrenceKey": "sel:li:ctx:li:pos:0",
+      "catalogSourceText": "Through your nose, 4-6 seconds"
+    },
+    "starterGrid.protocol.items.1.label": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:1",
+      "catalogSourceText": "Exhale:"
+    },
+    "starterGrid.protocol.items.1.body": {
+      "occurrenceKey": "sel:li:ctx:li:pos:1",
+      "catalogSourceText": "Through your mouth, 6-8 seconds (longer than inhale)"
+    },
+    "starterGrid.protocol.items.2.label": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:2",
+      "catalogSourceText": "During contractions:"
+    },
+    "starterGrid.protocol.items.2.body": {
+      "occurrenceKey": "sel:li:ctx:li:pos:2",
+      "catalogSourceText": "Maintain this pattern throughout"
+    },
+    "starterGrid.protocol.items.3.label": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:3",
+      "catalogSourceText": "Between contractions:"
+    },
+    "starterGrid.protocol.items.3.body": {
+      "occurrenceKey": "sel:li:ctx:li:pos:3",
+      "catalogSourceText": "Return to normal breathing, rest"
+    },
+    "prose.title": {
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:2",
+      "catalogSourceText": "Why breathing matters during labor"
+    },
+    "prose.paragraphs.0.text": {
+      "occurrenceKey": "sel:p:ctx:p:pos:0",
+      "catalogSourceText": "During labor, your body is working incredibly hard. Contractions are intense, and your natural response might be to tense up, hold your breath, or breathe rapidly. But this actually makes labor harder, tension works against your body's natural processes."
+    },
+    "prose.paragraphs.1.before": {
+      "occurrenceKey": "sel:p:ctx:p:pos:1",
+      "catalogSourceText": "Slow, controlled breathing does the opposite. It"
+    },
+    "prose.paragraphs.1.strong": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:4",
+      "catalogSourceText": "activates your parasympathetic nervous system"
+    },
+    "prose.paragraphs.1.after": {
+      "occurrenceKey": "sel:p:ctx:p:pos:2",
+      "catalogSourceText": ", which relaxes your muscles, lowers stress hormones, and helps your body work with contractions rather than against them. The extended exhale is particularly important. It triggers your vagus nerve, promoting calm and reducing pain perception."
+    },
+    "prose.paragraphs.2.text": {
+      "occurrenceKey": "sel:p:ctx:p:pos:3",
+      "catalogSourceText": "Research shows that women who use breathing techniques during labor report lower pain scores, feel more in control, and often have shorter labors. Breathing also gives your mind something to focus on, which helps manage anxiety and stay present."
+    },
+    "timelineCards.title": {
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:3",
+      "catalogSourceText": "Breathing techniques for each stage"
+    },
+    "timelineCards.cards.0.title": {
+      "occurrenceKey": "sel:h3.font-semibold.text-card-foreground:ctx:heading:pos:0",
+      "catalogSourceText": "Early labor (contractions 5+ minutes apart)"
+    },
+    "timelineCards.cards.0.body": {
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+      "catalogSourceText": "Use slow, relaxed breathing: inhale through your nose for 4 seconds, exhale through your mouth for 6-8 seconds. Between contractions, breathe normally and rest. This stage can last hours, conserve your energy."
+    },
+    "timelineCards.cards.1.title": {
+      "occurrenceKey": "sel:h3.font-semibold.text-card-foreground:ctx:heading:pos:1",
+      "catalogSourceText": "Active labor (contractions 3-5 minutes apart)"
+    },
+    "timelineCards.cards.1.body": {
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:3",
+      "catalogSourceText": "Continue slow breathing during contractions. As intensity increases, you may naturally want to vocalize on the exhale (moaning or humming). This is normal and helps. Keep your jaw relaxed and shoulders down."
+    },
+    "timelineCards.cards.2.title": {
+      "occurrenceKey": "sel:h3.font-semibold.text-card-foreground:ctx:heading:pos:2",
+      "catalogSourceText": "Transition (strongest contractions)"
+    },
+    "timelineCards.cards.2.body": {
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:4",
+      "catalogSourceText": "This is the most intense phase but also the shortest. Focus on one breath at a time. Your partner or doula can breathe with you to help you stay in rhythm. Short “pant-pant-blow” patterns may help if you feel the urge to push before you're ready."
+    },
+    "timelineCards.cards.3.title": {
+      "occurrenceKey": "sel:h3.font-semibold.text-card-foreground:ctx:heading:pos:3",
+      "catalogSourceText": "Pushing stage"
+    },
+    "timelineCards.cards.3.body": {
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:5",
+      "catalogSourceText": "Follow your midwife's or doctor's guidance. Many recommend exhaling while pushing rather than holding your breath. Between pushes, take a few slow, deep breaths to recover."
+    },
+    "numberedSteps.title": {
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:4",
+      "catalogSourceText": "How to practice before labor"
+    },
+    "numberedSteps.steps.0.title": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:5",
+      "catalogSourceText": "Start 4-6 weeks before your due date"
+    },
+    "numberedSteps.steps.0.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:0",
+      "catalogSourceText": "Practice for 5-10 minutes daily so the pattern becomes automatic."
+    },
+    "numberedSteps.steps.1.title": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:6",
+      "catalogSourceText": "Find a comfortable position"
+    },
+    "numberedSteps.steps.1.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:1",
+      "catalogSourceText": "Sit, lie on your side, or use a birthing ball, whatever feels good."
+    },
+    "numberedSteps.steps.2.title": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:7",
+      "catalogSourceText": "Inhale through your nose for 4-6 seconds"
+    },
+    "numberedSteps.steps.2.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:2",
+      "catalogSourceText": "Let your belly expand gently. Don't force it, keep it comfortable."
+    },
+    "numberedSteps.steps.3.title": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:8",
+      "catalogSourceText": "Exhale through your mouth for 6-8 seconds"
+    },
+    "numberedSteps.steps.3.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:3",
+      "catalogSourceText": "Make the exhale longer than the inhale. You can make a soft “haaaa” sound."
+    },
+    "numberedSteps.steps.4.title": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:9",
+      "catalogSourceText": "Repeat for 5-10 minutes"
+    },
+    "numberedSteps.steps.4.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:4",
+      "catalogSourceText": "Continue until the breathing feels natural. Practice with your partner if possible."
+    },
+    "faq.title": {
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:5",
+      "catalogSourceText": "Frequently asked questions"
+    },
+    "faq.items.0.question": {
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:0",
+      "catalogSourceText": "What is the best breathing technique for labor?"
+    },
+    "faq.items.0.answer": {
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:6",
+      "catalogSourceText": "Slow, deep breathing (4-6 seconds in, 6-8 seconds out) is the most effective technique for labor. The extended exhale activates your parasympathetic nervous system, promoting relaxation and helping your body work with contractions rather than against them."
+    },
+    "faq.items.1.question": {
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:1",
+      "catalogSourceText": "When should I start practicing?"
+    },
+    "faq.items.1.answer": {
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:7",
+      "catalogSourceText": "Start practicing at least 4-6 weeks before your due date. Practice for 5-10 minutes daily so the breathing pattern becomes automatic. When labor begins, you won't have to think about the technique. Your body will know what to do."
+    },
+    "faq.items.2.question": {
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:2",
+      "catalogSourceText": "How do I breathe through contractions?"
+    },
+    "faq.items.2.answer": {
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:8",
+      "catalogSourceText": "As a contraction begins, start slow breathing: inhale through your nose for 4-6 seconds, then exhale slowly through your mouth for 6-8 seconds. Focus on making your exhale longer than your inhale. Continue throughout the contraction. Between contractions, return to normal breathing and rest."
+    },
+    "related.label": {
+      "occurrenceKey": "sel:p.text-sm.uppercase:ctx:p:pos:0",
+      "catalogSourceText": "Related Guides"
+    },
+    "related.cards.0.title": {
+      "occurrenceKey": "sel:p.text-lg.font-semibold:ctx:product:pos:0",
+      "catalogSourceText": "Pregnancy Breathing"
+    },
+    "related.cards.0.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:5",
+      "catalogSourceText": "Breathing exercises for all stages of pregnancy"
+    },
+    "related.cards.0.action": {
+      "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:0",
+      "catalogSourceText": "Learn more →"
+    },
+    "related.cards.1.title": {
+      "occurrenceKey": "sel:p.text-lg.font-semibold:ctx:product:pos:1",
+      "catalogSourceText": "4-7-8 Breathing"
+    },
+    "related.cards.1.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:6",
+      "catalogSourceText": "Exhale-focused breathing for relaxation"
+    },
+    "related.cards.1.action": {
+      "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:1",
+      "catalogSourceText": "Learn more →"
+    },
+    "related.cards.2.title": {
+      "occurrenceKey": "sel:p.text-lg.font-semibold:ctx:product:pos:2",
+      "catalogSourceText": "Anxiety Relief"
+    },
+    "related.cards.2.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:7",
+      "catalogSourceText": "Stay calm during stressful moments"
+    },
+    "related.cards.2.action": {
+      "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:2",
+      "catalogSourceText": "Learn more →"
+    },
+    "footer.safety": {
+      "occurrenceKey": "sel:p.text-xs.text-muted-foreground:ctx:p:pos:0",
+      "catalogSourceText": "This guide is for educational purposes only. Always follow your midwife's or healthcare provider's guidance for your specific labor and delivery."
+    },
+    "footer.links.0": {
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+      "catalogSourceText": "Techniques"
+    },
+    "footer.links.1": {
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+      "catalogSourceText": "Guides"
+    },
+    "footer.links.2": {
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+      "catalogSourceText": "App"
+    },
+    "footer.links.3": {
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:3",
+      "catalogSourceText": "About"
+    },
+    "footer.links.4": {
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+      "catalogSourceText": "About Abi"
+    },
+    "footer.links.5": {
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:5",
+      "catalogSourceText": "Embed"
+    }
+  }
+}

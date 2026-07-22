@@ -1,0 +1,56 @@
+{
+  "breadcrumb": {
+    "current": "Datenschutz",
+    "home": "Startseite"
+  },
+  "hero": {
+    "eyebrow": "Tiefe Atemübungen",
+    "intro": "Die Atemübungen funktionieren ohne Konto. Wenn Sie sich anmelden, verwenden wir Ihre Daten nur, um den Dienst bereitzustellen und zu verbessern.",
+    "lastUpdated": "Zuletzt aktualisiert am 11. Juli 2026.",
+    "title": "Datenschutz"
+  },
+  "metadata": {
+    "description": "Datenschutzerklärung für Deep Breathing Exercises, einschließlich optionaler Konten, Synchronisierung der Atemübungen, Analysen und Löschung.",
+    "imageAlt": "Datenschutzrichtlinie",
+    "socialDescription": "Datenschutzerklärung für Deep Breathing Exercises.",
+    "socialTitle": "Datenschutzrichtlinie",
+    "title": "Datenschutzrichtlinie | Atemübungen",
+    "twitterDescription": "Datenschutzerklärung für Deep Breathing Exercises.",
+    "twitterTitle": "Datenschutzrichtlinie"
+  },
+  "sections": {
+    "accounts": {
+      "body": "Wenn Sie sich mit Apple oder Google anmelden, erhalten wir die Kontokennung, die E-Mail-Adresse und jeden Namen, den der Anbieter weitergibt. Wir speichern den Verlauf Ihrer Atemsitzungen, Gesamtwerte, Serientage und Einstellungen, damit sie zwischen der Website und Ihrem Smartphone synchronisiert werden können. Übungen, die im abgemeldeten Zustand aufgezeichnet werden, bleiben auf Ihrem Gerät, bis Sie sich anmelden.",
+      "title": "Optionale Konten und Synchronisierung"
+    },
+    "collection": {
+      "body": "Gäste können üben, ohne uns einen Namen oder eine E-Mail-Adresse anzugeben. Die App und die Website erfassen grundlegende Nutzungsereignisse wie Beginn, Ende und Dauer einer Sitzung sowie Atemmodus und Plattform. Die mobile App verwendet eine zufällige Analysekennung pro Installation. Sie verwendet weder die Werbe-ID noch fordert sie eine Tracking-Berechtigung an.",
+      "title": "Welche Daten wir erfassen"
+    },
+    "contact": {
+      "abiassiLabel": "Abiassi",
+      "backLink": "Zurück zum Visualisierer →",
+      "darkmatterLabel": "Darkmatter AI Labs",
+      "intro": "Wenn Sie Fragen zum Datenschutz bezüglich der Wim Hof Methode oder der 4-7-8 Atemtechnik haben, können Sie die Ersteller kontaktieren über:",
+      "title": "Kontakt"
+    },
+    "deletion": {
+      "action": "Konto löschen.",
+      "afterAction": "Nach der Bestätigung löschen wir das Konto und die synchronisierten Übungsdaten dauerhaft. Lokale Daten können entfernt werden, indem Sie die App löschen oder die Websitedaten in Ihrem Browser löschen.",
+      "beforeAction": "Sie können das grundlegende Atemangebot als Gast nutzen. Angemeldete Nutzer können das Kontomenü öffnen und Folgendes auswählen",
+      "title": "Ihre Wahlmöglichkeiten und Löschung"
+    },
+    "device": {
+      "body": "Audio und Haptik werden auf Ihrem Gerät erzeugt oder abgespielt. Wir verwenden weder das Mikrofon, HealthKit, den genauen Standort, Kontakte, Fotos noch die Werbe-ID.",
+      "title": "Gerätefunktionen"
+    },
+    "thirdParty": {
+      "body": "Einige Seiten verlinken auf externe Forschungsergebnisse zu Themen wie Zwerchfellatmung, Bauchatmung oder der Herzratenvariabilität. Diese Seiten haben eigene Datenschutzrichtlinien.",
+      "title": "Links zu Drittanbietern"
+    },
+    "useAndShare": {
+      "body": "Wir verwenden diese Informationen für die App-Funktionalität, den Kontosupport, Analysen, die Leistungsüberwachung und Fehlerbehebungen. Dienstanbieter helfen uns bei Authentifizierung, E-Mail, Analysen, Hosting und Datenbankspeicherung. Wir verkaufen keine personenbezogenen Informationen und verwenden Atemdaten nicht für Werbung.",
+      "title": "Wie wir Daten verwenden und weitergeben"
+    }
+  }
+}

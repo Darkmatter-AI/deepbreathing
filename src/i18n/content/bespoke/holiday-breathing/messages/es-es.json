@@ -1,0 +1,312 @@
+{
+  "comfortTips": {
+    "items": [
+      "Busca un lugar tranquilo cuando sea posible; incluso 30 segundos a solas ayudan",
+      "No fuerces las respiraciones profundas; las respiraciones más pequeñas y suaves funcionan mejor",
+      "Empieza con solo 1 minuto; a menudo es suficiente",
+      "Evita las retenciones de aire si te resultan incómodas",
+      "Si sientes mareo u hormigueo, vuelve a respirar normalmente"
+    ],
+    "title": "Consejos de comodidad"
+  },
+  "dayPlans": {
+    "items": [
+      {
+        "steps": [
+          {
+            "action": "5 min de respiración coherente mientras te preparas",
+            "timing": "Mañana"
+          },
+          {
+            "action": "3 suspiros fisiológicos en el coche",
+            "timing": "Antes de llegar"
+          },
+          {
+            "action": "Suspiros en el baño según sea necesario",
+            "timing": "Durante"
+          },
+          {
+            "action": "3 min de respiración 4-7-8 antes de dormir",
+            "timing": "Después del evento"
+          }
+        ],
+        "title": "Día de reunión"
+      },
+      {
+        "steps": [
+          {
+            "action": "5 min de respiración coherente",
+            "timing": "Antes de salir"
+          },
+          {
+            "action": "2 min de respiración coherente durante las esperas",
+            "timing": "Retrasos"
+          },
+          {
+            "action": "Suspiros fisiológicos para las turbulencias",
+            "timing": "En el vuelo"
+          },
+          {
+            "action": "Reinicio de 60s con respiración cuadrada",
+            "timing": "Llegada"
+          }
+        ],
+        "title": "Día de viaje"
+      },
+      {
+        "steps": [
+          {
+            "action": "5 min de respiración coherente",
+            "timing": "Preparativos matutinos"
+          },
+          {
+            "action": "3 suspiros rápidos en la despensa",
+            "timing": "Llegada de invitados"
+          },
+          {
+            "action": "Pausa de 2 min de respiración coherente",
+            "timing": "Durante el evento"
+          },
+          {
+            "action": "3 min de 4-7-8 antes de dormir",
+            "timing": "Después de limpiar"
+          }
+        ],
+        "title": "Día de anfitrión"
+      }
+    ],
+    "title": "Planes para el día festivo"
+  },
+  "faq": {
+    "items": [
+      {
+        "answer": {
+          "parts": [
+            {
+              "text": "Sí. El suspiro fisiológico (doble inhalación + exhalación larga) funciona en solo 1-3 respiraciones. Está diseñado específicamente para el alivio del estrés agudo cuando no puedes alejarte."
+            }
+          ]
+        },
+        "question": "Solo tengo 30 segundos. ¿Ayudará esto?"
+      },
+      {
+        "answer": {
+          "parts": [
+            {
+              "text": "Absolutamente. "
+            },
+            {
+              "linkText": "El suspiro fisiológico"
+            },
+            {
+              "text": " puede disfrazarse de un suspiro natural de cansancio, la gente suspira todo el tiempo. Para técnicas más largas, discúlpate brevemente."
+            }
+          ]
+        },
+        "question": "¿Puedo hacer esto en la mesa sin parecer raro?"
+      },
+      {
+        "answer": {
+          "parts": [
+            {
+              "text": "Usa la guía visual en tu teléfono; ver la animación es más fácil que contar. Empieza con solo un suspiro fisiológico para aliviar la tensión."
+            }
+          ]
+        },
+        "question": "¿Qué pasa si estoy demasiado estresado para concentrarme en la respiración?"
+      },
+      {
+        "answer": {
+          "parts": [
+            {
+              "text": "Suspiro fisiológico para momentos agudos (tensión creciente, pánico). Respiración coherente para una calma sostenida (viajes, reuniones largas). 4-7-8 para dormir después de días agotadores."
+            }
+          ]
+        },
+        "question": "¿Qué técnica es mejor para el estrés navideño?"
+      },
+      {
+        "answer": {
+          "parts": [
+            {
+              "text": "Las respiraciones profundas aleatorias a menudo empeoran la ansiedad al hiperventilar. Estas técnicas utilizan ritmos específicos que activan tu sistema nervioso parasimpático."
+            }
+          ]
+        },
+        "question": "¿En qué se diferencia esto de simplemente 'respirar profundamente'?"
+      },
+      {
+        "answer": {
+          "parts": [
+            {
+              "text": "Sí. La respiración coherente crea una calma sostenida que dura horas. Consulta nuestra guía de ansiedad por viajes para ver el protocolo completo."
+            }
+          ]
+        },
+        "question": "¿Ayudará esto también con la ansiedad por viajar en vacaciones?"
+      }
+    ],
+    "title": "Preguntas frecuentes"
+  },
+  "footer": "Detente si sientes mareo, hormigueo o presión en el pecho. Estas son herramientas de autorregulación, no un tratamiento médico. Si tienes problemas de salud mental continuos, consulta a un profesional.",
+  "hero": {
+    "action": "Reinicio navideño de 30s →",
+    "eyebrow": "Calma estacional",
+    "intro": "Encuentra la calma durante las fiestas. Reinicios rápidos para reuniones, retrasos en viajes y momentos en los que necesitas alejarte y respirar.",
+    "title": "Ejercicios de respiración para las fiestas"
+  },
+  "holidayGuides": {
+    "action": "Aprende la técnica →",
+    "items": [
+      {
+        "description": "Gestiona reuniones familiares y el agobio social con el suspiro fisiológico",
+        "timing": "30 segundos",
+        "title": "Alivio del estrés durante las fiestas"
+      },
+      {
+        "description": "Mantén la calma en vuelos, retrasos, multitudes y viajes largos",
+        "timing": "5-10 minutos",
+        "title": "Ansiedad al viajar"
+      }
+    ],
+    "title": "Guías para las fiestas"
+  },
+  "metadata": {
+    "description": "Ejercicios de respiración para relajarse y aliviar el estrés festivo. Técnicas rápidas de 60 segundos a 3 minutos para reuniones, viajes y agobio.",
+    "imageAlt": "Encuentra calma con ejercicios de respiración para relajarse",
+    "imageSubtitle": "Pausas rápidas para reuniones y estrés de viaje",
+    "imageTitle": "Encuentra calma con ejercicios de respiración para relajarse",
+    "socialDescription": "Ejercicios de respiración para relajarse rápidamente en reuniones, viajes y agobio festivo. Técnicas de 60 segundos que funcionan.",
+    "socialTitle": "Encuentra calma con ejercicios de respiración para relajarse",
+    "title": "Encuentra calma con ejercicios de respiración para relajarse",
+    "twitterDescription": "Ejercicios de respiración para relajarse rápidamente en reuniones, viajes y agobio festivo. Visualizador gratis.",
+    "twitterTitle": "Encuentra calma con ejercicios de respiración para relajarse"
+  },
+  "moments": {
+    "items": [
+      {
+        "description": "En el coche, en la puerta o mientras te preparas",
+        "technique": "Suspiro fisiológico",
+        "title": "Antes de la reunión"
+      },
+      {
+        "description": "Pausa en el baño, ayuda en la cocina o un rincón tranquilo",
+        "technique": "Suspiro fisiológico",
+        "title": "Durante la reunión"
+      },
+      {
+        "description": "En el camino a casa o antes de dormir",
+        "technique": "Respiración 4-7-8",
+        "title": "Después de la reunión"
+      },
+      {
+        "description": "Aeropuertos, tráfico, turbulencias o salas de espera",
+        "technique": "Respiración coherente",
+        "title": "Estrés por viajes"
+      },
+      {
+        "description": "Pánico creciente, necesitas alivio inmediato",
+        "technique": "Suspiro fisiológico",
+        "title": "Agobio agudo"
+      }
+    ],
+    "title": "Elige tu momento"
+  },
+  "quickStart": {
+    "action": "Empezar →",
+    "items": [
+      {
+        "description": "Alivio instantáneo cuando aumenta la tensión: funciona en 1-3 respiraciones",
+        "timing": "30 segundos",
+        "title": "Reinicio ante estrés agudo"
+      },
+      {
+        "description": "Céntrate antes de entrar en el caos",
+        "timing": "1 minuto",
+        "title": "Calma antes de una reunión"
+      },
+      {
+        "description": "Encuentra tu centro durante un escape al baño o a la cocina",
+        "timing": "2 minutos",
+        "title": "Pausa en una habitación tranquila"
+      },
+      {
+        "description": "Descomprime después de un día agotador de socialización",
+        "timing": "3 minutos",
+        "title": "Relajación antes de dormir"
+      }
+    ],
+    "title": "Inicio rápido"
+  },
+  "relatedGuides": {
+    "items": [
+      {
+        "description": "Respiración cuadrada para la ansiedad general",
+        "title": "Alivio de la ansiedad"
+      },
+      {
+        "description": "Detén el pánico rápidamente con el suspiro fisiológico",
+        "title": "Ataques de pánico"
+      },
+      {
+        "description": "Respiración 4-7-8 para noches de descanso",
+        "title": "Mejor sueño"
+      },
+      {
+        "description": "Explora todos los métodos de respiración",
+        "title": "Todas las técnicas"
+      }
+    ],
+    "title": "Guías relacionadas"
+  },
+  "schema": {
+    "articleDescription": "Ejercicios de respiración para aliviar el estrés de las fiestas. Pausas rápidas para reuniones, viajes y momentos de agobio.",
+    "articleHeadline": "Encuentra calma con ejercicios de respiración para relajarse",
+    "howToDescription": "Usa la técnica del suspiro fisiológico para calmar rápidamente el estrés de las fiestas en 30 segundos.",
+    "howToName": "Cómo calmar el estrés de las fiestas con la respiración",
+    "howToSteps": [
+      {
+        "name": "Reconoce el estrés",
+        "text": "Reconoce cuándo te estás tensando: mandíbula apretada, hombros rígidos, pensamientos acelerados o ganas de responder bruscamente."
+      },
+      {
+        "name": "Primera inhalación",
+        "text": "Inhala profundamente por la nariz y llena los pulmones aproximadamente al 80-90%. Deja que el abdomen se expanda."
+      },
+      {
+        "name": "Segunda inhalación (complemento)",
+        "text": "Sin exhalar, haz una segunda inhalación más corta por la nariz para llenar por completo los pulmones."
+      },
+      {
+        "name": "Exhalación larga",
+        "text": "Exhala lenta y completamente por la boca, haciendo que la exhalación dure más que las dos inhalaciones juntas."
+      },
+      {
+        "name": "Repite si es necesario",
+        "text": "Un suspiro suele proporcionar alivio inmediato. Hazlo 2-3 veces si necesitas un reinicio completo."
+      }
+    ]
+  },
+  "share": {
+    "buttonText": "Compartir con alguien",
+    "copiedText": "¡Enlace copiado!",
+    "text": "¿Estrés en las fiestas? Este ejercicio de respiración ayuda en 30 segundos."
+  },
+  "whyItWorks": {
+    "items": [
+      {
+        "description": "Las exhalaciones largas activan el sistema nervioso parasimpático, el modo de 'descanso y digestión' que contrarresta el estrés.",
+        "title": "Énfasis en la exhalación"
+      },
+      {
+        "description": "Respirar a 5-6 respiraciones por minuto maximiza la variabilidad de la frecuencia cardíaca (VFC), el marcador de resiliencia al estrés de tu cuerpo.",
+        "title": "Ritmo óptimo"
+      },
+      {
+        "description": "Contar las fases de la respiración interrumpe la rumiación y el pensamiento catastrófico: no puedes entrar en pánico y contar simultáneamente.",
+        "title": "Anclaje de atención"
+      }
+    ],
+    "title": "Por qué funciona"
+  }
+}

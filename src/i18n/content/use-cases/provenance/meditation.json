@@ -1,0 +1,3141 @@
+{
+  "locales": {
+    "de-de": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "f10268a765bb0ecf0afdfae16a75bb2587e2c730d3f1f1b776a4cafc877308ea",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "3534328e2a443a5547397ac4885276ebc00ef326e655d7366c017ef471ad6172",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "f607a43ced7c5ce11c681d395d966d0d1a214221d59fcba2227a52b39e36f0a9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-focus-title": {
+          "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-pranayama-title": {
+          "sourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-coherent-app": {
+          "sourceHash": "010fb498f61fb71ff823061853b1087f16d25ddccd8f102487e0542c1070e24a",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "8c44a5e2313822fe19bcb330e0c2f95dd8a15ee2b5257e9f74f974293fa51b60",
+          "sourceText": "Coherent breathing is a complement to, not a replacement for, traditional meditation practice. If you're seeking meditation for clinical mental health conditions (anxiety, depression, trauma), consider working with a qualified meditation teacher or mental health professional trained in mindfulness-based interventions (MBSR, MBCT). This breathing practice is a tool for building attention skills and physiological regulation.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "ee71ce2740239e6ec2144cbfd5936eba1d76cbaad4a6967f4f8a57368fe761aa",
+          "sourceText": "This is a false dichotomy. Breath awareness IS a traditional meditation practice: it's the foundation of Vipassana, Zen, and many yogic traditions. Coherent breathing adds structure (a specific pace) to make breath meditation more accessible. Advanced meditators might not need the structure, but for beginners, the rhythm removes the guesswork. You're training the same attention skills (noticing distraction, returning to an anchor) that all meditation cultivates.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "284a0ed295cb596ef3c94e478e86bf3081012d1e844b3920a3d42ab6b0b2aa44",
+          "sourceText": "Is coherent breathing 'real meditation' or just breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "71c4bdbceabccebdf428518469ed3cac1f8d8f94dab3b652f9be1bd9caef7e00",
+          "sourceText": "You can practice coherent breathing indefinitely and receive significant benefits (reduced stress, improved HRV, better focus). But traditional formless meditation offers something different: training your attention without external aids. If you want to meditate anywhere (waiting in line, sitting on a bus) without a timer or visualizer, you'll eventually need to practice without structure. A good progression: coherent breathing for 4-8 weeks → 50/50 split (5 min coherent + 5 min formless) → mostly formless with coherent as needed.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].question": {
+          "sourceHash": "67e9b7d5227edfb6ad8fc9a8f9dfbc79b719f972f3fcdbeea31680b2e35ae9a0",
+          "sourceText": "Can I just do coherent breathing forever, or do I need to transition to 'real' meditation?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "2ac5abf77ef6f567261e6761987bbf14fb8b7582476c139d03fe6ae473f20178",
+          "sourceText": "Four fixes: (1) Sit upright in a chair, not lying down. (2) Practice earlier in the day when you're less tired. (3) Keep your eyes open, focused on the visualizer, engaging vision prevents drowsiness. (4) If you're chronically sleep-deprived, no meditation technique will work, get more sleep first. Falling asleep isn't 'bad,' but if your goal is meditation (not napping), adjust posture and timing.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].question": {
+          "sourceHash": "8a7b868e7938e6f00a4ee5166e393c38fd47058f29ddb90c94055b780a36ad5c",
+          "sourceText": "I fall asleep every time. How do I stay awake?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "e721f639367230386c0fbf3111dd2ccac3eb92b010fb1429efbcc39f3b66d37c",
+          "sourceText": "Most meditation apps offer guided sessions where a voice walks you through visualization, body scans, or breath observation, externally-directed meditation. Coherent breathing is self-directed: you're following a rhythm, not a narrator. The visualizer provides pacing (like a metronome), but you're doing the work of maintaining attention. It's a middle ground between fully guided (app) and fully formless (traditional meditation). Use coherent breathing to build attention skills, then apps or traditional practice to deepen.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "9c895a1ebdcc5aea5be6170741b2b1e7519c49d93a9bd0cbfae39af56f9a3f19",
+          "sourceText": "How is this different from Headspace, Calm, or other meditation apps?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "6941ae4a05a63a182537f349d2ed06b6819c115cd78f25c60e07823e7b0d3e1f",
+          "sourceText": "Yes. Some people experience anxiety when they first try meditation, the silence and internal focus can feel overwhelming or trigger panic. Coherent breathing gives you an external rhythm to anchor to, which can prevent the 'spiral' of meditation-induced anxiety. If you've had bad experiences with traditional meditation, start here. The structure reduces the psychological pressure of 'doing it right.' Once you feel comfortable, you can slowly reduce the structure.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "a4cd8d4bb0d521a5e689c22df665a71ff1725e694cc6d5c71e3e29c726ab6f81",
+          "sourceText": "Can this help with meditation-related anxiety or panic?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "5db9a9373b8fe24a4a4779ef9ced87d27fc90f973693ea63342a26043bd11e71",
+          "sourceText": "Week 1-2: Daily coherent breathing, 5 minutes, eyes open. Goal: build consistency, not perfection. Week 3-4: Increase to 10 minutes. Notice if breathing becomes automatic (coherence). Week 5-8: Try eyes-closed sessions. Add 2-3 minutes of formless breath observation after coherent practice. Month 3-4: 50/50 split, half your session structured (coherent), half formless. Month 5-6: Mostly formless meditation, using coherent breathing only when your mind is particularly restless. You've transitioned from training wheels to riding solo.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[5].question": {
+          "sourceHash": "d5e3f3965292475dc715f5e747e775db2e41d9fcb2e115714f1940fe19aad179",
+          "sourceText": "What's the long-term progression for someone starting with coherent breathing?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "9fbb81f21c7f9086b6894221087c45f3f9e82b4085564e39af1fda19e7837053",
+          "sourceText": "You've tried meditation. You sit down, close your eyes, and... your mind explodes with thoughts. You check the timer after what feels like 20 minutes. It's been 90 seconds. You're doing it wrong, right? Wrong. You just need structure. Coherent breathing is meditation with training wheels, a precise rhythm that gives your racing mind something to follow.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "b8f16b8d48afd36d37a7ba96ee45fa8fc804d43ee01e271eaade88f2068cefab",
+          "sourceText": "The structured breathing pattern that makes meditation accessible for beginners",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+          "sourceText": "Can't Meditate? Start with Coherent Breathing",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "b55917eb114c9852190f54b1b9e290d5399f3fa04a33b85d57cc2cf213dfe362",
+          "sourceText": "Start with 5 minutes. Don't attempt 20-minute sessions as a beginner. You'll build frustration, not skill. Five minutes of focused practice beats 20 minutes of mental wrestling.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "a8129ff860ffdd0c3b6968bf71e331f398f75713f63e8b0e9c75c30fd90a7c0d",
+          "sourceText": "Set a realistic duration",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "ad576e3126074983298e2465c7cbcc1d24aaa45fd97cc209c85894e4b486f11c",
+          "sourceText": "5 minutes (beginners)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "9e598a3761906c629dcba6074e2f70f7503130652ae2a28c43f2459a61e1bfd6",
+          "sourceText": "Sit upright in a chair (better than lying down, which can make you drowsy). You can keep your eyes open and focused on the visual guide, or close them and use audio cues if available. Beginners often succeed better with eyes open.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "4c4d9fe33d619c92a700b4c6c19eacdbfd3df5c8f4af052932d3edb1709910bc",
+          "sourceText": "Choose your setup",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "77472342903bb5a64c4c7eea79061d24edf1012edbb13cd57f6e4de72a397bc9",
+          "sourceText": "1 minute setup",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "fdc6cc13ccaf704029a52cd2d837e8216b9fa34acd800f3c4672649ec1e04789",
+          "sourceText": "Use the coherent breathing visualizer below, set to 5-6 breaths per minute (6-second inhale, 6-second exhale). The visual expansion and contraction will pace your breath.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "b89f8f0db202b53f9416c4d0c4f3350fcdb8e10bf1c5a867b91b1beb0d61b238",
+          "sourceText": "Start the visualizer",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "4fcf31d414033c14adf976899601101ae370145b4c66d27f5149f9d5ce524d4d",
+          "sourceText": "Start timer",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "a0332cb092d7da931f6f835b00d07d22262b9f8f256032f935a2d4fca0992e14",
+          "sourceText": "Inhale slowly through your nose as the visual expands (6 seconds). Exhale slowly through your nose as it contracts (6 seconds). Don't force depth, keep breaths comfortable and quiet. Your only job is to match the pace.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "ea6d1059621b411f6dfb4abb0f873ef8e1e73c92124ffa86fe5f83b0f92ec0f3",
+          "sourceText": "Breathe with the rhythm",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "a90620097624cae57edb193379e4a70f87b34096acc7c5d0b07d957b947a3e22",
+          "sourceText": "Ongoing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "709e272937ebf80f70cbfe630e9567871a0c61481c363925cf38f85e5d6a000f",
+          "sourceText": "Your mind WILL wander. That's not failure, it's normal. When you notice you've lost the rhythm (maybe you're breathing too fast, or thinking about dinner), gently return to the visual guide. Each return is a mental rep, like a bicep curl for attention.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "f3ad2d3218ad9e59ddc45b4e52f1ff81ca6aa08ca899b1fb7904a4c1c536d67c",
+          "sourceText": "Notice when your mind wanders",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "a90620097624cae57edb193379e4a70f87b34096acc7c5d0b07d957b947a3e22",
+          "sourceText": "Ongoing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "8defb041a6202b24d7c45aa5d033aabad62b8a40aaf027b208eb0183bfdcd4c5",
+          "sourceText": "After 2-3 minutes, you may feel a shift: breathing becomes automatic, your mind quiets, you feel 'settled.' This is coherence. If it doesn't happen, that's fine too. Success is staying with the practice, not achieving a specific state.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "713f2d270e5ed59eb6196092673beda675292d6747a4538125502a5139eb77b7",
+          "sourceText": "Let go of 'doing it right'",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "5d3c9e1215d32960bf80f17116b841e5dda06b9a6ce1207efb4b99c9c900c5dd",
+          "sourceText": "After 2-3 minutes",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].instruction": {
+          "sourceHash": "0b636eefcc1f507c0c03f3f383911a46e66030f869ab8387a0c784308bdf2f7f",
+          "sourceText": "After 5 minutes, you have two options: (1) Stop and return to your day, carrying the calm with you. (2) If you feel settled, close your eyes and continue breathing without the visualizer. You've just transitioned to traditional meditation.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[6].name": {
+          "sourceHash": "59f38662352f8d039f68077191efc3b45a605e404db7207e2fa4c204102482c4",
+          "sourceText": "Transition or extend",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].timing": {
+          "sourceHash": "790a966088a5271308890dbc22b60e0a1cadb21ba673929e91724cb203a542b4",
+          "sourceText": "5+ minutes",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "a6f8e852ca02c782908b359e91188fd852fbbafbde963879ef128940871afbc7",
+          "sourceText": "Use coherent breathing as your daily meditation practice for 2-4 weeks before attempting formless mindfulness",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "f2b06f4f86366b9d8d61012c3f6939276172d43671d6711cbf1c0e8e3e225686",
+          "sourceText": "Eyes open (watching the visualizer) is easier than eyes closed for most beginners",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "c52a8c12839776cc378daa27987737c7ad93cfde424da7e5fdbd071b3b18704e",
+          "sourceText": "Practice at the same time daily, morning works best for building the habit",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "c5c2d2243bfb67735228dbbed423b74518b434867293bacc19386c3ad02e5958",
+          "sourceText": "Don't judge the quality of your sessions; consistency matters more than 'good' vs 'bad' practices",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "0cce5412c02da80c539b43c6328e59aafffe877dc1c7ab94d7df45139e0599d5",
+          "sourceText": "If you fall asleep, you're doing it lying down or when exhausted. Try sitting upright earlier in the day",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[5]": {
+          "sourceHash": "6432bd2d6d5fd8b1d7ac80260330870a7684938c739b1f1f84275b74cedb15bb",
+          "sourceText": "After a month, try 2 minutes of coherent breathing followed by 3 minutes of formless meditation",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "a037b3d4253ccefd97809de502cddcc0921bf26afd6e0ee280c87251069788b8",
+          "sourceText": "Mind won't stop racing? Can't sit still? Start meditation with coherent breathing—the structured breathing pattern that makes mindfulness accessible. Free guided visualizer + research.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "bd5d8b1e2f4336ae0655efb4ca893360ee906bd0534f2d1731add44d3aa75098",
+          "sourceText": "The structured breathing pattern that makes meditation accessible for beginners. Free guided visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+          "sourceText": "Can't Meditate? Start with Coherent Breathing",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "80c5c54985886e95a6dff7a8465f4771b26fec102623e0a9b35a7b095b2a6ac3",
+          "sourceText": "Can't Meditate? Start with Coherent Breathing (Meditation for Beginners) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "bd5d8b1e2f4336ae0655efb4ca893360ee906bd0534f2d1731add44d3aa75098",
+          "sourceText": "The structured breathing pattern that makes meditation accessible for beginners. Free guided visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+          "sourceText": "Can't Meditate? Start with Coherent Breathing",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "46f8b0b7fa0c1d3362ba5231899a63c51d1dce9a868b9abb11f0f8835af108b0",
+          "sourceText": "Traditional mindfulness meditation says: 'Just observe your breath. When your mind wanders, gently return to the breath.' Sounds simple. But for most people (especially beginners) this is like telling someone who can't swim to 'just relax and float.' Your mind doesn't wander; it sprints. You become hyper-aware of discomfort. The silence is overwhelming. You quit after three sessions, convinced meditation 'isn't for you.'",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "f6c7c94b80e7609e8fe8e7f453c4b1f21489f0007386b0a7f10c47b36f3bdd71",
+          "sourceText": "Why Traditional Meditation Feels Impossible",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "f986d919ef9f3da595981b061c0cd357da3068b5f280603819aae99bf04ffea8",
+          "sourceText": "Mind races with thoughts the moment you close your eyes",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "ab6866d04094260aa030c460337e4ef43e6fee8909af95e7e65fcf0a4667b2bc",
+          "sourceText": "Can't sit still, constant urge to fidget or check the time",
+          "status": "route-catalog-normalized"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "8918380255283ba04ad911308a9cdd5d481027049c32610b008de0bb0849b899",
+          "sourceText": "Overwhelming awareness of physical discomfort (itches, aches, restlessness)",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "365c2d8e1b0dee6f55cb8274ee9344659118d70f2dd2c623c825fa9661bcb577",
+          "sourceText": "Feeling like you're 'doing it wrong' or 'bad at meditation'",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "d91dfdb3d1d2ad9c9505257dda745c2c140aaaa7251236a3675571e5d6b88a2d",
+          "sourceText": "Falling asleep during meditation instead of staying present",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "a886918ac6b88facaec0fd8d7ff87e7d38647b6b503f120093b2af82b1e876da",
+          "sourceText": "Frustration that meditation feels harder, not easier, over time",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "b0b4f5a036a376ceaff66249f1628e0341cdc12cc96d87e13bffdfe85b5ad272",
+          "sourceText": "Quitting after a few sessions because it feels impossible",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[7]": {
+          "sourceHash": "ea00a4c04c0269244bd17a21481ebda307006eea87e86bebfb9f6a0e7bf87393",
+          "sourceText": "Wondering if meditation 'just isn't for you'",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "d4c4a4fd299eb63c83c99c5d490f423f14bf964b4be370c3ef3d2d38a3ed9dbc",
+          "sourceText": "Meta-analysis showing that slow breathing practices produce similar mental health benefits to traditional meditation, with potential advantages for beginners due to concrete focus object.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "67a6016bc8e2fdcb1d86a975adc2ae44661a5dc23ed15b3cad25e40f269d93f3",
+          "sourceText": "Breath-Focused Meditation and Mental Health: A Meta-Analysis",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "ba3d1b12f11c30c43c8f58bfd9523d59d83eca84423f9e52043df67912cb55d2",
+          "sourceText": "Review showing that both traditional meditation and HRV biofeedback (coherent breathing) produce similar autonomic nervous system benefits, suggesting multiple valid paths to meditative states.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "01e138b656be4134176004c775b3284a4c79a4b56ce9149dedc962503a420239",
+          "sourceText": "Heart Rate Variability and Meditation: A Systematic Review",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "ee593fcbabb0607d324e60b3b8fd75daa02f0e48fa48c2ead3374796d63fb608",
+          "sourceText": "8-week study showing slow breathing training improved sustained attention and reduced stress, key benefits also sought from meditation practice.",
+          "status": "route-catalog-normalized"
+        },
+        "references[2].title": {
+          "sourceHash": "d863b7eff524919851ba5248ee7824be679b4f8d222a08fbb37ea921fc5a8763",
+          "sourceText": "The Effect of Diaphragmatic Breathing on Attention, Negative Affect and Stress",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "290369e2264fda8af7efcd7a51e27b6d69215bbaac3614b91908d7744506529f",
+          "sourceText": "Theoretical framework explaining how slow breathing practices (like coherent breathing) activate the same vagus nerve pathways as traditional meditation.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "46b18568d28e2298bd59e8b596a871a3644c4fda78ad787d24e2941804d6ee18",
+          "sourceText": "Breath of Life: The Respiratory Vagal Stimulation Model of Contemplative Activity",
+          "status": "route-catalog-exact"
+        },
+        "references[4].summary": {
+          "sourceHash": "d6e26d363845750e33717806a44fb381738bfdd04fca740fe1ae66bffc1326a2",
+          "sourceText": "Research showing that mindfulness meditation increases HRV, and that HRV training (coherent breathing) may provide a structured entry point to mindfulness.",
+          "status": "route-catalog-exact"
+        },
+        "references[4].title": {
+          "sourceHash": "03c51fd888db8b1ae631688c5bc7f5883395d54320999c97671c41e34561cc47",
+          "sourceText": "Mindfulness-Based Interventions and the HRV Connection",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "72c4f42c75d2b8d5f4c9af7b9db772f9629dd90f23f37374013e7942ffb41885",
+          "sourceText": "Practice with the full coherent breathing visualizer and explore the complete HRV optimization protocol",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "7a55cec67d48c1355e622cbb1c6208597e7c792fef8d38b6d83a7a6790a9d1e1",
+          "sourceText": "Once you've built attention skills through breathing, apply them to deep work and concentration",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "95265d3290ee341ed5fb2a893f788a7bb3ea8d6d4b4a9584c20efc9781c557c0",
+          "sourceText": "If anxiety is blocking meditation, try box breathing for acute nervous system calming first",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "9b66125b79db90570355e78c224a9bd708966fe3af9b45bee1f927c167ca95cf",
+          "sourceText": "Explore the yogic pranayama tradition for deeper meditation preparation",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "f1e7ba50e5338ae6714e4748bbaa3d0abacbd5ab3701b75eef094d634b801ce9",
+          "sourceText": "Why Coherent Breathing Works as Meditation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "3c5102fd027871d550bc20e3f6c5c7f1c8fc2fda1c37ec0570874262f296f270",
+          "sourceText": "Traditional meditation asks you to generate internal focus ('observe the breath'). Coherent breathing provides an external rhythm to follow. Research on attention training shows that beginners struggle with purely internal focus but succeed with external cues (visual, auditory, tactile). The visualizer or timer becomes your meditation teacher, pacing your attention.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "3028ae6449ac7380303aec30adf3edbef402ce584a0edc5db8a1c2920a609d94",
+          "sourceText": "Provides an External Anchor",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "b1fcb1f9551d46902ba56261e08a3cd1a35e7233aa397c3f2f40f1cb933f388e",
+          "sourceText": "EEG studies show that coherent breathing increases alpha wave activity (8-12 Hz), the same relaxed-yet-alert brain state produced by experienced meditators. You're achieving the destination (calm, focused awareness) through a different route. Some research suggests coherent breathing produces faster alpha increases than traditional mindfulness in beginners.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "8605e3717ff23019f05bc27f3ca01e001aab53ce8aa6a1d486a1068696f181e7",
+          "sourceText": "Produces Meditative Brain States",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "c0f817daccfb024c0f89a93e4bfae4b34d4541a245d2a011b5bf6e325560225e",
+          "sourceText": "Traditional meditation says 'calm your mind, and your body will follow.' Coherent breathing reverses this: calm your body (via slow breathing and HRV optimization), and your mind follows. By slowing your heart rate and activating the vagus nerve, you create the physiological conditions for meditation, making mental stillness easier to access.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "ef3ecb7bfb0a30c212ca0e74e8051c69773cd8d0e31da1fae54445c8a65111e7",
+          "sourceText": "Creates Physiological Calm First",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "d660dc20966ac3259d557a8007e4b65b748335051535c0d2bcef0561b3ec1a12",
+          "sourceText": "Interoception is awareness of internal body sensations, the foundation of mindfulness. Coherent breathing trains this awareness in a structured way: you notice breath depth, rhythm, belly movement, and the pause between breaths. After weeks of practice, you develop the body awareness needed for formless meditation.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "341640acfb5706908526ff3cbd200c581e9d19821cb0e1c49e4a3ce85896b14b",
+          "sourceText": "Builds Interoceptive Awareness",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "56ce189dfb00279fec04e544d0fd8b73e9d1f878f45d874d72d3916b7dd7bdf7",
+          "sourceText": "Coherent breathing is meditation with explicit instructions: breathe in for 6 seconds, breathe out for 6 seconds. That's it. The rhythm becomes an anchor, something concrete to focus on instead of the vague instruction to 'observe your breath.' Your mind still wanders, but you have a clear task to return to: match the pace. After 5-10 minutes of this structured practice, many people naturally transition into a meditative state (calm, present, aware) without forcing it.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "ba66d034dc8ab72ce5a84a33d797387d7c2e3a9ea226d0053e0fc40c0964ee64",
+          "sourceText": "Coherent Breathing: Meditation with Structure",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "7a019836f8b90c3ee8ee8c4d5d5f90ba80162eebde971c6c450db0f1825bb671",
+          "sourceText": "The 0.1 Hz frequency (5-6 breaths per minute) isn't arbitrary. It synchronizes your heart rate, breath, and nervous system, creating a state of physiological coherence. This coherence produces the same benefits as traditional meditation (reduced stress, improved focus, emotional regulation) but with less mental effort. You're not battling your mind; you're giving it a job.",
+          "status": "route-catalog-normalized"
+        }
+      }
+    },
+    "es-es": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "f10268a765bb0ecf0afdfae16a75bb2587e2c730d3f1f1b776a4cafc877308ea",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "3534328e2a443a5547397ac4885276ebc00ef326e655d7366c017ef471ad6172",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "f607a43ced7c5ce11c681d395d966d0d1a214221d59fcba2227a52b39e36f0a9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-focus-title": {
+          "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-pranayama-title": {
+          "sourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-coherent-app": {
+          "sourceHash": "010fb498f61fb71ff823061853b1087f16d25ddccd8f102487e0542c1070e24a",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "8c44a5e2313822fe19bcb330e0c2f95dd8a15ee2b5257e9f74f974293fa51b60",
+          "sourceText": "Coherent breathing is a complement to, not a replacement for, traditional meditation practice. If you're seeking meditation for clinical mental health conditions (anxiety, depression, trauma), consider working with a qualified meditation teacher or mental health professional trained in mindfulness-based interventions (MBSR, MBCT). This breathing practice is a tool for building attention skills and physiological regulation.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "ee71ce2740239e6ec2144cbfd5936eba1d76cbaad4a6967f4f8a57368fe761aa",
+          "sourceText": "This is a false dichotomy. Breath awareness IS a traditional meditation practice: it's the foundation of Vipassana, Zen, and many yogic traditions. Coherent breathing adds structure (a specific pace) to make breath meditation more accessible. Advanced meditators might not need the structure, but for beginners, the rhythm removes the guesswork. You're training the same attention skills (noticing distraction, returning to an anchor) that all meditation cultivates.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "284a0ed295cb596ef3c94e478e86bf3081012d1e844b3920a3d42ab6b0b2aa44",
+          "sourceText": "Is coherent breathing 'real meditation' or just breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "71c4bdbceabccebdf428518469ed3cac1f8d8f94dab3b652f9be1bd9caef7e00",
+          "sourceText": "You can practice coherent breathing indefinitely and receive significant benefits (reduced stress, improved HRV, better focus). But traditional formless meditation offers something different: training your attention without external aids. If you want to meditate anywhere (waiting in line, sitting on a bus) without a timer or visualizer, you'll eventually need to practice without structure. A good progression: coherent breathing for 4-8 weeks → 50/50 split (5 min coherent + 5 min formless) → mostly formless with coherent as needed.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].question": {
+          "sourceHash": "67e9b7d5227edfb6ad8fc9a8f9dfbc79b719f972f3fcdbeea31680b2e35ae9a0",
+          "sourceText": "Can I just do coherent breathing forever, or do I need to transition to 'real' meditation?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "2ac5abf77ef6f567261e6761987bbf14fb8b7582476c139d03fe6ae473f20178",
+          "sourceText": "Four fixes: (1) Sit upright in a chair, not lying down. (2) Practice earlier in the day when you're less tired. (3) Keep your eyes open, focused on the visualizer, engaging vision prevents drowsiness. (4) If you're chronically sleep-deprived, no meditation technique will work, get more sleep first. Falling asleep isn't 'bad,' but if your goal is meditation (not napping), adjust posture and timing.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].question": {
+          "sourceHash": "8a7b868e7938e6f00a4ee5166e393c38fd47058f29ddb90c94055b780a36ad5c",
+          "sourceText": "I fall asleep every time. How do I stay awake?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "e721f639367230386c0fbf3111dd2ccac3eb92b010fb1429efbcc39f3b66d37c",
+          "sourceText": "Most meditation apps offer guided sessions where a voice walks you through visualization, body scans, or breath observation, externally-directed meditation. Coherent breathing is self-directed: you're following a rhythm, not a narrator. The visualizer provides pacing (like a metronome), but you're doing the work of maintaining attention. It's a middle ground between fully guided (app) and fully formless (traditional meditation). Use coherent breathing to build attention skills, then apps or traditional practice to deepen.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "9c895a1ebdcc5aea5be6170741b2b1e7519c49d93a9bd0cbfae39af56f9a3f19",
+          "sourceText": "How is this different from Headspace, Calm, or other meditation apps?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "6941ae4a05a63a182537f349d2ed06b6819c115cd78f25c60e07823e7b0d3e1f",
+          "sourceText": "Yes. Some people experience anxiety when they first try meditation, the silence and internal focus can feel overwhelming or trigger panic. Coherent breathing gives you an external rhythm to anchor to, which can prevent the 'spiral' of meditation-induced anxiety. If you've had bad experiences with traditional meditation, start here. The structure reduces the psychological pressure of 'doing it right.' Once you feel comfortable, you can slowly reduce the structure.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "a4cd8d4bb0d521a5e689c22df665a71ff1725e694cc6d5c71e3e29c726ab6f81",
+          "sourceText": "Can this help with meditation-related anxiety or panic?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "5db9a9373b8fe24a4a4779ef9ced87d27fc90f973693ea63342a26043bd11e71",
+          "sourceText": "Week 1-2: Daily coherent breathing, 5 minutes, eyes open. Goal: build consistency, not perfection. Week 3-4: Increase to 10 minutes. Notice if breathing becomes automatic (coherence). Week 5-8: Try eyes-closed sessions. Add 2-3 minutes of formless breath observation after coherent practice. Month 3-4: 50/50 split, half your session structured (coherent), half formless. Month 5-6: Mostly formless meditation, using coherent breathing only when your mind is particularly restless. You've transitioned from training wheels to riding solo.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[5].question": {
+          "sourceHash": "d5e3f3965292475dc715f5e747e775db2e41d9fcb2e115714f1940fe19aad179",
+          "sourceText": "What's the long-term progression for someone starting with coherent breathing?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "9fbb81f21c7f9086b6894221087c45f3f9e82b4085564e39af1fda19e7837053",
+          "sourceText": "You've tried meditation. You sit down, close your eyes, and... your mind explodes with thoughts. You check the timer after what feels like 20 minutes. It's been 90 seconds. You're doing it wrong, right? Wrong. You just need structure. Coherent breathing is meditation with training wheels, a precise rhythm that gives your racing mind something to follow.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "b8f16b8d48afd36d37a7ba96ee45fa8fc804d43ee01e271eaade88f2068cefab",
+          "sourceText": "The structured breathing pattern that makes meditation accessible for beginners",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+          "sourceText": "Can't Meditate? Start with Coherent Breathing",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "b55917eb114c9852190f54b1b9e290d5399f3fa04a33b85d57cc2cf213dfe362",
+          "sourceText": "Start with 5 minutes. Don't attempt 20-minute sessions as a beginner. You'll build frustration, not skill. Five minutes of focused practice beats 20 minutes of mental wrestling.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "a8129ff860ffdd0c3b6968bf71e331f398f75713f63e8b0e9c75c30fd90a7c0d",
+          "sourceText": "Set a realistic duration",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "ad576e3126074983298e2465c7cbcc1d24aaa45fd97cc209c85894e4b486f11c",
+          "sourceText": "5 minutes (beginners)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "9e598a3761906c629dcba6074e2f70f7503130652ae2a28c43f2459a61e1bfd6",
+          "sourceText": "Sit upright in a chair (better than lying down, which can make you drowsy). You can keep your eyes open and focused on the visual guide, or close them and use audio cues if available. Beginners often succeed better with eyes open.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "4c4d9fe33d619c92a700b4c6c19eacdbfd3df5c8f4af052932d3edb1709910bc",
+          "sourceText": "Choose your setup",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "77472342903bb5a64c4c7eea79061d24edf1012edbb13cd57f6e4de72a397bc9",
+          "sourceText": "1 minute setup",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "fdc6cc13ccaf704029a52cd2d837e8216b9fa34acd800f3c4672649ec1e04789",
+          "sourceText": "Use the coherent breathing visualizer below, set to 5-6 breaths per minute (6-second inhale, 6-second exhale). The visual expansion and contraction will pace your breath.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "b89f8f0db202b53f9416c4d0c4f3350fcdb8e10bf1c5a867b91b1beb0d61b238",
+          "sourceText": "Start the visualizer",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "4fcf31d414033c14adf976899601101ae370145b4c66d27f5149f9d5ce524d4d",
+          "sourceText": "Start timer",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "a0332cb092d7da931f6f835b00d07d22262b9f8f256032f935a2d4fca0992e14",
+          "sourceText": "Inhale slowly through your nose as the visual expands (6 seconds). Exhale slowly through your nose as it contracts (6 seconds). Don't force depth, keep breaths comfortable and quiet. Your only job is to match the pace.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "ea6d1059621b411f6dfb4abb0f873ef8e1e73c92124ffa86fe5f83b0f92ec0f3",
+          "sourceText": "Breathe with the rhythm",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "a90620097624cae57edb193379e4a70f87b34096acc7c5d0b07d957b947a3e22",
+          "sourceText": "Ongoing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "709e272937ebf80f70cbfe630e9567871a0c61481c363925cf38f85e5d6a000f",
+          "sourceText": "Your mind WILL wander. That's not failure, it's normal. When you notice you've lost the rhythm (maybe you're breathing too fast, or thinking about dinner), gently return to the visual guide. Each return is a mental rep, like a bicep curl for attention.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "f3ad2d3218ad9e59ddc45b4e52f1ff81ca6aa08ca899b1fb7904a4c1c536d67c",
+          "sourceText": "Notice when your mind wanders",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "a90620097624cae57edb193379e4a70f87b34096acc7c5d0b07d957b947a3e22",
+          "sourceText": "Ongoing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "8defb041a6202b24d7c45aa5d033aabad62b8a40aaf027b208eb0183bfdcd4c5",
+          "sourceText": "After 2-3 minutes, you may feel a shift: breathing becomes automatic, your mind quiets, you feel 'settled.' This is coherence. If it doesn't happen, that's fine too. Success is staying with the practice, not achieving a specific state.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "713f2d270e5ed59eb6196092673beda675292d6747a4538125502a5139eb77b7",
+          "sourceText": "Let go of 'doing it right'",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "5d3c9e1215d32960bf80f17116b841e5dda06b9a6ce1207efb4b99c9c900c5dd",
+          "sourceText": "After 2-3 minutes",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].instruction": {
+          "sourceHash": "0b636eefcc1f507c0c03f3f383911a46e66030f869ab8387a0c784308bdf2f7f",
+          "sourceText": "After 5 minutes, you have two options: (1) Stop and return to your day, carrying the calm with you. (2) If you feel settled, close your eyes and continue breathing without the visualizer. You've just transitioned to traditional meditation.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[6].name": {
+          "sourceHash": "59f38662352f8d039f68077191efc3b45a605e404db7207e2fa4c204102482c4",
+          "sourceText": "Transition or extend",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].timing": {
+          "sourceHash": "790a966088a5271308890dbc22b60e0a1cadb21ba673929e91724cb203a542b4",
+          "sourceText": "5+ minutes",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "a6f8e852ca02c782908b359e91188fd852fbbafbde963879ef128940871afbc7",
+          "sourceText": "Use coherent breathing as your daily meditation practice for 2-4 weeks before attempting formless mindfulness",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "f2b06f4f86366b9d8d61012c3f6939276172d43671d6711cbf1c0e8e3e225686",
+          "sourceText": "Eyes open (watching the visualizer) is easier than eyes closed for most beginners",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "c52a8c12839776cc378daa27987737c7ad93cfde424da7e5fdbd071b3b18704e",
+          "sourceText": "Practice at the same time daily, morning works best for building the habit",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "c5c2d2243bfb67735228dbbed423b74518b434867293bacc19386c3ad02e5958",
+          "sourceText": "Don't judge the quality of your sessions; consistency matters more than 'good' vs 'bad' practices",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "0cce5412c02da80c539b43c6328e59aafffe877dc1c7ab94d7df45139e0599d5",
+          "sourceText": "If you fall asleep, you're doing it lying down or when exhausted. Try sitting upright earlier in the day",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[5]": {
+          "sourceHash": "6432bd2d6d5fd8b1d7ac80260330870a7684938c739b1f1f84275b74cedb15bb",
+          "sourceText": "After a month, try 2 minutes of coherent breathing followed by 3 minutes of formless meditation",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "a037b3d4253ccefd97809de502cddcc0921bf26afd6e0ee280c87251069788b8",
+          "sourceText": "Mind won't stop racing? Can't sit still? Start meditation with coherent breathing: the structured breathing pattern that makes mindfulness accessible. Free guided visualizer + research.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "bd5d8b1e2f4336ae0655efb4ca893360ee906bd0534f2d1731add44d3aa75098",
+          "sourceText": "The structured breathing pattern that makes meditation accessible for beginners. Free guided visualizer.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+          "sourceText": "Can't Meditate? Start with Coherent Breathing",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.title": {
+          "sourceHash": "80c5c54985886e95a6dff7a8465f4771b26fec102623e0a9b35a7b095b2a6ac3",
+          "sourceText": "Can't Meditate? Start with Coherent Breathing (Meditation for Beginners)",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "bd5d8b1e2f4336ae0655efb4ca893360ee906bd0534f2d1731add44d3aa75098",
+          "sourceText": "The structured breathing pattern that makes meditation accessible for beginners. Free guided visualizer.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+          "sourceText": "Can't Meditate? Start with Coherent Breathing",
+          "status": "repo-reviewed-replacement"
+        },
+        "problem.content": {
+          "sourceHash": "46f8b0b7fa0c1d3362ba5231899a63c51d1dce9a868b9abb11f0f8835af108b0",
+          "sourceText": "Traditional mindfulness meditation says: 'Just observe your breath. When your mind wanders, gently return to the breath.' Sounds simple. But for most people (especially beginners) this is like telling someone who can't swim to 'just relax and float.' Your mind doesn't wander; it sprints. You become hyper-aware of discomfort. The silence is overwhelming. You quit after three sessions, convinced meditation 'isn't for you.'",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "f6c7c94b80e7609e8fe8e7f453c4b1f21489f0007386b0a7f10c47b36f3bdd71",
+          "sourceText": "Why Traditional Meditation Feels Impossible",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "f986d919ef9f3da595981b061c0cd357da3068b5f280603819aae99bf04ffea8",
+          "sourceText": "Mind races with thoughts the moment you close your eyes",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "ab6866d04094260aa030c460337e4ef43e6fee8909af95e7e65fcf0a4667b2bc",
+          "sourceText": "Can't sit still, constant urge to fidget or check the time",
+          "status": "route-catalog-normalized"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "8918380255283ba04ad911308a9cdd5d481027049c32610b008de0bb0849b899",
+          "sourceText": "Overwhelming awareness of physical discomfort (itches, aches, restlessness)",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "365c2d8e1b0dee6f55cb8274ee9344659118d70f2dd2c623c825fa9661bcb577",
+          "sourceText": "Feeling like you're 'doing it wrong' or 'bad at meditation'",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "d91dfdb3d1d2ad9c9505257dda745c2c140aaaa7251236a3675571e5d6b88a2d",
+          "sourceText": "Falling asleep during meditation instead of staying present",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "a886918ac6b88facaec0fd8d7ff87e7d38647b6b503f120093b2af82b1e876da",
+          "sourceText": "Frustration that meditation feels harder, not easier, over time",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "b0b4f5a036a376ceaff66249f1628e0341cdc12cc96d87e13bffdfe85b5ad272",
+          "sourceText": "Quitting after a few sessions because it feels impossible",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[7]": {
+          "sourceHash": "ea00a4c04c0269244bd17a21481ebda307006eea87e86bebfb9f6a0e7bf87393",
+          "sourceText": "Wondering if meditation 'just isn't for you'",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "d4c4a4fd299eb63c83c99c5d490f423f14bf964b4be370c3ef3d2d38a3ed9dbc",
+          "sourceText": "Meta-analysis showing that slow breathing practices produce similar mental health benefits to traditional meditation, with potential advantages for beginners due to concrete focus object.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "67a6016bc8e2fdcb1d86a975adc2ae44661a5dc23ed15b3cad25e40f269d93f3",
+          "sourceText": "Breath-Focused Meditation and Mental Health: A Meta-Analysis",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "ba3d1b12f11c30c43c8f58bfd9523d59d83eca84423f9e52043df67912cb55d2",
+          "sourceText": "Review showing that both traditional meditation and HRV biofeedback (coherent breathing) produce similar autonomic nervous system benefits, suggesting multiple valid paths to meditative states.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "01e138b656be4134176004c775b3284a4c79a4b56ce9149dedc962503a420239",
+          "sourceText": "Heart Rate Variability and Meditation: A Systematic Review",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "ee593fcbabb0607d324e60b3b8fd75daa02f0e48fa48c2ead3374796d63fb608",
+          "sourceText": "8-week study showing slow breathing training improved sustained attention and reduced stress, key benefits also sought from meditation practice.",
+          "status": "route-catalog-normalized"
+        },
+        "references[2].title": {
+          "sourceHash": "d863b7eff524919851ba5248ee7824be679b4f8d222a08fbb37ea921fc5a8763",
+          "sourceText": "The Effect of Diaphragmatic Breathing on Attention, Negative Affect and Stress",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "290369e2264fda8af7efcd7a51e27b6d69215bbaac3614b91908d7744506529f",
+          "sourceText": "Theoretical framework explaining how slow breathing practices (like coherent breathing) activate the same vagus nerve pathways as traditional meditation.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "46b18568d28e2298bd59e8b596a871a3644c4fda78ad787d24e2941804d6ee18",
+          "sourceText": "Breath of Life: The Respiratory Vagal Stimulation Model of Contemplative Activity",
+          "status": "route-catalog-exact"
+        },
+        "references[4].summary": {
+          "sourceHash": "d6e26d363845750e33717806a44fb381738bfdd04fca740fe1ae66bffc1326a2",
+          "sourceText": "Research showing that mindfulness meditation increases HRV, and that HRV training (coherent breathing) may provide a structured entry point to mindfulness.",
+          "status": "route-catalog-exact"
+        },
+        "references[4].title": {
+          "sourceHash": "03c51fd888db8b1ae631688c5bc7f5883395d54320999c97671c41e34561cc47",
+          "sourceText": "Mindfulness-Based Interventions and the HRV Connection",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "72c4f42c75d2b8d5f4c9af7b9db772f9629dd90f23f37374013e7942ffb41885",
+          "sourceText": "Practice with the full coherent breathing visualizer and explore the complete HRV optimization protocol",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "7a55cec67d48c1355e622cbb1c6208597e7c792fef8d38b6d83a7a6790a9d1e1",
+          "sourceText": "Once you've built attention skills through breathing, apply them to deep work and concentration",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "95265d3290ee341ed5fb2a893f788a7bb3ea8d6d4b4a9584c20efc9781c557c0",
+          "sourceText": "If anxiety is blocking meditation, try box breathing for acute nervous system calming first",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "9b66125b79db90570355e78c224a9bd708966fe3af9b45bee1f927c167ca95cf",
+          "sourceText": "Explore the yogic pranayama tradition for deeper meditation preparation",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "f1e7ba50e5338ae6714e4748bbaa3d0abacbd5ab3701b75eef094d634b801ce9",
+          "sourceText": "Why Coherent Breathing Works as Meditation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "3c5102fd027871d550bc20e3f6c5c7f1c8fc2fda1c37ec0570874262f296f270",
+          "sourceText": "Traditional meditation asks you to generate internal focus ('observe the breath'). Coherent breathing provides an external rhythm to follow. Research on attention training shows that beginners struggle with purely internal focus but succeed with external cues (visual, auditory, tactile). The visualizer or timer becomes your meditation teacher, pacing your attention.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "3028ae6449ac7380303aec30adf3edbef402ce584a0edc5db8a1c2920a609d94",
+          "sourceText": "Provides an External Anchor",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "b1fcb1f9551d46902ba56261e08a3cd1a35e7233aa397c3f2f40f1cb933f388e",
+          "sourceText": "EEG studies show that coherent breathing increases alpha wave activity (8-12 Hz), the same relaxed-yet-alert brain state produced by experienced meditators. You're achieving the destination (calm, focused awareness) through a different route. Some research suggests coherent breathing produces faster alpha increases than traditional mindfulness in beginners.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "8605e3717ff23019f05bc27f3ca01e001aab53ce8aa6a1d486a1068696f181e7",
+          "sourceText": "Produces Meditative Brain States",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "c0f817daccfb024c0f89a93e4bfae4b34d4541a245d2a011b5bf6e325560225e",
+          "sourceText": "Traditional meditation says 'calm your mind, and your body will follow.' Coherent breathing reverses this: calm your body (via slow breathing and HRV optimization), and your mind follows. By slowing your heart rate and activating the vagus nerve, you create the physiological conditions for meditation, making mental stillness easier to access.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "ef3ecb7bfb0a30c212ca0e74e8051c69773cd8d0e31da1fae54445c8a65111e7",
+          "sourceText": "Creates Physiological Calm First",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "d660dc20966ac3259d557a8007e4b65b748335051535c0d2bcef0561b3ec1a12",
+          "sourceText": "Interoception is awareness of internal body sensations, the foundation of mindfulness. Coherent breathing trains this awareness in a structured way: you notice breath depth, rhythm, belly movement, and the pause between breaths. After weeks of practice, you develop the body awareness needed for formless meditation.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "341640acfb5706908526ff3cbd200c581e9d19821cb0e1c49e4a3ce85896b14b",
+          "sourceText": "Builds Interoceptive Awareness",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "56ce189dfb00279fec04e544d0fd8b73e9d1f878f45d874d72d3916b7dd7bdf7",
+          "sourceText": "Coherent breathing is meditation with explicit instructions: breathe in for 6 seconds, breathe out for 6 seconds. That's it. The rhythm becomes an anchor, something concrete to focus on instead of the vague instruction to 'observe your breath.' Your mind still wanders, but you have a clear task to return to: match the pace. After 5-10 minutes of this structured practice, many people naturally transition into a meditative state (calm, present, aware) without forcing it.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "ba66d034dc8ab72ce5a84a33d797387d7c2e3a9ea226d0053e0fc40c0964ee64",
+          "sourceText": "Coherent Breathing: Meditation with Structure",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "7a019836f8b90c3ee8ee8c4d5d5f90ba80162eebde971c6c450db0f1825bb671",
+          "sourceText": "The 0.1 Hz frequency (5-6 breaths per minute) isn't arbitrary. It synchronizes your heart rate, breath, and nervous system, creating a state of physiological coherence. This coherence produces the same benefits as traditional meditation (reduced stress, improved focus, emotional regulation) but with less mental effort. You're not battling your mind; you're giving it a job.",
+          "status": "route-catalog-normalized"
+        }
+      }
+    },
+    "fr-fr": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "f10268a765bb0ecf0afdfae16a75bb2587e2c730d3f1f1b776a4cafc877308ea",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "3534328e2a443a5547397ac4885276ebc00ef326e655d7366c017ef471ad6172",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "f607a43ced7c5ce11c681d395d966d0d1a214221d59fcba2227a52b39e36f0a9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-focus-title": {
+          "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-pranayama-title": {
+          "sourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-coherent-app": {
+          "sourceHash": "010fb498f61fb71ff823061853b1087f16d25ddccd8f102487e0542c1070e24a",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "8c44a5e2313822fe19bcb330e0c2f95dd8a15ee2b5257e9f74f974293fa51b60",
+          "sourceText": "Coherent breathing is a complement to, not a replacement for, traditional meditation practice. If you're seeking meditation for clinical mental health conditions (anxiety, depression, trauma), consider working with a qualified meditation teacher or mental health professional trained in mindfulness-based interventions (MBSR, MBCT). This breathing practice is a tool for building attention skills and physiological regulation.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "ee71ce2740239e6ec2144cbfd5936eba1d76cbaad4a6967f4f8a57368fe761aa",
+          "sourceText": "This is a false dichotomy. Breath awareness IS a traditional meditation practice: it's the foundation of Vipassana, Zen, and many yogic traditions. Coherent breathing adds structure (a specific pace) to make breath meditation more accessible. Advanced meditators might not need the structure, but for beginners, the rhythm removes the guesswork. You're training the same attention skills (noticing distraction, returning to an anchor) that all meditation cultivates.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "284a0ed295cb596ef3c94e478e86bf3081012d1e844b3920a3d42ab6b0b2aa44",
+          "sourceText": "Is coherent breathing 'real meditation' or just breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "71c4bdbceabccebdf428518469ed3cac1f8d8f94dab3b652f9be1bd9caef7e00",
+          "sourceText": "You can practice coherent breathing indefinitely and receive significant benefits (reduced stress, improved HRV, better focus). But traditional formless meditation offers something different: training your attention without external aids. If you want to meditate anywhere (waiting in line, sitting on a bus) without a timer or visualizer, you'll eventually need to practice without structure. A good progression: coherent breathing for 4-8 weeks → 50/50 split (5 min coherent + 5 min formless) → mostly formless with coherent as needed.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].question": {
+          "sourceHash": "67e9b7d5227edfb6ad8fc9a8f9dfbc79b719f972f3fcdbeea31680b2e35ae9a0",
+          "sourceText": "Can I just do coherent breathing forever, or do I need to transition to 'real' meditation?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "2ac5abf77ef6f567261e6761987bbf14fb8b7582476c139d03fe6ae473f20178",
+          "sourceText": "Four fixes: (1) Sit upright in a chair, not lying down. (2) Practice earlier in the day when you're less tired. (3) Keep your eyes open, focused on the visualizer, engaging vision prevents drowsiness. (4) If you're chronically sleep-deprived, no meditation technique will work, get more sleep first. Falling asleep isn't 'bad,' but if your goal is meditation (not napping), adjust posture and timing.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].question": {
+          "sourceHash": "8a7b868e7938e6f00a4ee5166e393c38fd47058f29ddb90c94055b780a36ad5c",
+          "sourceText": "I fall asleep every time. How do I stay awake?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "e721f639367230386c0fbf3111dd2ccac3eb92b010fb1429efbcc39f3b66d37c",
+          "sourceText": "Most meditation apps offer guided sessions where a voice walks you through visualization, body scans, or breath observation, externally-directed meditation. Coherent breathing is self-directed: you're following a rhythm, not a narrator. The visualizer provides pacing (like a metronome), but you're doing the work of maintaining attention. It's a middle ground between fully guided (app) and fully formless (traditional meditation). Use coherent breathing to build attention skills, then apps or traditional practice to deepen.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "9c895a1ebdcc5aea5be6170741b2b1e7519c49d93a9bd0cbfae39af56f9a3f19",
+          "sourceText": "How is this different from Headspace, Calm, or other meditation apps?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "6941ae4a05a63a182537f349d2ed06b6819c115cd78f25c60e07823e7b0d3e1f",
+          "sourceText": "Yes. Some people experience anxiety when they first try meditation, the silence and internal focus can feel overwhelming or trigger panic. Coherent breathing gives you an external rhythm to anchor to, which can prevent the 'spiral' of meditation-induced anxiety. If you've had bad experiences with traditional meditation, start here. The structure reduces the psychological pressure of 'doing it right.' Once you feel comfortable, you can slowly reduce the structure.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "a4cd8d4bb0d521a5e689c22df665a71ff1725e694cc6d5c71e3e29c726ab6f81",
+          "sourceText": "Can this help with meditation-related anxiety or panic?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "5db9a9373b8fe24a4a4779ef9ced87d27fc90f973693ea63342a26043bd11e71",
+          "sourceText": "Week 1-2: Daily coherent breathing, 5 minutes, eyes open. Goal: build consistency, not perfection. Week 3-4: Increase to 10 minutes. Notice if breathing becomes automatic (coherence). Week 5-8: Try eyes-closed sessions. Add 2-3 minutes of formless breath observation after coherent practice. Month 3-4: 50/50 split, half your session structured (coherent), half formless. Month 5-6: Mostly formless meditation, using coherent breathing only when your mind is particularly restless. You've transitioned from training wheels to riding solo.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[5].question": {
+          "sourceHash": "d5e3f3965292475dc715f5e747e775db2e41d9fcb2e115714f1940fe19aad179",
+          "sourceText": "What's the long-term progression for someone starting with coherent breathing?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "9fbb81f21c7f9086b6894221087c45f3f9e82b4085564e39af1fda19e7837053",
+          "sourceText": "You've tried meditation. You sit down, close your eyes, and... your mind explodes with thoughts. You check the timer after what feels like 20 minutes. It's been 90 seconds. You're doing it wrong, right? Wrong. You just need structure. Coherent breathing is meditation with training wheels, a precise rhythm that gives your racing mind something to follow.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "b8f16b8d48afd36d37a7ba96ee45fa8fc804d43ee01e271eaade88f2068cefab",
+          "sourceText": "The structured breathing pattern that makes meditation accessible for beginners",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+          "sourceText": "Can't Meditate? Start with Coherent Breathing",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "b55917eb114c9852190f54b1b9e290d5399f3fa04a33b85d57cc2cf213dfe362",
+          "sourceText": "Start with 5 minutes. Don't attempt 20-minute sessions as a beginner. You'll build frustration, not skill. Five minutes of focused practice beats 20 minutes of mental wrestling.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "a8129ff860ffdd0c3b6968bf71e331f398f75713f63e8b0e9c75c30fd90a7c0d",
+          "sourceText": "Set a realistic duration",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "ad576e3126074983298e2465c7cbcc1d24aaa45fd97cc209c85894e4b486f11c",
+          "sourceText": "5 minutes (beginners)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "9e598a3761906c629dcba6074e2f70f7503130652ae2a28c43f2459a61e1bfd6",
+          "sourceText": "Sit upright in a chair (better than lying down, which can make you drowsy). You can keep your eyes open and focused on the visual guide, or close them and use audio cues if available. Beginners often succeed better with eyes open.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "4c4d9fe33d619c92a700b4c6c19eacdbfd3df5c8f4af052932d3edb1709910bc",
+          "sourceText": "Choose your setup",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "77472342903bb5a64c4c7eea79061d24edf1012edbb13cd57f6e4de72a397bc9",
+          "sourceText": "1 minute setup",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "fdc6cc13ccaf704029a52cd2d837e8216b9fa34acd800f3c4672649ec1e04789",
+          "sourceText": "Use the coherent breathing visualizer below, set to 5-6 breaths per minute (6-second inhale, 6-second exhale). The visual expansion and contraction will pace your breath.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "b89f8f0db202b53f9416c4d0c4f3350fcdb8e10bf1c5a867b91b1beb0d61b238",
+          "sourceText": "Start the visualizer",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "4fcf31d414033c14adf976899601101ae370145b4c66d27f5149f9d5ce524d4d",
+          "sourceText": "Start timer",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "a0332cb092d7da931f6f835b00d07d22262b9f8f256032f935a2d4fca0992e14",
+          "sourceText": "Inhale slowly through your nose as the visual expands (6 seconds). Exhale slowly through your nose as it contracts (6 seconds). Don't force depth, keep breaths comfortable and quiet. Your only job is to match the pace.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "ea6d1059621b411f6dfb4abb0f873ef8e1e73c92124ffa86fe5f83b0f92ec0f3",
+          "sourceText": "Breathe with the rhythm",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "a90620097624cae57edb193379e4a70f87b34096acc7c5d0b07d957b947a3e22",
+          "sourceText": "Ongoing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "709e272937ebf80f70cbfe630e9567871a0c61481c363925cf38f85e5d6a000f",
+          "sourceText": "Your mind WILL wander. That's not failure, it's normal. When you notice you've lost the rhythm (maybe you're breathing too fast, or thinking about dinner), gently return to the visual guide. Each return is a mental rep, like a bicep curl for attention.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "f3ad2d3218ad9e59ddc45b4e52f1ff81ca6aa08ca899b1fb7904a4c1c536d67c",
+          "sourceText": "Notice when your mind wanders",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "a90620097624cae57edb193379e4a70f87b34096acc7c5d0b07d957b947a3e22",
+          "sourceText": "Ongoing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "8defb041a6202b24d7c45aa5d033aabad62b8a40aaf027b208eb0183bfdcd4c5",
+          "sourceText": "After 2-3 minutes, you may feel a shift: breathing becomes automatic, your mind quiets, you feel 'settled.' This is coherence. If it doesn't happen, that's fine too. Success is staying with the practice, not achieving a specific state.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "713f2d270e5ed59eb6196092673beda675292d6747a4538125502a5139eb77b7",
+          "sourceText": "Let go of 'doing it right'",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "5d3c9e1215d32960bf80f17116b841e5dda06b9a6ce1207efb4b99c9c900c5dd",
+          "sourceText": "After 2-3 minutes",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].instruction": {
+          "sourceHash": "0b636eefcc1f507c0c03f3f383911a46e66030f869ab8387a0c784308bdf2f7f",
+          "sourceText": "After 5 minutes, you have two options: (1) Stop and return to your day, carrying the calm with you. (2) If you feel settled, close your eyes and continue breathing without the visualizer. You've just transitioned to traditional meditation.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[6].name": {
+          "sourceHash": "59f38662352f8d039f68077191efc3b45a605e404db7207e2fa4c204102482c4",
+          "sourceText": "Transition or extend",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].timing": {
+          "sourceHash": "790a966088a5271308890dbc22b60e0a1cadb21ba673929e91724cb203a542b4",
+          "sourceText": "5+ minutes",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "a6f8e852ca02c782908b359e91188fd852fbbafbde963879ef128940871afbc7",
+          "sourceText": "Use coherent breathing as your daily meditation practice for 2-4 weeks before attempting formless mindfulness",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "f2b06f4f86366b9d8d61012c3f6939276172d43671d6711cbf1c0e8e3e225686",
+          "sourceText": "Eyes open (watching the visualizer) is easier than eyes closed for most beginners",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "c52a8c12839776cc378daa27987737c7ad93cfde424da7e5fdbd071b3b18704e",
+          "sourceText": "Practice at the same time daily, morning works best for building the habit",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "c5c2d2243bfb67735228dbbed423b74518b434867293bacc19386c3ad02e5958",
+          "sourceText": "Don't judge the quality of your sessions; consistency matters more than 'good' vs 'bad' practices",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "0cce5412c02da80c539b43c6328e59aafffe877dc1c7ab94d7df45139e0599d5",
+          "sourceText": "If you fall asleep, you're doing it lying down or when exhausted. Try sitting upright earlier in the day",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[5]": {
+          "sourceHash": "6432bd2d6d5fd8b1d7ac80260330870a7684938c739b1f1f84275b74cedb15bb",
+          "sourceText": "After a month, try 2 minutes of coherent breathing followed by 3 minutes of formless meditation",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "a037b3d4253ccefd97809de502cddcc0921bf26afd6e0ee280c87251069788b8",
+          "sourceText": "Mind won't stop racing? Can't sit still? Start meditation with coherent breathing—the structured breathing pattern that makes mindfulness accessible. Free guided visualizer + research.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "bd5d8b1e2f4336ae0655efb4ca893360ee906bd0534f2d1731add44d3aa75098",
+          "sourceText": "The structured breathing pattern that makes meditation accessible for beginners. Free guided visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+          "sourceText": "Can't Meditate? Start with Coherent Breathing",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "80c5c54985886e95a6dff7a8465f4771b26fec102623e0a9b35a7b095b2a6ac3",
+          "sourceText": "Can't Meditate? Start with Coherent Breathing (Meditation for Beginners) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "bd5d8b1e2f4336ae0655efb4ca893360ee906bd0534f2d1731add44d3aa75098",
+          "sourceText": "The structured breathing pattern that makes meditation accessible for beginners. Free guided visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+          "sourceText": "Can't Meditate? Start with Coherent Breathing",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "46f8b0b7fa0c1d3362ba5231899a63c51d1dce9a868b9abb11f0f8835af108b0",
+          "sourceText": "Traditional mindfulness meditation says: 'Just observe your breath. When your mind wanders, gently return to the breath.' Sounds simple. But for most people (especially beginners) this is like telling someone who can't swim to 'just relax and float.' Your mind doesn't wander; it sprints. You become hyper-aware of discomfort. The silence is overwhelming. You quit after three sessions, convinced meditation 'isn't for you.'",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "f6c7c94b80e7609e8fe8e7f453c4b1f21489f0007386b0a7f10c47b36f3bdd71",
+          "sourceText": "Why Traditional Meditation Feels Impossible",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "f986d919ef9f3da595981b061c0cd357da3068b5f280603819aae99bf04ffea8",
+          "sourceText": "Mind races with thoughts the moment you close your eyes",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "ab6866d04094260aa030c460337e4ef43e6fee8909af95e7e65fcf0a4667b2bc",
+          "sourceText": "Can't sit still, constant urge to fidget or check the time",
+          "status": "route-catalog-normalized"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "8918380255283ba04ad911308a9cdd5d481027049c32610b008de0bb0849b899",
+          "sourceText": "Overwhelming awareness of physical discomfort (itches, aches, restlessness)",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "365c2d8e1b0dee6f55cb8274ee9344659118d70f2dd2c623c825fa9661bcb577",
+          "sourceText": "Feeling like you're 'doing it wrong' or 'bad at meditation'",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "d91dfdb3d1d2ad9c9505257dda745c2c140aaaa7251236a3675571e5d6b88a2d",
+          "sourceText": "Falling asleep during meditation instead of staying present",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "a886918ac6b88facaec0fd8d7ff87e7d38647b6b503f120093b2af82b1e876da",
+          "sourceText": "Frustration that meditation feels harder, not easier, over time",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "b0b4f5a036a376ceaff66249f1628e0341cdc12cc96d87e13bffdfe85b5ad272",
+          "sourceText": "Quitting after a few sessions because it feels impossible",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[7]": {
+          "sourceHash": "ea00a4c04c0269244bd17a21481ebda307006eea87e86bebfb9f6a0e7bf87393",
+          "sourceText": "Wondering if meditation 'just isn't for you'",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "d4c4a4fd299eb63c83c99c5d490f423f14bf964b4be370c3ef3d2d38a3ed9dbc",
+          "sourceText": "Meta-analysis showing that slow breathing practices produce similar mental health benefits to traditional meditation, with potential advantages for beginners due to concrete focus object.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "67a6016bc8e2fdcb1d86a975adc2ae44661a5dc23ed15b3cad25e40f269d93f3",
+          "sourceText": "Breath-Focused Meditation and Mental Health: A Meta-Analysis",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "ba3d1b12f11c30c43c8f58bfd9523d59d83eca84423f9e52043df67912cb55d2",
+          "sourceText": "Review showing that both traditional meditation and HRV biofeedback (coherent breathing) produce similar autonomic nervous system benefits, suggesting multiple valid paths to meditative states.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "01e138b656be4134176004c775b3284a4c79a4b56ce9149dedc962503a420239",
+          "sourceText": "Heart Rate Variability and Meditation: A Systematic Review",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "ee593fcbabb0607d324e60b3b8fd75daa02f0e48fa48c2ead3374796d63fb608",
+          "sourceText": "8-week study showing slow breathing training improved sustained attention and reduced stress, key benefits also sought from meditation practice.",
+          "status": "route-catalog-normalized"
+        },
+        "references[2].title": {
+          "sourceHash": "d863b7eff524919851ba5248ee7824be679b4f8d222a08fbb37ea921fc5a8763",
+          "sourceText": "The Effect of Diaphragmatic Breathing on Attention, Negative Affect and Stress",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "290369e2264fda8af7efcd7a51e27b6d69215bbaac3614b91908d7744506529f",
+          "sourceText": "Theoretical framework explaining how slow breathing practices (like coherent breathing) activate the same vagus nerve pathways as traditional meditation.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "46b18568d28e2298bd59e8b596a871a3644c4fda78ad787d24e2941804d6ee18",
+          "sourceText": "Breath of Life: The Respiratory Vagal Stimulation Model of Contemplative Activity",
+          "status": "route-catalog-exact"
+        },
+        "references[4].summary": {
+          "sourceHash": "d6e26d363845750e33717806a44fb381738bfdd04fca740fe1ae66bffc1326a2",
+          "sourceText": "Research showing that mindfulness meditation increases HRV, and that HRV training (coherent breathing) may provide a structured entry point to mindfulness.",
+          "status": "route-catalog-exact"
+        },
+        "references[4].title": {
+          "sourceHash": "03c51fd888db8b1ae631688c5bc7f5883395d54320999c97671c41e34561cc47",
+          "sourceText": "Mindfulness-Based Interventions and the HRV Connection",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "72c4f42c75d2b8d5f4c9af7b9db772f9629dd90f23f37374013e7942ffb41885",
+          "sourceText": "Practice with the full coherent breathing visualizer and explore the complete HRV optimization protocol",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "7a55cec67d48c1355e622cbb1c6208597e7c792fef8d38b6d83a7a6790a9d1e1",
+          "sourceText": "Once you've built attention skills through breathing, apply them to deep work and concentration",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "95265d3290ee341ed5fb2a893f788a7bb3ea8d6d4b4a9584c20efc9781c557c0",
+          "sourceText": "If anxiety is blocking meditation, try box breathing for acute nervous system calming first",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "9b66125b79db90570355e78c224a9bd708966fe3af9b45bee1f927c167ca95cf",
+          "sourceText": "Explore the yogic pranayama tradition for deeper meditation preparation",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "f1e7ba50e5338ae6714e4748bbaa3d0abacbd5ab3701b75eef094d634b801ce9",
+          "sourceText": "Why Coherent Breathing Works as Meditation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "3c5102fd027871d550bc20e3f6c5c7f1c8fc2fda1c37ec0570874262f296f270",
+          "sourceText": "Traditional meditation asks you to generate internal focus ('observe the breath'). Coherent breathing provides an external rhythm to follow. Research on attention training shows that beginners struggle with purely internal focus but succeed with external cues (visual, auditory, tactile). The visualizer or timer becomes your meditation teacher, pacing your attention.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "3028ae6449ac7380303aec30adf3edbef402ce584a0edc5db8a1c2920a609d94",
+          "sourceText": "Provides an External Anchor",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "b1fcb1f9551d46902ba56261e08a3cd1a35e7233aa397c3f2f40f1cb933f388e",
+          "sourceText": "EEG studies show that coherent breathing increases alpha wave activity (8-12 Hz), the same relaxed-yet-alert brain state produced by experienced meditators. You're achieving the destination (calm, focused awareness) through a different route. Some research suggests coherent breathing produces faster alpha increases than traditional mindfulness in beginners.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "8605e3717ff23019f05bc27f3ca01e001aab53ce8aa6a1d486a1068696f181e7",
+          "sourceText": "Produces Meditative Brain States",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "c0f817daccfb024c0f89a93e4bfae4b34d4541a245d2a011b5bf6e325560225e",
+          "sourceText": "Traditional meditation says 'calm your mind, and your body will follow.' Coherent breathing reverses this: calm your body (via slow breathing and HRV optimization), and your mind follows. By slowing your heart rate and activating the vagus nerve, you create the physiological conditions for meditation, making mental stillness easier to access.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "ef3ecb7bfb0a30c212ca0e74e8051c69773cd8d0e31da1fae54445c8a65111e7",
+          "sourceText": "Creates Physiological Calm First",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "d660dc20966ac3259d557a8007e4b65b748335051535c0d2bcef0561b3ec1a12",
+          "sourceText": "Interoception is awareness of internal body sensations, the foundation of mindfulness. Coherent breathing trains this awareness in a structured way: you notice breath depth, rhythm, belly movement, and the pause between breaths. After weeks of practice, you develop the body awareness needed for formless meditation.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "341640acfb5706908526ff3cbd200c581e9d19821cb0e1c49e4a3ce85896b14b",
+          "sourceText": "Builds Interoceptive Awareness",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "56ce189dfb00279fec04e544d0fd8b73e9d1f878f45d874d72d3916b7dd7bdf7",
+          "sourceText": "Coherent breathing is meditation with explicit instructions: breathe in for 6 seconds, breathe out for 6 seconds. That's it. The rhythm becomes an anchor, something concrete to focus on instead of the vague instruction to 'observe your breath.' Your mind still wanders, but you have a clear task to return to: match the pace. After 5-10 minutes of this structured practice, many people naturally transition into a meditative state (calm, present, aware) without forcing it.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "ba66d034dc8ab72ce5a84a33d797387d7c2e3a9ea226d0053e0fc40c0964ee64",
+          "sourceText": "Coherent Breathing: Meditation with Structure",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "7a019836f8b90c3ee8ee8c4d5d5f90ba80162eebde971c6c450db0f1825bb671",
+          "sourceText": "The 0.1 Hz frequency (5-6 breaths per minute) isn't arbitrary. It synchronizes your heart rate, breath, and nervous system, creating a state of physiological coherence. This coherence produces the same benefits as traditional meditation (reduced stress, improved focus, emotional regulation) but with less mental effort. You're not battling your mind; you're giving it a job.",
+          "status": "route-catalog-normalized"
+        }
+      }
+    },
+    "ja-jp": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "f10268a765bb0ecf0afdfae16a75bb2587e2c730d3f1f1b776a4cafc877308ea",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "3534328e2a443a5547397ac4885276ebc00ef326e655d7366c017ef471ad6172",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "f607a43ced7c5ce11c681d395d966d0d1a214221d59fcba2227a52b39e36f0a9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-focus-title": {
+          "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-pranayama-title": {
+          "sourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-coherent-app": {
+          "sourceHash": "010fb498f61fb71ff823061853b1087f16d25ddccd8f102487e0542c1070e24a",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "8c44a5e2313822fe19bcb330e0c2f95dd8a15ee2b5257e9f74f974293fa51b60",
+          "sourceText": "Coherent breathing is a complement to, not a replacement for, traditional meditation practice. If you're seeking meditation for clinical mental health conditions (anxiety, depression, trauma), consider working with a qualified meditation teacher or mental health professional trained in mindfulness-based interventions (MBSR, MBCT). This breathing practice is a tool for building attention skills and physiological regulation.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "ee71ce2740239e6ec2144cbfd5936eba1d76cbaad4a6967f4f8a57368fe761aa",
+          "sourceText": "This is a false dichotomy. Breath awareness IS a traditional meditation practice: it's the foundation of Vipassana, Zen, and many yogic traditions. Coherent breathing adds structure (a specific pace) to make breath meditation more accessible. Advanced meditators might not need the structure, but for beginners, the rhythm removes the guesswork. You're training the same attention skills (noticing distraction, returning to an anchor) that all meditation cultivates.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "284a0ed295cb596ef3c94e478e86bf3081012d1e844b3920a3d42ab6b0b2aa44",
+          "sourceText": "Is coherent breathing 'real meditation' or just breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "71c4bdbceabccebdf428518469ed3cac1f8d8f94dab3b652f9be1bd9caef7e00",
+          "sourceText": "You can practice coherent breathing indefinitely and receive significant benefits (reduced stress, improved HRV, better focus). But traditional formless meditation offers something different: training your attention without external aids. If you want to meditate anywhere (waiting in line, sitting on a bus) without a timer or visualizer, you'll eventually need to practice without structure. A good progression: coherent breathing for 4-8 weeks → 50/50 split (5 min coherent + 5 min formless) → mostly formless with coherent as needed.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].question": {
+          "sourceHash": "67e9b7d5227edfb6ad8fc9a8f9dfbc79b719f972f3fcdbeea31680b2e35ae9a0",
+          "sourceText": "Can I just do coherent breathing forever, or do I need to transition to 'real' meditation?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "2ac5abf77ef6f567261e6761987bbf14fb8b7582476c139d03fe6ae473f20178",
+          "sourceText": "Four fixes: (1) Sit upright in a chair, not lying down. (2) Practice earlier in the day when you're less tired. (3) Keep your eyes open, focused on the visualizer, engaging vision prevents drowsiness. (4) If you're chronically sleep-deprived, no meditation technique will work, get more sleep first. Falling asleep isn't 'bad,' but if your goal is meditation (not napping), adjust posture and timing.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].question": {
+          "sourceHash": "8a7b868e7938e6f00a4ee5166e393c38fd47058f29ddb90c94055b780a36ad5c",
+          "sourceText": "I fall asleep every time. How do I stay awake?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "e721f639367230386c0fbf3111dd2ccac3eb92b010fb1429efbcc39f3b66d37c",
+          "sourceText": "Most meditation apps offer guided sessions where a voice walks you through visualization, body scans, or breath observation, externally-directed meditation. Coherent breathing is self-directed: you're following a rhythm, not a narrator. The visualizer provides pacing (like a metronome), but you're doing the work of maintaining attention. It's a middle ground between fully guided (app) and fully formless (traditional meditation). Use coherent breathing to build attention skills, then apps or traditional practice to deepen.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "9c895a1ebdcc5aea5be6170741b2b1e7519c49d93a9bd0cbfae39af56f9a3f19",
+          "sourceText": "How is this different from Headspace, Calm, or other meditation apps?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "6941ae4a05a63a182537f349d2ed06b6819c115cd78f25c60e07823e7b0d3e1f",
+          "sourceText": "Yes. Some people experience anxiety when they first try meditation, the silence and internal focus can feel overwhelming or trigger panic. Coherent breathing gives you an external rhythm to anchor to, which can prevent the 'spiral' of meditation-induced anxiety. If you've had bad experiences with traditional meditation, start here. The structure reduces the psychological pressure of 'doing it right.' Once you feel comfortable, you can slowly reduce the structure.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "a4cd8d4bb0d521a5e689c22df665a71ff1725e694cc6d5c71e3e29c726ab6f81",
+          "sourceText": "Can this help with meditation-related anxiety or panic?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "5db9a9373b8fe24a4a4779ef9ced87d27fc90f973693ea63342a26043bd11e71",
+          "sourceText": "Week 1-2: Daily coherent breathing, 5 minutes, eyes open. Goal: build consistency, not perfection. Week 3-4: Increase to 10 minutes. Notice if breathing becomes automatic (coherence). Week 5-8: Try eyes-closed sessions. Add 2-3 minutes of formless breath observation after coherent practice. Month 3-4: 50/50 split, half your session structured (coherent), half formless. Month 5-6: Mostly formless meditation, using coherent breathing only when your mind is particularly restless. You've transitioned from training wheels to riding solo.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[5].question": {
+          "sourceHash": "d5e3f3965292475dc715f5e747e775db2e41d9fcb2e115714f1940fe19aad179",
+          "sourceText": "What's the long-term progression for someone starting with coherent breathing?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "9fbb81f21c7f9086b6894221087c45f3f9e82b4085564e39af1fda19e7837053",
+          "sourceText": "You've tried meditation. You sit down, close your eyes, and... your mind explodes with thoughts. You check the timer after what feels like 20 minutes. It's been 90 seconds. You're doing it wrong, right? Wrong. You just need structure. Coherent breathing is meditation with training wheels, a precise rhythm that gives your racing mind something to follow.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "b8f16b8d48afd36d37a7ba96ee45fa8fc804d43ee01e271eaade88f2068cefab",
+          "sourceText": "The structured breathing pattern that makes meditation accessible for beginners",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+          "sourceText": "Can't Meditate? Start with Coherent Breathing",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "b55917eb114c9852190f54b1b9e290d5399f3fa04a33b85d57cc2cf213dfe362",
+          "sourceText": "Start with 5 minutes. Don't attempt 20-minute sessions as a beginner. You'll build frustration, not skill. Five minutes of focused practice beats 20 minutes of mental wrestling.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "a8129ff860ffdd0c3b6968bf71e331f398f75713f63e8b0e9c75c30fd90a7c0d",
+          "sourceText": "Set a realistic duration",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "ad576e3126074983298e2465c7cbcc1d24aaa45fd97cc209c85894e4b486f11c",
+          "sourceText": "5 minutes (beginners)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "9e598a3761906c629dcba6074e2f70f7503130652ae2a28c43f2459a61e1bfd6",
+          "sourceText": "Sit upright in a chair (better than lying down, which can make you drowsy). You can keep your eyes open and focused on the visual guide, or close them and use audio cues if available. Beginners often succeed better with eyes open.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "4c4d9fe33d619c92a700b4c6c19eacdbfd3df5c8f4af052932d3edb1709910bc",
+          "sourceText": "Choose your setup",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "77472342903bb5a64c4c7eea79061d24edf1012edbb13cd57f6e4de72a397bc9",
+          "sourceText": "1 minute setup",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "fdc6cc13ccaf704029a52cd2d837e8216b9fa34acd800f3c4672649ec1e04789",
+          "sourceText": "Use the coherent breathing visualizer below, set to 5-6 breaths per minute (6-second inhale, 6-second exhale). The visual expansion and contraction will pace your breath.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "b89f8f0db202b53f9416c4d0c4f3350fcdb8e10bf1c5a867b91b1beb0d61b238",
+          "sourceText": "Start the visualizer",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "4fcf31d414033c14adf976899601101ae370145b4c66d27f5149f9d5ce524d4d",
+          "sourceText": "Start timer",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "a0332cb092d7da931f6f835b00d07d22262b9f8f256032f935a2d4fca0992e14",
+          "sourceText": "Inhale slowly through your nose as the visual expands (6 seconds). Exhale slowly through your nose as it contracts (6 seconds). Don't force depth, keep breaths comfortable and quiet. Your only job is to match the pace.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "ea6d1059621b411f6dfb4abb0f873ef8e1e73c92124ffa86fe5f83b0f92ec0f3",
+          "sourceText": "Breathe with the rhythm",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "a90620097624cae57edb193379e4a70f87b34096acc7c5d0b07d957b947a3e22",
+          "sourceText": "Ongoing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "709e272937ebf80f70cbfe630e9567871a0c61481c363925cf38f85e5d6a000f",
+          "sourceText": "Your mind WILL wander. That's not failure, it's normal. When you notice you've lost the rhythm (maybe you're breathing too fast, or thinking about dinner), gently return to the visual guide. Each return is a mental rep, like a bicep curl for attention.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "f3ad2d3218ad9e59ddc45b4e52f1ff81ca6aa08ca899b1fb7904a4c1c536d67c",
+          "sourceText": "Notice when your mind wanders",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "a90620097624cae57edb193379e4a70f87b34096acc7c5d0b07d957b947a3e22",
+          "sourceText": "Ongoing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "8defb041a6202b24d7c45aa5d033aabad62b8a40aaf027b208eb0183bfdcd4c5",
+          "sourceText": "After 2-3 minutes, you may feel a shift: breathing becomes automatic, your mind quiets, you feel 'settled.' This is coherence. If it doesn't happen, that's fine too. Success is staying with the practice, not achieving a specific state.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "713f2d270e5ed59eb6196092673beda675292d6747a4538125502a5139eb77b7",
+          "sourceText": "Let go of 'doing it right'",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "5d3c9e1215d32960bf80f17116b841e5dda06b9a6ce1207efb4b99c9c900c5dd",
+          "sourceText": "After 2-3 minutes",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].instruction": {
+          "sourceHash": "0b636eefcc1f507c0c03f3f383911a46e66030f869ab8387a0c784308bdf2f7f",
+          "sourceText": "After 5 minutes, you have two options: (1) Stop and return to your day, carrying the calm with you. (2) If you feel settled, close your eyes and continue breathing without the visualizer. You've just transitioned to traditional meditation.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[6].name": {
+          "sourceHash": "59f38662352f8d039f68077191efc3b45a605e404db7207e2fa4c204102482c4",
+          "sourceText": "Transition or extend",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].timing": {
+          "sourceHash": "790a966088a5271308890dbc22b60e0a1cadb21ba673929e91724cb203a542b4",
+          "sourceText": "5+ minutes",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "a6f8e852ca02c782908b359e91188fd852fbbafbde963879ef128940871afbc7",
+          "sourceText": "Use coherent breathing as your daily meditation practice for 2-4 weeks before attempting formless mindfulness",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "f2b06f4f86366b9d8d61012c3f6939276172d43671d6711cbf1c0e8e3e225686",
+          "sourceText": "Eyes open (watching the visualizer) is easier than eyes closed for most beginners",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "c52a8c12839776cc378daa27987737c7ad93cfde424da7e5fdbd071b3b18704e",
+          "sourceText": "Practice at the same time daily, morning works best for building the habit",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "c5c2d2243bfb67735228dbbed423b74518b434867293bacc19386c3ad02e5958",
+          "sourceText": "Don't judge the quality of your sessions; consistency matters more than 'good' vs 'bad' practices",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "0cce5412c02da80c539b43c6328e59aafffe877dc1c7ab94d7df45139e0599d5",
+          "sourceText": "If you fall asleep, you're doing it lying down or when exhausted. Try sitting upright earlier in the day",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[5]": {
+          "sourceHash": "6432bd2d6d5fd8b1d7ac80260330870a7684938c739b1f1f84275b74cedb15bb",
+          "sourceText": "After a month, try 2 minutes of coherent breathing followed by 3 minutes of formless meditation",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "a037b3d4253ccefd97809de502cddcc0921bf26afd6e0ee280c87251069788b8",
+          "sourceText": "Mind won't stop racing? Can't sit still? Start meditation with coherent breathing—the structured breathing pattern that makes mindfulness accessible. Free guided visualizer + research.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "bd5d8b1e2f4336ae0655efb4ca893360ee906bd0534f2d1731add44d3aa75098",
+          "sourceText": "The structured breathing pattern that makes meditation accessible for beginners. Free guided visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+          "sourceText": "Can't Meditate? Start with Coherent Breathing",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "80c5c54985886e95a6dff7a8465f4771b26fec102623e0a9b35a7b095b2a6ac3",
+          "sourceText": "Can't Meditate? Start with Coherent Breathing (Meditation for Beginners) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "bd5d8b1e2f4336ae0655efb4ca893360ee906bd0534f2d1731add44d3aa75098",
+          "sourceText": "The structured breathing pattern that makes meditation accessible for beginners. Free guided visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+          "sourceText": "Can't Meditate? Start with Coherent Breathing",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "46f8b0b7fa0c1d3362ba5231899a63c51d1dce9a868b9abb11f0f8835af108b0",
+          "sourceText": "Traditional mindfulness meditation says: 'Just observe your breath. When your mind wanders, gently return to the breath.' Sounds simple. But for most people (especially beginners) this is like telling someone who can't swim to 'just relax and float.' Your mind doesn't wander; it sprints. You become hyper-aware of discomfort. The silence is overwhelming. You quit after three sessions, convinced meditation 'isn't for you.'",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "f6c7c94b80e7609e8fe8e7f453c4b1f21489f0007386b0a7f10c47b36f3bdd71",
+          "sourceText": "Why Traditional Meditation Feels Impossible",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "f986d919ef9f3da595981b061c0cd357da3068b5f280603819aae99bf04ffea8",
+          "sourceText": "Mind races with thoughts the moment you close your eyes",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "ab6866d04094260aa030c460337e4ef43e6fee8909af95e7e65fcf0a4667b2bc",
+          "sourceText": "Can't sit still, constant urge to fidget or check the time",
+          "status": "route-catalog-normalized"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "8918380255283ba04ad911308a9cdd5d481027049c32610b008de0bb0849b899",
+          "sourceText": "Overwhelming awareness of physical discomfort (itches, aches, restlessness)",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "365c2d8e1b0dee6f55cb8274ee9344659118d70f2dd2c623c825fa9661bcb577",
+          "sourceText": "Feeling like you're 'doing it wrong' or 'bad at meditation'",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "d91dfdb3d1d2ad9c9505257dda745c2c140aaaa7251236a3675571e5d6b88a2d",
+          "sourceText": "Falling asleep during meditation instead of staying present",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "a886918ac6b88facaec0fd8d7ff87e7d38647b6b503f120093b2af82b1e876da",
+          "sourceText": "Frustration that meditation feels harder, not easier, over time",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "b0b4f5a036a376ceaff66249f1628e0341cdc12cc96d87e13bffdfe85b5ad272",
+          "sourceText": "Quitting after a few sessions because it feels impossible",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[7]": {
+          "sourceHash": "ea00a4c04c0269244bd17a21481ebda307006eea87e86bebfb9f6a0e7bf87393",
+          "sourceText": "Wondering if meditation 'just isn't for you'",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "d4c4a4fd299eb63c83c99c5d490f423f14bf964b4be370c3ef3d2d38a3ed9dbc",
+          "sourceText": "Meta-analysis showing that slow breathing practices produce similar mental health benefits to traditional meditation, with potential advantages for beginners due to concrete focus object.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "67a6016bc8e2fdcb1d86a975adc2ae44661a5dc23ed15b3cad25e40f269d93f3",
+          "sourceText": "Breath-Focused Meditation and Mental Health: A Meta-Analysis",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "ba3d1b12f11c30c43c8f58bfd9523d59d83eca84423f9e52043df67912cb55d2",
+          "sourceText": "Review showing that both traditional meditation and HRV biofeedback (coherent breathing) produce similar autonomic nervous system benefits, suggesting multiple valid paths to meditative states.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "01e138b656be4134176004c775b3284a4c79a4b56ce9149dedc962503a420239",
+          "sourceText": "Heart Rate Variability and Meditation: A Systematic Review",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "ee593fcbabb0607d324e60b3b8fd75daa02f0e48fa48c2ead3374796d63fb608",
+          "sourceText": "8-week study showing slow breathing training improved sustained attention and reduced stress, key benefits also sought from meditation practice.",
+          "status": "route-catalog-normalized"
+        },
+        "references[2].title": {
+          "sourceHash": "d863b7eff524919851ba5248ee7824be679b4f8d222a08fbb37ea921fc5a8763",
+          "sourceText": "The Effect of Diaphragmatic Breathing on Attention, Negative Affect and Stress",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "290369e2264fda8af7efcd7a51e27b6d69215bbaac3614b91908d7744506529f",
+          "sourceText": "Theoretical framework explaining how slow breathing practices (like coherent breathing) activate the same vagus nerve pathways as traditional meditation.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "46b18568d28e2298bd59e8b596a871a3644c4fda78ad787d24e2941804d6ee18",
+          "sourceText": "Breath of Life: The Respiratory Vagal Stimulation Model of Contemplative Activity",
+          "status": "route-catalog-exact"
+        },
+        "references[4].summary": {
+          "sourceHash": "d6e26d363845750e33717806a44fb381738bfdd04fca740fe1ae66bffc1326a2",
+          "sourceText": "Research showing that mindfulness meditation increases HRV, and that HRV training (coherent breathing) may provide a structured entry point to mindfulness.",
+          "status": "route-catalog-exact"
+        },
+        "references[4].title": {
+          "sourceHash": "03c51fd888db8b1ae631688c5bc7f5883395d54320999c97671c41e34561cc47",
+          "sourceText": "Mindfulness-Based Interventions and the HRV Connection",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "72c4f42c75d2b8d5f4c9af7b9db772f9629dd90f23f37374013e7942ffb41885",
+          "sourceText": "Practice with the full coherent breathing visualizer and explore the complete HRV optimization protocol",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "7a55cec67d48c1355e622cbb1c6208597e7c792fef8d38b6d83a7a6790a9d1e1",
+          "sourceText": "Once you've built attention skills through breathing, apply them to deep work and concentration",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "95265d3290ee341ed5fb2a893f788a7bb3ea8d6d4b4a9584c20efc9781c557c0",
+          "sourceText": "If anxiety is blocking meditation, try box breathing for acute nervous system calming first",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "9b66125b79db90570355e78c224a9bd708966fe3af9b45bee1f927c167ca95cf",
+          "sourceText": "Explore the yogic pranayama tradition for deeper meditation preparation",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "f1e7ba50e5338ae6714e4748bbaa3d0abacbd5ab3701b75eef094d634b801ce9",
+          "sourceText": "Why Coherent Breathing Works as Meditation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "3c5102fd027871d550bc20e3f6c5c7f1c8fc2fda1c37ec0570874262f296f270",
+          "sourceText": "Traditional meditation asks you to generate internal focus ('observe the breath'). Coherent breathing provides an external rhythm to follow. Research on attention training shows that beginners struggle with purely internal focus but succeed with external cues (visual, auditory, tactile). The visualizer or timer becomes your meditation teacher, pacing your attention.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "3028ae6449ac7380303aec30adf3edbef402ce584a0edc5db8a1c2920a609d94",
+          "sourceText": "Provides an External Anchor",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "b1fcb1f9551d46902ba56261e08a3cd1a35e7233aa397c3f2f40f1cb933f388e",
+          "sourceText": "EEG studies show that coherent breathing increases alpha wave activity (8-12 Hz), the same relaxed-yet-alert brain state produced by experienced meditators. You're achieving the destination (calm, focused awareness) through a different route. Some research suggests coherent breathing produces faster alpha increases than traditional mindfulness in beginners.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "8605e3717ff23019f05bc27f3ca01e001aab53ce8aa6a1d486a1068696f181e7",
+          "sourceText": "Produces Meditative Brain States",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "c0f817daccfb024c0f89a93e4bfae4b34d4541a245d2a011b5bf6e325560225e",
+          "sourceText": "Traditional meditation says 'calm your mind, and your body will follow.' Coherent breathing reverses this: calm your body (via slow breathing and HRV optimization), and your mind follows. By slowing your heart rate and activating the vagus nerve, you create the physiological conditions for meditation, making mental stillness easier to access.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "ef3ecb7bfb0a30c212ca0e74e8051c69773cd8d0e31da1fae54445c8a65111e7",
+          "sourceText": "Creates Physiological Calm First",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "d660dc20966ac3259d557a8007e4b65b748335051535c0d2bcef0561b3ec1a12",
+          "sourceText": "Interoception is awareness of internal body sensations, the foundation of mindfulness. Coherent breathing trains this awareness in a structured way: you notice breath depth, rhythm, belly movement, and the pause between breaths. After weeks of practice, you develop the body awareness needed for formless meditation.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "341640acfb5706908526ff3cbd200c581e9d19821cb0e1c49e4a3ce85896b14b",
+          "sourceText": "Builds Interoceptive Awareness",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "56ce189dfb00279fec04e544d0fd8b73e9d1f878f45d874d72d3916b7dd7bdf7",
+          "sourceText": "Coherent breathing is meditation with explicit instructions: breathe in for 6 seconds, breathe out for 6 seconds. That's it. The rhythm becomes an anchor, something concrete to focus on instead of the vague instruction to 'observe your breath.' Your mind still wanders, but you have a clear task to return to: match the pace. After 5-10 minutes of this structured practice, many people naturally transition into a meditative state (calm, present, aware) without forcing it.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "ba66d034dc8ab72ce5a84a33d797387d7c2e3a9ea226d0053e0fc40c0964ee64",
+          "sourceText": "Coherent Breathing: Meditation with Structure",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "7a019836f8b90c3ee8ee8c4d5d5f90ba80162eebde971c6c450db0f1825bb671",
+          "sourceText": "The 0.1 Hz frequency (5-6 breaths per minute) isn't arbitrary. It synchronizes your heart rate, breath, and nervous system, creating a state of physiological coherence. This coherence produces the same benefits as traditional meditation (reduced stress, improved focus, emotional regulation) but with less mental effort. You're not battling your mind; you're giving it a job.",
+          "status": "route-catalog-normalized"
+        }
+      }
+    },
+    "pt-br": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "f10268a765bb0ecf0afdfae16a75bb2587e2c730d3f1f1b776a4cafc877308ea",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "3534328e2a443a5547397ac4885276ebc00ef326e655d7366c017ef471ad6172",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "f607a43ced7c5ce11c681d395d966d0d1a214221d59fcba2227a52b39e36f0a9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-focus-title": {
+          "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-pranayama-title": {
+          "sourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-coherent-app": {
+          "sourceHash": "010fb498f61fb71ff823061853b1087f16d25ddccd8f102487e0542c1070e24a",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "8c44a5e2313822fe19bcb330e0c2f95dd8a15ee2b5257e9f74f974293fa51b60",
+          "sourceText": "Coherent breathing is a complement to, not a replacement for, traditional meditation practice. If you're seeking meditation for clinical mental health conditions (anxiety, depression, trauma), consider working with a qualified meditation teacher or mental health professional trained in mindfulness-based interventions (MBSR, MBCT). This breathing practice is a tool for building attention skills and physiological regulation.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "ee71ce2740239e6ec2144cbfd5936eba1d76cbaad4a6967f4f8a57368fe761aa",
+          "sourceText": "This is a false dichotomy. Breath awareness IS a traditional meditation practice: it's the foundation of Vipassana, Zen, and many yogic traditions. Coherent breathing adds structure (a specific pace) to make breath meditation more accessible. Advanced meditators might not need the structure, but for beginners, the rhythm removes the guesswork. You're training the same attention skills (noticing distraction, returning to an anchor) that all meditation cultivates.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "284a0ed295cb596ef3c94e478e86bf3081012d1e844b3920a3d42ab6b0b2aa44",
+          "sourceText": "Is coherent breathing 'real meditation' or just breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "71c4bdbceabccebdf428518469ed3cac1f8d8f94dab3b652f9be1bd9caef7e00",
+          "sourceText": "You can practice coherent breathing indefinitely and receive significant benefits (reduced stress, improved HRV, better focus). But traditional formless meditation offers something different: training your attention without external aids. If you want to meditate anywhere (waiting in line, sitting on a bus) without a timer or visualizer, you'll eventually need to practice without structure. A good progression: coherent breathing for 4-8 weeks → 50/50 split (5 min coherent + 5 min formless) → mostly formless with coherent as needed.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].question": {
+          "sourceHash": "67e9b7d5227edfb6ad8fc9a8f9dfbc79b719f972f3fcdbeea31680b2e35ae9a0",
+          "sourceText": "Can I just do coherent breathing forever, or do I need to transition to 'real' meditation?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "2ac5abf77ef6f567261e6761987bbf14fb8b7582476c139d03fe6ae473f20178",
+          "sourceText": "Four fixes: (1) Sit upright in a chair, not lying down. (2) Practice earlier in the day when you're less tired. (3) Keep your eyes open, focused on the visualizer, engaging vision prevents drowsiness. (4) If you're chronically sleep-deprived, no meditation technique will work, get more sleep first. Falling asleep isn't 'bad,' but if your goal is meditation (not napping), adjust posture and timing.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].question": {
+          "sourceHash": "8a7b868e7938e6f00a4ee5166e393c38fd47058f29ddb90c94055b780a36ad5c",
+          "sourceText": "I fall asleep every time. How do I stay awake?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "e721f639367230386c0fbf3111dd2ccac3eb92b010fb1429efbcc39f3b66d37c",
+          "sourceText": "Most meditation apps offer guided sessions where a voice walks you through visualization, body scans, or breath observation, externally-directed meditation. Coherent breathing is self-directed: you're following a rhythm, not a narrator. The visualizer provides pacing (like a metronome), but you're doing the work of maintaining attention. It's a middle ground between fully guided (app) and fully formless (traditional meditation). Use coherent breathing to build attention skills, then apps or traditional practice to deepen.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "9c895a1ebdcc5aea5be6170741b2b1e7519c49d93a9bd0cbfae39af56f9a3f19",
+          "sourceText": "How is this different from Headspace, Calm, or other meditation apps?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "6941ae4a05a63a182537f349d2ed06b6819c115cd78f25c60e07823e7b0d3e1f",
+          "sourceText": "Yes. Some people experience anxiety when they first try meditation, the silence and internal focus can feel overwhelming or trigger panic. Coherent breathing gives you an external rhythm to anchor to, which can prevent the 'spiral' of meditation-induced anxiety. If you've had bad experiences with traditional meditation, start here. The structure reduces the psychological pressure of 'doing it right.' Once you feel comfortable, you can slowly reduce the structure.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "a4cd8d4bb0d521a5e689c22df665a71ff1725e694cc6d5c71e3e29c726ab6f81",
+          "sourceText": "Can this help with meditation-related anxiety or panic?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "5db9a9373b8fe24a4a4779ef9ced87d27fc90f973693ea63342a26043bd11e71",
+          "sourceText": "Week 1-2: Daily coherent breathing, 5 minutes, eyes open. Goal: build consistency, not perfection. Week 3-4: Increase to 10 minutes. Notice if breathing becomes automatic (coherence). Week 5-8: Try eyes-closed sessions. Add 2-3 minutes of formless breath observation after coherent practice. Month 3-4: 50/50 split, half your session structured (coherent), half formless. Month 5-6: Mostly formless meditation, using coherent breathing only when your mind is particularly restless. You've transitioned from training wheels to riding solo.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[5].question": {
+          "sourceHash": "d5e3f3965292475dc715f5e747e775db2e41d9fcb2e115714f1940fe19aad179",
+          "sourceText": "What's the long-term progression for someone starting with coherent breathing?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "9fbb81f21c7f9086b6894221087c45f3f9e82b4085564e39af1fda19e7837053",
+          "sourceText": "You've tried meditation. You sit down, close your eyes, and... your mind explodes with thoughts. You check the timer after what feels like 20 minutes. It's been 90 seconds. You're doing it wrong, right? Wrong. You just need structure. Coherent breathing is meditation with training wheels, a precise rhythm that gives your racing mind something to follow.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "b8f16b8d48afd36d37a7ba96ee45fa8fc804d43ee01e271eaade88f2068cefab",
+          "sourceText": "The structured breathing pattern that makes meditation accessible for beginners",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+          "sourceText": "Can't Meditate? Start with Coherent Breathing",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "b55917eb114c9852190f54b1b9e290d5399f3fa04a33b85d57cc2cf213dfe362",
+          "sourceText": "Start with 5 minutes. Don't attempt 20-minute sessions as a beginner. You'll build frustration, not skill. Five minutes of focused practice beats 20 minutes of mental wrestling.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "a8129ff860ffdd0c3b6968bf71e331f398f75713f63e8b0e9c75c30fd90a7c0d",
+          "sourceText": "Set a realistic duration",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "ad576e3126074983298e2465c7cbcc1d24aaa45fd97cc209c85894e4b486f11c",
+          "sourceText": "5 minutes (beginners)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "9e598a3761906c629dcba6074e2f70f7503130652ae2a28c43f2459a61e1bfd6",
+          "sourceText": "Sit upright in a chair (better than lying down, which can make you drowsy). You can keep your eyes open and focused on the visual guide, or close them and use audio cues if available. Beginners often succeed better with eyes open.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "4c4d9fe33d619c92a700b4c6c19eacdbfd3df5c8f4af052932d3edb1709910bc",
+          "sourceText": "Choose your setup",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "77472342903bb5a64c4c7eea79061d24edf1012edbb13cd57f6e4de72a397bc9",
+          "sourceText": "1 minute setup",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "fdc6cc13ccaf704029a52cd2d837e8216b9fa34acd800f3c4672649ec1e04789",
+          "sourceText": "Use the coherent breathing visualizer below, set to 5-6 breaths per minute (6-second inhale, 6-second exhale). The visual expansion and contraction will pace your breath.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "b89f8f0db202b53f9416c4d0c4f3350fcdb8e10bf1c5a867b91b1beb0d61b238",
+          "sourceText": "Start the visualizer",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "4fcf31d414033c14adf976899601101ae370145b4c66d27f5149f9d5ce524d4d",
+          "sourceText": "Start timer",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "a0332cb092d7da931f6f835b00d07d22262b9f8f256032f935a2d4fca0992e14",
+          "sourceText": "Inhale slowly through your nose as the visual expands (6 seconds). Exhale slowly through your nose as it contracts (6 seconds). Don't force depth, keep breaths comfortable and quiet. Your only job is to match the pace.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "ea6d1059621b411f6dfb4abb0f873ef8e1e73c92124ffa86fe5f83b0f92ec0f3",
+          "sourceText": "Breathe with the rhythm",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "a90620097624cae57edb193379e4a70f87b34096acc7c5d0b07d957b947a3e22",
+          "sourceText": "Ongoing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "709e272937ebf80f70cbfe630e9567871a0c61481c363925cf38f85e5d6a000f",
+          "sourceText": "Your mind WILL wander. That's not failure, it's normal. When you notice you've lost the rhythm (maybe you're breathing too fast, or thinking about dinner), gently return to the visual guide. Each return is a mental rep, like a bicep curl for attention.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "f3ad2d3218ad9e59ddc45b4e52f1ff81ca6aa08ca899b1fb7904a4c1c536d67c",
+          "sourceText": "Notice when your mind wanders",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "a90620097624cae57edb193379e4a70f87b34096acc7c5d0b07d957b947a3e22",
+          "sourceText": "Ongoing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "8defb041a6202b24d7c45aa5d033aabad62b8a40aaf027b208eb0183bfdcd4c5",
+          "sourceText": "After 2-3 minutes, you may feel a shift: breathing becomes automatic, your mind quiets, you feel 'settled.' This is coherence. If it doesn't happen, that's fine too. Success is staying with the practice, not achieving a specific state.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "713f2d270e5ed59eb6196092673beda675292d6747a4538125502a5139eb77b7",
+          "sourceText": "Let go of 'doing it right'",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "5d3c9e1215d32960bf80f17116b841e5dda06b9a6ce1207efb4b99c9c900c5dd",
+          "sourceText": "After 2-3 minutes",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].instruction": {
+          "sourceHash": "0b636eefcc1f507c0c03f3f383911a46e66030f869ab8387a0c784308bdf2f7f",
+          "sourceText": "After 5 minutes, you have two options: (1) Stop and return to your day, carrying the calm with you. (2) If you feel settled, close your eyes and continue breathing without the visualizer. You've just transitioned to traditional meditation.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[6].name": {
+          "sourceHash": "59f38662352f8d039f68077191efc3b45a605e404db7207e2fa4c204102482c4",
+          "sourceText": "Transition or extend",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].timing": {
+          "sourceHash": "790a966088a5271308890dbc22b60e0a1cadb21ba673929e91724cb203a542b4",
+          "sourceText": "5+ minutes",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "a6f8e852ca02c782908b359e91188fd852fbbafbde963879ef128940871afbc7",
+          "sourceText": "Use coherent breathing as your daily meditation practice for 2-4 weeks before attempting formless mindfulness",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "f2b06f4f86366b9d8d61012c3f6939276172d43671d6711cbf1c0e8e3e225686",
+          "sourceText": "Eyes open (watching the visualizer) is easier than eyes closed for most beginners",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "c52a8c12839776cc378daa27987737c7ad93cfde424da7e5fdbd071b3b18704e",
+          "sourceText": "Practice at the same time daily, morning works best for building the habit",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "c5c2d2243bfb67735228dbbed423b74518b434867293bacc19386c3ad02e5958",
+          "sourceText": "Don't judge the quality of your sessions; consistency matters more than 'good' vs 'bad' practices",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "0cce5412c02da80c539b43c6328e59aafffe877dc1c7ab94d7df45139e0599d5",
+          "sourceText": "If you fall asleep, you're doing it lying down or when exhausted. Try sitting upright earlier in the day",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[5]": {
+          "sourceHash": "6432bd2d6d5fd8b1d7ac80260330870a7684938c739b1f1f84275b74cedb15bb",
+          "sourceText": "After a month, try 2 minutes of coherent breathing followed by 3 minutes of formless meditation",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "a037b3d4253ccefd97809de502cddcc0921bf26afd6e0ee280c87251069788b8",
+          "sourceText": "Mind won't stop racing? Can't sit still? Start meditation with coherent breathing—the structured breathing pattern that makes mindfulness accessible. Free guided visualizer + research.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "bd5d8b1e2f4336ae0655efb4ca893360ee906bd0534f2d1731add44d3aa75098",
+          "sourceText": "The structured breathing pattern that makes meditation accessible for beginners. Free guided visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+          "sourceText": "Can't Meditate? Start with Coherent Breathing",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "80c5c54985886e95a6dff7a8465f4771b26fec102623e0a9b35a7b095b2a6ac3",
+          "sourceText": "Can't Meditate? Start with Coherent Breathing (Meditation for Beginners) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "bd5d8b1e2f4336ae0655efb4ca893360ee906bd0534f2d1731add44d3aa75098",
+          "sourceText": "The structured breathing pattern that makes meditation accessible for beginners. Free guided visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+          "sourceText": "Can't Meditate? Start with Coherent Breathing",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "46f8b0b7fa0c1d3362ba5231899a63c51d1dce9a868b9abb11f0f8835af108b0",
+          "sourceText": "Traditional mindfulness meditation says: 'Just observe your breath. When your mind wanders, gently return to the breath.' Sounds simple. But for most people (especially beginners) this is like telling someone who can't swim to 'just relax and float.' Your mind doesn't wander; it sprints. You become hyper-aware of discomfort. The silence is overwhelming. You quit after three sessions, convinced meditation 'isn't for you.'",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "f6c7c94b80e7609e8fe8e7f453c4b1f21489f0007386b0a7f10c47b36f3bdd71",
+          "sourceText": "Why Traditional Meditation Feels Impossible",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "f986d919ef9f3da595981b061c0cd357da3068b5f280603819aae99bf04ffea8",
+          "sourceText": "Mind races with thoughts the moment you close your eyes",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "ab6866d04094260aa030c460337e4ef43e6fee8909af95e7e65fcf0a4667b2bc",
+          "sourceText": "Can't sit still, constant urge to fidget or check the time",
+          "status": "route-catalog-normalized"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "8918380255283ba04ad911308a9cdd5d481027049c32610b008de0bb0849b899",
+          "sourceText": "Overwhelming awareness of physical discomfort (itches, aches, restlessness)",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "365c2d8e1b0dee6f55cb8274ee9344659118d70f2dd2c623c825fa9661bcb577",
+          "sourceText": "Feeling like you're 'doing it wrong' or 'bad at meditation'",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "d91dfdb3d1d2ad9c9505257dda745c2c140aaaa7251236a3675571e5d6b88a2d",
+          "sourceText": "Falling asleep during meditation instead of staying present",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "a886918ac6b88facaec0fd8d7ff87e7d38647b6b503f120093b2af82b1e876da",
+          "sourceText": "Frustration that meditation feels harder, not easier, over time",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "b0b4f5a036a376ceaff66249f1628e0341cdc12cc96d87e13bffdfe85b5ad272",
+          "sourceText": "Quitting after a few sessions because it feels impossible",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[7]": {
+          "sourceHash": "ea00a4c04c0269244bd17a21481ebda307006eea87e86bebfb9f6a0e7bf87393",
+          "sourceText": "Wondering if meditation 'just isn't for you'",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "d4c4a4fd299eb63c83c99c5d490f423f14bf964b4be370c3ef3d2d38a3ed9dbc",
+          "sourceText": "Meta-analysis showing that slow breathing practices produce similar mental health benefits to traditional meditation, with potential advantages for beginners due to concrete focus object.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "67a6016bc8e2fdcb1d86a975adc2ae44661a5dc23ed15b3cad25e40f269d93f3",
+          "sourceText": "Breath-Focused Meditation and Mental Health: A Meta-Analysis",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "ba3d1b12f11c30c43c8f58bfd9523d59d83eca84423f9e52043df67912cb55d2",
+          "sourceText": "Review showing that both traditional meditation and HRV biofeedback (coherent breathing) produce similar autonomic nervous system benefits, suggesting multiple valid paths to meditative states.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "01e138b656be4134176004c775b3284a4c79a4b56ce9149dedc962503a420239",
+          "sourceText": "Heart Rate Variability and Meditation: A Systematic Review",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "ee593fcbabb0607d324e60b3b8fd75daa02f0e48fa48c2ead3374796d63fb608",
+          "sourceText": "8-week study showing slow breathing training improved sustained attention and reduced stress, key benefits also sought from meditation practice.",
+          "status": "route-catalog-normalized"
+        },
+        "references[2].title": {
+          "sourceHash": "d863b7eff524919851ba5248ee7824be679b4f8d222a08fbb37ea921fc5a8763",
+          "sourceText": "The Effect of Diaphragmatic Breathing on Attention, Negative Affect and Stress",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "290369e2264fda8af7efcd7a51e27b6d69215bbaac3614b91908d7744506529f",
+          "sourceText": "Theoretical framework explaining how slow breathing practices (like coherent breathing) activate the same vagus nerve pathways as traditional meditation.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "46b18568d28e2298bd59e8b596a871a3644c4fda78ad787d24e2941804d6ee18",
+          "sourceText": "Breath of Life: The Respiratory Vagal Stimulation Model of Contemplative Activity",
+          "status": "route-catalog-exact"
+        },
+        "references[4].summary": {
+          "sourceHash": "d6e26d363845750e33717806a44fb381738bfdd04fca740fe1ae66bffc1326a2",
+          "sourceText": "Research showing that mindfulness meditation increases HRV, and that HRV training (coherent breathing) may provide a structured entry point to mindfulness.",
+          "status": "route-catalog-exact"
+        },
+        "references[4].title": {
+          "sourceHash": "03c51fd888db8b1ae631688c5bc7f5883395d54320999c97671c41e34561cc47",
+          "sourceText": "Mindfulness-Based Interventions and the HRV Connection",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "72c4f42c75d2b8d5f4c9af7b9db772f9629dd90f23f37374013e7942ffb41885",
+          "sourceText": "Practice with the full coherent breathing visualizer and explore the complete HRV optimization protocol",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "7a55cec67d48c1355e622cbb1c6208597e7c792fef8d38b6d83a7a6790a9d1e1",
+          "sourceText": "Once you've built attention skills through breathing, apply them to deep work and concentration",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "95265d3290ee341ed5fb2a893f788a7bb3ea8d6d4b4a9584c20efc9781c557c0",
+          "sourceText": "If anxiety is blocking meditation, try box breathing for acute nervous system calming first",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "9b66125b79db90570355e78c224a9bd708966fe3af9b45bee1f927c167ca95cf",
+          "sourceText": "Explore the yogic pranayama tradition for deeper meditation preparation",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "f1e7ba50e5338ae6714e4748bbaa3d0abacbd5ab3701b75eef094d634b801ce9",
+          "sourceText": "Why Coherent Breathing Works as Meditation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "3c5102fd027871d550bc20e3f6c5c7f1c8fc2fda1c37ec0570874262f296f270",
+          "sourceText": "Traditional meditation asks you to generate internal focus ('observe the breath'). Coherent breathing provides an external rhythm to follow. Research on attention training shows that beginners struggle with purely internal focus but succeed with external cues (visual, auditory, tactile). The visualizer or timer becomes your meditation teacher, pacing your attention.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "3028ae6449ac7380303aec30adf3edbef402ce584a0edc5db8a1c2920a609d94",
+          "sourceText": "Provides an External Anchor",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "b1fcb1f9551d46902ba56261e08a3cd1a35e7233aa397c3f2f40f1cb933f388e",
+          "sourceText": "EEG studies show that coherent breathing increases alpha wave activity (8-12 Hz), the same relaxed-yet-alert brain state produced by experienced meditators. You're achieving the destination (calm, focused awareness) through a different route. Some research suggests coherent breathing produces faster alpha increases than traditional mindfulness in beginners.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "8605e3717ff23019f05bc27f3ca01e001aab53ce8aa6a1d486a1068696f181e7",
+          "sourceText": "Produces Meditative Brain States",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "c0f817daccfb024c0f89a93e4bfae4b34d4541a245d2a011b5bf6e325560225e",
+          "sourceText": "Traditional meditation says 'calm your mind, and your body will follow.' Coherent breathing reverses this: calm your body (via slow breathing and HRV optimization), and your mind follows. By slowing your heart rate and activating the vagus nerve, you create the physiological conditions for meditation, making mental stillness easier to access.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "ef3ecb7bfb0a30c212ca0e74e8051c69773cd8d0e31da1fae54445c8a65111e7",
+          "sourceText": "Creates Physiological Calm First",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "d660dc20966ac3259d557a8007e4b65b748335051535c0d2bcef0561b3ec1a12",
+          "sourceText": "Interoception is awareness of internal body sensations, the foundation of mindfulness. Coherent breathing trains this awareness in a structured way: you notice breath depth, rhythm, belly movement, and the pause between breaths. After weeks of practice, you develop the body awareness needed for formless meditation.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "341640acfb5706908526ff3cbd200c581e9d19821cb0e1c49e4a3ce85896b14b",
+          "sourceText": "Builds Interoceptive Awareness",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "56ce189dfb00279fec04e544d0fd8b73e9d1f878f45d874d72d3916b7dd7bdf7",
+          "sourceText": "Coherent breathing is meditation with explicit instructions: breathe in for 6 seconds, breathe out for 6 seconds. That's it. The rhythm becomes an anchor, something concrete to focus on instead of the vague instruction to 'observe your breath.' Your mind still wanders, but you have a clear task to return to: match the pace. After 5-10 minutes of this structured practice, many people naturally transition into a meditative state (calm, present, aware) without forcing it.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "ba66d034dc8ab72ce5a84a33d797387d7c2e3a9ea226d0053e0fc40c0964ee64",
+          "sourceText": "Coherent Breathing: Meditation with Structure",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "7a019836f8b90c3ee8ee8c4d5d5f90ba80162eebde971c6c450db0f1825bb671",
+          "sourceText": "The 0.1 Hz frequency (5-6 breaths per minute) isn't arbitrary. It synchronizes your heart rate, breath, and nervous system, creating a state of physiological coherence. This coherence produces the same benefits as traditional meditation (reduced stress, improved focus, emotional regulation) but with less mental effort. You're not battling your mind; you're giving it a job.",
+          "status": "route-catalog-normalized"
+        }
+      }
+    }
+  },
+  "schemaVersion": 1,
+  "sourceRoute": "/for/meditation"
+}

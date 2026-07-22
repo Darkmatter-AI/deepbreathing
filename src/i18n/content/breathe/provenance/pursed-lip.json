@@ -1,0 +1,3551 @@
+{
+  "locales": {
+    "de-de": {
+      "chrome": {
+        "chrome.pattern.benefit": {
+          "sourceHash": "0c0829d3e30125b0e9350631b17c2102c298265645d8252eefdc45831517521a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.breadcrumb-techniques": {
+          "sourceHash": "37b5f87273b794d1da69aca7c5bd665712303c9f0dcb428ad5a88923012e2b1c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.common-questions": {
+          "sourceHash": "dfb8a3d41335746f8b5879f9c3a372ecfa4d1e7b6495d7376f335084fa3c46f2",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.difficulty": {
+          "sourceHash": "be44133ed57f9e44f829282224b15981f033e9b0acc5458070e10104509eb398",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.faq-description": {
+          "sourceHash": "cac341e9fbdbeddc88ae5baaa72d5862ca026803916675fa95c879382425e8a1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.hero-share-text": {
+          "sourceHash": "6f6b81cd18374ff55f238c70745152d5394e0b06308253685c5644186dfaf9f0",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.pattern.how-to-description": {
+          "sourceHash": "19245bd9459b04747ca278ce4bc39e8ef933cff79ac31d197f2d076edd9d6657",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.how-to-practice": {
+          "sourceHash": "2a9206c87d0f17f88f49ffb32c92a2d48d1e1ddbada1d216c854b73f9e666c42",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.keep-it-gentle": {
+          "sourceHash": "4b3aff14432579cc38d0ae5eaebce559b7d08eb90aec6926a1435d7b1f4f8c8b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.og-alt": {
+          "sourceHash": "edea1f7a6e5ad8a8e7b1013a5fe828f2dfbefc382bc55402555a41202058a93a",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.pattern.practice-action": {
+          "sourceHash": "aaefeb15dba1049f9e232401aa1729aa5582328b239ed15f7bdec1bd5cdf3c26",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.practice-notes": {
+          "sourceHash": "966c14f18db88384cc9c484065e9148a7745b46aaf59b4f617c08b606d8b25d1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.practice-notes-description": {
+          "sourceHash": "9c4dfaa2346b55e927f3b967c2e9d7d16d3311c8c56e551a9ef3f8f31b603ca7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.related-4-7-8-title": {
+          "sourceHash": "61bc7df0643742b926fa603a5bb211bd432b1789c6e4bc4258e41a29826b436e",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.related-belly-title": {
+          "sourceHash": "b0a5eb5ee5f57c475a7026cded2abb30698da9e3ccf7c5428a76b80d0d0bb6f1",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.related-buteyko-title": {
+          "sourceHash": "6e5af0031ccdda555bd6fe13f19ecf553320dc5f40ea7693e4ab79506db70e85",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.related-coherent-title": {
+          "sourceHash": "4c6e34da239e136a2b5d96c1bc328ff0f810abfb71f7047ad9027d548b509101",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.related-patterns": {
+          "sourceHash": "4f8c2a5e8574ad2710020a69b41eeafb1d1ad5d87f78241f5a1715c651fa723d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.related-techniques": {
+          "sourceHash": "58ff22fb23c4b03c33d59472ca5863c357076f1b7b4e9b666525af213d69e363",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.related-use-cases": {
+          "sourceHash": "59d9b0677baf7f4ba4d8421daeba7c457a582292fdf2e5cce8aed7b1dc62f54b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.research-description": {
+          "sourceHash": "331557d6854d6ca5305b7f6d53fc18cedf75d0c398cfd2161a53427b8be001d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.research-safety": {
+          "sourceHash": "2bad807b4f017eae3c380287f5340b9257ef6f7e350b7a56c7ec86377941fa54",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.safety-notes": {
+          "sourceHash": "7e092bf4ecfb7a89cf31e69503c4c2e56726061b4234e1a07b38b757f1e3a599",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.share-section-text": {
+          "sourceHash": "af42be52f2a441787bddb9431f9f10f547dc1d5ce5a018064dab5349ef931dcb",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.share-technique": {
+          "sourceHash": "37d5cf900d5f4c126284817e2f262b0536528ba9cfa0846ad0344b73f1e30455",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.step-by-step": {
+          "sourceHash": "83c008a92e4280e61a22a6b6780ff90bcb3f05bed958ce97fe7408050d21ddad",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.study-highlights": {
+          "sourceHash": "f65e736d9839cab1eb3b9b67c04253c0639b2a9fd5944621b56c61fb617c93a4",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.suggested-frequency": {
+          "sourceHash": "5f6427c54ebaf87e89974b491feec81415318835960e501b9fda10c257d57b05",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.supplies": {
+          "sourceHash": "6be75605dc98cd51ce12599df98d8ecc5a24dbfb0acb0336228d3d7eea77f846",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.technique-overview": {
+          "sourceHash": "60bf6e41f9cfb46f95321125485042495264fabfd34ec662bda141d2fbf17455",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.tools": {
+          "sourceHash": "ea93d6a262ecb87a9fa4d09edbd7654c046597936a8e235fc3949eb01775ff99",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.total-time": {
+          "sourceHash": "f448bdef375a1f9e82b495d3228fc5c23a2acf6b986ffcf12e74094c14a4bc4d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.use-cases": {
+          "sourceHash": "ff27a991e8559d6a53024fb888d0b9f062f31154593bf4db2c6431ace2d7d05a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.use-cases-description": {
+          "sourceHash": "200d003a07e004a353760d59dfb301e5a22d04b700c4fa5aaebf1ed07b82e305",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.watch-learn": {
+          "sourceHash": "40e1861cc48912be3027a3830c17d93a321895ada79bd6327329461764245305",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.what-evidence-says": {
+          "sourceHash": "6dff2aa4f71bdb673399f3689cdff90db2ef2b5978b67a86c6aea68a8da24f40",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.where-it-fits": {
+          "sourceHash": "f895e63320934fe16a50ff39692a90c084868ec6ff756d08a971b42f9f0242f4",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "benefits[0].description": {
+          "sourceHash": "67772e031f3f6510e84a1af61f75224330d3f967e7f09f4e1302e441e6a20210",
+          "sourceText": "Slows breathing and releases trapped air within seconds, reducing the sensation of breathlessness.",
+          "status": "route-catalog-exact"
+        },
+        "benefits[0].title": {
+          "sourceHash": "10d154490f992b895116f7562a2248f7c5234a2774d27127d649015ff7bdc57c",
+          "sourceText": "Immediate relief",
+          "status": "route-catalog-exact"
+        },
+        "benefits[1].description": {
+          "sourceHash": "18c752b6d0611f450b1bee168fe33def8c38bfc1f5aea7018ad38c372d94b492",
+          "sourceText": "The back-pressure from pursed lips prevents small airways from collapsing during exhalation.",
+          "status": "route-catalog-exact"
+        },
+        "benefits[1].title": {
+          "sourceHash": "5d614d0c6e2fe4659ed318337917de6f11aff070703c9ce446c23dd61f45c95d",
+          "sourceText": "Keeps airways open",
+          "status": "route-catalog-exact"
+        },
+        "benefits[2].description": {
+          "sourceHash": "d3bdc4661494744544264105e7eb90b5d6348d0057a3a5b18ab73a08850e9f98",
+          "sourceText": "Makes each breath more efficient, reducing the effort needed to breathe comfortably.",
+          "status": "route-catalog-exact"
+        },
+        "benefits[2].title": {
+          "sourceHash": "4b7588c11b229741f3e461ef189a6b593bbe9a9fd2bcd586140161f7e02ee4b4",
+          "sourceText": "Reduces breathing work",
+          "status": "route-catalog-exact"
+        },
+        "body[0].content": {
+          "sourceHash": "dc4239a379295117b2252fb8eb1a168a2eb8bd9f6327386952632c7a1178fb8a",
+          "sourceText": "Pursed lip breathing is a controlled breathing technique where you inhale slowly through your nose and exhale through tightly pursed lips, as if you're blowing through a straw or cooling hot soup. The exhale is typically twice as long as the inhale (2:4 ratio). [This creates back-pressure in your airways, keeping them open longer and helping trapped air escape from your lungs](https://doi.org/10.1378/chest.125.2.459).",
+          "status": "repo-reviewed-manual"
+        },
+        "body[0].heading": {
+          "sourceHash": "58a182883b07b97fa3a2e7d4f53da4453a584da6a632ed9b6b5c4313e6df506b",
+          "sourceText": "What Is Pursed Lip Breathing?",
+          "status": "route-catalog-exact"
+        },
+        "body[1].content": {
+          "sourceHash": "ad37fbb87b1a0aaac6fba36b36fbbdafdd13a2bdf02fc6d6881d54f4b3755d52",
+          "sourceText": "Originally developed for COPD and emphysema patients, pursed lip breathing helps anyone experiencing shortness of breath. It's particularly effective for: chronic lung conditions (COPD, emphysema, chronic bronchitis), asthma during mild episodes, exercise-induced breathlessness, anxiety-related breathing difficulty, recovery after physical exertion, and seniors wanting to maintain lung function.",
+          "status": "route-catalog-exact"
+        },
+        "body[1].heading": {
+          "sourceHash": "7b79abd556e419e94b3188691baf03c5c630740bd5d6a6b7a1b59c0ca5712304",
+          "sourceText": "Who Benefits Most",
+          "status": "route-catalog-exact"
+        },
+        "body[2].content": {
+          "sourceHash": "55b0cb76d5f229bcbe090cbdca930edfff34fc002a10f893d2af6eb068e3c62b",
+          "sourceText": "Pursed lip breathing for COPD works by keeping small airways open longer, helping trapped air escape and easing shortness of breath. Use it during flares, while walking, or when climbing stairs to reduce air hunger and make each breath feel more efficient.",
+          "status": "route-catalog-exact"
+        },
+        "body[2].heading": {
+          "sourceHash": "b08d1a5e511f2a66e7ce74737570283c092fd2ce52dea8b257a2afcb60957d37",
+          "sourceText": "Pursed Lip Breathing for COPD and Shortness of Breath",
+          "status": "route-catalog-exact"
+        },
+        "body[3].content": {
+          "sourceHash": "ffb210619c9ef7b993377067b20108053a4aa9a3c78223deba1b3204f687b5bd",
+          "sourceText": "Slows your breathing rate immediately. Helps release trapped air from the lungs. Reduces work of breathing. Can lower anxiety during breathless episodes. Improves oxygen exchange. Easy to learn and use anywhere.",
+          "status": "route-catalog-exact"
+        },
+        "body[3].heading": {
+          "sourceHash": "d5b67bc930cd33c0c62c478cb250387d18e05304ba7d0e02fd1acea699044d20",
+          "sourceText": "Benefits",
+          "status": "route-catalog-exact"
+        },
+        "body[4].content": {
+          "sourceHash": "de9f39cd6bbb9310f91455f96e77885dc66ee22e6ac23278692d13d97af78765",
+          "sourceText": "Use during shortness of breath episodes, before and during physical activity, when climbing stairs or walking uphill, during anxiety or panic, after exercise for recovery, or as a daily practice to strengthen breathing habits.",
+          "status": "route-catalog-exact"
+        },
+        "body[4].heading": {
+          "sourceHash": "75d1b504f19b5e43cc42fd48b72b7990b5001f28c69e58f815b007ba0d10f865",
+          "sourceText": "When to Use",
+          "status": "route-catalog-normalized"
+        },
+        "body[5].content": {
+          "sourceHash": "11b87c72ff208dfff0012e73cd944c4df8ef40e30dd996825a0486fd696e3093",
+          "sourceText": "Pursed lip breathing is very safe. However, stop if you feel dizzy or faint. If you have severe respiratory distress, seek medical attention. This technique helps mild-moderate breathlessness but isn't a substitute for emergency care.",
+          "status": "route-catalog-normalized"
+        },
+        "body[5].heading": {
+          "sourceHash": "aeb0cbde72f88eb3e51e1c2412ef230833cf857ae82a7fb9fcf747f6aba0d143",
+          "sourceText": "When to Skip",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "c4731e8e812c81bace86b40d33650f0a902a77447db8f8cc2b5bd641dfe56918",
+          "sourceText": "For immediate relief, 5-10 breaths (about 30-60 seconds) is often enough. For building the habit, practice 4-5 times daily for 5 minutes each. During activities that cause breathlessness (walking, stairs), use it continuously. There's no maximum. It's safe to use as long as needed.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "32e30b1e44d9ce4fb88498d1af13ab90629de9950adf315b40508f653b4dd497",
+          "sourceText": "How long should I do pursed lip breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "bda8fe9659df65fdd573795344372b1c3e278de580420a6dbfe256ec3a073519",
+          "sourceText": "The standard ratio is 2:4. Inhale for 2 seconds through your nose, exhale for 4 seconds through pursed lips. Some people prefer 2:6 or 3:6 for a longer exhale. The key is that the exhale should be at least twice as long as the inhale. Adjust to whatever feels comfortable and sustainable.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "d06ec45d16663ea1d038bad398718b2d30dbf3eb23befe88943296c4ff6a88a8",
+          "sourceText": "What's the correct ratio for pursed lip breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "40798393ee5008dd3bedf299828c8ab719b07174c49d7f90d0285bf994d00902",
+          "sourceText": "Yes. The slow, controlled exhale activates your parasympathetic nervous system (rest-and-digest mode), which counteracts anxiety's fight-or-flight response. The technique is particularly helpful when anxiety causes chest tightness or a feeling of not getting enough air.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "f2413f738ca6262d2ef0d2d623f311673998bdd60cbb74ad6c7c45e67c8b16f8",
+          "sourceText": "Does pursed lip breathing help with anxiety?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "c78460185656033e4941d530426d412805a899e0a3abd02920af78d75d18c69a",
+          "sourceText": "Absolutely. This is one of its best uses. Use it before exercise to prepare your lungs, during exercise when you feel breathless, and after exercise for recovery. Many respiratory therapists teach it specifically for maintaining activity levels with lung conditions.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "a8ce87a98c74867881b7e629530a56c740a6170f1a9a9ecd7443dad11dd5f077",
+          "sourceText": "Can I use pursed lip breathing during exercise?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "1f6c56f2b018937afd90f6f6f2f5c59f26930bcbb6e9c112d6ee605133416922",
+          "sourceText": "Yes, it's one of the most recommended techniques for COPD management. Studies show it improves oxygen saturation, reduces respiratory rate, and decreases dyspnea (breathlessness) in COPD patients. It's often taught as part of pulmonary rehabilitation programs.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].question": {
+          "sourceHash": "41d0fd31591b50a640a318dbeba9e3809983553d2774b4d453f5a97c43cc33f2",
+          "sourceText": "Is pursed lip breathing good for COPD?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "9ade8d40bb59afc9c70cd76108a58ed39f48b9a8e2236174b3f08643fc94646c",
+          "sourceText": "Pursed lip breathing focuses specifically on the exhale mechanics, the pursed lips create back-pressure that keeps airways open. Box breathing and 4-7-8 use breath holds for relaxation. Diaphragmatic breathing focuses on belly vs. chest movement. Pursed lip breathing can be combined with diaphragmatic breathing for maximum benefit.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[5].question": {
+          "sourceHash": "9933cf11cde547fb492513b04137bbb68c973e8ab03456b7b67ddad2ad88422d",
+          "sourceText": "What's the difference between pursed lip breathing and other techniques?",
+          "status": "route-catalog-exact"
+        },
+        "frequency": {
+          "sourceHash": "aa6ba33e5ef77027ea58e5dbd5471565ebb3309e800b578df7042daa28afde99",
+          "sourceText": "As needed for breathlessness; optionally 4-5 times daily for 5 minutes to build the habit",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "4f89449d617e2f5650a25c1a6a58fec847d18571ece2e4f566ae87558b06f7f7",
+          "sourceText": "Pursed lip breathing is a simple technique that slows your breathing and helps you get more air out of your lungs. Inhale slowly through your nose, then exhale through pursed lips (like blowing out a candle) for twice as long. Used by respiratory therapists worldwide for COPD, asthma, and exercise recovery.",
+          "status": "route-catalog-exact"
+        },
+        "hero.subtitle": {
+          "sourceHash": "0e8bc44c1bca97d47367d59baa646eda6cafc9ceb48e14144955f25a937dda60",
+          "sourceText": "Slow your breath and ease shortness of breath in seconds.",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "b44d6b2987526fe1ecca59bd20db1dfa5478a2ed3fd051905793342a73747bd2",
+          "sourceText": "Pursed Lip Breathing Technique",
+          "status": "route-catalog-exact"
+        },
+        "howTo.difficulty": {
+          "sourceHash": "97c10efe01d5c9c88704a12d361d8429b3a6aa2412290a0773109d5d2d603d5e",
+          "sourceText": "easy",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].duration": {
+          "sourceHash": "f78b958d638585f732f9665c58680242b88555a32786767f84d7c7da57020237",
+          "sourceText": "10 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "95885c29cede9be52a48299f2e5caf4aec53b0f2d167ea9696480390cdf89b44",
+          "sourceText": "Sit comfortably or stand. Drop your shoulders and relax your neck. Unclench your jaw.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "6d10065bf4269015d66319e2202ed185bdb00f30507a8beb81f115127a476e34",
+          "sourceText": "Relax",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].duration": {
+          "sourceHash": "f5a3319576b25975fd05af1bc00bee9d8faf8887759588f293dfd8a25d279b32",
+          "sourceText": "2 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "3cd2bbc5c2c88813ca6ef0399d2183b237b2d25f939f8f4ab0cc8f4369d13ac8",
+          "sourceText": "Close your mouth. Breathe in slowly through your nose for 2 counts. Let your belly rise.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "153c275f6d907da2bc3eb2ed7f6f88c2c6db62e22fe6b0e6f045c9b4cba13246",
+          "sourceText": "Inhale through nose",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].duration": {
+          "sourceHash": "618dc58379dda348eba010597accf72a98ab4cd357b42acdda4091901b2ff144",
+          "sourceText": "instant",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "2bb6bd65d5cedc7ce2a5ffe217281ae54d655d2294309ee389779a01adb886e5",
+          "sourceText": "Pucker your lips as if you're about to whistle or blow out a candle.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "35075df65e9d2252a6b921c609cf4a7b9646b5457ce4cc62829667abacb0d811",
+          "sourceText": "Purse your lips",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].duration": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "355aa26180df2906bc374733cfc25a22d19a063106084253b0ca42344bce5fdd",
+          "sourceText": "Breathe out slowly and gently through your pursed lips for 4 counts. Don't force the air out.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "f8d1686e3de4e34304e21710f2576abe25ecf3fa6f1f816210cace7dbc8bbd2a",
+          "sourceText": "Exhale through pursed lips",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].duration": {
+          "sourceHash": "5276e2a4e16993cd865a9b30563a2f55452e9b37704fbf1347ececc0304ec533",
+          "sourceText": "1-5 minutes",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "544b0b26b8999022c5a5924110eee0807cc42f66faf90de0ed8ebaba4a5e4948",
+          "sourceText": "Continue for 5-10 breaths or longer as needed. Use during any activity that causes breathlessness.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "b6b7a0065808a62e7d5781b356c5ddba4e000433c34b5d561d200158a4443eb1",
+          "sourceText": "Repeat",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tools[0]": {
+          "sourceHash": "3ad98f3137b10370c988abfe468ae29ced1f46ce54e1b72daa8d8650127e5b50",
+          "sourceText": "Chair or comfortable position",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.tools[1]": {
+          "sourceHash": "cef477320e4a2bf6601f905e494c9f585e593e1e5250932982fef747299023e0",
+          "sourceText": "Optional timer or visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.totalTime": {
+          "sourceHash": "5276e2a4e16993cd865a9b30563a2f55452e9b37704fbf1347ececc0304ec533",
+          "sourceText": "1-5 minutes",
+          "status": "route-catalog-exact"
+        },
+        "lineage": {
+          "sourceHash": "68b637d6745044bff51f47fa65dc46c4d61eb93694c579a3d076278077b4ea9c",
+          "sourceText": "Developed in clinical pulmonary medicine and respiratory therapy as a tool for patients with chronic obstructive pulmonary disease (COPD). There is no single originator. It became a standard component of pulmonary rehabilitation programs and was endorsed by the American College of Chest Physicians and AACVPR in 1997.",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "c2d143410d0d4f47a2f678ab54dd471d8ecc1813cdbc9ee244932ff03d169ce4",
+          "sourceText": "Free pursed lip breathing timer — ease shortness of breath in seconds. Respiratory therapist-approved 2:4 ratio. Start your guided session now.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "54472f945583b8d3d4a13d5ce14f836a2589cafc27b3d32f3317558107ee1afc",
+          "sourceText": "Respiratory therapist-approved technique for COPD, asthma, and shortness of breath. Free timer with 2:4 ratio breathing.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "6dfb9ea8191daa7807801c527db4a2ac572d1df44c4110d77ea7965f590a3171",
+          "sourceText": "Pursed Lip Breathing: Stop Shortness of Breath Fast",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "8735be1f1e3851006487bf0edc2f0868935b0c7923b7375f108e4ef376b16e9d",
+          "sourceText": "Pursed Lip Breathing: Stop Shortness of Breath Fast (Free Timer) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "6f6b6a7e9b5373c423b36a11c8ab54b678c8d3c7d035777afb23f9e5591bad81",
+          "sourceText": "Stop shortness of breath with the respiratory therapist-approved technique. Free timer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "d629bb1130b16d91e3922895a5f172059e7742f43da4df6e620e000317707b6c",
+          "sourceText": "Pursed Lip Breathing: Free Timer",
+          "status": "route-catalog-head-occurrence"
+        },
+        "practiceTips[0].description": {
+          "sourceHash": "82f8455311cd9aae04c4b92b756bf2fa03d990e6d957e87f2adb0928473d0dbb",
+          "sourceText": "Tension in your upper body makes breathing harder. Drop your shoulders and unclench your jaw before starting.",
+          "status": "route-catalog-exact"
+        },
+        "practiceTips[0].title": {
+          "sourceHash": "a1b16a5a8904489e5ec62438886e149cd1ca42e99c5bcc4a4b27bc39309a4193",
+          "sourceText": "Relax your neck and shoulders",
+          "status": "route-catalog-exact"
+        },
+        "practiceTips[1].description": {
+          "sourceHash": "4819751bce255477c8e1f0cfea103baf3c09ad803664387b82edfa39f007ca8a",
+          "sourceText": "Nasal breathing filters, warms, and humidifies air. Keep your mouth closed during the inhale.",
+          "status": "route-catalog-exact"
+        },
+        "practiceTips[1].title": {
+          "sourceHash": "fccd357aadf2d07eee4db50f308aef9edf5802298b04cbbbd257de13a7d66a51",
+          "sourceText": "Inhale through your nose",
+          "status": "route-catalog-exact"
+        },
+        "practiceTips[2].description": {
+          "sourceHash": "377ca6e629f86332652e173c49cd8edcbc539d47056804f2d6cfab3c4efc641a",
+          "sourceText": "Not too tight, not too loose. Imagine gently blowing to make a candle flame flicker but not go out.",
+          "status": "route-catalog-exact"
+        },
+        "practiceTips[2].title": {
+          "sourceHash": "2e2be33e62b123872874a6f9b9718af22d7f0ecf3a0d13c879714d502ae3a983",
+          "sourceText": "Purse lips like blowing a candle",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "44f525903a37d977ef9239a76450b8d8e621ebe98707c7549cf2ac30abcd6ddd",
+          "sourceText": "Slow breathing can help support healthy blood pressure",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[0].title": {
+          "sourceHash": "bfb5a87caf0658458b4c1cf99b9095a6cd07f1cf1f73eb677da0a148d851fd48",
+          "sourceText": "Blood Pressure Support",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "408822f64ca0995d0c29e59b67e940f3d0c1035ee20887ad8b55db5849ce2426",
+          "sourceText": "Recover faster between intervals with pursed lip recovery breathing",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].title": {
+          "sourceHash": "9f5a267408cb2a9b8384ad058e5f6098ee4a27ae8c82e3f7a0c741ab88ccf122",
+          "sourceText": "Running & Cardio",
+          "status": "route-catalog-exact"
+        },
+        "related[0].reason": {
+          "sourceHash": "75dd2ba162891f538f445d54aea66fd5b7c0fb757bb23cb57b0dd87e80337184",
+          "sourceText": "Master diaphragmatic breathing first. It's the foundation for pursed-lip and all breathing techniques.",
+          "status": "route-catalog-exact"
+        },
+        "related[1].reason": {
+          "sourceHash": "7b48b31c6affef83668843c097d9f199c25d8c29c284719d2de3d2f927e297ff",
+          "sourceText": "For general stress reduction and HRV training without the pursed lip exhale.",
+          "status": "route-catalog-exact"
+        },
+        "related[2].reason": {
+          "sourceHash": "c07d0879587152eef9f7c274ffa059147c871867b8b8184ee5d4443294534618",
+          "sourceText": "For sleep and deep relaxation with an extended exhale phase.",
+          "status": "route-catalog-exact"
+        },
+        "related[3].reason": {
+          "sourceHash": "8a47d4963f66201ed1f9463af1c12acac271855c03a5b1edcbd30fba6c8cd044",
+          "sourceText": "Another respiratory health technique focusing on light nasal breathing.",
+          "status": "route-catalog-exact"
+        },
+        "research.safety[0]": {
+          "sourceHash": "4d39c351dd0d6aa293684bc301d66e77e1bd7d621a0efd9366d7b1421888d7d7",
+          "sourceText": "Stop if you feel dizzy or faint.",
+          "status": "route-catalog-exact"
+        },
+        "research.safety[1]": {
+          "sourceHash": "1c7c6635d301df67493813d13ce4499fb8677dd68960a0de1422a3fa6490e073",
+          "sourceText": "This technique is for mild-moderate breathlessness. Seek emergency care for severe respiratory distress.",
+          "status": "route-catalog-exact"
+        },
+        "research.safety[2]": {
+          "sourceHash": "ef428cd5a3128f83c065b177a93111d59f3da4e9731af99679779d06f58f1e9a",
+          "sourceText": "If you have a diagnosed lung condition, consult your healthcare provider about incorporating this technique.",
+          "status": "route-catalog-exact"
+        },
+        "research.safety[3]": {
+          "sourceHash": "949d56d70403d9684a5ba87dcff41efab6d3921942cd42557c38a12ebc08ac19",
+          "sourceText": "Safe for seniors, athletes, and most people without respiratory conditions.",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[0].summary": {
+          "sourceHash": "69b944bcb7d4867b1e5e8b5923d2fd85f4e03b5c83f600f5ef4041fa06627ce4",
+          "sourceText": "Pursed lip breathing decreased respiratory rate and improved tidal volume and oxygen saturation in COPD patients.",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[0].title": {
+          "sourceHash": "5bae206532837a97bffcdf6f27f6bb31bfcf7951adb469dd7cc41d59e26f5cdb",
+          "sourceText": "Roberts et al., 2009 - Respiratory Care",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[1].summary": {
+          "sourceHash": "7e224660c41c5dcd49d83ff95cfe13be15cff9b04c5eecc09ce4cd03ca001f4d",
+          "sourceText": "Pursed lip breathing as part of dyspnea self-management improved functional performance and reduced breathlessness in COPD.",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[1].title": {
+          "sourceHash": "0da83dd29d75638180b082ac4e90632968611f4253687efe70bccd0a23c58fcb",
+          "sourceText": "Nield et al., 2007 - Heart & Lung",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[2].summary": {
+          "sourceHash": "c80d6fe2e84190e62dc7ca7a13204e749fc02518c6ab27c3a3223f6f1883a977",
+          "sourceText": "Breathing exercises including pursed lip breathing showed modest benefits for dyspnea in COPD patients.",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[2].title": {
+          "sourceHash": "6a7f700812741e7c4194582fe532105bac4803b9978e3f1b387306b75a3bb724",
+          "sourceText": "Garrod & Lasserson, 2007 - Cochrane Review",
+          "status": "route-catalog-exact"
+        },
+        "useCases[0].description": {
+          "sourceHash": "1d6374814a8da8fef77348631c3d201f0ee5e17e505d642d04fd9828f9ccf6e7",
+          "sourceText": "Daily practice to reduce breathlessness and improve lung function.",
+          "status": "route-catalog-exact"
+        },
+        "useCases[0].dose": {
+          "sourceHash": "e3651e24ed1f5a89dd2d0b376c95be403b17a467b7039c93f9e67b0e4ca077e2",
+          "sourceText": "4-5 times daily, 5 minutes each session",
+          "status": "route-catalog-exact"
+        },
+        "useCases[0].name": {
+          "sourceHash": "5a02e795689e7fad4b51234902183ab1748c50935a7e2bacb9223c12f89019b1",
+          "sourceText": "COPD management",
+          "status": "route-catalog-exact"
+        },
+        "useCases[1].description": {
+          "sourceHash": "ff7639d5e3b83236a46b41791b0e7a4dd0d9f3228d275a930a9a53439ba90474",
+          "sourceText": "After cardio or climbing stairs to catch your breath faster.",
+          "status": "route-catalog-exact"
+        },
+        "useCases[1].dose": {
+          "sourceHash": "c84ad817df93ce02fbf28b1be0331008ffe2b8db2cc9a19a27a3e29d8066d0bb",
+          "sourceText": "5-10 breaths or until breathing normalizes",
+          "status": "route-catalog-exact"
+        },
+        "useCases[1].name": {
+          "sourceHash": "5bfd748aa46e4543f0e5d61427efd266eddad5f09d642106fa0b3e34bd8f7d44",
+          "sourceText": "Exercise recovery",
+          "status": "route-catalog-exact"
+        },
+        "useCases[2].description": {
+          "sourceHash": "8210c03ea759e4341b2da8abf7ec7313455188b9ae1a12dc31dd970786b01b56",
+          "sourceText": "When chest tightness or air hunger accompanies anxiety.",
+          "status": "route-catalog-exact"
+        },
+        "useCases[2].dose": {
+          "sourceHash": "6ef9afda592ec6cea77b5c5a9ef16cf434181c0efbdc9b180abd035784248e7a",
+          "sourceText": "1-2 minutes, or until calm",
+          "status": "route-catalog-exact"
+        },
+        "useCases[2].name": {
+          "sourceHash": "a912454bbe3287c33551b7c81086f66b3c857263130ea8ad7182e0d240a3a05d",
+          "sourceText": "Anxiety relief",
+          "status": "route-catalog-normalized"
+        },
+        "video.description": {
+          "sourceHash": "f788c503c91294d755eba86736f46bf9334e8b12f00c058bd51d1ada842de2b6",
+          "sourceText": "The American Lung Association demonstrates proper pursed lip breathing technique for managing shortness of breath from COPD, asthma, and other lung conditions.",
+          "status": "route-catalog-exact"
+        },
+        "video.title": {
+          "sourceHash": "cfaacec6ec24ea3fc0110c5d2f97b8ffb4ec09e07e2e5dfc08a0e2605e1c4232",
+          "sourceText": "Pursed Lip Breathing Technique - American Lung Association",
+          "status": "repo-reviewed-manual"
+        }
+      }
+    },
+    "es-es": {
+      "chrome": {
+        "chrome.pattern.benefit": {
+          "sourceHash": "0c0829d3e30125b0e9350631b17c2102c298265645d8252eefdc45831517521a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.breadcrumb-techniques": {
+          "sourceHash": "37b5f87273b794d1da69aca7c5bd665712303c9f0dcb428ad5a88923012e2b1c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.common-questions": {
+          "sourceHash": "dfb8a3d41335746f8b5879f9c3a372ecfa4d1e7b6495d7376f335084fa3c46f2",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.difficulty": {
+          "sourceHash": "be44133ed57f9e44f829282224b15981f033e9b0acc5458070e10104509eb398",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.faq-description": {
+          "sourceHash": "cac341e9fbdbeddc88ae5baaa72d5862ca026803916675fa95c879382425e8a1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.hero-share-text": {
+          "sourceHash": "6f6b81cd18374ff55f238c70745152d5394e0b06308253685c5644186dfaf9f0",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.pattern.how-to-description": {
+          "sourceHash": "19245bd9459b04747ca278ce4bc39e8ef933cff79ac31d197f2d076edd9d6657",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.how-to-practice": {
+          "sourceHash": "2a9206c87d0f17f88f49ffb32c92a2d48d1e1ddbada1d216c854b73f9e666c42",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.keep-it-gentle": {
+          "sourceHash": "4b3aff14432579cc38d0ae5eaebce559b7d08eb90aec6926a1435d7b1f4f8c8b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.og-alt": {
+          "sourceHash": "edea1f7a6e5ad8a8e7b1013a5fe828f2dfbefc382bc55402555a41202058a93a",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.pattern.practice-action": {
+          "sourceHash": "aaefeb15dba1049f9e232401aa1729aa5582328b239ed15f7bdec1bd5cdf3c26",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.practice-notes": {
+          "sourceHash": "966c14f18db88384cc9c484065e9148a7745b46aaf59b4f617c08b606d8b25d1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.practice-notes-description": {
+          "sourceHash": "9c4dfaa2346b55e927f3b967c2e9d7d16d3311c8c56e551a9ef3f8f31b603ca7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.related-4-7-8-title": {
+          "sourceHash": "61bc7df0643742b926fa603a5bb211bd432b1789c6e4bc4258e41a29826b436e",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.related-belly-title": {
+          "sourceHash": "b0a5eb5ee5f57c475a7026cded2abb30698da9e3ccf7c5428a76b80d0d0bb6f1",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.related-buteyko-title": {
+          "sourceHash": "6e5af0031ccdda555bd6fe13f19ecf553320dc5f40ea7693e4ab79506db70e85",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.related-coherent-title": {
+          "sourceHash": "4c6e34da239e136a2b5d96c1bc328ff0f810abfb71f7047ad9027d548b509101",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.related-patterns": {
+          "sourceHash": "4f8c2a5e8574ad2710020a69b41eeafb1d1ad5d87f78241f5a1715c651fa723d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.related-techniques": {
+          "sourceHash": "58ff22fb23c4b03c33d59472ca5863c357076f1b7b4e9b666525af213d69e363",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.related-use-cases": {
+          "sourceHash": "59d9b0677baf7f4ba4d8421daeba7c457a582292fdf2e5cce8aed7b1dc62f54b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.research-description": {
+          "sourceHash": "331557d6854d6ca5305b7f6d53fc18cedf75d0c398cfd2161a53427b8be001d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.research-safety": {
+          "sourceHash": "2bad807b4f017eae3c380287f5340b9257ef6f7e350b7a56c7ec86377941fa54",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.safety-notes": {
+          "sourceHash": "7e092bf4ecfb7a89cf31e69503c4c2e56726061b4234e1a07b38b757f1e3a599",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.share-section-text": {
+          "sourceHash": "af42be52f2a441787bddb9431f9f10f547dc1d5ce5a018064dab5349ef931dcb",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.share-technique": {
+          "sourceHash": "37d5cf900d5f4c126284817e2f262b0536528ba9cfa0846ad0344b73f1e30455",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.step-by-step": {
+          "sourceHash": "83c008a92e4280e61a22a6b6780ff90bcb3f05bed958ce97fe7408050d21ddad",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.study-highlights": {
+          "sourceHash": "f65e736d9839cab1eb3b9b67c04253c0639b2a9fd5944621b56c61fb617c93a4",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.suggested-frequency": {
+          "sourceHash": "5f6427c54ebaf87e89974b491feec81415318835960e501b9fda10c257d57b05",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.supplies": {
+          "sourceHash": "6be75605dc98cd51ce12599df98d8ecc5a24dbfb0acb0336228d3d7eea77f846",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.technique-overview": {
+          "sourceHash": "60bf6e41f9cfb46f95321125485042495264fabfd34ec662bda141d2fbf17455",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.tools": {
+          "sourceHash": "ea93d6a262ecb87a9fa4d09edbd7654c046597936a8e235fc3949eb01775ff99",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.total-time": {
+          "sourceHash": "f448bdef375a1f9e82b495d3228fc5c23a2acf6b986ffcf12e74094c14a4bc4d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.use-cases": {
+          "sourceHash": "ff27a991e8559d6a53024fb888d0b9f062f31154593bf4db2c6431ace2d7d05a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.use-cases-description": {
+          "sourceHash": "200d003a07e004a353760d59dfb301e5a22d04b700c4fa5aaebf1ed07b82e305",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.watch-learn": {
+          "sourceHash": "40e1861cc48912be3027a3830c17d93a321895ada79bd6327329461764245305",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.what-evidence-says": {
+          "sourceHash": "6dff2aa4f71bdb673399f3689cdff90db2ef2b5978b67a86c6aea68a8da24f40",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.where-it-fits": {
+          "sourceHash": "f895e63320934fe16a50ff39692a90c084868ec6ff756d08a971b42f9f0242f4",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "benefits[0].description": {
+          "sourceHash": "67772e031f3f6510e84a1af61f75224330d3f967e7f09f4e1302e441e6a20210",
+          "sourceText": "Slows breathing and releases trapped air within seconds, reducing the sensation of breathlessness.",
+          "status": "route-catalog-exact"
+        },
+        "benefits[0].title": {
+          "sourceHash": "10d154490f992b895116f7562a2248f7c5234a2774d27127d649015ff7bdc57c",
+          "sourceText": "Immediate relief",
+          "status": "route-catalog-exact"
+        },
+        "benefits[1].description": {
+          "sourceHash": "18c752b6d0611f450b1bee168fe33def8c38bfc1f5aea7018ad38c372d94b492",
+          "sourceText": "The back-pressure from pursed lips prevents small airways from collapsing during exhalation.",
+          "status": "route-catalog-exact"
+        },
+        "benefits[1].title": {
+          "sourceHash": "5d614d0c6e2fe4659ed318337917de6f11aff070703c9ce446c23dd61f45c95d",
+          "sourceText": "Keeps airways open",
+          "status": "route-catalog-exact"
+        },
+        "benefits[2].description": {
+          "sourceHash": "d3bdc4661494744544264105e7eb90b5d6348d0057a3a5b18ab73a08850e9f98",
+          "sourceText": "Makes each breath more efficient, reducing the effort needed to breathe comfortably.",
+          "status": "route-catalog-exact"
+        },
+        "benefits[2].title": {
+          "sourceHash": "4b7588c11b229741f3e461ef189a6b593bbe9a9fd2bcd586140161f7e02ee4b4",
+          "sourceText": "Reduces breathing work",
+          "status": "route-catalog-exact"
+        },
+        "body[0].content": {
+          "sourceHash": "dc4239a379295117b2252fb8eb1a168a2eb8bd9f6327386952632c7a1178fb8a",
+          "sourceText": "Pursed lip breathing is a controlled breathing technique where you inhale slowly through your nose and exhale through tightly pursed lips, as if you're blowing through a straw or cooling hot soup. The exhale is typically twice as long as the inhale (2:4 ratio). [This creates back-pressure in your airways, keeping them open longer and helping trapped air escape from your lungs](https://doi.org/10.1378/chest.125.2.459).",
+          "status": "repo-reviewed-manual"
+        },
+        "body[0].heading": {
+          "sourceHash": "58a182883b07b97fa3a2e7d4f53da4453a584da6a632ed9b6b5c4313e6df506b",
+          "sourceText": "What Is Pursed Lip Breathing?",
+          "status": "route-catalog-exact"
+        },
+        "body[1].content": {
+          "sourceHash": "ad37fbb87b1a0aaac6fba36b36fbbdafdd13a2bdf02fc6d6881d54f4b3755d52",
+          "sourceText": "Originally developed for COPD and emphysema patients, pursed lip breathing helps anyone experiencing shortness of breath. It's particularly effective for: chronic lung conditions (COPD, emphysema, chronic bronchitis), asthma during mild episodes, exercise-induced breathlessness, anxiety-related breathing difficulty, recovery after physical exertion, and seniors wanting to maintain lung function.",
+          "status": "route-catalog-exact"
+        },
+        "body[1].heading": {
+          "sourceHash": "7b79abd556e419e94b3188691baf03c5c630740bd5d6a6b7a1b59c0ca5712304",
+          "sourceText": "Who Benefits Most",
+          "status": "route-catalog-exact"
+        },
+        "body[2].content": {
+          "sourceHash": "55b0cb76d5f229bcbe090cbdca930edfff34fc002a10f893d2af6eb068e3c62b",
+          "sourceText": "Pursed lip breathing for COPD works by keeping small airways open longer, helping trapped air escape and easing shortness of breath. Use it during flares, while walking, or when climbing stairs to reduce air hunger and make each breath feel more efficient.",
+          "status": "route-catalog-exact"
+        },
+        "body[2].heading": {
+          "sourceHash": "b08d1a5e511f2a66e7ce74737570283c092fd2ce52dea8b257a2afcb60957d37",
+          "sourceText": "Pursed Lip Breathing for COPD and Shortness of Breath",
+          "status": "route-catalog-exact"
+        },
+        "body[3].content": {
+          "sourceHash": "ffb210619c9ef7b993377067b20108053a4aa9a3c78223deba1b3204f687b5bd",
+          "sourceText": "Slows your breathing rate immediately. Helps release trapped air from the lungs. Reduces work of breathing. Can lower anxiety during breathless episodes. Improves oxygen exchange. Easy to learn and use anywhere.",
+          "status": "route-catalog-exact"
+        },
+        "body[3].heading": {
+          "sourceHash": "d5b67bc930cd33c0c62c478cb250387d18e05304ba7d0e02fd1acea699044d20",
+          "sourceText": "Benefits",
+          "status": "route-catalog-exact"
+        },
+        "body[4].content": {
+          "sourceHash": "de9f39cd6bbb9310f91455f96e77885dc66ee22e6ac23278692d13d97af78765",
+          "sourceText": "Use during shortness of breath episodes, before and during physical activity, when climbing stairs or walking uphill, during anxiety or panic, after exercise for recovery, or as a daily practice to strengthen breathing habits.",
+          "status": "route-catalog-exact"
+        },
+        "body[4].heading": {
+          "sourceHash": "75d1b504f19b5e43cc42fd48b72b7990b5001f28c69e58f815b007ba0d10f865",
+          "sourceText": "When to Use",
+          "status": "route-catalog-normalized"
+        },
+        "body[5].content": {
+          "sourceHash": "11b87c72ff208dfff0012e73cd944c4df8ef40e30dd996825a0486fd696e3093",
+          "sourceText": "Pursed lip breathing is very safe. However, stop if you feel dizzy or faint. If you have severe respiratory distress, seek medical attention. This technique helps mild-moderate breathlessness but isn't a substitute for emergency care.",
+          "status": "route-catalog-normalized"
+        },
+        "body[5].heading": {
+          "sourceHash": "aeb0cbde72f88eb3e51e1c2412ef230833cf857ae82a7fb9fcf747f6aba0d143",
+          "sourceText": "When to Skip",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "c4731e8e812c81bace86b40d33650f0a902a77447db8f8cc2b5bd641dfe56918",
+          "sourceText": "For immediate relief, 5-10 breaths (about 30-60 seconds) is often enough. For building the habit, practice 4-5 times daily for 5 minutes each. During activities that cause breathlessness (walking, stairs), use it continuously. There's no maximum. It's safe to use as long as needed.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "32e30b1e44d9ce4fb88498d1af13ab90629de9950adf315b40508f653b4dd497",
+          "sourceText": "How long should I do pursed lip breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "bda8fe9659df65fdd573795344372b1c3e278de580420a6dbfe256ec3a073519",
+          "sourceText": "The standard ratio is 2:4. Inhale for 2 seconds through your nose, exhale for 4 seconds through pursed lips. Some people prefer 2:6 or 3:6 for a longer exhale. The key is that the exhale should be at least twice as long as the inhale. Adjust to whatever feels comfortable and sustainable.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "d06ec45d16663ea1d038bad398718b2d30dbf3eb23befe88943296c4ff6a88a8",
+          "sourceText": "What's the correct ratio for pursed lip breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "40798393ee5008dd3bedf299828c8ab719b07174c49d7f90d0285bf994d00902",
+          "sourceText": "Yes. The slow, controlled exhale activates your parasympathetic nervous system (rest-and-digest mode), which counteracts anxiety's fight-or-flight response. The technique is particularly helpful when anxiety causes chest tightness or a feeling of not getting enough air.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "f2413f738ca6262d2ef0d2d623f311673998bdd60cbb74ad6c7c45e67c8b16f8",
+          "sourceText": "Does pursed lip breathing help with anxiety?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "c78460185656033e4941d530426d412805a899e0a3abd02920af78d75d18c69a",
+          "sourceText": "Absolutely. This is one of its best uses. Use it before exercise to prepare your lungs, during exercise when you feel breathless, and after exercise for recovery. Many respiratory therapists teach it specifically for maintaining activity levels with lung conditions.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "a8ce87a98c74867881b7e629530a56c740a6170f1a9a9ecd7443dad11dd5f077",
+          "sourceText": "Can I use pursed lip breathing during exercise?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "1f6c56f2b018937afd90f6f6f2f5c59f26930bcbb6e9c112d6ee605133416922",
+          "sourceText": "Yes, it's one of the most recommended techniques for COPD management. Studies show it improves oxygen saturation, reduces respiratory rate, and decreases dyspnea (breathlessness) in COPD patients. It's often taught as part of pulmonary rehabilitation programs.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].question": {
+          "sourceHash": "41d0fd31591b50a640a318dbeba9e3809983553d2774b4d453f5a97c43cc33f2",
+          "sourceText": "Is pursed lip breathing good for COPD?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "9ade8d40bb59afc9c70cd76108a58ed39f48b9a8e2236174b3f08643fc94646c",
+          "sourceText": "Pursed lip breathing focuses specifically on the exhale mechanics, the pursed lips create back-pressure that keeps airways open. Box breathing and 4-7-8 use breath holds for relaxation. Diaphragmatic breathing focuses on belly vs. chest movement. Pursed lip breathing can be combined with diaphragmatic breathing for maximum benefit.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[5].question": {
+          "sourceHash": "9933cf11cde547fb492513b04137bbb68c973e8ab03456b7b67ddad2ad88422d",
+          "sourceText": "What's the difference between pursed lip breathing and other techniques?",
+          "status": "route-catalog-exact"
+        },
+        "frequency": {
+          "sourceHash": "aa6ba33e5ef77027ea58e5dbd5471565ebb3309e800b578df7042daa28afde99",
+          "sourceText": "As needed for breathlessness; optionally 4-5 times daily for 5 minutes to build the habit",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "4f89449d617e2f5650a25c1a6a58fec847d18571ece2e4f566ae87558b06f7f7",
+          "sourceText": "Pursed lip breathing is a simple technique that slows your breathing and helps you get more air out of your lungs. Inhale slowly through your nose, then exhale through pursed lips (like blowing out a candle) for twice as long. Used by respiratory therapists worldwide for COPD, asthma, and exercise recovery.",
+          "status": "route-catalog-exact"
+        },
+        "hero.subtitle": {
+          "sourceHash": "0e8bc44c1bca97d47367d59baa646eda6cafc9ceb48e14144955f25a937dda60",
+          "sourceText": "Slow your breath and ease shortness of breath in seconds.",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "b44d6b2987526fe1ecca59bd20db1dfa5478a2ed3fd051905793342a73747bd2",
+          "sourceText": "Pursed Lip Breathing Technique",
+          "status": "route-catalog-exact"
+        },
+        "howTo.difficulty": {
+          "sourceHash": "97c10efe01d5c9c88704a12d361d8429b3a6aa2412290a0773109d5d2d603d5e",
+          "sourceText": "easy",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].duration": {
+          "sourceHash": "f78b958d638585f732f9665c58680242b88555a32786767f84d7c7da57020237",
+          "sourceText": "10 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "95885c29cede9be52a48299f2e5caf4aec53b0f2d167ea9696480390cdf89b44",
+          "sourceText": "Sit comfortably or stand. Drop your shoulders and relax your neck. Unclench your jaw.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "6d10065bf4269015d66319e2202ed185bdb00f30507a8beb81f115127a476e34",
+          "sourceText": "Relax",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].duration": {
+          "sourceHash": "f5a3319576b25975fd05af1bc00bee9d8faf8887759588f293dfd8a25d279b32",
+          "sourceText": "2 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "3cd2bbc5c2c88813ca6ef0399d2183b237b2d25f939f8f4ab0cc8f4369d13ac8",
+          "sourceText": "Close your mouth. Breathe in slowly through your nose for 2 counts. Let your belly rise.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "153c275f6d907da2bc3eb2ed7f6f88c2c6db62e22fe6b0e6f045c9b4cba13246",
+          "sourceText": "Inhale through nose",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].duration": {
+          "sourceHash": "618dc58379dda348eba010597accf72a98ab4cd357b42acdda4091901b2ff144",
+          "sourceText": "instant",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "2bb6bd65d5cedc7ce2a5ffe217281ae54d655d2294309ee389779a01adb886e5",
+          "sourceText": "Pucker your lips as if you're about to whistle or blow out a candle.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "35075df65e9d2252a6b921c609cf4a7b9646b5457ce4cc62829667abacb0d811",
+          "sourceText": "Purse your lips",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].duration": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "355aa26180df2906bc374733cfc25a22d19a063106084253b0ca42344bce5fdd",
+          "sourceText": "Breathe out slowly and gently through your pursed lips for 4 counts. Don't force the air out.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "f8d1686e3de4e34304e21710f2576abe25ecf3fa6f1f816210cace7dbc8bbd2a",
+          "sourceText": "Exhale through pursed lips",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].duration": {
+          "sourceHash": "5276e2a4e16993cd865a9b30563a2f55452e9b37704fbf1347ececc0304ec533",
+          "sourceText": "1-5 minutes",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "544b0b26b8999022c5a5924110eee0807cc42f66faf90de0ed8ebaba4a5e4948",
+          "sourceText": "Continue for 5-10 breaths or longer as needed. Use during any activity that causes breathlessness.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "b6b7a0065808a62e7d5781b356c5ddba4e000433c34b5d561d200158a4443eb1",
+          "sourceText": "Repeat",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tools[0]": {
+          "sourceHash": "3ad98f3137b10370c988abfe468ae29ced1f46ce54e1b72daa8d8650127e5b50",
+          "sourceText": "Chair or comfortable position",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.tools[1]": {
+          "sourceHash": "cef477320e4a2bf6601f905e494c9f585e593e1e5250932982fef747299023e0",
+          "sourceText": "Optional timer or visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.totalTime": {
+          "sourceHash": "5276e2a4e16993cd865a9b30563a2f55452e9b37704fbf1347ececc0304ec533",
+          "sourceText": "1-5 minutes",
+          "status": "route-catalog-exact"
+        },
+        "lineage": {
+          "sourceHash": "68b637d6745044bff51f47fa65dc46c4d61eb93694c579a3d076278077b4ea9c",
+          "sourceText": "Developed in clinical pulmonary medicine and respiratory therapy as a tool for patients with chronic obstructive pulmonary disease (COPD). There is no single originator. It became a standard component of pulmonary rehabilitation programs and was endorsed by the American College of Chest Physicians and AACVPR in 1997.",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "c2d143410d0d4f47a2f678ab54dd471d8ecc1813cdbc9ee244932ff03d169ce4",
+          "sourceText": "Free pursed lip breathing timer — ease shortness of breath in seconds. Respiratory therapist-approved 2:4 ratio. Start your guided session now.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "54472f945583b8d3d4a13d5ce14f836a2589cafc27b3d32f3317558107ee1afc",
+          "sourceText": "Respiratory therapist-approved technique for COPD, asthma, and shortness of breath. Free timer with 2:4 ratio breathing.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "6dfb9ea8191daa7807801c527db4a2ac572d1df44c4110d77ea7965f590a3171",
+          "sourceText": "Pursed Lip Breathing: Stop Shortness of Breath Fast",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "8735be1f1e3851006487bf0edc2f0868935b0c7923b7375f108e4ef376b16e9d",
+          "sourceText": "Pursed Lip Breathing: Stop Shortness of Breath Fast (Free Timer) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "6f6b6a7e9b5373c423b36a11c8ab54b678c8d3c7d035777afb23f9e5591bad81",
+          "sourceText": "Stop shortness of breath with the respiratory therapist-approved technique. Free timer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "d629bb1130b16d91e3922895a5f172059e7742f43da4df6e620e000317707b6c",
+          "sourceText": "Pursed Lip Breathing: Free Timer",
+          "status": "route-catalog-head-occurrence"
+        },
+        "practiceTips[0].description": {
+          "sourceHash": "82f8455311cd9aae04c4b92b756bf2fa03d990e6d957e87f2adb0928473d0dbb",
+          "sourceText": "Tension in your upper body makes breathing harder. Drop your shoulders and unclench your jaw before starting.",
+          "status": "route-catalog-exact"
+        },
+        "practiceTips[0].title": {
+          "sourceHash": "a1b16a5a8904489e5ec62438886e149cd1ca42e99c5bcc4a4b27bc39309a4193",
+          "sourceText": "Relax your neck and shoulders",
+          "status": "route-catalog-exact"
+        },
+        "practiceTips[1].description": {
+          "sourceHash": "4819751bce255477c8e1f0cfea103baf3c09ad803664387b82edfa39f007ca8a",
+          "sourceText": "Nasal breathing filters, warms, and humidifies air. Keep your mouth closed during the inhale.",
+          "status": "route-catalog-exact"
+        },
+        "practiceTips[1].title": {
+          "sourceHash": "fccd357aadf2d07eee4db50f308aef9edf5802298b04cbbbd257de13a7d66a51",
+          "sourceText": "Inhale through your nose",
+          "status": "route-catalog-exact"
+        },
+        "practiceTips[2].description": {
+          "sourceHash": "377ca6e629f86332652e173c49cd8edcbc539d47056804f2d6cfab3c4efc641a",
+          "sourceText": "Not too tight, not too loose. Imagine gently blowing to make a candle flame flicker but not go out.",
+          "status": "route-catalog-exact"
+        },
+        "practiceTips[2].title": {
+          "sourceHash": "2e2be33e62b123872874a6f9b9718af22d7f0ecf3a0d13c879714d502ae3a983",
+          "sourceText": "Purse lips like blowing a candle",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "44f525903a37d977ef9239a76450b8d8e621ebe98707c7549cf2ac30abcd6ddd",
+          "sourceText": "Slow breathing can help support healthy blood pressure",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[0].title": {
+          "sourceHash": "bfb5a87caf0658458b4c1cf99b9095a6cd07f1cf1f73eb677da0a148d851fd48",
+          "sourceText": "Blood Pressure Support",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "408822f64ca0995d0c29e59b67e940f3d0c1035ee20887ad8b55db5849ce2426",
+          "sourceText": "Recover faster between intervals with pursed lip recovery breathing",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].title": {
+          "sourceHash": "9f5a267408cb2a9b8384ad058e5f6098ee4a27ae8c82e3f7a0c741ab88ccf122",
+          "sourceText": "Running & Cardio",
+          "status": "route-catalog-exact"
+        },
+        "related[0].reason": {
+          "sourceHash": "75dd2ba162891f538f445d54aea66fd5b7c0fb757bb23cb57b0dd87e80337184",
+          "sourceText": "Master diaphragmatic breathing first. It's the foundation for pursed-lip and all breathing techniques.",
+          "status": "route-catalog-exact"
+        },
+        "related[1].reason": {
+          "sourceHash": "7b48b31c6affef83668843c097d9f199c25d8c29c284719d2de3d2f927e297ff",
+          "sourceText": "For general stress reduction and HRV training without the pursed lip exhale.",
+          "status": "route-catalog-exact"
+        },
+        "related[2].reason": {
+          "sourceHash": "c07d0879587152eef9f7c274ffa059147c871867b8b8184ee5d4443294534618",
+          "sourceText": "For sleep and deep relaxation with an extended exhale phase.",
+          "status": "route-catalog-exact"
+        },
+        "related[3].reason": {
+          "sourceHash": "8a47d4963f66201ed1f9463af1c12acac271855c03a5b1edcbd30fba6c8cd044",
+          "sourceText": "Another respiratory health technique focusing on light nasal breathing.",
+          "status": "route-catalog-exact"
+        },
+        "research.safety[0]": {
+          "sourceHash": "4d39c351dd0d6aa293684bc301d66e77e1bd7d621a0efd9366d7b1421888d7d7",
+          "sourceText": "Stop if you feel dizzy or faint.",
+          "status": "route-catalog-exact"
+        },
+        "research.safety[1]": {
+          "sourceHash": "1c7c6635d301df67493813d13ce4499fb8677dd68960a0de1422a3fa6490e073",
+          "sourceText": "This technique is for mild-moderate breathlessness. Seek emergency care for severe respiratory distress.",
+          "status": "route-catalog-exact"
+        },
+        "research.safety[2]": {
+          "sourceHash": "ef428cd5a3128f83c065b177a93111d59f3da4e9731af99679779d06f58f1e9a",
+          "sourceText": "If you have a diagnosed lung condition, consult your healthcare provider about incorporating this technique.",
+          "status": "route-catalog-exact"
+        },
+        "research.safety[3]": {
+          "sourceHash": "949d56d70403d9684a5ba87dcff41efab6d3921942cd42557c38a12ebc08ac19",
+          "sourceText": "Safe for seniors, athletes, and most people without respiratory conditions.",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[0].summary": {
+          "sourceHash": "69b944bcb7d4867b1e5e8b5923d2fd85f4e03b5c83f600f5ef4041fa06627ce4",
+          "sourceText": "Pursed lip breathing decreased respiratory rate and improved tidal volume and oxygen saturation in COPD patients.",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[0].title": {
+          "sourceHash": "5bae206532837a97bffcdf6f27f6bb31bfcf7951adb469dd7cc41d59e26f5cdb",
+          "sourceText": "Roberts et al., 2009 - Respiratory Care",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[1].summary": {
+          "sourceHash": "7e224660c41c5dcd49d83ff95cfe13be15cff9b04c5eecc09ce4cd03ca001f4d",
+          "sourceText": "Pursed lip breathing as part of dyspnea self-management improved functional performance and reduced breathlessness in COPD.",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[1].title": {
+          "sourceHash": "0da83dd29d75638180b082ac4e90632968611f4253687efe70bccd0a23c58fcb",
+          "sourceText": "Nield et al., 2007 - Heart & Lung",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[2].summary": {
+          "sourceHash": "c80d6fe2e84190e62dc7ca7a13204e749fc02518c6ab27c3a3223f6f1883a977",
+          "sourceText": "Breathing exercises including pursed lip breathing showed modest benefits for dyspnea in COPD patients.",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[2].title": {
+          "sourceHash": "6a7f700812741e7c4194582fe532105bac4803b9978e3f1b387306b75a3bb724",
+          "sourceText": "Garrod & Lasserson, 2007 - Cochrane Review",
+          "status": "route-catalog-exact"
+        },
+        "useCases[0].description": {
+          "sourceHash": "1d6374814a8da8fef77348631c3d201f0ee5e17e505d642d04fd9828f9ccf6e7",
+          "sourceText": "Daily practice to reduce breathlessness and improve lung function.",
+          "status": "route-catalog-exact"
+        },
+        "useCases[0].dose": {
+          "sourceHash": "e3651e24ed1f5a89dd2d0b376c95be403b17a467b7039c93f9e67b0e4ca077e2",
+          "sourceText": "4-5 times daily, 5 minutes each session",
+          "status": "route-catalog-exact"
+        },
+        "useCases[0].name": {
+          "sourceHash": "5a02e795689e7fad4b51234902183ab1748c50935a7e2bacb9223c12f89019b1",
+          "sourceText": "COPD management",
+          "status": "route-catalog-exact"
+        },
+        "useCases[1].description": {
+          "sourceHash": "ff7639d5e3b83236a46b41791b0e7a4dd0d9f3228d275a930a9a53439ba90474",
+          "sourceText": "After cardio or climbing stairs to catch your breath faster.",
+          "status": "route-catalog-exact"
+        },
+        "useCases[1].dose": {
+          "sourceHash": "c84ad817df93ce02fbf28b1be0331008ffe2b8db2cc9a19a27a3e29d8066d0bb",
+          "sourceText": "5-10 breaths or until breathing normalizes",
+          "status": "route-catalog-exact"
+        },
+        "useCases[1].name": {
+          "sourceHash": "5bfd748aa46e4543f0e5d61427efd266eddad5f09d642106fa0b3e34bd8f7d44",
+          "sourceText": "Exercise recovery",
+          "status": "route-catalog-exact"
+        },
+        "useCases[2].description": {
+          "sourceHash": "8210c03ea759e4341b2da8abf7ec7313455188b9ae1a12dc31dd970786b01b56",
+          "sourceText": "When chest tightness or air hunger accompanies anxiety.",
+          "status": "route-catalog-exact"
+        },
+        "useCases[2].dose": {
+          "sourceHash": "6ef9afda592ec6cea77b5c5a9ef16cf434181c0efbdc9b180abd035784248e7a",
+          "sourceText": "1-2 minutes, or until calm",
+          "status": "route-catalog-exact"
+        },
+        "useCases[2].name": {
+          "sourceHash": "a912454bbe3287c33551b7c81086f66b3c857263130ea8ad7182e0d240a3a05d",
+          "sourceText": "Anxiety relief",
+          "status": "route-catalog-normalized"
+        },
+        "video.description": {
+          "sourceHash": "f788c503c91294d755eba86736f46bf9334e8b12f00c058bd51d1ada842de2b6",
+          "sourceText": "The American Lung Association demonstrates proper pursed lip breathing technique for managing shortness of breath from COPD, asthma, and other lung conditions.",
+          "status": "route-catalog-exact"
+        },
+        "video.title": {
+          "sourceHash": "cfaacec6ec24ea3fc0110c5d2f97b8ffb4ec09e07e2e5dfc08a0e2605e1c4232",
+          "sourceText": "Pursed Lip Breathing Technique - American Lung Association",
+          "status": "repo-reviewed-manual"
+        }
+      }
+    },
+    "fr-fr": {
+      "chrome": {
+        "chrome.pattern.benefit": {
+          "sourceHash": "0c0829d3e30125b0e9350631b17c2102c298265645d8252eefdc45831517521a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.breadcrumb-techniques": {
+          "sourceHash": "37b5f87273b794d1da69aca7c5bd665712303c9f0dcb428ad5a88923012e2b1c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.common-questions": {
+          "sourceHash": "dfb8a3d41335746f8b5879f9c3a372ecfa4d1e7b6495d7376f335084fa3c46f2",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.difficulty": {
+          "sourceHash": "be44133ed57f9e44f829282224b15981f033e9b0acc5458070e10104509eb398",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.faq-description": {
+          "sourceHash": "cac341e9fbdbeddc88ae5baaa72d5862ca026803916675fa95c879382425e8a1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.hero-share-text": {
+          "sourceHash": "6f6b81cd18374ff55f238c70745152d5394e0b06308253685c5644186dfaf9f0",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.pattern.how-to-description": {
+          "sourceHash": "19245bd9459b04747ca278ce4bc39e8ef933cff79ac31d197f2d076edd9d6657",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.how-to-practice": {
+          "sourceHash": "2a9206c87d0f17f88f49ffb32c92a2d48d1e1ddbada1d216c854b73f9e666c42",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.keep-it-gentle": {
+          "sourceHash": "4b3aff14432579cc38d0ae5eaebce559b7d08eb90aec6926a1435d7b1f4f8c8b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.og-alt": {
+          "sourceHash": "edea1f7a6e5ad8a8e7b1013a5fe828f2dfbefc382bc55402555a41202058a93a",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.pattern.practice-action": {
+          "sourceHash": "aaefeb15dba1049f9e232401aa1729aa5582328b239ed15f7bdec1bd5cdf3c26",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.practice-notes": {
+          "sourceHash": "966c14f18db88384cc9c484065e9148a7745b46aaf59b4f617c08b606d8b25d1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.practice-notes-description": {
+          "sourceHash": "9c4dfaa2346b55e927f3b967c2e9d7d16d3311c8c56e551a9ef3f8f31b603ca7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.related-4-7-8-title": {
+          "sourceHash": "61bc7df0643742b926fa603a5bb211bd432b1789c6e4bc4258e41a29826b436e",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.related-belly-title": {
+          "sourceHash": "b0a5eb5ee5f57c475a7026cded2abb30698da9e3ccf7c5428a76b80d0d0bb6f1",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.related-buteyko-title": {
+          "sourceHash": "6e5af0031ccdda555bd6fe13f19ecf553320dc5f40ea7693e4ab79506db70e85",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.related-coherent-title": {
+          "sourceHash": "4c6e34da239e136a2b5d96c1bc328ff0f810abfb71f7047ad9027d548b509101",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.related-patterns": {
+          "sourceHash": "4f8c2a5e8574ad2710020a69b41eeafb1d1ad5d87f78241f5a1715c651fa723d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.related-techniques": {
+          "sourceHash": "58ff22fb23c4b03c33d59472ca5863c357076f1b7b4e9b666525af213d69e363",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.related-use-cases": {
+          "sourceHash": "59d9b0677baf7f4ba4d8421daeba7c457a582292fdf2e5cce8aed7b1dc62f54b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.research-description": {
+          "sourceHash": "331557d6854d6ca5305b7f6d53fc18cedf75d0c398cfd2161a53427b8be001d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.research-safety": {
+          "sourceHash": "2bad807b4f017eae3c380287f5340b9257ef6f7e350b7a56c7ec86377941fa54",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.safety-notes": {
+          "sourceHash": "7e092bf4ecfb7a89cf31e69503c4c2e56726061b4234e1a07b38b757f1e3a599",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.share-section-text": {
+          "sourceHash": "af42be52f2a441787bddb9431f9f10f547dc1d5ce5a018064dab5349ef931dcb",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.share-technique": {
+          "sourceHash": "37d5cf900d5f4c126284817e2f262b0536528ba9cfa0846ad0344b73f1e30455",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.step-by-step": {
+          "sourceHash": "83c008a92e4280e61a22a6b6780ff90bcb3f05bed958ce97fe7408050d21ddad",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.study-highlights": {
+          "sourceHash": "f65e736d9839cab1eb3b9b67c04253c0639b2a9fd5944621b56c61fb617c93a4",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.suggested-frequency": {
+          "sourceHash": "5f6427c54ebaf87e89974b491feec81415318835960e501b9fda10c257d57b05",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.supplies": {
+          "sourceHash": "6be75605dc98cd51ce12599df98d8ecc5a24dbfb0acb0336228d3d7eea77f846",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.technique-overview": {
+          "sourceHash": "60bf6e41f9cfb46f95321125485042495264fabfd34ec662bda141d2fbf17455",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.tools": {
+          "sourceHash": "ea93d6a262ecb87a9fa4d09edbd7654c046597936a8e235fc3949eb01775ff99",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.total-time": {
+          "sourceHash": "f448bdef375a1f9e82b495d3228fc5c23a2acf6b986ffcf12e74094c14a4bc4d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.use-cases": {
+          "sourceHash": "ff27a991e8559d6a53024fb888d0b9f062f31154593bf4db2c6431ace2d7d05a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.use-cases-description": {
+          "sourceHash": "200d003a07e004a353760d59dfb301e5a22d04b700c4fa5aaebf1ed07b82e305",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.watch-learn": {
+          "sourceHash": "40e1861cc48912be3027a3830c17d93a321895ada79bd6327329461764245305",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.what-evidence-says": {
+          "sourceHash": "6dff2aa4f71bdb673399f3689cdff90db2ef2b5978b67a86c6aea68a8da24f40",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.where-it-fits": {
+          "sourceHash": "f895e63320934fe16a50ff39692a90c084868ec6ff756d08a971b42f9f0242f4",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "benefits[0].description": {
+          "sourceHash": "67772e031f3f6510e84a1af61f75224330d3f967e7f09f4e1302e441e6a20210",
+          "sourceText": "Slows breathing and releases trapped air within seconds, reducing the sensation of breathlessness.",
+          "status": "route-catalog-exact"
+        },
+        "benefits[0].title": {
+          "sourceHash": "10d154490f992b895116f7562a2248f7c5234a2774d27127d649015ff7bdc57c",
+          "sourceText": "Immediate relief",
+          "status": "route-catalog-exact"
+        },
+        "benefits[1].description": {
+          "sourceHash": "18c752b6d0611f450b1bee168fe33def8c38bfc1f5aea7018ad38c372d94b492",
+          "sourceText": "The back-pressure from pursed lips prevents small airways from collapsing during exhalation.",
+          "status": "route-catalog-exact"
+        },
+        "benefits[1].title": {
+          "sourceHash": "5d614d0c6e2fe4659ed318337917de6f11aff070703c9ce446c23dd61f45c95d",
+          "sourceText": "Keeps airways open",
+          "status": "route-catalog-exact"
+        },
+        "benefits[2].description": {
+          "sourceHash": "d3bdc4661494744544264105e7eb90b5d6348d0057a3a5b18ab73a08850e9f98",
+          "sourceText": "Makes each breath more efficient, reducing the effort needed to breathe comfortably.",
+          "status": "route-catalog-exact"
+        },
+        "benefits[2].title": {
+          "sourceHash": "4b7588c11b229741f3e461ef189a6b593bbe9a9fd2bcd586140161f7e02ee4b4",
+          "sourceText": "Reduces breathing work",
+          "status": "route-catalog-exact"
+        },
+        "body[0].content": {
+          "sourceHash": "dc4239a379295117b2252fb8eb1a168a2eb8bd9f6327386952632c7a1178fb8a",
+          "sourceText": "Pursed lip breathing is a controlled breathing technique where you inhale slowly through your nose and exhale through tightly pursed lips, as if you're blowing through a straw or cooling hot soup. The exhale is typically twice as long as the inhale (2:4 ratio). [This creates back-pressure in your airways, keeping them open longer and helping trapped air escape from your lungs](https://doi.org/10.1378/chest.125.2.459).",
+          "status": "repo-reviewed-manual"
+        },
+        "body[0].heading": {
+          "sourceHash": "58a182883b07b97fa3a2e7d4f53da4453a584da6a632ed9b6b5c4313e6df506b",
+          "sourceText": "What Is Pursed Lip Breathing?",
+          "status": "route-catalog-exact"
+        },
+        "body[1].content": {
+          "sourceHash": "ad37fbb87b1a0aaac6fba36b36fbbdafdd13a2bdf02fc6d6881d54f4b3755d52",
+          "sourceText": "Originally developed for COPD and emphysema patients, pursed lip breathing helps anyone experiencing shortness of breath. It's particularly effective for: chronic lung conditions (COPD, emphysema, chronic bronchitis), asthma during mild episodes, exercise-induced breathlessness, anxiety-related breathing difficulty, recovery after physical exertion, and seniors wanting to maintain lung function.",
+          "status": "route-catalog-exact"
+        },
+        "body[1].heading": {
+          "sourceHash": "7b79abd556e419e94b3188691baf03c5c630740bd5d6a6b7a1b59c0ca5712304",
+          "sourceText": "Who Benefits Most",
+          "status": "route-catalog-exact"
+        },
+        "body[2].content": {
+          "sourceHash": "55b0cb76d5f229bcbe090cbdca930edfff34fc002a10f893d2af6eb068e3c62b",
+          "sourceText": "Pursed lip breathing for COPD works by keeping small airways open longer, helping trapped air escape and easing shortness of breath. Use it during flares, while walking, or when climbing stairs to reduce air hunger and make each breath feel more efficient.",
+          "status": "route-catalog-exact"
+        },
+        "body[2].heading": {
+          "sourceHash": "b08d1a5e511f2a66e7ce74737570283c092fd2ce52dea8b257a2afcb60957d37",
+          "sourceText": "Pursed Lip Breathing for COPD and Shortness of Breath",
+          "status": "route-catalog-exact"
+        },
+        "body[3].content": {
+          "sourceHash": "ffb210619c9ef7b993377067b20108053a4aa9a3c78223deba1b3204f687b5bd",
+          "sourceText": "Slows your breathing rate immediately. Helps release trapped air from the lungs. Reduces work of breathing. Can lower anxiety during breathless episodes. Improves oxygen exchange. Easy to learn and use anywhere.",
+          "status": "route-catalog-exact"
+        },
+        "body[3].heading": {
+          "sourceHash": "d5b67bc930cd33c0c62c478cb250387d18e05304ba7d0e02fd1acea699044d20",
+          "sourceText": "Benefits",
+          "status": "route-catalog-exact"
+        },
+        "body[4].content": {
+          "sourceHash": "de9f39cd6bbb9310f91455f96e77885dc66ee22e6ac23278692d13d97af78765",
+          "sourceText": "Use during shortness of breath episodes, before and during physical activity, when climbing stairs or walking uphill, during anxiety or panic, after exercise for recovery, or as a daily practice to strengthen breathing habits.",
+          "status": "route-catalog-exact"
+        },
+        "body[4].heading": {
+          "sourceHash": "75d1b504f19b5e43cc42fd48b72b7990b5001f28c69e58f815b007ba0d10f865",
+          "sourceText": "When to Use",
+          "status": "route-catalog-normalized"
+        },
+        "body[5].content": {
+          "sourceHash": "11b87c72ff208dfff0012e73cd944c4df8ef40e30dd996825a0486fd696e3093",
+          "sourceText": "Pursed lip breathing is very safe. However, stop if you feel dizzy or faint. If you have severe respiratory distress, seek medical attention. This technique helps mild-moderate breathlessness but isn't a substitute for emergency care.",
+          "status": "route-catalog-normalized"
+        },
+        "body[5].heading": {
+          "sourceHash": "aeb0cbde72f88eb3e51e1c2412ef230833cf857ae82a7fb9fcf747f6aba0d143",
+          "sourceText": "When to Skip",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "c4731e8e812c81bace86b40d33650f0a902a77447db8f8cc2b5bd641dfe56918",
+          "sourceText": "For immediate relief, 5-10 breaths (about 30-60 seconds) is often enough. For building the habit, practice 4-5 times daily for 5 minutes each. During activities that cause breathlessness (walking, stairs), use it continuously. There's no maximum. It's safe to use as long as needed.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "32e30b1e44d9ce4fb88498d1af13ab90629de9950adf315b40508f653b4dd497",
+          "sourceText": "How long should I do pursed lip breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "bda8fe9659df65fdd573795344372b1c3e278de580420a6dbfe256ec3a073519",
+          "sourceText": "The standard ratio is 2:4. Inhale for 2 seconds through your nose, exhale for 4 seconds through pursed lips. Some people prefer 2:6 or 3:6 for a longer exhale. The key is that the exhale should be at least twice as long as the inhale. Adjust to whatever feels comfortable and sustainable.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "d06ec45d16663ea1d038bad398718b2d30dbf3eb23befe88943296c4ff6a88a8",
+          "sourceText": "What's the correct ratio for pursed lip breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "40798393ee5008dd3bedf299828c8ab719b07174c49d7f90d0285bf994d00902",
+          "sourceText": "Yes. The slow, controlled exhale activates your parasympathetic nervous system (rest-and-digest mode), which counteracts anxiety's fight-or-flight response. The technique is particularly helpful when anxiety causes chest tightness or a feeling of not getting enough air.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "f2413f738ca6262d2ef0d2d623f311673998bdd60cbb74ad6c7c45e67c8b16f8",
+          "sourceText": "Does pursed lip breathing help with anxiety?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "c78460185656033e4941d530426d412805a899e0a3abd02920af78d75d18c69a",
+          "sourceText": "Absolutely. This is one of its best uses. Use it before exercise to prepare your lungs, during exercise when you feel breathless, and after exercise for recovery. Many respiratory therapists teach it specifically for maintaining activity levels with lung conditions.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "a8ce87a98c74867881b7e629530a56c740a6170f1a9a9ecd7443dad11dd5f077",
+          "sourceText": "Can I use pursed lip breathing during exercise?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "1f6c56f2b018937afd90f6f6f2f5c59f26930bcbb6e9c112d6ee605133416922",
+          "sourceText": "Yes, it's one of the most recommended techniques for COPD management. Studies show it improves oxygen saturation, reduces respiratory rate, and decreases dyspnea (breathlessness) in COPD patients. It's often taught as part of pulmonary rehabilitation programs.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].question": {
+          "sourceHash": "41d0fd31591b50a640a318dbeba9e3809983553d2774b4d453f5a97c43cc33f2",
+          "sourceText": "Is pursed lip breathing good for COPD?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "9ade8d40bb59afc9c70cd76108a58ed39f48b9a8e2236174b3f08643fc94646c",
+          "sourceText": "Pursed lip breathing focuses specifically on the exhale mechanics, the pursed lips create back-pressure that keeps airways open. Box breathing and 4-7-8 use breath holds for relaxation. Diaphragmatic breathing focuses on belly vs. chest movement. Pursed lip breathing can be combined with diaphragmatic breathing for maximum benefit.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[5].question": {
+          "sourceHash": "9933cf11cde547fb492513b04137bbb68c973e8ab03456b7b67ddad2ad88422d",
+          "sourceText": "What's the difference between pursed lip breathing and other techniques?",
+          "status": "route-catalog-exact"
+        },
+        "frequency": {
+          "sourceHash": "aa6ba33e5ef77027ea58e5dbd5471565ebb3309e800b578df7042daa28afde99",
+          "sourceText": "As needed for breathlessness; optionally 4-5 times daily for 5 minutes to build the habit",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "4f89449d617e2f5650a25c1a6a58fec847d18571ece2e4f566ae87558b06f7f7",
+          "sourceText": "Pursed lip breathing is a simple technique that slows your breathing and helps you get more air out of your lungs. Inhale slowly through your nose, then exhale through pursed lips (like blowing out a candle) for twice as long. Used by respiratory therapists worldwide for COPD, asthma, and exercise recovery.",
+          "status": "route-catalog-exact"
+        },
+        "hero.subtitle": {
+          "sourceHash": "0e8bc44c1bca97d47367d59baa646eda6cafc9ceb48e14144955f25a937dda60",
+          "sourceText": "Slow your breath and ease shortness of breath in seconds.",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "b44d6b2987526fe1ecca59bd20db1dfa5478a2ed3fd051905793342a73747bd2",
+          "sourceText": "Pursed Lip Breathing Technique",
+          "status": "route-catalog-exact"
+        },
+        "howTo.difficulty": {
+          "sourceHash": "97c10efe01d5c9c88704a12d361d8429b3a6aa2412290a0773109d5d2d603d5e",
+          "sourceText": "easy",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].duration": {
+          "sourceHash": "f78b958d638585f732f9665c58680242b88555a32786767f84d7c7da57020237",
+          "sourceText": "10 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "95885c29cede9be52a48299f2e5caf4aec53b0f2d167ea9696480390cdf89b44",
+          "sourceText": "Sit comfortably or stand. Drop your shoulders and relax your neck. Unclench your jaw.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "6d10065bf4269015d66319e2202ed185bdb00f30507a8beb81f115127a476e34",
+          "sourceText": "Relax",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].duration": {
+          "sourceHash": "f5a3319576b25975fd05af1bc00bee9d8faf8887759588f293dfd8a25d279b32",
+          "sourceText": "2 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "3cd2bbc5c2c88813ca6ef0399d2183b237b2d25f939f8f4ab0cc8f4369d13ac8",
+          "sourceText": "Close your mouth. Breathe in slowly through your nose for 2 counts. Let your belly rise.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "153c275f6d907da2bc3eb2ed7f6f88c2c6db62e22fe6b0e6f045c9b4cba13246",
+          "sourceText": "Inhale through nose",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].duration": {
+          "sourceHash": "618dc58379dda348eba010597accf72a98ab4cd357b42acdda4091901b2ff144",
+          "sourceText": "instant",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "2bb6bd65d5cedc7ce2a5ffe217281ae54d655d2294309ee389779a01adb886e5",
+          "sourceText": "Pucker your lips as if you're about to whistle or blow out a candle.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "35075df65e9d2252a6b921c609cf4a7b9646b5457ce4cc62829667abacb0d811",
+          "sourceText": "Purse your lips",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].duration": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "355aa26180df2906bc374733cfc25a22d19a063106084253b0ca42344bce5fdd",
+          "sourceText": "Breathe out slowly and gently through your pursed lips for 4 counts. Don't force the air out.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "f8d1686e3de4e34304e21710f2576abe25ecf3fa6f1f816210cace7dbc8bbd2a",
+          "sourceText": "Exhale through pursed lips",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].duration": {
+          "sourceHash": "5276e2a4e16993cd865a9b30563a2f55452e9b37704fbf1347ececc0304ec533",
+          "sourceText": "1-5 minutes",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "544b0b26b8999022c5a5924110eee0807cc42f66faf90de0ed8ebaba4a5e4948",
+          "sourceText": "Continue for 5-10 breaths or longer as needed. Use during any activity that causes breathlessness.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "b6b7a0065808a62e7d5781b356c5ddba4e000433c34b5d561d200158a4443eb1",
+          "sourceText": "Repeat",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tools[0]": {
+          "sourceHash": "3ad98f3137b10370c988abfe468ae29ced1f46ce54e1b72daa8d8650127e5b50",
+          "sourceText": "Chair or comfortable position",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.tools[1]": {
+          "sourceHash": "cef477320e4a2bf6601f905e494c9f585e593e1e5250932982fef747299023e0",
+          "sourceText": "Optional timer or visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.totalTime": {
+          "sourceHash": "5276e2a4e16993cd865a9b30563a2f55452e9b37704fbf1347ececc0304ec533",
+          "sourceText": "1-5 minutes",
+          "status": "route-catalog-exact"
+        },
+        "lineage": {
+          "sourceHash": "68b637d6745044bff51f47fa65dc46c4d61eb93694c579a3d076278077b4ea9c",
+          "sourceText": "Developed in clinical pulmonary medicine and respiratory therapy as a tool for patients with chronic obstructive pulmonary disease (COPD). There is no single originator. It became a standard component of pulmonary rehabilitation programs and was endorsed by the American College of Chest Physicians and AACVPR in 1997.",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "c2d143410d0d4f47a2f678ab54dd471d8ecc1813cdbc9ee244932ff03d169ce4",
+          "sourceText": "Free pursed lip breathing timer — ease shortness of breath in seconds. Respiratory therapist-approved 2:4 ratio. Start your guided session now.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "54472f945583b8d3d4a13d5ce14f836a2589cafc27b3d32f3317558107ee1afc",
+          "sourceText": "Respiratory therapist-approved technique for COPD, asthma, and shortness of breath. Free timer with 2:4 ratio breathing.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "6dfb9ea8191daa7807801c527db4a2ac572d1df44c4110d77ea7965f590a3171",
+          "sourceText": "Pursed Lip Breathing: Stop Shortness of Breath Fast",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "8735be1f1e3851006487bf0edc2f0868935b0c7923b7375f108e4ef376b16e9d",
+          "sourceText": "Pursed Lip Breathing: Stop Shortness of Breath Fast (Free Timer) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "6f6b6a7e9b5373c423b36a11c8ab54b678c8d3c7d035777afb23f9e5591bad81",
+          "sourceText": "Stop shortness of breath with the respiratory therapist-approved technique. Free timer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "d629bb1130b16d91e3922895a5f172059e7742f43da4df6e620e000317707b6c",
+          "sourceText": "Pursed Lip Breathing: Free Timer",
+          "status": "route-catalog-head-occurrence"
+        },
+        "practiceTips[0].description": {
+          "sourceHash": "82f8455311cd9aae04c4b92b756bf2fa03d990e6d957e87f2adb0928473d0dbb",
+          "sourceText": "Tension in your upper body makes breathing harder. Drop your shoulders and unclench your jaw before starting.",
+          "status": "route-catalog-exact"
+        },
+        "practiceTips[0].title": {
+          "sourceHash": "a1b16a5a8904489e5ec62438886e149cd1ca42e99c5bcc4a4b27bc39309a4193",
+          "sourceText": "Relax your neck and shoulders",
+          "status": "route-catalog-exact"
+        },
+        "practiceTips[1].description": {
+          "sourceHash": "4819751bce255477c8e1f0cfea103baf3c09ad803664387b82edfa39f007ca8a",
+          "sourceText": "Nasal breathing filters, warms, and humidifies air. Keep your mouth closed during the inhale.",
+          "status": "route-catalog-exact"
+        },
+        "practiceTips[1].title": {
+          "sourceHash": "fccd357aadf2d07eee4db50f308aef9edf5802298b04cbbbd257de13a7d66a51",
+          "sourceText": "Inhale through your nose",
+          "status": "route-catalog-exact"
+        },
+        "practiceTips[2].description": {
+          "sourceHash": "377ca6e629f86332652e173c49cd8edcbc539d47056804f2d6cfab3c4efc641a",
+          "sourceText": "Not too tight, not too loose. Imagine gently blowing to make a candle flame flicker but not go out.",
+          "status": "route-catalog-exact"
+        },
+        "practiceTips[2].title": {
+          "sourceHash": "2e2be33e62b123872874a6f9b9718af22d7f0ecf3a0d13c879714d502ae3a983",
+          "sourceText": "Purse lips like blowing a candle",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "44f525903a37d977ef9239a76450b8d8e621ebe98707c7549cf2ac30abcd6ddd",
+          "sourceText": "Slow breathing can help support healthy blood pressure",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[0].title": {
+          "sourceHash": "bfb5a87caf0658458b4c1cf99b9095a6cd07f1cf1f73eb677da0a148d851fd48",
+          "sourceText": "Blood Pressure Support",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "408822f64ca0995d0c29e59b67e940f3d0c1035ee20887ad8b55db5849ce2426",
+          "sourceText": "Recover faster between intervals with pursed lip recovery breathing",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].title": {
+          "sourceHash": "9f5a267408cb2a9b8384ad058e5f6098ee4a27ae8c82e3f7a0c741ab88ccf122",
+          "sourceText": "Running & Cardio",
+          "status": "route-catalog-exact"
+        },
+        "related[0].reason": {
+          "sourceHash": "75dd2ba162891f538f445d54aea66fd5b7c0fb757bb23cb57b0dd87e80337184",
+          "sourceText": "Master diaphragmatic breathing first. It's the foundation for pursed-lip and all breathing techniques.",
+          "status": "route-catalog-exact"
+        },
+        "related[1].reason": {
+          "sourceHash": "7b48b31c6affef83668843c097d9f199c25d8c29c284719d2de3d2f927e297ff",
+          "sourceText": "For general stress reduction and HRV training without the pursed lip exhale.",
+          "status": "route-catalog-exact"
+        },
+        "related[2].reason": {
+          "sourceHash": "c07d0879587152eef9f7c274ffa059147c871867b8b8184ee5d4443294534618",
+          "sourceText": "For sleep and deep relaxation with an extended exhale phase.",
+          "status": "route-catalog-exact"
+        },
+        "related[3].reason": {
+          "sourceHash": "8a47d4963f66201ed1f9463af1c12acac271855c03a5b1edcbd30fba6c8cd044",
+          "sourceText": "Another respiratory health technique focusing on light nasal breathing.",
+          "status": "route-catalog-exact"
+        },
+        "research.safety[0]": {
+          "sourceHash": "4d39c351dd0d6aa293684bc301d66e77e1bd7d621a0efd9366d7b1421888d7d7",
+          "sourceText": "Stop if you feel dizzy or faint.",
+          "status": "route-catalog-exact"
+        },
+        "research.safety[1]": {
+          "sourceHash": "1c7c6635d301df67493813d13ce4499fb8677dd68960a0de1422a3fa6490e073",
+          "sourceText": "This technique is for mild-moderate breathlessness. Seek emergency care for severe respiratory distress.",
+          "status": "route-catalog-exact"
+        },
+        "research.safety[2]": {
+          "sourceHash": "ef428cd5a3128f83c065b177a93111d59f3da4e9731af99679779d06f58f1e9a",
+          "sourceText": "If you have a diagnosed lung condition, consult your healthcare provider about incorporating this technique.",
+          "status": "route-catalog-exact"
+        },
+        "research.safety[3]": {
+          "sourceHash": "949d56d70403d9684a5ba87dcff41efab6d3921942cd42557c38a12ebc08ac19",
+          "sourceText": "Safe for seniors, athletes, and most people without respiratory conditions.",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[0].summary": {
+          "sourceHash": "69b944bcb7d4867b1e5e8b5923d2fd85f4e03b5c83f600f5ef4041fa06627ce4",
+          "sourceText": "Pursed lip breathing decreased respiratory rate and improved tidal volume and oxygen saturation in COPD patients.",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[0].title": {
+          "sourceHash": "5bae206532837a97bffcdf6f27f6bb31bfcf7951adb469dd7cc41d59e26f5cdb",
+          "sourceText": "Roberts et al., 2009 - Respiratory Care",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[1].summary": {
+          "sourceHash": "7e224660c41c5dcd49d83ff95cfe13be15cff9b04c5eecc09ce4cd03ca001f4d",
+          "sourceText": "Pursed lip breathing as part of dyspnea self-management improved functional performance and reduced breathlessness in COPD.",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[1].title": {
+          "sourceHash": "0da83dd29d75638180b082ac4e90632968611f4253687efe70bccd0a23c58fcb",
+          "sourceText": "Nield et al., 2007 - Heart & Lung",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[2].summary": {
+          "sourceHash": "c80d6fe2e84190e62dc7ca7a13204e749fc02518c6ab27c3a3223f6f1883a977",
+          "sourceText": "Breathing exercises including pursed lip breathing showed modest benefits for dyspnea in COPD patients.",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[2].title": {
+          "sourceHash": "6a7f700812741e7c4194582fe532105bac4803b9978e3f1b387306b75a3bb724",
+          "sourceText": "Garrod & Lasserson, 2007 - Cochrane Review",
+          "status": "route-catalog-exact"
+        },
+        "useCases[0].description": {
+          "sourceHash": "1d6374814a8da8fef77348631c3d201f0ee5e17e505d642d04fd9828f9ccf6e7",
+          "sourceText": "Daily practice to reduce breathlessness and improve lung function.",
+          "status": "route-catalog-exact"
+        },
+        "useCases[0].dose": {
+          "sourceHash": "e3651e24ed1f5a89dd2d0b376c95be403b17a467b7039c93f9e67b0e4ca077e2",
+          "sourceText": "4-5 times daily, 5 minutes each session",
+          "status": "route-catalog-exact"
+        },
+        "useCases[0].name": {
+          "sourceHash": "5a02e795689e7fad4b51234902183ab1748c50935a7e2bacb9223c12f89019b1",
+          "sourceText": "COPD management",
+          "status": "route-catalog-exact"
+        },
+        "useCases[1].description": {
+          "sourceHash": "ff7639d5e3b83236a46b41791b0e7a4dd0d9f3228d275a930a9a53439ba90474",
+          "sourceText": "After cardio or climbing stairs to catch your breath faster.",
+          "status": "route-catalog-exact"
+        },
+        "useCases[1].dose": {
+          "sourceHash": "c84ad817df93ce02fbf28b1be0331008ffe2b8db2cc9a19a27a3e29d8066d0bb",
+          "sourceText": "5-10 breaths or until breathing normalizes",
+          "status": "route-catalog-exact"
+        },
+        "useCases[1].name": {
+          "sourceHash": "5bfd748aa46e4543f0e5d61427efd266eddad5f09d642106fa0b3e34bd8f7d44",
+          "sourceText": "Exercise recovery",
+          "status": "route-catalog-exact"
+        },
+        "useCases[2].description": {
+          "sourceHash": "8210c03ea759e4341b2da8abf7ec7313455188b9ae1a12dc31dd970786b01b56",
+          "sourceText": "When chest tightness or air hunger accompanies anxiety.",
+          "status": "route-catalog-exact"
+        },
+        "useCases[2].dose": {
+          "sourceHash": "6ef9afda592ec6cea77b5c5a9ef16cf434181c0efbdc9b180abd035784248e7a",
+          "sourceText": "1-2 minutes, or until calm",
+          "status": "route-catalog-exact"
+        },
+        "useCases[2].name": {
+          "sourceHash": "a912454bbe3287c33551b7c81086f66b3c857263130ea8ad7182e0d240a3a05d",
+          "sourceText": "Anxiety relief",
+          "status": "route-catalog-normalized"
+        },
+        "video.description": {
+          "sourceHash": "f788c503c91294d755eba86736f46bf9334e8b12f00c058bd51d1ada842de2b6",
+          "sourceText": "The American Lung Association demonstrates proper pursed lip breathing technique for managing shortness of breath from COPD, asthma, and other lung conditions.",
+          "status": "route-catalog-exact"
+        },
+        "video.title": {
+          "sourceHash": "cfaacec6ec24ea3fc0110c5d2f97b8ffb4ec09e07e2e5dfc08a0e2605e1c4232",
+          "sourceText": "Pursed Lip Breathing Technique - American Lung Association",
+          "status": "repo-reviewed-manual"
+        }
+      }
+    },
+    "ja-jp": {
+      "chrome": {
+        "chrome.pattern.benefit": {
+          "sourceHash": "0c0829d3e30125b0e9350631b17c2102c298265645d8252eefdc45831517521a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.breadcrumb-techniques": {
+          "sourceHash": "37b5f87273b794d1da69aca7c5bd665712303c9f0dcb428ad5a88923012e2b1c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.common-questions": {
+          "sourceHash": "dfb8a3d41335746f8b5879f9c3a372ecfa4d1e7b6495d7376f335084fa3c46f2",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.difficulty": {
+          "sourceHash": "be44133ed57f9e44f829282224b15981f033e9b0acc5458070e10104509eb398",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.faq-description": {
+          "sourceHash": "cac341e9fbdbeddc88ae5baaa72d5862ca026803916675fa95c879382425e8a1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.hero-share-text": {
+          "sourceHash": "6f6b81cd18374ff55f238c70745152d5394e0b06308253685c5644186dfaf9f0",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.pattern.how-to-description": {
+          "sourceHash": "19245bd9459b04747ca278ce4bc39e8ef933cff79ac31d197f2d076edd9d6657",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.how-to-practice": {
+          "sourceHash": "2a9206c87d0f17f88f49ffb32c92a2d48d1e1ddbada1d216c854b73f9e666c42",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.keep-it-gentle": {
+          "sourceHash": "4b3aff14432579cc38d0ae5eaebce559b7d08eb90aec6926a1435d7b1f4f8c8b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.og-alt": {
+          "sourceHash": "edea1f7a6e5ad8a8e7b1013a5fe828f2dfbefc382bc55402555a41202058a93a",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.pattern.practice-action": {
+          "sourceHash": "aaefeb15dba1049f9e232401aa1729aa5582328b239ed15f7bdec1bd5cdf3c26",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.practice-notes": {
+          "sourceHash": "966c14f18db88384cc9c484065e9148a7745b46aaf59b4f617c08b606d8b25d1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.practice-notes-description": {
+          "sourceHash": "9c4dfaa2346b55e927f3b967c2e9d7d16d3311c8c56e551a9ef3f8f31b603ca7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.related-4-7-8-title": {
+          "sourceHash": "61bc7df0643742b926fa603a5bb211bd432b1789c6e4bc4258e41a29826b436e",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.related-belly-title": {
+          "sourceHash": "b0a5eb5ee5f57c475a7026cded2abb30698da9e3ccf7c5428a76b80d0d0bb6f1",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.related-buteyko-title": {
+          "sourceHash": "6e5af0031ccdda555bd6fe13f19ecf553320dc5f40ea7693e4ab79506db70e85",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.related-coherent-title": {
+          "sourceHash": "4c6e34da239e136a2b5d96c1bc328ff0f810abfb71f7047ad9027d548b509101",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.related-patterns": {
+          "sourceHash": "4f8c2a5e8574ad2710020a69b41eeafb1d1ad5d87f78241f5a1715c651fa723d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.related-techniques": {
+          "sourceHash": "58ff22fb23c4b03c33d59472ca5863c357076f1b7b4e9b666525af213d69e363",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.related-use-cases": {
+          "sourceHash": "59d9b0677baf7f4ba4d8421daeba7c457a582292fdf2e5cce8aed7b1dc62f54b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.research-description": {
+          "sourceHash": "331557d6854d6ca5305b7f6d53fc18cedf75d0c398cfd2161a53427b8be001d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.research-safety": {
+          "sourceHash": "2bad807b4f017eae3c380287f5340b9257ef6f7e350b7a56c7ec86377941fa54",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.safety-notes": {
+          "sourceHash": "7e092bf4ecfb7a89cf31e69503c4c2e56726061b4234e1a07b38b757f1e3a599",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.share-section-text": {
+          "sourceHash": "af42be52f2a441787bddb9431f9f10f547dc1d5ce5a018064dab5349ef931dcb",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.share-technique": {
+          "sourceHash": "37d5cf900d5f4c126284817e2f262b0536528ba9cfa0846ad0344b73f1e30455",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.step-by-step": {
+          "sourceHash": "83c008a92e4280e61a22a6b6780ff90bcb3f05bed958ce97fe7408050d21ddad",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.study-highlights": {
+          "sourceHash": "f65e736d9839cab1eb3b9b67c04253c0639b2a9fd5944621b56c61fb617c93a4",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.suggested-frequency": {
+          "sourceHash": "5f6427c54ebaf87e89974b491feec81415318835960e501b9fda10c257d57b05",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.supplies": {
+          "sourceHash": "6be75605dc98cd51ce12599df98d8ecc5a24dbfb0acb0336228d3d7eea77f846",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.technique-overview": {
+          "sourceHash": "60bf6e41f9cfb46f95321125485042495264fabfd34ec662bda141d2fbf17455",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.tools": {
+          "sourceHash": "ea93d6a262ecb87a9fa4d09edbd7654c046597936a8e235fc3949eb01775ff99",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.total-time": {
+          "sourceHash": "f448bdef375a1f9e82b495d3228fc5c23a2acf6b986ffcf12e74094c14a4bc4d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.use-cases": {
+          "sourceHash": "ff27a991e8559d6a53024fb888d0b9f062f31154593bf4db2c6431ace2d7d05a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.use-cases-description": {
+          "sourceHash": "200d003a07e004a353760d59dfb301e5a22d04b700c4fa5aaebf1ed07b82e305",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.watch-learn": {
+          "sourceHash": "40e1861cc48912be3027a3830c17d93a321895ada79bd6327329461764245305",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.what-evidence-says": {
+          "sourceHash": "6dff2aa4f71bdb673399f3689cdff90db2ef2b5978b67a86c6aea68a8da24f40",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.where-it-fits": {
+          "sourceHash": "f895e63320934fe16a50ff39692a90c084868ec6ff756d08a971b42f9f0242f4",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "benefits[0].description": {
+          "sourceHash": "67772e031f3f6510e84a1af61f75224330d3f967e7f09f4e1302e441e6a20210",
+          "sourceText": "Slows breathing and releases trapped air within seconds, reducing the sensation of breathlessness.",
+          "status": "route-catalog-exact"
+        },
+        "benefits[0].title": {
+          "sourceHash": "10d154490f992b895116f7562a2248f7c5234a2774d27127d649015ff7bdc57c",
+          "sourceText": "Immediate relief",
+          "status": "route-catalog-exact"
+        },
+        "benefits[1].description": {
+          "sourceHash": "18c752b6d0611f450b1bee168fe33def8c38bfc1f5aea7018ad38c372d94b492",
+          "sourceText": "The back-pressure from pursed lips prevents small airways from collapsing during exhalation.",
+          "status": "route-catalog-exact"
+        },
+        "benefits[1].title": {
+          "sourceHash": "5d614d0c6e2fe4659ed318337917de6f11aff070703c9ce446c23dd61f45c95d",
+          "sourceText": "Keeps airways open",
+          "status": "route-catalog-exact"
+        },
+        "benefits[2].description": {
+          "sourceHash": "d3bdc4661494744544264105e7eb90b5d6348d0057a3a5b18ab73a08850e9f98",
+          "sourceText": "Makes each breath more efficient, reducing the effort needed to breathe comfortably.",
+          "status": "route-catalog-exact"
+        },
+        "benefits[2].title": {
+          "sourceHash": "4b7588c11b229741f3e461ef189a6b593bbe9a9fd2bcd586140161f7e02ee4b4",
+          "sourceText": "Reduces breathing work",
+          "status": "route-catalog-exact"
+        },
+        "body[0].content": {
+          "sourceHash": "dc4239a379295117b2252fb8eb1a168a2eb8bd9f6327386952632c7a1178fb8a",
+          "sourceText": "Pursed lip breathing is a controlled breathing technique where you inhale slowly through your nose and exhale through tightly pursed lips, as if you're blowing through a straw or cooling hot soup. The exhale is typically twice as long as the inhale (2:4 ratio). [This creates back-pressure in your airways, keeping them open longer and helping trapped air escape from your lungs](https://doi.org/10.1378/chest.125.2.459).",
+          "status": "repo-reviewed-manual"
+        },
+        "body[0].heading": {
+          "sourceHash": "58a182883b07b97fa3a2e7d4f53da4453a584da6a632ed9b6b5c4313e6df506b",
+          "sourceText": "What Is Pursed Lip Breathing?",
+          "status": "route-catalog-exact"
+        },
+        "body[1].content": {
+          "sourceHash": "ad37fbb87b1a0aaac6fba36b36fbbdafdd13a2bdf02fc6d6881d54f4b3755d52",
+          "sourceText": "Originally developed for COPD and emphysema patients, pursed lip breathing helps anyone experiencing shortness of breath. It's particularly effective for: chronic lung conditions (COPD, emphysema, chronic bronchitis), asthma during mild episodes, exercise-induced breathlessness, anxiety-related breathing difficulty, recovery after physical exertion, and seniors wanting to maintain lung function.",
+          "status": "route-catalog-exact"
+        },
+        "body[1].heading": {
+          "sourceHash": "7b79abd556e419e94b3188691baf03c5c630740bd5d6a6b7a1b59c0ca5712304",
+          "sourceText": "Who Benefits Most",
+          "status": "route-catalog-exact"
+        },
+        "body[2].content": {
+          "sourceHash": "55b0cb76d5f229bcbe090cbdca930edfff34fc002a10f893d2af6eb068e3c62b",
+          "sourceText": "Pursed lip breathing for COPD works by keeping small airways open longer, helping trapped air escape and easing shortness of breath. Use it during flares, while walking, or when climbing stairs to reduce air hunger and make each breath feel more efficient.",
+          "status": "route-catalog-exact"
+        },
+        "body[2].heading": {
+          "sourceHash": "b08d1a5e511f2a66e7ce74737570283c092fd2ce52dea8b257a2afcb60957d37",
+          "sourceText": "Pursed Lip Breathing for COPD and Shortness of Breath",
+          "status": "route-catalog-exact"
+        },
+        "body[3].content": {
+          "sourceHash": "ffb210619c9ef7b993377067b20108053a4aa9a3c78223deba1b3204f687b5bd",
+          "sourceText": "Slows your breathing rate immediately. Helps release trapped air from the lungs. Reduces work of breathing. Can lower anxiety during breathless episodes. Improves oxygen exchange. Easy to learn and use anywhere.",
+          "status": "route-catalog-exact"
+        },
+        "body[3].heading": {
+          "sourceHash": "d5b67bc930cd33c0c62c478cb250387d18e05304ba7d0e02fd1acea699044d20",
+          "sourceText": "Benefits",
+          "status": "route-catalog-exact"
+        },
+        "body[4].content": {
+          "sourceHash": "de9f39cd6bbb9310f91455f96e77885dc66ee22e6ac23278692d13d97af78765",
+          "sourceText": "Use during shortness of breath episodes, before and during physical activity, when climbing stairs or walking uphill, during anxiety or panic, after exercise for recovery, or as a daily practice to strengthen breathing habits.",
+          "status": "route-catalog-exact"
+        },
+        "body[4].heading": {
+          "sourceHash": "75d1b504f19b5e43cc42fd48b72b7990b5001f28c69e58f815b007ba0d10f865",
+          "sourceText": "When to Use",
+          "status": "route-catalog-normalized"
+        },
+        "body[5].content": {
+          "sourceHash": "11b87c72ff208dfff0012e73cd944c4df8ef40e30dd996825a0486fd696e3093",
+          "sourceText": "Pursed lip breathing is very safe. However, stop if you feel dizzy or faint. If you have severe respiratory distress, seek medical attention. This technique helps mild-moderate breathlessness but isn't a substitute for emergency care.",
+          "status": "route-catalog-normalized"
+        },
+        "body[5].heading": {
+          "sourceHash": "aeb0cbde72f88eb3e51e1c2412ef230833cf857ae82a7fb9fcf747f6aba0d143",
+          "sourceText": "When to Skip",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "c4731e8e812c81bace86b40d33650f0a902a77447db8f8cc2b5bd641dfe56918",
+          "sourceText": "For immediate relief, 5-10 breaths (about 30-60 seconds) is often enough. For building the habit, practice 4-5 times daily for 5 minutes each. During activities that cause breathlessness (walking, stairs), use it continuously. There's no maximum. It's safe to use as long as needed.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "32e30b1e44d9ce4fb88498d1af13ab90629de9950adf315b40508f653b4dd497",
+          "sourceText": "How long should I do pursed lip breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "bda8fe9659df65fdd573795344372b1c3e278de580420a6dbfe256ec3a073519",
+          "sourceText": "The standard ratio is 2:4. Inhale for 2 seconds through your nose, exhale for 4 seconds through pursed lips. Some people prefer 2:6 or 3:6 for a longer exhale. The key is that the exhale should be at least twice as long as the inhale. Adjust to whatever feels comfortable and sustainable.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "d06ec45d16663ea1d038bad398718b2d30dbf3eb23befe88943296c4ff6a88a8",
+          "sourceText": "What's the correct ratio for pursed lip breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "40798393ee5008dd3bedf299828c8ab719b07174c49d7f90d0285bf994d00902",
+          "sourceText": "Yes. The slow, controlled exhale activates your parasympathetic nervous system (rest-and-digest mode), which counteracts anxiety's fight-or-flight response. The technique is particularly helpful when anxiety causes chest tightness or a feeling of not getting enough air.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "f2413f738ca6262d2ef0d2d623f311673998bdd60cbb74ad6c7c45e67c8b16f8",
+          "sourceText": "Does pursed lip breathing help with anxiety?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "c78460185656033e4941d530426d412805a899e0a3abd02920af78d75d18c69a",
+          "sourceText": "Absolutely. This is one of its best uses. Use it before exercise to prepare your lungs, during exercise when you feel breathless, and after exercise for recovery. Many respiratory therapists teach it specifically for maintaining activity levels with lung conditions.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "a8ce87a98c74867881b7e629530a56c740a6170f1a9a9ecd7443dad11dd5f077",
+          "sourceText": "Can I use pursed lip breathing during exercise?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "1f6c56f2b018937afd90f6f6f2f5c59f26930bcbb6e9c112d6ee605133416922",
+          "sourceText": "Yes, it's one of the most recommended techniques for COPD management. Studies show it improves oxygen saturation, reduces respiratory rate, and decreases dyspnea (breathlessness) in COPD patients. It's often taught as part of pulmonary rehabilitation programs.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].question": {
+          "sourceHash": "41d0fd31591b50a640a318dbeba9e3809983553d2774b4d453f5a97c43cc33f2",
+          "sourceText": "Is pursed lip breathing good for COPD?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "9ade8d40bb59afc9c70cd76108a58ed39f48b9a8e2236174b3f08643fc94646c",
+          "sourceText": "Pursed lip breathing focuses specifically on the exhale mechanics, the pursed lips create back-pressure that keeps airways open. Box breathing and 4-7-8 use breath holds for relaxation. Diaphragmatic breathing focuses on belly vs. chest movement. Pursed lip breathing can be combined with diaphragmatic breathing for maximum benefit.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[5].question": {
+          "sourceHash": "9933cf11cde547fb492513b04137bbb68c973e8ab03456b7b67ddad2ad88422d",
+          "sourceText": "What's the difference between pursed lip breathing and other techniques?",
+          "status": "route-catalog-exact"
+        },
+        "frequency": {
+          "sourceHash": "aa6ba33e5ef77027ea58e5dbd5471565ebb3309e800b578df7042daa28afde99",
+          "sourceText": "As needed for breathlessness; optionally 4-5 times daily for 5 minutes to build the habit",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "4f89449d617e2f5650a25c1a6a58fec847d18571ece2e4f566ae87558b06f7f7",
+          "sourceText": "Pursed lip breathing is a simple technique that slows your breathing and helps you get more air out of your lungs. Inhale slowly through your nose, then exhale through pursed lips (like blowing out a candle) for twice as long. Used by respiratory therapists worldwide for COPD, asthma, and exercise recovery.",
+          "status": "route-catalog-exact"
+        },
+        "hero.subtitle": {
+          "sourceHash": "0e8bc44c1bca97d47367d59baa646eda6cafc9ceb48e14144955f25a937dda60",
+          "sourceText": "Slow your breath and ease shortness of breath in seconds.",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "b44d6b2987526fe1ecca59bd20db1dfa5478a2ed3fd051905793342a73747bd2",
+          "sourceText": "Pursed Lip Breathing Technique",
+          "status": "route-catalog-exact"
+        },
+        "howTo.difficulty": {
+          "sourceHash": "97c10efe01d5c9c88704a12d361d8429b3a6aa2412290a0773109d5d2d603d5e",
+          "sourceText": "easy",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].duration": {
+          "sourceHash": "f78b958d638585f732f9665c58680242b88555a32786767f84d7c7da57020237",
+          "sourceText": "10 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "95885c29cede9be52a48299f2e5caf4aec53b0f2d167ea9696480390cdf89b44",
+          "sourceText": "Sit comfortably or stand. Drop your shoulders and relax your neck. Unclench your jaw.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "6d10065bf4269015d66319e2202ed185bdb00f30507a8beb81f115127a476e34",
+          "sourceText": "Relax",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].duration": {
+          "sourceHash": "f5a3319576b25975fd05af1bc00bee9d8faf8887759588f293dfd8a25d279b32",
+          "sourceText": "2 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "3cd2bbc5c2c88813ca6ef0399d2183b237b2d25f939f8f4ab0cc8f4369d13ac8",
+          "sourceText": "Close your mouth. Breathe in slowly through your nose for 2 counts. Let your belly rise.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "153c275f6d907da2bc3eb2ed7f6f88c2c6db62e22fe6b0e6f045c9b4cba13246",
+          "sourceText": "Inhale through nose",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].duration": {
+          "sourceHash": "618dc58379dda348eba010597accf72a98ab4cd357b42acdda4091901b2ff144",
+          "sourceText": "instant",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "2bb6bd65d5cedc7ce2a5ffe217281ae54d655d2294309ee389779a01adb886e5",
+          "sourceText": "Pucker your lips as if you're about to whistle or blow out a candle.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "35075df65e9d2252a6b921c609cf4a7b9646b5457ce4cc62829667abacb0d811",
+          "sourceText": "Purse your lips",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].duration": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "355aa26180df2906bc374733cfc25a22d19a063106084253b0ca42344bce5fdd",
+          "sourceText": "Breathe out slowly and gently through your pursed lips for 4 counts. Don't force the air out.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "f8d1686e3de4e34304e21710f2576abe25ecf3fa6f1f816210cace7dbc8bbd2a",
+          "sourceText": "Exhale through pursed lips",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].duration": {
+          "sourceHash": "5276e2a4e16993cd865a9b30563a2f55452e9b37704fbf1347ececc0304ec533",
+          "sourceText": "1-5 minutes",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "544b0b26b8999022c5a5924110eee0807cc42f66faf90de0ed8ebaba4a5e4948",
+          "sourceText": "Continue for 5-10 breaths or longer as needed. Use during any activity that causes breathlessness.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "b6b7a0065808a62e7d5781b356c5ddba4e000433c34b5d561d200158a4443eb1",
+          "sourceText": "Repeat",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tools[0]": {
+          "sourceHash": "3ad98f3137b10370c988abfe468ae29ced1f46ce54e1b72daa8d8650127e5b50",
+          "sourceText": "Chair or comfortable position",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.tools[1]": {
+          "sourceHash": "cef477320e4a2bf6601f905e494c9f585e593e1e5250932982fef747299023e0",
+          "sourceText": "Optional timer or visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.totalTime": {
+          "sourceHash": "5276e2a4e16993cd865a9b30563a2f55452e9b37704fbf1347ececc0304ec533",
+          "sourceText": "1-5 minutes",
+          "status": "route-catalog-exact"
+        },
+        "lineage": {
+          "sourceHash": "68b637d6745044bff51f47fa65dc46c4d61eb93694c579a3d076278077b4ea9c",
+          "sourceText": "Developed in clinical pulmonary medicine and respiratory therapy as a tool for patients with chronic obstructive pulmonary disease (COPD). There is no single originator. It became a standard component of pulmonary rehabilitation programs and was endorsed by the American College of Chest Physicians and AACVPR in 1997.",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "c2d143410d0d4f47a2f678ab54dd471d8ecc1813cdbc9ee244932ff03d169ce4",
+          "sourceText": "Free pursed lip breathing timer — ease shortness of breath in seconds. Respiratory therapist-approved 2:4 ratio. Start your guided session now.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "54472f945583b8d3d4a13d5ce14f836a2589cafc27b3d32f3317558107ee1afc",
+          "sourceText": "Respiratory therapist-approved technique for COPD, asthma, and shortness of breath. Free timer with 2:4 ratio breathing.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "6dfb9ea8191daa7807801c527db4a2ac572d1df44c4110d77ea7965f590a3171",
+          "sourceText": "Pursed Lip Breathing: Stop Shortness of Breath Fast",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "8735be1f1e3851006487bf0edc2f0868935b0c7923b7375f108e4ef376b16e9d",
+          "sourceText": "Pursed Lip Breathing: Stop Shortness of Breath Fast (Free Timer) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "6f6b6a7e9b5373c423b36a11c8ab54b678c8d3c7d035777afb23f9e5591bad81",
+          "sourceText": "Stop shortness of breath with the respiratory therapist-approved technique. Free timer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "d629bb1130b16d91e3922895a5f172059e7742f43da4df6e620e000317707b6c",
+          "sourceText": "Pursed Lip Breathing: Free Timer",
+          "status": "route-catalog-head-occurrence"
+        },
+        "practiceTips[0].description": {
+          "sourceHash": "82f8455311cd9aae04c4b92b756bf2fa03d990e6d957e87f2adb0928473d0dbb",
+          "sourceText": "Tension in your upper body makes breathing harder. Drop your shoulders and unclench your jaw before starting.",
+          "status": "route-catalog-exact"
+        },
+        "practiceTips[0].title": {
+          "sourceHash": "a1b16a5a8904489e5ec62438886e149cd1ca42e99c5bcc4a4b27bc39309a4193",
+          "sourceText": "Relax your neck and shoulders",
+          "status": "route-catalog-exact"
+        },
+        "practiceTips[1].description": {
+          "sourceHash": "4819751bce255477c8e1f0cfea103baf3c09ad803664387b82edfa39f007ca8a",
+          "sourceText": "Nasal breathing filters, warms, and humidifies air. Keep your mouth closed during the inhale.",
+          "status": "route-catalog-exact"
+        },
+        "practiceTips[1].title": {
+          "sourceHash": "fccd357aadf2d07eee4db50f308aef9edf5802298b04cbbbd257de13a7d66a51",
+          "sourceText": "Inhale through your nose",
+          "status": "route-catalog-exact"
+        },
+        "practiceTips[2].description": {
+          "sourceHash": "377ca6e629f86332652e173c49cd8edcbc539d47056804f2d6cfab3c4efc641a",
+          "sourceText": "Not too tight, not too loose. Imagine gently blowing to make a candle flame flicker but not go out.",
+          "status": "route-catalog-exact"
+        },
+        "practiceTips[2].title": {
+          "sourceHash": "2e2be33e62b123872874a6f9b9718af22d7f0ecf3a0d13c879714d502ae3a983",
+          "sourceText": "Purse lips like blowing a candle",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "44f525903a37d977ef9239a76450b8d8e621ebe98707c7549cf2ac30abcd6ddd",
+          "sourceText": "Slow breathing can help support healthy blood pressure",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[0].title": {
+          "sourceHash": "bfb5a87caf0658458b4c1cf99b9095a6cd07f1cf1f73eb677da0a148d851fd48",
+          "sourceText": "Blood Pressure Support",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "408822f64ca0995d0c29e59b67e940f3d0c1035ee20887ad8b55db5849ce2426",
+          "sourceText": "Recover faster between intervals with pursed lip recovery breathing",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].title": {
+          "sourceHash": "9f5a267408cb2a9b8384ad058e5f6098ee4a27ae8c82e3f7a0c741ab88ccf122",
+          "sourceText": "Running & Cardio",
+          "status": "route-catalog-exact"
+        },
+        "related[0].reason": {
+          "sourceHash": "75dd2ba162891f538f445d54aea66fd5b7c0fb757bb23cb57b0dd87e80337184",
+          "sourceText": "Master diaphragmatic breathing first. It's the foundation for pursed-lip and all breathing techniques.",
+          "status": "route-catalog-exact"
+        },
+        "related[1].reason": {
+          "sourceHash": "7b48b31c6affef83668843c097d9f199c25d8c29c284719d2de3d2f927e297ff",
+          "sourceText": "For general stress reduction and HRV training without the pursed lip exhale.",
+          "status": "route-catalog-exact"
+        },
+        "related[2].reason": {
+          "sourceHash": "c07d0879587152eef9f7c274ffa059147c871867b8b8184ee5d4443294534618",
+          "sourceText": "For sleep and deep relaxation with an extended exhale phase.",
+          "status": "route-catalog-exact"
+        },
+        "related[3].reason": {
+          "sourceHash": "8a47d4963f66201ed1f9463af1c12acac271855c03a5b1edcbd30fba6c8cd044",
+          "sourceText": "Another respiratory health technique focusing on light nasal breathing.",
+          "status": "route-catalog-exact"
+        },
+        "research.safety[0]": {
+          "sourceHash": "4d39c351dd0d6aa293684bc301d66e77e1bd7d621a0efd9366d7b1421888d7d7",
+          "sourceText": "Stop if you feel dizzy or faint.",
+          "status": "repo-reviewed-replacement"
+        },
+        "research.safety[1]": {
+          "sourceHash": "1c7c6635d301df67493813d13ce4499fb8677dd68960a0de1422a3fa6490e073",
+          "sourceText": "This technique is for mild-moderate breathlessness. Seek emergency care for severe respiratory distress.",
+          "status": "route-catalog-exact"
+        },
+        "research.safety[2]": {
+          "sourceHash": "ef428cd5a3128f83c065b177a93111d59f3da4e9731af99679779d06f58f1e9a",
+          "sourceText": "If you have a diagnosed lung condition, consult your healthcare provider about incorporating this technique.",
+          "status": "route-catalog-exact"
+        },
+        "research.safety[3]": {
+          "sourceHash": "949d56d70403d9684a5ba87dcff41efab6d3921942cd42557c38a12ebc08ac19",
+          "sourceText": "Safe for seniors, athletes, and most people without respiratory conditions.",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[0].summary": {
+          "sourceHash": "69b944bcb7d4867b1e5e8b5923d2fd85f4e03b5c83f600f5ef4041fa06627ce4",
+          "sourceText": "Pursed lip breathing decreased respiratory rate and improved tidal volume and oxygen saturation in COPD patients.",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[0].title": {
+          "sourceHash": "5bae206532837a97bffcdf6f27f6bb31bfcf7951adb469dd7cc41d59e26f5cdb",
+          "sourceText": "Roberts et al., 2009 - Respiratory Care",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[1].summary": {
+          "sourceHash": "7e224660c41c5dcd49d83ff95cfe13be15cff9b04c5eecc09ce4cd03ca001f4d",
+          "sourceText": "Pursed lip breathing as part of dyspnea self-management improved functional performance and reduced breathlessness in COPD.",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[1].title": {
+          "sourceHash": "0da83dd29d75638180b082ac4e90632968611f4253687efe70bccd0a23c58fcb",
+          "sourceText": "Nield et al., 2007 - Heart & Lung",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[2].summary": {
+          "sourceHash": "c80d6fe2e84190e62dc7ca7a13204e749fc02518c6ab27c3a3223f6f1883a977",
+          "sourceText": "Breathing exercises including pursed lip breathing showed modest benefits for dyspnea in COPD patients.",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[2].title": {
+          "sourceHash": "6a7f700812741e7c4194582fe532105bac4803b9978e3f1b387306b75a3bb724",
+          "sourceText": "Garrod & Lasserson, 2007 - Cochrane Review",
+          "status": "route-catalog-exact"
+        },
+        "useCases[0].description": {
+          "sourceHash": "1d6374814a8da8fef77348631c3d201f0ee5e17e505d642d04fd9828f9ccf6e7",
+          "sourceText": "Daily practice to reduce breathlessness and improve lung function.",
+          "status": "route-catalog-exact"
+        },
+        "useCases[0].dose": {
+          "sourceHash": "e3651e24ed1f5a89dd2d0b376c95be403b17a467b7039c93f9e67b0e4ca077e2",
+          "sourceText": "4-5 times daily, 5 minutes each session",
+          "status": "route-catalog-exact"
+        },
+        "useCases[0].name": {
+          "sourceHash": "5a02e795689e7fad4b51234902183ab1748c50935a7e2bacb9223c12f89019b1",
+          "sourceText": "COPD management",
+          "status": "route-catalog-exact"
+        },
+        "useCases[1].description": {
+          "sourceHash": "ff7639d5e3b83236a46b41791b0e7a4dd0d9f3228d275a930a9a53439ba90474",
+          "sourceText": "After cardio or climbing stairs to catch your breath faster.",
+          "status": "route-catalog-exact"
+        },
+        "useCases[1].dose": {
+          "sourceHash": "c84ad817df93ce02fbf28b1be0331008ffe2b8db2cc9a19a27a3e29d8066d0bb",
+          "sourceText": "5-10 breaths or until breathing normalizes",
+          "status": "route-catalog-exact"
+        },
+        "useCases[1].name": {
+          "sourceHash": "5bfd748aa46e4543f0e5d61427efd266eddad5f09d642106fa0b3e34bd8f7d44",
+          "sourceText": "Exercise recovery",
+          "status": "route-catalog-exact"
+        },
+        "useCases[2].description": {
+          "sourceHash": "8210c03ea759e4341b2da8abf7ec7313455188b9ae1a12dc31dd970786b01b56",
+          "sourceText": "When chest tightness or air hunger accompanies anxiety.",
+          "status": "route-catalog-exact"
+        },
+        "useCases[2].dose": {
+          "sourceHash": "6ef9afda592ec6cea77b5c5a9ef16cf434181c0efbdc9b180abd035784248e7a",
+          "sourceText": "1-2 minutes, or until calm",
+          "status": "route-catalog-exact"
+        },
+        "useCases[2].name": {
+          "sourceHash": "a912454bbe3287c33551b7c81086f66b3c857263130ea8ad7182e0d240a3a05d",
+          "sourceText": "Anxiety relief",
+          "status": "route-catalog-normalized"
+        },
+        "video.description": {
+          "sourceHash": "f788c503c91294d755eba86736f46bf9334e8b12f00c058bd51d1ada842de2b6",
+          "sourceText": "The American Lung Association demonstrates proper pursed lip breathing technique for managing shortness of breath from COPD, asthma, and other lung conditions.",
+          "status": "route-catalog-exact"
+        },
+        "video.title": {
+          "sourceHash": "cfaacec6ec24ea3fc0110c5d2f97b8ffb4ec09e07e2e5dfc08a0e2605e1c4232",
+          "sourceText": "Pursed Lip Breathing Technique - American Lung Association",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "pt-br": {
+      "chrome": {
+        "chrome.pattern.benefit": {
+          "sourceHash": "0c0829d3e30125b0e9350631b17c2102c298265645d8252eefdc45831517521a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.breadcrumb-techniques": {
+          "sourceHash": "37b5f87273b794d1da69aca7c5bd665712303c9f0dcb428ad5a88923012e2b1c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.common-questions": {
+          "sourceHash": "dfb8a3d41335746f8b5879f9c3a372ecfa4d1e7b6495d7376f335084fa3c46f2",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.difficulty": {
+          "sourceHash": "be44133ed57f9e44f829282224b15981f033e9b0acc5458070e10104509eb398",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.faq-description": {
+          "sourceHash": "cac341e9fbdbeddc88ae5baaa72d5862ca026803916675fa95c879382425e8a1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.hero-share-text": {
+          "sourceHash": "6f6b81cd18374ff55f238c70745152d5394e0b06308253685c5644186dfaf9f0",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.pattern.how-to-description": {
+          "sourceHash": "19245bd9459b04747ca278ce4bc39e8ef933cff79ac31d197f2d076edd9d6657",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.how-to-practice": {
+          "sourceHash": "2a9206c87d0f17f88f49ffb32c92a2d48d1e1ddbada1d216c854b73f9e666c42",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.keep-it-gentle": {
+          "sourceHash": "4b3aff14432579cc38d0ae5eaebce559b7d08eb90aec6926a1435d7b1f4f8c8b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.og-alt": {
+          "sourceHash": "edea1f7a6e5ad8a8e7b1013a5fe828f2dfbefc382bc55402555a41202058a93a",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.pattern.practice-action": {
+          "sourceHash": "aaefeb15dba1049f9e232401aa1729aa5582328b239ed15f7bdec1bd5cdf3c26",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.practice-notes": {
+          "sourceHash": "966c14f18db88384cc9c484065e9148a7745b46aaf59b4f617c08b606d8b25d1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.practice-notes-description": {
+          "sourceHash": "9c4dfaa2346b55e927f3b967c2e9d7d16d3311c8c56e551a9ef3f8f31b603ca7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.related-4-7-8-title": {
+          "sourceHash": "61bc7df0643742b926fa603a5bb211bd432b1789c6e4bc4258e41a29826b436e",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.related-belly-title": {
+          "sourceHash": "b0a5eb5ee5f57c475a7026cded2abb30698da9e3ccf7c5428a76b80d0d0bb6f1",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.related-buteyko-title": {
+          "sourceHash": "6e5af0031ccdda555bd6fe13f19ecf553320dc5f40ea7693e4ab79506db70e85",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.related-coherent-title": {
+          "sourceHash": "4c6e34da239e136a2b5d96c1bc328ff0f810abfb71f7047ad9027d548b509101",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.related-patterns": {
+          "sourceHash": "4f8c2a5e8574ad2710020a69b41eeafb1d1ad5d87f78241f5a1715c651fa723d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.related-techniques": {
+          "sourceHash": "58ff22fb23c4b03c33d59472ca5863c357076f1b7b4e9b666525af213d69e363",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.related-use-cases": {
+          "sourceHash": "59d9b0677baf7f4ba4d8421daeba7c457a582292fdf2e5cce8aed7b1dc62f54b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.research-description": {
+          "sourceHash": "331557d6854d6ca5305b7f6d53fc18cedf75d0c398cfd2161a53427b8be001d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.research-safety": {
+          "sourceHash": "2bad807b4f017eae3c380287f5340b9257ef6f7e350b7a56c7ec86377941fa54",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.safety-notes": {
+          "sourceHash": "7e092bf4ecfb7a89cf31e69503c4c2e56726061b4234e1a07b38b757f1e3a599",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.share-section-text": {
+          "sourceHash": "af42be52f2a441787bddb9431f9f10f547dc1d5ce5a018064dab5349ef931dcb",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.share-technique": {
+          "sourceHash": "37d5cf900d5f4c126284817e2f262b0536528ba9cfa0846ad0344b73f1e30455",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.step-by-step": {
+          "sourceHash": "83c008a92e4280e61a22a6b6780ff90bcb3f05bed958ce97fe7408050d21ddad",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.study-highlights": {
+          "sourceHash": "f65e736d9839cab1eb3b9b67c04253c0639b2a9fd5944621b56c61fb617c93a4",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.suggested-frequency": {
+          "sourceHash": "5f6427c54ebaf87e89974b491feec81415318835960e501b9fda10c257d57b05",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.supplies": {
+          "sourceHash": "6be75605dc98cd51ce12599df98d8ecc5a24dbfb0acb0336228d3d7eea77f846",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.technique-overview": {
+          "sourceHash": "60bf6e41f9cfb46f95321125485042495264fabfd34ec662bda141d2fbf17455",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.tools": {
+          "sourceHash": "ea93d6a262ecb87a9fa4d09edbd7654c046597936a8e235fc3949eb01775ff99",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.total-time": {
+          "sourceHash": "f448bdef375a1f9e82b495d3228fc5c23a2acf6b986ffcf12e74094c14a4bc4d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.use-cases": {
+          "sourceHash": "ff27a991e8559d6a53024fb888d0b9f062f31154593bf4db2c6431ace2d7d05a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.use-cases-description": {
+          "sourceHash": "200d003a07e004a353760d59dfb301e5a22d04b700c4fa5aaebf1ed07b82e305",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.watch-learn": {
+          "sourceHash": "40e1861cc48912be3027a3830c17d93a321895ada79bd6327329461764245305",
+          "status": "route-catalog-exact"
+        },
+        "chrome.pattern.what-evidence-says": {
+          "sourceHash": "6dff2aa4f71bdb673399f3689cdff90db2ef2b5978b67a86c6aea68a8da24f40",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.pattern.where-it-fits": {
+          "sourceHash": "f895e63320934fe16a50ff39692a90c084868ec6ff756d08a971b42f9f0242f4",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "benefits[0].description": {
+          "sourceHash": "67772e031f3f6510e84a1af61f75224330d3f967e7f09f4e1302e441e6a20210",
+          "sourceText": "Slows breathing and releases trapped air within seconds, reducing the sensation of breathlessness.",
+          "status": "route-catalog-exact"
+        },
+        "benefits[0].title": {
+          "sourceHash": "10d154490f992b895116f7562a2248f7c5234a2774d27127d649015ff7bdc57c",
+          "sourceText": "Immediate relief",
+          "status": "route-catalog-exact"
+        },
+        "benefits[1].description": {
+          "sourceHash": "18c752b6d0611f450b1bee168fe33def8c38bfc1f5aea7018ad38c372d94b492",
+          "sourceText": "The back-pressure from pursed lips prevents small airways from collapsing during exhalation.",
+          "status": "route-catalog-exact"
+        },
+        "benefits[1].title": {
+          "sourceHash": "5d614d0c6e2fe4659ed318337917de6f11aff070703c9ce446c23dd61f45c95d",
+          "sourceText": "Keeps airways open",
+          "status": "route-catalog-exact"
+        },
+        "benefits[2].description": {
+          "sourceHash": "d3bdc4661494744544264105e7eb90b5d6348d0057a3a5b18ab73a08850e9f98",
+          "sourceText": "Makes each breath more efficient, reducing the effort needed to breathe comfortably.",
+          "status": "route-catalog-exact"
+        },
+        "benefits[2].title": {
+          "sourceHash": "4b7588c11b229741f3e461ef189a6b593bbe9a9fd2bcd586140161f7e02ee4b4",
+          "sourceText": "Reduces breathing work",
+          "status": "route-catalog-exact"
+        },
+        "body[0].content": {
+          "sourceHash": "dc4239a379295117b2252fb8eb1a168a2eb8bd9f6327386952632c7a1178fb8a",
+          "sourceText": "Pursed lip breathing is a controlled breathing technique where you inhale slowly through your nose and exhale through tightly pursed lips, as if you're blowing through a straw or cooling hot soup. The exhale is typically twice as long as the inhale (2:4 ratio). [This creates back-pressure in your airways, keeping them open longer and helping trapped air escape from your lungs](https://doi.org/10.1378/chest.125.2.459).",
+          "status": "repo-reviewed-manual"
+        },
+        "body[0].heading": {
+          "sourceHash": "58a182883b07b97fa3a2e7d4f53da4453a584da6a632ed9b6b5c4313e6df506b",
+          "sourceText": "What Is Pursed Lip Breathing?",
+          "status": "repo-reviewed-replacement"
+        },
+        "body[1].content": {
+          "sourceHash": "ad37fbb87b1a0aaac6fba36b36fbbdafdd13a2bdf02fc6d6881d54f4b3755d52",
+          "sourceText": "Originally developed for COPD and emphysema patients, pursed lip breathing helps anyone experiencing shortness of breath. It's particularly effective for: chronic lung conditions (COPD, emphysema, chronic bronchitis), asthma during mild episodes, exercise-induced breathlessness, anxiety-related breathing difficulty, recovery after physical exertion, and seniors wanting to maintain lung function.",
+          "status": "route-catalog-exact"
+        },
+        "body[1].heading": {
+          "sourceHash": "7b79abd556e419e94b3188691baf03c5c630740bd5d6a6b7a1b59c0ca5712304",
+          "sourceText": "Who Benefits Most",
+          "status": "route-catalog-exact"
+        },
+        "body[2].content": {
+          "sourceHash": "55b0cb76d5f229bcbe090cbdca930edfff34fc002a10f893d2af6eb068e3c62b",
+          "sourceText": "Pursed lip breathing for COPD works by keeping small airways open longer, helping trapped air escape and easing shortness of breath. Use it during flares, while walking, or when climbing stairs to reduce air hunger and make each breath feel more efficient.",
+          "status": "route-catalog-exact"
+        },
+        "body[2].heading": {
+          "sourceHash": "b08d1a5e511f2a66e7ce74737570283c092fd2ce52dea8b257a2afcb60957d37",
+          "sourceText": "Pursed Lip Breathing for COPD and Shortness of Breath",
+          "status": "repo-reviewed-replacement"
+        },
+        "body[3].content": {
+          "sourceHash": "ffb210619c9ef7b993377067b20108053a4aa9a3c78223deba1b3204f687b5bd",
+          "sourceText": "Slows your breathing rate immediately. Helps release trapped air from the lungs. Reduces work of breathing. Can lower anxiety during breathless episodes. Improves oxygen exchange. Easy to learn and use anywhere.",
+          "status": "route-catalog-exact"
+        },
+        "body[3].heading": {
+          "sourceHash": "d5b67bc930cd33c0c62c478cb250387d18e05304ba7d0e02fd1acea699044d20",
+          "sourceText": "Benefits",
+          "status": "route-catalog-exact"
+        },
+        "body[4].content": {
+          "sourceHash": "de9f39cd6bbb9310f91455f96e77885dc66ee22e6ac23278692d13d97af78765",
+          "sourceText": "Use during shortness of breath episodes, before and during physical activity, when climbing stairs or walking uphill, during anxiety or panic, after exercise for recovery, or as a daily practice to strengthen breathing habits.",
+          "status": "route-catalog-exact"
+        },
+        "body[4].heading": {
+          "sourceHash": "75d1b504f19b5e43cc42fd48b72b7990b5001f28c69e58f815b007ba0d10f865",
+          "sourceText": "When to Use",
+          "status": "route-catalog-normalized"
+        },
+        "body[5].content": {
+          "sourceHash": "11b87c72ff208dfff0012e73cd944c4df8ef40e30dd996825a0486fd696e3093",
+          "sourceText": "Pursed lip breathing is very safe. However, stop if you feel dizzy or faint. If you have severe respiratory distress, seek medical attention. This technique helps mild-moderate breathlessness but isn't a substitute for emergency care.",
+          "status": "route-catalog-normalized"
+        },
+        "body[5].heading": {
+          "sourceHash": "aeb0cbde72f88eb3e51e1c2412ef230833cf857ae82a7fb9fcf747f6aba0d143",
+          "sourceText": "When to Skip",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "c4731e8e812c81bace86b40d33650f0a902a77447db8f8cc2b5bd641dfe56918",
+          "sourceText": "For immediate relief, 5-10 breaths (about 30-60 seconds) is often enough. For building the habit, practice 4-5 times daily for 5 minutes each. During activities that cause breathlessness (walking, stairs), use it continuously. There's no maximum. It's safe to use as long as needed.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "32e30b1e44d9ce4fb88498d1af13ab90629de9950adf315b40508f653b4dd497",
+          "sourceText": "How long should I do pursed lip breathing?",
+          "status": "repo-reviewed-replacement"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "bda8fe9659df65fdd573795344372b1c3e278de580420a6dbfe256ec3a073519",
+          "sourceText": "The standard ratio is 2:4. Inhale for 2 seconds through your nose, exhale for 4 seconds through pursed lips. Some people prefer 2:6 or 3:6 for a longer exhale. The key is that the exhale should be at least twice as long as the inhale. Adjust to whatever feels comfortable and sustainable.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "d06ec45d16663ea1d038bad398718b2d30dbf3eb23befe88943296c4ff6a88a8",
+          "sourceText": "What's the correct ratio for pursed lip breathing?",
+          "status": "repo-reviewed-replacement"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "40798393ee5008dd3bedf299828c8ab719b07174c49d7f90d0285bf994d00902",
+          "sourceText": "Yes. The slow, controlled exhale activates your parasympathetic nervous system (rest-and-digest mode), which counteracts anxiety's fight-or-flight response. The technique is particularly helpful when anxiety causes chest tightness or a feeling of not getting enough air.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "f2413f738ca6262d2ef0d2d623f311673998bdd60cbb74ad6c7c45e67c8b16f8",
+          "sourceText": "Does pursed lip breathing help with anxiety?",
+          "status": "repo-reviewed-replacement"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "c78460185656033e4941d530426d412805a899e0a3abd02920af78d75d18c69a",
+          "sourceText": "Absolutely. This is one of its best uses. Use it before exercise to prepare your lungs, during exercise when you feel breathless, and after exercise for recovery. Many respiratory therapists teach it specifically for maintaining activity levels with lung conditions.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "a8ce87a98c74867881b7e629530a56c740a6170f1a9a9ecd7443dad11dd5f077",
+          "sourceText": "Can I use pursed lip breathing during exercise?",
+          "status": "repo-reviewed-replacement"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "1f6c56f2b018937afd90f6f6f2f5c59f26930bcbb6e9c112d6ee605133416922",
+          "sourceText": "Yes, it's one of the most recommended techniques for COPD management. Studies show it improves oxygen saturation, reduces respiratory rate, and decreases dyspnea (breathlessness) in COPD patients. It's often taught as part of pulmonary rehabilitation programs.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].question": {
+          "sourceHash": "41d0fd31591b50a640a318dbeba9e3809983553d2774b4d453f5a97c43cc33f2",
+          "sourceText": "Is pursed lip breathing good for COPD?",
+          "status": "repo-reviewed-replacement"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "9ade8d40bb59afc9c70cd76108a58ed39f48b9a8e2236174b3f08643fc94646c",
+          "sourceText": "Pursed lip breathing focuses specifically on the exhale mechanics, the pursed lips create back-pressure that keeps airways open. Box breathing and 4-7-8 use breath holds for relaxation. Diaphragmatic breathing focuses on belly vs. chest movement. Pursed lip breathing can be combined with diaphragmatic breathing for maximum benefit.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[5].question": {
+          "sourceHash": "9933cf11cde547fb492513b04137bbb68c973e8ab03456b7b67ddad2ad88422d",
+          "sourceText": "What's the difference between pursed lip breathing and other techniques?",
+          "status": "repo-reviewed-replacement"
+        },
+        "frequency": {
+          "sourceHash": "aa6ba33e5ef77027ea58e5dbd5471565ebb3309e800b578df7042daa28afde99",
+          "sourceText": "As needed for breathlessness; optionally 4-5 times daily for 5 minutes to build the habit",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "4f89449d617e2f5650a25c1a6a58fec847d18571ece2e4f566ae87558b06f7f7",
+          "sourceText": "Pursed lip breathing is a simple technique that slows your breathing and helps you get more air out of your lungs. Inhale slowly through your nose, then exhale through pursed lips (like blowing out a candle) for twice as long. Used by respiratory therapists worldwide for COPD, asthma, and exercise recovery.",
+          "status": "repo-reviewed-replacement"
+        },
+        "hero.subtitle": {
+          "sourceHash": "0e8bc44c1bca97d47367d59baa646eda6cafc9ceb48e14144955f25a937dda60",
+          "sourceText": "Slow your breath and ease shortness of breath in seconds.",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "b44d6b2987526fe1ecca59bd20db1dfa5478a2ed3fd051905793342a73747bd2",
+          "sourceText": "Pursed Lip Breathing Technique",
+          "status": "repo-reviewed-replacement"
+        },
+        "howTo.difficulty": {
+          "sourceHash": "97c10efe01d5c9c88704a12d361d8429b3a6aa2412290a0773109d5d2d603d5e",
+          "sourceText": "easy",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].duration": {
+          "sourceHash": "f78b958d638585f732f9665c58680242b88555a32786767f84d7c7da57020237",
+          "sourceText": "10 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "95885c29cede9be52a48299f2e5caf4aec53b0f2d167ea9696480390cdf89b44",
+          "sourceText": "Sit comfortably or stand. Drop your shoulders and relax your neck. Unclench your jaw.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "6d10065bf4269015d66319e2202ed185bdb00f30507a8beb81f115127a476e34",
+          "sourceText": "Relax",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].duration": {
+          "sourceHash": "f5a3319576b25975fd05af1bc00bee9d8faf8887759588f293dfd8a25d279b32",
+          "sourceText": "2 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "3cd2bbc5c2c88813ca6ef0399d2183b237b2d25f939f8f4ab0cc8f4369d13ac8",
+          "sourceText": "Close your mouth. Breathe in slowly through your nose for 2 counts. Let your belly rise.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "153c275f6d907da2bc3eb2ed7f6f88c2c6db62e22fe6b0e6f045c9b4cba13246",
+          "sourceText": "Inhale through nose",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].duration": {
+          "sourceHash": "618dc58379dda348eba010597accf72a98ab4cd357b42acdda4091901b2ff144",
+          "sourceText": "instant",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "2bb6bd65d5cedc7ce2a5ffe217281ae54d655d2294309ee389779a01adb886e5",
+          "sourceText": "Pucker your lips as if you're about to whistle or blow out a candle.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "35075df65e9d2252a6b921c609cf4a7b9646b5457ce4cc62829667abacb0d811",
+          "sourceText": "Purse your lips",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].duration": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "355aa26180df2906bc374733cfc25a22d19a063106084253b0ca42344bce5fdd",
+          "sourceText": "Breathe out slowly and gently through your pursed lips for 4 counts. Don't force the air out.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "f8d1686e3de4e34304e21710f2576abe25ecf3fa6f1f816210cace7dbc8bbd2a",
+          "sourceText": "Exhale through pursed lips",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].duration": {
+          "sourceHash": "5276e2a4e16993cd865a9b30563a2f55452e9b37704fbf1347ececc0304ec533",
+          "sourceText": "1-5 minutes",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "544b0b26b8999022c5a5924110eee0807cc42f66faf90de0ed8ebaba4a5e4948",
+          "sourceText": "Continue for 5-10 breaths or longer as needed. Use during any activity that causes breathlessness.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "b6b7a0065808a62e7d5781b356c5ddba4e000433c34b5d561d200158a4443eb1",
+          "sourceText": "Repeat",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tools[0]": {
+          "sourceHash": "3ad98f3137b10370c988abfe468ae29ced1f46ce54e1b72daa8d8650127e5b50",
+          "sourceText": "Chair or comfortable position",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.tools[1]": {
+          "sourceHash": "cef477320e4a2bf6601f905e494c9f585e593e1e5250932982fef747299023e0",
+          "sourceText": "Optional timer or visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.totalTime": {
+          "sourceHash": "5276e2a4e16993cd865a9b30563a2f55452e9b37704fbf1347ececc0304ec533",
+          "sourceText": "1-5 minutes",
+          "status": "route-catalog-exact"
+        },
+        "lineage": {
+          "sourceHash": "68b637d6745044bff51f47fa65dc46c4d61eb93694c579a3d076278077b4ea9c",
+          "sourceText": "Developed in clinical pulmonary medicine and respiratory therapy as a tool for patients with chronic obstructive pulmonary disease (COPD). There is no single originator. It became a standard component of pulmonary rehabilitation programs and was endorsed by the American College of Chest Physicians and AACVPR in 1997.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.description": {
+          "sourceHash": "c2d143410d0d4f47a2f678ab54dd471d8ecc1813cdbc9ee244932ff03d169ce4",
+          "sourceText": "Free pursed lip breathing timer — ease shortness of breath in seconds. Respiratory therapist-approved 2:4 ratio. Start your guided session now.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "54472f945583b8d3d4a13d5ce14f836a2589cafc27b3d32f3317558107ee1afc",
+          "sourceText": "Respiratory therapist-approved technique for COPD, asthma, and shortness of breath. Free timer with 2:4 ratio breathing.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "6dfb9ea8191daa7807801c527db4a2ac572d1df44c4110d77ea7965f590a3171",
+          "sourceText": "Pursed Lip Breathing: Stop Shortness of Breath Fast",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.title": {
+          "sourceHash": "8735be1f1e3851006487bf0edc2f0868935b0c7923b7375f108e4ef376b16e9d",
+          "sourceText": "Pursed Lip Breathing: Stop Shortness of Breath Fast (Free Timer) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "6f6b6a7e9b5373c423b36a11c8ab54b678c8d3c7d035777afb23f9e5591bad81",
+          "sourceText": "Stop shortness of breath with the respiratory therapist-approved technique. Free timer.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "d629bb1130b16d91e3922895a5f172059e7742f43da4df6e620e000317707b6c",
+          "sourceText": "Pursed Lip Breathing: Free Timer",
+          "status": "repo-reviewed-replacement"
+        },
+        "practiceTips[0].description": {
+          "sourceHash": "82f8455311cd9aae04c4b92b756bf2fa03d990e6d957e87f2adb0928473d0dbb",
+          "sourceText": "Tension in your upper body makes breathing harder. Drop your shoulders and unclench your jaw before starting.",
+          "status": "route-catalog-exact"
+        },
+        "practiceTips[0].title": {
+          "sourceHash": "a1b16a5a8904489e5ec62438886e149cd1ca42e99c5bcc4a4b27bc39309a4193",
+          "sourceText": "Relax your neck and shoulders",
+          "status": "route-catalog-exact"
+        },
+        "practiceTips[1].description": {
+          "sourceHash": "4819751bce255477c8e1f0cfea103baf3c09ad803664387b82edfa39f007ca8a",
+          "sourceText": "Nasal breathing filters, warms, and humidifies air. Keep your mouth closed during the inhale.",
+          "status": "route-catalog-exact"
+        },
+        "practiceTips[1].title": {
+          "sourceHash": "fccd357aadf2d07eee4db50f308aef9edf5802298b04cbbbd257de13a7d66a51",
+          "sourceText": "Inhale through your nose",
+          "status": "route-catalog-exact"
+        },
+        "practiceTips[2].description": {
+          "sourceHash": "377ca6e629f86332652e173c49cd8edcbc539d47056804f2d6cfab3c4efc641a",
+          "sourceText": "Not too tight, not too loose. Imagine gently blowing to make a candle flame flicker but not go out.",
+          "status": "route-catalog-exact"
+        },
+        "practiceTips[2].title": {
+          "sourceHash": "2e2be33e62b123872874a6f9b9718af22d7f0ecf3a0d13c879714d502ae3a983",
+          "sourceText": "Purse lips like blowing a candle",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "44f525903a37d977ef9239a76450b8d8e621ebe98707c7549cf2ac30abcd6ddd",
+          "sourceText": "Slow breathing can help support healthy blood pressure",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[0].title": {
+          "sourceHash": "bfb5a87caf0658458b4c1cf99b9095a6cd07f1cf1f73eb677da0a148d851fd48",
+          "sourceText": "Blood Pressure Support",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "408822f64ca0995d0c29e59b67e940f3d0c1035ee20887ad8b55db5849ce2426",
+          "sourceText": "Recover faster between intervals with pursed lip recovery breathing",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].title": {
+          "sourceHash": "9f5a267408cb2a9b8384ad058e5f6098ee4a27ae8c82e3f7a0c741ab88ccf122",
+          "sourceText": "Running & Cardio",
+          "status": "route-catalog-exact"
+        },
+        "related[0].reason": {
+          "sourceHash": "75dd2ba162891f538f445d54aea66fd5b7c0fb757bb23cb57b0dd87e80337184",
+          "sourceText": "Master diaphragmatic breathing first. It's the foundation for pursed-lip and all breathing techniques.",
+          "status": "repo-reviewed-replacement"
+        },
+        "related[1].reason": {
+          "sourceHash": "7b48b31c6affef83668843c097d9f199c25d8c29c284719d2de3d2f927e297ff",
+          "sourceText": "For general stress reduction and HRV training without the pursed lip exhale.",
+          "status": "route-catalog-exact"
+        },
+        "related[2].reason": {
+          "sourceHash": "c07d0879587152eef9f7c274ffa059147c871867b8b8184ee5d4443294534618",
+          "sourceText": "For sleep and deep relaxation with an extended exhale phase.",
+          "status": "route-catalog-exact"
+        },
+        "related[3].reason": {
+          "sourceHash": "8a47d4963f66201ed1f9463af1c12acac271855c03a5b1edcbd30fba6c8cd044",
+          "sourceText": "Another respiratory health technique focusing on light nasal breathing.",
+          "status": "route-catalog-exact"
+        },
+        "research.safety[0]": {
+          "sourceHash": "4d39c351dd0d6aa293684bc301d66e77e1bd7d621a0efd9366d7b1421888d7d7",
+          "sourceText": "Stop if you feel dizzy or faint.",
+          "status": "route-catalog-exact"
+        },
+        "research.safety[1]": {
+          "sourceHash": "1c7c6635d301df67493813d13ce4499fb8677dd68960a0de1422a3fa6490e073",
+          "sourceText": "This technique is for mild-moderate breathlessness. Seek emergency care for severe respiratory distress.",
+          "status": "route-catalog-exact"
+        },
+        "research.safety[2]": {
+          "sourceHash": "ef428cd5a3128f83c065b177a93111d59f3da4e9731af99679779d06f58f1e9a",
+          "sourceText": "If you have a diagnosed lung condition, consult your healthcare provider about incorporating this technique.",
+          "status": "route-catalog-exact"
+        },
+        "research.safety[3]": {
+          "sourceHash": "949d56d70403d9684a5ba87dcff41efab6d3921942cd42557c38a12ebc08ac19",
+          "sourceText": "Safe for seniors, athletes, and most people without respiratory conditions.",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[0].summary": {
+          "sourceHash": "69b944bcb7d4867b1e5e8b5923d2fd85f4e03b5c83f600f5ef4041fa06627ce4",
+          "sourceText": "Pursed lip breathing decreased respiratory rate and improved tidal volume and oxygen saturation in COPD patients.",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[0].title": {
+          "sourceHash": "5bae206532837a97bffcdf6f27f6bb31bfcf7951adb469dd7cc41d59e26f5cdb",
+          "sourceText": "Roberts et al., 2009 - Respiratory Care",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[1].summary": {
+          "sourceHash": "7e224660c41c5dcd49d83ff95cfe13be15cff9b04c5eecc09ce4cd03ca001f4d",
+          "sourceText": "Pursed lip breathing as part of dyspnea self-management improved functional performance and reduced breathlessness in COPD.",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[1].title": {
+          "sourceHash": "0da83dd29d75638180b082ac4e90632968611f4253687efe70bccd0a23c58fcb",
+          "sourceText": "Nield et al., 2007 - Heart & Lung",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[2].summary": {
+          "sourceHash": "c80d6fe2e84190e62dc7ca7a13204e749fc02518c6ab27c3a3223f6f1883a977",
+          "sourceText": "Breathing exercises including pursed lip breathing showed modest benefits for dyspnea in COPD patients.",
+          "status": "route-catalog-exact"
+        },
+        "research.studies[2].title": {
+          "sourceHash": "6a7f700812741e7c4194582fe532105bac4803b9978e3f1b387306b75a3bb724",
+          "sourceText": "Garrod & Lasserson, 2007 - Cochrane Review",
+          "status": "route-catalog-exact"
+        },
+        "useCases[0].description": {
+          "sourceHash": "1d6374814a8da8fef77348631c3d201f0ee5e17e505d642d04fd9828f9ccf6e7",
+          "sourceText": "Daily practice to reduce breathlessness and improve lung function.",
+          "status": "route-catalog-exact"
+        },
+        "useCases[0].dose": {
+          "sourceHash": "e3651e24ed1f5a89dd2d0b376c95be403b17a467b7039c93f9e67b0e4ca077e2",
+          "sourceText": "4-5 times daily, 5 minutes each session",
+          "status": "route-catalog-exact"
+        },
+        "useCases[0].name": {
+          "sourceHash": "5a02e795689e7fad4b51234902183ab1748c50935a7e2bacb9223c12f89019b1",
+          "sourceText": "COPD management",
+          "status": "route-catalog-exact"
+        },
+        "useCases[1].description": {
+          "sourceHash": "ff7639d5e3b83236a46b41791b0e7a4dd0d9f3228d275a930a9a53439ba90474",
+          "sourceText": "After cardio or climbing stairs to catch your breath faster.",
+          "status": "route-catalog-exact"
+        },
+        "useCases[1].dose": {
+          "sourceHash": "c84ad817df93ce02fbf28b1be0331008ffe2b8db2cc9a19a27a3e29d8066d0bb",
+          "sourceText": "5-10 breaths or until breathing normalizes",
+          "status": "route-catalog-exact"
+        },
+        "useCases[1].name": {
+          "sourceHash": "5bfd748aa46e4543f0e5d61427efd266eddad5f09d642106fa0b3e34bd8f7d44",
+          "sourceText": "Exercise recovery",
+          "status": "route-catalog-exact"
+        },
+        "useCases[2].description": {
+          "sourceHash": "8210c03ea759e4341b2da8abf7ec7313455188b9ae1a12dc31dd970786b01b56",
+          "sourceText": "When chest tightness or air hunger accompanies anxiety.",
+          "status": "route-catalog-exact"
+        },
+        "useCases[2].dose": {
+          "sourceHash": "6ef9afda592ec6cea77b5c5a9ef16cf434181c0efbdc9b180abd035784248e7a",
+          "sourceText": "1-2 minutes, or until calm",
+          "status": "route-catalog-exact"
+        },
+        "useCases[2].name": {
+          "sourceHash": "a912454bbe3287c33551b7c81086f66b3c857263130ea8ad7182e0d240a3a05d",
+          "sourceText": "Anxiety relief",
+          "status": "route-catalog-normalized"
+        },
+        "video.description": {
+          "sourceHash": "f788c503c91294d755eba86736f46bf9334e8b12f00c058bd51d1ada842de2b6",
+          "sourceText": "The American Lung Association demonstrates proper pursed lip breathing technique for managing shortness of breath from COPD, asthma, and other lung conditions.",
+          "status": "route-catalog-exact"
+        },
+        "video.title": {
+          "sourceHash": "cfaacec6ec24ea3fc0110c5d2f97b8ffb4ec09e07e2e5dfc08a0e2605e1c4232",
+          "sourceText": "Pursed Lip Breathing Technique - American Lung Association",
+          "status": "repo-reviewed-replacement"
+        }
+      }
+    }
+  },
+  "schemaVersion": 1,
+  "sourceRoute": "/breathe/pursed-lip"
+}

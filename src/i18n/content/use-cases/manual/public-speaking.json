@@ -1,0 +1,140 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.use-case.box-breathing-name",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095",
+      "scope": "chrome",
+      "sourceText": "Box Breathing",
+      "translations": {
+        "de-de": "Box Breathing",
+        "fr-fr": "Respiration en carré",
+        "ja-jp": "ボックスブリージング",
+        "pt-br": "Respiração em caixa"
+      }
+    },
+    {
+      "messageId": "chrome.use-case.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "f697ea4ac8f51cac028b933ad11611cd4ad6b9f675cb127969780ab63e98a4aa",
+      "scope": "chrome",
+      "sourceText": "Try this guided breathing exercise for public speaking.",
+      "translations": {
+        "de-de": "Probiere diese geführte Atemübung für öffentliches Sprechen.",
+        "es-es": "Prueba este ejercicio de respiración guiada para hablar en público.",
+        "fr-fr": "Essayez cet exercice de respiration guidée pour parler en public.",
+        "ja-jp": "人前で話すための、このガイド付き呼吸エクササイズをお試しください。",
+        "pt-br": "Experimente este exercício de respiração guiado para falar em público."
+      }
+    },
+    {
+      "messageId": "chrome.use-case.learn-box-breathing",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "77e3c5fdb098a727e4a3b38cb4b78ed851d9032b53bb0c59440f74b2bef1ffec",
+      "scope": "chrome",
+      "sourceText": "Learn more about Box Breathing →",
+      "translations": {
+        "de-de": "Mehr über Box Breathing erfahren →",
+        "es-es": "Más información sobre la respiración en caja →",
+        "fr-fr": "En savoir plus sur la respiration en carré →",
+        "ja-jp": "ボックスブリージングについて詳しく見る →",
+        "pt-br": "Saiba mais sobre a respiração em caixa →"
+      }
+    },
+    {
+      "messageId": "chrome.use-case.related-anxiety-title",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+      "scope": "chrome",
+      "sourceText": "How to Stop Anxiety in 60 Seconds with Box Breathing",
+      "translations": {
+        "de-de": "Wie du Angst in 60 Sekunden mit Box Breathing stopst",
+        "fr-fr": "Comment arrêter l'anxiété en 60 secondes avec la respiration en carré",
+        "ja-jp": "ボックスブリージングで60秒以内に不安を止める方法",
+        "pt-br": "Como parar a ansiedade em 60 segundos com a respiração em caixa"
+      }
+    },
+    {
+      "messageId": "relatedGuides[0].teaser",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "a565bc7f14ef1253cbe32787af2f3facb8afd9809f872e3f76ea0531f61fc1e5",
+      "scope": "content",
+      "sourceText": "A step-by-step protocol for using box breathing in the minutes before you present — eliminate stage fright before it starts",
+      "translations": {
+        "de-de": "Ein Schritt-für-Schritt-Protokoll für Box Breathing in den Minuten vor deinem Auftritt — beseitige Lampenfieber, bevor es beginnt",
+        "es-es": "Un protocolo paso a paso para usar la respiración en caja en los minutos antes de presentar: elimina el miedo escénico antes de que empiece",
+        "fr-fr": "Un protocole étape par étape pour utiliser la respiration en carré dans les minutes avant votre présentation — éliminez le trac avant qu'il ne commence",
+        "ja-jp": "発表の直前の数分間にボックスブリージングを使うためのステップバイステップのプロトコル — 舞台恐怖が始まる前にそれを取り除く",
+        "pt-br": "Um protocolo passo a passo para usar a respiração em caixa nos minutos antes de apresentar — elimine o medo de palco antes que comece"
+      }
+    },
+    {
+      "messageId": "relatedGuides[0].title",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "cfcb63ef22f82e7dc7faa8c4030fa7e6aa26fadb4a15e0dd0ad3e77a18cf1bed",
+      "scope": "content",
+      "sourceText": "Box Breathing Before a Presentation",
+      "translations": {
+        "de-de": "Box Breathing vor einer Präsentation",
+        "es-es": "Respiración en caja antes de una presentación",
+        "fr-fr": "Respiration en carré avant une présentation",
+        "ja-jp": "プレゼン前のボックスブリージング"
+      }
+    },
+    {
+      "messageId": "relatedTechnique.callToAction",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "4e5f847ef100bf18ac5817c76969d50982d44a6a645372084f4ef69e6249eaf7",
+      "scope": "content",
+      "sourceText": "Practice with the full-screen Box Breathing visualizer",
+      "translations": {
+        "de-de": "Übe mit dem Vollbild-Box-Breathing-Visualizer",
+        "es-es": "Practica con el visualizador de respiración en caja a pantalla completa",
+        "fr-fr": "Entraînez-vous avec le visualiseur de respiration en carré en plein écran",
+        "ja-jp": "全画面のボックスブリージングビジュアライザーで練習する",
+        "pt-br": "Pratique com o visualizador de respiração em caixa em tela cheia"
+      }
+    },
+    {
+      "messageId": "relatedUseCases[1].teaser",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "deea2e847c060286aeaed28912cb027ecd3519b3f7aecb5ec3a6d75d9a701365",
+      "scope": "content",
+      "sourceText": "Chronic performance anxiety? Box breathing trains your nervous system for sustained calm",
+      "translations": {
+        "de-de": "Chronische Auftrittsangst? Box Breathing trainiert dein Nervensystem für anhaltende Ruhe",
+        "es-es": "¿Ansiedad crónica ante las actuaciones? La respiración en caja entrena tu sistema nervioso para una calma sostenida",
+        "fr-fr": "Anxiété de performance chronique ? La respiration en carré entraîne votre système nerveux à une calme durable",
+        "ja-jp": "慢性的なパフォーマンス不安？ボックスブリージングは持続的な落ち着きのために神経系を鍛える",
+        "pt-br": "Ansiedade crônica de performance? A respiração em caixa treina seu sistema nervoso para uma calma sustentada"
+      }
+    },
+    {
+      "messageId": "relatedUseCases[2].teaser",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "1e8f7402edbc91ca5936e73de4d069043330074286124aa55bca332dc41d4b63",
+      "scope": "content",
+      "sourceText": "The exact breathing protocols Huberman uses before high-stakes situations and deep work.",
+      "translations": {
+        "de-de": "Die exakten Atemprotokolle, die Huberman vor Situationen mit hohem Einsatz und bei Deep Work anwendet.",
+        "es-es": "Los protocolos exactos de respiración que Huberman usa antes de situaciones de alto riesgo y trabajo profundo.",
+        "fr-fr": "Les protocoles de respiration exacts que Huberman utilise avant les situations à enjeux élevés et le travail en profondeur.",
+        "ja-jp": "ハイステークスな状況やディープワークの前にHubermanが使う、正確な呼吸プロトコル。",
+        "pt-br": "Os protocolos exatos de respiração que Huberman usa antes de situações de alto risco e trabalho profundo."
+      }
+    },
+    {
+      "messageId": "science.heading",
+      "reason": "route-catalog-normalized-conflict",
+      "reviewedSourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+      "scope": "content",
+      "sourceText": "Why It Works",
+      "translations": {
+        "fr-fr": "Pourquoi ça marche",
+        "ja-jp": "なぜ効くのか"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/public-speaking"
+}

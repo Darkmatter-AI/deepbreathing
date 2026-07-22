@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import path from 'node:path';
 
 import {
@@ -8,14 +9,29 @@ import {
   DEFAULT_EXCLUDED_ROUTES,
   EDGE_PROXY_LOCALE_PREFIXES,
 } from '../../src/lib/seo/sitemap-routes.mjs';
+import { usesMassTranslateProxy } from '../../src/i18n/serving-mode.ts';
 
 const ROOT = process.cwd();
 const APP_DIR = path.join(ROOT, 'src', 'app');
 const SITE_URL = 'https://deepbreathingexercises.com';
+const WARMER_ROUTE = readFileSync(
+  path.join(ROOT, 'src', 'app', 'api', 'warm-cache', 'route.ts'),
+  'utf8'
+);
 
 // The cache warmer (src/app/api/warm-cache/route.ts) splits sitemap URLs into
 // English vs locale so it can warm English origins first, then proxy-served
 // locale pages. These tests pin the classifier that split relies on.
+
+test('cache warmer runs only while MassTranslate proxy mode is active', () => {
+  assert.equal(usesMassTranslateProxy('proxy'), true);
+  assert.equal(usesMassTranslateProxy('native-preview'), false);
+  assert.equal(usesMassTranslateProxy('native'), false);
+  assert.match(
+    WARMER_ROUTE,
+    /if \(!usesMassTranslateProxy\(servingMode\)\)[\s\S]*mass-translate-proxy-disabled/
+  );
+});
 
 test('isLocaleUrl classifies locale-prefixed URLs as locale', () => {
   assert.ok(isLocaleUrl(`${SITE_URL}/es`, SITE_URL));

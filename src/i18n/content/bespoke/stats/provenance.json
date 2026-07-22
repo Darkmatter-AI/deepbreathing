@@ -1,0 +1,1571 @@
+{
+  "locales": {
+    "de-de": {
+      "cadence.hold": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "32690d8ae9b898c31fac60c5e0a4e512be32ea107603803d95fec27c2e5f1543"
+      },
+      "cadence.in": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "02e1c6e221430fd40d3ce8fab5313ab9908172188f2f3198dd35588e591a0a57"
+      },
+      "cadence.out": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "1279180506b7d6fd0772216fe16467661c79607260a4388e1841cb569be3a516"
+      },
+      "garden.hoverPrompt": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "a19029d716371c67d0518531fb70a79db10dd8eef65242ec1241159e133972e0"
+      },
+      "garden.practiced": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "ed16fa00d54518629206e858890427242ec8c229a600046f60078ad9e437e09d"
+      },
+      "garden.practicedLegend": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "9891aee311b83f08be1089961723b9158e65611381c3d269dfee4f05580413a0"
+      },
+      "garden.rest": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "6362c0ded507a2d0dbaab876594bc9935331487ba482fcbff0eb98901747c76b"
+      },
+      "garden.restLegend": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "05863ec2c378927634badbb44e31103dc47f0a0f4df78ae2fcbcc4d915899f5e"
+      },
+      "garden.subtitle": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "27ed37b317224a28b3ff41940629fb82fca13b927a334e1315d996f4b0246ceb"
+      },
+      "garden.title": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "4b06c11b9100798939e0eed3b5f7f50e8e924adee13af03e4f320c6ac0ee0d26"
+      },
+      "header.backAria": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "fd72ac2646cdb7a9d20aa6e138cbd6babaf97974598fdbe91b2f26d5a7393cc4"
+      },
+      "header.beginSession": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "5cbdb97d4f8fcf182dba0466543335ca5d5180e93d54c252e31cf3dccdf2218c"
+      },
+      "header.eyebrow": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "a9d562d6b494c89cdfe492bd7127b246f1b267c2f213dabfdc7206e0c2d39c45"
+      },
+      "header.title": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "7a23c0d6159cceadd3891c12b2bbcec9a72b37203e65b50286e9d80ebd364693"
+      },
+      "metadata.description": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "See your total breathing minutes, session count, streak, and practice calendar.",
+        "kind": "reviewed-gap-replacement",
+        "occurrenceKey": "head:meta:name:description",
+        "reviewedSourceHash": "3b1b3dfd2c8276b4521d8fd0bbe1da4543132d7276f6847f9c17d2260e7d551b"
+      },
+      "metadata.title": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "Your Practice Stats — Deep Breathing Exercises | Deep Breathing Exercises",
+        "kind": "reviewed-gap-replacement",
+        "occurrenceKey": "head:title",
+        "reviewedSourceHash": "25c90118d0e18124bf06566df484be9fe3c1a50109c3e0a7867bc40f16f69a67"
+      },
+      "pattern.belly.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:14",
+        "sourceHash": "44e7a58aeb0e6e76cc428fe5ac7667f8c689bd2007c50a83bad97d8db41bd7f7"
+      },
+      "pattern.belly.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:14",
+        "sourceHash": "bc1a31b3e31f3433ad0beacf8c7267ab23c9ceb0812eeb940504bb00f04b694b"
+      },
+      "pattern.box.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:6",
+        "sourceHash": "f3f22c571d7daa9016e1cb8d69e027ab181d94d965c1cd0716dcd80aa081b353"
+      },
+      "pattern.box.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:6",
+        "sourceHash": "5a0058dc555e6cf62b19f5ccb523ecf3425c30867dbd4cf63c41ab094a82e462"
+      },
+      "pattern.breathOfFire.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:17",
+        "sourceHash": "513ec0318ace561ba1c9c6465c133c205469d4a7e22586d2a6df24bb5671e002"
+      },
+      "pattern.breathOfFire.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:17",
+        "sourceHash": "7e698e658b7ea87716fb67194e13472092dd5045d11eb2332da331147375aea7"
+      },
+      "pattern.buteyko.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:15",
+        "sourceHash": "2aee2fb30bd5041f7986c2a9b46d6c3bc406ada921400aa8b17050fc541fc082"
+      },
+      "pattern.buteyko.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:15",
+        "sourceHash": "ffcdcb0455ef1332128eac84985ed3c50f817b052510c2dc9d3b246e6ac8c4d3"
+      },
+      "pattern.coherent.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:8",
+        "sourceHash": "69f81d2294ec4104d55f6c3764e35479e240dd4c2519f28ed10bc3a288c0455f"
+      },
+      "pattern.coherent.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:8",
+        "sourceHash": "1897cdabe66cd62756b823942a0c13ffde6dcf07f91f3cf765c5bbbe92141b8c"
+      },
+      "pattern.favorite": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "8eaecec022dae3c7a827a0d978ca9dc588c732146f8610e2f05d99d2fe038f63"
+      },
+      "pattern.nadi.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:12",
+        "sourceHash": "37990d99968de0a16ea545d583b5f21281356c3f00ee9d0a0c20111d8e80b5e1"
+      },
+      "pattern.nadi.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:12",
+        "sourceHash": "ca1422343154b5484798e41defa719e20604e8e6800961dba8decee1f558d333"
+      },
+      "pattern.physiologicalSigh.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:9",
+        "sourceHash": "c48fb413fc31115ab4368c7ae7c414887853285d95faf63fc0c0e6a966c0d983"
+      },
+      "pattern.physiologicalSigh.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:9",
+        "sourceHash": "c222314959d712b618e9df904a7b426bf72da9666e4fa32c773d6e2eef01256e"
+      },
+      "pattern.practiceAgain": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "5154621cce5ce8b2b4d38c4408df4e33e015db0139bae0399aa2907aee8f0512"
+      },
+      "pattern.pursedLip.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:11",
+        "sourceHash": "6b865432e75cfeef9de289b1531c31c0827a3c1dac233e4effbf8540e7b47515"
+      },
+      "pattern.pursedLip.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:11",
+        "sourceHash": "56ab9f0b15e7cb2ceec3b5b985ace9ed42769efbeb03878658026fcc1300f255"
+      },
+      "pattern.relax478.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:7",
+        "sourceHash": "b8b87d0e0a748623c947b0b60ebcc666b79f0e377fe84a007924437f4f744da0"
+      },
+      "pattern.relax478.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:7",
+        "sourceHash": "8c33dd913053776416cc792e835815530ed3dd1959b49b96a0e6552ee41c6ca6"
+      },
+      "pattern.tummo.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:16",
+        "sourceHash": "bbd3143214e7f12e29b41e8106b27d94f3897b252d9dbe2e20cb1f1dff26022b"
+      },
+      "pattern.tummo.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:16",
+        "sourceHash": "9680ee79485f141dfc08ee11d73b3cf69e1cefdb451d628be314487fd2260860"
+      },
+      "pattern.ujjayi.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:13",
+        "sourceHash": "2ffdf42747f6faaec04382dfb14590e6968cb3b4c8d7e62b131e8a41f1a8cdb4"
+      },
+      "pattern.ujjayi.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:13",
+        "sourceHash": "0d753106c28bc88d284d260f1d8964e01e9774ba2f8a82af503cd6af7d7338cb"
+      },
+      "pattern.wimHof.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+        "sourceHash": "0f5af73cbb1b7b65e186ec092db2890740ddfececcd107c304d70f78257c6563"
+      },
+      "pattern.wimHof.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:10",
+        "sourceHash": "559035c4417f7d5d382b4fcbf3ac8c970f14354fcbddba9f7ee5f813f5be2146"
+      },
+      "signedOut.body": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "Sign in to see your total minutes, session count, streak, and a practice calendar. Your data syncs across devices.",
+        "kind": "reviewed-gap-replacement",
+        "occurrenceKey": "sel:p.mb-6.text-sm:ctx:p:pos:0",
+        "reviewedSourceHash": "435d341b19d6558116de5bb0719348d95e876a773b417a7b454471411187ee5e"
+      },
+      "signedOut.button": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "Sign in to view your stats",
+        "kind": "reviewed-gap-replacement",
+        "occurrenceKey": "sel:button.rounded-xl.bg-primary:ctx:cta_button:pos:0",
+        "reviewedSourceHash": "3fdfeb81fe1eb97177668ad7d60817490e1c46f616da93d588c580e8b7d5b8d0"
+      },
+      "signedOut.sheetHeadline": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "9ab584e449a1e656292071acab8d2a0c945f4d766210b8938bfac22b10ff962e"
+      },
+      "signedOut.sheetSubtitle": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "799351e9d3bbf0812c7e360dc9bcc7b7f780356cae61c7a4b76533b3aa816618"
+      },
+      "signedOut.title": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "Track your practice",
+        "kind": "reviewed-gap-replacement",
+        "occurrenceKey": "sel:h1.mb-2.text-xl:ctx:heading:pos:0",
+        "reviewedSourceHash": "ce8936353df8e4ace4f1029cf47d8312c234c382d3bb53b885f6f06ecc7d58d1"
+      },
+      "stats.dayPlural": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "ab51004e9d71a485f160f655fb9e72bcdef8f5ca4178b26938b49471456fd11c"
+      },
+      "stats.daySingular": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "944c27e5b97ab7793e4b6e9ff29384890ece0c7c04d2e2bf81c5f763469cc66b"
+      },
+      "stats.dayStreak": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "4575171b4873ea0c62c3a5187abdeab21f3fc1acecf792c189dc6cdf5e2b5326"
+      },
+      "stats.freshStart": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "47016c34c794cc92a9e5b6f6a4f52f5c794b6e65df304567d3d20a545fd285b8"
+      },
+      "stats.freshStartSub": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "0b1077637d204bdbdd0fd0519669a91ec44835ecacddb7de7054ebe66c344d9c"
+      },
+      "stats.hoursUnit": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123"
+      },
+      "stats.longest": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "b2b6ef4d02065774b228d8e0a41dbc7dd9261a2037ed46b91894db3d2a348585"
+      },
+      "stats.minutesUnit": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a"
+      },
+      "stats.sessions": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "6fa3cbf451b2a1d54159d42c3ea5ab8725b0c8620d831f8c1602676b38ab00e6"
+      },
+      "stats.sessionsActiveSub": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "2ba6e306ceb8c1f44c41b9169d54d61fe96b97d8b6e5a74a8d37602f7045281c"
+      },
+      "stats.sessionsEmptySub": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "95d86d82ad5deb2984a3a26c1600af25ac754de335aa89d0c64f799a58a8c137"
+      },
+      "stats.today": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "2b065c7c9ce466e5ebcad757987d5d660ee4c9ea708bc62c43444b53334738ba"
+      },
+      "stats.totalActiveTime": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "2cde9c5fcd09cea8f31128ce4f010fbb3f9cedeb923c07fb6e7052af362d1e2b"
+      },
+      "week.lastSevenDays": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "0603deca4fcb660f1c06a02621423721bd48084970ecf2b2de0e326dc783d191"
+      },
+      "week.summary": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "bdc75740cfc0170c822c6dc2ed68a941dcc0a57d79aa3fda269c275d641229d7"
+      }
+    },
+    "es-es": {
+      "cadence.hold": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "32690d8ae9b898c31fac60c5e0a4e512be32ea107603803d95fec27c2e5f1543"
+      },
+      "cadence.in": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "02e1c6e221430fd40d3ce8fab5313ab9908172188f2f3198dd35588e591a0a57"
+      },
+      "cadence.out": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "1279180506b7d6fd0772216fe16467661c79607260a4388e1841cb569be3a516"
+      },
+      "garden.hoverPrompt": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "a19029d716371c67d0518531fb70a79db10dd8eef65242ec1241159e133972e0"
+      },
+      "garden.practiced": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "ed16fa00d54518629206e858890427242ec8c229a600046f60078ad9e437e09d"
+      },
+      "garden.practicedLegend": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "9891aee311b83f08be1089961723b9158e65611381c3d269dfee4f05580413a0"
+      },
+      "garden.rest": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "6362c0ded507a2d0dbaab876594bc9935331487ba482fcbff0eb98901747c76b"
+      },
+      "garden.restLegend": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "05863ec2c378927634badbb44e31103dc47f0a0f4df78ae2fcbcc4d915899f5e"
+      },
+      "garden.subtitle": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "27ed37b317224a28b3ff41940629fb82fca13b927a334e1315d996f4b0246ceb"
+      },
+      "garden.title": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "4b06c11b9100798939e0eed3b5f7f50e8e924adee13af03e4f320c6ac0ee0d26"
+      },
+      "header.backAria": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "fd72ac2646cdb7a9d20aa6e138cbd6babaf97974598fdbe91b2f26d5a7393cc4"
+      },
+      "header.beginSession": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "5cbdb97d4f8fcf182dba0466543335ca5d5180e93d54c252e31cf3dccdf2218c"
+      },
+      "header.eyebrow": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "a9d562d6b494c89cdfe492bd7127b246f1b267c2f213dabfdc7206e0c2d39c45"
+      },
+      "header.title": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "7a23c0d6159cceadd3891c12b2bbcec9a72b37203e65b50286e9d80ebd364693"
+      },
+      "metadata.description": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "See your total breathing minutes, session count, streak, and practice calendar.",
+        "kind": "reviewed-gap-replacement",
+        "occurrenceKey": "head:meta:name:description",
+        "reviewedSourceHash": "3b1b3dfd2c8276b4521d8fd0bbe1da4543132d7276f6847f9c17d2260e7d551b"
+      },
+      "metadata.title": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "Your Practice Stats — Deep Breathing Exercises | Deep Breathing Exercises",
+        "kind": "reviewed-gap-replacement",
+        "occurrenceKey": "head:title",
+        "reviewedSourceHash": "25c90118d0e18124bf06566df484be9fe3c1a50109c3e0a7867bc40f16f69a67"
+      },
+      "pattern.belly.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:14",
+        "sourceHash": "44e7a58aeb0e6e76cc428fe5ac7667f8c689bd2007c50a83bad97d8db41bd7f7"
+      },
+      "pattern.belly.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:14",
+        "sourceHash": "bc1a31b3e31f3433ad0beacf8c7267ab23c9ceb0812eeb940504bb00f04b694b"
+      },
+      "pattern.box.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:6",
+        "sourceHash": "f3f22c571d7daa9016e1cb8d69e027ab181d94d965c1cd0716dcd80aa081b353"
+      },
+      "pattern.box.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:6",
+        "sourceHash": "5a0058dc555e6cf62b19f5ccb523ecf3425c30867dbd4cf63c41ab094a82e462"
+      },
+      "pattern.breathOfFire.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:17",
+        "sourceHash": "513ec0318ace561ba1c9c6465c133c205469d4a7e22586d2a6df24bb5671e002"
+      },
+      "pattern.breathOfFire.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:17",
+        "sourceHash": "7e698e658b7ea87716fb67194e13472092dd5045d11eb2332da331147375aea7"
+      },
+      "pattern.buteyko.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:15",
+        "sourceHash": "2aee2fb30bd5041f7986c2a9b46d6c3bc406ada921400aa8b17050fc541fc082"
+      },
+      "pattern.buteyko.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:15",
+        "sourceHash": "ffcdcb0455ef1332128eac84985ed3c50f817b052510c2dc9d3b246e6ac8c4d3"
+      },
+      "pattern.coherent.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:8",
+        "sourceHash": "69f81d2294ec4104d55f6c3764e35479e240dd4c2519f28ed10bc3a288c0455f"
+      },
+      "pattern.coherent.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:8",
+        "sourceHash": "1897cdabe66cd62756b823942a0c13ffde6dcf07f91f3cf765c5bbbe92141b8c"
+      },
+      "pattern.favorite": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "8eaecec022dae3c7a827a0d978ca9dc588c732146f8610e2f05d99d2fe038f63"
+      },
+      "pattern.nadi.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:12",
+        "sourceHash": "37990d99968de0a16ea545d583b5f21281356c3f00ee9d0a0c20111d8e80b5e1"
+      },
+      "pattern.nadi.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:12",
+        "sourceHash": "ca1422343154b5484798e41defa719e20604e8e6800961dba8decee1f558d333"
+      },
+      "pattern.physiologicalSigh.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:9",
+        "sourceHash": "c48fb413fc31115ab4368c7ae7c414887853285d95faf63fc0c0e6a966c0d983"
+      },
+      "pattern.physiologicalSigh.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:9",
+        "sourceHash": "c222314959d712b618e9df904a7b426bf72da9666e4fa32c773d6e2eef01256e"
+      },
+      "pattern.practiceAgain": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "5154621cce5ce8b2b4d38c4408df4e33e015db0139bae0399aa2907aee8f0512"
+      },
+      "pattern.pursedLip.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:11",
+        "sourceHash": "6b865432e75cfeef9de289b1531c31c0827a3c1dac233e4effbf8540e7b47515"
+      },
+      "pattern.pursedLip.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:11",
+        "sourceHash": "56ab9f0b15e7cb2ceec3b5b985ace9ed42769efbeb03878658026fcc1300f255"
+      },
+      "pattern.relax478.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:7",
+        "sourceHash": "b8b87d0e0a748623c947b0b60ebcc666b79f0e377fe84a007924437f4f744da0"
+      },
+      "pattern.relax478.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:7",
+        "sourceHash": "8c33dd913053776416cc792e835815530ed3dd1959b49b96a0e6552ee41c6ca6"
+      },
+      "pattern.tummo.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:16",
+        "sourceHash": "bbd3143214e7f12e29b41e8106b27d94f3897b252d9dbe2e20cb1f1dff26022b"
+      },
+      "pattern.tummo.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:16",
+        "sourceHash": "9680ee79485f141dfc08ee11d73b3cf69e1cefdb451d628be314487fd2260860"
+      },
+      "pattern.ujjayi.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:13",
+        "sourceHash": "2ffdf42747f6faaec04382dfb14590e6968cb3b4c8d7e62b131e8a41f1a8cdb4"
+      },
+      "pattern.ujjayi.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:13",
+        "sourceHash": "0d753106c28bc88d284d260f1d8964e01e9774ba2f8a82af503cd6af7d7338cb"
+      },
+      "pattern.wimHof.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+        "sourceHash": "0f5af73cbb1b7b65e186ec092db2890740ddfececcd107c304d70f78257c6563"
+      },
+      "pattern.wimHof.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:10",
+        "sourceHash": "559035c4417f7d5d382b4fcbf3ac8c970f14354fcbddba9f7ee5f813f5be2146"
+      },
+      "signedOut.body": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "Sign in to see your total minutes, session count, streak, and a practice calendar. Your data syncs across devices.",
+        "kind": "reviewed-gap-replacement",
+        "occurrenceKey": "sel:p.mb-6.text-sm:ctx:p:pos:0",
+        "reviewedSourceHash": "435d341b19d6558116de5bb0719348d95e876a773b417a7b454471411187ee5e"
+      },
+      "signedOut.button": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "Sign in to view your stats",
+        "kind": "reviewed-gap-replacement",
+        "occurrenceKey": "sel:button.rounded-xl.bg-primary:ctx:cta_button:pos:0",
+        "reviewedSourceHash": "3fdfeb81fe1eb97177668ad7d60817490e1c46f616da93d588c580e8b7d5b8d0"
+      },
+      "signedOut.sheetHeadline": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "9ab584e449a1e656292071acab8d2a0c945f4d766210b8938bfac22b10ff962e"
+      },
+      "signedOut.sheetSubtitle": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "799351e9d3bbf0812c7e360dc9bcc7b7f780356cae61c7a4b76533b3aa816618"
+      },
+      "signedOut.title": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "Track your practice",
+        "kind": "reviewed-gap-replacement",
+        "occurrenceKey": "sel:h1.mb-2.text-xl:ctx:heading:pos:0",
+        "reviewedSourceHash": "ce8936353df8e4ace4f1029cf47d8312c234c382d3bb53b885f6f06ecc7d58d1"
+      },
+      "stats.dayPlural": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "ab51004e9d71a485f160f655fb9e72bcdef8f5ca4178b26938b49471456fd11c"
+      },
+      "stats.daySingular": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "944c27e5b97ab7793e4b6e9ff29384890ece0c7c04d2e2bf81c5f763469cc66b"
+      },
+      "stats.dayStreak": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "4575171b4873ea0c62c3a5187abdeab21f3fc1acecf792c189dc6cdf5e2b5326"
+      },
+      "stats.freshStart": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "47016c34c794cc92a9e5b6f6a4f52f5c794b6e65df304567d3d20a545fd285b8"
+      },
+      "stats.freshStartSub": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "0b1077637d204bdbdd0fd0519669a91ec44835ecacddb7de7054ebe66c344d9c"
+      },
+      "stats.hoursUnit": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123"
+      },
+      "stats.longest": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "b2b6ef4d02065774b228d8e0a41dbc7dd9261a2037ed46b91894db3d2a348585"
+      },
+      "stats.minutesUnit": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a"
+      },
+      "stats.sessions": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "6fa3cbf451b2a1d54159d42c3ea5ab8725b0c8620d831f8c1602676b38ab00e6"
+      },
+      "stats.sessionsActiveSub": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "2ba6e306ceb8c1f44c41b9169d54d61fe96b97d8b6e5a74a8d37602f7045281c"
+      },
+      "stats.sessionsEmptySub": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "95d86d82ad5deb2984a3a26c1600af25ac754de335aa89d0c64f799a58a8c137"
+      },
+      "stats.today": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "2b065c7c9ce466e5ebcad757987d5d660ee4c9ea708bc62c43444b53334738ba"
+      },
+      "stats.totalActiveTime": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "2cde9c5fcd09cea8f31128ce4f010fbb3f9cedeb923c07fb6e7052af362d1e2b"
+      },
+      "week.lastSevenDays": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "0603deca4fcb660f1c06a02621423721bd48084970ecf2b2de0e326dc783d191"
+      },
+      "week.summary": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "bdc75740cfc0170c822c6dc2ed68a941dcc0a57d79aa3fda269c275d641229d7"
+      }
+    },
+    "fr-fr": {
+      "cadence.hold": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "32690d8ae9b898c31fac60c5e0a4e512be32ea107603803d95fec27c2e5f1543"
+      },
+      "cadence.in": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "02e1c6e221430fd40d3ce8fab5313ab9908172188f2f3198dd35588e591a0a57"
+      },
+      "cadence.out": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "1279180506b7d6fd0772216fe16467661c79607260a4388e1841cb569be3a516"
+      },
+      "garden.hoverPrompt": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "a19029d716371c67d0518531fb70a79db10dd8eef65242ec1241159e133972e0"
+      },
+      "garden.practiced": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "ed16fa00d54518629206e858890427242ec8c229a600046f60078ad9e437e09d"
+      },
+      "garden.practicedLegend": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "9891aee311b83f08be1089961723b9158e65611381c3d269dfee4f05580413a0"
+      },
+      "garden.rest": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "6362c0ded507a2d0dbaab876594bc9935331487ba482fcbff0eb98901747c76b"
+      },
+      "garden.restLegend": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "05863ec2c378927634badbb44e31103dc47f0a0f4df78ae2fcbcc4d915899f5e"
+      },
+      "garden.subtitle": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "27ed37b317224a28b3ff41940629fb82fca13b927a334e1315d996f4b0246ceb"
+      },
+      "garden.title": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "4b06c11b9100798939e0eed3b5f7f50e8e924adee13af03e4f320c6ac0ee0d26"
+      },
+      "header.backAria": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "fd72ac2646cdb7a9d20aa6e138cbd6babaf97974598fdbe91b2f26d5a7393cc4"
+      },
+      "header.beginSession": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "5cbdb97d4f8fcf182dba0466543335ca5d5180e93d54c252e31cf3dccdf2218c"
+      },
+      "header.eyebrow": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "a9d562d6b494c89cdfe492bd7127b246f1b267c2f213dabfdc7206e0c2d39c45"
+      },
+      "header.title": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "7a23c0d6159cceadd3891c12b2bbcec9a72b37203e65b50286e9d80ebd364693"
+      },
+      "metadata.description": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "See your total breathing minutes, session count, streak, and practice calendar.",
+        "kind": "reviewed-gap-replacement",
+        "occurrenceKey": "head:meta:name:description",
+        "reviewedSourceHash": "3b1b3dfd2c8276b4521d8fd0bbe1da4543132d7276f6847f9c17d2260e7d551b"
+      },
+      "metadata.title": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "Your Practice Stats — Deep Breathing Exercises | Deep Breathing Exercises",
+        "kind": "reviewed-gap-replacement",
+        "occurrenceKey": "head:title",
+        "reviewedSourceHash": "25c90118d0e18124bf06566df484be9fe3c1a50109c3e0a7867bc40f16f69a67"
+      },
+      "pattern.belly.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:14",
+        "sourceHash": "44e7a58aeb0e6e76cc428fe5ac7667f8c689bd2007c50a83bad97d8db41bd7f7"
+      },
+      "pattern.belly.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:14",
+        "sourceHash": "bc1a31b3e31f3433ad0beacf8c7267ab23c9ceb0812eeb940504bb00f04b694b"
+      },
+      "pattern.box.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:6",
+        "sourceHash": "f3f22c571d7daa9016e1cb8d69e027ab181d94d965c1cd0716dcd80aa081b353"
+      },
+      "pattern.box.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:6",
+        "sourceHash": "5a0058dc555e6cf62b19f5ccb523ecf3425c30867dbd4cf63c41ab094a82e462"
+      },
+      "pattern.breathOfFire.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:17",
+        "sourceHash": "513ec0318ace561ba1c9c6465c133c205469d4a7e22586d2a6df24bb5671e002"
+      },
+      "pattern.breathOfFire.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:17",
+        "sourceHash": "7e698e658b7ea87716fb67194e13472092dd5045d11eb2332da331147375aea7"
+      },
+      "pattern.buteyko.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:15",
+        "sourceHash": "2aee2fb30bd5041f7986c2a9b46d6c3bc406ada921400aa8b17050fc541fc082"
+      },
+      "pattern.buteyko.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:15",
+        "sourceHash": "ffcdcb0455ef1332128eac84985ed3c50f817b052510c2dc9d3b246e6ac8c4d3"
+      },
+      "pattern.coherent.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:8",
+        "sourceHash": "69f81d2294ec4104d55f6c3764e35479e240dd4c2519f28ed10bc3a288c0455f"
+      },
+      "pattern.coherent.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:8",
+        "sourceHash": "1897cdabe66cd62756b823942a0c13ffde6dcf07f91f3cf765c5bbbe92141b8c"
+      },
+      "pattern.favorite": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "8eaecec022dae3c7a827a0d978ca9dc588c732146f8610e2f05d99d2fe038f63"
+      },
+      "pattern.nadi.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:12",
+        "sourceHash": "37990d99968de0a16ea545d583b5f21281356c3f00ee9d0a0c20111d8e80b5e1"
+      },
+      "pattern.nadi.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:12",
+        "sourceHash": "ca1422343154b5484798e41defa719e20604e8e6800961dba8decee1f558d333"
+      },
+      "pattern.physiologicalSigh.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:9",
+        "sourceHash": "c48fb413fc31115ab4368c7ae7c414887853285d95faf63fc0c0e6a966c0d983"
+      },
+      "pattern.physiologicalSigh.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:9",
+        "sourceHash": "c222314959d712b618e9df904a7b426bf72da9666e4fa32c773d6e2eef01256e"
+      },
+      "pattern.practiceAgain": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "5154621cce5ce8b2b4d38c4408df4e33e015db0139bae0399aa2907aee8f0512"
+      },
+      "pattern.pursedLip.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:11",
+        "sourceHash": "6b865432e75cfeef9de289b1531c31c0827a3c1dac233e4effbf8540e7b47515"
+      },
+      "pattern.pursedLip.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:11",
+        "sourceHash": "56ab9f0b15e7cb2ceec3b5b985ace9ed42769efbeb03878658026fcc1300f255"
+      },
+      "pattern.relax478.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:7",
+        "sourceHash": "b8b87d0e0a748623c947b0b60ebcc666b79f0e377fe84a007924437f4f744da0"
+      },
+      "pattern.relax478.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:7",
+        "sourceHash": "8c33dd913053776416cc792e835815530ed3dd1959b49b96a0e6552ee41c6ca6"
+      },
+      "pattern.tummo.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:16",
+        "sourceHash": "bbd3143214e7f12e29b41e8106b27d94f3897b252d9dbe2e20cb1f1dff26022b"
+      },
+      "pattern.tummo.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:16",
+        "sourceHash": "9680ee79485f141dfc08ee11d73b3cf69e1cefdb451d628be314487fd2260860"
+      },
+      "pattern.ujjayi.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:13",
+        "sourceHash": "2ffdf42747f6faaec04382dfb14590e6968cb3b4c8d7e62b131e8a41f1a8cdb4"
+      },
+      "pattern.ujjayi.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:13",
+        "sourceHash": "0d753106c28bc88d284d260f1d8964e01e9774ba2f8a82af503cd6af7d7338cb"
+      },
+      "pattern.wimHof.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+        "sourceHash": "0f5af73cbb1b7b65e186ec092db2890740ddfececcd107c304d70f78257c6563"
+      },
+      "pattern.wimHof.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:10",
+        "sourceHash": "559035c4417f7d5d382b4fcbf3ac8c970f14354fcbddba9f7ee5f813f5be2146"
+      },
+      "signedOut.body": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "Sign in to see your total minutes, session count, streak, and a practice calendar. Your data syncs across devices.",
+        "kind": "reviewed-gap-replacement",
+        "occurrenceKey": "sel:p.mb-6.text-sm:ctx:p:pos:0",
+        "reviewedSourceHash": "435d341b19d6558116de5bb0719348d95e876a773b417a7b454471411187ee5e"
+      },
+      "signedOut.button": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "Sign in to view your stats",
+        "kind": "reviewed-gap-replacement",
+        "occurrenceKey": "sel:button.rounded-xl.bg-primary:ctx:cta_button:pos:0",
+        "reviewedSourceHash": "3fdfeb81fe1eb97177668ad7d60817490e1c46f616da93d588c580e8b7d5b8d0"
+      },
+      "signedOut.sheetHeadline": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "9ab584e449a1e656292071acab8d2a0c945f4d766210b8938bfac22b10ff962e"
+      },
+      "signedOut.sheetSubtitle": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "799351e9d3bbf0812c7e360dc9bcc7b7f780356cae61c7a4b76533b3aa816618"
+      },
+      "signedOut.title": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "Track your practice",
+        "kind": "reviewed-gap-replacement",
+        "occurrenceKey": "sel:h1.mb-2.text-xl:ctx:heading:pos:0",
+        "reviewedSourceHash": "ce8936353df8e4ace4f1029cf47d8312c234c382d3bb53b885f6f06ecc7d58d1"
+      },
+      "stats.dayPlural": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "ab51004e9d71a485f160f655fb9e72bcdef8f5ca4178b26938b49471456fd11c"
+      },
+      "stats.daySingular": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "944c27e5b97ab7793e4b6e9ff29384890ece0c7c04d2e2bf81c5f763469cc66b"
+      },
+      "stats.dayStreak": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "4575171b4873ea0c62c3a5187abdeab21f3fc1acecf792c189dc6cdf5e2b5326"
+      },
+      "stats.freshStart": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "47016c34c794cc92a9e5b6f6a4f52f5c794b6e65df304567d3d20a545fd285b8"
+      },
+      "stats.freshStartSub": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "0b1077637d204bdbdd0fd0519669a91ec44835ecacddb7de7054ebe66c344d9c"
+      },
+      "stats.hoursUnit": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123"
+      },
+      "stats.longest": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "b2b6ef4d02065774b228d8e0a41dbc7dd9261a2037ed46b91894db3d2a348585"
+      },
+      "stats.minutesUnit": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a"
+      },
+      "stats.sessions": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "6fa3cbf451b2a1d54159d42c3ea5ab8725b0c8620d831f8c1602676b38ab00e6"
+      },
+      "stats.sessionsActiveSub": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "2ba6e306ceb8c1f44c41b9169d54d61fe96b97d8b6e5a74a8d37602f7045281c"
+      },
+      "stats.sessionsEmptySub": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "95d86d82ad5deb2984a3a26c1600af25ac754de335aa89d0c64f799a58a8c137"
+      },
+      "stats.today": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "2b065c7c9ce466e5ebcad757987d5d660ee4c9ea708bc62c43444b53334738ba"
+      },
+      "stats.totalActiveTime": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "2cde9c5fcd09cea8f31128ce4f010fbb3f9cedeb923c07fb6e7052af362d1e2b"
+      },
+      "week.lastSevenDays": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "0603deca4fcb660f1c06a02621423721bd48084970ecf2b2de0e326dc783d191"
+      },
+      "week.summary": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "bdc75740cfc0170c822c6dc2ed68a941dcc0a57d79aa3fda269c275d641229d7"
+      }
+    },
+    "ja-jp": {
+      "cadence.hold": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "32690d8ae9b898c31fac60c5e0a4e512be32ea107603803d95fec27c2e5f1543"
+      },
+      "cadence.in": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "02e1c6e221430fd40d3ce8fab5313ab9908172188f2f3198dd35588e591a0a57"
+      },
+      "cadence.out": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "1279180506b7d6fd0772216fe16467661c79607260a4388e1841cb569be3a516"
+      },
+      "garden.hoverPrompt": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "a19029d716371c67d0518531fb70a79db10dd8eef65242ec1241159e133972e0"
+      },
+      "garden.practiced": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "ed16fa00d54518629206e858890427242ec8c229a600046f60078ad9e437e09d"
+      },
+      "garden.practicedLegend": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "9891aee311b83f08be1089961723b9158e65611381c3d269dfee4f05580413a0"
+      },
+      "garden.rest": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "6362c0ded507a2d0dbaab876594bc9935331487ba482fcbff0eb98901747c76b"
+      },
+      "garden.restLegend": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "05863ec2c378927634badbb44e31103dc47f0a0f4df78ae2fcbcc4d915899f5e"
+      },
+      "garden.subtitle": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "27ed37b317224a28b3ff41940629fb82fca13b927a334e1315d996f4b0246ceb"
+      },
+      "garden.title": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "4b06c11b9100798939e0eed3b5f7f50e8e924adee13af03e4f320c6ac0ee0d26"
+      },
+      "header.backAria": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "fd72ac2646cdb7a9d20aa6e138cbd6babaf97974598fdbe91b2f26d5a7393cc4"
+      },
+      "header.beginSession": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "5cbdb97d4f8fcf182dba0466543335ca5d5180e93d54c252e31cf3dccdf2218c"
+      },
+      "header.eyebrow": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "a9d562d6b494c89cdfe492bd7127b246f1b267c2f213dabfdc7206e0c2d39c45"
+      },
+      "header.title": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "7a23c0d6159cceadd3891c12b2bbcec9a72b37203e65b50286e9d80ebd364693"
+      },
+      "metadata.description": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "See your total breathing minutes, session count, streak, and practice calendar.",
+        "kind": "reviewed-gap-replacement",
+        "occurrenceKey": "head:meta:name:description",
+        "reviewedSourceHash": "3b1b3dfd2c8276b4521d8fd0bbe1da4543132d7276f6847f9c17d2260e7d551b"
+      },
+      "metadata.title": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "Your Practice Stats — Deep Breathing Exercises | Deep Breathing Exercises",
+        "kind": "reviewed-gap-replacement",
+        "occurrenceKey": "head:title",
+        "reviewedSourceHash": "25c90118d0e18124bf06566df484be9fe3c1a50109c3e0a7867bc40f16f69a67"
+      },
+      "pattern.belly.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:14",
+        "sourceHash": "44e7a58aeb0e6e76cc428fe5ac7667f8c689bd2007c50a83bad97d8db41bd7f7"
+      },
+      "pattern.belly.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:14",
+        "sourceHash": "bc1a31b3e31f3433ad0beacf8c7267ab23c9ceb0812eeb940504bb00f04b694b"
+      },
+      "pattern.box.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:6",
+        "sourceHash": "f3f22c571d7daa9016e1cb8d69e027ab181d94d965c1cd0716dcd80aa081b353"
+      },
+      "pattern.box.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:6",
+        "sourceHash": "5a0058dc555e6cf62b19f5ccb523ecf3425c30867dbd4cf63c41ab094a82e462"
+      },
+      "pattern.breathOfFire.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:17",
+        "sourceHash": "513ec0318ace561ba1c9c6465c133c205469d4a7e22586d2a6df24bb5671e002"
+      },
+      "pattern.breathOfFire.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:17",
+        "sourceHash": "7e698e658b7ea87716fb67194e13472092dd5045d11eb2332da331147375aea7"
+      },
+      "pattern.buteyko.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:15",
+        "sourceHash": "2aee2fb30bd5041f7986c2a9b46d6c3bc406ada921400aa8b17050fc541fc082"
+      },
+      "pattern.buteyko.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:15",
+        "sourceHash": "ffcdcb0455ef1332128eac84985ed3c50f817b052510c2dc9d3b246e6ac8c4d3"
+      },
+      "pattern.coherent.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:8",
+        "sourceHash": "69f81d2294ec4104d55f6c3764e35479e240dd4c2519f28ed10bc3a288c0455f"
+      },
+      "pattern.coherent.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:8",
+        "sourceHash": "1897cdabe66cd62756b823942a0c13ffde6dcf07f91f3cf765c5bbbe92141b8c"
+      },
+      "pattern.favorite": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "8eaecec022dae3c7a827a0d978ca9dc588c732146f8610e2f05d99d2fe038f63"
+      },
+      "pattern.nadi.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:12",
+        "sourceHash": "37990d99968de0a16ea545d583b5f21281356c3f00ee9d0a0c20111d8e80b5e1"
+      },
+      "pattern.nadi.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:12",
+        "sourceHash": "ca1422343154b5484798e41defa719e20604e8e6800961dba8decee1f558d333"
+      },
+      "pattern.physiologicalSigh.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:9",
+        "sourceHash": "c48fb413fc31115ab4368c7ae7c414887853285d95faf63fc0c0e6a966c0d983"
+      },
+      "pattern.physiologicalSigh.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:9",
+        "sourceHash": "c222314959d712b618e9df904a7b426bf72da9666e4fa32c773d6e2eef01256e"
+      },
+      "pattern.practiceAgain": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "5154621cce5ce8b2b4d38c4408df4e33e015db0139bae0399aa2907aee8f0512"
+      },
+      "pattern.pursedLip.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:11",
+        "sourceHash": "6b865432e75cfeef9de289b1531c31c0827a3c1dac233e4effbf8540e7b47515"
+      },
+      "pattern.pursedLip.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:11",
+        "sourceHash": "56ab9f0b15e7cb2ceec3b5b985ace9ed42769efbeb03878658026fcc1300f255"
+      },
+      "pattern.relax478.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:7",
+        "sourceHash": "b8b87d0e0a748623c947b0b60ebcc666b79f0e377fe84a007924437f4f744da0"
+      },
+      "pattern.relax478.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:7",
+        "sourceHash": "8c33dd913053776416cc792e835815530ed3dd1959b49b96a0e6552ee41c6ca6"
+      },
+      "pattern.tummo.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:16",
+        "sourceHash": "bbd3143214e7f12e29b41e8106b27d94f3897b252d9dbe2e20cb1f1dff26022b"
+      },
+      "pattern.tummo.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:16",
+        "sourceHash": "9680ee79485f141dfc08ee11d73b3cf69e1cefdb451d628be314487fd2260860"
+      },
+      "pattern.ujjayi.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:13",
+        "sourceHash": "2ffdf42747f6faaec04382dfb14590e6968cb3b4c8d7e62b131e8a41f1a8cdb4"
+      },
+      "pattern.ujjayi.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:13",
+        "sourceHash": "0d753106c28bc88d284d260f1d8964e01e9774ba2f8a82af503cd6af7d7338cb"
+      },
+      "pattern.wimHof.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+        "sourceHash": "0f5af73cbb1b7b65e186ec092db2890740ddfececcd107c304d70f78257c6563"
+      },
+      "pattern.wimHof.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:10",
+        "sourceHash": "559035c4417f7d5d382b4fcbf3ac8c970f14354fcbddba9f7ee5f813f5be2146"
+      },
+      "signedOut.body": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "Sign in to see your total minutes, session count, streak, and a practice calendar. Your data syncs across devices.",
+        "kind": "reviewed-gap-replacement",
+        "occurrenceKey": "sel:p.mb-6.text-sm:ctx:p:pos:0",
+        "reviewedSourceHash": "435d341b19d6558116de5bb0719348d95e876a773b417a7b454471411187ee5e"
+      },
+      "signedOut.button": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "Sign in to view your stats",
+        "kind": "reviewed-gap-replacement",
+        "occurrenceKey": "sel:button.rounded-xl.bg-primary:ctx:cta_button:pos:0",
+        "reviewedSourceHash": "3fdfeb81fe1eb97177668ad7d60817490e1c46f616da93d588c580e8b7d5b8d0"
+      },
+      "signedOut.sheetHeadline": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "9ab584e449a1e656292071acab8d2a0c945f4d766210b8938bfac22b10ff962e"
+      },
+      "signedOut.sheetSubtitle": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "799351e9d3bbf0812c7e360dc9bcc7b7f780356cae61c7a4b76533b3aa816618"
+      },
+      "signedOut.title": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "Track your practice",
+        "kind": "reviewed-gap-replacement",
+        "occurrenceKey": "sel:h1.mb-2.text-xl:ctx:heading:pos:0",
+        "reviewedSourceHash": "ce8936353df8e4ace4f1029cf47d8312c234c382d3bb53b885f6f06ecc7d58d1"
+      },
+      "stats.dayPlural": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "ab51004e9d71a485f160f655fb9e72bcdef8f5ca4178b26938b49471456fd11c"
+      },
+      "stats.daySingular": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "944c27e5b97ab7793e4b6e9ff29384890ece0c7c04d2e2bf81c5f763469cc66b"
+      },
+      "stats.dayStreak": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "4575171b4873ea0c62c3a5187abdeab21f3fc1acecf792c189dc6cdf5e2b5326"
+      },
+      "stats.freshStart": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "47016c34c794cc92a9e5b6f6a4f52f5c794b6e65df304567d3d20a545fd285b8"
+      },
+      "stats.freshStartSub": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "0b1077637d204bdbdd0fd0519669a91ec44835ecacddb7de7054ebe66c344d9c"
+      },
+      "stats.hoursUnit": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123"
+      },
+      "stats.longest": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "b2b6ef4d02065774b228d8e0a41dbc7dd9261a2037ed46b91894db3d2a348585"
+      },
+      "stats.minutesUnit": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a"
+      },
+      "stats.sessions": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "6fa3cbf451b2a1d54159d42c3ea5ab8725b0c8620d831f8c1602676b38ab00e6"
+      },
+      "stats.sessionsActiveSub": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "2ba6e306ceb8c1f44c41b9169d54d61fe96b97d8b6e5a74a8d37602f7045281c"
+      },
+      "stats.sessionsEmptySub": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "95d86d82ad5deb2984a3a26c1600af25ac754de335aa89d0c64f799a58a8c137"
+      },
+      "stats.today": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "2b065c7c9ce466e5ebcad757987d5d660ee4c9ea708bc62c43444b53334738ba"
+      },
+      "stats.totalActiveTime": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "2cde9c5fcd09cea8f31128ce4f010fbb3f9cedeb923c07fb6e7052af362d1e2b"
+      },
+      "week.lastSevenDays": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "0603deca4fcb660f1c06a02621423721bd48084970ecf2b2de0e326dc783d191"
+      },
+      "week.summary": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "bdc75740cfc0170c822c6dc2ed68a941dcc0a57d79aa3fda269c275d641229d7"
+      }
+    },
+    "pt-br": {
+      "cadence.hold": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "32690d8ae9b898c31fac60c5e0a4e512be32ea107603803d95fec27c2e5f1543"
+      },
+      "cadence.in": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "02e1c6e221430fd40d3ce8fab5313ab9908172188f2f3198dd35588e591a0a57"
+      },
+      "cadence.out": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "1279180506b7d6fd0772216fe16467661c79607260a4388e1841cb569be3a516"
+      },
+      "garden.hoverPrompt": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "a19029d716371c67d0518531fb70a79db10dd8eef65242ec1241159e133972e0"
+      },
+      "garden.practiced": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "ed16fa00d54518629206e858890427242ec8c229a600046f60078ad9e437e09d"
+      },
+      "garden.practicedLegend": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "9891aee311b83f08be1089961723b9158e65611381c3d269dfee4f05580413a0"
+      },
+      "garden.rest": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "6362c0ded507a2d0dbaab876594bc9935331487ba482fcbff0eb98901747c76b"
+      },
+      "garden.restLegend": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "05863ec2c378927634badbb44e31103dc47f0a0f4df78ae2fcbcc4d915899f5e"
+      },
+      "garden.subtitle": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "27ed37b317224a28b3ff41940629fb82fca13b927a334e1315d996f4b0246ceb"
+      },
+      "garden.title": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "4b06c11b9100798939e0eed3b5f7f50e8e924adee13af03e4f320c6ac0ee0d26"
+      },
+      "header.backAria": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "fd72ac2646cdb7a9d20aa6e138cbd6babaf97974598fdbe91b2f26d5a7393cc4"
+      },
+      "header.beginSession": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "5cbdb97d4f8fcf182dba0466543335ca5d5180e93d54c252e31cf3dccdf2218c"
+      },
+      "header.eyebrow": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "a9d562d6b494c89cdfe492bd7127b246f1b267c2f213dabfdc7206e0c2d39c45"
+      },
+      "header.title": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "7a23c0d6159cceadd3891c12b2bbcec9a72b37203e65b50286e9d80ebd364693"
+      },
+      "metadata.description": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "See your total breathing minutes, session count, streak, and practice calendar.",
+        "kind": "reviewed-gap-replacement",
+        "occurrenceKey": "head:meta:name:description",
+        "reviewedSourceHash": "3b1b3dfd2c8276b4521d8fd0bbe1da4543132d7276f6847f9c17d2260e7d551b"
+      },
+      "metadata.title": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "Your Practice Stats — Deep Breathing Exercises | Deep Breathing Exercises",
+        "kind": "reviewed-gap-replacement",
+        "occurrenceKey": "head:title",
+        "reviewedSourceHash": "25c90118d0e18124bf06566df484be9fe3c1a50109c3e0a7867bc40f16f69a67"
+      },
+      "pattern.belly.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:14",
+        "sourceHash": "44e7a58aeb0e6e76cc428fe5ac7667f8c689bd2007c50a83bad97d8db41bd7f7"
+      },
+      "pattern.belly.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:14",
+        "sourceHash": "bc1a31b3e31f3433ad0beacf8c7267ab23c9ceb0812eeb940504bb00f04b694b"
+      },
+      "pattern.box.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:6",
+        "sourceHash": "f3f22c571d7daa9016e1cb8d69e027ab181d94d965c1cd0716dcd80aa081b353"
+      },
+      "pattern.box.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:6",
+        "sourceHash": "5a0058dc555e6cf62b19f5ccb523ecf3425c30867dbd4cf63c41ab094a82e462"
+      },
+      "pattern.breathOfFire.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:17",
+        "sourceHash": "513ec0318ace561ba1c9c6465c133c205469d4a7e22586d2a6df24bb5671e002"
+      },
+      "pattern.breathOfFire.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:17",
+        "sourceHash": "7e698e658b7ea87716fb67194e13472092dd5045d11eb2332da331147375aea7"
+      },
+      "pattern.buteyko.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:15",
+        "sourceHash": "2aee2fb30bd5041f7986c2a9b46d6c3bc406ada921400aa8b17050fc541fc082"
+      },
+      "pattern.buteyko.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:15",
+        "sourceHash": "ffcdcb0455ef1332128eac84985ed3c50f817b052510c2dc9d3b246e6ac8c4d3"
+      },
+      "pattern.coherent.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:8",
+        "sourceHash": "69f81d2294ec4104d55f6c3764e35479e240dd4c2519f28ed10bc3a288c0455f"
+      },
+      "pattern.coherent.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:8",
+        "sourceHash": "1897cdabe66cd62756b823942a0c13ffde6dcf07f91f3cf765c5bbbe92141b8c"
+      },
+      "pattern.favorite": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "8eaecec022dae3c7a827a0d978ca9dc588c732146f8610e2f05d99d2fe038f63"
+      },
+      "pattern.nadi.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:12",
+        "sourceHash": "37990d99968de0a16ea545d583b5f21281356c3f00ee9d0a0c20111d8e80b5e1"
+      },
+      "pattern.nadi.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:12",
+        "sourceHash": "ca1422343154b5484798e41defa719e20604e8e6800961dba8decee1f558d333"
+      },
+      "pattern.physiologicalSigh.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:9",
+        "sourceHash": "c48fb413fc31115ab4368c7ae7c414887853285d95faf63fc0c0e6a966c0d983"
+      },
+      "pattern.physiologicalSigh.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:9",
+        "sourceHash": "c222314959d712b618e9df904a7b426bf72da9666e4fa32c773d6e2eef01256e"
+      },
+      "pattern.practiceAgain": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "5154621cce5ce8b2b4d38c4408df4e33e015db0139bae0399aa2907aee8f0512"
+      },
+      "pattern.pursedLip.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:11",
+        "sourceHash": "6b865432e75cfeef9de289b1531c31c0827a3c1dac233e4effbf8540e7b47515"
+      },
+      "pattern.pursedLip.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:11",
+        "sourceHash": "56ab9f0b15e7cb2ceec3b5b985ace9ed42769efbeb03878658026fcc1300f255"
+      },
+      "pattern.relax478.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:7",
+        "sourceHash": "b8b87d0e0a748623c947b0b60ebcc666b79f0e377fe84a007924437f4f744da0"
+      },
+      "pattern.relax478.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:7",
+        "sourceHash": "8c33dd913053776416cc792e835815530ed3dd1959b49b96a0e6552ee41c6ca6"
+      },
+      "pattern.tummo.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:16",
+        "sourceHash": "bbd3143214e7f12e29b41e8106b27d94f3897b252d9dbe2e20cb1f1dff26022b"
+      },
+      "pattern.tummo.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:16",
+        "sourceHash": "9680ee79485f141dfc08ee11d73b3cf69e1cefdb451d628be314487fd2260860"
+      },
+      "pattern.ujjayi.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:13",
+        "sourceHash": "2ffdf42747f6faaec04382dfb14590e6968cb3b4c8d7e62b131e8a41f1a8cdb4"
+      },
+      "pattern.ujjayi.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:13",
+        "sourceHash": "0d753106c28bc88d284d260f1d8964e01e9774ba2f8a82af503cd6af7d7338cb"
+      },
+      "pattern.wimHof.description": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+        "sourceHash": "0f5af73cbb1b7b65e186ec092db2890740ddfececcd107c304d70f78257c6563"
+      },
+      "pattern.wimHof.name": {
+        "catalogRoute": "/breathing-visualizer",
+        "kind": "catalog-external",
+        "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:10",
+        "sourceHash": "559035c4417f7d5d382b4fcbf3ac8c970f14354fcbddba9f7ee5f813f5be2146"
+      },
+      "signedOut.body": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "Sign in to see your total minutes, session count, streak, and a practice calendar. Your data syncs across devices.",
+        "kind": "reviewed-gap-replacement",
+        "occurrenceKey": "sel:p.mb-6.text-sm:ctx:p:pos:0",
+        "reviewedSourceHash": "435d341b19d6558116de5bb0719348d95e876a773b417a7b454471411187ee5e"
+      },
+      "signedOut.button": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "Sign in to view your stats",
+        "kind": "reviewed-gap-replacement",
+        "occurrenceKey": "sel:button.rounded-xl.bg-primary:ctx:cta_button:pos:0",
+        "reviewedSourceHash": "3fdfeb81fe1eb97177668ad7d60817490e1c46f616da93d588c580e8b7d5b8d0"
+      },
+      "signedOut.sheetHeadline": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "9ab584e449a1e656292071acab8d2a0c945f4d766210b8938bfac22b10ff962e"
+      },
+      "signedOut.sheetSubtitle": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "799351e9d3bbf0812c7e360dc9bcc7b7f780356cae61c7a4b76533b3aa816618"
+      },
+      "signedOut.title": {
+        "catalogRoute": "/stats",
+        "catalogSourceText": "Track your practice",
+        "kind": "reviewed-gap-replacement",
+        "occurrenceKey": "sel:h1.mb-2.text-xl:ctx:heading:pos:0",
+        "reviewedSourceHash": "ce8936353df8e4ace4f1029cf47d8312c234c382d3bb53b885f6f06ecc7d58d1"
+      },
+      "stats.dayPlural": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "ab51004e9d71a485f160f655fb9e72bcdef8f5ca4178b26938b49471456fd11c"
+      },
+      "stats.daySingular": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "944c27e5b97ab7793e4b6e9ff29384890ece0c7c04d2e2bf81c5f763469cc66b"
+      },
+      "stats.dayStreak": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "4575171b4873ea0c62c3a5187abdeab21f3fc1acecf792c189dc6cdf5e2b5326"
+      },
+      "stats.freshStart": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "47016c34c794cc92a9e5b6f6a4f52f5c794b6e65df304567d3d20a545fd285b8"
+      },
+      "stats.freshStartSub": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "0b1077637d204bdbdd0fd0519669a91ec44835ecacddb7de7054ebe66c344d9c"
+      },
+      "stats.hoursUnit": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "aaa9402664f1a41f40ebbc52c9993eb66aeb366602958fdfaa283b71e64db123"
+      },
+      "stats.longest": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "b2b6ef4d02065774b228d8e0a41dbc7dd9261a2037ed46b91894db3d2a348585"
+      },
+      "stats.minutesUnit": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a"
+      },
+      "stats.sessions": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "6fa3cbf451b2a1d54159d42c3ea5ab8725b0c8620d831f8c1602676b38ab00e6"
+      },
+      "stats.sessionsActiveSub": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "2ba6e306ceb8c1f44c41b9169d54d61fe96b97d8b6e5a74a8d37602f7045281c"
+      },
+      "stats.sessionsEmptySub": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "95d86d82ad5deb2984a3a26c1600af25ac754de335aa89d0c64f799a58a8c137"
+      },
+      "stats.today": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "2b065c7c9ce466e5ebcad757987d5d660ee4c9ea708bc62c43444b53334738ba"
+      },
+      "stats.totalActiveTime": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "2cde9c5fcd09cea8f31128ce4f010fbb3f9cedeb923c07fb6e7052af362d1e2b"
+      },
+      "week.lastSevenDays": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "0603deca4fcb660f1c06a02621423721bd48084970ecf2b2de0e326dc783d191"
+      },
+      "week.summary": {
+        "kind": "reviewed-replacement",
+        "reviewedSourceHash": "bdc75740cfc0170c822c6dc2ed68a941dcc0a57d79aa3fda269c275d641229d7"
+      }
+    }
+  },
+  "schemaVersion": 1,
+  "sourceRoute": "/stats"
+}

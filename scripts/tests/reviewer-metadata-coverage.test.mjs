@@ -24,11 +24,11 @@ function assertReviewerFallback(source, messagePrefix) {
 }
 
 test('pattern template includes fallback reviewedBy identity in article schema', () => {
-  const source = read('src/app/breathe/pattern-page.tsx');
+  const source = read('src/app/(site-en)/breathe/pattern-page.tsx');
   assertReviewerFallback(source, 'pattern template');
 });
 
 test('use-case template includes reviewer identity in article schema', () => {
-  const source = read('src/app/for/use-case-page.tsx');
+  const source = read('src/app/(site-en)/for/use-case-page.tsx');
   assertReviewerFallback(source, 'use-case template');
 });

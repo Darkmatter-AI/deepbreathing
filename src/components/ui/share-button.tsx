@@ -1,7 +1,8 @@
 'use client';
 
-import { useState, useRef, useEffect, useCallback } from 'react';
+import { useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import { appendShareUtm, getLocalizedShareText, getLocalizedShareTitle } from '@/lib/share-utm';
+import { createRuntimePhraseResolver, type RuntimePhraseKey } from '@/components/resonance/runtime-phrases';
 
 export interface ShareButtonProps {
   url: string;
@@ -12,6 +13,9 @@ export interface ShareButtonProps {
   variant?: 'default' | 'accent';
   accentColor?: string;
   embedSlug?: string;
+  embedBrowseHref?: string;
+  embedBaseUrl?: string;
+  locale?: string;
 }
 
 const EMBED_BASE = 'https://deepbreathingexercises.com/embed';
@@ -41,15 +45,23 @@ export function ShareButton({
   variant = 'default',
   accentColor,
   embedSlug,
+  embedBrowseHref = "/embed",
+  embedBaseUrl = EMBED_BASE,
+  locale,
 }: ShareButtonProps) {
   const [popoverOpen, setPopoverOpen] = useState(false);
   const [urlCopied, setUrlCopied] = useState(false);
   const [embedCopied, setEmbedCopied] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const dismissTimer = useRef<ReturnType<typeof setTimeout>>();
+  const phraseResolver = useMemo(
+    () => createRuntimePhraseResolver(locale ?? "en"),
+    [locale],
+  );
+  const t = (key: RuntimePhraseKey) => phraseResolver.resolve(key).text;
 
   const embedSnippet = embedSlug
-    ? `<iframe src="${EMBED_BASE}/${embedSlug}" width="100%" height="500" frameborder="0" allow="autoplay" style="border-radius:16px;"></iframe>`
+    ? `<iframe src="${embedBaseUrl}/${embedSlug}" width="100%" height="500" frameborder="0" allow="autoplay" style="border-radius:16px;"></iframe>`
     : null;
 
   const close = useCallback(() => {
@@ -79,8 +91,8 @@ export function ShareButton({
   }, [popoverOpen, close]);
 
   const handleShare = async () => {
-    const liveTitle = getLocalizedShareTitle(title);
-    const liveText = getLocalizedShareText(text);
+    const liveTitle = locale ? title : getLocalizedShareTitle(title);
+    const liveText = locale ? text : getLocalizedShareText(text);
     // Try native share first (mobile)
     if (navigator.share) {
       try {
@@ -146,7 +158,7 @@ export function ShareButton({
         <div className="absolute left-0 top-full mt-2 z-50 w-[320px] max-w-[calc(100vw-2rem)] rounded-xl border border-border/60 bg-card shadow-lg backdrop-blur-md overflow-hidden">
           {/* URL row */}
           <div className="p-3">
-            <p className="text-[10px] uppercase tracking-widest text-muted-foreground mb-1.5">Link</p>
+            <p className="text-[10px] uppercase tracking-widest text-muted-foreground mb-1.5">{t("ui.link")}</p>
             <div className="flex items-center gap-2">
               <input
                 type="text"
@@ -161,9 +173,9 @@ export function ShareButton({
               >
                 {urlCopied ? (
                   <span className="flex items-center gap-1 text-primary">
-                    <CheckIcon className="h-3 w-3" /> Copied
+                    <CheckIcon className="h-3 w-3" /> {t("ui.copied")}
                   </span>
-                ) : 'Copy'}
+                ) : t("ui.copy")}
               </button>
             </div>
           </div>
@@ -174,7 +186,7 @@ export function ShareButton({
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-1.5">
                   <CodeIcon className="h-3.5 w-3.5 text-muted-foreground" />
-                  <p className="text-[10px] uppercase tracking-widest text-muted-foreground">Embed on your site</p>
+                  <p className="text-[10px] uppercase tracking-widest text-muted-foreground">{t("ui.embed_on_site")}</p>
                 </div>
                 <button
                   onClick={handleCopyEmbed}
@@ -182,19 +194,19 @@ export function ShareButton({
                 >
                   {embedCopied ? (
                     <span className="flex items-center gap-1 text-primary">
-                      <CheckIcon className="h-3 w-3" /> Copied
+                      <CheckIcon className="h-3 w-3" /> {t("ui.copied")}
                     </span>
-                  ) : 'Copy snippet'}
+                  ) : t("ui.copy_snippet")}
                 </button>
               </div>
               <pre className="mt-1.5 rounded-lg bg-muted/50 px-2.5 py-1.5 text-[10px] text-muted-foreground overflow-x-auto whitespace-pre-wrap break-all leading-relaxed">
                 {embedSnippet}
               </pre>
               <a
-                href="/embed"
+                href={embedBrowseHref}
                 className="mt-2 inline-block text-[10px] uppercase tracking-widest text-muted-foreground underline underline-offset-2 transition-colors hover:text-foreground"
               >
-                Browse all embeds →
+                {t("ui.browse_embeds")}
               </a>
             </div>
           )}

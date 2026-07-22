@@ -1,0 +1,79 @@
+{
+  "routes": {
+    "/breathe/buteyko": {
+      "expectedMessages": 99,
+      "kind": "breathing",
+      "locales": {
+        "de-de": {
+          "bytes": 15217,
+          "path": "routes/de-de/breathe-buteyko.json",
+          "publishable": true,
+          "sha256": "cd05361d347e006f18fa822c5f5bd35fccec50669b86d5ba305f5774e9f62f2a"
+        },
+        "es-es": {
+          "bytes": 15641,
+          "path": "routes/es-es/breathe-buteyko.json",
+          "publishable": true,
+          "sha256": "b6fea335aee3c44d5e755613bae0def59578f306b4b53d800b3105a4e5e411a8"
+        },
+        "fr-fr": {
+          "bytes": 16037,
+          "path": "routes/fr-fr/breathe-buteyko.json",
+          "publishable": true,
+          "sha256": "5a8121c48f16530f3d143b8d85372abce7d17a752f9f8e0dfc3c25690d4ef7f2"
+        },
+        "ja-jp": {
+          "bytes": 16884,
+          "path": "routes/ja-jp/breathe-buteyko.json",
+          "publishable": true,
+          "sha256": "faede904ae1ff63753ec40f454c46952c61d75553f939a4531861f305d032e52"
+        },
+        "pt-br": {
+          "bytes": 15378,
+          "path": "routes/pt-br/breathe-buteyko.json",
+          "publishable": true,
+          "sha256": "2dacc154958fd4ae90d147078cdd7f163b660a1cdcfa7dc340b0fef1736a0599"
+        }
+      },
+      "routeId": "breathe.buteyko"
+    },
+    "/for/anxiety": {
+      "expectedMessages": 91,
+      "kind": "use-case",
+      "locales": {
+        "de-de": {
+          "bytes": 18568,
+          "path": "routes/de-de/for-anxiety.json",
+          "publishable": true,
+          "sha256": "af1ffc56226b570e0b8081b3e0ee7fa6ce15fe2b36390bc0d7d457b0003d49ee"
+        },
+        "es-es": {
+          "bytes": 18626,
+          "path": "routes/es-es/for-anxiety.json",
+          "publishable": true,
+          "sha256": "6662944c3ad552b0a6ae2879cd66c55ee4e617d458101cbbc1d29f72fa7c1f46"
+        },
+        "fr-fr": {
+          "bytes": 19712,
+          "path": "routes/fr-fr/for-anxiety.json",
+          "publishable": true,
+          "sha256": "4862f50c80a6d54774c682759bc54bf74221c6b041c5d85a5a4b6cdaa623a7c7"
+        },
+        "ja-jp": {
+          "bytes": 19916,
+          "path": "routes/ja-jp/for-anxiety.json",
+          "publishable": true,
+          "sha256": "0cdb4045545c9a3e23d734cde07da36603381e8f83c8ed39f3c006b5a4d84537"
+        },
+        "pt-br": {
+          "bytes": 18459,
+          "path": "routes/pt-br/for-anxiety.json",
+          "publishable": true,
+          "sha256": "c70220585bf6528f4eaa26b5fd9a0591117d2e47c0f6c987d8a392af42d65e76"
+        }
+      },
+      "routeId": "for.anxiety"
+    }
+  },
+  "schemaVersion": 1
+}

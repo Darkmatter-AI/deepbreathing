@@ -1,0 +1,17 @@
+[
+  {
+    "cells": 5,
+    "classification": "stale-catalog-only",
+    "locales": [
+      "de-de",
+      "es-es",
+      "fr-fr",
+      "ja-jp",
+      "pt-br"
+    ],
+    "placementId": "f7b58b94-8f4f-40f1-aef2-8dc0e0645899",
+    "reason": "Transient translated browser exception from the preservation crawl; it is not current route source and must never render.",
+    "reviewedSourceHash": "f3f12bcbaf484115a74ed6efa55efbc1aafa67319af7b5c41813fedc7353e6a6",
+    "sourceText": "Application error: a client-side exception has occurred (see the browser console for more information)."
+  }
+]

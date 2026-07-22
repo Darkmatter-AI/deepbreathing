@@ -1,0 +1,2986 @@
+{
+  "locales": {
+    "de-de": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "3d4e1df147583f32dd5a40c3d1a2aca8d8421feb3b7d575b79b34bf06d27e6c5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "77e3c5fdb098a727e4a3b38cb4b78ed851d9032b53bb0c59440f74b2bef1ffec",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-pranayama-title": {
+          "sourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-box-app": {
+          "sourceHash": "7f77c1557f9441a20a2bcf9985050eae3c16380e63d8ef10af1f7aae4fdae7f4",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.watch-learn": {
+          "sourceHash": "749c5b04beadcb04ba360343552137e698cb4c1ff10cb680445f8b1f9ea5c543",
+          "status": "route-catalog-normalized"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "2c3a4017537548da15ddd60b1f10a03065a708289ed141824c5d6d351a9926b7",
+          "sourceText": "Children as young as 3-4 can start with very simple breathing games, 'smell the flower, blow out the candle.' By age 5-6, most children can do basic counted breathing (3 seconds per phase). By 7-8, they can handle standard techniques like box breathing. The key is making it age-appropriate and fun, not forcing adult techniques on young children.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "3031d0925e03639f57448ec19a29dcbeaf9e229bfc5e05025965e84d5fd7df41",
+          "sourceText": "What age can kids start doing breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "3b2cf0e2b23b3a5a711c968c1a769f8abc978b7afa6e18a6f665b86180c1f952",
+          "sourceText": "This is completely normal. During a meltdown, the emotional brain has taken over and the thinking brain is offline. They literally can't follow instructions. Instead: stay calm yourself (they co-regulate with you), offer comfort without demanding anything, and wait for the wave to pass. Introduce breathing during calm moments so it's familiar. Over time, they may start using it independently.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "4a66e8bab029de40315ee1897b09eec5f10d7e66cc1e29dd27ed0651c45eba8e",
+          "sourceText": "My child won't do breathing exercises during a meltdown. What should I do?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "fe5d87ea440fc8f180f1871bbac63cc9e222455b96a84fdda238b32ca914f7c2",
+          "sourceText": "Use props and imagery! Blow pinwheels, bubbles, or feathers. Place a stuffed animal on their belly to watch it rise and fall ('belly buddy'). Use visualizers like the one on this page. Rename the exercises: 'dragon breath,' 'balloon belly,' 'smell the pizza.' Make it a game, not a chore.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "8f07b40788a5143bbca6f8f1ec1be862fef52cda5b00e01c426a96cb9600a477",
+          "sourceText": "How do I make breathing exercises fun for kids?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "f9067b3c44caef8cb5fac4b75928635f311a184ba0b14a430b8912cc9f34d5a0",
+          "sourceText": "Breathing exercises can help children with ADHD manage impulsivity and emotional regulation, though they're not a replacement for other interventions. The structure and counting involved in techniques like box breathing can be particularly helpful. Keep sessions short (1-2 minutes) as sustained focus is challenging. Consult with your child's healthcare provider for personalized strategies.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].question": {
+          "sourceHash": "2e63aa8be18c1b1e9d9da9b24968f59c1077b07642ac0be67f46fee058223e58",
+          "sourceText": "Can breathing exercises help with ADHD?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "2a19eed613858ed7ead48535152fc168cead844ae9515178b97441c2bc4e79be",
+          "sourceText": "Never. Breathing exercises should be a helpful tool, not a punishment. Saying 'go do your breathing!' in anger makes it feel like timeout. Instead, model it yourself ('I'm feeling frustrated, I'm going to do some breathing') and offer it as an option ('Would you like to try some breathing together?'). Building positive associations is key.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].question": {
+          "sourceHash": "40fc0dcfa5de8c2e0170dfd7f1aceea968d7bacef1dfcb4dd2b3e67786d3ccbb",
+          "sourceText": "Should I use breathing exercises as a consequence or punishment?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "f17002780ed598042786ae0c5e774674f0a8037e35b4d6083859a80835c7f84b",
+          "sourceText": "For building the habit, 1-2 minutes daily during calm moments works well, perhaps as part of bedtime routine or before homework. The goal is making it familiar so it becomes a go-to tool during stress. You don't need long sessions; consistency matters more than duration.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[5].question": {
+          "sourceHash": "56779d4231a4c80ca56881b9e392478c6412b3933f2d1067718d11a501b488e3",
+          "sourceText": "How often should kids practice breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[6].answer": {
+          "sourceHash": "60b23551338aa007548f725190c40836f3f73f0994a8771273a81bc67254a315",
+          "sourceText": "Both calm the nervous system, but they work differently. Box breathing uses counted phases (4 seconds each: inhale, hold, exhale, hold), great for older kids (7+) who can count and follow structure. Balloon breathing is more visual: imagine inflating a balloon in your belly (big breath in, belly expands) and slowly letting the air out. Balloon breathing is easier for younger kids (3-6) because it uses imagination rather than counting. Start with balloon breathing for little ones, graduate to box breathing as they develop.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[6].question": {
+          "sourceHash": "7fd9cf7f59614957a4ae88a2869c6ba2a01bd1824fd5d9673217a851d80d49b4",
+          "sourceText": "What's the difference between box breathing and balloon breathing for kids?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "6e1e4e6f644998b8cfd5984ef16c855d307cc3a6ea2b1ec9d83a8472715ecb26",
+          "sourceText": "Children experience stress and big emotions just like adults, but they often lack the tools to manage them. These kid-friendly breathing exercises are designed to be fun, easy to remember, and effective. Whether your child struggles with anxiety, anger, or just needs help winding down, these techniques can help them find calm in minutes.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "df9461935001e5bfe58d04f0af81b66184188bf52e6156474e96f846524ed598",
+          "sourceText": "Simple calming techniques children can use anywhere",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "7696120540243ebfa54ae8f92ba7cda3ef477c27e9f3802c0d1b304ccf979643",
+          "sourceText": "Deep Breathing Exercises for Kids",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "0ebedf8247a924428de2383566364b33bc6b8a1cab36e6ca2d107c0b7404554d",
+          "sourceText": "Don't wait for a meltdown. Practice breathing exercises when your child is relaxed, maybe after bath time or before a story. Make it a fun game, not a discipline tool.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "87953f74af22c27f99752a81eda23e64e4cc659d202a4f6569fc87f836bdaa6a",
+          "sourceText": "Introduce it during calm moments",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "89f57e711bf07226037f475ce77541e0da2752c458f2343fbad69d5f8e2fc007",
+          "sourceText": "Regular practice",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "ab73bb7da8e401717d012dd736b0873275ebb675515b5a9e24e0640eb1da75c9",
+          "sourceText": "Instead of 'inhale,' say 'smell the flower.' Instead of 'exhale,' say 'blow out the candle.' For box breathing, try 'breathe in like you're smelling pizza, hold it like you're underwater, breathe out like you're blowing bubbles, wait like a statue.'",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "d5d8672b920e0030c97fa0982806e42718b56b3c186842b86565e7a975581d2a",
+          "sourceText": "Use kid-friendly imagery",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "0e0713397f07e66efd8e0c619c9131b8b4a62363aef8485929e46c849f8bf946",
+          "sourceText": "Every instruction",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "d19b20e0de7fb26318fb71b0659c8cfd19df6a0b76d18e39e90cb69d03095896",
+          "sourceText": "Start with 3-second counts instead of 4. Very young children (4-5) may only manage 2 seconds. That's fine, the rhythm matters more than the duration.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "e78302438f89421ea0c81847116fbbbcc9c8722f3c170a0f049ce0bb37c5e2ce",
+          "sourceText": "Keep counts short for young kids",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "25d7d5861608c3c643718cb4a013a673aa1437acb9e6278209ab138b019fa57b",
+          "sourceText": "3 counts per phase",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "b0b0bffd1266ce6d59ec826003d7ea00338d7087ff8db48cb1b1be51facb7ad1",
+          "sourceText": "Use the visualizer on this page, or have kids watch their belly rise and fall with a stuffed animal on it. Pinwheels, bubbles, and feathers make exhale practice fun.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "b6f986d37a6c5321bce005e85d7886450ad4dedfed40f7a68ad8d5d267d65eee",
+          "sourceText": "Make it visual",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "92c800e0f882e34530fc1e77e354c5f2d4da6ce295a0b7560b7c4d3771b8aae2",
+          "sourceText": "Use props",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "40f746fb560b11341c9961ac918c444880aaab8265922f6c9b3fb111df9e959e",
+          "sourceText": "Children learn by watching. Do the breathing alongside them. This also helps you stay calm, which helps them stay calm, co-regulation is powerful.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "9c194eb811ed31257b0146bb207bca220be5eb515de9a655abe205d9d6dfe872",
+          "sourceText": "Practice together",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "49e771a70964a13e6ba41277395df68c1fadb02f32cb690e785500b06a61bad4",
+          "sourceText": "Every session",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "d9469719121f50a1995fdf251e786f461abf3322110f1b8c3af45c32963098cc",
+          "sourceText": "Praise trying, not perfection. 'You did your breathing. That was brave!' helps build positive associations even if the breathing was messy.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "7443fe09803abed5b8408d2e5164b090f67f430e69495d40438a1b3df57d4aeb",
+          "sourceText": "Celebrate the effort",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "22eef079856110201945606608d8f9ca25ef0d2806931dd289bffe2d1204b777",
+          "sourceText": "After practice",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "114ce9518856bfd3465d95c769575223a59c3f5d501a62c2e220c2331e9b3c99",
+          "sourceText": "Practice when calm to build the habit before it's needed in crisis",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "73e4fe9ca306b45e3aae9c6be1fac6c336013518acd3cd362464a6ed5950428c",
+          "sourceText": "Keep a pinwheel or bubble wand handy for visual feedback",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "14ae8e9294712b0f21c32074d97de6c452f24fdcc2bb9e742a351e504bff8e88",
+          "sourceText": "Model the breathing yourself, kids learn by watching",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "0a2b21113dd55260a07831d5b2219f64aaf0dceaf4d04f345f77e1b840c49260",
+          "sourceText": "Don't force it during meltdowns; offer it as an option, not a command",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "df12cd7783604128ffed805e65533b536ab972287420f34e4bc80f7847f27d96",
+          "sourceText": "Use 'belly buddies', a stuffed animal on the belly that rises and falls with breath",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "daa4d671bcc049658f6095d50a8ffda59216262d17c72cd9d436c6457c870d65",
+          "sourceText": "Simple breathing exercises for kids that stop tantrums, ease anxiety, and help children fall asleep. Parent-tested techniques with free visualizer. Ages 4+.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "90ac5fd7cc4ed6b16cb6577b2dff0089f0fb03cfb1d649eb97db1fb10e0d52fa",
+          "sourceText": "Simple breathing exercises kids can use anywhere. Stop tantrums, ease anxiety, improve sleep. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "0e67263991fd8556eef474bec7d4dd043b5551c74cc6004a71d78ba668be2029",
+          "sourceText": "Breathing Exercises for Kids: Calm Down Techniques",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "0e67263991fd8556eef474bec7d4dd043b5551c74cc6004a71d78ba668be2029",
+          "sourceText": "Breathing Exercises for Kids: Calm Down Techniques That Actually Work | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "ba5bfd0425287a8a60343b07ef13a3d260122f49b32e9457fdd762f49e22698f",
+          "sourceText": "Simple breathing techniques kids love. Stop tantrums and ease anxiety in minutes.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "0e67263991fd8556eef474bec7d4dd043b5551c74cc6004a71d78ba668be2029",
+          "sourceText": "Breathing Exercises for Kids: Calm Down Techniques",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "990875a4008bd12e3e53325e7449b626cd9f9d521c590d70f6c028cb41de5cee",
+          "sourceText": "Children's brains are still developing the prefrontal cortex, the part responsible for emotional regulation. When they feel overwhelmed, scared, or angry, they literally lack the neural wiring to 'just calm down.' This isn't defiance; it's development. But we can give them tools that work with their biology to help regulate their emotions.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "6fcb119fd8636fcccbdbc5865af6f140df2c11348010c85eeacd862087a28c3d",
+          "sourceText": "Big Emotions, Limited Tools",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "c6c4cc7542419db7bec219b75f62307070bf72624b9c80b193690851210355ef",
+          "sourceText": "Tantrums or meltdowns over small frustrations",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "41947e9a9d0145ff8161c2433e3e09ddd1c99f7faa097045b128988187581668",
+          "sourceText": "Difficulty falling asleep or staying asleep",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "acd84f1006f28203fdf0fb7d91e98029414c1c831c2e9e241d4e4ce003e9658d",
+          "sourceText": "Anxiety about school, friends, or new situations",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "5374959dabf1a66ec2a0289e973e28df0ca86a025302ba98fadd30b9593b01c7",
+          "sourceText": "Anger outbursts that seem disproportionate",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "24364b756cbe1545355ea833234ffb8b7aab37b8ef87078c25e8c974f4332f02",
+          "sourceText": "Complaints of stomachaches or headaches (stress symptoms)",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "22ce8757585d1680a506f92f1c52764eb37cefe2be221c0fa9b05c4e1929d06a",
+          "sourceText": "Trouble transitioning between activities",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "27fec916504eeb599b080218bf7146dc9591a88fb293acef39f6713419f1b449",
+          "sourceText": "Overview of age-appropriate breathing techniques and why they work for children's developing brains.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "f83f7482f6cb69626ba4900b55a5351cfec6cddcca001037d09e335a13a15c0c",
+          "sourceText": "Deep breathing for kids: How to teach them calming techniques",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "48edf4d4187b8308d1bd0d3fbf4f60fe1532eaf4a0dbea2beb6b81caf2f541e4",
+          "sourceText": "Expert guide on teaching children breathing techniques for anxiety and emotional regulation.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "518bbec777b7f379758b95c7fc013d7edc2a1e3d22a3211b66d37a782fd5216e",
+          "sourceText": "Breathing Exercises for Kids",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "931cd5c514cecaa68b2bacacef4d74e232512fd8150bf180e18d9c877485ee2e",
+          "sourceText": "Research-backed overview of how breathing exercises support children's mental health.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "7c2c63210ed0645ce5503131fba71f9eb23ec5f1293ea2f02a859cab96ec7b3a",
+          "sourceText": "Can breathing exercises help children with anxiety?",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "9cce245efc10bb6e4784af545be7b356c179aabab99b5a3cbcecb96200a0c445",
+          "sourceText": "Learn the full Box Breathing technique",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "ae8df56f6b48cc71abb02ec2311098bbac47756ab101c8e901eaca49c27cd344",
+          "sourceText": "More breathing techniques for anxiety relief",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "9aa82ac2ad7889c826088c2362ed605cebfa68fb95e423b7986f58726ec33104",
+          "sourceText": "Breathing exercises for better sleep, works for kids too",
+          "status": "route-catalog-normalized"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "dbbf91ccc4cf3751f816a259689064e2259b0830fee04774d1178e705de88b55",
+          "sourceText": "Parents interested in yoga? Explore the pranayama tradition",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "86c1d9090f0ec00453a944bd9ce8a24ece0c3185b895d35f41d1773e79606512",
+          "sourceText": "Why Breathing Helps Kids",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "ffb4535649c0870c9101812aaa6d8d1dec10792e66623c6d473bd5cd2cb01e1d",
+          "sourceText": "Slow breathing activates the vagus nerve, which triggers the parasympathetic nervous system, the body's natural 'brake pedal' that counters fight-or-flight responses. [This works in children just as it does in adults](https://doi.org/10.1111/jcpp.12980).",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "6739a10b851bef187ec0016f6b2e8599be89f96d211c49d3b614f005775775f1",
+          "sourceText": "Activates the Calming System",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "cfeaa107d373bbacfcfc09e2994627506ff29d562e4b0f220f3d5da9852352a5",
+          "sourceText": "When emotions are flooding, counting breaths gives the brain something specific to do. This interrupts the emotional spiral and engages the thinking brain instead of the reactive brain.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "6530c2c4d8ebfc0a7c373753baf6e2879bb16d7ebf213e441f0e00bddeeceab4",
+          "sourceText": "Gives Focus During Overwhelm",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "7a2c788f14fa79e22d36645c8306a33a4a5e3a2f2e2af80307c5c618e97415b0",
+          "sourceText": "When breathing exercises are taught during calm moments (not just crises), children build positive associations. The technique becomes a familiar, comforting tool rather than something imposed during meltdowns.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "f4a5401c054d35b8075cace7df4832f97f98b3e4eb25f1ae1089cab9cbb413e8",
+          "sourceText": "Creates Positive Associations",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "bac3147c6f7cf55844b3f52628f4cc54654b77e9930ea9cac51fc0147d745ecb",
+          "sourceText": "Teaching breathing as a response to emotions helps children recognize and name their feelings. 'I'm feeling upset, so I'll do my breathing' is a huge developmental step.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "9b80c5d65332d80692aad3908381392147c2ec758ea69f1af7d43c2c18a52bc8",
+          "sourceText": "Builds Emotional Vocabulary",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "b53a43c7b40cf79e38f13e9f2c41d7114e918ba0be3b2afe98bd54a56d9c9ee0",
+          "sourceText": "The key to teaching kids breathing exercises is making them fun and visual. Abstract instructions like 'take deep breaths' don't work for children. They need concrete imagery. 'Smell the flower, blow out the candle' gives their brain something to latch onto. These techniques are designed to be memorable, engaging, and effective for ages 4 and up.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "11f4cbf67c16fda9dfbeb5ccaf54e3cdcfbc1e33a61c82eb9c7cd9f3686447f7",
+          "sourceText": "Breathing Games That Actually Work",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "98383310ada5c57a15715ad29e7754c20102fecbbdf384401cf1d592631ee8fa",
+          "sourceText": "We recommend simple box breathing (3-3-3-3) for kids because it's easy to count, symmetrical (satisfying for young minds), and effective. The short counts keep children engaged without feeling overwhelmed. For very young children (4-5), we simplify further to just 'breathe in... breathe out' with fun imagery.",
+          "status": "route-catalog-exact"
+        },
+        "video.description": {
+          "sourceHash": "1f1e693ff1b864f8c8517714c1231cd205e87d76d79304f78699bba2288dcdaf",
+          "sourceText": "Elmo, Common, and Colbie Caillat teach kids how to calm their 'inner monster' with belly breathing. This fun, Emmy-nominated song makes learning breath control engaging for young children.",
+          "status": "route-catalog-exact"
+        },
+        "video.title": {
+          "sourceHash": "46e55fee53b834ad69eb9877194bdbb3d901d94d1dc0d7945d1fccf5812cfb72",
+          "sourceText": "Sesame Street: Belly Breathe with Elmo",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "es-es": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "3d4e1df147583f32dd5a40c3d1a2aca8d8421feb3b7d575b79b34bf06d27e6c5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "77e3c5fdb098a727e4a3b38cb4b78ed851d9032b53bb0c59440f74b2bef1ffec",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-pranayama-title": {
+          "sourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-box-app": {
+          "sourceHash": "7f77c1557f9441a20a2bcf9985050eae3c16380e63d8ef10af1f7aae4fdae7f4",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.watch-learn": {
+          "sourceHash": "749c5b04beadcb04ba360343552137e698cb4c1ff10cb680445f8b1f9ea5c543",
+          "status": "route-catalog-normalized"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "2c3a4017537548da15ddd60b1f10a03065a708289ed141824c5d6d351a9926b7",
+          "sourceText": "Children as young as 3-4 can start with very simple breathing games, 'smell the flower, blow out the candle.' By age 5-6, most children can do basic counted breathing (3 seconds per phase). By 7-8, they can handle standard techniques like box breathing. The key is making it age-appropriate and fun, not forcing adult techniques on young children.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "3031d0925e03639f57448ec19a29dcbeaf9e229bfc5e05025965e84d5fd7df41",
+          "sourceText": "What age can kids start doing breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "3b2cf0e2b23b3a5a711c968c1a769f8abc978b7afa6e18a6f665b86180c1f952",
+          "sourceText": "This is completely normal. During a meltdown, the emotional brain has taken over and the thinking brain is offline. They literally can't follow instructions. Instead: stay calm yourself (they co-regulate with you), offer comfort without demanding anything, and wait for the wave to pass. Introduce breathing during calm moments so it's familiar. Over time, they may start using it independently.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "4a66e8bab029de40315ee1897b09eec5f10d7e66cc1e29dd27ed0651c45eba8e",
+          "sourceText": "My child won't do breathing exercises during a meltdown. What should I do?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "fe5d87ea440fc8f180f1871bbac63cc9e222455b96a84fdda238b32ca914f7c2",
+          "sourceText": "Use props and imagery! Blow pinwheels, bubbles, or feathers. Place a stuffed animal on their belly to watch it rise and fall ('belly buddy'). Use visualizers like the one on this page. Rename the exercises: 'dragon breath,' 'balloon belly,' 'smell the pizza.' Make it a game, not a chore.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "8f07b40788a5143bbca6f8f1ec1be862fef52cda5b00e01c426a96cb9600a477",
+          "sourceText": "How do I make breathing exercises fun for kids?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "f9067b3c44caef8cb5fac4b75928635f311a184ba0b14a430b8912cc9f34d5a0",
+          "sourceText": "Breathing exercises can help children with ADHD manage impulsivity and emotional regulation, though they're not a replacement for other interventions. The structure and counting involved in techniques like box breathing can be particularly helpful. Keep sessions short (1-2 minutes) as sustained focus is challenging. Consult with your child's healthcare provider for personalized strategies.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].question": {
+          "sourceHash": "2e63aa8be18c1b1e9d9da9b24968f59c1077b07642ac0be67f46fee058223e58",
+          "sourceText": "Can breathing exercises help with ADHD?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "2a19eed613858ed7ead48535152fc168cead844ae9515178b97441c2bc4e79be",
+          "sourceText": "Never. Breathing exercises should be a helpful tool, not a punishment. Saying 'go do your breathing!' in anger makes it feel like timeout. Instead, model it yourself ('I'm feeling frustrated, I'm going to do some breathing') and offer it as an option ('Would you like to try some breathing together?'). Building positive associations is key.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].question": {
+          "sourceHash": "40fc0dcfa5de8c2e0170dfd7f1aceea968d7bacef1dfcb4dd2b3e67786d3ccbb",
+          "sourceText": "Should I use breathing exercises as a consequence or punishment?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "f17002780ed598042786ae0c5e774674f0a8037e35b4d6083859a80835c7f84b",
+          "sourceText": "For building the habit, 1-2 minutes daily during calm moments works well, perhaps as part of bedtime routine or before homework. The goal is making it familiar so it becomes a go-to tool during stress. You don't need long sessions; consistency matters more than duration.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[5].question": {
+          "sourceHash": "56779d4231a4c80ca56881b9e392478c6412b3933f2d1067718d11a501b488e3",
+          "sourceText": "How often should kids practice breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[6].answer": {
+          "sourceHash": "60b23551338aa007548f725190c40836f3f73f0994a8771273a81bc67254a315",
+          "sourceText": "Both calm the nervous system, but they work differently. Box breathing uses counted phases (4 seconds each: inhale, hold, exhale, hold), great for older kids (7+) who can count and follow structure. Balloon breathing is more visual: imagine inflating a balloon in your belly (big breath in, belly expands) and slowly letting the air out. Balloon breathing is easier for younger kids (3-6) because it uses imagination rather than counting. Start with balloon breathing for little ones, graduate to box breathing as they develop.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[6].question": {
+          "sourceHash": "7fd9cf7f59614957a4ae88a2869c6ba2a01bd1824fd5d9673217a851d80d49b4",
+          "sourceText": "What's the difference between box breathing and balloon breathing for kids?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "6e1e4e6f644998b8cfd5984ef16c855d307cc3a6ea2b1ec9d83a8472715ecb26",
+          "sourceText": "Children experience stress and big emotions just like adults, but they often lack the tools to manage them. These kid-friendly breathing exercises are designed to be fun, easy to remember, and effective. Whether your child struggles with anxiety, anger, or just needs help winding down, these techniques can help them find calm in minutes.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "df9461935001e5bfe58d04f0af81b66184188bf52e6156474e96f846524ed598",
+          "sourceText": "Simple calming techniques children can use anywhere",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "7696120540243ebfa54ae8f92ba7cda3ef477c27e9f3802c0d1b304ccf979643",
+          "sourceText": "Deep Breathing Exercises for Kids",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "0ebedf8247a924428de2383566364b33bc6b8a1cab36e6ca2d107c0b7404554d",
+          "sourceText": "Don't wait for a meltdown. Practice breathing exercises when your child is relaxed, maybe after bath time or before a story. Make it a fun game, not a discipline tool.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "87953f74af22c27f99752a81eda23e64e4cc659d202a4f6569fc87f836bdaa6a",
+          "sourceText": "Introduce it during calm moments",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "89f57e711bf07226037f475ce77541e0da2752c458f2343fbad69d5f8e2fc007",
+          "sourceText": "Regular practice",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "ab73bb7da8e401717d012dd736b0873275ebb675515b5a9e24e0640eb1da75c9",
+          "sourceText": "Instead of 'inhale,' say 'smell the flower.' Instead of 'exhale,' say 'blow out the candle.' For box breathing, try 'breathe in like you're smelling pizza, hold it like you're underwater, breathe out like you're blowing bubbles, wait like a statue.'",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "d5d8672b920e0030c97fa0982806e42718b56b3c186842b86565e7a975581d2a",
+          "sourceText": "Use kid-friendly imagery",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "0e0713397f07e66efd8e0c619c9131b8b4a62363aef8485929e46c849f8bf946",
+          "sourceText": "Every instruction",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "d19b20e0de7fb26318fb71b0659c8cfd19df6a0b76d18e39e90cb69d03095896",
+          "sourceText": "Start with 3-second counts instead of 4. Very young children (4-5) may only manage 2 seconds. That's fine, the rhythm matters more than the duration.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "e78302438f89421ea0c81847116fbbbcc9c8722f3c170a0f049ce0bb37c5e2ce",
+          "sourceText": "Keep counts short for young kids",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "25d7d5861608c3c643718cb4a013a673aa1437acb9e6278209ab138b019fa57b",
+          "sourceText": "3 counts per phase",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "b0b0bffd1266ce6d59ec826003d7ea00338d7087ff8db48cb1b1be51facb7ad1",
+          "sourceText": "Use the visualizer on this page, or have kids watch their belly rise and fall with a stuffed animal on it. Pinwheels, bubbles, and feathers make exhale practice fun.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "b6f986d37a6c5321bce005e85d7886450ad4dedfed40f7a68ad8d5d267d65eee",
+          "sourceText": "Make it visual",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "92c800e0f882e34530fc1e77e354c5f2d4da6ce295a0b7560b7c4d3771b8aae2",
+          "sourceText": "Use props",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "40f746fb560b11341c9961ac918c444880aaab8265922f6c9b3fb111df9e959e",
+          "sourceText": "Children learn by watching. Do the breathing alongside them. This also helps you stay calm, which helps them stay calm, co-regulation is powerful.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "9c194eb811ed31257b0146bb207bca220be5eb515de9a655abe205d9d6dfe872",
+          "sourceText": "Practice together",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "49e771a70964a13e6ba41277395df68c1fadb02f32cb690e785500b06a61bad4",
+          "sourceText": "Every session",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "d9469719121f50a1995fdf251e786f461abf3322110f1b8c3af45c32963098cc",
+          "sourceText": "Praise trying, not perfection. 'You did your breathing. That was brave!' helps build positive associations even if the breathing was messy.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "7443fe09803abed5b8408d2e5164b090f67f430e69495d40438a1b3df57d4aeb",
+          "sourceText": "Celebrate the effort",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "22eef079856110201945606608d8f9ca25ef0d2806931dd289bffe2d1204b777",
+          "sourceText": "After practice",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "114ce9518856bfd3465d95c769575223a59c3f5d501a62c2e220c2331e9b3c99",
+          "sourceText": "Practice when calm to build the habit before it's needed in crisis",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "73e4fe9ca306b45e3aae9c6be1fac6c336013518acd3cd362464a6ed5950428c",
+          "sourceText": "Keep a pinwheel or bubble wand handy for visual feedback",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "14ae8e9294712b0f21c32074d97de6c452f24fdcc2bb9e742a351e504bff8e88",
+          "sourceText": "Model the breathing yourself, kids learn by watching",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "0a2b21113dd55260a07831d5b2219f64aaf0dceaf4d04f345f77e1b840c49260",
+          "sourceText": "Don't force it during meltdowns; offer it as an option, not a command",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "df12cd7783604128ffed805e65533b536ab972287420f34e4bc80f7847f27d96",
+          "sourceText": "Use 'belly buddies', a stuffed animal on the belly that rises and falls with breath",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "daa4d671bcc049658f6095d50a8ffda59216262d17c72cd9d436c6457c870d65",
+          "sourceText": "Simple breathing exercises for kids that stop tantrums, ease anxiety, and help children fall asleep. Parent-tested with free visualizer. Ages 4+.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "90ac5fd7cc4ed6b16cb6577b2dff0089f0fb03cfb1d649eb97db1fb10e0d52fa",
+          "sourceText": "Simple breathing exercises kids can use anywhere. Stop tantrums, ease anxiety, improve sleep. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "0e67263991fd8556eef474bec7d4dd043b5551c74cc6004a71d78ba668be2029",
+          "sourceText": "Breathing Exercises for Kids: Calm Down Techniques",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "0e67263991fd8556eef474bec7d4dd043b5551c74cc6004a71d78ba668be2029",
+          "sourceText": "Deep Breathing Exercises for Kids: Calm Techniques",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "ba5bfd0425287a8a60343b07ef13a3d260122f49b32e9457fdd762f49e22698f",
+          "sourceText": "Simple breathing techniques kids love. Stop tantrums and ease anxiety in minutes.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "0e67263991fd8556eef474bec7d4dd043b5551c74cc6004a71d78ba668be2029",
+          "sourceText": "Breathing Exercises for Kids: Calm Down Techniques",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "990875a4008bd12e3e53325e7449b626cd9f9d521c590d70f6c028cb41de5cee",
+          "sourceText": "Children's brains are still developing the prefrontal cortex, the part responsible for emotional regulation. When they feel overwhelmed, scared, or angry, they literally lack the neural wiring to 'just calm down.' This isn't defiance; it's development. But we can give them tools that work with their biology to help regulate their emotions.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "6fcb119fd8636fcccbdbc5865af6f140df2c11348010c85eeacd862087a28c3d",
+          "sourceText": "Big Emotions, Limited Tools",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "c6c4cc7542419db7bec219b75f62307070bf72624b9c80b193690851210355ef",
+          "sourceText": "Tantrums or meltdowns over small frustrations",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "41947e9a9d0145ff8161c2433e3e09ddd1c99f7faa097045b128988187581668",
+          "sourceText": "Difficulty falling asleep or staying asleep",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "acd84f1006f28203fdf0fb7d91e98029414c1c831c2e9e241d4e4ce003e9658d",
+          "sourceText": "Anxiety about school, friends, or new situations",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "5374959dabf1a66ec2a0289e973e28df0ca86a025302ba98fadd30b9593b01c7",
+          "sourceText": "Anger outbursts that seem disproportionate",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "24364b756cbe1545355ea833234ffb8b7aab37b8ef87078c25e8c974f4332f02",
+          "sourceText": "Complaints of stomachaches or headaches (stress symptoms)",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "22ce8757585d1680a506f92f1c52764eb37cefe2be221c0fa9b05c4e1929d06a",
+          "sourceText": "Trouble transitioning between activities",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "27fec916504eeb599b080218bf7146dc9591a88fb293acef39f6713419f1b449",
+          "sourceText": "Overview of age-appropriate breathing techniques and why they work for children's developing brains.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "f83f7482f6cb69626ba4900b55a5351cfec6cddcca001037d09e335a13a15c0c",
+          "sourceText": "Deep breathing for kids: How to teach them calming techniques",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "48edf4d4187b8308d1bd0d3fbf4f60fe1532eaf4a0dbea2beb6b81caf2f541e4",
+          "sourceText": "Expert guide on teaching children breathing techniques for anxiety and emotional regulation.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "518bbec777b7f379758b95c7fc013d7edc2a1e3d22a3211b66d37a782fd5216e",
+          "sourceText": "Breathing Exercises for Kids",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "931cd5c514cecaa68b2bacacef4d74e232512fd8150bf180e18d9c877485ee2e",
+          "sourceText": "Research-backed overview of how breathing exercises support children's mental health.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "7c2c63210ed0645ce5503131fba71f9eb23ec5f1293ea2f02a859cab96ec7b3a",
+          "sourceText": "Can breathing exercises help children with anxiety?",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "9cce245efc10bb6e4784af545be7b356c179aabab99b5a3cbcecb96200a0c445",
+          "sourceText": "Learn the full Box Breathing technique",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "ae8df56f6b48cc71abb02ec2311098bbac47756ab101c8e901eaca49c27cd344",
+          "sourceText": "More breathing techniques for anxiety relief",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "9aa82ac2ad7889c826088c2362ed605cebfa68fb95e423b7986f58726ec33104",
+          "sourceText": "Breathing exercises for better sleep, works for kids too",
+          "status": "route-catalog-normalized"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "dbbf91ccc4cf3751f816a259689064e2259b0830fee04774d1178e705de88b55",
+          "sourceText": "Parents interested in yoga? Explore the pranayama tradition",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "86c1d9090f0ec00453a944bd9ce8a24ece0c3185b895d35f41d1773e79606512",
+          "sourceText": "Why Breathing Helps Kids",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "ffb4535649c0870c9101812aaa6d8d1dec10792e66623c6d473bd5cd2cb01e1d",
+          "sourceText": "Slow breathing activates the vagus nerve, which triggers the parasympathetic nervous system, the body's natural 'brake pedal' that counters fight-or-flight responses. [This works in children just as it does in adults](https://doi.org/10.1111/jcpp.12980).",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "6739a10b851bef187ec0016f6b2e8599be89f96d211c49d3b614f005775775f1",
+          "sourceText": "Activates the Calming System",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "cfeaa107d373bbacfcfc09e2994627506ff29d562e4b0f220f3d5da9852352a5",
+          "sourceText": "When emotions are flooding, counting breaths gives the brain something specific to do. This interrupts the emotional spiral and engages the thinking brain instead of the reactive brain.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "6530c2c4d8ebfc0a7c373753baf6e2879bb16d7ebf213e441f0e00bddeeceab4",
+          "sourceText": "Gives Focus During Overwhelm",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "7a2c788f14fa79e22d36645c8306a33a4a5e3a2f2e2af80307c5c618e97415b0",
+          "sourceText": "When breathing exercises are taught during calm moments (not just crises), children build positive associations. The technique becomes a familiar, comforting tool rather than something imposed during meltdowns.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "f4a5401c054d35b8075cace7df4832f97f98b3e4eb25f1ae1089cab9cbb413e8",
+          "sourceText": "Creates Positive Associations",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "bac3147c6f7cf55844b3f52628f4cc54654b77e9930ea9cac51fc0147d745ecb",
+          "sourceText": "Teaching breathing as a response to emotions helps children recognize and name their feelings. 'I'm feeling upset, so I'll do my breathing' is a huge developmental step.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "9b80c5d65332d80692aad3908381392147c2ec758ea69f1af7d43c2c18a52bc8",
+          "sourceText": "Builds Emotional Vocabulary",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "b53a43c7b40cf79e38f13e9f2c41d7114e918ba0be3b2afe98bd54a56d9c9ee0",
+          "sourceText": "The key to teaching kids breathing exercises is making them fun and visual. Abstract instructions like 'take deep breaths' don't work for children. They need concrete imagery. 'Smell the flower, blow out the candle' gives their brain something to latch onto. These techniques are designed to be memorable, engaging, and effective for ages 4 and up.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "11f4cbf67c16fda9dfbeb5ccaf54e3cdcfbc1e33a61c82eb9c7cd9f3686447f7",
+          "sourceText": "Breathing Games That Actually Work",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "98383310ada5c57a15715ad29e7754c20102fecbbdf384401cf1d592631ee8fa",
+          "sourceText": "We recommend simple box breathing (3-3-3-3) for kids because it's easy to count, symmetrical (satisfying for young minds), and effective. The short counts keep children engaged without feeling overwhelmed. For very young children (4-5), we simplify further to just 'breathe in... breathe out' with fun imagery.",
+          "status": "route-catalog-exact"
+        },
+        "video.description": {
+          "sourceHash": "1f1e693ff1b864f8c8517714c1231cd205e87d76d79304f78699bba2288dcdaf",
+          "sourceText": "Elmo, Common, and Colbie Caillat teach kids how to calm their 'inner monster' with belly breathing. This fun, Emmy-nominated song makes learning breath control engaging for young children.",
+          "status": "route-catalog-exact"
+        },
+        "video.title": {
+          "sourceHash": "46e55fee53b834ad69eb9877194bdbb3d901d94d1dc0d7945d1fccf5812cfb72",
+          "sourceText": "Sesame Street: Belly Breathe with Elmo",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "fr-fr": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "3d4e1df147583f32dd5a40c3d1a2aca8d8421feb3b7d575b79b34bf06d27e6c5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "77e3c5fdb098a727e4a3b38cb4b78ed851d9032b53bb0c59440f74b2bef1ffec",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-pranayama-title": {
+          "sourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-box-app": {
+          "sourceHash": "7f77c1557f9441a20a2bcf9985050eae3c16380e63d8ef10af1f7aae4fdae7f4",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.watch-learn": {
+          "sourceHash": "749c5b04beadcb04ba360343552137e698cb4c1ff10cb680445f8b1f9ea5c543",
+          "status": "route-catalog-normalized"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "2c3a4017537548da15ddd60b1f10a03065a708289ed141824c5d6d351a9926b7",
+          "sourceText": "Children as young as 3-4 can start with very simple breathing games, 'smell the flower, blow out the candle.' By age 5-6, most children can do basic counted breathing (3 seconds per phase). By 7-8, they can handle standard techniques like box breathing. The key is making it age-appropriate and fun, not forcing adult techniques on young children.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "3031d0925e03639f57448ec19a29dcbeaf9e229bfc5e05025965e84d5fd7df41",
+          "sourceText": "What age can kids start doing breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "3b2cf0e2b23b3a5a711c968c1a769f8abc978b7afa6e18a6f665b86180c1f952",
+          "sourceText": "This is completely normal. During a meltdown, the emotional brain has taken over and the thinking brain is offline. They literally can't follow instructions. Instead: stay calm yourself (they co-regulate with you), offer comfort without demanding anything, and wait for the wave to pass. Introduce breathing during calm moments so it's familiar. Over time, they may start using it independently.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "4a66e8bab029de40315ee1897b09eec5f10d7e66cc1e29dd27ed0651c45eba8e",
+          "sourceText": "My child won't do breathing exercises during a meltdown. What should I do?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "fe5d87ea440fc8f180f1871bbac63cc9e222455b96a84fdda238b32ca914f7c2",
+          "sourceText": "Use props and imagery! Blow pinwheels, bubbles, or feathers. Place a stuffed animal on their belly to watch it rise and fall ('belly buddy'). Use visualizers like the one on this page. Rename the exercises: 'dragon breath,' 'balloon belly,' 'smell the pizza.' Make it a game, not a chore.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "8f07b40788a5143bbca6f8f1ec1be862fef52cda5b00e01c426a96cb9600a477",
+          "sourceText": "How do I make breathing exercises fun for kids?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "f9067b3c44caef8cb5fac4b75928635f311a184ba0b14a430b8912cc9f34d5a0",
+          "sourceText": "Breathing exercises can help children with ADHD manage impulsivity and emotional regulation, though they're not a replacement for other interventions. The structure and counting involved in techniques like box breathing can be particularly helpful. Keep sessions short (1-2 minutes) as sustained focus is challenging. Consult with your child's healthcare provider for personalized strategies.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].question": {
+          "sourceHash": "2e63aa8be18c1b1e9d9da9b24968f59c1077b07642ac0be67f46fee058223e58",
+          "sourceText": "Can breathing exercises help with ADHD?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "2a19eed613858ed7ead48535152fc168cead844ae9515178b97441c2bc4e79be",
+          "sourceText": "Never. Breathing exercises should be a helpful tool, not a punishment. Saying 'go do your breathing!' in anger makes it feel like timeout. Instead, model it yourself ('I'm feeling frustrated, I'm going to do some breathing') and offer it as an option ('Would you like to try some breathing together?'). Building positive associations is key.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].question": {
+          "sourceHash": "40fc0dcfa5de8c2e0170dfd7f1aceea968d7bacef1dfcb4dd2b3e67786d3ccbb",
+          "sourceText": "Should I use breathing exercises as a consequence or punishment?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "f17002780ed598042786ae0c5e774674f0a8037e35b4d6083859a80835c7f84b",
+          "sourceText": "For building the habit, 1-2 minutes daily during calm moments works well, perhaps as part of bedtime routine or before homework. The goal is making it familiar so it becomes a go-to tool during stress. You don't need long sessions; consistency matters more than duration.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[5].question": {
+          "sourceHash": "56779d4231a4c80ca56881b9e392478c6412b3933f2d1067718d11a501b488e3",
+          "sourceText": "How often should kids practice breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[6].answer": {
+          "sourceHash": "60b23551338aa007548f725190c40836f3f73f0994a8771273a81bc67254a315",
+          "sourceText": "Both calm the nervous system, but they work differently. Box breathing uses counted phases (4 seconds each: inhale, hold, exhale, hold), great for older kids (7+) who can count and follow structure. Balloon breathing is more visual: imagine inflating a balloon in your belly (big breath in, belly expands) and slowly letting the air out. Balloon breathing is easier for younger kids (3-6) because it uses imagination rather than counting. Start with balloon breathing for little ones, graduate to box breathing as they develop.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[6].question": {
+          "sourceHash": "7fd9cf7f59614957a4ae88a2869c6ba2a01bd1824fd5d9673217a851d80d49b4",
+          "sourceText": "What's the difference between box breathing and balloon breathing for kids?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "6e1e4e6f644998b8cfd5984ef16c855d307cc3a6ea2b1ec9d83a8472715ecb26",
+          "sourceText": "Children experience stress and big emotions just like adults, but they often lack the tools to manage them. These kid-friendly breathing exercises are designed to be fun, easy to remember, and effective. Whether your child struggles with anxiety, anger, or just needs help winding down, these techniques can help them find calm in minutes.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "df9461935001e5bfe58d04f0af81b66184188bf52e6156474e96f846524ed598",
+          "sourceText": "Simple calming techniques children can use anywhere",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "7696120540243ebfa54ae8f92ba7cda3ef477c27e9f3802c0d1b304ccf979643",
+          "sourceText": "Deep Breathing Exercises for Kids",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "0ebedf8247a924428de2383566364b33bc6b8a1cab36e6ca2d107c0b7404554d",
+          "sourceText": "Don't wait for a meltdown. Practice breathing exercises when your child is relaxed, maybe after bath time or before a story. Make it a fun game, not a discipline tool.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "87953f74af22c27f99752a81eda23e64e4cc659d202a4f6569fc87f836bdaa6a",
+          "sourceText": "Introduce it during calm moments",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "89f57e711bf07226037f475ce77541e0da2752c458f2343fbad69d5f8e2fc007",
+          "sourceText": "Regular practice",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "ab73bb7da8e401717d012dd736b0873275ebb675515b5a9e24e0640eb1da75c9",
+          "sourceText": "Instead of 'inhale,' say 'smell the flower.' Instead of 'exhale,' say 'blow out the candle.' For box breathing, try 'breathe in like you're smelling pizza, hold it like you're underwater, breathe out like you're blowing bubbles, wait like a statue.'",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "d5d8672b920e0030c97fa0982806e42718b56b3c186842b86565e7a975581d2a",
+          "sourceText": "Use kid-friendly imagery",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "0e0713397f07e66efd8e0c619c9131b8b4a62363aef8485929e46c849f8bf946",
+          "sourceText": "Every instruction",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "d19b20e0de7fb26318fb71b0659c8cfd19df6a0b76d18e39e90cb69d03095896",
+          "sourceText": "Start with 3-second counts instead of 4. Very young children (4-5) may only manage 2 seconds. That's fine, the rhythm matters more than the duration.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "e78302438f89421ea0c81847116fbbbcc9c8722f3c170a0f049ce0bb37c5e2ce",
+          "sourceText": "Keep counts short for young kids",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "25d7d5861608c3c643718cb4a013a673aa1437acb9e6278209ab138b019fa57b",
+          "sourceText": "3 counts per phase",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "b0b0bffd1266ce6d59ec826003d7ea00338d7087ff8db48cb1b1be51facb7ad1",
+          "sourceText": "Use the visualizer on this page, or have kids watch their belly rise and fall with a stuffed animal on it. Pinwheels, bubbles, and feathers make exhale practice fun.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "b6f986d37a6c5321bce005e85d7886450ad4dedfed40f7a68ad8d5d267d65eee",
+          "sourceText": "Make it visual",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "92c800e0f882e34530fc1e77e354c5f2d4da6ce295a0b7560b7c4d3771b8aae2",
+          "sourceText": "Use props",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "40f746fb560b11341c9961ac918c444880aaab8265922f6c9b3fb111df9e959e",
+          "sourceText": "Children learn by watching. Do the breathing alongside them. This also helps you stay calm, which helps them stay calm, co-regulation is powerful.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "9c194eb811ed31257b0146bb207bca220be5eb515de9a655abe205d9d6dfe872",
+          "sourceText": "Practice together",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "49e771a70964a13e6ba41277395df68c1fadb02f32cb690e785500b06a61bad4",
+          "sourceText": "Every session",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "d9469719121f50a1995fdf251e786f461abf3322110f1b8c3af45c32963098cc",
+          "sourceText": "Praise trying, not perfection. 'You did your breathing. That was brave!' helps build positive associations even if the breathing was messy.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "7443fe09803abed5b8408d2e5164b090f67f430e69495d40438a1b3df57d4aeb",
+          "sourceText": "Celebrate the effort",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "22eef079856110201945606608d8f9ca25ef0d2806931dd289bffe2d1204b777",
+          "sourceText": "After practice",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "114ce9518856bfd3465d95c769575223a59c3f5d501a62c2e220c2331e9b3c99",
+          "sourceText": "Practice when calm to build the habit before it's needed in crisis",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "73e4fe9ca306b45e3aae9c6be1fac6c336013518acd3cd362464a6ed5950428c",
+          "sourceText": "Keep a pinwheel or bubble wand handy for visual feedback",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "14ae8e9294712b0f21c32074d97de6c452f24fdcc2bb9e742a351e504bff8e88",
+          "sourceText": "Model the breathing yourself, kids learn by watching",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "0a2b21113dd55260a07831d5b2219f64aaf0dceaf4d04f345f77e1b840c49260",
+          "sourceText": "Don't force it during meltdowns; offer it as an option, not a command",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "df12cd7783604128ffed805e65533b536ab972287420f34e4bc80f7847f27d96",
+          "sourceText": "Use 'belly buddies', a stuffed animal on the belly that rises and falls with breath",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "daa4d671bcc049658f6095d50a8ffda59216262d17c72cd9d436c6457c870d65",
+          "sourceText": "Simple breathing exercises for kids that stop tantrums, ease anxiety, and help children fall asleep. Parent-tested techniques with free visualizer. Ages 4+.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "90ac5fd7cc4ed6b16cb6577b2dff0089f0fb03cfb1d649eb97db1fb10e0d52fa",
+          "sourceText": "Simple breathing exercises kids can use anywhere. Stop tantrums, ease anxiety, improve sleep. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "0e67263991fd8556eef474bec7d4dd043b5551c74cc6004a71d78ba668be2029",
+          "sourceText": "Breathing Exercises for Kids: Calm Down Techniques",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "0e67263991fd8556eef474bec7d4dd043b5551c74cc6004a71d78ba668be2029",
+          "sourceText": "Breathing Exercises for Kids: Calm Down Techniques That Actually Work | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "ba5bfd0425287a8a60343b07ef13a3d260122f49b32e9457fdd762f49e22698f",
+          "sourceText": "Simple breathing techniques kids love. Stop tantrums and ease anxiety in minutes.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "0e67263991fd8556eef474bec7d4dd043b5551c74cc6004a71d78ba668be2029",
+          "sourceText": "Breathing Exercises for Kids: Calm Down Techniques",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "990875a4008bd12e3e53325e7449b626cd9f9d521c590d70f6c028cb41de5cee",
+          "sourceText": "Children's brains are still developing the prefrontal cortex, the part responsible for emotional regulation. When they feel overwhelmed, scared, or angry, they literally lack the neural wiring to 'just calm down.' This isn't defiance; it's development. But we can give them tools that work with their biology to help regulate their emotions.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "6fcb119fd8636fcccbdbc5865af6f140df2c11348010c85eeacd862087a28c3d",
+          "sourceText": "Big Emotions, Limited Tools",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "c6c4cc7542419db7bec219b75f62307070bf72624b9c80b193690851210355ef",
+          "sourceText": "Tantrums or meltdowns over small frustrations",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "41947e9a9d0145ff8161c2433e3e09ddd1c99f7faa097045b128988187581668",
+          "sourceText": "Difficulty falling asleep or staying asleep",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "acd84f1006f28203fdf0fb7d91e98029414c1c831c2e9e241d4e4ce003e9658d",
+          "sourceText": "Anxiety about school, friends, or new situations",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "5374959dabf1a66ec2a0289e973e28df0ca86a025302ba98fadd30b9593b01c7",
+          "sourceText": "Anger outbursts that seem disproportionate",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "24364b756cbe1545355ea833234ffb8b7aab37b8ef87078c25e8c974f4332f02",
+          "sourceText": "Complaints of stomachaches or headaches (stress symptoms)",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "22ce8757585d1680a506f92f1c52764eb37cefe2be221c0fa9b05c4e1929d06a",
+          "sourceText": "Trouble transitioning between activities",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "27fec916504eeb599b080218bf7146dc9591a88fb293acef39f6713419f1b449",
+          "sourceText": "Overview of age-appropriate breathing techniques and why they work for children's developing brains.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "f83f7482f6cb69626ba4900b55a5351cfec6cddcca001037d09e335a13a15c0c",
+          "sourceText": "Deep breathing for kids: How to teach them calming techniques",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "48edf4d4187b8308d1bd0d3fbf4f60fe1532eaf4a0dbea2beb6b81caf2f541e4",
+          "sourceText": "Expert guide on teaching children breathing techniques for anxiety and emotional regulation.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "518bbec777b7f379758b95c7fc013d7edc2a1e3d22a3211b66d37a782fd5216e",
+          "sourceText": "Breathing Exercises for Kids",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "931cd5c514cecaa68b2bacacef4d74e232512fd8150bf180e18d9c877485ee2e",
+          "sourceText": "Research-backed overview of how breathing exercises support children's mental health.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "7c2c63210ed0645ce5503131fba71f9eb23ec5f1293ea2f02a859cab96ec7b3a",
+          "sourceText": "Can breathing exercises help children with anxiety?",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "9cce245efc10bb6e4784af545be7b356c179aabab99b5a3cbcecb96200a0c445",
+          "sourceText": "Learn the full Box Breathing technique",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "ae8df56f6b48cc71abb02ec2311098bbac47756ab101c8e901eaca49c27cd344",
+          "sourceText": "More breathing techniques for anxiety relief",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "9aa82ac2ad7889c826088c2362ed605cebfa68fb95e423b7986f58726ec33104",
+          "sourceText": "Breathing exercises for better sleep, works for kids too",
+          "status": "route-catalog-normalized"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "dbbf91ccc4cf3751f816a259689064e2259b0830fee04774d1178e705de88b55",
+          "sourceText": "Parents interested in yoga? Explore the pranayama tradition",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "86c1d9090f0ec00453a944bd9ce8a24ece0c3185b895d35f41d1773e79606512",
+          "sourceText": "Why Breathing Helps Kids",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "ffb4535649c0870c9101812aaa6d8d1dec10792e66623c6d473bd5cd2cb01e1d",
+          "sourceText": "Slow breathing activates the vagus nerve, which triggers the parasympathetic nervous system, the body's natural 'brake pedal' that counters fight-or-flight responses. [This works in children just as it does in adults](https://doi.org/10.1111/jcpp.12980).",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "6739a10b851bef187ec0016f6b2e8599be89f96d211c49d3b614f005775775f1",
+          "sourceText": "Activates the Calming System",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "cfeaa107d373bbacfcfc09e2994627506ff29d562e4b0f220f3d5da9852352a5",
+          "sourceText": "When emotions are flooding, counting breaths gives the brain something specific to do. This interrupts the emotional spiral and engages the thinking brain instead of the reactive brain.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "6530c2c4d8ebfc0a7c373753baf6e2879bb16d7ebf213e441f0e00bddeeceab4",
+          "sourceText": "Gives Focus During Overwhelm",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "7a2c788f14fa79e22d36645c8306a33a4a5e3a2f2e2af80307c5c618e97415b0",
+          "sourceText": "When breathing exercises are taught during calm moments (not just crises), children build positive associations. The technique becomes a familiar, comforting tool rather than something imposed during meltdowns.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "f4a5401c054d35b8075cace7df4832f97f98b3e4eb25f1ae1089cab9cbb413e8",
+          "sourceText": "Creates Positive Associations",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "bac3147c6f7cf55844b3f52628f4cc54654b77e9930ea9cac51fc0147d745ecb",
+          "sourceText": "Teaching breathing as a response to emotions helps children recognize and name their feelings. 'I'm feeling upset, so I'll do my breathing' is a huge developmental step.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "9b80c5d65332d80692aad3908381392147c2ec758ea69f1af7d43c2c18a52bc8",
+          "sourceText": "Builds Emotional Vocabulary",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "b53a43c7b40cf79e38f13e9f2c41d7114e918ba0be3b2afe98bd54a56d9c9ee0",
+          "sourceText": "The key to teaching kids breathing exercises is making them fun and visual. Abstract instructions like 'take deep breaths' don't work for children. They need concrete imagery. 'Smell the flower, blow out the candle' gives their brain something to latch onto. These techniques are designed to be memorable, engaging, and effective for ages 4 and up.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "11f4cbf67c16fda9dfbeb5ccaf54e3cdcfbc1e33a61c82eb9c7cd9f3686447f7",
+          "sourceText": "Breathing Games That Actually Work",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "98383310ada5c57a15715ad29e7754c20102fecbbdf384401cf1d592631ee8fa",
+          "sourceText": "We recommend simple box breathing (3-3-3-3) for kids because it's easy to count, symmetrical (satisfying for young minds), and effective. The short counts keep children engaged without feeling overwhelmed. For very young children (4-5), we simplify further to just 'breathe in... breathe out' with fun imagery.",
+          "status": "route-catalog-exact"
+        },
+        "video.description": {
+          "sourceHash": "1f1e693ff1b864f8c8517714c1231cd205e87d76d79304f78699bba2288dcdaf",
+          "sourceText": "Elmo, Common, and Colbie Caillat teach kids how to calm their 'inner monster' with belly breathing. This fun, Emmy-nominated song makes learning breath control engaging for young children.",
+          "status": "route-catalog-exact"
+        },
+        "video.title": {
+          "sourceHash": "46e55fee53b834ad69eb9877194bdbb3d901d94d1dc0d7945d1fccf5812cfb72",
+          "sourceText": "Sesame Street: Belly Breathe with Elmo",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "ja-jp": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "3d4e1df147583f32dd5a40c3d1a2aca8d8421feb3b7d575b79b34bf06d27e6c5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "77e3c5fdb098a727e4a3b38cb4b78ed851d9032b53bb0c59440f74b2bef1ffec",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-pranayama-title": {
+          "sourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-box-app": {
+          "sourceHash": "7f77c1557f9441a20a2bcf9985050eae3c16380e63d8ef10af1f7aae4fdae7f4",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.watch-learn": {
+          "sourceHash": "749c5b04beadcb04ba360343552137e698cb4c1ff10cb680445f8b1f9ea5c543",
+          "status": "route-catalog-normalized"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "2c3a4017537548da15ddd60b1f10a03065a708289ed141824c5d6d351a9926b7",
+          "sourceText": "Children as young as 3-4 can start with very simple breathing games, 'smell the flower, blow out the candle.' By age 5-6, most children can do basic counted breathing (3 seconds per phase). By 7-8, they can handle standard techniques like box breathing. The key is making it age-appropriate and fun, not forcing adult techniques on young children.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "3031d0925e03639f57448ec19a29dcbeaf9e229bfc5e05025965e84d5fd7df41",
+          "sourceText": "What age can kids start doing breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "3b2cf0e2b23b3a5a711c968c1a769f8abc978b7afa6e18a6f665b86180c1f952",
+          "sourceText": "This is completely normal. During a meltdown, the emotional brain has taken over and the thinking brain is offline. They literally can't follow instructions. Instead: stay calm yourself (they co-regulate with you), offer comfort without demanding anything, and wait for the wave to pass. Introduce breathing during calm moments so it's familiar. Over time, they may start using it independently.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "4a66e8bab029de40315ee1897b09eec5f10d7e66cc1e29dd27ed0651c45eba8e",
+          "sourceText": "My child won't do breathing exercises during a meltdown. What should I do?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "fe5d87ea440fc8f180f1871bbac63cc9e222455b96a84fdda238b32ca914f7c2",
+          "sourceText": "Use props and imagery! Blow pinwheels, bubbles, or feathers. Place a stuffed animal on their belly to watch it rise and fall ('belly buddy'). Use visualizers like the one on this page. Rename the exercises: 'dragon breath,' 'balloon belly,' 'smell the pizza.' Make it a game, not a chore.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "8f07b40788a5143bbca6f8f1ec1be862fef52cda5b00e01c426a96cb9600a477",
+          "sourceText": "How do I make breathing exercises fun for kids?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "f9067b3c44caef8cb5fac4b75928635f311a184ba0b14a430b8912cc9f34d5a0",
+          "sourceText": "Breathing exercises can help children with ADHD manage impulsivity and emotional regulation, though they're not a replacement for other interventions. The structure and counting involved in techniques like box breathing can be particularly helpful. Keep sessions short (1-2 minutes) as sustained focus is challenging. Consult with your child's healthcare provider for personalized strategies.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].question": {
+          "sourceHash": "2e63aa8be18c1b1e9d9da9b24968f59c1077b07642ac0be67f46fee058223e58",
+          "sourceText": "Can breathing exercises help with ADHD?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "2a19eed613858ed7ead48535152fc168cead844ae9515178b97441c2bc4e79be",
+          "sourceText": "Never. Breathing exercises should be a helpful tool, not a punishment. Saying 'go do your breathing!' in anger makes it feel like timeout. Instead, model it yourself ('I'm feeling frustrated, I'm going to do some breathing') and offer it as an option ('Would you like to try some breathing together?'). Building positive associations is key.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].question": {
+          "sourceHash": "40fc0dcfa5de8c2e0170dfd7f1aceea968d7bacef1dfcb4dd2b3e67786d3ccbb",
+          "sourceText": "Should I use breathing exercises as a consequence or punishment?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "f17002780ed598042786ae0c5e774674f0a8037e35b4d6083859a80835c7f84b",
+          "sourceText": "For building the habit, 1-2 minutes daily during calm moments works well, perhaps as part of bedtime routine or before homework. The goal is making it familiar so it becomes a go-to tool during stress. You don't need long sessions; consistency matters more than duration.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[5].question": {
+          "sourceHash": "56779d4231a4c80ca56881b9e392478c6412b3933f2d1067718d11a501b488e3",
+          "sourceText": "How often should kids practice breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[6].answer": {
+          "sourceHash": "60b23551338aa007548f725190c40836f3f73f0994a8771273a81bc67254a315",
+          "sourceText": "Both calm the nervous system, but they work differently. Box breathing uses counted phases (4 seconds each: inhale, hold, exhale, hold), great for older kids (7+) who can count and follow structure. Balloon breathing is more visual: imagine inflating a balloon in your belly (big breath in, belly expands) and slowly letting the air out. Balloon breathing is easier for younger kids (3-6) because it uses imagination rather than counting. Start with balloon breathing for little ones, graduate to box breathing as they develop.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[6].question": {
+          "sourceHash": "7fd9cf7f59614957a4ae88a2869c6ba2a01bd1824fd5d9673217a851d80d49b4",
+          "sourceText": "What's the difference between box breathing and balloon breathing for kids?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "6e1e4e6f644998b8cfd5984ef16c855d307cc3a6ea2b1ec9d83a8472715ecb26",
+          "sourceText": "Children experience stress and big emotions just like adults, but they often lack the tools to manage them. These kid-friendly breathing exercises are designed to be fun, easy to remember, and effective. Whether your child struggles with anxiety, anger, or just needs help winding down, these techniques can help them find calm in minutes.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "df9461935001e5bfe58d04f0af81b66184188bf52e6156474e96f846524ed598",
+          "sourceText": "Simple calming techniques children can use anywhere",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "7696120540243ebfa54ae8f92ba7cda3ef477c27e9f3802c0d1b304ccf979643",
+          "sourceText": "Deep Breathing Exercises for Kids",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "0ebedf8247a924428de2383566364b33bc6b8a1cab36e6ca2d107c0b7404554d",
+          "sourceText": "Don't wait for a meltdown. Practice breathing exercises when your child is relaxed, maybe after bath time or before a story. Make it a fun game, not a discipline tool.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "87953f74af22c27f99752a81eda23e64e4cc659d202a4f6569fc87f836bdaa6a",
+          "sourceText": "Introduce it during calm moments",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "89f57e711bf07226037f475ce77541e0da2752c458f2343fbad69d5f8e2fc007",
+          "sourceText": "Regular practice",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "ab73bb7da8e401717d012dd736b0873275ebb675515b5a9e24e0640eb1da75c9",
+          "sourceText": "Instead of 'inhale,' say 'smell the flower.' Instead of 'exhale,' say 'blow out the candle.' For box breathing, try 'breathe in like you're smelling pizza, hold it like you're underwater, breathe out like you're blowing bubbles, wait like a statue.'",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "d5d8672b920e0030c97fa0982806e42718b56b3c186842b86565e7a975581d2a",
+          "sourceText": "Use kid-friendly imagery",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "0e0713397f07e66efd8e0c619c9131b8b4a62363aef8485929e46c849f8bf946",
+          "sourceText": "Every instruction",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "d19b20e0de7fb26318fb71b0659c8cfd19df6a0b76d18e39e90cb69d03095896",
+          "sourceText": "Start with 3-second counts instead of 4. Very young children (4-5) may only manage 2 seconds. That's fine, the rhythm matters more than the duration.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "e78302438f89421ea0c81847116fbbbcc9c8722f3c170a0f049ce0bb37c5e2ce",
+          "sourceText": "Keep counts short for young kids",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "25d7d5861608c3c643718cb4a013a673aa1437acb9e6278209ab138b019fa57b",
+          "sourceText": "3 counts per phase",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "b0b0bffd1266ce6d59ec826003d7ea00338d7087ff8db48cb1b1be51facb7ad1",
+          "sourceText": "Use the visualizer on this page, or have kids watch their belly rise and fall with a stuffed animal on it. Pinwheels, bubbles, and feathers make exhale practice fun.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "b6f986d37a6c5321bce005e85d7886450ad4dedfed40f7a68ad8d5d267d65eee",
+          "sourceText": "Make it visual",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "92c800e0f882e34530fc1e77e354c5f2d4da6ce295a0b7560b7c4d3771b8aae2",
+          "sourceText": "Use props",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "40f746fb560b11341c9961ac918c444880aaab8265922f6c9b3fb111df9e959e",
+          "sourceText": "Children learn by watching. Do the breathing alongside them. This also helps you stay calm, which helps them stay calm, co-regulation is powerful.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "9c194eb811ed31257b0146bb207bca220be5eb515de9a655abe205d9d6dfe872",
+          "sourceText": "Practice together",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "49e771a70964a13e6ba41277395df68c1fadb02f32cb690e785500b06a61bad4",
+          "sourceText": "Every session",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "d9469719121f50a1995fdf251e786f461abf3322110f1b8c3af45c32963098cc",
+          "sourceText": "Praise trying, not perfection. 'You did your breathing. That was brave!' helps build positive associations even if the breathing was messy.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "7443fe09803abed5b8408d2e5164b090f67f430e69495d40438a1b3df57d4aeb",
+          "sourceText": "Celebrate the effort",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "22eef079856110201945606608d8f9ca25ef0d2806931dd289bffe2d1204b777",
+          "sourceText": "After practice",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "114ce9518856bfd3465d95c769575223a59c3f5d501a62c2e220c2331e9b3c99",
+          "sourceText": "Practice when calm to build the habit before it's needed in crisis",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "73e4fe9ca306b45e3aae9c6be1fac6c336013518acd3cd362464a6ed5950428c",
+          "sourceText": "Keep a pinwheel or bubble wand handy for visual feedback",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "14ae8e9294712b0f21c32074d97de6c452f24fdcc2bb9e742a351e504bff8e88",
+          "sourceText": "Model the breathing yourself, kids learn by watching",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "0a2b21113dd55260a07831d5b2219f64aaf0dceaf4d04f345f77e1b840c49260",
+          "sourceText": "Don't force it during meltdowns; offer it as an option, not a command",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "df12cd7783604128ffed805e65533b536ab972287420f34e4bc80f7847f27d96",
+          "sourceText": "Use 'belly buddies', a stuffed animal on the belly that rises and falls with breath",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "daa4d671bcc049658f6095d50a8ffda59216262d17c72cd9d436c6457c870d65",
+          "sourceText": "Simple breathing exercises for kids that stop tantrums, ease anxiety, and help children fall asleep. Parent-tested techniques with free visualizer. Ages 4+.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "90ac5fd7cc4ed6b16cb6577b2dff0089f0fb03cfb1d649eb97db1fb10e0d52fa",
+          "sourceText": "Simple breathing exercises kids can use anywhere. Stop tantrums, ease anxiety, improve sleep. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "0e67263991fd8556eef474bec7d4dd043b5551c74cc6004a71d78ba668be2029",
+          "sourceText": "Breathing Exercises for Kids: Calm Down Techniques",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "0e67263991fd8556eef474bec7d4dd043b5551c74cc6004a71d78ba668be2029",
+          "sourceText": "Breathing Exercises for Kids: Calm Down Techniques That Actually Work | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "ba5bfd0425287a8a60343b07ef13a3d260122f49b32e9457fdd762f49e22698f",
+          "sourceText": "Simple breathing techniques kids love. Stop tantrums and ease anxiety in minutes.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "0e67263991fd8556eef474bec7d4dd043b5551c74cc6004a71d78ba668be2029",
+          "sourceText": "Breathing Exercises for Kids: Calm Down Techniques",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "990875a4008bd12e3e53325e7449b626cd9f9d521c590d70f6c028cb41de5cee",
+          "sourceText": "Children's brains are still developing the prefrontal cortex, the part responsible for emotional regulation. When they feel overwhelmed, scared, or angry, they literally lack the neural wiring to 'just calm down.' This isn't defiance; it's development. But we can give them tools that work with their biology to help regulate their emotions.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "6fcb119fd8636fcccbdbc5865af6f140df2c11348010c85eeacd862087a28c3d",
+          "sourceText": "Big Emotions, Limited Tools",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "c6c4cc7542419db7bec219b75f62307070bf72624b9c80b193690851210355ef",
+          "sourceText": "Tantrums or meltdowns over small frustrations",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "41947e9a9d0145ff8161c2433e3e09ddd1c99f7faa097045b128988187581668",
+          "sourceText": "Difficulty falling asleep or staying asleep",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "acd84f1006f28203fdf0fb7d91e98029414c1c831c2e9e241d4e4ce003e9658d",
+          "sourceText": "Anxiety about school, friends, or new situations",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "5374959dabf1a66ec2a0289e973e28df0ca86a025302ba98fadd30b9593b01c7",
+          "sourceText": "Anger outbursts that seem disproportionate",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "24364b756cbe1545355ea833234ffb8b7aab37b8ef87078c25e8c974f4332f02",
+          "sourceText": "Complaints of stomachaches or headaches (stress symptoms)",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "22ce8757585d1680a506f92f1c52764eb37cefe2be221c0fa9b05c4e1929d06a",
+          "sourceText": "Trouble transitioning between activities",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "27fec916504eeb599b080218bf7146dc9591a88fb293acef39f6713419f1b449",
+          "sourceText": "Overview of age-appropriate breathing techniques and why they work for children's developing brains.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "f83f7482f6cb69626ba4900b55a5351cfec6cddcca001037d09e335a13a15c0c",
+          "sourceText": "Deep breathing for kids: How to teach them calming techniques",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "48edf4d4187b8308d1bd0d3fbf4f60fe1532eaf4a0dbea2beb6b81caf2f541e4",
+          "sourceText": "Expert guide on teaching children breathing techniques for anxiety and emotional regulation.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "518bbec777b7f379758b95c7fc013d7edc2a1e3d22a3211b66d37a782fd5216e",
+          "sourceText": "Breathing Exercises for Kids",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "931cd5c514cecaa68b2bacacef4d74e232512fd8150bf180e18d9c877485ee2e",
+          "sourceText": "Research-backed overview of how breathing exercises support children's mental health.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "7c2c63210ed0645ce5503131fba71f9eb23ec5f1293ea2f02a859cab96ec7b3a",
+          "sourceText": "Can breathing exercises help children with anxiety?",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "9cce245efc10bb6e4784af545be7b356c179aabab99b5a3cbcecb96200a0c445",
+          "sourceText": "Learn the full Box Breathing technique",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "ae8df56f6b48cc71abb02ec2311098bbac47756ab101c8e901eaca49c27cd344",
+          "sourceText": "More breathing techniques for anxiety relief",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "9aa82ac2ad7889c826088c2362ed605cebfa68fb95e423b7986f58726ec33104",
+          "sourceText": "Breathing exercises for better sleep, works for kids too",
+          "status": "route-catalog-normalized"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "dbbf91ccc4cf3751f816a259689064e2259b0830fee04774d1178e705de88b55",
+          "sourceText": "Parents interested in yoga? Explore the pranayama tradition",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "86c1d9090f0ec00453a944bd9ce8a24ece0c3185b895d35f41d1773e79606512",
+          "sourceText": "Why Breathing Helps Kids",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "ffb4535649c0870c9101812aaa6d8d1dec10792e66623c6d473bd5cd2cb01e1d",
+          "sourceText": "Slow breathing activates the vagus nerve, which triggers the parasympathetic nervous system, the body's natural 'brake pedal' that counters fight-or-flight responses. [This works in children just as it does in adults](https://doi.org/10.1111/jcpp.12980).",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "6739a10b851bef187ec0016f6b2e8599be89f96d211c49d3b614f005775775f1",
+          "sourceText": "Activates the Calming System",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "cfeaa107d373bbacfcfc09e2994627506ff29d562e4b0f220f3d5da9852352a5",
+          "sourceText": "When emotions are flooding, counting breaths gives the brain something specific to do. This interrupts the emotional spiral and engages the thinking brain instead of the reactive brain.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "6530c2c4d8ebfc0a7c373753baf6e2879bb16d7ebf213e441f0e00bddeeceab4",
+          "sourceText": "Gives Focus During Overwhelm",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "7a2c788f14fa79e22d36645c8306a33a4a5e3a2f2e2af80307c5c618e97415b0",
+          "sourceText": "When breathing exercises are taught during calm moments (not just crises), children build positive associations. The technique becomes a familiar, comforting tool rather than something imposed during meltdowns.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "f4a5401c054d35b8075cace7df4832f97f98b3e4eb25f1ae1089cab9cbb413e8",
+          "sourceText": "Creates Positive Associations",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "bac3147c6f7cf55844b3f52628f4cc54654b77e9930ea9cac51fc0147d745ecb",
+          "sourceText": "Teaching breathing as a response to emotions helps children recognize and name their feelings. 'I'm feeling upset, so I'll do my breathing' is a huge developmental step.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "9b80c5d65332d80692aad3908381392147c2ec758ea69f1af7d43c2c18a52bc8",
+          "sourceText": "Builds Emotional Vocabulary",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "b53a43c7b40cf79e38f13e9f2c41d7114e918ba0be3b2afe98bd54a56d9c9ee0",
+          "sourceText": "The key to teaching kids breathing exercises is making them fun and visual. Abstract instructions like 'take deep breaths' don't work for children. They need concrete imagery. 'Smell the flower, blow out the candle' gives their brain something to latch onto. These techniques are designed to be memorable, engaging, and effective for ages 4 and up.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "11f4cbf67c16fda9dfbeb5ccaf54e3cdcfbc1e33a61c82eb9c7cd9f3686447f7",
+          "sourceText": "Breathing Games That Actually Work",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "98383310ada5c57a15715ad29e7754c20102fecbbdf384401cf1d592631ee8fa",
+          "sourceText": "We recommend simple box breathing (3-3-3-3) for kids because it's easy to count, symmetrical (satisfying for young minds), and effective. The short counts keep children engaged without feeling overwhelmed. For very young children (4-5), we simplify further to just 'breathe in... breathe out' with fun imagery.",
+          "status": "route-catalog-exact"
+        },
+        "video.description": {
+          "sourceHash": "1f1e693ff1b864f8c8517714c1231cd205e87d76d79304f78699bba2288dcdaf",
+          "sourceText": "Elmo, Common, and Colbie Caillat teach kids how to calm their 'inner monster' with belly breathing. This fun, Emmy-nominated song makes learning breath control engaging for young children.",
+          "status": "route-catalog-exact"
+        },
+        "video.title": {
+          "sourceHash": "46e55fee53b834ad69eb9877194bdbb3d901d94d1dc0d7945d1fccf5812cfb72",
+          "sourceText": "Sesame Street: Belly Breathe with Elmo",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "pt-br": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "3d4e1df147583f32dd5a40c3d1a2aca8d8421feb3b7d575b79b34bf06d27e6c5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "77e3c5fdb098a727e4a3b38cb4b78ed851d9032b53bb0c59440f74b2bef1ffec",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-pranayama-title": {
+          "sourceHash": "5155d72a31b22ade13bece8ff330147eaae79e0debc6b066be3b6aa775c91c09",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-box-app": {
+          "sourceHash": "7f77c1557f9441a20a2bcf9985050eae3c16380e63d8ef10af1f7aae4fdae7f4",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.watch-learn": {
+          "sourceHash": "749c5b04beadcb04ba360343552137e698cb4c1ff10cb680445f8b1f9ea5c543",
+          "status": "route-catalog-normalized"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "2c3a4017537548da15ddd60b1f10a03065a708289ed141824c5d6d351a9926b7",
+          "sourceText": "Children as young as 3-4 can start with very simple breathing games, 'smell the flower, blow out the candle.' By age 5-6, most children can do basic counted breathing (3 seconds per phase). By 7-8, they can handle standard techniques like box breathing. The key is making it age-appropriate and fun, not forcing adult techniques on young children.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "3031d0925e03639f57448ec19a29dcbeaf9e229bfc5e05025965e84d5fd7df41",
+          "sourceText": "What age can kids start doing breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "3b2cf0e2b23b3a5a711c968c1a769f8abc978b7afa6e18a6f665b86180c1f952",
+          "sourceText": "This is completely normal. During a meltdown, the emotional brain has taken over and the thinking brain is offline. They literally can't follow instructions. Instead: stay calm yourself (they co-regulate with you), offer comfort without demanding anything, and wait for the wave to pass. Introduce breathing during calm moments so it's familiar. Over time, they may start using it independently.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "4a66e8bab029de40315ee1897b09eec5f10d7e66cc1e29dd27ed0651c45eba8e",
+          "sourceText": "My child won't do breathing exercises during a meltdown. What should I do?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "fe5d87ea440fc8f180f1871bbac63cc9e222455b96a84fdda238b32ca914f7c2",
+          "sourceText": "Use props and imagery! Blow pinwheels, bubbles, or feathers. Place a stuffed animal on their belly to watch it rise and fall ('belly buddy'). Use visualizers like the one on this page. Rename the exercises: 'dragon breath,' 'balloon belly,' 'smell the pizza.' Make it a game, not a chore.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "8f07b40788a5143bbca6f8f1ec1be862fef52cda5b00e01c426a96cb9600a477",
+          "sourceText": "How do I make breathing exercises fun for kids?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "f9067b3c44caef8cb5fac4b75928635f311a184ba0b14a430b8912cc9f34d5a0",
+          "sourceText": "Breathing exercises can help children with ADHD manage impulsivity and emotional regulation, though they're not a replacement for other interventions. The structure and counting involved in techniques like box breathing can be particularly helpful. Keep sessions short (1-2 minutes) as sustained focus is challenging. Consult with your child's healthcare provider for personalized strategies.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].question": {
+          "sourceHash": "2e63aa8be18c1b1e9d9da9b24968f59c1077b07642ac0be67f46fee058223e58",
+          "sourceText": "Can breathing exercises help with ADHD?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "2a19eed613858ed7ead48535152fc168cead844ae9515178b97441c2bc4e79be",
+          "sourceText": "Never. Breathing exercises should be a helpful tool, not a punishment. Saying 'go do your breathing!' in anger makes it feel like timeout. Instead, model it yourself ('I'm feeling frustrated, I'm going to do some breathing') and offer it as an option ('Would you like to try some breathing together?'). Building positive associations is key.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].question": {
+          "sourceHash": "40fc0dcfa5de8c2e0170dfd7f1aceea968d7bacef1dfcb4dd2b3e67786d3ccbb",
+          "sourceText": "Should I use breathing exercises as a consequence or punishment?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "f17002780ed598042786ae0c5e774674f0a8037e35b4d6083859a80835c7f84b",
+          "sourceText": "For building the habit, 1-2 minutes daily during calm moments works well, perhaps as part of bedtime routine or before homework. The goal is making it familiar so it becomes a go-to tool during stress. You don't need long sessions; consistency matters more than duration.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[5].question": {
+          "sourceHash": "56779d4231a4c80ca56881b9e392478c6412b3933f2d1067718d11a501b488e3",
+          "sourceText": "How often should kids practice breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[6].answer": {
+          "sourceHash": "60b23551338aa007548f725190c40836f3f73f0994a8771273a81bc67254a315",
+          "sourceText": "Both calm the nervous system, but they work differently. Box breathing uses counted phases (4 seconds each: inhale, hold, exhale, hold), great for older kids (7+) who can count and follow structure. Balloon breathing is more visual: imagine inflating a balloon in your belly (big breath in, belly expands) and slowly letting the air out. Balloon breathing is easier for younger kids (3-6) because it uses imagination rather than counting. Start with balloon breathing for little ones, graduate to box breathing as they develop.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[6].question": {
+          "sourceHash": "7fd9cf7f59614957a4ae88a2869c6ba2a01bd1824fd5d9673217a851d80d49b4",
+          "sourceText": "What's the difference between box breathing and balloon breathing for kids?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "6e1e4e6f644998b8cfd5984ef16c855d307cc3a6ea2b1ec9d83a8472715ecb26",
+          "sourceText": "Children experience stress and big emotions just like adults, but they often lack the tools to manage them. These kid-friendly breathing exercises are designed to be fun, easy to remember, and effective. Whether your child struggles with anxiety, anger, or just needs help winding down, these techniques can help them find calm in minutes.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "df9461935001e5bfe58d04f0af81b66184188bf52e6156474e96f846524ed598",
+          "sourceText": "Simple calming techniques children can use anywhere",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "7696120540243ebfa54ae8f92ba7cda3ef477c27e9f3802c0d1b304ccf979643",
+          "sourceText": "Deep Breathing Exercises for Kids",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "0ebedf8247a924428de2383566364b33bc6b8a1cab36e6ca2d107c0b7404554d",
+          "sourceText": "Don't wait for a meltdown. Practice breathing exercises when your child is relaxed, maybe after bath time or before a story. Make it a fun game, not a discipline tool.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "87953f74af22c27f99752a81eda23e64e4cc659d202a4f6569fc87f836bdaa6a",
+          "sourceText": "Introduce it during calm moments",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "89f57e711bf07226037f475ce77541e0da2752c458f2343fbad69d5f8e2fc007",
+          "sourceText": "Regular practice",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "ab73bb7da8e401717d012dd736b0873275ebb675515b5a9e24e0640eb1da75c9",
+          "sourceText": "Instead of 'inhale,' say 'smell the flower.' Instead of 'exhale,' say 'blow out the candle.' For box breathing, try 'breathe in like you're smelling pizza, hold it like you're underwater, breathe out like you're blowing bubbles, wait like a statue.'",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "d5d8672b920e0030c97fa0982806e42718b56b3c186842b86565e7a975581d2a",
+          "sourceText": "Use kid-friendly imagery",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "0e0713397f07e66efd8e0c619c9131b8b4a62363aef8485929e46c849f8bf946",
+          "sourceText": "Every instruction",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "d19b20e0de7fb26318fb71b0659c8cfd19df6a0b76d18e39e90cb69d03095896",
+          "sourceText": "Start with 3-second counts instead of 4. Very young children (4-5) may only manage 2 seconds. That's fine, the rhythm matters more than the duration.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "e78302438f89421ea0c81847116fbbbcc9c8722f3c170a0f049ce0bb37c5e2ce",
+          "sourceText": "Keep counts short for young kids",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "25d7d5861608c3c643718cb4a013a673aa1437acb9e6278209ab138b019fa57b",
+          "sourceText": "3 counts per phase",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "b0b0bffd1266ce6d59ec826003d7ea00338d7087ff8db48cb1b1be51facb7ad1",
+          "sourceText": "Use the visualizer on this page, or have kids watch their belly rise and fall with a stuffed animal on it. Pinwheels, bubbles, and feathers make exhale practice fun.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "b6f986d37a6c5321bce005e85d7886450ad4dedfed40f7a68ad8d5d267d65eee",
+          "sourceText": "Make it visual",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "92c800e0f882e34530fc1e77e354c5f2d4da6ce295a0b7560b7c4d3771b8aae2",
+          "sourceText": "Use props",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "40f746fb560b11341c9961ac918c444880aaab8265922f6c9b3fb111df9e959e",
+          "sourceText": "Children learn by watching. Do the breathing alongside them. This also helps you stay calm, which helps them stay calm, co-regulation is powerful.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "9c194eb811ed31257b0146bb207bca220be5eb515de9a655abe205d9d6dfe872",
+          "sourceText": "Practice together",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "49e771a70964a13e6ba41277395df68c1fadb02f32cb690e785500b06a61bad4",
+          "sourceText": "Every session",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "d9469719121f50a1995fdf251e786f461abf3322110f1b8c3af45c32963098cc",
+          "sourceText": "Praise trying, not perfection. 'You did your breathing. That was brave!' helps build positive associations even if the breathing was messy.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "7443fe09803abed5b8408d2e5164b090f67f430e69495d40438a1b3df57d4aeb",
+          "sourceText": "Celebrate the effort",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "22eef079856110201945606608d8f9ca25ef0d2806931dd289bffe2d1204b777",
+          "sourceText": "After practice",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "114ce9518856bfd3465d95c769575223a59c3f5d501a62c2e220c2331e9b3c99",
+          "sourceText": "Practice when calm to build the habit before it's needed in crisis",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "73e4fe9ca306b45e3aae9c6be1fac6c336013518acd3cd362464a6ed5950428c",
+          "sourceText": "Keep a pinwheel or bubble wand handy for visual feedback",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "14ae8e9294712b0f21c32074d97de6c452f24fdcc2bb9e742a351e504bff8e88",
+          "sourceText": "Model the breathing yourself, kids learn by watching",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "0a2b21113dd55260a07831d5b2219f64aaf0dceaf4d04f345f77e1b840c49260",
+          "sourceText": "Don't force it during meltdowns; offer it as an option, not a command",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "df12cd7783604128ffed805e65533b536ab972287420f34e4bc80f7847f27d96",
+          "sourceText": "Use 'belly buddies', a stuffed animal on the belly that rises and falls with breath",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "daa4d671bcc049658f6095d50a8ffda59216262d17c72cd9d436c6457c870d65",
+          "sourceText": "Simple breathing exercises for kids that stop tantrums, ease anxiety, and help children fall asleep. Parent-tested techniques with free visualizer. Ages 4+.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "90ac5fd7cc4ed6b16cb6577b2dff0089f0fb03cfb1d649eb97db1fb10e0d52fa",
+          "sourceText": "Simple breathing exercises kids can use anywhere. Stop tantrums, ease anxiety, improve sleep. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "0e67263991fd8556eef474bec7d4dd043b5551c74cc6004a71d78ba668be2029",
+          "sourceText": "Breathing Exercises for Kids: Calm Down Techniques",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "0e67263991fd8556eef474bec7d4dd043b5551c74cc6004a71d78ba668be2029",
+          "sourceText": "Breathing Exercises for Kids: Calm Down Techniques That Actually Work | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "ba5bfd0425287a8a60343b07ef13a3d260122f49b32e9457fdd762f49e22698f",
+          "sourceText": "Simple breathing techniques kids love. Stop tantrums and ease anxiety in minutes.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "0e67263991fd8556eef474bec7d4dd043b5551c74cc6004a71d78ba668be2029",
+          "sourceText": "Breathing Exercises for Kids: Calm Down Techniques",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "990875a4008bd12e3e53325e7449b626cd9f9d521c590d70f6c028cb41de5cee",
+          "sourceText": "Children's brains are still developing the prefrontal cortex, the part responsible for emotional regulation. When they feel overwhelmed, scared, or angry, they literally lack the neural wiring to 'just calm down.' This isn't defiance; it's development. But we can give them tools that work with their biology to help regulate their emotions.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "6fcb119fd8636fcccbdbc5865af6f140df2c11348010c85eeacd862087a28c3d",
+          "sourceText": "Big Emotions, Limited Tools",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "c6c4cc7542419db7bec219b75f62307070bf72624b9c80b193690851210355ef",
+          "sourceText": "Tantrums or meltdowns over small frustrations",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "41947e9a9d0145ff8161c2433e3e09ddd1c99f7faa097045b128988187581668",
+          "sourceText": "Difficulty falling asleep or staying asleep",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "acd84f1006f28203fdf0fb7d91e98029414c1c831c2e9e241d4e4ce003e9658d",
+          "sourceText": "Anxiety about school, friends, or new situations",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "5374959dabf1a66ec2a0289e973e28df0ca86a025302ba98fadd30b9593b01c7",
+          "sourceText": "Anger outbursts that seem disproportionate",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "24364b756cbe1545355ea833234ffb8b7aab37b8ef87078c25e8c974f4332f02",
+          "sourceText": "Complaints of stomachaches or headaches (stress symptoms)",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "22ce8757585d1680a506f92f1c52764eb37cefe2be221c0fa9b05c4e1929d06a",
+          "sourceText": "Trouble transitioning between activities",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "27fec916504eeb599b080218bf7146dc9591a88fb293acef39f6713419f1b449",
+          "sourceText": "Overview of age-appropriate breathing techniques and why they work for children's developing brains.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "f83f7482f6cb69626ba4900b55a5351cfec6cddcca001037d09e335a13a15c0c",
+          "sourceText": "Deep breathing for kids: How to teach them calming techniques",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "48edf4d4187b8308d1bd0d3fbf4f60fe1532eaf4a0dbea2beb6b81caf2f541e4",
+          "sourceText": "Expert guide on teaching children breathing techniques for anxiety and emotional regulation.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "518bbec777b7f379758b95c7fc013d7edc2a1e3d22a3211b66d37a782fd5216e",
+          "sourceText": "Breathing Exercises for Kids",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "931cd5c514cecaa68b2bacacef4d74e232512fd8150bf180e18d9c877485ee2e",
+          "sourceText": "Research-backed overview of how breathing exercises support children's mental health.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "7c2c63210ed0645ce5503131fba71f9eb23ec5f1293ea2f02a859cab96ec7b3a",
+          "sourceText": "Can breathing exercises help children with anxiety?",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "9cce245efc10bb6e4784af545be7b356c179aabab99b5a3cbcecb96200a0c445",
+          "sourceText": "Learn the full Box Breathing technique",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "ae8df56f6b48cc71abb02ec2311098bbac47756ab101c8e901eaca49c27cd344",
+          "sourceText": "More breathing techniques for anxiety relief",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "9aa82ac2ad7889c826088c2362ed605cebfa68fb95e423b7986f58726ec33104",
+          "sourceText": "Breathing exercises for better sleep, works for kids too",
+          "status": "route-catalog-normalized"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "dbbf91ccc4cf3751f816a259689064e2259b0830fee04774d1178e705de88b55",
+          "sourceText": "Parents interested in yoga? Explore the pranayama tradition",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "86c1d9090f0ec00453a944bd9ce8a24ece0c3185b895d35f41d1773e79606512",
+          "sourceText": "Why Breathing Helps Kids",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "ffb4535649c0870c9101812aaa6d8d1dec10792e66623c6d473bd5cd2cb01e1d",
+          "sourceText": "Slow breathing activates the vagus nerve, which triggers the parasympathetic nervous system, the body's natural 'brake pedal' that counters fight-or-flight responses. [This works in children just as it does in adults](https://doi.org/10.1111/jcpp.12980).",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "6739a10b851bef187ec0016f6b2e8599be89f96d211c49d3b614f005775775f1",
+          "sourceText": "Activates the Calming System",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "cfeaa107d373bbacfcfc09e2994627506ff29d562e4b0f220f3d5da9852352a5",
+          "sourceText": "When emotions are flooding, counting breaths gives the brain something specific to do. This interrupts the emotional spiral and engages the thinking brain instead of the reactive brain.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "6530c2c4d8ebfc0a7c373753baf6e2879bb16d7ebf213e441f0e00bddeeceab4",
+          "sourceText": "Gives Focus During Overwhelm",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "7a2c788f14fa79e22d36645c8306a33a4a5e3a2f2e2af80307c5c618e97415b0",
+          "sourceText": "When breathing exercises are taught during calm moments (not just crises), children build positive associations. The technique becomes a familiar, comforting tool rather than something imposed during meltdowns.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "f4a5401c054d35b8075cace7df4832f97f98b3e4eb25f1ae1089cab9cbb413e8",
+          "sourceText": "Creates Positive Associations",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "bac3147c6f7cf55844b3f52628f4cc54654b77e9930ea9cac51fc0147d745ecb",
+          "sourceText": "Teaching breathing as a response to emotions helps children recognize and name their feelings. 'I'm feeling upset, so I'll do my breathing' is a huge developmental step.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "9b80c5d65332d80692aad3908381392147c2ec758ea69f1af7d43c2c18a52bc8",
+          "sourceText": "Builds Emotional Vocabulary",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "b53a43c7b40cf79e38f13e9f2c41d7114e918ba0be3b2afe98bd54a56d9c9ee0",
+          "sourceText": "The key to teaching kids breathing exercises is making them fun and visual. Abstract instructions like 'take deep breaths' don't work for children. They need concrete imagery. 'Smell the flower, blow out the candle' gives their brain something to latch onto. These techniques are designed to be memorable, engaging, and effective for ages 4 and up.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "11f4cbf67c16fda9dfbeb5ccaf54e3cdcfbc1e33a61c82eb9c7cd9f3686447f7",
+          "sourceText": "Breathing Games That Actually Work",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "98383310ada5c57a15715ad29e7754c20102fecbbdf384401cf1d592631ee8fa",
+          "sourceText": "We recommend simple box breathing (3-3-3-3) for kids because it's easy to count, symmetrical (satisfying for young minds), and effective. The short counts keep children engaged without feeling overwhelmed. For very young children (4-5), we simplify further to just 'breathe in... breathe out' with fun imagery.",
+          "status": "route-catalog-exact"
+        },
+        "video.description": {
+          "sourceHash": "1f1e693ff1b864f8c8517714c1231cd205e87d76d79304f78699bba2288dcdaf",
+          "sourceText": "Elmo, Common, and Colbie Caillat teach kids how to calm their 'inner monster' with belly breathing. This fun, Emmy-nominated song makes learning breath control engaging for young children.",
+          "status": "route-catalog-exact"
+        },
+        "video.title": {
+          "sourceHash": "46e55fee53b834ad69eb9877194bdbb3d901d94d1dc0d7945d1fccf5812cfb72",
+          "sourceText": "Sesame Street: Belly Breathe with Elmo",
+          "status": "route-catalog-exact"
+        }
+      }
+    }
+  },
+  "schemaVersion": 1,
+  "sourceRoute": "/for/kids"
+}

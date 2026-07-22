@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "replacements": [
+    {
+      "messagePath": "hero.actions.startSession",
+      "sourceText": "Start session",
+      "reviewedSourceHash": "b1c52ee3677debeb3b2e7dc8b41d1da1b08c02241ec1cc1f35d28637afcecf5c",
+      "reason": "The Spanish catalog value is the conventional login command; this restores the breathing-session meaning.",
+      "translations": { "es-es": "Iniciar la sesión" }
+    },
+    {
+      "messagePath": "sections.modePicker.featured.box.startCta",
+      "sourceText": "Start session →",
+      "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+      "reason": "The Spanish catalog value reads as login, and the Portuguese value is missing the article required in this CTA context.",
+      "translations": { "es-es": "Iniciar la sesión →", "pt-br": "Iniciar a sessão →" }
+    },
+    {
+      "messagePath": "sections.modePicker.featured.fourSevenEight.startCta",
+      "sourceText": "Start session →",
+      "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+      "reason": "The Spanish catalog value reads as login, and the Portuguese value is missing the article required in this CTA context.",
+      "translations": { "es-es": "Iniciar la sesión →", "pt-br": "Iniciar a sessão →" }
+    },
+    {
+      "messagePath": "sections.modePicker.featured.coherent.startCta",
+      "sourceText": "Start session →",
+      "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+      "reason": "The Spanish catalog value reads as login, and the Portuguese value is missing the article required in this CTA context.",
+      "translations": { "es-es": "Iniciar la sesión →", "pt-br": "Iniciar a sessão →" }
+    },
+    {
+      "messagePath": "sections.modePicker.featured.physiologicalSigh.startCta",
+      "sourceText": "Start session →",
+      "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+      "reason": "The Spanish catalog value reads as login, and the Portuguese value is missing the article required in this CTA context.",
+      "translations": { "es-es": "Iniciar la sesión →", "pt-br": "Iniciar a sessão →" }
+    },
+    {
+      "messagePath": "sections.modePicker.featured.wimHof.startCta",
+      "sourceText": "Start session →",
+      "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+      "reason": "The Spanish catalog value reads as login, and the Portuguese value is missing the article required in this CTA context.",
+      "translations": { "es-es": "Iniciar la sesión →", "pt-br": "Iniciar a sessão →" }
+    },
+    {
+      "messagePath": "metadata.title",
+      "sourceText": "Free Breathing Visualizer: Calm Anxiety in 60 Seconds",
+      "reviewedSourceHash": "f6d6f6d2a3b510810137615ece041ce5696e82ab943ceea6f67085c0f6fff900",
+      "reason": "The Spanish catalog title drops the source's 60-second promise.",
+      "translations": { "es-es": "Visualizador de respiración gratuito: calma la ansiedad en 60 segundos" }
+    },
+    {
+      "messagePath": "metadata.openGraph.title",
+      "sourceText": "Free Breathing Visualizer: Calm Anxiety in 60 Seconds",
+      "reviewedSourceHash": "f6d6f6d2a3b510810137615ece041ce5696e82ab943ceea6f67085c0f6fff900",
+      "reason": "The Spanish catalog title drops the source's 60-second promise.",
+      "translations": { "es-es": "Visualizador de respiración gratis: calma la ansiedad en 60 segundos" }
+    },
+    {
+      "messagePath": "metadata.twitter.title",
+      "sourceText": "Free Breathing Visualizer: Calm Anxiety in 60 Seconds",
+      "reviewedSourceHash": "f6d6f6d2a3b510810137615ece041ce5696e82ab943ceea6f67085c0f6fff900",
+      "reason": "The Spanish catalog title drops the source's 60-second promise.",
+      "translations": { "es-es": "Visualizador de respiración gratis: calma la ansiedad en 60 segundos" }
+    },
+    {
+      "messagePath": "metadata.openGraph.description",
+      "sourceText": "Calm anxiety in 60 seconds with our free breathing visualizer. Box breathing, 4-7-8, physiological sigh. No signup required.",
+      "reviewedSourceHash": "e13906e163afff5e45a8a1c974bffe0c7ae4b1ba01101e6276af6e031c39db52",
+      "reason": "The Spanish catalog value narrows anxiety to an anxiety attack, changing the source meaning.",
+      "translations": { "es-es": "Calma la ansiedad en 60 segundos con nuestro visualizador. Respiración cuadrada, 4-7-8, suspiro fisiológico. Sin registro." }
+    },
+    {
+      "messagePath": "metadata.twitter.description",
+      "sourceText": "Calm anxiety in 60 seconds with our free breathing visualizer. Box breathing, 4-7-8, physiological sigh. Try now—no signup.",
+      "reviewedSourceHash": "1ac3dd381cfd0f3fc2619f9a313f8fd841ba54687c68a1afe4d2f93270f7800a",
+      "reason": "The Spanish value changes anxiety to an anxiety attack, while the German and Portuguese values are truncated before the no-signup phrase.",
+      "translations": {
+        "de-de": "Beruhigen Sie Angst in 60 Sekunden mit unserem kostenlosen Atem-Visualizer. Box-Atmung, 4-7-8 Atemtechnik, physiologisches Seufzen. Jetzt testen – keine Anmeldung.",
+        "es-es": "Calma la ansiedad en 60 segundos con nuestro visualizador. Respiración cuadrada, 4-7-8, suspiro fisiológico. Pruébalo ya, sin registro.",
+        "pt-br": "Acalme a ansiedade em 60 segundos com nosso visualizador de respiração grátis. Respiração quadrada, 4-7-8, suspiro fisiológico. Experimente agora—sem cadastro."
+      }
+    },
+    {
+      "messagePath": "footer.columns.situations.links.insomnia.label",
+      "sourceText": "Insomnia",
+      "reviewedSourceHash": "9dcefd14ed11ae5d50e04abac353e8615bb05f00200536c86a107e8bbf62f64e",
+      "reason": "The Spanish catalog value changes the condition label into a broader sleep-breathing topic.",
+      "translations": { "es-es": "Insomnio" }
+    },
+    {
+      "messagePath": "footer.columns.guides.links.running.label",
+      "sourceText": "Recover Faster and Stop Side Stitches",
+      "reviewedSourceHash": "1fb54d2b1733f17a0ac791891630eb446ddae518a008d3d8218698cecb2a383d",
+      "reason": "The Spanish catalog phrase for side stitches is not idiomatic and changes the meaning.",
+      "translations": { "es-es": "Recupérate más rápido y detén el dolor de costado" }
+    },
+    {
+      "messagePath": "sections.infoCards.practiceCues.items.exhale",
+      "sourceText": "• Exhale ends softly. Don't squeeze empty.",
+      "reviewedSourceHash": "8fce14bb1556606fb67861dc91244ad8565f4d68c56ded45c124e3032f9fb13b",
+      "reason": "The French catalog value contains the shoulder cue instead of the exhale cue.",
+      "translations": { "fr-fr": "• L’expiration se termine doucement. Ne forcez pas pour vider complètement." }
+    },
+    {
+      "messagePath": "sections.quickAnchor.bullets.exhale",
+      "sourceText": "• Exhale ends softly. Don't squeeze empty.",
+      "reviewedSourceHash": "8fce14bb1556606fb67861dc91244ad8565f4d68c56ded45c124e3032f9fb13b",
+      "reason": "The French catalog value contains the shoulder cue instead of the exhale cue.",
+      "translations": { "fr-fr": "• L’expiration se termine doucement. Ne forcez pas pour vider complètement." }
+    },
+    {
+      "messagePath": "sections.infoCards.practiceCues.items.shoulders",
+      "sourceText": "• Shoulders stay down; jaw unclenched.",
+      "reviewedSourceHash": "e3f946ecd4136f3f688c2a9eb4901debfaa116b96b3a9b3178ab10a42d22cc6f",
+      "reason": "The French and Japanese catalog values contain an exhale cue instead of the shoulder and jaw cue.",
+      "translations": {
+        "fr-fr": "• Gardez les épaules basses ; relâchez la mâchoire.",
+        "ja-jp": "• 肩は下げたまま、あごの力を抜きます。"
+      }
+    },
+    {
+      "messagePath": "sections.faq.items.lightHeaded.question",
+      "sourceText": "What if I feel light-headed?",
+      "reviewedSourceHash": "aa02cc06ebb05f240e363cf2ed31a5aa27b3dd7ae6fc800b3dac8f17655e07a2",
+      "reason": "The French and Japanese catalog values describe feeling light or having a mild headache instead of dizziness.",
+      "translations": { "fr-fr": "Que faire si j’ai des vertiges ?", "ja-jp": "めまいがする場合はどうしますか？" }
+    },
+    {
+      "messagePath": "footer.safetyNote",
+      "sourceText": "Stop if dizzy, tingly, or chest-tight. Resume later with shorter, easier breaths. Skip prolonged holds during pregnancy or if advised by your clinician.",
+      "reviewedSourceHash": "048479912fd41aec9203692a0acceb5bc3f87543d7c7dcbcc92645ebc96498f5",
+      "reason": "The German catalog value drops tingling, easier breaths, pregnancy, and clinician guidance from the safety note.",
+      "translations": { "de-de": "Stoppen Sie bei Schwindel, Kribbeln oder Engegefühl in der Brust. Setzen Sie später mit kürzeren, leichteren Atemzügen fort. Verzichten Sie während der Schwangerschaft oder auf ärztlichen Rat auf längere Atempausen." }
+    },
+    {
+      "messagePath": "sections.faq.items.medical.answer",
+      "sourceText": "No. It's a self-regulation tool. If you have a cardiopulmonary condition, are pregnant, or have fainting history, avoid long holds and keep everything gentle.",
+      "reviewedSourceHash": "1b2999e1e6ea7181058f910dc2e3f30ef41b6e494b51d13f7d5bbfd1a2e30090",
+      "reason": "The German catalog value drops the cardiopulmonary, fainting-history, and gentle-practice qualifications.",
+      "translations": { "de-de": "Nein. Es ist ein Werkzeug zur Selbstregulierung. Wenn Sie an einer Herz-Lungen-Erkrankung leiden, schwanger sind oder schon einmal ohnmächtig geworden sind, vermeiden Sie lange Atempausen und halten Sie alles sanft." }
+    },
+    {
+      "messagePath": "sections.faq.items.timing.answer",
+      "sourceText": "Yes. That's the point. Use 3–8 s per phase. If holds feel uncomfortable, remove them and keep an even inhale/exhale.",
+      "reviewedSourceHash": "cde53fa0b11903f688640018fcf9cd30be504fd92929de25a27a55dd75d77962",
+      "reason": "The German catalog value drops the instruction to keep inhale and exhale even.",
+      "translations": { "de-de": "Ja. Genau darum geht es. Nutzen Sie 3–8 Sek. pro Phase. Wenn Atempausen unangenehm sind, lassen Sie sie weg und atmen Sie gleichmäßig ein und aus." }
+    },
+    {
+      "messagePath": "sections.faq.items.bestTime.answer",
+      "sourceText": "Before a meeting or workout, between blocks of deep work, or before bed. Use physiological sighs for urgent spikes of stress.",
+      "reviewedSourceHash": "754af9bcea2e78df1e352cd6c065c3fa0d50cd0f97063ab24dc1dfbd0c28b726",
+      "reason": "The German value changes workout and deep-work timing, and the Japanese value mistranslates physiological sigh.",
+      "translations": {
+        "de-de": "Vor einem Meeting oder Training, zwischen Phasen konzentrierter Arbeit oder vor dem Schlafengehen. Nutzen Sie physiologische Seufzer bei akuten Stressspitzen.",
+        "ja-jp": "会議やワークアウトの前、集中作業の合間、または就寝前が最適です。急なストレスの高まりには生理的ため息を使ってください。"
+      }
+    },
+    {
+      "messagePath": "footer.columns.info.links.about.label",
+      "sourceText": "About",
+      "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+      "reason": "The Japanese catalog value remains untranslated.",
+      "translations": { "ja-jp": "概要" }
+    },
+    {
+      "messagePath": "sections.infoCards.dialItIn.title",
+      "sourceText": "Smooth over deep",
+      "reviewedSourceHash": "32c7208552599a5d599604ec3a7568ebf00269e8e5b87bf2b8390ee2b71ec90f",
+      "reason": "The Japanese catalog value reverses the preference for smooth breathing over deep breathing.",
+      "translations": { "ja-jp": "深さより滑らかさ" }
+    },
+    {
+      "messagePath": "sections.modePicker.featured.fourSevenEight.description",
+      "sourceText": "Sleep & Deep Relaxation (4-7-8)",
+      "reviewedSourceHash": "d0de1c617518543a41e0021755554800f494aeac2ffad3d056453c6726bec0a7",
+      "reason": "The Japanese catalog value drops the sleep and deep-relaxation description.",
+      "translations": { "ja-jp": "睡眠と深いリラクゼーション（4-7-8）" }
+    },
+    {
+      "messagePath": "sections.infoCards.howLong.items.training",
+      "sourceText": "• Training effect (HRV focus): 5–10 minutes at an easy, equal in/out pace.",
+      "reviewedSourceHash": "38499728bb420598025f5658ac2dcd76022433e8162d4b3a1071def99b291f95",
+      "reason": "The Japanese catalog value adds a stray from marker that corrupts the duration phrase.",
+      "translations": { "ja-jp": "• トレーニング効果（HRV重視）：5〜10分、楽で均等な吸気・呼気のペースで。" }
+    }
+  ]
+}

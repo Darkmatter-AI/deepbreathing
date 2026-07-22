@@ -1,0 +1,56 @@
+{
+  "breadcrumb": {
+    "current": "Privacidade",
+    "home": "Início"
+  },
+  "hero": {
+    "eyebrow": "Exercícios de Respiração Profunda",
+    "intro": "Os exercícios de respiração funcionam sem uma conta. Se você optar por entrar, usamos seus dados somente para fornecer e melhorar o serviço.",
+    "lastUpdated": "Última atualização em 11 de julho de 2026.",
+    "title": "Privacidade"
+  },
+  "metadata": {
+    "description": "Política de privacidade do Deep Breathing Exercises, incluindo contas opcionais, sincronização de práticas, análises e exclusão.",
+    "imageAlt": "Política de Privacidade",
+    "socialDescription": "Política de privacidade do Deep Breathing Exercises.",
+    "socialTitle": "Política de Privacidade",
+    "title": "Entenda nossa política de privacidade para os Exercícios de Respiração Profunda",
+    "twitterDescription": "Política de privacidade do Deep Breathing Exercises.",
+    "twitterTitle": "Política de Privacidade"
+  },
+  "sections": {
+    "accounts": {
+      "body": "Se você entrar com a Apple ou o Google, recebemos o identificador da conta, o endereço de e-mail e qualquer nome compartilhado pelo provedor. Armazenamos o histórico das suas sessões de respiração, os totais, os dias de sequência e as configurações para que possam ser sincronizados entre o site e o seu telefone. As práticas registradas enquanto você está desconectado permanecem no dispositivo até que você opte por entrar.",
+      "title": "Contas opcionais e sincronização"
+    },
+    "collection": {
+      "body": "Visitantes podem praticar sem nos fornecer nome ou e-mail. O app e o site coletam eventos básicos de uso, como início, término e duração da sessão, modo de respiração e plataforma. O app móvel usa um identificador de análise aleatório por instalação. Ele não usa o identificador de publicidade nem solicita permissão de rastreamento.",
+      "title": "O que coletamos"
+    },
+    "contact": {
+      "abiassiLabel": "Abiassi",
+      "backLink": "Voltar para o visualizador →",
+      "darkmatterLabel": "Darkmatter AI Labs",
+      "intro": "Se você tiver dúvidas sobre privacidade, pode entrar em contato com os criadores via:",
+      "title": "Contato"
+    },
+    "deletion": {
+      "action": "Excluir conta.",
+      "afterAction": "Após a confirmação, excluímos permanentemente a conta e os dados de prática sincronizados. Os dados locais podem ser removidos ao excluir o app ou limpar os dados do site no navegador.",
+      "beforeAction": "Você pode usar a experiência principal de respiração como visitante. Usuários conectados podem abrir o menu da conta e escolher",
+      "title": "Suas escolhas e exclusão"
+    },
+    "device": {
+      "body": "O áudio e o feedback tátil são gerados ou reproduzidos no seu dispositivo. Não usamos o microfone, o HealthKit, a localização precisa, os contatos, as fotos nem o identificador de publicidade.",
+      "title": "Recursos do dispositivo"
+    },
+    "thirdParty": {
+      "body": "Algumas páginas contêm links para pesquisas ou recursos externos. Esses sites possuem suas próprias políticas de privacidade.",
+      "title": "Links de terceiros"
+    },
+    "useAndShare": {
+      "body": "Usamos essas informações para o funcionamento do app, suporte à conta, análises, monitoramento de desempenho e correções de erros. Prestadores de serviços nos ajudam a operar autenticação, e-mail, análises, hospedagem e armazenamento de banco de dados. Não vendemos informações pessoais nem usamos dados de respiração para publicidade.",
+      "title": "Como usamos e compartilhamos dados"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "Potencia tu respiración con ejercicios para aumentar",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Ejercicios para aumentar la capacidad pulmonar: mejora tu potencia respiratoria (gratis)",
+      "reviewedSourceHash": "35d2796919fb8581f30ef5677409addccb50c2b341841b0ba522ae5c17425481",
+      "sourcePath": "meta.title",
+      "sourceText": "Lung Capacity Exercises: Increase Breathing Power (Free)"
+    },
+    {
+      "currentCatalogValue": "Desarrolla tu capacidad pulmonar con ejercicios de respiración probados, incluyendo la respiración diafragmática. Fortalece tu diafragma, aumenta el",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Aumenta la capacidad pulmonar con ejercicios de respiración probados. Fortalece el diafragma, aumenta el volumen corriente y mejora la salud respiratoria. Temporizador guiado gratuito.",
+      "reviewedSourceHash": "1c1cf35d3af86f5bba8b7d7e897d150f912be9e34c643fec52cbf2ee82bf8bfb",
+      "sourcePath": "meta.description",
+      "sourceText": "Build lung capacity with proven breathing exercises. Strengthen your diaphragm, increase tidal volume, and improve respiratory health. Free guided timer."
+    },
+    {
+      "currentCatalogValue": "Potencia tu respiración con ejercicios para aumentar",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Ejercicios para aumentar la capacidad pulmonar: mejora tu potencia respiratoria",
+      "reviewedSourceHash": "22829207e462b73e66353388e348ce25db21797ae647f55ed4e3ce39c940c0ec",
+      "sourcePath": "meta.ogTitle",
+      "sourceText": "Lung Capacity Exercises: Increase Your Breathing Power"
+    },
+    {
+      "currentCatalogValue": "Desarrolla tu capacidad pulmonar con ejercicios de respiración probados, incluyendo la respiración diafragmática. Fortalece tu diafragma, aumenta el",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Ejercicios de respiración probados para aumentar la capacidad pulmonar y fortalecer el diafragma. Temporizador guiado gratuito: empieza hoy a desarrollar tu potencia respiratoria.",
+      "reviewedSourceHash": "24041ad77bf35a713020763a167835429e4f6a90aa4afeb1a47c2dc7ff557410",
+      "sourcePath": "meta.ogDescription",
+      "sourceText": "Proven breathing exercises to increase lung capacity and strengthen your diaphragm. Free guided timer: start building respiratory power today."
+    },
+    {
+      "currentCatalogValue": "Potencia tu respiración con ejercicios para aumentar",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Ejercicios para aumentar la capacidad pulmonar: mejora tu potencia respiratoria",
+      "reviewedSourceHash": "22829207e462b73e66353388e348ce25db21797ae647f55ed4e3ce39c940c0ec",
+      "sourcePath": "meta.twitterTitle",
+      "sourceText": "Lung Capacity Exercises: Increase Your Breathing Power"
+    },
+    {
+      "currentCatalogValue": "Desarrolla tu capacidad pulmonar con ejercicios de respiración probados, incluyendo la respiración diafragmática. Fortalece tu diafragma, aumenta el",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Aumenta la capacidad pulmonar con ejercicios de respiración diafragmática. Temporizador guiado gratuito.",
+      "reviewedSourceHash": "16fedc35c888c19afb9f1c36f1dca08a79ae8cf93cfd71e820b58c5eb1974844",
+      "sourcePath": "meta.twitterDescription",
+      "sourceText": "Build lung capacity with diaphragmatic breathing exercises. Free guided timer."
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/lung-capacity"
+}

@@ -1,7 +1,10 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 
-import { runSitemapPingWorkflow } from "../ping-sitemap-lib.mjs";
+import {
+  isIndexNowSubmissionEnvironment,
+  runSitemapPingWorkflow,
+} from "../ping-sitemap-lib.mjs";
 
 const silentLogger = {
   log() {},
@@ -25,6 +28,35 @@ test("skips workflow outside CI", async () => {
   assert.equal(called, 0);
 });
 
+test("allows IndexNow only for Vercel production deployments", () => {
+  assert.equal(
+    isIndexNowSubmissionEnvironment({
+      CI: "1",
+      VERCEL: "1",
+      VERCEL_ENV: "production",
+    }),
+    true,
+  );
+  assert.equal(
+    isIndexNowSubmissionEnvironment({
+      CI: "1",
+      VERCEL: "1",
+      VERCEL_ENV: "preview",
+    }),
+    false,
+  );
+  assert.equal(
+    isIndexNowSubmissionEnvironment({
+      CI: "1",
+      VERCEL: "1",
+      VERCEL_ENV: "development",
+    }),
+    false,
+  );
+  assert.equal(isIndexNowSubmissionEnvironment({ CI: "true" }), false);
+  assert.equal(isIndexNowSubmissionEnvironment({}), false);
+});
+
 test("submits to IndexNow without calling retired sitemap ping endpoints", async () => {
   const calls = [];
   const fetchImpl = async (url) => {
@@ -34,7 +66,8 @@ test("submits to IndexNow without calling retired sitemap ping endpoints", async
       return {
         ok: true,
         status: 200,
-        text: async () => "<urlset><url><loc>https://deepbreathingexercises.com/</loc></url></urlset>",
+        text: async () =>
+          "<urlset><url><loc>https://deepbreathingexercises.com/</loc></url></urlset>",
       };
     }
 
@@ -65,7 +98,8 @@ test("IndexNow failure does not fail the build", async () => {
       return {
         ok: true,
         status: 200,
-        text: async () => "<urlset><url><loc>https://deepbreathingexercises.com/</loc></url></urlset>",
+        text: async () =>
+          "<urlset><url><loc>https://deepbreathingexercises.com/</loc></url></urlset>",
       };
     }
 
@@ -80,14 +114,4 @@ test("IndexNow failure does not fail the build", async () => {
 
   assert.equal(result.skipped, false);
   assert.equal(result.indexNowSubmitted, false);
-});
-
-test("isCiEnvironment recognizes Vercel builds (CI=1, VERCEL=1), not just CI=true", async () => {
-  const { isCiEnvironment } = await import("../ping-sitemap-lib.mjs");
-  assert.equal(isCiEnvironment({ CI: "true" }), true);
-  assert.equal(isCiEnvironment({ CI: "1" }), true);          // Vercel sets CI=1
-  assert.equal(isCiEnvironment({ VERCEL: "1" }), true);      // belt and braces
-  assert.equal(isCiEnvironment({}), false);                  // local dev
-  assert.equal(isCiEnvironment({ CI: "" }), false);
-  assert.equal(isCiEnvironment({ CI: "false" }), false);
 });

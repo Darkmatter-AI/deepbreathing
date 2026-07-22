@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "overrides": [
+    {
+      "messagePath": "metadata.title",
+      "sourceText": "Breathing Guides by Goal: Sleep, Anxiety & Focus",
+      "reviewedSourceHash": "6825497cb76018bafb1011b766d2efab28bf4b1dfa99ebbab74a4a1bef850de5",
+      "reason": "the route catalog head title is stale and still claims panic and performance; preserve the current repo-owned title",
+      "translations": {
+        "de-de": "Atemleitfäden nach Ziel: Schlaf, Angst und Fokus",
+        "es-es": "Guías de respiración por objetivo: sueño, ansiedad y concentración",
+        "fr-fr": "Guides de respiration par objectif : sommeil, anxiété et concentration",
+        "ja-jp": "目的別呼吸ガイド：睡眠、不安、集中力",
+        "pt-br": "Guias de respiração por objetivo: sono, ansiedade e foco"
+      }
+    },
+    {
+      "messagePath": "breadcrumb.home",
+      "sourceText": "Home",
+      "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+      "reason": "schema-only breadcrumb text is not present in the route catalog",
+      "translations": {
+        "de-de": "Startseite",
+        "es-es": "Inicio",
+        "fr-fr": "Accueil",
+        "ja-jp": "ホーム",
+        "pt-br": "Início"
+      }
+    },
+    {
+      "messagePath": "breadcrumb.useCases",
+      "sourceText": "Use Cases",
+      "reviewedSourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+      "reason": "schema-only breadcrumb text is not present in the route catalog",
+      "translations": {
+        "de-de": "Anwendungsfälle",
+        "es-es": "Casos de uso",
+        "fr-fr": "Cas d’utilisation",
+        "ja-jp": "活用シーン",
+        "pt-br": "Casos de uso"
+      }
+    },
+    {
+      "messagePath": "cards.high-blood-pressure.subtitle",
+      "sourceText": "A research-informed breathing technique that supports healthier blood pressure when practiced regularly",
+      "reviewedSourceHash": "165a54ca2fc804949b9bb690d450e1d9ee5814928000f79a2fa44cf1777eba7c",
+      "reason": "the hub catalog retains an older stronger blood-pressure claim; preserve the current repo-owned wording",
+      "translations": {
+        "de-de": "Eine wissenschaftlich fundierte Atemtechnik, die bei regelmäßiger Anwendung einen gesünderen Blutdruck unterstützt",
+        "es-es": "Una técnica de respiración basada en la evidencia que favorece una presión arterial más saludable cuando se practica con regularidad",
+        "fr-fr": "Une technique respiratoire étayée par la recherche qui favorise une tension artérielle plus saine lorsqu’elle est pratiquée régulièrement",
+        "ja-jp": "定期的に実践することで、より健康的な血圧を支える、研究に基づいた呼吸法",
+        "pt-br": "Uma técnica de respiração fundamentada em pesquisas que contribui para uma pressão arterial mais saudável quando praticada regularmente"
+      }
+    },
+    {
+      "messagePath": "cards.kids.title",
+      "sourceText": "Deep Breathing Exercises for Kids",
+      "reviewedSourceHash": "7696120540243ebfa54ae8f92ba7cda3ef477c27e9f3802c0d1b304ccf979643",
+      "reason": "the hub catalog omits deep from the current card title; preserve the repo-owned wording using reviewed route evidence",
+      "translations": {
+        "de-de": "Tiefe Atemübungen für Kinder",
+        "es-es": "Ejercicios de respiración profunda para niños",
+        "fr-fr": "Exercices de respiration profonde pour enfants",
+        "ja-jp": "子ども向け深呼吸エクササイズ",
+        "pt-br": "Exercícios de respiração profunda para crianças"
+      }
+    }
+  ]
+}

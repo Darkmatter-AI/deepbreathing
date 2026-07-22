@@ -6,9 +6,19 @@ import { usePathname, useSearchParams } from "next/navigation";
 type Gtag = (command: "event", name: "page_view", params: Record<string, string>) => void;
 
 const INTERNAL_ROUTES = new Set(["/sensory-studio"]);
+const PRODUCTION_HOSTNAMES = new Set([
+  "deepbreathingexercises.com",
+  "www.deepbreathingexercises.com",
+]);
 
 function shouldTrackPageView(pathname: string) {
   return !INTERNAL_ROUTES.has(pathname);
+}
+
+function isProductionHost(): boolean {
+  if (typeof window === "undefined") return false;
+  const hostname = window.location.hostname;
+  return PRODUCTION_HOSTNAMES.has(hostname);
 }
 
 function getGtag(): Gtag | undefined {
@@ -17,12 +27,17 @@ function getGtag(): Gtag | undefined {
   return typeof fn === "function" ? fn : undefined;
 }
 
-function sendPageView(path: string) {
+function sendPageView(pathname: string, search: string) {
   const gtag = getGtag();
   if (!gtag) return;
+  if (!isProductionHost()) return;
+
+  const pagePath = pathname;
+  const pageLocation = search ? `${window.location.origin}${pathname}${search}` : `${window.location.origin}${pathname}`;
+
   gtag("event", "page_view", {
-    page_path: path,
-    page_location: window.location.href,
+    page_path: pagePath,
+    page_location: pageLocation,
     page_title: document.title,
   });
 }
@@ -33,9 +48,8 @@ export function PageViewTracker() {
 
   useEffect(() => {
     if (!pathname || !shouldTrackPageView(pathname)) return;
-    const query = searchParams?.toString();
-    const path = query ? `${pathname}?${query}` : pathname;
-    sendPageView(path);
+    const search = searchParams?.toString() ? `?${searchParams.toString()}` : "";
+    sendPageView(pathname, search);
   }, [pathname, searchParams]);
 
   useEffect(() => {
@@ -43,7 +57,7 @@ export function PageViewTracker() {
     const onVisibility = () => {
       if (document.visibilityState !== "visible") return;
       if (!shouldTrackPageView(window.location.pathname)) return;
-      sendPageView(window.location.pathname + window.location.search);
+      sendPageView(window.location.pathname, window.location.search);
     };
     document.addEventListener("visibilitychange", onVisibility);
     return () => document.removeEventListener("visibilitychange", onVisibility);

@@ -1,0 +1,15 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "Bauchatmung: Zwerchfellatmung Übungen",
+      "locale": "de-de",
+      "reason": "The approved heading candidate is grammatically malformed; the replacement is already present as the faithful metadata candidate.",
+      "replacement": "Bauchatmung: Zwerchfell-Atemübungen",
+      "reviewedSourceHash": "b0a5eb5ee5f57c475a7026cded2abb30698da9e3ccf7c5428a76b80d0d0bb6f1",
+      "sourcePath": "hero.title",
+      "sourceText": "Belly Breathing: Diaphragmatic Breathing Exercises"
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/breathe/belly"
+}

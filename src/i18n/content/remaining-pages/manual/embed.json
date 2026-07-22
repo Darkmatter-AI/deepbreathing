@@ -1,0 +1,20 @@
+{
+  "entries": [
+    {
+      "messageId": "catalog-placement.dd46f584-0871-420a-89c6-97416f51d26f",
+      "reason": "Missing approved catalog translation for sel:label.inline-flex.cursor-pointer:ctx:form_input:pos:0",
+      "reviewedSourceHash": "ae88a52a9450ea61b45b1a07df9a4849b749d01beef9a611caf0d7fab0c204ff",
+      "scope": "content",
+      "sourceText": "Binaural beats (headphones recommended)",
+      "translations": {
+        "de-de": "Binaurale Beats (Kopfhörer empfohlen)",
+        "es-es": "Tonos binaurales (se recomiendan auriculares)",
+        "fr-fr": "Battements binauraux (casque recommandé)",
+        "ja-jp": "バイノーラルビート（ヘッドフォン推奨）",
+        "pt-br": "Batidas binaurais (fones de ouvido recomendados)"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/embed"
+}

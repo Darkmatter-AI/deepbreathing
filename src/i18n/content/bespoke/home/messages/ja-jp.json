@@ -1,0 +1,473 @@
+{
+  "footer": {
+    "columns": {
+      "guides": {
+        "links": {
+          "anxiety": {
+            "href": "/for/anxiety",
+            "label": "ボックス呼吸で60秒で不安を止める方法"
+          },
+          "athletes": {
+            "href": "/for/athletes",
+            "label": "セット間の回復を早める：アスリートのための生理的ため息"
+          },
+          "focus": {
+            "href": "/for/focus",
+            "label": "一貫した呼吸で40%フォーカスを向上させる方法"
+          },
+          "high-blood-pressure": {
+            "href": "/for/high-blood-pressure",
+            "label": "4-7-8呼吸で自然に血圧を下げる"
+          },
+          "holiday-stress": {
+            "href": "/for/holiday-stress",
+            "label": "30秒で休日のストレスを処理する方法"
+          },
+          "huberman": {
+            "href": "/for/huberman",
+            "label": "フーバーマン研究所の呼吸プロトコル"
+          },
+          "kids": {
+            "href": "/for/kids",
+            "label": "子供"
+          },
+          "lung-capacity": {
+            "href": "/for/lung-capacity",
+            "label": "肺活量を鍛えるエクササイズ"
+          },
+          "meditation": {
+            "href": "/for/meditation",
+            "label": "瞑想できない？一貫した呼吸から始めてみてください"
+          },
+          "panic-attacks": {
+            "href": "/for/panic-attacks",
+            "label": "30秒でパニック発作を止める方法"
+          },
+          "pranayama": {
+            "href": "/for/pranayama",
+            "label": "プラナヤーマ呼吸：ヨガ呼吸の完全ガイド"
+          },
+          "pregnancy": {
+            "href": "/for/pregnancy",
+            "label": "妊娠中の不安と出産準備のための呼吸"
+          },
+          "public-speaking": {
+            "href": "/for/public-speaking",
+            "label": "パブリックスピーキング"
+          },
+          "running": {
+            "href": "/for/running",
+            "label": "より早く回復し、脇腹の痛みを止める"
+          },
+          "singing": {
+            "href": "/for/singing",
+            "label": "歌う"
+          },
+          "sleep": {
+            "href": "/for/sleep",
+            "label": "睡眠のための4-7-8呼吸"
+          },
+          "stress": {
+            "href": "/for/stress",
+            "label": "ストレス"
+          },
+          "travel-anxiety": {
+            "href": "/for/travel-anxiety",
+            "label": "旅行の不安"
+          }
+        },
+        "title": "ガイド"
+      },
+      "info": {
+        "links": {
+          "about": {
+            "href": "/about",
+            "label": "概要"
+          },
+          "about-abi": {
+            "href": "/about/abi",
+            "label": "Abiについて"
+          },
+          "all-guides": {
+            "href": "/for",
+            "label": "すべてのガイド"
+          },
+          "all-techniques": {
+            "href": "/breathe",
+            "label": "すべてのテクニック"
+          },
+          "app": {
+            "href": "/breathing-app",
+            "label": "アプリ"
+          },
+          "editorial-policy": {
+            "href": "/about/editorial-policy",
+            "label": "編集方針"
+          },
+          "embed": {
+            "href": "/embed",
+            "label": "埋め込みウィジェット"
+          },
+          "my-stats": {
+            "href": "/stats",
+            "label": "マイ統計"
+          },
+          "privacy": {
+            "href": "/privacy",
+            "label": "プライバシーポリシー"
+          },
+          "visualizer": {
+            "href": "/breathing-visualizer",
+            "label": "呼吸ビジュアライザー"
+          }
+        },
+        "title": "情報"
+      },
+      "situations": {
+        "links": {
+          "before-presentation": {
+            "href": "/box-breathing-before-presentation",
+            "label": "プレゼンテーションの前に"
+          },
+          "before-surgery": {
+            "href": "/breathing-exercises-before-surgery",
+            "label": "手術前"
+          },
+          "insomnia": {
+            "href": "/4-7-8-breathing-for-insomnia",
+            "label": "不眠症"
+          },
+          "labor": {
+            "href": "/breathing-exercises-for-labor",
+            "label": "陣痛・出産"
+          },
+          "panic-attack": {
+            "href": "/physiological-sigh-panic-attack",
+            "label": "パニック発作"
+          }
+        },
+        "title": "状況別"
+      },
+      "techniques": {
+        "links": {
+          "belly": {
+            "href": "/breathe/belly",
+            "label": "腹式呼吸"
+          },
+          "box": {
+            "href": "/breathe/box",
+            "label": "ボックス呼吸"
+          },
+          "breath-of-fire": {
+            "href": "/breathe/breath-of-fire",
+            "label": "火の呼吸"
+          },
+          "buteyko": {
+            "href": "/breathe/buteyko",
+            "label": "ブテイコ呼吸"
+          },
+          "coherent": {
+            "href": "/breathe/coherent",
+            "label": "コヒーレント呼吸法"
+          },
+          "four-seven-eight": {
+            "href": "/breathe/4-7-8",
+            "label": "4-7-8リラックス"
+          },
+          "nadi-shodhana": {
+            "href": "/breathe/nadi-shodhana",
+            "label": "ナーディ・ショーダナ"
+          },
+          "physiological-sigh": {
+            "href": "/breathe/physiological-sigh",
+            "label": "フィジオロジカル・サイ（生理的ため息）"
+          },
+          "pursed-lip": {
+            "href": "/breathe/pursed-lip",
+            "label": "口すぼめ呼吸"
+          },
+          "tummo": {
+            "href": "/breathe/tummo",
+            "label": "トゥンモ呼吸"
+          },
+          "ujjayi": {
+            "href": "/breathe/ujjayi",
+            "label": "ウジャイ呼吸"
+          },
+          "wim-hof": {
+            "href": "/breathe/wim-hof",
+            "label": "ヴィム・ホフ呼吸"
+          }
+        },
+        "title": "テクニック"
+      },
+      "timers": {
+        "links": {
+          "box-app": {
+            "href": "/box-breathing-app",
+            "label": "ボックス呼吸法アプリ"
+          },
+          "coherent-app": {
+            "href": "/coherent-breathing-app",
+            "label": "コヒーレント呼吸アプリ"
+          },
+          "five-minute": {
+            "href": "/5-minute-breathing-exercise",
+            "label": "5分間"
+          },
+          "four-seven-eight-timer": {
+            "href": "/4-7-8-breathing-timer",
+            "label": "4-7-8タイマー"
+          },
+          "holiday": {
+            "href": "/holiday-breathing-exercises",
+            "label": "休日エクササイズ"
+          },
+          "one-minute": {
+            "href": "/1-minute-breathing-exercise",
+            "label": "1分間"
+          },
+          "two-minute": {
+            "href": "/2-minute-breathing-exercise",
+            "label": "2分間"
+          }
+        },
+        "title": "タイマー"
+      }
+    },
+    "credits": {
+      "abiassi": "Abiassi",
+      "darkmatter": "Darkmatter AI Labs",
+      "prefix": "作成者"
+    },
+    "languagesLink": "Español、Português、Français、Deutsch、日本語で利用可能 →",
+    "safetyNote": "めまいやしびれ、または胸の圧迫感を感じたら中止してください。後で短くて楽な呼吸を再開してください。妊娠中の場合や医師から指示された場合は、長時間の保持をスキップしてください。"
+  },
+  "hero": {
+    "actions": {
+      "pickMode": "モードを選択",
+      "startSession": "セッションを開始"
+    },
+    "headingLevel": 1,
+    "label": "無料の深呼吸の視覚化ツール",
+    "startButton": {
+      "color": "#e11d48",
+      "shadow": "0 12px 36px #e11d4860"
+    },
+    "subtitle": "身体がリラックスするのを助けるビジュアルペーシング。いつでもどこでも、必要なときにリラックス。",
+    "title": "深呼吸のエクササイズ"
+  },
+  "metadata": {
+    "description": "無料の呼吸ビジュアライザーで60秒で不安を落ち着かせましょう。ボックス呼吸、4-7-8呼吸法、生理的ため息など、すべて無料で登録不要です。1万人以上が利用中。今すぐお試しください。",
+    "openGraph": {
+      "description": "無料の呼吸ビジュアライザーで60秒で不安を鎮めます。ボックス呼吸、4-7-8呼吸法、生理的ため息。登録不要で深呼吸効果を体験。",
+      "image": {
+        "height": 630,
+        "width": 1200
+      },
+      "imageAlt": "コーラルグラデーションを背景に広がるインタラクティブな呼吸オーブ",
+      "siteName": "深呼吸エクササイズ",
+      "title": "無料の呼吸ビジュアライザー：60秒で不安を鎮める深呼吸効果",
+      "type": "website"
+    },
+    "title": "不安を60秒で鎮める無料の深呼吸方法ビジュアライザー",
+    "twitter": {
+      "creator": "@abiassi_",
+      "description": "無料の呼吸ビジュアライザーで60秒で不安を鎮めます。ボックス呼吸、4-7-8呼吸法、生理的ため息。今すぐお試しください—登録不要。",
+      "title": "無料の呼吸ビジュアライザー：60秒で不安を鎮める深呼吸効果"
+    }
+  },
+  "schema": {
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage"
+    },
+    "website": {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "description": "ペース調整可能なガイド付き呼吸ビジュアライザー。いつでもどこでも、体のギアを落とすのを助ける視覚的なペーシング。",
+      "name": "深呼吸エクササイズ",
+      "url": "https://deepbreathingexercises.com"
+    }
+  },
+  "sections": {
+    "editorialCards": {
+      "builtForRealLife": {
+        "body": "会議の前、タスクの合間、または就寝前に短時間（1〜5分）行うことができます。",
+        "eyebrow": "リアルライフ向けに設計されています"
+      },
+      "calmByDesign": {
+        "body": "遅い均一な呼吸は、頻脈調節性HRVを高め、実践中のストレスの認知を低下させることがよくあります。",
+        "eyebrow": "デザインに基づいたリラックス"
+      },
+      "yourPace": {
+        "body": "フェーズごとに3〜8秒を選んでください。小さく静かな呼吸が「大きい」呼吸よりも優れています。",
+        "eyebrow": "あなたのペース"
+      }
+    },
+    "faq": {
+      "items": {
+        "bestTime": {
+          "answer": "会議やワークアウトの前、集中作業の合間、または就寝前が最適です。急なストレスの高まりには生理的ため息を使ってください。",
+          "question": "ベストな時間はいつですか？"
+        },
+        "howLong": {
+          "answer": "60〜120秒から始めましょう。もしそれがまだ簡単で役立つなら、3〜5分延ばしてください。HRVに焦点を当てたトレーニングでは、ほとんどの方が5〜10分を確保することをお勧めします。",
+          "question": "どれくらいの時間練習するべきですか？"
+        },
+        "lightHeaded": {
+          "answer": "おそらく過呼吸になっています。呼吸を小さく静かにし、フェーズを短くしたり、一時停止して通常通り呼吸してください。",
+          "question": "めまいがする場合はどうしますか？"
+        },
+        "medical": {
+          "answer": "いいえ。これは自己調整のツールです。心肺の病状がある方、妊娠中の方、または失神歴のある方は、長時間の保持を避けて、すべてを穏やかに保ってください。",
+          "question": "これは医療処置ですか？"
+        },
+        "timing": {
+          "answer": "はい。そのためのものです。フェーズごとに3〜8秒を使用してください。保持が不快に感じる場合は、それらを取り除いて均等に吸い込み/吐き出しを続けてください。",
+          "question": "タイミングを変更してもいいですか？"
+        }
+      },
+      "title": "よくある質問"
+    },
+    "infoCards": {
+      "bestMoments": {
+        "eyebrow": "最高の瞬間",
+        "items": {
+          "bedtime": "就寝時のリラックス",
+          "beforeEvents": "イベントの前に",
+          "holidayStress": "休暇のストレス",
+          "inFlight": "フライト中",
+          "postConflict": "コンフリクト後"
+        },
+        "title": "いつでもすぐに"
+      },
+      "dialItIn": {
+        "body": "フェーズごとに3〜8秒の間を滑らかにします。小さく開始します。滑らかさが深さよりも重要です。保持が不安定に感じる場合は、それを飛ばして均等な吸い込み/吐き出しを続けます。",
+        "eyebrow": "それを設定します",
+        "title": "深さより滑らかさ"
+      },
+      "howLong": {
+        "eyebrow": "どれくらいの時間ですか？",
+        "items": {
+          "deeperShift": "• より深いシフト：3〜5分。",
+          "quickReset": "• クイックリセット：1〜2分（4〜8サイクル）。",
+          "training": "• トレーニング効果（HRV重視）：5〜10分、楽で均等な吸気・呼気のペースで。"
+        },
+        "timerLinks": {
+          "fiveMin": "5分",
+          "oneMin": "1分",
+          "twoMin": "2分"
+        },
+        "title": "瞬間に合わせましょう"
+      },
+      "practiceCues": {
+        "eyebrow": "実践のキュー",
+        "items": {
+          "exhale": "• 吐き出しは柔らかく終わります—空にならないようにします。",
+          "nasal": "• 鼻から呼吸し、静かに; 低い腹部の上昇を感じます。",
+          "shoulders": "• 肩は下げたまま、あごの力を抜きます。"
+        },
+        "title": "何に注意すべきか"
+      },
+      "whyItWorks": {
+        "eyebrow": "効果がある理由",
+        "items": {
+          "consistency": "• 一貫性が重要です。短い日々のセッションは、まれに行う長いセッションよりも勝ります。",
+          "exhale": "• 吐き出しを強調したり、0.1 Hzのペーシングは、数分でより落ち着くことがよくあります。",
+          "hrv": "• ゆっくりした呼吸は、セッション中の神経性調節HRVを高めることがあります。"
+        },
+        "title": "数分で落ち着く"
+      }
+    },
+    "modePicker": {
+      "allTechniquesLabel": "すべてのテクニック →",
+      "featured": {
+        "box": {
+          "cardTitle": "ボックス呼吸",
+          "color": "#e11d48",
+          "description": "集中とストレス軽減（4-4-4-4）",
+          "displaySlug": "/box",
+          "href": "/breathe/box",
+          "mode": "Box Breathing",
+          "pillLabel": "ボックス呼吸",
+          "slug": "box",
+          "startCta": "セッションを開始 →"
+        },
+        "coherent": {
+          "cardTitle": "一貫した呼吸",
+          "color": "#059669",
+          "description": "心拍変動（5.5-5.5）",
+          "displaySlug": "/coherent",
+          "href": "/breathe/coherent",
+          "mode": "Coherent Breathing",
+          "pillLabel": "コヒーレント呼吸法",
+          "slug": "coherent",
+          "startCta": "セッションを開始 →"
+        },
+        "fourSevenEight": {
+          "cardTitle": "4-7-8リラックス",
+          "color": "#4f46e5",
+          "description": "睡眠と深いリラクゼーション（4-7-8）",
+          "displaySlug": "/4-7-8",
+          "href": "/breathe/4-7-8",
+          "mode": "4-7-8 Relax",
+          "pillLabel": "4-7-8リラックス",
+          "slug": "4-7-8",
+          "startCta": "セッションを開始 →"
+        },
+        "physiologicalSigh": {
+          "cardTitle": "生理的ため息",
+          "color": "#0ea5e9",
+          "description": "パニックリセット（ダブルインハイル）",
+          "displaySlug": "/physiological-sigh",
+          "href": "/breathe/physiological-sigh",
+          "mode": "Physiological Sigh",
+          "pillLabel": "フィジオロジカル・サイ（生理的ため息）",
+          "slug": "physiological-sigh",
+          "startCta": "セッションを開始 →"
+        },
+        "wimHof": {
+          "cardTitle": "ウィム・ホフ呼吸",
+          "color": "#f97316",
+          "description": "エネルギーとレジリエンス（30回の呼吸×3ラウンド）",
+          "displaySlug": "/wim-hof",
+          "href": "/breathe/wim-hof",
+          "mode": "Wim Hof Breathing",
+          "pillLabel": "ヴィム・ホフ呼吸",
+          "slug": "wim-hof",
+          "startCta": "セッションを開始 →"
+        }
+      },
+      "title": "モードを選択"
+    },
+    "nextLinks": {
+      "intro": "あなたの状況に合ったページから始めましょう：手軽なリセット、アプリスタイルのタイマー、ランニング回復ガイド、または高度な瞑想テクニック。",
+      "links": {
+        "boxApp": "ボックス呼吸法アプリ",
+        "running": "ランニングのための呼吸法",
+        "tummo": "トゥンモ呼吸",
+        "twoMinute": "2分間のリセット"
+      },
+      "title": "次はこちら"
+    },
+    "precision": {
+      "body": "スタートを押して、インハイル、ポーズ、エクスハイル、ポーズを通じてオーブに従ってください。テンポは調整可能です。セッションは短く、効果は実感できます。",
+      "title": "精密な呼吸法"
+    },
+    "quickAnchor": {
+      "bullets": {
+        "easy": "• 簡単に保ちましょう。めまいを感じたら、フェーズを短くするか、一時停止します。",
+        "exhale": "• 吐き出しは柔らかく終わります—空にならないようにします。",
+        "nasal": "• 鼻から呼吸し、静かに; 低い腹部の上昇を感じます。"
+      },
+      "closing": "スムーズなリズムを設定し、呼吸を続けます。小さく安定した呼吸が深い息よりも優れています。",
+      "eyebrow": "クイックアンカー",
+      "intro": "背筋を伸ばします。肩はリラックス。舌を口の屋根に置きます。鼻から優しく吸い込み、鼻または口をすぼめて静かに吐き出します。",
+      "title": "1分で安定"
+    }
+  },
+  "site": {
+    "baseUrl": "https://deepbreathingexercises.com"
+  }
+}

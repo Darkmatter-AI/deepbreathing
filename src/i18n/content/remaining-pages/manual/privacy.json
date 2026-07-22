@@ -1,0 +1,48 @@
+{
+  "entries": [
+    {
+      "messageId": "catalog-placement.a0101b73-09e7-45ff-a603-61599e530e96",
+      "reason": "Missing approved catalog translation for sel:p.text-sm.text-muted-foreground:ctx:p:pos:0",
+      "reviewedSourceHash": "1b70573e21817810dcb159db9a98b3fe1bddf07b05905a383ab2153b863a2bca",
+      "scope": "content",
+      "sourceText": "Last updated July 11, 2026.",
+      "translations": {
+        "de-de": "Zuletzt aktualisiert am 11. Juli 2026.",
+        "es-es": "Última actualización: 11 de julio de 2026.",
+        "fr-fr": "Dernière mise à jour le 11 juillet 2026.",
+        "ja-jp": "最終更新日：2026年7月11日。",
+        "pt-br": "Última atualização em 11 de julho de 2026."
+      }
+    },
+    {
+      "messageId": "catalog-placement.b6e7325c-d55d-4fed-9967-f9f460f05b46",
+      "reason": "Missing approved catalog translation for sel:h2.text-2xl.font-semibold:ctx:heading:pos:4",
+      "reviewedSourceHash": "5c99c329e170834e3acb8af54691f3c95f065489c02573e55e6f2218161d63c7",
+      "scope": "content",
+      "sourceText": "Device features",
+      "translations": {
+        "de-de": "Gerätefunktionen",
+        "es-es": "Funciones del dispositivo",
+        "fr-fr": "Fonctionnalités de l'appareil",
+        "ja-jp": "デバイス機能",
+        "pt-br": "Recursos do dispositivo"
+      }
+    },
+    {
+      "messageId": "catalog-placement.3e3145d4-5921-4996-938d-75690c554220",
+      "reason": "Missing approved catalog translation for sel:p.mt-3:ctx:p:pos:4",
+      "reviewedSourceHash": "4595b885ab1b539a4bab43628e1a169be813f7cbbbd352772500495abfed9f65",
+      "scope": "content",
+      "sourceText": "Audio and haptics are generated or played on your device. We do not use the microphone, HealthKit, precise location, contacts, photos, or the advertising identifier.",
+      "translations": {
+        "de-de": "Audio und Haptik werden auf Ihrem Gerät erzeugt oder abgespielt. Wir verwenden weder das Mikrofon, HealthKit, den genauen Standort, Kontakte, Fotos noch die Werbe-ID.",
+        "es-es": "El audio y la respuesta háptica se generan o reproducen en tu dispositivo. No utilizamos el micrófono, HealthKit, la ubicación precisa, los contactos, las fotos ni el identificador de publicidad.",
+        "fr-fr": "L'audio et le retour haptique sont générés ou lus sur votre appareil. Nous n'utilisons pas le microphone, HealthKit, la localisation précise, les contacts, les photos ni l'identifiant publicitaire.",
+        "ja-jp": "オーディオと触覚フィードバックは、お使いのデバイス上で生成または再生されます。マイク、HealthKit、正確な位置情報、連絡先、写真、広告識別子は使用しません。",
+        "pt-br": "O áudio e o feedback tátil são gerados ou reproduzidos no seu dispositivo. Não usamos o microfone, o HealthKit, a localização precisa, os contatos, as fotos nem o identificador de publicidade."
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/privacy"
+}

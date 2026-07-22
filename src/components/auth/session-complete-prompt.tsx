@@ -13,6 +13,7 @@ import {
   createRuntimePhraseResolver,
   detectRuntimeLocale,
 } from "@/components/resonance/runtime-phrases";
+import type { ResonanceRouteClientMessages } from "@/i18n/content/remaining-pages/rw02-route-client/types";
 
 interface SessionCompletePromptProps {
   open: boolean;
@@ -25,6 +26,9 @@ interface SessionCompletePromptProps {
   dayStreak?: number;
   variant: ConversionVariant;
   activeMode: ModeName;
+  locale?: string;
+  modeDisplayName?: string;
+  routeClientMessages?: ResonanceRouteClientMessages;
 }
 
 export function SessionCompletePrompt({
@@ -38,12 +42,15 @@ export function SessionCompletePrompt({
   dayStreak = 0,
   variant,
   activeMode,
+  locale: explicitLocale,
+  modeDisplayName,
+  routeClientMessages,
 }: SessionCompletePromptProps) {
-  const [locale, setLocale] = useState("en");
+  const [locale, setLocale] = useState(() => explicitLocale ?? "en");
 
   useEffect(() => {
-    setLocale(detectRuntimeLocale());
-  }, [open]);
+    setLocale(explicitLocale ?? detectRuntimeLocale());
+  }, [explicitLocale, open]);
 
   const phrases = useMemo(() => createRuntimePhraseResolver(locale), [locale]);
 
@@ -100,11 +107,12 @@ export function SessionCompletePrompt({
         open={open || demoOpen}
         onOpenChange={handleOpenChange}
         onSuccess={onSuccess}
-        sessionMode={pattern.name}
+        sessionMode={modeDisplayName ?? pattern.name}
         accentColor={pattern.color}
         sessionSeconds={sessionSeconds}
         sessionsCompleted={sessionsCompleted}
         dayStreak={dayStreak}
+        locale={locale}
       />
     );
   }
@@ -120,6 +128,7 @@ export function SessionCompletePrompt({
         accentColor={pattern.color}
         sessionSeconds={sessionSeconds || 90}
         layout={bannerUi}
+        messages={routeClientMessages}
       />
     );
   }
@@ -167,6 +176,7 @@ export function SessionCompletePrompt({
       headline={headline}
       subtitle={phrases.resolve("auth.save_and_sync").text}
       totalMinutes={totalMinutes}
+      locale={locale}
     />
   );
 }

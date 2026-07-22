@@ -1,0 +1,15 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "腹式呼吸はボーカルコーチによって推奨されています。これにより、横隔膜を使って深く安定した空気供給を作り出し、フルで effortless な音を生成するための制御された空気の流れ（「呼吸サポート」）を提供します。重要なのは、お腹と脇腹に低く呼吸することであり、胸や肩に呼吸を上げないことです。",
+      "locale": "ja-jp",
+      "reason": "The approved Japanese value leaves 'effortless' untranslated.",
+      "replacement": "腹式呼吸はボーカルコーチに広く推奨されています。横隔膜を使って深く安定した空気を取り込み、豊かで無理のない声を生む制御された気流、つまり「息の支え」を作ります。重要なのは、胸や肩ではなく、お腹と脇腹の低い位置に息を入れることです。",
+      "reviewedSourceHash": "621006eb5fb5760ee04301bfe129651e5e1994e66d3ab1f9ab04285acd7f52d7",
+      "sourcePath": "faqs[0].answer",
+      "sourceText": "Diaphragmatic (belly) breathing is universally recommended by vocal coaches. It engages your diaphragm to create a deep, stable air supply and provides the controlled airflow ('breath support') that produces a full, effortless sound. The key is breathing low into your belly and sides, not up into your chest and shoulders."
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/singing"
+}

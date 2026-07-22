@@ -1,0 +1,473 @@
+{
+  "footer": {
+    "columns": {
+      "guides": {
+        "links": {
+          "anxiety": {
+            "href": "/for/anxiety",
+            "label": "Comment arrêter l'anxiété en 60 secondes avec une respiration en boîte"
+          },
+          "athletes": {
+            "href": "/for/athletes",
+            "label": "Récupération plus rapide entre les séries : soupir physiologique pour les athlètes"
+          },
+          "focus": {
+            "href": "/for/focus",
+            "label": "Comment augmenter la concentration de 40 % avec la respiration cohérente"
+          },
+          "high-blood-pressure": {
+            "href": "/for/high-blood-pressure",
+            "label": "Baissez votre pression artérielle naturellement avec la respiration 4-7-8"
+          },
+          "holiday-stress": {
+            "href": "/for/holiday-stress",
+            "label": "Comment gérer le stress des vacances en 30 secondes"
+          },
+          "huberman": {
+            "href": "/for/huberman",
+            "label": "Protocoles de respiration du laboratoire Huberman"
+          },
+          "kids": {
+            "href": "/for/kids",
+            "label": "Enfants"
+          },
+          "lung-capacity": {
+            "href": "/for/lung-capacity",
+            "label": "Exercices de capacité pulmonaire"
+          },
+          "meditation": {
+            "href": "/for/meditation",
+            "label": "Vous ne pouvez pas méditer ? Commencez avec la respiration cohérente"
+          },
+          "panic-attacks": {
+            "href": "/for/panic-attacks",
+            "label": "Comment arrêter une crise de panique en 30 secondes"
+          },
+          "pranayama": {
+            "href": "/for/pranayama",
+            "label": "Respiration Pranayama : Le guide complet de la respiration yogique"
+          },
+          "pregnancy": {
+            "href": "/for/pregnancy",
+            "label": "Respiration pour l'anxiété de grossesse et préparation à l'accouchement"
+          },
+          "public-speaking": {
+            "href": "/for/public-speaking",
+            "label": "Prise de parole en public"
+          },
+          "running": {
+            "href": "/for/running",
+            "label": "Récupérer plus vite et arrêter les douleurs de côté"
+          },
+          "singing": {
+            "href": "/for/singing",
+            "label": "Chant"
+          },
+          "sleep": {
+            "href": "/for/sleep",
+            "label": "Respiration 4-7-8 pour le sommeil"
+          },
+          "stress": {
+            "href": "/for/stress",
+            "label": "Stress"
+          },
+          "travel-anxiety": {
+            "href": "/for/travel-anxiety",
+            "label": "Anxiété de voyage"
+          }
+        },
+        "title": "Guides"
+      },
+      "info": {
+        "links": {
+          "about": {
+            "href": "/about",
+            "label": "À propos"
+          },
+          "about-abi": {
+            "href": "/about/abi",
+            "label": "À propos d'Abi"
+          },
+          "all-guides": {
+            "href": "/for",
+            "label": "Tous les guides"
+          },
+          "all-techniques": {
+            "href": "/breathe",
+            "label": "Toutes les techniques"
+          },
+          "app": {
+            "href": "/breathing-app",
+            "label": "Application"
+          },
+          "editorial-policy": {
+            "href": "/about/editorial-policy",
+            "label": "Politique éditoriale"
+          },
+          "embed": {
+            "href": "/embed",
+            "label": "Widget d'intégration"
+          },
+          "my-stats": {
+            "href": "/stats",
+            "label": "Mes statistiques"
+          },
+          "privacy": {
+            "href": "/privacy",
+            "label": "Politique de confidentialité"
+          },
+          "visualizer": {
+            "href": "/breathing-visualizer",
+            "label": "Visualiseur de respiration"
+          }
+        },
+        "title": "Infos"
+      },
+      "situations": {
+        "links": {
+          "before-presentation": {
+            "href": "/box-breathing-before-presentation",
+            "label": "Avant une présentation"
+          },
+          "before-surgery": {
+            "href": "/breathing-exercises-before-surgery",
+            "label": "Avant une opération"
+          },
+          "insomnia": {
+            "href": "/4-7-8-breathing-for-insomnia",
+            "label": "Insomnie"
+          },
+          "labor": {
+            "href": "/breathing-exercises-for-labor",
+            "label": "Accouchement"
+          },
+          "panic-attack": {
+            "href": "/physiological-sigh-panic-attack",
+            "label": "Crise de panique"
+          }
+        },
+        "title": "Situations"
+      },
+      "techniques": {
+        "links": {
+          "belly": {
+            "href": "/breathe/belly",
+            "label": "Respiration Abdominale"
+          },
+          "box": {
+            "href": "/breathe/box",
+            "label": "Respiration Carrée"
+          },
+          "breath-of-fire": {
+            "href": "/breathe/breath-of-fire",
+            "label": "Respiration du Feu"
+          },
+          "buteyko": {
+            "href": "/breathe/buteyko",
+            "label": "Respiration Buteyko"
+          },
+          "coherent": {
+            "href": "/breathe/coherent",
+            "label": "cohérence cardiaque"
+          },
+          "four-seven-eight": {
+            "href": "/breathe/4-7-8",
+            "label": "Relaxation 4-7-8"
+          },
+          "nadi-shodhana": {
+            "href": "/breathe/nadi-shodhana",
+            "label": "Nadi Shodhana"
+          },
+          "physiological-sigh": {
+            "href": "/breathe/physiological-sigh",
+            "label": "soupir physiologique"
+          },
+          "pursed-lip": {
+            "href": "/breathe/pursed-lip",
+            "label": "Respiration lèvres pincées"
+          },
+          "tummo": {
+            "href": "/breathe/tummo",
+            "label": "Respiration Tummo"
+          },
+          "ujjayi": {
+            "href": "/breathe/ujjayi",
+            "label": "Respiration Ujjayi"
+          },
+          "wim-hof": {
+            "href": "/breathe/wim-hof",
+            "label": "Respiration Wim Hof"
+          }
+        },
+        "title": "Techniques"
+      },
+      "timers": {
+        "links": {
+          "box-app": {
+            "href": "/box-breathing-app",
+            "label": "Application de respiration carrée"
+          },
+          "coherent-app": {
+            "href": "/coherent-breathing-app",
+            "label": "Application Cohérence Cardiaque"
+          },
+          "five-minute": {
+            "href": "/5-minute-breathing-exercise",
+            "label": "5 minutes"
+          },
+          "four-seven-eight-timer": {
+            "href": "/4-7-8-breathing-timer",
+            "label": "Minuteur 4-7-8"
+          },
+          "holiday": {
+            "href": "/holiday-breathing-exercises",
+            "label": "Exercices des fêtes"
+          },
+          "one-minute": {
+            "href": "/1-minute-breathing-exercise",
+            "label": "1 minute"
+          },
+          "two-minute": {
+            "href": "/2-minute-breathing-exercise",
+            "label": "2 minutes"
+          }
+        },
+        "title": "Minuteries"
+      }
+    },
+    "credits": {
+      "abiassi": "Abiassi",
+      "darkmatter": "Darkmatter AI Labs",
+      "prefix": "Créé par"
+    },
+    "languagesLink": "Disponible en Español, Português, Français, Deutsch, 日本語 →",
+    "safetyNote": "Arrêtez-vous si vous êtes étourdi, si vous ressentez des picotements ou une oppression thoracique. Reprenez plus tard avec des respirations plus courtes et plus faciles. Évitez les pauses prolongées durant la grossesse ou si conseillé par votre médecin."
+  },
+  "hero": {
+    "actions": {
+      "pickMode": "Choisir un mode",
+      "startSession": "Commencer la séance"
+    },
+    "headingLevel": 1,
+    "label": "Visualiseur de respiration gratuit",
+    "startButton": {
+      "color": "#e11d48",
+      "shadow": "0 12px 36px #e11d4860"
+    },
+    "subtitle": "Rythme visuel qui aide votre corps à se détendre. Calmez-vous à la demande, à tout moment et en tout lieu.",
+    "title": "Exercices de respiration profonde"
+  },
+  "metadata": {
+    "description": "Calmez votre anxiété en 60 secondes grâce à notre visualiseur gratuit d'exercices de respiration profonde. Respiration carrée, 4-7-8, soupir physiologique – tout est gratuit, sans inscription. Utilisé par plus de 10 000 personnes. Essayez maintenant.",
+    "openGraph": {
+      "description": "Calmez l'anxiété en 60 secondes avec notre visualiseur de respiration gratuit. Respiration carrée, 4-7-8, soupir physiologique. Sans inscription.",
+      "image": {
+        "height": 630,
+        "width": 1200
+      },
+      "imageAlt": "Orbe de respiration interactif se dilatant sur un dégradé corail",
+      "siteName": "Exercices de Respiration Profonde",
+      "title": "Visualiseur de respiration gratuit : Calmez l'anxiété en 60 secondes",
+      "type": "website"
+    },
+    "title": "Visualiseur de respiration gratuit : Calmez votre anxiété en 60 secondes avec des exercices de respiration profonde",
+    "twitter": {
+      "creator": "@abiassi_",
+      "description": "Calmez l'anxiété en 60 secondes avec notre visualiseur de respiration gratuit. Respiration carrée, 4-7-8, soupir physiologique. Essayez sans inscription.",
+      "title": "Visualiseur de respiration gratuit : Calmez l'anxiété en 60 secondes"
+    }
+  },
+  "schema": {
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage"
+    },
+    "website": {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "description": "Visualiseur de respiration guidée avec rythme réglable. Un rythme visuel qui aide votre corps à décélérer, n'importe quand, n'importe où.",
+      "name": "Exercices de Respiration Profonde",
+      "url": "https://deepbreathingexercises.com"
+    }
+  },
+  "sections": {
+    "editorialCards": {
+      "builtForRealLife": {
+        "body": "Séances courtes (1 à 5 minutes) avant des réunions, entre des tâches, ou au moment de s'endormir.",
+        "eyebrow": "Conçu pour la vie réelle"
+      },
+      "calmByDesign": {
+        "body": "Une respiration lente et régulière augmente souvent la variabilité de la fréquence cardiaque médiée par le nerf vague et réduit le stress perçu durant la pratique.",
+        "eyebrow": "Calme par conception"
+      },
+      "yourPace": {
+        "body": "Choisissez 3 à 8 secondes par phase. De plus petites respirations douces surpassent les 'grandes' respirations.",
+        "eyebrow": "Votre rythme"
+      }
+    },
+    "faq": {
+      "items": {
+        "bestTime": {
+          "answer": "Avant une réunion ou un entraînement, entre des blocs de travail en profondeur, ou avant de dormir. Utilisez des soupirs physiologiques pour des pics urgents de stress.",
+          "question": "Quand est le meilleur moment ?"
+        },
+        "howLong": {
+          "answer": "Commencez par 60 à 120 secondes. Si c'est encore facile et utile, étendez à 3 à 5 minutes. Pour une formation axée sur la HRV, 5 à 10 minutes la plupart des jours.",
+          "question": "Combien de temps devrais-je pratiquer ?"
+        },
+        "lightHeaded": {
+          "answer": "Vous respirez probablement trop. Réduisez la taille et le volume des respirations, raccourcissez les phases ou faites une pause et respirez normalement.",
+          "question": "Que faire si j’ai des vertiges ?"
+        },
+        "medical": {
+          "answer": "Non. C'est un outil d'auto-régulation. Si vous avez une condition cardiopulmonaire, êtes enceinte ou avez des antécédents de malaises, évitez les pauses longues et gardez tout doux.",
+          "question": "Est-ce un traitement médical ?"
+        },
+        "timing": {
+          "answer": "Oui. C'est le but. Utilisez 3 à 8 secondes par phase. Si les pauses se sentent inconfortables, retirez-les et maintenez une inspiration/expiration régulière.",
+          "question": "Puis-je changer le timing ?"
+        }
+      },
+      "title": "FAQ"
+    },
+    "infoCards": {
+      "bestMoments": {
+        "eyebrow": "Meilleurs moments",
+        "items": {
+          "bedtime": "Détente avant le coucher",
+          "beforeEvents": "Avant les événements",
+          "holidayStress": "Stress des fêtes",
+          "inFlight": "En vol",
+          "postConflict": "Post-conflit"
+        },
+        "title": "Glissez-vous à tout moment"
+      },
+      "dialItIn": {
+        "body": "Glissez entre 3 à 8 secondes par phase. Commencez petit. Lisse > profond. Si les pauses se sentent délicates, ignorez-les et maintenez une inspiration/expiration régulière.",
+        "eyebrow": "Réglez-le",
+        "title": "Lisse plutôt que profond"
+      },
+      "howLong": {
+        "eyebrow": "Combien de temps ?",
+        "items": {
+          "deeperShift": "• Changement plus profond : 3 à 5 minutes.",
+          "quickReset": "• Reset rapide : 1 à 2 minutes (4 à 8 cycles).",
+          "training": "• Effet de formation (axe HRV) : 5 à 10 minutes à un rythme facile et égal."
+        },
+        "timerLinks": {
+          "fiveMin": "5 min",
+          "oneMin": "1 min",
+          "twoMin": "2 min"
+        },
+        "title": "Alignez-vous avec le moment"
+      },
+      "practiceCues": {
+        "eyebrow": "Indications de pratique",
+        "items": {
+          "exhale": "• L’expiration se termine doucement. Ne forcez pas pour vider complètement.",
+          "nasal": "• Respirez par le nez et doucement ; sentez le bas du ventre se soulever.",
+          "shoulders": "• Gardez les épaules basses ; relâchez la mâchoire."
+        },
+        "title": "Ce qu'il faut remarquer"
+      },
+      "whyItWorks": {
+        "eyebrow": "Pourquoi ça fonctionne",
+        "items": {
+          "consistency": "• La consistance compte ; des séances courtes quotidiennes sont plus efficaces que de rares longues séances.",
+          "exhale": "• Un rythme accentué sur l'expiration ou 0,1 Hz se sent souvent plus calme en quelques minutes.",
+          "hrv": "• La respiration lente peut augmenter la variabilité de la fréquence cardiaque médiée par le nerf vague pendant les séances."
+        },
+        "title": "Plus calme en quelques minutes"
+      }
+    },
+    "modePicker": {
+      "allTechniquesLabel": "Toutes les techniques →",
+      "featured": {
+        "box": {
+          "cardTitle": "Respiration carrée",
+          "color": "#e11d48",
+          "description": "Concentration et réduction du stress (4-4-4-4)",
+          "displaySlug": "/box",
+          "href": "/breathe/box",
+          "mode": "Box Breathing",
+          "pillLabel": "Respiration Carrée",
+          "slug": "box",
+          "startCta": "Démarrer la session →"
+        },
+        "coherent": {
+          "cardTitle": "Respiration cohérente",
+          "color": "#059669",
+          "description": "Variabilité de la fréquence cardiaque (5,5-5,5)",
+          "displaySlug": "/coherent",
+          "href": "/breathe/coherent",
+          "mode": "Coherent Breathing",
+          "pillLabel": "cohérence cardiaque",
+          "slug": "coherent",
+          "startCta": "Démarrer la session →"
+        },
+        "fourSevenEight": {
+          "cardTitle": "Relaxation 4-7-8",
+          "color": "#4f46e5",
+          "description": "Sommeil et relaxation profonde (4-7-8)",
+          "displaySlug": "/4-7-8",
+          "href": "/breathe/4-7-8",
+          "mode": "4-7-8 Relax",
+          "pillLabel": "Relaxation 4-7-8",
+          "slug": "4-7-8",
+          "startCta": "Démarrer la session →"
+        },
+        "physiologicalSigh": {
+          "cardTitle": "Soupir physiologique",
+          "color": "#0ea5e9",
+          "description": "Réinitialisation en cas de panique (double inspiration)",
+          "displaySlug": "/physiological-sigh",
+          "href": "/breathe/physiological-sigh",
+          "mode": "Physiological Sigh",
+          "pillLabel": "soupir physiologique",
+          "slug": "physiological-sigh",
+          "startCta": "Démarrer la session →"
+        },
+        "wimHof": {
+          "cardTitle": "Respiration Wim Hof",
+          "color": "#f97316",
+          "description": "Énergie et résilience (30 respirations × 3 cycles)",
+          "displaySlug": "/wim-hof",
+          "href": "/breathe/wim-hof",
+          "mode": "Wim Hof Breathing",
+          "pillLabel": "Respiration Wim Hof",
+          "slug": "wim-hof",
+          "startCta": "Démarrer la session →"
+        }
+      },
+      "title": "Choisir un mode"
+    },
+    "nextLinks": {
+      "intro": "Commencez par la page qui correspond à votre situation : un reset rapide, un minuteur comme une application de cohérence cardiaque, un guide de récupération pour la course, ou une technique de méditation avancée.",
+      "links": {
+        "boxApp": "Application de respiration carrée",
+        "running": "Respiration pour la course",
+        "tummo": "Respiration Tummo",
+        "twoMinute": "Reset en 2 minutes"
+      },
+      "title": "Où aller ensuite"
+    },
+    "precision": {
+      "body": "Appuyez sur 'Commencer' et suivez l'orb pour inspirer, faire une pause, expirer, faire une pause. Le rythme est ajustable. Les séances sont courtes. Les effets sont tangibles.",
+      "title": "Travail de respiration précis."
+    },
+    "quickAnchor": {
+      "bullets": {
+        "easy": "• Restez simple. Si vous êtes étourdi, raccourcissez les phases ou faites une pause.",
+        "exhale": "• L’expiration se termine doucement. Ne forcez pas pour vider complètement.",
+        "nasal": "• Respirez par le nez et doucement ; sentez le bas du ventre se soulever."
+      },
+      "closing": "Régler un rythme doux, puis continuez à respirer. Des respirations petites et régulières surpassent des halètements profonds.",
+      "eyebrow": "Ancrage rapide",
+      "intro": "Asseyez-vous droit. Épaules détendues. Langue sur le palais. Inspirez doucement par le nez ; expirez silencieusement par le nez ou à lèvres pincées.",
+      "title": "Une minute pour se stabiliser"
+    }
+  },
+  "site": {
+    "baseUrl": "https://deepbreathingexercises.com"
+  }
+}

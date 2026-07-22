@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "sourceRoute": "/breathe",
+  "bindings": [
+    {
+      "messagePath": "metadata.title",
+      "sourceText": "Breathing Techniques: Box, 4-7-8, Coherent, Sigh, Wim Hof",
+      "catalogSourceText": "Breathing Techniques: Box, 4-7-8, Coherent, Physiological Sigh, Wim Hof | Deep Breathing Exercises",
+      "occurrenceKey": "head:title"
+    },
+    {
+      "messagePath": "metadata.description",
+      "sourceText": "Free guided breathing visualizers: box breathing, 4-7-8, coherent breathing, physiological sigh, and Wim Hof. Pick a technique and start—no signup.",
+      "catalogSourceText": "Free guided breathing visualizers for the most effective techniques. Box breathing, 4-7-8, coherent, physiological sigh, and Wim Hof method. Pick a pattern, press start, and follow along—no signup required.",
+      "occurrenceKey": "head:meta:name:description"
+    },
+    {
+      "messagePath": "metadata.socialTitle",
+      "sourceText": "Breathing Techniques (Free Guided Visualizers)",
+      "occurrenceKey": "head:meta:property:og:title"
+    },
+    {
+      "messagePath": "metadata.socialDescription",
+      "sourceText": "Box breathing, 4-7-8, coherent breathing, physiological sigh, and Wim Hof method—free guided visualizers. No signup required.",
+      "occurrenceKey": "head:meta:property:og:description"
+    },
+    {
+      "messagePath": "metadata.twitterDescription",
+      "sourceText": "Box breathing, 4-7-8, coherent breathing, physiological sigh, and Wim Hof—free guided visualizers.",
+      "occurrenceKey": "head:meta:name:twitter:description"
+    },
+    {
+      "messagePath": "breadcrumb.home",
+      "sourceText": "Home"
+    },
+    {
+      "messagePath": "breadcrumb.techniques",
+      "sourceText": "Breathing Techniques",
+      "catalogSourceText": "Breathing techniques",
+      "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0"
+    },
+    {
+      "messagePath": "hero.eyebrow",
+      "sourceText": "DEEP BREATHING EXERCISES",
+      "catalogSourceText": "Deep Breathing Exercises",
+      "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0"
+    },
+    {
+      "messagePath": "hero.title",
+      "sourceText": "Breathing techniques",
+      "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0"
+    },
+    {
+      "messagePath": "hero.description",
+      "sourceText": "Pick a technique, press Start, and follow the visual guide. All sessions are free and customizable.",
+      "occurrenceKey": "sel:p.max-w-2xl.text-lg:ctx:p:pos:0"
+    },
+    {
+      "messagePath": "cards.box.title",
+      "sourceText": "Box Breathing (4-4-4-4) Visualizer",
+      "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:0"
+    },
+    {
+      "messagePath": "cards.box.subtitle",
+      "sourceText": "Equal counts to steady arousal and sharpen focus.",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0"
+    },
+    {
+      "messagePath": "cards.4-7-8.title",
+      "sourceText": "4-7-8 Breathing Visualizer",
+      "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:1"
+    },
+    {
+      "messagePath": "cards.4-7-8.subtitle",
+      "sourceText": "Long-exhale cadence to downshift quickly.",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:1"
+    },
+    {
+      "messagePath": "cards.coherent.title",
+      "sourceText": "Coherent Breathing Trainer",
+      "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:2"
+    },
+    {
+      "messagePath": "cards.coherent.subtitle",
+      "sourceText": "Equal inhale/exhale near 0.1 Hz to amplify HRV.",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2"
+    },
+    {
+      "messagePath": "cards.physiological-sigh.title",
+      "sourceText": "Physiological Sigh: Instant Stress Relief",
+      "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:3"
+    },
+    {
+      "messagePath": "cards.physiological-sigh.subtitle",
+      "sourceText": "Calm down in 30 seconds with the double-inhale technique.",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:3"
+    },
+    {
+      "messagePath": "cards.wim-hof.title",
+      "sourceText": "Wim Hof Breathing Method",
+      "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:4"
+    },
+    {
+      "messagePath": "cards.wim-hof.subtitle",
+      "sourceText": "The Iceman's technique for energy, focus, and resilience.",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:4"
+    },
+    {
+      "messagePath": "cards.pursed-lip.title",
+      "sourceText": "Pursed Lip Breathing Technique",
+      "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:5"
+    },
+    {
+      "messagePath": "cards.pursed-lip.subtitle",
+      "sourceText": "Slow your breath and ease shortness of breath in seconds.",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:5"
+    },
+    {
+      "messagePath": "cards.nadi-shodhana.title",
+      "sourceText": "Alternate Nostril Breathing (Nadi Shodhana)",
+      "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:6"
+    },
+    {
+      "messagePath": "cards.nadi-shodhana.subtitle",
+      "sourceText": "Balance your nervous system with this ancient yoga technique.",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:6"
+    },
+    {
+      "messagePath": "cards.ujjayi.title",
+      "sourceText": "Ujjayi Breathing: The Ocean Breath Technique",
+      "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:7"
+    },
+    {
+      "messagePath": "cards.ujjayi.subtitle",
+      "sourceText": "The yogic breath that sounds like ocean waves for deep focus and calm.",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:7"
+    },
+    {
+      "messagePath": "cards.belly.title",
+      "sourceText": "Belly Breathing: Diaphragmatic Breathing Exercises",
+      "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:8"
+    },
+    {
+      "messagePath": "cards.belly.subtitle",
+      "sourceText": "The foundation of all breathwork: learn to breathe from your diaphragm.",
+      "catalogSourceText": "The foundation of all breathwork—learn to breathe from your diaphragm.",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:8"
+    },
+    {
+      "messagePath": "cards.buteyko.title",
+      "sourceText": "Buteyko Breathing: Light, Nasal Breathing Method",
+      "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:9"
+    },
+    {
+      "messagePath": "cards.buteyko.subtitle",
+      "sourceText": "The breath training technique developed for asthma and respiratory health.",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:9"
+    },
+    {
+      "messagePath": "cards.tummo.title",
+      "sourceText": "Tummo Breathing: How to Do the Tibetan Inner Fire Technique",
+      "catalogSourceText": "Tummo Breathing: Tibetan Inner Heat Technique",
+      "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:10"
+    },
+    {
+      "messagePath": "cards.tummo.subtitle",
+      "sourceText": "Learn the benefits, safety basics, and practice steps for this advanced Tibetan breathwork method.",
+      "catalogSourceText": "Harness a 1,000-year-old Tibetan practice to generate inner fire through breath.",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10"
+    },
+    {
+      "messagePath": "cards.breath-of-fire.title",
+      "sourceText": "Breath of Fire: Kundalini Yoga Breathing Exercise",
+      "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:11"
+    },
+    {
+      "messagePath": "cards.breath-of-fire.subtitle",
+      "sourceText": "Rapid rhythmic breathing for instant energy and mental clarity.",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:11"
+    },
+    {
+      "messagePath": "cards.9d-breathwork.title",
+      "sourceText": "9D Breathwork Explained",
+      "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:12"
+    },
+    {
+      "messagePath": "cards.9d-breathwork.subtitle",
+      "sourceText": "The breath is free. Try it now, then learn what makes a session 9D.",
+      "catalogSourceText": "Want something more specific? Browse breathing guides for sleep, anxiety, panic, focus, and performance.",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:12"
+    },
+    {
+      "messagePath": "cards.hope-cartel-9d-breathwork.title",
+      "sourceText": "Hope Cartel 9D Breathwork",
+      "occurrenceKey": "sel:h2.mt-3.text-2xl:ctx:heading:pos:13"
+    },
+    {
+      "messagePath": "cards.hope-cartel-9d-breathwork.subtitle",
+      "sourceText": "Australia's biggest 9D delivery brand. Sessions, pricing, and what to expect.",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:13"
+    },
+    {
+      "messagePath": "cardAction",
+      "sourceText": "Start session →",
+      "occurrenceKey": "sel:p.mt-5.text-sm:ctx:p:pos:0"
+    },
+    {
+      "messagePath": "guides.title",
+      "sourceText": "Guides by goal",
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0"
+    },
+    {
+      "messagePath": "guides.description",
+      "sourceText": "Want something more specific? Browse breathing guides for sleep, anxiety, panic, focus, and performance.",
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:14"
+    },
+    {
+      "messagePath": "guides.action",
+      "sourceText": "Browse all use cases →",
+      "occurrenceKey": "sel:a.text-sm.font-semibold:ctx:link:pos:0"
+    }
+  ]
+}

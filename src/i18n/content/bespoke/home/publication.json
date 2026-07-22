@@ -1,0 +1,73 @@
+{
+  "expectedMessages": 159,
+  "locales": {
+    "de-de": {
+      "bytes": 17585,
+      "catalogExact": 149,
+      "catalogNormalized": 1,
+      "overrideMessages": 4,
+      "path": "messages/de-de.json",
+      "publishable": true,
+      "replacementMessages": 5,
+      "resolvedMessages": 159,
+      "reviewedReplacementMessages": 5,
+      "sha256": "b4f0340962024ad0edd52d7a20d13f87f18ed5300629f8f2d92f6f5d87414508",
+      "unresolved": 0
+    },
+    "es-es": {
+      "bytes": 17653,
+      "catalogExact": 141,
+      "catalogNormalized": 1,
+      "overrideMessages": 4,
+      "path": "messages/es-es.json",
+      "publishable": true,
+      "replacementMessages": 13,
+      "resolvedMessages": 159,
+      "reviewedReplacementMessages": 13,
+      "sha256": "3c5680c96c3b7b2f4bad3e4ada6331d2a6daee2f2740351f9ce2d9e4f82b5bd2",
+      "unresolved": 0
+    },
+    "fr-fr": {
+      "bytes": 18408,
+      "catalogExact": 150,
+      "catalogNormalized": 1,
+      "overrideMessages": 4,
+      "path": "messages/fr-fr.json",
+      "publishable": true,
+      "replacementMessages": 4,
+      "resolvedMessages": 159,
+      "reviewedReplacementMessages": 4,
+      "sha256": "33dcabcf48557e541068875432307253ce5b84ff0669c690b64dc76c51370ae6",
+      "unresolved": 0
+    },
+    "ja-jp": {
+      "bytes": 19164,
+      "catalogExact": 147,
+      "catalogNormalized": 1,
+      "overrideMessages": 4,
+      "path": "messages/ja-jp.json",
+      "publishable": true,
+      "replacementMessages": 7,
+      "resolvedMessages": 159,
+      "reviewedReplacementMessages": 7,
+      "sha256": "e74538053287b36ca2f23beae99e6d42c0d13e3f793b1b456299d9ae3107610f",
+      "unresolved": 0
+    },
+    "pt-br": {
+      "bytes": 17870,
+      "catalogExact": 148,
+      "catalogNormalized": 1,
+      "overrideMessages": 4,
+      "path": "messages/pt-br.json",
+      "publishable": true,
+      "replacementMessages": 6,
+      "resolvedMessages": 159,
+      "reviewedReplacementMessages": 6,
+      "sha256": "9c71be6840d589bcc1e3b9a7a079b94cd7c21c11159d856d323469ce4bd8095b",
+      "unresolved": 0
+    }
+  },
+  "routeId": "home",
+  "schemaVersion": 1,
+  "sourceRoute": "/"
+}

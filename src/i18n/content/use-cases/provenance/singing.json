@@ -1,0 +1,3041 @@
+{
+  "locales": {
+    "de-de": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "14d35bc6474aed9ec9a54f70bb6ae2532b4a214d790df0733877147014ea521a",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "139cdf02816a889d2e90c7413b72979e2a70a55187ccdf4b15dc6666cc0e01a5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "d12a4a7e3855759f807d3791d4028eb300fadde57826dee9f909840691e5f1b5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-athletes-title": {
+          "sourceHash": "e9278533c33a8ed15a1645faf5ae8ca8ed10ef7f5c99b7f93ad94af83f21b7f5",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-focus-title": {
+          "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-lung-capacity-title": {
+          "sourceHash": "0cf688a2f16e61168d310058a1fb86e7699f9603d9dbed604bf9896c93e87ed9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.related-public-speaking-title": {
+          "sourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "f5ea3e62fea7e3b2d2fa6db163a97a97977dcaac1488773b267c73203eda0345",
+          "sourceText": "This breathing tool supplements vocal training. It is not a replacement for a qualified vocal coach. If you experience persistent vocal pain, hoarseness lasting more than 2 weeks, or difficulty swallowing, consult a speech-language pathologist or ENT specialist.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "621006eb5fb5760ee04301bfe129651e5e1994e66d3ab1f9ab04285acd7f52d7",
+          "sourceText": "Diaphragmatic (belly) breathing is universally recommended by vocal coaches. It engages your diaphragm to create a deep, stable air supply and provides the controlled airflow ('breath support') that produces a full, effortless sound. The key is breathing low into your belly and sides, not up into your chest and shoulders.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].question": {
+          "sourceHash": "d6aa8bd86c27057d5520830ec29ff41a499c6f3e8b47926bc157a29d1a9d2906",
+          "sourceText": "What is the best breathing technique for singing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "ea490c12161d3d0c54000f57d37a54abc70e589bfb8ec01c137378d910a80181",
+          "sourceText": "Place one hand on your chest and one on your belly. When you inhale, your belly should expand outward while your chest stays relatively still. Your shoulders should not rise. When singing, you should feel gentle engagement in your lower abs and sides, not tension, but a sense of controlled support.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "71fe33f41b345a28c1f661055e5b0395e77208b2172edeae317ce6eb4a2fce00",
+          "sourceText": "How do I know if I'm breathing correctly for singing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "7dcecae8884a96aef3c1945bd53aab317d27bc519d1eda6606cd0e205dff2cc1",
+          "sourceText": "Usually because you're chest breathing (shallow) rather than belly breathing (deep). Chest breathing fills only the top third of your lungs. Also check: are you exhaling all your air before breathing in? A quick, full exhale followed by a deep belly inhale gives you maximum air for the next phrase.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "f23e62d09961cd0743b3cfe016ef9dbb4f786a62c3f4d9224ac904e998d1a5cb",
+          "sourceText": "Why do I run out of breath when singing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "f118311a9ae576b98e84c6b647c457d05027bf84a86281b512b54c42ff244a1a",
+          "sourceText": "5-10 minutes of dedicated breathing practice before each singing session makes a significant difference. Daily practice is ideal, the goal is to make diaphragmatic breathing automatic so you don't have to think about it while performing. Most singers see improvement within 2-4 weeks of consistent practice.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "0d5aef360654a1d0da53a69a8a38157112b71fca2807a9ba56567c3b38787c86",
+          "sourceText": "How long should I practice breathing exercises for singing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "468b5abcc351b12a5e111aba6347f0f1b8458f825edf9adeb7370d301091b646",
+          "sourceText": "Yes, dramatically. Breath support is considered the single most important technical foundation in singing. Professional singers spend years refining their breath control. Even a few weeks of focused diaphragmatic breathing practice can noticeably improve your tone quality, phrase length, pitch stability, and vocal endurance.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].question": {
+          "sourceHash": "6e7fdffcfeb901a21da66c12ab9c2cd7e606b141de689757528da0b5a17de155",
+          "sourceText": "Does breathing practice really improve singing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "85707c4b088145b5aa99fb39762cf224436f6bcf28551abb1eaaa23c93673530",
+          "sourceText": "Absolutely. The 4-second inhale, 6-second exhale pattern activates your parasympathetic nervous system, directly countering the fight-or-flight response that causes stage fright. Practice this pattern for 2-3 minutes before performing to calm your nerves and stabilize your breathing.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].question": {
+          "sourceHash": "945721d3104c540d2a6d093f3e7d5c89d1ba29bbe9e1be703e12d8aaf0d89d09",
+          "sourceText": "Can breathing exercises help with singing anxiety?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "b13d7c546d97202158121b6705d2f493de2dec65855561dc3fe363015224a4c5",
+          "sourceText": "Every vocal coach says the same thing: 'Support your breath.' But what does that actually mean? Breath support for singing starts with your diaphragm, the dome-shaped muscle beneath your lungs that controls airflow. Singers who breathe from their chest run out of air mid-phrase, strain their vocal cords, and lose control of pitch and dynamics. Diaphragmatic breathing gives you the steady, controlled airstream that makes the difference between struggling through a song and owning every note.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "451909703afcdb966c7e93ea8013230286d3ba2d994cb068d3492b5d9b11f9a5",
+          "sourceText": "Build the diaphragmatic breath support that powers every great voice",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "26ff10a16e9d0c796b468f5eebc19c4d11727a8e06868ddfd0ecb6c3dab87e8e",
+          "sourceText": "Breathing Exercises for Singing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "324e9ff1c6889cf253e960097e6902c431d341357ed8a2c52fce33e79e79394f",
+          "sourceText": "Lie on your back with a book on your stomach. Breathe so the book rises on inhale and falls on exhale. Your chest should barely move. Practice until this feels natural.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "52b3c130fceae37015a651b0805d8548d0dd79b748c7b8c460e267e434959fe1",
+          "sourceText": "Establish belly breathing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "573284dff7bb9bc7e96864119060a4ddaa7c125334ebdd9b3507903071ffd7bb",
+          "sourceText": "5 minutes, lying down",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "c9de57cbd2ce2d424e02457c9416c539b777660f3b59cc189c22694f6c61fa80",
+          "sourceText": "Stand with one hand on your belly and one on your chest. Inhale through your nose, belly pushes out, chest stays still. Exhale through pursed lips, controlling the release. Use the belly breathing visualizer to guide your timing.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "4ba1780f286870738f437b1bed4c147e8b1afaee68ef5c6c1ce719d01fda2209",
+          "sourceText": "Practice standing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "62888c96e016ab621ae450de378637b30a8ee65ff0f6d07b59d81a2eb24c3836",
+          "sourceText": "3-5 minutes standing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "bafa2a51b11f30e8a475e973a78d1959732b1d991854980fd6838557bb5ab594",
+          "sourceText": "Inhale for 4 counts, then exhale on a steady 'sss' sound for as long as you can, keeping the airflow even. Time yourself, aim to increase your exhale duration each week.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "2cce91a85838fa3a9a3912828430827047c97fb5c95f457cc4fdf53fdc7c15f1",
+          "sourceText": "Add sustained exhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "39b54ea6ab14f440a14f2e0fe8c6c9edf3efe753bfbb03821a716487a1dbffc7",
+          "sourceText": "Start at 15-20 seconds, build to 30+",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "c2dc97369aa89a8379e8d35f0a54a71445eaab1cea435c1a9965ea3f7293b5f8",
+          "sourceText": "Choose a simple phrase or scale. Breathe into your belly, then sing while keeping your belly gently engaged (not rigid). Notice how the sound feels supported and full compared to chest breathing.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "ef313d1dafae7503fcbcab50a0ec48271197486dc6cd0c76db5974457c6dadd8",
+          "sourceText": "Sing with support",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "6fb366c4cdc87b5fa8a406e8eb3011b6ecd1fcdaa7885ede0b683ea5a72d7490",
+          "sourceText": "5-10 minutes of singing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "4cf08eee662e275df9318c477bde7472c7806025a34d9d52ea9ee4e487fdd61e",
+          "sourceText": "Singers often need to breathe quickly between phrases. Practice 'catch breaths', sharp, quick belly inhales (1 second) followed by controlled singing. The diaphragm should snap down and expand your sides.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "4adeae4902a619e16cf7271bb57cffe8db3bb6ca417188db26bbb45b950ada6d",
+          "sourceText": "Quick breath practice",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "72ded3836cdab47d615a8683722faa58387fe3190f5dbcc6b0e7cb5b70040116",
+          "sourceText": "2-3 minutes",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "a49807805205bcadc773a08fb53a98a327b324b593ae43d3ad59cb4398ab140d",
+          "sourceText": "Use the breathing visualizer daily for 5 minutes to reinforce the muscle memory. Over time, diaphragmatic breathing becomes automatic, and you won't need to think about 'supporting'. Your body will do it naturally.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "37c5488bf8aa3d155cec300e60f903c3f57b6bceb97d8b5b85033e2e7372099e",
+          "sourceText": "Daily integration",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "abdebd00ebd1eeabe588eb8a8d117b29054ff0d8f56a179d94dc924c19cf329a",
+          "sourceText": "5 minutes daily",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "fc34ebaecd252d05501b62314262b4d278fbaaf81bb5a22fc4d62df343f4b796",
+          "sourceText": "Breathe into your sides and back, not just your belly. Think of inflating a ring around your waist",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "57327accd37abdcb185c9098ff42071523736e3a5aad92bf0e7c4ba045a72aee",
+          "sourceText": "Never lock or brace your abdominal muscles, support is about controlled release, not rigidity",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "243138cb76c22373da16a4819e388b3c9b931e22b66084e8f51c30934594fdc1",
+          "sourceText": "Practice the breathing before adding voice. Master the airflow first, then add sound",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "cc8a96255b7b42b7c456d9d6f73fd808c7c0ade0604d7851cbc40e3ee784410d",
+          "sourceText": "Record yourself singing before and after a month of practice to hear the difference",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "c66aaa97e6682c87471045d20e826b44a812bf472bb4f35493920df510ac9bb4",
+          "sourceText": "Warm up your breathing before warming up your voice, 2-3 minutes of belly breathing resets your system",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[5]": {
+          "sourceHash": "540cd8dc7f9347b138b411fd14bcdbef1e588b435294e4f511b8002c182ff1f0",
+          "sourceText": "Stay hydrated, dry vocal cords need more air pressure, which strains your breathing muscles",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "88ad581d5e7cccb86dbfdb1b9c88d3ee681d570a374b3d3130969fb4bc255210",
+          "sourceText": "Breathing exercises for singing that build diaphragmatic breath support and vocal stamina. Free guided timer to train the foundation of great singing.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "eb5160facd0a9c92d163c82a952ea5844e2df22328dd835a3c9b560137b1658e",
+          "sourceText": "Train the diaphragmatic breathing that powers every great voice. Free guided timer for singers at all levels.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "e126bc449abc3aa5f350893e6d968572efd8887bf38d6a1bfcb8a6ef69e21a82",
+          "sourceText": "Breathing Exercises for Singing: Build Vocal Breath Support",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "18a3fd39d661506067743994bd9401ab097a8215391b1884efe4d74c8560f7c8",
+          "sourceText": "Breathing Exercises for Singing: Build Vocal Breath Support (Free Timer) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "6d806ea049a0f3f059fa8179c89b41dbedbf819e06e13214c032f127728d3a48",
+          "sourceText": "Free breathing exercises for singers. Build diaphragmatic support, extend your phrases, and reduce vocal strain.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "303af21f248ca55364ae7b0dcfacb4e819d60c61f0846e9b5944de049d7192d2",
+          "sourceText": "Breathing Exercises for Singing — Build Breath Support",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "011f013d95a3dda721ffd30b5700a857d9e5718cede5c993c96baef56ac88518",
+          "sourceText": "Most people breathe with their chest: shoulders rise, rib cage expands, and the breath stays shallow. This works fine for daily life, but it's a disaster for singing. Chest breathing gives you a thin, unstable air supply that runs out quickly. Your vocal cords compensate by tensing up, leading to strain, pitch problems, and a tight, forced sound. The irony is that the 'effort' of chest breathing actually produces a weaker voice than relaxed diaphragmatic breathing.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "a9c239e02d2c9cbbc70e6d7583102627e8982ca424ebff00fad7073219b3f703",
+          "sourceText": "Why Singers Struggle with Breath",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "3316e060f618139953e17f6057492f3210b9d6662f4cdfb44a0499e9074d9c4c",
+          "sourceText": "Running out of air before finishing phrases",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "4273f59637c1ee9f838e5d2d67f886d526d078e682b864cdb8816c90f6425e34",
+          "sourceText": "Visible shoulder and chest movement while singing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "c68eb977ae4dd8b7979021cdbde2fd8fc927c07a4c7e3164f8c45f24b9adf4d9",
+          "sourceText": "Tight, strained sound especially on high notes",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "fedcfc8f0256c52cda6254d33a27537226fd55d10889cfb9dd3a08a7d6a9cef1",
+          "sourceText": "Inconsistent volume and dynamics",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "2921e6a7b190c40d7674c01c6a1797f61986a78f481d2e336164fb30b2226c90",
+          "sourceText": "Vocal fatigue after short practice sessions",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "dbb004d262d5f82fbf25fbd6cfff76aed1d557a4c59859979d9b03bd8d115515",
+          "sourceText": "Pitch goes sharp or flat at the end of phrases",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "1efb94fcc11bdf350e315bc51af7fe5a5b8ea285186577861b4857c2282c18e0",
+          "sourceText": "Breathy tone from poor air management",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[7]": {
+          "sourceHash": "34b303a124cd89fec839b024428d61af93033e8c559269fa5ae84bc404585f02",
+          "sourceText": "Difficulty with long sustained notes",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "6371388cd9d37a4b3974463669c4d7a98a94f835aa1b11e519b94967937eb82a",
+          "sourceText": "Comprehensive review of respiratory mechanics during singing, confirming diaphragmatic breathing as the foundation of efficient vocal production.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "98fbbada9c41be0058ec2836bec5785a9702f87056a4a0d5930049fd8d63fccf",
+          "sourceText": "Respiratory Function in Singing",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "a200f7f9cbe260a62a9de63062fc2a67f1e435d420ec609ea72e14963d1c11b1",
+          "sourceText": "Study comparing breathing patterns of professional vs amateur singers, showing professionals use significantly more diaphragmatic engagement.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "52f041202a4c658621ebb20400ffc094741234010e6721698cd1f9296dac854f",
+          "sourceText": "Breathing Patterns in Professional Singers",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "2844964c1a0ab59dfd1ce60ed0d14c9efc553dbc87701c51af87cc3f11040208",
+          "sourceText": "Research demonstrating that targeted breathing exercises improve vocal quality measures including jitter, shimmer, and harmonic-to-noise ratio.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "8eb0d3952fdd13810f62340039e29cb2dc57764e8716576c2e1d016a19612498",
+          "sourceText": "The Effect of Breathing Exercises on Singing Voice Quality",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "81afa8921f79edb35f17bade6b15aeb256491e4e08ebaba5581399180c3bbfeb",
+          "sourceText": "Master diaphragmatic breathing for better vocal support",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "776f1ce6d583b9c4588e159cc51f1829c1fe9fd9e9750ba8958c257f59304a8b",
+          "sourceText": "Breath support for projecting your voice with confidence",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "86aeaadb693d211a4ea183755d4987215ba87817c2cc291e24197b05d37a5d54",
+          "sourceText": "Build respiratory endurance for performance",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "c66f35d6e81550e789db148e651bd6c1da0751ff6ddb6a172b331b9bffa873dc",
+          "sourceText": "Use breathwork to sharpen concentration before performing",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[3].teaser": {
+          "sourceHash": "d9af2e7c33263ed3471722313735abc99919cbcee3b4ad09e1c4aa7778694b50",
+          "sourceText": "Expand your breath support with lung capacity training.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "dec8107cf0498d7220c8f36229a046b6e14fb8226b48ff9203b0d4a8a1688d36",
+          "sourceText": "The Science of Vocal Breath Support",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "cddfd04cab7cfe6f6f4a5a1401e25bf512bb61f1a281d4d0e7a6486bda4bd815",
+          "sourceText": "Your vocal cords vibrate when air pressure beneath them (subglottic pressure) is steady. Diaphragmatic breathing provides this consistent pressure, while chest breathing creates uneven bursts. Research shows trained singers maintain subglottic pressure 40-60% more consistently than untrained singers.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "1fd4a27463d35d717043bf8009aab38981cf3de2a7853bdc2ff3f57f6d4c50e6",
+          "sourceText": "Subglottic Pressure Control",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "c1cbf016a1c48e38b705e08073de6eaca8e6dd710c32ec10c87bf93bf3cf7765",
+          "sourceText": "The Italian vocal technique 'appoggio' (literally 'lean' or 'support') describes the coordinated engagement of the diaphragm, intercostals, and abdominal muscles during singing. This creates a balanced 'leaning' of the breathing mechanism that regulates airflow without tension.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "5b858b71b670a3ec3bc7adf6a4253061c98d705724809f6cfb0dc49dcdb3a29d",
+          "sourceText": "Appoggio: The Breath-Voice Connection",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "8230abf9a63cf008d760f2a3a35d1a9061a3bad3ae13ac947f089d4118787ec0",
+          "sourceText": "When singers lack breath support, the laryngeal muscles compensate by tensing to control airflow. This creates a tight, strained sound and risks vocal injury. Proper diaphragmatic support removes this burden from the throat, the diaphragm does the work, the throat stays relaxed.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "8ba25d67342c184f7011abb66e7b29f801d0bdc0d80db99161f98d2223d17517",
+          "sourceText": "Reduced Laryngeal Tension",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "2f905293096d2913eb5876ec5d7effb0941c9ac0017a0969b59850dbc65a0f94",
+          "sourceText": "The slow exhale pattern (longer exhale than inhale) activates the vagus nerve, reducing performance anxiety and muscle tension. Calmer singers breathe better, and better breathing creates calmer singers, a virtuous cycle.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "43e10b744feece4a0b7ca5f77fc5d0f640770e6f3b5c229ede1793226bd900fc",
+          "sourceText": "Parasympathetic Activation",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "58af66cac2c39b91e4dd2a75a2ecf8726f39cfd1aed074ecf6a8a060ee14a747",
+          "sourceText": "Diaphragmatic breathing (belly breathing) engages your primary breathing muscle to create a deep, stable air supply. When you inhale, your diaphragm contracts downward, expanding your belly and sides. This draws air deep into your lungs, giving you 2-3 times more air than chest breathing. When you sing, the diaphragm controls the release, providing steady, controlled pressure (called 'appoggio' in classical technique) that keeps your vocal cords vibrating efficiently without strain.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "8dbac21e8b4de27bae23f102ab667993a88a1b8725acab48df3be5ceb5e21c0c",
+          "sourceText": "Diaphragmatic Breathing: The Singer's Foundation",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "eebc6ae284549a5eeace967c8410c46bd2a6ac491305a5b88e7ab1f504590146",
+          "sourceText": "The 4-second inhale, 6-second exhale pattern trains the exact muscle control singers need: a quick, deep breath in (you rarely have more than a beat or two to breathe between phrases) followed by a long, controlled exhale (the singing part). This ratio also activates the parasympathetic nervous system, reducing the performance anxiety that makes breath control even harder.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "63ec6398e5d343b8237906f23e073fbd6bf73dd2c9f813e1e4c772ef7c65d754",
+          "sourceText": "The best breathing exercise for singing is diaphragmatic (belly) breathing. Breathe in through your nose for 4 seconds, expanding your belly and sides. Exhale slowly for 6 seconds through pursed lips. This trains the controlled airflow that creates vocal 'breath support.' Practice 5 minutes daily: within weeks your tone, phrase length, and pitch stability will improve.",
+          "status": "route-catalog-normalized"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "1dab29d551b9e0340e644973cefce2cb7dbbadaa5a9c50ef296fc35c6bd57510",
+          "sourceText": "What breathing exercises help with singing?",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "es-es": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "14d35bc6474aed9ec9a54f70bb6ae2532b4a214d790df0733877147014ea521a",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "139cdf02816a889d2e90c7413b72979e2a70a55187ccdf4b15dc6666cc0e01a5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "d12a4a7e3855759f807d3791d4028eb300fadde57826dee9f909840691e5f1b5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-athletes-title": {
+          "sourceHash": "e9278533c33a8ed15a1645faf5ae8ca8ed10ef7f5c99b7f93ad94af83f21b7f5",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-focus-title": {
+          "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-lung-capacity-title": {
+          "sourceHash": "0cf688a2f16e61168d310058a1fb86e7699f9603d9dbed604bf9896c93e87ed9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.related-public-speaking-title": {
+          "sourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "f5ea3e62fea7e3b2d2fa6db163a97a97977dcaac1488773b267c73203eda0345",
+          "sourceText": "This breathing tool supplements vocal training. It is not a replacement for a qualified vocal coach. If you experience persistent vocal pain, hoarseness lasting more than 2 weeks, or difficulty swallowing, consult a speech-language pathologist or ENT specialist.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "621006eb5fb5760ee04301bfe129651e5e1994e66d3ab1f9ab04285acd7f52d7",
+          "sourceText": "Diaphragmatic (belly) breathing is universally recommended by vocal coaches. It engages your diaphragm to create a deep, stable air supply and provides the controlled airflow ('breath support') that produces a full, effortless sound. The key is breathing low into your belly and sides, not up into your chest and shoulders.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].question": {
+          "sourceHash": "d6aa8bd86c27057d5520830ec29ff41a499c6f3e8b47926bc157a29d1a9d2906",
+          "sourceText": "What is the best breathing technique for singing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "ea490c12161d3d0c54000f57d37a54abc70e589bfb8ec01c137378d910a80181",
+          "sourceText": "Place one hand on your chest and one on your belly. When you inhale, your belly should expand outward while your chest stays relatively still. Your shoulders should not rise. When singing, you should feel gentle engagement in your lower abs and sides, not tension, but a sense of controlled support.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "71fe33f41b345a28c1f661055e5b0395e77208b2172edeae317ce6eb4a2fce00",
+          "sourceText": "How do I know if I'm breathing correctly for singing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "7dcecae8884a96aef3c1945bd53aab317d27bc519d1eda6606cd0e205dff2cc1",
+          "sourceText": "Usually because you're chest breathing (shallow) rather than belly breathing (deep). Chest breathing fills only the top third of your lungs. Also check: are you exhaling all your air before breathing in? A quick, full exhale followed by a deep belly inhale gives you maximum air for the next phrase.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "f23e62d09961cd0743b3cfe016ef9dbb4f786a62c3f4d9224ac904e998d1a5cb",
+          "sourceText": "Why do I run out of breath when singing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "f118311a9ae576b98e84c6b647c457d05027bf84a86281b512b54c42ff244a1a",
+          "sourceText": "5-10 minutes of dedicated breathing practice before each singing session makes a significant difference. Daily practice is ideal, the goal is to make diaphragmatic breathing automatic so you don't have to think about it while performing. Most singers see improvement within 2-4 weeks of consistent practice.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "0d5aef360654a1d0da53a69a8a38157112b71fca2807a9ba56567c3b38787c86",
+          "sourceText": "How long should I practice breathing exercises for singing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "468b5abcc351b12a5e111aba6347f0f1b8458f825edf9adeb7370d301091b646",
+          "sourceText": "Yes, dramatically. Breath support is considered the single most important technical foundation in singing. Professional singers spend years refining their breath control. Even a few weeks of focused diaphragmatic breathing practice can noticeably improve your tone quality, phrase length, pitch stability, and vocal endurance.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].question": {
+          "sourceHash": "6e7fdffcfeb901a21da66c12ab9c2cd7e606b141de689757528da0b5a17de155",
+          "sourceText": "Does breathing practice really improve singing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "85707c4b088145b5aa99fb39762cf224436f6bcf28551abb1eaaa23c93673530",
+          "sourceText": "Absolutely. The 4-second inhale, 6-second exhale pattern activates your parasympathetic nervous system, directly countering the fight-or-flight response that causes stage fright. Practice this pattern for 2-3 minutes before performing to calm your nerves and stabilize your breathing.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].question": {
+          "sourceHash": "945721d3104c540d2a6d093f3e7d5c89d1ba29bbe9e1be703e12d8aaf0d89d09",
+          "sourceText": "Can breathing exercises help with singing anxiety?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "b13d7c546d97202158121b6705d2f493de2dec65855561dc3fe363015224a4c5",
+          "sourceText": "Every vocal coach says the same thing: 'Support your breath.' But what does that actually mean? Breath support for singing starts with your diaphragm, the dome-shaped muscle beneath your lungs that controls airflow. Singers who breathe from their chest run out of air mid-phrase, strain their vocal cords, and lose control of pitch and dynamics. Diaphragmatic breathing gives you the steady, controlled airstream that makes the difference between struggling through a song and owning every note.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "451909703afcdb966c7e93ea8013230286d3ba2d994cb068d3492b5d9b11f9a5",
+          "sourceText": "Build the diaphragmatic breath support that powers every great voice",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "26ff10a16e9d0c796b468f5eebc19c4d11727a8e06868ddfd0ecb6c3dab87e8e",
+          "sourceText": "Breathing Exercises for Singing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "324e9ff1c6889cf253e960097e6902c431d341357ed8a2c52fce33e79e79394f",
+          "sourceText": "Lie on your back with a book on your stomach. Breathe so the book rises on inhale and falls on exhale. Your chest should barely move. Practice until this feels natural.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "52b3c130fceae37015a651b0805d8548d0dd79b748c7b8c460e267e434959fe1",
+          "sourceText": "Establish belly breathing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "573284dff7bb9bc7e96864119060a4ddaa7c125334ebdd9b3507903071ffd7bb",
+          "sourceText": "5 minutes, lying down",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "c9de57cbd2ce2d424e02457c9416c539b777660f3b59cc189c22694f6c61fa80",
+          "sourceText": "Stand with one hand on your belly and one on your chest. Inhale through your nose, belly pushes out, chest stays still. Exhale through pursed lips, controlling the release. Use the belly breathing visualizer to guide your timing.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "4ba1780f286870738f437b1bed4c147e8b1afaee68ef5c6c1ce719d01fda2209",
+          "sourceText": "Practice standing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "62888c96e016ab621ae450de378637b30a8ee65ff0f6d07b59d81a2eb24c3836",
+          "sourceText": "3-5 minutes standing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "bafa2a51b11f30e8a475e973a78d1959732b1d991854980fd6838557bb5ab594",
+          "sourceText": "Inhale for 4 counts, then exhale on a steady 'sss' sound for as long as you can, keeping the airflow even. Time yourself, aim to increase your exhale duration each week.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "2cce91a85838fa3a9a3912828430827047c97fb5c95f457cc4fdf53fdc7c15f1",
+          "sourceText": "Add sustained exhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "39b54ea6ab14f440a14f2e0fe8c6c9edf3efe753bfbb03821a716487a1dbffc7",
+          "sourceText": "Start at 15-20 seconds, build to 30+",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "c2dc97369aa89a8379e8d35f0a54a71445eaab1cea435c1a9965ea3f7293b5f8",
+          "sourceText": "Choose a simple phrase or scale. Breathe into your belly, then sing while keeping your belly gently engaged (not rigid). Notice how the sound feels supported and full compared to chest breathing.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "ef313d1dafae7503fcbcab50a0ec48271197486dc6cd0c76db5974457c6dadd8",
+          "sourceText": "Sing with support",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "6fb366c4cdc87b5fa8a406e8eb3011b6ecd1fcdaa7885ede0b683ea5a72d7490",
+          "sourceText": "5-10 minutes of singing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "4cf08eee662e275df9318c477bde7472c7806025a34d9d52ea9ee4e487fdd61e",
+          "sourceText": "Singers often need to breathe quickly between phrases. Practice 'catch breaths', sharp, quick belly inhales (1 second) followed by controlled singing. The diaphragm should snap down and expand your sides.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "4adeae4902a619e16cf7271bb57cffe8db3bb6ca417188db26bbb45b950ada6d",
+          "sourceText": "Quick breath practice",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "72ded3836cdab47d615a8683722faa58387fe3190f5dbcc6b0e7cb5b70040116",
+          "sourceText": "2-3 minutes",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "a49807805205bcadc773a08fb53a98a327b324b593ae43d3ad59cb4398ab140d",
+          "sourceText": "Use the breathing visualizer daily for 5 minutes to reinforce the muscle memory. Over time, diaphragmatic breathing becomes automatic, and you won't need to think about 'supporting'. Your body will do it naturally.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "37c5488bf8aa3d155cec300e60f903c3f57b6bceb97d8b5b85033e2e7372099e",
+          "sourceText": "Daily integration",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "abdebd00ebd1eeabe588eb8a8d117b29054ff0d8f56a179d94dc924c19cf329a",
+          "sourceText": "5 minutes daily",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "fc34ebaecd252d05501b62314262b4d278fbaaf81bb5a22fc4d62df343f4b796",
+          "sourceText": "Breathe into your sides and back, not just your belly. Think of inflating a ring around your waist",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "57327accd37abdcb185c9098ff42071523736e3a5aad92bf0e7c4ba045a72aee",
+          "sourceText": "Never lock or brace your abdominal muscles, support is about controlled release, not rigidity",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "243138cb76c22373da16a4819e388b3c9b931e22b66084e8f51c30934594fdc1",
+          "sourceText": "Practice the breathing before adding voice. Master the airflow first, then add sound",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "cc8a96255b7b42b7c456d9d6f73fd808c7c0ade0604d7851cbc40e3ee784410d",
+          "sourceText": "Record yourself singing before and after a month of practice to hear the difference",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "c66aaa97e6682c87471045d20e826b44a812bf472bb4f35493920df510ac9bb4",
+          "sourceText": "Warm up your breathing before warming up your voice, 2-3 minutes of belly breathing resets your system",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[5]": {
+          "sourceHash": "540cd8dc7f9347b138b411fd14bcdbef1e588b435294e4f511b8002c182ff1f0",
+          "sourceText": "Stay hydrated, dry vocal cords need more air pressure, which strains your breathing muscles",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "88ad581d5e7cccb86dbfdb1b9c88d3ee681d570a374b3d3130969fb4bc255210",
+          "sourceText": "Breathing exercises for singing that build diaphragmatic breath support and vocal stamina. Free guided timer to train the foundation of great singing.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "eb5160facd0a9c92d163c82a952ea5844e2df22328dd835a3c9b560137b1658e",
+          "sourceText": "Train the diaphragmatic breathing that powers every great voice. Free guided timer for singers at all levels.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "e126bc449abc3aa5f350893e6d968572efd8887bf38d6a1bfcb8a6ef69e21a82",
+          "sourceText": "Breathing Exercises for Singing: Build Vocal Breath Support",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "18a3fd39d661506067743994bd9401ab097a8215391b1884efe4d74c8560f7c8",
+          "sourceText": "Breathing Exercises for Singing: Build Vocal Breath Support (Free Timer) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "6d806ea049a0f3f059fa8179c89b41dbedbf819e06e13214c032f127728d3a48",
+          "sourceText": "Free breathing exercises for singers. Build diaphragmatic support, extend your phrases, and reduce vocal strain.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "303af21f248ca55364ae7b0dcfacb4e819d60c61f0846e9b5944de049d7192d2",
+          "sourceText": "Breathing Exercises for Singing — Build Breath Support",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "011f013d95a3dda721ffd30b5700a857d9e5718cede5c993c96baef56ac88518",
+          "sourceText": "Most people breathe with their chest: shoulders rise, rib cage expands, and the breath stays shallow. This works fine for daily life, but it's a disaster for singing. Chest breathing gives you a thin, unstable air supply that runs out quickly. Your vocal cords compensate by tensing up, leading to strain, pitch problems, and a tight, forced sound. The irony is that the 'effort' of chest breathing actually produces a weaker voice than relaxed diaphragmatic breathing.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "a9c239e02d2c9cbbc70e6d7583102627e8982ca424ebff00fad7073219b3f703",
+          "sourceText": "Why Singers Struggle with Breath",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "3316e060f618139953e17f6057492f3210b9d6662f4cdfb44a0499e9074d9c4c",
+          "sourceText": "Running out of air before finishing phrases",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "4273f59637c1ee9f838e5d2d67f886d526d078e682b864cdb8816c90f6425e34",
+          "sourceText": "Visible shoulder and chest movement while singing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "c68eb977ae4dd8b7979021cdbde2fd8fc927c07a4c7e3164f8c45f24b9adf4d9",
+          "sourceText": "Tight, strained sound especially on high notes",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "fedcfc8f0256c52cda6254d33a27537226fd55d10889cfb9dd3a08a7d6a9cef1",
+          "sourceText": "Inconsistent volume and dynamics",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "2921e6a7b190c40d7674c01c6a1797f61986a78f481d2e336164fb30b2226c90",
+          "sourceText": "Vocal fatigue after short practice sessions",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "dbb004d262d5f82fbf25fbd6cfff76aed1d557a4c59859979d9b03bd8d115515",
+          "sourceText": "Pitch goes sharp or flat at the end of phrases",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "1efb94fcc11bdf350e315bc51af7fe5a5b8ea285186577861b4857c2282c18e0",
+          "sourceText": "Breathy tone from poor air management",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[7]": {
+          "sourceHash": "34b303a124cd89fec839b024428d61af93033e8c559269fa5ae84bc404585f02",
+          "sourceText": "Difficulty with long sustained notes",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "6371388cd9d37a4b3974463669c4d7a98a94f835aa1b11e519b94967937eb82a",
+          "sourceText": "Comprehensive review of respiratory mechanics during singing, confirming diaphragmatic breathing as the foundation of efficient vocal production.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "98fbbada9c41be0058ec2836bec5785a9702f87056a4a0d5930049fd8d63fccf",
+          "sourceText": "Respiratory Function in Singing",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "a200f7f9cbe260a62a9de63062fc2a67f1e435d420ec609ea72e14963d1c11b1",
+          "sourceText": "Study comparing breathing patterns of professional vs amateur singers, showing professionals use significantly more diaphragmatic engagement.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "52f041202a4c658621ebb20400ffc094741234010e6721698cd1f9296dac854f",
+          "sourceText": "Breathing Patterns in Professional Singers",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "2844964c1a0ab59dfd1ce60ed0d14c9efc553dbc87701c51af87cc3f11040208",
+          "sourceText": "Research demonstrating that targeted breathing exercises improve vocal quality measures including jitter, shimmer, and harmonic-to-noise ratio.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "8eb0d3952fdd13810f62340039e29cb2dc57764e8716576c2e1d016a19612498",
+          "sourceText": "The Effect of Breathing Exercises on Singing Voice Quality",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "81afa8921f79edb35f17bade6b15aeb256491e4e08ebaba5581399180c3bbfeb",
+          "sourceText": "Master diaphragmatic breathing for better vocal support",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "776f1ce6d583b9c4588e159cc51f1829c1fe9fd9e9750ba8958c257f59304a8b",
+          "sourceText": "Breath support for projecting your voice with confidence",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "86aeaadb693d211a4ea183755d4987215ba87817c2cc291e24197b05d37a5d54",
+          "sourceText": "Build respiratory endurance for performance",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "c66f35d6e81550e789db148e651bd6c1da0751ff6ddb6a172b331b9bffa873dc",
+          "sourceText": "Use breathwork to sharpen concentration before performing",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[3].teaser": {
+          "sourceHash": "d9af2e7c33263ed3471722313735abc99919cbcee3b4ad09e1c4aa7778694b50",
+          "sourceText": "Expand your breath support with lung capacity training.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "dec8107cf0498d7220c8f36229a046b6e14fb8226b48ff9203b0d4a8a1688d36",
+          "sourceText": "The Science of Vocal Breath Support",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "cddfd04cab7cfe6f6f4a5a1401e25bf512bb61f1a281d4d0e7a6486bda4bd815",
+          "sourceText": "Your vocal cords vibrate when air pressure beneath them (subglottic pressure) is steady. Diaphragmatic breathing provides this consistent pressure, while chest breathing creates uneven bursts. Research shows trained singers maintain subglottic pressure 40-60% more consistently than untrained singers.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "1fd4a27463d35d717043bf8009aab38981cf3de2a7853bdc2ff3f57f6d4c50e6",
+          "sourceText": "Subglottic Pressure Control",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "c1cbf016a1c48e38b705e08073de6eaca8e6dd710c32ec10c87bf93bf3cf7765",
+          "sourceText": "The Italian vocal technique 'appoggio' (literally 'lean' or 'support') describes the coordinated engagement of the diaphragm, intercostals, and abdominal muscles during singing. This creates a balanced 'leaning' of the breathing mechanism that regulates airflow without tension.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "5b858b71b670a3ec3bc7adf6a4253061c98d705724809f6cfb0dc49dcdb3a29d",
+          "sourceText": "Appoggio: The Breath-Voice Connection",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "8230abf9a63cf008d760f2a3a35d1a9061a3bad3ae13ac947f089d4118787ec0",
+          "sourceText": "When singers lack breath support, the laryngeal muscles compensate by tensing to control airflow. This creates a tight, strained sound and risks vocal injury. Proper diaphragmatic support removes this burden from the throat, the diaphragm does the work, the throat stays relaxed.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "8ba25d67342c184f7011abb66e7b29f801d0bdc0d80db99161f98d2223d17517",
+          "sourceText": "Reduced Laryngeal Tension",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "2f905293096d2913eb5876ec5d7effb0941c9ac0017a0969b59850dbc65a0f94",
+          "sourceText": "The slow exhale pattern (longer exhale than inhale) activates the vagus nerve, reducing performance anxiety and muscle tension. Calmer singers breathe better, and better breathing creates calmer singers, a virtuous cycle.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "43e10b744feece4a0b7ca5f77fc5d0f640770e6f3b5c229ede1793226bd900fc",
+          "sourceText": "Parasympathetic Activation",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "58af66cac2c39b91e4dd2a75a2ecf8726f39cfd1aed074ecf6a8a060ee14a747",
+          "sourceText": "Diaphragmatic breathing (belly breathing) engages your primary breathing muscle to create a deep, stable air supply. When you inhale, your diaphragm contracts downward, expanding your belly and sides. This draws air deep into your lungs, giving you 2-3 times more air than chest breathing. When you sing, the diaphragm controls the release, providing steady, controlled pressure (called 'appoggio' in classical technique) that keeps your vocal cords vibrating efficiently without strain.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "8dbac21e8b4de27bae23f102ab667993a88a1b8725acab48df3be5ceb5e21c0c",
+          "sourceText": "Diaphragmatic Breathing: The Singer's Foundation",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "eebc6ae284549a5eeace967c8410c46bd2a6ac491305a5b88e7ab1f504590146",
+          "sourceText": "The 4-second inhale, 6-second exhale pattern trains the exact muscle control singers need: a quick, deep breath in (you rarely have more than a beat or two to breathe between phrases) followed by a long, controlled exhale (the singing part). This ratio also activates the parasympathetic nervous system, reducing the performance anxiety that makes breath control even harder.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "63ec6398e5d343b8237906f23e073fbd6bf73dd2c9f813e1e4c772ef7c65d754",
+          "sourceText": "The best breathing exercise for singing is diaphragmatic (belly) breathing. Breathe in through your nose for 4 seconds, expanding your belly and sides. Exhale slowly for 6 seconds through pursed lips. This trains the controlled airflow that creates vocal 'breath support.' Practice 5 minutes daily: within weeks your tone, phrase length, and pitch stability will improve.",
+          "status": "route-catalog-normalized"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "1dab29d551b9e0340e644973cefce2cb7dbbadaa5a9c50ef296fc35c6bd57510",
+          "sourceText": "What breathing exercises help with singing?",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "fr-fr": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "14d35bc6474aed9ec9a54f70bb6ae2532b4a214d790df0733877147014ea521a",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "139cdf02816a889d2e90c7413b72979e2a70a55187ccdf4b15dc6666cc0e01a5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "d12a4a7e3855759f807d3791d4028eb300fadde57826dee9f909840691e5f1b5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-athletes-title": {
+          "sourceHash": "e9278533c33a8ed15a1645faf5ae8ca8ed10ef7f5c99b7f93ad94af83f21b7f5",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-focus-title": {
+          "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-lung-capacity-title": {
+          "sourceHash": "0cf688a2f16e61168d310058a1fb86e7699f9603d9dbed604bf9896c93e87ed9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.related-public-speaking-title": {
+          "sourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "f5ea3e62fea7e3b2d2fa6db163a97a97977dcaac1488773b267c73203eda0345",
+          "sourceText": "This breathing tool supplements vocal training. It is not a replacement for a qualified vocal coach. If you experience persistent vocal pain, hoarseness lasting more than 2 weeks, or difficulty swallowing, consult a speech-language pathologist or ENT specialist.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "621006eb5fb5760ee04301bfe129651e5e1994e66d3ab1f9ab04285acd7f52d7",
+          "sourceText": "Diaphragmatic (belly) breathing is universally recommended by vocal coaches. It engages your diaphragm to create a deep, stable air supply and provides the controlled airflow ('breath support') that produces a full, effortless sound. The key is breathing low into your belly and sides, not up into your chest and shoulders.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].question": {
+          "sourceHash": "d6aa8bd86c27057d5520830ec29ff41a499c6f3e8b47926bc157a29d1a9d2906",
+          "sourceText": "What is the best breathing technique for singing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "ea490c12161d3d0c54000f57d37a54abc70e589bfb8ec01c137378d910a80181",
+          "sourceText": "Place one hand on your chest and one on your belly. When you inhale, your belly should expand outward while your chest stays relatively still. Your shoulders should not rise. When singing, you should feel gentle engagement in your lower abs and sides, not tension, but a sense of controlled support.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "71fe33f41b345a28c1f661055e5b0395e77208b2172edeae317ce6eb4a2fce00",
+          "sourceText": "How do I know if I'm breathing correctly for singing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "7dcecae8884a96aef3c1945bd53aab317d27bc519d1eda6606cd0e205dff2cc1",
+          "sourceText": "Usually because you're chest breathing (shallow) rather than belly breathing (deep). Chest breathing fills only the top third of your lungs. Also check: are you exhaling all your air before breathing in? A quick, full exhale followed by a deep belly inhale gives you maximum air for the next phrase.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "f23e62d09961cd0743b3cfe016ef9dbb4f786a62c3f4d9224ac904e998d1a5cb",
+          "sourceText": "Why do I run out of breath when singing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "f118311a9ae576b98e84c6b647c457d05027bf84a86281b512b54c42ff244a1a",
+          "sourceText": "5-10 minutes of dedicated breathing practice before each singing session makes a significant difference. Daily practice is ideal, the goal is to make diaphragmatic breathing automatic so you don't have to think about it while performing. Most singers see improvement within 2-4 weeks of consistent practice.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "0d5aef360654a1d0da53a69a8a38157112b71fca2807a9ba56567c3b38787c86",
+          "sourceText": "How long should I practice breathing exercises for singing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "468b5abcc351b12a5e111aba6347f0f1b8458f825edf9adeb7370d301091b646",
+          "sourceText": "Yes, dramatically. Breath support is considered the single most important technical foundation in singing. Professional singers spend years refining their breath control. Even a few weeks of focused diaphragmatic breathing practice can noticeably improve your tone quality, phrase length, pitch stability, and vocal endurance.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].question": {
+          "sourceHash": "6e7fdffcfeb901a21da66c12ab9c2cd7e606b141de689757528da0b5a17de155",
+          "sourceText": "Does breathing practice really improve singing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "85707c4b088145b5aa99fb39762cf224436f6bcf28551abb1eaaa23c93673530",
+          "sourceText": "Absolutely. The 4-second inhale, 6-second exhale pattern activates your parasympathetic nervous system, directly countering the fight-or-flight response that causes stage fright. Practice this pattern for 2-3 minutes before performing to calm your nerves and stabilize your breathing.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].question": {
+          "sourceHash": "945721d3104c540d2a6d093f3e7d5c89d1ba29bbe9e1be703e12d8aaf0d89d09",
+          "sourceText": "Can breathing exercises help with singing anxiety?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "b13d7c546d97202158121b6705d2f493de2dec65855561dc3fe363015224a4c5",
+          "sourceText": "Every vocal coach says the same thing: 'Support your breath.' But what does that actually mean? Breath support for singing starts with your diaphragm, the dome-shaped muscle beneath your lungs that controls airflow. Singers who breathe from their chest run out of air mid-phrase, strain their vocal cords, and lose control of pitch and dynamics. Diaphragmatic breathing gives you the steady, controlled airstream that makes the difference between struggling through a song and owning every note.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "451909703afcdb966c7e93ea8013230286d3ba2d994cb068d3492b5d9b11f9a5",
+          "sourceText": "Build the diaphragmatic breath support that powers every great voice",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "26ff10a16e9d0c796b468f5eebc19c4d11727a8e06868ddfd0ecb6c3dab87e8e",
+          "sourceText": "Breathing Exercises for Singing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "324e9ff1c6889cf253e960097e6902c431d341357ed8a2c52fce33e79e79394f",
+          "sourceText": "Lie on your back with a book on your stomach. Breathe so the book rises on inhale and falls on exhale. Your chest should barely move. Practice until this feels natural.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "52b3c130fceae37015a651b0805d8548d0dd79b748c7b8c460e267e434959fe1",
+          "sourceText": "Establish belly breathing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "573284dff7bb9bc7e96864119060a4ddaa7c125334ebdd9b3507903071ffd7bb",
+          "sourceText": "5 minutes, lying down",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "c9de57cbd2ce2d424e02457c9416c539b777660f3b59cc189c22694f6c61fa80",
+          "sourceText": "Stand with one hand on your belly and one on your chest. Inhale through your nose, belly pushes out, chest stays still. Exhale through pursed lips, controlling the release. Use the belly breathing visualizer to guide your timing.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "4ba1780f286870738f437b1bed4c147e8b1afaee68ef5c6c1ce719d01fda2209",
+          "sourceText": "Practice standing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "62888c96e016ab621ae450de378637b30a8ee65ff0f6d07b59d81a2eb24c3836",
+          "sourceText": "3-5 minutes standing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "bafa2a51b11f30e8a475e973a78d1959732b1d991854980fd6838557bb5ab594",
+          "sourceText": "Inhale for 4 counts, then exhale on a steady 'sss' sound for as long as you can, keeping the airflow even. Time yourself, aim to increase your exhale duration each week.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "2cce91a85838fa3a9a3912828430827047c97fb5c95f457cc4fdf53fdc7c15f1",
+          "sourceText": "Add sustained exhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "39b54ea6ab14f440a14f2e0fe8c6c9edf3efe753bfbb03821a716487a1dbffc7",
+          "sourceText": "Start at 15-20 seconds, build to 30+",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "c2dc97369aa89a8379e8d35f0a54a71445eaab1cea435c1a9965ea3f7293b5f8",
+          "sourceText": "Choose a simple phrase or scale. Breathe into your belly, then sing while keeping your belly gently engaged (not rigid). Notice how the sound feels supported and full compared to chest breathing.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "ef313d1dafae7503fcbcab50a0ec48271197486dc6cd0c76db5974457c6dadd8",
+          "sourceText": "Sing with support",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "6fb366c4cdc87b5fa8a406e8eb3011b6ecd1fcdaa7885ede0b683ea5a72d7490",
+          "sourceText": "5-10 minutes of singing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "4cf08eee662e275df9318c477bde7472c7806025a34d9d52ea9ee4e487fdd61e",
+          "sourceText": "Singers often need to breathe quickly between phrases. Practice 'catch breaths', sharp, quick belly inhales (1 second) followed by controlled singing. The diaphragm should snap down and expand your sides.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "4adeae4902a619e16cf7271bb57cffe8db3bb6ca417188db26bbb45b950ada6d",
+          "sourceText": "Quick breath practice",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "72ded3836cdab47d615a8683722faa58387fe3190f5dbcc6b0e7cb5b70040116",
+          "sourceText": "2-3 minutes",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "a49807805205bcadc773a08fb53a98a327b324b593ae43d3ad59cb4398ab140d",
+          "sourceText": "Use the breathing visualizer daily for 5 minutes to reinforce the muscle memory. Over time, diaphragmatic breathing becomes automatic, and you won't need to think about 'supporting'. Your body will do it naturally.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "37c5488bf8aa3d155cec300e60f903c3f57b6bceb97d8b5b85033e2e7372099e",
+          "sourceText": "Daily integration",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "abdebd00ebd1eeabe588eb8a8d117b29054ff0d8f56a179d94dc924c19cf329a",
+          "sourceText": "5 minutes daily",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "fc34ebaecd252d05501b62314262b4d278fbaaf81bb5a22fc4d62df343f4b796",
+          "sourceText": "Breathe into your sides and back, not just your belly. Think of inflating a ring around your waist",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "57327accd37abdcb185c9098ff42071523736e3a5aad92bf0e7c4ba045a72aee",
+          "sourceText": "Never lock or brace your abdominal muscles, support is about controlled release, not rigidity",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "243138cb76c22373da16a4819e388b3c9b931e22b66084e8f51c30934594fdc1",
+          "sourceText": "Practice the breathing before adding voice. Master the airflow first, then add sound",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "cc8a96255b7b42b7c456d9d6f73fd808c7c0ade0604d7851cbc40e3ee784410d",
+          "sourceText": "Record yourself singing before and after a month of practice to hear the difference",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "c66aaa97e6682c87471045d20e826b44a812bf472bb4f35493920df510ac9bb4",
+          "sourceText": "Warm up your breathing before warming up your voice, 2-3 minutes of belly breathing resets your system",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[5]": {
+          "sourceHash": "540cd8dc7f9347b138b411fd14bcdbef1e588b435294e4f511b8002c182ff1f0",
+          "sourceText": "Stay hydrated, dry vocal cords need more air pressure, which strains your breathing muscles",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "88ad581d5e7cccb86dbfdb1b9c88d3ee681d570a374b3d3130969fb4bc255210",
+          "sourceText": "Breathing exercises for singing that build diaphragmatic breath support and vocal stamina. Free guided timer to train the foundation of great singing.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "eb5160facd0a9c92d163c82a952ea5844e2df22328dd835a3c9b560137b1658e",
+          "sourceText": "Train the diaphragmatic breathing that powers every great voice. Free guided timer for singers at all levels.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "e126bc449abc3aa5f350893e6d968572efd8887bf38d6a1bfcb8a6ef69e21a82",
+          "sourceText": "Breathing Exercises for Singing: Build Vocal Breath Support",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "18a3fd39d661506067743994bd9401ab097a8215391b1884efe4d74c8560f7c8",
+          "sourceText": "Breathing Exercises for Singing: Build Vocal Breath Support (Free Timer) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "6d806ea049a0f3f059fa8179c89b41dbedbf819e06e13214c032f127728d3a48",
+          "sourceText": "Free breathing exercises for singers. Build diaphragmatic support, extend your phrases, and reduce vocal strain.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "303af21f248ca55364ae7b0dcfacb4e819d60c61f0846e9b5944de049d7192d2",
+          "sourceText": "Breathing Exercises for Singing — Build Breath Support",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "011f013d95a3dda721ffd30b5700a857d9e5718cede5c993c96baef56ac88518",
+          "sourceText": "Most people breathe with their chest: shoulders rise, rib cage expands, and the breath stays shallow. This works fine for daily life, but it's a disaster for singing. Chest breathing gives you a thin, unstable air supply that runs out quickly. Your vocal cords compensate by tensing up, leading to strain, pitch problems, and a tight, forced sound. The irony is that the 'effort' of chest breathing actually produces a weaker voice than relaxed diaphragmatic breathing.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "a9c239e02d2c9cbbc70e6d7583102627e8982ca424ebff00fad7073219b3f703",
+          "sourceText": "Why Singers Struggle with Breath",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "3316e060f618139953e17f6057492f3210b9d6662f4cdfb44a0499e9074d9c4c",
+          "sourceText": "Running out of air before finishing phrases",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "4273f59637c1ee9f838e5d2d67f886d526d078e682b864cdb8816c90f6425e34",
+          "sourceText": "Visible shoulder and chest movement while singing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "c68eb977ae4dd8b7979021cdbde2fd8fc927c07a4c7e3164f8c45f24b9adf4d9",
+          "sourceText": "Tight, strained sound especially on high notes",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "fedcfc8f0256c52cda6254d33a27537226fd55d10889cfb9dd3a08a7d6a9cef1",
+          "sourceText": "Inconsistent volume and dynamics",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "2921e6a7b190c40d7674c01c6a1797f61986a78f481d2e336164fb30b2226c90",
+          "sourceText": "Vocal fatigue after short practice sessions",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "dbb004d262d5f82fbf25fbd6cfff76aed1d557a4c59859979d9b03bd8d115515",
+          "sourceText": "Pitch goes sharp or flat at the end of phrases",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "1efb94fcc11bdf350e315bc51af7fe5a5b8ea285186577861b4857c2282c18e0",
+          "sourceText": "Breathy tone from poor air management",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[7]": {
+          "sourceHash": "34b303a124cd89fec839b024428d61af93033e8c559269fa5ae84bc404585f02",
+          "sourceText": "Difficulty with long sustained notes",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "6371388cd9d37a4b3974463669c4d7a98a94f835aa1b11e519b94967937eb82a",
+          "sourceText": "Comprehensive review of respiratory mechanics during singing, confirming diaphragmatic breathing as the foundation of efficient vocal production.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "98fbbada9c41be0058ec2836bec5785a9702f87056a4a0d5930049fd8d63fccf",
+          "sourceText": "Respiratory Function in Singing",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "a200f7f9cbe260a62a9de63062fc2a67f1e435d420ec609ea72e14963d1c11b1",
+          "sourceText": "Study comparing breathing patterns of professional vs amateur singers, showing professionals use significantly more diaphragmatic engagement.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "52f041202a4c658621ebb20400ffc094741234010e6721698cd1f9296dac854f",
+          "sourceText": "Breathing Patterns in Professional Singers",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "2844964c1a0ab59dfd1ce60ed0d14c9efc553dbc87701c51af87cc3f11040208",
+          "sourceText": "Research demonstrating that targeted breathing exercises improve vocal quality measures including jitter, shimmer, and harmonic-to-noise ratio.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "8eb0d3952fdd13810f62340039e29cb2dc57764e8716576c2e1d016a19612498",
+          "sourceText": "The Effect of Breathing Exercises on Singing Voice Quality",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "81afa8921f79edb35f17bade6b15aeb256491e4e08ebaba5581399180c3bbfeb",
+          "sourceText": "Master diaphragmatic breathing for better vocal support",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "776f1ce6d583b9c4588e159cc51f1829c1fe9fd9e9750ba8958c257f59304a8b",
+          "sourceText": "Breath support for projecting your voice with confidence",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "86aeaadb693d211a4ea183755d4987215ba87817c2cc291e24197b05d37a5d54",
+          "sourceText": "Build respiratory endurance for performance",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "c66f35d6e81550e789db148e651bd6c1da0751ff6ddb6a172b331b9bffa873dc",
+          "sourceText": "Use breathwork to sharpen concentration before performing",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[3].teaser": {
+          "sourceHash": "d9af2e7c33263ed3471722313735abc99919cbcee3b4ad09e1c4aa7778694b50",
+          "sourceText": "Expand your breath support with lung capacity training.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "dec8107cf0498d7220c8f36229a046b6e14fb8226b48ff9203b0d4a8a1688d36",
+          "sourceText": "The Science of Vocal Breath Support",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "cddfd04cab7cfe6f6f4a5a1401e25bf512bb61f1a281d4d0e7a6486bda4bd815",
+          "sourceText": "Your vocal cords vibrate when air pressure beneath them (subglottic pressure) is steady. Diaphragmatic breathing provides this consistent pressure, while chest breathing creates uneven bursts. Research shows trained singers maintain subglottic pressure 40-60% more consistently than untrained singers.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "1fd4a27463d35d717043bf8009aab38981cf3de2a7853bdc2ff3f57f6d4c50e6",
+          "sourceText": "Subglottic Pressure Control",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "c1cbf016a1c48e38b705e08073de6eaca8e6dd710c32ec10c87bf93bf3cf7765",
+          "sourceText": "The Italian vocal technique 'appoggio' (literally 'lean' or 'support') describes the coordinated engagement of the diaphragm, intercostals, and abdominal muscles during singing. This creates a balanced 'leaning' of the breathing mechanism that regulates airflow without tension.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "5b858b71b670a3ec3bc7adf6a4253061c98d705724809f6cfb0dc49dcdb3a29d",
+          "sourceText": "Appoggio: The Breath-Voice Connection",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "8230abf9a63cf008d760f2a3a35d1a9061a3bad3ae13ac947f089d4118787ec0",
+          "sourceText": "When singers lack breath support, the laryngeal muscles compensate by tensing to control airflow. This creates a tight, strained sound and risks vocal injury. Proper diaphragmatic support removes this burden from the throat, the diaphragm does the work, the throat stays relaxed.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "8ba25d67342c184f7011abb66e7b29f801d0bdc0d80db99161f98d2223d17517",
+          "sourceText": "Reduced Laryngeal Tension",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "2f905293096d2913eb5876ec5d7effb0941c9ac0017a0969b59850dbc65a0f94",
+          "sourceText": "The slow exhale pattern (longer exhale than inhale) activates the vagus nerve, reducing performance anxiety and muscle tension. Calmer singers breathe better, and better breathing creates calmer singers, a virtuous cycle.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "43e10b744feece4a0b7ca5f77fc5d0f640770e6f3b5c229ede1793226bd900fc",
+          "sourceText": "Parasympathetic Activation",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "58af66cac2c39b91e4dd2a75a2ecf8726f39cfd1aed074ecf6a8a060ee14a747",
+          "sourceText": "Diaphragmatic breathing (belly breathing) engages your primary breathing muscle to create a deep, stable air supply. When you inhale, your diaphragm contracts downward, expanding your belly and sides. This draws air deep into your lungs, giving you 2-3 times more air than chest breathing. When you sing, the diaphragm controls the release, providing steady, controlled pressure (called 'appoggio' in classical technique) that keeps your vocal cords vibrating efficiently without strain.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "8dbac21e8b4de27bae23f102ab667993a88a1b8725acab48df3be5ceb5e21c0c",
+          "sourceText": "Diaphragmatic Breathing: The Singer's Foundation",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "eebc6ae284549a5eeace967c8410c46bd2a6ac491305a5b88e7ab1f504590146",
+          "sourceText": "The 4-second inhale, 6-second exhale pattern trains the exact muscle control singers need: a quick, deep breath in (you rarely have more than a beat or two to breathe between phrases) followed by a long, controlled exhale (the singing part). This ratio also activates the parasympathetic nervous system, reducing the performance anxiety that makes breath control even harder.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "63ec6398e5d343b8237906f23e073fbd6bf73dd2c9f813e1e4c772ef7c65d754",
+          "sourceText": "The best breathing exercise for singing is diaphragmatic (belly) breathing. Breathe in through your nose for 4 seconds, expanding your belly and sides. Exhale slowly for 6 seconds through pursed lips. This trains the controlled airflow that creates vocal 'breath support.' Practice 5 minutes daily: within weeks your tone, phrase length, and pitch stability will improve.",
+          "status": "route-catalog-normalized"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "1dab29d551b9e0340e644973cefce2cb7dbbadaa5a9c50ef296fc35c6bd57510",
+          "sourceText": "What breathing exercises help with singing?",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "ja-jp": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "14d35bc6474aed9ec9a54f70bb6ae2532b4a214d790df0733877147014ea521a",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "139cdf02816a889d2e90c7413b72979e2a70a55187ccdf4b15dc6666cc0e01a5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "d12a4a7e3855759f807d3791d4028eb300fadde57826dee9f909840691e5f1b5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-athletes-title": {
+          "sourceHash": "e9278533c33a8ed15a1645faf5ae8ca8ed10ef7f5c99b7f93ad94af83f21b7f5",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-focus-title": {
+          "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-lung-capacity-title": {
+          "sourceHash": "0cf688a2f16e61168d310058a1fb86e7699f9603d9dbed604bf9896c93e87ed9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.related-public-speaking-title": {
+          "sourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "f5ea3e62fea7e3b2d2fa6db163a97a97977dcaac1488773b267c73203eda0345",
+          "sourceText": "This breathing tool supplements vocal training. It is not a replacement for a qualified vocal coach. If you experience persistent vocal pain, hoarseness lasting more than 2 weeks, or difficulty swallowing, consult a speech-language pathologist or ENT specialist.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "621006eb5fb5760ee04301bfe129651e5e1994e66d3ab1f9ab04285acd7f52d7",
+          "sourceText": "Diaphragmatic (belly) breathing is universally recommended by vocal coaches. It engages your diaphragm to create a deep, stable air supply and provides the controlled airflow ('breath support') that produces a full, effortless sound. The key is breathing low into your belly and sides, not up into your chest and shoulders.",
+          "status": "repo-reviewed-replacement"
+        },
+        "faqs[0].question": {
+          "sourceHash": "d6aa8bd86c27057d5520830ec29ff41a499c6f3e8b47926bc157a29d1a9d2906",
+          "sourceText": "What is the best breathing technique for singing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "ea490c12161d3d0c54000f57d37a54abc70e589bfb8ec01c137378d910a80181",
+          "sourceText": "Place one hand on your chest and one on your belly. When you inhale, your belly should expand outward while your chest stays relatively still. Your shoulders should not rise. When singing, you should feel gentle engagement in your lower abs and sides, not tension, but a sense of controlled support.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "71fe33f41b345a28c1f661055e5b0395e77208b2172edeae317ce6eb4a2fce00",
+          "sourceText": "How do I know if I'm breathing correctly for singing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "7dcecae8884a96aef3c1945bd53aab317d27bc519d1eda6606cd0e205dff2cc1",
+          "sourceText": "Usually because you're chest breathing (shallow) rather than belly breathing (deep). Chest breathing fills only the top third of your lungs. Also check: are you exhaling all your air before breathing in? A quick, full exhale followed by a deep belly inhale gives you maximum air for the next phrase.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "f23e62d09961cd0743b3cfe016ef9dbb4f786a62c3f4d9224ac904e998d1a5cb",
+          "sourceText": "Why do I run out of breath when singing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "f118311a9ae576b98e84c6b647c457d05027bf84a86281b512b54c42ff244a1a",
+          "sourceText": "5-10 minutes of dedicated breathing practice before each singing session makes a significant difference. Daily practice is ideal, the goal is to make diaphragmatic breathing automatic so you don't have to think about it while performing. Most singers see improvement within 2-4 weeks of consistent practice.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "0d5aef360654a1d0da53a69a8a38157112b71fca2807a9ba56567c3b38787c86",
+          "sourceText": "How long should I practice breathing exercises for singing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "468b5abcc351b12a5e111aba6347f0f1b8458f825edf9adeb7370d301091b646",
+          "sourceText": "Yes, dramatically. Breath support is considered the single most important technical foundation in singing. Professional singers spend years refining their breath control. Even a few weeks of focused diaphragmatic breathing practice can noticeably improve your tone quality, phrase length, pitch stability, and vocal endurance.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].question": {
+          "sourceHash": "6e7fdffcfeb901a21da66c12ab9c2cd7e606b141de689757528da0b5a17de155",
+          "sourceText": "Does breathing practice really improve singing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "85707c4b088145b5aa99fb39762cf224436f6bcf28551abb1eaaa23c93673530",
+          "sourceText": "Absolutely. The 4-second inhale, 6-second exhale pattern activates your parasympathetic nervous system, directly countering the fight-or-flight response that causes stage fright. Practice this pattern for 2-3 minutes before performing to calm your nerves and stabilize your breathing.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].question": {
+          "sourceHash": "945721d3104c540d2a6d093f3e7d5c89d1ba29bbe9e1be703e12d8aaf0d89d09",
+          "sourceText": "Can breathing exercises help with singing anxiety?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "b13d7c546d97202158121b6705d2f493de2dec65855561dc3fe363015224a4c5",
+          "sourceText": "Every vocal coach says the same thing: 'Support your breath.' But what does that actually mean? Breath support for singing starts with your diaphragm, the dome-shaped muscle beneath your lungs that controls airflow. Singers who breathe from their chest run out of air mid-phrase, strain their vocal cords, and lose control of pitch and dynamics. Diaphragmatic breathing gives you the steady, controlled airstream that makes the difference between struggling through a song and owning every note.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "451909703afcdb966c7e93ea8013230286d3ba2d994cb068d3492b5d9b11f9a5",
+          "sourceText": "Build the diaphragmatic breath support that powers every great voice",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "26ff10a16e9d0c796b468f5eebc19c4d11727a8e06868ddfd0ecb6c3dab87e8e",
+          "sourceText": "Breathing Exercises for Singing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "324e9ff1c6889cf253e960097e6902c431d341357ed8a2c52fce33e79e79394f",
+          "sourceText": "Lie on your back with a book on your stomach. Breathe so the book rises on inhale and falls on exhale. Your chest should barely move. Practice until this feels natural.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "52b3c130fceae37015a651b0805d8548d0dd79b748c7b8c460e267e434959fe1",
+          "sourceText": "Establish belly breathing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "573284dff7bb9bc7e96864119060a4ddaa7c125334ebdd9b3507903071ffd7bb",
+          "sourceText": "5 minutes, lying down",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "c9de57cbd2ce2d424e02457c9416c539b777660f3b59cc189c22694f6c61fa80",
+          "sourceText": "Stand with one hand on your belly and one on your chest. Inhale through your nose, belly pushes out, chest stays still. Exhale through pursed lips, controlling the release. Use the belly breathing visualizer to guide your timing.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "4ba1780f286870738f437b1bed4c147e8b1afaee68ef5c6c1ce719d01fda2209",
+          "sourceText": "Practice standing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "62888c96e016ab621ae450de378637b30a8ee65ff0f6d07b59d81a2eb24c3836",
+          "sourceText": "3-5 minutes standing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "bafa2a51b11f30e8a475e973a78d1959732b1d991854980fd6838557bb5ab594",
+          "sourceText": "Inhale for 4 counts, then exhale on a steady 'sss' sound for as long as you can, keeping the airflow even. Time yourself, aim to increase your exhale duration each week.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "2cce91a85838fa3a9a3912828430827047c97fb5c95f457cc4fdf53fdc7c15f1",
+          "sourceText": "Add sustained exhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "39b54ea6ab14f440a14f2e0fe8c6c9edf3efe753bfbb03821a716487a1dbffc7",
+          "sourceText": "Start at 15-20 seconds, build to 30+",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "c2dc97369aa89a8379e8d35f0a54a71445eaab1cea435c1a9965ea3f7293b5f8",
+          "sourceText": "Choose a simple phrase or scale. Breathe into your belly, then sing while keeping your belly gently engaged (not rigid). Notice how the sound feels supported and full compared to chest breathing.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "ef313d1dafae7503fcbcab50a0ec48271197486dc6cd0c76db5974457c6dadd8",
+          "sourceText": "Sing with support",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "6fb366c4cdc87b5fa8a406e8eb3011b6ecd1fcdaa7885ede0b683ea5a72d7490",
+          "sourceText": "5-10 minutes of singing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "4cf08eee662e275df9318c477bde7472c7806025a34d9d52ea9ee4e487fdd61e",
+          "sourceText": "Singers often need to breathe quickly between phrases. Practice 'catch breaths', sharp, quick belly inhales (1 second) followed by controlled singing. The diaphragm should snap down and expand your sides.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "4adeae4902a619e16cf7271bb57cffe8db3bb6ca417188db26bbb45b950ada6d",
+          "sourceText": "Quick breath practice",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "72ded3836cdab47d615a8683722faa58387fe3190f5dbcc6b0e7cb5b70040116",
+          "sourceText": "2-3 minutes",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "a49807805205bcadc773a08fb53a98a327b324b593ae43d3ad59cb4398ab140d",
+          "sourceText": "Use the breathing visualizer daily for 5 minutes to reinforce the muscle memory. Over time, diaphragmatic breathing becomes automatic, and you won't need to think about 'supporting'. Your body will do it naturally.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "37c5488bf8aa3d155cec300e60f903c3f57b6bceb97d8b5b85033e2e7372099e",
+          "sourceText": "Daily integration",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "abdebd00ebd1eeabe588eb8a8d117b29054ff0d8f56a179d94dc924c19cf329a",
+          "sourceText": "5 minutes daily",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "fc34ebaecd252d05501b62314262b4d278fbaaf81bb5a22fc4d62df343f4b796",
+          "sourceText": "Breathe into your sides and back, not just your belly. Think of inflating a ring around your waist",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "57327accd37abdcb185c9098ff42071523736e3a5aad92bf0e7c4ba045a72aee",
+          "sourceText": "Never lock or brace your abdominal muscles, support is about controlled release, not rigidity",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "243138cb76c22373da16a4819e388b3c9b931e22b66084e8f51c30934594fdc1",
+          "sourceText": "Practice the breathing before adding voice. Master the airflow first, then add sound",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "cc8a96255b7b42b7c456d9d6f73fd808c7c0ade0604d7851cbc40e3ee784410d",
+          "sourceText": "Record yourself singing before and after a month of practice to hear the difference",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "c66aaa97e6682c87471045d20e826b44a812bf472bb4f35493920df510ac9bb4",
+          "sourceText": "Warm up your breathing before warming up your voice, 2-3 minutes of belly breathing resets your system",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[5]": {
+          "sourceHash": "540cd8dc7f9347b138b411fd14bcdbef1e588b435294e4f511b8002c182ff1f0",
+          "sourceText": "Stay hydrated, dry vocal cords need more air pressure, which strains your breathing muscles",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "88ad581d5e7cccb86dbfdb1b9c88d3ee681d570a374b3d3130969fb4bc255210",
+          "sourceText": "Breathing exercises for singing that build diaphragmatic breath support and vocal stamina. Free guided timer to train the foundation of great singing.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "eb5160facd0a9c92d163c82a952ea5844e2df22328dd835a3c9b560137b1658e",
+          "sourceText": "Train the diaphragmatic breathing that powers every great voice. Free guided timer for singers at all levels.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "e126bc449abc3aa5f350893e6d968572efd8887bf38d6a1bfcb8a6ef69e21a82",
+          "sourceText": "Breathing Exercises for Singing: Build Vocal Breath Support",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "18a3fd39d661506067743994bd9401ab097a8215391b1884efe4d74c8560f7c8",
+          "sourceText": "Breathing Exercises for Singing: Build Vocal Breath Support (Free Timer) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "6d806ea049a0f3f059fa8179c89b41dbedbf819e06e13214c032f127728d3a48",
+          "sourceText": "Free breathing exercises for singers. Build diaphragmatic support, extend your phrases, and reduce vocal strain.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "303af21f248ca55364ae7b0dcfacb4e819d60c61f0846e9b5944de049d7192d2",
+          "sourceText": "Breathing Exercises for Singing — Build Breath Support",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "011f013d95a3dda721ffd30b5700a857d9e5718cede5c993c96baef56ac88518",
+          "sourceText": "Most people breathe with their chest: shoulders rise, rib cage expands, and the breath stays shallow. This works fine for daily life, but it's a disaster for singing. Chest breathing gives you a thin, unstable air supply that runs out quickly. Your vocal cords compensate by tensing up, leading to strain, pitch problems, and a tight, forced sound. The irony is that the 'effort' of chest breathing actually produces a weaker voice than relaxed diaphragmatic breathing.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "a9c239e02d2c9cbbc70e6d7583102627e8982ca424ebff00fad7073219b3f703",
+          "sourceText": "Why Singers Struggle with Breath",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "3316e060f618139953e17f6057492f3210b9d6662f4cdfb44a0499e9074d9c4c",
+          "sourceText": "Running out of air before finishing phrases",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "4273f59637c1ee9f838e5d2d67f886d526d078e682b864cdb8816c90f6425e34",
+          "sourceText": "Visible shoulder and chest movement while singing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "c68eb977ae4dd8b7979021cdbde2fd8fc927c07a4c7e3164f8c45f24b9adf4d9",
+          "sourceText": "Tight, strained sound especially on high notes",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "fedcfc8f0256c52cda6254d33a27537226fd55d10889cfb9dd3a08a7d6a9cef1",
+          "sourceText": "Inconsistent volume and dynamics",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "2921e6a7b190c40d7674c01c6a1797f61986a78f481d2e336164fb30b2226c90",
+          "sourceText": "Vocal fatigue after short practice sessions",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "dbb004d262d5f82fbf25fbd6cfff76aed1d557a4c59859979d9b03bd8d115515",
+          "sourceText": "Pitch goes sharp or flat at the end of phrases",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "1efb94fcc11bdf350e315bc51af7fe5a5b8ea285186577861b4857c2282c18e0",
+          "sourceText": "Breathy tone from poor air management",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[7]": {
+          "sourceHash": "34b303a124cd89fec839b024428d61af93033e8c559269fa5ae84bc404585f02",
+          "sourceText": "Difficulty with long sustained notes",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "6371388cd9d37a4b3974463669c4d7a98a94f835aa1b11e519b94967937eb82a",
+          "sourceText": "Comprehensive review of respiratory mechanics during singing, confirming diaphragmatic breathing as the foundation of efficient vocal production.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "98fbbada9c41be0058ec2836bec5785a9702f87056a4a0d5930049fd8d63fccf",
+          "sourceText": "Respiratory Function in Singing",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "a200f7f9cbe260a62a9de63062fc2a67f1e435d420ec609ea72e14963d1c11b1",
+          "sourceText": "Study comparing breathing patterns of professional vs amateur singers, showing professionals use significantly more diaphragmatic engagement.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "52f041202a4c658621ebb20400ffc094741234010e6721698cd1f9296dac854f",
+          "sourceText": "Breathing Patterns in Professional Singers",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "2844964c1a0ab59dfd1ce60ed0d14c9efc553dbc87701c51af87cc3f11040208",
+          "sourceText": "Research demonstrating that targeted breathing exercises improve vocal quality measures including jitter, shimmer, and harmonic-to-noise ratio.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "8eb0d3952fdd13810f62340039e29cb2dc57764e8716576c2e1d016a19612498",
+          "sourceText": "The Effect of Breathing Exercises on Singing Voice Quality",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "81afa8921f79edb35f17bade6b15aeb256491e4e08ebaba5581399180c3bbfeb",
+          "sourceText": "Master diaphragmatic breathing for better vocal support",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "776f1ce6d583b9c4588e159cc51f1829c1fe9fd9e9750ba8958c257f59304a8b",
+          "sourceText": "Breath support for projecting your voice with confidence",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "86aeaadb693d211a4ea183755d4987215ba87817c2cc291e24197b05d37a5d54",
+          "sourceText": "Build respiratory endurance for performance",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "c66f35d6e81550e789db148e651bd6c1da0751ff6ddb6a172b331b9bffa873dc",
+          "sourceText": "Use breathwork to sharpen concentration before performing",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[3].teaser": {
+          "sourceHash": "d9af2e7c33263ed3471722313735abc99919cbcee3b4ad09e1c4aa7778694b50",
+          "sourceText": "Expand your breath support with lung capacity training.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "dec8107cf0498d7220c8f36229a046b6e14fb8226b48ff9203b0d4a8a1688d36",
+          "sourceText": "The Science of Vocal Breath Support",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "cddfd04cab7cfe6f6f4a5a1401e25bf512bb61f1a281d4d0e7a6486bda4bd815",
+          "sourceText": "Your vocal cords vibrate when air pressure beneath them (subglottic pressure) is steady. Diaphragmatic breathing provides this consistent pressure, while chest breathing creates uneven bursts. Research shows trained singers maintain subglottic pressure 40-60% more consistently than untrained singers.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "1fd4a27463d35d717043bf8009aab38981cf3de2a7853bdc2ff3f57f6d4c50e6",
+          "sourceText": "Subglottic Pressure Control",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "c1cbf016a1c48e38b705e08073de6eaca8e6dd710c32ec10c87bf93bf3cf7765",
+          "sourceText": "The Italian vocal technique 'appoggio' (literally 'lean' or 'support') describes the coordinated engagement of the diaphragm, intercostals, and abdominal muscles during singing. This creates a balanced 'leaning' of the breathing mechanism that regulates airflow without tension.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "5b858b71b670a3ec3bc7adf6a4253061c98d705724809f6cfb0dc49dcdb3a29d",
+          "sourceText": "Appoggio: The Breath-Voice Connection",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "8230abf9a63cf008d760f2a3a35d1a9061a3bad3ae13ac947f089d4118787ec0",
+          "sourceText": "When singers lack breath support, the laryngeal muscles compensate by tensing to control airflow. This creates a tight, strained sound and risks vocal injury. Proper diaphragmatic support removes this burden from the throat, the diaphragm does the work, the throat stays relaxed.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "8ba25d67342c184f7011abb66e7b29f801d0bdc0d80db99161f98d2223d17517",
+          "sourceText": "Reduced Laryngeal Tension",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "2f905293096d2913eb5876ec5d7effb0941c9ac0017a0969b59850dbc65a0f94",
+          "sourceText": "The slow exhale pattern (longer exhale than inhale) activates the vagus nerve, reducing performance anxiety and muscle tension. Calmer singers breathe better, and better breathing creates calmer singers, a virtuous cycle.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "43e10b744feece4a0b7ca5f77fc5d0f640770e6f3b5c229ede1793226bd900fc",
+          "sourceText": "Parasympathetic Activation",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "58af66cac2c39b91e4dd2a75a2ecf8726f39cfd1aed074ecf6a8a060ee14a747",
+          "sourceText": "Diaphragmatic breathing (belly breathing) engages your primary breathing muscle to create a deep, stable air supply. When you inhale, your diaphragm contracts downward, expanding your belly and sides. This draws air deep into your lungs, giving you 2-3 times more air than chest breathing. When you sing, the diaphragm controls the release, providing steady, controlled pressure (called 'appoggio' in classical technique) that keeps your vocal cords vibrating efficiently without strain.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "8dbac21e8b4de27bae23f102ab667993a88a1b8725acab48df3be5ceb5e21c0c",
+          "sourceText": "Diaphragmatic Breathing: The Singer's Foundation",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "eebc6ae284549a5eeace967c8410c46bd2a6ac491305a5b88e7ab1f504590146",
+          "sourceText": "The 4-second inhale, 6-second exhale pattern trains the exact muscle control singers need: a quick, deep breath in (you rarely have more than a beat or two to breathe between phrases) followed by a long, controlled exhale (the singing part). This ratio also activates the parasympathetic nervous system, reducing the performance anxiety that makes breath control even harder.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "63ec6398e5d343b8237906f23e073fbd6bf73dd2c9f813e1e4c772ef7c65d754",
+          "sourceText": "The best breathing exercise for singing is diaphragmatic (belly) breathing. Breathe in through your nose for 4 seconds, expanding your belly and sides. Exhale slowly for 6 seconds through pursed lips. This trains the controlled airflow that creates vocal 'breath support.' Practice 5 minutes daily: within weeks your tone, phrase length, and pitch stability will improve.",
+          "status": "route-catalog-normalized"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "1dab29d551b9e0340e644973cefce2cb7dbbadaa5a9c50ef296fc35c6bd57510",
+          "sourceText": "What breathing exercises help with singing?",
+          "status": "route-catalog-exact"
+        }
+      }
+    },
+    "pt-br": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "14d35bc6474aed9ec9a54f70bb6ae2532b4a214d790df0733877147014ea521a",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "139cdf02816a889d2e90c7413b72979e2a70a55187ccdf4b15dc6666cc0e01a5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "d12a4a7e3855759f807d3791d4028eb300fadde57826dee9f909840691e5f1b5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-athletes-title": {
+          "sourceHash": "e9278533c33a8ed15a1645faf5ae8ca8ed10ef7f5c99b7f93ad94af83f21b7f5",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-focus-title": {
+          "sourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-lung-capacity-title": {
+          "sourceHash": "0cf688a2f16e61168d310058a1fb86e7699f9603d9dbed604bf9896c93e87ed9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.related-public-speaking-title": {
+          "sourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "f5ea3e62fea7e3b2d2fa6db163a97a97977dcaac1488773b267c73203eda0345",
+          "sourceText": "This breathing tool supplements vocal training. It is not a replacement for a qualified vocal coach. If you experience persistent vocal pain, hoarseness lasting more than 2 weeks, or difficulty swallowing, consult a speech-language pathologist or ENT specialist.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "621006eb5fb5760ee04301bfe129651e5e1994e66d3ab1f9ab04285acd7f52d7",
+          "sourceText": "Diaphragmatic (belly) breathing is universally recommended by vocal coaches. It engages your diaphragm to create a deep, stable air supply and provides the controlled airflow ('breath support') that produces a full, effortless sound. The key is breathing low into your belly and sides, not up into your chest and shoulders.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].question": {
+          "sourceHash": "d6aa8bd86c27057d5520830ec29ff41a499c6f3e8b47926bc157a29d1a9d2906",
+          "sourceText": "What is the best breathing technique for singing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "ea490c12161d3d0c54000f57d37a54abc70e589bfb8ec01c137378d910a80181",
+          "sourceText": "Place one hand on your chest and one on your belly. When you inhale, your belly should expand outward while your chest stays relatively still. Your shoulders should not rise. When singing, you should feel gentle engagement in your lower abs and sides, not tension, but a sense of controlled support.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "71fe33f41b345a28c1f661055e5b0395e77208b2172edeae317ce6eb4a2fce00",
+          "sourceText": "How do I know if I'm breathing correctly for singing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "7dcecae8884a96aef3c1945bd53aab317d27bc519d1eda6606cd0e205dff2cc1",
+          "sourceText": "Usually because you're chest breathing (shallow) rather than belly breathing (deep). Chest breathing fills only the top third of your lungs. Also check: are you exhaling all your air before breathing in? A quick, full exhale followed by a deep belly inhale gives you maximum air for the next phrase.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "f23e62d09961cd0743b3cfe016ef9dbb4f786a62c3f4d9224ac904e998d1a5cb",
+          "sourceText": "Why do I run out of breath when singing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "f118311a9ae576b98e84c6b647c457d05027bf84a86281b512b54c42ff244a1a",
+          "sourceText": "5-10 minutes of dedicated breathing practice before each singing session makes a significant difference. Daily practice is ideal, the goal is to make diaphragmatic breathing automatic so you don't have to think about it while performing. Most singers see improvement within 2-4 weeks of consistent practice.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "0d5aef360654a1d0da53a69a8a38157112b71fca2807a9ba56567c3b38787c86",
+          "sourceText": "How long should I practice breathing exercises for singing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "468b5abcc351b12a5e111aba6347f0f1b8458f825edf9adeb7370d301091b646",
+          "sourceText": "Yes, dramatically. Breath support is considered the single most important technical foundation in singing. Professional singers spend years refining their breath control. Even a few weeks of focused diaphragmatic breathing practice can noticeably improve your tone quality, phrase length, pitch stability, and vocal endurance.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].question": {
+          "sourceHash": "6e7fdffcfeb901a21da66c12ab9c2cd7e606b141de689757528da0b5a17de155",
+          "sourceText": "Does breathing practice really improve singing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "85707c4b088145b5aa99fb39762cf224436f6bcf28551abb1eaaa23c93673530",
+          "sourceText": "Absolutely. The 4-second inhale, 6-second exhale pattern activates your parasympathetic nervous system, directly countering the fight-or-flight response that causes stage fright. Practice this pattern for 2-3 minutes before performing to calm your nerves and stabilize your breathing.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].question": {
+          "sourceHash": "945721d3104c540d2a6d093f3e7d5c89d1ba29bbe9e1be703e12d8aaf0d89d09",
+          "sourceText": "Can breathing exercises help with singing anxiety?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "b13d7c546d97202158121b6705d2f493de2dec65855561dc3fe363015224a4c5",
+          "sourceText": "Every vocal coach says the same thing: 'Support your breath.' But what does that actually mean? Breath support for singing starts with your diaphragm, the dome-shaped muscle beneath your lungs that controls airflow. Singers who breathe from their chest run out of air mid-phrase, strain their vocal cords, and lose control of pitch and dynamics. Diaphragmatic breathing gives you the steady, controlled airstream that makes the difference between struggling through a song and owning every note.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "451909703afcdb966c7e93ea8013230286d3ba2d994cb068d3492b5d9b11f9a5",
+          "sourceText": "Build the diaphragmatic breath support that powers every great voice",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "26ff10a16e9d0c796b468f5eebc19c4d11727a8e06868ddfd0ecb6c3dab87e8e",
+          "sourceText": "Breathing Exercises for Singing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "324e9ff1c6889cf253e960097e6902c431d341357ed8a2c52fce33e79e79394f",
+          "sourceText": "Lie on your back with a book on your stomach. Breathe so the book rises on inhale and falls on exhale. Your chest should barely move. Practice until this feels natural.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "52b3c130fceae37015a651b0805d8548d0dd79b748c7b8c460e267e434959fe1",
+          "sourceText": "Establish belly breathing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "573284dff7bb9bc7e96864119060a4ddaa7c125334ebdd9b3507903071ffd7bb",
+          "sourceText": "5 minutes, lying down",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "c9de57cbd2ce2d424e02457c9416c539b777660f3b59cc189c22694f6c61fa80",
+          "sourceText": "Stand with one hand on your belly and one on your chest. Inhale through your nose, belly pushes out, chest stays still. Exhale through pursed lips, controlling the release. Use the belly breathing visualizer to guide your timing.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "4ba1780f286870738f437b1bed4c147e8b1afaee68ef5c6c1ce719d01fda2209",
+          "sourceText": "Practice standing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "62888c96e016ab621ae450de378637b30a8ee65ff0f6d07b59d81a2eb24c3836",
+          "sourceText": "3-5 minutes standing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "bafa2a51b11f30e8a475e973a78d1959732b1d991854980fd6838557bb5ab594",
+          "sourceText": "Inhale for 4 counts, then exhale on a steady 'sss' sound for as long as you can, keeping the airflow even. Time yourself, aim to increase your exhale duration each week.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "2cce91a85838fa3a9a3912828430827047c97fb5c95f457cc4fdf53fdc7c15f1",
+          "sourceText": "Add sustained exhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "39b54ea6ab14f440a14f2e0fe8c6c9edf3efe753bfbb03821a716487a1dbffc7",
+          "sourceText": "Start at 15-20 seconds, build to 30+",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "c2dc97369aa89a8379e8d35f0a54a71445eaab1cea435c1a9965ea3f7293b5f8",
+          "sourceText": "Choose a simple phrase or scale. Breathe into your belly, then sing while keeping your belly gently engaged (not rigid). Notice how the sound feels supported and full compared to chest breathing.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "ef313d1dafae7503fcbcab50a0ec48271197486dc6cd0c76db5974457c6dadd8",
+          "sourceText": "Sing with support",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "6fb366c4cdc87b5fa8a406e8eb3011b6ecd1fcdaa7885ede0b683ea5a72d7490",
+          "sourceText": "5-10 minutes of singing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "4cf08eee662e275df9318c477bde7472c7806025a34d9d52ea9ee4e487fdd61e",
+          "sourceText": "Singers often need to breathe quickly between phrases. Practice 'catch breaths', sharp, quick belly inhales (1 second) followed by controlled singing. The diaphragm should snap down and expand your sides.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "4adeae4902a619e16cf7271bb57cffe8db3bb6ca417188db26bbb45b950ada6d",
+          "sourceText": "Quick breath practice",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "72ded3836cdab47d615a8683722faa58387fe3190f5dbcc6b0e7cb5b70040116",
+          "sourceText": "2-3 minutes",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "a49807805205bcadc773a08fb53a98a327b324b593ae43d3ad59cb4398ab140d",
+          "sourceText": "Use the breathing visualizer daily for 5 minutes to reinforce the muscle memory. Over time, diaphragmatic breathing becomes automatic, and you won't need to think about 'supporting'. Your body will do it naturally.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "37c5488bf8aa3d155cec300e60f903c3f57b6bceb97d8b5b85033e2e7372099e",
+          "sourceText": "Daily integration",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "abdebd00ebd1eeabe588eb8a8d117b29054ff0d8f56a179d94dc924c19cf329a",
+          "sourceText": "5 minutes daily",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "fc34ebaecd252d05501b62314262b4d278fbaaf81bb5a22fc4d62df343f4b796",
+          "sourceText": "Breathe into your sides and back, not just your belly. Think of inflating a ring around your waist",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "57327accd37abdcb185c9098ff42071523736e3a5aad92bf0e7c4ba045a72aee",
+          "sourceText": "Never lock or brace your abdominal muscles, support is about controlled release, not rigidity",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "243138cb76c22373da16a4819e388b3c9b931e22b66084e8f51c30934594fdc1",
+          "sourceText": "Practice the breathing before adding voice. Master the airflow first, then add sound",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "cc8a96255b7b42b7c456d9d6f73fd808c7c0ade0604d7851cbc40e3ee784410d",
+          "sourceText": "Record yourself singing before and after a month of practice to hear the difference",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "c66aaa97e6682c87471045d20e826b44a812bf472bb4f35493920df510ac9bb4",
+          "sourceText": "Warm up your breathing before warming up your voice, 2-3 minutes of belly breathing resets your system",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[5]": {
+          "sourceHash": "540cd8dc7f9347b138b411fd14bcdbef1e588b435294e4f511b8002c182ff1f0",
+          "sourceText": "Stay hydrated, dry vocal cords need more air pressure, which strains your breathing muscles",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "88ad581d5e7cccb86dbfdb1b9c88d3ee681d570a374b3d3130969fb4bc255210",
+          "sourceText": "Breathing exercises for singing that build diaphragmatic breath support and vocal stamina. Free guided timer to train the foundation of great singing.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "eb5160facd0a9c92d163c82a952ea5844e2df22328dd835a3c9b560137b1658e",
+          "sourceText": "Train the diaphragmatic breathing that powers every great voice. Free guided timer for singers at all levels.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "e126bc449abc3aa5f350893e6d968572efd8887bf38d6a1bfcb8a6ef69e21a82",
+          "sourceText": "Breathing Exercises for Singing: Build Vocal Breath Support",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "18a3fd39d661506067743994bd9401ab097a8215391b1884efe4d74c8560f7c8",
+          "sourceText": "Breathing Exercises for Singing: Build Vocal Breath Support (Free Timer) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "6d806ea049a0f3f059fa8179c89b41dbedbf819e06e13214c032f127728d3a48",
+          "sourceText": "Free breathing exercises for singers. Build diaphragmatic support, extend your phrases, and reduce vocal strain.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "303af21f248ca55364ae7b0dcfacb4e819d60c61f0846e9b5944de049d7192d2",
+          "sourceText": "Breathing Exercises for Singing — Build Breath Support",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "011f013d95a3dda721ffd30b5700a857d9e5718cede5c993c96baef56ac88518",
+          "sourceText": "Most people breathe with their chest: shoulders rise, rib cage expands, and the breath stays shallow. This works fine for daily life, but it's a disaster for singing. Chest breathing gives you a thin, unstable air supply that runs out quickly. Your vocal cords compensate by tensing up, leading to strain, pitch problems, and a tight, forced sound. The irony is that the 'effort' of chest breathing actually produces a weaker voice than relaxed diaphragmatic breathing.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "a9c239e02d2c9cbbc70e6d7583102627e8982ca424ebff00fad7073219b3f703",
+          "sourceText": "Why Singers Struggle with Breath",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "3316e060f618139953e17f6057492f3210b9d6662f4cdfb44a0499e9074d9c4c",
+          "sourceText": "Running out of air before finishing phrases",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "4273f59637c1ee9f838e5d2d67f886d526d078e682b864cdb8816c90f6425e34",
+          "sourceText": "Visible shoulder and chest movement while singing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "c68eb977ae4dd8b7979021cdbde2fd8fc927c07a4c7e3164f8c45f24b9adf4d9",
+          "sourceText": "Tight, strained sound especially on high notes",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "fedcfc8f0256c52cda6254d33a27537226fd55d10889cfb9dd3a08a7d6a9cef1",
+          "sourceText": "Inconsistent volume and dynamics",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "2921e6a7b190c40d7674c01c6a1797f61986a78f481d2e336164fb30b2226c90",
+          "sourceText": "Vocal fatigue after short practice sessions",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "dbb004d262d5f82fbf25fbd6cfff76aed1d557a4c59859979d9b03bd8d115515",
+          "sourceText": "Pitch goes sharp or flat at the end of phrases",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "1efb94fcc11bdf350e315bc51af7fe5a5b8ea285186577861b4857c2282c18e0",
+          "sourceText": "Breathy tone from poor air management",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[7]": {
+          "sourceHash": "34b303a124cd89fec839b024428d61af93033e8c559269fa5ae84bc404585f02",
+          "sourceText": "Difficulty with long sustained notes",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "6371388cd9d37a4b3974463669c4d7a98a94f835aa1b11e519b94967937eb82a",
+          "sourceText": "Comprehensive review of respiratory mechanics during singing, confirming diaphragmatic breathing as the foundation of efficient vocal production.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "98fbbada9c41be0058ec2836bec5785a9702f87056a4a0d5930049fd8d63fccf",
+          "sourceText": "Respiratory Function in Singing",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "a200f7f9cbe260a62a9de63062fc2a67f1e435d420ec609ea72e14963d1c11b1",
+          "sourceText": "Study comparing breathing patterns of professional vs amateur singers, showing professionals use significantly more diaphragmatic engagement.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "52f041202a4c658621ebb20400ffc094741234010e6721698cd1f9296dac854f",
+          "sourceText": "Breathing Patterns in Professional Singers",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "2844964c1a0ab59dfd1ce60ed0d14c9efc553dbc87701c51af87cc3f11040208",
+          "sourceText": "Research demonstrating that targeted breathing exercises improve vocal quality measures including jitter, shimmer, and harmonic-to-noise ratio.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "8eb0d3952fdd13810f62340039e29cb2dc57764e8716576c2e1d016a19612498",
+          "sourceText": "The Effect of Breathing Exercises on Singing Voice Quality",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "81afa8921f79edb35f17bade6b15aeb256491e4e08ebaba5581399180c3bbfeb",
+          "sourceText": "Master diaphragmatic breathing for better vocal support",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "776f1ce6d583b9c4588e159cc51f1829c1fe9fd9e9750ba8958c257f59304a8b",
+          "sourceText": "Breath support for projecting your voice with confidence",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "86aeaadb693d211a4ea183755d4987215ba87817c2cc291e24197b05d37a5d54",
+          "sourceText": "Build respiratory endurance for performance",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "c66f35d6e81550e789db148e651bd6c1da0751ff6ddb6a172b331b9bffa873dc",
+          "sourceText": "Use breathwork to sharpen concentration before performing",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[3].teaser": {
+          "sourceHash": "d9af2e7c33263ed3471722313735abc99919cbcee3b4ad09e1c4aa7778694b50",
+          "sourceText": "Expand your breath support with lung capacity training.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "dec8107cf0498d7220c8f36229a046b6e14fb8226b48ff9203b0d4a8a1688d36",
+          "sourceText": "The Science of Vocal Breath Support",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "cddfd04cab7cfe6f6f4a5a1401e25bf512bb61f1a281d4d0e7a6486bda4bd815",
+          "sourceText": "Your vocal cords vibrate when air pressure beneath them (subglottic pressure) is steady. Diaphragmatic breathing provides this consistent pressure, while chest breathing creates uneven bursts. Research shows trained singers maintain subglottic pressure 40-60% more consistently than untrained singers.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "1fd4a27463d35d717043bf8009aab38981cf3de2a7853bdc2ff3f57f6d4c50e6",
+          "sourceText": "Subglottic Pressure Control",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "c1cbf016a1c48e38b705e08073de6eaca8e6dd710c32ec10c87bf93bf3cf7765",
+          "sourceText": "The Italian vocal technique 'appoggio' (literally 'lean' or 'support') describes the coordinated engagement of the diaphragm, intercostals, and abdominal muscles during singing. This creates a balanced 'leaning' of the breathing mechanism that regulates airflow without tension.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "5b858b71b670a3ec3bc7adf6a4253061c98d705724809f6cfb0dc49dcdb3a29d",
+          "sourceText": "Appoggio: The Breath-Voice Connection",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "8230abf9a63cf008d760f2a3a35d1a9061a3bad3ae13ac947f089d4118787ec0",
+          "sourceText": "When singers lack breath support, the laryngeal muscles compensate by tensing to control airflow. This creates a tight, strained sound and risks vocal injury. Proper diaphragmatic support removes this burden from the throat, the diaphragm does the work, the throat stays relaxed.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "8ba25d67342c184f7011abb66e7b29f801d0bdc0d80db99161f98d2223d17517",
+          "sourceText": "Reduced Laryngeal Tension",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "2f905293096d2913eb5876ec5d7effb0941c9ac0017a0969b59850dbc65a0f94",
+          "sourceText": "The slow exhale pattern (longer exhale than inhale) activates the vagus nerve, reducing performance anxiety and muscle tension. Calmer singers breathe better, and better breathing creates calmer singers, a virtuous cycle.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "43e10b744feece4a0b7ca5f77fc5d0f640770e6f3b5c229ede1793226bd900fc",
+          "sourceText": "Parasympathetic Activation",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "58af66cac2c39b91e4dd2a75a2ecf8726f39cfd1aed074ecf6a8a060ee14a747",
+          "sourceText": "Diaphragmatic breathing (belly breathing) engages your primary breathing muscle to create a deep, stable air supply. When you inhale, your diaphragm contracts downward, expanding your belly and sides. This draws air deep into your lungs, giving you 2-3 times more air than chest breathing. When you sing, the diaphragm controls the release, providing steady, controlled pressure (called 'appoggio' in classical technique) that keeps your vocal cords vibrating efficiently without strain.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "8dbac21e8b4de27bae23f102ab667993a88a1b8725acab48df3be5ceb5e21c0c",
+          "sourceText": "Diaphragmatic Breathing: The Singer's Foundation",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "eebc6ae284549a5eeace967c8410c46bd2a6ac491305a5b88e7ab1f504590146",
+          "sourceText": "The 4-second inhale, 6-second exhale pattern trains the exact muscle control singers need: a quick, deep breath in (you rarely have more than a beat or two to breathe between phrases) followed by a long, controlled exhale (the singing part). This ratio also activates the parasympathetic nervous system, reducing the performance anxiety that makes breath control even harder.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "63ec6398e5d343b8237906f23e073fbd6bf73dd2c9f813e1e4c772ef7c65d754",
+          "sourceText": "The best breathing exercise for singing is diaphragmatic (belly) breathing. Breathe in through your nose for 4 seconds, expanding your belly and sides. Exhale slowly for 6 seconds through pursed lips. This trains the controlled airflow that creates vocal 'breath support.' Practice 5 minutes daily: within weeks your tone, phrase length, and pitch stability will improve.",
+          "status": "route-catalog-normalized"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "1dab29d551b9e0340e644973cefce2cb7dbbadaa5a9c50ef296fc35c6bd57510",
+          "sourceText": "What breathing exercises help with singing?",
+          "status": "route-catalog-exact"
+        }
+      }
+    }
+  },
+  "schemaVersion": 1,
+  "sourceRoute": "/for/singing"
+}

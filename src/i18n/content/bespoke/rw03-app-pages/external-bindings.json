@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "bindings": [
+    {
+      "route": "box-breathing-app",
+      "messageId": "moreTimers.links.2.label",
+      "sourceText": "2 minute breathing exercise",
+      "reviewedSourceHash": "38ea6f348c65cfc4554ff6af758fcd55a3731384c4d2d6b401adaaf4f1ce01ef",
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+      "reason": "Exact repository-owned label from the dedicated two-minute route."
+    },
+    {
+      "route": "box-breathing-app",
+      "messageId": "footer.links.4.label",
+      "sourceText": "About Abi",
+      "reviewedSourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+      "catalogRoute": "/4-7-8-breathing-for-insomnia",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+      "reason": "Exact repository-owned footer label."
+    },
+    {
+      "route": "box-breathing-app",
+      "messageId": "breadcrumb.home",
+      "sourceText": "Home",
+      "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+      "catalogRoute": "/languages",
+      "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+      "reason": "Exact repository-owned breadcrumb label."
+    },
+    {
+      "route": "box-breathing-app",
+      "messageId": "runtime.modeDisplayName",
+      "sourceText": "Box Breathing",
+      "reviewedSourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095",
+      "catalogRoute": "/",
+      "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:0",
+      "reason": "Exact repository-owned mode label."
+    },
+    {
+      "route": "breathing-app",
+      "messageId": "breadcrumb.home",
+      "sourceText": "Home",
+      "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+      "catalogRoute": "/languages",
+      "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+      "reason": "Exact repository-owned breadcrumb label."
+    },
+    {
+      "route": "coherent-breathing-app",
+      "messageId": "moreTools.links.2.label",
+      "sourceText": "2 minute breathing exercise",
+      "reviewedSourceHash": "38ea6f348c65cfc4554ff6af758fcd55a3731384c4d2d6b401adaaf4f1ce01ef",
+      "catalogRoute": "/2-minute-breathing-exercise",
+      "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+      "reason": "Exact repository-owned label from the dedicated two-minute route."
+    },
+    {
+      "route": "coherent-breathing-app",
+      "messageId": "footer.links.4.label",
+      "sourceText": "About Abi",
+      "reviewedSourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+      "catalogRoute": "/4-7-8-breathing-for-insomnia",
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+      "reason": "Exact repository-owned footer label."
+    },
+    {
+      "route": "coherent-breathing-app",
+      "messageId": "breadcrumb.current",
+      "sourceText": "Coherent Breathing App",
+      "reviewedSourceHash": "1117807f6e7505676f935575afa395db672835edea3bbc7059f1abca19f073e0",
+      "catalogRoute": "/5-minute-breathing-exercise",
+      "occurrenceKey": "sel:a.underline.hover:text-foreground:ctx:link:pos:2",
+      "reason": "Exact repository-owned app label."
+    },
+    {
+      "route": "coherent-breathing-app",
+      "messageId": "breadcrumb.home",
+      "sourceText": "Home",
+      "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+      "catalogRoute": "/languages",
+      "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+      "reason": "Exact repository-owned breadcrumb label."
+    },
+    {
+      "route": "coherent-breathing-app",
+      "messageId": "moreTools.title",
+      "sourceText": "More breathing tools",
+      "reviewedSourceHash": "46a6aec205b09db49365dc47616a006c69cc25104162a3a99449f6ab821bdbfc",
+      "catalogRoute": "/breathing-visualizer",
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:3",
+      "reason": "Exact repository-owned section heading."
+    }
+  ]
+}

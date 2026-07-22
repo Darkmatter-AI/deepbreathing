@@ -1,0 +1,88 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.pattern.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "6f6b81cd18374ff55f238c70745152d5394e0b06308253685c5644186dfaf9f0",
+      "scope": "chrome",
+      "sourceText": "Try this guided pursed lip breathing technique exercise — it really helps.",
+      "translations": {
+        "de-de": "Probiere diese geführte Übung zur Atemtechnik mit Lippenbremse aus – sie hilft wirklich.",
+        "es-es": "Prueba este ejercicio guiado de respiración con labios fruncidos: realmente ayuda.",
+        "fr-fr": "Essayez cet exercice guidé de respiration à lèvres pincées : il aide vraiment.",
+        "ja-jp": "このガイド付き口すぼめ呼吸法エクササイズを試してみてください。本当に役立ちます。",
+        "pt-br": "Experimente este exercício guiado de respiração com lábios franzidos: ele realmente ajuda."
+      }
+    },
+    {
+      "messageId": "chrome.pattern.og-alt",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "edea1f7a6e5ad8a8e7b1013a5fe828f2dfbefc382bc55402555a41202058a93a",
+      "scope": "chrome",
+      "sourceText": "Pursed Lip Breathing Technique – Interactive breathing visualizer",
+      "translations": {
+        "de-de": "Atemtechnik mit Lippenbremse – interaktiver Atemvisualisierer",
+        "es-es": "Técnica de respiración con labios fruncidos – visualizador de respiración interactivo",
+        "fr-fr": "Technique de respiration à lèvres pincées – visualiseur de respiration interactif",
+        "ja-jp": "口すぼめ呼吸法 – インタラクティブ呼吸ビジュアライザー",
+        "pt-br": "Técnica de respiração com lábios franzidos – visualizador interativo da respiração"
+      }
+    },
+    {
+      "messageId": "body[0].content",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "dc4239a379295117b2252fb8eb1a168a2eb8bd9f6327386952632c7a1178fb8a",
+      "scope": "content",
+      "sourceText": "Pursed lip breathing is a controlled breathing technique where you inhale slowly through your nose and exhale through tightly pursed lips, as if you're blowing through a straw or cooling hot soup. The exhale is typically twice as long as the inhale (2:4 ratio). [This creates back-pressure in your airways, keeping them open longer and helping trapped air escape from your lungs](https://doi.org/10.1378/chest.125.2.459).",
+      "translations": {
+        "de-de": "Die Lippenbremse ist eine kontrollierte Atemtechnik, bei der du langsam durch die Nase einatmest und durch eng gespitzte Lippen ausatmest, als würdest du durch einen Strohhalm blasen oder heiße Suppe abkühlen. Das Ausatmen dauert normalerweise doppelt so lange wie das Einatmen (Verhältnis 2:4). [Dadurch entsteht ein Gegendruck in den Atemwegen, der sie länger offen hält und eingeschlossene Luft aus der Lunge entweichen lässt](https://doi.org/10.1378/chest.125.2.459).",
+        "es-es": "La respiración con labios fruncidos es una técnica de respiración controlada en la que inhalas lentamente por la nariz y exhalas con los labios bien fruncidos, como si soplaras por una pajita o enfriaras una sopa caliente. La exhalación suele durar el doble que la inhalación (proporción 2:4). [Esto crea una contrapresión en las vías respiratorias, las mantiene abiertas durante más tiempo y ayuda a expulsar de los pulmones el aire atrapado](https://doi.org/10.1378/chest.125.2.459).",
+        "fr-fr": "La respiration à lèvres pincées est une technique de respiration contrôlée qui consiste à inspirer lentement par le nez et à expirer à travers les lèvres bien pincées, comme si vous souffliez dans une paille ou refroidissiez une soupe chaude. L’expiration dure généralement deux fois plus longtemps que l’inspiration (rapport 2:4). [Cela crée une contre-pression dans les voies respiratoires, les maintient ouvertes plus longtemps et aide l’air emprisonné à s’échapper des poumons](https://doi.org/10.1378/chest.125.2.459).",
+        "ja-jp": "口すぼめ呼吸は、鼻からゆっくり吸い、ストローで吹いたり熱いスープを冷ましたりするように、しっかりすぼめた唇から吐く呼吸法です。通常、吐く時間は吸う時間の2倍です（2:4の比率）。[これにより気道に背圧が生じ、気道が長く開いた状態に保たれて、肺に閉じ込められた空気が外へ出やすくなります](https://doi.org/10.1378/chest.125.2.459)。",
+        "pt-br": "A respiração com lábios franzidos é uma técnica de respiração controlada em que você inspira lentamente pelo nariz e expira pelos lábios bem franzidos, como se estivesse soprando por um canudo ou esfriando uma sopa quente. A expiração normalmente dura o dobro da inspiração (proporção 2:4). [Isso cria contrapressão nas vias aéreas, mantendo-as abertas por mais tempo e ajudando o ar preso a sair dos pulmões](https://doi.org/10.1378/chest.125.2.459)."
+      }
+    },
+    {
+      "messageId": "howTo.tools[0]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "3ad98f3137b10370c988abfe468ae29ced1f46ce54e1b72daa8d8650127e5b50",
+      "scope": "content",
+      "sourceText": "Chair or comfortable position",
+      "translations": {
+        "de-de": "Stuhl oder bequeme Position",
+        "es-es": "Silla o posición cómoda",
+        "fr-fr": "Chaise ou position confortable",
+        "ja-jp": "椅子または楽な姿勢",
+        "pt-br": "Cadeira ou posição confortável"
+      }
+    },
+    {
+      "messageId": "howTo.tools[1]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "cef477320e4a2bf6601f905e494c9f585e593e1e5250932982fef747299023e0",
+      "scope": "content",
+      "sourceText": "Optional timer or visualizer",
+      "translations": {
+        "de-de": "Optionaler Timer oder Atemvisualisierer",
+        "es-es": "Temporizador o visualizador opcional",
+        "fr-fr": "Minuteur ou visualiseur facultatif",
+        "ja-jp": "任意のタイマーまたはビジュアライザー",
+        "pt-br": "Temporizador ou visualizador opcional"
+      }
+    },
+    {
+      "messageId": "video.title",
+      "reason": "route-catalog-exact-conflict",
+      "reviewedSourceHash": "cfaacec6ec24ea3fc0110c5d2f97b8ffb4ec09e07e2e5dfc08a0e2605e1c4232",
+      "scope": "content",
+      "sourceText": "Pursed Lip Breathing Technique - American Lung Association",
+      "translations": {
+        "de-de": "Atemtechnik mit Lippenbremse - American Lung Association",
+        "es-es": "Técnica de respiración con labios fruncidos - American Lung Association",
+        "fr-fr": "Technique de respiration à lèvres pincées - American Lung Association"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/breathe/pursed-lip"
+}

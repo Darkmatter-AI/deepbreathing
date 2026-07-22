@@ -1,0 +1,2921 @@
+{
+  "locales": {
+    "de-de": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "1a97b917fd6867b3617fd65c0d13e146b0473307ff270ce925a69aa3d7d003d5",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "e57ac85f9a9b7bc50ab93392ac397ed10edec67b9f1376e7e86112b0976916b9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "7c4312464db54ee766e7ebdb52d452b5d528ee1cdd29dbf0af68ca20114884f5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-running-title": {
+          "sourceHash": "1fb54d2b1733f17a0ac791891630eb446ddae518a008d3d8218698cecb2a383d",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-4-7-8-timer": {
+          "sourceHash": "555a21b155ab6f695e3d171983318ca957da451e1559229d633d1b28c2edd88c",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "0583337d2276c1c99cbb119559bc5d158c5be5253d6107699727b93213a04fc3",
+          "sourceText": "This breathing exercise is a complementary practice, not a replacement for medical treatment. If you have high blood pressure, continue taking prescribed medications and consult your doctor before making changes to your health routine. Never discontinue medication without medical supervision.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "d6263abd9f967a8b038d78a613438d33adb96eeccabf3122bdd7a1bd42d0bf72",
+          "sourceText": "Some people notice an immediate drop of a few points right after a session. [For sustained improvements, most studies show benefits after 4-8 weeks of daily practice](https://doi.org/10.1016/j.ctim.2019.03.005). Track your readings to see your personal response, everyone's different.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[0].question": {
+          "sourceHash": "530d9805150a9f4f2a063f545b558e845ec2bde917628a6158396b33f98e61b7",
+          "sourceText": "How long until I see blood pressure changes?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "b9d9f31e51fd1e938cb4499814642d9dc84f3c3fdf71e4b91926762332e1fe33",
+          "sourceText": "No. [Breathing exercises are complementary. They work alongside medication and lifestyle changes, not instead of them](https://doi.org/10.1001/jamainternmed.2014.4336). Never reduce or stop medication without your doctor's guidance. That said, some patients working with their doctors have been able to reduce dosages over time with consistent lifestyle interventions including breathing practice.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[1].question": {
+          "sourceHash": "f16debe6fd9486f0376738ba70fa075817f59adda548bef8a11e67e591beeeb4",
+          "sourceText": "Can breathing exercises replace my blood pressure medication?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "10b370593682fcee717e99d69fe826963a630316dc62fa735fb8cb0c320c554b",
+          "sourceText": "For most people, yes. However, if you have severe hypertension, heart conditions, or feel dizzy during holds, shorten or skip the hold phase. A 4-4-8 pattern (no hold) still provides benefits from the extended exhale. Always consult your doctor if you have concerns.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "07883f43797775d32ee051406424d1dbc0275963d76cecf640c77785f3101fa0",
+          "sourceText": "Is the 7-second breath hold safe for me?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "0770c8313cbccf32e76132749a36616097a980d6be7c9dee1a7dc0da9823f5a5",
+          "sourceText": "Nasal breathing stimulates nitric oxide production in your sinuses. Nitric oxide is a vasodilator. It helps relax blood vessel walls and improve blood flow. This is one of the mechanisms by which slow nasal breathing supports healthy blood pressure.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "89e93437283a8ac75b5512359b5d9eef84fe2acc8e6d1636058fe09d1ba2712b",
+          "sourceText": "Why is nose breathing important?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "70bce2b035f1d30912fdc54f760f50c5402a0e91759be5e28e737ddf65267bb3",
+          "sourceText": "[Breathing exercises work best as part of a comprehensive approach](https://doi.org/10.1161/HYP.0b013e318293645f): regular physical activity, reducing sodium intake, maintaining a healthy weight, limiting alcohol, managing stress, and getting adequate sleep. The DASH diet and Mediterranean diet are both associated with lower blood pressure.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[4].question": {
+          "sourceHash": "f449d8bb4985723f0115859a16373aae6b787e5070cfb747d2799259ee713a30",
+          "sourceText": "What else should I do alongside breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "f22aceae95d41ff8917524ed013c4ee89153461f090f5a28835538598d376832",
+          "sourceText": "High blood pressure often has no symptoms, but chronic stress and shallow breathing silently keep your blood vessels constricted. The 4-7-8 breathing technique, developed by Harvard-trained physician Dr. Andrew Weil, offers a drug-free way to activate your body's natural relaxation response and support healthier blood pressure.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "165a54ca2fc804949b9bb690d450e1d9ee5814928000f79a2fa44cf1777eba7c",
+          "sourceText": "A research-informed breathing technique that supports healthier blood pressure when practiced regularly",
+          "status": "repo-reviewed-manual"
+        },
+        "hero.title": {
+          "sourceHash": "518144fefb7098ab2ea457c58ea5d3dacbe4e73a98483ebc692d35d93220c691",
+          "sourceText": "Lower Your Blood Pressure Naturally with 4-7-8 Breathing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "3e334e0bb6b001ba74ba2a4e833e82b6e17e56b6efc68463e0e985d8af931182",
+          "sourceText": "Practice twice daily, morning and evening work best. Consistency matters more than duration.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "bfde00ec94e5c48a94631bc687d14c357c7ab77f11c3a8a338d725782b8ad731",
+          "sourceText": "Choose your times",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "27f1af80c002878c3208dba875c105092d5fba0ce5851ebba6587686c6e935de",
+          "sourceText": "Morning + Evening",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "f98e0e49c08b4da8d548c95144c5bb5fca6922fde5d751c3b062177eabfb4436",
+          "sourceText": "Sit with your back supported or lie down. Place the tip of your tongue against the ridge of tissue behind your upper front teeth (you'll keep it there throughout).",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "0d0651e07bb65785ca881e1fd4cef3ae0fc8d5e7dc3efdf37ab97bb69cb56f0f",
+          "sourceText": "Get comfortable",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "f3d19541f3a5a842ce81be1a788750b3c7ae27c6328e6829ef0ab6e95ba1fae5",
+          "sourceText": "30 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "14bf7739812c70db33bb5445458830c143014af26c82ec74da2956c6cf2b12ba",
+          "sourceText": "Make a whooshing sound as you exhale through your mouth around your tongue. Empty your lungs fully.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "88caa787124d1f4d678cc11718b07eaac469fb0132a83151411d11f88e96866d",
+          "sourceText": "Exhale completely",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "ab71b8d9a57b88652f4bf7894020c3dc26cad7f74dedc3b9333bc8b4c621aaf8",
+          "sourceText": "Start position",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "6aeecb5f90e23b38edf46d3a4abe3a35bf46a8a7e874dbdb78eba8b945d9d55d",
+          "sourceText": "Close your mouth. Inhale quietly through your nose while counting to 4.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "f320adbe95302f1b17c6fdad23ce40670528de85abb9b3a7647531643a809031",
+          "sourceText": "Inhale for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "f2cbc1504cf25fb005baf3da8c7e607cdf8dcc3277577e6b441b9428bdba068c",
+          "sourceText": "Hold your breath gently for a count of 7. Don't strain, keep your body relaxed.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "30215bd73cabf25e99388593c39f5ea119673892b8cb04ca17231b98c965bcbc",
+          "sourceText": "Hold for 7 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "0dff3e2b44bcf0861359945c7404341a3730d54a192c82105cec4cdc31ea2411",
+          "sourceText": "7 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "edc1941d841b80faf21ba0d327b8bb9cfd4f8f29ad6c9cf4d69fe5f250a2e835",
+          "sourceText": "Exhale completely through your mouth with a whooshing sound for a count of 8.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "1b490af1be9a4dd46e56364696e7b3ea23111a9235e98ed6a91d11cfa65aeb8d",
+          "sourceText": "Exhale for 8 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "8290a639dc569f2be3d3319de567cca25e237e934a811fef173f421bdd61a2bf",
+          "sourceText": "8 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].instruction": {
+          "sourceHash": "a7d6ce167d163fe6e6a8c836d15292a51f45020132eecd34d7cc409d984a9a9a",
+          "sourceText": "This is one breath cycle. Complete 4 full cycles. As you become comfortable, you can increase to 8 cycles.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].name": {
+          "sourceHash": "d1eb08ba7146f42b66708ff3f5f9a0275f87d695ac2194b365f3af5be76e2835",
+          "sourceText": "Repeat for 4 cycles",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].timing": {
+          "sourceHash": "1506e6bf6c104ee81b8b643d29a8161b8f765bbe37e1bebe07f8852d4a570ce9",
+          "sourceText": "About 2 minutes for 4 cycles",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "1546c844ec1aae11459287bfa97515b348c21e1d51a992faf92e0010a2bb8155",
+          "sourceText": "The ratio 4:7:8 matters more than the exact seconds. If counts feel too long, speed up proportionally",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "0ec997ef48d1f03d2b5e0d21636d1b214ec21e5141ded625f808ff42adbc54e8",
+          "sourceText": "Don't exceed 4 breath cycles for the first month of practice",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "f7d641ef3100ffd7620b8b3301f8a34a43cdabe4e6161f84194980e0ad216672",
+          "sourceText": "Track your blood pressure before and after sessions to see your response",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "7bad149563453d8c537a93487594414815ca6741c7f921c23688ecdaad0c18f0",
+          "sourceText": "Practice at the same times each day to build the habit",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "4a7b1ca82e727cad155f8008b49e276f51899563cd81d674b2486258eec05f62",
+          "sourceText": "Reduce blood pressure by up to 10 points without medication. Dr. Weil's 4-7-8 breathing technique backed by Harvard research. Free guided visualizer. Start today.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "e0041bf8fcc594869aad1e622bf4b380dc0a4ed90dfee7435ee31d08f8e06d2b",
+          "sourceText": "Harvard research: slow breathing can reduce blood pressure by up to 10 points. Dr. Weil's 4-7-8 technique. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "f3d7d63902a014a5be626780ea40859a9d00cb453e3eb93543669ecf4dc09168",
+          "sourceText": "Lower Blood Pressure Naturally: Reduce BP by 10 Points",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "3b435bd07182347e2df0bcf99d2f3a545d46fab97f790df87641bd52a75740e5",
+          "sourceText": "Lower Blood Pressure Naturally: 4-7-8 Breathing Reduces BP by 10 Points | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "cf16c92becfc4b3bec1401d673150582f0a160f61522113fe36e0182a160c87f",
+          "sourceText": "Harvard research: Dr. Weil's 4-7-8 breathing can reduce BP by up to 10 points. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "f3d7d63902a014a5be626780ea40859a9d00cb453e3eb93543669ecf4dc09168",
+          "sourceText": "Lower Blood Pressure by 10 Points - 4-7-8 Breathing",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "9b6ad482f89b86fdc7e100b90875fee25796894c9968e122e83cab1f2025a9b9",
+          "sourceText": "When you're stressed, your sympathetic nervous system triggers blood vessel constriction, raising pressure. Chronic stress keeps this system in overdrive. Shallow chest breathing (common when anxious or sedentary) compounds the problem by maintaining high sympathetic tone. Over time, your body forgets how to fully relax.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "f5b7ce3520cabfb30c3a98154a516af2bed65875a1c4d55e3a580286a23f34f3",
+          "sourceText": "How Stress Keeps Blood Pressure High",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "6807ac3ed6a13e88ffa0f6e261a56cfbeb3deee093179f9935a2c2021fe76857",
+          "sourceText": "Persistent tension and stress",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "bbbb9ee311c5705aa315691712a533b2dace50ffe89a08043f5cd580992bce32",
+          "sourceText": "Shallow, chest-level breathing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "9147043f43a514744ee3dcd2042ed2b3f3f8a06f6904eb6d3473c8b5acaa3b87",
+          "sourceText": "Difficulty relaxing even when resting",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "d5cf41c79f49e0a02dbf2749e48ca9ab07537b563a70e5fcb3207fc8d797a3e7",
+          "sourceText": "Poor sleep quality",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "1de7b550e3ddc6083a5c8c899e407aa34d46214b0047c5c4f845dfd9b23862c2",
+          "sourceText": "Feeling 'on edge' throughout the day",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "9eb7063c9e8b2c55e1ac27aa7ab46c514fa9e8322a088840d858e4234b0b72ae",
+          "sourceText": "Harvard cardiologist explains how slow, deep breathing can lower systolic pressure by up to 10 points.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "ac3fcb2e26f123fd9bfd520792f5ff51f20bddb23ffc8c429a24cd1fc685ff04",
+          "sourceText": "Breathing exercises to lower your blood pressure",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "471c63fe4e0ba16ff8af4fce02cb9d823e0d48ed89f8b448c5ca73916e6f2b6b",
+          "sourceText": "Dr. Herbert Benson's research on the relaxation response and blood pressure reduction.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "2d5f0bae82a77ab7a8a9f9bd71e071423cddfaefa4e52cd4439e55d0a6f403e7",
+          "sourceText": "Meditation and a relaxation technique to lower blood pressure",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "6f49f1b3f7aa41b4b3c6b5bba1c91dc3558ec367e80914500a551e3e26bd40c5",
+          "sourceText": "Original demonstration and explanation of the 4-7-8 technique by Dr. Andrew Weil.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "4667c02428b0844f077b8ba4261d284f6cddd6be89cddfa28df2053e7dee6e6b",
+          "sourceText": "Video: Dr. Weil's Breathing Exercises: 4-7-8 Breath",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "bb9664c1908acb6d4f07c62fef2631bceeab59edbe4826a5fa6a5cb1d6ab44c6",
+          "sourceText": "Meta-analysis of 20 studies showing breathing exercises reduce both systolic and diastolic blood pressure.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "6ed8456bbfb67d4d74cb3d738e11a5ca8c1a4f4b5543083d82b45e960b51bd03",
+          "sourceText": "Effect of breathing exercises on blood pressure and heart rate: A systematic review and meta-analysis",
+          "status": "route-catalog-exact"
+        },
+        "references[4].summary": {
+          "sourceHash": "2fe3b5c8a44f57c8348bb8473c19aad2b72ed89837177f84c031d29e0c55521d",
+          "sourceText": "Overview of evidence-based breathing techniques for blood pressure management.",
+          "status": "route-catalog-exact"
+        },
+        "references[4].title": {
+          "sourceHash": "789567bf83fbe33ba22e50e0ef66429be3eb9163b5ecdb168956ac61c34142cb",
+          "sourceText": "6 Breathing Exercises That Could Help Lower Your Blood Pressure",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "a8f34ed5397ca32dc8e8a747014b394bfebd681eef08ee2c5d38dba790295b95",
+          "sourceText": "Practice with the full-screen 4-7-8 Breathing visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "b37c317f57e9ddf96b3378d6390d560b1156b051e2fae9b2c21e72df8e21b9ae",
+          "sourceText": "Poor sleep can raise blood pressure. See our guide for better rest with the same 4-7-8 technique",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "fef57a81025fd1f81539960cf612514ab062c3b65e5ec68c730586679890e452",
+          "sourceText": "Gentle exercise supports cardiovascular health. Learn recovery breathing for after workouts",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "3ebd0197bc4b20474c6fb2a2583db4ad9fda05223390e82b9b3402a796d2b52f",
+          "sourceText": "The Cardiovascular Science",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "504306f92a24f78d2131eb3ec958b6991add8ab8a3458cefe1b45a65871ed4b3",
+          "sourceText": "Slow breathing (under 10 breaths per minute) improves the sensitivity of baroreceptors, pressure sensors in your arteries that help regulate blood pressure. Better baroreflex sensitivity means more responsive blood pressure control.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "4aca46cd8159dfec3c02df4bc9c84dd29fe092e77ed0e373099736eb0e3bce02",
+          "sourceText": "Baroreflex Sensitivity",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "0c2191a7661857cc59de14586dc161c1502b795d8a4052e4367041ec2ba5d3ae",
+          "sourceText": "Nasal breathing stimulates the release of nitric oxide, a vasodilator that relaxes blood vessel walls and improves blood flow. This is one reason why nasal breathing is preferred over mouth breathing.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "6f36ab123358abb01588158e998772b724ee254b92dd12cba2ada8e7e9304fd3",
+          "sourceText": "Nitric Oxide Release",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "2ecbc7d979fad5f5f0416d1b5b823044cebd594b5b6254093bf57434b1c115e2",
+          "sourceText": "Long exhales activate the vagus nerve, shifting your nervous system from 'fight or flight' to 'rest and digest.' This reduces heart rate and allows blood vessels to dilate.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "43e10b744feece4a0b7ca5f77fc5d0f640770e6f3b5c229ede1793226bd900fc",
+          "sourceText": "Parasympathetic Activation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "9b166ab4626e6070d2dc77ec341d20c6cdd2ed7ac5e13b79b40ae1f1f26a675c",
+          "sourceText": "Regular slow breathing practice has been shown to reduce cortisol, the stress hormone that contributes to elevated blood pressure when chronically elevated.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "dcc9ee3fa892989762782552fcc402ebb657c10a2b33f3f51dd787dbe7c33eec",
+          "sourceText": "Cortisol Reduction",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "5c251aa4fa3578c97f13c93d378edbbeda15b4cb6df93be91d4737f86555a53f",
+          "sourceText": "Developed by Dr. Andrew Weil, a Harvard-trained physician and founder of the Arizona Center for Integrative Medicine, the 4-7-8 technique emphasizes a long exhale to trigger the parasympathetic nervous system. Dr. Weil calls it a 'natural tranquilizer for the nervous system.'",
+          "status": "route-catalog-exact"
+        },
+        "solution.heading": {
+          "sourceHash": "06c4e59b6d80b9ba0f29a86718c9cf51fb3339f2f14c400138fb43882880baf7",
+          "sourceText": "The 4-7-8 Breathing Technique",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "2be76a5a99c6ca622d4cd02e5407b640af37a8dda206153325b5a88fd71952ad",
+          "sourceText": "The extended exhale (8 counts) is the key. When you exhale slowly, your heart rate naturally decreases. This is called respiratory sinus arrhythmia. The 7-count hold allows gases to equilibrate in your lungs. Together, these phases shift your autonomic balance toward relaxation.",
+          "status": "route-catalog-normalized"
+        }
+      }
+    },
+    "es-es": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "1a97b917fd6867b3617fd65c0d13e146b0473307ff270ce925a69aa3d7d003d5",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "e57ac85f9a9b7bc50ab93392ac397ed10edec67b9f1376e7e86112b0976916b9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "7c4312464db54ee766e7ebdb52d452b5d528ee1cdd29dbf0af68ca20114884f5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-running-title": {
+          "sourceHash": "1fb54d2b1733f17a0ac791891630eb446ddae518a008d3d8218698cecb2a383d",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-4-7-8-timer": {
+          "sourceHash": "555a21b155ab6f695e3d171983318ca957da451e1559229d633d1b28c2edd88c",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "0583337d2276c1c99cbb119559bc5d158c5be5253d6107699727b93213a04fc3",
+          "sourceText": "This breathing exercise is a complementary practice, not a replacement for medical treatment. If you have high blood pressure, continue taking prescribed medications and consult your doctor before making changes to your health routine. Never discontinue medication without medical supervision.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "d6263abd9f967a8b038d78a613438d33adb96eeccabf3122bdd7a1bd42d0bf72",
+          "sourceText": "Some people notice an immediate drop of a few points right after a session. [For sustained improvements, most studies show benefits after 4-8 weeks of daily practice](https://doi.org/10.1016/j.ctim.2019.03.005). Track your readings to see your personal response, everyone's different.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[0].question": {
+          "sourceHash": "530d9805150a9f4f2a063f545b558e845ec2bde917628a6158396b33f98e61b7",
+          "sourceText": "How long until I see blood pressure changes?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "b9d9f31e51fd1e938cb4499814642d9dc84f3c3fdf71e4b91926762332e1fe33",
+          "sourceText": "No. [Breathing exercises are complementary. They work alongside medication and lifestyle changes, not instead of them](https://doi.org/10.1001/jamainternmed.2014.4336). Never reduce or stop medication without your doctor's guidance. That said, some patients working with their doctors have been able to reduce dosages over time with consistent lifestyle interventions including breathing practice.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[1].question": {
+          "sourceHash": "f16debe6fd9486f0376738ba70fa075817f59adda548bef8a11e67e591beeeb4",
+          "sourceText": "Can breathing exercises replace my blood pressure medication?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "10b370593682fcee717e99d69fe826963a630316dc62fa735fb8cb0c320c554b",
+          "sourceText": "For most people, yes. However, if you have severe hypertension, heart conditions, or feel dizzy during holds, shorten or skip the hold phase. A 4-4-8 pattern (no hold) still provides benefits from the extended exhale. Always consult your doctor if you have concerns.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "07883f43797775d32ee051406424d1dbc0275963d76cecf640c77785f3101fa0",
+          "sourceText": "Is the 7-second breath hold safe for me?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "0770c8313cbccf32e76132749a36616097a980d6be7c9dee1a7dc0da9823f5a5",
+          "sourceText": "Nasal breathing stimulates nitric oxide production in your sinuses. Nitric oxide is a vasodilator. It helps relax blood vessel walls and improve blood flow. This is one of the mechanisms by which slow nasal breathing supports healthy blood pressure.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "89e93437283a8ac75b5512359b5d9eef84fe2acc8e6d1636058fe09d1ba2712b",
+          "sourceText": "Why is nose breathing important?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "70bce2b035f1d30912fdc54f760f50c5402a0e91759be5e28e737ddf65267bb3",
+          "sourceText": "[Breathing exercises work best as part of a comprehensive approach](https://doi.org/10.1161/HYP.0b013e318293645f): regular physical activity, reducing sodium intake, maintaining a healthy weight, limiting alcohol, managing stress, and getting adequate sleep. The DASH diet and Mediterranean diet are both associated with lower blood pressure.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[4].question": {
+          "sourceHash": "f449d8bb4985723f0115859a16373aae6b787e5070cfb747d2799259ee713a30",
+          "sourceText": "What else should I do alongside breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "f22aceae95d41ff8917524ed013c4ee89153461f090f5a28835538598d376832",
+          "sourceText": "High blood pressure often has no symptoms, but chronic stress and shallow breathing silently keep your blood vessels constricted. The 4-7-8 breathing technique, developed by Harvard-trained physician Dr. Andrew Weil, offers a drug-free way to activate your body's natural relaxation response and support healthier blood pressure.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "165a54ca2fc804949b9bb690d450e1d9ee5814928000f79a2fa44cf1777eba7c",
+          "sourceText": "A research-informed breathing technique that supports healthier blood pressure when practiced regularly",
+          "status": "repo-reviewed-manual"
+        },
+        "hero.title": {
+          "sourceHash": "518144fefb7098ab2ea457c58ea5d3dacbe4e73a98483ebc692d35d93220c691",
+          "sourceText": "Lower Your Blood Pressure Naturally with 4-7-8 Breathing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "3e334e0bb6b001ba74ba2a4e833e82b6e17e56b6efc68463e0e985d8af931182",
+          "sourceText": "Practice twice daily, morning and evening work best. Consistency matters more than duration.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "bfde00ec94e5c48a94631bc687d14c357c7ab77f11c3a8a338d725782b8ad731",
+          "sourceText": "Choose your times",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "27f1af80c002878c3208dba875c105092d5fba0ce5851ebba6587686c6e935de",
+          "sourceText": "Morning + Evening",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "f98e0e49c08b4da8d548c95144c5bb5fca6922fde5d751c3b062177eabfb4436",
+          "sourceText": "Sit with your back supported or lie down. Place the tip of your tongue against the ridge of tissue behind your upper front teeth (you'll keep it there throughout).",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "0d0651e07bb65785ca881e1fd4cef3ae0fc8d5e7dc3efdf37ab97bb69cb56f0f",
+          "sourceText": "Get comfortable",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "f3d19541f3a5a842ce81be1a788750b3c7ae27c6328e6829ef0ab6e95ba1fae5",
+          "sourceText": "30 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "14bf7739812c70db33bb5445458830c143014af26c82ec74da2956c6cf2b12ba",
+          "sourceText": "Make a whooshing sound as you exhale through your mouth around your tongue. Empty your lungs fully.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "88caa787124d1f4d678cc11718b07eaac469fb0132a83151411d11f88e96866d",
+          "sourceText": "Exhale completely",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "ab71b8d9a57b88652f4bf7894020c3dc26cad7f74dedc3b9333bc8b4c621aaf8",
+          "sourceText": "Start position",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "6aeecb5f90e23b38edf46d3a4abe3a35bf46a8a7e874dbdb78eba8b945d9d55d",
+          "sourceText": "Close your mouth. Inhale quietly through your nose while counting to 4.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "f320adbe95302f1b17c6fdad23ce40670528de85abb9b3a7647531643a809031",
+          "sourceText": "Inhale for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "f2cbc1504cf25fb005baf3da8c7e607cdf8dcc3277577e6b441b9428bdba068c",
+          "sourceText": "Hold your breath gently for a count of 7. Don't strain, keep your body relaxed.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "30215bd73cabf25e99388593c39f5ea119673892b8cb04ca17231b98c965bcbc",
+          "sourceText": "Hold for 7 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "0dff3e2b44bcf0861359945c7404341a3730d54a192c82105cec4cdc31ea2411",
+          "sourceText": "7 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "edc1941d841b80faf21ba0d327b8bb9cfd4f8f29ad6c9cf4d69fe5f250a2e835",
+          "sourceText": "Exhale completely through your mouth with a whooshing sound for a count of 8.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "1b490af1be9a4dd46e56364696e7b3ea23111a9235e98ed6a91d11cfa65aeb8d",
+          "sourceText": "Exhale for 8 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "8290a639dc569f2be3d3319de567cca25e237e934a811fef173f421bdd61a2bf",
+          "sourceText": "8 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].instruction": {
+          "sourceHash": "a7d6ce167d163fe6e6a8c836d15292a51f45020132eecd34d7cc409d984a9a9a",
+          "sourceText": "This is one breath cycle. Complete 4 full cycles. As you become comfortable, you can increase to 8 cycles.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].name": {
+          "sourceHash": "d1eb08ba7146f42b66708ff3f5f9a0275f87d695ac2194b365f3af5be76e2835",
+          "sourceText": "Repeat for 4 cycles",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].timing": {
+          "sourceHash": "1506e6bf6c104ee81b8b643d29a8161b8f765bbe37e1bebe07f8852d4a570ce9",
+          "sourceText": "About 2 minutes for 4 cycles",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "1546c844ec1aae11459287bfa97515b348c21e1d51a992faf92e0010a2bb8155",
+          "sourceText": "The ratio 4:7:8 matters more than the exact seconds. If counts feel too long, speed up proportionally",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "0ec997ef48d1f03d2b5e0d21636d1b214ec21e5141ded625f808ff42adbc54e8",
+          "sourceText": "Don't exceed 4 breath cycles for the first month of practice",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "f7d641ef3100ffd7620b8b3301f8a34a43cdabe4e6161f84194980e0ad216672",
+          "sourceText": "Track your blood pressure before and after sessions to see your response",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "7bad149563453d8c537a93487594414815ca6741c7f921c23688ecdaad0c18f0",
+          "sourceText": "Practice at the same times each day to build the habit",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "4a7b1ca82e727cad155f8008b49e276f51899563cd81d674b2486258eec05f62",
+          "sourceText": "Reduce blood pressure by up to 10 points without medication. Dr. Weil's 4-7-8 breathing technique backed by Harvard research. Free guided visualizer. Start today.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "e0041bf8fcc594869aad1e622bf4b380dc0a4ed90dfee7435ee31d08f8e06d2b",
+          "sourceText": "Harvard research: slow breathing can reduce blood pressure by up to 10 points. Dr. Weil's 4-7-8 technique. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "f3d7d63902a014a5be626780ea40859a9d00cb453e3eb93543669ecf4dc09168",
+          "sourceText": "Lower Blood Pressure Naturally: Reduce BP by 10 Points",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "3b435bd07182347e2df0bcf99d2f3a545d46fab97f790df87641bd52a75740e5",
+          "sourceText": "Lower Blood Pressure Naturally: 4-7-8 Breathing Reduces BP by 10 Points | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "cf16c92becfc4b3bec1401d673150582f0a160f61522113fe36e0182a160c87f",
+          "sourceText": "Harvard research: Dr. Weil's 4-7-8 breathing can reduce BP by up to 10 points. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "f3d7d63902a014a5be626780ea40859a9d00cb453e3eb93543669ecf4dc09168",
+          "sourceText": "Lower Blood Pressure by 10 Points - 4-7-8 Breathing",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "9b6ad482f89b86fdc7e100b90875fee25796894c9968e122e83cab1f2025a9b9",
+          "sourceText": "When you're stressed, your sympathetic nervous system triggers blood vessel constriction, raising pressure. Chronic stress keeps this system in overdrive. Shallow chest breathing (common when anxious or sedentary) compounds the problem by maintaining high sympathetic tone. Over time, your body forgets how to fully relax.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "f5b7ce3520cabfb30c3a98154a516af2bed65875a1c4d55e3a580286a23f34f3",
+          "sourceText": "How Stress Keeps Blood Pressure High",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "6807ac3ed6a13e88ffa0f6e261a56cfbeb3deee093179f9935a2c2021fe76857",
+          "sourceText": "Persistent tension and stress",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "bbbb9ee311c5705aa315691712a533b2dace50ffe89a08043f5cd580992bce32",
+          "sourceText": "Shallow, chest-level breathing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "9147043f43a514744ee3dcd2042ed2b3f3f8a06f6904eb6d3473c8b5acaa3b87",
+          "sourceText": "Difficulty relaxing even when resting",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "d5cf41c79f49e0a02dbf2749e48ca9ab07537b563a70e5fcb3207fc8d797a3e7",
+          "sourceText": "Poor sleep quality",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "1de7b550e3ddc6083a5c8c899e407aa34d46214b0047c5c4f845dfd9b23862c2",
+          "sourceText": "Feeling 'on edge' throughout the day",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "9eb7063c9e8b2c55e1ac27aa7ab46c514fa9e8322a088840d858e4234b0b72ae",
+          "sourceText": "Harvard cardiologist explains how slow, deep breathing can lower systolic pressure by up to 10 points.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "ac3fcb2e26f123fd9bfd520792f5ff51f20bddb23ffc8c429a24cd1fc685ff04",
+          "sourceText": "Breathing exercises to lower your blood pressure",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "471c63fe4e0ba16ff8af4fce02cb9d823e0d48ed89f8b448c5ca73916e6f2b6b",
+          "sourceText": "Dr. Herbert Benson's research on the relaxation response and blood pressure reduction.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "2d5f0bae82a77ab7a8a9f9bd71e071423cddfaefa4e52cd4439e55d0a6f403e7",
+          "sourceText": "Meditation and a relaxation technique to lower blood pressure",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "6f49f1b3f7aa41b4b3c6b5bba1c91dc3558ec367e80914500a551e3e26bd40c5",
+          "sourceText": "Original demonstration and explanation of the 4-7-8 technique by Dr. Andrew Weil.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "4667c02428b0844f077b8ba4261d284f6cddd6be89cddfa28df2053e7dee6e6b",
+          "sourceText": "Video: Dr. Weil's Breathing Exercises: 4-7-8 Breath",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "bb9664c1908acb6d4f07c62fef2631bceeab59edbe4826a5fa6a5cb1d6ab44c6",
+          "sourceText": "Meta-analysis of 20 studies showing breathing exercises reduce both systolic and diastolic blood pressure.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "6ed8456bbfb67d4d74cb3d738e11a5ca8c1a4f4b5543083d82b45e960b51bd03",
+          "sourceText": "Effect of breathing exercises on blood pressure and heart rate: A systematic review and meta-analysis",
+          "status": "route-catalog-exact"
+        },
+        "references[4].summary": {
+          "sourceHash": "2fe3b5c8a44f57c8348bb8473c19aad2b72ed89837177f84c031d29e0c55521d",
+          "sourceText": "Overview of evidence-based breathing techniques for blood pressure management.",
+          "status": "route-catalog-exact"
+        },
+        "references[4].title": {
+          "sourceHash": "789567bf83fbe33ba22e50e0ef66429be3eb9163b5ecdb168956ac61c34142cb",
+          "sourceText": "6 Breathing Exercises That Could Help Lower Your Blood Pressure",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "a8f34ed5397ca32dc8e8a747014b394bfebd681eef08ee2c5d38dba790295b95",
+          "sourceText": "Practice with the full-screen 4-7-8 Breathing visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "b37c317f57e9ddf96b3378d6390d560b1156b051e2fae9b2c21e72df8e21b9ae",
+          "sourceText": "Poor sleep can raise blood pressure. See our guide for better rest with the same 4-7-8 technique",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "fef57a81025fd1f81539960cf612514ab062c3b65e5ec68c730586679890e452",
+          "sourceText": "Gentle exercise supports cardiovascular health. Learn recovery breathing for after workouts",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "3ebd0197bc4b20474c6fb2a2583db4ad9fda05223390e82b9b3402a796d2b52f",
+          "sourceText": "The Cardiovascular Science",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "504306f92a24f78d2131eb3ec958b6991add8ab8a3458cefe1b45a65871ed4b3",
+          "sourceText": "Slow breathing (under 10 breaths per minute) improves the sensitivity of baroreceptors, pressure sensors in your arteries that help regulate blood pressure. Better baroreflex sensitivity means more responsive blood pressure control.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "4aca46cd8159dfec3c02df4bc9c84dd29fe092e77ed0e373099736eb0e3bce02",
+          "sourceText": "Baroreflex Sensitivity",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "0c2191a7661857cc59de14586dc161c1502b795d8a4052e4367041ec2ba5d3ae",
+          "sourceText": "Nasal breathing stimulates the release of nitric oxide, a vasodilator that relaxes blood vessel walls and improves blood flow. This is one reason why nasal breathing is preferred over mouth breathing.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "6f36ab123358abb01588158e998772b724ee254b92dd12cba2ada8e7e9304fd3",
+          "sourceText": "Nitric Oxide Release",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "2ecbc7d979fad5f5f0416d1b5b823044cebd594b5b6254093bf57434b1c115e2",
+          "sourceText": "Long exhales activate the vagus nerve, shifting your nervous system from 'fight or flight' to 'rest and digest.' This reduces heart rate and allows blood vessels to dilate.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "43e10b744feece4a0b7ca5f77fc5d0f640770e6f3b5c229ede1793226bd900fc",
+          "sourceText": "Parasympathetic Activation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "9b166ab4626e6070d2dc77ec341d20c6cdd2ed7ac5e13b79b40ae1f1f26a675c",
+          "sourceText": "Regular slow breathing practice has been shown to reduce cortisol, the stress hormone that contributes to elevated blood pressure when chronically elevated.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "dcc9ee3fa892989762782552fcc402ebb657c10a2b33f3f51dd787dbe7c33eec",
+          "sourceText": "Cortisol Reduction",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "5c251aa4fa3578c97f13c93d378edbbeda15b4cb6df93be91d4737f86555a53f",
+          "sourceText": "Developed by Dr. Andrew Weil, a Harvard-trained physician and founder of the Arizona Center for Integrative Medicine, the 4-7-8 technique emphasizes a long exhale to trigger the parasympathetic nervous system. Dr. Weil calls it a 'natural tranquilizer for the nervous system.'",
+          "status": "route-catalog-exact"
+        },
+        "solution.heading": {
+          "sourceHash": "06c4e59b6d80b9ba0f29a86718c9cf51fb3339f2f14c400138fb43882880baf7",
+          "sourceText": "The 4-7-8 Breathing Technique",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "2be76a5a99c6ca622d4cd02e5407b640af37a8dda206153325b5a88fd71952ad",
+          "sourceText": "The extended exhale (8 counts) is the key. When you exhale slowly, your heart rate naturally decreases. This is called respiratory sinus arrhythmia. The 7-count hold allows gases to equilibrate in your lungs. Together, these phases shift your autonomic balance toward relaxation.",
+          "status": "route-catalog-normalized"
+        }
+      }
+    },
+    "fr-fr": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "1a97b917fd6867b3617fd65c0d13e146b0473307ff270ce925a69aa3d7d003d5",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "e57ac85f9a9b7bc50ab93392ac397ed10edec67b9f1376e7e86112b0976916b9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "7c4312464db54ee766e7ebdb52d452b5d528ee1cdd29dbf0af68ca20114884f5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-running-title": {
+          "sourceHash": "1fb54d2b1733f17a0ac791891630eb446ddae518a008d3d8218698cecb2a383d",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-4-7-8-timer": {
+          "sourceHash": "555a21b155ab6f695e3d171983318ca957da451e1559229d633d1b28c2edd88c",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "0583337d2276c1c99cbb119559bc5d158c5be5253d6107699727b93213a04fc3",
+          "sourceText": "This breathing exercise is a complementary practice, not a replacement for medical treatment. If you have high blood pressure, continue taking prescribed medications and consult your doctor before making changes to your health routine. Never discontinue medication without medical supervision.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "d6263abd9f967a8b038d78a613438d33adb96eeccabf3122bdd7a1bd42d0bf72",
+          "sourceText": "Some people notice an immediate drop of a few points right after a session. [For sustained improvements, most studies show benefits after 4-8 weeks of daily practice](https://doi.org/10.1016/j.ctim.2019.03.005). Track your readings to see your personal response, everyone's different.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[0].question": {
+          "sourceHash": "530d9805150a9f4f2a063f545b558e845ec2bde917628a6158396b33f98e61b7",
+          "sourceText": "How long until I see blood pressure changes?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "b9d9f31e51fd1e938cb4499814642d9dc84f3c3fdf71e4b91926762332e1fe33",
+          "sourceText": "No. [Breathing exercises are complementary. They work alongside medication and lifestyle changes, not instead of them](https://doi.org/10.1001/jamainternmed.2014.4336). Never reduce or stop medication without your doctor's guidance. That said, some patients working with their doctors have been able to reduce dosages over time with consistent lifestyle interventions including breathing practice.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[1].question": {
+          "sourceHash": "f16debe6fd9486f0376738ba70fa075817f59adda548bef8a11e67e591beeeb4",
+          "sourceText": "Can breathing exercises replace my blood pressure medication?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "10b370593682fcee717e99d69fe826963a630316dc62fa735fb8cb0c320c554b",
+          "sourceText": "For most people, yes. However, if you have severe hypertension, heart conditions, or feel dizzy during holds, shorten or skip the hold phase. A 4-4-8 pattern (no hold) still provides benefits from the extended exhale. Always consult your doctor if you have concerns.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "07883f43797775d32ee051406424d1dbc0275963d76cecf640c77785f3101fa0",
+          "sourceText": "Is the 7-second breath hold safe for me?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "0770c8313cbccf32e76132749a36616097a980d6be7c9dee1a7dc0da9823f5a5",
+          "sourceText": "Nasal breathing stimulates nitric oxide production in your sinuses. Nitric oxide is a vasodilator. It helps relax blood vessel walls and improve blood flow. This is one of the mechanisms by which slow nasal breathing supports healthy blood pressure.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "89e93437283a8ac75b5512359b5d9eef84fe2acc8e6d1636058fe09d1ba2712b",
+          "sourceText": "Why is nose breathing important?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "70bce2b035f1d30912fdc54f760f50c5402a0e91759be5e28e737ddf65267bb3",
+          "sourceText": "[Breathing exercises work best as part of a comprehensive approach](https://doi.org/10.1161/HYP.0b013e318293645f): regular physical activity, reducing sodium intake, maintaining a healthy weight, limiting alcohol, managing stress, and getting adequate sleep. The DASH diet and Mediterranean diet are both associated with lower blood pressure.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[4].question": {
+          "sourceHash": "f449d8bb4985723f0115859a16373aae6b787e5070cfb747d2799259ee713a30",
+          "sourceText": "What else should I do alongside breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "f22aceae95d41ff8917524ed013c4ee89153461f090f5a28835538598d376832",
+          "sourceText": "High blood pressure often has no symptoms, but chronic stress and shallow breathing silently keep your blood vessels constricted. The 4-7-8 breathing technique, developed by Harvard-trained physician Dr. Andrew Weil, offers a drug-free way to activate your body's natural relaxation response and support healthier blood pressure.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "165a54ca2fc804949b9bb690d450e1d9ee5814928000f79a2fa44cf1777eba7c",
+          "sourceText": "A research-informed breathing technique that supports healthier blood pressure when practiced regularly",
+          "status": "repo-reviewed-manual"
+        },
+        "hero.title": {
+          "sourceHash": "518144fefb7098ab2ea457c58ea5d3dacbe4e73a98483ebc692d35d93220c691",
+          "sourceText": "Lower Your Blood Pressure Naturally with 4-7-8 Breathing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "3e334e0bb6b001ba74ba2a4e833e82b6e17e56b6efc68463e0e985d8af931182",
+          "sourceText": "Practice twice daily, morning and evening work best. Consistency matters more than duration.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "bfde00ec94e5c48a94631bc687d14c357c7ab77f11c3a8a338d725782b8ad731",
+          "sourceText": "Choose your times",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "27f1af80c002878c3208dba875c105092d5fba0ce5851ebba6587686c6e935de",
+          "sourceText": "Morning + Evening",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "f98e0e49c08b4da8d548c95144c5bb5fca6922fde5d751c3b062177eabfb4436",
+          "sourceText": "Sit with your back supported or lie down. Place the tip of your tongue against the ridge of tissue behind your upper front teeth (you'll keep it there throughout).",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "0d0651e07bb65785ca881e1fd4cef3ae0fc8d5e7dc3efdf37ab97bb69cb56f0f",
+          "sourceText": "Get comfortable",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "f3d19541f3a5a842ce81be1a788750b3c7ae27c6328e6829ef0ab6e95ba1fae5",
+          "sourceText": "30 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "14bf7739812c70db33bb5445458830c143014af26c82ec74da2956c6cf2b12ba",
+          "sourceText": "Make a whooshing sound as you exhale through your mouth around your tongue. Empty your lungs fully.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "88caa787124d1f4d678cc11718b07eaac469fb0132a83151411d11f88e96866d",
+          "sourceText": "Exhale completely",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "ab71b8d9a57b88652f4bf7894020c3dc26cad7f74dedc3b9333bc8b4c621aaf8",
+          "sourceText": "Start position",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "6aeecb5f90e23b38edf46d3a4abe3a35bf46a8a7e874dbdb78eba8b945d9d55d",
+          "sourceText": "Close your mouth. Inhale quietly through your nose while counting to 4.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "f320adbe95302f1b17c6fdad23ce40670528de85abb9b3a7647531643a809031",
+          "sourceText": "Inhale for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "f2cbc1504cf25fb005baf3da8c7e607cdf8dcc3277577e6b441b9428bdba068c",
+          "sourceText": "Hold your breath gently for a count of 7. Don't strain, keep your body relaxed.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "30215bd73cabf25e99388593c39f5ea119673892b8cb04ca17231b98c965bcbc",
+          "sourceText": "Hold for 7 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "0dff3e2b44bcf0861359945c7404341a3730d54a192c82105cec4cdc31ea2411",
+          "sourceText": "7 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "edc1941d841b80faf21ba0d327b8bb9cfd4f8f29ad6c9cf4d69fe5f250a2e835",
+          "sourceText": "Exhale completely through your mouth with a whooshing sound for a count of 8.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "1b490af1be9a4dd46e56364696e7b3ea23111a9235e98ed6a91d11cfa65aeb8d",
+          "sourceText": "Exhale for 8 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "8290a639dc569f2be3d3319de567cca25e237e934a811fef173f421bdd61a2bf",
+          "sourceText": "8 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].instruction": {
+          "sourceHash": "a7d6ce167d163fe6e6a8c836d15292a51f45020132eecd34d7cc409d984a9a9a",
+          "sourceText": "This is one breath cycle. Complete 4 full cycles. As you become comfortable, you can increase to 8 cycles.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].name": {
+          "sourceHash": "d1eb08ba7146f42b66708ff3f5f9a0275f87d695ac2194b365f3af5be76e2835",
+          "sourceText": "Repeat for 4 cycles",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].timing": {
+          "sourceHash": "1506e6bf6c104ee81b8b643d29a8161b8f765bbe37e1bebe07f8852d4a570ce9",
+          "sourceText": "About 2 minutes for 4 cycles",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "1546c844ec1aae11459287bfa97515b348c21e1d51a992faf92e0010a2bb8155",
+          "sourceText": "The ratio 4:7:8 matters more than the exact seconds. If counts feel too long, speed up proportionally",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "0ec997ef48d1f03d2b5e0d21636d1b214ec21e5141ded625f808ff42adbc54e8",
+          "sourceText": "Don't exceed 4 breath cycles for the first month of practice",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "f7d641ef3100ffd7620b8b3301f8a34a43cdabe4e6161f84194980e0ad216672",
+          "sourceText": "Track your blood pressure before and after sessions to see your response",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "7bad149563453d8c537a93487594414815ca6741c7f921c23688ecdaad0c18f0",
+          "sourceText": "Practice at the same times each day to build the habit",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "4a7b1ca82e727cad155f8008b49e276f51899563cd81d674b2486258eec05f62",
+          "sourceText": "Reduce blood pressure by up to 10 points without medication. Dr. Weil's 4-7-8 breathing technique backed by Harvard research. Free guided visualizer. Start today.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "e0041bf8fcc594869aad1e622bf4b380dc0a4ed90dfee7435ee31d08f8e06d2b",
+          "sourceText": "Harvard research: slow breathing can reduce blood pressure by up to 10 points. Dr. Weil's 4-7-8 technique. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "f3d7d63902a014a5be626780ea40859a9d00cb453e3eb93543669ecf4dc09168",
+          "sourceText": "Lower Blood Pressure Naturally: Reduce BP by 10 Points",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "3b435bd07182347e2df0bcf99d2f3a545d46fab97f790df87641bd52a75740e5",
+          "sourceText": "Lower Blood Pressure Naturally: 4-7-8 Breathing Reduces BP by 10 Points | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "cf16c92becfc4b3bec1401d673150582f0a160f61522113fe36e0182a160c87f",
+          "sourceText": "Harvard research: Dr. Weil's 4-7-8 breathing can reduce BP by up to 10 points. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "f3d7d63902a014a5be626780ea40859a9d00cb453e3eb93543669ecf4dc09168",
+          "sourceText": "Lower Blood Pressure by 10 Points - 4-7-8 Breathing",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "9b6ad482f89b86fdc7e100b90875fee25796894c9968e122e83cab1f2025a9b9",
+          "sourceText": "When you're stressed, your sympathetic nervous system triggers blood vessel constriction, raising pressure. Chronic stress keeps this system in overdrive. Shallow chest breathing (common when anxious or sedentary) compounds the problem by maintaining high sympathetic tone. Over time, your body forgets how to fully relax.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "f5b7ce3520cabfb30c3a98154a516af2bed65875a1c4d55e3a580286a23f34f3",
+          "sourceText": "How Stress Keeps Blood Pressure High",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "6807ac3ed6a13e88ffa0f6e261a56cfbeb3deee093179f9935a2c2021fe76857",
+          "sourceText": "Persistent tension and stress",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "bbbb9ee311c5705aa315691712a533b2dace50ffe89a08043f5cd580992bce32",
+          "sourceText": "Shallow, chest-level breathing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "9147043f43a514744ee3dcd2042ed2b3f3f8a06f6904eb6d3473c8b5acaa3b87",
+          "sourceText": "Difficulty relaxing even when resting",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "d5cf41c79f49e0a02dbf2749e48ca9ab07537b563a70e5fcb3207fc8d797a3e7",
+          "sourceText": "Poor sleep quality",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "1de7b550e3ddc6083a5c8c899e407aa34d46214b0047c5c4f845dfd9b23862c2",
+          "sourceText": "Feeling 'on edge' throughout the day",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "9eb7063c9e8b2c55e1ac27aa7ab46c514fa9e8322a088840d858e4234b0b72ae",
+          "sourceText": "Harvard cardiologist explains how slow, deep breathing can lower systolic pressure by up to 10 points.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "ac3fcb2e26f123fd9bfd520792f5ff51f20bddb23ffc8c429a24cd1fc685ff04",
+          "sourceText": "Breathing exercises to lower your blood pressure",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "471c63fe4e0ba16ff8af4fce02cb9d823e0d48ed89f8b448c5ca73916e6f2b6b",
+          "sourceText": "Dr. Herbert Benson's research on the relaxation response and blood pressure reduction.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "2d5f0bae82a77ab7a8a9f9bd71e071423cddfaefa4e52cd4439e55d0a6f403e7",
+          "sourceText": "Meditation and a relaxation technique to lower blood pressure",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "6f49f1b3f7aa41b4b3c6b5bba1c91dc3558ec367e80914500a551e3e26bd40c5",
+          "sourceText": "Original demonstration and explanation of the 4-7-8 technique by Dr. Andrew Weil.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "4667c02428b0844f077b8ba4261d284f6cddd6be89cddfa28df2053e7dee6e6b",
+          "sourceText": "Video: Dr. Weil's Breathing Exercises: 4-7-8 Breath",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "bb9664c1908acb6d4f07c62fef2631bceeab59edbe4826a5fa6a5cb1d6ab44c6",
+          "sourceText": "Meta-analysis of 20 studies showing breathing exercises reduce both systolic and diastolic blood pressure.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "6ed8456bbfb67d4d74cb3d738e11a5ca8c1a4f4b5543083d82b45e960b51bd03",
+          "sourceText": "Effect of breathing exercises on blood pressure and heart rate: A systematic review and meta-analysis",
+          "status": "route-catalog-exact"
+        },
+        "references[4].summary": {
+          "sourceHash": "2fe3b5c8a44f57c8348bb8473c19aad2b72ed89837177f84c031d29e0c55521d",
+          "sourceText": "Overview of evidence-based breathing techniques for blood pressure management.",
+          "status": "route-catalog-exact"
+        },
+        "references[4].title": {
+          "sourceHash": "789567bf83fbe33ba22e50e0ef66429be3eb9163b5ecdb168956ac61c34142cb",
+          "sourceText": "6 Breathing Exercises That Could Help Lower Your Blood Pressure",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "a8f34ed5397ca32dc8e8a747014b394bfebd681eef08ee2c5d38dba790295b95",
+          "sourceText": "Practice with the full-screen 4-7-8 Breathing visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "b37c317f57e9ddf96b3378d6390d560b1156b051e2fae9b2c21e72df8e21b9ae",
+          "sourceText": "Poor sleep can raise blood pressure. See our guide for better rest with the same 4-7-8 technique",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "fef57a81025fd1f81539960cf612514ab062c3b65e5ec68c730586679890e452",
+          "sourceText": "Gentle exercise supports cardiovascular health. Learn recovery breathing for after workouts",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "3ebd0197bc4b20474c6fb2a2583db4ad9fda05223390e82b9b3402a796d2b52f",
+          "sourceText": "The Cardiovascular Science",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "504306f92a24f78d2131eb3ec958b6991add8ab8a3458cefe1b45a65871ed4b3",
+          "sourceText": "Slow breathing (under 10 breaths per minute) improves the sensitivity of baroreceptors, pressure sensors in your arteries that help regulate blood pressure. Better baroreflex sensitivity means more responsive blood pressure control.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "4aca46cd8159dfec3c02df4bc9c84dd29fe092e77ed0e373099736eb0e3bce02",
+          "sourceText": "Baroreflex Sensitivity",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "0c2191a7661857cc59de14586dc161c1502b795d8a4052e4367041ec2ba5d3ae",
+          "sourceText": "Nasal breathing stimulates the release of nitric oxide, a vasodilator that relaxes blood vessel walls and improves blood flow. This is one reason why nasal breathing is preferred over mouth breathing.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "6f36ab123358abb01588158e998772b724ee254b92dd12cba2ada8e7e9304fd3",
+          "sourceText": "Nitric Oxide Release",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "2ecbc7d979fad5f5f0416d1b5b823044cebd594b5b6254093bf57434b1c115e2",
+          "sourceText": "Long exhales activate the vagus nerve, shifting your nervous system from 'fight or flight' to 'rest and digest.' This reduces heart rate and allows blood vessels to dilate.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "43e10b744feece4a0b7ca5f77fc5d0f640770e6f3b5c229ede1793226bd900fc",
+          "sourceText": "Parasympathetic Activation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "9b166ab4626e6070d2dc77ec341d20c6cdd2ed7ac5e13b79b40ae1f1f26a675c",
+          "sourceText": "Regular slow breathing practice has been shown to reduce cortisol, the stress hormone that contributes to elevated blood pressure when chronically elevated.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "dcc9ee3fa892989762782552fcc402ebb657c10a2b33f3f51dd787dbe7c33eec",
+          "sourceText": "Cortisol Reduction",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "5c251aa4fa3578c97f13c93d378edbbeda15b4cb6df93be91d4737f86555a53f",
+          "sourceText": "Developed by Dr. Andrew Weil, a Harvard-trained physician and founder of the Arizona Center for Integrative Medicine, the 4-7-8 technique emphasizes a long exhale to trigger the parasympathetic nervous system. Dr. Weil calls it a 'natural tranquilizer for the nervous system.'",
+          "status": "route-catalog-exact"
+        },
+        "solution.heading": {
+          "sourceHash": "06c4e59b6d80b9ba0f29a86718c9cf51fb3339f2f14c400138fb43882880baf7",
+          "sourceText": "The 4-7-8 Breathing Technique",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "2be76a5a99c6ca622d4cd02e5407b640af37a8dda206153325b5a88fd71952ad",
+          "sourceText": "The extended exhale (8 counts) is the key. When you exhale slowly, your heart rate naturally decreases. This is called respiratory sinus arrhythmia. The 7-count hold allows gases to equilibrate in your lungs. Together, these phases shift your autonomic balance toward relaxation.",
+          "status": "route-catalog-normalized"
+        }
+      }
+    },
+    "ja-jp": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "1a97b917fd6867b3617fd65c0d13e146b0473307ff270ce925a69aa3d7d003d5",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "e57ac85f9a9b7bc50ab93392ac397ed10edec67b9f1376e7e86112b0976916b9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "7c4312464db54ee766e7ebdb52d452b5d528ee1cdd29dbf0af68ca20114884f5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-running-title": {
+          "sourceHash": "1fb54d2b1733f17a0ac791891630eb446ddae518a008d3d8218698cecb2a383d",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-4-7-8-timer": {
+          "sourceHash": "555a21b155ab6f695e3d171983318ca957da451e1559229d633d1b28c2edd88c",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "0583337d2276c1c99cbb119559bc5d158c5be5253d6107699727b93213a04fc3",
+          "sourceText": "This breathing exercise is a complementary practice, not a replacement for medical treatment. If you have high blood pressure, continue taking prescribed medications and consult your doctor before making changes to your health routine. Never discontinue medication without medical supervision.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "d6263abd9f967a8b038d78a613438d33adb96eeccabf3122bdd7a1bd42d0bf72",
+          "sourceText": "Some people notice an immediate drop of a few points right after a session. [For sustained improvements, most studies show benefits after 4-8 weeks of daily practice](https://doi.org/10.1016/j.ctim.2019.03.005). Track your readings to see your personal response, everyone's different.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[0].question": {
+          "sourceHash": "530d9805150a9f4f2a063f545b558e845ec2bde917628a6158396b33f98e61b7",
+          "sourceText": "How long until I see blood pressure changes?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "b9d9f31e51fd1e938cb4499814642d9dc84f3c3fdf71e4b91926762332e1fe33",
+          "sourceText": "No. [Breathing exercises are complementary. They work alongside medication and lifestyle changes, not instead of them](https://doi.org/10.1001/jamainternmed.2014.4336). Never reduce or stop medication without your doctor's guidance. That said, some patients working with their doctors have been able to reduce dosages over time with consistent lifestyle interventions including breathing practice.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[1].question": {
+          "sourceHash": "f16debe6fd9486f0376738ba70fa075817f59adda548bef8a11e67e591beeeb4",
+          "sourceText": "Can breathing exercises replace my blood pressure medication?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "10b370593682fcee717e99d69fe826963a630316dc62fa735fb8cb0c320c554b",
+          "sourceText": "For most people, yes. However, if you have severe hypertension, heart conditions, or feel dizzy during holds, shorten or skip the hold phase. A 4-4-8 pattern (no hold) still provides benefits from the extended exhale. Always consult your doctor if you have concerns.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "07883f43797775d32ee051406424d1dbc0275963d76cecf640c77785f3101fa0",
+          "sourceText": "Is the 7-second breath hold safe for me?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "0770c8313cbccf32e76132749a36616097a980d6be7c9dee1a7dc0da9823f5a5",
+          "sourceText": "Nasal breathing stimulates nitric oxide production in your sinuses. Nitric oxide is a vasodilator. It helps relax blood vessel walls and improve blood flow. This is one of the mechanisms by which slow nasal breathing supports healthy blood pressure.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "89e93437283a8ac75b5512359b5d9eef84fe2acc8e6d1636058fe09d1ba2712b",
+          "sourceText": "Why is nose breathing important?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "70bce2b035f1d30912fdc54f760f50c5402a0e91759be5e28e737ddf65267bb3",
+          "sourceText": "[Breathing exercises work best as part of a comprehensive approach](https://doi.org/10.1161/HYP.0b013e318293645f): regular physical activity, reducing sodium intake, maintaining a healthy weight, limiting alcohol, managing stress, and getting adequate sleep. The DASH diet and Mediterranean diet are both associated with lower blood pressure.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[4].question": {
+          "sourceHash": "f449d8bb4985723f0115859a16373aae6b787e5070cfb747d2799259ee713a30",
+          "sourceText": "What else should I do alongside breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "f22aceae95d41ff8917524ed013c4ee89153461f090f5a28835538598d376832",
+          "sourceText": "High blood pressure often has no symptoms, but chronic stress and shallow breathing silently keep your blood vessels constricted. The 4-7-8 breathing technique, developed by Harvard-trained physician Dr. Andrew Weil, offers a drug-free way to activate your body's natural relaxation response and support healthier blood pressure.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "165a54ca2fc804949b9bb690d450e1d9ee5814928000f79a2fa44cf1777eba7c",
+          "sourceText": "A research-informed breathing technique that supports healthier blood pressure when practiced regularly",
+          "status": "repo-reviewed-manual"
+        },
+        "hero.title": {
+          "sourceHash": "518144fefb7098ab2ea457c58ea5d3dacbe4e73a98483ebc692d35d93220c691",
+          "sourceText": "Lower Your Blood Pressure Naturally with 4-7-8 Breathing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "3e334e0bb6b001ba74ba2a4e833e82b6e17e56b6efc68463e0e985d8af931182",
+          "sourceText": "Practice twice daily, morning and evening work best. Consistency matters more than duration.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "bfde00ec94e5c48a94631bc687d14c357c7ab77f11c3a8a338d725782b8ad731",
+          "sourceText": "Choose your times",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "27f1af80c002878c3208dba875c105092d5fba0ce5851ebba6587686c6e935de",
+          "sourceText": "Morning + Evening",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "f98e0e49c08b4da8d548c95144c5bb5fca6922fde5d751c3b062177eabfb4436",
+          "sourceText": "Sit with your back supported or lie down. Place the tip of your tongue against the ridge of tissue behind your upper front teeth (you'll keep it there throughout).",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "0d0651e07bb65785ca881e1fd4cef3ae0fc8d5e7dc3efdf37ab97bb69cb56f0f",
+          "sourceText": "Get comfortable",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "f3d19541f3a5a842ce81be1a788750b3c7ae27c6328e6829ef0ab6e95ba1fae5",
+          "sourceText": "30 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "14bf7739812c70db33bb5445458830c143014af26c82ec74da2956c6cf2b12ba",
+          "sourceText": "Make a whooshing sound as you exhale through your mouth around your tongue. Empty your lungs fully.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "88caa787124d1f4d678cc11718b07eaac469fb0132a83151411d11f88e96866d",
+          "sourceText": "Exhale completely",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "ab71b8d9a57b88652f4bf7894020c3dc26cad7f74dedc3b9333bc8b4c621aaf8",
+          "sourceText": "Start position",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "6aeecb5f90e23b38edf46d3a4abe3a35bf46a8a7e874dbdb78eba8b945d9d55d",
+          "sourceText": "Close your mouth. Inhale quietly through your nose while counting to 4.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "f320adbe95302f1b17c6fdad23ce40670528de85abb9b3a7647531643a809031",
+          "sourceText": "Inhale for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "f2cbc1504cf25fb005baf3da8c7e607cdf8dcc3277577e6b441b9428bdba068c",
+          "sourceText": "Hold your breath gently for a count of 7. Don't strain, keep your body relaxed.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "30215bd73cabf25e99388593c39f5ea119673892b8cb04ca17231b98c965bcbc",
+          "sourceText": "Hold for 7 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "0dff3e2b44bcf0861359945c7404341a3730d54a192c82105cec4cdc31ea2411",
+          "sourceText": "7 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "edc1941d841b80faf21ba0d327b8bb9cfd4f8f29ad6c9cf4d69fe5f250a2e835",
+          "sourceText": "Exhale completely through your mouth with a whooshing sound for a count of 8.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "1b490af1be9a4dd46e56364696e7b3ea23111a9235e98ed6a91d11cfa65aeb8d",
+          "sourceText": "Exhale for 8 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "8290a639dc569f2be3d3319de567cca25e237e934a811fef173f421bdd61a2bf",
+          "sourceText": "8 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].instruction": {
+          "sourceHash": "a7d6ce167d163fe6e6a8c836d15292a51f45020132eecd34d7cc409d984a9a9a",
+          "sourceText": "This is one breath cycle. Complete 4 full cycles. As you become comfortable, you can increase to 8 cycles.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].name": {
+          "sourceHash": "d1eb08ba7146f42b66708ff3f5f9a0275f87d695ac2194b365f3af5be76e2835",
+          "sourceText": "Repeat for 4 cycles",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].timing": {
+          "sourceHash": "1506e6bf6c104ee81b8b643d29a8161b8f765bbe37e1bebe07f8852d4a570ce9",
+          "sourceText": "About 2 minutes for 4 cycles",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "1546c844ec1aae11459287bfa97515b348c21e1d51a992faf92e0010a2bb8155",
+          "sourceText": "The ratio 4:7:8 matters more than the exact seconds. If counts feel too long, speed up proportionally",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "0ec997ef48d1f03d2b5e0d21636d1b214ec21e5141ded625f808ff42adbc54e8",
+          "sourceText": "Don't exceed 4 breath cycles for the first month of practice",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "f7d641ef3100ffd7620b8b3301f8a34a43cdabe4e6161f84194980e0ad216672",
+          "sourceText": "Track your blood pressure before and after sessions to see your response",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "7bad149563453d8c537a93487594414815ca6741c7f921c23688ecdaad0c18f0",
+          "sourceText": "Practice at the same times each day to build the habit",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "4a7b1ca82e727cad155f8008b49e276f51899563cd81d674b2486258eec05f62",
+          "sourceText": "Reduce blood pressure by up to 10 points without medication. Dr. Weil's 4-7-8 breathing technique backed by Harvard research. Free guided visualizer. Start today.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "e0041bf8fcc594869aad1e622bf4b380dc0a4ed90dfee7435ee31d08f8e06d2b",
+          "sourceText": "Harvard research: slow breathing can reduce blood pressure by up to 10 points. Dr. Weil's 4-7-8 technique. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "f3d7d63902a014a5be626780ea40859a9d00cb453e3eb93543669ecf4dc09168",
+          "sourceText": "Lower Blood Pressure Naturally: Reduce BP by 10 Points",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "3b435bd07182347e2df0bcf99d2f3a545d46fab97f790df87641bd52a75740e5",
+          "sourceText": "Lower Blood Pressure Naturally: 4-7-8 Breathing Reduces BP by 10 Points | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "cf16c92becfc4b3bec1401d673150582f0a160f61522113fe36e0182a160c87f",
+          "sourceText": "Harvard research: Dr. Weil's 4-7-8 breathing can reduce BP by up to 10 points. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "f3d7d63902a014a5be626780ea40859a9d00cb453e3eb93543669ecf4dc09168",
+          "sourceText": "Lower Blood Pressure by 10 Points - 4-7-8 Breathing",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "9b6ad482f89b86fdc7e100b90875fee25796894c9968e122e83cab1f2025a9b9",
+          "sourceText": "When you're stressed, your sympathetic nervous system triggers blood vessel constriction, raising pressure. Chronic stress keeps this system in overdrive. Shallow chest breathing (common when anxious or sedentary) compounds the problem by maintaining high sympathetic tone. Over time, your body forgets how to fully relax.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "f5b7ce3520cabfb30c3a98154a516af2bed65875a1c4d55e3a580286a23f34f3",
+          "sourceText": "How Stress Keeps Blood Pressure High",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "6807ac3ed6a13e88ffa0f6e261a56cfbeb3deee093179f9935a2c2021fe76857",
+          "sourceText": "Persistent tension and stress",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "bbbb9ee311c5705aa315691712a533b2dace50ffe89a08043f5cd580992bce32",
+          "sourceText": "Shallow, chest-level breathing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "9147043f43a514744ee3dcd2042ed2b3f3f8a06f6904eb6d3473c8b5acaa3b87",
+          "sourceText": "Difficulty relaxing even when resting",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "d5cf41c79f49e0a02dbf2749e48ca9ab07537b563a70e5fcb3207fc8d797a3e7",
+          "sourceText": "Poor sleep quality",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "1de7b550e3ddc6083a5c8c899e407aa34d46214b0047c5c4f845dfd9b23862c2",
+          "sourceText": "Feeling 'on edge' throughout the day",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "9eb7063c9e8b2c55e1ac27aa7ab46c514fa9e8322a088840d858e4234b0b72ae",
+          "sourceText": "Harvard cardiologist explains how slow, deep breathing can lower systolic pressure by up to 10 points.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "ac3fcb2e26f123fd9bfd520792f5ff51f20bddb23ffc8c429a24cd1fc685ff04",
+          "sourceText": "Breathing exercises to lower your blood pressure",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "471c63fe4e0ba16ff8af4fce02cb9d823e0d48ed89f8b448c5ca73916e6f2b6b",
+          "sourceText": "Dr. Herbert Benson's research on the relaxation response and blood pressure reduction.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "2d5f0bae82a77ab7a8a9f9bd71e071423cddfaefa4e52cd4439e55d0a6f403e7",
+          "sourceText": "Meditation and a relaxation technique to lower blood pressure",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "6f49f1b3f7aa41b4b3c6b5bba1c91dc3558ec367e80914500a551e3e26bd40c5",
+          "sourceText": "Original demonstration and explanation of the 4-7-8 technique by Dr. Andrew Weil.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "4667c02428b0844f077b8ba4261d284f6cddd6be89cddfa28df2053e7dee6e6b",
+          "sourceText": "Video: Dr. Weil's Breathing Exercises: 4-7-8 Breath",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "bb9664c1908acb6d4f07c62fef2631bceeab59edbe4826a5fa6a5cb1d6ab44c6",
+          "sourceText": "Meta-analysis of 20 studies showing breathing exercises reduce both systolic and diastolic blood pressure.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "6ed8456bbfb67d4d74cb3d738e11a5ca8c1a4f4b5543083d82b45e960b51bd03",
+          "sourceText": "Effect of breathing exercises on blood pressure and heart rate: A systematic review and meta-analysis",
+          "status": "route-catalog-exact"
+        },
+        "references[4].summary": {
+          "sourceHash": "2fe3b5c8a44f57c8348bb8473c19aad2b72ed89837177f84c031d29e0c55521d",
+          "sourceText": "Overview of evidence-based breathing techniques for blood pressure management.",
+          "status": "route-catalog-exact"
+        },
+        "references[4].title": {
+          "sourceHash": "789567bf83fbe33ba22e50e0ef66429be3eb9163b5ecdb168956ac61c34142cb",
+          "sourceText": "6 Breathing Exercises That Could Help Lower Your Blood Pressure",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "a8f34ed5397ca32dc8e8a747014b394bfebd681eef08ee2c5d38dba790295b95",
+          "sourceText": "Practice with the full-screen 4-7-8 Breathing visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "b37c317f57e9ddf96b3378d6390d560b1156b051e2fae9b2c21e72df8e21b9ae",
+          "sourceText": "Poor sleep can raise blood pressure. See our guide for better rest with the same 4-7-8 technique",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "fef57a81025fd1f81539960cf612514ab062c3b65e5ec68c730586679890e452",
+          "sourceText": "Gentle exercise supports cardiovascular health. Learn recovery breathing for after workouts",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "3ebd0197bc4b20474c6fb2a2583db4ad9fda05223390e82b9b3402a796d2b52f",
+          "sourceText": "The Cardiovascular Science",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "504306f92a24f78d2131eb3ec958b6991add8ab8a3458cefe1b45a65871ed4b3",
+          "sourceText": "Slow breathing (under 10 breaths per minute) improves the sensitivity of baroreceptors, pressure sensors in your arteries that help regulate blood pressure. Better baroreflex sensitivity means more responsive blood pressure control.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "4aca46cd8159dfec3c02df4bc9c84dd29fe092e77ed0e373099736eb0e3bce02",
+          "sourceText": "Baroreflex Sensitivity",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "0c2191a7661857cc59de14586dc161c1502b795d8a4052e4367041ec2ba5d3ae",
+          "sourceText": "Nasal breathing stimulates the release of nitric oxide, a vasodilator that relaxes blood vessel walls and improves blood flow. This is one reason why nasal breathing is preferred over mouth breathing.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "6f36ab123358abb01588158e998772b724ee254b92dd12cba2ada8e7e9304fd3",
+          "sourceText": "Nitric Oxide Release",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "2ecbc7d979fad5f5f0416d1b5b823044cebd594b5b6254093bf57434b1c115e2",
+          "sourceText": "Long exhales activate the vagus nerve, shifting your nervous system from 'fight or flight' to 'rest and digest.' This reduces heart rate and allows blood vessels to dilate.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "43e10b744feece4a0b7ca5f77fc5d0f640770e6f3b5c229ede1793226bd900fc",
+          "sourceText": "Parasympathetic Activation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "9b166ab4626e6070d2dc77ec341d20c6cdd2ed7ac5e13b79b40ae1f1f26a675c",
+          "sourceText": "Regular slow breathing practice has been shown to reduce cortisol, the stress hormone that contributes to elevated blood pressure when chronically elevated.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "dcc9ee3fa892989762782552fcc402ebb657c10a2b33f3f51dd787dbe7c33eec",
+          "sourceText": "Cortisol Reduction",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "5c251aa4fa3578c97f13c93d378edbbeda15b4cb6df93be91d4737f86555a53f",
+          "sourceText": "Developed by Dr. Andrew Weil, a Harvard-trained physician and founder of the Arizona Center for Integrative Medicine, the 4-7-8 technique emphasizes a long exhale to trigger the parasympathetic nervous system. Dr. Weil calls it a 'natural tranquilizer for the nervous system.'",
+          "status": "route-catalog-exact"
+        },
+        "solution.heading": {
+          "sourceHash": "06c4e59b6d80b9ba0f29a86718c9cf51fb3339f2f14c400138fb43882880baf7",
+          "sourceText": "The 4-7-8 Breathing Technique",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "2be76a5a99c6ca622d4cd02e5407b640af37a8dda206153325b5a88fd71952ad",
+          "sourceText": "The extended exhale (8 counts) is the key. When you exhale slowly, your heart rate naturally decreases. This is called respiratory sinus arrhythmia. The 7-count hold allows gases to equilibrate in your lungs. Together, these phases shift your autonomic balance toward relaxation.",
+          "status": "route-catalog-normalized"
+        }
+      }
+    },
+    "pt-br": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "1a97b917fd6867b3617fd65c0d13e146b0473307ff270ce925a69aa3d7d003d5",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "e57ac85f9a9b7bc50ab93392ac397ed10edec67b9f1376e7e86112b0976916b9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "7c4312464db54ee766e7ebdb52d452b5d528ee1cdd29dbf0af68ca20114884f5",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-running-title": {
+          "sourceHash": "1fb54d2b1733f17a0ac791891630eb446ddae518a008d3d8218698cecb2a383d",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-4-7-8-timer": {
+          "sourceHash": "555a21b155ab6f695e3d171983318ca957da451e1559229d633d1b28c2edd88c",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "0583337d2276c1c99cbb119559bc5d158c5be5253d6107699727b93213a04fc3",
+          "sourceText": "This breathing exercise is a complementary practice, not a replacement for medical treatment. If you have high blood pressure, continue taking prescribed medications and consult your doctor before making changes to your health routine. Never discontinue medication without medical supervision.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "d6263abd9f967a8b038d78a613438d33adb96eeccabf3122bdd7a1bd42d0bf72",
+          "sourceText": "Some people notice an immediate drop of a few points right after a session. [For sustained improvements, most studies show benefits after 4-8 weeks of daily practice](https://doi.org/10.1016/j.ctim.2019.03.005). Track your readings to see your personal response, everyone's different.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[0].question": {
+          "sourceHash": "530d9805150a9f4f2a063f545b558e845ec2bde917628a6158396b33f98e61b7",
+          "sourceText": "How long until I see blood pressure changes?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "b9d9f31e51fd1e938cb4499814642d9dc84f3c3fdf71e4b91926762332e1fe33",
+          "sourceText": "No. [Breathing exercises are complementary. They work alongside medication and lifestyle changes, not instead of them](https://doi.org/10.1001/jamainternmed.2014.4336). Never reduce or stop medication without your doctor's guidance. That said, some patients working with their doctors have been able to reduce dosages over time with consistent lifestyle interventions including breathing practice.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[1].question": {
+          "sourceHash": "f16debe6fd9486f0376738ba70fa075817f59adda548bef8a11e67e591beeeb4",
+          "sourceText": "Can breathing exercises replace my blood pressure medication?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "10b370593682fcee717e99d69fe826963a630316dc62fa735fb8cb0c320c554b",
+          "sourceText": "For most people, yes. However, if you have severe hypertension, heart conditions, or feel dizzy during holds, shorten or skip the hold phase. A 4-4-8 pattern (no hold) still provides benefits from the extended exhale. Always consult your doctor if you have concerns.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].question": {
+          "sourceHash": "07883f43797775d32ee051406424d1dbc0275963d76cecf640c77785f3101fa0",
+          "sourceText": "Is the 7-second breath hold safe for me?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "0770c8313cbccf32e76132749a36616097a980d6be7c9dee1a7dc0da9823f5a5",
+          "sourceText": "Nasal breathing stimulates nitric oxide production in your sinuses. Nitric oxide is a vasodilator. It helps relax blood vessel walls and improve blood flow. This is one of the mechanisms by which slow nasal breathing supports healthy blood pressure.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "89e93437283a8ac75b5512359b5d9eef84fe2acc8e6d1636058fe09d1ba2712b",
+          "sourceText": "Why is nose breathing important?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "70bce2b035f1d30912fdc54f760f50c5402a0e91759be5e28e737ddf65267bb3",
+          "sourceText": "[Breathing exercises work best as part of a comprehensive approach](https://doi.org/10.1161/HYP.0b013e318293645f): regular physical activity, reducing sodium intake, maintaining a healthy weight, limiting alcohol, managing stress, and getting adequate sleep. The DASH diet and Mediterranean diet are both associated with lower blood pressure.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[4].question": {
+          "sourceHash": "f449d8bb4985723f0115859a16373aae6b787e5070cfb747d2799259ee713a30",
+          "sourceText": "What else should I do alongside breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "f22aceae95d41ff8917524ed013c4ee89153461f090f5a28835538598d376832",
+          "sourceText": "High blood pressure often has no symptoms, but chronic stress and shallow breathing silently keep your blood vessels constricted. The 4-7-8 breathing technique, developed by Harvard-trained physician Dr. Andrew Weil, offers a drug-free way to activate your body's natural relaxation response and support healthier blood pressure.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "165a54ca2fc804949b9bb690d450e1d9ee5814928000f79a2fa44cf1777eba7c",
+          "sourceText": "A research-informed breathing technique that supports healthier blood pressure when practiced regularly",
+          "status": "repo-reviewed-manual"
+        },
+        "hero.title": {
+          "sourceHash": "518144fefb7098ab2ea457c58ea5d3dacbe4e73a98483ebc692d35d93220c691",
+          "sourceText": "Lower Your Blood Pressure Naturally with 4-7-8 Breathing",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "3e334e0bb6b001ba74ba2a4e833e82b6e17e56b6efc68463e0e985d8af931182",
+          "sourceText": "Practice twice daily, morning and evening work best. Consistency matters more than duration.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "bfde00ec94e5c48a94631bc687d14c357c7ab77f11c3a8a338d725782b8ad731",
+          "sourceText": "Choose your times",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "27f1af80c002878c3208dba875c105092d5fba0ce5851ebba6587686c6e935de",
+          "sourceText": "Morning + Evening",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "f98e0e49c08b4da8d548c95144c5bb5fca6922fde5d751c3b062177eabfb4436",
+          "sourceText": "Sit with your back supported or lie down. Place the tip of your tongue against the ridge of tissue behind your upper front teeth (you'll keep it there throughout).",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "0d0651e07bb65785ca881e1fd4cef3ae0fc8d5e7dc3efdf37ab97bb69cb56f0f",
+          "sourceText": "Get comfortable",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "f3d19541f3a5a842ce81be1a788750b3c7ae27c6328e6829ef0ab6e95ba1fae5",
+          "sourceText": "30 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "14bf7739812c70db33bb5445458830c143014af26c82ec74da2956c6cf2b12ba",
+          "sourceText": "Make a whooshing sound as you exhale through your mouth around your tongue. Empty your lungs fully.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "88caa787124d1f4d678cc11718b07eaac469fb0132a83151411d11f88e96866d",
+          "sourceText": "Exhale completely",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "ab71b8d9a57b88652f4bf7894020c3dc26cad7f74dedc3b9333bc8b4c621aaf8",
+          "sourceText": "Start position",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "6aeecb5f90e23b38edf46d3a4abe3a35bf46a8a7e874dbdb78eba8b945d9d55d",
+          "sourceText": "Close your mouth. Inhale quietly through your nose while counting to 4.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "f320adbe95302f1b17c6fdad23ce40670528de85abb9b3a7647531643a809031",
+          "sourceText": "Inhale for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "f2cbc1504cf25fb005baf3da8c7e607cdf8dcc3277577e6b441b9428bdba068c",
+          "sourceText": "Hold your breath gently for a count of 7. Don't strain, keep your body relaxed.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "30215bd73cabf25e99388593c39f5ea119673892b8cb04ca17231b98c965bcbc",
+          "sourceText": "Hold for 7 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "0dff3e2b44bcf0861359945c7404341a3730d54a192c82105cec4cdc31ea2411",
+          "sourceText": "7 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "edc1941d841b80faf21ba0d327b8bb9cfd4f8f29ad6c9cf4d69fe5f250a2e835",
+          "sourceText": "Exhale completely through your mouth with a whooshing sound for a count of 8.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "1b490af1be9a4dd46e56364696e7b3ea23111a9235e98ed6a91d11cfa65aeb8d",
+          "sourceText": "Exhale for 8 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "8290a639dc569f2be3d3319de567cca25e237e934a811fef173f421bdd61a2bf",
+          "sourceText": "8 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].instruction": {
+          "sourceHash": "a7d6ce167d163fe6e6a8c836d15292a51f45020132eecd34d7cc409d984a9a9a",
+          "sourceText": "This is one breath cycle. Complete 4 full cycles. As you become comfortable, you can increase to 8 cycles.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].name": {
+          "sourceHash": "d1eb08ba7146f42b66708ff3f5f9a0275f87d695ac2194b365f3af5be76e2835",
+          "sourceText": "Repeat for 4 cycles",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].timing": {
+          "sourceHash": "1506e6bf6c104ee81b8b643d29a8161b8f765bbe37e1bebe07f8852d4a570ce9",
+          "sourceText": "About 2 minutes for 4 cycles",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "1546c844ec1aae11459287bfa97515b348c21e1d51a992faf92e0010a2bb8155",
+          "sourceText": "The ratio 4:7:8 matters more than the exact seconds. If counts feel too long, speed up proportionally",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "0ec997ef48d1f03d2b5e0d21636d1b214ec21e5141ded625f808ff42adbc54e8",
+          "sourceText": "Don't exceed 4 breath cycles for the first month of practice",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "f7d641ef3100ffd7620b8b3301f8a34a43cdabe4e6161f84194980e0ad216672",
+          "sourceText": "Track your blood pressure before and after sessions to see your response",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "7bad149563453d8c537a93487594414815ca6741c7f921c23688ecdaad0c18f0",
+          "sourceText": "Practice at the same times each day to build the habit",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "4a7b1ca82e727cad155f8008b49e276f51899563cd81d674b2486258eec05f62",
+          "sourceText": "Reduce blood pressure by up to 10 points without medication. Dr. Weil's 4-7-8 breathing technique backed by Harvard research. Free guided visualizer. Start today.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "e0041bf8fcc594869aad1e622bf4b380dc0a4ed90dfee7435ee31d08f8e06d2b",
+          "sourceText": "Slow breathing supports healthier blood pressure. Dr. Weil's 4-7-8 technique with a free guided visualizer.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "f3d7d63902a014a5be626780ea40859a9d00cb453e3eb93543669ecf4dc09168",
+          "sourceText": "Lower Blood Pressure Naturally: Reduce BP by 10 Points",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "3b435bd07182347e2df0bcf99d2f3a545d46fab97f790df87641bd52a75740e5",
+          "sourceText": "Lower Blood Pressure Naturally: 4-7-8 Breathing Reduces BP by 10 Points | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "cf16c92becfc4b3bec1401d673150582f0a160f61522113fe36e0182a160c87f",
+          "sourceText": "Slow breathing supports healthier blood pressure. Dr. Weil's 4-7-8 technique. Free visualizer.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "f3d7d63902a014a5be626780ea40859a9d00cb453e3eb93543669ecf4dc09168",
+          "sourceText": "Lower Blood Pressure by 10 Points - 4-7-8 Breathing",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "9b6ad482f89b86fdc7e100b90875fee25796894c9968e122e83cab1f2025a9b9",
+          "sourceText": "When you're stressed, your sympathetic nervous system triggers blood vessel constriction, raising pressure. Chronic stress keeps this system in overdrive. Shallow chest breathing (common when anxious or sedentary) compounds the problem by maintaining high sympathetic tone. Over time, your body forgets how to fully relax.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "f5b7ce3520cabfb30c3a98154a516af2bed65875a1c4d55e3a580286a23f34f3",
+          "sourceText": "How Stress Keeps Blood Pressure High",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "6807ac3ed6a13e88ffa0f6e261a56cfbeb3deee093179f9935a2c2021fe76857",
+          "sourceText": "Persistent tension and stress",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "bbbb9ee311c5705aa315691712a533b2dace50ffe89a08043f5cd580992bce32",
+          "sourceText": "Shallow, chest-level breathing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "9147043f43a514744ee3dcd2042ed2b3f3f8a06f6904eb6d3473c8b5acaa3b87",
+          "sourceText": "Difficulty relaxing even when resting",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "d5cf41c79f49e0a02dbf2749e48ca9ab07537b563a70e5fcb3207fc8d797a3e7",
+          "sourceText": "Poor sleep quality",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "1de7b550e3ddc6083a5c8c899e407aa34d46214b0047c5c4f845dfd9b23862c2",
+          "sourceText": "Feeling 'on edge' throughout the day",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "9eb7063c9e8b2c55e1ac27aa7ab46c514fa9e8322a088840d858e4234b0b72ae",
+          "sourceText": "Harvard cardiologist explains how slow, deep breathing can lower systolic pressure by up to 10 points.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "ac3fcb2e26f123fd9bfd520792f5ff51f20bddb23ffc8c429a24cd1fc685ff04",
+          "sourceText": "Breathing exercises to lower your blood pressure",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "471c63fe4e0ba16ff8af4fce02cb9d823e0d48ed89f8b448c5ca73916e6f2b6b",
+          "sourceText": "Dr. Herbert Benson's research on the relaxation response and blood pressure reduction.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "2d5f0bae82a77ab7a8a9f9bd71e071423cddfaefa4e52cd4439e55d0a6f403e7",
+          "sourceText": "Meditation and a relaxation technique to lower blood pressure",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "6f49f1b3f7aa41b4b3c6b5bba1c91dc3558ec367e80914500a551e3e26bd40c5",
+          "sourceText": "Original demonstration and explanation of the 4-7-8 technique by Dr. Andrew Weil.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "4667c02428b0844f077b8ba4261d284f6cddd6be89cddfa28df2053e7dee6e6b",
+          "sourceText": "Video: Dr. Weil's Breathing Exercises: 4-7-8 Breath",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "bb9664c1908acb6d4f07c62fef2631bceeab59edbe4826a5fa6a5cb1d6ab44c6",
+          "sourceText": "Meta-analysis of 20 studies showing breathing exercises reduce both systolic and diastolic blood pressure.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "6ed8456bbfb67d4d74cb3d738e11a5ca8c1a4f4b5543083d82b45e960b51bd03",
+          "sourceText": "Effect of breathing exercises on blood pressure and heart rate: A systematic review and meta-analysis",
+          "status": "route-catalog-exact"
+        },
+        "references[4].summary": {
+          "sourceHash": "2fe3b5c8a44f57c8348bb8473c19aad2b72ed89837177f84c031d29e0c55521d",
+          "sourceText": "Overview of evidence-based breathing techniques for blood pressure management.",
+          "status": "route-catalog-exact"
+        },
+        "references[4].title": {
+          "sourceHash": "789567bf83fbe33ba22e50e0ef66429be3eb9163b5ecdb168956ac61c34142cb",
+          "sourceText": "6 Breathing Exercises That Could Help Lower Your Blood Pressure",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "a8f34ed5397ca32dc8e8a747014b394bfebd681eef08ee2c5d38dba790295b95",
+          "sourceText": "Practice with the full-screen 4-7-8 Breathing visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "b37c317f57e9ddf96b3378d6390d560b1156b051e2fae9b2c21e72df8e21b9ae",
+          "sourceText": "Poor sleep can raise blood pressure. See our guide for better rest with the same 4-7-8 technique",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "fef57a81025fd1f81539960cf612514ab062c3b65e5ec68c730586679890e452",
+          "sourceText": "Gentle exercise supports cardiovascular health. Learn recovery breathing for after workouts",
+          "status": "route-catalog-exact"
+        },
+        "science.heading": {
+          "sourceHash": "3ebd0197bc4b20474c6fb2a2583db4ad9fda05223390e82b9b3402a796d2b52f",
+          "sourceText": "The Cardiovascular Science",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "504306f92a24f78d2131eb3ec958b6991add8ab8a3458cefe1b45a65871ed4b3",
+          "sourceText": "Slow breathing (under 10 breaths per minute) improves the sensitivity of baroreceptors, pressure sensors in your arteries that help regulate blood pressure. Better baroreflex sensitivity means more responsive blood pressure control.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "4aca46cd8159dfec3c02df4bc9c84dd29fe092e77ed0e373099736eb0e3bce02",
+          "sourceText": "Baroreflex Sensitivity",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "0c2191a7661857cc59de14586dc161c1502b795d8a4052e4367041ec2ba5d3ae",
+          "sourceText": "Nasal breathing stimulates the release of nitric oxide, a vasodilator that relaxes blood vessel walls and improves blood flow. This is one reason why nasal breathing is preferred over mouth breathing.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "6f36ab123358abb01588158e998772b724ee254b92dd12cba2ada8e7e9304fd3",
+          "sourceText": "Nitric Oxide Release",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "2ecbc7d979fad5f5f0416d1b5b823044cebd594b5b6254093bf57434b1c115e2",
+          "sourceText": "Long exhales activate the vagus nerve, shifting your nervous system from 'fight or flight' to 'rest and digest.' This reduces heart rate and allows blood vessels to dilate.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "43e10b744feece4a0b7ca5f77fc5d0f640770e6f3b5c229ede1793226bd900fc",
+          "sourceText": "Parasympathetic Activation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "9b166ab4626e6070d2dc77ec341d20c6cdd2ed7ac5e13b79b40ae1f1f26a675c",
+          "sourceText": "Regular slow breathing practice has been shown to reduce cortisol, the stress hormone that contributes to elevated blood pressure when chronically elevated.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "dcc9ee3fa892989762782552fcc402ebb657c10a2b33f3f51dd787dbe7c33eec",
+          "sourceText": "Cortisol Reduction",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "5c251aa4fa3578c97f13c93d378edbbeda15b4cb6df93be91d4737f86555a53f",
+          "sourceText": "Developed by Dr. Andrew Weil, a Harvard-trained physician and founder of the Arizona Center for Integrative Medicine, the 4-7-8 technique emphasizes a long exhale to trigger the parasympathetic nervous system. Dr. Weil calls it a 'natural tranquilizer for the nervous system.'",
+          "status": "route-catalog-exact"
+        },
+        "solution.heading": {
+          "sourceHash": "06c4e59b6d80b9ba0f29a86718c9cf51fb3339f2f14c400138fb43882880baf7",
+          "sourceText": "The 4-7-8 Breathing Technique",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "2be76a5a99c6ca622d4cd02e5407b640af37a8dda206153325b5a88fd71952ad",
+          "sourceText": "The extended exhale (8 counts) is the key. When you exhale slowly, your heart rate naturally decreases. This is called respiratory sinus arrhythmia. The 7-count hold allows gases to equilibrate in your lungs. Together, these phases shift your autonomic balance toward relaxation.",
+          "status": "route-catalog-normalized"
+        }
+      }
+    }
+  },
+  "schemaVersion": 1,
+  "sourceRoute": "/for/high-blood-pressure"
+}

@@ -1,0 +1,2966 @@
+{
+  "locales": {
+    "de-de": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "f697ea4ac8f51cac028b933ad11611cd4ad6b9f675cb127969780ab63e98a4aa",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "77e3c5fdb098a727e4a3b38cb4b78ed851d9032b53bb0c59440f74b2bef1ffec",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.related-huberman-title": {
+          "sourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-box-app": {
+          "sourceHash": "7f77c1557f9441a20a2bcf9985050eae3c16380e63d8ef10af1f7aae4fdae7f4",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "e2331da2788a76ede4ddfa63f2b10094ae10a900efc4f59d432b4a5a6091e427",
+          "sourceText": "Start 2-5 minutes before you're due to speak. The calming effects kick in within 60-90 seconds and can last 15-20 minutes. If you're particularly anxious, do a longer session (5 minutes) 30 minutes before, then a quick 60-second refresher right before you go on.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].question": {
+          "sourceHash": "c533a274735df08e3408ec169c39aac4ff5bbc6507bee546ac52695bc9fbf64d",
+          "sourceText": "How far in advance should I start box breathing before a presentation?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "bf7c495151296521077a29cf75839813c295e12c84acb8d6fb012239fda99d80",
+          "sourceText": "Pause naturally. Take a sip of water or refer to your notes. Take one slow breath with a longer exhale (4 counts in, 6-8 counts out). This single breath can reset your nervous system enough to continue. For quicker relief mid-speech, try a physiological sigh: two quick inhales through your nose, then one long exhale.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "55f9ec28668089cc4dfe707d2c3325bd411f636e09dba2a88c2e23d8933b067e",
+          "sourceText": "What if I start panicking during my presentation?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "affbe5b0856b44912f14f61a4c4a1452ddb1ea1c295375d559f8a31742c48dce",
+          "sourceText": "Yes, but modify the technique. Shorten the counts to 2-3 seconds, skip the breath holds entirely, and keep the breathing light and quiet. The calming effect comes from the slow, rhythmic pattern, not from deep or forceful breathing. If you feel any discomfort, stop and return to normal breathing.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].question": {
+          "sourceHash": "d9f5645751a4bd0237e6e33ec4c35ee2c7b2199a4f360a4f746c37a1c76f9fab",
+          "sourceText": "Can I do this if I have asthma or breathing difficulties?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "ae0298a57d8bce3dbe34a5fe751f130d44494c4b261361cc5167e5f3415d53b5",
+          "sourceText": "No. Box breathing is completely invisible when done through the nose. You can practice while sitting in a meeting, standing backstage, or even walking to the podium. Keep your breathing quiet and your body relaxed, no one will know.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "0e43dc3511a8534e46c311b6f1ef86d16e88457f7653679c21038d3bad22c041",
+          "sourceText": "Will people notice I'm doing breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "9dba14dcb6d9b2c154c3021127639cc51279b8bf3cb9696f95debe389f408f14",
+          "sourceText": "Breathing techniques are highly effective for most presentation anxiety, but severe phobias may benefit from additional support like cognitive behavioral therapy (CBT) or gradual exposure practice. Box breathing is an excellent tool to use alongside other strategies. It won't eliminate all fear, but it will give you control over your physical symptoms.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "0c4d84bfc1e4c6f061774b9b4e567e58605480344d6dd5deefe49c849cb28d82",
+          "sourceText": "Does this really work for severe stage fright?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "55aadb506dbb671d3694cb758e19ac26eef7c3c48520e57339d0ce4c08526f40",
+          "sourceText": "Your heart races. Your hands shake. Your mouth goes dry. Stage fright isn't a character flaw. It's your body's ancient survival system misfiring. Box breathing, the same technique used by Navy SEALs and first responders, can interrupt this panic response in under a minute.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "c52f3499b481a65ea4d5212ee68152f690afc311697d25709a704056554142b5",
+          "sourceText": "Stop stage fright in 60 seconds with the Navy SEAL method",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+          "sourceText": "Breathing Exercises for Public Speaking",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "da0e798f4dd856ecd52b3d6eca54ac43f8b86af84b02d63ce26b33322237dee7",
+          "sourceText": "Step away if possible: a bathroom, hallway, or even your car. If you can't leave, you can do this seated and discreetly.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "d72870b7a2ea060201d56edcd10e33c324ec32bb3ab4203edd37a31a1eaa1662",
+          "sourceText": "Find your spot",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "23473f81413b94a2438214f1d869beca883d81410d376ee9280690c125967659",
+          "sourceText": "2-5 minutes before speaking",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "6a96bf54a9e70bfadf32a7cf35d820423f453b2efb27a49b8b49e2a0ff5f259c",
+          "sourceText": "Sit or stand tall. Drop your shoulders. Unclench your jaw. Place one hand on your belly to feel it rise and fall.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "837d129118bcd774dbc47d16e818abce75733dad80ed895f356001acd65b6a5e",
+          "sourceText": "Set your posture",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "f78b958d638585f732f9665c58680242b88555a32786767f84d7c7da57020237",
+          "sourceText": "10 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "7d93d6bc3d6592810920bc873634e8fe4ec7bc6340fb1d341ef3fddb4bbb16a8",
+          "sourceText": "Breathe in slowly through your nose. Let your belly expand, not your chest. Count 1-2-3-4 at a comfortable pace.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "f320adbe95302f1b17c6fdad23ce40670528de85abb9b3a7647531643a809031",
+          "sourceText": "Inhale for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "a03b9f32aea1603a3966a021f52872497e3dbf85cc753bf22a205a27d672a7e6",
+          "sourceText": "Pause gently at the top. Don't clamp down, just let the breath rest. Count 1-2-3-4.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "5d242aad0b18e0459dd911150adb82961a321d284390d91194f24b04be41e139",
+          "sourceText": "Hold for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "d3c6a7055cae415352f2b41104e77f5ff5a19a3fb001e6b52f6f7c53f86f6f31",
+          "sourceText": "Release slowly through your nose or pursed lips. Feel your belly fall. Count 1-2-3-4.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "df80c8760043cb042f208768c67647697162e4caaad33be3f897b918cd9a742f",
+          "sourceText": "Exhale for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "908517e693b1b5be6aed7a9ab26c33a6842523cb7dfd28c45aa10ec80bead383",
+          "sourceText": "Pause at the bottom before inhaling again. Stay relaxed. Count 1-2-3-4.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "5d242aad0b18e0459dd911150adb82961a321d284390d91194f24b04be41e139",
+          "sourceText": "Hold for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].instruction": {
+          "sourceHash": "76218af17b4ede1388826f4618cc747c5ac33ccf0ed3fa86a87403bb56e677b6",
+          "sourceText": "Continue the pattern for 60-90 seconds. Most people feel noticeably calmer after 4 cycles.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].name": {
+          "sourceHash": "c5fbfe6cdd89a26e8bc6f603182a6273827a84d6095b8b2c9be4b53d2c0989a5",
+          "sourceText": "Repeat 4-6 cycles",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].timing": {
+          "sourceHash": "d0d4af1dc9106a080cc4e40884feb16a4535048b0ed22523838c6ccb0cdd0f01",
+          "sourceText": "60-90 seconds total",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "44f177c8ad9b55abae7607d29d5349b0bacd46adcfcb6f6fd32ae7d79f22eebf",
+          "sourceText": "Practice when you're NOT stressed so the technique becomes automatic",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "81f31f99af337fb73b35d6db1c7f4ee6ddb155b2c665138fb4b47ea68c9eea05",
+          "sourceText": "Do this in the waiting room, backstage, or while sitting in the audience before your turn",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "1cb1b36d73c1f92d35b4067c9d069f377aeb6e29b561694bd801c707c0097d48",
+          "sourceText": "If 4-second holds feel too long, start with 3 seconds and work up",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "5b46b4969071d2387611a17722289553f9ef624818aaf6dc49f137c7f375d482",
+          "sourceText": "The technique is invisible to others, no one will know you're doing it",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "8ca6d064f6ec3ba11adf0cf208068de42e3d1c1bad93764cf782149db17f0b41",
+          "sourceText": "Breathing exercises for public speaking that stop stage fright in 60 seconds. The Navy SEAL box breathing method used before 100,000+ presentations. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "f913e73050343da35bc4433aa7beab3db984b8f1956ead2674d0ed3024fe923a",
+          "sourceText": "Breathing techniques for public speaking that Navy SEALs use before combat. Stop presentation anxiety in 60 seconds. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "04094ba39da78ec32b307d4dc2f99ee603b28ac1c38854c16015399be51e5498",
+          "sourceText": "Breathing Exercises for Public Speaking — Stop Stage Fright",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "5f314dbab7c5b1686d919310e051f7957d3b575f13d1cd71f34176ae8d5aa40f",
+          "sourceText": "Breathing Exercises for Public Speaking — Stop Stage Fright in 60 Seconds | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "34d29a66a8a11366a291f8602a3ca2a4e4f57e685d413e6868debf94653838b3",
+          "sourceText": "Breathing exercises for public speaking that stop stage fright instantly. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "3930e0e42d65fc4bc95cb3bf898790f93a6812b820594b1d4820e9b75af07786",
+          "sourceText": "Breathing Exercises for Public Speaking — Navy SEAL Method",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "2d7d50760a2daaeff96adf047626e8798154f8c481242dc1405217113cc41f0b",
+          "sourceText": "When you're about to speak in front of others, your brain can't distinguish between a boardroom presentation and a life-threatening situation. It triggers the same ancient alarm system: adrenaline floods your bloodstream, your heart rate spikes, blood diverts from your brain to your muscles. This was useful when outrunning predators, not so helpful when delivering quarterly results.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "030e2c4e7e9f8beb85488e7a107fea9d949f165ef60a6a603be959939a134a59",
+          "sourceText": "The Fight-or-Flight Response",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "b61a4aa01817948c6719039a31a440f1e633ea66ff50077b5049e4f86ae076ea",
+          "sourceText": "Racing heart and pounding chest",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "793c190c6f7171d6ea3a7611d585b9b39e98ab466b8e50a62bb52e6e68fbd03f",
+          "sourceText": "Shaking hands and trembling voice",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "518c75c7c486ffbcdba09d534852b021926285172a0e41cba432615159abd639",
+          "sourceText": "Dry mouth and difficulty swallowing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "25b493a2e94e6497d3cc62488d68fa972b5af38f589796bf447f908447cefaa0",
+          "sourceText": "Shallow, rapid breathing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "1f7681330ad692c146d427d097044e520bd8c6fc1f60ab7d2dae1c37d04830ed",
+          "sourceText": "Mind going blank mid-sentence",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "1c583bb934a9e0e255c1c0a0e46372d39fa4d93f3aa6e97f1fb70efdcd83b24b",
+          "sourceText": "Sweating and flushed skin",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "0c94e03b325665a3308671541089c71722a3d139fa32d63b2de121c20698fbcc",
+          "sourceText": "Overview of how deep breathing activates the parasympathetic nervous system and reduces cortisol levels.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "4e669e1713fa28b44f8f7cfbdc84cf6b4594809ba75503f40e609b27ad3f0554",
+          "sourceText": "Deep Breathing Exercises & Techniques for Stress Management",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "4d5b5912d3d0c1114a83c8f08d67cf676e8367e481d2bd811553d56078295704",
+          "sourceText": "Medical review of box breathing benefits including stress reduction and blood pressure regulation.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "f71cdb579b061e1a9839e838f75f9d0e45429eaf0d82565b0e4c542e10e8f0c6",
+          "sourceText": "How Box Breathing Can Help You Destress",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "1af221096337cc3e09c54d47e1d2d688bc2aecda7ed4657f42ce993f7166cd9e",
+          "sourceText": "Clinical overview of breathing techniques for stress management, including tactical breathing applications.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "ecc8b978d1ffb92f9b079a7f7a638cb781fd74636e3bed6437603ff0e6b5df49",
+          "sourceText": "Relaxation Techniques",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "896f697b1d5b91f5b282e44fdc2edb3a0d1733f5be8d6027794488f5c0f80b31",
+          "sourceText": "Stanford study showing breathwork outperformed mindfulness meditation for mood improvement and stress reduction.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "2dfc5c3bdc39bc5a5a2adf200c87c1ada83ffdcbc3a1e08638d6a9c1522b0ce8",
+          "sourceText": "Brief structured respiration practices enhance mood and reduce physiological arousal",
+          "status": "route-catalog-exact"
+        },
+        "relatedGuides[0].teaser": {
+          "sourceHash": "a565bc7f14ef1253cbe32787af2f3facb8afd9809f872e3f76ea0531f61fc1e5",
+          "sourceText": "A step-by-step protocol for using box breathing in the minutes before you present — eliminate stage fright before it starts",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedGuides[0].title": {
+          "sourceHash": "cfcb63ef22f82e7dc7faa8c4030fa7e6aa26fadb4a15e0dd0ad3e77a18cf1bed",
+          "sourceText": "Box Breathing Before a Presentation",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "4e5f847ef100bf18ac5817c76969d50982d44a6a645372084f4ef69e6249eaf7",
+          "sourceText": "Practice with the full-screen Box Breathing visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "6312d36ae157c36c3e5e510ac37d9e83f30b52356245e7fab212509f913b1eda",
+          "sourceText": "If pre-speech anxiety keeps you up the night before, try our 4-7-8 guide for better sleep",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "deea2e847c060286aeaed28912cb027ecd3519b3f7aecb5ec3a6d75d9a701365",
+          "sourceText": "Chronic performance anxiety? Box breathing trains your nervous system for sustained calm",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "1e8f7402edbc91ca5936e73de4d069043330074286124aa55bca332dc41d4b63",
+          "sourceText": "The exact breathing protocols Huberman uses before high-stakes situations and deep work.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "sourceText": "Why It Works",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "9ec444ef0141453f3338dca66bc2d156f7a2472d0b4e9ca3d092f855f39fe6b4",
+          "sourceText": "Slow, controlled breathing stimulates the vagus nerve, which runs from your brainstem to your abdomen. This activates your parasympathetic nervous system, the 'rest and digest' mode that counteracts fight-or-flight.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "49e5d08b69ea72a7eabd73be00e2f5d701849e2c33dcfa85d1737389867fc7bf",
+          "sourceText": "Vagus Nerve Activation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "d6832828d65ea70dcbf8ffcb0c6cd47586c599c1735d9686a8a0f4f6bb69a222",
+          "sourceText": "When anxious, you tend to over-breathe, depleting CO₂ and causing dizziness and tingling. The hold phases in box breathing normalize CO₂ levels, reducing physical anxiety symptoms.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "08aa3db1cef1426097c017dff577b489dbf3fdbdc1468f5dd0c2205f1068fba9",
+          "sourceText": "CO₂ Balance",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "b4e440bd8ff1978a89883cf691538293362a436111ead0b1de57166b0089b0c1",
+          "sourceText": "Counting breath phases occupies your prefrontal cortex, the same brain region that would otherwise be catastrophizing about what could go wrong. You literally crowd out anxious thoughts.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "1520c1090d04c66d67d7bbe99692c831778a9c87538135de728358e73431e147",
+          "sourceText": "Attention Anchoring",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "104b9a8902c1a47c523f55a1741579752aee133633725372ccd83e4b8114df71",
+          "sourceText": "Slow breathing increases heart rate variability (HRV), a marker of stress resilience. Higher HRV means your body can shift more easily between alert and calm states.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "986bd4d046b4baec8f949c7bafdd36b24d608a4f50dda165acbf9a5fc824f050",
+          "sourceText": "Heart Rate Variability",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "526b4c42a7d1cf44f501c1d03506f673b650fb62e2cd572d2cc21448cfd0f4e9",
+          "sourceText": "Box breathing (also called tactical breathing or four-square breathing) is used by Navy SEALs, surgeons, and elite performers to regain control under extreme pressure. The technique creates a rhythmic pattern of equal inhales, holds, and exhales that directly counters the panic response.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "e1baa88ad8df21196ace30777326016dc4dd2a908fdc81435ac4026804144494",
+          "sourceText": "Box Breathing: The Tactical Reset",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "60a0b5b281c053b07990a6613e472b2b4784cf27e09fc444220922c6df0b4bd6",
+          "sourceText": "The four equal phases (4-4-4-4) give your mind a simple structure to follow, breaking the rumination loop that feeds anxiety. The breath holds allow CO₂ to build up slightly, which paradoxically signals your brain that you're safe enough to pause. You wouldn't hold your breath if you were actually in danger.",
+          "status": "route-catalog-normalized"
+        }
+      }
+    },
+    "es-es": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "f697ea4ac8f51cac028b933ad11611cd4ad6b9f675cb127969780ab63e98a4aa",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "77e3c5fdb098a727e4a3b38cb4b78ed851d9032b53bb0c59440f74b2bef1ffec",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-huberman-title": {
+          "sourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-box-app": {
+          "sourceHash": "7f77c1557f9441a20a2bcf9985050eae3c16380e63d8ef10af1f7aae4fdae7f4",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "e2331da2788a76ede4ddfa63f2b10094ae10a900efc4f59d432b4a5a6091e427",
+          "sourceText": "Start 2-5 minutes before you're due to speak. The calming effects kick in within 60-90 seconds and can last 15-20 minutes. If you're particularly anxious, do a longer session (5 minutes) 30 minutes before, then a quick 60-second refresher right before you go on.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].question": {
+          "sourceHash": "c533a274735df08e3408ec169c39aac4ff5bbc6507bee546ac52695bc9fbf64d",
+          "sourceText": "How far in advance should I start box breathing before a presentation?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "bf7c495151296521077a29cf75839813c295e12c84acb8d6fb012239fda99d80",
+          "sourceText": "Pause naturally. Take a sip of water or refer to your notes. Take one slow breath with a longer exhale (4 counts in, 6-8 counts out). This single breath can reset your nervous system enough to continue. For quicker relief mid-speech, try a physiological sigh: two quick inhales through your nose, then one long exhale.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "55f9ec28668089cc4dfe707d2c3325bd411f636e09dba2a88c2e23d8933b067e",
+          "sourceText": "What if I start panicking during my presentation?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "affbe5b0856b44912f14f61a4c4a1452ddb1ea1c295375d559f8a31742c48dce",
+          "sourceText": "Yes, but modify the technique. Shorten the counts to 2-3 seconds, skip the breath holds entirely, and keep the breathing light and quiet. The calming effect comes from the slow, rhythmic pattern, not from deep or forceful breathing. If you feel any discomfort, stop and return to normal breathing.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].question": {
+          "sourceHash": "d9f5645751a4bd0237e6e33ec4c35ee2c7b2199a4f360a4f746c37a1c76f9fab",
+          "sourceText": "Can I do this if I have asthma or breathing difficulties?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "ae0298a57d8bce3dbe34a5fe751f130d44494c4b261361cc5167e5f3415d53b5",
+          "sourceText": "No. Box breathing is completely invisible when done through the nose. You can practice while sitting in a meeting, standing backstage, or even walking to the podium. Keep your breathing quiet and your body relaxed, no one will know.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "0e43dc3511a8534e46c311b6f1ef86d16e88457f7653679c21038d3bad22c041",
+          "sourceText": "Will people notice I'm doing breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "9dba14dcb6d9b2c154c3021127639cc51279b8bf3cb9696f95debe389f408f14",
+          "sourceText": "Breathing techniques are highly effective for most presentation anxiety, but severe phobias may benefit from additional support like cognitive behavioral therapy (CBT) or gradual exposure practice. Box breathing is an excellent tool to use alongside other strategies. It won't eliminate all fear, but it will give you control over your physical symptoms.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "0c4d84bfc1e4c6f061774b9b4e567e58605480344d6dd5deefe49c849cb28d82",
+          "sourceText": "Does this really work for severe stage fright?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "55aadb506dbb671d3694cb758e19ac26eef7c3c48520e57339d0ce4c08526f40",
+          "sourceText": "Your heart races. Your hands shake. Your mouth goes dry. Stage fright isn't a character flaw. It's your body's ancient survival system misfiring. Box breathing, the same technique used by Navy SEALs and first responders, can interrupt this panic response in under a minute.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "c52f3499b481a65ea4d5212ee68152f690afc311697d25709a704056554142b5",
+          "sourceText": "Stop stage fright in 60 seconds with the Navy SEAL method",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+          "sourceText": "Breathing Exercises for Public Speaking",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "da0e798f4dd856ecd52b3d6eca54ac43f8b86af84b02d63ce26b33322237dee7",
+          "sourceText": "Step away if possible: a bathroom, hallway, or even your car. If you can't leave, you can do this seated and discreetly.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "d72870b7a2ea060201d56edcd10e33c324ec32bb3ab4203edd37a31a1eaa1662",
+          "sourceText": "Find your spot",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "23473f81413b94a2438214f1d869beca883d81410d376ee9280690c125967659",
+          "sourceText": "2-5 minutes before speaking",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "6a96bf54a9e70bfadf32a7cf35d820423f453b2efb27a49b8b49e2a0ff5f259c",
+          "sourceText": "Sit or stand tall. Drop your shoulders. Unclench your jaw. Place one hand on your belly to feel it rise and fall.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "837d129118bcd774dbc47d16e818abce75733dad80ed895f356001acd65b6a5e",
+          "sourceText": "Set your posture",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "f78b958d638585f732f9665c58680242b88555a32786767f84d7c7da57020237",
+          "sourceText": "10 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "7d93d6bc3d6592810920bc873634e8fe4ec7bc6340fb1d341ef3fddb4bbb16a8",
+          "sourceText": "Breathe in slowly through your nose. Let your belly expand, not your chest. Count 1-2-3-4 at a comfortable pace.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "f320adbe95302f1b17c6fdad23ce40670528de85abb9b3a7647531643a809031",
+          "sourceText": "Inhale for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "a03b9f32aea1603a3966a021f52872497e3dbf85cc753bf22a205a27d672a7e6",
+          "sourceText": "Pause gently at the top. Don't clamp down, just let the breath rest. Count 1-2-3-4.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "5d242aad0b18e0459dd911150adb82961a321d284390d91194f24b04be41e139",
+          "sourceText": "Hold for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "d3c6a7055cae415352f2b41104e77f5ff5a19a3fb001e6b52f6f7c53f86f6f31",
+          "sourceText": "Release slowly through your nose or pursed lips. Feel your belly fall. Count 1-2-3-4.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "df80c8760043cb042f208768c67647697162e4caaad33be3f897b918cd9a742f",
+          "sourceText": "Exhale for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "908517e693b1b5be6aed7a9ab26c33a6842523cb7dfd28c45aa10ec80bead383",
+          "sourceText": "Pause at the bottom before inhaling again. Stay relaxed. Count 1-2-3-4.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "5d242aad0b18e0459dd911150adb82961a321d284390d91194f24b04be41e139",
+          "sourceText": "Hold for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].instruction": {
+          "sourceHash": "76218af17b4ede1388826f4618cc747c5ac33ccf0ed3fa86a87403bb56e677b6",
+          "sourceText": "Continue the pattern for 60-90 seconds. Most people feel noticeably calmer after 4 cycles.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].name": {
+          "sourceHash": "c5fbfe6cdd89a26e8bc6f603182a6273827a84d6095b8b2c9be4b53d2c0989a5",
+          "sourceText": "Repeat 4-6 cycles",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].timing": {
+          "sourceHash": "d0d4af1dc9106a080cc4e40884feb16a4535048b0ed22523838c6ccb0cdd0f01",
+          "sourceText": "60-90 seconds total",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "44f177c8ad9b55abae7607d29d5349b0bacd46adcfcb6f6fd32ae7d79f22eebf",
+          "sourceText": "Practice when you're NOT stressed so the technique becomes automatic",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "81f31f99af337fb73b35d6db1c7f4ee6ddb155b2c665138fb4b47ea68c9eea05",
+          "sourceText": "Do this in the waiting room, backstage, or while sitting in the audience before your turn",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "1cb1b36d73c1f92d35b4067c9d069f377aeb6e29b561694bd801c707c0097d48",
+          "sourceText": "If 4-second holds feel too long, start with 3 seconds and work up",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "5b46b4969071d2387611a17722289553f9ef624818aaf6dc49f137c7f375d482",
+          "sourceText": "The technique is invisible to others, no one will know you're doing it",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "8ca6d064f6ec3ba11adf0cf208068de42e3d1c1bad93764cf782149db17f0b41",
+          "sourceText": "Breathing exercises for public speaking that stop stage fright in 60 seconds. The Navy SEAL box breathing method used before 100,000+ presentations. Free visualizer.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "f913e73050343da35bc4433aa7beab3db984b8f1956ead2674d0ed3024fe923a",
+          "sourceText": "Breathing techniques for public speaking that Navy SEALs use before combat. Stop presentation anxiety in 60 seconds. Free visualizer.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "04094ba39da78ec32b307d4dc2f99ee603b28ac1c38854c16015399be51e5498",
+          "sourceText": "Breathing Exercises for Public Speaking: Stop Stage Fright",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.title": {
+          "sourceHash": "5f314dbab7c5b1686d919310e051f7957d3b575f13d1cd71f34176ae8d5aa40f",
+          "sourceText": "Breathing Exercises for Public Speaking: Stop Stage Fright in 60 Seconds",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "34d29a66a8a11366a291f8602a3ca2a4e4f57e685d413e6868debf94653838b3",
+          "sourceText": "Breathing exercises for public speaking that stop stage fright instantly. Free visualizer.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "3930e0e42d65fc4bc95cb3bf898790f93a6812b820594b1d4820e9b75af07786",
+          "sourceText": "Breathing Exercises for Public Speaking: Navy SEAL Method",
+          "status": "repo-reviewed-replacement"
+        },
+        "problem.content": {
+          "sourceHash": "2d7d50760a2daaeff96adf047626e8798154f8c481242dc1405217113cc41f0b",
+          "sourceText": "When you're about to speak in front of others, your brain can't distinguish between a boardroom presentation and a life-threatening situation. It triggers the same ancient alarm system: adrenaline floods your bloodstream, your heart rate spikes, blood diverts from your brain to your muscles. This was useful when outrunning predators, not so helpful when delivering quarterly results.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "030e2c4e7e9f8beb85488e7a107fea9d949f165ef60a6a603be959939a134a59",
+          "sourceText": "The Fight-or-Flight Response",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "b61a4aa01817948c6719039a31a440f1e633ea66ff50077b5049e4f86ae076ea",
+          "sourceText": "Racing heart and pounding chest",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "793c190c6f7171d6ea3a7611d585b9b39e98ab466b8e50a62bb52e6e68fbd03f",
+          "sourceText": "Shaking hands and trembling voice",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "518c75c7c486ffbcdba09d534852b021926285172a0e41cba432615159abd639",
+          "sourceText": "Dry mouth and difficulty swallowing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "25b493a2e94e6497d3cc62488d68fa972b5af38f589796bf447f908447cefaa0",
+          "sourceText": "Shallow, rapid breathing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "1f7681330ad692c146d427d097044e520bd8c6fc1f60ab7d2dae1c37d04830ed",
+          "sourceText": "Mind going blank mid-sentence",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "1c583bb934a9e0e255c1c0a0e46372d39fa4d93f3aa6e97f1fb70efdcd83b24b",
+          "sourceText": "Sweating and flushed skin",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "0c94e03b325665a3308671541089c71722a3d139fa32d63b2de121c20698fbcc",
+          "sourceText": "Overview of how deep breathing activates the parasympathetic nervous system and reduces cortisol levels.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "4e669e1713fa28b44f8f7cfbdc84cf6b4594809ba75503f40e609b27ad3f0554",
+          "sourceText": "Deep Breathing Exercises & Techniques for Stress Management",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "4d5b5912d3d0c1114a83c8f08d67cf676e8367e481d2bd811553d56078295704",
+          "sourceText": "Medical review of box breathing benefits including stress reduction and blood pressure regulation.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "f71cdb579b061e1a9839e838f75f9d0e45429eaf0d82565b0e4c542e10e8f0c6",
+          "sourceText": "How Box Breathing Can Help You Destress",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "1af221096337cc3e09c54d47e1d2d688bc2aecda7ed4657f42ce993f7166cd9e",
+          "sourceText": "Clinical overview of breathing techniques for stress management, including tactical breathing applications.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "ecc8b978d1ffb92f9b079a7f7a638cb781fd74636e3bed6437603ff0e6b5df49",
+          "sourceText": "Relaxation Techniques",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "896f697b1d5b91f5b282e44fdc2edb3a0d1733f5be8d6027794488f5c0f80b31",
+          "sourceText": "Stanford study showing breathwork outperformed mindfulness meditation for mood improvement and stress reduction.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "2dfc5c3bdc39bc5a5a2adf200c87c1ada83ffdcbc3a1e08638d6a9c1522b0ce8",
+          "sourceText": "Brief structured respiration practices enhance mood and reduce physiological arousal",
+          "status": "route-catalog-exact"
+        },
+        "relatedGuides[0].teaser": {
+          "sourceHash": "a565bc7f14ef1253cbe32787af2f3facb8afd9809f872e3f76ea0531f61fc1e5",
+          "sourceText": "A step-by-step protocol for using box breathing in the minutes before you present — eliminate stage fright before it starts",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedGuides[0].title": {
+          "sourceHash": "cfcb63ef22f82e7dc7faa8c4030fa7e6aa26fadb4a15e0dd0ad3e77a18cf1bed",
+          "sourceText": "Box Breathing Before a Presentation",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "4e5f847ef100bf18ac5817c76969d50982d44a6a645372084f4ef69e6249eaf7",
+          "sourceText": "Practice with the full-screen Box Breathing visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "6312d36ae157c36c3e5e510ac37d9e83f30b52356245e7fab212509f913b1eda",
+          "sourceText": "If pre-speech anxiety keeps you up the night before, try our 4-7-8 guide for better sleep",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "deea2e847c060286aeaed28912cb027ecd3519b3f7aecb5ec3a6d75d9a701365",
+          "sourceText": "Chronic performance anxiety? Box breathing trains your nervous system for sustained calm",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "1e8f7402edbc91ca5936e73de4d069043330074286124aa55bca332dc41d4b63",
+          "sourceText": "The exact breathing protocols Huberman uses before high-stakes situations and deep work.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "sourceText": "Why It Works",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "9ec444ef0141453f3338dca66bc2d156f7a2472d0b4e9ca3d092f855f39fe6b4",
+          "sourceText": "Slow, controlled breathing stimulates the vagus nerve, which runs from your brainstem to your abdomen. This activates your parasympathetic nervous system, the 'rest and digest' mode that counteracts fight-or-flight.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "49e5d08b69ea72a7eabd73be00e2f5d701849e2c33dcfa85d1737389867fc7bf",
+          "sourceText": "Vagus Nerve Activation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "d6832828d65ea70dcbf8ffcb0c6cd47586c599c1735d9686a8a0f4f6bb69a222",
+          "sourceText": "When anxious, you tend to over-breathe, depleting CO₂ and causing dizziness and tingling. The hold phases in box breathing normalize CO₂ levels, reducing physical anxiety symptoms.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "08aa3db1cef1426097c017dff577b489dbf3fdbdc1468f5dd0c2205f1068fba9",
+          "sourceText": "CO₂ Balance",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "b4e440bd8ff1978a89883cf691538293362a436111ead0b1de57166b0089b0c1",
+          "sourceText": "Counting breath phases occupies your prefrontal cortex, the same brain region that would otherwise be catastrophizing about what could go wrong. You literally crowd out anxious thoughts.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "1520c1090d04c66d67d7bbe99692c831778a9c87538135de728358e73431e147",
+          "sourceText": "Attention Anchoring",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "104b9a8902c1a47c523f55a1741579752aee133633725372ccd83e4b8114df71",
+          "sourceText": "Slow breathing increases heart rate variability (HRV), a marker of stress resilience. Higher HRV means your body can shift more easily between alert and calm states.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "986bd4d046b4baec8f949c7bafdd36b24d608a4f50dda165acbf9a5fc824f050",
+          "sourceText": "Heart Rate Variability",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "526b4c42a7d1cf44f501c1d03506f673b650fb62e2cd572d2cc21448cfd0f4e9",
+          "sourceText": "Box breathing (also called tactical breathing or four-square breathing) is used by Navy SEALs, surgeons, and elite performers to regain control under extreme pressure. The technique creates a rhythmic pattern of equal inhales, holds, and exhales that directly counters the panic response.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "e1baa88ad8df21196ace30777326016dc4dd2a908fdc81435ac4026804144494",
+          "sourceText": "Box Breathing: The Tactical Reset",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "60a0b5b281c053b07990a6613e472b2b4784cf27e09fc444220922c6df0b4bd6",
+          "sourceText": "The four equal phases (4-4-4-4) give your mind a simple structure to follow, breaking the rumination loop that feeds anxiety. The breath holds allow CO₂ to build up slightly, which paradoxically signals your brain that you're safe enough to pause. You wouldn't hold your breath if you were actually in danger.",
+          "status": "route-catalog-normalized"
+        }
+      }
+    },
+    "fr-fr": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "f697ea4ac8f51cac028b933ad11611cd4ad6b9f675cb127969780ab63e98a4aa",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "77e3c5fdb098a727e4a3b38cb4b78ed851d9032b53bb0c59440f74b2bef1ffec",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.related-huberman-title": {
+          "sourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-box-app": {
+          "sourceHash": "7f77c1557f9441a20a2bcf9985050eae3c16380e63d8ef10af1f7aae4fdae7f4",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "e2331da2788a76ede4ddfa63f2b10094ae10a900efc4f59d432b4a5a6091e427",
+          "sourceText": "Start 2-5 minutes before you're due to speak. The calming effects kick in within 60-90 seconds and can last 15-20 minutes. If you're particularly anxious, do a longer session (5 minutes) 30 minutes before, then a quick 60-second refresher right before you go on.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].question": {
+          "sourceHash": "c533a274735df08e3408ec169c39aac4ff5bbc6507bee546ac52695bc9fbf64d",
+          "sourceText": "How far in advance should I start box breathing before a presentation?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "bf7c495151296521077a29cf75839813c295e12c84acb8d6fb012239fda99d80",
+          "sourceText": "Pause naturally. Take a sip of water or refer to your notes. Take one slow breath with a longer exhale (4 counts in, 6-8 counts out). This single breath can reset your nervous system enough to continue. For quicker relief mid-speech, try a physiological sigh: two quick inhales through your nose, then one long exhale.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "55f9ec28668089cc4dfe707d2c3325bd411f636e09dba2a88c2e23d8933b067e",
+          "sourceText": "What if I start panicking during my presentation?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "affbe5b0856b44912f14f61a4c4a1452ddb1ea1c295375d559f8a31742c48dce",
+          "sourceText": "Yes, but modify the technique. Shorten the counts to 2-3 seconds, skip the breath holds entirely, and keep the breathing light and quiet. The calming effect comes from the slow, rhythmic pattern, not from deep or forceful breathing. If you feel any discomfort, stop and return to normal breathing.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].question": {
+          "sourceHash": "d9f5645751a4bd0237e6e33ec4c35ee2c7b2199a4f360a4f746c37a1c76f9fab",
+          "sourceText": "Can I do this if I have asthma or breathing difficulties?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "ae0298a57d8bce3dbe34a5fe751f130d44494c4b261361cc5167e5f3415d53b5",
+          "sourceText": "No. Box breathing is completely invisible when done through the nose. You can practice while sitting in a meeting, standing backstage, or even walking to the podium. Keep your breathing quiet and your body relaxed, no one will know.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "0e43dc3511a8534e46c311b6f1ef86d16e88457f7653679c21038d3bad22c041",
+          "sourceText": "Will people notice I'm doing breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "9dba14dcb6d9b2c154c3021127639cc51279b8bf3cb9696f95debe389f408f14",
+          "sourceText": "Breathing techniques are highly effective for most presentation anxiety, but severe phobias may benefit from additional support like cognitive behavioral therapy (CBT) or gradual exposure practice. Box breathing is an excellent tool to use alongside other strategies. It won't eliminate all fear, but it will give you control over your physical symptoms.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "0c4d84bfc1e4c6f061774b9b4e567e58605480344d6dd5deefe49c849cb28d82",
+          "sourceText": "Does this really work for severe stage fright?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "55aadb506dbb671d3694cb758e19ac26eef7c3c48520e57339d0ce4c08526f40",
+          "sourceText": "Your heart races. Your hands shake. Your mouth goes dry. Stage fright isn't a character flaw. It's your body's ancient survival system misfiring. Box breathing, the same technique used by Navy SEALs and first responders, can interrupt this panic response in under a minute.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "c52f3499b481a65ea4d5212ee68152f690afc311697d25709a704056554142b5",
+          "sourceText": "Stop stage fright in 60 seconds with the Navy SEAL method",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+          "sourceText": "Breathing Exercises for Public Speaking",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "da0e798f4dd856ecd52b3d6eca54ac43f8b86af84b02d63ce26b33322237dee7",
+          "sourceText": "Step away if possible: a bathroom, hallway, or even your car. If you can't leave, you can do this seated and discreetly.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "d72870b7a2ea060201d56edcd10e33c324ec32bb3ab4203edd37a31a1eaa1662",
+          "sourceText": "Find your spot",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "23473f81413b94a2438214f1d869beca883d81410d376ee9280690c125967659",
+          "sourceText": "2-5 minutes before speaking",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "6a96bf54a9e70bfadf32a7cf35d820423f453b2efb27a49b8b49e2a0ff5f259c",
+          "sourceText": "Sit or stand tall. Drop your shoulders. Unclench your jaw. Place one hand on your belly to feel it rise and fall.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "837d129118bcd774dbc47d16e818abce75733dad80ed895f356001acd65b6a5e",
+          "sourceText": "Set your posture",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "f78b958d638585f732f9665c58680242b88555a32786767f84d7c7da57020237",
+          "sourceText": "10 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "7d93d6bc3d6592810920bc873634e8fe4ec7bc6340fb1d341ef3fddb4bbb16a8",
+          "sourceText": "Breathe in slowly through your nose. Let your belly expand, not your chest. Count 1-2-3-4 at a comfortable pace.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "f320adbe95302f1b17c6fdad23ce40670528de85abb9b3a7647531643a809031",
+          "sourceText": "Inhale for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "a03b9f32aea1603a3966a021f52872497e3dbf85cc753bf22a205a27d672a7e6",
+          "sourceText": "Pause gently at the top. Don't clamp down, just let the breath rest. Count 1-2-3-4.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "5d242aad0b18e0459dd911150adb82961a321d284390d91194f24b04be41e139",
+          "sourceText": "Hold for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "d3c6a7055cae415352f2b41104e77f5ff5a19a3fb001e6b52f6f7c53f86f6f31",
+          "sourceText": "Release slowly through your nose or pursed lips. Feel your belly fall. Count 1-2-3-4.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "df80c8760043cb042f208768c67647697162e4caaad33be3f897b918cd9a742f",
+          "sourceText": "Exhale for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "908517e693b1b5be6aed7a9ab26c33a6842523cb7dfd28c45aa10ec80bead383",
+          "sourceText": "Pause at the bottom before inhaling again. Stay relaxed. Count 1-2-3-4.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "5d242aad0b18e0459dd911150adb82961a321d284390d91194f24b04be41e139",
+          "sourceText": "Hold for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].instruction": {
+          "sourceHash": "76218af17b4ede1388826f4618cc747c5ac33ccf0ed3fa86a87403bb56e677b6",
+          "sourceText": "Continue the pattern for 60-90 seconds. Most people feel noticeably calmer after 4 cycles.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].name": {
+          "sourceHash": "c5fbfe6cdd89a26e8bc6f603182a6273827a84d6095b8b2c9be4b53d2c0989a5",
+          "sourceText": "Repeat 4-6 cycles",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].timing": {
+          "sourceHash": "d0d4af1dc9106a080cc4e40884feb16a4535048b0ed22523838c6ccb0cdd0f01",
+          "sourceText": "60-90 seconds total",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "44f177c8ad9b55abae7607d29d5349b0bacd46adcfcb6f6fd32ae7d79f22eebf",
+          "sourceText": "Practice when you're NOT stressed so the technique becomes automatic",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "81f31f99af337fb73b35d6db1c7f4ee6ddb155b2c665138fb4b47ea68c9eea05",
+          "sourceText": "Do this in the waiting room, backstage, or while sitting in the audience before your turn",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "1cb1b36d73c1f92d35b4067c9d069f377aeb6e29b561694bd801c707c0097d48",
+          "sourceText": "If 4-second holds feel too long, start with 3 seconds and work up",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "5b46b4969071d2387611a17722289553f9ef624818aaf6dc49f137c7f375d482",
+          "sourceText": "The technique is invisible to others, no one will know you're doing it",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "8ca6d064f6ec3ba11adf0cf208068de42e3d1c1bad93764cf782149db17f0b41",
+          "sourceText": "Breathing exercises for public speaking that stop stage fright in 60 seconds. The Navy SEAL box breathing method used before 100,000+ presentations. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "f913e73050343da35bc4433aa7beab3db984b8f1956ead2674d0ed3024fe923a",
+          "sourceText": "Breathing techniques for public speaking that Navy SEALs use before combat. Stop presentation anxiety in 60 seconds. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "04094ba39da78ec32b307d4dc2f99ee603b28ac1c38854c16015399be51e5498",
+          "sourceText": "Breathing Exercises for Public Speaking — Stop Stage Fright",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "5f314dbab7c5b1686d919310e051f7957d3b575f13d1cd71f34176ae8d5aa40f",
+          "sourceText": "Breathing Exercises for Public Speaking — Stop Stage Fright in 60 Seconds | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "34d29a66a8a11366a291f8602a3ca2a4e4f57e685d413e6868debf94653838b3",
+          "sourceText": "Breathing exercises for public speaking that stop stage fright instantly. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "3930e0e42d65fc4bc95cb3bf898790f93a6812b820594b1d4820e9b75af07786",
+          "sourceText": "Breathing Exercises for Public Speaking — Navy SEAL Method",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "2d7d50760a2daaeff96adf047626e8798154f8c481242dc1405217113cc41f0b",
+          "sourceText": "When you're about to speak in front of others, your brain can't distinguish between a boardroom presentation and a life-threatening situation. It triggers the same ancient alarm system: adrenaline floods your bloodstream, your heart rate spikes, blood diverts from your brain to your muscles. This was useful when outrunning predators, not so helpful when delivering quarterly results.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "030e2c4e7e9f8beb85488e7a107fea9d949f165ef60a6a603be959939a134a59",
+          "sourceText": "The Fight-or-Flight Response",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "b61a4aa01817948c6719039a31a440f1e633ea66ff50077b5049e4f86ae076ea",
+          "sourceText": "Racing heart and pounding chest",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "793c190c6f7171d6ea3a7611d585b9b39e98ab466b8e50a62bb52e6e68fbd03f",
+          "sourceText": "Shaking hands and trembling voice",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "518c75c7c486ffbcdba09d534852b021926285172a0e41cba432615159abd639",
+          "sourceText": "Dry mouth and difficulty swallowing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "25b493a2e94e6497d3cc62488d68fa972b5af38f589796bf447f908447cefaa0",
+          "sourceText": "Shallow, rapid breathing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "1f7681330ad692c146d427d097044e520bd8c6fc1f60ab7d2dae1c37d04830ed",
+          "sourceText": "Mind going blank mid-sentence",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "1c583bb934a9e0e255c1c0a0e46372d39fa4d93f3aa6e97f1fb70efdcd83b24b",
+          "sourceText": "Sweating and flushed skin",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "0c94e03b325665a3308671541089c71722a3d139fa32d63b2de121c20698fbcc",
+          "sourceText": "Overview of how deep breathing activates the parasympathetic nervous system and reduces cortisol levels.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "4e669e1713fa28b44f8f7cfbdc84cf6b4594809ba75503f40e609b27ad3f0554",
+          "sourceText": "Deep Breathing Exercises & Techniques for Stress Management",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "4d5b5912d3d0c1114a83c8f08d67cf676e8367e481d2bd811553d56078295704",
+          "sourceText": "Medical review of box breathing benefits including stress reduction and blood pressure regulation.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "f71cdb579b061e1a9839e838f75f9d0e45429eaf0d82565b0e4c542e10e8f0c6",
+          "sourceText": "How Box Breathing Can Help You Destress",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "1af221096337cc3e09c54d47e1d2d688bc2aecda7ed4657f42ce993f7166cd9e",
+          "sourceText": "Clinical overview of breathing techniques for stress management, including tactical breathing applications.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "ecc8b978d1ffb92f9b079a7f7a638cb781fd74636e3bed6437603ff0e6b5df49",
+          "sourceText": "Relaxation Techniques",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "896f697b1d5b91f5b282e44fdc2edb3a0d1733f5be8d6027794488f5c0f80b31",
+          "sourceText": "Stanford study showing breathwork outperformed mindfulness meditation for mood improvement and stress reduction.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "2dfc5c3bdc39bc5a5a2adf200c87c1ada83ffdcbc3a1e08638d6a9c1522b0ce8",
+          "sourceText": "Brief structured respiration practices enhance mood and reduce physiological arousal",
+          "status": "route-catalog-exact"
+        },
+        "relatedGuides[0].teaser": {
+          "sourceHash": "a565bc7f14ef1253cbe32787af2f3facb8afd9809f872e3f76ea0531f61fc1e5",
+          "sourceText": "A step-by-step protocol for using box breathing in the minutes before you present — eliminate stage fright before it starts",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedGuides[0].title": {
+          "sourceHash": "cfcb63ef22f82e7dc7faa8c4030fa7e6aa26fadb4a15e0dd0ad3e77a18cf1bed",
+          "sourceText": "Box Breathing Before a Presentation",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "4e5f847ef100bf18ac5817c76969d50982d44a6a645372084f4ef69e6249eaf7",
+          "sourceText": "Practice with the full-screen Box Breathing visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "6312d36ae157c36c3e5e510ac37d9e83f30b52356245e7fab212509f913b1eda",
+          "sourceText": "If pre-speech anxiety keeps you up the night before, try our 4-7-8 guide for better sleep",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "deea2e847c060286aeaed28912cb027ecd3519b3f7aecb5ec3a6d75d9a701365",
+          "sourceText": "Chronic performance anxiety? Box breathing trains your nervous system for sustained calm",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "1e8f7402edbc91ca5936e73de4d069043330074286124aa55bca332dc41d4b63",
+          "sourceText": "The exact breathing protocols Huberman uses before high-stakes situations and deep work.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "sourceText": "Why It Works",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "9ec444ef0141453f3338dca66bc2d156f7a2472d0b4e9ca3d092f855f39fe6b4",
+          "sourceText": "Slow, controlled breathing stimulates the vagus nerve, which runs from your brainstem to your abdomen. This activates your parasympathetic nervous system, the 'rest and digest' mode that counteracts fight-or-flight.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "49e5d08b69ea72a7eabd73be00e2f5d701849e2c33dcfa85d1737389867fc7bf",
+          "sourceText": "Vagus Nerve Activation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "d6832828d65ea70dcbf8ffcb0c6cd47586c599c1735d9686a8a0f4f6bb69a222",
+          "sourceText": "When anxious, you tend to over-breathe, depleting CO₂ and causing dizziness and tingling. The hold phases in box breathing normalize CO₂ levels, reducing physical anxiety symptoms.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "08aa3db1cef1426097c017dff577b489dbf3fdbdc1468f5dd0c2205f1068fba9",
+          "sourceText": "CO₂ Balance",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "b4e440bd8ff1978a89883cf691538293362a436111ead0b1de57166b0089b0c1",
+          "sourceText": "Counting breath phases occupies your prefrontal cortex, the same brain region that would otherwise be catastrophizing about what could go wrong. You literally crowd out anxious thoughts.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "1520c1090d04c66d67d7bbe99692c831778a9c87538135de728358e73431e147",
+          "sourceText": "Attention Anchoring",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "104b9a8902c1a47c523f55a1741579752aee133633725372ccd83e4b8114df71",
+          "sourceText": "Slow breathing increases heart rate variability (HRV), a marker of stress resilience. Higher HRV means your body can shift more easily between alert and calm states.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "986bd4d046b4baec8f949c7bafdd36b24d608a4f50dda165acbf9a5fc824f050",
+          "sourceText": "Heart Rate Variability",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "526b4c42a7d1cf44f501c1d03506f673b650fb62e2cd572d2cc21448cfd0f4e9",
+          "sourceText": "Box breathing (also called tactical breathing or four-square breathing) is used by Navy SEALs, surgeons, and elite performers to regain control under extreme pressure. The technique creates a rhythmic pattern of equal inhales, holds, and exhales that directly counters the panic response.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "e1baa88ad8df21196ace30777326016dc4dd2a908fdc81435ac4026804144494",
+          "sourceText": "Box Breathing: The Tactical Reset",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "60a0b5b281c053b07990a6613e472b2b4784cf27e09fc444220922c6df0b4bd6",
+          "sourceText": "The four equal phases (4-4-4-4) give your mind a simple structure to follow, breaking the rumination loop that feeds anxiety. The breath holds allow CO₂ to build up slightly, which paradoxically signals your brain that you're safe enough to pause. You wouldn't hold your breath if you were actually in danger.",
+          "status": "route-catalog-normalized"
+        }
+      }
+    },
+    "ja-jp": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "f697ea4ac8f51cac028b933ad11611cd4ad6b9f675cb127969780ab63e98a4aa",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "77e3c5fdb098a727e4a3b38cb4b78ed851d9032b53bb0c59440f74b2bef1ffec",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.related-huberman-title": {
+          "sourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-box-app": {
+          "sourceHash": "7f77c1557f9441a20a2bcf9985050eae3c16380e63d8ef10af1f7aae4fdae7f4",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "e2331da2788a76ede4ddfa63f2b10094ae10a900efc4f59d432b4a5a6091e427",
+          "sourceText": "Start 2-5 minutes before you're due to speak. The calming effects kick in within 60-90 seconds and can last 15-20 minutes. If you're particularly anxious, do a longer session (5 minutes) 30 minutes before, then a quick 60-second refresher right before you go on.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].question": {
+          "sourceHash": "c533a274735df08e3408ec169c39aac4ff5bbc6507bee546ac52695bc9fbf64d",
+          "sourceText": "How far in advance should I start box breathing before a presentation?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "bf7c495151296521077a29cf75839813c295e12c84acb8d6fb012239fda99d80",
+          "sourceText": "Pause naturally. Take a sip of water or refer to your notes. Take one slow breath with a longer exhale (4 counts in, 6-8 counts out). This single breath can reset your nervous system enough to continue. For quicker relief mid-speech, try a physiological sigh: two quick inhales through your nose, then one long exhale.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "55f9ec28668089cc4dfe707d2c3325bd411f636e09dba2a88c2e23d8933b067e",
+          "sourceText": "What if I start panicking during my presentation?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "affbe5b0856b44912f14f61a4c4a1452ddb1ea1c295375d559f8a31742c48dce",
+          "sourceText": "Yes, but modify the technique. Shorten the counts to 2-3 seconds, skip the breath holds entirely, and keep the breathing light and quiet. The calming effect comes from the slow, rhythmic pattern, not from deep or forceful breathing. If you feel any discomfort, stop and return to normal breathing.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].question": {
+          "sourceHash": "d9f5645751a4bd0237e6e33ec4c35ee2c7b2199a4f360a4f746c37a1c76f9fab",
+          "sourceText": "Can I do this if I have asthma or breathing difficulties?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "ae0298a57d8bce3dbe34a5fe751f130d44494c4b261361cc5167e5f3415d53b5",
+          "sourceText": "No. Box breathing is completely invisible when done through the nose. You can practice while sitting in a meeting, standing backstage, or even walking to the podium. Keep your breathing quiet and your body relaxed, no one will know.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "0e43dc3511a8534e46c311b6f1ef86d16e88457f7653679c21038d3bad22c041",
+          "sourceText": "Will people notice I'm doing breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "9dba14dcb6d9b2c154c3021127639cc51279b8bf3cb9696f95debe389f408f14",
+          "sourceText": "Breathing techniques are highly effective for most presentation anxiety, but severe phobias may benefit from additional support like cognitive behavioral therapy (CBT) or gradual exposure practice. Box breathing is an excellent tool to use alongside other strategies. It won't eliminate all fear, but it will give you control over your physical symptoms.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "0c4d84bfc1e4c6f061774b9b4e567e58605480344d6dd5deefe49c849cb28d82",
+          "sourceText": "Does this really work for severe stage fright?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "55aadb506dbb671d3694cb758e19ac26eef7c3c48520e57339d0ce4c08526f40",
+          "sourceText": "Your heart races. Your hands shake. Your mouth goes dry. Stage fright isn't a character flaw. It's your body's ancient survival system misfiring. Box breathing, the same technique used by Navy SEALs and first responders, can interrupt this panic response in under a minute.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "c52f3499b481a65ea4d5212ee68152f690afc311697d25709a704056554142b5",
+          "sourceText": "Stop stage fright in 60 seconds with the Navy SEAL method",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+          "sourceText": "Breathing Exercises for Public Speaking",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "da0e798f4dd856ecd52b3d6eca54ac43f8b86af84b02d63ce26b33322237dee7",
+          "sourceText": "Step away if possible: a bathroom, hallway, or even your car. If you can't leave, you can do this seated and discreetly.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "d72870b7a2ea060201d56edcd10e33c324ec32bb3ab4203edd37a31a1eaa1662",
+          "sourceText": "Find your spot",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "23473f81413b94a2438214f1d869beca883d81410d376ee9280690c125967659",
+          "sourceText": "2-5 minutes before speaking",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "6a96bf54a9e70bfadf32a7cf35d820423f453b2efb27a49b8b49e2a0ff5f259c",
+          "sourceText": "Sit or stand tall. Drop your shoulders. Unclench your jaw. Place one hand on your belly to feel it rise and fall.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "837d129118bcd774dbc47d16e818abce75733dad80ed895f356001acd65b6a5e",
+          "sourceText": "Set your posture",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "f78b958d638585f732f9665c58680242b88555a32786767f84d7c7da57020237",
+          "sourceText": "10 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "7d93d6bc3d6592810920bc873634e8fe4ec7bc6340fb1d341ef3fddb4bbb16a8",
+          "sourceText": "Breathe in slowly through your nose. Let your belly expand, not your chest. Count 1-2-3-4 at a comfortable pace.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "f320adbe95302f1b17c6fdad23ce40670528de85abb9b3a7647531643a809031",
+          "sourceText": "Inhale for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "a03b9f32aea1603a3966a021f52872497e3dbf85cc753bf22a205a27d672a7e6",
+          "sourceText": "Pause gently at the top. Don't clamp down, just let the breath rest. Count 1-2-3-4.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "5d242aad0b18e0459dd911150adb82961a321d284390d91194f24b04be41e139",
+          "sourceText": "Hold for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "d3c6a7055cae415352f2b41104e77f5ff5a19a3fb001e6b52f6f7c53f86f6f31",
+          "sourceText": "Release slowly through your nose or pursed lips. Feel your belly fall. Count 1-2-3-4.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "df80c8760043cb042f208768c67647697162e4caaad33be3f897b918cd9a742f",
+          "sourceText": "Exhale for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "908517e693b1b5be6aed7a9ab26c33a6842523cb7dfd28c45aa10ec80bead383",
+          "sourceText": "Pause at the bottom before inhaling again. Stay relaxed. Count 1-2-3-4.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "5d242aad0b18e0459dd911150adb82961a321d284390d91194f24b04be41e139",
+          "sourceText": "Hold for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].instruction": {
+          "sourceHash": "76218af17b4ede1388826f4618cc747c5ac33ccf0ed3fa86a87403bb56e677b6",
+          "sourceText": "Continue the pattern for 60-90 seconds. Most people feel noticeably calmer after 4 cycles.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].name": {
+          "sourceHash": "c5fbfe6cdd89a26e8bc6f603182a6273827a84d6095b8b2c9be4b53d2c0989a5",
+          "sourceText": "Repeat 4-6 cycles",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].timing": {
+          "sourceHash": "d0d4af1dc9106a080cc4e40884feb16a4535048b0ed22523838c6ccb0cdd0f01",
+          "sourceText": "60-90 seconds total",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "44f177c8ad9b55abae7607d29d5349b0bacd46adcfcb6f6fd32ae7d79f22eebf",
+          "sourceText": "Practice when you're NOT stressed so the technique becomes automatic",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "81f31f99af337fb73b35d6db1c7f4ee6ddb155b2c665138fb4b47ea68c9eea05",
+          "sourceText": "Do this in the waiting room, backstage, or while sitting in the audience before your turn",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "1cb1b36d73c1f92d35b4067c9d069f377aeb6e29b561694bd801c707c0097d48",
+          "sourceText": "If 4-second holds feel too long, start with 3 seconds and work up",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "5b46b4969071d2387611a17722289553f9ef624818aaf6dc49f137c7f375d482",
+          "sourceText": "The technique is invisible to others, no one will know you're doing it",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "8ca6d064f6ec3ba11adf0cf208068de42e3d1c1bad93764cf782149db17f0b41",
+          "sourceText": "Breathing exercises for public speaking that stop stage fright in 60 seconds. The Navy SEAL box breathing method used before 100,000+ presentations. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "f913e73050343da35bc4433aa7beab3db984b8f1956ead2674d0ed3024fe923a",
+          "sourceText": "Breathing techniques for public speaking that Navy SEALs use before combat. Stop presentation anxiety in 60 seconds. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "04094ba39da78ec32b307d4dc2f99ee603b28ac1c38854c16015399be51e5498",
+          "sourceText": "Breathing Exercises for Public Speaking — Stop Stage Fright",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "5f314dbab7c5b1686d919310e051f7957d3b575f13d1cd71f34176ae8d5aa40f",
+          "sourceText": "Breathing Exercises for Public Speaking — Stop Stage Fright in 60 Seconds | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "34d29a66a8a11366a291f8602a3ca2a4e4f57e685d413e6868debf94653838b3",
+          "sourceText": "Breathing exercises for public speaking that stop stage fright instantly. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "3930e0e42d65fc4bc95cb3bf898790f93a6812b820594b1d4820e9b75af07786",
+          "sourceText": "Breathing Exercises for Public Speaking — Navy SEAL Method",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "2d7d50760a2daaeff96adf047626e8798154f8c481242dc1405217113cc41f0b",
+          "sourceText": "When you're about to speak in front of others, your brain can't distinguish between a boardroom presentation and a life-threatening situation. It triggers the same ancient alarm system: adrenaline floods your bloodstream, your heart rate spikes, blood diverts from your brain to your muscles. This was useful when outrunning predators, not so helpful when delivering quarterly results.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "030e2c4e7e9f8beb85488e7a107fea9d949f165ef60a6a603be959939a134a59",
+          "sourceText": "The Fight-or-Flight Response",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "b61a4aa01817948c6719039a31a440f1e633ea66ff50077b5049e4f86ae076ea",
+          "sourceText": "Racing heart and pounding chest",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "793c190c6f7171d6ea3a7611d585b9b39e98ab466b8e50a62bb52e6e68fbd03f",
+          "sourceText": "Shaking hands and trembling voice",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "518c75c7c486ffbcdba09d534852b021926285172a0e41cba432615159abd639",
+          "sourceText": "Dry mouth and difficulty swallowing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "25b493a2e94e6497d3cc62488d68fa972b5af38f589796bf447f908447cefaa0",
+          "sourceText": "Shallow, rapid breathing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "1f7681330ad692c146d427d097044e520bd8c6fc1f60ab7d2dae1c37d04830ed",
+          "sourceText": "Mind going blank mid-sentence",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "1c583bb934a9e0e255c1c0a0e46372d39fa4d93f3aa6e97f1fb70efdcd83b24b",
+          "sourceText": "Sweating and flushed skin",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "0c94e03b325665a3308671541089c71722a3d139fa32d63b2de121c20698fbcc",
+          "sourceText": "Overview of how deep breathing activates the parasympathetic nervous system and reduces cortisol levels.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "4e669e1713fa28b44f8f7cfbdc84cf6b4594809ba75503f40e609b27ad3f0554",
+          "sourceText": "Deep Breathing Exercises & Techniques for Stress Management",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "4d5b5912d3d0c1114a83c8f08d67cf676e8367e481d2bd811553d56078295704",
+          "sourceText": "Medical review of box breathing benefits including stress reduction and blood pressure regulation.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "f71cdb579b061e1a9839e838f75f9d0e45429eaf0d82565b0e4c542e10e8f0c6",
+          "sourceText": "How Box Breathing Can Help You Destress",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "1af221096337cc3e09c54d47e1d2d688bc2aecda7ed4657f42ce993f7166cd9e",
+          "sourceText": "Clinical overview of breathing techniques for stress management, including tactical breathing applications.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "ecc8b978d1ffb92f9b079a7f7a638cb781fd74636e3bed6437603ff0e6b5df49",
+          "sourceText": "Relaxation Techniques",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "896f697b1d5b91f5b282e44fdc2edb3a0d1733f5be8d6027794488f5c0f80b31",
+          "sourceText": "Stanford study showing breathwork outperformed mindfulness meditation for mood improvement and stress reduction.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "2dfc5c3bdc39bc5a5a2adf200c87c1ada83ffdcbc3a1e08638d6a9c1522b0ce8",
+          "sourceText": "Brief structured respiration practices enhance mood and reduce physiological arousal",
+          "status": "route-catalog-exact"
+        },
+        "relatedGuides[0].teaser": {
+          "sourceHash": "a565bc7f14ef1253cbe32787af2f3facb8afd9809f872e3f76ea0531f61fc1e5",
+          "sourceText": "A step-by-step protocol for using box breathing in the minutes before you present — eliminate stage fright before it starts",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedGuides[0].title": {
+          "sourceHash": "cfcb63ef22f82e7dc7faa8c4030fa7e6aa26fadb4a15e0dd0ad3e77a18cf1bed",
+          "sourceText": "Box Breathing Before a Presentation",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "4e5f847ef100bf18ac5817c76969d50982d44a6a645372084f4ef69e6249eaf7",
+          "sourceText": "Practice with the full-screen Box Breathing visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "6312d36ae157c36c3e5e510ac37d9e83f30b52356245e7fab212509f913b1eda",
+          "sourceText": "If pre-speech anxiety keeps you up the night before, try our 4-7-8 guide for better sleep",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "deea2e847c060286aeaed28912cb027ecd3519b3f7aecb5ec3a6d75d9a701365",
+          "sourceText": "Chronic performance anxiety? Box breathing trains your nervous system for sustained calm",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "1e8f7402edbc91ca5936e73de4d069043330074286124aa55bca332dc41d4b63",
+          "sourceText": "The exact breathing protocols Huberman uses before high-stakes situations and deep work.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "sourceText": "Why It Works",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "9ec444ef0141453f3338dca66bc2d156f7a2472d0b4e9ca3d092f855f39fe6b4",
+          "sourceText": "Slow, controlled breathing stimulates the vagus nerve, which runs from your brainstem to your abdomen. This activates your parasympathetic nervous system, the 'rest and digest' mode that counteracts fight-or-flight.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "49e5d08b69ea72a7eabd73be00e2f5d701849e2c33dcfa85d1737389867fc7bf",
+          "sourceText": "Vagus Nerve Activation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "d6832828d65ea70dcbf8ffcb0c6cd47586c599c1735d9686a8a0f4f6bb69a222",
+          "sourceText": "When anxious, you tend to over-breathe, depleting CO₂ and causing dizziness and tingling. The hold phases in box breathing normalize CO₂ levels, reducing physical anxiety symptoms.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "08aa3db1cef1426097c017dff577b489dbf3fdbdc1468f5dd0c2205f1068fba9",
+          "sourceText": "CO₂ Balance",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "b4e440bd8ff1978a89883cf691538293362a436111ead0b1de57166b0089b0c1",
+          "sourceText": "Counting breath phases occupies your prefrontal cortex, the same brain region that would otherwise be catastrophizing about what could go wrong. You literally crowd out anxious thoughts.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "1520c1090d04c66d67d7bbe99692c831778a9c87538135de728358e73431e147",
+          "sourceText": "Attention Anchoring",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "104b9a8902c1a47c523f55a1741579752aee133633725372ccd83e4b8114df71",
+          "sourceText": "Slow breathing increases heart rate variability (HRV), a marker of stress resilience. Higher HRV means your body can shift more easily between alert and calm states.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "986bd4d046b4baec8f949c7bafdd36b24d608a4f50dda165acbf9a5fc824f050",
+          "sourceText": "Heart Rate Variability",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "526b4c42a7d1cf44f501c1d03506f673b650fb62e2cd572d2cc21448cfd0f4e9",
+          "sourceText": "Box breathing (also called tactical breathing or four-square breathing) is used by Navy SEALs, surgeons, and elite performers to regain control under extreme pressure. The technique creates a rhythmic pattern of equal inhales, holds, and exhales that directly counters the panic response.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "e1baa88ad8df21196ace30777326016dc4dd2a908fdc81435ac4026804144494",
+          "sourceText": "Box Breathing: The Tactical Reset",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "60a0b5b281c053b07990a6613e472b2b4784cf27e09fc444220922c6df0b4bd6",
+          "sourceText": "The four equal phases (4-4-4-4) give your mind a simple structure to follow, breaking the rumination loop that feeds anxiety. The breath holds allow CO₂ to build up slightly, which paradoxically signals your brain that you're safe enough to pause. You wouldn't hold your breath if you were actually in danger.",
+          "status": "route-catalog-normalized"
+        }
+      }
+    },
+    "pt-br": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "f697ea4ac8f51cac028b933ad11611cd4ad6b9f675cb127969780ab63e98a4aa",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "77e3c5fdb098a727e4a3b38cb4b78ed851d9032b53bb0c59440f74b2bef1ffec",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.related-huberman-title": {
+          "sourceHash": "0980a2955954e76d7444478dff7f9c8e272c25551632e066b5e83b0b989553cf",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-box-app": {
+          "sourceHash": "7f77c1557f9441a20a2bcf9985050eae3c16380e63d8ef10af1f7aae4fdae7f4",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "e2331da2788a76ede4ddfa63f2b10094ae10a900efc4f59d432b4a5a6091e427",
+          "sourceText": "Start 2-5 minutes before you're due to speak. The calming effects kick in within 60-90 seconds and can last 15-20 minutes. If you're particularly anxious, do a longer session (5 minutes) 30 minutes before, then a quick 60-second refresher right before you go on.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].question": {
+          "sourceHash": "c533a274735df08e3408ec169c39aac4ff5bbc6507bee546ac52695bc9fbf64d",
+          "sourceText": "How far in advance should I start box breathing before a presentation?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "bf7c495151296521077a29cf75839813c295e12c84acb8d6fb012239fda99d80",
+          "sourceText": "Pause naturally. Take a sip of water or refer to your notes. Take one slow breath with a longer exhale (4 counts in, 6-8 counts out). This single breath can reset your nervous system enough to continue. For quicker relief mid-speech, try a physiological sigh: two quick inhales through your nose, then one long exhale.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "55f9ec28668089cc4dfe707d2c3325bd411f636e09dba2a88c2e23d8933b067e",
+          "sourceText": "What if I start panicking during my presentation?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "affbe5b0856b44912f14f61a4c4a1452ddb1ea1c295375d559f8a31742c48dce",
+          "sourceText": "Yes, but modify the technique. Shorten the counts to 2-3 seconds, skip the breath holds entirely, and keep the breathing light and quiet. The calming effect comes from the slow, rhythmic pattern, not from deep or forceful breathing. If you feel any discomfort, stop and return to normal breathing.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].question": {
+          "sourceHash": "d9f5645751a4bd0237e6e33ec4c35ee2c7b2199a4f360a4f746c37a1c76f9fab",
+          "sourceText": "Can I do this if I have asthma or breathing difficulties?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "ae0298a57d8bce3dbe34a5fe751f130d44494c4b261361cc5167e5f3415d53b5",
+          "sourceText": "No. Box breathing is completely invisible when done through the nose. You can practice while sitting in a meeting, standing backstage, or even walking to the podium. Keep your breathing quiet and your body relaxed, no one will know.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "0e43dc3511a8534e46c311b6f1ef86d16e88457f7653679c21038d3bad22c041",
+          "sourceText": "Will people notice I'm doing breathing exercises?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "9dba14dcb6d9b2c154c3021127639cc51279b8bf3cb9696f95debe389f408f14",
+          "sourceText": "Breathing techniques are highly effective for most presentation anxiety, but severe phobias may benefit from additional support like cognitive behavioral therapy (CBT) or gradual exposure practice. Box breathing is an excellent tool to use alongside other strategies. It won't eliminate all fear, but it will give you control over your physical symptoms.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[4].question": {
+          "sourceHash": "0c4d84bfc1e4c6f061774b9b4e567e58605480344d6dd5deefe49c849cb28d82",
+          "sourceText": "Does this really work for severe stage fright?",
+          "status": "route-catalog-exact"
+        },
+        "hero.intro": {
+          "sourceHash": "55aadb506dbb671d3694cb758e19ac26eef7c3c48520e57339d0ce4c08526f40",
+          "sourceText": "Your heart races. Your hands shake. Your mouth goes dry. Stage fright isn't a character flaw. It's your body's ancient survival system misfiring. Box breathing, the same technique used by Navy SEALs and first responders, can interrupt this panic response in under a minute.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "c52f3499b481a65ea4d5212ee68152f690afc311697d25709a704056554142b5",
+          "sourceText": "Stop stage fright in 60 seconds with the Navy SEAL method",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+          "sourceText": "Breathing Exercises for Public Speaking",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "da0e798f4dd856ecd52b3d6eca54ac43f8b86af84b02d63ce26b33322237dee7",
+          "sourceText": "Step away if possible: a bathroom, hallway, or even your car. If you can't leave, you can do this seated and discreetly.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "d72870b7a2ea060201d56edcd10e33c324ec32bb3ab4203edd37a31a1eaa1662",
+          "sourceText": "Find your spot",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "23473f81413b94a2438214f1d869beca883d81410d376ee9280690c125967659",
+          "sourceText": "2-5 minutes before speaking",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "6a96bf54a9e70bfadf32a7cf35d820423f453b2efb27a49b8b49e2a0ff5f259c",
+          "sourceText": "Sit or stand tall. Drop your shoulders. Unclench your jaw. Place one hand on your belly to feel it rise and fall.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "837d129118bcd774dbc47d16e818abce75733dad80ed895f356001acd65b6a5e",
+          "sourceText": "Set your posture",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "f78b958d638585f732f9665c58680242b88555a32786767f84d7c7da57020237",
+          "sourceText": "10 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "7d93d6bc3d6592810920bc873634e8fe4ec7bc6340fb1d341ef3fddb4bbb16a8",
+          "sourceText": "Breathe in slowly through your nose. Let your belly expand, not your chest. Count 1-2-3-4 at a comfortable pace.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "f320adbe95302f1b17c6fdad23ce40670528de85abb9b3a7647531643a809031",
+          "sourceText": "Inhale for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "a03b9f32aea1603a3966a021f52872497e3dbf85cc753bf22a205a27d672a7e6",
+          "sourceText": "Pause gently at the top. Don't clamp down, just let the breath rest. Count 1-2-3-4.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "5d242aad0b18e0459dd911150adb82961a321d284390d91194f24b04be41e139",
+          "sourceText": "Hold for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "d3c6a7055cae415352f2b41104e77f5ff5a19a3fb001e6b52f6f7c53f86f6f31",
+          "sourceText": "Release slowly through your nose or pursed lips. Feel your belly fall. Count 1-2-3-4.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "df80c8760043cb042f208768c67647697162e4caaad33be3f897b918cd9a742f",
+          "sourceText": "Exhale for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "908517e693b1b5be6aed7a9ab26c33a6842523cb7dfd28c45aa10ec80bead383",
+          "sourceText": "Pause at the bottom before inhaling again. Stay relaxed. Count 1-2-3-4.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "5d242aad0b18e0459dd911150adb82961a321d284390d91194f24b04be41e139",
+          "sourceText": "Hold for 4 counts",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+          "sourceText": "4 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].instruction": {
+          "sourceHash": "76218af17b4ede1388826f4618cc747c5ac33ccf0ed3fa86a87403bb56e677b6",
+          "sourceText": "Continue the pattern for 60-90 seconds. Most people feel noticeably calmer after 4 cycles.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].name": {
+          "sourceHash": "c5fbfe6cdd89a26e8bc6f603182a6273827a84d6095b8b2c9be4b53d2c0989a5",
+          "sourceText": "Repeat 4-6 cycles",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[6].timing": {
+          "sourceHash": "d0d4af1dc9106a080cc4e40884feb16a4535048b0ed22523838c6ccb0cdd0f01",
+          "sourceText": "60-90 seconds total",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "44f177c8ad9b55abae7607d29d5349b0bacd46adcfcb6f6fd32ae7d79f22eebf",
+          "sourceText": "Practice when you're NOT stressed so the technique becomes automatic",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "81f31f99af337fb73b35d6db1c7f4ee6ddb155b2c665138fb4b47ea68c9eea05",
+          "sourceText": "Do this in the waiting room, backstage, or while sitting in the audience before your turn",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "1cb1b36d73c1f92d35b4067c9d069f377aeb6e29b561694bd801c707c0097d48",
+          "sourceText": "If 4-second holds feel too long, start with 3 seconds and work up",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "5b46b4969071d2387611a17722289553f9ef624818aaf6dc49f137c7f375d482",
+          "sourceText": "The technique is invisible to others, no one will know you're doing it",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "8ca6d064f6ec3ba11adf0cf208068de42e3d1c1bad93764cf782149db17f0b41",
+          "sourceText": "Breathing exercises for public speaking that stop stage fright in 60 seconds. The Navy SEAL box breathing method used before 100,000+ presentations. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "f913e73050343da35bc4433aa7beab3db984b8f1956ead2674d0ed3024fe923a",
+          "sourceText": "Breathing techniques for public speaking that Navy SEALs use before combat. Stop presentation anxiety in 60 seconds. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "04094ba39da78ec32b307d4dc2f99ee603b28ac1c38854c16015399be51e5498",
+          "sourceText": "Breathing Exercises for Public Speaking — Stop Stage Fright",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "5f314dbab7c5b1686d919310e051f7957d3b575f13d1cd71f34176ae8d5aa40f",
+          "sourceText": "Breathing Exercises for Public Speaking: Stop Stage Fright in 60 Seconds",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "34d29a66a8a11366a291f8602a3ca2a4e4f57e685d413e6868debf94653838b3",
+          "sourceText": "Breathing exercises for public speaking that stop stage fright instantly. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "3930e0e42d65fc4bc95cb3bf898790f93a6812b820594b1d4820e9b75af07786",
+          "sourceText": "Breathing Exercises for Public Speaking — Navy SEAL Method",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "2d7d50760a2daaeff96adf047626e8798154f8c481242dc1405217113cc41f0b",
+          "sourceText": "When you're about to speak in front of others, your brain can't distinguish between a boardroom presentation and a life-threatening situation. It triggers the same ancient alarm system: adrenaline floods your bloodstream, your heart rate spikes, blood diverts from your brain to your muscles. This was useful when outrunning predators, not so helpful when delivering quarterly results.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "030e2c4e7e9f8beb85488e7a107fea9d949f165ef60a6a603be959939a134a59",
+          "sourceText": "The Fight-or-Flight Response",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "b61a4aa01817948c6719039a31a440f1e633ea66ff50077b5049e4f86ae076ea",
+          "sourceText": "Racing heart and pounding chest",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "793c190c6f7171d6ea3a7611d585b9b39e98ab466b8e50a62bb52e6e68fbd03f",
+          "sourceText": "Shaking hands and trembling voice",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "518c75c7c486ffbcdba09d534852b021926285172a0e41cba432615159abd639",
+          "sourceText": "Dry mouth and difficulty swallowing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "25b493a2e94e6497d3cc62488d68fa972b5af38f589796bf447f908447cefaa0",
+          "sourceText": "Shallow, rapid breathing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "1f7681330ad692c146d427d097044e520bd8c6fc1f60ab7d2dae1c37d04830ed",
+          "sourceText": "Mind going blank mid-sentence",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "1c583bb934a9e0e255c1c0a0e46372d39fa4d93f3aa6e97f1fb70efdcd83b24b",
+          "sourceText": "Sweating and flushed skin",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "0c94e03b325665a3308671541089c71722a3d139fa32d63b2de121c20698fbcc",
+          "sourceText": "Overview of how deep breathing activates the parasympathetic nervous system and reduces cortisol levels.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "4e669e1713fa28b44f8f7cfbdc84cf6b4594809ba75503f40e609b27ad3f0554",
+          "sourceText": "Deep Breathing Exercises & Techniques for Stress Management",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "4d5b5912d3d0c1114a83c8f08d67cf676e8367e481d2bd811553d56078295704",
+          "sourceText": "Medical review of box breathing benefits including stress reduction and blood pressure regulation.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "f71cdb579b061e1a9839e838f75f9d0e45429eaf0d82565b0e4c542e10e8f0c6",
+          "sourceText": "How Box Breathing Can Help You Destress",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "1af221096337cc3e09c54d47e1d2d688bc2aecda7ed4657f42ce993f7166cd9e",
+          "sourceText": "Clinical overview of breathing techniques for stress management, including tactical breathing applications.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "ecc8b978d1ffb92f9b079a7f7a638cb781fd74636e3bed6437603ff0e6b5df49",
+          "sourceText": "Relaxation Techniques",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "896f697b1d5b91f5b282e44fdc2edb3a0d1733f5be8d6027794488f5c0f80b31",
+          "sourceText": "Stanford study showing breathwork outperformed mindfulness meditation for mood improvement and stress reduction.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "2dfc5c3bdc39bc5a5a2adf200c87c1ada83ffdcbc3a1e08638d6a9c1522b0ce8",
+          "sourceText": "Brief structured respiration practices enhance mood and reduce physiological arousal",
+          "status": "route-catalog-exact"
+        },
+        "relatedGuides[0].teaser": {
+          "sourceHash": "a565bc7f14ef1253cbe32787af2f3facb8afd9809f872e3f76ea0531f61fc1e5",
+          "sourceText": "A step-by-step protocol for using box breathing in the minutes before you present — eliminate stage fright before it starts",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedGuides[0].title": {
+          "sourceHash": "cfcb63ef22f82e7dc7faa8c4030fa7e6aa26fadb4a15e0dd0ad3e77a18cf1bed",
+          "sourceText": "Box Breathing Before a Presentation",
+          "status": "global-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "4e5f847ef100bf18ac5817c76969d50982d44a6a645372084f4ef69e6249eaf7",
+          "sourceText": "Practice with the full-screen Box Breathing visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "6312d36ae157c36c3e5e510ac37d9e83f30b52356245e7fab212509f913b1eda",
+          "sourceText": "If pre-speech anxiety keeps you up the night before, try our 4-7-8 guide for better sleep",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "deea2e847c060286aeaed28912cb027ecd3519b3f7aecb5ec3a6d75d9a701365",
+          "sourceText": "Chronic performance anxiety? Box breathing trains your nervous system for sustained calm",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "1e8f7402edbc91ca5936e73de4d069043330074286124aa55bca332dc41d4b63",
+          "sourceText": "The exact breathing protocols Huberman uses before high-stakes situations and deep work.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "sourceText": "Why It Works",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "9ec444ef0141453f3338dca66bc2d156f7a2472d0b4e9ca3d092f855f39fe6b4",
+          "sourceText": "Slow, controlled breathing stimulates the vagus nerve, which runs from your brainstem to your abdomen. This activates your parasympathetic nervous system, the 'rest and digest' mode that counteracts fight-or-flight.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "49e5d08b69ea72a7eabd73be00e2f5d701849e2c33dcfa85d1737389867fc7bf",
+          "sourceText": "Vagus Nerve Activation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "d6832828d65ea70dcbf8ffcb0c6cd47586c599c1735d9686a8a0f4f6bb69a222",
+          "sourceText": "When anxious, you tend to over-breathe, depleting CO₂ and causing dizziness and tingling. The hold phases in box breathing normalize CO₂ levels, reducing physical anxiety symptoms.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "08aa3db1cef1426097c017dff577b489dbf3fdbdc1468f5dd0c2205f1068fba9",
+          "sourceText": "CO₂ Balance",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "b4e440bd8ff1978a89883cf691538293362a436111ead0b1de57166b0089b0c1",
+          "sourceText": "Counting breath phases occupies your prefrontal cortex, the same brain region that would otherwise be catastrophizing about what could go wrong. You literally crowd out anxious thoughts.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "1520c1090d04c66d67d7bbe99692c831778a9c87538135de728358e73431e147",
+          "sourceText": "Attention Anchoring",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "104b9a8902c1a47c523f55a1741579752aee133633725372ccd83e4b8114df71",
+          "sourceText": "Slow breathing increases heart rate variability (HRV), a marker of stress resilience. Higher HRV means your body can shift more easily between alert and calm states.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "986bd4d046b4baec8f949c7bafdd36b24d608a4f50dda165acbf9a5fc824f050",
+          "sourceText": "Heart Rate Variability",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "526b4c42a7d1cf44f501c1d03506f673b650fb62e2cd572d2cc21448cfd0f4e9",
+          "sourceText": "Box breathing (also called tactical breathing or four-square breathing) is used by Navy SEALs, surgeons, and elite performers to regain control under extreme pressure. The technique creates a rhythmic pattern of equal inhales, holds, and exhales that directly counters the panic response.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "e1baa88ad8df21196ace30777326016dc4dd2a908fdc81435ac4026804144494",
+          "sourceText": "Box Breathing: The Tactical Reset",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "60a0b5b281c053b07990a6613e472b2b4784cf27e09fc444220922c6df0b4bd6",
+          "sourceText": "The four equal phases (4-4-4-4) give your mind a simple structure to follow, breaking the rumination loop that feeds anxiety. The breath holds allow CO₂ to build up slightly, which paradoxically signals your brain that you're safe enough to pause. You wouldn't hold your breath if you were actually in danger.",
+          "status": "route-catalog-normalized"
+        }
+      }
+    }
+  },
+  "schemaVersion": 1,
+  "sourceRoute": "/for/public-speaking"
+}

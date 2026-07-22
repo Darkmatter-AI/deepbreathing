@@ -1,0 +1,145 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.pattern.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "7cf55062b774e48eb9852a60159ad62838ea98bbb9c587c9e11af6c19539ab65",
+      "scope": "chrome",
+      "sourceText": "Try this guided alternate nostril breathing (nadi shodhana) exercise — it really helps.",
+      "translations": {
+        "de-de": "Probiere diese geführte Übung zur Wechselatmung (Nadi Shodhana) aus — sie hilft wirklich.",
+        "es-es": "Prueba este ejercicio guiado de respiración nasal alterna (Nadi Shodhana) — de verdad ayuda.",
+        "fr-fr": "Essayez cet exercice guidé de respiration alternée (Nadi Shodhana) — il aide vraiment.",
+        "ja-jp": "この片鼻呼吸法（Nadi Shodhana）のガイド付きエクササイズを試してみてください。本当に役立ちます。",
+        "pt-br": "Experimente este exercício guiado de respiração alternada pelas narinas (Nadi Shodhana) — ele realmente ajuda."
+      }
+    },
+    {
+      "messageId": "chrome.pattern.og-alt",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "9729641b44ac9d080a9816a0540e55587845e85f58fbdb1c535a3a49d69cd835",
+      "scope": "chrome",
+      "sourceText": "Alternate Nostril Breathing (Nadi Shodhana) – Interactive breathing visualizer",
+      "translations": {
+        "de-de": "Wechselatmung (Nadi Shodhana) – Interaktiver Atemvisualisierer",
+        "es-es": "Respiración nasal alterna (Nadi Shodhana) – Visualizador interactivo de respiración",
+        "fr-fr": "Respiration alternée (Nadi Shodhana) – Visualiseur de respiration interactif",
+        "ja-jp": "片鼻呼吸法（Nadi Shodhana）– インタラクティブな呼吸ビジュアライザー",
+        "pt-br": "Respiração alternada pelas narinas (Nadi Shodhana) – Visualizador interativo de respiração"
+      }
+    },
+    {
+      "messageId": "body[0].content",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "c134ffac0d1e1f964114137ebbe857ff5d577c3d8cf802c86aee096100f48562",
+      "scope": "content",
+      "sourceText": "Alternate nostril breathing (Nadi Shodhana) is a yogic pranayama technique where you inhale through one nostril, hold briefly, and exhale through the other, alternating sides in a rhythmic pattern. The name means \"channel cleansing\" in Sanskrit, and the practice has been used for thousands of years to balance the nervous system and calm the mind. What distinguishes it from other breathing techniques is the nostril alternation itself—research shows it can lower blood pressure, reduce heart rate, and improve attention more than simple slow breathing alone.\n\nNadi Shodhana (pronounced NAH-dee show-DAH-nah) is believed to balance the ida (left/lunar/cooling) and pingala (right/solar/warming) energy channels, leading to mental clarity and emotional balance.",
+      "translations": {
+        "de-de": "Die Wechselatmung (Nadi Shodhana) ist eine yogische Pranayama-Technik, bei der du durch ein Nasenloch einatmest, den Atem kurz hältst und durch das andere ausatmest. Dabei wechselst du in einem rhythmischen Muster die Seiten. Der Name bedeutet auf Sanskrit „Reinigung der Kanäle“, und die Praxis wird seit Tausenden von Jahren angewandt, um das Nervensystem auszugleichen und den Geist zu beruhigen. Was sie von anderen Atemtechniken unterscheidet, ist der Wechsel der Nasenlöcher selbst — Forschung zeigt, dass er den Blutdruck und die Herzfrequenz stärker senken und die Aufmerksamkeit stärker verbessern kann als langsames Atmen allein.\n\nNadi Shodhana (ausgesprochen NAH-di scho-DAH-na) soll die Energiekanäle Ida (links/Mond/kühlend) und Pingala (rechts/Sonne/wärmend) ausgleichen und so zu geistiger Klarheit und emotionalem Gleichgewicht führen.",
+        "es-es": "La respiración nasal alterna (Nadi Shodhana) es una técnica yóguica de pranayama en la que se inhala por una fosa nasal, se retiene brevemente el aire y se exhala por la otra, alternando los lados con un patrón rítmico. El nombre significa «limpieza de los canales» en sánscrito, y esta práctica se utiliza desde hace miles de años para equilibrar el sistema nervioso y calmar la mente. Lo que la distingue de otras técnicas respiratorias es la propia alternancia de las fosas nasales: las investigaciones muestran que puede reducir la presión arterial y la frecuencia cardíaca, y mejorar la atención, más que la simple respiración lenta por sí sola.\n\nSe cree que Nadi Shodhana (pronunciado NA-di sho-DA-na) equilibra los canales energéticos ida (izquierdo/lunar/refrescante) y pingala (derecho/solar/cálido), lo que conduce a la claridad mental y el equilibrio emocional.",
+        "fr-fr": "La respiration alternée (Nadi Shodhana) est une technique yogique de pranayama qui consiste à inspirer par une narine, à retenir brièvement son souffle, puis à expirer par l’autre, en alternant les côtés selon un rythme régulier. Son nom signifie « purification des canaux » en sanskrit, et cette pratique est utilisée depuis des milliers d’années pour équilibrer le système nerveux et apaiser l’esprit. Ce qui la distingue des autres techniques respiratoires, c’est l’alternance des narines elle-même — les recherches montrent qu’elle peut abaisser la tension artérielle, ralentir la fréquence cardiaque et améliorer l’attention davantage qu’une simple respiration lente.\n\nNadi Shodhana (prononcé NA-di sho-DA-na) est censé équilibrer les canaux énergétiques ida (gauche/lunaire/rafraîchissant) et pingala (droite/solaire/réchauffant), favorisant ainsi la clarté mentale et l’équilibre émotionnel.",
+        "ja-jp": "片鼻呼吸法（Nadi Shodhana）はヨガのプラーナーヤーマ技法で、片方の鼻孔から息を吸い、短く止めてから、反対側の鼻孔から吐き、リズミカルに左右を交互に切り替えます。この名称はサンスクリット語で「経路の浄化」を意味し、神経系のバランスを整え、心を落ち着かせるために何千年も実践されてきました。ほかの呼吸法との違いは、鼻孔を交互に使うこと自体にあります。研究では、単にゆっくり呼吸する場合よりも、血圧を下げ、心拍数を減らし、注意力を高める可能性があることが示されています。\n\nNadi Shodhana（発音：NAH-dee show-DAH-nah）は、ida（左／月／冷却）とpingala（右／太陽／加温）というエネルギー経路のバランスを整え、頭の明晰さと感情の安定につながると考えられています。",
+        "pt-br": "A respiração alternada pelas narinas (Nadi Shodhana) é uma técnica iogue de pranayama na qual você inspira por uma narina, segura o ar brevemente e expira pela outra, alternando os lados em um padrão rítmico. O nome significa “limpeza dos canais” em sânscrito, e a prática é usada há milhares de anos para equilibrar o sistema nervoso e acalmar a mente. O que a diferencia de outras técnicas respiratórias é a própria alternância das narinas — pesquisas mostram que ela pode reduzir a pressão arterial e a frequência cardíaca e melhorar a atenção mais do que apenas respirar lentamente.\n\nAcredita-se que Nadi Shodhana (pronunciado NAH-di show-DAH-nah) equilibre os canais de energia ida (esquerdo/lunar/refrescante) e pingala (direito/solar/aquecedor), promovendo clareza mental e equilíbrio emocional."
+      }
+    },
+    {
+      "messageId": "body[2].content",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "de2110c7d3b8f1fc56f5fdc306b960eca034e3382581eae9a7bf773a66d4b51a",
+      "scope": "content",
+      "sourceText": "1. Sit comfortably with your spine tall and shoulders relaxed.\n2. Form Vishnu Mudra with your right hand: fold your index and middle fingers down, keeping your thumb, ring finger, and pinky extended.\n3. Close your right nostril with your thumb. Inhale slowly through your left nostril for 4 counts.\n4. Close both nostrils (thumb on right, ring finger on left). Hold gently for 4 counts.\n5. Release your thumb and exhale through your right nostril for 4 counts.\n6. Keep the left nostril closed. Inhale through your right nostril for 4 counts.\n7. Close both nostrils. Hold gently for 4 counts.\n8. Release your ring finger and exhale through your left nostril for 4 counts.\n9. That is one complete round. Continue for 5–10 rounds (about 5–15 minutes).",
+      "translations": {
+        "de-de": "1. Setze dich bequem hin, halte die Wirbelsäule aufrecht und entspanne die Schultern.\n2. Bilde mit der rechten Hand Vishnu Mudra: Klappe Zeige- und Mittelfinger ein und lasse Daumen, Ringfinger und kleinen Finger ausgestreckt.\n3. Verschließe das rechte Nasenloch mit dem Daumen. Atme langsam 4 Zählzeiten lang durch das linke Nasenloch ein.\n4. Verschließe beide Nasenlöcher (Daumen rechts, Ringfinger links). Halte den Atem sanft für 4 Zählzeiten.\n5. Löse den Daumen und atme 4 Zählzeiten lang durch das rechte Nasenloch aus.\n6. Halte das linke Nasenloch geschlossen. Atme 4 Zählzeiten lang durch das rechte Nasenloch ein.\n7. Verschließe beide Nasenlöcher. Halte den Atem sanft für 4 Zählzeiten.\n8. Löse den Ringfinger und atme 4 Zählzeiten lang durch das linke Nasenloch aus.\n9. Damit ist eine vollständige Runde abgeschlossen. Fahre für 5–10 Runden fort (etwa 5–15 Minuten).",
+        "es-es": "1. Siéntate cómodamente con la columna erguida y los hombros relajados.\n2. Forma Vishnu Mudra con la mano derecha: dobla hacia abajo los dedos índice y corazón, y mantén extendidos el pulgar, el anular y el meñique.\n3. Cierra la fosa nasal derecha con el pulgar. Inhala lentamente por la fosa nasal izquierda durante 4 tiempos.\n4. Cierra ambas fosas nasales (el pulgar en la derecha y el anular en la izquierda). Mantén la retención suavemente durante 4 tiempos.\n5. Retira el pulgar y exhala por la fosa nasal derecha durante 4 tiempos.\n6. Mantén cerrada la fosa nasal izquierda. Inhala por la fosa nasal derecha durante 4 tiempos.\n7. Cierra ambas fosas nasales. Mantén la retención suavemente durante 4 tiempos.\n8. Retira el dedo anular y exhala por la fosa nasal izquierda durante 4 tiempos.\n9. Esto completa una ronda. Continúa durante 5–10 rondas (unos 5–15 minutos).",
+        "fr-fr": "1. Asseyez-vous confortablement, le dos bien droit et les épaules détendues.\n2. Formez Vishnu Mudra avec la main droite : repliez l’index et le majeur, tout en gardant le pouce, l’annulaire et l’auriculaire tendus.\n3. Fermez la narine droite avec le pouce. Inspirez lentement par la narine gauche pendant 4 temps.\n4. Fermez les deux narines (pouce à droite, annulaire à gauche). Retenez doucement votre souffle pendant 4 temps.\n5. Relâchez le pouce et expirez par la narine droite pendant 4 temps.\n6. Gardez la narine gauche fermée. Inspirez par la narine droite pendant 4 temps.\n7. Fermez les deux narines. Retenez doucement votre souffle pendant 4 temps.\n8. Relâchez l’annulaire et expirez par la narine gauche pendant 4 temps.\n9. Cela constitue un cycle complet. Continuez pendant 5–10 cycles (environ 5–15 minutes).",
+        "ja-jp": "1. 背筋を伸ばし、肩の力を抜いて楽に座ります。\n2. 右手でVishnu Mudraを作ります。人差し指と中指を折り、親指、薬指、小指は伸ばしたままにします。\n3. 親指で右の鼻孔を閉じます。左の鼻孔から4カウントかけてゆっくり息を吸います。\n4. 両方の鼻孔を閉じます（親指を右、薬指を左に当てます）。4カウント、無理なく息を止めます。\n5. 親指を離し、右の鼻孔から4カウントかけて息を吐きます。\n6. 左の鼻孔は閉じたままにします。右の鼻孔から4カウントかけて息を吸います。\n7. 両方の鼻孔を閉じ、4カウント、無理なく息を止めます。\n8. 薬指を離し、左の鼻孔から4カウントかけて息を吐きます。\n9. これで1ラウンドです。5～10ラウンド（約5～15分）続けます。",
+        "pt-br": "1. Sente-se confortavelmente, com a coluna ereta e os ombros relaxados.\n2. Faça Vishnu Mudra com a mão direita: dobre os dedos indicador e médio, mantendo o polegar, o anelar e o mindinho estendidos.\n3. Feche a narina direita com o polegar. Inspire lentamente pela narina esquerda por 4 tempos.\n4. Feche as duas narinas (polegar na direita, anelar na esquerda). Segure o ar suavemente por 4 tempos.\n5. Solte o polegar e expire pela narina direita por 4 tempos.\n6. Mantenha a narina esquerda fechada. Inspire pela narina direita por 4 tempos.\n7. Feche as duas narinas. Segure o ar suavemente por 4 tempos.\n8. Solte o dedo anelar e expire pela narina esquerda por 4 tempos.\n9. Isso completa uma rodada. Continue por 5–10 rodadas (cerca de 5–15 minutos)."
+      }
+    },
+    {
+      "messageId": "body[2].heading",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "173391ad0ee96275e96a4a5e5d14ea6b1bc2e44ad644e5b6f6b53b59690845d8",
+      "scope": "content",
+      "sourceText": "How to Do Alternate Nostril Breathing (Step by Step)",
+      "translations": {
+        "de-de": "So führst du die Wechselatmung aus (Schritt für Schritt)",
+        "es-es": "Cómo hacer la respiración nasal alterna (paso a paso)",
+        "fr-fr": "Comment pratiquer la respiration alternée (étape par étape)",
+        "ja-jp": "片鼻呼吸法のやり方（ステップごと）",
+        "pt-br": "Como fazer a respiração alternada pelas narinas (passo a passo)"
+      }
+    },
+    {
+      "messageId": "faqs[5].answer",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "478a94ceff83f8e9629420275ef7debeb18d63d2957ceca7aafb42f3f99e2df7",
+      "scope": "content",
+      "sourceText": "[Research shows alternate nostril breathing can reduce blood pressure, lower heart rate](https://doi.org/10.12659/MSMBR.892063), and decrease anxiety. Studies also show it may improve attention and fine motor coordination. The mechanism appears to be related to activating the parasympathetic nervous system through slow, controlled breathing.",
+      "translations": {
+        "de-de": "[Forschung zeigt, dass die Wechselatmung den Blutdruck und die Herzfrequenz senken](https://doi.org/10.12659/MSMBR.892063) und Angst reduzieren kann. Studien zeigen außerdem, dass sie die Aufmerksamkeit und die feinmotorische Koordination verbessern kann. Der Mechanismus scheint damit zusammenzuhängen, dass langsames, kontrolliertes Atmen das parasympathische Nervensystem aktiviert.",
+        "es-es": "[Las investigaciones muestran que la respiración nasal alterna puede reducir la presión arterial y la frecuencia cardíaca](https://doi.org/10.12659/MSMBR.892063), además de disminuir la ansiedad. Los estudios también indican que puede mejorar la atención y la coordinación motora fina. El mecanismo parece estar relacionado con la activación del sistema nervioso parasimpático mediante una respiración lenta y controlada.",
+        "fr-fr": "[Les recherches montrent que la respiration alternée peut réduire la tension artérielle et ralentir la fréquence cardiaque](https://doi.org/10.12659/MSMBR.892063), ainsi que diminuer l’anxiété. Les études montrent également qu’elle peut améliorer l’attention et la coordination motrice fine. Le mécanisme semble lié à l’activation du système nerveux parasympathique par une respiration lente et contrôlée.",
+        "ja-jp": "[研究では、片鼻呼吸法が血圧を下げ、心拍数を減らし](https://doi.org/10.12659/MSMBR.892063)、不安を軽減できることが示されています。また、注意力や微細運動の協調性を高める可能性も研究で示されています。そのメカニズムは、ゆっくりと制御された呼吸によって副交感神経系が活性化されることに関係していると考えられます。",
+        "pt-br": "[Pesquisas mostram que a respiração alternada pelas narinas pode reduzir a pressão arterial e a frequência cardíaca](https://doi.org/10.12659/MSMBR.892063), além de diminuir a ansiedade. Estudos também mostram que ela pode melhorar a atenção e a coordenação motora fina. O mecanismo parece estar relacionado à ativação do sistema nervoso parassimpático por meio da respiração lenta e controlada."
+      }
+    },
+    {
+      "messageId": "howTo.tools[0]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "10505aeb5ec3458599a65ff69bc4d9817ce855fe8ecc612d131dfaeaaa087487",
+      "scope": "content",
+      "sourceText": "Comfortable seated position",
+      "translations": {
+        "de-de": "Bequeme Sitzposition",
+        "es-es": "Posición sentada cómoda",
+        "fr-fr": "Position assise confortable",
+        "ja-jp": "快適な座位",
+        "pt-br": "Posição sentada confortável"
+      }
+    },
+    {
+      "messageId": "howTo.tools[1]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "05cb0517dcd0fc7c4326fca0a9f0ed09a9d09e447f69026e27fb4d0aed79eaf4",
+      "scope": "content",
+      "sourceText": "Timer or visualizer for rhythm",
+      "translations": {
+        "de-de": "Timer oder Visualisierer für den Rhythmus",
+        "es-es": "Temporizador o visualizador para seguir el ritmo",
+        "fr-fr": "Minuteur ou visualiseur pour le rythme",
+        "ja-jp": "リズム用のタイマーまたはビジュアライザー",
+        "pt-br": "Cronômetro ou visualizador para o ritmo"
+      }
+    },
+    {
+      "messageId": "lineage",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "b804e6f953c287f47b56bdcda3c3cec5ed75664b9234f79655fc51aaac3941d5",
+      "scope": "content",
+      "sourceText": "A pranayama practice from the Hatha Yoga tradition, documented in the 15th-century *Hatha Yoga Pradipika* and the *Gheranda Samhita*, where it is described as a purification of the *nadis* (subtle energy channels) and is taught as a foundation for more advanced breath work.",
+      "translations": {
+        "de-de": "Eine Pranayama-Praxis aus der Hatha-Yoga-Tradition, die in der *Hatha Yoga Pradipika* aus dem 15. Jahrhundert und in der *Gheranda Samhita* dokumentiert ist. Dort wird sie als Reinigung der *nadis* (subtile Energiekanäle) beschrieben und als Grundlage für fortgeschrittenere Atemarbeit gelehrt.",
+        "es-es": "Una práctica de pranayama de la tradición del hatha yoga, documentada en la *Hatha Yoga Pradipika* del siglo 15 y en la *Gheranda Samhita*, donde se describe como una purificación de los *nadis* (canales de energía sutil) y se enseña como base para prácticas respiratorias más avanzadas.",
+        "fr-fr": "Une pratique de pranayama issue de la tradition du hatha yoga, documentée dans la *Hatha Yoga Pradipika* du 15e siècle et la *Gheranda Samhita*, où elle est décrite comme une purification des *nadis* (canaux énergétiques subtils) et enseignée comme fondement d’un travail respiratoire plus avancé.",
+        "ja-jp": "ハタヨガの伝統に由来するプラーナーヤーマの実践で、15世紀の*Hatha Yoga Pradipika*と*Gheranda Samhita*に記録されています。そこでは、*nadis*（微細なエネルギー経路）を浄化するものとして説明され、より高度な呼吸法の基礎として教えられています。",
+        "pt-br": "Uma prática de pranayama da tradição da hatha yoga, documentada no *Hatha Yoga Pradipika*, do século 15, e no *Gheranda Samhita*, onde é descrita como uma purificação dos *nadis* (canais de energia sutil) e ensinada como base para práticas respiratórias mais avançadas."
+      }
+    },
+    {
+      "messageId": "practiceTips[1].title",
+      "reason": "route-catalog-exact-conflict",
+      "reviewedSourceHash": "4b3aff14432579cc38d0ae5eaebce559b7d08eb90aec6926a1435d7b1f4f8c8b",
+      "scope": "content",
+      "sourceText": "Keep it gentle",
+      "translations": {
+        "de-de": "Bleibe sanft",
+        "fr-fr": "Pratiquez en douceur",
+        "ja-jp": "無理なく穏やかに",
+        "pt-br": "Mantenha a prática suave"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/breathe/nadi-shodhana"
+}

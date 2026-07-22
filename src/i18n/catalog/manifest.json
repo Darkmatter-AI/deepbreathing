@@ -1,0 +1,6207 @@
+{
+  "counts": {
+    "approvedTranslationRecords": 22084,
+    "artifactFiles": 300,
+    "currentPlacements": 7012,
+    "draftTranslationRecords": 0,
+    "manualOverridePlacements": 0,
+    "orphanTranslationRecords": 280,
+    "pages": 59,
+    "sourceSegments": 11033,
+    "translationRecords": 22084,
+    "unplacedSourceSegments": 6836,
+    "unplacedUntranslatedSourceSegments": 6677
+  },
+  "files": [
+    {
+      "bytes": 25545,
+      "locale": "de-de",
+      "path": "de-de/_orphaned-translations.json",
+      "records": 30,
+      "sha256": "2f16649536f36303b1ded95754bb718f33a57dc3ca45747ef3e155de87f5f55b",
+      "type": "orphaned"
+    },
+    {
+      "bytes": 82071,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/1-minute-breathing-exercise.json",
+      "route": "/1-minute-breathing-exercise",
+      "segments": 79,
+      "sha256": "8f6c04f04b0fffe3449c4eb6849c2b7d7866a51870c7e52506f197849bab024a",
+      "translatedSegments": 79,
+      "type": "route"
+    },
+    {
+      "bytes": 81262,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/2-minute-breathing-exercise.json",
+      "route": "/2-minute-breathing-exercise",
+      "segments": 78,
+      "sha256": "9fb3c04265e26da07bd8cb405b98b7dd008e9fc8c8bd85ebf002b38115b769cb",
+      "translatedSegments": 78,
+      "type": "route"
+    },
+    {
+      "bytes": 84401,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/4-7-8-breathing-for-insomnia.json",
+      "route": "/4-7-8-breathing-for-insomnia",
+      "segments": 82,
+      "sha256": "f9ba8714480fac5312982ba7c02f82e204cb7a9a35e70d45bf9f664f5db24a7b",
+      "translatedSegments": 82,
+      "type": "route"
+    },
+    {
+      "bytes": 189615,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/4-7-8-breathing-timer.json",
+      "route": "/4-7-8-breathing-timer",
+      "segments": 179,
+      "sha256": "1d2e297ae7527afda6e050b0bae0873e932e6e4edfed4b21f44d822cec16efc1",
+      "translatedSegments": 179,
+      "type": "route"
+    },
+    {
+      "bytes": 93483,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/5-minute-breathing-exercise.json",
+      "route": "/5-minute-breathing-exercise",
+      "segments": 89,
+      "sha256": "76886102682be692c3fe0bf0ab2816d648d8c162f7beeee0903592927a91880d",
+      "translatedSegments": 89,
+      "type": "route"
+    },
+    {
+      "bytes": 188261,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 13,
+      "path": "de-de/pages/_root.json",
+      "route": "/",
+      "segments": 198,
+      "sha256": "7635d7f561ef1e8267a8cba7c3fcd1eca8d3b1a99ce9ff978625b0890af5998f",
+      "translatedSegments": 185,
+      "type": "route"
+    },
+    {
+      "bytes": 32380,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/about.json",
+      "route": "/about",
+      "segments": 31,
+      "sha256": "f43191f6a57e0f9d2f2a5c39b1d9c17ff5280c2872bf6a1d5ad390f83825d8ec",
+      "translatedSegments": 31,
+      "type": "route"
+    },
+    {
+      "bytes": 48066,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/about/abi.json",
+      "route": "/about/abi",
+      "segments": 45,
+      "sha256": "d9c0fba58e37e29a50ce9847e9d61cbb403e172c926b3eea095b9c1f8be73d2c",
+      "translatedSegments": 45,
+      "type": "route"
+    },
+    {
+      "bytes": 54653,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/about/editorial-policy.json",
+      "route": "/about/editorial-policy",
+      "segments": 52,
+      "sha256": "8a1e34eb96e6e1925007b7f17ee19b4e21c6fbb8284534494d1b82d629911975",
+      "translatedSegments": 52,
+      "type": "route"
+    },
+    {
+      "bytes": 116628,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/box-breathing-app.json",
+      "route": "/box-breathing-app",
+      "segments": 110,
+      "sha256": "838243dc20d19134bbb7d9fe31431c9c5606b15c4af7e5f2569d4aaec68511cb",
+      "translatedSegments": 110,
+      "type": "route"
+    },
+    {
+      "bytes": 90312,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 12,
+      "path": "de-de/pages/box-breathing-before-presentation.json",
+      "route": "/box-breathing-before-presentation",
+      "segments": 93,
+      "sha256": "00d45c2ae46bcd09387cdc687ce27df1a5cfb603fd1a71d98ed8ec199d260828",
+      "translatedSegments": 81,
+      "type": "route"
+    },
+    {
+      "bytes": 109247,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/brand-lab.json",
+      "route": "/brand-lab",
+      "segments": 113,
+      "sha256": "fecbd9f4bf0a4ea6f2060bb284c98bb7281f3a789a6920b15d7c2613529888ac",
+      "translatedSegments": 113,
+      "type": "route"
+    },
+    {
+      "bytes": 66608,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/breathe.json",
+      "route": "/breathe",
+      "segments": 67,
+      "sha256": "e0f268d2761bd85ff4a9a47811ff0ad2ea582290dfc710466e005807ed772311",
+      "translatedSegments": 67,
+      "type": "route"
+    },
+    {
+      "bytes": 198530,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/breathe/4-7-8.json",
+      "route": "/breathe/4-7-8",
+      "segments": 192,
+      "sha256": "14f85038a56ab104251e90f0ff5545088825ae5a5396b2841075920613df1a06",
+      "translatedSegments": 192,
+      "type": "route"
+    },
+    {
+      "bytes": 124181,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/breathe/9d-breathwork.json",
+      "route": "/breathe/9d-breathwork",
+      "segments": 109,
+      "sha256": "2b2a445294f8ee89e87961e3cbc05f3f866767abfad5a708d800d7d0117e7060",
+      "translatedSegments": 109,
+      "type": "route"
+    },
+    {
+      "bytes": 173028,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/breathe/belly.json",
+      "route": "/breathe/belly",
+      "segments": 164,
+      "sha256": "5c4671adeec9b0d2ffc00550ae1ae5426f11a28767c5c1262f0af5d5f85cea68",
+      "translatedSegments": 164,
+      "type": "route"
+    },
+    {
+      "bytes": 204107,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/breathe/box.json",
+      "route": "/breathe/box",
+      "segments": 194,
+      "sha256": "1ee96a1520333290eb8c2b620deef00487f8fba189c7a661dae773026204dd31",
+      "translatedSegments": 194,
+      "type": "route"
+    },
+    {
+      "bytes": 158351,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/breathe/breath-of-fire.json",
+      "route": "/breathe/breath-of-fire",
+      "segments": 149,
+      "sha256": "4f1bb8b938a91a27086f763fa19e3a3406fd86353f440919b0c534e7efde4922",
+      "translatedSegments": 149,
+      "type": "route"
+    },
+    {
+      "bytes": 179169,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/breathe/buteyko.json",
+      "route": "/breathe/buteyko",
+      "segments": 170,
+      "sha256": "6505f38c7a2989aec5ed8ddd32ad26a502c81ff34135bd13ea311a38a277f72e",
+      "translatedSegments": 170,
+      "type": "route"
+    },
+    {
+      "bytes": 187980,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/breathe/coherent.json",
+      "route": "/breathe/coherent",
+      "segments": 183,
+      "sha256": "c4818ac42d23a8e491998d6659f2e0e7b1be78221dc0c7f533b3b696c0f21a9b",
+      "translatedSegments": 183,
+      "type": "route"
+    },
+    {
+      "bytes": 131939,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/breathe/hope-cartel-9d-breathwork.json",
+      "route": "/breathe/hope-cartel-9d-breathwork",
+      "segments": 117,
+      "sha256": "43e3d758d907220f0228519667192177d002816c783368291471c7368946dda0",
+      "translatedSegments": 117,
+      "type": "route"
+    },
+    {
+      "bytes": 210989,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/breathe/nadi-shodhana.json",
+      "route": "/breathe/nadi-shodhana",
+      "segments": 206,
+      "sha256": "340849083e08575c7e3b5d7708a6575a4a1250e4b078af29091c7e48fe69c552",
+      "translatedSegments": 206,
+      "type": "route"
+    },
+    {
+      "bytes": 256007,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/breathe/physiological-sigh.json",
+      "route": "/breathe/physiological-sigh",
+      "segments": 238,
+      "sha256": "af5385cde3704c46efb42daf28abe3942011dcb66e8465b53855b91c1b4ac3b1",
+      "translatedSegments": 238,
+      "type": "route"
+    },
+    {
+      "bytes": 174483,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/breathe/pursed-lip.json",
+      "route": "/breathe/pursed-lip",
+      "segments": 168,
+      "sha256": "c4aae1cb9f7958c1e3a5ff76684dcca2389d2178ee52ff051b186fd7d9d4b92e",
+      "translatedSegments": 168,
+      "type": "route"
+    },
+    {
+      "bytes": 211632,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/breathe/tummo.json",
+      "route": "/breathe/tummo",
+      "segments": 201,
+      "sha256": "c08c26e40928ac6ab928614d4c72d01abf3ce732b34ab253a9780b57aad54377",
+      "translatedSegments": 201,
+      "type": "route"
+    },
+    {
+      "bytes": 173085,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/breathe/ujjayi.json",
+      "route": "/breathe/ujjayi",
+      "segments": 165,
+      "sha256": "8c4df35cae8dc143c2d9cc96f5cca41e9547e9ed15db63cebddc6b5fe873d0d4",
+      "translatedSegments": 165,
+      "type": "route"
+    },
+    {
+      "bytes": 174311,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/breathe/wim-hof.json",
+      "route": "/breathe/wim-hof",
+      "segments": 167,
+      "sha256": "b316c41dd58595fe3af64ae95386237580bf09c663b68d9e35d53dde112c0002",
+      "translatedSegments": 167,
+      "type": "route"
+    },
+    {
+      "bytes": 44399,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/breathing-app.json",
+      "route": "/breathing-app",
+      "segments": 43,
+      "sha256": "8f8da55c65c0bde8d0410b0da16e4e48e0d2a5b8731e0f229cd974755d0385a9",
+      "translatedSegments": 43,
+      "type": "route"
+    },
+    {
+      "bytes": 90977,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/breathing-exercises-before-surgery.json",
+      "route": "/breathing-exercises-before-surgery",
+      "segments": 89,
+      "sha256": "1ef2cfc3360782f3310b6865386a94675390623ad8c6eee105a933512c2f8dd9",
+      "translatedSegments": 89,
+      "type": "route"
+    },
+    {
+      "bytes": 92599,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/breathing-exercises-for-labor.json",
+      "route": "/breathing-exercises-for-labor",
+      "segments": 89,
+      "sha256": "786454d776ff7948e94a50a57492abe838be5866f74ae66a159c88f86a256eb2",
+      "translatedSegments": 89,
+      "type": "route"
+    },
+    {
+      "bytes": 128877,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 13,
+      "path": "de-de/pages/breathing-visualizer.json",
+      "route": "/breathing-visualizer",
+      "segments": 132,
+      "sha256": "b8ee96deda1fa90411ed0ddcc1bc1306d57e9b95583b77b1ae56cf5f55ce7ffe",
+      "translatedSegments": 119,
+      "type": "route"
+    },
+    {
+      "bytes": 148765,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/coherent-breathing-app.json",
+      "route": "/coherent-breathing-app",
+      "segments": 136,
+      "sha256": "c0c72b7745b1397604715d500199222e53966877bbc60d50bfd8946fd7cbe349",
+      "translatedSegments": 136,
+      "type": "route"
+    },
+    {
+      "bytes": 62401,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 1,
+      "path": "de-de/pages/embed.json",
+      "route": "/embed",
+      "segments": 64,
+      "sha256": "96db0d069db84ddb06a2cc36cb949434bae2596ae156b0830a3dc8e75e44cbc7",
+      "translatedSegments": 63,
+      "type": "route"
+    },
+    {
+      "bytes": 82826,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/for.json",
+      "route": "/for",
+      "segments": 84,
+      "sha256": "8299ffaa603cef2ef9140993eede31de02274270bc6544746d4dd0a738f4f597",
+      "translatedSegments": 84,
+      "type": "route"
+    },
+    {
+      "bytes": 152809,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/for/anxiety.json",
+      "route": "/for/anxiety",
+      "segments": 137,
+      "sha256": "6bd0d0ef367e85d9908f3c2efb4a07c44d51d93d8b68acb73c596dd0bf9e3a9a",
+      "translatedSegments": 137,
+      "type": "route"
+    },
+    {
+      "bytes": 145537,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/for/athletes.json",
+      "route": "/for/athletes",
+      "segments": 129,
+      "sha256": "b4f61e6c8e533ad2d8f51bcd2fe52456633b3758c0419ca60b43aae7c1f6317e",
+      "translatedSegments": 129,
+      "type": "route"
+    },
+    {
+      "bytes": 142777,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/for/focus.json",
+      "route": "/for/focus",
+      "segments": 127,
+      "sha256": "19420ad8e919f7fd7a2e61a5776fba74b575dfa2d2b9c9bf6a39bc2ede97a832",
+      "translatedSegments": 127,
+      "type": "route"
+    },
+    {
+      "bytes": 126299,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/for/high-blood-pressure.json",
+      "route": "/for/high-blood-pressure",
+      "segments": 120,
+      "sha256": "3220b865260a8684120b7dfd045b5be43ffb925662c7b848da37b19e9cb9f9c0",
+      "translatedSegments": 120,
+      "type": "route"
+    },
+    {
+      "bytes": 133388,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/for/holiday-stress.json",
+      "route": "/for/holiday-stress",
+      "segments": 123,
+      "sha256": "2b69f49c0c91da4dffb5ce9a6f8159415c7c46f7a7f019ec11473c9a74a4039b",
+      "translatedSegments": 123,
+      "type": "route"
+    },
+    {
+      "bytes": 154523,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/for/huberman.json",
+      "route": "/for/huberman",
+      "segments": 135,
+      "sha256": "70b14fcd128f2bda564d170e20ecfc2443ceed4c1e94702089b073482899138d",
+      "translatedSegments": 135,
+      "type": "route"
+    },
+    {
+      "bytes": 138109,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/for/kids.json",
+      "route": "/for/kids",
+      "segments": 129,
+      "sha256": "ab3064feace50ebb5f3b71fcd855e14f0cb45aeb63f4d9a99c5273bbf90cce61",
+      "translatedSegments": 129,
+      "type": "route"
+    },
+    {
+      "bytes": 137692,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/for/lung-capacity.json",
+      "route": "/for/lung-capacity",
+      "segments": 125,
+      "sha256": "d7ea2cdb30fca3d846550a68e9bbe88afbb54979ca2f4595e1f312dc178158a6",
+      "translatedSegments": 125,
+      "type": "route"
+    },
+    {
+      "bytes": 147081,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/for/meditation.json",
+      "route": "/for/meditation",
+      "segments": 130,
+      "sha256": "9262bfa943e473ba87b3d5e5317da6d4e88539ea00765ba385f2ea8f24a198dc",
+      "translatedSegments": 130,
+      "type": "route"
+    },
+    {
+      "bytes": 141949,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/for/panic-attacks.json",
+      "route": "/for/panic-attacks",
+      "segments": 127,
+      "sha256": "f880cb1a69ff31abd85db85f4e809d44877f48cfb533ab47b60c001027467f43",
+      "translatedSegments": 127,
+      "type": "route"
+    },
+    {
+      "bytes": 131973,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/for/pranayama.json",
+      "route": "/for/pranayama",
+      "segments": 122,
+      "sha256": "147cfb47cff5c295878c345169acf93a39a903c571732a7d42f5066a7de3070a",
+      "translatedSegments": 122,
+      "type": "route"
+    },
+    {
+      "bytes": 147027,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/for/pregnancy.json",
+      "route": "/for/pregnancy",
+      "segments": 129,
+      "sha256": "e5b63b01f4adb1816aa3b7ede3939a177d2f5c2c48e462a05d13c33524d250b3",
+      "translatedSegments": 129,
+      "type": "route"
+    },
+    {
+      "bytes": 121510,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/for/public-speaking.json",
+      "route": "/for/public-speaking",
+      "segments": 115,
+      "sha256": "20ecba367e63a234ca9065b458143eda1b842bf008bf08c0a946278d83b012db",
+      "translatedSegments": 115,
+      "type": "route"
+    },
+    {
+      "bytes": 133312,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/for/running.json",
+      "route": "/for/running",
+      "segments": 125,
+      "sha256": "b34aca6aa6105c248c94ddfa5db6da65a017f68d85ff946935415966ac130680",
+      "translatedSegments": 125,
+      "type": "route"
+    },
+    {
+      "bytes": 133654,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/for/singing.json",
+      "route": "/for/singing",
+      "segments": 122,
+      "sha256": "843ed85ebd27caaf98dc722bac5180e7c42facbc02542939cdc6f997d8e9eff7",
+      "translatedSegments": 122,
+      "type": "route"
+    },
+    {
+      "bytes": 133151,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/for/sleep.json",
+      "route": "/for/sleep",
+      "segments": 126,
+      "sha256": "aef5195c3bdd427080c510ae274900d1d40c46d667c0cb948b03ff2d2659d13f",
+      "translatedSegments": 126,
+      "type": "route"
+    },
+    {
+      "bytes": 132104,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/for/stress.json",
+      "route": "/for/stress",
+      "segments": 122,
+      "sha256": "a8159e5835ad1c40fdd50063928fde1cbc4827eb2d81a5895d76d41174157567",
+      "translatedSegments": 122,
+      "type": "route"
+    },
+    {
+      "bytes": 108302,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/for/travel-anxiety.json",
+      "route": "/for/travel-anxiety",
+      "segments": 96,
+      "sha256": "bf66b25a083435b7bb3756fbcf80a9a7b2d1ebddbca417ce546e274a119ffb22",
+      "translatedSegments": 96,
+      "type": "route"
+    },
+    {
+      "bytes": 118677,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/holiday-breathing-exercises.json",
+      "route": "/holiday-breathing-exercises",
+      "segments": 119,
+      "sha256": "d31047081aa483913885b4bfa390d6917c011a35fc8da64394f31c7e700ed0ae",
+      "translatedSegments": 119,
+      "type": "route"
+    },
+    {
+      "bytes": 165653,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/languages.json",
+      "route": "/languages",
+      "segments": 172,
+      "sha256": "a21af8c1c7baf6dc6c6ad8b8744709bb3fd17764b6af88cc3361dcea2f7f0bce",
+      "translatedSegments": 172,
+      "type": "route"
+    },
+    {
+      "bytes": 41715,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "de-de/pages/og-preview.json",
+      "route": "/og-preview",
+      "segments": 43,
+      "sha256": "fa396e1a8a8bc910b8970db32baf67f8dd3f4294afaf20da982e1af57ab00fc2",
+      "translatedSegments": 43,
+      "type": "route"
+    },
+    {
+      "bytes": 90686,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 11,
+      "path": "de-de/pages/physiological-sigh-panic-attack.json",
+      "route": "/physiological-sigh-panic-attack",
+      "segments": 93,
+      "sha256": "0f965b1e453814ed993878c4f8385c268fad36ecfd3cdc959effed7634153523",
+      "translatedSegments": 82,
+      "type": "route"
+    },
+    {
+      "bytes": 27131,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 3,
+      "path": "de-de/pages/privacy.json",
+      "route": "/privacy",
+      "segments": 27,
+      "sha256": "8a9cd1a3d09cc9ba14f787e84ff5da3b57b77bc8634c9032ba37dc8386d1c2bd",
+      "translatedSegments": 24,
+      "type": "route"
+    },
+    {
+      "bytes": 9103,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 5,
+      "path": "de-de/pages/stats.json",
+      "route": "/stats",
+      "segments": 10,
+      "sha256": "4faa419d59916113d73c6822daf956ff88e5ec7898926ffb5e092b9f62bb34e4",
+      "translatedSegments": 5,
+      "type": "route"
+    },
+    {
+      "bytes": 23012,
+      "locale": "de-de",
+      "manualOverrideSegments": 0,
+      "missingSegments": 28,
+      "path": "de-de/pages/support.json",
+      "route": "/support",
+      "segments": 33,
+      "sha256": "23a307f2792a66b0fbf7f69089d316b4eec35d882d7cb357ce492d94218c3791",
+      "translatedSegments": 5,
+      "type": "route"
+    },
+    {
+      "bytes": 130134,
+      "locale": "es-es",
+      "path": "es-es/_orphaned-translations.json",
+      "records": 160,
+      "sha256": "422e8f872e4551653390b6b109256a8496b4b2192a94e01a1aafbe5faac9a140",
+      "type": "orphaned"
+    },
+    {
+      "bytes": 82241,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/1-minute-breathing-exercise.json",
+      "route": "/1-minute-breathing-exercise",
+      "segments": 79,
+      "sha256": "1de9542a2fa00c476b89da9c79bd9c7712755d88c58cd3a4fb499527b440f49c",
+      "translatedSegments": 79,
+      "type": "route"
+    },
+    {
+      "bytes": 81695,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/2-minute-breathing-exercise.json",
+      "route": "/2-minute-breathing-exercise",
+      "segments": 78,
+      "sha256": "e1d5c8681f55b5594af205961915d735430179916cb4a14ea104e00c5bdb65f2",
+      "translatedSegments": 78,
+      "type": "route"
+    },
+    {
+      "bytes": 84102,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/4-7-8-breathing-for-insomnia.json",
+      "route": "/4-7-8-breathing-for-insomnia",
+      "segments": 82,
+      "sha256": "e977e471e2ab3e743e060bd701185d776f94034ba4b2f815036b83cb097e4331",
+      "translatedSegments": 82,
+      "type": "route"
+    },
+    {
+      "bytes": 189784,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/4-7-8-breathing-timer.json",
+      "route": "/4-7-8-breathing-timer",
+      "segments": 179,
+      "sha256": "1b7d1e4d2687f2b5d231a95333f92693ab4ca09e13bcda142b968db0892d0384",
+      "translatedSegments": 179,
+      "type": "route"
+    },
+    {
+      "bytes": 93575,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/5-minute-breathing-exercise.json",
+      "route": "/5-minute-breathing-exercise",
+      "segments": 89,
+      "sha256": "f611b201e7bd90e25ea10c24cc75f6b44ad4eddf4cd4ffba7d8456dbdd9b98d9",
+      "translatedSegments": 89,
+      "type": "route"
+    },
+    {
+      "bytes": 188724,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 13,
+      "path": "es-es/pages/_root.json",
+      "route": "/",
+      "segments": 198,
+      "sha256": "f0286df1012aa2d91469d824a5fe2ecd989e6905dcd7d28f4f8795e3e23d22dd",
+      "translatedSegments": 185,
+      "type": "route"
+    },
+    {
+      "bytes": 32659,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/about.json",
+      "route": "/about",
+      "segments": 31,
+      "sha256": "1b29c88bfc71abdcf9b7cc89a33b1f8a4674eb45f9357284ffdeb5109dfcae6a",
+      "translatedSegments": 31,
+      "type": "route"
+    },
+    {
+      "bytes": 48131,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/about/abi.json",
+      "route": "/about/abi",
+      "segments": 45,
+      "sha256": "6243f5d65dc68bed7659f63d10a484bcabbc16496991cdfde1dac96a8184fdb7",
+      "translatedSegments": 45,
+      "type": "route"
+    },
+    {
+      "bytes": 54727,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/about/editorial-policy.json",
+      "route": "/about/editorial-policy",
+      "segments": 52,
+      "sha256": "21d37726c3827e6241d0f06141e1e1e21add5d5bf74d120f2042c5a619c1fcd0",
+      "translatedSegments": 52,
+      "type": "route"
+    },
+    {
+      "bytes": 117077,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/box-breathing-app.json",
+      "route": "/box-breathing-app",
+      "segments": 110,
+      "sha256": "4e1b08632945f71147a50da219d3ed668fc3c2f7b9b1723b02736ea9f0f5b885",
+      "translatedSegments": 110,
+      "type": "route"
+    },
+    {
+      "bytes": 90212,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 12,
+      "path": "es-es/pages/box-breathing-before-presentation.json",
+      "route": "/box-breathing-before-presentation",
+      "segments": 93,
+      "sha256": "992423b5c6b199c0515c7ca14bfe9fe9b92f42cdf508f93848f03fd1c8f314d5",
+      "translatedSegments": 81,
+      "type": "route"
+    },
+    {
+      "bytes": 109436,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/brand-lab.json",
+      "route": "/brand-lab",
+      "segments": 113,
+      "sha256": "b9e81453a24425fff356bce763684466f60481aec2e82e3af52faf809f6844ad",
+      "translatedSegments": 113,
+      "type": "route"
+    },
+    {
+      "bytes": 66578,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/breathe.json",
+      "route": "/breathe",
+      "segments": 67,
+      "sha256": "45c4d9ca46178a623e96448ceadecb2c11f7df6119d19c6f9628b787c68ce5fe",
+      "translatedSegments": 67,
+      "type": "route"
+    },
+    {
+      "bytes": 197993,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/breathe/4-7-8.json",
+      "route": "/breathe/4-7-8",
+      "segments": 192,
+      "sha256": "52db3ca64ac745f3ee590eca4ae5024f73cca46497af819921c50d47d552a083",
+      "translatedSegments": 192,
+      "type": "route"
+    },
+    {
+      "bytes": 124588,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/breathe/9d-breathwork.json",
+      "route": "/breathe/9d-breathwork",
+      "segments": 109,
+      "sha256": "93559c1b8532193bcf15a44a45c5f75c5c3a562dd041a6fdbd6bcb2df729ec2f",
+      "translatedSegments": 109,
+      "type": "route"
+    },
+    {
+      "bytes": 173783,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/breathe/belly.json",
+      "route": "/breathe/belly",
+      "segments": 164,
+      "sha256": "991e2357e090014ca5ab4bc282c54e7a65467b53dcd918edc11c409ffed965d7",
+      "translatedSegments": 164,
+      "type": "route"
+    },
+    {
+      "bytes": 203959,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/breathe/box.json",
+      "route": "/breathe/box",
+      "segments": 194,
+      "sha256": "a455642b046b88db0eb00c398b495885b94afc2fc2a3fe13d8c6f233a327ca41",
+      "translatedSegments": 194,
+      "type": "route"
+    },
+    {
+      "bytes": 158789,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/breathe/breath-of-fire.json",
+      "route": "/breathe/breath-of-fire",
+      "segments": 149,
+      "sha256": "3f1b2e1abd0451d942e2b90b10a85b43ad02a6e3f3561004188782896c3cf895",
+      "translatedSegments": 149,
+      "type": "route"
+    },
+    {
+      "bytes": 179969,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/breathe/buteyko.json",
+      "route": "/breathe/buteyko",
+      "segments": 170,
+      "sha256": "ed77a1ebc050619ec74c3ad7898146a76d4ce73335a1fcaaee0deca30d1f6acd",
+      "translatedSegments": 170,
+      "type": "route"
+    },
+    {
+      "bytes": 188511,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/breathe/coherent.json",
+      "route": "/breathe/coherent",
+      "segments": 183,
+      "sha256": "9f87c1148e7e41d61d43fb386a9fdb0577f77923bdd688ce85a3c52d37c99cb9",
+      "translatedSegments": 183,
+      "type": "route"
+    },
+    {
+      "bytes": 132234,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/breathe/hope-cartel-9d-breathwork.json",
+      "route": "/breathe/hope-cartel-9d-breathwork",
+      "segments": 117,
+      "sha256": "bfb0caec8687b786de595e144634bc968b7e1af2802eb9c178bc04dc8be9b3b8",
+      "translatedSegments": 117,
+      "type": "route"
+    },
+    {
+      "bytes": 211455,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/breathe/nadi-shodhana.json",
+      "route": "/breathe/nadi-shodhana",
+      "segments": 206,
+      "sha256": "d8bc4bcd51840a952f00cd0cc39797a3d49a5b9ee597adbf0b35616b59bca4b6",
+      "translatedSegments": 206,
+      "type": "route"
+    },
+    {
+      "bytes": 255538,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/breathe/physiological-sigh.json",
+      "route": "/breathe/physiological-sigh",
+      "segments": 238,
+      "sha256": "709a9224e4d479bc722876feea990414e6063e6473135edca6ac0ef456c325df",
+      "translatedSegments": 238,
+      "type": "route"
+    },
+    {
+      "bytes": 175334,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/breathe/pursed-lip.json",
+      "route": "/breathe/pursed-lip",
+      "segments": 168,
+      "sha256": "44c71a334cd73022b22eebc5e1b70b2ad6fa34f9f13e2eb4c0b7cc5ad9743776",
+      "translatedSegments": 168,
+      "type": "route"
+    },
+    {
+      "bytes": 212115,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/breathe/tummo.json",
+      "route": "/breathe/tummo",
+      "segments": 201,
+      "sha256": "a71574b6735dafd13d59ace12f6e44f2ff10dcbddefbe0f37228b3c199cc7bbc",
+      "translatedSegments": 201,
+      "type": "route"
+    },
+    {
+      "bytes": 173638,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/breathe/ujjayi.json",
+      "route": "/breathe/ujjayi",
+      "segments": 165,
+      "sha256": "4637f46b9bf8174b9c8ce0a4847a58c408251c22d8c263ec0335867c5f8b32e1",
+      "translatedSegments": 165,
+      "type": "route"
+    },
+    {
+      "bytes": 174924,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/breathe/wim-hof.json",
+      "route": "/breathe/wim-hof",
+      "segments": 167,
+      "sha256": "b90d99fa6fbc81b91c23e0b9c0dcfd607f70e0d458cc6d81f28536f85bc83abc",
+      "translatedSegments": 167,
+      "type": "route"
+    },
+    {
+      "bytes": 44276,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/breathing-app.json",
+      "route": "/breathing-app",
+      "segments": 43,
+      "sha256": "1e4e8129281c67263a31363e347fc63332a993ea673f2b1a13239a13b5242ad6",
+      "translatedSegments": 43,
+      "type": "route"
+    },
+    {
+      "bytes": 91521,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/breathing-exercises-before-surgery.json",
+      "route": "/breathing-exercises-before-surgery",
+      "segments": 89,
+      "sha256": "cddd6488b6dcdf2f0d3077a3f3c64b87dfb7d29e84858a4ac44b2928bf2fe4aa",
+      "translatedSegments": 89,
+      "type": "route"
+    },
+    {
+      "bytes": 92818,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/breathing-exercises-for-labor.json",
+      "route": "/breathing-exercises-for-labor",
+      "segments": 89,
+      "sha256": "757d4dbbc726d4796870e79a8082022d7f0de6755ea7c05eba05a0820104ef28",
+      "translatedSegments": 89,
+      "type": "route"
+    },
+    {
+      "bytes": 129003,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 13,
+      "path": "es-es/pages/breathing-visualizer.json",
+      "route": "/breathing-visualizer",
+      "segments": 132,
+      "sha256": "255e420ac75679ba8fd3f005bd80eec2494906f6f642b789a3d409e4317a7326",
+      "translatedSegments": 119,
+      "type": "route"
+    },
+    {
+      "bytes": 149394,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/coherent-breathing-app.json",
+      "route": "/coherent-breathing-app",
+      "segments": 136,
+      "sha256": "61c0158ec00984678b0cba42311ac4d539f8e2d4169c6c29f80531ea18cf65bc",
+      "translatedSegments": 136,
+      "type": "route"
+    },
+    {
+      "bytes": 62600,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 1,
+      "path": "es-es/pages/embed.json",
+      "route": "/embed",
+      "segments": 64,
+      "sha256": "f34930c92845c2e8db249c3479eb4786fa4728b2000e87fdf3764cedbb32595b",
+      "translatedSegments": 63,
+      "type": "route"
+    },
+    {
+      "bytes": 82986,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/for.json",
+      "route": "/for",
+      "segments": 84,
+      "sha256": "d04560fba73ac7a2068bb382a653af99bc14e49fdecb1fb254f8ad2a08021c05",
+      "translatedSegments": 84,
+      "type": "route"
+    },
+    {
+      "bytes": 150455,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/for/anxiety.json",
+      "route": "/for/anxiety",
+      "segments": 137,
+      "sha256": "1a94e9e66fd0e597a4795537a61629247a8c1fdb02e25c11b2227d17e5907339",
+      "translatedSegments": 137,
+      "type": "route"
+    },
+    {
+      "bytes": 145637,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/for/athletes.json",
+      "route": "/for/athletes",
+      "segments": 129,
+      "sha256": "618b8fc4038249a3994e0f20a3600f7d464b1b0132373a9ce383fb46680b2bf5",
+      "translatedSegments": 129,
+      "type": "route"
+    },
+    {
+      "bytes": 142729,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/for/focus.json",
+      "route": "/for/focus",
+      "segments": 127,
+      "sha256": "b782664e05249a2317a1f0294c31766730ace74b6133b9b5567f549a61859c9b",
+      "translatedSegments": 127,
+      "type": "route"
+    },
+    {
+      "bytes": 126503,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/for/high-blood-pressure.json",
+      "route": "/for/high-blood-pressure",
+      "segments": 120,
+      "sha256": "8f1db5fd67dc9c2c980d9f2389994f2152128040af4d24d6ff2674210e30f75c",
+      "translatedSegments": 120,
+      "type": "route"
+    },
+    {
+      "bytes": 131839,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/for/holiday-stress.json",
+      "route": "/for/holiday-stress",
+      "segments": 123,
+      "sha256": "e918fa0223947bbe0ad1f0e2598aec4c1f29e430d3768d07605fdd59e2c718b7",
+      "translatedSegments": 123,
+      "type": "route"
+    },
+    {
+      "bytes": 153328,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/for/huberman.json",
+      "route": "/for/huberman",
+      "segments": 135,
+      "sha256": "a5d7a267923f7c027b679cc07629decde997358d3303b53a13b156b409cd59be",
+      "translatedSegments": 135,
+      "type": "route"
+    },
+    {
+      "bytes": 138750,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/for/kids.json",
+      "route": "/for/kids",
+      "segments": 129,
+      "sha256": "5def4a2afb5318b0663b7d1bfa79d7c7085aff88935886dda69de44935265e4b",
+      "translatedSegments": 129,
+      "type": "route"
+    },
+    {
+      "bytes": 138338,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/for/lung-capacity.json",
+      "route": "/for/lung-capacity",
+      "segments": 125,
+      "sha256": "ecdb6226895d5a2ce0eb26737e64398b0accbdfa5691af437d3b5365420fe944",
+      "translatedSegments": 125,
+      "type": "route"
+    },
+    {
+      "bytes": 146548,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/for/meditation.json",
+      "route": "/for/meditation",
+      "segments": 130,
+      "sha256": "25b1d74f9d5a1444b58fd9fe65d6c2a48382dd6bcd058838747cdce8e993d71f",
+      "translatedSegments": 130,
+      "type": "route"
+    },
+    {
+      "bytes": 140101,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/for/panic-attacks.json",
+      "route": "/for/panic-attacks",
+      "segments": 127,
+      "sha256": "969fac2509f5966fea9edd7a0f3d6f42d69e528775e5426fb525918f11185015",
+      "translatedSegments": 127,
+      "type": "route"
+    },
+    {
+      "bytes": 132492,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/for/pranayama.json",
+      "route": "/for/pranayama",
+      "segments": 122,
+      "sha256": "659564b6a161f00ee4e33c009cdca7778429bf62dabc0472e924eea68640896f",
+      "translatedSegments": 122,
+      "type": "route"
+    },
+    {
+      "bytes": 145482,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/for/pregnancy.json",
+      "route": "/for/pregnancy",
+      "segments": 129,
+      "sha256": "af149e40adec2ead2c46eab8e37851dad843c945c19f5d81338aa0c5718bcd0e",
+      "translatedSegments": 129,
+      "type": "route"
+    },
+    {
+      "bytes": 120901,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/for/public-speaking.json",
+      "route": "/for/public-speaking",
+      "segments": 115,
+      "sha256": "6f08a231219871014417feaafc8a56f6d8f1084d92971f85209a00d128948ac3",
+      "translatedSegments": 115,
+      "type": "route"
+    },
+    {
+      "bytes": 132752,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/for/running.json",
+      "route": "/for/running",
+      "segments": 125,
+      "sha256": "457f6ca58f37cb2d743b1052af13941170676a477e4ea47fac47eb4f2ec2a016",
+      "translatedSegments": 125,
+      "type": "route"
+    },
+    {
+      "bytes": 133945,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/for/singing.json",
+      "route": "/for/singing",
+      "segments": 122,
+      "sha256": "a88875bdf7e998126b4dfb559b3d13d99391862a8c0eb047d1161c8c06b1c9cd",
+      "translatedSegments": 122,
+      "type": "route"
+    },
+    {
+      "bytes": 132935,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/for/sleep.json",
+      "route": "/for/sleep",
+      "segments": 126,
+      "sha256": "437bbe2b785295304b77dbf050ee7aa98e395738e862d260684f4a1dce49eb90",
+      "translatedSegments": 126,
+      "type": "route"
+    },
+    {
+      "bytes": 132571,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/for/stress.json",
+      "route": "/for/stress",
+      "segments": 122,
+      "sha256": "abaacfd67fa61ad93c35b543bdadeffbbd8a8cec33b32d004364807f7fbb449c",
+      "translatedSegments": 122,
+      "type": "route"
+    },
+    {
+      "bytes": 108333,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/for/travel-anxiety.json",
+      "route": "/for/travel-anxiety",
+      "segments": 96,
+      "sha256": "0084263a179ecfcf994636111e75019feecd9cfa1106d4a3cb27a15ebca980c5",
+      "translatedSegments": 96,
+      "type": "route"
+    },
+    {
+      "bytes": 118660,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/holiday-breathing-exercises.json",
+      "route": "/holiday-breathing-exercises",
+      "segments": 119,
+      "sha256": "6b481f604f3e70a651808739976b461b77c8403029973e1de264229b7422724f",
+      "translatedSegments": 119,
+      "type": "route"
+    },
+    {
+      "bytes": 166781,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/languages.json",
+      "route": "/languages",
+      "segments": 172,
+      "sha256": "a9830f2249513a8b6013407857e5cbfa132bb1bef693ebea3c723d52239c5dce",
+      "translatedSegments": 172,
+      "type": "route"
+    },
+    {
+      "bytes": 41772,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "es-es/pages/og-preview.json",
+      "route": "/og-preview",
+      "segments": 43,
+      "sha256": "d655c4ac07d21cf6bdd6cf86d50d10255c43c300ed415e9c103c38eee31a6eb7",
+      "translatedSegments": 43,
+      "type": "route"
+    },
+    {
+      "bytes": 90654,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 11,
+      "path": "es-es/pages/physiological-sigh-panic-attack.json",
+      "route": "/physiological-sigh-panic-attack",
+      "segments": 93,
+      "sha256": "bed3c3dca120ab32061f5c4249b715f3be7eaf35e4d2e50a612383b6e8de435a",
+      "translatedSegments": 82,
+      "type": "route"
+    },
+    {
+      "bytes": 27421,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 3,
+      "path": "es-es/pages/privacy.json",
+      "route": "/privacy",
+      "segments": 27,
+      "sha256": "17232374138b7c8feb4082306e7bd23b3a81dd65134173f49314bbff4c2f6a71",
+      "translatedSegments": 24,
+      "type": "route"
+    },
+    {
+      "bytes": 9157,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 5,
+      "path": "es-es/pages/stats.json",
+      "route": "/stats",
+      "segments": 10,
+      "sha256": "7493518bde5adae676d02e298ed4bb96953326f5c1a4fd4034e1fd60b82ae02d",
+      "translatedSegments": 5,
+      "type": "route"
+    },
+    {
+      "bytes": 23029,
+      "locale": "es-es",
+      "manualOverrideSegments": 0,
+      "missingSegments": 28,
+      "path": "es-es/pages/support.json",
+      "route": "/support",
+      "segments": 33,
+      "sha256": "7adff50601629e015ca392d85c89e52c22797ca62036edfa30cef68b2c2203a8",
+      "translatedSegments": 5,
+      "type": "route"
+    },
+    {
+      "bytes": 25771,
+      "locale": "fr-fr",
+      "path": "fr-fr/_orphaned-translations.json",
+      "records": 30,
+      "sha256": "6625dcc8ad92281b49c7e8e772c82a086dd0fa8b2406220637705aa0efd5c55c",
+      "type": "orphaned"
+    },
+    {
+      "bytes": 82687,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/1-minute-breathing-exercise.json",
+      "route": "/1-minute-breathing-exercise",
+      "segments": 79,
+      "sha256": "60a75d57de0783214c85d739ee096bcb0b2c716c0158b92f1ae8bcd05f26209c",
+      "translatedSegments": 79,
+      "type": "route"
+    },
+    {
+      "bytes": 82100,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/2-minute-breathing-exercise.json",
+      "route": "/2-minute-breathing-exercise",
+      "segments": 78,
+      "sha256": "945de245d6c00bbcd7be8664b8e123b1ff7f86c061cc1a720e67c6f61cb98370",
+      "translatedSegments": 78,
+      "type": "route"
+    },
+    {
+      "bytes": 84347,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/4-7-8-breathing-for-insomnia.json",
+      "route": "/4-7-8-breathing-for-insomnia",
+      "segments": 82,
+      "sha256": "01d40500baa09a2a4bd36857fb4b630cb1d1858b756582c0d3bd6b4f73986982",
+      "translatedSegments": 82,
+      "type": "route"
+    },
+    {
+      "bytes": 190751,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/4-7-8-breathing-timer.json",
+      "route": "/4-7-8-breathing-timer",
+      "segments": 179,
+      "sha256": "408ae09261633266f961787df28b8ba06f235c3d1d9841481468ffd305a6d988",
+      "translatedSegments": 179,
+      "type": "route"
+    },
+    {
+      "bytes": 94568,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/5-minute-breathing-exercise.json",
+      "route": "/5-minute-breathing-exercise",
+      "segments": 89,
+      "sha256": "a03022bf78642bc53f1d27e9c5860a6dc70e58cff83b7ffabab3af2c2bedf6c7",
+      "translatedSegments": 89,
+      "type": "route"
+    },
+    {
+      "bytes": 189388,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 13,
+      "path": "fr-fr/pages/_root.json",
+      "route": "/",
+      "segments": 198,
+      "sha256": "4176721de21e73719ca3a2542573d78a8a774d84dcc2a59be750dd4e64718f98",
+      "translatedSegments": 185,
+      "type": "route"
+    },
+    {
+      "bytes": 32769,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/about.json",
+      "route": "/about",
+      "segments": 31,
+      "sha256": "4d2c6681eea2a81cb1bcfcfb3e1433adfeda46ea789722aa8c1a33aad0ac60bc",
+      "translatedSegments": 31,
+      "type": "route"
+    },
+    {
+      "bytes": 48346,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/about/abi.json",
+      "route": "/about/abi",
+      "segments": 45,
+      "sha256": "bdea5750c0846a624af559fbeb9a10e9399baca589cef8019276aa9a084e932d",
+      "translatedSegments": 45,
+      "type": "route"
+    },
+    {
+      "bytes": 55006,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/about/editorial-policy.json",
+      "route": "/about/editorial-policy",
+      "segments": 52,
+      "sha256": "adb8f4ed8ded208270e30a77edd8855b55095de966ecc19da03f9cf0485b5da5",
+      "translatedSegments": 52,
+      "type": "route"
+    },
+    {
+      "bytes": 118309,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/box-breathing-app.json",
+      "route": "/box-breathing-app",
+      "segments": 110,
+      "sha256": "a8e372c0e676898f668d1b7f2ac6a459b6658be5c763f3f82d9e9fc188df4885",
+      "translatedSegments": 110,
+      "type": "route"
+    },
+    {
+      "bytes": 90501,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 12,
+      "path": "fr-fr/pages/box-breathing-before-presentation.json",
+      "route": "/box-breathing-before-presentation",
+      "segments": 93,
+      "sha256": "e67c5822649037cccc8d4882d15f66d31ef8b02299e4a51caddb9ac444b5193d",
+      "translatedSegments": 81,
+      "type": "route"
+    },
+    {
+      "bytes": 109606,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/brand-lab.json",
+      "route": "/brand-lab",
+      "segments": 113,
+      "sha256": "bd86f0a7857e46319943f47c10059f0e7b93feb9b71a2bc54399440c20230c6d",
+      "translatedSegments": 113,
+      "type": "route"
+    },
+    {
+      "bytes": 67013,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/breathe.json",
+      "route": "/breathe",
+      "segments": 67,
+      "sha256": "e5450fa77535896e8631d5afd2f8fe5f250f05ddc7aef34a10d1c113b7b173da",
+      "translatedSegments": 67,
+      "type": "route"
+    },
+    {
+      "bytes": 199383,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/breathe/4-7-8.json",
+      "route": "/breathe/4-7-8",
+      "segments": 192,
+      "sha256": "e0027afcbd2d831256ff503d55d4dd5f9fbe1ab0a38b1116a23ce73e59fca7fc",
+      "translatedSegments": 192,
+      "type": "route"
+    },
+    {
+      "bytes": 125645,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/breathe/9d-breathwork.json",
+      "route": "/breathe/9d-breathwork",
+      "segments": 109,
+      "sha256": "fc90808c716794071d138d1fa8f744b14e1d1368328e88b0aa05f8001c68071f",
+      "translatedSegments": 109,
+      "type": "route"
+    },
+    {
+      "bytes": 174684,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/breathe/belly.json",
+      "route": "/breathe/belly",
+      "segments": 164,
+      "sha256": "0fdaf6fc00a78c4400c6a0130e6623e6e9dcd07b74e01869ca54aeee69883798",
+      "translatedSegments": 164,
+      "type": "route"
+    },
+    {
+      "bytes": 205360,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/breathe/box.json",
+      "route": "/breathe/box",
+      "segments": 194,
+      "sha256": "f1a9e79f55e3eeca8ff6292563b742b389d4a54b1a86b35db22c52d1f75679f7",
+      "translatedSegments": 194,
+      "type": "route"
+    },
+    {
+      "bytes": 159280,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/breathe/breath-of-fire.json",
+      "route": "/breathe/breath-of-fire",
+      "segments": 149,
+      "sha256": "79b1d3fec2485db41324e16786acf9b16e3465e2ac9fdd2cf40e1ad0db3bf4c8",
+      "translatedSegments": 149,
+      "type": "route"
+    },
+    {
+      "bytes": 179337,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/breathe/buteyko.json",
+      "route": "/breathe/buteyko",
+      "segments": 170,
+      "sha256": "4779b2605cb25108a61fa0634c98b42a60c327359f938bb509079e3781e12ee8",
+      "translatedSegments": 170,
+      "type": "route"
+    },
+    {
+      "bytes": 188338,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/breathe/coherent.json",
+      "route": "/breathe/coherent",
+      "segments": 183,
+      "sha256": "4720f6682ef134110842fe3fcc352e22a99928e30fb24702e049aa8365858e59",
+      "translatedSegments": 183,
+      "type": "route"
+    },
+    {
+      "bytes": 133136,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/breathe/hope-cartel-9d-breathwork.json",
+      "route": "/breathe/hope-cartel-9d-breathwork",
+      "segments": 117,
+      "sha256": "4464ae641e06c3f633bb0fa860e4aa0bc690580f92a9e4f5d314432bb7091ecd",
+      "translatedSegments": 117,
+      "type": "route"
+    },
+    {
+      "bytes": 211698,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/breathe/nadi-shodhana.json",
+      "route": "/breathe/nadi-shodhana",
+      "segments": 206,
+      "sha256": "a9a844e900b5e08dc7142c672e6843bfe073559249316a4e8df3d40b3ccc3949",
+      "translatedSegments": 206,
+      "type": "route"
+    },
+    {
+      "bytes": 257668,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/breathe/physiological-sigh.json",
+      "route": "/breathe/physiological-sigh",
+      "segments": 238,
+      "sha256": "53bf97d12b74c001d93503d86f8cb02acc38e55b852d7c1f3818e242327204e8",
+      "translatedSegments": 238,
+      "type": "route"
+    },
+    {
+      "bytes": 176131,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/breathe/pursed-lip.json",
+      "route": "/breathe/pursed-lip",
+      "segments": 168,
+      "sha256": "ca5f8424d5ef1f3dac7b14b145219f738671dc5b6acd1d8cece0274823c8339c",
+      "translatedSegments": 168,
+      "type": "route"
+    },
+    {
+      "bytes": 213016,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/breathe/tummo.json",
+      "route": "/breathe/tummo",
+      "segments": 201,
+      "sha256": "b96fcc88d0ba282cd4220718812e8bba380d2eabed3d18e672d957f652984c08",
+      "translatedSegments": 201,
+      "type": "route"
+    },
+    {
+      "bytes": 173399,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/breathe/ujjayi.json",
+      "route": "/breathe/ujjayi",
+      "segments": 165,
+      "sha256": "bfdfe7c1e904de20482b45bdc9ff2ea9113a99460425ba564674baa228b18c5e",
+      "translatedSegments": 165,
+      "type": "route"
+    },
+    {
+      "bytes": 175359,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/breathe/wim-hof.json",
+      "route": "/breathe/wim-hof",
+      "segments": 167,
+      "sha256": "e99b7cf699625e4f6ce876f44b17d833a8275cc36508ec38f70f144b0db224cc",
+      "translatedSegments": 167,
+      "type": "route"
+    },
+    {
+      "bytes": 44593,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/breathing-app.json",
+      "route": "/breathing-app",
+      "segments": 43,
+      "sha256": "b87c8450e1f19496cecf0f4c12be8afb39a4be04e6b753d1fe361a4db5c07be3",
+      "translatedSegments": 43,
+      "type": "route"
+    },
+    {
+      "bytes": 91959,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/breathing-exercises-before-surgery.json",
+      "route": "/breathing-exercises-before-surgery",
+      "segments": 89,
+      "sha256": "11285ad29d5b81ddb83c66a192a2b0f36f4cf888a0a166716859341160470989",
+      "translatedSegments": 89,
+      "type": "route"
+    },
+    {
+      "bytes": 93344,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/breathing-exercises-for-labor.json",
+      "route": "/breathing-exercises-for-labor",
+      "segments": 89,
+      "sha256": "e4b9e2d47a5b4c8a96479a1cc8f6b2c72046b405c4dc6d26025ca56c91e8d862",
+      "translatedSegments": 89,
+      "type": "route"
+    },
+    {
+      "bytes": 129564,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 13,
+      "path": "fr-fr/pages/breathing-visualizer.json",
+      "route": "/breathing-visualizer",
+      "segments": 132,
+      "sha256": "d43219a5807101fa3dcd505522a86d17fe1a1948ab0156b4ce9a87f14956abf0",
+      "translatedSegments": 119,
+      "type": "route"
+    },
+    {
+      "bytes": 150400,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/coherent-breathing-app.json",
+      "route": "/coherent-breathing-app",
+      "segments": 136,
+      "sha256": "35c964e39e652b29647e82ba3ccb3d5fa057a7497448d6bfe3fa921222836919",
+      "translatedSegments": 136,
+      "type": "route"
+    },
+    {
+      "bytes": 62677,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 1,
+      "path": "fr-fr/pages/embed.json",
+      "route": "/embed",
+      "segments": 64,
+      "sha256": "195df9d9e70c73be637a8abf99b710ed5a757559e70506cda7cdb277be46993f",
+      "translatedSegments": 63,
+      "type": "route"
+    },
+    {
+      "bytes": 83305,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/for.json",
+      "route": "/for",
+      "segments": 84,
+      "sha256": "09a1ba5076217848e0799416cb5f42500488805fd08781797d6eee25a282a434",
+      "translatedSegments": 84,
+      "type": "route"
+    },
+    {
+      "bytes": 150593,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/for/anxiety.json",
+      "route": "/for/anxiety",
+      "segments": 137,
+      "sha256": "458e716b2584a0c5f8a54cdead63c15b0d00f6dab65536c81477199c986ce55d",
+      "translatedSegments": 137,
+      "type": "route"
+    },
+    {
+      "bytes": 146320,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/for/athletes.json",
+      "route": "/for/athletes",
+      "segments": 129,
+      "sha256": "9038e13936ecf05794c96699ed0f04237676aad8bf3aa12ba01b940cd6421731",
+      "translatedSegments": 129,
+      "type": "route"
+    },
+    {
+      "bytes": 143946,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/for/focus.json",
+      "route": "/for/focus",
+      "segments": 127,
+      "sha256": "4492cd011d574b7d67c7301748e289ea766820a5321ca2744a7378a896314dbc",
+      "translatedSegments": 127,
+      "type": "route"
+    },
+    {
+      "bytes": 127126,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/for/high-blood-pressure.json",
+      "route": "/for/high-blood-pressure",
+      "segments": 120,
+      "sha256": "f21baa3505d28cbbc491cda3781c8c4e3e6921b39ba91e4294da5ca825d11190",
+      "translatedSegments": 120,
+      "type": "route"
+    },
+    {
+      "bytes": 133350,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/for/holiday-stress.json",
+      "route": "/for/holiday-stress",
+      "segments": 123,
+      "sha256": "bb879529d0828925a98d1132c14e2b97b8884448814f9b5863c2773c08daeacc",
+      "translatedSegments": 123,
+      "type": "route"
+    },
+    {
+      "bytes": 156081,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/for/huberman.json",
+      "route": "/for/huberman",
+      "segments": 135,
+      "sha256": "c0a2af165b772d9db417c353ffdbdeb4417f4b4c56d83c9f18577784980bd7de",
+      "translatedSegments": 135,
+      "type": "route"
+    },
+    {
+      "bytes": 139128,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/for/kids.json",
+      "route": "/for/kids",
+      "segments": 129,
+      "sha256": "abaee4f71815313cfafcfd6551d222f4acb2da7f0ecf94083a5ddc7d07587dba",
+      "translatedSegments": 129,
+      "type": "route"
+    },
+    {
+      "bytes": 138818,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/for/lung-capacity.json",
+      "route": "/for/lung-capacity",
+      "segments": 125,
+      "sha256": "628b11f164bdd928bfc99614871314924e9c155937701bbd003bfaf7f5183824",
+      "translatedSegments": 125,
+      "type": "route"
+    },
+    {
+      "bytes": 147644,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/for/meditation.json",
+      "route": "/for/meditation",
+      "segments": 130,
+      "sha256": "c49f4ab2fe39ece3763382e17e20eaba4cba91146b6584c6117c4fcb1b477dea",
+      "translatedSegments": 130,
+      "type": "route"
+    },
+    {
+      "bytes": 141848,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/for/panic-attacks.json",
+      "route": "/for/panic-attacks",
+      "segments": 127,
+      "sha256": "f507f1c5efe4a06bb3cbd9bed30ad4799f8d574ade733c1c840c7735ea83faf4",
+      "translatedSegments": 127,
+      "type": "route"
+    },
+    {
+      "bytes": 133252,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/for/pranayama.json",
+      "route": "/for/pranayama",
+      "segments": 122,
+      "sha256": "ac18fc99ff9b4764850db215df54d4a7f447de033b7be6219f6655f22569eed9",
+      "translatedSegments": 122,
+      "type": "route"
+    },
+    {
+      "bytes": 145908,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/for/pregnancy.json",
+      "route": "/for/pregnancy",
+      "segments": 129,
+      "sha256": "0c089a2b31e3f4a45a8a8cbc4fd9e3a741ed7d57c46fb23c5edf1e28d4f5e8d8",
+      "translatedSegments": 129,
+      "type": "route"
+    },
+    {
+      "bytes": 120993,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/for/public-speaking.json",
+      "route": "/for/public-speaking",
+      "segments": 115,
+      "sha256": "8887374e082c222d25ffb107c132024a552c45539bf6431fb7361c3c30ba56dc",
+      "translatedSegments": 115,
+      "type": "route"
+    },
+    {
+      "bytes": 130054,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/for/running.json",
+      "route": "/for/running",
+      "segments": 125,
+      "sha256": "84b606323289b4b4a35f94bcd96e170126e93cc25a5503ef28609da3bb4c27e1",
+      "translatedSegments": 125,
+      "type": "route"
+    },
+    {
+      "bytes": 132382,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/for/singing.json",
+      "route": "/for/singing",
+      "segments": 122,
+      "sha256": "036c0a6ec67c87c5c2e9aabbbc401ffa8062fb63b54e7201456b51d95b445d8e",
+      "translatedSegments": 122,
+      "type": "route"
+    },
+    {
+      "bytes": 133665,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/for/sleep.json",
+      "route": "/for/sleep",
+      "segments": 126,
+      "sha256": "7d3d9e5df3631e48e47b12205ed68c25c032fd98f98d4f8fd838b381df5b1c3f",
+      "translatedSegments": 126,
+      "type": "route"
+    },
+    {
+      "bytes": 132274,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/for/stress.json",
+      "route": "/for/stress",
+      "segments": 122,
+      "sha256": "eff3859d5dcad949cdc2a0672e6d0e909c948cc520f402236201e2ed5b82150a",
+      "translatedSegments": 122,
+      "type": "route"
+    },
+    {
+      "bytes": 109027,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/for/travel-anxiety.json",
+      "route": "/for/travel-anxiety",
+      "segments": 96,
+      "sha256": "3292816ea91990dbb44a1ee5f3cd78c726e556f3b7ea0ed219a24f4abb4f486d",
+      "translatedSegments": 96,
+      "type": "route"
+    },
+    {
+      "bytes": 118549,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/holiday-breathing-exercises.json",
+      "route": "/holiday-breathing-exercises",
+      "segments": 119,
+      "sha256": "556cd950d25a70987e85b88a428b04a6c4c3b332a5319432b6578d29cc0accf2",
+      "translatedSegments": 119,
+      "type": "route"
+    },
+    {
+      "bytes": 166552,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/languages.json",
+      "route": "/languages",
+      "segments": 172,
+      "sha256": "3f9c7f0f7b267ca76f45540d624eb9d772daa0e2791851d3f0de7d94d88b326a",
+      "translatedSegments": 172,
+      "type": "route"
+    },
+    {
+      "bytes": 41808,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "fr-fr/pages/og-preview.json",
+      "route": "/og-preview",
+      "segments": 43,
+      "sha256": "24f95bd55b35d2f20bcff942499af8ac4aa06eb994d569bf7003e7927b1cd5e7",
+      "translatedSegments": 43,
+      "type": "route"
+    },
+    {
+      "bytes": 91303,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 11,
+      "path": "fr-fr/pages/physiological-sigh-panic-attack.json",
+      "route": "/physiological-sigh-panic-attack",
+      "segments": 93,
+      "sha256": "512c473450578b17b19ed1a1c3ab90e69d1cc9cc7aef1f3dd9e9a88e98df2308",
+      "translatedSegments": 82,
+      "type": "route"
+    },
+    {
+      "bytes": 27145,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 3,
+      "path": "fr-fr/pages/privacy.json",
+      "route": "/privacy",
+      "segments": 27,
+      "sha256": "980b111e058551a652342e304a5758af85ca007b6fef134a36ee293707b296f7",
+      "translatedSegments": 24,
+      "type": "route"
+    },
+    {
+      "bytes": 9135,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 5,
+      "path": "fr-fr/pages/stats.json",
+      "route": "/stats",
+      "segments": 10,
+      "sha256": "1597ec8039613aa6ec5c4c982f4b68068f193b2c51e0603722423418dd83cdcb",
+      "translatedSegments": 5,
+      "type": "route"
+    },
+    {
+      "bytes": 23029,
+      "locale": "fr-fr",
+      "manualOverrideSegments": 0,
+      "missingSegments": 28,
+      "path": "fr-fr/pages/support.json",
+      "route": "/support",
+      "segments": 33,
+      "sha256": "3fad3339e8b9797e3b86bf2ad378991447dd1ede1f227ae9fc11522b5b5623f4",
+      "translatedSegments": 5,
+      "type": "route"
+    },
+    {
+      "bytes": 26098,
+      "locale": "ja-jp",
+      "path": "ja-jp/_orphaned-translations.json",
+      "records": 30,
+      "sha256": "300d2cdf22fe958112c21add1fb985b6406044c7df110d0838a113f5106e71fa",
+      "type": "orphaned"
+    },
+    {
+      "bytes": 83110,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/1-minute-breathing-exercise.json",
+      "route": "/1-minute-breathing-exercise",
+      "segments": 79,
+      "sha256": "4c6277f051f8c5e15b0000b5f7164f67a88bb7438e2dbf2233a38e531a95ca11",
+      "translatedSegments": 79,
+      "type": "route"
+    },
+    {
+      "bytes": 82792,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/2-minute-breathing-exercise.json",
+      "route": "/2-minute-breathing-exercise",
+      "segments": 78,
+      "sha256": "7a473e576e3ddae1d71e3a161532de87146d11d2fee720512df4bf0f85969b7f",
+      "translatedSegments": 78,
+      "type": "route"
+    },
+    {
+      "bytes": 84647,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/4-7-8-breathing-for-insomnia.json",
+      "route": "/4-7-8-breathing-for-insomnia",
+      "segments": 82,
+      "sha256": "6201216e563ff0a5df9b0d5c43a740565d5517e36be37659b438d41e4aeab9a8",
+      "translatedSegments": 82,
+      "type": "route"
+    },
+    {
+      "bytes": 192394,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/4-7-8-breathing-timer.json",
+      "route": "/4-7-8-breathing-timer",
+      "segments": 179,
+      "sha256": "1f2285486198e657279c04ea6c523e6e155dc2aa25eaf2f840cc4f93b1c21be5",
+      "translatedSegments": 179,
+      "type": "route"
+    },
+    {
+      "bytes": 94345,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/5-minute-breathing-exercise.json",
+      "route": "/5-minute-breathing-exercise",
+      "segments": 89,
+      "sha256": "9054fd62d34988045a1928f8f1ff33549cfa8d1dbdbab37ce9cab0d88875924c",
+      "translatedSegments": 89,
+      "type": "route"
+    },
+    {
+      "bytes": 190332,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 13,
+      "path": "ja-jp/pages/_root.json",
+      "route": "/",
+      "segments": 198,
+      "sha256": "e279ef4e74bf221389453aa36a13ba1037999016caeb13a59e4b89d0329b93c3",
+      "translatedSegments": 185,
+      "type": "route"
+    },
+    {
+      "bytes": 32853,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/about.json",
+      "route": "/about",
+      "segments": 31,
+      "sha256": "0936307e15c46da03b1f4475addca6c36f88f16be88db32855d1cf6f6bdb1abf",
+      "translatedSegments": 31,
+      "type": "route"
+    },
+    {
+      "bytes": 49001,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/about/abi.json",
+      "route": "/about/abi",
+      "segments": 45,
+      "sha256": "34d4ebaf027e0373d72cb37c780fda1dac17d7ca8a0116c59a5438f5e0701b1e",
+      "translatedSegments": 45,
+      "type": "route"
+    },
+    {
+      "bytes": 55282,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/about/editorial-policy.json",
+      "route": "/about/editorial-policy",
+      "segments": 52,
+      "sha256": "a0abf6a7a8675f9d1a21655158b240ccc7f9176d6ea55c82ff179dcf6bb90293",
+      "translatedSegments": 52,
+      "type": "route"
+    },
+    {
+      "bytes": 118567,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/box-breathing-app.json",
+      "route": "/box-breathing-app",
+      "segments": 110,
+      "sha256": "53dc7683d9bb7fc10249fe786b117c34a8bddac27b6233fc037457424327f5cc",
+      "translatedSegments": 110,
+      "type": "route"
+    },
+    {
+      "bytes": 91027,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 12,
+      "path": "ja-jp/pages/box-breathing-before-presentation.json",
+      "route": "/box-breathing-before-presentation",
+      "segments": 93,
+      "sha256": "d91e79911c33f0ec3e7781828b235bcaf44f5d0de66dc10c14464dd3e33ce0d0",
+      "translatedSegments": 81,
+      "type": "route"
+    },
+    {
+      "bytes": 110319,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/brand-lab.json",
+      "route": "/brand-lab",
+      "segments": 113,
+      "sha256": "67225537dd2228e3122e14cf7feeefc2b7fb146a895072de90dcd7997c1c5957",
+      "translatedSegments": 113,
+      "type": "route"
+    },
+    {
+      "bytes": 67334,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/breathe.json",
+      "route": "/breathe",
+      "segments": 67,
+      "sha256": "fbce23d1fef767e8c4a8b4267f77b29dd155e9162835eb5be7c95951f1182dde",
+      "translatedSegments": 67,
+      "type": "route"
+    },
+    {
+      "bytes": 200432,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/breathe/4-7-8.json",
+      "route": "/breathe/4-7-8",
+      "segments": 192,
+      "sha256": "c790260325b476992c5bd9476962aee6a20dd4f2c8f166435eeee0a6a871426b",
+      "translatedSegments": 192,
+      "type": "route"
+    },
+    {
+      "bytes": 126988,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/breathe/9d-breathwork.json",
+      "route": "/breathe/9d-breathwork",
+      "segments": 109,
+      "sha256": "6b5f006557dee8065ca396b60390f87cdeeb749615d627b9209430b99f834300",
+      "translatedSegments": 109,
+      "type": "route"
+    },
+    {
+      "bytes": 174693,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/breathe/belly.json",
+      "route": "/breathe/belly",
+      "segments": 164,
+      "sha256": "f668cf8578142dc371f7780cea07096a8ca8c69cac90c7e1591bd578d732a900",
+      "translatedSegments": 164,
+      "type": "route"
+    },
+    {
+      "bytes": 206618,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/breathe/box.json",
+      "route": "/breathe/box",
+      "segments": 194,
+      "sha256": "7fb93ed585ba7de4d70983682223188de6aa6beafbb7f2dcfd328085310ab228",
+      "translatedSegments": 194,
+      "type": "route"
+    },
+    {
+      "bytes": 159471,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/breathe/breath-of-fire.json",
+      "route": "/breathe/breath-of-fire",
+      "segments": 149,
+      "sha256": "27f397618f95989001a8c0c012e26d8ff6ed8a298417c48293c056cc6c9959ab",
+      "translatedSegments": 149,
+      "type": "route"
+    },
+    {
+      "bytes": 181526,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/breathe/buteyko.json",
+      "route": "/breathe/buteyko",
+      "segments": 170,
+      "sha256": "81ae73543184d3cfeda40d9ee0b9a9c2711789c4b11e4baf6dbb92d8aac3af30",
+      "translatedSegments": 170,
+      "type": "route"
+    },
+    {
+      "bytes": 191574,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/breathe/coherent.json",
+      "route": "/breathe/coherent",
+      "segments": 183,
+      "sha256": "bfc6cd122ddc0004c5fc23d117a75abcd553a3580b18b69c70a0d75a6763efb1",
+      "translatedSegments": 183,
+      "type": "route"
+    },
+    {
+      "bytes": 135919,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/breathe/hope-cartel-9d-breathwork.json",
+      "route": "/breathe/hope-cartel-9d-breathwork",
+      "segments": 117,
+      "sha256": "129521b437a7674069dc11a265f1707cc651f9dac41f508ca6e83f411e41b8dc",
+      "translatedSegments": 117,
+      "type": "route"
+    },
+    {
+      "bytes": 213513,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/breathe/nadi-shodhana.json",
+      "route": "/breathe/nadi-shodhana",
+      "segments": 206,
+      "sha256": "ce7f977c183019175a186cc682045cec8726610aab208f37b9c28b0adf104770",
+      "translatedSegments": 206,
+      "type": "route"
+    },
+    {
+      "bytes": 258739,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/breathe/physiological-sigh.json",
+      "route": "/breathe/physiological-sigh",
+      "segments": 238,
+      "sha256": "de95e6536d90d581f072dd8bd54a1a2b81806a892cd253f6bb1c255b8db818e7",
+      "translatedSegments": 238,
+      "type": "route"
+    },
+    {
+      "bytes": 175621,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/breathe/pursed-lip.json",
+      "route": "/breathe/pursed-lip",
+      "segments": 168,
+      "sha256": "9bfc06268858b6ad9a21f3fd04448c444888bcebd8179124fa06dcd4a6188cfc",
+      "translatedSegments": 168,
+      "type": "route"
+    },
+    {
+      "bytes": 212860,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/breathe/tummo.json",
+      "route": "/breathe/tummo",
+      "segments": 201,
+      "sha256": "fa4ba8a09f4d1cec2b173fb376d9e814422138c55e311ecd9b34f84b594680c7",
+      "translatedSegments": 201,
+      "type": "route"
+    },
+    {
+      "bytes": 175315,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/breathe/ujjayi.json",
+      "route": "/breathe/ujjayi",
+      "segments": 165,
+      "sha256": "4c0a2ec97e33fb9e374e9025579604343e6e67f70497bc2466a5ee35fc02f174",
+      "translatedSegments": 165,
+      "type": "route"
+    },
+    {
+      "bytes": 177623,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/breathe/wim-hof.json",
+      "route": "/breathe/wim-hof",
+      "segments": 167,
+      "sha256": "97a256b9d508ae87abeb25a7cb26ceca18381d33f0c0ded7b14aed801b61e37d",
+      "translatedSegments": 167,
+      "type": "route"
+    },
+    {
+      "bytes": 44839,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/breathing-app.json",
+      "route": "/breathing-app",
+      "segments": 43,
+      "sha256": "b281f2823f0df2678e86eaf14ed1c699da60dde9728209158078a762026db285",
+      "translatedSegments": 43,
+      "type": "route"
+    },
+    {
+      "bytes": 91727,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/breathing-exercises-before-surgery.json",
+      "route": "/breathing-exercises-before-surgery",
+      "segments": 89,
+      "sha256": "95a6728fb7e65a1c060be4aacabdcc959d7f4e445b2e5ef1464f31032ba46081",
+      "translatedSegments": 89,
+      "type": "route"
+    },
+    {
+      "bytes": 93333,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/breathing-exercises-for-labor.json",
+      "route": "/breathing-exercises-for-labor",
+      "segments": 89,
+      "sha256": "52d8f3d548bf38fa9fd58b8d84a7b230ab68f37c07548ea6001b2ec997910498",
+      "translatedSegments": 89,
+      "type": "route"
+    },
+    {
+      "bytes": 130817,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 13,
+      "path": "ja-jp/pages/breathing-visualizer.json",
+      "route": "/breathing-visualizer",
+      "segments": 132,
+      "sha256": "5803ec9baf9a2051414e7148cfc67df06bad452c240dfa0ed6773a832a2e4373",
+      "translatedSegments": 119,
+      "type": "route"
+    },
+    {
+      "bytes": 150511,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/coherent-breathing-app.json",
+      "route": "/coherent-breathing-app",
+      "segments": 136,
+      "sha256": "4399f239aad3395f67c2c3057487af6b9beb8a5d49f9c35980f1021e9ee92d16",
+      "translatedSegments": 136,
+      "type": "route"
+    },
+    {
+      "bytes": 63235,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 1,
+      "path": "ja-jp/pages/embed.json",
+      "route": "/embed",
+      "segments": 64,
+      "sha256": "e6f99a8d47503c0dfc1a04dfa2d96866fcc0ff9a02b59455d182fc43c55963a1",
+      "translatedSegments": 63,
+      "type": "route"
+    },
+    {
+      "bytes": 83265,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/for.json",
+      "route": "/for",
+      "segments": 84,
+      "sha256": "8ecae67debb9b5687cc5783ed927cb4566a756ab2cabaf27fbf39106f8a4a187",
+      "translatedSegments": 84,
+      "type": "route"
+    },
+    {
+      "bytes": 154368,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/for/anxiety.json",
+      "route": "/for/anxiety",
+      "segments": 137,
+      "sha256": "d0a223016590bd10c66220c65fe3e2b64fe93959443ec7f4168e5b99ce0321c9",
+      "translatedSegments": 137,
+      "type": "route"
+    },
+    {
+      "bytes": 147444,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/for/athletes.json",
+      "route": "/for/athletes",
+      "segments": 129,
+      "sha256": "29b7b2b87425827c90419f31ed6367f4724dbccf22d2dd1214821f53ed39fb45",
+      "translatedSegments": 129,
+      "type": "route"
+    },
+    {
+      "bytes": 144354,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/for/focus.json",
+      "route": "/for/focus",
+      "segments": 127,
+      "sha256": "b8b3d357dddecf19dda94bd90562f56ad33048599ab8b25c01a3ea7e76bae534",
+      "translatedSegments": 127,
+      "type": "route"
+    },
+    {
+      "bytes": 127238,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/for/high-blood-pressure.json",
+      "route": "/for/high-blood-pressure",
+      "segments": 120,
+      "sha256": "8cd6058a7607917e036e5b427f99d89f6d0af71809c532eae68024aadee66d93",
+      "translatedSegments": 120,
+      "type": "route"
+    },
+    {
+      "bytes": 134910,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/for/holiday-stress.json",
+      "route": "/for/holiday-stress",
+      "segments": 123,
+      "sha256": "bc0f85d74e1d42a6cad44b8a8856a11fcecea83649f654b66f3a796d6f7eb868",
+      "translatedSegments": 123,
+      "type": "route"
+    },
+    {
+      "bytes": 158634,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/for/huberman.json",
+      "route": "/for/huberman",
+      "segments": 135,
+      "sha256": "6d8442e41c695528fc0fa8571e678615e032d619ee729f602e0ce47728d24ff5",
+      "translatedSegments": 135,
+      "type": "route"
+    },
+    {
+      "bytes": 141698,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/for/kids.json",
+      "route": "/for/kids",
+      "segments": 129,
+      "sha256": "f0f7cd5dd6710d281c0482c51fbf4a29d1034c461bee37d6ce435bcf1cdffd6b",
+      "translatedSegments": 129,
+      "type": "route"
+    },
+    {
+      "bytes": 138087,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/for/lung-capacity.json",
+      "route": "/for/lung-capacity",
+      "segments": 125,
+      "sha256": "09fa26515bd5b244436a8f38752f6423226b7c1538d739dde53a90af165a6946",
+      "translatedSegments": 125,
+      "type": "route"
+    },
+    {
+      "bytes": 148824,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/for/meditation.json",
+      "route": "/for/meditation",
+      "segments": 130,
+      "sha256": "ceebe62b1dac208f772c36d312a4457e353a9b3aa6879088f2e229683bc645c8",
+      "translatedSegments": 130,
+      "type": "route"
+    },
+    {
+      "bytes": 143571,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/for/panic-attacks.json",
+      "route": "/for/panic-attacks",
+      "segments": 127,
+      "sha256": "77a0914cc8b11ba943a77cb5186694b5825519a76d7ddcd8aae99bcee80110d2",
+      "translatedSegments": 127,
+      "type": "route"
+    },
+    {
+      "bytes": 134657,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/for/pranayama.json",
+      "route": "/for/pranayama",
+      "segments": 122,
+      "sha256": "520aa760691ea7a1f2ec17f819b2e65b320aae8086437070267d355ce9ca3dd8",
+      "translatedSegments": 122,
+      "type": "route"
+    },
+    {
+      "bytes": 148280,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/for/pregnancy.json",
+      "route": "/for/pregnancy",
+      "segments": 129,
+      "sha256": "b8e4ba3a233c3e7535b638e292b1b364faa453d7f69931a28cc37a22a742c371",
+      "translatedSegments": 129,
+      "type": "route"
+    },
+    {
+      "bytes": 121910,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/for/public-speaking.json",
+      "route": "/for/public-speaking",
+      "segments": 115,
+      "sha256": "620e8edc9d5d674a94a31f6e1d1fb7fd3f12178197ea2093779d2d6020b411cf",
+      "translatedSegments": 115,
+      "type": "route"
+    },
+    {
+      "bytes": 134161,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/for/running.json",
+      "route": "/for/running",
+      "segments": 125,
+      "sha256": "91b175c74debd5a27a939efc83400c3f7a652c90a33846f784c15bc6f8d2dc3a",
+      "translatedSegments": 125,
+      "type": "route"
+    },
+    {
+      "bytes": 134869,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/for/singing.json",
+      "route": "/for/singing",
+      "segments": 122,
+      "sha256": "eca490a41abf4a68029cddb6602ab0d6b22ae68671642d985d20aa022992ae85",
+      "translatedSegments": 122,
+      "type": "route"
+    },
+    {
+      "bytes": 134321,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/for/sleep.json",
+      "route": "/for/sleep",
+      "segments": 126,
+      "sha256": "ce5bbb38ccfdbe5d551b2e4890dd17819e28121d50dc169775ea5c0cc8de2faf",
+      "translatedSegments": 126,
+      "type": "route"
+    },
+    {
+      "bytes": 134416,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/for/stress.json",
+      "route": "/for/stress",
+      "segments": 122,
+      "sha256": "3e8bac08e0a77e2e6a96cf1e671305da567721aac3f750d7b7ef6e0ed1b7d008",
+      "translatedSegments": 122,
+      "type": "route"
+    },
+    {
+      "bytes": 109995,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/for/travel-anxiety.json",
+      "route": "/for/travel-anxiety",
+      "segments": 96,
+      "sha256": "8334a3619ab0560ab45e153646703e193e080ced0564182781f11e96703c647f",
+      "translatedSegments": 96,
+      "type": "route"
+    },
+    {
+      "bytes": 119578,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/holiday-breathing-exercises.json",
+      "route": "/holiday-breathing-exercises",
+      "segments": 119,
+      "sha256": "de41c086c9ad626892b2931458e4e13659bc74ffab7daa1ac8f065434e5905b4",
+      "translatedSegments": 119,
+      "type": "route"
+    },
+    {
+      "bytes": 167141,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/languages.json",
+      "route": "/languages",
+      "segments": 172,
+      "sha256": "56101100f4579ec7bcddf3c235b03b57e4416d9ea143052db35c6bd1613c7b8c",
+      "translatedSegments": 172,
+      "type": "route"
+    },
+    {
+      "bytes": 42053,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "ja-jp/pages/og-preview.json",
+      "route": "/og-preview",
+      "segments": 43,
+      "sha256": "d0d8dd859f0edf6956dad81fbb8151405b90384e261cd1e82a84841bfbfba253",
+      "translatedSegments": 43,
+      "type": "route"
+    },
+    {
+      "bytes": 91450,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 11,
+      "path": "ja-jp/pages/physiological-sigh-panic-attack.json",
+      "route": "/physiological-sigh-panic-attack",
+      "segments": 93,
+      "sha256": "96382ee4a707c428f763bf448769763679712f9bd7f2ae1f17ea808abfc7b03f",
+      "translatedSegments": 82,
+      "type": "route"
+    },
+    {
+      "bytes": 27522,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 3,
+      "path": "ja-jp/pages/privacy.json",
+      "route": "/privacy",
+      "segments": 27,
+      "sha256": "6714ceb6662cbd4e7014f3a195a329c76fcff8b8913adbbda76b6bb19b631725",
+      "translatedSegments": 24,
+      "type": "route"
+    },
+    {
+      "bytes": 9207,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 5,
+      "path": "ja-jp/pages/stats.json",
+      "route": "/stats",
+      "segments": 10,
+      "sha256": "364d29331956919d55debcf0bf80ad78f34c37dff5fb2dafa897e97e4948f80a",
+      "translatedSegments": 5,
+      "type": "route"
+    },
+    {
+      "bytes": 23043,
+      "locale": "ja-jp",
+      "manualOverrideSegments": 0,
+      "missingSegments": 28,
+      "path": "ja-jp/pages/support.json",
+      "route": "/support",
+      "segments": 33,
+      "sha256": "5d1292a63c1bf0028346de96aaf37186fde277b762399a861859a645d98913be",
+      "translatedSegments": 5,
+      "type": "route"
+    },
+    {
+      "bytes": 25653,
+      "locale": "pt-br",
+      "path": "pt-br/_orphaned-translations.json",
+      "records": 30,
+      "sha256": "54dcb4f86ac5f2fb9265eb20b0649d9f31084d2667479cb1be99da25d75b3b9b",
+      "type": "orphaned"
+    },
+    {
+      "bytes": 82572,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/1-minute-breathing-exercise.json",
+      "route": "/1-minute-breathing-exercise",
+      "segments": 79,
+      "sha256": "061a138231c6aac0cb509eca60979f728c7d704d699ade62585bf311d3f8ca0e",
+      "translatedSegments": 79,
+      "type": "route"
+    },
+    {
+      "bytes": 81855,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/2-minute-breathing-exercise.json",
+      "route": "/2-minute-breathing-exercise",
+      "segments": 78,
+      "sha256": "acad236e34adcb30ff7fe776b6a6b53d5164ea150ee97ddf12a7f6411880f639",
+      "translatedSegments": 78,
+      "type": "route"
+    },
+    {
+      "bytes": 83867,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/4-7-8-breathing-for-insomnia.json",
+      "route": "/4-7-8-breathing-for-insomnia",
+      "segments": 82,
+      "sha256": "1812a96a475248bc99d8ae78c787686b8b5d6ac956833338f84bad005431de67",
+      "translatedSegments": 82,
+      "type": "route"
+    },
+    {
+      "bytes": 189433,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/4-7-8-breathing-timer.json",
+      "route": "/4-7-8-breathing-timer",
+      "segments": 179,
+      "sha256": "f58338c2b7daa084ffc8f6247b7f8b8b727962a882eaddf5e62ccb3e0cc99f47",
+      "translatedSegments": 179,
+      "type": "route"
+    },
+    {
+      "bytes": 93887,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/5-minute-breathing-exercise.json",
+      "route": "/5-minute-breathing-exercise",
+      "segments": 89,
+      "sha256": "8bccfcde4dbc5c755de8c1dd769596ac90518a274190dffcb0e91fb8dcedda4e",
+      "translatedSegments": 89,
+      "type": "route"
+    },
+    {
+      "bytes": 188915,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 13,
+      "path": "pt-br/pages/_root.json",
+      "route": "/",
+      "segments": 198,
+      "sha256": "5b0ae4135a7d0f8ac0248a2deb04da9ae50ae6e6184ae03ad0828a9e9081863f",
+      "translatedSegments": 185,
+      "type": "route"
+    },
+    {
+      "bytes": 32920,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/about.json",
+      "route": "/about",
+      "segments": 31,
+      "sha256": "33595dae1d58da87b8013ae9937d7c3d2c11e588084827cae38a0b38f8b962df",
+      "translatedSegments": 31,
+      "type": "route"
+    },
+    {
+      "bytes": 48047,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/about/abi.json",
+      "route": "/about/abi",
+      "segments": 45,
+      "sha256": "770888cd067830d6d3b5f7527f57c529d356585d62270fa0ba3f21cffdc60bbb",
+      "translatedSegments": 45,
+      "type": "route"
+    },
+    {
+      "bytes": 54597,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/about/editorial-policy.json",
+      "route": "/about/editorial-policy",
+      "segments": 52,
+      "sha256": "0f9e427f71c9aedef4fd75d295fc5133974cf9c4f04ca07514a50ec18ebdcb13",
+      "translatedSegments": 52,
+      "type": "route"
+    },
+    {
+      "bytes": 117068,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/box-breathing-app.json",
+      "route": "/box-breathing-app",
+      "segments": 110,
+      "sha256": "be96217606a8e27bac28bf06d643328fdde933d1bbf9607e85b280410a65b971",
+      "translatedSegments": 110,
+      "type": "route"
+    },
+    {
+      "bytes": 90205,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 12,
+      "path": "pt-br/pages/box-breathing-before-presentation.json",
+      "route": "/box-breathing-before-presentation",
+      "segments": 93,
+      "sha256": "829edce383a411730b8e0d35a57f648bbaeac15e176fe76d9d0f1d5c4fa0baa7",
+      "translatedSegments": 81,
+      "type": "route"
+    },
+    {
+      "bytes": 109361,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/brand-lab.json",
+      "route": "/brand-lab",
+      "segments": 113,
+      "sha256": "71ce512550c1b8ef467fa11b0665e5635d96d2de6010af1c566b9b441a462d0f",
+      "translatedSegments": 113,
+      "type": "route"
+    },
+    {
+      "bytes": 66883,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/breathe.json",
+      "route": "/breathe",
+      "segments": 67,
+      "sha256": "3113391abbe02c14ae96670493e6ce4836886ddfe1c2977e52a7544b26b734c6",
+      "translatedSegments": 67,
+      "type": "route"
+    },
+    {
+      "bytes": 198055,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/breathe/4-7-8.json",
+      "route": "/breathe/4-7-8",
+      "segments": 192,
+      "sha256": "01a17b9608bb4bf3c78810453c911d82b303e05f796e5fca992d51a7fce5c464",
+      "translatedSegments": 192,
+      "type": "route"
+    },
+    {
+      "bytes": 124499,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/breathe/9d-breathwork.json",
+      "route": "/breathe/9d-breathwork",
+      "segments": 109,
+      "sha256": "db303d4d8d4ecdadac67421664d804680829fb8687b3da272c6dd7196cbd1b97",
+      "translatedSegments": 109,
+      "type": "route"
+    },
+    {
+      "bytes": 173559,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/breathe/belly.json",
+      "route": "/breathe/belly",
+      "segments": 164,
+      "sha256": "750f6e576a82aefdc3de46d4432231544302cc02ffaccda1068348d7aea50ecb",
+      "translatedSegments": 164,
+      "type": "route"
+    },
+    {
+      "bytes": 203788,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/breathe/box.json",
+      "route": "/breathe/box",
+      "segments": 194,
+      "sha256": "f4484088bee5ac6f6abedfbcacdc1b1b794c68b3d141536438d392cc3ffafdbf",
+      "translatedSegments": 194,
+      "type": "route"
+    },
+    {
+      "bytes": 158641,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/breathe/breath-of-fire.json",
+      "route": "/breathe/breath-of-fire",
+      "segments": 149,
+      "sha256": "b4207694a4f7c3617485a84e8c35207099908c21396bd50b616b94242201c29e",
+      "translatedSegments": 149,
+      "type": "route"
+    },
+    {
+      "bytes": 179898,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/breathe/buteyko.json",
+      "route": "/breathe/buteyko",
+      "segments": 170,
+      "sha256": "2fad2861b1f0b6dfb5f9a77e716c5764800ea05198131fd74497719b51ce9293",
+      "translatedSegments": 170,
+      "type": "route"
+    },
+    {
+      "bytes": 188136,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/breathe/coherent.json",
+      "route": "/breathe/coherent",
+      "segments": 183,
+      "sha256": "24eafe8fc93171c03750aede49de5828531017f1195d9fe587d90c33350d4a81",
+      "translatedSegments": 183,
+      "type": "route"
+    },
+    {
+      "bytes": 132268,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/breathe/hope-cartel-9d-breathwork.json",
+      "route": "/breathe/hope-cartel-9d-breathwork",
+      "segments": 117,
+      "sha256": "9ef1fc937a70bb2017d262671fb9e8bd011478c621b544a3ad942f699bbcf2c9",
+      "translatedSegments": 117,
+      "type": "route"
+    },
+    {
+      "bytes": 211109,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/breathe/nadi-shodhana.json",
+      "route": "/breathe/nadi-shodhana",
+      "segments": 206,
+      "sha256": "4ea7b7217d7a2d962b42a86700aef4a8ba9633f445e13c99e5ff117b5dd0595b",
+      "translatedSegments": 206,
+      "type": "route"
+    },
+    {
+      "bytes": 255996,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/breathe/physiological-sigh.json",
+      "route": "/breathe/physiological-sigh",
+      "segments": 238,
+      "sha256": "df29a7de55208cc5e5faa2da7cad5176febf95e68ac9ca29d43350cf0284661c",
+      "translatedSegments": 238,
+      "type": "route"
+    },
+    {
+      "bytes": 175060,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/breathe/pursed-lip.json",
+      "route": "/breathe/pursed-lip",
+      "segments": 168,
+      "sha256": "d1e2f121e92f482d4436af79bf6a666404504e6effbfc9e8ba1563a5a4f9df96",
+      "translatedSegments": 168,
+      "type": "route"
+    },
+    {
+      "bytes": 211428,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/breathe/tummo.json",
+      "route": "/breathe/tummo",
+      "segments": 201,
+      "sha256": "a75ed261e2beb8fd119c667d104c70fcecd083fa4e6523479beee45a0a1fcc05",
+      "translatedSegments": 201,
+      "type": "route"
+    },
+    {
+      "bytes": 173105,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/breathe/ujjayi.json",
+      "route": "/breathe/ujjayi",
+      "segments": 165,
+      "sha256": "2ac0ad4a6c7f21526b817d264dbe020e74bf975f46727ac891438d42a1422757",
+      "translatedSegments": 165,
+      "type": "route"
+    },
+    {
+      "bytes": 174320,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/breathe/wim-hof.json",
+      "route": "/breathe/wim-hof",
+      "segments": 167,
+      "sha256": "fcf48afea2b309379023c6226bb7665fef613ea529afdc9736f203ff08e43f57",
+      "translatedSegments": 167,
+      "type": "route"
+    },
+    {
+      "bytes": 44066,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 1,
+      "path": "pt-br/pages/breathing-app.json",
+      "route": "/breathing-app",
+      "segments": 43,
+      "sha256": "5007b8612d4e55940f2cd284b7f30b85ea9061c71c41b78fdf8104194a93f794",
+      "translatedSegments": 42,
+      "type": "route"
+    },
+    {
+      "bytes": 91266,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/breathing-exercises-before-surgery.json",
+      "route": "/breathing-exercises-before-surgery",
+      "segments": 89,
+      "sha256": "1b4459ce2f9bf9e48a5fe2935c6de701b69919d510f563db4014bdbb2dfe59f1",
+      "translatedSegments": 89,
+      "type": "route"
+    },
+    {
+      "bytes": 92558,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/breathing-exercises-for-labor.json",
+      "route": "/breathing-exercises-for-labor",
+      "segments": 89,
+      "sha256": "aed473cfcbebfdbebcf87511e64d8cf8e93aa8fca32a36ede579cebc1a271393",
+      "translatedSegments": 89,
+      "type": "route"
+    },
+    {
+      "bytes": 128995,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 13,
+      "path": "pt-br/pages/breathing-visualizer.json",
+      "route": "/breathing-visualizer",
+      "segments": 132,
+      "sha256": "0d4263b69565617fc5f9b913de59a7509cc2fe89dab0e53546d41dee0efdafc9",
+      "translatedSegments": 119,
+      "type": "route"
+    },
+    {
+      "bytes": 149549,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/coherent-breathing-app.json",
+      "route": "/coherent-breathing-app",
+      "segments": 136,
+      "sha256": "b3081aa7131d448bbe3393832423ed84bce941065799630135c1410462959961",
+      "translatedSegments": 136,
+      "type": "route"
+    },
+    {
+      "bytes": 62624,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 1,
+      "path": "pt-br/pages/embed.json",
+      "route": "/embed",
+      "segments": 64,
+      "sha256": "c9c7a822e91cb46a00c53d36276c556962233062635f0bb82c8b4a543a1a894c",
+      "translatedSegments": 63,
+      "type": "route"
+    },
+    {
+      "bytes": 83142,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/for.json",
+      "route": "/for",
+      "segments": 84,
+      "sha256": "3a4cdc67a4bb29f7fe124f49a10d193554d1b287af9e5fec4a80b41918b8bf42",
+      "translatedSegments": 84,
+      "type": "route"
+    },
+    {
+      "bytes": 152619,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/for/anxiety.json",
+      "route": "/for/anxiety",
+      "segments": 137,
+      "sha256": "87f4e1814e41a54ead72d8a5332c1a03b807407be0d7dbc137c0efe82b6322da",
+      "translatedSegments": 137,
+      "type": "route"
+    },
+    {
+      "bytes": 145431,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/for/athletes.json",
+      "route": "/for/athletes",
+      "segments": 129,
+      "sha256": "2e41f46e814064cebfb671eb2eaa0c99a41ed46c73f5edc10e98ab13fdbe7a60",
+      "translatedSegments": 129,
+      "type": "route"
+    },
+    {
+      "bytes": 142500,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/for/focus.json",
+      "route": "/for/focus",
+      "segments": 127,
+      "sha256": "223f467f4aeb292dc8abc6b53d97ef09c4820b2dff6a985d21a86f9c8f58848a",
+      "translatedSegments": 127,
+      "type": "route"
+    },
+    {
+      "bytes": 126391,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/for/high-blood-pressure.json",
+      "route": "/for/high-blood-pressure",
+      "segments": 120,
+      "sha256": "726e4f8197188190ec12222355e5148a9b074fec5e8e845efc9b77fbba9e18d7",
+      "translatedSegments": 120,
+      "type": "route"
+    },
+    {
+      "bytes": 133166,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/for/holiday-stress.json",
+      "route": "/for/holiday-stress",
+      "segments": 123,
+      "sha256": "52b2281952a1d0c9cc9d38370bb4330a921fc8859ca55575d2d494f833013c0e",
+      "translatedSegments": 123,
+      "type": "route"
+    },
+    {
+      "bytes": 154803,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/for/huberman.json",
+      "route": "/for/huberman",
+      "segments": 135,
+      "sha256": "8e3482a5a5258f1a270a7f57fd4cd2ca3a0562c753f68fcb43f431d46d00228b",
+      "translatedSegments": 135,
+      "type": "route"
+    },
+    {
+      "bytes": 138200,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/for/kids.json",
+      "route": "/for/kids",
+      "segments": 129,
+      "sha256": "a0d3cc790dd834e16f753c0038c389eb5b3432e918ab158115b14e63626fcf19",
+      "translatedSegments": 129,
+      "type": "route"
+    },
+    {
+      "bytes": 138299,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/for/lung-capacity.json",
+      "route": "/for/lung-capacity",
+      "segments": 125,
+      "sha256": "52c9dc37082c64f56876502a5c168045fe9850b6c62ed2ef6af8955d8feff40c",
+      "translatedSegments": 125,
+      "type": "route"
+    },
+    {
+      "bytes": 146503,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/for/meditation.json",
+      "route": "/for/meditation",
+      "segments": 130,
+      "sha256": "45dc401c86da7fdee4b3b89aaf7701332cdabf2ba7f718d554199ace8216e2e0",
+      "translatedSegments": 130,
+      "type": "route"
+    },
+    {
+      "bytes": 141485,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/for/panic-attacks.json",
+      "route": "/for/panic-attacks",
+      "segments": 127,
+      "sha256": "e97af1847e68801f15494132d59b589a34808cddc66cf6931a7fe229bede259d",
+      "translatedSegments": 127,
+      "type": "route"
+    },
+    {
+      "bytes": 132253,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/for/pranayama.json",
+      "route": "/for/pranayama",
+      "segments": 122,
+      "sha256": "290611174be1e1fc99c5ee13e337a74e5dcee811644dad35053cd079aa61570b",
+      "translatedSegments": 122,
+      "type": "route"
+    },
+    {
+      "bytes": 146601,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/for/pregnancy.json",
+      "route": "/for/pregnancy",
+      "segments": 129,
+      "sha256": "3b1a8731872222232523fe4b387b43f1ceeddc07bf3a02cc2dcf47877df71479",
+      "translatedSegments": 129,
+      "type": "route"
+    },
+    {
+      "bytes": 121085,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/for/public-speaking.json",
+      "route": "/for/public-speaking",
+      "segments": 115,
+      "sha256": "e7248aa31ddbb9514518a69ffeb1658d9d515e798a4548d06c5721b916d60205",
+      "translatedSegments": 115,
+      "type": "route"
+    },
+    {
+      "bytes": 132857,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/for/running.json",
+      "route": "/for/running",
+      "segments": 125,
+      "sha256": "a691f9f75769e2d873aa85c63bc416e21b7560e6ec787eaaa51ece80fb73d8f8",
+      "translatedSegments": 125,
+      "type": "route"
+    },
+    {
+      "bytes": 133543,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/for/singing.json",
+      "route": "/for/singing",
+      "segments": 122,
+      "sha256": "5f395c5df92e6d1bff7d78e143bcdc0dc38fa3b3f80739c47e823e3170cf8ca5",
+      "translatedSegments": 122,
+      "type": "route"
+    },
+    {
+      "bytes": 132800,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/for/sleep.json",
+      "route": "/for/sleep",
+      "segments": 126,
+      "sha256": "a2d1780b935e0e4525e4d07b2b76eb78d06086afd11a26bf4e96703040a89ead",
+      "translatedSegments": 126,
+      "type": "route"
+    },
+    {
+      "bytes": 132155,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/for/stress.json",
+      "route": "/for/stress",
+      "segments": 122,
+      "sha256": "deab1eac8e99e4b6fe8b96c281519ed17908482527e91d8ffba6463715bb998c",
+      "translatedSegments": 122,
+      "type": "route"
+    },
+    {
+      "bytes": 108293,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/for/travel-anxiety.json",
+      "route": "/for/travel-anxiety",
+      "segments": 96,
+      "sha256": "f22b61a930fe4e9f606cfee8232d792efe165624747df40f15940ca02348feaf",
+      "translatedSegments": 96,
+      "type": "route"
+    },
+    {
+      "bytes": 118905,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/holiday-breathing-exercises.json",
+      "route": "/holiday-breathing-exercises",
+      "segments": 119,
+      "sha256": "672966436444e62a80fdf1aca41f9cd90c7032f039c04446e3cc56e2a23ef4d1",
+      "translatedSegments": 119,
+      "type": "route"
+    },
+    {
+      "bytes": 166748,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/languages.json",
+      "route": "/languages",
+      "segments": 172,
+      "sha256": "12f78103c345ad61d3c7038b2066be8f28f68ddaa7b08e31f0d91199f103963c",
+      "translatedSegments": 172,
+      "type": "route"
+    },
+    {
+      "bytes": 42021,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 0,
+      "path": "pt-br/pages/og-preview.json",
+      "route": "/og-preview",
+      "segments": 43,
+      "sha256": "c8a774f20e0a0d093519401ee4470b5214b3e50564296e66dddcfe92960993b9",
+      "translatedSegments": 43,
+      "type": "route"
+    },
+    {
+      "bytes": 90563,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 11,
+      "path": "pt-br/pages/physiological-sigh-panic-attack.json",
+      "route": "/physiological-sigh-panic-attack",
+      "segments": 93,
+      "sha256": "eea9171d5b2d51f5145042b1ec19869d84caceca18e8c703364856a68e31dd83",
+      "translatedSegments": 82,
+      "type": "route"
+    },
+    {
+      "bytes": 27021,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 3,
+      "path": "pt-br/pages/privacy.json",
+      "route": "/privacy",
+      "segments": 27,
+      "sha256": "43c3bb1108676ea5e6f3a56c543d27035709791f3588a3af405907ae0f15c4ee",
+      "translatedSegments": 24,
+      "type": "route"
+    },
+    {
+      "bytes": 9226,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 5,
+      "path": "pt-br/pages/stats.json",
+      "route": "/stats",
+      "segments": 10,
+      "sha256": "e6946ed6cd26b4b4ec05630b78609a03cfccecb07cc7b480be8ec639dc2aa55e",
+      "translatedSegments": 5,
+      "type": "route"
+    },
+    {
+      "bytes": 23036,
+      "locale": "pt-br",
+      "manualOverrideSegments": 0,
+      "missingSegments": 28,
+      "path": "pt-br/pages/support.json",
+      "route": "/support",
+      "segments": 33,
+      "sha256": "043515a2b2c72b3324d2647c8d6e4666c36710c8694481685cfc1af6c74659f5",
+      "translatedSegments": 5,
+      "type": "route"
+    }
+  ],
+  "integrity": {
+    "algorithm": "sha256",
+    "translationIdsSha256": "57cdb846d8a3a45e99530862916b3cbd4cae4162e3733699dba9d2c097c60aeb",
+    "translationRecordsSha256": "18937f47897bf5ba0680db3a63e15342e82e0f9ef119d9780670092af28869c5"
+  },
+  "localeCounts": {
+    "de-de": {
+      "missingPlacements": 86,
+      "orphanTranslations": 30,
+      "placements": 7012,
+      "routeFiles": 59,
+      "translatedPlacements": 6926,
+      "uniqueTranslations": 4391
+    },
+    "es-es": {
+      "missingPlacements": 86,
+      "orphanTranslations": 160,
+      "placements": 7012,
+      "routeFiles": 59,
+      "translatedPlacements": 6926,
+      "uniqueTranslations": 4521
+    },
+    "fr-fr": {
+      "missingPlacements": 86,
+      "orphanTranslations": 30,
+      "placements": 7012,
+      "routeFiles": 59,
+      "translatedPlacements": 6926,
+      "uniqueTranslations": 4391
+    },
+    "ja-jp": {
+      "missingPlacements": 86,
+      "orphanTranslations": 30,
+      "placements": 7012,
+      "routeFiles": 59,
+      "translatedPlacements": 6926,
+      "uniqueTranslations": 4391
+    },
+    "pt-br": {
+      "missingPlacements": 87,
+      "orphanTranslations": 30,
+      "placements": 7012,
+      "routeFiles": 59,
+      "translatedPlacements": 6925,
+      "uniqueTranslations": 4390
+    }
+  },
+  "notes": [
+    "Route artifacts duplicate shared translations where the same segment/context occurs on multiple pages.",
+    "Orphaned translation artifacts preserve translation rows that no current page placement references.",
+    "Unplaced source segments without translations are counted but intentionally omitted from runtime artifacts.",
+    "No database credentials, tenant user identifiers, or override actor identifiers are exported."
+  ],
+  "routes": [
+    {
+      "catalogPageId": "f0a4b022-b201-4720-ad59-0b439a7cbdb0",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 13,
+          "placements": 198,
+          "translated": 185
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 13,
+          "placements": 198,
+          "translated": 185
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 13,
+          "placements": 198,
+          "translated": 185
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 13,
+          "placements": 198,
+          "translated": 185
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 13,
+          "placements": 198,
+          "translated": 185
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/_root.json",
+        "es-es": "es-es/pages/_root.json",
+        "fr-fr": "fr-fr/pages/_root.json",
+        "ja-jp": "ja-jp/pages/_root.json",
+        "pt-br": "pt-br/pages/_root.json"
+      },
+      "route": "/"
+    },
+    {
+      "catalogPageId": "bd7ee398-2337-404d-9b1e-8a53ed370019",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 79,
+          "translated": 79
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 79,
+          "translated": 79
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 79,
+          "translated": 79
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 79,
+          "translated": 79
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 79,
+          "translated": 79
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/1-minute-breathing-exercise.json",
+        "es-es": "es-es/pages/1-minute-breathing-exercise.json",
+        "fr-fr": "fr-fr/pages/1-minute-breathing-exercise.json",
+        "ja-jp": "ja-jp/pages/1-minute-breathing-exercise.json",
+        "pt-br": "pt-br/pages/1-minute-breathing-exercise.json"
+      },
+      "route": "/1-minute-breathing-exercise"
+    },
+    {
+      "catalogPageId": "e7a3aeba-007b-4d2a-b2ff-bad14802592e",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 78,
+          "translated": 78
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 78,
+          "translated": 78
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 78,
+          "translated": 78
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 78,
+          "translated": 78
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 78,
+          "translated": 78
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/2-minute-breathing-exercise.json",
+        "es-es": "es-es/pages/2-minute-breathing-exercise.json",
+        "fr-fr": "fr-fr/pages/2-minute-breathing-exercise.json",
+        "ja-jp": "ja-jp/pages/2-minute-breathing-exercise.json",
+        "pt-br": "pt-br/pages/2-minute-breathing-exercise.json"
+      },
+      "route": "/2-minute-breathing-exercise"
+    },
+    {
+      "catalogPageId": "80a2a35a-2c07-4171-b8c2-92a806782ef9",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 82,
+          "translated": 82
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 82,
+          "translated": 82
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 82,
+          "translated": 82
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 82,
+          "translated": 82
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 82,
+          "translated": 82
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/4-7-8-breathing-for-insomnia.json",
+        "es-es": "es-es/pages/4-7-8-breathing-for-insomnia.json",
+        "fr-fr": "fr-fr/pages/4-7-8-breathing-for-insomnia.json",
+        "ja-jp": "ja-jp/pages/4-7-8-breathing-for-insomnia.json",
+        "pt-br": "pt-br/pages/4-7-8-breathing-for-insomnia.json"
+      },
+      "route": "/4-7-8-breathing-for-insomnia"
+    },
+    {
+      "catalogPageId": "d854d9ef-cc0a-4cc4-ae11-d7c1c3851849",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 179,
+          "translated": 179
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 179,
+          "translated": 179
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 179,
+          "translated": 179
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 179,
+          "translated": 179
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 179,
+          "translated": 179
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/4-7-8-breathing-timer.json",
+        "es-es": "es-es/pages/4-7-8-breathing-timer.json",
+        "fr-fr": "fr-fr/pages/4-7-8-breathing-timer.json",
+        "ja-jp": "ja-jp/pages/4-7-8-breathing-timer.json",
+        "pt-br": "pt-br/pages/4-7-8-breathing-timer.json"
+      },
+      "route": "/4-7-8-breathing-timer"
+    },
+    {
+      "catalogPageId": "bb91fa89-7304-4705-8ff7-1c97b4758cca",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 89,
+          "translated": 89
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 89,
+          "translated": 89
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 89,
+          "translated": 89
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 89,
+          "translated": 89
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 89,
+          "translated": 89
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/5-minute-breathing-exercise.json",
+        "es-es": "es-es/pages/5-minute-breathing-exercise.json",
+        "fr-fr": "fr-fr/pages/5-minute-breathing-exercise.json",
+        "ja-jp": "ja-jp/pages/5-minute-breathing-exercise.json",
+        "pt-br": "pt-br/pages/5-minute-breathing-exercise.json"
+      },
+      "route": "/5-minute-breathing-exercise"
+    },
+    {
+      "catalogPageId": "df8c34af-0b5d-40c9-8063-d00fdf48e2d6",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 31,
+          "translated": 31
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 31,
+          "translated": 31
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 31,
+          "translated": 31
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 31,
+          "translated": 31
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 31,
+          "translated": 31
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/about.json",
+        "es-es": "es-es/pages/about.json",
+        "fr-fr": "fr-fr/pages/about.json",
+        "ja-jp": "ja-jp/pages/about.json",
+        "pt-br": "pt-br/pages/about.json"
+      },
+      "route": "/about"
+    },
+    {
+      "catalogPageId": "50634a46-3e9c-4e02-8e96-4fd001ccdba2",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 45,
+          "translated": 45
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 45,
+          "translated": 45
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 45,
+          "translated": 45
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 45,
+          "translated": 45
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 45,
+          "translated": 45
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/about/abi.json",
+        "es-es": "es-es/pages/about/abi.json",
+        "fr-fr": "fr-fr/pages/about/abi.json",
+        "ja-jp": "ja-jp/pages/about/abi.json",
+        "pt-br": "pt-br/pages/about/abi.json"
+      },
+      "route": "/about/abi"
+    },
+    {
+      "catalogPageId": "b289bd2a-1ad8-46d8-9b6d-1a9ae6f021c0",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 52,
+          "translated": 52
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 52,
+          "translated": 52
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 52,
+          "translated": 52
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 52,
+          "translated": 52
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 52,
+          "translated": 52
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/about/editorial-policy.json",
+        "es-es": "es-es/pages/about/editorial-policy.json",
+        "fr-fr": "fr-fr/pages/about/editorial-policy.json",
+        "ja-jp": "ja-jp/pages/about/editorial-policy.json",
+        "pt-br": "pt-br/pages/about/editorial-policy.json"
+      },
+      "route": "/about/editorial-policy"
+    },
+    {
+      "catalogPageId": "421b8ca3-fa0e-41be-8bc0-bb0551678b93",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 110,
+          "translated": 110
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 110,
+          "translated": 110
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 110,
+          "translated": 110
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 110,
+          "translated": 110
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 110,
+          "translated": 110
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/box-breathing-app.json",
+        "es-es": "es-es/pages/box-breathing-app.json",
+        "fr-fr": "fr-fr/pages/box-breathing-app.json",
+        "ja-jp": "ja-jp/pages/box-breathing-app.json",
+        "pt-br": "pt-br/pages/box-breathing-app.json"
+      },
+      "route": "/box-breathing-app"
+    },
+    {
+      "catalogPageId": "057248fc-7cce-43a3-94b1-08f60184a01a",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 12,
+          "placements": 93,
+          "translated": 81
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 12,
+          "placements": 93,
+          "translated": 81
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 12,
+          "placements": 93,
+          "translated": 81
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 12,
+          "placements": 93,
+          "translated": 81
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 12,
+          "placements": 93,
+          "translated": 81
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/box-breathing-before-presentation.json",
+        "es-es": "es-es/pages/box-breathing-before-presentation.json",
+        "fr-fr": "fr-fr/pages/box-breathing-before-presentation.json",
+        "ja-jp": "ja-jp/pages/box-breathing-before-presentation.json",
+        "pt-br": "pt-br/pages/box-breathing-before-presentation.json"
+      },
+      "route": "/box-breathing-before-presentation"
+    },
+    {
+      "catalogPageId": "d038bf78-3ccb-45df-8a1a-60a37d1709aa",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 113,
+          "translated": 113
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 113,
+          "translated": 113
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 113,
+          "translated": 113
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 113,
+          "translated": 113
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 113,
+          "translated": 113
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/brand-lab.json",
+        "es-es": "es-es/pages/brand-lab.json",
+        "fr-fr": "fr-fr/pages/brand-lab.json",
+        "ja-jp": "ja-jp/pages/brand-lab.json",
+        "pt-br": "pt-br/pages/brand-lab.json"
+      },
+      "route": "/brand-lab"
+    },
+    {
+      "catalogPageId": "030dfc3b-acf9-4c71-b80a-1c111f0f0d01",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 67,
+          "translated": 67
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 67,
+          "translated": 67
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 67,
+          "translated": 67
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 67,
+          "translated": 67
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 67,
+          "translated": 67
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/breathe.json",
+        "es-es": "es-es/pages/breathe.json",
+        "fr-fr": "fr-fr/pages/breathe.json",
+        "ja-jp": "ja-jp/pages/breathe.json",
+        "pt-br": "pt-br/pages/breathe.json"
+      },
+      "route": "/breathe"
+    },
+    {
+      "catalogPageId": "09a2c296-c8af-4463-b97b-be9700ef8afc",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 192,
+          "translated": 192
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 192,
+          "translated": 192
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 192,
+          "translated": 192
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 192,
+          "translated": 192
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 192,
+          "translated": 192
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/breathe/4-7-8.json",
+        "es-es": "es-es/pages/breathe/4-7-8.json",
+        "fr-fr": "fr-fr/pages/breathe/4-7-8.json",
+        "ja-jp": "ja-jp/pages/breathe/4-7-8.json",
+        "pt-br": "pt-br/pages/breathe/4-7-8.json"
+      },
+      "route": "/breathe/4-7-8"
+    },
+    {
+      "catalogPageId": "ecd29f7e-a7d0-47e3-9d0e-27b4731418f3",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 109,
+          "translated": 109
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 109,
+          "translated": 109
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 109,
+          "translated": 109
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 109,
+          "translated": 109
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 109,
+          "translated": 109
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/breathe/9d-breathwork.json",
+        "es-es": "es-es/pages/breathe/9d-breathwork.json",
+        "fr-fr": "fr-fr/pages/breathe/9d-breathwork.json",
+        "ja-jp": "ja-jp/pages/breathe/9d-breathwork.json",
+        "pt-br": "pt-br/pages/breathe/9d-breathwork.json"
+      },
+      "route": "/breathe/9d-breathwork"
+    },
+    {
+      "catalogPageId": "a3c4004f-17f3-4764-92b1-6a64cea28b19",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 164,
+          "translated": 164
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 164,
+          "translated": 164
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 164,
+          "translated": 164
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 164,
+          "translated": 164
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 164,
+          "translated": 164
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/breathe/belly.json",
+        "es-es": "es-es/pages/breathe/belly.json",
+        "fr-fr": "fr-fr/pages/breathe/belly.json",
+        "ja-jp": "ja-jp/pages/breathe/belly.json",
+        "pt-br": "pt-br/pages/breathe/belly.json"
+      },
+      "route": "/breathe/belly"
+    },
+    {
+      "catalogPageId": "f3f4b024-9031-4d49-899a-4df42aa7186b",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 194,
+          "translated": 194
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 194,
+          "translated": 194
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 194,
+          "translated": 194
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 194,
+          "translated": 194
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 194,
+          "translated": 194
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/breathe/box.json",
+        "es-es": "es-es/pages/breathe/box.json",
+        "fr-fr": "fr-fr/pages/breathe/box.json",
+        "ja-jp": "ja-jp/pages/breathe/box.json",
+        "pt-br": "pt-br/pages/breathe/box.json"
+      },
+      "route": "/breathe/box"
+    },
+    {
+      "catalogPageId": "612c106a-644e-49be-8339-99f1b96072b6",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 149,
+          "translated": 149
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 149,
+          "translated": 149
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 149,
+          "translated": 149
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 149,
+          "translated": 149
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 149,
+          "translated": 149
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/breathe/breath-of-fire.json",
+        "es-es": "es-es/pages/breathe/breath-of-fire.json",
+        "fr-fr": "fr-fr/pages/breathe/breath-of-fire.json",
+        "ja-jp": "ja-jp/pages/breathe/breath-of-fire.json",
+        "pt-br": "pt-br/pages/breathe/breath-of-fire.json"
+      },
+      "route": "/breathe/breath-of-fire"
+    },
+    {
+      "catalogPageId": "72bbd21a-458a-42dc-a63e-3be5217ab22e",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 170,
+          "translated": 170
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 170,
+          "translated": 170
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 170,
+          "translated": 170
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 170,
+          "translated": 170
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 170,
+          "translated": 170
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/breathe/buteyko.json",
+        "es-es": "es-es/pages/breathe/buteyko.json",
+        "fr-fr": "fr-fr/pages/breathe/buteyko.json",
+        "ja-jp": "ja-jp/pages/breathe/buteyko.json",
+        "pt-br": "pt-br/pages/breathe/buteyko.json"
+      },
+      "route": "/breathe/buteyko"
+    },
+    {
+      "catalogPageId": "22ca1bb5-324f-46f4-a40c-16c02a3ec8c7",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 183,
+          "translated": 183
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 183,
+          "translated": 183
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 183,
+          "translated": 183
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 183,
+          "translated": 183
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 183,
+          "translated": 183
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/breathe/coherent.json",
+        "es-es": "es-es/pages/breathe/coherent.json",
+        "fr-fr": "fr-fr/pages/breathe/coherent.json",
+        "ja-jp": "ja-jp/pages/breathe/coherent.json",
+        "pt-br": "pt-br/pages/breathe/coherent.json"
+      },
+      "route": "/breathe/coherent"
+    },
+    {
+      "catalogPageId": "b4117f38-ac96-4d68-b679-c5f3acd30a99",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 117,
+          "translated": 117
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 117,
+          "translated": 117
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 117,
+          "translated": 117
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 117,
+          "translated": 117
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 117,
+          "translated": 117
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/breathe/hope-cartel-9d-breathwork.json",
+        "es-es": "es-es/pages/breathe/hope-cartel-9d-breathwork.json",
+        "fr-fr": "fr-fr/pages/breathe/hope-cartel-9d-breathwork.json",
+        "ja-jp": "ja-jp/pages/breathe/hope-cartel-9d-breathwork.json",
+        "pt-br": "pt-br/pages/breathe/hope-cartel-9d-breathwork.json"
+      },
+      "route": "/breathe/hope-cartel-9d-breathwork"
+    },
+    {
+      "catalogPageId": "2408add9-91b3-4620-949f-278a9e2dc5e4",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 206,
+          "translated": 206
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 206,
+          "translated": 206
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 206,
+          "translated": 206
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 206,
+          "translated": 206
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 206,
+          "translated": 206
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/breathe/nadi-shodhana.json",
+        "es-es": "es-es/pages/breathe/nadi-shodhana.json",
+        "fr-fr": "fr-fr/pages/breathe/nadi-shodhana.json",
+        "ja-jp": "ja-jp/pages/breathe/nadi-shodhana.json",
+        "pt-br": "pt-br/pages/breathe/nadi-shodhana.json"
+      },
+      "route": "/breathe/nadi-shodhana"
+    },
+    {
+      "catalogPageId": "58ae4d75-eadc-470e-afbc-6483ba946d75",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 238,
+          "translated": 238
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 238,
+          "translated": 238
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 238,
+          "translated": 238
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 238,
+          "translated": 238
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 238,
+          "translated": 238
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/breathe/physiological-sigh.json",
+        "es-es": "es-es/pages/breathe/physiological-sigh.json",
+        "fr-fr": "fr-fr/pages/breathe/physiological-sigh.json",
+        "ja-jp": "ja-jp/pages/breathe/physiological-sigh.json",
+        "pt-br": "pt-br/pages/breathe/physiological-sigh.json"
+      },
+      "route": "/breathe/physiological-sigh"
+    },
+    {
+      "catalogPageId": "5a7eb1ec-e31a-4d48-8c48-6b1f6620a9ee",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 168,
+          "translated": 168
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 168,
+          "translated": 168
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 168,
+          "translated": 168
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 168,
+          "translated": 168
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 168,
+          "translated": 168
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/breathe/pursed-lip.json",
+        "es-es": "es-es/pages/breathe/pursed-lip.json",
+        "fr-fr": "fr-fr/pages/breathe/pursed-lip.json",
+        "ja-jp": "ja-jp/pages/breathe/pursed-lip.json",
+        "pt-br": "pt-br/pages/breathe/pursed-lip.json"
+      },
+      "route": "/breathe/pursed-lip"
+    },
+    {
+      "catalogPageId": "91534f2a-be38-4978-9987-7f48b6e3b7a2",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 201,
+          "translated": 201
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 201,
+          "translated": 201
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 201,
+          "translated": 201
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 201,
+          "translated": 201
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 201,
+          "translated": 201
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/breathe/tummo.json",
+        "es-es": "es-es/pages/breathe/tummo.json",
+        "fr-fr": "fr-fr/pages/breathe/tummo.json",
+        "ja-jp": "ja-jp/pages/breathe/tummo.json",
+        "pt-br": "pt-br/pages/breathe/tummo.json"
+      },
+      "route": "/breathe/tummo"
+    },
+    {
+      "catalogPageId": "39f91f84-207f-4a79-82f0-3e3fbd020c99",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 165,
+          "translated": 165
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 165,
+          "translated": 165
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 165,
+          "translated": 165
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 165,
+          "translated": 165
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 165,
+          "translated": 165
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/breathe/ujjayi.json",
+        "es-es": "es-es/pages/breathe/ujjayi.json",
+        "fr-fr": "fr-fr/pages/breathe/ujjayi.json",
+        "ja-jp": "ja-jp/pages/breathe/ujjayi.json",
+        "pt-br": "pt-br/pages/breathe/ujjayi.json"
+      },
+      "route": "/breathe/ujjayi"
+    },
+    {
+      "catalogPageId": "7c600c3f-f4c8-45c4-a5d9-087fc3bf4c13",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 167,
+          "translated": 167
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 167,
+          "translated": 167
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 167,
+          "translated": 167
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 167,
+          "translated": 167
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 167,
+          "translated": 167
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/breathe/wim-hof.json",
+        "es-es": "es-es/pages/breathe/wim-hof.json",
+        "fr-fr": "fr-fr/pages/breathe/wim-hof.json",
+        "ja-jp": "ja-jp/pages/breathe/wim-hof.json",
+        "pt-br": "pt-br/pages/breathe/wim-hof.json"
+      },
+      "route": "/breathe/wim-hof"
+    },
+    {
+      "catalogPageId": "93c5376e-f2a0-4764-a0b3-e0c5dd60827a",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 43,
+          "translated": 43
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 43,
+          "translated": 43
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 43,
+          "translated": 43
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 43,
+          "translated": 43
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 1,
+          "placements": 43,
+          "translated": 42
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/breathing-app.json",
+        "es-es": "es-es/pages/breathing-app.json",
+        "fr-fr": "fr-fr/pages/breathing-app.json",
+        "ja-jp": "ja-jp/pages/breathing-app.json",
+        "pt-br": "pt-br/pages/breathing-app.json"
+      },
+      "route": "/breathing-app"
+    },
+    {
+      "catalogPageId": "9db84cbc-92ea-4540-b01b-e37042290720",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 89,
+          "translated": 89
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 89,
+          "translated": 89
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 89,
+          "translated": 89
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 89,
+          "translated": 89
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 89,
+          "translated": 89
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/breathing-exercises-before-surgery.json",
+        "es-es": "es-es/pages/breathing-exercises-before-surgery.json",
+        "fr-fr": "fr-fr/pages/breathing-exercises-before-surgery.json",
+        "ja-jp": "ja-jp/pages/breathing-exercises-before-surgery.json",
+        "pt-br": "pt-br/pages/breathing-exercises-before-surgery.json"
+      },
+      "route": "/breathing-exercises-before-surgery"
+    },
+    {
+      "catalogPageId": "90c2f029-7a8e-4acc-80be-af6d34e72fbc",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 89,
+          "translated": 89
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 89,
+          "translated": 89
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 89,
+          "translated": 89
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 89,
+          "translated": 89
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 89,
+          "translated": 89
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/breathing-exercises-for-labor.json",
+        "es-es": "es-es/pages/breathing-exercises-for-labor.json",
+        "fr-fr": "fr-fr/pages/breathing-exercises-for-labor.json",
+        "ja-jp": "ja-jp/pages/breathing-exercises-for-labor.json",
+        "pt-br": "pt-br/pages/breathing-exercises-for-labor.json"
+      },
+      "route": "/breathing-exercises-for-labor"
+    },
+    {
+      "catalogPageId": "97d39dc5-2005-483e-b5b2-9d3c4dc84332",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 13,
+          "placements": 132,
+          "translated": 119
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 13,
+          "placements": 132,
+          "translated": 119
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 13,
+          "placements": 132,
+          "translated": 119
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 13,
+          "placements": 132,
+          "translated": 119
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 13,
+          "placements": 132,
+          "translated": 119
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/breathing-visualizer.json",
+        "es-es": "es-es/pages/breathing-visualizer.json",
+        "fr-fr": "fr-fr/pages/breathing-visualizer.json",
+        "ja-jp": "ja-jp/pages/breathing-visualizer.json",
+        "pt-br": "pt-br/pages/breathing-visualizer.json"
+      },
+      "route": "/breathing-visualizer"
+    },
+    {
+      "catalogPageId": "34701227-8ade-4dbe-8c68-f7b41ac2d825",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 136,
+          "translated": 136
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 136,
+          "translated": 136
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 136,
+          "translated": 136
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 136,
+          "translated": 136
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 136,
+          "translated": 136
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/coherent-breathing-app.json",
+        "es-es": "es-es/pages/coherent-breathing-app.json",
+        "fr-fr": "fr-fr/pages/coherent-breathing-app.json",
+        "ja-jp": "ja-jp/pages/coherent-breathing-app.json",
+        "pt-br": "pt-br/pages/coherent-breathing-app.json"
+      },
+      "route": "/coherent-breathing-app"
+    },
+    {
+      "catalogPageId": "04c59a63-bde6-498b-9919-bac6f2dd015c",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 1,
+          "placements": 64,
+          "translated": 63
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 1,
+          "placements": 64,
+          "translated": 63
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 1,
+          "placements": 64,
+          "translated": 63
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 1,
+          "placements": 64,
+          "translated": 63
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 1,
+          "placements": 64,
+          "translated": 63
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/embed.json",
+        "es-es": "es-es/pages/embed.json",
+        "fr-fr": "fr-fr/pages/embed.json",
+        "ja-jp": "ja-jp/pages/embed.json",
+        "pt-br": "pt-br/pages/embed.json"
+      },
+      "route": "/embed"
+    },
+    {
+      "catalogPageId": "04ac0306-2507-429d-b0d8-c8fdc47d0113",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 84,
+          "translated": 84
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 84,
+          "translated": 84
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 84,
+          "translated": 84
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 84,
+          "translated": 84
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 84,
+          "translated": 84
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/for.json",
+        "es-es": "es-es/pages/for.json",
+        "fr-fr": "fr-fr/pages/for.json",
+        "ja-jp": "ja-jp/pages/for.json",
+        "pt-br": "pt-br/pages/for.json"
+      },
+      "route": "/for"
+    },
+    {
+      "catalogPageId": "2e612ead-c933-4367-b666-7ab43e420e8d",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 137,
+          "translated": 137
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 137,
+          "translated": 137
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 137,
+          "translated": 137
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 137,
+          "translated": 137
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 137,
+          "translated": 137
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/for/anxiety.json",
+        "es-es": "es-es/pages/for/anxiety.json",
+        "fr-fr": "fr-fr/pages/for/anxiety.json",
+        "ja-jp": "ja-jp/pages/for/anxiety.json",
+        "pt-br": "pt-br/pages/for/anxiety.json"
+      },
+      "route": "/for/anxiety"
+    },
+    {
+      "catalogPageId": "c852e78f-fa6e-448c-bfa4-bef899384502",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 129,
+          "translated": 129
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 129,
+          "translated": 129
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 129,
+          "translated": 129
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 129,
+          "translated": 129
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 129,
+          "translated": 129
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/for/athletes.json",
+        "es-es": "es-es/pages/for/athletes.json",
+        "fr-fr": "fr-fr/pages/for/athletes.json",
+        "ja-jp": "ja-jp/pages/for/athletes.json",
+        "pt-br": "pt-br/pages/for/athletes.json"
+      },
+      "route": "/for/athletes"
+    },
+    {
+      "catalogPageId": "cf0afd11-9335-4875-aecf-43714b06a585",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 127,
+          "translated": 127
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 127,
+          "translated": 127
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 127,
+          "translated": 127
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 127,
+          "translated": 127
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 127,
+          "translated": 127
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/for/focus.json",
+        "es-es": "es-es/pages/for/focus.json",
+        "fr-fr": "fr-fr/pages/for/focus.json",
+        "ja-jp": "ja-jp/pages/for/focus.json",
+        "pt-br": "pt-br/pages/for/focus.json"
+      },
+      "route": "/for/focus"
+    },
+    {
+      "catalogPageId": "d709b01d-7425-42ae-9680-f01b35f10327",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 120,
+          "translated": 120
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 120,
+          "translated": 120
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 120,
+          "translated": 120
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 120,
+          "translated": 120
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 120,
+          "translated": 120
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/for/high-blood-pressure.json",
+        "es-es": "es-es/pages/for/high-blood-pressure.json",
+        "fr-fr": "fr-fr/pages/for/high-blood-pressure.json",
+        "ja-jp": "ja-jp/pages/for/high-blood-pressure.json",
+        "pt-br": "pt-br/pages/for/high-blood-pressure.json"
+      },
+      "route": "/for/high-blood-pressure"
+    },
+    {
+      "catalogPageId": "2facec29-7189-4e86-966b-cd160802a131",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 123,
+          "translated": 123
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 123,
+          "translated": 123
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 123,
+          "translated": 123
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 123,
+          "translated": 123
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 123,
+          "translated": 123
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/for/holiday-stress.json",
+        "es-es": "es-es/pages/for/holiday-stress.json",
+        "fr-fr": "fr-fr/pages/for/holiday-stress.json",
+        "ja-jp": "ja-jp/pages/for/holiday-stress.json",
+        "pt-br": "pt-br/pages/for/holiday-stress.json"
+      },
+      "route": "/for/holiday-stress"
+    },
+    {
+      "catalogPageId": "5e4285c8-a166-4f08-b531-900909ba5f59",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 135,
+          "translated": 135
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 135,
+          "translated": 135
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 135,
+          "translated": 135
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 135,
+          "translated": 135
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 135,
+          "translated": 135
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/for/huberman.json",
+        "es-es": "es-es/pages/for/huberman.json",
+        "fr-fr": "fr-fr/pages/for/huberman.json",
+        "ja-jp": "ja-jp/pages/for/huberman.json",
+        "pt-br": "pt-br/pages/for/huberman.json"
+      },
+      "route": "/for/huberman"
+    },
+    {
+      "catalogPageId": "7328d77a-7053-4419-9de8-1c0ca2d93b36",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 129,
+          "translated": 129
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 129,
+          "translated": 129
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 129,
+          "translated": 129
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 129,
+          "translated": 129
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 129,
+          "translated": 129
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/for/kids.json",
+        "es-es": "es-es/pages/for/kids.json",
+        "fr-fr": "fr-fr/pages/for/kids.json",
+        "ja-jp": "ja-jp/pages/for/kids.json",
+        "pt-br": "pt-br/pages/for/kids.json"
+      },
+      "route": "/for/kids"
+    },
+    {
+      "catalogPageId": "bd2f4a56-c8d9-4119-9454-d9cdca397bd0",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 125,
+          "translated": 125
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 125,
+          "translated": 125
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 125,
+          "translated": 125
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 125,
+          "translated": 125
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 125,
+          "translated": 125
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/for/lung-capacity.json",
+        "es-es": "es-es/pages/for/lung-capacity.json",
+        "fr-fr": "fr-fr/pages/for/lung-capacity.json",
+        "ja-jp": "ja-jp/pages/for/lung-capacity.json",
+        "pt-br": "pt-br/pages/for/lung-capacity.json"
+      },
+      "route": "/for/lung-capacity"
+    },
+    {
+      "catalogPageId": "6f3d2006-deb9-455d-8562-80e2543aa75f",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 130,
+          "translated": 130
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 130,
+          "translated": 130
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 130,
+          "translated": 130
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 130,
+          "translated": 130
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 130,
+          "translated": 130
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/for/meditation.json",
+        "es-es": "es-es/pages/for/meditation.json",
+        "fr-fr": "fr-fr/pages/for/meditation.json",
+        "ja-jp": "ja-jp/pages/for/meditation.json",
+        "pt-br": "pt-br/pages/for/meditation.json"
+      },
+      "route": "/for/meditation"
+    },
+    {
+      "catalogPageId": "4137bfb8-41dd-4de0-afb3-a55dc761aed2",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 127,
+          "translated": 127
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 127,
+          "translated": 127
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 127,
+          "translated": 127
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 127,
+          "translated": 127
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 127,
+          "translated": 127
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/for/panic-attacks.json",
+        "es-es": "es-es/pages/for/panic-attacks.json",
+        "fr-fr": "fr-fr/pages/for/panic-attacks.json",
+        "ja-jp": "ja-jp/pages/for/panic-attacks.json",
+        "pt-br": "pt-br/pages/for/panic-attacks.json"
+      },
+      "route": "/for/panic-attacks"
+    },
+    {
+      "catalogPageId": "8315d873-c17d-4651-85f0-bfca71d23970",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 122,
+          "translated": 122
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 122,
+          "translated": 122
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 122,
+          "translated": 122
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 122,
+          "translated": 122
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 122,
+          "translated": 122
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/for/pranayama.json",
+        "es-es": "es-es/pages/for/pranayama.json",
+        "fr-fr": "fr-fr/pages/for/pranayama.json",
+        "ja-jp": "ja-jp/pages/for/pranayama.json",
+        "pt-br": "pt-br/pages/for/pranayama.json"
+      },
+      "route": "/for/pranayama"
+    },
+    {
+      "catalogPageId": "3f170041-1e5b-4610-850a-cd39a1aa6de6",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 129,
+          "translated": 129
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 129,
+          "translated": 129
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 129,
+          "translated": 129
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 129,
+          "translated": 129
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 129,
+          "translated": 129
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/for/pregnancy.json",
+        "es-es": "es-es/pages/for/pregnancy.json",
+        "fr-fr": "fr-fr/pages/for/pregnancy.json",
+        "ja-jp": "ja-jp/pages/for/pregnancy.json",
+        "pt-br": "pt-br/pages/for/pregnancy.json"
+      },
+      "route": "/for/pregnancy"
+    },
+    {
+      "catalogPageId": "f4e3b8b8-c3e2-4e47-9e4d-5728dc80a6e3",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 115,
+          "translated": 115
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 115,
+          "translated": 115
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 115,
+          "translated": 115
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 115,
+          "translated": 115
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 115,
+          "translated": 115
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/for/public-speaking.json",
+        "es-es": "es-es/pages/for/public-speaking.json",
+        "fr-fr": "fr-fr/pages/for/public-speaking.json",
+        "ja-jp": "ja-jp/pages/for/public-speaking.json",
+        "pt-br": "pt-br/pages/for/public-speaking.json"
+      },
+      "route": "/for/public-speaking"
+    },
+    {
+      "catalogPageId": "fb516327-f0ce-41f4-8785-19435fb700da",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 125,
+          "translated": 125
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 125,
+          "translated": 125
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 125,
+          "translated": 125
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 125,
+          "translated": 125
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 125,
+          "translated": 125
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/for/running.json",
+        "es-es": "es-es/pages/for/running.json",
+        "fr-fr": "fr-fr/pages/for/running.json",
+        "ja-jp": "ja-jp/pages/for/running.json",
+        "pt-br": "pt-br/pages/for/running.json"
+      },
+      "route": "/for/running"
+    },
+    {
+      "catalogPageId": "46b825aa-610f-4a69-a066-070562d6c2f2",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 122,
+          "translated": 122
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 122,
+          "translated": 122
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 122,
+          "translated": 122
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 122,
+          "translated": 122
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 122,
+          "translated": 122
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/for/singing.json",
+        "es-es": "es-es/pages/for/singing.json",
+        "fr-fr": "fr-fr/pages/for/singing.json",
+        "ja-jp": "ja-jp/pages/for/singing.json",
+        "pt-br": "pt-br/pages/for/singing.json"
+      },
+      "route": "/for/singing"
+    },
+    {
+      "catalogPageId": "b813e367-48e0-4e9c-b97e-9b71a9bd2dee",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 126,
+          "translated": 126
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 126,
+          "translated": 126
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 126,
+          "translated": 126
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 126,
+          "translated": 126
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 126,
+          "translated": 126
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/for/sleep.json",
+        "es-es": "es-es/pages/for/sleep.json",
+        "fr-fr": "fr-fr/pages/for/sleep.json",
+        "ja-jp": "ja-jp/pages/for/sleep.json",
+        "pt-br": "pt-br/pages/for/sleep.json"
+      },
+      "route": "/for/sleep"
+    },
+    {
+      "catalogPageId": "2670ee1d-b64e-4bac-a59e-e3eba74077f7",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 122,
+          "translated": 122
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 122,
+          "translated": 122
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 122,
+          "translated": 122
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 122,
+          "translated": 122
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 122,
+          "translated": 122
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/for/stress.json",
+        "es-es": "es-es/pages/for/stress.json",
+        "fr-fr": "fr-fr/pages/for/stress.json",
+        "ja-jp": "ja-jp/pages/for/stress.json",
+        "pt-br": "pt-br/pages/for/stress.json"
+      },
+      "route": "/for/stress"
+    },
+    {
+      "catalogPageId": "8b9b4fbb-ba25-44fc-a3a1-8a0c06c7e46f",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 96,
+          "translated": 96
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 96,
+          "translated": 96
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 96,
+          "translated": 96
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 96,
+          "translated": 96
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 96,
+          "translated": 96
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/for/travel-anxiety.json",
+        "es-es": "es-es/pages/for/travel-anxiety.json",
+        "fr-fr": "fr-fr/pages/for/travel-anxiety.json",
+        "ja-jp": "ja-jp/pages/for/travel-anxiety.json",
+        "pt-br": "pt-br/pages/for/travel-anxiety.json"
+      },
+      "route": "/for/travel-anxiety"
+    },
+    {
+      "catalogPageId": "423c44bf-0a4b-4e49-9cb9-6bfc69076edf",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 119,
+          "translated": 119
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 119,
+          "translated": 119
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 119,
+          "translated": 119
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 119,
+          "translated": 119
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 119,
+          "translated": 119
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/holiday-breathing-exercises.json",
+        "es-es": "es-es/pages/holiday-breathing-exercises.json",
+        "fr-fr": "fr-fr/pages/holiday-breathing-exercises.json",
+        "ja-jp": "ja-jp/pages/holiday-breathing-exercises.json",
+        "pt-br": "pt-br/pages/holiday-breathing-exercises.json"
+      },
+      "route": "/holiday-breathing-exercises"
+    },
+    {
+      "catalogPageId": "294655c8-fd6c-4fc5-82fc-636c1331f8d2",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 172,
+          "translated": 172
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 172,
+          "translated": 172
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 172,
+          "translated": 172
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 172,
+          "translated": 172
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 172,
+          "translated": 172
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/languages.json",
+        "es-es": "es-es/pages/languages.json",
+        "fr-fr": "fr-fr/pages/languages.json",
+        "ja-jp": "ja-jp/pages/languages.json",
+        "pt-br": "pt-br/pages/languages.json"
+      },
+      "route": "/languages"
+    },
+    {
+      "catalogPageId": "18a7d8aa-18c5-497f-9ffb-e0a54dd0ee26",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 43,
+          "translated": 43
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 43,
+          "translated": 43
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 43,
+          "translated": 43
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 43,
+          "translated": 43
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 0,
+          "placements": 43,
+          "translated": 43
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/og-preview.json",
+        "es-es": "es-es/pages/og-preview.json",
+        "fr-fr": "fr-fr/pages/og-preview.json",
+        "ja-jp": "ja-jp/pages/og-preview.json",
+        "pt-br": "pt-br/pages/og-preview.json"
+      },
+      "route": "/og-preview"
+    },
+    {
+      "catalogPageId": "6ab476f1-2fec-4f1f-9940-4ad8d6a7f18c",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 11,
+          "placements": 93,
+          "translated": 82
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 11,
+          "placements": 93,
+          "translated": 82
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 11,
+          "placements": 93,
+          "translated": 82
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 11,
+          "placements": 93,
+          "translated": 82
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 11,
+          "placements": 93,
+          "translated": 82
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/physiological-sigh-panic-attack.json",
+        "es-es": "es-es/pages/physiological-sigh-panic-attack.json",
+        "fr-fr": "fr-fr/pages/physiological-sigh-panic-attack.json",
+        "ja-jp": "ja-jp/pages/physiological-sigh-panic-attack.json",
+        "pt-br": "pt-br/pages/physiological-sigh-panic-attack.json"
+      },
+      "route": "/physiological-sigh-panic-attack"
+    },
+    {
+      "catalogPageId": "c86d6acd-e2d8-4587-a55b-65a6c24c5ed0",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 3,
+          "placements": 27,
+          "translated": 24
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 3,
+          "placements": 27,
+          "translated": 24
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 3,
+          "placements": 27,
+          "translated": 24
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 3,
+          "placements": 27,
+          "translated": 24
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 3,
+          "placements": 27,
+          "translated": 24
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/privacy.json",
+        "es-es": "es-es/pages/privacy.json",
+        "fr-fr": "fr-fr/pages/privacy.json",
+        "ja-jp": "ja-jp/pages/privacy.json",
+        "pt-br": "pt-br/pages/privacy.json"
+      },
+      "route": "/privacy"
+    },
+    {
+      "catalogPageId": "5c241db5-1f60-4f9a-83e7-06d5562b4f06",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 5,
+          "placements": 10,
+          "translated": 5
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 5,
+          "placements": 10,
+          "translated": 5
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 5,
+          "placements": 10,
+          "translated": 5
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 5,
+          "placements": 10,
+          "translated": 5
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 5,
+          "placements": 10,
+          "translated": 5
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/stats.json",
+        "es-es": "es-es/pages/stats.json",
+        "fr-fr": "fr-fr/pages/stats.json",
+        "ja-jp": "ja-jp/pages/stats.json",
+        "pt-br": "pt-br/pages/stats.json"
+      },
+      "route": "/stats"
+    },
+    {
+      "catalogPageId": "97d51fcb-f646-4f71-a313-874e4d55254e",
+      "coverage": {
+        "de-de": {
+          "manualOverrides": 0,
+          "missing": 28,
+          "placements": 33,
+          "translated": 5
+        },
+        "es-es": {
+          "manualOverrides": 0,
+          "missing": 28,
+          "placements": 33,
+          "translated": 5
+        },
+        "fr-fr": {
+          "manualOverrides": 0,
+          "missing": 28,
+          "placements": 33,
+          "translated": 5
+        },
+        "ja-jp": {
+          "manualOverrides": 0,
+          "missing": 28,
+          "placements": 33,
+          "translated": 5
+        },
+        "pt-br": {
+          "manualOverrides": 0,
+          "missing": 28,
+          "placements": 33,
+          "translated": 5
+        }
+      },
+      "files": {
+        "de-de": "de-de/pages/support.json",
+        "es-es": "es-es/pages/support.json",
+        "fr-fr": "fr-fr/pages/support.json",
+        "ja-jp": "ja-jp/pages/support.json",
+        "pt-br": "pt-br/pages/support.json"
+      },
+      "route": "/support"
+    }
+  ],
+  "schemaVersion": 1,
+  "source": {
+    "locales": [
+      "de-de",
+      "es-es",
+      "fr-fr",
+      "ja-jp",
+      "pt-br"
+    ],
+    "origin": "deepbreathingexercises.com",
+    "snapshotUpdatedThrough": "2026-07-15T07:05:12.173Z",
+    "sourceLocale": "en-us",
+    "state": "ACTIVE",
+    "system": "MassTranslate production catalog",
+    "tenantId": "deepbreathingexercises_com_ac8ae5",
+    "tenantName": "Deep Breathing Exercises",
+    "translationMode": "automatic"
+  }
+}

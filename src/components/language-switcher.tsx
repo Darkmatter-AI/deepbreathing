@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
+import { createRuntimePhraseResolver } from "@/components/resonance/runtime-phrases";
 
 interface MTConfig {
   supportedLocales: string[];
@@ -101,6 +102,20 @@ function getCurrentLocaleAndPath(): { currentLocale: string; basePath: string } 
   return { currentLocale: "en", basePath };
 }
 
+function explicitLocaleInfo(
+  locale?: string,
+  basePath?: string,
+): { currentLocale: string; basePath: string } | null {
+  if (!locale || !basePath) return null;
+  const normalized = locale.toLowerCase() === "en-us" ? "en" : locale.toLowerCase();
+  return { currentLocale: normalized, basePath: stripLocalePrefix(basePath) };
+}
+
+interface LanguageSwitcherProps {
+  basePath?: string;
+  locale?: string;
+}
+
 function GlobeIcon({ className }: { className?: string }) {
   return (
     <svg
@@ -127,14 +142,16 @@ function GlobeIcon({ className }: { className?: string }) {
  * Shows just "PT" (or current locale) left of Settings — no extra chrome.
  * Click opens a dropdown with all languages.
  */
-export function LanguageSwitcherInline() {
+export function LanguageSwitcherInline({ basePath, locale }: LanguageSwitcherProps = {}) {
   const [open, setOpen] = useState(false);
-  const [info, setInfo] = useState<{ currentLocale: string; basePath: string } | null>(null);
+  const [info, setInfo] = useState<{ currentLocale: string; basePath: string } | null>(
+    () => explicitLocaleInfo(locale, basePath),
+  );
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    setInfo(getCurrentLocaleAndPath());
-  }, []);
+    setInfo(explicitLocaleInfo(locale, basePath) ?? getCurrentLocaleAndPath());
+  }, [basePath, locale]);
 
   useEffect(() => {
     if (!open) return;
@@ -148,13 +165,15 @@ export function LanguageSwitcherInline() {
   if (!info) return null;
 
   const currentShort = LOCALE_SHORT[info.currentLocale] || "EN";
+  const changeLanguageLabel = createRuntimePhraseResolver(locale ?? info.currentLocale)
+    .resolve("ui.change_language").text;
 
   return (
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen(!open)}
         className="inline-flex items-center gap-1 rounded-full border border-border/60 bg-card/80 px-2.5 py-2.5 text-xs font-semibold uppercase text-muted-foreground shadow-sm backdrop-blur transition-colors hover:bg-card dark:border-border/40 dark:bg-card/40 dark:text-card-foreground"
-        aria-label="Change language"
+        aria-label={changeLanguageLabel}
       >
         {currentShort}
       </button>
@@ -207,25 +226,29 @@ export function LanguageSwitcherInline() {
  * any server-rendered anchors added in page-level components where
  * the build pathway is proxy-safe.
  */
-export function LanguageSwitcherFooter() {
+export function LanguageSwitcherFooter({ basePath, locale }: LanguageSwitcherProps = {}) {
   const [open, setOpen] = useState(false);
-  const [info, setInfo] = useState<{ currentLocale: string; basePath: string } | null>(null);
+  const [info, setInfo] = useState<{ currentLocale: string; basePath: string } | null>(
+    () => explicitLocaleInfo(locale, basePath),
+  );
 
   useEffect(() => {
-    setInfo(getCurrentLocaleAndPath());
-  }, []);
+    setInfo(explicitLocaleInfo(locale, basePath) ?? getCurrentLocaleAndPath());
+  }, [basePath, locale]);
 
   if (!info) return null;
 
   const currentLabel = LOCALE_FULL[info.currentLocale] || "English";
   const locales = SUPPORTED_LOCALES;
+  const changeLanguageLabel = createRuntimePhraseResolver(locale ?? info.currentLocale)
+    .resolve("ui.change_language").text;
 
   if (!open) {
     return (
       <button
         onClick={() => setOpen(true)}
         className="inline-flex items-center gap-1.5 text-xs text-muted-foreground transition-colors hover:text-foreground"
-        aria-label="Change language"
+        aria-label={changeLanguageLabel}
       >
         <GlobeIcon />
         <span>{currentLabel}</span>

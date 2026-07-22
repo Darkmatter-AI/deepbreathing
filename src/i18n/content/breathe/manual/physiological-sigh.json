@@ -1,0 +1,209 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.pattern.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "c63ac0890e052dae3780abba7cc43a5e54256c44843fa8857c8d39f835b8a90c",
+      "scope": "chrome",
+      "sourceText": "Try this guided physiological sigh: instant stress relief exercise — it really helps.",
+      "translations": {
+        "de-de": "Probiere diese geführte Übung zum physiologischen Seufzer für sofortigen Stressabbau aus – sie hilft wirklich.",
+        "es-es": "Prueba este ejercicio guiado de suspiro fisiológico para aliviar el estrés al instante: realmente ayuda.",
+        "fr-fr": "Essayez cet exercice guidé du soupir physiologique pour soulager instantanément le stress : il aide vraiment.",
+        "ja-jp": "ストレスをすぐに和らげる、このガイド付き生理的ため息のエクササイズを試してみてください。本当に役立ちます。",
+        "pt-br": "Experimente este exercício guiado de suspiro fisiológico para alívio imediato do estresse: ele realmente ajuda."
+      }
+    },
+    {
+      "messageId": "chrome.pattern.og-alt",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "8a18c617fcbbda2a98e2789dc60a6d7c5a6e18ef577da91140e9514eb73b5a26",
+      "scope": "chrome",
+      "sourceText": "Physiological Sigh: Instant Stress Relief – Interactive breathing visualizer",
+      "translations": {
+        "de-de": "Physiologischer Seufzer: sofortiger Stressabbau – interaktiver Atemvisualisierer",
+        "es-es": "Suspiro fisiológico: alivio instantáneo del estrés – visualizador de respiración interactivo",
+        "fr-fr": "Soupir physiologique : soulagement instantané du stress – visualiseur de respiration interactif",
+        "ja-jp": "生理的ため息：すぐにストレスを軽減 – インタラクティブ呼吸ビジュアライザー",
+        "pt-br": "Suspiro fisiológico: alívio imediato do estresse – visualizador interativo da respiração"
+      }
+    },
+    {
+      "messageId": "body[2].content",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "ff20a360c7afabaff82b550bdfc6939234d8ae42f722ec8a5648ba04a848f38e",
+      "scope": "content",
+      "sourceText": "1. Sit or stand comfortably. Relax your shoulders and jaw.\n2. Inhale smoothly through your nose until your lower ribs expand (about 3–4 seconds).\n3. Without exhaling, take a second short \"sip\" of air through your nose to top off your lungs (about 1–2 seconds).\n4. Exhale slowly and completely through your mouth (or nose) for 6–10 seconds. Let the exhale be long and unforced.\n5. For instant relief, repeat 1–3 times. For a longer practice with mood benefits, continue for 2–5 minutes.",
+      "translations": {
+        "de-de": "1. Setzen oder stellen Sie sich bequem hin. Entspannen Sie Schultern und Kiefer.\n2. Atmen Sie gleichmäßig durch die Nase ein, bis sich die unteren Rippen weiten (etwa 3–4 Sekunden).\n3. Atmen Sie, ohne auszuatmen, ein zweites Mal kurz durch die Nase ein, um die Lunge vollständig zu füllen (etwa 1–2 Sekunden).\n4. Atmen Sie 6–10 Sekunden lang langsam und vollständig durch den Mund (oder die Nase) aus. Lassen Sie die Ausatmung lang und ungezwungen sein.\n5. Wiederholen Sie dies für sofortige Erleichterung 1–3 Mal. Für eine längere Übung mit stimmungsaufhellender Wirkung fahren Sie 2–5 Minuten lang fort.",
+        "es-es": "1. Siéntate o ponte de pie cómodamente. Relaja los hombros y la mandíbula.\n2. Inhala suavemente por la nariz hasta que se expandan las costillas inferiores (unos 3–4 segundos).\n3. Sin exhalar, toma una segunda inhalación corta por la nariz para terminar de llenar los pulmones (unos 1–2 segundos).\n4. Exhala lenta y completamente por la boca (o la nariz) durante 6–10 segundos. Deja que la exhalación sea larga y sin esfuerzo.\n5. Para obtener alivio inmediato, repite 1–3 veces. Para una práctica más larga con beneficios para el estado de ánimo, continúa durante 2–5 minutos.",
+        "fr-fr": "1. Asseyez-vous ou tenez-vous debout confortablement. Détendez les épaules et la mâchoire.\n2. Inspirez doucement par le nez jusqu’à ce que les côtes inférieures se déploient (environ 3 à 4 secondes).\n3. Sans expirer, prenez une seconde petite inspiration par le nez pour finir de remplir les poumons (environ 1 à 2 secondes).\n4. Expirez lentement et complètement par la bouche (ou le nez) pendant 6 à 10 secondes. Laissez l’expiration être longue et sans effort.\n5. Pour un soulagement immédiat, répétez 1 à 3 fois. Pour une pratique plus longue bénéfique à l’humeur, continuez pendant 2 à 5 minutes.",
+        "ja-jp": "1. 楽な姿勢で座るか立ちます。肩と顎の力を抜きます。\n2. 下部の肋骨が広がるまで、鼻から滑らかに息を吸います（約3～4秒）。\n3. 息を吐かずに、肺を満たすため鼻からもう一度短く息を吸い足します（約1～2秒）。\n4. 口（または鼻）から6～10秒かけて、ゆっくり完全に息を吐きます。長く、力まずに吐いてください。\n5. すぐに楽になりたい場合は1～3回繰り返します。気分への効果を目的により長く行う場合は、2～5分間続けます。",
+        "pt-br": "1. Sente-se ou fique de pé confortavelmente. Relaxe os ombros e a mandíbula.\n2. Inspire suavemente pelo nariz até as costelas inferiores se expandirem (cerca de 3–4 segundos).\n3. Sem expirar, faça uma segunda inspiração curta pelo nariz para terminar de encher os pulmões (cerca de 1–2 segundos).\n4. Expire lenta e completamente pela boca (ou pelo nariz) por 6–10 segundos. Deixe a expiração ser longa e sem esforço.\n5. Para alívio imediato, repita 1–3 vezes. Para uma prática mais longa com benefícios para o humor, continue por 2–5 minutos."
+      }
+    },
+    {
+      "messageId": "body[2].heading",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "e2842eeb3b714b4b25adf5887f8e45a0d908fabb900354c142682f39e410096f",
+      "scope": "content",
+      "sourceText": "How to Do a Physiological Sigh (Step by Step)",
+      "translations": {
+        "de-de": "So führen Sie einen physiologischen Seufzer aus (Schritt für Schritt)",
+        "es-es": "Cómo hacer un suspiro fisiológico (paso a paso)",
+        "fr-fr": "Comment pratiquer un soupir physiologique (étape par étape)",
+        "ja-jp": "生理的ため息のやり方（手順）",
+        "pt-br": "Como fazer um suspiro fisiológico (passo a passo)"
+      }
+    },
+    {
+      "messageId": "body[8].heading",
+      "reason": "route-catalog-exact-conflict",
+      "reviewedSourceHash": "63f9a125a08f4dc4f31790eb5f489b95cf0434c813011ebe9b0e3da889718a94",
+      "scope": "content",
+      "sourceText": "Physiological Sigh for Panic Attacks",
+      "translations": {
+        "de-de": "Physiologischer Seufzer bei Panikattacken",
+        "ja-jp": "パニック発作に対する生理的ため息",
+        "pt-br": "Suspiro fisiológico para ataques de pânico"
+      }
+    },
+    {
+      "messageId": "body[9].content",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "e816ac547e349f86eb21c0b710bc4c6c56582d8155e75dfe9cb306d3d21a8bd8",
+      "scope": "content",
+      "sourceText": "Unlike panic attacks (which are acute), anxiety often simmers in the background. The physiological sigh helps in two ways: (1) As an instant reset when anxiety spikes, 1-3 sighs can break the tension. (2) As a daily practice, 5 minutes of cyclic sighing per day can lower baseline anxiety over weeks. [The 2023 Stanford study found cyclic sighing improved mood more than mindfulness meditation](https://doi.org/10.1016/j.xcrm.2022.100895). For chronic anxiety, pair the sigh with other evidence-based approaches; it's a tool, not a cure.",
+      "translations": {
+        "de-de": "Im Gegensatz zu Panikattacken, die akut auftreten, schwelt Angst häufig im Hintergrund. Der physiologische Seufzer hilft auf zwei Arten: (1) Als sofortiger Neustart bei einem Anstieg der Angst können 1–3 Seufzer die Anspannung unterbrechen. (2) Als tägliche Übung können 5 Minuten zyklisches Seufzen pro Tag die grundlegende Angst über mehrere Wochen senken. [Die Stanford-Studie von 2023 ergab, dass zyklisches Seufzen die Stimmung stärker verbesserte als Achtsamkeitsmeditation](https://doi.org/10.1016/j.xcrm.2022.100895). Kombinieren Sie den Seufzer bei chronischer Angst mit anderen evidenzbasierten Ansätzen; er ist ein Werkzeug, kein Heilmittel.",
+        "es-es": "A diferencia de los ataques de pánico, que son agudos, la ansiedad suele permanecer latente. El suspiro fisiológico ayuda de dos maneras: (1) Como reinicio instantáneo cuando aumenta la ansiedad, 1–3 suspiros pueden romper la tensión. (2) Como práctica diaria, 5 minutos de suspiros cíclicos al día pueden reducir la ansiedad basal a lo largo de varias semanas. [El estudio de Stanford de 2023 descubrió que los suspiros cíclicos mejoraban el estado de ánimo más que la meditación de atención plena](https://doi.org/10.1016/j.xcrm.2022.100895). Para la ansiedad crónica, combina el suspiro con otros enfoques basados en la evidencia; es una herramienta, no una cura.",
+        "fr-fr": "Contrairement aux crises de panique, qui sont aiguës, l’anxiété reste souvent latente. Le soupir physiologique aide de deux façons : (1) Comme réinitialisation immédiate lorsque l’anxiété monte, 1 à 3 soupirs peuvent rompre la tension. (2) Comme pratique quotidienne, 5 minutes de soupirs cycliques par jour peuvent réduire l’anxiété de fond au fil des semaines. [L’étude de Stanford de 2023 a montré que les soupirs cycliques amélioraient davantage l’humeur que la méditation de pleine conscience](https://doi.org/10.1016/j.xcrm.2022.100895). En cas d’anxiété chronique, associez le soupir à d’autres approches fondées sur des données probantes ; c’est un outil, pas un remède.",
+        "ja-jp": "急性のパニック発作とは異なり、不安はしばしば背景でくすぶり続けます。生理的ため息は2つの方法で役立ちます。(1) 不安が高まったときの即時リセットとして、1～3回のため息で緊張を断ち切ることができます。(2) 毎日の練習として、1日5分間の周期的ため息を続けると、数週間かけて基礎的な不安を軽減できます。[2023年のStanfordの研究では、周期的ため息はマインドフルネス瞑想よりも気分を改善しました](https://doi.org/10.1016/j.xcrm.2022.100895)。慢性的な不安には、ため息を他の科学的根拠に基づく方法と組み合わせてください。これは道具であり、治療法ではありません。",
+        "pt-br": "Ao contrário dos ataques de pânico, que são agudos, a ansiedade muitas vezes permanece em segundo plano. O suspiro fisiológico ajuda de duas maneiras: (1) Como uma reinicialização imediata quando a ansiedade aumenta, 1–3 suspiros podem interromper a tensão. (2) Como prática diária, 5 minutos de suspiros cíclicos por dia podem reduzir a ansiedade basal ao longo de algumas semanas. [O estudo de Stanford de 2023 constatou que os suspiros cíclicos melhoraram o humor mais do que a meditação mindfulness](https://doi.org/10.1016/j.xcrm.2022.100895). Para ansiedade crônica, combine o suspiro com outras abordagens baseadas em evidências; ele é uma ferramenta, não uma cura."
+      }
+    },
+    {
+      "messageId": "howTo.tools[0]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "62964eb8e185d53602cab306178b138e24a3800b42af546648bdd3369353df7e",
+      "scope": "content",
+      "sourceText": "Chair or comfortable seat",
+      "translations": {
+        "de-de": "Stuhl oder bequeme Sitzgelegenheit",
+        "es-es": "Silla o asiento cómodo",
+        "fr-fr": "Chaise ou siège confortable",
+        "ja-jp": "椅子または快適な座席",
+        "pt-br": "Cadeira ou assento confortável"
+      }
+    },
+    {
+      "messageId": "howTo.tools[1]",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "42c5f6b1229b4393ccbbfeb9232ca85097566b4c7fdf55b2b6a8f50dc0a8b7d7",
+      "scope": "content",
+      "sourceText": "Optional on-screen timer or haptics",
+      "translations": {
+        "de-de": "Optionaler Bildschirm-Timer oder Haptik",
+        "es-es": "Temporizador en pantalla o respuesta háptica opcional",
+        "fr-fr": "Minuteur à l’écran ou retours haptiques facultatifs",
+        "ja-jp": "任意の画面上のタイマーまたは触覚フィードバック",
+        "pt-br": "Temporizador na tela ou resposta tátil opcional"
+      }
+    },
+    {
+      "messageId": "lineage",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "d907e2ed8815db73346832cd134a1daaaded875518790164d6c9ef8ecf7971dc",
+      "scope": "content",
+      "sourceText": "The double-inhale-then-long-exhale reflex was mapped to a specific cluster of brainstem neurons by Jack Feldman (UCLA) and Mark Krasnow (Stanford), reported in *Science* in 2017. Stanford psychiatrist David Spiegel, neurobiologist Andrew Huberman, and Melis Yilmaz Balban turned that finding into a five-minute protocol called \"cyclic sighing\" in a 2023 randomized study published in *Cell Reports Medicine*.",
+      "translations": {
+        "de-de": "Der Reflex aus doppelter Einatmung und anschließender langer Ausatmung wurde von Jack Feldman (UCLA) und Mark Krasnow (Stanford) einer bestimmten Gruppe von Hirnstammneuronen zugeordnet; darüber wurde 2017 in *Science* berichtet. Der Stanford-Psychiater David Spiegel, der Neurobiologe Andrew Huberman und Melis Yilmaz Balban machten aus dieser Erkenntnis ein fünfminütiges Protokoll namens „zyklisches Seufzen“, das 2023 in einer randomisierten Studie in *Cell Reports Medicine* veröffentlicht wurde.",
+        "es-es": "El reflejo de doble inhalación seguida de una exhalación larga fue vinculado a un grupo específico de neuronas del tronco encefálico por Jack Feldman (UCLA) y Mark Krasnow (Stanford), según se publicó en *Science* en 2017. El psiquiatra de Stanford David Spiegel, el neurobiólogo Andrew Huberman y Melis Yilmaz Balban convirtieron ese hallazgo en un protocolo de cinco minutos llamado «suspiros cíclicos» en un estudio aleatorizado de 2023 publicado en *Cell Reports Medicine*.",
+        "fr-fr": "Le réflexe composé d’une double inspiration suivie d’une longue expiration a été associé à un groupe précis de neurones du tronc cérébral par Jack Feldman (UCLA) et Mark Krasnow (Stanford), dans un article publié dans *Science* en 2017. Le psychiatre de Stanford David Spiegel, le neurobiologiste Andrew Huberman et Melis Yilmaz Balban ont transformé cette découverte en un protocole de cinq minutes appelé « soupirs cycliques », dans une étude randomisée de 2023 publiée dans *Cell Reports Medicine*.",
+        "ja-jp": "2回吸ってから長く吐く反射は、Jack Feldman（UCLA）とMark Krasnow（Stanford）により、脳幹の特定の神経細胞群に対応づけられ、2017年に*Science*で報告されました。Stanfordの精神科医David Spiegel、神経生物学者Andrew Huberman、Melis Yilmaz Balbanは、この発見を「周期的ため息」と呼ばれる5分間の手順に発展させ、2023年に*Cell Reports Medicine*で発表されたランダム化研究で検証しました。",
+        "pt-br": "O reflexo de duas inspirações seguidas de uma expiração longa foi associado a um grupo específico de neurônios do tronco cerebral por Jack Feldman (UCLA) e Mark Krasnow (Stanford), conforme relatado na *Science* em 2017. O psiquiatra de Stanford David Spiegel, o neurobiólogo Andrew Huberman e Melis Yilmaz Balban transformaram essa descoberta em um protocolo de cinco minutos chamado “suspiros cíclicos”, em um estudo randomizado de 2023 publicado na *Cell Reports Medicine*."
+      }
+    },
+    {
+      "messageId": "ownedVideo.description",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "38c25849f21732e29e1687a519deb20af735bb385ec9af3838774b899ec78c5d",
+      "scope": "content",
+      "sourceText": "A 5-minute guided physiological sigh session using our interactive pacer. Follow the double-inhale cue then breathe out slowly for a long exhale.",
+      "translations": {
+        "de-de": "Eine geführte 5-minütige Sitzung mit physiologischen Seufzern und unserem interaktiven Taktgeber. Folge dem Hinweis zur doppelten Einatmung und atme anschließend langsam und lange aus.",
+        "es-es": "Una sesión guiada de suspiro fisiológico de 5 minutos con nuestro marcador de ritmo interactivo. Sigue la señal de doble inhalación y luego exhala lenta y prolongadamente.",
+        "fr-fr": "Une séance guidée de soupir physiologique de 5 minutes avec notre rythmeur interactif. Suivez le repère de la double inspiration, puis expirez lentement et longuement.",
+        "ja-jp": "インタラクティブなペーサーを使った5分間のガイド付き生理的ため息セッションです。2回吸う合図に従い、その後ゆっくり長く息を吐きます。",
+        "pt-br": "Uma sessão guiada de suspiro fisiológico de 5 minutos com nosso marcador de ritmo interativo. Siga a indicação de duas inspirações e depois expire lenta e prolongadamente."
+      }
+    },
+    {
+      "messageId": "ownedVideo.title",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "e2d3b0cb469c2179c19a815829c2b5b5ecb807b2a8268602d7fbc5b891eb45a7",
+      "scope": "content",
+      "sourceText": "Physiological Sigh Timer: 5 Minutes (Cyclic Sighing)",
+      "translations": {
+        "de-de": "Timer für physiologische Seufzer: 5 Minuten (zyklisches Seufzen)",
+        "es-es": "Temporizador de suspiro fisiológico: 5 minutos (suspiros cíclicos)",
+        "fr-fr": "Minuteur de soupir physiologique : 5 minutes (soupirs cycliques)",
+        "ja-jp": "生理的ため息タイマー：5分間（周期的ため息）",
+        "pt-br": "Temporizador de suspiro fisiológico: 5 minutos (suspiros cíclicos)"
+      }
+    },
+    {
+      "messageId": "relatedGuides[0].title",
+      "reason": "route-catalog-exact-conflict",
+      "reviewedSourceHash": "63f9a125a08f4dc4f31790eb5f489b95cf0434c813011ebe9b0e3da889718a94",
+      "scope": "content",
+      "sourceText": "Physiological Sigh for Panic Attacks",
+      "translations": {
+        "de-de": "Physiologischer Seufzer bei Panikattacken",
+        "ja-jp": "パニック発作に対する生理的ため息",
+        "pt-br": "Suspiro fisiológico para ataques de pânico"
+      }
+    },
+    {
+      "messageId": "relatedUseCases[1].teaser",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "4ca85d871deb84bec9ce557d39aefec9868601a069129aa4fc72e216e691b90e",
+      "scope": "content",
+      "sourceText": "A research-backed breathing technique that calms anxiety in 1-3 breaths",
+      "translations": {
+        "de-de": "Eine wissenschaftlich fundierte Atemtechnik, die Angst mit 1–3 Atemzügen beruhigt",
+        "es-es": "Una técnica de respiración respaldada por la investigación que calma la ansiedad en 1–3 respiraciones",
+        "fr-fr": "Une technique de respiration étayée par la recherche qui apaise l’anxiété en 1 à 3 respirations",
+        "ja-jp": "1～3呼吸で不安を鎮める、研究に裏付けられた呼吸法",
+        "pt-br": "Uma técnica de respiração respaldada por pesquisas que acalma a ansiedade em 1–3 respirações"
+      }
+    },
+    {
+      "messageId": "video.title",
+      "reason": "route-catalog-exact-conflict",
+      "reviewedSourceHash": "383c91ee3bb0c297f030e422fad90c5443b795b31d3a0b21a91181237b078820",
+      "scope": "content",
+      "sourceText": "The Physiological Sigh Explained: Stanford's Stress-Relief Technique",
+      "translations": {
+        "es-es": "El suspiro fisiológico explicado: la técnica de Stanford para aliviar el estrés",
+        "pt-br": "O suspiro fisiológico explicado: a técnica de Stanford para aliviar o estresse"
+      }
+    },
+    {
+      "messageId": "voiceSearch[1].answer",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "b5dbbcddf9aedc3dc6f81503700375be99d26442df10e1a178860c33d51d6aef",
+      "scope": "content",
+      "sourceText": "A particularly effective way to calm down is the physiological sigh: take two quick inhales through your nose (the second is a short 'top-up'), then one long, slow exhale through your mouth. The technique works in just 1-3 breaths, about 30 seconds. The double inhale reinflates collapsed lung tissue; the long exhale activates your vagus nerve and parasympathetic nervous system. Stanford research found it outperforms meditation for daily mood improvement.",
+      "translations": {
+        "de-de": "Eine besonders wirksame Methode zur Beruhigung ist der physiologische Seufzer: Atmen Sie zweimal schnell durch die Nase ein (die zweite Einatmung ist ein kurzes „Nachfüllen“) und dann einmal lang und langsam durch den Mund aus. Die Technik wirkt mit nur 1–3 Atemzügen, also in etwa 30 Sekunden. Die doppelte Einatmung entfaltet kollabiertes Lungengewebe erneut; die lange Ausatmung aktiviert den Vagusnerv und das parasympathische Nervensystem. Forschungen aus Stanford ergaben, dass sie die tägliche Stimmung stärker verbessert als Meditation.",
+        "es-es": "Una forma especialmente eficaz de calmarse es el suspiro fisiológico: haz dos inhalaciones rápidas por la nariz (la segunda es una breve inhalación adicional) y después una exhalación larga y lenta por la boca. La técnica funciona en solo 1–3 respiraciones, unos 30 segundos. La doble inhalación vuelve a inflar el tejido pulmonar colapsado; la exhalación larga activa el nervio vago y el sistema nervioso parasimpático. Una investigación de Stanford descubrió que supera a la meditación en la mejora diaria del estado de ánimo.",
+        "fr-fr": "Le soupir physiologique est un moyen particulièrement efficace de se calmer : prenez deux inspirations rapides par le nez (la seconde est une courte inspiration supplémentaire), puis une expiration longue et lente par la bouche. La technique agit en seulement 1 à 3 respirations, soit environ 30 secondes. La double inspiration regonfle les tissus pulmonaires affaissés ; la longue expiration active le nerf vague et le système nerveux parasympathique. Des recherches de Stanford ont montré qu’elle surpasse la méditation pour améliorer l’humeur au quotidien.",
+        "ja-jp": "落ち着くために特に効果的な方法が生理的ため息です。鼻から素早く2回息を吸い（2回目は短く「吸い足す」）、その後、口から1回、長くゆっくり息を吐きます。この方法はわずか1～3呼吸、約30秒で効果を発揮します。2回の吸気でつぶれた肺組織が再び膨らみ、長い呼気で迷走神経と副交感神経系が活性化します。Stanfordの研究では、毎日の気分改善において瞑想を上回ることが示されました。",
+        "pt-br": "Uma forma especialmente eficaz de se acalmar é o suspiro fisiológico: faça duas inspirações rápidas pelo nariz (a segunda é uma inspiração curta adicional) e depois uma expiração longa e lenta pela boca. A técnica funciona em apenas 1–3 respirações, cerca de 30 segundos. A inspiração dupla volta a inflar o tecido pulmonar colapsado; a expiração longa ativa o nervo vago e o sistema nervoso parassimpático. Pesquisas de Stanford constataram que ela supera a meditação na melhora diária do humor."
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/breathe/physiological-sigh"
+}

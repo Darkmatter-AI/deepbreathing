@@ -1,0 +1,196 @@
+{
+  "replacements": {
+    "metadata.imageSubtitle": {
+      "reason": "The current image subtitle was not present in the preserved catalog.",
+      "translations": {
+        "de-de": "Schnelle Atempausen bei Familientreffen und Reisestress",
+        "es-es": "Pausas rápidas para reuniones y estrés de viaje",
+        "fr-fr": "Pauses rapides pour les réunions et le stress du voyage",
+        "ja-jp": "集まりや旅行のストレスにすぐ使えるリセット法",
+        "pt-br": "Pausas rápidas para encontros e estresse em viagens"
+      }
+    },
+    "share.text": {
+      "reason": "The client-generated share text was not present in the preserved catalog.",
+      "translations": {
+        "de-de": "Feiertagsstress? Diese Atemübung hilft in 30 Sekunden.",
+        "es-es": "¿Estrés en las fiestas? Este ejercicio de respiración ayuda en 30 segundos.",
+        "fr-fr": "Stress des fêtes ? Cet exercice de respiration aide en 30 secondes.",
+        "ja-jp": "年末年始のストレスに。この呼吸エクササイズは30秒で役立ちます。",
+        "pt-br": "Estresse nas festas? Este exercício de respiração ajuda em 30 segundos."
+      }
+    },
+    "share.copiedText": {
+      "reason": "The post-interaction copied label was not present in the preserved catalog.",
+      "translations": {
+        "de-de": "Link kopiert!",
+        "es-es": "¡Enlace copiado!",
+        "fr-fr": "Lien copié !",
+        "ja-jp": "リンクをコピーしました！",
+        "pt-br": "Link copiado!"
+      }
+    },
+    "faq.items[1].answer.parts[0].text": {
+      "reason": "The linked FAQ sentence was split into reviewed rich-text tokens.",
+      "translations": {
+        "de-de": "Absolut. ",
+        "es-es": "Absolutamente. ",
+        "fr-fr": "Absolument. ",
+        "ja-jp": "もちろんです。",
+        "pt-br": "Com certeza. "
+      }
+    },
+    "faq.items[1].answer.parts[1].linkText": {
+      "reason": "The linked FAQ sentence was split into reviewed rich-text tokens.",
+      "translations": {
+        "de-de": "Der physiologische Seufzer",
+        "es-es": "El suspiro fisiológico",
+        "fr-fr": "Le soupir physiologique",
+        "ja-jp": "生理的なため息",
+        "pt-br": "O suspiro fisiológico"
+      }
+    },
+    "faq.items[1].answer.parts[2].text": {
+      "reason": "The linked FAQ sentence was split into reviewed rich-text tokens.",
+      "translations": {
+        "de-de": " kann als natürlicher, müder Seufzer getarnt werden, Menschen seufzen ständig. Für längere Techniken entschuldigen Sie sich kurz.",
+        "es-es": " puede disfrazarse de un suspiro natural de cansancio, la gente suspira todo el tiempo. Para técnicas más largas, discúlpate brevemente.",
+        "fr-fr": " peut passer pour un soupir de fatigue naturel, les gens soupirent tout le temps. Pour des techniques plus longues, éclipsez-vous un instant.",
+        "ja-jp": "は自然な疲れのため息に見せかけられます。人はいつでもため息をつきます。より長いテクニックでは、少し席を外してください。",
+        "pt-br": " pode ser disfarçado como um suspiro natural de cansaço, as pessoas suspiram o tempo todo. Para técnicas mais longas, peça licença brevemente."
+      }
+    },
+    "schema.articleDescription": {
+      "reason": "JSON-LD text was not extracted into the preserved page catalog.",
+      "translations": {
+        "de-de": "Atemübungen gegen Feiertagsstress. Schnelle Atempausen für Familientreffen, Reisen und Überforderung.",
+        "es-es": "Ejercicios de respiración para aliviar el estrés de las fiestas. Pausas rápidas para reuniones, viajes y momentos de agobio.",
+        "fr-fr": "Exercices de respiration pour soulager le stress des fêtes. Pauses rapides pour les réunions, les voyages et les moments de débordement.",
+        "ja-jp": "年末年始のストレスを和らげる呼吸エクササイズ。集まり、旅行、圧倒されそうなときに使える短いリセット法。",
+        "pt-br": "Exercícios de respiração para aliviar o estresse das festas. Pausas rápidas para encontros, viagens e momentos de sobrecarga."
+      }
+    },
+    "schema.howToName": {
+      "reason": "JSON-LD text was not extracted into the preserved page catalog.",
+      "translations": {
+        "de-de": "So beruhigen Sie Feiertagsstress mit Atmung",
+        "es-es": "Cómo calmar el estrés de las fiestas con la respiración",
+        "fr-fr": "Comment calmer le stress des fêtes par la respiration",
+        "ja-jp": "呼吸で年末年始のストレスを落ち着かせる方法",
+        "pt-br": "Como acalmar o estresse das festas com a respiração"
+      }
+    },
+    "schema.howToDescription": {
+      "reason": "JSON-LD text was not extracted into the preserved page catalog.",
+      "translations": {
+        "de-de": "Nutzen Sie den physiologischen Seufzer, um Feiertagsstress in 30 Sekunden schnell zu beruhigen.",
+        "es-es": "Usa la técnica del suspiro fisiológico para calmar rápidamente el estrés de las fiestas en 30 segundos.",
+        "fr-fr": "Utilisez la technique du soupir physiologique pour calmer rapidement le stress des fêtes en 30 secondes.",
+        "ja-jp": "生理的ため息のテクニックを使い、年末年始のストレスを30秒ですばやく落ち着かせます。",
+        "pt-br": "Use a técnica do suspiro fisiológico para acalmar rapidamente o estresse das festas em 30 segundos."
+      }
+    },
+    "schema.howToSteps[0].name": {
+      "reason": "JSON-LD text was not extracted into the preserved page catalog.",
+      "translations": {
+        "de-de": "Stress wahrnehmen",
+        "es-es": "Reconoce el estrés",
+        "fr-fr": "Repérez le stress",
+        "ja-jp": "ストレスに気づく",
+        "pt-br": "Perceba o estresse"
+      }
+    },
+    "schema.howToSteps[0].text": {
+      "reason": "JSON-LD text was not extracted into the preserved page catalog.",
+      "translations": {
+        "de-de": "Erkennen Sie, wenn Sie sich anspannen: zusammengebissener Kiefer, angespannte Schultern, rasende Gedanken oder der Drang, auszufahren.",
+        "es-es": "Reconoce cuándo te estás tensando: mandíbula apretada, hombros rígidos, pensamientos acelerados o ganas de responder bruscamente.",
+        "fr-fr": "Repérez le moment où vous vous crispez : mâchoire serrée, épaules tendues, pensées qui s'emballent ou envie de vous emporter.",
+        "ja-jp": "顎を食いしばる、肩がこわばる、考えが駆け巡る、きつく言い返したくなるなど、緊張しているサインに気づきます。",
+        "pt-br": "Perceba quando estiver ficando tenso: mandíbula cerrada, ombros rígidos, pensamentos acelerados ou vontade de responder de forma ríspida."
+      }
+    },
+    "schema.howToSteps[1].name": {
+      "reason": "JSON-LD text was not extracted into the preserved page catalog.",
+      "translations": {
+        "de-de": "Erstes Einatmen",
+        "es-es": "Primera inhalación",
+        "fr-fr": "Première inspiration",
+        "ja-jp": "1回目の吸気",
+        "pt-br": "Primeira inspiração"
+      }
+    },
+    "schema.howToSteps[1].text": {
+      "reason": "JSON-LD text was not extracted into the preserved page catalog.",
+      "translations": {
+        "de-de": "Atmen Sie tief durch die Nase ein und füllen Sie Ihre Lunge zu etwa 80-90%. Lassen Sie den Bauch sich ausdehnen.",
+        "es-es": "Inhala profundamente por la nariz y llena los pulmones aproximadamente al 80-90%. Deja que el abdomen se expanda.",
+        "fr-fr": "Inspirez profondément par le nez en remplissant vos poumons à environ 80-90%. Laissez votre ventre se gonfler.",
+        "ja-jp": "鼻から深く吸い、肺を約80-90%満たします。お腹を膨らませます。",
+        "pt-br": "Inspire profundamente pelo nariz, enchendo os pulmões até cerca de 80-90%. Deixe a barriga expandir."
+      }
+    },
+    "schema.howToSteps[2].name": {
+      "reason": "JSON-LD text was not extracted into the preserved page catalog.",
+      "translations": {
+        "de-de": "Zweites Einatmen (Nachfüllen)",
+        "es-es": "Segunda inhalación (complemento)",
+        "fr-fr": "Deuxième inspiration (complément)",
+        "ja-jp": "2回目の吸気（継ぎ足し）",
+        "pt-br": "Segunda inspiração (complemento)"
+      }
+    },
+    "schema.howToSteps[2].text": {
+      "reason": "JSON-LD text was not extracted into the preserved page catalog.",
+      "translations": {
+        "de-de": "Atmen Sie, ohne auszuatmen, ein zweites Mal kürzer durch die Nase ein, um die Lunge vollständig zu füllen.",
+        "es-es": "Sin exhalar, haz una segunda inhalación más corta por la nariz para llenar por completo los pulmones.",
+        "fr-fr": "Sans expirer, prenez une deuxième inspiration plus courte par le nez afin de remplir complètement vos poumons.",
+        "ja-jp": "息を吐かずに、鼻からもう一度短く吸って肺を完全に膨らませます。",
+        "pt-br": "Sem expirar, faça uma segunda inspiração mais curta pelo nariz para encher completamente os pulmões."
+      }
+    },
+    "schema.howToSteps[3].name": {
+      "reason": "JSON-LD text was not extracted into the preserved page catalog.",
+      "translations": {
+        "de-de": "Langes Ausatmen",
+        "es-es": "Exhalación larga",
+        "fr-fr": "Longue expiration",
+        "ja-jp": "長く吐く",
+        "pt-br": "Expiração longa"
+      }
+    },
+    "schema.howToSteps[3].text": {
+      "reason": "JSON-LD text was not extracted into the preserved page catalog.",
+      "translations": {
+        "de-de": "Atmen Sie langsam und vollständig durch den Mund aus und lassen Sie das Ausatmen länger dauern als beide Einatmungen zusammen.",
+        "es-es": "Exhala lenta y completamente por la boca, haciendo que la exhalación dure más que las dos inhalaciones juntas.",
+        "fr-fr": "Expirez lentement et complètement par la bouche, en faisant durer l'expiration plus longtemps que les deux inspirations réunies.",
+        "ja-jp": "口からゆっくり完全に吐き、2回の吸気を合わせた時間よりも長く吐きます。",
+        "pt-br": "Expire lenta e completamente pela boca, fazendo a expiração durar mais do que as duas inspirações juntas."
+      }
+    },
+    "schema.howToSteps[4].name": {
+      "reason": "JSON-LD text was not extracted into the preserved page catalog.",
+      "translations": {
+        "de-de": "Bei Bedarf wiederholen",
+        "es-es": "Repite si es necesario",
+        "fr-fr": "Répétez si nécessaire",
+        "ja-jp": "必要なら繰り返す",
+        "pt-br": "Repita se necessário"
+      }
+    },
+    "schema.howToSteps[4].text": {
+      "reason": "JSON-LD text was not extracted into the preserved page catalog.",
+      "translations": {
+        "de-de": "Ein Seufzer bringt oft sofortige Erleichterung. Wiederholen Sie ihn 2-3 Mal, wenn Sie einen vollständigen Neustart brauchen.",
+        "es-es": "Un suspiro suele proporcionar alivio inmediato. Hazlo 2-3 veces si necesitas un reinicio completo.",
+        "fr-fr": "Un soupir procure souvent un soulagement immédiat. Faites-en 2-3 si vous avez besoin d'une remise à zéro complète.",
+        "ja-jp": "1回でもすぐに楽になることがあります。しっかりリセットしたい場合は2-3回行います。",
+        "pt-br": "Um suspiro costuma proporcionar alívio imediato. Faça 2-3 se precisar de um reinício completo."
+      }
+    }
+  },
+  "reviewedSourceHash": "d7d9dd2d10c37affc02bf8e27a1f9a977c76736db0c501d8cdc47eb62ee68c67",
+  "schemaVersion": 1
+}

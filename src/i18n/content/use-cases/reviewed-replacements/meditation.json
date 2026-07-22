@@ -1,0 +1,60 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "Inicia tu viaje de meditación respiración con la técnica",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "¿No puedes meditar? Empieza con la respiración coherente (meditación para principiantes)",
+      "reviewedSourceHash": "80c5c54985886e95a6dff7a8465f4771b26fec102623e0a9b35a7b095b2a6ac3",
+      "sourcePath": "meta.title",
+      "sourceText": "Can't Meditate? Start with Coherent Breathing (Meditation for Beginners)"
+    },
+    {
+      "currentCatalogValue": "¿Tu mente no para de divagar? ¿No puedes quedarte quieto? Inicia tu práctica de meditación respiración con la respiración coherente, el patrón",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "¿Tu mente no deja de correr? ¿No puedes quedarte quieto? Empieza a meditar con la respiración coherente, el patrón estructurado que hace accesible la atención plena. Visualizador guiado gratuito e investigación.",
+      "reviewedSourceHash": "a037b3d4253ccefd97809de502cddcc0921bf26afd6e0ee280c87251069788b8",
+      "sourcePath": "meta.description",
+      "sourceText": "Mind won't stop racing? Can't sit still? Start meditation with coherent breathing: the structured breathing pattern that makes mindfulness accessible. Free guided visualizer + research."
+    },
+    {
+      "currentCatalogValue": "Inicia tu viaje de meditación respiración con la técnica",
+      "locale": "es-es",
+      "reason": "The approved head-metadata occurrence is truncated; the complete body-heading occurrence is not the metadata value.",
+      "replacement": "¿No puedes meditar? Empieza con la respiración coherente",
+      "reviewedSourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+      "sourcePath": "meta.ogTitle",
+      "sourceText": "Can't Meditate? Start with Coherent Breathing"
+    },
+    {
+      "currentCatalogValue": "¿Tu mente no para de divagar? ¿No puedes quedarte quieto? Inicia tu práctica de meditación respiración con la respiración coherente, el patrón",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "El patrón de respiración estructurado que hace accesible la meditación para principiantes. Visualizador guiado gratuito.",
+      "reviewedSourceHash": "bd5d8b1e2f4336ae0655efb4ca893360ee906bd0534f2d1731add44d3aa75098",
+      "sourcePath": "meta.ogDescription",
+      "sourceText": "The structured breathing pattern that makes meditation accessible for beginners. Free guided visualizer."
+    },
+    {
+      "currentCatalogValue": "Inicia tu viaje de meditación respiración con la técnica",
+      "locale": "es-es",
+      "reason": "The approved head-metadata occurrence is truncated; the complete body-heading occurrence is not the metadata value.",
+      "replacement": "¿No puedes meditar? Empieza con la respiración coherente",
+      "reviewedSourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+      "sourcePath": "meta.twitterTitle",
+      "sourceText": "Can't Meditate? Start with Coherent Breathing"
+    },
+    {
+      "currentCatalogValue": "¿Tu mente no para de divagar? ¿No puedes quedarte quieto? Inicia tu práctica de meditación respiración con la respiración coherente, el patrón",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "El patrón de respiración estructurado que hace accesible la meditación para principiantes. Visualizador guiado gratuito.",
+      "reviewedSourceHash": "bd5d8b1e2f4336ae0655efb4ca893360ee906bd0534f2d1731add44d3aa75098",
+      "sourcePath": "meta.twitterDescription",
+      "sourceText": "The structured breathing pattern that makes meditation accessible for beginners. Free guided visualizer."
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/meditation"
+}

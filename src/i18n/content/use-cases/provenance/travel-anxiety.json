@@ -1,0 +1,3161 @@
+{
+  "locales": {
+    "de-de": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.back-to-holiday-hub": {
+          "sourceHash": "c1e300ed5fc4efbc2468ac1567e4fb20646b1182825fa3e26de23cb8c7d7f0f7",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "f10268a765bb0ecf0afdfae16a75bb2587e2c730d3f1f1b776a4cafc877308ea",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "2733df13664a5e0b512028b11c6bc898078aa3ccffdfa65ad8e29374ab6a84a9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.holiday-1min-breather": {
+          "sourceHash": "d6a638e0d8f511ecdff5ea5180d83000a3fdc9c3c9710bfefe17cf4b5ec27cf6",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.holiday-2min-calm-down": {
+          "sourceHash": "16b5409e983d1dcac9227f8d19a4188410d08c5d55da1827bda4e6d3b7362c85",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.holiday-30s-reset": {
+          "sourceHash": "eba7fc02f58a8508a07a7a6284155e81335089b04396b8d6b56d525d3ec91774",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.holiday-ready-sessions": {
+          "sourceHash": "265ebf22957a0afa4262caee5a09241bad88fe078493ff72efc3142195f2cbc3",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "f607a43ced7c5ce11c681d395d966d0d1a214221d59fcba2227a52b39e36f0a9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.related-holiday-title": {
+          "sourceHash": "6e6700ebb79acdc6c454084c36419a96e782fd0a47695a71703340fbecade8f8",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.related-panic-title": {
+          "sourceHash": "60b19b4a8b0ebd154f5fe7b84fcb735a5d21fc617898a56d2250c637f22338e7",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-coherent-app": {
+          "sourceHash": "010fb498f61fb71ff823061853b1087f16d25ddccd8f102487e0542c1070e24a",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "9293b7ad06b204b27d375d5190243a182d7a9b6f405ea5cb6b00c22822c48cd2",
+          "sourceText": "If you have severe flight anxiety, claustrophobia, or panic disorder that significantly impacts your ability to travel, please consult a mental health professional. Breathing techniques are a helpful tool but may not be sufficient for clinical anxiety disorders. Cognitive-behavioral therapy (CBT) and, in some cases, medication can be very effective for travel anxiety.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "bb7535508f4fcf07b8761b89619fcdad0505ec00c1811477a195efc73b681ed3",
+          "sourceText": "You can, but turbulence may break your rhythm. If turbulence causes acute panic, switch to the physiological sigh (double inhale + long exhale). It's faster-acting for acute stress. Once the turbulence passes, return to coherent breathing. Many people find that continuing to breathe slowly during mild turbulence actually helps, because it gives them something to focus on besides the movement.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "c65a77709b9038d9bd39eff768d94638123a3509bd218a16128d71def5d3d68f",
+          "sourceText": "Can I do this during turbulence, or will it make things worse?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "5f3c93affa4193222c19ace26a8489544035d279605f71cb223f403708628253",
+          "sourceText": "This is common and usually means you're trying to breathe too deeply. With coherent breathing, you don't need to take giant breaths, normal-sized breaths at a slow pace are enough. Start with a faster rhythm (4 seconds in, 4 seconds out) and gradually slow down as you get comfortable. If you still feel short of breath, check that you're not holding tension in your chest or throat. The breath should feel easy, not strained.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "78357b32ffe496010a7b21634156489dfa172c1fa1277b2cafe6bd7490bac4bd",
+          "sourceText": "I can't breathe slowly. It makes me feel like I'm suffocating.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "89f2adc62acebda5f8c8e8ef731117d166a96f5707b5be4653bc06d0535511ea",
+          "sourceText": "The rate matters more than the depth. Random deep breaths can actually worsen anxiety by disrupting your CO₂ balance. Coherent breathing's specific rhythm (about 5 breaths per minute) synchronizes with your body's natural cardiovascular oscillations, creating a state of physiological coherence that sustains calm for hours. It's not about breathing more. It's about breathing at the right frequency.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].question": {
+          "sourceHash": "350dc4a12c2e1d8b375c3a946f17c9655c389e721d5c4a9f82ad86c6371bc0f0",
+          "sourceText": "How is this different from just 'taking deep breaths'?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "895dabaec75d2dffcadf09cef16618762e12350478c9c8088d84d4a03c990f48",
+          "sourceText": "Indirectly, yes. By reducing travel stress and helping you stay calm during flights, you'll arrive less exhausted. For sleep specifically, use 4-7-8 breathing at bedtime in your new time zone. For daytime alertness, coherent breathing can help you feel more centered. But the biggest jet lag factors are light exposure and meal timing, no breathing technique can override your circadian rhythm directly.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "132f28c2a7114c9dc12adf4bf85dd35b1ec039391c2d76278adea1c51aa4e405",
+          "sourceText": "Will this help with jet lag?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "135083cfcb679b4779664e7403a79269703d04f9eb9cd66de80dbf2f18e2de8f",
+          "sourceText": "Use the visual guide, watching the animation is easier than counting in your head. You can also try the 'sigh first, then slow down' approach: do 2-3 physiological sighs to take the edge off acute anxiety, then transition to coherent breathing for sustained calm. If you're extremely anxious, even partial success is helpful. Breathing at 8 breaths/minute is still better than panicked hyperventilation.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[4].question": {
+          "sourceHash": "ef9afb01643f640943846373143f38a3336f902e0b5aa50f8314cfa38c9cd39e",
+          "sourceText": "What if I'm too anxious to focus on breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "e7d65180bc994678e53fd78804abc7dda36524d9bcbbb7d21e59cd5869d3d7d8",
+          "sourceText": "Ear pain is caused by pressure differences, not anxiety, so breathing won't directly help. But if anxiety makes you clench your jaw and stiffen your neck (which it often does), relaxing through breathwork can make the pressure equalization easier. For ear pressure specifically: yawn, swallow, chew gum, or do the Valsalva maneuver (pinch nose, close mouth, gently blow). Some people find that coherent breathing during descent reduces ear discomfort because they're more relaxed.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[5].question": {
+          "sourceHash": "7a50865a18fdd90a4f025b04b48e749147e0fe76f24f6fc6ef759b3155a06a62",
+          "sourceText": "My ears hurt when flying. Does this help with that?",
+          "status": "repo-reviewed-manual"
+        },
+        "hero.intro": {
+          "sourceHash": "6ffad33c26ba63870fbfc46813ad371c1e1f71bad6c140b4e76c0079346f4d29",
+          "sourceText": "Your heart races as the plane accelerates. The crowds at the airport feel suffocating. Every delay triggers catastrophic thinking. Travel anxiety isn't irrational. It's your nervous system responding to genuine loss of control. Coherent breathing creates a sustained calm that lasts for hours, getting you through the entire journey.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "d1edecf31d787d38581e6618cec2b0498c410153377e368460ad6b0c90ec1890",
+          "sourceText": "Stay calm through flights, delays, and crowds with coherent breathing",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "e5c60420f1dc4545b5ab361b44ed15afd6515b07967f0d0410b9639fcf5f4887",
+          "sourceText": "Breathing Exercises for Travel Anxiety",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "618f451f5386d9255388a38405e7a7e612334d8514aacbf89551b891c2b5af1d",
+          "sourceText": "Don't wait until you're anxious. Practice coherent breathing for 5-10 minutes daily in the week before your trip. This builds your HRV baseline and makes the technique automatic.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "caf5f0222038da9b16c6dbcfbcde957f63c7c1cee9f9d7408ca36dd6694c2c0b",
+          "sourceText": "Practice before travel day",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "abe7a6e3cb05be8a6a7ace69db009538504bd28ec0904d5ac845f8a5f9596066",
+          "sourceText": "5-10 minutes daily, starting 1 week before travel",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "a268d67115013e8452db199b704ea736cfe58c89d557c65040d2f404ea8d23d1",
+          "sourceText": "Before leaving for the airport, do 10 minutes of coherent breathing. This creates a calm baseline that will last for several hours. You can do this at home, in an Uber, or at the airport before security.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "d437f9eb3514d9253d4c9027e0e08b1351a83d21005fb6099ea1c4e797afa45a",
+          "sourceText": "Pre-flight session",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "576169d396a02082d700ae0268985e1d7f5e1805b1d42c57582c8435a46aa43c",
+          "sourceText": "10 minutes, 1-2 hours before flight",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "17ab6618a5a29664f86674502bc48442072cc11f162fbb8bf066a17a8aff6bf3",
+          "sourceText": "Once seated on the plane, do another 5-minute session before takeoff. Use the coherent breathing visualizer on your phone (download for offline use). This is when anxiety typically peaks, so don't skip this step.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "5ebc783b51db5d4d8fb7f6633582e9ad4403281eed609cf2f9b3d5b14db4b831",
+          "sourceText": "At your seat",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "b78554ed2f358ef52aa03a55decd7d5a6a991211e9afaea9acee91196708a416",
+          "sourceText": "5 minutes before takeoff",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "a448de27b0f947d7dcb9fc4626ab3bdf7b1ef9c80ba69db7a41c113654f5ae40",
+          "sourceText": "Breathe in slowly through your nose for 5.5-6 seconds. Breathe out slowly through your nose for 5.5-6 seconds. No pauses between inhale and exhale, one continuous flow. Focus on making your breath smooth and gentle.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "237a42af2c3abf50b7d4d1b56ca850640e470e8c8d659dbd2d7854cf55a8c8d5",
+          "sourceText": "The rhythm",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "edf8dfdf6e36d52ad519e63e21415e03681235df7f57aaefeaeb84a51b5f848a",
+          "sourceText": "5.5 seconds in, 5.5 seconds out (5 breaths/minute)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "0f6e4e44b2705f94fd7bca266f2a7aeca95249960f5e189be691293316d2ddb0",
+          "sourceText": "If turbulence triggers acute panic, switch to the physiological sigh: double inhale (big breath + small sniff), long exhale. This provides immediate relief. Then return to coherent breathing once the turbulence passes.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "38e0912d3ca96db2c296c9075f53da620c57ebe0dea6eaed18467eb1750d0a7e",
+          "sourceText": "During turbulence",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "eb5a88cac9bbc83980555fa71bf7c2630e7376edce16b0366dc5c3b4cdbe8d25",
+          "sourceText": "As needed",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "5eea9f944a28bb968f2be6281878f3d4e53d94a23796bd53859a227c56d5b8ef",
+          "sourceText": "Every 1-2 hours, do 2-3 minutes of coherent breathing to maintain your calm state. Set a silent alarm or do it whenever you notice tension building. This prevents the gradual stress accumulation that leads to exhaustion.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "e686f4a14d28d09405790774970ff7c1568fc60089bcf1e90be2dfe53a7fd4c7",
+          "sourceText": "Maintenance during flight",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "a88c9b45d2f72c98e91e7472d98a4c057e5cf88612cbc3bf0617553f64eea16f",
+          "sourceText": "2-3 minutes every 1-2 hours",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "5dd434422d160d85fac15da0cdacffaec8171995a0d782459168f9d720f9fde0",
+          "sourceText": "Download the visualizer for offline use. You'll need it in airplane mode",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "a03129206932e0e577635760da2ff7c5292a12916dd68a4c7a1f04f64a37956d",
+          "sourceText": "Noise-canceling headphones help block the ambient engine noise that triggers stress",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "b1e6791bfb27d1e0ddf5b553842e9ab91d6a3c04e6a5a53fe1fa598c3f864776",
+          "sourceText": "Aisle seats provide more perceived space and easier bathroom access (reduces claustrophobia)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "a9d24c44baeac646b757e713a41b46013d730a210053263c58087a8b10f64aa8",
+          "sourceText": "Avoid caffeine and alcohol before/during flights, both worsen anxiety",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "d29e9f6b5b66b62b97042efc574bfba45e666242ec2137dce99002e388d919e6",
+          "sourceText": "Cold water on your wrists or face can enhance the calming effect (activates dive reflex)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[5]": {
+          "sourceHash": "0d83b58f66e2e6a7ea818600bc31fcd783f7490883c467420158e937e0486671",
+          "sourceText": "Tell flight attendants you're an anxious flyer. They're trained to help and will check on you",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "0d9fbf0d1c5167ca832154901105d5846cb45e7a0300843ad8c5b3c0992754ac",
+          "sourceText": "Flight anxiety? Panic in crowds? Coherent breathing keeps you calm for hours—through takeoff, turbulence, delays, and crowded airports. Stanford research. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "29effa45141b3a0541e4f079409afef6ef6f84365a586a9d340a5e1a8911a95f",
+          "sourceText": "The breathing technique that keeps you calm through flights, delays, and crowds. Works for hours, not minutes. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "8e7957eea6c9ceea0c326302bbd56c69720c34447f3f5f1d48d21b415ba82a06",
+          "sourceText": "Breathing Exercises for Travel Anxiety — Stay Calm for Hours",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "e0e983d315eb7963eea5220e4c33705701ed47a6c97f2ba9b9289dcea02067c8",
+          "sourceText": "Breathing Exercises for Travel Anxiety — Calm Flights & Crowds | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "0a6c292fa9f8986011d593892afdbaf12d2313b56a53cc06d23633d838cfee7a",
+          "sourceText": "Stay calm through flights, turbulence, delays, and crowds. Coherent breathing works for hours. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "e0e983d315eb7963eea5220e4c33705701ed47a6c97f2ba9b9289dcea02067c8",
+          "sourceText": "Breathing Exercises for Travel Anxiety — Calm Flights & Crowds",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "0f07721574ab8bf37e5955e261145c9d03188a8caf4c31eb3f922b765983fb46",
+          "sourceText": "Travel strips away your sense of control. You can't leave when you want. You're crammed into small spaces with strangers. Delays and cancellations are unpredictable. Your nervous system interprets this lack of control as danger, triggering the same fight-or-flight response as actual threats. Flying adds extra triggers: turbulence feels like falling, cabin pressure changes affect your inner ear, and you're trapped in a metal tube at 35,000 feet.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "300ed46750b474e236987f166a5fe92e3d227f352d39fdff87326dfccb7933f8",
+          "sourceText": "Why Travel Triggers Your Nervous System",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "711c334f460aed2e9cb3f3c13c1e93200247b6230c7c5f3ad34ddae2dcc4edcb",
+          "sourceText": "Racing heart during takeoff and landing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "ceaa8141c80fc06a1628d6efeb3716e5fa66a79565e513e1fd704b965b8ce305",
+          "sourceText": "Panic during turbulence or unexpected movements",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "5c1900623ce1c455926f627a67429a36abb1febfe8ab2718e6a79a1418adbdc9",
+          "sourceText": "Claustrophobic feelings in crowded spaces",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "0e5c22164a3cde6b62b386de206c7aa6e061be692a574e733fadedc72dba03bd",
+          "sourceText": "Hypervigilance, scanning for threats constantly",
+          "status": "route-catalog-normalized"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "0808c610ae51ec4fd113c0e8390b371cd87f62bec1b649590f20133f9d678c73",
+          "sourceText": "Catastrophic thinking ('What if the plane crashes?')",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "b09c0c8c2a0cbcede97ceeca2421cd15dd4330aa965174ff6a6b90c71491051d",
+          "sourceText": "Physical symptoms: sweating, nausea, trembling",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "548fe548e85e8944ae8ba13541da6133a59b5db70cd601ce55d1cffd2d557e2a",
+          "sourceText": "Avoidance behaviors, turning down trips you'd enjoy",
+          "status": "route-catalog-normalized"
+        },
+        "problem.symptoms[7]": {
+          "sourceHash": "cb449f0d1ebad33e48030551f8eedfdb2224e6f83b6889715fb85cd7279a3266",
+          "sourceText": "Exhaustion after travel, even short trips",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "13be24af57d3448474dc8cc64f7efd615d7f2763cd46c9260ca2112e1bd8fa16",
+          "sourceText": "Research on HRV biofeedback (coherent breathing at resonance frequency) for anxiety reduction, showing significant improvements in physiological and psychological measures.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "a5cc29aeee946aa7815fc232588d8f834cdece25bc18eda8daa32565e93551ad",
+          "sourceText": "Heart Rate Variability Biofeedback for Flight Anxiety",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "69700c59198dd9ab74907333d73097c78e359fa6b3ae7a427ddcfd398330ad01",
+          "sourceText": "Study demonstrating the relationship between slow breathing, respiratory sinus arrhythmia, and anxiety reduction.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "9fd60eab1d527d54ec84419b26431b671e81bd43e1117bc1c05adf9bf0e9ac17",
+          "sourceText": "Respiratory sinus arrhythmia as a function of state anxiety",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "0e0690c4c23c7d923601adc61c60ff65199163a8c8bd994ad0e2edad8dc64019",
+          "sourceText": "Research showing that controlled slow breathing reduces motion sickness symptoms by 50% or more.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "4f6a1ce5dc2294690946226f640ba1d098db87c68ee2579b8f863face4f4ca15",
+          "sourceText": "Slow Breathing and Motion Sickness",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "4c54bad19efdfc6b49381389f7643edf43c4e2cc6e2fd452cb6fe528267c15b3",
+          "sourceText": "Review of evidence-based treatments for flight anxiety, including breathing techniques as a component of effective interventions.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "5065899409f12d14c9422efa6f049683632eb2de8ba08ae406bab0bed0efa9d7",
+          "sourceText": "Fear of flying: psychological treatment approaches",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "f661c0f9c08ea42d86e64d35e1a7d9f19ffef1f48e79f5b5bc90a110d36c1f8f",
+          "sourceText": "Practice with the full coherent breathing visualizer, download for offline use",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "b288191267cff6e8fca325ee7954d9555d1f517d0f45ef611babd39d0c803d99",
+          "sourceText": "Dreading family gatherings? The physiological sigh works in 30 seconds for acute stress",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "69f6a7dbe5afb2044d0a194e20d9cd4a9daa864679b0b09c7148d1fdbba07ae8",
+          "sourceText": "If travel triggers full panic attacks, learn the physiological sigh for immediate relief",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "cb07c65cd22e624133d609354035ab7a901490e14ffc438a752a08055824e95b",
+          "sourceText": "For general anxiety that extends beyond travel, box breathing provides quick relief",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[3].teaser": {
+          "sourceHash": "93dfd0bbb3ef03914315829859e9c7daf259c776e554d12a75f0322d1550e0e8",
+          "sourceText": "Jet-lagged? Use 4-7-8 breathing to fall asleep faster in new time zones",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "9ef57be3e4f2385e68aa87bb0b1e43383a0cbcf72d3c06a5458a8fa7c8bae02b",
+          "sourceText": "Why Coherent Breathing Works for Travel",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "8861bb56fbb80e3a8ff83c33d785232a5ad02af03c018087a32c955902e51da3",
+          "sourceText": "Heart rate variability (HRV) measures your nervous system's flexibility. Low HRV = stuck in stress mode. High HRV = resilient and adaptable. Coherent breathing maximizes HRV by syncing your breath to your body's natural resonance frequency (~0.1 Hz). This elevated HRV persists for 1-4 hours after practice, providing sustained calm throughout your journey.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "a110223b2a49c8f8ef352b9445feecac62a39decee8cf40f4c60ae935c0441f9",
+          "sourceText": "Sustained HRV Optimization",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "7f15165b7cea5d268b66395c5d49cf459c1b4b318ed3dc959f5d65e4e607e3ba",
+          "sourceText": "Motion sickness is partly caused by autonomic nervous system dysregulation. Studies show that slow, rhythmic breathing reduces motion sickness symptoms by 50% or more. The steady rhythm of coherent breathing also provides a stable internal focus, helping your brain reconcile the conflicting signals that cause nausea.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "b312a03f0181322800b39ba3ecc1f5c17b481e4d3a5100a738c806e2ec2b28c2",
+          "sourceText": "Motion Sickness Prevention",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "a6f88c046c5e24bd599f23283a5eaa61989fc669975e311a70afe70b111fc605",
+          "sourceText": "Anxiety hijacks your prefrontal cortex, the rational part of your brain. You know the plane is safe, but you can't 'think' your way out of panic. Coherent breathing increases blood flow to the prefrontal cortex and shifts your brain into alpha wave states, restoring rational thought and reducing catastrophic thinking.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "9de3a046e2f527a88a17860490c3aa11451501fb081ca5720ae34ee7bbe2f439",
+          "sourceText": "Prefrontal Cortex Engagement",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "9f5ebc29344b6d195b2ef2a4e1a9d84b4882578319bf675be9f2c57dd7fc9e38",
+          "sourceText": "The vagus nerve is your 'calm-down' nerve. People with high vagal tone recover faster from stress. Regular coherent breathing practice strengthens vagal tone over time, meaning travel becomes progressively less stressful. Even one session before a flight provides immediate benefit.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "8008669a32679ad1dd409fa6077661c8f34142240cbb1698d0cfa111c84792d9",
+          "sourceText": "Vagal Tone Strengthening",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "48eba4467ee6ea9a7d5a1c8e5b00dc2f1750d78644a8c0e4884b321ddda832c1",
+          "sourceText": "Unlike quick-fix techniques that wear off in minutes, coherent breathing creates a physiological state of calm that can last 2-4 hours after just 5-10 minutes of practice. By breathing at your body's resonance frequency (about 5 breaths per minute), you optimize heart rate variability and balance your autonomic nervous system, the key to sustained stress resilience.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "9c36ccf1f7e07072e32f8aea8f3f656e106f006a4b6c6262ec58fa8320f90281",
+          "sourceText": "Coherent Breathing: Hours of Sustained Calm",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "ddeae5aeb2881c4ab9b5a8487d27b9ccd8696f15a72bd7acfa429a5e9e56d755",
+          "sourceText": "Travel anxiety isn't one moment of panic. It's hours of low-grade stress punctuated by acute spikes. You need a technique that provides baseline calm (coherent breathing before and during travel) plus an acute rescue tool (physiological sigh for turbulence or sudden panic). Coherent breathing is your foundation; the sigh is your emergency button.",
+          "status": "route-catalog-normalized"
+        }
+      }
+    },
+    "es-es": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.back-to-holiday-hub": {
+          "sourceHash": "c1e300ed5fc4efbc2468ac1567e4fb20646b1182825fa3e26de23cb8c7d7f0f7",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "f10268a765bb0ecf0afdfae16a75bb2587e2c730d3f1f1b776a4cafc877308ea",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "2733df13664a5e0b512028b11c6bc898078aa3ccffdfa65ad8e29374ab6a84a9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.holiday-1min-breather": {
+          "sourceHash": "d6a638e0d8f511ecdff5ea5180d83000a3fdc9c3c9710bfefe17cf4b5ec27cf6",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.holiday-2min-calm-down": {
+          "sourceHash": "16b5409e983d1dcac9227f8d19a4188410d08c5d55da1827bda4e6d3b7362c85",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.holiday-30s-reset": {
+          "sourceHash": "eba7fc02f58a8508a07a7a6284155e81335089b04396b8d6b56d525d3ec91774",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.holiday-ready-sessions": {
+          "sourceHash": "265ebf22957a0afa4262caee5a09241bad88fe078493ff72efc3142195f2cbc3",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "f607a43ced7c5ce11c681d395d966d0d1a214221d59fcba2227a52b39e36f0a9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-holiday-title": {
+          "sourceHash": "6e6700ebb79acdc6c454084c36419a96e782fd0a47695a71703340fbecade8f8",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.related-panic-title": {
+          "sourceHash": "60b19b4a8b0ebd154f5fe7b84fcb735a5d21fc617898a56d2250c637f22338e7",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-coherent-app": {
+          "sourceHash": "010fb498f61fb71ff823061853b1087f16d25ddccd8f102487e0542c1070e24a",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "9293b7ad06b204b27d375d5190243a182d7a9b6f405ea5cb6b00c22822c48cd2",
+          "sourceText": "If you have severe flight anxiety, claustrophobia, or panic disorder that significantly impacts your ability to travel, please consult a mental health professional. Breathing techniques are a helpful tool but may not be sufficient for clinical anxiety disorders. Cognitive-behavioral therapy (CBT) and, in some cases, medication can be very effective for travel anxiety.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "bb7535508f4fcf07b8761b89619fcdad0505ec00c1811477a195efc73b681ed3",
+          "sourceText": "You can, but turbulence may break your rhythm. If turbulence causes acute panic, switch to the physiological sigh (double inhale + long exhale). It's faster-acting for acute stress. Once the turbulence passes, return to coherent breathing. Many people find that continuing to breathe slowly during mild turbulence actually helps, because it gives them something to focus on besides the movement.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "c65a77709b9038d9bd39eff768d94638123a3509bd218a16128d71def5d3d68f",
+          "sourceText": "Can I do this during turbulence, or will it make things worse?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "5f3c93affa4193222c19ace26a8489544035d279605f71cb223f403708628253",
+          "sourceText": "This is common and usually means you're trying to breathe too deeply. With coherent breathing, you don't need to take giant breaths, normal-sized breaths at a slow pace are enough. Start with a faster rhythm (4 seconds in, 4 seconds out) and gradually slow down as you get comfortable. If you still feel short of breath, check that you're not holding tension in your chest or throat. The breath should feel easy, not strained.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "78357b32ffe496010a7b21634156489dfa172c1fa1277b2cafe6bd7490bac4bd",
+          "sourceText": "I can't breathe slowly. It makes me feel like I'm suffocating.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "89f2adc62acebda5f8c8e8ef731117d166a96f5707b5be4653bc06d0535511ea",
+          "sourceText": "The rate matters more than the depth. Random deep breaths can actually worsen anxiety by disrupting your CO₂ balance. Coherent breathing's specific rhythm (about 5 breaths per minute) synchronizes with your body's natural cardiovascular oscillations, creating a state of physiological coherence that sustains calm for hours. It's not about breathing more. It's about breathing at the right frequency.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].question": {
+          "sourceHash": "350dc4a12c2e1d8b375c3a946f17c9655c389e721d5c4a9f82ad86c6371bc0f0",
+          "sourceText": "How is this different from just 'taking deep breaths'?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "895dabaec75d2dffcadf09cef16618762e12350478c9c8088d84d4a03c990f48",
+          "sourceText": "Indirectly, yes. By reducing travel stress and helping you stay calm during flights, you'll arrive less exhausted. For sleep specifically, use 4-7-8 breathing at bedtime in your new time zone. For daytime alertness, coherent breathing can help you feel more centered. But the biggest jet lag factors are light exposure and meal timing, no breathing technique can override your circadian rhythm directly.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "132f28c2a7114c9dc12adf4bf85dd35b1ec039391c2d76278adea1c51aa4e405",
+          "sourceText": "Will this help with jet lag?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "135083cfcb679b4779664e7403a79269703d04f9eb9cd66de80dbf2f18e2de8f",
+          "sourceText": "Use the visual guide, watching the animation is easier than counting in your head. You can also try the 'sigh first, then slow down' approach: do 2-3 physiological sighs to take the edge off acute anxiety, then transition to coherent breathing for sustained calm. If you're extremely anxious, even partial success is helpful. Breathing at 8 breaths/minute is still better than panicked hyperventilation.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[4].question": {
+          "sourceHash": "ef9afb01643f640943846373143f38a3336f902e0b5aa50f8314cfa38c9cd39e",
+          "sourceText": "What if I'm too anxious to focus on breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "e7d65180bc994678e53fd78804abc7dda36524d9bcbbb7d21e59cd5869d3d7d8",
+          "sourceText": "Ear pain is caused by pressure differences, not anxiety, so breathing won't directly help. But if anxiety makes you clench your jaw and stiffen your neck (which it often does), relaxing through breathwork can make the pressure equalization easier. For ear pressure specifically: yawn, swallow, chew gum, or do the Valsalva maneuver (pinch nose, close mouth, gently blow). Some people find that coherent breathing during descent reduces ear discomfort because they're more relaxed.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[5].question": {
+          "sourceHash": "7a50865a18fdd90a4f025b04b48e749147e0fe76f24f6fc6ef759b3155a06a62",
+          "sourceText": "My ears hurt when flying. Does this help with that?",
+          "status": "repo-reviewed-manual"
+        },
+        "hero.intro": {
+          "sourceHash": "6ffad33c26ba63870fbfc46813ad371c1e1f71bad6c140b4e76c0079346f4d29",
+          "sourceText": "Your heart races as the plane accelerates. The crowds at the airport feel suffocating. Every delay triggers catastrophic thinking. Travel anxiety isn't irrational. It's your nervous system responding to genuine loss of control. Coherent breathing creates a sustained calm that lasts for hours, getting you through the entire journey.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "d1edecf31d787d38581e6618cec2b0498c410153377e368460ad6b0c90ec1890",
+          "sourceText": "Stay calm through flights, delays, and crowds with coherent breathing",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "e5c60420f1dc4545b5ab361b44ed15afd6515b07967f0d0410b9639fcf5f4887",
+          "sourceText": "Breathing Exercises for Travel Anxiety",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "618f451f5386d9255388a38405e7a7e612334d8514aacbf89551b891c2b5af1d",
+          "sourceText": "Don't wait until you're anxious. Practice coherent breathing for 5-10 minutes daily in the week before your trip. This builds your HRV baseline and makes the technique automatic.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "caf5f0222038da9b16c6dbcfbcde957f63c7c1cee9f9d7408ca36dd6694c2c0b",
+          "sourceText": "Practice before travel day",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "abe7a6e3cb05be8a6a7ace69db009538504bd28ec0904d5ac845f8a5f9596066",
+          "sourceText": "5-10 minutes daily, starting 1 week before travel",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "a268d67115013e8452db199b704ea736cfe58c89d557c65040d2f404ea8d23d1",
+          "sourceText": "Before leaving for the airport, do 10 minutes of coherent breathing. This creates a calm baseline that will last for several hours. You can do this at home, in an Uber, or at the airport before security.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "d437f9eb3514d9253d4c9027e0e08b1351a83d21005fb6099ea1c4e797afa45a",
+          "sourceText": "Pre-flight session",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "576169d396a02082d700ae0268985e1d7f5e1805b1d42c57582c8435a46aa43c",
+          "sourceText": "10 minutes, 1-2 hours before flight",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "17ab6618a5a29664f86674502bc48442072cc11f162fbb8bf066a17a8aff6bf3",
+          "sourceText": "Once seated on the plane, do another 5-minute session before takeoff. Use the coherent breathing visualizer on your phone (download for offline use). This is when anxiety typically peaks, so don't skip this step.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "5ebc783b51db5d4d8fb7f6633582e9ad4403281eed609cf2f9b3d5b14db4b831",
+          "sourceText": "At your seat",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "b78554ed2f358ef52aa03a55decd7d5a6a991211e9afaea9acee91196708a416",
+          "sourceText": "5 minutes before takeoff",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "a448de27b0f947d7dcb9fc4626ab3bdf7b1ef9c80ba69db7a41c113654f5ae40",
+          "sourceText": "Breathe in slowly through your nose for 5.5-6 seconds. Breathe out slowly through your nose for 5.5-6 seconds. No pauses between inhale and exhale, one continuous flow. Focus on making your breath smooth and gentle.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "237a42af2c3abf50b7d4d1b56ca850640e470e8c8d659dbd2d7854cf55a8c8d5",
+          "sourceText": "The rhythm",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "edf8dfdf6e36d52ad519e63e21415e03681235df7f57aaefeaeb84a51b5f848a",
+          "sourceText": "5.5 seconds in, 5.5 seconds out (5 breaths/minute)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "0f6e4e44b2705f94fd7bca266f2a7aeca95249960f5e189be691293316d2ddb0",
+          "sourceText": "If turbulence triggers acute panic, switch to the physiological sigh: double inhale (big breath + small sniff), long exhale. This provides immediate relief. Then return to coherent breathing once the turbulence passes.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "38e0912d3ca96db2c296c9075f53da620c57ebe0dea6eaed18467eb1750d0a7e",
+          "sourceText": "During turbulence",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "eb5a88cac9bbc83980555fa71bf7c2630e7376edce16b0366dc5c3b4cdbe8d25",
+          "sourceText": "As needed",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "5eea9f944a28bb968f2be6281878f3d4e53d94a23796bd53859a227c56d5b8ef",
+          "sourceText": "Every 1-2 hours, do 2-3 minutes of coherent breathing to maintain your calm state. Set a silent alarm or do it whenever you notice tension building. This prevents the gradual stress accumulation that leads to exhaustion.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "e686f4a14d28d09405790774970ff7c1568fc60089bcf1e90be2dfe53a7fd4c7",
+          "sourceText": "Maintenance during flight",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "a88c9b45d2f72c98e91e7472d98a4c057e5cf88612cbc3bf0617553f64eea16f",
+          "sourceText": "2-3 minutes every 1-2 hours",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "5dd434422d160d85fac15da0cdacffaec8171995a0d782459168f9d720f9fde0",
+          "sourceText": "Download the visualizer for offline use. You'll need it in airplane mode",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "a03129206932e0e577635760da2ff7c5292a12916dd68a4c7a1f04f64a37956d",
+          "sourceText": "Noise-canceling headphones help block the ambient engine noise that triggers stress",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "b1e6791bfb27d1e0ddf5b553842e9ab91d6a3c04e6a5a53fe1fa598c3f864776",
+          "sourceText": "Aisle seats provide more perceived space and easier bathroom access (reduces claustrophobia)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "a9d24c44baeac646b757e713a41b46013d730a210053263c58087a8b10f64aa8",
+          "sourceText": "Avoid caffeine and alcohol before/during flights, both worsen anxiety",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "d29e9f6b5b66b62b97042efc574bfba45e666242ec2137dce99002e388d919e6",
+          "sourceText": "Cold water on your wrists or face can enhance the calming effect (activates dive reflex)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[5]": {
+          "sourceHash": "0d83b58f66e2e6a7ea818600bc31fcd783f7490883c467420158e937e0486671",
+          "sourceText": "Tell flight attendants you're an anxious flyer. They're trained to help and will check on you",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "0d9fbf0d1c5167ca832154901105d5846cb45e7a0300843ad8c5b3c0992754ac",
+          "sourceText": "Flight anxiety? Panic in crowds? Coherent breathing keeps you calm for hours: through takeoff, turbulence, delays, and crowded airports. Stanford research. Free visualizer.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "29effa45141b3a0541e4f079409afef6ef6f84365a586a9d340a5e1a8911a95f",
+          "sourceText": "The breathing technique that keeps you calm through flights, delays, and crowds. Works for hours, not minutes. Free visualizer.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "8e7957eea6c9ceea0c326302bbd56c69720c34447f3f5f1d48d21b415ba82a06",
+          "sourceText": "Breathing Exercises for Travel Anxiety: Stay Calm for Hours",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.title": {
+          "sourceHash": "e0e983d315eb7963eea5220e4c33705701ed47a6c97f2ba9b9289dcea02067c8",
+          "sourceText": "Breathing Exercises for Travel Anxiety: Calm Flights & Crowds",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "0a6c292fa9f8986011d593892afdbaf12d2313b56a53cc06d23633d838cfee7a",
+          "sourceText": "Stay calm through flights, turbulence, delays, and crowds. Coherent breathing works for hours. Free visualizer.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "e0e983d315eb7963eea5220e4c33705701ed47a6c97f2ba9b9289dcea02067c8",
+          "sourceText": "Breathing Exercises for Travel Anxiety: Calm Flights & Crowds",
+          "status": "repo-reviewed-replacement"
+        },
+        "problem.content": {
+          "sourceHash": "0f07721574ab8bf37e5955e261145c9d03188a8caf4c31eb3f922b765983fb46",
+          "sourceText": "Travel strips away your sense of control. You can't leave when you want. You're crammed into small spaces with strangers. Delays and cancellations are unpredictable. Your nervous system interprets this lack of control as danger, triggering the same fight-or-flight response as actual threats. Flying adds extra triggers: turbulence feels like falling, cabin pressure changes affect your inner ear, and you're trapped in a metal tube at 35,000 feet.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "300ed46750b474e236987f166a5fe92e3d227f352d39fdff87326dfccb7933f8",
+          "sourceText": "Why Travel Triggers Your Nervous System",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "711c334f460aed2e9cb3f3c13c1e93200247b6230c7c5f3ad34ddae2dcc4edcb",
+          "sourceText": "Racing heart during takeoff and landing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "ceaa8141c80fc06a1628d6efeb3716e5fa66a79565e513e1fd704b965b8ce305",
+          "sourceText": "Panic during turbulence or unexpected movements",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "5c1900623ce1c455926f627a67429a36abb1febfe8ab2718e6a79a1418adbdc9",
+          "sourceText": "Claustrophobic feelings in crowded spaces",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "0e5c22164a3cde6b62b386de206c7aa6e061be692a574e733fadedc72dba03bd",
+          "sourceText": "Hypervigilance, scanning for threats constantly",
+          "status": "route-catalog-normalized"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "0808c610ae51ec4fd113c0e8390b371cd87f62bec1b649590f20133f9d678c73",
+          "sourceText": "Catastrophic thinking ('What if the plane crashes?')",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "b09c0c8c2a0cbcede97ceeca2421cd15dd4330aa965174ff6a6b90c71491051d",
+          "sourceText": "Physical symptoms: sweating, nausea, trembling",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "548fe548e85e8944ae8ba13541da6133a59b5db70cd601ce55d1cffd2d557e2a",
+          "sourceText": "Avoidance behaviors, turning down trips you'd enjoy",
+          "status": "route-catalog-normalized"
+        },
+        "problem.symptoms[7]": {
+          "sourceHash": "cb449f0d1ebad33e48030551f8eedfdb2224e6f83b6889715fb85cd7279a3266",
+          "sourceText": "Exhaustion after travel, even short trips",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "13be24af57d3448474dc8cc64f7efd615d7f2763cd46c9260ca2112e1bd8fa16",
+          "sourceText": "Research on HRV biofeedback (coherent breathing at resonance frequency) for anxiety reduction, showing significant improvements in physiological and psychological measures.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "a5cc29aeee946aa7815fc232588d8f834cdece25bc18eda8daa32565e93551ad",
+          "sourceText": "Heart Rate Variability Biofeedback for Flight Anxiety",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "69700c59198dd9ab74907333d73097c78e359fa6b3ae7a427ddcfd398330ad01",
+          "sourceText": "Study demonstrating the relationship between slow breathing, respiratory sinus arrhythmia, and anxiety reduction.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "9fd60eab1d527d54ec84419b26431b671e81bd43e1117bc1c05adf9bf0e9ac17",
+          "sourceText": "Respiratory sinus arrhythmia as a function of state anxiety",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "0e0690c4c23c7d923601adc61c60ff65199163a8c8bd994ad0e2edad8dc64019",
+          "sourceText": "Research showing that controlled slow breathing reduces motion sickness symptoms by 50% or more.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "4f6a1ce5dc2294690946226f640ba1d098db87c68ee2579b8f863face4f4ca15",
+          "sourceText": "Slow Breathing and Motion Sickness",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "4c54bad19efdfc6b49381389f7643edf43c4e2cc6e2fd452cb6fe528267c15b3",
+          "sourceText": "Review of evidence-based treatments for flight anxiety, including breathing techniques as a component of effective interventions.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "5065899409f12d14c9422efa6f049683632eb2de8ba08ae406bab0bed0efa9d7",
+          "sourceText": "Fear of flying: psychological treatment approaches",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "f661c0f9c08ea42d86e64d35e1a7d9f19ffef1f48e79f5b5bc90a110d36c1f8f",
+          "sourceText": "Practice with the full coherent breathing visualizer, download for offline use",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "b288191267cff6e8fca325ee7954d9555d1f517d0f45ef611babd39d0c803d99",
+          "sourceText": "Dreading family gatherings? The physiological sigh works in 30 seconds for acute stress",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "69f6a7dbe5afb2044d0a194e20d9cd4a9daa864679b0b09c7148d1fdbba07ae8",
+          "sourceText": "If travel triggers full panic attacks, learn the physiological sigh for immediate relief",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "cb07c65cd22e624133d609354035ab7a901490e14ffc438a752a08055824e95b",
+          "sourceText": "For general anxiety that extends beyond travel, box breathing provides quick relief",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[3].teaser": {
+          "sourceHash": "93dfd0bbb3ef03914315829859e9c7daf259c776e554d12a75f0322d1550e0e8",
+          "sourceText": "Jet-lagged? Use 4-7-8 breathing to fall asleep faster in new time zones",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "9ef57be3e4f2385e68aa87bb0b1e43383a0cbcf72d3c06a5458a8fa7c8bae02b",
+          "sourceText": "Why Coherent Breathing Works for Travel",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "8861bb56fbb80e3a8ff83c33d785232a5ad02af03c018087a32c955902e51da3",
+          "sourceText": "Heart rate variability (HRV) measures your nervous system's flexibility. Low HRV = stuck in stress mode. High HRV = resilient and adaptable. Coherent breathing maximizes HRV by syncing your breath to your body's natural resonance frequency (~0.1 Hz). This elevated HRV persists for 1-4 hours after practice, providing sustained calm throughout your journey.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "a110223b2a49c8f8ef352b9445feecac62a39decee8cf40f4c60ae935c0441f9",
+          "sourceText": "Sustained HRV Optimization",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "7f15165b7cea5d268b66395c5d49cf459c1b4b318ed3dc959f5d65e4e607e3ba",
+          "sourceText": "Motion sickness is partly caused by autonomic nervous system dysregulation. Studies show that slow, rhythmic breathing reduces motion sickness symptoms by 50% or more. The steady rhythm of coherent breathing also provides a stable internal focus, helping your brain reconcile the conflicting signals that cause nausea.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "b312a03f0181322800b39ba3ecc1f5c17b481e4d3a5100a738c806e2ec2b28c2",
+          "sourceText": "Motion Sickness Prevention",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "a6f88c046c5e24bd599f23283a5eaa61989fc669975e311a70afe70b111fc605",
+          "sourceText": "Anxiety hijacks your prefrontal cortex, the rational part of your brain. You know the plane is safe, but you can't 'think' your way out of panic. Coherent breathing increases blood flow to the prefrontal cortex and shifts your brain into alpha wave states, restoring rational thought and reducing catastrophic thinking.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "9de3a046e2f527a88a17860490c3aa11451501fb081ca5720ae34ee7bbe2f439",
+          "sourceText": "Prefrontal Cortex Engagement",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "9f5ebc29344b6d195b2ef2a4e1a9d84b4882578319bf675be9f2c57dd7fc9e38",
+          "sourceText": "The vagus nerve is your 'calm-down' nerve. People with high vagal tone recover faster from stress. Regular coherent breathing practice strengthens vagal tone over time, meaning travel becomes progressively less stressful. Even one session before a flight provides immediate benefit.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "8008669a32679ad1dd409fa6077661c8f34142240cbb1698d0cfa111c84792d9",
+          "sourceText": "Vagal Tone Strengthening",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "48eba4467ee6ea9a7d5a1c8e5b00dc2f1750d78644a8c0e4884b321ddda832c1",
+          "sourceText": "Unlike quick-fix techniques that wear off in minutes, coherent breathing creates a physiological state of calm that can last 2-4 hours after just 5-10 minutes of practice. By breathing at your body's resonance frequency (about 5 breaths per minute), you optimize heart rate variability and balance your autonomic nervous system, the key to sustained stress resilience.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "9c36ccf1f7e07072e32f8aea8f3f656e106f006a4b6c6262ec58fa8320f90281",
+          "sourceText": "Coherent Breathing: Hours of Sustained Calm",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "ddeae5aeb2881c4ab9b5a8487d27b9ccd8696f15a72bd7acfa429a5e9e56d755",
+          "sourceText": "Travel anxiety isn't one moment of panic. It's hours of low-grade stress punctuated by acute spikes. You need a technique that provides baseline calm (coherent breathing before and during travel) plus an acute rescue tool (physiological sigh for turbulence or sudden panic). Coherent breathing is your foundation; the sigh is your emergency button.",
+          "status": "route-catalog-normalized"
+        }
+      }
+    },
+    "fr-fr": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.back-to-holiday-hub": {
+          "sourceHash": "c1e300ed5fc4efbc2468ac1567e4fb20646b1182825fa3e26de23cb8c7d7f0f7",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "f10268a765bb0ecf0afdfae16a75bb2587e2c730d3f1f1b776a4cafc877308ea",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "2733df13664a5e0b512028b11c6bc898078aa3ccffdfa65ad8e29374ab6a84a9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.holiday-1min-breather": {
+          "sourceHash": "d6a638e0d8f511ecdff5ea5180d83000a3fdc9c3c9710bfefe17cf4b5ec27cf6",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.holiday-2min-calm-down": {
+          "sourceHash": "16b5409e983d1dcac9227f8d19a4188410d08c5d55da1827bda4e6d3b7362c85",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.holiday-30s-reset": {
+          "sourceHash": "eba7fc02f58a8508a07a7a6284155e81335089b04396b8d6b56d525d3ec91774",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.holiday-ready-sessions": {
+          "sourceHash": "265ebf22957a0afa4262caee5a09241bad88fe078493ff72efc3142195f2cbc3",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "f607a43ced7c5ce11c681d395d966d0d1a214221d59fcba2227a52b39e36f0a9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.related-holiday-title": {
+          "sourceHash": "6e6700ebb79acdc6c454084c36419a96e782fd0a47695a71703340fbecade8f8",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.related-panic-title": {
+          "sourceHash": "60b19b4a8b0ebd154f5fe7b84fcb735a5d21fc617898a56d2250c637f22338e7",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-coherent-app": {
+          "sourceHash": "010fb498f61fb71ff823061853b1087f16d25ddccd8f102487e0542c1070e24a",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "9293b7ad06b204b27d375d5190243a182d7a9b6f405ea5cb6b00c22822c48cd2",
+          "sourceText": "If you have severe flight anxiety, claustrophobia, or panic disorder that significantly impacts your ability to travel, please consult a mental health professional. Breathing techniques are a helpful tool but may not be sufficient for clinical anxiety disorders. Cognitive-behavioral therapy (CBT) and, in some cases, medication can be very effective for travel anxiety.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "bb7535508f4fcf07b8761b89619fcdad0505ec00c1811477a195efc73b681ed3",
+          "sourceText": "You can, but turbulence may break your rhythm. If turbulence causes acute panic, switch to the physiological sigh (double inhale + long exhale). It's faster-acting for acute stress. Once the turbulence passes, return to coherent breathing. Many people find that continuing to breathe slowly during mild turbulence actually helps, because it gives them something to focus on besides the movement.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "c65a77709b9038d9bd39eff768d94638123a3509bd218a16128d71def5d3d68f",
+          "sourceText": "Can I do this during turbulence, or will it make things worse?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "5f3c93affa4193222c19ace26a8489544035d279605f71cb223f403708628253",
+          "sourceText": "This is common and usually means you're trying to breathe too deeply. With coherent breathing, you don't need to take giant breaths, normal-sized breaths at a slow pace are enough. Start with a faster rhythm (4 seconds in, 4 seconds out) and gradually slow down as you get comfortable. If you still feel short of breath, check that you're not holding tension in your chest or throat. The breath should feel easy, not strained.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "78357b32ffe496010a7b21634156489dfa172c1fa1277b2cafe6bd7490bac4bd",
+          "sourceText": "I can't breathe slowly. It makes me feel like I'm suffocating.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "89f2adc62acebda5f8c8e8ef731117d166a96f5707b5be4653bc06d0535511ea",
+          "sourceText": "The rate matters more than the depth. Random deep breaths can actually worsen anxiety by disrupting your CO₂ balance. Coherent breathing's specific rhythm (about 5 breaths per minute) synchronizes with your body's natural cardiovascular oscillations, creating a state of physiological coherence that sustains calm for hours. It's not about breathing more. It's about breathing at the right frequency.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].question": {
+          "sourceHash": "350dc4a12c2e1d8b375c3a946f17c9655c389e721d5c4a9f82ad86c6371bc0f0",
+          "sourceText": "How is this different from just 'taking deep breaths'?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "895dabaec75d2dffcadf09cef16618762e12350478c9c8088d84d4a03c990f48",
+          "sourceText": "Indirectly, yes. By reducing travel stress and helping you stay calm during flights, you'll arrive less exhausted. For sleep specifically, use 4-7-8 breathing at bedtime in your new time zone. For daytime alertness, coherent breathing can help you feel more centered. But the biggest jet lag factors are light exposure and meal timing, no breathing technique can override your circadian rhythm directly.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "132f28c2a7114c9dc12adf4bf85dd35b1ec039391c2d76278adea1c51aa4e405",
+          "sourceText": "Will this help with jet lag?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "135083cfcb679b4779664e7403a79269703d04f9eb9cd66de80dbf2f18e2de8f",
+          "sourceText": "Use the visual guide, watching the animation is easier than counting in your head. You can also try the 'sigh first, then slow down' approach: do 2-3 physiological sighs to take the edge off acute anxiety, then transition to coherent breathing for sustained calm. If you're extremely anxious, even partial success is helpful. Breathing at 8 breaths/minute is still better than panicked hyperventilation.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[4].question": {
+          "sourceHash": "ef9afb01643f640943846373143f38a3336f902e0b5aa50f8314cfa38c9cd39e",
+          "sourceText": "What if I'm too anxious to focus on breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "e7d65180bc994678e53fd78804abc7dda36524d9bcbbb7d21e59cd5869d3d7d8",
+          "sourceText": "Ear pain is caused by pressure differences, not anxiety, so breathing won't directly help. But if anxiety makes you clench your jaw and stiffen your neck (which it often does), relaxing through breathwork can make the pressure equalization easier. For ear pressure specifically: yawn, swallow, chew gum, or do the Valsalva maneuver (pinch nose, close mouth, gently blow). Some people find that coherent breathing during descent reduces ear discomfort because they're more relaxed.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[5].question": {
+          "sourceHash": "7a50865a18fdd90a4f025b04b48e749147e0fe76f24f6fc6ef759b3155a06a62",
+          "sourceText": "My ears hurt when flying. Does this help with that?",
+          "status": "repo-reviewed-manual"
+        },
+        "hero.intro": {
+          "sourceHash": "6ffad33c26ba63870fbfc46813ad371c1e1f71bad6c140b4e76c0079346f4d29",
+          "sourceText": "Your heart races as the plane accelerates. The crowds at the airport feel suffocating. Every delay triggers catastrophic thinking. Travel anxiety isn't irrational. It's your nervous system responding to genuine loss of control. Coherent breathing creates a sustained calm that lasts for hours, getting you through the entire journey.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "d1edecf31d787d38581e6618cec2b0498c410153377e368460ad6b0c90ec1890",
+          "sourceText": "Stay calm through flights, delays, and crowds with coherent breathing",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "e5c60420f1dc4545b5ab361b44ed15afd6515b07967f0d0410b9639fcf5f4887",
+          "sourceText": "Breathing Exercises for Travel Anxiety",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "618f451f5386d9255388a38405e7a7e612334d8514aacbf89551b891c2b5af1d",
+          "sourceText": "Don't wait until you're anxious. Practice coherent breathing for 5-10 minutes daily in the week before your trip. This builds your HRV baseline and makes the technique automatic.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "caf5f0222038da9b16c6dbcfbcde957f63c7c1cee9f9d7408ca36dd6694c2c0b",
+          "sourceText": "Practice before travel day",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "abe7a6e3cb05be8a6a7ace69db009538504bd28ec0904d5ac845f8a5f9596066",
+          "sourceText": "5-10 minutes daily, starting 1 week before travel",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "a268d67115013e8452db199b704ea736cfe58c89d557c65040d2f404ea8d23d1",
+          "sourceText": "Before leaving for the airport, do 10 minutes of coherent breathing. This creates a calm baseline that will last for several hours. You can do this at home, in an Uber, or at the airport before security.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "d437f9eb3514d9253d4c9027e0e08b1351a83d21005fb6099ea1c4e797afa45a",
+          "sourceText": "Pre-flight session",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "576169d396a02082d700ae0268985e1d7f5e1805b1d42c57582c8435a46aa43c",
+          "sourceText": "10 minutes, 1-2 hours before flight",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "17ab6618a5a29664f86674502bc48442072cc11f162fbb8bf066a17a8aff6bf3",
+          "sourceText": "Once seated on the plane, do another 5-minute session before takeoff. Use the coherent breathing visualizer on your phone (download for offline use). This is when anxiety typically peaks, so don't skip this step.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "5ebc783b51db5d4d8fb7f6633582e9ad4403281eed609cf2f9b3d5b14db4b831",
+          "sourceText": "At your seat",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "b78554ed2f358ef52aa03a55decd7d5a6a991211e9afaea9acee91196708a416",
+          "sourceText": "5 minutes before takeoff",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "a448de27b0f947d7dcb9fc4626ab3bdf7b1ef9c80ba69db7a41c113654f5ae40",
+          "sourceText": "Breathe in slowly through your nose for 5.5-6 seconds. Breathe out slowly through your nose for 5.5-6 seconds. No pauses between inhale and exhale, one continuous flow. Focus on making your breath smooth and gentle.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "237a42af2c3abf50b7d4d1b56ca850640e470e8c8d659dbd2d7854cf55a8c8d5",
+          "sourceText": "The rhythm",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "edf8dfdf6e36d52ad519e63e21415e03681235df7f57aaefeaeb84a51b5f848a",
+          "sourceText": "5.5 seconds in, 5.5 seconds out (5 breaths/minute)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "0f6e4e44b2705f94fd7bca266f2a7aeca95249960f5e189be691293316d2ddb0",
+          "sourceText": "If turbulence triggers acute panic, switch to the physiological sigh: double inhale (big breath + small sniff), long exhale. This provides immediate relief. Then return to coherent breathing once the turbulence passes.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "38e0912d3ca96db2c296c9075f53da620c57ebe0dea6eaed18467eb1750d0a7e",
+          "sourceText": "During turbulence",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "eb5a88cac9bbc83980555fa71bf7c2630e7376edce16b0366dc5c3b4cdbe8d25",
+          "sourceText": "As needed",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "5eea9f944a28bb968f2be6281878f3d4e53d94a23796bd53859a227c56d5b8ef",
+          "sourceText": "Every 1-2 hours, do 2-3 minutes of coherent breathing to maintain your calm state. Set a silent alarm or do it whenever you notice tension building. This prevents the gradual stress accumulation that leads to exhaustion.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "e686f4a14d28d09405790774970ff7c1568fc60089bcf1e90be2dfe53a7fd4c7",
+          "sourceText": "Maintenance during flight",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "a88c9b45d2f72c98e91e7472d98a4c057e5cf88612cbc3bf0617553f64eea16f",
+          "sourceText": "2-3 minutes every 1-2 hours",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "5dd434422d160d85fac15da0cdacffaec8171995a0d782459168f9d720f9fde0",
+          "sourceText": "Download the visualizer for offline use. You'll need it in airplane mode",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "a03129206932e0e577635760da2ff7c5292a12916dd68a4c7a1f04f64a37956d",
+          "sourceText": "Noise-canceling headphones help block the ambient engine noise that triggers stress",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "b1e6791bfb27d1e0ddf5b553842e9ab91d6a3c04e6a5a53fe1fa598c3f864776",
+          "sourceText": "Aisle seats provide more perceived space and easier bathroom access (reduces claustrophobia)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "a9d24c44baeac646b757e713a41b46013d730a210053263c58087a8b10f64aa8",
+          "sourceText": "Avoid caffeine and alcohol before/during flights, both worsen anxiety",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "d29e9f6b5b66b62b97042efc574bfba45e666242ec2137dce99002e388d919e6",
+          "sourceText": "Cold water on your wrists or face can enhance the calming effect (activates dive reflex)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[5]": {
+          "sourceHash": "0d83b58f66e2e6a7ea818600bc31fcd783f7490883c467420158e937e0486671",
+          "sourceText": "Tell flight attendants you're an anxious flyer. They're trained to help and will check on you",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "0d9fbf0d1c5167ca832154901105d5846cb45e7a0300843ad8c5b3c0992754ac",
+          "sourceText": "Flight anxiety? Panic in crowds? Coherent breathing keeps you calm for hours—through takeoff, turbulence, delays, and crowded airports. Stanford research. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "29effa45141b3a0541e4f079409afef6ef6f84365a586a9d340a5e1a8911a95f",
+          "sourceText": "The breathing technique that keeps you calm through flights, delays, and crowds. Works for hours, not minutes. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "8e7957eea6c9ceea0c326302bbd56c69720c34447f3f5f1d48d21b415ba82a06",
+          "sourceText": "Breathing Exercises for Travel Anxiety — Stay Calm for Hours",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "e0e983d315eb7963eea5220e4c33705701ed47a6c97f2ba9b9289dcea02067c8",
+          "sourceText": "Breathing Exercises for Travel Anxiety — Calm Flights & Crowds | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "0a6c292fa9f8986011d593892afdbaf12d2313b56a53cc06d23633d838cfee7a",
+          "sourceText": "Stay calm through flights, turbulence, delays, and crowds. Coherent breathing works for hours. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "e0e983d315eb7963eea5220e4c33705701ed47a6c97f2ba9b9289dcea02067c8",
+          "sourceText": "Breathing Exercises for Travel Anxiety — Calm Flights & Crowds",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "0f07721574ab8bf37e5955e261145c9d03188a8caf4c31eb3f922b765983fb46",
+          "sourceText": "Travel strips away your sense of control. You can't leave when you want. You're crammed into small spaces with strangers. Delays and cancellations are unpredictable. Your nervous system interprets this lack of control as danger, triggering the same fight-or-flight response as actual threats. Flying adds extra triggers: turbulence feels like falling, cabin pressure changes affect your inner ear, and you're trapped in a metal tube at 35,000 feet.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "300ed46750b474e236987f166a5fe92e3d227f352d39fdff87326dfccb7933f8",
+          "sourceText": "Why Travel Triggers Your Nervous System",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "711c334f460aed2e9cb3f3c13c1e93200247b6230c7c5f3ad34ddae2dcc4edcb",
+          "sourceText": "Racing heart during takeoff and landing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "ceaa8141c80fc06a1628d6efeb3716e5fa66a79565e513e1fd704b965b8ce305",
+          "sourceText": "Panic during turbulence or unexpected movements",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "5c1900623ce1c455926f627a67429a36abb1febfe8ab2718e6a79a1418adbdc9",
+          "sourceText": "Claustrophobic feelings in crowded spaces",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "0e5c22164a3cde6b62b386de206c7aa6e061be692a574e733fadedc72dba03bd",
+          "sourceText": "Hypervigilance, scanning for threats constantly",
+          "status": "route-catalog-normalized"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "0808c610ae51ec4fd113c0e8390b371cd87f62bec1b649590f20133f9d678c73",
+          "sourceText": "Catastrophic thinking ('What if the plane crashes?')",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "b09c0c8c2a0cbcede97ceeca2421cd15dd4330aa965174ff6a6b90c71491051d",
+          "sourceText": "Physical symptoms: sweating, nausea, trembling",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "548fe548e85e8944ae8ba13541da6133a59b5db70cd601ce55d1cffd2d557e2a",
+          "sourceText": "Avoidance behaviors, turning down trips you'd enjoy",
+          "status": "route-catalog-normalized"
+        },
+        "problem.symptoms[7]": {
+          "sourceHash": "cb449f0d1ebad33e48030551f8eedfdb2224e6f83b6889715fb85cd7279a3266",
+          "sourceText": "Exhaustion after travel, even short trips",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "13be24af57d3448474dc8cc64f7efd615d7f2763cd46c9260ca2112e1bd8fa16",
+          "sourceText": "Research on HRV biofeedback (coherent breathing at resonance frequency) for anxiety reduction, showing significant improvements in physiological and psychological measures.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "a5cc29aeee946aa7815fc232588d8f834cdece25bc18eda8daa32565e93551ad",
+          "sourceText": "Heart Rate Variability Biofeedback for Flight Anxiety",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "69700c59198dd9ab74907333d73097c78e359fa6b3ae7a427ddcfd398330ad01",
+          "sourceText": "Study demonstrating the relationship between slow breathing, respiratory sinus arrhythmia, and anxiety reduction.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "9fd60eab1d527d54ec84419b26431b671e81bd43e1117bc1c05adf9bf0e9ac17",
+          "sourceText": "Respiratory sinus arrhythmia as a function of state anxiety",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "0e0690c4c23c7d923601adc61c60ff65199163a8c8bd994ad0e2edad8dc64019",
+          "sourceText": "Research showing that controlled slow breathing reduces motion sickness symptoms by 50% or more.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "4f6a1ce5dc2294690946226f640ba1d098db87c68ee2579b8f863face4f4ca15",
+          "sourceText": "Slow Breathing and Motion Sickness",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "4c54bad19efdfc6b49381389f7643edf43c4e2cc6e2fd452cb6fe528267c15b3",
+          "sourceText": "Review of evidence-based treatments for flight anxiety, including breathing techniques as a component of effective interventions.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "5065899409f12d14c9422efa6f049683632eb2de8ba08ae406bab0bed0efa9d7",
+          "sourceText": "Fear of flying: psychological treatment approaches",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "f661c0f9c08ea42d86e64d35e1a7d9f19ffef1f48e79f5b5bc90a110d36c1f8f",
+          "sourceText": "Practice with the full coherent breathing visualizer, download for offline use",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "b288191267cff6e8fca325ee7954d9555d1f517d0f45ef611babd39d0c803d99",
+          "sourceText": "Dreading family gatherings? The physiological sigh works in 30 seconds for acute stress",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "69f6a7dbe5afb2044d0a194e20d9cd4a9daa864679b0b09c7148d1fdbba07ae8",
+          "sourceText": "If travel triggers full panic attacks, learn the physiological sigh for immediate relief",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "cb07c65cd22e624133d609354035ab7a901490e14ffc438a752a08055824e95b",
+          "sourceText": "For general anxiety that extends beyond travel, box breathing provides quick relief",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[3].teaser": {
+          "sourceHash": "93dfd0bbb3ef03914315829859e9c7daf259c776e554d12a75f0322d1550e0e8",
+          "sourceText": "Jet-lagged? Use 4-7-8 breathing to fall asleep faster in new time zones",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "9ef57be3e4f2385e68aa87bb0b1e43383a0cbcf72d3c06a5458a8fa7c8bae02b",
+          "sourceText": "Why Coherent Breathing Works for Travel",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "8861bb56fbb80e3a8ff83c33d785232a5ad02af03c018087a32c955902e51da3",
+          "sourceText": "Heart rate variability (HRV) measures your nervous system's flexibility. Low HRV = stuck in stress mode. High HRV = resilient and adaptable. Coherent breathing maximizes HRV by syncing your breath to your body's natural resonance frequency (~0.1 Hz). This elevated HRV persists for 1-4 hours after practice, providing sustained calm throughout your journey.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "a110223b2a49c8f8ef352b9445feecac62a39decee8cf40f4c60ae935c0441f9",
+          "sourceText": "Sustained HRV Optimization",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "7f15165b7cea5d268b66395c5d49cf459c1b4b318ed3dc959f5d65e4e607e3ba",
+          "sourceText": "Motion sickness is partly caused by autonomic nervous system dysregulation. Studies show that slow, rhythmic breathing reduces motion sickness symptoms by 50% or more. The steady rhythm of coherent breathing also provides a stable internal focus, helping your brain reconcile the conflicting signals that cause nausea.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "b312a03f0181322800b39ba3ecc1f5c17b481e4d3a5100a738c806e2ec2b28c2",
+          "sourceText": "Motion Sickness Prevention",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "a6f88c046c5e24bd599f23283a5eaa61989fc669975e311a70afe70b111fc605",
+          "sourceText": "Anxiety hijacks your prefrontal cortex, the rational part of your brain. You know the plane is safe, but you can't 'think' your way out of panic. Coherent breathing increases blood flow to the prefrontal cortex and shifts your brain into alpha wave states, restoring rational thought and reducing catastrophic thinking.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "9de3a046e2f527a88a17860490c3aa11451501fb081ca5720ae34ee7bbe2f439",
+          "sourceText": "Prefrontal Cortex Engagement",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "9f5ebc29344b6d195b2ef2a4e1a9d84b4882578319bf675be9f2c57dd7fc9e38",
+          "sourceText": "The vagus nerve is your 'calm-down' nerve. People with high vagal tone recover faster from stress. Regular coherent breathing practice strengthens vagal tone over time, meaning travel becomes progressively less stressful. Even one session before a flight provides immediate benefit.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "8008669a32679ad1dd409fa6077661c8f34142240cbb1698d0cfa111c84792d9",
+          "sourceText": "Vagal Tone Strengthening",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "48eba4467ee6ea9a7d5a1c8e5b00dc2f1750d78644a8c0e4884b321ddda832c1",
+          "sourceText": "Unlike quick-fix techniques that wear off in minutes, coherent breathing creates a physiological state of calm that can last 2-4 hours after just 5-10 minutes of practice. By breathing at your body's resonance frequency (about 5 breaths per minute), you optimize heart rate variability and balance your autonomic nervous system, the key to sustained stress resilience.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "9c36ccf1f7e07072e32f8aea8f3f656e106f006a4b6c6262ec58fa8320f90281",
+          "sourceText": "Coherent Breathing: Hours of Sustained Calm",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "ddeae5aeb2881c4ab9b5a8487d27b9ccd8696f15a72bd7acfa429a5e9e56d755",
+          "sourceText": "Travel anxiety isn't one moment of panic. It's hours of low-grade stress punctuated by acute spikes. You need a technique that provides baseline calm (coherent breathing before and during travel) plus an acute rescue tool (physiological sigh for turbulence or sudden panic). Coherent breathing is your foundation; the sigh is your emergency button.",
+          "status": "route-catalog-normalized"
+        }
+      }
+    },
+    "ja-jp": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.back-to-holiday-hub": {
+          "sourceHash": "c1e300ed5fc4efbc2468ac1567e4fb20646b1182825fa3e26de23cb8c7d7f0f7",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "f10268a765bb0ecf0afdfae16a75bb2587e2c730d3f1f1b776a4cafc877308ea",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "2733df13664a5e0b512028b11c6bc898078aa3ccffdfa65ad8e29374ab6a84a9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.holiday-1min-breather": {
+          "sourceHash": "d6a638e0d8f511ecdff5ea5180d83000a3fdc9c3c9710bfefe17cf4b5ec27cf6",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.holiday-2min-calm-down": {
+          "sourceHash": "16b5409e983d1dcac9227f8d19a4188410d08c5d55da1827bda4e6d3b7362c85",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.holiday-30s-reset": {
+          "sourceHash": "eba7fc02f58a8508a07a7a6284155e81335089b04396b8d6b56d525d3ec91774",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.holiday-ready-sessions": {
+          "sourceHash": "265ebf22957a0afa4262caee5a09241bad88fe078493ff72efc3142195f2cbc3",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "f607a43ced7c5ce11c681d395d966d0d1a214221d59fcba2227a52b39e36f0a9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.related-holiday-title": {
+          "sourceHash": "6e6700ebb79acdc6c454084c36419a96e782fd0a47695a71703340fbecade8f8",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.related-panic-title": {
+          "sourceHash": "60b19b4a8b0ebd154f5fe7b84fcb735a5d21fc617898a56d2250c637f22338e7",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-coherent-app": {
+          "sourceHash": "010fb498f61fb71ff823061853b1087f16d25ddccd8f102487e0542c1070e24a",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "9293b7ad06b204b27d375d5190243a182d7a9b6f405ea5cb6b00c22822c48cd2",
+          "sourceText": "If you have severe flight anxiety, claustrophobia, or panic disorder that significantly impacts your ability to travel, please consult a mental health professional. Breathing techniques are a helpful tool but may not be sufficient for clinical anxiety disorders. Cognitive-behavioral therapy (CBT) and, in some cases, medication can be very effective for travel anxiety.",
+          "status": "repo-reviewed-replacement"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "bb7535508f4fcf07b8761b89619fcdad0505ec00c1811477a195efc73b681ed3",
+          "sourceText": "You can, but turbulence may break your rhythm. If turbulence causes acute panic, switch to the physiological sigh (double inhale + long exhale). It's faster-acting for acute stress. Once the turbulence passes, return to coherent breathing. Many people find that continuing to breathe slowly during mild turbulence actually helps, because it gives them something to focus on besides the movement.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "c65a77709b9038d9bd39eff768d94638123a3509bd218a16128d71def5d3d68f",
+          "sourceText": "Can I do this during turbulence, or will it make things worse?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "5f3c93affa4193222c19ace26a8489544035d279605f71cb223f403708628253",
+          "sourceText": "This is common and usually means you're trying to breathe too deeply. With coherent breathing, you don't need to take giant breaths, normal-sized breaths at a slow pace are enough. Start with a faster rhythm (4 seconds in, 4 seconds out) and gradually slow down as you get comfortable. If you still feel short of breath, check that you're not holding tension in your chest or throat. The breath should feel easy, not strained.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "78357b32ffe496010a7b21634156489dfa172c1fa1277b2cafe6bd7490bac4bd",
+          "sourceText": "I can't breathe slowly. It makes me feel like I'm suffocating.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "89f2adc62acebda5f8c8e8ef731117d166a96f5707b5be4653bc06d0535511ea",
+          "sourceText": "The rate matters more than the depth. Random deep breaths can actually worsen anxiety by disrupting your CO₂ balance. Coherent breathing's specific rhythm (about 5 breaths per minute) synchronizes with your body's natural cardiovascular oscillations, creating a state of physiological coherence that sustains calm for hours. It's not about breathing more. It's about breathing at the right frequency.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].question": {
+          "sourceHash": "350dc4a12c2e1d8b375c3a946f17c9655c389e721d5c4a9f82ad86c6371bc0f0",
+          "sourceText": "How is this different from just 'taking deep breaths'?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "895dabaec75d2dffcadf09cef16618762e12350478c9c8088d84d4a03c990f48",
+          "sourceText": "Indirectly, yes. By reducing travel stress and helping you stay calm during flights, you'll arrive less exhausted. For sleep specifically, use 4-7-8 breathing at bedtime in your new time zone. For daytime alertness, coherent breathing can help you feel more centered. But the biggest jet lag factors are light exposure and meal timing, no breathing technique can override your circadian rhythm directly.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "132f28c2a7114c9dc12adf4bf85dd35b1ec039391c2d76278adea1c51aa4e405",
+          "sourceText": "Will this help with jet lag?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "135083cfcb679b4779664e7403a79269703d04f9eb9cd66de80dbf2f18e2de8f",
+          "sourceText": "Use the visual guide, watching the animation is easier than counting in your head. You can also try the 'sigh first, then slow down' approach: do 2-3 physiological sighs to take the edge off acute anxiety, then transition to coherent breathing for sustained calm. If you're extremely anxious, even partial success is helpful. Breathing at 8 breaths/minute is still better than panicked hyperventilation.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[4].question": {
+          "sourceHash": "ef9afb01643f640943846373143f38a3336f902e0b5aa50f8314cfa38c9cd39e",
+          "sourceText": "What if I'm too anxious to focus on breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "e7d65180bc994678e53fd78804abc7dda36524d9bcbbb7d21e59cd5869d3d7d8",
+          "sourceText": "Ear pain is caused by pressure differences, not anxiety, so breathing won't directly help. But if anxiety makes you clench your jaw and stiffen your neck (which it often does), relaxing through breathwork can make the pressure equalization easier. For ear pressure specifically: yawn, swallow, chew gum, or do the Valsalva maneuver (pinch nose, close mouth, gently blow). Some people find that coherent breathing during descent reduces ear discomfort because they're more relaxed.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[5].question": {
+          "sourceHash": "7a50865a18fdd90a4f025b04b48e749147e0fe76f24f6fc6ef759b3155a06a62",
+          "sourceText": "My ears hurt when flying. Does this help with that?",
+          "status": "repo-reviewed-manual"
+        },
+        "hero.intro": {
+          "sourceHash": "6ffad33c26ba63870fbfc46813ad371c1e1f71bad6c140b4e76c0079346f4d29",
+          "sourceText": "Your heart races as the plane accelerates. The crowds at the airport feel suffocating. Every delay triggers catastrophic thinking. Travel anxiety isn't irrational. It's your nervous system responding to genuine loss of control. Coherent breathing creates a sustained calm that lasts for hours, getting you through the entire journey.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "d1edecf31d787d38581e6618cec2b0498c410153377e368460ad6b0c90ec1890",
+          "sourceText": "Stay calm through flights, delays, and crowds with coherent breathing",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "e5c60420f1dc4545b5ab361b44ed15afd6515b07967f0d0410b9639fcf5f4887",
+          "sourceText": "Breathing Exercises for Travel Anxiety",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "618f451f5386d9255388a38405e7a7e612334d8514aacbf89551b891c2b5af1d",
+          "sourceText": "Don't wait until you're anxious. Practice coherent breathing for 5-10 minutes daily in the week before your trip. This builds your HRV baseline and makes the technique automatic.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "caf5f0222038da9b16c6dbcfbcde957f63c7c1cee9f9d7408ca36dd6694c2c0b",
+          "sourceText": "Practice before travel day",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "abe7a6e3cb05be8a6a7ace69db009538504bd28ec0904d5ac845f8a5f9596066",
+          "sourceText": "5-10 minutes daily, starting 1 week before travel",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "a268d67115013e8452db199b704ea736cfe58c89d557c65040d2f404ea8d23d1",
+          "sourceText": "Before leaving for the airport, do 10 minutes of coherent breathing. This creates a calm baseline that will last for several hours. You can do this at home, in an Uber, or at the airport before security.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "d437f9eb3514d9253d4c9027e0e08b1351a83d21005fb6099ea1c4e797afa45a",
+          "sourceText": "Pre-flight session",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "576169d396a02082d700ae0268985e1d7f5e1805b1d42c57582c8435a46aa43c",
+          "sourceText": "10 minutes, 1-2 hours before flight",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "17ab6618a5a29664f86674502bc48442072cc11f162fbb8bf066a17a8aff6bf3",
+          "sourceText": "Once seated on the plane, do another 5-minute session before takeoff. Use the coherent breathing visualizer on your phone (download for offline use). This is when anxiety typically peaks, so don't skip this step.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "5ebc783b51db5d4d8fb7f6633582e9ad4403281eed609cf2f9b3d5b14db4b831",
+          "sourceText": "At your seat",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "b78554ed2f358ef52aa03a55decd7d5a6a991211e9afaea9acee91196708a416",
+          "sourceText": "5 minutes before takeoff",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "a448de27b0f947d7dcb9fc4626ab3bdf7b1ef9c80ba69db7a41c113654f5ae40",
+          "sourceText": "Breathe in slowly through your nose for 5.5-6 seconds. Breathe out slowly through your nose for 5.5-6 seconds. No pauses between inhale and exhale, one continuous flow. Focus on making your breath smooth and gentle.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "237a42af2c3abf50b7d4d1b56ca850640e470e8c8d659dbd2d7854cf55a8c8d5",
+          "sourceText": "The rhythm",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "edf8dfdf6e36d52ad519e63e21415e03681235df7f57aaefeaeb84a51b5f848a",
+          "sourceText": "5.5 seconds in, 5.5 seconds out (5 breaths/minute)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "0f6e4e44b2705f94fd7bca266f2a7aeca95249960f5e189be691293316d2ddb0",
+          "sourceText": "If turbulence triggers acute panic, switch to the physiological sigh: double inhale (big breath + small sniff), long exhale. This provides immediate relief. Then return to coherent breathing once the turbulence passes.",
+          "status": "repo-reviewed-replacement"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "38e0912d3ca96db2c296c9075f53da620c57ebe0dea6eaed18467eb1750d0a7e",
+          "sourceText": "During turbulence",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "eb5a88cac9bbc83980555fa71bf7c2630e7376edce16b0366dc5c3b4cdbe8d25",
+          "sourceText": "As needed",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "5eea9f944a28bb968f2be6281878f3d4e53d94a23796bd53859a227c56d5b8ef",
+          "sourceText": "Every 1-2 hours, do 2-3 minutes of coherent breathing to maintain your calm state. Set a silent alarm or do it whenever you notice tension building. This prevents the gradual stress accumulation that leads to exhaustion.",
+          "status": "repo-reviewed-replacement"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "e686f4a14d28d09405790774970ff7c1568fc60089bcf1e90be2dfe53a7fd4c7",
+          "sourceText": "Maintenance during flight",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "a88c9b45d2f72c98e91e7472d98a4c057e5cf88612cbc3bf0617553f64eea16f",
+          "sourceText": "2-3 minutes every 1-2 hours",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "5dd434422d160d85fac15da0cdacffaec8171995a0d782459168f9d720f9fde0",
+          "sourceText": "Download the visualizer for offline use. You'll need it in airplane mode",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "a03129206932e0e577635760da2ff7c5292a12916dd68a4c7a1f04f64a37956d",
+          "sourceText": "Noise-canceling headphones help block the ambient engine noise that triggers stress",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "b1e6791bfb27d1e0ddf5b553842e9ab91d6a3c04e6a5a53fe1fa598c3f864776",
+          "sourceText": "Aisle seats provide more perceived space and easier bathroom access (reduces claustrophobia)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "a9d24c44baeac646b757e713a41b46013d730a210053263c58087a8b10f64aa8",
+          "sourceText": "Avoid caffeine and alcohol before/during flights, both worsen anxiety",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "d29e9f6b5b66b62b97042efc574bfba45e666242ec2137dce99002e388d919e6",
+          "sourceText": "Cold water on your wrists or face can enhance the calming effect (activates dive reflex)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[5]": {
+          "sourceHash": "0d83b58f66e2e6a7ea818600bc31fcd783f7490883c467420158e937e0486671",
+          "sourceText": "Tell flight attendants you're an anxious flyer. They're trained to help and will check on you",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "0d9fbf0d1c5167ca832154901105d5846cb45e7a0300843ad8c5b3c0992754ac",
+          "sourceText": "Flight anxiety? Panic in crowds? Coherent breathing keeps you calm for hours—through takeoff, turbulence, delays, and crowded airports. Stanford research. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "29effa45141b3a0541e4f079409afef6ef6f84365a586a9d340a5e1a8911a95f",
+          "sourceText": "The breathing technique that keeps you calm through flights, delays, and crowds. Works for hours, not minutes. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "8e7957eea6c9ceea0c326302bbd56c69720c34447f3f5f1d48d21b415ba82a06",
+          "sourceText": "Breathing Exercises for Travel Anxiety — Stay Calm for Hours",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "e0e983d315eb7963eea5220e4c33705701ed47a6c97f2ba9b9289dcea02067c8",
+          "sourceText": "Breathing Exercises for Travel Anxiety — Calm Flights & Crowds | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "0a6c292fa9f8986011d593892afdbaf12d2313b56a53cc06d23633d838cfee7a",
+          "sourceText": "Stay calm through flights, turbulence, delays, and crowds. Coherent breathing works for hours. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "e0e983d315eb7963eea5220e4c33705701ed47a6c97f2ba9b9289dcea02067c8",
+          "sourceText": "Breathing Exercises for Travel Anxiety — Calm Flights & Crowds",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "0f07721574ab8bf37e5955e261145c9d03188a8caf4c31eb3f922b765983fb46",
+          "sourceText": "Travel strips away your sense of control. You can't leave when you want. You're crammed into small spaces with strangers. Delays and cancellations are unpredictable. Your nervous system interprets this lack of control as danger, triggering the same fight-or-flight response as actual threats. Flying adds extra triggers: turbulence feels like falling, cabin pressure changes affect your inner ear, and you're trapped in a metal tube at 35,000 feet.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "300ed46750b474e236987f166a5fe92e3d227f352d39fdff87326dfccb7933f8",
+          "sourceText": "Why Travel Triggers Your Nervous System",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "711c334f460aed2e9cb3f3c13c1e93200247b6230c7c5f3ad34ddae2dcc4edcb",
+          "sourceText": "Racing heart during takeoff and landing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "ceaa8141c80fc06a1628d6efeb3716e5fa66a79565e513e1fd704b965b8ce305",
+          "sourceText": "Panic during turbulence or unexpected movements",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "5c1900623ce1c455926f627a67429a36abb1febfe8ab2718e6a79a1418adbdc9",
+          "sourceText": "Claustrophobic feelings in crowded spaces",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "0e5c22164a3cde6b62b386de206c7aa6e061be692a574e733fadedc72dba03bd",
+          "sourceText": "Hypervigilance, scanning for threats constantly",
+          "status": "route-catalog-normalized"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "0808c610ae51ec4fd113c0e8390b371cd87f62bec1b649590f20133f9d678c73",
+          "sourceText": "Catastrophic thinking ('What if the plane crashes?')",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "b09c0c8c2a0cbcede97ceeca2421cd15dd4330aa965174ff6a6b90c71491051d",
+          "sourceText": "Physical symptoms: sweating, nausea, trembling",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "548fe548e85e8944ae8ba13541da6133a59b5db70cd601ce55d1cffd2d557e2a",
+          "sourceText": "Avoidance behaviors, turning down trips you'd enjoy",
+          "status": "route-catalog-normalized"
+        },
+        "problem.symptoms[7]": {
+          "sourceHash": "cb449f0d1ebad33e48030551f8eedfdb2224e6f83b6889715fb85cd7279a3266",
+          "sourceText": "Exhaustion after travel, even short trips",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "13be24af57d3448474dc8cc64f7efd615d7f2763cd46c9260ca2112e1bd8fa16",
+          "sourceText": "Research on HRV biofeedback (coherent breathing at resonance frequency) for anxiety reduction, showing significant improvements in physiological and psychological measures.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "a5cc29aeee946aa7815fc232588d8f834cdece25bc18eda8daa32565e93551ad",
+          "sourceText": "Heart Rate Variability Biofeedback for Flight Anxiety",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "69700c59198dd9ab74907333d73097c78e359fa6b3ae7a427ddcfd398330ad01",
+          "sourceText": "Study demonstrating the relationship between slow breathing, respiratory sinus arrhythmia, and anxiety reduction.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "9fd60eab1d527d54ec84419b26431b671e81bd43e1117bc1c05adf9bf0e9ac17",
+          "sourceText": "Respiratory sinus arrhythmia as a function of state anxiety",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "0e0690c4c23c7d923601adc61c60ff65199163a8c8bd994ad0e2edad8dc64019",
+          "sourceText": "Research showing that controlled slow breathing reduces motion sickness symptoms by 50% or more.",
+          "status": "repo-reviewed-replacement"
+        },
+        "references[2].title": {
+          "sourceHash": "4f6a1ce5dc2294690946226f640ba1d098db87c68ee2579b8f863face4f4ca15",
+          "sourceText": "Slow Breathing and Motion Sickness",
+          "status": "repo-reviewed-replacement"
+        },
+        "references[3].summary": {
+          "sourceHash": "4c54bad19efdfc6b49381389f7643edf43c4e2cc6e2fd452cb6fe528267c15b3",
+          "sourceText": "Review of evidence-based treatments for flight anxiety, including breathing techniques as a component of effective interventions.",
+          "status": "repo-reviewed-replacement"
+        },
+        "references[3].title": {
+          "sourceHash": "5065899409f12d14c9422efa6f049683632eb2de8ba08ae406bab0bed0efa9d7",
+          "sourceText": "Fear of flying: psychological treatment approaches",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "f661c0f9c08ea42d86e64d35e1a7d9f19ffef1f48e79f5b5bc90a110d36c1f8f",
+          "sourceText": "Practice with the full coherent breathing visualizer, download for offline use",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "b288191267cff6e8fca325ee7954d9555d1f517d0f45ef611babd39d0c803d99",
+          "sourceText": "Dreading family gatherings? The physiological sigh works in 30 seconds for acute stress",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "69f6a7dbe5afb2044d0a194e20d9cd4a9daa864679b0b09c7148d1fdbba07ae8",
+          "sourceText": "If travel triggers full panic attacks, learn the physiological sigh for immediate relief",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "cb07c65cd22e624133d609354035ab7a901490e14ffc438a752a08055824e95b",
+          "sourceText": "For general anxiety that extends beyond travel, box breathing provides quick relief",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[3].teaser": {
+          "sourceHash": "93dfd0bbb3ef03914315829859e9c7daf259c776e554d12a75f0322d1550e0e8",
+          "sourceText": "Jet-lagged? Use 4-7-8 breathing to fall asleep faster in new time zones",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "9ef57be3e4f2385e68aa87bb0b1e43383a0cbcf72d3c06a5458a8fa7c8bae02b",
+          "sourceText": "Why Coherent Breathing Works for Travel",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "8861bb56fbb80e3a8ff83c33d785232a5ad02af03c018087a32c955902e51da3",
+          "sourceText": "Heart rate variability (HRV) measures your nervous system's flexibility. Low HRV = stuck in stress mode. High HRV = resilient and adaptable. Coherent breathing maximizes HRV by syncing your breath to your body's natural resonance frequency (~0.1 Hz). This elevated HRV persists for 1-4 hours after practice, providing sustained calm throughout your journey.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "a110223b2a49c8f8ef352b9445feecac62a39decee8cf40f4c60ae935c0441f9",
+          "sourceText": "Sustained HRV Optimization",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "7f15165b7cea5d268b66395c5d49cf459c1b4b318ed3dc959f5d65e4e607e3ba",
+          "sourceText": "Motion sickness is partly caused by autonomic nervous system dysregulation. Studies show that slow, rhythmic breathing reduces motion sickness symptoms by 50% or more. The steady rhythm of coherent breathing also provides a stable internal focus, helping your brain reconcile the conflicting signals that cause nausea.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "b312a03f0181322800b39ba3ecc1f5c17b481e4d3a5100a738c806e2ec2b28c2",
+          "sourceText": "Motion Sickness Prevention",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "a6f88c046c5e24bd599f23283a5eaa61989fc669975e311a70afe70b111fc605",
+          "sourceText": "Anxiety hijacks your prefrontal cortex, the rational part of your brain. You know the plane is safe, but you can't 'think' your way out of panic. Coherent breathing increases blood flow to the prefrontal cortex and shifts your brain into alpha wave states, restoring rational thought and reducing catastrophic thinking.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "9de3a046e2f527a88a17860490c3aa11451501fb081ca5720ae34ee7bbe2f439",
+          "sourceText": "Prefrontal Cortex Engagement",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "9f5ebc29344b6d195b2ef2a4e1a9d84b4882578319bf675be9f2c57dd7fc9e38",
+          "sourceText": "The vagus nerve is your 'calm-down' nerve. People with high vagal tone recover faster from stress. Regular coherent breathing practice strengthens vagal tone over time, meaning travel becomes progressively less stressful. Even one session before a flight provides immediate benefit.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "8008669a32679ad1dd409fa6077661c8f34142240cbb1698d0cfa111c84792d9",
+          "sourceText": "Vagal Tone Strengthening",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "48eba4467ee6ea9a7d5a1c8e5b00dc2f1750d78644a8c0e4884b321ddda832c1",
+          "sourceText": "Unlike quick-fix techniques that wear off in minutes, coherent breathing creates a physiological state of calm that can last 2-4 hours after just 5-10 minutes of practice. By breathing at your body's resonance frequency (about 5 breaths per minute), you optimize heart rate variability and balance your autonomic nervous system, the key to sustained stress resilience.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "9c36ccf1f7e07072e32f8aea8f3f656e106f006a4b6c6262ec58fa8320f90281",
+          "sourceText": "Coherent Breathing: Hours of Sustained Calm",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "ddeae5aeb2881c4ab9b5a8487d27b9ccd8696f15a72bd7acfa429a5e9e56d755",
+          "sourceText": "Travel anxiety isn't one moment of panic. It's hours of low-grade stress punctuated by acute spikes. You need a technique that provides baseline calm (coherent breathing before and during travel) plus an acute rescue tool (physiological sigh for turbulence or sudden panic). Coherent breathing is your foundation; the sigh is your emergency button.",
+          "status": "route-catalog-normalized"
+        }
+      }
+    },
+    "pt-br": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.back-to-holiday-hub": {
+          "sourceHash": "c1e300ed5fc4efbc2468ac1567e4fb20646b1182825fa3e26de23cb8c7d7f0f7",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "f10268a765bb0ecf0afdfae16a75bb2587e2c730d3f1f1b776a4cafc877308ea",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "2733df13664a5e0b512028b11c6bc898078aa3ccffdfa65ad8e29374ab6a84a9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.holiday-1min-breather": {
+          "sourceHash": "d6a638e0d8f511ecdff5ea5180d83000a3fdc9c3c9710bfefe17cf4b5ec27cf6",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.holiday-2min-calm-down": {
+          "sourceHash": "16b5409e983d1dcac9227f8d19a4188410d08c5d55da1827bda4e6d3b7362c85",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.holiday-30s-reset": {
+          "sourceHash": "eba7fc02f58a8508a07a7a6284155e81335089b04396b8d6b56d525d3ec91774",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.holiday-ready-sessions": {
+          "sourceHash": "265ebf22957a0afa4262caee5a09241bad88fe078493ff72efc3142195f2cbc3",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "f607a43ced7c5ce11c681d395d966d0d1a214221d59fcba2227a52b39e36f0a9",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-anxiety-title": {
+          "sourceHash": "1e4fc14669e92d6824591fd009d0343b51457e5eea0e09c324e487f4bc0ca9cd",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.related-holiday-title": {
+          "sourceHash": "6e6700ebb79acdc6c454084c36419a96e782fd0a47695a71703340fbecade8f8",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.related-panic-title": {
+          "sourceHash": "60b19b4a8b0ebd154f5fe7b84fcb735a5d21fc617898a56d2250c637f22338e7",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.try-coherent-app": {
+          "sourceHash": "010fb498f61fb71ff823061853b1087f16d25ddccd8f102487e0542c1070e24a",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "disclaimer": {
+          "sourceHash": "9293b7ad06b204b27d375d5190243a182d7a9b6f405ea5cb6b00c22822c48cd2",
+          "sourceText": "If you have severe flight anxiety, claustrophobia, or panic disorder that significantly impacts your ability to travel, please consult a mental health professional. Breathing techniques are a helpful tool but may not be sufficient for clinical anxiety disorders. Cognitive-behavioral therapy (CBT) and, in some cases, medication can be very effective for travel anxiety.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[0].answer": {
+          "sourceHash": "bb7535508f4fcf07b8761b89619fcdad0505ec00c1811477a195efc73b681ed3",
+          "sourceText": "You can, but turbulence may break your rhythm. If turbulence causes acute panic, switch to the physiological sigh (double inhale + long exhale). It's faster-acting for acute stress. Once the turbulence passes, return to coherent breathing. Many people find that continuing to breathe slowly during mild turbulence actually helps, because it gives them something to focus on besides the movement.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[0].question": {
+          "sourceHash": "c65a77709b9038d9bd39eff768d94638123a3509bd218a16128d71def5d3d68f",
+          "sourceText": "Can I do this during turbulence, or will it make things worse?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "5f3c93affa4193222c19ace26a8489544035d279605f71cb223f403708628253",
+          "sourceText": "This is common and usually means you're trying to breathe too deeply. With coherent breathing, you don't need to take giant breaths, normal-sized breaths at a slow pace are enough. Start with a faster rhythm (4 seconds in, 4 seconds out) and gradually slow down as you get comfortable. If you still feel short of breath, check that you're not holding tension in your chest or throat. The breath should feel easy, not strained.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[1].question": {
+          "sourceHash": "78357b32ffe496010a7b21634156489dfa172c1fa1277b2cafe6bd7490bac4bd",
+          "sourceText": "I can't breathe slowly. It makes me feel like I'm suffocating.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "89f2adc62acebda5f8c8e8ef731117d166a96f5707b5be4653bc06d0535511ea",
+          "sourceText": "The rate matters more than the depth. Random deep breaths can actually worsen anxiety by disrupting your CO₂ balance. Coherent breathing's specific rhythm (about 5 breaths per minute) synchronizes with your body's natural cardiovascular oscillations, creating a state of physiological coherence that sustains calm for hours. It's not about breathing more. It's about breathing at the right frequency.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].question": {
+          "sourceHash": "350dc4a12c2e1d8b375c3a946f17c9655c389e721d5c4a9f82ad86c6371bc0f0",
+          "sourceText": "How is this different from just 'taking deep breaths'?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "895dabaec75d2dffcadf09cef16618762e12350478c9c8088d84d4a03c990f48",
+          "sourceText": "Indirectly, yes. By reducing travel stress and helping you stay calm during flights, you'll arrive less exhausted. For sleep specifically, use 4-7-8 breathing at bedtime in your new time zone. For daytime alertness, coherent breathing can help you feel more centered. But the biggest jet lag factors are light exposure and meal timing, no breathing technique can override your circadian rhythm directly.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "132f28c2a7114c9dc12adf4bf85dd35b1ec039391c2d76278adea1c51aa4e405",
+          "sourceText": "Will this help with jet lag?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "135083cfcb679b4779664e7403a79269703d04f9eb9cd66de80dbf2f18e2de8f",
+          "sourceText": "Use the visual guide, watching the animation is easier than counting in your head. You can also try the 'sigh first, then slow down' approach: do 2-3 physiological sighs to take the edge off acute anxiety, then transition to coherent breathing for sustained calm. If you're extremely anxious, even partial success is helpful. Breathing at 8 breaths/minute is still better than panicked hyperventilation.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[4].question": {
+          "sourceHash": "ef9afb01643f640943846373143f38a3336f902e0b5aa50f8314cfa38c9cd39e",
+          "sourceText": "What if I'm too anxious to focus on breathing?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[5].answer": {
+          "sourceHash": "e7d65180bc994678e53fd78804abc7dda36524d9bcbbb7d21e59cd5869d3d7d8",
+          "sourceText": "Ear pain is caused by pressure differences, not anxiety, so breathing won't directly help. But if anxiety makes you clench your jaw and stiffen your neck (which it often does), relaxing through breathwork can make the pressure equalization easier. For ear pressure specifically: yawn, swallow, chew gum, or do the Valsalva maneuver (pinch nose, close mouth, gently blow). Some people find that coherent breathing during descent reduces ear discomfort because they're more relaxed.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[5].question": {
+          "sourceHash": "7a50865a18fdd90a4f025b04b48e749147e0fe76f24f6fc6ef759b3155a06a62",
+          "sourceText": "My ears hurt when flying. Does this help with that?",
+          "status": "repo-reviewed-manual"
+        },
+        "hero.intro": {
+          "sourceHash": "6ffad33c26ba63870fbfc46813ad371c1e1f71bad6c140b4e76c0079346f4d29",
+          "sourceText": "Your heart races as the plane accelerates. The crowds at the airport feel suffocating. Every delay triggers catastrophic thinking. Travel anxiety isn't irrational. It's your nervous system responding to genuine loss of control. Coherent breathing creates a sustained calm that lasts for hours, getting you through the entire journey.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "d1edecf31d787d38581e6618cec2b0498c410153377e368460ad6b0c90ec1890",
+          "sourceText": "Stay calm through flights, delays, and crowds with coherent breathing",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "e5c60420f1dc4545b5ab361b44ed15afd6515b07967f0d0410b9639fcf5f4887",
+          "sourceText": "Breathing Exercises for Travel Anxiety",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "618f451f5386d9255388a38405e7a7e612334d8514aacbf89551b891c2b5af1d",
+          "sourceText": "Don't wait until you're anxious. Practice coherent breathing for 5-10 minutes daily in the week before your trip. This builds your HRV baseline and makes the technique automatic.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "caf5f0222038da9b16c6dbcfbcde957f63c7c1cee9f9d7408ca36dd6694c2c0b",
+          "sourceText": "Practice before travel day",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "abe7a6e3cb05be8a6a7ace69db009538504bd28ec0904d5ac845f8a5f9596066",
+          "sourceText": "5-10 minutes daily, starting 1 week before travel",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "a268d67115013e8452db199b704ea736cfe58c89d557c65040d2f404ea8d23d1",
+          "sourceText": "Before leaving for the airport, do 10 minutes of coherent breathing. This creates a calm baseline that will last for several hours. You can do this at home, in an Uber, or at the airport before security.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "d437f9eb3514d9253d4c9027e0e08b1351a83d21005fb6099ea1c4e797afa45a",
+          "sourceText": "Pre-flight session",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "576169d396a02082d700ae0268985e1d7f5e1805b1d42c57582c8435a46aa43c",
+          "sourceText": "10 minutes, 1-2 hours before flight",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "17ab6618a5a29664f86674502bc48442072cc11f162fbb8bf066a17a8aff6bf3",
+          "sourceText": "Once seated on the plane, do another 5-minute session before takeoff. Use the coherent breathing visualizer on your phone (download for offline use). This is when anxiety typically peaks, so don't skip this step.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "5ebc783b51db5d4d8fb7f6633582e9ad4403281eed609cf2f9b3d5b14db4b831",
+          "sourceText": "At your seat",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "b78554ed2f358ef52aa03a55decd7d5a6a991211e9afaea9acee91196708a416",
+          "sourceText": "5 minutes before takeoff",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "a448de27b0f947d7dcb9fc4626ab3bdf7b1ef9c80ba69db7a41c113654f5ae40",
+          "sourceText": "Breathe in slowly through your nose for 5.5-6 seconds. Breathe out slowly through your nose for 5.5-6 seconds. No pauses between inhale and exhale, one continuous flow. Focus on making your breath smooth and gentle.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "237a42af2c3abf50b7d4d1b56ca850640e470e8c8d659dbd2d7854cf55a8c8d5",
+          "sourceText": "The rhythm",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "edf8dfdf6e36d52ad519e63e21415e03681235df7f57aaefeaeb84a51b5f848a",
+          "sourceText": "5.5 seconds in, 5.5 seconds out (5 breaths/minute)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "0f6e4e44b2705f94fd7bca266f2a7aeca95249960f5e189be691293316d2ddb0",
+          "sourceText": "If turbulence triggers acute panic, switch to the physiological sigh: double inhale (big breath + small sniff), long exhale. This provides immediate relief. Then return to coherent breathing once the turbulence passes.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "38e0912d3ca96db2c296c9075f53da620c57ebe0dea6eaed18467eb1750d0a7e",
+          "sourceText": "During turbulence",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "eb5a88cac9bbc83980555fa71bf7c2630e7376edce16b0366dc5c3b4cdbe8d25",
+          "sourceText": "As needed",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[5].instruction": {
+          "sourceHash": "5eea9f944a28bb968f2be6281878f3d4e53d94a23796bd53859a227c56d5b8ef",
+          "sourceText": "Every 1-2 hours, do 2-3 minutes of coherent breathing to maintain your calm state. Set a silent alarm or do it whenever you notice tension building. This prevents the gradual stress accumulation that leads to exhaustion.",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].name": {
+          "sourceHash": "e686f4a14d28d09405790774970ff7c1568fc60089bcf1e90be2dfe53a7fd4c7",
+          "sourceText": "Maintenance during flight",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[5].timing": {
+          "sourceHash": "a88c9b45d2f72c98e91e7472d98a4c057e5cf88612cbc3bf0617553f64eea16f",
+          "sourceText": "2-3 minutes every 1-2 hours",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "5dd434422d160d85fac15da0cdacffaec8171995a0d782459168f9d720f9fde0",
+          "sourceText": "Download the visualizer for offline use. You'll need it in airplane mode",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "a03129206932e0e577635760da2ff7c5292a12916dd68a4c7a1f04f64a37956d",
+          "sourceText": "Noise-canceling headphones help block the ambient engine noise that triggers stress",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "b1e6791bfb27d1e0ddf5b553842e9ab91d6a3c04e6a5a53fe1fa598c3f864776",
+          "sourceText": "Aisle seats provide more perceived space and easier bathroom access (reduces claustrophobia)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "a9d24c44baeac646b757e713a41b46013d730a210053263c58087a8b10f64aa8",
+          "sourceText": "Avoid caffeine and alcohol before/during flights, both worsen anxiety",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[4]": {
+          "sourceHash": "d29e9f6b5b66b62b97042efc574bfba45e666242ec2137dce99002e388d919e6",
+          "sourceText": "Cold water on your wrists or face can enhance the calming effect (activates dive reflex)",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[5]": {
+          "sourceHash": "0d83b58f66e2e6a7ea818600bc31fcd783f7490883c467420158e937e0486671",
+          "sourceText": "Tell flight attendants you're an anxious flyer. They're trained to help and will check on you",
+          "status": "route-catalog-normalized"
+        },
+        "meta.description": {
+          "sourceHash": "0d9fbf0d1c5167ca832154901105d5846cb45e7a0300843ad8c5b3c0992754ac",
+          "sourceText": "Flight anxiety? Panic in crowds? Coherent breathing keeps you calm for hours—through takeoff, turbulence, delays, and crowded airports. Stanford research. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "29effa45141b3a0541e4f079409afef6ef6f84365a586a9d340a5e1a8911a95f",
+          "sourceText": "The breathing technique that keeps you calm through flights, delays, and crowds. Works for hours, not minutes. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "8e7957eea6c9ceea0c326302bbd56c69720c34447f3f5f1d48d21b415ba82a06",
+          "sourceText": "Breathing Exercises for Travel Anxiety — Stay Calm for Hours",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "e0e983d315eb7963eea5220e4c33705701ed47a6c97f2ba9b9289dcea02067c8",
+          "sourceText": "Breathing Exercises for Travel Anxiety — Calm Flights & Crowds | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "0a6c292fa9f8986011d593892afdbaf12d2313b56a53cc06d23633d838cfee7a",
+          "sourceText": "Stay calm through flights, turbulence, delays, and crowds. Coherent breathing works for hours. Free visualizer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "e0e983d315eb7963eea5220e4c33705701ed47a6c97f2ba9b9289dcea02067c8",
+          "sourceText": "Breathing Exercises for Travel Anxiety — Calm Flights & Crowds",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "0f07721574ab8bf37e5955e261145c9d03188a8caf4c31eb3f922b765983fb46",
+          "sourceText": "Travel strips away your sense of control. You can't leave when you want. You're crammed into small spaces with strangers. Delays and cancellations are unpredictable. Your nervous system interprets this lack of control as danger, triggering the same fight-or-flight response as actual threats. Flying adds extra triggers: turbulence feels like falling, cabin pressure changes affect your inner ear, and you're trapped in a metal tube at 35,000 feet.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "300ed46750b474e236987f166a5fe92e3d227f352d39fdff87326dfccb7933f8",
+          "sourceText": "Why Travel Triggers Your Nervous System",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "711c334f460aed2e9cb3f3c13c1e93200247b6230c7c5f3ad34ddae2dcc4edcb",
+          "sourceText": "Racing heart during takeoff and landing",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "ceaa8141c80fc06a1628d6efeb3716e5fa66a79565e513e1fd704b965b8ce305",
+          "sourceText": "Panic during turbulence or unexpected movements",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "5c1900623ce1c455926f627a67429a36abb1febfe8ab2718e6a79a1418adbdc9",
+          "sourceText": "Claustrophobic feelings in crowded spaces",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "0e5c22164a3cde6b62b386de206c7aa6e061be692a574e733fadedc72dba03bd",
+          "sourceText": "Hypervigilance, scanning for threats constantly",
+          "status": "route-catalog-normalized"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "0808c610ae51ec4fd113c0e8390b371cd87f62bec1b649590f20133f9d678c73",
+          "sourceText": "Catastrophic thinking ('What if the plane crashes?')",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "b09c0c8c2a0cbcede97ceeca2421cd15dd4330aa965174ff6a6b90c71491051d",
+          "sourceText": "Physical symptoms: sweating, nausea, trembling",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[6]": {
+          "sourceHash": "548fe548e85e8944ae8ba13541da6133a59b5db70cd601ce55d1cffd2d557e2a",
+          "sourceText": "Avoidance behaviors, turning down trips you'd enjoy",
+          "status": "route-catalog-normalized"
+        },
+        "problem.symptoms[7]": {
+          "sourceHash": "cb449f0d1ebad33e48030551f8eedfdb2224e6f83b6889715fb85cd7279a3266",
+          "sourceText": "Exhaustion after travel, even short trips",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "13be24af57d3448474dc8cc64f7efd615d7f2763cd46c9260ca2112e1bd8fa16",
+          "sourceText": "Research on HRV biofeedback (coherent breathing at resonance frequency) for anxiety reduction, showing significant improvements in physiological and psychological measures.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "a5cc29aeee946aa7815fc232588d8f834cdece25bc18eda8daa32565e93551ad",
+          "sourceText": "Heart Rate Variability Biofeedback for Flight Anxiety",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "69700c59198dd9ab74907333d73097c78e359fa6b3ae7a427ddcfd398330ad01",
+          "sourceText": "Study demonstrating the relationship between slow breathing, respiratory sinus arrhythmia, and anxiety reduction.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "9fd60eab1d527d54ec84419b26431b671e81bd43e1117bc1c05adf9bf0e9ac17",
+          "sourceText": "Respiratory sinus arrhythmia as a function of state anxiety",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "0e0690c4c23c7d923601adc61c60ff65199163a8c8bd994ad0e2edad8dc64019",
+          "sourceText": "Research showing that controlled slow breathing reduces motion sickness symptoms by 50% or more.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "4f6a1ce5dc2294690946226f640ba1d098db87c68ee2579b8f863face4f4ca15",
+          "sourceText": "Slow Breathing and Motion Sickness",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "4c54bad19efdfc6b49381389f7643edf43c4e2cc6e2fd452cb6fe528267c15b3",
+          "sourceText": "Review of evidence-based treatments for flight anxiety, including breathing techniques as a component of effective interventions.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "5065899409f12d14c9422efa6f049683632eb2de8ba08ae406bab0bed0efa9d7",
+          "sourceText": "Fear of flying: psychological treatment approaches",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "f661c0f9c08ea42d86e64d35e1a7d9f19ffef1f48e79f5b5bc90a110d36c1f8f",
+          "sourceText": "Practice with the full coherent breathing visualizer, download for offline use",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "b288191267cff6e8fca325ee7954d9555d1f517d0f45ef611babd39d0c803d99",
+          "sourceText": "Dreading family gatherings? The physiological sigh works in 30 seconds for acute stress",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "69f6a7dbe5afb2044d0a194e20d9cd4a9daa864679b0b09c7148d1fdbba07ae8",
+          "sourceText": "If travel triggers full panic attacks, learn the physiological sigh for immediate relief",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "cb07c65cd22e624133d609354035ab7a901490e14ffc438a752a08055824e95b",
+          "sourceText": "For general anxiety that extends beyond travel, box breathing provides quick relief",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[3].teaser": {
+          "sourceHash": "93dfd0bbb3ef03914315829859e9c7daf259c776e554d12a75f0322d1550e0e8",
+          "sourceText": "Jet-lagged? Use 4-7-8 breathing to fall asleep faster in new time zones",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "9ef57be3e4f2385e68aa87bb0b1e43383a0cbcf72d3c06a5458a8fa7c8bae02b",
+          "sourceText": "Why Coherent Breathing Works for Travel",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "8861bb56fbb80e3a8ff83c33d785232a5ad02af03c018087a32c955902e51da3",
+          "sourceText": "Heart rate variability (HRV) measures your nervous system's flexibility. Low HRV = stuck in stress mode. High HRV = resilient and adaptable. Coherent breathing maximizes HRV by syncing your breath to your body's natural resonance frequency (~0.1 Hz). This elevated HRV persists for 1-4 hours after practice, providing sustained calm throughout your journey.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "a110223b2a49c8f8ef352b9445feecac62a39decee8cf40f4c60ae935c0441f9",
+          "sourceText": "Sustained HRV Optimization",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "7f15165b7cea5d268b66395c5d49cf459c1b4b318ed3dc959f5d65e4e607e3ba",
+          "sourceText": "Motion sickness is partly caused by autonomic nervous system dysregulation. Studies show that slow, rhythmic breathing reduces motion sickness symptoms by 50% or more. The steady rhythm of coherent breathing also provides a stable internal focus, helping your brain reconcile the conflicting signals that cause nausea.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "b312a03f0181322800b39ba3ecc1f5c17b481e4d3a5100a738c806e2ec2b28c2",
+          "sourceText": "Motion Sickness Prevention",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "a6f88c046c5e24bd599f23283a5eaa61989fc669975e311a70afe70b111fc605",
+          "sourceText": "Anxiety hijacks your prefrontal cortex, the rational part of your brain. You know the plane is safe, but you can't 'think' your way out of panic. Coherent breathing increases blood flow to the prefrontal cortex and shifts your brain into alpha wave states, restoring rational thought and reducing catastrophic thinking.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "9de3a046e2f527a88a17860490c3aa11451501fb081ca5720ae34ee7bbe2f439",
+          "sourceText": "Prefrontal Cortex Engagement",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "9f5ebc29344b6d195b2ef2a4e1a9d84b4882578319bf675be9f2c57dd7fc9e38",
+          "sourceText": "The vagus nerve is your 'calm-down' nerve. People with high vagal tone recover faster from stress. Regular coherent breathing practice strengthens vagal tone over time, meaning travel becomes progressively less stressful. Even one session before a flight provides immediate benefit.",
+          "status": "route-catalog-exact"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "8008669a32679ad1dd409fa6077661c8f34142240cbb1698d0cfa111c84792d9",
+          "sourceText": "Vagal Tone Strengthening",
+          "status": "route-catalog-exact"
+        },
+        "solution.content": {
+          "sourceHash": "48eba4467ee6ea9a7d5a1c8e5b00dc2f1750d78644a8c0e4884b321ddda832c1",
+          "sourceText": "Unlike quick-fix techniques that wear off in minutes, coherent breathing creates a physiological state of calm that can last 2-4 hours after just 5-10 minutes of practice. By breathing at your body's resonance frequency (about 5 breaths per minute), you optimize heart rate variability and balance your autonomic nervous system, the key to sustained stress resilience.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "9c36ccf1f7e07072e32f8aea8f3f656e106f006a4b6c6262ec58fa8320f90281",
+          "sourceText": "Coherent Breathing: Hours of Sustained Calm",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "ddeae5aeb2881c4ab9b5a8487d27b9ccd8696f15a72bd7acfa429a5e9e56d755",
+          "sourceText": "Travel anxiety isn't one moment of panic. It's hours of low-grade stress punctuated by acute spikes. You need a technique that provides baseline calm (coherent breathing before and during travel) plus an acute rescue tool (physiological sigh for turbulence or sudden panic). Coherent breathing is your foundation; the sigh is your emergency button.",
+          "status": "route-catalog-normalized"
+        }
+      }
+    }
+  },
+  "schemaVersion": 1,
+  "sourceRoute": "/for/travel-anxiety"
+}

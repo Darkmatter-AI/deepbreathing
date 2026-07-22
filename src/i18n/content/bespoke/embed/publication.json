@@ -1,0 +1,62 @@
+{
+  "expectedMessages": 66,
+  "locales": {
+    "de-de": {
+      "binding": 6,
+      "bytes": 4525,
+      "catalog": 48,
+      "path": "messages/de-de.json",
+      "publishable": true,
+      "replacement": 11,
+      "resolvedMessages": 66,
+      "reviewedGap": 1,
+      "sha256": "be252ab914113e7054b8d1d691b5d68acec91e1e8b737c885282e5a271511798"
+    },
+    "es-es": {
+      "binding": 6,
+      "bytes": 4639,
+      "catalog": 48,
+      "path": "messages/es-es.json",
+      "publishable": true,
+      "replacement": 11,
+      "resolvedMessages": 66,
+      "reviewedGap": 1,
+      "sha256": "2a06458af9063a1c2af965b26bae2a4edce5cd1178a2e5b12f12632ad5cdef41"
+    },
+    "fr-fr": {
+      "binding": 6,
+      "bytes": 4831,
+      "catalog": 48,
+      "path": "messages/fr-fr.json",
+      "publishable": true,
+      "replacement": 11,
+      "resolvedMessages": 66,
+      "reviewedGap": 1,
+      "sha256": "1ce6ff7942fe29dad034e2e8ccf946179959808fd7ed72f13b7298fef0a9bec6"
+    },
+    "ja-jp": {
+      "binding": 6,
+      "bytes": 5377,
+      "catalog": 48,
+      "path": "messages/ja-jp.json",
+      "publishable": true,
+      "replacement": 11,
+      "resolvedMessages": 66,
+      "reviewedGap": 1,
+      "sha256": "5268f89cc06a6120d32ff98855233cea4f9165be49240d2427731f7be68804bc"
+    },
+    "pt-br": {
+      "binding": 6,
+      "bytes": 4687,
+      "catalog": 48,
+      "path": "messages/pt-br.json",
+      "publishable": true,
+      "replacement": 11,
+      "resolvedMessages": 66,
+      "reviewedGap": 1,
+      "sha256": "319b58ce947564cdd798efa315dd4178d7305266974e13fe5a31722238fc46a2"
+    }
+  },
+  "route": "/embed",
+  "schemaVersion": 1
+}

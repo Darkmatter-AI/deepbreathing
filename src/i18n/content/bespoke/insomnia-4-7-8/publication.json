@@ -1,0 +1,43 @@
+{
+  "expectedMessages": 77,
+  "locales": {
+    "de-de": {
+      "bytes": 9364,
+      "path": "messages/de-de.json",
+      "publishable": true,
+      "resolvedMessages": 77,
+      "sha256": "7b250c26ae0fea9b7ffa70ab7ddc171b57e8d68986c9439ff2484c5b9dbd20af"
+    },
+    "es-es": {
+      "bytes": 8970,
+      "path": "messages/es-es.json",
+      "publishable": true,
+      "resolvedMessages": 77,
+      "sha256": "de5474fa433be17b5fac19bb83ca593b91a6b564f09e02a08fe3e431bcbb52ba"
+    },
+    "fr-fr": {
+      "bytes": 9259,
+      "path": "messages/fr-fr.json",
+      "publishable": true,
+      "resolvedMessages": 77,
+      "sha256": "c24d5fd50ecaddbff144cdac2abbe2aed351771cb65933ed01134186d5afa6a2"
+    },
+    "ja-jp": {
+      "bytes": 9582,
+      "path": "messages/ja-jp.json",
+      "publishable": true,
+      "resolvedMessages": 77,
+      "sha256": "ea71009609f3589648d00595305a5416a7cc6e4031cc3cd5f01414f0c92d93de"
+    },
+    "pt-br": {
+      "bytes": 8616,
+      "path": "messages/pt-br.json",
+      "publishable": true,
+      "resolvedMessages": 77,
+      "sha256": "5ba4b14851467394ee154eb31cda86db34c6214fe2bc1fc22b8808845505e68e"
+    }
+  },
+  "routeId": "4-7-8-breathing-for-insomnia",
+  "schemaVersion": 1,
+  "sourceRoute": "/4-7-8-breathing-for-insomnia"
+}

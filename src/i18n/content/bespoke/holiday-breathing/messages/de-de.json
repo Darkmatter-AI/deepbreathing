@@ -1,0 +1,312 @@
+{
+  "comfortTips": {
+    "items": [
+      "Suchen Sie, wenn möglich, einen ruhigen Ort auf – schon 30 Sekunden allein helfen.",
+      "Erzwingen Sie keine tiefen Atemzüge – kleinere, sanftere Atemzüge wirken besser.",
+      "Beginnen Sie mit nur 1 Minute – das ist oft schon genug.",
+      "Überspringen Sie Atempausen, wenn sie sich unangenehm anfühlen.",
+      "Wenn Sie sich schwindelig oder kribbelig fühlen, kehren Sie zur normalen Atmung zurück."
+    ],
+    "title": "Komfort-Tipps"
+  },
+  "dayPlans": {
+    "items": [
+      {
+        "steps": [
+          {
+            "action": "5 Min. kohärente Atmung beim Fertigmachen.",
+            "timing": "Morgen"
+          },
+          {
+            "action": "3 physiologische Seufzer im Auto.",
+            "timing": "Vor der Ankunft"
+          },
+          {
+            "action": "Seufzer während der Toilettenpause nach Bedarf.",
+            "timing": "Währenddessen"
+          },
+          {
+            "action": "3 Min. 4-7-8 Atmung vor dem Schlafengehen.",
+            "timing": "Nach dem Ereignis"
+          }
+        ],
+        "title": "Trefftag"
+      },
+      {
+        "steps": [
+          {
+            "action": "5 Min. kohärente Atmung.",
+            "timing": "Vor der Abreise"
+          },
+          {
+            "action": "2 Min. kohärente Atmung während Wartezeiten.",
+            "timing": "Verspätungen"
+          },
+          {
+            "action": "Physiologische Seufzer bei Turbulenzen.",
+            "timing": "Im Flug"
+          },
+          {
+            "action": "60s Box-Atmung-Reset.",
+            "timing": "Ankunft"
+          }
+        ],
+        "title": "Reisetag"
+      },
+      {
+        "steps": [
+          {
+            "action": "5 Min. kohärente Atmung.",
+            "timing": "Morgen-Vorbereitung"
+          },
+          {
+            "action": "3 schnelle Seufzer in der Speisekammer.",
+            "timing": "Gästeankunft"
+          },
+          {
+            "action": "2 Min. kohärente Atempause.",
+            "timing": "Während des Ereignisses"
+          },
+          {
+            "action": "3 Min. 4-7-8 vor dem Schlafengehen.",
+            "timing": "Nach dem Aufräumen"
+          }
+        ],
+        "title": "Gastgebertag"
+      }
+    ],
+    "title": "Feiertags-Tagespläne"
+  },
+  "faq": {
+    "items": [
+      {
+        "answer": {
+          "parts": [
+            {
+              "text": "Ja. Der physiologische Seufzer (doppeltes Einatmen + langes Ausatmen) wirkt in nur 1-3 Atemzügen. Er ist speziell für akuten Stressabbau konzipiert, wenn Sie sich nicht zurückziehen können."
+            }
+          ]
+        },
+        "question": "Ich habe nur 30 Sekunden Zeit. Hilft das?"
+      },
+      {
+        "answer": {
+          "parts": [
+            {
+              "text": "Absolut. "
+            },
+            {
+              "linkText": "Der physiologische Seufzer"
+            },
+            {
+              "text": " kann als natürlicher, müder Seufzer getarnt werden, Menschen seufzen ständig. Für längere Techniken entschuldigen Sie sich kurz."
+            }
+          ]
+        },
+        "question": "Kann ich das am Esstisch machen, ohne komisch auszusehen?"
+      },
+      {
+        "answer": {
+          "parts": [
+            {
+              "text": "Nutzen Sie die visuelle Anleitung auf Ihrem Telefon – die Animation anzusehen ist einfacher als zu zählen. Beginnen Sie mit nur einem physiologischen Seufzer, um die Anspannung zu lösen."
+            }
+          ]
+        },
+        "question": "Was, wenn ich zu gestresst bin, um mich auf die Atmung zu konzentrieren?"
+      },
+      {
+        "answer": {
+          "parts": [
+            {
+              "text": "Physiologischer Seufzer für akute Momente (steigende Anspannung, Panik). Kohärente Atmung für anhaltende Ruhe (Reisen, lange Treffen). 4-7-8 für die Schlafenszeit nach anstrengenden Tagen."
+            }
+          ]
+        },
+        "question": "Welche Technik ist am besten für Stress in den Feiertagen?"
+      },
+      {
+        "answer": {
+          "parts": [
+            {
+              "text": "Zufällige tiefe Atemzüge verschlimmern Angst oft durch Überatmung. Diese Techniken verwenden spezifische Rhythmen, die Ihr parasympathisches Nervensystem aktivieren."
+            }
+          ]
+        },
+        "question": "Wie unterscheidet sich das vom bloßen 'tiefen Atmen'?"
+      },
+      {
+        "answer": {
+          "parts": [
+            {
+              "text": "Ja. Kohärente Atmung schafft anhaltende Ruhe, die stundenlang anhält. Sehen Sie sich unseren Reiseangst-Leitfaden für das vollständige Protokoll an."
+            }
+          ]
+        },
+        "question": "Hilft das auch bei Reiseangst in den Ferien?"
+      }
+    ],
+    "title": "FAQ"
+  },
+  "footer": "Brechen Sie ab, wenn Sie sich schwindelig, kribbelig oder beklemmt in der Brust fühlen. Dies sind Selbstregulierungswerkzeuge, keine medizinische Behandlung. Bei anhaltenden psychischen Problemen konsultieren Sie bitte einen Fachmann.",
+  "hero": {
+    "action": "30s Feiertags-Reset →",
+    "eyebrow": "Saisonale Ruhe",
+    "intro": "Finden Sie Ruhe während der Feiertage. Schnelle Resets für Treffen, Reiseverzögerungen und Momente, in denen Sie sich zurückziehen und atmen müssen.",
+    "title": "Atemübungen für die Feiertage"
+  },
+  "holidayGuides": {
+    "action": "Technik lernen →",
+    "items": [
+      {
+        "description": "Bewältigen Sie Familientreffen, soziale Überforderung und angespannte Momente mit dem physiologischen Seufzer.",
+        "timing": "30 Sekunden",
+        "title": "Stressabbau in den Feiertagen"
+      },
+      {
+        "description": "Bleiben Sie ruhig bei Flügen, Verspätungen, Menschenmassen und langen Reisen.",
+        "timing": "5-10 Minuten",
+        "title": "Reiseangst"
+      }
+    ],
+    "title": "Feiertags-Anleitungen"
+  },
+  "metadata": {
+    "description": "Atemübungen zum Stressabbau in den Ferien. Finden Sie Entspannung Weihnachten mit schnellen Erholungstechniken für Treffen, Reisen und Überforderung. Effektive 60-Sekunden- bis 3-Minuten-Übungen. Kostenloser Visualizer mit Schneeeffekt.",
+    "imageAlt": "Atemübungen für die Feiertage: Finden Sie Entspannung Weihnachten und innere Ruhe",
+    "imageSubtitle": "Schnelle Atempausen bei Familientreffen und Reisestress",
+    "imageTitle": "Atemübungen für die Feiertage: Finden Sie Entspannung Weihnachten und innere Ruhe",
+    "socialDescription": "Schnelle Atem-Resets für Weihnachtsfeiern, Reisestress und saisonale Überforderung. Finden Sie Entspannung Weihnachten mit 60-Sekunden-Techniken, die wirklich wirken.",
+    "socialTitle": "Atemübungen für die Feiertage: Finden Sie Entspannung Weihnachten und innere Ruhe",
+    "title": "Entdecken Sie Entspannung Weihnachten mit gezielten Atemübungen für die Feiertage | Deep Breathing Exercises",
+    "twitterDescription": "Schnelle Atem-Resets für Weihnachtsfeiern, Reisestress und saisonale Überforderung. Finden Sie Entspannung Weihnachten mit unserem kostenlosen Visualizer.",
+    "twitterTitle": "Atemübungen für die Feiertage: Finden Sie Entspannung Weihnachten und innere Ruhe"
+  },
+  "moments": {
+    "items": [
+      {
+        "description": "In Ihrem Auto, an der Tür oder während Sie sich fertig machen.",
+        "technique": "Physiologischer Seufzer",
+        "title": "Vor dem Treffen"
+      },
+      {
+        "description": "Toilettenpause, Küchenhilfe oder ruhige Ecke.",
+        "technique": "Physiologischer Seufzer",
+        "title": "Während des Treffens"
+      },
+      {
+        "description": "Auf der Heimfahrt oder vor dem Schlafengehen.",
+        "technique": "4-7-8 Atmung",
+        "title": "Nach dem Treffen"
+      },
+      {
+        "description": "Flughäfen, Verkehr, Turbulenzen oder Wartezimmer.",
+        "technique": "Kohärente Atmung",
+        "title": "Reisestress"
+      },
+      {
+        "description": "Panik steigt, sofortige Linderung nötig.",
+        "technique": "Physiologischer Seufzer",
+        "title": "Akute Überforderung"
+      }
+    ],
+    "title": "Wählen Sie Ihren Moment"
+  },
+  "quickStart": {
+    "action": "Starten →",
+    "items": [
+      {
+        "description": "Sofortige Linderung bei steigender Anspannung – wirkt in 1-3 Atemzügen.",
+        "timing": "30 Sekunden",
+        "title": "Akuter Stress-Reset"
+      },
+      {
+        "description": "Zentrieren Sie sich, bevor Sie ins Chaos treten.",
+        "timing": "1 Minute",
+        "title": "Ruhe vor dem Treffen"
+      },
+      {
+        "description": "Finden Sie Ihre Mitte bei einer Flucht ins Bad oder in die Küche.",
+        "timing": "2 Minuten",
+        "title": "Auszeit im stillen Raum"
+      },
+      {
+        "description": "Entspannen Sie sich nach einem anstrengenden Tag voller sozialer Kontakte.",
+        "timing": "3 Minuten",
+        "title": "Abendliche Entspannung"
+      }
+    ],
+    "title": "Schnellstart"
+  },
+  "relatedGuides": {
+    "items": [
+      {
+        "description": "Box-Atmung bei allgemeiner Angst.",
+        "title": "Angstlinderung"
+      },
+      {
+        "description": "Panik schnell stoppen mit physiologischem Seufzer.",
+        "title": "Panikattacken"
+      },
+      {
+        "description": "4-7-8 Atmung für erholsame Nächte.",
+        "title": "Besserer Schlaf"
+      },
+      {
+        "description": "Alle Atemmethoden entdecken.",
+        "title": "Alle Techniken"
+      }
+    ],
+    "title": "Verwandte Anleitungen"
+  },
+  "schema": {
+    "articleDescription": "Atemübungen gegen Feiertagsstress. Schnelle Atempausen für Familientreffen, Reisen und Überforderung.",
+    "articleHeadline": "Atemübungen für die Feiertage: Finden Sie Entspannung Weihnachten und innere Ruhe",
+    "howToDescription": "Nutzen Sie den physiologischen Seufzer, um Feiertagsstress in 30 Sekunden schnell zu beruhigen.",
+    "howToName": "So beruhigen Sie Feiertagsstress mit Atmung",
+    "howToSteps": [
+      {
+        "name": "Stress wahrnehmen",
+        "text": "Erkennen Sie, wenn Sie sich anspannen: zusammengebissener Kiefer, angespannte Schultern, rasende Gedanken oder der Drang, auszufahren."
+      },
+      {
+        "name": "Erstes Einatmen",
+        "text": "Atmen Sie tief durch die Nase ein und füllen Sie Ihre Lunge zu etwa 80-90%. Lassen Sie den Bauch sich ausdehnen."
+      },
+      {
+        "name": "Zweites Einatmen (Nachfüllen)",
+        "text": "Atmen Sie, ohne auszuatmen, ein zweites Mal kürzer durch die Nase ein, um die Lunge vollständig zu füllen."
+      },
+      {
+        "name": "Langes Ausatmen",
+        "text": "Atmen Sie langsam und vollständig durch den Mund aus und lassen Sie das Ausatmen länger dauern als beide Einatmungen zusammen."
+      },
+      {
+        "name": "Bei Bedarf wiederholen",
+        "text": "Ein Seufzer bringt oft sofortige Erleichterung. Wiederholen Sie ihn 2-3 Mal, wenn Sie einen vollständigen Neustart brauchen."
+      }
+    ]
+  },
+  "share": {
+    "buttonText": "Mit jemandem teilen",
+    "copiedText": "Link kopiert!",
+    "text": "Feiertagsstress? Diese Atemübung hilft in 30 Sekunden."
+  },
+  "whyItWorks": {
+    "items": [
+      {
+        "description": "Lange Ausatmungen aktivieren Ihr parasympathisches Nervensystem – den 'Ruhe- und Verdauungs'-Modus, der Stress entgegenwirkt.",
+        "title": "Ausatem-Betonung"
+      },
+      {
+        "description": "Eine Atmung von 5-6 Atemzügen pro Minute maximiert die Herzfrequenzvariabilität (HRV), den Stressresilienz-Marker Ihres Körpers.",
+        "title": "Optimale Rate"
+      },
+      {
+        "description": "Das Zählen von Atemphasen unterbricht Grübeln und katastrophales Denken – Sie können nicht gleichzeitig panisch sein und zählen.",
+        "title": "Aufmerksamkeitsanker"
+      }
+    ],
+    "title": "Warum es funktioniert"
+  }
+}

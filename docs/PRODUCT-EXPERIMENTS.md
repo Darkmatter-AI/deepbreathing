@@ -23,6 +23,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-07-20 | [Authenticated `/stats` reach instrumentation](#2026-07-20-authenticated-stats-reach-instrumentation) | 🔄 Implemented — PR [#53](https://github.com/Darkmatter-AI/deepbreathing/pull/53); first mature read 2026-07-29 |
 | 2026-07-12 | [TestFlight native-sheet and practice-identity pass](#2026-07-12-testflight-native-sheet-and-practice-identity-pass) | 🔄 Implemented locally — physical build validation pending |
 | 2026-07-11 | [TestFlight immersion and control pass — native audio, draggable modes, completion parity](#2026-07-11-testflight-immersion-and-control-pass--native-audio-draggable-modes-completion-parity) | 🔄 Implemented locally — physical build validation pending |
 | 2026-07-11 | [Account-based cross-device practice sync — Apple-first acquisition](#2026-07-11-account-based-cross-device-practice-sync--apple-first-acquisition) | 🔄 Implemented locally — TestFlight + production validation pending |
@@ -51,6 +52,24 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 ---
 
 ## Active Experiments
+
+### 2026-07-20: Authenticated `/stats` Reach Instrumentation
+
+**Observed baseline:** The mature GA4 window 2026-07-12–2026-07-18 reports 3 users / 11 `page_view`s on `/stats`, but every row has `signedInWithUserId = (not set)`. The production account database reports 16 signed-in active users over the corresponding complete seven-day account window. The existing `/stats` experiment reaches its 2026-07-21 date gate without a trustworthy signed-in reach numerator.
+
+**Hypothesis:** Emitting a dedicated event only from the server-authenticated `StatsDisplay` makes signed-in `/stats` adoption measurable without changing the page, auth flow, or existing `page_view` series.
+
+**Exact change:** On authenticated `/stats` renders, emit `stats_authenticated_view` once on mount, restricted to `deepbreathingexercises.com` and `www.deepbreathingexercises.com`. Include pathname and locale only; send no user ID or PII. Signed-out and non-production renders emit nothing. Implementation: commit [`b6f5174`](https://github.com/Darkmatter-AI/deepbreathing/commit/b6f5174b6b9efbc4c33fd16a9f4cd7c7df1079f3) in PR [#53](https://github.com/Darkmatter-AI/deepbreathing/pull/53).
+
+**Primary metric:** unique `stats_authenticated_view` users ÷ production-account signed-in active users over matched complete seven-day windows.
+
+**Guardrails:** Existing `page_view` counts remain unchanged; zero `stats_authenticated_view` events from signed-out, preview, localhost, or origin hosts; no auth or visual behavior change.
+
+**Pre-committed criteria:** Measurement is usable if the event is present for authenticated production visits and the weekly numerator can be matched to the account denominator. Fail the instrumentation if an authenticated production visit emits no event or any non-production/signed-out visit emits one.
+
+**Measure-after:** 2026-07-29, covering the first seven complete post-deploy days (2026-07-21–2026-07-27) plus the normal GA4 maturity lag. Do not backfill or use the pre-ship `/stats` window for a verdict.
+
+**Status:** 🔄 Implemented in PR [#53](https://github.com/Darkmatter-AI/deepbreathing/pull/53); production verification is tracked with the deployment.
 
 ### 2026-07-12: TestFlight Native-Sheet and Practice-Identity Pass
 

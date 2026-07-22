@@ -1,0 +1,15 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "Si vous souffrez d'asthme, consultez votre médecin avant de commencer.",
+      "locale": "fr-fr",
+      "reason": "The approved safety text omits respiratory conditions beyond asthma.",
+      "replacement": "Si vous souffrez d'asthme ou d'une affection respiratoire, consultez votre médecin avant de commencer.",
+      "reviewedSourceHash": "7439187a4706ff7d84e2d37dda7d1f642146d7e02d40234137bd76c146452d0a",
+      "sourcePath": "research.safety[1]",
+      "sourceText": "If you have asthma or respiratory conditions, consult your doctor before starting."
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/breathe/buteyko"
+}

@@ -1,0 +1,128 @@
+{
+  "coverage": {
+    "box-breathing-app": {
+      "de-de": {
+        "expectedMessages": 99,
+        "path": "messages/de-de/box-breathing-app.json",
+        "publishable": true,
+        "resolvedMessages": 99,
+        "sha256": "f26ddd78cee2c34347541dfd0e0f8f2d1d99507ea319ccc03dd1121dc20c55a8"
+      },
+      "es-es": {
+        "expectedMessages": 99,
+        "path": "messages/es-es/box-breathing-app.json",
+        "publishable": true,
+        "resolvedMessages": 99,
+        "sha256": "02898665a51f381e99dea8ee66d7ae5466c6752829ab642898fe0aa992ca15c3"
+      },
+      "fr-fr": {
+        "expectedMessages": 99,
+        "path": "messages/fr-fr/box-breathing-app.json",
+        "publishable": true,
+        "resolvedMessages": 99,
+        "sha256": "be82cb4cf7f7827c57b910e9c593c73521bdd3b67d697e2f58b460f9b909fd0b"
+      },
+      "ja-jp": {
+        "expectedMessages": 99,
+        "path": "messages/ja-jp/box-breathing-app.json",
+        "publishable": true,
+        "resolvedMessages": 99,
+        "sha256": "7811b11c90858d824cf2b2c7937137772ff057ac68d545139d2f2a2cb5f1f308"
+      },
+      "pt-br": {
+        "expectedMessages": 99,
+        "path": "messages/pt-br/box-breathing-app.json",
+        "publishable": true,
+        "resolvedMessages": 99,
+        "sha256": "071b8f4a28615ca88f2cd6d4a6e6dc5a16c945a6d26b5e6324f741f1810c4cb7"
+      }
+    },
+    "breathing-app": {
+      "de-de": {
+        "expectedMessages": 46,
+        "path": "messages/de-de/breathing-app.json",
+        "publishable": true,
+        "resolvedMessages": 46,
+        "sha256": "9bc54675665ddc68a276fb6e0afacc79bac726ef31c63861ab4b209bcfc2a4c8"
+      },
+      "es-es": {
+        "expectedMessages": 46,
+        "path": "messages/es-es/breathing-app.json",
+        "publishable": true,
+        "resolvedMessages": 46,
+        "sha256": "30e2b1929758c8598d3a66d59d4c8d66a9ffccf69afdb40908b83a25946569a0"
+      },
+      "fr-fr": {
+        "expectedMessages": 46,
+        "path": "messages/fr-fr/breathing-app.json",
+        "publishable": true,
+        "resolvedMessages": 46,
+        "sha256": "dc82b8947907087986d89138d8a7729e540d27c320ca08a44acbf636319ca54a"
+      },
+      "ja-jp": {
+        "expectedMessages": 46,
+        "path": "messages/ja-jp/breathing-app.json",
+        "publishable": true,
+        "resolvedMessages": 46,
+        "sha256": "3ac45568fce486a158a176c2991a846f768e835641d9b3b25a9ee5c99dee49da"
+      },
+      "pt-br": {
+        "expectedMessages": 46,
+        "path": "messages/pt-br/breathing-app.json",
+        "publishable": true,
+        "resolvedMessages": 46,
+        "sha256": "7cb156c81bbb8245a66117d9efd9f682f71cad4235dfd8860a650752eff64148"
+      }
+    },
+    "coherent-breathing-app": {
+      "de-de": {
+        "expectedMessages": 139,
+        "path": "messages/de-de/coherent-breathing-app.json",
+        "publishable": true,
+        "resolvedMessages": 139,
+        "sha256": "2ac97feedd2514444aab536e45d9a2516e9787733fef5eb4b23e9598325b4801"
+      },
+      "es-es": {
+        "expectedMessages": 139,
+        "path": "messages/es-es/coherent-breathing-app.json",
+        "publishable": true,
+        "resolvedMessages": 139,
+        "sha256": "6a6a610b05c6f76d594b5e31a708130b94a467e543858f61d81a55424217c92f"
+      },
+      "fr-fr": {
+        "expectedMessages": 139,
+        "path": "messages/fr-fr/coherent-breathing-app.json",
+        "publishable": true,
+        "resolvedMessages": 139,
+        "sha256": "af3a3f3b4c03cb7a756123078303c505dd7c26b7be8b10b550b95068f4fed937"
+      },
+      "ja-jp": {
+        "expectedMessages": 139,
+        "path": "messages/ja-jp/coherent-breathing-app.json",
+        "publishable": true,
+        "resolvedMessages": 139,
+        "sha256": "fcd876b7756d5941832fa26fc0a483a9e4cd0e430e1710bcd3b535f2c06daabb"
+      },
+      "pt-br": {
+        "expectedMessages": 139,
+        "path": "messages/pt-br/coherent-breathing-app.json",
+        "publishable": true,
+        "resolvedMessages": 139,
+        "sha256": "a8a8b6a0abdddb4c098d0e300e355a126dd63b96cdc138f12e05074ff66a08a2"
+      }
+    }
+  },
+  "locales": [
+    "de-de",
+    "es-es",
+    "fr-fr",
+    "ja-jp",
+    "pt-br"
+  ],
+  "routes": [
+    "box-breathing-app",
+    "breathing-app",
+    "coherent-breathing-app"
+  ],
+  "schemaVersion": 1
+}

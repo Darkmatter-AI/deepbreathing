@@ -1,0 +1,42 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "Was 9D Atemarbeit ist: Atemprotokoll, neun Audio-Ebenen, Dauer, Kosten & Vergleich zu Wim Hof. Teste den Atemteil gratis mit unserem Pacer. Atemübungen,",
+      "locale": "de-de",
+      "reason": "The approved value ends with a stray keyword fragment and comma.",
+      "replacement": "Was 9D Breathwork wirklich ist: das Atemprotokoll, die neun Audioebenen, Sitzungsdauer, Kosten und der Vergleich mit Wim Hof. Probieren Sie den Atemteil kostenlos mit unserem geführten Pacer aus.",
+      "reviewedSourceHash": "ba7766d96bd8c0f7742ec2ff00cef524dd3497cc0e504b31f39eeb4f7f096e45",
+      "sourcePath": "meta.description",
+      "sourceText": "What 9D breathwork actually is — the breath protocol, the nine audio layers, session length, cost, and how it compares to Wim Hof. Try the breath part free with our guided pacer."
+    },
+    {
+      "currentCatalogValue": "Découvrez la respiration 9D : protocole, 9 couches audio, durée, coût et comparaison avec Wim Hof. Essayez la partie respiration gratuitement avec notre",
+      "locale": "fr-fr",
+      "reason": "The approved value is truncated after a possessive determiner.",
+      "replacement": "Découvrez ce qu'est réellement le breathwork 9D : le protocole respiratoire, les neuf couches audio, la durée des séances, le coût et la comparaison avec Wim Hof. Essayez gratuitement la partie respiratoire avec notre guide.",
+      "reviewedSourceHash": "ba7766d96bd8c0f7742ec2ff00cef524dd3497cc0e504b31f39eeb4f7f096e45",
+      "sourcePath": "meta.description",
+      "sourceText": "What 9D breathwork actually is — the breath protocol, the nine audio layers, session length, cost, and how it compares to Wim Hof. Try the breath part free with our guided pacer."
+    },
+    {
+      "currentCatalogValue": "Guide clair et honnête. La technique de respiration 9D est gratuite – essayez-la. La bande-son audio à neuf couches est ce que la marque 9D Breathwork",
+      "locale": "fr-fr",
+      "reason": "The approved value is truncated before the final verb and does not form a complete sentence.",
+      "replacement": "Guide clair et honnête. La technique respiratoire sous-jacente au 9D est gratuite : essayez-la maintenant. La bande-son audio à neuf couches est ce que vend la marque 9D Breathwork.",
+      "reviewedSourceHash": "bc839030d8490b5e0f44bcf2343f73adbea1abcafb3ef0d7a7d7817a7c65c0db",
+      "sourcePath": "meta.ogDescription",
+      "sourceText": "Honest plain-English guide. The breath underneath 9D is free — try it now. The nine-layer audio soundtrack is what 9D Breathwork (the brand) sells."
+    },
+    {
+      "currentCatalogValue": "9D Breathwork expliqué : Respiration, audio, coût (Pacer",
+      "locale": "fr-fr",
+      "reason": "The approved title is truncated inside its closing parenthetical.",
+      "replacement": "9D Breathwork expliqué : respiration, audio, coût (pacer gratuit)",
+      "reviewedSourceHash": "f6052d4ef1fd37dcd68105bb84cda476c3d19009fdffd29f26153ff02e422749",
+      "sourcePath": "meta.title",
+      "sourceText": "9D Breathwork Explained: The Breath, the Audio, the Cost (Free Pacer)"
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/breathe/9d-breathwork"
+}

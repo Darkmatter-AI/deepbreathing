@@ -4,8 +4,11 @@ import fs from "node:fs";
 import path from "node:path";
 
 const ROOT = process.cwd();
-const PAGE_FILE = path.join(ROOT, "src/app/sensory-studio/page.tsx");
-const STUDIO_FILE = path.join(ROOT, "src/app/sensory-studio/sensory-studio.tsx");
+const PAGE_FILE = path.join(ROOT, "src/app/(site-en)/sensory-studio/page.tsx");
+const STUDIO_FILE = path.join(
+  ROOT,
+  "src/app/(site-en)/sensory-studio/sensory-studio.tsx",
+);
 const VISUALIZER_FILE = path.join(
   ROOT,
   "src/components/resonance/components/Visualizer.tsx",

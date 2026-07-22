@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "sourceRoute": "/box-breathing-before-presentation",
+  "bindings": {
+    "metadata.title": {
+      "occurrenceKey": "head:title",
+      "catalogSourceText": "Box Breathing Before Presentation: Calm Nerves in 60 Seconds (Free Timer) | Deep Breathing Exercises"
+    },
+    "metadata.description": {
+      "occurrenceKey": "head:meta:name:description",
+      "catalogSourceText": "Free box breathing timer for presentations, the Navy SEAL technique to stop stage fright in 60 seconds. Calm your nerves before you speak. Try now."
+    },
+    "metadata.socialTitle": {
+      "occurrenceKey": "head:meta:property:og:title",
+      "catalogSourceText": "Box Breathing Before Presentation: Calm Nerves in 60 Seconds"
+    },
+    "metadata.socialDescription": {
+      "occurrenceKey": "head:meta:property:og:description",
+      "catalogSourceText": "The Navy SEAL breathing technique to stop stage fright. Calm your nerves in 60 seconds before any presentation. Free timer."
+    },
+    "metadata.twitterTitle": {
+      "occurrenceKey": "head:meta:name:twitter:title",
+      "catalogSourceText": "Box Breathing Before Presentation: Stop Stage Fright"
+    },
+    "metadata.twitterDescription": {
+      "occurrenceKey": "head:meta:name:twitter:description",
+      "catalogSourceText": "Navy SEAL technique to calm presentation nerves in 60 seconds. Free timer. Try now."
+    },
+    "loading.ariaLabel": {
+      "occurrenceKey": "attr:div.min-h-screen.flex:aria-label:pos:0",
+      "catalogSourceText": "Loading breathing exercise"
+    },
+    "hero.eyebrow": {
+      "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+      "catalogSourceText": "PRESENTATION NERVES"
+    },
+    "hero.title": {
+      "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+      "catalogSourceText": "Box Breathing Before a Presentation"
+    },
+    "hero.intro": {
+      "occurrenceKey": "sel:p.max-w-xl.text-lg:ctx:p:pos:0",
+      "catalogSourceText": "Heart racing before a presentation? Navy SEALs use this technique before high-stakes missions. 4-6 cycles (about 90 seconds) will calm your nerves so you can speak clearly and confidently."
+    },
+    "updated": {
+      "occurrenceKey": "sel:p.mb-6.text-xs:ctx:p:pos:0",
+      "catalogSourceText": "Last updated: January 27, 2026"
+    },
+    "starterGrid.starter.title": {
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+      "catalogSourceText": "Quick pre-presentation calm"
+    },
+    "starterGrid.starter.body": {
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0",
+      "catalogSourceText": "Do 4-6 cycles 5-10 minutes before you present. Find a quiet spot: bathroom, hallway, or your car."
+    },
+    "starterGrid.starter.primaryAction": {
+      "occurrenceKey": "sel:a.rounded-full.bg-primary:ctx:link:pos:0",
+      "catalogSourceText": "Open box breathing timer"
+    },
+    "starterGrid.starter.secondaryAction": {
+      "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:0",
+      "catalogSourceText": "Public speaking guide"
+    },
+    "starterGrid.protocol.title": {
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
+      "catalogSourceText": "Presentation protocol"
+    },
+    "starterGrid.protocol.items.0.label": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:0",
+      "catalogSourceText": "5-10 min before:"
+    },
+    "starterGrid.protocol.items.0.body": {
+      "occurrenceKey": "sel:li:ctx:li:pos:0",
+      "catalogSourceText": "Do 4-6 full cycles (90 seconds)"
+    },
+    "starterGrid.protocol.items.1.label": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:1",
+      "catalogSourceText": "While waiting:"
+    },
+    "starterGrid.protocol.items.1.body": {
+      "occurrenceKey": "sel:li:ctx:li:pos:1",
+      "catalogSourceText": "2-3 silent cycles to stay calm"
+    },
+    "starterGrid.protocol.items.2.label": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:2",
+      "catalogSourceText": "Pattern:"
+    },
+    "starterGrid.protocol.items.2.body": {
+      "occurrenceKey": "sel:li:ctx:li:pos:2",
+      "catalogSourceText": "4s inhale, 4s hold, 4s exhale, 4s hold"
+    },
+    "starterGrid.protocol.items.3.label": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:3",
+      "catalogSourceText": "If nervous during:"
+    },
+    "starterGrid.protocol.items.3.body": {
+      "occurrenceKey": "sel:li:ctx:li:pos:3",
+      "catalogSourceText": "Take one slow breath through your nose"
+    },
+    "prose.title": {
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:2",
+      "catalogSourceText": "Why box breathing works for presentation anxiety"
+    },
+    "prose.paragraphs.0.text": {
+      "occurrenceKey": "sel:p:ctx:p:pos:0",
+      "catalogSourceText": "When you're about to present, your brain can't distinguish between a boardroom and a life-threatening situation. It triggers the same ancient alarm system: adrenaline floods your bloodstream, your heart races, blood diverts from your brain to your muscles. This was useful for outrunning predators, not so helpful for explaining Q3 results."
+    },
+    "prose.paragraphs.1.before": {
+      "occurrenceKey": "sel:p:ctx:p:pos:1",
+      "catalogSourceText": "Box breathing works because it"
+    },
+    "prose.paragraphs.1.strong": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:4",
+      "catalogSourceText": "interrupts this panic response"
+    },
+    "prose.paragraphs.1.after": {
+      "occurrenceKey": "sel:p:ctx:p:pos:2",
+      "catalogSourceText": "through two mechanisms. First, the structured 4-4-4-4 counting occupies your prefrontal cortex (thinking brain), preventing it from spinning worst-case scenarios. Second, the slow, even rhythm activates your parasympathetic nervous system, the “rest and digest” mode that tells your body the threat has passed."
+    },
+    "prose.paragraphs.2.text": {
+      "occurrenceKey": "sel:p:ctx:p:pos:3",
+      "catalogSourceText": "Mark Divine, a retired Navy SEAL Commander, introduced box breathing to BUD/S training because SEALs needed a technique that worked reliably under extreme pressure. If it helps operators stay calm during combat, it can help you nail your next presentation."
+    },
+    "numberedSteps.title": {
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:3",
+      "catalogSourceText": "Pre-presentation box breathing protocol"
+    },
+    "numberedSteps.steps.0.title": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:5",
+      "catalogSourceText": "Find a quiet spot (5-10 minutes before)"
+    },
+    "numberedSteps.steps.0.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:0",
+      "catalogSourceText": "Bathroom stall, hallway, your car, or any private space."
+    },
+    "numberedSteps.steps.1.title": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:6",
+      "catalogSourceText": "Stand tall or sit comfortably"
+    },
+    "numberedSteps.steps.1.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:1",
+      "catalogSourceText": "Drop your shoulders, unclench your jaw, relax your hands."
+    },
+    "numberedSteps.steps.2.title": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:7",
+      "catalogSourceText": "Inhale through your nose for 4 counts"
+    },
+    "numberedSteps.steps.2.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:2",
+      "catalogSourceText": "Let your belly expand. Keep it quiet and controlled."
+    },
+    "numberedSteps.steps.3.title": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:8",
+      "catalogSourceText": "Hold for 4 counts"
+    },
+    "numberedSteps.steps.3.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:3",
+      "catalogSourceText": "Stay relaxed. This shouldn't feel strained."
+    },
+    "numberedSteps.steps.4.title": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:9",
+      "catalogSourceText": "Exhale slowly for 4 counts"
+    },
+    "numberedSteps.steps.4.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:4",
+      "catalogSourceText": "Through your nose or pursed lips. Let tension leave with the breath."
+    },
+    "numberedSteps.steps.5.title": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:10",
+      "catalogSourceText": "Hold empty for 4 counts, then repeat"
+    },
+    "numberedSteps.steps.5.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:5",
+      "catalogSourceText": "Complete 4-6 cycles total. You should feel noticeably calmer."
+    },
+    "faq.title": {
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:4",
+      "catalogSourceText": "Frequently asked questions"
+    },
+    "faq.items.0.question": {
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:0",
+      "catalogSourceText": "How long before a presentation should I do box breathing?"
+    },
+    "faq.items.0.answer": {
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:1",
+      "catalogSourceText": "Start 5-10 minutes before your presentation for best results. Do 4-6 cycles (about 90 seconds) in a quiet spot. If you feel nerves rising while waiting, do another quick set of 2-3 cycles. The effects last 15-30 minutes."
+    },
+    "faq.items.1.question": {
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:1",
+      "catalogSourceText": "Why do Navy SEALs use box breathing?"
+    },
+    "faq.items.1.answer": {
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+      "catalogSourceText": "Navy SEALs use box breathing because it reliably activates the parasympathetic nervous system within 60-90 seconds. The structured 4-count rhythm gives the mind something to focus on while the slow pace physiologically lowers heart rate and cortisol, exactly what you need before high-stakes situations."
+    },
+    "faq.items.2.question": {
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:2",
+      "catalogSourceText": "Can I do box breathing right before I speak?"
+    },
+    "faq.items.2.answer": {
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:3",
+      "catalogSourceText": "Yes! If you're being introduced or waiting to take the stage, do 2-3 silent cycles. Breathe through your nose, count in your head, and keep your shoulders relaxed. No one will notice, and you'll feel noticeably calmer when you start speaking."
+    },
+    "related.label": {
+      "occurrenceKey": "sel:p.text-sm.uppercase:ctx:p:pos:0",
+      "catalogSourceText": "Related Guides"
+    },
+    "related.cards.0.title": {
+      "occurrenceKey": "sel:p.text-lg.font-semibold:ctx:product:pos:0",
+      "catalogSourceText": "Public Speaking"
+    },
+    "related.cards.0.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:6",
+      "catalogSourceText": "Complete guide to breathing for presentations and speeches"
+    },
+    "related.cards.0.action": {
+      "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:0",
+      "catalogSourceText": "Learn more →"
+    },
+    "related.cards.1.title": {
+      "occurrenceKey": "sel:p.text-lg.font-semibold:ctx:product:pos:1",
+      "catalogSourceText": "Box Breathing Guide"
+    },
+    "related.cards.1.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:7",
+      "catalogSourceText": "The complete guide to the Navy SEAL breathing technique"
+    },
+    "related.cards.1.action": {
+      "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:1",
+      "catalogSourceText": "Learn more →"
+    },
+    "related.cards.2.title": {
+      "occurrenceKey": "sel:p.text-lg.font-semibold:ctx:product:pos:2",
+      "catalogSourceText": "Anxiety Relief"
+    },
+    "related.cards.2.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:8",
+      "catalogSourceText": "Breathing techniques for anxiety in any situation"
+    },
+    "related.cards.2.action": {
+      "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:2",
+      "catalogSourceText": "Learn more →"
+    },
+    "footer.safety": {
+      "occurrenceKey": "sel:p.text-xs.text-muted-foreground:ctx:p:pos:0",
+      "catalogSourceText": "Stop if dizzy or uncomfortable. Resume with shorter counts if needed."
+    },
+    "footer.links.0": {
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+      "catalogSourceText": "Techniques"
+    },
+    "footer.links.1": {
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+      "catalogSourceText": "Guides"
+    },
+    "footer.links.2": {
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+      "catalogSourceText": "App"
+    },
+    "footer.links.3": {
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:3",
+      "catalogSourceText": "About"
+    },
+    "footer.links.4": {
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+      "catalogSourceText": "About Abi"
+    },
+    "footer.links.5": {
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:5",
+      "catalogSourceText": "Embed"
+    }
+  }
+}

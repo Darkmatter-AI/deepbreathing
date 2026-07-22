@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "reviewedSourceHash": "8128efc60f899d568db15ff8b20263cc1c5c697e38787622f70b770db86a1d2f",
+  "bindings": {
+    "abi.hero.eyebrow": {
+      "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+      "catalogSourceText": "Deep Breathing Exercises",
+      "reason": "The current JSX applies uppercase source presentation while the approved catalog stores the same brand label in title case."
+    },
+    "editorialPolicy.metadata.title": {
+      "occurrenceKey": "head:title",
+      "catalogSourceText": "Editorial Policy | Deep Breathing Exercises | Deep Breathing Exercises",
+      "reason": "The crawled title includes the shared layout suffix twice; bind the current route-owned metadata title to that approved head placement without changing English output."
+    },
+    "editorialPolicy.metadata.socialTitle": {
+      "occurrenceKey": "head:meta:property:og:title",
+      "catalogSourceText": "Our Editorial Policy",
+      "reason": "Disambiguate the identical approved Open Graph and Twitter title placements."
+    },
+    "editorialPolicy.metadata.twitterTitle": {
+      "occurrenceKey": "head:meta:name:twitter:title",
+      "catalogSourceText": "Our Editorial Policy",
+      "reason": "Disambiguate the identical approved Open Graph and Twitter title placements."
+    },
+    "editorialPolicy.metadata.twitterDescription": {
+      "occurrenceKey": "head:meta:name:twitter:description",
+      "catalogSourceText": "How we research, write, and update our breathing-technique guides.",
+      "reason": "Disambiguate the identical approved Twitter description and visible hero introduction."
+    },
+    "editorialPolicy.hero.eyebrow": {
+      "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+      "catalogSourceText": "About",
+      "reason": "The current JSX applies uppercase source presentation while the approved catalog stores the same section label in title case."
+    },
+    "editorialPolicy.hero.title": {
+      "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+      "catalogSourceText": "Editorial policy",
+      "reason": "Bind the current title-case heading to the approved catalog placement whose source differs only by capitalization."
+    },
+    "editorialPolicy.hero.intro": {
+      "occurrenceKey": "sel:p.text-lg.text-muted-foreground:ctx:p:pos:0",
+      "catalogSourceText": "How we research, write, and update our breathing-technique guides.",
+      "reason": "Disambiguate the identical approved Twitter description and visible hero introduction."
+    },
+    "editorialPolicy.content.whatSiteIs.abiName": {
+      "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:0",
+      "catalogSourceText": "Abi Abiassi",
+      "reason": "Disambiguate the two approved links with the same person name."
+    },
+    "editorialPolicy.content.whoBuilt.abiName": {
+      "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:2",
+      "catalogSourceText": "Abi Abiassi",
+      "reason": "Disambiguate the two approved links with the same person name."
+    },
+    "editorialPolicy.footer.about": {
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+      "catalogSourceText": "About",
+      "reason": "Disambiguate the approved visible eyebrow and footer link placements."
+    }
+  },
+  "localeBindings": {
+    "abi.footer.about": {
+      "ja-jp": {
+        "catalogRoute": "/about",
+        "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+        "catalogSourceText": "About",
+        "catalogTranslationText": "概要",
+        "reason": "Use the approved Japanese visible About heading from the preserved /about catalog instead of the untranslated route-footer occurrence."
+      }
+    },
+    "editorialPolicy.footer.about": {
+      "ja-jp": {
+        "catalogRoute": "/about",
+        "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+        "catalogSourceText": "About",
+        "catalogTranslationText": "概要",
+        "reason": "Use the approved Japanese visible About heading from the preserved /about catalog instead of the untranslated route-footer occurrence."
+      }
+    }
+  }
+}

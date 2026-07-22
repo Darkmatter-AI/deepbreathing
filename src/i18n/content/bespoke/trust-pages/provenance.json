@@ -1,0 +1,3024 @@
+{
+  "routes": {
+    "abi": {
+      "locales": {
+        "de-de": {
+          "contact.afterEmail": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-3.text-sm:ctx:p:pos:2",
+            "sourceHash": "20dc2043332bb8d0152b460f4b613088a131f26a5869fd824c260e797e645d60",
+            "status": "route-catalog-exact"
+          },
+          "contact.beforeEmail": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-3.text-sm:ctx:p:pos:1",
+            "sourceHash": "27960a3d7e7a3ee9b1cc0b003e8d0761aba5fa6a9bfa7dbf359520f93de35bb2",
+            "status": "route-catalog-exact"
+          },
+          "contact.email": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:0",
+            "sourceHash": "e64f030216766faf1005a0b732c299660e8385d512aaca2fb34c1464a761bf72",
+            "status": "route-catalog-exact"
+          },
+          "contact.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:2",
+            "sourceHash": "115e410f01dc4013592a3d977a603094c0ed4e5e8ec8b31d18332b340edd3a1e",
+            "status": "route-catalog-exact"
+          },
+          "elsewhere.linkedin": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:1",
+            "sourceHash": "76249a9c099e37b652bdb28cdef7c9af0248e096ebe64b3ee5ae87a1ed0f8f16",
+            "status": "route-catalog-exact"
+          },
+          "elsewhere.personalSite": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:0",
+            "sourceHash": "50eddafef34dd85ba287c2c764480fd8f68f55798737693401b0198da999904f",
+            "status": "route-catalog-exact"
+          },
+          "elsewhere.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+            "sourceHash": "7b2afac3622b2e54332987af76e9187bf7e0ffc5c6de3e204c1c513d2b5d706a",
+            "status": "route-catalog-exact"
+          },
+          "elsewhere.twitter": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:2",
+            "sourceHash": "f07896448d868cdff8d00006e2ab130e74291238ab2d4d20d02b04361d6e8cb2",
+            "status": "route-catalog-exact"
+          },
+          "footer.about": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+            "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+            "status": "route-catalog-exact"
+          },
+          "footer.editorialPolicy": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+            "sourceHash": "3cd1d6ea2c12ccea8d702ef78f778c4606e55ab7600e326084ef2cb5ac637da0",
+            "status": "route-catalog-exact"
+          },
+          "footer.embed": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+            "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+            "status": "route-catalog-exact"
+          },
+          "footer.guides": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:3",
+            "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+            "status": "route-catalog-exact"
+          },
+          "footer.privacy": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:5",
+            "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+            "status": "route-catalog-exact"
+          },
+          "footer.techniques": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+            "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+            "status": "route-catalog-exact"
+          },
+          "hero.eyebrow": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+            "reason": "The current JSX applies uppercase source presentation while the approved catalog stores the same brand label in title case.",
+            "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "hero.imageAlt": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "attr:img.h-32.w-32:alt:pos:0",
+            "sourceHash": "2d6040623d71ef93da49a7faf035ccbb84481b58935f7618b6114af9760a4b7f",
+            "status": "route-catalog-exact"
+          },
+          "hero.intro": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.text-lg.text-muted-foreground:ctx:p:pos:0",
+            "sourceHash": "36506f562a7147259ac3a53eb78c205db54187e581f61813be4534bf50bc8ea2",
+            "status": "route-catalog-exact"
+          },
+          "hero.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+            "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+            "status": "route-catalog-exact"
+          },
+          "metadata.description": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:name:description",
+            "sourceHash": "6d0d18a3a3c3ce01c60440ecc7023dd46ce2bba6e3d54c207bc3b5ffd8ff3cbd",
+            "status": "route-catalog-exact"
+          },
+          "metadata.socialDescription": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:property:og:description",
+            "sourceHash": "d409a1d525aeedd79be2ce2367828863f3482e4685918f15251848ed72f9da4a",
+            "status": "route-catalog-exact"
+          },
+          "metadata.socialTitle": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:property:og:title",
+            "sourceHash": "459b6af22548e8ca4de62ded9d3935b30f375624aa2ed4ab342ab84bce17ed99",
+            "status": "route-catalog-exact"
+          },
+          "metadata.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:property:og:title",
+            "sourceHash": "459b6af22548e8ca4de62ded9d3935b30f375624aa2ed4ab342ab84bce17ed99",
+            "status": "route-catalog-exact"
+          },
+          "metadata.twitterDescription": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:name:twitter:description",
+            "sourceHash": "2d71c97689fd1b7abd7a3625374c24806685ac83daad71c223060059e6a6583c",
+            "status": "route-catalog-exact"
+          },
+          "metadata.twitterTitle": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:name:twitter:title",
+            "sourceHash": "1d323350e356bd49ffefb7bcc88947e62b509da11909f67bd54667e819bc0299",
+            "status": "route-catalog-exact"
+          },
+          "methodology.disclaimer": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-6.text-sm:ctx:p:pos:0",
+            "sourceHash": "9799ffc3e1d98370819d21f66e1c65bdd487d7da1db0426b8a9944bbc2515b8a",
+            "status": "route-catalog-exact"
+          },
+          "methodology.intro": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-3.text-sm:ctx:p:pos:0",
+            "sourceHash": "af3ddd6169cab587fc80ffe1333ac007307aea1e3a9cdae91e774ac4eae7ea1e",
+            "status": "route-catalog-exact"
+          },
+          "methodology.policyLink": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:3",
+            "sourceHash": "098e7dc76f90bedc813126a179e6eefb50fbf72aa9e8ca1bf0352a11511bf60a",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.coverage.body": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:0",
+            "sourceHash": "8e1bd5934c992a85d12b2ace4bd9d52acdde00051a74dc1917228f475ffdf3bf",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.coverage.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:0",
+            "sourceHash": "ce2fb5a9491d0193fb5434183666b6279a640f40a2d01acb72a255aa6886a4e2",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.evidence.body": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:5",
+            "sourceHash": "aaf9508944767b880cf922ac1955dd51d82784d17a588c0bcf529145a23442f9",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.evidence.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:4",
+            "sourceHash": "e2f6af5d9bc3b769e2a6cb8d4d77ff54491b66f518b57ac56822e1e89a474c65",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.lineage.afterBook": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:2",
+            "sourceHash": "b3efb991c2957cd90df5bc16c5b81f16b4bd389338e7e95dd7ed57296bc4c4f5",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.lineage.beforeBook": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:1",
+            "sourceHash": "344f1a442a427fd316bd38cb14a94e155043c939b106a05c6e5b51af4d25b3ca",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.lineage.bookTitle": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:em:ctx:em:pos:0",
+            "sourceHash": "b5b49fb36450b7864fe8153b414083bb4cf65ea671cf63d05ba1abbd4d5a762d",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.lineage.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:1",
+            "sourceHash": "bcbac4fe9747440fa52c09574027b6f783d66c8d5470816bded9f64e33d78102",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.research.body": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:3",
+            "sourceHash": "98f103b64c96d5965454ef087965d0c1021fa2d35731048dbe04626e5be4597c",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.research.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:2",
+            "sourceHash": "02c1f82f7feda833d1bec676a755205d90406616e47d5d7f32fc622b1b579ccd",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.sources.body": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:6",
+            "sourceHash": "9abac2b14609e85b79f3568c56f04d12da7b1d2212dffbcaeabdb6772acf392d",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.sources.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:5",
+            "sourceHash": "ee70a01058f711b2b9a4c59ada6da59375c5f1ea7b258e7393b0e5056fdd416d",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.verification.body": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:4",
+            "sourceHash": "7bfbbed8e9fb431e04ed4ff6354cfa93ca4134bcc219b97b7577983fc64a56fd",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.verification.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:3",
+            "sourceHash": "b89c97b8aa7f4b15b95373a6d0cfdc8fd55832339f465509d9e87e972e77f361",
+            "status": "route-catalog-exact"
+          },
+          "methodology.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
+            "sourceHash": "f26d07e6b71e42596791a241e24179315c0f6e256b19a911328c05ca97f4a6a1",
+            "status": "route-catalog-exact"
+          },
+          "story.family": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p:ctx:p:pos:0",
+            "sourceHash": "84d18c4859bf3e7a43afd27c85953cc2c591a6e4a89f890ad43d9940efe1f689",
+            "status": "route-catalog-exact"
+          },
+          "story.hope": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-4:ctx:p:pos:1",
+            "sourceHash": "7d7d45c47c6346b81a0da3904892faaee09a3bfa9e4495e724f6793ee7e5ca35",
+            "status": "route-catalog-exact"
+          },
+          "story.visualizer": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-4:ctx:p:pos:0",
+            "sourceHash": "831be4dbbe61a0e7b69c0ab093309f55a3d5086f6eec472d6b84692f75b90124",
+            "status": "route-catalog-exact"
+          }
+        },
+        "es-es": {
+          "contact.afterEmail": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-3.text-sm:ctx:p:pos:2",
+            "sourceHash": "20dc2043332bb8d0152b460f4b613088a131f26a5869fd824c260e797e645d60",
+            "status": "route-catalog-exact"
+          },
+          "contact.beforeEmail": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-3.text-sm:ctx:p:pos:1",
+            "sourceHash": "27960a3d7e7a3ee9b1cc0b003e8d0761aba5fa6a9bfa7dbf359520f93de35bb2",
+            "status": "route-catalog-exact"
+          },
+          "contact.email": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:0",
+            "sourceHash": "e64f030216766faf1005a0b732c299660e8385d512aaca2fb34c1464a761bf72",
+            "status": "route-catalog-exact"
+          },
+          "contact.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:2",
+            "sourceHash": "115e410f01dc4013592a3d977a603094c0ed4e5e8ec8b31d18332b340edd3a1e",
+            "status": "route-catalog-exact"
+          },
+          "elsewhere.linkedin": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:1",
+            "sourceHash": "76249a9c099e37b652bdb28cdef7c9af0248e096ebe64b3ee5ae87a1ed0f8f16",
+            "status": "route-catalog-exact"
+          },
+          "elsewhere.personalSite": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:0",
+            "sourceHash": "50eddafef34dd85ba287c2c764480fd8f68f55798737693401b0198da999904f",
+            "status": "route-catalog-exact"
+          },
+          "elsewhere.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+            "sourceHash": "7b2afac3622b2e54332987af76e9187bf7e0ffc5c6de3e204c1c513d2b5d706a",
+            "status": "route-catalog-exact"
+          },
+          "elsewhere.twitter": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:2",
+            "sourceHash": "f07896448d868cdff8d00006e2ab130e74291238ab2d4d20d02b04361d6e8cb2",
+            "status": "route-catalog-exact"
+          },
+          "footer.about": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+            "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+            "status": "route-catalog-exact"
+          },
+          "footer.editorialPolicy": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+            "sourceHash": "3cd1d6ea2c12ccea8d702ef78f778c4606e55ab7600e326084ef2cb5ac637da0",
+            "status": "route-catalog-exact"
+          },
+          "footer.embed": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+            "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+            "status": "route-catalog-exact"
+          },
+          "footer.guides": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:3",
+            "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+            "status": "route-catalog-exact"
+          },
+          "footer.privacy": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:5",
+            "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+            "status": "route-catalog-exact"
+          },
+          "footer.techniques": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+            "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+            "status": "route-catalog-exact"
+          },
+          "hero.eyebrow": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+            "reason": "The current JSX applies uppercase source presentation while the approved catalog stores the same brand label in title case.",
+            "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "hero.imageAlt": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "attr:img.h-32.w-32:alt:pos:0",
+            "sourceHash": "2d6040623d71ef93da49a7faf035ccbb84481b58935f7618b6114af9760a4b7f",
+            "status": "route-catalog-exact"
+          },
+          "hero.intro": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.text-lg.text-muted-foreground:ctx:p:pos:0",
+            "sourceHash": "36506f562a7147259ac3a53eb78c205db54187e581f61813be4534bf50bc8ea2",
+            "status": "route-catalog-exact"
+          },
+          "hero.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+            "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+            "status": "route-catalog-exact"
+          },
+          "metadata.description": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:name:description",
+            "sourceHash": "6d0d18a3a3c3ce01c60440ecc7023dd46ce2bba6e3d54c207bc3b5ffd8ff3cbd",
+            "status": "route-catalog-exact"
+          },
+          "metadata.socialDescription": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:property:og:description",
+            "sourceHash": "d409a1d525aeedd79be2ce2367828863f3482e4685918f15251848ed72f9da4a",
+            "status": "route-catalog-exact"
+          },
+          "metadata.socialTitle": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:property:og:title",
+            "sourceHash": "459b6af22548e8ca4de62ded9d3935b30f375624aa2ed4ab342ab84bce17ed99",
+            "status": "route-catalog-exact"
+          },
+          "metadata.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:property:og:title",
+            "sourceHash": "459b6af22548e8ca4de62ded9d3935b30f375624aa2ed4ab342ab84bce17ed99",
+            "status": "route-catalog-exact"
+          },
+          "metadata.twitterDescription": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:name:twitter:description",
+            "sourceHash": "2d71c97689fd1b7abd7a3625374c24806685ac83daad71c223060059e6a6583c",
+            "status": "route-catalog-exact"
+          },
+          "metadata.twitterTitle": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:name:twitter:title",
+            "sourceHash": "1d323350e356bd49ffefb7bcc88947e62b509da11909f67bd54667e819bc0299",
+            "status": "route-catalog-exact"
+          },
+          "methodology.disclaimer": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-6.text-sm:ctx:p:pos:0",
+            "sourceHash": "9799ffc3e1d98370819d21f66e1c65bdd487d7da1db0426b8a9944bbc2515b8a",
+            "status": "route-catalog-exact"
+          },
+          "methodology.intro": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-3.text-sm:ctx:p:pos:0",
+            "sourceHash": "af3ddd6169cab587fc80ffe1333ac007307aea1e3a9cdae91e774ac4eae7ea1e",
+            "status": "route-catalog-exact"
+          },
+          "methodology.policyLink": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:3",
+            "sourceHash": "098e7dc76f90bedc813126a179e6eefb50fbf72aa9e8ca1bf0352a11511bf60a",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.coverage.body": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:0",
+            "sourceHash": "8e1bd5934c992a85d12b2ace4bd9d52acdde00051a74dc1917228f475ffdf3bf",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.coverage.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:0",
+            "sourceHash": "ce2fb5a9491d0193fb5434183666b6279a640f40a2d01acb72a255aa6886a4e2",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.evidence.body": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:5",
+            "sourceHash": "aaf9508944767b880cf922ac1955dd51d82784d17a588c0bcf529145a23442f9",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.evidence.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:4",
+            "sourceHash": "e2f6af5d9bc3b769e2a6cb8d4d77ff54491b66f518b57ac56822e1e89a474c65",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.lineage.afterBook": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:2",
+            "sourceHash": "b3efb991c2957cd90df5bc16c5b81f16b4bd389338e7e95dd7ed57296bc4c4f5",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.lineage.beforeBook": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:1",
+            "sourceHash": "344f1a442a427fd316bd38cb14a94e155043c939b106a05c6e5b51af4d25b3ca",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.lineage.bookTitle": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:em:ctx:em:pos:0",
+            "sourceHash": "b5b49fb36450b7864fe8153b414083bb4cf65ea671cf63d05ba1abbd4d5a762d",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.lineage.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:1",
+            "sourceHash": "bcbac4fe9747440fa52c09574027b6f783d66c8d5470816bded9f64e33d78102",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.research.body": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:3",
+            "sourceHash": "98f103b64c96d5965454ef087965d0c1021fa2d35731048dbe04626e5be4597c",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.research.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:2",
+            "sourceHash": "02c1f82f7feda833d1bec676a755205d90406616e47d5d7f32fc622b1b579ccd",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.sources.body": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:6",
+            "sourceHash": "9abac2b14609e85b79f3568c56f04d12da7b1d2212dffbcaeabdb6772acf392d",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.sources.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:5",
+            "sourceHash": "ee70a01058f711b2b9a4c59ada6da59375c5f1ea7b258e7393b0e5056fdd416d",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.verification.body": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:4",
+            "sourceHash": "7bfbbed8e9fb431e04ed4ff6354cfa93ca4134bcc219b97b7577983fc64a56fd",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.verification.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:3",
+            "sourceHash": "b89c97b8aa7f4b15b95373a6d0cfdc8fd55832339f465509d9e87e972e77f361",
+            "status": "route-catalog-exact"
+          },
+          "methodology.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
+            "sourceHash": "f26d07e6b71e42596791a241e24179315c0f6e256b19a911328c05ca97f4a6a1",
+            "status": "route-catalog-exact"
+          },
+          "story.family": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p:ctx:p:pos:0",
+            "sourceHash": "84d18c4859bf3e7a43afd27c85953cc2c591a6e4a89f890ad43d9940efe1f689",
+            "status": "route-catalog-exact"
+          },
+          "story.hope": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-4:ctx:p:pos:1",
+            "sourceHash": "7d7d45c47c6346b81a0da3904892faaee09a3bfa9e4495e724f6793ee7e5ca35",
+            "status": "route-catalog-exact"
+          },
+          "story.visualizer": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-4:ctx:p:pos:0",
+            "sourceHash": "831be4dbbe61a0e7b69c0ab093309f55a3d5086f6eec472d6b84692f75b90124",
+            "status": "route-catalog-exact"
+          }
+        },
+        "fr-fr": {
+          "contact.afterEmail": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-3.text-sm:ctx:p:pos:2",
+            "sourceHash": "20dc2043332bb8d0152b460f4b613088a131f26a5869fd824c260e797e645d60",
+            "status": "route-catalog-exact"
+          },
+          "contact.beforeEmail": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-3.text-sm:ctx:p:pos:1",
+            "sourceHash": "27960a3d7e7a3ee9b1cc0b003e8d0761aba5fa6a9bfa7dbf359520f93de35bb2",
+            "status": "route-catalog-exact"
+          },
+          "contact.email": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:0",
+            "sourceHash": "e64f030216766faf1005a0b732c299660e8385d512aaca2fb34c1464a761bf72",
+            "status": "route-catalog-exact"
+          },
+          "contact.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:2",
+            "sourceHash": "115e410f01dc4013592a3d977a603094c0ed4e5e8ec8b31d18332b340edd3a1e",
+            "status": "route-catalog-exact"
+          },
+          "elsewhere.linkedin": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:1",
+            "sourceHash": "76249a9c099e37b652bdb28cdef7c9af0248e096ebe64b3ee5ae87a1ed0f8f16",
+            "status": "route-catalog-exact"
+          },
+          "elsewhere.personalSite": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:0",
+            "sourceHash": "50eddafef34dd85ba287c2c764480fd8f68f55798737693401b0198da999904f",
+            "status": "route-catalog-exact"
+          },
+          "elsewhere.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+            "sourceHash": "7b2afac3622b2e54332987af76e9187bf7e0ffc5c6de3e204c1c513d2b5d706a",
+            "status": "route-catalog-exact"
+          },
+          "elsewhere.twitter": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:2",
+            "sourceHash": "f07896448d868cdff8d00006e2ab130e74291238ab2d4d20d02b04361d6e8cb2",
+            "status": "route-catalog-exact"
+          },
+          "footer.about": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+            "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+            "status": "route-catalog-exact"
+          },
+          "footer.editorialPolicy": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+            "sourceHash": "3cd1d6ea2c12ccea8d702ef78f778c4606e55ab7600e326084ef2cb5ac637da0",
+            "status": "route-catalog-exact"
+          },
+          "footer.embed": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+            "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+            "status": "route-catalog-exact"
+          },
+          "footer.guides": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:3",
+            "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+            "status": "route-catalog-exact"
+          },
+          "footer.privacy": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:5",
+            "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+            "status": "route-catalog-exact"
+          },
+          "footer.techniques": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+            "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+            "status": "route-catalog-exact"
+          },
+          "hero.eyebrow": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+            "reason": "The current JSX applies uppercase source presentation while the approved catalog stores the same brand label in title case.",
+            "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "hero.imageAlt": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "attr:img.h-32.w-32:alt:pos:0",
+            "sourceHash": "2d6040623d71ef93da49a7faf035ccbb84481b58935f7618b6114af9760a4b7f",
+            "status": "route-catalog-exact"
+          },
+          "hero.intro": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.text-lg.text-muted-foreground:ctx:p:pos:0",
+            "sourceHash": "36506f562a7147259ac3a53eb78c205db54187e581f61813be4534bf50bc8ea2",
+            "status": "route-catalog-exact"
+          },
+          "hero.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+            "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+            "status": "route-catalog-exact"
+          },
+          "metadata.description": {
+            "evidence": [
+              {
+                "catalogRoute": "/about/abi",
+                "occurrenceKey": "head:meta:name:description"
+              }
+            ],
+            "reason": "The approved French and Portuguese metadata descriptions are truncated after the role list begins; these reviewed values restore the complete source meaning.",
+            "sourceHash": "6d0d18a3a3c3ce01c60440ecc7023dd46ce2bba6e3d54c207bc3b5ffd8ff3cbd",
+            "status": "repo-reviewed-replacement"
+          },
+          "metadata.socialDescription": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:property:og:description",
+            "sourceHash": "d409a1d525aeedd79be2ce2367828863f3482e4685918f15251848ed72f9da4a",
+            "status": "route-catalog-exact"
+          },
+          "metadata.socialTitle": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:property:og:title",
+            "sourceHash": "459b6af22548e8ca4de62ded9d3935b30f375624aa2ed4ab342ab84bce17ed99",
+            "status": "route-catalog-exact"
+          },
+          "metadata.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:property:og:title",
+            "sourceHash": "459b6af22548e8ca4de62ded9d3935b30f375624aa2ed4ab342ab84bce17ed99",
+            "status": "route-catalog-exact"
+          },
+          "metadata.twitterDescription": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:name:twitter:description",
+            "sourceHash": "2d71c97689fd1b7abd7a3625374c24806685ac83daad71c223060059e6a6583c",
+            "status": "route-catalog-exact"
+          },
+          "metadata.twitterTitle": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:name:twitter:title",
+            "sourceHash": "1d323350e356bd49ffefb7bcc88947e62b509da11909f67bd54667e819bc0299",
+            "status": "route-catalog-exact"
+          },
+          "methodology.disclaimer": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-6.text-sm:ctx:p:pos:0",
+            "sourceHash": "9799ffc3e1d98370819d21f66e1c65bdd487d7da1db0426b8a9944bbc2515b8a",
+            "status": "route-catalog-exact"
+          },
+          "methodology.intro": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-3.text-sm:ctx:p:pos:0",
+            "sourceHash": "af3ddd6169cab587fc80ffe1333ac007307aea1e3a9cdae91e774ac4eae7ea1e",
+            "status": "route-catalog-exact"
+          },
+          "methodology.policyLink": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:3",
+            "sourceHash": "098e7dc76f90bedc813126a179e6eefb50fbf72aa9e8ca1bf0352a11511bf60a",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.coverage.body": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:0",
+            "sourceHash": "8e1bd5934c992a85d12b2ace4bd9d52acdde00051a74dc1917228f475ffdf3bf",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.coverage.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:0",
+            "sourceHash": "ce2fb5a9491d0193fb5434183666b6279a640f40a2d01acb72a255aa6886a4e2",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.evidence.body": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:5",
+            "sourceHash": "aaf9508944767b880cf922ac1955dd51d82784d17a588c0bcf529145a23442f9",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.evidence.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:4",
+            "sourceHash": "e2f6af5d9bc3b769e2a6cb8d4d77ff54491b66f518b57ac56822e1e89a474c65",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.lineage.afterBook": {
+            "evidence": [
+              {
+                "catalogRoute": "/about/abi",
+                "occurrenceKey": "sel:div:ctx:div:pos:1"
+              },
+              {
+                "catalogRoute": "/about/abi",
+                "occurrenceKey": "sel:div:ctx:div:pos:2"
+              },
+              {
+                "catalogRoute": "/breathe/breath-of-fire",
+                "occurrenceKey": "sel:cite.mt-2.block:ctx:cite:pos:0"
+              }
+            ],
+            "reason": "Compose the approved French route fragments without repeating the separately rendered book title, and carry the approved XVe siècle qualifier into the trailing fragment.",
+            "sourceHash": "b3efb991c2957cd90df5bc16c5b81f16b4bd389338e7e95dd7ed57296bc4c4f5",
+            "status": "repo-reviewed-replacement"
+          },
+          "methodology.steps.lineage.beforeBook": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:1",
+            "sourceHash": "344f1a442a427fd316bd38cb14a94e155043c939b106a05c6e5b51af4d25b3ca",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.lineage.bookTitle": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:em:ctx:em:pos:0",
+            "sourceHash": "b5b49fb36450b7864fe8153b414083bb4cf65ea671cf63d05ba1abbd4d5a762d",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.lineage.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:1",
+            "sourceHash": "bcbac4fe9747440fa52c09574027b6f783d66c8d5470816bded9f64e33d78102",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.research.body": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:3",
+            "sourceHash": "98f103b64c96d5965454ef087965d0c1021fa2d35731048dbe04626e5be4597c",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.research.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:2",
+            "sourceHash": "02c1f82f7feda833d1bec676a755205d90406616e47d5d7f32fc622b1b579ccd",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.sources.body": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:6",
+            "sourceHash": "9abac2b14609e85b79f3568c56f04d12da7b1d2212dffbcaeabdb6772acf392d",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.sources.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:5",
+            "sourceHash": "ee70a01058f711b2b9a4c59ada6da59375c5f1ea7b258e7393b0e5056fdd416d",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.verification.body": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:4",
+            "sourceHash": "7bfbbed8e9fb431e04ed4ff6354cfa93ca4134bcc219b97b7577983fc64a56fd",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.verification.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:3",
+            "sourceHash": "b89c97b8aa7f4b15b95373a6d0cfdc8fd55832339f465509d9e87e972e77f361",
+            "status": "route-catalog-exact"
+          },
+          "methodology.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
+            "sourceHash": "f26d07e6b71e42596791a241e24179315c0f6e256b19a911328c05ca97f4a6a1",
+            "status": "route-catalog-exact"
+          },
+          "story.family": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p:ctx:p:pos:0",
+            "sourceHash": "84d18c4859bf3e7a43afd27c85953cc2c591a6e4a89f890ad43d9940efe1f689",
+            "status": "route-catalog-exact"
+          },
+          "story.hope": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-4:ctx:p:pos:1",
+            "sourceHash": "7d7d45c47c6346b81a0da3904892faaee09a3bfa9e4495e724f6793ee7e5ca35",
+            "status": "route-catalog-exact"
+          },
+          "story.visualizer": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-4:ctx:p:pos:0",
+            "sourceHash": "831be4dbbe61a0e7b69c0ab093309f55a3d5086f6eec472d6b84692f75b90124",
+            "status": "route-catalog-exact"
+          }
+        },
+        "ja-jp": {
+          "contact.afterEmail": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-3.text-sm:ctx:p:pos:2",
+            "sourceHash": "20dc2043332bb8d0152b460f4b613088a131f26a5869fd824c260e797e645d60",
+            "status": "route-catalog-exact"
+          },
+          "contact.beforeEmail": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-3.text-sm:ctx:p:pos:1",
+            "sourceHash": "27960a3d7e7a3ee9b1cc0b003e8d0761aba5fa6a9bfa7dbf359520f93de35bb2",
+            "status": "route-catalog-exact"
+          },
+          "contact.email": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:0",
+            "sourceHash": "e64f030216766faf1005a0b732c299660e8385d512aaca2fb34c1464a761bf72",
+            "status": "route-catalog-exact"
+          },
+          "contact.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:2",
+            "sourceHash": "115e410f01dc4013592a3d977a603094c0ed4e5e8ec8b31d18332b340edd3a1e",
+            "status": "route-catalog-exact"
+          },
+          "elsewhere.linkedin": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:1",
+            "sourceHash": "76249a9c099e37b652bdb28cdef7c9af0248e096ebe64b3ee5ae87a1ed0f8f16",
+            "status": "route-catalog-exact"
+          },
+          "elsewhere.personalSite": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:0",
+            "sourceHash": "50eddafef34dd85ba287c2c764480fd8f68f55798737693401b0198da999904f",
+            "status": "route-catalog-exact"
+          },
+          "elsewhere.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+            "sourceHash": "7b2afac3622b2e54332987af76e9187bf7e0ffc5c6de3e204c1c513d2b5d706a",
+            "status": "route-catalog-exact"
+          },
+          "elsewhere.twitter": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:2",
+            "sourceHash": "f07896448d868cdff8d00006e2ab130e74291238ab2d4d20d02b04361d6e8cb2",
+            "status": "route-catalog-exact"
+          },
+          "footer.about": {
+            "catalogRoute": "/about",
+            "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+            "reason": "Use the approved Japanese visible About heading from the preserved /about catalog instead of the untranslated route-footer occurrence.",
+            "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "footer.editorialPolicy": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+            "sourceHash": "3cd1d6ea2c12ccea8d702ef78f778c4606e55ab7600e326084ef2cb5ac637da0",
+            "status": "route-catalog-exact"
+          },
+          "footer.embed": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+            "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+            "status": "route-catalog-exact"
+          },
+          "footer.guides": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:3",
+            "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+            "status": "route-catalog-exact"
+          },
+          "footer.privacy": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:5",
+            "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+            "status": "route-catalog-exact"
+          },
+          "footer.techniques": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+            "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+            "status": "route-catalog-exact"
+          },
+          "hero.eyebrow": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+            "reason": "The current JSX applies uppercase source presentation while the approved catalog stores the same brand label in title case.",
+            "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "hero.imageAlt": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "attr:img.h-32.w-32:alt:pos:0",
+            "sourceHash": "2d6040623d71ef93da49a7faf035ccbb84481b58935f7618b6114af9760a4b7f",
+            "status": "route-catalog-exact"
+          },
+          "hero.intro": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.text-lg.text-muted-foreground:ctx:p:pos:0",
+            "sourceHash": "36506f562a7147259ac3a53eb78c205db54187e581f61813be4534bf50bc8ea2",
+            "status": "route-catalog-exact"
+          },
+          "hero.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+            "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+            "status": "route-catalog-exact"
+          },
+          "metadata.description": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:name:description",
+            "sourceHash": "6d0d18a3a3c3ce01c60440ecc7023dd46ce2bba6e3d54c207bc3b5ffd8ff3cbd",
+            "status": "route-catalog-exact"
+          },
+          "metadata.socialDescription": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:property:og:description",
+            "sourceHash": "d409a1d525aeedd79be2ce2367828863f3482e4685918f15251848ed72f9da4a",
+            "status": "route-catalog-exact"
+          },
+          "metadata.socialTitle": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:property:og:title",
+            "sourceHash": "459b6af22548e8ca4de62ded9d3935b30f375624aa2ed4ab342ab84bce17ed99",
+            "status": "route-catalog-exact"
+          },
+          "metadata.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:property:og:title",
+            "sourceHash": "459b6af22548e8ca4de62ded9d3935b30f375624aa2ed4ab342ab84bce17ed99",
+            "status": "route-catalog-exact"
+          },
+          "metadata.twitterDescription": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:name:twitter:description",
+            "sourceHash": "2d71c97689fd1b7abd7a3625374c24806685ac83daad71c223060059e6a6583c",
+            "status": "route-catalog-exact"
+          },
+          "metadata.twitterTitle": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:name:twitter:title",
+            "sourceHash": "1d323350e356bd49ffefb7bcc88947e62b509da11909f67bd54667e819bc0299",
+            "status": "route-catalog-exact"
+          },
+          "methodology.disclaimer": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-6.text-sm:ctx:p:pos:0",
+            "sourceHash": "9799ffc3e1d98370819d21f66e1c65bdd487d7da1db0426b8a9944bbc2515b8a",
+            "status": "route-catalog-exact"
+          },
+          "methodology.intro": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-3.text-sm:ctx:p:pos:0",
+            "sourceHash": "af3ddd6169cab587fc80ffe1333ac007307aea1e3a9cdae91e774ac4eae7ea1e",
+            "status": "route-catalog-exact"
+          },
+          "methodology.policyLink": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:3",
+            "sourceHash": "098e7dc76f90bedc813126a179e6eefb50fbf72aa9e8ca1bf0352a11511bf60a",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.coverage.body": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:0",
+            "sourceHash": "8e1bd5934c992a85d12b2ace4bd9d52acdde00051a74dc1917228f475ffdf3bf",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.coverage.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:0",
+            "sourceHash": "ce2fb5a9491d0193fb5434183666b6279a640f40a2d01acb72a255aa6886a4e2",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.evidence.body": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:5",
+            "sourceHash": "aaf9508944767b880cf922ac1955dd51d82784d17a588c0bcf529145a23442f9",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.evidence.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:4",
+            "sourceHash": "e2f6af5d9bc3b769e2a6cb8d4d77ff54491b66f518b57ac56822e1e89a474c65",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.lineage.afterBook": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:2",
+            "sourceHash": "b3efb991c2957cd90df5bc16c5b81f16b4bd389338e7e95dd7ed57296bc4c4f5",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.lineage.beforeBook": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:1",
+            "sourceHash": "344f1a442a427fd316bd38cb14a94e155043c939b106a05c6e5b51af4d25b3ca",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.lineage.bookTitle": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:em:ctx:em:pos:0",
+            "sourceHash": "b5b49fb36450b7864fe8153b414083bb4cf65ea671cf63d05ba1abbd4d5a762d",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.lineage.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:1",
+            "sourceHash": "bcbac4fe9747440fa52c09574027b6f783d66c8d5470816bded9f64e33d78102",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.research.body": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:3",
+            "sourceHash": "98f103b64c96d5965454ef087965d0c1021fa2d35731048dbe04626e5be4597c",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.research.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:2",
+            "sourceHash": "02c1f82f7feda833d1bec676a755205d90406616e47d5d7f32fc622b1b579ccd",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.sources.body": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:6",
+            "sourceHash": "9abac2b14609e85b79f3568c56f04d12da7b1d2212dffbcaeabdb6772acf392d",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.sources.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:5",
+            "sourceHash": "ee70a01058f711b2b9a4c59ada6da59375c5f1ea7b258e7393b0e5056fdd416d",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.verification.body": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:4",
+            "sourceHash": "7bfbbed8e9fb431e04ed4ff6354cfa93ca4134bcc219b97b7577983fc64a56fd",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.verification.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:3",
+            "sourceHash": "b89c97b8aa7f4b15b95373a6d0cfdc8fd55832339f465509d9e87e972e77f361",
+            "status": "route-catalog-exact"
+          },
+          "methodology.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
+            "sourceHash": "f26d07e6b71e42596791a241e24179315c0f6e256b19a911328c05ca97f4a6a1",
+            "status": "route-catalog-exact"
+          },
+          "story.family": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p:ctx:p:pos:0",
+            "sourceHash": "84d18c4859bf3e7a43afd27c85953cc2c591a6e4a89f890ad43d9940efe1f689",
+            "status": "route-catalog-exact"
+          },
+          "story.hope": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-4:ctx:p:pos:1",
+            "sourceHash": "7d7d45c47c6346b81a0da3904892faaee09a3bfa9e4495e724f6793ee7e5ca35",
+            "status": "route-catalog-exact"
+          },
+          "story.visualizer": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-4:ctx:p:pos:0",
+            "sourceHash": "831be4dbbe61a0e7b69c0ab093309f55a3d5086f6eec472d6b84692f75b90124",
+            "status": "route-catalog-exact"
+          }
+        },
+        "pt-br": {
+          "contact.afterEmail": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-3.text-sm:ctx:p:pos:2",
+            "sourceHash": "20dc2043332bb8d0152b460f4b613088a131f26a5869fd824c260e797e645d60",
+            "status": "route-catalog-exact"
+          },
+          "contact.beforeEmail": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-3.text-sm:ctx:p:pos:1",
+            "sourceHash": "27960a3d7e7a3ee9b1cc0b003e8d0761aba5fa6a9bfa7dbf359520f93de35bb2",
+            "status": "route-catalog-exact"
+          },
+          "contact.email": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:0",
+            "sourceHash": "e64f030216766faf1005a0b732c299660e8385d512aaca2fb34c1464a761bf72",
+            "status": "route-catalog-exact"
+          },
+          "contact.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:2",
+            "sourceHash": "115e410f01dc4013592a3d977a603094c0ed4e5e8ec8b31d18332b340edd3a1e",
+            "status": "route-catalog-exact"
+          },
+          "elsewhere.linkedin": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:1",
+            "sourceHash": "76249a9c099e37b652bdb28cdef7c9af0248e096ebe64b3ee5ae87a1ed0f8f16",
+            "status": "route-catalog-exact"
+          },
+          "elsewhere.personalSite": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:0",
+            "sourceHash": "50eddafef34dd85ba287c2c764480fd8f68f55798737693401b0198da999904f",
+            "status": "route-catalog-exact"
+          },
+          "elsewhere.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+            "sourceHash": "7b2afac3622b2e54332987af76e9187bf7e0ffc5c6de3e204c1c513d2b5d706a",
+            "status": "route-catalog-exact"
+          },
+          "elsewhere.twitter": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:2",
+            "sourceHash": "f07896448d868cdff8d00006e2ab130e74291238ab2d4d20d02b04361d6e8cb2",
+            "status": "route-catalog-exact"
+          },
+          "footer.about": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+            "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+            "status": "route-catalog-exact"
+          },
+          "footer.editorialPolicy": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+            "sourceHash": "3cd1d6ea2c12ccea8d702ef78f778c4606e55ab7600e326084ef2cb5ac637da0",
+            "status": "route-catalog-exact"
+          },
+          "footer.embed": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+            "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+            "status": "route-catalog-exact"
+          },
+          "footer.guides": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:3",
+            "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+            "status": "route-catalog-exact"
+          },
+          "footer.privacy": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:5",
+            "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+            "status": "route-catalog-exact"
+          },
+          "footer.techniques": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+            "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+            "status": "route-catalog-exact"
+          },
+          "hero.eyebrow": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+            "reason": "The current JSX applies uppercase source presentation while the approved catalog stores the same brand label in title case.",
+            "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "hero.imageAlt": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "attr:img.h-32.w-32:alt:pos:0",
+            "sourceHash": "2d6040623d71ef93da49a7faf035ccbb84481b58935f7618b6114af9760a4b7f",
+            "status": "route-catalog-exact"
+          },
+          "hero.intro": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.text-lg.text-muted-foreground:ctx:p:pos:0",
+            "sourceHash": "36506f562a7147259ac3a53eb78c205db54187e581f61813be4534bf50bc8ea2",
+            "status": "route-catalog-exact"
+          },
+          "hero.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+            "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+            "status": "route-catalog-exact"
+          },
+          "metadata.description": {
+            "evidence": [
+              {
+                "catalogRoute": "/about/abi",
+                "occurrenceKey": "head:meta:name:description"
+              }
+            ],
+            "reason": "The approved French and Portuguese metadata descriptions are truncated after the role list begins; these reviewed values restore the complete source meaning.",
+            "sourceHash": "6d0d18a3a3c3ce01c60440ecc7023dd46ce2bba6e3d54c207bc3b5ffd8ff3cbd",
+            "status": "repo-reviewed-replacement"
+          },
+          "metadata.socialDescription": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:property:og:description",
+            "sourceHash": "d409a1d525aeedd79be2ce2367828863f3482e4685918f15251848ed72f9da4a",
+            "status": "route-catalog-exact"
+          },
+          "metadata.socialTitle": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:property:og:title",
+            "sourceHash": "459b6af22548e8ca4de62ded9d3935b30f375624aa2ed4ab342ab84bce17ed99",
+            "status": "route-catalog-exact"
+          },
+          "metadata.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:property:og:title",
+            "sourceHash": "459b6af22548e8ca4de62ded9d3935b30f375624aa2ed4ab342ab84bce17ed99",
+            "status": "route-catalog-exact"
+          },
+          "metadata.twitterDescription": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:name:twitter:description",
+            "sourceHash": "2d71c97689fd1b7abd7a3625374c24806685ac83daad71c223060059e6a6583c",
+            "status": "route-catalog-exact"
+          },
+          "metadata.twitterTitle": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "head:meta:name:twitter:title",
+            "sourceHash": "1d323350e356bd49ffefb7bcc88947e62b509da11909f67bd54667e819bc0299",
+            "status": "route-catalog-exact"
+          },
+          "methodology.disclaimer": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-6.text-sm:ctx:p:pos:0",
+            "sourceHash": "9799ffc3e1d98370819d21f66e1c65bdd487d7da1db0426b8a9944bbc2515b8a",
+            "status": "route-catalog-exact"
+          },
+          "methodology.intro": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-3.text-sm:ctx:p:pos:0",
+            "sourceHash": "af3ddd6169cab587fc80ffe1333ac007307aea1e3a9cdae91e774ac4eae7ea1e",
+            "status": "route-catalog-exact"
+          },
+          "methodology.policyLink": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:a.font-semibold.text-primary:ctx:link:pos:3",
+            "sourceHash": "098e7dc76f90bedc813126a179e6eefb50fbf72aa9e8ca1bf0352a11511bf60a",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.coverage.body": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:0",
+            "sourceHash": "8e1bd5934c992a85d12b2ace4bd9d52acdde00051a74dc1917228f475ffdf3bf",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.coverage.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:0",
+            "sourceHash": "ce2fb5a9491d0193fb5434183666b6279a640f40a2d01acb72a255aa6886a4e2",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.evidence.body": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:5",
+            "sourceHash": "aaf9508944767b880cf922ac1955dd51d82784d17a588c0bcf529145a23442f9",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.evidence.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:4",
+            "sourceHash": "e2f6af5d9bc3b769e2a6cb8d4d77ff54491b66f518b57ac56822e1e89a474c65",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.lineage.afterBook": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:2",
+            "sourceHash": "b3efb991c2957cd90df5bc16c5b81f16b4bd389338e7e95dd7ed57296bc4c4f5",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.lineage.beforeBook": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:1",
+            "sourceHash": "344f1a442a427fd316bd38cb14a94e155043c939b106a05c6e5b51af4d25b3ca",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.lineage.bookTitle": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:em:ctx:em:pos:0",
+            "sourceHash": "b5b49fb36450b7864fe8153b414083bb4cf65ea671cf63d05ba1abbd4d5a762d",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.lineage.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:1",
+            "sourceHash": "bcbac4fe9747440fa52c09574027b6f783d66c8d5470816bded9f64e33d78102",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.research.body": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:3",
+            "sourceHash": "98f103b64c96d5965454ef087965d0c1021fa2d35731048dbe04626e5be4597c",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.research.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:2",
+            "sourceHash": "02c1f82f7feda833d1bec676a755205d90406616e47d5d7f32fc622b1b579ccd",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.sources.body": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:6",
+            "sourceHash": "9abac2b14609e85b79f3568c56f04d12da7b1d2212dffbcaeabdb6772acf392d",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.sources.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:5",
+            "sourceHash": "ee70a01058f711b2b9a4c59ada6da59375c5f1ea7b258e7393b0e5056fdd416d",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.verification.body": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:div:ctx:div:pos:4",
+            "sourceHash": "7bfbbed8e9fb431e04ed4ff6354cfa93ca4134bcc219b97b7577983fc64a56fd",
+            "status": "route-catalog-exact"
+          },
+          "methodology.steps.verification.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:3",
+            "sourceHash": "b89c97b8aa7f4b15b95373a6d0cfdc8fd55832339f465509d9e87e972e77f361",
+            "status": "route-catalog-exact"
+          },
+          "methodology.title": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
+            "sourceHash": "f26d07e6b71e42596791a241e24179315c0f6e256b19a911328c05ca97f4a6a1",
+            "status": "route-catalog-exact"
+          },
+          "story.family": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p:ctx:p:pos:0",
+            "sourceHash": "84d18c4859bf3e7a43afd27c85953cc2c591a6e4a89f890ad43d9940efe1f689",
+            "status": "route-catalog-exact"
+          },
+          "story.hope": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-4:ctx:p:pos:1",
+            "sourceHash": "7d7d45c47c6346b81a0da3904892faaee09a3bfa9e4495e724f6793ee7e5ca35",
+            "status": "route-catalog-exact"
+          },
+          "story.visualizer": {
+            "catalogRoute": "/about/abi",
+            "occurrenceKey": "sel:p.mt-4:ctx:p:pos:0",
+            "sourceHash": "831be4dbbe61a0e7b69c0ab093309f55a3d5086f6eec472d6b84692f75b90124",
+            "status": "route-catalog-exact"
+          }
+        }
+      },
+      "sourceRoute": "/about/abi"
+    },
+    "editorialPolicy": {
+      "locales": {
+        "de-de": {
+          "content.attribution.longerLineage": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:1",
+            "sourceHash": "3201e48f5bb396d6552bc7ee6c0c91433befe388efad7fc8442e38e73ce412f8",
+            "status": "route-catalog-exact"
+          },
+          "content.attribution.originators": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:0",
+            "sourceHash": "9f7e60d7ac13f95df835eebe92999e67a5d3d6d162cbdbfa8163c12f50332cb7",
+            "status": "route-catalog-exact"
+          },
+          "content.attribution.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
+            "sourceHash": "88aa6f98a8b8c20b28ad3499d587bbf6758caf10e8df436792c559eac5096bd0",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.intro": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:2",
+            "sourceHash": "b5ad2d44199304ef301577b61258079024a7cda545c9166febf24be2569910e3",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.mechanisms.body": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:2",
+            "sourceHash": "c2bcea4faec9491475a2ede21cde0119ee2702507101c2d17a96394a0ca89c5c",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.mechanisms.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:2",
+            "sourceHash": "c8ccb1747e2af56f8f7605975f2f96f2a956427b2c87b44e87e590ea21479b6d",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.practitioners.body": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:3",
+            "sourceHash": "e0edb38d43e3833d10fb7516841dc9eb436445572cc629367c9e0fa0d6e747b4",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.practitioners.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:3",
+            "sourceHash": "c692c50a01be83d94afdf5d879fad2501fc30c24ec2f548d5690edc58264fef1",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.reviews.body": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:0",
+            "sourceHash": "e0729c688b52c2fa2dd4df5fb86db6fa08adf40c2fa74bf27f4825458c2891e4",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.reviews.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:0",
+            "sourceHash": "9e44ee784d4d1e73b9d3edbd6e15737087596a0304ad7a5e82c532398590680c",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.trials.body": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:1",
+            "sourceHash": "423efbd5c7bcef4634fda1101bd7362f7bd7076596231649d07cd4d7a11e53c8",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.trials.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:1",
+            "sourceHash": "36911ef5d4c6fc479eac0f03d79dd2b6d3ed3a612118089fd7df21e0eb9e0ca3",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorityIntro": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:3",
+            "sourceHash": "700aab5a2c232381d26768b450e04f23c3b3636e3415e16c1cdf7f0bbf1c753e",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:2",
+            "sourceHash": "6231eea8a90dcbbfd2f83056c0e1a6a700e963364c8f9e21bdea5d727628cb06",
+            "status": "route-catalog-exact"
+          },
+          "content.claims.evidence": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:4",
+            "sourceHash": "74175c395714f0c6c2c3657976d6723c60494fe3c99f66d1bfbfe661279ab66a",
+            "status": "route-catalog-exact"
+          },
+          "content.claims.scrutiny": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:5",
+            "sourceHash": "e20700de2db9558e38380341012753f44fa7be3f7f3f2458c4bf84a42c71ea4c",
+            "status": "route-catalog-exact"
+          },
+          "content.claims.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:3",
+            "sourceHash": "af3931d5660e99f1893230d667925eee9877311680bdfe1800662a73ec9093fe",
+            "status": "route-catalog-exact"
+          },
+          "content.exclusions.credentials": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:6",
+            "sourceHash": "cd269beab3260e5c7a3a2cad205ff9b3d082a755b0521ec3dda4da829ced7148",
+            "status": "route-catalog-exact"
+          },
+          "content.exclusions.cures": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:5",
+            "sourceHash": "aeb6c9bf0f38d68e4343128bb0655d94d8145ab0b78ae49cf4b002674b677d9c",
+            "status": "route-catalog-exact"
+          },
+          "content.exclusions.diagnoses": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:4",
+            "sourceHash": "5766c2baff90c129bbe58f5ba27236edb0f24604f1329a124a37bce4cba8924f",
+            "status": "route-catalog-exact"
+          },
+          "content.exclusions.overstatement": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:7",
+            "sourceHash": "7decebe5dc76973c52335cb10454f4ebe9cbbb349a6f939ae1dcae3d2302fbe1",
+            "status": "route-catalog-exact"
+          },
+          "content.exclusions.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:4",
+            "sourceHash": "0a6f586dd9c9e0554091bde8f04e8062e18f1a4ee61a1b7a6d76afb9a1c8e617",
+            "status": "route-catalog-exact"
+          },
+          "content.updates.afterEmail": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:7",
+            "sourceHash": "cc2cf02968a1381b5952ae2d4d561756964f7eaffc91493697937b507d732e45",
+            "status": "route-catalog-exact"
+          },
+          "content.updates.beforeEmail": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:6",
+            "sourceHash": "159fb78e7590ce63c6ac8cf634819ace83b4eb816ba2523757daa4d3a0a8b97d",
+            "status": "route-catalog-exact"
+          },
+          "content.updates.email": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:1",
+            "sourceHash": "e64f030216766faf1005a0b732c299660e8385d512aaca2fb34c1464a761bf72",
+            "status": "route-catalog-exact"
+          },
+          "content.updates.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:5",
+            "sourceHash": "56cda10f55394aba57dcb8d7fe35a93054d830f16eb4ee0a70eab6ab2ffe677a",
+            "status": "route-catalog-exact"
+          },
+          "content.whatSiteIs.abiName": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:0",
+            "reason": "Disambiguate the two approved links with the same person name.",
+            "sourceHash": "2d6040623d71ef93da49a7faf035ccbb84481b58935f7618b6114af9760a4b7f",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "content.whatSiteIs.afterAbi": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.mt-4:ctx:p:pos:1",
+            "sourceHash": "06d085a244ad67c30150240cdb3d3e255e53e9553ae71d0a1db1c37a1339a8de",
+            "status": "route-catalog-exact"
+          },
+          "content.whatSiteIs.beforeAbi": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.mt-4:ctx:p:pos:0",
+            "sourceHash": "a164fb2ec623dfacdd968e99d76f94e445fc8c2e73ec497552171f7b37631ae4",
+            "status": "route-catalog-exact"
+          },
+          "content.whatSiteIs.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+            "sourceHash": "9adc0dac1ccc7af236f8f59290528bb031c3e471d84e84e25877e926df9faef3",
+            "status": "route-catalog-exact"
+          },
+          "content.whoBuilt.abiName": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:2",
+            "reason": "Disambiguate the two approved links with the same person name.",
+            "sourceHash": "2d6040623d71ef93da49a7faf035ccbb84481b58935f7618b6114af9760a4b7f",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "content.whoBuilt.beforeAbi": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:8",
+            "sourceHash": "c11d606ffd1a1abfdf29f8356c4e812eea0e3d254f6ecd1dc55500acda691632",
+            "status": "route-catalog-exact"
+          },
+          "content.whoBuilt.beforeDarkmatter": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:9",
+            "sourceHash": "0695b563acde461fc2f8d9aebccf35c7596ac458b8d8e067c602fb7b4e5f1578",
+            "status": "route-catalog-exact"
+          },
+          "content.whoBuilt.darkmatterName": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:3",
+            "sourceHash": "46d9902e7bdf4e44566ba128ac4d2a0ed7f68f5ef925e9968d5574391ce16c79",
+            "status": "route-catalog-exact"
+          },
+          "content.whoBuilt.disclaimer": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.text-sm:ctx:p:pos:0",
+            "sourceHash": "39810b463d508f05fc610cab68028ae015b7e58f92ef529e3a52c4774df37057",
+            "status": "route-catalog-exact"
+          },
+          "content.whoBuilt.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:6",
+            "sourceHash": "53a097715029ef58b85621dda354e6e9ad80298dc498e0fa1f8e166357d4146c",
+            "status": "route-catalog-exact"
+          },
+          "footer.about": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+            "reason": "Disambiguate the approved visible eyebrow and footer link placements.",
+            "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "footer.aboutAbi": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+            "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+            "status": "route-catalog-exact"
+          },
+          "footer.embed": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+            "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+            "status": "route-catalog-exact"
+          },
+          "footer.guides": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:3",
+            "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+            "status": "route-catalog-exact"
+          },
+          "footer.privacy": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:5",
+            "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+            "status": "route-catalog-exact"
+          },
+          "footer.techniques": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+            "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+            "status": "route-catalog-exact"
+          },
+          "hero.eyebrow": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+            "reason": "The current JSX applies uppercase source presentation while the approved catalog stores the same section label in title case.",
+            "sourceHash": "72b70ae3032dfe31f3573e22e9782e8d35ebb1d03a2c4b3bfa247cbdfe3551dc",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "hero.intro": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.text-lg.text-muted-foreground:ctx:p:pos:0",
+            "reason": "Disambiguate the identical approved Twitter description and visible hero introduction.",
+            "sourceHash": "cfa609fbd6465c04be6093fa395714cb47a49cd441fd0970ee4ef68f703df939",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "hero.lastUpdated": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.text-xs.text-muted-foreground:ctx:p:pos:0",
+            "sourceHash": "554b735e824d8ccc51c7b2754cd3c0e87fc55065279b4f81b7d5c21d5db958a2",
+            "status": "route-catalog-exact"
+          },
+          "hero.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+            "reason": "Bind the current title-case heading to the approved catalog placement whose source differs only by capitalization.",
+            "sourceHash": "8dc4bd2e648148833d7526d251f0a3f94ba7db29a5be560e364b66b0862d392f",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "metadata.description": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:meta:name:description",
+            "sourceHash": "763542ab58536b5b6dc70176574c1ea30a0fc54de0c1e2a7052d2c943dbce958",
+            "status": "route-catalog-exact"
+          },
+          "metadata.socialDescription": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:meta:property:og:description",
+            "sourceHash": "2a8842f507d9885a1a3c23f2321645b2978b6cd5a3e20b325d28cb2329b1260f",
+            "status": "route-catalog-exact"
+          },
+          "metadata.socialTitle": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:meta:property:og:title",
+            "reason": "Disambiguate the identical approved Open Graph and Twitter title placements.",
+            "sourceHash": "147c22d92ad46710c55d5683002d81929e28518ecca77106a9e2b4505ee6d3fa",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "metadata.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:title",
+            "reason": "The crawled title includes the shared layout suffix twice; bind the current route-owned metadata title to that approved head placement without changing English output.",
+            "sourceHash": "8ca03ce1a27547b4aa15ea3c137da869e5e2267c3989d074d74a032017e5b349",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "metadata.twitterDescription": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:meta:name:twitter:description",
+            "reason": "Disambiguate the identical approved Twitter description and visible hero introduction.",
+            "sourceHash": "cfa609fbd6465c04be6093fa395714cb47a49cd441fd0970ee4ef68f703df939",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "metadata.twitterTitle": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:meta:name:twitter:title",
+            "reason": "Disambiguate the identical approved Open Graph and Twitter title placements.",
+            "sourceHash": "147c22d92ad46710c55d5683002d81929e28518ecca77106a9e2b4505ee6d3fa",
+            "status": "explicit-reviewed-source-binding"
+          }
+        },
+        "es-es": {
+          "content.attribution.longerLineage": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:1",
+            "sourceHash": "3201e48f5bb396d6552bc7ee6c0c91433befe388efad7fc8442e38e73ce412f8",
+            "status": "route-catalog-exact"
+          },
+          "content.attribution.originators": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:0",
+            "sourceHash": "9f7e60d7ac13f95df835eebe92999e67a5d3d6d162cbdbfa8163c12f50332cb7",
+            "status": "route-catalog-exact"
+          },
+          "content.attribution.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
+            "sourceHash": "88aa6f98a8b8c20b28ad3499d587bbf6758caf10e8df436792c559eac5096bd0",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.intro": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:2",
+            "sourceHash": "b5ad2d44199304ef301577b61258079024a7cda545c9166febf24be2569910e3",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.mechanisms.body": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:2",
+            "sourceHash": "c2bcea4faec9491475a2ede21cde0119ee2702507101c2d17a96394a0ca89c5c",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.mechanisms.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:2",
+            "sourceHash": "c8ccb1747e2af56f8f7605975f2f96f2a956427b2c87b44e87e590ea21479b6d",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.practitioners.body": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:3",
+            "sourceHash": "e0edb38d43e3833d10fb7516841dc9eb436445572cc629367c9e0fa0d6e747b4",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.practitioners.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:3",
+            "sourceHash": "c692c50a01be83d94afdf5d879fad2501fc30c24ec2f548d5690edc58264fef1",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.reviews.body": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:0",
+            "sourceHash": "e0729c688b52c2fa2dd4df5fb86db6fa08adf40c2fa74bf27f4825458c2891e4",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.reviews.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:0",
+            "sourceHash": "9e44ee784d4d1e73b9d3edbd6e15737087596a0304ad7a5e82c532398590680c",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.trials.body": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:1",
+            "sourceHash": "423efbd5c7bcef4634fda1101bd7362f7bd7076596231649d07cd4d7a11e53c8",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.trials.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:1",
+            "sourceHash": "36911ef5d4c6fc479eac0f03d79dd2b6d3ed3a612118089fd7df21e0eb9e0ca3",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorityIntro": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:3",
+            "sourceHash": "700aab5a2c232381d26768b450e04f23c3b3636e3415e16c1cdf7f0bbf1c753e",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:2",
+            "sourceHash": "6231eea8a90dcbbfd2f83056c0e1a6a700e963364c8f9e21bdea5d727628cb06",
+            "status": "route-catalog-exact"
+          },
+          "content.claims.evidence": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:4",
+            "sourceHash": "74175c395714f0c6c2c3657976d6723c60494fe3c99f66d1bfbfe661279ab66a",
+            "status": "route-catalog-exact"
+          },
+          "content.claims.scrutiny": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:5",
+            "sourceHash": "e20700de2db9558e38380341012753f44fa7be3f7f3f2458c4bf84a42c71ea4c",
+            "status": "route-catalog-exact"
+          },
+          "content.claims.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:3",
+            "sourceHash": "af3931d5660e99f1893230d667925eee9877311680bdfe1800662a73ec9093fe",
+            "status": "route-catalog-exact"
+          },
+          "content.exclusions.credentials": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:6",
+            "sourceHash": "cd269beab3260e5c7a3a2cad205ff9b3d082a755b0521ec3dda4da829ced7148",
+            "status": "route-catalog-exact"
+          },
+          "content.exclusions.cures": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:5",
+            "sourceHash": "aeb6c9bf0f38d68e4343128bb0655d94d8145ab0b78ae49cf4b002674b677d9c",
+            "status": "route-catalog-exact"
+          },
+          "content.exclusions.diagnoses": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:4",
+            "sourceHash": "5766c2baff90c129bbe58f5ba27236edb0f24604f1329a124a37bce4cba8924f",
+            "status": "route-catalog-exact"
+          },
+          "content.exclusions.overstatement": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:7",
+            "sourceHash": "7decebe5dc76973c52335cb10454f4ebe9cbbb349a6f939ae1dcae3d2302fbe1",
+            "status": "route-catalog-exact"
+          },
+          "content.exclusions.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:4",
+            "sourceHash": "0a6f586dd9c9e0554091bde8f04e8062e18f1a4ee61a1b7a6d76afb9a1c8e617",
+            "status": "route-catalog-exact"
+          },
+          "content.updates.afterEmail": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:7",
+            "sourceHash": "cc2cf02968a1381b5952ae2d4d561756964f7eaffc91493697937b507d732e45",
+            "status": "route-catalog-exact"
+          },
+          "content.updates.beforeEmail": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:6",
+            "sourceHash": "159fb78e7590ce63c6ac8cf634819ace83b4eb816ba2523757daa4d3a0a8b97d",
+            "status": "route-catalog-exact"
+          },
+          "content.updates.email": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:1",
+            "sourceHash": "e64f030216766faf1005a0b732c299660e8385d512aaca2fb34c1464a761bf72",
+            "status": "route-catalog-exact"
+          },
+          "content.updates.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:5",
+            "sourceHash": "56cda10f55394aba57dcb8d7fe35a93054d830f16eb4ee0a70eab6ab2ffe677a",
+            "status": "route-catalog-exact"
+          },
+          "content.whatSiteIs.abiName": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:0",
+            "reason": "Disambiguate the two approved links with the same person name.",
+            "sourceHash": "2d6040623d71ef93da49a7faf035ccbb84481b58935f7618b6114af9760a4b7f",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "content.whatSiteIs.afterAbi": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.mt-4:ctx:p:pos:1",
+            "sourceHash": "06d085a244ad67c30150240cdb3d3e255e53e9553ae71d0a1db1c37a1339a8de",
+            "status": "route-catalog-exact"
+          },
+          "content.whatSiteIs.beforeAbi": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.mt-4:ctx:p:pos:0",
+            "sourceHash": "a164fb2ec623dfacdd968e99d76f94e445fc8c2e73ec497552171f7b37631ae4",
+            "status": "route-catalog-exact"
+          },
+          "content.whatSiteIs.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+            "sourceHash": "9adc0dac1ccc7af236f8f59290528bb031c3e471d84e84e25877e926df9faef3",
+            "status": "route-catalog-exact"
+          },
+          "content.whoBuilt.abiName": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:2",
+            "reason": "Disambiguate the two approved links with the same person name.",
+            "sourceHash": "2d6040623d71ef93da49a7faf035ccbb84481b58935f7618b6114af9760a4b7f",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "content.whoBuilt.beforeAbi": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:8",
+            "sourceHash": "c11d606ffd1a1abfdf29f8356c4e812eea0e3d254f6ecd1dc55500acda691632",
+            "status": "route-catalog-exact"
+          },
+          "content.whoBuilt.beforeDarkmatter": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:9",
+            "sourceHash": "0695b563acde461fc2f8d9aebccf35c7596ac458b8d8e067c602fb7b4e5f1578",
+            "status": "route-catalog-exact"
+          },
+          "content.whoBuilt.darkmatterName": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:3",
+            "sourceHash": "46d9902e7bdf4e44566ba128ac4d2a0ed7f68f5ef925e9968d5574391ce16c79",
+            "status": "route-catalog-exact"
+          },
+          "content.whoBuilt.disclaimer": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.text-sm:ctx:p:pos:0",
+            "sourceHash": "39810b463d508f05fc610cab68028ae015b7e58f92ef529e3a52c4774df37057",
+            "status": "route-catalog-exact"
+          },
+          "content.whoBuilt.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:6",
+            "sourceHash": "53a097715029ef58b85621dda354e6e9ad80298dc498e0fa1f8e166357d4146c",
+            "status": "route-catalog-exact"
+          },
+          "footer.about": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+            "reason": "Disambiguate the approved visible eyebrow and footer link placements.",
+            "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "footer.aboutAbi": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+            "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+            "status": "route-catalog-exact"
+          },
+          "footer.embed": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+            "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+            "status": "route-catalog-exact"
+          },
+          "footer.guides": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:3",
+            "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+            "status": "route-catalog-exact"
+          },
+          "footer.privacy": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:5",
+            "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+            "status": "route-catalog-exact"
+          },
+          "footer.techniques": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+            "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+            "status": "route-catalog-exact"
+          },
+          "hero.eyebrow": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+            "reason": "The current JSX applies uppercase source presentation while the approved catalog stores the same section label in title case.",
+            "sourceHash": "72b70ae3032dfe31f3573e22e9782e8d35ebb1d03a2c4b3bfa247cbdfe3551dc",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "hero.intro": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.text-lg.text-muted-foreground:ctx:p:pos:0",
+            "reason": "Disambiguate the identical approved Twitter description and visible hero introduction.",
+            "sourceHash": "cfa609fbd6465c04be6093fa395714cb47a49cd441fd0970ee4ef68f703df939",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "hero.lastUpdated": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.text-xs.text-muted-foreground:ctx:p:pos:0",
+            "sourceHash": "554b735e824d8ccc51c7b2754cd3c0e87fc55065279b4f81b7d5c21d5db958a2",
+            "status": "route-catalog-exact"
+          },
+          "hero.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+            "reason": "Bind the current title-case heading to the approved catalog placement whose source differs only by capitalization.",
+            "sourceHash": "8dc4bd2e648148833d7526d251f0a3f94ba7db29a5be560e364b66b0862d392f",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "metadata.description": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:meta:name:description",
+            "sourceHash": "763542ab58536b5b6dc70176574c1ea30a0fc54de0c1e2a7052d2c943dbce958",
+            "status": "route-catalog-exact"
+          },
+          "metadata.socialDescription": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:meta:property:og:description",
+            "sourceHash": "2a8842f507d9885a1a3c23f2321645b2978b6cd5a3e20b325d28cb2329b1260f",
+            "status": "route-catalog-exact"
+          },
+          "metadata.socialTitle": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:meta:property:og:title",
+            "reason": "Disambiguate the identical approved Open Graph and Twitter title placements.",
+            "sourceHash": "147c22d92ad46710c55d5683002d81929e28518ecca77106a9e2b4505ee6d3fa",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "metadata.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:title",
+            "reason": "The crawled title includes the shared layout suffix twice; bind the current route-owned metadata title to that approved head placement without changing English output.",
+            "sourceHash": "8ca03ce1a27547b4aa15ea3c137da869e5e2267c3989d074d74a032017e5b349",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "metadata.twitterDescription": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:meta:name:twitter:description",
+            "reason": "Disambiguate the identical approved Twitter description and visible hero introduction.",
+            "sourceHash": "cfa609fbd6465c04be6093fa395714cb47a49cd441fd0970ee4ef68f703df939",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "metadata.twitterTitle": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:meta:name:twitter:title",
+            "reason": "Disambiguate the identical approved Open Graph and Twitter title placements.",
+            "sourceHash": "147c22d92ad46710c55d5683002d81929e28518ecca77106a9e2b4505ee6d3fa",
+            "status": "explicit-reviewed-source-binding"
+          }
+        },
+        "fr-fr": {
+          "content.attribution.longerLineage": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:1",
+            "sourceHash": "3201e48f5bb396d6552bc7ee6c0c91433befe388efad7fc8442e38e73ce412f8",
+            "status": "route-catalog-exact"
+          },
+          "content.attribution.originators": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:0",
+            "sourceHash": "9f7e60d7ac13f95df835eebe92999e67a5d3d6d162cbdbfa8163c12f50332cb7",
+            "status": "route-catalog-exact"
+          },
+          "content.attribution.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
+            "sourceHash": "88aa6f98a8b8c20b28ad3499d587bbf6758caf10e8df436792c559eac5096bd0",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.intro": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:2",
+            "sourceHash": "b5ad2d44199304ef301577b61258079024a7cda545c9166febf24be2569910e3",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.mechanisms.body": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:2",
+            "sourceHash": "c2bcea4faec9491475a2ede21cde0119ee2702507101c2d17a96394a0ca89c5c",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.mechanisms.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:2",
+            "sourceHash": "c8ccb1747e2af56f8f7605975f2f96f2a956427b2c87b44e87e590ea21479b6d",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.practitioners.body": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:3",
+            "sourceHash": "e0edb38d43e3833d10fb7516841dc9eb436445572cc629367c9e0fa0d6e747b4",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.practitioners.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:3",
+            "sourceHash": "c692c50a01be83d94afdf5d879fad2501fc30c24ec2f548d5690edc58264fef1",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.reviews.body": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:0",
+            "sourceHash": "e0729c688b52c2fa2dd4df5fb86db6fa08adf40c2fa74bf27f4825458c2891e4",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.reviews.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:0",
+            "sourceHash": "9e44ee784d4d1e73b9d3edbd6e15737087596a0304ad7a5e82c532398590680c",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.trials.body": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:1",
+            "sourceHash": "423efbd5c7bcef4634fda1101bd7362f7bd7076596231649d07cd4d7a11e53c8",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.trials.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:1",
+            "sourceHash": "36911ef5d4c6fc479eac0f03d79dd2b6d3ed3a612118089fd7df21e0eb9e0ca3",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorityIntro": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:3",
+            "sourceHash": "700aab5a2c232381d26768b450e04f23c3b3636e3415e16c1cdf7f0bbf1c753e",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:2",
+            "sourceHash": "6231eea8a90dcbbfd2f83056c0e1a6a700e963364c8f9e21bdea5d727628cb06",
+            "status": "route-catalog-exact"
+          },
+          "content.claims.evidence": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:4",
+            "sourceHash": "74175c395714f0c6c2c3657976d6723c60494fe3c99f66d1bfbfe661279ab66a",
+            "status": "route-catalog-exact"
+          },
+          "content.claims.scrutiny": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:5",
+            "sourceHash": "e20700de2db9558e38380341012753f44fa7be3f7f3f2458c4bf84a42c71ea4c",
+            "status": "route-catalog-exact"
+          },
+          "content.claims.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:3",
+            "sourceHash": "af3931d5660e99f1893230d667925eee9877311680bdfe1800662a73ec9093fe",
+            "status": "route-catalog-exact"
+          },
+          "content.exclusions.credentials": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:6",
+            "sourceHash": "cd269beab3260e5c7a3a2cad205ff9b3d082a755b0521ec3dda4da829ced7148",
+            "status": "route-catalog-exact"
+          },
+          "content.exclusions.cures": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:5",
+            "sourceHash": "aeb6c9bf0f38d68e4343128bb0655d94d8145ab0b78ae49cf4b002674b677d9c",
+            "status": "route-catalog-exact"
+          },
+          "content.exclusions.diagnoses": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:4",
+            "sourceHash": "5766c2baff90c129bbe58f5ba27236edb0f24604f1329a124a37bce4cba8924f",
+            "status": "route-catalog-exact"
+          },
+          "content.exclusions.overstatement": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:7",
+            "sourceHash": "7decebe5dc76973c52335cb10454f4ebe9cbbb349a6f939ae1dcae3d2302fbe1",
+            "status": "route-catalog-exact"
+          },
+          "content.exclusions.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:4",
+            "sourceHash": "0a6f586dd9c9e0554091bde8f04e8062e18f1a4ee61a1b7a6d76afb9a1c8e617",
+            "status": "route-catalog-exact"
+          },
+          "content.updates.afterEmail": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:7",
+            "sourceHash": "cc2cf02968a1381b5952ae2d4d561756964f7eaffc91493697937b507d732e45",
+            "status": "route-catalog-exact"
+          },
+          "content.updates.beforeEmail": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:6",
+            "sourceHash": "159fb78e7590ce63c6ac8cf634819ace83b4eb816ba2523757daa4d3a0a8b97d",
+            "status": "route-catalog-exact"
+          },
+          "content.updates.email": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:1",
+            "sourceHash": "e64f030216766faf1005a0b732c299660e8385d512aaca2fb34c1464a761bf72",
+            "status": "route-catalog-exact"
+          },
+          "content.updates.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:5",
+            "sourceHash": "56cda10f55394aba57dcb8d7fe35a93054d830f16eb4ee0a70eab6ab2ffe677a",
+            "status": "route-catalog-exact"
+          },
+          "content.whatSiteIs.abiName": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:0",
+            "reason": "Disambiguate the two approved links with the same person name.",
+            "sourceHash": "2d6040623d71ef93da49a7faf035ccbb84481b58935f7618b6114af9760a4b7f",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "content.whatSiteIs.afterAbi": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.mt-4:ctx:p:pos:1",
+            "sourceHash": "06d085a244ad67c30150240cdb3d3e255e53e9553ae71d0a1db1c37a1339a8de",
+            "status": "route-catalog-exact"
+          },
+          "content.whatSiteIs.beforeAbi": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.mt-4:ctx:p:pos:0",
+            "sourceHash": "a164fb2ec623dfacdd968e99d76f94e445fc8c2e73ec497552171f7b37631ae4",
+            "status": "route-catalog-exact"
+          },
+          "content.whatSiteIs.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+            "sourceHash": "9adc0dac1ccc7af236f8f59290528bb031c3e471d84e84e25877e926df9faef3",
+            "status": "route-catalog-exact"
+          },
+          "content.whoBuilt.abiName": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:2",
+            "reason": "Disambiguate the two approved links with the same person name.",
+            "sourceHash": "2d6040623d71ef93da49a7faf035ccbb84481b58935f7618b6114af9760a4b7f",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "content.whoBuilt.beforeAbi": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:8",
+            "sourceHash": "c11d606ffd1a1abfdf29f8356c4e812eea0e3d254f6ecd1dc55500acda691632",
+            "status": "route-catalog-exact"
+          },
+          "content.whoBuilt.beforeDarkmatter": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:9",
+            "sourceHash": "0695b563acde461fc2f8d9aebccf35c7596ac458b8d8e067c602fb7b4e5f1578",
+            "status": "route-catalog-exact"
+          },
+          "content.whoBuilt.darkmatterName": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:3",
+            "sourceHash": "46d9902e7bdf4e44566ba128ac4d2a0ed7f68f5ef925e9968d5574391ce16c79",
+            "status": "route-catalog-exact"
+          },
+          "content.whoBuilt.disclaimer": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.text-sm:ctx:p:pos:0",
+            "sourceHash": "39810b463d508f05fc610cab68028ae015b7e58f92ef529e3a52c4774df37057",
+            "status": "route-catalog-exact"
+          },
+          "content.whoBuilt.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:6",
+            "sourceHash": "53a097715029ef58b85621dda354e6e9ad80298dc498e0fa1f8e166357d4146c",
+            "status": "route-catalog-exact"
+          },
+          "footer.about": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+            "reason": "Disambiguate the approved visible eyebrow and footer link placements.",
+            "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "footer.aboutAbi": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+            "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+            "status": "route-catalog-exact"
+          },
+          "footer.embed": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+            "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+            "status": "route-catalog-exact"
+          },
+          "footer.guides": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:3",
+            "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+            "status": "route-catalog-exact"
+          },
+          "footer.privacy": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:5",
+            "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+            "status": "route-catalog-exact"
+          },
+          "footer.techniques": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+            "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+            "status": "route-catalog-exact"
+          },
+          "hero.eyebrow": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+            "reason": "The current JSX applies uppercase source presentation while the approved catalog stores the same section label in title case.",
+            "sourceHash": "72b70ae3032dfe31f3573e22e9782e8d35ebb1d03a2c4b3bfa247cbdfe3551dc",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "hero.intro": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.text-lg.text-muted-foreground:ctx:p:pos:0",
+            "reason": "Disambiguate the identical approved Twitter description and visible hero introduction.",
+            "sourceHash": "cfa609fbd6465c04be6093fa395714cb47a49cd441fd0970ee4ef68f703df939",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "hero.lastUpdated": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.text-xs.text-muted-foreground:ctx:p:pos:0",
+            "sourceHash": "554b735e824d8ccc51c7b2754cd3c0e87fc55065279b4f81b7d5c21d5db958a2",
+            "status": "route-catalog-exact"
+          },
+          "hero.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+            "reason": "Bind the current title-case heading to the approved catalog placement whose source differs only by capitalization.",
+            "sourceHash": "8dc4bd2e648148833d7526d251f0a3f94ba7db29a5be560e364b66b0862d392f",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "metadata.description": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:meta:name:description",
+            "sourceHash": "763542ab58536b5b6dc70176574c1ea30a0fc54de0c1e2a7052d2c943dbce958",
+            "status": "route-catalog-exact"
+          },
+          "metadata.socialDescription": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:meta:property:og:description",
+            "sourceHash": "2a8842f507d9885a1a3c23f2321645b2978b6cd5a3e20b325d28cb2329b1260f",
+            "status": "route-catalog-exact"
+          },
+          "metadata.socialTitle": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:meta:property:og:title",
+            "reason": "Disambiguate the identical approved Open Graph and Twitter title placements.",
+            "sourceHash": "147c22d92ad46710c55d5683002d81929e28518ecca77106a9e2b4505ee6d3fa",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "metadata.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:title",
+            "reason": "The crawled title includes the shared layout suffix twice; bind the current route-owned metadata title to that approved head placement without changing English output.",
+            "sourceHash": "8ca03ce1a27547b4aa15ea3c137da869e5e2267c3989d074d74a032017e5b349",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "metadata.twitterDescription": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:meta:name:twitter:description",
+            "reason": "Disambiguate the identical approved Twitter description and visible hero introduction.",
+            "sourceHash": "cfa609fbd6465c04be6093fa395714cb47a49cd441fd0970ee4ef68f703df939",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "metadata.twitterTitle": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:meta:name:twitter:title",
+            "reason": "Disambiguate the identical approved Open Graph and Twitter title placements.",
+            "sourceHash": "147c22d92ad46710c55d5683002d81929e28518ecca77106a9e2b4505ee6d3fa",
+            "status": "explicit-reviewed-source-binding"
+          }
+        },
+        "ja-jp": {
+          "content.attribution.longerLineage": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:1",
+            "sourceHash": "3201e48f5bb396d6552bc7ee6c0c91433befe388efad7fc8442e38e73ce412f8",
+            "status": "route-catalog-exact"
+          },
+          "content.attribution.originators": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:0",
+            "sourceHash": "9f7e60d7ac13f95df835eebe92999e67a5d3d6d162cbdbfa8163c12f50332cb7",
+            "status": "route-catalog-exact"
+          },
+          "content.attribution.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
+            "sourceHash": "88aa6f98a8b8c20b28ad3499d587bbf6758caf10e8df436792c559eac5096bd0",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.intro": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:2",
+            "sourceHash": "b5ad2d44199304ef301577b61258079024a7cda545c9166febf24be2569910e3",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.mechanisms.body": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:2",
+            "sourceHash": "c2bcea4faec9491475a2ede21cde0119ee2702507101c2d17a96394a0ca89c5c",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.mechanisms.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:2",
+            "sourceHash": "c8ccb1747e2af56f8f7605975f2f96f2a956427b2c87b44e87e590ea21479b6d",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.practitioners.body": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:3",
+            "sourceHash": "e0edb38d43e3833d10fb7516841dc9eb436445572cc629367c9e0fa0d6e747b4",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.practitioners.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:3",
+            "sourceHash": "c692c50a01be83d94afdf5d879fad2501fc30c24ec2f548d5690edc58264fef1",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.reviews.body": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:0",
+            "sourceHash": "e0729c688b52c2fa2dd4df5fb86db6fa08adf40c2fa74bf27f4825458c2891e4",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.reviews.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:0",
+            "sourceHash": "9e44ee784d4d1e73b9d3edbd6e15737087596a0304ad7a5e82c532398590680c",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.trials.body": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:1",
+            "sourceHash": "423efbd5c7bcef4634fda1101bd7362f7bd7076596231649d07cd4d7a11e53c8",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.trials.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:1",
+            "sourceHash": "36911ef5d4c6fc479eac0f03d79dd2b6d3ed3a612118089fd7df21e0eb9e0ca3",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorityIntro": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:3",
+            "sourceHash": "700aab5a2c232381d26768b450e04f23c3b3636e3415e16c1cdf7f0bbf1c753e",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:2",
+            "sourceHash": "6231eea8a90dcbbfd2f83056c0e1a6a700e963364c8f9e21bdea5d727628cb06",
+            "status": "route-catalog-exact"
+          },
+          "content.claims.evidence": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:4",
+            "sourceHash": "74175c395714f0c6c2c3657976d6723c60494fe3c99f66d1bfbfe661279ab66a",
+            "status": "route-catalog-exact"
+          },
+          "content.claims.scrutiny": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:5",
+            "sourceHash": "e20700de2db9558e38380341012753f44fa7be3f7f3f2458c4bf84a42c71ea4c",
+            "status": "route-catalog-exact"
+          },
+          "content.claims.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:3",
+            "sourceHash": "af3931d5660e99f1893230d667925eee9877311680bdfe1800662a73ec9093fe",
+            "status": "route-catalog-exact"
+          },
+          "content.exclusions.credentials": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:6",
+            "sourceHash": "cd269beab3260e5c7a3a2cad205ff9b3d082a755b0521ec3dda4da829ced7148",
+            "status": "route-catalog-exact"
+          },
+          "content.exclusions.cures": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:5",
+            "sourceHash": "aeb6c9bf0f38d68e4343128bb0655d94d8145ab0b78ae49cf4b002674b677d9c",
+            "status": "route-catalog-exact"
+          },
+          "content.exclusions.diagnoses": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:4",
+            "sourceHash": "5766c2baff90c129bbe58f5ba27236edb0f24604f1329a124a37bce4cba8924f",
+            "status": "route-catalog-exact"
+          },
+          "content.exclusions.overstatement": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:7",
+            "sourceHash": "7decebe5dc76973c52335cb10454f4ebe9cbbb349a6f939ae1dcae3d2302fbe1",
+            "status": "route-catalog-exact"
+          },
+          "content.exclusions.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:4",
+            "sourceHash": "0a6f586dd9c9e0554091bde8f04e8062e18f1a4ee61a1b7a6d76afb9a1c8e617",
+            "status": "route-catalog-exact"
+          },
+          "content.updates.afterEmail": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:7",
+            "sourceHash": "cc2cf02968a1381b5952ae2d4d561756964f7eaffc91493697937b507d732e45",
+            "status": "route-catalog-exact"
+          },
+          "content.updates.beforeEmail": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:6",
+            "sourceHash": "159fb78e7590ce63c6ac8cf634819ace83b4eb816ba2523757daa4d3a0a8b97d",
+            "status": "route-catalog-exact"
+          },
+          "content.updates.email": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:1",
+            "sourceHash": "e64f030216766faf1005a0b732c299660e8385d512aaca2fb34c1464a761bf72",
+            "status": "route-catalog-exact"
+          },
+          "content.updates.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:5",
+            "sourceHash": "56cda10f55394aba57dcb8d7fe35a93054d830f16eb4ee0a70eab6ab2ffe677a",
+            "status": "route-catalog-exact"
+          },
+          "content.whatSiteIs.abiName": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:0",
+            "reason": "Disambiguate the two approved links with the same person name.",
+            "sourceHash": "2d6040623d71ef93da49a7faf035ccbb84481b58935f7618b6114af9760a4b7f",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "content.whatSiteIs.afterAbi": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.mt-4:ctx:p:pos:1",
+            "sourceHash": "06d085a244ad67c30150240cdb3d3e255e53e9553ae71d0a1db1c37a1339a8de",
+            "status": "route-catalog-exact"
+          },
+          "content.whatSiteIs.beforeAbi": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.mt-4:ctx:p:pos:0",
+            "sourceHash": "a164fb2ec623dfacdd968e99d76f94e445fc8c2e73ec497552171f7b37631ae4",
+            "status": "route-catalog-exact"
+          },
+          "content.whatSiteIs.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+            "sourceHash": "9adc0dac1ccc7af236f8f59290528bb031c3e471d84e84e25877e926df9faef3",
+            "status": "route-catalog-exact"
+          },
+          "content.whoBuilt.abiName": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:2",
+            "reason": "Disambiguate the two approved links with the same person name.",
+            "sourceHash": "2d6040623d71ef93da49a7faf035ccbb84481b58935f7618b6114af9760a4b7f",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "content.whoBuilt.beforeAbi": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:8",
+            "sourceHash": "c11d606ffd1a1abfdf29f8356c4e812eea0e3d254f6ecd1dc55500acda691632",
+            "status": "route-catalog-exact"
+          },
+          "content.whoBuilt.beforeDarkmatter": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:9",
+            "sourceHash": "0695b563acde461fc2f8d9aebccf35c7596ac458b8d8e067c602fb7b4e5f1578",
+            "status": "route-catalog-exact"
+          },
+          "content.whoBuilt.darkmatterName": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:3",
+            "sourceHash": "46d9902e7bdf4e44566ba128ac4d2a0ed7f68f5ef925e9968d5574391ce16c79",
+            "status": "route-catalog-exact"
+          },
+          "content.whoBuilt.disclaimer": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.text-sm:ctx:p:pos:0",
+            "sourceHash": "39810b463d508f05fc610cab68028ae015b7e58f92ef529e3a52c4774df37057",
+            "status": "route-catalog-exact"
+          },
+          "content.whoBuilt.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:6",
+            "sourceHash": "53a097715029ef58b85621dda354e6e9ad80298dc498e0fa1f8e166357d4146c",
+            "status": "route-catalog-exact"
+          },
+          "footer.about": {
+            "catalogRoute": "/about",
+            "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+            "reason": "Use the approved Japanese visible About heading from the preserved /about catalog instead of the untranslated route-footer occurrence.",
+            "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "footer.aboutAbi": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+            "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+            "status": "route-catalog-exact"
+          },
+          "footer.embed": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+            "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+            "status": "route-catalog-exact"
+          },
+          "footer.guides": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:3",
+            "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+            "status": "route-catalog-exact"
+          },
+          "footer.privacy": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:5",
+            "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+            "status": "route-catalog-exact"
+          },
+          "footer.techniques": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+            "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+            "status": "route-catalog-exact"
+          },
+          "hero.eyebrow": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+            "reason": "The current JSX applies uppercase source presentation while the approved catalog stores the same section label in title case.",
+            "sourceHash": "72b70ae3032dfe31f3573e22e9782e8d35ebb1d03a2c4b3bfa247cbdfe3551dc",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "hero.intro": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.text-lg.text-muted-foreground:ctx:p:pos:0",
+            "reason": "Disambiguate the identical approved Twitter description and visible hero introduction.",
+            "sourceHash": "cfa609fbd6465c04be6093fa395714cb47a49cd441fd0970ee4ef68f703df939",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "hero.lastUpdated": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.text-xs.text-muted-foreground:ctx:p:pos:0",
+            "sourceHash": "554b735e824d8ccc51c7b2754cd3c0e87fc55065279b4f81b7d5c21d5db958a2",
+            "status": "route-catalog-exact"
+          },
+          "hero.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+            "reason": "Bind the current title-case heading to the approved catalog placement whose source differs only by capitalization.",
+            "sourceHash": "8dc4bd2e648148833d7526d251f0a3f94ba7db29a5be560e364b66b0862d392f",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "metadata.description": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:meta:name:description",
+            "sourceHash": "763542ab58536b5b6dc70176574c1ea30a0fc54de0c1e2a7052d2c943dbce958",
+            "status": "route-catalog-exact"
+          },
+          "metadata.socialDescription": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:meta:property:og:description",
+            "sourceHash": "2a8842f507d9885a1a3c23f2321645b2978b6cd5a3e20b325d28cb2329b1260f",
+            "status": "route-catalog-exact"
+          },
+          "metadata.socialTitle": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:meta:property:og:title",
+            "reason": "Disambiguate the identical approved Open Graph and Twitter title placements.",
+            "sourceHash": "147c22d92ad46710c55d5683002d81929e28518ecca77106a9e2b4505ee6d3fa",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "metadata.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:title",
+            "reason": "The crawled title includes the shared layout suffix twice; bind the current route-owned metadata title to that approved head placement without changing English output.",
+            "sourceHash": "8ca03ce1a27547b4aa15ea3c137da869e5e2267c3989d074d74a032017e5b349",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "metadata.twitterDescription": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:meta:name:twitter:description",
+            "reason": "Disambiguate the identical approved Twitter description and visible hero introduction.",
+            "sourceHash": "cfa609fbd6465c04be6093fa395714cb47a49cd441fd0970ee4ef68f703df939",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "metadata.twitterTitle": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:meta:name:twitter:title",
+            "reason": "Disambiguate the identical approved Open Graph and Twitter title placements.",
+            "sourceHash": "147c22d92ad46710c55d5683002d81929e28518ecca77106a9e2b4505ee6d3fa",
+            "status": "explicit-reviewed-source-binding"
+          }
+        },
+        "pt-br": {
+          "content.attribution.longerLineage": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:1",
+            "sourceHash": "3201e48f5bb396d6552bc7ee6c0c91433befe388efad7fc8442e38e73ce412f8",
+            "status": "route-catalog-exact"
+          },
+          "content.attribution.originators": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:0",
+            "sourceHash": "9f7e60d7ac13f95df835eebe92999e67a5d3d6d162cbdbfa8163c12f50332cb7",
+            "status": "route-catalog-exact"
+          },
+          "content.attribution.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
+            "sourceHash": "88aa6f98a8b8c20b28ad3499d587bbf6758caf10e8df436792c559eac5096bd0",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.intro": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:2",
+            "sourceHash": "b5ad2d44199304ef301577b61258079024a7cda545c9166febf24be2569910e3",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.mechanisms.body": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:2",
+            "sourceHash": "c2bcea4faec9491475a2ede21cde0119ee2702507101c2d17a96394a0ca89c5c",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.mechanisms.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:2",
+            "sourceHash": "c8ccb1747e2af56f8f7605975f2f96f2a956427b2c87b44e87e590ea21479b6d",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.practitioners.body": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:3",
+            "sourceHash": "e0edb38d43e3833d10fb7516841dc9eb436445572cc629367c9e0fa0d6e747b4",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.practitioners.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:3",
+            "sourceHash": "c692c50a01be83d94afdf5d879fad2501fc30c24ec2f548d5690edc58264fef1",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.reviews.body": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:0",
+            "sourceHash": "e0729c688b52c2fa2dd4df5fb86db6fa08adf40c2fa74bf27f4825458c2891e4",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.reviews.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:0",
+            "sourceHash": "9e44ee784d4d1e73b9d3edbd6e15737087596a0304ad7a5e82c532398590680c",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.trials.body": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:1",
+            "sourceHash": "423efbd5c7bcef4634fda1101bd7362f7bd7076596231649d07cd4d7a11e53c8",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorities.trials.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:1",
+            "sourceHash": "36911ef5d4c6fc479eac0f03d79dd2b6d3ed3a612118089fd7df21e0eb9e0ca3",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.priorityIntro": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:3",
+            "sourceHash": "700aab5a2c232381d26768b450e04f23c3b3636e3415e16c1cdf7f0bbf1c753e",
+            "status": "route-catalog-exact"
+          },
+          "content.citations.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:2",
+            "sourceHash": "6231eea8a90dcbbfd2f83056c0e1a6a700e963364c8f9e21bdea5d727628cb06",
+            "status": "route-catalog-exact"
+          },
+          "content.claims.evidence": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:4",
+            "sourceHash": "74175c395714f0c6c2c3657976d6723c60494fe3c99f66d1bfbfe661279ab66a",
+            "status": "route-catalog-exact"
+          },
+          "content.claims.scrutiny": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:5",
+            "sourceHash": "e20700de2db9558e38380341012753f44fa7be3f7f3f2458c4bf84a42c71ea4c",
+            "status": "route-catalog-exact"
+          },
+          "content.claims.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:3",
+            "sourceHash": "af3931d5660e99f1893230d667925eee9877311680bdfe1800662a73ec9093fe",
+            "status": "route-catalog-exact"
+          },
+          "content.exclusions.credentials": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:6",
+            "sourceHash": "cd269beab3260e5c7a3a2cad205ff9b3d082a755b0521ec3dda4da829ced7148",
+            "status": "route-catalog-exact"
+          },
+          "content.exclusions.cures": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:5",
+            "sourceHash": "aeb6c9bf0f38d68e4343128bb0655d94d8145ab0b78ae49cf4b002674b677d9c",
+            "status": "route-catalog-exact"
+          },
+          "content.exclusions.diagnoses": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:4",
+            "sourceHash": "5766c2baff90c129bbe58f5ba27236edb0f24604f1329a124a37bce4cba8924f",
+            "status": "route-catalog-exact"
+          },
+          "content.exclusions.overstatement": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:span:ctx:span:pos:7",
+            "sourceHash": "7decebe5dc76973c52335cb10454f4ebe9cbbb349a6f939ae1dcae3d2302fbe1",
+            "status": "route-catalog-exact"
+          },
+          "content.exclusions.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:4",
+            "sourceHash": "0a6f586dd9c9e0554091bde8f04e8062e18f1a4ee61a1b7a6d76afb9a1c8e617",
+            "status": "route-catalog-exact"
+          },
+          "content.updates.afterEmail": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:7",
+            "sourceHash": "cc2cf02968a1381b5952ae2d4d561756964f7eaffc91493697937b507d732e45",
+            "status": "route-catalog-exact"
+          },
+          "content.updates.beforeEmail": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:6",
+            "sourceHash": "159fb78e7590ce63c6ac8cf634819ace83b4eb816ba2523757daa4d3a0a8b97d",
+            "status": "route-catalog-exact"
+          },
+          "content.updates.email": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:1",
+            "sourceHash": "e64f030216766faf1005a0b732c299660e8385d512aaca2fb34c1464a761bf72",
+            "status": "route-catalog-exact"
+          },
+          "content.updates.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:5",
+            "sourceHash": "56cda10f55394aba57dcb8d7fe35a93054d830f16eb4ee0a70eab6ab2ffe677a",
+            "status": "route-catalog-exact"
+          },
+          "content.whatSiteIs.abiName": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:0",
+            "reason": "Disambiguate the two approved links with the same person name.",
+            "sourceHash": "2d6040623d71ef93da49a7faf035ccbb84481b58935f7618b6114af9760a4b7f",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "content.whatSiteIs.afterAbi": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.mt-4:ctx:p:pos:1",
+            "sourceHash": "06d085a244ad67c30150240cdb3d3e255e53e9553ae71d0a1db1c37a1339a8de",
+            "status": "route-catalog-exact"
+          },
+          "content.whatSiteIs.beforeAbi": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.mt-4:ctx:p:pos:0",
+            "sourceHash": "a164fb2ec623dfacdd968e99d76f94e445fc8c2e73ec497552171f7b37631ae4",
+            "status": "route-catalog-exact"
+          },
+          "content.whatSiteIs.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+            "sourceHash": "9adc0dac1ccc7af236f8f59290528bb031c3e471d84e84e25877e926df9faef3",
+            "status": "route-catalog-exact"
+          },
+          "content.whoBuilt.abiName": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:2",
+            "reason": "Disambiguate the two approved links with the same person name.",
+            "sourceHash": "2d6040623d71ef93da49a7faf035ccbb84481b58935f7618b6114af9760a4b7f",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "content.whoBuilt.beforeAbi": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:8",
+            "sourceHash": "c11d606ffd1a1abfdf29f8356c4e812eea0e3d254f6ecd1dc55500acda691632",
+            "status": "route-catalog-exact"
+          },
+          "content.whoBuilt.beforeDarkmatter": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p:ctx:p:pos:9",
+            "sourceHash": "0695b563acde461fc2f8d9aebccf35c7596ac458b8d8e067c602fb7b4e5f1578",
+            "status": "route-catalog-exact"
+          },
+          "content.whoBuilt.darkmatterName": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.text-primary.hover:underline:ctx:link:pos:3",
+            "sourceHash": "46d9902e7bdf4e44566ba128ac4d2a0ed7f68f5ef925e9968d5574391ce16c79",
+            "status": "route-catalog-exact"
+          },
+          "content.whoBuilt.disclaimer": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.text-sm:ctx:p:pos:0",
+            "sourceHash": "39810b463d508f05fc610cab68028ae015b7e58f92ef529e3a52c4774df37057",
+            "status": "route-catalog-exact"
+          },
+          "content.whoBuilt.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:6",
+            "sourceHash": "53a097715029ef58b85621dda354e6e9ad80298dc498e0fa1f8e166357d4146c",
+            "status": "route-catalog-exact"
+          },
+          "footer.about": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+            "reason": "Disambiguate the approved visible eyebrow and footer link placements.",
+            "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "footer.aboutAbi": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+            "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+            "status": "route-catalog-exact"
+          },
+          "footer.embed": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+            "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+            "status": "route-catalog-exact"
+          },
+          "footer.guides": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:3",
+            "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+            "status": "route-catalog-exact"
+          },
+          "footer.privacy": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:5",
+            "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+            "status": "route-catalog-exact"
+          },
+          "footer.techniques": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+            "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+            "status": "route-catalog-exact"
+          },
+          "hero.eyebrow": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+            "reason": "The current JSX applies uppercase source presentation while the approved catalog stores the same section label in title case.",
+            "sourceHash": "72b70ae3032dfe31f3573e22e9782e8d35ebb1d03a2c4b3bfa247cbdfe3551dc",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "hero.intro": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.text-lg.text-muted-foreground:ctx:p:pos:0",
+            "reason": "Disambiguate the identical approved Twitter description and visible hero introduction.",
+            "sourceHash": "cfa609fbd6465c04be6093fa395714cb47a49cd441fd0970ee4ef68f703df939",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "hero.lastUpdated": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:p.text-xs.text-muted-foreground:ctx:p:pos:0",
+            "sourceHash": "554b735e824d8ccc51c7b2754cd3c0e87fc55065279b4f81b7d5c21d5db958a2",
+            "status": "route-catalog-exact"
+          },
+          "hero.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+            "reason": "Bind the current title-case heading to the approved catalog placement whose source differs only by capitalization.",
+            "sourceHash": "8dc4bd2e648148833d7526d251f0a3f94ba7db29a5be560e364b66b0862d392f",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "metadata.description": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:meta:name:description",
+            "sourceHash": "763542ab58536b5b6dc70176574c1ea30a0fc54de0c1e2a7052d2c943dbce958",
+            "status": "route-catalog-exact"
+          },
+          "metadata.socialDescription": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:meta:property:og:description",
+            "sourceHash": "2a8842f507d9885a1a3c23f2321645b2978b6cd5a3e20b325d28cb2329b1260f",
+            "status": "route-catalog-exact"
+          },
+          "metadata.socialTitle": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:meta:property:og:title",
+            "reason": "Disambiguate the identical approved Open Graph and Twitter title placements.",
+            "sourceHash": "147c22d92ad46710c55d5683002d81929e28518ecca77106a9e2b4505ee6d3fa",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "metadata.title": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:title",
+            "reason": "The crawled title includes the shared layout suffix twice; bind the current route-owned metadata title to that approved head placement without changing English output.",
+            "sourceHash": "8ca03ce1a27547b4aa15ea3c137da869e5e2267c3989d074d74a032017e5b349",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "metadata.twitterDescription": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:meta:name:twitter:description",
+            "reason": "Disambiguate the identical approved Twitter description and visible hero introduction.",
+            "sourceHash": "cfa609fbd6465c04be6093fa395714cb47a49cd441fd0970ee4ef68f703df939",
+            "status": "explicit-reviewed-source-binding"
+          },
+          "metadata.twitterTitle": {
+            "catalogRoute": "/about/editorial-policy",
+            "occurrenceKey": "head:meta:name:twitter:title",
+            "reason": "Disambiguate the identical approved Open Graph and Twitter title placements.",
+            "sourceHash": "147c22d92ad46710c55d5683002d81929e28518ecca77106a9e2b4505ee6d3fa",
+            "status": "explicit-reviewed-source-binding"
+          }
+        }
+      },
+      "sourceRoute": "/about/editorial-policy"
+    }
+  },
+  "schemaVersion": 1
+}

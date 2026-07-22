@@ -1,0 +1,69 @@
+{
+  "replacements": [
+    {
+      "currentCatalogValue": "Ejercicios de respiración para hablar en público que detienen el miedo escénico en 60 segundos. El método de respiración cuadrada de los Navy SEAL",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Ejercicios de respiración para hablar en público que detienen el miedo escénico en 60 segundos. Método de respiración cuadrada de los Navy SEAL, usado antes de más de 100.000 presentaciones. Visualizador gratuito.",
+      "reviewedSourceHash": "8ca6d064f6ec3ba11adf0cf208068de42e3d1c1bad93764cf782149db17f0b41",
+      "sourcePath": "meta.description",
+      "sourceText": "Breathing exercises for public speaking that stop stage fright in 60 seconds. The Navy SEAL box breathing method used before 100,000+ presentations. Free visualizer."
+    },
+    {
+      "currentCatalogValue": "Ejercicios de respiración para hablar en público que detienen el miedo escénico en 60 segundos. El método de respiración cuadrada de los Navy SEAL",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Técnicas de respiración para hablar en público que los Navy SEAL usan antes del combate. Detén la ansiedad ante una presentación en 60 segundos. Visualizador gratuito.",
+      "reviewedSourceHash": "f913e73050343da35bc4433aa7beab3db984b8f1956ead2674d0ed3024fe923a",
+      "sourcePath": "meta.ogDescription",
+      "sourceText": "Breathing techniques for public speaking that Navy SEALs use before combat. Stop presentation anxiety in 60 seconds. Free visualizer."
+    },
+    {
+      "currentCatalogValue": "Ejercicios de respiración para hablar en público: supera",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Ejercicios de respiración para hablar en público: detén el miedo escénico",
+      "reviewedSourceHash": "04094ba39da78ec32b307d4dc2f99ee603b28ac1c38854c16015399be51e5498",
+      "sourcePath": "meta.ogTitle",
+      "sourceText": "Breathing Exercises for Public Speaking: Stop Stage Fright"
+    },
+    {
+      "currentCatalogValue": "Ejercicios de respiración para hablar en público: supera",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Ejercicios de respiración para hablar en público: detén el miedo escénico en 60 segundos",
+      "reviewedSourceHash": "5f314dbab7c5b1686d919310e051f7957d3b575f13d1cd71f34176ae8d5aa40f",
+      "sourcePath": "meta.title",
+      "sourceText": "Breathing Exercises for Public Speaking: Stop Stage Fright in 60 Seconds"
+    },
+    {
+      "currentCatalogValue": "Ejercicios de respiración para hablar en público que detienen el miedo escénico en 60 segundos. El método de respiración cuadrada de los Navy SEAL",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Ejercicios de respiración para hablar en público que detienen el miedo escénico al instante. Visualizador gratuito.",
+      "reviewedSourceHash": "34d29a66a8a11366a291f8602a3ca2a4e4f57e685d413e6868debf94653838b3",
+      "sourcePath": "meta.twitterDescription",
+      "sourceText": "Breathing exercises for public speaking that stop stage fright instantly. Free visualizer."
+    },
+    {
+      "currentCatalogValue": "Ejercicios de respiración para hablar en público: supera",
+      "locale": "es-es",
+      "reason": "The approved metadata value is truncated and loses required source meaning.",
+      "replacement": "Ejercicios de respiración para hablar en público: método Navy SEAL",
+      "reviewedSourceHash": "3930e0e42d65fc4bc95cb3bf898790f93a6812b820594b1d4820e9b75af07786",
+      "sourcePath": "meta.twitterTitle",
+      "sourceText": "Breathing Exercises for Public Speaking: Navy SEAL Method"
+    },
+    {
+      "currentCatalogValue": "Exercícios de respiração para falar em público — Elimine o",
+      "locale": "pt-br",
+      "reason": "The approved metadata is truncated; the replacement restores the source's stage-fright outcome and 60-second timing.",
+      "replacement": "Exercícios de respiração para falar em público: elimine o medo de palco em 60 segundos",
+      "reviewedSourceHash": "5f314dbab7c5b1686d919310e051f7957d3b575f13d1cd71f34176ae8d5aa40f",
+      "sourcePath": "meta.title",
+      "sourceText": "Breathing Exercises for Public Speaking: Stop Stage Fright in 60 Seconds"
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/public-speaking"
+}

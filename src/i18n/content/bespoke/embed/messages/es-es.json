@@ -1,0 +1,116 @@
+{
+  "generator": {
+    "appearance": {
+      "auto": "Automático",
+      "dark": "Oscuro",
+      "light": "Claro",
+      "title": "Apariencia"
+    },
+    "choosePattern": "Elige un patrón",
+    "durationAria": "Duración de la sesión",
+    "durationLabels": {
+      "minute1": "1 min",
+      "minutes10": "10 min",
+      "minutes3": "3 min",
+      "minutes5": "5 min",
+      "open": "Abierta",
+      "seconds30": "30 s"
+    },
+    "eyebrow": "Widget gratuito",
+    "footer": {
+      "about": "Acerca de",
+      "app": "App",
+      "guides": "Guías",
+      "techniques": "Técnicas"
+    },
+    "info": {
+      "free": {
+        "description": "Sin clave API, sin cuenta, sin límites de uso. Solo pega el fragmento.",
+        "title": "Gratis para siempre"
+      },
+      "responsive": {
+        "description": "El ancho se adapta a cualquier contenedor. Funciona en escritorio, tablet y móvil.",
+        "title": "Adaptable"
+      },
+      "theme": {
+        "description": "Detecta automáticamente la preferencia del usuario, o fuerza el modo claro/oscuro para que coincida con tu sitio.",
+        "title": "Modo claro y oscuro"
+      }
+    },
+    "intro": "Añade un visualizador interactivo de respiración a tu web, blog o app. Elige un patrón, copia el fragmento y pégalo en tu HTML. Gratis para siempre.",
+    "localeLabels": {
+      "de": "Alemán",
+      "en": "Inglés",
+      "es": "Español",
+      "fr": "Francés",
+      "ja": "Japonés",
+      "pt": "Portugués"
+    },
+    "patterns": {
+      "4-7-8": {
+        "description": "Sueño y relajación profunda (4-7-8)",
+        "title": "Visualizador de respiración 4-7-8"
+      },
+      "9d-breathwork": {
+        "description": "Energía y resiliencia (30 respiraciones × 3 rondas)",
+        "title": "Respiración 9D explicada"
+      },
+      "belly": {
+        "description": "Fundamentos de la respiración diafragmática (4-0-6-0)",
+        "title": "Respiración abdominal: ejercicios de respiración diafragmática"
+      },
+      "box": {
+        "description": "Concentración y reducción del estrés (4-4-4-4)",
+        "title": "Visualizador de respiración cuadrada (4-4-4-4)"
+      },
+      "coherent": {
+        "description": "Variabilidad de la frecuencia cardíaca (5.5-5.5)",
+        "title": "Entrenador de respiración coherente"
+      },
+      "hope-cartel-9d-breathwork": {
+        "description": "Energía y resiliencia (30 respiraciones × 3 rondas)",
+        "title": "Respiración 9D de Hope Cartel"
+      },
+      "physiological-sigh": {
+        "description": "Reinicio ante el pánico (Doble inhalación)",
+        "title": "Suspiro fisiológico: alivio inmediato del estrés"
+      },
+      "pursed-lip": {
+        "description": "Salud respiratoria (proporción de exhalación 2-4)",
+        "title": "Técnica de respiración con labios fruncidos"
+      },
+      "wim-hof": {
+        "description": "Energía y resiliencia (30 respiraciones × 3 rondas)",
+        "title": "Método de respiración Wim Hof"
+      }
+    },
+    "preview": {
+      "iframeTitleTemplate": "Vista previa de {pattern}",
+      "title": "Vista previa"
+    },
+    "snippet": {
+      "copied": "¡Copiado!",
+      "copy": "Copiar fragmento",
+      "title": "Código de inserción"
+    },
+    "sound": {
+      "binauralLabel": "Tonos binaurales (se recomiendan auriculares)",
+      "title": "Sonido"
+    },
+    "title": "Integra un ejercicio de respiración",
+    "widgetLanguageAria": "Idioma del widget"
+  },
+  "metadata": {
+    "description": "Añade un widget gratuito de ejercicios de respiración interactivos a tu web. Elige entre 12 patrones, como respiración cuadrada, 4-7-8 y respiración coherente. Copia el código de inserción y pégalo en tu HTML.",
+    "imageAlt": "Widget gratuito para integrar ejercicios de respiración",
+    "socialDescription": "Añade un widget gratuito de ejercicios de respiración interactivos a tu web. Elige entre 12 patrones, como respiración cuadrada, 4-7-8 y respiración coherente. Copia el código de inserción y pégalo en tu HTML.",
+    "socialTitle": "Integra un widget de respiración gratis en tu web",
+    "title": "Añade un widget de respiración gratis a tu web",
+    "twitterDescription": "Añade un widget gratuito de ejercicios de respiración interactivos a tu web. Elige entre 12 patrones, como respiración cuadrada, 4-7-8 y respiración coherente. Copia el código de inserción y pégalo en tu HTML.",
+    "twitterTitle": "Integra un widget de respiración gratis en tu web"
+  },
+  "player": {
+    "embedLabel": "Insertar",
+    "loadingAriaLabel": "Cargando ejercicio de respiración"
+  }
+}

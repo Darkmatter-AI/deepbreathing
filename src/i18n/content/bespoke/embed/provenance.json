@@ -1,0 +1,1966 @@
+{
+  "locales": {
+    "de-de": {
+      "generator.appearance.auto": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:button.px-4.py-2:ctx:cta_button:pos:0",
+        "sourceHash": "0286249762f7c94349cdc0ba3bb2255baf9a80036e2193ead1d77696f888582f",
+        "status": "route-catalog-exact"
+      },
+      "generator.appearance.dark": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:button.px-4.py-2:ctx:cta_button:pos:2",
+        "sourceHash": "60acc53f13a5d1bf115878c4a785e9a43e8286c4139a8402a6ac7d23966f9153",
+        "status": "route-catalog-exact"
+      },
+      "generator.appearance.light": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:button.px-4.py-2:ctx:cta_button:pos:1",
+        "sourceHash": "dbcd5e7bb7a0f538810de44c3efbd813037ee3fa358747bb71fa58e157af45f7",
+        "status": "route-catalog-exact"
+      },
+      "generator.appearance.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h2.text-sm.uppercase:ctx:heading:pos:1",
+        "sourceHash": "3907fa7f80722a6fc58cd8c1bd30abf7638095d6774f183b6e831b7093957d1b",
+        "status": "route-catalog-exact"
+      },
+      "generator.choosePattern": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h2.text-sm.uppercase:ctx:heading:pos:0",
+        "sourceHash": "1baa24b1132d5d9b3eb8f6f692cee9dd2c22c652f581ed3ed8f42227329a7c23",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationAria": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "attr:select.rounded-xl.border:aria-label:pos:1",
+        "sourceHash": "f2e5520652c715a0b562779b4d8f015858c755ad8758b347e47a3846e83ebdab",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.minute1": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:8",
+        "sourceHash": "75adbad9edb8aa869115a62ed8ce9c32c7a58fe7c265de3976036494d778d030",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.minutes10": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:11",
+        "sourceHash": "8361323b37e45147c930ae3111f3d639e815c20972f0c2adb6c9aa3ebf1a3bce",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.minutes3": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:9",
+        "sourceHash": "00164fb89ba4fc94304d107f4c41fbdb41fdb4084dfc83258d23437191fd0a28",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.minutes5": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:10",
+        "sourceHash": "53bc57cdb69279bbfe2fc05f6964a89862ff636724f5c3c2016e8894c2be609c",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.open": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:6",
+        "sourceHash": "ed077f3d8125d60dca1979c7133601bd187d47c73ed9975028f677e49e709942",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.seconds30": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:7",
+        "sourceHash": "d3382a4f0e03f8b14cf99424376886c236f1503d4b332137667484fc96d58fc4",
+        "status": "route-catalog-exact"
+      },
+      "generator.eyebrow": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+        "sourceHash": "b5ed207dcb6cbacbaa90730df40ebbf857c6f6baca10dfb2570e217202f0ec9c",
+        "status": "route-catalog-exact"
+      },
+      "generator.footer.about": {
+        "reason": "The preserved Japanese footer label leaked the English source; this reviewed replacement localizes the shared navigation label.",
+        "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+        "status": "repo-reviewed-replacement"
+      },
+      "generator.footer.app": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+        "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+        "status": "route-catalog-exact"
+      },
+      "generator.footer.guides": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+        "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+        "status": "route-catalog-exact"
+      },
+      "generator.footer.techniques": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+        "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.free.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0",
+        "sourceHash": "55a6d1a58057ebc3e7c0ba4da0c904d698bf0d945c05ab6905d0d1924c346bf6",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.free.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h3.font-semibold.text-card-foreground:ctx:heading:pos:0",
+        "sourceHash": "56f9c1ca9d9aad5cae4cafb9c77fafc34e2eefe341d860fc14b517aa5f3b8055",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.responsive.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:1",
+        "sourceHash": "c7a37a1a8af588a33fe878f4bbfa4bcd1d3a4ad42f841407db959de33e8c5e88",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.responsive.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h3.font-semibold.text-card-foreground:ctx:heading:pos:1",
+        "sourceHash": "de77979400cde1315d7399c2340888dca1c00afea32802d505032452b1d7547f",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.theme.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+        "sourceHash": "aeef76c660271b67794a801d6d1135ffe7986ea5132bc9e1132c1818f85cdd49",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.theme.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h3.font-semibold.text-card-foreground:ctx:heading:pos:2",
+        "sourceHash": "fe0320a5d8ab8f7e24a062c85bd21acfa422de20ab1e06568926ef3c107f4a52",
+        "status": "route-catalog-exact"
+      },
+      "generator.intro": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.max-w-2xl.text-lg:ctx:p:pos:0",
+        "sourceHash": "ab354662d49f4e2b3c840c24f90f44dc09d6b056b92bf0f123e0bfbb4c57682b",
+        "status": "route-catalog-exact"
+      },
+      "generator.localeLabels.de": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:4",
+        "sourceHash": "801cfe0fa1182664d16f4aaf7856cc73412f79ef508a866eebc2e5ccf125ff0a",
+        "status": "route-catalog-exact"
+      },
+      "generator.localeLabels.en": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:0",
+        "reason": "The language option and the hydrated footer switcher both contain English.",
+        "sourceHash": "ba118bf7fc9c1aedc1edb28a0aa86e0b43b681f222af6616e13c43be87815b06",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "generator.localeLabels.es": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:1",
+        "sourceHash": "94b382b61b9dde0ff8d45a44a34b61971d98df5bd810c803a3f33ce5b115eae8",
+        "status": "route-catalog-exact"
+      },
+      "generator.localeLabels.fr": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:3",
+        "sourceHash": "e495d53b967a7b049c8a2c25baa519fe124b49c1d0cf9cd8bdffa00d2f9d8ed6",
+        "status": "route-catalog-exact"
+      },
+      "generator.localeLabels.ja": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:5",
+        "sourceHash": "77710aedc74ecfa33685e33a6c7df5cc83004da1bdcef7fb280f5c2b2e97e0a5",
+        "status": "route-catalog-exact"
+      },
+      "generator.localeLabels.pt": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:2",
+        "sourceHash": "d4ada8ec276411a1d73428117ea0d7d8ea48789e9f07ce6bb6908cb851b52441",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.4-7-8.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:1",
+        "sourceHash": "d0de1c617518543a41e0021755554800f494aeac2ffad3d056453c6726bec0a7",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.4-7-8.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:1",
+        "sourceHash": "61bc7df0643742b926fa603a5bb211bd432b1789c6e4bc4258e41a29826b436e",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.9d-breathwork.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:7",
+        "reason": "The preservation snapshot contains this text for multiple pattern cards; position seven is the current 9D Breathwork card.",
+        "sourceHash": "5e784153d00c4b5a2ed489dd36fa4bb490d67ed00bec80c1a59d154ad7615f2e",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "generator.patterns.9d-breathwork.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:7",
+        "sourceHash": "32baa93231dbe1e8568e0abeb4e0e6c0853129574a0e2e644712b4f3bb4532aa",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.belly.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:6",
+        "sourceHash": "4d7fcbb841e8d21479a1422efdc5a61b526064a6e4a486ca4a48b36c2804e22a",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.belly.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:6",
+        "sourceHash": "b0a5eb5ee5f57c475a7026cded2abb30698da9e3ccf7c5428a76b80d0d0bb6f1",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.box.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:0",
+        "sourceHash": "ee391164f2071fff155d7c0940b42168ecd0f512199e4381a06a271806e713b0",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.box.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:0",
+        "sourceHash": "1937b7673dddca18a5b80fa7c9532b1b9f55ef0e0b2cf55202470767d5af2de0",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.coherent.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:2",
+        "sourceHash": "464d74fe901b6f34df442e2d5cdacc64ee78b031858bb7b10dc9e267bdcef76f",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.coherent.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:2",
+        "sourceHash": "4c6e34da239e136a2b5d96c1bc328ff0f810abfb71f7047ad9027d548b509101",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.hope-cartel-9d-breathwork.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:8",
+        "reason": "The preservation snapshot contains this text for multiple pattern cards; position eight is the current Hope Cartel card.",
+        "sourceHash": "5e784153d00c4b5a2ed489dd36fa4bb490d67ed00bec80c1a59d154ad7615f2e",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "generator.patterns.hope-cartel-9d-breathwork.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:8",
+        "sourceHash": "6e9e17540b182c9b37846d496562211a7bd33d821317dd7e27468058f93c1309",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.physiological-sigh.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:3",
+        "sourceHash": "e1e84863be1d6d0ea6a4e3bccf32c7985a3a671e0e6ab327794cf59ad11d1de1",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.physiological-sigh.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:3",
+        "sourceHash": "b328eabea77dd51370eb8e6ce397ac46cee3df995cd9515e8a1a7e9b35e9bdd7",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.pursed-lip.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:5",
+        "sourceHash": "cfc4972d7a50a08b4c0640992c37f5d13a3a9a2b0a97f23aefda08efc44aa955",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.pursed-lip.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:5",
+        "sourceHash": "b44d6b2987526fe1ecca59bd20db1dfa5478a2ed3fd051905793342a73747bd2",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.wim-hof.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:4",
+        "reason": "The preservation snapshot contains this text for multiple historical pattern cards; position four is the current Wim Hof card.",
+        "sourceHash": "5e784153d00c4b5a2ed489dd36fa4bb490d67ed00bec80c1a59d154ad7615f2e",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "generator.patterns.wim-hof.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:4",
+        "sourceHash": "0fc2745ef83bc7cefb27f9424a6b131460b3fd197f069edb7f3534db9987f059",
+        "status": "route-catalog-exact"
+      },
+      "generator.preview.iframeTitleTemplate": {
+        "reason": "Only the default pattern's hydrated iframe title was captured; the native generator needs the same accessible title for every selected pattern.",
+        "sourceHash": "66570500ed4350c14a7974c884e312c5bd095f5a2d8e1826c342a37ae44d83b5",
+        "status": "repo-reviewed-replacement"
+      },
+      "generator.preview.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h2.text-sm.uppercase:ctx:heading:pos:2",
+        "sourceHash": "324b134f57c70c729ae3dc4d298bb451656717d70523e942c1ce667b8024ea07",
+        "status": "route-catalog-exact"
+      },
+      "generator.snippet.copied": {
+        "reason": "The transient copied state was not active in the preservation snapshot.",
+        "sourceHash": "ea61bc15688d1e482ae5335e8dc030d8300b1afc07ecc7c2e6af5c43728b1d25",
+        "status": "repo-reviewed-replacement"
+      },
+      "generator.snippet.copy": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:button.inline-flex.items-center:ctx:cta_button:pos:0",
+        "sourceHash": "968d0a9d24a6a69fcbd19a5ff374bc860eb842faf16426e3ef858bb5ba6538ff",
+        "status": "route-catalog-exact"
+      },
+      "generator.snippet.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h2.text-sm.uppercase:ctx:heading:pos:4",
+        "reason": "The preservation snapshot contains a stale duplicate; the later placement is the current snippet heading.",
+        "sourceHash": "7cf09dee037b83a71262c68c47d3aedb5bc63fbd1651bc26246bfef2738be954",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "generator.sound.binauralLabel": {
+        "reason": "Missing approved catalog translation for sel:label.inline-flex.cursor-pointer:ctx:form_input:pos:0",
+        "sourceHash": "ae88a52a9450ea61b45b1a07df9a4849b749d01beef9a611caf0d7fab0c204ff",
+        "status": "repo-reviewed-gap"
+      },
+      "generator.sound.title": {
+        "reason": "The Sound grouping heading was added after the preservation snapshot.",
+        "sourceHash": "46124e023603420f8670526e3eb9a603935e8916cb8e0428ea84bbe42d85d297",
+        "status": "repo-reviewed-replacement"
+      },
+      "generator.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "4001d84597cb16f1773e6c18a0168a093d5bbc049b545fe044e8a18960cf224a",
+        "status": "route-catalog-exact"
+      },
+      "generator.widgetLanguageAria": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "attr:select.rounded-xl.border:aria-label:pos:0",
+        "sourceHash": "6d8d3049ec19090afe7c25652a89f22b5da47a05dfb5653ded71c8003dd96f9c",
+        "status": "route-catalog-exact"
+      },
+      "metadata.description": {
+        "reason": "The preserved metadata descriptions were clipped in several locales; these reviewed values restore the complete source meaning.",
+        "sourceHash": "5106e6769672629de2b4757215a5e196846087e1e9d33a422cc66944a357c68e",
+        "status": "repo-reviewed-replacement"
+      },
+      "metadata.imageAlt": {
+        "reason": "The current Open Graph image alt was added after the preservation snapshot.",
+        "sourceHash": "537a4ea025fe692ef92a047b72a2a51e18d5346fdb83b6ad4bcf39c0cd352ff5",
+        "status": "repo-reviewed-replacement"
+      },
+      "metadata.socialDescription": {
+        "reason": "The preserved Open Graph descriptions were clipped in several locales; these reviewed values restore the complete source meaning.",
+        "sourceHash": "5106e6769672629de2b4757215a5e196846087e1e9d33a422cc66944a357c68e",
+        "status": "repo-reviewed-replacement"
+      },
+      "metadata.socialTitle": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "head:meta:property:og:title",
+        "sourceHash": "d5e19e881c1074b40d79b296bcd4e00c27d4e295b7669013dc15c8b6dd78d023",
+        "status": "route-catalog-exact"
+      },
+      "metadata.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "head:title",
+        "reason": "The English layout adds the site-name suffix while the localized layout consumes the final reviewed head title.",
+        "sourceHash": "d5e19e881c1074b40d79b296bcd4e00c27d4e295b7669013dc15c8b6dd78d023",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "metadata.twitterDescription": {
+        "reason": "The captured Twitter description predates the current page metadata; reuse the approved current Open Graph description translation.",
+        "sourceHash": "5106e6769672629de2b4757215a5e196846087e1e9d33a422cc66944a357c68e",
+        "status": "repo-reviewed-replacement"
+      },
+      "metadata.twitterTitle": {
+        "reason": "The captured Twitter title predates the current page metadata; reuse the approved current Open Graph title translation.",
+        "sourceHash": "d5e19e881c1074b40d79b296bcd4e00c27d4e295b7669013dc15c8b6dd78d023",
+        "status": "repo-reviewed-replacement"
+      },
+      "player.embedLabel": {
+        "reason": "The dynamic embed player is not cataloged; reuse the approved visualizer footer label in its noindex title.",
+        "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+        "status": "repo-reviewed-replacement"
+      },
+      "player.loadingAriaLabel": {
+        "reason": "The dynamic embed player is not cataloged; reuse the approved visualizer loading label.",
+        "sourceHash": "dd71f41a16a5c572c4612ec3da376e68c7afec80395b903936605ec251f04e87",
+        "status": "repo-reviewed-replacement"
+      }
+    },
+    "es-es": {
+      "generator.appearance.auto": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:button.px-4.py-2:ctx:cta_button:pos:0",
+        "sourceHash": "0286249762f7c94349cdc0ba3bb2255baf9a80036e2193ead1d77696f888582f",
+        "status": "route-catalog-exact"
+      },
+      "generator.appearance.dark": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:button.px-4.py-2:ctx:cta_button:pos:2",
+        "sourceHash": "60acc53f13a5d1bf115878c4a785e9a43e8286c4139a8402a6ac7d23966f9153",
+        "status": "route-catalog-exact"
+      },
+      "generator.appearance.light": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:button.px-4.py-2:ctx:cta_button:pos:1",
+        "sourceHash": "dbcd5e7bb7a0f538810de44c3efbd813037ee3fa358747bb71fa58e157af45f7",
+        "status": "route-catalog-exact"
+      },
+      "generator.appearance.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h2.text-sm.uppercase:ctx:heading:pos:1",
+        "sourceHash": "3907fa7f80722a6fc58cd8c1bd30abf7638095d6774f183b6e831b7093957d1b",
+        "status": "route-catalog-exact"
+      },
+      "generator.choosePattern": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h2.text-sm.uppercase:ctx:heading:pos:0",
+        "sourceHash": "1baa24b1132d5d9b3eb8f6f692cee9dd2c22c652f581ed3ed8f42227329a7c23",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationAria": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "attr:select.rounded-xl.border:aria-label:pos:1",
+        "sourceHash": "f2e5520652c715a0b562779b4d8f015858c755ad8758b347e47a3846e83ebdab",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.minute1": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:8",
+        "sourceHash": "75adbad9edb8aa869115a62ed8ce9c32c7a58fe7c265de3976036494d778d030",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.minutes10": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:11",
+        "sourceHash": "8361323b37e45147c930ae3111f3d639e815c20972f0c2adb6c9aa3ebf1a3bce",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.minutes3": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:9",
+        "sourceHash": "00164fb89ba4fc94304d107f4c41fbdb41fdb4084dfc83258d23437191fd0a28",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.minutes5": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:10",
+        "sourceHash": "53bc57cdb69279bbfe2fc05f6964a89862ff636724f5c3c2016e8894c2be609c",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.open": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:6",
+        "sourceHash": "ed077f3d8125d60dca1979c7133601bd187d47c73ed9975028f677e49e709942",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.seconds30": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:7",
+        "sourceHash": "d3382a4f0e03f8b14cf99424376886c236f1503d4b332137667484fc96d58fc4",
+        "status": "route-catalog-exact"
+      },
+      "generator.eyebrow": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+        "sourceHash": "b5ed207dcb6cbacbaa90730df40ebbf857c6f6baca10dfb2570e217202f0ec9c",
+        "status": "route-catalog-exact"
+      },
+      "generator.footer.about": {
+        "reason": "The preserved Japanese footer label leaked the English source; this reviewed replacement localizes the shared navigation label.",
+        "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+        "status": "repo-reviewed-replacement"
+      },
+      "generator.footer.app": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+        "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+        "status": "route-catalog-exact"
+      },
+      "generator.footer.guides": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+        "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+        "status": "route-catalog-exact"
+      },
+      "generator.footer.techniques": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+        "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.free.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0",
+        "sourceHash": "55a6d1a58057ebc3e7c0ba4da0c904d698bf0d945c05ab6905d0d1924c346bf6",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.free.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h3.font-semibold.text-card-foreground:ctx:heading:pos:0",
+        "sourceHash": "56f9c1ca9d9aad5cae4cafb9c77fafc34e2eefe341d860fc14b517aa5f3b8055",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.responsive.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:1",
+        "sourceHash": "c7a37a1a8af588a33fe878f4bbfa4bcd1d3a4ad42f841407db959de33e8c5e88",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.responsive.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h3.font-semibold.text-card-foreground:ctx:heading:pos:1",
+        "sourceHash": "de77979400cde1315d7399c2340888dca1c00afea32802d505032452b1d7547f",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.theme.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+        "sourceHash": "aeef76c660271b67794a801d6d1135ffe7986ea5132bc9e1132c1818f85cdd49",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.theme.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h3.font-semibold.text-card-foreground:ctx:heading:pos:2",
+        "sourceHash": "fe0320a5d8ab8f7e24a062c85bd21acfa422de20ab1e06568926ef3c107f4a52",
+        "status": "route-catalog-exact"
+      },
+      "generator.intro": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.max-w-2xl.text-lg:ctx:p:pos:0",
+        "sourceHash": "ab354662d49f4e2b3c840c24f90f44dc09d6b056b92bf0f123e0bfbb4c57682b",
+        "status": "route-catalog-exact"
+      },
+      "generator.localeLabels.de": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:4",
+        "sourceHash": "801cfe0fa1182664d16f4aaf7856cc73412f79ef508a866eebc2e5ccf125ff0a",
+        "status": "route-catalog-exact"
+      },
+      "generator.localeLabels.en": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:0",
+        "reason": "The language option and the hydrated footer switcher both contain English.",
+        "sourceHash": "ba118bf7fc9c1aedc1edb28a0aa86e0b43b681f222af6616e13c43be87815b06",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "generator.localeLabels.es": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:1",
+        "sourceHash": "94b382b61b9dde0ff8d45a44a34b61971d98df5bd810c803a3f33ce5b115eae8",
+        "status": "route-catalog-exact"
+      },
+      "generator.localeLabels.fr": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:3",
+        "sourceHash": "e495d53b967a7b049c8a2c25baa519fe124b49c1d0cf9cd8bdffa00d2f9d8ed6",
+        "status": "route-catalog-exact"
+      },
+      "generator.localeLabels.ja": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:5",
+        "sourceHash": "77710aedc74ecfa33685e33a6c7df5cc83004da1bdcef7fb280f5c2b2e97e0a5",
+        "status": "route-catalog-exact"
+      },
+      "generator.localeLabels.pt": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:2",
+        "sourceHash": "d4ada8ec276411a1d73428117ea0d7d8ea48789e9f07ce6bb6908cb851b52441",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.4-7-8.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:1",
+        "sourceHash": "d0de1c617518543a41e0021755554800f494aeac2ffad3d056453c6726bec0a7",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.4-7-8.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:1",
+        "sourceHash": "61bc7df0643742b926fa603a5bb211bd432b1789c6e4bc4258e41a29826b436e",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.9d-breathwork.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:7",
+        "reason": "The preservation snapshot contains this text for multiple pattern cards; position seven is the current 9D Breathwork card.",
+        "sourceHash": "5e784153d00c4b5a2ed489dd36fa4bb490d67ed00bec80c1a59d154ad7615f2e",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "generator.patterns.9d-breathwork.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:7",
+        "sourceHash": "32baa93231dbe1e8568e0abeb4e0e6c0853129574a0e2e644712b4f3bb4532aa",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.belly.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:6",
+        "sourceHash": "4d7fcbb841e8d21479a1422efdc5a61b526064a6e4a486ca4a48b36c2804e22a",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.belly.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:6",
+        "sourceHash": "b0a5eb5ee5f57c475a7026cded2abb30698da9e3ccf7c5428a76b80d0d0bb6f1",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.box.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:0",
+        "sourceHash": "ee391164f2071fff155d7c0940b42168ecd0f512199e4381a06a271806e713b0",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.box.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:0",
+        "sourceHash": "1937b7673dddca18a5b80fa7c9532b1b9f55ef0e0b2cf55202470767d5af2de0",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.coherent.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:2",
+        "sourceHash": "464d74fe901b6f34df442e2d5cdacc64ee78b031858bb7b10dc9e267bdcef76f",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.coherent.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:2",
+        "sourceHash": "4c6e34da239e136a2b5d96c1bc328ff0f810abfb71f7047ad9027d548b509101",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.hope-cartel-9d-breathwork.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:8",
+        "reason": "The preservation snapshot contains this text for multiple pattern cards; position eight is the current Hope Cartel card.",
+        "sourceHash": "5e784153d00c4b5a2ed489dd36fa4bb490d67ed00bec80c1a59d154ad7615f2e",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "generator.patterns.hope-cartel-9d-breathwork.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:8",
+        "sourceHash": "6e9e17540b182c9b37846d496562211a7bd33d821317dd7e27468058f93c1309",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.physiological-sigh.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:3",
+        "sourceHash": "e1e84863be1d6d0ea6a4e3bccf32c7985a3a671e0e6ab327794cf59ad11d1de1",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.physiological-sigh.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:3",
+        "sourceHash": "b328eabea77dd51370eb8e6ce397ac46cee3df995cd9515e8a1a7e9b35e9bdd7",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.pursed-lip.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:5",
+        "sourceHash": "cfc4972d7a50a08b4c0640992c37f5d13a3a9a2b0a97f23aefda08efc44aa955",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.pursed-lip.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:5",
+        "sourceHash": "b44d6b2987526fe1ecca59bd20db1dfa5478a2ed3fd051905793342a73747bd2",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.wim-hof.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:4",
+        "reason": "The preservation snapshot contains this text for multiple historical pattern cards; position four is the current Wim Hof card.",
+        "sourceHash": "5e784153d00c4b5a2ed489dd36fa4bb490d67ed00bec80c1a59d154ad7615f2e",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "generator.patterns.wim-hof.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:4",
+        "sourceHash": "0fc2745ef83bc7cefb27f9424a6b131460b3fd197f069edb7f3534db9987f059",
+        "status": "route-catalog-exact"
+      },
+      "generator.preview.iframeTitleTemplate": {
+        "reason": "Only the default pattern's hydrated iframe title was captured; the native generator needs the same accessible title for every selected pattern.",
+        "sourceHash": "66570500ed4350c14a7974c884e312c5bd095f5a2d8e1826c342a37ae44d83b5",
+        "status": "repo-reviewed-replacement"
+      },
+      "generator.preview.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h2.text-sm.uppercase:ctx:heading:pos:2",
+        "sourceHash": "324b134f57c70c729ae3dc4d298bb451656717d70523e942c1ce667b8024ea07",
+        "status": "route-catalog-exact"
+      },
+      "generator.snippet.copied": {
+        "reason": "The transient copied state was not active in the preservation snapshot.",
+        "sourceHash": "ea61bc15688d1e482ae5335e8dc030d8300b1afc07ecc7c2e6af5c43728b1d25",
+        "status": "repo-reviewed-replacement"
+      },
+      "generator.snippet.copy": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:button.inline-flex.items-center:ctx:cta_button:pos:0",
+        "sourceHash": "968d0a9d24a6a69fcbd19a5ff374bc860eb842faf16426e3ef858bb5ba6538ff",
+        "status": "route-catalog-exact"
+      },
+      "generator.snippet.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h2.text-sm.uppercase:ctx:heading:pos:4",
+        "reason": "The preservation snapshot contains a stale duplicate; the later placement is the current snippet heading.",
+        "sourceHash": "7cf09dee037b83a71262c68c47d3aedb5bc63fbd1651bc26246bfef2738be954",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "generator.sound.binauralLabel": {
+        "reason": "Missing approved catalog translation for sel:label.inline-flex.cursor-pointer:ctx:form_input:pos:0",
+        "sourceHash": "ae88a52a9450ea61b45b1a07df9a4849b749d01beef9a611caf0d7fab0c204ff",
+        "status": "repo-reviewed-gap"
+      },
+      "generator.sound.title": {
+        "reason": "The Sound grouping heading was added after the preservation snapshot.",
+        "sourceHash": "46124e023603420f8670526e3eb9a603935e8916cb8e0428ea84bbe42d85d297",
+        "status": "repo-reviewed-replacement"
+      },
+      "generator.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "4001d84597cb16f1773e6c18a0168a093d5bbc049b545fe044e8a18960cf224a",
+        "status": "route-catalog-exact"
+      },
+      "generator.widgetLanguageAria": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "attr:select.rounded-xl.border:aria-label:pos:0",
+        "sourceHash": "6d8d3049ec19090afe7c25652a89f22b5da47a05dfb5653ded71c8003dd96f9c",
+        "status": "route-catalog-exact"
+      },
+      "metadata.description": {
+        "reason": "The preserved metadata descriptions were clipped in several locales; these reviewed values restore the complete source meaning.",
+        "sourceHash": "5106e6769672629de2b4757215a5e196846087e1e9d33a422cc66944a357c68e",
+        "status": "repo-reviewed-replacement"
+      },
+      "metadata.imageAlt": {
+        "reason": "The current Open Graph image alt was added after the preservation snapshot.",
+        "sourceHash": "537a4ea025fe692ef92a047b72a2a51e18d5346fdb83b6ad4bcf39c0cd352ff5",
+        "status": "repo-reviewed-replacement"
+      },
+      "metadata.socialDescription": {
+        "reason": "The preserved Open Graph descriptions were clipped in several locales; these reviewed values restore the complete source meaning.",
+        "sourceHash": "5106e6769672629de2b4757215a5e196846087e1e9d33a422cc66944a357c68e",
+        "status": "repo-reviewed-replacement"
+      },
+      "metadata.socialTitle": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "head:meta:property:og:title",
+        "sourceHash": "d5e19e881c1074b40d79b296bcd4e00c27d4e295b7669013dc15c8b6dd78d023",
+        "status": "route-catalog-exact"
+      },
+      "metadata.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "head:title",
+        "reason": "The English layout adds the site-name suffix while the localized layout consumes the final reviewed head title.",
+        "sourceHash": "d5e19e881c1074b40d79b296bcd4e00c27d4e295b7669013dc15c8b6dd78d023",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "metadata.twitterDescription": {
+        "reason": "The captured Twitter description predates the current page metadata; reuse the approved current Open Graph description translation.",
+        "sourceHash": "5106e6769672629de2b4757215a5e196846087e1e9d33a422cc66944a357c68e",
+        "status": "repo-reviewed-replacement"
+      },
+      "metadata.twitterTitle": {
+        "reason": "The captured Twitter title predates the current page metadata; reuse the approved current Open Graph title translation.",
+        "sourceHash": "d5e19e881c1074b40d79b296bcd4e00c27d4e295b7669013dc15c8b6dd78d023",
+        "status": "repo-reviewed-replacement"
+      },
+      "player.embedLabel": {
+        "reason": "The dynamic embed player is not cataloged; reuse the approved visualizer footer label in its noindex title.",
+        "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+        "status": "repo-reviewed-replacement"
+      },
+      "player.loadingAriaLabel": {
+        "reason": "The dynamic embed player is not cataloged; reuse the approved visualizer loading label.",
+        "sourceHash": "dd71f41a16a5c572c4612ec3da376e68c7afec80395b903936605ec251f04e87",
+        "status": "repo-reviewed-replacement"
+      }
+    },
+    "fr-fr": {
+      "generator.appearance.auto": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:button.px-4.py-2:ctx:cta_button:pos:0",
+        "sourceHash": "0286249762f7c94349cdc0ba3bb2255baf9a80036e2193ead1d77696f888582f",
+        "status": "route-catalog-exact"
+      },
+      "generator.appearance.dark": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:button.px-4.py-2:ctx:cta_button:pos:2",
+        "sourceHash": "60acc53f13a5d1bf115878c4a785e9a43e8286c4139a8402a6ac7d23966f9153",
+        "status": "route-catalog-exact"
+      },
+      "generator.appearance.light": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:button.px-4.py-2:ctx:cta_button:pos:1",
+        "sourceHash": "dbcd5e7bb7a0f538810de44c3efbd813037ee3fa358747bb71fa58e157af45f7",
+        "status": "route-catalog-exact"
+      },
+      "generator.appearance.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h2.text-sm.uppercase:ctx:heading:pos:1",
+        "sourceHash": "3907fa7f80722a6fc58cd8c1bd30abf7638095d6774f183b6e831b7093957d1b",
+        "status": "route-catalog-exact"
+      },
+      "generator.choosePattern": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h2.text-sm.uppercase:ctx:heading:pos:0",
+        "sourceHash": "1baa24b1132d5d9b3eb8f6f692cee9dd2c22c652f581ed3ed8f42227329a7c23",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationAria": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "attr:select.rounded-xl.border:aria-label:pos:1",
+        "sourceHash": "f2e5520652c715a0b562779b4d8f015858c755ad8758b347e47a3846e83ebdab",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.minute1": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:8",
+        "sourceHash": "75adbad9edb8aa869115a62ed8ce9c32c7a58fe7c265de3976036494d778d030",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.minutes10": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:11",
+        "sourceHash": "8361323b37e45147c930ae3111f3d639e815c20972f0c2adb6c9aa3ebf1a3bce",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.minutes3": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:9",
+        "sourceHash": "00164fb89ba4fc94304d107f4c41fbdb41fdb4084dfc83258d23437191fd0a28",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.minutes5": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:10",
+        "sourceHash": "53bc57cdb69279bbfe2fc05f6964a89862ff636724f5c3c2016e8894c2be609c",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.open": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:6",
+        "sourceHash": "ed077f3d8125d60dca1979c7133601bd187d47c73ed9975028f677e49e709942",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.seconds30": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:7",
+        "sourceHash": "d3382a4f0e03f8b14cf99424376886c236f1503d4b332137667484fc96d58fc4",
+        "status": "route-catalog-exact"
+      },
+      "generator.eyebrow": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+        "sourceHash": "b5ed207dcb6cbacbaa90730df40ebbf857c6f6baca10dfb2570e217202f0ec9c",
+        "status": "route-catalog-exact"
+      },
+      "generator.footer.about": {
+        "reason": "The preserved Japanese footer label leaked the English source; this reviewed replacement localizes the shared navigation label.",
+        "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+        "status": "repo-reviewed-replacement"
+      },
+      "generator.footer.app": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+        "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+        "status": "route-catalog-exact"
+      },
+      "generator.footer.guides": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+        "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+        "status": "route-catalog-exact"
+      },
+      "generator.footer.techniques": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+        "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.free.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0",
+        "sourceHash": "55a6d1a58057ebc3e7c0ba4da0c904d698bf0d945c05ab6905d0d1924c346bf6",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.free.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h3.font-semibold.text-card-foreground:ctx:heading:pos:0",
+        "sourceHash": "56f9c1ca9d9aad5cae4cafb9c77fafc34e2eefe341d860fc14b517aa5f3b8055",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.responsive.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:1",
+        "sourceHash": "c7a37a1a8af588a33fe878f4bbfa4bcd1d3a4ad42f841407db959de33e8c5e88",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.responsive.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h3.font-semibold.text-card-foreground:ctx:heading:pos:1",
+        "sourceHash": "de77979400cde1315d7399c2340888dca1c00afea32802d505032452b1d7547f",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.theme.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+        "sourceHash": "aeef76c660271b67794a801d6d1135ffe7986ea5132bc9e1132c1818f85cdd49",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.theme.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h3.font-semibold.text-card-foreground:ctx:heading:pos:2",
+        "sourceHash": "fe0320a5d8ab8f7e24a062c85bd21acfa422de20ab1e06568926ef3c107f4a52",
+        "status": "route-catalog-exact"
+      },
+      "generator.intro": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.max-w-2xl.text-lg:ctx:p:pos:0",
+        "sourceHash": "ab354662d49f4e2b3c840c24f90f44dc09d6b056b92bf0f123e0bfbb4c57682b",
+        "status": "route-catalog-exact"
+      },
+      "generator.localeLabels.de": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:4",
+        "sourceHash": "801cfe0fa1182664d16f4aaf7856cc73412f79ef508a866eebc2e5ccf125ff0a",
+        "status": "route-catalog-exact"
+      },
+      "generator.localeLabels.en": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:0",
+        "reason": "The language option and the hydrated footer switcher both contain English.",
+        "sourceHash": "ba118bf7fc9c1aedc1edb28a0aa86e0b43b681f222af6616e13c43be87815b06",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "generator.localeLabels.es": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:1",
+        "sourceHash": "94b382b61b9dde0ff8d45a44a34b61971d98df5bd810c803a3f33ce5b115eae8",
+        "status": "route-catalog-exact"
+      },
+      "generator.localeLabels.fr": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:3",
+        "sourceHash": "e495d53b967a7b049c8a2c25baa519fe124b49c1d0cf9cd8bdffa00d2f9d8ed6",
+        "status": "route-catalog-exact"
+      },
+      "generator.localeLabels.ja": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:5",
+        "sourceHash": "77710aedc74ecfa33685e33a6c7df5cc83004da1bdcef7fb280f5c2b2e97e0a5",
+        "status": "route-catalog-exact"
+      },
+      "generator.localeLabels.pt": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:2",
+        "sourceHash": "d4ada8ec276411a1d73428117ea0d7d8ea48789e9f07ce6bb6908cb851b52441",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.4-7-8.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:1",
+        "sourceHash": "d0de1c617518543a41e0021755554800f494aeac2ffad3d056453c6726bec0a7",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.4-7-8.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:1",
+        "sourceHash": "61bc7df0643742b926fa603a5bb211bd432b1789c6e4bc4258e41a29826b436e",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.9d-breathwork.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:7",
+        "reason": "The preservation snapshot contains this text for multiple pattern cards; position seven is the current 9D Breathwork card.",
+        "sourceHash": "5e784153d00c4b5a2ed489dd36fa4bb490d67ed00bec80c1a59d154ad7615f2e",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "generator.patterns.9d-breathwork.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:7",
+        "sourceHash": "32baa93231dbe1e8568e0abeb4e0e6c0853129574a0e2e644712b4f3bb4532aa",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.belly.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:6",
+        "sourceHash": "4d7fcbb841e8d21479a1422efdc5a61b526064a6e4a486ca4a48b36c2804e22a",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.belly.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:6",
+        "sourceHash": "b0a5eb5ee5f57c475a7026cded2abb30698da9e3ccf7c5428a76b80d0d0bb6f1",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.box.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:0",
+        "sourceHash": "ee391164f2071fff155d7c0940b42168ecd0f512199e4381a06a271806e713b0",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.box.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:0",
+        "sourceHash": "1937b7673dddca18a5b80fa7c9532b1b9f55ef0e0b2cf55202470767d5af2de0",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.coherent.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:2",
+        "sourceHash": "464d74fe901b6f34df442e2d5cdacc64ee78b031858bb7b10dc9e267bdcef76f",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.coherent.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:2",
+        "sourceHash": "4c6e34da239e136a2b5d96c1bc328ff0f810abfb71f7047ad9027d548b509101",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.hope-cartel-9d-breathwork.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:8",
+        "reason": "The preservation snapshot contains this text for multiple pattern cards; position eight is the current Hope Cartel card.",
+        "sourceHash": "5e784153d00c4b5a2ed489dd36fa4bb490d67ed00bec80c1a59d154ad7615f2e",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "generator.patterns.hope-cartel-9d-breathwork.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:8",
+        "sourceHash": "6e9e17540b182c9b37846d496562211a7bd33d821317dd7e27468058f93c1309",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.physiological-sigh.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:3",
+        "sourceHash": "e1e84863be1d6d0ea6a4e3bccf32c7985a3a671e0e6ab327794cf59ad11d1de1",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.physiological-sigh.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:3",
+        "sourceHash": "b328eabea77dd51370eb8e6ce397ac46cee3df995cd9515e8a1a7e9b35e9bdd7",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.pursed-lip.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:5",
+        "sourceHash": "cfc4972d7a50a08b4c0640992c37f5d13a3a9a2b0a97f23aefda08efc44aa955",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.pursed-lip.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:5",
+        "sourceHash": "b44d6b2987526fe1ecca59bd20db1dfa5478a2ed3fd051905793342a73747bd2",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.wim-hof.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:4",
+        "reason": "The preservation snapshot contains this text for multiple historical pattern cards; position four is the current Wim Hof card.",
+        "sourceHash": "5e784153d00c4b5a2ed489dd36fa4bb490d67ed00bec80c1a59d154ad7615f2e",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "generator.patterns.wim-hof.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:4",
+        "sourceHash": "0fc2745ef83bc7cefb27f9424a6b131460b3fd197f069edb7f3534db9987f059",
+        "status": "route-catalog-exact"
+      },
+      "generator.preview.iframeTitleTemplate": {
+        "reason": "Only the default pattern's hydrated iframe title was captured; the native generator needs the same accessible title for every selected pattern.",
+        "sourceHash": "66570500ed4350c14a7974c884e312c5bd095f5a2d8e1826c342a37ae44d83b5",
+        "status": "repo-reviewed-replacement"
+      },
+      "generator.preview.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h2.text-sm.uppercase:ctx:heading:pos:2",
+        "sourceHash": "324b134f57c70c729ae3dc4d298bb451656717d70523e942c1ce667b8024ea07",
+        "status": "route-catalog-exact"
+      },
+      "generator.snippet.copied": {
+        "reason": "The transient copied state was not active in the preservation snapshot.",
+        "sourceHash": "ea61bc15688d1e482ae5335e8dc030d8300b1afc07ecc7c2e6af5c43728b1d25",
+        "status": "repo-reviewed-replacement"
+      },
+      "generator.snippet.copy": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:button.inline-flex.items-center:ctx:cta_button:pos:0",
+        "sourceHash": "968d0a9d24a6a69fcbd19a5ff374bc860eb842faf16426e3ef858bb5ba6538ff",
+        "status": "route-catalog-exact"
+      },
+      "generator.snippet.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h2.text-sm.uppercase:ctx:heading:pos:4",
+        "reason": "The preservation snapshot contains a stale duplicate; the later placement is the current snippet heading.",
+        "sourceHash": "7cf09dee037b83a71262c68c47d3aedb5bc63fbd1651bc26246bfef2738be954",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "generator.sound.binauralLabel": {
+        "reason": "Missing approved catalog translation for sel:label.inline-flex.cursor-pointer:ctx:form_input:pos:0",
+        "sourceHash": "ae88a52a9450ea61b45b1a07df9a4849b749d01beef9a611caf0d7fab0c204ff",
+        "status": "repo-reviewed-gap"
+      },
+      "generator.sound.title": {
+        "reason": "The Sound grouping heading was added after the preservation snapshot.",
+        "sourceHash": "46124e023603420f8670526e3eb9a603935e8916cb8e0428ea84bbe42d85d297",
+        "status": "repo-reviewed-replacement"
+      },
+      "generator.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "4001d84597cb16f1773e6c18a0168a093d5bbc049b545fe044e8a18960cf224a",
+        "status": "route-catalog-exact"
+      },
+      "generator.widgetLanguageAria": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "attr:select.rounded-xl.border:aria-label:pos:0",
+        "sourceHash": "6d8d3049ec19090afe7c25652a89f22b5da47a05dfb5653ded71c8003dd96f9c",
+        "status": "route-catalog-exact"
+      },
+      "metadata.description": {
+        "reason": "The preserved metadata descriptions were clipped in several locales; these reviewed values restore the complete source meaning.",
+        "sourceHash": "5106e6769672629de2b4757215a5e196846087e1e9d33a422cc66944a357c68e",
+        "status": "repo-reviewed-replacement"
+      },
+      "metadata.imageAlt": {
+        "reason": "The current Open Graph image alt was added after the preservation snapshot.",
+        "sourceHash": "537a4ea025fe692ef92a047b72a2a51e18d5346fdb83b6ad4bcf39c0cd352ff5",
+        "status": "repo-reviewed-replacement"
+      },
+      "metadata.socialDescription": {
+        "reason": "The preserved Open Graph descriptions were clipped in several locales; these reviewed values restore the complete source meaning.",
+        "sourceHash": "5106e6769672629de2b4757215a5e196846087e1e9d33a422cc66944a357c68e",
+        "status": "repo-reviewed-replacement"
+      },
+      "metadata.socialTitle": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "head:meta:property:og:title",
+        "sourceHash": "d5e19e881c1074b40d79b296bcd4e00c27d4e295b7669013dc15c8b6dd78d023",
+        "status": "route-catalog-exact"
+      },
+      "metadata.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "head:title",
+        "reason": "The English layout adds the site-name suffix while the localized layout consumes the final reviewed head title.",
+        "sourceHash": "d5e19e881c1074b40d79b296bcd4e00c27d4e295b7669013dc15c8b6dd78d023",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "metadata.twitterDescription": {
+        "reason": "The captured Twitter description predates the current page metadata; reuse the approved current Open Graph description translation.",
+        "sourceHash": "5106e6769672629de2b4757215a5e196846087e1e9d33a422cc66944a357c68e",
+        "status": "repo-reviewed-replacement"
+      },
+      "metadata.twitterTitle": {
+        "reason": "The captured Twitter title predates the current page metadata; reuse the approved current Open Graph title translation.",
+        "sourceHash": "d5e19e881c1074b40d79b296bcd4e00c27d4e295b7669013dc15c8b6dd78d023",
+        "status": "repo-reviewed-replacement"
+      },
+      "player.embedLabel": {
+        "reason": "The dynamic embed player is not cataloged; reuse the approved visualizer footer label in its noindex title.",
+        "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+        "status": "repo-reviewed-replacement"
+      },
+      "player.loadingAriaLabel": {
+        "reason": "The dynamic embed player is not cataloged; reuse the approved visualizer loading label.",
+        "sourceHash": "dd71f41a16a5c572c4612ec3da376e68c7afec80395b903936605ec251f04e87",
+        "status": "repo-reviewed-replacement"
+      }
+    },
+    "ja-jp": {
+      "generator.appearance.auto": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:button.px-4.py-2:ctx:cta_button:pos:0",
+        "sourceHash": "0286249762f7c94349cdc0ba3bb2255baf9a80036e2193ead1d77696f888582f",
+        "status": "route-catalog-exact"
+      },
+      "generator.appearance.dark": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:button.px-4.py-2:ctx:cta_button:pos:2",
+        "sourceHash": "60acc53f13a5d1bf115878c4a785e9a43e8286c4139a8402a6ac7d23966f9153",
+        "status": "route-catalog-exact"
+      },
+      "generator.appearance.light": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:button.px-4.py-2:ctx:cta_button:pos:1",
+        "sourceHash": "dbcd5e7bb7a0f538810de44c3efbd813037ee3fa358747bb71fa58e157af45f7",
+        "status": "route-catalog-exact"
+      },
+      "generator.appearance.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h2.text-sm.uppercase:ctx:heading:pos:1",
+        "sourceHash": "3907fa7f80722a6fc58cd8c1bd30abf7638095d6774f183b6e831b7093957d1b",
+        "status": "route-catalog-exact"
+      },
+      "generator.choosePattern": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h2.text-sm.uppercase:ctx:heading:pos:0",
+        "sourceHash": "1baa24b1132d5d9b3eb8f6f692cee9dd2c22c652f581ed3ed8f42227329a7c23",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationAria": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "attr:select.rounded-xl.border:aria-label:pos:1",
+        "sourceHash": "f2e5520652c715a0b562779b4d8f015858c755ad8758b347e47a3846e83ebdab",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.minute1": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:8",
+        "sourceHash": "75adbad9edb8aa869115a62ed8ce9c32c7a58fe7c265de3976036494d778d030",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.minutes10": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:11",
+        "sourceHash": "8361323b37e45147c930ae3111f3d639e815c20972f0c2adb6c9aa3ebf1a3bce",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.minutes3": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:9",
+        "sourceHash": "00164fb89ba4fc94304d107f4c41fbdb41fdb4084dfc83258d23437191fd0a28",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.minutes5": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:10",
+        "sourceHash": "53bc57cdb69279bbfe2fc05f6964a89862ff636724f5c3c2016e8894c2be609c",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.open": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:6",
+        "sourceHash": "ed077f3d8125d60dca1979c7133601bd187d47c73ed9975028f677e49e709942",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.seconds30": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:7",
+        "sourceHash": "d3382a4f0e03f8b14cf99424376886c236f1503d4b332137667484fc96d58fc4",
+        "status": "route-catalog-exact"
+      },
+      "generator.eyebrow": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+        "sourceHash": "b5ed207dcb6cbacbaa90730df40ebbf857c6f6baca10dfb2570e217202f0ec9c",
+        "status": "route-catalog-exact"
+      },
+      "generator.footer.about": {
+        "reason": "The preserved Japanese footer label leaked the English source; this reviewed replacement localizes the shared navigation label.",
+        "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+        "status": "repo-reviewed-replacement"
+      },
+      "generator.footer.app": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+        "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+        "status": "route-catalog-exact"
+      },
+      "generator.footer.guides": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+        "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+        "status": "route-catalog-exact"
+      },
+      "generator.footer.techniques": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+        "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.free.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0",
+        "sourceHash": "55a6d1a58057ebc3e7c0ba4da0c904d698bf0d945c05ab6905d0d1924c346bf6",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.free.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h3.font-semibold.text-card-foreground:ctx:heading:pos:0",
+        "sourceHash": "56f9c1ca9d9aad5cae4cafb9c77fafc34e2eefe341d860fc14b517aa5f3b8055",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.responsive.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:1",
+        "sourceHash": "c7a37a1a8af588a33fe878f4bbfa4bcd1d3a4ad42f841407db959de33e8c5e88",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.responsive.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h3.font-semibold.text-card-foreground:ctx:heading:pos:1",
+        "sourceHash": "de77979400cde1315d7399c2340888dca1c00afea32802d505032452b1d7547f",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.theme.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+        "sourceHash": "aeef76c660271b67794a801d6d1135ffe7986ea5132bc9e1132c1818f85cdd49",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.theme.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h3.font-semibold.text-card-foreground:ctx:heading:pos:2",
+        "sourceHash": "fe0320a5d8ab8f7e24a062c85bd21acfa422de20ab1e06568926ef3c107f4a52",
+        "status": "route-catalog-exact"
+      },
+      "generator.intro": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.max-w-2xl.text-lg:ctx:p:pos:0",
+        "sourceHash": "ab354662d49f4e2b3c840c24f90f44dc09d6b056b92bf0f123e0bfbb4c57682b",
+        "status": "route-catalog-exact"
+      },
+      "generator.localeLabels.de": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:4",
+        "sourceHash": "801cfe0fa1182664d16f4aaf7856cc73412f79ef508a866eebc2e5ccf125ff0a",
+        "status": "route-catalog-exact"
+      },
+      "generator.localeLabels.en": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:0",
+        "reason": "The language option and the hydrated footer switcher both contain English.",
+        "sourceHash": "ba118bf7fc9c1aedc1edb28a0aa86e0b43b681f222af6616e13c43be87815b06",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "generator.localeLabels.es": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:1",
+        "sourceHash": "94b382b61b9dde0ff8d45a44a34b61971d98df5bd810c803a3f33ce5b115eae8",
+        "status": "route-catalog-exact"
+      },
+      "generator.localeLabels.fr": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:3",
+        "sourceHash": "e495d53b967a7b049c8a2c25baa519fe124b49c1d0cf9cd8bdffa00d2f9d8ed6",
+        "status": "route-catalog-exact"
+      },
+      "generator.localeLabels.ja": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:5",
+        "sourceHash": "77710aedc74ecfa33685e33a6c7df5cc83004da1bdcef7fb280f5c2b2e97e0a5",
+        "status": "route-catalog-exact"
+      },
+      "generator.localeLabels.pt": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:2",
+        "sourceHash": "d4ada8ec276411a1d73428117ea0d7d8ea48789e9f07ce6bb6908cb851b52441",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.4-7-8.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:1",
+        "sourceHash": "d0de1c617518543a41e0021755554800f494aeac2ffad3d056453c6726bec0a7",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.4-7-8.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:1",
+        "sourceHash": "61bc7df0643742b926fa603a5bb211bd432b1789c6e4bc4258e41a29826b436e",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.9d-breathwork.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:7",
+        "reason": "The preservation snapshot contains this text for multiple pattern cards; position seven is the current 9D Breathwork card.",
+        "sourceHash": "5e784153d00c4b5a2ed489dd36fa4bb490d67ed00bec80c1a59d154ad7615f2e",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "generator.patterns.9d-breathwork.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:7",
+        "sourceHash": "32baa93231dbe1e8568e0abeb4e0e6c0853129574a0e2e644712b4f3bb4532aa",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.belly.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:6",
+        "sourceHash": "4d7fcbb841e8d21479a1422efdc5a61b526064a6e4a486ca4a48b36c2804e22a",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.belly.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:6",
+        "sourceHash": "b0a5eb5ee5f57c475a7026cded2abb30698da9e3ccf7c5428a76b80d0d0bb6f1",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.box.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:0",
+        "sourceHash": "ee391164f2071fff155d7c0940b42168ecd0f512199e4381a06a271806e713b0",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.box.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:0",
+        "sourceHash": "1937b7673dddca18a5b80fa7c9532b1b9f55ef0e0b2cf55202470767d5af2de0",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.coherent.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:2",
+        "sourceHash": "464d74fe901b6f34df442e2d5cdacc64ee78b031858bb7b10dc9e267bdcef76f",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.coherent.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:2",
+        "sourceHash": "4c6e34da239e136a2b5d96c1bc328ff0f810abfb71f7047ad9027d548b509101",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.hope-cartel-9d-breathwork.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:8",
+        "reason": "The preservation snapshot contains this text for multiple pattern cards; position eight is the current Hope Cartel card.",
+        "sourceHash": "5e784153d00c4b5a2ed489dd36fa4bb490d67ed00bec80c1a59d154ad7615f2e",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "generator.patterns.hope-cartel-9d-breathwork.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:8",
+        "sourceHash": "6e9e17540b182c9b37846d496562211a7bd33d821317dd7e27468058f93c1309",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.physiological-sigh.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:3",
+        "sourceHash": "e1e84863be1d6d0ea6a4e3bccf32c7985a3a671e0e6ab327794cf59ad11d1de1",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.physiological-sigh.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:3",
+        "sourceHash": "b328eabea77dd51370eb8e6ce397ac46cee3df995cd9515e8a1a7e9b35e9bdd7",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.pursed-lip.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:5",
+        "sourceHash": "cfc4972d7a50a08b4c0640992c37f5d13a3a9a2b0a97f23aefda08efc44aa955",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.pursed-lip.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:5",
+        "sourceHash": "b44d6b2987526fe1ecca59bd20db1dfa5478a2ed3fd051905793342a73747bd2",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.wim-hof.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:4",
+        "reason": "The preservation snapshot contains this text for multiple historical pattern cards; position four is the current Wim Hof card.",
+        "sourceHash": "5e784153d00c4b5a2ed489dd36fa4bb490d67ed00bec80c1a59d154ad7615f2e",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "generator.patterns.wim-hof.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:4",
+        "sourceHash": "0fc2745ef83bc7cefb27f9424a6b131460b3fd197f069edb7f3534db9987f059",
+        "status": "route-catalog-exact"
+      },
+      "generator.preview.iframeTitleTemplate": {
+        "reason": "Only the default pattern's hydrated iframe title was captured; the native generator needs the same accessible title for every selected pattern.",
+        "sourceHash": "66570500ed4350c14a7974c884e312c5bd095f5a2d8e1826c342a37ae44d83b5",
+        "status": "repo-reviewed-replacement"
+      },
+      "generator.preview.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h2.text-sm.uppercase:ctx:heading:pos:2",
+        "sourceHash": "324b134f57c70c729ae3dc4d298bb451656717d70523e942c1ce667b8024ea07",
+        "status": "route-catalog-exact"
+      },
+      "generator.snippet.copied": {
+        "reason": "The transient copied state was not active in the preservation snapshot.",
+        "sourceHash": "ea61bc15688d1e482ae5335e8dc030d8300b1afc07ecc7c2e6af5c43728b1d25",
+        "status": "repo-reviewed-replacement"
+      },
+      "generator.snippet.copy": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:button.inline-flex.items-center:ctx:cta_button:pos:0",
+        "sourceHash": "968d0a9d24a6a69fcbd19a5ff374bc860eb842faf16426e3ef858bb5ba6538ff",
+        "status": "route-catalog-exact"
+      },
+      "generator.snippet.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h2.text-sm.uppercase:ctx:heading:pos:4",
+        "reason": "The preservation snapshot contains a stale duplicate; the later placement is the current snippet heading.",
+        "sourceHash": "7cf09dee037b83a71262c68c47d3aedb5bc63fbd1651bc26246bfef2738be954",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "generator.sound.binauralLabel": {
+        "reason": "Missing approved catalog translation for sel:label.inline-flex.cursor-pointer:ctx:form_input:pos:0",
+        "sourceHash": "ae88a52a9450ea61b45b1a07df9a4849b749d01beef9a611caf0d7fab0c204ff",
+        "status": "repo-reviewed-gap"
+      },
+      "generator.sound.title": {
+        "reason": "The Sound grouping heading was added after the preservation snapshot.",
+        "sourceHash": "46124e023603420f8670526e3eb9a603935e8916cb8e0428ea84bbe42d85d297",
+        "status": "repo-reviewed-replacement"
+      },
+      "generator.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "4001d84597cb16f1773e6c18a0168a093d5bbc049b545fe044e8a18960cf224a",
+        "status": "route-catalog-exact"
+      },
+      "generator.widgetLanguageAria": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "attr:select.rounded-xl.border:aria-label:pos:0",
+        "sourceHash": "6d8d3049ec19090afe7c25652a89f22b5da47a05dfb5653ded71c8003dd96f9c",
+        "status": "route-catalog-exact"
+      },
+      "metadata.description": {
+        "reason": "The preserved metadata descriptions were clipped in several locales; these reviewed values restore the complete source meaning.",
+        "sourceHash": "5106e6769672629de2b4757215a5e196846087e1e9d33a422cc66944a357c68e",
+        "status": "repo-reviewed-replacement"
+      },
+      "metadata.imageAlt": {
+        "reason": "The current Open Graph image alt was added after the preservation snapshot.",
+        "sourceHash": "537a4ea025fe692ef92a047b72a2a51e18d5346fdb83b6ad4bcf39c0cd352ff5",
+        "status": "repo-reviewed-replacement"
+      },
+      "metadata.socialDescription": {
+        "reason": "The preserved Open Graph descriptions were clipped in several locales; these reviewed values restore the complete source meaning.",
+        "sourceHash": "5106e6769672629de2b4757215a5e196846087e1e9d33a422cc66944a357c68e",
+        "status": "repo-reviewed-replacement"
+      },
+      "metadata.socialTitle": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "head:meta:property:og:title",
+        "sourceHash": "d5e19e881c1074b40d79b296bcd4e00c27d4e295b7669013dc15c8b6dd78d023",
+        "status": "route-catalog-exact"
+      },
+      "metadata.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "head:title",
+        "reason": "The English layout adds the site-name suffix while the localized layout consumes the final reviewed head title.",
+        "sourceHash": "d5e19e881c1074b40d79b296bcd4e00c27d4e295b7669013dc15c8b6dd78d023",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "metadata.twitterDescription": {
+        "reason": "The captured Twitter description predates the current page metadata; reuse the approved current Open Graph description translation.",
+        "sourceHash": "5106e6769672629de2b4757215a5e196846087e1e9d33a422cc66944a357c68e",
+        "status": "repo-reviewed-replacement"
+      },
+      "metadata.twitterTitle": {
+        "reason": "The captured Twitter title predates the current page metadata; reuse the approved current Open Graph title translation.",
+        "sourceHash": "d5e19e881c1074b40d79b296bcd4e00c27d4e295b7669013dc15c8b6dd78d023",
+        "status": "repo-reviewed-replacement"
+      },
+      "player.embedLabel": {
+        "reason": "The dynamic embed player is not cataloged; reuse the approved visualizer footer label in its noindex title.",
+        "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+        "status": "repo-reviewed-replacement"
+      },
+      "player.loadingAriaLabel": {
+        "reason": "The dynamic embed player is not cataloged; reuse the approved visualizer loading label.",
+        "sourceHash": "dd71f41a16a5c572c4612ec3da376e68c7afec80395b903936605ec251f04e87",
+        "status": "repo-reviewed-replacement"
+      }
+    },
+    "pt-br": {
+      "generator.appearance.auto": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:button.px-4.py-2:ctx:cta_button:pos:0",
+        "sourceHash": "0286249762f7c94349cdc0ba3bb2255baf9a80036e2193ead1d77696f888582f",
+        "status": "route-catalog-exact"
+      },
+      "generator.appearance.dark": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:button.px-4.py-2:ctx:cta_button:pos:2",
+        "sourceHash": "60acc53f13a5d1bf115878c4a785e9a43e8286c4139a8402a6ac7d23966f9153",
+        "status": "route-catalog-exact"
+      },
+      "generator.appearance.light": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:button.px-4.py-2:ctx:cta_button:pos:1",
+        "sourceHash": "dbcd5e7bb7a0f538810de44c3efbd813037ee3fa358747bb71fa58e157af45f7",
+        "status": "route-catalog-exact"
+      },
+      "generator.appearance.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h2.text-sm.uppercase:ctx:heading:pos:1",
+        "sourceHash": "3907fa7f80722a6fc58cd8c1bd30abf7638095d6774f183b6e831b7093957d1b",
+        "status": "route-catalog-exact"
+      },
+      "generator.choosePattern": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h2.text-sm.uppercase:ctx:heading:pos:0",
+        "sourceHash": "1baa24b1132d5d9b3eb8f6f692cee9dd2c22c652f581ed3ed8f42227329a7c23",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationAria": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "attr:select.rounded-xl.border:aria-label:pos:1",
+        "sourceHash": "f2e5520652c715a0b562779b4d8f015858c755ad8758b347e47a3846e83ebdab",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.minute1": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:8",
+        "sourceHash": "75adbad9edb8aa869115a62ed8ce9c32c7a58fe7c265de3976036494d778d030",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.minutes10": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:11",
+        "sourceHash": "8361323b37e45147c930ae3111f3d639e815c20972f0c2adb6c9aa3ebf1a3bce",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.minutes3": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:9",
+        "sourceHash": "00164fb89ba4fc94304d107f4c41fbdb41fdb4084dfc83258d23437191fd0a28",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.minutes5": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:10",
+        "sourceHash": "53bc57cdb69279bbfe2fc05f6964a89862ff636724f5c3c2016e8894c2be609c",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.open": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:6",
+        "sourceHash": "ed077f3d8125d60dca1979c7133601bd187d47c73ed9975028f677e49e709942",
+        "status": "route-catalog-exact"
+      },
+      "generator.durationLabels.seconds30": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:7",
+        "sourceHash": "d3382a4f0e03f8b14cf99424376886c236f1503d4b332137667484fc96d58fc4",
+        "status": "route-catalog-exact"
+      },
+      "generator.eyebrow": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+        "sourceHash": "b5ed207dcb6cbacbaa90730df40ebbf857c6f6baca10dfb2570e217202f0ec9c",
+        "status": "route-catalog-exact"
+      },
+      "generator.footer.about": {
+        "reason": "The preserved Japanese footer label leaked the English source; this reviewed replacement localizes the shared navigation label.",
+        "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+        "status": "repo-reviewed-replacement"
+      },
+      "generator.footer.app": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+        "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+        "status": "route-catalog-exact"
+      },
+      "generator.footer.guides": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+        "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+        "status": "route-catalog-exact"
+      },
+      "generator.footer.techniques": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+        "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.free.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0",
+        "sourceHash": "55a6d1a58057ebc3e7c0ba4da0c904d698bf0d945c05ab6905d0d1924c346bf6",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.free.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h3.font-semibold.text-card-foreground:ctx:heading:pos:0",
+        "sourceHash": "56f9c1ca9d9aad5cae4cafb9c77fafc34e2eefe341d860fc14b517aa5f3b8055",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.responsive.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:1",
+        "sourceHash": "c7a37a1a8af588a33fe878f4bbfa4bcd1d3a4ad42f841407db959de33e8c5e88",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.responsive.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h3.font-semibold.text-card-foreground:ctx:heading:pos:1",
+        "sourceHash": "de77979400cde1315d7399c2340888dca1c00afea32802d505032452b1d7547f",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.theme.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+        "sourceHash": "aeef76c660271b67794a801d6d1135ffe7986ea5132bc9e1132c1818f85cdd49",
+        "status": "route-catalog-exact"
+      },
+      "generator.info.theme.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h3.font-semibold.text-card-foreground:ctx:heading:pos:2",
+        "sourceHash": "fe0320a5d8ab8f7e24a062c85bd21acfa422de20ab1e06568926ef3c107f4a52",
+        "status": "route-catalog-exact"
+      },
+      "generator.intro": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.max-w-2xl.text-lg:ctx:p:pos:0",
+        "sourceHash": "ab354662d49f4e2b3c840c24f90f44dc09d6b056b92bf0f123e0bfbb4c57682b",
+        "status": "route-catalog-exact"
+      },
+      "generator.localeLabels.de": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:4",
+        "sourceHash": "801cfe0fa1182664d16f4aaf7856cc73412f79ef508a866eebc2e5ccf125ff0a",
+        "status": "route-catalog-exact"
+      },
+      "generator.localeLabels.en": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:0",
+        "reason": "The language option and the hydrated footer switcher both contain English.",
+        "sourceHash": "ba118bf7fc9c1aedc1edb28a0aa86e0b43b681f222af6616e13c43be87815b06",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "generator.localeLabels.es": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:1",
+        "sourceHash": "94b382b61b9dde0ff8d45a44a34b61971d98df5bd810c803a3f33ce5b115eae8",
+        "status": "route-catalog-exact"
+      },
+      "generator.localeLabels.fr": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:3",
+        "sourceHash": "e495d53b967a7b049c8a2c25baa519fe124b49c1d0cf9cd8bdffa00d2f9d8ed6",
+        "status": "route-catalog-exact"
+      },
+      "generator.localeLabels.ja": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:5",
+        "sourceHash": "77710aedc74ecfa33685e33a6c7df5cc83004da1bdcef7fb280f5c2b2e97e0a5",
+        "status": "route-catalog-exact"
+      },
+      "generator.localeLabels.pt": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:option:ctx:option:pos:2",
+        "sourceHash": "d4ada8ec276411a1d73428117ea0d7d8ea48789e9f07ce6bb6908cb851b52441",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.4-7-8.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:1",
+        "sourceHash": "d0de1c617518543a41e0021755554800f494aeac2ffad3d056453c6726bec0a7",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.4-7-8.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:1",
+        "sourceHash": "61bc7df0643742b926fa603a5bb211bd432b1789c6e4bc4258e41a29826b436e",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.9d-breathwork.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:7",
+        "reason": "The preservation snapshot contains this text for multiple pattern cards; position seven is the current 9D Breathwork card.",
+        "sourceHash": "5e784153d00c4b5a2ed489dd36fa4bb490d67ed00bec80c1a59d154ad7615f2e",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "generator.patterns.9d-breathwork.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:7",
+        "sourceHash": "32baa93231dbe1e8568e0abeb4e0e6c0853129574a0e2e644712b4f3bb4532aa",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.belly.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:6",
+        "sourceHash": "4d7fcbb841e8d21479a1422efdc5a61b526064a6e4a486ca4a48b36c2804e22a",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.belly.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:6",
+        "sourceHash": "b0a5eb5ee5f57c475a7026cded2abb30698da9e3ccf7c5428a76b80d0d0bb6f1",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.box.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:0",
+        "sourceHash": "ee391164f2071fff155d7c0940b42168ecd0f512199e4381a06a271806e713b0",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.box.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:0",
+        "sourceHash": "1937b7673dddca18a5b80fa7c9532b1b9f55ef0e0b2cf55202470767d5af2de0",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.coherent.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:2",
+        "sourceHash": "464d74fe901b6f34df442e2d5cdacc64ee78b031858bb7b10dc9e267bdcef76f",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.coherent.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:2",
+        "sourceHash": "4c6e34da239e136a2b5d96c1bc328ff0f810abfb71f7047ad9027d548b509101",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.hope-cartel-9d-breathwork.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:8",
+        "reason": "The preservation snapshot contains this text for multiple pattern cards; position eight is the current Hope Cartel card.",
+        "sourceHash": "5e784153d00c4b5a2ed489dd36fa4bb490d67ed00bec80c1a59d154ad7615f2e",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "generator.patterns.hope-cartel-9d-breathwork.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:8",
+        "sourceHash": "6e9e17540b182c9b37846d496562211a7bd33d821317dd7e27468058f93c1309",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.physiological-sigh.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:3",
+        "sourceHash": "e1e84863be1d6d0ea6a4e3bccf32c7985a3a671e0e6ab327794cf59ad11d1de1",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.physiological-sigh.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:3",
+        "sourceHash": "b328eabea77dd51370eb8e6ce397ac46cee3df995cd9515e8a1a7e9b35e9bdd7",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.pursed-lip.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:5",
+        "sourceHash": "cfc4972d7a50a08b4c0640992c37f5d13a3a9a2b0a97f23aefda08efc44aa955",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.pursed-lip.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:5",
+        "sourceHash": "b44d6b2987526fe1ecca59bd20db1dfa5478a2ed3fd051905793342a73747bd2",
+        "status": "route-catalog-exact"
+      },
+      "generator.patterns.wim-hof.description": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.mt-1.text-xs:ctx:p:pos:4",
+        "reason": "The preservation snapshot contains this text for multiple historical pattern cards; position four is the current Wim Hof card.",
+        "sourceHash": "5e784153d00c4b5a2ed489dd36fa4bb490d67ed00bec80c1a59d154ad7615f2e",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "generator.patterns.wim-hof.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:p.font-medium.text-card-foreground:ctx:product:pos:4",
+        "sourceHash": "0fc2745ef83bc7cefb27f9424a6b131460b3fd197f069edb7f3534db9987f059",
+        "status": "route-catalog-exact"
+      },
+      "generator.preview.iframeTitleTemplate": {
+        "reason": "Only the default pattern's hydrated iframe title was captured; the native generator needs the same accessible title for every selected pattern.",
+        "sourceHash": "66570500ed4350c14a7974c884e312c5bd095f5a2d8e1826c342a37ae44d83b5",
+        "status": "repo-reviewed-replacement"
+      },
+      "generator.preview.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h2.text-sm.uppercase:ctx:heading:pos:2",
+        "sourceHash": "324b134f57c70c729ae3dc4d298bb451656717d70523e942c1ce667b8024ea07",
+        "status": "route-catalog-exact"
+      },
+      "generator.snippet.copied": {
+        "reason": "The transient copied state was not active in the preservation snapshot.",
+        "sourceHash": "ea61bc15688d1e482ae5335e8dc030d8300b1afc07ecc7c2e6af5c43728b1d25",
+        "status": "repo-reviewed-replacement"
+      },
+      "generator.snippet.copy": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:button.inline-flex.items-center:ctx:cta_button:pos:0",
+        "sourceHash": "968d0a9d24a6a69fcbd19a5ff374bc860eb842faf16426e3ef858bb5ba6538ff",
+        "status": "route-catalog-exact"
+      },
+      "generator.snippet.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h2.text-sm.uppercase:ctx:heading:pos:4",
+        "reason": "The preservation snapshot contains a stale duplicate; the later placement is the current snippet heading.",
+        "sourceHash": "7cf09dee037b83a71262c68c47d3aedb5bc63fbd1651bc26246bfef2738be954",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "generator.sound.binauralLabel": {
+        "reason": "Missing approved catalog translation for sel:label.inline-flex.cursor-pointer:ctx:form_input:pos:0",
+        "sourceHash": "ae88a52a9450ea61b45b1a07df9a4849b749d01beef9a611caf0d7fab0c204ff",
+        "status": "repo-reviewed-gap"
+      },
+      "generator.sound.title": {
+        "reason": "The Sound grouping heading was added after the preservation snapshot.",
+        "sourceHash": "46124e023603420f8670526e3eb9a603935e8916cb8e0428ea84bbe42d85d297",
+        "status": "repo-reviewed-replacement"
+      },
+      "generator.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+        "sourceHash": "4001d84597cb16f1773e6c18a0168a093d5bbc049b545fe044e8a18960cf224a",
+        "status": "route-catalog-exact"
+      },
+      "generator.widgetLanguageAria": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "attr:select.rounded-xl.border:aria-label:pos:0",
+        "sourceHash": "6d8d3049ec19090afe7c25652a89f22b5da47a05dfb5653ded71c8003dd96f9c",
+        "status": "route-catalog-exact"
+      },
+      "metadata.description": {
+        "reason": "The preserved metadata descriptions were clipped in several locales; these reviewed values restore the complete source meaning.",
+        "sourceHash": "5106e6769672629de2b4757215a5e196846087e1e9d33a422cc66944a357c68e",
+        "status": "repo-reviewed-replacement"
+      },
+      "metadata.imageAlt": {
+        "reason": "The current Open Graph image alt was added after the preservation snapshot.",
+        "sourceHash": "537a4ea025fe692ef92a047b72a2a51e18d5346fdb83b6ad4bcf39c0cd352ff5",
+        "status": "repo-reviewed-replacement"
+      },
+      "metadata.socialDescription": {
+        "reason": "The preserved Open Graph descriptions were clipped in several locales; these reviewed values restore the complete source meaning.",
+        "sourceHash": "5106e6769672629de2b4757215a5e196846087e1e9d33a422cc66944a357c68e",
+        "status": "repo-reviewed-replacement"
+      },
+      "metadata.socialTitle": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "head:meta:property:og:title",
+        "sourceHash": "d5e19e881c1074b40d79b296bcd4e00c27d4e295b7669013dc15c8b6dd78d023",
+        "status": "route-catalog-exact"
+      },
+      "metadata.title": {
+        "catalogRoute": "/embed",
+        "occurrenceKey": "head:title",
+        "reason": "The English layout adds the site-name suffix while the localized layout consumes the final reviewed head title.",
+        "sourceHash": "d5e19e881c1074b40d79b296bcd4e00c27d4e295b7669013dc15c8b6dd78d023",
+        "status": "explicit-reviewed-source-binding"
+      },
+      "metadata.twitterDescription": {
+        "reason": "The captured Twitter description predates the current page metadata; reuse the approved current Open Graph description translation.",
+        "sourceHash": "5106e6769672629de2b4757215a5e196846087e1e9d33a422cc66944a357c68e",
+        "status": "repo-reviewed-replacement"
+      },
+      "metadata.twitterTitle": {
+        "reason": "The captured Twitter title predates the current page metadata; reuse the approved current Open Graph title translation.",
+        "sourceHash": "d5e19e881c1074b40d79b296bcd4e00c27d4e295b7669013dc15c8b6dd78d023",
+        "status": "repo-reviewed-replacement"
+      },
+      "player.embedLabel": {
+        "reason": "The dynamic embed player is not cataloged; reuse the approved visualizer footer label in its noindex title.",
+        "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+        "status": "repo-reviewed-replacement"
+      },
+      "player.loadingAriaLabel": {
+        "reason": "The dynamic embed player is not cataloged; reuse the approved visualizer loading label.",
+        "sourceHash": "dd71f41a16a5c572c4612ec3da376e68c7afec80395b903936605ec251f04e87",
+        "status": "repo-reviewed-replacement"
+      }
+    }
+  },
+  "route": "/embed",
+  "schemaVersion": 1
+}

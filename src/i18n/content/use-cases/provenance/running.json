@@ -1,0 +1,2846 @@
+{
+  "locales": {
+    "de-de": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "6c547dfda626d88f9f390056cf7a14fc4e242b5128bf5c31a364435d24f1321a",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "fd75a0c1418a75fb7860da61b872c9881106748e5beac6d999f31ad4b09d2a60",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-lung-capacity-title": {
+          "sourceHash": "0cf688a2f16e61168d310058a1fb86e7699f9603d9dbed604bf9896c93e87ed9",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-public-speaking-title": {
+          "sourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "e86a295961ee650b75c8cffc4fc71af0c0ea6de82b803145e6ab0e51e15c8940",
+          "sourceText": "The best breathing technique for running depends on pace. For easy runs, low diaphragmatic breathing with a relaxed stride rhythm works best. For hard efforts, mouth breathing is normal. For side stitches or post-run recovery, the physiological sigh is the fastest reset because it quickly settles the diaphragm and heart rate.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[0].question": {
+          "sourceHash": "ee70d75d4391bb0a93abb4eea5a08e00a48c4e7750addd83c83d2d7c50864db2",
+          "sourceText": "What is the best breathing technique for running?",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "fb1986ed14e32bc7bb4ba6b526686a51f22cdf4d33677574a7ddd269e6ae641b",
+          "sourceText": "To stop a side stitch while running, slow down and do 1-3 physiological sighs: two quick nasal inhales followed by a long, slow exhale. The double inhale reinflates the lungs and the long exhale relaxes the diaphragm. Most runners feel relief within 30-60 seconds.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].question": {
+          "sourceHash": "580fd239f03099fd17802f883e1792d0315735900d5c07d36db48b9a79d920c9",
+          "sourceText": "How do you stop a side stitch while running?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "30c4b9fd8d1d44635dc8b69971d469db942a1a38ec81f3c01a30f15cbc1fcf6d",
+          "sourceText": "The double inhale is the key difference. Regular deep breaths don't re-inflate collapsed alveoli the way the second 'sip' of air does. The physiological sigh is your body's natural mechanism. You do it involuntarily when you sob or yawn. We're just using it deliberately.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].question": {
+          "sourceHash": "d5758ccc86a1fa3f60fa435718f0a6924df6286f29da44f59192f914cc6840f2",
+          "sourceText": "How is this different from just taking deep breaths?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "a8b3f9235deea255a6af39bf9d13dbaab57c335675fbd88c379360051210e357",
+          "sourceText": "During easy running, nasal breathing is ideal when possible: it filters air, produces nitric oxide, and promotes diaphragmatic breathing. During hard efforts, mouth breathing is natural and necessary. For the physiological sigh specifically, inhale through your nose and exhale through your mouth.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "46f069ecca83891d7ef915e2e4c06ac345eee3de145b5593fdd2f3ff96d19c68",
+          "sourceText": "Should I breathe through my nose or mouth while running?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "e98ecb98a02a9a4df8e72e56ac233bc4bb37c21e5df85ce3f4deed56f6a2a6e3",
+          "sourceText": "Yes. Practice low belly breathing during warm-ups, use stride-linked breathing on easy runs, and do short guided recovery breathing after hard sessions. Over time your breathing becomes quieter, more efficient, and easier to control when fatigue hits.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[4].question": {
+          "sourceHash": "7f9291333d24bf4bf6f38e658303b469bac70df313eb85097ca572441cc8049e",
+          "sourceText": "Can I train my breathing for running?",
+          "status": "repo-reviewed-manual"
+        },
+        "hero.intro": {
+          "sourceHash": "ff85532734e948d6d40db1200215fcecb7f42557f6b88479f6e2cccb9d4bde54",
+          "sourceText": "Breathing for running recovery and side stitches starts with the physiological sigh. You've just finished a hard sprint and you're bent over, hands on knees, panting heavily, but your breathing isn't helping. Or you're mid-run and a sharp side stitch stops you in your tracks. The physiological sigh, a double-inhale-long-exhale pattern, rapidly resets your respiratory system and brings your heart rate down faster than regular breathing.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "3b6d4a34bb14b2bb8a9dc6f747c2931e839d74218b1263faa07e4762faaa5d54",
+          "sourceText": "The physiological sigh technique for runners",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "1fb54d2b1733f17a0ac791891630eb446ddae518a008d3d8218698cecb2a383d",
+          "sourceText": "Recover Faster and Stop Side Stitches",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "1b88bcfb1d9b9d03c47be22d2d6bc05eb187b632a29a3c70f67bb7643a53b7b0",
+          "sourceText": "On easy runs, breathe low into your belly instead of lifting your chest and shoulders. Think about expanding your lower ribs and keeping your jaw loose.",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "7f32937fea8398b02c2d553a88f3a79ffc9cd4e93995a4283b205deef146683e",
+          "sourceText": "Start low and relaxed",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "da28b5f0aeb31a22f6c17f1102622fa5c2620ccb21edaf2655dbd4c40dc8f468",
+          "sourceText": "First 5-10 minutes",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "c6bd35e89245aa6a0ca7f5f7e2fcafdb70d105cf4bfcc0aeeb8413d15ba3aac2",
+          "sourceText": "For side stitches, slow to a walk. For post-run recovery, stop completely and stand or bend slightly with hands on hips, not on knees.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "7e188888696c492074ebab012d9a6a1c15b4eb6b46981b0ef64cd981f22ef5cf",
+          "sourceText": "Stop or slow down",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "eb5a88cac9bbc83980555fa71bf7c2630e7376edce16b0366dc5c3b4cdbe8d25",
+          "sourceText": "As needed",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "f0405e4b0cdae3cebf70d0e57386103e407f2e9417455a3a9c5212941a141c10",
+          "sourceText": "During intervals, hills, or race efforts, let mouth breathing happen naturally. The goal is enough airflow, not perfect nasal breathing under load.",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "9f2d60e6c29a6d9a27eee2cb7de56aea981a4d2ae6e11885da103179de15af7a",
+          "sourceText": "Open the mouth when pace rises",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "21191a3c17335a93d3ea844467c118d92b67c0f53e2dbc058a06f2a99054ca9e",
+          "sourceText": "During hard efforts",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "5cbd28118a5b2ae134c87353929c086069b9988eb3c5160db63d2c3832bbbb27",
+          "sourceText": "Without exhaling, take a second, shorter sip of air through your nose. This pops open collapsed air sacs. Don't force it, just a gentle top-up.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "cc777d6bb0a09d18a12a96efc0cb534e1a24046745b461a465418bc7a2b14291",
+          "sourceText": "Second 'top-up' inhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "e44edcb41e75c6cf813bd2ea0bf651ef68a5e1a2ab90e5fb31c8998e5bb087e8",
+          "sourceText": "~1-2 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "b2214170473966befa8e20c0088706c7d3a88d38cdb54f9d342c221178d75b36",
+          "sourceText": "After a hard effort, keep walking and use 3-5 physiological sighs or a minute of slow guided breathing until your heart rate and breathing settle.",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "82bdd2e04d334462f941799b694a6d3392b93c63ec82f34db365f6cdbf28514c",
+          "sourceText": "Recover with 60-120 seconds of guided breathing",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "1c3bb852ca632da174943b232d1b4f46d60c4a8ff639e31a96b408bc6ad29753",
+          "sourceText": "1-2 minutes post-effort",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "cfcafe7ed3be3495c4c203ca8377d2ff9411c73ba72ac2f38ab96fef335e99b5",
+          "sourceText": "Practice low belly breathing during warm-ups so it feels automatic later",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "da4fd66adc1f02200e82f391f9298686e547b1b1645f38ddab1c9433ca198ba3",
+          "sourceText": "For side stitches, try pressing on the painful spot while exhaling",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "fa7eb5de3b42b20e6f9549d1ffed6bb5ddb93782833588200a12bcad7025b360",
+          "sourceText": "Standing upright or with a slight forward lean helps. Don't hunch over",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "7e2f604370ccc35cf5f0a12468baf2caa32f335e3a96657533af6a8d09cde2ae",
+          "sourceText": "The exhale is the most important part. Make it slow and complete",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "79b55b4059bd6b4b5b75ee496aaf3bd6da1e7df80b1aaa2c552a3f6c892d54cb",
+          "sourceText": "Side stitch ruining your run? Stop pain in 30 seconds and recover 2x faster with the physiological sigh. Stanford-tested breathing for runners. Try now.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "012105870c0d5776b6e066b34d0e706d4cf41c9afdbff04aaf8c4f604d0f1d3c",
+          "sourceText": "Stanford-tested double-inhale breathing stops side stitches in 30 seconds and speeds recovery 2x. Free timer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "bf7457d5ee38c477ff6e058fcf492c138bbf694cb0a31b42ac8fe91f16ca063f",
+          "sourceText": "Stop Side Stitches in 30 Seconds - Free Running Timer",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "db6b2fdcec81448099d16006f3ed95852fed8512eeec4fe713befb65aafd3d3f",
+          "sourceText": "Stop Side Stitches in 30 Seconds + Recover 2x Faster (Free Timer) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "012105870c0d5776b6e066b34d0e706d4cf41c9afdbff04aaf8c4f604d0f1d3c",
+          "sourceText": "Stanford-tested physiological sigh stops side stitches instantly and speeds recovery 2x. Try now.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "18eb764c105f42136929c96c74f9b05a473e9d81b169a961b837ed97a51bfeff",
+          "sourceText": "Stop Side Stitches in 30 Seconds - Free Timer",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "e1389e9e1edc0f2f7f3db782eb6825a9c0864bb157e59d2ff4849d6991613220",
+          "sourceText": "After intense effort, your instinct is to gasp for air with rapid, shallow breaths. But this often makes things worse. You're not efficiently exchanging gases, and the frantic breathing pattern keeps your stress response elevated. During runs, side stitches (technically called exercise-related transient abdominal pain) can strike suddenly, caused by diaphragm spasm or strain from the bouncing of internal organs.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "98653e8f03756e618fc442416c64af74e8f1bedffd372097819b9783d6441b6f",
+          "sourceText": "When Heavy Panting Doesn't Work",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "b0a786974289baa9fc52057ae6d5f9379073239251da4bc4bdf316de40bf514e",
+          "sourceText": "Breathing high into the chest instead of low into the belly",
+          "status": "repo-reviewed-manual"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "a05de615fd1f6700112ae7d6d5986f805b6886a010e89d5460234c750a193df7",
+          "sourceText": "Heavy panting that doesn't settle after a hard effort",
+          "status": "repo-reviewed-manual"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "bd78cc31cffa45f0fa3afffaa841e44cfbe14dca1371aad6622a61c0c4a1348e",
+          "sourceText": "Heart rate staying elevated long after stopping",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "12e240f730bde0b748aa61707b845b35b808e3207a9b0ed55eba00a690fec2f7",
+          "sourceText": "Sharp, stabbing side stitch pain during running",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "e5d684108d5e1bd72fadb9a6f6448d137bb31bc6c6e0f91a21837c471f43241b",
+          "sourceText": "Feeling out of rhythm with your stride or cadence",
+          "status": "repo-reviewed-manual"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "7002219d303da1cf0500dbbb493cf28b83bee5f30886ba8b5c7bc78c451ed67e",
+          "sourceText": "Feeling like you can't get a satisfying breath",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "e4d2d53a4d892c24d74f9926fad31f546eddcf3e4c867f09f24d7fdd54049f09",
+          "sourceText": "Stanford study showing cyclic sighing (physiological sigh) outperformed other breathing techniques and meditation for stress reduction and mood improvement.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "2dfc5c3bdc39bc5a5a2adf200c87c1ada83ffdcbc3a1e08638d6a9c1522b0ce8",
+          "sourceText": "Brief structured respiration practices enhance mood and reduce physiological arousal",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "0c018bd15ca3a459667b06d3331f1f8aa1279ea5e771475fb3322038405f83d6",
+          "sourceText": "Dr. Andrew Huberman explains the neuroscience of stress and how physiological sighing works as a real-time intervention.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "b282db437e7bb98f8998cd81816545b6151e141895650585e1597f3669263fcf",
+          "sourceText": "How stress affects your brain and how to reverse it",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "c3c2fe2050f6b62ec8fc8f08dd70befae9f172b49c10e6b3ac131d353ba4520a",
+          "sourceText": "Practical guide to the physiological sigh technique with HRV and heart rate data.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "b1bc19d1e4737f7d7264b971b43558001a5975a4f2385c59ebc6575ce195ee06",
+          "sourceText": "The Physiological Sigh: A 30-Second Breathing Exercise to Lower Stress",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "9047bc8d2c290940d58240b6eac1aa7f78c393615579d4092757b29d6d6ac9b0",
+          "sourceText": "Overview of side stitch causes and breathing techniques for prevention and treatment.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "11e238d9095755175ed4231e8b154dc49932f3b104327d4fca065e963305a9c0",
+          "sourceText": "Side Stitch While Running: Prevention & Treatment",
+          "status": "route-catalog-exact"
+        },
+        "references[4].summary": {
+          "sourceHash": "29580cd2184dbecf6d8144fc9690cc6dc1a341059b2d175fc6547e9aa2cf5817",
+          "sourceText": "Medical overview of exercise-related transient abdominal pain and breathing remedies.",
+          "status": "route-catalog-exact"
+        },
+        "references[4].title": {
+          "sourceHash": "e5d23ec623ce25ecce7d9f88bce51e5459d23af35f3f11f14662719fc13d59f9",
+          "sourceText": "Stitch When Running: How to Stop One, Prevention & More",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "c639d79d47d91f7038efd8ae488e79d207f81574613172beb0fe1fdd674898f4",
+          "sourceText": "Practice with the full-screen Physiological Sigh visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "29993a8642f6587bf1bc1163fd06a585a6655e70817d0c3622ef498a42457b44",
+          "sourceText": "Use the same rapid-calm technique before races to settle pre-competition nerves",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "ed573bfe10915cad735fad85ae131d6c7f263f4d7526ce4f5023a41cfcb9db50",
+          "sourceText": "Better sleep aids recovery. Try 4-7-8 breathing before bed after training days",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "3f593495e2326263cd27dcefae35f97e2f6bf38e51b5044633c3ebb9e1c313cf",
+          "sourceText": "Increase your lung capacity for longer, stronger runs.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "676b8ef5f9ae739ee1227d316ba9ba04582a07e14e88331d4483b218f89da8c7",
+          "sourceText": "The Respiratory Science",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "44d1f2d25791af07568dfd4c2098f8ceeef7db6e9dd4993d8a6612e03f5de360",
+          "sourceText": "During intense exercise, some of the 500 million tiny air sacs in your lungs collapse. The double inhale, especially the second 'top-up' breath, pops these alveoli open, immediately improving oxygen intake and CO₂ offload.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "7af6821dbe2be4c8e2728021a3fb7ed0b712614c5135e359b851709273f46c81",
+          "sourceText": "Alveoli Re-inflation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "bf03255445ae69a2956fa00bc9f861a80c3e71e997fefa66895711699bf700c6",
+          "sourceText": "Stanford research found that the physiological sigh brings heart rate down faster than box breathing or meditation. The long exhale is key. It activates the vagus nerve and triggers the parasympathetic 'rest and digest' response.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "ec170838d0d6b6bf181370d910823cf8037fc090897b9b77a171f631733aeda2",
+          "sourceText": "Rapid Heart Rate Reduction",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "38cabae477e319c40ece48a9e8771c095bc55f6278a3a2496d44301e7ab6c3cc",
+          "sourceText": "Nasal breathing can work well at easy intensity, but hard efforts demand more airflow. Mouth breathing is not failure — it is a normal response to higher carbon dioxide production and oxygen demand.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "be0620a12b2a7adb3ffbcf4673c12babe17223c68bcb1e9058cd17c48904cc36",
+          "sourceText": "Mouth vs nose breathing",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "2bc9e98d3962a07d0e4be1561683eebcc595b24fec9ea68feb9884493720c1a8",
+          "sourceText": "Stanford research found that the physiological sigh brings heart rate down faster than box breathing or meditation. The double inhale re-expands alveoli and the long exhale relaxes the diaphragm, which is why it works so well for side stitches and post-sprint recovery.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "c6fbbeb7dde75c15cb10f91c22735a9b0ee8409c26b2d67fd47b805833fb934c",
+          "sourceText": "Rapid reset after hard efforts",
+          "status": "repo-reviewed-manual"
+        },
+        "solution.content": {
+          "sourceHash": "ddd63d6eed60539597a014d1bd6a1769903459585fc06682408c8f1fa1c112ad",
+          "sourceText": "The physiological sigh is your body's natural reset mechanism. You do it involuntarily when you sob or when transitioning from sleep. The pattern is simple: two inhales through the nose (a big breath followed by a small 'top-up'), then one long exhale through the mouth. This technique, studied at Stanford by Dr. Andrew Huberman and colleagues, brings heart rate down faster than other breathing methods.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "dd5f85bc09e78986f72f0723cba7ec3276f83b1c1f34f4253229669b4bc4ef1e",
+          "sourceText": "The Physiological Sigh",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "7b2736485a50dce1410bf918b6c1a23b6c97735ed686a43d91c617b43e18ba3b",
+          "sourceText": "The double inhale serves a mechanical purpose: during hard exercise, tiny air sacs in your lungs (alveoli) can partially collapse, reducing oxygen uptake. The second 'sip' of air re-inflates these collapsed regions. The long exhale then activates the vagus nerve and shifts you out of the fight-or-flight state.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "a65fa23e2af0e59d72c8769f62af95efdd5d9fcb27287e447b76e93e3c5d140a",
+          "sourceText": "Breathe low into your belly, match your breath to your stride, and let mouth breathing happen naturally as pace rises. Use a 3:3 or 2:2 rhythm during steady running, then switch to a physiological sigh if a side stitch or post-sprint breathlessness hits.",
+          "status": "repo-reviewed-manual"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "3eb216d5746fafaea5414b131d1c6e98ebc7f6a158c3799b90b826263d61db90",
+          "sourceText": "How do you breathe while running?",
+          "status": "repo-reviewed-manual"
+        }
+      }
+    },
+    "es-es": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "6c547dfda626d88f9f390056cf7a14fc4e242b5128bf5c31a364435d24f1321a",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "fd75a0c1418a75fb7860da61b872c9881106748e5beac6d999f31ad4b09d2a60",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-lung-capacity-title": {
+          "sourceHash": "0cf688a2f16e61168d310058a1fb86e7699f9603d9dbed604bf9896c93e87ed9",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-public-speaking-title": {
+          "sourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "e86a295961ee650b75c8cffc4fc71af0c0ea6de82b803145e6ab0e51e15c8940",
+          "sourceText": "The best breathing technique for running depends on pace. For easy runs, low diaphragmatic breathing with a relaxed stride rhythm works best. For hard efforts, mouth breathing is normal. For side stitches or post-run recovery, the physiological sigh is the fastest reset because it quickly settles the diaphragm and heart rate.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[0].question": {
+          "sourceHash": "ee70d75d4391bb0a93abb4eea5a08e00a48c4e7750addd83c83d2d7c50864db2",
+          "sourceText": "What is the best breathing technique for running?",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "fb1986ed14e32bc7bb4ba6b526686a51f22cdf4d33677574a7ddd269e6ae641b",
+          "sourceText": "To stop a side stitch while running, slow down and do 1-3 physiological sighs: two quick nasal inhales followed by a long, slow exhale. The double inhale reinflates the lungs and the long exhale relaxes the diaphragm. Most runners feel relief within 30-60 seconds.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].question": {
+          "sourceHash": "580fd239f03099fd17802f883e1792d0315735900d5c07d36db48b9a79d920c9",
+          "sourceText": "How do you stop a side stitch while running?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "30c4b9fd8d1d44635dc8b69971d469db942a1a38ec81f3c01a30f15cbc1fcf6d",
+          "sourceText": "The double inhale is the key difference. Regular deep breaths don't re-inflate collapsed alveoli the way the second 'sip' of air does. The physiological sigh is your body's natural mechanism. You do it involuntarily when you sob or yawn. We're just using it deliberately.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].question": {
+          "sourceHash": "d5758ccc86a1fa3f60fa435718f0a6924df6286f29da44f59192f914cc6840f2",
+          "sourceText": "How is this different from just taking deep breaths?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "a8b3f9235deea255a6af39bf9d13dbaab57c335675fbd88c379360051210e357",
+          "sourceText": "During easy running, nasal breathing is ideal when possible: it filters air, produces nitric oxide, and promotes diaphragmatic breathing. During hard efforts, mouth breathing is natural and necessary. For the physiological sigh specifically, inhale through your nose and exhale through your mouth.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "46f069ecca83891d7ef915e2e4c06ac345eee3de145b5593fdd2f3ff96d19c68",
+          "sourceText": "Should I breathe through my nose or mouth while running?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "e98ecb98a02a9a4df8e72e56ac233bc4bb37c21e5df85ce3f4deed56f6a2a6e3",
+          "sourceText": "Yes. Practice low belly breathing during warm-ups, use stride-linked breathing on easy runs, and do short guided recovery breathing after hard sessions. Over time your breathing becomes quieter, more efficient, and easier to control when fatigue hits.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[4].question": {
+          "sourceHash": "7f9291333d24bf4bf6f38e658303b469bac70df313eb85097ca572441cc8049e",
+          "sourceText": "Can I train my breathing for running?",
+          "status": "repo-reviewed-manual"
+        },
+        "hero.intro": {
+          "sourceHash": "ff85532734e948d6d40db1200215fcecb7f42557f6b88479f6e2cccb9d4bde54",
+          "sourceText": "Breathing for running recovery and side stitches starts with the physiological sigh. You've just finished a hard sprint and you're bent over, hands on knees, panting heavily, but your breathing isn't helping. Or you're mid-run and a sharp side stitch stops you in your tracks. The physiological sigh, a double-inhale-long-exhale pattern, rapidly resets your respiratory system and brings your heart rate down faster than regular breathing.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "3b6d4a34bb14b2bb8a9dc6f747c2931e839d74218b1263faa07e4762faaa5d54",
+          "sourceText": "The physiological sigh technique for runners",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "1fb54d2b1733f17a0ac791891630eb446ddae518a008d3d8218698cecb2a383d",
+          "sourceText": "Recover Faster and Stop Side Stitches",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "1b88bcfb1d9b9d03c47be22d2d6bc05eb187b632a29a3c70f67bb7643a53b7b0",
+          "sourceText": "On easy runs, breathe low into your belly instead of lifting your chest and shoulders. Think about expanding your lower ribs and keeping your jaw loose.",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "7f32937fea8398b02c2d553a88f3a79ffc9cd4e93995a4283b205deef146683e",
+          "sourceText": "Start low and relaxed",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "da28b5f0aeb31a22f6c17f1102622fa5c2620ccb21edaf2655dbd4c40dc8f468",
+          "sourceText": "First 5-10 minutes",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "c6bd35e89245aa6a0ca7f5f7e2fcafdb70d105cf4bfcc0aeeb8413d15ba3aac2",
+          "sourceText": "For side stitches, slow to a walk. For post-run recovery, stop completely and stand or bend slightly with hands on hips, not on knees.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "7e188888696c492074ebab012d9a6a1c15b4eb6b46981b0ef64cd981f22ef5cf",
+          "sourceText": "Stop or slow down",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "eb5a88cac9bbc83980555fa71bf7c2630e7376edce16b0366dc5c3b4cdbe8d25",
+          "sourceText": "As needed",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "f0405e4b0cdae3cebf70d0e57386103e407f2e9417455a3a9c5212941a141c10",
+          "sourceText": "During intervals, hills, or race efforts, let mouth breathing happen naturally. The goal is enough airflow, not perfect nasal breathing under load.",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "9f2d60e6c29a6d9a27eee2cb7de56aea981a4d2ae6e11885da103179de15af7a",
+          "sourceText": "Open the mouth when pace rises",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "21191a3c17335a93d3ea844467c118d92b67c0f53e2dbc058a06f2a99054ca9e",
+          "sourceText": "During hard efforts",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "5cbd28118a5b2ae134c87353929c086069b9988eb3c5160db63d2c3832bbbb27",
+          "sourceText": "Without exhaling, take a second, shorter sip of air through your nose. This pops open collapsed air sacs. Don't force it, just a gentle top-up.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "cc777d6bb0a09d18a12a96efc0cb534e1a24046745b461a465418bc7a2b14291",
+          "sourceText": "Second 'top-up' inhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "e44edcb41e75c6cf813bd2ea0bf651ef68a5e1a2ab90e5fb31c8998e5bb087e8",
+          "sourceText": "~1-2 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "b2214170473966befa8e20c0088706c7d3a88d38cdb54f9d342c221178d75b36",
+          "sourceText": "After a hard effort, keep walking and use 3-5 physiological sighs or a minute of slow guided breathing until your heart rate and breathing settle.",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "82bdd2e04d334462f941799b694a6d3392b93c63ec82f34db365f6cdbf28514c",
+          "sourceText": "Recover with 60-120 seconds of guided breathing",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "1c3bb852ca632da174943b232d1b4f46d60c4a8ff639e31a96b408bc6ad29753",
+          "sourceText": "1-2 minutes post-effort",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "cfcafe7ed3be3495c4c203ca8377d2ff9411c73ba72ac2f38ab96fef335e99b5",
+          "sourceText": "Practice low belly breathing during warm-ups so it feels automatic later",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "da4fd66adc1f02200e82f391f9298686e547b1b1645f38ddab1c9433ca198ba3",
+          "sourceText": "For side stitches, try pressing on the painful spot while exhaling",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "fa7eb5de3b42b20e6f9549d1ffed6bb5ddb93782833588200a12bcad7025b360",
+          "sourceText": "Standing upright or with a slight forward lean helps. Don't hunch over",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "7e2f604370ccc35cf5f0a12468baf2caa32f335e3a96657533af6a8d09cde2ae",
+          "sourceText": "The exhale is the most important part. Make it slow and complete",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "79b55b4059bd6b4b5b75ee496aaf3bd6da1e7df80b1aaa2c552a3f6c892d54cb",
+          "sourceText": "Breathing for running recovery using the physiological sigh. Relieve side stitches, lower heart rate after intervals, and recover faster with a free guided timer.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "012105870c0d5776b6e066b34d0e706d4cf41c9afdbff04aaf8c4f604d0f1d3c",
+          "sourceText": "Use physiological sigh breathing to stop side stitches and recover faster after hard running efforts.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "bf7457d5ee38c477ff6e058fcf492c138bbf694cb0a31b42ac8fe91f16ca063f",
+          "sourceText": "Breathing for Running Recovery: Stop Side Stitches Fast",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.title": {
+          "sourceHash": "db6b2fdcec81448099d16006f3ed95852fed8512eeec4fe713befb65aafd3d3f",
+          "sourceText": "Breathing for Running Recovery: Stop Side Stitches Fast (Free Timer)",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "012105870c0d5776b6e066b34d0e706d4cf41c9afdbff04aaf8c4f604d0f1d3c",
+          "sourceText": "Use physiological sigh breathing to stop side stitches and recover faster after hard running efforts.",
+          "status": "repo-reviewed-replacement"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "18eb764c105f42136929c96c74f9b05a473e9d81b169a961b837ed97a51bfeff",
+          "sourceText": "Breathing for Running Recovery (Free Timer)",
+          "status": "repo-reviewed-replacement"
+        },
+        "problem.content": {
+          "sourceHash": "e1389e9e1edc0f2f7f3db782eb6825a9c0864bb157e59d2ff4849d6991613220",
+          "sourceText": "After intense effort, your instinct is to gasp for air with rapid, shallow breaths. But this often makes things worse. You're not efficiently exchanging gases, and the frantic breathing pattern keeps your stress response elevated. During runs, side stitches (technically called exercise-related transient abdominal pain) can strike suddenly, caused by diaphragm spasm or strain from the bouncing of internal organs.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "98653e8f03756e618fc442416c64af74e8f1bedffd372097819b9783d6441b6f",
+          "sourceText": "When Heavy Panting Doesn't Work",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "b0a786974289baa9fc52057ae6d5f9379073239251da4bc4bdf316de40bf514e",
+          "sourceText": "Breathing high into the chest instead of low into the belly",
+          "status": "repo-reviewed-manual"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "a05de615fd1f6700112ae7d6d5986f805b6886a010e89d5460234c750a193df7",
+          "sourceText": "Heavy panting that doesn't settle after a hard effort",
+          "status": "repo-reviewed-manual"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "bd78cc31cffa45f0fa3afffaa841e44cfbe14dca1371aad6622a61c0c4a1348e",
+          "sourceText": "Heart rate staying elevated long after stopping",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "12e240f730bde0b748aa61707b845b35b808e3207a9b0ed55eba00a690fec2f7",
+          "sourceText": "Sharp, stabbing side stitch pain during running",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "e5d684108d5e1bd72fadb9a6f6448d137bb31bc6c6e0f91a21837c471f43241b",
+          "sourceText": "Feeling out of rhythm with your stride or cadence",
+          "status": "repo-reviewed-manual"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "7002219d303da1cf0500dbbb493cf28b83bee5f30886ba8b5c7bc78c451ed67e",
+          "sourceText": "Feeling like you can't get a satisfying breath",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "e4d2d53a4d892c24d74f9926fad31f546eddcf3e4c867f09f24d7fdd54049f09",
+          "sourceText": "Stanford study showing cyclic sighing (physiological sigh) outperformed other breathing techniques and meditation for stress reduction and mood improvement.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "2dfc5c3bdc39bc5a5a2adf200c87c1ada83ffdcbc3a1e08638d6a9c1522b0ce8",
+          "sourceText": "Brief structured respiration practices enhance mood and reduce physiological arousal",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "0c018bd15ca3a459667b06d3331f1f8aa1279ea5e771475fb3322038405f83d6",
+          "sourceText": "Dr. Andrew Huberman explains the neuroscience of stress and how physiological sighing works as a real-time intervention.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "b282db437e7bb98f8998cd81816545b6151e141895650585e1597f3669263fcf",
+          "sourceText": "How stress affects your brain and how to reverse it",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "c3c2fe2050f6b62ec8fc8f08dd70befae9f172b49c10e6b3ac131d353ba4520a",
+          "sourceText": "Practical guide to the physiological sigh technique with HRV and heart rate data.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "b1bc19d1e4737f7d7264b971b43558001a5975a4f2385c59ebc6575ce195ee06",
+          "sourceText": "The Physiological Sigh: A 30-Second Breathing Exercise to Lower Stress",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "9047bc8d2c290940d58240b6eac1aa7f78c393615579d4092757b29d6d6ac9b0",
+          "sourceText": "Overview of side stitch causes and breathing techniques for prevention and treatment.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "11e238d9095755175ed4231e8b154dc49932f3b104327d4fca065e963305a9c0",
+          "sourceText": "Side Stitch While Running: Prevention & Treatment",
+          "status": "route-catalog-exact"
+        },
+        "references[4].summary": {
+          "sourceHash": "29580cd2184dbecf6d8144fc9690cc6dc1a341059b2d175fc6547e9aa2cf5817",
+          "sourceText": "Medical overview of exercise-related transient abdominal pain and breathing remedies.",
+          "status": "route-catalog-exact"
+        },
+        "references[4].title": {
+          "sourceHash": "e5d23ec623ce25ecce7d9f88bce51e5459d23af35f3f11f14662719fc13d59f9",
+          "sourceText": "Stitch When Running: How to Stop One, Prevention & More",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "c639d79d47d91f7038efd8ae488e79d207f81574613172beb0fe1fdd674898f4",
+          "sourceText": "Practice with the full-screen Physiological Sigh visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "29993a8642f6587bf1bc1163fd06a585a6655e70817d0c3622ef498a42457b44",
+          "sourceText": "Use the same rapid-calm technique before races to settle pre-competition nerves",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "ed573bfe10915cad735fad85ae131d6c7f263f4d7526ce4f5023a41cfcb9db50",
+          "sourceText": "Better sleep aids recovery. Try 4-7-8 breathing before bed after training days",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "3f593495e2326263cd27dcefae35f97e2f6bf38e51b5044633c3ebb9e1c313cf",
+          "sourceText": "Increase your lung capacity for longer, stronger runs.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "676b8ef5f9ae739ee1227d316ba9ba04582a07e14e88331d4483b218f89da8c7",
+          "sourceText": "The Respiratory Science",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "44d1f2d25791af07568dfd4c2098f8ceeef7db6e9dd4993d8a6612e03f5de360",
+          "sourceText": "During intense exercise, some of the 500 million tiny air sacs in your lungs collapse. The double inhale, especially the second 'top-up' breath, pops these alveoli open, immediately improving oxygen intake and CO₂ offload.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "7af6821dbe2be4c8e2728021a3fb7ed0b712614c5135e359b851709273f46c81",
+          "sourceText": "Alveoli Re-inflation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "bf03255445ae69a2956fa00bc9f861a80c3e71e997fefa66895711699bf700c6",
+          "sourceText": "Stanford research found that the physiological sigh brings heart rate down faster than box breathing or meditation. The long exhale is key. It activates the vagus nerve and triggers the parasympathetic 'rest and digest' response.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "ec170838d0d6b6bf181370d910823cf8037fc090897b9b77a171f631733aeda2",
+          "sourceText": "Rapid Heart Rate Reduction",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "38cabae477e319c40ece48a9e8771c095bc55f6278a3a2496d44301e7ab6c3cc",
+          "sourceText": "Nasal breathing can work well at easy intensity, but hard efforts demand more airflow. Mouth breathing is not failure — it is a normal response to higher carbon dioxide production and oxygen demand.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "be0620a12b2a7adb3ffbcf4673c12babe17223c68bcb1e9058cd17c48904cc36",
+          "sourceText": "Mouth vs nose breathing",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "2bc9e98d3962a07d0e4be1561683eebcc595b24fec9ea68feb9884493720c1a8",
+          "sourceText": "Stanford research found that the physiological sigh brings heart rate down faster than box breathing or meditation. The double inhale re-expands alveoli and the long exhale relaxes the diaphragm, which is why it works so well for side stitches and post-sprint recovery.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "c6fbbeb7dde75c15cb10f91c22735a9b0ee8409c26b2d67fd47b805833fb934c",
+          "sourceText": "Rapid reset after hard efforts",
+          "status": "repo-reviewed-manual"
+        },
+        "solution.content": {
+          "sourceHash": "ddd63d6eed60539597a014d1bd6a1769903459585fc06682408c8f1fa1c112ad",
+          "sourceText": "The physiological sigh is your body's natural reset mechanism. You do it involuntarily when you sob or when transitioning from sleep. The pattern is simple: two inhales through the nose (a big breath followed by a small 'top-up'), then one long exhale through the mouth. This technique, studied at Stanford by Dr. Andrew Huberman and colleagues, brings heart rate down faster than other breathing methods.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "dd5f85bc09e78986f72f0723cba7ec3276f83b1c1f34f4253229669b4bc4ef1e",
+          "sourceText": "The Physiological Sigh",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "7b2736485a50dce1410bf918b6c1a23b6c97735ed686a43d91c617b43e18ba3b",
+          "sourceText": "The double inhale serves a mechanical purpose: during hard exercise, tiny air sacs in your lungs (alveoli) can partially collapse, reducing oxygen uptake. The second 'sip' of air re-inflates these collapsed regions. The long exhale then activates the vagus nerve and shifts you out of the fight-or-flight state.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "a65fa23e2af0e59d72c8769f62af95efdd5d9fcb27287e447b76e93e3c5d140a",
+          "sourceText": "Breathe low into your belly, match your breath to your stride, and let mouth breathing happen naturally as pace rises. Use a 3:3 or 2:2 rhythm during steady running, then switch to a physiological sigh if a side stitch or post-sprint breathlessness hits.",
+          "status": "repo-reviewed-manual"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "3eb216d5746fafaea5414b131d1c6e98ebc7f6a158c3799b90b826263d61db90",
+          "sourceText": "How do you breathe while running?",
+          "status": "repo-reviewed-manual"
+        }
+      }
+    },
+    "fr-fr": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "6c547dfda626d88f9f390056cf7a14fc4e242b5128bf5c31a364435d24f1321a",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "fd75a0c1418a75fb7860da61b872c9881106748e5beac6d999f31ad4b09d2a60",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-lung-capacity-title": {
+          "sourceHash": "0cf688a2f16e61168d310058a1fb86e7699f9603d9dbed604bf9896c93e87ed9",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-public-speaking-title": {
+          "sourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "e86a295961ee650b75c8cffc4fc71af0c0ea6de82b803145e6ab0e51e15c8940",
+          "sourceText": "The best breathing technique for running depends on pace. For easy runs, low diaphragmatic breathing with a relaxed stride rhythm works best. For hard efforts, mouth breathing is normal. For side stitches or post-run recovery, the physiological sigh is the fastest reset because it quickly settles the diaphragm and heart rate.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[0].question": {
+          "sourceHash": "ee70d75d4391bb0a93abb4eea5a08e00a48c4e7750addd83c83d2d7c50864db2",
+          "sourceText": "What is the best breathing technique for running?",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "fb1986ed14e32bc7bb4ba6b526686a51f22cdf4d33677574a7ddd269e6ae641b",
+          "sourceText": "To stop a side stitch while running, slow down and do 1-3 physiological sighs: two quick nasal inhales followed by a long, slow exhale. The double inhale reinflates the lungs and the long exhale relaxes the diaphragm. Most runners feel relief within 30-60 seconds.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].question": {
+          "sourceHash": "580fd239f03099fd17802f883e1792d0315735900d5c07d36db48b9a79d920c9",
+          "sourceText": "How do you stop a side stitch while running?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "30c4b9fd8d1d44635dc8b69971d469db942a1a38ec81f3c01a30f15cbc1fcf6d",
+          "sourceText": "The double inhale is the key difference. Regular deep breaths don't re-inflate collapsed alveoli the way the second 'sip' of air does. The physiological sigh is your body's natural mechanism. You do it involuntarily when you sob or yawn. We're just using it deliberately.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].question": {
+          "sourceHash": "d5758ccc86a1fa3f60fa435718f0a6924df6286f29da44f59192f914cc6840f2",
+          "sourceText": "How is this different from just taking deep breaths?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "a8b3f9235deea255a6af39bf9d13dbaab57c335675fbd88c379360051210e357",
+          "sourceText": "During easy running, nasal breathing is ideal when possible: it filters air, produces nitric oxide, and promotes diaphragmatic breathing. During hard efforts, mouth breathing is natural and necessary. For the physiological sigh specifically, inhale through your nose and exhale through your mouth.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "46f069ecca83891d7ef915e2e4c06ac345eee3de145b5593fdd2f3ff96d19c68",
+          "sourceText": "Should I breathe through my nose or mouth while running?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "e98ecb98a02a9a4df8e72e56ac233bc4bb37c21e5df85ce3f4deed56f6a2a6e3",
+          "sourceText": "Yes. Practice low belly breathing during warm-ups, use stride-linked breathing on easy runs, and do short guided recovery breathing after hard sessions. Over time your breathing becomes quieter, more efficient, and easier to control when fatigue hits.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[4].question": {
+          "sourceHash": "7f9291333d24bf4bf6f38e658303b469bac70df313eb85097ca572441cc8049e",
+          "sourceText": "Can I train my breathing for running?",
+          "status": "repo-reviewed-manual"
+        },
+        "hero.intro": {
+          "sourceHash": "ff85532734e948d6d40db1200215fcecb7f42557f6b88479f6e2cccb9d4bde54",
+          "sourceText": "Breathing for running recovery and side stitches starts with the physiological sigh. You've just finished a hard sprint and you're bent over, hands on knees, panting heavily, but your breathing isn't helping. Or you're mid-run and a sharp side stitch stops you in your tracks. The physiological sigh, a double-inhale-long-exhale pattern, rapidly resets your respiratory system and brings your heart rate down faster than regular breathing.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "3b6d4a34bb14b2bb8a9dc6f747c2931e839d74218b1263faa07e4762faaa5d54",
+          "sourceText": "The physiological sigh technique for runners",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "1fb54d2b1733f17a0ac791891630eb446ddae518a008d3d8218698cecb2a383d",
+          "sourceText": "Recover Faster and Stop Side Stitches",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "1b88bcfb1d9b9d03c47be22d2d6bc05eb187b632a29a3c70f67bb7643a53b7b0",
+          "sourceText": "On easy runs, breathe low into your belly instead of lifting your chest and shoulders. Think about expanding your lower ribs and keeping your jaw loose.",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "7f32937fea8398b02c2d553a88f3a79ffc9cd4e93995a4283b205deef146683e",
+          "sourceText": "Start low and relaxed",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "da28b5f0aeb31a22f6c17f1102622fa5c2620ccb21edaf2655dbd4c40dc8f468",
+          "sourceText": "First 5-10 minutes",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "c6bd35e89245aa6a0ca7f5f7e2fcafdb70d105cf4bfcc0aeeb8413d15ba3aac2",
+          "sourceText": "For side stitches, slow to a walk. For post-run recovery, stop completely and stand or bend slightly with hands on hips, not on knees.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "7e188888696c492074ebab012d9a6a1c15b4eb6b46981b0ef64cd981f22ef5cf",
+          "sourceText": "Stop or slow down",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "eb5a88cac9bbc83980555fa71bf7c2630e7376edce16b0366dc5c3b4cdbe8d25",
+          "sourceText": "As needed",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "f0405e4b0cdae3cebf70d0e57386103e407f2e9417455a3a9c5212941a141c10",
+          "sourceText": "During intervals, hills, or race efforts, let mouth breathing happen naturally. The goal is enough airflow, not perfect nasal breathing under load.",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "9f2d60e6c29a6d9a27eee2cb7de56aea981a4d2ae6e11885da103179de15af7a",
+          "sourceText": "Open the mouth when pace rises",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "21191a3c17335a93d3ea844467c118d92b67c0f53e2dbc058a06f2a99054ca9e",
+          "sourceText": "During hard efforts",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "5cbd28118a5b2ae134c87353929c086069b9988eb3c5160db63d2c3832bbbb27",
+          "sourceText": "Without exhaling, take a second, shorter sip of air through your nose. This pops open collapsed air sacs. Don't force it, just a gentle top-up.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "cc777d6bb0a09d18a12a96efc0cb534e1a24046745b461a465418bc7a2b14291",
+          "sourceText": "Second 'top-up' inhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "e44edcb41e75c6cf813bd2ea0bf651ef68a5e1a2ab90e5fb31c8998e5bb087e8",
+          "sourceText": "~1-2 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "b2214170473966befa8e20c0088706c7d3a88d38cdb54f9d342c221178d75b36",
+          "sourceText": "After a hard effort, keep walking and use 3-5 physiological sighs or a minute of slow guided breathing until your heart rate and breathing settle.",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "82bdd2e04d334462f941799b694a6d3392b93c63ec82f34db365f6cdbf28514c",
+          "sourceText": "Recover with 60-120 seconds of guided breathing",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "1c3bb852ca632da174943b232d1b4f46d60c4a8ff639e31a96b408bc6ad29753",
+          "sourceText": "1-2 minutes post-effort",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "cfcafe7ed3be3495c4c203ca8377d2ff9411c73ba72ac2f38ab96fef335e99b5",
+          "sourceText": "Practice low belly breathing during warm-ups so it feels automatic later",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "da4fd66adc1f02200e82f391f9298686e547b1b1645f38ddab1c9433ca198ba3",
+          "sourceText": "For side stitches, try pressing on the painful spot while exhaling",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "fa7eb5de3b42b20e6f9549d1ffed6bb5ddb93782833588200a12bcad7025b360",
+          "sourceText": "Standing upright or with a slight forward lean helps. Don't hunch over",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "7e2f604370ccc35cf5f0a12468baf2caa32f335e3a96657533af6a8d09cde2ae",
+          "sourceText": "The exhale is the most important part. Make it slow and complete",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "79b55b4059bd6b4b5b75ee496aaf3bd6da1e7df80b1aaa2c552a3f6c892d54cb",
+          "sourceText": "Side stitch ruining your run? Stop pain in 30 seconds and recover 2x faster with the physiological sigh. Stanford-tested breathing for runners. Try now.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "012105870c0d5776b6e066b34d0e706d4cf41c9afdbff04aaf8c4f604d0f1d3c",
+          "sourceText": "Stanford-tested double-inhale breathing stops side stitches in 30 seconds and speeds recovery 2x. Free timer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "bf7457d5ee38c477ff6e058fcf492c138bbf694cb0a31b42ac8fe91f16ca063f",
+          "sourceText": "Stop Side Stitches in 30 Seconds - Free Running Timer",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "db6b2fdcec81448099d16006f3ed95852fed8512eeec4fe713befb65aafd3d3f",
+          "sourceText": "Stop Side Stitches in 30 Seconds + Recover 2x Faster (Free Timer) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "012105870c0d5776b6e066b34d0e706d4cf41c9afdbff04aaf8c4f604d0f1d3c",
+          "sourceText": "Stanford-tested physiological sigh stops side stitches instantly and speeds recovery 2x. Try now.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "18eb764c105f42136929c96c74f9b05a473e9d81b169a961b837ed97a51bfeff",
+          "sourceText": "Stop Side Stitches in 30 Seconds - Free Timer",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "e1389e9e1edc0f2f7f3db782eb6825a9c0864bb157e59d2ff4849d6991613220",
+          "sourceText": "After intense effort, your instinct is to gasp for air with rapid, shallow breaths. But this often makes things worse. You're not efficiently exchanging gases, and the frantic breathing pattern keeps your stress response elevated. During runs, side stitches (technically called exercise-related transient abdominal pain) can strike suddenly, caused by diaphragm spasm or strain from the bouncing of internal organs.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "98653e8f03756e618fc442416c64af74e8f1bedffd372097819b9783d6441b6f",
+          "sourceText": "When Heavy Panting Doesn't Work",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "b0a786974289baa9fc52057ae6d5f9379073239251da4bc4bdf316de40bf514e",
+          "sourceText": "Breathing high into the chest instead of low into the belly",
+          "status": "repo-reviewed-manual"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "a05de615fd1f6700112ae7d6d5986f805b6886a010e89d5460234c750a193df7",
+          "sourceText": "Heavy panting that doesn't settle after a hard effort",
+          "status": "repo-reviewed-manual"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "bd78cc31cffa45f0fa3afffaa841e44cfbe14dca1371aad6622a61c0c4a1348e",
+          "sourceText": "Heart rate staying elevated long after stopping",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "12e240f730bde0b748aa61707b845b35b808e3207a9b0ed55eba00a690fec2f7",
+          "sourceText": "Sharp, stabbing side stitch pain during running",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "e5d684108d5e1bd72fadb9a6f6448d137bb31bc6c6e0f91a21837c471f43241b",
+          "sourceText": "Feeling out of rhythm with your stride or cadence",
+          "status": "repo-reviewed-manual"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "7002219d303da1cf0500dbbb493cf28b83bee5f30886ba8b5c7bc78c451ed67e",
+          "sourceText": "Feeling like you can't get a satisfying breath",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "e4d2d53a4d892c24d74f9926fad31f546eddcf3e4c867f09f24d7fdd54049f09",
+          "sourceText": "Stanford study showing cyclic sighing (physiological sigh) outperformed other breathing techniques and meditation for stress reduction and mood improvement.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "2dfc5c3bdc39bc5a5a2adf200c87c1ada83ffdcbc3a1e08638d6a9c1522b0ce8",
+          "sourceText": "Brief structured respiration practices enhance mood and reduce physiological arousal",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "0c018bd15ca3a459667b06d3331f1f8aa1279ea5e771475fb3322038405f83d6",
+          "sourceText": "Dr. Andrew Huberman explains the neuroscience of stress and how physiological sighing works as a real-time intervention.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "b282db437e7bb98f8998cd81816545b6151e141895650585e1597f3669263fcf",
+          "sourceText": "How stress affects your brain and how to reverse it",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "c3c2fe2050f6b62ec8fc8f08dd70befae9f172b49c10e6b3ac131d353ba4520a",
+          "sourceText": "Practical guide to the physiological sigh technique with HRV and heart rate data.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "b1bc19d1e4737f7d7264b971b43558001a5975a4f2385c59ebc6575ce195ee06",
+          "sourceText": "The Physiological Sigh: A 30-Second Breathing Exercise to Lower Stress",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "9047bc8d2c290940d58240b6eac1aa7f78c393615579d4092757b29d6d6ac9b0",
+          "sourceText": "Overview of side stitch causes and breathing techniques for prevention and treatment.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "11e238d9095755175ed4231e8b154dc49932f3b104327d4fca065e963305a9c0",
+          "sourceText": "Side Stitch While Running: Prevention & Treatment",
+          "status": "route-catalog-exact"
+        },
+        "references[4].summary": {
+          "sourceHash": "29580cd2184dbecf6d8144fc9690cc6dc1a341059b2d175fc6547e9aa2cf5817",
+          "sourceText": "Medical overview of exercise-related transient abdominal pain and breathing remedies.",
+          "status": "route-catalog-exact"
+        },
+        "references[4].title": {
+          "sourceHash": "e5d23ec623ce25ecce7d9f88bce51e5459d23af35f3f11f14662719fc13d59f9",
+          "sourceText": "Stitch When Running: How to Stop One, Prevention & More",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "c639d79d47d91f7038efd8ae488e79d207f81574613172beb0fe1fdd674898f4",
+          "sourceText": "Practice with the full-screen Physiological Sigh visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "29993a8642f6587bf1bc1163fd06a585a6655e70817d0c3622ef498a42457b44",
+          "sourceText": "Use the same rapid-calm technique before races to settle pre-competition nerves",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "ed573bfe10915cad735fad85ae131d6c7f263f4d7526ce4f5023a41cfcb9db50",
+          "sourceText": "Better sleep aids recovery. Try 4-7-8 breathing before bed after training days",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "3f593495e2326263cd27dcefae35f97e2f6bf38e51b5044633c3ebb9e1c313cf",
+          "sourceText": "Increase your lung capacity for longer, stronger runs.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "676b8ef5f9ae739ee1227d316ba9ba04582a07e14e88331d4483b218f89da8c7",
+          "sourceText": "The Respiratory Science",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "44d1f2d25791af07568dfd4c2098f8ceeef7db6e9dd4993d8a6612e03f5de360",
+          "sourceText": "During intense exercise, some of the 500 million tiny air sacs in your lungs collapse. The double inhale, especially the second 'top-up' breath, pops these alveoli open, immediately improving oxygen intake and CO₂ offload.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "7af6821dbe2be4c8e2728021a3fb7ed0b712614c5135e359b851709273f46c81",
+          "sourceText": "Alveoli Re-inflation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "bf03255445ae69a2956fa00bc9f861a80c3e71e997fefa66895711699bf700c6",
+          "sourceText": "Stanford research found that the physiological sigh brings heart rate down faster than box breathing or meditation. The long exhale is key. It activates the vagus nerve and triggers the parasympathetic 'rest and digest' response.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "ec170838d0d6b6bf181370d910823cf8037fc090897b9b77a171f631733aeda2",
+          "sourceText": "Rapid Heart Rate Reduction",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "38cabae477e319c40ece48a9e8771c095bc55f6278a3a2496d44301e7ab6c3cc",
+          "sourceText": "Nasal breathing can work well at easy intensity, but hard efforts demand more airflow. Mouth breathing is not failure — it is a normal response to higher carbon dioxide production and oxygen demand.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "be0620a12b2a7adb3ffbcf4673c12babe17223c68bcb1e9058cd17c48904cc36",
+          "sourceText": "Mouth vs nose breathing",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "2bc9e98d3962a07d0e4be1561683eebcc595b24fec9ea68feb9884493720c1a8",
+          "sourceText": "Stanford research found that the physiological sigh brings heart rate down faster than box breathing or meditation. The double inhale re-expands alveoli and the long exhale relaxes the diaphragm, which is why it works so well for side stitches and post-sprint recovery.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "c6fbbeb7dde75c15cb10f91c22735a9b0ee8409c26b2d67fd47b805833fb934c",
+          "sourceText": "Rapid reset after hard efforts",
+          "status": "repo-reviewed-manual"
+        },
+        "solution.content": {
+          "sourceHash": "ddd63d6eed60539597a014d1bd6a1769903459585fc06682408c8f1fa1c112ad",
+          "sourceText": "The physiological sigh is your body's natural reset mechanism. You do it involuntarily when you sob or when transitioning from sleep. The pattern is simple: two inhales through the nose (a big breath followed by a small 'top-up'), then one long exhale through the mouth. This technique, studied at Stanford by Dr. Andrew Huberman and colleagues, brings heart rate down faster than other breathing methods.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "dd5f85bc09e78986f72f0723cba7ec3276f83b1c1f34f4253229669b4bc4ef1e",
+          "sourceText": "The Physiological Sigh",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "7b2736485a50dce1410bf918b6c1a23b6c97735ed686a43d91c617b43e18ba3b",
+          "sourceText": "The double inhale serves a mechanical purpose: during hard exercise, tiny air sacs in your lungs (alveoli) can partially collapse, reducing oxygen uptake. The second 'sip' of air re-inflates these collapsed regions. The long exhale then activates the vagus nerve and shifts you out of the fight-or-flight state.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "a65fa23e2af0e59d72c8769f62af95efdd5d9fcb27287e447b76e93e3c5d140a",
+          "sourceText": "Breathe low into your belly, match your breath to your stride, and let mouth breathing happen naturally as pace rises. Use a 3:3 or 2:2 rhythm during steady running, then switch to a physiological sigh if a side stitch or post-sprint breathlessness hits.",
+          "status": "repo-reviewed-manual"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "3eb216d5746fafaea5414b131d1c6e98ebc7f6a158c3799b90b826263d61db90",
+          "sourceText": "How do you breathe while running?",
+          "status": "repo-reviewed-manual"
+        }
+      }
+    },
+    "ja-jp": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "6c547dfda626d88f9f390056cf7a14fc4e242b5128bf5c31a364435d24f1321a",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "fd75a0c1418a75fb7860da61b872c9881106748e5beac6d999f31ad4b09d2a60",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-lung-capacity-title": {
+          "sourceHash": "0cf688a2f16e61168d310058a1fb86e7699f9603d9dbed604bf9896c93e87ed9",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-public-speaking-title": {
+          "sourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "e86a295961ee650b75c8cffc4fc71af0c0ea6de82b803145e6ab0e51e15c8940",
+          "sourceText": "The best breathing technique for running depends on pace. For easy runs, low diaphragmatic breathing with a relaxed stride rhythm works best. For hard efforts, mouth breathing is normal. For side stitches or post-run recovery, the physiological sigh is the fastest reset because it quickly settles the diaphragm and heart rate.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[0].question": {
+          "sourceHash": "ee70d75d4391bb0a93abb4eea5a08e00a48c4e7750addd83c83d2d7c50864db2",
+          "sourceText": "What is the best breathing technique for running?",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "fb1986ed14e32bc7bb4ba6b526686a51f22cdf4d33677574a7ddd269e6ae641b",
+          "sourceText": "To stop a side stitch while running, slow down and do 1-3 physiological sighs: two quick nasal inhales followed by a long, slow exhale. The double inhale reinflates the lungs and the long exhale relaxes the diaphragm. Most runners feel relief within 30-60 seconds.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].question": {
+          "sourceHash": "580fd239f03099fd17802f883e1792d0315735900d5c07d36db48b9a79d920c9",
+          "sourceText": "How do you stop a side stitch while running?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "30c4b9fd8d1d44635dc8b69971d469db942a1a38ec81f3c01a30f15cbc1fcf6d",
+          "sourceText": "The double inhale is the key difference. Regular deep breaths don't re-inflate collapsed alveoli the way the second 'sip' of air does. The physiological sigh is your body's natural mechanism. You do it involuntarily when you sob or yawn. We're just using it deliberately.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].question": {
+          "sourceHash": "d5758ccc86a1fa3f60fa435718f0a6924df6286f29da44f59192f914cc6840f2",
+          "sourceText": "How is this different from just taking deep breaths?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "a8b3f9235deea255a6af39bf9d13dbaab57c335675fbd88c379360051210e357",
+          "sourceText": "During easy running, nasal breathing is ideal when possible: it filters air, produces nitric oxide, and promotes diaphragmatic breathing. During hard efforts, mouth breathing is natural and necessary. For the physiological sigh specifically, inhale through your nose and exhale through your mouth.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "46f069ecca83891d7ef915e2e4c06ac345eee3de145b5593fdd2f3ff96d19c68",
+          "sourceText": "Should I breathe through my nose or mouth while running?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "e98ecb98a02a9a4df8e72e56ac233bc4bb37c21e5df85ce3f4deed56f6a2a6e3",
+          "sourceText": "Yes. Practice low belly breathing during warm-ups, use stride-linked breathing on easy runs, and do short guided recovery breathing after hard sessions. Over time your breathing becomes quieter, more efficient, and easier to control when fatigue hits.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[4].question": {
+          "sourceHash": "7f9291333d24bf4bf6f38e658303b469bac70df313eb85097ca572441cc8049e",
+          "sourceText": "Can I train my breathing for running?",
+          "status": "repo-reviewed-manual"
+        },
+        "hero.intro": {
+          "sourceHash": "ff85532734e948d6d40db1200215fcecb7f42557f6b88479f6e2cccb9d4bde54",
+          "sourceText": "Breathing for running recovery and side stitches starts with the physiological sigh. You've just finished a hard sprint and you're bent over, hands on knees, panting heavily, but your breathing isn't helping. Or you're mid-run and a sharp side stitch stops you in your tracks. The physiological sigh, a double-inhale-long-exhale pattern, rapidly resets your respiratory system and brings your heart rate down faster than regular breathing.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "3b6d4a34bb14b2bb8a9dc6f747c2931e839d74218b1263faa07e4762faaa5d54",
+          "sourceText": "The physiological sigh technique for runners",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "1fb54d2b1733f17a0ac791891630eb446ddae518a008d3d8218698cecb2a383d",
+          "sourceText": "Recover Faster and Stop Side Stitches",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "1b88bcfb1d9b9d03c47be22d2d6bc05eb187b632a29a3c70f67bb7643a53b7b0",
+          "sourceText": "On easy runs, breathe low into your belly instead of lifting your chest and shoulders. Think about expanding your lower ribs and keeping your jaw loose.",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "7f32937fea8398b02c2d553a88f3a79ffc9cd4e93995a4283b205deef146683e",
+          "sourceText": "Start low and relaxed",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "da28b5f0aeb31a22f6c17f1102622fa5c2620ccb21edaf2655dbd4c40dc8f468",
+          "sourceText": "First 5-10 minutes",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "c6bd35e89245aa6a0ca7f5f7e2fcafdb70d105cf4bfcc0aeeb8413d15ba3aac2",
+          "sourceText": "For side stitches, slow to a walk. For post-run recovery, stop completely and stand or bend slightly with hands on hips, not on knees.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "7e188888696c492074ebab012d9a6a1c15b4eb6b46981b0ef64cd981f22ef5cf",
+          "sourceText": "Stop or slow down",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "eb5a88cac9bbc83980555fa71bf7c2630e7376edce16b0366dc5c3b4cdbe8d25",
+          "sourceText": "As needed",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "f0405e4b0cdae3cebf70d0e57386103e407f2e9417455a3a9c5212941a141c10",
+          "sourceText": "During intervals, hills, or race efforts, let mouth breathing happen naturally. The goal is enough airflow, not perfect nasal breathing under load.",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "9f2d60e6c29a6d9a27eee2cb7de56aea981a4d2ae6e11885da103179de15af7a",
+          "sourceText": "Open the mouth when pace rises",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "21191a3c17335a93d3ea844467c118d92b67c0f53e2dbc058a06f2a99054ca9e",
+          "sourceText": "During hard efforts",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "5cbd28118a5b2ae134c87353929c086069b9988eb3c5160db63d2c3832bbbb27",
+          "sourceText": "Without exhaling, take a second, shorter sip of air through your nose. This pops open collapsed air sacs. Don't force it, just a gentle top-up.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "cc777d6bb0a09d18a12a96efc0cb534e1a24046745b461a465418bc7a2b14291",
+          "sourceText": "Second 'top-up' inhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "e44edcb41e75c6cf813bd2ea0bf651ef68a5e1a2ab90e5fb31c8998e5bb087e8",
+          "sourceText": "~1-2 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "b2214170473966befa8e20c0088706c7d3a88d38cdb54f9d342c221178d75b36",
+          "sourceText": "After a hard effort, keep walking and use 3-5 physiological sighs or a minute of slow guided breathing until your heart rate and breathing settle.",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "82bdd2e04d334462f941799b694a6d3392b93c63ec82f34db365f6cdbf28514c",
+          "sourceText": "Recover with 60-120 seconds of guided breathing",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "1c3bb852ca632da174943b232d1b4f46d60c4a8ff639e31a96b408bc6ad29753",
+          "sourceText": "1-2 minutes post-effort",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "cfcafe7ed3be3495c4c203ca8377d2ff9411c73ba72ac2f38ab96fef335e99b5",
+          "sourceText": "Practice low belly breathing during warm-ups so it feels automatic later",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "da4fd66adc1f02200e82f391f9298686e547b1b1645f38ddab1c9433ca198ba3",
+          "sourceText": "For side stitches, try pressing on the painful spot while exhaling",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "fa7eb5de3b42b20e6f9549d1ffed6bb5ddb93782833588200a12bcad7025b360",
+          "sourceText": "Standing upright or with a slight forward lean helps. Don't hunch over",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "7e2f604370ccc35cf5f0a12468baf2caa32f335e3a96657533af6a8d09cde2ae",
+          "sourceText": "The exhale is the most important part. Make it slow and complete",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "79b55b4059bd6b4b5b75ee496aaf3bd6da1e7df80b1aaa2c552a3f6c892d54cb",
+          "sourceText": "Side stitch ruining your run? Stop pain in 30 seconds and recover 2x faster with the physiological sigh. Stanford-tested breathing for runners. Try now.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "012105870c0d5776b6e066b34d0e706d4cf41c9afdbff04aaf8c4f604d0f1d3c",
+          "sourceText": "Stanford-tested double-inhale breathing stops side stitches in 30 seconds and speeds recovery 2x. Free timer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "bf7457d5ee38c477ff6e058fcf492c138bbf694cb0a31b42ac8fe91f16ca063f",
+          "sourceText": "Stop Side Stitches in 30 Seconds - Free Running Timer",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "db6b2fdcec81448099d16006f3ed95852fed8512eeec4fe713befb65aafd3d3f",
+          "sourceText": "Stop Side Stitches in 30 Seconds + Recover 2x Faster (Free Timer) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "012105870c0d5776b6e066b34d0e706d4cf41c9afdbff04aaf8c4f604d0f1d3c",
+          "sourceText": "Stanford-tested physiological sigh stops side stitches instantly and speeds recovery 2x. Try now.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "18eb764c105f42136929c96c74f9b05a473e9d81b169a961b837ed97a51bfeff",
+          "sourceText": "Stop Side Stitches in 30 Seconds - Free Timer",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "e1389e9e1edc0f2f7f3db782eb6825a9c0864bb157e59d2ff4849d6991613220",
+          "sourceText": "After intense effort, your instinct is to gasp for air with rapid, shallow breaths. But this often makes things worse. You're not efficiently exchanging gases, and the frantic breathing pattern keeps your stress response elevated. During runs, side stitches (technically called exercise-related transient abdominal pain) can strike suddenly, caused by diaphragm spasm or strain from the bouncing of internal organs.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "98653e8f03756e618fc442416c64af74e8f1bedffd372097819b9783d6441b6f",
+          "sourceText": "When Heavy Panting Doesn't Work",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "b0a786974289baa9fc52057ae6d5f9379073239251da4bc4bdf316de40bf514e",
+          "sourceText": "Breathing high into the chest instead of low into the belly",
+          "status": "repo-reviewed-manual"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "a05de615fd1f6700112ae7d6d5986f805b6886a010e89d5460234c750a193df7",
+          "sourceText": "Heavy panting that doesn't settle after a hard effort",
+          "status": "repo-reviewed-manual"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "bd78cc31cffa45f0fa3afffaa841e44cfbe14dca1371aad6622a61c0c4a1348e",
+          "sourceText": "Heart rate staying elevated long after stopping",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "12e240f730bde0b748aa61707b845b35b808e3207a9b0ed55eba00a690fec2f7",
+          "sourceText": "Sharp, stabbing side stitch pain during running",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "e5d684108d5e1bd72fadb9a6f6448d137bb31bc6c6e0f91a21837c471f43241b",
+          "sourceText": "Feeling out of rhythm with your stride or cadence",
+          "status": "repo-reviewed-manual"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "7002219d303da1cf0500dbbb493cf28b83bee5f30886ba8b5c7bc78c451ed67e",
+          "sourceText": "Feeling like you can't get a satisfying breath",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "e4d2d53a4d892c24d74f9926fad31f546eddcf3e4c867f09f24d7fdd54049f09",
+          "sourceText": "Stanford study showing cyclic sighing (physiological sigh) outperformed other breathing techniques and meditation for stress reduction and mood improvement.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "2dfc5c3bdc39bc5a5a2adf200c87c1ada83ffdcbc3a1e08638d6a9c1522b0ce8",
+          "sourceText": "Brief structured respiration practices enhance mood and reduce physiological arousal",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "0c018bd15ca3a459667b06d3331f1f8aa1279ea5e771475fb3322038405f83d6",
+          "sourceText": "Dr. Andrew Huberman explains the neuroscience of stress and how physiological sighing works as a real-time intervention.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "b282db437e7bb98f8998cd81816545b6151e141895650585e1597f3669263fcf",
+          "sourceText": "How stress affects your brain and how to reverse it",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "c3c2fe2050f6b62ec8fc8f08dd70befae9f172b49c10e6b3ac131d353ba4520a",
+          "sourceText": "Practical guide to the physiological sigh technique with HRV and heart rate data.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "b1bc19d1e4737f7d7264b971b43558001a5975a4f2385c59ebc6575ce195ee06",
+          "sourceText": "The Physiological Sigh: A 30-Second Breathing Exercise to Lower Stress",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "9047bc8d2c290940d58240b6eac1aa7f78c393615579d4092757b29d6d6ac9b0",
+          "sourceText": "Overview of side stitch causes and breathing techniques for prevention and treatment.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "11e238d9095755175ed4231e8b154dc49932f3b104327d4fca065e963305a9c0",
+          "sourceText": "Side Stitch While Running: Prevention & Treatment",
+          "status": "route-catalog-exact"
+        },
+        "references[4].summary": {
+          "sourceHash": "29580cd2184dbecf6d8144fc9690cc6dc1a341059b2d175fc6547e9aa2cf5817",
+          "sourceText": "Medical overview of exercise-related transient abdominal pain and breathing remedies.",
+          "status": "route-catalog-exact"
+        },
+        "references[4].title": {
+          "sourceHash": "e5d23ec623ce25ecce7d9f88bce51e5459d23af35f3f11f14662719fc13d59f9",
+          "sourceText": "Stitch When Running: How to Stop One, Prevention & More",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "c639d79d47d91f7038efd8ae488e79d207f81574613172beb0fe1fdd674898f4",
+          "sourceText": "Practice with the full-screen Physiological Sigh visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "29993a8642f6587bf1bc1163fd06a585a6655e70817d0c3622ef498a42457b44",
+          "sourceText": "Use the same rapid-calm technique before races to settle pre-competition nerves",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "ed573bfe10915cad735fad85ae131d6c7f263f4d7526ce4f5023a41cfcb9db50",
+          "sourceText": "Better sleep aids recovery. Try 4-7-8 breathing before bed after training days",
+          "status": "repo-reviewed-replacement"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "3f593495e2326263cd27dcefae35f97e2f6bf38e51b5044633c3ebb9e1c313cf",
+          "sourceText": "Increase your lung capacity for longer, stronger runs.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "676b8ef5f9ae739ee1227d316ba9ba04582a07e14e88331d4483b218f89da8c7",
+          "sourceText": "The Respiratory Science",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "44d1f2d25791af07568dfd4c2098f8ceeef7db6e9dd4993d8a6612e03f5de360",
+          "sourceText": "During intense exercise, some of the 500 million tiny air sacs in your lungs collapse. The double inhale, especially the second 'top-up' breath, pops these alveoli open, immediately improving oxygen intake and CO₂ offload.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "7af6821dbe2be4c8e2728021a3fb7ed0b712614c5135e359b851709273f46c81",
+          "sourceText": "Alveoli Re-inflation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "bf03255445ae69a2956fa00bc9f861a80c3e71e997fefa66895711699bf700c6",
+          "sourceText": "Stanford research found that the physiological sigh brings heart rate down faster than box breathing or meditation. The long exhale is key. It activates the vagus nerve and triggers the parasympathetic 'rest and digest' response.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "ec170838d0d6b6bf181370d910823cf8037fc090897b9b77a171f631733aeda2",
+          "sourceText": "Rapid Heart Rate Reduction",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "38cabae477e319c40ece48a9e8771c095bc55f6278a3a2496d44301e7ab6c3cc",
+          "sourceText": "Nasal breathing can work well at easy intensity, but hard efforts demand more airflow. Mouth breathing is not failure — it is a normal response to higher carbon dioxide production and oxygen demand.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "be0620a12b2a7adb3ffbcf4673c12babe17223c68bcb1e9058cd17c48904cc36",
+          "sourceText": "Mouth vs nose breathing",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "2bc9e98d3962a07d0e4be1561683eebcc595b24fec9ea68feb9884493720c1a8",
+          "sourceText": "Stanford research found that the physiological sigh brings heart rate down faster than box breathing or meditation. The double inhale re-expands alveoli and the long exhale relaxes the diaphragm, which is why it works so well for side stitches and post-sprint recovery.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "c6fbbeb7dde75c15cb10f91c22735a9b0ee8409c26b2d67fd47b805833fb934c",
+          "sourceText": "Rapid reset after hard efforts",
+          "status": "repo-reviewed-manual"
+        },
+        "solution.content": {
+          "sourceHash": "ddd63d6eed60539597a014d1bd6a1769903459585fc06682408c8f1fa1c112ad",
+          "sourceText": "The physiological sigh is your body's natural reset mechanism. You do it involuntarily when you sob or when transitioning from sleep. The pattern is simple: two inhales through the nose (a big breath followed by a small 'top-up'), then one long exhale through the mouth. This technique, studied at Stanford by Dr. Andrew Huberman and colleagues, brings heart rate down faster than other breathing methods.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "dd5f85bc09e78986f72f0723cba7ec3276f83b1c1f34f4253229669b4bc4ef1e",
+          "sourceText": "The Physiological Sigh",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "7b2736485a50dce1410bf918b6c1a23b6c97735ed686a43d91c617b43e18ba3b",
+          "sourceText": "The double inhale serves a mechanical purpose: during hard exercise, tiny air sacs in your lungs (alveoli) can partially collapse, reducing oxygen uptake. The second 'sip' of air re-inflates these collapsed regions. The long exhale then activates the vagus nerve and shifts you out of the fight-or-flight state.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "a65fa23e2af0e59d72c8769f62af95efdd5d9fcb27287e447b76e93e3c5d140a",
+          "sourceText": "Breathe low into your belly, match your breath to your stride, and let mouth breathing happen naturally as pace rises. Use a 3:3 or 2:2 rhythm during steady running, then switch to a physiological sigh if a side stitch or post-sprint breathlessness hits.",
+          "status": "repo-reviewed-manual"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "3eb216d5746fafaea5414b131d1c6e98ebc7f6a158c3799b90b826263d61db90",
+          "sourceText": "How do you breathe while running?",
+          "status": "repo-reviewed-manual"
+        }
+      }
+    },
+    "pt-br": {
+      "chrome": {
+        "chrome.shared.brand-eyebrow": {
+          "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.breadcrumb-home": {
+          "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-last-updated": {
+          "sourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.date-reviewed-by": {
+          "sourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.five-minutes": {
+          "sourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about": {
+          "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-about-abi": {
+          "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-app": {
+          "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-embed": {
+          "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-guides": {
+          "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-privacy": {
+          "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.footer-techniques": {
+          "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.one-minute": {
+          "sourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions": {
+          "sourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.quick-sessions-description": {
+          "sourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.safety-warning": {
+          "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.share-exercise": {
+          "sourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.shared.two-minutes": {
+          "sourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.box-breathing-name": {
+          "sourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f",
+          "status": "global-catalog-exact"
+        },
+        "chrome.use-case.breadcrumb-use-cases": {
+          "sourceHash": "b697dd6a71d927892f7e03c35f8e6e7e7ab4b70e61b73aad74e0cd598a02aefe",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-questions": {
+          "sourceHash": "dfbe4d437b5951474967577817573677443d81e1f04942cc09e806e1364a5205",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.common-symptoms": {
+          "sourceHash": "02bc3ddcf0e4580d36cb872f28901ae84c9023729b6f25ce14b9ddd6bf40177a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.faq": {
+          "sourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.go-to-visualizer": {
+          "sourceHash": "c5a2a9a83298af20d94aa621d05500e2ad897fd8941f50b42eced15e6e8a0c45",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.hero-share-text": {
+          "sourceHash": "6c547dfda626d88f9f390056cf7a14fc4e242b5128bf5c31a364435d24f1321a",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.how-to-practice": {
+          "sourceHash": "c32a172f3abfbebe58c12e49c28eaf3fda995da925d71de0b45e5f2e0bfd1772",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.important": {
+          "sourceHash": "ddca9a57e6760d266f27063c26072c168671f416b9b11762895fce04be4d98b5",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.in-depth-guides": {
+          "sourceHash": "afd2a13a98ecda0caa91d6c9ae89516e6fff1c28b43ff9167f19e4925d4adedc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.learn-box-breathing": {
+          "sourceHash": "fd75a0c1418a75fb7860da61b872c9881106748e5beac6d999f31ad4b09d2a60",
+          "status": "repo-reviewed-manual"
+        },
+        "chrome.use-case.learn-more-action": {
+          "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.more-guides": {
+          "sourceHash": "3289ec999a37817f32d6315b8599bb9a0ba1fed2a575034e2c9040aa5f41a879",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.pro-tips": {
+          "sourceHash": "1843a4b0cf74f4a0e43a624d79d035c7aa2f6930b34495af4bf58842a703d9cc",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.problem": {
+          "sourceHash": "7569ea8da8a6a397ab7a5619ec9b19045491c6985f9474ad61db9b680b57915a",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.read-guide-action": {
+          "sourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.ready-to-practice": {
+          "sourceHash": "fb02e48565af6a4a739185e60956901a9afeecc39f089130bad3381efec1ea35",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.related-lung-capacity-title": {
+          "sourceHash": "0cf688a2f16e61168d310058a1fb86e7699f9603d9dbed604bf9896c93e87ed9",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-public-speaking-title": {
+          "sourceHash": "68de1a51004c177ff15b36df0ce106d616053ffbafded5bc1fda0592a54e3214",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.related-sleep-title": {
+          "sourceHash": "f15de212053dc76070fd4ba0fc12085b8a7148d27327e6748a64532003a702f8",
+          "status": "route-catalog-exact"
+        },
+        "chrome.use-case.research-references": {
+          "sourceHash": "d1730ba8bbddc15cd8706fa6d2ed490dc682edd905febbe6910af9b29a6cbbd6",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.scientific-sources": {
+          "sourceHash": "b3ba3257d37000fcfcecf0f3d5b960e423da9d3dbab15447a2a68f0b92f777a7",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.share-with-someone": {
+          "sourceHash": "ff5b5b65d1d547a06c015dad05e243a4624e53ad23a43711cd4acd223b4161a3",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.solution": {
+          "sourceHash": "d49ec683c00e9d1e8d30481a1715541437ad46a65087bbfeb644506f5016c65e",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-practicing": {
+          "sourceHash": "87cf28993fb75492403573706bc3e24218ccb26f5e3f76cede4590dddbb00c28",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.start-session": {
+          "sourceHash": "36f91424adb69256d57510ffdd3a938b468a18931762d4002ea02ff8418496f1",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.step-by-step": {
+          "sourceHash": "5ca883474aa6e2bf1388b567ab035f075d9397efc01b085dd2dcd65837448f9b",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.visualizer-description": {
+          "sourceHash": "0f458505efdbaee912f5cbb4c5ce7a60319b97b0e6bd7b72eda4235d0ea72efa",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-it-works": {
+          "sourceHash": "52715e519721f31b5d6f86e7287a523673616c233acf454b2236a965bfdb5861",
+          "status": "shared-proof-preserved"
+        },
+        "chrome.use-case.why-this-technique": {
+          "sourceHash": "502de3ec1d078d8ef7e5695fb3006874eb1b62b34520caec54f45a027243d7ff",
+          "status": "shared-proof-preserved"
+        }
+      },
+      "content": {
+        "faqs[0].answer": {
+          "sourceHash": "e86a295961ee650b75c8cffc4fc71af0c0ea6de82b803145e6ab0e51e15c8940",
+          "sourceText": "The best breathing technique for running depends on pace. For easy runs, low diaphragmatic breathing with a relaxed stride rhythm works best. For hard efforts, mouth breathing is normal. For side stitches or post-run recovery, the physiological sigh is the fastest reset because it quickly settles the diaphragm and heart rate.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[0].question": {
+          "sourceHash": "ee70d75d4391bb0a93abb4eea5a08e00a48c4e7750addd83c83d2d7c50864db2",
+          "sourceText": "What is the best breathing technique for running?",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[1].answer": {
+          "sourceHash": "fb1986ed14e32bc7bb4ba6b526686a51f22cdf4d33677574a7ddd269e6ae641b",
+          "sourceText": "To stop a side stitch while running, slow down and do 1-3 physiological sighs: two quick nasal inhales followed by a long, slow exhale. The double inhale reinflates the lungs and the long exhale relaxes the diaphragm. Most runners feel relief within 30-60 seconds.",
+          "status": "route-catalog-exact"
+        },
+        "faqs[1].question": {
+          "sourceHash": "580fd239f03099fd17802f883e1792d0315735900d5c07d36db48b9a79d920c9",
+          "sourceText": "How do you stop a side stitch while running?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[2].answer": {
+          "sourceHash": "30c4b9fd8d1d44635dc8b69971d469db942a1a38ec81f3c01a30f15cbc1fcf6d",
+          "sourceText": "The double inhale is the key difference. Regular deep breaths don't re-inflate collapsed alveoli the way the second 'sip' of air does. The physiological sigh is your body's natural mechanism. You do it involuntarily when you sob or yawn. We're just using it deliberately.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[2].question": {
+          "sourceHash": "d5758ccc86a1fa3f60fa435718f0a6924df6286f29da44f59192f914cc6840f2",
+          "sourceText": "How is this different from just taking deep breaths?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[3].answer": {
+          "sourceHash": "a8b3f9235deea255a6af39bf9d13dbaab57c335675fbd88c379360051210e357",
+          "sourceText": "During easy running, nasal breathing is ideal when possible: it filters air, produces nitric oxide, and promotes diaphragmatic breathing. During hard efforts, mouth breathing is natural and necessary. For the physiological sigh specifically, inhale through your nose and exhale through your mouth.",
+          "status": "route-catalog-normalized"
+        },
+        "faqs[3].question": {
+          "sourceHash": "46f069ecca83891d7ef915e2e4c06ac345eee3de145b5593fdd2f3ff96d19c68",
+          "sourceText": "Should I breathe through my nose or mouth while running?",
+          "status": "route-catalog-exact"
+        },
+        "faqs[4].answer": {
+          "sourceHash": "e98ecb98a02a9a4df8e72e56ac233bc4bb37c21e5df85ce3f4deed56f6a2a6e3",
+          "sourceText": "Yes. Practice low belly breathing during warm-ups, use stride-linked breathing on easy runs, and do short guided recovery breathing after hard sessions. Over time your breathing becomes quieter, more efficient, and easier to control when fatigue hits.",
+          "status": "repo-reviewed-manual"
+        },
+        "faqs[4].question": {
+          "sourceHash": "7f9291333d24bf4bf6f38e658303b469bac70df313eb85097ca572441cc8049e",
+          "sourceText": "Can I train my breathing for running?",
+          "status": "repo-reviewed-manual"
+        },
+        "hero.intro": {
+          "sourceHash": "ff85532734e948d6d40db1200215fcecb7f42557f6b88479f6e2cccb9d4bde54",
+          "sourceText": "Breathing for running recovery and side stitches starts with the physiological sigh. You've just finished a hard sprint and you're bent over, hands on knees, panting heavily, but your breathing isn't helping. Or you're mid-run and a sharp side stitch stops you in your tracks. The physiological sigh, a double-inhale-long-exhale pattern, rapidly resets your respiratory system and brings your heart rate down faster than regular breathing.",
+          "status": "route-catalog-normalized"
+        },
+        "hero.subtitle": {
+          "sourceHash": "3b6d4a34bb14b2bb8a9dc6f747c2931e839d74218b1263faa07e4762faaa5d54",
+          "sourceText": "The physiological sigh technique for runners",
+          "status": "route-catalog-exact"
+        },
+        "hero.title": {
+          "sourceHash": "1fb54d2b1733f17a0ac791891630eb446ddae518a008d3d8218698cecb2a383d",
+          "sourceText": "Recover Faster and Stop Side Stitches",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[0].instruction": {
+          "sourceHash": "1b88bcfb1d9b9d03c47be22d2d6bc05eb187b632a29a3c70f67bb7643a53b7b0",
+          "sourceText": "On easy runs, breathe low into your belly instead of lifting your chest and shoulders. Think about expanding your lower ribs and keeping your jaw loose.",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[0].name": {
+          "sourceHash": "7f32937fea8398b02c2d553a88f3a79ffc9cd4e93995a4283b205deef146683e",
+          "sourceText": "Start low and relaxed",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[0].timing": {
+          "sourceHash": "da28b5f0aeb31a22f6c17f1102622fa5c2620ccb21edaf2655dbd4c40dc8f468",
+          "sourceText": "First 5-10 minutes",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[1].instruction": {
+          "sourceHash": "c6bd35e89245aa6a0ca7f5f7e2fcafdb70d105cf4bfcc0aeeb8413d15ba3aac2",
+          "sourceText": "For side stitches, slow to a walk. For post-run recovery, stop completely and stand or bend slightly with hands on hips, not on knees.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[1].name": {
+          "sourceHash": "7e188888696c492074ebab012d9a6a1c15b4eb6b46981b0ef64cd981f22ef5cf",
+          "sourceText": "Stop or slow down",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[1].timing": {
+          "sourceHash": "eb5a88cac9bbc83980555fa71bf7c2630e7376edce16b0366dc5c3b4cdbe8d25",
+          "sourceText": "As needed",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[2].instruction": {
+          "sourceHash": "f0405e4b0cdae3cebf70d0e57386103e407f2e9417455a3a9c5212941a141c10",
+          "sourceText": "During intervals, hills, or race efforts, let mouth breathing happen naturally. The goal is enough airflow, not perfect nasal breathing under load.",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[2].name": {
+          "sourceHash": "9f2d60e6c29a6d9a27eee2cb7de56aea981a4d2ae6e11885da103179de15af7a",
+          "sourceText": "Open the mouth when pace rises",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[2].timing": {
+          "sourceHash": "21191a3c17335a93d3ea844467c118d92b67c0f53e2dbc058a06f2a99054ca9e",
+          "sourceText": "During hard efforts",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[3].instruction": {
+          "sourceHash": "5cbd28118a5b2ae134c87353929c086069b9988eb3c5160db63d2c3832bbbb27",
+          "sourceText": "Without exhaling, take a second, shorter sip of air through your nose. This pops open collapsed air sacs. Don't force it, just a gentle top-up.",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.steps[3].name": {
+          "sourceHash": "cc777d6bb0a09d18a12a96efc0cb534e1a24046745b461a465418bc7a2b14291",
+          "sourceText": "Second 'top-up' inhale",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[3].timing": {
+          "sourceHash": "e44edcb41e75c6cf813bd2ea0bf651ef68a5e1a2ab90e5fb31c8998e5bb087e8",
+          "sourceText": "~1-2 seconds",
+          "status": "route-catalog-exact"
+        },
+        "howTo.steps[4].instruction": {
+          "sourceHash": "b2214170473966befa8e20c0088706c7d3a88d38cdb54f9d342c221178d75b36",
+          "sourceText": "After a hard effort, keep walking and use 3-5 physiological sighs or a minute of slow guided breathing until your heart rate and breathing settle.",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[4].name": {
+          "sourceHash": "82bdd2e04d334462f941799b694a6d3392b93c63ec82f34db365f6cdbf28514c",
+          "sourceText": "Recover with 60-120 seconds of guided breathing",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.steps[4].timing": {
+          "sourceHash": "1c3bb852ca632da174943b232d1b4f46d60c4a8ff639e31a96b408bc6ad29753",
+          "sourceText": "1-2 minutes post-effort",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.tips[0]": {
+          "sourceHash": "cfcafe7ed3be3495c4c203ca8377d2ff9411c73ba72ac2f38ab96fef335e99b5",
+          "sourceText": "Practice low belly breathing during warm-ups so it feels automatic later",
+          "status": "repo-reviewed-manual"
+        },
+        "howTo.tips[1]": {
+          "sourceHash": "da4fd66adc1f02200e82f391f9298686e547b1b1645f38ddab1c9433ca198ba3",
+          "sourceText": "For side stitches, try pressing on the painful spot while exhaling",
+          "status": "route-catalog-exact"
+        },
+        "howTo.tips[2]": {
+          "sourceHash": "fa7eb5de3b42b20e6f9549d1ffed6bb5ddb93782833588200a12bcad7025b360",
+          "sourceText": "Standing upright or with a slight forward lean helps. Don't hunch over",
+          "status": "route-catalog-normalized"
+        },
+        "howTo.tips[3]": {
+          "sourceHash": "7e2f604370ccc35cf5f0a12468baf2caa32f335e3a96657533af6a8d09cde2ae",
+          "sourceText": "The exhale is the most important part. Make it slow and complete",
+          "status": "route-catalog-exact"
+        },
+        "meta.description": {
+          "sourceHash": "79b55b4059bd6b4b5b75ee496aaf3bd6da1e7df80b1aaa2c552a3f6c892d54cb",
+          "sourceText": "Side stitch ruining your run? Stop pain in 30 seconds and recover 2x faster with the physiological sigh. Stanford-tested breathing for runners. Try now.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogDescription": {
+          "sourceHash": "012105870c0d5776b6e066b34d0e706d4cf41c9afdbff04aaf8c4f604d0f1d3c",
+          "sourceText": "Stanford-tested double-inhale breathing stops side stitches in 30 seconds and speeds recovery 2x. Free timer.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.ogTitle": {
+          "sourceHash": "bf7457d5ee38c477ff6e058fcf492c138bbf694cb0a31b42ac8fe91f16ca063f",
+          "sourceText": "Stop Side Stitches in 30 Seconds - Free Running Timer",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.title": {
+          "sourceHash": "db6b2fdcec81448099d16006f3ed95852fed8512eeec4fe713befb65aafd3d3f",
+          "sourceText": "Stop Side Stitches in 30 Seconds + Recover 2x Faster (Free Timer) | Deep Breathing Exercises",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterDescription": {
+          "sourceHash": "012105870c0d5776b6e066b34d0e706d4cf41c9afdbff04aaf8c4f604d0f1d3c",
+          "sourceText": "Stanford-tested physiological sigh stops side stitches instantly and speeds recovery 2x. Try now.",
+          "status": "route-catalog-head-occurrence"
+        },
+        "meta.twitterTitle": {
+          "sourceHash": "18eb764c105f42136929c96c74f9b05a473e9d81b169a961b837ed97a51bfeff",
+          "sourceText": "Stop Side Stitches in 30 Seconds - Free Timer",
+          "status": "route-catalog-head-occurrence"
+        },
+        "problem.content": {
+          "sourceHash": "e1389e9e1edc0f2f7f3db782eb6825a9c0864bb157e59d2ff4849d6991613220",
+          "sourceText": "After intense effort, your instinct is to gasp for air with rapid, shallow breaths. But this often makes things worse. You're not efficiently exchanging gases, and the frantic breathing pattern keeps your stress response elevated. During runs, side stitches (technically called exercise-related transient abdominal pain) can strike suddenly, caused by diaphragm spasm or strain from the bouncing of internal organs.",
+          "status": "route-catalog-normalized"
+        },
+        "problem.heading": {
+          "sourceHash": "98653e8f03756e618fc442416c64af74e8f1bedffd372097819b9783d6441b6f",
+          "sourceText": "When Heavy Panting Doesn't Work",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[0]": {
+          "sourceHash": "b0a786974289baa9fc52057ae6d5f9379073239251da4bc4bdf316de40bf514e",
+          "sourceText": "Breathing high into the chest instead of low into the belly",
+          "status": "repo-reviewed-manual"
+        },
+        "problem.symptoms[1]": {
+          "sourceHash": "a05de615fd1f6700112ae7d6d5986f805b6886a010e89d5460234c750a193df7",
+          "sourceText": "Heavy panting that doesn't settle after a hard effort",
+          "status": "repo-reviewed-manual"
+        },
+        "problem.symptoms[2]": {
+          "sourceHash": "bd78cc31cffa45f0fa3afffaa841e44cfbe14dca1371aad6622a61c0c4a1348e",
+          "sourceText": "Heart rate staying elevated long after stopping",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[3]": {
+          "sourceHash": "12e240f730bde0b748aa61707b845b35b808e3207a9b0ed55eba00a690fec2f7",
+          "sourceText": "Sharp, stabbing side stitch pain during running",
+          "status": "route-catalog-exact"
+        },
+        "problem.symptoms[4]": {
+          "sourceHash": "e5d684108d5e1bd72fadb9a6f6448d137bb31bc6c6e0f91a21837c471f43241b",
+          "sourceText": "Feeling out of rhythm with your stride or cadence",
+          "status": "repo-reviewed-manual"
+        },
+        "problem.symptoms[5]": {
+          "sourceHash": "7002219d303da1cf0500dbbb493cf28b83bee5f30886ba8b5c7bc78c451ed67e",
+          "sourceText": "Feeling like you can't get a satisfying breath",
+          "status": "route-catalog-exact"
+        },
+        "references[0].summary": {
+          "sourceHash": "e4d2d53a4d892c24d74f9926fad31f546eddcf3e4c867f09f24d7fdd54049f09",
+          "sourceText": "Stanford study showing cyclic sighing (physiological sigh) outperformed other breathing techniques and meditation for stress reduction and mood improvement.",
+          "status": "route-catalog-exact"
+        },
+        "references[0].title": {
+          "sourceHash": "2dfc5c3bdc39bc5a5a2adf200c87c1ada83ffdcbc3a1e08638d6a9c1522b0ce8",
+          "sourceText": "Brief structured respiration practices enhance mood and reduce physiological arousal",
+          "status": "route-catalog-exact"
+        },
+        "references[1].summary": {
+          "sourceHash": "0c018bd15ca3a459667b06d3331f1f8aa1279ea5e771475fb3322038405f83d6",
+          "sourceText": "Dr. Andrew Huberman explains the neuroscience of stress and how physiological sighing works as a real-time intervention.",
+          "status": "route-catalog-exact"
+        },
+        "references[1].title": {
+          "sourceHash": "b282db437e7bb98f8998cd81816545b6151e141895650585e1597f3669263fcf",
+          "sourceText": "How stress affects your brain and how to reverse it",
+          "status": "route-catalog-exact"
+        },
+        "references[2].summary": {
+          "sourceHash": "c3c2fe2050f6b62ec8fc8f08dd70befae9f172b49c10e6b3ac131d353ba4520a",
+          "sourceText": "Practical guide to the physiological sigh technique with HRV and heart rate data.",
+          "status": "route-catalog-exact"
+        },
+        "references[2].title": {
+          "sourceHash": "b1bc19d1e4737f7d7264b971b43558001a5975a4f2385c59ebc6575ce195ee06",
+          "sourceText": "The Physiological Sigh: A 30-Second Breathing Exercise to Lower Stress",
+          "status": "route-catalog-exact"
+        },
+        "references[3].summary": {
+          "sourceHash": "9047bc8d2c290940d58240b6eac1aa7f78c393615579d4092757b29d6d6ac9b0",
+          "sourceText": "Overview of side stitch causes and breathing techniques for prevention and treatment.",
+          "status": "route-catalog-exact"
+        },
+        "references[3].title": {
+          "sourceHash": "11e238d9095755175ed4231e8b154dc49932f3b104327d4fca065e963305a9c0",
+          "sourceText": "Side Stitch While Running: Prevention & Treatment",
+          "status": "route-catalog-exact"
+        },
+        "references[4].summary": {
+          "sourceHash": "29580cd2184dbecf6d8144fc9690cc6dc1a341059b2d175fc6547e9aa2cf5817",
+          "sourceText": "Medical overview of exercise-related transient abdominal pain and breathing remedies.",
+          "status": "route-catalog-exact"
+        },
+        "references[4].title": {
+          "sourceHash": "e5d23ec623ce25ecce7d9f88bce51e5459d23af35f3f11f14662719fc13d59f9",
+          "sourceText": "Stitch When Running: How to Stop One, Prevention & More",
+          "status": "route-catalog-exact"
+        },
+        "relatedTechnique.callToAction": {
+          "sourceHash": "c639d79d47d91f7038efd8ae488e79d207f81574613172beb0fe1fdd674898f4",
+          "sourceText": "Practice with the full-screen Physiological Sigh visualizer",
+          "status": "repo-reviewed-manual"
+        },
+        "relatedUseCases[0].teaser": {
+          "sourceHash": "29993a8642f6587bf1bc1163fd06a585a6655e70817d0c3622ef498a42457b44",
+          "sourceText": "Use the same rapid-calm technique before races to settle pre-competition nerves",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[1].teaser": {
+          "sourceHash": "ed573bfe10915cad735fad85ae131d6c7f263f4d7526ce4f5023a41cfcb9db50",
+          "sourceText": "Better sleep aids recovery. Try 4-7-8 breathing before bed after training days",
+          "status": "route-catalog-exact"
+        },
+        "relatedUseCases[2].teaser": {
+          "sourceHash": "3f593495e2326263cd27dcefae35f97e2f6bf38e51b5044633c3ebb9e1c313cf",
+          "sourceText": "Increase your lung capacity for longer, stronger runs.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.heading": {
+          "sourceHash": "676b8ef5f9ae739ee1227d316ba9ba04582a07e14e88331d4483b218f89da8c7",
+          "sourceText": "The Respiratory Science",
+          "status": "route-catalog-exact"
+        },
+        "science.points[0].explanation": {
+          "sourceHash": "44d1f2d25791af07568dfd4c2098f8ceeef7db6e9dd4993d8a6612e03f5de360",
+          "sourceText": "During intense exercise, some of the 500 million tiny air sacs in your lungs collapse. The double inhale, especially the second 'top-up' breath, pops these alveoli open, immediately improving oxygen intake and CO₂ offload.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[0].mechanism": {
+          "sourceHash": "7af6821dbe2be4c8e2728021a3fb7ed0b712614c5135e359b851709273f46c81",
+          "sourceText": "Alveoli Re-inflation",
+          "status": "route-catalog-exact"
+        },
+        "science.points[1].explanation": {
+          "sourceHash": "bf03255445ae69a2956fa00bc9f861a80c3e71e997fefa66895711699bf700c6",
+          "sourceText": "Stanford research found that the physiological sigh brings heart rate down faster than box breathing or meditation. The long exhale is key. It activates the vagus nerve and triggers the parasympathetic 'rest and digest' response.",
+          "status": "route-catalog-normalized"
+        },
+        "science.points[1].mechanism": {
+          "sourceHash": "ec170838d0d6b6bf181370d910823cf8037fc090897b9b77a171f631733aeda2",
+          "sourceText": "Rapid Heart Rate Reduction",
+          "status": "route-catalog-exact"
+        },
+        "science.points[2].explanation": {
+          "sourceHash": "38cabae477e319c40ece48a9e8771c095bc55f6278a3a2496d44301e7ab6c3cc",
+          "sourceText": "Nasal breathing can work well at easy intensity, but hard efforts demand more airflow. Mouth breathing is not failure — it is a normal response to higher carbon dioxide production and oxygen demand.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[2].mechanism": {
+          "sourceHash": "be0620a12b2a7adb3ffbcf4673c12babe17223c68bcb1e9058cd17c48904cc36",
+          "sourceText": "Mouth vs nose breathing",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[3].explanation": {
+          "sourceHash": "2bc9e98d3962a07d0e4be1561683eebcc595b24fec9ea68feb9884493720c1a8",
+          "sourceText": "Stanford research found that the physiological sigh brings heart rate down faster than box breathing or meditation. The double inhale re-expands alveoli and the long exhale relaxes the diaphragm, which is why it works so well for side stitches and post-sprint recovery.",
+          "status": "repo-reviewed-manual"
+        },
+        "science.points[3].mechanism": {
+          "sourceHash": "c6fbbeb7dde75c15cb10f91c22735a9b0ee8409c26b2d67fd47b805833fb934c",
+          "sourceText": "Rapid reset after hard efforts",
+          "status": "repo-reviewed-manual"
+        },
+        "solution.content": {
+          "sourceHash": "ddd63d6eed60539597a014d1bd6a1769903459585fc06682408c8f1fa1c112ad",
+          "sourceText": "The physiological sigh is your body's natural reset mechanism. You do it involuntarily when you sob or when transitioning from sleep. The pattern is simple: two inhales through the nose (a big breath followed by a small 'top-up'), then one long exhale through the mouth. This technique, studied at Stanford by Dr. Andrew Huberman and colleagues, brings heart rate down faster than other breathing methods.",
+          "status": "route-catalog-normalized"
+        },
+        "solution.heading": {
+          "sourceHash": "dd5f85bc09e78986f72f0723cba7ec3276f83b1c1f34f4253229669b4bc4ef1e",
+          "sourceText": "The Physiological Sigh",
+          "status": "route-catalog-exact"
+        },
+        "solution.whyThisPattern": {
+          "sourceHash": "7b2736485a50dce1410bf918b6c1a23b6c97735ed686a43d91c617b43e18ba3b",
+          "sourceText": "The double inhale serves a mechanical purpose: during hard exercise, tiny air sacs in your lungs (alveoli) can partially collapse, reducing oxygen uptake. The second 'sip' of air re-inflates these collapsed regions. The long exhale then activates the vagus nerve and shifts you out of the fight-or-flight state.",
+          "status": "route-catalog-exact"
+        },
+        "voiceSearch[0].answer": {
+          "sourceHash": "a65fa23e2af0e59d72c8769f62af95efdd5d9fcb27287e447b76e93e3c5d140a",
+          "sourceText": "Breathe low into your belly, match your breath to your stride, and let mouth breathing happen naturally as pace rises. Use a 3:3 or 2:2 rhythm during steady running, then switch to a physiological sigh if a side stitch or post-sprint breathlessness hits.",
+          "status": "repo-reviewed-manual"
+        },
+        "voiceSearch[0].question": {
+          "sourceHash": "3eb216d5746fafaea5414b131d1c6e98ebc7f6a158c3799b90b826263d61db90",
+          "sourceText": "How do you breathe while running?",
+          "status": "repo-reviewed-manual"
+        }
+      }
+    }
+  },
+  "schemaVersion": 1,
+  "sourceRoute": "/for/running"
+}

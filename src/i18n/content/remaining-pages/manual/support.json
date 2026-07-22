@@ -1,0 +1,398 @@
+{
+  "entries": [
+    {
+      "messageId": "catalog-placement.310bb676-7683-47b2-b03b-b5b836b2cd4a",
+      "reason": "Missing approved catalog translation for head:title",
+      "reviewedSourceHash": "8dc155e0c5f828b9637f550fd192592ffb89f6b203372acca66e17be6a503b99",
+      "scope": "content",
+      "sourceText": "Support | Deep Breathing Exercises",
+      "translations": {
+        "de-de": "Support | Deep Breathing Exercises",
+        "es-es": "Soporte | Deep Breathing Exercises",
+        "fr-fr": "Assistance | Deep Breathing Exercises",
+        "ja-jp": "サポート | Deep Breathing Exercises",
+        "pt-br": "Suporte | Deep Breathing Exercises"
+      }
+    },
+    {
+      "messageId": "catalog-placement.8cffeadb-3b3e-4117-a33b-40a92d653a6b",
+      "reason": "Missing approved catalog translation for head:meta:name:description",
+      "reviewedSourceHash": "f220b2117712cce5866a0b6c7aa1d5c0b3fc6aa6be5b21454bddadb043b7bf20",
+      "scope": "content",
+      "sourceText": "Get help with Deep Breathing Exercises. Contact us with questions about the app, your account, or data deletion.",
+      "translations": {
+        "de-de": "Holen Sie sich Hilfe zu Deep Breathing Exercises. Kontaktieren Sie uns bei Fragen zur App, zu Ihrem Konto oder zur Datenlöschung.",
+        "es-es": "Obtén ayuda con Deep Breathing Exercises. Contáctanos si tienes preguntas sobre la app, tu cuenta o la eliminación de datos.",
+        "fr-fr": "Obtenez de l'aide avec Deep Breathing Exercises. Contactez-nous pour toute question concernant l'application, votre compte ou la suppression des données.",
+        "ja-jp": "Deep Breathing Exercisesに関するサポートを受ける。アプリ、アカウント、またはデータ削除に関するご質問はお問い合わせください。",
+        "pt-br": "Obtenha ajuda com o Deep Breathing Exercises. Entre em contato conosco com dúvidas sobre o app, sua conta ou exclusão de dados."
+      }
+    },
+    {
+      "messageId": "catalog-placement.c105bc14-0f9b-48c9-8775-e1a569730bdb",
+      "reason": "Missing approved catalog translation for head:meta:property:og:title",
+      "reviewedSourceHash": "77162b9de440ee52f748c5bf7bccbe7f6030cc5503cfaa27cf27c10f2e1d7b5f",
+      "scope": "content",
+      "sourceText": "Support — Deep Breathing Exercises",
+      "translations": {
+        "de-de": "Support — Deep Breathing Exercises",
+        "es-es": "Soporte — Deep Breathing Exercises",
+        "fr-fr": "Assistance — Deep Breathing Exercises",
+        "ja-jp": "サポート — Deep Breathing Exercises",
+        "pt-br": "Suporte — Deep Breathing Exercises"
+      }
+    },
+    {
+      "messageId": "catalog-placement.04969818-b686-4339-a71f-260fc2be4ac2",
+      "reason": "Missing approved catalog translation for head:meta:property:og:description",
+      "reviewedSourceHash": "511bd2e8ed543474a1ceb59f6e614994e53581443362f8f8eed5ab0cec57bed9",
+      "scope": "content",
+      "sourceText": "Get help with Deep Breathing Exercises.",
+      "translations": {
+        "de-de": "Holen Sie sich Hilfe zu Deep Breathing Exercises.",
+        "es-es": "Obtén ayuda con Deep Breathing Exercises.",
+        "fr-fr": "Obtenez de l'aide avec Deep Breathing Exercises.",
+        "ja-jp": "Deep Breathing Exercisesに関するサポートを受ける。",
+        "pt-br": "Obtenha ajuda com o Deep Breathing Exercises."
+      }
+    },
+    {
+      "messageId": "catalog-placement.b436f8d0-155c-4dad-b7a9-f94cc9f9d537",
+      "reason": "Missing approved catalog translation for head:meta:name:twitter:title",
+      "reviewedSourceHash": "77162b9de440ee52f748c5bf7bccbe7f6030cc5503cfaa27cf27c10f2e1d7b5f",
+      "scope": "content",
+      "sourceText": "Support — Deep Breathing Exercises",
+      "translations": {
+        "de-de": "Support — Deep Breathing Exercises",
+        "es-es": "Soporte — Deep Breathing Exercises",
+        "fr-fr": "Assistance — Deep Breathing Exercises",
+        "ja-jp": "サポート — Deep Breathing Exercises",
+        "pt-br": "Suporte — Deep Breathing Exercises"
+      }
+    },
+    {
+      "messageId": "catalog-placement.852cc707-ec5e-416b-91f4-fb11e1256fb5",
+      "reason": "Missing approved catalog translation for head:meta:name:twitter:description",
+      "reviewedSourceHash": "511bd2e8ed543474a1ceb59f6e614994e53581443362f8f8eed5ab0cec57bed9",
+      "scope": "content",
+      "sourceText": "Get help with Deep Breathing Exercises.",
+      "translations": {
+        "de-de": "Holen Sie sich Hilfe zu Deep Breathing Exercises.",
+        "es-es": "Obtén ayuda con Deep Breathing Exercises.",
+        "fr-fr": "Obtenez de l'aide avec Deep Breathing Exercises.",
+        "ja-jp": "Deep Breathing Exercisesに関するサポートを受ける。",
+        "pt-br": "Obtenha ajuda com o Deep Breathing Exercises."
+      }
+    },
+    {
+      "messageId": "catalog-placement.8889de0b-16a4-49d2-bd0b-b9ff6c612990",
+      "reason": "Missing approved catalog translation for sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+      "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+      "scope": "content",
+      "sourceText": "Support",
+      "translations": {
+        "de-de": "Support",
+        "es-es": "Soporte",
+        "fr-fr": "Assistance",
+        "ja-jp": "サポート",
+        "pt-br": "Suporte"
+      }
+    },
+    {
+      "messageId": "catalog-placement.28e3eb25-5d02-481d-bfd0-c60e4e04f0b7",
+      "reason": "Missing approved catalog translation for sel:p.text-lg.text-muted-foreground:ctx:p:pos:0",
+      "reviewedSourceHash": "70592ed23fa3ad55eb9ecc4c06147c197a6c2024a6fb393670729471927163a1",
+      "scope": "content",
+      "sourceText": "We are happy to help. Reach out with any questions about the app, your account, or your data.",
+      "translations": {
+        "de-de": "Wir helfen Ihnen gerne. Melden Sie sich bei Fragen zur App, zu Ihrem Konto oder zu Ihren Daten.",
+        "es-es": "Estamos encantados de ayudarte. Contacta con nosotros si tienes cualquier pregunta sobre la app, tu cuenta o tus datos.",
+        "fr-fr": "Nous sommes heureux de vous aider. Contactez-nous pour toute question concernant l'application, votre compte ou vos données.",
+        "ja-jp": "喜んでお手伝いします。アプリ、アカウント、またはデータに関するご質問がございましたらお問い合わせください。",
+        "pt-br": "Teremos prazer em ajudar. Entre em contato com qualquer dúvida sobre o app, sua conta ou seus dados."
+      }
+    },
+    {
+      "messageId": "catalog-placement.929ea4d5-3ade-4fe9-9620-1f211d8e095d",
+      "reason": "Missing approved catalog translation for sel:p.mt-3:ctx:p:pos:0",
+      "reviewedSourceHash": "530783f5271b83853ee3215bb9ec7ea82beddfb16a504933241677e964d28b7a",
+      "scope": "content",
+      "sourceText": "Email us at",
+      "translations": {
+        "de-de": "Schreiben Sie uns an",
+        "es-es": "Escríbenos a",
+        "fr-fr": "Écrivez-nous à",
+        "ja-jp": "次のアドレスまでメールでご連絡ください",
+        "pt-br": "Envie um e-mail para"
+      }
+    },
+    {
+      "messageId": "catalog-placement.3a4416fd-1a0e-4b5c-87d2-8fd6fb8b282a",
+      "reason": "Missing approved catalog translation for sel:a.font-semibold.text-primary:ctx:link:pos:0",
+      "reviewedSourceHash": "4a0fa35ee26d21cf99e3ad76b6a67edd0855141418846ba61a1de7a8f64e8bdb",
+      "scope": "content",
+      "sourceText": "support@deepbreathingexercises.com",
+      "translations": {
+        "de-de": "support@deepbreathingexercises.com",
+        "es-es": "support@deepbreathingexercises.com",
+        "fr-fr": "support@deepbreathingexercises.com",
+        "ja-jp": "support@deepbreathingexercises.com",
+        "pt-br": "support@deepbreathingexercises.com"
+      }
+    },
+    {
+      "messageId": "catalog-placement.7d9f25ea-0f02-4030-9acb-fac55f37ded3",
+      "reason": "Missing approved catalog translation for sel:p.mt-3:ctx:p:pos:1",
+      "reviewedSourceHash": "72d41a7625465584e816ae266b1d08548eaa227ef4c9fd07a9a5c128386917a7",
+      "scope": "content",
+      "sourceText": "and we will get back to you within one business day.",
+      "translations": {
+        "de-de": "und wir melden uns innerhalb eines Werktags bei Ihnen.",
+        "es-es": "y te responderemos en un día laborable.",
+        "fr-fr": "et nous vous répondrons sous un jour ouvré.",
+        "ja-jp": "1営業日以内にご返信いたします。",
+        "pt-br": "e responderemos em até um dia útil."
+      }
+    },
+    {
+      "messageId": "catalog-placement.d283a3f2-fe15-47c0-adb3-67328923a49d",
+      "reason": "Missing approved catalog translation for sel:p.mt-3:ctx:p:pos:2",
+      "reviewedSourceHash": "2ee2340f93d5b8323ca6cc171120a2ea6e755598435ddd804cdb22bf668cc968",
+      "scope": "content",
+      "sourceText": "You can also reach the team through",
+      "translations": {
+        "de-de": "Sie erreichen das Team auch über",
+        "es-es": "También puedes contactar con el equipo a través de",
+        "fr-fr": "Vous pouvez également joindre l'équipe via",
+        "ja-jp": "チームへのご連絡は次からも可能です",
+        "pt-br": "Você também pode falar com a equipe por"
+      }
+    },
+    {
+      "messageId": "catalog-placement.afdac9ef-82f4-47f0-b983-073f5d6e413d",
+      "reason": "Missing approved catalog translation for sel:p.font-semibold.text-card-foreground:ctx:product:pos:0",
+      "reviewedSourceHash": "d35bfd4806eda1929cb0313e714b98a8e649a532e0fa19d18912ec7916affb16",
+      "scope": "content",
+      "sourceText": "Do I need an account?",
+      "translations": {
+        "de-de": "Brauche ich ein Konto?",
+        "es-es": "¿Necesito una cuenta?",
+        "fr-fr": "Ai-je besoin d'un compte ?",
+        "ja-jp": "アカウントは必要ですか？",
+        "pt-br": "Preciso de uma conta?"
+      }
+    },
+    {
+      "messageId": "catalog-placement.7ade7672-799a-4eae-9e4f-c7465c6e5af0",
+      "reason": "Missing approved catalog translation for sel:p.mt-1:ctx:p:pos:0",
+      "reviewedSourceHash": "bdef5efe180d8adc9c680c7a8d848e0a4eaef730efc28f355f4a83f98454c6ac",
+      "scope": "content",
+      "sourceText": "No. The app works without an account. Sessions, stats, and settings are saved locally on your device. Create an account only if you want to sync your data across devices.",
+      "translations": {
+        "de-de": "Nein. Die App funktioniert ohne Konto. Sitzungen, Statistiken und Einstellungen werden lokal auf Ihrem Gerät gespeichert. Erstellen Sie nur dann ein Konto, wenn Sie Ihre Daten geräteübergreifend synchronisieren möchten.",
+        "es-es": "No. La app funciona sin cuenta. Las sesiones, las estadísticas y la configuración se guardan localmente en tu dispositivo. Crea una cuenta solo si quieres sincronizar tus datos entre dispositivos.",
+        "fr-fr": "Non. L'application fonctionne sans compte. Les séances, les statistiques et les paramètres sont enregistrés localement sur votre appareil. Créez un compte uniquement si vous souhaitez synchroniser vos données entre appareils.",
+        "ja-jp": "いいえ。アプリはアカウントなしで動作します。セッション、統計、設定はお使いのデバイスにローカル保存されます。デバイス間でデータを同期したい場合のみ、アカウントを作成してください。",
+        "pt-br": "Não. O app funciona sem conta. As sessões, estatísticas e configurações são salvas localmente no seu dispositivo. Crie uma conta apenas se quiser sincronizar seus dados entre dispositivos."
+      }
+    },
+    {
+      "messageId": "catalog-placement.ba9ea446-5c5e-49b6-8cf1-9903e65c905f",
+      "reason": "Missing approved catalog translation for sel:p.font-semibold.text-card-foreground:ctx:product:pos:1",
+      "reviewedSourceHash": "39c9658206ff45cf1d86a41957dafa63022309b2a3b041d5c3b02c47d05693b7",
+      "scope": "content",
+      "sourceText": "How do I delete my account?",
+      "translations": {
+        "de-de": "Wie lösche ich mein Konto?",
+        "es-es": "¿Cómo elimino mi cuenta?",
+        "fr-fr": "Comment supprimer mon compte ?",
+        "ja-jp": "アカウントを削除するにはどうすればよいですか？",
+        "pt-br": "Como excluo minha conta?"
+      }
+    },
+    {
+      "messageId": "catalog-placement.9f612281-a2a5-4945-9de9-e8c2f7a5ec58",
+      "reason": "Missing approved catalog translation for sel:p.mt-1:ctx:p:pos:1",
+      "reviewedSourceHash": "530783f5271b83853ee3215bb9ec7ea82beddfb16a504933241677e964d28b7a",
+      "scope": "content",
+      "sourceText": "Email us at",
+      "translations": {
+        "de-de": "Schreiben Sie uns an",
+        "es-es": "Escríbenos a",
+        "fr-fr": "Écrivez-nous à",
+        "ja-jp": "次のアドレスまでメールでご連絡ください",
+        "pt-br": "Envie um e-mail para"
+      }
+    },
+    {
+      "messageId": "catalog-placement.bccdd27c-04c6-4a84-89b3-39c449846a24",
+      "reason": "Missing approved catalog translation for sel:p.font-semibold.text-card-foreground:ctx:product:pos:2",
+      "reviewedSourceHash": "925edc61b511165e785699cb26e89c5c3b008eb2a6d96e0c2c2f2a05f6a3b57e",
+      "scope": "content",
+      "sourceText": "Is my breathing data shared?",
+      "translations": {
+        "de-de": "Werden meine Atemdaten weitergegeben?",
+        "es-es": "¿Se comparten mis datos de respiración?",
+        "fr-fr": "Mes données de respiration sont-elles partagées ?",
+        "ja-jp": "呼吸データは共有されますか？",
+        "pt-br": "Meus dados de respiração são compartilhados?"
+      }
+    },
+    {
+      "messageId": "catalog-placement.67fd3430-18e2-404f-be61-3f299f76bc63",
+      "reason": "Missing approved catalog translation for sel:p.mt-1:ctx:p:pos:2",
+      "reviewedSourceHash": "7c90988ee49599e24284445881927e99d65089ea1050f69c9017f2341da93f7c",
+      "scope": "content",
+      "sourceText": "with the subject line “Delete my account” and we will permanently remove your data within 30 days.",
+      "translations": {
+        "de-de": "mit der Betreffzeile „Delete my account“ und wir entfernen Ihre Daten dauerhaft innerhalb von 30 Tagen.",
+        "es-es": "con el asunto “Delete my account” y eliminaremos permanentemente tus datos en un plazo de 30 días.",
+        "fr-fr": "avec l'objet « Delete my account » et nous supprimerons définitivement vos données sous 30 jours.",
+        "ja-jp": "件名を「Delete my account」としてご連絡ください。30日以内にデータを完全に削除いたします。",
+        "pt-br": "com o assunto “Delete my account” e removeremos permanentemente seus dados em até 30 dias."
+      }
+    },
+    {
+      "messageId": "catalog-placement.49738ee4-5d9b-4249-a948-18bd229af85b",
+      "reason": "Missing approved catalog translation for sel:a.font-semibold.text-primary:ctx:link:pos:2",
+      "reviewedSourceHash": "4a0fa35ee26d21cf99e3ad76b6a67edd0855141418846ba61a1de7a8f64e8bdb",
+      "scope": "content",
+      "sourceText": "support@deepbreathingexercises.com",
+      "translations": {
+        "de-de": "support@deepbreathingexercises.com",
+        "es-es": "support@deepbreathingexercises.com",
+        "fr-fr": "support@deepbreathingexercises.com",
+        "ja-jp": "support@deepbreathingexercises.com",
+        "pt-br": "support@deepbreathingexercises.com"
+      }
+    },
+    {
+      "messageId": "catalog-placement.7ad4405c-8060-4a6e-b446-4425ebf000a0",
+      "reason": "Missing approved catalog translation for sel:p.mt-1:ctx:p:pos:3",
+      "reviewedSourceHash": "5c977dfd6fa85d81d37f0a3e2e8a2f6d04cf904c90f189981dcabba7374f495f",
+      "scope": "content",
+      "sourceText": "No. Session data is stored on your device. If you create an account, session stats sync to our servers for cross-device continuity. We do not sell data. See our",
+      "translations": {
+        "de-de": "Nein. Sitzungsdaten werden auf Ihrem Gerät gespeichert. Wenn Sie ein Konto erstellen, werden Sitzungsstatistiken zur geräteübergreifenden Kontinuität auf unsere Server synchronisiert. Wir verkaufen keine Daten. Siehe unsere",
+        "es-es": "No. Los datos de las sesiones se almacenan en tu dispositivo. Si creas una cuenta, las estadísticas de sesión se sincronizan con nuestros servidores para la continuidad entre dispositivos. No vendemos datos. Consulta nuestra",
+        "fr-fr": "Non. Les données de séance sont stockées sur votre appareil. Si vous créez un compte, les statistiques de séance sont synchronisées sur nos serveurs pour une continuité multi-appareils. Nous ne vendons pas de données. Consultez notre",
+        "ja-jp": "いいえ。セッションデータはお使いのデバイスに保存されます。アカウントを作成すると、デバイス間の継続性のためにセッション統計が当社のサーバーに同期されます。データを販売することはありません。詳しくは",
+        "pt-br": "Não. Os dados da sessão são armazenados no seu dispositivo. Se você criar uma conta, as estatísticas da sessão são sincronizadas com nossos servidores para continuidade entre dispositivos. Não vendemos dados. Consulte nossa"
+      }
+    },
+    {
+      "messageId": "catalog-placement.072f0df5-eba9-4f73-9047-d76025d65855",
+      "reason": "Missing approved catalog translation for sel:a.font-semibold.text-primary:ctx:link:pos:3",
+      "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+      "scope": "content",
+      "sourceText": "Privacy Policy",
+      "translations": {
+        "de-de": "Datenschutzerklärung",
+        "es-es": "Política de privacidad",
+        "fr-fr": "Politique de confidentialité",
+        "ja-jp": "プライバシーポリシー",
+        "pt-br": "Política de Privacidade"
+      }
+    },
+    {
+      "messageId": "catalog-placement.1a82ab8e-903e-4138-81b2-ab034bc1e747",
+      "reason": "Missing approved catalog translation for sel:p.font-semibold.text-card-foreground:ctx:product:pos:3",
+      "reviewedSourceHash": "4347054785c47a6ad782f574d9c59a02afa866fd89cde0e2bab8d82d40dbd28b",
+      "scope": "content",
+      "sourceText": "Why does the audio keep playing when I lock my screen?",
+      "translations": {
+        "de-de": "Warum läuft das Audio weiter, wenn ich den Bildschirm sperre?",
+        "es-es": "¿Por qué sigue sonando el audio cuando bloqueo la pantalla?",
+        "fr-fr": "Pourquoi l'audio continue-t-il de jouer lorsque je verrouille mon écran ?",
+        "ja-jp": "画面をロックしても音声が再生され続けるのはなぜですか？",
+        "pt-br": "Por que o áudio continua tocando quando bloqueio a tela?"
+      }
+    },
+    {
+      "messageId": "catalog-placement.01081371-2f39-411c-9179-dc8fdccc7816",
+      "reason": "Missing approved catalog translation for sel:p.mt-1:ctx:p:pos:4",
+      "reviewedSourceHash": "28e19c6e69c7a2aa071951dda3ff0a11ca178e3fb295dae8d6ed7dcc994434a4",
+      "scope": "content",
+      "sourceText": "for full details.",
+      "translations": {
+        "de-de": "für alle Details.",
+        "es-es": "para todos los detalles.",
+        "fr-fr": "pour tous les détails.",
+        "ja-jp": "をご覧ください。",
+        "pt-br": "para todos os detalhes."
+      }
+    },
+    {
+      "messageId": "catalog-placement.5212352b-04e6-4882-a9a5-eb15fb29b335",
+      "reason": "Missing approved catalog translation for sel:p.font-semibold.text-card-foreground:ctx:product:pos:4",
+      "reviewedSourceHash": "d797bcc201cf8ec32456d7d23df6575fe8f3836cf104ff6681c81cca4019ef0a",
+      "scope": "content",
+      "sourceText": "Is this a medical app?",
+      "translations": {
+        "de-de": "Ist dies eine medizinische App?",
+        "es-es": "¿Es esta una app médica?",
+        "fr-fr": "S'agit-il d'une application médicale ?",
+        "ja-jp": "これは医療アプリですか？",
+        "pt-br": "Este é um app médico?"
+      }
+    },
+    {
+      "messageId": "catalog-placement.22bce113-2784-4abd-96e0-1ed37f327ba6",
+      "reason": "Missing approved catalog translation for sel:p.mt-1:ctx:p:pos:5",
+      "reviewedSourceHash": "8aad8aa45ee9edf4505eff4ff0ecb783696fc750f068b1d208c8d3381052f3ed",
+      "scope": "content",
+      "sourceText": "This is intentional. The app keeps audio cues playing so you can breathe eyes-closed with your phone in your pocket. You can mute audio in the app settings.",
+      "translations": {
+        "de-de": "Das ist beabsichtigt. Die App lässt akustische Hinweise weiterlaufen, damit Sie mit geschlossenen Augen atmen können, während das Telefon in der Tasche steckt. Sie können den Ton in den App-Einstellungen stummschalten.",
+        "es-es": "Esto es intencionado. La app mantiene las señales de audio para que puedas respirar con los ojos cerrados y el teléfono en el bolsillo. Puedes silenciar el audio en los ajustes de la app.",
+        "fr-fr": "C'est intentionnel. L'application maintient les repères audio pour que vous puissiez respirer les yeux fermés avec le téléphone dans votre poche. Vous pouvez couper l'audio dans les paramètres de l'application.",
+        "ja-jp": "これは意図的な仕様です。アプリは音声ガイドを再生し続け、スマートフォンをポケットに入れたまま目を閉じて呼吸できるようにしています。音声はアプリの設定でミュートできます。",
+        "pt-br": "Isso é intencional. O app mantém as dicas de áudio tocando para que você possa respirar de olhos fechados com o telefone no bolso. Você pode silenciar o áudio nas configurações do app."
+      }
+    },
+    {
+      "messageId": "catalog-placement.498a679c-4e30-42cb-8b67-5fa65c33a46b",
+      "reason": "Missing approved catalog translation for sel:h2.text-2xl.font-semibold:ctx:heading:pos:2",
+      "reviewedSourceHash": "c972053617c5412086293cc63ece831d4731e1e488fe412755702f85f26da7c8",
+      "scope": "content",
+      "sourceText": "Wim Hof breathing — safety note",
+      "translations": {
+        "de-de": "Wim-Hof-Atmung — Sicherheitshinweis",
+        "es-es": "Respiración Wim Hof — nota de seguridad",
+        "fr-fr": "Respiration Wim Hof — note de sécurité",
+        "ja-jp": "Wim Hof呼吸 — 安全上の注意",
+        "pt-br": "Respiração Wim Hof — aviso de segurança"
+      }
+    },
+    {
+      "messageId": "catalog-placement.1e4755bb-5696-4921-bb11-e7d5bef05d5b",
+      "reason": "Missing approved catalog translation for sel:p.mt-1:ctx:p:pos:6",
+      "reviewedSourceHash": "8f0b9d3dc7a3f4977950d485f0f5e0a54ae4ce5cb4e9219b3a1bee51a6cf049f",
+      "scope": "content",
+      "sourceText": "No. Deep Breathing Exercises provides guided breathing sessions based on established techniques. It is not a medical device and does not diagnose, treat, or prevent any condition. Consult a healthcare provider before beginning a new breathing practice if you have a health condition.",
+      "translations": {
+        "de-de": "Nein. Deep Breathing Exercises bietet geführte Atemsitzungen auf der Grundlage etablierter Techniken. Es handelt sich nicht um ein Medizinprodukt und diagnostiziert, behandelt oder verhindert keine Erkrankung. Konsultieren Sie einen Arzt oder eine Ärztin, bevor Sie mit einer neuen Atemübungspraxis beginnen, wenn Sie eine gesundheitliche Beeinträchtigung haben.",
+        "es-es": "No. Deep Breathing Exercises ofrece sesiones de respiración guiadas basadas en técnicas consolidadas. No es un dispositivo médico y no diagnostica, trata ni previene ninguna afección. Consulta a un profesional sanitario antes de comenzar una nueva práctica de respiración si tienes una condición de salud.",
+        "fr-fr": "Non. Deep Breathing Exercises propose des séances de respiration guidées basées sur des techniques établies. Ce n'est pas un dispositif médical et il ne diagnostique, ne traite ni ne prévient aucune affection. Consultez un professionnel de santé avant de commencer une nouvelle pratique respiratoire si vous avez un problème de santé.",
+        "ja-jp": "いいえ。Deep Breathing Exercisesは確立された技法に基づくガイド付き呼吸セッションを提供します。医療機器ではなく、いかなる疾患の診断、治療、予防も行いません。健康上の問題がある場合は、新しい呼吸の実践を始める前に医療機関に相談してください。",
+        "pt-br": "Não. O Deep Breathing Exercises oferece sessões de respiração guiadas baseadas em técnicas estabelecidas. Não é um dispositivo médico e não diagnostica, trata nem previne nenhuma condição. Consulte um profissional de saúde antes de iniciar uma nova prática de respiração se você tiver uma condição de saúde."
+      }
+    },
+    {
+      "messageId": "catalog-placement.91f1a01b-907d-4ab4-85aa-41d79e794ea1",
+      "reason": "Missing approved catalog translation for sel:p.mt-3.text-sm:ctx:p:pos:0",
+      "reviewedSourceHash": "e9bdc07f1dcb6d04db2b8b49fc28e1563e0ea2b4a49cb7476de74cbff32a0a03",
+      "scope": "content",
+      "sourceText": "The Wim Hof breathing sequence involves intentional hyperventilation and breath retention. Do not practice breath retention in or near water. Stop if you feel dizzy or lightheaded. Consult a doctor before beginning if you have a cardiovascular condition, respiratory condition, or are pregnant.",
+      "translations": {
+        "de-de": "Die Wim-Hof-Atemsequenz umfasst absichtliche Hyperventilation und Atemanhalten. Üben Sie Atemanhalten nicht im oder in der Nähe von Wasser. Beenden Sie die Übung, wenn Ihnen schwindelig oder benommen wird. Konsultieren Sie einen Arzt, bevor Sie beginnen, wenn Sie eine Herz-Kreislauf-Erkrankung, eine Atemwegserkrankung haben oder schwanger sind.",
+        "es-es": "La secuencia de respiración Wim Hof implica hiperventilación intencionada y retención de la respiración. No practiques la retención de la respiración en el agua o cerca de ella. Detente si sientes mareo o aturdimiento. Consulta a un médico antes de empezar si tienes una afección cardiovascular, una afección respiratoria o estás embarazada.",
+        "fr-fr": "La séquence de respiration Wim Hof implique une hyperventilation intentionnelle et une rétention du souffle. Ne pratiquez pas la rétention du souffle dans l'eau ou à proximité. Arrêtez si vous vous sentez étourdi ou pris de vertiges. Consultez un médecin avant de commencer si vous avez une affection cardiovasculaire, une affection respiratoire ou si vous êtes enceinte.",
+        "ja-jp": "Wim Hof呼吸のシークエンスには、意図的な過換気と息止めが含まれます。水中または水辺で息止めを行わないでください。めまいやふらつきを感じたら中止してください。心血管疾患、呼吸器疾患がある場合、または妊娠中の場合は、始める前に医師に相談してください。",
+        "pt-br": "A sequência de respiração Wim Hof envolve hiperventilação intencional e retenção da respiração. Não pratique a retenção da respiração dentro ou perto da água. Pare se sentir tontura ou leveza na cabeça. Consulte um médico antes de começar se você tiver uma condição cardiovascular, uma condição respiratória ou estiver grávida."
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/support"
+}

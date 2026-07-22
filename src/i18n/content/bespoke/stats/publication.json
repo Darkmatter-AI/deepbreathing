@@ -1,0 +1,65 @@
+{
+  "coverage": {
+    "de-de": {
+      "externalBindings": 24,
+      "gapReplacements": 5,
+      "path": "messages/de-de.json",
+      "publishable": true,
+      "resolvedMessages": 62,
+      "reviewedReplacements": 33,
+      "sha256": "e2d3c94c918ce16498a1539e3837eea387bbbc59a9ee032cc9a0f3c5771532c0",
+      "unresolved": 0
+    },
+    "es-es": {
+      "externalBindings": 24,
+      "gapReplacements": 5,
+      "path": "messages/es-es.json",
+      "publishable": true,
+      "resolvedMessages": 62,
+      "reviewedReplacements": 33,
+      "sha256": "e1eef14f09405720c1ee0fee40fd7bc0b8338af6e5ce825f69caf0751c836896",
+      "unresolved": 0
+    },
+    "fr-fr": {
+      "externalBindings": 24,
+      "gapReplacements": 5,
+      "path": "messages/fr-fr.json",
+      "publishable": true,
+      "resolvedMessages": 62,
+      "reviewedReplacements": 33,
+      "sha256": "beb9f677765354ed965dc0e7f85445d1d7d1188dbdb5b0bdea18481f5ddd502f",
+      "unresolved": 0
+    },
+    "ja-jp": {
+      "externalBindings": 24,
+      "gapReplacements": 5,
+      "path": "messages/ja-jp.json",
+      "publishable": true,
+      "resolvedMessages": 62,
+      "reviewedReplacements": 33,
+      "sha256": "cb8226d3a2e2ff0de29089dbf36bd7de73d882e5faef0d86971143b2c6b68f83",
+      "unresolved": 0
+    },
+    "pt-br": {
+      "externalBindings": 24,
+      "gapReplacements": 5,
+      "path": "messages/pt-br.json",
+      "publishable": true,
+      "resolvedMessages": 62,
+      "reviewedReplacements": 33,
+      "sha256": "67cd98121c8dadc425a72ac00da2b52927aafef6a4557cdb746617f42e82a4e6",
+      "unresolved": 0
+    }
+  },
+  "expectedMessages": 62,
+  "locales": [
+    "de-de",
+    "es-es",
+    "fr-fr",
+    "ja-jp",
+    "pt-br"
+  ],
+  "routeId": "stats",
+  "schemaVersion": 1,
+  "sourceRoute": "/stats"
+}

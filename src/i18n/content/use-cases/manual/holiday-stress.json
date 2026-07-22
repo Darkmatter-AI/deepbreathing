@@ -1,0 +1,60 @@
+{
+  "entries": [
+    {
+      "messageId": "chrome.use-case.box-breathing-name",
+      "reason": "global-catalog-exact-conflict",
+      "reviewedSourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f",
+      "scope": "chrome",
+      "sourceText": "Physiological Sigh",
+      "translations": {
+        "de-de": "Physiologischer Seufzer",
+        "fr-fr": "Soupir physiologique",
+        "ja-jp": "生理的ため息"
+      }
+    },
+    {
+      "messageId": "chrome.use-case.hero-share-text",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "c50584c908ea33b9df7b011f0c9bd5ae524e8724a72b154d0f2c6769ea294fc1",
+      "scope": "chrome",
+      "sourceText": "Try this guided breathing exercise for how to handle holiday stress in 30 seconds.",
+      "translations": {
+        "de-de": "Probieren Sie diese geführte Atemübung, um in 30 Sekunden mit Feiertagsstress umzugehen.",
+        "es-es": "Prueba este ejercicio de respiración guiada para saber cómo gestionar el estrés navideño en 30 segundos.",
+        "fr-fr": "Essayez cet exercice de respiration guidée pour gérer le stress des fêtes en 30 secondes.",
+        "ja-jp": "休日のストレスへの対処法として、この30秒のガイド付き呼吸エクササイズをお試しください。",
+        "pt-br": "Experimente este exercício de respiração guiada para lidar com o estresse das festas em 30 segundos."
+      }
+    },
+    {
+      "messageId": "chrome.use-case.learn-box-breathing",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "fd75a0c1418a75fb7860da61b872c9881106748e5beac6d999f31ad4b09d2a60",
+      "scope": "chrome",
+      "sourceText": "Learn more about Physiological Sigh →",
+      "translations": {
+        "de-de": "Mehr über den physiologischen Seufzer erfahren →",
+        "es-es": "Más información sobre el suspiro fisiológico →",
+        "fr-fr": "En savoir plus sur le soupir physiologique →",
+        "ja-jp": "生理的ため息について詳しく見る →",
+        "pt-br": "Saiba mais sobre o suspiro fisiológico →"
+      }
+    },
+    {
+      "messageId": "relatedTechnique.callToAction",
+      "reason": "global-catalog-normalized-miss",
+      "reviewedSourceHash": "c639d79d47d91f7038efd8ae488e79d207f81574613172beb0fe1fdd674898f4",
+      "scope": "content",
+      "sourceText": "Practice with the full-screen Physiological Sigh visualizer",
+      "translations": {
+        "de-de": "Üben Sie mit dem Vollbild-Visualizer für den physiologischen Seufzer",
+        "es-es": "Practica con el visualizador de suspiro fisiológico a pantalla completa",
+        "fr-fr": "Entraînez-vous avec le visualiseur de soupir physiologique en plein écran",
+        "ja-jp": "全画面の生理的ため息ビジュアライザーで練習する",
+        "pt-br": "Pratique com o visualizador de suspiro fisiológico em tela cheia"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceRoute": "/for/holiday-stress"
+}

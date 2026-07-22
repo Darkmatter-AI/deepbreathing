@@ -1,0 +1,586 @@
+{
+  "locales": [
+    "de-de",
+    "es-es",
+    "fr-fr",
+    "ja-jp",
+    "pt-br"
+  ],
+  "routes": {
+    "/breathe/4-7-8": {
+      "contentMessages": 104,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 61,
+          "chromePath": "chrome/de-de/4-7-8.json",
+          "publishable": true,
+          "routePath": "routes/de-de/4-7-8.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 61,
+          "chromePath": "chrome/es-es/4-7-8.json",
+          "publishable": true,
+          "routePath": "routes/es-es/4-7-8.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 61,
+          "chromePath": "chrome/fr-fr/4-7-8.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/4-7-8.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 61,
+          "chromePath": "chrome/ja-jp/4-7-8.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/4-7-8.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 61,
+          "chromePath": "chrome/pt-br/4-7-8.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/4-7-8.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "breathe-4-7-8"
+    },
+    "/breathe/9d-breathwork": {
+      "contentMessages": 90,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 55,
+          "chromePath": "chrome/de-de/9d-breathwork.json",
+          "publishable": true,
+          "routePath": "routes/de-de/9d-breathwork.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 55,
+          "chromePath": "chrome/es-es/9d-breathwork.json",
+          "publishable": true,
+          "routePath": "routes/es-es/9d-breathwork.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 55,
+          "chromePath": "chrome/fr-fr/9d-breathwork.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/9d-breathwork.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 55,
+          "chromePath": "chrome/ja-jp/9d-breathwork.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/9d-breathwork.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 55,
+          "chromePath": "chrome/pt-br/9d-breathwork.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/9d-breathwork.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "breathe-9d-breathwork"
+    },
+    "/breathe/belly": {
+      "contentMessages": 106,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 59,
+          "chromePath": "chrome/de-de/belly.json",
+          "publishable": true,
+          "routePath": "routes/de-de/belly.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 59,
+          "chromePath": "chrome/es-es/belly.json",
+          "publishable": true,
+          "routePath": "routes/es-es/belly.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 59,
+          "chromePath": "chrome/fr-fr/belly.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/belly.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 59,
+          "chromePath": "chrome/ja-jp/belly.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/belly.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 59,
+          "chromePath": "chrome/pt-br/belly.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/belly.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "breathe-belly"
+    },
+    "/breathe/box": {
+      "contentMessages": 113,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 63,
+          "chromePath": "chrome/de-de/box.json",
+          "publishable": true,
+          "routePath": "routes/de-de/box.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 63,
+          "chromePath": "chrome/es-es/box.json",
+          "publishable": true,
+          "routePath": "routes/es-es/box.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 63,
+          "chromePath": "chrome/fr-fr/box.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/box.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 63,
+          "chromePath": "chrome/ja-jp/box.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/box.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 63,
+          "chromePath": "chrome/pt-br/box.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/box.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "breathe-box"
+    },
+    "/breathe/breath-of-fire": {
+      "contentMessages": 102,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 57,
+          "chromePath": "chrome/de-de/breath-of-fire.json",
+          "publishable": true,
+          "routePath": "routes/de-de/breath-of-fire.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 57,
+          "chromePath": "chrome/es-es/breath-of-fire.json",
+          "publishable": true,
+          "routePath": "routes/es-es/breath-of-fire.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 57,
+          "chromePath": "chrome/fr-fr/breath-of-fire.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/breath-of-fire.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 57,
+          "chromePath": "chrome/ja-jp/breath-of-fire.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/breath-of-fire.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 57,
+          "chromePath": "chrome/pt-br/breath-of-fire.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/breath-of-fire.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "breathe-breath-of-fire"
+    },
+    "/breathe/buteyko": {
+      "contentMessages": 99,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 56,
+          "chromePath": "chrome/de-de/buteyko.json",
+          "publishable": true,
+          "routePath": "routes/de-de/buteyko.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 56,
+          "chromePath": "chrome/es-es/buteyko.json",
+          "publishable": true,
+          "routePath": "routes/es-es/buteyko.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 56,
+          "chromePath": "chrome/fr-fr/buteyko.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/buteyko.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 56,
+          "chromePath": "chrome/ja-jp/buteyko.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/buteyko.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 56,
+          "chromePath": "chrome/pt-br/buteyko.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/buteyko.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "breathe.buteyko"
+    },
+    "/breathe/coherent": {
+      "contentMessages": 98,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 59,
+          "chromePath": "chrome/de-de/coherent.json",
+          "publishable": true,
+          "routePath": "routes/de-de/coherent.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 59,
+          "chromePath": "chrome/es-es/coherent.json",
+          "publishable": true,
+          "routePath": "routes/es-es/coherent.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 59,
+          "chromePath": "chrome/fr-fr/coherent.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/coherent.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 59,
+          "chromePath": "chrome/ja-jp/coherent.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/coherent.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 59,
+          "chromePath": "chrome/pt-br/coherent.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/coherent.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "breathe-coherent"
+    },
+    "/breathe/hope-cartel-9d-breathwork": {
+      "contentMessages": 93,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 55,
+          "chromePath": "chrome/de-de/hope-cartel-9d-breathwork.json",
+          "publishable": true,
+          "routePath": "routes/de-de/hope-cartel-9d-breathwork.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 55,
+          "chromePath": "chrome/es-es/hope-cartel-9d-breathwork.json",
+          "publishable": true,
+          "routePath": "routes/es-es/hope-cartel-9d-breathwork.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 55,
+          "chromePath": "chrome/fr-fr/hope-cartel-9d-breathwork.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/hope-cartel-9d-breathwork.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 55,
+          "chromePath": "chrome/ja-jp/hope-cartel-9d-breathwork.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/hope-cartel-9d-breathwork.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 55,
+          "chromePath": "chrome/pt-br/hope-cartel-9d-breathwork.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/hope-cartel-9d-breathwork.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "breathe-hope-cartel-9d-breathwork"
+    },
+    "/breathe/nadi-shodhana": {
+      "contentMessages": 118,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 58,
+          "chromePath": "chrome/de-de/nadi-shodhana.json",
+          "publishable": true,
+          "routePath": "routes/de-de/nadi-shodhana.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 58,
+          "chromePath": "chrome/es-es/nadi-shodhana.json",
+          "publishable": true,
+          "routePath": "routes/es-es/nadi-shodhana.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 58,
+          "chromePath": "chrome/fr-fr/nadi-shodhana.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/nadi-shodhana.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 58,
+          "chromePath": "chrome/ja-jp/nadi-shodhana.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/nadi-shodhana.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 58,
+          "chromePath": "chrome/pt-br/nadi-shodhana.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/nadi-shodhana.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "breathe-nadi-shodhana"
+    },
+    "/breathe/physiological-sigh": {
+      "contentMessages": 131,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 63,
+          "chromePath": "chrome/de-de/physiological-sigh.json",
+          "publishable": true,
+          "routePath": "routes/de-de/physiological-sigh.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 63,
+          "chromePath": "chrome/es-es/physiological-sigh.json",
+          "publishable": true,
+          "routePath": "routes/es-es/physiological-sigh.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 63,
+          "chromePath": "chrome/fr-fr/physiological-sigh.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/physiological-sigh.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 63,
+          "chromePath": "chrome/ja-jp/physiological-sigh.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/physiological-sigh.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 63,
+          "chromePath": "chrome/pt-br/physiological-sigh.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/physiological-sigh.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "breathe-physiological-sigh"
+    },
+    "/breathe/pursed-lip": {
+      "contentMessages": 95,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 57,
+          "chromePath": "chrome/de-de/pursed-lip.json",
+          "publishable": true,
+          "routePath": "routes/de-de/pursed-lip.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 57,
+          "chromePath": "chrome/es-es/pursed-lip.json",
+          "publishable": true,
+          "routePath": "routes/es-es/pursed-lip.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 57,
+          "chromePath": "chrome/fr-fr/pursed-lip.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/pursed-lip.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 57,
+          "chromePath": "chrome/ja-jp/pursed-lip.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/pursed-lip.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 57,
+          "chromePath": "chrome/pt-br/pursed-lip.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/pursed-lip.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "breathe-pursed-lip"
+    },
+    "/breathe/tummo": {
+      "contentMessages": 106,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 57,
+          "chromePath": "chrome/de-de/tummo.json",
+          "publishable": true,
+          "routePath": "routes/de-de/tummo.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 57,
+          "chromePath": "chrome/es-es/tummo.json",
+          "publishable": true,
+          "routePath": "routes/es-es/tummo.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 57,
+          "chromePath": "chrome/fr-fr/tummo.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/tummo.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 57,
+          "chromePath": "chrome/ja-jp/tummo.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/tummo.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 57,
+          "chromePath": "chrome/pt-br/tummo.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/tummo.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "breathe-tummo"
+    },
+    "/breathe/ujjayi": {
+      "contentMessages": 95,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 55,
+          "chromePath": "chrome/de-de/ujjayi.json",
+          "publishable": true,
+          "routePath": "routes/de-de/ujjayi.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 55,
+          "chromePath": "chrome/es-es/ujjayi.json",
+          "publishable": true,
+          "routePath": "routes/es-es/ujjayi.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 55,
+          "chromePath": "chrome/fr-fr/ujjayi.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/ujjayi.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 55,
+          "chromePath": "chrome/ja-jp/ujjayi.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/ujjayi.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 55,
+          "chromePath": "chrome/pt-br/ujjayi.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/ujjayi.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "breathe-ujjayi"
+    },
+    "/breathe/wim-hof": {
+      "contentMessages": 94,
+      "locales": {
+        "de-de": {
+          "chromeMessages": 57,
+          "chromePath": "chrome/de-de/wim-hof.json",
+          "publishable": true,
+          "routePath": "routes/de-de/wim-hof.json",
+          "unresolved": 0
+        },
+        "es-es": {
+          "chromeMessages": 57,
+          "chromePath": "chrome/es-es/wim-hof.json",
+          "publishable": true,
+          "routePath": "routes/es-es/wim-hof.json",
+          "unresolved": 0
+        },
+        "fr-fr": {
+          "chromeMessages": 57,
+          "chromePath": "chrome/fr-fr/wim-hof.json",
+          "publishable": true,
+          "routePath": "routes/fr-fr/wim-hof.json",
+          "unresolved": 0
+        },
+        "ja-jp": {
+          "chromeMessages": 57,
+          "chromePath": "chrome/ja-jp/wim-hof.json",
+          "publishable": true,
+          "routePath": "routes/ja-jp/wim-hof.json",
+          "unresolved": 0
+        },
+        "pt-br": {
+          "chromeMessages": 57,
+          "chromePath": "chrome/pt-br/wim-hof.json",
+          "publishable": true,
+          "routePath": "routes/pt-br/wim-hof.json",
+          "unresolved": 0
+        }
+      },
+      "routeId": "breathe-wim-hof"
+    }
+  },
+  "schemaVersion": 1
+}

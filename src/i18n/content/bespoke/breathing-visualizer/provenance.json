@@ -1,0 +1,3536 @@
+{
+  "routeClient": {
+    "locales": {
+      "de-de": {
+        "closeAria": {
+          "placementId": "1d2e5dd0-a140-4601-80ed-78e2c3a90595",
+          "reviewedSourceHash": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed"
+        },
+        "continueWithGoogle": {
+          "placementId": "102eae7c-a85c-4be7-b562-9a2b7760e62b",
+          "reviewedSourceHash": "cce937e891444a7417c696cdd80c0eed11deb383f3c42bdb8b591d5dfcaa398e"
+        },
+        "emailAddressAria": {
+          "placementId": "94d33e9c-6068-46aa-a986-0c7a232f6100",
+          "reviewedSourceHash": "f2488fd4ef4adbc6ac61300083f2c33980e48bb4bbf3c540ad760d61fc36f420"
+        },
+        "emailPlaceholder": {
+          "placementId": "9b34e8c5-c93a-436a-abf5-97e3ab3fb5ed",
+          "reviewedSourceHash": "2837f6fa1c84ecc9f4d745b5df455c27db84dba89d167eb2863ae293994736b5"
+        },
+        "justNow": {
+          "placementId": "5881d294-0514-4bd4-b0e9-81abef54ad6a",
+          "reviewedSourceHash": "7ddb44d8a533a7535d85cedddf35d7f3414632ad4e10a0d7ca697723e1d97993"
+        },
+        "modeName": {
+          "placementId": "814f8fc9-9824-41ad-8db5-a7de431ec73d",
+          "reviewedSourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095"
+        },
+        "oneTapNoPassword": {
+          "placementId": "a84a28cb-93c0-4544-8e02-654eb2e802dc",
+          "reviewedSourceHash": "2d05edde2700731b408e66b88b0625ab0122322c3850062c075f16eb43b7d349"
+        },
+        "saveSessionAria": {
+          "placementId": "4c60a2ea-12d2-4344-bfee-63c2f0c25a48",
+          "reviewedSourceHash": "4f338bb6f491836f59e6de2f3c49e8a402e9f646f223a280cb7627d8a5d9229d"
+        },
+        "saveWithEmail": {
+          "placementId": "51401406-8193-4070-a718-4622b1192091",
+          "reviewedSourceHash": "392502efc3a96ad2eeca901c39fcd6a82f02115ae5fe1018f0bb198d27a6438e"
+        },
+        "sendLink": {
+          "placementId": "17a29464-66c2-468e-b7d4-b3de1d6c9dce",
+          "reviewedSourceHash": "b386634c8b4382c837083126db57b819a9ec415563057903646df6121dd026d1"
+        },
+        "sessionComplete": {
+          "placementId": "3759cf51-cc2f-4a05-9b97-b35f071bbdb3",
+          "reviewedSourceHash": "91aa92ee57681bee4dc26ff99de5f27d024ecca4f583b99b46cc879b0f54cf8c"
+        },
+        "title": {
+          "placementId": "3ec15fd4-7561-4af9-883c-ed65622fdef6",
+          "reviewedSourceHash": "dc6151531a9458f0fd1cd4f986e4205ca241f154d7069b4824d2feedbfb812c4"
+        }
+      },
+      "es-es": {
+        "closeAria": {
+          "placementId": "1d2e5dd0-a140-4601-80ed-78e2c3a90595",
+          "reviewedSourceHash": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed"
+        },
+        "continueWithGoogle": {
+          "placementId": "102eae7c-a85c-4be7-b562-9a2b7760e62b",
+          "reviewedSourceHash": "cce937e891444a7417c696cdd80c0eed11deb383f3c42bdb8b591d5dfcaa398e"
+        },
+        "emailAddressAria": {
+          "placementId": "94d33e9c-6068-46aa-a986-0c7a232f6100",
+          "reviewedSourceHash": "f2488fd4ef4adbc6ac61300083f2c33980e48bb4bbf3c540ad760d61fc36f420"
+        },
+        "emailPlaceholder": {
+          "placementId": "9b34e8c5-c93a-436a-abf5-97e3ab3fb5ed",
+          "reviewedSourceHash": "2837f6fa1c84ecc9f4d745b5df455c27db84dba89d167eb2863ae293994736b5"
+        },
+        "justNow": {
+          "placementId": "5881d294-0514-4bd4-b0e9-81abef54ad6a",
+          "reviewedSourceHash": "7ddb44d8a533a7535d85cedddf35d7f3414632ad4e10a0d7ca697723e1d97993"
+        },
+        "modeName": {
+          "placementId": "814f8fc9-9824-41ad-8db5-a7de431ec73d",
+          "reviewedSourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095"
+        },
+        "oneTapNoPassword": {
+          "placementId": "a84a28cb-93c0-4544-8e02-654eb2e802dc",
+          "reviewedSourceHash": "2d05edde2700731b408e66b88b0625ab0122322c3850062c075f16eb43b7d349"
+        },
+        "saveSessionAria": {
+          "placementId": "4c60a2ea-12d2-4344-bfee-63c2f0c25a48",
+          "reviewedSourceHash": "4f338bb6f491836f59e6de2f3c49e8a402e9f646f223a280cb7627d8a5d9229d"
+        },
+        "saveWithEmail": {
+          "placementId": "51401406-8193-4070-a718-4622b1192091",
+          "reviewedSourceHash": "392502efc3a96ad2eeca901c39fcd6a82f02115ae5fe1018f0bb198d27a6438e"
+        },
+        "sendLink": {
+          "placementId": "17a29464-66c2-468e-b7d4-b3de1d6c9dce",
+          "reviewedSourceHash": "b386634c8b4382c837083126db57b819a9ec415563057903646df6121dd026d1"
+        },
+        "sessionComplete": {
+          "placementId": "3759cf51-cc2f-4a05-9b97-b35f071bbdb3",
+          "reviewedSourceHash": "91aa92ee57681bee4dc26ff99de5f27d024ecca4f583b99b46cc879b0f54cf8c"
+        },
+        "title": {
+          "placementId": "3ec15fd4-7561-4af9-883c-ed65622fdef6",
+          "reviewedSourceHash": "dc6151531a9458f0fd1cd4f986e4205ca241f154d7069b4824d2feedbfb812c4"
+        }
+      },
+      "fr-fr": {
+        "closeAria": {
+          "placementId": "1d2e5dd0-a140-4601-80ed-78e2c3a90595",
+          "reviewedSourceHash": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed"
+        },
+        "continueWithGoogle": {
+          "placementId": "102eae7c-a85c-4be7-b562-9a2b7760e62b",
+          "reviewedSourceHash": "cce937e891444a7417c696cdd80c0eed11deb383f3c42bdb8b591d5dfcaa398e"
+        },
+        "emailAddressAria": {
+          "placementId": "94d33e9c-6068-46aa-a986-0c7a232f6100",
+          "reviewedSourceHash": "f2488fd4ef4adbc6ac61300083f2c33980e48bb4bbf3c540ad760d61fc36f420"
+        },
+        "emailPlaceholder": {
+          "placementId": "9b34e8c5-c93a-436a-abf5-97e3ab3fb5ed",
+          "reviewedSourceHash": "2837f6fa1c84ecc9f4d745b5df455c27db84dba89d167eb2863ae293994736b5"
+        },
+        "justNow": {
+          "placementId": "5881d294-0514-4bd4-b0e9-81abef54ad6a",
+          "reviewedSourceHash": "7ddb44d8a533a7535d85cedddf35d7f3414632ad4e10a0d7ca697723e1d97993"
+        },
+        "modeName": {
+          "placementId": "814f8fc9-9824-41ad-8db5-a7de431ec73d",
+          "reviewedSourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095"
+        },
+        "oneTapNoPassword": {
+          "placementId": "a84a28cb-93c0-4544-8e02-654eb2e802dc",
+          "reviewedSourceHash": "2d05edde2700731b408e66b88b0625ab0122322c3850062c075f16eb43b7d349"
+        },
+        "saveSessionAria": {
+          "placementId": "4c60a2ea-12d2-4344-bfee-63c2f0c25a48",
+          "reviewedSourceHash": "4f338bb6f491836f59e6de2f3c49e8a402e9f646f223a280cb7627d8a5d9229d"
+        },
+        "saveWithEmail": {
+          "placementId": "51401406-8193-4070-a718-4622b1192091",
+          "reviewedSourceHash": "392502efc3a96ad2eeca901c39fcd6a82f02115ae5fe1018f0bb198d27a6438e"
+        },
+        "sendLink": {
+          "placementId": "17a29464-66c2-468e-b7d4-b3de1d6c9dce",
+          "reviewedSourceHash": "b386634c8b4382c837083126db57b819a9ec415563057903646df6121dd026d1"
+        },
+        "sessionComplete": {
+          "placementId": "3759cf51-cc2f-4a05-9b97-b35f071bbdb3",
+          "reviewedSourceHash": "91aa92ee57681bee4dc26ff99de5f27d024ecca4f583b99b46cc879b0f54cf8c"
+        },
+        "title": {
+          "placementId": "3ec15fd4-7561-4af9-883c-ed65622fdef6",
+          "reviewedSourceHash": "dc6151531a9458f0fd1cd4f986e4205ca241f154d7069b4824d2feedbfb812c4"
+        }
+      },
+      "ja-jp": {
+        "closeAria": {
+          "placementId": "1d2e5dd0-a140-4601-80ed-78e2c3a90595",
+          "reviewedSourceHash": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed"
+        },
+        "continueWithGoogle": {
+          "placementId": "102eae7c-a85c-4be7-b562-9a2b7760e62b",
+          "reviewedSourceHash": "cce937e891444a7417c696cdd80c0eed11deb383f3c42bdb8b591d5dfcaa398e"
+        },
+        "emailAddressAria": {
+          "placementId": "94d33e9c-6068-46aa-a986-0c7a232f6100",
+          "reviewedSourceHash": "f2488fd4ef4adbc6ac61300083f2c33980e48bb4bbf3c540ad760d61fc36f420"
+        },
+        "emailPlaceholder": {
+          "placementId": "9b34e8c5-c93a-436a-abf5-97e3ab3fb5ed",
+          "reviewedSourceHash": "2837f6fa1c84ecc9f4d745b5df455c27db84dba89d167eb2863ae293994736b5"
+        },
+        "justNow": {
+          "placementId": "5881d294-0514-4bd4-b0e9-81abef54ad6a",
+          "reviewedSourceHash": "7ddb44d8a533a7535d85cedddf35d7f3414632ad4e10a0d7ca697723e1d97993"
+        },
+        "modeName": {
+          "placementId": "814f8fc9-9824-41ad-8db5-a7de431ec73d",
+          "reviewedSourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095"
+        },
+        "oneTapNoPassword": {
+          "placementId": "a84a28cb-93c0-4544-8e02-654eb2e802dc",
+          "reviewedSourceHash": "2d05edde2700731b408e66b88b0625ab0122322c3850062c075f16eb43b7d349"
+        },
+        "saveSessionAria": {
+          "placementId": "4c60a2ea-12d2-4344-bfee-63c2f0c25a48",
+          "reviewedSourceHash": "4f338bb6f491836f59e6de2f3c49e8a402e9f646f223a280cb7627d8a5d9229d"
+        },
+        "saveWithEmail": {
+          "placementId": "51401406-8193-4070-a718-4622b1192091",
+          "reviewedSourceHash": "392502efc3a96ad2eeca901c39fcd6a82f02115ae5fe1018f0bb198d27a6438e"
+        },
+        "sendLink": {
+          "placementId": "17a29464-66c2-468e-b7d4-b3de1d6c9dce",
+          "reviewedSourceHash": "b386634c8b4382c837083126db57b819a9ec415563057903646df6121dd026d1"
+        },
+        "sessionComplete": {
+          "placementId": "3759cf51-cc2f-4a05-9b97-b35f071bbdb3",
+          "reviewedSourceHash": "91aa92ee57681bee4dc26ff99de5f27d024ecca4f583b99b46cc879b0f54cf8c"
+        },
+        "title": {
+          "placementId": "3ec15fd4-7561-4af9-883c-ed65622fdef6",
+          "reviewedSourceHash": "dc6151531a9458f0fd1cd4f986e4205ca241f154d7069b4824d2feedbfb812c4"
+        }
+      },
+      "pt-br": {
+        "closeAria": {
+          "placementId": "1d2e5dd0-a140-4601-80ed-78e2c3a90595",
+          "reviewedSourceHash": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed"
+        },
+        "continueWithGoogle": {
+          "placementId": "102eae7c-a85c-4be7-b562-9a2b7760e62b",
+          "reviewedSourceHash": "cce937e891444a7417c696cdd80c0eed11deb383f3c42bdb8b591d5dfcaa398e"
+        },
+        "emailAddressAria": {
+          "placementId": "94d33e9c-6068-46aa-a986-0c7a232f6100",
+          "reviewedSourceHash": "f2488fd4ef4adbc6ac61300083f2c33980e48bb4bbf3c540ad760d61fc36f420"
+        },
+        "emailPlaceholder": {
+          "placementId": "9b34e8c5-c93a-436a-abf5-97e3ab3fb5ed",
+          "reviewedSourceHash": "2837f6fa1c84ecc9f4d745b5df455c27db84dba89d167eb2863ae293994736b5"
+        },
+        "justNow": {
+          "placementId": "5881d294-0514-4bd4-b0e9-81abef54ad6a",
+          "reviewedSourceHash": "7ddb44d8a533a7535d85cedddf35d7f3414632ad4e10a0d7ca697723e1d97993"
+        },
+        "modeName": {
+          "placementId": "814f8fc9-9824-41ad-8db5-a7de431ec73d",
+          "reviewedSourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095"
+        },
+        "oneTapNoPassword": {
+          "placementId": "a84a28cb-93c0-4544-8e02-654eb2e802dc",
+          "reviewedSourceHash": "2d05edde2700731b408e66b88b0625ab0122322c3850062c075f16eb43b7d349"
+        },
+        "saveSessionAria": {
+          "placementId": "4c60a2ea-12d2-4344-bfee-63c2f0c25a48",
+          "reviewedSourceHash": "4f338bb6f491836f59e6de2f3c49e8a402e9f646f223a280cb7627d8a5d9229d"
+        },
+        "saveWithEmail": {
+          "placementId": "51401406-8193-4070-a718-4622b1192091",
+          "reviewedSourceHash": "392502efc3a96ad2eeca901c39fcd6a82f02115ae5fe1018f0bb198d27a6438e"
+        },
+        "sendLink": {
+          "placementId": "17a29464-66c2-468e-b7d4-b3de1d6c9dce",
+          "reviewedSourceHash": "b386634c8b4382c837083126db57b819a9ec415563057903646df6121dd026d1"
+        },
+        "sessionComplete": {
+          "placementId": "3759cf51-cc2f-4a05-9b97-b35f071bbdb3",
+          "reviewedSourceHash": "91aa92ee57681bee4dc26ff99de5f27d024ecca4f583b99b46cc879b0f54cf8c"
+        },
+        "title": {
+          "placementId": "3ec15fd4-7561-4af9-883c-ed65622fdef6",
+          "reviewedSourceHash": "dc6151531a9458f0fd1cd4f986e4205ca241f154d7069b4824d2feedbfb812c4"
+        }
+      }
+    }
+  },
+  "schemaVersion": 1,
+  "server": {
+    "locales": {
+      "de-de": {
+        "benefits.items[0].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0",
+          "sourceHash": "be9ee215b08834af0aedfbfde2ea64f179c38197e32f79e471e8c2a9828c5fed",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[0].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:0",
+          "sourceHash": "92eb18a5c92b1997c18f7049f922f4047948653f3f6ed6786f46b755a5a0aeb5",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[1].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:1",
+          "reviewedSourceHash": "cbecde0119b05e2f408478b7f6f317c04920b81dbe27fb00c1952d636c12241d",
+          "status": "explicit-source-alias"
+        },
+        "benefits.items[1].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:1",
+          "sourceHash": "c0f6145404b0ed07df13c5511cfb7b869445d4ada6aa187406854d076c1ffaeb",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[2].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+          "sourceHash": "700997dd1e50d558392753a44ee34ee03ae2f2d1a150e0a709126dcefe841e7b",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[2].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:2",
+          "sourceHash": "f8e8e2d57b9a126e64e4f38968dd62169443af5d59706f5d3eb66a35e9a7c9b4",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[3].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:3",
+          "sourceHash": "a1c10d1d0ef85df0cad8673b43f1b19435c6fcd324d30c54a65194dd39b5207e",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[3].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:3",
+          "sourceHash": "1b1ad22b9e54dcb1e0086a69fed0ed8ff8c3273ea6e807d74cf20e6faf74995b",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[4].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:4",
+          "sourceHash": "f955589eb29c6efc8a12cde3f33997b15736fc6fa32e889efc72fd4e70ff5403",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[4].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:4",
+          "sourceHash": "18b1e4f75e5f772da87e8856aaca3473a53d5168139e463a7aede9ba0784bafe",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[5].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:5",
+          "reviewedSourceHash": "c72436d635bf4a0490151d3300c100e49cb68f584de8be5979629a23c7be2c91",
+          "status": "explicit-source-alias"
+        },
+        "benefits.items[5].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:5",
+          "sourceHash": "ade2ecff3de92c32529cd2f650ebb1f80e0aa650ab3b274cd5f656ba67576854",
+          "status": "route-catalog-exact"
+        },
+        "benefits.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h2.text-3xl.font-semibold:ctx:heading:pos:0",
+          "sourceHash": "ac5f1fa8450b17362cd0a68682de15c8b7234f26cf2e092d8b90c17970c12919",
+          "status": "route-catalog-exact"
+        },
+        "breadcrumb.current": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+          "sourceHash": "691bac1a73d730f878bba88a218220f00d75ad4398e8a7a1db1bbae0cc225d17",
+          "status": "route-catalog-exact"
+        },
+        "breadcrumb.home": {
+          "catalogRoute": "/languages",
+          "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+          "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "explicit-source-alias"
+        },
+        "faq.items[0].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:21",
+          "reviewedSourceHash": "86858b2caf248d8974d084e9b80b7a426dfed1e019c8e5d2b9e8231a21483263",
+          "status": "explicit-source-alias"
+        },
+        "faq.items[0].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:18",
+          "sourceHash": "609f5c72a1e16668c4551475dee66b7277bf8206c3c479700136011dca1e81e6",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[1].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:22",
+          "sourceHash": "aa4ef5cf472fda95e47ac38fdab8f0151e6eb09a73eec01442ca8d78b0d611be",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[1].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:19",
+          "sourceHash": "7caf116b86274d284931369911c9a305549006193cf0a035b98ad7adc3e4abea",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[2].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:23",
+          "sourceHash": "db93c20ef12052e8f45d76482aeb1cf5e97f9c9c342ae5aa6d32f4c461e1e467",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[2].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:20",
+          "sourceHash": "46f2cd40bba398008dac5302a0e334af44cc3299eec380d740f2aec50c42be0c",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[3].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:24",
+          "reviewedSourceHash": "cd96ee11183fbb6b9aa6fa7e1b4556f33655538b1634a0b48a6056e4db5a5494",
+          "status": "explicit-source-alias"
+        },
+        "faq.items[3].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:21",
+          "sourceHash": "e816952e9f3745ce8235b70325b087bc3e8c39224bcc0fde160ccfd274235b16",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[4].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:25",
+          "sourceHash": "3e9360d257399c1bc2b99b10eb8affa0bbd8aca043ec85f946cd5e447e16e297",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[4].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:22",
+          "reviewedSourceHash": "3cd039c4c57c0ab4a578cf37d321202ac52532106a2debf6f284f78e6c3f4148",
+          "status": "explicit-source-alias"
+        },
+        "faq.items[5].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:28",
+          "sourceHash": "595ffa730924ce8a5ebb82bb5f347e26d18ccbc4e08fa58f38e702f176ffbe00",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[5].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:23",
+          "reviewedSourceHash": "917306f04386d301551ad94f6d409a2bc8a489bad152321086b7afc025b89c30",
+          "status": "explicit-source-alias"
+        },
+        "faq.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:2",
+          "sourceHash": "6de98c8dfed3c841994fe02375b39b82d820fb6bfecadd04cb8fafae534ded41",
+          "status": "route-catalog-exact"
+        },
+        "footer.links[0]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+          "sourceHash": "22e15f613c5814a58cbed85e29ccb140163120a2078d81fdcc8e0ddadc18297a",
+          "status": "route-catalog-exact"
+        },
+        "footer.links[1]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+          "sourceHash": "9893ff995bf32a4fd2eba93151c93b612a5e4d573ed42a771d64767366f93c15",
+          "status": "route-catalog-exact"
+        },
+        "footer.links[2]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+          "sourceHash": "a172cedcae47474b615c54d510a5d84a8dea3032e958587430b413538be3f333",
+          "status": "route-catalog-exact"
+        },
+        "footer.links[3]": {
+          "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "reviewed-replacement"
+        },
+        "footer.links[4]": {
+          "catalogRoute": "/box-breathing-before-presentation",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+          "reviewedSourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "explicit-source-alias"
+        },
+        "footer.links[5]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:5",
+          "sourceHash": "8a1eed22144c3f04485a69eea62bfd3fa1026de39dc252b77ba9b1f3f08b00ec",
+          "status": "route-catalog-exact"
+        },
+        "footer.links[6]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:6",
+          "reviewedSourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "explicit-source-alias"
+        },
+        "footer.warning": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-xs.text-muted-foreground:ctx:p:pos:0",
+          "sourceHash": "bf026a4fdec2493c6a144f5eedab2e4bab79a840a793aca9671dd267fe468c08",
+          "status": "route-catalog-exact"
+        },
+        "hero.eyebrow": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+          "reviewedSourceHash": "5cf5a342bb2d2be7537bd52cf55105ee4f3c10ae93c528822abac68cfd81fe84",
+          "status": "explicit-source-alias"
+        },
+        "hero.intro": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.max-w-xl.text-lg:ctx:p:pos:0",
+          "reviewedSourceHash": "d4542db1eddf621c2aa03a3361bd60927177451712ce96cf88d19e49bf22dd93",
+          "status": "explicit-source-alias"
+        },
+        "hero.pickAction": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:0",
+          "sourceHash": "2fa160ed6ff3b158cfd15b70ec3b927b2b09683f09cd93499e3389bd39dfb0fc",
+          "status": "route-catalog-exact"
+        },
+        "hero.startAction": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.bg-primary:ctx:link:pos:0",
+          "reviewedSourceHash": "b1c52ee3677debeb3b2e7dc8b41d1da1b08c02241ec1cc1f35d28637afcecf5c",
+          "status": "explicit-source-alias"
+        },
+        "hero.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+          "sourceHash": "ed29f0797e2ca3d5c63e5eb69ba48aa8b9d4d9384a2bac46e3e062fcd141d47e",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[0].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:18",
+          "reviewedSourceHash": "5ea9754bd648b2ed44252d8b294ac6272d15beb7bee96cb0c4ff6866a0d4eb8a",
+          "status": "explicit-source-alias"
+        },
+        "howItWorks.steps[0].label": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-sm.uppercase:ctx:p:pos:0",
+          "sourceHash": "9a2deff46ae163a6c486098a08b796b7f8d506fb0a25eeec025f306b33b79aeb",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[0].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.mt-2.text-lg:ctx:heading:pos:0",
+          "sourceHash": "89bd8e4203e2943f5e85801b74dca5bfd52a63d2194a1bd995c94490bd62e03d",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[1].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:19",
+          "sourceHash": "238205df312a042773e74cdfa7429f46d03dfced944ed011417feaf22361a08c",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[1].label": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-sm.uppercase:ctx:p:pos:1",
+          "sourceHash": "b866bdec8609395c426e4b55c5cacea263aca002c3a71fc1c6de431611bd73d5",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[1].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.mt-2.text-lg:ctx:heading:pos:1",
+          "sourceHash": "5930accc6f2c222299831575b0f13b0d38e759d00856655a9044f94432a23e0c",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[2].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:20",
+          "sourceHash": "31be652d5d124fbbb0127739b64119bda4af2ae3660708048613403495c61ecc",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[2].label": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-sm.uppercase:ctx:p:pos:2",
+          "sourceHash": "6602bd1d9766873f73b4bee9141154fd4a4cede34109738d48b9af214983b50e",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[2].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.mt-2.text-lg:ctx:heading:pos:2",
+          "sourceHash": "1b95c1ec96ae2005336819a8cf47bb0d66b0f07caa79e4af4c93d11cfdb98a7d",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.title": {
+          "reviewedSourceHash": "9c870aa6e5e93270170d5a81277ad3e623afe8d4efd186d3e28f3d2b646d52e6",
+          "status": "reviewed-replacement"
+        },
+        "metadata.description": {
+          "reviewedSourceHash": "7bb5f35b22af307cfc8e93b3ee5a69d9884cf4d994e3d72fc81220891a68ae8d",
+          "status": "reviewed-replacement"
+        },
+        "metadata.imageAlt": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "head:meta:property:og:title",
+          "reviewedSourceHash": "bbf3da4af872c7d456f3f7211e290ecd997d87adb18feb55036ef778d9231f1a",
+          "status": "explicit-source-alias"
+        },
+        "metadata.socialDescription": {
+          "reviewedSourceHash": "8e06ea8720b796069dbcc59bced331f3b7f7bdefe0eda4c9481c93a601b58d6a",
+          "status": "reviewed-replacement"
+        },
+        "metadata.socialTitle": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "head:meta:property:og:title",
+          "reviewedSourceHash": "e625ed394e4e888f66a3b6f13ef7acd69c8c587c55607cd84fa6af6cdbd6e8a7",
+          "status": "explicit-source-alias"
+        },
+        "metadata.title": {
+          "reviewedSourceHash": "a844960b6682a79d53bb8036b0d71694b930350f1242388d1f417755a9d23a35",
+          "status": "reviewed-replacement"
+        },
+        "metadata.twitterDescription": {
+          "reviewedSourceHash": "18dac1314e98f38ae63a5590b4fc40d0816804ff223882889bbf8093adb985be",
+          "status": "reviewed-replacement"
+        },
+        "metadata.twitterTitle": {
+          "reviewedSourceHash": "5369e4d123c65081b1a24d92d7894d54ee96450e09c66886985f5bc8779a1112",
+          "status": "reviewed-replacement"
+        },
+        "moreTools.body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:29",
+          "reviewedSourceHash": "17fd44746d1258368adbff4fda60b3b2c9c883f73161495572fd1f5298a5b909",
+          "status": "explicit-source-alias"
+        },
+        "moreTools.links[0]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:1",
+          "sourceHash": "391216fe72f6e097ac3451584d19aca342d6cf4e5f2afec99239597644d59aca",
+          "status": "route-catalog-exact"
+        },
+        "moreTools.links[1]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:2",
+          "sourceHash": "5cbad754c09c71b816a09d0f9eb8aa86b1affd253a4fbae0fb3a69e34dd261fa",
+          "status": "route-catalog-exact"
+        },
+        "moreTools.links[2]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:3",
+          "reviewedSourceHash": "1230ed3dc5abc72aae7b8b60c4a23e4262b728573041d7c50ac5f299dd1c4635",
+          "status": "explicit-source-alias"
+        },
+        "moreTools.links[3]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:4",
+          "sourceHash": "584af04e1c39d0d3f7d126f7f3090910826fca1c1d97f5aff4d8d882f4d6d2c1",
+          "status": "route-catalog-exact"
+        },
+        "moreTools.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:3",
+          "sourceHash": "0490b5a4e1cfa02aea89cde087d347afbe9e6ab0edd0b5d3c7b553dfb5afd2de",
+          "status": "route-catalog-exact"
+        },
+        "quickAnswer.body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-3.text-sm:ctx:p:pos:0",
+          "reviewedSourceHash": "b45b2793086cf6f98ee5ed4c74b5f1dab9527346afdb1773a97c6045b0ccfbb2",
+          "status": "explicit-source-alias"
+        },
+        "quickAnswer.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+          "sourceHash": "d0552a1d13fced68f95592d73907c81d1e2a1c8a0cf97a990898b74f33ca5bb9",
+          "status": "route-catalog-exact"
+        },
+        "runtime.modeDisplayName": {
+          "placementId": "814f8fc9-9824-41ad-8db5-a7de431ec73d",
+          "reviewedSourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095",
+          "status": "route-client-reviewed"
+        },
+        "schema.howToDescription": {
+          "reviewedSourceHash": "803afd1c41ccca5d1430d0b7a2138c235671f8a5e038a4fbab18fdc9ee3cc27c",
+          "status": "reviewed-replacement"
+        },
+        "schema.howToName": {
+          "reviewedSourceHash": "5f2b7d29d64574b522ab44f86aefc15f7c9c5ae4a4cb2479c344d7c465b9ee62",
+          "status": "reviewed-replacement"
+        },
+        "techniques.items.4-7-8.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:1",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.4-7-8.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:7",
+          "sourceHash": "b8b87d0e0a748623c947b0b60ebcc666b79f0e377fe84a007924437f4f744da0",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.4-7-8.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:7",
+          "sourceHash": "8c33dd913053776416cc792e835815530ed3dd1959b49b96a0e6552ee41c6ca6",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.9d-breathwork.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:12",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.9d-breathwork.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+          "sourceHash": "0f5af73cbb1b7b65e186ec092db2890740ddfececcd107c304d70f78257c6563",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.9d-breathwork.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:10",
+          "sourceHash": "559035c4417f7d5d382b4fcbf3ac8c970f14354fcbddba9f7ee5f813f5be2146",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.belly.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:8",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.belly.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:14",
+          "sourceHash": "44e7a58aeb0e6e76cc428fe5ac7667f8c689bd2007c50a83bad97d8db41bd7f7",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.belly.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:14",
+          "sourceHash": "bc1a31b3e31f3433ad0beacf8c7267ab23c9ceb0812eeb940504bb00f04b694b",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.box.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:0",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.box.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:6",
+          "sourceHash": "f3f22c571d7daa9016e1cb8d69e027ab181d94d965c1cd0716dcd80aa081b353",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.box.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:6",
+          "sourceHash": "5a0058dc555e6cf62b19f5ccb523ecf3425c30867dbd4cf63c41ab094a82e462",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.breath-of-fire.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:11",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.breath-of-fire.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:17",
+          "sourceHash": "513ec0318ace561ba1c9c6465c133c205469d4a7e22586d2a6df24bb5671e002",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.breath-of-fire.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:17",
+          "sourceHash": "7e698e658b7ea87716fb67194e13472092dd5045d11eb2332da331147375aea7",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.buteyko.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:9",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.buteyko.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:15",
+          "sourceHash": "2aee2fb30bd5041f7986c2a9b46d6c3bc406ada921400aa8b17050fc541fc082",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.buteyko.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:15",
+          "sourceHash": "ffcdcb0455ef1332128eac84985ed3c50f817b052510c2dc9d3b246e6ac8c4d3",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.coherent.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:2",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.coherent.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:8",
+          "sourceHash": "69f81d2294ec4104d55f6c3764e35479e240dd4c2519f28ed10bc3a288c0455f",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.coherent.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:8",
+          "sourceHash": "1897cdabe66cd62756b823942a0c13ffde6dcf07f91f3cf765c5bbbe92141b8c",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.hope-cartel-9d-breathwork.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:13",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.hope-cartel-9d-breathwork.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+          "sourceHash": "0f5af73cbb1b7b65e186ec092db2890740ddfececcd107c304d70f78257c6563",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.hope-cartel-9d-breathwork.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:10",
+          "sourceHash": "559035c4417f7d5d382b4fcbf3ac8c970f14354fcbddba9f7ee5f813f5be2146",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.nadi-shodhana.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:6",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.nadi-shodhana.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:12",
+          "sourceHash": "37990d99968de0a16ea545d583b5f21281356c3f00ee9d0a0c20111d8e80b5e1",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.nadi-shodhana.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:12",
+          "sourceHash": "ca1422343154b5484798e41defa719e20604e8e6800961dba8decee1f558d333",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.physiological-sigh.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:3",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.physiological-sigh.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:9",
+          "sourceHash": "c48fb413fc31115ab4368c7ae7c414887853285d95faf63fc0c0e6a966c0d983",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.physiological-sigh.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:9",
+          "sourceHash": "c222314959d712b618e9df904a7b426bf72da9666e4fa32c773d6e2eef01256e",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.pursed-lip.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:5",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.pursed-lip.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:11",
+          "sourceHash": "6b865432e75cfeef9de289b1531c31c0827a3c1dac233e4effbf8540e7b47515",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.pursed-lip.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:11",
+          "sourceHash": "56ab9f0b15e7cb2ceec3b5b985ace9ed42769efbeb03878658026fcc1300f255",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.tummo.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:10",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.tummo.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:16",
+          "sourceHash": "bbd3143214e7f12e29b41e8106b27d94f3897b252d9dbe2e20cb1f1dff26022b",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.tummo.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:16",
+          "sourceHash": "9680ee79485f141dfc08ee11d73b3cf69e1cefdb451d628be314487fd2260860",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.ujjayi.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:7",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.ujjayi.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:13",
+          "sourceHash": "2ffdf42747f6faaec04382dfb14590e6968cb3b4c8d7e62b131e8a41f1a8cdb4",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.ujjayi.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:13",
+          "sourceHash": "0d753106c28bc88d284d260f1d8964e01e9774ba2f8a82af503cd6af7d7338cb",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.wim-hof.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:4",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.wim-hof.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+          "sourceHash": "0f5af73cbb1b7b65e186ec092db2890740ddfececcd107c304d70f78257c6563",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.wim-hof.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:10",
+          "sourceHash": "559035c4417f7d5d382b4fcbf3ac8c970f14354fcbddba9f7ee5f813f5be2146",
+          "status": "route-catalog-exact"
+        },
+        "techniques.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h2.text-3xl.font-semibold:ctx:heading:pos:1",
+          "sourceHash": "1124f9e0610f54c4a5032c2aabfcc635701b00bd4a4a9840b17c820fc1f26bc9",
+          "status": "route-catalog-exact"
+        }
+      },
+      "es-es": {
+        "benefits.items[0].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0",
+          "sourceHash": "be9ee215b08834af0aedfbfde2ea64f179c38197e32f79e471e8c2a9828c5fed",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[0].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:0",
+          "sourceHash": "92eb18a5c92b1997c18f7049f922f4047948653f3f6ed6786f46b755a5a0aeb5",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[1].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:1",
+          "reviewedSourceHash": "cbecde0119b05e2f408478b7f6f317c04920b81dbe27fb00c1952d636c12241d",
+          "status": "explicit-source-alias"
+        },
+        "benefits.items[1].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:1",
+          "sourceHash": "c0f6145404b0ed07df13c5511cfb7b869445d4ada6aa187406854d076c1ffaeb",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[2].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+          "sourceHash": "700997dd1e50d558392753a44ee34ee03ae2f2d1a150e0a709126dcefe841e7b",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[2].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:2",
+          "sourceHash": "f8e8e2d57b9a126e64e4f38968dd62169443af5d59706f5d3eb66a35e9a7c9b4",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[3].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:3",
+          "sourceHash": "a1c10d1d0ef85df0cad8673b43f1b19435c6fcd324d30c54a65194dd39b5207e",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[3].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:3",
+          "sourceHash": "1b1ad22b9e54dcb1e0086a69fed0ed8ff8c3273ea6e807d74cf20e6faf74995b",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[4].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:4",
+          "sourceHash": "f955589eb29c6efc8a12cde3f33997b15736fc6fa32e889efc72fd4e70ff5403",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[4].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:4",
+          "sourceHash": "18b1e4f75e5f772da87e8856aaca3473a53d5168139e463a7aede9ba0784bafe",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[5].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:5",
+          "reviewedSourceHash": "c72436d635bf4a0490151d3300c100e49cb68f584de8be5979629a23c7be2c91",
+          "status": "explicit-source-alias"
+        },
+        "benefits.items[5].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:5",
+          "sourceHash": "ade2ecff3de92c32529cd2f650ebb1f80e0aa650ab3b274cd5f656ba67576854",
+          "status": "route-catalog-exact"
+        },
+        "benefits.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h2.text-3xl.font-semibold:ctx:heading:pos:0",
+          "sourceHash": "ac5f1fa8450b17362cd0a68682de15c8b7234f26cf2e092d8b90c17970c12919",
+          "status": "route-catalog-exact"
+        },
+        "breadcrumb.current": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+          "sourceHash": "691bac1a73d730f878bba88a218220f00d75ad4398e8a7a1db1bbae0cc225d17",
+          "status": "route-catalog-exact"
+        },
+        "breadcrumb.home": {
+          "catalogRoute": "/languages",
+          "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+          "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "explicit-source-alias"
+        },
+        "faq.items[0].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:21",
+          "reviewedSourceHash": "86858b2caf248d8974d084e9b80b7a426dfed1e019c8e5d2b9e8231a21483263",
+          "status": "explicit-source-alias"
+        },
+        "faq.items[0].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:18",
+          "sourceHash": "609f5c72a1e16668c4551475dee66b7277bf8206c3c479700136011dca1e81e6",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[1].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:22",
+          "sourceHash": "aa4ef5cf472fda95e47ac38fdab8f0151e6eb09a73eec01442ca8d78b0d611be",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[1].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:19",
+          "sourceHash": "7caf116b86274d284931369911c9a305549006193cf0a035b98ad7adc3e4abea",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[2].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:23",
+          "sourceHash": "db93c20ef12052e8f45d76482aeb1cf5e97f9c9c342ae5aa6d32f4c461e1e467",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[2].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:20",
+          "sourceHash": "46f2cd40bba398008dac5302a0e334af44cc3299eec380d740f2aec50c42be0c",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[3].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:24",
+          "reviewedSourceHash": "cd96ee11183fbb6b9aa6fa7e1b4556f33655538b1634a0b48a6056e4db5a5494",
+          "status": "explicit-source-alias"
+        },
+        "faq.items[3].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:21",
+          "sourceHash": "e816952e9f3745ce8235b70325b087bc3e8c39224bcc0fde160ccfd274235b16",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[4].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:25",
+          "sourceHash": "3e9360d257399c1bc2b99b10eb8affa0bbd8aca043ec85f946cd5e447e16e297",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[4].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:22",
+          "reviewedSourceHash": "3cd039c4c57c0ab4a578cf37d321202ac52532106a2debf6f284f78e6c3f4148",
+          "status": "explicit-source-alias"
+        },
+        "faq.items[5].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:28",
+          "sourceHash": "595ffa730924ce8a5ebb82bb5f347e26d18ccbc4e08fa58f38e702f176ffbe00",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[5].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:23",
+          "reviewedSourceHash": "917306f04386d301551ad94f6d409a2bc8a489bad152321086b7afc025b89c30",
+          "status": "explicit-source-alias"
+        },
+        "faq.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:2",
+          "sourceHash": "6de98c8dfed3c841994fe02375b39b82d820fb6bfecadd04cb8fafae534ded41",
+          "status": "route-catalog-exact"
+        },
+        "footer.links[0]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+          "sourceHash": "22e15f613c5814a58cbed85e29ccb140163120a2078d81fdcc8e0ddadc18297a",
+          "status": "route-catalog-exact"
+        },
+        "footer.links[1]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+          "sourceHash": "9893ff995bf32a4fd2eba93151c93b612a5e4d573ed42a771d64767366f93c15",
+          "status": "route-catalog-exact"
+        },
+        "footer.links[2]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+          "sourceHash": "a172cedcae47474b615c54d510a5d84a8dea3032e958587430b413538be3f333",
+          "status": "route-catalog-exact"
+        },
+        "footer.links[3]": {
+          "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "reviewed-replacement"
+        },
+        "footer.links[4]": {
+          "catalogRoute": "/box-breathing-before-presentation",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+          "reviewedSourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "explicit-source-alias"
+        },
+        "footer.links[5]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:5",
+          "sourceHash": "8a1eed22144c3f04485a69eea62bfd3fa1026de39dc252b77ba9b1f3f08b00ec",
+          "status": "route-catalog-exact"
+        },
+        "footer.links[6]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:6",
+          "reviewedSourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "explicit-source-alias"
+        },
+        "footer.warning": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-xs.text-muted-foreground:ctx:p:pos:0",
+          "sourceHash": "bf026a4fdec2493c6a144f5eedab2e4bab79a840a793aca9671dd267fe468c08",
+          "status": "route-catalog-exact"
+        },
+        "hero.eyebrow": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+          "reviewedSourceHash": "5cf5a342bb2d2be7537bd52cf55105ee4f3c10ae93c528822abac68cfd81fe84",
+          "status": "explicit-source-alias"
+        },
+        "hero.intro": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.max-w-xl.text-lg:ctx:p:pos:0",
+          "reviewedSourceHash": "d4542db1eddf621c2aa03a3361bd60927177451712ce96cf88d19e49bf22dd93",
+          "status": "explicit-source-alias"
+        },
+        "hero.pickAction": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:0",
+          "sourceHash": "2fa160ed6ff3b158cfd15b70ec3b927b2b09683f09cd93499e3389bd39dfb0fc",
+          "status": "route-catalog-exact"
+        },
+        "hero.startAction": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.bg-primary:ctx:link:pos:0",
+          "reviewedSourceHash": "b1c52ee3677debeb3b2e7dc8b41d1da1b08c02241ec1cc1f35d28637afcecf5c",
+          "status": "explicit-source-alias"
+        },
+        "hero.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+          "sourceHash": "ed29f0797e2ca3d5c63e5eb69ba48aa8b9d4d9384a2bac46e3e062fcd141d47e",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[0].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:18",
+          "reviewedSourceHash": "5ea9754bd648b2ed44252d8b294ac6272d15beb7bee96cb0c4ff6866a0d4eb8a",
+          "status": "explicit-source-alias"
+        },
+        "howItWorks.steps[0].label": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-sm.uppercase:ctx:p:pos:0",
+          "sourceHash": "9a2deff46ae163a6c486098a08b796b7f8d506fb0a25eeec025f306b33b79aeb",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[0].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.mt-2.text-lg:ctx:heading:pos:0",
+          "sourceHash": "89bd8e4203e2943f5e85801b74dca5bfd52a63d2194a1bd995c94490bd62e03d",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[1].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:19",
+          "sourceHash": "238205df312a042773e74cdfa7429f46d03dfced944ed011417feaf22361a08c",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[1].label": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-sm.uppercase:ctx:p:pos:1",
+          "sourceHash": "b866bdec8609395c426e4b55c5cacea263aca002c3a71fc1c6de431611bd73d5",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[1].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.mt-2.text-lg:ctx:heading:pos:1",
+          "sourceHash": "5930accc6f2c222299831575b0f13b0d38e759d00856655a9044f94432a23e0c",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[2].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:20",
+          "sourceHash": "31be652d5d124fbbb0127739b64119bda4af2ae3660708048613403495c61ecc",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[2].label": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-sm.uppercase:ctx:p:pos:2",
+          "sourceHash": "6602bd1d9766873f73b4bee9141154fd4a4cede34109738d48b9af214983b50e",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[2].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.mt-2.text-lg:ctx:heading:pos:2",
+          "sourceHash": "1b95c1ec96ae2005336819a8cf47bb0d66b0f07caa79e4af4c93d11cfdb98a7d",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.title": {
+          "reviewedSourceHash": "9c870aa6e5e93270170d5a81277ad3e623afe8d4efd186d3e28f3d2b646d52e6",
+          "status": "reviewed-replacement"
+        },
+        "metadata.description": {
+          "reviewedSourceHash": "7bb5f35b22af307cfc8e93b3ee5a69d9884cf4d994e3d72fc81220891a68ae8d",
+          "status": "reviewed-replacement"
+        },
+        "metadata.imageAlt": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "head:meta:property:og:title",
+          "reviewedSourceHash": "bbf3da4af872c7d456f3f7211e290ecd997d87adb18feb55036ef778d9231f1a",
+          "status": "explicit-source-alias"
+        },
+        "metadata.socialDescription": {
+          "reviewedSourceHash": "8e06ea8720b796069dbcc59bced331f3b7f7bdefe0eda4c9481c93a601b58d6a",
+          "status": "reviewed-replacement"
+        },
+        "metadata.socialTitle": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "head:meta:property:og:title",
+          "reviewedSourceHash": "e625ed394e4e888f66a3b6f13ef7acd69c8c587c55607cd84fa6af6cdbd6e8a7",
+          "status": "explicit-source-alias"
+        },
+        "metadata.title": {
+          "reviewedSourceHash": "a844960b6682a79d53bb8036b0d71694b930350f1242388d1f417755a9d23a35",
+          "status": "reviewed-replacement"
+        },
+        "metadata.twitterDescription": {
+          "reviewedSourceHash": "18dac1314e98f38ae63a5590b4fc40d0816804ff223882889bbf8093adb985be",
+          "status": "reviewed-replacement"
+        },
+        "metadata.twitterTitle": {
+          "reviewedSourceHash": "5369e4d123c65081b1a24d92d7894d54ee96450e09c66886985f5bc8779a1112",
+          "status": "reviewed-replacement"
+        },
+        "moreTools.body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:29",
+          "reviewedSourceHash": "17fd44746d1258368adbff4fda60b3b2c9c883f73161495572fd1f5298a5b909",
+          "status": "explicit-source-alias"
+        },
+        "moreTools.links[0]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:1",
+          "sourceHash": "391216fe72f6e097ac3451584d19aca342d6cf4e5f2afec99239597644d59aca",
+          "status": "route-catalog-exact"
+        },
+        "moreTools.links[1]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:2",
+          "sourceHash": "5cbad754c09c71b816a09d0f9eb8aa86b1affd253a4fbae0fb3a69e34dd261fa",
+          "status": "route-catalog-exact"
+        },
+        "moreTools.links[2]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:3",
+          "reviewedSourceHash": "1230ed3dc5abc72aae7b8b60c4a23e4262b728573041d7c50ac5f299dd1c4635",
+          "status": "explicit-source-alias"
+        },
+        "moreTools.links[3]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:4",
+          "sourceHash": "584af04e1c39d0d3f7d126f7f3090910826fca1c1d97f5aff4d8d882f4d6d2c1",
+          "status": "route-catalog-exact"
+        },
+        "moreTools.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:3",
+          "sourceHash": "0490b5a4e1cfa02aea89cde087d347afbe9e6ab0edd0b5d3c7b553dfb5afd2de",
+          "status": "route-catalog-exact"
+        },
+        "quickAnswer.body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-3.text-sm:ctx:p:pos:0",
+          "reviewedSourceHash": "b45b2793086cf6f98ee5ed4c74b5f1dab9527346afdb1773a97c6045b0ccfbb2",
+          "status": "explicit-source-alias"
+        },
+        "quickAnswer.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+          "sourceHash": "d0552a1d13fced68f95592d73907c81d1e2a1c8a0cf97a990898b74f33ca5bb9",
+          "status": "route-catalog-exact"
+        },
+        "runtime.modeDisplayName": {
+          "placementId": "814f8fc9-9824-41ad-8db5-a7de431ec73d",
+          "reviewedSourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095",
+          "status": "route-client-reviewed"
+        },
+        "schema.howToDescription": {
+          "reviewedSourceHash": "803afd1c41ccca5d1430d0b7a2138c235671f8a5e038a4fbab18fdc9ee3cc27c",
+          "status": "reviewed-replacement"
+        },
+        "schema.howToName": {
+          "reviewedSourceHash": "5f2b7d29d64574b522ab44f86aefc15f7c9c5ae4a4cb2479c344d7c465b9ee62",
+          "status": "reviewed-replacement"
+        },
+        "techniques.items.4-7-8.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:1",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.4-7-8.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:7",
+          "sourceHash": "b8b87d0e0a748623c947b0b60ebcc666b79f0e377fe84a007924437f4f744da0",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.4-7-8.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:7",
+          "sourceHash": "8c33dd913053776416cc792e835815530ed3dd1959b49b96a0e6552ee41c6ca6",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.9d-breathwork.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:12",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.9d-breathwork.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+          "sourceHash": "0f5af73cbb1b7b65e186ec092db2890740ddfececcd107c304d70f78257c6563",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.9d-breathwork.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:10",
+          "sourceHash": "559035c4417f7d5d382b4fcbf3ac8c970f14354fcbddba9f7ee5f813f5be2146",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.belly.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:8",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.belly.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:14",
+          "sourceHash": "44e7a58aeb0e6e76cc428fe5ac7667f8c689bd2007c50a83bad97d8db41bd7f7",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.belly.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:14",
+          "sourceHash": "bc1a31b3e31f3433ad0beacf8c7267ab23c9ceb0812eeb940504bb00f04b694b",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.box.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:0",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.box.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:6",
+          "sourceHash": "f3f22c571d7daa9016e1cb8d69e027ab181d94d965c1cd0716dcd80aa081b353",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.box.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:6",
+          "sourceHash": "5a0058dc555e6cf62b19f5ccb523ecf3425c30867dbd4cf63c41ab094a82e462",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.breath-of-fire.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:11",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.breath-of-fire.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:17",
+          "sourceHash": "513ec0318ace561ba1c9c6465c133c205469d4a7e22586d2a6df24bb5671e002",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.breath-of-fire.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:17",
+          "sourceHash": "7e698e658b7ea87716fb67194e13472092dd5045d11eb2332da331147375aea7",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.buteyko.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:9",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.buteyko.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:15",
+          "sourceHash": "2aee2fb30bd5041f7986c2a9b46d6c3bc406ada921400aa8b17050fc541fc082",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.buteyko.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:15",
+          "sourceHash": "ffcdcb0455ef1332128eac84985ed3c50f817b052510c2dc9d3b246e6ac8c4d3",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.coherent.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:2",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.coherent.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:8",
+          "sourceHash": "69f81d2294ec4104d55f6c3764e35479e240dd4c2519f28ed10bc3a288c0455f",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.coherent.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:8",
+          "sourceHash": "1897cdabe66cd62756b823942a0c13ffde6dcf07f91f3cf765c5bbbe92141b8c",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.hope-cartel-9d-breathwork.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:13",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.hope-cartel-9d-breathwork.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+          "sourceHash": "0f5af73cbb1b7b65e186ec092db2890740ddfececcd107c304d70f78257c6563",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.hope-cartel-9d-breathwork.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:10",
+          "sourceHash": "559035c4417f7d5d382b4fcbf3ac8c970f14354fcbddba9f7ee5f813f5be2146",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.nadi-shodhana.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:6",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.nadi-shodhana.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:12",
+          "sourceHash": "37990d99968de0a16ea545d583b5f21281356c3f00ee9d0a0c20111d8e80b5e1",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.nadi-shodhana.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:12",
+          "sourceHash": "ca1422343154b5484798e41defa719e20604e8e6800961dba8decee1f558d333",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.physiological-sigh.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:3",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.physiological-sigh.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:9",
+          "sourceHash": "c48fb413fc31115ab4368c7ae7c414887853285d95faf63fc0c0e6a966c0d983",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.physiological-sigh.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:9",
+          "sourceHash": "c222314959d712b618e9df904a7b426bf72da9666e4fa32c773d6e2eef01256e",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.pursed-lip.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:5",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.pursed-lip.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:11",
+          "sourceHash": "6b865432e75cfeef9de289b1531c31c0827a3c1dac233e4effbf8540e7b47515",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.pursed-lip.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:11",
+          "sourceHash": "56ab9f0b15e7cb2ceec3b5b985ace9ed42769efbeb03878658026fcc1300f255",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.tummo.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:10",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.tummo.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:16",
+          "sourceHash": "bbd3143214e7f12e29b41e8106b27d94f3897b252d9dbe2e20cb1f1dff26022b",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.tummo.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:16",
+          "sourceHash": "9680ee79485f141dfc08ee11d73b3cf69e1cefdb451d628be314487fd2260860",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.ujjayi.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:7",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.ujjayi.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:13",
+          "sourceHash": "2ffdf42747f6faaec04382dfb14590e6968cb3b4c8d7e62b131e8a41f1a8cdb4",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.ujjayi.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:13",
+          "sourceHash": "0d753106c28bc88d284d260f1d8964e01e9774ba2f8a82af503cd6af7d7338cb",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.wim-hof.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:4",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.wim-hof.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+          "sourceHash": "0f5af73cbb1b7b65e186ec092db2890740ddfececcd107c304d70f78257c6563",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.wim-hof.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:10",
+          "sourceHash": "559035c4417f7d5d382b4fcbf3ac8c970f14354fcbddba9f7ee5f813f5be2146",
+          "status": "route-catalog-exact"
+        },
+        "techniques.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h2.text-3xl.font-semibold:ctx:heading:pos:1",
+          "sourceHash": "1124f9e0610f54c4a5032c2aabfcc635701b00bd4a4a9840b17c820fc1f26bc9",
+          "status": "route-catalog-exact"
+        }
+      },
+      "fr-fr": {
+        "benefits.items[0].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0",
+          "sourceHash": "be9ee215b08834af0aedfbfde2ea64f179c38197e32f79e471e8c2a9828c5fed",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[0].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:0",
+          "sourceHash": "92eb18a5c92b1997c18f7049f922f4047948653f3f6ed6786f46b755a5a0aeb5",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[1].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:1",
+          "reviewedSourceHash": "cbecde0119b05e2f408478b7f6f317c04920b81dbe27fb00c1952d636c12241d",
+          "status": "explicit-source-alias"
+        },
+        "benefits.items[1].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:1",
+          "sourceHash": "c0f6145404b0ed07df13c5511cfb7b869445d4ada6aa187406854d076c1ffaeb",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[2].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+          "sourceHash": "700997dd1e50d558392753a44ee34ee03ae2f2d1a150e0a709126dcefe841e7b",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[2].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:2",
+          "sourceHash": "f8e8e2d57b9a126e64e4f38968dd62169443af5d59706f5d3eb66a35e9a7c9b4",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[3].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:3",
+          "sourceHash": "a1c10d1d0ef85df0cad8673b43f1b19435c6fcd324d30c54a65194dd39b5207e",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[3].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:3",
+          "sourceHash": "1b1ad22b9e54dcb1e0086a69fed0ed8ff8c3273ea6e807d74cf20e6faf74995b",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[4].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:4",
+          "sourceHash": "f955589eb29c6efc8a12cde3f33997b15736fc6fa32e889efc72fd4e70ff5403",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[4].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:4",
+          "sourceHash": "18b1e4f75e5f772da87e8856aaca3473a53d5168139e463a7aede9ba0784bafe",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[5].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:5",
+          "reviewedSourceHash": "c72436d635bf4a0490151d3300c100e49cb68f584de8be5979629a23c7be2c91",
+          "status": "explicit-source-alias"
+        },
+        "benefits.items[5].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:5",
+          "sourceHash": "ade2ecff3de92c32529cd2f650ebb1f80e0aa650ab3b274cd5f656ba67576854",
+          "status": "route-catalog-exact"
+        },
+        "benefits.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h2.text-3xl.font-semibold:ctx:heading:pos:0",
+          "sourceHash": "ac5f1fa8450b17362cd0a68682de15c8b7234f26cf2e092d8b90c17970c12919",
+          "status": "route-catalog-exact"
+        },
+        "breadcrumb.current": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+          "sourceHash": "691bac1a73d730f878bba88a218220f00d75ad4398e8a7a1db1bbae0cc225d17",
+          "status": "route-catalog-exact"
+        },
+        "breadcrumb.home": {
+          "catalogRoute": "/languages",
+          "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+          "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "explicit-source-alias"
+        },
+        "faq.items[0].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:21",
+          "reviewedSourceHash": "86858b2caf248d8974d084e9b80b7a426dfed1e019c8e5d2b9e8231a21483263",
+          "status": "explicit-source-alias"
+        },
+        "faq.items[0].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:18",
+          "sourceHash": "609f5c72a1e16668c4551475dee66b7277bf8206c3c479700136011dca1e81e6",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[1].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:22",
+          "sourceHash": "aa4ef5cf472fda95e47ac38fdab8f0151e6eb09a73eec01442ca8d78b0d611be",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[1].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:19",
+          "sourceHash": "7caf116b86274d284931369911c9a305549006193cf0a035b98ad7adc3e4abea",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[2].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:23",
+          "sourceHash": "db93c20ef12052e8f45d76482aeb1cf5e97f9c9c342ae5aa6d32f4c461e1e467",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[2].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:20",
+          "sourceHash": "46f2cd40bba398008dac5302a0e334af44cc3299eec380d740f2aec50c42be0c",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[3].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:24",
+          "reviewedSourceHash": "cd96ee11183fbb6b9aa6fa7e1b4556f33655538b1634a0b48a6056e4db5a5494",
+          "status": "explicit-source-alias"
+        },
+        "faq.items[3].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:21",
+          "sourceHash": "e816952e9f3745ce8235b70325b087bc3e8c39224bcc0fde160ccfd274235b16",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[4].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:25",
+          "sourceHash": "3e9360d257399c1bc2b99b10eb8affa0bbd8aca043ec85f946cd5e447e16e297",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[4].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:22",
+          "reviewedSourceHash": "3cd039c4c57c0ab4a578cf37d321202ac52532106a2debf6f284f78e6c3f4148",
+          "status": "explicit-source-alias"
+        },
+        "faq.items[5].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:28",
+          "sourceHash": "595ffa730924ce8a5ebb82bb5f347e26d18ccbc4e08fa58f38e702f176ffbe00",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[5].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:23",
+          "reviewedSourceHash": "917306f04386d301551ad94f6d409a2bc8a489bad152321086b7afc025b89c30",
+          "status": "explicit-source-alias"
+        },
+        "faq.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:2",
+          "sourceHash": "6de98c8dfed3c841994fe02375b39b82d820fb6bfecadd04cb8fafae534ded41",
+          "status": "route-catalog-exact"
+        },
+        "footer.links[0]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+          "sourceHash": "22e15f613c5814a58cbed85e29ccb140163120a2078d81fdcc8e0ddadc18297a",
+          "status": "route-catalog-exact"
+        },
+        "footer.links[1]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+          "sourceHash": "9893ff995bf32a4fd2eba93151c93b612a5e4d573ed42a771d64767366f93c15",
+          "status": "route-catalog-exact"
+        },
+        "footer.links[2]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+          "sourceHash": "a172cedcae47474b615c54d510a5d84a8dea3032e958587430b413538be3f333",
+          "status": "route-catalog-exact"
+        },
+        "footer.links[3]": {
+          "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "reviewed-replacement"
+        },
+        "footer.links[4]": {
+          "catalogRoute": "/box-breathing-before-presentation",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+          "reviewedSourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "explicit-source-alias"
+        },
+        "footer.links[5]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:5",
+          "sourceHash": "8a1eed22144c3f04485a69eea62bfd3fa1026de39dc252b77ba9b1f3f08b00ec",
+          "status": "route-catalog-exact"
+        },
+        "footer.links[6]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:6",
+          "reviewedSourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "explicit-source-alias"
+        },
+        "footer.warning": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-xs.text-muted-foreground:ctx:p:pos:0",
+          "sourceHash": "bf026a4fdec2493c6a144f5eedab2e4bab79a840a793aca9671dd267fe468c08",
+          "status": "route-catalog-exact"
+        },
+        "hero.eyebrow": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+          "reviewedSourceHash": "5cf5a342bb2d2be7537bd52cf55105ee4f3c10ae93c528822abac68cfd81fe84",
+          "status": "explicit-source-alias"
+        },
+        "hero.intro": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.max-w-xl.text-lg:ctx:p:pos:0",
+          "reviewedSourceHash": "d4542db1eddf621c2aa03a3361bd60927177451712ce96cf88d19e49bf22dd93",
+          "status": "explicit-source-alias"
+        },
+        "hero.pickAction": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:0",
+          "sourceHash": "2fa160ed6ff3b158cfd15b70ec3b927b2b09683f09cd93499e3389bd39dfb0fc",
+          "status": "route-catalog-exact"
+        },
+        "hero.startAction": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.bg-primary:ctx:link:pos:0",
+          "reviewedSourceHash": "b1c52ee3677debeb3b2e7dc8b41d1da1b08c02241ec1cc1f35d28637afcecf5c",
+          "status": "explicit-source-alias"
+        },
+        "hero.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+          "sourceHash": "ed29f0797e2ca3d5c63e5eb69ba48aa8b9d4d9384a2bac46e3e062fcd141d47e",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[0].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:18",
+          "reviewedSourceHash": "5ea9754bd648b2ed44252d8b294ac6272d15beb7bee96cb0c4ff6866a0d4eb8a",
+          "status": "explicit-source-alias"
+        },
+        "howItWorks.steps[0].label": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-sm.uppercase:ctx:p:pos:0",
+          "sourceHash": "9a2deff46ae163a6c486098a08b796b7f8d506fb0a25eeec025f306b33b79aeb",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[0].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.mt-2.text-lg:ctx:heading:pos:0",
+          "sourceHash": "89bd8e4203e2943f5e85801b74dca5bfd52a63d2194a1bd995c94490bd62e03d",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[1].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:19",
+          "sourceHash": "238205df312a042773e74cdfa7429f46d03dfced944ed011417feaf22361a08c",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[1].label": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-sm.uppercase:ctx:p:pos:1",
+          "sourceHash": "b866bdec8609395c426e4b55c5cacea263aca002c3a71fc1c6de431611bd73d5",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[1].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.mt-2.text-lg:ctx:heading:pos:1",
+          "sourceHash": "5930accc6f2c222299831575b0f13b0d38e759d00856655a9044f94432a23e0c",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[2].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:20",
+          "sourceHash": "31be652d5d124fbbb0127739b64119bda4af2ae3660708048613403495c61ecc",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[2].label": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-sm.uppercase:ctx:p:pos:2",
+          "sourceHash": "6602bd1d9766873f73b4bee9141154fd4a4cede34109738d48b9af214983b50e",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[2].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.mt-2.text-lg:ctx:heading:pos:2",
+          "sourceHash": "1b95c1ec96ae2005336819a8cf47bb0d66b0f07caa79e4af4c93d11cfdb98a7d",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.title": {
+          "reviewedSourceHash": "9c870aa6e5e93270170d5a81277ad3e623afe8d4efd186d3e28f3d2b646d52e6",
+          "status": "reviewed-replacement"
+        },
+        "metadata.description": {
+          "reviewedSourceHash": "7bb5f35b22af307cfc8e93b3ee5a69d9884cf4d994e3d72fc81220891a68ae8d",
+          "status": "reviewed-replacement"
+        },
+        "metadata.imageAlt": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "head:meta:property:og:title",
+          "reviewedSourceHash": "bbf3da4af872c7d456f3f7211e290ecd997d87adb18feb55036ef778d9231f1a",
+          "status": "explicit-source-alias"
+        },
+        "metadata.socialDescription": {
+          "reviewedSourceHash": "8e06ea8720b796069dbcc59bced331f3b7f7bdefe0eda4c9481c93a601b58d6a",
+          "status": "reviewed-replacement"
+        },
+        "metadata.socialTitle": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "head:meta:property:og:title",
+          "reviewedSourceHash": "e625ed394e4e888f66a3b6f13ef7acd69c8c587c55607cd84fa6af6cdbd6e8a7",
+          "status": "explicit-source-alias"
+        },
+        "metadata.title": {
+          "reviewedSourceHash": "a844960b6682a79d53bb8036b0d71694b930350f1242388d1f417755a9d23a35",
+          "status": "reviewed-replacement"
+        },
+        "metadata.twitterDescription": {
+          "reviewedSourceHash": "18dac1314e98f38ae63a5590b4fc40d0816804ff223882889bbf8093adb985be",
+          "status": "reviewed-replacement"
+        },
+        "metadata.twitterTitle": {
+          "reviewedSourceHash": "5369e4d123c65081b1a24d92d7894d54ee96450e09c66886985f5bc8779a1112",
+          "status": "reviewed-replacement"
+        },
+        "moreTools.body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:29",
+          "reviewedSourceHash": "17fd44746d1258368adbff4fda60b3b2c9c883f73161495572fd1f5298a5b909",
+          "status": "explicit-source-alias"
+        },
+        "moreTools.links[0]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:1",
+          "sourceHash": "391216fe72f6e097ac3451584d19aca342d6cf4e5f2afec99239597644d59aca",
+          "status": "route-catalog-exact"
+        },
+        "moreTools.links[1]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:2",
+          "sourceHash": "5cbad754c09c71b816a09d0f9eb8aa86b1affd253a4fbae0fb3a69e34dd261fa",
+          "status": "route-catalog-exact"
+        },
+        "moreTools.links[2]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:3",
+          "reviewedSourceHash": "1230ed3dc5abc72aae7b8b60c4a23e4262b728573041d7c50ac5f299dd1c4635",
+          "status": "explicit-source-alias"
+        },
+        "moreTools.links[3]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:4",
+          "sourceHash": "584af04e1c39d0d3f7d126f7f3090910826fca1c1d97f5aff4d8d882f4d6d2c1",
+          "status": "route-catalog-exact"
+        },
+        "moreTools.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:3",
+          "sourceHash": "0490b5a4e1cfa02aea89cde087d347afbe9e6ab0edd0b5d3c7b553dfb5afd2de",
+          "status": "route-catalog-exact"
+        },
+        "quickAnswer.body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-3.text-sm:ctx:p:pos:0",
+          "reviewedSourceHash": "b45b2793086cf6f98ee5ed4c74b5f1dab9527346afdb1773a97c6045b0ccfbb2",
+          "status": "explicit-source-alias"
+        },
+        "quickAnswer.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+          "sourceHash": "d0552a1d13fced68f95592d73907c81d1e2a1c8a0cf97a990898b74f33ca5bb9",
+          "status": "route-catalog-exact"
+        },
+        "runtime.modeDisplayName": {
+          "placementId": "814f8fc9-9824-41ad-8db5-a7de431ec73d",
+          "reviewedSourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095",
+          "status": "route-client-reviewed"
+        },
+        "schema.howToDescription": {
+          "reviewedSourceHash": "803afd1c41ccca5d1430d0b7a2138c235671f8a5e038a4fbab18fdc9ee3cc27c",
+          "status": "reviewed-replacement"
+        },
+        "schema.howToName": {
+          "reviewedSourceHash": "5f2b7d29d64574b522ab44f86aefc15f7c9c5ae4a4cb2479c344d7c465b9ee62",
+          "status": "reviewed-replacement"
+        },
+        "techniques.items.4-7-8.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:1",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.4-7-8.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:7",
+          "sourceHash": "b8b87d0e0a748623c947b0b60ebcc666b79f0e377fe84a007924437f4f744da0",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.4-7-8.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:7",
+          "sourceHash": "8c33dd913053776416cc792e835815530ed3dd1959b49b96a0e6552ee41c6ca6",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.9d-breathwork.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:12",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.9d-breathwork.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+          "sourceHash": "0f5af73cbb1b7b65e186ec092db2890740ddfececcd107c304d70f78257c6563",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.9d-breathwork.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:10",
+          "sourceHash": "559035c4417f7d5d382b4fcbf3ac8c970f14354fcbddba9f7ee5f813f5be2146",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.belly.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:8",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.belly.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:14",
+          "sourceHash": "44e7a58aeb0e6e76cc428fe5ac7667f8c689bd2007c50a83bad97d8db41bd7f7",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.belly.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:14",
+          "sourceHash": "bc1a31b3e31f3433ad0beacf8c7267ab23c9ceb0812eeb940504bb00f04b694b",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.box.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:0",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.box.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:6",
+          "sourceHash": "f3f22c571d7daa9016e1cb8d69e027ab181d94d965c1cd0716dcd80aa081b353",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.box.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:6",
+          "sourceHash": "5a0058dc555e6cf62b19f5ccb523ecf3425c30867dbd4cf63c41ab094a82e462",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.breath-of-fire.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:11",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.breath-of-fire.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:17",
+          "sourceHash": "513ec0318ace561ba1c9c6465c133c205469d4a7e22586d2a6df24bb5671e002",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.breath-of-fire.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:17",
+          "sourceHash": "7e698e658b7ea87716fb67194e13472092dd5045d11eb2332da331147375aea7",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.buteyko.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:9",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.buteyko.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:15",
+          "sourceHash": "2aee2fb30bd5041f7986c2a9b46d6c3bc406ada921400aa8b17050fc541fc082",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.buteyko.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:15",
+          "sourceHash": "ffcdcb0455ef1332128eac84985ed3c50f817b052510c2dc9d3b246e6ac8c4d3",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.coherent.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:2",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.coherent.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:8",
+          "sourceHash": "69f81d2294ec4104d55f6c3764e35479e240dd4c2519f28ed10bc3a288c0455f",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.coherent.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:8",
+          "sourceHash": "1897cdabe66cd62756b823942a0c13ffde6dcf07f91f3cf765c5bbbe92141b8c",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.hope-cartel-9d-breathwork.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:13",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.hope-cartel-9d-breathwork.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+          "sourceHash": "0f5af73cbb1b7b65e186ec092db2890740ddfececcd107c304d70f78257c6563",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.hope-cartel-9d-breathwork.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:10",
+          "sourceHash": "559035c4417f7d5d382b4fcbf3ac8c970f14354fcbddba9f7ee5f813f5be2146",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.nadi-shodhana.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:6",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.nadi-shodhana.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:12",
+          "sourceHash": "37990d99968de0a16ea545d583b5f21281356c3f00ee9d0a0c20111d8e80b5e1",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.nadi-shodhana.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:12",
+          "sourceHash": "ca1422343154b5484798e41defa719e20604e8e6800961dba8decee1f558d333",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.physiological-sigh.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:3",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.physiological-sigh.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:9",
+          "sourceHash": "c48fb413fc31115ab4368c7ae7c414887853285d95faf63fc0c0e6a966c0d983",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.physiological-sigh.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:9",
+          "sourceHash": "c222314959d712b618e9df904a7b426bf72da9666e4fa32c773d6e2eef01256e",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.pursed-lip.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:5",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.pursed-lip.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:11",
+          "sourceHash": "6b865432e75cfeef9de289b1531c31c0827a3c1dac233e4effbf8540e7b47515",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.pursed-lip.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:11",
+          "sourceHash": "56ab9f0b15e7cb2ceec3b5b985ace9ed42769efbeb03878658026fcc1300f255",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.tummo.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:10",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.tummo.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:16",
+          "sourceHash": "bbd3143214e7f12e29b41e8106b27d94f3897b252d9dbe2e20cb1f1dff26022b",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.tummo.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:16",
+          "sourceHash": "9680ee79485f141dfc08ee11d73b3cf69e1cefdb451d628be314487fd2260860",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.ujjayi.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:7",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.ujjayi.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:13",
+          "sourceHash": "2ffdf42747f6faaec04382dfb14590e6968cb3b4c8d7e62b131e8a41f1a8cdb4",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.ujjayi.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:13",
+          "sourceHash": "0d753106c28bc88d284d260f1d8964e01e9774ba2f8a82af503cd6af7d7338cb",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.wim-hof.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:4",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.wim-hof.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+          "sourceHash": "0f5af73cbb1b7b65e186ec092db2890740ddfececcd107c304d70f78257c6563",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.wim-hof.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:10",
+          "sourceHash": "559035c4417f7d5d382b4fcbf3ac8c970f14354fcbddba9f7ee5f813f5be2146",
+          "status": "route-catalog-exact"
+        },
+        "techniques.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h2.text-3xl.font-semibold:ctx:heading:pos:1",
+          "sourceHash": "1124f9e0610f54c4a5032c2aabfcc635701b00bd4a4a9840b17c820fc1f26bc9",
+          "status": "route-catalog-exact"
+        }
+      },
+      "ja-jp": {
+        "benefits.items[0].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0",
+          "sourceHash": "be9ee215b08834af0aedfbfde2ea64f179c38197e32f79e471e8c2a9828c5fed",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[0].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:0",
+          "sourceHash": "92eb18a5c92b1997c18f7049f922f4047948653f3f6ed6786f46b755a5a0aeb5",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[1].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:1",
+          "reviewedSourceHash": "cbecde0119b05e2f408478b7f6f317c04920b81dbe27fb00c1952d636c12241d",
+          "status": "explicit-source-alias"
+        },
+        "benefits.items[1].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:1",
+          "sourceHash": "c0f6145404b0ed07df13c5511cfb7b869445d4ada6aa187406854d076c1ffaeb",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[2].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+          "sourceHash": "700997dd1e50d558392753a44ee34ee03ae2f2d1a150e0a709126dcefe841e7b",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[2].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:2",
+          "sourceHash": "f8e8e2d57b9a126e64e4f38968dd62169443af5d59706f5d3eb66a35e9a7c9b4",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[3].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:3",
+          "sourceHash": "a1c10d1d0ef85df0cad8673b43f1b19435c6fcd324d30c54a65194dd39b5207e",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[3].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:3",
+          "sourceHash": "1b1ad22b9e54dcb1e0086a69fed0ed8ff8c3273ea6e807d74cf20e6faf74995b",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[4].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:4",
+          "sourceHash": "f955589eb29c6efc8a12cde3f33997b15736fc6fa32e889efc72fd4e70ff5403",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[4].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:4",
+          "sourceHash": "18b1e4f75e5f772da87e8856aaca3473a53d5168139e463a7aede9ba0784bafe",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[5].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:5",
+          "reviewedSourceHash": "c72436d635bf4a0490151d3300c100e49cb68f584de8be5979629a23c7be2c91",
+          "status": "explicit-source-alias"
+        },
+        "benefits.items[5].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:5",
+          "sourceHash": "ade2ecff3de92c32529cd2f650ebb1f80e0aa650ab3b274cd5f656ba67576854",
+          "status": "route-catalog-exact"
+        },
+        "benefits.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h2.text-3xl.font-semibold:ctx:heading:pos:0",
+          "sourceHash": "ac5f1fa8450b17362cd0a68682de15c8b7234f26cf2e092d8b90c17970c12919",
+          "status": "route-catalog-exact"
+        },
+        "breadcrumb.current": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+          "sourceHash": "691bac1a73d730f878bba88a218220f00d75ad4398e8a7a1db1bbae0cc225d17",
+          "status": "route-catalog-exact"
+        },
+        "breadcrumb.home": {
+          "catalogRoute": "/languages",
+          "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+          "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "explicit-source-alias"
+        },
+        "faq.items[0].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:21",
+          "reviewedSourceHash": "86858b2caf248d8974d084e9b80b7a426dfed1e019c8e5d2b9e8231a21483263",
+          "status": "explicit-source-alias"
+        },
+        "faq.items[0].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:18",
+          "sourceHash": "609f5c72a1e16668c4551475dee66b7277bf8206c3c479700136011dca1e81e6",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[1].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:22",
+          "sourceHash": "aa4ef5cf472fda95e47ac38fdab8f0151e6eb09a73eec01442ca8d78b0d611be",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[1].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:19",
+          "sourceHash": "7caf116b86274d284931369911c9a305549006193cf0a035b98ad7adc3e4abea",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[2].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:23",
+          "sourceHash": "db93c20ef12052e8f45d76482aeb1cf5e97f9c9c342ae5aa6d32f4c461e1e467",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[2].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:20",
+          "sourceHash": "46f2cd40bba398008dac5302a0e334af44cc3299eec380d740f2aec50c42be0c",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[3].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:24",
+          "reviewedSourceHash": "cd96ee11183fbb6b9aa6fa7e1b4556f33655538b1634a0b48a6056e4db5a5494",
+          "status": "explicit-source-alias"
+        },
+        "faq.items[3].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:21",
+          "sourceHash": "e816952e9f3745ce8235b70325b087bc3e8c39224bcc0fde160ccfd274235b16",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[4].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:25",
+          "sourceHash": "3e9360d257399c1bc2b99b10eb8affa0bbd8aca043ec85f946cd5e447e16e297",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[4].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:22",
+          "reviewedSourceHash": "3cd039c4c57c0ab4a578cf37d321202ac52532106a2debf6f284f78e6c3f4148",
+          "status": "explicit-source-alias"
+        },
+        "faq.items[5].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:28",
+          "sourceHash": "595ffa730924ce8a5ebb82bb5f347e26d18ccbc4e08fa58f38e702f176ffbe00",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[5].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:23",
+          "reviewedSourceHash": "917306f04386d301551ad94f6d409a2bc8a489bad152321086b7afc025b89c30",
+          "status": "explicit-source-alias"
+        },
+        "faq.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:2",
+          "sourceHash": "6de98c8dfed3c841994fe02375b39b82d820fb6bfecadd04cb8fafae534ded41",
+          "status": "route-catalog-exact"
+        },
+        "footer.links[0]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+          "sourceHash": "22e15f613c5814a58cbed85e29ccb140163120a2078d81fdcc8e0ddadc18297a",
+          "status": "route-catalog-exact"
+        },
+        "footer.links[1]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+          "sourceHash": "9893ff995bf32a4fd2eba93151c93b612a5e4d573ed42a771d64767366f93c15",
+          "status": "route-catalog-exact"
+        },
+        "footer.links[2]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+          "sourceHash": "a172cedcae47474b615c54d510a5d84a8dea3032e958587430b413538be3f333",
+          "status": "route-catalog-exact"
+        },
+        "footer.links[3]": {
+          "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "reviewed-replacement"
+        },
+        "footer.links[4]": {
+          "catalogRoute": "/box-breathing-before-presentation",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+          "reviewedSourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "explicit-source-alias"
+        },
+        "footer.links[5]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:5",
+          "sourceHash": "8a1eed22144c3f04485a69eea62bfd3fa1026de39dc252b77ba9b1f3f08b00ec",
+          "status": "route-catalog-exact"
+        },
+        "footer.links[6]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:6",
+          "reviewedSourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "explicit-source-alias"
+        },
+        "footer.warning": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-xs.text-muted-foreground:ctx:p:pos:0",
+          "sourceHash": "bf026a4fdec2493c6a144f5eedab2e4bab79a840a793aca9671dd267fe468c08",
+          "status": "route-catalog-exact"
+        },
+        "hero.eyebrow": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+          "reviewedSourceHash": "5cf5a342bb2d2be7537bd52cf55105ee4f3c10ae93c528822abac68cfd81fe84",
+          "status": "explicit-source-alias"
+        },
+        "hero.intro": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.max-w-xl.text-lg:ctx:p:pos:0",
+          "reviewedSourceHash": "d4542db1eddf621c2aa03a3361bd60927177451712ce96cf88d19e49bf22dd93",
+          "status": "explicit-source-alias"
+        },
+        "hero.pickAction": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:0",
+          "sourceHash": "2fa160ed6ff3b158cfd15b70ec3b927b2b09683f09cd93499e3389bd39dfb0fc",
+          "status": "route-catalog-exact"
+        },
+        "hero.startAction": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.bg-primary:ctx:link:pos:0",
+          "reviewedSourceHash": "b1c52ee3677debeb3b2e7dc8b41d1da1b08c02241ec1cc1f35d28637afcecf5c",
+          "status": "explicit-source-alias"
+        },
+        "hero.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+          "sourceHash": "ed29f0797e2ca3d5c63e5eb69ba48aa8b9d4d9384a2bac46e3e062fcd141d47e",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[0].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:18",
+          "reviewedSourceHash": "5ea9754bd648b2ed44252d8b294ac6272d15beb7bee96cb0c4ff6866a0d4eb8a",
+          "status": "explicit-source-alias"
+        },
+        "howItWorks.steps[0].label": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-sm.uppercase:ctx:p:pos:0",
+          "sourceHash": "9a2deff46ae163a6c486098a08b796b7f8d506fb0a25eeec025f306b33b79aeb",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[0].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.mt-2.text-lg:ctx:heading:pos:0",
+          "sourceHash": "89bd8e4203e2943f5e85801b74dca5bfd52a63d2194a1bd995c94490bd62e03d",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[1].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:19",
+          "sourceHash": "238205df312a042773e74cdfa7429f46d03dfced944ed011417feaf22361a08c",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[1].label": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-sm.uppercase:ctx:p:pos:1",
+          "sourceHash": "b866bdec8609395c426e4b55c5cacea263aca002c3a71fc1c6de431611bd73d5",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[1].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.mt-2.text-lg:ctx:heading:pos:1",
+          "sourceHash": "5930accc6f2c222299831575b0f13b0d38e759d00856655a9044f94432a23e0c",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[2].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:20",
+          "sourceHash": "31be652d5d124fbbb0127739b64119bda4af2ae3660708048613403495c61ecc",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[2].label": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-sm.uppercase:ctx:p:pos:2",
+          "sourceHash": "6602bd1d9766873f73b4bee9141154fd4a4cede34109738d48b9af214983b50e",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[2].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.mt-2.text-lg:ctx:heading:pos:2",
+          "sourceHash": "1b95c1ec96ae2005336819a8cf47bb0d66b0f07caa79e4af4c93d11cfdb98a7d",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.title": {
+          "reviewedSourceHash": "9c870aa6e5e93270170d5a81277ad3e623afe8d4efd186d3e28f3d2b646d52e6",
+          "status": "reviewed-replacement"
+        },
+        "metadata.description": {
+          "reviewedSourceHash": "7bb5f35b22af307cfc8e93b3ee5a69d9884cf4d994e3d72fc81220891a68ae8d",
+          "status": "reviewed-replacement"
+        },
+        "metadata.imageAlt": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "head:meta:property:og:title",
+          "reviewedSourceHash": "bbf3da4af872c7d456f3f7211e290ecd997d87adb18feb55036ef778d9231f1a",
+          "status": "explicit-source-alias"
+        },
+        "metadata.socialDescription": {
+          "reviewedSourceHash": "8e06ea8720b796069dbcc59bced331f3b7f7bdefe0eda4c9481c93a601b58d6a",
+          "status": "reviewed-replacement"
+        },
+        "metadata.socialTitle": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "head:meta:property:og:title",
+          "reviewedSourceHash": "e625ed394e4e888f66a3b6f13ef7acd69c8c587c55607cd84fa6af6cdbd6e8a7",
+          "status": "explicit-source-alias"
+        },
+        "metadata.title": {
+          "reviewedSourceHash": "a844960b6682a79d53bb8036b0d71694b930350f1242388d1f417755a9d23a35",
+          "status": "reviewed-replacement"
+        },
+        "metadata.twitterDescription": {
+          "reviewedSourceHash": "18dac1314e98f38ae63a5590b4fc40d0816804ff223882889bbf8093adb985be",
+          "status": "reviewed-replacement"
+        },
+        "metadata.twitterTitle": {
+          "reviewedSourceHash": "5369e4d123c65081b1a24d92d7894d54ee96450e09c66886985f5bc8779a1112",
+          "status": "reviewed-replacement"
+        },
+        "moreTools.body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:29",
+          "reviewedSourceHash": "17fd44746d1258368adbff4fda60b3b2c9c883f73161495572fd1f5298a5b909",
+          "status": "explicit-source-alias"
+        },
+        "moreTools.links[0]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:1",
+          "sourceHash": "391216fe72f6e097ac3451584d19aca342d6cf4e5f2afec99239597644d59aca",
+          "status": "route-catalog-exact"
+        },
+        "moreTools.links[1]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:2",
+          "sourceHash": "5cbad754c09c71b816a09d0f9eb8aa86b1affd253a4fbae0fb3a69e34dd261fa",
+          "status": "route-catalog-exact"
+        },
+        "moreTools.links[2]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:3",
+          "reviewedSourceHash": "1230ed3dc5abc72aae7b8b60c4a23e4262b728573041d7c50ac5f299dd1c4635",
+          "status": "explicit-source-alias"
+        },
+        "moreTools.links[3]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:4",
+          "sourceHash": "584af04e1c39d0d3f7d126f7f3090910826fca1c1d97f5aff4d8d882f4d6d2c1",
+          "status": "route-catalog-exact"
+        },
+        "moreTools.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:3",
+          "sourceHash": "0490b5a4e1cfa02aea89cde087d347afbe9e6ab0edd0b5d3c7b553dfb5afd2de",
+          "status": "route-catalog-exact"
+        },
+        "quickAnswer.body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-3.text-sm:ctx:p:pos:0",
+          "reviewedSourceHash": "b45b2793086cf6f98ee5ed4c74b5f1dab9527346afdb1773a97c6045b0ccfbb2",
+          "status": "explicit-source-alias"
+        },
+        "quickAnswer.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+          "sourceHash": "d0552a1d13fced68f95592d73907c81d1e2a1c8a0cf97a990898b74f33ca5bb9",
+          "status": "route-catalog-exact"
+        },
+        "runtime.modeDisplayName": {
+          "placementId": "814f8fc9-9824-41ad-8db5-a7de431ec73d",
+          "reviewedSourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095",
+          "status": "route-client-reviewed"
+        },
+        "schema.howToDescription": {
+          "reviewedSourceHash": "803afd1c41ccca5d1430d0b7a2138c235671f8a5e038a4fbab18fdc9ee3cc27c",
+          "status": "reviewed-replacement"
+        },
+        "schema.howToName": {
+          "reviewedSourceHash": "5f2b7d29d64574b522ab44f86aefc15f7c9c5ae4a4cb2479c344d7c465b9ee62",
+          "status": "reviewed-replacement"
+        },
+        "techniques.items.4-7-8.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:1",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.4-7-8.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:7",
+          "sourceHash": "b8b87d0e0a748623c947b0b60ebcc666b79f0e377fe84a007924437f4f744da0",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.4-7-8.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:7",
+          "sourceHash": "8c33dd913053776416cc792e835815530ed3dd1959b49b96a0e6552ee41c6ca6",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.9d-breathwork.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:12",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.9d-breathwork.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+          "sourceHash": "0f5af73cbb1b7b65e186ec092db2890740ddfececcd107c304d70f78257c6563",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.9d-breathwork.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:10",
+          "sourceHash": "559035c4417f7d5d382b4fcbf3ac8c970f14354fcbddba9f7ee5f813f5be2146",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.belly.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:8",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.belly.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:14",
+          "sourceHash": "44e7a58aeb0e6e76cc428fe5ac7667f8c689bd2007c50a83bad97d8db41bd7f7",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.belly.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:14",
+          "sourceHash": "bc1a31b3e31f3433ad0beacf8c7267ab23c9ceb0812eeb940504bb00f04b694b",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.box.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:0",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.box.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:6",
+          "sourceHash": "f3f22c571d7daa9016e1cb8d69e027ab181d94d965c1cd0716dcd80aa081b353",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.box.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:6",
+          "sourceHash": "5a0058dc555e6cf62b19f5ccb523ecf3425c30867dbd4cf63c41ab094a82e462",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.breath-of-fire.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:11",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.breath-of-fire.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:17",
+          "sourceHash": "513ec0318ace561ba1c9c6465c133c205469d4a7e22586d2a6df24bb5671e002",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.breath-of-fire.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:17",
+          "sourceHash": "7e698e658b7ea87716fb67194e13472092dd5045d11eb2332da331147375aea7",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.buteyko.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:9",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.buteyko.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:15",
+          "sourceHash": "2aee2fb30bd5041f7986c2a9b46d6c3bc406ada921400aa8b17050fc541fc082",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.buteyko.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:15",
+          "sourceHash": "ffcdcb0455ef1332128eac84985ed3c50f817b052510c2dc9d3b246e6ac8c4d3",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.coherent.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:2",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.coherent.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:8",
+          "sourceHash": "69f81d2294ec4104d55f6c3764e35479e240dd4c2519f28ed10bc3a288c0455f",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.coherent.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:8",
+          "sourceHash": "1897cdabe66cd62756b823942a0c13ffde6dcf07f91f3cf765c5bbbe92141b8c",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.hope-cartel-9d-breathwork.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:13",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.hope-cartel-9d-breathwork.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+          "sourceHash": "0f5af73cbb1b7b65e186ec092db2890740ddfececcd107c304d70f78257c6563",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.hope-cartel-9d-breathwork.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:10",
+          "sourceHash": "559035c4417f7d5d382b4fcbf3ac8c970f14354fcbddba9f7ee5f813f5be2146",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.nadi-shodhana.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:6",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.nadi-shodhana.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:12",
+          "sourceHash": "37990d99968de0a16ea545d583b5f21281356c3f00ee9d0a0c20111d8e80b5e1",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.nadi-shodhana.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:12",
+          "sourceHash": "ca1422343154b5484798e41defa719e20604e8e6800961dba8decee1f558d333",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.physiological-sigh.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:3",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.physiological-sigh.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:9",
+          "sourceHash": "c48fb413fc31115ab4368c7ae7c414887853285d95faf63fc0c0e6a966c0d983",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.physiological-sigh.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:9",
+          "sourceHash": "c222314959d712b618e9df904a7b426bf72da9666e4fa32c773d6e2eef01256e",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.pursed-lip.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:5",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.pursed-lip.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:11",
+          "sourceHash": "6b865432e75cfeef9de289b1531c31c0827a3c1dac233e4effbf8540e7b47515",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.pursed-lip.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:11",
+          "sourceHash": "56ab9f0b15e7cb2ceec3b5b985ace9ed42769efbeb03878658026fcc1300f255",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.tummo.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:10",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.tummo.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:16",
+          "sourceHash": "bbd3143214e7f12e29b41e8106b27d94f3897b252d9dbe2e20cb1f1dff26022b",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.tummo.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:16",
+          "sourceHash": "9680ee79485f141dfc08ee11d73b3cf69e1cefdb451d628be314487fd2260860",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.ujjayi.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:7",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.ujjayi.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:13",
+          "sourceHash": "2ffdf42747f6faaec04382dfb14590e6968cb3b4c8d7e62b131e8a41f1a8cdb4",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.ujjayi.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:13",
+          "sourceHash": "0d753106c28bc88d284d260f1d8964e01e9774ba2f8a82af503cd6af7d7338cb",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.wim-hof.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:4",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.wim-hof.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+          "sourceHash": "0f5af73cbb1b7b65e186ec092db2890740ddfececcd107c304d70f78257c6563",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.wim-hof.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:10",
+          "sourceHash": "559035c4417f7d5d382b4fcbf3ac8c970f14354fcbddba9f7ee5f813f5be2146",
+          "status": "route-catalog-exact"
+        },
+        "techniques.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h2.text-3xl.font-semibold:ctx:heading:pos:1",
+          "sourceHash": "1124f9e0610f54c4a5032c2aabfcc635701b00bd4a4a9840b17c820fc1f26bc9",
+          "status": "route-catalog-exact"
+        }
+      },
+      "pt-br": {
+        "benefits.items[0].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0",
+          "sourceHash": "be9ee215b08834af0aedfbfde2ea64f179c38197e32f79e471e8c2a9828c5fed",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[0].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:0",
+          "sourceHash": "92eb18a5c92b1997c18f7049f922f4047948653f3f6ed6786f46b755a5a0aeb5",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[1].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:1",
+          "reviewedSourceHash": "cbecde0119b05e2f408478b7f6f317c04920b81dbe27fb00c1952d636c12241d",
+          "status": "explicit-source-alias"
+        },
+        "benefits.items[1].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:1",
+          "sourceHash": "c0f6145404b0ed07df13c5511cfb7b869445d4ada6aa187406854d076c1ffaeb",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[2].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+          "sourceHash": "700997dd1e50d558392753a44ee34ee03ae2f2d1a150e0a709126dcefe841e7b",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[2].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:2",
+          "sourceHash": "f8e8e2d57b9a126e64e4f38968dd62169443af5d59706f5d3eb66a35e9a7c9b4",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[3].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:3",
+          "sourceHash": "a1c10d1d0ef85df0cad8673b43f1b19435c6fcd324d30c54a65194dd39b5207e",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[3].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:3",
+          "sourceHash": "1b1ad22b9e54dcb1e0086a69fed0ed8ff8c3273ea6e807d74cf20e6faf74995b",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[4].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:4",
+          "sourceHash": "f955589eb29c6efc8a12cde3f33997b15736fc6fa32e889efc72fd4e70ff5403",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[4].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:4",
+          "sourceHash": "18b1e4f75e5f772da87e8856aaca3473a53d5168139e463a7aede9ba0784bafe",
+          "status": "route-catalog-exact"
+        },
+        "benefits.items[5].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:5",
+          "reviewedSourceHash": "c72436d635bf4a0490151d3300c100e49cb68f584de8be5979629a23c7be2c91",
+          "status": "explicit-source-alias"
+        },
+        "benefits.items[5].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:5",
+          "sourceHash": "ade2ecff3de92c32529cd2f650ebb1f80e0aa650ab3b274cd5f656ba67576854",
+          "status": "route-catalog-exact"
+        },
+        "benefits.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h2.text-3xl.font-semibold:ctx:heading:pos:0",
+          "sourceHash": "ac5f1fa8450b17362cd0a68682de15c8b7234f26cf2e092d8b90c17970c12919",
+          "status": "route-catalog-exact"
+        },
+        "breadcrumb.current": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+          "sourceHash": "691bac1a73d730f878bba88a218220f00d75ad4398e8a7a1db1bbae0cc225d17",
+          "status": "route-catalog-exact"
+        },
+        "breadcrumb.home": {
+          "catalogRoute": "/languages",
+          "occurrenceKey": "sel:a.text-muted-foreground.underline-offset-4:ctx:link:pos:0",
+          "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+          "status": "explicit-source-alias"
+        },
+        "faq.items[0].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:21",
+          "reviewedSourceHash": "86858b2caf248d8974d084e9b80b7a426dfed1e019c8e5d2b9e8231a21483263",
+          "status": "explicit-source-alias"
+        },
+        "faq.items[0].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:18",
+          "sourceHash": "609f5c72a1e16668c4551475dee66b7277bf8206c3c479700136011dca1e81e6",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[1].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:22",
+          "sourceHash": "aa4ef5cf472fda95e47ac38fdab8f0151e6eb09a73eec01442ca8d78b0d611be",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[1].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:19",
+          "sourceHash": "7caf116b86274d284931369911c9a305549006193cf0a035b98ad7adc3e4abea",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[2].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:23",
+          "sourceHash": "db93c20ef12052e8f45d76482aeb1cf5e97f9c9c342ae5aa6d32f4c461e1e467",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[2].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:20",
+          "sourceHash": "46f2cd40bba398008dac5302a0e334af44cc3299eec380d740f2aec50c42be0c",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[3].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:24",
+          "reviewedSourceHash": "cd96ee11183fbb6b9aa6fa7e1b4556f33655538b1634a0b48a6056e4db5a5494",
+          "status": "explicit-source-alias"
+        },
+        "faq.items[3].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:21",
+          "sourceHash": "e816952e9f3745ce8235b70325b087bc3e8c39224bcc0fde160ccfd274235b16",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[4].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:25",
+          "sourceHash": "3e9360d257399c1bc2b99b10eb8affa0bbd8aca043ec85f946cd5e447e16e297",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[4].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:22",
+          "reviewedSourceHash": "3cd039c4c57c0ab4a578cf37d321202ac52532106a2debf6f284f78e6c3f4148",
+          "status": "explicit-source-alias"
+        },
+        "faq.items[5].answer": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:28",
+          "sourceHash": "595ffa730924ce8a5ebb82bb5f347e26d18ccbc4e08fa58f38e702f176ffbe00",
+          "status": "route-catalog-exact"
+        },
+        "faq.items[5].question": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:23",
+          "reviewedSourceHash": "917306f04386d301551ad94f6d409a2bc8a489bad152321086b7afc025b89c30",
+          "status": "explicit-source-alias"
+        },
+        "faq.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:2",
+          "sourceHash": "6de98c8dfed3c841994fe02375b39b82d820fb6bfecadd04cb8fafae534ded41",
+          "status": "route-catalog-exact"
+        },
+        "footer.links[0]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+          "sourceHash": "22e15f613c5814a58cbed85e29ccb140163120a2078d81fdcc8e0ddadc18297a",
+          "status": "route-catalog-exact"
+        },
+        "footer.links[1]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+          "sourceHash": "9893ff995bf32a4fd2eba93151c93b612a5e4d573ed42a771d64767366f93c15",
+          "status": "route-catalog-exact"
+        },
+        "footer.links[2]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+          "sourceHash": "a172cedcae47474b615c54d510a5d84a8dea3032e958587430b413538be3f333",
+          "status": "route-catalog-exact"
+        },
+        "footer.links[3]": {
+          "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+          "status": "reviewed-replacement"
+        },
+        "footer.links[4]": {
+          "catalogRoute": "/box-breathing-before-presentation",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+          "reviewedSourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+          "status": "explicit-source-alias"
+        },
+        "footer.links[5]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:5",
+          "sourceHash": "8a1eed22144c3f04485a69eea62bfd3fa1026de39dc252b77ba9b1f3f08b00ec",
+          "status": "route-catalog-exact"
+        },
+        "footer.links[6]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:6",
+          "reviewedSourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+          "status": "explicit-source-alias"
+        },
+        "footer.warning": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-xs.text-muted-foreground:ctx:p:pos:0",
+          "sourceHash": "bf026a4fdec2493c6a144f5eedab2e4bab79a840a793aca9671dd267fe468c08",
+          "status": "route-catalog-exact"
+        },
+        "hero.eyebrow": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+          "reviewedSourceHash": "5cf5a342bb2d2be7537bd52cf55105ee4f3c10ae93c528822abac68cfd81fe84",
+          "status": "explicit-source-alias"
+        },
+        "hero.intro": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.max-w-xl.text-lg:ctx:p:pos:0",
+          "reviewedSourceHash": "d4542db1eddf621c2aa03a3361bd60927177451712ce96cf88d19e49bf22dd93",
+          "status": "explicit-source-alias"
+        },
+        "hero.pickAction": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:0",
+          "sourceHash": "2fa160ed6ff3b158cfd15b70ec3b927b2b09683f09cd93499e3389bd39dfb0fc",
+          "status": "route-catalog-exact"
+        },
+        "hero.startAction": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.bg-primary:ctx:link:pos:0",
+          "reviewedSourceHash": "b1c52ee3677debeb3b2e7dc8b41d1da1b08c02241ec1cc1f35d28637afcecf5c",
+          "status": "explicit-source-alias"
+        },
+        "hero.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+          "sourceHash": "ed29f0797e2ca3d5c63e5eb69ba48aa8b9d4d9384a2bac46e3e062fcd141d47e",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[0].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:18",
+          "reviewedSourceHash": "5ea9754bd648b2ed44252d8b294ac6272d15beb7bee96cb0c4ff6866a0d4eb8a",
+          "status": "explicit-source-alias"
+        },
+        "howItWorks.steps[0].label": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-sm.uppercase:ctx:p:pos:0",
+          "sourceHash": "9a2deff46ae163a6c486098a08b796b7f8d506fb0a25eeec025f306b33b79aeb",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[0].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.mt-2.text-lg:ctx:heading:pos:0",
+          "sourceHash": "89bd8e4203e2943f5e85801b74dca5bfd52a63d2194a1bd995c94490bd62e03d",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[1].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:19",
+          "sourceHash": "238205df312a042773e74cdfa7429f46d03dfced944ed011417feaf22361a08c",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[1].label": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-sm.uppercase:ctx:p:pos:1",
+          "sourceHash": "b866bdec8609395c426e4b55c5cacea263aca002c3a71fc1c6de431611bd73d5",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[1].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.mt-2.text-lg:ctx:heading:pos:1",
+          "sourceHash": "5930accc6f2c222299831575b0f13b0d38e759d00856655a9044f94432a23e0c",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[2].body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:20",
+          "sourceHash": "31be652d5d124fbbb0127739b64119bda4af2ae3660708048613403495c61ecc",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[2].label": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.text-sm.uppercase:ctx:p:pos:2",
+          "sourceHash": "6602bd1d9766873f73b4bee9141154fd4a4cede34109738d48b9af214983b50e",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.steps[2].title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.mt-2.text-lg:ctx:heading:pos:2",
+          "sourceHash": "1b95c1ec96ae2005336819a8cf47bb0d66b0f07caa79e4af4c93d11cfdb98a7d",
+          "status": "route-catalog-exact"
+        },
+        "howItWorks.title": {
+          "reviewedSourceHash": "9c870aa6e5e93270170d5a81277ad3e623afe8d4efd186d3e28f3d2b646d52e6",
+          "status": "reviewed-replacement"
+        },
+        "metadata.description": {
+          "reviewedSourceHash": "7bb5f35b22af307cfc8e93b3ee5a69d9884cf4d994e3d72fc81220891a68ae8d",
+          "status": "reviewed-replacement"
+        },
+        "metadata.imageAlt": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "head:meta:property:og:title",
+          "reviewedSourceHash": "bbf3da4af872c7d456f3f7211e290ecd997d87adb18feb55036ef778d9231f1a",
+          "status": "explicit-source-alias"
+        },
+        "metadata.socialDescription": {
+          "reviewedSourceHash": "8e06ea8720b796069dbcc59bced331f3b7f7bdefe0eda4c9481c93a601b58d6a",
+          "status": "reviewed-replacement"
+        },
+        "metadata.socialTitle": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "head:meta:property:og:title",
+          "reviewedSourceHash": "e625ed394e4e888f66a3b6f13ef7acd69c8c587c55607cd84fa6af6cdbd6e8a7",
+          "status": "explicit-source-alias"
+        },
+        "metadata.title": {
+          "reviewedSourceHash": "a844960b6682a79d53bb8036b0d71694b930350f1242388d1f417755a9d23a35",
+          "status": "reviewed-replacement"
+        },
+        "metadata.twitterDescription": {
+          "reviewedSourceHash": "18dac1314e98f38ae63a5590b4fc40d0816804ff223882889bbf8093adb985be",
+          "status": "reviewed-replacement"
+        },
+        "metadata.twitterTitle": {
+          "reviewedSourceHash": "5369e4d123c65081b1a24d92d7894d54ee96450e09c66886985f5bc8779a1112",
+          "status": "reviewed-replacement"
+        },
+        "moreTools.body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:29",
+          "reviewedSourceHash": "17fd44746d1258368adbff4fda60b3b2c9c883f73161495572fd1f5298a5b909",
+          "status": "explicit-source-alias"
+        },
+        "moreTools.links[0]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:1",
+          "sourceHash": "391216fe72f6e097ac3451584d19aca342d6cf4e5f2afec99239597644d59aca",
+          "status": "route-catalog-exact"
+        },
+        "moreTools.links[1]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:2",
+          "sourceHash": "5cbad754c09c71b816a09d0f9eb8aa86b1affd253a4fbae0fb3a69e34dd261fa",
+          "status": "route-catalog-exact"
+        },
+        "moreTools.links[2]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:3",
+          "reviewedSourceHash": "1230ed3dc5abc72aae7b8b60c4a23e4262b728573041d7c50ac5f299dd1c4635",
+          "status": "explicit-source-alias"
+        },
+        "moreTools.links[3]": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:4",
+          "sourceHash": "584af04e1c39d0d3f7d126f7f3090910826fca1c1d97f5aff4d8d882f4d6d2c1",
+          "status": "route-catalog-exact"
+        },
+        "moreTools.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:3",
+          "sourceHash": "0490b5a4e1cfa02aea89cde087d347afbe9e6ab0edd0b5d3c7b553dfb5afd2de",
+          "status": "route-catalog-exact"
+        },
+        "quickAnswer.body": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-3.text-sm:ctx:p:pos:0",
+          "reviewedSourceHash": "b45b2793086cf6f98ee5ed4c74b5f1dab9527346afdb1773a97c6045b0ccfbb2",
+          "status": "explicit-source-alias"
+        },
+        "quickAnswer.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+          "sourceHash": "d0552a1d13fced68f95592d73907c81d1e2a1c8a0cf97a990898b74f33ca5bb9",
+          "status": "route-catalog-exact"
+        },
+        "runtime.modeDisplayName": {
+          "placementId": "814f8fc9-9824-41ad-8db5-a7de431ec73d",
+          "reviewedSourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095",
+          "status": "route-client-reviewed"
+        },
+        "schema.howToDescription": {
+          "reviewedSourceHash": "803afd1c41ccca5d1430d0b7a2138c235671f8a5e038a4fbab18fdc9ee3cc27c",
+          "status": "reviewed-replacement"
+        },
+        "schema.howToName": {
+          "reviewedSourceHash": "5f2b7d29d64574b522ab44f86aefc15f7c9c5ae4a4cb2479c344d7c465b9ee62",
+          "status": "reviewed-replacement"
+        },
+        "techniques.items.4-7-8.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:1",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.4-7-8.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:7",
+          "sourceHash": "b8b87d0e0a748623c947b0b60ebcc666b79f0e377fe84a007924437f4f744da0",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.4-7-8.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:7",
+          "sourceHash": "8c33dd913053776416cc792e835815530ed3dd1959b49b96a0e6552ee41c6ca6",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.9d-breathwork.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:12",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.9d-breathwork.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+          "sourceHash": "0f5af73cbb1b7b65e186ec092db2890740ddfececcd107c304d70f78257c6563",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.9d-breathwork.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:10",
+          "sourceHash": "559035c4417f7d5d382b4fcbf3ac8c970f14354fcbddba9f7ee5f813f5be2146",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.belly.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:8",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.belly.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:14",
+          "sourceHash": "44e7a58aeb0e6e76cc428fe5ac7667f8c689bd2007c50a83bad97d8db41bd7f7",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.belly.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:14",
+          "sourceHash": "bc1a31b3e31f3433ad0beacf8c7267ab23c9ceb0812eeb940504bb00f04b694b",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.box.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:0",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.box.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:6",
+          "sourceHash": "f3f22c571d7daa9016e1cb8d69e027ab181d94d965c1cd0716dcd80aa081b353",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.box.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:6",
+          "sourceHash": "5a0058dc555e6cf62b19f5ccb523ecf3425c30867dbd4cf63c41ab094a82e462",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.breath-of-fire.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:11",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.breath-of-fire.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:17",
+          "sourceHash": "513ec0318ace561ba1c9c6465c133c205469d4a7e22586d2a6df24bb5671e002",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.breath-of-fire.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:17",
+          "sourceHash": "7e698e658b7ea87716fb67194e13472092dd5045d11eb2332da331147375aea7",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.buteyko.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:9",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.buteyko.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:15",
+          "sourceHash": "2aee2fb30bd5041f7986c2a9b46d6c3bc406ada921400aa8b17050fc541fc082",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.buteyko.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:15",
+          "sourceHash": "ffcdcb0455ef1332128eac84985ed3c50f817b052510c2dc9d3b246e6ac8c4d3",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.coherent.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:2",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.coherent.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:8",
+          "sourceHash": "69f81d2294ec4104d55f6c3764e35479e240dd4c2519f28ed10bc3a288c0455f",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.coherent.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:8",
+          "sourceHash": "1897cdabe66cd62756b823942a0c13ffde6dcf07f91f3cf765c5bbbe92141b8c",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.hope-cartel-9d-breathwork.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:13",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.hope-cartel-9d-breathwork.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+          "sourceHash": "0f5af73cbb1b7b65e186ec092db2890740ddfececcd107c304d70f78257c6563",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.hope-cartel-9d-breathwork.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:10",
+          "sourceHash": "559035c4417f7d5d382b4fcbf3ac8c970f14354fcbddba9f7ee5f813f5be2146",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.nadi-shodhana.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:6",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.nadi-shodhana.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:12",
+          "sourceHash": "37990d99968de0a16ea545d583b5f21281356c3f00ee9d0a0c20111d8e80b5e1",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.nadi-shodhana.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:12",
+          "sourceHash": "ca1422343154b5484798e41defa719e20604e8e6800961dba8decee1f558d333",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.physiological-sigh.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:3",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.physiological-sigh.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:9",
+          "sourceHash": "c48fb413fc31115ab4368c7ae7c414887853285d95faf63fc0c0e6a966c0d983",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.physiological-sigh.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:9",
+          "sourceHash": "c222314959d712b618e9df904a7b426bf72da9666e4fa32c773d6e2eef01256e",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.pursed-lip.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:5",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.pursed-lip.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:11",
+          "sourceHash": "6b865432e75cfeef9de289b1531c31c0827a3c1dac233e4effbf8540e7b47515",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.pursed-lip.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:11",
+          "sourceHash": "56ab9f0b15e7cb2ceec3b5b985ace9ed42769efbeb03878658026fcc1300f255",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.tummo.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:10",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.tummo.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:16",
+          "sourceHash": "bbd3143214e7f12e29b41e8106b27d94f3897b252d9dbe2e20cb1f1dff26022b",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.tummo.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:16",
+          "sourceHash": "9680ee79485f141dfc08ee11d73b3cf69e1cefdb451d628be314487fd2260860",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.ujjayi.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:7",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.ujjayi.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:13",
+          "sourceHash": "2ffdf42747f6faaec04382dfb14590e6968cb3b4c8d7e62b131e8a41f1a8cdb4",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.ujjayi.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:13",
+          "sourceHash": "0d753106c28bc88d284d260f1d8964e01e9774ba2f8a82af503cd6af7d7338cb",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.wim-hof.action": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:4",
+          "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+          "status": "explicit-source-alias"
+        },
+        "techniques.items.wim-hof.description": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:10",
+          "sourceHash": "0f5af73cbb1b7b65e186ec092db2890740ddfececcd107c304d70f78257c6563",
+          "status": "route-catalog-exact"
+        },
+        "techniques.items.wim-hof.name": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:10",
+          "sourceHash": "559035c4417f7d5d382b4fcbf3ac8c970f14354fcbddba9f7ee5f813f5be2146",
+          "status": "route-catalog-exact"
+        },
+        "techniques.title": {
+          "catalogRoute": "/breathing-visualizer",
+          "occurrenceKey": "sel:h2.text-3xl.font-semibold:ctx:heading:pos:1",
+          "sourceHash": "1124f9e0610f54c4a5032c2aabfcc635701b00bd4a4a9840b17c820fc1f26bc9",
+          "status": "route-catalog-exact"
+        }
+      }
+    }
+  }
+}

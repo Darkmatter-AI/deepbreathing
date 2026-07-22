@@ -1,0 +1,791 @@
+{
+  "locales": {
+    "de-de": {
+      "breadcrumb.about": {
+        "catalogRoute": "/about",
+        "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+        "status": "route-catalog-unique"
+      },
+      "breadcrumb.home": {
+        "catalogRoute": "/languages",
+        "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+        "status": "route-catalog-equivalent"
+      },
+      "hero.eyebrow": {
+        "catalogRoute": "/about",
+        "sourceHash": "17554deb9a254e83e4e4a8f1213423428b48b3bb25c5d515a622192defa720a7",
+        "status": "route-catalog-unique"
+      },
+      "hero.intro": {
+        "catalogRoute": "/about",
+        "sourceHash": "4df1e5ffc7a9ec418a51ece4284ed2b953aa6d114117311f40a1dc894a05ebd2",
+        "status": "route-catalog-unique"
+      },
+      "hero.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+        "status": "route-catalog-unique"
+      },
+      "metadata.description": {
+        "catalogRoute": "/about",
+        "sourceHash": "93bb27df89b79bc28aea5d1f077f2aeb30a20dd89206bed68114b446c8470f43",
+        "status": "route-catalog-unique"
+      },
+      "metadata.socialDescription": {
+        "catalogRoute": "/about",
+        "sourceHash": "8c14c5260b193e5b3041742bb7897a9890dafa81048876be47874ec9a8275b83",
+        "status": "route-catalog-equivalent"
+      },
+      "metadata.socialTitle": {
+        "catalogRoute": "/about",
+        "sourceHash": "4e5bdc7a82d56e9d41f3322188b414d7d000d2c84dc590a2de5e34f903696b40",
+        "status": "route-catalog-equivalent"
+      },
+      "metadata.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "4e5bdc7a82d56e9d41f3322188b414d7d000d2c84dc590a2de5e34f903696b40",
+        "status": "route-catalog-equivalent"
+      },
+      "sections.credits.abiassi": {
+        "catalogRoute": "/about",
+        "sourceHash": "19ebecf85239d19c75a1d5dc737d9afe820568f4a950a3b26e85d00c93261931",
+        "status": "route-catalog-equivalent"
+      },
+      "sections.credits.darkmatter": {
+        "catalogRoute": "/about",
+        "sourceHash": "46d9902e7bdf4e44566ba128ac4d2a0ed7f68f5ef925e9968d5574391ce16c79",
+        "status": "route-catalog-equivalent"
+      },
+      "sections.credits.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "374cd9d220fbeb7a793416ff812502e11f49c06070d2e730676daccd2b6a6b87",
+        "status": "route-catalog-unique"
+      },
+      "sections.disclaimer.body": {
+        "catalogRoute": "/about",
+        "sourceHash": "380dc60794d500ef9433d20540f9c7001572fd9bc4ceb5b69a24b18d106c5ad5",
+        "status": "route-catalog-unique"
+      },
+      "sections.disclaimer.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "9769bf0bd09cf648af091f18fac206c8bbc8a02ef72a31270e4b71defcc5369d",
+        "status": "route-catalog-unique"
+      },
+      "sections.editorial.body": {
+        "catalogRoute": "/about",
+        "sourceHash": "95e3a713e6b7ca88fbf0c58f8ee4e5a8e426f149e4118048dcf2524f4ac1b515",
+        "status": "route-catalog-unique"
+      },
+      "sections.editorial.linkLabel": {
+        "reason": "Current source text is absent from the preserved route catalog; translated by the approved content subagent.",
+        "sourceHash": "1a3ae26b53e8e30cf238a24857fedb19635a732c6d553c41209959f659c70642",
+        "status": "repo-reviewed-override"
+      },
+      "sections.editorial.title": {
+        "reason": "Current source text is absent from the preserved route catalog; translated by the approved content subagent.",
+        "sourceHash": "ebf8d1090289230451e1604d4ac110bfca5c6b7c08611d075d93c2642bc93971",
+        "status": "repo-reviewed-override"
+      },
+      "sections.links.aboutAbi": {
+        "catalogRoute": "/physiological-sigh-panic-attack",
+        "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+        "status": "route-catalog-unique"
+      },
+      "sections.links.breathingTechniques": {
+        "catalogRoute": "/about",
+        "sourceHash": "aa8d5009270cd133de98cd5fb5cd204b71d9b09f5d3b1465b7d706d851aca7f3",
+        "status": "route-catalog-unique"
+      },
+      "sections.links.editorialPolicy": {
+        "catalogRoute": "/about/editorial-policy",
+        "sourceHash": "3cd1d6ea2c12ccea8d702ef78f778c4606e55ab7600e326084ef2cb5ac637da0",
+        "status": "route-catalog-unique"
+      },
+      "sections.links.guidesByGoal": {
+        "catalogRoute": "/about",
+        "sourceHash": "917fc94616737844a25f53629d69f15f9543d0dd976a656b348c5539517415ec",
+        "status": "route-catalog-unique"
+      },
+      "sections.links.privacy": {
+        "catalogRoute": "/about",
+        "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+        "status": "route-catalog-unique"
+      },
+      "sections.links.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "9024c197d84940e47ff6aa631b7711c4cbff4e7fb2fe1a574a3592b662983a0d",
+        "status": "route-catalog-equivalent"
+      },
+      "sections.whatThisIs.afterLink": {
+        "catalogRoute": "/about",
+        "sourceHash": "6d7b979d0a49db26177b6d700d01e8501ed9e67e1e5894fe3317dcb5fe95fdc6",
+        "status": "route-catalog-rich-text-split"
+      },
+      "sections.whatThisIs.beforeLink": {
+        "catalogRoute": "/about",
+        "sourceHash": "6d7b979d0a49db26177b6d700d01e8501ed9e67e1e5894fe3317dcb5fe95fdc6",
+        "status": "route-catalog-rich-text-split"
+      },
+      "sections.whatThisIs.linkLabel": {
+        "catalogRoute": "/about",
+        "sourceHash": "6d7b979d0a49db26177b6d700d01e8501ed9e67e1e5894fe3317dcb5fe95fdc6",
+        "status": "route-catalog-rich-text-split"
+      },
+      "sections.whatThisIs.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "45d2766ee5185ecfb83b45703036241b2b0c6f3179bedc35a00c7840db113f91",
+        "status": "route-catalog-unique"
+      },
+      "sections.whoBuilt.afterLink": {
+        "catalogRoute": "/about",
+        "sourceHash": "666cf2ceeef2a41e27e9741a3d10b61fbd4eafea220bd510d6a32dbdc46d23de",
+        "status": "route-catalog-unique"
+      },
+      "sections.whoBuilt.beforeLink": {
+        "catalogRoute": "/about",
+        "sourceHash": "32675937c42aa86bf1c6f22c79236bd94164747609e54038ee9fd000d24001ff",
+        "status": "route-catalog-unique"
+      },
+      "sections.whoBuilt.linkLabel": {
+        "catalogRoute": "/about/editorial-policy",
+        "sourceHash": "2d6040623d71ef93da49a7faf035ccbb84481b58935f7618b6114af9760a4b7f",
+        "status": "route-catalog-equivalent"
+      },
+      "sections.whoBuilt.title": {
+        "catalogRoute": "/about/editorial-policy",
+        "sourceHash": "53a097715029ef58b85621dda354e6e9ad80298dc498e0fa1f8e166357d4146c",
+        "status": "route-catalog-unique"
+      }
+    },
+    "es-es": {
+      "breadcrumb.about": {
+        "catalogRoute": "/about",
+        "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+        "status": "route-catalog-unique"
+      },
+      "breadcrumb.home": {
+        "catalogRoute": "/languages",
+        "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+        "status": "route-catalog-equivalent"
+      },
+      "hero.eyebrow": {
+        "catalogRoute": "/about",
+        "sourceHash": "17554deb9a254e83e4e4a8f1213423428b48b3bb25c5d515a622192defa720a7",
+        "status": "route-catalog-unique"
+      },
+      "hero.intro": {
+        "catalogRoute": "/about",
+        "sourceHash": "4df1e5ffc7a9ec418a51ece4284ed2b953aa6d114117311f40a1dc894a05ebd2",
+        "status": "route-catalog-unique"
+      },
+      "hero.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+        "status": "route-catalog-unique"
+      },
+      "metadata.description": {
+        "catalogRoute": "/about",
+        "sourceHash": "93bb27df89b79bc28aea5d1f077f2aeb30a20dd89206bed68114b446c8470f43",
+        "status": "route-catalog-unique"
+      },
+      "metadata.socialDescription": {
+        "catalogRoute": "/about",
+        "sourceHash": "8c14c5260b193e5b3041742bb7897a9890dafa81048876be47874ec9a8275b83",
+        "status": "route-catalog-equivalent"
+      },
+      "metadata.socialTitle": {
+        "catalogRoute": "/about",
+        "sourceHash": "4e5bdc7a82d56e9d41f3322188b414d7d000d2c84dc590a2de5e34f903696b40",
+        "status": "route-catalog-equivalent"
+      },
+      "metadata.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "4e5bdc7a82d56e9d41f3322188b414d7d000d2c84dc590a2de5e34f903696b40",
+        "status": "route-catalog-equivalent"
+      },
+      "sections.credits.abiassi": {
+        "catalogRoute": "/about",
+        "sourceHash": "19ebecf85239d19c75a1d5dc737d9afe820568f4a950a3b26e85d00c93261931",
+        "status": "route-catalog-equivalent"
+      },
+      "sections.credits.darkmatter": {
+        "catalogRoute": "/about",
+        "sourceHash": "46d9902e7bdf4e44566ba128ac4d2a0ed7f68f5ef925e9968d5574391ce16c79",
+        "status": "route-catalog-equivalent"
+      },
+      "sections.credits.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "374cd9d220fbeb7a793416ff812502e11f49c06070d2e730676daccd2b6a6b87",
+        "status": "route-catalog-unique"
+      },
+      "sections.disclaimer.body": {
+        "catalogRoute": "/about",
+        "sourceHash": "380dc60794d500ef9433d20540f9c7001572fd9bc4ceb5b69a24b18d106c5ad5",
+        "status": "route-catalog-unique"
+      },
+      "sections.disclaimer.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "9769bf0bd09cf648af091f18fac206c8bbc8a02ef72a31270e4b71defcc5369d",
+        "status": "route-catalog-unique"
+      },
+      "sections.editorial.body": {
+        "catalogRoute": "/about",
+        "sourceHash": "95e3a713e6b7ca88fbf0c58f8ee4e5a8e426f149e4118048dcf2524f4ac1b515",
+        "status": "route-catalog-unique"
+      },
+      "sections.editorial.linkLabel": {
+        "reason": "Current source text is absent from the preserved route catalog; translated by the approved content subagent.",
+        "sourceHash": "1a3ae26b53e8e30cf238a24857fedb19635a732c6d553c41209959f659c70642",
+        "status": "repo-reviewed-override"
+      },
+      "sections.editorial.title": {
+        "reason": "Current source text is absent from the preserved route catalog; translated by the approved content subagent.",
+        "sourceHash": "ebf8d1090289230451e1604d4ac110bfca5c6b7c08611d075d93c2642bc93971",
+        "status": "repo-reviewed-override"
+      },
+      "sections.links.aboutAbi": {
+        "catalogRoute": "/physiological-sigh-panic-attack",
+        "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+        "status": "route-catalog-unique"
+      },
+      "sections.links.breathingTechniques": {
+        "catalogRoute": "/about",
+        "sourceHash": "aa8d5009270cd133de98cd5fb5cd204b71d9b09f5d3b1465b7d706d851aca7f3",
+        "status": "route-catalog-unique"
+      },
+      "sections.links.editorialPolicy": {
+        "catalogRoute": "/about/editorial-policy",
+        "sourceHash": "3cd1d6ea2c12ccea8d702ef78f778c4606e55ab7600e326084ef2cb5ac637da0",
+        "status": "route-catalog-unique"
+      },
+      "sections.links.guidesByGoal": {
+        "catalogRoute": "/about",
+        "sourceHash": "917fc94616737844a25f53629d69f15f9543d0dd976a656b348c5539517415ec",
+        "status": "route-catalog-unique"
+      },
+      "sections.links.privacy": {
+        "catalogRoute": "/about",
+        "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+        "status": "route-catalog-unique"
+      },
+      "sections.links.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "9024c197d84940e47ff6aa631b7711c4cbff4e7fb2fe1a574a3592b662983a0d",
+        "status": "route-catalog-equivalent"
+      },
+      "sections.whatThisIs.afterLink": {
+        "catalogRoute": "/about",
+        "sourceHash": "6d7b979d0a49db26177b6d700d01e8501ed9e67e1e5894fe3317dcb5fe95fdc6",
+        "status": "route-catalog-rich-text-split"
+      },
+      "sections.whatThisIs.beforeLink": {
+        "catalogRoute": "/about",
+        "sourceHash": "6d7b979d0a49db26177b6d700d01e8501ed9e67e1e5894fe3317dcb5fe95fdc6",
+        "status": "route-catalog-rich-text-split"
+      },
+      "sections.whatThisIs.linkLabel": {
+        "catalogRoute": "/about",
+        "sourceHash": "6d7b979d0a49db26177b6d700d01e8501ed9e67e1e5894fe3317dcb5fe95fdc6",
+        "status": "route-catalog-rich-text-split"
+      },
+      "sections.whatThisIs.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "45d2766ee5185ecfb83b45703036241b2b0c6f3179bedc35a00c7840db113f91",
+        "status": "route-catalog-unique"
+      },
+      "sections.whoBuilt.afterLink": {
+        "catalogRoute": "/about",
+        "sourceHash": "666cf2ceeef2a41e27e9741a3d10b61fbd4eafea220bd510d6a32dbdc46d23de",
+        "status": "route-catalog-unique"
+      },
+      "sections.whoBuilt.beforeLink": {
+        "catalogRoute": "/about",
+        "sourceHash": "32675937c42aa86bf1c6f22c79236bd94164747609e54038ee9fd000d24001ff",
+        "status": "route-catalog-unique"
+      },
+      "sections.whoBuilt.linkLabel": {
+        "catalogRoute": "/about/editorial-policy",
+        "sourceHash": "2d6040623d71ef93da49a7faf035ccbb84481b58935f7618b6114af9760a4b7f",
+        "status": "route-catalog-equivalent"
+      },
+      "sections.whoBuilt.title": {
+        "catalogRoute": "/about/editorial-policy",
+        "sourceHash": "53a097715029ef58b85621dda354e6e9ad80298dc498e0fa1f8e166357d4146c",
+        "status": "route-catalog-unique"
+      }
+    },
+    "fr-fr": {
+      "breadcrumb.about": {
+        "catalogRoute": "/about",
+        "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+        "status": "route-catalog-unique"
+      },
+      "breadcrumb.home": {
+        "catalogRoute": "/languages",
+        "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+        "status": "route-catalog-equivalent"
+      },
+      "hero.eyebrow": {
+        "catalogRoute": "/about",
+        "sourceHash": "17554deb9a254e83e4e4a8f1213423428b48b3bb25c5d515a622192defa720a7",
+        "status": "route-catalog-unique"
+      },
+      "hero.intro": {
+        "catalogRoute": "/about",
+        "sourceHash": "4df1e5ffc7a9ec418a51ece4284ed2b953aa6d114117311f40a1dc894a05ebd2",
+        "status": "route-catalog-unique"
+      },
+      "hero.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+        "status": "route-catalog-unique"
+      },
+      "metadata.description": {
+        "catalogRoute": "/about",
+        "sourceHash": "93bb27df89b79bc28aea5d1f077f2aeb30a20dd89206bed68114b446c8470f43",
+        "status": "route-catalog-unique"
+      },
+      "metadata.socialDescription": {
+        "catalogRoute": "/about",
+        "sourceHash": "8c14c5260b193e5b3041742bb7897a9890dafa81048876be47874ec9a8275b83",
+        "status": "route-catalog-equivalent"
+      },
+      "metadata.socialTitle": {
+        "catalogRoute": "/about",
+        "sourceHash": "4e5bdc7a82d56e9d41f3322188b414d7d000d2c84dc590a2de5e34f903696b40",
+        "status": "route-catalog-equivalent"
+      },
+      "metadata.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "4e5bdc7a82d56e9d41f3322188b414d7d000d2c84dc590a2de5e34f903696b40",
+        "status": "route-catalog-equivalent"
+      },
+      "sections.credits.abiassi": {
+        "catalogRoute": "/about",
+        "sourceHash": "19ebecf85239d19c75a1d5dc737d9afe820568f4a950a3b26e85d00c93261931",
+        "status": "route-catalog-equivalent"
+      },
+      "sections.credits.darkmatter": {
+        "catalogRoute": "/about",
+        "sourceHash": "46d9902e7bdf4e44566ba128ac4d2a0ed7f68f5ef925e9968d5574391ce16c79",
+        "status": "route-catalog-equivalent"
+      },
+      "sections.credits.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "374cd9d220fbeb7a793416ff812502e11f49c06070d2e730676daccd2b6a6b87",
+        "status": "route-catalog-unique"
+      },
+      "sections.disclaimer.body": {
+        "catalogRoute": "/about",
+        "sourceHash": "380dc60794d500ef9433d20540f9c7001572fd9bc4ceb5b69a24b18d106c5ad5",
+        "status": "route-catalog-unique"
+      },
+      "sections.disclaimer.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "9769bf0bd09cf648af091f18fac206c8bbc8a02ef72a31270e4b71defcc5369d",
+        "status": "route-catalog-unique"
+      },
+      "sections.editorial.body": {
+        "catalogRoute": "/about",
+        "sourceHash": "95e3a713e6b7ca88fbf0c58f8ee4e5a8e426f149e4118048dcf2524f4ac1b515",
+        "status": "route-catalog-unique"
+      },
+      "sections.editorial.linkLabel": {
+        "reason": "Current source text is absent from the preserved route catalog; translated by the approved content subagent.",
+        "sourceHash": "1a3ae26b53e8e30cf238a24857fedb19635a732c6d553c41209959f659c70642",
+        "status": "repo-reviewed-override"
+      },
+      "sections.editorial.title": {
+        "reason": "Current source text is absent from the preserved route catalog; translated by the approved content subagent.",
+        "sourceHash": "ebf8d1090289230451e1604d4ac110bfca5c6b7c08611d075d93c2642bc93971",
+        "status": "repo-reviewed-override"
+      },
+      "sections.links.aboutAbi": {
+        "catalogRoute": "/physiological-sigh-panic-attack",
+        "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+        "status": "route-catalog-unique"
+      },
+      "sections.links.breathingTechniques": {
+        "catalogRoute": "/about",
+        "sourceHash": "aa8d5009270cd133de98cd5fb5cd204b71d9b09f5d3b1465b7d706d851aca7f3",
+        "status": "route-catalog-unique"
+      },
+      "sections.links.editorialPolicy": {
+        "catalogRoute": "/about/editorial-policy",
+        "sourceHash": "3cd1d6ea2c12ccea8d702ef78f778c4606e55ab7600e326084ef2cb5ac637da0",
+        "status": "route-catalog-unique"
+      },
+      "sections.links.guidesByGoal": {
+        "catalogRoute": "/about",
+        "sourceHash": "917fc94616737844a25f53629d69f15f9543d0dd976a656b348c5539517415ec",
+        "status": "route-catalog-unique"
+      },
+      "sections.links.privacy": {
+        "catalogRoute": "/about",
+        "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+        "status": "route-catalog-unique"
+      },
+      "sections.links.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "9024c197d84940e47ff6aa631b7711c4cbff4e7fb2fe1a574a3592b662983a0d",
+        "status": "route-catalog-equivalent"
+      },
+      "sections.whatThisIs.afterLink": {
+        "catalogRoute": "/about",
+        "sourceHash": "6d7b979d0a49db26177b6d700d01e8501ed9e67e1e5894fe3317dcb5fe95fdc6",
+        "status": "route-catalog-rich-text-split"
+      },
+      "sections.whatThisIs.beforeLink": {
+        "catalogRoute": "/about",
+        "sourceHash": "6d7b979d0a49db26177b6d700d01e8501ed9e67e1e5894fe3317dcb5fe95fdc6",
+        "status": "route-catalog-rich-text-split"
+      },
+      "sections.whatThisIs.linkLabel": {
+        "catalogRoute": "/about",
+        "sourceHash": "6d7b979d0a49db26177b6d700d01e8501ed9e67e1e5894fe3317dcb5fe95fdc6",
+        "status": "route-catalog-rich-text-split"
+      },
+      "sections.whatThisIs.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "45d2766ee5185ecfb83b45703036241b2b0c6f3179bedc35a00c7840db113f91",
+        "status": "route-catalog-unique"
+      },
+      "sections.whoBuilt.afterLink": {
+        "catalogRoute": "/about",
+        "sourceHash": "666cf2ceeef2a41e27e9741a3d10b61fbd4eafea220bd510d6a32dbdc46d23de",
+        "status": "route-catalog-unique"
+      },
+      "sections.whoBuilt.beforeLink": {
+        "catalogRoute": "/about",
+        "sourceHash": "32675937c42aa86bf1c6f22c79236bd94164747609e54038ee9fd000d24001ff",
+        "status": "route-catalog-unique"
+      },
+      "sections.whoBuilt.linkLabel": {
+        "catalogRoute": "/about/editorial-policy",
+        "sourceHash": "2d6040623d71ef93da49a7faf035ccbb84481b58935f7618b6114af9760a4b7f",
+        "status": "route-catalog-equivalent"
+      },
+      "sections.whoBuilt.title": {
+        "catalogRoute": "/about/editorial-policy",
+        "sourceHash": "53a097715029ef58b85621dda354e6e9ad80298dc498e0fa1f8e166357d4146c",
+        "status": "route-catalog-unique"
+      }
+    },
+    "ja-jp": {
+      "breadcrumb.about": {
+        "catalogRoute": "/about",
+        "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+        "status": "route-catalog-unique"
+      },
+      "breadcrumb.home": {
+        "catalogRoute": "/languages",
+        "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+        "status": "route-catalog-equivalent"
+      },
+      "hero.eyebrow": {
+        "catalogRoute": "/about",
+        "sourceHash": "17554deb9a254e83e4e4a8f1213423428b48b3bb25c5d515a622192defa720a7",
+        "status": "route-catalog-unique"
+      },
+      "hero.intro": {
+        "catalogRoute": "/about",
+        "sourceHash": "4df1e5ffc7a9ec418a51ece4284ed2b953aa6d114117311f40a1dc894a05ebd2",
+        "status": "route-catalog-unique"
+      },
+      "hero.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+        "status": "route-catalog-unique"
+      },
+      "metadata.description": {
+        "catalogRoute": "/about",
+        "sourceHash": "93bb27df89b79bc28aea5d1f077f2aeb30a20dd89206bed68114b446c8470f43",
+        "status": "route-catalog-unique"
+      },
+      "metadata.socialDescription": {
+        "catalogRoute": "/about",
+        "sourceHash": "8c14c5260b193e5b3041742bb7897a9890dafa81048876be47874ec9a8275b83",
+        "status": "route-catalog-equivalent"
+      },
+      "metadata.socialTitle": {
+        "catalogRoute": "/about",
+        "sourceHash": "4e5bdc7a82d56e9d41f3322188b414d7d000d2c84dc590a2de5e34f903696b40",
+        "status": "route-catalog-equivalent"
+      },
+      "metadata.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "4e5bdc7a82d56e9d41f3322188b414d7d000d2c84dc590a2de5e34f903696b40",
+        "status": "route-catalog-equivalent"
+      },
+      "sections.credits.abiassi": {
+        "catalogRoute": "/about",
+        "sourceHash": "19ebecf85239d19c75a1d5dc737d9afe820568f4a950a3b26e85d00c93261931",
+        "status": "route-catalog-equivalent"
+      },
+      "sections.credits.darkmatter": {
+        "catalogRoute": "/about",
+        "sourceHash": "46d9902e7bdf4e44566ba128ac4d2a0ed7f68f5ef925e9968d5574391ce16c79",
+        "status": "route-catalog-equivalent"
+      },
+      "sections.credits.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "374cd9d220fbeb7a793416ff812502e11f49c06070d2e730676daccd2b6a6b87",
+        "status": "route-catalog-unique"
+      },
+      "sections.disclaimer.body": {
+        "catalogRoute": "/about",
+        "sourceHash": "380dc60794d500ef9433d20540f9c7001572fd9bc4ceb5b69a24b18d106c5ad5",
+        "status": "route-catalog-unique"
+      },
+      "sections.disclaimer.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "9769bf0bd09cf648af091f18fac206c8bbc8a02ef72a31270e4b71defcc5369d",
+        "status": "route-catalog-unique"
+      },
+      "sections.editorial.body": {
+        "catalogRoute": "/about",
+        "sourceHash": "95e3a713e6b7ca88fbf0c58f8ee4e5a8e426f149e4118048dcf2524f4ac1b515",
+        "status": "route-catalog-unique"
+      },
+      "sections.editorial.linkLabel": {
+        "reason": "Current source text is absent from the preserved route catalog; translated by the approved content subagent.",
+        "sourceHash": "1a3ae26b53e8e30cf238a24857fedb19635a732c6d553c41209959f659c70642",
+        "status": "repo-reviewed-override"
+      },
+      "sections.editorial.title": {
+        "reason": "Current source text is absent from the preserved route catalog; translated by the approved content subagent.",
+        "sourceHash": "ebf8d1090289230451e1604d4ac110bfca5c6b7c08611d075d93c2642bc93971",
+        "status": "repo-reviewed-override"
+      },
+      "sections.links.aboutAbi": {
+        "catalogRoute": "/physiological-sigh-panic-attack",
+        "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+        "status": "route-catalog-unique"
+      },
+      "sections.links.breathingTechniques": {
+        "catalogRoute": "/about",
+        "sourceHash": "aa8d5009270cd133de98cd5fb5cd204b71d9b09f5d3b1465b7d706d851aca7f3",
+        "status": "route-catalog-unique"
+      },
+      "sections.links.editorialPolicy": {
+        "catalogRoute": "/about/editorial-policy",
+        "sourceHash": "3cd1d6ea2c12ccea8d702ef78f778c4606e55ab7600e326084ef2cb5ac637da0",
+        "status": "route-catalog-unique"
+      },
+      "sections.links.guidesByGoal": {
+        "catalogRoute": "/about",
+        "sourceHash": "917fc94616737844a25f53629d69f15f9543d0dd976a656b348c5539517415ec",
+        "status": "route-catalog-unique"
+      },
+      "sections.links.privacy": {
+        "catalogRoute": "/about",
+        "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+        "status": "route-catalog-unique"
+      },
+      "sections.links.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "9024c197d84940e47ff6aa631b7711c4cbff4e7fb2fe1a574a3592b662983a0d",
+        "status": "route-catalog-equivalent"
+      },
+      "sections.whatThisIs.afterLink": {
+        "catalogRoute": "/about",
+        "sourceHash": "6d7b979d0a49db26177b6d700d01e8501ed9e67e1e5894fe3317dcb5fe95fdc6",
+        "status": "route-catalog-rich-text-split"
+      },
+      "sections.whatThisIs.beforeLink": {
+        "catalogRoute": "/about",
+        "sourceHash": "6d7b979d0a49db26177b6d700d01e8501ed9e67e1e5894fe3317dcb5fe95fdc6",
+        "status": "route-catalog-rich-text-split"
+      },
+      "sections.whatThisIs.linkLabel": {
+        "catalogRoute": "/about",
+        "sourceHash": "6d7b979d0a49db26177b6d700d01e8501ed9e67e1e5894fe3317dcb5fe95fdc6",
+        "status": "route-catalog-rich-text-split"
+      },
+      "sections.whatThisIs.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "45d2766ee5185ecfb83b45703036241b2b0c6f3179bedc35a00c7840db113f91",
+        "status": "route-catalog-unique"
+      },
+      "sections.whoBuilt.afterLink": {
+        "reason": "The independently translated Japanese fragments do not compose grammatically around the linked person name.",
+        "sourceHash": "666cf2ceeef2a41e27e9741a3d10b61fbd4eafea220bd510d6a32dbdc46d23de",
+        "status": "repo-reviewed-replacement"
+      },
+      "sections.whoBuilt.beforeLink": {
+        "catalogRoute": "/about",
+        "sourceHash": "32675937c42aa86bf1c6f22c79236bd94164747609e54038ee9fd000d24001ff",
+        "status": "route-catalog-unique"
+      },
+      "sections.whoBuilt.linkLabel": {
+        "catalogRoute": "/about/editorial-policy",
+        "sourceHash": "2d6040623d71ef93da49a7faf035ccbb84481b58935f7618b6114af9760a4b7f",
+        "status": "route-catalog-equivalent"
+      },
+      "sections.whoBuilt.title": {
+        "reason": "The approved catalog heading is technically correct but unnatural in Japanese page context.",
+        "sourceHash": "53a097715029ef58b85621dda354e6e9ad80298dc498e0fa1f8e166357d4146c",
+        "status": "repo-reviewed-replacement"
+      }
+    },
+    "pt-br": {
+      "breadcrumb.about": {
+        "catalogRoute": "/about",
+        "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+        "status": "route-catalog-unique"
+      },
+      "breadcrumb.home": {
+        "catalogRoute": "/languages",
+        "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+        "status": "route-catalog-equivalent"
+      },
+      "hero.eyebrow": {
+        "catalogRoute": "/about",
+        "sourceHash": "17554deb9a254e83e4e4a8f1213423428b48b3bb25c5d515a622192defa720a7",
+        "status": "route-catalog-unique"
+      },
+      "hero.intro": {
+        "catalogRoute": "/about",
+        "sourceHash": "4df1e5ffc7a9ec418a51ece4284ed2b953aa6d114117311f40a1dc894a05ebd2",
+        "status": "route-catalog-unique"
+      },
+      "hero.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+        "status": "route-catalog-unique"
+      },
+      "metadata.description": {
+        "catalogRoute": "/about",
+        "sourceHash": "93bb27df89b79bc28aea5d1f077f2aeb30a20dd89206bed68114b446c8470f43",
+        "status": "route-catalog-unique"
+      },
+      "metadata.socialDescription": {
+        "catalogRoute": "/about",
+        "sourceHash": "8c14c5260b193e5b3041742bb7897a9890dafa81048876be47874ec9a8275b83",
+        "status": "route-catalog-equivalent"
+      },
+      "metadata.socialTitle": {
+        "catalogRoute": "/about",
+        "sourceHash": "4e5bdc7a82d56e9d41f3322188b414d7d000d2c84dc590a2de5e34f903696b40",
+        "status": "route-catalog-equivalent"
+      },
+      "metadata.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "4e5bdc7a82d56e9d41f3322188b414d7d000d2c84dc590a2de5e34f903696b40",
+        "status": "route-catalog-equivalent"
+      },
+      "sections.credits.abiassi": {
+        "catalogRoute": "/about",
+        "sourceHash": "19ebecf85239d19c75a1d5dc737d9afe820568f4a950a3b26e85d00c93261931",
+        "status": "route-catalog-equivalent"
+      },
+      "sections.credits.darkmatter": {
+        "catalogRoute": "/about",
+        "sourceHash": "46d9902e7bdf4e44566ba128ac4d2a0ed7f68f5ef925e9968d5574391ce16c79",
+        "status": "route-catalog-equivalent"
+      },
+      "sections.credits.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "374cd9d220fbeb7a793416ff812502e11f49c06070d2e730676daccd2b6a6b87",
+        "status": "route-catalog-unique"
+      },
+      "sections.disclaimer.body": {
+        "catalogRoute": "/about",
+        "sourceHash": "380dc60794d500ef9433d20540f9c7001572fd9bc4ceb5b69a24b18d106c5ad5",
+        "status": "route-catalog-unique"
+      },
+      "sections.disclaimer.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "9769bf0bd09cf648af091f18fac206c8bbc8a02ef72a31270e4b71defcc5369d",
+        "status": "route-catalog-unique"
+      },
+      "sections.editorial.body": {
+        "catalogRoute": "/about",
+        "sourceHash": "95e3a713e6b7ca88fbf0c58f8ee4e5a8e426f149e4118048dcf2524f4ac1b515",
+        "status": "route-catalog-unique"
+      },
+      "sections.editorial.linkLabel": {
+        "reason": "Current source text is absent from the preserved route catalog; translated by the approved content subagent.",
+        "sourceHash": "1a3ae26b53e8e30cf238a24857fedb19635a732c6d553c41209959f659c70642",
+        "status": "repo-reviewed-override"
+      },
+      "sections.editorial.title": {
+        "reason": "Current source text is absent from the preserved route catalog; translated by the approved content subagent.",
+        "sourceHash": "ebf8d1090289230451e1604d4ac110bfca5c6b7c08611d075d93c2642bc93971",
+        "status": "repo-reviewed-override"
+      },
+      "sections.links.aboutAbi": {
+        "catalogRoute": "/physiological-sigh-panic-attack",
+        "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+        "status": "route-catalog-unique"
+      },
+      "sections.links.breathingTechniques": {
+        "catalogRoute": "/about",
+        "sourceHash": "aa8d5009270cd133de98cd5fb5cd204b71d9b09f5d3b1465b7d706d851aca7f3",
+        "status": "route-catalog-unique"
+      },
+      "sections.links.editorialPolicy": {
+        "catalogRoute": "/about/editorial-policy",
+        "sourceHash": "3cd1d6ea2c12ccea8d702ef78f778c4606e55ab7600e326084ef2cb5ac637da0",
+        "status": "route-catalog-unique"
+      },
+      "sections.links.guidesByGoal": {
+        "catalogRoute": "/about",
+        "sourceHash": "917fc94616737844a25f53629d69f15f9543d0dd976a656b348c5539517415ec",
+        "status": "route-catalog-unique"
+      },
+      "sections.links.privacy": {
+        "catalogRoute": "/about",
+        "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+        "status": "route-catalog-unique"
+      },
+      "sections.links.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "9024c197d84940e47ff6aa631b7711c4cbff4e7fb2fe1a574a3592b662983a0d",
+        "status": "route-catalog-equivalent"
+      },
+      "sections.whatThisIs.afterLink": {
+        "catalogRoute": "/about",
+        "sourceHash": "6d7b979d0a49db26177b6d700d01e8501ed9e67e1e5894fe3317dcb5fe95fdc6",
+        "status": "route-catalog-rich-text-split"
+      },
+      "sections.whatThisIs.beforeLink": {
+        "catalogRoute": "/about",
+        "sourceHash": "6d7b979d0a49db26177b6d700d01e8501ed9e67e1e5894fe3317dcb5fe95fdc6",
+        "status": "route-catalog-rich-text-split"
+      },
+      "sections.whatThisIs.linkLabel": {
+        "catalogRoute": "/about",
+        "sourceHash": "6d7b979d0a49db26177b6d700d01e8501ed9e67e1e5894fe3317dcb5fe95fdc6",
+        "status": "route-catalog-rich-text-split"
+      },
+      "sections.whatThisIs.title": {
+        "catalogRoute": "/about",
+        "sourceHash": "45d2766ee5185ecfb83b45703036241b2b0c6f3179bedc35a00c7840db113f91",
+        "status": "route-catalog-unique"
+      },
+      "sections.whoBuilt.afterLink": {
+        "catalogRoute": "/about",
+        "sourceHash": "666cf2ceeef2a41e27e9741a3d10b61fbd4eafea220bd510d6a32dbdc46d23de",
+        "status": "route-catalog-unique"
+      },
+      "sections.whoBuilt.beforeLink": {
+        "catalogRoute": "/about",
+        "sourceHash": "32675937c42aa86bf1c6f22c79236bd94164747609e54038ee9fd000d24001ff",
+        "status": "route-catalog-unique"
+      },
+      "sections.whoBuilt.linkLabel": {
+        "catalogRoute": "/about/editorial-policy",
+        "sourceHash": "2d6040623d71ef93da49a7faf035ccbb84481b58935f7618b6114af9760a4b7f",
+        "status": "route-catalog-equivalent"
+      },
+      "sections.whoBuilt.title": {
+        "catalogRoute": "/about/editorial-policy",
+        "sourceHash": "53a097715029ef58b85621dda354e6e9ad80298dc498e0fa1f8e166357d4146c",
+        "status": "route-catalog-unique"
+      }
+    }
+  },
+  "schemaVersion": 1,
+  "sourceRoute": "/about"
+}

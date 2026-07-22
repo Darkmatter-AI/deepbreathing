@@ -1,0 +1,107 @@
+{
+  "routes": {
+    "/breathe/buteyko": {
+      "expectedMessages": 56,
+      "locales": {
+        "de-de": {
+          "bytes": 3854,
+          "catalogMessages": 45,
+          "overrideMessages": 11,
+          "path": "server-chrome/de-de/breathe-buteyko.json",
+          "publishable": true,
+          "resolvedMessages": 56,
+          "sha256": "ab65183eb14e51752890eb33e80ee66007480576f391a5f74ed4ff306da18ba8"
+        },
+        "es-es": {
+          "bytes": 3949,
+          "catalogMessages": 45,
+          "overrideMessages": 11,
+          "path": "server-chrome/es-es/breathe-buteyko.json",
+          "publishable": true,
+          "resolvedMessages": 56,
+          "sha256": "82bffb93c87ad5e935d62365e7a36f7df2a55f9e2c64ab9c8074df5b39e8b8ab"
+        },
+        "fr-fr": {
+          "bytes": 4059,
+          "catalogMessages": 45,
+          "overrideMessages": 11,
+          "path": "server-chrome/fr-fr/breathe-buteyko.json",
+          "publishable": true,
+          "resolvedMessages": 56,
+          "sha256": "667ded9d5fb88b0d245f6037c9232dd959c82073a83f0b9889e35049502ecb03"
+        },
+        "ja-jp": {
+          "bytes": 4276,
+          "catalogMessages": 45,
+          "overrideMessages": 11,
+          "path": "server-chrome/ja-jp/breathe-buteyko.json",
+          "publishable": true,
+          "resolvedMessages": 56,
+          "sha256": "749bac5c18567e63f73067b251dd429921a11c5c6a3d7f53eeb5e676d78fd802"
+        },
+        "pt-br": {
+          "bytes": 3922,
+          "catalogMessages": 45,
+          "overrideMessages": 11,
+          "path": "server-chrome/pt-br/breathe-buteyko.json",
+          "publishable": true,
+          "resolvedMessages": 56,
+          "sha256": "afcfaec2db3eb15c5da54ab8c67cebe44d47e13a095083c6f73fec8824676d52"
+        }
+      },
+      "routeId": "breathe.buteyko"
+    },
+    "/for/anxiety": {
+      "expectedMessages": 52,
+      "locales": {
+        "de-de": {
+          "bytes": 3407,
+          "catalogMessages": 35,
+          "overrideMessages": 17,
+          "path": "server-chrome/de-de/for-anxiety.json",
+          "publishable": true,
+          "resolvedMessages": 52,
+          "sha256": "9e3fbcfa3acd2ea5f9b560e538cf82c50f1ccb15ace168f1950d280f62473631"
+        },
+        "es-es": {
+          "bytes": 3530,
+          "catalogMessages": 35,
+          "overrideMessages": 17,
+          "path": "server-chrome/es-es/for-anxiety.json",
+          "publishable": true,
+          "resolvedMessages": 52,
+          "sha256": "dcff4cb52d2a4328ddedfc9916a74b3aab3429fb284e6d46d9d2d31456c2cc02"
+        },
+        "fr-fr": {
+          "bytes": 3649,
+          "catalogMessages": 35,
+          "overrideMessages": 17,
+          "path": "server-chrome/fr-fr/for-anxiety.json",
+          "publishable": true,
+          "resolvedMessages": 52,
+          "sha256": "e9eca048ca67d665b2d2cb2df44f9628ebfd1cb2662009d4cbe1f2e33d00361c"
+        },
+        "ja-jp": {
+          "bytes": 3798,
+          "catalogMessages": 35,
+          "overrideMessages": 17,
+          "path": "server-chrome/ja-jp/for-anxiety.json",
+          "publishable": true,
+          "resolvedMessages": 52,
+          "sha256": "5cafce1dc24dfd9bcc1559b0e0a8ff117ddd600cfababaa3794355c15ad64edb"
+        },
+        "pt-br": {
+          "bytes": 3544,
+          "catalogMessages": 35,
+          "overrideMessages": 17,
+          "path": "server-chrome/pt-br/for-anxiety.json",
+          "publishable": true,
+          "resolvedMessages": 52,
+          "sha256": "2ab6a58ea26460f12f2dbc50a790f172b4914a32a6591166393d89ec2c1fe127"
+        }
+      },
+      "routeId": "for.anxiety"
+    }
+  },
+  "schemaVersion": 1
+}

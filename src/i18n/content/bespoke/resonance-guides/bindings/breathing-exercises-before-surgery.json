@@ -1,0 +1,310 @@
+{
+  "schemaVersion": 1,
+  "sourceRoute": "/breathing-exercises-before-surgery",
+  "bindings": {
+    "metadata.title": {
+      "occurrenceKey": "head:title",
+      "catalogSourceText": "Breathing Exercises Before Surgery: Calm Pre-Op Anxiety (Free Timer) | Deep Breathing Exercises"
+    },
+    "metadata.description": {
+      "occurrenceKey": "head:meta:name:description",
+      "catalogSourceText": "Free breathing exercises for pre-surgery anxiety, box breathing calms nerves in 2 minutes. Used in hospitals worldwide. Prepare for your procedure calmly."
+    },
+    "metadata.socialTitle": {
+      "occurrenceKey": "head:meta:property:og:title",
+      "catalogSourceText": "Breathing Exercises Before Surgery: Calm Pre-Op Anxiety"
+    },
+    "metadata.socialDescription": {
+      "occurrenceKey": "head:meta:property:og:description",
+      "catalogSourceText": "Calm pre-surgery anxiety with breathing exercises used in hospitals worldwide. Free timer to prepare for your procedure."
+    },
+    "metadata.twitterTitle": {
+      "occurrenceKey": "head:meta:name:twitter:title",
+      "catalogSourceText": "Breathing Exercises Before Surgery: Calm Pre-Op Anxiety"
+    },
+    "metadata.twitterDescription": {
+      "occurrenceKey": "head:meta:name:twitter:description",
+      "catalogSourceText": "Hospital-approved breathing exercises for pre-surgery nerves. Free timer. Use in the waiting room."
+    },
+    "loading.ariaLabel": {
+      "occurrenceKey": "attr:div.min-h-screen.flex:aria-label:pos:0",
+      "catalogSourceText": "Loading breathing exercise"
+    },
+    "hero.eyebrow": {
+      "occurrenceKey": "sel:p.text-xs.uppercase:ctx:p:pos:0",
+      "catalogSourceText": "PRE-SURGERY CALM"
+    },
+    "hero.title": {
+      "occurrenceKey": "sel:h1.text-4xl.font-semibold:ctx:heading:pos:0",
+      "catalogSourceText": "Breathing Exercises Before Surgery"
+    },
+    "hero.intro": {
+      "occurrenceKey": "sel:p.max-w-xl.text-lg:ctx:p:pos:0",
+      "catalogSourceText": "Nervous about an upcoming procedure? These hospital-approved breathing exercises calm pre-op anxiety in 2-5 minutes. Practice now, and use them in the waiting room on surgery day."
+    },
+    "updated": {
+      "occurrenceKey": "sel:p.mb-6.text-xs:ctx:p:pos:0",
+      "catalogSourceText": "Last updated: January 27, 2026"
+    },
+    "starterGrid.starter.title": {
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:0",
+      "catalogSourceText": "Pre-surgery breathing timer"
+    },
+    "starterGrid.starter.body": {
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:0",
+      "catalogSourceText": "Box breathing calms anxiety without making you drowsy, perfect before a procedure."
+    },
+    "starterGrid.starter.primaryAction": {
+      "occurrenceKey": "sel:a.rounded-full.bg-primary:ctx:link:pos:0",
+      "catalogSourceText": "Open box breathing timer"
+    },
+    "starterGrid.starter.secondaryAction": {
+      "occurrenceKey": "sel:a.rounded-full.border:ctx:link:pos:0",
+      "catalogSourceText": "Quick calm (30 sec)"
+    },
+    "starterGrid.protocol.title": {
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:1",
+      "catalogSourceText": "Surgery day protocol"
+    },
+    "starterGrid.protocol.items.0.label": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:0",
+      "catalogSourceText": "At home:"
+    },
+    "starterGrid.protocol.items.0.body": {
+      "occurrenceKey": "sel:li:ctx:li:pos:0",
+      "catalogSourceText": "5-10 minutes before leaving"
+    },
+    "starterGrid.protocol.items.1.label": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:1",
+      "catalogSourceText": "Waiting room:"
+    },
+    "starterGrid.protocol.items.1.body": {
+      "occurrenceKey": "sel:li:ctx:li:pos:1",
+      "catalogSourceText": "5-10 minutes while you wait"
+    },
+    "starterGrid.protocol.items.2.label": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:2",
+      "catalogSourceText": "Pre-op area:"
+    },
+    "starterGrid.protocol.items.2.body": {
+      "occurrenceKey": "sel:li:ctx:li:pos:2",
+      "catalogSourceText": "Gentle breathing until they're ready"
+    },
+    "starterGrid.protocol.items.3.label": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:3",
+      "catalogSourceText": "Pattern:"
+    },
+    "starterGrid.protocol.items.3.body": {
+      "occurrenceKey": "sel:li:ctx:li:pos:3",
+      "catalogSourceText": "Box breathing (4s inhale, 4s hold, 4s exhale, 4s hold)"
+    },
+    "prose.title": {
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:2",
+      "catalogSourceText": "Why breathing exercises help before surgery"
+    },
+    "prose.paragraphs.0.text": {
+      "occurrenceKey": "sel:p:ctx:p:pos:0",
+      "catalogSourceText": "Pre-surgery anxiety is completely normal, studies show 60-80% of patients experience significant anxiety before procedures. Your nervous system perceives surgery as a threat, triggering the same fight-or-flight response that helped your ancestors survive dangerous situations."
+    },
+    "prose.paragraphs.1.before": {
+      "occurrenceKey": "sel:p:ctx:p:pos:1",
+      "catalogSourceText": "Breathing exercises work because they"
+    },
+    "prose.paragraphs.1.strong": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:4",
+      "catalogSourceText": "directly counter this stress response"
+    },
+    "prose.paragraphs.1.after": {
+      "occurrenceKey": "sel:p:ctx:p:pos:2",
+      "catalogSourceText": ". Slow, controlled breathing activates your parasympathetic nervous system (the “rest and digest” mode), which lowers heart rate, reduces blood pressure, and decreases stress hormones like cortisol and adrenaline."
+    },
+    "prose.paragraphs.2.text": {
+      "occurrenceKey": "sel:p:ctx:p:pos:3",
+      "catalogSourceText": "Research shows that patients who practice breathing exercises before surgery have lower anxiety scores, require less sedation, and report better overall experiences. Many hospitals now incorporate breathing techniques into their pre-operative protocols."
+    },
+    "timelineCards.title": {
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:3",
+      "catalogSourceText": "Pre-surgery breathing protocol"
+    },
+    "timelineCards.cards.0.title": {
+      "occurrenceKey": "sel:h3.font-semibold.text-card-foreground:ctx:heading:pos:0",
+      "catalogSourceText": "2-3 days before surgery"
+    },
+    "timelineCards.cards.0.body": {
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:1",
+      "catalogSourceText": "Practice box breathing for 5 minutes twice daily. This builds familiarity so the technique feels natural on surgery day."
+    },
+    "timelineCards.cards.1.title": {
+      "occurrenceKey": "sel:h3.font-semibold.text-card-foreground:ctx:heading:pos:1",
+      "catalogSourceText": "Surgery day morning"
+    },
+    "timelineCards.cards.1.body": {
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:2",
+      "catalogSourceText": "Do 5-10 minutes of box breathing at home before leaving. Take your time getting ready, rushing increases anxiety."
+    },
+    "timelineCards.cards.2.title": {
+      "occurrenceKey": "sel:h3.font-semibold.text-card-foreground:ctx:heading:pos:2",
+      "catalogSourceText": "In the waiting room"
+    },
+    "timelineCards.cards.2.body": {
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:3",
+      "catalogSourceText": "Use the timer on your phone with headphones if you like, or simply count in your head. 5-10 minutes of quiet breathing helps pass the time and keeps you calm."
+    },
+    "timelineCards.cards.3.title": {
+      "occurrenceKey": "sel:h3.font-semibold.text-card-foreground:ctx:heading:pos:3",
+      "catalogSourceText": "In pre-op"
+    },
+    "timelineCards.cards.3.body": {
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:4",
+      "catalogSourceText": "Tell your nurse you'd like to do breathing exercises. They'll appreciate that you're managing your anxiety. Continue gentle breathing until they're ready for you."
+    },
+    "numberedSteps.title": {
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:4",
+      "catalogSourceText": "Box breathing steps for surgery day"
+    },
+    "numberedSteps.steps.0.title": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:5",
+      "catalogSourceText": "Get comfortable"
+    },
+    "numberedSteps.steps.0.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:0",
+      "catalogSourceText": "Sit in a chair or lie down. Drop your shoulders and unclench your jaw."
+    },
+    "numberedSteps.steps.1.title": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:6",
+      "catalogSourceText": "Inhale slowly for 4 counts"
+    },
+    "numberedSteps.steps.1.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:1",
+      "catalogSourceText": "Breathe through your nose. Let your belly expand gently."
+    },
+    "numberedSteps.steps.2.title": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:7",
+      "catalogSourceText": "Hold for 4 counts"
+    },
+    "numberedSteps.steps.2.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:2",
+      "catalogSourceText": "Stay relaxed. Don't tense up. If 4 counts feels long, try 3."
+    },
+    "numberedSteps.steps.3.title": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:8",
+      "catalogSourceText": "Exhale slowly for 4 counts"
+    },
+    "numberedSteps.steps.3.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:3",
+      "catalogSourceText": "Through your nose or mouth. Let tension leave with your breath."
+    },
+    "numberedSteps.steps.4.title": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:9",
+      "catalogSourceText": "Hold empty for 4 counts"
+    },
+    "numberedSteps.steps.4.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:4",
+      "catalogSourceText": "Pause before your next breath. Stay calm and relaxed."
+    },
+    "numberedSteps.steps.5.title": {
+      "occurrenceKey": "sel:strong.text-card-foreground:ctx:product:pos:10",
+      "catalogSourceText": "Repeat for 5-10 minutes"
+    },
+    "numberedSteps.steps.5.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:5",
+      "catalogSourceText": "Continue until you feel noticeably calmer. There's no rush."
+    },
+    "faq.title": {
+      "occurrenceKey": "sel:h2.text-2xl.font-semibold:ctx:heading:pos:5",
+      "catalogSourceText": "Frequently asked questions"
+    },
+    "faq.items.0.question": {
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:0",
+      "catalogSourceText": "What breathing exercises help before surgery?"
+    },
+    "faq.items.0.answer": {
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:5",
+      "catalogSourceText": "Box breathing (4-4-4-4 pattern) is ideal before surgery because it calms anxiety without making you drowsy. Inhale for 4 counts, hold for 4, exhale for 4, hold for 4. Do 5-10 minutes in the waiting room or pre-op area. Many hospitals now teach this technique to patients before procedures."
+    },
+    "faq.items.1.question": {
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:1",
+      "catalogSourceText": "When should I start breathing exercises before surgery?"
+    },
+    "faq.items.1.answer": {
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:6",
+      "catalogSourceText": "Start practicing 2-3 days before your surgery so the technique feels natural. On surgery day, do 5-10 minutes at home before leaving, then again in the waiting room. Continue until you're taken to pre-op."
+    },
+    "faq.items.2.question": {
+      "occurrenceKey": "sel:h3.text-lg.font-semibold:ctx:heading:pos:2",
+      "catalogSourceText": "Can I do breathing exercises in the pre-op room?"
+    },
+    "faq.items.2.answer": {
+      "occurrenceKey": "sel:p.mt-2.text-sm:ctx:p:pos:7",
+      "catalogSourceText": "Yes! Tell your nurse you'd like to do some breathing exercises. They'll likely encourage it. You can practice while lying on the gurney or sitting in a chair. Keep it gentle and quiet."
+    },
+    "related.label": {
+      "occurrenceKey": "sel:p.text-sm.uppercase:ctx:p:pos:0",
+      "catalogSourceText": "Related Guides"
+    },
+    "related.cards.0.title": {
+      "occurrenceKey": "sel:p.text-lg.font-semibold:ctx:product:pos:0",
+      "catalogSourceText": "Anxiety Relief"
+    },
+    "related.cards.0.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:6",
+      "catalogSourceText": "Breathing techniques for anxiety in any situation"
+    },
+    "related.cards.0.action": {
+      "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:0",
+      "catalogSourceText": "Learn more →"
+    },
+    "related.cards.1.title": {
+      "occurrenceKey": "sel:p.text-lg.font-semibold:ctx:product:pos:1",
+      "catalogSourceText": "Box Breathing Guide"
+    },
+    "related.cards.1.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:7",
+      "catalogSourceText": "The complete guide to the 4-4-4-4 technique"
+    },
+    "related.cards.1.action": {
+      "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:1",
+      "catalogSourceText": "Learn more →"
+    },
+    "related.cards.2.title": {
+      "occurrenceKey": "sel:p.text-lg.font-semibold:ctx:product:pos:2",
+      "catalogSourceText": "Quick calm (30 sec)"
+    },
+    "related.cards.2.body": {
+      "occurrenceKey": "sel:p.mt-1.text-sm:ctx:p:pos:8",
+      "catalogSourceText": "The fastest technique when nerves spike suddenly"
+    },
+    "related.cards.2.action": {
+      "occurrenceKey": "sel:span.mt-3.inline-flex:ctx:product:pos:2",
+      "catalogSourceText": "Learn more →"
+    },
+    "footer.safety": {
+      "occurrenceKey": "sel:p.text-xs.text-muted-foreground:ctx:p:pos:0",
+      "catalogSourceText": "Always follow your healthcare team's pre-operative instructions. Breathing exercises complement but don't replace medical care."
+    },
+    "footer.links.0": {
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:0",
+      "catalogSourceText": "Techniques"
+    },
+    "footer.links.1": {
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:1",
+      "catalogSourceText": "Guides"
+    },
+    "footer.links.2": {
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:2",
+      "catalogSourceText": "App"
+    },
+    "footer.links.3": {
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:3",
+      "catalogSourceText": "About"
+    },
+    "footer.links.4": {
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:4",
+      "catalogSourceText": "About Abi"
+    },
+    "footer.links.5": {
+      "occurrenceKey": "sel:a.underline.underline-offset-2:ctx:link:pos:5",
+      "catalogSourceText": "Embed"
+    }
+  }
+}
