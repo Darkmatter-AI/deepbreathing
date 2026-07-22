@@ -431,7 +431,10 @@ export default function HomeScreen() {
           pointerEvents={overlaysVisible ? 'auto' : 'none'}
           style={[
             styles.accountButtonWrap,
-            { top: safeAreaInsets.top + 14, opacity: accountButtonOpacity },
+            // Mirror the webview header geometry (paddingTop: safeArea.top + 24,
+            // horizontal inset 24) so this native button aligns with the
+            // webview-rendered settings button in the opposite corner.
+            { top: safeAreaInsets.top + 24, opacity: accountButtonOpacity },
           ]}
         >
           <Pressable
@@ -487,7 +490,7 @@ const styles = StyleSheet.create({
   safeArea: { flex: 1 },
   accountButtonWrap: {
     position: 'absolute',
-    left: 16,
+    left: 24,
     zIndex: 95,
   },
   accountButton: {
