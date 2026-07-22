@@ -1167,10 +1167,10 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
           <button
             onClick={() => setControlsOpen(true)}
             tabIndex={isRunning ? -1 : 0}
-            className="inline-flex items-center justify-center rounded-full border border-border/60 bg-card/80 p-2.5 text-muted-foreground shadow-sm backdrop-blur transition-colors hover:bg-card dark:border-border/40 dark:bg-card/40 dark:text-card-foreground"
+            className="inline-flex items-center justify-center rounded-full border border-border/60 bg-card/80 p-3 text-muted-foreground shadow-sm backdrop-blur transition-colors hover:bg-card dark:border-border/40 dark:bg-card/40 dark:text-card-foreground"
             aria-label={getSafePhrase('ui.settings')}
           >
-            <SettingsIcon size={16} />
+            <SettingsIcon size={18} />
           </button>
         </header>
 

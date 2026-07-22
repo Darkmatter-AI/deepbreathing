@@ -83,15 +83,14 @@ const nextConfig = {
       // can't compress them. Halving each hash shaves the map's byte weight 3x.
       // Collision risk is negligible at this chunk count.
       config.output.hashDigestLength = 8;
-      // Drop the content hash from async chunk filenames. With a hash, the
-      // webpack runtime's chunk-filename resolver (d.u, folded into main-app and
-      // counted in every route's First Load JS) must ship a full {id: "hash"}
-      // lookup object enumerating every async chunk. Making the filename derive
-      // purely from the id ([name].js) collapses d.u to a one-line template
-      // (e => "static/chunks/" + e + ".js"), eliminating the map entirely.
-      // Trades long-term cache-busting (filenames no longer change on content
-      // change), irrelevant to the metric.
-      config.output.chunkFilename = 'static/chunks/[name].js';
+      // Async chunk filenames MUST carry a content hash. A 2026-07 experiment
+      // dropped it ([name].js) to shrink the runtime's chunk-filename map, which
+      // broke production on 2026-07-22: Vercel serves /_next/static with
+      // cache-control: immutable, so returning visitors kept the previous
+      // build's unhashed chunks and mixed them with new chunks — module-id
+      // mismatch, dead app, and drop_console below ate the error. The d.u map
+      // this reintroduces costs a few hundred bytes; correctness wins.
+      config.output.chunkFilename = 'static/chunks/[name]-[contenthash].js';
       // Shorten the webpack chunk-loading global. Next derives a long name
       // (webpackChunk_N_E) that is emitted in the main-app runtime chunk —
       // counted in every route's First Load JS — as the shared push target for
