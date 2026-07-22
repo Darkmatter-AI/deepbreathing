@@ -154,12 +154,18 @@ export function useNativeSoundscape(): NativeSoundscapeHandle {
     }, TICK_MS);
   }, []);
 
+  // Generation token: a newer start (rapid mode switch) invalidates any
+  // in-flight one at each await point, so two runs can't double-start layers.
+  const startGenRef = useRef(0);
+
   const startSoundscape = useCallback(async (mode: ModeName) => {
+    const gen = ++startGenRef.current;
     const engine = getEngine();
     const color = BREATHING_PATTERNS[mode as unknown as keyof typeof BREATHING_PATTERNS]?.color;
     engine.setBreathingMode(mode);
     if (color) engine.setThemeColor(color);
     const ready = await engine.resume();
+    if (gen !== startGenRef.current) return;
     if (!ready) {
       if (__DEV__) console.warn('[soundscape] engine.resume() failed');
       return;
@@ -171,15 +177,20 @@ export function useNativeSoundscape(): NativeSoundscapeHandle {
     // pairs with every bed.
     if (mode === ModeName.WimHof) {
       await engine.startDrone(color ?? '#4f46e5');
+      if (gen !== startGenRef.current) return;
       await engine.startBinaural(15);
     } else if (mode === ModeName.Relax || mode === ModeName.Coherent) {
       await engine.startPinkNoise();
+      if (gen !== startGenRef.current) return;
       await engine.startBinaural(mode === ModeName.Relax ? 2 : 10);
     } else {
       await engine.startDrone(color ?? '#4f46e5');
+      if (gen !== startGenRef.current) return;
       await engine.startBinaural(10);
     }
+    if (gen !== startGenRef.current) return;
     await engine.startSubBass(color);
+    if (gen !== startGenRef.current) return;
     if (!sessionStartMsRef.current) sessionStartMsRef.current = Date.now();
     startTick();
     if (__DEV__) console.log(`[soundscape] started — mode=${mode}`);
@@ -199,6 +210,8 @@ export function useNativeSoundscape(): NativeSoundscapeHandle {
     if (__DEV__) console.log('[soundscape] stopped');
   }, [stopTick]);
 
+  const mutedRef = useRef(false);
+
   const onAudioState = useCallback<NativeSoundscapeHandle['onAudioState']>((params) => {
     const active = params.active === true;
     const muted = params.muted === true;
@@ -209,8 +222,14 @@ export function useNativeSoundscape(): NativeSoundscapeHandle {
 
     const modeChanged = mode !== modeRef.current;
     modeRef.current = mode;
+    // Layer gains ramp in at their isMuted-aware targets, so a session started
+    // muted has every layer parked at 0 — a plain unmute only restores the
+    // master bus. Restart the recipe on unmute so the layers re-ramp to their
+    // audible targets.
+    const unmuted = mutedRef.current && !muted;
+    mutedRef.current = muted;
 
-    if (active && (!activeRef.current || modeChanged)) {
+    if (active && (!activeRef.current || modeChanged || unmuted)) {
       activeRef.current = true;
       void startSoundscape(mode);
     } else if (!active && activeRef.current) {
