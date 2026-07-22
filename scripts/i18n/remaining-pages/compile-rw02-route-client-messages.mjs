@@ -27,7 +27,7 @@ const promptSourcePath = join(
 );
 const modeSourcePath = join(
   repoRoot,
-  "src/components/resonance/types.ts",
+  "packages/audio/src/modes.ts",
 );
 const guideSourceRoot = join(
   repoRoot,

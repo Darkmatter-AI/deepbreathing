@@ -19,7 +19,10 @@
       "usesAppleSignIn": true,
       "supportsTablet": false,
       "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false
+        "ITSAppUsesNonExemptEncryption": false,
+        "UIBackgroundModes": [
+          "audio"
+        ]
       },
       "privacyManifests": {
         "NSPrivacyTracking": false,

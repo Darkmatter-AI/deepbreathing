@@ -1,3 +1,6 @@
 packages:
   - apps/*
+  # Dormant SDK 54 prototype; its expo/metro tree hoists into the root and
+  # breaks apps/mobile (SDK 56) — @expo/cli picks up the older metro-config.
+  - '!apps/resonance-mobile-app'
   - packages/*

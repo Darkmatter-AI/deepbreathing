@@ -7,7 +7,6 @@ import Visualizer from './components/Visualizer';
 import ParticleBackground from './components/ParticleBackground';
 import SnowBackground from './components/SnowBackground';
 import { createRuntimePhraseResolver, RuntimePhraseKey } from './runtime-phrases';
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetClose } from './ui/sheet';
 import { seedLocalStorageFromSnapshot, shouldMirrorPersist } from '../../breathing/persist-seed';
 import {
   commitPracticeStats,
@@ -468,6 +467,24 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   useEffect(() => {
     onEvent?.('keep_awake', { active: isRunning });
   }, [isRunning, onEvent]);
+
+  // Settings visibility bridge: the native host layers its own overlays (mode
+  // drawer, account button) above this webview, so it must know when the
+  // full-page settings covers the screen to get them out of the way.
+  useEffect(() => {
+    onEvent?.('settings_open', { open: controlsOpen });
+  }, [controlsOpen, onEvent]);
+
+  // Keyboard escape hatch for the full-page settings — matters on the web
+  // target where the removed Radix Sheet used to provide it.
+  useEffect(() => {
+    if (!controlsOpen) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setControlsOpen(false);
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [controlsOpen]);
 
   // Native background-audio handoff. sessionSeconds is intentionally read from
   // a ref so this only crosses the DOM bridge when playback state/config changes,
@@ -1137,24 +1154,25 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
         <ParticleBackground phase={phase} color={themeColor} speedMultiplier={speedMultiplier} />
       )}
 
-      {!isRunning && (
-        <header
-          className="fixed inset-x-0 top-0 z-30 flex items-center justify-end gap-2 p-6"
-          style={{
-            paddingTop: safeAreaInsets.top + 24,
-            paddingRight: safeAreaInsets.right + 24,
-            paddingLeft: safeAreaInsets.left + 24,
-          }}
-        >
+      <header
+        className={`fixed inset-x-0 top-0 z-30 flex items-center justify-end gap-2 p-6 transition-all duration-700 ease-out ${
+          isRunning ? 'pointer-events-none -translate-y-2 opacity-0' : 'translate-y-0 opacity-100'
+        }`}
+        style={{
+          paddingTop: safeAreaInsets.top + 24,
+          paddingRight: safeAreaInsets.right + 24,
+          paddingLeft: safeAreaInsets.left + 24,
+        }}
+      >
           <button
             onClick={() => setControlsOpen(true)}
+            tabIndex={isRunning ? -1 : 0}
             className="inline-flex items-center justify-center rounded-full border border-border/60 bg-card/80 p-2.5 text-muted-foreground shadow-sm backdrop-blur transition-colors hover:bg-card dark:border-border/40 dark:bg-card/40 dark:text-card-foreground"
             aria-label={getSafePhrase('ui.settings')}
           >
             <SettingsIcon size={16} />
           </button>
         </header>
-      )}
 
       <main className={`relative z-10 flex flex-1 flex-col items-center justify-center sm:pb-0 ${noMobileBottomPad ? 'pb-24' : 'pb-44'}`}>
         {/* Protocol UI: Round and breath counter */}
@@ -1190,27 +1208,32 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
           onClick={handleTogglePlay}
         />
 
-        {/* Duration chips — visible before session starts */}
-        {!isRunning && (
-          <div className="mt-5 flex items-center gap-1.5">
-            {durationOptions.filter(o => o.value !== null).map((option) => {
-              const isSelected = selectedDuration === option.value;
-              return (
-                <button
-                  key={option.value ?? 'open'}
-                  onClick={() => handleDurationSelect(option.value)}
-                  className={`rounded-full px-3 py-1 text-xs font-medium transition-all ${
-                    isSelected
-                      ? 'bg-card/80 text-card-foreground shadow-sm backdrop-blur'
-                      : 'text-muted-foreground hover:text-card-foreground'
-                  }`}
-                >
-                  {option.label}
-                </button>
-              );
-            })}
-          </div>
-        )}
+        {/* Duration chips — fade out on session start. Stays mounted so the
+            layout doesn't reflow and shift the visualizer mid-transition. */}
+        <div
+          className={`mt-5 flex items-center gap-1.5 transition-all duration-700 ease-out ${
+            isRunning ? 'pointer-events-none translate-y-2 opacity-0' : 'translate-y-0 opacity-100'
+          }`}
+          aria-hidden={isRunning}
+        >
+          {durationOptions.filter(o => o.value !== null).map((option) => {
+            const isSelected = selectedDuration === option.value;
+            return (
+              <button
+                key={option.value ?? 'open'}
+                onClick={() => handleDurationSelect(option.value)}
+                tabIndex={isRunning ? -1 : 0}
+                className={`rounded-full px-3 py-1 text-xs font-medium transition-all ${
+                  isSelected
+                    ? 'bg-card/80 text-card-foreground shadow-sm backdrop-blur'
+                    : 'text-muted-foreground hover:text-card-foreground'
+                }`}
+              >
+                {option.label}
+              </button>
+            );
+          })}
+        </div>
 
         {/* End Hold button for Wim Hof retention phase */}
         {isProtocolMode && protocolState.phase === ProtocolPhase.RetentionHold && protocolState.retentionTime >= WIM_HOF_PROTOCOL.retentionHoldMin && (
@@ -1245,29 +1268,32 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
         </div>
       )}
 
-      <Sheet open={controlsOpen} onOpenChange={setControlsOpen}>
-        <SheetContent side="right" className="bg-transparent shadow-none outline-none border-0 p-0">
-          <div
-            className="fixed right-4 top-4 z-50 w-[360px] max-w-[calc(100vw-2rem)] rounded-[32px] border border-border/70 bg-background/95 p-7 text-foreground shadow-[0_35px_90px_rgba(15,23,42,0.25)] backdrop-blur-2xl flex flex-col overflow-hidden sm:right-6 sm:top-20"
-            style={{
-              top: safeAreaInsets.top + 16,
-              right: safeAreaInsets.right + 16,
-              maxHeight: `calc(100vh - ${safeAreaInsets.top + safeAreaInsets.bottom + 32}px)`,
-            }}
-          >
-            <SheetHeader className="mb-6 text-left">
-              <div className="flex items-start justify-between">
-                <div>
-                  <SheetTitle className="text-xl font-semibold text-card-foreground">{getSafePhrase('ui.settings')}</SheetTitle>
-                  <p className="text-sm text-muted-foreground">Sound, pacing, and appearance.</p>
-                </div>
-                <SheetClose asChild>
-                  <button className="rounded-full p-1.5 text-muted-foreground hover:bg-card hover:text-card-foreground transition-colors">
-                    <X size={20} />
-                  </button>
-                </SheetClose>
+      {controlsOpen && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label={getSafePhrase('ui.settings')}
+          className="fixed inset-0 z-50 flex flex-col bg-background text-foreground"
+          style={{
+            paddingTop: safeAreaInsets.top + 20,
+            paddingBottom: safeAreaInsets.bottom + 16,
+            paddingLeft: safeAreaInsets.left + 24,
+            paddingRight: safeAreaInsets.right + 24,
+          }}
+        >
+            <div className="mb-6 flex items-start justify-between">
+              <div>
+                <h2 className="text-xl font-semibold text-card-foreground">{getSafePhrase('ui.settings')}</h2>
+                <p className="text-sm text-muted-foreground">Sound, pacing, and appearance.</p>
               </div>
-            </SheetHeader>
+              <button
+                onClick={() => setControlsOpen(false)}
+                className="rounded-full p-1.5 text-muted-foreground hover:bg-card hover:text-card-foreground transition-colors"
+                aria-label="Close settings"
+              >
+                <X size={20} />
+              </button>
+            </div>
             <div className="flex-1 space-y-6 overflow-y-auto pb-12 min-h-0">
               <div className="flex flex-col gap-4 rounded-2xl bg-card/70 p-4 shadow-inner dark:bg-card/30">
                 <div>
@@ -1328,9 +1354,8 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
                 </p>
               </div>
             </div>
-          </div>
-        </SheetContent>
-      </Sheet>
+        </div>
+      )}
     </div>
   );
 };

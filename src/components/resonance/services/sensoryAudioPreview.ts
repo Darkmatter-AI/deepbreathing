@@ -10,7 +10,7 @@ import {
   AudioService,
   type CuePlaybackOptions,
   type CueType,
-} from "./audioService";
+} from "@resonance/audio";
 
 type BreathAudioPhase = "inhale" | "exhale" | "hold";
 

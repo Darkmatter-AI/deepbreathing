@@ -13,7 +13,7 @@
 import React, { useCallback, useEffect, useImperativeHandle, useRef, useState, forwardRef } from 'react';
 import * as RadixSlider from '@radix-ui/react-slider';
 import { Slider } from '@/components/ui/slider';
-import { AudioService, TuningSnapshot } from './services/audioService';
+import { AudioService, TuningSnapshot } from '@resonance/audio';
 
 interface Props {
   audio: AudioService;

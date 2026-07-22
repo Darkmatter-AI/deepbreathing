@@ -7,7 +7,7 @@ import {
 } from "@resonance/domain";
 import { describe, expect, it } from "vitest";
 
-import type { CuePlaybackOptions, CueType } from "./audioService";
+import type { CuePlaybackOptions, CueType } from "@resonance/audio";
 import {
   StudioAudioPreview,
   type StudioAudioService,

@@ -5,7 +5,27 @@
  * - Phase cues shift timbre based on the active color theme.
  * - Binaural beats accept adaptive entrainment frequencies.
  */
- import { ModeName } from '../types';
+import { ModeName } from './modes';
+
+/**
+ * Platform seam. The engine is pure Web Audio; the only environment-specific
+ * pieces are how an AudioContext is created and whether the HTML `<audio>`
+ * autoplay-unlock dance applies. Web callers pass nothing (browser defaults);
+ * React Native callers inject `react-native-audio-api`'s AudioContext via
+ * `createContext` (the unlock hack self-disables where `document` is absent).
+ */
+export interface AudioPlatformAdapter {
+  createContext(): AudioContext | null;
+  /**
+   * Use linearRampToValueAtTime instead of repeated setTargetAtTime for
+   * continuously-retargeted params (breath-coupled filters, session-arc
+   * glides). react-native-audio-api renders rapid setTargetAtTime
+   * re-scheduling as audible FM warble / inharmonic sidebands (verified
+   * 2026-07-22); its linear ramps are sample-accurate. Web leaves this unset
+   * and keeps the original exponential-approach smoothing.
+   */
+  preferLinearRamps?: boolean;
+}
 
 export type CueType = 'inhale' | 'exhale' | 'hold';
 
@@ -115,6 +135,7 @@ export class AudioService {
   private masterGain: GainNode | null = null;
   private masterCompressor: DynamicsCompressorNode | null = null;
   private masterLimiter: DynamicsCompressorNode | null = null;
+  private masterSoftClip: WaveShaperNode | null = null;
   private masterTrim: GainNode | null = null;
   private preCompAnalyser: AnalyserNode | null = null;
   private postLimitAnalyser: AnalyserNode | null = null;
@@ -164,7 +185,16 @@ export class AudioService {
   private droneLfoNodes: OscillatorNode[] = [];
   private spatialSpeedOverride: number | null = null;
 
-  private droneNodes: { osc: OscillatorNode; panner: PannerNode; gain: GainNode }[] = [];
+  // Spatializer per drone partial. HRTF PannerNode on platforms that have it
+  // (browsers); StereoPanner orbit fallback where PannerNode isn't implemented
+  // yet (react-native-audio-api — upgrade to 'hrtf' when the library ships it).
+  private droneNodes: {
+    osc: OscillatorNode;
+    spatial:
+      | { kind: 'hrtf'; panner: PannerNode }
+      | { kind: 'stereo'; panner: StereoPannerNode };
+    gain: GainNode;
+  }[] = [];
   // Shared post-panner lowpass that all drone partials route through before the
   // master bus — strips the triangle-harmonic / panner-zipper HF "hiss".
   private droneLowpass: BiquadFilterNode | null = null;
@@ -194,8 +224,29 @@ export class AudioService {
   private musicVolume = 0.3;
   private themeColor = '#4f46e5';
 
-  constructor(options: { debug?: boolean } = {}) {
+  private platform: AudioPlatformAdapter | null = null;
+
+  constructor(options: { debug?: boolean; platform?: AudioPlatformAdapter } = {}) {
     this.debug = Boolean(options.debug);
+    this.platform = options.platform ?? null;
+  }
+
+  /**
+   * Glide a param toward `target`: exponential approach on web
+   * (setTargetAtTime), an explicit linear ramp on platforms that mis-render
+   * repeated setTargetAtTime (see AudioPlatformAdapter.preferLinearRamps).
+   * `seconds` approximates the time constant / ramp horizon.
+   */
+  private glideParam(param: AudioParam, target: number, seconds: number) {
+    if (!this.ctx) return;
+    const t = this.ctx.currentTime;
+    if (this.platform?.preferLinearRamps) {
+      param.cancelScheduledValues(t);
+      param.setValueAtTime(param.value, t);
+      param.linearRampToValueAtTime(target, t + Math.max(0.02, seconds));
+    } else {
+      param.setTargetAtTime(target, t, seconds);
+    }
   }
 
   private log(...args: unknown[]) {
@@ -206,6 +257,8 @@ export class AudioService {
   }
 
   private async unlockWithMediaElement() {
+    // Browser-only autoplay dance; no-op wherever there's no DOM (React Native).
+    if (typeof document === 'undefined') return;
     if (this.mediaUnlocked || typeof window === 'undefined') return;
     if (this.mediaUnlocking) return this.mediaUnlocking;
 
@@ -240,7 +293,11 @@ export class AudioService {
 
   private initContext() {
     if (this.disposed) return;
-    if (!this.ctx && typeof window !== 'undefined') {
+    if (this.ctx) return;
+
+    if (this.platform) {
+      this.ctx = this.platform.createContext();
+    } else if (typeof window !== 'undefined') {
       const AudioCtor = window.AudioContext || (window as any).webkitAudioContext;
       if (!AudioCtor) return;
       try {
@@ -248,8 +305,11 @@ export class AudioService {
       } catch {
         this.ctx = new AudioCtor();
       }
+    }
+
+    if (this.ctx) {
       this.buildOutputChain();
-      if (this.debug && this.ctx) {
+      if (this.debug) {
         this.ctx.onstatechange = () => {
           this.log('statechange', this.ctx?.state);
         };
@@ -274,24 +334,53 @@ export class AudioService {
     if (!this.ctx) return;
     this.masterGain = this.ctx.createGain();
 
-    this.masterCompressor = this.ctx.createDynamicsCompressor();
-    this.masterCompressor.threshold.value = -14;
-    this.masterCompressor.knee.value = 24;
-    this.masterCompressor.ratio.value = 3;
-    this.masterCompressor.attack.value = 0.02;
-    this.masterCompressor.release.value = 0.3;
+    // DynamicsCompressorNode is not implemented yet on react-native-audio-api
+    // (it's on their roadmap). Where it's missing, a tanh WaveShaper soft-clip
+    // stands in for the limiter so transients still can't slam the DAC, and
+    // the compressor stage is skipped (fields stay null — every consumer of
+    // masterCompressor/masterLimiter already null-guards).
+    const supportsCompressor =
+      typeof (this.ctx as any).createDynamicsCompressor === 'function';
 
-    // True peak limiter — fast attack, near-infinite ratio. Catches the
-    // 15–20ms cue noise transients that escape the slow compressor above.
-    this.masterLimiter = this.ctx.createDynamicsCompressor();
-    this.masterLimiter.threshold.value = -3;
-    this.masterLimiter.knee.value = 0;
-    this.masterLimiter.ratio.value = 20;
-    this.masterLimiter.attack.value = 0.001;
-    this.masterLimiter.release.value = 0.05;
+    if (supportsCompressor) {
+      this.masterCompressor = this.ctx.createDynamicsCompressor();
+      this.masterCompressor.threshold.value = -14;
+      this.masterCompressor.knee.value = 24;
+      this.masterCompressor.ratio.value = 3;
+      this.masterCompressor.attack.value = 0.02;
+      this.masterCompressor.release.value = 0.3;
 
+      // True peak limiter — fast attack, near-infinite ratio. Catches the
+      // 15–20ms cue noise transients that escape the slow compressor above.
+      this.masterLimiter = this.ctx.createDynamicsCompressor();
+      this.masterLimiter.threshold.value = -3;
+      this.masterLimiter.knee.value = 0;
+      this.masterLimiter.ratio.value = 20;
+      this.masterLimiter.attack.value = 0.001;
+      this.masterLimiter.release.value = 0.05;
+    } else {
+      this.masterCompressor = null;
+      this.masterLimiter = null;
+      this.masterSoftClip = this.ctx.createWaveShaper();
+      // tanh(kx)/k: unity gain at low level (slope 1 at 0 — the earlier
+      // /tanh(k) normalization boosted quiet signal by +4.6dB), soft ceiling
+      // tanh(k)/k ≈ 0.695 ≈ -3.2dBFS, matching the web limiter's -3dB
+      // threshold behavior.
+      const k = 1.2;
+      const curve = new Float32Array(1024);
+      for (let i = 0; i < curve.length; i++) {
+        const x = (i / (curve.length - 1)) * 2 - 1;
+        curve[i] = Math.tanh(x * k) / k;
+      }
+      this.masterSoftClip.curve = curve;
+      this.masterSoftClip.oversample = '2x';
+    }
+
+    // -3 dBFS safety margin. The soft-clip path also gets +1.6dB make-up gain
+    // (×1.2): the compressor stage on the web chain adds loudness this chain
+    // lacks, leaving native ~20% quieter than web at identical source levels.
     this.masterTrim = this.ctx.createGain();
-    this.masterTrim.gain.value = 0.71; // -3 dBFS safety margin
+    this.masterTrim.gain.value = supportsCompressor ? 0.71 : 0.71 * 1.2;
 
     // Diagnostic analyser taps — always present (cheap when no consumer is
     // reading) so the debug panel can show where in the chain a peak lives
@@ -309,11 +398,25 @@ export class AudioService {
     this.envelopeAnalyser = this.ctx.createAnalyser();
     this.envelopeAnalyser.fftSize = 1024;
 
-    this.masterGain.connect(this.masterCompressor);
     this.masterGain.connect(this.preCompAnalyser);
-    this.masterCompressor.connect(this.masterLimiter);
-    this.masterLimiter.connect(this.masterTrim);
-    this.masterLimiter.connect(this.postLimitAnalyser);
+    if (this.masterCompressor && this.masterLimiter) {
+      this.masterGain.connect(this.masterCompressor);
+      this.masterCompressor.connect(this.masterLimiter);
+      this.masterLimiter.connect(this.masterTrim);
+      this.masterLimiter.connect(this.postLimitAnalyser);
+    } else if (this.masterSoftClip) {
+      this.masterGain.connect(this.masterSoftClip);
+      // In-line (not side-tap) analyser: react-native-audio-api only renders
+      // nodes on the pulled path to destination, so a side-tap analyser reads
+      // permanent silence there. AnalyserNode is a pass-through, so putting it
+      // in the chain costs nothing and makes post-chain metering real on
+      // native. (The compressor branch above keeps the web-original side-tap.)
+      this.masterSoftClip.connect(this.postLimitAnalyser);
+      this.postLimitAnalyser.connect(this.masterTrim);
+    } else {
+      this.masterGain.connect(this.masterTrim);
+      this.masterGain.connect(this.postLimitAnalyser);
+    }
     this.masterTrim.connect(this.ctx.destination);
   }
 
@@ -341,6 +444,7 @@ export class AudioService {
       this.masterGain = null;
       this.masterCompressor = null;
       this.masterLimiter = null;
+      this.masterSoftClip = null;
       this.masterTrim = null;
       this.preCompAnalyser = null;
       this.postLimitAnalyser = null;
@@ -380,6 +484,7 @@ export class AudioService {
           this.masterGain = null;
           this.masterCompressor = null;
           this.masterLimiter = null;
+          this.masterSoftClip = null;
           this.masterTrim = null;
           this.preCompAnalyser = null;
           this.postLimitAnalyser = null;
@@ -407,6 +512,7 @@ export class AudioService {
       this.masterGain = null;
       this.masterCompressor = null;
       this.masterLimiter = null;
+      this.masterSoftClip = null;
       this.masterTrim = null;
       this.preCompAnalyser = null;
       this.postLimitAnalyser = null;
@@ -480,9 +586,15 @@ export class AudioService {
       const offset = index * (Math.PI / 2);
       const px = Math.cos(time * speed + offset) * 2;
       const pz = Math.sin(time * speed + offset) * 2;
-      node.panner.positionX.value = px;
-      node.panner.positionZ.value = pz;
-      node.panner.positionY.value = 0;
+      if (node.spatial.kind === 'hrtf') {
+        node.spatial.panner.positionX.value = px;
+        node.spatial.panner.positionZ.value = pz;
+        node.spatial.panner.positionY.value = 0;
+      } else {
+        // Stereo fallback: project the orbit's X onto pan. Depth (Z) is lost;
+        // scaled to ±0.8 so partials never hard-pin to one ear.
+        node.spatial.panner.pan.value = (px / 2) * 0.8;
+      }
     });
   }
 
@@ -517,14 +629,14 @@ export class AudioService {
       // Each partial keeps its ratio to root: [1, 1.5, 2, 0.99]
       const ratios = [1, 1.5, 2, 0.99];
       const ratio = ratios[index] ?? 1;
-      node.osc.frequency.setTargetAtTime(rootTarget * ratio, ctxTime, TC);
+      this.glideParam(node.osc.frequency, rootTarget * ratio, TC);
     });
 
     // LFO: slow from initial → (1 - arcLfoSlowdownFactor) over the arc window.
     this.droneLfoNodes.forEach((lfo, index) => {
       const initial = this.droneArc!.lfoRates[index] ?? 0.1;
       const target = initial * (1 - t * this.arcLfoSlowdownFactor);
-      lfo.frequency.setTargetAtTime(target, ctxTime, TC);
+      this.glideParam(lfo.frequency, target, TC);
     });
 
     // 8D orbit speed: slow by arcOrbitSlowdownFactor over the arc window.
@@ -631,6 +743,7 @@ export class AudioService {
     this.masterGain = null;
     this.masterCompressor = null;
     this.masterLimiter = null;
+    this.masterSoftClip = null;
     this.masterTrim = null;
     this.preCompAnalyser = null;
     this.postLimitAnalyser = null;
@@ -902,14 +1015,24 @@ export class AudioService {
     if (this.droneAnalyser) droneLowpass.connect(this.droneAnalyser);
     this.droneLowpass = droneLowpass;
 
+    // HRTF spatializer where the platform implements PannerNode; StereoPanner
+    // orbit approximation elsewhere (react-native-audio-api, for now).
+    const supportsHrtf = typeof (this.ctx as any).createPanner === 'function';
+
     partials.forEach((ratio, index) => {
       const osc = this.ctx!.createOscillator();
       const gain = this.ctx!.createGain();
-      const panner = this.ctx!.createPanner();
 
-      panner.panningModel = 'HRTF';
-      panner.distanceModel = 'inverse';
-      panner.refDistance = 2;
+      let spatial: (typeof this.droneNodes)[number]['spatial'];
+      if (supportsHrtf) {
+        const panner = this.ctx!.createPanner();
+        panner.panningModel = 'HRTF';
+        panner.distanceModel = 'inverse';
+        panner.refDistance = 2;
+        spatial = { kind: 'hrtf', panner };
+      } else {
+        spatial = { kind: 'stereo', panner: this.ctx!.createStereoPanner() };
+      }
       osc.frequency.value = baseFreq * ratio;
       osc.type = profile.oscType === 'triangle' ? 'triangle' : 'sine';
       osc.detune.value = profile.detune * (index + 0.5);
@@ -930,11 +1053,11 @@ export class AudioService {
       this.droneLfoNodes.push(lfo);
 
       osc.connect(gain);
-      gain.connect(panner);
-      panner.connect(droneLowpass);
+      gain.connect(spatial.panner);
+      spatial.panner.connect(droneLowpass);
 
       osc.start(t);
-      this.droneNodes.push({ osc, panner, gain });
+      this.droneNodes.push({ osc, spatial, gain });
     });
 
     // Capture session-arc baseline.
@@ -1113,8 +1236,8 @@ export class AudioService {
       return;
     }
 
-    gain.gain.setTargetAtTime(targetGain, t, 0.05);
-    filter.frequency.setTargetAtTime(targetFilter, t, 0.08);
+    this.glideParam(gain.gain, targetGain, 0.05);
+    this.glideParam(filter.frequency, targetFilter, 0.08);
   }
 
   public stopSubBass() {
@@ -1193,7 +1316,7 @@ export class AudioService {
       return;
     }
     // Short time constant for smooth tracking without zipper noise.
-    this.noiseNode.filter.frequency.setTargetAtTime(target, t, 0.08);
+    this.glideParam(this.noiseNode.filter.frequency, target, 0.08);
   }
 
   public stopPinkNoise() {

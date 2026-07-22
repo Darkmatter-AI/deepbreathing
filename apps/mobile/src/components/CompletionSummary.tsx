@@ -124,7 +124,7 @@ export default function CompletionSummary({
 
   return (
     <Animated.View style={[styles.overlay, { opacity }]}>
-      <View style={[styles.receipt, { backgroundColor: bg, borderColor: border, transform: [{ translateY }] }]}>
+      <Animated.View style={[styles.receipt, { backgroundColor: bg, borderColor: border, transform: [{ translateY }] }]}>
         <Pressable style={styles.receiptClose} onPress={dismiss} accessibilityLabel="Dismiss keep practice prompt">
           <Text style={[styles.dismissX, { color: subtle }]}>×</Text>
         </Pressable>
@@ -144,7 +144,7 @@ export default function CompletionSummary({
           Saved on this device only. A free account keeps it, and every minute after, on any screen you pick up.
         </Text>
         <AuthActions theme={theme} />
-      </View>
+      </Animated.View>
     </Animated.View>
   );
 }

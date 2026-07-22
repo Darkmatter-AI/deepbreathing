@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useRef } from 'react';
+import { useCallback, useEffect, useMemo, useRef } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import BottomSheet, {
   BottomSheetBackdrop,
@@ -28,6 +28,8 @@ const SHIPPED_MODES: ModeEntry[] = [
 
 interface Props {
   theme: 'light' | 'dark';
+  /** Slides the sheet off-screen (animated) instead of the host unmounting it. */
+  hidden?: boolean;
   activeModeName: string | null;
   onSelectMode: (mode: ModeName) => void;
 }
@@ -37,7 +39,7 @@ const VISIBLE_ROWS = 4;
 const HANDLE_HEIGHT = 24;
 const DRAWER_LABEL_HEIGHT = 32;
 
-export default function ModeLibrarySheet({ theme, activeModeName, onSelectMode }: Props) {
+export default function ModeLibrarySheet({ theme, hidden = false, activeModeName, onSelectMode }: Props) {
   const insets = useSafeAreaInsets();
   const sheetRef = useRef<BottomSheet>(null);
   const collapsedHeight = HANDLE_HEIGHT + DRAWER_LABEL_HEIGHT + insets.bottom;
@@ -71,6 +73,14 @@ export default function ModeLibrarySheet({ theme, activeModeName, onSelectMode }
     onSelectMode(mode);
     sheetRef.current?.snapToIndex(0);
   }, [onSelectMode]);
+
+  // Animated hide/show: close() slides the sheet below the screen edge; on
+  // return it comes back at the collapsed tab. Replaces the host's previous
+  // unmount, which made the drawer pop out with no exit animation.
+  useEffect(() => {
+    if (hidden) sheetRef.current?.close();
+    else sheetRef.current?.snapToIndex(0);
+  }, [hidden]);
 
   return (
     <BottomSheet
