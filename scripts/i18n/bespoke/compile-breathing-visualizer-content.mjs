@@ -30,7 +30,7 @@ const bannerSourcePath = join(
 );
 const modeSourcePath = join(
   repoRoot,
-  "src/components/resonance/types.ts",
+  "packages/audio/src/modes.ts",
 );
 
 export const BREATHING_VISUALIZER_LOCALES = [
