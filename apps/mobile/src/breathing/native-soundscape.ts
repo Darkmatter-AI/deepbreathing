@@ -58,6 +58,8 @@ export interface NativeSoundscapeHandle {
   onPhase(phase: unknown, color?: unknown): void;
   /** Speed multiplier from mirrored resonance settings. */
   onSpeedMultiplier(speed: number): void;
+  /** binauralEnabled from mirrored resonance settings (web parity: users can turn the binaural layer off). */
+  onBinauralEnabled(enabled: boolean): void;
   /** App moved to background/foreground. */
   onAppState(state: 'active' | 'background'): void;
 }
@@ -67,6 +69,7 @@ export function useNativeSoundscape(): NativeSoundscapeHandle {
   const activeRef = useRef(false);
   const modeRef = useRef<ModeName>(ModeName.Box);
   const speedRef = useRef(1);
+  const binauralRef = useRef(true); // web default: on
   const phaseRef = useRef<{ name: unknown; cue: CuePhase; startedAtMs: number }>({
     name: 'Inhale',
     cue: 'inhale',
@@ -178,15 +181,15 @@ export function useNativeSoundscape(): NativeSoundscapeHandle {
     if (mode === ModeName.WimHof) {
       await engine.startDrone(color ?? '#4f46e5');
       if (gen !== startGenRef.current) return;
-      await engine.startBinaural(15);
+      if (binauralRef.current) await engine.startBinaural(15);
     } else if (mode === ModeName.Relax || mode === ModeName.Coherent) {
       await engine.startPinkNoise();
       if (gen !== startGenRef.current) return;
-      await engine.startBinaural(mode === ModeName.Relax ? 2 : 10);
+      if (binauralRef.current) await engine.startBinaural(mode === ModeName.Relax ? 2 : 10);
     } else {
       await engine.startDrone(color ?? '#4f46e5');
       if (gen !== startGenRef.current) return;
-      await engine.startBinaural(10);
+      if (binauralRef.current) await engine.startBinaural(10);
     }
     if (gen !== startGenRef.current) return;
     await engine.startSubBass(color);
@@ -252,6 +255,14 @@ export function useNativeSoundscape(): NativeSoundscapeHandle {
     if (Number.isFinite(speed) && speed > 0) speedRef.current = speed;
   }, []);
 
+  const onBinauralEnabled = useCallback<NativeSoundscapeHandle['onBinauralEnabled']>((enabled) => {
+    const changed = binauralRef.current !== enabled;
+    binauralRef.current = enabled;
+    // Mid-session toggle: restart the recipe so the layer set matches, same
+    // as the unmute path.
+    if (changed && activeRef.current) void startSoundscape(modeRef.current);
+  }, [startSoundscape]);
+
   const onAppState = useCallback<NativeSoundscapeHandle['onAppState']>((state) => {
     // Backgrounding keeps the soundscape alive (that's the point of native
     // playback + UIBackgroundModes). The webview separately pauses/ends the
@@ -267,5 +278,5 @@ export function useNativeSoundscape(): NativeSoundscapeHandle {
     };
   }, [stopTick]);
 
-  return { onAudioState, onPhase, onSpeedMultiplier, onAppState };
+  return { onAudioState, onPhase, onSpeedMultiplier, onBinauralEnabled, onAppState };
 }

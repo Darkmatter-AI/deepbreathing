@@ -330,6 +330,9 @@ export default function HomeScreen() {
           if (typeof parsed.speedMultiplier === 'number') {
             soundscape.onSpeedMultiplier(parsed.speedMultiplier);
           }
+          if (typeof parsed.binauralEnabled === 'boolean') {
+            soundscape.onBinauralEnabled(parsed.binauralEnabled);
+          }
         } catch {
           // Malformed JSON — leave activeModeName unchanged.
         }

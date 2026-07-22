@@ -371,8 +371,13 @@ export class AudioService {
       this.masterLimiter.connect(this.postLimitAnalyser);
     } else if (this.masterSoftClip) {
       this.masterGain.connect(this.masterSoftClip);
-      this.masterSoftClip.connect(this.masterTrim);
+      // In-line (not side-tap) analyser: react-native-audio-api only renders
+      // nodes on the pulled path to destination, so a side-tap analyser reads
+      // permanent silence there. AnalyserNode is a pass-through, so putting it
+      // in the chain costs nothing and makes post-chain metering real on
+      // native. (The compressor branch above keeps the web-original side-tap.)
       this.masterSoftClip.connect(this.postLimitAnalyser);
+      this.postLimitAnalyser.connect(this.masterTrim);
     } else {
       this.masterGain.connect(this.masterTrim);
       this.masterGain.connect(this.postLimitAnalyser);
