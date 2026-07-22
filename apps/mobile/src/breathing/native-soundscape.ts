@@ -133,11 +133,32 @@ export function useNativeSoundscape(): NativeSoundscapeHandle {
             noiseNode?: { gain: { gain: { value: number } } } | null;
             subBassNode?: { gain: { gain: { value: number } } } | null;
           };
+          // Octave-band spectrum from the in-line analyser (real on native):
+          // distinguishes tonal drone content (low-band peaks) from noise beds
+          // (broadband) — i.e. does Box sound like Box, not just "is it loud".
+          let bands = '';
+          const analyser = (engine as unknown as { postLimitAnalyser?: AnalyserNode | null }).postLimitAnalyser;
+          if (analyser) {
+            const freq = new Float32Array(analyser.frequencyBinCount);
+            analyser.getFloatFrequencyData(freq);
+            const sr = (engine as unknown as { ctx?: { sampleRate: number } }).ctx?.sampleRate ?? 44100;
+            const hzPerBin = sr / 2 / freq.length;
+            const edges = [60, 120, 250, 500, 1000, 2000, 4000];
+            const out: string[] = [];
+            for (let b = 0; b < edges.length - 1; b++) {
+              let peak = -160;
+              for (let i = Math.floor(edges[b] / hzPerBin); i < Math.min(freq.length, Math.ceil(edges[b + 1] / hzPerBin)); i++) {
+                if (freq[i] > peak) peak = freq[i];
+              }
+              out.push(`${edges[b]}:${peak.toFixed(0)}`);
+            }
+            bands = ` | bands ${out.join(' ')}`;
+          }
           console.log(
             `[soundscape] meters post=${m.postLimiter.rmsDb.toFixed(1)}dB ` +
             `noise=${m.layers.pinkNoise.rmsDb.toFixed(1)} sub=${m.layers.subBass.rmsDb.toFixed(1)} ` +
             `| t=${anyEngine.ctx?.currentTime?.toFixed(2)} master=${anyEngine.masterGain?.gain.value?.toFixed(3)} ` +
-            `noiseG=${anyEngine.noiseNode?.gain.gain.value?.toFixed(4)} subG=${anyEngine.subBassNode?.gain.gain.value?.toFixed(4)}`,
+            `noiseG=${anyEngine.noiseNode?.gain.gain.value?.toFixed(4)} subG=${anyEngine.subBassNode?.gain.gain.value?.toFixed(4)}${bands}`,
           );
         } catch {
           // Meters are diagnostics only.
