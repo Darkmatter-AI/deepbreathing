@@ -5,7 +5,18 @@
  * - Phase cues shift timbre based on the active color theme.
  * - Binaural beats accept adaptive entrainment frequencies.
  */
- import { ModeName } from '../types';
+import { ModeName } from './modes';
+
+/**
+ * Platform seam. The engine is pure Web Audio; the only environment-specific
+ * pieces are how an AudioContext is created and whether the HTML `<audio>`
+ * autoplay-unlock dance applies. Web callers pass nothing (browser defaults);
+ * React Native callers inject `react-native-audio-api`'s AudioContext via
+ * `createContext` (the unlock hack self-disables where `document` is absent).
+ */
+export interface AudioPlatformAdapter {
+  createContext(): AudioContext | null;
+}
 
 export type CueType = 'inhale' | 'exhale' | 'hold';
 
@@ -194,8 +205,11 @@ export class AudioService {
   private musicVolume = 0.3;
   private themeColor = '#4f46e5';
 
-  constructor(options: { debug?: boolean } = {}) {
+  private platform: AudioPlatformAdapter | null = null;
+
+  constructor(options: { debug?: boolean; platform?: AudioPlatformAdapter } = {}) {
     this.debug = Boolean(options.debug);
+    this.platform = options.platform ?? null;
   }
 
   private log(...args: unknown[]) {
@@ -206,6 +220,8 @@ export class AudioService {
   }
 
   private async unlockWithMediaElement() {
+    // Browser-only autoplay dance; no-op wherever there's no DOM (React Native).
+    if (typeof document === 'undefined') return;
     if (this.mediaUnlocked || typeof window === 'undefined') return;
     if (this.mediaUnlocking) return this.mediaUnlocking;
 
@@ -240,7 +256,11 @@ export class AudioService {
 
   private initContext() {
     if (this.disposed) return;
-    if (!this.ctx && typeof window !== 'undefined') {
+    if (this.ctx) return;
+
+    if (this.platform) {
+      this.ctx = this.platform.createContext();
+    } else if (typeof window !== 'undefined') {
       const AudioCtor = window.AudioContext || (window as any).webkitAudioContext;
       if (!AudioCtor) return;
       try {
@@ -248,8 +268,11 @@ export class AudioService {
       } catch {
         this.ctx = new AudioCtor();
       }
+    }
+
+    if (this.ctx) {
       this.buildOutputChain();
-      if (this.debug && this.ctx) {
+      if (this.debug) {
         this.ctx.onstatechange = () => {
           this.log('statechange', this.ctx?.state);
         };

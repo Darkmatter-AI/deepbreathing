@@ -9,6 +9,7 @@ const nextConfig = {
   transpilePackages: [
     '@resonance/access-control',
     '@resonance/api-contracts',
+    '@resonance/audio',
     '@resonance/domain',
   ],
   webpack: (config, { isServer }) => {

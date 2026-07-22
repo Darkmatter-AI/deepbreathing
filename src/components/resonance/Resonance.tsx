@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { Volume2, VolumeX, Eye, EyeOff, Activity, Waves, Wind, Sun, Moon, Turtle, Rabbit, X, Settings as SettingsIcon, LogOut, Sprout } from 'lucide-react';
 import { BreathingPhase, ModeName, AIRecommendation, ProtocolPhase, ProtocolState } from './types';
 import { BREATHING_PATTERNS, DEFAULT_SPEED_MULTIPLIER, WIM_HOF_PROTOCOL, modeToSlug } from './constants';
-import { AudioService } from './services/audioService';
+import { AudioService } from '@resonance/audio';
 import Visualizer from './components/Visualizer';
 import { createRuntimePhraseResolver, detectRuntimeLocale, RuntimePhraseKey } from './runtime-phrases';
 import { LanguageSwitcherInline } from '@/components/language-switcher';

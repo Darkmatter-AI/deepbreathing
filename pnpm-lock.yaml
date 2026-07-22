@@ -40,6 +40,9 @@ importers:
       '@resonance/api-contracts':
         specifier: workspace:^
         version: link:packages/api-contracts
+      '@resonance/audio':
+        specifier: workspace:^
+        version: link:packages/audio
       '@resonance/domain':
         specifier: workspace:^
         version: link:packages/domain
@@ -266,6 +269,12 @@ importers:
         version: link:../domain
 
   packages/api-contracts:
+    dependencies:
+      '@resonance/domain':
+        specifier: workspace:^
+        version: link:../domain
+
+  packages/audio:
     dependencies:
       '@resonance/domain':
         specifier: workspace:^

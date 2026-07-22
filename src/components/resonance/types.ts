@@ -7,20 +7,11 @@ export enum BreathingPhase {
   Idle = 'Ready'
 }
 
-export enum ModeName {
-  Box = 'Box Breathing',
-  Relax = '4-7-8 Relax',
-  Coherent = 'Coherent Breathing',
-  Sigh = 'Physiological Sigh',
-  WimHof = 'Wim Hof Breathing',
-  PursedLip = 'Pursed Lip Breathing',
-  NadiShodhana = 'Nadi Shodhana',
-  Ujjayi = 'Ujjayi Breathing',
-  Belly = 'Belly Breathing',
-  Buteyko = 'Buteyko Breathing',
-  Tummo = 'Tummo Breathing',
-  BreathOfFire = 'Breath of Fire'
-}
+// Canonical definition moved to @resonance/audio (single copy shared with
+// mobile); re-exported here so the rest of the web app keeps importing it
+// from './types' unchanged.
+import { ModeName } from '@resonance/audio';
+export { ModeName };
 
 // Protocol-based breathing (for multi-round techniques like Wim Hof)
 export enum ProtocolPhase {
