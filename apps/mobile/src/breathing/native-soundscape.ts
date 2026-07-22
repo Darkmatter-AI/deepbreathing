@@ -80,6 +80,7 @@ export function useNativeSoundscape(): NativeSoundscapeHandle {
 
   const getEngine = useCallback(() => {
     if (!engineRef.current) {
+      
       // One-time AVAudioSession setup — 'playback' survives the silent switch
       // and (with UIBackgroundModes:audio) the lock screen.
       try {
@@ -95,6 +96,9 @@ export function useNativeSoundscape(): NativeSoundscapeHandle {
         debug: __DEV__,
         platform: {
           createContext: () => new RNAudioContext() as unknown as AudioContext,
+          // RNAA renders rapid setTargetAtTime re-scheduling as FM warble;
+          // its linear ramps are sample-accurate. See AudioPlatformAdapter.
+          preferLinearRamps: true,
         },
       });
     }
@@ -109,6 +113,7 @@ export function useNativeSoundscape(): NativeSoundscapeHandle {
   }, []);
 
   const meterLogAtRef = useRef(0);
+  const arcAtRef = useRef(0);
 
   const startTick = useCallback(() => {
     if (tickRef.current) return;
@@ -139,20 +144,26 @@ export function useNativeSoundscape(): NativeSoundscapeHandle {
           let bands = '';
           const analyser = (engine as unknown as { postLimitAnalyser?: AnalyserNode | null }).postLimitAnalyser;
           if (analyser) {
+            // 8192-point FFT (5.4Hz bins) — precise enough to catch wrong
+            // pitches (a semitone at C3 is ~7.8Hz). Log the top spectral peaks
+            // so we can compare actual partial frequencies against the
+            // engine's intended root/partial table.
+            if (analyser.fftSize !== 8192) {
+              try { analyser.fftSize = 8192; } catch { /* keep default */ }
+            }
             const freq = new Float32Array(analyser.frequencyBinCount);
             analyser.getFloatFrequencyData(freq);
             const sr = (engine as unknown as { ctx?: { sampleRate: number } }).ctx?.sampleRate ?? 44100;
             const hzPerBin = sr / 2 / freq.length;
-            const edges = [60, 120, 250, 500, 1000, 2000, 4000];
-            const out: string[] = [];
-            for (let b = 0; b < edges.length - 1; b++) {
-              let peak = -160;
-              for (let i = Math.floor(edges[b] / hzPerBin); i < Math.min(freq.length, Math.ceil(edges[b + 1] / hzPerBin)); i++) {
-                if (freq[i] > peak) peak = freq[i];
+            const peaks: { hz: number; db: number }[] = [];
+            const maxBin = Math.min(freq.length, Math.ceil(3000 / hzPerBin));
+            for (let i = 2; i < maxBin - 1; i++) {
+              if (freq[i] > -95 && freq[i] >= freq[i - 1] && freq[i] >= freq[i + 1]) {
+                peaks.push({ hz: i * hzPerBin, db: freq[i] });
               }
-              out.push(`${edges[b]}:${peak.toFixed(0)}`);
             }
-            bands = ` | bands ${out.join(' ')}`;
+            peaks.sort((a, b) => b.db - a.db);
+            bands = ` | peaks ${peaks.slice(0, 8).map((p) => `${p.hz.toFixed(0)}Hz:${p.db.toFixed(0)}`).join(' ')}`;
           }
           console.log(
             `[soundscape] meters post=${m.postLimiter.rmsDb.toFixed(1)}dB ` +
@@ -172,7 +183,13 @@ export function useNativeSoundscape(): NativeSoundscapeHandle {
       engine.updatePinkNoisePhase(cue, progress);
       engine.updatePhaseEnvelope(cue, progress);
       engine.updateSpatial(now);
-      if (sessionStartMsRef.current) {
+      // Session arc at 5s cadence, NOT per-tick: react-native-audio-api renders
+      // rapid setTargetAtTime re-scheduling on OscillatorNode.frequency as FM
+      // warble (verified 2026-07-22 — 10Hz arc updates turned the Box drone
+      // into an inharmonic cluster). The arc drifts ~4 cents per 5s step, so
+      // this cadence is inaudible while keeping the 4-minute texture evolution.
+      if (sessionStartMsRef.current && now - arcAtRef.current > 5000) {
+        arcAtRef.current = now;
         engine.tickSessionArc((now - sessionStartMsRef.current) / 1000);
       }
     }, TICK_MS);

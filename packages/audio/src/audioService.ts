@@ -16,6 +16,15 @@ import { ModeName } from './modes';
  */
 export interface AudioPlatformAdapter {
   createContext(): AudioContext | null;
+  /**
+   * Use linearRampToValueAtTime instead of repeated setTargetAtTime for
+   * continuously-retargeted params (breath-coupled filters, session-arc
+   * glides). react-native-audio-api renders rapid setTargetAtTime
+   * re-scheduling as audible FM warble / inharmonic sidebands (verified
+   * 2026-07-22); its linear ramps are sample-accurate. Web leaves this unset
+   * and keeps the original exponential-approach smoothing.
+   */
+  preferLinearRamps?: boolean;
 }
 
 export type CueType = 'inhale' | 'exhale' | 'hold';
@@ -222,6 +231,24 @@ export class AudioService {
     this.platform = options.platform ?? null;
   }
 
+  /**
+   * Glide a param toward `target`: exponential approach on web
+   * (setTargetAtTime), an explicit linear ramp on platforms that mis-render
+   * repeated setTargetAtTime (see AudioPlatformAdapter.preferLinearRamps).
+   * `seconds` approximates the time constant / ramp horizon.
+   */
+  private glideParam(param: AudioParam, target: number, seconds: number) {
+    if (!this.ctx) return;
+    const t = this.ctx.currentTime;
+    if (this.platform?.preferLinearRamps) {
+      param.cancelScheduledValues(t);
+      param.setValueAtTime(param.value, t);
+      param.linearRampToValueAtTime(target, t + Math.max(0.02, seconds));
+    } else {
+      param.setTargetAtTime(target, t, seconds);
+    }
+  }
+
   private log(...args: unknown[]) {
     if (this.debug) {
       // eslint-disable-next-line no-console
@@ -335,10 +362,15 @@ export class AudioService {
       this.masterCompressor = null;
       this.masterLimiter = null;
       this.masterSoftClip = this.ctx.createWaveShaper();
+      // tanh(kx)/k: unity gain at low level (slope 1 at 0 — the earlier
+      // /tanh(k) normalization boosted quiet signal by +4.6dB), soft ceiling
+      // tanh(k)/k ≈ 0.695 ≈ -3.2dBFS, matching the web limiter's -3dB
+      // threshold behavior.
+      const k = 1.2;
       const curve = new Float32Array(1024);
       for (let i = 0; i < curve.length; i++) {
         const x = (i / (curve.length - 1)) * 2 - 1;
-        curve[i] = Math.tanh(x * 1.4) / Math.tanh(1.4);
+        curve[i] = Math.tanh(x * k) / k;
       }
       this.masterSoftClip.curve = curve;
       this.masterSoftClip.oversample = '2x';
@@ -594,14 +626,14 @@ export class AudioService {
       // Each partial keeps its ratio to root: [1, 1.5, 2, 0.99]
       const ratios = [1, 1.5, 2, 0.99];
       const ratio = ratios[index] ?? 1;
-      node.osc.frequency.setTargetAtTime(rootTarget * ratio, ctxTime, TC);
+      this.glideParam(node.osc.frequency, rootTarget * ratio, TC);
     });
 
     // LFO: slow from initial → (1 - arcLfoSlowdownFactor) over the arc window.
     this.droneLfoNodes.forEach((lfo, index) => {
       const initial = this.droneArc!.lfoRates[index] ?? 0.1;
       const target = initial * (1 - t * this.arcLfoSlowdownFactor);
-      lfo.frequency.setTargetAtTime(target, ctxTime, TC);
+      this.glideParam(lfo.frequency, target, TC);
     });
 
     // 8D orbit speed: slow by arcOrbitSlowdownFactor over the arc window.
@@ -1201,8 +1233,8 @@ export class AudioService {
       return;
     }
 
-    gain.gain.setTargetAtTime(targetGain, t, 0.05);
-    filter.frequency.setTargetAtTime(targetFilter, t, 0.08);
+    this.glideParam(gain.gain, targetGain, 0.05);
+    this.glideParam(filter.frequency, targetFilter, 0.08);
   }
 
   public stopSubBass() {
@@ -1281,7 +1313,7 @@ export class AudioService {
       return;
     }
     // Short time constant for smooth tracking without zipper noise.
-    this.noiseNode.filter.frequency.setTargetAtTime(target, t, 0.08);
+    this.glideParam(this.noiseNode.filter.frequency, target, 0.08);
   }
 
   public stopPinkNoise() {
