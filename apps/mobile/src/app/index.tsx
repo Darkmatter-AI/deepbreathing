@@ -12,7 +12,6 @@ import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context'
 import { Image } from 'expo-image';
 import { Stack } from 'expo-router';
 import * as Localization from 'expo-localization';
-import { setAudioModeAsync } from 'expo-audio';
 import * as Haptics from 'expo-haptics';
 import { activateKeepAwakeAsync, deactivateKeepAwake } from 'expo-keep-awake';
 
@@ -24,11 +23,7 @@ import {
   RESONANCE_STORAGE_KEYS,
 } from '../breathing/resonance-mirror';
 import { GA4_FORWARDED_EVENTS, fireGA4Event, warmClientId } from '../breathing/ga4-mp';
-import {
-  useBackgroundAudio,
-  type NativeAudioState,
-} from '../breathing/use-background-audio';
-import { useNativePhaseAudio } from '../breathing/use-native-phase-audio';
+import { useNativeSoundscape } from '../breathing/native-soundscape';
 import CompletionSummary, { type CompletionSummaryData } from '../components/CompletionSummary';
 import ModeLibrarySheet from '../components/ModeLibrarySheet';
 import { BREATHING_PATTERNS, ModeName } from '../components/breathing-web/constants';
@@ -84,13 +79,6 @@ export default function HomeScreen() {
   const [appState, setAppState] = useState<'active' | 'background'>(
     toBreathingAppState(AppState.currentState),
   );
-  const [nativeAudioState, setNativeAudioState] = useState<NativeAudioState>({
-    active: false,
-    muted: false,
-    elapsedSeconds: 0,
-    duration: null,
-    reportedAtMs: Date.now(),
-  });
   const [snapshotReady, setSnapshotReady] = useState(false);
   const [persistedSnapshot, setPersistedSnapshot] = useState<ResonancePersistedSnapshot>({});
   const [snapshotVersion, setSnapshotVersion] = useState(0);
@@ -98,10 +86,9 @@ export default function HomeScreen() {
   const practiceIdRef = useRef<string | null>(null);
   const committedSecondsRef = useRef(0);
   const hydratedUserIdRef = useRef<string | null>(null);
-  const nativeAudioMutedRef = useRef(false);
   const edgeGlowOpacity = useRef(new Animated.Value(0)).current;
   const accountButtonOpacity = useRef(new Animated.Value(1)).current;
-  const playNativePhaseAudio = useNativePhaseAudio();
+  const soundscape = useNativeSoundscape();
 
   // Completion summary visibility.
   const [summaryData, setSummaryData] = useState<CompletionSummaryData | null>(null);
@@ -128,7 +115,9 @@ export default function HomeScreen() {
   // Used to show a checkmark on the current mode in the sheet.
   const [activeModeName, setActiveModeName] = useState<string | null>(null);
 
-  useBackgroundAudio({ appState, audioState: nativeAudioState });
+  useEffect(() => {
+    soundscape.onAppState(appState);
+  }, [appState, soundscape]);
 
   useEffect(() => {
     Animated.timing(edgeGlowOpacity, {
@@ -206,22 +195,9 @@ export default function HomeScreen() {
     }
   }, [appState, authSession?.user.id]);
 
-  // Best-effort audio session setup on mount (so cues play with the ringer off).
-  useEffect(() => {
-    (async () => {
-      try {
-        await setAudioModeAsync({
-          playsInSilentMode: true,
-          interruptionMode: 'mixWithOthers',
-          allowsRecording: false,
-          shouldPlayInBackground: true,
-          shouldRouteThroughEarpiece: false,
-        });
-      } catch {
-        // Non-fatal — audio degrades gracefully.
-      }
-    })();
-  }, []);
+  // AVAudioSession config now lives in useNativeSoundscape (react-native-audio-api
+  // AudioManager, category 'playback') — a second library configuring the session
+  // here would fight it.
 
   // Bridge native foreground/background so the DOM component suspends/resumes audio.
   useEffect(() => {
@@ -269,7 +245,7 @@ export default function HomeScreen() {
       setSummaryData(null);
     }
     if (name === 'phase_haptic') {
-      void playNativePhaseAudio(params?.phase, nativeAudioMutedRef.current);
+      soundscape.onPhase(params?.phase, params?.color);
       edgeGlowOpacity.stopAnimation();
       edgeGlowOpacity.setValue(0.32);
       Animated.timing(edgeGlowOpacity, {
@@ -298,16 +274,7 @@ export default function HomeScreen() {
       return;
     }
     if (name === 'audio_state') {
-      nativeAudioMutedRef.current = params?.muted === true;
-      setNativeAudioState({
-        active: params?.active === true,
-        muted: params?.muted === true,
-        elapsedSeconds:
-          typeof params?.elapsedSeconds === 'number' ? Math.max(0, params.elapsedSeconds) : 0,
-        duration:
-          typeof params?.duration === 'number' && params.duration > 0 ? params.duration : null,
-        reportedAtMs: Date.now(),
-      });
+      soundscape.onAudioState(params ?? {});
       return;
     }
     if (name === 'breathing_session_start') {
@@ -360,6 +327,9 @@ export default function HomeScreen() {
           if (typeof parsed.mode === 'string') {
             setActiveModeName(parsed.mode);
           }
+          if (typeof parsed.speedMultiplier === 'number') {
+            soundscape.onSpeedMultiplier(parsed.speedMultiplier);
+          }
         } catch {
           // Malformed JSON — leave activeModeName unchanged.
         }
@@ -372,7 +342,7 @@ export default function HomeScreen() {
     if (GA4_FORWARDED_EVENTS.has(name)) {
       fireGA4Event(name, params ?? {});
     }
-  }, [authSession?.user.id, edgeGlowOpacity, playNativePhaseAudio]);
+  }, [authSession?.user.id, edgeGlowOpacity, soundscape]);
 
   // Match the native safe-area backdrop to the experience's --background token
   // (light: cream 32 72% 97%, dark: warm 20 34% 10%) so there's no black strip.
