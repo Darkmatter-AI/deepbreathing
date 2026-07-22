@@ -91,7 +91,7 @@ const Visualizer: React.FC<VisualizerProps> = ({ scale, color, label, instructio
             }`}
         >
           <div className="flex flex-col items-center transition-opacity duration-300">
-            <h2 className="text-4xl font-bold uppercase tracking-widest text-white opacity-90 drop-shadow-sm text-center px-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold uppercase tracking-widest text-white opacity-90 drop-shadow-sm text-center px-4">
               {label}
             </h2>
             {instructions && (

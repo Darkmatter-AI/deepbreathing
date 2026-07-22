@@ -60,9 +60,10 @@ Status key: ✅ Done | ⏳ Pending | 🔲 Not started
 |---|---|---|---|
 | 4.1 | `app.json` `version` and `ios.buildNumber` set correctly | ✅ | Version 1.0.0; build 4 queued with remote auto-increment |
 | 4.2 | `ITSAppUsesNonExemptEncryption = false` in `ios.infoPlist` | ✅ | Already set in `app.json` |
-| 4.3 | `PrivacyInfo.xcprivacy` added to iOS target | 🔲 | See privacy-manifest.md for exact XML |
-| 4.4 | Production build: `eas build --platform ios --profile production` | 🔲 | Creates `.ipa` and uploads to EAS |
-| 4.5 | Build passes all Apple validations (check build log in EAS dashboard) | 🔲 | Privacy manifest warnings appear here |
+| 4.3 | `PrivacyInfo.xcprivacy` added to iOS target | ✅ | Declared via `ios.privacyManifests` in `app.json` (UserDefaults CA92.1, SystemBootTime 35F9.1, FileTimestamp C617.1, DiskSpace E174.1); Expo generates the manifest at prebuild |
+| 4.4 | GA4 env vars set for EAS production builds | 🔲 | **Blocker for analytics:** `.env` is gitignored and EAS cloud builds only see git-tracked files, so `EXPO_PUBLIC_GA4_MEASUREMENT_ID` / `EXPO_PUBLIC_GA4_MP_API_SECRET` are `undefined` at bundle time and `ga4-mp.ts` silently no-ops every event. Fix before building: `cd apps/mobile && set -a && source .env && set +a && npx eas env:create --environment production --name EXPO_PUBLIC_GA4_MEASUREMENT_ID --value "$EXPO_PUBLIC_GA4_MEASUREMENT_ID" --visibility plaintext --scope project --non-interactive && npx eas env:create --environment production --name EXPO_PUBLIC_GA4_MP_API_SECRET --value "$EXPO_PUBLIC_GA4_MP_API_SECRET" --visibility sensitive --scope project --non-interactive` |
+| 4.5 | Production build: `eas build --platform ios --profile production` | 🔲 | Creates `.ipa` and uploads to EAS |
+| 4.6 | Build passes all Apple validations (check build log in EAS dashboard) | 🔲 | Privacy manifest warnings appear here |
 
 ---
 
@@ -84,15 +85,15 @@ Apple requires screenshots for every device size you support. Required sizes (pi
 | iPhone 6.7" (Pro Max) | 1290 × 2796 px | **Required** |
 | iPhone 6.5" (Plus/Max pre-14) | 1242 × 2688 px | Required (or use 6.7" shots — ASC accepts scaling for older sizes if 6.7" provided) |
 | iPhone 5.5" (8 Plus and older) | 1242 × 2208 px | Required if supporting iOS 15 and earlier or if you want to support those devices explicitly |
-| iPad Pro 12.9" (3rd gen+) | 2048 × 2732 px | Required **only** if `supportsTablet: true` — currently `true` in `app.json`. Either set to `false` or provide iPad screenshots. |
+| iPad Pro 12.9" (3rd gen+) | 2048 × 2732 px | Not required — `supportsTablet` is `false` in `app.json`. |
 
-> **Recommendation:** Set `supportsTablet: false` in `app.json` for v1.0 unless the breathing orb layout is tested on iPad. Avoids the iPad screenshot requirement and reduces review surface.
+> ✅ Done — `supportsTablet: false` is set in `app.json` for v1.0. No iPad screenshots needed.
 
 | # | Task | Status | Notes |
 |---|---|---|---|
 | 6.1 | iPhone 6.7" screenshots (min 3, up to 10) | 🔲 | Capture via Simulator or real device |
 | 6.2 | iPhone 6.5" screenshots | 🔲 | Can reuse 6.7" in ASC if dimensions match |
-| 6.3 | iPad 12.9" screenshots (if `supportsTablet: true`) | 🔲 | |
+| 6.3 | iPad 12.9" screenshots (if `supportsTablet: true`) | ✅ N/A | `supportsTablet: false` — not required |
 | 6.4 | Screenshots do not show status bar with wrong time/signal | 🔲 | Use Simulator's clean status bar |
 | 6.5 | App Previews (optional video) | 🔲 | Not required; can skip for v1 |
 
@@ -169,9 +170,19 @@ Review notes are shown to the App Store reviewer. Include:
 The core breathing experience works without an account. Apple and Google sign-in are optional
 and are used only to sync practice sessions and settings between the app and website. Reviewers
 may use Sign in with Apple; no demo credentials are required. Users can delete an account from
-the in-app account sheet. The app renders bundled local UI and opens only provider-controlled
-authentication pages during sign-in.
+the in-app account sheet; deletion is confirmed via an email link for account safety. The app's
+UI is bundled locally into the binary (rendered in a local web view with no remote content
+loaded). Apple sign-in uses the native ID-token flow with no web page; Google sign-in opens a
+system authentication session to our own auth domain, which redirects to Google's login page.
 ```
+
+> Wording verified against code 2026-07-22: deletion is initiated in-app but completed via an
+> emailed confirmation link (`auth.ts` `sendDeleteAccountVerification`) — say so up front rather
+> than let the reviewer discover it. The binary contains a WKWebView (Expo DOM component); the
+> notes disclose it renders only bundled local content so a binary inspection doesn't look like
+> a hidden remote-wrapper. Google sign-in's first page is `origin.deepbreathingexercises.com`
+> (better-auth expo proxy), not Google — the old "only provider-controlled pages" phrasing was
+> inaccurate.
 
 | # | Task | Status | Notes |
 |---|---|---|---|
