@@ -18,6 +18,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-07-22 | [First-Load-JS Webpack Experiment (PR #31) — Production Outage Post-Mortem + Removal](#2026-07-22-first-load-js-webpack-experiment-pr-31--production-outage-post-mortem--removal) | ❌ Failed |
 | 2026-07-21 | [IndexNow Changed-Canonical-URL Submission](#2026-07-21-indexnow-changed-canonical-url-submission) | 🔄 Implemented |
 | 2026-07-20 | [Stop Proxy Cache Warming After Native Translation Cutover](#2026-07-20-stop-proxy-cache-warming-after-native-translation-cutover) | 🔄 Implemented |
 | 2026-07-20 | [Post-Migration Locale Metadata Hygiene — Translation Leakage + Truncation Corrections](#2026-07-20-post-migration-locale-metadata-hygiene--translation-leakage--truncation-corrections) | 🔄 Implemented |
@@ -83,13 +84,33 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-01-06 | [Navy SEAL Content Expansion](#2026-01-06-navy-seal-content-expansion) | ❌ Failed |
 | 2026-01-06 | [CTR Title Rewrites (Batch 1)](#2026-01-06-ctr-title-rewrites-batch-1) | ✅ Success |
 
-**Roll-up by status (61 entries):** ✅ 4 Success · ❌ 11 Failed · ⚪ 12 Inconclusive · 🟡 3 Mixed · ⏳ 1 Waiting · 🔄 21 Implemented · 📊 9 Snapshot. *(2026-07-22: appstore-branch merge restored the uncommitted 2026-07-18 post-translation migration audit snapshot. 2026-07-21: +changed-canonical-URL IndexNow submission. 2026-07-20: +native-mode proxy cache-warmer guard; +post-migration locale metadata hygiene corrections. 2026-07-19: +FR coherent Bing CTR rewrite; +homepage server-rendered content fix. 2026-07-18 autoresearch cycle 1: settled 5 overdue verdicts — ?duration= hreflang ✅, trailing-slash ❌ superseded, Tummo 🟡, 404 root-cause ❌, crawl hygiene 🟡; +hope-cartel reviews-intent entry. 2026-07-15: +native translation serving migration planning entry. 2026-06-21: audio-v2 rebase folded in the 2026-05-18 Indexing-Recovery Checkpoint snapshot. 2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
+**Roll-up by status (62 entries):** ✅ 4 Success · ❌ 12 Failed · ⚪ 12 Inconclusive · 🟡 3 Mixed · ⏳ 1 Waiting · 🔄 21 Implemented · 📊 9 Snapshot. *(2026-07-22: +PR #31 webpack experiment ❌ post-mortem (returning-visitor outage; block removed); appstore-branch merge restored the uncommitted 2026-07-18 post-translation migration audit snapshot. 2026-07-21: +changed-canonical-URL IndexNow submission. 2026-07-20: +native-mode proxy cache-warmer guard; +post-migration locale metadata hygiene corrections. 2026-07-19: +FR coherent Bing CTR rewrite; +homepage server-rendered content fix. 2026-07-18 autoresearch cycle 1: settled 5 overdue verdicts — ?duration= hreflang ✅, trailing-slash ❌ superseded, Tummo 🟡, 404 root-cause ❌, crawl hygiene 🟡; +hope-cartel reviews-intent entry. 2026-07-15: +native translation serving migration planning entry. 2026-06-21: audio-v2 rebase folded in the 2026-05-18 Indexing-Recovery Checkpoint snapshot. 2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
 
 See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of what worked / failed / strategic insights from the first month of experiments.
 
 ---
 
 ## Active Experiments
+
+### 2026-07-22: First-Load-JS Webpack Experiment (PR #31) — Production Outage Post-Mortem + Removal
+
+**Verdict: ❌ Failed — caused a production outage; removed wholesale.** PR #31 ("perf(web): cut first-load JS 27% (650→474 kB)") shipped a custom webpack block in `next.config.js` that was never logged here, so it carried no hypothesis, baseline, or success criteria when it detonated.
+
+**What happened (2026-07-22):** the 14:36 UTC deploy (PR #57 merge) broke the homepage and all `/breathe/*` routes for **every returning visitor** — Next's "Application error" page on hydration. New visitors and previews were unaffected, so no gate caught it.
+
+**Mechanism — three interacting changes from the experiment:**
+
+1. `output.chunkFilename = 'static/chunks/[name].js'` removed content hashes from async chunks. Vercel serves `/_next/static` with `cache-control: immutable`, so browsers cached `9.js` etc. forever.
+2. `optimization.moduleIds = 'size'` reshuffles module ids on every build, so a stale cached chunk is guaranteed-incompatible rather than harmlessly stale. Result: `TypeError: (0, n.jsx) is not a function` from the old cached `9.js` running against new chunks.
+3. The second SWC minify pass with `drop_console: true` stripped `console.error` from react-dom and the app router — the crash produced **zero console output**, defeating both browser debugging and any console-based monitoring. Root-causing required patching Next's error-boundary component in an iframe harness to exfiltrate the stack.
+
+**Resolution:** hotfix PR #58 (commit `54eb173`) restored `[contenthash]` on async chunk filenames. Follow-up commit `54ecbcb` removes the entire webpack block in favor of Next defaults. Fresh HTML references fresh hashed URLs, so all poisoned browsers self-heal on next load — no cache purge needed. First-load JS regresses part of the 27% win; correctness and debuggability win.
+
+**Learnings:**
+
+- Never ship un-content-hashed static assets behind an immutable CDN cache. The failure is invisible in previews (no visitors with warm caches) and detonates on a later, unrelated deploy.
+- `drop_console` on vendor chunks removes the only error signal production has. Off-limits.
+- Perf experiments in build config are SEO-adjacent experiments and get logged here BEFORE shipping, like everything else. This one wasn't, which is why the trade-off ("cache-busting… irrelevant to the metric") went unchallenged.
 
 ### 2026-07-21: IndexNow Changed-Canonical-URL Submission
 
@@ -103,7 +124,7 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 
 **Pre-committed success criteria and validation window:** On the first authorized production deployment, retain the build log line for submitted changed-URL count and IndexNow response status. Confirm in Bing telemetry that only those intended canonical URLs appear. Continue checking deployment logs and Bing submission totals for 7 calendar days. Success means every no-route-change deployment makes zero IndexNow requests, every unambiguously mapped route deployment submits each intended canonical URL once, and no full-sitemap-sized batch appears. Treat missing or ambiguous manifests as a successful safety no-op, not a reason to resubmit all URLs. Reopen if a qualifying changed page is omitted despite a trustworthy direct page-entry diff, or if any excluded URL is submitted.
 
-**Status:** 🔄 Implemented locally. Production deployment, first-response capture, and the 7-day Bing validation window remain pending.
+**Status:** 🔄 Shipped in PR #62 on 2026-07-26. The first production deployment logged `IndexNow: No changed canonical URLs; submitting nothing.`, so the no-route-change safety path made zero requests as intended. Keep the 7-day Bing validation window open through 2026-08-02; a future deployment with an unambiguously changed page entry still needs the positive-path submission check.
 
 ### 2026-07-18: Post-Translation Migration Audit — Native Routing + GA4 Integrity
 
@@ -2217,7 +2238,7 @@ The preceding localized window recorded 37 clicks and 1,233 impressions. Current
 
 **Measure after:** `2026-07-27` for the technical/crawl guardrail and `2026-08-17` for the mature search guardrail.
 
-**Status:** 🔄 Implemented locally; merge pending.
+**Status:** 🔄 Merged and live in PR #54 on 2026-07-20. T+7 and T+28 measurement windows remain open.
 
 ---
 
