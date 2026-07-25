@@ -9,16 +9,18 @@ Compiled from session audit on 2026-04-27. Refreshed 2026-05-05 with post-deploy
 
 ## Test suite — 23 rotted tests, no CI runner
 
-Found 2026-07-25 while adding a regression guard for the welcome-email reply bug. `scripts/tests/` holds **57 test files / 355 tests**, and until now exactly one (`test:i18n-content-quality`) was wired to an npm script. Nothing ran them; there is no `.github/workflows` at all, so the only CI is the Vercel build. `pnpm test` now runs the suite: **330 pass, 23 fail across 14 files.**
+Found 2026-07-25 while adding a regression guard for the welcome-email reply bug. `scripts/tests/` holds **57 test files / 355 tests**, and until now exactly one (`test:i18n-content-quality`) was wired to an npm script. Nothing ran them; there is no `.github/workflows` at all, so the only CI is the Vercel build. `pnpm test` now runs the suite: **331 pass, 22 fail across 13 files.**
 
 The 23 are test rot, not live product bugs — they assert source shapes that were later refactored (e.g. `share-button.tsx` no longer uses `getLocalizedShareText`, the og-fonts helper was renamed, `variant.ts` moved past the `v3` storage key the test pins). Worth confirming individually, since a rotted test and a real regression look identical until you read it.
 
 `prebuild` is gated on `check:email-contract` only, deliberately — gating on the full suite would block every deploy until these 23 are resolved.
 
+One of the original 23 failures (`typescript-build-compat`) turned out to be a worktree install artifact, not rot — see gotcha #23 in the runbook. The remaining 22 are genuine.
+
 Suggested ratchet, in order:
-1. Triage the 14 files: fix the assertion where the code moved on, delete the test where the contract is genuinely gone.
+1. Triage the 13 files: fix the assertion where the code moved on, delete the test where the contract is genuinely gone.
 2. Once green, add `pnpm test` to `prebuild` (or a first GitHub Actions workflow) so the suite can only get stricter.
-3. Until then, run `pnpm test` by hand before merging anything non-trivial and compare the failure list to the 23 known ones.
+3. Until then, run `pnpm test` by hand before merging anything non-trivial and compare the failure list to the 22 known ones.
 
 ## Email / deliverability
 
