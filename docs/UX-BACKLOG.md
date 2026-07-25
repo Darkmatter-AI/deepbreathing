@@ -7,6 +7,19 @@ Compiled from session audit on 2026-04-27. Refreshed 2026-05-05 with post-deploy
 - **In-app theme toggle doesn't reach native chrome** (found 2026-07-22 pre-submission QA): the webview settings' light/dark toggle only themes the webview (`themeOverride` in `BreathingExperience.tsx` is never emitted via `onEvent`). Native side (`apps/mobile/src/app/index.tsx:79`) follows `useColorScheme()` only, so with device-dark + in-app-light the status bar clock is white-on-cream (illegible) and CompletionSummary/account button render dark over a light webview. Fix: emit a `theme_changed` event from the webview and let it override the native theme + `expo-status-bar` style. Cosmetic, only when in-app toggle diverges from system theme; not a 1.0 blocker.
 - **One-off: session auto-completed immediately on resume tap** (observed once 2026-07-22, simulator): pause → resume showed the completion receipt with full 0:30 credited despite ~20s paused. Deliberate repro (pause 5s → wait 40s → resume) behaves correctly, so likely a double-fired tap (pause+resume) letting the session run out in the background. Watch for it in TestFlight; if real users report instant completions, instrument `handleTogglePlay` re-entry.
 
+## Test suite — 23 rotted tests, no CI runner
+
+Found 2026-07-25 while adding a regression guard for the welcome-email reply bug. `scripts/tests/` holds **57 test files / 355 tests**, and until now exactly one (`test:i18n-content-quality`) was wired to an npm script. Nothing ran them; there is no `.github/workflows` at all, so the only CI is the Vercel build. `pnpm test` now runs the suite: **330 pass, 23 fail across 14 files.**
+
+The 23 are test rot, not live product bugs — they assert source shapes that were later refactored (e.g. `share-button.tsx` no longer uses `getLocalizedShareText`, the og-fonts helper was renamed, `variant.ts` moved past the `v3` storage key the test pins). Worth confirming individually, since a rotted test and a real regression look identical until you read it.
+
+`prebuild` is gated on `check:email-contract` only, deliberately — gating on the full suite would block every deploy until these 23 are resolved.
+
+Suggested ratchet, in order:
+1. Triage the 14 files: fix the assertion where the code moved on, delete the test where the contract is genuinely gone.
+2. Once green, add `pnpm test` to `prebuild` (or a first GitHub Actions workflow) so the suite can only get stricter.
+3. Until then, run `pnpm test` by hand before merging anything non-trivial and compare the failure list to the 23 known ones.
+
 ## Email / deliverability
 
 - **Apple private-relay signups never get the welcome email** (found 2026-07-25): all 3 `@privaterelay.appleid.com` users sit in `email_suppressions` as bounces. Apple rejects mail whose sender address isn't registered under *Apple Developer → Certificates, IDs & Profiles → Sign in with Apple for Email Communication*. Fix is portal-side, no code: register `abi@` and `noreply@deepbreathingexercises.com`. Matters more once the iOS app ships and Apple sign-in becomes a main signup path.
