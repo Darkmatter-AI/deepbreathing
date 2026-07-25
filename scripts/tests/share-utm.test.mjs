@@ -5,10 +5,23 @@ import path from "node:path";
 
 const ROOT = process.cwd();
 const HELPER_PATH = path.join(ROOT, "src", "lib", "share-utm.ts");
-const SHARE_BUTTON_FILES = [
+// Buttons on proxy-translated pages: the server HTML is English and the proxy
+// swaps text client-side, so these must read the settled DOM at click time.
+const DOM_LOCALIZED_SHARE_BUTTONS = [
   "src/components/ui/share-button.tsx",
   "src/app/(site-en)/for/share-button.tsx",
+];
+
+// Buttons on natively-translated routes: content is compiled per locale
+// server-side (see check:native-i18n-holiday) and arrives as already-localized
+// props, so reading the DOM would be redundant. b05516b migrated this one.
+const PROP_LOCALIZED_SHARE_BUTTONS = [
   "src/app/(site-en)/holiday-breathing-exercises/share-button.tsx",
+];
+
+const SHARE_BUTTON_FILES = [
+  ...DOM_LOCALIZED_SHARE_BUTTONS,
+  ...PROP_LOCALIZED_SHARE_BUTTONS,
 ];
 
 test("appendShareUtm helper exists and sets utm_source/medium/campaign", () => {
@@ -54,12 +67,28 @@ test("appendShareUtm produces expected URL when imported", async () => {
 });
 
 for (const rel of SHARE_BUTTON_FILES) {
-  test(`${rel} wires appendShareUtm + localized title/text into its share/copy flows`, () => {
+  test(`${rel} wires appendShareUtm into its share/copy flows`, () => {
     const full = path.join(ROOT, rel);
     assert.ok(fs.existsSync(full), `missing ${rel}`);
     const src = fs.readFileSync(full, "utf8");
     assert.match(src, /appendShareUtm/, `${rel} should call appendShareUtm`);
-    assert.match(src, /getLocalizedShareText/, `${rel} should read meta description at click time so mass-translated locales get localized share text`);
+  });
+}
+
+for (const rel of DOM_LOCALIZED_SHARE_BUTTONS) {
+  test(`${rel} reads localized title/text from the DOM at click time`, () => {
+    const src = fs.readFileSync(path.join(ROOT, rel), "utf8");
+    assert.match(src, /getLocalizedShareText/, `${rel} should read meta description at click time so proxy-translated locales get localized share text`);
     assert.match(src, /getLocalizedShareTitle/, `${rel} should read document.title at click time`);
+  });
+}
+
+for (const rel of PROP_LOCALIZED_SHARE_BUTTONS) {
+  test(`${rel} takes already-localized title/text as props`, () => {
+    const src = fs.readFileSync(path.join(ROOT, rel), "utf8");
+    assert.match(src, /title:\s*string/, `${rel} should accept a title prop`);
+    assert.match(src, /text:\s*string/, `${rel} should accept a text prop`);
+    // Guard the actual risk here: falling back to hardcoded English copy.
+    assert.doesNotMatch(src, /getLocalizedShare(Text|Title)/, `${rel} is natively translated; DOM reads would shadow the per-locale props`);
   });
 }
