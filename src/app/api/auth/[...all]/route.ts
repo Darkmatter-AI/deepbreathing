@@ -1,6 +1,12 @@
 import { auth } from "@/lib/auth";
 import { toNextJsHandler } from "better-auth/next-js";
 
+// Never prerendered at build time. These handlers read request state (session,
+// database) and a build-time prerender attempt evaluates that state with no env
+// configured, which crashed the static worker on deployments without secrets.
+// Cacheability is expressed per-response via Cache-Control, not by prerendering.
+export const dynamic = "force-dynamic";
+
 const ALLOWED_ORIGINS = [
   "https://deepbreathingexercises.com",
   "https://origin.deepbreathingexercises.com",
@@ -24,18 +30,28 @@ function withCors(response: Response, origin: string | null) {
   });
 }
 
-const handler = toNextJsHandler(auth);
+// Built on first request, not at module load. `auth` is a lazy Proxy, so calling
+// toNextJsHandler() here reads auth.handler and constructs betterAuth() — which
+// throws without BETTER_AUTH_SECRET. Next imports this module during the build to
+// collect route info, so doing it at module scope crashed the static worker on
+// every deployment without the secret (i.e. every preview branch).
+let handler: ReturnType<typeof toNextJsHandler> | null = null;
+
+function getHandler() {
+  handler ??= toNextJsHandler(auth);
+  return handler;
+}
 
 export async function GET(request: Request) {
   const origin = request.headers.get("origin");
-  const response = await handler.GET(request);
+  const response = await getHandler().GET(request);
   return withCors(response, origin);
 }
 
 export async function POST(request: Request) {
   const origin = request.headers.get("origin");
   try {
-    const response = await handler.POST(request);
+    const response = await getHandler().POST(request);
     return withCors(response, origin);
   } catch (error) {
     console.error("[auth] POST error:", error);

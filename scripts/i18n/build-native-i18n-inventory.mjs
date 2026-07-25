@@ -23,6 +23,19 @@ const CATALOG_LOCALE_BY_PREFIX = Object.freeze({
   pt: "pt-br",
 });
 
+/**
+ * Deterministic, platform-independent string order.
+ *
+ * `localeCompare` uses ICU collation, which treats `/` and `-` as ignorable
+ * punctuation and varies with the Node build's ICU data. That made this
+ * generator emit a different row order on macOS than on Vercel's Linux, so the
+ * checked-in INVENTORY.md could never match a fresh build on both. Compare by
+ * code point instead — this file is a snapshot that must be byte-reproducible.
+ */
+function compareStrings(a, b) {
+  return a < b ? -1 : a > b ? 1 : 0;
+}
+
 const MARKER_RE =
   /(mass[- ]?translate|masstranslate|mass_translate|edge[_ -]?proxy|reverse proxy|translation proxy|cloudflare[^\n]*proxy|proxy[^\n]*cloudflare|proxy[^\n]*locale|locale[^\n]*proxy|origin\.deepbreathingexercises\.com|\/api\/proxy|__MT_CONFIG__|x-mt-cache)/i;
 
@@ -160,6 +173,17 @@ export const DEPENDENCY_GROUPS = Object.freeze([
         file: ".claude/skills/dbe-accounts-auth/SKILL.md",
         marker: "origin.deepbreathingexercises.com",
         detail: "The auth health runbook explicitly probes the origin callback path.",
+      },
+    ],
+  },
+  {
+    title: "Serving-mode gating (active)",
+    entries: [
+      {
+        file: "src/i18n/serving-mode.ts",
+        marker: "MassTranslate proxy",
+        detail:
+          "Decides whether the proxy or native i18n serves locales; proxy-only maintenance must be gated behind usesMassTranslateProxy().",
       },
     ],
   },
@@ -304,8 +328,9 @@ export const DEPENDENCY_GROUPS = Object.freeze([
       },
       {
         file: "scripts/tests/share-utm.test.mjs",
-        marker: "mass-translated",
-        detail: "Pins share-copy behavior against proxy-mutated page metadata.",
+        marker: "proxy-translated",
+        detail:
+          "Pins share-copy behavior against proxy-mutated page metadata, and separates the proxy-translated buttons from the natively-translated holiday button.",
       },
     ],
   },
@@ -348,6 +373,17 @@ export const DEPENDENCY_GROUPS = Object.freeze([
         file: "docs/FUNNEL-DASHBOARD.md",
         marker: "mass-translate",
         detail: "A dated dashboard snapshot names MassTranslate as a prior GSC data source.",
+      },
+    ],
+  },
+  {
+    title: "App Store submission notes (active)",
+    entries: [
+      {
+        file: "docs/appstore/submission-checklist.md",
+        marker: "origin.deepbreathingexercises.com",
+        detail:
+          "Records that Google sign-in's first page is the origin subdomain, which reviewers see as a domain handoff; documentation only, no runtime dependency.",
       },
     ],
   },
@@ -508,8 +544,8 @@ export function collectInventory(repoRoot = DEFAULT_REPO_ROOT) {
       robots: pageRobotsState(source),
     };
   });
-  const staticPages = pageRecords.filter((record) => !record.dynamic).sort((a, b) => a.route.localeCompare(b.route));
-  const dynamicPages = pageRecords.filter((record) => record.dynamic).sort((a, b) => a.route.localeCompare(b.route));
+  const staticPages = pageRecords.filter((record) => !record.dynamic).sort((a, b) => compareStrings(a.route, b.route));
+  const dynamicPages = pageRecords.filter((record) => record.dynamic).sort((a, b) => compareStrings(a.route, b.route));
 
   const sitemapEntries = buildSitemapEntries({
     appDir,
@@ -524,7 +560,7 @@ export function collectInventory(repoRoot = DEFAULT_REPO_ROOT) {
     throw new Error(`Catalog manifest is required: ${manifestPath}`);
   }
   const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
-  const catalogRoutes = [...manifest.routes].sort((a, b) => a.route.localeCompare(b.route));
+  const catalogRoutes = [...manifest.routes].sort((a, b) => compareStrings(a.route, b.route));
   const catalogByRoute = new Map(catalogRoutes.map((entry) => [entry.route, entry]));
 
   const routes = staticPages.map((page) => {

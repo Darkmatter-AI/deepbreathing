@@ -22,7 +22,29 @@ function walkPages(dir) {
   return pages;
 }
 
-test('all local metadata pages define openGraph.images and twitter.images', () => {
+// Resolve a TS/TSX import specifier to a file on disk, so a page that delegates
+// its metadata to a shared factory can be checked at the factory instead.
+function resolveImport(spec, fromFile) {
+  const base = spec.startsWith('@/')
+    ? path.join(ROOT, 'src', spec.slice(2))
+    : spec.startsWith('.')
+      ? path.resolve(path.dirname(fromFile), spec)
+      : null;
+  if (!base) return null;
+  for (const candidate of [`${base}.tsx`, `${base}.ts`, path.join(base, 'index.tsx'), path.join(base, 'index.ts')]) {
+    if (fs.existsSync(candidate)) return candidate;
+  }
+  return null;
+}
+
+function hasImageConfig(source) {
+  return (
+    /openGraph\s*:\s*\{[\s\S]*?images\s*:/.test(source) &&
+    /twitter\s*:\s*\{[\s\S]*?images\s*:/.test(source)
+  );
+}
+
+test('every page with metadata defines openGraph.images and twitter.images, inline or via its factory', () => {
   const pages = walkPages(APP_DIR);
   const offenders = [];
 
@@ -30,25 +52,36 @@ test('all local metadata pages define openGraph.images and twitter.images', () =
     const source = fs.readFileSync(file, 'utf8');
 
     const hasLocalMetadata = /export\s+const\s+metadata\s*(?::\s*Metadata)?\s*=/.test(source);
-    const usesPatternTemplate = /createPatternMetadata\(/.test(source);
-    const usesUseCaseTemplate = /createUseCaseMetadata\(/.test(source);
+    if (!hasLocalMetadata) continue;
 
-    if (!hasLocalMetadata || usesPatternTemplate || usesUseCaseTemplate) {
-      continue;
+    // noindex pages never surface in search or social unfurls (internal authoring
+    // surfaces like /sensory-studio, /og-preview, and the private /stats page), so
+    // an OG image is meaningless for them. Only indexable pages are held to this.
+    if (/robots\s*:\s*\{[^}]*index\s*:\s*false/.test(source) || /noindex/.test(source)) continue;
+
+    if (hasImageConfig(source)) continue;
+
+    // Most pages now delegate to a shared metadata factory (createDurationMetadata-
+    // FromContent, createPatternMetadata, ...) instead of spelling openGraph out
+    // inline. Follow the factory's import and assert the images are set there,
+    // rather than maintaining a hardcoded list of factory names.
+    const factory = source.match(/export\s+const\s+metadata\s*(?::\s*Metadata)?\s*=\s*(?:await\s+)?([A-Za-z0-9_$]+)\s*\(/);
+    if (factory) {
+      const name = factory[1];
+      const importMatch = source.match(
+        new RegExp(`import\\s*\\{[^}]*\\b${name}\\b[^}]*\\}\\s*from\\s*["']([^"']+)["']`, 's')
+      );
+      const resolved = importMatch ? resolveImport(importMatch[1], file) : null;
+      if (resolved && hasImageConfig(fs.readFileSync(resolved, 'utf8'))) continue;
     }
 
-    const hasOpenGraphImages = /openGraph\s*:\s*\{[\s\S]*?images\s*:/.test(source);
-    const hasTwitterImages = /twitter\s*:\s*\{[\s\S]*?images\s*:/.test(source);
-
-    if (!hasOpenGraphImages || !hasTwitterImages) {
-      offenders.push(path.relative(ROOT, file));
-    }
+    offenders.push(path.relative(ROOT, file));
   }
 
   assert.deepEqual(
     offenders,
     [],
-    `missing explicit OG/Twitter image config in: ${offenders.join(', ')}`
+    `missing OG/Twitter image config (inline or in the metadata factory) in: ${offenders.join(', ')}`
   );
 });
 

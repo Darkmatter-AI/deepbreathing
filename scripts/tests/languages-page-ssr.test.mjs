@@ -12,6 +12,13 @@ const LANGUAGES_HTML = path.join(
   "languages.html",
 );
 const HOMEPAGE_HTML = path.join(ROOT, ".next", "server", "app", "index.html");
+const BUILD_MARKER = LANGUAGES_HTML;
+
+// These assertions read real Next build output, so they can only run after
+// `pnpm build`. They are skipped (not failed) on a clean tree so `pnpm test`
+// is meaningful without a build; `pnpm run test:post-build` runs them for real.
+const NEEDS_BUILD = { skip: fs.existsSync(BUILD_MARKER) ? false : "requires `pnpm build` output (.next/server/app)" };
+
 const SITE_URL = "https://deepbreathingexercises.com";
 const LOCALE_PREFIXES = ["/es", "/pt", "/fr", "/de", "/ja"];
 const KEY_PATHS = [
@@ -52,7 +59,7 @@ function escapeRegExp(value) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-test("/languages SSR HTML has crawlable anchors to every locale root", () => {
+test("/languages SSR HTML has crawlable anchors to every locale root", NEEDS_BUILD, () => {
   assert.ok(
     fs.existsSync(LANGUAGES_HTML),
     "missing build output for /languages; run `pnpm build` first",
@@ -74,7 +81,7 @@ test("/languages SSR HTML has crawlable anchors to every locale root", () => {
   );
 });
 
-test("/languages SSR HTML preserves every locale and key-page crawl link", () => {
+test("/languages SSR HTML preserves every locale and key-page crawl link", NEEDS_BUILD, () => {
   const html = fs.readFileSync(LANGUAGES_HTML, "utf8");
   for (const prefix of ["", ...LOCALE_PREFIXES]) {
     for (const route of KEY_PATHS) {
@@ -85,7 +92,7 @@ test("/languages SSR HTML preserves every locale and key-page crawl link", () =>
   }
 });
 
-test("/languages SSR HTML renders native labels for translated destinations", () => {
+test("/languages SSR HTML renders native labels for translated destinations", NEEDS_BUILD, () => {
   const html = fs.readFileSync(LANGUAGES_HTML, "utf8");
   const expectedLinks = [
     ["/es/breathe/belly", "Respiración abdominal"],
@@ -113,7 +120,7 @@ test("/languages SSR HTML renders native labels for translated destinations", ()
   }
 });
 
-test("homepage SSR HTML links to /languages as a discoverable crawl entry", () => {
+test("homepage SSR HTML links to /languages as a discoverable crawl entry", NEEDS_BUILD, () => {
   const html = fs.readFileSync(HOMEPAGE_HTML, "utf8");
   assert.match(
     html,

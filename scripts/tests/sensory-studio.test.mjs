@@ -21,10 +21,9 @@ const AUDIO_PREVIEW_FILE = path.join(
   ROOT,
   "src/components/resonance/services/sensoryAudioPreview.ts",
 );
-const AUDIO_SERVICE_FILE = path.join(
-  ROOT,
-  "src/components/resonance/services/audioService.ts",
-);
+// Moved into the shared @resonance/audio workspace package when web + mobile
+// were unified onto one engine; the web copy under src/components was deleted.
+const AUDIO_SERVICE_FILE = path.join(ROOT, "packages/audio/src/audioService.ts");
 
 test("sensory studio is an isolated no-index authoring surface", () => {
   assert.ok(fs.existsSync(PAGE_FILE), "missing sensory studio route");

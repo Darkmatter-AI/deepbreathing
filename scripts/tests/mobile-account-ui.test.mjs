@@ -73,18 +73,35 @@ test("native shell owns silent-mode audio, phase cues, edge glow, and account po
     path.join(ROOT, "apps/mobile/src/components/breathing-web/BreathingExperience.tsx"),
     "utf8"
   );
+  // Audio unification phase 2 (8e71353) deleted use-background-audio.ts and the
+  // useNativePhaseAudio hook; the soundscape now runs through native-soundscape.ts
+  // via useNativeSoundscape, and playsInSilentMode moved to the breathe-web host.
   const background = fs.readFileSync(
-    path.join(ROOT, "apps/mobile/src/breathing/use-background-audio.ts"),
+    path.join(ROOT, "apps/mobile/src/breathing/native-soundscape.ts"),
     "utf8"
   );
-  assert.match(host, /playsInSilentMode: true/);
-  assert.match(host, /useNativePhaseAudio/);
+  const breatheWeb = fs.readFileSync(
+    path.join(ROOT, "apps/mobile/src/app/breathe-web.tsx"),
+    "utf8"
+  );
+  assert.match(breatheWeb, /playsInSilentMode: true/);
+  assert.match(host, /useNativeSoundscape/);
   assert.match(host, /edgeGlowOpacity/);
   assert.match(host, /accountAvatarUri\(authSession\.user\)/);
-  assert.match(background, /audioState\.active && !audioState\.muted/);
+  // Same gate, restated for the event-driven engine: audio_state carries
+  // {active, muted} and both must be honoured before the recipe runs.
+  assert.match(background, /const active = params\.active === true;/);
+  assert.match(background, /const muted = params\.muted === true;/);
+  assert.match(background, /engine\.toggleMute\(muted\);/);
   assert.match(experience, /if \(!isNativeApp\) getAudioService\(\)\.playCue/);
   assert.match(experience, /soundHintMounted && !isNativeApp/);
-  assert.match(experience, /\{!isRunning && \(\s*<header/);
+  // The header is no longer unmounted while running — it stays mounted and
+  // animates out, so assert the hide mechanism rather than the old conditional.
+  assert.match(
+    experience,
+    /isRunning \? 'pointer-events-none -translate-y-2 opacity-0' : 'translate-y-0 opacity-100'/,
+    "header must hide (and stop taking taps) while a session is running"
+  );
   assert.doesNotMatch(experience, /Turtle/);
   assert.doesNotMatch(experience, /Rabbit/);
 });

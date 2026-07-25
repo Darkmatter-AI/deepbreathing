@@ -4,6 +4,12 @@ import { pool } from "@/lib/db";
 import { headers } from "next/headers";
 import { encodeSessionCursor } from "@/lib/sync/session-events";
 
+// Never prerendered at build time. These handlers read request state (session,
+// database) and a build-time prerender attempt evaluates that state with no env
+// configured, which crashed the static worker on deployments without secrets.
+// Cacheability is expressed per-response via Cache-Control, not by prerendering.
+export const dynamic = "force-dynamic";
+
 export async function GET() {
   const session = await auth.api.getSession({ headers: headers() });
   if (!session) {

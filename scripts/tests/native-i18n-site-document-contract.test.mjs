@@ -64,8 +64,9 @@ test("SiteDocument remains a server component with explicit document locale inpu
 test("SiteDocument preserves every output-affecting global in its original order", () => {
   assertAppearsInOrder(siteDocumentSource, [
     '<Script id="resonance-theme-init" strategy="beforeInteractive">',
-    '<Script src={GOOGLE_ANALYTICS_SCRIPT_SRC} strategy="afterInteractive" />',
-    '<Script id="ga4-init" strategy="afterInteractive">',
+    // The two GA <Script> tags that used to sit here were extracted into the
+    // GoogleAnalyticsScript component; order relative to the rest is unchanged.
+    '<GoogleAnalyticsScript />',
     '<Suspense fallback={null}>',
     '<PageViewTracker />',
     'src="https://analytics.ahrefs.com/analytics.js"',
@@ -81,7 +82,12 @@ test("SiteDocument preserves every output-affecting global in its original order
     /storageKey='resonance_theme'.*root\.dataset\.theme=theme;/s,
     "theme initialization must remain before hydration"
   );
-  assert.match(siteDocumentSource, /\{GOOGLE_ANALYTICS_INLINE_INIT_SCRIPT\}/);
+  // GOOGLE_ANALYTICS_INLINE_INIT_SCRIPT moved with the <Script> tags into
+  // GoogleAnalyticsScript.tsx; ga-script-gating.test.mjs asserts it there.
+  assert.match(
+    siteDocumentSource,
+    /import \{ GoogleAnalyticsScript \} from "@\/components\/analytics\/GoogleAnalyticsScript";/
+  );
   assert.match(siteDocumentSource, /data-key="uzrT\/cO760nX502p37kP0g"/);
   assert.match(
     siteDocumentSource,

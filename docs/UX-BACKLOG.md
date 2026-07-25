@@ -7,9 +7,35 @@ Compiled from session audit on 2026-04-27. Refreshed 2026-05-05 with post-deploy
 - **In-app theme toggle doesn't reach native chrome** (found 2026-07-22 pre-submission QA): the webview settings' light/dark toggle only themes the webview (`themeOverride` in `BreathingExperience.tsx` is never emitted via `onEvent`). Native side (`apps/mobile/src/app/index.tsx:79`) follows `useColorScheme()` only, so with device-dark + in-app-light the status bar clock is white-on-cream (illegible) and CompletionSummary/account button render dark over a light webview. Fix: emit a `theme_changed` event from the webview and let it override the native theme + `expo-status-bar` style. Cosmetic, only when in-app toggle diverges from system theme; not a 1.0 blocker.
 - **One-off: session auto-completed immediately on resume tap** (observed once 2026-07-22, simulator): pause → resume showed the completion receipt with full 0:30 credited despite ~20s paused. Deliberate repro (pause 5s → wait 40s → resume) behaves correctly, so likely a double-fired tap (pause+resume) letting the session run out in the background. Watch for it in TestFlight; if real users report instant completions, instrument `handleTogglePlay` re-entry.
 
+## Test suite — triaged and gated (2026-07-25)
+
+`scripts/tests/` held **57 test files / 355 tests** with exactly one wired to an npm script and no `.github/workflows`, so nothing ran them and 22 had rotted. All 22 are now resolved and the suite is **358 tests / 356 pass / 0 fail / 2 skipped** (the 2 skips are opt-in live-DNS checks; run `pnpm run check:email-dns`).
+
+**Now gated:** `prebuild` runs `pnpm test`, so a red suite fails the Vercel build. The two build-output test files skip during `prebuild` (no `.next/server` yet) and are re-run against fresh artifacts by `postbuild` via `pnpm run test:post-build`.
+
+**One open item.** `native-i18n-inventory`'s byte-equality snapshot (checked-in `INVENTORY.md` vs a fresh generation) is **not byte-reproducible across platforms**: it passes on macOS and failed on Vercel's Linux for the identical commit, while every substantive inventory assertion passed there. Ruled out by reproduction: `localeCompare` collation (fixed anyway — the generator now sorts by code point), the 17 files `.vercelignore` strips, non-ASCII filenames, and case collisions. Cause still unknown, so that one assertion is skipped when `CI`/`VERCEL` is set and runs locally as a "rerun the generator" reminder. The portable half — every marker resolving to a real line — was split out and still gates. Worth finishing: reproduce on a Linux box (orangepi) and diff the two documents directly.
+
+Two of the 22 were **real bugs**, not rot — worth remembering, since a rotted test and a live regression look identical until you read one:
+
+- `/languages` is `robots: { index: true }` but had no `openGraph.images` / `twitter.images`, so shares unfurled with no card. Fixed; logged in [SEO-EXPERIMENTS.md](SEO-EXPERIMENTS.md).
+- `src/i18n/serving-mode.ts` and `docs/appstore/submission-checklist.md` carried unclassified MassTranslate markers, which is exactly the drift the inventory guard exists to catch. Both classified.
+
+The rest tracked real refactors the assertions never followed (`loadInterFonts`→`loadOgFonts`, GA scripts extracted into `GoogleAnalyticsScript`, `audioService.ts`→`packages/audio`, `use-background-audio.ts`→`native-soundscape.ts`, holiday share button→native i18n props, `DEFAULT_REVIEWER` deliberately dropped, metadata moved into shared factories) or were drift-detection baselines needing a deliberate re-pin (`i18n-structured-mapping`, `native-i18n-inventory`).
+
+Two content observations surfaced by the re-pin, not yet acted on:
+- `contentBridge.incomplete` rose 727 → 737: ~10 newer structured content leaves have no translation yet. `unsafe_translation_conflict` held at 26, so nothing got less safe.
+- The `loadInterFonts` alias in `src/lib/og-fonts.ts` is now dead; nothing imports it.
+
+## Email / deliverability
+
+- **Apple private-relay signups never got the welcome email** — ✅ **fixed 2026-07-25.** All 3 `@privaterelay.appleid.com` users sat in `email_suppressions` as bounces because Apple rejects mail whose sender address isn't registered under *Apple Developer → Certificates, IDs & Profiles → Sign in with Apple for Email Communication*. That list was **completely empty** ("No result found"). Registered `abi@` and `noreply@deepbreathingexercises.com` as Individual Email Addresses (team `Reentry Systems Unipessoal Lda - M29XZH5LMJ`); both show `STATUS: SPF`, which passes because Resend's custom MAIL FROM puts `v=spf1 include:amazonses.com ~all` on `send.deepbreathingexercises.com` and Apple checks SPF on the envelope sender, not the apex. No domain was registered — the two addresses are enough, and `hi@abiassi.com` needs no entry because it is the Reply-To, not a sending source. **Still unverified end to end:** the existing 3 suppressed users stay suppressed, so proof requires a fresh Apple-relay signup receiving the welcome email.
+- **No DMARC record on `deepbreathingexercises.com`** (found 2026-07-25): `_dmarc` is empty. Note the apex has no SPF either — Resend uses a custom MAIL FROM, so SPF (TXT+MX) lives on `send.deepbreathingexercises.com` and DKIM on `resend._domainkey`, both `verified`. Since DKIM signs with `d=deepbreathingexercises.com` it aligns with the apex, so adding DMARC should pass on the DKIM leg. Free inbox-placement win — start at `p=none` with a reporting address, then tighten.
+- **Considered and rejected: give the domain a real inbox.** The apex has no MX and cannot receive (see the Resend section of [`runbooks/tools-and-data-sources.md`](runbooks/tools-and-data-sources.md)). Rather than stand up Cloudflare Email Routing or Workspace, the welcome email's `replyTo` now points at `hi@abiassi.com`. Revisit only if support volume justifies a branded mailbox.
+
 ## In-flight / queued (tracked in PRODUCT-EXPERIMENTS.md)
 
-- **Non-blocking signup banner (`loss_aversion_banner`)** — ✅ **shipped to prod 2026-06-26 at 100%**, replacing the Prompt C modal (top-anchored notification, tucks away on play, benefit-framed). Full hypothesis + pre-committed intent/retention criteria + GA4 review method: [PRODUCT-EXPERIMENTS.md → 2026-06-26](PRODUCT-EXPERIMENTS.md#2026-06-26-non-blocking-signup-banner-loss_aversion_banner--top-anchored-notification).
+- **Non-blocking signup banner (`loss_aversion_banner`)** — ❌ **Failed verdict 2026-07-10**, superseded. It shipped to 100% on 2026-06-26, then `src/lib/conversion/variant.ts` swapped `ACTIVE_CHALLENGER` to **`keep_practice`** at 100% and bumped the storage key `_v3` → `_v4` so returning visitors re-bucket. This entry previously still read "shipped at 100%"; corrected 2026-07-25 when the `conversion-loss-aversion` test was found pinned to the retired variant. Rollback ladder is unchanged: `ACTIVE_CHALLENGER = "loss_aversion"` for the Prompt C modal, `CHALLENGER_SHARE = 0` for full control.
+- **`keep_practice` challenger** — 🔄 shipped 2026-07-10 at 100%. Needs a measure-after pass in [PRODUCT-EXPERIMENTS.md](PRODUCT-EXPERIMENTS.md); no verdict recorded yet.
 
 ## Context
 

@@ -239,7 +239,7 @@ The groups below separate live coupling from migration provenance and historical
 | `src/app/sitemap.xml/route.ts:5` | Publishes locale-prefixed URLs even though the current Next.js app has no native locale route tree. |
 | `src/app/robots.ts:8` | Carries `/api/proxy/` crawl cleanup and query-parameter rules created for proxy canonical behavior. |
 | `src/app/(site-en)/layout.tsx:72` | The English root explicitly selects the shared document language; the proxy currently changes locale-facing HTML outside the app. |
-| `src/app/(site-en)/languages/page.tsx:328` | Hardcodes the locale discovery hub; proxy anchor rewriting is why this route is published only in English. |
+| `src/app/(site-en)/languages/page.tsx:348` | Hardcodes the locale discovery hub; proxy anchor rewriting is why this route is published only in English. |
 
 ### Browser locale and translated-DOM contracts (active)
 
@@ -260,16 +260,22 @@ The groups below separate live coupling from migration provenance and historical
 |---|---|
 | `src/lib/auth-client.ts:10` | Forces browser auth calls to the origin host because the apex proxy mangles responses. |
 | `src/lib/auth.ts:4` | Retains proxy-driven Better Auth workarounds and trusts the origin host for cross-subdomain callbacks. |
-| `src/app/api/auth/[...all]/route.ts:6` | Allows the origin host in the auth route CORS contract. |
+| `src/app/api/auth/[...all]/route.ts:12` | Allows the origin host in the auth route CORS contract. |
 | `apps/mobile/src/auth/auth-client.ts:5` | Pins native-app auth to the proxy-bypass origin host. |
 | `scripts/check-og-image.sh:16` | Defaults diagnostics to the origin alias rather than the apex. |
 | `.claude/skills/dbe-accounts-auth/SKILL.md:44` | The auth health runbook explicitly probes the origin callback path. |
+
+### Serving-mode gating (active)
+
+| Evidence | Dependency / cutover implication |
+|---|---|
+| `src/i18n/serving-mode.ts:29` | Decides whether the proxy or native i18n serves locales; proxy-only maintenance must be gated behind usesMassTranslateProxy(). |
 
 ### Proxy cache and deployment operations (active)
 
 | Evidence | Dependency / cutover implication |
 |---|---|
-| `src/app/api/warm-cache/route.ts:17` | Fetches all 337 sitemap URLs in English-then-locale order with a bot UA to populate proxy KV and avoid cold translation timeouts. |
+| `src/app/api/warm-cache/route.ts:21` | Fetches all 337 sitemap URLs in English-then-locale order with a bot UA to populate proxy KV and avoid cold translation timeouts. |
 | `vercel.json:21` | Runs the proxy-specific cache warmer every two hours. |
 
 ### Generated translation content and build tooling (active until replaced)
@@ -304,9 +310,9 @@ The groups below separate live coupling from migration provenance and historical
 | Evidence | Dependency / cutover implication |
 |---|---|
 | `scripts/tests/sitemap-coverage.test.mjs:9` | Pins proxy-prefixed publication, hreflang, and the English-only `/languages` rule. |
-| `scripts/tests/warm-cache-locale-split.test.mjs:9` | Pins English-versus-proxy URL classification and the five-locale multiplier. |
-| `scripts/tests/languages-page-ssr.test.mjs:16` | Pins the client-only switcher and hardcoded locale discovery links. |
-| `scripts/tests/share-utm.test.mjs:62` | Pins share-copy behavior against proxy-mutated page metadata. |
+| `scripts/tests/warm-cache-locale-split.test.mjs:10` | Pins English-versus-proxy URL classification and the five-locale multiplier. |
+| `scripts/tests/languages-page-ssr.test.mjs:23` | Pins the client-only switcher and hardcoded locale discovery links. |
+| `scripts/tests/share-utm.test.mjs:8` | Pins share-copy behavior against proxy-mutated page metadata, and separates the proxy-translated buttons from the natively-translated holiday button. |
 
 ### Operational instructions and analytics integrations (mixed active and stale)
 
@@ -320,19 +326,25 @@ The groups below separate live coupling from migration provenance and historical
 | `docs/indexing-queue.md:35` | Contains operational and historical references to MassTranslate URL-submission tools. |
 | `docs/FUNNEL-DASHBOARD.md:154` | A dated dashboard snapshot names MassTranslate as a prior GSC data source. |
 
+### App Store submission notes (active)
+
+| Evidence | Dependency / cutover implication |
+|---|---|
+| `docs/appstore/submission-checklist.md:184` | Records that Google sign-in's first page is the origin subdomain, which reviewers see as a domain handoff; documentation only, no runtime dependency. |
+
 ### Historical evidence only (preserve; do not treat as a live dependency)
 
 | Evidence | Dependency / cutover implication |
 |---|---|
-| `docs/SEO-EXPERIMENTS.md:256` | Permanent experiment history for proxy defects, mitigations, and indexing outcomes. |
-| `docs/UX-BACKLOG.md:71` | Historical ownership and translation-coverage findings. |
+| `docs/SEO-EXPERIMENTS.md:153` | Permanent experiment history for proxy defects, mitigations, and indexing outcomes. |
+| `docs/UX-BACKLOG.md:102` | Historical ownership and translation-coverage findings. |
 | `docs/qa-reports/traction-pages-2026-06-06.md:9` | Production evidence for delayed translation, partial coverage, and hydration failures. |
 | `docs/research/eeat-citations-2026-05.md:16` | A dated content-research decision record. |
 | `docs/seo-audit-2026-05-05.md:5` | A dated audit whose MassTranslate observations are historical baseline evidence. |
 
 ### Explicit-marker coverage audit
 
-The deterministic marker scan found 46 files with explicit MassTranslate/proxy/origin coupling. All must be classified above.
+The deterministic marker scan found 48 files with explicit MassTranslate/proxy/origin coupling. All must be classified above.
 
 Unclassified marker files: none.
 

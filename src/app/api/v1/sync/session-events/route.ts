@@ -10,6 +10,12 @@ import {
   validateSessionEvent,
 } from "@/lib/sync/session-events";
 
+// Never prerendered at build time. These handlers read request state (session,
+// database) and a build-time prerender attempt evaluates that state with no env
+// configured, which crashed the static worker on deployments without secrets.
+// Cacheability is expressed per-response via Cache-Control, not by prerendering.
+export const dynamic = "force-dynamic";
+
 const MAX_BATCH_SIZE = 100;
 const DEFAULT_PAGE_SIZE = 100;
 
