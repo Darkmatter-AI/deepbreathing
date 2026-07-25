@@ -164,6 +164,17 @@ export const DEPENDENCY_GROUPS = Object.freeze([
     ],
   },
   {
+    title: "Serving-mode gating (active)",
+    entries: [
+      {
+        file: "src/i18n/serving-mode.ts",
+        marker: "MassTranslate proxy",
+        detail:
+          "Decides whether the proxy or native i18n serves locales; proxy-only maintenance must be gated behind usesMassTranslateProxy().",
+      },
+    ],
+  },
+  {
     title: "Proxy cache and deployment operations (active)",
     entries: [
       {
@@ -304,8 +315,9 @@ export const DEPENDENCY_GROUPS = Object.freeze([
       },
       {
         file: "scripts/tests/share-utm.test.mjs",
-        marker: "mass-translated",
-        detail: "Pins share-copy behavior against proxy-mutated page metadata.",
+        marker: "proxy-translated",
+        detail:
+          "Pins share-copy behavior against proxy-mutated page metadata, and separates the proxy-translated buttons from the natively-translated holiday button.",
       },
     ],
   },
@@ -348,6 +360,17 @@ export const DEPENDENCY_GROUPS = Object.freeze([
         file: "docs/FUNNEL-DASHBOARD.md",
         marker: "mass-translate",
         detail: "A dated dashboard snapshot names MassTranslate as a prior GSC data source.",
+      },
+    ],
+  },
+  {
+    title: "App Store submission notes (active)",
+    entries: [
+      {
+        file: "docs/appstore/submission-checklist.md",
+        marker: "origin.deepbreathingexercises.com",
+        detail:
+          "Records that Google sign-in's first page is the origin subdomain, which reviewers see as a domain handoff; documentation only, no runtime dependency.",
       },
     ],
   },

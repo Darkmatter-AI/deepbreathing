@@ -5,8 +5,15 @@ import path from "node:path";
 
 const ROOT = process.cwd();
 const HOMEPAGE_HTML = path.join(ROOT, ".next", "server", "app", "index.html");
+const BUILD_MARKER = HOMEPAGE_HTML;
 
-test("homepage build output keeps crawlable SSR body with H1", () => {
+// These assertions read real Next build output, so they can only run after
+// `pnpm build`. They are skipped (not failed) on a clean tree so `pnpm test`
+// is meaningful without a build; `pnpm run test:post-build` runs them for real.
+const NEEDS_BUILD = { skip: fs.existsSync(BUILD_MARKER) ? false : "requires `pnpm build` output (.next/server/app)" };
+
+
+test("homepage build output keeps crawlable SSR body with H1", NEEDS_BUILD, () => {
   assert.ok(
     fs.existsSync(HOMEPAGE_HTML),
     "missing build output for homepage (.next/server/app/index.html); run `pnpm build` first"
