@@ -2211,6 +2211,14 @@ The preceding localized window recorded 37 clicks and 1,233 impressions. Current
 
 ## Recent Follow-Up Log
 
+### 2026-07-25 — DMARC published at `p=none` (deliverability, monitoring only)
+
+The apex had no DMARC record at all. Added `_dmarc.deepbreathingexercises.com` TXT `v=DMARC1; p=none; rua=mailto:hi@abiassi.com; fo=1`, plus the RFC 7489 §7.1 external-destination authorization `deepbreathingexercises.com._report._dmarc.abiassi.com` TXT `v=DMARC1` on the receiving domain — the second record is the part that is easy to miss, and without it the reports never arrive.
+
+`p=none` enforces nothing, so there is no deliverability risk and no hypothesis to pre-commit; this is instrumentation. Note the apex has no SPF record of its own and does not need one: Resend uses a custom MAIL FROM, so SPF lives on `send.deepbreathingexercises.com` and aligns with the apex under relaxed alignment, while DKIM at `resend._domainkey` aligns exactly. Both legs pass today.
+
+Measure after 2026-08-08: read the aggregate reports, confirm every legitimate sending source passes, then raise to `p=quarantine`.
+
 ### 2026-07-25 — `/languages` was missing OG/Twitter images (omission fix, not an experiment)
 
 Found by the `og-metadata-coverage` test once the suite was actually wired to a runner (it had been failing unnoticed; see [UX-BACKLOG.md](UX-BACKLOG.md) on the 22 rotted tests). `/languages` is `robots: { index: true, follow: true }` and is the crawl hub referenced throughout this log, but its metadata defined no `openGraph.images` or `twitter.images`, so shares of it unfurled with no card image.
