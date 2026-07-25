@@ -46,115 +46,146 @@ async function generateAppleClientSecret() {
     .sign(key);
 }
 
-export const auth = betterAuth({
-  baseURL: process.env.BETTER_AUTH_URL,
-  basePath: "/api/auth",
-  trustedOrigins: [
-    "https://deepbreathingexercises.com",
-    "https://origin.deepbreathingexercises.com",
-    "https://appleid.apple.com",
-    "deepbreathing://",
-    ...(process.env.NODE_ENV === "development" ? ["exp://"] : []),
-  ],
-  database: new Pool({
-    connectionString: process.env.DATABASE_URL,
-  }),
-  socialProviders: {
-    google: {
-      clientId: process.env.GOOGLE_CLIENT_ID!,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
-      prompt: "select_account",
+function createAuth() {
+  return betterAuth({
+    baseURL: process.env.BETTER_AUTH_URL,
+    basePath: "/api/auth",
+    trustedOrigins: [
+      "https://deepbreathingexercises.com",
+      "https://origin.deepbreathingexercises.com",
+      "https://appleid.apple.com",
+      "deepbreathing://",
+      ...(process.env.NODE_ENV === "development" ? ["exp://"] : []),
+    ],
+    database: new Pool({
+      connectionString: process.env.DATABASE_URL,
+    }),
+    socialProviders: {
+      google: {
+        clientId: process.env.GOOGLE_CLIENT_ID!,
+        clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
+        prompt: "select_account",
+      },
+      ...(hasAppleCredentials
+        ? {
+            apple: async () => ({
+              clientId: appleCredentials.clientId!,
+              clientSecret: await generateAppleClientSecret(),
+              appBundleIdentifier:
+                process.env.APPLE_APP_BUNDLE_IDENTIFIER ?? "com.deepbreathing.app",
+            }),
+          }
+        : {}),
     },
-    ...(hasAppleCredentials
-      ? {
-          apple: async () => ({
-            clientId: appleCredentials.clientId!,
-            clientSecret: await generateAppleClientSecret(),
-            appBundleIdentifier:
-              process.env.APPLE_APP_BUNDLE_IDENTIFIER ?? "com.deepbreathing.app",
-          }),
-        }
-      : {}),
-  },
-  user: {
-    deleteUser: {
-      enabled: true,
-      sendDeleteAccountVerification: async ({ user, url }) => {
-        if (await isSuppressed(user.email)) return;
-        await getResend().emails.send({
-          from: "Deep Breathing Exercises <noreply@deepbreathingexercises.com>",
-          to: user.email,
-          subject: "Confirm account deletion",
-          html: `<div style="font-family: system-ui, -apple-system, sans-serif; max-width: 400px; margin: 0 auto; padding: 40px 20px; color: #333;">
+    user: {
+      deleteUser: {
+        enabled: true,
+        sendDeleteAccountVerification: async ({ user, url }) => {
+          if (await isSuppressed(user.email)) return;
+          await getResend().emails.send({
+            from: "Deep Breathing Exercises <noreply@deepbreathingexercises.com>",
+            to: user.email,
+            subject: "Confirm account deletion",
+            html: `<div style="font-family: system-ui, -apple-system, sans-serif; max-width: 400px; margin: 0 auto; padding: 40px 20px; color: #333;">
   <p style="font-size: 16px; line-height: 1.7;">Use this link to permanently delete your Deep Breathing Exercises account and synced practice data:</p>
   <a href="${url}" style="display: inline-block; background: #7a2f24; color: white; padding: 12px 24px; border-radius: 12px; text-decoration: none; font-weight: 600; margin: 12px 0;">Delete my account</a>
   <p style="font-size: 13px; color: #777; margin-top: 20px;">If you did not request this, ignore this email and your account will remain intact.</p>
 </div>`,
-        });
+          });
+        },
       },
     },
-  },
-  session: {
-    expiresIn: 60 * 60 * 24 * 30, // 30 days
-    updateAge: 60 * 60 * 24, // refresh once per day
-    cookieCache: {
-      enabled: true,
-      maxAge: 300, // 5 min client-side cache
+    session: {
+      expiresIn: 60 * 60 * 24 * 30, // 30 days
+      updateAge: 60 * 60 * 24, // refresh once per day
+      cookieCache: {
+        enabled: true,
+        maxAge: 300, // 5 min client-side cache
+      },
     },
-  },
-  advanced: {
-    crossSubDomainCookies: {
-      enabled: true,
-      domain: ".deepbreathingexercises.com",
+    advanced: {
+      crossSubDomainCookies: {
+        enabled: true,
+        domain: ".deepbreathingexercises.com",
+      },
     },
-  },
-  databaseHooks: {
-    user: {
-      create: {
-        after: async (user) => {
-          try {
-            if (await isSuppressed(user.email)) return;
-            await getResend().emails.send({
-              from: "Abi from Deep Breathing Exercises <abi@deepbreathingexercises.com>",
-              to: user.email,
-              subject: "Welcome, glad you're here",
-              // deepbreathingexercises.com has no MX record, so replies to
-              // abi@ there are undeliverable. Point at a mailbox that receives.
-              replyTo: "hi@abiassi.com",
-              html: `<div style="font-family: system-ui, -apple-system, sans-serif; max-width: 480px; margin: 0 auto; padding: 40px 20px; color: #333;">
+    databaseHooks: {
+      user: {
+        create: {
+          after: async (user) => {
+            try {
+              if (await isSuppressed(user.email)) return;
+              await getResend().emails.send({
+                from: "Abi from Deep Breathing Exercises <abi@deepbreathingexercises.com>",
+                to: user.email,
+                subject: "Welcome, glad you're here",
+                // deepbreathingexercises.com has no MX record, so replies to
+                // abi@ there are undeliverable. Point at a mailbox that receives.
+                replyTo: "hi@abiassi.com",
+                html: `<div style="font-family: system-ui, -apple-system, sans-serif; max-width: 480px; margin: 0 auto; padding: 40px 20px; color: #333;">
   <p style="font-size: 16px; line-height: 1.7;">Hey${user.name ? ` ${user.name.split(" ")[0]}` : ""},</p>
   <p style="font-size: 16px; line-height: 1.7;">Abi here. I made this breathing app a while back because I was dealing with anxiety and needed something simple that actually worked. Somehow it turned into a thing that thousands of people use every month, which still kind of blows my mind.</p>
   <p style="font-size: 16px; line-height: 1.7;">Anyway, your stuff is saved now. Settings, progress, all of it syncs if you use it on another device.</p>
   <p style="font-size: 16px; line-height: 1.7;">One thing I'd genuinely love to know: <strong>is there something you wish this app did that it doesn't?</strong> Hit reply, it goes straight to me.</p>
   <p style="font-size: 16px; line-height: 1.7;">Thanks for being here,<br/>Abi</p>
 </div>`,
-            });
-          } catch (err) {
-            // don't block signup if welcome email fails, but leave a trace —
-            // a silent catch here hid a broken reply path for months
-            console.error("[welcome-email] send failed", err);
-          }
+              });
+            } catch (err) {
+              // don't block signup if welcome email fails, but leave a trace —
+              // a silent catch here hid a broken reply path for months
+              console.error("[welcome-email] send failed", err);
+            }
+          },
         },
       },
     },
-  },
-  plugins: [
-    expo(),
-    magicLink({
-      sendMagicLink: async ({ email, url }) => {
-        if (await isSuppressed(email)) return;
-        await getResend().emails.send({
-          from: "Deep Breathing Exercises <noreply@deepbreathingexercises.com>",
-          to: email,
-          subject: "Your sign-in link",
-          html: `<div style="font-family: system-ui, -apple-system, sans-serif; max-width: 400px; margin: 0 auto; padding: 40px 20px; color: #333;">
+    plugins: [
+      expo(),
+      magicLink({
+        sendMagicLink: async ({ email, url }) => {
+          if (await isSuppressed(email)) return;
+          await getResend().emails.send({
+            from: "Deep Breathing Exercises <noreply@deepbreathingexercises.com>",
+            to: email,
+            subject: "Your sign-in link",
+            html: `<div style="font-family: system-ui, -apple-system, sans-serif; max-width: 400px; margin: 0 auto; padding: 40px 20px; color: #333;">
   <p style="font-size: 16px; line-height: 1.7;">Here's your link to sign in:</p>
   <a href="${url}" style="display: inline-block; background: hsl(18, 90%, 60%); color: white; padding: 12px 24px; border-radius: 12px; text-decoration: none; font-weight: 600; margin: 12px 0;">Sign in to Deep Breathing Exercises</a>
   <p style="font-size: 13px; color: #999; margin-top: 20px;">This link expires in 5 minutes. If you didn't request it, just ignore this.</p>
 </div>`,
-        });
-      },
-      expiresIn: 300,
-    }),
-  ],
+          });
+        },
+        expiresIn: 300,
+      }),
+    ],
+  });
+}
+
+/** Derived from createAuth, not betterAuth, to keep the concrete plugin/option types. */
+type Auth = ReturnType<typeof createAuth>;
+
+let authInstance: Auth | null = null;
+
+/**
+ * Lazily constructed, so merely importing this module never calls betterAuth().
+ *
+ * betterAuth() throws when BETTER_AUTH_SECRET is absent, and
+ * src/app/(site-en)/stats/stats-page.tsx imports `auth` at module scope. Next's
+ * static render of /stats therefore evaluated this file at build time, crashing
+ * every deployment without the secret -- i.e. every preview branch not explicitly
+ * allowlisted in Vercel. Deferring construction keeps the build independent of
+ * runtime auth config. Same reason getResend() above is a function.
+ *
+ * Exposed as a Proxy so the 8 existing `import { auth }` call sites are unchanged.
+ */
+export const auth: Auth = new Proxy({} as Auth, {
+  get(_target, prop) {
+    authInstance ??= createAuth();
+    const value = (authInstance as unknown as Record<string | symbol, unknown>)[prop];
+    return typeof value === "function" ? value.bind(authInstance) : value;
+  },
+  has(_target, prop) {
+    authInstance ??= createAuth();
+    return prop in (authInstance as object);
+  },
 });
