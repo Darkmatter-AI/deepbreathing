@@ -21,10 +21,16 @@ test("variant.ts: loss_aversion_banner is the active challenger at 100% share", 
     /export type ConversionVariant =[^;]*"loss_aversion_banner"/,
     "ConversionVariant union should include loss_aversion_banner (the shipped non-blocking banner)"
   );
-  assert.match(
-    src,
-    /export const ACTIVE_CHALLENGER:\s*ConversionVariant\s*=\s*"loss_aversion_banner"/,
-    "ACTIVE_CHALLENGER should be loss_aversion_banner (shipped 2026-06-26; rollback = loss_aversion)"
+  // Deliberately NOT pinned to a specific challenger. loss_aversion_banner got a
+  // Failed verdict on 2026-07-10 and was swapped for keep_practice, and pinning the
+  // name here just means this test breaks on every experiment. Assert instead that
+  // whatever is active is a real member of the union.
+  const active = src.match(/export const ACTIVE_CHALLENGER:\s*ConversionVariant\s*=\s*"([^"]+)"/);
+  assert.ok(active, "ACTIVE_CHALLENGER should be declared with an explicit variant");
+  const union = [...src.matchAll(/\|\s*"([a-z_]+)"/g)].map((m) => m[1]);
+  assert.ok(
+    union.includes(active[1]),
+    `ACTIVE_CHALLENGER "${active[1]}" must be a member of the ConversionVariant union (${union.join(", ")})`
   );
   assert.match(
     src,
@@ -37,19 +43,25 @@ test("variant.ts: loss_aversion_banner is the active challenger at 100% share", 
     /Math\.random\(\)\s*<\s*CHALLENGER_SHARE\s*\?\s*ACTIVE_CHALLENGER\s*:\s*"control"/,
     "getConversionVariant should bucket via CHALLENGER_SHARE -> ACTIVE_CHALLENGER"
   );
+  // isVariant() must accept the active challenger, or a persisted assignment is
+  // discarded on the next visit and the visitor silently re-buckets.
   assert.match(
     src,
-    /v === "loss_aversion_banner"/,
-    "isVariant() should accept loss_aversion_banner so a persisted value is honored"
+    new RegExp(`v === "${active[1]}"`),
+    `isVariant() should accept "${active[1]}" so a persisted value is honored`
   );
 });
 
-test("variant.ts: storage key is bumped to v3 so returning Prompt C visitors re-bucket onto the banner", () => {
+test("variant.ts: storage key carries a version suffix so a challenger swap re-buckets returning visitors", () => {
   const src = read(VARIANT);
+  // The version number is intentionally not pinned — it gets bumped on every
+  // challenger swap (v3 -> v4 on the 2026-07-10 keep_practice ship). What matters
+  // is that a suffix exists, so returning visitors re-draw instead of keeping a
+  // stale assignment to a retired variant.
   assert.match(
     src,
-    /const VARIANT_KEY\s*=\s*"resonance_conversion_variant_v3"/,
-    "VARIANT_KEY must be the _v3 key to re-bucket visitors persisted as loss_aversion (Prompt C modal)"
+    /const VARIANT_KEY\s*=\s*"resonance_conversion_variant_v\d+"/,
+    "VARIANT_KEY must carry a _v<n> suffix that is bumped whenever ACTIVE_CHALLENGER changes"
   );
   // The active key const must not still be the un-bumped key.
   assert.doesNotMatch(

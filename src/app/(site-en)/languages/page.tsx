@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { createOgImagePath } from "@/lib/seo/og-image";
+
 const SITE_URL = "https://deepbreathingexercises.com";
 
 const LOCALES = [
@@ -307,12 +309,30 @@ function resolveHref(prefix: string, path: string): string {
   return `${SITE_URL}${prefix}${path}`;
 }
 
+const OG_IMAGE_ALT = "Deep Breathing Exercises in 6 languages";
+const ogImageUrl = createOgImagePath(OG_IMAGE_ALT);
+
 export const metadata: Metadata = {
   title: "Languages — Deep Breathing Exercises in 6 languages",
   description:
     "Deep Breathing Exercises is available in English, Español, Português, Français, Deutsch, and 日本語. Jump straight to techniques and guides in your language.",
   alternates: { canonical: `${SITE_URL}/languages` },
   robots: { index: true, follow: true },
+  openGraph: {
+    title: "Deep Breathing Exercises in 6 languages",
+    description:
+      "Breathing techniques, timers, and guides in English, Español, Português, Français, Deutsch, and 日本語.",
+    url: `${SITE_URL}/languages`,
+    type: "website",
+    images: [{ url: ogImageUrl, width: 1200, height: 630, alt: OG_IMAGE_ALT }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Deep Breathing Exercises in 6 languages",
+    description:
+      "Breathing techniques, timers, and guides in 6 languages. Pick yours.",
+    images: [ogImageUrl],
+  },
 };
 
 export default function LanguagesPage() {

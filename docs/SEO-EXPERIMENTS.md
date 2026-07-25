@@ -2211,6 +2211,12 @@ The preceding localized window recorded 37 clicks and 1,233 impressions. Current
 
 ## Recent Follow-Up Log
 
+### 2026-07-25 — `/languages` was missing OG/Twitter images (omission fix, not an experiment)
+
+Found by the `og-metadata-coverage` test once the suite was actually wired to a runner (it had been failing unnoticed; see [UX-BACKLOG.md](UX-BACKLOG.md) on the 22 rotted tests). `/languages` is `robots: { index: true, follow: true }` and is the crawl hub referenced throughout this log, but its metadata defined no `openGraph.images` or `twitter.images`, so shares of it unfurled with no card image.
+
+Fixed by adding the standard `createOgImagePath()` OG/Twitter block used by every other indexable page. No hypothesis or success criteria — this is restoring the site-wide default on a page that was missed, not a change to test. The other three pages the test flagged (`/og-preview`, `/sensory-studio`, `/stats`) are all `index: false`, so they are legitimately exempt and the test now skips noindex pages.
+
 | Experiment | Launched | Follow-up due | Measured | Outcome |
 |------------|----------|---------------|----------|---------|
 | Native Translation Serving Migration | 2026-07-16 | T+24 2026-07-17; T+7 2026-07-23; T+28 2026-08-13 | Pending | Active observation |
