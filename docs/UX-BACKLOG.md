@@ -13,6 +13,8 @@ Compiled from session audit on 2026-04-27. Refreshed 2026-05-05 with post-deploy
 
 **Now gated:** `prebuild` runs `pnpm test`, so a red suite fails the Vercel build. The two build-output test files skip during `prebuild` (no `.next/server` yet) and are re-run against fresh artifacts by `postbuild` via `pnpm run test:post-build`.
 
+**One open item.** `native-i18n-inventory`'s byte-equality snapshot (checked-in `INVENTORY.md` vs a fresh generation) is **not byte-reproducible across platforms**: it passes on macOS and failed on Vercel's Linux for the identical commit, while every substantive inventory assertion passed there. Ruled out by reproduction: `localeCompare` collation (fixed anyway — the generator now sorts by code point), the 17 files `.vercelignore` strips, non-ASCII filenames, and case collisions. Cause still unknown, so that one assertion is skipped when `CI`/`VERCEL` is set and runs locally as a "rerun the generator" reminder. The portable half — every marker resolving to a real line — was split out and still gates. Worth finishing: reproduce on a Linux box (orangepi) and diff the two documents directly.
+
 Two of the 22 were **real bugs**, not rot — worth remembering, since a rotted test and a live regression look identical until you read one:
 
 - `/languages` is `robots: { index: true }` but had no `openGraph.images` / `twitter.images`, so shares unfurled with no card. Fixed; logged in [SEO-EXPERIMENTS.md](SEO-EXPERIMENTS.md).

@@ -337,7 +337,7 @@ The groups below separate live coupling from migration provenance and historical
 | Evidence | Dependency / cutover implication |
 |---|---|
 | `docs/SEO-EXPERIMENTS.md:153` | Permanent experiment history for proxy defects, mitigations, and indexing outcomes. |
-| `docs/UX-BACKLOG.md:97` | Historical ownership and translation-coverage findings. |
+| `docs/UX-BACKLOG.md:100` | Historical ownership and translation-coverage findings. |
 | `docs/qa-reports/traction-pages-2026-06-06.md:9` | Production evidence for delayed translation, partial coverage, and hydration failures. |
 | `docs/research/eeat-citations-2026-05.md:16` | A dated content-research decision record. |
 | `docs/seo-audit-2026-05-05.md:5` | A dated audit whose MassTranslate observations are historical baseline evidence. |
