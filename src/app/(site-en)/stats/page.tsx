@@ -13,6 +13,15 @@ export const metadata: Metadata = {
   robots: { index: false },
 };
 
+// StatsPage reads the signed-in user's session, so this route must never be
+// prerendered. It was: `auth.api` is evaluated before the `headers()` call that
+// would otherwise bail the render to dynamic, so a build with no
+// BETTER_AUTH_SECRET constructed betterAuth() during static generation and
+// crashed the worker — every preview branch, since all Vercel preview env vars
+// are branch-scoped. Being explicit here also matches the noindex contract
+// above: this page is per-user and has nothing cacheable to prerender.
+export const dynamic = "force-dynamic";
+
 export default function EnglishStatsPage() {
   return <StatsPage content={englishContent} />;
 }
