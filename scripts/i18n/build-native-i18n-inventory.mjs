@@ -71,6 +71,12 @@ export const DEPENDENCY_GROUPS = Object.freeze([
           "Publishes locale-prefixed URLs even though the current Next.js app has no native locale route tree.",
       },
       {
+        file: "scripts/ping-sitemap.mjs",
+        marker: "EDGE_PROXY_LOCALE_PREFIXES",
+        detail:
+          "Builds the canonical URL allowlist used to fail closed when deriving changed-route IndexNow submissions; the legacy-named constant now represents the five published native locale prefixes.",
+      },
+      {
         file: "src/app/robots.ts",
         marker: "mass-translate",
         detail:
@@ -320,6 +326,12 @@ export const DEPENDENCY_GROUPS = Object.freeze([
         file: "scripts/tests/warm-cache-locale-split.test.mjs",
         marker: "EDGE_PROXY_LOCALE_PREFIXES",
         detail: "Pins English-versus-proxy URL classification and the five-locale multiplier.",
+      },
+      {
+        file: "scripts/tests/ping-sitemap.test.mjs",
+        marker: "site-localized",
+        detail:
+          "Pins the changed-route IndexNow safety boundary: localized catch-all changes are ambiguous and must submit nothing rather than expanding to locale variants.",
       },
       {
         file: "scripts/tests/languages-page-ssr.test.mjs",

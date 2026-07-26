@@ -18,6 +18,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-07-21 | [IndexNow Changed-Canonical-URL Submission](#2026-07-21-indexnow-changed-canonical-url-submission) | 🔄 Implemented |
 | 2026-07-20 | [Stop Proxy Cache Warming After Native Translation Cutover](#2026-07-20-stop-proxy-cache-warming-after-native-translation-cutover) | 🔄 Implemented |
 | 2026-07-20 | [Post-Migration Locale Metadata Hygiene — Translation Leakage + Truncation Corrections](#2026-07-20-post-migration-locale-metadata-hygiene--translation-leakage--truncation-corrections) | 🔄 Implemented |
 | 2026-07-19 | [FR Coherent Bing CTR — Exercise-Intent Title + Meta Rewrite](#2026-07-19-fr-coherent-bing-ctr--exercise-intent-title--meta-rewrite) | 🔄 Implemented |
@@ -82,13 +83,27 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-01-06 | [Navy SEAL Content Expansion](#2026-01-06-navy-seal-content-expansion) | ❌ Failed |
 | 2026-01-06 | [CTR Title Rewrites (Batch 1)](#2026-01-06-ctr-title-rewrites-batch-1) | ✅ Success |
 
-**Roll-up by status (60 entries):** ✅ 4 Success · ❌ 11 Failed · ⚪ 12 Inconclusive · 🟡 3 Mixed · ⏳ 1 Waiting · 🔄 20 Implemented · 📊 9 Snapshot. *(2026-07-22: appstore-branch merge restored the uncommitted 2026-07-18 post-translation migration audit snapshot. 2026-07-20: +native-mode proxy cache-warmer guard; +post-migration locale metadata hygiene corrections. 2026-07-19: +FR coherent Bing CTR rewrite; +homepage server-rendered content fix. 2026-07-18 autoresearch cycle 1: settled 5 overdue verdicts — ?duration= hreflang ✅, trailing-slash ❌ superseded, Tummo 🟡, 404 root-cause ❌, crawl hygiene 🟡; +hope-cartel reviews-intent entry. 2026-07-15: +native translation serving migration planning entry. 2026-06-21: audio-v2 rebase folded in the 2026-05-18 Indexing-Recovery Checkpoint snapshot. 2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
+**Roll-up by status (61 entries):** ✅ 4 Success · ❌ 11 Failed · ⚪ 12 Inconclusive · 🟡 3 Mixed · ⏳ 1 Waiting · 🔄 21 Implemented · 📊 9 Snapshot. *(2026-07-22: appstore-branch merge restored the uncommitted 2026-07-18 post-translation migration audit snapshot. 2026-07-21: +changed-canonical-URL IndexNow submission. 2026-07-20: +native-mode proxy cache-warmer guard; +post-migration locale metadata hygiene corrections. 2026-07-19: +FR coherent Bing CTR rewrite; +homepage server-rendered content fix. 2026-07-18 autoresearch cycle 1: settled 5 overdue verdicts — ?duration= hreflang ✅, trailing-slash ❌ superseded, Tummo 🟡, 404 root-cause ❌, crawl hygiene 🟡; +hope-cartel reviews-intent entry. 2026-07-15: +native translation serving migration planning entry. 2026-06-21: audio-v2 rebase folded in the 2026-05-18 Indexing-Recovery Checkpoint snapshot. 2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
 
 See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of what worked / failed / strategic insights from the first month of experiments.
 
 ---
 
 ## Active Experiments
+
+### 2026-07-21: IndexNow Changed-Canonical-URL Submission
+
+**Context.** The production `postbuild` hook fetched the 337-URL sitemap and submitted the full list after every production deployment. Bing Webmaster Tools recorded approximately 11,500 submissions from July 10 through July 20, including one 337-URL batch on July 20 at 15:35. No indexing delay or production load incident was demonstrated, so this is an efficiency and crawl-noise correction.
+
+**Hypothesis.** Deriving a conservative manifest from the last successful Vercel deployment SHA and submitting only unambiguously changed canonical page entries will reduce deployment-driven IndexNow volume without delaying discovery of eligible changed routes. An unavailable, shallow, or ambiguous diff must submit nothing rather than fall back to the sitemap.
+
+**Change.** The postbuild workflow now requires the Deep Breathing Vercel production project and deployment identifiers, compares `VERCEL_GIT_PREVIOUS_SHA` with `VERCEL_GIT_COMMIT_SHA`, maps only changed static English `page.tsx` entries, intersects those exact routes with the repository's canonical sitemap route set, and deduplicates the result. It does not expand an English change to unchanged locale variants. `vercel.json` defines an always-build ignored-step command so Vercel exposes the previous successful SHA without changing which commits build. Shared components, data, layouts, localized catch-all code, dynamic routes, missing Git history, and invalid manifests fail closed. Preview, development, generic CI, local builds, HTTP URLs, non-canonical hosts, query strings, fragments, and non-sitemap routes make no request. Eligible lists are batched at the IndexNow 10,000-URL protocol limit.
+
+**Baseline (2026-07-21):** Approximately 11,500 Bing submissions in 11 days for a 337-URL sitemap. The latest export showed all 337 URLs submitted together. A representative homepage was crawled the next morning and indexed, so this baseline does not indicate an indexing incident.
+
+**Pre-committed success criteria and validation window:** On the first authorized production deployment, retain the build log line for submitted changed-URL count and IndexNow response status. Confirm in Bing telemetry that only those intended canonical URLs appear. Continue checking deployment logs and Bing submission totals for 7 calendar days. Success means every no-route-change deployment makes zero IndexNow requests, every unambiguously mapped route deployment submits each intended canonical URL once, and no full-sitemap-sized batch appears. Treat missing or ambiguous manifests as a successful safety no-op, not a reason to resubmit all URLs. Reopen if a qualifying changed page is omitted despite a trustworthy direct page-entry diff, or if any excluded URL is submitted.
+
+**Status:** 🔄 Implemented locally. Production deployment, first-response capture, and the 7-day Bing validation window remain pending.
 
 ### 2026-07-18: Post-Translation Migration Audit — Native Routing + GA4 Integrity
 
@@ -141,7 +156,6 @@ Hydrated-browser verification also showed the GA script present on `deepbreathin
 **Next checkpoints:** T+7 **2026-07-23** for early crawl/measurement drift; T+28 **2026-08-13** for the native-migration indexing/canonical verdict. Use finalized GSC data and a GA4 window ending at least two days before the run date. Do not request indexing merely because a translated page is still in normal post-migration lag.
 
 **Side-effect record:** The audit itself was read-only. It submitted no URLs or sitemaps and changed no GSC/GA4 admin configuration. The two confirmed repository defects were subsequently fixed through PRs #43 and #44, merged, automatically deployed, and verified live. The deliberately dirty `appstore/v1-submission-prep` checkout was preserved.
-
 ### 2026-07-20: Stop Proxy Cache Warming After Native Translation Cutover
 
 **Context.** The 2026-07-16 native-i18n cutover moved localized page serving to repository-owned Vercel routes, but the proxy-era `/api/warm-cache` Vercel Cron remained active every two hours. Its Googlebot requests were designed to trigger MassTranslate translation assembly and could continue consuming the legacy API after clients timed out. This is automated maintenance traffic, not customer translation demand.
