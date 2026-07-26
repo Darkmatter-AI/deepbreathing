@@ -237,6 +237,7 @@ The groups below separate live coupling from migration provenance and historical
 | `src/lib/seo/sitemap-routes.mjs:8` | Owns the five proxy prefixes, manufactures locale URLs/hreflang, and keeps `/languages` English-only. |
 | `src/lib/seo/sitemap-routes.ts:6` | Typed adapter exposes proxy-specific sitemap constants and URL classification. |
 | `src/app/sitemap.xml/route.ts:5` | Publishes locale-prefixed URLs even though the current Next.js app has no native locale route tree. |
+| `scripts/ping-sitemap.mjs:11` | Builds the canonical URL allowlist used to fail closed when deriving changed-route IndexNow submissions; the legacy-named constant now represents the five published native locale prefixes. |
 | `src/app/robots.ts:8` | Carries `/api/proxy/` crawl cleanup and query-parameter rules created for proxy canonical behavior. |
 | `src/app/(site-en)/layout.tsx:72` | The English root explicitly selects the shared document language; the proxy currently changes locale-facing HTML outside the app. |
 | `src/app/(site-en)/languages/page.tsx:348` | Hardcodes the locale discovery hub; proxy anchor rewriting is why this route is published only in English. |
@@ -276,7 +277,7 @@ The groups below separate live coupling from migration provenance and historical
 | Evidence | Dependency / cutover implication |
 |---|---|
 | `src/app/api/warm-cache/route.ts:21` | Fetches all 337 sitemap URLs in English-then-locale order with a bot UA to populate proxy KV and avoid cold translation timeouts. |
-| `vercel.json:21` | Runs the proxy-specific cache warmer every two hours. |
+| `vercel.json:22` | Runs the proxy-specific cache warmer every two hours. |
 
 ### Generated translation content and build tooling (active until replaced)
 
@@ -311,6 +312,7 @@ The groups below separate live coupling from migration provenance and historical
 |---|---|
 | `scripts/tests/sitemap-coverage.test.mjs:9` | Pins proxy-prefixed publication, hreflang, and the English-only `/languages` rule. |
 | `scripts/tests/warm-cache-locale-split.test.mjs:10` | Pins English-versus-proxy URL classification and the five-locale multiplier. |
+| `scripts/tests/ping-sitemap.test.mjs:154` | Pins the changed-route IndexNow safety boundary: localized catch-all changes are ambiguous and must submit nothing rather than expanding to locale variants. |
 | `scripts/tests/languages-page-ssr.test.mjs:23` | Pins the client-only switcher and hardcoded locale discovery links. |
 | `scripts/tests/share-utm.test.mjs:8` | Pins share-copy behavior against proxy-mutated page metadata, and separates the proxy-translated buttons from the natively-translated holiday button. |
 
@@ -336,7 +338,7 @@ The groups below separate live coupling from migration provenance and historical
 
 | Evidence | Dependency / cutover implication |
 |---|---|
-| `docs/SEO-EXPERIMENTS.md:153` | Permanent experiment history for proxy defects, mitigations, and indexing outcomes. |
+| `docs/SEO-EXPERIMENTS.md:167` | Permanent experiment history for proxy defects, mitigations, and indexing outcomes. |
 | `docs/UX-BACKLOG.md:102` | Historical ownership and translation-coverage findings. |
 | `docs/qa-reports/traction-pages-2026-06-06.md:9` | Production evidence for delayed translation, partial coverage, and hydration failures. |
 | `docs/research/eeat-citations-2026-05.md:16` | A dated content-research decision record. |
@@ -344,7 +346,7 @@ The groups below separate live coupling from migration provenance and historical
 
 ### Explicit-marker coverage audit
 
-The deterministic marker scan found 48 files with explicit MassTranslate/proxy/origin coupling. All must be classified above.
+The deterministic marker scan found 50 files with explicit MassTranslate/proxy/origin coupling. All must be classified above.
 
 Unclassified marker files: none.
 
