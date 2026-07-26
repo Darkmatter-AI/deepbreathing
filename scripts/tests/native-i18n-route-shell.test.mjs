@@ -48,7 +48,10 @@ function localeStrippingRedirects(redirects) {
 }
 
 test("serving mode defaults fail closed to the legacy proxy", () => {
-  assert.equal(resolveNativeI18nMode(undefined), "proxy");
+  // Passing `undefined` invokes the function's process.env default, which made
+  // this assertion depend on Vercel's production-only NATIVE_I18N_MODE value.
+  // An empty environment value is the actual fail-closed case.
+  assert.equal(resolveNativeI18nMode(""), "proxy");
   assert.equal(resolveNativeI18nMode("native-preview"), "native-preview");
   assert.equal(resolveNativeI18nMode("native"), "native");
   assert.equal(getNativeLinkMode("proxy"), null);
