@@ -23,6 +23,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-07-27 | [Restore mount-time GA4 event queue](#2026-07-27-restore-mount-time-ga4-event-queue) | 🌙 Implemented locally — unshipped Night Shift measurement repair |
 | 2026-07-20 | [Authenticated `/stats` reach instrumentation](#2026-07-20-authenticated-stats-reach-instrumentation) | 🔄 Implemented — PR [#53](https://github.com/Darkmatter-AI/deepbreathing/pull/53); first mature read 2026-07-29 |
 | 2026-07-12 | [TestFlight native-sheet and practice-identity pass](#2026-07-12-testflight-native-sheet-and-practice-identity-pass) | 🔄 Implemented locally — physical build validation pending |
 | 2026-07-11 | [TestFlight immersion and control pass — native audio, draggable modes, completion parity](#2026-07-11-testflight-immersion-and-control-pass--native-audio-draggable-modes-completion-parity) | 🔄 Implemented locally — physical build validation pending |
@@ -52,6 +53,24 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 ---
 
 ## Active Experiments
+
+### 2026-07-27: Restore Mount-Time GA4 Event Queue
+
+**Observed baseline:** In matched mature production-host windows, `page_viewed_breathing` fell from 293 users on 2026-07-12–18 to 50 on 2026-07-19–25 while `breathing_session_start` rose from 80 to 124. The resulting 248% viewed-to-start ratio is impossible. The break begins immediately after the 2026-07-18 host-gating refactor moved GA initialization into `GoogleAnalyticsScript` behind a parent `useEffect`; `Resonance` emits `page_viewed_breathing` once from a child mount effect before `window.gtag` exists, while later interaction events still arrive.
+
+**Hypothesis:** Bootstrapping the standard GA4 `dataLayer` queue before React effects run, while retaining production-only loading of the remote GA script, will restore mount-time events without reintroducing preview, localhost, or origin-host contamination.
+
+**Exact change:** Move the existing inline `gtag` queue/config bootstrap to the shared document with `beforeInteractive`; keep the remote GA script behind the existing production-host gate. No event names, parameters, consent behavior, funnel UX, or automatic page-view behavior change.
+
+**Primary metric:** On the first three mature post-deploy days, `page_viewed_breathing` users must be at least `breathing_session_start` users and the viewed-to-start ratio must return to the historical valid range below 100%.
+
+**Guardrails:** `send_page_view:false` remains set; non-production hosts do not load `gtag.js`; production `page_view`, signup, start, and end events continue; no duplicate initial page view.
+
+**Pre-committed criteria:** Pass if the focused script-order/host-gating tests pass and the first mature production window restores a valid viewed-to-start denominator. Fail if mount-time events remain below starts, any non-production host loads the remote GA script, or initial page views duplicate.
+
+**Measure-after:** First technical read immediately after any authorized deployment; first data read after three complete days plus the normal two-day GA4 maturity lag. This is a measurement repair, not a growth experiment, so it has no conversion-lift claim.
+
+**Status:** 🌙 Implemented locally and unshipped; no production write or deployment.
 
 ### 2026-07-20: Authenticated `/stats` Reach Instrumentation
 
