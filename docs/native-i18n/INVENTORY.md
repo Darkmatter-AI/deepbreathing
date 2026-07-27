@@ -323,7 +323,7 @@ The groups below separate live coupling from migration provenance and historical
 | `CLAUDE.md:90` | Canonical project guidance still documents proxy URL semantics and old OAuth context. |
 | `AGENTS.md:21` | Project environment declares the origin application endpoint. |
 | `.claude/skills/daily-indexing/SKILL.md:19` | Correctly states that MassTranslate submission/OAuth paths are retired for indexing; keep this negative dependency true. |
-| `docs/runbooks/tools-and-data-sources.md:54` | Primary live runbook for proxy cache, signed-webhook bypass, URL semantics, and remaining GSC/Bing fallbacks. |
+| `docs/runbooks/tools-and-data-sources.md:58` | Primary live runbook for proxy cache, signed-webhook bypass, URL semantics, and remaining GSC/Bing fallbacks. |
 | `docs/runbooks/weekly-funnel-refresh.md:78` | Still contains MassTranslate GSC/Bing synchronization commands and OAuth recovery steps. |
 | `docs/indexing-queue.md:35` | Contains operational and historical references to MassTranslate URL-submission tools. |
 | `docs/FUNNEL-DASHBOARD.md:154` | A dated dashboard snapshot names MassTranslate as a prior GSC data source. |

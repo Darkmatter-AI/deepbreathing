@@ -267,13 +267,10 @@ export function HomePage({
             {resonance}
           </div>
         </section>
-        <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-20 px-6 pb-20 sm:px-8 lg:hidden">
+        <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-20 px-6 pb-20 sm:px-8 lg:inset-y-0 lg:right-auto lg:z-30 lg:flex lg:w-full lg:max-w-xl lg:flex-col lg:justify-center lg:px-6 lg:py-20">
           <div className="pointer-events-auto">
             {heroHeader}
           </div>
-        </div>
-        <div className="absolute inset-y-0 left-0 z-30 hidden w-full max-w-xl px-6 py-20 lg:flex lg:flex-col lg:justify-center">
-          {heroHeader}
         </div>
       </section>
 

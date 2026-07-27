@@ -4,8 +4,19 @@ import fs from "node:fs";
 import path from "node:path";
 
 const ROOT = process.cwd();
-const HOMEPAGE_HTML = path.join(ROOT, ".next", "server", "app", "index.html");
-const BUILD_MARKER = HOMEPAGE_HTML;
+const HOMEPAGE_BUILDS = [
+  ["/", "index.html"],
+  ["/es", "es.html"],
+  ["/pt", "pt.html"],
+  ["/fr", "fr.html"],
+  ["/de", "de.html"],
+  ["/ja", "ja.html"],
+];
+const REQUIRED_HOMEPAGE_BUILDS =
+  (process.env.NATIVE_I18N_MODE || "proxy") === "proxy"
+    ? HOMEPAGE_BUILDS.slice(0, 1)
+    : HOMEPAGE_BUILDS;
+const BUILD_MARKER = path.join(ROOT, ".next", "server", "app", "index.html");
 
 // These assertions read real Next build output, so they can only run after
 // `pnpm build`. They are skipped (not failed) on a clean tree so `pnpm test`
@@ -13,23 +24,27 @@ const BUILD_MARKER = HOMEPAGE_HTML;
 const NEEDS_BUILD = { skip: fs.existsSync(BUILD_MARKER) ? false : "requires `pnpm build` output (.next/server/app)" };
 
 
-test("homepage build output keeps crawlable SSR body with H1", NEEDS_BUILD, () => {
-  assert.ok(
-    fs.existsSync(HOMEPAGE_HTML),
-    "missing build output for homepage (.next/server/app/index.html); run `pnpm build` first"
-  );
+test("homepage build output keeps one crawlable SSR H1 per locale root", NEEDS_BUILD, () => {
+  for (const [route, filename] of REQUIRED_HOMEPAGE_BUILDS) {
+    const homepageHtml = path.join(ROOT, ".next", "server", "app", filename);
+    assert.ok(
+      fs.existsSync(homepageHtml),
+      `missing build output for ${route}; run a native-i18n production build first`
+    );
 
-  const html = fs.readFileSync(HOMEPAGE_HTML, "utf8");
+    const html = fs.readFileSync(homepageHtml, "utf8");
 
-  assert.doesNotMatch(
-    html,
-    /id="__next_error__"/,
-    "homepage deopted to app shell; crawlers may miss body headings"
-  );
+    assert.doesNotMatch(
+      html,
+      /id="__next_error__"/,
+      `${route} deopted to app shell; crawlers may miss body headings`
+    );
 
-  assert.match(
-    html,
-    /<h1[\s>]/i,
-    "homepage HTML should include a literal <h1> in server-rendered body markup"
-  );
+    const headings = html.match(/<h1[\s>]/gi) ?? [];
+    assert.equal(
+      headings.length,
+      1,
+      `${route} should include exactly one literal <h1> in server-rendered body markup`
+    );
+  }
 });
