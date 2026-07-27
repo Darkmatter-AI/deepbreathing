@@ -93,17 +93,23 @@ curl -s "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UC17_
 ```
 **Gotcha (2026-07-10):** do NOT use the RSS feed (`feeds/videos.xml`) or page scraping as a primary source — RSS caps at 15 entries (the channel has 45+), YouTube's edge IP-blocked orangepi on 2026-07-09, and `subscriberCountText` was never readable from the page source. **Private** metrics (watch time, impressions, thumbnail CTR, traffic sources) need the YouTube Analytics API, which only supports channel-owner OAuth (no service-account path) — deliberately not wired up while the channel is small; revisit when watch-time decisions matter.
 
-### Check index status (do NOT submit URLs)
+### Check index status and canonical selection
 
 **Tool:** `GSC_SA_KEY_FILE=~/.config/dbe-ga-visibility-sa.json node scripts/gsc-index-status.mjs`
 Service-account auth (`ga-visibility@…`), self-signed JWT, nothing expires. The SA must be an **Owner** of the property; Editor 403s on URL Inspection. Refreshes the `Indexed` column of `docs/indexing-queue.md` and prints a `coverageState` for each unindexed URL. See the `daily-indexing` skill.
 
-**Gotcha — URL submission is dead on this site (audited 2026-07-09).** Do not reach for these:
+The default is a full 331-URL sweep so regressions are visible: it adds and clears `✓`, summarizes coverage states, reports Google-selected canonicals, and exits nonzero when Google selects an off-domain canonical. Use `--pending-only` only for a deliberately cheaper spot check; `--limit N` and `--dry-run` work in either mode. Keep the queue URL set equal to the canonical sitemap URL set.
+
+**Gotcha (2026-07-27):** the URL Inspection API timed out repeatedly even while the Search Console browser UI worked. Requests now have a 90-second timeout, paced starts, and a circuit breaker after 10 failures. If that circuit breaker opens, do not loop the full job; use the browser UI for the small actionable set and retry the API at the next scheduled checkpoint.
+
+**Gotcha — bulk/API URL submission is dead on this site (audited 2026-07-09).** Do not reach for these:
 - `mcp__mass-translate-backend__request_indexing` posts to Google's Indexing API, which Google restricts to `JobPosting` / `BroadcastEvent` pages. It returns **HTTP 200 for ineligible URLs**, so it looks like it worked and does nothing.
 - `google.com/ping?sitemap=` → **404** (retired 2023). `bing.com/ping?sitemap=` → **410 Gone**.
 - `mcp__mass-translate-backend__submit_urls_bing` is redundant: `postbuild` notifies **IndexNow** only for canonical routes derived unambiguously from the previous successful Deep Breathing Vercel production deployment (`scripts/ping-sitemap-lib.mjs`). `vercel.json` intentionally sets `ignoreCommand` to `exit 1`: this preserves the existing always-build behavior while making Vercel expose `VERCEL_GIT_PREVIOUS_SHA`. No changed route, missing Git history, or an ambiguous shared/dynamic route input produces no request. Preview, development, generic CI, and local builds also fail closed. Google does not participate in IndexNow. (The original full-sitemap path became active on 2026-07-10, gained a production-only guard on 2026-07-15, and was replaced by changed-route submission on 2026-07-21 after Bing showed repeated 337-URL batches.)
 
 Google discovers pages via the sitemap and the `/languages` crawl hub. `Crawled - currently not indexed` is a quality verdict, not a submission problem. Full reasoning in the 2026-07-09 entry of `SEO-EXPERIMENTS.md`.
+
+Search Console's interactive **URL Inspection → Request indexing** action may be used sparingly for a small, verified set of corrected URLs after deployment. It is not a bulk workflow and does not make the unsupported Indexing API valid.
 
 **Consequence:** the mass-translate GSC OAuth (which expired roughly every two weeks) is no longer needed for indexing. It remains only for translation work.
 

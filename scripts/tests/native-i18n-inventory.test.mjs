@@ -54,21 +54,21 @@ test("Phase 0 route and sitemap baseline stays explicit", () => {
     inventory.dynamicPages.map(({ route, robots }) => ({ route, robots })),
     [{ route: "/embed/[slug]", robots: "noindex" }],
   );
-  assert.equal(inventory.sitemapEntries.length, 337);
+  assert.equal(inventory.sitemapEntries.length, 331);
 
   const englishPublished = inventory.routes.filter((route) => route.publication.en);
-  assert.equal(englishPublished.length, 57);
+  assert.equal(englishPublished.length, 56);
   for (const prefix of LOCALE_PREFIXES) {
     assert.equal(
       inventory.routes.filter((route) => route.publication[prefix]).length,
-      56,
+      55,
       `${prefix} sitemap count`,
     );
   }
 
   assert.deepEqual(
     inventory.routes.filter((route) => route.sitemapExcluded).map((route) => route.route),
-    ["/brand-lab", "/og-preview", "/sensory-studio"],
+    ["/brand-lab", "/og-preview", "/sensory-studio", "/stats"],
   );
   assert.deepEqual(
     inventory.routes.filter((route) => route.robots === "noindex").map((route) => route.route),
@@ -96,9 +96,9 @@ test("final catalog covers all currently translated sitemap routes", () => {
     appStaticNotCatalog: ["/sensory-studio"],
     catalogNotAppStatic: [],
     sitemapEnglishNotCatalog: [],
-    catalogNotSitemapEnglish: ["/brand-lab", "/og-preview"],
+    catalogNotSitemapEnglish: ["/brand-lab", "/og-preview", "/stats"],
     translatedSitemapNotCatalog: [],
-    noindexInSitemap: ["/stats"],
+    noindexInSitemap: [],
     englishOnlyCataloged: ["/languages"],
   });
 });

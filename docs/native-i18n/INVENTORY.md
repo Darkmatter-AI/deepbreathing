@@ -18,12 +18,12 @@ This is a repository snapshot only. It does not change routing, metadata, sitema
 |---|---:|
 | Static English page routes in the app | 60 |
 | Dynamic page patterns outside the static inventory | 1 |
-| English sitemap URLs | 57 |
+| English sitemap URLs | 56 |
 | English-only sitemap routes | 1 |
-| English routes with all five locale variants | 56 |
-| Sitemap URLs total | 337 |
+| English routes with all five locale variants | 55 |
+| Sitemap URLs total | 331 |
 | Explicit noindex static routes | 4 |
-| Static routes excluded from the sitemap | 3 |
+| Static routes excluded from the sitemap | 4 |
 | MassTranslate catalog pages | 59 |
 | Catalog route artifacts | 295 |
 | Current source placements | 7012 |
@@ -34,15 +34,15 @@ This is a repository snapshot only. It does not change routing, metadata, sitema
 
 | Locale | URL prefix | Published URLs |
 |---|---|---:|
-| English | none | 57 |
-| es-es | `/es` | 56 |
-| pt-br | `/pt` | 56 |
-| fr-fr | `/fr` | 56 |
-| de-de | `/de` | 56 |
-| ja-jp | `/ja` | 56 |
-| **Total** |  | **337** |
+| English | none | 56 |
+| es-es | `/es` | 55 |
+| pt-br | `/pt` | 55 |
+| fr-fr | `/fr` | 55 |
+| de-de | `/de` | 55 |
+| ja-jp | `/ja` | 55 |
+| **Total** |  | **331** |
 
-The current multiplier is therefore 56 translated English routes × 5 locale variants + 57 English URLs = 337. `/languages` is the one English-only sitemap route.
+The current multiplier is therefore 55 translated English routes × 5 locale variants + 56 English URLs = 331. `/languages` is the one English-only sitemap route.
 
 ## Excluded, noindex, and English-only routes
 
@@ -52,9 +52,9 @@ The current multiplier is therefore 56 translated English routes × 5 locale var
 | `/languages` | index (explicit) | included | none | yes | English-only; catalog has unpublished locale files |
 | `/og-preview` | noindex | excluded | none | yes | sitemap-excluded |
 | `/sensory-studio` | noindex | excluded | none | no | sitemap-excluded; not in catalog |
-| `/stats` | noindex | included | all five | yes | noindex-in-sitemap |
+| `/stats` | noindex | excluded | none | yes | sitemap-excluded |
 
-`/stats` is the existing contradiction: its page metadata says noindex, yet the sitemap publishes English plus all five locale URLs. This inventory records the discrepancy but intentionally does not fix it.
+`/stats` remains publicly available in English and all five locales, but its noindex metadata now agrees with its sitemap exclusion.
 
 ## Static route publication matrix
 
@@ -118,7 +118,7 @@ The current multiplier is therefore 56 translated English routes × 5 locale var
 | `/physiological-sigh-panic-attack` | `src/app/(site-en)/physiological-sigh-panic-attack/page.tsx` | index (default) | yes | yes | yes | yes | yes | yes | yes | - |
 | `/privacy` | `src/app/(site-en)/privacy/page.tsx` | index (default) | yes | yes | yes | yes | yes | yes | yes | - |
 | `/sensory-studio` | `src/app/(site-en)/sensory-studio/page.tsx` | noindex | no | no | no | no | no | no | no | sitemap-excluded; not in catalog |
-| `/stats` | `src/app/(site-en)/stats/page.tsx` | noindex | yes | yes | yes | yes | yes | yes | yes | noindex-in-sitemap |
+| `/stats` | `src/app/(site-en)/stats/page.tsx` | noindex | no | no | no | no | no | no | yes | sitemap-excluded |
 | `/support` | `src/app/(site-en)/support/page.tsx` | index (default) | yes | yes | yes | yes | yes | yes | yes | - |
 
 ## Dynamic page patterns
@@ -212,16 +212,16 @@ A `yes` in the route matrix means an artifact exists, not that every placement t
 - App static routes absent from the catalog: `/sensory-studio`.
 - Catalog routes absent from the static app: none.
 - English sitemap routes absent from the catalog: none.
-- Catalog routes absent from the English sitemap: `/brand-lab`, `/og-preview`.
+- Catalog routes absent from the English sitemap: `/brand-lab`, `/og-preview`, `/stats`.
 - Five-locale sitemap routes absent from the catalog: none.
-- Explicit noindex routes still in the sitemap: `/stats`.
+- Explicit noindex routes still in the sitemap: none.
 - English-only routes that still have five catalog artifacts: `/languages`.
 
 Interpretation:
 
 1. `/sensory-studio` is the only static app route with no catalog page. It is explicitly noindex and sitemap-excluded.
 2. `/brand-lab` and `/og-preview` are cataloged but intentionally sitemap-excluded and noindex.
-3. `/stats` is cataloged and translated, but its six sitemap URLs conflict with route-level noindex metadata.
+3. `/stats` is cataloged and translated, but intentionally excluded from the sitemap because its route metadata is noindex.
 4. `/languages` is sitemap-published only in English even though the final catalog contains five locale files for it.
 5. Every route currently published in all five locale variants has a catalog artifact for every locale. Publication parity is possible without inventing new translated routes.
 
@@ -233,8 +233,8 @@ The groups below separate live coupling from migration provenance and historical
 
 | Evidence | Dependency / cutover implication |
 |---|---|
-| `next.config.js:164` | Keeps locale-prefix stripping only in the legacy proxy build mode; native serving modes release those paths to the App Router. |
-| `src/lib/seo/sitemap-routes.mjs:8` | Owns the five proxy prefixes, manufactures locale URLs/hreflang, and keeps `/languages` English-only. |
+| `next.config.js:189` | Keeps locale-prefix stripping only in the legacy proxy build mode; native serving modes release those paths to the App Router. |
+| `src/lib/seo/sitemap-routes.mjs:13` | Owns the five proxy prefixes, manufactures locale URLs/hreflang, and keeps `/languages` English-only. |
 | `src/lib/seo/sitemap-routes.ts:6` | Typed adapter exposes proxy-specific sitemap constants and URL classification. |
 | `src/app/sitemap.xml/route.ts:5` | Publishes locale-prefixed URLs even though the current Next.js app has no native locale route tree. |
 | `scripts/ping-sitemap.mjs:11` | Builds the canonical URL allowlist used to fail closed when deriving changed-route IndexNow submissions; the legacy-named constant now represents the five published native locale prefixes. |
@@ -325,7 +325,7 @@ The groups below separate live coupling from migration provenance and historical
 | `.claude/skills/daily-indexing/SKILL.md:19` | Correctly states that MassTranslate submission/OAuth paths are retired for indexing; keep this negative dependency true. |
 | `docs/runbooks/tools-and-data-sources.md:58` | Primary live runbook for proxy cache, signed-webhook bypass, URL semantics, and remaining GSC/Bing fallbacks. |
 | `docs/runbooks/weekly-funnel-refresh.md:78` | Still contains MassTranslate GSC/Bing synchronization commands and OAuth recovery steps. |
-| `docs/indexing-queue.md:35` | Contains operational and historical references to MassTranslate URL-submission tools. |
+| `docs/indexing-queue.md:44` | Contains operational and historical references to MassTranslate URL-submission tools. |
 | `docs/FUNNEL-DASHBOARD.md:154` | A dated dashboard snapshot names MassTranslate as a prior GSC data source. |
 
 ### App Store submission notes (active)
@@ -338,7 +338,7 @@ The groups below separate live coupling from migration provenance and historical
 
 | Evidence | Dependency / cutover implication |
 |---|---|
-| `docs/SEO-EXPERIMENTS.md:188` | Permanent experiment history for proxy defects, mitigations, and indexing outcomes. |
+| `docs/SEO-EXPERIMENTS.md:221` | Permanent experiment history for proxy defects, mitigations, and indexing outcomes. |
 | `docs/UX-BACKLOG.md:102` | Historical ownership and translation-coverage findings. |
 | `docs/qa-reports/traction-pages-2026-06-06.md:9` | Production evidence for delayed translation, partial coverage, and hydration failures. |
 | `docs/research/eeat-citations-2026-05.md:16` | A dated content-research decision record. |

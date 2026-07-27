@@ -117,6 +117,31 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/4-7-8',
+        destination: '/breathe/4-7-8',
+        permanent: true,
+      },
+      {
+        source: '/box',
+        destination: '/breathe/box',
+        permanent: true,
+      },
+      {
+        source: '/coherent',
+        destination: '/breathe/coherent',
+        permanent: true,
+      },
+      {
+        source: '/physiological-sigh',
+        destination: '/breathe/physiological-sigh',
+        permanent: true,
+      },
+      {
+        source: '/wim-hof',
+        destination: '/breathe/wim-hof',
+        permanent: true,
+      },
+      {
         source: '/how-to-lower-blood-pressure-with-fourfold-deep-breathing/:path*',
         destination: '/for/high-blood-pressure',
         permanent: true,

@@ -29,7 +29,6 @@ export type NativeRouteKind =
   | "structured-use-case"
   | "dynamic-embed";
 
-export type NativeRouteContradiction = "noindex-in-sitemap";
 export type LocalizedRouteHandler = "catch-all" | "explicit";
 export type NativeLinkMode = "native-preview" | "native";
 
@@ -51,11 +50,10 @@ export interface NativeRouteDefinition<
   readonly localizedHandler: LocalizedRouteHandler;
   /** Whether the final preservation snapshot contains all five locale files. */
   readonly catalogAvailable: boolean;
-  /** The current sitemap/public URL contract, separate from native readiness. */
+  /** Whether the public route is available, separate from sitemap inclusion. */
   readonly publicationIntent: LocalePublicationIntent;
   /** Migration state for every locale. Only `cutover-ready` may be published. */
   readonly nativeStatus: LocaleNativeStatus;
-  readonly knownContradiction: NativeRouteContradiction | null;
 }
 
 type PublicationProfile = "all-locales" | "english-only" | "none";
@@ -74,7 +72,6 @@ interface NativeRouteInput<Id extends string, Path extends string> {
   readonly catalogAvailable?: boolean;
   readonly publication?: PublicationProfile;
   readonly translatedStatus?: TranslatedStatusInput;
-  readonly knownContradiction?: NativeRouteContradiction;
 }
 
 function createPublicationIntent(
@@ -163,7 +160,6 @@ function defineRoute<const Id extends string, const Path extends string>(
       input.publication ?? "all-locales",
     ),
     nativeStatus: createNativeStatus(input, kind, catalogAvailable),
-    knownContradiction: input.knownContradiction ?? null,
   });
 }
 
@@ -498,7 +494,6 @@ export const NATIVE_ROUTE_MANIFEST = Object.freeze([
     path: "/stats",
     indexable: false,
     localizedHandler: "explicit",
-    knownContradiction: "noindex-in-sitemap",
     translatedStatus: "cutover-ready",
   }),
   defineRoute({

@@ -8,19 +8,28 @@ Google has no supported submission API for pages like ours, and Bing is covered
 automatically by IndexNow on every production deploy. Do not write new dates into them.
 See the 2026-07-09 entry in `SEO-EXPERIMENTS.md`.
 
-## Current state (as of 2026-07-09, per URL Inspection API)
+## Current state (as of 2026-07-27)
 
-- **Rows tracked**: 331
-- **Indexed by Google**: **305**
-- **Not indexed**: 26 — 15 `Crawled - currently not indexed`, 6 `URL is unknown to Google`,
-  2 `Duplicate, Google chose different canonical`, 2 `Discovered - currently not indexed`,
-  1 `Page with redirect`.
-- The only actionable bucket is `Crawled - currently not indexed` (mostly `ja` and `pt`).
-  Google fetched those pages and declined them; that is a quality judgment, and no amount
-  of submission changes it. Five `*/about/methodology` rows are 308 redirects and should be
-  deleted from this file.
-- **Not found (404)**: 5 → **10** (more variants surfaced; all 10 are caught by the May 5 redirect rule — curl-verified). Validation "Started" in GSC, expected to clear as Google re-crawls.
-- **Next checkpoint**: 2026-05-22 (next weekly Friday refresh). Watch for the 404 count clearing toward 0 as the validation completes.
+- **Rows tracked**: **331**, exactly matching the cleaned canonical sitemap.
+- **GSC Page Indexing report baseline**: **270 indexed / 61 not indexed** in the
+  331-URL cohort after removing six noindex `/stats` variants. The remaining report
+  buckets are 39 `Crawled - currently not indexed`, 8 `Discovered - currently not indexed`,
+  7 `Duplicate without user-selected canonical`, and 7 `Duplicate, Google chose different
+  canonical`.
+- **Urgent canonical regression**: `/es/breathe/belly`, `/ja/breathe/tummo`,
+  `/fr/breathing-visualizer`, and `/de/for/running` currently show
+  `https://www.747live.bet/` as Google's selected canonical. Their live Googlebot HTML is
+  clean and self-canonical; the stored crawls predate the 2026-07-16 native cutover.
+- **Queue cleanup**: six redirected `*/about/methodology` rows were replaced by the six
+  live `/support` variants, and the homepage was normalized to its trailing-slash canonical.
+- **API status**: a full refresh was attempted on 2026-07-27. It completed 28 inspections,
+  confirmed the off-domain `/es/breathe/belly` canonical and cleared that URL's stale
+  indexed marker, then stopped with 22 timed-out in-flight requests and 281 URLs unattempted.
+  The script now bounds each request and opens its failure circuit at 10 errors instead of
+  hanging indefinitely. Unattempted row checkmarks remain the last successful per-URL API
+  snapshot until the endpoint recovers.
+- **Next checkpoint**: 2026-08-10. Recheck the four canonical selections and separate
+  post-native-cutover crawl evidence from the older 39-page crawled-not-indexed bucket.
 
 ## Previous state (as of 2026-05-05)
 
@@ -96,14 +105,14 @@ Re-submitted **148 URLs** to GSC + Bing via the mass-translate Indexing API (`re
 | 3 | https://deepbreathingexercises.com/fr/about/editorial-policy | ✓ | 2026-06-18 | 2026-06-18 |
 | 3 | https://deepbreathingexercises.com/ja/about/editorial-policy | ✓ | 2026-06-18 | 2026-06-18 |
 | 3 | https://deepbreathingexercises.com/pt/about/editorial-policy | ✓ | 2026-06-18 | 2026-06-18 |
-| 1 | https://deepbreathingexercises.com | ✓ |  |  |
+| 1 | https://deepbreathingexercises.com/ | ✓ |  |  |
 | 1 | https://deepbreathingexercises.com/es/1-minute-breathing-exercise | ✓ |  |  |
 | 1 | https://deepbreathingexercises.com/es/2-minute-breathing-exercise | ✓ |  |  |
 | 1 | https://deepbreathingexercises.com/es/4-7-8-breathing-for-insomnia | ✓ | 2026-04-20 | 2026-04-20 |
 | 1 | https://deepbreathingexercises.com/es/4-7-8-breathing-timer | ✓ |  |  |
 | 1 | https://deepbreathingexercises.com/es/5-minute-breathing-exercise | ✓ |  |  |
 | 1 | https://deepbreathingexercises.com/es/breathe/4-7-8 | ✓ |  |  |
-| 1 | https://deepbreathingexercises.com/es/breathe/belly | ✓ |  |  |
+| 1 | https://deepbreathingexercises.com/es/breathe/belly |  |  |  |
 | 1 | https://deepbreathingexercises.com/es/breathe/box | ✓ |  |  |
 | 1 | https://deepbreathingexercises.com/es/breathe/breath-of-fire | ✓ | 2026-04-20 | 2026-04-20 |
 | 1 | https://deepbreathingexercises.com/es/breathe/buteyko | ✓ |  |  |
@@ -135,7 +144,7 @@ Re-submitted **148 URLs** to GSC + Bing via the mass-translate Indexing API (`re
 | 2 | https://deepbreathingexercises.com/de/breathe/wim-hof | ✓ |  |  |
 | 2 | https://deepbreathingexercises.com/es | ✓ |  |  |
 | 2 | https://deepbreathingexercises.com/es/about | ✓ |  |  |
-| 2 | https://deepbreathingexercises.com/es/about/methodology |  | 2026-04-20 | 2026-04-20 |
+| 2 | https://deepbreathingexercises.com/es/support |  |  |  |
 | 2 | https://deepbreathingexercises.com/es/box-breathing-app | ✓ |  |  |
 | 2 | https://deepbreathingexercises.com/es/box-breathing-before-presentation | ✓ | 2026-04-20 | 2026-04-20 |
 | 2 | https://deepbreathingexercises.com/es/breathe | ✓ |  |  |
@@ -181,7 +190,7 @@ Re-submitted **148 URLs** to GSC + Bing via the mass-translate Indexing API (`re
 | 3 | https://deepbreathingexercises.com/de/4-7-8-breathing-timer | ✓ |  |  |
 | 3 | https://deepbreathingexercises.com/de/5-minute-breathing-exercise | ✓ |  |  |
 | 3 | https://deepbreathingexercises.com/de/about | ✓ |  |  |
-| 3 | https://deepbreathingexercises.com/de/about/methodology |  | 2026-04-20 | 2026-04-20 |
+| 3 | https://deepbreathingexercises.com/de/support |  |  |  |
 | 3 | https://deepbreathingexercises.com/de/box-breathing-app | ✓ |  |  |
 | 3 | https://deepbreathingexercises.com/de/box-breathing-before-presentation | ✓ | 2026-04-20 | 2026-04-20 |
 | 3 | https://deepbreathingexercises.com/de/breathe | ✓ |  |  |
@@ -227,7 +236,7 @@ Re-submitted **148 URLs** to GSC + Bing via the mass-translate Indexing API (`re
 | 3 | https://deepbreathingexercises.com/fr/4-7-8-breathing-timer | ✓ |  |  |
 | 3 | https://deepbreathingexercises.com/fr/5-minute-breathing-exercise | ✓ |  |  |
 | 3 | https://deepbreathingexercises.com/fr/about | ✓ |  |  |
-| 3 | https://deepbreathingexercises.com/fr/about/methodology |  | 2026-04-20 | 2026-04-20 |
+| 3 | https://deepbreathingexercises.com/fr/support |  |  |  |
 | 3 | https://deepbreathingexercises.com/fr/box-breathing-app | ✓ |  |  |
 | 3 | https://deepbreathingexercises.com/fr/box-breathing-before-presentation | ✓ | 2026-04-20 | 2026-04-20 |
 | 3 | https://deepbreathingexercises.com/fr/breathe | ✓ |  |  |
@@ -273,7 +282,7 @@ Re-submitted **148 URLs** to GSC + Bing via the mass-translate Indexing API (`re
 | 3 | https://deepbreathingexercises.com/ja/4-7-8-breathing-timer | ✓ |  |  |
 | 3 | https://deepbreathingexercises.com/ja/5-minute-breathing-exercise | ✓ |  |  |
 | 3 | https://deepbreathingexercises.com/ja/about | ✓ |  |  |
-| 3 | https://deepbreathingexercises.com/ja/about/methodology |  | 2026-04-20 | 2026-04-20 |
+| 3 | https://deepbreathingexercises.com/ja/support |  |  |  |
 | 3 | https://deepbreathingexercises.com/ja/box-breathing-app | ✓ |  |  |
 | 3 | https://deepbreathingexercises.com/ja/box-breathing-before-presentation | ✓ | 2026-04-20 | 2026-04-20 |
 | 3 | https://deepbreathingexercises.com/ja/breathe | ✓ |  |  |
@@ -319,7 +328,7 @@ Re-submitted **148 URLs** to GSC + Bing via the mass-translate Indexing API (`re
 | 3 | https://deepbreathingexercises.com/pt/4-7-8-breathing-timer | ✓ |  |  |
 | 3 | https://deepbreathingexercises.com/pt/5-minute-breathing-exercise | ✓ |  |  |
 | 3 | https://deepbreathingexercises.com/pt/about | ✓ | 2026-04-20 | 2026-04-20 |
-| 3 | https://deepbreathingexercises.com/pt/about/methodology |  | 2026-04-20 | 2026-04-20 |
+| 3 | https://deepbreathingexercises.com/pt/support |  |  |  |
 | 3 | https://deepbreathingexercises.com/pt/box-breathing-app | ✓ |  |  |
 | 3 | https://deepbreathingexercises.com/pt/box-breathing-before-presentation | ✓ | 2026-04-20 | 2026-04-20 |
 | 3 | https://deepbreathingexercises.com/pt/breathe | ✓ |  |  |
@@ -364,7 +373,7 @@ Re-submitted **148 URLs** to GSC + Bing via the mass-translate Indexing API (`re
 | 5 | https://deepbreathingexercises.com/4-7-8-breathing-timer | ✓ |  |  |
 | 5 | https://deepbreathingexercises.com/5-minute-breathing-exercise | ✓ |  |  |
 | 5 | https://deepbreathingexercises.com/about | ✓ |  |  |
-| 5 | https://deepbreathingexercises.com/about/methodology | ✓ |  |  |
+| 5 | https://deepbreathingexercises.com/support |  |  |  |
 | 5 | https://deepbreathingexercises.com/box-breathing-app | ✓ |  |  |
 | 5 | https://deepbreathingexercises.com/box-breathing-before-presentation | ✓ |  |  |
 | 5 | https://deepbreathingexercises.com/breathe | ✓ |  |  |

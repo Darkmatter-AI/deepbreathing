@@ -18,6 +18,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-07-27 | [Index Coverage Hygiene + Canonical-Hijack Recovery](#2026-07-27-index-coverage-hygiene--canonical-hijack-recovery) | 🔄 Implemented |
 | 2026-07-22 | [First-Load-JS Webpack Experiment (PR #31) — Production Outage Post-Mortem + Removal](#2026-07-22-first-load-js-webpack-experiment-pr-31--production-outage-post-mortem--removal) | ❌ Failed |
 | 2026-07-21 | [IndexNow Changed-Canonical-URL Submission](#2026-07-21-indexnow-changed-canonical-url-submission) | 🔄 Implemented |
 | 2026-07-20 | [Stop Proxy Cache Warming After Native Translation Cutover](#2026-07-20-stop-proxy-cache-warming-after-native-translation-cutover) | 🔄 Implemented |
@@ -84,13 +85,45 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-01-06 | [Navy SEAL Content Expansion](#2026-01-06-navy-seal-content-expansion) | ❌ Failed |
 | 2026-01-06 | [CTR Title Rewrites (Batch 1)](#2026-01-06-ctr-title-rewrites-batch-1) | ✅ Success |
 
-**Roll-up by status (62 entries):** ✅ 4 Success · ❌ 12 Failed · ⚪ 12 Inconclusive · 🟡 3 Mixed · ⏳ 1 Waiting · 🔄 21 Implemented · 📊 9 Snapshot. *(2026-07-22: +PR #31 webpack experiment ❌ post-mortem (returning-visitor outage; block removed); appstore-branch merge restored the uncommitted 2026-07-18 post-translation migration audit snapshot. 2026-07-21: +changed-canonical-URL IndexNow submission. 2026-07-20: +native-mode proxy cache-warmer guard; +post-migration locale metadata hygiene corrections. 2026-07-19: +FR coherent Bing CTR rewrite; +homepage server-rendered content fix. 2026-07-18 autoresearch cycle 1: settled 5 overdue verdicts — ?duration= hreflang ✅, trailing-slash ❌ superseded, Tummo 🟡, 404 root-cause ❌, crawl hygiene 🟡; +hope-cartel reviews-intent entry. 2026-07-15: +native translation serving migration planning entry. 2026-06-21: audio-v2 rebase folded in the 2026-05-18 Indexing-Recovery Checkpoint snapshot. 2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
+**Roll-up by status (63 entries):** ✅ 4 Success · ❌ 12 Failed · ⚪ 12 Inconclusive · 🟡 3 Mixed · ⏳ 1 Waiting · 🔄 22 Implemented · 📊 9 Snapshot. *(2026-07-27: +index coverage hygiene and canonical-hijack recovery. 2026-07-22: +PR #31 webpack experiment ❌ post-mortem (returning-visitor outage; block removed); appstore-branch merge restored the uncommitted 2026-07-18 post-translation migration audit snapshot. 2026-07-21: +changed-canonical-URL IndexNow submission. 2026-07-20: +native-mode proxy cache-warmer guard; +post-migration locale metadata hygiene corrections. 2026-07-19: +FR coherent Bing CTR rewrite; +homepage server-rendered content fix. 2026-07-18 autoresearch cycle 1: settled 5 overdue verdicts — ?duration= hreflang ✅, trailing-slash ❌ superseded, Tummo 🟡, 404 root-cause ❌, crawl hygiene 🟡; +hope-cartel reviews-intent entry. 2026-07-15: +native translation serving migration planning entry. 2026-06-21: audio-v2 rebase folded in the 2026-05-18 Indexing-Recovery Checkpoint snapshot. 2026-06-15: integration→main merge folded in the home-page trailing-slash hreflang entry; +?duration= nofollow/robots-disallow hreflang fix. 2026-06-14: +"Page with redirect" benign-review snapshot. 2026-06-13: Embed Widget → ❌; +tummo CTR, +owned videos, +404-verification entries.)*
 
 See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of what worked / failed / strategic insights from the first month of experiments.
 
 ---
 
 ## Active Experiments
+
+### 2026-07-27: Index Coverage Hygiene + Canonical-Hijack Recovery
+
+**Context and baseline.** GSC Page Indexing showed 283 indexed and 220 not indexed across all known URLs on 2026-07-27. Restricting the analysis to the live 337-URL sitemap produced a more actionable baseline: **270 indexed / 67 not indexed** (80.1%). The 67 comprised 39 crawled-not-indexed, 13 discovered-not-indexed, 7 duplicate without a user-selected canonical, 7 duplicate where Google chose another canonical, and 1 noindex URL.
+
+Four current sitemap URLs had an urgent off-domain Google-selected canonical of `https://www.747live.bet/`: `/es/breathe/belly`, `/ja/breathe/tummo`, `/fr/breathing-visualizer`, and `/de/for/running`. Live Googlebot fetches on 2026-07-27 were clean, localized, self-canonical, and contained no casino-domain content. Their stored Google crawls were from July 12–14, before the native locale-serving cutover on July 16, so the evidence supports recrawling the corrected native documents rather than rewriting their content.
+
+The audit also found:
+
+- `/stats` plus its five locale variants were noindex yet present in the sitemap.
+- Five historical aliases (`/4-7-8`, `/box`, `/coherent`, `/physiological-sigh`, `/wim-hof`) still returned 404 even though each has an unambiguous current breathing-technique page.
+- The 331-row indexing queue did not equal the sitemap: it retained six redirected methodology URLs and omitted six live support URLs.
+- The status refresher only inspected unchecked rows and only added checkmarks, so it could not detect deindexing or canonical regressions.
+- The two genuinely discovered content URLs (`/de/for/high-blood-pressure` and `/es/breathe/9d-breathwork`) already have server-rendered direct links and structured-list entries on their respective `/for` and `/breathe` hubs. No redundant discovery links are being added.
+
+**Hypothesis.** Aligning sitemap membership with robots intent, repairing exact historical aliases, keeping the monitoring cohort identical to the sitemap, and detecting off-domain canonical selections on every full sweep will remove contradictory crawl signals and surface hijacks early. Requesting a manual recrawl only after the corrected deployment should give Google fresh native documents for the four affected URLs.
+
+**Change.**
+
+1. Exclude `/stats` and all localized variants from the sitemap while keeping the public noindex pages available.
+2. Add permanent exact redirects from the five legacy aliases to their current `/breathe/*` canonicals.
+3. Replace the six stale methodology queue rows with the six live support URLs and normalize the homepage URL.
+4. Make the GSC refresher run a full cohort sweep by default, add a `--pending-only` escape hatch, clear stale indexed markers, summarize coverage states, retain crawl/canonical evidence, and fail nonzero for any off-domain Google canonical.
+5. After production verification, use Search Console's manual URL Inspection request for the four affected pages. The unsupported Google Indexing API remains prohibited.
+
+**Pre-committed success criteria.**
+
+- Immediate release gates: exactly **331** sitemap URLs; no `/stats` variant in the sitemap; all five aliases return a permanent redirect to the intended canonical; queue URL set equals sitemap URL set; monitoring can both add and clear indexed markers; an off-domain canonical makes the monitor fail.
+- By **2026-08-10**: all four affected URLs show either the self-canonical as Google's selected canonical or an indexed verdict, and no new off-domain canonical appears in the 331-URL cohort.
+- Measure the 39-page crawled-not-indexed bucket separately on 2026-08-10. Because 37 of those crawls predate the native cutover, do not infer a content-quality failure or start broad rewrites until post-cutover crawl evidence exists.
+
+**Status:** 🔄 Implementation and local release gates passed on 2026-07-27; production deployment, recrawl requests, and the 2026-08-10 checkpoint are part of the same release workflow.
 
 ### 2026-07-22: First-Load-JS Webpack Experiment (PR #31) — Production Outage Post-Mortem + Removal
 
