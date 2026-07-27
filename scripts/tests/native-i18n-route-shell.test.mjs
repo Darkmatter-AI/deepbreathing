@@ -87,6 +87,28 @@ test("Next redirects preserve proxy behavior and release prefixes only in native
   );
 });
 
+test("legacy technique aliases redirect to their canonical breathing pages in every mode", async () => {
+  const expected = new Map([
+    ["/4-7-8", "/breathe/4-7-8"],
+    ["/box", "/breathe/box"],
+    ["/coherent", "/breathe/coherent"],
+    ["/physiological-sigh", "/breathe/physiological-sigh"],
+    ["/wim-hof", "/breathe/wim-hof"],
+  ]);
+
+  for (const mode of [undefined, "proxy", "native-preview", "native"]) {
+    const redirects = await loadRedirects(mode);
+    for (const [source, destination] of expected) {
+      const redirect = redirects.find((candidate) => candidate.source === source);
+      assert.deepEqual(
+        redirect,
+        { source, destination, permanent: true },
+        `${source} redirect in ${mode ?? "default"} mode`,
+      );
+    }
+  }
+});
+
 test("the route groups keep English URLs stable and give localized pages their own document", async () => {
   const [
     englishLayout,

@@ -73,7 +73,7 @@ test("manifest pins the 60 static routes and dynamic embed exception", () => {
   );
 });
 
-test("publication intent preserves the current 337-URL sitemap contract", () => {
+test("publication intent preserves the complete public route matrix", () => {
   assert.equal(
     STATIC_ROUTES.filter((route) => route.publicationIntent[DEFAULT_LOCALE])
       .length,
@@ -115,7 +115,7 @@ test("publication intent preserves the current 337-URL sitemap contract", () => 
   );
 });
 
-test("manifest records indexability and the existing stats contradiction", () => {
+test("manifest records indexability independently of public route availability", () => {
   assert.deepEqual(
     STATIC_ROUTES.filter((route) => !route.indexable).map(({ path }) => path),
     ["/brand-lab", "/og-preview", "/sensory-studio", "/stats"],
@@ -123,7 +123,6 @@ test("manifest records indexability and the existing stats contradiction", () =>
 
   const stats = getNativeRouteById("stats");
   assert.ok(stats);
-  assert.equal(stats.knownContradiction, "noindex-in-sitemap");
   assert.equal(stats.indexable, false);
   assert.equal(stats.localizedHandler, "explicit");
   assert.equal(getNativeRouteById("about")?.localizedHandler, "explicit");

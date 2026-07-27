@@ -57,13 +57,23 @@ test('sitemap includes translated locale-prefixed URLs when configured', () => {
   );
 });
 
-test('sitemap excludes the internal sensory studio and localized variants', () => {
+test('sitemap excludes every noindex route and localized variants', () => {
   const pathnames = new Set(getEntries().map((entry) => new URL(entry.url).pathname));
 
-  assert.equal(pathnames.has('/sensory-studio'), false);
-  for (const locale of EDGE_PROXY_LOCALE_PREFIXES) {
-    assert.equal(pathnames.has(`/${locale}/sensory-studio`), false);
+  for (const route of ['/og-preview', '/brand-lab', '/sensory-studio', '/stats']) {
+    assert.equal(pathnames.has(route), false, `${route} must not be in the sitemap`);
+    for (const locale of EDGE_PROXY_LOCALE_PREFIXES) {
+      assert.equal(
+        pathnames.has(`/${locale}${route}`),
+        false,
+        `/${locale}${route} must not be in the sitemap`
+      );
+    }
   }
+});
+
+test('sitemap contains the 331 indexable canonical URLs', () => {
+  assert.equal(getEntries().length, 331);
 });
 
 test('sitemap entries include hreflang alternates for all languages', () => {

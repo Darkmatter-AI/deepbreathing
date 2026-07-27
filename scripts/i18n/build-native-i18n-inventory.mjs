@@ -504,7 +504,14 @@ function shouldSkipMarkerPath(relativePath) {
 }
 
 function scanMarkerFiles(repoRoot) {
-  const ignoredDirectories = new Set([".git", ".next", "node_modules", "tmp"]);
+  const ignoredDirectories = new Set([
+    ".agents",
+    ".git",
+    ".next",
+    ".vercel",
+    "node_modules",
+    "tmp",
+  ]);
   const allowedExtensions = new Set([
     ".js",
     ".json",
@@ -521,14 +528,23 @@ function scanMarkerFiles(repoRoot) {
 
   function walk(directory) {
     for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
-      if (entry.isDirectory() && ignoredDirectories.has(entry.name)) continue;
       const absolute = path.join(directory, entry.name);
+      const relative = toPosix(path.relative(repoRoot, absolute));
+      if (
+        entry.isDirectory() &&
+        (
+          ignoredDirectories.has(entry.name) ||
+          entry.name.startsWith(".next.") ||
+          relative.startsWith(".claude/worktrees/")
+        )
+      ) {
+        continue;
+      }
       if (entry.isDirectory()) {
         walk(absolute);
         continue;
       }
       if (!entry.isFile() || !allowedExtensions.has(path.extname(entry.name))) continue;
-      const relative = toPosix(path.relative(repoRoot, absolute));
       if (shouldSkipMarkerPath(relative)) continue;
       const source = fs.readFileSync(absolute, "utf8");
       if (MARKER_RE.test(source)) matches.push(relative);
@@ -715,7 +731,7 @@ export function renderInventory(inventory) {
     ),
     `| **Total** |  | **${sitemapEntries.length}** |`,
     "",
-    "The current multiplier is therefore 56 translated English routes × 5 locale variants + 57 English URLs = 337. `/languages` is the one English-only sitemap route.",
+    "The current multiplier is therefore 55 translated English routes × 5 locale variants + 56 English URLs = 331. `/languages` is the one English-only sitemap route.",
     "",
     "## Excluded, noindex, and English-only routes",
     "",
@@ -730,7 +746,7 @@ export function renderInventory(inventory) {
         return `| ${markdownCode(route.route)} | ${route.robots} | ${route.publication.en ? "included" : "excluded"} | ${localePublication} | ${yesNo(route.catalog)} | ${routeNote(route)} |`;
       }),
     "",
-    "`/stats` is the existing contradiction: its page metadata says noindex, yet the sitemap publishes English plus all five locale URLs. This inventory records the discrepancy but intentionally does not fix it.",
+    "`/stats` remains publicly available in English and all five locales, but its noindex metadata now agrees with its sitemap exclusion.",
     "",
     "## Static route publication matrix",
     "",
@@ -790,7 +806,7 @@ export function renderInventory(inventory) {
     "",
     "1. `/sensory-studio` is the only static app route with no catalog page. It is explicitly noindex and sitemap-excluded.",
     "2. `/brand-lab` and `/og-preview` are cataloged but intentionally sitemap-excluded and noindex.",
-    "3. `/stats` is cataloged and translated, but its six sitemap URLs conflict with route-level noindex metadata.",
+    "3. `/stats` is cataloged and translated, but intentionally excluded from the sitemap because its route metadata is noindex.",
     "4. `/languages` is sitemap-published only in English even though the final catalog contains five locale files for it.",
     "5. Every route currently published in all five locale variants has a catalog artifact for every locale. Publication parity is possible without inventing new translated routes.",
     "",
