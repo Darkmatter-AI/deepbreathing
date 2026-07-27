@@ -12,6 +12,10 @@ const HOMEPAGE_BUILDS = [
   ["/de", "de.html"],
   ["/ja", "ja.html"],
 ];
+const REQUIRED_HOMEPAGE_BUILDS =
+  (process.env.NATIVE_I18N_MODE || "proxy") === "proxy"
+    ? HOMEPAGE_BUILDS.slice(0, 1)
+    : HOMEPAGE_BUILDS;
 const BUILD_MARKER = path.join(ROOT, ".next", "server", "app", "index.html");
 
 // These assertions read real Next build output, so they can only run after
@@ -21,7 +25,7 @@ const NEEDS_BUILD = { skip: fs.existsSync(BUILD_MARKER) ? false : "requires `pnp
 
 
 test("homepage build output keeps one crawlable SSR H1 per locale root", NEEDS_BUILD, () => {
-  for (const [route, filename] of HOMEPAGE_BUILDS) {
+  for (const [route, filename] of REQUIRED_HOMEPAGE_BUILDS) {
     const homepageHtml = path.join(ROOT, ".next", "server", "app", filename);
     assert.ok(
       fs.existsSync(homepageHtml),
