@@ -8,6 +8,7 @@ import { GoogleAnalyticsScript } from "@/components/analytics/GoogleAnalyticsScr
 import { PageViewTracker } from "@/components/analytics/PageViewTracker";
 import { AuthProvider } from "@/components/auth/auth-provider";
 import { SeasonalBanner } from "@/components/home/seasonal-banner";
+import { GOOGLE_ANALYTICS_INLINE_INIT_SCRIPT } from "@/lib/analytics/google-analytics";
 
 const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -30,6 +31,11 @@ export function SiteDocument({
         {/* eslint-disable-next-line @next/next/no-before-interactive-script-outside-document */}
         <Script id="resonance-theme-init" strategy="beforeInteractive">
           {`(function(){try{var storageKey='resonance_theme';var root=document.documentElement;var stored=localStorage.getItem(storageKey);var prefersDark=window.matchMedia('(prefers-color-scheme: dark)').matches;var theme=stored&&stored!=='system'?stored:(prefersDark?'dark':'light');if(theme==='dark'){root.classList.add('dark');}else{root.classList.remove('dark');}root.dataset.theme=theme;}catch(_e){}})();`}
+        </Script>
+        {/* Queue mount-time events before child effects run. The remote script remains production-gated. */}
+        {/* eslint-disable-next-line @next/next/no-before-interactive-script-outside-document */}
+        <Script id="ga4-init" strategy="beforeInteractive">
+          {GOOGLE_ANALYTICS_INLINE_INIT_SCRIPT}
         </Script>
         <GoogleAnalyticsScript />
         <Suspense fallback={null}>
