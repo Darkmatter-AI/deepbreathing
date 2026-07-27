@@ -47,6 +47,10 @@ If any of these change, update this file FIRST, then update FUNNEL-DASHBOARD.md 
 
 **Gotcha:** Window resize via `mcp__Claude_in_Chrome__resize_window` does NOT shrink the rendered viewport below desktop breakpoints (innerWidth stays >1500). Don't try to capture mobile renders this way; capture desktop and zoom into the orb area instead.
 
+**Faster path for totals/channels (no browser):** the `ga-visibility` SA also reaches the GA4 **Data API**. Pattern in `~/automations/deepbreathing-visibility/task/ga_utm.py` on orangepi — POST to `analyticsdata.googleapis.com/v1beta/properties/527524722:runReport` with scope `analytics.readonly`. Use this for users/sessions/channel splits; keep the browser for Explorations.
+
+**Custom channel group `DBE Channels (AI consolidated)`** (id `15333285890`, created 2026-07-27): default channels plus an `AI Assistants` channel at order 2 that ORs GA4's own classification with a Source regex (`chatgpt|openai|perplexity|claude\.ai|anthropic|copilot|gemini\.google|…`). Query it as dimension `sessionCustomChannelGroup:15333285890`. It captures 419 users / 724 sessions over Mar 7–Jul 24 vs 121/195 under the default grouping — the rest was leaking into Referral and Unassigned. Custom channel groups apply **retroactively**; it is not the primary group, so default reports still show the old split.
+
 ### Pull GSC search performance data
 
 **Tool (preferred, durable): `mcp__gsc__search_analytics`** with `siteUrl=sc-domain:deepbreathingexercises.com`. Working since 2026-07-10: the repo's `.mcp.json` (mbp14 + mbp16) points the gsc MCP at `~/.config/dbe-ga-visibility-sa.json` — the `ga-visibility` service account, now an **Owner** of the property. Nothing expires. The old 403 was the previous key (`gsc-service-account.json`, an ungranted SA); if you see 403 again, check which key `.mcp.json` names. `mcp__gsc__index_inspect` and the sitemap tools work too. On orangepi the same data comes from `task/gsc_query.py`.
@@ -77,7 +81,8 @@ The `page=!URL` syntax means "exact URL match." Replace the page URL portion to 
 
 ### Pull Bing Webmaster Tools data
 
-**Tool:** `mcp__mass-translate-backend__sync_bing_performance` then `mcp__mass-translate-backend__get_bing_search_performance`
+**Tool (preferred):** the Bing Webmaster **API key** on orangepi — `~/automations/deepbreathing-visibility/task/.search-credentials` → `BING_WEBMASTER_API_KEY`, called via `GetRankAndTrafficStats` (see `task/search_pull.py`). Durable, no OAuth, returns ~6 months of daily clicks/impressions in one call. Date fields arrive as `/Date(1767168000000-0800)/` — parse with `re.search("Date[(](-?[0-9]+)", raw)`.
+**Gotcha:** `mcp__mass-translate-backend__get_bing_search_performance` **times out** (verified 2026-07-26, every range including a 26-day window). Don't burn calls retrying it; go straight to the API key above.
 **Gotcha:** Bing OAuth was bricked once (May 5) and re-authed. If 401 errors appear, `mcp__mass-translate-backend__start_bing_oauth`.
 
 ### Pull YouTube channel stats
@@ -265,6 +270,12 @@ These have all bitten us before. Document in this file the FIRST time they bite,
 22. **Every Vercel Preview env var is branch-scoped, so a new branch builds with almost no env — and anything requiring env at module scope crashes the build.** All 29 preview vars are pinned to specific branches (`codex/native-i18n`, `agent-test-*`, …); there is no unscoped Preview entry for `BETTER_AUTH_SECRET`, `DATABASE_URL`, `RESEND_API_KEY`. A fresh branch therefore gets none of them, and any module that touches env at import time takes the whole build down during `Collecting page data`. Two instances so far, same root cause: `new Resend()` (fixed by lazy `getResend()`, cb9923d) and `betterAuth()` (fixed by a lazy Proxy, 2026-07-25) — the latter was reached because `src/app/(site-en)/stats/stats-page.tsx` imports `auth`, so Next statically rendered `/stats` at build time. **The failure is cold-cache-dependent, which makes it look flaky**: a warm Next cache skips re-rendering the offending page and the build goes green, so the same commit can pass then fail. `vercel redeploy <dpl_id>` (note: it rejects `--yes`) reproduces it on a cold cache. Rule: never call a client constructor or config factory that reads env at module scope — wrap it in a function or a lazy Proxy. Adding an unscoped Preview secret would also fix the build, but it lets every public preview URL mint sessions against the production DB, so prefer the code fix. (2026-07-25)
 
 23. **A git worktree can have incomplete `node_modules` and silently skew test/typecheck results.** This repo is a pnpm workspace; a worktree created without a fresh install is missing workspace links (`@resonance/audio`, `@better-auth/expo`), which surfaces as `tsc` errors like `Cannot find module '@better-auth/expo'` and as spurious test failures that look like real regressions. `pnpm install --frozen-lockfile` in the worktree fixed both, taking `tsc` from 1 error to clean and the suite from 23 failures to 22. Run it before trusting any local build, typecheck, or test tally in a worktree. (2026-07-25)
+
+24. **GA4 property `527524722` has NO data before 2026-03-07.** The first day with sessions is 2026-03-07 (verified 2026-07-26: a `date`-dimension report for Jan 26–Mar 5 returns zero rows). Any "last 6 months" / YoY request against this property silently returns a short window — say so rather than reporting it as a 6-month figure. Earlier history lives on the deprecated Abiassi property `G-7GG9WVNBBP`. (Jul 26)
+
+25. **GA4 sessions ≈ 1.4–1.7× search-console clicks; that is the metric definition, not a tracking bug.** Verified Mar 7–Jul 24 2026: google/organic 1,463 GA4 sessions vs 868 GSC clicks (1.69×); bing/organic 1,554 vs 1,078 Bing clicks (1.44×). Against **users** GA4 reads 0.86–0.95× clicks, the expected direction (ad blockers, consent, pre-tag bounces). The session inflation comes from the ~7-minute average session: a running or idle breathing timer crosses GA4's 30-minute timeout and re-fires `session_start`. Compare users-to-clicks, never sessions-to-clicks. (Jul 26)
+
+26. **`accounts.google.com` was polluting Referral until 2026-07-27** — 468 sessions from 59 users (7.9 each) — the Google sign-in round-trip counted as a new referral session. Fixed by adding `Referral domain contains accounts.google.com` under Data streams → Configure tag settings → List unwanted referrals. **The exclusion is forward-only**; historical Referral numbers before Jul 27 still contain it, so don't compare Referral across that boundary. (Jul 27)
 
 ---
 
