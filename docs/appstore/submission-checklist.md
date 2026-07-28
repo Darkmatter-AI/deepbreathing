@@ -64,7 +64,7 @@ Status key: ✅ Done | ⏳ Pending | 🔲 Not started
 | 4.4 | GA4 env vars set for EAS production builds | ✅ | Done 2026-07-28: `EXPO_PUBLIC_GA4_MEASUREMENT_ID` (G-53DLCBMRL3, plaintext) and `EXPO_PUBLIC_GA4_MP_API_SECRET` (sensitive) created in the EAS `production` environment. Builds ≤10 shipped with analytics no-oping; build 11 is the first with live GA4. |
 | 4.5 | Ears-on audio parity pass on a real device (TestFlight or dev build) | ⏳ | 2026-07-22: shared `@resonance/audio` engine runs natively (react-native-audio-api). RNAA setTargetAtTime warble found+fixed (8265f7b); Abi confirmed by ear in the simulator that mobile now sounds like the website. Remaining on-device: silent switch, screen lock/background continuity, phone-speaker balance. |
 | 4.6 | Production build: `eas build --platform ios --profile production` | ✅ | Builds 5–10 shipped to TestFlight through 2026-07-19. Builds 11–13 (2026-07-28) all FAILED Apple processing with ITMS-90683 (missing `NSMicrophoneUsageDescription`; react-native-audio-api links mic APIs). Two-layer root cause: (a) EAS packs committed state only, so build 12 shipped without the uncommitted app.json fix — use `EAS_NO_VCS=1` or commit first; (b) the expo-audio plugin's `microphonePermission: false` DELETES the key after `ios.infoPlist` merges, which sank build 13. Fix: purpose string lives in the expo-audio plugin option (62caa39), verified via `npx expo config --type introspect`. Build 14 queued with `--auto-submit`. |
-| 4.7 | Build passes all Apple validations (check build log in EAS dashboard) | ⏳ | Confirm build 14 processes clean in ASC TestFlight |
+| 4.7 | Build passes all Apple validations (check build log in EAS dashboard) | ✅ | Build 14 processed clean in ASC 2026-07-28 23:21 |
 
 ---
 
@@ -157,9 +157,9 @@ Apple requires screenshots for every device size you support. Required sizes (pi
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 12.1 | Upload build to ASC via EAS: `eas submit --platform ios --profile production` | ⏳ | Build 11 auto-submit scheduled 2026-07-28 (submission `14726cde`) |
-| 12.2 | Build appears in ASC under TestFlight | ⏳ | Processing takes 5–30 min after upload |
-| 12.3 | Select build in ASC version page | 🔲 | |
+| 12.1 | Upload build to ASC via EAS: `eas submit --platform ios --profile production` | ✅ | Build 14 uploaded via auto-submit 2026-07-28 |
+| 12.2 | Build appears in ASC under TestFlight | ✅ | Build 14 "Pronta para enviar", distributed to Internal Testers (2 invites) |
+| 12.3 | Select build in ASC version page | ✅ | Build 3 swapped → 14, saved 2026-07-28; "Add for Review" now enabled |
 
 ---
 
