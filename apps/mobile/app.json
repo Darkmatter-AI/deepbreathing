@@ -20,7 +20,7 @@
       "supportsTablet": false,
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false,
-        "NSMicrophoneUsageDescription": "Deep Breathing never records audio and never requests microphone access. This description is required because the app's audio playback engine links a library that references the microphone API.",
+        "NSMicrophoneUsageDescription": "Deep Breathing does not record audio or request microphone access. This key is required because the audio playback engine links a library that references microphone APIs.",
         "UIBackgroundModes": [
           "audio"
         ]
