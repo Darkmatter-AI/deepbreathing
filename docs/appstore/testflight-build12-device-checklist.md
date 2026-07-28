@@ -1,9 +1,9 @@
-# TestFlight Build 11 — Physical Device Checklist
+# TestFlight Build 12 — Physical Device Checklist
 
 Distilled from the three pending validation passes in `PRODUCT-EXPERIMENTS.md`
 (2026-07-11 immersion pass, 2026-07-11 account-sync pass, 2026-07-12 native-sheet pass)
 plus the ears-on audio gate from `submission-checklist.md` 4.5.
-Build 11 = commit `0bb486e`, first build with the native `@resonance/audio` engine AND live GA4.
+Build 12 = commit `0bb486e`, first build with the native `@resonance/audio` engine AND live GA4.
 
 Check each on a physical iPhone. Anything that fails: note it, we triage before App Review.
 
@@ -35,5 +35,5 @@ Check each on a physical iPhone. Anything that fails: note it, we triage before 
 - [ ] Account deletion: initiates in-app, confirmation email arrives
 - [ ] Completion: guest gets Keep Practice receipt; signed-in gets swipe-up saved banner
 
-## Analytics (new in build 11)
+## Analytics (new in build 12)
 - [ ] After a session, events appear in GA4 realtime (property 527524722) — first build where this can work
