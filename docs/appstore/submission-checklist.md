@@ -61,10 +61,10 @@ Status key: ✅ Done | ⏳ Pending | 🔲 Not started
 | 4.1 | `app.json` `version` and `ios.buildNumber` set correctly | ✅ | Version 1.0.0; build 4 queued with remote auto-increment |
 | 4.2 | `ITSAppUsesNonExemptEncryption = false` in `ios.infoPlist` | ✅ | Already set in `app.json` |
 | 4.3 | `PrivacyInfo.xcprivacy` added to iOS target | ✅ | Declared via `ios.privacyManifests` in `app.json` (UserDefaults CA92.1, SystemBootTime 35F9.1, FileTimestamp C617.1, DiskSpace E174.1); Expo generates the manifest at prebuild |
-| 4.4 | GA4 env vars set for EAS production builds | 🔲 | **Blocker for analytics:** `.env` is gitignored and EAS cloud builds only see git-tracked files, so `EXPO_PUBLIC_GA4_MEASUREMENT_ID` / `EXPO_PUBLIC_GA4_MP_API_SECRET` are `undefined` at bundle time and `ga4-mp.ts` silently no-ops every event. Fix before building: `cd apps/mobile && set -a && source .env && set +a && npx eas env:create --environment production --name EXPO_PUBLIC_GA4_MEASUREMENT_ID --value "$EXPO_PUBLIC_GA4_MEASUREMENT_ID" --visibility plaintext --scope project --non-interactive && npx eas env:create --environment production --name EXPO_PUBLIC_GA4_MP_API_SECRET --value "$EXPO_PUBLIC_GA4_MP_API_SECRET" --visibility sensitive --scope project --non-interactive` |
+| 4.4 | GA4 env vars set for EAS production builds | ✅ | Done 2026-07-28: `EXPO_PUBLIC_GA4_MEASUREMENT_ID` (G-53DLCBMRL3, plaintext) and `EXPO_PUBLIC_GA4_MP_API_SECRET` (sensitive) created in the EAS `production` environment. Builds ≤10 shipped with analytics no-oping; build 11 is the first with live GA4. |
 | 4.5 | Ears-on audio parity pass on a real device (TestFlight or dev build) | ⏳ | 2026-07-22: shared `@resonance/audio` engine runs natively (react-native-audio-api). RNAA setTargetAtTime warble found+fixed (8265f7b); Abi confirmed by ear in the simulator that mobile now sounds like the website. Remaining on-device: silent switch, screen lock/background continuity, phone-speaker balance. |
-| 4.6 | Production build: `eas build --platform ios --profile production` | 🔲 | Creates `.ipa` and uploads to EAS |
-| 4.7 | Build passes all Apple validations (check build log in EAS dashboard) | 🔲 | Privacy manifest warnings appear here |
+| 4.6 | Production build: `eas build --platform ios --profile production` | ✅ | Builds 5–10 shipped to TestFlight through 2026-07-19. Build 11 (commit `0bb486e`, first with GA4 vars + native audio engine) queued 2026-07-28 with `--auto-submit`. |
+| 4.7 | Build passes all Apple validations (check build log in EAS dashboard) | ⏳ | Passed for builds ≤10; confirm build 11 log |
 
 ---
 
@@ -72,8 +72,8 @@ Status key: ✅ Done | ⏳ Pending | 🔲 Not started
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 5.1 | 1024×1024 px PNG, no alpha, no rounded corners | ⏳ | ASC applies the mask. Verify `assets/images/icon.png` meets spec |
-| 5.2 | Icon does not contain Apple imagery or simulate iOS UI | ⏳ | Verify |
+| 5.1 | 1024×1024 px PNG, no alpha, no rounded corners | ✅ | Verified 2026-07-28 via `sips`: 1024×1024, hasAlpha: no |
+| 5.2 | Icon does not contain Apple imagery or simulate iOS UI | ✅ | Custom orb artwork |
 
 ---
 
@@ -92,10 +92,10 @@ Apple requires screenshots for every device size you support. Required sizes (pi
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 6.1 | iPhone 6.7" screenshots (min 3, up to 10) | 🔲 | Capture via Simulator or real device |
-| 6.2 | iPhone 6.5" screenshots | 🔲 | Can reuse 6.7" in ASC if dimensions match |
+| 6.1 | iPhone screenshots (min 3, up to 10) | ✅ | 6 marketing shots (1284×2778) uploaded to ASC 2026-07-01 — see listing-FINAL.md |
+| 6.2 | iPhone 6.5" screenshots | ✅ | ASC slot accepted the 6.5" set; covers all sizes |
 | 6.3 | iPad 12.9" screenshots (if `supportsTablet: true`) | ✅ N/A | `supportsTablet: false` — not required |
-| 6.4 | Screenshots do not show status bar with wrong time/signal | 🔲 | Use Simulator's clean status bar |
+| 6.4 | Screenshots do not show status bar with wrong time/signal | ✅ | Composited marketing mockups |
 | 6.5 | App Previews (optional video) | 🔲 | Not required; can skip for v1 |
 
 ---
@@ -123,7 +123,7 @@ Apple requires screenshots for every device size you support. Required sizes (pi
 | 8.1 | App Privacy nutrition label completed in ASC | 🔲 | See app-privacy.md for exact answers |
 | 8.2 | Privacy Policy URL set in ASC | 🔲 | `https://deepbreathingexercises.com/privacy` |
 | 8.3 | Privacy page updated with mobile data section | ✅ | Account, sync, analytics, device features, deletion |
-| 8.4 | Support page created and live | ✅ | Account deletion instructions updated locally; deploy pending |
+| 8.4 | Support page created and live | ✅ | Verified live (HTTP 200) 2026-07-28, incl. /privacy. Prod better-auth + Google social sign-in endpoints also verified live 2026-07-28 |
 
 ---
 
@@ -157,8 +157,8 @@ Apple requires screenshots for every device size you support. Required sizes (pi
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 12.1 | Upload build to ASC via EAS: `eas submit --platform ios --profile production` | 🔲 | Requires Step 3.4 complete |
-| 12.2 | Build appears in ASC under TestFlight | 🔲 | Processing takes 5–30 min |
+| 12.1 | Upload build to ASC via EAS: `eas submit --platform ios --profile production` | ⏳ | Build 11 auto-submit scheduled 2026-07-28 (submission `14726cde`) |
+| 12.2 | Build appears in ASC under TestFlight | ⏳ | Processing takes 5–30 min after upload |
 | 12.3 | Select build in ASC version page | 🔲 | |
 
 ---

@@ -99,13 +99,17 @@ Same as listing.md, with ONE correction:
 - Release: **Manual release** (hold until you approve) for the first submission
 
 ## Review notes (paste into ASC) — NO demo account needed
+
+> ⚠️ SUPERSEDED 2026-07-28: v1 now ships optional Apple/Google sign-in + sync. Use the
+> review notes in `submission-checklist.md` §13 (verified against code 2026-07-22), which
+> disclose the optional sign-in, email-confirmed account deletion, and the local-content
+> WKWebView. The paragraph below predates the account work — do not paste it.
+
 ```
-This app requires no account or sign-in. All features (all breathing modes, audio, haptics,
-timer, local stats, dark/light mode) are fully available to any user immediately on launch.
-No demo credentials are needed. The app renders bundled local UI in an embedded view and does
-not load any external website or allow web navigation.
+[superseded — see submission-checklist.md §13]
 ```
-Leave the ASC "Sign-in required" toggle OFF and the demo username/password fields empty.
+Leave the ASC "Sign-in required" toggle OFF and the demo username/password fields empty
+(sign-in is optional; reviewers can use Sign in with Apple).
 
 ## Screenshots (phone-only v1, no iPad set)
 
