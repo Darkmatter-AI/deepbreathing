@@ -26,7 +26,7 @@ Check each on a physical iPhone. Anything that fails: note it, we triage before 
 ## Accounts & sync
 - [ ] Guest practice works with zero sign-in friction
 - [ ] Apple sign-in completes; portrait/deterministic orb replaces guest icon immediately
-- [ ] Google sign-in completes (real 4-color G; first page is origin.deepbreathingexercises.com — expected)
+- [ ] Google sign-in completes (real 4-color G; first page is the app's own auth subdomain, then Google — expected)
 - [ ] Guest sessions migrate into the account after sign-in
 - [ ] Web → phone hydration: minutes/sessions/streak match the website
 - [ ] Phone → web hydration: complete a session on phone, appears on web
