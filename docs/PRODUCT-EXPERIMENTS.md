@@ -28,7 +28,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 | 2026-07-12 | [TestFlight native-sheet and practice-identity pass](#2026-07-12-testflight-native-sheet-and-practice-identity-pass) | 🔄 Implemented locally — physical build validation pending |
 | 2026-07-11 | [TestFlight immersion and control pass — native audio, draggable modes, completion parity](#2026-07-11-testflight-immersion-and-control-pass--native-audio-draggable-modes-completion-parity) | 🔄 Implemented locally — physical build validation pending |
 | 2026-07-11 | [Account-based cross-device practice sync — Apple-first acquisition](#2026-07-11-account-based-cross-device-practice-sync--apple-first-acquisition) | 🔄 Implemented locally — TestFlight + production validation pending |
-| 2026-07-10 | [Keep Your Practice (`keep_practice`) — gain-framed receipt sheet, phase 1](#2026-07-10-keep-your-practice-keep_practice--gain-framed-receipt-sheet-phase-1) | 🔄 Implemented — PR [#41](https://github.com/Darkmatter-AI/deepbreathing/pull/41); first read once ≥150 prompt-shown (~2wk post-deploy) |
+| 2026-07-10 | [Keep Your Practice (`keep_practice`) — gain-framed receipt sheet, phase 1](#2026-07-10-keep-your-practice-keep_practice--gain-framed-receipt-sheet-phase-1) | ❌ **Failed** (verdict 2026-08-03): 8.37% intent at 203 users; rollback to Prompt C implemented locally |
 | 2026-06-26 | [Non-blocking signup banner (`loss_aversion_banner`) — top-anchored notification](#2026-06-26-non-blocking-signup-banner-loss_aversion_banner--top-anchored-notification) | ❌ **Failed** (verdict 2026-07-10, early per impressions clause): intent 9.3% vs 13.8% AND retention 40% vs 50% — **superseded by `keep_practice` (PR #41), which is the revert-plus** |
 | 2026-06-21 | [/stats "Your practice" — retention surface (breath garden + stale-streak reframe)](#2026-06-21-stats-page--streak-calendar--session-stats-for-signed-in-users) | 🔄 Implemented |
 | 2026-06-14 | [Conversion Prompt C (loss_aversion), 100% challenger](#2026-06-14-conversion-prompt-c-loss_aversion-100-challenger) | 🔄 Implemented |
@@ -171,7 +171,13 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 
 **Measure-after:** first read at ≥150 prompt-shown or +14 days post-deploy, whichever first; verdict +21 days, or early once a boundary is crossed (≥16% or ≤10%). Rollback lever: `ACTIVE_CHALLENGER = "loss_aversion"` (Prompt C modal).
 
-**Status:** 🔄 Implemented — PR #41 open; not yet deployed to production.
+**Night Shift verdict (2026-08-03):** ❌ **Failed.** Direct GA4 reads through the mature cutoff of 2026-08-01 report 17 signup-completed users from 203 prompt-shown users for `keep_practice`: **8.37% intent**. This is below both the 13.8% Failed boundary and the early-verdict boundary of 10%. The two latest matched weeks were 4/71 (5.63%) and 6/88 (6.82%). Production-account signups declined across three matched mature windows from 8 to 6 to 3, and first ledger activation declined from 11 to 7 to 3. The intent boundary alone settles the verdict; no retention interpretation is needed.
+
+**Local rollback:** Restores the pre-registered Prompt C modal by setting `ACTIVE_CHALLENGER` to `loss_aversion` at 100% and bumping the storage key so returning `keep_practice` visitors re-bucket. This is an unshipped Night Shift rollback. It changes no auth mechanics or event names.
+
+**Rollback measurement:** After any authorized deployment, confirm new prompt and signup events carry `variant=loss_aversion`. Read again after 150 prompt-shown users and the normal two-day GA4 lag. Primary metric: prompt-shown-to-signup intent, compared with the post-May-4 pooled modal baseline of 10.8%; 13.8% remains Prompt C's best observed target, not the neutral baseline. Guardrails: weekly production-account signups return to the 4–7 baseline, and viewed-to-start or start-to-end does not decline by more than 10% relative.
+
+**Status:** ❌ Failed; Prompt C rollback approved for merge on 2026-08-03.
 
 ---
 

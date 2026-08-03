@@ -13,7 +13,7 @@ const RESONANCE = path.join(ROOT, "src", "components", "resonance", "Resonance.t
 
 const read = (p) => fs.readFileSync(p, "utf8");
 
-test("variant.ts: loss_aversion_banner is the active challenger at 100% share", () => {
+test("variant.ts: loss_aversion is the active challenger at 100% share", () => {
   const src = read(VARIANT);
 
   assert.match(
@@ -21,12 +21,11 @@ test("variant.ts: loss_aversion_banner is the active challenger at 100% share", 
     /export type ConversionVariant =[^;]*"loss_aversion_banner"/,
     "ConversionVariant union should include loss_aversion_banner (the shipped non-blocking banner)"
   );
-  // Deliberately NOT pinned to a specific challenger. loss_aversion_banner got a
-  // Failed verdict on 2026-07-10 and was swapped for keep_practice, and pinning the
-  // name here just means this test breaks on every experiment. Assert instead that
-  // whatever is active is a real member of the union.
+  // Pin the pre-registered rollback. Change this only after a later measured
+  // experiment selects a new active challenger.
   const active = src.match(/export const ACTIVE_CHALLENGER:\s*ConversionVariant\s*=\s*"([^"]+)"/);
   assert.ok(active, "ACTIVE_CHALLENGER should be declared with an explicit variant");
+  assert.equal(active[1], "loss_aversion", "the failed keep_practice variant should roll back to Prompt C");
   const union = [...src.matchAll(/\|\s*"([a-z_]+)"/g)].map((m) => m[1]);
   assert.ok(
     union.includes(active[1]),
@@ -52,16 +51,12 @@ test("variant.ts: loss_aversion_banner is the active challenger at 100% share", 
   );
 });
 
-test("variant.ts: storage key carries a version suffix so a challenger swap re-buckets returning visitors", () => {
+test("variant.ts: rollback storage key re-buckets returning visitors", () => {
   const src = read(VARIANT);
-  // The version number is intentionally not pinned — it gets bumped on every
-  // challenger swap (v3 -> v4 on the 2026-07-10 keep_practice ship). What matters
-  // is that a suffix exists, so returning visitors re-draw instead of keeping a
-  // stale assignment to a retired variant.
   assert.match(
     src,
-    /const VARIANT_KEY\s*=\s*"resonance_conversion_variant_v\d+"/,
-    "VARIANT_KEY must carry a _v<n> suffix that is bumped whenever ACTIVE_CHALLENGER changes"
+    /const VARIANT_KEY\s*=\s*"resonance_conversion_variant_v5"/,
+    "the rollback must bump the v4 key so returning keep_practice visitors re-bucket"
   );
   // The active key const must not still be the un-bumped key.
   assert.doesNotMatch(
