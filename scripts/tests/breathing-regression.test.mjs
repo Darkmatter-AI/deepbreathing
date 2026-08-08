@@ -126,6 +126,23 @@ test("mobile: outer ring follows the ball slowly and returns slower", () => {
   assert.match(exp, /ringRef=\{ringLayerRef\}/, "ring layer wired into the visualizer");
 });
 
+test("mobile: pace slider emits haptic ticks on position change", () => {
+  // The PaceSlider onChange wrapper fires 'pace_haptic' through the onEvent
+  // bridge when the slider position changes by at least one step (0.05).
+  assert.match(exp, /'pace_haptic'/);
+  assert.match(exp, /pace_haptic/, "pace_haptic event name appears in BreathingExperience");
+  assert.match(exp, /paceHapticLastPosRef/, "tracks last emitted slider position");
+  assert.match(exp, /paceHapticLastTimeRef/, "throttles to ~1 per 35 ms");
+  assert.match(exp, /SLIDER_STEP/, "step threshold guard present");
+  assert.match(exp, /navigator\.vibrate\?\.\(5\)/, "web vibrate fallback (gentle 5ms)");
+});
+
+test("mobile: index.tsx handles pace_haptic with Haptics.selectionAsync", () => {
+  const idx = read("apps/mobile/src/app/index.tsx");
+  assert.match(idx, /'pace_haptic'/);
+  assert.match(idx, /Haptics\.selectionAsync\(\)\.catch/, "dispatches selection haptic for pace ticks");
+});
+
 // ---------------------------------------------------------------------------
 // DESKTOP — the website's resonance experience
 // ---------------------------------------------------------------------------

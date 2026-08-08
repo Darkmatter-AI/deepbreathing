@@ -256,6 +256,10 @@ export default function HomeScreen() {
       firePhaseHaptic();
       return;
     }
+    if (name === 'pace_haptic') {
+      Haptics.selectionAsync().catch(() => {});
+      return;
+    }
     if (name === 'settings_open') {
       setSettingsOpen(params?.open === true);
       return;

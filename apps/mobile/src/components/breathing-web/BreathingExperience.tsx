@@ -923,6 +923,36 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   // to re-anchor phaseStartRef without a scale jump.
   const lastPhaseDurationRef = useRef(0);
 
+  // Haptic tick for the speed slider — fires only when the slider position
+  // actually changes by at least one step (0.05), throttled to ~1 per 35 ms
+  // so fast drags don't spam.  Emitted via the onEvent bridge so the native
+  // host can fire Haptics.selectionAsync() for tactile "adapting on the go".
+  const paceHapticLastPosRef = useRef<number>(multiplierToSlider(DEFAULT_SPEED_MULTIPLIER));
+  const paceHapticLastTimeRef = useRef<number>(0);
+
+  const handlePaceSliderChange = useCallback(
+    (newMultiplier: number) => {
+      setSpeedMultiplier(newMultiplier);
+      const pos = multiplierToSlider(newMultiplier);
+      const now = performance.now();
+      if (
+        Math.abs(pos - paceHapticLastPosRef.current) >= SLIDER_STEP &&
+        now - paceHapticLastTimeRef.current >= 35
+      ) {
+        paceHapticLastPosRef.current = pos;
+        paceHapticLastTimeRef.current = now;
+        if (typeof __DEV__ !== 'undefined' && __DEV__) {
+          console.log('[pace_haptic] tick at pos', pos.toFixed(2), 'mult', newMultiplier.toFixed(2));
+        }
+        onEvent?.('pace_haptic', { value: newMultiplier });
+        if (!isNativeApp) {
+          navigator.vibrate?.(5);
+        }
+      }
+    },
+    [isNativeApp, onEvent],
+  );
+
   // --- The Loop ---
   const animate = useCallback((time: number) => {
     if (!isRunning) return;
@@ -1522,7 +1552,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
           <div className="pointer-events-auto w-full max-w-[12rem]">
             <PaceSlider
               value={speedMultiplier}
-              onChange={setSpeedMultiplier}
+              onChange={handlePaceSliderChange}
               accent={themeColor}
               minimal
             />
@@ -1590,7 +1620,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
                 </div>
                 <PaceSlider
                   value={speedMultiplier}
-                  onChange={setSpeedMultiplier}
+                  onChange={handlePaceSliderChange}
                   accent={themeColor}
                 />
               </div>
