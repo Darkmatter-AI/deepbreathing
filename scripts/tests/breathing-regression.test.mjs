@@ -16,6 +16,10 @@ const DESKTOP = path.join(ROOT, "src/components/resonance");
 
 const read = (p) => fs.readFileSync(path.join(ROOT, p), "utf8");
 
+// Shared pacing source — single source of truth for the slider mapping and
+// phase-duration math (used by both mobile and desktop).
+const sharedPacing = read("packages/domain/src/pacing.ts");
+
 // ---------------------------------------------------------------------------
 // MOBILE — breathing-web (the iOS app's web-parity experience)
 // ---------------------------------------------------------------------------
@@ -26,12 +30,15 @@ const viz = read("apps/mobile/src/components/breathing-web/components/Visualizer
 const pacing = read("apps/mobile/src/components/breathing-web/pacing.ts");
 
 test("mobile: speed slider — LEFT = slower, RIGHT = faster, default centered", () => {
-  assert.match(pacing, /multiplierToSlider = /);
-  assert.match(pacing, /sliderToMultiplier = /);
-  assert.match(pacing, /SLIDER_MID = 1\.25/, "centered default position value");
+  // The pacing contract now lives in the shared domain package.
+  assert.match(sharedPacing, /multiplierToSlider = /);
+  assert.match(sharedPacing, /sliderToMultiplier = /);
+  assert.match(sharedPacing, /SLIDER_MID = 1\.25/, "centered default position value");
   // left end -> slowest (2x multiplier), right end -> fastest (0.5x)
-  assert.match(pacing, /return m >= 1 \? 2 - 0\.75 \* m : 2\.75 - 1\.5 \* m;/, "left=slow, right=fast map");
-  assert.match(pacing, /speedOf = \(multiplier: number\): number => 1 \/ multiplier/, "label reads as speed");
+  assert.match(sharedPacing, /return m >= 1 \? 2 - 0\.75 \* m : 2\.75 - 1\.5 \* m;/, "left=slow, right=fast map");
+  assert.match(sharedPacing, /speedOf = \(multiplier: number\): number => 1 \/ multiplier/, "label reads as speed");
+  // Mobile pacing.ts is a thin re-export from the shared source.
+  assert.match(pacing, /from '@resonance\/domain'/, "mobile pacing re-exports from domain");
   // the slider input uses the mapping and a 0.05 step so the default centers
   assert.match(exp, /const sliderValue = multiplierToSlider\(value\);/);
   assert.match(exp, /value=\{sliderValue\}/);
@@ -50,20 +57,21 @@ test("mobile: ONE speed measure — no per-phase sliders, no toggle pill", () =>
 });
 
 test("mobile: speed scales every phase duration (animation + cues)", () => {
-  const helper = read("apps/mobile/src/components/breathing-web/pacing.ts");
-  assert.match(helper, /phaseDurationMs/);
-  assert.match(helper, /\(pattern\.inhale \* speed\) \* 1000/);
-  assert.match(helper, /\(pattern\.holdIn \* speed\) \* 1000/);
-  assert.match(helper, /\(pattern\.exhale \* speed\) \* 1000/);
-  assert.match(helper, /\(pattern\.holdOut \* speed\) \* 1000/);
+  // Phase-duration math lives in the shared domain package.
+  assert.match(sharedPacing, /phaseDurationMs/);
+  assert.match(sharedPacing, /\(pattern\.inhale \* speed\) \* 1000/);
+  assert.match(sharedPacing, /\(pattern\.holdIn \* speed\) \* 1000/);
+  assert.match(sharedPacing, /\(pattern\.exhale \* speed\) \* 1000/);
+  assert.match(sharedPacing, /\(pattern\.holdOut \* speed\) \* 1000/);
   // component uses the helper for the animation loop
   assert.match(exp, /phaseDurationMs\(BreathingPhase\.Inhale, pattern, speedMultiplier\)/);
 });
 
 test("mobile: live speed change mid-phase is progress-preserving (no orb jump)", () => {
-  assert.match(pacing, /remapPhaseStartMs/);
-  assert.match(pacing, /progressFraction = Math\.min\(elapsed \/ prevPhaseDurationMs, 1\)/);
-  assert.match(pacing, /nowMs - progressFraction \* newDuration/);
+  // Remap logic lives in the shared domain package.
+  assert.match(sharedPacing, /remapPhaseStartMs/);
+  assert.match(sharedPacing, /progressFraction = Math\.min\(elapsed \/ prevPhaseDurationMs, 1\)/);
+  assert.match(sharedPacing, /nowMs - progressFraction \* newDuration/);
   assert.match(exp, /phaseStartRef\.current = remapPhaseStartMs\(/);
 });
 
@@ -128,12 +136,17 @@ const desktopPb = read("src/components/resonance/components/ParticleBackground.t
 test("desktop: single speed slider — LEFT = slower, RIGHT = faster, default centered", () => {
   assert.match(resonance, /const \[speedMultiplier, setSpeedMultiplier\] = useState/);
   assert.match(resonance, /type="range"/);
-  // same inverted mapping as mobile
-  assert.match(resonance, /multiplierToSlider = /);
-  assert.match(resonance, /sliderToMultiplier = /);
+  // Desktop imports the shared mapping from @resonance/domain — no inline definitions.
+  assert.match(resonance, /import \{ multiplierToSlider, sliderToMultiplier \} from '@resonance\/domain'/,
+    "desktop imports slider fns from shared domain package");
+  // Still uses them at the call site (the contract pins the wiring, not the
+  // definition location).
   assert.match(resonance, /value=\{multiplierToSlider\(speedMultiplier\)\}/);
   assert.match(resonance, /onChange=\{\(e\) => setSpeedMultiplier\(sliderToMultiplier\(parseFloat\(e\.target\.value\)\)\)/);
   assert.match(resonance, /step="0\.05"/, "0.05 step keeps the centered default on-grid");
+  // Verify the mapping lives in the shared source.
+  assert.match(sharedPacing, /multiplierToSlider = /, "shared source defines multiplierToSlider");
+  assert.match(sharedPacing, /sliderToMultiplier = /, "shared source defines sliderToMultiplier");
 });
 
 test("desktop: speed scales the animation phases", () => {

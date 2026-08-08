@@ -8,6 +8,7 @@ import { Volume2, VolumeX, Eye, EyeOff, Activity, Waves, Wind, Sun, Moon, Turtle
 import { BreathingPhase, ModeName, AIRecommendation, ProtocolPhase, ProtocolState } from './types';
 import { BREATHING_PATTERNS, DEFAULT_SPEED_MULTIPLIER, WIM_HOF_PROTOCOL, modeToSlug } from './constants';
 import { AudioService } from '@resonance/audio';
+import { multiplierToSlider, sliderToMultiplier } from '@resonance/domain';
 import Visualizer from './components/Visualizer';
 import { createRuntimePhraseResolver, detectRuntimeLocale, RuntimePhraseKey } from './runtime-phrases';
 import { LanguageSwitcherInline } from '@/components/language-switcher';
@@ -118,20 +119,7 @@ const toRgba = (hex: string, alpha: number) => {
   return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 };
 
-// Speed-slider mapping — LEFT = SLOWER, RIGHT = FASTER, DEFAULT CENTERED.
-// The duration-multiplier range [0.5, 2.0] is not symmetric around 1.0, so the
-// slider position is mapped piecewise-linearly:
-//   position 0.5 (far left)  -> multiplier 2.0 (slowest)
-//   position 1.25 (middle)   -> multiplier 1.0 (default, knob centered)
-//   position 2.0 (far right) -> multiplier 0.5 (fastest)
-const multiplierToSlider = (multiplier: number): number => {
-  const m = Math.min(2, Math.max(0.5, multiplier));
-  return m >= 1 ? 2 - 0.75 * m : 2.75 - 1.5 * m;
-};
-const sliderToMultiplier = (sliderValue: number): number => {
-  const v = Math.min(2, Math.max(0.5, Number(sliderValue) || 1));
-  return v <= 1.25 ? 2 - (4 / 3) * (v - 0.5) : 1 - (2 / 3) * (v - 1.25);
-};
+
 
 const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMode, immersive, snowMode = false, forcedTheme, backgroundVariant = 'default', embedMode = false, noMobileBottomPad = false, locale, localizedRoutePaths, modeDisplayName, routeClientMessages }) => {
   const router = useRouter();
