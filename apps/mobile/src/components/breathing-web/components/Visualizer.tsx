@@ -44,9 +44,12 @@ interface VisualizerProps {
   /** Applied to the outer ring's own layer, which the host translates to
    *  slowly chase the ball (lagging follower). */
   ringRef?: React.RefObject<HTMLDivElement | null>;
+  /** Session wall-clock progress 0..1 — drives the dot travelling the ring.
+   *  When null the dot is hidden (open-ended session / not running). */
+  sessionProgress?: number | null;
 }
 
-const Visualizer: React.FC<VisualizerProps> = ({ scale, color, label, instructions, isRunning, onClick, dragRef, ringRef }) => {
+const Visualizer: React.FC<VisualizerProps> = ({ scale, color, label, instructions, isRunning, onClick, dragRef, ringRef, sessionProgress }) => {
   const blobScale = 0.6 + scale * 0.4;
   const glowScale = 0.65 + scale * 0.5;
 
@@ -81,9 +84,27 @@ const Visualizer: React.FC<VisualizerProps> = ({ scale, color, label, instructio
     () => ({
       borderColor: `${color}55`,
       transform: 'scale(1.08)',
-      animation: 'morph 30s ease-in-out infinite'
     }),
     [color]
+  );
+
+  // Session-progress dot: rides the ring clockwise from 12 o'clock.
+  // Placed inside the scaled ring-border div so it stays on the border edge.
+  // Hidden when sessionProgress is null (open-ended / not running).
+  const showDot = sessionProgress != null;
+  const dotAngle = (sessionProgress ?? 0) * 2 * Math.PI;
+  const dotStyle = useMemo(
+    () => ({
+      left: `calc(50% + ${50 * Math.sin(dotAngle)}% - 3px)`,
+      top: `calc(50% - ${50 * Math.cos(dotAngle)}% - 3px)`,
+      width: '6px',
+      height: '6px',
+      backgroundColor: color,
+      boxShadow: `0 0 7px ${color}, 0 0 16px ${color}44`,
+      opacity: showDot ? 0.7 : 0,
+      transition: 'opacity 300ms',
+    }),
+    [color, dotAngle, showDot],
   );
 
   return (
@@ -100,7 +121,11 @@ const Visualizer: React.FC<VisualizerProps> = ({ scale, color, label, instructio
         <div
           className="absolute inset-0 rounded-full border opacity-30"
           style={ringStyle}
-        />
+        >
+          {/* Session-progress dot — travels clockwise along the ring border.
+              Hidden for open-ended (no-duration) sessions. */}
+          <span data-session-dot aria-hidden className="absolute rounded-full will-change-[left,top]" style={dotStyle} />
+        </div>
       </div>
 
       {/* Draggable ball assembly: glow + orb + overlay content move together.

@@ -143,6 +143,22 @@ test("mobile: index.tsx handles pace_haptic with Haptics.selectionAsync", () => 
   assert.match(idx, /Haptics\.selectionAsync\(\)\.catch/, "dispatches selection haptic for pace ticks");
 });
 
+test("mobile: session-progress dot rides the ring with angle math (cos/sin)", () => {
+  // Visualizer receives sessionProgress and computes the dot position with trig.
+  assert.match(viz, /sessionProgress/, "Visualizer accepts sessionProgress prop");
+  assert.match(viz, /Math\.sin\(dotAngle\)/, "dot angle uses sin for x position");
+  assert.match(viz, /Math\.cos\(dotAngle\)/, "dot angle uses cos for y position");
+  assert.match(viz, /showDot/, "dot visibility gated on showDot");
+  // The dot is a span inside the ring-border div.
+  assert.match(viz, /Session-progress dot/, "dot element documented inside ring layer");
+  // BreathingExperience computes session progress in the animate loop.
+  assert.match(exp, /setSessionProgress/, "sessionProgress set in animate loop");
+  assert.match(exp, /Date\.now\(\) - sessionClockStartRef\.current/, "wall-clock elapsed time");
+  assert.match(exp, /selectedDuration/, "progress fraction uses selectedDuration");
+  // progress prop stays at 0 (not rewired for per-phase progress).
+  assert.match(exp, /progress=\{0\}/, "progress prop pinned to 0");
+});
+
 // ---------------------------------------------------------------------------
 // DESKTOP — the website's resonance experience
 // ---------------------------------------------------------------------------

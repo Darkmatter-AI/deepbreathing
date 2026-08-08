@@ -369,6 +369,57 @@ async function main() {
 
     await ctx2.close();
 
+    // ──────────────────────────────────────────────────────────────────────
+    // CONTEXT 3 — Test 9: Session-clock dot on the outer ring
+    // ──────────────────────────────────────────────────────────────────────
+    console.log('\n[smoke] 9. Session-clock dot on the outer ring');
+
+    const ctx3 = await browser.newContext({ viewport: VIEWPORT });
+    const page3 = await setupPage(ctx3);
+
+    // 9a: dot hidden before a session starts (no session clock)
+    const dotBefore = await page3.evaluate(() => {
+      const dot = document.querySelector('[data-session-dot]');
+      return dot ? getComputedStyle(dot).opacity : null;
+    });
+    check('9a: session dot hidden before session (opacity 0)', () => {
+      assert.ok(dotBefore !== null, 'dot element missing');
+      assert.equal(dotBefore, '0', `expected opacity 0, got ${dotBefore}`);
+    });
+
+    await clickOrb(page3, 'Start Session');
+    await page3.waitForTimeout(1500);
+
+    // 9b: dot visible during a session with a fixed duration
+    const dot1 = await page3.evaluate(() => {
+      const dot = document.querySelector('[data-session-dot]');
+      if (!dot) return null;
+      const r = dot.getBoundingClientRect();
+      return { opacity: getComputedStyle(dot).opacity, x: r.x, y: r.y };
+    });
+    check('9b: session dot visible and positioned on the ring during session', () => {
+      assert.ok(dot1, 'dot element missing during session');
+      assert.equal(dot1.opacity, '0.7', `expected opacity 0.7, got ${dot1.opacity}`);
+      assert.ok(dot1.x > 0 && dot1.y > 0, `dot off-screen: ${dot1.x},${dot1.y}`);
+    });
+
+    // 9c: dot travels clockwise — position changes ~1.5s later
+    await page3.waitForTimeout(1500);
+    const dot2 = await page3.evaluate(() => {
+      const dot = document.querySelector('[data-session-dot]');
+      if (!dot) return null;
+      const r = dot.getBoundingClientRect();
+      return { x: r.x, y: r.y };
+    });
+    check('9c: dot position changes over ~1.5s (clockwise travel)', () => {
+      assert.ok(dot2, 'dot missing on second sample');
+      const moved = Math.abs(dot2.x - dot1.x) + Math.abs(dot2.y - dot1.y);
+      assert.ok(moved > 2, `dot barely moved: ${moved.toFixed(1)}px`);
+    });
+
+    await ctx3.close();
+
+
     // ── Summary ──────────────────────────────────────────────────────────
     console.log(`\n[smoke] ───────────────────────────────────────────`);
     console.log(`[smoke] Results: ${passed} passed, ${failed} failed`);

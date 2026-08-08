@@ -278,6 +278,9 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
 
   // Animation State
   const [scale, setScale] = useState(0);
+  // Session clock 0..1 for the ring dot (wall-clock; reaches the top when the
+  // chosen duration elapses). Frozen while paused, reset on stop/complete.
+  const [sessionProgress, setSessionProgress] = useState(0);
   const [runtimeLocale] = useState(locale);
   const runtimePhrases = useMemo(() => createRuntimePhraseResolver(runtimeLocale), [runtimeLocale]);
   const [instruction, setInstruction] = useState(() => runtimePhrases.resolve('session.ready_to_start').text);
@@ -793,6 +796,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
       setInstructionKey('session.ready_to_start');
       endSession('mode_switched', sessionSeconds, true);
       setScale(0);
+      setSessionProgress(0);
       audio.stopDrone();
       audio.stopPinkNoise();
       audio.stopBinaural();
@@ -896,6 +900,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   const handleStop = () => {
     const audio = getAudioService();
     setIsRunning(false);
+    setSessionProgress(0);
     setIsProtocolMode(false);
     setPhase(BreathingPhase.Idle);
     setProtocolState({
@@ -956,6 +961,13 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   // --- The Loop ---
   const animate = useCallback((time: number) => {
     if (!isRunning) return;
+
+    // Session dot: wall-clock progress toward the chosen duration.
+    if (typeof selectedDuration === 'number' && selectedDuration > 0 && sessionClockStartRef.current > 0) {
+      setSessionProgress(
+        Math.min(Math.max((Date.now() - sessionClockStartRef.current) / 1000 / selectedDuration, 0), 1),
+      );
+    }
 
     // Update 8D Spatial Audio Position
     const audio = getAudioService();
@@ -1048,7 +1060,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     lastPhaseDurationRef.current = currentPhaseDuration;
 
     requestRef.current = requestAnimationFrame(animate);
-  }, [activeMode, getAudioService, getSafePhrase, isRunning, phase, phaseDurationMs, playPhaseCue, setInstructionKey, speedMultiplier]);
+  }, [activeMode, getAudioService, getSafePhrase, isRunning, phase, phaseDurationMs, playPhaseCue, selectedDuration, setInstructionKey, speedMultiplier]);
 
   // --- Wim Hof Protocol Animation ---
   const animateProtocol = useCallback((time: number) => {
@@ -1252,10 +1264,12 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     if (typeof selectedDuration === 'number' && isRunning && sessionSeconds >= selectedDuration) {
       const audio = getAudioService();
       setIsRunning(false);
+      setSessionProgress(0);
       setPhase(BreathingPhase.Idle);
       // Native app shows its own summary card — suppress the webview overlay text.
       if (!isNativeApp) setInstructionKey('session.complete');
       endSession('completed', selectedDuration, true);
+      setScale(0);
       // Stop all audio
       audio.stopDrone();
       audio.stopPinkNoise();
@@ -1475,6 +1489,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
               : ''
           }
           progress={0}
+          sessionProgress={sessionId !== null && typeof selectedDuration === 'number' ? sessionProgress : null}
           isRunning={isRunning}
           onClick={handleTogglePlay}
         />
