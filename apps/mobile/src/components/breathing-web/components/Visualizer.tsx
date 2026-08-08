@@ -1,8 +1,33 @@
 'use client';
 
 import React, { useMemo } from 'react';
-import { Play, Pause } from 'lucide-react';
+import { Pause } from 'lucide-react';
 import { BreathingPhase } from '../types';
+
+// Play triangle matching the desktop site's lucide 0.471 `Play` polygon
+// (points "6 3 20 12 6 21 6 3"), with a SMALL corner radius (stroke round
+// join at strokeWidth 2 → ~1 unit ≈ 2.7px at 64px). lucide-react 1.x replaced
+// the icon with a 2-unit-radius path, which reads as a blobby triangle on the
+// mobile orb — the "triangle radius" regression. Kept as raw SVG so a future
+// lucide bump can't silently re-round it.
+const PlayTriangle: React.FC<{ size?: number; className?: string }> = ({ size = 64, className = '' }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    className={className}
+    aria-hidden="true"
+    focusable="false"
+  >
+    <polygon
+      points="6 3 20 12 6 21 6 3"
+      fill="currentColor"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinejoin="round"
+    />
+  </svg>
+);
 
 interface VisualizerProps {
   phase: BreathingPhase;
@@ -13,9 +38,15 @@ interface VisualizerProps {
   instructions: string;
   isRunning: boolean;
   onClick: () => void;
+  /** Applied to the draggable ball assembly (orb + glow + content).
+   *  Also the particle field's anchor rect. */
+  dragRef?: React.RefObject<HTMLDivElement | null>;
+  /** Applied to the outer ring's own layer, which the host translates to
+   *  slowly chase the ball (lagging follower). */
+  ringRef?: React.RefObject<HTMLDivElement | null>;
 }
 
-const Visualizer: React.FC<VisualizerProps> = ({ scale, color, label, instructions, isRunning, onClick }) => {
+const Visualizer: React.FC<VisualizerProps> = ({ scale, color, label, instructions, isRunning, onClick, dragRef, ringRef }) => {
   const blobScale = 0.6 + scale * 0.4;
   const glowScale = 0.65 + scale * 0.5;
 
@@ -57,32 +88,49 @@ const Visualizer: React.FC<VisualizerProps> = ({ scale, color, label, instructio
 
   return (
     <div className="group relative z-10 flex h-64 w-64 flex-col items-center justify-center sm:h-80 sm:w-80 md:h-96 md:w-96">
-      <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
-        <span className="block rounded-full" aria-hidden style={glowStyle} />
+      {/* Outer ring — a lagging follower: the host slowly eases this layer
+          toward the ball's offset while it is pulled, then drifts it back
+          home at a slower pace than the ball itself. */}
+      <div
+        ref={ringRef}
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-10 will-change-transform"
+        style={{ touchAction: 'none' }}
+      >
+        <div
+          className="absolute inset-0 rounded-full border opacity-30"
+          style={ringStyle}
+        />
       </div>
 
+      {/* Draggable ball assembly: glow + orb + overlay content move together.
+          pointer-events-none so the ring/background still get touches; the
+          orb button re-enables them for itself. */}
       <div
-        aria-hidden
-        className="absolute inset-0 z-10 rounded-full border opacity-30 pointer-events-none"
-        style={ringStyle}
-      />
+        ref={dragRef}
+        className="absolute inset-0 z-20 pointer-events-none will-change-transform"
+        style={{ touchAction: 'none' }}
+      >
+        <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
+          <span className="block rounded-full" aria-hidden style={glowStyle} />
+        </div>
 
-      {/* Interactive Orb */}
-      <button
-        onClick={onClick}
-        className="absolute z-20 flex h-full w-full cursor-pointer items-center justify-center rounded-full outline-none hover:brightness-110 animate-blob animate-hue"
-        style={{ ...orbStyle, ...orbTransformStyle }}
-        aria-label={isRunning ? 'Pause Session' : 'Start Session'}
-      />
+        {/* Interactive Orb */}
+        <button
+          onClick={onClick}
+          className="pointer-events-auto absolute z-20 flex h-full w-full cursor-pointer items-center justify-center rounded-full outline-none hover:brightness-110 animate-blob animate-hue"
+          style={{ ...orbStyle, ...orbTransformStyle }}
+          aria-label={isRunning ? 'Pause Session' : 'Start Session'}
+        />
 
-      {/* Overlay Content (Not Scaled) */}
-      <div className="pointer-events-none absolute z-30 flex h-full w-full flex-col items-center justify-center">
+        {/* Overlay Content (Not Scaled) */}
+        <div className="pointer-events-none absolute z-30 flex h-full w-full flex-col items-center justify-center">
         {/* Play Icon */}
         <div
           className={`absolute flex items-center justify-center transition-all duration-500 ${!isRunning ? 'scale-100 opacity-100' : 'scale-50 opacity-0'
             }`}
         >
-          <Play size={64} className="ml-2 fill-white text-white opacity-90 drop-shadow-md" />
+          <PlayTriangle size={64} className="ml-2 fill-white text-white opacity-90 drop-shadow-md" />
         </div>
 
         {/* Text visuals */}
@@ -108,6 +156,7 @@ const Visualizer: React.FC<VisualizerProps> = ({ scale, color, label, instructio
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

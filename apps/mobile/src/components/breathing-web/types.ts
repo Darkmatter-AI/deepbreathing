@@ -65,6 +65,7 @@ export interface BreathingPattern {
   color: string; // Hex code for the theme
 }
 
+
 export interface SessionStats {
   totalMinutes: number;
   sessionsCompleted: number;

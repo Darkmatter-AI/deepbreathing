@@ -1,13 +1,43 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, type RefObject } from 'react';
 import { BreathingPhase } from '../types';
 
 interface ParticleProps {
   phase: BreathingPhase;
   color: string;
+  /** Overall pace — particles breathe with the session's single speed. */
   speedMultiplier: number;
+  /** The orb wrapper element. Its live bounding rect (including the drag
+   *  offset) is the "ball" anchor particles react to. */
+  orbRef?: RefObject<HTMLDivElement | null>;
 }
+
+interface PointerState {
+  active: boolean;
+  x: number;
+  y: number;
+  px: number;
+  py: number;
+  /** Smoothed pointer velocity (px/s). */
+  vx: number;
+  vy: number;
+  /** 0..1 decaying ripple energy from a press. */
+  pressBurst: number;
+  /** 0..1 decaying swirl energy from drag/scroll. */
+  swirl: number;
+  /** Last pointermove timestamp (ms) for velocity math. */
+  lastMoveTs: number;
+}
+
+const INFLUENCE_RADIUS = 190;      // px — how far a pointer touch reaches
+const PRESS_PUSH = 1400;           // px/s — outward push on press (visible pop)
+const SWIRL_PEAK = 1900;           // px/s — tangential speed at full drag speed
+const ORB_PULL_RADIUS = 175;       // px — particles near the ball follow it
+const ORB_WAKE = 0.85;             // how much of the ball's motion rubs off
+// NOTE: no attraction term on purpose. Pulling particles TOWARD the ball's
+// center rakes them into a clump under the orb; a pure velocity wake sweeps
+// them along the drag direction and lets the field re-settle naturally.
 
 class Particle {
   x: number;
@@ -16,38 +46,52 @@ class Particle {
   speedX: number;
   speedY: number;
   alpha: number;
+  // Impulse velocity from interactions — decays each frame.
+  vx: number;
+  vy: number;
+  // 0..1 interaction "heat" — brightens the particle near a touch.
+  heat: number;
 
   constructor(w: number, h: number) {
     this.x = Math.random() * w;
     this.y = Math.random() * h;
     this.size = Math.random() * 3 + 1;
-    // Base random drift velocity
     this.speedX = Math.random() * 0.5 - 0.25;
     this.speedY = Math.random() * 0.5 - 0.25;
     this.alpha = Math.random() * 0.5 + 0.1;
+    this.vx = 0;
+    this.vy = 0;
+    this.heat = 0;
   }
 
-  // Reset particle to a random position on the screen edges
   resetToEdge(w: number, h: number) {
-    const edge = Math.floor(Math.random() * 4); // 0: top, 1: right, 2: bottom, 3: left
+    const edge = Math.floor(Math.random() * 4);
     if (edge === 0) { this.x = Math.random() * w; this.y = 0; }
     else if (edge === 1) { this.x = w; this.y = Math.random() * h; }
     else if (edge === 2) { this.x = Math.random() * w; this.y = h; }
     else { this.x = 0; this.y = Math.random() * h; }
-    this.alpha = 0; // Fade in
+    this.alpha = 0;
   }
 
-  // Reset particle to a random position near the center
   resetToCenter(w: number, centerY: number) {
     const angle = Math.random() * Math.PI * 2;
-    const radius = Math.random() * 50; // Start slightly off-center
+    const radius = Math.random() * 50;
     this.x = w / 2 + Math.cos(angle) * radius;
     this.y = centerY + Math.sin(angle) * radius;
-    this.alpha = 0; // Fade in
+    this.alpha = 0;
   }
 
-  update(radialSpeed: number, driftSpeed: number, deltaTime: number, w: number, h: number, centerY: number) {
-    // Fade in effect if alpha was reset
+  update(
+    radialSpeed: number,
+    driftSpeed: number,
+    deltaTime: number,
+    w: number,
+    h: number,
+    centerY: number,
+    pointer: PointerState,
+    orb: { x: number; y: number; vx: number; vy: number } | null,
+  ) {
+    const dt = deltaTime;
     if (this.alpha < 0.5) this.alpha += 0.01;
 
     const cx = w / 2;
@@ -56,35 +100,96 @@ class Particle {
     const dy = this.y - cy;
     const dist = Math.hypot(dx, dy);
 
-    // Apply Radial Velocity (Inward/Outward)
+    // Breathing motion (inward/outward with the phase).
     if (dist > 0.1) {
       const uX = dx / dist;
       const uY = dy / dist;
-      const radialStep = radialSpeed * deltaTime;
-      this.x += uX * radialStep;
-      this.y += uY * radialStep;
+      this.x += uX * radialSpeed * dt;
+      this.y += uY * radialSpeed * dt;
     }
 
-    // Apply Drift Velocity (Random noise)
-    const driftStep = driftSpeed * deltaTime;
-    this.x += this.speedX * driftStep;
-    this.y += this.speedY * driftStep;
+    // Ambient drift.
+    this.x += this.speedX * driftSpeed * dt;
+    this.y += this.speedY * driftSpeed * dt;
 
-    // --- Boundary & Respawn Logic ---
+    // --- Interaction field -------------------------------------------------
+    if (pointer.active) {
+      const pdx = this.x - pointer.x;
+      const pdy = this.y - pointer.y;
+      const pdist = Math.hypot(pdx, pdy);
 
-    // Case 1: Strong Inhale (Sucking in)
-    // If particle gets too close to center, respawn at edge
+      if (pdist < INFLUENCE_RADIUS && pdist > 0.001) {
+        const ux = pdx / pdist;
+        const uy = pdy / pdist;
+        const falloff = 1 - pdist / INFLUENCE_RADIUS;
+        this.heat = Math.max(this.heat, falloff);
+
+        // Press ripple: push particles outward while the finger is down.
+        if (pointer.pressBurst > 0) {
+          this.vx += ux * PRESS_PUSH * pointer.pressBurst * falloff * dt;
+          this.vy += uy * PRESS_PUSH * pointer.pressBurst * falloff * dt;
+        }
+
+        // Drag/scroll swirl: tangential vortex around the pointer, stronger
+        // with faster movement. Direction follows the drag vector.
+        if (pointer.swirl > 0) {
+          const speed = Math.min(Math.hypot(pointer.vx, pointer.vy), 1400);
+          const tangent = { x: -uy, y: ux };
+          const sign = pointer.vx >= 0 ? 1 : -1;
+          const tangential = (speed / 1400) * SWIRL_PEAK;
+          this.vx += tangent.x * tangential * pointer.swirl * falloff * dt * sign;
+          this.vy += tangent.y * tangential * pointer.swirl * falloff * dt * sign;
+        }
+      } else {
+        this.heat = Math.max(0, this.heat - 0.02);
+      }
+    }
+
+    // The ball: ONLY while the user's finger is actively pulling it. The
+    // pull must die the instant the finger lifts — if it kept running
+    // through the spring-back home, every release would rake another batch
+    // of particles into the center and pile them up under the orb.
+    const pullingBall =
+      pointer.active &&
+      orb != null &&
+      Math.hypot(pointer.x - orb.x, pointer.y - orb.y) < ORB_PULL_RADIUS;
+    if (pullingBall) {
+      const obdx = this.x - orb.x;
+      const obdy = this.y - orb.y;
+      const obdist = Math.hypot(obdx, obdy);
+      if (obdist < ORB_PULL_RADIUS && obdist > 0.001) {
+        const k = (1 - obdist / ORB_PULL_RADIUS);
+        // Wake only: particles near the moving ball are pushed along its
+        // motion vector (stronger closer to the ball) — no center-pull.
+        this.vx += orb.vx * ORB_WAKE * k * dt;
+        this.vy += orb.vy * ORB_WAKE * k * dt;
+      }
+    } else if (orb != null && !pointer.active) {
+      // Gentle keep-out: when nobody is touching the ball, particles near it
+      // slowly drift outward, so the field can never pile up under the orb.
+      const obdx = this.x - orb.x;
+      const obdy = this.y - orb.y;
+      const obdist = Math.hypot(obdx, obdy);
+      if (obdist < ORB_PULL_RADIUS && obdist > 0.001) {
+        const k = 1 - obdist / ORB_PULL_RADIUS;
+        this.vx += (obdx / obdist) * 70 * k * dt;
+        this.vy += (obdy / obdist) * 70 * k * dt;
+      }
+    }
+
+    // Apply + decay impulse velocity (exponential: ~4/s).
+    const decay = Math.max(0, 1 - 4 * dt);
+    this.vx *= decay;
+    this.vy *= decay;
+    this.x += this.vx * dt;
+    this.y += this.vy * dt;
+
+    // --- Boundary & respawn (unchanged breathing logic) ---
     if (radialSpeed < -1 && dist < 30) {
       this.resetToEdge(w, h);
-    }
-    // Case 2: Strong Exhale (Blowing out)
-    // If particle goes off screen, respawn near center
-    else if (radialSpeed > 1 && (this.x < 0 || this.x > w || this.y < 0 || this.y > h)) {
+    } else if (radialSpeed > 1 && (this.x < 0 || this.x > w || this.y < 0 || this.y > h)) {
       this.resetToCenter(w, centerY);
-    }
-    // Case 3: Idle/Hold (Drift)
-    // Standard screen wrapping
-    else {
+    } else {
       if (this.x < 0) this.x = w;
       if (this.x > w) this.x = 0;
       if (this.y < 0) this.y = h;
@@ -93,31 +198,41 @@ class Particle {
   }
 
   draw(ctx: CanvasRenderingContext2D, colorHex: string) {
-    ctx.fillStyle = colorHex + Math.floor(Math.min(this.alpha, 0.6) * 255).toString(16).padStart(2, '0');
+    const a = Math.min(this.alpha + this.heat * 0.45, 0.92);
+    ctx.fillStyle = colorHex + Math.floor(a * 255).toString(16).padStart(2, '0');
     ctx.beginPath();
-    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    ctx.arc(this.x, this.y, this.size + this.heat * 1.4, 0, Math.PI * 2);
     ctx.fill();
   }
 }
 
-const ParticleBackground: React.FC<ParticleProps> = ({ phase, color, speedMultiplier }) => {
+const ParticleBackground: React.FC<ParticleProps> = ({ phase, color, speedMultiplier, orbRef }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const particles = useRef<Particle[]>([]);
-
-  // Two speed factors: Radial (In/Out) and Drift (Random Chaos)
   const smoothedRadialSpeedRef = useRef<number>(0);
   const smoothedDriftSpeedRef = useRef<number>(0.2 * 60);
+  const pointerRef = useRef<PointerState>({
+    active: false,
+    x: 0, y: 0, px: 0, py: 0,
+    vx: 0, vy: 0,
+    pressBurst: 0,
+    swirl: 0,
+    lastMoveTs: 0,
+  });
 
-  // Refs to hold latest props for the animation loop
   const phaseRef = useRef(phase);
+  const prevPhaseRef = useRef(phase);
   const colorRef = useRef(color);
   const speedMultiplierRef = useRef(speedMultiplier);
+  const orbRefRef = useRef(orbRef);
+  const orbStateRef = useRef({ x: 0, y: 0, vx: 0, vy: 0, lastX: 0, lastY: 0 });
 
   useEffect(() => {
     phaseRef.current = phase;
     colorRef.current = color;
     speedMultiplierRef.current = speedMultiplier;
-  }, [phase, color, speedMultiplier]);
+    orbRefRef.current = orbRef;
+  }, [phase, color, speedMultiplier, orbRef]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -131,7 +246,6 @@ const ParticleBackground: React.FC<ParticleProps> = ({ phase, color, speedMultip
     let displayHeight = rect.height || window.innerHeight;
 
     const initParticles = () => {
-      // Reduce particle count on mobile for better performance
       const isMobile = displayWidth < 768 || window.innerHeight < 768;
       const particleCount = isMobile ? 50 : 80;
       particles.current = Array.from({ length: particleCount }, () => new Particle(displayWidth, displayHeight));
@@ -142,17 +256,13 @@ const ParticleBackground: React.FC<ParticleProps> = ({ phase, color, speedMultip
 
     let resizeTimeout: ReturnType<typeof setTimeout>;
     const resize = () => {
-      // Debounce resize to prevent jitter on mobile
       clearTimeout(resizeTimeout);
       resizeTimeout = setTimeout(() => {
         const rect = canvas.getBoundingClientRect();
         displayWidth = rect.width || window.innerWidth;
         displayHeight = rect.height || window.innerHeight;
 
-        // Cap devicePixelRatio at 2 for better mobile performance
         const ratio = Math.min(Math.max(window.devicePixelRatio || 1, 1), 2);
-
-        // Ensure we don't set 0 dimensions
         if (displayWidth === 0) displayWidth = 1;
         if (displayHeight === 0) displayHeight = 1;
 
@@ -167,16 +277,79 @@ const ParticleBackground: React.FC<ParticleProps> = ({ phase, color, speedMultip
     window.addEventListener('resize', resize, { passive: true });
     resize();
 
+    // --- Interaction listeners (window-level: canvas stays pointer-events
+    //     none so the orb/chips keep their taps, but every touch on the
+    //     background still reaches the particle field). ----------------------
+    const toLocal = (e: PointerEvent | WheelEvent) => {
+      const rect = canvas.getBoundingClientRect();
+      return { x: e.clientX - rect.left, y: e.clientY - rect.top };
+    };
+
+    const onPointerDown = (e: PointerEvent) => {
+      const p = toLocal(e);
+      const state = pointerRef.current;
+      state.active = true;
+      state.x = state.px = p.x;
+      state.y = state.py = p.y;
+      state.vx = 0;
+      state.vy = 0;
+      state.pressBurst = 1;
+      state.swirl = 0;
+      state.lastMoveTs = e.timeStamp;
+    };
+
+    const onPointerMove = (e: PointerEvent) => {
+      const state = pointerRef.current;
+      if (!state.active) return;
+      const p = toLocal(e);
+      state.px = state.x;
+      state.py = state.y;
+      state.x = p.x;
+      state.y = p.y;
+      // 1-frame velocity in px/s, smoothed.
+      const dt = Math.max((e.timeStamp - state.lastMoveTs) / 1000, 0.001);
+      state.lastMoveTs = e.timeStamp;
+      const rawVx = (state.x - state.px) / dt;
+      const rawVy = (state.y - state.py) / dt;
+      state.vx = state.vx * 0.6 + rawVx * 0.4;
+      state.vy = state.vy * 0.6 + rawVy * 0.4;
+      state.swirl = Math.min(1, state.swirl + 0.35);
+      // Press ripple fades once the finger starts moving (it's a drag now).
+      state.pressBurst = Math.max(0, state.pressBurst - 0.35);
+    };
+
+    const onPointerUp = () => {
+      const state = pointerRef.current;
+      state.active = false;
+      state.pressBurst = 0;
+      state.swirl = 0;
+    };
+
+    const onWheel = (e: WheelEvent) => {
+      const p = toLocal(e);
+      const state = pointerRef.current;
+      state.x = state.px = p.x;
+      state.y = state.py = p.y;
+      state.vx = Math.sign(e.deltaX || e.deltaY) * Math.min(Math.abs(e.deltaX || e.deltaY) * 2, 1200);
+      state.vy = 0;
+      state.swirl = Math.min(1, state.swirl + 0.5);
+    };
+
+    window.addEventListener('pointerdown', onPointerDown, { passive: true });
+    window.addEventListener('pointermove', onPointerMove, { passive: true });
+    window.addEventListener('pointerup', onPointerUp, { passive: true });
+    window.addEventListener('pointercancel', onPointerUp, { passive: true });
+    window.addEventListener('wheel', onWheel, { passive: true });
+
     const animate = (timestamp: number) => {
       if (!canvas || !ctx) return;
 
-      // Use a more stable delta time calculation for mobile
       const deltaSeconds = lastTimestamp
         ? Math.min(Math.max((timestamp - lastTimestamp) / 1000, 0), 0.05)
         : 0.016;
       lastTimestamp = timestamp;
 
-      // Use save/restore for better performance on mobile
+
       ctx.save();
       ctx.clearRect(0, 0, displayWidth, displayHeight);
 
@@ -184,45 +357,69 @@ const ParticleBackground: React.FC<ParticleProps> = ({ phase, color, speedMultip
       const currentColor = colorRef.current;
       const currentMultiplier = speedMultiplierRef.current;
 
-      // Determine target speeds based on phase
+      // Session ended (breathing phase -> Idle): settle the field back into a
+      // calm, spread float in one gentle pass. Idle keeps radial motion at 0,
+      // so without this the particles would stay piled where the inhale left
+      // them (the "stuck under the orb" look).
+      if (prevPhaseRef.current !== BreathingPhase.Idle && currentPhase === BreathingPhase.Idle) {
+        particles.current.forEach(p => {
+          p.x = Math.random() * displayWidth;
+          p.y = Math.random() * displayHeight;
+          p.vx = 0;
+          p.vy = 0;
+          p.heat = 0;
+          p.alpha = Math.max(p.alpha, 0.35); // soft fade so the re-scatter isn't a hard pop
+        });
+      }
+      prevPhaseRef.current = currentPhase;
+
       const SPEED_PER_SECOND = 60;
       let targetRadialSpeed = 0;
       let targetDriftSpeed = 0.2 * SPEED_PER_SECOND;
 
       if (currentPhase === BreathingPhase.Inhale) {
-        // Inhale: Particles move Inward (negative radial speed)
         targetRadialSpeed = -3.5 * SPEED_PER_SECOND;
-        targetDriftSpeed = 0.5 * SPEED_PER_SECOND; // Slightly more chaos
+        targetDriftSpeed = 0.5 * SPEED_PER_SECOND;
       } else if (currentPhase === BreathingPhase.Exhale) {
-        // Exhale: Particles move Outward (positive radial speed)
-        // Reduced from 3.5 to 1.2 (approx 1/3) for gentler exhale
         targetRadialSpeed = 1.2 * SPEED_PER_SECOND;
         targetDriftSpeed = 0.5 * SPEED_PER_SECOND;
       } else if (currentPhase === BreathingPhase.HoldIn || currentPhase === BreathingPhase.HoldOut) {
-        // Hold: Suspended
         targetRadialSpeed = 0;
-        // Increased from 0.1 to 0.6 so they float/drift more noticeably in space
         targetDriftSpeed = 0.6 * SPEED_PER_SECOND;
       } else {
-        // Idle
+        // Idle: pure float — gentle random drift only, exactly like the
+        // original. (The post-session pile is handled by a one-time settle
+        // re-scatter on the phase transition, not by pushing outward.)
         targetRadialSpeed = 0;
         targetDriftSpeed = 0.3 * SPEED_PER_SECOND;
       }
 
-      // Apply user speed multiplier to the intensity
       targetRadialSpeed *= currentMultiplier;
 
-      // Smoothly interpolate (Lerp) current values towards targets
-      // Using 0.05 for a smooth, heavy feel
       smoothedRadialSpeedRef.current += (targetRadialSpeed - smoothedRadialSpeedRef.current) * 0.05;
       smoothedDriftSpeedRef.current += (targetDriftSpeed - smoothedDriftSpeedRef.current) * 0.05;
 
-      // Batch drawing operations for better mobile performance
       const centerY = displayHeight / 2 - (
         displayWidth < 640 ? Math.min(72, displayHeight * 0.085) : 0
       );
+
+      // Orb anchor from the live wrapper rect (follows drag + spring-back).
+      let orb: { x: number; y: number; vx: number; vy: number } | null = null;
+      const orbEl = orbRefRef.current?.current;
+      if (orbEl) {
+        const r = orbEl.getBoundingClientRect();
+        const ox = r.left + r.width / 2;
+        const oy = r.top + r.height / 2;
+        const s = orbStateRef.current;
+        orb = { x: ox, y: oy, vx: (ox - s.lastX) / Math.max(deltaSeconds, 0.001), vy: (oy - s.lastY) / Math.max(deltaSeconds, 0.001) };
+        s.lastX = ox;
+        s.lastY = oy;
+      } else {
+        orb = { x: displayWidth / 2, y: centerY, vx: 0, vy: 0 };
+      }
+
       particles.current.forEach(p => {
-        p.update(smoothedRadialSpeedRef.current, smoothedDriftSpeedRef.current, deltaSeconds, displayWidth, displayHeight, centerY);
+        p.update(smoothedRadialSpeedRef.current, smoothedDriftSpeedRef.current, deltaSeconds, displayWidth, displayHeight, centerY, pointerRef.current, orb);
         p.draw(ctx, currentColor);
       });
 
@@ -236,6 +433,11 @@ const ParticleBackground: React.FC<ParticleProps> = ({ phase, color, speedMultip
     return () => {
       clearTimeout(resizeTimeout);
       window.removeEventListener('resize', resize);
+      window.removeEventListener('pointerdown', onPointerDown);
+      window.removeEventListener('pointermove', onPointerMove);
+      window.removeEventListener('pointerup', onPointerUp);
+      window.removeEventListener('pointercancel', onPointerUp);
+      window.removeEventListener('wheel', onWheel);
       cancelAnimationFrame(animationFrameId);
     };
   }, []);
@@ -244,7 +446,7 @@ const ParticleBackground: React.FC<ParticleProps> = ({ phase, color, speedMultip
     <canvas
       ref={canvasRef}
       className="absolute top-0 left-0 w-full h-full pointer-events-none z-0 transition-opacity duration-1000 opacity-70"
-      style={{ willChange: 'transform' }}
+      style={{ willChange: 'transform', touchAction: 'none' }}
     />
   );
 };

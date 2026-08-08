@@ -327,8 +327,8 @@ export default function HomeScreen() {
           if (typeof parsed.mode === 'string') {
             setActiveModeName(parsed.mode);
           }
-          if (typeof parsed.speedMultiplier === 'number') {
-            soundscape.onSpeedMultiplier(parsed.speedMultiplier);
+          if (typeof parsed.speed === 'number') {
+            soundscape.onSpeedMultiplier(parsed.speed);
           }
           if (typeof parsed.binauralEnabled === 'boolean') {
             soundscape.onBinauralEnabled(parsed.binauralEnabled);

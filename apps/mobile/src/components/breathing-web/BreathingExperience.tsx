@@ -1,8 +1,20 @@
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { Volume2, Activity, Waves, Wind, Sun, Moon, X, Settings as SettingsIcon } from 'lucide-react';
-import { BreathingPhase, ModeName, ProtocolPhase, ProtocolState } from './types';
+import { BreathingPhase, ModeName, ProtocolPhase, ProtocolState, BreathingPattern } from './types';
 import { BREATHING_PATTERNS, DEFAULT_SPEED_MULTIPLIER, WIM_HOF_PROTOCOL } from './constants';
 import { AudioService } from './services/audioService';
+import {
+  clampSpeed,
+  phaseDurationMs,
+  remapPhaseStartMs,
+  sliderFillPercent,
+  sliderToMultiplier,
+  multiplierToSlider,
+  speedOf,
+  SLIDER_MIN,
+  SLIDER_MAX,
+  SLIDER_STEP,
+} from './pacing';
 import Visualizer from './components/Visualizer';
 import ParticleBackground from './components/ParticleBackground';
 import SnowBackground from './components/SnowBackground';
@@ -50,6 +62,8 @@ const VALID_DURATIONS = [30, 60, 180, 300, 600] as const;
 const MAX_DURATION = 600; // 10 minutes max
 const DEFAULT_DURATION = 60; // 1 min default for new users
 
+
+
 const toRgba = (hex: string, alpha: number) => {
   const sanitized = hex.replace('#', '');
   const bigint = parseInt(sanitized, 16);
@@ -57,6 +71,65 @@ const toRgba = (hex: string, alpha: number) => {
   const g = (bigint >> 8) & 255;
   const b = bigint & 255;
   return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+};
+
+interface PaceSliderProps {
+  value: number;
+  onChange: (value: number) => void;
+  accent: string;
+  /** Bare mode (floating control): no label, no number — the track's
+   *  opacity fill is the only readout. Settings keeps the labeled row. */
+  minimal?: boolean;
+}
+
+// Single pace slider (one measure: 0.5×–2×). The track is a hairline line
+// tinted with the mode color; the portion up to the thumb renders at high
+// opacity and the rest at low, so the "extended opacity" IS the speed readout.
+// Stays live during a session — the engine re-anchors the current phase so
+// changes apply in real time.
+const PaceSlider: React.FC<PaceSliderProps> = ({ value, onChange, accent, minimal = false }) => {
+  // value = duration multiplier (internal); the slider position is mapped so
+  // LEFT = slower (2×), MIDDLE = default (1×), RIGHT = faster (0.5×), and the
+  // label reads as speed (1/multiplier).
+  const sliderValue = multiplierToSlider(value);
+  const pct = sliderFillPercent(sliderValue);
+  // Secondary control: hairline track, mostly transparent; the thumb blends
+  // with the background instead of shouting in the mode color.
+  const track = `linear-gradient(to right, ${toRgba(accent, 0.5)} 0%, ${toRgba(accent, 0.5)} ${pct}%, ${toRgba(accent, 0.12)} ${pct}%, ${toRgba(accent, 0.12)} 100%)`;
+  const slider = (
+    <input
+      type="range"
+      min={String(SLIDER_MIN)}
+      max={String(SLIDER_MAX)}
+      step={String(SLIDER_STEP)}
+      value={sliderValue}
+      onChange={(e) => onChange(sliderToMultiplier(parseFloat(e.target.value)))}
+      className="h-1 w-full cursor-pointer appearance-none rounded-full"
+      style={{ background: track, accentColor: 'hsl(var(--background))' }}
+      aria-label="Breath speed"
+    />
+  );
+  if (minimal) {
+    return (
+      <div className="space-y-1.5">
+        <span className="block text-center text-[10px] font-semibold uppercase tracking-[0.3em] text-muted-foreground/70">
+          Speed
+        </span>
+        {slider}
+      </div>
+    );
+  }
+  return (
+    <div className="space-y-2">
+      <div className="flex items-center justify-between">
+        <span className="text-[11px] font-semibold uppercase tracking-[0.25em] text-muted-foreground/90">Speed</span>
+        <span className="text-sm font-semibold tabular-nums" style={{ color: accent }}>
+          {speedOf(value).toFixed(1)}×
+        </span>
+      </div>
+      {slider}
+    </div>
+  );
 };
 
 const BreathingExperience: React.FC<BreathingExperienceProps> = ({
@@ -122,7 +195,17 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     if (savedSettings) {
       const parsed = JSON.parse(savedSettings);
       if (!effectiveDefaultMode && parsed.mode) setActiveMode(parsed.mode);
-      if (parsed.speed) setSpeedMultiplier(parsed.speed);
+      if (parsed.phaseSpeeds && typeof parsed.phaseSpeeds === 'object') {
+        // One-time migration: earlier builds stored per-phase speeds; fold
+        // them into the single measure by averaging.
+        const ps = parsed.phaseSpeeds as Record<string, unknown>;
+        const vals = [ps.inhale, ps.hold, ps.exhale].filter(
+          (v): v is number => typeof v === 'number' && Number.isFinite(v),
+        );
+        setSpeedMultiplier(clampSpeed(vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : 1));
+      } else if (parsed.speed) {
+        setSpeedMultiplier(clampSpeed(parsed.speed));
+      }
       if (!effectiveDefaultMode && parsed.color) setThemeColor(parsed.color);
     } else if (!effectiveDefaultMode) {
       const hour = new Date().getHours();
@@ -208,6 +291,130 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   const lastSafeRuntimeTextRef = useRef<Partial<Record<RuntimePhraseKey, string>>>({
     'session.ready_to_start': runtimePhrases.resolve('session.ready_to_start').text
   });
+
+  // --- Orb drag ("pull the ball") -------------------------------------------
+  // The ball assembly (Visualizer's inner layer) follows the finger while the
+  // outer ring stays anchored; particles get pulled along via the layer's
+  // live rect (see ParticleBackground's orb anchor). A drag past ~10px
+  // suppresses the tap-to-toggle so pulling never accidentally starts/pauses.
+  // On release the ball returns with a slow, accelerating ease (long dwell at
+  // the start, then a quick pull home with a gentle overshoot settle).
+  const orbBallRef = useRef<HTMLDivElement>(null);
+  const orbDragRef = useRef({ dragging: false, startX: 0, startY: 0, moved: 0 });
+  const suppressClickRef = useRef(false);
+  const ORB_RETURN_CURVE = 'transform 760ms cubic-bezier(0.55, 0.04, 0.62, 1.14)';
+
+  // Outer ring as a slow lagging follower. While the ball is pulled it eases
+  // toward the ball's offset (rate ~4.5/s); on release it drifts back home at
+  // a slower rate (~2.2/s) than the ball's spring-back, so the ring visibly
+  // trails the ball both ways.
+  const ringLayerRef = useRef<HTMLDivElement>(null);
+  const ringOffsetRef = useRef({ x: 0, y: 0 });
+  const ringTargetRef = useRef({ x: 0, y: 0 });
+  const ringChaseRef = useRef<number | null>(null);
+  const ringLastTsRef = useRef(0);
+
+  const chaseRing = useCallback((now: number) => {
+    const el = ringLayerRef.current;
+    if (!el) {
+      ringChaseRef.current = null;
+      return;
+    }
+    const dt = ringLastTsRef.current
+      ? Math.min(Math.max((now - ringLastTsRef.current) / 1000, 0.001), 0.05)
+      : 0.016;
+    ringLastTsRef.current = now;
+    const cur = ringOffsetRef.current;
+    const target = ringTargetRef.current;
+    const rate = target.x === 0 && target.y === 0 ? 2.2 : 4.5;
+    const k = 1 - Math.exp(-rate * dt);
+    cur.x += (target.x - cur.x) * k;
+    cur.y += (target.y - cur.y) * k;
+    el.style.transform = `translate3d(${cur.x.toFixed(2)}px, ${cur.y.toFixed(2)}px, 0)`;
+    if (Math.abs(target.x - cur.x) > 0.4 || Math.abs(target.y - cur.y) > 0.4) {
+      ringChaseRef.current = requestAnimationFrame(chaseRing);
+    } else {
+      cur.x = target.x;
+      cur.y = target.y;
+      el.style.transform = `translate3d(${target.x}px, ${target.y}px, 0)`;
+      ringChaseRef.current = null;
+    }
+  }, []);
+
+  const ensureRingChase = useCallback(() => {
+    if (ringChaseRef.current === null) {
+      ringLastTsRef.current = 0;
+      ringChaseRef.current = requestAnimationFrame(chaseRing);
+    }
+  }, [chaseRing]);
+
+  // Stop the ring chase when the component unmounts.
+  useEffect(() => {
+    return () => {
+      if (ringChaseRef.current !== null) cancelAnimationFrame(ringChaseRef.current);
+    };
+  }, []);
+
+  const orbPointerDown = useCallback((e: PointerEvent) => {
+    const el = orbBallRef.current;
+    if (!el) return;
+    const r = el.getBoundingClientRect();
+    // Only start a "pull" when the press lands on the ball itself (or its
+    // immediate halo). Anything else is background particle interaction.
+    const dx = e.clientX - (r.left + r.width / 2);
+    const dy = e.clientY - (r.top + r.height / 2);
+    if (Math.hypot(dx, dy) > r.width / 2 + 12) return;
+    orbDragRef.current = { dragging: true, startX: e.clientX, startY: e.clientY, moved: 0 };
+    // Don't clear the return transition yet — a plain tap mid-return should
+    // let the ball keep gliding home. It is cleared on the first real move.
+  }, []);
+
+  const orbPointerMove = useCallback((e: PointerEvent) => {
+    const drag = orbDragRef.current;
+    const el = orbBallRef.current;
+    if (!drag.dragging || !el) return;
+    const dx = e.clientX - drag.startX;
+    const dy = e.clientY - drag.startY;
+    drag.moved = Math.max(drag.moved, Math.hypot(dx, dy));
+    if (drag.moved > 4) {
+      // A real pull starts: drop any running return transition, then follow.
+      if (el.style.transition) el.style.transition = 'none';
+      el.style.transform = `translate3d(${dx}px, ${dy}px, 0)`;
+      // Ring target: it eases out from center to track the ball.
+      ringTargetRef.current = { x: dx, y: dy };
+      ensureRingChase();
+    }
+  }, [ensureRingChase]);
+
+  const orbPointerUp = useCallback(() => {
+    const drag = orbDragRef.current;
+    const el = orbBallRef.current;
+    if (!drag.dragging) return;
+    drag.dragging = false;
+    if (drag.moved > 10) suppressClickRef.current = true;
+    if (el && drag.moved > 4) {
+      // Slow, accelerating return: ease-in-heavy curve with a small overshoot
+      // so the ball glides back and settles with a hint of bounce.
+      el.style.transition = ORB_RETURN_CURVE;
+      el.style.transform = 'translate3d(0, 0, 0)';
+      // The ring keeps trailing behind and then drifts home at its own pace.
+      ringTargetRef.current = { x: 0, y: 0 };
+      ensureRingChase();
+    }
+  }, [ensureRingChase]);
+
+  useEffect(() => {
+    window.addEventListener('pointerdown', orbPointerDown, { passive: true });
+    window.addEventListener('pointermove', orbPointerMove, { passive: true });
+    window.addEventListener('pointerup', orbPointerUp, { passive: true });
+    window.addEventListener('pointercancel', orbPointerUp, { passive: true });
+    return () => {
+      window.removeEventListener('pointerdown', orbPointerDown);
+      window.removeEventListener('pointermove', orbPointerMove);
+      window.removeEventListener('pointerup', orbPointerUp);
+      window.removeEventListener('pointercancel', orbPointerUp);
+    };
+  }, [orbPointerDown, orbPointerMove, orbPointerUp]);
 
   const getAudioService = useCallback(() => {
     if (!audioServiceRef.current) {
@@ -604,6 +811,11 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   ]);
 
   const handleTogglePlay = useCallback(async () => {
+    // A drag that pulled the ball shouldn't toggle the session.
+    if (suppressClickRef.current) {
+      suppressClickRef.current = false;
+      return;
+    }
     const audio = getAudioService();
     if (!isRunning) {
       // Resume audio context first (critical for mobile)
@@ -707,6 +919,10 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     getAudioService().toggleMute(newMute);
   };
 
+  // Last frame's phase duration/progress — the pace-remap effect reads these
+  // to re-anchor phaseStartRef without a scale jump.
+  const lastPhaseDurationRef = useRef(0);
+
   // --- The Loop ---
   const animate = useCallback((time: number) => {
     if (!isRunning) return;
@@ -716,11 +932,11 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     audio.updateSpatial(time);
 
     const pattern = BREATHING_PATTERNS[activeMode];
-    const inhaleDur = pattern.inhale * speedMultiplier * 1000;
-    const inhale2Dur = (pattern.inhale2 || 0) * speedMultiplier * 1000;
-    const holdInDur = pattern.holdIn * speedMultiplier * 1000;
-    const exhaleDur = pattern.exhale * speedMultiplier * 1000;
-    const holdOutDur = pattern.holdOut * speedMultiplier * 1000;
+    const inhaleDur = phaseDurationMs(BreathingPhase.Inhale, pattern, speedMultiplier);
+    const inhale2Dur = phaseDurationMs(BreathingPhase.Inhale2, pattern, speedMultiplier);
+    const holdInDur = phaseDurationMs(BreathingPhase.HoldIn, pattern, speedMultiplier);
+    const exhaleDur = phaseDurationMs(BreathingPhase.Exhale, pattern, speedMultiplier);
+    const holdOutDur = phaseDurationMs(BreathingPhase.HoldOut, pattern, speedMultiplier);
 
     const timeSincePhaseStart = time - phaseStartRef.current;
 
@@ -799,8 +1015,10 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
       playPhaseCue(nextPhase);
     }
 
+    lastPhaseDurationRef.current = currentPhaseDuration;
+
     requestRef.current = requestAnimationFrame(animate);
-  }, [activeMode, getAudioService, getSafePhrase, isRunning, phase, playPhaseCue, setInstructionKey, speedMultiplier]);
+  }, [activeMode, getAudioService, getSafePhrase, isRunning, phase, phaseDurationMs, playPhaseCue, setInstructionKey, speedMultiplier]);
 
   // --- Wim Hof Protocol Animation ---
   const animateProtocol = useCallback((time: number) => {
@@ -811,11 +1029,11 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
 
     const protocol = WIM_HOF_PROTOCOL;
     const { inhale, exhale } = protocol.powerBreathTiming;
-    const inhaleDur = inhale * 1000;
-    const exhaleDur = exhale * 1000;
+    const inhaleDur = inhale * speedMultiplier * 1000;
+    const exhaleDur = exhale * speedMultiplier * 1000;
     const breathCycleDur = inhaleDur + exhaleDur;
-    const recoveryInhaleDur = protocol.recoveryTiming.inhale * 1000;
-    const recoveryHoldDur = protocol.recoveryTiming.hold * 1000;
+    const recoveryInhaleDur = protocol.recoveryTiming.inhale * speedMultiplier * 1000;
+    const recoveryHoldDur = protocol.recoveryTiming.hold * speedMultiplier * 1000;
 
     const timeSincePhaseStart = time - protocolPhaseStartRef.current;
 
@@ -919,8 +1137,8 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
       if (next.phase === ProtocolPhase.PowerBreathe) {
         // Determine if inhaling or exhaling within power breath
         const { inhale } = protocol.powerBreathTiming;
-        const inhaleDur = inhale * 1000;
-        const breathCycleDur = (inhale * 1000) + (protocol.powerBreathTiming.exhale * 1000);
+        const inhaleDur = inhale * speedMultiplier * 1000;
+        const breathCycleDur = (inhale * speedMultiplier * 1000) + (protocol.powerBreathTiming.exhale * speedMultiplier * 1000);
         const withinBreathTime = (time - protocolPhaseStartRef.current) % breathCycleDur;
 
         if (withinBreathTime < inhaleDur) nextVisualPhase = BreathingPhase.Inhale;
@@ -944,7 +1162,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     });
 
     requestRef.current = requestAnimationFrame(animateProtocol);
-  }, [isRunning, isProtocolMode, getAudioService, phase, playPhaseCue, setInstructionKey]);
+  }, [isRunning, isProtocolMode, getAudioService, phase, playPhaseCue, setInstructionKey, speedMultiplier]);
 
   // End hold button handler for Wim Hof
   const handleEndHold = useCallback(() => {
@@ -974,6 +1192,19 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
       if (requestRef.current) cancelAnimationFrame(requestRef.current);
     };
   }, [isRunning, animate, animateProtocol, isProtocolMode]);
+
+  // Live pace change mid-phase: re-anchor phaseStartRef so the CURRENT phase
+  // keeps its progress fraction at the new duration instead of jumping the
+  // orb. The next animation frame then continues at the new pace seamlessly.
+  useEffect(() => {
+    if (!isRunning || isProtocolMode || phase === BreathingPhase.Idle) return;
+    const prevDur = lastPhaseDurationRef.current;
+    if (prevDur <= 0) return;
+    const now = performance.now();
+    const newDur = phaseDurationMs(phase, BREATHING_PATTERNS[activeMode], speedMultiplier);
+    phaseStartRef.current = remapPhaseStartMs(now, phaseStartRef.current, prevDur, speedMultiplier, phase, BREATHING_PATTERNS[activeMode]);
+    lastPhaseDurationRef.current = newDur;
+  }, [activeMode, isProtocolMode, isRunning, phase, speedMultiplier]);
 
   useEffect(() => {
     let interval: ReturnType<typeof setInterval>;
@@ -1151,7 +1382,12 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
           phase={phase}
         />
       ) : (
-        <ParticleBackground phase={phase} color={themeColor} speedMultiplier={speedMultiplier} />
+        <ParticleBackground
+          phase={phase}
+          color={themeColor}
+          speedMultiplier={speedMultiplier}
+          orbRef={orbBallRef}
+        />
       )}
 
       <header
@@ -1174,7 +1410,10 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
           </button>
         </header>
 
-      <main className={`relative z-10 flex flex-1 flex-col items-center justify-center sm:pb-0 ${noMobileBottomPad ? 'pb-24' : 'pb-44'}`}>
+      <main
+        className={`relative z-10 flex flex-1 flex-col items-center justify-center sm:pb-0 ${noMobileBottomPad ? 'pb-24' : 'pb-44'}`}
+        style={{ touchAction: 'none' }}
+      >
         {/* Protocol UI: Round and breath counter */}
         {isProtocolMode && isRunning && (
           <div className="absolute top-8 left-0 right-0 z-20 flex flex-col items-center gap-2">
@@ -1190,6 +1429,8 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
         )}
 
         <Visualizer
+          dragRef={orbBallRef}
+          ringRef={ringLayerRef}
           phase={phase}
           scale={scale}
           color={themeColor}
@@ -1268,6 +1509,27 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
         </div>
       )}
 
+      {/* Live pace control — no toggle, no panel: the bare slider just sits
+          at the bottom while a session exists (running or paused) so the user
+          can adapt the speed on the go. Writes speedMultiplier, which the
+          animation loop applies on the next frame (current phase re-anchored,
+          no jump). */}
+      {(isRunning || sessionId !== null) && (
+        <div
+          className="fixed inset-x-0 bottom-0 z-40 flex justify-center px-12"
+          style={{ paddingBottom: safeAreaInsets.bottom + 14 }}
+        >
+          <div className="pointer-events-auto w-full max-w-[12rem]">
+            <PaceSlider
+              value={speedMultiplier}
+              onChange={setSpeedMultiplier}
+              accent={themeColor}
+              minimal
+            />
+          </div>
+        </div>
+      )}
+
       {controlsOpen && (
         <div
           role="dialog"
@@ -1326,23 +1588,11 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
                   <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Pattern</p>
                   <p className="text-base text-card-foreground">{currentPattern.description}</p>
                 </div>
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                    <span>Speed</span>
-                    <span className="text-sm text-card-foreground">{speedMultiplier.toFixed(1)}s per phase</span>
-                  </div>
-                  <input
-                    type="range"
-                    min="0.5"
-                    max="2.0"
-                    step="0.1"
-                    value={speedMultiplier}
-                    onChange={(e) => setSpeedMultiplier(parseFloat(e.target.value))}
-                    disabled={isRunning}
-                    className="h-2 w-full cursor-pointer appearance-none rounded-full bg-muted accent-primary disabled:cursor-not-allowed disabled:opacity-60"
-                    aria-label="Breath speed"
-                  />
-                </div>
+                <PaceSlider
+                  value={speedMultiplier}
+                  onChange={setSpeedMultiplier}
+                  accent={themeColor}
+                />
               </div>
 
               {renderStats()}
