@@ -254,6 +254,21 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     }
   }, [mounted, initialDuration]);
 
+  // Changing the session length while a session is PAUSED restarts the clock:
+  // the timer returns to 0:00, the ring dot returns to the top, and the next
+  // start begins a fresh session (the paused session's elapsed time was
+  // already committed). Without this, a shorter new duration could even make
+  // the session auto-complete instantly on resume.
+  useEffect(() => {
+    if (!mounted || sessionId === null || isRunning) return;
+    setSessionSeconds(0);
+    sessionClockStartRef.current = 0;
+    setSessionProgress(0);
+    setSessionId(null);
+    setSessionCommittedSeconds(0);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedDuration]);
+
   const [phase, setPhase] = useState<BreathingPhase>(BreathingPhase.Idle);
   const [isRunning, setIsRunning] = useState(false);
 

@@ -159,6 +159,15 @@ test("mobile: session-progress dot rides the ring with angle math (cos/sin)", ()
   assert.match(exp, /progress=\{0\}/, "progress prop pinned to 0");
 });
 
+
+test("mobile: changing the duration while paused restarts the session clock", () => {
+  assert.match(exp, /Changing the session length while a session is PAUSED restarts the clock/, "reset effect documented");
+  assert.match(exp, /sessionClockStartRef\.current = 0;/, "clock anchor reset");
+  assert.match(exp, /setSessionProgress\(0\);/, "ring dot returns to the top");
+  assert.match(exp, /setSessionId\(null\);/, "next start begins a fresh session");
+  assert.match(exp, /\}, \[selectedDuration\]\);/, "effect keyed on duration change");
+});
+
 // ---------------------------------------------------------------------------
 // DESKTOP — the website's resonance experience
 // ---------------------------------------------------------------------------
