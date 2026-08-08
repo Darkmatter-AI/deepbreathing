@@ -49,8 +49,8 @@ const NOISE_FILTER_Q = 0.7;
 // 87–165 Hz with partials up to 2× root (~330 Hz), so a gentle lowpass here
 // keeps the low harmonics that give it warmth while removing the hiss band.
 // See tools/orb-video ROADMAP for the isolation evidence.
-const DRONE_LOWPASS_HZ = 2000;
-const DRONE_LOWPASS_Q = 0.5;
+const DRONE_LOWPASS_HZ = 1400; // was 2000; lowered to warm up drone timbre (less upper-harmonic brightness)
+const DRONE_LOWPASS_Q = 0.4; // was 0.5; gentler knee for a softer roll-off
 
 interface CueProfile {
   oscType: OscillatorType;
@@ -1218,7 +1218,7 @@ export class AudioService {
 
     const PEAK_GAIN = this.phaseEnvelopePeakGain();
     const FILTER_BASE = 500;
-    const FILTER_PEAK = 2200;
+    const FILTER_PEAK = 1700; // was 2200; reduced to warm the phase-envelope opening
 
     let targetGain: number;
     let targetFilter: number;
@@ -1590,7 +1590,7 @@ export class AudioService {
             attack: 0.02,
             release: 0.22,
             lowpassStart: 900,
-            lowpassEnd: 2200,
+            lowpassEnd: 1800, // was 2200; reduced to tame high-frequency noise brightness
             highpass: 140,
             q: 0.8
           },
@@ -1632,7 +1632,7 @@ export class AudioService {
           freqStart: 660,
           freqEnd: 660,
           detune: -5,
-          attack: 0.01,
+          attack: 0.02, // was 0.01; softened onset for warmer cue
           release: 0.16,
           gain: 0.55
         },
@@ -1728,7 +1728,7 @@ export class AudioService {
             attack: 0.03,
             release: 0.28,
             lowpassStart: 700,
-            lowpassEnd: bright ? 2400 : 2000,
+            lowpassEnd: bright ? 2000 : 1700, // was 2400:2000; reduced to tame high-frequency noise brightness
             highpass: 130,
             q: 0.75
           },
@@ -1787,16 +1787,16 @@ export class AudioService {
           freqStart: 540,
           freqEnd: 740,
           detune: 0,
-          attack: 0.015,
+          attack: 0.025, // was 0.015; softened onset for warmer cue
           release: 0.18,
           gain: 0.85
         },
         noise: {
           gain: 0.24,
-          attack: 0.015,
+          attack: 0.025, // was 0.015; softened onset for warmer cue
           release: 0.2,
           lowpassStart: 800,
-          lowpassEnd: 2600,
+          lowpassEnd: 2100, // was 2600; reduced to tame high-frequency noise brightness
           highpass: 160,
           q: 0.75
         },
@@ -1838,7 +1838,7 @@ export class AudioService {
         freqStart: 620,
         freqEnd: 620,
         detune: 0,
-        attack: 0.01,
+        attack: 0.02, // was 0.01; softened onset for warmer cue
         release: 0.16,
         gain: 0.55
       },
