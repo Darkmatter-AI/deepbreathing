@@ -90,3 +90,10 @@
 }
 
 html, body { background-color: hsl(var(--background)); }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-blob,
+  .animate-hue {
+    animation: none !important;
+  }
+}

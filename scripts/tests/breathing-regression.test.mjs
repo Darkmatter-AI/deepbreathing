@@ -197,6 +197,43 @@ test("desktop: session clock is wall-clock", () => {
   assert.doesNotMatch(stopLine, /speedMultiplier/, "30s stays 30s regardless of pace");
 });
 
+test("mobile: ParticleBackground respects prefers-reduced-motion", () => {
+  // Must have matchMedia('(prefers-reduced-motion: reduce)') somewhere.
+  assert.match(pb, /matchMedia\('\(prefers-reduced-motion:\s*reduce\)'\)/,
+    "ParticleBackground must query prefers-reduced-motion");
+  // Must have a reduced-motion gate on the interaction code (the gate variable
+  // guards pointer.active and the orb wake/keep-out blocks).
+  assert.match(pb, /!reducedMotion\s*&&\s*pointer\.active/,
+    "interaction field must be gated on reducedMotion");
+  assert.match(pb, /if\s*\(!reducedMotion\)\s*\{/,
+    "orb interaction block must be gated on reducedMotion");
+  // The canvas element must carry a data-reduced-motion attribute.
+  assert.match(pb, /data-reduced-motion/,
+    "canvas must set data-reduced-motion attribute");
+  // Particle count must be halved when reduced.
+  assert.match(pb, /reducedMotionRef\.current\s*\?\s*Math\.floor\(baseCount\s*\/\s*2\)/,
+    "particle count must be halved when reduced motion is active");
+});
+
+test("mobile: ParticleBackground has idle-pause mechanism for battery", () => {
+  // Must have an idle timer ref that gates the animation loop.
+  assert.match(pb, /lastActivityTimeRef/,
+    "must track last activity time for idle detection");
+  assert.match(pb, /idlePausedRef/,
+    "must have an idle-paused flag");
+  assert.match(pb, /cancelAnimationFrame/,
+    "must cancel animation frames on cleanup");
+  // Idle pause condition: phase is Idle AND no activity for ~4s.
+  assert.match(pb, /BreathingPhase\.Idle\s*&&\s*Date\.now\(\)\s*-\s*lastActivityTimeRef\.current\s*>\s*4000/,
+    "must pause rAF when Idle and inactive for ~4s");
+  // Must resume on activity (pointer, wheel, resize) or phase change.
+  assert.match(pb, /idlePausedRef\.current\s*=\s*false/,
+    "must clear idle-paused flag on resume");
+  // Must store animate in a ref so the phase-sync effect can restart it.
+  assert.match(pb, /animateRef\.current\s*=\s*animate/,
+    "animate function must be stored in a ref for cross-effect restart");
+});
+
 test("desktop: particle update() signature and call site stay aligned", () => {
   const sigIdx = desktopPb.indexOf("update(");
   const sig = desktopPb.slice(sigIdx, sigIdx + 160);

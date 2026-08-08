@@ -90,6 +90,7 @@ class Particle {
     centerY: number,
     pointer: PointerState,
     orb: { x: number; y: number; vx: number; vy: number } | null,
+    reducedMotion: boolean,
   ) {
     const dt = deltaTime;
     if (this.alpha < 0.5) this.alpha += 0.01;
@@ -113,7 +114,7 @@ class Particle {
     this.y += this.speedY * driftSpeed * dt;
 
     // --- Interaction field -------------------------------------------------
-    if (pointer.active) {
+    if (!reducedMotion && pointer.active) {
       const pdx = this.x - pointer.x;
       const pdy = this.y - pointer.y;
       const pdist = Math.hypot(pdx, pdy);
@@ -149,31 +150,34 @@ class Particle {
     // pull must die the instant the finger lifts — if it kept running
     // through the spring-back home, every release would rake another batch
     // of particles into the center and pile them up under the orb.
-    const pullingBall =
-      pointer.active &&
-      orb != null &&
-      Math.hypot(pointer.x - orb.x, pointer.y - orb.y) < ORB_PULL_RADIUS;
-    if (pullingBall) {
-      const obdx = this.x - orb.x;
-      const obdy = this.y - orb.y;
-      const obdist = Math.hypot(obdx, obdy);
-      if (obdist < ORB_PULL_RADIUS && obdist > 0.001) {
-        const k = (1 - obdist / ORB_PULL_RADIUS);
-        // Wake only: particles near the moving ball are pushed along its
-        // motion vector (stronger closer to the ball) — no center-pull.
-        this.vx += orb.vx * ORB_WAKE * k * dt;
-        this.vy += orb.vy * ORB_WAKE * k * dt;
-      }
-    } else if (orb != null && !pointer.active) {
-      // Gentle keep-out: when nobody is touching the ball, particles near it
-      // slowly drift outward, so the field can never pile up under the orb.
-      const obdx = this.x - orb.x;
-      const obdy = this.y - orb.y;
-      const obdist = Math.hypot(obdx, obdy);
-      if (obdist < ORB_PULL_RADIUS && obdist > 0.001) {
-        const k = 1 - obdist / ORB_PULL_RADIUS;
-        this.vx += (obdx / obdist) * 70 * k * dt;
-        this.vy += (obdy / obdist) * 70 * k * dt;
+    // Disabled entirely when reduced motion is preferred.
+    if (!reducedMotion) {
+      const pullingBall =
+        pointer.active &&
+        orb != null &&
+        Math.hypot(pointer.x - orb.x, pointer.y - orb.y) < ORB_PULL_RADIUS;
+      if (pullingBall) {
+        const obdx = this.x - orb.x;
+        const obdy = this.y - orb.y;
+        const obdist = Math.hypot(obdx, obdy);
+        if (obdist < ORB_PULL_RADIUS && obdist > 0.001) {
+          const k = (1 - obdist / ORB_PULL_RADIUS);
+          // Wake only: particles near the moving ball are pushed along its
+          // motion vector (stronger closer to the ball) — no center-pull.
+          this.vx += orb.vx * ORB_WAKE * k * dt;
+          this.vy += orb.vy * ORB_WAKE * k * dt;
+        }
+      } else if (orb != null && !pointer.active) {
+        // Gentle keep-out: when nobody is touching the ball, particles near it
+        // slowly drift outward, so the field can never pile up under the orb.
+        const obdx = this.x - orb.x;
+        const obdy = this.y - orb.y;
+        const obdist = Math.hypot(obdx, obdy);
+        if (obdist < ORB_PULL_RADIUS && obdist > 0.001) {
+          const k = 1 - obdist / ORB_PULL_RADIUS;
+          this.vx += (obdx / obdist) * 70 * k * dt;
+          this.vy += (obdy / obdist) * 70 * k * dt;
+        }
       }
     }
 
@@ -226,13 +230,48 @@ const ParticleBackground: React.FC<ParticleProps> = ({ phase, color, speedMultip
   const speedMultiplierRef = useRef(speedMultiplier);
   const orbRefRef = useRef(orbRef);
   const orbStateRef = useRef({ x: 0, y: 0, vx: 0, vy: 0, lastX: 0, lastY: 0 });
+  const reducedMotionRef = useRef(false);
+  const idlePausedRef = useRef(false);
+  const lastActivityTimeRef = useRef(Date.now());
+  const animFrameIdRef = useRef<number | null>(null);
+  const animateRef = useRef<((timestamp: number) => void) | null>(null);
 
   useEffect(() => {
     phaseRef.current = phase;
     colorRef.current = color;
     speedMultiplierRef.current = speedMultiplier;
     orbRefRef.current = orbRef;
+
+    // Resume rAF if phase leaves Idle while the loop was paused.
+    if (phase !== BreathingPhase.Idle && idlePausedRef.current) {
+      idlePausedRef.current = false;
+      lastActivityTimeRef.current = Date.now();
+      if (animateRef.current) {
+        animFrameIdRef.current = requestAnimationFrame(animateRef.current);
+      }
+    }
   }, [phase, color, speedMultiplier, orbRef]);
+
+  // Detect prefers-reduced-motion (iOS accessibility setting).
+  useEffect(() => {
+    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+    reducedMotionRef.current = mq.matches;
+    const onChange = (e: MediaQueryListEvent) => {
+      reducedMotionRef.current = e.matches;
+      // Reflect on the canvas element for test assertions.
+      const canvas = canvasRef.current;
+      if (canvas) {
+        if (e.matches) canvas.setAttribute('data-reduced-motion', 'true');
+        else canvas.removeAttribute('data-reduced-motion');
+      }
+    };
+    mq.addEventListener('change', onChange);
+    // Set initial attribute.
+    if (mq.matches && canvasRef.current) {
+      canvasRef.current.setAttribute('data-reduced-motion', 'true');
+    }
+    return () => mq.removeEventListener('change', onChange);
+  }, []);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -247,7 +286,8 @@ const ParticleBackground: React.FC<ParticleProps> = ({ phase, color, speedMultip
 
     const initParticles = () => {
       const isMobile = displayWidth < 768 || window.innerHeight < 768;
-      const particleCount = isMobile ? 50 : 80;
+      const baseCount = isMobile ? 50 : 80;
+      const particleCount = reducedMotionRef.current ? Math.floor(baseCount / 2) : baseCount;
       particles.current = Array.from({ length: particleCount }, () => new Particle(displayWidth, displayHeight));
     };
 
@@ -256,6 +296,7 @@ const ParticleBackground: React.FC<ParticleProps> = ({ phase, color, speedMultip
 
     let resizeTimeout: ReturnType<typeof setTimeout>;
     const resize = () => {
+      lastActivityTimeRef.current = Date.now();
       clearTimeout(resizeTimeout);
       resizeTimeout = setTimeout(() => {
         const rect = canvas.getBoundingClientRect();
@@ -271,6 +312,12 @@ const ParticleBackground: React.FC<ParticleProps> = ({ phase, color, speedMultip
         ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
         initParticles();
         lastTimestamp = 0;
+        // Resume rAF if paused (orientation change, etc.).
+        if (idlePausedRef.current) {
+          idlePausedRef.current = false;
+          animationFrameId = requestAnimationFrame(animate);
+          animFrameIdRef.current = animationFrameId;
+        }
       }, 100);
     };
 
@@ -286,6 +333,15 @@ const ParticleBackground: React.FC<ParticleProps> = ({ phase, color, speedMultip
     };
 
     const onPointerDown = (e: PointerEvent) => {
+      lastActivityTimeRef.current = Date.now();
+      if (idlePausedRef.current) {
+        idlePausedRef.current = false;
+        lastTimestamp = 0;
+        animationFrameId = requestAnimationFrame(animate);
+        animFrameIdRef.current = animationFrameId;
+        return; // Don't process this event as interaction if reduced motion
+      }
+      if (reducedMotionRef.current) return; // No interaction field in reduced motion
       const p = toLocal(e);
       const state = pointerRef.current;
       state.active = true;
@@ -299,8 +355,15 @@ const ParticleBackground: React.FC<ParticleProps> = ({ phase, color, speedMultip
     };
 
     const onPointerMove = (e: PointerEvent) => {
+      lastActivityTimeRef.current = Date.now();
+      if (idlePausedRef.current) {
+        idlePausedRef.current = false;
+        lastTimestamp = 0;
+        animationFrameId = requestAnimationFrame(animate);
+        animFrameIdRef.current = animationFrameId;
+      }
       const state = pointerRef.current;
-      if (!state.active) return;
+      if (!state.active || reducedMotionRef.current) return;
       const p = toLocal(e);
       state.px = state.x;
       state.py = state.y;
@@ -319,6 +382,7 @@ const ParticleBackground: React.FC<ParticleProps> = ({ phase, color, speedMultip
     };
 
     const onPointerUp = () => {
+      lastActivityTimeRef.current = Date.now();
       const state = pointerRef.current;
       state.active = false;
       state.pressBurst = 0;
@@ -326,6 +390,14 @@ const ParticleBackground: React.FC<ParticleProps> = ({ phase, color, speedMultip
     };
 
     const onWheel = (e: WheelEvent) => {
+      lastActivityTimeRef.current = Date.now();
+      if (idlePausedRef.current) {
+        idlePausedRef.current = false;
+        lastTimestamp = 0;
+        animationFrameId = requestAnimationFrame(animate);
+        animFrameIdRef.current = animationFrameId;
+      }
+      if (reducedMotionRef.current) return; // No interaction in reduced motion
       const p = toLocal(e);
       const state = pointerRef.current;
       state.x = state.px = p.x;
@@ -419,16 +491,25 @@ const ParticleBackground: React.FC<ParticleProps> = ({ phase, color, speedMultip
       }
 
       particles.current.forEach(p => {
-        p.update(smoothedRadialSpeedRef.current, smoothedDriftSpeedRef.current, deltaSeconds, displayWidth, displayHeight, centerY, pointerRef.current, orb);
+        p.update(smoothedRadialSpeedRef.current, smoothedDriftSpeedRef.current, deltaSeconds, displayWidth, displayHeight, centerY, pointerRef.current, orb, reducedMotionRef.current);
         p.draw(ctx, currentColor);
       });
 
       ctx.restore();
 
+      // Idle pause: stop rAF when Idle with no activity for ~4s (battery).
+      if (phaseRef.current === BreathingPhase.Idle && Date.now() - lastActivityTimeRef.current > 4000) {
+        idlePausedRef.current = true;
+        return; // Leave last frame drawn, don't schedule next frame.
+      }
+
       animationFrameId = requestAnimationFrame(animate);
+      animFrameIdRef.current = animationFrameId;
     };
 
+    animateRef.current = animate;
     animationFrameId = requestAnimationFrame(animate);
+    animFrameIdRef.current = animationFrameId;
 
     return () => {
       clearTimeout(resizeTimeout);

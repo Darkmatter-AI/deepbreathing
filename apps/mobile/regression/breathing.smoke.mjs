@@ -419,6 +419,82 @@ async function main() {
 
     await ctx3.close();
 
+    // ──────────────────────────────────────────────────────────────────────
+    // CONTEXT 4 — Tests 10-11: Reduced motion + idle pause
+    // ──────────────────────────────────────────────────────────────────────
+    console.log('\n[smoke] 10. Reduced motion — attribute + particles frozen on press');
+
+    const ctx4 = await browser.newContext({ viewport: VIEWPORT });
+    const page4 = await ctx4.newPage();
+
+    // Emulate reduced motion BEFORE navigating so the app boots with it.
+    await page4.emulateMedia({ reducedMotion: 'reduce' });
+    await page4.goto(METRO_URL, { wait_until: 'domcontentloaded', timeout: 30000 });
+    await page4.waitForTimeout(8000);
+    await page4.keyboard.press('Escape');
+    await page4.waitForTimeout(400);
+    await page4.keyboard.press('Escape');
+    await page4.waitForTimeout(400);
+
+    // 10a: canvas must carry data-reduced-motion attribute.
+    await checkAsync('10a: canvas has data-reduced-motion="true"', async () => {
+      const attr = await page4.$eval('canvas', el => el.getAttribute('data-reduced-motion'));
+      assert.equal(attr, 'true', `Expected "true", got ${attr}`);
+    });
+
+    // 10b: reduced-motion canvas is alive and attribute persists after press.
+    await checkAsync('10b: canvas alive after press in reduced-motion mode', async () => {
+      // Simulate a press in the center of the screen.
+      await page4.mouse.click(200, 400);
+      await page4.waitForTimeout(500);
+
+      // Attribute must still be present.
+      const attr = await page4.$eval('canvas', el => el.getAttribute('data-reduced-motion'));
+      assert.equal(attr, 'true', 'data-reduced-motion must persist after interaction');
+
+      // Canvas must exist and have non-zero dimensions.
+      const dims = await page4.$eval('canvas', el => ({ w: el.width, h: el.height }));
+      assert.ok(dims.w > 0 && dims.h > 0,
+        `Canvas dimensions must be positive, got ${dims.w}x${dims.h}`);
+    });
+
+    await ctx4.close();
+
+    // ──────────────────────────────────────────────────────────────────────
+    // CONTEXT 5 — Test 11: Idle pause (best-effort canvas still renders)
+    // ──────────────────────────────────────────────────────────────────────
+    console.log('\n[smoke] 11. Idle pause — canvas still renders after idle');
+
+    const ctx5 = await browser.newContext({ viewport: VIEWPORT });
+    const page5 = await setupPage(ctx5);
+
+    // Wait for the idle pause to kick in (~5s of no activity while Idle).
+    await page5.waitForTimeout(6000);
+
+    // Screenshot should have non-empty canvas pixels (the last frame is frozen).
+    await checkAsync('11: canvas still has content after idle pause', async () => {
+      const pixelCount = await page5.evaluate(() => {
+        const c = document.querySelector('canvas');
+        if (!c) return 0;
+        const ctx = c.getContext('2d');
+        if (!ctx) return 0;
+        // Sample a grid of pixels; count non-transparent ones.
+        const w = c.width;
+        const h = c.height;
+        if (w < 10 || h < 10) return 0;
+        const imageData = ctx.getImageData(0, 0, w, h);
+        let count = 0;
+        for (let i = 3; i < imageData.data.length; i += 4) {
+          if (imageData.data[i] > 0) count++;
+        }
+        return count;
+      });
+      console.log(`[smoke]   Non-transparent canvas pixels after idle: ${pixelCount}`);
+      assert.ok(pixelCount > 0, 'Canvas should have visible pixels after idle pause');
+    });
+
+    await ctx5.close();
+
 
     // ── Summary ──────────────────────────────────────────────────────────
     console.log(`\n[smoke] ───────────────────────────────────────────`);
