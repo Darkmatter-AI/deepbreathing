@@ -11,6 +11,9 @@ interface ParticleProps {
   /** The orb wrapper element. Its live bounding rect (including the drag
    *  offset) is the "ball" anchor particles react to. */
   orbRef?: RefObject<HTMLDivElement | null>;
+  /** Landing-ripple trigger: the host sets {t: timestamp} when the ball
+   *  settles home; the field emits one soft outward wave, then clears it. */
+  rippleRef?: RefObject<{ t: number } | null>;
 }
 
 interface PointerState {
@@ -35,6 +38,19 @@ const PRESS_PUSH = 1400;           // px/s — outward push on press (visible po
 const SWIRL_PEAK = 1900;           // px/s — tangential speed at full drag speed
 const ORB_PULL_RADIUS = 175;       // px — particles near the ball follow it
 const ORB_WAKE = 0.85;             // how much of the ball's motion rubs off
+// Residual wake after release: ball still carries a soft trail of particles
+// along its spring path. Weaker than active pull; dies with ball speed.
+// Wake-only (no attraction) — safe against the under-orb pile-up bug.
+const ORB_RESIDUAL_SPEED = 45;     // px/s — min ball speed to keep residual wake
+const ORB_RESIDUAL_WAKE = 0.48;    // peak residual transfer (vs ORB_WAKE)
+// Landing ripple — one soft ring expanding from the orb's home position.
+// Kicked up after a design review: the wave was too weak to read against
+// the ambient particle motion.
+const RIPPLE_R0 = 30;              // px — start radius
+const RIPPLE_SPEED = 240;          // px/s — wave expansion
+const RIPPLE_BAND = 120;           // px — wave thickness
+const RIPPLE_LIFE = 0.9;           // s — wave lifetime
+const RIPPLE_AMP = 1500;           // px/s² — outward kick strength
 // NOTE: no attraction term on purpose. Pulling particles TOWARD the ball's
 // center rakes them into a clump under the orb; a pure velocity wake sweeps
 // them along the drag direction and lets the field re-settle naturally.
@@ -146,30 +162,39 @@ class Particle {
       }
     }
 
-    // The ball: ONLY while the user's finger is actively pulling it. The
-    // pull must die the instant the finger lifts — if it kept running
-    // through the spring-back home, every release would rake another batch
-    // of particles into the center and pile them up under the orb.
-    // Disabled entirely when reduced motion is preferred.
-    if (!reducedMotion) {
+    // The ball's particle coupling. Active pull while the finger is near the
+    // ball; after release a softer residual wake rides the spring velocity so
+    // the return path still feels alive. Wake-only (no center attraction) —
+    // that is what previously piled particles under the orb. Disabled under
+    // prefers-reduced-motion.
+    if (!reducedMotion && orb != null) {
+      const orbSpeed = Math.hypot(orb.vx, orb.vy);
       const pullingBall =
         pointer.active &&
-        orb != null &&
         Math.hypot(pointer.x - orb.x, pointer.y - orb.y) < ORB_PULL_RADIUS;
-      if (pullingBall) {
+      // Residual: finger up, ball still moving on its return spring.
+      const residualWake = !pointer.active && orbSpeed > ORB_RESIDUAL_SPEED;
+      if (pullingBall || residualWake) {
         const obdx = this.x - orb.x;
         const obdy = this.y - orb.y;
         const obdist = Math.hypot(obdx, obdy);
         if (obdist < ORB_PULL_RADIUS && obdist > 0.001) {
-          const k = (1 - obdist / ORB_PULL_RADIUS);
+          const falloff = 1 - obdist / ORB_PULL_RADIUS;
+          const wake = pullingBall
+            ? ORB_WAKE
+            : ORB_RESIDUAL_WAKE * Math.min(1, orbSpeed / 420);
           // Wake only: particles near the moving ball are pushed along its
           // motion vector (stronger closer to the ball) — no center-pull.
-          this.vx += orb.vx * ORB_WAKE * k * dt;
-          this.vy += orb.vy * ORB_WAKE * k * dt;
+          this.vx += orb.vx * wake * falloff * dt;
+          this.vy += orb.vy * wake * falloff * dt;
+          if (residualWake) {
+            // Soft heat so the return trail reads without a bright flash.
+            this.heat = Math.max(this.heat, falloff * 0.25);
+          }
         }
-      } else if (orb != null && !pointer.active) {
-        // Gentle keep-out: when nobody is touching the ball, particles near it
-        // slowly drift outward, so the field can never pile up under the orb.
+      } else if (!pointer.active) {
+        // Gentle keep-out: when the ball is still, particles near it slowly
+        // drift outward so the field can never pile up under the orb.
         const obdx = this.x - orb.x;
         const obdy = this.y - orb.y;
         const obdist = Math.hypot(obdx, obdy);
@@ -210,7 +235,7 @@ class Particle {
   }
 }
 
-const ParticleBackground: React.FC<ParticleProps> = ({ phase, color, speedMultiplier, orbRef }) => {
+const ParticleBackground: React.FC<ParticleProps> = ({ phase, color, speedMultiplier, orbRef, rippleRef }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const particles = useRef<Particle[]>([]);
   const smoothedRadialSpeedRef = useRef<number>(0);
@@ -230,6 +255,7 @@ const ParticleBackground: React.FC<ParticleProps> = ({ phase, color, speedMultip
   const speedMultiplierRef = useRef(speedMultiplier);
   const orbRefRef = useRef(orbRef);
   const orbStateRef = useRef({ x: 0, y: 0, vx: 0, vy: 0, lastX: 0, lastY: 0 });
+  const rippleRefRef = useRef(rippleRef);
   const reducedMotionRef = useRef(false);
   const idlePausedRef = useRef(false);
   const lastActivityTimeRef = useRef(Date.now());
@@ -237,20 +263,30 @@ const ParticleBackground: React.FC<ParticleProps> = ({ phase, color, speedMultip
   const animateRef = useRef<((timestamp: number) => void) | null>(null);
 
   useEffect(() => {
+    const colorChanged = colorRef.current !== color;
     phaseRef.current = phase;
     colorRef.current = color;
     speedMultiplierRef.current = speedMultiplier;
     orbRefRef.current = orbRef;
+    rippleRefRef.current = rippleRef;
 
-    // Resume rAF if phase leaves Idle while the loop was paused.
-    if (phase !== BreathingPhase.Idle && idlePausedRef.current) {
+    // Wake the field when something needs a redraw: a phase leaving Idle,
+    // or a mode change recoloring the particles. Mode changes come from the
+    // native sheet — no pointer event reaches the webview — so the loop may
+    // be idle-paused, and the new color would stay invisible until the next
+    // touch (the "color only changes on click" bug).
+    if ((phase !== BreathingPhase.Idle || colorChanged) && idlePausedRef.current) {
       idlePausedRef.current = false;
       lastActivityTimeRef.current = Date.now();
       if (animateRef.current) {
         animFrameIdRef.current = requestAnimationFrame(animateRef.current);
       }
+    } else if (colorChanged) {
+      // Loop is already running — keep it alive so the recolor renders and
+      // the field doesn't immediately re-pause.
+      lastActivityTimeRef.current = Date.now();
     }
-  }, [phase, color, speedMultiplier, orbRef]);
+  }, [phase, color, speedMultiplier, orbRef, rippleRef]);
 
   // Detect prefers-reduced-motion (iOS accessibility setting).
   useEffect(() => {
@@ -490,8 +526,34 @@ const ParticleBackground: React.FC<ParticleProps> = ({ phase, color, speedMultip
         orb = { x: displayWidth / 2, y: centerY, vx: 0, vy: 0 };
       }
 
+      // Landing ripple: one soft ring expanding from the orb's home when the
+      // ball settles. Read once per frame, cleared when it expires.
+      let ripple: { x: number; y: number; age: number } | null = null;
+      const rippleReq = rippleRefRef.current;
+      if (rippleReq?.current && orb && !reducedMotionRef.current) {
+        const age = (timestamp - rippleReq.current.t) / 1000;
+        if (age < RIPPLE_LIFE) {
+          ripple = { x: orb.x, y: orb.y, age };
+        } else {
+          rippleReq.current = null;
+        }
+      }
+
       particles.current.forEach(p => {
         p.update(smoothedRadialSpeedRef.current, smoothedDriftSpeedRef.current, deltaSeconds, displayWidth, displayHeight, centerY, pointerRef.current, orb, reducedMotionRef.current);
+        if (ripple) {
+          const rx = p.x - ripple.x;
+          const ry = p.y - ripple.y;
+          const rd = Math.hypot(rx, ry);
+          const ring = RIPPLE_R0 + RIPPLE_SPEED * ripple.age;
+          const band = 1 - Math.min(Math.abs(rd - ring) / RIPPLE_BAND, 1);
+          if (band > 0 && rd > 0.001) {
+            const kick = RIPPLE_AMP * band * (1 - ripple.age / RIPPLE_LIFE);
+            p.vx += (rx / rd) * kick * deltaSeconds;
+            p.vy += (ry / rd) * kick * deltaSeconds;
+            p.heat = Math.max(p.heat, band * 0.85);
+          }
+        }
         p.draw(ctx, currentColor);
       });
 

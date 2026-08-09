@@ -20,9 +20,9 @@ Status key: ✅ Done | ⏳ Pending | 🔲 Not started
 |---|---|---|---|
 | 2.1 | New app record created in ASC | ✅ | ASC app id `6786431781` |
 | 2.2 | Bundle ID registered: `com.deepbreathing.app` | ✅ | Matches `app.json` and prior TestFlight build |
-| 2.3 | App name set: `Deep Breathing Exercises` | 🔲 | 24 chars — fits 30-char limit |
-| 2.4 | Primary language: English (US) | 🔲 | |
-| 2.5 | SKU: `deep-breathing-exercises-ios` (or similar unique string) | 🔲 | Internal only, never shown to users |
+| 2.3 | App name set: `Deep Breathing: Calm & Sleep` | ✅ | Verified in ASC 2026-07-28 (listing-FINAL name, not the old 2.3 draft) |
+| 2.4 | Primary language: English (US) | ✅ | Verified in ASC 2026-07-28 |
+| 2.5 | SKU: `deep-breathing-exercises-ios` | ✅ | Verified in ASC 2026-07-28 |
 
 > Bundle ID is locked to `com.deepbreathing.app` by the existing App Store record and prior TestFlight build.
 
@@ -58,13 +58,13 @@ Status key: ✅ Done | ⏳ Pending | 🔲 Not started
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 4.1 | `app.json` `version` and `ios.buildNumber` set correctly | ✅ | Version 1.0.0; build 4 queued with remote auto-increment |
+| 4.1 | `app.json` version and remote iOS build number are correct | ✅ | Version 1.0.0; EAS remote build number is 16 and production auto-increment will assign 17 to the next build. |
 | 4.2 | `ITSAppUsesNonExemptEncryption = false` in `ios.infoPlist` | ✅ | Already set in `app.json` |
 | 4.3 | `PrivacyInfo.xcprivacy` added to iOS target | ✅ | Declared via `ios.privacyManifests` in `app.json` (UserDefaults CA92.1, SystemBootTime 35F9.1, FileTimestamp C617.1, DiskSpace E174.1); Expo generates the manifest at prebuild |
-| 4.4 | GA4 env vars set for EAS production builds | 🔲 | **Blocker for analytics:** `.env` is gitignored and EAS cloud builds only see git-tracked files, so `EXPO_PUBLIC_GA4_MEASUREMENT_ID` / `EXPO_PUBLIC_GA4_MP_API_SECRET` are `undefined` at bundle time and `ga4-mp.ts` silently no-ops every event. Fix before building: `cd apps/mobile && set -a && source .env && set +a && npx eas env:create --environment production --name EXPO_PUBLIC_GA4_MEASUREMENT_ID --value "$EXPO_PUBLIC_GA4_MEASUREMENT_ID" --visibility plaintext --scope project --non-interactive && npx eas env:create --environment production --name EXPO_PUBLIC_GA4_MP_API_SECRET --value "$EXPO_PUBLIC_GA4_MP_API_SECRET" --visibility sensitive --scope project --non-interactive` |
+| 4.4 | GA4 env vars set for EAS production builds | ✅ | Done 2026-07-28: `EXPO_PUBLIC_GA4_MEASUREMENT_ID` (G-53DLCBMRL3, plaintext) and `EXPO_PUBLIC_GA4_MP_API_SECRET` (sensitive) created in the EAS `production` environment. Builds ≤10 shipped with analytics no-oping; build 11 is the first with live GA4. |
 | 4.5 | Ears-on audio parity pass on a real device (TestFlight or dev build) | ⏳ | 2026-07-22: shared `@resonance/audio` engine runs natively (react-native-audio-api). RNAA setTargetAtTime warble found+fixed (8265f7b); Abi confirmed by ear in the simulator that mobile now sounds like the website. Remaining on-device: silent switch, screen lock/background continuity, phone-speaker balance. |
-| 4.6 | Production build: `eas build --platform ios --profile production` | 🔲 | Creates `.ipa` and uploads to EAS |
-| 4.7 | Build passes all Apple validations (check build log in EAS dashboard) | 🔲 | Privacy manifest warnings appear here |
+| 4.6 | Production build: `eas build --platform ios --profile production` | ⏳ | Build 16 is the latest finished production build, but it predates the current icon, loader, pace-bar, completion, theme, privacy, and auth fixes. Build 17 must be created from a **clean release worktree** containing only the intended release snapshot. Current EAS CLI behavior overlays the entire working tree (including uncommitted and untracked files), so a scoped commit alone does not isolate this dirty checkout. |
+| 4.7 | Build passes all Apple validations (check build log in EAS dashboard) | ⏳ | Confirm Build 17 finishes in EAS and processes in App Store Connect without privacy-manifest, entitlement, or microphone-purpose warnings. |
 
 ---
 
@@ -72,19 +72,19 @@ Status key: ✅ Done | ⏳ Pending | 🔲 Not started
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 5.1 | 1024×1024 px PNG, no alpha, no rounded corners | ⏳ | ASC applies the mask. Verify `assets/images/icon.png` meets spec |
-| 5.2 | Icon does not contain Apple imagery or simulate iOS UI | ⏳ | Verify |
+| 5.1 | 1024×1024 px PNG, no alpha, no rounded corners | ✅ | Verified 2026-07-28 via `sips`: 1024×1024, hasAlpha: no |
+| 5.2 | Icon does not contain Apple imagery or simulate iOS UI | ✅ | Custom orb artwork |
 
 ---
 
 ## 6. Screenshots
 
-Apple requires screenshots for every device size you support. Required sizes (pixels at 3x):
+Apple requires screenshots for every device size you support. Accepted current iPhone sizes include:
 
 | Device | Size | Required |
 |---|---|---|
-| iPhone 6.7" (Pro Max) | 1290 × 2796 px | **Required** |
-| iPhone 6.5" (Plus/Max pre-14) | 1242 × 2688 px | Required (or use 6.7" shots — ASC accepts scaling for older sizes if 6.7" provided) |
+| iPhone 6.9" | 1260 × 2736, 1290 × 2796, or 1320 × 2868 px | Optional when a valid 6.5" set is supplied |
+| iPhone 6.5" (Plus/Max pre-14) | 1242 × 2688 or 1284 × 2778 px | Required when no 6.9" set is supplied; this release uses 1284 × 2778 |
 | iPhone 5.5" (8 Plus and older) | 1242 × 2208 px | Required if supporting iOS 15 and earlier or if you want to support those devices explicitly |
 | iPad Pro 12.9" (3rd gen+) | 2048 × 2732 px | Not required — `supportsTablet` is `false` in `app.json`. |
 
@@ -92,10 +92,10 @@ Apple requires screenshots for every device size you support. Required sizes (pi
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 6.1 | iPhone 6.7" screenshots (min 3, up to 10) | 🔲 | Capture via Simulator or real device |
-| 6.2 | iPhone 6.5" screenshots | 🔲 | Can reuse 6.7" in ASC if dimensions match |
+| 6.1 | iPhone screenshots (min 3, up to 10) | ⏳ | Six current RGB/no-alpha 1284×2778 marketing shots are ready; shots 02, 04, and 05 now show the current drawer, Settings, and completion UI. Upload all six before submission. |
+| 6.2 | iPhone 6.5" screenshots | ⏳ | Upload the refreshed 1284×2778 set to the accepted 6.5" slot after final visual QA. |
 | 6.3 | iPad 12.9" screenshots (if `supportsTablet: true`) | ✅ N/A | `supportsTablet: false` — not required |
-| 6.4 | Screenshots do not show status bar with wrong time/signal | 🔲 | Use Simulator's clean status bar |
+| 6.4 | Screenshots do not show status bar with wrong time/signal | ✅ | Composited marketing mockups |
 | 6.5 | App Previews (optional video) | 🔲 | Not required; can skip for v1 |
 
 ---
@@ -104,15 +104,15 @@ Apple requires screenshots for every device size you support. Required sizes (pi
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 7.1 | App name entered | 🔲 | See listing.md |
-| 7.2 | Subtitle entered | 🔲 | See listing.md — pick one option |
-| 7.3 | Promotional text entered | 🔲 | Can update without new build |
-| 7.4 | Description entered | 🔲 | See listing.md |
-| 7.5 | Keywords entered | 🔲 | See listing.md — 99 chars |
-| 7.6 | Support URL: `https://deepbreathingexercises.com/support` | 🔲 | **Page must be live before submission** |
-| 7.7 | Marketing URL: `https://deepbreathingexercises.com` | 🔲 | |
-| 7.8 | Copyright: `© 2026 Darkmatter AI Labs` | 🔲 | |
-| 7.9 | Category: Health & Fitness | 🔲 | |
+| 7.1 | App name entered | ✅ | Verified in ASC 2026-07-28: "Deep Breathing: Calm & Sleep" |
+| 7.2 | Subtitle entered | ✅ | Verified 2026-07-28: "Box, 4-7-8 & Calm Breathing" |
+| 7.3 | Promotional text entered | ✅ | Verified 2026-07-28 (163/170 chars) |
+| 7.4 | Description entered | ✅ | Verified 2026-07-28 (2017/4000 chars, matches listing-FINAL) |
+| 7.5 | Keywords entered | ✅ | Verified 2026-07-28 (98/100 chars, matches listing-FINAL) |
+| 7.6 | Support URL: `https://deepbreathingexercises.com/support` | ✅ | Entered in ASC; page live (HTTP 200) |
+| 7.7 | Marketing URL: `https://deepbreathingexercises.com` | ✅ | Entered in ASC |
+| 7.8 | Copyright: `© 2026 Darkmatter AI Labs` | ✅ | Entered in ASC |
+| 7.9 | Category: Health & Fitness (secondary: Lifestyle) | ✅ | Verified in ASC 2026-07-28 |
 
 ---
 
@@ -120,10 +120,10 @@ Apple requires screenshots for every device size you support. Required sizes (pi
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 8.1 | App Privacy nutrition label completed in ASC | 🔲 | See app-privacy.md for exact answers |
-| 8.2 | Privacy Policy URL set in ASC | 🔲 | `https://deepbreathingexercises.com/privacy` |
+| 8.1 | App Privacy nutrition label completed in ASC | ✅ | Republished 2026-07-28 per app-privacy.md account update: added Name + Email (App Functionality, linked), Product Interaction now linked + App Functionality purpose; Device ID unchanged (Analytics, not linked); tracking No everywhere |
+| 8.2 | Privacy Policy URL set in ASC | ✅ | `https://deepbreathingexercises.com/privacy` — verified in ASC 2026-07-28 |
 | 8.3 | Privacy page updated with mobile data section | ✅ | Account, sync, analytics, device features, deletion |
-| 8.4 | Support page created and live | ✅ | Account deletion instructions updated locally; deploy pending |
+| 8.4 | Support page created and live | ✅ | Verified live (HTTP 200) 2026-07-28, incl. /privacy. Prod better-auth + Google social sign-in endpoints also verified live 2026-07-28 |
 
 ---
 
@@ -139,7 +139,7 @@ Apple requires screenshots for every device size you support. Required sizes (pi
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 10.1 | Age rating questionnaire completed in ASC | 🔲 | Expected result: 4+. See listing.md for question-by-question answers |
+| 10.1 | Age rating questionnaire completed in ASC | ⏳ | Re-run the questionnaire before submission: set **Health or Wellness Topics = Yes** (the app is guided self-care/lifestyle breathing practice) and leave **Medical or Treatment Information = None/No** (no diagnosis, condition management, or treatment). Apple's updated system should then show 9+ globally (A10 Brazil, All Korea, 12+ Vietnam); ratings may differ on OS versions earlier than iOS 26. |
 
 ---
 
@@ -147,9 +147,9 @@ Apple requires screenshots for every device size you support. Required sizes (pi
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 11.1 | Price: Free | 🔲 | In-app purchases not yet configured (Pro tier is future) |
-| 11.2 | Availability: All territories (or select list) | 🔲 | |
-| 11.3 | Release: Manual release (hold until you approve) or automatic | 🔲 | Recommend manual for first submission |
+| 11.1 | Price: Free | ✅ | Verified 2026-07-28: $0.00 across all 175 regions |
+| 11.2 | Availability: All territories | ✅ | 175 regions available |
+| 11.3 | Release: Manual release | ✅ | "Lançar manualmente" selected on version page |
 
 ---
 
@@ -157,9 +157,9 @@ Apple requires screenshots for every device size you support. Required sizes (pi
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 12.1 | Upload build to ASC via EAS: `eas submit --platform ios --profile production` | 🔲 | Requires Step 3.4 complete |
-| 12.2 | Build appears in ASC under TestFlight | 🔲 | Processing takes 5–30 min |
-| 12.3 | Select build in ASC version page | 🔲 | |
+| 12.1 | Upload the release build to App Store Connect | ⏳ | Build and submit 17 only after the clean release snapshot and physical-device gate pass. |
+| 12.2 | Build appears in App Store Connect/TestFlight | ⏳ | Confirm Build 17 processing, compliance, and internal TestFlight availability. |
+| 12.3 | Select the release build on the version page | ⏳ | Replace the previously selected older build with Build 17, then save and re-check all warnings. |
 
 ---
 
@@ -187,8 +187,8 @@ system authentication session to our own auth domain, which redirects to Google'
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 13.1 | Demo account created | ✅ N/A | Optional Sign in with Apple is available to reviewers; no demo password account exists |
-| 13.2 | Review notes drafted and entered in ASC | 🔲 | |
+| 13.1 | Demo account created | ✅ N/A | Optional Sign in with Apple is available to reviewers; no demo password account exists. "Sign-in required" toggle verified OFF; contact info filled |
+| 13.2 | Review notes drafted and entered in ASC | ✅ | Entered + saved 2026-07-28 (replaced the stale "no sign-in exists" paragraph) |
 
 ---
 

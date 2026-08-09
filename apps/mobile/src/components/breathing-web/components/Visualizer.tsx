@@ -41,6 +41,10 @@ interface VisualizerProps {
   /** Applied to the draggable ball assembly (orb + glow + content).
    *  Also the particle field's anchor rect. */
   dragRef?: React.RefObject<HTMLDivElement | null>;
+  /** Applied to the glow aura layer (wraps the blurred halo). The host
+   *  drives lag + velocity stretch + brightness imperatively; the orb's
+   *  morph stays untouched. */
+  glowRef?: React.RefObject<HTMLDivElement | null>;
   /** Applied to the outer ring's own layer, which the host translates to
    *  slowly chase the ball (lagging follower). */
   ringRef?: React.RefObject<HTMLDivElement | null>;
@@ -49,7 +53,7 @@ interface VisualizerProps {
   sessionProgress?: number | null;
 }
 
-const Visualizer: React.FC<VisualizerProps> = ({ scale, color, label, instructions, isRunning, onClick, dragRef, ringRef, sessionProgress }) => {
+const Visualizer: React.FC<VisualizerProps> = ({ scale, color, label, instructions, isRunning, onClick, dragRef, ringRef, glowRef, sessionProgress }) => {
   const blobScale = 0.6 + scale * 0.4;
   const glowScale = 0.65 + scale * 0.5;
 
@@ -74,8 +78,7 @@ const Visualizer: React.FC<VisualizerProps> = ({ scale, color, label, instructio
       width: '180%',
       height: '180%',
       borderRadius: '50%',
-      opacity: 0.32,
-      willChange: 'transform, opacity'
+      willChange: 'transform'
     }),
     [color, glowScale]
   );
@@ -130,14 +133,23 @@ const Visualizer: React.FC<VisualizerProps> = ({ scale, color, label, instructio
 
       {/* Draggable ball assembly: glow + orb + overlay content move together.
           pointer-events-none so the ring/background still get touches; the
-          orb button re-enables them for itself. */}
+          orb button re-enables them for itself. The orb keeps its morphing
+          blob shape at all times — no deformation on drag. The glow wrapper
+          is a secondary-action layer: the host lags/stretches it with
+          velocity while the inner span keeps the breathing scale. */}
       <div
         ref={dragRef}
         className="absolute inset-0 z-20 pointer-events-none will-change-transform"
         style={{ touchAction: 'none' }}
       >
-        <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
-          <span className="block rounded-full" aria-hidden style={glowStyle} />
+        <div
+          ref={glowRef}
+          className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none will-change-transform"
+          data-orb-glow
+          aria-hidden
+          style={{ opacity: 0.32 }}
+        >
+          <span className="block rounded-full" style={glowStyle} />
         </div>
 
         {/* Interactive Orb */}
@@ -164,7 +176,10 @@ const Visualizer: React.FC<VisualizerProps> = ({ scale, color, label, instructio
             }`}
         >
           <div className="flex flex-col items-center transition-opacity duration-300">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold uppercase tracking-widest text-white opacity-90 drop-shadow-sm text-center px-4">
+            <h2
+              className="text-2xl sm:text-3xl md:text-4xl font-bold uppercase tracking-widest text-white opacity-90 drop-shadow-sm text-center px-4"
+              style={{ transform: 'translateX(0.05em)' }}
+            >
               {label}
             </h2>
             {instructions && (

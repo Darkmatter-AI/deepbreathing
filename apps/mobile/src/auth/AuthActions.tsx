@@ -34,9 +34,16 @@ export default function AuthActions({ theme, onAuthenticated }: Props) {
         ],
       });
       if (!credential.identityToken) throw new Error('Apple did not return an identity token');
+      if (!credential.authorizationCode) {
+        throw new Error('Apple did not return an authorization code');
+      }
       const result = await authClient.signIn.social({
         provider: 'apple',
         idToken: { token: credential.identityToken },
+        // The server exchanges this one-time code for an Apple refresh token
+        // before Better Auth persists the account. Keeping the exchange on the
+        // server means the Apple private key never reaches the app bundle.
+        additionalData: { authorizationCode: credential.authorizationCode },
       });
       if (result.error) throw new Error(result.error.message ?? 'Apple sign-in failed');
       onAuthenticated?.();

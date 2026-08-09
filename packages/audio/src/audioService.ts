@@ -52,6 +52,16 @@ const NOISE_FILTER_Q = 0.7;
 const DRONE_LOWPASS_HZ = 1400; // was 2000; lowered to warm up drone timbre (less upper-harmonic brightness)
 const DRONE_LOWPASS_Q = 0.4; // was 0.5; gentler knee for a softer roll-off
 
+// The completion bloom is intentionally a separate recipe from breath cues:
+// two quiet sine notes (root → fifth), no noise transient, with a long enough
+// release to feel like a gentle arrival rather than a notification.
+const COMPLETION_CUE_DURATION_SECONDS = 0.78;
+const COMPLETION_CUE_SECOND_NOTE_DELAY_SECONDS = 0.1;
+const COMPLETION_CUE_ROOT_GAIN = 0.16;
+const COMPLETION_CUE_ATTACK_SECONDS = 0.045;
+const COMPLETION_CUE_ROOT_RELEASE_SECONDS = 0.64;
+const COMPLETION_CUE_FIFTH_RELEASE_SECONDS = 0.78;
+
 interface CueProfile {
   oscType: OscillatorType;
   attack: number;
@@ -218,6 +228,7 @@ export class AudioService {
    private breathingMode: ModeName = ModeName.Box;
    private cueNoiseBuffer: AudioBuffer | null = null;
    private cueReverbCache: Map<string, ConvolverNode> = new Map();
+  private completionCueCleanupTimers = new Set<ReturnType<typeof setTimeout>>();
 
   private isMuted = false;
   private cueVolume = 0.32;
@@ -554,12 +565,18 @@ export class AudioService {
       osc.start(now);
       osc.stop(endTime);
       this.log('playSilentUnlock fired');
-      const cleanup = () => {
-        osc.disconnect();
-        gain.disconnect();
-        osc.removeEventListener('ended', cleanup);
-      };
-      osc.addEventListener('ended', cleanup);
+      // react-native-audio-api implements the oscillator lifecycle but does
+      // not expose the browser-only EventTarget methods. A short timed
+      // disconnect is deterministic for this 20ms silent unlock and avoids a
+      // misleading Expo LogBox "crash" warning on native.
+      setTimeout(() => {
+        try {
+          osc.disconnect();
+          gain.disconnect();
+        } catch {
+          // The context may already have been torn down; cleanup is best effort.
+        }
+      }, 60);
     } catch (error) {
       console.warn('Silent unlock failed:', error);
     }
@@ -761,6 +778,8 @@ export class AudioService {
     this.droneArc = null;
     this.cueNoiseBuffer = null;
     this.cueReverbCache.clear();
+    this.completionCueCleanupTimers.forEach((timer) => clearTimeout(timer));
+    this.completionCueCleanupTimers.clear();
     this.activeCueBuses.clear();
   }
 
@@ -945,6 +964,84 @@ export class AudioService {
         // ignore
       }
     });
+  }
+
+  /**
+   * Play the quiet, no-noise arrival bloom used for a timed session completion.
+   * It deliberately does not start/stop or retune any ambient layer (including
+   * binaural), and it is gated by the same mute/master bus as ordinary cues.
+   */
+  public playCompletionCue(options: CuePlaybackOptions = {}) {
+    if (this.isMuted || !this.ctx || !this.masterGain) return;
+    if (this.ctx.state !== 'running') return;
+
+    const t = this.ctx.currentTime;
+    const endTime = t + COMPLETION_CUE_DURATION_SECONDS;
+    const secondStart = t + COMPLETION_CUE_SECOND_NOTE_DELAY_SECONDS;
+    const gainScale = Math.max(0, options.gainScale ?? 1);
+    const pitchMultiplier = Math.pow(2, Math.max(-24, Math.min(24, options.pitchSemitones ?? 0)) / 12);
+
+    const cueBus = this.ctx.createGain();
+    cueBus.gain.setValueAtTime(1, t);
+
+    const cueOutput = this.ctx.createGain();
+    cueOutput.gain.setValueAtTime(1, t);
+    cueOutput.connect(this.masterGain);
+    this.activeCueBuses.add(cueOutput);
+
+    const masterLowpass = this.ctx.createBiquadFilter();
+    masterLowpass.type = 'lowpass';
+    masterLowpass.frequency.setValueAtTime(1800, t);
+    masterLowpass.Q.setValueAtTime(0.45, t);
+    cueBus.connect(masterLowpass);
+    masterLowpass.connect(cueOutput);
+
+    const rootHz = this.getDroneRootFrequency(this.themeColor) * 2 * pitchMultiplier;
+    const fifthHz = rootHz * 1.5;
+    const peakGain = COMPLETION_CUE_ROOT_GAIN * this.cueVolume * this.cueToneScale * gainScale;
+    const scheduleTone = (frequency: number, startTime: number, releaseTime: number) => {
+      const osc = this.ctx!.createOscillator();
+      const gain = this.ctx!.createGain();
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(frequency, startTime);
+      gain.gain.setValueAtTime(0.0001, startTime);
+      gain.gain.linearRampToValueAtTime(
+        peakGain,
+        startTime + COMPLETION_CUE_ATTACK_SECONDS,
+      );
+      gain.gain.exponentialRampToValueAtTime(0.0001, releaseTime);
+      osc.connect(gain);
+      gain.connect(cueBus);
+      osc.start(startTime);
+      const stopAt = releaseTime + 0.05;
+      osc.stop(stopAt);
+    };
+
+    scheduleTone(rootHz, t, t + COMPLETION_CUE_ROOT_RELEASE_SECONDS);
+    scheduleTone(fifthHz, secondStart, t + COMPLETION_CUE_FIFTH_RELEASE_SECONDS);
+
+    let cleanedUp = false;
+    const cleanup = () => {
+      if (cleanedUp) return;
+      cleanedUp = true;
+      this.activeCueBuses.delete(cueOutput);
+      try {
+        cueBus.disconnect();
+        cueOutput.disconnect();
+        masterLowpass.disconnect();
+      } catch {
+        // The context may already have been torn down; cleanup is best effort.
+      }
+    };
+
+    // react-native-audio-api's oscillator nodes do not consistently expose the
+    // browser EventTarget cleanup surface, so use a deterministic timer for the
+    // short-lived graph instead of relying on `ended` listeners.
+    const timer = setTimeout(() => {
+      this.completionCueCleanupTimers.delete(timer);
+      cleanup();
+    }, Math.ceil((endTime - t + 0.12) * 1000));
+    this.completionCueCleanupTimers.add(timer);
   }
 
   public async startBinaural(beatHz: number = 10) {

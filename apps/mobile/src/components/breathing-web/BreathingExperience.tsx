@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { Volume2, Activity, Waves, Wind, Sun, Moon, X, Settings as SettingsIcon } from 'lucide-react';
 import { BreathingPhase, ModeName, ProtocolPhase, ProtocolState, BreathingPattern } from './types';
 import { BREATHING_PATTERNS, DEFAULT_SPEED_MULTIPLIER, WIM_HOF_PROTOCOL } from './constants';
-import { AudioService } from './services/audioService';
+import { AudioService } from '@resonance/audio';
 import {
   clampSpeed,
   phaseDurationMs,
@@ -15,6 +15,7 @@ import {
   SLIDER_MAX,
   SLIDER_STEP,
 } from './pacing';
+import { type ModePreset, sanitizeModePresets } from './presets';
 import Visualizer from './components/Visualizer';
 import ParticleBackground from './components/ParticleBackground';
 import SnowBackground from './components/SnowBackground';
@@ -61,6 +62,7 @@ interface BreathingExperienceProps {
 const VALID_DURATIONS = [30, 60, 180, 300, 600] as const;
 const MAX_DURATION = 600; // 10 minutes max
 const DEFAULT_DURATION = 60; // 1 min default for new users
+const PACE_BAR_HIDE_DELAY_MS = 5000;
 
 
 
@@ -77,6 +79,10 @@ interface PaceSliderProps {
   value: number;
   onChange: (value: number) => void;
   accent: string;
+  /** Whether the floating control is currently exposed to pointer/focus. */
+  visible?: boolean;
+  /** Called by pointer/focus/value interactions to reveal/reset the bar. */
+  onInteract?: () => void;
   /** Bare mode (floating control): no label, no number — the track's
    *  opacity fill is the only readout. Settings keeps the labeled row. */
   minimal?: boolean;
@@ -87,7 +93,23 @@ interface PaceSliderProps {
 // opacity and the rest at low, so the "extended opacity" IS the speed readout.
 // Stays live during a session — the engine re-anchors the current phase so
 // changes apply in real time.
-const PaceSlider: React.FC<PaceSliderProps> = ({ value, onChange, accent, minimal = false }) => {
+const PaceSlider: React.FC<PaceSliderProps> = ({
+  value,
+  onChange,
+  accent,
+  visible = true,
+  onInteract,
+  minimal = false,
+}) => {
+  const sliderRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    // A timeout can hide the floating bar while the range still owns focus.
+    // Blur it before aria-hidden/tabIndex take effect so the hidden control is
+    // never left as an active accessibility target.
+    if (!visible) sliderRef.current?.blur();
+  }, [visible]);
+
   // value = duration multiplier (internal); the slider position is mapped so
   // LEFT = slower (2×), MIDDLE = default (1×), RIGHT = faster (0.5×), and the
   // label reads as speed (1/multiplier).
@@ -98,15 +120,25 @@ const PaceSlider: React.FC<PaceSliderProps> = ({ value, onChange, accent, minima
   const track = `linear-gradient(to right, ${toRgba(accent, 0.5)} 0%, ${toRgba(accent, 0.5)} ${pct}%, ${toRgba(accent, 0.12)} ${pct}%, ${toRgba(accent, 0.12)} 100%)`;
   const slider = (
     <input
+      ref={sliderRef}
       type="range"
       min={String(SLIDER_MIN)}
       max={String(SLIDER_MAX)}
       step={String(SLIDER_STEP)}
       value={sliderValue}
-      onChange={(e) => onChange(sliderToMultiplier(parseFloat(e.target.value)))}
-      className="h-1 w-full cursor-pointer appearance-none rounded-full"
+      onChange={(e) => {
+        onInteract?.();
+        onChange(sliderToMultiplier(parseFloat(e.target.value)));
+      }}
+      onPointerDown={onInteract}
+      onFocus={onInteract}
+      className={`h-1 w-full cursor-pointer appearance-none rounded-full ${
+        visible ? 'pointer-events-auto' : 'pointer-events-none'
+      }`}
       style={{ background: track, accentColor: 'hsl(var(--background))' }}
       aria-label="Breath speed"
+      aria-hidden={visible ? undefined : true}
+      tabIndex={visible ? 0 : -1}
     />
   );
   if (minimal) {
@@ -161,6 +193,9 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   const [selectedDuration, setSelectedDuration] = useState<number | null>(() => initialDuration ?? DEFAULT_DURATION);
   const [activeMode, setActiveMode] = useState<ModeName>(resolvedInitialMode);
   const [speedMultiplier, setSpeedMultiplier] = useState(DEFAULT_SPEED_MULTIPLIER);
+  // Per-mode presets: { mode -> last-used speed + duration }. Hydrated from
+  // saved settings; kept current by an effect below; persisted with settings.
+  const [modePresets, setModePresets] = useState<Record<string, ModePreset>>({});
   const [themeColor, setThemeColor] = useState(BREATHING_PATTERNS[resolvedInitialMode].color);
   const [totalMinutes, setTotalMinutes] = useState(0);
   const [totalSeconds, setTotalSeconds] = useState(0);
@@ -195,7 +230,17 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     if (savedSettings) {
       const parsed = JSON.parse(savedSettings);
       if (!effectiveDefaultMode && parsed.mode) setActiveMode(parsed.mode);
-      if (parsed.phaseSpeeds && typeof parsed.phaseSpeeds === 'object') {
+      // Per-mode presets win over the flat speed/duration fields: a user who
+      // last used 1.4x + 5min in Relax gets exactly that back, not the values
+      // of whatever mode was active when the settings were last written.
+      const presets = sanitizeModePresets(parsed.modePresets, Object.keys(BREATHING_PATTERNS));
+      setModePresets(presets);
+      const savedMode = !effectiveDefaultMode && typeof parsed.mode === 'string' ? parsed.mode : null;
+      const resolvedMode = effectiveDefaultMode ?? savedMode ?? ModeName.Box;
+      const preset = presets[resolvedMode];
+      if (preset) {
+        setSpeedMultiplier(preset.speed);
+      } else if (parsed.phaseSpeeds && typeof parsed.phaseSpeeds === 'object') {
         // One-time migration: earlier builds stored per-phase speeds; fold
         // them into the single measure by averaging.
         const ps = parsed.phaseSpeeds as Record<string, unknown>;
@@ -244,7 +289,14 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     if (!savedSettings) return;
     try {
       const parsed = JSON.parse(savedSettings);
-      if (parsed.duration === null) {
+      // The mode this saved settings block belongs to: an explicit
+      // initialMode (native sheet) wins, else the saved mode.
+      const savedMode = typeof parsed.mode === 'string' ? parsed.mode : null;
+      const presetMode = effectiveDefaultMode ?? savedMode ?? activeMode;
+      const preset = sanitizeModePresets(parsed.modePresets, Object.keys(BREATHING_PATTERNS))[presetMode];
+      if (preset) {
+        setSelectedDuration(preset.duration === null ? null : Math.min(preset.duration, MAX_DURATION));
+      } else if (parsed.duration === null) {
         setSelectedDuration(null);
       } else if (typeof parsed.duration === 'number') {
         setSelectedDuration(Math.min(parsed.duration, MAX_DURATION));
@@ -271,6 +323,10 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
 
   const [phase, setPhase] = useState<BreathingPhase>(BreathingPhase.Idle);
   const [isRunning, setIsRunning] = useState(false);
+  // The floating pace bar is transient running-session chrome. Pausing,
+  // stopping, or completing a session removes it with the rest of the active
+  // breathing controls.
+  const [paceBarVisible, setPaceBarVisible] = useState(false);
 
   // Protocol mode state (for Wim Hof and similar multi-round techniques)
   const [isProtocolMode, setIsProtocolMode] = useState(false);
@@ -306,21 +362,67 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   const audioServiceRef = useRef<AudioService | null>(null);
   const soundHintTimeoutRef = useRef<number | null>(null);
   const soundHintUnmountRef = useRef<number | null>(null);
+  const paceBarHideTimeoutRef = useRef<number | null>(null);
   const lastSafeRuntimeTextRef = useRef<Partial<Record<RuntimePhraseKey, string>>>({
     'session.ready_to_start': runtimePhrases.resolve('session.ready_to_start').text
   });
+
+  const clearPaceBarHideTimer = useCallback(() => {
+    if (paceBarHideTimeoutRef.current !== null) {
+      window.clearTimeout(paceBarHideTimeoutRef.current);
+      paceBarHideTimeoutRef.current = null;
+    }
+  }, []);
+
+  const revealPaceBar = useCallback((autoHide: boolean) => {
+    clearPaceBarHideTimer();
+    setPaceBarVisible(true);
+    if (autoHide) {
+      paceBarHideTimeoutRef.current = window.setTimeout(() => {
+        paceBarHideTimeoutRef.current = null;
+        setPaceBarVisible(false);
+      }, PACE_BAR_HIDE_DELAY_MS);
+    }
+  }, [clearPaceBarHideTimer]);
+
+  const handlePaceBarInteraction = useCallback(() => {
+    // Every pointer/focus/value interaction is a fresh five-second window.
+    if (isRunning) revealPaceBar(true);
+  }, [isRunning, revealPaceBar]);
 
   // --- Orb drag ("pull the ball") -------------------------------------------
   // The ball assembly (Visualizer's inner layer) follows the finger while the
   // outer ring stays anchored; particles get pulled along via the layer's
   // live rect (see ParticleBackground's orb anchor). A drag past ~10px
   // suppresses the tap-to-toggle so pulling never accidentally starts/pauses.
-  // On release the ball returns with a slow, accelerating ease (long dwell at
-  // the start, then a quick pull home with a gentle overshoot settle).
+  //
+  // Physics: the ball is a mass on a spring the whole time. While dragging it
+  // eases toward the finger (stiff spring, slight rubbery lag — weight, not
+  // stickiness); on release the spring retunes to its calm return constants
+  // and the ball glides home with its momentum intact. One continuous rAF
+  // sim, so "following the finger" and "coming home" are seamless.
   const orbBallRef = useRef<HTMLDivElement>(null);
   const orbDragRef = useRef({ dragging: false, startX: 0, startY: 0, moved: 0 });
   const suppressClickRef = useRef(false);
-  const ORB_RETURN_CURVE = 'transform 760ms cubic-bezier(0.55, 0.04, 0.62, 1.14)';
+  const orbPointerDownRef = useRef(false);
+
+  // Ball spring, two tunings sharing one state (velocity is continuous):
+  // drag-follow is stiff with a touch of rubber; return is soft with
+  // near-critical damping (ζ ≈ 0.81) — a calm glide home, no bounce.
+  const ORB_DRAG_K = 220;          // stiffness — px/s² per px of error
+  const ORB_DRAG_C = 12;           // damping — ~0.40 of critical (rubbery)
+  const ORB_RETURN_K = 55;         // stiffness — calm glide home
+  const ORB_RETURN_C = 12;         // damping — ~0.81 of critical
+  const orbSpringRef = useRef<number | null>(null);
+  const orbSpringStateRef = useRef({ x: 0, y: 0, vx: 0, vy: 0 });
+  const orbTargetRef = useRef({ x: 0, y: 0 });
+  const orbSpringLastTsRef = useRef(0);
+  const orbReturningRef = useRef(false); // true between release and settle
+  const reduceMotionRef = useRef(false);
+
+  // Landing ripple: set with a timestamp when the ball settles home; the
+  // particle field reads it once and clears it (one soft outward wave).
+  const orbRippleRef = useRef<{ t: number } | null>(null);
 
   // Outer ring as a slow lagging follower. While the ball is pulled it eases
   // toward the ball's offset (rate ~4.5/s); on release it drifts back home at
@@ -366,10 +468,160 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     }
   }, [chaseRing]);
 
-  // Stop the ring chase when the component unmounts.
+  // --- Glow aura (secondary action) -----------------------------------------
+  // The blurred halo is its own layer (Visualizer's glowRef) so it can lag
+  // the blob with momentum, stretch subtly along velocity, and brighten with
+  // speed — while the morphing blob silhouette stays untouched. This is the
+  // "secondary action" that makes the drag feel alive: the core moves, the
+  // aura follows. Calm tuning: quick tight lag, small stretch, gentle
+  // brightening; all decays the moment the pull ends.
+  const glowRef = useRef<HTMLDivElement>(null);
+  const glowStateRef = useRef({ x: 0, y: 0, vx: 0, vy: 0, s: 0, vs: 0 });
+  const glowLoopRef = useRef<number | null>(null);
+  const glowLastTsRef = useRef(0);
+  const GLOW_LAG_K = 90;           // lag spring stiffness
+  const GLOW_LAG_C = 14;           // lag damping — ~0.74 of critical
+  const GLOW_LAG_VEL = 0.035;      // lag px per (px/s) of ball velocity
+  const GLOW_LAG_MAX = 22;         // hard cap on lag offset (px)
+  const GLOW_STRETCH_MAX = 0.18;   // max aura stretch (18% of radius)
+  const GLOW_STRETCH_RATE = 4500;  // px/s of velocity → full stretch
+  const GLOW_SETTLE_SPEED = 32;    // px/s — below this, the motion reads calm
+  const GLOW_OPACITY_BASE = 0.32;
+  const GLOW_OPACITY_PEAK = 0.45;
+
+  const stepGlowAura = useCallback((now: number) => {
+    const el = glowRef.current;
+    if (!el) {
+      glowLoopRef.current = null;
+      return;
+    }
+    const dt = glowLastTsRef.current
+      ? Math.min(Math.max((now - glowLastTsRef.current) / 1000, 0.001), 0.05)
+      : 0.016;
+    glowLastTsRef.current = now;
+    const g = glowStateRef.current;
+    const ball = orbSpringStateRef.current;
+    const speed = Math.hypot(ball.vx, ball.vy);
+
+    // Lag target: trail along the fixed horizontal axis (opposite side), with
+    // magnitude from current speed. The glow never rotates with the blob.
+    const lagAmount = Math.min(speed * GLOW_LAG_VEL, GLOW_LAG_MAX);
+    const tx = -lagAmount;
+    const ty = 0;
+    g.vx += (GLOW_LAG_K * (tx - g.x) - GLOW_LAG_C * g.vx) * dt;
+    g.vy += (GLOW_LAG_K * (ty - g.y) - GLOW_LAG_C * g.vy) * dt;
+    g.x += g.vx * dt;
+    g.y += g.vy * dt;
+
+    // Velocity-coupled stretch + brightness, always on the glow's fixed axis.
+    const moving = speed >= GLOW_SETTLE_SPEED;
+    const target = moving
+      ? Math.min(speed / GLOW_STRETCH_RATE, GLOW_STRETCH_MAX)
+      : 0;
+    g.vs += (GLOW_LAG_K * (target - g.s) - GLOW_LAG_C * g.vs) * dt;
+    g.s += g.vs * dt;
+    if (g.s < 0) {
+      g.s = 0;
+      g.vs = 0;
+    }
+
+    const opacity =
+      GLOW_OPACITY_BASE +
+      (GLOW_OPACITY_PEAK - GLOW_OPACITY_BASE) * Math.min(1, g.s / GLOW_STRETCH_MAX);
+
+    if (
+      Math.abs(g.x) < 0.3 &&
+      Math.abs(g.y) < 0.3 &&
+      Math.hypot(g.vx, g.vy) < 1 &&
+      g.s < 0.003 &&
+      target < 0.005
+    ) {
+      g.x = 0;
+      g.y = 0;
+      g.vx = 0;
+      g.vy = 0;
+      g.s = 0;
+      g.vs = 0;
+      el.style.transform = '';
+      // Restore the base opacity explicitly — clearing to '' would leave the
+      // element fully opaque until React happens to re-render.
+      el.style.opacity = GLOW_OPACITY_BASE.toFixed(3);
+      glowLoopRef.current = null;
+      return;
+    }
+    el.style.transform =
+      `translate3d(${g.x.toFixed(2)}px, ${g.y.toFixed(2)}px, 0) ` +
+      `scale(${(1 + g.s).toFixed(4)}, ${(1 - g.s).toFixed(4)})`;
+    el.style.opacity = opacity.toFixed(3);
+    glowLoopRef.current = requestAnimationFrame(stepGlowAura);
+  }, []);
+
+  const ensureGlowAura = useCallback(() => {
+    if (glowLoopRef.current === null) {
+      glowLastTsRef.current = 0;
+      glowLoopRef.current = requestAnimationFrame(stepGlowAura);
+    }
+  }, [stepGlowAura]);
+
+  // The ball's spring: chases the target (finger while dragging, home after
+  // release) with semi-implicit Euler — stable even on a dropped frame.
+  // Settles (snaps + releases the loop) once error and velocity are ~zero.
+  const stepOrbSpring = useCallback((now: number) => {
+    const el = orbBallRef.current;
+    if (!el) {
+      orbSpringRef.current = null;
+      return;
+    }
+    const dt = orbSpringLastTsRef.current
+      ? Math.min(Math.max((now - orbSpringLastTsRef.current) / 1000, 0.001), 0.05)
+      : 0.016;
+    orbSpringLastTsRef.current = now;
+    const s = orbSpringStateRef.current;
+    const target = orbTargetRef.current;
+    const dragging = orbDragRef.current.dragging;
+    const k = dragging ? ORB_DRAG_K : ORB_RETURN_K;
+    const c = dragging ? ORB_DRAG_C : ORB_RETURN_C;
+    s.vx += (k * (target.x - s.x) - c * s.vx) * dt;
+    s.vy += (k * (target.y - s.y) - c * s.vy) * dt;
+    s.x += s.vx * dt;
+    s.y += s.vy * dt;
+    el.style.transform = `translate3d(${s.x.toFixed(2)}px, ${s.y.toFixed(2)}px, 0)`;
+    // Keep the ring chasing the BALL (not the finger): while dragging the
+    // ball lags behind the pointer on its spring, and the ring must trail
+    // the ball — never overtake it. On release the pointer handler retargets
+    // the ring home.
+    if (dragging) ringTargetRef.current = { x: s.x, y: s.y };
+    if (
+      Math.abs(target.x - s.x) < 0.5 &&
+      Math.abs(target.y - s.y) < 0.5 &&
+      Math.hypot(s.vx, s.vy) < 2
+    ) {
+      s.x = target.x;
+      s.y = target.y;
+      s.vx = 0;
+      s.vy = 0;
+      el.style.transform = `translate3d(${target.x}px, ${target.y}px, 0)`;
+      el.style.transition = '';
+      orbSpringRef.current = null;
+      if (orbReturningRef.current) {
+        // The ball has landed home after a release — send one soft ripple
+        // out through the particle field so the landing reads.
+        orbReturningRef.current = false;
+        if (!reduceMotionRef.current && orbRippleRef.current === null) {
+          orbRippleRef.current = { t: performance.now() };
+        }
+      }
+      return;
+    }
+    orbSpringRef.current = requestAnimationFrame(stepOrbSpring);
+  }, []);
+
+  // Stop the chase loops when the component unmounts.
   useEffect(() => {
     return () => {
       if (ringChaseRef.current !== null) cancelAnimationFrame(ringChaseRef.current);
+      if (orbSpringRef.current !== null) cancelAnimationFrame(orbSpringRef.current);
+      if (glowLoopRef.current !== null) cancelAnimationFrame(glowLoopRef.current);
     };
   }, []);
 
@@ -383,9 +635,17 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     const dy = e.clientY - (r.top + r.height / 2);
     if (Math.hypot(dx, dy) > r.width / 2 + 12) return;
     orbDragRef.current = { dragging: true, startX: e.clientX, startY: e.clientY, moved: 0 };
-    // Don't clear the return transition yet — a plain tap mid-return should
-    // let the ball keep gliding home. It is cleared on the first real move.
-  }, []);
+    orbPointerDownRef.current = true;
+    // A press on the ball: light selection tick. The ball keeps gliding if
+    // it was mid-return — a plain tap shouldn't snatch it; the pull takes
+    // over on the first real move.
+    if (appState === 'active') {
+      onEvent?.('drag_haptic', { action: 'grab' });
+      if (!isNativeApp && typeof navigator !== 'undefined' && typeof navigator.vibrate === 'function') {
+        navigator.vibrate(5);
+      }
+    }
+  }, [appState, isNativeApp, onEvent]);
 
   const orbPointerMove = useCallback((e: PointerEvent) => {
     const drag = orbDragRef.current;
@@ -395,31 +655,77 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     const dy = e.clientY - drag.startY;
     drag.moved = Math.max(drag.moved, Math.hypot(dx, dy));
     if (drag.moved > 4) {
-      // A real pull starts: drop any running return transition, then follow.
-      if (el.style.transition) el.style.transition = 'none';
-      el.style.transform = `translate3d(${dx}px, ${dy}px, 0)`;
-      // Ring target: it eases out from center to track the ball.
-      ringTargetRef.current = { x: dx, y: dy };
+      if (reduceMotionRef.current) {
+        // Reduced motion: stick to the finger directly, no physics.
+        el.style.transition = 'none';
+        el.style.transform = `translate3d(${dx}px, ${dy}px, 0)`;
+        ringTargetRef.current = { x: dx, y: dy };
+        ensureRingChase();
+        return;
+      }
+      // A real pull starts: the ball eases toward the finger on its drag
+      // spring. Re-grab mid-return: anchor the target to the ball's live
+      // position so the handoff doesn't snap back to the grab point.
+      if (orbReturningRef.current) {
+        const s = orbSpringStateRef.current;
+        drag.startX = e.clientX - s.x;
+        drag.startY = e.clientY - s.y;
+      }
+      orbReturningRef.current = false;
+      orbTargetRef.current = { x: e.clientX - drag.startX, y: e.clientY - drag.startY };
+      el.style.transition = 'none';
+      if (orbSpringRef.current === null) {
+        // Fresh pull: start the chase from wherever the ball is.
+        orbSpringLastTsRef.current = 0;
+        orbSpringRef.current = requestAnimationFrame(stepOrbSpring);
+      }
+      ensureGlowAura();
+      // Ring target: chase the ball's live position (it lags the finger on
+      // the drag spring), so the ring always trails the ball itself.
+      ringTargetRef.current = {
+        x: orbSpringStateRef.current.x,
+        y: orbSpringStateRef.current.y
+      };
       ensureRingChase();
     }
-  }, [ensureRingChase]);
+  }, [ensureGlowAura, ensureRingChase, stepOrbSpring]);
 
   const orbPointerUp = useCallback(() => {
     const drag = orbDragRef.current;
     const el = orbBallRef.current;
     if (!drag.dragging) return;
     drag.dragging = false;
+    orbPointerDownRef.current = false;
     if (drag.moved > 10) suppressClickRef.current = true;
     if (el && drag.moved > 4) {
-      // Slow, accelerating return: ease-in-heavy curve with a small overshoot
-      // so the ball glides back and settles with a hint of bounce.
-      el.style.transition = ORB_RETURN_CURVE;
-      el.style.transform = 'translate3d(0, 0, 0)';
-      // The ring keeps trailing behind and then drifts home at its own pace.
+      if (reduceMotionRef.current) {
+        // Reduced motion: no physics — glide straight home.
+        el.style.transition = 'transform 300ms ease-out';
+        el.style.transform = 'translate3d(0, 0, 0)';
+      } else {
+        // Release: retune the spring to its calm return and let the ball
+        // glide home from wherever it is, keeping its momentum.
+        orbReturningRef.current = true;
+        orbTargetRef.current = { x: 0, y: 0 };
+        if (orbSpringRef.current === null) {
+          orbSpringLastTsRef.current = 0;
+          orbSpringRef.current = requestAnimationFrame(stepOrbSpring);
+        }
+        // Wake the aura so it follows the return glide with momentum.
+        ensureGlowAura();
+      }
+      // The ring keeps floating behind and then settles home at its own pace.
       ringTargetRef.current = { x: 0, y: 0 };
       ensureRingChase();
+      // Gentle impact haptic for a real pull release.
+      if (appState === 'active') {
+        onEvent?.('drag_haptic', { action: 'release' });
+        if (!isNativeApp && typeof navigator !== 'undefined' && typeof navigator.vibrate === 'function') {
+          navigator.vibrate(12);
+        }
+      }
     }
-  }, [ensureRingChase]);
+  }, [appState, ensureGlowAura, ensureRingChase, isNativeApp, onEvent, stepOrbSpring]);
 
   useEffect(() => {
     window.addEventListener('pointerdown', orbPointerDown, { passive: true });
@@ -433,6 +739,18 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
       window.removeEventListener('pointercancel', orbPointerUp);
     };
   }, [orbPointerDown, orbPointerMove, orbPointerUp]);
+
+  // Detect prefers-reduced-motion (iOS accessibility setting) so the return
+  // spring can degrade to a plain glide home.
+  useEffect(() => {
+    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+    reduceMotionRef.current = mq.matches;
+    const onChange = (e: MediaQueryListEvent) => {
+      reduceMotionRef.current = e.matches;
+    };
+    mq.addEventListener('change', onChange);
+    return () => mq.removeEventListener('change', onChange);
+  }, []);
 
   const getAudioService = useCallback(() => {
     if (!audioServiceRef.current) {
@@ -648,10 +966,28 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     return () => {
       if (soundHintTimeoutRef.current) window.clearTimeout(soundHintTimeoutRef.current);
       if (soundHintUnmountRef.current) window.clearTimeout(soundHintUnmountRef.current);
+      clearPaceBarHideTimer();
     };
-  }, []);
+  }, [clearPaceBarHideTimer]);
+
+  // Never let the running-session timeout fire after a pause/background
+  // transition. The render path removes the bar whenever playback stops.
+  useEffect(() => {
+    if (!isRunning) clearPaceBarHideTimer();
+  }, [clearPaceBarHideTimer, isRunning]);
 
   // --- Persistence Effects ---
+  // Keep the active mode's preset current: whatever speed/duration the user
+  // last had for THIS mode is remembered per mode. Gated on hydration so the
+  // first commit's defaults can't clobber a stored preset before load.
+  useEffect(() => {
+    if (!storageHydratedRef.current) return;
+    setModePresets((prev) => ({
+      ...prev,
+      [activeMode]: { speed: speedMultiplier, duration: selectedDuration },
+    }));
+  }, [activeMode, speedMultiplier, selectedDuration]);
+
   const mirrorPersist = useCallback(
     (key: string, value: string) => {
       if (!shouldMirrorPersist(isNativeApp, storageHydratedRef.current)) return;
@@ -666,11 +1002,12 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
       mode: activeMode,
       speed: speedMultiplier,
       color: themeColor,
-      duration: selectedDuration
+      duration: selectedDuration,
+      modePresets
     });
     localStorage.setItem(STORAGE_KEYS.SETTINGS, value);
     mirrorPersist(STORAGE_KEYS.SETTINGS, value);
-  }, [activeMode, speedMultiplier, themeColor, selectedDuration, mounted, mirrorPersist]);
+  }, [activeMode, speedMultiplier, themeColor, selectedDuration, modePresets, mounted, mirrorPersist]);
 
   useEffect(() => {
     if (!mounted) return;
@@ -730,7 +1067,8 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
 
   useEffect(() => {
     applyThemePreference(activeTheme);
-  }, [activeTheme, applyThemePreference]);
+    onEvent?.('theme_change', { theme: activeTheme });
+  }, [activeTheme, applyThemePreference, onEvent]);
 
   // --- Logic ---
 
@@ -819,6 +1157,14 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
 
     setActiveMode(effectiveDefaultMode);
     setThemeColor(BREATHING_PATTERNS[effectiveDefaultMode].color);
+    // Per-mode presets: restore the mode's own speed + duration. A mode
+    // with no preset yet inherits the current values (they become its
+    // preset the moment the user adjusts them).
+    const preset = modePresets[effectiveDefaultMode];
+    if (preset) {
+      setSpeedMultiplier(preset.speed);
+      setSelectedDuration(preset.duration);
+    }
   }, [
     effectiveDefaultMode,
     endSession,
@@ -827,12 +1173,25 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     sessionId,
     sessionSeconds,
     setInstructionKey,
+    modePresets,
   ]);
 
   const handleTogglePlay = useCallback(async () => {
     // A drag that pulled the ball shouldn't toggle the session.
     if (suppressClickRef.current) {
       suppressClickRef.current = false;
+      return;
+    }
+    // Once the pace bar has tucked away, the first tap in a hold phase is a
+    // discoverability cue: reveal it without changing the running state. The
+    // drag-suppression flag above is intentionally consumed before this
+    // branch so a drag release can never accidentally reveal or pause.
+    if (
+      isRunning &&
+      !paceBarVisible &&
+      (phase === BreathingPhase.HoldIn || phase === BreathingPhase.HoldOut)
+    ) {
+      revealPaceBar(true);
       return;
     }
     const audio = getAudioService();
@@ -844,6 +1203,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
         return;
       }
 
+      revealPaceBar(true);
       setIsRunning(true);
       // Only emit a fresh "start" + assign a new sessionId when this is a
       // true start (not a resume from pause). Resume keeps the same id so
@@ -897,6 +1257,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
         ? Math.max(sessionSeconds, Math.floor((Date.now() - sessionClockStartRef.current) / 1000))
         : sessionSeconds;
       setIsRunning(false);
+      clearPaceBarHideTimer();
       setIsProtocolMode(false);
       setPhase(BreathingPhase.Idle);
       setInstructionKey('session.paused');
@@ -910,11 +1271,31 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
       audio.stopBinaural();
       setScale(0);
     }
-  }, [isRunning, activeMode, themeColor, getAudioService, isIOS, soundStatus, sessionSeconds, selectedDuration, setInstructionKey, sessionId, endSession, onEvent, playPhaseCue, startSoundscape]);
+  }, [
+    isRunning,
+    activeMode,
+    clearPaceBarHideTimer,
+    endSession,
+    getAudioService,
+    isIOS,
+    onEvent,
+    paceBarVisible,
+    phase,
+    revealPaceBar,
+    selectedDuration,
+    sessionId,
+    sessionSeconds,
+    setInstructionKey,
+    soundStatus,
+    startSoundscape,
+    playPhaseCue,
+    themeColor,
+  ]);
 
   const handleStop = () => {
     const audio = getAudioService();
     setIsRunning(false);
+    clearPaceBarHideTimer();
     setSessionProgress(0);
     setIsProtocolMode(false);
     setPhase(BreathingPhase.Idle);
@@ -1426,6 +1807,10 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     return isRunning ? `${themeColor}1a` : undefined;
   };
 
+  // A paused session keeps the pace bar exposed even if the running-session
+  // five-second window had already elapsed.
+  const paceBarIsVisible = isRunning && paceBarVisible;
+
   return (
     <div
       className={`relative flex h-full w-full flex-col overflow-hidden ${backgroundVariant === 'winter-blue' ? '' : 'bg-background'} transition-colors duration-1000 ${className}`}
@@ -1446,6 +1831,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
           color={themeColor}
           speedMultiplier={speedMultiplier}
           orbRef={orbBallRef}
+          rippleRef={orbRippleRef}
         />
       )}
 
@@ -1489,6 +1875,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
 
         <Visualizer
           dragRef={orbBallRef}
+          glowRef={glowRef}
           ringRef={ringLayerRef}
           phase={phase}
           scale={scale}
@@ -1569,21 +1956,29 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
         </div>
       )}
 
-      {/* Live pace control — no toggle, no panel: the bare slider just sits
-          at the bottom while a session exists (running or paused) so the user
-          can adapt the speed on the go. Writes speedMultiplier, which the
-          animation loop applies on the next frame (current phase re-anchored,
-          no jump). */}
-      {(isRunning || sessionId !== null) && (
+      {/* Live pace control — no toggle, no panel: the bare slider briefly
+          cues itself on start/resume, then tucks away while running. Pause,
+          stop, and completion remove it. Writes
+          speedMultiplier, which the animation loop applies on the next frame
+          (current phase re-anchored, no jump). */}
+      {isRunning && (
         <div
-          className="fixed inset-x-0 bottom-0 z-40 flex justify-center px-12"
+          data-pace-bar
+          aria-hidden={!paceBarIsVisible}
+          className={`pace-bar fixed inset-x-0 bottom-0 z-40 flex justify-center px-12 ${
+            paceBarIsVisible
+              ? 'pointer-events-auto translate-y-0 opacity-100'
+              : 'pointer-events-none translate-y-full opacity-0'
+          }`}
           style={{ paddingBottom: safeAreaInsets.bottom + 14 }}
         >
-          <div className="pointer-events-auto w-full max-w-[12rem]">
+          <div className={`${paceBarIsVisible ? 'pointer-events-auto' : 'pointer-events-none'} w-full max-w-[12rem]`}>
             <PaceSlider
               value={speedMultiplier}
               onChange={handlePaceSliderChange}
               accent={themeColor}
+              visible={paceBarIsVisible}
+              onInteract={handlePaceBarInteraction}
               minimal
             />
           </div>
@@ -1604,10 +1999,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
           }}
         >
             <div className="mb-6 flex items-start justify-between">
-              <div>
-                <h2 className="text-xl font-semibold text-card-foreground">{getSafePhrase('ui.settings')}</h2>
-                <p className="text-sm text-muted-foreground">Sound, pacing, and appearance.</p>
-              </div>
+              <h2 className="text-xl font-semibold text-card-foreground">{getSafePhrase('ui.settings')}</h2>
               <button
                 onClick={() => setControlsOpen(false)}
                 className="rounded-full p-1.5 text-muted-foreground hover:bg-card hover:text-card-foreground transition-colors"

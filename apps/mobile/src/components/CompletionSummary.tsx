@@ -162,7 +162,7 @@ const styles = StyleSheet.create({
     borderRadius: 30,
     borderWidth: StyleSheet.hairlineWidth,
     paddingHorizontal: 24,
-    paddingTop: 42,
+    paddingTop: 50,
     paddingBottom: 22,
     alignItems: 'center',
     shadowColor: '#000',

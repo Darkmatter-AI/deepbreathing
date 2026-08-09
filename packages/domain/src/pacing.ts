@@ -20,9 +20,11 @@ export enum BreathingPhase {
   Idle = 'Ready'
 }
 
+import { ModeName } from "./modes";
+
 /** Duration in seconds for each phase of a breathing pattern. */
 export interface BreathingPattern {
-  name: string;
+  name: ModeName;
   description: string;
   inhale: number;
   inhale2?: number;

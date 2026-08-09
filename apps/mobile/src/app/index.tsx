@@ -7,10 +7,22 @@
 // components/breathing/*) is retired by this — kept in-repo for reference only.
 
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { Animated, AppState, type AppStateStatus, Pressable, StyleSheet, Text, View, useColorScheme } from 'react-native';
+import {
+  Alert,
+  Animated,
+  AppState,
+  Linking,
+  type AppStateStatus,
+  Pressable,
+  StyleSheet,
+  Text,
+  View,
+  useColorScheme,
+} from 'react-native';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Image } from 'expo-image';
 import { Stack } from 'expo-router';
+import { StatusBar } from 'expo-status-bar';
 import * as Localization from 'expo-localization';
 import * as Haptics from 'expo-haptics';
 import { activateKeepAwakeAsync, deactivateKeepAwake } from 'expo-keep-awake';
@@ -29,7 +41,12 @@ import ModeLibrarySheet from '../components/ModeLibrarySheet';
 import { BREATHING_PATTERNS, ModeName } from '../components/breathing-web/constants';
 import type { BreathingMode, SessionEndReason } from '@resonance/domain';
 import { randomUUID } from 'expo-crypto';
-import { useSession } from '../auth/auth-client';
+import { authClient, useSession } from '../auth/auth-client';
+import {
+  claimAccountDeletionPrompt,
+  parseAccountDeletionDeepLink,
+  releaseAccountDeletionPrompt,
+} from '../auth/account-deletion-deeplink';
 import {
   enqueueSessionEvent,
   flushSessionOutbox,
@@ -73,6 +90,7 @@ export default function HomeScreen() {
   const { data: authSession } = useSession();
   const colorScheme = useColorScheme();
   const theme: 'light' | 'dark' = colorScheme === 'light' ? 'light' : 'dark';
+  const [experienceTheme, setExperienceTheme] = useState<'light' | 'dark'>(theme);
   const locale = Localization.getLocales()[0]?.languageCode ?? 'en';
   const safeAreaInsets = useSafeAreaInsets();
 
@@ -89,11 +107,15 @@ export default function HomeScreen() {
   const edgeGlowOpacity = useRef(new Animated.Value(0)).current;
   const accountButtonOpacity = useRef(new Animated.Value(1)).current;
   const soundscape = useNativeSoundscape();
+  const { onSessionComplete } = soundscape;
 
   // Completion summary visibility.
   const [summaryData, setSummaryData] = useState<CompletionSummaryData | null>(null);
   const [accountOpen, setAccountOpen] = useState(false);
   const [practiceSummary, setPracticeSummary] = useState<AccountPracticeSummary | null>(null);
+  const pendingDeletionTokensRef = useRef(new Set<string>());
+  const handledDeletionTokensRef = useRef(new Set<string>());
+  const deletionInFlightRef = useRef(false);
 
   // MOB-5: Mode library state.
   // selectedMode starts as undefined so the webview loads from saved settings.
@@ -111,9 +133,95 @@ export default function HomeScreen() {
   // overlays (mode drawer, account button) hide so they don't float above it.
   const [settingsOpen, setSettingsOpen] = useState(false);
 
+  // Keep the native-to-WebView handoff visually identical to the launch screen.
+  // The DOM experience emits page_viewed_breathing once its client has mounted;
+  // until then, show the light loader instead of briefly exposing the host theme.
+  const [experienceReady, setExperienceReady] = useState(false);
+
   // Latest active mode name from the persist stream (resonance_settings.mode).
   // Used to show a checkmark on the current mode in the sheet.
   const [activeModeName, setActiveModeName] = useState<string | null>(null);
+
+  const confirmAccountDeletion = useCallback(
+    async (token: string) => {
+      releaseAccountDeletionPrompt(token, pendingDeletionTokensRef.current);
+      if (deletionInFlightRef.current) return;
+      handledDeletionTokensRef.current.add(token);
+      deletionInFlightRef.current = true;
+      try {
+        const result = await authClient.deleteUser({ token });
+        if (result.error) throw new Error(result.error.message ?? 'Account deletion failed.');
+        Alert.alert(
+          'Account deleted',
+          'Your account and synced practice data have been permanently deleted.',
+        );
+      } catch {
+        // Keep a failed/cancelled token retryable without ever showing the
+        // bearer token in an error message or log.
+        handledDeletionTokensRef.current.delete(token);
+        Alert.alert(
+          'Could not delete account',
+          'Keep the app open, make sure you are signed in, and try the email link again.',
+        );
+      } finally {
+        deletionInFlightRef.current = false;
+      }
+    },
+    [],
+  );
+
+  const handleAccountDeletionURL = useCallback(
+    (rawURL: string | null) => {
+      const request = parseAccountDeletionDeepLink(rawURL);
+      if (!request || deletionInFlightRef.current) return;
+      if (
+        !claimAccountDeletionPrompt(
+          request.token,
+          pendingDeletionTokensRef.current,
+          handledDeletionTokensRef.current,
+        )
+      ) {
+        return;
+      }
+      Alert.alert(
+        'Confirm account deletion',
+        'This permanently deletes your account and all synced practice data. This cannot be undone.',
+        [
+          {
+            text: 'Cancel',
+            style: 'cancel',
+            onPress: () =>
+              releaseAccountDeletionPrompt(
+                request.token,
+                pendingDeletionTokensRef.current,
+              ),
+          },
+          {
+            text: 'Delete account',
+            style: 'destructive',
+            onPress: () => void confirmAccountDeletion(request.token),
+          },
+        ],
+      );
+    },
+    [confirmAccountDeletion],
+  );
+
+  // Account deletion emails opened in Safari hand off to this app-root URL.
+  // GET/listener handling never mutates state; only the explicit Alert action
+  // calls Better Auth's existing token-confirmation branch.
+  useEffect(() => {
+    let disposed = false;
+    const receive = (url: string | null) => {
+      if (!disposed) handleAccountDeletionURL(url);
+    };
+    void Linking.getInitialURL().then(receive).catch(() => {});
+    const subscription = Linking.addEventListener('url', ({ url }) => receive(url));
+    return () => {
+      disposed = true;
+      subscription.remove();
+    };
+  }, [handleAccountDeletionURL]);
 
   useEffect(() => {
     soundscape.onAppState(appState);
@@ -129,7 +237,7 @@ export default function HomeScreen() {
 
   // Native overlays fade instead of popping out when a session starts or the
   // full-page settings covers the screen (matches the webview's own fades).
-  const overlaysVisible = !isSessionRunning && !settingsOpen;
+  const overlaysVisible = experienceReady && !isSessionRunning && !settingsOpen;
   useEffect(() => {
     Animated.timing(accountButtonOpacity, {
       toValue: overlaysVisible ? 1 : 0,
@@ -221,6 +329,9 @@ export default function HomeScreen() {
     seconds: number,
     stats: { totalMinutes: number; sessionsCompleted: number; sessionMode: string },
   ) => {
+    // The native hook queues this until the webview's audio_state {active:false}
+    // stop has completed, so the stop path cannot cut off or duplicate it.
+    onSessionComplete();
     // Success haptic — signals a positive completion.
     // NOTE: haptics cannot be felt on the simulator; this is code-path verified
     // only (__DEV__ log below). Confirm the feel on a real device (DAR-395).
@@ -235,9 +346,16 @@ export default function HomeScreen() {
       totalMinutes: stats.totalMinutes,
       sessionsCompleted: stats.sessionsCompleted,
     });
-  }, []);
+  }, [onSessionComplete]);
 
   const handleEvent = useCallback(async (name: string, params?: Record<string, any>) => {
+    if (name === 'page_viewed_breathing') {
+      setExperienceReady(true);
+    }
+    if (name === 'theme_change' && (params?.theme === 'light' || params?.theme === 'dark')) {
+      setExperienceTheme(params.theme);
+      return;
+    }
     if (
       authSession?.user.id &&
       (name === 'breathing_session_start' || name === 'mode_switch')
@@ -353,11 +471,17 @@ export default function HomeScreen() {
 
   // Match the native safe-area backdrop to the experience's --background token
   // (light: cream 32 72% 97%, dark: warm 20 34% 10%) so there's no black strip.
-  const baseBackdrop = theme === 'light' ? '#fdf8f2' : '#221711';
+  const baseBackdrop = experienceTheme === 'light' ? '#fdf8f2' : '#221711';
   const modeColor = BREATHING_PATTERNS[
     (activeModeName as ModeName | null) ?? ModeName.Box
   ]?.color ?? BREATHING_PATTERNS[ModeName.Box].color;
   const backdrop = isSessionRunning ? blendHex(baseBackdrop, modeColor, 0.16) : baseBackdrop;
+  const screenBackdrop = experienceReady ? backdrop : '#fdf8f2';
+  // The launch overlay is always light, even when the device is in dark mode.
+  // Keep the system indicators readable while the WebView theme is handed off,
+  // then follow the user's in-app theme once the experience is ready.
+  const statusBarStyle: 'light' | 'dark' =
+    !experienceReady || experienceTheme === 'light' ? 'dark' : 'light';
 
   const handleDismissSummary = useCallback(() => {
     setSummaryData(null);
@@ -391,8 +515,9 @@ export default function HomeScreen() {
   }, [activeModeName]);
 
   return (
-    <View style={[styles.container, { backgroundColor: backdrop }]}>
+    <View style={[styles.container, { backgroundColor: screenBackdrop }]}>
       <Stack.Screen options={{ headerShown: false }} />
+      <StatusBar style={statusBarStyle} animated />
       <Animated.View
         pointerEvents="none"
         style={[StyleSheet.absoluteFill, { backgroundColor: modeColor, opacity: edgeGlowOpacity }]}
@@ -422,10 +547,20 @@ export default function HomeScreen() {
             onEvent={handleEvent}
           />
         ) : null}
+        {!experienceReady && (
+          <View pointerEvents="none" style={styles.launchLoader}>
+            <Image
+              source={require('../../assets/images/splash-icon.png')}
+              style={styles.launchLoaderOrb}
+              contentFit="contain"
+              alt=""
+            />
+          </View>
+        )}
         {summaryData != null && (
           <CompletionSummary
             data={summaryData}
-            theme={theme}
+            theme={experienceTheme}
             isAuthenticated={Boolean(authSession?.user.id)}
             safeAreaTop={safeAreaInsets.top}
             onDismiss={handleDismissSummary}
@@ -449,8 +584,8 @@ export default function HomeScreen() {
             style={[
               styles.accountButton,
               {
-                backgroundColor: theme === 'dark' ? 'rgba(49,31,24,0.78)' : 'rgba(255,249,243,0.82)',
-                borderColor: theme === 'dark' ? '#604536' : '#e3cdbb',
+                backgroundColor: experienceTheme === 'dark' ? 'rgba(49,31,24,0.78)' : 'rgba(255,249,243,0.82)',
+                borderColor: experienceTheme === 'dark' ? '#604536' : '#e3cdbb',
               },
             ]}
           >
@@ -463,8 +598,8 @@ export default function HomeScreen() {
               />
             ) : (
               <View style={styles.guestPortrait}>
-                <View style={[styles.guestHead, { borderColor: theme === 'dark' ? '#f0dac8' : '#5a3826' }]} />
-                <View style={[styles.guestShoulders, { borderColor: theme === 'dark' ? '#f0dac8' : '#5a3826' }]} />
+                <View style={[styles.guestHead, { borderColor: experienceTheme === 'dark' ? '#f0dac8' : '#5a3826' }]} />
+                <View style={[styles.guestShoulders, { borderColor: experienceTheme === 'dark' ? '#f0dac8' : '#5a3826' }]} />
               </View>
             )}
           </Pressable>
@@ -472,14 +607,14 @@ export default function HomeScreen() {
         {/* MOB-5: Mode library pull-up tab — slides away while a session is
             running or the full-page settings covers the screen. */}
         <ModeLibrarySheet
-          theme={theme}
+          theme={experienceTheme}
           hidden={!overlaysVisible}
           activeModeName={activeModeName}
           onSelectMode={handleSelectMode}
         />
         <AccountSheet
           open={accountOpen}
-          theme={theme}
+          theme={experienceTheme}
           user={authSession?.user ?? null}
           practice={practiceSummary}
           onClose={() => setAccountOpen(false)}
@@ -492,6 +627,18 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#000' },
   safeArea: { flex: 1 },
+  launchLoader: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
+    zIndex: 200,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#fdf8f2',
+  },
+  launchLoaderOrb: { width: 220, height: 220 },
   accountButtonWrap: {
     position: 'absolute',
     left: 24,

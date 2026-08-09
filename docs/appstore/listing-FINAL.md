@@ -60,7 +60,7 @@ Deep Breathing Exercises provides timed breathing guidance based on established 
 
 PRIVACY
 
-We do not sell your data. Analytics are aggregated and not tied to advertising. The app works fully without an account or sign-in. See our Privacy Policy at deepbreathingexercises.com/privacy.
+We do not sell your data. Analytics are aggregated and not tied to advertising. The app works fully without an account; optional sign-in syncs practice sessions and settings across devices. See our Privacy Policy at deepbreathingexercises.com/privacy.
 ```
 
 ## Keywords (≤100) — 98 chars
@@ -87,11 +87,25 @@ breathing,calm,box breathing,4-7-8,sleep,anxiety,meditation,relax,stress,breathe
 > should show "Reentry Systems Unipessoal Lda" or a configured DBA, and whether copyright
 > should read "Darkmatter AI Labs" or the legal entity.
 
-## Age rating — all answers "No" → expected 4+
-Same as listing.md, with ONE correction:
+## Age rating — health/wellness topics present → expected 9+ on Apple's updated system
+Use these answers in the current App Store Connect questionnaire. Apple's definition of
+**Health or Wellness Topics** includes self-care or lifestyle recommendations such as
+exercise recommendations; the app's guided breathing practices meet that definition.
+
+- **Health or Wellness Topics: Yes** — guided breathing is the core self-care/lifestyle
+  recommendation in the app.
+- **Medical or Treatment Information: No / None** — the app does not diagnose, manage, or
+  treat a medical condition; it provides general breathing guidance and displays a safety
+  disclaimer.
 - **Unrestricted Web Access: No** — corrected justification:
   > No in-app web browser or arbitrary navigation; the app renders only bundled local UI and never loads external web pages.
-- Medical/Treatment Information: **No** (breathing guidance only; standard disclaimer present).
+
+All other capability, mature-theme, sexuality, violence, substance, gambling, contest,
+social-media, messaging, advertising, parental-control, and age-assurance answers remain
+**No / None**. With Health or Wellness Topics enabled, Apple's current ratings reference
+maps this to **9+** globally (and region-specific A10 Brazil, All Korea, and 12+ Vietnam).
+Ratings can differ on OS versions earlier than iOS 26; App Store Connect displays both
+systems where applicable.
 
 ## Pricing & Availability
 - Price: **Free** (no in-app purchases in v1)
@@ -99,13 +113,17 @@ Same as listing.md, with ONE correction:
 - Release: **Manual release** (hold until you approve) for the first submission
 
 ## Review notes (paste into ASC) — NO demo account needed
+
+> ⚠️ SUPERSEDED 2026-07-28: v1 now ships optional Apple/Google sign-in + sync. Use the
+> review notes in `submission-checklist.md` §13 (verified against code 2026-07-22), which
+> disclose the optional sign-in, email-confirmed account deletion, and the local-content
+> WKWebView. The paragraph below predates the account work — do not paste it.
+
 ```
-This app requires no account or sign-in. All features (all breathing modes, audio, haptics,
-timer, local stats, dark/light mode) are fully available to any user immediately on launch.
-No demo credentials are needed. The app renders bundled local UI in an embedded view and does
-not load any external website or allow web navigation.
+[superseded — see submission-checklist.md §13]
 ```
-Leave the ASC "Sign-in required" toggle OFF and the demo username/password fields empty.
+Leave the ASC "Sign-in required" toggle OFF and the demo username/password fields empty
+(sign-in is optional; reviewers can use Sign in with Apple).
 
 ## Screenshots (phone-only v1, no iPad set)
 
@@ -130,4 +148,3 @@ Ship 5–6, all from a clean install of the EAS build (real icon, not the Expo p
   screen (not yet built), which also adds Guideline 1.4.1 medical-claim review surface.
   Removed from the v1 listing. Revisit in v1.1 alongside the Pro tier.
 - **Pro tier / IAP** (RevenueCat) — per the ship-free-now decision.
-- **Optional account + cross-device sync** — no sign-in ships in v1; defer with Pro.

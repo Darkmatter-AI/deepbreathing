@@ -66,6 +66,23 @@ async function clickOrb(page, label) {
   }
 }
 
+async function getPaceBarState(page) {
+  return page.evaluate(() => {
+    const bar = document.querySelector('[data-pace-bar]');
+    const input = bar?.querySelector('input[type="range"][aria-label="Breath speed"]');
+    if (!bar || !input) return null;
+    const style = getComputedStyle(bar);
+    return {
+      className: bar.className,
+      opacity: style.opacity,
+      transform: style.transform,
+      pointerEvents: style.pointerEvents,
+      tabIndex: input.tabIndex,
+      ariaHidden: bar.getAttribute('aria-hidden'),
+    };
+  });
+}
+
 // ── main suite ─────────────────────────────────────────────────────────────
 
 async function main() {
@@ -120,10 +137,52 @@ async function main() {
     await clickOrb(page, 'Start Session');
     await page.waitForTimeout(1000);
 
-    sliderEl = await page.$('input[type="range"][aria-label="Breath speed"]');
+    sliderEl = await page.$('[data-pace-bar] input[type="range"][aria-label="Breath speed"]');
+    const paceBarShown = await getPaceBarState(page);
     check('1b: slider visible during session', () => {
       assert.notEqual(sliderEl, null);
+      assert.ok(paceBarShown);
+      assert.equal(paceBarShown.ariaHidden, 'false');
+      assert.equal(paceBarShown.opacity, '1');
+      assert.equal(paceBarShown.tabIndex, 0);
+      assert.notEqual(paceBarShown.className.includes('translate-y-full'), true);
     });
+
+    // After the five-second cue window the bar must be fully tucked away and
+    // pointer/focus-inert. On the default Box pattern this lands in Hold In,
+    // where the first orb tap is a reveal cue rather than a pause action.
+    await page.waitForTimeout(4700);
+    const paceBarHidden = await getPaceBarState(page);
+    check('1c: pace bar fades and slides fully down after 5000ms', () => {
+      assert.ok(paceBarHidden);
+      assert.equal(paceBarHidden.ariaHidden, 'true');
+      assert.equal(paceBarHidden.opacity, '0');
+      assert.equal(paceBarHidden.tabIndex, -1);
+      assert.equal(paceBarHidden.pointerEvents, 'none');
+      assert.ok(paceBarHidden.className.includes('translate-y-full'));
+    });
+
+    await clickOrb(page, 'Pause Session');
+    await page.waitForTimeout(650);
+    const paceBarRevealed = await getPaceBarState(page);
+    const labelAfterReveal = await page.$eval('button[aria-label="Pause Session"]', el => el.getAttribute('aria-label'));
+    check('1d: first hidden hold tap reveals without pausing', () => {
+      assert.ok(paceBarRevealed);
+      assert.equal(paceBarRevealed.ariaHidden, 'false');
+      assert.equal(paceBarRevealed.opacity, '1');
+      assert.equal(labelAfterReveal, 'Pause Session');
+    });
+
+    await clickOrb(page, 'Pause Session');
+    await page.waitForTimeout(500);
+    const paceBarPaused = await getPaceBarState(page);
+    check('1e: pause removes pace bar', () => {
+      assert.equal(paceBarPaused, null);
+    });
+
+    // Resume so the remaining checks continue with an active session.
+    await clickOrb(page, 'Start Session');
+    await page.waitForTimeout(300);
 
     // ── TEST 2: slider attributes ─────────────────────────────────────────
     console.log('\n[smoke] 2. Slider attributes');
@@ -456,6 +515,19 @@ async function main() {
       const dims = await page4.$eval('canvas', el => ({ w: el.width, h: el.height }));
       assert.ok(dims.w > 0 && dims.h > 0,
         `Canvas dimensions must be positive, got ${dims.w}x${dims.h}`);
+    });
+
+    await checkAsync('10c: reduced motion still hides pace bar without transition', async () => {
+      const running = await page4.$('button[aria-label="Pause Session"]');
+      if (!running) await clickOrb(page4, 'Start Session');
+      await page4.waitForTimeout(5600);
+      const state = await getPaceBarState(page4);
+      const transitionDuration = await page4.$eval('[data-pace-bar]', el => getComputedStyle(el).transitionDuration);
+      assert.ok(state, 'pace bar missing during reduced-motion session');
+      assert.equal(state.ariaHidden, 'true');
+      assert.equal(state.opacity, '0');
+      assert.equal(state.pointerEvents, 'none');
+      assert.match(transitionDuration, /0s/, `expected no transition, got ${transitionDuration}`);
     });
 
     await ctx4.close();

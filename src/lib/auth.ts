@@ -5,6 +5,11 @@ import { expo } from "@better-auth/expo";
 import { Pool } from "pg";
 import { Resend } from "resend";
 import { importPKCS8, SignJWT } from "jose";
+import {
+  createAppleNativeTokenExchangePlugin,
+  revokeAppleTokensBeforeDelete,
+  type AppleAccountTokenRow,
+} from "./apple-auth";
 
 function getResend() {
   return new Resend(process.env.RESEND_API_KEY);
@@ -27,9 +32,16 @@ const appleCredentials = {
 };
 
 const hasAppleCredentials = Object.values(appleCredentials).every(Boolean);
+const appleNativeClientId =
+  process.env.APPLE_APP_BUNDLE_IDENTIFIER ?? "com.deepbreathing.app";
+const hasAppleSigningCredentials = [
+  appleCredentials.teamId,
+  appleCredentials.keyId,
+  appleCredentials.privateKey,
+].every(Boolean);
 
-async function generateAppleClientSecret() {
-  const { clientId, teamId, keyId, privateKey } = appleCredentials;
+async function generateAppleClientSecret(clientId = appleCredentials.clientId) {
+  const { teamId, keyId, privateKey } = appleCredentials;
   if (!clientId || !teamId || !keyId || !privateKey) {
     throw new Error("Apple sign-in credentials are incomplete");
   }
@@ -44,6 +56,50 @@ async function generateAppleClientSecret() {
     .setIssuedAt(now)
     .setExpirationTime(now + 180 * 24 * 60 * 60)
     .sign(key);
+}
+
+const appleNativeTokenExchangePlugin = createAppleNativeTokenExchangePlugin({
+  nativeClientId: appleNativeClientId,
+  hasSigningCredentials: hasAppleSigningCredentials,
+  generateClientSecret: (clientId) => generateAppleClientSecret(clientId),
+});
+
+function isTrustedNativeRequest(request?: Request): boolean {
+  const expoOrigin = request?.headers.get("expo-origin");
+  if (!expoOrigin) return false;
+  try {
+    const parsed = new URL(expoOrigin);
+    return (
+      parsed.protocol === "deepbreathing:" &&
+      parsed.hostname === "" &&
+      (parsed.pathname === "" || parsed.pathname === "/")
+    );
+  } catch {
+    return expoOrigin === "deepbreathing://";
+  }
+}
+
+function accountDeletionEmailURL(
+  url: string,
+  token: string,
+  request?: Request,
+): string {
+  if (!isTrustedNativeRequest(request)) return url;
+  return `deepbreathing:///?accountDeletionToken=${encodeURIComponent(token)}`;
+}
+
+function escapeEmailHTML(value: string): string {
+  return value.replace(
+    /[&<>"']/g,
+    (character) =>
+      ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;",
+      })[character] ?? character,
+  );
 }
 
 function createAuth() {
@@ -80,18 +136,42 @@ function createAuth() {
     user: {
       deleteUser: {
         enabled: true,
-        sendDeleteAccountVerification: async ({ user, url }) => {
-          if (await isSuppressed(user.email)) return;
-          await getResend().emails.send({
+        sendDeleteAccountVerification: async ({ user, url, token }, request) => {
+          const confirmationURL = escapeEmailHTML(
+            accountDeletionEmailURL(url, token, request),
+          );
+          const result = await getResend().emails.send({
             from: "Deep Breathing Exercises <noreply@deepbreathingexercises.com>",
             to: user.email,
             subject: "Confirm account deletion",
             html: `<div style="font-family: system-ui, -apple-system, sans-serif; max-width: 400px; margin: 0 auto; padding: 40px 20px; color: #333;">
   <p style="font-size: 16px; line-height: 1.7;">Use this link to permanently delete your Deep Breathing Exercises account and synced practice data:</p>
-  <a href="${url}" style="display: inline-block; background: #7a2f24; color: white; padding: 12px 24px; border-radius: 12px; text-decoration: none; font-weight: 600; margin: 12px 0;">Delete my account</a>
+  <a href="${confirmationURL}" style="display: inline-block; background: #7a2f24; color: white; padding: 12px 24px; border-radius: 12px; text-decoration: none; font-weight: 600; margin: 12px 0;">Delete my account</a>
+  <p style="font-size: 13px; color: #777; margin-top: 20px;">If you used Sign in with Apple, you can also remove Deep Breathing Exercises from your Apple ID settings after deletion.</p>
   <p style="font-size: 13px; color: #777; margin-top: 20px;">If you did not request this, ignore this email and your account will remain intact.</p>
 </div>`,
           });
+          if (result.error) {
+            throw new Error("Failed to send account deletion verification email");
+          }
+        },
+        beforeDelete: async (user) => {
+          const revokeResult = await revokeAppleTokensBeforeDelete(user.id, {
+            query: (sql, params) =>
+              pool.query<AppleAccountTokenRow>(sql, [...params]),
+            clientIds: [appleCredentials.clientId, appleNativeClientId].filter(
+              (value): value is string => Boolean(value),
+            ),
+            generateClientSecret: (clientId) =>
+              generateAppleClientSecret(clientId),
+          });
+          if (revokeResult.failed > 0) {
+            console.warn("[apple-revocation] deletion cleanup incomplete", {
+              attempted: revokeResult.attempted,
+              succeeded: revokeResult.succeeded,
+              failed: revokeResult.failed,
+            });
+          }
         },
       },
     },
@@ -141,6 +221,7 @@ function createAuth() {
     },
     plugins: [
       expo(),
+      appleNativeTokenExchangePlugin,
       magicLink({
         sendMagicLink: async ({ email, url }) => {
           if (await isSuppressed(email)) return;

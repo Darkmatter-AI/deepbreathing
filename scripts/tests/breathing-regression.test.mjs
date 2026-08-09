@@ -25,6 +25,7 @@ const sharedPacing = read("packages/domain/src/pacing.ts");
 // ---------------------------------------------------------------------------
 
 const exp = read("apps/mobile/src/components/breathing-web/BreathingExperience.tsx");
+const paceCss = read("apps/mobile/src/components/breathing-web/styles/source.css");
 const pb = read("apps/mobile/src/components/breathing-web/components/ParticleBackground.tsx");
 const viz = read("apps/mobile/src/components/breathing-web/components/Visualizer.tsx");
 const pacing = read("apps/mobile/src/components/breathing-web/pacing.ts");
@@ -42,16 +43,17 @@ test("mobile: speed slider — LEFT = slower, RIGHT = faster, default centered",
   // the slider input uses the mapping and a 0.05 step so the default centers
   assert.match(exp, /const sliderValue = multiplierToSlider\(value\);/);
   assert.match(exp, /value=\{sliderValue\}/);
-  assert.match(resonance, /onChange=\{\(e\) => setSpeedMultiplier\(sliderToMultiplier\(parseFloat\(e\.target\.value\)\)\)/);
+  assert.match(exp, /onChange=\{\(e\) => \{\s*onInteract\?\.\(\);\s*onChange\(sliderToMultiplier\(parseFloat\(e\.target\.value\)\)\);/s,
+    "slider changes still map position back to the shared multiplier");
   assert.match(exp, /step=\{String\(SLIDER_STEP\)\}/);
 });
 
 test("mobile: ONE speed measure — no per-phase sliders, no toggle pill", () => {
-  // The floating control is a bare slider, always visible during a session.
+  // The floating control is a bare slider mounted only while actively running.
   assert.match(exp, /const \[speedMultiplier, setSpeedMultiplier\] = useState/);
   assert.doesNotMatch(exp, /paceOpen/, "pace toggle state must not return");
   assert.doesNotMatch(exp, /Adjust breath pace/, "toggle pill button must not return");
-  assert.match(exp, /\(isRunning \|\| sessionId !== null\) &&/, "bare slider is visible while a session exists");
+  assert.match(exp, /\{isRunning && \(/, "bare slider is limited to active playback");
   assert.match(exp, /<PaceSlider\n\s+value=\{speedMultiplier\}/, "pace panel/slider binds the single measure");
   assert.match(exp, /minimal/, "bare (label-less) slider mode exists");
 });
@@ -98,7 +100,7 @@ test("mobile: particles idle-float — no outward expulsion, no pile, no center 
   // Orb wake is finger-gated and has NO attraction term (drags must not rake particles into the center).
   assert.match(pb, /pullingBall/);
   assert.doesNotMatch(pb, /ORB_PULL_ACCEL/, "attraction toward the ball must not return");
-  assert.match(pb, /orb\.vx \* ORB_WAKE/, "wake-only drag coupling");
+  assert.match(pb, /orb\.vx \* wake/, "wake-only drag coupling");
 });
 
 test("mobile: particle update() signature and call site stay aligned", () => {
@@ -135,6 +137,47 @@ test("mobile: pace slider emits haptic ticks on position change", () => {
   assert.match(exp, /paceHapticLastTimeRef/, "throttles to ~1 per 35 ms");
   assert.match(exp, /SLIDER_STEP/, "step threshold guard present");
   assert.match(exp, /navigator\.vibrate\?\.\(5\)/, "web vibrate fallback (gentle 5ms)");
+});
+
+test("mobile: pace bar reveals on start, auto-hides, and unmounts on pause", () => {
+  assert.match(exp, /const \[paceBarVisible, setPaceBarVisible\] = useState\(false\)/,
+    "bar starts hidden before a session");
+  assert.match(exp, /const PACE_BAR_HIDE_DELAY_MS = 5000/,
+    "running-session reveal window is five seconds");
+  assert.match(exp, /setPaceBarVisible\(false\)/,
+    "timeout hides the bar");
+  assert.match(exp, /paceBarIsVisible = isRunning && paceBarVisible/,
+    "visibility is limited to an actively running session");
+  assert.match(exp, /\{isRunning && \(\s*<div\s*data-pace-bar/s,
+    "pause, stop, and completion unmount the floating control");
+  assert.match(exp, /translate-y-full/, "hidden bar slides fully below the viewport");
+  assert.match(exp, /data-pace-bar/, "floating control has a stable smoke-test hook");
+  assert.match(exp, /tabIndex=\{visible \? 0 : -1\}/,
+    "hidden slider is removed from the tab order");
+  assert.match(exp, /aria-hidden=\{visible \? undefined : true\}/,
+    "hidden slider is removed from the accessibility tree");
+  assert.match(exp, /onPointerDown=\{onInteract\}/, "pointer interaction reveals/resets the bar");
+  assert.match(exp, /onFocus=\{onInteract\}/, "keyboard focus reveals/resets the bar");
+  assert.match(paceCss, /\.pace-bar\s*\{[^}]*transition:/,
+    "bar transition is defined in the source stylesheet");
+  assert.match(paceCss, /prefers-reduced-motion:[^}]*\.pace-bar[^}]*transition:\s*none/s,
+    "reduced motion removes the bar transition");
+});
+
+test("mobile: hidden hold-phase tap reveals pace bar without pausing", () => {
+  const clickIdx = exp.indexOf("const handleTogglePlay = useCallback");
+  assert.ok(clickIdx >= 0, "orb toggle handler exists");
+  const clickBlock = exp.slice(clickIdx, clickIdx + 2200);
+  const suppressIdx = clickBlock.indexOf("if (suppressClickRef.current)");
+  const revealIdx = clickBlock.indexOf("revealPaceBar(true)");
+  assert.ok(suppressIdx >= 0 && revealIdx > suppressIdx,
+    "drag click suppression is consumed before the reveal branch");
+  assert.match(clickBlock, /isRunning\s*&&\s*!paceBarVisible/,
+    "reveal branch only applies to a hidden running bar");
+  assert.match(clickBlock, /BreathingPhase\.HoldIn\s*\|\|\s*phase\s*===\s*BreathingPhase\.HoldOut/,
+    "hold-phase tap is the reveal cue");
+  assert.match(clickBlock, /\n\s*return;\n\s*\}\n\s*const audio/,
+    "reveal cue returns before normal pause handling");
 });
 
 test("mobile: index.tsx handles pace_haptic with Haptics.selectionAsync", () => {
@@ -214,7 +257,7 @@ test("mobile: ParticleBackground respects prefers-reduced-motion", () => {
   // guards pointer.active and the orb wake/keep-out blocks).
   assert.match(pb, /!reducedMotion\s*&&\s*pointer\.active/,
     "interaction field must be gated on reducedMotion");
-  assert.match(pb, /if\s*\(!reducedMotion\)\s*\{/,
+  assert.match(pb, /if\s*\(!reducedMotion\s*&&\s*orb\s*!=\s*null\)\s*\{/,
     "orb interaction block must be gated on reducedMotion");
   // The canvas element must carry a data-reduced-motion attribute.
   assert.match(pb, /data-reduced-motion/,

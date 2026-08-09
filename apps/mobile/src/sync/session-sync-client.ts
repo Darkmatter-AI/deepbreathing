@@ -40,6 +40,9 @@ export interface AccountPracticeSummary {
 }
 
 let flushPromise: Promise<boolean> | null = null;
+// Hydration must wait for an in-flight guest-session write. A user can sign in
+// from the completion receipt before AsyncStorage has saved that session.
+let pendingOutboxWrite: Promise<void> = Promise.resolve();
 
 async function loadOutbox(): Promise<OutboxItem[]> {
   try {
@@ -62,14 +65,20 @@ export async function getOrCreateGuestId(): Promise<string> {
   return guestId;
 }
 
-export async function enqueueSessionEvent(event: SessionEvent): Promise<void> {
-  const outbox = await loadOutbox();
-  if (outbox.some((item) => item.event.id === event.id)) return;
-  outbox.push({ event, attempt: 0, nextAttemptAt: 0 });
-  await saveOutbox(outbox);
+export function enqueueSessionEvent(event: SessionEvent): Promise<void> {
+  const write = pendingOutboxWrite.then(async () => {
+    const outbox = await loadOutbox();
+    if (outbox.some((item) => item.event.id === event.id)) return;
+    outbox.push({ event, attempt: 0, nextAttemptAt: 0 });
+    await saveOutbox(outbox);
+  });
+  // Keep later writes and account hydration alive if AsyncStorage fails once.
+  pendingOutboxWrite = write.catch(() => {});
+  return write;
 }
 
 async function performFlush(): Promise<boolean> {
+  await pendingOutboxWrite;
   const cookie = authClient.getCookie();
   if (!cookie) return false;
 

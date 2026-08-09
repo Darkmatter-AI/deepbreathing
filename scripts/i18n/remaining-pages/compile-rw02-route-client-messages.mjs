@@ -27,7 +27,7 @@ const promptSourcePath = join(
 );
 const modeSourcePath = join(
   repoRoot,
-  "packages/audio/src/modes.ts",
+  "packages/domain/src/modes.ts",
 );
 const guideSourceRoot = join(
   repoRoot,

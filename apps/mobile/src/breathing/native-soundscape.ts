@@ -16,6 +16,7 @@ import { BREATHING_PATTERNS } from '../components/breathing-web/constants';
  * Event contract (all emitted by the DOM webview today):
  * - audio_state {active, muted, mode}  → start/stop/retarget the soundscape
  * - phase_haptic {phase, color}        → play cue + re-anchor the phase clock
+ * - onSessionComplete()                → queue one post-stop completion bloom
  * - persist(resonance_settings)        → speed multiplier for phase durations
  *
  * The webview stays the timing authority; this hook only interpolates phase
@@ -56,6 +57,8 @@ export interface NativeSoundscapeHandle {
   onAudioState(params: { active?: unknown; muted?: unknown; mode?: unknown }): void;
   /** phase_haptic event from the webview. */
   onPhase(phase: unknown, color?: unknown): void;
+  /** Successful timed session completion; plays once after the ambient stop. */
+  onSessionComplete(): void;
   /** Speed multiplier from mirrored resonance settings. */
   onSpeedMultiplier(speed: number): void;
   /** binauralEnabled from mirrored resonance settings (web parity: users can turn the binaural layer off). */
@@ -77,6 +80,13 @@ export function useNativeSoundscape(): NativeSoundscapeHandle {
   });
   const sessionStartMsRef = useRef(0);
   const tickRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  // Completion is signalled by the host callback before the webview's
+  // audio_state {active:false} teardown. Keep a generation token so the cue is
+  // emitted once per run, regardless of which callback arrives first.
+  const sessionGenerationRef = useRef(0);
+  const pendingCompletionRef = useRef<{ generation: number; muted: boolean } | null>(null);
+  const playedCompletionGenerationRef = useRef<number | null>(null);
+  const mutedRef = useRef(false);
 
   const getEngine = useCallback(() => {
     if (!engineRef.current) {
@@ -238,6 +248,10 @@ export function useNativeSoundscape(): NativeSoundscapeHandle {
   }, [getEngine, startTick]);
 
   const stopSoundscape = useCallback((options: { fade?: boolean } = {}) => {
+    // Invalidate an in-flight recipe rebuild before stopping layers. Without
+    // this, a completion teardown racing an awaited start could resurrect an
+    // ambient layer after the completion bloom starts.
+    startGenRef.current += 1;
     stopTick();
     sessionStartMsRef.current = 0;
     const engine = engineRef.current;
@@ -251,7 +265,34 @@ export function useNativeSoundscape(): NativeSoundscapeHandle {
     if (__DEV__) console.log('[soundscape] stopped');
   }, [stopTick]);
 
-  const mutedRef = useRef(false);
+  const playCompletionCueForGeneration = useCallback((generation: number, muted: boolean) => {
+    if (generation <= 0 || playedCompletionGenerationRef.current === generation) return;
+    const engine = engineRef.current;
+    if (!engine) return;
+    playedCompletionGenerationRef.current = generation;
+    pendingCompletionRef.current = null;
+    if (!muted) engine.playCompletionCue();
+  }, []);
+
+  const onSessionComplete = useCallback(() => {
+    const generation = sessionGenerationRef.current;
+    if (
+      generation <= 0 ||
+      playedCompletionGenerationRef.current === generation ||
+      pendingCompletionRef.current?.generation === generation
+    ) {
+      return;
+    }
+
+    if (activeRef.current) {
+      pendingCompletionRef.current = { generation, muted: mutedRef.current };
+      return;
+    }
+
+    // Handles the alternate ordering (audio_state false first) and duplicate
+    // completion callbacks without replaying the bloom.
+    playCompletionCueForGeneration(generation, mutedRef.current);
+  }, [playCompletionCueForGeneration]);
 
   const onAudioState = useCallback<NativeSoundscapeHandle['onAudioState']>((params) => {
     const active = params.active === true;
@@ -270,14 +311,36 @@ export function useNativeSoundscape(): NativeSoundscapeHandle {
     const unmuted = mutedRef.current && !muted;
     mutedRef.current = muted;
 
+    // A mode switch is its own hard boundary. If it races a stale completion
+    // callback, discard the pending completion rather than cueing a mode change.
+    if (modeChanged && pendingCompletionRef.current?.generation === sessionGenerationRef.current) {
+      pendingCompletionRef.current = null;
+    }
+
     if (active && (!activeRef.current || modeChanged || unmuted)) {
+      if (!activeRef.current) {
+        sessionGenerationRef.current += 1;
+        pendingCompletionRef.current = null;
+        playedCompletionGenerationRef.current = null;
+      }
       activeRef.current = true;
       void startSoundscape(mode);
     } else if (!active && activeRef.current) {
+      const pendingCompletion =
+        pendingCompletionRef.current?.generation === sessionGenerationRef.current
+          ? pendingCompletionRef.current
+          : null;
       activeRef.current = false;
+      pendingCompletionRef.current = null;
       stopSoundscape();
+      if (pendingCompletion !== null) {
+        playCompletionCueForGeneration(
+          pendingCompletion.generation,
+          pendingCompletion.muted,
+        );
+      }
     }
-  }, [getEngine, startSoundscape, stopSoundscape]);
+  }, [getEngine, playCompletionCueForGeneration, startSoundscape, stopSoundscape]);
 
   const onPhase = useCallback<NativeSoundscapeHandle['onPhase']>((phase, color) => {
     const cue = cueForPhase(phase);
@@ -316,5 +379,12 @@ export function useNativeSoundscape(): NativeSoundscapeHandle {
     };
   }, [stopTick]);
 
-  return { onAudioState, onPhase, onSpeedMultiplier, onBinauralEnabled, onAppState };
+  return {
+    onAudioState,
+    onPhase,
+    onSessionComplete,
+    onSpeedMultiplier,
+    onBinauralEnabled,
+    onAppState,
+  };
 }

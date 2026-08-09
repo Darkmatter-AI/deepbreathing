@@ -4,3 +4,6 @@ export * from "./sessions";
 export * from "./sync";
 export * from "./sensory";
 export * from "./pacing";
+export * from "./settings";
+export * from "./modes";
+export * from "./patterns";

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { ActivityIndicator, Alert, Pressable, StyleSheet, Text, View } from 'react-native';
+import { ActivityIndicator, Alert, Linking, Pressable, StyleSheet, Text, View } from 'react-native';
 import BottomSheet, {
   BottomSheetBackdrop,
   BottomSheetScrollView,
@@ -12,6 +12,8 @@ import type { AccountPracticeSummary } from '../sync/session-sync-client';
 import AuthActions from './AuthActions';
 import { accountAvatarUri } from './account-avatar';
 import { authClient, signOut } from './auth-client';
+
+const PRIVACY_POLICY_URL = 'https://deepbreathingexercises.com/privacy';
 
 interface AccountUser {
   id?: string | null;
@@ -223,6 +225,16 @@ export default function AccountSheet({ open, theme, user, practice, onClose }: P
             <Text style={[styles.privacy, { color: subtle }]}>Breathing always works without an account.</Text>
           </View>
         )}
+        <View style={styles.privacyFooter}>
+          <Pressable
+            onPress={() => void Linking.openURL(PRIVACY_POLICY_URL)}
+            accessibilityRole="link"
+            accessibilityLabel="Open Privacy Policy"
+            hitSlop={8}
+          >
+            <Text style={[styles.privacyLink, { color: accent }]}>Privacy Policy</Text>
+          </Pressable>
+        </View>
       </BottomSheetScrollView>
     </BottomSheet>
   );
@@ -240,6 +252,8 @@ const styles = StyleSheet.create({
   guestBody: { paddingTop: 28, gap: 22 },
   bodyCopy: { fontSize: 16, lineHeight: 24 },
   privacy: { fontSize: 13, textAlign: 'center', paddingTop: 2 },
+  privacyFooter: { alignItems: 'center', paddingTop: 4, paddingBottom: 4 },
+  privacyLink: { fontSize: 13, fontWeight: '600', textDecorationLine: 'underline' },
   accountBody: { paddingTop: 22, gap: 14 },
   identity: { padding: 14, borderRadius: 20, borderWidth: StyleSheet.hairlineWidth, flexDirection: 'row', alignItems: 'center', gap: 13 },
   avatar: { width: 54, height: 54, borderRadius: 27 },

@@ -51,3 +51,12 @@ test("mobile pins SDK-compatible secure auth dependencies", () => {
     assert.ok(pkg.dependencies[dependency], `missing ${dependency}`);
   }
 });
+
+test("mobile account hydration waits for a pending guest-session write", () => {
+  const file = path.join(ROOT, "apps/mobile/src/sync/session-sync-client.ts");
+  const source = fs.readFileSync(file, "utf8");
+  assert.match(source, /let pendingOutboxWrite: Promise<void> = Promise\.resolve\(\)/);
+  assert.match(source, /const write = pendingOutboxWrite\.then\(async \(\) =>/);
+  assert.match(source, /pendingOutboxWrite = write\.catch\(\(\) => \{\}\)/);
+  assert.match(source, /async function performFlush\(\): Promise<boolean> \{\s*await pendingOutboxWrite;/s);
+});

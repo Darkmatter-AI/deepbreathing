@@ -1,0 +1,61 @@
+# Keep EAS uploads aligned with the repository ignore rules. EAS uses this file
+# instead of .gitignore when it is present.
+
+# dependencies
+/node_modules
+node_modules/
+/.pnpm-store
+apps/resonance-app/
+apps/resonance-mobile/
+apps/resonance-mobile-app/
+# apps/mobile is tracked; its CNG-generated native dirs are not
+apps/mobile/ios/
+apps/mobile/android/
+
+# next
+/.next
+.next.stale-*/
+/out
+tsconfig.tsbuildinfo
+
+# env
+.env
+.env*.local
+
+# misc
+pnpm-debug.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+.mcp.json
+
+# expo / react-native
+**/.expo/
+**/.expo-shared/
+**/web-build/
+**/dist/
+**/coverage/
+**/ios/Pods/
+**/ios/build/
+**/ios/.xcode.env.local
+**/android/.gradle/
+**/android/.idea/
+**/android/build/
+**/android/app/build/
+**/android/local.properties
+.vercel
+.env.local
+
+# local agent configuration
+.agents/
+.claude/launch.json
+.claude/settings.local.json
+
+# stray CLI output / one-off exports
+--full-page
+deepbreathingexercises_*_all-issues_*/
+/_tmp_*
+/app.json
+/prototypes/
+/tmp/

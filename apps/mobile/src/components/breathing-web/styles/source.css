@@ -91,9 +91,31 @@
 
 html, body { background-color: hsl(var(--background)); }
 
+/* The breathing experience is a full-screen immersive surface — no text
+   selection or long-press callout anywhere (dragging the orb would
+   otherwise highlight the labels behind it). */
+*,
+*::before,
+*::after {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+/* The floating pace control fades and travels completely below the viewport
+   after its short discoverability window. Reduced motion still applies the
+   hidden state; it only removes the visual transition. */
+.pace-bar {
+  transition: opacity 500ms ease-out, transform 500ms ease-out;
+  will-change: opacity, transform;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-blob,
-  .animate-hue {
+  .animate-hue,
+  .pace-bar {
     animation: none !important;
+    transition: none !important;
   }
 }

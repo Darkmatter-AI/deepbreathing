@@ -78,7 +78,7 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 220,
           "dark": {
-            "backgroundColor": "#221711"
+            "backgroundColor": "#fdf8f2"
           },
           "android": {
             "image": "./assets/images/splash-icon.png",
@@ -93,7 +93,7 @@
       [
         "expo-audio",
         {
-          "microphonePermission": false,
+          "microphonePermission": "Deep Breathing does not record audio or request microphone access. This key is required because the audio playback engine links a library that references microphone APIs.",
           "recordAudioAndroid": false,
           "enableBackgroundPlayback": true,
           "enableBackgroundRecording": false
