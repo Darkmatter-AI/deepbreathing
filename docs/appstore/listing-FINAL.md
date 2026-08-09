@@ -130,7 +130,8 @@ Leave the ASC "Sign-in required" toggle OFF and the demo username/password field
 > **2026-07-01 as-shipped:** ASC's iPhone slot for this app accepts only 6.5" sizes
 > (1242×2688 / 1284×2778). The final marketing set (photoreal iPhone mockups, Nano Banana 2
 > + composited captions) lives in `screenshots/marketing/`; the resized 1284×2778 uploads in
-> `screenshots/marketing/asc-upload/`. All 6 uploaded to ASC in order 01→06 on 2026-07-01.
+> `screenshots/marketing/asc-upload/`. The refreshed set was uploaded to ASC and verified in
+> order 01→06 on 2026-08-10.
 > Raw truthful captures remain in `screenshots/` (kept as the fidelity source).
 Ship 5–6, all from a clean install of the EAS build (real icon, not the Expo placeholder):
 1. Active Box session (orb mid-expansion, phase label) — hero shot

@@ -58,13 +58,13 @@ Status key: ✅ Done | ⏳ Pending | 🔲 Not started
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 4.1 | `app.json` version and remote iOS build number are correct | ✅ | Version 1.0.0; EAS remote build number is 16 and production auto-increment will assign 17 to the next build. |
+| 4.1 | `app.json` version and remote iOS build number are correct | ✅ | Version 1.0.0; production auto-increment assigned Build 17. |
 | 4.2 | `ITSAppUsesNonExemptEncryption = false` in `ios.infoPlist` | ✅ | Already set in `app.json` |
 | 4.3 | `PrivacyInfo.xcprivacy` added to iOS target | ✅ | Declared via `ios.privacyManifests` in `app.json` (UserDefaults CA92.1, SystemBootTime 35F9.1, FileTimestamp C617.1, DiskSpace E174.1); Expo generates the manifest at prebuild |
 | 4.4 | GA4 env vars set for EAS production builds | ✅ | Done 2026-07-28: `EXPO_PUBLIC_GA4_MEASUREMENT_ID` (G-53DLCBMRL3, plaintext) and `EXPO_PUBLIC_GA4_MP_API_SECRET` (sensitive) created in the EAS `production` environment. Builds ≤10 shipped with analytics no-oping; build 11 is the first with live GA4. |
 | 4.5 | Ears-on audio parity pass on a real device (TestFlight or dev build) | ⏳ | 2026-07-22: shared `@resonance/audio` engine runs natively (react-native-audio-api). RNAA setTargetAtTime warble found+fixed (8265f7b); Abi confirmed by ear in the simulator that mobile now sounds like the website. Remaining on-device: silent switch, screen lock/background continuity, phone-speaker balance. |
-| 4.6 | Production build: `eas build --platform ios --profile production` | ⏳ | Build 16 is the latest finished production build, but it predates the current icon, loader, pace-bar, completion, theme, privacy, and auth fixes. Build 17 must be created from a **clean release worktree** containing only the intended release snapshot. Current EAS CLI behavior overlays the entire working tree (including uncommitted and untracked files), so a scoped commit alone does not isolate this dirty checkout. |
-| 4.7 | Build passes all Apple validations (check build log in EAS dashboard) | ⏳ | Confirm Build 17 finishes in EAS and processes in App Store Connect without privacy-manifest, entitlement, or microphone-purpose warnings. |
+| 4.6 | Production build: `eas build --platform ios --profile production` | ✅ | Build 17 completed 2026-08-10 from clean release commit `bb9ff53` in `/Users/abi/Sites/deepbreathing-ios-v1-release`. EAS build id: `f3588d16-eb73-4120-8164-793f0632c2c5`. |
+| 4.7 | Build passes all Apple validations (check build log in EAS dashboard) | ✅ | Build 17 finished successfully, uploaded successfully, and processed in App Store Connect as ready to submit. No blocking validation warning was shown. |
 
 ---
 
@@ -92,8 +92,8 @@ Apple requires screenshots for every device size you support. Accepted current i
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 6.1 | iPhone screenshots (min 3, up to 10) | ⏳ | Six current RGB/no-alpha 1284×2778 marketing shots are ready; shots 02, 04, and 05 now show the current drawer, Settings, and completion UI. Upload all six before submission. |
-| 6.2 | iPhone 6.5" screenshots | ⏳ | Upload the refreshed 1284×2778 set to the accepted 6.5" slot after final visual QA. |
+| 6.1 | iPhone screenshots (min 3, up to 10) | ✅ | Six current RGB/no-alpha 1284×2778 marketing shots uploaded 2026-08-10 and verified in ASC in order 01→06. |
+| 6.2 | iPhone 6.5" screenshots | ✅ | Refreshed 1284×2778 set is live in the accepted 6.5" slot. |
 | 6.3 | iPad 12.9" screenshots (if `supportsTablet: true`) | ✅ N/A | `supportsTablet: false` — not required |
 | 6.4 | Screenshots do not show status bar with wrong time/signal | ✅ | Composited marketing mockups |
 | 6.5 | App Previews (optional video) | 🔲 | Not required; can skip for v1 |
@@ -139,7 +139,7 @@ Apple requires screenshots for every device size you support. Accepted current i
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 10.1 | Age rating questionnaire completed in ASC | ⏳ | Re-run the questionnaire before submission: set **Health or Wellness Topics = Yes** (the app is guided self-care/lifestyle breathing practice) and leave **Medical or Treatment Information = None/No** (no diagnosis, condition management, or treatment). Apple's updated system should then show 9+ globally (A10 Brazil, All Korea, 12+ Vietnam); ratings may differ on OS versions earlier than iOS 26. |
+| 10.1 | Age rating questionnaire completed in ASC | ✅ | Verified 2026-08-10: **Health or Wellness Topics = Yes** and **Medical or Treatment Information = None/No**. ASC shows 9+ in 172 countries/regions, 12+ in Brazil and Vietnam, and All in South Korea; older operating systems use the legacy rating. |
 
 ---
 
@@ -157,9 +157,9 @@ Apple requires screenshots for every device size you support. Accepted current i
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 12.1 | Upload the release build to App Store Connect | ⏳ | Build and submit 17 only after the clean release snapshot and physical-device gate pass. |
-| 12.2 | Build appears in App Store Connect/TestFlight | ⏳ | Confirm Build 17 processing, compliance, and internal TestFlight availability. |
-| 12.3 | Select the release build on the version page | ⏳ | Replace the previously selected older build with Build 17, then save and re-check all warnings. |
+| 12.1 | Upload the release build to App Store Connect | ✅ | Build 17 uploaded through EAS Submit on 2026-08-10; submission id `c3f5b3ca-e230-4890-9589-1fc9b24896c7`. |
+| 12.2 | Build appears in App Store Connect/TestFlight | ✅ | Build 17 processed successfully and appeared as ready to submit. |
+| 12.3 | Select the release build on the version page | ✅ | Replaced Build 14 with Build 17 and saved the version page on 2026-08-10. |
 
 ---
 
@@ -196,9 +196,9 @@ system authentication session to our own auth domain, which redirects to Google'
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 14.1 | All ASC fields complete (no red warnings on version page) | 🔲 | |
-| 14.2 | Click "Submit for Review" in ASC | 🔲 | |
-| 14.3 | Answer additional export compliance and content rights questions if prompted | 🔲 | |
+| 14.1 | All ASC fields complete (no red warnings on version page) | ✅ | Metadata, six screenshots, review notes, Build 17, 9+ rating, trader declaration, and not-a-regulated-medical-device declaration verified. |
+| 14.2 | Click "Submit for Review" in ASC | ✅ | Submitted 2026-08-10. ASC submission `3668ff50-60a3-4efd-8623-deff0100f8c1` is **Waiting for Review**. Manual release remains selected. |
+| 14.3 | Answer additional export compliance and content rights questions if prompted | ✅ | No additional prompt appeared. Content rights already state that the app does not contain or access third-party content; `ITSAppUsesNonExemptEncryption` is false. |
 
 Expected review time: 1–3 business days for a first submission.
 
