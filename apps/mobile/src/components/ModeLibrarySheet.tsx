@@ -1,9 +1,18 @@
-import { useCallback, useEffect, useMemo, useRef } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import {
+  AccessibilityInfo,
+  findNodeHandle,
+  Pressable,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 import BottomSheet, {
   BottomSheetBackdrop,
+  BottomSheetHandle,
   BottomSheetScrollView,
   type BottomSheetBackdropProps,
+  type BottomSheetHandleProps,
 } from '@gorhom/bottom-sheet';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -37,11 +46,36 @@ interface Props {
 const ROW_HEIGHT = 62;
 const VISIBLE_ROWS = 4;
 const HANDLE_HEIGHT = 24;
-const DRAWER_LABEL_HEIGHT = 32;
+const DRAWER_LABEL_HEIGHT = 44;
+
+function relativeLuminance(hex: string) {
+  const channels = hex.slice(1).match(/../g)?.map((value) => Number.parseInt(value, 16) / 255);
+  if (!channels || channels.length !== 3) return 0;
+  return channels.reduce((sum, channel, index) => {
+    const linear = channel <= 0.03928 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4;
+    return sum + linear * [0.2126, 0.7152, 0.0722][index];
+  }, 0);
+}
+
+function contrastRatio(foreground: string, background: string) {
+  const light = Math.max(relativeLuminance(foreground), relativeLuminance(background));
+  const dark = Math.min(relativeLuminance(foreground), relativeLuminance(background));
+  return (light + 0.05) / (dark + 0.05);
+}
+
+function accessibleTint(color: string, background: string) {
+  // The mode swatches are intentionally saturated, but the lightest swatches
+  // do not carry a 3:1 boundary contrast on the warm sheet. A darker fallback
+  // keeps the selected checkmark legible without changing the swatch itself.
+  if (contrastRatio(color, background) >= 3) return color;
+  return relativeLuminance(background) > 0.5 ? '#8a4b1b' : '#e8d5b7';
+}
 
 export default function ModeLibrarySheet({ theme, hidden = false, activeModeName, onSelectMode }: Props) {
   const insets = useSafeAreaInsets();
   const sheetRef = useRef<BottomSheet>(null);
+  const drawerLabelRef = useRef<View>(null);
+  const [sheetIndex, setSheetIndex] = useState(hidden ? -1 : 0);
   const collapsedHeight = HANDLE_HEIGHT + DRAWER_LABEL_HEIGHT + insets.bottom;
   const expandedHeight = collapsedHeight + ROW_HEIGHT * VISIBLE_ROWS;
   const snapPoints = useMemo(
@@ -52,10 +86,28 @@ export default function ModeLibrarySheet({ theme, hidden = false, activeModeName
   const light = theme === 'light';
   const bg = light ? '#fdf8f2' : '#221711';
   const text = light ? '#5c3d1e' : '#e8d5b7';
-  const subtle = light ? '#a07850' : '#8a6a44';
+  const subtle = light ? '#79512f' : '#c7a188';
   const border = light ? '#e8d5b7' : '#3a2a1a';
   const rowSep = light ? '#e8d5b7cc' : '#3a2a1a99';
   const handleColor = light ? '#c4a882' : '#5a4030';
+  const contentHidden = hidden || sheetIndex < 0;
+  const rowsHidden = contentHidden || sheetIndex !== 1;
+
+  const closeSheet = useCallback(() => {
+    if (sheetIndex === 1) sheetRef.current?.snapToIndex(0);
+    else sheetRef.current?.close();
+  }, [sheetIndex]);
+
+  const focusDrawerLabel = useCallback(() => {
+    const tag = findNodeHandle(drawerLabelRef.current);
+    if (tag != null) AccessibilityInfo.setAccessibilityFocus(tag);
+  }, []);
+
+  useEffect(() => {
+    if (hidden || sheetIndex !== 1) return;
+    const timer = setTimeout(focusDrawerLabel, 260);
+    return () => clearTimeout(timer);
+  }, [focusDrawerLabel, hidden, sheetIndex]);
 
   const renderBackdrop = useCallback(
     (props: BottomSheetBackdropProps) => (
@@ -65,14 +117,35 @@ export default function ModeLibrarySheet({ theme, hidden = false, activeModeName
         disappearsOnIndex={0}
         opacity={0.45}
         pressBehavior={0}
+        accessible
+        accessibilityRole="button"
+        accessibilityLabel="Collapse mode library"
+        accessibilityHint="Double-tap to return to the mode tab"
       />
     ),
     [],
+  );
+  const renderHandle = useCallback(
+    (props: BottomSheetHandleProps) => (
+      <BottomSheetHandle
+        {...props}
+        accessible={!contentHidden}
+        accessibilityElementsHidden={contentHidden}
+        importantForAccessibility={contentHidden ? 'no-hide-descendants' : 'yes'}
+        accessibilityRole="adjustable"
+        accessibilityLabel="Mode library handle"
+        accessibilityHint="Swipe up to show breathing modes, or swipe down to hide the library"
+      />
+    ),
+    [contentHidden],
   );
   const handleRowPress = useCallback((mode: ModeName) => {
     onSelectMode(mode);
     sheetRef.current?.snapToIndex(0);
   }, [onSelectMode]);
+  const openSheet = useCallback(() => {
+    sheetRef.current?.snapToIndex(1);
+  }, []);
 
   // Animated hide/show: close() slides the sheet below the screen edge; on
   // return it comes back at the collapsed tab. Replaces the host's previous
@@ -82,10 +155,12 @@ export default function ModeLibrarySheet({ theme, hidden = false, activeModeName
     else sheetRef.current?.snapToIndex(0);
   }, [hidden]);
 
+  // Visible state starts at index={0}; closed state is -1 so assistive
+  // technologies never see the sheet during the host's initial hide.
   return (
     <BottomSheet
       ref={sheetRef}
-      index={0}
+      index={hidden ? -1 : 0}
       snapPoints={snapPoints}
       animateOnMount={false}
       enableDynamicSizing={false}
@@ -93,55 +168,86 @@ export default function ModeLibrarySheet({ theme, hidden = false, activeModeName
       enableContentPanningGesture
       enableHandlePanningGesture
       backdropComponent={renderBackdrop}
+      handleComponent={renderHandle}
+      onChange={setSheetIndex}
+      accessible={false}
+      onAccessibilityEscape={closeSheet}
       backgroundStyle={{ backgroundColor: bg, borderColor: border, borderWidth: StyleSheet.hairlineWidth }}
       handleIndicatorStyle={{ backgroundColor: handleColor, width: 42 }}
       style={styles.sheet}
     >
-      <BottomSheetScrollView
-        contentContainerStyle={styles.rowList}
-        showsVerticalScrollIndicator
+      <View
+        style={styles.accessibilityContainer}
+        accessible={false}
+        accessibilityElementsHidden={contentHidden}
+        importantForAccessibility={contentHidden ? 'no-hide-descendants' : 'yes'}
+        accessibilityViewIsModal={sheetIndex === 1 && !hidden}
+        onAccessibilityEscape={closeSheet}
       >
-        <Pressable
-          onPress={() => sheetRef.current?.snapToIndex(1)}
-          style={[styles.drawerLabel, { height: DRAWER_LABEL_HEIGHT + insets.bottom }]}
-          accessibilityRole="button"
-          accessibilityLabel="Open mode library"
+        <BottomSheetScrollView
+          contentContainerStyle={styles.rowList}
+          showsVerticalScrollIndicator
+          accessible={false}
         >
-          <Text style={[styles.drawerLabelText, { color: subtle }]}>Modes</Text>
-        </Pressable>
-        {SHIPPED_MODES.map((entry, index) => {
-          const active = activeModeName === entry.name || (activeModeName === null && entry.name === ModeName.Box);
-          return (
-            <Pressable
-              key={entry.name}
-              style={({ pressed }) => [
-                styles.row,
-                index < SHIPPED_MODES.length - 1 && { borderBottomColor: rowSep, borderBottomWidth: StyleSheet.hairlineWidth },
-                pressed && styles.pressed,
-              ]}
-              onPress={() => handleRowPress(entry.name)}
-              accessibilityRole="button"
-              accessibilityLabel={`Switch to ${entry.name}`}
-              accessibilityState={{ selected: active }}
-            >
-              <View style={[styles.dot, { backgroundColor: entry.color }]} />
-              <View style={styles.rowText}>
-                <Text style={[styles.modeName, { color: text }]}>{entry.name}</Text>
-                <Text style={[styles.modeDetail, { color: subtle }]}>{entry.phaseLabel} · {entry.use}</Text>
-              </View>
-              {active ? <Text style={[styles.check, { color: entry.color }]}>✓</Text> : null}
-            </Pressable>
-          );
-        })}
-      </BottomSheetScrollView>
+          <Pressable
+            ref={drawerLabelRef}
+            onPress={() => {
+              if (sheetIndex === 1) sheetRef.current?.snapToIndex(0);
+              else openSheet();
+            }}
+            style={[styles.drawerLabel, { height: DRAWER_LABEL_HEIGHT + insets.bottom }]}
+            accessibilityRole="button"
+            accessibilityLabel={sheetIndex === 1 ? 'Collapse mode library' : 'Open mode library'}
+            accessibilityHint={sheetIndex === 1 ? 'Double-tap to return to the mode tab' : 'Double-tap to choose a breathing mode'}
+            accessibilityState={{ expanded: sheetIndex === 1 }}
+            onAccessibilityEscape={closeSheet}
+          >
+            <Text style={[styles.drawerLabelText, { color: subtle }]}>Modes</Text>
+          </Pressable>
+          <View
+            accessible={false}
+            accessibilityElementsHidden={rowsHidden}
+            importantForAccessibility={rowsHidden ? 'no-hide-descendants' : 'yes'}
+          >
+            {SHIPPED_MODES.map((entry, index) => {
+              const active = activeModeName === entry.name || (activeModeName === null && entry.name === ModeName.Box);
+              const checkColor = accessibleTint(entry.color, bg);
+              return (
+                <Pressable
+                  key={entry.name}
+                  style={({ pressed }) => [
+                    styles.row,
+                    index < SHIPPED_MODES.length - 1 && { borderBottomColor: rowSep, borderBottomWidth: StyleSheet.hairlineWidth },
+                    pressed && styles.pressed,
+                  ]}
+                  onPress={() => handleRowPress(entry.name)}
+                  accessibilityRole="radio"
+                  accessibilityLabel={`${entry.name}, ${entry.phaseLabel}, ${entry.use}`}
+                  accessibilityHint="Double-tap to switch breathing mode"
+                  accessibilityState={{ selected: active }}
+                  accessibilityValue={{ text: active ? 'Selected' : 'Not selected' }}
+                >
+                  <View style={[styles.dot, { backgroundColor: entry.color }]} accessible={false} />
+                  <View style={styles.rowText} accessible={false}>
+                    <Text style={[styles.modeName, { color: text }]}>{entry.name}</Text>
+                    <Text style={[styles.modeDetail, { color: subtle }]}>{entry.phaseLabel} · {entry.use}</Text>
+                  </View>
+                  {active ? <Text style={[styles.check, { color: checkColor }]} accessible={false}>✓</Text> : null}
+                </Pressable>
+              );
+            })}
+          </View>
+        </BottomSheetScrollView>
+      </View>
     </BottomSheet>
   );
 }
 
 const styles = StyleSheet.create({
   sheet: { zIndex: 90 },
+  accessibilityContainer: { flex: 1 },
   rowList: { paddingHorizontal: 20 },
-  drawerLabel: { alignItems: 'center', justifyContent: 'flex-start' },
+  drawerLabel: { minHeight: 44, alignItems: 'center', justifyContent: 'center' },
   drawerLabelText: { fontSize: 11, fontWeight: '600', letterSpacing: 0.5 },
   row: { minHeight: ROW_HEIGHT, flexDirection: 'row', alignItems: 'center', gap: 14, paddingVertical: 10 },
   pressed: { opacity: 0.62 },

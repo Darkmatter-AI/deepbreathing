@@ -262,4 +262,27 @@ describe("Apple token revocation before account deletion", () => {
       }),
     ).resolves.toEqual({ attempted: 0, succeeded: 0, failed: 1 });
   });
+
+  it("decrypts stored provider tokens before revocation", async () => {
+    const fetchImpl = vi.fn<AppleFetch>(async (_input, init) => {
+      const form = new URLSearchParams(String(init?.body));
+      expect(form.get("token")).toBe("decrypted-refresh");
+      return jsonResponse({}, 200);
+    });
+
+    const result = await revokeAppleTokensBeforeDelete("user-1", {
+      query: async () => ({
+        rows: [{ refresh_token: "$ba$7$encrypted", access_token: null }],
+      }),
+      clientIds: ["apple-client"],
+      generateClientSecret: async () => "test-secret",
+      decryptToken: vi.fn(async (token) =>
+        token === "$ba$7$encrypted" ? "decrypted-refresh" : null,
+      ),
+      fetchImpl,
+    });
+
+    expect(result).toEqual({ attempted: 1, succeeded: 1, failed: 0 });
+    expect(fetchImpl).toHaveBeenCalledTimes(1);
+  });
 });

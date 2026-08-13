@@ -52,6 +52,14 @@ yarn-error.log*
 .claude/launch.json
 .claude/settings.local.json
 
+# nested worktrees and disposable agent checkouts (never upload to EAS)
+**/.claude/worktrees/
+**/.codex/worktrees/
+**/.herdr/worktrees/
+**/.agents/worktrees/
+**/.worktrees/
+**/.git/worktrees/
+
 # stray CLI output / one-off exports
 --full-page
 deepbreathingexercises_*_all-issues_*/

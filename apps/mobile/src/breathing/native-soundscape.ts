@@ -211,12 +211,13 @@ export function useNativeSoundscape(): NativeSoundscapeHandle {
 
   const startSoundscape = useCallback(async (mode: ModeName) => {
     const gen = ++startGenRef.current;
+    const stillCurrent = () => gen === startGenRef.current && activeRef.current;
     const engine = getEngine();
     const color = BREATHING_PATTERNS[mode as unknown as keyof typeof BREATHING_PATTERNS]?.color;
     engine.setBreathingMode(mode);
     if (color) engine.setThemeColor(color);
     const ready = await engine.resume();
-    if (gen !== startGenRef.current) return;
+    if (!stillCurrent()) return;
     if (!ready) {
       if (__DEV__) console.warn('[soundscape] engine.resume() failed');
       return;
@@ -228,20 +229,20 @@ export function useNativeSoundscape(): NativeSoundscapeHandle {
     // pairs with every bed.
     if (mode === ModeName.WimHof) {
       await engine.startDrone(color ?? '#4f46e5');
-      if (gen !== startGenRef.current) return;
+      if (!stillCurrent()) return;
       if (binauralRef.current) await engine.startBinaural(15);
     } else if (mode === ModeName.Relax || mode === ModeName.Coherent) {
       await engine.startPinkNoise();
-      if (gen !== startGenRef.current) return;
+      if (!stillCurrent()) return;
       if (binauralRef.current) await engine.startBinaural(mode === ModeName.Relax ? 2 : 10);
     } else {
       await engine.startDrone(color ?? '#4f46e5');
-      if (gen !== startGenRef.current) return;
+      if (!stillCurrent()) return;
       if (binauralRef.current) await engine.startBinaural(10);
     }
-    if (gen !== startGenRef.current) return;
+    if (!stillCurrent()) return;
     await engine.startSubBass(color);
-    if (gen !== startGenRef.current) return;
+    if (!stillCurrent()) return;
     if (!sessionStartMsRef.current) sessionStartMsRef.current = Date.now();
     startTick();
     if (__DEV__) console.log(`[soundscape] started — mode=${mode}`);
@@ -373,6 +374,12 @@ export function useNativeSoundscape(): NativeSoundscapeHandle {
 
   useEffect(() => {
     return () => {
+      // Invalidate every awaited startup before disposing the engine. This is
+      // the hook-level counterpart to AudioService's per-layer epochs: an
+      // unmount/interruption cannot let a late continuation restart ambient
+      // nodes after the native graph has been torn down.
+      activeRef.current = false;
+      startGenRef.current += 1;
       stopTick();
       void engineRef.current?.dispose();
       engineRef.current = null;

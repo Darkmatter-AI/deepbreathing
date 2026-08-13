@@ -1,17 +1,20 @@
 #!/usr/bin/env node
 
 /**
- * Rebuild the three marketing screenshots that contain UI which changes often.
+ * Rebuild three provisional marketing compositions from checked-in captures.
  *
  * The source images are the committed, real simulator captures in raw/. This
- * script only scales them and places them in a deterministic, App Store-ready
- * composition; it never redraws or edits the UI copy inside a capture.
+ * script only scales them and places them in a deterministic composition; it never redraws
+ * or edits the UI copy inside a capture. As of the Build 18 correction pass, these outputs
+ * are fidelity references, not final App Store assets. Do not upload them until the physical-
+ * device gate in ../submission-checklist.md passes and a fresh capture is approved.
  *
  * Usage (from the repository root):
  *   node docs/appstore/screenshots/generate-current-marketing.mjs
  *
- * Only marketing/asc-upload/02, 04, and 05 are written. The raw inputs are
- * never overwritten, so a fresh checkout can reproduce the upload assets.
+ * Only marketing/asc-upload/02, 04, and 05 are written. The raw inputs are never overwritten,
+ * so a fresh checkout can reproduce the provisional compositions. This command intentionally
+ * does not generate the final Build 18 screenshot set.
  */
 
 import { chromium } from "playwright";

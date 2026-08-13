@@ -84,9 +84,9 @@ function resolveEmbedPlayerRequest(params: { locale: string; slug: string }) {
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string; slug: string };
+  params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
-  const request = resolveEmbedPlayerRequest(params);
+  const request = resolveEmbedPlayerRequest(await params);
   const [content, embedContent] = await Promise.all([
     loadBreatheContent(
       request.slug as BreatheContentSlug,
@@ -116,10 +116,11 @@ export default async function LocalizedEmbedPlayerPage({
   params,
   searchParams,
 }: {
-  params: { locale: string; slug: string };
-  searchParams: EmbedPlayerSearchParams;
+  params: Promise<{ locale: string; slug: string }>;
+  searchParams: Promise<EmbedPlayerSearchParams>;
 }) {
-  const request = resolveEmbedPlayerRequest(params);
+  const request = resolveEmbedPlayerRequest(await params);
+  const resolvedSearchParams = await searchParams;
   const [content, embedContent] = await Promise.all([
     loadBreatheContent(
       request.slug as BreatheContentSlug,
@@ -143,7 +144,7 @@ export default async function LocalizedEmbedPlayerPage({
       content={content}
       playerContent={embedContent.player}
       renderContext={renderContext}
-      searchParams={searchParams}
+      searchParams={resolvedSearchParams}
     />
   );
 }

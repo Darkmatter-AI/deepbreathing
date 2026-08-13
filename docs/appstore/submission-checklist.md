@@ -1,7 +1,12 @@
-# App Store Submission Checklist
+# App Store Submission Checklist — Build 18 correction
 
-End-to-end ordered checklist from Apple account setup to "submitted for review."
-Status key: ✅ Done | ⏳ Pending | 🔲 Not started
+End-to-end ordered checklist from Apple account setup to a manually held Build 18 submission.
+Status key: ✅ Done | ⏳ Pending | 🔲 Not started | 🚫 Blocked
+
+> **Build 18 is a new candidate, not a production action.** Build 17 is historical evidence
+> only and must not be reused as the selected binary, screenshot source, or proof that the
+> corrected metadata passed review. Do not upload, submit, or release anything while the
+> physical-device gate and the support-page deployment below are pending.
 
 ---
 
@@ -23,6 +28,8 @@ Status key: ✅ Done | ⏳ Pending | 🔲 Not started
 | 2.3 | App name set: `Deep Breathing: Calm & Sleep` | ✅ | Verified in ASC 2026-07-28 (listing-FINAL name, not the old 2.3 draft) |
 | 2.4 | Primary language: English (US) | ✅ | Verified in ASC 2026-07-28 |
 | 2.5 | SKU: `deep-breathing-exercises-ios` | ✅ | Verified in ASC 2026-07-28 |
+| 2.6 | Regulated Medical Device status declared | ⏳ | For a new Health & Fitness app, answer the App Store Connect declaration before submission. This app is not represented as a regulated medical device, so select **No** after owner confirmation and retain a screenshot of the saved answer. |
+| 2.7 | EU Digital Services Act trader status confirmed | ⏳ | Confirm the legal entity's trader/non-trader status in ASC and complete any required contact verification before distribution in the EU. Do not infer or change this account-level declaration from repository data. |
 
 > Bundle ID is locked to `com.deepbreathing.app` by the existing App Store record and prior TestFlight build.
 
@@ -58,13 +65,63 @@ Status key: ✅ Done | ⏳ Pending | 🔲 Not started
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 4.1 | `app.json` version and remote iOS build number are correct | ✅ | Version 1.0.0; production auto-increment assigned Build 17. |
+| 4.1 | `app.json` version and remote iOS build number are correct | ⏳ | Version 1.0.0 remains the candidate version. Build 18 must be created by EAS remote auto-increment and recorded with its EAS build id and source commit; Build 17 is superseded. |
 | 4.2 | `ITSAppUsesNonExemptEncryption = false` in `ios.infoPlist` | ✅ | Already set in `app.json` |
 | 4.3 | `PrivacyInfo.xcprivacy` added to iOS target | ✅ | Declared via `ios.privacyManifests` in `app.json` (UserDefaults CA92.1, SystemBootTime 35F9.1, FileTimestamp C617.1, DiskSpace E174.1); Expo generates the manifest at prebuild |
-| 4.4 | GA4 env vars set for EAS production builds | ✅ | Done 2026-07-28: `EXPO_PUBLIC_GA4_MEASUREMENT_ID` (G-53DLCBMRL3, plaintext) and `EXPO_PUBLIC_GA4_MP_API_SECRET` (sensitive) created in the EAS `production` environment. Builds ≤10 shipped with analytics no-oping; build 11 is the first with live GA4. |
-| 4.5 | Ears-on audio parity pass on a real device (TestFlight or dev build) | ⏳ | 2026-07-22: shared `@resonance/audio` engine runs natively (react-native-audio-api). RNAA setTargetAtTime warble found+fixed (8265f7b); Abi confirmed by ear in the simulator that mobile now sounds like the website. Remaining on-device: silent switch, screen lock/background continuity, phone-speaker balance. |
-| 4.6 | Production build: `eas build --platform ios --profile production` | ✅ | Build 17 completed 2026-08-10 from clean release commit `bb9ff53` in `/Users/abi/Sites/deepbreathing-ios-v1-release`. EAS build id: `f3588d16-eb73-4120-8164-793f0632c2c5`. |
-| 4.7 | Build passes all Apple validations (check build log in EAS dashboard) | ✅ | Build 17 finished successfully, uploaded successfully, and processed in App Store Connect as ready to submit. No blocking validation warning was shown. |
+| 4.4 | GA4 relay credentials migrated and exposed client secret rotated | ⏳ | Before Build 18: deploy `/api/v1/analytics` with server-only `GA4_MEASUREMENT_ID` and a newly rotated `GA4_MP_API_SECRET`; remove the obsolete `EXPO_PUBLIC_GA4_*` values from EAS. Build 17 embedded the previous secret, so it must be treated as public and revoked. Verify the consented relay path and the opt-out path without logging the replacement secret. |
+| 4.5 | Ears-on audio parity pass on a real device (TestFlight or dev build) | ⏳ | Build 18 gate required: verify speaker balance, silent switch, background/lock continuity, cue timing, mute, and haptics on a physical iPhone. Simulator evidence is not sufficient. |
+| 4.6 | Production build: `eas build --platform ios --profile production` | ⏳ | Run only after the CI gate is green and the worktree is clean. Record the Build 18 EAS build id, source commit, Expo SDK, and artifact checksum here; do not generate screenshots in this step. |
+| 4.7 | Build passes all Apple validations (check build log in EAS dashboard) | ⏳ | Confirm the Build 18 artifact processes successfully before selecting it. Record warnings and their disposition; a successful Build 17 upload does not satisfy this row. |
+
+---
+
+## Build 18 physical-device gate (required before screenshots or ASC entry)
+
+Run this gate against the exact Build 18 artifact on at least one physical iPhone. A simulator
+pass is useful during development but cannot close this gate. Record the device model, iOS
+version, Build 18 number, test date, tester, and any EAS/TestFlight diagnostic link.
+
+| Area | Pass condition | Evidence to record |
+|---|---|---|
+| Fresh install / launch | Installs from the candidate artifact, shows the real icon, and reaches the breathing screen without a redbox or fatal error | Device + OS + build number; launch result |
+| Guest session | Core flow works without sign-in; start, pause, resume, stop, and completion behave as labeled | One completed session and one interrupted session |
+| Durations | Duration selector exposes **1, 3, 5, and 10 minutes**; no 30-second or open-ended store promise is visible | Device capture of the selector; observed auto-stop |
+| Audio / haptics | Cue timing, mute, speaker balance, silent switch, background/lock continuity, and phase haptics match the intended behavior | Ears-on notes; silent-switch and lock-screen results |
+| Settings / persistence | Speed, mode, duration, mute, theme, and keep-awake choices persist across a relaunch where intended | Before/after values; relaunch result |
+| Account (optional) | Apple/Google sign-in remains optional; signed-in sync and account deletion handoff work if exercised | Provider path and deletion confirmation result; no demo password invented |
+| Accessibility | With VoiceOver enabled, all primary breathing controls and changing phase guidance are discoverable and operable; repeat at the largest supported Dynamic Type size and with Reduce Motion enabled | VoiceOver focus/order notes, phase announcement result, large-text captures, and Reduce Motion result from the physical device |
+| Copy / safety | No clinical outcome promise, no Wim Hof claim, and the safety disclaimer remains visible in the reviewed surfaces | Wording checklist + reviewer notes |
+
+**Stop conditions:** any crash, redbox, broken audio/haptics, duration mismatch, mandatory sign-in,
+or health-outcome promise blocks screenshots and ASC entry. Fix or explicitly disposition the
+issue, then rerun the whole gate on the final artifact.
+
+## Rollback and observability decisions
+
+- **Release control:** keep App Store Connect on manual release. Do not click Release while
+  Build 18 is under observation. No production or App Store action is part of this checklist change.
+- **Rollback:** if Build 18 fails review or the post-submit smoke check, stop the manual release and
+  use the last approved binary only if the owner confirms it is still available in ASC. Do not use
+  an OTA update to paper over a native binary, privacy, entitlement, or store-metadata problem;
+  prepare a new EAS build instead.
+- **Observation window:** for the first 24 hours after an owner-approved release, check launch,
+  session-start, session-end, completion, sign-in/sync, and support-route signals at least once
+  per business day. Compare event volume with the pre-release baseline and record the EAS/ASC
+  build number beside each check.
+- **Limits:** the initial app has no crash-reporting service in this repository. Treat missing
+  analytics as an observability gap, not evidence of zero crashes; use TestFlight feedback,
+  reviewer messages, and device reproduction logs as additional signals.
+
+## Support contact deployment (blocking)
+
+`deepbreathingexercises.com` currently has no MX record. It can serve the support web route, but
+mail sent to an `@deepbreathingexercises.com` address cannot reach a human. The candidate source now
+uses the established receiving mailbox `hi@abiassi.com`; DNS inspection on 2026-08-13 confirmed
+that `abiassi.com` has inbound MX. The currently deployed support page still advertises the old,
+non-receiving address, so this gate remains blocked until the web change is deployed and a fresh
+read of `https://deepbreathingexercises.com/support` confirms the new `mailto:` target.
+
+**Decision:** ✅ receiving address selected and generated content updated. **Deployment:** 🚫 pending.
 
 ---
 
@@ -92,10 +149,10 @@ Apple requires screenshots for every device size you support. Accepted current i
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 6.1 | iPhone screenshots (min 3, up to 10) | ✅ | Six current RGB/no-alpha 1284×2778 marketing shots uploaded 2026-08-10 and verified in ASC in order 01→06. |
-| 6.2 | iPhone 6.5" screenshots | ✅ | Refreshed 1284×2778 set is live in the accepted 6.5" slot. |
+| 6.1 | iPhone screenshots (min 3, up to 10) | 🚫 | Existing checked-in captures and marketing compositions are pre-gate references. Do not upload or call them final. Capture a fresh set only after the Build 18 physical-device gate. |
+| 6.2 | iPhone 6.5" screenshots | ⏳ | Target 1284×2778 (or another accepted 6.5" size) from the approved Build 18 binary. Verify the timer chips read 1/3/5/10 minutes and match the listing. |
 | 6.3 | iPad 12.9" screenshots (if `supportsTablet: true`) | ✅ N/A | `supportsTablet: false` — not required |
-| 6.4 | Screenshots do not show status bar with wrong time/signal | ✅ | Composited marketing mockups |
+| 6.4 | Screenshots do not show status bar with wrong time/signal | ⏳ | Check the fresh device captures and record the device/OS/build used. Composited marketing mockups are not proof of this row. |
 | 6.5 | App Previews (optional video) | 🔲 | Not required; can skip for v1 |
 
 ---
@@ -104,14 +161,14 @@ Apple requires screenshots for every device size you support. Accepted current i
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 7.1 | App name entered | ✅ | Verified in ASC 2026-07-28: "Deep Breathing: Calm & Sleep" |
-| 7.2 | Subtitle entered | ✅ | Verified 2026-07-28: "Box, 4-7-8 & Calm Breathing" |
-| 7.3 | Promotional text entered | ✅ | Verified 2026-07-28 (163/170 chars) |
-| 7.4 | Description entered | ✅ | Verified 2026-07-28 (2017/4000 chars, matches listing-FINAL) |
-| 7.5 | Keywords entered | ✅ | Verified 2026-07-28 (98/100 chars, matches listing-FINAL) |
-| 7.6 | Support URL: `https://deepbreathingexercises.com/support` | ✅ | Entered in ASC; page live (HTTP 200) |
-| 7.7 | Marketing URL: `https://deepbreathingexercises.com` | ✅ | Entered in ASC |
-| 7.8 | Copyright: `© 2026 Darkmatter AI Labs` | ✅ | Entered in ASC |
+| 7.1 | App name entered | ⏳ | Existing ASC value is historical evidence only; recheck the Build 18 draft after the gate. |
+| 7.2 | Subtitle entered | ⏳ | Existing ASC value is historical evidence only; recheck the Build 18 draft after the gate. |
+| 7.3 | Promotional text entered | ⏳ | Existing ASC value is historical evidence only; recheck the Build 18 draft after the gate. |
+| 7.4 | Description entered | ⏳ | Use the gated Build 18 draft only after physical-device and wording review; do not copy the historical `listing.md` feature block. |
+| 7.5 | Keywords entered | ⏳ | Recheck the final 100-character field against the approved Build 18 copy before entry. |
+| 7.6 | Support URL: `https://deepbreathingexercises.com/support` | 🚫 | Candidate source uses the receiving `hi@abiassi.com` mailbox, but the live page still advertises the non-receiving branded address. Deploy and verify the new `mailto:` before metadata entry. |
+| 7.7 | Marketing URL: `https://deepbreathingexercises.com` | ⏳ | Recheck the URL and its current deployment immediately before Build 18 metadata entry. |
+| 7.8 | Copyright: `© 2026 Darkmatter AI Labs` | ⏳ | Owner must confirm the ASC legal entity / configured DBA before entering this field. |
 | 7.9 | Category: Health & Fitness (secondary: Lifestyle) | ✅ | Verified in ASC 2026-07-28 |
 
 ---
@@ -120,10 +177,10 @@ Apple requires screenshots for every device size you support. Accepted current i
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 8.1 | App Privacy nutrition label completed in ASC | ✅ | Republished 2026-07-28 per app-privacy.md account update: added Name + Email (App Functionality, linked), Product Interaction now linked + App Functionality purpose; Device ID unchanged (Analytics, not linked); tracking No everywhere |
+| 8.1 | App Privacy nutrition label completed in ASC | ⏳ | Recheck the existing label against the Build 18 binary and `app-privacy.md` before entry; no ASC change is made by this checklist. |
 | 8.2 | Privacy Policy URL set in ASC | ✅ | `https://deepbreathingexercises.com/privacy` — verified in ASC 2026-07-28 |
 | 8.3 | Privacy page updated with mobile data section | ✅ | Account, sync, analytics, device features, deletion |
-| 8.4 | Support page created and live | ✅ | Verified live (HTTP 200) 2026-07-28, incl. /privacy. Prod better-auth + Google social sign-in endpoints also verified live 2026-07-28 |
+| 8.4 | Support page created and live | ⏳ | Route is present in the source tree; verify the public URL immediately before submission. The apex no-MX blocker affects replies, not route rendering. |
 
 ---
 
@@ -153,13 +210,13 @@ Apple requires screenshots for every device size you support. Accepted current i
 
 ---
 
-## 12. Build Submission
+## 12. Build 18 Submission (manual; pending)
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 12.1 | Upload the release build to App Store Connect | ✅ | Build 17 uploaded through EAS Submit on 2026-08-10; submission id `c3f5b3ca-e230-4890-9589-1fc9b24896c7`. |
-| 12.2 | Build appears in App Store Connect/TestFlight | ✅ | Build 17 processed successfully and appeared as ready to submit. |
-| 12.3 | Select the release build on the version page | ✅ | Replaced Build 14 with Build 17 and saved the version page on 2026-08-10. |
+| 12.1 | Upload Build 18 to App Store Connect | ⏳ | Only after CI, the clean-commit guard, the physical-device gate, and support-page deployment pass. Do not perform this upload as part of the docs change. |
+| 12.2 | Build 18 appears in App Store Connect/TestFlight | ⏳ | Record processing result, warnings, build id, and source commit. Build 17 processing is historical and does not satisfy this row. |
+| 12.3 | Select Build 18 on the version page | ⏳ | Manual release remains required. Select only the processed Build 18 artifact after metadata and fresh screenshots are verified. |
 
 ---
 
@@ -187,20 +244,20 @@ system authentication session to our own auth domain, which redirects to Google'
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 13.1 | Demo account created | ✅ N/A | Optional Sign in with Apple is available to reviewers; no demo password account exists. "Sign-in required" toggle verified OFF; contact info filled |
-| 13.2 | Review notes drafted and entered in ASC | ✅ | Entered + saved 2026-07-28 (replaced the stale "no sign-in exists" paragraph) |
+| 13.1 | Demo account created | ✅ N/A | Optional Sign in with Apple is the review path; no demo password account exists. Recheck the optional sign-in flow on Build 18; do not claim a login wall. |
+| 13.2 | Review notes drafted and entered in ASC | ⏳ | Draft is retained here for Build 18 review. Enter only after the physical-device gate; no ASC mutation is made by this checklist. |
 
 ---
 
-## 14. Submit for Review
+## 14. Submit Build 18 for Review (manual; pending)
 
 | # | Task | Status | Notes |
 |---|---|---|---|
-| 14.1 | All ASC fields complete (no red warnings on version page) | ✅ | Metadata, six screenshots, review notes, Build 17, 9+ rating, trader declaration, and not-a-regulated-medical-device declaration verified. |
-| 14.2 | Click "Submit for Review" in ASC | ✅ | Submitted 2026-08-10. ASC submission `3668ff50-60a3-4efd-8623-deff0100f8c1` is **Waiting for Review**. Manual release remains selected. |
-| 14.3 | Answer additional export compliance and content rights questions if prompted | ✅ | No additional prompt appeared. Content rights already state that the app does not contain or access third-party content; `ITSAppUsesNonExemptEncryption` is false. |
+| 14.1 | All ASC fields complete (no red warnings on version page) | 🚫 | Blocked until the Build 18 physical-device gate, fresh screenshots, wording review, and support-page deployment are complete. |
+| 14.2 | Click "Submit for Review" in ASC | ⏳ | Manual release only. This checklist does not submit anything; record the future Build 18 submission id and timestamp if the owner approves. |
+| 14.3 | Answer additional export compliance and content rights questions if prompted | ⏳ | Recheck against the Build 18 artifact. `ITSAppUsesNonExemptEncryption` remains false in source; no production state is changed here. |
 
-Expected review time: 1–3 business days for a first submission.
+Do not estimate review time until Build 18 is actually submitted.
 
 ---
 

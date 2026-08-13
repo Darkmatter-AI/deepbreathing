@@ -1,9 +1,10 @@
-# App Store Connect — FINAL Listing (submission-ready)
+# App Store Connect — Build 18 Listing Draft (gated)
 
-> Reconciled against the actual shipped `apps/mobile` binary by the 2026-06-24 readiness
-> audit. **This is the authoritative copy to paste into App Store Connect.** The longer
-> `listing.md` keeps the naming-decision history but its feature copy is pre-audit; use
-> THIS file for the fields you enter in ASC.
+> This is the **Build 18 correction draft**, not a submission-ready or already-entered
+> App Store listing. The copy is intentionally conservative and must remain pending until
+> the physical-device gate in `submission-checklist.md` passes. The longer `listing.md`
+> keeps the naming-decision history; both files must describe the same Build 18 behavior.
+> Do not paste this draft into App Store Connect before the owner signs off the gate.
 >
 > Scope: **FREE v1, no in-app purchases.** Every field below advertises only features that
 > actually work for a guest user on a fresh install.
@@ -32,14 +33,14 @@ Free guided breathing for calm, focus, and sleep. Try box breathing, 4-7-8, cohe
 
 ## Full Description (≤4000) — 2017 chars
 ```
-Deep Breathing Exercises guides you through scientifically studied breathing techniques with a smooth, animated orb visualizer. Just open the app and breathe, no sign-up and no account required.
+Deep Breathing Exercises guides you through established breathing patterns with a smooth, animated orb visualizer. Open the app and follow a session; no sign-up or account is required for the core experience.
 
 BREATHING MODES
 
-• Box Breathing (4-4-4-4) — equal inhale, hold, exhale, hold. A go-to for focus and stress relief used by athletes and first responders.
-• 4-7-8 Breathing — extended exhale and hold pattern associated with relaxation and sleep onset.
-• Coherent Breathing (5.5-5.5) — slow, even rhythm at roughly 5 breaths per minute, studied for heart rate variability and calm.
-• Physiological Sigh — double inhale followed by a long exhale. A fast reset for stress moments.
+• Box Breathing (4-4-4-4) — equal inhale, hold, exhale, hold. A commonly practiced rhythm for a focused breathing break; individual experiences vary.
+• 4-7-8 Breathing — extended-exhale pattern often used in a wind-down routine; it is not a sleep treatment.
+• Coherent Breathing (5.5-5.5) — slow, even rhythm at roughly 5 breaths per minute. The app makes no heart-rate or other health-outcome promise.
+• Physiological Sigh — double inhale followed by a long exhale. A brief guided pattern for stressful moments; effects vary by person.
 
 Plus more guided patterns inside the app: Ujjayi, Belly Breathing, and Pursed-Lip Breathing.
 
@@ -48,7 +49,7 @@ FEATURES
 • Animated orb visualizer — a gentle, pulsing cue that expands and contracts with each phase of your breath.
 • Audio soundscapes — drone tones, binaural beats, and pink noise to deepen focus. Phase cue tones mark each breath transition.
 • Haptic feedback — subtle vibrations guide your breath, so you can breathe eyes-closed.
-• Session timer — open-ended or timed sessions (30 seconds, 1, 3, 5, or 10 minutes).
+• Session timer — choose a 1, 3, 5, or 10 minute session.
 • Adjustable speed — slow down or speed up any pattern to match your capacity.
 • Local session stats — sessions and minutes tracked on-device, no account required.
 • Keep-awake mode — screen stays on during your session.
@@ -56,7 +57,7 @@ FEATURES
 
 BREATHING AND YOUR HEALTH
 
-Deep Breathing Exercises provides timed breathing guidance based on established techniques. It is not a medical device and does not diagnose, treat, or prevent any condition. Consult a qualified healthcare provider before starting any new breathing practice, especially if you have a respiratory condition, cardiovascular issue, or are pregnant.
+Deep Breathing Exercises provides timed breathing guidance based on established patterns. It is not a medical device and does not diagnose, treat, or prevent any condition. Breathing practices are not a substitute for professional care, and individual results are not guaranteed. Consult a qualified healthcare provider before starting a new practice, especially if you have a respiratory condition, cardiovascular issue, or are pregnant.
 
 PRIVACY
 
@@ -125,18 +126,19 @@ systems where applicable.
 Leave the ASC "Sign-in required" toggle OFF and the demo username/password fields empty
 (sign-in is optional; reviewers can use Sign in with Apple).
 
-## Screenshots (phone-only v1, no iPad set)
+## Screenshots (phone-only v1, no iPad set; provisional)
 
-> **2026-07-01 as-shipped:** ASC's iPhone slot for this app accepts only 6.5" sizes
-> (1242×2688 / 1284×2778). The final marketing set (photoreal iPhone mockups, Nano Banana 2
-> + composited captions) lives in `screenshots/marketing/`; the resized 1284×2778 uploads in
-> `screenshots/marketing/asc-upload/`. The refreshed set was uploaded to ASC and verified in
-> order 01→06 on 2026-08-10.
-> Raw truthful captures remain in `screenshots/` (kept as the fidelity source).
-Ship 5–6, all from a clean install of the EAS build (real icon, not the Expo placeholder):
+> **Build 18 correction hold:** the checked-in captures and marketing compositions are
+> pre-gate assets. They are useful fidelity references only; do not upload them or call
+> them final. After the Build 18 physical-device gate passes, capture a fresh 6.5-inch set
+> from the approved binary and verify every frame against the final copy. Do not generate
+> final screenshots as part of this docs pass.
+
+When the gate is complete, ship 5–6 screenshots from a clean install of the approved EAS
+build (real icon, not the Expo placeholder):
 1. Active Box session (orb mid-expansion, phase label) — hero shot
 2. Mode Library sheet open (Box, 4-7-8, Coherent, Physiological Sigh, Ujjayi, Belly, Pursed-Lip). **Do not show Wim Hof.**
-3. Timer / duration selector (30s/1/3/5/10 chips) — matches the corrected copy
+3. Timer / duration selector (1/3/5/10 minute chips) — must match the approved Build 18 UI
 4. Adjustable-speed control + settings (speed slider, keep-awake)
 5. Completion summary — local stats card (sessions, minutes)
 6. (optional) Dark-mode active session

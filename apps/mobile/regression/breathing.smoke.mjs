@@ -37,6 +37,14 @@ async function setupPage(context) {
   // Wait for React hydration, mode sheet animation, etc.
   await page.waitForTimeout(8000);
 
+  // Fresh installs now ask for analytics consent before any identifier or event
+  // is created. Keep smoke deterministic and privacy-preserving by declining.
+  const declineAnalytics = page.getByRole('button', { name: 'Keep analytics off' });
+  if (await declineAnalytics.isVisible().catch(() => false)) {
+    await declineAnalytics.click();
+    await page.waitForTimeout(400);
+  }
+
   // Press Escape to dismiss any open overlays
   await page.keyboard.press('Escape');
   await page.waitForTimeout(400);
@@ -180,9 +188,10 @@ async function main() {
       assert.equal(paceBarPaused, null);
     });
 
-    // Resume so the remaining checks continue with an active session.
-    await clickOrb(page, 'Start Session');
-    await page.waitForTimeout(300);
+    // Use the persistent Settings slider for its attribute/persistence checks.
+    // Test 1 already proved the live slider appears and hides during a session.
+    await page.click('button[aria-label="Settings"]');
+    await page.waitForSelector('[role="dialog"] input[type="range"][aria-label="Breath speed"]');
 
     // ── TEST 2: slider attributes ─────────────────────────────────────────
     console.log('\n[smoke] 2. Slider attributes');
@@ -237,13 +246,6 @@ async function main() {
 
     // ── TEST 5: settings overlay — exactly ONE range input ─────────────────
     console.log('\n[smoke] 5. Settings overlay range inputs');
-
-    // Pause to reveal settings icon, then open settings
-    await clickOrb(page, 'Pause Session');
-    await page.waitForTimeout(600);
-
-    await page.click('button[aria-label="Settings"]');
-    await page.waitForTimeout(800);
 
     const dialogRangeCount = await page.evaluate(() => {
       const d = document.querySelector('[role="dialog"][aria-modal="true"]');
@@ -490,6 +492,13 @@ async function main() {
     await page4.emulateMedia({ reducedMotion: 'reduce' });
     await page4.goto(METRO_URL, { wait_until: 'domcontentloaded', timeout: 30000 });
     await page4.waitForTimeout(8000);
+
+    const declineReducedMotionAnalytics = page4.getByRole('button', { name: 'Keep analytics off' });
+    if (await declineReducedMotionAnalytics.isVisible().catch(() => false)) {
+      await declineReducedMotionAnalytics.click();
+      await page4.waitForTimeout(400);
+    }
+
     await page4.keyboard.press('Escape');
     await page4.waitForTimeout(400);
     await page4.keyboard.press('Escape');

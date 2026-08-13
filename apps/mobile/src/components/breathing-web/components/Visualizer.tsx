@@ -51,9 +51,13 @@ interface VisualizerProps {
   /** Session wall-clock progress 0..1 — drives the dot travelling the ring.
    *  When null the dot is hidden (open-ended session / not running). */
   sessionProgress?: number | null;
+  /** Disable decorative animation when the user requests Reduced Motion. */
+  reduceMotion?: boolean;
+  /** Live phase status element announced by the host. */
+  statusId?: string;
 }
 
-const Visualizer: React.FC<VisualizerProps> = ({ scale, color, label, instructions, isRunning, onClick, dragRef, ringRef, glowRef, sessionProgress }) => {
+const Visualizer: React.FC<VisualizerProps> = ({ scale, color, label, instructions, isRunning, onClick, dragRef, ringRef, glowRef, sessionProgress, reduceMotion = false, statusId }) => {
   const blobScale = 0.6 + scale * 0.4;
   const glowScale = 0.65 + scale * 0.5;
 
@@ -67,7 +71,7 @@ const Visualizer: React.FC<VisualizerProps> = ({ scale, color, label, instructio
 
   const orbTransformStyle = {
     transform: `scale(${blobScale})`,
-    animation: 'morph 16s ease-in-out infinite, hue-rotate 20s linear infinite'
+    animation: reduceMotion ? 'none' : 'morph 16s ease-in-out infinite, hue-rotate 20s linear infinite'
   };
 
   const glowStyle = useMemo(
@@ -154,10 +158,13 @@ const Visualizer: React.FC<VisualizerProps> = ({ scale, color, label, instructio
 
         {/* Interactive Orb */}
         <button
+          type="button"
           onClick={onClick}
           className="pointer-events-auto absolute z-20 flex h-full w-full cursor-pointer items-center justify-center rounded-full outline-none hover:brightness-110 animate-blob animate-hue"
           style={{ ...orbStyle, ...orbTransformStyle }}
           aria-label={isRunning ? 'Pause Session' : 'Start Session'}
+          aria-pressed={isRunning}
+          aria-describedby={statusId}
         />
 
         {/* Overlay Content (Not Scaled) */}

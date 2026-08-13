@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import React from "react";
 import Link from "next/link";
-import dynamic from "next/dynamic";
 import { notFound } from "next/navigation";
 
 import { FadingHeroTitle } from "@/components/breathe/fading-hero-title";
@@ -14,28 +13,8 @@ import { renderInlineLinks } from "@/lib/render-inline-links";
 import { createOgImagePath } from "@/lib/seo/og-image";
 import { resolveNativeInternalHref } from "@/i18n/route-manifest";
 import type { NativeRouteRenderContext } from "@/i18n/render-context";
-
-// Dynamic import for client component
-const ShareButton = dynamic(
-  () =>
-    import("@/components/ui/share-button").then((mod) => ({
-      default: mod.ShareButton,
-    })),
-  { ssr: false },
-);
-
-// Lazy-load Resonance to improve initial page load
-const Resonance = dynamic(() => import("@/components/resonance/Resonance"), {
-  ssr: false,
-  loading: () => (
-    <div
-      aria-hidden="true"
-      className="min-h-screen flex items-center justify-center bg-background"
-    >
-      <div className="h-12 w-12 border-2 border-primary/30 border-t-primary rounded-full animate-spin" />
-    </div>
-  ),
-});
+import { ShareButton } from "@/components/ui/share-button-lazy";
+import { ResonanceClient as Resonance } from "@/components/resonance/resonance-client";
 
 const baseUrl = "https://deepbreathingexercises.com";
 

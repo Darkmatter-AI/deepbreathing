@@ -65,8 +65,21 @@ test("mobile: speed scales every phase duration (animation + cues)", () => {
   assert.match(sharedPacing, /\(pattern\.holdIn \* speed\) \* 1000/);
   assert.match(sharedPacing, /\(pattern\.exhale \* speed\) \* 1000/);
   assert.match(sharedPacing, /\(pattern\.holdOut \* speed\) \* 1000/);
-  // component uses the helper for the animation loop
-  assert.match(exp, /phaseDurationMs\(BreathingPhase\.Inhale, pattern, speedMultiplier\)/);
+  // The animation loop resolves the duration for whichever phase is current,
+  // then advances every elapsed boundary from its absolute phase start. This
+  // keeps a stalled/suspended frame on the same speed-scaled wall-clock
+  // schedule instead of assuming the phase is always Inhale or resetting the
+  // anchor to the late frame's `time`.
+  assert.match(exp, /phaseDurationMs\(currentPhase, pattern, speedMultiplier\)/,
+    "catch-up duration uses the current phase and speed multiplier");
+  assert.match(exp, /while \(\s*currentPhaseDuration > 0 &&\s*time - currentPhaseStart >= currentPhaseDuration/s,
+    "catch-up walks every elapsed phase boundary");
+  assert.match(exp, /currentPhaseStart \+= currentPhaseDuration/,
+    "phase boundaries stay anchored to the prior absolute start");
+  assert.match(exp, /currentPhase = nextBreathingPhase\(currentPhase, pattern\)/,
+    "catch-up follows the pattern's phase order");
+  assert.match(exp, /phaseStartRef\.current = currentPhaseStart/,
+    "phase clock remains wall-clock anchored after catch-up");
 });
 
 test("mobile: live speed change mid-phase is progress-preserving (no orb jump)", () => {
@@ -209,6 +222,53 @@ test("mobile: changing the duration while paused restarts the session clock", ()
   assert.match(exp, /setSessionProgress\(0\);/, "ring dot returns to the top");
   assert.match(exp, /setSessionId\(null\);/, "next start begins a fresh session");
   assert.match(exp, /\}, \[selectedDuration\]\);/, "effect keyed on duration change");
+});
+
+test("mobile: persisted presets are committed before writeback is enabled", () => {
+  const savedPresetIdx = exp.indexOf("setModePresets(presets)");
+  const hydrationCommitIdx = exp.indexOf("if (mounted) storageHydratedRef.current = true;");
+  assert.ok(savedPresetIdx >= 0, "initial mode presets are hydrated");
+  assert.ok(hydrationCommitIdx > savedPresetIdx,
+    "hydration marker is set after saved presets have been enqueued");
+  assert.match(exp, /if \(storageHydratedRef\.current\) return;/,
+    "initial hydration is one-shot after the committed render");
+  assert.match(exp, /if \(!storageHydratedRef\.current\) return;[\s\S]*setModePresets/s,
+    "mode preset writeback remains gated on the hydration marker");
+});
+
+test("mobile: Dynamic Type scales rem controls at the document root and restores host styles", () => {
+  assert.match(exp, /const resolvedFontScale = Math\.min\(2, Math\.max\(1,/,
+    "native font scale is clamped");
+  assert.match(exp, /typeof document === 'undefined' \|\| resolvedFontScale <= 1/,
+    "default scale leaves the host document untouched");
+  assert.match(exp, /const root = document\.documentElement/,
+    "scale is applied to the rem reference element");
+  assert.match(exp, /root\.style\.fontSize = `\$\{resolvedFontScale \* 100\}%`/,
+    "rem-based Tailwind controls grow with Dynamic Type");
+  assert.match(exp, /const previousFontSize = root\.style\.fontSize/,
+    "the host root font size is captured");
+  assert.match(exp, /root\.style\.fontSize = previousFontSize/,
+    "host root font size is restored on cleanup");
+  assert.doesNotMatch(paceCss, /\[data-large-text='true'\]\s*\{\s*font-size:/,
+    "a descendant font-size rule must not pretend to scale rem units");
+});
+
+test("mobile: Wim Hof completion commits the session exactly once", () => {
+  assert.match(exp, /const protocolCompletionHandledRef = useRef\(false\)/,
+    "protocol completion has an idempotence guard");
+  assert.match(exp, /protocolCompletionHandledRef\.current = false/,
+    "new Wim Hof sessions reset the completion guard");
+  assert.match(exp, /endSession\('completed', completedSeconds, true\)/,
+    "ProtocolComplete calls the shared endSession path");
+  assert.equal(
+    (exp.match(/endSession\('completed', completedSeconds, true\)/g) ?? []).length,
+    1,
+    "the protocol completion endSession call is singular",
+  );
+  assert.match(exp, /if \(!protocolCompletionHandledRef\.current\) \{\s*requestRef\.current = requestAnimationFrame\(animateProtocol\);/s,
+    "no animation frame is scheduled after the terminal commit");
+  assert.match(exp, /if \(protocolCompletionHandledRef\.current && isProtocolMode\) return;/,
+    "duration auto-stop cannot double-commit a completed protocol");
 });
 
 // ---------------------------------------------------------------------------

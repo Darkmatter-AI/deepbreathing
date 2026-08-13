@@ -346,9 +346,9 @@ function withLocalizedAlternates(
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string; segments?: string[] };
+  params: Promise<{ locale: string; segments?: string[] }>;
 }): Promise<Metadata> {
-  const request = resolveLocalizedRequest(params);
+  const request = resolveLocalizedRequest(await params);
 
   if (request.sourceRoute === "/") {
     const content = await loadHomeContent(
@@ -560,9 +560,9 @@ export async function generateMetadata({
 export default async function LocalizedContentPage({
   params,
 }: {
-  params: { locale: string; segments?: string[] };
+  params: Promise<{ locale: string; segments?: string[] }>;
 }) {
-  const request = resolveLocalizedRequest(params);
+  const request = resolveLocalizedRequest(await params);
   const baseRenderContext = {
     canonicalPath: request.canonicalPath,
     linkMode: request.linkMode,

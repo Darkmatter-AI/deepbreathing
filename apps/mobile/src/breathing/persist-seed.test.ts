@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import {
+  parsePersistedJson,
   resolvePersistedItem,
   seedLocalStorageFromSnapshot,
   shouldMirrorPersist,
@@ -23,6 +24,24 @@ describe('resolvePersistedItem', () => {
 
   it('returns null when both are empty', () => {
     expect(resolvePersistedItem('resonance_stats', null, {})).toBeNull();
+  });
+
+  it('rejects malformed local JSON and recovers from the native snapshot', () => {
+    expect(resolvePersistedItem('resonance_settings', '{not-json', {
+      resonance_settings: enc('{"mode":"Box Breathing"}'),
+    })).toBe('{"mode":"Box Breathing"}');
+  });
+});
+
+describe('parsePersistedJson', () => {
+  it('never throws for malformed or primitive values', () => {
+    expect(parsePersistedJson('{not-json')).toBeNull();
+    expect(parsePersistedJson('null')).toBeNull();
+    expect(parsePersistedJson('"text"')).toBeNull();
+  });
+
+  it('accepts an encoded legacy JSON value', () => {
+    expect(parsePersistedJson(enc('{"speedMultiplier":1.4}'))).toEqual({ speedMultiplier: 1.4 });
   });
 });
 
@@ -56,6 +75,18 @@ describe('seedLocalStorageFromSnapshot', () => {
 
     expect(store.resonance_stats).toBe('{"totalMinutes":7,"sessionsCompleted":2}');
     expect(store.resonance_settings).toBe('{"mode":"Box"}');
+  });
+
+  it('replaces malformed JSON with the native mirror', () => {
+    const store: Record<string, string> = { resonance_settings: '{not-json' };
+
+    seedLocalStorageFromSnapshot(
+      ['resonance_settings'],
+      { resonance_settings: enc('{"mode":"Relax"}') },
+      makeStorage(store),
+    );
+
+    expect(store.resonance_settings).toBe('{"mode":"Relax"}');
   });
 
   it('round-trips values whose JSON encoding contains backslash escapes', () => {

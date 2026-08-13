@@ -177,3 +177,16 @@ test("registered completion banner clears when account controls become the next 
   );
   assert.match(source, /onPress=\{handleOpenAccount\}/);
 });
+
+test("old DOM callbacks stay gated until an idle owner remount commits", () => {
+  const source = fs.readFileSync(path.join(ROOT, "apps/mobile/src/app/index.tsx"), "utf8");
+  assert.match(source, /Auth can change while the current breathing session is still running\./);
+  assert.match(source, /owner preparation, bootstrap, and DOM/);
+  assert.match(source, /if \(!eventOwnerGenerationAccepted && !ownerTransitionPending\) return;/);
+  assert.match(source, /await enqueueSessionEvent\(event, eventOwner \?\? undefined\);/);
+  assert.match(source, /if \(transitionToken !== ownerTransitionTokenRef\.current \|\| isSessionRunningRef\.current\) return;/);
+  assert.match(source, /hydratedUserIdRef\.current = userId;/);
+  assert.match(source, /setSnapshotVersion\(\(version\) => version \+ 1\);/);
+  assert.match(source, /isCommittedOwnerForAuth\(authSession\.user\.id\)/);
+  assert.match(source, /if \(userId && ownerReady\)/);
+});

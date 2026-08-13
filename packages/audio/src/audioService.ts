@@ -73,6 +73,13 @@ interface CueProfile {
   harmonics: number[];
 }
 
+type CueSourceNode = AudioScheduledSourceNode;
+
+interface ActiveCueCleanup {
+  stop(when: number): void;
+  cleanup(): void;
+}
+
  type CuePreset = {
    duration: number;
    tone?: {
@@ -156,6 +163,11 @@ export class AudioService {
   private debug = false;
   private disposed = false;
   private activeCueBuses = new Set<GainNode>();
+  // Keep the per-cue teardown alongside the output bus. react-native-audio-api
+  // does not implement the DOM EventTarget surface, and a cue graph contains
+  // more than the output gain (noise filters, oscillator gains, and a shared
+  // reverb send), so a bus-only set cannot clean it deterministically.
+  private activeCueCleanups = new Map<GainNode, ActiveCueCleanup>();
   private mediaUnlocking: Promise<void> | null = null;
   private mediaUnlocked = false;
 
@@ -226,9 +238,21 @@ export class AudioService {
   } | null = null;
 
    private breathingMode: ModeName = ModeName.Box;
-   private cueNoiseBuffer: AudioBuffer | null = null;
-   private cueReverbCache: Map<string, ConvolverNode> = new Map();
+  private cueNoiseBuffer: AudioBuffer | null = null;
+  private cueReverbCache: Map<string, ConvolverNode> = new Map();
   private completionCueCleanupTimers = new Set<ReturnType<typeof setTimeout>>();
+
+  // Each ambient layer has its own startup epoch. The web sensory preview
+  // starts several layers concurrently, so a single global epoch would make
+  // valid starts cancel one another; a per-layer epoch only invalidates the
+  // layer that was stopped/replaced. Native startup checks these epochs after
+  // every awaited context resume, preventing a pause/stop from being undone by
+  // a late `ensureContextReady()` continuation.
+  private droneEpoch = 0;
+  private binauralEpoch = 0;
+  private subBassEpoch = 0;
+  private phaseEnvelopeEpoch = 0;
+  private pinkNoiseEpoch = 0;
 
   private isMuted = false;
   private cueVolume = 0.32;
@@ -265,6 +289,84 @@ export class AudioService {
       // eslint-disable-next-line no-console
       console.log('[AudioService]', ...args);
     }
+  }
+
+  private isLayerStartCurrent(epoch: number, currentEpoch: number) {
+    return !this.disposed && epoch === currentEpoch;
+  }
+
+  private disconnectNode(node: AudioNode | null | undefined, destination?: AudioNode) {
+    if (!node) return;
+    try {
+      if (destination) {
+        node.disconnect(destination);
+      } else {
+        node.disconnect();
+      }
+    } catch {
+      // A node may already have been detached by an interrupted context.
+    }
+  }
+
+  private stopSource(node: CueSourceNode | null | undefined, when: number) {
+    if (!node) return;
+    try {
+      node.stop(when);
+    } catch {
+      // Sources can report InvalidStateError after a native interruption or
+      // after their scheduled stop has already fired.
+    }
+  }
+
+  /**
+   * RNAA's scheduled sources expose `onEnded` (capital E), while browser
+   * WebAudio exposes `onended` and some test shims only provide EventTarget.
+   * Prefer the RNAA API and fall back to the browser surfaces without ever
+   * assuming `addEventListener` exists on native nodes.
+   */
+  private attachSourceEnded(source: CueSourceNode, callback: () => void) {
+    const candidate = source as unknown as {
+      onEnded?: ((event?: unknown) => void) | null;
+      onended?: ((event: Event) => void) | null;
+      addEventListener?: (name: string, listener: () => void, options?: { once?: boolean }) => void;
+      removeEventListener?: (name: string, listener: () => void) => void;
+    };
+
+    if ('onEnded' in candidate) {
+      candidate.onEnded = () => callback();
+      return () => {
+        try {
+          candidate.onEnded = null;
+        } catch {
+          // Context may already be torn down.
+        }
+      };
+    }
+
+    if ('onended' in candidate) {
+      candidate.onended = () => callback();
+      return () => {
+        try {
+          candidate.onended = null;
+        } catch {
+          // Context may already be torn down.
+        }
+      };
+    }
+
+    if (typeof candidate.addEventListener === 'function') {
+      const listener = () => callback();
+      candidate.addEventListener('ended', listener, { once: true });
+      return () => {
+        try {
+          candidate.removeEventListener?.('ended', listener);
+        } catch {
+          // Context may already be torn down.
+        }
+      };
+    }
+
+    return () => {};
   }
 
   private async unlockWithMediaElement() {
@@ -714,11 +816,18 @@ export class AudioService {
 
   public stopCues() {
     if (!this.ctx) {
+      this.activeCueCleanups.forEach(({ cleanup }) => cleanup());
+      this.activeCueCleanups.clear();
       this.activeCueBuses.clear();
       return;
     }
 
     const now = this.ctx.currentTime;
+    this.activeCueCleanups.forEach(({ stop }) => {
+      stop(now + 0.03);
+    });
+    // Keep this fallback for a cue created by an older/hot-reloaded module
+    // instance that made it into the bus set before the cleanup map existed.
     this.activeCueBuses.forEach((cueBus) => {
       try {
         cueBus.gain.cancelScheduledValues(now);
@@ -780,6 +889,7 @@ export class AudioService {
     this.cueReverbCache.clear();
     this.completionCueCleanupTimers.forEach((timer) => clearTimeout(timer));
     this.completionCueCleanupTimers.clear();
+    this.activeCueCleanups.clear();
     this.activeCueBuses.clear();
   }
 
@@ -788,13 +898,15 @@ export class AudioService {
     if (!this.ctx || !this.masterGain) return;
     if (this.ctx.state !== 'running') return;
 
-    const now = this.ctx.currentTime;
-    const previousMaster = this.masterGain.gain.value;
+    const context = this.ctx;
+    const masterGain = this.masterGain;
+    const now = context.currentTime;
+    const previousMaster = masterGain.gain.value;
 
     try {
-      this.masterGain.gain.cancelScheduledValues(now);
-      this.masterGain.gain.setValueAtTime(previousMaster, now);
-      this.masterGain.gain.linearRampToValueAtTime(0, now + Math.max(0.05, fadeSeconds));
+      masterGain.gain.cancelScheduledValues(now);
+      masterGain.gain.setValueAtTime(previousMaster, now);
+      masterGain.gain.linearRampToValueAtTime(0, now + Math.max(0.05, fadeSeconds));
     } catch {
       // ignore
     }
@@ -807,15 +919,19 @@ export class AudioService {
 
     await new Promise((resolve) => setTimeout(resolve, (fadeSeconds * 1000) + 40));
 
+    // A native interruption can replace/close the context during the fade.
+    // Never suspend or restore a gain on a context that is no longer current.
+    if (this.disposed || this.ctx !== context || this.masterGain !== masterGain) return;
+
     try {
-      await this.ctx.suspend();
+      await context.suspend();
     } catch {
       // ignore
     }
 
     try {
-      this.masterGain.gain.cancelScheduledValues(this.ctx.currentTime);
-      this.masterGain.gain.setValueAtTime(previousMaster, this.ctx.currentTime);
+      masterGain.gain.cancelScheduledValues(context.currentTime);
+      masterGain.gain.setValueAtTime(previousMaster, context.currentTime);
     } catch {
       // ignore
     }
@@ -879,21 +995,31 @@ export class AudioService {
       }
     }
 
+    const sourceNodes: CueSourceNode[] = [];
+    const nodesToDisconnect: AudioNode[] = [cueBus, cueOutput, masterLowpass, dryGain];
+    let cleanupTimer: ReturnType<typeof setTimeout> | null = null;
+    let cleanedUp = false;
+    let detachEndedHandlers: Array<() => void> = [];
     const cleanup = () => {
-      this.activeCueBuses.delete(cueOutput);
-      try {
-        cueBus.disconnect();
-        cueOutput.disconnect();
-        masterLowpass.disconnect();
-        dryGain.disconnect();
-        convolver?.disconnect();
-        wetGain?.disconnect();
-      } catch {
-        // ignore
+      if (cleanedUp) return;
+      cleanedUp = true;
+      if (cleanupTimer) {
+        clearTimeout(cleanupTimer);
+        cleanupTimer = null;
       }
-    };
+      detachEndedHandlers.forEach((detach) => detach());
+      detachEndedHandlers = [];
+      this.activeCueCleanups.delete(cueOutput);
+      this.activeCueBuses.delete(cueOutput);
 
-    const nodesToStop: Array<{ stopAt: number; node: AudioScheduledSourceNode }> = [];
+      // Disconnect only this cue's send from the cached convolver. Calling
+      // convolver.disconnect() here would tear down every concurrent cue that
+      // shares the same impulse response (the old fan-out leak/cutoff bug).
+      this.disconnectNode(masterLowpass, convolver ?? undefined);
+      this.disconnectNode(convolver, wetGain ?? undefined);
+      nodesToDisconnect.forEach((node) => this.disconnectNode(node));
+      if (wetGain) this.disconnectNode(wetGain);
+    };
 
     if (preset.noise) {
       const buffer = this.getCueNoiseBuffer();
@@ -928,7 +1054,8 @@ export class AudioService {
         gain.connect(cueBus);
 
         src.start(t);
-        nodesToStop.push({ node: src, stopAt: endTime + 0.05 });
+        sourceNodes.push(src);
+        nodesToDisconnect.push(src, lowpass, highpass, gain);
       }
     }
 
@@ -953,17 +1080,43 @@ export class AudioService {
       gain.connect(cueBus);
 
       osc.start(t);
-      nodesToStop.push({ node: osc, stopAt: endTime + 0.05 });
+      sourceNodes.push(osc);
+      nodesToDisconnect.push(osc, gain);
     }
 
-    nodesToStop.forEach(({ node, stopAt }) => {
-      try {
-        node.stop(stopAt);
-        node.addEventListener('ended', cleanup, { once: true });
-      } catch {
-        // ignore
-      }
+    const remainingSources = new Set(sourceNodes);
+    sourceNodes.forEach((source) => {
+      detachEndedHandlers.push(this.attachSourceEnded(source, () => {
+        remainingSources.delete(source);
+        if (remainingSources.size === 0) cleanup();
+      }));
+      this.stopSource(source, endTime + 0.05);
     });
+
+    this.activeCueCleanups.set(cueOutput, {
+      stop: (when) => {
+        const now = this.ctx?.currentTime ?? t;
+        try {
+          cueOutput.gain.cancelScheduledValues(now);
+          cueOutput.gain.setValueAtTime(cueOutput.gain.value, now);
+          cueOutput.gain.linearRampToValueAtTime(0, when);
+        } catch {
+          // Cue may already have ended while the app was backgrounding.
+        }
+        sourceNodes.forEach((source) => this.stopSource(source, when));
+        if (cleanupTimer) clearTimeout(cleanupTimer);
+        cleanupTimer = setTimeout(cleanup, Math.max(60, (when - now) * 1000 + 80));
+      },
+      cleanup,
+    });
+
+    // Native ended callbacks are deterministic when available; this timer is
+    // the safety net for an interrupted render thread that never dispatches
+    // `ended` (and also bounds graph lifetime on browser shims).
+    cleanupTimer = setTimeout(
+      cleanup,
+      Math.max(60, Math.ceil((endTime - t + 0.18) * 1000)),
+    );
   }
 
   /**
@@ -999,6 +1152,8 @@ export class AudioService {
     const rootHz = this.getDroneRootFrequency(this.themeColor) * 2 * pitchMultiplier;
     const fifthHz = rootHz * 1.5;
     const peakGain = COMPLETION_CUE_ROOT_GAIN * this.cueVolume * this.cueToneScale * gainScale;
+    const sourceNodes: CueSourceNode[] = [];
+    const nodesToDisconnect: AudioNode[] = [cueBus, cueOutput, masterLowpass];
     const scheduleTone = (frequency: number, startTime: number, releaseTime: number) => {
       const osc = this.ctx!.createOscillator();
       const gain = this.ctx!.createGain();
@@ -1014,40 +1169,76 @@ export class AudioService {
       gain.connect(cueBus);
       osc.start(startTime);
       const stopAt = releaseTime + 0.05;
-      osc.stop(stopAt);
+      this.stopSource(osc, stopAt);
+      sourceNodes.push(osc);
+      nodesToDisconnect.push(osc, gain);
     };
 
     scheduleTone(rootHz, t, t + COMPLETION_CUE_ROOT_RELEASE_SECONDS);
     scheduleTone(fifthHz, secondStart, t + COMPLETION_CUE_FIFTH_RELEASE_SECONDS);
 
     let cleanedUp = false;
+    let cleanupTimer: ReturnType<typeof setTimeout> | null = null;
+    let detachEndedHandlers: Array<() => void> = [];
     const cleanup = () => {
       if (cleanedUp) return;
       cleanedUp = true;
-      this.activeCueBuses.delete(cueOutput);
-      try {
-        cueBus.disconnect();
-        cueOutput.disconnect();
-        masterLowpass.disconnect();
-      } catch {
-        // The context may already have been torn down; cleanup is best effort.
+      if (cleanupTimer) {
+        clearTimeout(cleanupTimer);
+        this.completionCueCleanupTimers.delete(cleanupTimer);
+        cleanupTimer = null;
       }
+      detachEndedHandlers.forEach((detach) => detach());
+      detachEndedHandlers = [];
+      this.activeCueCleanups.delete(cueOutput);
+      this.activeCueBuses.delete(cueOutput);
+      nodesToDisconnect.forEach((node) => this.disconnectNode(node));
     };
 
-    // react-native-audio-api's oscillator nodes do not consistently expose the
-    // browser EventTarget cleanup surface, so use a deterministic timer for the
-    // short-lived graph instead of relying on `ended` listeners.
-    const timer = setTimeout(() => {
-      this.completionCueCleanupTimers.delete(timer);
-      cleanup();
-    }, Math.ceil((endTime - t + 0.12) * 1000));
-    this.completionCueCleanupTimers.add(timer);
+    const remainingSources = new Set(sourceNodes);
+    sourceNodes.forEach((source) => {
+      detachEndedHandlers.push(this.attachSourceEnded(source, () => {
+        remainingSources.delete(source);
+        if (remainingSources.size === 0) cleanup();
+      }));
+    });
+
+    this.activeCueCleanups.set(cueOutput, {
+      stop: (when) => {
+        const now = this.ctx?.currentTime ?? t;
+        try {
+          cueOutput.gain.cancelScheduledValues(now);
+          cueOutput.gain.setValueAtTime(cueOutput.gain.value, now);
+          cueOutput.gain.linearRampToValueAtTime(0, when);
+        } catch {
+          // Completion may race an interrupted context.
+        }
+        sourceNodes.forEach((source) => this.stopSource(source, when));
+        if (cleanupTimer) {
+          clearTimeout(cleanupTimer);
+          this.completionCueCleanupTimers.delete(cleanupTimer);
+        }
+        cleanupTimer = setTimeout(cleanup, Math.max(60, (when - now) * 1000 + 80));
+        this.completionCueCleanupTimers.add(cleanupTimer);
+      },
+      cleanup,
+    });
+
+    // RNAA's `onEnded` is the primary cleanup signal; the timer bounds graph
+    // lifetime if an interruption prevents the render thread from dispatching
+    // either oscillator's ended event.
+    cleanupTimer = setTimeout(
+      cleanup,
+      Math.max(60, Math.ceil((endTime - t + 0.18) * 1000)),
+    );
+    this.completionCueCleanupTimers.add(cleanupTimer);
   }
 
   public async startBinaural(beatHz: number = 10) {
     this.stopBinaural();
+    const epoch = this.binauralEpoch;
     const ready = await this.ensureContextReady();
-    if (!ready || !this.ctx || !this.masterGain) return;
+    if (!ready || !this.ctx || !this.masterGain || !this.isLayerStartCurrent(epoch, this.binauralEpoch)) return;
 
     const t = this.ctx.currentTime;
     const baseFreq = 200;
@@ -1076,24 +1267,30 @@ export class AudioService {
   }
 
   public stopBinaural() {
+    this.binauralEpoch += 1;
     if (!this.ctx) {
       this.binauralNodes = [];
       return;
     }
     const t = this.ctx.currentTime;
     this.binauralNodes.forEach((node) => {
-      node.gain.gain.cancelScheduledValues(t);
-      node.gain.gain.setValueAtTime(node.gain.gain.value, t);
-      node.gain.gain.linearRampToValueAtTime(0, t + 1);
-      node.osc.stop(t + 1.1);
+      try {
+        node.gain.gain.cancelScheduledValues(t);
+        node.gain.gain.setValueAtTime(node.gain.gain.value, t);
+        node.gain.gain.linearRampToValueAtTime(0, t + 1);
+      } catch {
+        // Ignore a node that was invalidated by an interruption.
+      }
+      this.stopSource(node.osc, t + 1.1);
     });
     this.binauralNodes = [];
   }
 
   public async startDrone(colorHex: string) {
     this.stopDrone();
+    const epoch = this.droneEpoch;
     const ready = await this.ensureContextReady();
-    if (!ready || !this.ctx || !this.masterGain) return;
+    if (!ready || !this.ctx || !this.masterGain || !this.isLayerStartCurrent(epoch, this.droneEpoch)) return;
 
     this.themeColor = colorHex || this.themeColor;
     const profile = this.getCueProfile(this.themeColor);
@@ -1167,6 +1364,7 @@ export class AudioService {
   }
 
   public stopDrone() {
+    this.droneEpoch += 1;
     if (!this.ctx) {
       this.droneNodes = [];
       this.droneLfoNodes = [];
@@ -1178,16 +1376,20 @@ export class AudioService {
     const t = this.ctx.currentTime;
     this.droneNodes.forEach((node) => {
       // Cancel any session-arc frequency ramps so the gain ramp lands cleanly.
-      node.osc.frequency.cancelScheduledValues(t);
-      node.gain.gain.cancelScheduledValues(t);
-      node.gain.gain.setValueAtTime(node.gain.gain.value, t);
-      node.gain.gain.linearRampToValueAtTime(0, t + 1);
-      node.osc.stop(t + 1.1);
+      try {
+        node.osc.frequency.cancelScheduledValues(t);
+        node.gain.gain.cancelScheduledValues(t);
+        node.gain.gain.setValueAtTime(node.gain.gain.value, t);
+        node.gain.gain.linearRampToValueAtTime(0, t + 1);
+      } catch {
+        // Ignore a node that was invalidated by an interruption.
+      }
+      this.stopSource(node.osc, t + 1.1);
     });
     this.droneLfoNodes.forEach((lfo) => {
       try {
         lfo.frequency.cancelScheduledValues(t);
-        lfo.stop(t + 1.1);
+        this.stopSource(lfo, t + 1.1);
       } catch {
         // already stopped
       }
@@ -1212,8 +1414,9 @@ export class AudioService {
    */
   public async startSubBass(colorHex?: string) {
     this.stopSubBass();
+    const epoch = this.subBassEpoch;
     const ready = await this.ensureContextReady();
-    if (!ready || !this.ctx || !this.masterGain) return;
+    if (!ready || !this.ctx || !this.masterGain || !this.isLayerStartCurrent(epoch, this.subBassEpoch)) return;
 
     const root = this.getDroneRootFrequency(colorHex || this.themeColor);
     this.subBassRootHz = root;
@@ -1259,8 +1462,9 @@ export class AudioService {
    */
   public async startPhaseEnvelope(colorHex?: string) {
     this.stopPhaseEnvelope();
+    const epoch = this.phaseEnvelopeEpoch;
     const ready = await this.ensureContextReady();
-    if (!ready || !this.ctx || !this.masterGain) return;
+    if (!ready || !this.ctx || !this.masterGain || !this.isLayerStartCurrent(epoch, this.phaseEnvelopeEpoch)) return;
 
     const root = this.getDroneRootFrequency(colorHex || this.themeColor);
     this.phaseEnvelopeRootHz = root;
@@ -1290,16 +1494,21 @@ export class AudioService {
   }
 
   public stopPhaseEnvelope() {
+    this.phaseEnvelopeEpoch += 1;
     if (!this.ctx || !this.phaseEnvelopeNode) {
       this.phaseEnvelopeNode = null;
       return;
     }
     const t = this.ctx.currentTime;
     const { osc, gain } = this.phaseEnvelopeNode;
-    gain.gain.cancelScheduledValues(t);
-    gain.gain.setValueAtTime(gain.gain.value, t);
-    gain.gain.linearRampToValueAtTime(0, t + 0.6);
-    osc.stop(t + 0.7);
+    try {
+      gain.gain.cancelScheduledValues(t);
+      gain.gain.setValueAtTime(gain.gain.value, t);
+      gain.gain.linearRampToValueAtTime(0, t + 0.6);
+    } catch {
+      // Ignore a node that was invalidated by an interruption.
+    }
+    this.stopSource(osc, t + 0.7);
     this.phaseEnvelopeNode = null;
   }
 
@@ -1338,24 +1547,30 @@ export class AudioService {
   }
 
   public stopSubBass() {
+    this.subBassEpoch += 1;
     if (!this.ctx || !this.subBassNode) {
       this.subBassNode = null;
       return;
     }
     const t = this.ctx.currentTime;
     const { osc, gain, lfo } = this.subBassNode;
-    gain.gain.cancelScheduledValues(t);
-    gain.gain.setValueAtTime(gain.gain.value, t);
-    gain.gain.linearRampToValueAtTime(0, t + 1.5);
-    osc.stop(t + 1.6);
-    lfo.stop(t + 1.6);
+    try {
+      gain.gain.cancelScheduledValues(t);
+      gain.gain.setValueAtTime(gain.gain.value, t);
+      gain.gain.linearRampToValueAtTime(0, t + 1.5);
+    } catch {
+      // Ignore a node that was invalidated by an interruption.
+    }
+    this.stopSource(osc, t + 1.6);
+    this.stopSource(lfo, t + 1.6);
     this.subBassNode = null;
   }
 
   public async startPinkNoise() {
     this.stopPinkNoise();
+    const epoch = this.pinkNoiseEpoch;
     const ready = await this.ensureContextReady();
-    if (!ready || !this.ctx || !this.masterGain) return;
+    if (!ready || !this.ctx || !this.masterGain || !this.isLayerStartCurrent(epoch, this.pinkNoiseEpoch)) return;
 
     const buffer = this.generatePinkNoiseBuffer();
     if (!buffer) return;
@@ -1417,15 +1632,20 @@ export class AudioService {
   }
 
   public stopPinkNoise() {
+    this.pinkNoiseEpoch += 1;
     if (!this.ctx || !this.noiseNode) {
       this.noiseNode = null;
       return;
     }
     const t = this.ctx.currentTime;
-    this.noiseNode.gain.gain.cancelScheduledValues(t);
-    this.noiseNode.gain.gain.setValueAtTime(this.noiseNode.gain.gain.value, t);
-    this.noiseNode.gain.gain.linearRampToValueAtTime(0, t + 1);
-    this.noiseNode.source.stop(t + 1.1);
+    try {
+      this.noiseNode.gain.gain.cancelScheduledValues(t);
+      this.noiseNode.gain.gain.setValueAtTime(this.noiseNode.gain.gain.value, t);
+      this.noiseNode.gain.gain.linearRampToValueAtTime(0, t + 1);
+    } catch {
+      // Ignore a node that was invalidated by an interruption.
+    }
+    this.stopSource(this.noiseNode.source, t + 1.1);
     this.noiseNode = null;
   }
 

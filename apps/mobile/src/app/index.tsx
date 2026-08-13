@@ -10,6 +10,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import {
   Alert,
   Animated,
+  AccessibilityInfo,
   AppState,
   Linking,
   type AppStateStatus,
@@ -18,6 +19,7 @@ import {
   Text,
   View,
   useColorScheme,
+  useWindowDimensions,
 } from 'react-native';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Image } from 'expo-image';
@@ -29,12 +31,20 @@ import { activateKeepAwakeAsync, deactivateKeepAwake } from 'expo-keep-awake';
 
 import BreathingExperienceDom from '../components/breathing-web/BreathingExperience.dom';
 import {
+  beginMirrorOwnerTransition,
   loadPersistedSnapshot,
   mirrorPersist,
   type ResonancePersistedSnapshot,
   RESONANCE_STORAGE_KEYS,
 } from '../breathing/resonance-mirror';
-import { GA4_FORWARDED_EVENTS, fireGA4Event, warmClientId } from '../breathing/ga4-mp';
+import {
+  GA4_FORWARDED_EVENTS,
+  fireGA4Event,
+  getAnalyticsConsent,
+  setAnalyticsConsent,
+  warmClientId,
+  type AnalyticsConsent,
+} from '../breathing/ga4-mp';
 import { useNativeSoundscape } from '../breathing/native-soundscape';
 import CompletionSummary, { type CompletionSummaryData } from '../components/CompletionSummary';
 import ModeLibrarySheet from '../components/ModeLibrarySheet';
@@ -49,12 +59,15 @@ import {
 } from '../auth/account-deletion-deeplink';
 import {
   enqueueSessionEvent,
+  enqueueSettingsSync,
   flushSessionOutbox,
   getClientVersion,
   getOrCreateGuestId,
   hydrateAccountState,
   loadAccountPracticeSummary,
+  prepareStorageOwner,
   type AccountPracticeSummary,
+  type SyncOwner,
 } from '../sync/session-sync-client';
 import { createSessionSegment, localCalendarDate } from '../sync/session-sync';
 import AccountSheet from '../auth/AccountSheet';
@@ -89,6 +102,7 @@ function blendHex(base: string, tint: string, amount: number) {
 export default function HomeScreen() {
   const { data: authSession } = useSession();
   const colorScheme = useColorScheme();
+  const { fontScale } = useWindowDimensions();
   const theme: 'light' | 'dark' = colorScheme === 'light' ? 'light' : 'dark';
   const [experienceTheme, setExperienceTheme] = useState<'light' | 'dark'>(theme);
   const locale = Localization.getLocales()[0]?.languageCode ?? 'en';
@@ -100,10 +114,27 @@ export default function HomeScreen() {
   const [snapshotReady, setSnapshotReady] = useState(false);
   const [persistedSnapshot, setPersistedSnapshot] = useState<ResonancePersistedSnapshot>({});
   const [snapshotVersion, setSnapshotVersion] = useState(0);
+  const [domOwnerGeneration, setDomOwnerGeneration] = useState(0);
   const guestIdRef = useRef<string | null>(null);
   const practiceIdRef = useRef<string | null>(null);
   const committedSecondsRef = useRef(0);
   const hydratedUserIdRef = useRef<string | null>(null);
+  const ownerIntentUserIdRef = useRef<string | null>(null);
+  const pendingGuestRemountRef = useRef(false);
+  const ownerTransitionTokenRef = useRef(0);
+  const acceptedDomOwnerGenerationRef = useRef<number | null>(null);
+  const committedDomOwnerRef = useRef<SyncOwner | null>(null);
+
+  const beginOwnerTransition = useCallback(() => {
+    acceptedDomOwnerGenerationRef.current = null;
+    return beginMirrorOwnerTransition();
+  }, []);
+
+  const commitDomOwnerGeneration = useCallback((generation: number, owner: SyncOwner) => {
+    acceptedDomOwnerGenerationRef.current = generation;
+    committedDomOwnerRef.current = owner;
+    setDomOwnerGeneration(generation);
+  }, []);
   const edgeGlowOpacity = useRef(new Animated.Value(0)).current;
   const accountButtonOpacity = useRef(new Animated.Value(1)).current;
   const soundscape = useNativeSoundscape();
@@ -128,6 +159,27 @@ export default function HomeScreen() {
   // Running-state detection: derived from keep_awake events (active=true while
   // running, active=false on pause/stop/complete). The tab is hidden while running.
   const [isSessionRunning, setIsSessionRunning] = useState(false);
+  const isSessionRunningRef = useRef(false);
+  isSessionRunningRef.current = isSessionRunning;
+  const isCommittedOwnerForAuth = useCallback((userId: string | null): boolean => {
+    const owner = committedDomOwnerRef.current;
+    if (
+      isSessionRunningRef.current ||
+      acceptedDomOwnerGenerationRef.current !== domOwnerGeneration ||
+      ownerIntentUserIdRef.current !== null ||
+      pendingGuestRemountRef.current
+    ) {
+      return false;
+    }
+    if (userId) {
+      return (
+        hydratedUserIdRef.current === userId &&
+        owner?.kind === 'account' &&
+        owner.id === userId
+      );
+    }
+    return hydratedUserIdRef.current === null && owner?.kind === 'guest';
+  }, [domOwnerGeneration]);
 
   // True while the webview's full-page settings covers the screen. Native
   // overlays (mode drawer, account button) hide so they don't float above it.
@@ -137,6 +189,15 @@ export default function HomeScreen() {
   // The DOM experience emits page_viewed_breathing once its client has mounted;
   // until then, show the light loader instead of briefly exposing the host theme.
   const [experienceReady, setExperienceReady] = useState(false);
+  const [reduceMotion, setReduceMotion] = useState(false);
+
+  // Analytics is opt-in. `undefined` means the persisted choice is still
+  // loading; null means first launch (or a storage failure) and keeps the
+  // consent sheet visible. No analytics ID is warmed until this is granted.
+  const [analyticsConsent, setAnalyticsConsentState] = useState<
+    AnalyticsConsent | null | undefined
+  >(undefined);
+  const [privacyChoicesOpen, setPrivacyChoicesOpen] = useState(false);
 
   // Latest active mode name from the persist stream (resonance_settings.mode).
   // Used to show a checkmark on the current mode in the sheet.
@@ -246,20 +307,54 @@ export default function HomeScreen() {
     }).start();
   }, [accountButtonOpacity, overlaysVisible]);
 
-  // Warm the GA4 client_id cache early so the first event doesn't pay the
-  // AsyncStorage round-trip latency.
+  // Load analytics choice before any event can be forwarded. The GA4 module
+  // also fails closed, so this remains safe if storage is unavailable.
   useEffect(() => {
-    warmClientId();
+    getAnalyticsConsent().then(setAnalyticsConsentState);
   }, []);
+
+  // Mirror the native Reduce Motion setting into the DOM experience, including
+  // changes made while the app is open. This keeps animation behavior aligned
+  // with the user's accessibility preference without adding a new dependency.
+  useEffect(() => {
+    let mounted = true;
+    AccessibilityInfo.isReduceMotionEnabled()
+      .then((enabled) => {
+        if (mounted) setReduceMotion(enabled);
+      })
+      .catch(() => {});
+    const subscription = AccessibilityInfo.addEventListener(
+      'reduceMotionChanged',
+      setReduceMotion,
+    );
+    return () => {
+      mounted = false;
+      subscription.remove();
+    };
+  }, []);
+
+  // Warm the GA4 client_id cache only after explicit opt-in. Declining or
+  // withdrawing consent never creates a persistent analytics identifier.
+  useEffect(() => {
+    if (analyticsConsent === 'granted') warmClientId();
+  }, [analyticsConsent]);
 
   // Load the native mirror before mounting the DOM component so the webview's
   // first commit never sees an empty snapshot and clobber the AsyncStorage mirror.
   useEffect(() => {
-    getOrCreateGuestId().then((guestId) => {
+    const transitionToken = ++ownerTransitionTokenRef.current;
+    const transitionGeneration = beginOwnerTransition();
+    void getOrCreateGuestId().then(async (guestId) => {
+      if (transitionToken !== ownerTransitionTokenRef.current) return;
       guestIdRef.current = guestId;
-    });
-    loadPersistedSnapshot().then((snapshot) => {
+      // Establish the guest namespace before the DOM mirror is read. This is
+      // also the cold-start fallback when auth has not resolved yet.
+      await prepareStorageOwner({ kind: 'guest', id: guestId });
+      if (transitionToken !== ownerTransitionTokenRef.current) return;
+      const snapshot = await loadPersistedSnapshot();
+      if (transitionToken !== ownerTransitionTokenRef.current) return;
       setPersistedSnapshot(snapshot);
+      commitDomOwnerGeneration(transitionGeneration, { kind: 'guest', id: guestId });
       setSnapshotReady(true);
       // MOB-5: seed the sheet's active-mode checkmark from the saved settings
       // so the first open is correct before any persist event arrives.
@@ -273,8 +368,19 @@ export default function HomeScreen() {
           // Malformed value — checkmark falls back to the persist stream.
         }
       }
+    }).catch(() => {
+      if (transitionToken !== ownerTransitionTokenRef.current) return;
+      // A storage failure must not block the breathing surface; the existing
+      // mirror loader remains best-effort and will supply an empty snapshot.
+      void Promise.all([loadPersistedSnapshot(), getOrCreateGuestId()]).then(([snapshot, guestId]) => {
+        if (transitionToken !== ownerTransitionTokenRef.current) return;
+        guestIdRef.current = guestId;
+        commitDomOwnerGeneration(transitionGeneration, { kind: 'guest', id: guestId });
+        setPersistedSnapshot(snapshot);
+        setSnapshotReady(true);
+      });
     });
-  }, []);
+  }, [beginOwnerTransition, commitDomOwnerGeneration]);
 
   // A successful account bootstrap refreshes the DOM mirror while idle. This
   // is what makes web practice appear on phone (and vice versa) without ever
@@ -282,26 +388,118 @@ export default function HomeScreen() {
   useEffect(() => {
     const userId = authSession?.user.id;
     if (!userId) {
-      hydratedUserIdRef.current = null;
+      const previousUserId = hydratedUserIdRef.current;
+      const hadAccountOwner = Boolean(previousUserId || ownerIntentUserIdRef.current);
+      if (!hadAccountOwner && !pendingGuestRemountRef.current) return;
+      // Keep the mounted owner's storage and callbacks intact while a session
+      // is active. The guest transition is replayed from this intent once the
+      // keep-awake bridge reports idle.
+      if (isSessionRunningRef.current) {
+        if (acceptedDomOwnerGenerationRef.current === null) {
+          ownerTransitionTokenRef.current += 1;
+        }
+        pendingGuestRemountRef.current = true;
+        ownerIntentUserIdRef.current = null;
+        return;
+      }
+
+      const transitionToken = ++ownerTransitionTokenRef.current;
+      ownerIntentUserIdRef.current = null;
+      pendingGuestRemountRef.current = true;
+      const transitionGeneration = beginOwnerTransition();
+      void getOrCreateGuestId()
+        .then((guestId) =>
+          prepareStorageOwner({ kind: 'guest', id: guestId }).then(() => guestId),
+        )
+        .then(async (guestId) => {
+          if (transitionToken !== ownerTransitionTokenRef.current) return;
+          const snapshot = await loadPersistedSnapshot();
+          if (transitionToken !== ownerTransitionTokenRef.current) return;
+          if (isSessionRunningRef.current) return;
+          setPersistedSnapshot(snapshot);
+          commitDomOwnerGeneration(transitionGeneration, { kind: 'guest', id: guestId });
+          setSnapshotReady(true);
+          setSnapshotVersion((version) => version + 1);
+          hydratedUserIdRef.current = null;
+          pendingGuestRemountRef.current = false;
+          setPracticeSummary(null);
+        })
+        .catch(() => {});
       return;
     }
-    if (hydratedUserIdRef.current === userId) return;
-    hydratedUserIdRef.current = userId;
+    // Auth can change while the current breathing session is still running.
+    // Record only the newest intent; owner preparation, bootstrap, and DOM
+    // remount wait until idle so no in-flight session callback can resolve the
+    // new account as its owner.
+    if (isSessionRunningRef.current) {
+      if (acceptedDomOwnerGenerationRef.current === null) {
+        ownerTransitionTokenRef.current += 1;
+      }
+      if (
+        hydratedUserIdRef.current === userId &&
+        ownerIntentUserIdRef.current !== null
+      ) {
+        ownerIntentUserIdRef.current = null;
+        pendingGuestRemountRef.current = false;
+      } else if (hydratedUserIdRef.current !== userId) {
+        ownerIntentUserIdRef.current = userId;
+        pendingGuestRemountRef.current = false;
+      }
+      return;
+    }
+    if (
+      hydratedUserIdRef.current === userId &&
+      ownerIntentUserIdRef.current === null &&
+      !pendingGuestRemountRef.current
+    ) return;
+    ownerIntentUserIdRef.current = userId;
+    pendingGuestRemountRef.current = false;
+    const transitionToken = ++ownerTransitionTokenRef.current;
+    const transitionGeneration = beginOwnerTransition();
 
-    hydrateAccountState().then(async (hydrated) => {
-      if (!hydrated || isSessionRunning) return;
-      const snapshot = await loadPersistedSnapshot();
-      setPersistedSnapshot(snapshot);
-      setSnapshotVersion((version) => version + 1);
-      setPracticeSummary(await loadAccountPracticeSummary());
-    });
-  }, [authSession?.user.id, isSessionRunning]);
+    void prepareStorageOwner({ kind: 'account', id: userId })
+      .then(async () => {
+        // Switch the DOM mirror to the account namespace before any network
+        // request. Offline/bootstrap failure must never leave guest or another
+        // account's settings visible.
+        const isolatedSnapshot = await loadPersistedSnapshot();
+        if (transitionToken !== ownerTransitionTokenRef.current) return false;
+        setPersistedSnapshot(isolatedSnapshot);
+        setSnapshotReady(true);
+        if (!isSessionRunningRef.current) {
+          commitDomOwnerGeneration(transitionGeneration, { kind: 'account', id: userId });
+          setSnapshotVersion((version) => version + 1);
+        }
+        if (isSessionRunningRef.current) return false;
+        return hydrateAccountState();
+      })
+      .then(async () => {
+        if (transitionToken !== ownerTransitionTokenRef.current || isSessionRunningRef.current) return;
+        const snapshot = await loadPersistedSnapshot();
+        if (transitionToken !== ownerTransitionTokenRef.current) return;
+        setPersistedSnapshot(snapshot);
+        commitDomOwnerGeneration(transitionGeneration, { kind: 'account', id: userId });
+        setSnapshotVersion((version) => version + 1);
+        setSnapshotReady(true);
+        // This is deliberately set only after the owner has been remounted.
+        // If auth changed during an active session, the next idle effect gets a
+        // chance to remount instead of treating the transition as complete.
+        hydratedUserIdRef.current = userId;
+        ownerIntentUserIdRef.current = null;
+        setPracticeSummary(await loadAccountPracticeSummary());
+      })
+      .catch(() => {});
+  }, [authSession?.user.id, beginOwnerTransition, commitDomOwnerGeneration, isSessionRunning]);
 
   useEffect(() => {
-    if (appState === 'active' && authSession?.user.id) {
+    if (
+      appState === 'active' &&
+      authSession?.user.id &&
+      isCommittedOwnerForAuth(authSession.user.id)
+    ) {
       void flushSessionOutbox();
     }
-  }, [appState, authSession?.user.id]);
+  }, [appState, authSession?.user.id, isCommittedOwnerForAuth, isSessionRunning]);
 
   // AVAudioSession config now lives in useNativeSoundscape (react-native-audio-api
   // AudioManager, category 'playback') — a second library configuring the session
@@ -322,6 +520,8 @@ export default function HomeScreen() {
     };
   }, []);
 
+  const completionOwnerGeneration = domOwnerGeneration;
+
   // Stable handler identities so the DOM component's effects don't re-fire (and
   // double-tap haptics) on unrelated host re-renders. The DOM bridge requires
   // async callbacks.
@@ -332,6 +532,15 @@ export default function HomeScreen() {
     // The native hook queues this until the webview's audio_state {active:false}
     // stop has completed, so the stop path cannot cut off or duplicate it.
     onSessionComplete();
+    // A completion callback may arrive from the old WebView while auth is
+    // switching. Stop native audio, but never show that old owner's receipt in
+    // the newly selected account until its DOM instance has remounted.
+    if (completionOwnerGeneration !== acceptedDomOwnerGenerationRef.current) return;
+    const completionOwner = committedDomOwnerRef.current;
+    const completionOwnerMatchesAuth = authSession?.user.id
+      ? completionOwner?.kind === 'account' && completionOwner.id === authSession.user.id
+      : completionOwner?.kind === 'guest';
+    if (!completionOwnerMatchesAuth) return;
     // Success haptic — signals a positive completion.
     // NOTE: haptics cannot be felt on the simulator; this is code-path verified
     // only (__DEV__ log below). Confirm the feel on a real device (DAR-395).
@@ -346,9 +555,26 @@ export default function HomeScreen() {
       totalMinutes: stats.totalMinutes,
       sessionsCompleted: stats.sessionsCompleted,
     });
-  }, [onSessionComplete]);
+  }, [authSession?.user.id, completionOwnerGeneration, onSessionComplete]);
 
+  // Each DOM instance captures the mirror owner generation at render time.
+  // Persist events arriving from an unmounted/old instance are ignored after an
+  // owner transition, even if the old bridge callback fires late.
+  const eventOwnerGeneration = domOwnerGeneration;
   const handleEvent = useCallback(async (name: string, params?: Record<string, any>) => {
+    const eventOwnerGenerationAccepted =
+      eventOwnerGeneration === acceptedDomOwnerGenerationRef.current;
+    const ownerTransitionPending = acceptedDomOwnerGenerationRef.current === null;
+    const eventOwner = committedDomOwnerRef.current;
+    const eventOwnerMatchesAuth = authSession?.user.id
+      ? eventOwner?.kind === 'account' && eventOwner.id === authSession.user.id
+      : eventOwner?.kind === 'guest';
+    if (
+      name === 'persist' &&
+      !eventOwnerGenerationAccepted
+    ) {
+      return;
+    }
     if (name === 'page_viewed_breathing') {
       setExperienceReady(true);
     }
@@ -357,7 +583,8 @@ export default function HomeScreen() {
       return;
     }
     if (
-      authSession?.user.id &&
+      eventOwnerGenerationAccepted &&
+      eventOwnerMatchesAuth &&
       (name === 'breathing_session_start' || name === 'mode_switch')
     ) {
       setSummaryData(null);
@@ -404,6 +631,10 @@ export default function HomeScreen() {
       committedSecondsRef.current = 0;
     }
     if (name === 'breathing_session_end') {
+      // The old DOM instance may finish the session after auth changed but
+      // before the idle remount. Keep that event with the mounted owner; once
+      // the new generation is accepted, late old callbacks are ignored.
+      if (!eventOwnerGenerationAccepted && !ownerTransitionPending) return;
       const elapsedSeconds =
         typeof params?.seconds_elapsed === 'number'
           ? Math.max(0, Math.floor(params.seconds_elapsed))
@@ -429,9 +660,16 @@ export default function HomeScreen() {
           clientVersion: getClientVersion(),
         });
         if (event) {
-          await enqueueSessionEvent(event);
+          await enqueueSessionEvent(event, eventOwner ?? undefined);
           committedSecondsRef.current = elapsedSeconds;
-          if (authSession?.user.id) void flushSessionOutbox();
+          if (
+            authSession?.user.id &&
+            eventOwner?.kind === 'account' &&
+            eventOwner.id === authSession.user.id &&
+            eventOwnerGenerationAccepted
+          ) {
+            void flushSessionOutbox();
+          }
         }
       }
       if (reason === 'completed' || reason === 'mode_switched') {
@@ -443,7 +681,12 @@ export default function HomeScreen() {
       const value = typeof params.value === 'string' ? params.value : null;
       // MOB-5: Track the active mode from resonance_settings so the sheet can
       // show a checkmark on the currently active mode.
-      if (params.key === RESONANCE_STORAGE_KEYS.SETTINGS && value != null) {
+      if (
+        params.key === RESONANCE_STORAGE_KEYS.SETTINGS &&
+        value != null &&
+        eventOwnerGenerationAccepted &&
+        eventOwnerMatchesAuth
+      ) {
         try {
           const parsed = JSON.parse(value) as Record<string, unknown>;
           if (typeof parsed.mode === 'string') {
@@ -459,7 +702,18 @@ export default function HomeScreen() {
           // Malformed JSON — leave activeModeName unchanged.
         }
       }
-      await mirrorPersist(params.key, value);
+      await mirrorPersist(params.key, value, eventOwnerGeneration);
+      if (
+        params.key === RESONANCE_STORAGE_KEYS.SETTINGS &&
+        value != null &&
+        eventOwnerGenerationAccepted &&
+        eventOwnerMatchesAuth &&
+        authSession?.user.id
+      ) {
+        void enqueueSettingsSync(value).then((queued) => {
+          if (queued) void flushSessionOutbox();
+        });
+      }
       return;
     }
     // Forward analytics events to GA4 Measurement Protocol (MOB-2).
@@ -467,7 +721,7 @@ export default function HomeScreen() {
     if (GA4_FORWARDED_EVENTS.has(name)) {
       fireGA4Event(name, params ?? {});
     }
-  }, [authSession?.user.id, edgeGlowOpacity, soundscape]);
+  }, [authSession?.user.id, edgeGlowOpacity, eventOwnerGeneration, soundscape]);
 
   // Match the native safe-area backdrop to the experience's --background token
   // (light: cream 32 72% 97%, dark: warm 20 34% 10%) so there's no black strip.
@@ -482,6 +736,8 @@ export default function HomeScreen() {
   // then follow the user's in-app theme once the experience is ready.
   const statusBarStyle: 'light' | 'dark' =
     !experienceReady || experienceTheme === 'light' ? 'dark' : 'light';
+  const analyticsConsentSheetVisible =
+    analyticsConsent === null || privacyChoicesOpen;
 
   const handleDismissSummary = useCallback(() => {
     setSummaryData(null);
@@ -490,15 +746,28 @@ export default function HomeScreen() {
   const handleOpenAccount = useCallback(() => {
     // Opening account controls is a deliberate next action. Registered users'
     // saved-practice banner should not reappear after the sheet closes.
-    if (authSession?.user.id) setSummaryData(null);
+    const userId = authSession?.user.id ?? null;
+    const ownerReady = isCommittedOwnerForAuth(userId);
+    if (userId) setSummaryData(null);
     setAccountOpen(true);
-    void loadAccountPracticeSummary().then(setPracticeSummary);
-    if (authSession?.user.id) {
+    // Do not read the previous account's summary while the DOM owner is still
+    // active or an auth transition is pending. The owner effect will populate
+    // it after the idle remount commits the current account.
+    if (ownerReady) {
+      void loadAccountPracticeSummary().then(setPracticeSummary);
+    }
+    if (userId && ownerReady) {
       void hydrateAccountState().then(async (hydrated) => {
         if (hydrated) setPracticeSummary(await loadAccountPracticeSummary());
       });
     }
-  }, [authSession?.user.id]);
+  }, [authSession?.user.id, isCommittedOwnerForAuth]);
+
+  const handleAnalyticsConsent = useCallback(async (next: AnalyticsConsent) => {
+    setAnalyticsConsentState(next);
+    setPrivacyChoicesOpen(false);
+    await setAnalyticsConsent(next);
+  }, []);
 
   // MOB-5: Handle mode selection from the sheet.
   // Sets selectedMode → passed as initialMode prop → webview switches mode.
@@ -535,6 +804,8 @@ export default function HomeScreen() {
             }}
             locale={locale}
             forcedTheme={theme}
+            reduceMotion={reduceMotion}
+            fontScale={fontScale}
             appState={appState}
             isNativeApp
             safeAreaInsets={safeAreaInsets}
@@ -604,6 +875,36 @@ export default function HomeScreen() {
             )}
           </Pressable>
         </Animated.View>
+        <View
+          pointerEvents={overlaysVisible ? 'auto' : 'none'}
+          style={[styles.privacyButtonWrap, { top: safeAreaInsets.top + 78 }]}
+        >
+          <Pressable
+            onPress={() => setPrivacyChoicesOpen(true)}
+            accessibilityRole="button"
+            accessibilityLabel="Open privacy choices"
+            accessibilityElementsHidden={!overlaysVisible}
+            style={[
+              styles.privacyButton,
+              {
+                backgroundColor:
+                  experienceTheme === 'dark'
+                    ? 'rgba(49,31,24,0.78)'
+                    : 'rgba(255,249,243,0.82)',
+                borderColor: experienceTheme === 'dark' ? '#604536' : '#e3cdbb',
+              },
+            ]}
+          >
+            <Text
+              style={[
+                styles.privacyButtonLabel,
+                { color: experienceTheme === 'dark' ? '#f0dac8' : '#5a3826' },
+              ]}
+            >
+              Privacy
+            </Text>
+          </Pressable>
+        </View>
         {/* MOB-5: Mode library pull-up tab — slides away while a session is
             running or the full-page settings covers the screen. */}
         <ModeLibrarySheet
@@ -619,6 +920,77 @@ export default function HomeScreen() {
           practice={practiceSummary}
           onClose={() => setAccountOpen(false)}
         />
+        {analyticsConsentSheetVisible && (
+          <View
+            style={styles.analyticsConsentBackdrop}
+            accessibilityViewIsModal
+          >
+            <View
+              style={[
+                styles.analyticsConsentCard,
+                {
+                  backgroundColor: experienceTheme === 'dark' ? '#311f18' : '#fff9f3',
+                  borderColor: experienceTheme === 'dark' ? '#604536' : '#e3cdbb',
+                },
+              ]}
+            >
+              <Text
+                accessibilityRole="header"
+                style={[
+                  styles.analyticsConsentTitle,
+                  { color: experienceTheme === 'dark' ? '#f0dac8' : '#3b2418' },
+                ]}
+              >
+                Privacy choices
+              </Text>
+              <Text
+                style={[
+                  styles.analyticsConsentBody,
+                  { color: experienceTheme === 'dark' ? '#e5cfc1' : '#654b3b' },
+                ]}
+              >
+                Allow optional, pseudonymous usage analytics (session starts and ends, mode,
+                duration, and platform) to help us improve Deep Breathing. This
+                is optional: the breathing experience works fully either way.
+                You can change this choice anytime from Privacy.
+              </Text>
+              <Pressable
+                onPress={() => void handleAnalyticsConsent('granted')}
+                accessibilityRole="button"
+                accessibilityLabel="Allow usage analytics"
+                style={[
+                  styles.analyticsConsentPrimary,
+                  { backgroundColor: experienceTheme === 'dark' ? '#e58f6e' : '#b85d3c' },
+                ]}
+              >
+                <Text style={styles.analyticsConsentPrimaryLabel}>
+                  {analyticsConsent === 'granted' ? 'Keep analytics on' : 'Allow analytics'}
+                </Text>
+              </Pressable>
+              <Pressable
+                onPress={() => void handleAnalyticsConsent('denied')}
+                accessibilityRole="button"
+                accessibilityLabel={
+                  analyticsConsent === 'granted'
+                    ? 'Turn analytics off'
+                    : 'Keep analytics off'
+                }
+                style={styles.analyticsConsentSecondary}
+              >
+                <Text
+                  style={[
+                    styles.analyticsConsentSecondaryLabel,
+                    { color: experienceTheme === 'dark' ? '#f0dac8' : '#5a3826' },
+                  ]}
+                >
+                  {analyticsConsent === 'granted'
+                    ? 'Turn analytics off'
+                    : 'Keep analytics off'}
+                </Text>
+              </Pressable>
+            </View>
+          </View>
+        )}
       </SafeAreaView>
     </View>
   );
@@ -643,6 +1015,81 @@ const styles = StyleSheet.create({
     position: 'absolute',
     left: 24,
     zIndex: 95,
+  },
+  privacyButtonWrap: {
+    position: 'absolute',
+    right: 24,
+    zIndex: 95,
+  },
+  privacyButton: {
+    minHeight: 34,
+    paddingHorizontal: 12,
+    borderRadius: 17,
+    borderWidth: StyleSheet.hairlineWidth,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  privacyButtonLabel: { fontSize: 12, fontWeight: '600' },
+  analyticsConsentBackdrop: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
+    zIndex: 300,
+    backgroundColor: 'rgba(20, 10, 6, 0.58)',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: 24,
+  },
+  analyticsConsentCard: {
+    width: '100%',
+    maxWidth: 420,
+    borderRadius: 28,
+    borderWidth: StyleSheet.hairlineWidth,
+    paddingHorizontal: 24,
+    paddingVertical: 26,
+    shadowColor: '#000',
+    shadowOpacity: 0.2,
+    shadowRadius: 18,
+    shadowOffset: { width: 0, height: 8 },
+    elevation: 8,
+  },
+  analyticsConsentTitle: {
+    fontSize: 23,
+    fontWeight: '700',
+    letterSpacing: -0.3,
+  },
+  analyticsConsentBody: {
+    marginTop: 12,
+    fontSize: 15,
+    lineHeight: 22,
+  },
+  analyticsConsentPrimary: {
+    minHeight: 48,
+    marginTop: 22,
+    borderRadius: 24,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: 16,
+  },
+  analyticsConsentPrimaryLabel: {
+    color: '#fff9f3',
+    fontSize: 15,
+    fontWeight: '700',
+  },
+  analyticsConsentSecondary: {
+    minHeight: 44,
+    marginTop: 8,
+    borderRadius: 22,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: 16,
+  },
+  analyticsConsentSecondaryLabel: {
+    fontSize: 15,
+    fontWeight: '600',
+    textDecorationLine: 'underline',
   },
   accountButton: {
     width: 42,

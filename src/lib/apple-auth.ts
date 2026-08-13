@@ -48,6 +48,7 @@ export type AppleTokenRevocationDependencies = {
   query: AppleAccountQuery;
   clientIds: readonly string[];
   generateClientSecret: AppleClientSecretGenerator;
+  decryptToken?: (token: string) => Promise<string | null>;
   fetchImpl?: AppleFetch;
 };
 
@@ -336,10 +337,23 @@ export async function revokeAppleTokensBeforeDelete(
     ];
 
     for (const candidate of candidates) {
-      if (!candidate.token || seen.has(candidate.token)) continue;
-      seen.add(candidate.token);
+      if (!candidate.token) continue;
+
+      let token = candidate.token;
+      if (dependencies.decryptToken) {
+        try {
+          token = (await dependencies.decryptToken(candidate.token)) ?? "";
+        } catch {
+          token = "";
+        }
+      }
+      if (!token || seen.has(token)) {
+        if (!token) outcome.failed += 1;
+        continue;
+      }
+      seen.add(token);
       const result = await revokeAppleToken(
-        candidate.token,
+        token,
         candidate.hints,
         dependencies,
       );

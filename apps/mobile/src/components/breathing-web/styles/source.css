@@ -89,7 +89,13 @@
   backdrop-filter: blur(22px);
 }
 
-html, body { background-color: hsl(var(--background)); }
+html, body {
+  background-color: hsl(var(--background));
+  /* Let WKWebView honor the user's Dynamic Type/text-size preference. A
+     fixed 100% text-size-adjust silently defeated larger accessibility text. */
+  -webkit-text-size-adjust: auto;
+  text-size-adjust: auto;
+}
 
 /* The breathing experience is a full-screen immersive surface — no text
    selection or long-press callout anywhere (dragging the orb would
@@ -118,4 +124,16 @@ html, body { background-color: hsl(var(--background)); }
     animation: none !important;
     transition: none !important;
   }
+}
+
+[data-reduced-motion='true'] .pace-bar {
+  transition: none !important;
+}
+
+/* Keep keyboard focus visible even though the visualizer is an immersive
+   surface. The outline is deliberately outside the 44pt hit target. */
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid hsl(var(--ring));
+  outline-offset: 3px;
 }

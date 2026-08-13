@@ -20,7 +20,12 @@ import Visualizer from './components/Visualizer';
 import ParticleBackground from './components/ParticleBackground';
 import SnowBackground from './components/SnowBackground';
 import { createRuntimePhraseResolver, RuntimePhraseKey } from './runtime-phrases';
-import { seedLocalStorageFromSnapshot, shouldMirrorPersist } from '../../breathing/persist-seed';
+import {
+  parsePersistedJson,
+  resolvePersistedItem,
+  seedLocalStorageFromSnapshot,
+  shouldMirrorPersist,
+} from '../../breathing/persist-seed';
 import {
   commitPracticeStats,
   hydrateTotalSeconds,
@@ -54,6 +59,11 @@ interface BreathingExperienceProps {
   noMobileBottomPad?: boolean;
   isNativeApp?: boolean;
   safeAreaInsets?: { top: number; right: number; bottom: number; left: number };
+  /** Host accessibility overrides (the DOM component also auto-detects them). */
+  reduceMotion?: boolean;
+  largeText?: boolean;
+  /** Native Dynamic Type scale (1 = system default). Clamped in the DOM. */
+  fontScale?: number;
   /** Native AsyncStorage mirror — seeds localStorage when empty (app only). */
   initialPersistedSnapshot?: Partial<Record<string, string | null>>;
 }
@@ -63,6 +73,106 @@ const VALID_DURATIONS = [30, 60, 180, 300, 600] as const;
 const MAX_DURATION = 600; // 10 minutes max
 const DEFAULT_DURATION = 60; // 1 min default for new users
 const PACE_BAR_HIDE_DELAY_MS = 5000;
+const FOCUSABLE_SELECTOR = [
+  'a[href]',
+  'area[href]',
+  'button:not([disabled])',
+  'input:not([disabled])',
+  'select:not([disabled])',
+  'textarea:not([disabled])',
+  '[tabindex]:not([tabindex="-1"])',
+].join(',');
+
+const VALID_MODE_VALUES = Object.values(ModeName) as ModeName[];
+
+const readStorageItem = (key: string): string | null => {
+  try {
+    if (typeof localStorage === 'undefined') return null;
+    return localStorage.getItem(key);
+  } catch {
+    // WKWebView storage can be unavailable in private/evicted contexts. The
+    // breathing surface should still boot with in-memory defaults.
+    return null;
+  }
+};
+
+const writeStorageItem = (key: string, value: string): void => {
+  try {
+    if (typeof localStorage !== 'undefined') localStorage.setItem(key, value);
+  } catch {
+    // Persistence is best-effort; never let a quota/security error blank the
+    // DOM component.
+  }
+};
+
+const isRecord = (value: unknown): value is Record<string, unknown> =>
+  Boolean(value && typeof value === 'object' && !Array.isArray(value));
+
+const resolvePersistedMode = (raw: unknown): ModeName | null => {
+  if (typeof raw !== 'string') return null;
+  if (VALID_MODE_VALUES.includes(raw as ModeName)) return raw as ModeName;
+
+  // Older web/native builds persisted short ids while the current catalog
+  // stores the display name. Keep those users on their chosen pattern.
+  const normalized = raw.trim().toLowerCase().replace(/[\s_-]+/g, '');
+  const aliases: Record<string, ModeName> = {
+    box: ModeName.Box,
+    boxbreathing: ModeName.Box,
+    relax: ModeName.Relax,
+    '478': ModeName.Relax,
+    '478relax': ModeName.Relax,
+    coherent: ModeName.Coherent,
+    coherentbreathing: ModeName.Coherent,
+    sigh: ModeName.Sigh,
+    physiologicalsigh: ModeName.Sigh,
+    wimhof: ModeName.WimHof,
+    wimhofbreathing: ModeName.WimHof,
+    pursedlip: ModeName.PursedLip,
+    pursedlipbreathing: ModeName.PursedLip,
+    nadishodhana: ModeName.NadiShodhana,
+    ujjayi: ModeName.Ujjayi,
+    belly: ModeName.Belly,
+    bellybreathing: ModeName.Belly,
+    buteyko: ModeName.Buteyko,
+    tummo: ModeName.Tummo,
+    breathoffire: ModeName.BreathOfFire,
+  };
+  return aliases[normalized] ?? null;
+};
+
+const finiteNumber = (raw: unknown): number | null => {
+  const value = typeof raw === 'number' ? raw : typeof raw === 'string' ? Number(raw) : NaN;
+  return Number.isFinite(value) ? value : null;
+};
+
+const resolvePersistedDuration = (raw: unknown): number | null | undefined => {
+  if (raw === null) return null;
+  const value = finiteNumber(raw);
+  if (value == null || value <= 0) return undefined;
+  return Math.min(value, MAX_DURATION);
+};
+
+const nextBreathingPhase = (phase: BreathingPhase, pattern: BreathingPattern): BreathingPhase => {
+  switch (phase) {
+    case BreathingPhase.Inhale:
+      return (pattern.inhale2 ?? 0) > 0
+        ? BreathingPhase.Inhale2
+        : pattern.holdIn > 0
+          ? BreathingPhase.HoldIn
+          : BreathingPhase.Exhale;
+    case BreathingPhase.Inhale2:
+      return pattern.holdIn > 0 ? BreathingPhase.HoldIn : BreathingPhase.Exhale;
+    case BreathingPhase.HoldIn:
+      return BreathingPhase.Exhale;
+    case BreathingPhase.Exhale:
+      return pattern.holdOut > 0 ? BreathingPhase.HoldOut : BreathingPhase.Inhale;
+    case BreathingPhase.HoldOut:
+      return BreathingPhase.Inhale;
+    case BreathingPhase.Idle:
+    default:
+      return BreathingPhase.Inhale;
+  }
+};
 
 
 
@@ -135,8 +245,18 @@ const PaceSlider: React.FC<PaceSliderProps> = ({
       className={`h-1 w-full cursor-pointer appearance-none rounded-full ${
         visible ? 'pointer-events-auto' : 'pointer-events-none'
       }`}
-      style={{ background: track, accentColor: 'hsl(var(--background))' }}
+      style={{
+        background: track,
+        accentColor: 'hsl(var(--background))',
+        // Keep the visual hairline while giving keyboard/touch users the
+        // recommended 44pt hit target.
+        minHeight: 44,
+      }}
       aria-label="Breath speed"
+      aria-valuemin={speedOf(SLIDER_MAX)}
+      aria-valuemax={speedOf(SLIDER_MIN)}
+      aria-valuenow={speedOf(value)}
+      aria-valuetext={`${speedOf(value).toFixed(1)} times speed`}
       aria-hidden={visible ? undefined : true}
       tabIndex={visible ? 0 : -1}
     />
@@ -180,6 +300,9 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   noMobileBottomPad = false,
   isNativeApp = false,
   safeAreaInsets = { top: 0, right: 0, bottom: 0, left: 0 },
+  reduceMotion: reduceMotionOverride,
+  largeText = false,
+  fontScale,
   initialPersistedSnapshot,
 }) => {
   // `defaultMode` and `initialMode` are aliases — the dom wrapper passes
@@ -214,97 +337,153 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   // Client-side hydration check
   const [mounted, setMounted] = useState(false);
   const storageHydratedRef = useRef(false);
+  const durationHydratedRef = useRef(false);
 
   useEffect(() => {
+    // Hydrate once. Prop updates after the DOM has committed (native mode
+    // changes, mirror refreshes) are handled by their dedicated effects and
+    // must not reapply the initial snapshot over live user state.
+    if (storageHydratedRef.current) return;
     setMounted(true);
 
     if (isNativeApp && initialPersistedSnapshot) {
       seedLocalStorageFromSnapshot(
         Object.values(STORAGE_KEYS),
         initialPersistedSnapshot,
-        localStorage,
+        { getItem: readStorageItem, setItem: writeStorageItem },
       );
     }
 
-    const savedSettings = localStorage.getItem(STORAGE_KEYS.SETTINGS);
-    if (savedSettings) {
-      const parsed = JSON.parse(savedSettings);
-      if (!effectiveDefaultMode && parsed.mode) setActiveMode(parsed.mode);
+    const savedSettings = resolvePersistedItem(
+      STORAGE_KEYS.SETTINGS,
+      readStorageItem(STORAGE_KEYS.SETTINGS),
+      initialPersistedSnapshot,
+    );
+    const parsedSettings = parsePersistedJson(savedSettings);
+    if (parsedSettings) {
+      const savedMode = resolvePersistedMode(
+        parsedSettings.mode ?? parsedSettings.selectedMode ?? parsedSettings.pattern,
+      );
+      if (!effectiveDefaultMode && savedMode) setActiveMode(savedMode);
+
       // Per-mode presets win over the flat speed/duration fields: a user who
       // last used 1.4x + 5min in Relax gets exactly that back, not the values
       // of whatever mode was active when the settings were last written.
-      const presets = sanitizeModePresets(parsed.modePresets, Object.keys(BREATHING_PATTERNS));
+      const rawPresets = isRecord(parsedSettings.modePresets)
+        ? Object.fromEntries(
+            Object.entries(parsedSettings.modePresets).flatMap(([mode, value]) => {
+              const canonicalMode = resolvePersistedMode(mode);
+              return canonicalMode ? [[canonicalMode, value]] : [];
+            }),
+          )
+        : parsedSettings.modePresets;
+      const presets = sanitizeModePresets(rawPresets, Object.keys(BREATHING_PATTERNS));
       setModePresets(presets);
-      const savedMode = !effectiveDefaultMode && typeof parsed.mode === 'string' ? parsed.mode : null;
       const resolvedMode = effectiveDefaultMode ?? savedMode ?? ModeName.Box;
       const preset = presets[resolvedMode];
       if (preset) {
         setSpeedMultiplier(preset.speed);
-      } else if (parsed.phaseSpeeds && typeof parsed.phaseSpeeds === 'object') {
+      } else if (isRecord(parsedSettings.phaseSpeeds)) {
         // One-time migration: earlier builds stored per-phase speeds; fold
         // them into the single measure by averaging.
-        const ps = parsed.phaseSpeeds as Record<string, unknown>;
-        const vals = [ps.inhale, ps.hold, ps.exhale].filter(
-          (v): v is number => typeof v === 'number' && Number.isFinite(v),
-        );
+        const vals = [parsedSettings.phaseSpeeds.inhale, parsedSettings.phaseSpeeds.hold, parsedSettings.phaseSpeeds.exhale]
+          .map(finiteNumber)
+          .filter((v): v is number => v != null);
         setSpeedMultiplier(clampSpeed(vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : 1));
-      } else if (parsed.speed) {
-        setSpeedMultiplier(clampSpeed(parsed.speed));
+      } else {
+        const flatSpeed = finiteNumber(
+          parsedSettings.speed ?? parsedSettings.speedMultiplier ?? parsedSettings.pace,
+        );
+        if (flatSpeed != null) setSpeedMultiplier(clampSpeed(flatSpeed));
       }
-      if (!effectiveDefaultMode && parsed.color) setThemeColor(parsed.color);
+
+      const persistedColor = parsedSettings.color ?? parsedSettings.themeColor;
+      if (!effectiveDefaultMode && typeof persistedColor === 'string' && /^#[0-9a-f]{3,8}$/i.test(persistedColor)) {
+        setThemeColor(persistedColor);
+      }
     } else if (!effectiveDefaultMode) {
       const hour = new Date().getHours();
       if (hour >= 5 && hour < 11) setThemeColor("#0d9488");
       else if (hour >= 18 || hour < 5) setThemeColor("#ea580c");
     }
 
-    if (effectiveDefaultMode) {
+    if (effectiveDefaultMode && BREATHING_PATTERNS[effectiveDefaultMode]) {
       setActiveMode(effectiveDefaultMode);
       setThemeColor(BREATHING_PATTERNS[effectiveDefaultMode].color);
     }
 
-    const savedStats = localStorage.getItem(STORAGE_KEYS.STATS);
-    if (savedStats) {
-      const parsed = JSON.parse(savedStats);
-      const hydratedSeconds = hydrateTotalSeconds(parsed.totalMinutes || 0, parsed.totalSeconds);
+    const savedStats = resolvePersistedItem(
+      STORAGE_KEYS.STATS,
+      readStorageItem(STORAGE_KEYS.STATS),
+      initialPersistedSnapshot,
+    );
+    const parsedStats = parsePersistedJson(savedStats);
+    if (parsedStats) {
+      const totalMinutesValue = finiteNumber(parsedStats.totalMinutes) ?? 0;
+      const totalSecondsValue = finiteNumber(parsedStats.totalSeconds) ?? undefined;
+      const sessionsValue = finiteNumber(parsedStats.sessionsCompleted) ?? 0;
+      const hydratedSeconds = hydrateTotalSeconds(totalMinutesValue, totalSecondsValue);
       setTotalSeconds(hydratedSeconds);
       setTotalMinutes(Math.floor(hydratedSeconds / 60));
-      setSessionsCompleted(parsed.sessionsCompleted || 0);
+      setSessionsCompleted(Math.max(0, Math.floor(sessionsValue)));
     }
 
-    const soundFlag = localStorage.getItem(STORAGE_KEYS.SOUND_OK);
+    const soundFlag = readStorageItem(STORAGE_KEYS.SOUND_OK);
     if (soundFlag === 'true') {
       setSoundStatus('confirmed');
     }
 
-    storageHydratedRef.current = true;
   }, [effectiveDefaultMode, isNativeApp, initialPersistedSnapshot]);
 
   useEffect(() => {
     // An explicit initialDuration (passed from native) wins over the
     // localStorage-persisted duration — mirrors the original URL-param
     // precedence (durationFromUrl beat the saved value).
-    if (!mounted || initialDuration != null) return;
-    const savedSettings = localStorage.getItem(STORAGE_KEYS.SETTINGS);
-    if (!savedSettings) return;
-    try {
-      const parsed = JSON.parse(savedSettings);
-      // The mode this saved settings block belongs to: an explicit
-      // initialMode (native sheet) wins, else the saved mode.
-      const savedMode = typeof parsed.mode === 'string' ? parsed.mode : null;
-      const presetMode = effectiveDefaultMode ?? savedMode ?? activeMode;
-      const preset = sanitizeModePresets(parsed.modePresets, Object.keys(BREATHING_PATTERNS))[presetMode];
-      if (preset) {
-        setSelectedDuration(preset.duration === null ? null : Math.min(preset.duration, MAX_DURATION));
-      } else if (parsed.duration === null) {
-        setSelectedDuration(null);
-      } else if (typeof parsed.duration === 'number') {
-        setSelectedDuration(Math.min(parsed.duration, MAX_DURATION));
-      }
-    } catch (_err) {
-      // Ignore invalid persisted settings.
+    if (!mounted || durationHydratedRef.current) return;
+    // Hydrate this one time only. The mode/snapshot props can legitimately
+    // change later (for example when the native sheet changes mode), but a
+    // later prop bridge update must never overwrite a duration the user has
+    // already selected in this DOM instance.
+    durationHydratedRef.current = true;
+    if (initialDuration != null) return;
+    const savedSettings = resolvePersistedItem(
+      STORAGE_KEYS.SETTINGS,
+      readStorageItem(STORAGE_KEYS.SETTINGS),
+      initialPersistedSnapshot,
+    );
+    const parsed = parsePersistedJson(savedSettings);
+    if (!parsed) return;
+
+    // The mode this saved settings block belongs to: an explicit
+    // initialMode (native sheet) wins, else the saved mode.
+    const savedMode = resolvePersistedMode(parsed.mode ?? parsed.selectedMode ?? parsed.pattern);
+    const presetMode = effectiveDefaultMode ?? savedMode ?? activeMode;
+    const rawPresets = isRecord(parsed.modePresets)
+      ? Object.fromEntries(
+          Object.entries(parsed.modePresets).flatMap(([mode, value]) => {
+            const canonicalMode = resolvePersistedMode(mode);
+            return canonicalMode ? [[canonicalMode, value]] : [];
+          }),
+        )
+      : parsed.modePresets;
+    const preset = sanitizeModePresets(rawPresets, Object.keys(BREATHING_PATTERNS))[presetMode];
+    if (preset) {
+      setSelectedDuration(preset.duration === null ? null : Math.min(preset.duration, MAX_DURATION));
+      return;
     }
-  }, [mounted, initialDuration]);
+
+    const persistedDuration = resolvePersistedDuration(
+      parsed.duration ?? parsed.selectedDuration ?? parsed.selectedDurationSec,
+    );
+    if (persistedDuration !== undefined) setSelectedDuration(persistedDuration);
+  }, [activeMode, effectiveDefaultMode, initialDuration, initialPersistedSnapshot, mounted]);
+
+  // Mark hydration complete only on the render after the state setters above
+  // have committed. This keeps the mode-preset persistence effect from seeing
+  // the initial Box/default values and overwriting a saved Box preset.
+  useEffect(() => {
+    if (mounted) storageHydratedRef.current = true;
+  }, [mounted]);
 
   // Changing the session length while a session is PAUSED restarts the clock:
   // the timer returns to 0:00, the ring dot returns to the top, and the next
@@ -322,6 +501,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   }, [selectedDuration]);
 
   const [phase, setPhase] = useState<BreathingPhase>(BreathingPhase.Idle);
+  const phaseRef = useRef<BreathingPhase>(BreathingPhase.Idle);
   const [isRunning, setIsRunning] = useState(false);
   // The floating pace bar is transient running-session chrome. Pausing,
   // stopping, or completing a session removes it with the rest of the active
@@ -339,8 +519,19 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   });
   const protocolPhaseStartRef = useRef<number>(0);
   const retentionStartRef = useRef<number>(0);
+  const protocolStateRef = useRef(protocolState);
+  protocolStateRef.current = protocolState;
+  // A completion frame can be delivered more than once while React batches
+  // the protocol state update. Keep the terminal session commit idempotent.
+  const protocolCompletionHandledRef = useRef(false);
   const [muted, setMuted] = useState(false);
   const [controlsOpen, setControlsOpen] = useState(false);
+  const settingsTriggerRef = useRef<HTMLButtonElement | null>(null);
+  const settingsDialogRef = useRef<HTMLDivElement | null>(null);
+  const settingsCloseRef = useRef<HTMLButtonElement | null>(null);
+  const settingsBackgroundRef = useRef<HTMLDivElement | null>(null);
+  const settingsPreviouslyFocusedRef = useRef<HTMLElement | null>(null);
+  const settingsWasOpenRef = useRef(false);
   // In-app light/dark override (null = follow the native/device theme prop).
   const [themeOverride, setThemeOverride] = useState<'light' | 'dark' | null>(null);
   const [soundStatus, setSoundStatus] = useState<'unknown' | 'confirmed'>('unknown');
@@ -355,8 +546,11 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   const [runtimeLocale] = useState(locale);
   const runtimePhrases = useMemo(() => createRuntimePhraseResolver(runtimeLocale), [runtimeLocale]);
   const [instruction, setInstruction] = useState(() => runtimePhrases.resolve('session.ready_to_start').text);
+  const [phaseAnnouncement, setPhaseAnnouncement] = useState('');
+  const [phaseAnnouncementSequence, setPhaseAnnouncementSequence] = useState(0);
   const [runtimeFallbackCount, setRuntimeFallbackCount] = useState(0);
   const [sessionSeconds, setSessionSeconds] = useState(0);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(Boolean(reduceMotionOverride));
 
   // Refs
   const audioServiceRef = useRef<AudioService | null>(null);
@@ -741,16 +935,29 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   }, [orbPointerDown, orbPointerMove, orbPointerUp]);
 
   // Detect prefers-reduced-motion (iOS accessibility setting) so the return
-  // spring can degrade to a plain glide home.
+  // spring can degrade to a plain glide home. The state value is also exposed
+  // on the root DOM node so CSS/assistive tooling can make the same choice.
   useEffect(() => {
+    if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') {
+      reduceMotionRef.current = Boolean(reduceMotionOverride);
+      setPrefersReducedMotion(Boolean(reduceMotionOverride));
+      return;
+    }
     const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
-    reduceMotionRef.current = mq.matches;
-    const onChange = (e: MediaQueryListEvent) => {
-      reduceMotionRef.current = e.matches;
+    const read = () => {
+      const reduced = reduceMotionOverride ?? mq.matches;
+      reduceMotionRef.current = reduced;
+      setPrefersReducedMotion(reduced);
     };
-    mq.addEventListener('change', onChange);
-    return () => mq.removeEventListener('change', onChange);
-  }, []);
+    read();
+    const onChange = () => read();
+    mq.addEventListener?.('change', onChange);
+    return () => mq.removeEventListener?.('change', onChange);
+  }, [reduceMotionOverride]);
+
+  useEffect(() => {
+    phaseRef.current = phase;
+  }, [phase]);
 
   const getAudioService = useCallback(() => {
     if (!audioServiceRef.current) {
@@ -802,6 +1009,17 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   const previousAppStateRef = useRef(appState);
   sessionSecondsRef.current = sessionSeconds;
 
+  const syncSessionClock = useCallback((wallNow = Date.now()) => {
+    const start = sessionClockStartRef.current;
+    if (start <= 0) return;
+    const elapsedSeconds = Math.max(0, Math.floor((wallNow - start) / 1000));
+    sessionSecondsRef.current = elapsedSeconds;
+    setSessionSeconds((current) => current === elapsedSeconds ? current : elapsedSeconds);
+    if (typeof selectedDuration === 'number' && selectedDuration > 0) {
+      setSessionProgress(Math.min(Math.max((wallNow - start) / 1000 / selectedDuration, 0), 1));
+    }
+  }, [selectedDuration]);
+
   const applyThemePreference = useCallback((mode: 'dark' | 'light') => {
     if (typeof document === 'undefined') return;
     const root = document.documentElement;
@@ -846,6 +1064,23 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
 
   const setInstructionKey = useCallback((key: RuntimePhraseKey, vars?: Record<string, string | number>) => {
     setInstruction(getSafePhrase(key, vars));
+  }, [getSafePhrase]);
+
+  const announcePhase = useCallback((nextPhase: BreathingPhase) => {
+    const key: RuntimePhraseKey =
+      nextPhase === BreathingPhase.Inhale2
+        ? 'phase.inhale_again'
+        : nextPhase === BreathingPhase.Inhale
+          ? 'phase.inhale'
+          : nextPhase === BreathingPhase.Exhale
+            ? 'phase.exhale'
+            : nextPhase === BreathingPhase.HoldIn || nextPhase === BreathingPhase.HoldOut
+              ? 'phase.hold'
+              : 'phase.ready';
+    setPhaseAnnouncement(getSafePhrase(key));
+    // Incrementing a keyed live node makes repeated “Inhale”/“Exhale” cycles
+    // announce reliably even when the text is identical to the previous one.
+    setPhaseAnnouncementSequence((sequence) => sequence + 1);
   }, [getSafePhrase]);
 
   useEffect(() => {
@@ -907,6 +1142,9 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
         void audio.fadeOutAndSuspend({ fadeSeconds: 0.25 });
       }
     } else if (appState === 'active') {
+      // WebKit may have suspended both rAF and setInterval. Reconcile the
+      // elapsed wall clock immediately on foreground before rebuilding audio.
+      if (isRunning) syncSessionClock();
       const audio = getAudioService();
       void audio.resume().then((ready) => {
         if (ready && isNativeApp && isRunning) {
@@ -921,6 +1159,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     isNativeApp,
     isRunning,
     setInstructionKey,
+    syncSessionClock,
     startSoundscape,
     themeColor,
   ]);
@@ -1005,7 +1244,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
       duration: selectedDuration,
       modePresets
     });
-    localStorage.setItem(STORAGE_KEYS.SETTINGS, value);
+    writeStorageItem(STORAGE_KEYS.SETTINGS, value);
     mirrorPersist(STORAGE_KEYS.SETTINGS, value);
   }, [activeMode, speedMultiplier, themeColor, selectedDuration, modePresets, mounted, mirrorPersist]);
 
@@ -1016,7 +1255,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
       totalSeconds,
       sessionsCompleted
     });
-    localStorage.setItem(STORAGE_KEYS.STATS, value);
+    writeStorageItem(STORAGE_KEYS.STATS, value);
     mirrorPersist(STORAGE_KEYS.STATS, value);
   }, [totalMinutes, totalSeconds, sessionsCompleted, mounted, mirrorPersist]);
 
@@ -1048,6 +1287,72 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     return () => window.removeEventListener('keydown', onKeyDown);
   }, [controlsOpen]);
 
+  // The settings surface is a true modal for keyboard and VoiceOver users:
+  // background content is inert/hidden, focus starts on Close, Tab wraps
+  // inside the dialog, and closing restores the trigger that opened it.
+  useEffect(() => {
+    const background = settingsBackgroundRef.current;
+    if (!controlsOpen || !background) return;
+
+    settingsWasOpenRef.current = true;
+    background.setAttribute('inert', '');
+    background.setAttribute('aria-hidden', 'true');
+
+    const focusDialog = () => {
+      const dialog = settingsDialogRef.current;
+      if (!dialog) return;
+      const focusables = Array.from(dialog.querySelectorAll<HTMLElement>(FOCUSABLE_SELECTOR));
+      (settingsCloseRef.current ?? focusables[0] ?? dialog).focus();
+    };
+    const frame = window.requestAnimationFrame(focusDialog);
+
+    const onDialogKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        setControlsOpen(false);
+        return;
+      }
+      if (event.key !== 'Tab') return;
+      const dialog = settingsDialogRef.current;
+      if (!dialog) return;
+      const focusables = Array.from(dialog.querySelectorAll<HTMLElement>(FOCUSABLE_SELECTOR));
+      if (focusables.length === 0) {
+        event.preventDefault();
+        dialog.focus();
+        return;
+      }
+      const first = focusables[0];
+      const last = focusables[focusables.length - 1];
+      const active = document.activeElement;
+      if (event.shiftKey && (active === first || active === dialog)) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && active === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    };
+
+    window.addEventListener('keydown', onDialogKeyDown);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      window.removeEventListener('keydown', onDialogKeyDown);
+      background.removeAttribute('inert');
+      background.removeAttribute('aria-hidden');
+    };
+  }, [controlsOpen]);
+
+  useEffect(() => {
+    if (controlsOpen || !settingsWasOpenRef.current) return;
+    settingsWasOpenRef.current = false;
+    const trigger = settingsPreviouslyFocusedRef.current ?? settingsTriggerRef.current;
+    settingsPreviouslyFocusedRef.current = null;
+    if (!trigger) return;
+    window.requestAnimationFrame(() => {
+      if (trigger.isConnected && !trigger.hasAttribute('disabled')) trigger.focus();
+    });
+  }, [controlsOpen]);
+
   // Native background-audio handoff. sessionSeconds is intentionally read from
   // a ref so this only crosses the DOM bridge when playback state/config changes,
   // not once per second.
@@ -1064,11 +1369,36 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
 
   // Theme: in-app toggle wins, else the native/device theme prop.
   const activeTheme = themeOverride ?? forcedTheme;
+  const resolvedFontScale = Math.min(2, Math.max(1, finiteNumber(fontScale) ?? (largeText ? 1.2 : 1)));
 
   useEffect(() => {
     applyThemePreference(activeTheme);
     onEvent?.('theme_change', { theme: activeTheme });
   }, [activeTheme, applyThemePreference, onEvent]);
+
+  // Tailwind's rem-based classes resolve against the document root, so a
+  // font-size on the experience descendant does not scale Dynamic Type. Apply
+  // the clamped native scale to this DOM document's html element and restore
+  // any previous host value on cleanup (important when rendered on the web).
+  useEffect(() => {
+    if (typeof document === 'undefined' || resolvedFontScale <= 1) return;
+    const root = document.documentElement;
+    const previousFontSize = root.style.fontSize;
+    const previousScale = root.style.getPropertyValue('--resonance-font-scale');
+    const previousMarker = root.dataset.resonanceLargeText;
+
+    root.style.fontSize = `${resolvedFontScale * 100}%`;
+    root.style.setProperty('--resonance-font-scale', String(resolvedFontScale));
+    root.dataset.resonanceLargeText = 'true';
+
+    return () => {
+      root.style.fontSize = previousFontSize;
+      if (previousScale) root.style.setProperty('--resonance-font-scale', previousScale);
+      else root.style.removeProperty('--resonance-font-scale');
+      if (previousMarker == null) delete root.dataset.resonanceLargeText;
+      else root.dataset.resonanceLargeText = previousMarker;
+    };
+  }, [resolvedFontScale]);
 
   // --- Logic ---
 
@@ -1222,7 +1552,10 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
 
       // Check if this is Wim Hof (protocol mode)
       if (activeMode === ModeName.WimHof) {
+        protocolCompletionHandledRef.current = false;
         setIsProtocolMode(true);
+        setPhase(BreathingPhase.Inhale);
+        phaseRef.current = BreathingPhase.Inhale;
         setProtocolState({
           currentRound: 1,
           currentBreathIndex: 0,
@@ -1235,14 +1568,17 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
 
         await startSoundscape(activeMode, themeColor);
         playPhaseCue(BreathingPhase.Inhale);
+        announcePhase(BreathingPhase.Inhale);
       } else {
         // Normal pattern mode
         setIsProtocolMode(false);
         setPhase(BreathingPhase.Inhale);
+        phaseRef.current = BreathingPhase.Inhale;
         phaseStartRef.current = performance.now();
 
         await startSoundscape(activeMode, themeColor);
         playPhaseCue(BreathingPhase.Inhale);
+        announcePhase(BreathingPhase.Inhale);
         setInstructionKey('instruction.inhale_slowly');
       }
 
@@ -1260,6 +1596,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
       clearPaceBarHideTimer();
       setIsProtocolMode(false);
       setPhase(BreathingPhase.Idle);
+      phaseRef.current = BreathingPhase.Idle;
       setInstructionKey('session.paused');
       // Soft end: commit elapsed time so a pause-and-walk-away still credits
       // practice time. Resume keeps sessionId + sessionSeconds, and the next
@@ -1289,6 +1626,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     soundStatus,
     startSoundscape,
     playPhaseCue,
+    announcePhase,
     themeColor,
   ]);
 
@@ -1299,6 +1637,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     setSessionProgress(0);
     setIsProtocolMode(false);
     setPhase(BreathingPhase.Idle);
+    phaseRef.current = BreathingPhase.Idle;
     setProtocolState({
       currentRound: 1,
       currentBreathIndex: 0,
@@ -1358,11 +1697,21 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   const animate = useCallback((time: number) => {
     if (!isRunning) return;
 
-    // Session dot: wall-clock progress toward the chosen duration.
-    if (typeof selectedDuration === 'number' && selectedDuration > 0 && sessionClockStartRef.current > 0) {
-      setSessionProgress(
-        Math.min(Math.max((Date.now() - sessionClockStartRef.current) / 1000 / selectedDuration, 0), 1),
+    // Session dot + timer: Date.now is the absolute wall clock, so a suspended
+    // WKWebView catches up on its first foreground frame instead of freezing
+    // at the last interval tick.
+    if (sessionClockStartRef.current > 0) {
+      const elapsedSeconds = Math.max(
+        0,
+        Math.floor((Date.now() - sessionClockStartRef.current) / 1000),
       );
+      sessionSecondsRef.current = elapsedSeconds;
+      setSessionSeconds((current) => current === elapsedSeconds ? current : elapsedSeconds);
+      if (typeof selectedDuration === 'number' && selectedDuration > 0) {
+        setSessionProgress(
+          Math.min(Math.max((Date.now() - sessionClockStartRef.current) / 1000 / selectedDuration, 0), 1),
+        );
+      }
     }
 
     // Update 8D Spatial Audio Position
@@ -1370,97 +1719,72 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     audio.updateSpatial(time);
 
     const pattern = BREATHING_PATTERNS[activeMode];
-    const inhaleDur = phaseDurationMs(BreathingPhase.Inhale, pattern, speedMultiplier);
-    const inhale2Dur = phaseDurationMs(BreathingPhase.Inhale2, pattern, speedMultiplier);
-    const holdInDur = phaseDurationMs(BreathingPhase.HoldIn, pattern, speedMultiplier);
-    const exhaleDur = phaseDurationMs(BreathingPhase.Exhale, pattern, speedMultiplier);
-    const holdOutDur = phaseDurationMs(BreathingPhase.HoldOut, pattern, speedMultiplier);
+    // Advance across *all* elapsed phase boundaries. The prior one-boundary
+    // update reset phaseStartRef to `time`, so a stalled frame skipped time and
+    // slowly drifted out of sync. Anchoring each boundary to the previous
+    // absolute start preserves the deterministic schedule.
+    let currentPhase = phaseRef.current;
+    let currentPhaseStart = phaseStartRef.current;
+    let currentPhaseDuration = phaseDurationMs(currentPhase, pattern, speedMultiplier);
+    let transitionCount = 0;
+    while (
+      currentPhaseDuration > 0 &&
+      time - currentPhaseStart >= currentPhaseDuration &&
+      transitionCount < 10000
+    ) {
+      currentPhaseStart += currentPhaseDuration;
+      currentPhase = nextBreathingPhase(currentPhase, pattern);
+      currentPhaseDuration = phaseDurationMs(currentPhase, pattern, speedMultiplier);
+      transitionCount += 1;
+    }
 
-    const timeSincePhaseStart = time - phaseStartRef.current;
+    phaseStartRef.current = currentPhaseStart;
+    phaseRef.current = currentPhase;
+    const timeSincePhaseStart = Math.max(0, time - currentPhaseStart);
+    const progress = currentPhaseDuration > 0
+      ? Math.min(timeSincePhaseStart / currentPhaseDuration, 1)
+      : 0;
 
-    let currentPhaseDuration = 0;
-    let progress = 0;
-    let nextPhase = phase;
-
-    // --- State Machine ---
-
-    if (phase === BreathingPhase.Inhale) {
-      currentPhaseDuration = inhaleDur;
-      progress = Math.min(timeSincePhaseStart / currentPhaseDuration, 1);
-
-      // If there is a second inhale, only scale to 75%
-      const maxScale = inhale2Dur > 0 ? 0.75 : 1.0;
+    if (currentPhase === BreathingPhase.Inhale) {
+      const maxScale = (pattern.inhale2 ?? 0) > 0 ? 0.75 : 1;
       setScale(progress * maxScale);
-
-      if (timeSincePhaseStart >= currentPhaseDuration) {
-        // Check for Inhale 2 (Double Inhale)
-        if (inhale2Dur > 0) {
-          nextPhase = BreathingPhase.Inhale2;
-          setInstructionKey('instruction.inhale_again');
-        } else {
-          nextPhase = holdInDur > 0 ? BreathingPhase.HoldIn : BreathingPhase.Exhale;
-          setInstruction(holdInDur > 0 ? '' : getSafePhrase('instruction.exhale'));
-          setScale(1);
-        }
-      }
-    }
-    else if (phase === BreathingPhase.Inhale2) {
-      currentPhaseDuration = inhale2Dur;
-      progress = Math.min(timeSincePhaseStart / currentPhaseDuration, 1);
-      // Scale from 0.75 to 1.0
-      setScale(0.75 + (progress * 0.25));
-
-      if (timeSincePhaseStart >= currentPhaseDuration) {
-        nextPhase = holdInDur > 0 ? BreathingPhase.HoldIn : BreathingPhase.Exhale;
-        setInstruction(holdInDur > 0 ? '' : getSafePhrase('instruction.exhale_fully'));
-        setScale(1);
-      }
-    }
-    else if (phase === BreathingPhase.HoldIn) {
-      currentPhaseDuration = holdInDur;
-      progress = Math.min(timeSincePhaseStart / currentPhaseDuration, 1);
+    } else if (currentPhase === BreathingPhase.Inhale2) {
+      setScale(0.75 + progress * 0.25);
+    } else if (currentPhase === BreathingPhase.HoldIn) {
       setScale(1);
-
-      if (timeSincePhaseStart >= currentPhaseDuration) {
-        nextPhase = BreathingPhase.Exhale;
-        setInstructionKey('instruction.exhale');
-      }
-    } else if (phase === BreathingPhase.Exhale) {
-      currentPhaseDuration = exhaleDur;
-      progress = Math.min(timeSincePhaseStart / currentPhaseDuration, 1);
+    } else if (currentPhase === BreathingPhase.Exhale) {
       setScale(1 - progress);
-
-      if (timeSincePhaseStart >= currentPhaseDuration) {
-        nextPhase = holdOutDur > 0 ? BreathingPhase.HoldOut : BreathingPhase.Inhale;
-        setInstruction(holdOutDur > 0 ? '' : getSafePhrase('instruction.inhale'));
-        setScale(0);
-      }
-    } else if (phase === BreathingPhase.HoldOut) {
-      currentPhaseDuration = holdOutDur;
-      progress = Math.min(timeSincePhaseStart / currentPhaseDuration, 1);
+    } else {
       setScale(0);
-
-      if (timeSincePhaseStart >= currentPhaseDuration) {
-        nextPhase = BreathingPhase.Inhale;
-        setInstructionKey('instruction.inhale');
-      }
     }
 
-    if (nextPhase !== phase) {
-      setPhase(nextPhase);
-      phaseStartRef.current = time;
-
-      playPhaseCue(nextPhase);
+    if (transitionCount > 0) {
+      setPhase(currentPhase);
+      if (currentPhase === BreathingPhase.Inhale2) {
+        setInstructionKey('instruction.inhale_again');
+      } else if (currentPhase === BreathingPhase.Inhale) {
+        setInstructionKey('instruction.inhale');
+      } else if (currentPhase === BreathingPhase.Exhale) {
+        setInstructionKey('instruction.exhale');
+      } else if (currentPhase === BreathingPhase.HoldIn || currentPhase === BreathingPhase.HoldOut) {
+        setInstruction('');
+      }
+      announcePhase(currentPhase);
+      // One cue for the phase that is actually visible after catch-up; firing
+      // every missed cue in a stalled tab would produce an audible burst.
+      playPhaseCue(currentPhase);
     }
 
     lastPhaseDurationRef.current = currentPhaseDuration;
 
     requestRef.current = requestAnimationFrame(animate);
-  }, [activeMode, getAudioService, getSafePhrase, isRunning, phase, phaseDurationMs, playPhaseCue, selectedDuration, setInstructionKey, speedMultiplier]);
+  }, [activeMode, announcePhase, getAudioService, isRunning, playPhaseCue, selectedDuration, setInstructionKey, speedMultiplier]);
 
   // --- Wim Hof Protocol Animation ---
   const animateProtocol = useCallback((time: number) => {
-    if (!isRunning || !isProtocolMode) return;
+    if (!isRunning || !isProtocolMode || protocolCompletionHandledRef.current) return;
+
+    syncSessionClock();
 
     const audio = getAudioService();
     audio.updateSpatial(time);
@@ -1475,6 +1799,31 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
 
     const timeSincePhaseStart = time - protocolPhaseStartRef.current;
 
+    // Resolve completion from the latest committed protocol snapshot before
+    // enqueueing the visual state update. This keeps endSession, the native
+    // session_end bridge event, and stats commit exactly once even if a
+    // batched state updater is evaluated more than once in development.
+    const protocolCompletes =
+      protocolStateRef.current.phase === ProtocolPhase.RecoveryHold &&
+      protocolStateRef.current.currentRound >= protocol.rounds &&
+      timeSincePhaseStart >= recoveryHoldDur;
+    if (protocolCompletes) {
+      protocolCompletionHandledRef.current = true;
+      const completedSeconds = Math.max(
+        sessionSecondsRef.current,
+        sessionClockStartRef.current > 0
+          ? Math.floor((Date.now() - sessionClockStartRef.current) / 1000)
+          : sessionSecondsRef.current,
+      );
+      endSession('completed', completedSeconds, true);
+      setIsRunning(false);
+      setSessionProgress(0);
+      setInstructionKey('protocol.complete');
+      setScale(0.5);
+      audio.stopDrone();
+      audio.stopBinaural();
+    }
+
     setProtocolState(prev => {
       let next = { ...prev };
 
@@ -1486,12 +1835,14 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
         if (breathIndex >= protocol.powerBreathCount) {
           // Done with power breaths, transition to retention hold
           next.phase = ProtocolPhase.RetentionHold;
-          next.retentionTime = 0;
+          const retentionStart = protocolPhaseStartRef.current + protocol.powerBreathCount * breathCycleDur;
+          next.retentionTime = Math.max(0, Math.floor((time - retentionStart) / 1000));
           next.isUserControlledHold = true;
-          retentionStartRef.current = time;
-          protocolPhaseStartRef.current = time;
+          retentionStartRef.current = retentionStart;
+          protocolPhaseStartRef.current = retentionStart;
           setInstructionKey('instruction.hold_your_breath');
           playPhaseCue(BreathingPhase.HoldOut);
+          announcePhase(BreathingPhase.HoldOut);
           setScale(0); // Empty lungs
         } else {
           next.currentBreathIndex = breathIndex + 1;
@@ -1518,9 +1869,10 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
         // Auto-end at max hold time
         if (holdSeconds >= protocol.retentionHoldMax) {
           next.phase = ProtocolPhase.RecoveryInhale;
-          protocolPhaseStartRef.current = time;
+          protocolPhaseStartRef.current = retentionStartRef.current + protocol.retentionHoldMax * 1000;
           setInstructionKey('instruction.deep_breath_in');
           playPhaseCue(BreathingPhase.Inhale);
+          announcePhase(BreathingPhase.Inhale);
         }
       }
       else if (prev.phase === ProtocolPhase.RecoveryInhale) {
@@ -1529,9 +1881,10 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
 
         if (timeSincePhaseStart >= recoveryInhaleDur) {
           next.phase = ProtocolPhase.RecoveryHold;
-          protocolPhaseStartRef.current = time;
+          protocolPhaseStartRef.current += recoveryInhaleDur;
           setInstructionKey('instruction.hold');
           playPhaseCue(BreathingPhase.HoldIn);
+          announcePhase(BreathingPhase.HoldIn);
         }
       }
       else if (prev.phase === ProtocolPhase.RecoveryHold) {
@@ -1544,18 +1897,12 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
             next.currentRound = prev.currentRound + 1;
             next.currentBreathIndex = 0;
             next.phase = ProtocolPhase.RoundComplete;
-            protocolPhaseStartRef.current = time;
+            protocolPhaseStartRef.current += recoveryHoldDur;
             setInstructionKey('protocol.round_complete', { round: prev.currentRound });
             setScale(0.5);
           } else {
             // Protocol complete
             next.phase = ProtocolPhase.ProtocolComplete;
-            setInstructionKey('protocol.complete');
-            setScale(0.5);
-            // Stop the session
-            setIsRunning(false);
-            audio.stopDrone();
-            audio.stopBinaural();
           }
         }
       }
@@ -1563,10 +1910,11 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
         // Brief pause between rounds
         if (timeSincePhaseStart >= protocol.roundRestDuration * 1000) {
           next.phase = ProtocolPhase.PowerBreathe;
-          protocolPhaseStartRef.current = time;
+          protocolPhaseStartRef.current += protocol.roundRestDuration * 1000;
           // Clean instruction to allow getLabel() to show Inhale/Exhale
           setInstruction('');
           playPhaseCue(BreathingPhase.Inhale);
+          announcePhase(BreathingPhase.Inhale);
         }
       }
 
@@ -1592,15 +1940,19 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
         nextVisualPhase = BreathingPhase.HoldIn;
       }
 
-      if (nextVisualPhase !== phase) {
+      if (nextVisualPhase !== phaseRef.current) {
         setPhase(nextVisualPhase);
+        phaseRef.current = nextVisualPhase;
+        announcePhase(nextVisualPhase);
       }
 
       return next;
     });
 
-    requestRef.current = requestAnimationFrame(animateProtocol);
-  }, [isRunning, isProtocolMode, getAudioService, phase, playPhaseCue, setInstructionKey, speedMultiplier]);
+    if (!protocolCompletionHandledRef.current) {
+      requestRef.current = requestAnimationFrame(animateProtocol);
+    }
+  }, [announcePhase, endSession, getAudioService, isProtocolMode, isRunning, phase, playPhaseCue, setInstructionKey, speedMultiplier, syncSessionClock]);
 
   // End hold button handler for Wim Hof
   const handleEndHold = useCallback(() => {
@@ -1612,9 +1964,12 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
       isUserControlledHold: false
     }));
     protocolPhaseStartRef.current = performance.now();
+    phaseRef.current = BreathingPhase.Inhale;
+    setPhase(BreathingPhase.Inhale);
     setInstructionKey('instruction.deep_breath_in');
+    announcePhase(BreathingPhase.Inhale);
     playPhaseCue(BreathingPhase.Inhale);
-  }, [isProtocolMode, protocolState.phase, playPhaseCue, setInstructionKey]);
+  }, [announcePhase, isProtocolMode, protocolState.phase, playPhaseCue, setInstructionKey]);
 
   useEffect(() => {
     if (isRunning) {
@@ -1648,15 +2003,15 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
     let interval: ReturnType<typeof setInterval>;
     if (isRunning) {
       interval = setInterval(() => {
-        if (sessionClockStartRef.current <= 0) return;
-        setSessionSeconds(Math.max(0, Math.floor((Date.now() - sessionClockStartRef.current) / 1000)));
+        syncSessionClock();
       }, 1000);
     }
     return () => clearInterval(interval);
-  }, [isRunning]);
+  }, [isRunning, syncSessionClock]);
 
   // Auto-stop when targetDuration is reached
   useEffect(() => {
+    if (protocolCompletionHandledRef.current && isProtocolMode) return;
     if (typeof selectedDuration === 'number' && isRunning && sessionSeconds >= selectedDuration) {
       const audio = getAudioService();
       setIsRunning(false);
@@ -1671,7 +2026,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
       audio.stopPinkNoise();
       audio.stopBinaural();
     }
-  }, [selectedDuration, isRunning, sessionSeconds, getAudioService, setInstructionKey, endSession, isNativeApp]);
+  }, [selectedDuration, isRunning, isProtocolMode, sessionSeconds, getAudioService, setInstructionKey, endSession, isNativeApp]);
 
   useEffect(() => {
     if (!isRunning) {
@@ -1814,10 +2169,41 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
   return (
     <div
       className={`relative flex h-full w-full flex-col overflow-hidden ${backgroundVariant === 'winter-blue' ? '' : 'bg-background'} transition-colors duration-1000 ${className}`}
-      style={{ backgroundColor: getBackgroundColor() }}
+      style={{
+        backgroundColor: getBackgroundColor(),
+        '--resonance-font-scale': resolvedFontScale,
+      } as React.CSSProperties}
       data-runtime-locale={runtimePhrases.locale}
       data-runtime-fallback-count={runtimeFallbackCount}
+      data-reduced-motion={prefersReducedMotion ? 'true' : 'false'}
+      data-large-text={resolvedFontScale > 1 ? 'true' : undefined}
     >
+
+      <div
+        ref={settingsBackgroundRef}
+        data-settings-background
+        className="flex h-full w-full flex-col"
+      >
+      <div
+        id="breathing-phase-status"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+        data-phase-announcement
+        style={{
+          position: 'absolute',
+          width: 1,
+          height: 1,
+          padding: 0,
+          margin: -1,
+          overflow: 'hidden',
+          clip: 'rect(0, 0, 0, 0)',
+          whiteSpace: 'nowrap',
+          border: 0,
+        }}
+      >
+        <span key={phaseAnnouncementSequence}>{phaseAnnouncement}</span>
+      </div>
 
       {snowMode ? (
         <SnowBackground
@@ -1839,6 +2225,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
         className={`fixed inset-x-0 top-0 z-30 flex items-center justify-end gap-2 p-6 transition-all duration-700 ease-out ${
           isRunning ? 'pointer-events-none -translate-y-2 opacity-0' : 'translate-y-0 opacity-100'
         }`}
+        aria-hidden={isRunning ? true : undefined}
         style={{
           paddingTop: safeAreaInsets.top + 24,
           paddingRight: safeAreaInsets.right + 24,
@@ -1846,9 +2233,15 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
         }}
       >
           <button
-            onClick={() => setControlsOpen(true)}
+            ref={settingsTriggerRef}
+            onClick={(event) => {
+              settingsPreviouslyFocusedRef.current = event.currentTarget;
+              setControlsOpen(true);
+            }}
+            type="button"
             tabIndex={isRunning ? -1 : 0}
             className="inline-flex items-center justify-center rounded-full border border-border/60 bg-card/80 p-3 text-muted-foreground shadow-sm backdrop-blur transition-colors hover:bg-card dark:border-border/40 dark:bg-card/40 dark:text-card-foreground"
+            style={{ minWidth: 44, minHeight: 44 }}
             aria-label={getSafePhrase('ui.settings')}
           >
             <SettingsIcon size={18} />
@@ -1893,6 +2286,8 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
           progress={0}
           sessionProgress={sessionId !== null && typeof selectedDuration === 'number' ? sessionProgress : null}
           isRunning={isRunning}
+          reduceMotion={prefersReducedMotion}
+          statusId="breathing-phase-status"
           onClick={handleTogglePlay}
         />
 
@@ -1903,6 +2298,7 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
             isRunning ? 'pointer-events-none translate-y-2 opacity-0' : 'translate-y-0 opacity-100'
           }`}
           aria-hidden={isRunning}
+          data-duration-controls
         >
           {durationOptions.filter(o => o.value !== null).map((option) => {
             const isSelected = selectedDuration === option.value;
@@ -1910,7 +2306,11 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
               <button
                 key={option.value ?? 'open'}
                 onClick={() => handleDurationSelect(option.value)}
+                type="button"
                 tabIndex={isRunning ? -1 : 0}
+                aria-pressed={isSelected}
+                aria-label={`Session duration ${option.label}`}
+                style={{ minWidth: 44, minHeight: 44 }}
                 className={`rounded-full px-3 py-1 text-xs font-medium transition-all ${
                   isSelected
                     ? 'bg-card/80 text-card-foreground shadow-sm backdrop-blur'
@@ -1927,8 +2327,9 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
         {isProtocolMode && protocolState.phase === ProtocolPhase.RetentionHold && protocolState.retentionTime >= WIM_HOF_PROTOCOL.retentionHoldMin && (
           <button
             onClick={handleEndHold}
+            type="button"
             className="mt-6 rounded-full bg-card/90 px-6 py-3 text-sm font-semibold text-card-foreground shadow-lg backdrop-blur transition-all hover:bg-card hover:scale-105 active:scale-95"
-            style={{ borderColor: themeColor, borderWidth: 2 }}
+            style={{ borderColor: themeColor, borderWidth: 2, minHeight: 44 }}
           >
             {getSafePhrase('ui.end_hold_recovery')}
           </button>
@@ -1985,11 +2386,16 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
         </div>
       )}
 
+      </div>
+
       {controlsOpen && (
         <div
+          ref={settingsDialogRef}
           role="dialog"
           aria-modal="true"
-          aria-label={getSafePhrase('ui.settings')}
+          aria-labelledby="breathing-settings-title"
+          tabIndex={-1}
+          data-settings-dialog
           className="fixed inset-0 z-50 flex flex-col bg-background text-foreground"
           style={{
             paddingTop: safeAreaInsets.top + 20,
@@ -1999,10 +2405,13 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
           }}
         >
             <div className="mb-6 flex items-start justify-between">
-              <h2 className="text-xl font-semibold text-card-foreground">{getSafePhrase('ui.settings')}</h2>
+              <h2 id="breathing-settings-title" className="text-xl font-semibold text-card-foreground">{getSafePhrase('ui.settings')}</h2>
               <button
+                ref={settingsCloseRef}
                 onClick={() => setControlsOpen(false)}
-                className="rounded-full p-1.5 text-muted-foreground hover:bg-card hover:text-card-foreground transition-colors"
+                type="button"
+                className="inline-flex items-center justify-center rounded-full p-1.5 text-muted-foreground hover:bg-card hover:text-card-foreground transition-colors"
+                style={{ minWidth: 44, minHeight: 44 }}
                 aria-label="Close settings"
               >
                 <X size={20} />
@@ -2019,6 +2428,9 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
                 <div className="flex flex-wrap gap-2">
                   <button
                     onClick={toggleMute}
+                    type="button"
+                    aria-pressed={muted}
+                    style={{ minHeight: 44 }}
                     className={`flex flex-1 items-center justify-center rounded-xl px-3 py-2 text-sm font-medium transition ${muted ? 'bg-foreground text-background' : 'bg-card text-card-foreground'
                       }`}
                   >
@@ -2026,6 +2438,9 @@ const BreathingExperience: React.FC<BreathingExperienceProps> = ({
                   </button>
                   <button
                     onClick={() => setThemeOverride(activeTheme === 'dark' ? 'light' : 'dark')}
+                    type="button"
+                    aria-pressed={themeOverride !== null}
+                    style={{ minHeight: 44 }}
                     className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-card px-3 py-2 text-sm font-medium text-card-foreground transition"
                     aria-label="Toggle light or dark theme"
                   >

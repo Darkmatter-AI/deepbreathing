@@ -5,6 +5,12 @@
 > **Use [`listing-FINAL.md`](./listing-FINAL.md) for the actual values you paste into App Store
 > Connect.** This file is kept for the naming-decision history only.
 
+> **Build 18 correction:** the copy below is retained as naming history, not as a second
+> source of store truth. In particular, do not restore open-ended sessions, a 30-second
+> duration, Wim Hof, or any health-outcome wording from this historical draft. The approved
+> duration choices for the Build 18 candidate are 1, 3, 5, and 10 minutes; use the gated
+> draft in [`listing-FINAL.md`](./listing-FINAL.md) only after the physical-device check.
+
 ## App Name
 
 Brand: **Deep Breathing Exercises** (we own the deepbreathingexercises.com
@@ -85,22 +91,21 @@ Free guided breathing for calm, focus, and sleep. Try box breathing, 4-7-8, cohe
 ## Full Description (4,000 char max, keyword-rich, no medical claims)
 
 ```
-Deep Breathing Exercises guides you through scientifically studied breathing techniques with a smooth, animated orb visualizer. Just open the app and breathe — no sign-up required.
+Deep Breathing Exercises guides you through established breathing patterns with a smooth, animated orb visualizer. Open the app and follow a session — no sign-up required for the core experience.
 
 BREATHING MODES
 
-• Box Breathing (4-4-4-4) — equal inhale, hold, exhale, hold. A go-to for focus and stress relief used by athletes and first responders.
-• 4-7-8 Breathing — extended exhale and hold pattern associated with relaxation and sleep onset.
-• Coherent Breathing (5.5-5.5) — slow, even rhythm at roughly 5 breaths per minute, studied for heart rate variability and calm.
-• Physiological Sigh — double inhale followed by a long exhale. A fast reset for acute stress and panic moments.
-• Wim Hof Method — 30 power breaths followed by breath retention, across 3 rounds. For energy and cold-tolerance training.
+• Box Breathing (4-4-4-4) — equal inhale, hold, exhale, hold. A commonly practiced rhythm for a focused breathing break; individual experiences vary.
+• 4-7-8 Breathing — extended-exhale pattern often used in a wind-down routine; it is not a sleep treatment.
+• Coherent Breathing (5.5-5.5) — slow, even rhythm at roughly 5 breaths per minute. The app makes no heart-rate or other health-outcome promise.
+• Physiological Sigh — double inhale followed by a long exhale. A brief guided pattern for stressful moments; effects vary by person.
 
 FEATURES
 
 • Animated orb visualizer — a gentle, pulsing cue that expands and contracts with each phase of your breath.
 • Audio soundscapes — drone tones, binaural beats, and pink noise to deepen focus. Phase cue tones mark each breath transition.
 • Haptic feedback — subtle vibrations guide your breath on exhale, so you can breathe eyes-closed.
-• Session timer — open-ended or timed sessions (1, 2, 5, or 10 minutes).
+• Session timer — choose a 1, 3, 5, or 10 minute session.
 • Adjustable speed — slow down or speed up any pattern to match your capacity.
 • Local session stats — sessions and minutes tracked on-device, no account required.
 • Keep-awake mode — screen stays on during your session.
@@ -109,7 +114,7 @@ FEATURES
 
 BREATHING AND YOUR HEALTH
 
-Deep Breathing Exercises provides timed breathing guidance based on established techniques. It is not a medical device and does not diagnose, treat, or prevent any condition. Consult a qualified healthcare provider before starting any new breathing practice, especially if you have a respiratory condition, cardiovascular issue, or are pregnant.
+Deep Breathing Exercises provides timed breathing guidance based on established patterns. It is not a medical device and does not diagnose, treat, or prevent any condition. Breathing practices are not a substitute for professional care, and individual results are not guaranteed. Consult a qualified healthcare provider before starting a new practice, especially if you have a respiratory condition, cardiovascular issue, or are pregnant.
 
 PRIVACY
 
@@ -134,13 +139,16 @@ breathing,calm,box breathing,4-7-8,sleep,stress relief,meditation,relax,focus,mi
 
 ---
 
-## Support URL
+## Support URL (historical field; candidate contact selected)
 
 ```
 https://deepbreathingexercises.com/support
 ```
 
-(Page does not yet exist — create `src/app/support/page.tsx`. See note in submission-checklist.md.)
+The branded apex has no MX record and cannot receive replies. Candidate source now uses the
+established receiving mailbox `hi@abiassi.com`, whose domain has inbound MX. The live support
+page must be deployed and rechecked before Build 18 metadata is entered; see
+[`submission-checklist.md`](./submission-checklist.md).
 
 ## Marketing URL
 

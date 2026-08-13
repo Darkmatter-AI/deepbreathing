@@ -24,7 +24,7 @@
       "title": "Optionale Konten und Synchronisierung"
     },
     "collection": {
-      "body": "Gäste können üben, ohne uns einen Namen oder eine E-Mail-Adresse anzugeben. Die App und die Website erfassen grundlegende Nutzungsereignisse wie Beginn, Ende und Dauer einer Sitzung sowie Atemmodus und Plattform. Die mobile App verwendet eine zufällige Analysekennung pro Installation. Sie verwendet weder die Werbe-ID noch fordert sie eine Tracking-Berechtigung an.",
+      "body": "Gäste können üben, ohne uns einen Namen oder eine E-Mail-Adresse anzugeben. Die mobile App bittet beim ersten Start um Zustimmung zu Analysen; bevor Sie zustimmen, sendet sie keine Analyseereignisse und erstellt keine Analysekennung. Wenn Sie zustimmen, sendet die App grundlegende Nutzungsereignisse wie Sitzungsbeginn, -ende und -dauer, Atemmodus und Plattform über unseren Server an GA4 und verwendet dafür eine zufällige Kennung pro Installation. Sie können die Zustimmung über die Datenschutzoptionen in der App widerrufen; dann werden künftige Analysen beendet und die Kennung entfernt. Die App verwendet weder die Werbe-ID noch fordert sie eine Tracking-Berechtigung an.",
       "title": "Welche Daten wir erfassen"
     },
     "contact": {
@@ -49,7 +49,7 @@
       "title": "Links zu Drittanbietern"
     },
     "useAndShare": {
-      "body": "Wir verwenden diese Informationen für die App-Funktionalität, den Kontosupport, Analysen, die Leistungsüberwachung und Fehlerbehebungen. Dienstanbieter helfen uns bei Authentifizierung, E-Mail, Analysen, Hosting und Datenbankspeicherung. Wir verkaufen keine personenbezogenen Informationen und verwenden Atemdaten nicht für Werbung.",
+      "body": "Wir verwenden diese Informationen für die App-Funktionalität, den Kontosupport, Analysen, die Leistungsüberwachung und Fehlerbehebungen. Die mobile Analyseverarbeitung erfolgt erst nach Ihrer Zustimmung; durch deren Widerruf werden künftige Analysen beendet und die Kennung pro Installation entfernt. Dienstanbieter helfen uns bei Authentifizierung, E-Mail, Analysen, Hosting und Datenbankspeicherung. Wir verkaufen keine personenbezogenen Informationen und verwenden Atemdaten nicht für Werbung.",
       "title": "Wie wir Daten verwenden und weitergeben"
     }
   }

@@ -6,6 +6,10 @@ import { Pool } from "pg";
 import { Resend } from "resend";
 import { importPKCS8, SignJWT } from "jose";
 import {
+  symmetricDecrypt,
+  type SecretConfig,
+} from "better-auth/crypto";
+import {
   createAppleNativeTokenExchangePlugin,
   revokeAppleTokensBeforeDelete,
   type AppleAccountTokenRow,
@@ -15,6 +19,113 @@ function getResend() {
   return new Resend(process.env.RESEND_API_KEY);
 }
 const pool = new Pool({ connectionString: process.env.DATABASE_URL });
+
+/**
+ * Expo's auth client asks Better Auth to proxy the provider authorization URL
+ * through this route so that the native browser session can receive the auth
+ * cookies. Better Auth 1.5.5 does not validate the `authorizationURL` query
+ * parameter before redirecting, so keep the destination allowlist here at the
+ * application boundary. These are the exact authorization endpoints emitted
+ * by the providers configured below.
+ */
+const EXPO_AUTHORIZATION_ENDPOINTS = new Map([
+  ["https://accounts.google.com", "/o/oauth2/v2/auth"],
+  ["https://appleid.apple.com", "/auth/authorize"],
+]);
+
+export function parseAllowedExpoAuthorizationURL(
+  value: string | null | undefined,
+): URL | null {
+  if (!value) return null;
+
+  let url: URL;
+  try {
+    url = new URL(value);
+  } catch {
+    return null;
+  }
+
+  const expectedPath = EXPO_AUTHORIZATION_ENDPOINTS.get(url.origin);
+  if (
+    !expectedPath ||
+    url.protocol !== "https:" ||
+    url.username ||
+    url.password ||
+    url.port ||
+    url.pathname !== expectedPath ||
+    url.hash ||
+    !url.searchParams.get("state")
+  ) {
+    return null;
+  }
+
+  return url;
+}
+
+function oauthTokenDecryptionKey(): string | SecretConfig | null {
+  const encodedSecrets = process.env.BETTER_AUTH_SECRETS?.trim();
+  if (!encodedSecrets) return process.env.BETTER_AUTH_SECRET || null;
+
+  const entries = encodedSecrets.split(",").map((entry) => {
+    const separator = entry.indexOf(":");
+    if (separator <= 0) throw new Error("Invalid Better Auth secret version");
+    const version = Number(entry.slice(0, separator));
+    const value = entry.slice(separator + 1).trim();
+    if (!Number.isInteger(version) || version < 0 || !value) {
+      throw new Error("Invalid Better Auth secret version");
+    }
+    return { version, value };
+  });
+  if (entries.length === 0) return null;
+
+  const keys = new Map<number, string>();
+  for (const entry of entries) {
+    if (keys.has(entry.version)) {
+      throw new Error("Duplicate Better Auth secret version");
+    }
+    keys.set(entry.version, entry.value);
+  }
+
+  return {
+    keys,
+    currentVersion: entries[0].version,
+    legacySecret: process.env.BETTER_AUTH_SECRET || undefined,
+  };
+}
+
+function looksLikeEncryptedOAuthToken(value: string): boolean {
+  return (
+    value.startsWith("$ba$") ||
+    (value.length % 2 === 0 && /^[0-9a-f]+$/i.test(value))
+  );
+}
+
+/**
+ * Better Auth 1.5.5 leaves existing plaintext OAuth tokens readable when
+ * `account.encryptOAuthTokens` is enabled, while encrypting all new writes.
+ * Deletion revocation reads the account row directly, so decrypt encrypted
+ * rows here before sending them to Apple. A malformed/retired key fails closed
+ * for revocation (the account deletion itself remains available).
+ */
+export async function decryptStoredOAuthToken(
+  token: string,
+): Promise<string | null> {
+  if (!looksLikeEncryptedOAuthToken(token)) return token;
+
+  let key: string | SecretConfig | null;
+  try {
+    key = oauthTokenDecryptionKey();
+  } catch {
+    return null;
+  }
+  if (!key) return null;
+
+  try {
+    return await symmetricDecrypt({ key, data: token });
+  } catch {
+    return null;
+  }
+}
 
 async function isSuppressed(email: string): Promise<boolean> {
   const { rows } = await pool.query(
@@ -164,6 +275,7 @@ function createAuth() {
             ),
             generateClientSecret: (clientId) =>
               generateAppleClientSecret(clientId),
+            decryptToken: decryptStoredOAuthToken,
           });
           if (revokeResult.failed > 0) {
             console.warn("[apple-revocation] deletion cleanup incomplete", {
@@ -182,6 +294,12 @@ function createAuth() {
         enabled: true,
         maxAge: 300, // 5 min client-side cache
       },
+    },
+    account: {
+      // Better Auth encrypts access, refresh, and ID tokens on new writes.
+      // Existing plaintext rows remain readable, so this does not require a
+      // destructive data migration or an all-at-once token rewrite.
+      encryptOAuthTokens: true,
     },
     advanced: {
       crossSubDomainCookies: {

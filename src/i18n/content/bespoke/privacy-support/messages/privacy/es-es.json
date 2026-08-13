@@ -24,7 +24,7 @@
       "title": "Cuentas opcionales y sincronización"
     },
     "collection": {
-      "body": "Los invitados pueden practicar sin facilitarnos un nombre ni un correo electrónico. La app y el sitio web recopilan eventos básicos de uso, como el inicio, el final y la duración de las sesiones, el modo de respiración y la plataforma. La app móvil usa un identificador de análisis aleatorio por instalación. No usa el identificador de publicidad ni solicita permiso de seguimiento.",
+      "body": "Los invitados pueden practicar sin facilitarnos un nombre ni un correo electrónico. La app móvil solicita el consentimiento para análisis en el primer inicio; antes de que lo permitas, no envía eventos de análisis ni crea un identificador de análisis. Si aceptas, la app envía eventos básicos de uso, como el inicio, el final y la duración de las sesiones, el modo de respiración y la plataforma, a GA4 a través de nuestro servidor usando un identificador aleatorio por instalación. Puedes retirar el consentimiento desde la opción Privacidad de la app; al hacerlo, se detienen los análisis futuros y se elimina el identificador. No usa el identificador de publicidad ni solicita permiso de seguimiento.",
       "title": "Qué datos recopilamos"
     },
     "contact": {
@@ -49,7 +49,7 @@
       "title": "Enlaces de terceros"
     },
     "useAndShare": {
-      "body": "Usamos esta información para el funcionamiento de la app, la asistencia de cuentas, el análisis, la supervisión del rendimiento y la corrección de errores. Los proveedores de servicios nos ayudan con la autenticación, el correo electrónico, el análisis, el alojamiento y el almacenamiento de la base de datos. No vendemos información personal ni usamos los datos de respiración para publicidad.",
+      "body": "Usamos esta información para el funcionamiento de la app, la asistencia de cuentas, el análisis, la supervisión del rendimiento y la corrección de errores. El procesamiento de análisis móviles solo ocurre después de que aceptes; al retirar el consentimiento, se detienen los análisis futuros y se elimina el identificador por instalación. Los proveedores de servicios nos ayudan con la autenticación, el correo electrónico, el análisis, el alojamiento y el almacenamiento de la base de datos. No vendemos información personal ni usamos los datos de respiración para publicidad.",
       "title": "Cómo usamos y compartimos los datos"
     }
   }

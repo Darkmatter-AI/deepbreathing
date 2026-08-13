@@ -1,4 +1,7 @@
-import { auth } from "@/lib/auth";
+import {
+  auth,
+  parseAllowedExpoAuthorizationURL,
+} from "../../../../lib/auth";
 import { toNextJsHandler } from "better-auth/next-js";
 
 // Never prerendered at build time. These handlers read request state (session,
@@ -12,6 +15,24 @@ const ALLOWED_ORIGINS = [
   "https://origin.deepbreathingexercises.com",
   "http://localhost:3000",
 ];
+
+function invalidExpoAuthorizationResponse() {
+  return new Response(
+    JSON.stringify({ error: "Invalid authorization URL" }),
+    {
+      status: 400,
+      headers: {
+        "Content-Type": "application/json",
+        "Cache-Control": "no-store",
+      },
+    },
+  );
+}
+
+function isExpoAuthorizationProxyRequest(request: Request): boolean {
+  const pathname = new URL(request.url).pathname.replace(/\/+$/, "");
+  return pathname.endsWith("/expo-authorization-proxy");
+}
 
 function withCors(response: Response, origin: string | null) {
   const allowedOrigin = ALLOWED_ORIGINS.find((o) => o === origin);
@@ -44,6 +65,14 @@ function getHandler() {
 
 export async function GET(request: Request) {
   const origin = request.headers.get("origin");
+  if (isExpoAuthorizationProxyRequest(request)) {
+    const authorizationURL = new URL(request.url).searchParams.get(
+      "authorizationURL",
+    );
+    if (!parseAllowedExpoAuthorizationURL(authorizationURL)) {
+      return withCors(invalidExpoAuthorizationResponse(), origin);
+    }
+  }
   const response = await getHandler().GET(request);
   return withCors(response, origin);
 }
@@ -57,7 +86,7 @@ export async function POST(request: Request) {
     console.error("[auth] POST error:", error);
     return withCors(
       new Response(
-        JSON.stringify({ error: "Internal auth error", message: String(error) }),
+        JSON.stringify({ error: "Internal auth error" }),
         { status: 500, headers: { "Content-Type": "application/json" } }
       ),
       origin

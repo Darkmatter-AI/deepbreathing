@@ -54,7 +54,7 @@ import type { ApiResponse } from "@resonance/api-contracts";
 export const dynamic = "force-dynamic";
 
 export async function GET(): Promise<NextResponse<ApiResponse<EntitlementsResponse>>> {
-  const session = await auth.api.getSession({ headers: headers() });
+  const session = await auth.api.getSession({ headers: await headers() });
 
   const now = new Date().toISOString();
 

@@ -29,6 +29,24 @@ export type ResonancePersistedSnapshot = Partial<
 
 const ALL_KEYS = Object.values(RESONANCE_STORAGE_KEYS);
 
+// Persist callbacks can outlive the DOM instance that emitted them. Writes are
+// serialized and tagged with the owner-generation that was current when the
+// callback was created, so an old WebView cannot overwrite a newly selected
+// account's mirror after an owner transition.
+let mirrorOwnerGeneration = 0;
+let mirrorWriteTail: Promise<void> = Promise.resolve();
+
+export const beginMirrorOwnerTransition = (): number => {
+  mirrorOwnerGeneration += 1;
+  return mirrorOwnerGeneration;
+};
+
+export const getMirrorOwnerGeneration = (): number => mirrorOwnerGeneration;
+
+export const drainMirrorWrites = async (): Promise<void> => {
+  await mirrorWriteTail;
+};
+
 export const loadPersistedSnapshot = async (): Promise<ResonancePersistedSnapshot> => {
   try {
     const entries = await AsyncStorage.multiGet(ALL_KEYS);
@@ -47,14 +65,20 @@ export const loadPersistedSnapshot = async (): Promise<ResonancePersistedSnapsho
 export const mirrorPersist = async (
   key: string,
   value: string | null,
+  generation = mirrorOwnerGeneration,
 ): Promise<void> => {
-  try {
-    if (value == null) {
-      await AsyncStorage.removeItem(key);
-    } else {
-      await AsyncStorage.setItem(key, value);
+  const write = mirrorWriteTail.catch(() => {}).then(async () => {
+    if (generation !== mirrorOwnerGeneration) return;
+    try {
+      if (value == null) {
+        await AsyncStorage.removeItem(key);
+      } else {
+        await AsyncStorage.setItem(key, value);
+      }
+    } catch {
+      // Best-effort — a write failure shouldn't surface to the user.
     }
-  } catch {
-    // Best-effort — a write failure shouldn't surface to the user.
-  }
+  });
+  mirrorWriteTail = write.catch(() => {});
+  await write;
 };

@@ -1,13 +1,16 @@
 import { useCallback, useEffect, useMemo, useRef } from 'react';
 import {
   Animated,
+  AccessibilityInfo,
   PanResponder,
   Pressable,
+  ScrollView,
   StyleSheet,
   Text,
   View,
 } from 'react-native';
 import { SymbolView } from 'expo-symbols';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import AuthActions from '../auth/AuthActions';
 import { BREATHING_PATTERNS, ModeName } from './breathing-web/constants';
@@ -36,12 +39,22 @@ export default function CompletionSummary({
 }: Props) {
   const opacity = useRef(new Animated.Value(0)).current;
   const translateY = useRef(new Animated.Value(isAuthenticated ? -18 : 16)).current;
+  const insets = useSafeAreaInsets();
   const dark = theme === 'dark';
   const bg = dark ? '#2b1b15' : '#fff7ef';
   const text = dark ? '#f5dfcc' : '#452b1d';
   const subtle = dark ? '#bf9b82' : '#8e6b53';
   const border = dark ? '#654638' : '#e5cbb7';
   const modeColor = BREATHING_PATTERNS[data.sessionMode as ModeName]?.color ?? '#e36c4c';
+  const bannerCheckColor = (() => {
+    const channels = modeColor.slice(1).match(/../g)?.map((value) => Number.parseInt(value, 16) / 255);
+    if (!channels || channels.length !== 3) return '#fff';
+    const luminance = channels.reduce((sum, channel, index) => {
+      const linear = channel <= 0.03928 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4;
+      return sum + linear * [0.2126, 0.7152, 0.0722][index];
+    }, 0);
+    return luminance > 0.179 ? '#2b1b15' : '#fff';
+  })();
 
   const dismiss = useCallback(() => {
     Animated.parallel([
@@ -95,10 +108,20 @@ export default function CompletionSummary({
       : null,
   ].filter(Boolean).join(' · ');
 
+  useEffect(() => {
+    AccessibilityInfo.announceForAccessibility(
+      isAuthenticated
+        ? `Practice saved. ${sessionLabel} synced to your account.`
+        : `Session complete. ${headline}`,
+    );
+  }, [headline, isAuthenticated, sessionLabel]);
+
   if (isAuthenticated) {
     return (
       <Animated.View
         {...panResponder.panHandlers}
+        accessible={false}
+        accessibilityViewIsModal
         style={[
           styles.banner,
           {
@@ -110,41 +133,75 @@ export default function CompletionSummary({
           },
         ]}
       >
-        <View style={[styles.bannerIcon, { backgroundColor: modeColor }]}><Text style={styles.bannerCheck}>✓</Text></View>
+        <View style={[styles.bannerIcon, { backgroundColor: modeColor }]} accessible={false}><Text style={[styles.bannerCheck, { color: bannerCheckColor }]} accessible={false}>✓</Text></View>
         <View style={styles.bannerCopy}>
           <Text style={[styles.bannerTitle, { color: text }]}>Practice saved</Text>
           <Text style={[styles.bannerSubtitle, { color: subtle }]}>{sessionLabel} synced to your account</Text>
         </View>
-        <Pressable onPress={dismiss} accessibilityLabel="Dismiss practice saved banner">
-          <Text style={[styles.dismissX, { color: subtle }]}>×</Text>
+        <Pressable
+          onPress={dismiss}
+          accessibilityRole="button"
+          accessibilityLabel="Dismiss practice saved banner"
+          accessibilityHint="Double-tap to dismiss"
+          onAccessibilityEscape={dismiss}
+          style={styles.bannerDismiss}
+        >
+          <Text style={[styles.dismissX, { color: subtle }]} accessible={false}>×</Text>
         </Pressable>
       </Animated.View>
     );
   }
 
   return (
-    <Animated.View style={[styles.overlay, { opacity }]}>
-      <Animated.View style={[styles.receipt, { backgroundColor: bg, borderColor: border, transform: [{ translateY }] }]}>
-        <Pressable style={styles.receiptClose} onPress={dismiss} accessibilityLabel="Dismiss keep practice prompt">
-          <Text style={[styles.dismissX, { color: subtle }]}>×</Text>
-        </Pressable>
-        <View style={[styles.sessionCard, { borderColor: border }]}>
-          <View style={[styles.progressRing, { borderColor: modeColor }]}>
-            <SymbolView name="waveform.path.ecg" tintColor={modeColor} size={20} />
+    <Animated.View
+      style={[
+        styles.overlay,
+        {
+          opacity,
+          paddingTop: Math.max(safeAreaTop, insets.top) + 12,
+          paddingBottom: Math.max(insets.bottom, 12),
+        },
+      ]}
+      accessible={false}
+      accessibilityViewIsModal
+    >
+      <ScrollView
+        style={styles.receiptScroll}
+        contentContainerStyle={styles.receiptScrollContent}
+        showsVerticalScrollIndicator
+        bounces
+        alwaysBounceVertical
+        accessible={false}
+      >
+        <Animated.View style={[styles.receipt, { backgroundColor: bg, borderColor: border, transform: [{ translateY }] }]}>
+          <Pressable
+            style={styles.receiptClose}
+            onPress={dismiss}
+            accessibilityRole="button"
+            accessibilityLabel="Dismiss keep practice prompt"
+            accessibilityHint="Double-tap to dismiss"
+            onAccessibilityEscape={dismiss}
+          >
+            <Text style={[styles.dismissX, { color: subtle }]} accessible={false}>×</Text>
+          </Pressable>
+          <View style={[styles.sessionCard, { borderColor: border }]}>
+            <View style={[styles.progressRing, { borderColor: modeColor }]} accessible={false}>
+              <SymbolView name="waveform.path.ecg" tintColor={modeColor} size={20} />
+            </View>
+            <View style={styles.sessionCopy}>
+              <Text style={[styles.eyebrow, { color: subtle }]}>✓ SESSION COMPLETE</Text>
+              <Text style={[styles.sessionMode, { color: text }]}>{data.sessionMode}</Text>
+              <Text style={[styles.sessionMeta, { color: subtle }]}>{durationLabel} · just now</Text>
+            </View>
           </View>
-          <View style={styles.sessionCopy}>
-            <Text style={[styles.eyebrow, { color: subtle }]}>✓ SESSION COMPLETE</Text>
-            <Text style={[styles.sessionMode, { color: text }]} numberOfLines={1}>{data.sessionMode}</Text>
-            <Text style={[styles.sessionMeta, { color: subtle }]}>{durationLabel} · just now</Text>
-          </View>
-        </View>
-        <Text style={[styles.receiptTitle, { color: text }]}>{headline}</Text>
-        {progressStats ? <Text style={[styles.progressStats, { color: text }]}>{progressStats}</Text> : null}
-        <Text style={[styles.receiptBody, { color: subtle }]}>
-          Saved on this device only. A free account keeps it, and every minute after, on any screen you pick up.
-        </Text>
-        <AuthActions theme={theme} />
-      </Animated.View>
+          <Text style={[styles.receiptTitle, { color: text }]}>{headline}</Text>
+          {progressStats ? <Text style={[styles.progressStats, { color: text }]}>{progressStats}</Text> : null}
+          <Text style={[styles.receiptBody, { color: subtle }]}>
+            Saved on this device only. A free account keeps it, and every minute after, on any screen you pick up.
+          </Text>
+          <AuthActions theme={theme} />
+        </Animated.View>
+      </ScrollView>
     </Animated.View>
   );
 }
@@ -154,10 +211,10 @@ const styles = StyleSheet.create({
     ...StyleSheet.absoluteFill,
     zIndex: 110,
     backgroundColor: 'rgba(20,10,5,0.48)',
-    justifyContent: 'flex-end',
     paddingHorizontal: 12,
-    paddingBottom: 12,
   },
+  receiptScroll: { flex: 1, width: '100%' },
+  receiptScrollContent: { flexGrow: 1, justifyContent: 'flex-end', width: '100%' },
   receipt: {
     borderRadius: 30,
     borderWidth: StyleSheet.hairlineWidth,
@@ -170,7 +227,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.24,
     shadowRadius: 30,
   },
-  receiptClose: { position: 'absolute', top: 12, right: 16, zIndex: 2, paddingBottom: 10 },
+  receiptClose: { position: 'absolute', top: 8, right: 8, zIndex: 2, width: 44, height: 44, alignItems: 'center', justifyContent: 'center' },
   dismissX: { fontSize: 29, lineHeight: 32, paddingHorizontal: 5 },
   sessionCard: { width: '100%', minHeight: 74, borderRadius: 18, borderWidth: StyleSheet.hairlineWidth, paddingHorizontal: 15, flexDirection: 'row', alignItems: 'center' },
   progressRing: { width: 46, height: 46, borderRadius: 23, borderWidth: 3, alignItems: 'center', justifyContent: 'center' },
@@ -198,7 +255,8 @@ const styles = StyleSheet.create({
     shadowRadius: 18,
   },
   bannerIcon: { width: 38, height: 38, borderRadius: 19, alignItems: 'center', justifyContent: 'center' },
-  bannerCheck: { color: '#fff', fontSize: 21, fontWeight: '800' },
+  bannerCheck: { fontSize: 21, fontWeight: '800' },
+  bannerDismiss: { width: 44, height: 44, alignItems: 'center', justifyContent: 'center' },
   bannerCopy: { flex: 1, marginLeft: 11 },
   bannerTitle: { fontSize: 16, fontWeight: '700' },
   bannerSubtitle: { fontSize: 12, marginTop: 2 },
