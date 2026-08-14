@@ -143,7 +143,7 @@ test("the shared stats server preserves authenticated query and fallback behavio
   );
   assert.match(
     statsPage,
-    /auth\.api\.getSession\(\{ headers: headers\(\) \}\)/,
+    /auth\.api\.getSession\(\{ headers: await headers\(\) \}\)/,
   );
   assert.match(
     statsPage,

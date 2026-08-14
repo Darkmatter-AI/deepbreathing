@@ -5,14 +5,14 @@ import { getLocaleByPrefix } from "@/i18n";
 
 import "../../globals.css";
 
-export default function LocalizedRootLayout({
+export default async function LocalizedRootLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  const locale = getLocaleByPrefix(params.locale);
+  const locale = getLocaleByPrefix((await params).locale);
   if (!locale || !locale.routePrefix) notFound();
 
   return (

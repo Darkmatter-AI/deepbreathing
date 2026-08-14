@@ -24,7 +24,7 @@
       "title": "Contas opcionais e sincronização"
     },
     "collection": {
-      "body": "Visitantes podem praticar sem nos fornecer nome ou e-mail. O app e o site coletam eventos básicos de uso, como início, término e duração da sessão, modo de respiração e plataforma. O app móvel usa um identificador de análise aleatório por instalação. Ele não usa o identificador de publicidade nem solicita permissão de rastreamento.",
+      "body": "Visitantes podem praticar sem nos fornecer nome ou e-mail. O app móvel pede consentimento para análises na primeira abertura; antes de você permitir, não envia eventos de análise nem cria um identificador de análise. Se você aceitar, o app envia ao GA4, por meio do nosso servidor, eventos básicos de uso, como início, término e duração da sessão, modo de respiração e plataforma, usando um identificador aleatório por instalação. Você pode retirar o consentimento na opção Privacidade do app; isso interrompe as análises futuras e remove o identificador. O app não usa o identificador de publicidade nem solicita permissão de rastreamento.",
       "title": "O que coletamos"
     },
     "contact": {
@@ -49,7 +49,7 @@
       "title": "Links de terceiros"
     },
     "useAndShare": {
-      "body": "Usamos essas informações para o funcionamento do app, suporte à conta, análises, monitoramento de desempenho e correções de erros. Prestadores de serviços nos ajudam a operar autenticação, e-mail, análises, hospedagem e armazenamento de banco de dados. Não vendemos informações pessoais nem usamos dados de respiração para publicidade.",
+      "body": "Usamos essas informações para o funcionamento do app, suporte à conta, análises, monitoramento de desempenho e correções de erros. O processamento de análises móveis só ocorre após seu consentimento; ao retirá-lo, as análises futuras são interrompidas e o identificador por instalação é removido. Prestadores de serviços nos ajudam a operar autenticação, e-mail, análises, hospedagem e armazenamento de banco de dados. Não vendemos informações pessoais nem usamos dados de respiração para publicidade.",
       "title": "Como usamos e compartilhamos dados"
     }
   }

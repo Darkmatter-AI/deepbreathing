@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import dynamic from "next/dynamic";
 import { notFound } from "next/navigation";
 
 import { FadingHeroTitle } from "@/components/breathe/fading-hero-title";
@@ -16,22 +15,9 @@ import {
 } from "@/i18n/route-manifest";
 import type { NativeRouteRenderContext } from "@/i18n/render-context";
 import type { ProofServerChromeMessages } from "@/i18n/content/proof/types";
+import { ResonanceClient as Resonance } from "@/components/resonance/resonance-client";
 
 const baseUrl = "https://deepbreathingexercises.com";
-
-// Keep the useSearchParams-driven interactive experience inside a client island
-// so the editorial page and localized metadata remain static server HTML.
-const Resonance = dynamic(
-  () => import("@/components/resonance/Resonance"),
-  {
-    ssr: false,
-    loading: () => (
-      <div aria-hidden="true" className="min-h-screen flex items-center justify-center bg-background">
-        <div className="h-12 w-12 border-2 border-primary/30 border-t-primary rounded-full animate-spin" />
-      </div>
-    ),
-  },
-);
 
 export function createPatternMetadataFromContent(
   pageContent: BreathingPageContent,

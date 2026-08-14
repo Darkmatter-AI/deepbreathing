@@ -52,9 +52,9 @@ function resolveStatsRequest(params: { locale: string }) {
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-  const request = resolveStatsRequest(params);
+  const request = resolveStatsRequest(await params);
   const content = await loadStatsContent(request.contentLocale);
   const metadata = createStatsMetadataFromContent(
     content,
@@ -77,9 +77,9 @@ export async function generateMetadata({
 export default async function LocalizedStatsPage({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  const request = resolveStatsRequest(params);
+  const request = resolveStatsRequest(await params);
   const content = await loadStatsContent(request.contentLocale);
   const renderContext: NativeRouteRenderContext = {
     canonicalPath: request.canonicalPath,

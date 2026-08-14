@@ -21,7 +21,7 @@
   "sections": {
     "collection": {
       "title": "What we collect",
-      "body": "Guests can practice without giving us a name or email. The app and website collect basic usage events such as session starts, ends, duration, breathing mode, and platform. The mobile app uses a random per-install analytics identifier. It does not use the advertising identifier and does not request tracking permission."
+      "body": "Guests can practice without giving us a name or email. The mobile app asks for analytics consent on first launch; before you allow it, it sends no analytics event and creates no analytics identifier. If you opt in, the app sends basic usage events such as session starts, ends, duration, breathing mode, and platform through our server to GA4 using a random per-install identifier. You can withdraw consent from the in-app Privacy control; withdrawal stops future analytics and removes that identifier. The app does not use the advertising identifier and does not request tracking permission."
     },
     "accounts": {
       "title": "Optional accounts and sync",
@@ -29,7 +29,7 @@
     },
     "useAndShare": {
       "title": "How we use and share data",
-      "body": "We use this information for app functionality, account support, analytics, performance monitoring, and bug fixes. Service providers help us run authentication, email, analytics, hosting, and database storage. We do not sell personal information or use breathing data for advertising."
+      "body": "We use this information for app functionality, account support, analytics, performance monitoring, and bug fixes. Mobile analytics processing happens only after you opt in; withdrawing consent stops future analytics and removes the per-install identifier. Service providers help us run authentication, email, analytics, hosting, and database storage. We do not sell personal information or use breathing data for advertising."
     },
     "deletion": {
       "title": "Your choices and deletion",

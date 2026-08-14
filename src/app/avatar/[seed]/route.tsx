@@ -7,8 +7,9 @@ import { renderAvatarScene } from '@/lib/avatar/avatar-scene';
 // the URL IS the cache key — render on the fly, never persist pixels.
 export const runtime = 'edge';
 
-export async function GET(request: NextRequest, { params }: { params: { seed: string } }) {
-  const seed = decodeURIComponent(params.seed || 'default');
+export async function GET(request: NextRequest, { params }: { params: Promise<{ seed: string }> }) {
+  const { seed: rawSeed } = await params;
+  const seed = decodeURIComponent(rawSeed || 'default');
   const sp = request.nextUrl.searchParams;
   const sizeRaw = parseInt(sp.get('size') || '256', 10);
   const size = Math.max(16, Math.min(1024, Number.isNaN(sizeRaw) ? 256 : sizeRaw));

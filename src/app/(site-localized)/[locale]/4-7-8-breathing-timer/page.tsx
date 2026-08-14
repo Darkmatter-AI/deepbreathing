@@ -67,9 +67,9 @@ function resolveTimerRequest(params: { locale: string }) {
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-  const request = resolveTimerRequest(params);
+  const request = resolveTimerRequest(await params);
   const content = await loadTimerContent(request.contentLocale);
   const metadata = createTimerMetadataFromContent(content, request.canonicalPath);
 
@@ -89,9 +89,9 @@ export async function generateMetadata({
 export default async function LocalizedTimerPage({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  const request = resolveTimerRequest(params);
+  const request = resolveTimerRequest(await params);
   const content = await loadTimerContent(request.contentLocale);
   const renderContext: NativeRouteRenderContext = {
     canonicalPath: request.canonicalPath,

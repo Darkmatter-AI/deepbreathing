@@ -718,14 +718,14 @@
       "type": "route"
     },
     {
-      "bytes": 23012,
+      "bytes": 22972,
       "locale": "de-de",
       "manualOverrideSegments": 0,
       "missingSegments": 28,
       "path": "de-de/pages/support.json",
       "route": "/support",
       "segments": 33,
-      "sha256": "23a307f2792a66b0fbf7f69089d316b4eec35d882d7cb357ce492d94218c3791",
+      "sha256": "72d58ae0c58c1ebb29a898597a2a65f253fbd2c221a2b6507a378c2e01fb8def",
       "translatedSegments": 5,
       "type": "route"
     },
@@ -1434,14 +1434,14 @@
       "type": "route"
     },
     {
-      "bytes": 23029,
+      "bytes": 22989,
       "locale": "es-es",
       "manualOverrideSegments": 0,
       "missingSegments": 28,
       "path": "es-es/pages/support.json",
       "route": "/support",
       "segments": 33,
-      "sha256": "7adff50601629e015ca392d85c89e52c22797ca62036edfa30cef68b2c2203a8",
+      "sha256": "d7368ee22fe648da12bd815bede66b7d37406c5de355535c6e37b50bd2fdd335",
       "translatedSegments": 5,
       "type": "route"
     },
@@ -2150,14 +2150,14 @@
       "type": "route"
     },
     {
-      "bytes": 23029,
+      "bytes": 22989,
       "locale": "fr-fr",
       "manualOverrideSegments": 0,
       "missingSegments": 28,
       "path": "fr-fr/pages/support.json",
       "route": "/support",
       "segments": 33,
-      "sha256": "3fad3339e8b9797e3b86bf2ad378991447dd1ede1f227ae9fc11522b5b5623f4",
+      "sha256": "eb776850157e2b2a7d4fd3372f4e32e589af88427640023582d0fcf843fca0f6",
       "translatedSegments": 5,
       "type": "route"
     },
@@ -2866,14 +2866,14 @@
       "type": "route"
     },
     {
-      "bytes": 23043,
+      "bytes": 23003,
       "locale": "ja-jp",
       "manualOverrideSegments": 0,
       "missingSegments": 28,
       "path": "ja-jp/pages/support.json",
       "route": "/support",
       "segments": 33,
-      "sha256": "5d1292a63c1bf0028346de96aaf37186fde277b762399a861859a645d98913be",
+      "sha256": "ede01d0de319677684124e368d00961bd1d67f393da7f8667a10693ca51ada89",
       "translatedSegments": 5,
       "type": "route"
     },
@@ -3582,14 +3582,14 @@
       "type": "route"
     },
     {
-      "bytes": 23036,
+      "bytes": 22996,
       "locale": "pt-br",
       "manualOverrideSegments": 0,
       "missingSegments": 28,
       "path": "pt-br/pages/support.json",
       "route": "/support",
       "segments": 33,
-      "sha256": "043515a2b2c72b3324d2647c8d6e4666c36710c8694481685cfc1af6c74659f5",
+      "sha256": "eb9559cbd2a7575cc58c5bedb3f17cb0b9748b3065d7b6c30cd102cc2707d943",
       "translatedSegments": 5,
       "type": "route"
     }

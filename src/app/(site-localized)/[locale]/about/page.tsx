@@ -67,9 +67,9 @@ function resolveAboutRequest(params: { locale: string }) {
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-  const request = resolveAboutRequest(params);
+  const request = resolveAboutRequest(await params);
   const content = await loadAboutContent(request.contentLocale);
   const metadata = createAboutMetadataFromContent(content, request.canonicalPath);
 
@@ -89,9 +89,9 @@ export async function generateMetadata({
 export default async function LocalizedAboutPage({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  const request = resolveAboutRequest(params);
+  const request = resolveAboutRequest(await params);
   const content = await loadAboutContent(request.contentLocale);
   const renderContext: NativeRouteRenderContext = {
     canonicalPath: request.canonicalPath,

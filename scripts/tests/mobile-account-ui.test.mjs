@@ -67,6 +67,44 @@ test("mode drawer is a persistent two-detent sheet that follows the drag", () =>
   assert.doesNotMatch(source, /PanResponder/);
 });
 
+test("native overlays follow the in-app light or dark appearance", () => {
+  const host = fs.readFileSync(
+    path.join(ROOT, "apps/mobile/src/app/index.tsx"),
+    "utf8"
+  );
+  const experience = fs.readFileSync(
+    path.join(ROOT, "apps/mobile/src/components/breathing-web/BreathingExperience.tsx"),
+    "utf8"
+  );
+
+  assert.match(experience, /onEvent\?\.\('theme_change', \{ theme: activeTheme \}\)/);
+  assert.match(host, /setExperienceTheme\(params\.theme\)/);
+  assert.match(host, /<ModeLibrarySheet[\s\S]*?theme=\{experienceTheme\}/);
+  assert.match(host, /<AccountSheet[\s\S]*?theme=\{experienceTheme\}/);
+  assert.match(host, /<CompletionSummary[\s\S]*?theme=\{experienceTheme\}/);
+});
+
+test("native account sheet exposes the public privacy policy", () => {
+  const source = fs.readFileSync(
+    path.join(ROOT, "apps/mobile/src/auth/AccountSheet.tsx"),
+    "utf8"
+  );
+  assert.match(source, /https:\/\/deepbreathingexercises\.com\/privacy/);
+  assert.match(source, /Linking\.openURL\(PRIVACY_POLICY_URL\)/);
+  assert.match(source, /accessibilityRole="link"/);
+  assert.match(source, />Privacy Policy<\/Text>/);
+});
+
+test("native status bar follows the light loader and in-app theme", () => {
+  const source = fs.readFileSync(
+    path.join(ROOT, "apps/mobile/src/app/index.tsx"),
+    "utf8"
+  );
+  assert.match(source, /import \{ StatusBar \} from 'expo-status-bar'/);
+  assert.match(source, /!experienceReady \|\| experienceTheme === 'light'/);
+  assert.match(source, /<StatusBar style=\{statusBarStyle\} animated \/>/);
+});
+
 test("native shell owns silent-mode audio, phase cues, edge glow, and account portrait", () => {
   const host = fs.readFileSync(path.join(ROOT, "apps/mobile/src/app/index.tsx"), "utf8");
   const experience = fs.readFileSync(
@@ -106,6 +144,28 @@ test("native shell owns silent-mode audio, phase cues, edge glow, and account po
   assert.doesNotMatch(experience, /Rabbit/);
 });
 
+test("native timed completion uses one quiet bloom after teardown", () => {
+  const audio = fs.readFileSync(
+    path.join(ROOT, "packages/audio/src/audioService.ts"),
+    "utf8"
+  );
+  const background = fs.readFileSync(
+    path.join(ROOT, "apps/mobile/src/breathing/native-soundscape.ts"),
+    "utf8"
+  );
+  const host = fs.readFileSync(path.join(ROOT, "apps/mobile/src/app/index.tsx"), "utf8");
+
+  assert.match(audio, /public playCompletionCue\(/);
+  assert.match(audio, /COMPLETION_CUE_DURATION_SECONDS = 0\.78/);
+  assert.match(audio, /const fifthHz = rootHz \* 1\.5/);
+  assert.match(audio, /osc\.type = 'sine'/);
+  assert.match(audio, /if \(this\.isMuted \|\| !this\.ctx \|\| !this\.masterGain\)/);
+  assert.match(background, /onSessionComplete\(\)/);
+  assert.match(background, /pendingCompletionRef/);
+  assert.match(background, /playCompletionCueForGeneration\(\s*pendingCompletion\.generation/);
+  assert.match(host, /onSessionComplete\(\);/);
+});
+
 test("registered completion banner clears when account controls become the next action", () => {
   const source = fs.readFileSync(
     path.join(ROOT, "apps/mobile/src/app/index.tsx"),
@@ -116,4 +176,17 @@ test("registered completion banner clears when account controls become the next 
     /const handleOpenAccount = useCallback\(\(\) => \{[\s\S]*?authSession\?\.user\.id[\s\S]*?setSummaryData\(null\)[\s\S]*?setAccountOpen\(true\)/
   );
   assert.match(source, /onPress=\{handleOpenAccount\}/);
+});
+
+test("old DOM callbacks stay gated until an idle owner remount commits", () => {
+  const source = fs.readFileSync(path.join(ROOT, "apps/mobile/src/app/index.tsx"), "utf8");
+  assert.match(source, /Auth can change while the current breathing session is still running\./);
+  assert.match(source, /owner preparation, bootstrap, and DOM/);
+  assert.match(source, /if \(!eventOwnerGenerationAccepted && !ownerTransitionPending\) return;/);
+  assert.match(source, /await enqueueSessionEvent\(event, eventOwner \?\? undefined\);/);
+  assert.match(source, /if \(transitionToken !== ownerTransitionTokenRef\.current \|\| isSessionRunningRef\.current\) return;/);
+  assert.match(source, /hydratedUserIdRef\.current = userId;/);
+  assert.match(source, /setSnapshotVersion\(\(version\) => version \+ 1\);/);
+  assert.match(source, /isCommittedOwnerForAuth\(authSession\.user\.id\)/);
+  assert.match(source, /if \(userId && ownerReady\)/);
 });

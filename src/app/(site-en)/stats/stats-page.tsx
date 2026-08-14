@@ -48,7 +48,7 @@ export async function StatsPage({
     authLocale: renderContext?.locale ?? "en",
     locale: renderContext?.locale ?? "en-US",
   };
-  const session = await auth.api.getSession({ headers: headers() });
+  const session = await auth.api.getSession({ headers: await headers() });
 
   if (!session?.user) {
     return (

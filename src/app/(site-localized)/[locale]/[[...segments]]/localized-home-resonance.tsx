@@ -1,22 +1,6 @@
-import dynamic from "next/dynamic";
-
 import type { ModeName } from "@/components/resonance/types";
 import type { LocaleCode } from "@/i18n";
-
-const Resonance = dynamic(
-  () => import("@/components/resonance/Resonance"),
-  {
-    ssr: false,
-    loading: () => (
-      <div
-        aria-hidden="true"
-        className="flex min-h-screen items-center justify-center bg-background"
-      >
-        <div className="h-12 w-12 animate-spin rounded-full border-2 border-primary/30 border-t-primary" />
-      </div>
-    ),
-  },
-);
+import { ResonanceClient as Resonance } from "@/components/resonance/resonance-client";
 
 export function LocalizedHomeResonance({
   locale,

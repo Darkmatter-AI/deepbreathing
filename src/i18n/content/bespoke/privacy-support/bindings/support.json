@@ -101,7 +101,7 @@
     },
     {
       "messagePath": "contact.emailAddress",
-      "reviewedSourceHash": "4a0fa35ee26d21cf99e3ad76b6a67edd0855141418846ba61a1de7a8f64e8bdb",
+      "reviewedSourceHash": "e64f030216766faf1005a0b732c299660e8385d512aaca2fb34c1464a761bf72",
       "placementId": "3a4416fd-1a0e-4b5c-87d2-8fd6fb8b282a"
     },
     {
@@ -211,8 +211,8 @@
     },
     {
       "placementId": "49738ee4-5d9b-4249-a948-18bd229af85b",
-      "sourceText": "support@deepbreathingexercises.com",
-      "reviewedSourceHash": "4a0fa35ee26d21cf99e3ad76b6a67edd0855141418846ba61a1de7a8f64e8bdb",
+      "sourceText": "hi@abiassi.com",
+      "reviewedSourceHash": "e64f030216766faf1005a0b732c299660e8385d512aaca2fb34c1464a761bf72",
       "classification": "stale-pre-confirmation-link-deletion-copy",
       "reason": "This duplicate email placement belonged to the removed email-based deletion instructions; the live contact email remains separately bound."
     }

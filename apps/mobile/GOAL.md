@@ -1,15 +1,14 @@
-# GOAL — Expo Breathing App (attempt 2)
+# GOAL — Expo Breathing App (historical attempt 2)
 
-This file is the in-repo contract for the overnight build. It mirrors the overnight plan so
-the run is **resumable across context resets**. If you are a fresh agent picking this up, read
-this top-to-bottom, then check `docs/expo-attempt-2-progress.md` for live status.
+This file records the overnight build plan for historical context. It is not the Build 18
+release checklist; use `docs/appstore/submission-checklist.md` for the current release gate.
 
 ## What we're building
 
 A native iOS/Android app (Expo SDK 56, RN 0.85, React 19.2, expo-router) focused on the
-breathing **visualizer**. v1 = the 3 non-protocol modes (Box, Relax, Coherent). Lives at
-`apps/mobile`, self-contained (own `node_modules`/`package-lock.json`, NOT a pnpm workspace
-member — keeps the root web app's build untouched).
+breathing **visualizer**. v1 started with the 3 non-protocol modes (Box, Relax, Coherent).
+The app lives at `apps/mobile` as a member of the repository pnpm workspace; dependencies are
+resolved by the root `pnpm-lock.yaml`. Do not use standalone npm/package-lock instructions.
 
 The web app `deepbreathingexercises.com` (`src/components/resonance/*`) is the design reference.
 A first port was removed in commit `5239540` and preserved at tag **`expo-attempt-1`** for
@@ -17,8 +16,8 @@ cherry-picking (`apps/resonance-mobile-app/*`, `lib/audio.ts`, `assets/audio/*`)
 
 ## Environment (load-bearing)
 
-- **Node 22 via fnm**: prefix every Expo/npm/tsc command with `fnm exec --using=22 --`.
-  Global Node is 26; Metro/Expo track LTS — do NOT run Expo on Node 26.
+- **Node version:** use the version pinned by the current CI workflow for reproducible checks.
+  Do not infer a release result from an unpinned global Node installation.
 - iPhone 17 Pro simulator booted; Xcode 26.5. Native verify: `expo run:ios` then
   `xcrun simctl io booted screenshot /tmp/ios-<state>.png`.
 - Web verify: `expo start --web` on `:8081`, drive via claude-in-chrome MCP.
@@ -71,16 +70,19 @@ Other hook rules:
   `app.json` (name "Deep Breathing", bundle `com.deepbreathing.app`, icons/splash, status bar). Commit.
 - **M6** Full verification pass (web + iOS sim) + `docs/expo-attempt-2-progress.md` handoff.
 
-Sequencing: bank M1–M5 (vitest + tsc + web smoke + commits) FIRST; run the slow `expo run:ios`
+Sequencing: bank M1–M5 (Vitest + typecheck + lint + web smoke + commits) FIRST; run the slow
+`pnpm --filter mobile ios`
 native build ONCE at M6 so a pod/build failure can't strand web-verifiable progress.
 
 ## Verification protocol (every milestone)
 
-1. `fnm exec --using=22 -- npm test` (vitest) green.
-2. `fnm exec --using=22 -- npx tsc --noEmit` clean.
-3. Web smoke: drive Chrome, screenshot, click each mode, start/pause/stop, watch orb + label,
+1. `pnpm --filter mobile test` (Vitest) green.
+2. `pnpm --filter mobile exec tsc --noEmit` clean.
+3. `pnpm --filter mobile lint` clean.
+4. `pnpm --dir apps/mobile dlx expo-doctor@1.20.1` clean or explicitly dispositioned.
+5. Web smoke: drive Chrome, screenshot, click each mode, start/pause/stop, watch orb + label,
    toggle mute, pick a duration.
-4. (M6 only) Native smoke: `expo run:ios` → screenshot → Read it; confirm render, no redbox,
+6. (M6 only) Native smoke: `pnpm --filter mobile ios` → screenshot → Read it; confirm render, no redbox,
    orb animates, controls respond.
 
 ## Stop conditions (unsupervised run)
