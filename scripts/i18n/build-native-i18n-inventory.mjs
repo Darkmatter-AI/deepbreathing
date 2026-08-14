@@ -526,6 +526,7 @@ function scanMarkerFiles(repoRoot) {
     ".agents",
     ".git",
     ".next",
+    ".pnpm-store",
     ".vercel",
     "node_modules",
     "tmp",
