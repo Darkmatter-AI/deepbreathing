@@ -28,9 +28,10 @@ function getPage(slug: string) {
   return page;
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   const metadata = createEmbedPlayerMetadata(
-    getPage(params.slug),
+    getPage(slug),
     embedContent.player.embedLabel,
   );
   return {
@@ -40,18 +41,21 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   };
 }
 
-export default function EmbedPageRoute({
+export default async function EmbedPageRoute({
   params,
   searchParams,
 }: {
-  params: { slug: string };
-  searchParams: EmbedPlayerSearchParams;
+  params: Promise<{ slug: string }>;
+  searchParams: Promise<EmbedPlayerSearchParams>;
 }) {
+  // Next 15 supplies route params and search params as promises.
+  const resolvedParams = await params;
+  const resolvedSearchParams = await searchParams;
   return (
     <EmbedPlayer
-      content={getPage(params.slug)}
+      content={getPage(resolvedParams.slug)}
       playerContent={embedContent.player}
-      searchParams={searchParams}
+      searchParams={resolvedSearchParams}
     />
   );
 }

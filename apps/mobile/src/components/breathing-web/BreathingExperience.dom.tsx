@@ -13,6 +13,9 @@ interface BreathingExperienceDomProps {
   initialDuration?: number | null;
   appState?: 'active' | 'background';
   isNativeApp?: boolean;
+  reduceMotion?: boolean;
+  largeText?: boolean;
+  fontScale?: number;
   safeAreaInsets?: { top: number; right: number; bottom: number; left: number };
   initialPersistedSnapshot?: ResonancePersistedSnapshot;
   onSessionComplete?: (
@@ -28,6 +31,9 @@ export default function BreathingExperienceDom({
   initialMode,
   initialDuration,
   appState,
+  reduceMotion,
+  largeText,
+  fontScale,
   safeAreaInsets,
   initialPersistedSnapshot,
   onSessionComplete,
@@ -42,6 +48,9 @@ export default function BreathingExperienceDom({
         initialDuration={initialDuration}
         appState={appState}
         isNativeApp
+        reduceMotion={reduceMotion}
+        largeText={largeText}
+        fontScale={fontScale}
         safeAreaInsets={safeAreaInsets}
         initialPersistedSnapshot={initialPersistedSnapshot}
         onSessionComplete={onSessionComplete}

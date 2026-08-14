@@ -79,26 +79,33 @@ test("resolved content remains inside server renderers instead of crossing whole
 });
 
 test("interactive breathing islands cannot deopt localized editorial HTML", async () => {
-  const [patternSource, useCaseSource] = await Promise.all([
+  const [patternSource, useCaseSource, resonanceClientSource] = await Promise.all([
     readFile(patternPagePath, "utf8"),
     readFile(useCasePagePath, "utf8"),
+    readFile(
+      new URL("../../src/components/resonance/resonance-client.tsx", import.meta.url),
+      "utf8",
+    ),
   ]);
 
   for (const [name, source] of [
     ["pattern", patternSource],
     ["use-case", useCaseSource],
   ]) {
-    assert.match(
-      source,
-      /const Resonance = dynamic\([\s\S]*?import\("@\/components\/resonance\/Resonance"\)[\s\S]*?ssr: false/,
-      `${name} renderer must isolate the useSearchParams client island`,
-    );
+    assert.match(source, /ResonanceClient as Resonance/);
     assert.doesNotMatch(
       source,
       /^import Resonance from "@\/components\/resonance\/Resonance";/m,
       `${name} renderer must not let Resonance deopt the complete server document`,
     );
   }
+
+  assert.match(resonanceClientSource, /^"use client";/);
+  assert.match(
+    resonanceClientSource,
+    /const DynamicResonance = dynamic\([\s\S]*?import\("\.\/Resonance"\)[\s\S]*?ssr: false/,
+    "the client wrapper must isolate the useSearchParams island under Next 15",
+  );
 });
 
 test("native locale seeds client phrases and localized navigation before hydration", async () => {

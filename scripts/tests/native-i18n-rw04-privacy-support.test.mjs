@@ -153,6 +153,6 @@ test("R-W04 privacy/support use thin wrappers and parity renderers", async () =>
   assert.match(privacyRenderer, /&rdquo;/);
   assert.match(supportRenderer, /&ldquo;/);
   assert.match(supportRenderer, /&rdquo;/);
-  assert.match(supportRenderer, /mailto:support@deepbreathingexercises\.com/);
+  assert.match(supportRenderer, /mailto:hi@abiassi\.com/);
   assert.match(supportRenderer, /https:\/\/darkmatter\.is\//);
 });

@@ -1,5 +1,12 @@
 import { useEffect, useState } from 'react';
-import { ActivityIndicator, Pressable, StyleSheet, Text, View } from 'react-native';
+import {
+  AccessibilityInfo,
+  ActivityIndicator,
+  Pressable,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 import * as AppleAuthentication from 'expo-apple-authentication';
 import { Image } from 'expo-image';
 
@@ -23,7 +30,18 @@ export default function AuthActions({ theme, onAuthenticated }: Props) {
       .catch(() => setAppleAvailable(false));
   }, []);
 
+  useEffect(() => {
+    if (pending === 'apple') {
+      AccessibilityInfo.announceForAccessibility('Signing in with Apple.');
+    } else if (pending === 'google') {
+      AccessibilityInfo.announceForAccessibility('Signing in with Google.');
+    } else if (error) {
+      AccessibilityInfo.announceForAccessibility(`Sign in failed. ${error}`);
+    }
+  }, [error, pending]);
+
   const continueWithApple = async () => {
+    if (pending !== null) return;
     setPending('apple');
     setError(null);
     try {
@@ -34,11 +52,19 @@ export default function AuthActions({ theme, onAuthenticated }: Props) {
         ],
       });
       if (!credential.identityToken) throw new Error('Apple did not return an identity token');
+      if (!credential.authorizationCode) {
+        throw new Error('Apple did not return an authorization code');
+      }
       const result = await authClient.signIn.social({
         provider: 'apple',
         idToken: { token: credential.identityToken },
+        // The server exchanges this one-time code for an Apple refresh token
+        // before Better Auth persists the account. Keeping the exchange on the
+        // server means the Apple private key never reaches the app bundle.
+        additionalData: { authorizationCode: credential.authorizationCode },
       });
       if (result.error) throw new Error(result.error.message ?? 'Apple sign-in failed');
+      AccessibilityInfo.announceForAccessibility('Signed in with Apple.');
       onAuthenticated?.();
     } catch (caught) {
       const code = (caught as { code?: string }).code;
@@ -51,6 +77,7 @@ export default function AuthActions({ theme, onAuthenticated }: Props) {
   };
 
   const continueWithGoogle = async () => {
+    if (pending !== null) return;
     setPending('google');
     setError(null);
     try {
@@ -59,6 +86,7 @@ export default function AuthActions({ theme, onAuthenticated }: Props) {
         callbackURL: '/',
       });
       if (result.error) throw new Error(result.error.message ?? 'Google sign-in failed');
+      AccessibilityInfo.announceForAccessibility('Signed in with Google.');
       onAuthenticated?.();
     } catch (caught) {
       setError(caught instanceof Error ? caught.message : 'Google sign-in failed');
@@ -82,10 +110,15 @@ export default function AuthActions({ theme, onAuthenticated }: Props) {
             cornerRadius={13}
             style={styles.appleButton}
             onPress={continueWithApple}
+            accessible
+            accessibilityRole="button"
+            accessibilityLabel={pending === 'apple' ? 'Signing in with Apple' : 'Continue with Apple'}
+            accessibilityHint="Uses your Apple ID to sync your practice"
+            accessibilityState={{ disabled: pending !== null, busy: pending === 'apple' }}
           />
           {pending === 'apple' && (
             <View pointerEvents="none" style={styles.spinnerOverlay}>
-              <ActivityIndicator color={dark ? '#15100d' : '#fff'} />
+              <ActivityIndicator color={dark ? '#15100d' : '#fff'} accessibilityLabel="Signing in with Apple" />
             </View>
           )}
         </View>
@@ -95,6 +128,9 @@ export default function AuthActions({ theme, onAuthenticated }: Props) {
         disabled={pending !== null}
         onPress={continueWithGoogle}
         accessibilityRole="button"
+        accessibilityLabel={pending === 'google' ? 'Signing in with Google' : 'Continue with Google'}
+        accessibilityHint="Uses your Google account to sync your practice"
+        accessibilityState={{ disabled: pending !== null, busy: pending === 'google' }}
         style={({ pressed }) => [
           styles.googleButton,
           { borderColor: dark ? '#5a4538' : '#d8c0ad' },
@@ -102,7 +138,7 @@ export default function AuthActions({ theme, onAuthenticated }: Props) {
         ]}
       >
         {pending === 'google' ? (
-          <ActivityIndicator color={dark ? '#f1dfce' : '#422a1c'} />
+          <ActivityIndicator color={dark ? '#f1dfce' : '#422a1c'} accessibilityLabel="Signing in with Google" />
         ) : (
           <>
             <Image
@@ -117,7 +153,12 @@ export default function AuthActions({ theme, onAuthenticated }: Props) {
           </>
         )}
       </Pressable>
-      {error ? <Text style={styles.error}>{error}</Text> : null}
+      {pending ? (
+        <Text style={[styles.status, { color: dark ? '#b9957c' : '#8e6b53' }]} accessibilityRole="alert" accessibilityLiveRegion="polite">
+          {pending === 'apple' ? 'Signing in with Apple…' : 'Signing in with Google…'}
+        </Text>
+      ) : null}
+      {error ? <Text style={[styles.error, { color: dark ? '#f0a08c' : '#9f352b' }]} accessibilityRole="alert" accessibilityLiveRegion="polite">{error}</Text> : null}
     </View>
   );
 }
@@ -143,5 +184,6 @@ const styles = StyleSheet.create({
   pressed: { opacity: 0.72 },
   googleIcon: { width: 20, height: 20 },
   googleLabel: { fontSize: 16, fontWeight: '600' },
-  error: { color: '#c85b4a', fontSize: 12, textAlign: 'center' },
+  status: { fontSize: 12, textAlign: 'center' },
+  error: { fontSize: 12, textAlign: 'center' },
 });

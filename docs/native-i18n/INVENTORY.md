@@ -249,7 +249,7 @@ The groups below separate live coupling from migration provenance and historical
 | `src/components/language-switcher.tsx:16` | Reads the injected proxy global, duplicates locale/path logic, and delays links until hydration to avoid rewritten double-prefix URLs. |
 | `src/components/resonance/runtime-phrases.ts:914` | Uses the injected language as the first locale signal for the existing interactive phrase catalog. |
 | `apps/mobile/src/components/breathing-web/runtime-phrases.ts:498` | Mobile web-content copy mirrors the same injected-global locale detection. |
-| `src/components/resonance/Resonance.tsx:12` | Consumes the runtime phrase resolver and reports fallback misses; native routing must provide its locale explicitly. |
+| `src/components/resonance/Resonance.tsx:13` | Consumes the runtime phrase resolver and reports fallback misses; native routing must provide its locale explicitly. |
 | `src/components/auth/sign-in-sheet.tsx:9` | Detects the proxy-backed runtime locale before resolving sign-in copy. |
 | `src/components/auth/session-complete-prompt.tsx:14` | Detects the proxy-backed runtime locale before resolving conversion-prompt copy. |
 | `src/lib/share-utm.ts:23` | Reads proxy-mutated `document.title` and `<html lang>` because localized meta descriptions are unavailable. |
@@ -261,8 +261,11 @@ The groups below separate live coupling from migration provenance and historical
 |---|---|
 | `src/lib/auth-client.ts:10` | Forces browser auth calls to the origin host because the apex proxy mangles responses. |
 | `src/lib/auth.ts:4` | Retains proxy-driven Better Auth workarounds and trusts the origin host for cross-subdomain callbacks. |
-| `src/app/api/auth/[...all]/route.ts:12` | Allows the origin host in the auth route CORS contract. |
+| `src/app/api/auth/[...all]/route.ts:15` | Allows the origin host in the auth route CORS contract. |
 | `apps/mobile/src/auth/auth-client.ts:5` | Pins native-app auth to the proxy-bypass origin host. |
+| `apps/mobile/src/breathing/ga4-mp.ts:20` | Pins consent-gated native analytics to the first-party origin endpoint so no Google Measurement Protocol secret is shipped in the app. |
+| `src/app/api/auth/[...all]/route.test.ts:38` | Pins the origin-host Expo authorization proxy rejection path without exercising a live identity provider. |
+| `src/app/api/v1/analytics/route.test.ts:25` | Pins the first-party analytics relay contract while keeping Measurement Protocol credentials server-side. |
 | `scripts/check-og-image.sh:16` | Defaults diagnostics to the origin alias rather than the apex. |
 | `.claude/skills/dbe-accounts-auth/SKILL.md:44` | The auth health runbook explicitly probes the origin callback path. |
 
@@ -320,7 +323,7 @@ The groups below separate live coupling from migration provenance and historical
 
 | Evidence | Dependency / cutover implication |
 |---|---|
-| `CLAUDE.md:90` | Canonical project guidance still documents proxy URL semantics and old OAuth context. |
+| `CLAUDE.md:100` | Canonical project guidance still documents proxy URL semantics and old OAuth context. |
 | `AGENTS.md:21` | Project environment declares the origin application endpoint. |
 | `.claude/skills/daily-indexing/SKILL.md:19` | Correctly states that MassTranslate submission/OAuth paths are retired for indexing; keep this negative dependency true. |
 | `docs/runbooks/tools-and-data-sources.md:58` | Primary live runbook for proxy cache, signed-webhook bypass, URL semantics, and remaining GSC/Bing fallbacks. |
@@ -332,7 +335,7 @@ The groups below separate live coupling from migration provenance and historical
 
 | Evidence | Dependency / cutover implication |
 |---|---|
-| `docs/appstore/submission-checklist.md:184` | Records that Google sign-in's first page is the origin subdomain, which reviewers see as a domain handoff; documentation only, no runtime dependency. |
+| `docs/appstore/submission-checklist.md:241` | Records that Google sign-in's first page is the origin subdomain, which reviewers see as a domain handoff; documentation only, no runtime dependency. |
 
 ### Historical evidence only (preserve; do not treat as a live dependency)
 
@@ -346,7 +349,7 @@ The groups below separate live coupling from migration provenance and historical
 
 ### Explicit-marker coverage audit
 
-The deterministic marker scan found 50 files with explicit MassTranslate/proxy/origin coupling. All must be classified above.
+The deterministic marker scan found 53 files with explicit MassTranslate/proxy/origin coupling. All must be classified above.
 
 Unclassified marker files: none.
 

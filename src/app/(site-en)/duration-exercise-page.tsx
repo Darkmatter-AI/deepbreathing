@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import dynamic from "next/dynamic";
 import Link from "next/link";
 import { Fragment } from "react";
 
@@ -11,14 +10,7 @@ import type {
 import type { NativeRouteRenderContext } from "@/i18n/render-context";
 import { resolveNativeInternalHref } from "@/i18n/route-manifest";
 import { createOgImagePath } from "@/lib/seo/og-image";
-
-const ShareButton = dynamic(
-  () =>
-    import("@/components/ui/share-button").then((module) => ({
-      default: module.ShareButton,
-    })),
-  { ssr: false },
-);
+import { ShareButton } from "@/components/ui/share-button-lazy";
 
 const siteUrl = "https://deepbreathingexercises.com";
 

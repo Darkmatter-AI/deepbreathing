@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import dynamic from "next/dynamic";
 import Link from "next/link";
 
 import { ModeName } from "@/components/resonance/types";
@@ -12,6 +11,7 @@ import type {
 import type { NativeRouteRenderContext } from "@/i18n/render-context";
 import { resolveNativeInternalHref } from "@/i18n/route-manifest";
 import { createOgImagePath } from "@/lib/seo/og-image";
+import { ResonanceClient as Resonance } from "@/components/resonance/resonance-client";
 
 const siteUrl = "https://deepbreathingexercises.com";
 const sourceRoute = "/4-7-8-breathing-timer";
@@ -52,19 +52,6 @@ export function createTimerMetadataFromContent(
     },
   };
 }
-
-// Lazy-load Resonance
-const Resonance = dynamic(
-  () => import("@/components/resonance/Resonance"),
-  {
-    ssr: false,
-    loading: () => (
-      <div aria-hidden="true" className="min-h-screen flex items-center justify-center bg-background">
-        <div className="h-12 w-12 border-2 border-primary/30 border-t-primary rounded-full animate-spin" />
-      </div>
-    ),
-  },
-);
 
 export function TimerPage({
   content = englishContent,

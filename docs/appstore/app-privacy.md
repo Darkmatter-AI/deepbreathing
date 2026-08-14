@@ -1,9 +1,9 @@
 # App Store Connect — App Privacy (Nutrition Label)
 
-> ⚠️ **2026-07-11 account update:** v1 now includes optional Apple and Google sign-in plus
-> cross-device practice sync. Before external TestFlight or App Review, update the already
-> published ASC label to include Email Address and Name for App Functionality, and mark synced
-> App Activity as linked to identity for signed-in users. Guest breathing remains available.
+> ⚠️ **2026-08-13 Build 18 update:** v1 includes optional Apple and Google sign-in
+> plus cross-device practice sync. The ASC label should include User ID, Email
+> Address, Name, and Product Interaction for App Functionality. Guest breathing
+> and analytics-declined use remain available.
 
 Complete this at: App Store Connect > App > App Privacy > Data Types.
 
@@ -13,7 +13,9 @@ The answers below are conservative and precise. When in doubt we declare rather 
 
 ## Step 1: Does your app collect data?
 
-**Yes.**
+**Yes.** Optional account data and signed-in practice sync are collected for
+app functionality. Analytics is separately opt-in and is not collected before
+the user allows it.
 
 ---
 
@@ -21,12 +23,12 @@ The answers below are conservative and precise. When in doubt we declare rather 
 
 ### 2a. Identifiers
 
-#### Device ID / Per-install Analytics ID
+#### Device ID / Per-install Analytics ID (optional analytics)
 
 | Field | Answer |
 |---|---|
 | Data type | **Other Data Types > Other Device IDs** |
-| Description | A randomly generated UUID stored in AsyncStorage at first launch. Used as the `client_id` for GA4 Measurement Protocol analytics. Not the IDFA. Not shared with advertisers. |
+| Description | A randomly generated UUID stored in AsyncStorage only after the user chooses **Allow analytics**. Used as the `client_id` for GA4 Measurement Protocol analytics. It is removed when analytics is turned off. Not the IDFA. Not shared with advertisers. |
 | Linked to identity | **No** — the ID is random and per-install only. It is not linked to an Apple ID, email, or any personally identifiable identifier. |
 | Used for tracking | **No** — tracking under ATT means cross-app/cross-site tracking. This ID is scoped to this app only and not combined with third-party data. |
 | Purposes | Analytics |
@@ -45,6 +47,16 @@ The answers below are conservative and precise. When in doubt we declare rather 
 | Used for tracking | **No** |
 | Purposes | App Functionality (account creation, session sync, account recovery) |
 
+#### User ID
+
+| Field | Answer |
+|---|---|
+| Data type | **Identifiers > User ID** |
+| Collection condition | Only for an optional signed-in account. |
+| Linked to identity | **Yes** |
+| Used for tracking | **No** |
+| Purposes | App Functionality (authentication and practice sync) |
+
 #### Name
 
 | Field | Answer |
@@ -59,13 +71,13 @@ The answers below are conservative and precise. When in doubt we declare rather 
 
 ### 2c. Usage Data
 
-#### App Activity (session events)
+#### Product Interaction (session events)
 
 | Field | Answer |
 |---|---|
-| Data type | **Usage Data > App Activity** |
-| Description | Session start/stop/complete events, mode chosen, duration, platform. Sent to GA4 via Measurement Protocol using the per-install client_id. For authenticated users, session events are also written to the server for cross-device stats sync. |
-| Linked to identity | **No** for guests (client_id only). **Yes** for authenticated users (linked to account). |
+| Data type | **Usage Data > Product Interaction** |
+| Description | Session start/stop/complete events, mode chosen, duration, and platform. Sent to GA4 via the server Measurement Protocol proxy only after analytics consent. For authenticated users, session events are also written to the server for cross-device stats sync. |
+| Linked to identity | **Yes** for authenticated users (sync is linked to the account); analytics events are pseudonymous. |
 | Used for tracking | **No** |
 | Purposes | Analytics, App Functionality |
 
@@ -101,12 +113,17 @@ No data collected by this app is combined with data from other apps or websites 
 
 | Data Type | Collected | Linked to User | Tracking | Purposes |
 |---|---|---|---|---|
-| Other Device IDs (per-install UUID) | Yes | No | No | Analytics |
+| Other Device IDs (per-install UUID) | Only after analytics opt-in | No | No | Analytics |
+| User ID | Yes (accounts only) | Yes | No | App Functionality |
 | Email Address | Yes (accounts only) | Yes | No | App Functionality |
 | Name | Yes (accounts only, if provider shares it) | Yes | No | App Functionality |
-| App Activity (session events) | Yes | Conditional* | No | Analytics, App Functionality |
+| Product Interaction (session events) | Yes | Yes for signed-in sync; analytics is opt-in | No | Analytics, App Functionality |
 
-*Linked to identity for authenticated users; not linked for guests.
+Analytics consent is requested on first launch. The native app’s **Privacy**
+control reopens the choice at any time; choosing **Turn analytics off** stops
+future analytics requests and deletes the local analytics ID. Declining or
+withdrawing consent does not disable breathing, local stats, audio, haptics, or
+optional account sync.
 
 ---
 
@@ -114,7 +131,7 @@ No data collected by this app is combined with data from other apps or websites 
 
 The current `/privacy` page at `deepbreathingexercises.com/privacy` covers the web product only and mentions "Vercel Analytics and Vercel Speed Insights." Before App Store submission, add a section to that page (or create a separate mobile addendum) covering:
 
-1. **Mobile app analytics:** Per-install random UUID sent to GA4 via Measurement Protocol. Not the IDFA. Not used for advertising.
+1. **Mobile app analytics:** Optional, consent-gated usage events sent through a server-held GA4 Measurement Protocol proxy. The per-install random UUID is created only after opt-in and removed on withdrawal. It is not the IDFA and is not used for advertising.
 2. **Optional accounts:** Email and provider-shared name collected only on voluntary Apple or Google sign-in. Data used for session sync and account management.
 3. **Audio and haptics:** Used for local playback and device feedback only. No microphone access.
 4. **Data deletion:** How to delete your account (required by App Store Guidelines 5.1.1(v)).

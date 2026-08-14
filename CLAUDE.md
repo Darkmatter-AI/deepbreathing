@@ -60,6 +60,16 @@ Before exploring, check whether your task is one of these. Each has a canonical 
 
 Project skills live in `.claude/skills/` and load on demand by their trigger description; invoke by name.
 
+### Production provenance guard
+
+Production web releases come from GitHub `main` only. Never run `vercel --prod`,
+`vercel promote`, Force Promote, or manual production-alias commands from a feature
+branch or worktree. Branches receive preview deployments; merge the reviewed change
+to `main` and let the Git integration create production. The first `prebuild` check
+fails closed unless Vercel's production ref and SHA equal the current GitHub `main`.
+Mobile EAS/App Store releases do not authorize a Vercel production deployment; merge
+any required web or auth backend changes to `main` first.
+
 ## Experiments — before you ship
 
 **STOP — read [`docs/SEO-EXPERIMENTS.md`](docs/SEO-EXPERIMENTS.md) FIRST.** Any SEO-adjacent task — a GSC/Bing alert, an indexing report, a redirect, a title/meta change, a sitemap or hreflang question, a crawl-health investigation — starts by reviewing that log. Many "new" problems are already diagnosed there as benign or already-fixed (e.g. the recurring "Page with redirect" WNC alert is a known no-action finding). Do not re-investigate from scratch and do not ship a change before checking whether it was already tried. This is non-negotiable; it is the whole reason the log exists.

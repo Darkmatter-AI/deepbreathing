@@ -168,7 +168,7 @@ test("the route groups keep English URLs stable and give localized pages their o
   ]);
 
   assert.match(englishLayout, /<SiteDocument htmlLang="en">/);
-  assert.match(localizedLayout, /getLocaleByPrefix\(params\.locale\)/);
+  assert.match(localizedLayout, /getLocaleByPrefix\(\(await params\)\.locale\)/);
   assert.match(localizedLayout, /htmlLang=\{locale\.htmlLang\}/);
   assert.match(localizedLayout, /direction=\{locale\.direction\}/);
   assert.match(localizedLayout, /disableSeasonalBanner/);

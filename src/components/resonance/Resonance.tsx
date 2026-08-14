@@ -8,6 +8,7 @@ import { Volume2, VolumeX, Eye, EyeOff, Activity, Waves, Wind, Sun, Moon, Turtle
 import { BreathingPhase, ModeName, AIRecommendation, ProtocolPhase, ProtocolState } from './types';
 import { BREATHING_PATTERNS, DEFAULT_SPEED_MULTIPLIER, WIM_HOF_PROTOCOL, modeToSlug } from './constants';
 import { AudioService } from '@resonance/audio';
+import { multiplierToSlider, sliderToMultiplier } from '@resonance/domain';
 import Visualizer from './components/Visualizer';
 import { createRuntimePhraseResolver, detectRuntimeLocale, RuntimePhraseKey } from './runtime-phrases';
 import { LanguageSwitcherInline } from '@/components/language-switcher';
@@ -117,6 +118,8 @@ const toRgba = (hex: string, alpha: number) => {
   const b = bigint & 255;
   return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 };
+
+
 
 const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMode, immersive, snowMode = false, forcedTheme, backgroundVariant = 'default', embedMode = false, noMobileBottomPad = false, locale, localizedRoutePaths, modeDisplayName, routeClientMessages }) => {
   const router = useRouter();
@@ -1904,9 +1907,9 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                           type="range"
                           min="0.5"
                           max="2.0"
-                          step="0.1"
-                          value={speedMultiplier}
-                          onChange={(e) => setSpeedMultiplier(parseFloat(e.target.value))}
+                          step="0.05"
+                          value={multiplierToSlider(speedMultiplier)}
+                          onChange={(e) => setSpeedMultiplier(sliderToMultiplier(parseFloat(e.target.value)))}
                           className="h-2 w-full cursor-pointer appearance-none rounded-full bg-muted accent-primary"
                           aria-label={getSafePhrase('ui.breath_speed')}
                         />

@@ -24,7 +24,7 @@
       "title": "Comptes facultatifs et synchronisation"
     },
     "collection": {
-      "body": "Les utilisateurs peuvent pratiquer sans nous communiquer de nom ni d'adresse e-mail. L'application et le site web collectent des événements d'utilisation de base, tels que le début, la fin et la durée des séances, le mode de respiration et la plateforme. L'application mobile utilise un identifiant d'analyse aléatoire propre à chaque installation. Elle n'utilise pas l'identifiant publicitaire et ne demande pas l'autorisation de suivi.",
+      "body": "Les utilisateurs peuvent pratiquer sans nous communiquer de nom ni d'adresse e-mail. L'application mobile demande votre consentement aux analyses lors du premier lancement ; avant votre accord, elle n'envoie aucun événement d'analyse et ne crée aucun identifiant d'analyse. Si vous acceptez, l'application envoie à GA4, via notre serveur, des événements d'utilisation de base tels que le début, la fin et la durée des séances, le mode de respiration et la plateforme, avec un identifiant aléatoire propre à chaque installation. Vous pouvez retirer votre consentement dans l'option Confidentialité de l'application ; les analyses futures sont alors interrompues et l'identifiant supprimé. Elle n'utilise pas l'identifiant publicitaire et ne demande pas l'autorisation de suivi.",
       "title": "Données collectées"
     },
     "contact": {
@@ -49,7 +49,7 @@
       "title": "Liens vers des tiers"
     },
     "useAndShare": {
-      "body": "Nous utilisons ces informations pour le fonctionnement de l'application, l'assistance liée aux comptes, les analyses, la surveillance des performances et la correction des bugs. Des prestataires nous aident à assurer l'authentification, les e-mails, les analyses, l'hébergement et le stockage de la base de données. Nous ne vendons pas d'informations personnelles et n'utilisons pas les données de respiration à des fins publicitaires.",
+      "body": "Nous utilisons ces informations pour le fonctionnement de l'application, l'assistance liée aux comptes, les analyses, la surveillance des performances et la correction des bugs. Le traitement des analyses mobiles n'a lieu qu'après votre consentement ; son retrait interrompt les analyses futures et supprime l'identifiant propre à l'installation. Des prestataires nous aident à assurer l'authentification, les e-mails, les analyses, l'hébergement et le stockage de la base de données. Nous ne vendons pas d'informations personnelles et n'utilisons pas les données de respiration à des fins publicitaires.",
       "title": "Comment nous utilisons et partageons les données"
     }
   }

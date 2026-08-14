@@ -11,7 +11,7 @@ import { encodeSessionCursor } from "@/lib/sync/session-events";
 export const dynamic = "force-dynamic";
 
 export async function GET() {
-  const session = await auth.api.getSession({ headers: headers() });
+  const session = await auth.api.getSession({ headers: await headers() });
   if (!session) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }

@@ -171,6 +171,24 @@ export const DEPENDENCY_GROUPS = Object.freeze([
         detail: "Pins native-app auth to the proxy-bypass origin host.",
       },
       {
+        file: "apps/mobile/src/breathing/ga4-mp.ts",
+        marker: "origin.deepbreathingexercises.com",
+        detail:
+          "Pins consent-gated native analytics to the first-party origin endpoint so no Google Measurement Protocol secret is shipped in the app.",
+      },
+      {
+        file: "src/app/api/auth/[...all]/route.test.ts",
+        marker: "origin.deepbreathingexercises.com",
+        detail:
+          "Pins the origin-host Expo authorization proxy rejection path without exercising a live identity provider.",
+      },
+      {
+        file: "src/app/api/v1/analytics/route.test.ts",
+        marker: "origin.deepbreathingexercises.com",
+        detail:
+          "Pins the first-party analytics relay contract while keeping Measurement Protocol credentials server-side.",
+      },
+      {
         file: "scripts/check-og-image.sh",
         marker: "origin.deepbreathingexercises.com",
         detail: "Defaults diagnostics to the origin alias rather than the apex.",
@@ -508,6 +526,7 @@ function scanMarkerFiles(repoRoot) {
     ".agents",
     ".git",
     ".next",
+    ".pnpm-store",
     ".vercel",
     "node_modules",
     "tmp",

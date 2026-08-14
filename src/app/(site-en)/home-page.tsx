@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import type { ReactNode } from "react";
 
 import { FadingHeroTitle } from "@/components/breathe/fading-hero-title";
@@ -644,12 +645,12 @@ export function HomePage({
           />
         </div>
         <p className="mt-4 text-xs text-muted-foreground">
-          <a
-            href="/languages"
+          <Link
+            href={href("/languages")}
             className="underline underline-offset-2 hover:text-foreground"
           >
             {content.footer.languagesLink}
-          </a>
+          </Link>
         </p>
       </footer>
     </main>

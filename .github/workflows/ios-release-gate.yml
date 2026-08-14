@@ -1,0 +1,67 @@
+name: iOS release gate
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - 'codex/ios-v1-release*'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ios-release-gate-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Tests, typecheck, lint, Expo Doctor
+    runs-on: macos-14
+    timeout-minutes: 30
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.30.3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.22.2
+          cache: pnpm
+
+      - name: Install locked dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Reject critical production dependency advisories
+        run: pnpm audit --prod --audit-level critical
+
+      - name: Run web and release tests
+        run: pnpm test
+
+      - name: Compile the production web and API surface
+        run: pnpm exec next build
+
+      - name: Run mobile unit tests
+        run: pnpm --filter mobile test
+
+      - name: Typecheck mobile
+        run: pnpm --filter mobile exec tsc --noEmit
+
+      - name: Lint mobile
+        run: pnpm --filter mobile lint
+
+      - name: Run pinned Expo Doctor
+        working-directory: apps/mobile
+        run: pnpm dlx expo-doctor@1.20.1 --verbose
+
+      - name: Validate iOS release hygiene
+        run: node scripts/release/validate-ios-release.mjs
