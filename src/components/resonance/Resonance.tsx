@@ -14,12 +14,37 @@ import { createRuntimePhraseResolver, detectRuntimeLocale, RuntimePhraseKey } fr
 import { LanguageSwitcherInline } from '@/components/language-switcher';
 import { localizePathname, stripLocalePrefix } from '@/i18n';
 import type { ResonanceRouteClientMessages } from '@/i18n/content/remaining-pages/rw02-route-client/types';
+import { PRODUCTION_HOSTNAMES } from '@/lib/analytics/google-analytics';
+import {
+  AuthenticatedPracticeReceipt,
+  trackAccountMenuStatsEntryClick,
+} from './authenticated-practice-receipt';
 
 // GA4 event helper — safe to call even if gtag isn't loaded
 function trackEvent(name: string, params?: Record<string, string | number | boolean>) {
   if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
     (window as any).gtag('event', name, params);
   }
+}
+
+function getInternalPracticePath(href: string): string | null {
+  if (typeof window === 'undefined') return null;
+
+  const destination = new URL(href, window.location.origin);
+  if (destination.origin !== window.location.origin) return null;
+  if (!/(?:^|\/)breathe\/[^/]+\/?$/.test(destination.pathname)) return null;
+
+  return destination.pathname;
+}
+
+function trackPracticeRouteClick(originPath: string, destinationPath: string) {
+  if (typeof window === 'undefined') return;
+  if (!PRODUCTION_HOSTNAMES.has(window.location.hostname)) return;
+
+  trackEvent('practice_route_click', {
+    origin_path: originPath,
+    destination_path: destinationPath,
+  });
 }
 
 // Lazy-load ParticleBackground to reduce initial bundle size
@@ -110,6 +135,13 @@ function durationLabel(seconds: number): string {
 
 type ThemePreference = 'system' | 'light' | 'dark';
 
+type AuthenticatedReceiptState = {
+  mode: ModeName;
+  sessionSeconds: number;
+  totalMinutes: number;
+  sessionsCompleted: number;
+};
+
 const toRgba = (hex: string, alpha: number) => {
   const sanitized = hex.replace('#', '');
   const bigint = parseInt(sanitized, 16);
@@ -152,6 +184,8 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     () => parseBoolParam(searchParams.get('eyesClosed')),
     [searchParams]
   );
+  const authenticatedReceiptPreview =
+    process.env.NODE_ENV !== 'production' && searchParams.get('practiceui') === 'receipt';
   // Diagnostic audio panel gate. URL-only so it can run against deployed
   // previews; never shipped to ordinary users. Also flips __RESONANCE_DEBUG
   // so AudioService.log() starts emitting context-lifecycle traces.
@@ -203,6 +237,8 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
   } = useConversionTriggers(isAuthenticated);
   const [showSignInSheet, setShowSignInSheet] = useState(false);
   const [showUserMenu, setShowUserMenu] = useState(false);
+  const [authenticatedReceipt, setAuthenticatedReceipt] = useState<AuthenticatedReceiptState | null>(null);
+  const [authenticatedReceiptPreviewDismissed, setAuthenticatedReceiptPreviewDismissed] = useState(false);
 
   // Client-side hydration check
   const [mounted, setMounted] = useState(false);
@@ -380,6 +416,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
   // would be called on every commit and double-count conversion_prompt_shown.
   // Reset to false only on a true start (not a pause→resume).
   const sessionPromptFiredRef = useRef<boolean>(false);
+  const authenticatedReceiptFiredRef = useRef<boolean>(false);
   // Lets the background/pagehide effect (defined above endSession) call the
   // latest endSession without a TDZ reference in its dependency array.
   const endSessionRef = useRef<
@@ -771,6 +808,15 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
           setLastSessionSeconds(seconds);
           onSessionComplete(seconds);
         }
+        if (isAuthenticated && seconds >= 60 && !authenticatedReceiptFiredRef.current) {
+          authenticatedReceiptFiredRef.current = true;
+          setAuthenticatedReceipt({
+            mode: activeMode,
+            sessionSeconds: seconds,
+            totalMinutes: newMinutes,
+            sessionsCompleted: newSessions,
+          });
+        }
         syncStats(newMinutes, newSessions, sessionDate);
       }
       trackEvent('breathing_session_end', {
@@ -806,6 +852,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
   const handleTogglePlay = useCallback(async () => {
     const audio = getAudioService();
     if (!isRunning) {
+      setAuthenticatedReceipt(null);
       // Resume audio context first (critical for mobile)
       const resumed = await audio.resume();
       if (!resumed) {
@@ -826,6 +873,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
         );
         setSessionCommittedSeconds(0);
         sessionPromptFiredRef.current = false; // fresh session → prompt may fire again
+        authenticatedReceiptFiredRef.current = false;
         trackEvent('breathing_session_start', { mode: activeMode, duration: selectedDuration ?? 0 });
       }
 
@@ -935,7 +983,16 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
 
   const handleModeSelect = useCallback(
     (mode: ModeName, options: { navigate?: boolean } = {}) => {
-      trackEvent('mode_switch', { from: activeMode, to: mode });
+      const shouldNavigate = options.navigate ?? true;
+      const slug = shouldNavigate ? modeToSlug[mode] : undefined;
+      const destinationPath = slug ? resolveClientHref(`/breathe/${slug}`) : pathname;
+
+      trackEvent('mode_switch', {
+        from: activeMode,
+        to: mode,
+        origin_path: pathname,
+        destination_path: destinationPath,
+      });
       setActiveMode(mode);
       setAiReasoning(null);
 
@@ -943,14 +1000,10 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
         setThemeColor(BREATHING_PATTERNS[mode].color);
       }
 
-      const shouldNavigate = options.navigate ?? true;
       if (shouldNavigate) {
-        const slug = modeToSlug[mode];
         if (slug) {
-          const baseTarget = `/breathe/${slug}`;
-          const target = resolveClientHref(baseTarget);
-          if (pathname !== target) {
-            router.push(target);
+          if (pathname !== destinationPath) {
+            router.push(destinationPath);
           }
         }
       }
@@ -1388,6 +1441,13 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
     // Running inside the real click keeps the user-activation needed for audio.
     const handleDelegatedClick = (event: MouseEvent) => {
       const target = event.target as Element | null;
+      const practiceLink = target?.closest?.('a[href]');
+      if (practiceLink instanceof HTMLAnchorElement) {
+        const destinationPath = getInternalPracticePath(practiceLink.href);
+        if (destinationPath) {
+          trackPracticeRouteClick(window.location.pathname, destinationPath);
+        }
+      }
       if (target?.closest?.('[data-resonance-start]')) {
         event.preventDefault();
         handleStartRequest();
@@ -1400,6 +1460,12 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       document.removeEventListener('click', handleDelegatedClick);
     };
   }, [isRunning, handleTogglePlay]);
+
+  useEffect(() => {
+    if (isAuthenticated) return;
+    authenticatedReceiptFiredRef.current = false;
+    setAuthenticatedReceipt(null);
+  }, [isAuthenticated]);
 
   const getPhaseLabel = (p: BreathingPhase) => {
     if (p === BreathingPhase.Idle) return getSafePhrase('phase.ready');
@@ -1575,7 +1641,13 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                     <div className="my-2 h-px bg-border/60" />
                     <Link
                       href={resolveClientHref("/stats")}
-                      onClick={() => setShowUserMenu(false)}
+                      onClick={() => {
+                        trackAccountMenuStatsEntryClick({
+                          mode: activeMode,
+                          sessionSeconds: 0,
+                        });
+                        setShowUserMenu(false);
+                      }}
                       className="flex w-full items-center gap-2 rounded-xl px-2 py-2 text-sm text-card-foreground transition-colors hover:bg-card"
                     >
                       <Sprout size={14} />
@@ -1661,6 +1733,44 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
           onClick={handleTogglePlay}
           interactionLabel={getSafePhrase(isRunning ? 'ui.pause_session' : 'ui.start_session')}
         />
+
+        {!embedMode && (
+          <AuthenticatedPracticeReceipt
+            open={
+              isAuthenticated &&
+              (authenticatedReceipt !== null ||
+                (authenticatedReceiptPreview && !authenticatedReceiptPreviewDismissed))
+            }
+            labels={{
+              sessionComplete: getSafePhrase('session.complete'),
+              yourPractice: getSafePhrase('ui.your_practice'),
+              close: getSafePhrase('ui.close'),
+            }}
+            summary={`${getSafePhrase('auth.total_minutes', {
+              n: authenticatedReceipt?.totalMinutes ?? (authenticatedReceiptPreview ? 24 : totalMinutes),
+            })} · ${getSafePhrase(
+              (authenticatedReceipt?.sessionsCompleted ?? (authenticatedReceiptPreview ? 7 : sessionsCompleted)) === 1
+                ? 'auth.session_count'
+                : 'auth.sessions_count',
+              {
+                n:
+                  authenticatedReceipt?.sessionsCompleted ??
+                  (authenticatedReceiptPreview ? 7 : sessionsCompleted),
+              },
+            )}`}
+            statsHref={resolveClientHref('/stats')}
+            onDismiss={() => {
+              setAuthenticatedReceipt(null);
+              setAuthenticatedReceiptPreviewDismissed(true);
+            }}
+            sessionMode={
+              authenticatedReceipt?.mode === initialMode && modeDisplayName
+                ? modeDisplayName
+                : BREATHING_PATTERNS[authenticatedReceipt?.mode ?? activeMode].name
+            }
+            sessionSeconds={authenticatedReceipt?.sessionSeconds ?? 300}
+          />
+        )}
 
         {/* Duration chips — visible before session starts */}
         {!isRunning && (

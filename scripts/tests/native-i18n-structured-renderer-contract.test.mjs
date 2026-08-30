@@ -119,7 +119,10 @@ test("native locale seeds client phrases and localized navigation before hydrati
     /setRuntimeLocale\(locale \?\? detectRuntimeLocale\(\)\)/,
   );
   assert.match(source, /localizedRoutePathSet\.has\(routePath\)/);
-  assert.match(source, /const target = resolveClientHref\(baseTarget\)/);
+  assert.match(
+    source,
+    /const destinationPath = slug \? resolveClientHref\(`\/breathe\/\$\{slug\}`\) : pathname/,
+  );
   assert.match(source, /href=\{resolveClientHref\("\/stats"\)\}/);
   assert.match(source, /data-runtime-locale=\{runtimePhrases\.locale\}/);
 });
