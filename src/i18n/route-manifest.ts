@@ -164,7 +164,7 @@ function defineRoute<const Id extends string, const Path extends string>(
 }
 
 /**
- * The complete current page-route surface: 60 static routes plus the one
+ * The complete current page-route surface: 61 static routes plus the one
  * dynamic `/embed/[slug]` exception. This file is intentionally independent of
  * the preservation catalog so it remains safe to import in client code.
  */
@@ -481,6 +481,13 @@ export const NATIVE_ROUTE_MANIFEST = Object.freeze([
     id: "privacy",
     path: "/privacy",
     translatedStatus: "cutover-ready",
+  }),
+  defineRoute({
+    id: "recommend",
+    path: "/recommend",
+    indexable: false,
+    catalogAvailable: false,
+    publication: "english-only",
   }),
   defineRoute({
     id: "sensory-studio",

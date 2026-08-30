@@ -16,14 +16,14 @@ This is a repository snapshot only. It does not change routing, metadata, sitema
 
 | Measure | Count |
 |---|---:|
-| Static English page routes in the app | 60 |
+| Static English page routes in the app | 61 |
 | Dynamic page patterns outside the static inventory | 1 |
 | English sitemap URLs | 56 |
 | English-only sitemap routes | 1 |
 | English routes with all five locale variants | 55 |
 | Sitemap URLs total | 331 |
-| Explicit noindex static routes | 4 |
-| Static routes excluded from the sitemap | 4 |
+| Explicit noindex static routes | 5 |
+| Static routes excluded from the sitemap | 5 |
 | MassTranslate catalog pages | 59 |
 | Catalog route artifacts | 295 |
 | Current source placements | 7012 |
@@ -51,6 +51,7 @@ The current multiplier is therefore 55 translated English routes × 5 locale var
 | `/brand-lab` | noindex | excluded | none | yes | sitemap-excluded |
 | `/languages` | index (explicit) | included | none | yes | English-only; catalog has unpublished locale files |
 | `/og-preview` | noindex | excluded | none | yes | sitemap-excluded |
+| `/recommend` | noindex | excluded | none | no | sitemap-excluded; not in catalog |
 | `/sensory-studio` | noindex | excluded | none | no | sitemap-excluded; not in catalog |
 | `/stats` | noindex | excluded | none | yes | sitemap-excluded |
 
@@ -117,6 +118,7 @@ The current multiplier is therefore 55 translated English routes × 5 locale var
 | `/og-preview` | `src/app/(site-en)/og-preview/page.tsx` | noindex | no | no | no | no | no | no | yes | sitemap-excluded |
 | `/physiological-sigh-panic-attack` | `src/app/(site-en)/physiological-sigh-panic-attack/page.tsx` | index (default) | yes | yes | yes | yes | yes | yes | yes | - |
 | `/privacy` | `src/app/(site-en)/privacy/page.tsx` | index (default) | yes | yes | yes | yes | yes | yes | yes | - |
+| `/recommend` | `src/app/(site-en)/recommend/page.tsx` | noindex | no | no | no | no | no | no | no | sitemap-excluded; not in catalog |
 | `/sensory-studio` | `src/app/(site-en)/sensory-studio/page.tsx` | noindex | no | no | no | no | no | no | no | sitemap-excluded; not in catalog |
 | `/stats` | `src/app/(site-en)/stats/page.tsx` | noindex | no | no | no | no | no | no | yes | sitemap-excluded |
 | `/support` | `src/app/(site-en)/support/page.tsx` | index (default) | yes | yes | yes | yes | yes | yes | yes | - |
@@ -209,7 +211,7 @@ A `yes` in the route matrix means an artifact exists, not that every placement t
 
 ## App, sitemap, and catalog discrepancies
 
-- App static routes absent from the catalog: `/sensory-studio`.
+- App static routes absent from the catalog: `/recommend`, `/sensory-studio`.
 - Catalog routes absent from the static app: none.
 - English sitemap routes absent from the catalog: none.
 - Catalog routes absent from the English sitemap: `/brand-lab`, `/og-preview`, `/stats`.
@@ -234,7 +236,7 @@ The groups below separate live coupling from migration provenance and historical
 | Evidence | Dependency / cutover implication |
 |---|---|
 | `next.config.js:189` | Keeps locale-prefix stripping only in the legacy proxy build mode; native serving modes release those paths to the App Router. |
-| `src/lib/seo/sitemap-routes.mjs:13` | Owns the five proxy prefixes, manufactures locale URLs/hreflang, and keeps `/languages` English-only. |
+| `src/lib/seo/sitemap-routes.mjs:14` | Owns the five proxy prefixes, manufactures locale URLs/hreflang, and keeps `/languages` English-only. |
 | `src/lib/seo/sitemap-routes.ts:6` | Typed adapter exposes proxy-specific sitemap constants and URL classification. |
 | `src/app/sitemap.xml/route.ts:5` | Publishes locale-prefixed URLs even though the current Next.js app has no native locale route tree. |
 | `scripts/ping-sitemap.mjs:11` | Builds the canonical URL allowlist used to fail closed when deriving changed-route IndexNow submissions; the legacy-named constant now represents the five published native locale prefixes. |
@@ -341,7 +343,7 @@ The groups below separate live coupling from migration provenance and historical
 
 | Evidence | Dependency / cutover implication |
 |---|---|
-| `docs/SEO-EXPERIMENTS.md:221` | Permanent experiment history for proxy defects, mitigations, and indexing outcomes. |
+| `docs/SEO-EXPERIMENTS.md:236` | Permanent experiment history for proxy defects, mitigations, and indexing outcomes. |
 | `docs/UX-BACKLOG.md:102` | Historical ownership and translation-coverage findings. |
 | `docs/qa-reports/traction-pages-2026-06-06.md:9` | Production evidence for delayed translation, partial coverage, and hydration failures. |
 | `docs/research/eeat-citations-2026-05.md:16` | A dated content-research decision record. |

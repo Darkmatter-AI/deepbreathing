@@ -49,7 +49,7 @@ test(
 test("Phase 0 route and sitemap baseline stays explicit", () => {
   const inventory = collectInventory(ROOT);
 
-  assert.equal(inventory.routes.length, 60);
+  assert.equal(inventory.routes.length, 61);
   assert.deepEqual(
     inventory.dynamicPages.map(({ route, robots }) => ({ route, robots })),
     [{ route: "/embed/[slug]", robots: "noindex" }],
@@ -68,11 +68,11 @@ test("Phase 0 route and sitemap baseline stays explicit", () => {
 
   assert.deepEqual(
     inventory.routes.filter((route) => route.sitemapExcluded).map((route) => route.route),
-    ["/brand-lab", "/og-preview", "/sensory-studio", "/stats"],
+    ["/brand-lab", "/og-preview", "/recommend", "/sensory-studio", "/stats"],
   );
   assert.deepEqual(
     inventory.routes.filter((route) => route.robots === "noindex").map((route) => route.route),
-    ["/brand-lab", "/og-preview", "/sensory-studio", "/stats"],
+    ["/brand-lab", "/og-preview", "/recommend", "/sensory-studio", "/stats"],
   );
   assert.deepEqual(
     inventory.routes.filter((route) => route.englishOnly).map((route) => route.route),
@@ -93,7 +93,7 @@ test("final catalog covers all currently translated sitemap routes", () => {
   }
 
   assert.deepEqual(inventory.discrepancies, {
-    appStaticNotCatalog: ["/sensory-studio"],
+    appStaticNotCatalog: ["/recommend", "/sensory-studio"],
     catalogNotAppStatic: [],
     sitemapEnglishNotCatalog: [],
     catalogNotSitemapEnglish: ["/brand-lab", "/og-preview", "/stats"],

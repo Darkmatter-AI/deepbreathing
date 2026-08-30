@@ -42,9 +42,9 @@ import { collectInventory } from "../i18n/build-native-i18n-inventory.mjs";
 const STATIC_ROUTES = NATIVE_ROUTE_MANIFEST.filter((route) => !route.dynamic);
 const DYNAMIC_ROUTES = NATIVE_ROUTE_MANIFEST.filter((route) => route.dynamic);
 
-test("manifest pins the 60 static routes and dynamic embed exception", () => {
-  assert.equal(NATIVE_ROUTE_MANIFEST.length, 61);
-  assert.equal(STATIC_ROUTES.length, 60);
+test("manifest pins the 61 static routes and dynamic embed exception", () => {
+  assert.equal(NATIVE_ROUTE_MANIFEST.length, 62);
+  assert.equal(STATIC_ROUTES.length, 61);
   assert.deepEqual(
     DYNAMIC_ROUTES.map(({ path, kind, indexable }) => ({
       path,
@@ -77,7 +77,7 @@ test("publication intent preserves the complete public route matrix", () => {
   assert.equal(
     STATIC_ROUTES.filter((route) => route.publicationIntent[DEFAULT_LOCALE])
       .length,
-    57,
+    58,
   );
 
   for (const locale of TRANSLATED_LOCALES) {
@@ -96,7 +96,7 @@ test("publication intent preserves the complete public route matrix", () => {
         .length,
     0,
   );
-  assert.equal(intendedUrlCount, 337);
+  assert.equal(intendedUrlCount, 338);
 
   assert.deepEqual(
     STATIC_ROUTES.filter((route) =>
@@ -118,7 +118,7 @@ test("publication intent preserves the complete public route matrix", () => {
 test("manifest records indexability independently of public route availability", () => {
   assert.deepEqual(
     STATIC_ROUTES.filter((route) => !route.indexable).map(({ path }) => path),
-    ["/brand-lab", "/og-preview", "/sensory-studio", "/stats"],
+    ["/brand-lab", "/og-preview", "/recommend", "/sensory-studio", "/stats"],
   );
 
   const stats = getNativeRouteById("stats");
@@ -133,7 +133,7 @@ test("manifest records indexability independently of public route availability",
   assert.equal(
     STATIC_ROUTES.filter((route) => route.localizedHandler === "catch-all")
       .length,
-    57,
+    58,
   );
   assert.ok(
     SUPPORTED_LOCALES.every((locale) => stats.publicationIntent[locale]),
@@ -149,7 +149,7 @@ test("catalog facts cover 59 static routes and every translated sitemap route", 
     STATIC_ROUTES.filter((route) => !route.catalogAvailable).map(
       ({ path }) => path,
     ),
-    ["/sensory-studio"],
+    ["/recommend", "/sensory-studio"],
   );
   assert.equal(getNativeRouteByPath("/embed/box")?.catalogAvailable, false);
 

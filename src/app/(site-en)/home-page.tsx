@@ -654,6 +654,13 @@ export function HomePage({
           >
             {content.footer.languagesLink}
           </Link>
+          {" · "}
+          <a
+            href="/llms.txt"
+            className="underline underline-offset-2 hover:text-foreground"
+          >
+            llms.txt
+          </a>
         </p>
       </footer>
     </main>

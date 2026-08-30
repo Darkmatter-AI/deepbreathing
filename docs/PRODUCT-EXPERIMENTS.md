@@ -23,6 +23,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-08-30 | [Assistant recommendation handoff instrumentation](#2026-08-30-assistant-recommendation-handoff-instrumentation) | 🔄 Implemented in PR [#72](https://github.com/Darkmatter-AI/deepbreathing/pull/72) — live receipt pending |
 | 2026-08-29 | [App Store promotion rollout and acquisition instrumentation](#2026-08-29-app-store-promotion-rollout-and-acquisition-instrumentation) | 🔄 Implemented locally — deployment pending |
 | 2026-07-27 | [Restore mount-time GA4 event queue](#2026-07-27-restore-mount-time-ga4-event-queue) | 🌙 Implemented locally — unshipped Night Shift measurement repair |
 | 2026-07-20 | [Authenticated `/stats` reach instrumentation](#2026-07-20-authenticated-stats-reach-instrumentation) | 🔄 Implemented — PR [#53](https://github.com/Darkmatter-AI/deepbreathing/pull/53); first mature read 2026-07-29 |
@@ -54,6 +55,25 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 ---
 
 ## Active Experiments
+
+### 2026-08-30: Assistant recommendation handoff instrumentation
+
+**Observed baseline:** The custom `DBE Channels (AI consolidated)` group can estimate broad assistant traffic, but it cannot distinguish a deliberate recommendation handoff from an untagged citation or referral. There is no dedicated event for the new recommendation surface, so its viewed-to-session-start funnel is not measurable before this release.
+
+**Hypothesis:** An explicit, allowlisted assistant handoff marker and a once-per-browser-session landing event will create a trustworthy denominator for assistant-referred starts without contaminating ordinary `/recommend` visits or duplicating standard page views.
+
+**Exact change:** On the production `/recommend` route, emit `agent_handoff_landing` once per browser session only when `agent_handoff=assistant` is present. Preserve allowlisted `utm_source`, `utm_medium`, and `utm_campaign` values through the selected exercise link. Plain, invalid, repeated, preview, origin, and localhost visits emit nothing and receive canonical exercise links without referral parameters. The event includes only `handoff_agent=assistant` and `handoff_surface=recommend`; it contains no PII or arbitrary query values.
+
+**Pre-committed success criteria:**
+
+- Instrumentation passes when a marked production visit produces exactly one `agent_handoff_landing`, a second marked visit in the same browser session produces none, and a plain production visit produces none.
+- Referral integrity passes when the selected exercise retains only the allowlisted marker and UTM fields and `breathing_session_start` remains the existing downstream event.
+- Fail the instrumentation if any non-production or unmarked visit emits the event, if arbitrary query values enter GA4, or if one browser session emits duplicate landing events.
+- Evaluate acquisition only after at least 100 valid handoff users. Success requires at least a 30% handoff-to-session-start rate; failure is below 20%; results between those thresholds or below the user gate are inconclusive.
+
+**Measure-after:** Immediate technical receipt after the authorized production deployment. Product outcome on 2026-09-13 or once 100 valid handoff users are available, whichever is later.
+
+**Status:** 🔄 Implemented in PR [#72](https://github.com/Darkmatter-AI/deepbreathing/pull/72). Production deployment authorized on 2026-08-30; live event receipt pending.
 
 ### 2026-08-29: App Store promotion rollout and acquisition instrumentation
 
