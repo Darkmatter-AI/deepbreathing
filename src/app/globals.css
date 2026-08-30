@@ -228,6 +228,23 @@ body[data-resonance-immersive="true"] {
   transition: box-shadow 250ms ease;
 }
 
+.app-store-promotion {
+  border-color: transparent;
+  background:
+    linear-gradient(hsl(var(--card)), hsl(var(--card))) padding-box,
+    linear-gradient(
+        110deg,
+        rgba(255, 145, 110, 0.95),
+        rgba(232, 50, 96, 0.9),
+        rgba(132, 105, 255, 0.85)
+      )
+      border-box;
+  box-shadow:
+    -12px 0 38px rgba(255, 120, 92, 0.15),
+    12px 0 38px rgba(132, 105, 255, 0.16),
+    0 24px 60px hsl(var(--shadow) / 0.18);
+}
+
 .glow-card-inward {
   overflow: hidden;
   box-shadow: none;

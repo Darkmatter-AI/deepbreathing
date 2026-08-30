@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import { AppStorePromotion } from "@/components/app-store-promotion";
 import { FadingHeroTitle } from "@/components/breathe/fading-hero-title";
 import { BREATHING_PATTERNS } from "@/components/resonance/constants";
 import { JsonLd } from "@/components/seo/json-ld";
@@ -258,6 +259,8 @@ export function PatternPage({
       </section>
 
       <section className="relative z-10 mx-auto mt-6 w-full max-w-6xl space-y-12 rounded-t-[48px] bg-background/95 px-4 pb-20 pt-16 backdrop-blur-sm sm:px-6 lg:px-8">
+        {!renderContext ? <AppStorePromotion variant="strip" /> : null}
+
         {page.meta.dateModified && (
           <p className="text-xs text-muted-foreground -mt-6" data-i18n="credentials">
             <LocalizedDate

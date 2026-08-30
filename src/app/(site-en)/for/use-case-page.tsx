@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { AppStorePromotion } from "@/components/app-store-promotion";
 import { FadingHeroTitle } from "@/components/breathe/fading-hero-title";
 import { BREATHING_PATTERNS } from "@/components/resonance/constants";
 import { JsonLd } from "@/components/seo/json-ld";
@@ -375,6 +376,8 @@ export function UseCasePage({
             : undefined
         }
       >
+        {!renderContext ? <AppStorePromotion variant="strip" /> : null}
+
         {/* Back to Holiday Hub link */}
         {isHolidayPage && (
           <div className="-mt-4 mb-2">

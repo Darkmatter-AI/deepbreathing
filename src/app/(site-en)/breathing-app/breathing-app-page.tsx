@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { AppStorePromotion } from "@/components/app-store-promotion";
 import { JsonLd } from "@/components/seo/json-ld";
 import sourceContent from "@/i18n/content/bespoke/rw03-app-pages/source/breathing-app.json";
 import type {
@@ -102,6 +103,8 @@ export function BreathingAppPage({
           {copy("hero.intro")}
         </p>
       </header>
+
+      {!renderContext ? <AppStorePromotion variant="landing" /> : null}
 
       <section className="mt-10 grid gap-6 md:grid-cols-2">
         <div className="glow-card rounded-[32px] border border-border bg-card p-6">
