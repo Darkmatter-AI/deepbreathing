@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 
+import { AppStorePromotion } from "@/components/app-store-promotion";
 import { BREATHING_PATTERNS } from "@/components/resonance/constants";
 import { ModeName } from "@/components/resonance/types";
 import { JsonLd } from "@/components/seo/json-ld";
@@ -215,6 +216,10 @@ export function BreathingVisualizerPage({
       </section>
 
       <div className="relative z-10 mx-auto w-full max-w-6xl rounded-t-[48px] bg-background/95 px-4 pb-16 pt-16 backdrop-blur-sm sm:px-6 lg:px-8">
+        {!renderContext ? (
+          <AppStorePromotion className="mb-12" variant="strip" />
+        ) : null}
+
         {/* Voice search / Quick answer */}
         <div className="mb-12 glow-card rounded-[32px] border border-border bg-card p-6">
           <h2 className="text-2xl font-semibold text-card-foreground">

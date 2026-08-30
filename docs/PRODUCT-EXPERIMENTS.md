@@ -23,6 +23,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-08-29 | [App Store promotion rollout and acquisition instrumentation](#2026-08-29-app-store-promotion-rollout-and-acquisition-instrumentation) | 🔄 Implemented locally — deployment pending |
 | 2026-07-27 | [Restore mount-time GA4 event queue](#2026-07-27-restore-mount-time-ga4-event-queue) | 🌙 Implemented locally — unshipped Night Shift measurement repair |
 | 2026-07-20 | [Authenticated `/stats` reach instrumentation](#2026-07-20-authenticated-stats-reach-instrumentation) | 🔄 Implemented — PR [#53](https://github.com/Darkmatter-AI/deepbreathing/pull/53); first mature read 2026-07-29 |
 | 2026-07-12 | [TestFlight native-sheet and practice-identity pass](#2026-07-12-testflight-native-sheet-and-practice-identity-pass) | 🔄 Implemented locally — physical build validation pending |
@@ -53,6 +54,27 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 ---
 
 ## Active Experiments
+
+### 2026-08-29: App Store promotion rollout and acquisition instrumentation
+
+**Observed baseline:** The website had no consistent native-app promotion across its visualizer pages and no dedicated event for App Store promotion exposure or intent. GA4 enhanced measurement may record generic outbound clicks, but it does not provide a reliable exposure denominator or distinguish the landing card from the visualizer-page strip. The dedicated baseline is therefore uninstrumented, not zero user interest.
+
+**Hypothesis:** A visually distinct App Store card immediately after the visualizer, plus a fuller card on `/breathing-app`, will make the better native experience discoverable after users have already received value. Recording views and clicks with placement, origin page, and allowlisted campaign context will reveal which pages and placements earn intent without collecting arbitrary query parameters or raw advertising click IDs.
+
+**Exact change:** Add the official App Store badge inside an Aurora-edge card on the homepage, 14 breathing-technique pages, 18 use-case pages, four resonance guides, and four dedicated visualizer/timer pages, covering 41 public English visualizer routes through shared templates. Add the larger landing treatment below the introduction on `/breathing-app`. Preserve immediate visualizer actions and exclude iframe embeds, internal tools, and localized routes until translated copy exists. Emit `app_store_promotion_view` once when at least half of the promotion enters the viewport and emit `app_store_click` on the App Store badge. Both events include `app_store_placement`, `origin_path`, the App Store link fields, allowlisted UTM values, and presence-only flags for advertising click IDs. Restrict emission to the production host. Register the event-scoped GA4 custom dimension `App Store placement`; use GA4's standard Page path dimension for origin reporting. Support App Store Connect campaign links when `NEXT_PUBLIC_APP_STORE_PROVIDER_TOKEN` is configured, with a stable page-specific campaign token of at most 30 characters. Add the metric to the read-only three-day channel review.
+
+**Pre-committed success criteria:**
+- Instrumentation passes if the first mature three-day post-deploy window contains `app_store_promotion_view` on eligible pages, every recorded placement is `landing` or `strip`, App Store clicks resolve to `apps.apple.com`, Page path identifies the origin, and preview or localhost traffic produces no events.
+- Reporting is usable when the automation can report view users, click users, and click users divided by view users for the same complete window, with placement and meaningful Page path breakdowns.
+- Treat results below 20 promotion-view users as directional and wait for at least 100 promotion-view users for a product verdict.
+- ✅ Success if exposed-user click-through rate is at least 5% at 100 promotion-view users and the matched `page_viewed_breathing` to `breathing_session_start` rate does not decline by more than 5 percentage points.
+- ❌ Failed if exposed-user click-through rate is at most 2% at 100 promotion-view users, or the matched breathing-session start rate declines by more than 10 percentage points.
+- 🟡 Mixed if click-through rate is between 2% and 5%, or strong intent is concentrated on only one placement or page family. Do not mark `app_store_click` as a key event without a separate product decision.
+- Fail the instrumentation if eligible production pages have page views but no promotion views after the first mature window, if arbitrary query parameters or raw click IDs appear in event data, or if the event duplicates from a single exposure.
+
+**Measure-after:** First technical read immediately after an authorized production deployment. First data read after three complete days plus the normal GA4 maturity lag.
+
+**Status:** 🔄 Implemented locally and unshipped. The GA4 `App Store placement` custom dimension and three-day automation review are configured. The App Store Connect provider token is not configured, so Apple campaign-link attribution is not yet active. No deployment was performed.
 
 ### 2026-07-27: Restore Mount-Time GA4 Event Queue
 
