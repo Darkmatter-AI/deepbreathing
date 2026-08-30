@@ -1810,33 +1810,6 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                   )}
                 </div>
 
-                <div className="rounded-2xl bg-background/50 p-3 text-sm text-muted-foreground shadow-inner dark:bg-background/20">
-                  <div className="flex items-center justify-between gap-3">
-                    <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">{getSafePhrase('ui.session_length')}</p>
-                    <p className="text-xs text-muted-foreground">{durationSummary}</p>
-                  </div>
-                  <div className="mt-3 flex flex-wrap gap-2">
-                    {durationOptions.map((option) => {
-                      const isActive = selectedDuration === option.value;
-                      return (
-                        <button
-                          key={option.value ?? 'open'}
-                          onClick={() => handleDurationSelect(option.value)}
-                          disabled={isRunning}
-                          className={`rounded-xl px-3 py-1.5 text-xs font-medium transition ${isActive
-                            ? 'bg-card text-card-foreground shadow-sm'
-                            : 'text-muted-foreground hover:bg-card/60 dark:hover:bg-card/30'
-                            } disabled:cursor-not-allowed disabled:opacity-60`}
-                        >
-                          {option.label}
-                        </button>
-                      );
-                    })}
-                  </div>
-                  {isRunning && (
-                    <p className="mt-2 text-xs text-muted-foreground">{getSafePhrase('ui.pause_to_change')}</p>
-                  )}
-                </div>
               </div>
               {aiReasoning && (
                 <div className="rounded-xl border border-border/70 bg-card/70 p-4 text-sm text-card-foreground shadow-sm dark:bg-card/30">
