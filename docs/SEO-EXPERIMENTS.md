@@ -18,6 +18,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-08-30 | [Agent-Handoff Discoverability + Attribution](#2026-08-30-agent-handoff-discoverability--attribution) | 🧪 Release candidate — deployment authorized |
 | 2026-07-27 | [Index Coverage Hygiene + Canonical-Hijack Recovery](#2026-07-27-index-coverage-hygiene--canonical-hijack-recovery) | 🔄 Implemented |
 | 2026-07-22 | [First-Load-JS Webpack Experiment (PR #31) — Production Outage Post-Mortem + Removal](#2026-07-22-first-load-js-webpack-experiment-pr-31--production-outage-post-mortem--removal) | ❌ Failed |
 | 2026-07-21 | [IndexNow Changed-Canonical-URL Submission](#2026-07-21-indexnow-changed-canonical-url-submission) | 🔄 Implemented |
@@ -92,6 +93,20 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 ---
 
 ## Active Experiments
+
+### 2026-08-30: Agent-Handoff Discoverability + Attribution
+
+**Context and baseline.** An older analytics snapshot recorded approximately 32 AI-assistant sessions per week, but that baseline is stale and the broad channel cannot isolate explicit handoffs. The March 2026 `llms.txt` experiment failed its organic-search goal, while its value for assistant discovery was not measured.
+
+**Hypothesis.** Ordinary HTML discovery, safe canonical recommendations, and explicit handoff attribution will make assistant referrals measurable and improve useful session starts.
+
+**Pre-commit gates.** A valid `agent_handoff=assistant` marker emits the landing event once per browser session. Plain or invalid markers add no event or UTM parameters. `llms.txt` contains no duration query links, and its safety copy avoids absolute medical claims. `/recommend` remains `noindex` and excluded from the sitemap.
+
+**Outcome criteria.** After at least 100 valid handoff users, success requires at least a 30% page-view-to-session-start rate and citation by at least 2 of 24 manual assistant probes. Failure is a start rate below 20% or zero citations across 24 probes. The result is inconclusive below 100 valid users or with an unresolved attribution confound.
+
+**Measure-after:** 2026-09-13 or once 100 valid handoff users are available, whichever is later.
+
+**Status.** 🧪 Release candidate. Production deployment authorized on 2026-08-30; live verification pending.
 
 ### 2026-07-27: Index Coverage Hygiene + Canonical-Hijack Recovery
 

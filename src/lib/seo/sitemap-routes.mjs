@@ -8,6 +8,7 @@ export const DEFAULT_EXCLUDED_ROUTES = [
   '/brand-lab',
   '/sensory-studio',
   '/stats',
+  '/recommend',
 ];
 export const DEFAULT_LOCALE_PREFIXES = [];
 export const EDGE_PROXY_LOCALE_PREFIXES = ['es', 'pt', 'fr', 'de', 'ja'];
