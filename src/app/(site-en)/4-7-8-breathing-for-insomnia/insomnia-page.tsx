@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { AppStorePromotion } from "@/components/app-store-promotion";
 import { JsonLd } from "@/components/seo/json-ld";
 import sourceContent from "@/i18n/content/bespoke/insomnia-4-7-8/source.json";
 import type {
@@ -161,6 +162,10 @@ export function InsomniaPage({
       </section>
 
       <div className="relative z-10 mx-auto w-full max-w-6xl rounded-t-[48px] bg-background/95 px-4 pb-16 pt-16 backdrop-blur-sm sm:px-6 lg:px-8">
+        {!renderContext ? (
+          <AppStorePromotion className="mb-12" variant="strip" />
+        ) : null}
+
         <p className="mb-6 text-xs text-muted-foreground">{copy("updated")}</p>
 
         <section className="grid gap-6 md:grid-cols-2">

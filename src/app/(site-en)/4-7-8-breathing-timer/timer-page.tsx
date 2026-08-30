@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 
+import { AppStorePromotion } from "@/components/app-store-promotion";
 import { ModeName } from "@/components/resonance/types";
 import { JsonLd } from "@/components/seo/json-ld";
 import sourceContent from "@/i18n/content/bespoke/timer-4-7-8/source.json";
@@ -203,6 +204,10 @@ export function TimerPage({
       </section>
 
       <div className="relative z-10 mx-auto w-full max-w-6xl rounded-t-[48px] bg-background/95 px-4 pb-16 pt-16 backdrop-blur-sm sm:px-6 lg:px-8">
+        {!renderContext ? (
+          <AppStorePromotion className="mb-12" variant="strip" />
+        ) : null}
+
         <p className="mb-6 text-xs text-muted-foreground">{copy("updated")}</p>
         <div className="mb-8 glow-card rounded-[32px] border border-border bg-card p-6">
           <h2 className="text-2xl font-semibold text-card-foreground">{copy("quickAnswer.title")}</h2>

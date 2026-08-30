@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { AppStorePromotion } from "@/components/app-store-promotion";
 import { ModeName } from "@/components/resonance/types";
 import { JsonLd } from "@/components/seo/json-ld";
 import type {
@@ -474,6 +475,10 @@ export function ResonanceGuidePage({
       </section>
 
       <div className="relative z-10 mx-auto w-full max-w-6xl rounded-t-[48px] bg-background/95 px-4 pb-16 pt-16 backdrop-blur-sm sm:px-6 lg:px-8">
+        {!renderContext ? (
+          <AppStorePromotion className="mb-12" variant="strip" />
+        ) : null}
+
         <p className="mb-6 text-xs text-muted-foreground">{content.updated}</p>
 
         {content.alert ? (

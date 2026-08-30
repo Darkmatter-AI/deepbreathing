@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
+import { AppStorePromotion } from "@/components/app-store-promotion";
 import { FadingHeroTitle } from "@/components/breathe/fading-hero-title";
 import { JsonLd } from "@/components/seo/json-ld";
 import { LanguageSwitcherFooter } from "@/components/language-switcher-footer-lazy";
@@ -275,6 +276,8 @@ export function HomePage({
       </section>
 
       <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col gap-16 px-4 py-16 sm:px-6 lg:px-8">
+        {!renderContext ? <AppStorePromotion variant="strip" /> : null}
+
         <section className="text-center">
           <h2 className="text-3xl font-semibold text-card-foreground">
             {content.sections.precision.title}
