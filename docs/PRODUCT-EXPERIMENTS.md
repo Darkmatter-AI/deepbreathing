@@ -23,7 +23,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
-| 2026-08-30 | [Assistant recommendation handoff instrumentation](#2026-08-30-assistant-recommendation-handoff-instrumentation) | 🧪 Release candidate — deployment authorized |
+| 2026-08-30 | [Assistant recommendation handoff instrumentation](#2026-08-30-assistant-recommendation-handoff-instrumentation) | 🔄 Implemented in PR [#72](https://github.com/Darkmatter-AI/deepbreathing/pull/72) — live receipt pending |
 | 2026-08-29 | [App Store promotion rollout and acquisition instrumentation](#2026-08-29-app-store-promotion-rollout-and-acquisition-instrumentation) | 🔄 Implemented locally — deployment pending |
 | 2026-07-27 | [Restore mount-time GA4 event queue](#2026-07-27-restore-mount-time-ga4-event-queue) | 🌙 Implemented locally — unshipped Night Shift measurement repair |
 | 2026-07-20 | [Authenticated `/stats` reach instrumentation](#2026-07-20-authenticated-stats-reach-instrumentation) | 🔄 Implemented — PR [#53](https://github.com/Darkmatter-AI/deepbreathing/pull/53); first mature read 2026-07-29 |
@@ -73,7 +73,7 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 
 **Measure-after:** Immediate technical receipt after the authorized production deployment. Product outcome on 2026-09-13 or once 100 valid handoff users are available, whichever is later.
 
-**Status:** 🧪 Release candidate. Production deployment authorized on 2026-08-30; live event receipt pending.
+**Status:** 🔄 Implemented in PR [#72](https://github.com/Darkmatter-AI/deepbreathing/pull/72). Production deployment authorized on 2026-08-30; live event receipt pending.
 
 ### 2026-08-29: App Store promotion rollout and acquisition instrumentation
 

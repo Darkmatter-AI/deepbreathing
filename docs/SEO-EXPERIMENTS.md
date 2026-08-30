@@ -18,7 +18,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
-| 2026-08-30 | [Agent-Handoff Discoverability + Attribution](#2026-08-30-agent-handoff-discoverability--attribution) | 🧪 Release candidate — deployment authorized |
+| 2026-08-30 | [Agent-Handoff Discoverability + Attribution](#2026-08-30-agent-handoff-discoverability--attribution) | 🔄 Implemented in PR [#72](https://github.com/Darkmatter-AI/deepbreathing/pull/72) — production verification pending |
 | 2026-07-27 | [Index Coverage Hygiene + Canonical-Hijack Recovery](#2026-07-27-index-coverage-hygiene--canonical-hijack-recovery) | 🔄 Implemented |
 | 2026-07-22 | [First-Load-JS Webpack Experiment (PR #31) — Production Outage Post-Mortem + Removal](#2026-07-22-first-load-js-webpack-experiment-pr-31--production-outage-post-mortem--removal) | ❌ Failed |
 | 2026-07-21 | [IndexNow Changed-Canonical-URL Submission](#2026-07-21-indexnow-changed-canonical-url-submission) | 🔄 Implemented |
@@ -106,7 +106,7 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 
 **Measure-after:** 2026-09-13 or once 100 valid handoff users are available, whichever is later.
 
-**Status.** 🧪 Release candidate. Production deployment authorized on 2026-08-30; live verification pending.
+**Status.** 🔄 Implemented in PR [#72](https://github.com/Darkmatter-AI/deepbreathing/pull/72). Production deployment authorized on 2026-08-30; live verification pending.
 
 ### 2026-07-27: Index Coverage Hygiene + Canonical-Hijack Recovery
 
