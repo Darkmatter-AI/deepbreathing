@@ -23,6 +23,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-08-30 | [Guest completion provider-parity hotfix](#2026-08-30-guest-completion-provider-parity-hotfix) | 🔄 Implemented locally, approval pending |
 | 2026-08-30 | [Assistant recommendation handoff instrumentation](#2026-08-30-assistant-recommendation-handoff-instrumentation) | 🔄 Implemented in PR [#72](https://github.com/Darkmatter-AI/deepbreathing/pull/72) — live receipt pending |
 | 2026-08-29 | [App Store promotion rollout and acquisition instrumentation](#2026-08-29-app-store-promotion-rollout-and-acquisition-instrumentation) | 🔄 Implemented locally — deployment pending |
 | 2026-07-27 | [Restore mount-time GA4 event queue](#2026-07-27-restore-mount-time-ga4-event-queue) | 🌙 Implemented locally — unshipped Night Shift measurement repair |
@@ -55,6 +56,26 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 ---
 
 ## Active Experiments
+
+### 2026-08-30: Guest completion provider-parity hotfix
+
+**Observed baseline:** The live guest completion bucket is `loss_aversion` at 100%. A rendered one-minute signed-out completion shows Google and email only. The approved `keep_practice` Save-your-progress sheet contains both Apple and Google, but it is reachable only through its preview query or a stale persisted bucket. The earlier `keep_practice` conversion experiment failed at 8.37% intent (17/203 users); this hotfix does not relitigate that result.
+
+**Hypothesis:** Treating Apple and Google availability as a product-correctness requirement, rather than an experiment arm, ensures every eligible signed-out completion receives the approved Save-your-progress path without exposing the authenticated practice receipt. Re-bucketing returning visitors is required or the correction will not reach users persisted under the current storage key.
+
+**Exact change:** Restore `keep_practice` as the 100% guest completion variant and bump the conversion storage key from v5 to v6. This moves new and returning signed-out visitors to the existing localized `KeepPracticeSheet`, whose signup actions are Apple, Google, and email. Keep `loss_aversion` available but dormant for historical comparison. Do not change authenticated receipt gating, OAuth mechanics, or event names.
+
+**Pre-committed success criteria:**
+
+- Product correctness passes when a real signed-out timed completion renders the Save-your-progress sheet with visible Apple and Google actions and no authenticated “Your practice” receipt.
+- Returning-visitor migration passes when a visitor persisted under the v5 `loss_aversion` bucket receives the v6 `keep_practice` assignment without manual storage clearing.
+- Auth separation passes when a signed-in completion of at least 60 seconds renders only the authenticated practice receipt and no guest signup sheet.
+- Fail the hotfix if any ordinary signed-out completion still renders the Google-only Prompt C path, either social provider is missing, or a signed-out visitor can see the authenticated receipt.
+- Conversion rate is a guardrail, not the reason for this correction. Report weekly production-account signups and prompt-to-signup intent after the normal GA4 maturity lag, but do not override provider parity without a new product decision.
+
+**Measure-after:** Immediate rendered browser verification before shipping and again on production after authorization. First guardrail read after seven complete days plus the normal two-day GA4 maturity lag.
+
+**Status:** 🔄 Implemented locally. Frontend approval and production deployment pending.
 
 ### 2026-08-30: Assistant recommendation handoff instrumentation
 

@@ -5,8 +5,8 @@
  *
  *  - "control"      = the existing SignInSheet ("Save your progress")
  *  - "social_stats" = Conversion Prompt B (social proof + personal stats) — paused 2026-06-14
- *  - "loss_aversion" = Conversion Prompt C (real session card + loss-aversion copy) — ACTIVE
- *  - "keep_practice" = gain-framed session receipt + cumulative practice — failed 2026-08-03
+ *  - "loss_aversion" = Conversion Prompt C (real session card + loss-aversion copy) — paused
+ *  - "keep_practice" = provider-complete Save your progress receipt — ACTIVE
  *
  * The active challenger is determined by ACTIVE_CHALLENGER. Setting CHALLENGER_SHARE = 0
  * is the instant rollback to control; setting it to 1 ships the challenger to everyone.
@@ -26,10 +26,11 @@ export type ConversionVariant =
 /**
  * The currently active challenger variant. One line to swap challengers.
  *
- * 2026-08-03: restored "loss_aversion" after "keep_practice" failed at 8.37%
- * intent (17/203 users). Full rollback to control = CHALLENGER_SHARE = 0.
+ * 2026-08-30: restored "keep_practice" as a product-correctness fix so every
+ * signed-out completion offers both Apple and Google. Full rollback to control
+ * remains CHALLENGER_SHARE = 0.
  */
-export const ACTIVE_CHALLENGER: ConversionVariant = "loss_aversion";
+export const ACTIVE_CHALLENGER: ConversionVariant = "keep_practice";
 
 /**
  * Share of visitors bucketed into the active challenger.
@@ -45,9 +46,9 @@ export const CHALLENGER_SHARE = 1;
  */
 export const SOCIAL_STATS_SHARE = 1;
 
-// Bumped v4 → v5 on the 2026-08-03 rollback so returning visitors persisted as
-// "keep_practice" re-draw onto the restored Prompt C modal.
-const VARIANT_KEY = "resonance_conversion_variant_v5";
+// Bumped v5 → v6 so returning visitors persisted as "loss_aversion" re-draw
+// onto the provider-complete Save your progress prompt.
+const VARIANT_KEY = "resonance_conversion_variant_v6";
 
 function isVariant(v: unknown): v is ConversionVariant {
   return (

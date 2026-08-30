@@ -8,12 +8,13 @@ import path from "node:path";
 const ROOT = process.cwd();
 const VARIANT = path.join(ROOT, "src", "lib", "conversion", "variant.ts");
 const SHEET = path.join(ROOT, "src", "components", "auth", "loss-aversion-sign-in-sheet.tsx");
+const KEEP_SHEET = path.join(ROOT, "src", "components", "auth", "keep-practice-sheet.tsx");
 const PROMPT = path.join(ROOT, "src", "components", "auth", "session-complete-prompt.tsx");
 const RESONANCE = path.join(ROOT, "src", "components", "resonance", "Resonance.tsx");
 
 const read = (p) => fs.readFileSync(p, "utf8");
 
-test("variant.ts: loss_aversion is the active challenger at 100% share", () => {
+test("variant.ts: provider-complete keep_practice is the active guest completion at 100% share", () => {
   const src = read(VARIANT);
 
   assert.match(
@@ -21,11 +22,13 @@ test("variant.ts: loss_aversion is the active challenger at 100% share", () => {
     /export type ConversionVariant =[^;]*"loss_aversion_banner"/,
     "ConversionVariant union should include loss_aversion_banner (the shipped non-blocking banner)"
   );
-  // Pin the pre-registered rollback. Change this only after a later measured
-  // experiment selects a new active challenger.
   const active = src.match(/export const ACTIVE_CHALLENGER:\s*ConversionVariant\s*=\s*"([^"]+)"/);
   assert.ok(active, "ACTIVE_CHALLENGER should be declared with an explicit variant");
-  assert.equal(active[1], "loss_aversion", "the failed keep_practice variant should roll back to Prompt C");
+  assert.equal(
+    active[1],
+    "keep_practice",
+    "every signed-out completion should use the provider-complete Save your progress prompt"
+  );
   const union = [...src.matchAll(/\|\s*"([a-z_]+)"/g)].map((m) => m[1]);
   assert.ok(
     union.includes(active[1]),
@@ -51,12 +54,12 @@ test("variant.ts: loss_aversion is the active challenger at 100% share", () => {
   );
 });
 
-test("variant.ts: rollback storage key re-buckets returning visitors", () => {
+test("variant.ts: provider-parity storage key re-buckets returning visitors", () => {
   const src = read(VARIANT);
   assert.match(
     src,
-    /const VARIANT_KEY\s*=\s*"resonance_conversion_variant_v5"/,
-    "the rollback must bump the v4 key so returning keep_practice visitors re-bucket"
+    /const VARIANT_KEY\s*=\s*"resonance_conversion_variant_v6"/,
+    "the provider-parity hotfix must re-bucket returning loss_aversion visitors"
   );
   // The active key const must not still be the un-bumped key.
   assert.doesNotMatch(
@@ -64,6 +67,21 @@ test("variant.ts: rollback storage key re-buckets returning visitors", () => {
     /const VARIANT_KEY\s*=\s*"resonance_conversion_variant"\s*;/,
     "the active VARIANT_KEY const should no longer be the un-suffixed key"
   );
+});
+
+test("active guest completion sheet renders both Apple and Google signup actions", () => {
+  const prompt = read(PROMPT);
+  const sheet = read(KEEP_SHEET);
+
+  assert.match(
+    prompt,
+    /variant === "keep_practice"[\s\S]*?<KeepPracticeSheet/,
+    "the active keep_practice variant should route to KeepPracticeSheet"
+  );
+  assert.match(sheet, /provider:\s*"apple"/, "Apple signup should use the Apple provider");
+  assert.match(sheet, /t\("auth\.continue_apple"\)/, "Apple signup should be visible");
+  assert.match(sheet, /provider:\s*"google"/, "Google signup should use the Google provider");
+  assert.match(sheet, /t\("auth\.continue_google"\)/, "Google signup should be visible");
 });
 
 test("loss-aversion sheet fires signin_* events tagged variant: loss_aversion", () => {
