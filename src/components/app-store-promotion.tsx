@@ -119,10 +119,8 @@ export function AppStorePromotion({
     <section
       ref={sectionRef}
       aria-labelledby={`app-store-${variant}-title`}
-      className={`app-store-promotion glow-card rounded-[32px] border bg-card p-6 sm:p-8 ${
-        isLanding
-          ? "mt-8"
-          : "sm:flex sm:items-center sm:justify-between sm:gap-8"
+      className={`app-store-promotion glow-card rounded-[32px] border bg-card p-6 sm:p-8 lg:flex lg:items-center lg:justify-between lg:gap-8 ${
+        isLanding ? "mt-8" : ""
       } ${className ?? ""}`}
     >
       <div className="max-w-2xl">
@@ -143,7 +141,7 @@ export function AppStorePromotion({
         rel="noreferrer"
         onClick={handleAppStoreClick}
         aria-label="Download Deep Breathing on the App Store"
-        className="mt-5 inline-flex rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-4 focus-visible:ring-offset-background sm:mt-0 sm:shrink-0"
+        className="mt-6 inline-flex rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-4 focus-visible:ring-offset-background lg:mt-0 lg:shrink-0"
       >
         {/* Apple requires the official badge artwork to remain unmodified. */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
