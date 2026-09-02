@@ -22,6 +22,14 @@ if ! node_ok; then
   fi
 fi
 node -v; node_ok
+# Agent shells are non-login and use the base-image node; expose the nvm node 22 bin dir everywhere.
+if [ -s "$HOME/.nvm/nvm.sh" ]; then
+  . "$HOME/.nvm/nvm.sh"; NODE_BIN="$(dirname "$(nvm which 22)")"
+  for rc in "$HOME/.bashrc" "$HOME/.profile" "$HOME/.zshrc"; do
+    grep -q 'cursor-node22' "$rc" 2>/dev/null || printf '\nexport PATH="%s:$PATH" # cursor-node22\n' "$NODE_BIN" >> "$rc"
+  done
+  sudo ln -sf "$NODE_BIN/node" /usr/local/bin/node; sudo ln -sf "$NODE_BIN/npm" /usr/local/bin/npm; sudo ln -sf "$NODE_BIN/npx" /usr/local/bin/npx
+fi
 log "pnpm (corepack, version from package.json packageManager)"
 sudo corepack enable || true
 corepack prepare --activate
