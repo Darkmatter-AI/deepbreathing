@@ -63,3 +63,9 @@ Auth: `Authorization: Bearer $DKMT_CC_KEY`
 | `dkmt-cc note deep-breathing "text"` | Add a note |
 | `dkmt-cc pm deep-breathing` | PM digest (Linear + commits) |
 | `dkmt-cc whoami` | Check current user |
+
+## Cursor Cloud specific instructions
+- No Docker. Postgres 16 runs as a system service (postgres/postgres, db `deepbreathing`); `.cursor/start.sh` starts it, runs the better-auth CLI migration, and applies `src/lib/db/migrations/*.sql`. Production Neon is never reachable from here.
+- Node 22 + pnpm (version from `packageManager`). The web app runs in the `web-dev` terminal on :3000. Google OAuth and Resend keys are absent unless injected as Cloud Agent secrets; magic-link and Google sign-in will not complete, everything else works.
+- Verify with `pnpm test`; `pnpm build` runs the native-i18n `check:*` gates and the post-build SSR tests. Browser proof: `.cursor/skills/verify-deepbreathing` (Playwright Chromium is installed). WebAudio stays suspended in headless Chromium, so the orb's Start->Pause transition needs a headed run or an unlocked audio context.
+- Follow `CLAUDE.md`: read `docs/SEO-EXPERIMENTS.md` before any SEO change and log product changes in `docs/PRODUCT-EXPERIMENTS.md`.
