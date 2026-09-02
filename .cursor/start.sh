@@ -4,6 +4,7 @@ set -euo pipefail
 REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$REPO"
 DB_URL="postgres://postgres:postgres@127.0.0.1:5432/deepbreathing"
+[ -s "$HOME/.nvm/nvm.sh" ] && { . "$HOME/.nvm/nvm.sh"; nvm use 22 >/dev/null 2>&1 || true; }
 log() { printf '\n=== %s ===\n' "$*"; }
 
 log "Start PostgreSQL"
@@ -16,7 +17,7 @@ sudo -u postgres psql -tc "SELECT 1 FROM pg_database WHERE datname='deepbreathin
 
 log "better-auth schema (user/account/session/verification)"
 set -a; . ./.env.local; set +a
-pnpm dlx @better-auth/cli@1.6.27 migrate --yes --config src/lib/auth.ts || echo "better-auth migrate skipped (see output); auth pages may 500 until run"
+pnpm dlx @better-auth/cli@latest migrate --yes --config src/lib/auth.ts || echo "better-auth migrate skipped (see output); auth pages may 500 until run"
 
 log "Custom app tables (src/lib/db/migrations, idempotent SQL)"
 for f in src/lib/db/migrations/*.sql; do
