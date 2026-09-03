@@ -3,34 +3,43 @@
 import { useEffect } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 
-import { PRODUCTION_HOSTNAMES } from "@/lib/analytics/google-analytics";
+import {
+  GOOGLE_ANALYTICS_MEASUREMENT_ID,
+  PRODUCTION_HOSTNAMES,
+} from "@/lib/analytics/google-analytics";
+import { resolveAgentHandoffSessionId } from "@/lib/agent-referral";
 
-const TRACKED_SESSION_KEY = "agent_handoff_landing:recommend";
+const TRACKED_SESSION_KEY = "agent_handoff_landing:recommend:ga_session";
 
-type AgentHandoffGtag = (
-  command: "event",
-  name: "agent_handoff_landing",
-  params: {
-    handoff_agent: "assistant";
-    handoff_surface: "recommend";
-  },
-) => void;
+interface AgentHandoffGtag {
+  (
+    command: "get",
+    target: typeof GOOGLE_ANALYTICS_MEASUREMENT_ID,
+    fieldName: "session_id",
+    callback: (value: unknown) => void,
+  ): void;
+  (
+    command: "event",
+    name: "agent_handoff_landing",
+    params: {
+      handoff_agent: "assistant";
+      handoff_surface: "recommend";
+    },
+  ): void;
+}
 
 export function shouldTrackAgentHandoff({
   pathname,
   hostname,
   marker,
-  alreadyTracked,
 }: {
   pathname: string;
   hostname: string;
   marker: string | null;
-  alreadyTracked: boolean;
 }): boolean {
   return pathname === "/recommend"
     && PRODUCTION_HOSTNAMES.has(hostname)
-    && marker === "assistant"
-    && !alreadyTracked;
+    && marker === "assistant";
 }
 
 export function AgentHandoffLandingTracker() {
@@ -40,21 +49,31 @@ export function AgentHandoffLandingTracker() {
   useEffect(() => {
     if (typeof window === "undefined" || !pathname) return;
 
-    const alreadyTracked = sessionStorage.getItem(TRACKED_SESSION_KEY) === "1";
-    if (!shouldTrackAgentHandoff({
-      pathname,
-      hostname: window.location.hostname,
-      marker: searchParams?.get("agent_handoff") ?? null,
-      alreadyTracked,
-    })) return;
+    if (
+      !shouldTrackAgentHandoff({
+        pathname,
+        hostname: window.location.hostname,
+        marker: searchParams?.get("agent_handoff") ?? null,
+      })
+    ) {
+      return;
+    }
 
     const gtag = (window as unknown as { gtag?: AgentHandoffGtag }).gtag;
     if (typeof gtag !== "function") return;
 
-    sessionStorage.setItem(TRACKED_SESSION_KEY, "1");
-    gtag("event", "agent_handoff_landing", {
-      handoff_agent: "assistant",
-      handoff_surface: "recommend",
+    gtag("get", GOOGLE_ANALYTICS_MEASUREMENT_ID, "session_id", (currentSessionId) => {
+      const sessionIdToTrack = resolveAgentHandoffSessionId({
+        storedSessionId: localStorage.getItem(TRACKED_SESSION_KEY),
+        currentSessionId,
+      });
+      if (!sessionIdToTrack) return;
+
+      localStorage.setItem(TRACKED_SESSION_KEY, sessionIdToTrack);
+      gtag("event", "agent_handoff_landing", {
+        handoff_agent: "assistant",
+        handoff_surface: "recommend",
+      });
     });
   }, [pathname, searchParams]);
 

@@ -94,7 +94,11 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 
 **Measure-after:** Immediate technical receipt after the authorized production deployment. Product outcome on 2026-09-13 or once 100 valid handoff users are available, whichever is later.
 
-**Status:** 🔄 Implemented in PR [#72](https://github.com/Darkmatter-AI/deepbreathing/pull/72). Production deployment authorized on 2026-08-30; live event receipt pending.
+**Status:** 🔄 Implemented in PR [#72](https://github.com/Darkmatter-AI/deepbreathing/pull/72). The first live receipt exposed the duplicate defect below; its repair is implemented locally and awaits review and deployment authorization.
+
+**Night Shift defect checkpoint (2026-09-03):** The first mature receipt had `1` user, `2` events, and `1` GA4 session on 2026-08-30. The tracker stores its sentinel in `sessionStorage`, which is scoped to one tab, so two tabs in the same GA4 session can both emit. This directly fails the pre-registered exactly-once contract.
+
+**Unshipped repair proposal:** Read GA4's current `session_id` through `gtag('get', ...)` and persist that validated ID in `localStorage` before emitting. This is a measurement repair, not a new growth experiment. After an authorized deployment, pass when marked visits produce at most one landing event per GA4 session while a later GA4 session can emit again. Keep the existing production-host, route, marker, and field allowlists unchanged.
 
 ### 2026-08-29: App Store promotion rollout and acquisition instrumentation
 

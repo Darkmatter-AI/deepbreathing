@@ -8,6 +8,7 @@ import {
   AGENT_HANDOFF_DEFAULTS,
   buildAgentReferralHref,
   readAgentReferralParams,
+  resolveAgentHandoffSessionId,
 } from "../../src/lib/agent-referral.ts";
 import {
   DEFAULT_EXCLUDED_ROUTES,
@@ -138,15 +139,68 @@ test("referral helper emits stable links and rejects non-plain internal paths", 
   assert.throws(() => buildAgentReferralHref("/breathe/box#start", {}));
 });
 
-test("tracker keeps the production, marker, route, event-field, and session-dedupe contract", () => {
+test("handoff session IDs dedupe across tabs without suppressing later GA4 sessions", () => {
+  assert.equal(
+    resolveAgentHandoffSessionId({
+      storedSessionId: null,
+      currentSessionId: 123,
+    }),
+    "123",
+  );
+  assert.equal(
+    resolveAgentHandoffSessionId({
+      storedSessionId: "123",
+      currentSessionId: "123",
+    }),
+    null,
+  );
+  assert.equal(
+    resolveAgentHandoffSessionId({
+      storedSessionId: "123",
+      currentSessionId: "456",
+    }),
+    "456",
+  );
+
+  for (const invalidSessionId of [
+    null,
+    undefined,
+    "",
+    "0",
+    -1,
+    1.5,
+    Number.NaN,
+  ]) {
+    assert.equal(
+      resolveAgentHandoffSessionId({
+        storedSessionId: null,
+        currentSessionId: invalidSessionId,
+      }),
+      null,
+    );
+  }
+});
+
+test("tracker keeps the production, marker, route, event-field, and GA-session contract", () => {
   const tracker = read("src/components/analytics/AgentHandoffLandingTracker.tsx");
 
   assert.match(tracker, /pathname === "\/recommend"/);
   assert.match(tracker, /PRODUCTION_HOSTNAMES\.has\(hostname\)/);
   assert.match(tracker, /marker === "assistant"/);
-  assert.match(tracker, /sessionStorage\.getItem\(TRACKED_SESSION_KEY\)/);
-  assert.match(tracker, /sessionStorage\.setItem\(TRACKED_SESSION_KEY, "1"\)/);
-  assert.equal((tracker.match(/gtag\("event", "agent_handoff_landing"/g) ?? []).length, 1);
+  assert.match(
+    tracker,
+    /gtag\("get", GOOGLE_ANALYTICS_MEASUREMENT_ID, "session_id"/,
+  );
+  assert.match(tracker, /localStorage\.getItem\(TRACKED_SESSION_KEY\)/);
+  assert.match(
+    tracker,
+    /localStorage\.setItem\(TRACKED_SESSION_KEY, sessionIdToTrack\)/,
+  );
+  assert.doesNotMatch(tracker, /sessionStorage/);
+  assert.equal(
+    (tracker.match(/gtag\("event", "agent_handoff_landing"/g) ?? []).length,
+    1,
+  );
   assert.match(tracker, /handoff_agent: "assistant"/);
   assert.match(tracker, /handoff_surface: "recommend"/);
   assert.doesNotMatch(tracker, /page_view/);
