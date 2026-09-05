@@ -12,6 +12,7 @@ const CAMPAIGN_PARAMETER_NAMES = [
 ] as const;
 
 const AD_CLICK_ID_NAMES = ["gclid", "dclid", "gbraid", "wbraid"] as const;
+const APPLE_CAMPAIGN_TOKEN = "dbe_website";
 
 function shortHash(value: string) {
   let hash = 2166136261;
@@ -39,21 +40,19 @@ export function createAppleCampaignToken(pathname: string) {
 
 export function createAppStoreDestination({
   currentUrl,
-  providerToken,
+  providerToken = "129077591",
 }: {
   currentUrl: URL;
   providerToken?: string;
 }) {
   const destination = new URL(APP_STORE_URL);
-  if (!providerToken || !/^\d+$/.test(providerToken)) {
+  const effectiveProviderToken = providerToken.trim() || "129077591";
+  if (!/^\d+$/.test(effectiveProviderToken)) {
     return destination.toString();
   }
 
-  destination.searchParams.set("pt", providerToken);
-  destination.searchParams.set(
-    "ct",
-    createAppleCampaignToken(currentUrl.pathname),
-  );
+  destination.searchParams.set("pt", effectiveProviderToken);
+  destination.searchParams.set("ct", APPLE_CAMPAIGN_TOKEN);
   destination.searchParams.set("mt", "8");
   return destination.toString();
 }
@@ -82,6 +81,13 @@ export function createAppStoreAnalyticsParams({
 
   for (const name of AD_CLICK_ID_NAMES) {
     if (currentUrl.searchParams.has(name)) params[`has_${name}`] = true;
+  }
+
+  try {
+    const appleCampaign = new URL(destination).searchParams.get("ct");
+    if (appleCampaign) params.apple_campaign = appleCampaign;
+  } catch {
+    // Keep analytics resilient if a caller supplies an invalid destination.
   }
 
   return params;

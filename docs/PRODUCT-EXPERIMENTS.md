@@ -23,6 +23,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-09-05 | [App acquisition funnel and shared website campaign](#2026-09-05-app-acquisition-funnel-and-shared-website-campaign) | 🔄 Implemented locally — deployment pending |
 | 2026-08-30 | [Guest completion provider-parity hotfix](#2026-08-30-guest-completion-provider-parity-hotfix) | 🔄 Implemented locally, approval pending |
 | 2026-08-30 | [Assistant recommendation handoff instrumentation](#2026-08-30-assistant-recommendation-handoff-instrumentation) | 🔄 Implemented in PR [#72](https://github.com/Darkmatter-AI/deepbreathing/pull/72) — live receipt pending |
 | 2026-08-29 | [App Store promotion rollout and acquisition instrumentation](#2026-08-29-app-store-promotion-rollout-and-acquisition-instrumentation) | 🔄 Implemented locally — deployment pending |
@@ -95,6 +96,20 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 **Measure-after:** Immediate technical receipt after the authorized production deployment. Product outcome on 2026-09-13 or once 100 valid handoff users are available, whichever is later.
 
 **Status:** 🔄 Implemented in PR [#72](https://github.com/Darkmatter-AI/deepbreathing/pull/72). Production deployment authorized on 2026-08-30; live event receipt pending.
+
+### 2026-09-05: App acquisition funnel and shared website campaign
+
+**Hypothesis:** A shared `dbe_website` Apple campaign will accumulate enough downloads for Apple's reporting threshold, while GA4 retains placement and page detail. A reusable report will expose missing attribution without implying that all App Store downloads came from website visitors.
+
+**Baseline:** The Sep 5 review observed 114 promotion-view users and 6 click users in GA4 for Aug 31–Sep 2. Apple reported 10 first-time downloads across all sources for Aug 28–Sep 3. These different periods and populations cannot yield a website install conversion rate. Existing page-specific campaign tokens and an unverified provider-token configuration prevent a validated campaign join.
+
+**Success criteria:** Outgoing website links carry Apple's verified provider token and `ct=dbe_website`; GA4 records that same campaign token; the report preserves source periods, counts users rather than events for website CTR, and represents missing/suppressed Apple campaign data as unavailable. Claim attributed conversion only after Apple returns that campaign's data. No product-lift claim until matched mature periods exist.
+
+**Status:** Implemented locally on `codex/app-store-campaign-release`; deployment preparation authorized 2026-09-05, deployment not performed. Apple campaign-link builder verified `pt=129077591`, `ct=dbe_website`, `mt=8`; the public link resolved successfully. Website destination and GA4 campaign-parameter helpers passed all three existing targeted tests and direct calls with unset/blank configuration. The campaign's Apple analytics remain unavailable for insufficient data. No Apple API credentials were created or verified. The reporting runbook and funnel report remain outside this focused release-preparation worktree.
+
+**Matched-date baseline, checked Sep 5:** Aug 28–Sep 3 GA4 (Europe/Lisbon): 759 visitors, 158 promotion-view users, 7 click users, 4.43% exposed-user CTR. Apple (UTC): 42 impressions, 16 product-page views, 10 first-time downloads; prior Aug 21–27: 4, 1, and 1 respectively. Apple first-time downloads by source: web referral 5, in-app referral 4, App Store search 1. Different time zones and populations remain separate; these figures do not yield website click-to-install conversion.
+
+**Measure-after:** Verify the outgoing link after a separately authorized deployment. Review campaign downloads once Apple exposes a mature post-deploy cohort; suppressed or unavailable values are not zero.
 
 ### 2026-08-29: App Store promotion rollout and acquisition instrumentation
 
