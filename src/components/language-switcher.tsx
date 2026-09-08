@@ -2,66 +2,40 @@
 
 import { useEffect, useState, useRef } from "react";
 import { createRuntimePhraseResolver } from "@/components/resonance/runtime-phrases";
-
-interface MTConfig {
-  supportedLocales: string[];
-  defaultLang: string;
-  urlMode: string;
-  lang: string;
-  path: string;
-}
+import {
+  DEFAULT_LOCALE,
+  LOCALES,
+  getLocale,
+  getLocaleFromPathname,
+  localizePathname,
+  resolveLocaleCode,
+  stripLocalePrefix,
+  type LocaleCode,
+} from "@/i18n";
+import {
+  getNativeRouteByPath,
+  isNativeRoutePublished,
+  resolveNativeInternalHref,
+} from "@/i18n/route-manifest";
 
 declare global {
   interface Window {
-    __MT_CONFIG__?: MTConfig;
+    __MT_CONFIG__?: {
+      lang?: string;
+      supportedLocales?: readonly string[];
+    };
   }
 }
 
-const SUPPORTED_LOCALES = ["es-es", "pt-br", "fr-fr", "de-de", "ja-jp"];
+const TRANSLATED_LOCALES = LOCALES.filter(
+  (locale) => locale.code !== DEFAULT_LOCALE,
+);
 
-const LOCALE_SHORT: Record<string, string> = {
-  en: "EN",
-  "es-es": "ES",
-  "pt-br": "PT",
-  "fr-fr": "FR",
-  "de-de": "DE",
-  "ja-jp": "JA",
-};
-
-const LOCALE_FULL: Record<string, string> = {
-  en: "English",
-  "es-es": "Español",
-  "pt-br": "Português",
-  "fr-fr": "Français",
-  "de-de": "Deutsch",
-  "ja-jp": "日本語",
-};
-
-function getPrefix(locale: string): string {
-  return locale.split("-")[0];
-}
-
-/** Strip all known locale prefixes from a path to get the English base path. */
-function stripLocalePrefix(pathname: string): string {
-  for (const loc of SUPPORTED_LOCALES) {
-    const prefix = `/${getPrefix(loc)}`;
-    if (pathname.startsWith(prefix + "/")) {
-      return stripLocalePrefix(pathname.slice(prefix.length));
-    }
-    if (pathname === prefix) {
-      return "/";
-    }
-  }
-  return pathname;
-}
+type LocaleInfo = { currentLocale: LocaleCode; basePath: string };
 
 /**
- * Routes that exist in English only. These are in the mass-translate proxy's
- * `exclude_paths`, so a localized variant (e.g. /es/languages) is NOT served —
- * the proxy 301s it back to the EN canonical. Linking a locale switcher straight
- * to /{loc}/languages would advertise a URL that just bounces, so for these
- * routes we point each locale at its localized home instead.
- * Keep in sync with the tenant's exclude_paths / EN_ONLY_ROUTES in sitemap-routes.
+ * Routes that exist in English only. Pointing these options at each locale's
+ * published home avoids a localized URL that cannot be served.
  */
 const EN_ONLY_ROUTES = new Set(["/languages"]);
 
@@ -69,46 +43,64 @@ function isEnOnlyRoute(basePath: string): boolean {
   return EN_ONLY_ROUTES.has(basePath) || [...EN_ONLY_ROUTES].some((r) => basePath.startsWith(r + "/"));
 }
 
-/** Build the href for a locale option. EN-only routes route to the localized home. */
-function localeHref(prefix: string, basePath: string): string {
-  if (isEnOnlyRoute(basePath)) return `/${prefix}`;
-  return `/${prefix}${basePath}`;
+function getDisplayedLocales(basePath: string) {
+  const configuredLocales =
+    typeof window === "undefined"
+      ? undefined
+      : window.__MT_CONFIG__?.supportedLocales;
+  const configuredCodes = configuredLocales
+    ? new Set(
+        configuredLocales
+          .map((value) => resolveLocaleCode(value))
+          .filter((code): code is LocaleCode => code !== null),
+      )
+    : null;
+  const candidates = configuredCodes
+    ? TRANSLATED_LOCALES.filter((locale) => configuredCodes.has(locale.code))
+    : TRANSLATED_LOCALES;
+
+  const route = getNativeRouteByPath(
+    isEnOnlyRoute(basePath) ? "/" : basePath,
+  );
+  if (!route) {
+    // MassTranslate can serve dynamic proxy routes that are deliberately not
+    // admitted to the static native manifest. Preserve those old options only
+    // when the proxy has explicitly configured them.
+    return configuredCodes ? candidates : [];
+  }
+
+  if (route.dynamic && configuredCodes) return candidates;
+  return candidates.filter((locale) =>
+    isNativeRoutePublished(route, locale.code),
+  );
 }
 
-function getCurrentLocaleAndPath(): { currentLocale: string; basePath: string } {
-  if (typeof window === "undefined") return { currentLocale: "en", basePath: "/" };
+/** Build a locale option without linking to an unavailable native route. */
+function localeHref(locale: LocaleCode, basePath: string): string {
+  if (isEnOnlyRoute(basePath)) return localizePathname("/", locale);
+  return resolveNativeInternalHref(basePath, locale, "native");
+}
 
-  const config = window.__MT_CONFIG__;
-  if (config) {
-    // Ensure config.path has no locale prefix (defensive)
-    return { currentLocale: config.lang, basePath: stripLocalePrefix(config.path) };
+function getCurrentLocaleAndPath(): LocaleInfo {
+  if (typeof window === "undefined") {
+    return { currentLocale: DEFAULT_LOCALE, basePath: "/" };
   }
 
-  // Detect from URL
   const pathname = window.location.pathname;
-  const basePath = stripLocalePrefix(pathname);
-
-  // If basePath differs from pathname, we had a locale prefix
-  if (basePath !== pathname) {
-    // Find which locale it was
-    for (const loc of SUPPORTED_LOCALES) {
-      const prefix = `/${getPrefix(loc)}`;
-      if (pathname.startsWith(prefix + "/") || pathname === prefix) {
-        return { currentLocale: loc, basePath };
-      }
-    }
-  }
-
-  return { currentLocale: "en", basePath };
+  return {
+    currentLocale: getLocaleFromPathname(pathname).code,
+    basePath: stripLocalePrefix(pathname),
+  };
 }
 
 function explicitLocaleInfo(
   locale?: string,
   basePath?: string,
-): { currentLocale: string; basePath: string } | null {
+): LocaleInfo | null {
   if (!locale || !basePath) return null;
-  const normalized = locale.toLowerCase() === "en-us" ? "en" : locale.toLowerCase();
-  return { currentLocale: normalized, basePath: stripLocalePrefix(basePath) };
+  const code = resolveLocaleCode(locale);
+  if (!code) return null;
+  return { currentLocale: code, basePath: stripLocalePrefix(basePath) };
 }
 
 interface LanguageSwitcherProps {
@@ -144,7 +136,7 @@ function GlobeIcon({ className }: { className?: string }) {
  */
 export function LanguageSwitcherInline({ basePath, locale }: LanguageSwitcherProps = {}) {
   const [open, setOpen] = useState(false);
-  const [info, setInfo] = useState<{ currentLocale: string; basePath: string } | null>(
+  const [info, setInfo] = useState<LocaleInfo | null>(
     () => explicitLocaleInfo(locale, basePath),
   );
   const ref = useRef<HTMLDivElement>(null);
@@ -164,7 +156,7 @@ export function LanguageSwitcherInline({ basePath, locale }: LanguageSwitcherPro
 
   if (!info) return null;
 
-  const currentShort = LOCALE_SHORT[info.currentLocale] || "EN";
+  const currentShort = getLocale(info.currentLocale).shortLabel;
   const changeLanguageLabel = createRuntimePhraseResolver(locale ?? info.currentLocale)
     .resolve("ui.change_language").text;
 
@@ -183,27 +175,26 @@ export function LanguageSwitcherInline({ basePath, locale }: LanguageSwitcherPro
           <a
             href={info.basePath}
             className={`block w-full text-left px-4 py-2 text-xs transition-colors ${
-              info.currentLocale === "en"
+              info.currentLocale === DEFAULT_LOCALE
                 ? "font-semibold text-foreground"
                 : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
             }`}
           >
             English
           </a>
-          {SUPPORTED_LOCALES.map((loc) => {
-            const prefix = getPrefix(loc);
-            const isActive = info.currentLocale === loc || getPrefix(info.currentLocale) === prefix;
+          {getDisplayedLocales(info.basePath).map((loc) => {
+            const isActive = info.currentLocale === loc.code;
             return (
               <a
-                key={loc}
-                href={localeHref(prefix, info.basePath)}
+                key={loc.code}
+                href={localeHref(loc.code, info.basePath)}
                 className={`block w-full text-left px-4 py-2 text-xs transition-colors ${
                   isActive
                     ? "font-semibold text-foreground"
                     : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
                 }`}
               >
-                {LOCALE_FULL[loc]}
+                {loc.nativeLabel}
               </a>
             );
           })}
@@ -214,21 +205,16 @@ export function LanguageSwitcherInline({ basePath, locale }: LanguageSwitcherPro
 }
 
 /**
- * Footer-style language switcher — inline links.
+ * Footer-style language switcher, inline links.
  * Minimized: globe that expands to show all locales.
  *
- * Note: the mass-translate reverse proxy rewrites anchor hrefs (both
- * relative and absolute on the canonical host) to prefix the current
- * locale. Server-rendering anchors here leaks broken paths like
- * /de/es into translated pages, which would generate crawler 404s.
- * We therefore gate the whole switcher on client-side hydration; for
- * crawl-discovery of translated pages, rely on hreflang metadata and
- * any server-rendered anchors added in page-level components where
- * the build pathway is proxy-safe.
+ * This stays client-side because the switcher is an interactive control. It
+ * only offers locales whose current route is published, while proxy pages use
+ * the proxy's configured locale list for dynamic legacy routes.
  */
 export function LanguageSwitcherFooter({ basePath, locale }: LanguageSwitcherProps = {}) {
   const [open, setOpen] = useState(false);
-  const [info, setInfo] = useState<{ currentLocale: string; basePath: string } | null>(
+  const [info, setInfo] = useState<LocaleInfo | null>(
     () => explicitLocaleInfo(locale, basePath),
   );
 
@@ -238,8 +224,8 @@ export function LanguageSwitcherFooter({ basePath, locale }: LanguageSwitcherPro
 
   if (!info) return null;
 
-  const currentLabel = LOCALE_FULL[info.currentLocale] || "English";
-  const locales = SUPPORTED_LOCALES;
+  const currentLabel = getLocale(info.currentLocale).nativeLabel;
+  const locales = getDisplayedLocales(info.basePath);
   const changeLanguageLabel = createRuntimePhraseResolver(locale ?? info.currentLocale)
     .resolve("ui.change_language").text;
 
@@ -262,7 +248,7 @@ export function LanguageSwitcherFooter({ basePath, locale }: LanguageSwitcherPro
       <a
         href={info.basePath}
         className={`transition-colors ${
-          info.currentLocale === "en"
+          info.currentLocale === DEFAULT_LOCALE
             ? "font-medium text-foreground"
             : "underline underline-offset-2 hover:text-foreground"
         }`}
@@ -270,19 +256,18 @@ export function LanguageSwitcherFooter({ basePath, locale }: LanguageSwitcherPro
         English
       </a>
       {locales.map((loc) => {
-        const prefix = getPrefix(loc);
-        const isActive = info.currentLocale === loc || getPrefix(info.currentLocale) === prefix;
+        const isActive = info.currentLocale === loc.code;
         return (
           <a
-            key={loc}
-            href={localeHref(prefix, info.basePath)}
+            key={loc.code}
+            href={localeHref(loc.code, info.basePath)}
             className={`transition-colors ${
               isActive
                 ? "font-medium text-foreground"
                 : "underline underline-offset-2 hover:text-foreground"
             }`}
           >
-            {LOCALE_FULL[loc]}
+            {loc.nativeLabel}
           </a>
         );
       })}

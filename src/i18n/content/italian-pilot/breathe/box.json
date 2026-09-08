@@ -1,0 +1,1559 @@
+{
+  "entries": [
+    {
+      "messageId": "lineage",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "d77a8eff9f3ec5dc95487ca4d9e268889a5187c718bcd2cf306cf257190767db",
+      "sourceText": "Named and popularized by former US Navy SEAL commander Mark Divine, who taught it through his SEALFIT and Unbeatable Mind programs starting in the 2010s. The equal-ratio pattern itself is older. It appears as Sama Vritti in classical pranayama and in earlier military tactical breathing protocols that predate the \"box\" name.",
+      "translation": "Nominata e resa popolare dall'ex comandante dei Navy SEAL statunitensi Mark Divine, che l'ha insegnata nei suoi programmi SEALFIT e Unbeatable Mind a partire dagli anni 2010. Lo schema a rapporti uguali è più antico. Compare come Sama Vritti nel pranayama classico e in precedenti protocolli militari di respirazione tattica, anteriori al nome «box»."
+    },
+    {
+      "messageId": "hero.title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "1937b7673dddca18a5b80fa7c9532b1b9f55ef0e0b2cf55202470767d5af2de0",
+      "sourceText": "Box Breathing (4-4-4-4) Visualizer",
+      "translation": "Visualizzatore della respirazione quadrata (4-4-4-4)"
+    },
+    {
+      "messageId": "hero.subtitle",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "6b3dd04f430c7e6032fdf5263a932d03f168c4805f00d1a17da7b27451c63fb3",
+      "sourceText": "Equal counts to steady arousal and sharpen focus.",
+      "translation": "Tempi uguali per stabilizzare l'attivazione e affinare la concentrazione."
+    },
+    {
+      "messageId": "hero.intro",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "d3c8813cefb0ff2d0ad6aed163a8f6ce1302b18de9b9517c2e211eebbb8cd2e9",
+      "sourceText": "Box breathing uses four equal phases: inhale, hold, exhale, hold. The pattern slows respiration and stabilizes attention. Keep counts comfortable (e.g., 3–6 seconds each). If holds feel tight or dizzying, shorten them or remove holds and keep the rhythm even.",
+      "translation": "La respirazione quadrata usa quattro fasi uguali: inspira, trattieni, espira, trattieni. Lo schema rallenta la respirazione e stabilizza l'attenzione. Mantieni tempi confortevoli (per esempio 3–6 secondi ciascuno). Se le pause risultano troppo impegnative o causano vertigini, accorciale oppure elimina le pause e mantieni il ritmo regolare."
+    },
+    {
+      "messageId": "meta.title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "b2957e3db04bedcfebb7542a0a08d8c88df5a37a801abbfabc6419994d0d52f7",
+      "sourceText": "Box Breathing: Navy SEAL Technique to Stop Anxiety Fast (Free Tool)",
+      "translation": "Respirazione quadrata: tecnica dei Navy SEAL per fermare rapidamente l'ansia (strumento gratuito)"
+    },
+    {
+      "messageId": "meta.description",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "30c20de381cb5f50025f0355a4d94d27aac5356ce1874ce2266f381d4735b72f",
+      "sourceText": "Free box breathing timer: stop anxiety in 60 seconds with the Navy SEAL 4-4-4-4 technique. No download. Start your guided session now.",
+      "translation": "Timer gratuito per la respirazione quadrata: ferma l'ansia in 60 secondi con la tecnica 4-4-4-4 dei Navy SEAL. Nessun download. Inizia ora la sessione guidata."
+    },
+    {
+      "messageId": "meta.ogTitle",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "ccb0ad3d551b05f39f36f7de5ad4af3d5226582ceff8900dc7fe74baa2a23b65",
+      "sourceText": "Box Breathing: Navy SEAL Technique to Stop Anxiety Fast",
+      "translation": "Respirazione quadrata: tecnica dei Navy SEAL per fermare rapidamente l'ansia"
+    },
+    {
+      "messageId": "meta.ogDescription",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "8db7099e5a066fdd84656fba5ead942ca0ff6647dde4a011a155383628b45609",
+      "sourceText": "The same breathing technique Navy SEALs use before combat. Stop panic attacks in 1 minute. Free visualizer + research-backed method.",
+      "translation": "La stessa tecnica di respirazione usata dai Navy SEAL prima del combattimento. Ferma gli attacchi di panico in 1 minuto. Visualizzatore gratuito e metodo basato sulla ricerca."
+    },
+    {
+      "messageId": "meta.twitterTitle",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "ccb0ad3d551b05f39f36f7de5ad4af3d5226582ceff8900dc7fe74baa2a23b65",
+      "sourceText": "Box Breathing: Navy SEAL Technique to Stop Anxiety Fast",
+      "translation": "Respirazione quadrata: tecnica dei Navy SEAL per fermare rapidamente l'ansia"
+    },
+    {
+      "messageId": "meta.twitterDescription",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "d9814eed2a4c3d739393f7e89f889404e0c31a4ff5afc97e7ec8752ec10de41c",
+      "sourceText": "The same breathing technique Navy SEALs use before combat. Stop anxiety in 60 seconds. Free visualizer.",
+      "translation": "La stessa tecnica di respirazione usata dai Navy SEAL. Riduci l'ansia in 60 secondi. Visualizzatore gratuito."
+    },
+    {
+      "messageId": "body[0].heading",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "1f36becc3aa7c8a8893bc0688d52b8bef91dae5528528706003bc4f45e409f96",
+      "sourceText": "What it is",
+      "translation": "Che cos'è"
+    },
+    {
+      "messageId": "body[0].content",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "7b4041b470cc3c154b1dfcaf75b0c86f1526cef4c67e297ad7c43fa4cc5c8872",
+      "sourceText": "Box breathing is a four-phase breathing technique where you inhale, hold, exhale, and hold again for equal counts—typically 4 seconds each. Popularized by Navy SEAL Commander Mark Divine, it activates the parasympathetic nervous system to reduce stress in as little as 60 seconds. What makes it unique is the symmetrical structure: four equal sides, like a box, giving the mind a simple pattern to follow under pressure.\n\nAdjust counts to 3–6 seconds for comfort. Breathe quietly through the nose, keep shoulders and jaw soft, let your belly lead. If holds feel uncomfortable or cause dizziness, drop them and maintain an even inhale/exhale instead.",
+      "translation": "La respirazione quadrata è una tecnica in quattro fasi: inspiri, trattieni, espiri e trattieni di nuovo per tempi uguali, in genere 4 secondi per fase. Diffusa dal comandante dei Navy SEAL Mark Divine, attiva il sistema nervoso parasimpatico per ridurre lo stress in appena 60 secondi. La sua particolarità è la struttura simmetrica: quattro lati uguali, come un quadrato, che offrono alla mente uno schema semplice da seguire sotto pressione.\n\nRegola i tempi tra 3 e 6 secondi per stare comodo. Respira piano dal naso, rilassa spalle e mascella e lascia che sia l'addome a guidare. Se le pause risultano troppo impegnative o causano vertigini, eliminale e mantieni invece un'inspirazione e un'espirazione regolari."
+    },
+    {
+      "messageId": "body[1].heading",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "28b04ea925e905959bd715cb3e7e4a7a311d89d8bb25dd596448d44ec40b2e57",
+      "sourceText": "Why Navy SEALs Use Box Breathing",
+      "translation": "Perché i Navy SEAL usano la respirazione quadrata"
+    },
+    {
+      "messageId": "body[1].content",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "af6f92c5c2ef77bbcd34eae97fff74bdcd368eeaf7c2a1716680e82620b45fc8",
+      "sourceText": "Box breathing became a cornerstone of Navy SEAL training through Mark Divine, a retired SEAL Commander who introduced it to BUD/S (Basic Underwater Demolition/SEAL) training in the early 2000s. SEALs use it before high-stakes missions, during underwater drownproofing exercises, and in any situation where panic could be fatal. The technique works because the structured counting occupies the prefrontal cortex (the thinking brain) while the slow rhythm activates the parasympathetic nervous system. This dual action interrupts the amygdala's fear response, allowing SEALs to stay calm and make clear decisions under fire. Divine calls it 'taking control of your physiology before your physiology takes control of you.' The same technique that helps operators stay composed during combat works just as well before your next presentation, difficult conversation, or sleepless night.",
+      "translation": "La respirazione quadrata è diventata un elemento centrale dell'addestramento dei Navy SEAL grazie a Mark Divine, ex comandante dei SEAL che l'ha introdotta nell'addestramento BUD/S (Basic Underwater Demolition/SEAL) nei primi anni 2000. I SEAL la usano prima delle missioni ad alta intensità, durante gli esercizi subacquei di sopravvivenza e in qualunque situazione in cui il panico potrebbe essere fatale. La tecnica funziona perché il conteggio strutturato occupa la corteccia prefrontale (il cervello che ragiona), mentre il ritmo lento attiva il sistema nervoso parasimpatico. Questa doppia azione interrompe la risposta di paura dell'amigdala e permette ai SEAL di restare calmi e prendere decisioni lucide sotto il fuoco. Divine la definisce «prendere il controllo della propria fisiologia prima che sia la fisiologia a prendere il controllo di te». La stessa tecnica che aiuta gli operatori a mantenere il controllo in combattimento può essere altrettanto utile prima della prossima presentazione, di una conversazione difficile o di una notte insonne."
+    },
+    {
+      "messageId": "body[2].heading",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "1c4a5f9ea8cadcf67e0567a26d036b4c506745a7ec30b42fbbdafd89cb8678c3",
+      "sourceText": "How to Do Box Breathing (Step by Step)",
+      "translation": "Come fare la respirazione quadrata (passo passo)"
+    },
+    {
+      "messageId": "body[2].content",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "b994aae950ea4d0f6c43e64cb729746bb20c624fe5c5f455c698688a24737dfb",
+      "sourceText": "1. Sit upright with your shoulders soft, jaw relaxed, and mouth closed. Breathe through your nose.\n2. Inhale slowly through your nose for 4 seconds, letting your belly rise.\n3. Hold your breath gently for 4 seconds—no straining.\n4. Exhale quietly through your nose (or pursed lips) for 4 seconds, letting your belly fall.\n5. Hold again at the bottom for 4 seconds, staying relaxed.\n6. Repeat for 6–12 cycles (about 2–5 minutes). If holds feel uncomfortable, shorten the counts or remove holds entirely.",
+      "translation": "1. Siediti con la schiena eretta, le spalle morbide, la mascella rilassata e la bocca chiusa. Respira dal naso.\n2. Inspira lentamente dal naso per 4 secondi, lasciando sollevare l'addome.\n3. Trattieni dolcemente il respiro per 4 secondi, senza sforzarti.\n4. Espira piano dal naso (o a labbra socchiuse) per 4 secondi, lasciando abbassare l'addome.\n5. Trattieni di nuovo il respiro alla fine dell'espirazione per 4 secondi, restando rilassato.\n6. Ripeti per 6–12 cicli (circa 2–5 minuti). Se le pause risultano scomode, accorcia i tempi oppure eliminale del tutto."
+    },
+    {
+      "messageId": "body[3].heading",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "d5b67bc930cd33c0c62c478cb250387d18e05304ba7d0e02fd1acea699044d20",
+      "sourceText": "Benefits",
+      "translation": "Benefici"
+    },
+    {
+      "messageId": "body[3].content",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "973447f8b1d8c57f95ec4dc90d222af17a23e9aebdaf9a7dbf9a1f1ed65a687a",
+      "sourceText": "Slows breathing and increases parasympathetic tone in 1–5 minutes. Easy to remember and use anywhere. Flexible dosing: shorten, lengthen, or skip holds to fit your comfort.",
+      "translation": "Rallenta la respirazione e aumenta il tono parasimpatico in 1–5 minuti. È facile da ricordare e da usare ovunque. Durata flessibile: accorcia, allunga o elimina le pause per adattarla al tuo comfort."
+    },
+    {
+      "messageId": "body[4].heading",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "5c06b51a4d33dd354e9a862dc06e40a051cda2eac3aa766442fe48332e988be0",
+      "sourceText": "When to use",
+      "translation": "Quando usarla"
+    },
+    {
+      "messageId": "body[4].content",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "27e02f6236b362b9ac784cf90041b544f4c5ed3ad7a7c88c8b59578564cf84b6",
+      "sourceText": "Before meetings, between tasks, after stress, or before bed. Great for people who like clear structure. For maximum HRV boost, coherent breathing (5–6 breaths/min, no holds) often works better.",
+      "translation": "Prima di una riunione, tra un'attività e l'altra, dopo un momento di stress o prima di dormire. È ideale per chi apprezza una struttura chiara. Per ottenere il massimo aumento dell'HRV, la respirazione coerente (5–6 respiri/min, senza pause) spesso funziona meglio."
+    },
+    {
+      "messageId": "body[5].heading",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "bea84d0de87830b33d6e2182090c7a17372c98cb5371ebcabc8dc3bbe5d724c4",
+      "sourceText": "When to skip",
+      "translation": "Quando evitarla"
+    },
+    {
+      "messageId": "body[5].content",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "d2e88cb59507a47000f128aea5d957d0cd8f1ddca67b322fdc75852b3adc2693",
+      "sourceText": "Avoid strained holds if pregnant, have cardiopulmonary disease, syncope history, or high blood pressure. If dizzy or tingly, drop the holds or pause. During panic, try a physiological sigh instead.",
+      "translation": "Evita di trattenere il respiro con sforzo se sei incinta, soffri di patologie cardiopolmonari, hai avuto episodi di sincope o hai la pressione alta. Se avverti vertigini o formicolio, elimina le pause o fermati. Durante il panico, prova invece un sospiro fisiologico."
+    },
+    {
+      "messageId": "benefits[0].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "df1f4397abb84358132f134df5d4861e457559ec43e9a9cb19e177e1cd10d460",
+      "sourceText": "Steadies arousal",
+      "translation": "Stabilizza l'attivazione"
+    },
+    {
+      "messageId": "benefits[0].description",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "c1d36ac67c0386ef459015106d06d7c17ad3a15e1cd7f465006556d2a9da9fc7",
+      "sourceText": "Slow, even pacing increases parasympathetic activity and can [lower perceived stress in minutes](https://doi.org/10.1016/j.xcrm.2022.100895).",
+      "translation": "Un ritmo lento e regolare aumenta l'attività parasimpatica e può [ridurre lo stress percepito in pochi minuti](https://doi.org/10.1016/j.xcrm.2022.100895)."
+    },
+    {
+      "messageId": "benefits[1].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "59e3f4167e768221f2244ec8662aee6ffd2af4c12b0ce3dfc1005e72d62c08fd",
+      "sourceText": "Portable structure",
+      "translation": "Struttura sempre disponibile"
+    },
+    {
+      "messageId": "benefits[1].description",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "b84adb57f113822f2aa75ddb88b0178b24dfeca445a4115cdbc30e65c397eee5",
+      "sourceText": "Memorable 4-step rhythm you can use at your desk, during transit, or on the sidelines.",
+      "translation": "Un ritmo in 4 fasi facile da ricordare, da usare alla scrivania, durante gli spostamenti o a bordo campo."
+    },
+    {
+      "messageId": "benefits[2].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "e87bf6fa79aee79a28910ae689ce880a4e0a8804ddebe336dda1bd86dcb67357",
+      "sourceText": "Flexible dosing",
+      "translation": "Durata flessibile"
+    },
+    {
+      "messageId": "benefits[2].description",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "cbcee37155eb38b77e8ffe4a327ce6428deb2195df25ba5386e612926fa5ddbb",
+      "sourceText": "Adjust counts (3–6 s) or remove holds to keep comfort and CO₂ balance.",
+      "translation": "Regola i tempi (3–6 s) oppure elimina le pause per mantenere comfort ed equilibrio della CO₂."
+    },
+    {
+      "messageId": "practiceTips[0].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "ae91c6862e7f7201bda20048599ab50f103b72d62be55d4a916eef9ac5435f49",
+      "sourceText": "Comfort over intensity",
+      "translation": "Il comfort prima dell'intensità"
+    },
+    {
+      "messageId": "practiceTips[0].description",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "690b19f649a8bf35d5fde7f1a33e6c96af2dc4b4cd70a52b747b9e2111a95e8c",
+      "sourceText": "Start at 3–4-second sides. If you feel air hunger or dizziness, shorten holds or skip them and keep breaths light and quiet.",
+      "translation": "Inizia con fasi da 3–4 secondi. Se avverti fame d'aria o vertigini, accorcia le pause o eliminale e mantieni respiri leggeri e silenziosi."
+    },
+    {
+      "messageId": "practiceTips[1].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "628a0de9bc16c1f23dd3855dedd6241cc355a1f20516b88650b7d75a64dba42b",
+      "sourceText": "Nasal, quiet, low",
+      "translation": "Dal naso, piano e in basso"
+    },
+    {
+      "messageId": "practiceTips[1].description",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "3c6a5626e7b6d0f2427750e73018a9f3b8c8c44e2bd0769b5252dd146e610abd",
+      "sourceText": "Inhale through the nose with a gentle belly rise; soften the jaw and shoulders; exhale unforced through nose or pursed lips.",
+      "translation": "Inspira dal naso lasciando sollevare delicatamente l'addome; rilassa mascella e spalle; espira senza sforzo dal naso o a labbra socchiuse."
+    },
+    {
+      "messageId": "practiceTips[2].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "cd5d76c1ebb7a7a5c98d08512f68917ad4506956b731bc086ef8c7dce9c439d0",
+      "sourceText": "Short sets, repeat",
+      "translation": "Serie brevi, da ripetere"
+    },
+    {
+      "messageId": "practiceTips[2].description",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "97b823285feddac38e30ad89cb1a8ea5f9916ce9943afdc7ce36b7ab06fd40ab",
+      "sourceText": "Run 60–180 seconds, check in, then add another set if helpful.",
+      "translation": "Pratica per 60–180 secondi, fai il punto su come ti senti e aggiungi un'altra serie se ti è utile."
+    },
+    {
+      "messageId": "faqs[0].question",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "d2a35164b6e134ca6b671f848a15c6dea399e1a0a0eb5b1bb5fe2504ecec2e2f",
+      "sourceText": "Does box breathing increase HRV as well as other patterns?",
+      "translation": "La respirazione quadrata aumenta l'HRV quanto gli altri schemi?"
+    },
+    {
+      "messageId": "faqs[0].answer",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "8b60a87bff859349176e2f35ade67ec6196a459ab90e3f3a7ebc8c11aa7d7602",
+      "sourceText": "Slow breathing generally increases vagally mediated HRV. A 2025 comparative study found 6 breaths/min (with equal or slightly longer exhales) increased HRV more than square (box) or 4-7-8 in healthy young adults, with a small risk of over-breathing at 6 bpm. Practically: box breathing is still effective for many users and may be easier to adhere to; if your goal is maximal HRV amplitude, try equal in/out at ~5–6 breaths/min with minimal or no holds.",
+      "translation": "La respirazione lenta in genere aumenta l'HRV mediata dal nervo vago. Uno studio comparativo del 2025 ha rilevato che 6 respiri/min (con espirazioni uguali o leggermente più lunghe) aumentavano l'HRV più della respirazione quadrata o della tecnica 4-7-8 in giovani adulti sani, con un lieve rischio di iperventilazione a 6 bpm. In pratica, la respirazione quadrata resta efficace per molte persone e può essere più facile da seguire; se il tuo obiettivo è la massima ampiezza dell'HRV, prova inspirazione ed espirazione uguali a circa 5–6 respiri/min, con pause minime o assenti."
+    },
+    {
+      "messageId": "faqs[1].question",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "17c708e8fccf0cba38f1d22a2f4eb818c2329867d8ded8bb00e6fb966cb52c14",
+      "sourceText": "How many cycles and how often should I practice?",
+      "translation": "Quanti cicli devo fare e con quale frequenza?"
+    },
+    {
+      "messageId": "faqs[1].answer",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "00d33e087cc43ae60e4fb09e345a9415d407e5a224bad6dd856ed331b870d51d",
+      "sourceText": "For quick resets, use 1–3 minutes (about 4–10 cycles at 4-4-4-4). For deeper effects, stack 5–10 minutes of slow, comfortable breathing daily. Reviews of breathing interventions suggest sessions ≥5 minutes and repeated practice over weeks outperform one-off, very short sessions for stress reduction.",
+      "translation": "Per un reset rapido, pratica 1–3 minuti (circa 4–10 cicli a 4-4-4-4). Per effetti più profondi, accumula 5–10 minuti di respirazione lenta e confortevole ogni giorno. Le revisioni degli interventi respiratori suggeriscono che sessioni di durata ≥5 minuti e una pratica ripetuta per diverse settimane riducono lo stress più di sessioni uniche e molto brevi."
+    },
+    {
+      "messageId": "faqs[2].question",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "0a5432652feb00a9cd14ba1fad46e132bc3d7e408bc8d978555ee8f531f5c796",
+      "sourceText": "Are the holds necessary?",
+      "translation": "Le pause sono necessarie?"
+    },
+    {
+      "messageId": "faqs[2].answer",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "28d87a6986d47332d0056ffe9f942b50dcf8f58e2a58eedae7d91819b83a723b",
+      "sourceText": "No. Benefits mainly come from slow, smooth pacing. Holds can help some people focus but may feel uncomfortable or air-hungry for others. If holds feel strained, especially during pregnancy or with cardiac/pulmonary conditions, shorten them or omit holds. Keep an even inhale/exhale at a comfortable rate.",
+      "translation": "No. I benefici derivano soprattutto da un ritmo lento e fluido. Le pause possono aiutare alcune persone a concentrarsi, ma per altre possono essere scomode o causare fame d'aria. Se trattieni il respiro con sforzo, soprattutto in gravidanza o in presenza di patologie cardiache o polmonari, accorcia le pause oppure eliminale. Mantieni inspirazione ed espirazione regolari a un ritmo confortevole."
+    },
+    {
+      "messageId": "faqs[3].question",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "4f6be31ce27049c3228086cf1904e8b325f5c07160d4ed39097e5aefe4b4a11a",
+      "sourceText": "Is box breathing safe in pregnancy?",
+      "translation": "La respirazione quadrata è sicura in gravidanza?"
+    },
+    {
+      "messageId": "faqs[3].answer",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "e14e47646136d8c269b866b31466b199f6232633eb7b0c8d857176261825e41d",
+      "sourceText": "Gentle, continuous breathing is generally recommended; many prenatal guidelines advise avoiding prolonged or forceful breath holding. If you’re pregnant, favor short, easy counts and skip holds. Stop if you feel dizzy or breathless and consult your clinician for personalized advice.",
+      "translation": "In genere si consiglia una respirazione dolce e continua; molte linee guida prenatali raccomandano di evitare di trattenere il respiro a lungo o con forza. In gravidanza, preferisci tempi brevi e facili ed elimina le pause. Fermati se avverti vertigini o mancanza di fiato e consulta il medico per un consiglio personalizzato."
+    },
+    {
+      "messageId": "faqs[4].question",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "f5f61dc61208348408481dd489eefa251b7be95230c72b6f8bff017483200b09",
+      "sourceText": "I felt light-headed. What went wrong?",
+      "translation": "Ho avuto un capogiro. Che cosa è successo?"
+    },
+    {
+      "messageId": "faqs[4].answer",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "268d9143e8197529c7abe3315f889f098c0d6afcb1a68e57d42d45a9c9547bd0",
+      "sourceText": "Likely over-breathing (exhaling more CO₂ than you produce). Fixes: make breaths smaller and quieter, shorten holds, switch to equal in/out without holds, or pause and resume later. Capnometry studies in HRV training monitor this risk; you can self-monitor by prioritizing comfort over depth.",
+      "translation": "Probabilmente hai respirato troppo (espellendo più CO₂ di quanta ne produci). Possibili rimedi: fai respiri più piccoli e silenziosi, accorcia le pause, passa a inspirazione ed espirazione uguali senza pause oppure fermati e riprendi più tardi. Gli studi sulla capnometria nell'allenamento dell'HRV monitorano questo rischio; puoi controllarlo da solo dando priorità al comfort rispetto alla profondità."
+    },
+    {
+      "messageId": "faqs[5].question",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "3bec29fc65f003e11c5bb50671fafffe85787c83432cb9c433cb079bcc1beeaf",
+      "sourceText": "Why do Navy SEALs use box breathing?",
+      "translation": "Perché i Navy SEAL usano la respirazione quadrata?"
+    },
+    {
+      "messageId": "faqs[5].answer",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "5b6226e1c34b68ece8dae59007377112642a394907b913726afac41556ad8669",
+      "sourceText": "Navy SEALs use box breathing because it's simple to remember under stress and reliably activates the parasympathetic nervous system within 60–90 seconds. Mark Divine, a retired SEAL Commander, introduced it to BUD/S training after using it himself during deployments. SEALs practice it before missions, during stressful evolutions like underwater drownproofing, and whenever they need to stay calm and think clearly. The structured 4-count rhythm gives the mind something to focus on, which prevents spiraling thoughts, while the slow pace physiologically lowers heart rate and cortisol. It's been battle-tested in the most high-stakes situations imaginable.",
+      "translation": "I Navy SEAL usano la respirazione quadrata perché è facile da ricordare sotto stress e attiva in modo affidabile il sistema nervoso parasimpatico entro 60–90 secondi. Mark Divine, ex comandante dei SEAL, l'ha introdotta nell'addestramento BUD/S dopo averla usata durante le missioni. I SEAL la praticano prima delle missioni, durante evoluzioni impegnative come la sopravvivenza subacquea e ogni volta che devono restare calmi e pensare con lucidità. Il ritmo strutturato in 4 tempi offre alla mente qualcosa su cui concentrarsi e impedisce ai pensieri di avvitarsi, mentre il ritmo lento abbassa fisiologicamente la frequenza cardiaca e il cortisolo. È stata messa alla prova in alcune delle situazioni più impegnative che si possano immaginare."
+    },
+    {
+      "messageId": "howTo.totalTime",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "65ad412aba8e37a6e0342004dd2cbedd0670def224be4784c7ff0ca72585a5b1",
+      "sourceText": "2–5 minutes",
+      "translation": "2–5 minuti"
+    },
+    {
+      "messageId": "howTo.difficulty",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "97c10efe01d5c9c88704a12d361d8429b3a6aa2412290a0773109d5d2d603d5e",
+      "sourceText": "easy",
+      "translation": "facile"
+    },
+    {
+      "messageId": "howTo.tools[0]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "62964eb8e185d53602cab306178b138e24a3800b42af546648bdd3369353df7e",
+      "sourceText": "Chair or comfortable seat",
+      "translation": "Sedia o seduta comoda"
+    },
+    {
+      "messageId": "howTo.tools[1]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "106570559fda8d2f5a104a59b69253581d17ce97fd24963cce8f3fa556223ee2",
+      "sourceText": "On-screen timer or haptics (optional)",
+      "translation": "Timer sullo schermo o segnali aptici (facoltativo)"
+    },
+    {
+      "messageId": "howTo.steps[0].name",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "7f89f5fa777cf22633bffcb7f82970d25b81da1b0a485544e59c952e61e04105",
+      "sourceText": "Set posture",
+      "translation": "Imposta la postura"
+    },
+    {
+      "messageId": "howTo.steps[0].instruction",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "3ca4227f0ac7ec1f1c57293302c9b86f6e185043a44e897ec32a8746f7508e1f",
+      "sourceText": "Sit tall, shoulders soft, mouth closed, breathe through the nose.",
+      "translation": "Siediti con la schiena eretta, le spalle morbide, la bocca chiusa e respira dal naso."
+    },
+    {
+      "messageId": "howTo.steps[0].duration",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "2fd135f2609dd110489b66e46779596756155390f0b223bba655fedea70ddaff",
+      "sourceText": "10–15 seconds",
+      "translation": "10–15 secondi"
+    },
+    {
+      "messageId": "howTo.steps[1].name",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "a98c8351a6cce155e66374e8f6653d89d35e73bafa1c9d80d1bd18e566a892fd",
+      "sourceText": "Inhale",
+      "translation": "Inspira"
+    },
+    {
+      "messageId": "howTo.steps[1].instruction",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "54b97554be3efd3db47378a6c9124ae2e8b3a64d7b5ca0cdd68da7e485b74b40",
+      "sourceText": "Inhale gently through the nose; low belly rises.",
+      "translation": "Inspira dolcemente dal naso; l'addome si solleva."
+    },
+    {
+      "messageId": "howTo.steps[1].duration",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+      "sourceText": "4 seconds",
+      "translation": "4 secondi"
+    },
+    {
+      "messageId": "howTo.steps[2].name",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "8ab301ccdf210b6f635cad8c56fdc4a7f31bd70f06a6157e567adb8cfe89e1bf",
+      "sourceText": "Hold (top)",
+      "translation": "Trattieni (in alto)"
+    },
+    {
+      "messageId": "howTo.steps[2].instruction",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "fc919a9d864cef043236b2fd232a2813fc9ea7efa2f75d45c1fff292a5d8062d",
+      "sourceText": "Pause lightly; no straining.",
+      "translation": "Fai una pausa leggera, senza sforzarti."
+    },
+    {
+      "messageId": "howTo.steps[2].duration",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+      "sourceText": "4 seconds",
+      "translation": "4 secondi"
+    },
+    {
+      "messageId": "howTo.steps[3].name",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "e88a77f4628f356a7be4f00a2a34d4e78c049e91f344fe84d86a92f78fb48906",
+      "sourceText": "Exhale",
+      "translation": "Espira"
+    },
+    {
+      "messageId": "howTo.steps[3].instruction",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "13008358de2cbd7beae2baafe11f601556e5214fc075760faf059ac3a41626cc",
+      "sourceText": "Exhale quietly (nose or pursed lips); belly falls.",
+      "translation": "Espira piano (dal naso o a labbra socchiuse); l'addome si abbassa."
+    },
+    {
+      "messageId": "howTo.steps[3].duration",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+      "sourceText": "4 seconds",
+      "translation": "4 secondi"
+    },
+    {
+      "messageId": "howTo.steps[4].name",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "07daf87864c6f41ed84a218e86dffa204e41be52f2088c4415642bf6f43861fa",
+      "sourceText": "Hold (bottom)",
+      "translation": "Trattieni (in basso)"
+    },
+    {
+      "messageId": "howTo.steps[4].instruction",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "55bed71066511ee2f987bd5fbb60018b81c9fd2fbdb5dc0fdd0d5fb073729f35",
+      "sourceText": "Pause lightly; stay relaxed.",
+      "translation": "Fai una pausa leggera e resta rilassato."
+    },
+    {
+      "messageId": "howTo.steps[4].duration",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+      "sourceText": "4 seconds",
+      "translation": "4 secondi"
+    },
+    {
+      "messageId": "howTo.steps[5].name",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "b6b7a0065808a62e7d5781b356c5ddba4e000433c34b5d561d200158a4443eb1",
+      "sourceText": "Repeat",
+      "translation": "Ripeti"
+    },
+    {
+      "messageId": "howTo.steps[5].instruction",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "0796e50c7d1bb99b386f75f3ef9badd02da16cd465d1b4aa5a4393eec55c4d64",
+      "sourceText": "Continue for 6–12 cycles. If uncomfortable, shorten counts or remove holds.",
+      "translation": "Continua per 6–12 cicli. Se ti senti a disagio, accorcia i tempi oppure elimina le pause."
+    },
+    {
+      "messageId": "howTo.steps[5].duration",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "c3335b5c8b7fdfbd15045eb500d633c01fd697964f23fa4137f9e19fc895697b",
+      "sourceText": "1–4 minutes",
+      "translation": "1–4 minuti"
+    },
+    {
+      "messageId": "useCases[0].name",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "4d23ca59aa2b96702aef2167b1010b4a0f1b78dfbc6af5d5e4aa5a939527970b",
+      "sourceText": "Pre-meeting composure",
+      "translation": "Calma prima di una riunione"
+    },
+    {
+      "messageId": "useCases[0].description",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "453233b959d7cde860afc16757edb209017da2077599f1e5d569e2fdba1903d8",
+      "sourceText": "One minute to reduce arousal and clear attention before you speak.",
+      "translation": "Un minuto per ridurre l'attivazione e schiarire l'attenzione prima di parlare."
+    },
+    {
+      "messageId": "useCases[0].dose",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "512516ecee7d592815e4824faa9116ce1900b2ce31d504da8e91783bdc75737a",
+      "sourceText": "60–90 seconds at 3–4 s per side",
+      "translation": "60–90 secondi con 3–4 s per fase"
+    },
+    {
+      "messageId": "useCases[1].name",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "e54adde0f58c71d2faceed7a0bbba96b5886edff06bc5e64099d0778a78191f0",
+      "sourceText": "Between tasks reset",
+      "translation": "Reset tra un'attività e l'altra"
+    },
+    {
+      "messageId": "useCases[1].description",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "a1b4e26db944423e7a7c1cb7714b98eb7c7c2de0da914eec8fd9a13ebff4dcb4",
+      "sourceText": "Brief pattern break to shift state between focus blocks.",
+      "translation": "Una breve interruzione dello schema per cambiare stato tra due blocchi di concentrazione."
+    },
+    {
+      "messageId": "useCases[1].dose",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "3a6bae7f00006170b0f20f119182208716afb8941b3beadecff230d0d5a39b0a",
+      "sourceText": "2 minutes at 4–5 s per side",
+      "translation": "2 minuti con 4–5 s per fase"
+    },
+    {
+      "messageId": "useCases[2].name",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "7d419e125e5d930fb737ba99513c7bac19bc7a7c3dace715e1bd0a4b8f3ab83e",
+      "sourceText": "Wind-down before bed",
+      "translation": "Rilassarsi prima di dormire"
+    },
+    {
+      "messageId": "useCases[2].description",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "7b53320341836d6111975117cb21d58e6df2ef28ae89535849475349dbcb5f7a",
+      "sourceText": "Ease into relaxation; remove holds if they feel edgy at night.",
+      "translation": "Accompagna il corpo verso il rilassamento; elimina le pause se la sera ti rendono inquieto."
+    },
+    {
+      "messageId": "useCases[2].dose",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "b428b092d1686837a777c12a3d1ead237e85b3cd48bce6178fb5c4683523e8ab",
+      "sourceText": "3 minutes at 3–4 s per side, holds optional",
+      "translation": "3 minuti con 3–4 s per fase, pause facoltative"
+    },
+    {
+      "messageId": "research.studies[0].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "c746addbc88a03a64324d7005fef50d91e99ad215aa662b26ee327699a5fc67f",
+      "sourceText": "Laborde et al., 2022 meta-analysis (VSB → vmHRV)",
+      "translation": "Laborde et al., 2022, meta-analisi (VSB → vmHRV)"
+    },
+    {
+      "messageId": "research.studies[0].summary",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "a8861c51363e114d2aef29be77b113c06b757eee58bfca87019d5beb20e7c0d0",
+      "sourceText": "Systematic review/meta-analysis found voluntary slow breathing increases vagally mediated HRV during sessions, acutely after a session, and after multi-session training.",
+      "translation": "Una revisione sistematica e meta-analisi ha rilevato che la respirazione lenta volontaria aumenta l'HRV mediata dal nervo vago durante le sessioni, subito dopo una sessione e dopo un allenamento composto da più sessioni."
+    },
+    {
+      "messageId": "research.studies[1].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "9fb8f588d2900b9ff8dc3312fb1011cd3554d3b179f55bb9ecf3d09198cd9deb",
+      "sourceText": "Marchant et al., 2025 comparative trial",
+      "translation": "Marchant et al., 2025, studio comparativo"
+    },
+    {
+      "messageId": "research.studies[1].summary",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "7d87008c0d508ba3cd072b151b339e028c3efccbeef2fb4a3a48997026ab2fa7",
+      "sourceText": "In 84 adults, 6 breaths/min increased HRV more than square (box) or 4-7-8; no meaningful BP or mood changes; mild over-breathing occurred at 6 bpm.",
+      "translation": "In 84 adulti, 6 respiri/min hanno aumentato l'HRV più della respirazione quadrata (box) o 4-7-8; non sono emersi cambiamenti rilevanti nella pressione o nell'umore; a 6 bpm si è verificata una lieve iperventilazione."
+    },
+    {
+      "messageId": "research.studies[2].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "9766c655c897b843bb8a3fb1f3848e887ecd264e7863ee6b1dcca707bb469e6e",
+      "sourceText": "Steffen et al., 2017 RCT (resonance vs +1 vs control)",
+      "translation": "Steffen et al., 2017, studio randomizzato (risonanza vs +1 vs controllo)"
+    },
+    {
+      "messageId": "research.studies[2].summary",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "cc5c1dc96a44b144c6968fd685e8918534cd2d8b01292fe93411d8636ab01f62",
+      "sourceText": "Resonance-frequency breathing improved HRV and reduced blood-pressure reactivity to a stressor vs control; mood improved post-practice.",
+      "translation": "La respirazione alla frequenza di risonanza ha migliorato l'HRV e ridotto la reattività della pressione sanguigna a un fattore di stress rispetto al controllo; l'umore è migliorato dopo la pratica."
+    },
+    {
+      "messageId": "research.studies[3].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "5fb7e8aff3a81734b8be0b1965464557336608a7879127ef21670e102f711638",
+      "sourceText": "Fincham et al., 2023 meta-analysis (breathwork & stress)",
+      "translation": "Fincham et al., 2023, meta-analisi (respirazione e stress)"
+    },
+    {
+      "messageId": "research.studies[3].summary",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "30aa010ab613ea9b5d1d1b0bf0c9e1d281ad82261a7468c70af221b4f81525bc",
+      "sourceText": "Across RCTs, breathwork produced small-to-moderate reductions in subjective stress, anxiety, and depressive symptoms vs non-breathwork controls.",
+      "translation": "Negli studi randomizzati controllati, la respirazione ha prodotto riduzioni da piccole a moderate dello stress soggettivo, dell'ansia e dei sintomi depressivi rispetto ai controlli senza esercizi respiratori."
+    },
+    {
+      "messageId": "research.safety[0]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "2cae9e260c82b77a12bc4a117c383569a415c2f76c3de34a86c9240519776504",
+      "sourceText": "Prioritize comfort: smaller, quieter breaths; avoid straining on holds.",
+      "translation": "Dai priorità al comfort: respiri più piccoli e silenziosi; evita di sforzarti durante le pause."
+    },
+    {
+      "messageId": "research.safety[1]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "1057c574dfa86cbf2a920cf28dfbf8e4e137ed356cb428c3f73e856a753c3ea7",
+      "sourceText": "Pregnancy: avoid prolonged/forceful breath holding; favor gentle continuous breathing.",
+      "translation": "Gravidanza: evita di trattenere il respiro a lungo o con forza; preferisci una respirazione dolce e continua."
+    },
+    {
+      "messageId": "research.safety[2]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "df40bfee8e0329ddebbf6ad82cdca6a4ddd508076cff863d2645e3d1fc740f07",
+      "sourceText": "Cardiopulmonary disease, uncontrolled hypertension, syncope history: avoid strong holds; practice seated and consult a clinician.",
+      "translation": "In caso di patologie cardiopolmonari, ipertensione non controllata o precedenti di sincope, evita apnee forzate; pratica da seduto e consulta un professionista sanitario."
+    },
+    {
+      "messageId": "research.safety[3]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "a04e5ea9d22e4afed5ea1ca6793edf058cbb77a3f9eb0b8219b35a6d14d21185",
+      "sourceText": "Stop if dizzy, tingly, or chest-tight; resume with shorter counts or remove holds.",
+      "translation": "Fermati se avverti vertigini, formicolio o oppressione al petto; riprendi con tempi più brevi o elimina le pause."
+    },
+    {
+      "messageId": "related[0].reason",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "e388ab4716b08a9d696fc78c69a37d8df8bd3a324d4e2ced14d49064740e9913",
+      "sourceText": "For maximal HRV amplitude, equal in/out at ~5–6 breaths/min with minimal holds often outperforms box.",
+      "translation": "Per la massima ampiezza dell'HRV, la respirazione con inspirazione ed espirazione uguali a circa 5–6 respiri/min e pause minime spesso supera quella quadrata."
+    },
+    {
+      "messageId": "related[1].reason",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "eec6c484d4c41d97a928af1ccbf235d7527865f3399fd309bbb268ff6c3d6a5c",
+      "sourceText": "Fast downshift during spikes of stress; 1–3 cycles can relieve acute arousal quickly.",
+      "translation": "Un rapido calo dell'attivazione durante i picchi di stress; 1–3 cicli possono ridurre rapidamente l'attivazione acuta."
+    },
+    {
+      "messageId": "related[2].reason",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "f37b60b3fc55e2e05f44b8681339cc55e2b85e20fc9fa92f72243c6794a1f7d5",
+      "sourceText": "Exhale-focused breathing that eases breathlessness and promotes calmer pacing.",
+      "translation": "Una respirazione concentrata sull'espirazione che allevia la mancanza di fiato e favorisce un ritmo più calmo."
+    },
+    {
+      "messageId": "related[3].reason",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "2a46dd75f0b31b83b7978d1a5959f30f74c97042eb905ff44fadd14db5bcbcbb",
+      "sourceText": "Ocean-breath focus for yoga sessions and steady, mindful breathing.",
+      "translation": "Concentrazione sul respiro oceanico per le sessioni di yoga e una respirazione stabile e consapevole."
+    },
+    {
+      "messageId": "related[4].reason",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "b808e6d5c26308ff77e236dd1ea5073261f5f935a085acae6535ffc50b995b09",
+      "sourceText": "Master belly breathing first as the foundation for all breathwork techniques.",
+      "translation": "Impara prima la respirazione addominale, la base di tutte le tecniche respiratorie."
+    },
+    {
+      "messageId": "relatedUseCases[0].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "324af3a7f1b77322470f4e5be00928e27075415a7baf6172996a4906ec9e9d00",
+      "sourceText": "Anxiety Relief",
+      "translation": "Sollievo dall'ansia"
+    },
+    {
+      "messageId": "relatedUseCases[0].teaser",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "302c09c1f882402d32619075f5bb276c7f07eb8f90823c305830dd91825268de",
+      "sourceText": "Stop racing thoughts and chest tightness with the Navy SEAL breathing method",
+      "translation": "Ferma i pensieri accelerati e l'oppressione al petto con il metodo respiratorio dei Navy SEAL"
+    },
+    {
+      "messageId": "relatedUseCases[1].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "9b869ecf2bb3bd49f924987953d5f370154145270e514b9c8f0bffe337c0732b",
+      "sourceText": "Public Speaking & Stage Fright",
+      "translation": "Parlare in pubblico e paura del palcoscenico"
+    },
+    {
+      "messageId": "relatedUseCases[1].teaser",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "49f8d926fb46bb95f861019dc350ab32ef23dd3ecd3bf3e6fdb55f6749c78090",
+      "sourceText": "The Navy SEAL method to stop stage fright in 60 seconds",
+      "translation": "Il metodo dei Navy SEAL per fermare la paura del palcoscenico in 60 secondi"
+    },
+    {
+      "messageId": "relatedUseCases[2].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "e2e8ba050cabfec2555b0977449364c1db969f405ddbe1fd56640d932c0f6b32",
+      "sourceText": "Breathing for Kids",
+      "translation": "Respirazione per bambini"
+    },
+    {
+      "messageId": "relatedUseCases[2].teaser",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "273d6ded582cd77306bb9401aaeed66917f0fc425885fbf1f990acd3ab92b3e9",
+      "sourceText": "Kid-friendly calming exercises that build the same slow-breathing habit",
+      "translation": "Esercizi calmanti adatti ai bambini che costruiscono la stessa abitudine alla respirazione lenta"
+    },
+    {
+      "messageId": "relatedGuides[0].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "cfcb63ef22f82e7dc7faa8c4030fa7e6aa26fadb4a15e0dd0ad3e77a18cf1bed",
+      "sourceText": "Box Breathing Before a Presentation",
+      "translation": "Respirazione quadrata prima di una presentazione"
+    },
+    {
+      "messageId": "relatedGuides[0].teaser",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "3cb2ecd5afb52a3ce93f9ac9f2e087aa3825a996dc96bc01d3c1eb7c009f0461",
+      "sourceText": "A practical protocol for using box breathing in the minutes before you speak — stop stage fright before it starts",
+      "translation": "Un protocollo pratico per usare la respirazione quadrata nei minuti prima di parlare e fermare la paura del palcoscenico prima che inizi"
+    },
+    {
+      "messageId": "relatedGuides[1].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "c3eae05e1a246a92f492e3b5cafa01fb508983dd778f3ceba96b08edfd446c07",
+      "sourceText": "Breathing Exercises Before Surgery",
+      "translation": "Esercizi di respirazione prima di un intervento chirurgico"
+    },
+    {
+      "messageId": "relatedGuides[1].teaser",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "1aad3cbf3db389cd3c05541725ba39ff49851c6f21603ca6aff6748d27e89b36",
+      "sourceText": "How to use box breathing to calm pre-surgical anxiety and prepare your body for a faster recovery",
+      "translation": "Come usare la respirazione quadrata per calmare l'ansia prima di un intervento e preparare il corpo a un recupero più rapido"
+    },
+    {
+      "messageId": "keywords[0]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "5a0058dc555e6cf62b19f5ccb523ecf3425c30867dbd4cf63c41ab094a82e462",
+      "sourceText": "box breathing",
+      "translation": "respirazione quadrata"
+    },
+    {
+      "messageId": "keywords[1]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "0d524d38e44b896ac374bab80a607c359d492b922f20394bdb118d6860ed7e2d",
+      "sourceText": "square breathing",
+      "translation": "respirazione a quadrato"
+    },
+    {
+      "messageId": "keywords[2]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "e5358b04b51df71abc3126272ac62af80449b23e0a0dccf04a21c872418e0a7b",
+      "sourceText": "4-4-4-4 breathing",
+      "translation": "respirazione 4-4-4-4"
+    },
+    {
+      "messageId": "keywords[3]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "45b24ee183aaa5589607bdbfd2bfe610542f84094a7fa8b9c2f388e451b8e73c",
+      "sourceText": "four-square breathing",
+      "translation": "respirazione a quattro lati"
+    },
+    {
+      "messageId": "keywords[4]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "dff95b92dfef14faec05e981242a177027ce00aa1d32563de17f436c40fb4c7c",
+      "sourceText": "equal breathing",
+      "translation": "respirazione con tempi uguali"
+    },
+    {
+      "messageId": "keywords[5]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "0c9c3a4c90d90715119e4e8e62774675dd7450cb41a2b406c3e11b3800f3db43",
+      "sourceText": "tactical breathing",
+      "translation": "respirazione tattica"
+    },
+    {
+      "messageId": "keywords[6]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "f20c1dc52891b3f178d7f5460ea9536e9a86662c2d3a7f23b305d0f8b7b0bba9",
+      "sourceText": "paced breathing",
+      "translation": "respirazione ritmata"
+    },
+    {
+      "messageId": "keywords[7]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "14e21b508c6a669bf511b3b7caed0175e5b3afb915b03a10798f7dc031d4f684",
+      "sourceText": "HRV breathing",
+      "translation": "respirazione per l'HRV"
+    },
+    {
+      "messageId": "keywords[8]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "d0b19588c452481db271823e1ee24d6ac755e422e159519384947ed146ff96de",
+      "sourceText": "breath holds",
+      "translation": "pause respiratorie"
+    },
+    {
+      "messageId": "keywords[9]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "3365f8ee4a6554dd6d5bc10d80b79d9f1132c785a0394a310d36ceeca9726b32",
+      "sourceText": "stress reduction breathing",
+      "translation": "respirazione per ridurre lo stress"
+    },
+    {
+      "messageId": "keywords[10]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "d2f4fc4b860a37625eba4de0baa20c6c92fcfc109d4f987a6282167cce116d9e",
+      "sourceText": "parasympathetic activation",
+      "translation": "attivazione parasimpatica"
+    },
+    {
+      "messageId": "keywords[11]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "55c55a6e6667430326b061eab020125a02919d6b8eedeffe6e338701940f262c",
+      "sourceText": "calming techniques",
+      "translation": "tecniche calmanti"
+    },
+    {
+      "messageId": "synonyms[0]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "0d524d38e44b896ac374bab80a607c359d492b922f20394bdb118d6860ed7e2d",
+      "sourceText": "square breathing",
+      "translation": "respirazione a quadrato"
+    },
+    {
+      "messageId": "synonyms[1]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "1c880e67e7ca21cd797952c77526cc577f30fcd2dd4185b0f4808a394d45b28a",
+      "sourceText": "four-square",
+      "translation": "a quattro lati"
+    },
+    {
+      "messageId": "synonyms[2]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "bd076b3335acae556c67df7e88fc02208c1fbcd66f9573552a7cda104f07ec18",
+      "sourceText": "4×4 breathing",
+      "translation": "respirazione 4×4"
+    },
+    {
+      "messageId": "synonyms[3]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "8aaf429cd85503b6e09121063c358327b7970bc8320fb530bd540a4aadde2eb5",
+      "sourceText": "4-4-4-4",
+      "translation": "4-4-4-4"
+    },
+    {
+      "messageId": "synonyms[4]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "dff95b92dfef14faec05e981242a177027ce00aa1d32563de17f436c40fb4c7c",
+      "sourceText": "equal breathing",
+      "translation": "respirazione con tempi uguali"
+    },
+    {
+      "messageId": "synonyms[5]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "60a2697e9f065cf3c217bbea097447d9aa3f3c3229ac0d525f66dd14125ae24b",
+      "sourceText": "sama vritti pranayama",
+      "translation": "pranayama sama vritti"
+    },
+    {
+      "messageId": "frequency",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "b25ee283ad36b89f6c2aaff0d806c536cccdb5412a201413a2d8910b977d52bb",
+      "sourceText": "Daily, 1–3 minutes for resets; optionally 5–10 minutes for HRV training",
+      "translation": "Ogni giorno, 1–3 minuti per i reset; facoltativamente 5–10 minuti per allenare l'HRV"
+    },
+    {
+      "messageId": "video.title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "68743215e02aee2c0a62c2b03d32c8780b671a853c8d2ca1d002ec4c93160f0c",
+      "sourceText": "Box Breathing with Mark Divine (Navy SEAL Commander)",
+      "translation": "Respirazione quadrata con Mark Divine (comandante dei Navy SEAL)"
+    },
+    {
+      "messageId": "video.description",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "28d4ffb0c7073206bde6fc09d5d087b59af64f9f69528af7fcb537793efe65b0",
+      "sourceText": "Former Navy SEAL Commander Mark Divine teaches the box breathing technique he introduced to BUD/S training: the same method SEALs use to stay calm under pressure.",
+      "translation": "L'ex comandante dei Navy SEAL Mark Divine insegna la tecnica della respirazione quadrata che ha introdotto nell'addestramento BUD/S: lo stesso metodo che i SEAL usano per restare calmi sotto pressione."
+    },
+    {
+      "messageId": "ownedVideo.title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "e116608416a30032660eb04e4710e9342343639fb0a06f2eb1ba36f6be314976",
+      "sourceText": "Box Breathing Timer: 5 Minutes (Square Breathing)",
+      "translation": "Timer per la respirazione quadrata: 5 minuti (respirazione a quadrato)"
+    },
+    {
+      "messageId": "ownedVideo.description",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "dbb1f03aac5d67857328901657f3cfa9bbce667e6b05cd5c2b489d69fa62d355",
+      "sourceText": "A 5-minute guided box breathing session using our interactive pacer. Follow the animated cue to inhale, hold, exhale, and hold for equal 4-second counts.",
+      "translation": "Una sessione guidata di respirazione quadrata di 5 minuti con il nostro pacer interattivo. Segui il segnale animato per inspirare, trattenere, espirare e trattenere per tempi uguali di 4 secondi."
+    },
+    {
+      "messageId": "voiceSearch[0].question",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "8cf58e996370a992d65e349cf3c5db284d4574ea99d6b3bf72c407460c3f91a5",
+      "sourceText": "What is box breathing?",
+      "translation": "Che cos'è la respirazione quadrata?"
+    },
+    {
+      "messageId": "voiceSearch[0].answer",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "59d845975c76e42f5a245306696e037b05d3120c4c33f2f85c6123dc41b0915a",
+      "sourceText": "Box breathing is a simple four-count pattern: inhale 4, hold 4, exhale 4, hold 4. The equal timing slows your breath, steadies attention, and activates the parasympathetic nervous system. Practice 1–3 minutes for a quick reset, or longer for deeper calm.",
+      "translation": "La respirazione quadrata è un semplice schema in quattro tempi: inspira 4, trattieni 4, espira 4, trattieni 4. La durata uguale rallenta il respiro, stabilizza l'attenzione e attiva il sistema nervoso parasimpatico. Pratica per 1–3 minuti per un reset rapido, oppure più a lungo per una calma più profonda."
+    },
+    {
+      "messageId": "voiceSearch[1].question",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "5e9c32c2cc11fec394ec6957ba1db2f98d5d4a82f5c1e973f3d27b899cf345af",
+      "sourceText": "How do Navy SEALs breathe?",
+      "translation": "Come respirano i Navy SEAL?"
+    },
+    {
+      "messageId": "voiceSearch[1].answer",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "a5ea7b7f973ab65c5f192dd1df0e1c5cc5d6a5db4751a1fa5d102dacc2c6537f",
+      "sourceText": "Navy SEALs use box breathing: inhale for 4 seconds, hold for 4 seconds, exhale for 4 seconds, hold for 4 seconds. This technique was introduced to BUD/S training by Commander Mark Divine. SEALs use it before missions, during stressful situations, and whenever they need to stay calm under pressure. The structured counting occupies the thinking brain while the slow rhythm activates the parasympathetic nervous system.",
+      "translation": "I Navy SEAL usano la respirazione quadrata: inspirano per 4 secondi, trattengono per 4 secondi, espirano per 4 secondi e trattengono per 4 secondi. Il comandante Mark Divine ha introdotto questa tecnica nell'addestramento BUD/S. I SEAL la usano prima delle missioni, nelle situazioni stressanti e ogni volta che devono restare calmi sotto pressione. Il conteggio strutturato impegna il cervello che ragiona, mentre il ritmo lento attiva il sistema nervoso parasimpatico."
+    },
+    {
+      "messageId": "chrome.pattern.og-alt",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "6f1018fb33123bebfe2d005370a9b86f98c25ffdcf9f8e474cae8beb196861b2",
+      "sourceText": "Box Breathing (4-4-4-4) Visualizer – Interactive breathing visualizer",
+      "translation": "Visualizzatore della respirazione quadrata (4-4-4-4) – visualizzatore interattivo della respirazione"
+    },
+    {
+      "messageId": "chrome.pattern.hero-share-text",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "d567015ad38c9821cc0b779879f284b6229b7cc48fa8e9503236b16c761f8c9f",
+      "sourceText": "Try this guided box breathing (4-4-4-4) visualizer exercise — it really helps.",
+      "translation": "Prova questo esercizio guidato di respirazione quadrata (4-4-4-4): è davvero utile."
+    },
+    {
+      "messageId": "chrome.pattern.share-section-text",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "6146bb1fc0bb7f92853ede4f826960687c885de092ad919b39cd08994f24633b",
+      "sourceText": "Know someone who could benefit from box breathing (4-4-4-4) visualizer? Send them a direct link.",
+      "translation": "Conosci qualcuno a cui potrebbe essere utile la respirazione quadrata (4-4-4-4)? Inviagli un link diretto."
+    },
+    {
+      "messageId": "chrome.pattern.related-coherent-title",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "4c6e34da239e136a2b5d96c1bc328ff0f810abfb71f7047ad9027d548b509101",
+      "sourceText": "Coherent Breathing Trainer",
+      "translation": "Allenatore di respirazione coerente"
+    },
+    {
+      "messageId": "chrome.pattern.related-physiological-sigh-title",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "b328eabea77dd51370eb8e6ce397ac46cee3df995cd9515e8a1a7e9b35e9bdd7",
+      "sourceText": "Physiological Sigh: Instant Stress Relief",
+      "translation": "Sospiro fisiologico"
+    },
+    {
+      "messageId": "chrome.pattern.related-pursed-lip-title",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "b44d6b2987526fe1ecca59bd20db1dfa5478a2ed3fd051905793342a73747bd2",
+      "sourceText": "Pursed Lip Breathing Technique",
+      "translation": "Tecnica di respirazione a labbra socchiuse"
+    },
+    {
+      "messageId": "chrome.pattern.related-ujjayi-title",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "e88e090f9492af5b6ac8f949913be4320488e5dacce3c448cd86b7e8fdb88c9f",
+      "sourceText": "Ujjayi Breathing: The Ocean Breath Technique",
+      "translation": "Respirazione Ujjayi: la tecnica del respiro oceanico"
+    },
+    {
+      "messageId": "chrome.pattern.related-belly-title",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "b0a5eb5ee5f57c475a7026cded2abb30698da9e3ccf7c5428a76b80d0d0bb6f1",
+      "sourceText": "Belly Breathing: Diaphragmatic Breathing Exercises",
+      "translation": "Respirazione addominale: esercizi di respirazione diaframmatica"
+    },
+    {
+      "messageId": "chrome.pattern.dedicated-box-app-action",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "7f77c1557f9441a20a2bcf9985050eae3c16380e63d8ef10af1f7aae4fdae7f4",
+      "sourceText": "Try the dedicated Box Breathing App →",
+      "translation": "Prova l'app dedicata alla respirazione quadrata →"
+    },
+    {
+      "messageId": "chrome.pattern.watch-learn",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "40e1861cc48912be3027a3830c17d93a321895ada79bd6327329461764245305",
+      "sourceText": "Watch & learn",
+      "translation": "Guarda e impara"
+    },
+    {
+      "messageId": "chrome.pattern.guided-session",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "ef54a61172d7faeb3e83c2be02a95845cdd4645923d4b2484a6ad7f06cb0d0d6",
+      "sourceText": "Guided session",
+      "translation": "Sessione guidata"
+    },
+    {
+      "messageId": "chrome.pattern.guided-session-description",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "2fdfac26a8bd88168b39579e21ce58c1c261da641443306b24f566d3a1d3c4b4",
+      "sourceText": "Watch the guided pacer session — the same exercise as above, recorded as a video you can follow anywhere.",
+      "translation": "Guarda la sessione guidata con il pacer: è lo stesso esercizio qui sopra, registrato in un video che puoi seguire ovunque."
+    },
+    {
+      "messageId": "chrome.pattern.in-depth-guides",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "bbce1f27d0f6dc1e621db13fcf94eafd36b1fe6deea8bab8f0b7614501f117f4",
+      "sourceText": "In-depth guides",
+      "translation": "Guide approfondite"
+    },
+    {
+      "messageId": "chrome.pattern.read-guide-action",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "28581d0b0eb308ea756a6511159dcb71badf8cda599db7d697f4de234afe500e",
+      "sourceText": "Read guide →",
+      "translation": "Leggi la guida →"
+    },
+    {
+      "messageId": "chrome.shared.brand-eyebrow",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+      "sourceText": "DEEP BREATHING EXERCISES",
+      "translation": "ESERCIZI DI RESPIRAZIONE PROFONDA"
+    },
+    {
+      "messageId": "chrome.shared.breadcrumb-home",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+      "sourceText": "Home",
+      "translation": "Home"
+    },
+    {
+      "messageId": "chrome.shared.date-last-updated",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+      "sourceText": "Last updated",
+      "translation": "Ultimo aggiornamento"
+    },
+    {
+      "messageId": "chrome.shared.date-reviewed-by",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+      "sourceText": "Reviewed by",
+      "translation": "Revisionato da"
+    },
+    {
+      "messageId": "chrome.shared.quick-sessions",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+      "sourceText": "Quick sessions",
+      "translation": "Sessioni rapide"
+    },
+    {
+      "messageId": "chrome.shared.quick-sessions-description",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+      "sourceText": "Short on time? Try a timed session:",
+      "translation": "Hai poco tempo? Prova una sessione a tempo:"
+    },
+    {
+      "messageId": "chrome.shared.one-minute",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+      "sourceText": "1 minute",
+      "translation": "1 minuto"
+    },
+    {
+      "messageId": "chrome.shared.two-minutes",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+      "sourceText": "2 minutes",
+      "translation": "2 minuti"
+    },
+    {
+      "messageId": "chrome.shared.five-minutes",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+      "sourceText": "5 minutes",
+      "translation": "5 minuti"
+    },
+    {
+      "messageId": "chrome.shared.share-exercise",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+      "sourceText": "Share this exercise",
+      "translation": "Condividi questo esercizio"
+    },
+    {
+      "messageId": "chrome.shared.safety-warning",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+      "sourceText": "Stop if dizzy, tingly, or chest-tight. Resume later with shorter, easier breaths.",
+      "translation": "Fermati se avverti vertigini, formicolio o oppressione al petto. Riprendi più tardi con respiri più brevi e facili."
+    },
+    {
+      "messageId": "chrome.shared.footer-techniques",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+      "sourceText": "Techniques",
+      "translation": "Tecniche"
+    },
+    {
+      "messageId": "chrome.shared.footer-guides",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+      "sourceText": "Guides",
+      "translation": "Guide"
+    },
+    {
+      "messageId": "chrome.shared.footer-app",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+      "sourceText": "App",
+      "translation": "App"
+    },
+    {
+      "messageId": "chrome.shared.footer-about",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+      "sourceText": "About",
+      "translation": "Informazioni"
+    },
+    {
+      "messageId": "chrome.shared.footer-about-abi",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+      "sourceText": "About Abi",
+      "translation": "Informazioni su Abi"
+    },
+    {
+      "messageId": "chrome.shared.footer-embed",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+      "sourceText": "Embed",
+      "translation": "Incorpora"
+    },
+    {
+      "messageId": "chrome.shared.footer-privacy",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+      "sourceText": "Privacy",
+      "translation": "Privacy"
+    },
+    {
+      "messageId": "chrome.pattern.breadcrumb-techniques",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "37b5f87273b794d1da69aca7c5bd665712303c9f0dcb428ad5a88923012e2b1c",
+      "sourceText": "Breathing Techniques",
+      "translation": "Tecniche di respirazione"
+    },
+    {
+      "messageId": "chrome.pattern.technique-overview",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "60bf6e41f9cfb46f95321125485042495264fabfd34ec662bda141d2fbf17455",
+      "sourceText": "Technique overview",
+      "translation": "Panoramica della tecnica"
+    },
+    {
+      "messageId": "chrome.pattern.benefit",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "0c0829d3e30125b0e9350631b17c2102c298265645d8252eefdc45831517521a",
+      "sourceText": "Benefit",
+      "translation": "Beneficio"
+    },
+    {
+      "messageId": "chrome.pattern.step-by-step",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "83c008a92e4280e61a22a6b6780ff90bcb3f05bed958ce97fe7408050d21ddad",
+      "sourceText": "Step-by-step",
+      "translation": "Passo dopo passo"
+    },
+    {
+      "messageId": "chrome.pattern.how-to-practice",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "2a9206c87d0f17f88f49ffb32c92a2d48d1e1ddbada1d216c854b73f9e666c42",
+      "sourceText": "How to practice",
+      "translation": "Come praticare"
+    },
+    {
+      "messageId": "chrome.pattern.how-to-description",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "19245bd9459b04747ca278ce4bc39e8ef933cff79ac31d197f2d076edd9d6657",
+      "sourceText": "Structured walkthrough pulled from the editorial brief.",
+      "translation": "Guida strutturata tratta dal brief editoriale."
+    },
+    {
+      "messageId": "chrome.pattern.total-time",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "f448bdef375a1f9e82b495d3228fc5c23a2acf6b986ffcf12e74094c14a4bc4d",
+      "sourceText": "Total time",
+      "translation": "Durata totale"
+    },
+    {
+      "messageId": "chrome.pattern.difficulty",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "be44133ed57f9e44f829282224b15981f033e9b0acc5458070e10104509eb398",
+      "sourceText": "Difficulty",
+      "translation": "Difficoltà"
+    },
+    {
+      "messageId": "chrome.pattern.tools",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "ea93d6a262ecb87a9fa4d09edbd7654c046597936a8e235fc3949eb01775ff99",
+      "sourceText": "Tools",
+      "translation": "Strumenti"
+    },
+    {
+      "messageId": "chrome.pattern.supplies",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "6be75605dc98cd51ce12599df98d8ecc5a24dbfb0acb0336228d3d7eea77f846",
+      "sourceText": "Supplies",
+      "translation": "Occorrente"
+    },
+    {
+      "messageId": "chrome.pattern.use-cases",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "ff27a991e8559d6a53024fb888d0b9f062f31154593bf4db2c6431ace2d7d05a",
+      "sourceText": "Use cases",
+      "translation": "Casi d'uso"
+    },
+    {
+      "messageId": "chrome.pattern.where-it-fits",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "f895e63320934fe16a50ff39692a90c084868ec6ff756d08a971b42f9f0242f4",
+      "sourceText": "Where it fits",
+      "translation": "Quando è indicata"
+    },
+    {
+      "messageId": "chrome.pattern.use-cases-description",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "200d003a07e004a353760d59dfb301e5a22d04b700c4fa5aaebf1ed07b82e305",
+      "sourceText": "Situations where this breathing cadence excels.",
+      "translation": "Situazioni in cui questo ritmo respiratorio dà il meglio."
+    },
+    {
+      "messageId": "chrome.pattern.suggested-frequency",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "5f6427c54ebaf87e89974b491feec81415318835960e501b9fda10c257d57b05",
+      "sourceText": "Suggested frequency",
+      "translation": "Frequenza consigliata"
+    },
+    {
+      "messageId": "chrome.pattern.practice-notes",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "966c14f18db88384cc9c484065e9148a7745b46aaf59b4f617c08b606d8b25d1",
+      "sourceText": "Practice notes",
+      "translation": "Note sulla pratica"
+    },
+    {
+      "messageId": "chrome.pattern.keep-it-gentle",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "4b3aff14432579cc38d0ae5eaebce559b7d08eb90aec6926a1435d7b1f4f8c8b",
+      "sourceText": "Keep it gentle",
+      "translation": "Procedi con delicatezza"
+    },
+    {
+      "messageId": "chrome.pattern.practice-notes-description",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "9c4dfaa2346b55e927f3b967c2e9d7d16d3311c8c56e551a9ef3f8f31b603ca7",
+      "sourceText": "Helpful reminders so the pattern stays sustainable day after day.",
+      "translation": "Promemoria utili per mantenere il ritmo sostenibile giorno dopo giorno."
+    },
+    {
+      "messageId": "chrome.pattern.faq",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+      "sourceText": "FAQ",
+      "translation": "Domande frequenti"
+    },
+    {
+      "messageId": "chrome.pattern.common-questions",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "dfb8a3d41335746f8b5879f9c3a372ecfa4d1e7b6495d7376f335084fa3c46f2",
+      "sourceText": "Common questions",
+      "translation": "Domande comuni"
+    },
+    {
+      "messageId": "chrome.pattern.faq-description",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "cac341e9fbdbeddc88ae5baaa72d5862ca026803916675fa95c879382425e8a1",
+      "sourceText": "Evidence-backed answers we hear from practitioners most often.",
+      "translation": "Risposte basate sulle evidenze alle domande che riceviamo più spesso da chi pratica."
+    },
+    {
+      "messageId": "chrome.pattern.research-safety",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "2bad807b4f017eae3c380287f5340b9257ef6f7e350b7a56c7ec86377941fa54",
+      "sourceText": "Research & safety",
+      "translation": "Ricerca e sicurezza"
+    },
+    {
+      "messageId": "chrome.pattern.what-evidence-says",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "6dff2aa4f71bdb673399f3689cdff90db2ef2b5978b67a86c6aea68a8da24f40",
+      "sourceText": "What evidence says",
+      "translation": "Cosa dicono le evidenze"
+    },
+    {
+      "messageId": "chrome.pattern.research-description",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "331557d6854d6ca5305b7f6d53fc18cedf75d0c398cfd2161a53427b8be001d7",
+      "sourceText": "Peer-reviewed highlights and guardrails pulled from the content brief.",
+      "translation": "Punti salienti sottoposti a revisione paritaria e indicazioni di sicurezza tratte dal brief."
+    },
+    {
+      "messageId": "chrome.pattern.study-highlights",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "f65e736d9839cab1eb3b9b67c04253c0639b2a9fd5944621b56c61fb617c93a4",
+      "sourceText": "Study highlights",
+      "translation": "Punti salienti degli studi"
+    },
+    {
+      "messageId": "chrome.pattern.safety-notes",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "7e092bf4ecfb7a89cf31e69503c4c2e56726061b4234e1a07b38b757f1e3a599",
+      "sourceText": "Safety notes",
+      "translation": "Note di sicurezza"
+    },
+    {
+      "messageId": "chrome.pattern.related-techniques",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "58ff22fb23c4b03c33d59472ca5863c357076f1b7b4e9b666525af213d69e363",
+      "sourceText": "Related techniques",
+      "translation": "Tecniche correlate"
+    },
+    {
+      "messageId": "chrome.pattern.related-use-cases",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "59d9b0677baf7f4ba4d8421daeba7c457a582292fdf2e5cce8aed7b1dc62f54b",
+      "sourceText": "Use case guides",
+      "translation": "Guide per obiettivo"
+    },
+    {
+      "messageId": "chrome.pattern.related-patterns",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "4f8c2a5e8574ad2710020a69b41eeafb1d1ad5d87f78241f5a1715c651fa723d",
+      "sourceText": "Related patterns",
+      "translation": "Ritmi correlati"
+    },
+    {
+      "messageId": "chrome.pattern.practice-action",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "aaefeb15dba1049f9e232401aa1729aa5582328b239ed15f7bdec1bd5cdf3c26",
+      "sourceText": "Practice →",
+      "translation": "Pratica →"
+    },
+    {
+      "messageId": "chrome.pattern.learn-more-action",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+      "sourceText": "Learn more →",
+      "translation": "Scopri di più →"
+    },
+    {
+      "messageId": "chrome.pattern.share-technique",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "37d5cf900d5f4c126284817e2f262b0536528ba9cfa0846ad0344b73f1e30455",
+      "sourceText": "Share this technique",
+      "translation": "Condividi questa tecnica"
+    }
+  ],
+  "schemaVersion": 1,
+  "translationMethod": "Luna-authored page copy with agent-reviewed interface additions; external native-language certification not performed.",
+  "sourceRoute": "/breathe/box"
+}

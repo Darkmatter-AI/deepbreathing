@@ -6,7 +6,6 @@ import {
   createTimerMetadataFromContent,
 } from "@/app/(site-en)/4-7-8-breathing-timer/timer-page";
 import {
-  SUPPORTED_LOCALES,
   TRANSLATED_LOCALES,
   buildHreflangAlternates,
   getLocaleByPrefix,
@@ -18,6 +17,7 @@ import {
 } from "@/i18n/content/bespoke/timer-4-7-8/server/load-timer-content";
 import type { NativeRouteRenderContext } from "@/i18n/render-context";
 import {
+  getNativeAvailableLocales,
   getNativeLocalizedRoutePaths,
   isNativeRoutePreviewable,
   isNativeRoutePublished,
@@ -80,7 +80,7 @@ export async function generateMetadata({
       languages: buildHreflangAlternates(
         siteUrl,
         request.canonicalPath,
-        SUPPORTED_LOCALES,
+        getNativeAvailableLocales(sourceRoute, request.linkMode),
       ),
     },
   };

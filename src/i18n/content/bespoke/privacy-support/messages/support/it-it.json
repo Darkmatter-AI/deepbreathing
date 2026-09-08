@@ -1,0 +1,60 @@
+{
+  "backLink": "Torna al visualizzatore →",
+  "breadcrumb": {
+    "current": "Assistenza",
+    "home": "Home"
+  },
+  "commonQuestions": {
+    "account": {
+      "answer": "No. L'app funziona senza account. Sessioni, statistiche e impostazioni vengono salvate localmente sul dispositivo. Crea un account solo se vuoi sincronizzare i dati tra più dispositivi.",
+      "question": "Ho bisogno di un account?"
+    },
+    "audio": {
+      "answer": "È una scelta intenzionale. L'app mantiene attivi i segnali audio così puoi respirare a occhi chiusi con il telefono in tasca. Puoi disattivare l'audio dalle impostazioni dell'app.",
+      "question": "Perché l'audio continua a essere riprodotto quando blocco lo schermo?"
+    },
+    "data": {
+      "bodyAfterLink": "per tutti i dettagli.",
+      "bodyBeforeLink": "No. I dati delle sessioni sono conservati sul dispositivo. Se crei un account, le statistiche delle sessioni vengono sincronizzate sui nostri server per mantenere la continuità tra dispositivi. Non vendiamo i dati. Consulta la nostra",
+      "linkLabel": "Informativa sulla privacy",
+      "question": "I miei dati sulla respirazione vengono condivisi?"
+    },
+    "deletion": {
+      "action": "Elimina l'account.",
+      "afterAction": "Ti invieremo un link di conferma prima di rimuovere definitivamente l'account e i dati della pratica sincronizzati.",
+      "beforeAction": "Apri il menu dell'account nell'app o sul sito web e scegli",
+      "question": "Come elimino il mio account?"
+    },
+    "medical": {
+      "answer": "No. Esercizi di respirazione profonda offre sessioni guidate basate su tecniche consolidate. Non è un dispositivo medico e non diagnostica, cura né previene alcuna condizione. Se hai problemi di salute, consulta un professionista sanitario prima di iniziare una nuova pratica di respirazione.",
+      "question": "È un'app medica?"
+    },
+    "title": "Domande frequenti"
+  },
+  "contact": {
+    "darkmatterLabel": "Darkmatter AI Labs",
+    "emailAddress": "hi@abiassi.com",
+    "emailAfter": "e ti risponderemo entro un giorno lavorativo.",
+    "emailBefore": "Scrivici a",
+    "teamBefore": "Puoi anche contattare il team tramite",
+    "title": "Contatti"
+  },
+  "hero": {
+    "eyebrow": "ESERCIZI DI RESPIRAZIONE PROFONDA",
+    "intro": "Siamo felici di aiutarti. Scrivici per qualsiasi domanda sull'app, sul tuo account o sui tuoi dati.",
+    "title": "Assistenza"
+  },
+  "metadata": {
+    "description": "Ricevi assistenza per Esercizi di respirazione profonda. Contattaci per domande sull'app, sul tuo account o sulla cancellazione dei dati.",
+    "imageAlt": "Assistenza",
+    "socialDescription": "Ricevi assistenza per Esercizi di respirazione profonda.",
+    "socialTitle": "Assistenza — Esercizi di respirazione profonda",
+    "title": "Assistenza",
+    "twitterDescription": "Ricevi assistenza per Esercizi di respirazione profonda.",
+    "twitterTitle": "Assistenza — Esercizi di respirazione profonda"
+  },
+  "safety": {
+    "body": "La sequenza di respirazione Wim Hof prevede iperventilazione intenzionale e trattenimento del respiro. Non trattenere il respiro in acqua o vicino all'acqua. Fermati se avverti vertigini o stordimento. Consulta un medico prima di iniziare se hai problemi cardiovascolari o respiratori oppure sei in gravidanza.",
+    "title": "Respirazione Wim Hof — nota di sicurezza"
+  }
+}

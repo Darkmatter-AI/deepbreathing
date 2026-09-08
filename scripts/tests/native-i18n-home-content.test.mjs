@@ -10,6 +10,7 @@ import {
 } from "../i18n/bespoke/compile-home-content.mjs";
 
 const contentRoot = new URL("../../src/i18n/content/bespoke/home/", import.meta.url);
+const expectedOutputLocales = [...HOME_LOCALES, "it-it"];
 
 function shapeOf(value) {
   if (value && typeof value === "object" && !Array.isArray(value)) {
@@ -31,14 +32,14 @@ test("compiles home content deterministically with catalog-backed coverage", asy
 
   assert.deepEqual(second.publication, first.publication);
   assert.deepEqual([...second.outputs], [...first.outputs]);
-  assert.equal(first.outputs.size, 8);
+  assert.equal(first.outputs.size, 9);
   assert.equal(first.publication.expectedMessages, 159);
-  assert.deepEqual(Object.keys(first.publication.locales), HOME_LOCALES);
+  assert.deepEqual(Object.keys(first.publication.locales), expectedOutputLocales);
   const expectedReplacementCounts = {
-    "de-de": 5,
+    "de-de": 7,
     "es-es": 13,
     "fr-fr": 4,
-    "ja-jp": 7,
+    "ja-jp": 11,
     "pt-br": 6,
   };
 
@@ -53,6 +54,16 @@ test("compiles home content deterministically with catalog-backed coverage", asy
     assert.equal(coverage.reviewedReplacementMessages, expectedReplacementCounts[locale]);
     assert.match(coverage.sha256, /^[a-f0-9]{64}$/);
   }
+
+  const italian = first.publication.locales["it-it"];
+  assert.equal(italian.catalogExact, 0);
+  assert.equal(italian.catalogNormalized, 0);
+  assert.equal(italian.overrideMessages, 0);
+  assert.equal(italian.replacementMessages, 0);
+  assert.equal(italian.resolvedMessages, 159);
+  assert.equal(italian.unresolved, 0);
+  assert.equal(italian.publishable, true);
+  assert.match(italian.sha256, /^[a-f0-9]{64}$/);
 });
 
 test("keeps localized bundles aligned with the canonical English shape", async () => {
@@ -63,7 +74,7 @@ test("keeps localized bundles aligned with the canonical English shape", async (
   ]);
 
   assert.equal(translatablePaths(bindings).length, 159);
-  for (const locale of HOME_LOCALES) {
+  for (const locale of expectedOutputLocales) {
     const localized = JSON.parse(build.outputs.get(`messages/${locale}.json`));
     assert.deepEqual(shapeOf(localized), shapeOf(source));
     assert.equal(localized.sections.modePicker.featured.box.displaySlug, "/box");
@@ -131,6 +142,12 @@ test("records provenance separately from unresolved catalog gaps", async () => {
       de.sections.modePicker.featured.fourSevenEight.cardTitle,
     );
   }
+  const italianProvenance = build.provenance.locales["it-it"];
+  assert.equal(Object.keys(italianProvenance).length, 159);
+  assert.equal(
+    italianProvenance["sections.modePicker.featured.fourSevenEight.cardTitle"].status,
+    "italian-pilot-reviewed",
+  );
 });
 
 test("applies documented typography normalization for hero start session", () => {
@@ -141,10 +158,10 @@ test("applies documented typography normalization for hero start session", () =>
 });
 
 test("checked-in home artifacts are current and runtime bundles contain no catalog identifiers", async () => {
-  assert.deepEqual(await checkHomeContentArtifacts(), { checked: 8, stale: [] });
+  assert.deepEqual(await checkHomeContentArtifacts(), { checked: 9, stale: [] });
   const publication = JSON.parse(await readFile(new URL("publication.json", contentRoot), "utf8"));
 
-  for (const locale of HOME_LOCALES) {
+  for (const locale of expectedOutputLocales) {
     const raw = await readFile(new URL(publication.locales[locale].path, contentRoot), "utf8");
     assert.doesNotMatch(
       raw,
@@ -160,7 +177,7 @@ test("home loader is server-only, literal, and fail-closed", async () => {
   );
 
   assert.equal(loader.startsWith('import "server-only";'), true);
-  assert.equal((loader.match(/import\("\.\.\/messages\//g) ?? []).length, 5);
+  assert.equal((loader.match(/import\("\.\.\/messages\//g) ?? []).length, 6);
   assert.match(loader, /publication\.json/);
   assert.match(loader, /!localeCoverage\.publishable/);
   assert.match(loader, /refusing English fallback/);

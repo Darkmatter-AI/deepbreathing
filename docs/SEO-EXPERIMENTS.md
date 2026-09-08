@@ -18,6 +18,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-09-08 | [Italian pilot and translation corrections](#2026-09-08-italian-pilot-and-translation-corrections) | Implemented in [PR #77](https://github.com/Darkmatter-AI/deepbreathing/pull/77); production verification pending |
 | 2026-08-30 | [Agent-Handoff Discoverability + Attribution](#2026-08-30-agent-handoff-discoverability--attribution) | 🔄 Implemented in PR [#72](https://github.com/Darkmatter-AI/deepbreathing/pull/72) — production verification pending |
 | 2026-07-27 | [Index Coverage Hygiene + Canonical-Hijack Recovery](#2026-07-27-index-coverage-hygiene--canonical-hijack-recovery) | 🔄 Implemented |
 | 2026-07-22 | [First-Load-JS Webpack Experiment (PR #31) — Production Outage Post-Mortem + Removal](#2026-07-22-first-load-js-webpack-experiment-pr-31--production-outage-post-mortem--removal) | ❌ Failed |
@@ -93,6 +94,22 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 ---
 
 ## Active Experiments
+
+### 2026-09-08: Italian Pilot and Translation Corrections
+
+**Hypothesis.** A complete Italian experience on a small, relevant route cohort can earn useful nonbrand search visits. Correcting objective errors in existing translations improves clarity without changing established URL identities or successful keyword targeting. One route-and-language publication policy will keep unfinished translations out of routes, alternate links and sitemaps.
+
+**Baseline.** Research captured September 7–8 using Ahrefs country Google estimates, finalized GSC and hostname/platform-filtered GA4. Production has 331 sitemap URLs across English and five translated languages, with no Italian URLs. For August 9–September 5, translated URL prefixes received 283 GSC clicks and 5,205 impressions. Japanese Tummo accounted for 176 clicks and 1,787 impressions and is a preservation priority. Italy received 3 country-level GSC clicks and 136 impressions; Italian browser-language users numbered 8 in GA4 with 6 users firing a session-start event. Browser language and country are different cohorts. Ahrefs Italy estimates are 6,800 monthly searches for “respirazione diaframmatica”, 1,700 for “esercizi di respirazione”, 700 for “respirazione quadrata”, 600 for “respirazione 4 7 8”, and 400 for “coerenza cardiaca”. Overlapping keyword volumes are not added and are not traffic forecasts.
+
+**Release scope.** Italian home, technique library, belly breathing, box breathing, 4-7-8 timer and coherent breathing, with translated controls, account prompts, privacy and support. Existing-language changes are source-faithful corrections, including clipped Spanish descriptions, French accents and VFC terminology, unclear German instructions, and Japanese count/typo corrections. Preserve the French coherent title and Japanese Tummo search positioning. No native mobile release is included.
+
+**Immediate gates.** Existing canonical URLs remain available. Each published Italian page returns 200 with Italian server-rendered content, self-canonical metadata, reciprocal alternates and no English fallback in the primary interaction. Unpublished Italian paths remain unavailable and are absent from language destinations, alternate links and sitemap entries. Internal links point to an available destination. Existing compiler checks and relevant tests pass. Desktop and mobile browser checks exercise the session controls and language navigation. Production is built from reviewed GitHub main.
+
+**Pre-committed outcome criteria.** At day 28, inspect all Italian pilot URLs for discovery, crawl and canonical status. At day 56, the learning threshold is at least 30 nonbrand GSC clicks to Italian pilot URLs and 10 users starting sessions on Italian pages. These are provisional decision thresholds, not a forecast. Below either threshold, classify as inconclusive and inspect query intent, indexation and session use before expanding; a persistent canonical or route defect is a release failure to fix immediately. Do not treat the breathing_session_end event as validated session completion. Measure the corrected existing-language cohort against the preceding finalized 28-day window, but retain correctness fixes independently of noisy CTR changes.
+
+**Measure after.** 2026-10-06 for indexing; 2026-11-03 for the initial growth decision, assuming September 8 deployment. Shift dates if deployment changes.
+
+**Status.** Implemented and locally verified in [PR #77](https://github.com/Darkmatter-AI/deepbreathing/pull/77) on `codex/languages-italian-20260908`, based on `main@12ae231`. Production verification and supported recrawl receipts will be recorded after release. Agent translation review is not native human certification.
 
 ### 2026-08-30: Agent-Handoff Discoverability + Attribution
 

@@ -12,6 +12,7 @@ const contentRoot = new URL(
   "../../src/i18n/content/bespoke/timer-4-7-8/",
   import.meta.url,
 );
+const expectedOutputLocales = [...TIMER_LOCALES, "it-it"];
 
 test("compiles complete timer content deterministically", async () => {
   const first = await buildTimerContentArtifacts();
@@ -19,9 +20,9 @@ test("compiles complete timer content deterministically", async () => {
 
   assert.deepEqual(second.publication, first.publication);
   assert.deepEqual([...second.outputs], [...first.outputs]);
-  assert.equal(first.outputs.size, 8);
+  assert.equal(first.outputs.size, 9);
   assert.equal(first.publication.expectedMessages, 176);
-  assert.deepEqual(Object.keys(first.publication.locales), TIMER_LOCALES);
+  assert.deepEqual(Object.keys(first.publication.locales), expectedOutputLocales);
   assert.deepEqual(first.unresolved.unresolved, []);
 
   for (const locale of TIMER_LOCALES) {
@@ -38,6 +39,16 @@ test("compiles complete timer content deterministically", async () => {
     );
     assert.match(coverage.sha256, /^[0-9a-f]{64}$/);
   }
+
+  const italian = first.publication.locales["it-it"];
+  assert.equal(italian.catalogExact, 0);
+  assert.equal(italian.catalogNormalized, 0);
+  assert.equal(italian.override, 0);
+  assert.equal(italian.replacement, 0);
+  assert.equal(italian.resolvedMessages, 176);
+  assert.equal(italian.unresolved, 0);
+  assert.equal(italian.publishable, true);
+  assert.match(italian.sha256, /^[0-9a-f]{64}$/);
 });
 
 test("keeps every locale aligned with the canonical English message IDs", async () => {
@@ -53,6 +64,12 @@ test("keeps every locale aligned with the canonical English message IDs", async 
       (value) => typeof value === "string" && value.trim(),
     ));
   }
+
+  const italian = JSON.parse(build.outputs.get("messages/it-it.json"));
+  assert.deepEqual(Object.keys(italian).sort(), sourceKeys);
+  assert.ok(Object.values(italian).every(
+    (value) => typeof value === "string" && value.trim(),
+  ));
 });
 
 test("records catalog, gap, and fidelity-replacement provenance separately", async () => {
@@ -77,13 +94,18 @@ test("records catalog, gap, and fidelity-replacement provenance separately", asy
     assert.ok(statuses.some((status) => status.startsWith("route-catalog")));
     assert.ok(statuses.includes("repo-reviewed-override"));
   }
+  assert.ok(
+    Object.values(build.provenance.locales["it-it"]).every(
+      ({ status }) => status === "italian-pilot-reviewed",
+    ),
+  );
 });
 
 test("checked-in timer artifacts are current and contain no catalog identifiers", async () => {
-  assert.deepEqual(await checkTimerContentArtifacts(), { checked: 8, stale: [] });
+  assert.deepEqual(await checkTimerContentArtifacts(), { checked: 9, stale: [] });
   const publication = JSON.parse(await readFile(new URL("publication.json", contentRoot), "utf8"));
 
-  for (const locale of TIMER_LOCALES) {
+  for (const locale of expectedOutputLocales) {
     const raw = await readFile(new URL(publication.locales[locale].path, contentRoot), "utf8");
     assert.doesNotMatch(
       raw,
@@ -99,7 +121,7 @@ test("timer loader is server-only, literal, and fails closed", async () => {
   );
 
   assert.equal(loader.startsWith('import "server-only";'), true);
-  assert.equal((loader.match(/import\("\.\.\/messages\//g) ?? []).length, 5);
+  assert.equal((loader.match(/import\("\.\.\/messages\//g) ?? []).length, 6);
   assert.match(loader, /publication\.json/);
   assert.match(loader, /!localeCoverage\.publishable/);
   assert.match(loader, /refusing English fallback/);

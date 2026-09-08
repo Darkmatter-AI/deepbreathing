@@ -23,6 +23,12 @@
           "resolvedMessages": 32,
           "sha256": "727d50503738150b952eb0758201cac372a6954ed9e23637387cd125d2745506"
         },
+        "it-it": {
+          "path": "messages/privacy/it-it.json",
+          "publishable": true,
+          "resolvedMessages": 32,
+          "sha256": "fa02973c56bbb1a3dd45dbfc2c200b4747cbeea845252aa5345831f9fa65f619"
+        },
         "ja-jp": {
           "path": "messages/privacy/ja-jp.json",
           "publishable": true,
@@ -65,6 +71,12 @@
           "publishable": true,
           "resolvedMessages": 36,
           "sha256": "d52811f0dc987dbbfea23c68fa416490e8f85038a5e52613b321dda999cf4799"
+        },
+        "it-it": {
+          "path": "messages/support/it-it.json",
+          "publishable": true,
+          "resolvedMessages": 36,
+          "sha256": "58649d60866b048e18bce0883ea518828b1b6831732d3712bc36242cf44e8423"
         },
         "ja-jp": {
           "path": "messages/support/ja-jp.json",

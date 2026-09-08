@@ -32,6 +32,16 @@ If any of these change, update this file FIRST, then update FUNNEL-DASHBOARD.md 
 
 ---
 
+## Current native-language release workflow (2026-09-08)
+
+The July native-language cutover supersedes the proxy-specific notes retained below. Current translated content is repository-owned and server-rendered. Do not deploy new translations through MassTranslate, infer English fallback from an old proxy observation, or warm the retired proxy cache. Verify the current route response and browser state.
+
+Production web releases must follow the `CLAUDE.md` provenance guard: review a branch, merge to GitHub `main`, then verify the Git integration's production deployment SHA and live aliases. Never promote a feature-branch deployment to production.
+
+For a partial language rollout, maintain one publication policy for routable pages, internal destinations, language choices, sitemap membership and alternate links. Registering a language does not make every translated page ready. Translate and review the complete interaction and safety copy for each published route.
+
+After verifying production, submit the canonical sitemap using the [Search Console Sitemaps API](https://developers.google.com/webmaster-tools/v1/sitemaps/submit). Google's [URL Inspection request-indexing flow](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl) supports a small priority cohort. The API for general URL inspection is read-only; the separate Google Indexing API does not support these pages. For Bing, use [IndexNow](https://www.indexnow.org/documentation) with the exact verified changed/new URLs. Submission acceptance is not proof of crawling or indexing. Existing postbuild automation fails closed on ambiguous shared or locale content changes; inspect its receipt before deciding whether an explicitly authorized exact-URL submission is needed.
+
 ## Per-task lookup table
 
 ### Pull GA4 funnel data

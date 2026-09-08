@@ -3,7 +3,7 @@
     {
       "currentCatalogValue": "生理的ため息は、体が本来持っている自然なストレス解消メカニズムであり、2023年のスタンフォード大学の研究（Balbanら、Cell Reports Medicine）によってその効果が実証されました。鼻から2回吸い、口から長く吐き出すという構成です。この研究では、1日5分間の継続的なため息が、気分の改善や不安の軽減においてマインドフルネス瞑想を上回る結果を示しました。深呼吸 効果を最大限に引き出すこの手法が効果的な理由は、2回目の吸気がしぼんだ肺胞を再膨張させ、長い吐気が副交感神経を活性化させるためです。",
       "locale": "ja-jp",
-      "reason": "The approved value contains an ungrammatical inserted SEO phrase that is not in the source.",
+      "reason": "The approved Japanese answer uses ambiguous “吐気” for exhalation; use unambiguous “呼気” and remove unsupported 478/Lamaze additions.",
       "replacement": "生理的ため息は、体が本来備えている自然なストレス緩和の仕組みで、2023年にスタンフォード大学の研究者が実施したランダム化比較試験（Balbanら、Cell Reports Medicine）で検証されました。鼻から2回吸い、その後口から長く吐きます。この研究では、毎日5分の周期的なため息が、気分改善と不安軽減においてマインドフルネス瞑想を上回りました。2回の吸気でつぶれた肺胞を再び膨らませ、長い呼気で副交感神経系を活性化するため、この技法は効果を発揮します。",
       "reviewedSourceHash": "f29acd883162a6047df1b081c21ea9a2882c5d8e26208165716eefcb90f1a63f",
       "sourcePath": "faqs[0].answer",
@@ -12,11 +12,101 @@
     {
       "currentCatalogValue": "生理的ため息とは、鼻から素早く2回吸い、その後ゆっくりとリラックスして吐き出す呼吸法です。2回目の吸気で肺を最大限に膨らませ、長い呼気が迷走神経を刺激してストレス反応を鎮めます。深呼吸 効果を実感したい時は1〜3回、気分を整えたい時は2〜5分間行いましょう。",
       "locale": "ja-jp",
-      "reason": "The approved value replaces 'instant relief' with an ungrammatical inserted SEO phrase.",
+      "reason": "The approved Japanese answer uses ambiguous “吐気” for exhalation; use unambiguous “呼気” and remove unsupported 478/Lamaze additions.",
       "replacement": "生理的ため息とは、鼻から素早く2回吸い、その後ゆっくりとリラックスして吐き出す呼吸法です。2回目の吸気で肺を十分に満たし、長い呼気が迷走神経を刺激してストレス反応を鎮めます。すぐに楽になるには1〜3回、気分を整えるには2〜5分間行います。",
       "reviewedSourceHash": "02ecb7ffb213d9edc4a292e1b9bcbc7d7a781293e8d01afc31df3873397b5edc",
       "sourcePath": "voiceSearch[0].answer",
       "sourceText": "Physiological sigh breathing is two quick nasal inhales followed by a long, relaxed exhale. The second inhale tops off the lungs, and the slow exhale activates the vagus nerve to calm the stress response. Do 1-3 sighs for instant relief or 2-5 minutes for mood."
+    },
+    {
+      "currentCatalogValue": "Für einen sofortigen Reset bei akutem Stress genügen normalerweise 1-3 physiologische Seufzer – viele Menschen verspüren bereits nach einem Erleichterung. Für eine nachhaltigere Praxis mit Trainingseffekten auf Stimmung und Stressresistenz sollten Sie 2-5 Minuten lang kontinuierlich zyklisch seufzen. Die Stanford-Studie verwendete täglich 5 Minuten. Beginnen Sie mit weniger Wiederholungen und steigern Sie nur, wenn es sich angenehm anfühlt.",
+      "locale": "de-de",
+      "reason": "The approved German answer says “nach einem Erleichterung”; add the missing noun so the sentence is grammatical.",
+      "replacement": "Für einen sofortigen Reset bei akutem Stress genügen normalerweise 1-3 physiologische Seufzer – viele Menschen verspüren bereits nach einem Seufzer Erleichterung. Für eine nachhaltigere Praxis mit Trainingseffekten auf Stimmung und Stressresistenz sollten Sie 2-5 Minuten lang kontinuierlich zyklisch seufzen. Die Stanford-Studie verwendete täglich 5 Minuten. Beginnen Sie mit weniger Wiederholungen und steigern Sie nur, wenn es sich angenehm anfühlt.",
+      "reviewedSourceHash": "8dc94fda851629758b53205c35c178cf462b11d69d08cfa0e82c696a954f6af3",
+      "sourcePath": "faqs[6].answer",
+      "sourceText": "For an immediate reset during acute stress, 1-3 physiological sighs is usually enough, many people feel relief after just one. For a more sustained practice with training effects on mood and stress resilience, do continuous cyclic sighing for 2-5 minutes. The Stanford study used 5 minutes daily. Start with fewer repetitions and increase only if it feels comfortable."
+    },
+    {
+      "currentCatalogValue": "生理的サイ：瞬時のストレス解消",
+      "locale": "ja-jp",
+      "reason": "The approved Japanese answer uses ambiguous “吐気” for exhalation; use unambiguous “呼気” and remove unsupported 478/Lamaze additions.",
+      "replacement": "生理的ため息：瞬時のストレス解消",
+      "reviewedSourceHash": "b328eabea77dd51370eb8e6ce397ac46cee3df995cd9515e8a1a7e9b35e9bdd7",
+      "sourcePath": "hero.title",
+      "sourceText": "Physiological Sigh: Instant Stress Relief"
+    },
+    {
+      "currentCatalogValue": "ダブル・インハイールテクニックで30秒でリラックス。",
+      "locale": "ja-jp",
+      "reason": "The approved Japanese answer uses ambiguous “吐気” for exhalation; use unambiguous “呼気” and remove unsupported 478/Lamaze additions.",
+      "replacement": "二段階吸気法で30秒でリラックス。",
+      "reviewedSourceHash": "fcf9a26d3382aadc6a535212a68211e158be619b293ac03612fd59766344aaeb",
+      "sourcePath": "hero.subtitle",
+      "sourceText": "Calm down in 30 seconds with the double-inhale technique."
+    },
+    {
+      "currentCatalogValue": "3つの呼吸法プロトコルとマインドフルネスを比較した1ヶ月間のランダム化比較試験では、呼吸法が気分を改善し、呼吸数をより減少させることがわかりました。特に吐気に焦点を当てた継続的なため息が最大の効果を示しました。また、整形外科の待合室で行われたパイロット試験では、4分間の音声ガイドによるため息が、対照群と比較して痛みの強さと不快感を軽減したことが示されています。これらは、短時間の毎日の実践が気分や急性の症状に有益であることを示唆しています。",
+      "locale": "ja-jp",
+      "reason": "The approved Japanese answer uses ambiguous “吐気” for exhalation; use unambiguous “呼気” and remove unsupported 478/Lamaze additions.",
+      "replacement": "3つの呼吸法プロトコルとマインドフルネスを比較した1ヶ月間のランダム化比較試験では、呼吸法が気分を改善し、呼吸数をより減少させることがわかりました。特に呼気に焦点を当てた継続的なため息が最大の効果を示しました。また、整形外科の待合室で行われたパイロット試験では、4分間の音声ガイドによるため息が、対照群と比較して痛みの強さと不快感を軽減したことが示されています。これらは、短時間の毎日の実践により、気分や急性症状に対して、速やかで控えめな効果が得られる可能性を示唆しています。",
+      "reviewedSourceHash": "09f7ed2f11ff2e4ee481a39ef5c28221408cd211a0ff50273b5c39c00415b894",
+      "sourcePath": "faqs[1].answer",
+      "sourceText": "A month-long randomized study comparing three breathwork protocols to mindfulness found breathwork improved mood and reduced respiratory rate more, with the exhale-focused cyclic sighing showing the largest gains. A pilot RCT in an orthopedic clinic waiting room found a 4-minute cyclic-sighing audio reduced pain intensity and unpleasantness vs. a time-matched control. Together these suggest quick, modest benefits for mood and acute symptoms with brief daily practice."
+    },
+    {
+      "currentCatalogValue": "優しく行えば、一般的に安全です。めまいがしやすい方は、座って練習してください。妊娠中の方（ラマーズ 法などの呼吸法に慣れている場合も含む）、心肺疾患や失神の既往がある方は、無理をせず呼吸を小さく保つ必要があります。立ちくらみを感じる場合は、過呼吸の可能性があります。吸気を小さくし、吐気をさらにゆっくりにするか、一旦中止して後で再開してください。",
+      "locale": "ja-jp",
+      "reason": "The approved Japanese answer uses ambiguous “吐気” for exhalation; use unambiguous “呼気” and remove unsupported 478/Lamaze additions.",
+      "replacement": "優しく行えば、一般的に安全です。めまいがしやすい方は、座って練習してください。妊娠中の方、心肺疾患や失神の既往がある方は、無理をせず呼吸を小さく保つ必要があります。立ちくらみを感じる場合は、過呼吸の可能性があります。吸気を小さくし、呼気をさらにゆっくりにするか、一旦中止して後で再開してください。",
+      "reviewedSourceHash": "b8781c34905975f7c4c1c6d82e703d6f6ba4ac87fd02c2e015d5a2372d100006",
+      "sourcePath": "faqs[4].answer",
+      "sourceText": "It's generally safe when done gently. Practice seated if you're prone to dizziness. People who are pregnant or have cardiopulmonary disease or syncope history should avoid straining and keep breaths small. Any light-headedness likely reflects over-breathing. Shrink the inhale and slow the exhale or stop and resume later."
+    },
+    {
+      "currentCatalogValue": "これらは目的の異なるツールです。研究では、吐気に焦点を当てた継続的なため息が、マインドフルネスと比較して気分と呼吸率の改善において最大の結果を示しましたが、ボックス呼吸も有効でした。数回の呼吸で素早くリラックスしたい場合はため息が好まれ、構造化されたペースや長時間のセッションにはボックス呼吸や478呼吸法、ラマーズ法、コヒーレント呼吸が適している場合があります。",
+      "locale": "ja-jp",
+      "reason": "The approved Japanese answer uses ambiguous “吐気” for exhalation; use unambiguous “呼気” and remove unsupported 478/Lamaze additions.",
+      "replacement": "これらは目的の異なるツールです。研究では、呼気に焦点を当てた継続的なため息が、マインドフルネスと比較して気分と呼吸数の改善において最大の結果を示しましたが、ボックス呼吸も有効でした。数回の呼吸で素早く楽になりたい場合はため息が好まれ、構造化されたペースや長時間のセッションにはボックス呼吸やコヒーレント呼吸が適している場合があります。",
+      "reviewedSourceHash": "ce01cf209fd4059c8a607ac77d6f8a30d9fb5cae7c003ff61a51adf7462b552f",
+      "sourcePath": "faqs[5].answer",
+      "sourceText": "They're tools for different aims. The RCT found exhale-focused cyclic sighing yielded the largest mood and respiration-rate improvements vs. mindfulness, with box breathing also helpful. For rapid relief in a few breaths, many prefer sighing; for structured pacing or longer sessions, box breathing or coherent breathing may suit better."
+    },
+    {
+      "currentCatalogValue": "吸気は鼻呼吸が推奨されます。鼻呼吸は空気をろ過し、温め、加湿するだけでなく、一酸化窒素の生成を促進する可能性があるためです。ただし、鼻詰まりなどで鼻呼吸が難しい場合は、口呼吸でも効果はあります。吐気は、口をすぼめて（「はぁー」とため息をつくように）吐き出すか、鼻から吐き出すか、より自然に感じられ、長くゆっくりと吐き出せる方を選んでください。",
+      "locale": "ja-jp",
+      "reason": "The approved Japanese answer uses ambiguous “吐気” for exhalation; use unambiguous “呼気” and remove unsupported 478/Lamaze additions.",
+      "replacement": "吸気は鼻呼吸が推奨されます。鼻呼吸は空気をろ過し、温め、加湿するだけでなく、一酸化窒素の生成を促進する可能性があるためです。ただし、鼻詰まりなどで鼻呼吸が難しい場合は、口呼吸でも効果はあります。呼気は、口をすぼめて（「はぁー」とため息をつくように）吐き出すか、鼻から吐き出すか、より自然に感じられ、長くゆっくりと吐き出せる方を選んでください。",
+      "reviewedSourceHash": "2dffcba5eb77695aa00049393a369d6e5d71a5186238b4c6681dc8cd5fcfc8d7",
+      "sourcePath": "faqs[7].answer",
+      "sourceText": "Nasal breathing is preferred for both inhales because it filters, warms, and humidifies the air, and may enhance nitric oxide production. However, the technique still works with mouth breathing if nasal congestion makes nose breathing difficult. The exhale can be through pursed lips (like sighing 'ahh') or through the nose, whichever feels more natural and allows a longer, slower release."
+    },
+    {
+      "currentCatalogValue": "はい。サイクリック・サイイングは、生理的ため息を連続して繰り返し行うことを指す研究用語です。1回の生理的ため息は、「2回の吸気と1回の長い吐気」で構成されます。これを2〜5分以上、構造化された練習として繋げたものがサイクリック・サイイングです。呼吸法と瞑想を比較したスタンフォード大学の研究では、この継続的な実践の正式名称として「サイクリック・フィジオロジカル・サイイング（継続的な生理的ため息）」が使われました。",
+      "locale": "ja-jp",
+      "reason": "The approved Japanese answer uses ambiguous “吐気” for exhalation; use unambiguous “呼気” and remove unsupported 478/Lamaze additions.",
+      "replacement": "はい。サイクリック・サイイングは、生理的ため息を連続して繰り返し行うことを指す研究用語です。1回の生理的ため息は、「2回の吸気と1回の長い呼気」で構成されます。これを2〜5分以上、構造化された練習として繋げたものがサイクリック・サイイングです。呼吸法と瞑想を比較したスタンフォード大学の研究では、この継続的な実践の正式名称として「サイクリック・フィジオロジカル・サイイング（継続的な生理的ため息）」が使われました。",
+      "reviewedSourceHash": "15db6acdc2e79850a4586cffebe36af671fdc7934dc7fe19f3b7d26426e6e0ad",
+      "sourcePath": "faqs[8].answer",
+      "sourceText": "Yes, cyclic sighing is the research term for repeatedly performing physiological sighs in sequence. A single physiological sigh is one double-inhale followed by a long exhale. Cyclic sighing strings these together for 2-5+ minutes as a structured practice. The Stanford study that compared breathwork to meditation used 'cyclic physiological sighing' as the formal name for this continuous practice."
+    },
+    {
+      "currentCatalogValue": "吸気を小さくするか、吐気をさらにゆっくりにするか、一時停止してください。深さよりも心地よさが優先です。",
+      "locale": "ja-jp",
+      "reason": "The approved Japanese answer uses ambiguous “吐気” for exhalation; use unambiguous “呼気” and remove unsupported 478/Lamaze additions.",
+      "replacement": "吸気を小さくするか、呼気をさらにゆっくりにするか、一時停止してください。深さよりも心地よさが優先です。",
+      "reviewedSourceHash": "cd1fefdf1a1f61363e42bfd3eb529d905197529941d4b8cc1a84627f03ce03aa",
+      "sourcePath": "practiceTips[2].description",
+      "sourceText": "Use smaller inhales, slower exhale, or pause. Comfort beats depth."
+    },
+    {
+      "currentCatalogValue": "1〜3サイクルの呼吸で、乱れた生理状態を遮断します。長めの吐気は興奮を素早く鎮めます。",
+      "locale": "ja-jp",
+      "reason": "The approved Japanese answer uses ambiguous “吐気” for exhalation; use unambiguous “呼気” and remove unsupported 478/Lamaze additions.",
+      "replacement": "1〜3サイクルの呼吸で、乱れた生理状態を遮断します。長めの呼気は興奮を素早く鎮めます。",
+      "reviewedSourceHash": "135610f250c162cb2bd186e9aaef84039d1fba51425a57b7d3d0cb1924903028",
+      "sourcePath": "useCases[0].description",
+      "sourceText": "Interrupt spiraling physiology with 1–3 cycles; longer exhales ease arousal quickly."
     }
   ],
   "schemaVersion": 1,

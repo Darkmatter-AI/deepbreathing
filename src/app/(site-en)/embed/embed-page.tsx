@@ -13,7 +13,10 @@ import {
   toEmbedGeneratorLocale,
 } from "@/i18n/content/bespoke/embed/types";
 import type { NativeRouteRenderContext } from "@/i18n/render-context";
-import { resolveNativeInternalHref } from "@/i18n/route-manifest";
+import {
+  isNativeRoutePublished,
+  resolveNativeInternalHref,
+} from "@/i18n/route-manifest";
 import { createOgImagePath } from "@/lib/seo/og-image";
 
 import { EmbedGenerator } from "./embed-generator";
@@ -27,7 +30,10 @@ const ogImage = createOgImagePath("Free Breathing Widget", {
 const localeOptionConfig: readonly {
   code: EmbedGeneratorLocaleCode;
   prefix: string;
-}[] = LOCALES.map((locale) => ({
+}[] = LOCALES.filter(
+  (locale) =>
+    locale.code === "en-US" || isNativeRoutePublished(sourceRoute, locale.code),
+).map((locale) => ({
   code: toEmbedGeneratorLocale(locale.code),
   prefix: locale.routePrefix ? `/${locale.routePrefix}` : "",
 }));

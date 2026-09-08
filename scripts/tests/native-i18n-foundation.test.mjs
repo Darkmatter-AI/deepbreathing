@@ -20,7 +20,7 @@ import {
 
 const SITE_URL = "https://deepbreathingexercises.com";
 
-test("locale registry defines the six native locales in display order", () => {
+test("locale registry defines the seven native locales in display order", () => {
   assert.deepEqual(SUPPORTED_LOCALES, [
     "en-US",
     "es-ES",
@@ -28,13 +28,14 @@ test("locale registry defines the six native locales in display order", () => {
     "fr-FR",
     "de-DE",
     "ja-JP",
+    "it-IT",
   ]);
   assert.equal(DEFAULT_LOCALE, "en-US");
-  assert.equal(LOCALES.length, 6);
-  assert.equal(TRANSLATED_LOCALES.length, 5);
+  assert.equal(LOCALES.length, 7);
+  assert.equal(TRANSLATED_LOCALES.length, 6);
   assert.deepEqual(
     LOCALES.map(({ routePrefix }) => routePrefix),
-    ["", "es", "pt", "fr", "de", "ja"]
+    ["", "es", "pt", "fr", "de", "ja", "it"]
   );
 });
 
@@ -49,9 +50,12 @@ test("locale definitions own labels, direction, HTML language, and hreflang", ()
     hreflang: "pt-BR",
     htmlLang: "pt-BR",
     direction: "ltr",
+    nativePublicationDefault: true,
   });
   assert.equal(getLocale("ja-JP").nativeLabel, "日本語");
   assert.ok(LOCALES.every(({ direction }) => direction === "ltr"));
+  assert.equal(getLocale("it-IT").direction, "ltr");
+  assert.equal(getLocale("it-IT").nativePublicationDefault, false);
 });
 
 test("locale resolution accepts tags, legacy casing, primary codes, and prefixes", () => {
@@ -59,13 +63,13 @@ test("locale resolution accepts tags, legacy casing, primary codes, and prefixes
   assert.equal(resolveLocaleCode("/ES/"), "es-ES");
   assert.equal(resolveLocaleCode("ja-jp"), "ja-JP");
   assert.equal(resolveLocaleCode("fr"), "fr-FR");
-  assert.equal(resolveLocaleCode("it"), null);
+  assert.equal(resolveLocaleCode("it"), "it-IT");
   assert.equal(isLocaleCode("de-DE"), true);
   assert.equal(isLocaleCode("de-de"), false);
   assert.equal(getLocaleByPrefix(""), getLocale("en-US"));
   assert.equal(getLocaleByPrefix("/ja/")?.code, "ja-JP");
-  assert.equal(getLocaleByPrefix("it"), null);
-  assert.throws(() => getLocale("it-IT"), /Unsupported locale/);
+  assert.equal(getLocaleByPrefix("it")?.code, "it-IT");
+  assert.equal(getLocale("it-IT").code, "it-IT");
 });
 
 test("URL prefixes keep English unprefixed and translations short", () => {
@@ -111,11 +115,13 @@ test("hreflang alternates share one canonical path and include x-default", () =>
     "fr-FR": `${SITE_URL}/fr/breathe/box`,
     "de-DE": `${SITE_URL}/de/breathe/box`,
     "ja-JP": `${SITE_URL}/ja/breathe/box`,
+    "it-IT": `${SITE_URL}/it/breathe/box`,
   });
 
   assert.deepEqual(buildHreflangAlternates(SITE_URL, "/", ["it-IT", "ja-JP"].filter(isLocaleCode)), {
     "en-US": `${SITE_URL}/`,
     "x-default": `${SITE_URL}/`,
+    "it-IT": `${SITE_URL}/it`,
     "ja-JP": `${SITE_URL}/ja`,
   });
 });

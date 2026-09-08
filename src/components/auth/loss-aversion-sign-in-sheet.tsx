@@ -8,10 +8,14 @@
  * proof, no fake streak. One rollback line: CHALLENGER_SHARE=0 in variant.ts.
  */
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { X, Check, Loader2, Activity } from "lucide-react";
 import { signIn } from "@/lib/auth-client";
 import { Sheet, SheetContent } from "@/components/ui/sheet";
+import {
+  createRuntimePhraseResolver,
+  type RuntimePhraseKey,
+} from "@/components/resonance/runtime-phrases";
 
 function trackEvent(name: string, params?: Record<string, string | number | boolean>) {
   if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
@@ -24,8 +28,10 @@ interface LossAversionSignInSheetProps {
   onOpenChange: (open: boolean) => void;
   onSuccess?: () => void;
   sessionMode: string;
+  localizedSessionMode?: string;
   sessionSeconds: number;
   accentColor?: string;
+  locale?: string;
 }
 
 const PREFIX = "cpl"; // conversion-prompt loss-aversion
@@ -41,13 +47,41 @@ export function LossAversionSignInSheet({
   onOpenChange,
   onSuccess,
   sessionMode,
+  localizedSessionMode,
   sessionSeconds,
   accentColor = "#f6743b",
+  locale = "en",
 }: LossAversionSignInSheetProps) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [emailOpen, setEmailOpen] = useState(false);
   const swapTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const phrases = useMemo(() => createRuntimePhraseResolver(locale), [locale]);
+  const t = (key: RuntimePhraseKey, vars?: Record<string, string | number>) =>
+    phrases.resolve(key, vars).text;
+  // Preserve the reviewed English Prompt C copy while giving every other
+  // locale a typed runtime fallback.
+  const sourceDefaults = {
+    eyebrow: "✓ SESSION COMPLETE",
+    justNow: "just now",
+    headline: "Keep tonight's calm.",
+    body: "Right now this session lives on this device only. A free account keeps it, and carries every minute after it onto any screen you pick up.",
+    google: "Continue with Google",
+    googleSub: "One tap. No password.",
+    emailAddress: "Email address",
+    emailPlaceholder: "Enter your email",
+    sendLink: "Send link",
+    error: "Something went wrong. Please try again.",
+    saveWithEmail: "or save with email",
+    notNow: "Not now",
+    checkEmail: "Check your email",
+    sentLinkTo: "We sent a link to",
+    you: "you",
+  };
+  const localized = (sourceValue: string, key: RuntimePhraseKey) =>
+    phrases.locale === "en" ? sourceValue : t(key);
+  const completionEyebrow =
+    phrases.locale === "en" ? sourceDefaults.eyebrow : `✓ ${t("session.complete")}`;
 
   useEffect(() => {
     if (open) trackEvent("signin_prompt_view", { variant: "loss_aversion" });
@@ -114,8 +148,8 @@ export function LossAversionSignInSheet({
         className="inset-0 flex items-center justify-center border-0 bg-transparent p-4 shadow-none outline-none"
       >
         <style>{CSS}</style>
-        <div className={`${PREFIX}-sheet`} role="dialog" aria-label="Create a free account">
-          <button className={`${PREFIX}-x`} onClick={handleClose} aria-label="Close">
+        <div className={`${PREFIX}-sheet`} role="dialog" aria-label={t("auth.create_free_account")}>
+          <button className={`${PREFIX}-x`} onClick={handleClose} aria-label={t("ui.close")}>
             <X size={17} />
           </button>
 
@@ -124,9 +158,9 @@ export function LossAversionSignInSheet({
               <div className={`${PREFIX}-check-ring`}>
                 <Check size={26} />
               </div>
-              <h3>Check your email</h3>
+              <h3>{localized(sourceDefaults.checkEmail, "auth.check_email")}</h3>
               <p>
-                We sent a link to <b>{email.trim() || "you"}</b>
+                {localized(sourceDefaults.sentLinkTo, "auth.sent_link_to")} <b>{email.trim() || localized(sourceDefaults.you, "auth.you")}</b>
               </p>
             </div>
           ) : (
@@ -163,23 +197,22 @@ export function LossAversionSignInSheet({
                   />
                 </div>
                 <div className={`${PREFIX}-card-text`}>
-                  <div className={`${PREFIX}-eyebrow`}>✓ SESSION COMPLETE</div>
-                  <div className={`${PREFIX}-mode`}>{sessionMode}</div>
+                  <div className={`${PREFIX}-eyebrow`}>{completionEyebrow}</div>
+                  <div className={`${PREFIX}-mode`}>
+                    {localizedSessionMode ?? sessionMode}
+                  </div>
                   <div className={`${PREFIX}-meta`}>
                     <span className={`${PREFIX}-dur`}>{duration}</span>
                     <span className={`${PREFIX}-dot`} aria-hidden="true">
                       ·
                     </span>
-                    <span>just now</span>
+                    <span>{localized(sourceDefaults.justNow, "auth.just_now")}</span>
                   </div>
                 </div>
               </div>
 
-              <h2 className={`${PREFIX}-title`}>Keep tonight&apos;s calm.</h2>
-              <p className={`${PREFIX}-sub`}>
-                Right now this session lives on this device only. A free account keeps it, and
-                carries every minute after it onto any screen you pick up.
-              </p>
+              <h2 className={`${PREFIX}-title`}>{localized(sourceDefaults.headline, "auth.save_progress_question")}</h2>
+              <p className={`${PREFIX}-sub`}>{localized(sourceDefaults.body, "auth.local_only")}</p>
 
               <button className={`${PREFIX}-google`} onClick={handleGoogle}>
                 <svg viewBox="0 0 24 24" className={`${PREFIX}-g-logo`} aria-hidden="true">
@@ -201,8 +234,8 @@ export function LossAversionSignInSheet({
                   />
                 </svg>
                 <span className={`${PREFIX}-g-text`}>
-                  <span className={`${PREFIX}-g-label`}>Continue with Google</span>
-                  <span className={`${PREFIX}-g-sub`}>One tap. No password.</span>
+                  <span className={`${PREFIX}-g-label`}>{localized(sourceDefaults.google, "auth.continue_google")}</span>
+                  <span className={`${PREFIX}-g-sub`}>{localized(sourceDefaults.googleSub, "auth.one_tap_no_password")}</span>
                 </span>
               </button>
 
@@ -213,8 +246,8 @@ export function LossAversionSignInSheet({
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Enter your email"
-                    aria-label="Email address"
+                    placeholder={localized(sourceDefaults.emailPlaceholder, "auth.enter_email")}
+                    aria-label={localized(sourceDefaults.emailAddress, "auth.email_address")}
                     required
                   />
                   <button
@@ -225,12 +258,12 @@ export function LossAversionSignInSheet({
                     {sending ? (
                       <Loader2 size={15} className={`${PREFIX}-spin`} />
                     ) : (
-                      "Send link"
+                      localized(sourceDefaults.sendLink, "auth.send_link")
                     )}
                   </button>
                 </form>
                 {status === "error" && (
-                  <p className={`${PREFIX}-err`}>Something went wrong. Please try again.</p>
+                  <p className={`${PREFIX}-err`}>{localized(sourceDefaults.error, "auth.something_went_wrong")}</p>
                 )}
               </div>
 
@@ -239,10 +272,10 @@ export function LossAversionSignInSheet({
                 onClick={() => setEmailOpen((v) => !v)}
                 aria-expanded={emailOpen}
               >
-                <span className={`${PREFIX}-u`}>or save with email</span>
+                <span className={`${PREFIX}-u`}>{localized(sourceDefaults.saveWithEmail, "auth.save_with_email")}</span>
               </button>
               <button className={`${PREFIX}-dismiss`} onClick={handleClose}>
-                Not now
+                {localized(sourceDefaults.notNow, "auth.not_now")}
               </button>
             </>
           )}

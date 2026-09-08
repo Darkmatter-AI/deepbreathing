@@ -260,6 +260,8 @@ test("metadata uses catalog head occurrences unless explicitly replaced", () => 
     const replacements = existsSync(replacementFile)
       ? json(replacementFile).replacements
       : [];
+    const manualFile = path.join(root, "manual", `${slug}.json`);
+    const manual = existsSync(manualFile) ? json(manualFile).entries : [];
     for (const locale of locales) {
       const content = json(path.join(root, "routes", locale, `${slug}.json`));
       const catalog = json(
@@ -296,7 +298,7 @@ test("metadata uses catalog head occurrences unless explicitly replaced", () => 
           : undefined;
         assert.equal(
           content.meta[field],
-          replacement?.replacement ?? proofCorrection ?? head.translation.text,
+          manual.find((entry) => entry.scope === "content" && entry.messageId === `meta.${field}`)?.translations?.[locale] ?? replacement?.replacement ?? proofCorrection ?? head.translation.text,
           `${locale}:${slug}:${field}`,
         );
       }

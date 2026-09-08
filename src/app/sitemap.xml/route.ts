@@ -2,7 +2,16 @@ import path from "node:path";
 
 import { breathingPages } from "@/data/breathing-pages";
 import { useCasePages } from "@/data/use-case-pages";
-import { buildSitemapEntries, EDGE_PROXY_LOCALE_PREFIXES } from "@/lib/seo/sitemap-routes";
+import { getLocaleByPrefix, TRANSLATED_LOCALES } from "@/i18n";
+import {
+  isNativeRoutePreviewable,
+  isNativeRoutePublished,
+} from "@/i18n/route-manifest";
+import { resolveNativeI18nMode } from "@/i18n/serving-mode";
+import {
+  buildSitemapEntries,
+  EDGE_PROXY_LOCALE_PREFIXES,
+} from "@/lib/seo/sitemap-routes";
 
 const siteUrl = "https://deepbreathingexercises.com";
 
@@ -12,11 +21,26 @@ function escapeXml(str: string): string {
 
 export function GET() {
   const appDir = path.join(process.cwd(), "src", "app");
+  const mode = resolveNativeI18nMode();
+  const isNativeMode = mode !== "proxy";
+  const localePrefixes = isNativeMode
+    ? TRANSLATED_LOCALES.map((locale) => locale.routePrefix)
+    : EDGE_PROXY_LOCALE_PREFIXES;
+  const localeAvailability = isNativeMode
+    ? (route: string, prefix: string) => {
+        const locale = getLocaleByPrefix(prefix);
+        if (!locale || !locale.routePrefix) return false;
+        return mode === "native-preview"
+          ? isNativeRoutePreviewable(route, locale.code)
+          : isNativeRoutePublished(route, locale.code);
+      }
+    : undefined;
 
   const entries = buildSitemapEntries({
     appDir,
     siteUrl,
-    localePrefixes: EDGE_PROXY_LOCALE_PREFIXES,
+    localePrefixes,
+    localeAvailability,
     breathingPageMeta: breathingPages.map((page) => ({
       slug: page.slug,
       dateModified: page.meta.dateModified,

@@ -1,0 +1,1423 @@
+{
+  "entries": [
+    {
+      "messageId": "lineage",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "27c70884287e06910f2603648d409dc0d9141a4883bdb862addcd5c07e98b409",
+      "sourceText": "There is no single originator. Diaphragm-led breathing is taught in clinical respiratory therapy, in pranayama (where it underlies most slower techniques), and in somatic and martial-arts traditions including tai chi. Different lineages converge on the same physiology.",
+      "translation": "Non esiste un unico ideatore. La respirazione guidata dal diaframma viene insegnata nella terapia respiratoria clinica, nel pranayama (dove è alla base della maggior parte delle tecniche più lente) e nelle tradizioni somatiche e delle arti marziali, compreso il tai chi. Percorsi diversi convergono sulla stessa fisiologia."
+    },
+    {
+      "messageId": "hero.title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "b0a5eb5ee5f57c475a7026cded2abb30698da9e3ccf7c5428a76b80d0d0bb6f1",
+      "sourceText": "Belly Breathing: Diaphragmatic Breathing Exercises",
+      "translation": "Respirazione addominale: esercizi di respirazione diaframmatica"
+    },
+    {
+      "messageId": "hero.subtitle",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "11dff425a0cd82f614f925c6ac0a5a02104485f73cbb80b4f4d691d9e96cdc79",
+      "sourceText": "The foundation of all breathwork: learn to breathe from your diaphragm.",
+      "translation": "La base di ogni pratica respiratoria: impara a respirare con il diaframma."
+    },
+    {
+      "messageId": "hero.intro",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "b09be2bd56aa3893229b5f243af3cd6a9f0e75603d2e5bad0de140fcaef882f0",
+      "sourceText": "Belly breathing (diaphragmatic breathing) is the most fundamental breathing technique and the foundation for all advanced breathwork. By engaging your diaphragm (the dome-shaped muscle below your lungs) you take deeper, more efficient breaths that activate your body's relaxation response.",
+      "translation": "La respirazione addominale (o respirazione diaframmatica) è la tecnica di respirazione più fondamentale e la base di ogni pratica avanzata. Attivando il diaframma (il muscolo a forma di cupola sotto i polmoni), puoi fare respiri più profondi ed efficienti che attivano la risposta di rilassamento del corpo."
+    },
+    {
+      "messageId": "meta.title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "4bc11fc1706fa5fff8d284228b7d19d2c0e85acbc83f7446316d8e2fe7bf2134",
+      "sourceText": "Belly Breathing: Diaphragmatic Breathing Exercises (Free Visualizer)",
+      "translation": "Respirazione addominale: esercizi di respirazione diaframmatica (visualizzatore gratuito)"
+    },
+    {
+      "messageId": "meta.description",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "8c778fbfdb1e5f998b332208cabecd7509f7ceeb0ccd7ae49bbd9776b73e74c1",
+      "sourceText": "Free belly breathing timer: learn diaphragmatic breathing, the foundation of all breathwork. Reduce stress in minutes. Start your guided session now.",
+      "translation": "Timer gratuito per la respirazione addominale: impara la respirazione diaframmatica, la base di ogni pratica respiratoria. Riduci lo stress in pochi minuti. Inizia ora la sessione guidata."
+    },
+    {
+      "messageId": "meta.ogTitle",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "2aa7093eac5d3a4423a29b90010dfb8b4c948f627383cf0dd46990e89872060d",
+      "sourceText": "Belly Breathing: The Foundation of All Breathwork",
+      "translation": "Respirazione addominale: la base di ogni pratica respiratoria"
+    },
+    {
+      "messageId": "meta.ogDescription",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "650abc74250d89584839ced7bd1ef19e595f79f481d6c31fa9e1868929499292",
+      "sourceText": "Learn diaphragmatic breathing: the technique that powers all other breathwork. Free visualizer + step-by-step guide.",
+      "translation": "Impara la respirazione diaframmatica, la tecnica alla base di ogni altra pratica respiratoria. Visualizzatore gratuito e guida passo passo."
+    },
+    {
+      "messageId": "meta.twitterTitle",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "b0a5eb5ee5f57c475a7026cded2abb30698da9e3ccf7c5428a76b80d0d0bb6f1",
+      "sourceText": "Belly Breathing: Diaphragmatic Breathing Exercises",
+      "translation": "Respirazione addominale: esercizi di respirazione diaframmatica"
+    },
+    {
+      "messageId": "meta.twitterDescription",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "4f003c168e5b0dfd53b7fe9e119c5cbbaa4d6596f16e1dcdf121bb21b48b0b8e",
+      "sourceText": "Learn the foundation of all breathwork. Free visualizer + complete guide.",
+      "translation": "Impara la base di ogni pratica respiratoria. Visualizzatore gratuito e guida completa."
+    },
+    {
+      "messageId": "body[0].heading",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "1f36becc3aa7c8a8893bc0688d52b8bef91dae5528528706003bc4f45e409f96",
+      "sourceText": "What it is",
+      "translation": "Che cos'è"
+    },
+    {
+      "messageId": "body[0].content",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "b678b5a2fad74db1ccff09c338000861bac4edae71e7f5863414b6965a3f4a3f",
+      "sourceText": "Belly breathing means using your diaphragm (not your chest and shoulders) to drive respiration. When you inhale, your diaphragm contracts and moves downward, creating a vacuum that pulls air into your lungs. Your belly expands outward. When you exhale, the diaphragm relaxes, pushing air out as your belly falls. The timing is 4 seconds in, 6 seconds out, with no holds.",
+      "translation": "La respirazione addominale consiste nell'usare il diaframma (e non il petto e le spalle) per guidare la respirazione. Quando inspiri, il diaframma si contrae e si sposta verso il basso, creando un vuoto che richiama aria nei polmoni. L'addome si espande verso l'esterno. Quando espiri, il diaframma si rilassa e spinge fuori l'aria mentre l'addome si abbassa. Il ritmo è di 4 secondi in inspirazione e 6 secondi in espirazione, senza pause."
+    },
+    {
+      "messageId": "body[1].heading",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "f2957ec0c217d86815828dffe280d1846de6dcc63d873eb5bcf049df2d109dc1",
+      "sourceText": "Belly Breathing vs Diaphragmatic Breathing",
+      "translation": "Respirazione addominale e respirazione diaframmatica"
+    },
+    {
+      "messageId": "body[1].content",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "10cfabc201672819bc7191ea205fae316da265d845fee1a757654ff9a6afe981",
+      "sourceText": "Belly breathing and diaphragmatic breathing are the same technique. 'Belly breathing' describes the visible belly rise; 'diaphragmatic breathing' describes the muscle doing the work. If your belly expands while your chest stays quiet, you're doing it right.",
+      "translation": "La respirazione addominale e la respirazione diaframmatica sono la stessa tecnica. «Respirazione addominale» descrive il sollevamento visibile dell'addome; «respirazione diaframmatica» descrive il muscolo che compie il lavoro. Se l'addome si espande mentre il petto resta fermo, la stai eseguendo correttamente."
+    },
+    {
+      "messageId": "body[2].heading",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "b8bda68d857404025331f350734afd63ce3b28e4faa85cc651fb7895408a1032",
+      "sourceText": "Why it matters",
+      "translation": "Perché è importante"
+    },
+    {
+      "messageId": "body[2].content",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "9a2706985fc3554960cf436c5f5c3dac5ef9f9fb84648d9901e6e47cb1c662f8",
+      "sourceText": "Most adults have shifted to shallow chest breathing, especially under stress. Chest breathing uses accessory muscles (shoulders, neck) inefficiently and can perpetuate anxiety. Diaphragmatic breathing is how you breathed as a baby and how you breathe during deep sleep. Relearning this pattern can reduce stress, improve oxygen efficiency, and support better sleep.",
+      "translation": "La maggior parte degli adulti è passata a una respirazione toracica superficiale, soprattutto sotto stress. La respirazione toracica usa in modo inefficiente i muscoli accessori (spalle e collo) e può alimentare l'ansia. La respirazione diaframmatica è il modo in cui respiravi da neonato e durante il sonno profondo. Reimparare questo schema può ridurre lo stress, usare l'ossigeno in modo più efficiente e favorire un sonno migliore."
+    },
+    {
+      "messageId": "body[3].heading",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "d5b67bc930cd33c0c62c478cb250387d18e05304ba7d0e02fd1acea699044d20",
+      "sourceText": "Benefits",
+      "translation": "Benefici"
+    },
+    {
+      "messageId": "body[3].content",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "e63b8cf339f8b2f8fd5be04694249cedca5e18b68322f9338caf6a52d9c08b70",
+      "sourceText": "Deep diaphragmatic breaths stimulate the vagus nerve, activating the parasympathetic 'rest and digest' response. [Studies show regular practice can lower cortisol](https://doi.org/10.3389/fpsyg.2017.00874), reduce blood pressure, improve heart rate variability, and decrease anxiety. It's also the foundation for singing, public speaking, and athletic performance.",
+      "translation": "I respiri diaframmatici profondi stimolano il nervo vago e attivano la risposta parasimpatica di «riposo e digestione». [Gli studi mostrano che la pratica regolare può ridurre il cortisolo](https://doi.org/10.3389/fpsyg.2017.00874), abbassare la pressione sanguigna, migliorare la variabilità della frequenza cardiaca e ridurre l'ansia. È anche la base per il canto, il parlare in pubblico e la prestazione atletica."
+    },
+    {
+      "messageId": "body[4].heading",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "5c06b51a4d33dd354e9a862dc06e40a051cda2eac3aa766442fe48332e988be0",
+      "sourceText": "When to use",
+      "translation": "Quando usarla"
+    },
+    {
+      "messageId": "body[4].content",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "f60564584e8837350b56dbc14b2403fa165092d79a9d214685d35bbda936756c",
+      "sourceText": "Anytime you want to calm down, before bed, during stress, or when learning any other breathing technique. This is the 'default' healthy breathing pattern, ideally, your normal breathing should look like gentle belly breathing.",
+      "translation": "Ogni volta che vuoi calmarti, prima di dormire, durante i momenti di stress o quando impari un'altra tecnica di respirazione. Questo è lo schema di respirazione sana «predefinito»: idealmente, la tua respirazione normale dovrebbe essere una respirazione addominale dolce."
+    },
+    {
+      "messageId": "body[5].heading",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "bea84d0de87830b33d6e2182090c7a17372c98cb5371ebcabc8dc3bbe5d724c4",
+      "sourceText": "When to skip",
+      "translation": "Quando evitarla"
+    },
+    {
+      "messageId": "body[5].content",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "b3535d7f80cd2af44a6fbeef782643a8722a1c4a18a86654b900f3ee9500ec6c",
+      "sourceText": "Belly breathing is safe for almost everyone. However, if you have a hiatal hernia, recent abdominal surgery, or severe respiratory conditions, consult your doctor first. Stop if you feel any pain or unusual discomfort.",
+      "translation": "La respirazione addominale è sicura per quasi tutti. Tuttavia, se hai un'ernia iatale, hai subito di recente un intervento addominale o soffri di gravi patologie respiratorie, consulta prima il medico. Fermati se avverti dolore o un disagio insolito."
+    },
+    {
+      "messageId": "body[6].heading",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "3e1db306f4e0a02f89969a91f9cc3b5abb94fd549e996c9f11b7156a33bc4a8b",
+      "sourceText": "Belly Breathing vs Chest Breathing",
+      "translation": "Respirazione addominale e respirazione toracica"
+    },
+    {
+      "messageId": "body[6].content",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "bad2821bb3495e457e24c7c55bc59e90a2be1d8fccfbf6ddf65daa4792a1f757",
+      "sourceText": "Most adults unknowingly breathe from their chest, shallow, rapid breaths that use shoulder and neck muscles. This pattern is inefficient and associated with chronic stress. Belly breathing (diaphragmatic breathing) uses your primary breathing muscle, is how you breathed as a baby, and is how you breathe during sleep. Quick test: place one hand on your chest, one on your belly. Breathe normally. If your chest hand rises more than your belly hand, you're chest breathing and could benefit from retraining. The goal isn't to force deep breaths. It's to let your belly do the work naturally.",
+      "translation": "La maggior parte degli adulti respira inconsapevolmente con il petto, usando respiri superficiali e rapidi che coinvolgono i muscoli delle spalle e del collo. Questo schema è inefficiente ed è associato allo stress cronico. La respirazione addominale (diaframmatica) usa il principale muscolo respiratorio, è il modo in cui respiravi da neonato e durante il sonno. Prova rapida: metti una mano sul petto e una sull'addome. Respira normalmente. Se la mano sul petto si solleva più di quella sull'addome, stai respirando con il petto e potresti trarre beneficio da una rieducazione. L'obiettivo non è forzare respiri profondi, ma lasciare che l'addome lavori in modo naturale."
+    },
+    {
+      "messageId": "benefits[0].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "020238aa5762bb8308b5329b349061563dafb4bb61faceb54afd6083020220be",
+      "sourceText": "Natural stress relief",
+      "translation": "Sollievo naturale dallo stress"
+    },
+    {
+      "messageId": "benefits[0].description",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "b2b8c23ec1083bd37a253511dfe7a9341b31904a0490db7a6b284772eefe63ff",
+      "sourceText": "Diaphragmatic breathing directly activates the vagus nerve, triggering the relaxation response within minutes.",
+      "translation": "La respirazione diaframmatica attiva direttamente il nervo vago e innesca la risposta di rilassamento in pochi minuti."
+    },
+    {
+      "messageId": "benefits[1].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "16628a7099bb975785a0d7b9e0b702f6e2d6280b554fc7bad0a77fcd1ea21092",
+      "sourceText": "More efficient breathing",
+      "translation": "Respirazione più efficiente"
+    },
+    {
+      "messageId": "benefits[1].description",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "014846c207d11f82a40e9fb5a368900173692d51b9a48542ccbe23e3b7bd47aa",
+      "sourceText": "The diaphragm is designed to power breathing: using it properly requires less effort than shallow chest breathing.",
+      "translation": "Il diaframma è progettato per alimentare la respirazione: usarlo correttamente richiede meno sforzo rispetto alla respirazione toracica superficiale."
+    },
+    {
+      "messageId": "benefits[2].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "af510c83792dca9c40888aff10a3d8b43a6fd2f11e2474da62fd6c3f60bf3920",
+      "sourceText": "Foundation for all breathwork",
+      "translation": "La base di ogni pratica respiratoria"
+    },
+    {
+      "messageId": "benefits[2].description",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "bc3b48f71b3eaa484beb047d25090f4767d6eb9d0bb8dfd7cf070af23a5ea0f5",
+      "sourceText": "Every advanced technique builds on diaphragmatic breathing. Master this and everything else becomes easier.",
+      "translation": "Ogni tecnica avanzata si basa sulla respirazione diaframmatica. Impara bene questa e tutto il resto diventerà più facile."
+    },
+    {
+      "messageId": "practiceTips[0].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "e3b406e91363714dfddc45e753183cc56d95e99948d20ef207d6344188615c65",
+      "sourceText": "Hand placement helps",
+      "translation": "La posizione delle mani aiuta"
+    },
+    {
+      "messageId": "practiceTips[0].description",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "a2c0a7b15ae79f7d1444e5d117fd05c131b69a5153fa54c476d0bc7c9cb70baa",
+      "sourceText": "Place one hand on your chest, one on your belly. Only the belly hand should rise. The chest stays relatively still.",
+      "translation": "Metti una mano sul petto e una sull'addome. Dovrebbe sollevarsi solo la mano sull'addome. Il petto resta relativamente fermo."
+    },
+    {
+      "messageId": "practiceTips[1].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "aa9880ccd29d59744a77654c76bdef9c9b9974f2d371d2ae973c3acf2e4feaaf",
+      "sourceText": "Start lying down",
+      "translation": "Inizia sdraiato"
+    },
+    {
+      "messageId": "practiceTips[1].description",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "b1f223c9d46f5dd37a66963d6993eb13318e3544c1d5381229d8b728e0e246d6",
+      "sourceText": "It's easiest to feel your diaphragm when lying on your back. Gravity helps the belly rise naturally.",
+      "translation": "È più facile percepire il diaframma quando sei sdraiato sulla schiena. La gravità aiuta l'addome a sollevarsi in modo naturale."
+    },
+    {
+      "messageId": "practiceTips[2].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "4b3aff14432579cc38d0ae5eaebce559b7d08eb90aec6926a1435d7b1f4f8c8b",
+      "sourceText": "Keep it gentle",
+      "translation": "Procedi con dolcezza"
+    },
+    {
+      "messageId": "practiceTips[2].description",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "df5b1c142789a3b41a03d192592f5287b5d180c1eae26799c75024c2a2532ed1",
+      "sourceText": "Don't force a big belly expansion. The movement should be smooth and comfortable, not exaggerated.",
+      "translation": "Non forzare una grande espansione dell'addome. Il movimento dovrebbe essere fluido e confortevole, senza esagerare."
+    },
+    {
+      "messageId": "faqs[0].question",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "e276a5e175a2a94dbe1c2cdc0fdcb993bd5ce63ece7fc4f20f78ae25d8912b43",
+      "sourceText": "What's the difference between belly breathing and diaphragmatic breathing?",
+      "translation": "Qual è la differenza tra respirazione addominale e respirazione diaframmatica?"
+    },
+    {
+      "messageId": "faqs[0].answer",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "581ca04120a5bc4a39ffc1645b02aa07b32748fa9c03b7346fb395c5c4468ff9",
+      "sourceText": "They're the same thing. 'Belly breathing' describes what you see (belly moving), while 'diaphragmatic breathing' describes what's happening anatomically (diaphragm contracting). Both terms refer to using your primary breathing muscle (the diaphragm) rather than accessory muscles in your chest and shoulders.",
+      "translation": "Sono la stessa cosa. «Respirazione addominale» descrive ciò che vedi (l'addome che si muove), mentre «respirazione diaframmatica» descrive ciò che accade a livello anatomico (il diaframma che si contrae). Entrambi i termini indicano l'uso del principale muscolo respiratorio, il diaframma, invece dei muscoli accessori del petto e delle spalle."
+    },
+    {
+      "messageId": "faqs[1].question",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "37d21bb8020b502d9506a22406a99dfdb447523fec447b8c38792f4aac1a103c",
+      "sourceText": "How do I know if I'm breathing from my diaphragm?",
+      "translation": "Come faccio a sapere se sto respirando con il diaframma?"
+    },
+    {
+      "messageId": "faqs[1].answer",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "de92df062bed2d7e0a6d98d1c8385e993717328614d4d2d395b9e258e073d6b7",
+      "sourceText": "Place one hand on your chest and one on your belly. When you inhale, your belly should expand outward while your chest stays relatively still. If your shoulders rise and chest expands but belly doesn't move much, you're chest breathing. Most people need to consciously relearn belly breathing after years of shallow habits.",
+      "translation": "Metti una mano sul petto e una sull'addome. Quando inspiri, l'addome dovrebbe espandersi verso l'esterno mentre il petto resta relativamente fermo. Se le spalle si sollevano e il petto si espande, ma l'addome si muove poco, stai respirando con il petto. Dopo anni di abitudini superficiali, la maggior parte delle persone deve reimparare consapevolmente la respirazione addominale."
+    },
+    {
+      "messageId": "faqs[2].question",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "7eb4cdf2c846b98bb93a603f5f152f9fbf9ac8d55b17432d6aeb7bc04a699654",
+      "sourceText": "Why is belly breathing better than chest breathing?",
+      "translation": "Perché la respirazione addominale è migliore di quella toracica?"
+    },
+    {
+      "messageId": "faqs[2].answer",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "8a2b3730fcf076d92a1d2d920c351fd8076053dbdc64ad6c25d23be4aebae2a1",
+      "sourceText": "The diaphragm is designed to power breathing efficiently. Chest breathing uses smaller accessory muscles (shoulders, neck, intercostals) that fatigue more easily and are associated with stress responses. Diaphragmatic breathing takes deeper breaths with less effort, stimulates the vagus nerve for relaxation, and is how humans naturally breathe when relaxed or sleeping.",
+      "translation": "Il diaframma è progettato per alimentare la respirazione in modo efficiente. La respirazione toracica usa muscoli accessori più piccoli (spalle, collo e intercostali), che si affaticano più facilmente e sono associati alle risposte di stress. La respirazione diaframmatica permette di fare respiri più profondi con meno sforzo, stimola il nervo vago favorendo il rilassamento ed è il modo naturale in cui gli esseri umani respirano quando sono rilassati o dormono."
+    },
+    {
+      "messageId": "faqs[3].question",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "9ad534f4e0817d82741e5a5fc28cffc16c4d98d76381e9d11fbdecb1d1901e87",
+      "sourceText": "Can belly breathing help with anxiety?",
+      "translation": "La respirazione addominale può aiutare con l'ansia?"
+    },
+    {
+      "messageId": "faqs[3].answer",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "a1ef069d0cd98e060b3e6d5a95043d3c0fed448d2328b9fc3a35b149c0021d85",
+      "sourceText": "Yes, significantly. Deep diaphragmatic breaths stimulate the vagus nerve, which activates the parasympathetic nervous system. Your body's 'brake pedal' that counters the fight-or-flight stress response. Studies show regular practice reduces cortisol levels and self-reported anxiety. It's often the first technique taught in anxiety management programs.",
+      "translation": "Sì, in modo significativo. I respiri diaframmatici profondi stimolano il nervo vago, che attiva il sistema nervoso parasimpatico, il «pedale del freno» del corpo che contrasta la risposta di stress di lotta o fuga. Gli studi mostrano che la pratica regolare riduce i livelli di cortisolo e l'ansia riferita dalle persone. È spesso la prima tecnica insegnata nei programmi di gestione dell'ansia."
+    },
+    {
+      "messageId": "faqs[4].question",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "4d2e1437e3dec000473dfe63fd350809c7208107a8193f22d90364ec5c7a5d9e",
+      "sourceText": "How often should I practice belly breathing?",
+      "translation": "Con quale frequenza dovrei praticare la respirazione addominale?"
+    },
+    {
+      "messageId": "faqs[4].answer",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "0346929ab5e5d909577c70479eed2deba2819a688fa4918d5955d7d63a38b2e8",
+      "sourceText": "Ideally, 5-10 minutes daily to retrain your default breathing pattern. Many people set reminders to do 1-2 minutes several times throughout the day. Over time, diaphragmatic breathing should become your natural default. You won't need to think about it.",
+      "translation": "Idealmente, 5-10 minuti ogni giorno per rieducare il tuo schema respiratorio predefinito. Molte persone impostano promemoria per praticare 1-2 minuti diverse volte durante la giornata. Con il tempo, la respirazione diaframmatica dovrebbe diventare il tuo modo naturale di respirare. Non dovrai più pensarci."
+    },
+    {
+      "messageId": "faqs[5].question",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "3a31bd3cbb7f510c17c28e6a3c48c42d79ffa3768f01fdbf58644e8c35023bfd",
+      "sourceText": "Is belly breathing good for sleep?",
+      "translation": "La respirazione addominale aiuta a dormire?"
+    },
+    {
+      "messageId": "faqs[5].answer",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "67241c34e67d0ef53552260ccc816f890020dbed071df746f83d73f5f4341d27",
+      "sourceText": "Excellent for sleep. Practice for 5-10 minutes in bed before sleep to activate your relaxation response. The slow, rhythmic pattern (4 seconds in, 6 seconds out) naturally slows your heart rate and prepares your body for rest. Many people find they fall asleep before finishing their practice.",
+      "translation": "È ottima per il sonno. Pratica per 5-10 minuti a letto prima di dormire, così da attivare la risposta di rilassamento. Il ritmo lento e regolare (4 secondi in inspirazione e 6 secondi in espirazione) rallenta naturalmente il battito cardiaco e prepara il corpo al riposo. Molte persone si addormentano prima di terminare la pratica."
+    },
+    {
+      "messageId": "howTo.totalTime",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "e8c7a71c947569b39b0d6cea1cbe950d8591b711b84828f28babd72ffb21b652",
+      "sourceText": "5–10 minutes",
+      "translation": "5–10 minuti"
+    },
+    {
+      "messageId": "howTo.difficulty",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "97c10efe01d5c9c88704a12d361d8429b3a6aa2412290a0773109d5d2d603d5e",
+      "sourceText": "easy",
+      "translation": "facile"
+    },
+    {
+      "messageId": "howTo.tools[0]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "abe2d70767266e33ec1ba0541667f149335402362ee87341a83e473f8f503902",
+      "sourceText": "Comfortable surface to lie on (bed, yoga mat)",
+      "translation": "Superficie comoda su cui sdraiarsi (letto, tappetino da yoga)"
+    },
+    {
+      "messageId": "howTo.tools[1]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "d61b42a33cbe33b7beedf6bd940bcba2dec66781ba0cdedd3c57de8d7a6ad5c2",
+      "sourceText": "On-screen timer (optional)",
+      "translation": "Timer sullo schermo (facoltativo)"
+    },
+    {
+      "messageId": "howTo.steps[0].name",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "0d0651e07bb65785ca881e1fd4cef3ae0fc8d5e7dc3efdf37ab97bb69cb56f0f",
+      "sourceText": "Get comfortable",
+      "translation": "Mettiti comodo"
+    },
+    {
+      "messageId": "howTo.steps[0].instruction",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "625c0dbd45838fe73c34e4bee120e16dd35548d401c2857d2d799701c910b705",
+      "sourceText": "Lie on your back with knees bent, or sit in a comfortable chair. Loosen any tight clothing around your waist.",
+      "translation": "Sdraiati sulla schiena con le ginocchia piegate oppure siediti su una sedia comoda. Allenta gli indumenti stretti intorno alla vita."
+    },
+    {
+      "messageId": "howTo.steps[0].duration",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "f3d19541f3a5a842ce81be1a788750b3c7ae27c6328e6829ef0ab6e95ba1fae5",
+      "sourceText": "30 seconds",
+      "translation": "30 secondi"
+    },
+    {
+      "messageId": "howTo.steps[1].name",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "45eea7425652fbb9f1d9a045ef52bc4cea4b8d9b6a1bbda3acb39bbc01e8ad59",
+      "sourceText": "Place your hands",
+      "translation": "Posiziona le mani"
+    },
+    {
+      "messageId": "howTo.steps[1].instruction",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "38cb2079148f1ace290375584bdd3c35a3e745269c00b55937d285da96903d29",
+      "sourceText": "Put one hand on your upper chest and one on your belly, just below your ribcage. This helps you feel where the breath is going.",
+      "translation": "Metti una mano sulla parte alta del petto e una sull'addome, appena sotto la gabbia toracica. Ti aiuta a percepire dove si dirige il respiro."
+    },
+    {
+      "messageId": "howTo.steps[1].duration",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "f78b958d638585f732f9665c58680242b88555a32786767f84d7c7da57020237",
+      "sourceText": "10 seconds",
+      "translation": "10 secondi"
+    },
+    {
+      "messageId": "howTo.steps[2].name",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "88caa787124d1f4d678cc11718b07eaac469fb0132a83151411d11f88e96866d",
+      "sourceText": "Exhale completely",
+      "translation": "Espira completamente"
+    },
+    {
+      "messageId": "howTo.steps[2].instruction",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "37a0bf3f6fd4ac9c17f8bdbd4348ceac54d85fcd31806056dfb9be332d26a7b1",
+      "sourceText": "Before starting, exhale fully through your mouth to empty your lungs. Let your belly fall inward.",
+      "translation": "Prima di iniziare, espira completamente dalla bocca per svuotare i polmoni. Lascia che l'addome rientri."
+    },
+    {
+      "messageId": "howTo.steps[2].duration",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "8e2db17becacd6e83a56049641f2d2594639605df3140e1b25f118140e5f24c8",
+      "sourceText": "3-4 seconds",
+      "translation": "3-4 secondi"
+    },
+    {
+      "messageId": "howTo.steps[3].name",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "441b745e17cd2f0db2c4ebe299c6a4d02e07e79b287d0d91de4c06641922af04",
+      "sourceText": "Inhale into your belly",
+      "translation": "Inspira nell'addome"
+    },
+    {
+      "messageId": "howTo.steps[3].instruction",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "bddaf4926edfff28c3ebf4a9ca4eded71b1410d323cd667ce0c0cb90c88adf92",
+      "sourceText": "Breathe in slowly through your nose for 4 counts. Focus on pushing your belly hand upward while keeping your chest hand still. Imagine inflating a balloon in your abdomen.",
+      "translation": "Inspira lentamente dal naso per 4 tempi. Concentrati sul sollevare la mano sull'addome, mantenendo ferma quella sul petto. Immagina di gonfiare un palloncino nell'addome."
+    },
+    {
+      "messageId": "howTo.steps[3].duration",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "f9e92404c40a9e20352f13f0b7d1d3e49e15691d2eeb74ba2e734f715db536cb",
+      "sourceText": "4 seconds",
+      "translation": "4 secondi"
+    },
+    {
+      "messageId": "howTo.steps[4].name",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "73d79a42cf4c606df3ec259adf9eaadf22ca6b5a5baf2d9326eac0398ccbcdd9",
+      "sourceText": "Exhale slowly",
+      "translation": "Espira lentamente"
+    },
+    {
+      "messageId": "howTo.steps[4].instruction",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "9d59c357fec6be88263ba5daaaec771487b5f49a789a68e7133bf1c0f6b6209c",
+      "sourceText": "Breathe out through your nose (or pursed lips) for 6 counts. Feel your belly fall as the diaphragm relaxes. Keep the exhale smooth and controlled.",
+      "translation": "Espira dal naso (o a labbra socchiuse) per 6 tempi. Senti l'addome abbassarsi mentre il diaframma si rilassa. Mantieni l'espirazione fluida e controllata."
+    },
+    {
+      "messageId": "howTo.steps[4].duration",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "d2d37fb376f0e431b434b1165b0e0951b9df2b735ac883157a00981c6d3d90c0",
+      "sourceText": "6 seconds",
+      "translation": "6 secondi"
+    },
+    {
+      "messageId": "howTo.steps[5].name",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "c96caf5c6d9aa0af0fb2c9c55feaae02f6a87fb807513d298cf6c659468ca782",
+      "sourceText": "Repeat and relax",
+      "translation": "Ripeti e rilassati"
+    },
+    {
+      "messageId": "howTo.steps[5].instruction",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "fb27bbe6f4c92ec4834646908daffd64216b71a256c699b16d68a654b359e30c",
+      "sourceText": "Continue for 5-10 minutes, keeping the rhythm smooth. If your mind wanders, gently return attention to the belly rising and falling.",
+      "translation": "Continua per 5-10 minuti, mantenendo un ritmo fluido. Se la mente divaga, riporta dolcemente l'attenzione all'addome che si solleva e si abbassa."
+    },
+    {
+      "messageId": "howTo.steps[5].duration",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "e8c7a71c947569b39b0d6cea1cbe950d8591b711b84828f28babd72ffb21b652",
+      "sourceText": "5–10 minutes",
+      "translation": "5–10 minuti"
+    },
+    {
+      "messageId": "useCases[0].name",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "397c1b4938450b16fff1c33d06fb5d82317e12d32cc3c5fe132ae11052a77bf3",
+      "sourceText": "Stress relief",
+      "translation": "Sollievo dallo stress"
+    },
+    {
+      "messageId": "useCases[0].description",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "600c27ad8859a89678d9406db6e86a610e171544bbe5181dda324d61c0a96ff8",
+      "sourceText": "Use anytime you feel stressed or overwhelmed to quickly activate your relaxation response.",
+      "translation": "Usala ogni volta che ti senti stressato o sopraffatto per attivare rapidamente la risposta di rilassamento."
+    },
+    {
+      "messageId": "useCases[0].dose",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "8f1fdf26cceb09adbaf770c9129a8e22c7f1724a3b71445dc9f4ca9c27b40e56",
+      "sourceText": "2-5 minutes, several times daily",
+      "translation": "2-5 minuti, diverse volte al giorno"
+    },
+    {
+      "messageId": "useCases[1].name",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "45f1768a5fe9de9b1e99b9431874f8a4ec1c3044cfc43ea2011523ff4209aabb",
+      "sourceText": "Sleep preparation",
+      "translation": "Prepararsi al sonno"
+    },
+    {
+      "messageId": "useCases[1].description",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "4af88c4678a830d71a288de4df50e057bb78fa35f23b4721b08e9459a8bc9368",
+      "sourceText": "Practice in bed to calm your nervous system and prepare for sleep.",
+      "translation": "Pratica a letto per calmare il sistema nervoso e prepararti a dormire."
+    },
+    {
+      "messageId": "useCases[1].dose",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "66d602abddacdf1574d62e8b134bce7623e41da5e23685319c8bacc5299f7415",
+      "sourceText": "5-10 minutes before sleep",
+      "translation": "5-10 minuti prima di dormire"
+    },
+    {
+      "messageId": "useCases[2].name",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "6781a21e46450511e4765dbbc14b67ec57f0ce15ab5e6f26eee49b1846d45dc7",
+      "sourceText": "Breathwork foundation",
+      "translation": "Base della pratica respiratoria"
+    },
+    {
+      "messageId": "useCases[2].description",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "2e8dee52daf413e7a4cbd58b3029b97162791ceddee1019691c88b22fd7f9049",
+      "sourceText": "Master belly breathing before moving to other techniques: it's the base for everything.",
+      "translation": "Impara bene la respirazione addominale prima di passare ad altre tecniche: è la base di tutto."
+    },
+    {
+      "messageId": "useCases[2].dose",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "1611ad1f9e18f70f67342fd0c0e8f7d5f9ab03ee669e91caf005816a6882a056",
+      "sourceText": "Daily practice until it becomes automatic",
+      "translation": "Pratica quotidiana finché diventa automatica"
+    },
+    {
+      "messageId": "research.studies[0].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "eaa5e81c37dda2605c7ae92d6d62c766173c9f8e4a6057e5299220dc64c1a02e",
+      "sourceText": "Diaphragmatic breathing reduces cortisol",
+      "translation": "La respirazione diaframmatica riduce il cortisolo"
+    },
+    {
+      "messageId": "research.studies[0].summary",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "2292a57b29540900db41884b4fa34d3ee69ddb809e735d8c6eab4b02f3fa223c",
+      "sourceText": "A 2017 study found 8 weeks of diaphragmatic breathing training significantly reduced cortisol levels and self-reported stress in healthy adults.",
+      "translation": "Uno studio del 2017 ha rilevato che 8 settimane di allenamento alla respirazione diaframmatica riducevano significativamente i livelli di cortisolo e lo stress riferito dalle persone adulte sane."
+    },
+    {
+      "messageId": "research.studies[1].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "7d058506ba0d49712ebdc14e9c56b91ea80076d6e5bcf538f580009f4986c86d",
+      "sourceText": "Effects on autonomic function",
+      "translation": "Effetti sulla funzione autonomica"
+    },
+    {
+      "messageId": "research.studies[1].summary",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "ba81f690f11a66277b8caeaaae0c34bc9a3102ec6001d57bba21ddfdcef9d7c0",
+      "sourceText": "Research shows diaphragmatic breathing shifts autonomic balance toward parasympathetic dominance, improving heart rate variability and reducing blood pressure.",
+      "translation": "La ricerca mostra che la respirazione diaframmatica sposta l'equilibrio autonomico verso la predominanza parasimpatica, migliorando la variabilità della frequenza cardiaca e riducendo la pressione sanguigna."
+    },
+    {
+      "messageId": "research.studies[2].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "fcf540d8d5894624781d201b81edf447408e4a0911632099b8e90cd7a78282dc",
+      "sourceText": "Diaphragmatic breathing and anxiety",
+      "translation": "Respirazione diaframmatica e ansia"
+    },
+    {
+      "messageId": "research.studies[2].summary",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "9cb7a01e2d1eacb420e3532511931bf8f62bba6bade293aff11847f407b17cf6",
+      "sourceText": "Multiple studies demonstrate significant reductions in anxiety symptoms with regular diaphragmatic breathing practice, often comparable to medication effects.",
+      "translation": "Diversi studi mostrano riduzioni significative dei sintomi d'ansia con la pratica regolare della respirazione diaframmatica, spesso paragonabili agli effetti dei farmaci."
+    },
+    {
+      "messageId": "research.safety[0]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "73f2df5f5ea55549b8839335e506e3477d32eb8737339b527b186cf91e3cef2f",
+      "sourceText": "Belly breathing is safe for most people. It's how you're designed to breathe.",
+      "translation": "La respirazione addominale è sicura per la maggior parte delle persone: è il modo in cui il corpo è fatto per respirare."
+    },
+    {
+      "messageId": "research.safety[1]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "9374393aa62777be3d92075748a25ef87886a8d68725c81c9cb7dd182adf0d12",
+      "sourceText": "If you have recent abdominal surgery, consult your doctor before deep breathing exercises.",
+      "translation": "Se hai subito di recente un intervento addominale, consulta il medico prima di fare esercizi di respirazione profonda."
+    },
+    {
+      "messageId": "research.safety[2]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "acf70509f1dc1ff0e9dafe178af9490da0ba03afa3e78b3c47c0703643d3286b",
+      "sourceText": "Stop if you feel pain, dizziness, or unusual discomfort.",
+      "translation": "Fermati se avverti dolore, vertigini o un disagio insolito."
+    },
+    {
+      "messageId": "research.safety[3]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "0c6eb7c2b54900031763ea319ddd33f4e3ea235eaa99336b7ecdf94ffc1fb9b6",
+      "sourceText": "Those with severe respiratory conditions should consult a healthcare provider.",
+      "translation": "Chi soffre di gravi patologie respiratorie dovrebbe consultare un professionista sanitario."
+    },
+    {
+      "messageId": "research.quotes[0].text",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "aa4a0a6e990b6b10c36eae9f78ccac3129409e6cead0e4c1a4f6568462f01002",
+      "sourceText": "For breath is life, and if you breathe well you will live long on earth.",
+      "translation": "Perché il respiro è vita: se respiri bene, vivrai a lungo sulla terra."
+    },
+    {
+      "messageId": "related[0].reason",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "112d88384f0a1adc4841d5b0347968572ee01e59048a33bbf3f021a8a744acbb",
+      "sourceText": "Once you've mastered belly breathing, box breathing adds structure with timed holds.",
+      "translation": "Dopo aver imparato la respirazione addominale, la respirazione quadrata aggiunge una struttura con pause a tempo."
+    },
+    {
+      "messageId": "related[1].reason",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "38de15c60fff998ded6f01a0f400d8c90f8d16edf359ed183f5a3a357d3e18e1",
+      "sourceText": "The 4-7-8 technique builds on diaphragmatic breathing with a longer exhale for deeper relaxation.",
+      "translation": "La tecnica 4-7-8 si basa sulla respirazione diaframmatica e usa un'espirazione più lunga per un rilassamento più profondo."
+    },
+    {
+      "messageId": "related[2].reason",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "796c42f107aaf4f806c5c92996aec6837c0afedc76676a9d2edea7f73f5b44c8",
+      "sourceText": "Coherent breathing uses the same diaphragmatic base at a specific pace for HRV optimization.",
+      "translation": "La respirazione coerente usa la stessa base diaframmatica a un ritmo specifico per ottimizzare l'HRV."
+    },
+    {
+      "messageId": "related[3].reason",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "c9faf52200e54c60fb0c2f111ca4b2651f4090ffcd6986c5fe3cbe3374bf098e",
+      "sourceText": "Progress to ujjayi after mastering diaphragm, add the ocean sound for yoga practice.",
+      "translation": "Dopo aver imparato a usare il diaframma, passa alla respirazione Ujjayi e aggiungi il suono dell'oceano alla pratica dello yoga."
+    },
+    {
+      "messageId": "related[4].reason",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "66119258a70a019ca5a9815720b3dc0006769eb4cb1836833c36eac10f6a26ad",
+      "sourceText": "Adds exhale resistance on top of diaphragmatic breathing—helpful for COPD and shortness of breath.",
+      "translation": "Aggiunge resistenza all'espirazione alla respirazione diaframmatica: può essere utile per la BPCO e la mancanza di fiato."
+    },
+    {
+      "messageId": "relatedUseCases[0].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "2b84fb652fbc1c2b1d96b0c3e3fc12212c3f15b02dc01a3c0bbc77e8c4a5f0a7",
+      "sourceText": "Breathing for Anxiety",
+      "translation": "Respirazione per l'ansia"
+    },
+    {
+      "messageId": "relatedUseCases[0].teaser",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "cab8f69f2ba906ebe61aa5720c0b60889518679793774f0e396fee9966591e36",
+      "sourceText": "Belly breathing is the foundation for anxiety relief",
+      "translation": "La respirazione addominale è la base per alleviare l'ansia"
+    },
+    {
+      "messageId": "relatedUseCases[1].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "48cb1d3ed1c4af0663146c1a7f710e0a3a536302de60133e9521112200aafc29",
+      "sourceText": "Breathing for Sleep",
+      "translation": "Respirazione per dormire"
+    },
+    {
+      "messageId": "relatedUseCases[1].teaser",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "e9a65c323d47e8e5a90c08f9b906b73bdce76705a449d43205a4ee2b4a5774a4",
+      "sourceText": "Fall asleep faster with diaphragmatic breathing",
+      "translation": "Addormentati più rapidamente con la respirazione diaframmatica"
+    },
+    {
+      "messageId": "relatedUseCases[2].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "3fafb9662bb3096aa1e861cdf3ae0c6f6738955dcf683efedaf761049daf02cf",
+      "sourceText": "Breathing for Stress",
+      "translation": "Respirazione per lo stress"
+    },
+    {
+      "messageId": "relatedUseCases[2].teaser",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "2f3516cf6f9f1c424ff3b9d5745f5757d291bba5379025ced28b29c8bfd01c66",
+      "sourceText": "The simplest way to activate your relaxation response",
+      "translation": "Il modo più semplice per attivare la risposta di rilassamento"
+    },
+    {
+      "messageId": "relatedUseCases[3].title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "e2e8ba050cabfec2555b0977449364c1db969f405ddbe1fd56640d932c0f6b32",
+      "sourceText": "Breathing for Kids",
+      "translation": "Respirazione per bambini"
+    },
+    {
+      "messageId": "relatedUseCases[3].teaser",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "2fe68180a385673006fa67cafba36d3654c2399936a25322ddb014ada2a99c3a",
+      "sourceText": "Teach belly breathing to children. It's the easiest technique for young ones",
+      "translation": "Insegna ai bambini la respirazione addominale: è la tecnica più facile per i più piccoli"
+    },
+    {
+      "messageId": "keywords[0]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "bc1a31b3e31f3433ad0beacf8c7267ab23c9ceb0812eeb940504bb00f04b694b",
+      "sourceText": "belly breathing",
+      "translation": "respirazione addominale"
+    },
+    {
+      "messageId": "keywords[1]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "70de5fb6a24edf5802cd45b328716f6a84db29d7779a807fd7b16557c479c278",
+      "sourceText": "diaphragmatic breathing",
+      "translation": "respirazione diaframmatica"
+    },
+    {
+      "messageId": "keywords[2]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "1ae76371244d575663324c8597b374817f28044084e3c7667dac2ba3a236bdef",
+      "sourceText": "deep belly breathing",
+      "translation": "respirazione addominale profonda"
+    },
+    {
+      "messageId": "keywords[3]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "e343416ccaf6bfcbbbc0301d4752ba9bcdcd1322b8b5cc0357ccf1676133f926",
+      "sourceText": "diaphragm breathing",
+      "translation": "respirazione con il diaframma"
+    },
+    {
+      "messageId": "keywords[4]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "ea135fbe714ade08652b853d7268a70522b77144b99c43f3d5cee700ffbd023b",
+      "sourceText": "abdominal breathing",
+      "translation": "respirazione addominale"
+    },
+    {
+      "messageId": "keywords[5]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "48b442efefa5b906f6c4313cae85d713de6f26b049fe33fd45bfa2f2348b5404",
+      "sourceText": "belly breath",
+      "translation": "respiro addominale"
+    },
+    {
+      "messageId": "keywords[6]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "45da525a57b77674b72862147b72ed8dadb723993dcb8e1c4b308bd94a99b9e5",
+      "sourceText": "breathing from diaphragm",
+      "translation": "respirare con il diaframma"
+    },
+    {
+      "messageId": "keywords[7]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "6c44014e4d669cd7401dd06f12a8d6569d3cab58e49e17970d97d9a97cb58005",
+      "sourceText": "stomach breathing",
+      "translation": "respirazione di pancia"
+    },
+    {
+      "messageId": "synonyms[0]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "70de5fb6a24edf5802cd45b328716f6a84db29d7779a807fd7b16557c479c278",
+      "sourceText": "diaphragmatic breathing",
+      "translation": "respirazione diaframmatica"
+    },
+    {
+      "messageId": "synonyms[1]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "ea135fbe714ade08652b853d7268a70522b77144b99c43f3d5cee700ffbd023b",
+      "sourceText": "abdominal breathing",
+      "translation": "respirazione addominale"
+    },
+    {
+      "messageId": "synonyms[2]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "d90339407660fdf57738897f891f220b17305c65a2ce3e49d562a463d2785a07",
+      "sourceText": "deep breathing",
+      "translation": "respirazione profonda"
+    },
+    {
+      "messageId": "synonyms[3]",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "6c44014e4d669cd7401dd06f12a8d6569d3cab58e49e17970d97d9a97cb58005",
+      "sourceText": "stomach breathing",
+      "translation": "respirazione di pancia"
+    },
+    {
+      "messageId": "frequency",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "e889e5e3e7c8dff46ca717bea2ddb835f32ee529df550b58371a50a57274eac0",
+      "sourceText": "Daily, 5-10 minutes. Ideally becomes your default breathing pattern.",
+      "translation": "Ogni giorno, 5-10 minuti. Idealmente diventa il tuo schema respiratorio predefinito."
+    },
+    {
+      "messageId": "ownedVideo.title",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "cf006c3322ddcaf5d625b4367110821ba8627face62a579c13a18fd4419fe5e6",
+      "sourceText": "Belly Breathing Timer: 5 Minutes (Diaphragmatic Breathing)",
+      "translation": "Timer per la respirazione addominale: 5 minuti (respirazione diaframmatica)"
+    },
+    {
+      "messageId": "ownedVideo.description",
+      "scope": "content",
+      "reason": "Luna-authored Italian translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "206b9305b2f2d44a48c4e04091d86d6da41d177818f43043d37458fc6944f07e",
+      "sourceText": "A 5-minute guided belly breathing session using our interactive pacer. Let your belly rise on the inhale and fall on the exhale, the foundational diaphragmatic breathing pattern.",
+      "translation": "Una sessione guidata di respirazione addominale di 5 minuti con il nostro pacer interattivo. Lascia che l'addome si sollevi durante l'inspirazione e si abbassi durante l'espirazione: è lo schema fondamentale della respirazione diaframmatica."
+    },
+    {
+      "messageId": "chrome.pattern.og-alt",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "d9b65a923229b9f96c857a5113e4ef2cf4d9694b1891aff0053437d280a31b43",
+      "sourceText": "Belly Breathing: Diaphragmatic Breathing Exercises – Interactive breathing visualizer",
+      "translation": "Respirazione addominale: esercizi di respirazione diaframmatica – visualizzatore interattivo della respirazione"
+    },
+    {
+      "messageId": "chrome.pattern.hero-share-text",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "b7e7abd7b06f0625cfd5c7289f597ecd7c5e4b0044e0cdf7f20840eb44ab8e04",
+      "sourceText": "Try this guided belly breathing: diaphragmatic breathing exercises exercise — it really helps.",
+      "translation": "Prova questo esercizio guidato di respirazione addominale e diaframmatica: è davvero utile."
+    },
+    {
+      "messageId": "chrome.pattern.share-section-text",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "6231847c1dcf6dd250070e561a84fbb98d4770a66fdae5c4a50b5e2cbda67153",
+      "sourceText": "Know someone who could benefit from belly breathing: diaphragmatic breathing exercises? Send them a direct link.",
+      "translation": "Conosci qualcuno a cui potrebbero essere utili la respirazione addominale e gli esercizi di respirazione diaframmatica? Inviagli un link diretto."
+    },
+    {
+      "messageId": "chrome.pattern.related-box-title",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "1937b7673dddca18a5b80fa7c9532b1b9f55ef0e0b2cf55202470767d5af2de0",
+      "sourceText": "Box Breathing (4-4-4-4) Visualizer",
+      "translation": "Visualizzatore della respirazione quadrata (4-4-4-4)"
+    },
+    {
+      "messageId": "chrome.pattern.related-4-7-8-title",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "61bc7df0643742b926fa603a5bb211bd432b1789c6e4bc4258e41a29826b436e",
+      "sourceText": "4-7-8 Breathing Visualizer",
+      "translation": "Visualizzatore della respirazione 4-7-8"
+    },
+    {
+      "messageId": "chrome.pattern.related-coherent-title",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "4c6e34da239e136a2b5d96c1bc328ff0f810abfb71f7047ad9027d548b509101",
+      "sourceText": "Coherent Breathing Trainer",
+      "translation": "Allenatore di respirazione coerente"
+    },
+    {
+      "messageId": "chrome.pattern.related-ujjayi-title",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "e88e090f9492af5b6ac8f949913be4320488e5dacce3c448cd86b7e8fdb88c9f",
+      "sourceText": "Ujjayi Breathing: The Ocean Breath Technique",
+      "translation": "Respirazione Ujjayi: la tecnica del respiro oceanico"
+    },
+    {
+      "messageId": "chrome.pattern.related-pursed-lip-title",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "b44d6b2987526fe1ecca59bd20db1dfa5478a2ed3fd051905793342a73747bd2",
+      "sourceText": "Pursed Lip Breathing Technique",
+      "translation": "Tecnica di respirazione a labbra socchiuse"
+    },
+    {
+      "messageId": "chrome.pattern.guided-session",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "ef54a61172d7faeb3e83c2be02a95845cdd4645923d4b2484a6ad7f06cb0d0d6",
+      "sourceText": "Guided session",
+      "translation": "Sessione guidata"
+    },
+    {
+      "messageId": "chrome.pattern.guided-session-description",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "2fdfac26a8bd88168b39579e21ce58c1c261da641443306b24f566d3a1d3c4b4",
+      "sourceText": "Watch the guided pacer session — the same exercise as above, recorded as a video you can follow anywhere.",
+      "translation": "Guarda la sessione guidata con il pacer: è lo stesso esercizio qui sopra, registrato in un video che puoi seguire ovunque."
+    },
+    {
+      "messageId": "chrome.shared.brand-eyebrow",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+      "sourceText": "DEEP BREATHING EXERCISES",
+      "translation": "ESERCIZI DI RESPIRAZIONE PROFONDA"
+    },
+    {
+      "messageId": "chrome.shared.breadcrumb-home",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+      "sourceText": "Home",
+      "translation": "Home"
+    },
+    {
+      "messageId": "chrome.shared.date-last-updated",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "382ac5f308f76c24b2c981e2041943bc2be2229cbd285ad362b9af1cfc386ef8",
+      "sourceText": "Last updated",
+      "translation": "Ultimo aggiornamento"
+    },
+    {
+      "messageId": "chrome.shared.date-reviewed-by",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "031cc20288b8fb1696f2e4e2b36cfcd5eb3f9063d9aaddf1f77324a34a987fda",
+      "sourceText": "Reviewed by",
+      "translation": "Revisionato da"
+    },
+    {
+      "messageId": "chrome.shared.quick-sessions",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "75c6d90dde8eb57ac49db03a1654f7aa3a52c2bf286b433bd2ee700c7487dd9f",
+      "sourceText": "Quick sessions",
+      "translation": "Sessioni rapide"
+    },
+    {
+      "messageId": "chrome.shared.quick-sessions-description",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "b61e42603a5d92ee00859890f0df546006f68830af0897ca279a53d7c6d6fa2f",
+      "sourceText": "Short on time? Try a timed session:",
+      "translation": "Hai poco tempo? Prova una sessione a tempo:"
+    },
+    {
+      "messageId": "chrome.shared.one-minute",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "e67b6f61f579060a649fa280b8697bc9bf5173a34f20570c25e603e1ed1a5905",
+      "sourceText": "1 minute",
+      "translation": "1 minuto"
+    },
+    {
+      "messageId": "chrome.shared.two-minutes",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "ec15347fb434a2a3aa6d99ef9ea7612453c8d860ceff5ecb5c15bcc15f8ac38b",
+      "sourceText": "2 minutes",
+      "translation": "2 minuti"
+    },
+    {
+      "messageId": "chrome.shared.five-minutes",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "3170543ce47c2f0baa50254b13b82b58b0962675647c39a20643690168f572d7",
+      "sourceText": "5 minutes",
+      "translation": "5 minuti"
+    },
+    {
+      "messageId": "chrome.shared.share-exercise",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "3f071e8bbb46bbaa7c79afcba06361e3382ac0bb8a8bc3cefcde6b5a1c4b8f9e",
+      "sourceText": "Share this exercise",
+      "translation": "Condividi questo esercizio"
+    },
+    {
+      "messageId": "chrome.shared.safety-warning",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+      "sourceText": "Stop if dizzy, tingly, or chest-tight. Resume later with shorter, easier breaths.",
+      "translation": "Fermati se avverti vertigini, formicolio o oppressione al petto. Riprendi più tardi con respiri più brevi e facili."
+    },
+    {
+      "messageId": "chrome.shared.footer-techniques",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+      "sourceText": "Techniques",
+      "translation": "Tecniche"
+    },
+    {
+      "messageId": "chrome.shared.footer-guides",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+      "sourceText": "Guides",
+      "translation": "Guide"
+    },
+    {
+      "messageId": "chrome.shared.footer-app",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+      "sourceText": "App",
+      "translation": "App"
+    },
+    {
+      "messageId": "chrome.shared.footer-about",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+      "sourceText": "About",
+      "translation": "Informazioni"
+    },
+    {
+      "messageId": "chrome.shared.footer-about-abi",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+      "sourceText": "About Abi",
+      "translation": "Informazioni su Abi"
+    },
+    {
+      "messageId": "chrome.shared.footer-embed",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+      "sourceText": "Embed",
+      "translation": "Incorpora"
+    },
+    {
+      "messageId": "chrome.shared.footer-privacy",
+      "scope": "chrome",
+      "reason": "Luna-authored Italian interface copy reviewed for clear terminology and source binding.",
+      "reviewedSourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+      "sourceText": "Privacy",
+      "translation": "Privacy"
+    },
+    {
+      "messageId": "chrome.pattern.breadcrumb-techniques",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "37b5f87273b794d1da69aca7c5bd665712303c9f0dcb428ad5a88923012e2b1c",
+      "sourceText": "Breathing Techniques",
+      "translation": "Tecniche di respirazione"
+    },
+    {
+      "messageId": "chrome.pattern.technique-overview",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "60bf6e41f9cfb46f95321125485042495264fabfd34ec662bda141d2fbf17455",
+      "sourceText": "Technique overview",
+      "translation": "Panoramica della tecnica"
+    },
+    {
+      "messageId": "chrome.pattern.benefit",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "0c0829d3e30125b0e9350631b17c2102c298265645d8252eefdc45831517521a",
+      "sourceText": "Benefit",
+      "translation": "Beneficio"
+    },
+    {
+      "messageId": "chrome.pattern.step-by-step",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "83c008a92e4280e61a22a6b6780ff90bcb3f05bed958ce97fe7408050d21ddad",
+      "sourceText": "Step-by-step",
+      "translation": "Passo dopo passo"
+    },
+    {
+      "messageId": "chrome.pattern.how-to-practice",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "2a9206c87d0f17f88f49ffb32c92a2d48d1e1ddbada1d216c854b73f9e666c42",
+      "sourceText": "How to practice",
+      "translation": "Come praticare"
+    },
+    {
+      "messageId": "chrome.pattern.how-to-description",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "19245bd9459b04747ca278ce4bc39e8ef933cff79ac31d197f2d076edd9d6657",
+      "sourceText": "Structured walkthrough pulled from the editorial brief.",
+      "translation": "Guida strutturata tratta dal brief editoriale."
+    },
+    {
+      "messageId": "chrome.pattern.total-time",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "f448bdef375a1f9e82b495d3228fc5c23a2acf6b986ffcf12e74094c14a4bc4d",
+      "sourceText": "Total time",
+      "translation": "Durata totale"
+    },
+    {
+      "messageId": "chrome.pattern.difficulty",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "be44133ed57f9e44f829282224b15981f033e9b0acc5458070e10104509eb398",
+      "sourceText": "Difficulty",
+      "translation": "Difficoltà"
+    },
+    {
+      "messageId": "chrome.pattern.tools",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "ea93d6a262ecb87a9fa4d09edbd7654c046597936a8e235fc3949eb01775ff99",
+      "sourceText": "Tools",
+      "translation": "Strumenti"
+    },
+    {
+      "messageId": "chrome.pattern.supplies",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "6be75605dc98cd51ce12599df98d8ecc5a24dbfb0acb0336228d3d7eea77f846",
+      "sourceText": "Supplies",
+      "translation": "Occorrente"
+    },
+    {
+      "messageId": "chrome.pattern.use-cases",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "ff27a991e8559d6a53024fb888d0b9f062f31154593bf4db2c6431ace2d7d05a",
+      "sourceText": "Use cases",
+      "translation": "Casi d'uso"
+    },
+    {
+      "messageId": "chrome.pattern.where-it-fits",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "f895e63320934fe16a50ff39692a90c084868ec6ff756d08a971b42f9f0242f4",
+      "sourceText": "Where it fits",
+      "translation": "Quando è indicata"
+    },
+    {
+      "messageId": "chrome.pattern.use-cases-description",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "200d003a07e004a353760d59dfb301e5a22d04b700c4fa5aaebf1ed07b82e305",
+      "sourceText": "Situations where this breathing cadence excels.",
+      "translation": "Situazioni in cui questo ritmo respiratorio dà il meglio."
+    },
+    {
+      "messageId": "chrome.pattern.suggested-frequency",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "5f6427c54ebaf87e89974b491feec81415318835960e501b9fda10c257d57b05",
+      "sourceText": "Suggested frequency",
+      "translation": "Frequenza consigliata"
+    },
+    {
+      "messageId": "chrome.pattern.practice-notes",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "966c14f18db88384cc9c484065e9148a7745b46aaf59b4f617c08b606d8b25d1",
+      "sourceText": "Practice notes",
+      "translation": "Note sulla pratica"
+    },
+    {
+      "messageId": "chrome.pattern.keep-it-gentle",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "4b3aff14432579cc38d0ae5eaebce559b7d08eb90aec6926a1435d7b1f4f8c8b",
+      "sourceText": "Keep it gentle",
+      "translation": "Procedi con delicatezza"
+    },
+    {
+      "messageId": "chrome.pattern.practice-notes-description",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "9c4dfaa2346b55e927f3b967c2e9d7d16d3311c8c56e551a9ef3f8f31b603ca7",
+      "sourceText": "Helpful reminders so the pattern stays sustainable day after day.",
+      "translation": "Promemoria utili per mantenere il ritmo sostenibile giorno dopo giorno."
+    },
+    {
+      "messageId": "chrome.pattern.faq",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "dbc468a14b601d5d9240aeb72b9fcd2f8aed2f4e30932876edf8d16ec313846b",
+      "sourceText": "FAQ",
+      "translation": "Domande frequenti"
+    },
+    {
+      "messageId": "chrome.pattern.common-questions",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "dfb8a3d41335746f8b5879f9c3a372ecfa4d1e7b6495d7376f335084fa3c46f2",
+      "sourceText": "Common questions",
+      "translation": "Domande comuni"
+    },
+    {
+      "messageId": "chrome.pattern.faq-description",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "cac341e9fbdbeddc88ae5baaa72d5862ca026803916675fa95c879382425e8a1",
+      "sourceText": "Evidence-backed answers we hear from practitioners most often.",
+      "translation": "Risposte basate sulle evidenze alle domande che riceviamo più spesso da chi pratica."
+    },
+    {
+      "messageId": "chrome.pattern.research-safety",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "2bad807b4f017eae3c380287f5340b9257ef6f7e350b7a56c7ec86377941fa54",
+      "sourceText": "Research & safety",
+      "translation": "Ricerca e sicurezza"
+    },
+    {
+      "messageId": "chrome.pattern.what-evidence-says",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "6dff2aa4f71bdb673399f3689cdff90db2ef2b5978b67a86c6aea68a8da24f40",
+      "sourceText": "What evidence says",
+      "translation": "Cosa dicono le evidenze"
+    },
+    {
+      "messageId": "chrome.pattern.research-description",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "331557d6854d6ca5305b7f6d53fc18cedf75d0c398cfd2161a53427b8be001d7",
+      "sourceText": "Peer-reviewed highlights and guardrails pulled from the content brief.",
+      "translation": "Punti salienti sottoposti a revisione paritaria e indicazioni di sicurezza tratte dal brief."
+    },
+    {
+      "messageId": "chrome.pattern.study-highlights",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "f65e736d9839cab1eb3b9b67c04253c0639b2a9fd5944621b56c61fb617c93a4",
+      "sourceText": "Study highlights",
+      "translation": "Punti salienti degli studi"
+    },
+    {
+      "messageId": "chrome.pattern.safety-notes",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "7e092bf4ecfb7a89cf31e69503c4c2e56726061b4234e1a07b38b757f1e3a599",
+      "sourceText": "Safety notes",
+      "translation": "Note di sicurezza"
+    },
+    {
+      "messageId": "chrome.pattern.related-techniques",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "58ff22fb23c4b03c33d59472ca5863c357076f1b7b4e9b666525af213d69e363",
+      "sourceText": "Related techniques",
+      "translation": "Tecniche correlate"
+    },
+    {
+      "messageId": "chrome.pattern.related-use-cases",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "59d9b0677baf7f4ba4d8421daeba7c457a582292fdf2e5cce8aed7b1dc62f54b",
+      "sourceText": "Use case guides",
+      "translation": "Guide per obiettivo"
+    },
+    {
+      "messageId": "chrome.pattern.related-patterns",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "4f8c2a5e8574ad2710020a69b41eeafb1d1ad5d87f78241f5a1715c651fa723d",
+      "sourceText": "Related patterns",
+      "translation": "Ritmi correlati"
+    },
+    {
+      "messageId": "chrome.pattern.practice-action",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "aaefeb15dba1049f9e232401aa1729aa5582328b239ed15f7bdec1bd5cdf3c26",
+      "sourceText": "Practice →",
+      "translation": "Pratica →"
+    },
+    {
+      "messageId": "chrome.pattern.learn-more-action",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+      "sourceText": "Learn more →",
+      "translation": "Scopri di più →"
+    },
+    {
+      "messageId": "chrome.pattern.share-technique",
+      "scope": "chrome",
+      "reason": "Agent-reviewed Italian interface copy for clear terminology and source binding.",
+      "reviewedSourceHash": "37d5cf900d5f4c126284817e2f262b0536528ba9cfa0846ad0344b73f1e30455",
+      "sourceText": "Share this technique",
+      "translation": "Condividi questa tecnica"
+    }
+  ],
+  "schemaVersion": 1,
+  "translationMethod": "Luna-authored page copy with agent-reviewed interface additions; external native-language certification not performed.",
+  "sourceRoute": "/breathe/belly"
+}

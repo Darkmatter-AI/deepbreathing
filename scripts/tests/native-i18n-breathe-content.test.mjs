@@ -15,7 +15,9 @@ import { containsUsCrisisNumber } from "../i18n/verify-native-preview-build.mjs"
 
 const repoRoot = process.cwd();
 const root = path.join(repoRoot, "src/i18n/content/breathe");
-const locales = ["de-de", "es-es", "fr-fr", "ja-jp", "pt-br"];
+const catalogLocales = ["de-de", "es-es", "fr-fr", "ja-jp", "pt-br"];
+const locales = [...catalogLocales, "it-it"];
+const italianPilotSlugs = new Set(["belly", "box", "coherent"]);
 const slugs = [
   "4-7-8", "9d-breathwork", "belly", "box", "breath-of-fire", "buteyko", "coherent",
   "hope-cartel-9d-breathwork", "nadi-shodhana", "physiological-sigh", "pursed-lip", "tummo",
@@ -161,7 +163,10 @@ test("publication covers every structured breathe route with manifest route ids"
     const route = publication.routes[`/breathe/${slug}`];
     assert.ok(route);
     assert.equal(route.routeId, slug === "buteyko" ? "breathe.buteyko" : `breathe-${slug}`);
-    assert.deepEqual(Object.keys(route.locales).sort(), [...locales].sort());
+    const expectedLocales = italianPilotSlugs.has(slug)
+      ? locales
+      : catalogLocales;
+    assert.deepEqual(Object.keys(route.locales).sort(), [...expectedLocales].sort());
   }
 });
 
@@ -171,8 +176,8 @@ test("generated loader is server-only and contains literal active-locale imports
   assert.match(loader, /export async function loadBreatheContent/);
   assert.match(loader, /export async function loadBreatheChrome/);
   assert.match(loader, /export async function loadBreatheRoute/);
-  assert.equal((loader.match(/import\("\.\.\/routes\//g) ?? []).length, 70);
-  assert.equal((loader.match(/import\("\.\.\/chrome\//g) ?? []).length, 70);
+  assert.equal((loader.match(/import\("\.\.\/routes\//g) ?? []).length, 73);
+  assert.equal((loader.match(/import\("\.\.\/chrome\//g) ?? []).length, 73);
 });
 
 test("the normal build fails closed when breathe artifacts are stale", () => {
@@ -197,7 +202,7 @@ test("metadata uses catalog head occurrences unless explicitly replaced", () => 
       ? json(replacementFile).replacements
       : [];
     const manual = json(path.join(root, "manual", `${slug}.json`)).entries;
-    for (const locale of locales) {
+    for (const locale of catalogLocales) {
       const content = json(path.join(root, "routes", locale, `${slug}.json`));
       const catalog = json(path.join(repoRoot, "src/i18n/catalog", locale, "pages/breathe", `${slug}.json`));
       for (const [field, occurrenceKey] of Object.entries(headOccurrences)) {
@@ -239,7 +244,7 @@ test("manual inputs are deduplicated and contain only unresolved locale slots", 
 test("publication unresolved counts equal emitted null values", () => {
   const publication = json(path.join(root, "publication.json"));
   for (const slug of slugs) {
-    for (const locale of locales) {
+    for (const locale of catalogLocales) {
       const content = json(path.join(root, "routes", locale, `${slug}.json`));
       const chrome = json(path.join(root, "chrome", locale, `${slug}.json`));
       assert.equal(
@@ -252,7 +257,7 @@ test("publication unresolved counts equal emitted null values", () => {
 });
 
 test("Buteyko preserves proof content outside head metadata and reviewed replacements", () => {
-  for (const locale of locales) {
+  for (const locale of catalogLocales) {
     const content = json(path.join(root, "routes", locale, "buteyko.json"));
     const proof = json(path.join(root, "../proof/routes", locale, "breathe-buteyko.json"));
     assert.equal(content.hero.intro, proof.hero.intro);
@@ -267,7 +272,7 @@ test("normalized, global, and reviewed replacement provenance remain explicit", 
   let replacements = 0;
   for (const slug of slugs) {
     const provenance = json(path.join(root, "provenance", `${slug}.json`));
-    for (const locale of locales) {
+    for (const locale of catalogLocales) {
       for (const record of Object.values(provenance.locales[locale].content)) {
         if (record.status.includes("normalized")) normalized += 1;
         if (record.status.startsWith("global-")) global += 1;
@@ -277,5 +282,5 @@ test("normalized, global, and reviewed replacement provenance remain explicit", 
   }
   assert.ok(normalized > 0);
   assert.ok(global > 0);
-  assert.equal(replacements, 50);
+  assert.equal(replacements, 78);
 });

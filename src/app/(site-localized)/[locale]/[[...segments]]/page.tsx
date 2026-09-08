@@ -142,13 +142,13 @@ import {
   type ForContentSlug,
 } from "@/i18n/content/use-cases/types";
 import {
-  SUPPORTED_LOCALES,
   buildHreflangAlternates,
   getLocaleByPrefix,
   localizePathname,
 } from "@/i18n";
 import {
   getLocalizedStaticParams,
+  getNativeAvailableLocales,
   getNativeRouteByPath,
   getNativeLocalizedRoutePaths,
   getPreviewLocalizedStaticParams,
@@ -330,6 +330,9 @@ function withLocalizedAlternates(
   metadata: Metadata,
   canonicalPath: string,
 ): Metadata {
+  const mode = resolveNativeI18nMode();
+  const linkMode = mode === "native-preview" ? mode : "native";
+
   return {
     ...metadata,
     alternates: {
@@ -337,7 +340,7 @@ function withLocalizedAlternates(
       languages: buildHreflangAlternates(
         siteUrl,
         canonicalPath,
-        SUPPORTED_LOCALES,
+        getNativeAvailableLocales(canonicalPath, linkMode),
       ),
     },
   };

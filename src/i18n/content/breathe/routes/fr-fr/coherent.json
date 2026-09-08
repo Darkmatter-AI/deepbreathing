@@ -60,7 +60,7 @@
   "featured": true,
   "frequency": "Quotidiennement, 5 à 10 minutes ; réinitialisations optionnelles de 2 à 3 minutes entre les tâches",
   "hero": {
-    "intro": "Cet exercice de respiration : respirez environ 5 à 6 fois par minute avec des inspirations et expirations égales (par ex. 5 à 6 secondes chacune). Ce rythme maximise souvent le couplage respiratoire-cardiovasculaire et l'engagement baroréflexe, augmentant la VRC. Gardez des respirations petites et silencieuses ; le confort prime sur la profondeur. Si vous avez des vertiges ou un manque d'air, réduisez l'amplitude ou faites une pause.",
+    "intro": "Cet exercice de respiration : respirez environ 5 à 6 fois par minute avec des inspirations et expirations égales (par ex. 5 à 6 secondes chacune). Ce rythme maximise souvent le couplage respiratoire-cardiovasculaire et l'engagement baroréflexe, augmentant la VFC. Gardez des respirations petites et silencieuses ; le confort prime sur la profondeur. Si vous avez des vertiges ou un manque d'air, réduisez l'amplitude ou faites une pause.",
     "subtitle": "Inspiration et expiration égales proches de 0,1 Hz pour amplifier la VFC.",
     "title": "Guide de cohérence cardiaque"
   },
@@ -124,12 +124,12 @@
     "dateModified": "2026-05-05",
     "datePublished": "2025-11-17",
     "description": "Exercice de cohérence cardiaque gratuit : 5 minutes guidées au rythme de 5 à 6 respirations par minute (compatible méthode 365). Minuteur visuel dans le navigateur, sans inscription.",
-    "ogDescription": "Découvrez pourquoi 5-6 respirations/min maximise la VRC. La recherche derrière la cohérence cardiaque + un entraîneur interactif gratuit.",
+    "ogDescription": "Découvrez pourquoi 5-6 respirations/min maximise la VFC. La recherche derrière la cohérence cardiaque + un entraîneur interactif gratuit.",
     "ogImage": "og/breathe-coherent.png",
     "ogTitle": "La cohérence cardiaque : la science des 5 respirations par minute",
     "reviewer": "",
     "title": "Cohérence cardiaque : exercice guidé gratuit de 5 minutes (avec minuteur) | Exercices de Respiration Profonde",
-    "twitterDescription": "Pourquoi 5-6 respirations/min maximise la VRC. La recherche sur la cohérence cardiaque + un entraîneur interactif gratuit.",
+    "twitterDescription": "Pourquoi 5-6 respirations/min maximise la VFC. La recherche sur la cohérence cardiaque + un entraîneur interactif gratuit.",
     "twitterTitle": "La cohérence cardiaque : science et entraîneur gratuit"
   },
   "mode": "Coherent Breathing",
@@ -185,7 +185,7 @@
     "safety": [
       "Arrêtez en cas de vertiges ou d'oppression ; reprenez avec des respirations plus légères ou des séances plus courtes.",
       "Grossesse : évitez de forcer ; pratiquez uniquement une respiration douce et continue.",
-      "Maladies cardiopulmonaires, hypertension, antécédents de syncope : pratiquez assis ; gardez un volume faible ; demandez l'avis d'un médecin.",
+      "Maladies cardiopulmonaires, hypertension non contrôlée, antécédents de syncope : pratiquez assis ; gardez un volume faible ; demandez l'avis d'un médecin.",
       "Conseil contre l'hyperventilation : respirez silencieusement et superficiellement ; évitez les grandes inspirations."
     ],
     "studies": [

@@ -4,7 +4,8 @@
     "es-es",
     "fr-fr",
     "ja-jp",
-    "pt-br"
+    "pt-br",
+    "it-it"
   ],
   "routes": {
     "/breathe/4-7-8": {
@@ -113,6 +114,13 @@
           "routePath": "routes/fr-fr/belly.json",
           "unresolved": 0
         },
+        "it-it": {
+          "chromeMessages": 59,
+          "chromePath": "chrome/it-it/belly.json",
+          "publishable": true,
+          "routePath": "routes/it-it/belly.json",
+          "unresolved": 0
+        },
         "ja-jp": {
           "chromeMessages": 59,
           "chromePath": "chrome/ja-jp/belly.json",
@@ -152,6 +160,13 @@
           "chromePath": "chrome/fr-fr/box.json",
           "publishable": true,
           "routePath": "routes/fr-fr/box.json",
+          "unresolved": 0
+        },
+        "it-it": {
+          "chromeMessages": 63,
+          "chromePath": "chrome/it-it/box.json",
+          "publishable": true,
+          "routePath": "routes/it-it/box.json",
           "unresolved": 0
         },
         "ja-jp": {
@@ -275,6 +290,13 @@
           "chromePath": "chrome/fr-fr/coherent.json",
           "publishable": true,
           "routePath": "routes/fr-fr/coherent.json",
+          "unresolved": 0
+        },
+        "it-it": {
+          "chromeMessages": 59,
+          "chromePath": "chrome/it-it/coherent.json",
+          "publishable": true,
+          "routePath": "routes/it-it/coherent.json",
           "unresolved": 0
         },
         "ja-jp": {

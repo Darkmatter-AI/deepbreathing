@@ -14,6 +14,7 @@ const contentRoot = new URL(
   import.meta.url,
 );
 const expectedLocales = ["de-de", "es-es", "fr-fr", "ja-jp", "pt-br"];
+const expectedOutputLocales = [...expectedLocales, "it-it"];
 const forbiddenRuntimeFields =
   /catalog|occurrence|placement|messageId|reason|reviewedSourceHash|sourceHash|sourceText/i;
 
@@ -44,6 +45,7 @@ test("R-W04 privacy/support compiler emits complete semantic value-only bundles"
   const first = await buildPrivacySupportArtifacts();
   const second = await buildPrivacySupportArtifacts();
   assert.deepEqual([...second], [...first]);
+  assert.equal(first.size, 16);
 
   const privacySource = JSON.parse(
     await readFile(new URL("source/privacy.json", contentRoot), "utf8"),
@@ -71,7 +73,11 @@ test("R-W04 privacy/support compiler emits complete semantic value-only bundles"
   assert.equal(stale.reduce((total, item) => total + item.cells, 0), 15);
 
   for (const route of ["privacy", "support"]) {
-    for (const locale of expectedLocales) {
+    assert.deepEqual(
+      Object.keys(publication.routes[route].locales).sort(),
+      [...expectedOutputLocales].sort(),
+    );
+    for (const locale of expectedOutputLocales) {
       const raw = first.get(`messages/${route}/${locale}.json`);
       assert.ok(raw, `missing ${route}:${locale}`);
       assert.doesNotMatch(raw, forbiddenRuntimeFields);
@@ -113,8 +119,8 @@ test("R-W04 privacy/support loader is literal and fail closed", async () => {
     "src/i18n/content/bespoke/privacy-support/server/load-privacy-support-content.ts",
   );
   assert.equal(loader.startsWith('import "server-only";'), true);
-  assert.equal((loader.match(/import\("\.\.\/messages\/privacy\//g) ?? []).length, 5);
-  assert.equal((loader.match(/import\("\.\.\/messages\/support\//g) ?? []).length, 5);
+  assert.equal((loader.match(/import\("\.\.\/messages\/privacy\//g) ?? []).length, 6);
+  assert.equal((loader.match(/import\("\.\.\/messages\/support\//g) ?? []).length, 6);
   assert.match(loader, /loadPrivacyContent/);
   assert.match(loader, /loadSupportContent/);
   assert.match(loader, /refusing English fallback/);

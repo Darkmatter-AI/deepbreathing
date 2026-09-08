@@ -98,7 +98,7 @@ test("loss-aversion sheet fires signin_* events tagged variant: loss_aversion", 
 test("loss-aversion sheet renders the real session card + reference copy", () => {
   const src = read(SHEET);
   assert.match(src, /SESSION COMPLETE/, "shows the SESSION COMPLETE eyebrow");
-  assert.match(src, /\{sessionMode\}/, "renders the real mode label from props");
+  assert.match(src, /localizedSessionMode \?\? sessionMode/, "renders the localized mode label with the source mode fallback");
   assert.match(src, /just now/, "shows 'just now'");
   assert.match(src, /formatDuration\(sessionSeconds\)/, "renders M:SS from sessionSeconds");
   assert.match(src, /Keep tonight(&apos;|')s calm\./, "literal headline 'Keep tonight's calm.'");
@@ -106,7 +106,7 @@ test("loss-aversion sheet renders the real session card + reference copy", () =>
   assert.match(src, /Continue with Google/, "Google primary CTA");
   assert.match(src, /One tap\. No password\./, "Google subtitle");
   assert.match(src, /or save with email/, "email expand label");
-  assert.match(src, />\s*Not now\s*</, "Not now dismiss");
+  assert.match(src, /notNow: "Not now"/, "preserves the reviewed English dismiss copy");
   // honest-by-construction: none of the simulated social-proof from Prompt B
   assert.doesNotMatch(src, /breathing right now/, "must not carry the fake live count");
   assert.doesNotMatch(src, /Day streak/, "must not carry the fake streak");

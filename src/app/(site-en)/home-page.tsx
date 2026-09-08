@@ -212,7 +212,12 @@ export function HomePage({
   resonance: ReactNode;
   renderContext?: NativeRouteRenderContext;
 }) {
-  const href = (path: string) => resolveHref(path, renderContext);
+  const href = (path: string) => resolveHref(
+    renderContext?.locale === "it-IT" && path === "/breathe/4-7-8"
+      ? "/4-7-8-breathing-timer"
+      : path,
+    renderContext,
+  );
   const faqSchema = {
     ...content.schema.faq,
     mainEntity: FAQ_ITEM_KEYS.map((key) => {
@@ -269,7 +274,10 @@ export function HomePage({
             {resonance}
           </div>
         </section>
-        <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-20 px-6 pb-20 sm:px-8 lg:inset-y-0 lg:right-auto lg:z-30 lg:flex lg:w-full lg:max-w-xl lg:flex-col lg:justify-center lg:px-6 lg:py-20">
+        <div className={cn(
+          "pointer-events-none bottom-0 left-0 right-0 z-20 px-6 pb-20 sm:px-8 lg:absolute lg:inset-y-0 lg:right-auto lg:z-30 lg:flex lg:w-full lg:max-w-xl lg:flex-col lg:justify-center lg:px-6 lg:py-20",
+          renderContext?.locale === "it-IT" ? "relative -mt-40 lg:mt-0" : "absolute",
+        )}>
           <div className="pointer-events-auto">
             {heroHeader}
           </div>

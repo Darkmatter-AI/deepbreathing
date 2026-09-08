@@ -35,10 +35,10 @@
       "scope": "content",
       "sourceText": "Save your breathing practice journey",
       "translations": {
-        "de-de": "Speichere deinen Atemübungs-Weg",
+        "de-de": "Speichern Sie Ihren Atemübungsweg",
         "es-es": "Guarda tu recorrido de práctica de respiración",
         "fr-fr": "Enregistre ton parcours de pratique de respiration",
-        "ja-jp": "呼吸の練習の旅を保存",
+        "ja-jp": "呼吸練習の記録を保存",
         "pt-br": "Salve sua jornada de prática de respiração"
       }
     },
@@ -59,15 +59,16 @@
     {
       "messageId": "catalog-placement.cd6c1abf-30b9-45ab-8d52-6ebace1826df",
       "reason": "Missing approved catalog translation for sel:div.nbb-mode:ctx:div:pos:0",
+      "reviewReason": "Use the established translated name for box breathing in the presentation guide mode label.",
       "reviewedSourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095",
       "scope": "chrome",
       "sourceText": "Box Breathing",
       "translations": {
-        "de-de": "Box Breathing",
-        "es-es": "Box Breathing",
-        "fr-fr": "Box Breathing",
-        "ja-jp": "Box Breathing",
-        "pt-br": "Box Breathing"
+        "de-de": "Box-Atmung",
+        "es-es": "Respiración cuadrada",
+        "fr-fr": "Respiration carrée",
+        "ja-jp": "ボックス呼吸法",
+        "pt-br": "Respiração quadrada"
       }
     },
     {
@@ -105,7 +106,7 @@
       "scope": "content",
       "sourceText": "One tap. No password.",
       "translations": {
-        "de-de": "Ein Tipp. Kein Passwort.",
+        "de-de": "Einmal tippen. Kein Passwort.",
         "es-es": "Un toque. Sin contraseña.",
         "fr-fr": "Un appui. Pas de mot de passe.",
         "ja-jp": "ワンタップ。パスワード不要。",

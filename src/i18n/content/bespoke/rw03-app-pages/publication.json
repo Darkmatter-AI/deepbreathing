@@ -13,14 +13,14 @@
         "path": "messages/es-es/box-breathing-app.json",
         "publishable": true,
         "resolvedMessages": 99,
-        "sha256": "02898665a51f381e99dea8ee66d7ae5466c6752829ab642898fe0aa992ca15c3"
+        "sha256": "bcb9a377830161042aa330d46f60477bba66bf02f10a1f8bbdd0a0c42d5d9054"
       },
       "fr-fr": {
         "expectedMessages": 99,
         "path": "messages/fr-fr/box-breathing-app.json",
         "publishable": true,
         "resolvedMessages": 99,
-        "sha256": "be82cb4cf7f7827c57b910e9c593c73521bdd3b67d697e2f58b460f9b909fd0b"
+        "sha256": "32bbe7a065dc69e9208bafd6eb9f2ccacf89c74b9feee10f2e3922edd8350f33"
       },
       "ja-jp": {
         "expectedMessages": 99,
@@ -34,7 +34,7 @@
         "path": "messages/pt-br/box-breathing-app.json",
         "publishable": true,
         "resolvedMessages": 99,
-        "sha256": "071b8f4a28615ca88f2cd6d4a6e6dc5a16c945a6d26b5e6324f741f1810c4cb7"
+        "sha256": "afadd3768e7d95838ce8e4c3d70c92936a10a00889b2238b92ebfd78267474db"
       }
     },
     "breathing-app": {

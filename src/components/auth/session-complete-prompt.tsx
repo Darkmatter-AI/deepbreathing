@@ -125,10 +125,12 @@ export function SessionCompletePrompt({
         onOpenChange={handleOpenChange}
         onSuccess={onSuccess}
         sessionMode={pattern.name}
+        localizedSessionMode={modeDisplayName}
         accentColor={pattern.color}
         sessionSeconds={sessionSeconds || 90}
         layout={bannerUi}
         messages={routeClientMessages}
+        locale={locale}
       />
     );
   }
@@ -141,8 +143,10 @@ export function SessionCompletePrompt({
         onOpenChange={handleOpenChange}
         onSuccess={onSuccess}
         sessionMode={pattern.name}
+        localizedSessionMode={modeDisplayName}
         accentColor={pattern.color}
         sessionSeconds={sessionSeconds}
+        locale={locale}
       />
     );
   }

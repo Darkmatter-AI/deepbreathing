@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "translationMethod": "Agent-authored Italian draft with source-bound semantic review; external native-language certification not performed.",
+  "sourceRoute": "/breathe",
+  "entries": [
+    {
+      "messagePath": "metadata.title",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "732037094bd879d2b949b5f919272ddb0b42b5749c3e38873469f81aa7829437",
+      "sourceText": "Breathing Techniques: Box, 4-7-8, Coherent, Sigh, Wim Hof",
+      "translation": "Tecniche di respirazione: quadrata, 4-7-8, coerente, sospiro, Wim Hof"
+    },
+    {
+      "messagePath": "metadata.description",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "74a8fc5c057025049c6dbe81b0b1ec1a021f802b49ba36e63570e7294e2ecead",
+      "sourceText": "Free guided breathing visualizers: box breathing, 4-7-8, coherent breathing, physiological sigh, and Wim Hof. Pick a technique and start—no signup.",
+      "translation": "Visualizzatori guidati gratuiti per la respirazione quadrata, 4-7-8, coerente, il sospiro fisiologico e il metodo Wim Hof. Scegli una tecnica e inizia, senza registrazione."
+    },
+    {
+      "messagePath": "metadata.socialTitle",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "d8c5b64a2e4f085b0536004871f14fd343d5bdc98f397cf6f1fb095f0608be64",
+      "sourceText": "Breathing Techniques (Free Guided Visualizers)",
+      "translation": "Tecniche di respirazione (visualizzatori guidati gratuiti)"
+    },
+    {
+      "messagePath": "metadata.socialDescription",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "556c450610f7c9cea9cffe7e460ea2e09c1a3535c635b3edff4a5250c7964320",
+      "sourceText": "Box breathing, 4-7-8, coherent breathing, physiological sigh, and Wim Hof method—free guided visualizers. No signup required.",
+      "translation": "Respirazione quadrata, 4-7-8, coerente, sospiro fisiologico e metodo Wim Hof: visualizzatori guidati gratuiti. Nessuna registrazione richiesta."
+    },
+    {
+      "messagePath": "metadata.twitterDescription",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "cb8ecf141d0f1e67b579318b2fbf8f03a975ea4cb478f34a6797f0d16cd7b7ea",
+      "sourceText": "Box breathing, 4-7-8, coherent breathing, physiological sigh, and Wim Hof—free guided visualizers.",
+      "translation": "Respirazione quadrata, 4-7-8, coerente, sospiro fisiologico e Wim Hof: visualizzatori guidati gratuiti."
+    },
+    {
+      "messagePath": "breadcrumb.home",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+      "sourceText": "Home",
+      "translation": "Home"
+    },
+    {
+      "messagePath": "breadcrumb.techniques",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "37b5f87273b794d1da69aca7c5bd665712303c9f0dcb428ad5a88923012e2b1c",
+      "sourceText": "Breathing Techniques",
+      "translation": "Tecniche di respirazione"
+    },
+    {
+      "messagePath": "hero.eyebrow",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+      "sourceText": "DEEP BREATHING EXERCISES",
+      "translation": "ESERCIZI DI RESPIRAZIONE PROFONDA"
+    },
+    {
+      "messagePath": "hero.title",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "aa8d5009270cd133de98cd5fb5cd204b71d9b09f5d3b1465b7d706d851aca7f3",
+      "sourceText": "Breathing techniques",
+      "translation": "Tecniche di respirazione"
+    },
+    {
+      "messagePath": "hero.description",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "5e10faf64f9a7b30e345a58a809a289392dac3091992f76d9455b064b4baa3a6",
+      "sourceText": "Pick a technique, press Start, and follow the visual guide. All sessions are free and customizable.",
+      "translation": "Scegli una tecnica, premi Inizia e segui la guida visiva. Tutte le sessioni sono gratuite e personalizzabili."
+    },
+    {
+      "messagePath": "cards.box.title",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "1937b7673dddca18a5b80fa7c9532b1b9f55ef0e0b2cf55202470767d5af2de0",
+      "sourceText": "Box Breathing (4-4-4-4) Visualizer",
+      "translation": "Visualizzatore di respirazione quadrata (4-4-4-4)"
+    },
+    {
+      "messagePath": "cards.box.subtitle",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "6b3dd04f430c7e6032fdf5263a932d03f168c4805f00d1a17da7b27451c63fb3",
+      "sourceText": "Equal counts to steady arousal and sharpen focus.",
+      "translation": "Conteggi uguali per stabilizzare l'attivazione e migliorare la concentrazione."
+    },
+    {
+      "messagePath": "cards.4-7-8.title",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "61bc7df0643742b926fa603a5bb211bd432b1789c6e4bc4258e41a29826b436e",
+      "sourceText": "4-7-8 Breathing Visualizer",
+      "translation": "Visualizzatore di respirazione 4-7-8"
+    },
+    {
+      "messagePath": "cards.4-7-8.subtitle",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "3bc9026df1ab7b27e17cc63fc26e8182637e6d67deb23b6ec397c3827a1417fb",
+      "sourceText": "Long-exhale cadence to downshift quickly.",
+      "translation": "Un ritmo con espirazione lunga per rallentare rapidamente."
+    },
+    {
+      "messagePath": "cards.coherent.title",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "4c6e34da239e136a2b5d96c1bc328ff0f810abfb71f7047ad9027d548b509101",
+      "sourceText": "Coherent Breathing Trainer",
+      "translation": "Allenatore di respirazione coerente"
+    },
+    {
+      "messagePath": "cards.coherent.subtitle",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "76526c55a5213b9904d69841421bdf641d425b0c70c64b45d2b12b7e9616b418",
+      "sourceText": "Equal inhale/exhale near 0.1 Hz to amplify HRV.",
+      "translation": "Inspirazione ed espirazione uguali vicino a 0,1 Hz per aumentare l'HRV."
+    },
+    {
+      "messagePath": "cards.physiological-sigh.title",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "b328eabea77dd51370eb8e6ce397ac46cee3df995cd9515e8a1a7e9b35e9bdd7",
+      "sourceText": "Physiological Sigh: Instant Stress Relief",
+      "translation": "Sospiro fisiologico: sollievo immediato dallo stress (in inglese)"
+    },
+    {
+      "messagePath": "cards.physiological-sigh.subtitle",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "fcf9a26d3382aadc6a535212a68211e158be619b293ac03612fd59766344aaeb",
+      "sourceText": "Calm down in 30 seconds with the double-inhale technique.",
+      "translation": "Calmati in 30 secondi con la tecnica della doppia inspirazione."
+    },
+    {
+      "messagePath": "cards.wim-hof.title",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "0fc2745ef83bc7cefb27f9424a6b131460b3fd197f069edb7f3534db9987f059",
+      "sourceText": "Wim Hof Breathing Method",
+      "translation": "Metodo di respirazione Wim Hof (in inglese)"
+    },
+    {
+      "messagePath": "cards.wim-hof.subtitle",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "7aa582b828cd478cc17cb49c0a58615eb4fc53a7ab50cecf852f67bac2ed0e24",
+      "sourceText": "The Iceman's technique for energy, focus, and resilience.",
+      "translation": "La tecnica dell'Iceman per energia, concentrazione e resilienza."
+    },
+    {
+      "messagePath": "cards.pursed-lip.title",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "b44d6b2987526fe1ecca59bd20db1dfa5478a2ed3fd051905793342a73747bd2",
+      "sourceText": "Pursed Lip Breathing Technique",
+      "translation": "Tecnica di respirazione a labbra socchiuse (in inglese)"
+    },
+    {
+      "messagePath": "cards.pursed-lip.subtitle",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "0e8bc44c1bca97d47367d59baa646eda6cafc9ceb48e14144955f25a937dda60",
+      "sourceText": "Slow your breath and ease shortness of breath in seconds.",
+      "translation": "Rallenta il respiro e allevia la sensazione di fiato corto in pochi secondi."
+    },
+    {
+      "messagePath": "cards.nadi-shodhana.title",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "a9dfbbff7a7864878cefc24328a9d7eaa53bc10d1f4e3fad9c7dc68af68fa320",
+      "sourceText": "Alternate Nostril Breathing (Nadi Shodhana)",
+      "translation": "Respirazione a narici alternate (Nadi Shodhana) (in inglese)"
+    },
+    {
+      "messagePath": "cards.nadi-shodhana.subtitle",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "891ea9c518dfd45f5087afc014d658a33fa14fdd364aa5f969b43054167a8bb8",
+      "sourceText": "Balance your nervous system with this ancient yoga technique.",
+      "translation": "Equilibra il sistema nervoso con questa antica tecnica yoga."
+    },
+    {
+      "messagePath": "cards.ujjayi.title",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "e88e090f9492af5b6ac8f949913be4320488e5dacce3c448cd86b7e8fdb88c9f",
+      "sourceText": "Ujjayi Breathing: The Ocean Breath Technique",
+      "translation": "Respirazione Ujjayi: la tecnica del respiro dell'oceano (in inglese)"
+    },
+    {
+      "messagePath": "cards.ujjayi.subtitle",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "6a39548e7c59c5c821eda32ef7740098d400a83a7f78bf2f45941876ac09ad9d",
+      "sourceText": "The yogic breath that sounds like ocean waves for deep focus and calm.",
+      "translation": "Il respiro yogico che ricorda le onde dell'oceano per concentrazione profonda e calma."
+    },
+    {
+      "messagePath": "cards.belly.title",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "b0a5eb5ee5f57c475a7026cded2abb30698da9e3ccf7c5428a76b80d0d0bb6f1",
+      "sourceText": "Belly Breathing: Diaphragmatic Breathing Exercises",
+      "translation": "Respirazione diaframmatica: esercizi di respirazione"
+    },
+    {
+      "messagePath": "cards.belly.subtitle",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "11dff425a0cd82f614f925c6ac0a5a02104485f73cbb80b4f4d691d9e96cdc79",
+      "sourceText": "The foundation of all breathwork: learn to breathe from your diaphragm.",
+      "translation": "La base di ogni pratica respiratoria: impara a respirare con il diaframma."
+    },
+    {
+      "messagePath": "cards.buteyko.title",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "6e5af0031ccdda555bd6fe13f19ecf553320dc5f40ea7693e4ab79506db70e85",
+      "sourceText": "Buteyko Breathing: Light, Nasal Breathing Method",
+      "translation": "Respirazione Buteyko: metodo di respirazione leggera dal naso (in inglese)"
+    },
+    {
+      "messagePath": "cards.buteyko.subtitle",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "2cc968fad9e75cb71be6cd9d75ec9cedfc356b41910bc0a0a6e0882a109f331f",
+      "sourceText": "The breath training technique developed for asthma and respiratory health.",
+      "translation": "La tecnica di allenamento respiratorio sviluppata per l'asma e la salute respiratoria."
+    },
+    {
+      "messagePath": "cards.tummo.title",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "e1f67e927d8c0895219627e68aa1c826e51a78c10a2b583971861c3535eb0d28",
+      "sourceText": "Tummo Breathing: How to Do the Tibetan Inner Fire Technique",
+      "translation": "Respirazione Tummo: come praticare la tecnica tibetana del fuoco interiore (in inglese)"
+    },
+    {
+      "messagePath": "cards.tummo.subtitle",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "dd31704ee63a13af95d30abad0fb27527358f78ea8d3022e782bbe8101559c48",
+      "sourceText": "Learn the benefits, safety basics, and practice steps for this advanced Tibetan breathwork method.",
+      "translation": "Scopri benefici, principi di sicurezza e passaggi per praticare questa tecnica tibetana avanzata."
+    },
+    {
+      "messagePath": "cards.breath-of-fire.title",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "3af9022b052904d4c94cc2bff34f9890a8a7a611b49c37824fd8ab7aea7b347b",
+      "sourceText": "Breath of Fire: Kundalini Yoga Breathing Exercise",
+      "translation": "Respirazione del fuoco: esercizio di respirazione Kundalini yoga (in inglese)"
+    },
+    {
+      "messagePath": "cards.breath-of-fire.subtitle",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "ac525669cb77b3dec1af56e93ae0d36979adb7b933a4264f7ea5919a3809fb59",
+      "sourceText": "Rapid rhythmic breathing for instant energy and mental clarity.",
+      "translation": "Respirazione ritmica e rapida per energia immediata e chiarezza mentale."
+    },
+    {
+      "messagePath": "cards.9d-breathwork.title",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "32baa93231dbe1e8568e0abeb4e0e6c0853129574a0e2e644712b4f3bb4532aa",
+      "sourceText": "9D Breathwork Explained",
+      "translation": "La respirazione 9D spiegata (in inglese)"
+    },
+    {
+      "messagePath": "cards.9d-breathwork.subtitle",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "5bad13a970e43a5c5c39caf22f1c64f5c44f6caee10b202f0893fb719203fc44",
+      "sourceText": "The breath is free. Try it now, then learn what makes a session 9D.",
+      "translation": "Il respiro è gratuito. Provalo ora, poi scopri cosa rende una sessione 9D."
+    },
+    {
+      "messagePath": "cards.hope-cartel-9d-breathwork.title",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "6e9e17540b182c9b37846d496562211a7bd33d821317dd7e27468058f93c1309",
+      "sourceText": "Hope Cartel 9D Breathwork",
+      "translation": "Respirazione 9D Hope Cartel (in inglese)"
+    },
+    {
+      "messagePath": "cards.hope-cartel-9d-breathwork.subtitle",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "e3bb4210dc3ef9553c4d8ddfcccea02eb6df846aa0230388e18186b3a24bfc15",
+      "sourceText": "Australia's biggest 9D delivery brand. Sessions, pricing, and what to expect.",
+      "translation": "Il più grande marchio australiano di sessioni 9D. Sessioni, prezzi e cosa aspettarsi."
+    },
+    {
+      "messagePath": "cardAction",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+      "sourceText": "Start session →",
+      "translation": "Inizia la sessione →"
+    },
+    {
+      "messagePath": "guides.title",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "917fc94616737844a25f53629d69f15f9543d0dd976a656b348c5539517415ec",
+      "sourceText": "Guides by goal",
+      "translation": "Guide per obiettivo"
+    },
+    {
+      "messagePath": "guides.description",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "294073b9e09b70fe775bde034e472737c503a65bb98738125063345f652fa441",
+      "sourceText": "Want something more specific? Browse breathing guides for sleep, anxiety, panic, focus, and performance.",
+      "translation": "Cerchi qualcosa di più specifico? Esplora le guide di respirazione per sonno, ansia, panico, concentrazione e prestazioni."
+    },
+    {
+      "messagePath": "guides.action",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+      "reviewedSourceHash": "2e6904449c91cd9f8d316454b2b95f6d564f3834b25e96a124af2d3ec346ec97",
+      "sourceText": "Browse all use cases →",
+      "translation": "Esplora tutti i casi d’uso (in inglese) →"
+    }
+  ]
+}

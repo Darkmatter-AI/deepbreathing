@@ -3,12 +3,20 @@
 Tracks the index status of every URL. The **Indexed** column is refreshed from the
 GSC URL Inspection API by `scripts/gsc-index-status.mjs` (see the `daily-indexing` skill).
 
-The **GSC** and **Bing** date columns are historical. We no longer submit URLs anywhere:
-Google has no supported submission API for pages like ours, and Bing is covered
-automatically by IndexNow on every production deploy. Do not write new dates into them.
-See the 2026-07-09 entry in `SEO-EXPERIMENTS.md`.
+The **GSC** and **Bing** date columns below are historical; preserve them. Record
+new release receipts in the dated release notes instead. Google supports sitemap
+submission and the Search Console browser's Request indexing action. Its general
+Indexing API is not eligible for these pages. Bing receives explicit canonical URL
+batches through IndexNow; shared or localized diffs can correctly produce no automatic
+submission and need a reviewed URL batch.
 
-## Current state (as of 2026-07-27)
+## Italian release preparation (2026-09-08)
+
+The local native sitemap contains 339 URLs: the existing 331 plus eight Italian
+pages. Production rollout and submission receipts are pending. Italian rows below
+have unknown index status; inclusion in a sitemap is not evidence of indexing.
+
+## Historical state (as of 2026-07-27)
 
 - **Rows tracked**: **331**, exactly matching the cleaned canonical sitemap.
 - **GSC Page Indexing report baseline**: **270 indexed / 61 not indexed** in the
@@ -59,14 +67,14 @@ Re-submitted **148 URLs** to GSC + Bing via the mass-translate Indexing API (`re
 - **GSC** — ISO date submitted via GSC URL Inspection → Request Indexing or the `mcp__mass-translate-backend__request_indexing` API.
 - **Bing** — ISO date submitted via Bing Webmaster → URL Submission or the `mcp__mass-translate-backend__submit_urls_bing` API.
 
-## Submission channels (preferred order)
+## Current submission channels
 
-1. **mass-translate MCP API** — fast, batch-friendly, no UI automation.
-   - `mcp__mass-translate-backend__request_indexing` — Google Indexing API (one URL per call).
-   - `mcp__mass-translate-backend__submit_urls_bing` — up to 10 URLs per call. **Blocker**: needs Bing Content API key from BWT Settings → API Access → connect via backend.
-2. **agent-browser UI** — fallback, slower but works without MCP auth.
-   - GSC URL Inspection — one URL at a time, ~10-20/day silent cap
-   - Bing Webmaster URL Submission — paste batch into dialog, 10K/day quota
+1. Submit the canonical sitemap through the Search Console Sitemaps API after the
+   production sitemap is verified. Use browser URL Inspection → Request indexing for
+   a small priority cohort, subject to the account's available quota.
+2. Submit the exact changed/new canonical URLs through IndexNow after checking each
+   against the live sitemap and its response. An accepted request does not confirm
+   crawling or indexing. Do not use the retired sitemap ping endpoints.
 
 ## Priority rationale
 
@@ -81,6 +89,14 @@ Re-submitted **148 URLs** to GSC + Bing via the mass-translate Indexing API (`re
 
 | P | URL | Indexed | GSC | Bing |
 |---|---|---|---|---|
+| 1 | https://deepbreathingexercises.com/it |  |  |  |
+| 3 | https://deepbreathingexercises.com/it/breathe |  |  |  |
+| 1 | https://deepbreathingexercises.com/it/breathe/belly |  |  |  |
+| 1 | https://deepbreathingexercises.com/it/breathe/box |  |  |  |
+| 3 | https://deepbreathingexercises.com/it/breathe/coherent |  |  |  |
+| 3 | https://deepbreathingexercises.com/it/4-7-8-breathing-timer |  |  |  |
+| 3 | https://deepbreathingexercises.com/it/privacy |  |  |  |
+| 3 | https://deepbreathingexercises.com/it/support |  |  |  |
 | 1 | https://deepbreathingexercises.com/breathe/9d-breathwork | ✓ | 2026-06-13 | 2026-06-13 |
 | 1 | https://deepbreathingexercises.com/breathe/hope-cartel-9d-breathwork | ✓ | 2026-06-13 | 2026-06-13 |
 | 2 | https://deepbreathingexercises.com/about/abi | ✓ | 2026-06-13 | 2026-06-13 |

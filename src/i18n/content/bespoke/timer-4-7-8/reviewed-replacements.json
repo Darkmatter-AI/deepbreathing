@@ -136,6 +136,24 @@
       "translations": {
         "ja-jp": "概要"
       }
+    },
+    {
+      "messageId": "article.comparison.rows.coherent.name",
+      "sourceText": "Coherent Breathing",
+      "reviewedSourceHash": "f10268a765bb0ecf0afdfae16a75bb2587e2c730d3f1f1b776a4cafc877308ea",
+      "reason": "The German catalog value uses the incorrect plural noun form for the technique name; this replacement supplies the grammatical singular form.",
+      "translations": {
+        "de-de": "Kohärente Atmung"
+      }
+    },
+    {
+      "messageId": "article.whenToUse.note.coherent",
+      "sourceText": "coherent breathing",
+      "reviewedSourceHash": "1897cdabe66cd62756b823942a0c13ffde6dcf07f91f3cf765c5bbbe92141b8c",
+      "reason": "The German catalog value uses the incorrect plural noun form for the technique name; this replacement supplies the grammatical singular form.",
+      "translations": {
+        "de-de": "Kohärente Atmung"
+      }
     }
   ]
 }

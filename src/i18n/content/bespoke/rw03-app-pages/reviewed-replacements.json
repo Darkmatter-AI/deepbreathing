@@ -2,55 +2,55 @@
   "replacements": [
     {
       "messageId": "hero.title",
-      "reason": "Current repository source has no approved exact catalog translation or compatible reviewed alias.",
+      "reason": "Align the box-breathing term with the established translated label used throughout this route.",
       "reviewedSourceHash": "e0f359a34975ec56c8282812633524f22c679c0929fef2daf0e422421f6bb6ad",
       "route": "box-breathing-app",
       "sourceText": "Box breathing app: free online 4-4-4-4 timer",
       "translations": {
         "de-de": "Box-Breathing-App: Kostenloser Online-4-4-4-4-Timer",
-        "es-es": "App de respiración en caja: temporizador 4-4-4-4 gratuito en línea",
-        "fr-fr": "Application de respiration en carré : minuteur 4-4-4-4 gratuit en ligne",
+        "es-es": "App de respiración cuadrada: temporizador 4-4-4-4 gratuito en línea",
+        "fr-fr": "Application de respiration carrée : minuteur 4-4-4-4 gratuit en ligne",
         "ja-jp": "ボックス呼吸アプリ：無料のオンライン4-4-4-4タイマー",
-        "pt-br": "App de respiração em caixa: temporizador 4-4-4-4 grátis online"
+        "pt-br": "App de respiração quadrada: temporizador 4-4-4-4 grátis online"
       }
     },
     {
       "messageId": "metadata.description",
-      "reason": "Current repository source has no approved exact catalog translation or compatible reviewed alias.",
+      "reason": "Align the box-breathing term with the established translated label used throughout this route.",
       "reviewedSourceHash": "4d5f237119c5e00201198771836304105d4f7faf0006351ef49c5f4b5d7ac811",
       "route": "box-breathing-app",
       "sourceText": "Free box breathing app with a guided 4-4-4-4 timer. Use box breathing online for stress, focus, anxiety, and quick resets. No download or signup.",
       "translations": {
         "de-de": "Kostenlose Box-Breathing-App mit geführtem 4-4-4-4-Timer. Nutzen Sie Box Breathing online für Stress, Fokus, Angst und schnelle Resets. Kein Download oder Anmeldung.",
-        "es-es": "App de respiración en caja gratuita con temporizador guiado 4-4-4-4. Usa la respiración en caja en línea para el estrés, la concentración, la ansiedad y reinicios rápidos. Sin descarga ni registro.",
-        "fr-fr": "Application de respiration en carré gratuite avec minuteur guidé 4-4-4-4. Utilisez la respiration en carré en ligne pour le stress, la concentration, l'anxiété et les réinitialisations rapides. Aucun téléchargement ni inscription.",
+        "es-es": "App de respiración cuadrada gratuita con temporizador guiado 4-4-4-4. Usa la respiración cuadrada en línea para el estrés, la concentración, la ansiedad y reinicios rápidos. Sin descarga ni registro.",
+        "fr-fr": "Application de respiration carrée gratuite avec minuteur guidé 4-4-4-4. Utilisez la respiration carrée en ligne pour le stress, la concentration, l'anxiété et les réinitialisations rapides. Aucun téléchargement ni inscription.",
         "ja-jp": "ガイド付き4-4-4-4タイマーの無料ボックス呼吸アプリ。ストレス、集中、不安、クイックリセットにオンラインでボックス呼吸をお使いください。ダウンロードや登録は不要です。",
-        "pt-br": "App de respiração em caixa grátis com temporizador guiado 4-4-4-4. Use a respiração em caixa online para estresse, foco, ansiedade e reinícios rápidos. Sem download nem cadastro."
+        "pt-br": "App de respiração quadrada grátis com temporizador guiado 4-4-4-4. Use a respiração quadrada online para estresse, foco, ansiedade e reinícios rápidos. Sem download nem cadastro."
       }
     },
     {
       "messageId": "metadata.socialDescription",
-      "reason": "Current repository source has no approved exact catalog translation or compatible reviewed alias.",
+      "reason": "Align the box-breathing term with the established translated label used throughout this route.",
       "reviewedSourceHash": "9a3c549dbd868982223f9f52a62074ba44da2af0012e50bbb692ab6386b8753a",
       "route": "box-breathing-app",
       "sourceText": "Free box breathing app with a guided 4-4-4-4 timer. Use it online for calm, focus, and quick resets.",
       "translations": {
         "de-de": "Kostenlose Box-Breathing-App mit geführtem 4-4-4-4-Timer. Nutzen Sie sie online für Ruhe, Fokus und schnelle Resets.",
-        "es-es": "App de respiración en caja gratuita con temporizador guiado 4-4-4-4. Úsala en línea para la calma, la concentración y reinicios rápidos.",
-        "fr-fr": "Application de respiration en carré gratuite avec minuteur guidé 4-4-4-4. Utilisez-la en ligne pour le calme, la concentration et les réinitialisations rapides.",
+        "es-es": "App de respiración cuadrada gratuita con temporizador guiado 4-4-4-4. Úsala en línea para la calma, la concentración y reinicios rápidos.",
+        "fr-fr": "Application de respiration carrée gratuite avec minuteur guidé 4-4-4-4. Utilisez-la en ligne pour le calme, la concentration et les réinitialisations rapides.",
         "ja-jp": "ガイド付き4-4-4-4タイマーの無料ボックス呼吸アプリ。落ち着き、集中、クイックリセットにオンラインでご利用ください。",
-        "pt-br": "App de respiração em caixa grátis com temporizador guiado 4-4-4-4. Use online para calma, foco e reinícios rápidos."
+        "pt-br": "App de respiração quadrada grátis com temporizador guiado 4-4-4-4. Use online para calma, foco e reinícios rápidos."
       }
     },
     {
       "messageId": "metadata.socialTitle",
-      "reason": "Current repository source has no approved exact catalog translation or compatible reviewed alias.",
+      "reason": "Align the box-breathing term with the established translated label used throughout this route.",
       "reviewedSourceHash": "e13543f175f28fd86970f7e5ceb2bba098c9ab780cfb73095da46e8b80e0eab7",
       "route": "box-breathing-app",
       "sourceText": "Box Breathing App: Free Online 4-4-4-4 Timer",
       "translations": {
         "de-de": "Box-Breathing-App: Kostenloser Online-4-4-4-4-Timer",
-        "es-es": "App de respiración en caja: temporizador 4-4-4-4 gratuito en línea",
+        "es-es": "App de respiración cuadrada: temporizador 4-4-4-4 gratuito en línea",
         "fr-fr": "Application Box Breathing : minuteur 4-4-4-4 gratuit en ligne",
         "ja-jp": "ボックス呼吸アプリ：無料のオンライン4-4-4-4タイマー",
         "pt-br": "App Box Breathing: temporizador 4-4-4-4 grátis online"
@@ -58,13 +58,13 @@
     },
     {
       "messageId": "metadata.title",
-      "reason": "Current repository source has no approved exact catalog translation or compatible reviewed alias.",
+      "reason": "Align the box-breathing term with the established translated label used throughout this route.",
       "reviewedSourceHash": "e13543f175f28fd86970f7e5ceb2bba098c9ab780cfb73095da46e8b80e0eab7",
       "route": "box-breathing-app",
       "sourceText": "Box Breathing App: Free Online 4-4-4-4 Timer",
       "translations": {
         "de-de": "Box-Breathing-App: Kostenloser Online-4-4-4-4-Timer",
-        "es-es": "App de respiración en caja: temporizador 4-4-4-4 gratuito en línea",
+        "es-es": "App de respiración cuadrada: temporizador 4-4-4-4 gratuito en línea",
         "fr-fr": "Application Box Breathing : minuteur 4-4-4-4 gratuit en ligne",
         "ja-jp": "ボックス呼吸アプリ：無料のオンライン4-4-4-4タイマー",
         "pt-br": "App Box Breathing: temporizador 4-4-4-4 grátis online"
@@ -72,13 +72,13 @@
     },
     {
       "messageId": "metadata.twitterTitle",
-      "reason": "Current repository source has no approved exact catalog translation or compatible reviewed alias.",
+      "reason": "Align the box-breathing term with the established translated label used throughout this route.",
       "reviewedSourceHash": "e13543f175f28fd86970f7e5ceb2bba098c9ab780cfb73095da46e8b80e0eab7",
       "route": "box-breathing-app",
       "sourceText": "Box Breathing App: Free Online 4-4-4-4 Timer",
       "translations": {
         "de-de": "Box-Breathing-App: Kostenloser Online-4-4-4-4-Timer",
-        "es-es": "App de respiración en caja: temporizador 4-4-4-4 gratuito en línea",
+        "es-es": "App de respiración cuadrada: temporizador 4-4-4-4 gratuito en línea",
         "fr-fr": "Application Box Breathing : minuteur 4-4-4-4 gratuit en ligne",
         "ja-jp": "ボックス呼吸アプリ：無料のオンライン4-4-4-4タイマー",
         "pt-br": "App Box Breathing: temporizador 4-4-4-4 grátis online"

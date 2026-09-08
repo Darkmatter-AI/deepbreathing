@@ -17,6 +17,69 @@
       "reviewedSourceHash": "a6b324b1689c92cb548e3460f7242b7cc1dcb8fa5e108da268d5fa178a7c3da5",
       "sourcePath": "meta.description",
       "sourceText": "Free coherent breathing timer: train HRV and stress resilience in 5 minutes. 5-6 breaths/min pace. Start your guided session now."
+    },
+    {
+      "currentCatalogValue": "Temporizador gratuito para la coherencia cardíaca — entrena la VFC y la resiliencia al estrés en 5 minutos. Ritmo de 5-6 respiraciones/min. Empieza tu",
+      "locale": "es-es",
+      "reason": "The approved Spanish metadata ends mid-phrase after 'Empieza tu'; complete the call to action without changing its claims.",
+      "replacement": "Temporizador gratuito para la coherencia cardíaca — entrena la VFC y la resiliencia al estrés en 5 minutos. Ritmo de 5-6 respiraciones/min. Empieza ahora.",
+      "sourcePath": "meta.description",
+      "sourceText": "Free coherent breathing timer: train HRV and stress resilience in 5 minutes. 5-6 breaths/min pace. Start your guided session now.",
+      "reviewedSourceHash": "a6b324b1689c92cb548e3460f7242b7cc1dcb8fa5e108da268d5fa178a7c3da5"
+    },
+    {
+      "currentCatalogValue": "Temporizador gratuito para la coherencia cardíaca — entrena la VFC y la resiliencia al estrés en 5 minutos. Ritmo de 5-6 respiraciones/min. Empieza tu",
+      "locale": "es-es",
+      "reason": "The approved Spanish metadata ends mid-phrase after 'Empieza tu'; complete the call to action without changing its claims.",
+      "replacement": "Temporizador gratuito para la coherencia cardíaca — entrena la VFC y la resiliencia al estrés en 5 minutos. Ritmo de 5-6 respiraciones/min. Empieza ahora.",
+      "sourcePath": "meta.ogDescription",
+      "sourceText": "Free 5-6 breaths/min coherent breathing timer. Train HRV in 5 minutes. No download.",
+      "reviewedSourceHash": "0a688f5d3cfed880a04c32387a4f9318773658bd3ad7e06c41d89fcc61199677"
+    },
+    {
+      "currentCatalogValue": "Temporizador gratuito para la coherencia cardíaca — entrena la VFC y la resiliencia al estrés en 5 minutos. Ritmo de 5-6 respiraciones/min. Empieza tu",
+      "locale": "es-es",
+      "reason": "The approved Spanish metadata ends mid-phrase after 'Empieza tu'; complete the call to action without changing its claims.",
+      "replacement": "Temporizador gratuito para la coherencia cardíaca — entrena la VFC y la resiliencia al estrés en 5 minutos. Ritmo de 5-6 respiraciones/min. Empieza ahora.",
+      "sourcePath": "meta.twitterDescription",
+      "sourceText": "Free 5-6 breaths/min coherent breathing timer. Train HRV in 5 minutes. No download.",
+      "reviewedSourceHash": "0a688f5d3cfed880a04c32387a4f9318773658bd3ad7e06c41d89fcc61199677"
+    },
+    {
+      "currentCatalogValue": "Cet exercice de respiration : respirez environ 5 à 6 fois par minute avec des inspirations et expirations égales (par ex. 5 à 6 secondes chacune). Ce rythme maximise souvent le couplage respiratoire-cardiovasculaire et l'engagement baroréflexe, augmentant la VRC. Gardez des respirations petites et silencieuses ; le confort prime sur la profondeur. Si vous avez des vertiges ou un manque d'air, réduisez l'amplitude ou faites une pause.",
+      "locale": "fr-fr",
+      "reason": "The French route uses VFC elsewhere; align this HRV abbreviation with the established route terminology.",
+      "replacement": "Cet exercice de respiration : respirez environ 5 à 6 fois par minute avec des inspirations et expirations égales (par ex. 5 à 6 secondes chacune). Ce rythme maximise souvent le couplage respiratoire-cardiovasculaire et l'engagement baroréflexe, augmentant la VFC. Gardez des respirations petites et silencieuses ; le confort prime sur la profondeur. Si vous avez des vertiges ou un manque d'air, réduisez l'amplitude ou faites une pause.",
+      "sourcePath": "hero.intro",
+      "sourceText": "Breathe ~5–6 times per minute with equal inhales and exhales (e.g., 5–6 seconds each). This pace often maximizes respiratory–cardiovascular coupling and baroreflex engagement, acutely boosting HRV. Keep breaths small and quiet; comfort beats depth. If dizzy or air-hungry, make breaths smaller or pause.",
+      "reviewedSourceHash": "04e21fc81fa89e41d101bd03b85d680c2fba11c404e8281f43967910213ff2af"
+    },
+    {
+      "currentCatalogValue": "Découvrez pourquoi 5-6 respirations/min maximise la VRC. La recherche derrière la cohérence cardiaque + un entraîneur interactif gratuit.",
+      "locale": "fr-fr",
+      "reason": "The French route uses VFC elsewhere; align this HRV abbreviation with the established route terminology.",
+      "replacement": "Découvrez pourquoi 5-6 respirations/min maximise la VFC. La recherche derrière la cohérence cardiaque + un entraîneur interactif gratuit.",
+      "sourcePath": "meta.ogDescription",
+      "sourceText": "Free 5-6 breaths/min coherent breathing timer. Train HRV in 5 minutes. No download.",
+      "reviewedSourceHash": "0a688f5d3cfed880a04c32387a4f9318773658bd3ad7e06c41d89fcc61199677"
+    },
+    {
+      "currentCatalogValue": "Pourquoi 5-6 respirations/min maximise la VRC. La recherche sur la cohérence cardiaque + un entraîneur interactif gratuit.",
+      "locale": "fr-fr",
+      "reason": "The French route uses VFC elsewhere; align this HRV abbreviation with the established route terminology.",
+      "replacement": "Pourquoi 5-6 respirations/min maximise la VFC. La recherche sur la cohérence cardiaque + un entraîneur interactif gratuit.",
+      "sourcePath": "meta.twitterDescription",
+      "sourceText": "Free 5-6 breaths/min coherent breathing timer. Train HRV in 5 minutes. No download.",
+      "reviewedSourceHash": "0a688f5d3cfed880a04c32387a4f9318773658bd3ad7e06c41d89fcc61199677"
+    },
+    {
+      "currentCatalogValue": "Maladies cardiopulmonaires, hypertension, antécédents de syncope : pratiquez assis ; gardez un volume faible ; demandez l'avis d'un médecin.",
+      "locale": "fr-fr",
+      "reason": "The French translation drops the source safety qualifier 'uncontrolled'; restore it faithfully.",
+      "replacement": "Maladies cardiopulmonaires, hypertension non contrôlée, antécédents de syncope : pratiquez assis ; gardez un volume faible ; demandez l'avis d'un médecin.",
+      "sourcePath": "research.safety[2]",
+      "sourceText": "Cardiopulmonary disease, uncontrolled hypertension, syncope history: practice seated; keep volume low; consider clinician guidance.",
+      "reviewedSourceHash": "33d46a292797eb39e57b73cebb4179f2e6c824ca19ba537286ab64bc160e1856"
     }
   ],
   "schemaVersion": 1,

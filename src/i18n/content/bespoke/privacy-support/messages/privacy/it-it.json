@@ -1,0 +1,56 @@
+{
+  "breadcrumb": {
+    "current": "Privacy",
+    "home": "Home"
+  },
+  "hero": {
+    "eyebrow": "ESERCIZI DI RESPIRAZIONE PROFONDA",
+    "intro": "Il servizio di respirazione funziona senza account. Se scegli di accedere, usiamo i tuoi dati solo per fornire e migliorare il servizio.",
+    "lastUpdated": "Ultimo aggiornamento: 11 luglio 2026.",
+    "title": "Privacy"
+  },
+  "metadata": {
+    "description": "Informativa sulla privacy di Esercizi di respirazione profonda, inclusi account opzionali, sincronizzazione della pratica, analisi e cancellazione.",
+    "imageAlt": "Informativa sulla privacy",
+    "socialDescription": "Informativa sulla privacy di Esercizi di respirazione profonda.",
+    "socialTitle": "Informativa sulla privacy",
+    "title": "Informativa sulla privacy",
+    "twitterDescription": "Informativa sulla privacy di Esercizi di respirazione profonda.",
+    "twitterTitle": "Informativa sulla privacy"
+  },
+  "sections": {
+    "accounts": {
+      "body": "Se accedi con Apple o Google, riceviamo l'identificativo dell'account, l'indirizzo email e il nome eventualmente condiviso dal provider. Conserviamo la cronologia delle sessioni di respirazione, i totali, i giorni consecutivi e le impostazioni, così possono sincronizzarsi tra il sito web e il telefono. La pratica registrata mentre non hai effettuato l'accesso resta sul dispositivo finché non scegli di accedere.",
+      "title": "Account e sincronizzazione opzionali"
+    },
+    "collection": {
+      "body": "Gli ospiti possono praticare senza comunicarci nome o email. L'app mobile chiede il consenso all'analisi al primo avvio; prima che tu lo conceda, non invia eventi di analisi e non crea alcun identificativo di analisi. Se accetti, l'app invia tramite il nostro server a GA4 eventi di utilizzo di base, come inizio e fine della sessione, durata, modalità di respirazione e piattaforma, usando un identificativo casuale per installazione. Puoi ritirare il consenso dal controllo Privacy nell'app; il ritiro interrompe le analisi future e rimuove quell'identificativo. L'app non usa l'identificativo pubblicitario e non richiede il permesso di tracciamento.",
+      "title": "Cosa raccogliamo"
+    },
+    "contact": {
+      "abiassiLabel": "Abiassi",
+      "backLink": "Torna al visualizzatore →",
+      "darkmatterLabel": "Darkmatter AI Labs",
+      "intro": "Per domande sulla privacy, puoi contattare i creatori tramite:",
+      "title": "Contatti"
+    },
+    "deletion": {
+      "action": "Elimina l'account.",
+      "afterAction": "Dopo la conferma, eliminiamo definitivamente l'account e i dati della pratica sincronizzati. I dati locali possono essere rimossi eliminando l'app o cancellando i dati del sito nel browser.",
+      "beforeAction": "Puoi usare l'esperienza di respirazione principale come ospite. Gli utenti che hanno effettuato l'accesso possono aprire il menu dell'account e scegliere",
+      "title": "Le tue scelte e la cancellazione"
+    },
+    "device": {
+      "body": "Audio e vibrazioni vengono generati o riprodotti sul dispositivo. Non usiamo il microfono, HealthKit, la posizione precisa, i contatti, le foto o l'identificativo pubblicitario.",
+      "title": "Funzioni del dispositivo"
+    },
+    "thirdParty": {
+      "body": "Alcune pagine rimandano a ricerche o risorse esterne. Questi siti hanno informative sulla privacy proprie.",
+      "title": "Link a terze parti"
+    },
+    "useAndShare": {
+      "body": "Usiamo queste informazioni per le funzioni dell'app, l'assistenza sugli account, le analisi, il monitoraggio delle prestazioni e la correzione dei bug. L'elaborazione delle analisi mobile avviene solo dopo il tuo consenso; ritirando il consenso interrompi le analisi future e rimuovi l'identificativo per installazione. I fornitori di servizi ci aiutano a gestire autenticazione, email, analisi, hosting e archiviazione del database. Non vendiamo informazioni personali e non usiamo i dati sulla respirazione per la pubblicità.",
+      "title": "Come usiamo e condividiamo i dati"
+    }
+  }
+}

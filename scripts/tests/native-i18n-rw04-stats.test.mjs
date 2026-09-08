@@ -130,7 +130,7 @@ test("stats loaders and explicit localized route fail closed", async () => {
     /createStatsMetadataFromContent\(\s*content,\s*request\.canonicalPath/,
   );
   assert.match(localizedPage, /buildHreflangAlternates/);
-  assert.match(localizedPage, /SUPPORTED_LOCALES/);
+  assert.match(localizedPage, /getNativeAvailableLocales/);
   assert.match(localizedPage, /canonical: new URL\(request\.canonicalPath/);
   assert.match(localizedPage, /notFound\(\)/);
   assert.doesNotMatch(localizedPage, /generateStaticParams/);

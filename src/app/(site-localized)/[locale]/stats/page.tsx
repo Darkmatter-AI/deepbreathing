@@ -6,7 +6,6 @@ import {
   createStatsMetadataFromContent,
 } from "@/app/(site-en)/stats/stats-page";
 import {
-  SUPPORTED_LOCALES,
   buildHreflangAlternates,
   getLocaleByPrefix,
   localizePathname,
@@ -17,6 +16,7 @@ import {
 } from "@/i18n/content/bespoke/stats/server/load-stats-content";
 import type { NativeRouteRenderContext } from "@/i18n/render-context";
 import {
+  getNativeAvailableLocales,
   getNativeLocalizedRoutePaths,
   isNativeRoutePreviewable,
   isNativeRoutePublished,
@@ -68,7 +68,7 @@ export async function generateMetadata({
       languages: buildHreflangAlternates(
         siteUrl,
         request.canonicalPath,
-        SUPPORTED_LOCALES,
+        getNativeAvailableLocales(sourceRoute, request.linkMode),
       ),
     },
   };
