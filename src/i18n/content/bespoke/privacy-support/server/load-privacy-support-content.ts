@@ -13,6 +13,7 @@ const privacyLoaders = {
   "fr-fr": () => import("../messages/privacy/fr-fr.json").then((module) => module.default),
   "ja-jp": () => import("../messages/privacy/ja-jp.json").then((module) => module.default),
   "pt-br": () => import("../messages/privacy/pt-br.json").then((module) => module.default),
+  "it-it": () => import("../messages/privacy/it-it.json").then((module) => module.default),
 } as const;
 
 const supportLoaders = {
@@ -21,6 +22,7 @@ const supportLoaders = {
   "fr-fr": () => import("../messages/support/fr-fr.json").then((module) => module.default),
   "ja-jp": () => import("../messages/support/ja-jp.json").then((module) => module.default),
   "pt-br": () => import("../messages/support/pt-br.json").then((module) => module.default),
+  "it-it": () => import("../messages/support/it-it.json").then((module) => module.default),
 } as const;
 
 type RoutePublication = {

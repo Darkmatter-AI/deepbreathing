@@ -7,7 +7,6 @@ import {
   type EmbedPlayerSearchParams,
 } from "@/app/(site-en)/embed/[slug]/embed-player";
 import {
-  SUPPORTED_LOCALES,
   TRANSLATED_LOCALES,
   buildHreflangAlternates,
   getLocaleByPrefix,
@@ -26,6 +25,7 @@ import {
 } from "@/i18n/content/bespoke/embed/types";
 import type { NativeRouteRenderContext } from "@/i18n/render-context";
 import {
+  getNativeAvailableLocales,
   getNativeLocalizedRoutePaths,
   isNativeRoutePreviewable,
   isNativeRoutePublished,
@@ -106,7 +106,7 @@ export async function generateMetadata({
       languages: buildHreflangAlternates(
         siteUrl,
         request.canonicalPath,
-        SUPPORTED_LOCALES,
+        getNativeAvailableLocales(sourceRoute, request.linkMode),
       ),
     },
   };

@@ -203,6 +203,23 @@ async function runTests() {
     );
   }
 
+  const italianExactRule = nativePreviewRedirects.find(
+    (rule) => rule.source === '/it/about/methodology',
+  );
+  assertEquals(
+    italianExactRule ? italianExactRule.destination : null,
+    '/about/editorial-policy',
+    '/it/about/methodology should fall back to the English editorial policy until Italian trust content is published',
+  );
+  for (const testPath of ['/it/about/methodology/legacy']) {
+    const result = findRedirectDestination(nativePreviewRedirects, testPath);
+    assertEquals(
+      result ? result.destination : null,
+      '/about/editorial-policy',
+      `${testPath} should fall back to the English editorial policy until Italian trust content is published`,
+    );
+  }
+
   // Test 6: Test nested methodology redirects
   console.log('\nTest Suite: Nested methodology redirects');
   for (const locale of locales) {

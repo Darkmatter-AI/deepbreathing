@@ -1,5 +1,84 @@
 {
-  "entries": [],
+  "entries": [
+    {
+      "messageId": "meta.description",
+      "numericReviewReasons": {
+        "es-es": "Remove the unverified 60-second outcome from Spanish metadata while preserving the breathing technique and free visualizer context."
+      },
+      "reason": "The approved Spanish metadata is truncated and/or awkward; use a neutral breathing-focused rewrite without repeating an unverified 60-second outcome.",
+      "reviewedSourceHash": "b45a60d1805650afae194687cabe57168995564188f66fa5610acf5620e49242",
+      "scope": "content",
+      "sourceText": "Chest tightness. Racing thoughts. Stop anxiety in 60 seconds with Navy SEAL box breathing. Used by thousands daily. Free guided visualizer.",
+      "translations": {
+        "es-es": "Opresión en el pecho. Pensamientos acelerados. Preocupación constante. Practica la respiración cuadrada de los Navy SEAL con un visualizador guiado gratuito."
+      }
+    },
+    {
+      "messageId": "meta.ogDescription",
+      "numericReviewReasons": {
+        "es-es": "Remove the unverified 60-second outcome from Spanish metadata while preserving the breathing technique and free visualizer context."
+      },
+      "reason": "The approved Spanish metadata is truncated and/or awkward; use a neutral breathing-focused rewrite without repeating an unverified 60-second outcome.",
+      "reviewedSourceHash": "26184d8b04418a4ce200ecdb840b4467e55973e222ab7c1696bfbe66bddb6d06",
+      "scope": "content",
+      "sourceText": "The breathing technique Navy SEALs use for anxiety. Stop racing thoughts and chest tightness in 60 seconds. Free visualizer.",
+      "translations": {
+        "es-es": "Técnica de respiración cuadrada de los Navy SEAL para la ansiedad. Explora un visualizador gratuito para los pensamientos acelerados y la opresión en el pecho."
+      }
+    },
+    {
+      "messageId": "meta.twitterDescription",
+      "numericReviewReasons": {
+        "es-es": "Remove the unverified 60-second outcome from Spanish metadata while preserving the breathing technique and free visualizer context."
+      },
+      "reason": "The approved Spanish metadata is truncated and/or awkward; use a neutral breathing-focused rewrite without repeating an unverified 60-second outcome.",
+      "reviewedSourceHash": "7ac1dd7a987a87565c676dc8dedb598b929c4d59214b097f99665d8bd3be01aa",
+      "scope": "content",
+      "sourceText": "Navy SEAL breathing technique stops anxiety in 60 seconds. Free guided visualizer.",
+      "translations": {
+        "es-es": "Técnica de respiración cuadrada de los Navy SEAL para la ansiedad. Visualizador guiado gratuito."
+      }
+    },
+    {
+      "messageId": "meta.title",
+      "numericReviewReasons": {
+        "es-es": "Remove the unverified 60-second outcome from Spanish metadata while preserving the breathing technique and free visualizer context."
+      },
+      "reason": "The approved Spanish metadata is truncated and/or awkward; use a neutral breathing-focused rewrite without repeating an unverified 60-second outcome.",
+      "reviewedSourceHash": "44d825bf6198a5dfcecd3158fef96038b56763f8c645b51af6d7ded3c0f9dd9a",
+      "scope": "content",
+      "sourceText": "Stop Anxiety in 60s: Navy SEAL Box Breathing (Free)",
+      "translations": {
+        "es-es": "Respiración cuadrada de los Navy SEAL para la ansiedad"
+      }
+    },
+    {
+      "messageId": "meta.ogTitle",
+      "numericReviewReasons": {
+        "es-es": "Remove the unverified 60-second outcome from Spanish metadata while preserving the breathing technique and free visualizer context."
+      },
+      "reason": "The approved Spanish metadata is truncated and/or awkward; use a neutral breathing-focused rewrite without repeating an unverified 60-second outcome.",
+      "reviewedSourceHash": "bad7003f42e776b71393ffc1ff3272702dc6727b71be8a420ca16d9864b141bc",
+      "scope": "content",
+      "sourceText": "Stop Anxiety in 60 Seconds - Navy SEAL Box Breathing",
+      "translations": {
+        "es-es": "Respiración cuadrada de los Navy SEAL para la ansiedad"
+      }
+    },
+    {
+      "messageId": "meta.twitterTitle",
+      "numericReviewReasons": {
+        "es-es": "Remove the unverified 60-second outcome from Spanish metadata while preserving the breathing technique and free visualizer context."
+      },
+      "reason": "The approved Spanish metadata is truncated and/or awkward; use a neutral breathing-focused rewrite without repeating an unverified 60-second outcome.",
+      "reviewedSourceHash": "acdc45fe1bd13a57db440d5b5385c70d741d2d795e0fb5b9ef9f5e097edfeb38",
+      "scope": "content",
+      "sourceText": "Stop Anxiety in 60 Seconds - Box Breathing Technique",
+      "translations": {
+        "es-es": "Respiración cuadrada de los Navy SEAL para la ansiedad"
+      }
+    }
+  ],
   "schemaVersion": 1,
   "sourceRoute": "/for/anxiety"
 }

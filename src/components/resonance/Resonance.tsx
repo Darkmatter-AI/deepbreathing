@@ -8,9 +8,9 @@ import { Volume2, VolumeX, Eye, EyeOff, Activity, Waves, Wind, Sun, Moon, Turtle
 import { BreathingPhase, ModeName, AIRecommendation, ProtocolPhase, ProtocolState } from './types';
 import { BREATHING_PATTERNS, DEFAULT_SPEED_MULTIPLIER, WIM_HOF_PROTOCOL, modeToSlug } from './constants';
 import { AudioService } from '@resonance/audio';
-import { multiplierToSlider, sliderToMultiplier } from '@resonance/domain';
+import { multiplierToSlider, sliderToMultiplier, speedOf } from '@resonance/domain';
 import Visualizer from './components/Visualizer';
-import { createRuntimePhraseResolver, detectRuntimeLocale, RuntimePhraseKey } from './runtime-phrases';
+import { createRuntimePhraseResolver, detectRuntimeLocale, resolveRuntimeModeLabel, RuntimePhraseKey } from './runtime-phrases';
 import { LanguageSwitcherInline } from '@/components/language-switcher';
 import { localizePathname, stripLocalePrefix } from '@/i18n';
 import type { ResonanceRouteClientMessages } from '@/i18n/content/remaining-pages/rw02-route-client/types';
@@ -1497,22 +1497,22 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
           <div className="grid grid-cols-3 gap-2 text-center divide-x divide-border/60">
             <div>
               <span className="block font-bold text-card-foreground">{WIM_HOF_PROTOCOL.rounds}</span>
-              <span className="text-[10px] uppercase tracking-wide">Rounds</span>
+              <span className="text-[10px] uppercase tracking-wide">{getSafePhrase('ui.rounds')}</span>
             </div>
             <div>
               <span className="block font-bold text-card-foreground">{WIM_HOF_PROTOCOL.powerBreathCount}</span>
-              <span className="text-[10px] uppercase tracking-wide">Breaths</span>
+              <span className="text-[10px] uppercase tracking-wide">{getSafePhrase('ui.breaths')}</span>
             </div>
             <div>
-              <span className="block font-bold text-card-foreground">~15min</span>
-              <span className="text-[10px] uppercase tracking-wide">Duration</span>
+              <span className="block font-bold text-card-foreground">{getSafePhrase('ui.duration_min', { n: '~15' })}</span>
+              <span className="text-[10px] uppercase tracking-wide">{getSafePhrase('ui.duration')}</span>
             </div>
           </div>
           <div className="border-t border-border/60 pt-2 space-y-1">
             <div className="flex items-center gap-2">
               <Activity size={12} className="text-primary" />
-              <span className="font-semibold text-card-foreground">Beta Waves (15Hz)</span>
-              <span className="ml-auto text-muted-foreground">Alertness</span>
+              <span className="font-semibold text-card-foreground">{getSafePhrase('ui.beta_waves', { n: 15 })}</span>
+              <span className="ml-auto text-muted-foreground">{getSafePhrase('ui.alertness')}</span>
             </div>
             <div className="flex items-center gap-2">
               <Waves size={12} className="text-primary" />
@@ -1524,9 +1524,10 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
       );
     }
 
-    const waveType = isRelax ? "Delta Waves (2Hz)" : getSafePhrase('ui.alpha_waves');
-    const waveDesc = isRelax ? "Deep Sleep" : getSafePhrase('ui.flow_state');
-    const ambienceType = (activeMode === ModeName.Relax || activeMode === ModeName.Coherent) ? "Pink Noise (Rain)" : getSafePhrase('ui.drone_synth');
+    const waveType = isRelax ? getSafePhrase('ui.delta_waves', { n: 2 }) : getSafePhrase('ui.alpha_waves');
+    const waveDesc = isRelax ? getSafePhrase('ui.deep_sleep') : getSafePhrase('ui.flow_state');
+    const isRainBed = activeMode === ModeName.Relax || activeMode === ModeName.Coherent;
+    const ambienceType = isRainBed ? getSafePhrase('ui.pink_noise_rain') : getSafePhrase('ui.drone_synth');
 
     return (
       <div className="mt-4 rounded-lg bg-card/70 p-3 text-xs text-muted-foreground shadow-inner backdrop-blur supports-[backdrop-filter]:bg-card/60 dark:bg-card/30">
@@ -1560,7 +1561,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
             <span className="ml-auto text-muted-foreground">{waveDesc}</span>
           </div>
           <div className="flex items-center gap-2">
-            {ambienceType.includes("Rain") ? <Wind size={12} className="text-primary" /> : <Waves size={12} className="text-primary" />}
+            {isRainBed ? <Wind size={12} className="text-primary" /> : <Waves size={12} className="text-primary" />}
             <span className="font-medium text-card-foreground">{ambienceType}</span>
             <span className="ml-auto text-muted-foreground">{getSafePhrase('ui.audio_8d')}</span>
           </div>
@@ -1952,12 +1953,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                         return true;
                       })
                       .map((m) => {
-                        // Short labels for mode buttons
-                        let label = m.name.split(' ')[0];
-                        if (m.name === ModeName.Sigh) label = 'Sigh';
-                        if (m.name === ModeName.WimHof) label = 'Wim Hof';
-                        if (m.name === ModeName.Tummo) label = 'Tummo';
-                        if (m.name === ModeName.BreathOfFire) label = 'Fire';
+                        const label = resolveRuntimeModeLabel(runtimePhrases.locale, m.name);
 
                         return (
                           <button
@@ -1982,7 +1978,7 @@ const Resonance: React.FC<ResonanceProps> = ({ apiKey, className = '', defaultMo
                     <div className="space-y-2">
                       <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                         <span>{getSafePhrase('ui.speed')}</span>
-                        <span className="text-sm text-card-foreground">{getSafePhrase('ui.seconds_per_phase', { n: speedMultiplier.toFixed(1) })}</span>
+                        <span className="text-sm text-card-foreground">{getSafePhrase('ui.speed_multiplier', { n: speedOf(speedMultiplier).toFixed(1) })}</span>
                       </div>
                       <div className="flex items-center gap-3">
                         <Turtle className="h-4 w-4 text-muted-foreground" aria-hidden />

@@ -2,14 +2,14 @@
   "expectedMessages": 176,
   "locales": {
     "de-de": {
-      "catalogExact": 136,
-      "catalogNormalized": 10,
+      "catalogExact": 135,
+      "catalogNormalized": 9,
       "override": 18,
       "path": "messages/de-de.json",
       "publishable": true,
-      "replacement": 12,
+      "replacement": 14,
       "resolvedMessages": 176,
-      "sha256": "1dab7155077aa69512d47ee5ef6d3f3c33c9523df8ffd688aa0160b667f1a514",
+      "sha256": "77b36b1d2e1eff8136c3bfba7506b44b6735e187f39c54e3e1bcb371c17c469f",
       "unresolved": 0
     },
     "es-es": {
@@ -32,6 +32,17 @@
       "replacement": 0,
       "resolvedMessages": 176,
       "sha256": "c2f49e54273f9104a5fe8fe873a84e9491555e19aa987e70aeadd92108fced0a",
+      "unresolved": 0
+    },
+    "it-it": {
+      "catalogExact": 0,
+      "catalogNormalized": 0,
+      "override": 0,
+      "path": "messages/it-it.json",
+      "publishable": true,
+      "replacement": 0,
+      "resolvedMessages": 176,
+      "sha256": "141e0f52bab9e0005a8541153bc4adc7681ecd771b781257e71cfbb048defc86",
       "unresolved": 0
     },
     "ja-jp": {

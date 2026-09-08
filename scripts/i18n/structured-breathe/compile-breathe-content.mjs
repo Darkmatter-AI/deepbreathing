@@ -14,12 +14,15 @@ const outputRoot = join(repoRoot, "src/i18n/content/breathe");
 const catalogRoot = join(repoRoot, "src/i18n/catalog");
 const manualRoot = join(outputRoot, "manual");
 const replacementRoot = join(outputRoot, "reviewed-replacements");
+const italianPilotRoot = join(repoRoot, "src/i18n/content/italian-pilot/breathe");
 const proposedReplacementsPath = join(repoRoot, "docs/native-i18n/work/breathe-reviewed-replacements.proposed.json");
 const sourceFilePath = join(repoRoot, "src/data/breathing-pages.ts");
 const proofRoot = join(repoRoot, "src/i18n/content/proof");
 const routeManifestPath = join(repoRoot, "src/i18n/route-manifest.ts");
 
 export const BREATHE_CONTENT_LOCALES = ["de-de", "es-es", "fr-fr", "ja-jp", "pt-br"];
+export const BREATHE_CONTENT_RUNTIME_LOCALES = [...BREATHE_CONTENT_LOCALES, "it-it"];
+export const ITALIAN_PILOT_SLUGS = ["belly", "box", "coherent"];
 
 const MODE_NAMES = {
   Belly: "Belly Breathing",
@@ -336,6 +339,15 @@ async function extractSourcePages() {
   return Object.fromEntries(pages.map((page) => [page.slug, page]));
 }
 
+function walkStringLeaves(value, prefix = "", output = []) {
+  if (typeof value === "string") output.push([prefix, value]);
+  else if (Array.isArray(value)) value.forEach((child, index) => walkStringLeaves(child, `${prefix}[${index}]`, output));
+  else if (value && typeof value === "object") for (const [key, child] of Object.entries(value)) {
+    walkStringLeaves(child, prefix ? `${prefix}.${key}` : key, output);
+  }
+  return output;
+}
+
 function parsePath(path) {
   const parts = [];
   const pattern = /([^.\[\]]+)|\[(\d+)\]/g;
@@ -349,6 +361,10 @@ function setPath(target, path, value) {
   const field = parts.pop();
   const parent = parts.reduce((current, part) => current[part], target);
   parent[field] = value;
+}
+
+function getPath(target, path) {
+  return parsePath(path).reduce((current, part) => current?.[part], target);
 }
 
 function approvedSegments(catalog) {
@@ -458,6 +474,38 @@ async function readManual(slug) {
   }
 }
 
+async function readItalianPilot(slug, sourcePage, chrome, audited) {
+  const file = await readJson(join(italianPilotRoot, `${slug}.json`));
+  assert(file.schemaVersion === 1, `${slug} Italian schema is unsupported`);
+  assert(file.sourceRoute === `/breathe/${slug}`, `${slug} Italian route changed`);
+  assert(Array.isArray(file.entries), `${slug} Italian entries must be an array`);
+  const sourceContent = new Map(
+    audited.leaves.filter((leaf) => leaf.category === "content").map((leaf) => [leaf.path, leaf.sourceText]),
+  );
+  const sourceContentAll = new Map(walkStringLeaves(sourcePage));
+  const expectedChrome = new Map(Object.entries(chrome));
+  const entries = new Map();
+  for (const entry of file.entries) {
+    assert(entry.scope === "content" || entry.scope === "chrome", `${slug}:${entry.messageId} Italian scope changed`);
+    const expectedSource = entry.scope === "content"
+      ? sourceContentAll.get(entry.messageId)
+      : expectedChrome.get(entry.messageId);
+    assert(typeof expectedSource === "string", `${slug}:${entry.scope}:${entry.messageId} Italian message is unknown`);
+    assert(!entries.has(`${entry.scope}:${entry.messageId}`), `${slug} duplicate Italian ${entry.scope}:${entry.messageId}`);
+    assert(entry.sourceText === expectedSource, `${slug}:${entry.messageId} Italian source changed`);
+    assert(entry.reviewedSourceHash === sha256(entry.sourceText), `${slug}:${entry.messageId} Italian source hash changed`);
+    assert(typeof entry.reason === "string" && entry.reason.trim(), `${slug}:${entry.messageId} Italian lacks a review reason`);
+    assert(typeof entry.translation === "string" && entry.translation.trim(), `${slug}:${entry.messageId} Italian translation is empty`);
+    validateBreatheTranslationSafety(entry.sourceText, entry.translation, `${slug}:${entry.messageId}:it-it`, {
+      numericReviewReason: entry.numericReviewReason,
+    });
+    entries.set(`${entry.scope}:${entry.messageId}`, entry);
+  }
+  for (const messageId of sourceContent.keys()) assert(entries.has(`content:${messageId}`), `${slug}:content:${messageId} Italian message is missing`);
+  for (const messageId of expectedChrome.keys()) assert(entries.has(`chrome:${messageId}`), `${slug}:chrome:${messageId} Italian message is missing`);
+  return entries;
+}
+
 async function readReplacements(slug) {
   try {
     const file = await readJson(join(replacementRoot, `${slug}.json`));
@@ -536,7 +584,7 @@ function unresolvedEntry(scope, messageId, sourceText, locales, reason) {
 
 function renderTypes(slugs) {
   return `import type { BreathingPageContent } from "@/data/breathing-pages";\n\n` +
-    `export const BREATHE_CONTENT_LOCALES = ${JSON.stringify(BREATHE_CONTENT_LOCALES)} as const;\n` +
+    `export const BREATHE_CONTENT_LOCALES = ${JSON.stringify(BREATHE_CONTENT_RUNTIME_LOCALES)} as const;\n` +
     `export const BREATHE_CONTENT_SLUGS = ${JSON.stringify(slugs)} as const;\n\n` +
     `export type BreatheContentLocale = (typeof BREATHE_CONTENT_LOCALES)[number];\n` +
     `export type BreatheContentSlug = (typeof BREATHE_CONTENT_SLUGS)[number];\n` +
@@ -549,6 +597,7 @@ function renderLoader(slugs) {
   for (const locale of BREATHE_CONTENT_LOCALES) {
     for (const slug of slugs) entries.push({ locale, slug });
   }
+  for (const slug of ITALIAN_PILOT_SLUGS) entries.push({ locale: "it-it", slug });
   const contentLoaders = entries.map(({ locale, slug }) =>
     `  "${locale}:${slug}": () => import("../routes/${locale}/${slug}.json"),`
   ).join("\n");
@@ -559,8 +608,8 @@ function renderLoader(slugs) {
     `import type { BreathingPageContent } from "@/data/breathing-pages";\n` +
     `import publication from "../publication.json";\n` +
     `import type { BreatheChromeMessages, BreatheContentLocale, BreatheContentSlug, BreatheRouteBundle } from "../types";\n\n` +
-    `const contentLoaders = {\n${contentLoaders}\n} as const;\n\n` +
-    `const chromeLoaders = {\n${chromeLoaders}\n} as const;\n\n` +
+    `const contentLoaders: Record<string, () => Promise<{ default: unknown }>> = {\n${contentLoaders}\n};\n\n` +
+    `const chromeLoaders: Record<string, () => Promise<{ default: unknown }>> = {\n${chromeLoaders}\n};\n\n` +
     `function assertPublishable(slug: BreatheContentSlug, locale: BreatheContentLocale) {\n` +
     `  const route = publication.routes[\`/breathe/\${slug}\` as keyof typeof publication.routes];\n` +
     `  const localeState = route?.locales[locale as keyof typeof route.locales];\n` +
@@ -568,12 +617,16 @@ function renderLoader(slugs) {
     `}\n\n` +
     `export async function loadBreatheContent(slug: BreatheContentSlug, locale: BreatheContentLocale): Promise<BreathingPageContent> {\n` +
     `  assertPublishable(slug, locale);\n` +
-    `  const contentModule = await contentLoaders[\`\${locale}:\${slug}\`]();\n` +
+    `  const contentLoader = contentLoaders[\`\${locale}:\${slug}\`];\n` +
+    `  if (!contentLoader) throw new Error(\`Breathe content loader is missing: \${locale}:\${slug}\`);\n` +
+    `  const contentModule = await contentLoader();\n` +
     `  return contentModule.default as BreathingPageContent;\n` +
     `}\n\n` +
     `export async function loadBreatheChrome(slug: BreatheContentSlug, locale: BreatheContentLocale): Promise<BreatheChromeMessages> {\n` +
     `  assertPublishable(slug, locale);\n` +
-    `  const chromeModule = await chromeLoaders[\`\${locale}:\${slug}\`]();\n` +
+    `  const chromeLoader = chromeLoaders[\`\${locale}:\${slug}\`];\n` +
+    `  if (!chromeLoader) throw new Error(\`Breathe chrome loader is missing: \${locale}:\${slug}\`);\n` +
+    `  const chromeModule = await chromeLoader();\n` +
     `  return chromeModule.default as BreatheChromeMessages;\n` +
     `}\n\n` +
     `export async function loadBreatheRoute(slug: BreatheContentSlug, locale: BreatheContentLocale): Promise<BreatheRouteBundle> {\n` +
@@ -653,7 +706,7 @@ export async function buildBreatheArtifacts() {
   const auditedPages = audit.pages.filter((page) => page.route.startsWith("/breathe/"));
   assertBreatheManifestAlignment(routeManifestSource, auditedPages.map((page) => page.slug));
   const outputs = new Map();
-  const publication = { locales: BREATHE_CONTENT_LOCALES, routes: {}, schemaVersion: 1 };
+  const publication = { locales: BREATHE_CONTENT_RUNTIME_LOCALES, routes: {}, schemaVersion: 1 };
   const scaffolds = {};
   const sharedManual = await readManual("_shared");
   const sharedManualValues = manualIndex(sharedManual);
@@ -673,6 +726,9 @@ export async function buildBreatheArtifacts() {
     ])));
     const chrome = chromeSources(sourcePage);
     for (const related of sourcePage.related ?? []) chrome[`chrome.pattern.related-${related.slug}-title`] = sourcePages[related.slug]?.hero.title ?? related.slug;
+    const italianEntries = ITALIAN_PILOT_SLUGS.includes(slug)
+      ? await readItalianPilot(slug, sourcePage, chrome, audited)
+      : null;
 
     const routePublication = { contentMessages: audited.leaves.filter((leaf) => leaf.category === "content").length, locales: {}, routeId };
     const routeProvenance = { locales: {}, schemaVersion: 1, sourceRoute: audited.route };
@@ -771,6 +827,42 @@ export async function buildBreatheArtifacts() {
         publishable: unresolved === 0,
         routePath,
         unresolved,
+      };
+    }
+
+    if (italianEntries) {
+      const localized = structuredClone(sourcePage);
+      const localizedChrome = {};
+      const localeProvenance = { chrome: {}, content: {} };
+      for (const leaf of audited.leaves.filter((entry) => entry.category === "content")) {
+        const entry = italianEntries.get(`content:${leaf.path}`);
+        setPath(localized, leaf.path, entry.translation);
+        localeProvenance.content[leaf.path] = {
+          sourceHash: entry.reviewedSourceHash,
+          sourceText: entry.sourceText,
+          status: "italian-pilot-reviewed",
+        };
+      }
+      for (const [messageId, sourceText] of Object.entries(chrome)) {
+        const entry = italianEntries.get(`chrome:${messageId}`);
+        localizedChrome[messageId] = entry.translation;
+        localeProvenance.chrome[messageId] = {
+          sourceHash: entry.reviewedSourceHash,
+          sourceText: entry.sourceText,
+          status: "italian-pilot-reviewed",
+        };
+      }
+      const routePath = `routes/it-it/${slug}.json`;
+      const chromePath = `chrome/it-it/${slug}.json`;
+      outputs.set(routePath, stableJson(localized));
+      outputs.set(chromePath, stableJson(localizedChrome));
+      routeProvenance.locales["it-it"] = localeProvenance;
+      routePublication.locales["it-it"] = {
+        chromeMessages: Object.keys(localizedChrome).length,
+        chromePath,
+        publishable: true,
+        routePath,
+        unresolved: 0,
       };
     }
 

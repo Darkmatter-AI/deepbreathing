@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "translationMethod": "Agent-authored Italian draft with source-bound semantic review; external native-language certification not performed.",
+  "sourceRoute": "/support",
+  "entries": [
+    {
+      "messagePath": "metadata.title",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+      "sourceText": "Support",
+      "translation": "Assistenza"
+    },
+    {
+      "messagePath": "metadata.description",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "f220b2117712cce5866a0b6c7aa1d5c0b3fc6aa6be5b21454bddadb043b7bf20",
+      "sourceText": "Get help with Deep Breathing Exercises. Contact us with questions about the app, your account, or data deletion.",
+      "translation": "Ricevi assistenza per Esercizi di respirazione profonda. Contattaci per domande sull'app, sul tuo account o sulla cancellazione dei dati."
+    },
+    {
+      "messagePath": "metadata.socialTitle",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "77162b9de440ee52f748c5bf7bccbe7f6030cc5503cfaa27cf27c10f2e1d7b5f",
+      "sourceText": "Support — Deep Breathing Exercises",
+      "translation": "Assistenza — Esercizi di respirazione profonda"
+    },
+    {
+      "messagePath": "metadata.socialDescription",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "511bd2e8ed543474a1ceb59f6e614994e53581443362f8f8eed5ab0cec57bed9",
+      "sourceText": "Get help with Deep Breathing Exercises.",
+      "translation": "Ricevi assistenza per Esercizi di respirazione profonda."
+    },
+    {
+      "messagePath": "metadata.twitterTitle",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "77162b9de440ee52f748c5bf7bccbe7f6030cc5503cfaa27cf27c10f2e1d7b5f",
+      "sourceText": "Support — Deep Breathing Exercises",
+      "translation": "Assistenza — Esercizi di respirazione profonda"
+    },
+    {
+      "messagePath": "metadata.twitterDescription",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "511bd2e8ed543474a1ceb59f6e614994e53581443362f8f8eed5ab0cec57bed9",
+      "sourceText": "Get help with Deep Breathing Exercises.",
+      "translation": "Ricevi assistenza per Esercizi di respirazione profonda."
+    },
+    {
+      "messagePath": "metadata.imageAlt",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+      "sourceText": "Support",
+      "translation": "Assistenza"
+    },
+    {
+      "messagePath": "breadcrumb.home",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+      "sourceText": "Home",
+      "translation": "Home"
+    },
+    {
+      "messagePath": "breadcrumb.current",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+      "sourceText": "Support",
+      "translation": "Assistenza"
+    },
+    {
+      "messagePath": "hero.eyebrow",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+      "sourceText": "DEEP BREATHING EXERCISES",
+      "translation": "ESERCIZI DI RESPIRAZIONE PROFONDA"
+    },
+    {
+      "messagePath": "hero.title",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+      "sourceText": "Support",
+      "translation": "Assistenza"
+    },
+    {
+      "messagePath": "hero.intro",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "70592ed23fa3ad55eb9ecc4c06147c197a6c2024a6fb393670729471927163a1",
+      "sourceText": "We are happy to help. Reach out with any questions about the app, your account, or your data.",
+      "translation": "Siamo felici di aiutarti. Scrivici per qualsiasi domanda sull'app, sul tuo account o sui tuoi dati."
+    },
+    {
+      "messagePath": "contact.title",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "2b5c3d26721ae9c350cf3009318b626f0fc8a90b4a2ac0ca8099c05aa849282e",
+      "sourceText": "Contact",
+      "translation": "Contatti"
+    },
+    {
+      "messagePath": "contact.emailBefore",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "530783f5271b83853ee3215bb9ec7ea82beddfb16a504933241677e964d28b7a",
+      "sourceText": "Email us at",
+      "translation": "Scrivici a"
+    },
+    {
+      "messagePath": "contact.emailAddress",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "e64f030216766faf1005a0b732c299660e8385d512aaca2fb34c1464a761bf72",
+      "sourceText": "hi@abiassi.com",
+      "translation": "hi@abiassi.com"
+    },
+    {
+      "messagePath": "contact.emailAfter",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "72d41a7625465584e816ae266b1d08548eaa227ef4c9fd07a9a5c128386917a7",
+      "sourceText": "and we will get back to you within one business day.",
+      "translation": "e ti risponderemo entro un giorno lavorativo."
+    },
+    {
+      "messagePath": "contact.teamBefore",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "2ee2340f93d5b8323ca6cc171120a2ea6e755598435ddd804cdb22bf668cc968",
+      "sourceText": "You can also reach the team through",
+      "translation": "Puoi anche contattare il team tramite"
+    },
+    {
+      "messagePath": "contact.darkmatterLabel",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "46d9902e7bdf4e44566ba128ac4d2a0ed7f68f5ef925e9968d5574391ce16c79",
+      "sourceText": "Darkmatter AI Labs",
+      "translation": "Darkmatter AI Labs"
+    },
+    {
+      "messagePath": "commonQuestions.title",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "dfb8a3d41335746f8b5879f9c3a372ecfa4d1e7b6495d7376f335084fa3c46f2",
+      "sourceText": "Common questions",
+      "translation": "Domande frequenti"
+    },
+    {
+      "messagePath": "commonQuestions.account.question",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "d35bfd4806eda1929cb0313e714b98a8e649a532e0fa19d18912ec7916affb16",
+      "sourceText": "Do I need an account?",
+      "translation": "Ho bisogno di un account?"
+    },
+    {
+      "messagePath": "commonQuestions.account.answer",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "bdef5efe180d8adc9c680c7a8d848e0a4eaef730efc28f355f4a83f98454c6ac",
+      "sourceText": "No. The app works without an account. Sessions, stats, and settings are saved locally on your device. Create an account only if you want to sync your data across devices.",
+      "translation": "No. L'app funziona senza account. Sessioni, statistiche e impostazioni vengono salvate localmente sul dispositivo. Crea un account solo se vuoi sincronizzare i dati tra più dispositivi."
+    },
+    {
+      "messagePath": "commonQuestions.deletion.question",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "39c9658206ff45cf1d86a41957dafa63022309b2a3b041d5c3b02c47d05693b7",
+      "sourceText": "How do I delete my account?",
+      "translation": "Come elimino il mio account?"
+    },
+    {
+      "messagePath": "commonQuestions.deletion.beforeAction",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "77e79a722a22b3f564091cee5ac3717b15ffc07fd2a54a1aff0c8b6db4ce8161",
+      "sourceText": "Open your account menu in the app or website and choose",
+      "translation": "Apri il menu dell'account nell'app o sul sito web e scegli"
+    },
+    {
+      "messagePath": "commonQuestions.deletion.action",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "8a17ab9433bbc3f1b4ba75ca3cb8e86652d40589e8ec51f69eb93aadb94e4fbe",
+      "sourceText": "Delete account.",
+      "translation": "Elimina l'account."
+    },
+    {
+      "messagePath": "commonQuestions.deletion.afterAction",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "cabe7ea15d9592fe2f32f577e0f5c1d51f2489609953fdadf3f9bc084517ea97",
+      "sourceText": "We send a confirmation link before permanently removing your account and synced practice data.",
+      "translation": "Ti invieremo un link di conferma prima di rimuovere definitivamente l'account e i dati della pratica sincronizzati."
+    },
+    {
+      "messagePath": "commonQuestions.data.question",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "925edc61b511165e785699cb26e89c5c3b008eb2a6d96e0c2c2f2a05f6a3b57e",
+      "sourceText": "Is my breathing data shared?",
+      "translation": "I miei dati sulla respirazione vengono condivisi?"
+    },
+    {
+      "messagePath": "commonQuestions.data.bodyBeforeLink",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "5c977dfd6fa85d81d37f0a3e2e8a2f6d04cf904c90f189981dcabba7374f495f",
+      "sourceText": "No. Session data is stored on your device. If you create an account, session stats sync to our servers for cross-device continuity. We do not sell data. See our",
+      "translation": "No. I dati delle sessioni sono conservati sul dispositivo. Se crei un account, le statistiche delle sessioni vengono sincronizzate sui nostri server per mantenere la continuità tra dispositivi. Non vendiamo i dati. Consulta la nostra"
+    },
+    {
+      "messagePath": "commonQuestions.data.linkLabel",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "506ff394621596dd88138642eddfc1e41833b3ae92d95e5c77c94327098abd9a",
+      "sourceText": "Privacy Policy",
+      "translation": "Informativa sulla privacy"
+    },
+    {
+      "messagePath": "commonQuestions.data.bodyAfterLink",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "28e19c6e69c7a2aa071951dda3ff0a11ca178e3fb295dae8d6ed7dcc994434a4",
+      "sourceText": "for full details.",
+      "translation": "per tutti i dettagli."
+    },
+    {
+      "messagePath": "commonQuestions.audio.question",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "4347054785c47a6ad782f574d9c59a02afa866fd89cde0e2bab8d82d40dbd28b",
+      "sourceText": "Why does the audio keep playing when I lock my screen?",
+      "translation": "Perché l'audio continua a essere riprodotto quando blocco lo schermo?"
+    },
+    {
+      "messagePath": "commonQuestions.audio.answer",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "8aad8aa45ee9edf4505eff4ff0ecb783696fc750f068b1d208c8d3381052f3ed",
+      "sourceText": "This is intentional. The app keeps audio cues playing so you can breathe eyes-closed with your phone in your pocket. You can mute audio in the app settings.",
+      "translation": "È una scelta intenzionale. L'app mantiene attivi i segnali audio così puoi respirare a occhi chiusi con il telefono in tasca. Puoi disattivare l'audio dalle impostazioni dell'app."
+    },
+    {
+      "messagePath": "commonQuestions.medical.question",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "d797bcc201cf8ec32456d7d23df6575fe8f3836cf104ff6681c81cca4019ef0a",
+      "sourceText": "Is this a medical app?",
+      "translation": "È un'app medica?"
+    },
+    {
+      "messagePath": "commonQuestions.medical.answer",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "8f0b9d3dc7a3f4977950d485f0f5e0a54ae4ce5cb4e9219b3a1bee51a6cf049f",
+      "sourceText": "No. Deep Breathing Exercises provides guided breathing sessions based on established techniques. It is not a medical device and does not diagnose, treat, or prevent any condition. Consult a healthcare provider before beginning a new breathing practice if you have a health condition.",
+      "translation": "No. Esercizi di respirazione profonda offre sessioni guidate basate su tecniche consolidate. Non è un dispositivo medico e non diagnostica, cura né previene alcuna condizione. Se hai problemi di salute, consulta un professionista sanitario prima di iniziare una nuova pratica di respirazione."
+    },
+    {
+      "messagePath": "safety.title",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "c972053617c5412086293cc63ece831d4731e1e488fe412755702f85f26da7c8",
+      "sourceText": "Wim Hof breathing — safety note",
+      "translation": "Respirazione Wim Hof — nota di sicurezza"
+    },
+    {
+      "messagePath": "safety.body",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "e9bdc07f1dcb6d04db2b8b49fc28e1563e0ea2b4a49cb7476de74cbff32a0a03",
+      "sourceText": "The Wim Hof breathing sequence involves intentional hyperventilation and breath retention. Do not practice breath retention in or near water. Stop if you feel dizzy or lightheaded. Consult a doctor before beginning if you have a cardiovascular condition, respiratory condition, or are pregnant.",
+      "translation": "La sequenza di respirazione Wim Hof prevede iperventilazione intenzionale e trattenimento del respiro. Non trattenere il respiro in acqua o vicino all'acqua. Fermati se avverti vertigini o stordimento. Consulta un medico prima di iniziare se hai problemi cardiovascolari o respiratori oppure sei in gravidanza."
+    },
+    {
+      "messagePath": "backLink",
+      "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and privacy and support semantics.",
+      "reviewedSourceHash": "a8e75b814e600400a66751578855d1f1148fbf3d59ac19b3f2e241932a1f8c5b",
+      "sourceText": "Back to the visualizer →",
+      "translation": "Torna al visualizzatore →"
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import type { BreathingPageContent } from "@/data/breathing-pages";
 import publication from "../publication.json";
 import type { BreatheChromeMessages, BreatheContentLocale, BreatheContentSlug, BreatheRouteBundle } from "../types";
 
-const contentLoaders = {
+const contentLoaders: Record<string, () => Promise<{ default: unknown }>> = {
   "de-de:4-7-8": () => import("../routes/de-de/4-7-8.json"),
   "de-de:9d-breathwork": () => import("../routes/de-de/9d-breathwork.json"),
   "de-de:belly": () => import("../routes/de-de/belly.json"),
@@ -75,9 +75,12 @@ const contentLoaders = {
   "pt-br:tummo": () => import("../routes/pt-br/tummo.json"),
   "pt-br:ujjayi": () => import("../routes/pt-br/ujjayi.json"),
   "pt-br:wim-hof": () => import("../routes/pt-br/wim-hof.json"),
-} as const;
+  "it-it:belly": () => import("../routes/it-it/belly.json"),
+  "it-it:box": () => import("../routes/it-it/box.json"),
+  "it-it:coherent": () => import("../routes/it-it/coherent.json"),
+};
 
-const chromeLoaders = {
+const chromeLoaders: Record<string, () => Promise<{ default: unknown }>> = {
   "de-de:4-7-8": () => import("../chrome/de-de/4-7-8.json"),
   "de-de:9d-breathwork": () => import("../chrome/de-de/9d-breathwork.json"),
   "de-de:belly": () => import("../chrome/de-de/belly.json"),
@@ -148,7 +151,10 @@ const chromeLoaders = {
   "pt-br:tummo": () => import("../chrome/pt-br/tummo.json"),
   "pt-br:ujjayi": () => import("../chrome/pt-br/ujjayi.json"),
   "pt-br:wim-hof": () => import("../chrome/pt-br/wim-hof.json"),
-} as const;
+  "it-it:belly": () => import("../chrome/it-it/belly.json"),
+  "it-it:box": () => import("../chrome/it-it/box.json"),
+  "it-it:coherent": () => import("../chrome/it-it/coherent.json"),
+};
 
 function assertPublishable(slug: BreatheContentSlug, locale: BreatheContentLocale) {
   const route = publication.routes[`/breathe/${slug}` as keyof typeof publication.routes];
@@ -158,13 +164,17 @@ function assertPublishable(slug: BreatheContentSlug, locale: BreatheContentLocal
 
 export async function loadBreatheContent(slug: BreatheContentSlug, locale: BreatheContentLocale): Promise<BreathingPageContent> {
   assertPublishable(slug, locale);
-  const contentModule = await contentLoaders[`${locale}:${slug}`]();
+  const contentLoader = contentLoaders[`${locale}:${slug}`];
+  if (!contentLoader) throw new Error(`Breathe content loader is missing: ${locale}:${slug}`);
+  const contentModule = await contentLoader();
   return contentModule.default as BreathingPageContent;
 }
 
 export async function loadBreatheChrome(slug: BreatheContentSlug, locale: BreatheContentLocale): Promise<BreatheChromeMessages> {
   assertPublishable(slug, locale);
-  const chromeModule = await chromeLoaders[`${locale}:${slug}`]();
+  const chromeLoader = chromeLoaders[`${locale}:${slug}`];
+  if (!chromeLoader) throw new Error(`Breathe chrome loader is missing: ${locale}:${slug}`);
+  const chromeModule = await chromeLoader();
   return chromeModule.default as BreatheChromeMessages;
 }
 

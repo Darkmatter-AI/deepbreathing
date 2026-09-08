@@ -75,7 +75,7 @@ test("confirmed migration defects stay corrected in generated bundles", async ()
     ["src/i18n/content/bespoke/insomnia-4-7-8/messages/de-de.json", "metadata.title", "4-7-8 Atemtechnik bei Schlaflosigkeit: Einschlafen (Gratis-Timer)"],
     ["src/i18n/content/breathe/routes/fr-fr/9d-breathwork.json", "meta.title", "9D Breathwork expliqué : respiration, audio, coût (pacer gratuit)"],
     ["src/i18n/content/bespoke/privacy-support/messages/privacy/es-es.json", "metadata.socialDescription", "Política de privacidad de Deep Breathing Exercises."],
-    ["src/i18n/content/use-cases/routes/es-es/anxiety.json", "meta.ogDescription", "La técnica respiratoria que usan los Navy SEALs para la ansiedad. Detén los pensamientos acelerados y la opresión en el pecho en 60 segundos. Visualizador gratuito."],
+    ["src/i18n/content/use-cases/routes/es-es/anxiety.json", "meta.ogDescription", "Técnica de respiración cuadrada de los Navy SEAL para la ansiedad. Explora un visualizador gratuito para los pensamientos acelerados y la opresión en el pecho."],
   ];
 
   for (const [file, path, expected] of checks) {

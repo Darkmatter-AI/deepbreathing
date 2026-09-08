@@ -15,6 +15,7 @@ const bindingsPath = join(contentRoot, "occurrence-bindings.json");
 const overridesPath = join(contentRoot, "overrides.json");
 const replacementsPath = join(contentRoot, "reviewed-replacements.json");
 const outputRoot = join(contentRoot, "messages");
+const italianPilotPath = join(repoRoot, "src/i18n/content/italian-pilot/home.json");
 
 export const HOME_LOCALES = ["de-de", "es-es", "fr-fr", "ja-jp", "pt-br"];
 const SOURCE_ROUTE = "/";
@@ -62,6 +63,27 @@ function deepClone(value) {
   return structuredClone(value);
 }
 
+async function readItalianPilot(bindings, bindingsByPath) {
+  const file = await readJson(italianPilotPath);
+  assert(file.schemaVersion === 1, "Unsupported Italian home schema");
+  assert(file.sourceRoute === SOURCE_ROUTE, "Italian home source route changed");
+  assert(Array.isArray(file.entries), "Italian home entries changed");
+  assert(file.entries.length === bindings.length, "Italian home entry count changed");
+  const entries = new Map();
+  for (const entry of file.entries) {
+    const binding = bindingsByPath.get(entry.messagePath);
+    assert(binding, `Unknown Italian home message ${entry.messagePath}`);
+    assert(!entries.has(entry.messagePath), `Duplicate Italian home message ${entry.messagePath}`);
+    assert(entry.sourceText === binding.sourceText, `${entry.messagePath} Italian source changed`);
+    assert(entry.reviewedSourceHash === sha256(entry.sourceText), `${entry.messagePath} Italian source hash changed`);
+    assert(typeof entry.reason === "string" && entry.reason.trim(), `${entry.messagePath} Italian lacks a reason`);
+    validateItalianTranslation(entry.sourceText, entry.translation, `${entry.messagePath}:it-it`);
+    entries.set(entry.messagePath, entry);
+  }
+  assert(entries.size === bindings.length, "Italian home does not cover every binding");
+  return entries;
+}
+
 function flattenStringLeaves(value, prefix = "", output = new Map()) {
   for (const [key, child] of Object.entries(value)) {
     const childPath = prefix ? `${prefix}.${key}` : key;
@@ -77,6 +99,18 @@ function validateTranslation(sourceText, translation, label) {
   assert(typeof translation === "string" && translation.trim(), `${label} is empty`);
   assert(!/<\/?(?:script|style|iframe|object|embed)\b/i.test(translation), `${label} contains unsafe markup`);
   assert(translation.length <= Math.max(sourceText.length * 8, 320), `${label} is unexpectedly long`);
+}
+
+function validateItalianTranslation(sourceText, translation, label) {
+  validateTranslation(sourceText, translation, label);
+  const numbers = (value) => (value.normalize("NFKC").match(/\d+(?:[.,]\d+)?/g) ?? [])
+    .map((token) => token.replace(",", "."))
+    .sort();
+  const placeholders = (value) => (value.match(/\{\{?[A-Za-z_][A-Za-z0-9_.-]*\}?\}|%(?:\([A-Za-z_][A-Za-z0-9_.-]*\))?[sdif]/g) ?? []).sort();
+  const symbols = (value) => (value.match(/[→←↔%]/g) ?? []).sort();
+  assert(JSON.stringify(numbers(translation)) === JSON.stringify(numbers(sourceText)), `${label} changed numeric values`);
+  assert(JSON.stringify(placeholders(translation)) === JSON.stringify(placeholders(sourceText)), `${label} changed placeholders`);
+  assert(JSON.stringify(symbols(translation)) === JSON.stringify(symbols(sourceText)), `${label} changed protected symbols`);
 }
 
 function validateManualFile(file, kind, bindingsByPath) {
@@ -140,6 +174,8 @@ export async function buildHomeContentArtifacts() {
   assert(bindingFile.schemaVersion === 1, "Unsupported home occurrence binding schema");
   const bindings = bindingFile.bindings;
   const bindingsByPath = new Map(bindings.map((binding) => [binding.messagePath, binding]));
+
+  const italianEntries = await readItalianPilot(bindings, bindingsByPath);
 
   for (const binding of bindings) {
     assert(getPath(source, binding.messagePath) === binding.sourceText, `${binding.messagePath} source drift`);
@@ -252,6 +288,34 @@ export async function buildHomeContentArtifacts() {
       unresolved: unresolvedCount,
     };
   }
+
+  const italianMessages = deepClone(source);
+  const italianProvenance = {};
+  for (const binding of bindings) {
+    const entry = italianEntries.get(binding.messagePath);
+    setPath(italianMessages, binding.messagePath, entry.translation);
+    italianProvenance[binding.messagePath] = {
+      reason: entry.reason,
+      sourceHash: entry.reviewedSourceHash,
+      status: "italian-pilot-reviewed",
+    };
+  }
+  const italianSerialized = stableJson(italianMessages);
+  outputs.set("messages/it-it.json", italianSerialized);
+  provenance.locales["it-it"] = italianProvenance;
+  publication.locales["it-it"] = {
+    bytes: Buffer.byteLength(italianSerialized),
+    catalogExact: 0,
+    catalogNormalized: 0,
+    overrideMessages: 0,
+    path: "messages/it-it.json",
+    publishable: true,
+    replacementMessages: 0,
+    resolvedMessages: bindings.length,
+    reviewedReplacementMessages: 0,
+    sha256: sha256(italianSerialized),
+    unresolved: 0,
+  };
 
   outputs.set("publication.json", stableJson(publication));
   outputs.set("provenance.json", stableJson(provenance));

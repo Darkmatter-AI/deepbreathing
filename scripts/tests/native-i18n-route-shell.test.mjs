@@ -249,7 +249,7 @@ test("the route groups keep English URLs stable and give localized pages their o
   assert.match(localizedStatsPage, /loadStatsContent/);
   assert.match(localizedStatsPage, /createStatsMetadataFromContent/);
   assert.match(localizedStatsPage, /buildHreflangAlternates/);
-  assert.match(localizedStatsPage, /SUPPORTED_LOCALES/);
+  assert.match(localizedStatsPage, /getNativeAvailableLocales/);
   assert.doesNotMatch(localizedStatsPage, /generateStaticParams|dynamicParams/);
   assert.match(statsServerPage, /robots:\s*\{\s*index:\s*false/);
 });

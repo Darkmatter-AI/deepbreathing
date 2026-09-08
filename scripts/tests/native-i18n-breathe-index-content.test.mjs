@@ -13,6 +13,7 @@ const contentRoot = new URL(
   "../../src/i18n/content/bespoke/breathe-index/",
   import.meta.url,
 );
+const expectedOutputLocales = [...BREATHE_INDEX_LOCALES, "it-it"];
 
 const EXPECTED_SLUGS = [
   "box",
@@ -52,9 +53,9 @@ test("compiles the 42-field breathe index deterministically", async () => {
 
   assert.deepEqual(second.publication, first.publication);
   assert.deepEqual([...second.outputs], [...first.outputs]);
-  assert.equal(first.outputs.size, 8);
+  assert.equal(first.outputs.size, 9);
   assert.equal(first.publication.expectedMessages, 42);
-  assert.deepEqual(Object.keys(first.publication.locales), BREATHE_INDEX_LOCALES);
+  assert.deepEqual(Object.keys(first.publication.locales), expectedOutputLocales);
   assert.deepEqual(first.unresolved.unresolved, []);
 
   for (const locale of BREATHE_INDEX_LOCALES) {
@@ -68,6 +69,16 @@ test("compiles the 42-field breathe index deterministically", async () => {
     assert.equal(coverage.unresolved, 0);
     assert.match(coverage.sha256, /^[a-f0-9]{64}$/);
   }
+
+  const italian = first.publication.locales["it-it"];
+  assert.equal(italian.catalogExact, 0);
+  assert.equal(italian.catalogNormalized, 0);
+  assert.equal(italian.override, 0);
+  assert.equal(italian.replacement, 0);
+  assert.equal(italian.resolvedMessages, 42);
+  assert.equal(italian.unresolved, 0);
+  assert.equal(italian.publishable, true);
+  assert.match(italian.sha256, /^[a-f0-9]{64}$/);
 });
 
 test("keeps five values-only bundles aligned with the English source shape", async () => {
@@ -82,6 +93,11 @@ test("keeps five values-only bundles aligned with the English source shape", asy
     assert.equal(stringLeaves(localized).length, 42);
     assert.ok(stringLeaves(localized).every((value) => value.trim()));
   }
+
+  const italian = JSON.parse(build.outputs.get("messages/it-it.json"));
+  assert.deepEqual(shapeOf(italian), shapeOf(source));
+  assert.equal(stringLeaves(italian).length, 42);
+  assert.ok(stringLeaves(italian).every((value) => value.trim()));
 });
 
 test("pins hub cards to the current English structured page titles and subtitles", async () => {
@@ -121,10 +137,10 @@ test("uses exact route occurrences for metadata and preserved card placements", 
 });
 
 test("keeps generated artifacts current and runtime bundles provenance-free", async () => {
-  assert.deepEqual(await checkBreatheIndexContentArtifacts(), { checked: 8, stale: [] });
+  assert.deepEqual(await checkBreatheIndexContentArtifacts(), { checked: 9, stale: [] });
   const publication = JSON.parse(await readFile(new URL("publication.json", contentRoot), "utf8"));
 
-  for (const locale of BREATHE_INDEX_LOCALES) {
+  for (const locale of expectedOutputLocales) {
     const raw = await readFile(new URL(publication.locales[locale].path, contentRoot), "utf8");
     assert.doesNotMatch(
       raw,
@@ -140,7 +156,7 @@ test("breathe index loader is literal, server-only, and fail-closed", async () =
   );
 
   assert.equal(loader.startsWith('import "server-only";'), true);
-  assert.equal((loader.match(/import\("\.\.\/messages\//g) ?? []).length, 5);
+  assert.equal((loader.match(/import\("\.\.\/messages\//g) ?? []).length, 6);
   assert.match(loader, /publication\.json/);
   assert.match(loader, /!localeCoverage\.publishable/);
   assert.match(loader, /refusing English fallback/);

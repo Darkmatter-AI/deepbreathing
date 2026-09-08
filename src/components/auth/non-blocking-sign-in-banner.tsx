@@ -17,10 +17,14 @@
  * is untouched.
  */
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { X, Check, Loader2 } from "lucide-react";
 import { signIn } from "@/lib/auth-client";
 import type { ResonanceRouteClientMessages } from "@/i18n/content/remaining-pages/rw02-route-client/types";
+import {
+  createRuntimePhraseResolver,
+  type RuntimePhraseKey,
+} from "@/components/resonance/runtime-phrases";
 
 function trackEvent(name: string, params?: Record<string, string | number | boolean>) {
   if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
@@ -35,10 +39,12 @@ interface NonBlockingSignInBannerProps {
   onOpenChange: (open: boolean) => void;
   onSuccess?: () => void;
   sessionMode: string;
+  localizedSessionMode?: string;
   sessionSeconds: number;
   accentColor?: string;
   layout?: BannerLayout;
   messages?: ResonanceRouteClientMessages;
+  locale?: string;
 }
 
 const PREFIX = "nbb"; // non-blocking banner
@@ -54,10 +60,12 @@ export function NonBlockingSignInBanner({
   onOpenChange,
   onSuccess,
   sessionMode,
+  localizedSessionMode,
   sessionSeconds,
   accentColor = "#f6743b",
   layout = "card",
   messages,
+  locale = "en",
 }: NonBlockingSignInBannerProps) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
@@ -67,6 +75,56 @@ export function NonBlockingSignInBanner({
   // reject it, they kept breathing), so it does NOT fire the dismiss event.
   const [hiddenByPlay, setHiddenByPlay] = useState(false);
   const swapTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const phrases = useMemo(() => createRuntimePhraseResolver(locale), [locale]);
+  const t = (key: RuntimePhraseKey, vars?: Record<string, string | number>) =>
+    phrases.resolve(key, vars).text;
+  // Keep the reviewed R-W02 source defaults intact for route-client audits,
+  // while using runtime phrases when an Italian or other locale has no route
+  // specific override.
+  const sourceDefaults = {
+    saveSessionAria: messages?.saveSessionAria ?? "Save your session",
+    closeAria: messages?.closeAria ?? "Close",
+    title: messages?.title ?? "Save your breathing practice journey",
+    sessionComplete: messages?.sessionComplete ?? "✓ SESSION COMPLETE",
+    justNow: messages?.justNow ?? "just now",
+    continueWithGoogle: messages?.continueWithGoogle ?? "Continue with Google",
+    oneTapNoPassword: messages?.oneTapNoPassword ?? "One tap. No password.",
+    emailAddressAria: messages?.emailAddressAria ?? "Email address",
+    emailPlaceholder: messages?.emailPlaceholder ?? "Enter your email",
+    sendLink: messages?.sendLink ?? "Send link",
+    saveWithEmail: messages?.saveWithEmail ?? "or save with email",
+    pillHead: "Keep tonight's calm",
+    pillSub: "It only lives on this device",
+    saveIt: "Save it",
+    error: "Something went wrong. Please try again.",
+    checkEmail: "Check your email",
+    sentLinkTo: "We sent a link to",
+    you: "you",
+  };
+  const localized = (sourceValue: string, key: RuntimePhraseKey, provided?: string) =>
+    provided ?? (phrases.locale === "en" ? sourceValue : t(key));
+  const bannerCopy = {
+    saveSessionAria: localized(sourceDefaults.saveSessionAria, "auth.save_progress", messages?.saveSessionAria),
+    closeAria: localized(sourceDefaults.closeAria, "ui.close", messages?.closeAria),
+    title: localized(sourceDefaults.title, "auth.save_progress", messages?.title),
+    sessionComplete:
+      messages?.sessionComplete ??
+      (phrases.locale === "en" ? sourceDefaults.sessionComplete : `✓ ${t("session.complete")}`),
+    justNow: localized(sourceDefaults.justNow, "auth.just_now", messages?.justNow),
+    continueWithGoogle: localized(sourceDefaults.continueWithGoogle, "auth.continue_google", messages?.continueWithGoogle),
+    oneTapNoPassword: localized(sourceDefaults.oneTapNoPassword, "auth.one_tap_no_password", messages?.oneTapNoPassword),
+    emailAddressAria: localized(sourceDefaults.emailAddressAria, "auth.email_address", messages?.emailAddressAria),
+    emailPlaceholder: localized(sourceDefaults.emailPlaceholder, "auth.enter_email", messages?.emailPlaceholder),
+    sendLink: localized(sourceDefaults.sendLink, "auth.send_link", messages?.sendLink),
+    saveWithEmail: localized(sourceDefaults.saveWithEmail, "auth.save_with_email", messages?.saveWithEmail),
+    checkEmail: localized(sourceDefaults.checkEmail, "auth.check_email"),
+    sentLinkTo: localized(sourceDefaults.sentLinkTo, "auth.sent_link_to"),
+    you: localized(sourceDefaults.you, "auth.you"),
+  };
+  const sourceMode = messages?.modeName ?? sessionMode;
+  const displayMode = messages?.modeName
+    ? sourceMode
+    : localizedSessionMode ?? sourceMode;
 
   useEffect(() => {
     if (open) {
@@ -150,15 +208,15 @@ export function NonBlockingSignInBanner({
       </div>
       <div className={`${PREFIX}-card-text`}>
         <div className={`${PREFIX}-eyebrow`}>
-          {messages?.sessionComplete ?? "✓ SESSION COMPLETE"}
+          {bannerCopy.sessionComplete}
         </div>
         <div className={`${PREFIX}-mode`}>
-          {messages?.modeName ?? sessionMode}
+          {displayMode}
         </div>
         <div className={`${PREFIX}-meta`}>
           <span className={`${PREFIX}-dur`}>{duration}</span>
           <span className={`${PREFIX}-dot`} aria-hidden="true">·</span>
-          <span>{messages?.justNow ?? "just now"}</span>
+          <span>{bannerCopy.justNow}</span>
         </div>
       </div>
     </div>
@@ -170,20 +228,20 @@ export function NonBlockingSignInBanner({
       <div
         className={`${PREFIX}-panel`}
         role="dialog"
-        aria-label={messages?.saveSessionAria ?? "Save your session"}
+        aria-label={bannerCopy.saveSessionAria}
       >
         {layout === "pill" ? (
           <>
             {SessionCard}
             <div className={`${PREFIX}-pill-copy`}>
-              <div className={`${PREFIX}-pill-head`}>Keep tonight&apos;s calm</div>
-              <div className={`${PREFIX}-pill-sub`}>It only lives on this device</div>
+              <div className={`${PREFIX}-pill-head`}>{localized(sourceDefaults.pillHead, "auth.save_progress_question")}</div>
+              <div className={`${PREFIX}-pill-sub`}>{localized(sourceDefaults.pillSub, "auth.local_only")}</div>
             </div>
             <button className={`${PREFIX}-google ${PREFIX}-google-compact`} onClick={handleGoogle}>
               {GoogleLogo}
-              <span>Save it</span>
+              <span>{localized(sourceDefaults.saveIt, "auth.save_progress")}</span>
             </button>
-            <button className={`${PREFIX}-x ${PREFIX}-x-pill`} onClick={handleClose} aria-label="Dismiss">
+            <button className={`${PREFIX}-x ${PREFIX}-x-pill`} onClick={handleClose} aria-label={t("ui.dismiss")}>
               <X size={16} />
             </button>
           </>
@@ -192,9 +250,9 @@ export function NonBlockingSignInBanner({
             <div className={`${PREFIX}-check-ring`}>
               <Check size={24} />
             </div>
-            <h3>Check your email</h3>
+            <h3>{bannerCopy.checkEmail}</h3>
             <p>
-              We sent a link to <b>{email.trim() || "you"}</b>
+              {bannerCopy.sentLinkTo} <b>{email.trim() || bannerCopy.you}</b>
             </p>
           </div>
         ) : (
@@ -202,22 +260,22 @@ export function NonBlockingSignInBanner({
             <button
               className={`${PREFIX}-x ${PREFIX}-x-card`}
               onClick={handleClose}
-              aria-label={messages?.closeAria ?? "Close"}
+              aria-label={bannerCopy.closeAria}
             >
               <X size={16} />
             </button>
             <h2 className={`${PREFIX}-title`}>
-              {messages?.title ?? "Save your breathing practice journey"}
+              {bannerCopy.title}
             </h2>
             {SessionCard}
             <button className={`${PREFIX}-google`} onClick={handleGoogle}>
               {GoogleLogo}
               <span className={`${PREFIX}-g-text`}>
                 <span className={`${PREFIX}-g-label`}>
-                  {messages?.continueWithGoogle ?? "Continue with Google"}
+                  {bannerCopy.continueWithGoogle}
                 </span>
                 <span className={`${PREFIX}-g-sub`}>
-                  {messages?.oneTapNoPassword ?? "One tap. No password."}
+                  {bannerCopy.oneTapNoPassword}
                 </span>
               </span>
             </button>
@@ -229,24 +287,24 @@ export function NonBlockingSignInBanner({
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder={messages?.emailPlaceholder ?? "Enter your email"}
-                  aria-label={messages?.emailAddressAria ?? "Email address"}
+                  placeholder={bannerCopy.emailPlaceholder}
+                  aria-label={bannerCopy.emailAddressAria}
                   required
                 />
                 <button className={`${PREFIX}-magic`} type="submit" disabled={sending || !email.trim()}>
                   {sending ? (
                     <Loader2 size={15} className={`${PREFIX}-spin`} />
                   ) : (
-                    messages?.sendLink ?? "Send link"
+                    bannerCopy.sendLink
                   )}
                 </button>
               </form>
-              {status === "error" && <p className={`${PREFIX}-err`}>Something went wrong. Please try again.</p>}
+              {status === "error" && <p className={`${PREFIX}-err`}>{localized(sourceDefaults.error, "auth.something_went_wrong")}</p>}
             </div>
 
             <div className={`${PREFIX}-row2`}>
               <button className={`${PREFIX}-textbtn`} onClick={() => setEmailOpen((v) => !v)} aria-expanded={emailOpen}>
-                {messages?.saveWithEmail ?? "or save with email"}
+                {bannerCopy.saveWithEmail}
               </button>
             </div>
           </>

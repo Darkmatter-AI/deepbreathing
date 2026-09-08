@@ -15,6 +15,7 @@ const outputRoot = join(contentRoot, "messages");
 const publicationPath = join(contentRoot, "publication.json");
 const provenancePath = join(contentRoot, "provenance.json");
 const unresolvedPath = join(contentRoot, "unresolved.json");
+const italianPilotPath = join(repoRoot, "src/i18n/content/italian-pilot/timer.json");
 
 export const TIMER_LOCALES = ["de-de", "es-es", "fr-fr", "ja-jp", "pt-br"];
 const SOURCE_ROUTE = "/4-7-8-breathing-timer";
@@ -149,6 +150,39 @@ function validateManualFile(file, kind, source) {
   }
 }
 
+function validateItalianTranslation(sourceText, translation, label) {
+  assert(typeof translation === "string" && translation.trim(), `${label} is empty`);
+  assert(!/<\/?(?:script|style|iframe|object|embed)\b/i.test(translation), `${label} contains unsafe markup`);
+  const numbers = (value) => (value.normalize("NFKC").match(/\d+(?:[.,]\d+)?/g) ?? [])
+    .map((token) => token.replace(",", "."))
+    .sort();
+  const placeholders = (value) => (value.match(/\{\{?[A-Za-z_][A-Za-z0-9_.-]*\}?\}|%(?:\([A-Za-z_][A-Za-z0-9_.-]*\))?[sdif]/g) ?? []).sort();
+  const symbols = (value) => (value.match(/[→←↔%]/g) ?? []).sort();
+  assert(JSON.stringify(numbers(translation)) === JSON.stringify(numbers(sourceText)), `${label} changed numeric values`);
+  assert(JSON.stringify(placeholders(translation)) === JSON.stringify(placeholders(sourceText)), `${label} changed placeholders`);
+  assert(JSON.stringify(symbols(translation)) === JSON.stringify(symbols(sourceText)), `${label} changed protected symbols`);
+}
+
+async function readItalianPilot(source) {
+  const file = await readJson(italianPilotPath);
+  assert(file.schemaVersion === 1, "Unsupported Italian timer schema");
+  assert(file.sourceRoute === SOURCE_ROUTE, "Italian timer source route changed");
+  assert(Array.isArray(file.entries), "Italian timer entries changed");
+  assert(file.entries.length === Object.keys(source).length, "Italian timer entry count changed");
+  const entries = new Map();
+  for (const entry of file.entries) {
+    assert(typeof source[entry.messageId] === "string", `Unknown Italian timer message ${entry.messageId}`);
+    assert(!entries.has(entry.messageId), `Duplicate Italian timer message ${entry.messageId}`);
+    assert(entry.sourceText === source[entry.messageId], `${entry.messageId} Italian source changed`);
+    assert(entry.reviewedSourceHash === sha256(entry.sourceText), `${entry.messageId} Italian source hash changed`);
+    assert(typeof entry.reason === "string" && entry.reason.trim(), `${entry.messageId} Italian lacks a reason`);
+    validateItalianTranslation(entry.sourceText, entry.translation, `${entry.messageId}:it-it`);
+    entries.set(entry.messageId, entry);
+  }
+  assert(entries.size === Object.keys(source).length, "Italian timer does not cover every message");
+  return entries;
+}
+
 export async function buildTimerContentArtifacts() {
   const [source, overrides, replacements] = await Promise.all([
     readJson(sourcePath),
@@ -157,6 +191,7 @@ export async function buildTimerContentArtifacts() {
   ]);
   validateManualFile(overrides, "overrides", source);
   validateManualFile(replacements, "replacements", source);
+  const italianEntries = await readItalianPilot(source);
   const overrideIndex = new Map(
     overrides.overrides.flatMap((record) => Object.entries(record.translations).map(([locale, translation]) => [
       `${record.messageId}:${locale}`,
@@ -252,6 +287,32 @@ export async function buildTimerContentArtifacts() {
     };
     provenance.locales[locale] = localeProvenance;
   }
+
+  const italianMessages = {};
+  const italianProvenance = {};
+  for (const [messageId, sourceText] of Object.entries(source)) {
+    const entry = italianEntries.get(messageId);
+    italianMessages[messageId] = entry.translation;
+    italianProvenance[messageId] = {
+      reason: entry.reason,
+      sourceHash: entry.reviewedSourceHash,
+      status: "italian-pilot-reviewed",
+    };
+  }
+  const italianSerialized = stableJson(italianMessages);
+  outputs.set("messages/it-it.json", italianSerialized);
+  provenance.locales["it-it"] = italianProvenance;
+  publication.locales["it-it"] = {
+    catalogExact: 0,
+    catalogNormalized: 0,
+    override: 0,
+    replacement: 0,
+    unresolved: 0,
+    path: "messages/it-it.json",
+    publishable: true,
+    resolvedMessages: Object.keys(source).length,
+    sha256: sha256(italianSerialized),
+  };
 
   unresolved.unresolved.sort((left, right) =>
     compareText(`${left.messageId}:${left.locale}`, `${right.messageId}:${right.locale}`)

@@ -37,7 +37,7 @@ test("mobile: speed slider — LEFT = slower, RIGHT = faster, default centered",
   assert.match(sharedPacing, /SLIDER_MID = 1\.25/, "centered default position value");
   // left end -> slowest (2x multiplier), right end -> fastest (0.5x)
   assert.match(sharedPacing, /return m >= 1 \? 2 - 0\.75 \* m : 2\.75 - 1\.5 \* m;/, "left=slow, right=fast map");
-  assert.match(sharedPacing, /speedOf = \(multiplier: number\): number => 1 \/ multiplier/, "label reads as speed");
+  assert.match(sharedPacing, /speedOf = \(multiplier: number\): number => 1 \/ multiplier/, "display speed is the inverse of the duration multiplier");
   // Mobile pacing.ts is a thin re-export from the shared source.
   assert.match(pacing, /from '@resonance\/domain'/, "mobile pacing re-exports from domain");
   // the slider input uses the mapping and a 0.05 step so the default centers
@@ -282,13 +282,15 @@ test("desktop: single speed slider — LEFT = slower, RIGHT = faster, default ce
   assert.match(resonance, /const \[speedMultiplier, setSpeedMultiplier\] = useState/);
   assert.match(resonance, /type="range"/);
   // Desktop imports the shared mapping from @resonance/domain — no inline definitions.
-  assert.match(resonance, /import \{ multiplierToSlider, sliderToMultiplier \} from '@resonance\/domain'/,
-    "desktop imports slider fns from shared domain package");
+  assert.match(resonance, /import \{ multiplierToSlider, sliderToMultiplier, speedOf \} from '@resonance\/domain'/,
+    "desktop imports slider and display-speed fns from shared domain package");
   // Still uses them at the call site (the contract pins the wiring, not the
   // definition location).
   assert.match(resonance, /value=\{multiplierToSlider\(speedMultiplier\)\}/);
   assert.match(resonance, /onChange=\{\(e\) => setSpeedMultiplier\(sliderToMultiplier\(parseFloat\(e\.target\.value\)\)\)/);
   assert.match(resonance, /step="0\.05"/, "0.05 step keeps the centered default on-grid");
+  assert.match(resonance, /ui\.speed_multiplier.*speedOf\(speedMultiplier\)\.toFixed\(1\)/,
+    "desktop displays speedOf so the label preserves slow-left/fast-right semantics");
   // Verify the mapping lives in the shared source.
   assert.match(sharedPacing, /multiplierToSlider = /, "shared source defines multiplierToSlider");
   assert.match(sharedPacing, /sliderToMultiplier = /, "shared source defines sliderToMultiplier");

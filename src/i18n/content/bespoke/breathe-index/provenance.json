@@ -882,6 +882,218 @@
         "status": "route-catalog-occurrence-exact"
       }
     },
+    "it-it": {
+      "breadcrumb.home": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+        "status": "italian-pilot-reviewed"
+      },
+      "breadcrumb.techniques": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "37b5f87273b794d1da69aca7c5bd665712303c9f0dcb428ad5a88923012e2b1c",
+        "status": "italian-pilot-reviewed"
+      },
+      "cardAction": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "02d3d91ab4ad81b541c54922dda8996e949765317e26fc6192b883141686e29f",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.4-7-8.subtitle": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "3bc9026df1ab7b27e17cc63fc26e8182637e6d67deb23b6ec397c3827a1417fb",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.4-7-8.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "61bc7df0643742b926fa603a5bb211bd432b1789c6e4bc4258e41a29826b436e",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.9d-breathwork.subtitle": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "5bad13a970e43a5c5c39caf22f1c64f5c44f6caee10b202f0893fb719203fc44",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.9d-breathwork.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "32baa93231dbe1e8568e0abeb4e0e6c0853129574a0e2e644712b4f3bb4532aa",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.belly.subtitle": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "11dff425a0cd82f614f925c6ac0a5a02104485f73cbb80b4f4d691d9e96cdc79",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.belly.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "b0a5eb5ee5f57c475a7026cded2abb30698da9e3ccf7c5428a76b80d0d0bb6f1",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.box.subtitle": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "6b3dd04f430c7e6032fdf5263a932d03f168c4805f00d1a17da7b27451c63fb3",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.box.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "1937b7673dddca18a5b80fa7c9532b1b9f55ef0e0b2cf55202470767d5af2de0",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.breath-of-fire.subtitle": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "ac525669cb77b3dec1af56e93ae0d36979adb7b933a4264f7ea5919a3809fb59",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.breath-of-fire.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "3af9022b052904d4c94cc2bff34f9890a8a7a611b49c37824fd8ab7aea7b347b",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.buteyko.subtitle": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "2cc968fad9e75cb71be6cd9d75ec9cedfc356b41910bc0a0a6e0882a109f331f",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.buteyko.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "6e5af0031ccdda555bd6fe13f19ecf553320dc5f40ea7693e4ab79506db70e85",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.coherent.subtitle": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "76526c55a5213b9904d69841421bdf641d425b0c70c64b45d2b12b7e9616b418",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.coherent.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "4c6e34da239e136a2b5d96c1bc328ff0f810abfb71f7047ad9027d548b509101",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.hope-cartel-9d-breathwork.subtitle": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "e3bb4210dc3ef9553c4d8ddfcccea02eb6df846aa0230388e18186b3a24bfc15",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.hope-cartel-9d-breathwork.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "6e9e17540b182c9b37846d496562211a7bd33d821317dd7e27468058f93c1309",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.nadi-shodhana.subtitle": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "891ea9c518dfd45f5087afc014d658a33fa14fdd364aa5f969b43054167a8bb8",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.nadi-shodhana.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "a9dfbbff7a7864878cefc24328a9d7eaa53bc10d1f4e3fad9c7dc68af68fa320",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.physiological-sigh.subtitle": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "fcf9a26d3382aadc6a535212a68211e158be619b293ac03612fd59766344aaeb",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.physiological-sigh.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "b328eabea77dd51370eb8e6ce397ac46cee3df995cd9515e8a1a7e9b35e9bdd7",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.pursed-lip.subtitle": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "0e8bc44c1bca97d47367d59baa646eda6cafc9ceb48e14144955f25a937dda60",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.pursed-lip.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "b44d6b2987526fe1ecca59bd20db1dfa5478a2ed3fd051905793342a73747bd2",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.tummo.subtitle": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "dd31704ee63a13af95d30abad0fb27527358f78ea8d3022e782bbe8101559c48",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.tummo.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "e1f67e927d8c0895219627e68aa1c826e51a78c10a2b583971861c3535eb0d28",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.ujjayi.subtitle": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "6a39548e7c59c5c821eda32ef7740098d400a83a7f78bf2f45941876ac09ad9d",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.ujjayi.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "e88e090f9492af5b6ac8f949913be4320488e5dacce3c448cd86b7e8fdb88c9f",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.wim-hof.subtitle": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "7aa582b828cd478cc17cb49c0a58615eb4fc53a7ab50cecf852f67bac2ed0e24",
+        "status": "italian-pilot-reviewed"
+      },
+      "cards.wim-hof.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "0fc2745ef83bc7cefb27f9424a6b131460b3fd197f069edb7f3534db9987f059",
+        "status": "italian-pilot-reviewed"
+      },
+      "guides.action": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "2e6904449c91cd9f8d316454b2b95f6d564f3834b25e96a124af2d3ec346ec97",
+        "status": "italian-pilot-reviewed"
+      },
+      "guides.description": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "294073b9e09b70fe775bde034e472737c503a65bb98738125063345f652fa441",
+        "status": "italian-pilot-reviewed"
+      },
+      "guides.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "917fc94616737844a25f53629d69f15f9543d0dd976a656b348c5539517415ec",
+        "status": "italian-pilot-reviewed"
+      },
+      "hero.description": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "5e10faf64f9a7b30e345a58a809a289392dac3091992f76d9455b064b4baa3a6",
+        "status": "italian-pilot-reviewed"
+      },
+      "hero.eyebrow": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+        "status": "italian-pilot-reviewed"
+      },
+      "hero.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "aa8d5009270cd133de98cd5fb5cd204b71d9b09f5d3b1465b7d706d851aca7f3",
+        "status": "italian-pilot-reviewed"
+      },
+      "metadata.description": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "74a8fc5c057025049c6dbe81b0b1ec1a021f802b49ba36e63570e7294e2ecead",
+        "status": "italian-pilot-reviewed"
+      },
+      "metadata.socialDescription": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "556c450610f7c9cea9cffe7e460ea2e09c1a3535c635b3edff4a5250c7964320",
+        "status": "italian-pilot-reviewed"
+      },
+      "metadata.socialTitle": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "d8c5b64a2e4f085b0536004871f14fd343d5bdc98f397cf6f1fb095f0608be64",
+        "status": "italian-pilot-reviewed"
+      },
+      "metadata.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "732037094bd879d2b949b5f919272ddb0b42b5749c3e38873469f81aa7829437",
+        "status": "italian-pilot-reviewed"
+      },
+      "metadata.twitterDescription": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of safety semantics.",
+        "sourceHash": "cb8ecf141d0f1e67b579318b2fbf8f03a975ea4cb478f34a6797f0d16cd7b7ea",
+        "status": "italian-pilot-reviewed"
+      }
+    },
     "ja-jp": {
       "breadcrumb.home": {
         "reason": "schema-only breadcrumb text is not present in the route catalog",

@@ -3,8 +3,8 @@
     {
       "currentCatalogValue": "Descubre la respiración cuadrada: la técnica de los Navy",
       "locale": "es-es",
-      "reason": "The approved title is truncated after 'Navy' and loses the technique and outcome.",
-      "replacement": "Respiración cuadrada: técnica de los Navy SEAL para detener la ansiedad rápidamente",
+      "reason": "The approved Spanish title stops after 'Navy'; complete it with a neutral technique label without adding an outcome claim.",
+      "replacement": "Respiración cuadrada: técnica de los Navy SEAL",
       "reviewedSourceHash": "ccb0ad3d551b05f39f36f7de5ad4af3d5226582ceff8900dc7fe74baa2a23b65",
       "sourcePath": "meta.ogTitle",
       "sourceText": "Box Breathing: Navy SEAL Technique to Stop Anxiety Fast"
@@ -12,11 +12,56 @@
     {
       "currentCatalogValue": "Descubre la respiración cuadrada: la técnica de los Navy",
       "locale": "es-es",
-      "reason": "The approved title is truncated after 'Navy' and loses the technique and outcome.",
-      "replacement": "Respiración cuadrada: técnica de los Navy SEAL para detener la ansiedad rápidamente",
+      "reason": "The approved Spanish title stops after 'Navy'; complete it with a neutral technique label without adding an outcome claim.",
+      "replacement": "Respiración cuadrada: técnica de los Navy SEAL",
       "reviewedSourceHash": "ccb0ad3d551b05f39f36f7de5ad4af3d5226582ceff8900dc7fe74baa2a23b65",
       "sourcePath": "meta.twitterTitle",
       "sourceText": "Box Breathing: Navy SEAL Technique to Stop Anxiety Fast"
+    },
+    {
+      "currentCatalogValue": "Descubre la respiración cuadrada: la técnica de los Navy",
+      "locale": "es-es",
+      "reason": "The approved Spanish title stops after 'Navy'; complete it with a neutral technique label without adding an outcome claim.",
+      "replacement": "Respiración cuadrada: técnica de los Navy SEAL",
+      "reviewedSourceHash": "b2957e3db04bedcfebb7542a0a08d8c88df5a37a801abbfabc6419994d0d52f7",
+      "sourcePath": "meta.title",
+      "sourceText": "Box Breathing: Navy SEAL Technique to Stop Anxiety Fast (Free Tool)"
+    },
+    {
+      "currentCatalogValue": "Vermeide gestresste Pausen, wenn du schwanger bist, eine kardio-pulmonale Erkrankung, Ohnmachtsgeschichte oder hohen Blutdruck hast. Wenn dir schwindelig oder kribbelig ist, lass die Pausen weg oder mache eine Pause. Bei Panik versuche stattdessen einen physiologischen Seufzer.",
+      "locale": "de-de",
+      "reason": "The approved German wording mistranslates strained holds as “gestresste Pausen” and switches to informal address in a safety note; restore the source meaning and formal register.",
+      "replacement": "Vermeiden Sie es, den Atem angestrengt anzuhalten, wenn Sie schwanger sind, an einer Herz-Lungen-Erkrankung leiden, in der Vergangenheit Ohnmachtsanfälle hatten oder hohen Blutdruck haben. Wenn Ihnen schwindelig wird oder Sie ein Kribbeln spüren, lassen Sie die Atempausen weg oder unterbrechen Sie die Übung. Versuchen Sie bei Panik stattdessen einen physiologischen Seufzer.",
+      "reviewedSourceHash": "d2e88cb59507a47000f128aea5d957d0cd8f1ddca67b322fdc75852b3adc2693",
+      "sourcePath": "body[5].content",
+      "sourceText": "Avoid strained holds if pregnant, have cardiopulmonary disease, syncope history, or high blood pressure. If dizzy or tingly, drop the holds or pause. During panic, try a physiological sigh instead."
+    },
+    {
+      "currentCatalogValue": "Flexibles Dosing",
+      "locale": "de-de",
+      "reason": "The approved German label leaves “dosing” in English; use a natural German label for adapting the cadence.",
+      "replacement": "Flexible Anpassung",
+      "reviewedSourceHash": "e87bf6fa79aee79a28910ae689ce880a4e0a8804ddebe336dda1bd86dcb67357",
+      "sourcePath": "benefits[2].title",
+      "sourceText": "Flexible dosing"
+    },
+    {
+      "currentCatalogValue": "Vor Meetings, zwischen Aufgaben, nach Stress oder vor dem Schlafengehen. Ideal für Menschen, die klare Strukturen mögen. Für maximale HRV-Steigerung funktioniert kohärentes Atmen (5–6 Atemzüge/Minute, keine Pausen) oft besser.",
+      "locale": "de-de",
+      "reason": "The approved German copy uses the wrong inflection in “kohärentes Atmen”; use the established noun phrase “kohärente Atmung”.",
+      "replacement": "Vor Meetings, zwischen Aufgaben, nach Stress oder vor dem Schlafengehen. Ideal für Menschen, die klare Strukturen mögen. Für maximale HRV-Steigerung funktioniert kohärente Atmung (5–6 Atemzüge/Minute, keine Pausen) oft besser.",
+      "reviewedSourceHash": "27e02f6236b362b9ac784cf90041b544f4c5ed3ad7a7c88c8b59578564cf84b6",
+      "sourcePath": "body[4].content",
+      "sourceText": "Before meetings, between tasks, after stress, or before bed. Great for people who like clear structure. For maximum HRV boost, coherent breathing (5–6 breaths/min, no holds) often works better."
+    },
+    {
+      "currentCatalogValue": "Nein. Der Hauptnutzen ergibt sich aus langsamer, gleichmäßiger Atmung. Atempausen können einigen Menschen helfen, sich zu konzentrieren, können jedoch für andere unangenehm oder luftnotbereit sein. Wenn die Atempausen belastend sind, insbesondere während der Schwangerschaft oder bei Herz-/Lungenkrankheiten, verkürzen Sie diese oder lassen Sie sie weg. Halten Sie eine gleichmäßige Ein- und Ausatmung in einem angenehmen Tempo.",
+      "locale": "de-de",
+      "reason": "The approved German safety sentence contains the non-word “luftnotbereit”; express the air-hunger risk as a feeling of Atemnot and keep the source guardrail.",
+      "replacement": "Nein. Der Hauptnutzen ergibt sich aus langsamer, gleichmäßiger Atmung. Atempausen können einigen Menschen helfen, sich zu konzentrieren, für andere jedoch unangenehm sein oder ein Gefühl von Atemnot auslösen. Wenn sich die Atempausen belastend anfühlen, insbesondere während der Schwangerschaft oder bei Herz- und Lungenerkrankungen, verkürzen Sie sie oder lassen Sie sie weg. Halten Sie Ein- und Ausatmung in einem angenehmen Tempo gleichmäßig.",
+      "reviewedSourceHash": "28d87a6986d47332d0056ffe9f942b50dcf8f58e2a58eedae7d91819b83a723b",
+      "sourcePath": "faqs[2].answer",
+      "sourceText": "No. Benefits mainly come from slow, smooth pacing. Holds can help some people focus but may feel uncomfortable or air-hungry for others. If holds feel strained, especially during pregnancy or with cardiac/pulmonary conditions, shorten them or omit holds. Keep an even inhale/exhale at a comfortable rate."
     }
   ],
   "schemaVersion": 1,

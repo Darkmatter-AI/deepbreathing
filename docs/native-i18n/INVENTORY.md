@@ -235,21 +235,21 @@ The groups below separate live coupling from migration provenance and historical
 
 | Evidence | Dependency / cutover implication |
 |---|---|
-| `next.config.js:189` | Keeps locale-prefix stripping only in the legacy proxy build mode; native serving modes release those paths to the App Router. |
+| `next.config.js:210` | Keeps locale-prefix stripping only in the legacy proxy build mode; native serving modes release those paths to the App Router. |
 | `src/lib/seo/sitemap-routes.mjs:14` | Owns the five proxy prefixes, manufactures locale URLs/hreflang, and keeps `/languages` English-only. |
 | `src/lib/seo/sitemap-routes.ts:6` | Typed adapter exposes proxy-specific sitemap constants and URL classification. |
-| `src/app/sitemap.xml/route.ts:5` | Publishes locale-prefixed URLs even though the current Next.js app has no native locale route tree. |
+| `src/app/sitemap.xml/route.ts:13` | Publishes locale-prefixed URLs even though the current Next.js app has no native locale route tree. |
 | `scripts/ping-sitemap.mjs:11` | Builds the canonical URL allowlist used to fail closed when deriving changed-route IndexNow submissions; the legacy-named constant now represents the five published native locale prefixes. |
 | `src/app/robots.ts:8` | Carries `/api/proxy/` crawl cleanup and query-parameter rules created for proxy canonical behavior. |
 | `src/app/(site-en)/layout.tsx:72` | The English root explicitly selects the shared document language; the proxy currently changes locale-facing HTML outside the app. |
-| `src/app/(site-en)/languages/page.tsx:348` | Hardcodes the locale discovery hub; proxy anchor rewriting is why this route is published only in English. |
+| `src/app/(site-en)/languages/page.tsx:374` | Hardcodes the locale discovery hub; proxy anchor rewriting is why this route is published only in English. |
 
 ### Browser locale and translated-DOM contracts (active)
 
 | Evidence | Dependency / cutover implication |
 |---|---|
-| `src/components/language-switcher.tsx:16` | Reads the injected proxy global, duplicates locale/path logic, and delays links until hydration to avoid rewritten double-prefix URLs. |
-| `src/components/resonance/runtime-phrases.ts:914` | Uses the injected language as the first locale signal for the existing interactive phrase catalog. |
+| `src/components/language-switcher.tsx:23` | Reads the injected proxy global, duplicates locale/path logic, and delays links until hydration to avoid rewritten double-prefix URLs. |
+| `src/components/resonance/runtime-phrases.ts:1227` | Uses the injected language as the first locale signal for the existing interactive phrase catalog. |
 | `apps/mobile/src/components/breathing-web/runtime-phrases.ts:498` | Mobile web-content copy mirrors the same injected-global locale detection. |
 | `src/components/resonance/Resonance.tsx:13` | Consumes the runtime phrase resolver and reports fallback misses; native routing must provide its locale explicitly. |
 | `src/components/auth/sign-in-sheet.tsx:9` | Detects the proxy-backed runtime locale before resolving sign-in copy. |
@@ -328,9 +328,9 @@ The groups below separate live coupling from migration provenance and historical
 | `CLAUDE.md:100` | Canonical project guidance still documents proxy URL semantics and old OAuth context. |
 | `AGENTS.md:21` | Project environment declares the origin application endpoint. |
 | `.claude/skills/daily-indexing/SKILL.md:19` | Correctly states that MassTranslate submission/OAuth paths are retired for indexing; keep this negative dependency true. |
-| `docs/runbooks/tools-and-data-sources.md:58` | Primary live runbook for proxy cache, signed-webhook bypass, URL semantics, and remaining GSC/Bing fallbacks. |
+| `docs/runbooks/tools-and-data-sources.md:68` | Primary live runbook for proxy cache, signed-webhook bypass, URL semantics, and remaining GSC/Bing fallbacks. |
 | `docs/runbooks/weekly-funnel-refresh.md:78` | Still contains MassTranslate GSC/Bing synchronization commands and OAuth recovery steps. |
-| `docs/indexing-queue.md:44` | Contains operational and historical references to MassTranslate URL-submission tools. |
+| `docs/indexing-queue.md:52` | Contains operational and historical references to MassTranslate URL-submission tools. |
 | `docs/FUNNEL-DASHBOARD.md:154` | A dated dashboard snapshot names MassTranslate as a prior GSC data source. |
 
 ### App Store submission notes (active)
@@ -343,7 +343,7 @@ The groups below separate live coupling from migration provenance and historical
 
 | Evidence | Dependency / cutover implication |
 |---|---|
-| `docs/SEO-EXPERIMENTS.md:236` | Permanent experiment history for proxy defects, mitigations, and indexing outcomes. |
+| `docs/SEO-EXPERIMENTS.md:252` | Permanent experiment history for proxy defects, mitigations, and indexing outcomes. |
 | `docs/UX-BACKLOG.md:102` | Historical ownership and translation-coverage findings. |
 | `docs/qa-reports/traction-pages-2026-06-06.md:9` | Production evidence for delayed translation, partial coverage, and hydration failures. |
 | `docs/research/eeat-citations-2026-05.md:16` | A dated content-research decision record. |

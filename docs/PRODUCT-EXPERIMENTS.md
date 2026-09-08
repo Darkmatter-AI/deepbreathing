@@ -23,6 +23,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-09-08 | [Italian interaction and translation clarity](#2026-09-08-italian-interaction-and-translation-clarity) | Implemented; production verification pending |
 | 2026-09-05 | [App acquisition funnel and shared website campaign](#2026-09-05-app-acquisition-funnel-and-shared-website-campaign) | 🔄 Implemented locally — deployment pending |
 | 2026-08-30 | [Guest completion provider-parity hotfix](#2026-08-30-guest-completion-provider-parity-hotfix) | 🔄 Implemented locally, approval pending |
 | 2026-08-30 | [Assistant recommendation handoff instrumentation](#2026-08-30-assistant-recommendation-handoff-instrumentation) | 🔄 Implemented in PR [#72](https://github.com/Darkmatter-AI/deepbreathing/pull/72) — live receipt pending |
@@ -57,6 +58,20 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 ---
 
 ## Active Experiments
+
+### 2026-09-08: Italian interaction and translation clarity
+
+**Observed baseline.** Italian has no published web experience. Existing French settings show missing accents and the English label “Pink Noise (Rain)”. The speed control displays a multiplier as seconds per phase even though the actual phase durations are listed separately. These are directly observed copy and meaning defects, not measured conversion failures. Research for August 9–September 5 found 8 Italian-browser-language web users and 6 users firing a session-start event; that cohort is too small to infer an engagement rate change.
+
+**Hypothesis.** Complete Italian controls and account prompts, clear language destinations, and accurate speed units will make the published Italian exercises usable without changing session timing or authentication behavior.
+
+**Pre-committed gates.** The Italian session can start and pause, settings and guest account prompts are in Italian, template variables remain intact, unavailable translated destinations are not linked, and the speed display identifies a multiplier rather than seconds. Existing-language controls retain their actions. Verify desktop and mobile rendering with screenshots. Do not send authentication emails or modify real accounts for this check.
+
+**Outcome checkpoint.** On 2026-11-03, use the Italian-page session-start threshold from the matching SEO experiment (10 users) as an initial adoption signal. Below that threshold the product outcome is inconclusive. Retain objectively correct labels regardless of immature conversion data. Transactional emails and provider-hosted authentication screens are outside this on-site translation change.
+
+**Implementation.** Italian home/library 4-7-8 links open the Italian timer, whose main timer link returns to its own player. The Italian mobile home introduction flows below the player to avoid overlap between its longer copy and duration buttons. Desktop layout remains unchanged.
+
+**Status.** Implemented and locally verified on `codex/languages-italian-20260908`; production receipt pending.
 
 ### 2026-08-30: Guest completion provider-parity hotfix
 

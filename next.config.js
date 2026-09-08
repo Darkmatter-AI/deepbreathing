@@ -1,5 +1,7 @@
 const nativeI18nMode = process.env.NATIVE_I18N_MODE || 'proxy';
 const supportedNativeI18nModes = new Set(['proxy', 'native-preview', 'native']);
+const proxyLocalePattern = 'es|pt|fr|de|ja';
+const nativeLocalePattern = 'es|pt|fr|de|ja|it';
 
 if (!supportedNativeI18nModes.has(nativeI18nMode)) {
   throw new Error(`Unsupported NATIVE_I18N_MODE: ${nativeI18nMode}`);
@@ -8,17 +10,35 @@ if (!supportedNativeI18nModes.has(nativeI18nMode)) {
 const proxyLocalePrefixRedirects = nativeI18nMode === 'proxy'
   ? [
       {
-        source: '/:locale(es|pt|fr|de|ja)/:rest+',
+        source: `/:locale(${proxyLocalePattern})/:rest+`,
         destination: '/:rest+',
         permanent: true,
       },
       {
-        source: '/:locale(es|pt|fr|de|ja)',
+        source: `/:locale(${proxyLocalePattern})`,
         destination: '/',
         permanent: true,
       },
     ]
   : [];
+
+const italianNativeFallbacks = nativeI18nMode === 'proxy'
+  ? []
+  : [
+      // Italian has no published trust-page translation yet. Keep legacy
+      // links on the existing English destination until that content is
+      // explicitly admitted to the publication manifest.
+      {
+        source: '/it/about/methodology',
+        destination: '/about/editorial-policy',
+        permanent: true,
+      },
+      {
+        source: '/it/about/methodology/:path*',
+        destination: '/about/editorial-policy',
+        permanent: true,
+      },
+    ];
 
 // Native and native-preview modes: locale-aware redirects for legacy URLs and double-locale paths
 const nativeLocaleRedirects = nativeI18nMode === 'proxy'
@@ -26,30 +46,30 @@ const nativeLocaleRedirects = nativeI18nMode === 'proxy'
   : [
       // Legacy /about/methodology redirects for all locales
       {
-        source: '/:locale(es|pt|fr|de|ja)/about/methodology',
+        source: `/:locale(${nativeLocalePattern})/about/methodology`,
         destination: '/:locale/about/editorial-policy',
         permanent: true,
       },
       {
-        source: '/:locale(es|pt|fr|de|ja)/about/methodology/:path*',
+        source: `/:locale(${nativeLocalePattern})/about/methodology/:path*`,
         destination: '/:locale/about/editorial-policy',
         permanent: true,
       },
       // /languages is EN-only route; localized paths redirect to root
       {
-        source: '/:locale(es|pt|fr|de|ja)/languages',
+        source: `/:locale(${nativeLocalePattern})/languages`,
         destination: '/languages',
         permanent: true,
       },
       // Double-locale bare paths: /:outer/:inner -> /:outer/
       {
-        source: '/:outer(es|pt|fr|de|ja)/:inner(es|pt|fr|de|ja)',
+        source: `/:outer(${nativeLocalePattern})/:inner(${nativeLocalePattern})`,
         destination: '/:outer/',
         permanent: true,
       },
       // Double-locale nested paths: /:outer/:inner/:rest* -> /:outer/:rest*
       {
-        source: '/:outer(es|pt|fr|de|ja)/:inner(es|pt|fr|de|ja)/:rest*',
+        source: `/:outer(${nativeLocalePattern})/:inner(${nativeLocalePattern})/:rest*`,
         destination: '/:outer/:rest*',
         permanent: true,
       },
@@ -105,6 +125,7 @@ const nextConfig = {
         destination: 'https://deepbreathingexercises.com/:path*',
         permanent: true,
       },
+      ...italianNativeFallbacks,
       // Content redirects
       {
         source: '/about/methodology',

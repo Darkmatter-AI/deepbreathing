@@ -185,6 +185,60 @@
       "reviewedSourceHash": "38499728bb420598025f5658ac2dcd76022433e8162d4b3a1071def99b291f95",
       "reason": "The Japanese catalog value adds a stray from marker that corrupts the duration phrase.",
       "translations": { "ja-jp": "• トレーニング効果（HRV重視）：5〜10分、楽で均等な吸気・呼気のペースで。" }
+    },
+    {
+      "messagePath": "footer.columns.techniques.links.coherent.label",
+      "sourceText": "Coherent Breathing",
+      "reviewedSourceHash": "f10268a765bb0ecf0afdfae16a75bb2587e2c730d3f1f1b776a4cafc877308ea",
+      "reason": "The German catalog value uses the incorrect plural noun form; this replacement supplies the grammatical singular name for the technique.",
+      "translations": {
+        "de-de": "Kohärente Atmung"
+      }
+    },
+    {
+      "messagePath": "sections.modePicker.featured.coherent.pillLabel",
+      "sourceText": "Coherent Breathing",
+      "reviewedSourceHash": "f10268a765bb0ecf0afdfae16a75bb2587e2c730d3f1f1b776a4cafc877308ea",
+      "reason": "The German catalog value uses the incorrect plural noun form; this replacement supplies the grammatical singular name for the technique.",
+      "translations": {
+        "de-de": "Kohärente Atmung"
+      }
+    },
+    {
+      "messagePath": "footer.columns.guides.links.focus.label",
+      "sourceText": "How to Boost Focus by 40% with Coherent Breathing",
+      "reviewedSourceHash": "9c966c731dbc44f99932964a6c8bf5b3b2490c7c7d79db5ca68cd042f59d6ff6",
+      "reason": "The Japanese catalog value is a literal rendering of the technique name; this replacement uses the established Japanese name while retaining the source's 40% focus claim.",
+      "translations": {
+        "ja-jp": "コヒーレント呼吸法で集中力を40%高める方法"
+      }
+    },
+    {
+      "messagePath": "footer.columns.guides.links.meditation.label",
+      "sourceText": "Can't Meditate? Start with Coherent Breathing",
+      "reviewedSourceHash": "d2b1a7d1d8df83449b4c3eca5d83181440374491dda855e795940f863a2cc100",
+      "reason": "The Japanese catalog value is a literal rendering of the technique name; this replacement uses the established Japanese name in the invitation.",
+      "translations": {
+        "ja-jp": "瞑想できない？コヒーレント呼吸法から始めてみてください"
+      }
+    },
+    {
+      "messagePath": "sections.modePicker.featured.coherent.cardTitle",
+      "sourceText": "Coherent Breathing",
+      "reviewedSourceHash": "f10268a765bb0ecf0afdfae16a75bb2587e2c730d3f1f1b776a4cafc877308ea",
+      "reason": "The Japanese catalog value is a literal rendering of the technique name; this replacement uses the established Japanese name.",
+      "translations": {
+        "ja-jp": "コヒーレント呼吸法"
+      }
+    },
+    {
+      "messagePath": "sections.editorialCards.calmByDesign.body",
+      "sourceText": "Slow, even breathing often increases vagally mediated HRV and lowers perceived stress during practice.",
+      "reviewedSourceHash": "944aa88ec5aee46240739bac040c7587ddfc54ba4fe0ed0e67cdcf41ebef3633",
+      "reason": "The Japanese catalog value changes vagally mediated HRV into tachycardia-regulated HRV; this replacement restores the source mechanism and perceived-stress meaning.",
+      "translations": {
+        "ja-jp": "ゆっくりと均一な呼吸は、迷走神経を介した心拍変動（HRV）を高め、実践中に感じるストレスを軽減することがよくあります。"
+      }
     }
   ]
 }

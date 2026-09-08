@@ -19,6 +19,7 @@ export type BuildSitemapEntriesInput = {
   siteUrl: string;
   excludedRoutes?: string[];
   localePrefixes?: string[];
+  localeAvailability?: (route: string, localePrefix: string) => boolean;
   breathingPageMeta?: RouteMetaInput[];
   useCasePageMeta?: RouteMetaInput[];
   now?: Date;

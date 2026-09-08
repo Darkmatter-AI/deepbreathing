@@ -68,7 +68,13 @@ export function BreatheIndexPage({
   renderContext?: NativeRouteRenderContext;
 }) {
   const href = (path: string) => renderContext
-    ? resolveNativeInternalHref(path, renderContext.locale, renderContext.linkMode)
+    ? resolveNativeInternalHref(
+        renderContext.locale === "it-IT" && path === "/breathe/4-7-8"
+          ? "/4-7-8-breathing-timer"
+          : path,
+        renderContext.locale,
+        renderContext.linkMode,
+      )
     : path;
   const canonicalPath = renderContext?.canonicalPath ?? sourceRoute;
   const canonicalUrl = new URL(canonicalPath, siteUrl).toString();

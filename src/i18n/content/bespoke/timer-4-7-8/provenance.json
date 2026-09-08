@@ -282,14 +282,9 @@
         "status": "route-catalog-exact"
       },
       "article.comparison.rows.coherent.name": {
-        "catalogRoutes": [
-          "/4-7-8-breathing-timer"
-        ],
-        "catalogSourceTexts": [
-          "Coherent Breathing"
-        ],
+        "reason": "The German catalog value uses the incorrect plural noun form for the technique name; this replacement supplies the grammatical singular form.",
         "sourceHash": "f10268a765bb0ecf0afdfae16a75bb2587e2c730d3f1f1b776a4cafc877308ea",
-        "status": "route-catalog-exact"
+        "status": "repo-reviewed-replacement"
       },
       "article.comparison.rows.coherent.pattern": {
         "catalogRoutes": [
@@ -612,14 +607,9 @@
         "status": "route-catalog-exact"
       },
       "article.whenToUse.note.coherent": {
-        "catalogRoutes": [
-          "/4-7-8-breathing-timer"
-        ],
-        "catalogSourceTexts": [
-          "Coherent Breathing"
-        ],
+        "reason": "The German catalog value uses the incorrect plural noun form for the technique name; this replacement supplies the grammatical singular form.",
         "sourceHash": "1897cdabe66cd62756b823942a0c13ffde6dcf07f91f3cf765c5bbbe92141b8c",
-        "status": "route-catalog-normalized"
+        "status": "repo-reviewed-replacement"
       },
       "article.whenToUse.note.label": {
         "catalogRoutes": [
@@ -5015,6 +5005,888 @@
         ],
         "sourceHash": "59d9b0677baf7f4ba4d8421daeba7c457a582292fdf2e5cce8aed7b1dc62f54b",
         "status": "route-catalog-exact"
+      }
+    },
+    "it-it": {
+      "article.benefits.anger.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "4eb1c070116789c5b3f86b6abe5a23a5be36e059c66488afc1b0cae071bd0ff1",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.benefits.anger.label": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "068d6f3e7b235238c01757d038073d3cc5354fc1cacd235be055819cde696265",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.benefits.anxiety.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "ac26c87f9ea0cf5698cbb2b44f2727b21b7b4242bf6754966b50789388bd78a8",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.benefits.anxiety.label": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "a24733e187a8f1715545ef5770f9fd05011c8439f29c1d671c053cf89320676b",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.benefits.bloodPressure.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "1e1096bcc571aae22fc35854a7f2d1e8fc97273f9d4a2851887ae9b7593ac453",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.benefits.bloodPressure.label": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "af4f42ade3e9c184c009f0794f425e44ecce57990887d9fc4658b9295de3b905",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.benefits.cravings.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "288b99c0d62f7fb25306de285d726fc4455c37550d58e1cf078d50162f472d2c",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.benefits.cravings.label": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "696e9aa11193380d4e38e5e9254ce7aac12d0f43776fc8fa53ce9586e129a98c",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.benefits.energy.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "d5b4b9b5ea7095b91249c67fa1bb5f527c0604df27ca96c82c250a4d10af5b51",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.benefits.energy.label": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "2d85384b60fdf9408cdb15cce28304de85099333d495876cadccb903755a7d85",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.benefits.intro": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "501b96d493ccabff4be76a40485451e5be22cab77888668f352912f8633aeb09",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.benefits.sleep.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "ba240058969fac972987fdc194b1b80ce21857bf4427e875c6bfc071f0278925",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.benefits.sleep.label": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "72f42661123194906e280f6ba572869c5e112f4db8ffe191bf9ed3ac8c873cba",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.benefits.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "fd93920d0967322de7a66ae129b0144252f52ae41bee9063472b38d57e7424c4",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.comparison.bottomLine.beforeLink": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "1e74dcdd172f8fe10d7e45aaf4dad8a9e4c99967adc10d7ce9e4fc9ba723e3d5",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.comparison.bottomLine.label": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "302a75712a3fd4af8358cc51e4fe031af5a8a16c44dd63efb1068e3c52bb160b",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.comparison.bottomLine.link": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "c222314959d712b618e9df904a7b426bf72da9666e4fa32c773d6e2eef01256e",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.comparison.headers.bestFor": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "22967648691b0b8c54e7b4023e8c08ea02f97e33063042966f0a4b9fe36d76f8",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.comparison.headers.pattern": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "4288ade73ff9d32824e931c858f11acab4e0a323e6b1da9bfbe124473a13ac5a",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.comparison.headers.technique": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "bf4043a9b3dff077edfe02f1f6addb18d8e03e9a73c4c04bd4579deeef375b77",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.comparison.intro": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "99bb808bba7972a576a29a30712fa778491907c7fb56cd0d1e9fcd225caa3ef7",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.comparison.rows.478.bestFor": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "46918b2e87e24d3eb0a35aca6156b6c4a1c3b4cbce663aa4d47d38f525f5f495",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.comparison.rows.478.name": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "7217648d10db92fcb6ed167ca0424d8cd198392c1d8d42f775c40e39270849fb",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.comparison.rows.478.pattern": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "5dddd5533dec08c23fef5a13ed00fb5a3a3ac752d9f5c80fc467675e6ef15ee1",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.comparison.rows.box.bestFor": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "263cb4971993bba81b209d39531b312961531354b8975e82b97d23b600e93e6d",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.comparison.rows.box.name": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "a0b153534ad2dfdc223a7ee7d53c3645a933c945fd87d48f08450d7b74e41095",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.comparison.rows.box.pattern": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "1712d8165e9addcf1b80df238130beab06f9122880ed04f88aa294a231a3184f",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.comparison.rows.coherent.bestFor": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "bb74e9f96a17ce4d002170058f73be998544543d35d83b5dd3d95866726e080a",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.comparison.rows.coherent.name": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "f10268a765bb0ecf0afdfae16a75bb2587e2c730d3f1f1b776a4cafc877308ea",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.comparison.rows.coherent.pattern": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "ce12cb21b5382932a39e2fd143b7c9b635b19f0eb46bfd69e33d4b57192c7e0f",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.comparison.rows.sigh.bestFor": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "7a16b4f392bd02a8b70ada42d02201c7aa25da7f96432eb9074b6fd97c7216aa",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.comparison.rows.sigh.name": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "1cde030524a13eec11bbc07ca1eb2cde30d596421cf7980304622815ba81f60f",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.comparison.rows.sigh.pattern": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "e46ad4fb18e6ea7a087af6c621166e184b2a31f9ff7d5e0d3920f0b6915858ff",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.comparison.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "58f5ef55d193342601413e1bd4b8b2a7cb7d84764fa1cadb413d1830f642a62d",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.description": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "79ddf05926cbdb10812ea07ea95aa23f16626c08b39d08fa4a1fc6daff5ca5aa",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.headline": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "4449d87cb7b6b3799b04d86a3313d2659bcd35ba048db473bab2df9e480208de",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.mechanism.paragraph1": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "d592ff80ef7cf3a3569b46bb0c7f7a30f17b0fe9bcc5c2b258770dc2b1b789c8",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.mechanism.paragraph2": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "26b79fdd730734d1c7784e90d34d66bc00634b97b4b2d5cb7b774fc38a18d132",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.mechanism.paragraph3": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "a3b1786755eaecf82d2d468be212063c3c45a49e6f6cb325ba78aef8c7c03558",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.mechanism.paragraph4": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "d4892da399375e3d6bd4019a667e576f8a65be290d4b70217795f16b2728f1a7",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.mechanism.paragraph5": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "32184909eab0070deecf51c7b5042c7f734e69057c8f316fb211b60e4996e0de",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.mechanism.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "c2114849457e7724a331944089c2f365d5fa2fd39be52609ce34fa3b25985173",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whatIs.paragraph1": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "5de15c9e1e684dde08a37ff55f97938cc98a640af1e5e6b6be2ef63ad134ad6f",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whatIs.paragraph2": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "102979843687500edf100a5ea96e352c4e9820af6f9bc9facc94d6c2ff7bcbb2",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whatIs.paragraph3.afterAnxiety": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "909e5bf3dc3491eb7bafff67dc8c3542800b503a3d49d0830c8b9251a5249a67",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whatIs.paragraph3.anxiety": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "ab0231f72dd9f07809f05d962bfc823a935461a2f194cc1b3be51dae6670836e",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whatIs.paragraph3.beforeSleep": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "9353fd31efe449a0089720e3df893de61ef2f319fcfa75d948028ba4aa94f416",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whatIs.paragraph3.betweenLinks": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "9664eea30be4d4b2fa727e86f03636d99c0999398f9a8740fe97f1777eddda70",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whatIs.paragraph3.sleep": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "0afa5bb5d5f1787945e555e91474675beb6f34dd9a490423c4d0460e4d454885",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whatIs.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "d66d4e51b8b13304f1a6eba851e50c6233b8e2c8a149a3245ae7f3ce13b3a328",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whenToUse.anger.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "7845f37afd75f302ffe2d778896ad8fa2042711a02c7d560af6f9829b88a138d",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whenToUse.anger.label": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "f60c6d4fad51383199bb2a899042c0ffe09da64ae95c0294388f79420de0932d",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whenToUse.bed.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "2ee90d7074618438f9d216e7cd357f8446deff4216e3be48b28ac4329859376e",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whenToUse.bed.label": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "a103098965eefd83a041d0bfbbea1609ab3f39a377eb61cc54eb876b3d22b893",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whenToUse.cravings.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "1ec603a00eac91dcc33d2c917c1c99cca3f3041712083650306288e6d90da745",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whenToUse.cravings.label": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "6ba58ba9076af80ed8f8b91b5aa72dd32287170d739cca8db4f96bfcc4e762a1",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whenToUse.events.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "d91fcb2e57b87d21477d6b1476910456ebe6ab0e10a124aa2f6c7bf17d5b6d49",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whenToUse.events.label": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "7ddde32af1427a8045550326a0801ccd049d78553f38295050159e9c53706a48",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whenToUse.intro": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "2dd38a518cbde5da9e5057d8bb64f1cb1f91fe31b2ebbc82dcab4cb838b44dbf",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whenToUse.night.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "7faefad30301a2f1d76825517d3008efd7b36a8c5161adf01c5f9c8b75498615",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whenToUse.night.label": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "f1defcb1184fbb56671b11aca9cb901ef8b101223780e2c2d50ce3e4222fe4e9",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whenToUse.note.afterSigh": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "a93ff481a7cc48ebef06db326e930eb68658cb8da2fdff7b02f22ef6af2db9de",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whenToUse.note.beforeCoherent": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "b2d404f0083c5f8777951a29d8c79f5ab663dd96ddbdde9622c2985b9e9c22b1",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whenToUse.note.betweenLinks": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "56117f6eaaedf3fde1a169be8234351d2f465e37564a10539bbf6648e934596d",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whenToUse.note.coherent": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "1897cdabe66cd62756b823942a0c13ffde6dcf07f91f3cf765c5bbbe92141b8c",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whenToUse.note.label": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "2088e41830a5c1d4cb4f0f0d03113b45fadf8451f85b25f8d94a99242abed47e",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whenToUse.note.sigh": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "c222314959d712b618e9df904a7b426bf72da9666e4fa32c773d6e2eef01256e",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whenToUse.panic.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "335516b9c423fc70c704e9286d934c17d5093f6f9ebe2f7ce239fe07b9500c1c",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whenToUse.panic.label": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "7282d5edb6140d095358ec0446c3d1a618c5f2d193ab00886e9f7ba97cf66861",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whenToUse.stress.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "9cfd59908c16b49c1d9216c5c0a0a92c29c1a019c0777db9f89472cd1d7ba41d",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whenToUse.stress.label": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "37012c8a97d8ee88dc8258a2c814a1935c9753679fd147b0e9f1f149c4dc83c0",
+        "status": "italian-pilot-reviewed"
+      },
+      "article.whenToUse.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "37023f5c5fdc1af874a18289df4a06c5e23739f363b6029ae084d30a3761a6c9",
+        "status": "italian-pilot-reviewed"
+      },
+      "breadcrumb.current": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "8a98a3ae2640f76f567084b9ee01830a32f3d28800cb0c2a3cd8335cff26fe2f",
+        "status": "italian-pilot-reviewed"
+      },
+      "breadcrumb.home": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+        "status": "italian-pilot-reviewed"
+      },
+      "faq.items.0.answer": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "ce724f809eced381cfe81d7a86831c1c3c1d39e3c4a77a6c6a5bf77866c0744c",
+        "status": "italian-pilot-reviewed"
+      },
+      "faq.items.0.question": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "d66d4e51b8b13304f1a6eba851e50c6233b8e2c8a149a3245ae7f3ce13b3a328",
+        "status": "italian-pilot-reviewed"
+      },
+      "faq.items.1.answer": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "1b5a769d7d77775e4a146495867a2ef84927332168d278bb8fbf0b1eec145c5a",
+        "status": "italian-pilot-reviewed"
+      },
+      "faq.items.1.question": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "7acb21d8a6d0af140cd030c6fc75b0743a8650e4ae5efaff5b8a7a9c0ab02dce",
+        "status": "italian-pilot-reviewed"
+      },
+      "faq.items.2.answer": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "9240a91dd241243ba5a929df63584a48d23880cbfe2594ee02e56ade72bc6136",
+        "status": "italian-pilot-reviewed"
+      },
+      "faq.items.2.question": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "8d8b2ea01f76f4ea0513f6a5ef1774663de1f80c2d57959039da7ee8d0077c8f",
+        "status": "italian-pilot-reviewed"
+      },
+      "faq.items.3.answer": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "066804658a5e77350ab0dddcb7ae43e11bf8c2592799587789919236e0bdd5cf",
+        "status": "italian-pilot-reviewed"
+      },
+      "faq.items.3.question": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "99f51ed79e0765a29a047ed4c16b04a72f989fa0d6a2d9d916a57a113fda5190",
+        "status": "italian-pilot-reviewed"
+      },
+      "faq.items.4.answer": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "36137675f845a0bb565304ccf0141248a2d2fb594f60ffca2709018245df8558",
+        "status": "italian-pilot-reviewed"
+      },
+      "faq.items.4.question": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "3e1f2eb8304b9dd748e70f42aa8d3b06a710dccd3e160fcc944dc86c089ee10e",
+        "status": "italian-pilot-reviewed"
+      },
+      "faq.items.5.answer": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "9f69fdd779cfd7c3353f080ed6c3160bfabcf4b078093f3b7ef9636c94c6dc0c",
+        "status": "italian-pilot-reviewed"
+      },
+      "faq.items.5.question": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "67c21bbc29776578bfc1a2e25635d57d5629de834d200bcb01ecddfe0e77660b",
+        "status": "italian-pilot-reviewed"
+      },
+      "faq.items.6.answer": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "c7194ae475fb596de8515449999d229f944bf26774a00382ffd7a8a6c701e064",
+        "status": "italian-pilot-reviewed"
+      },
+      "faq.items.6.question": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "ac0e6e1d0f19955a2e4500d2f3a1486fe8698ae991caad80e13755fb0a5d3923",
+        "status": "italian-pilot-reviewed"
+      },
+      "faq.items.7.answer": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "675239bac0cf667731aa97b91825cff05db1dd34b8a69a1446a33a077ce01e98",
+        "status": "italian-pilot-reviewed"
+      },
+      "faq.items.7.question": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "936f79ccc23db18662df8b94b90f00771e3a5998fca326b76ddd371e85aa084b",
+        "status": "italian-pilot-reviewed"
+      },
+      "faq.items.8.answer": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "42f8d5eb590b70e4790c26acd5df89acdeb19fdc307904890a442c4b20c81df0",
+        "status": "italian-pilot-reviewed"
+      },
+      "faq.items.8.question": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "f51934c49a4676d109b4651d31092a953a68dac1c0c45b5a223530c466cfb54e",
+        "status": "italian-pilot-reviewed"
+      },
+      "faq.items.9.answer": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "f7b778a7453bbfced48b18e65b713f018bce51e5f9ab6a1e9b1aa70887506bcc",
+        "status": "italian-pilot-reviewed"
+      },
+      "faq.items.9.question": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "0afb22857f817c09e045855ea2a1bbab9b08072f2466768e825bc10a41af2f96",
+        "status": "italian-pilot-reviewed"
+      },
+      "faq.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "e956a9404b467e6b372e082d28cb9d4710af764c2fa5e56a415211e12166be0e",
+        "status": "italian-pilot-reviewed"
+      },
+      "features.adjustable.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "830cc288fd371d55e54a667c49178beb90018b96dd6e655495d60f1634343cfe",
+        "status": "italian-pilot-reviewed"
+      },
+      "features.adjustable.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "f141af048be9b108dce6a3b4bfe03bc82020fb26dbdef24cda44beb25aa8e558",
+        "status": "italian-pilot-reviewed"
+      },
+      "features.noDownload.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "8d514a8068736b5d93e98cd3561b37a6ba040bf9ec4a95f4f891ea5577413c86",
+        "status": "italian-pilot-reviewed"
+      },
+      "features.noDownload.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "39c7785835d3c040de600c521e12997cce53887a0305e3ca0e5142e31a288c76",
+        "status": "italian-pilot-reviewed"
+      },
+      "features.windDown.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "85053c075721d955d52a5b9fda6538f14e05f69a14e99952042dc0bfec213454",
+        "status": "italian-pilot-reviewed"
+      },
+      "features.windDown.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "94c0715552f7dc2a53c1a38a4d041e7dcbaad6a001118def73474e2f4730e02d",
+        "status": "italian-pilot-reviewed"
+      },
+      "footer.about": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "4efca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1",
+        "status": "italian-pilot-reviewed"
+      },
+      "footer.aboutAbi": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "07700ad4ddf0436a007bb422ff7a9fe79559329f02d8be212b86334e0e1ead81",
+        "status": "italian-pilot-reviewed"
+      },
+      "footer.app": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d",
+        "status": "italian-pilot-reviewed"
+      },
+      "footer.embed": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "7512561d2f685534f3a839981a09f87a955c3f853397da88fd2a99bad04f3e7a",
+        "status": "italian-pilot-reviewed"
+      },
+      "footer.guides": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "572cd72feb9a84e0c639af3ccae73f3a4406f69fe193eac69ab0678eee32baff",
+        "status": "italian-pilot-reviewed"
+      },
+      "footer.privacy": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "54a57c3147c49f33de5898b87084ad2b14c4ab308f762454bf92aca907478ad5",
+        "status": "italian-pilot-reviewed"
+      },
+      "footer.safety": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "5acb9b643b12550efe95e3f54858be75919f39aa6d7b6b0ec29132245aa3d947",
+        "status": "italian-pilot-reviewed"
+      },
+      "footer.techniques": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "52551d32e69a6b6a57451e5f7ba8452bc833209f63256930c22f273d23cde816",
+        "status": "italian-pilot-reviewed"
+      },
+      "hero.eyebrow": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "1aed4f17d27b6e37b863548d20a055643d0c012911f34f88a74ae5314a81df57",
+        "status": "italian-pilot-reviewed"
+      },
+      "hero.intro": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "ae9971b495edd58370fa887423719a2da56dada3e3cd3aeba7b42d18876dc928",
+        "status": "italian-pilot-reviewed"
+      },
+      "hero.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "7e22bb96d162307a11867f903b22e0a5404c9382cde0931d607ab2286ec97f6c",
+        "status": "italian-pilot-reviewed"
+      },
+      "howTo.description": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "ae0a8e91b043cd53b93b297b61ee6c6fd46c04ab53423b97c39511abcf4cb828",
+        "status": "italian-pilot-reviewed"
+      },
+      "howTo.name": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "82fa442c44161cf466e6edff7aba304ec79aa609b7175851d28e67c75cc35014",
+        "status": "italian-pilot-reviewed"
+      },
+      "howTo.steps.0.name": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "0d0651e07bb65785ca881e1fd4cef3ae0fc8d5e7dc3efdf37ab97bb69cb56f0f",
+        "status": "italian-pilot-reviewed"
+      },
+      "howTo.steps.0.text": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "d4ed41ac018bf6bdb7bf731e775e4d49e7458b1251969784183b7d2b2547375a",
+        "status": "italian-pilot-reviewed"
+      },
+      "howTo.steps.1.name": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "88caa787124d1f4d678cc11718b07eaac469fb0132a83151411d11f88e96866d",
+        "status": "italian-pilot-reviewed"
+      },
+      "howTo.steps.1.text": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "cec7a79cbd389c968880036658549d93428f903892cd1df54e701ba437fb9f29",
+        "status": "italian-pilot-reviewed"
+      },
+      "howTo.steps.2.name": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "f320adbe95302f1b17c6fdad23ce40670528de85abb9b3a7647531643a809031",
+        "status": "italian-pilot-reviewed"
+      },
+      "howTo.steps.2.text": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "10ebe0117e8939152eefe48bf5cede8b8c0ddb70c815a4c09edb0bfb2fc300db",
+        "status": "italian-pilot-reviewed"
+      },
+      "howTo.steps.3.name": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "30215bd73cabf25e99388593c39f5ea119673892b8cb04ca17231b98c965bcbc",
+        "status": "italian-pilot-reviewed"
+      },
+      "howTo.steps.3.text": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "9462f343b2c34f6e1a48b3c231034c8251de5ded8af9b2289f463a8436bb41d8",
+        "status": "italian-pilot-reviewed"
+      },
+      "howTo.steps.4.name": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "1b490af1be9a4dd46e56364696e7b3ea23111a9235e98ed6a91d11cfa65aeb8d",
+        "status": "italian-pilot-reviewed"
+      },
+      "howTo.steps.4.text": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "e6c1e7abe4ee56aa673eac8ee501784641a9cf0e375cc48a7d69eed857a52b1c",
+        "status": "italian-pilot-reviewed"
+      },
+      "howTo.steps.5.name": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "579fa3596492abf4b49cc784756bb2d9c55e6957fa8f441147f076a23df691c9",
+        "status": "italian-pilot-reviewed"
+      },
+      "howTo.steps.5.text": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "14ecacaee78e8c03ed27f86280057133658878d0a55a385ebcb08f7e8f1d8dd6",
+        "status": "italian-pilot-reviewed"
+      },
+      "metadata.description": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "484f9a156b7052e0c67bdd12cc37cbe713e831f9eb8f49cea68157ae0f979c39",
+        "status": "italian-pilot-reviewed"
+      },
+      "metadata.imageAlt": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "e482091028cecbda8f8673875cd2a48cea239fe9f6daff9e8bc07bfd3b041c46",
+        "status": "italian-pilot-reviewed"
+      },
+      "metadata.socialDescription": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "9434a3b5dfb0358eeb02c177d528ce84b4ea95d426ccd59ccc7019a58160b5b1",
+        "status": "italian-pilot-reviewed"
+      },
+      "metadata.socialTitle": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "4df6176e014a931d8c5f8fa6d2e5a86981ba1550d9b09a1e0f04a069ef337da4",
+        "status": "italian-pilot-reviewed"
+      },
+      "metadata.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "e88f0a3c184195ee9d0b27ab7b94bf915aa71c9fbbc007123882f0dff6a46bca",
+        "status": "italian-pilot-reviewed"
+      },
+      "metadata.twitterDescription": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "b302fd2f224e5e16d60aff4a1726378b7efa55e877d040da714501eb73e05bd6",
+        "status": "italian-pilot-reviewed"
+      },
+      "moreApps.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "66301cc452364d5690380d71ff44d9d26f2e5c7a312016433a60c207c58e9330",
+        "status": "italian-pilot-reviewed"
+      },
+      "moreApps.box": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "359654c2b97a67074f3bc18291c030956e46bc8aa6cff24c1cb727bb5091d6a4",
+        "status": "italian-pilot-reviewed"
+      },
+      "moreApps.browse": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "14c2e3548f35758f570975586adfa5c3a0bc003aae9b58503441ee62ff9db05c",
+        "status": "italian-pilot-reviewed"
+      },
+      "moreApps.coherent": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "699f0a1a14f6b056bc2dfa44210fe7664924f17632ddf579efc748da6cfb4614",
+        "status": "italian-pilot-reviewed"
+      },
+      "moreApps.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "f9d4f8101382daa9a1681cc1b0907dc32e90fc31c2bc2c5f35614431644905e2",
+        "status": "italian-pilot-reviewed"
+      },
+      "moreApps.twoMinute": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "38ea6f348c65cfc4554ff6af758fcd55a3731384c4d2d6b401adaaf4f1ce01ef",
+        "status": "italian-pilot-reviewed"
+      },
+      "quickAnswer.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "c68b8c5b518b0faa9b35a27a56d7b3f1cba290904e713bffdee8baa62ef861c9",
+        "status": "italian-pilot-reviewed"
+      },
+      "quickAnswer.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "50a40fe2ea6f8d2a6facd771408d3520bc6fdee178908b735421f678ccc2cf0c",
+        "status": "italian-pilot-reviewed"
+      },
+      "settings.anxiety.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "583cdfbc0b09cb5a4bc6d6c46ebbdaadc12e000aa5a496ee44ce0002b057c1b0",
+        "status": "italian-pilot-reviewed"
+      },
+      "settings.anxiety.label": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "0968ae653efd3920f8c0670f1cfdf56779817635fb0498fea8e6f7ea96ed1305",
+        "status": "italian-pilot-reviewed"
+      },
+      "settings.beginners.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "8d9ff4bd1c1125101f60d84a54616fed517bd9df52b7f8a359916d387b16b7a4",
+        "status": "italian-pilot-reviewed"
+      },
+      "settings.beginners.label": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "7e51c375bc77ec68b65b70e5fe8fb76d59f18e007ce792b180a63f6390994c77",
+        "status": "italian-pilot-reviewed"
+      },
+      "settings.instructions": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "7846f1a30ddf9ac26df32dc88ccfeb58697cf61f3b4cd585aba618deab38b91a",
+        "status": "italian-pilot-reviewed"
+      },
+      "settings.intro": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "900f8f3bd08c8b7055b367a2f77a29109db3bbdd7a1db3b9545a0aebf879af00",
+        "status": "italian-pilot-reviewed"
+      },
+      "settings.lightHeaded.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "c79ed5051012f991d454040a1c442e6bc1446e8e1d74910e293b3ce75d805181",
+        "status": "italian-pilot-reviewed"
+      },
+      "settings.lightHeaded.label": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "f932180a12395fd7d8c051bf6793f80a0412d18a3faef5f798e326dcb999544b",
+        "status": "italian-pilot-reviewed"
+      },
+      "settings.sleep.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "1a8ae1e82f1a8fdaa33ec36597b1ce408fd0d44934975318e539e9b1e5e8f284",
+        "status": "italian-pilot-reviewed"
+      },
+      "settings.sleep.label": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "eb9775417ffaf60976979c73ff0eebb725fb46127df646c85cff19913d4738ac",
+        "status": "italian-pilot-reviewed"
+      },
+      "settings.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "af399491d76575ab4662b72abb7b2941e95f83cce8eb5fa7d5f10d62fee2023c",
+        "status": "italian-pilot-reviewed"
+      },
+      "start.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "ee2b31a84a04471a9562aac9dd71916b2a01ad94ce386d480c97fb66203550ab",
+        "status": "italian-pilot-reviewed"
+      },
+      "start.fullApp": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "5073f7042008340bc8b18396f56f04cc8200ef423fbafb916f34a1ba7772cd0c",
+        "status": "italian-pilot-reviewed"
+      },
+      "start.openTimer": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "a637054d5be5b61b82a316894455530bf2da87447eb4c806c8db0f9331381f32",
+        "status": "italian-pilot-reviewed"
+      },
+      "start.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "4e81c297f5e41f36540d1eb4747418875b63e34e813c1ff3bb835b3d89a89304",
+        "status": "italian-pilot-reviewed"
+      },
+      "techniques.belly.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "5e758d186403efe6287b9e420fe579fa856a3cbdab906a4bc7223040b558feb5",
+        "status": "italian-pilot-reviewed"
+      },
+      "techniques.belly.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "14d35bc6474aed9ec9a54f70bb6ae2532b4a214d790df0733877147014ea521a",
+        "status": "italian-pilot-reviewed"
+      },
+      "techniques.buteyko.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "d0a935e71e833f526e228a43d0e38097f1c54a6f6f3e2c1871ab3457e9d81fa1",
+        "status": "italian-pilot-reviewed"
+      },
+      "techniques.buteyko.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "e0819f5a9eff8dffd64446781bf123b8b2070e9f27c6cf650f79debb76efbf15",
+        "status": "italian-pilot-reviewed"
+      },
+      "techniques.practice": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "aaefeb15dba1049f9e232401aa1729aa5582328b239ed15f7bdec1bd5cdf3c26",
+        "status": "italian-pilot-reviewed"
+      },
+      "techniques.pursedLip.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "2d8b3710c9bf185d7bf0b7b90fcddeb4ca3c44a7a5233105adf9579a1b1d1a85",
+        "status": "italian-pilot-reviewed"
+      },
+      "techniques.pursedLip.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "eeef18570cefea9a3e886a54c649bef58fb6503cd530b16c3f981a6ca4d3a069",
+        "status": "italian-pilot-reviewed"
+      },
+      "techniques.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "793086ec30e1fe4916451c47a0c9ecc76b1d63d8d65b709b03d70e60148b99a6",
+        "status": "italian-pilot-reviewed"
+      },
+      "techniques.ujjayi.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "8f62f9910495d3daf9e81773139a679e519d870dc1900879ed5900466b428959",
+        "status": "italian-pilot-reviewed"
+      },
+      "techniques.ujjayi.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "2b091f864c5ac2e61e584394ff747e4887567076def4301ddb2b7c8f7c05bda9",
+        "status": "italian-pilot-reviewed"
+      },
+      "updated": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "4e265182be79ce4d00e5a05399448dc7da14b8d2526df7283ee3f10b913437ff",
+        "status": "italian-pilot-reviewed"
+      },
+      "useCases.anxiety.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "79f7ae0d953fe59d129be1ccd75a257a6d25cb21343d8b91e82f858e1f87ec7a",
+        "status": "italian-pilot-reviewed"
+      },
+      "useCases.anxiety.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "324af3a7f1b77322470f4e5be00928e27075415a7baf6172996a4906ec9e9d00",
+        "status": "italian-pilot-reviewed"
+      },
+      "useCases.bloodPressure.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "4e2430556c7a6e44ba9b616125081917147091c2366d616e95fcb3e98c18e5b5",
+        "status": "italian-pilot-reviewed"
+      },
+      "useCases.bloodPressure.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "bfb5a87caf0658458b4c1cf99b9095a6cd07f1cf1f73eb677da0a148d851fd48",
+        "status": "italian-pilot-reviewed"
+      },
+      "useCases.learnMore": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "08e017eaa70ff69626a5eed317009befdc54a341564429e4aecf62c785c14475",
+        "status": "italian-pilot-reviewed"
+      },
+      "useCases.running.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "948c185e429bbbf12d6829e7056250e975c81362c58700a3ce3a1ea65dfa76b2",
+        "status": "italian-pilot-reviewed"
+      },
+      "useCases.running.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "cfeddef8f4673d09d26221c147eef6c6e4b7daabe397d3c04f209c7b811a11ba",
+        "status": "italian-pilot-reviewed"
+      },
+      "useCases.sleep.body": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "d6027e6913fd6c27a5c794badfb868e9e6121a6ba28d2b9edcdfe92fb6f6a61c",
+        "status": "italian-pilot-reviewed"
+      },
+      "useCases.sleep.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "51260d7955bf85e8ef105f95e18488a281a112486c2db126dc8ef5796fff9a05",
+        "status": "italian-pilot-reviewed"
+      },
+      "useCases.title": {
+        "reason": "Italian pilot translation reviewed for source binding, natural phrasing, and preservation of breathing counts and safety semantics.",
+        "sourceHash": "59d9b0677baf7f4ba4d8421daeba7c457a582292fdf2e5cce8aed7b1dc62f54b",
+        "status": "italian-pilot-reviewed"
       }
     },
     "ja-jp": {

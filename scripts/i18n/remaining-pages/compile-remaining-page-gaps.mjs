@@ -235,6 +235,13 @@ export function preserveReviewedGapValues(generated, existing, locales) {
         `${generated.sourceRoute}:${target.messageId}: existing ${field} changed`,
       );
     }
+    if (prior.reviewReason !== undefined) {
+      assert(
+        typeof prior.reviewReason === "string" && prior.reviewReason.trim(),
+        `${generated.sourceRoute}:${target.messageId}: existing reviewReason is invalid`,
+      );
+      target.reviewReason = prior.reviewReason;
+    }
     assert(
       JSON.stringify(Object.keys(prior.translations ?? {})) ===
         JSON.stringify(locales),

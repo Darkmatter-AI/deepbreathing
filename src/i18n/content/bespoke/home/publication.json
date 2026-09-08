@@ -2,16 +2,16 @@
   "expectedMessages": 159,
   "locales": {
     "de-de": {
-      "bytes": 17585,
-      "catalogExact": 149,
+      "bytes": 17587,
+      "catalogExact": 147,
       "catalogNormalized": 1,
       "overrideMessages": 4,
       "path": "messages/de-de.json",
       "publishable": true,
-      "replacementMessages": 5,
+      "replacementMessages": 7,
       "resolvedMessages": 159,
-      "reviewedReplacementMessages": 5,
-      "sha256": "b4f0340962024ad0edd52d7a20d13f87f18ed5300629f8f2d92f6f5d87414508",
+      "reviewedReplacementMessages": 7,
+      "sha256": "7bff9105f45b422ee8ebcfc2f586dae1db2fa0e95ac63f94e0a3f9e0b0baaff2",
       "unresolved": 0
     },
     "es-es": {
@@ -40,17 +40,30 @@
       "sha256": "33dcabcf48557e541068875432307253ce5b84ff0669c690b64dc76c51370ae6",
       "unresolved": 0
     },
+    "it-it": {
+      "bytes": 18660,
+      "catalogExact": 0,
+      "catalogNormalized": 0,
+      "overrideMessages": 0,
+      "path": "messages/it-it.json",
+      "publishable": true,
+      "replacementMessages": 0,
+      "resolvedMessages": 159,
+      "reviewedReplacementMessages": 0,
+      "sha256": "5a4341557bf0d4d27dfb3d3e6f6edc6280f2a18319a8bc2edae56864b5e919a0",
+      "unresolved": 0
+    },
     "ja-jp": {
-      "bytes": 19164,
-      "catalogExact": 147,
+      "bytes": 19212,
+      "catalogExact": 143,
       "catalogNormalized": 1,
       "overrideMessages": 4,
       "path": "messages/ja-jp.json",
       "publishable": true,
-      "replacementMessages": 7,
+      "replacementMessages": 11,
       "resolvedMessages": 159,
-      "reviewedReplacementMessages": 7,
-      "sha256": "e74538053287b36ca2f23beae99e6d42c0d13e3f793b1b456299d9ae3107610f",
+      "reviewedReplacementMessages": 11,
+      "sha256": "6cf247ed5e8c04e78dfaacbdd1d3536ee3fffed418ea73036f688f1a1a0d2a44",
       "unresolved": 0
     },
     "pt-br": {

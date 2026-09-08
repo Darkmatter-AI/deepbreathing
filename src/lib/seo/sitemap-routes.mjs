@@ -23,6 +23,7 @@ const LOCALE_PREFIX_TO_HREFLANG = {
   fr: 'fr-FR',
   de: 'de-DE',
   ja: 'ja-JP',
+  it: 'it-IT',
 };
 
 function isRouteGroup(segment) {
@@ -142,6 +143,7 @@ export function buildSitemapEntries({
   siteUrl,
   excludedRoutes = DEFAULT_EXCLUDED_ROUTES,
   localePrefixes = DEFAULT_LOCALE_PREFIXES,
+  localeAvailability = () => true,
   breathingPageMeta = [],
   useCasePageMeta = [],
   now = new Date(),
@@ -158,7 +160,9 @@ export function buildSitemapEntries({
         if (EN_ONLY_ROUTES.has(route)) return [route];
         return [
           route,
-          ...normalizedLocalePrefixes.map((prefix) => createLocalizedRoute(route, prefix)),
+          ...normalizedLocalePrefixes
+            .filter((prefix) => localeAvailability(route, prefix))
+            .map((prefix) => createLocalizedRoute(route, prefix)),
         ];
       })
     )
@@ -175,6 +179,7 @@ export function buildSitemapEntries({
       'x-default': enUrl,
     };
     for (const prefix of normalizedLocalePrefixes) {
+      if (!localeAvailability(canonicalRoute, prefix)) continue;
       const hreflang = LOCALE_PREFIX_TO_HREFLANG[prefix] || prefix;
       languages[hreflang] = `${siteUrl}${createLocalizedRoute(canonicalRoute, prefix)}`;
     }

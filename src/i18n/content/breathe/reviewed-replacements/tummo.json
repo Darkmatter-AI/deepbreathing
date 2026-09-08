@@ -35,6 +35,24 @@
       "reviewedSourceHash": "cfe6316290073197d9db7dcca478c181b8f8c1a6be04a272f192f5a8b0c53cae",
       "sourcePath": "meta.twitterDescription",
       "sourceText": "Free tummo breathing timer — the Tibetan inner fire technique. Visual pacer, steps, and safety notes."
+    },
+    {
+      "currentCatalogValue": "基本のツンモ呼吸法については、ここにあるガイド付きタイマーが良い出発点です。バス呼吸法やエネルギー経路の実践を含む高度な技法については、チベット仏教の伝統における資格のある教師を求めることをお勧めします。",
+      "locale": "ja-jp",
+      "reason": "The approved Japanese FAQ mistranslates vase breathing as “バス呼吸法”; use a clear Japanese term with the explanatory “壺呼吸”.",
+      "replacement": "基本のツンモ呼吸法については、ここにあるガイド付きタイマーが良い出発点です。ヴァース呼吸（壺呼吸）やエネルギー経路の実践を含む高度な技法については、チベット仏教の伝統における資格のある教師を求めることをお勧めします。",
+      "reviewedSourceHash": "07cc0ed6eaf0f3671c8cf5dfcb08c79073845e332f3103a85049236e6e86cd71",
+      "sourcePath": "faqs[5].answer",
+      "sourceText": "For basic tummo breathing, the guided timer here is a good starting point. For advanced practices involving vase breathing and energy channel work, seeking a qualified teacher in the Tibetan Buddhist tradition is recommended."
+    },
+    {
+      "currentCatalogValue": "冷冷曝露の5–10分前",
+      "locale": "ja-jp",
+      "reason": "The approved Japanese dose label repeats the character for cold and obscures the meaning; use the standard term 寒冷曝露.",
+      "replacement": "寒冷曝露の5–10分前",
+      "reviewedSourceHash": "eb8c67fc5db10665ddaaeceaa1d26351ed7b06cd00d597be75ade2c747f2a707",
+      "sourcePath": "useCases[1].dose",
+      "sourceText": "5–10 minutes before cold exposure"
     }
   ],
   "schemaVersion": 1,

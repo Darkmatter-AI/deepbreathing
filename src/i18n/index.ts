@@ -5,6 +5,7 @@ export const SUPPORTED_LOCALES = [
   "fr-FR",
   "de-DE",
   "ja-JP",
+  "it-IT",
 ] as const;
 
 export type LocaleCode = (typeof SUPPORTED_LOCALES)[number];
@@ -14,6 +15,8 @@ export interface LocaleDefinition {
   readonly code: LocaleCode;
   readonly language: string;
   readonly routePrefix: string;
+  /** Whether all-locale route defaults may publish this locale. */
+  readonly nativePublicationDefault: boolean;
   readonly label: string;
   readonly nativeLabel: string;
   readonly shortLabel: string;
@@ -31,6 +34,7 @@ const HOME_LABELS: Readonly<Record<LocaleCode, string>> = Object.freeze({
   "fr-FR": "Accueil",
   "de-DE": "Startseite",
   "ja-JP": "ホーム",
+  "it-IT": "Home",
 });
 
 export function getLocalizedHomeLabel(locale: LocaleCode): string {
@@ -49,6 +53,7 @@ export const LOCALES: readonly LocaleDefinition[] = Object.freeze([
     code: "en-US",
     language: "en",
     routePrefix: "",
+    nativePublicationDefault: true,
     label: "English",
     nativeLabel: "English",
     shortLabel: "EN",
@@ -60,6 +65,7 @@ export const LOCALES: readonly LocaleDefinition[] = Object.freeze([
     code: "es-ES",
     language: "es",
     routePrefix: "es",
+    nativePublicationDefault: true,
     label: "Spanish",
     nativeLabel: "Español",
     shortLabel: "ES",
@@ -71,6 +77,7 @@ export const LOCALES: readonly LocaleDefinition[] = Object.freeze([
     code: "pt-BR",
     language: "pt",
     routePrefix: "pt",
+    nativePublicationDefault: true,
     label: "Portuguese (Brazil)",
     nativeLabel: "Português (Brasil)",
     shortLabel: "PT",
@@ -82,6 +89,7 @@ export const LOCALES: readonly LocaleDefinition[] = Object.freeze([
     code: "fr-FR",
     language: "fr",
     routePrefix: "fr",
+    nativePublicationDefault: true,
     label: "French",
     nativeLabel: "Français",
     shortLabel: "FR",
@@ -93,6 +101,7 @@ export const LOCALES: readonly LocaleDefinition[] = Object.freeze([
     code: "de-DE",
     language: "de",
     routePrefix: "de",
+    nativePublicationDefault: true,
     label: "German",
     nativeLabel: "Deutsch",
     shortLabel: "DE",
@@ -104,11 +113,24 @@ export const LOCALES: readonly LocaleDefinition[] = Object.freeze([
     code: "ja-JP",
     language: "ja",
     routePrefix: "ja",
+    nativePublicationDefault: true,
     label: "Japanese",
     nativeLabel: "日本語",
     shortLabel: "JA",
     hreflang: "ja-JP",
     htmlLang: "ja-JP",
+    direction: "ltr",
+  }),
+  Object.freeze({
+    code: "it-IT",
+    language: "it",
+    routePrefix: "it",
+    nativePublicationDefault: false,
+    label: "Italian",
+    nativeLabel: "Italiano",
+    shortLabel: "IT",
+    hreflang: "it-IT",
+    htmlLang: "it-IT",
     direction: "ltr",
   }),
 ]);

@@ -1,5 +1,6 @@
 import {
   DEFAULT_LOCALE,
+  SUPPORTED_LOCALES,
   TRANSLATED_LOCALES,
   getLocale,
   localizePathname,
@@ -48,7 +49,7 @@ export interface NativeRouteDefinition<
   readonly dynamic: boolean;
   /** Which localized App Router page owns this route. */
   readonly localizedHandler: LocalizedRouteHandler;
-  /** Whether the final preservation snapshot contains all five locale files. */
+  /** Whether the final preservation snapshot contains the route's locale file. */
   readonly catalogAvailable: boolean;
   /** Whether the public route is available, separate from sitemap inclusion. */
   readonly publicationIntent: LocalePublicationIntent;
@@ -71,22 +72,33 @@ interface NativeRouteInput<Id extends string, Path extends string> {
   readonly localizedHandler?: LocalizedRouteHandler;
   readonly catalogAvailable?: boolean;
   readonly publication?: PublicationProfile;
+  readonly publicationOverrides?: Readonly<Partial<Record<LocaleCode, boolean>>>;
   readonly translatedStatus?: TranslatedStatusInput;
+  readonly nativeStatusOverrides?: Readonly<
+    Partial<Record<LocaleCode, NativeRouteStatus>>
+  >;
 }
 
 function createPublicationIntent(
   profile: PublicationProfile,
+  overrides?: Readonly<Partial<Record<LocaleCode, boolean>>>,
 ): LocalePublicationIntent {
   const translated = profile === "all-locales";
+  const publicationIntent = Object.fromEntries(
+    SUPPORTED_LOCALES.map((locale) => [
+      locale,
+      locale === DEFAULT_LOCALE
+        ? profile !== "none"
+        : translated && getLocale(locale).nativePublicationDefault,
+    ]),
+  ) as Record<LocaleCode, boolean>;
 
-  return Object.freeze({
-    "en-US": profile !== "none",
-    "es-ES": translated,
-    "pt-BR": translated,
-    "fr-FR": translated,
-    "de-DE": translated,
-    "ja-JP": translated,
-  });
+  for (const locale of SUPPORTED_LOCALES) {
+    const override = overrides?.[locale];
+    if (override !== undefined) publicationIntent[locale] = override;
+  }
+
+  return Object.freeze(publicationIntent);
 }
 
 function translatedStatusForLocale(
@@ -111,7 +123,7 @@ function createNativeStatus(
       ? "mapping-required"
       : "catalog-only";
 
-  return Object.freeze({
+  const nativeStatus: Record<LocaleCode, NativeRouteStatus> = {
     "en-US": "semantic-ready",
     "es-ES": translatedStatusForLocale(
       input.translatedStatus,
@@ -138,7 +150,15 @@ function createNativeStatus(
       "ja-JP",
       translatedFallback,
     ),
-  });
+    "it-IT": translatedFallback,
+  };
+
+  for (const locale of SUPPORTED_LOCALES) {
+    const override = input.nativeStatusOverrides?.[locale];
+    if (override !== undefined) nativeStatus[locale] = override;
+  }
+
+  return Object.freeze(nativeStatus);
 }
 
 function defineRoute<const Id extends string, const Path extends string>(
@@ -158,6 +178,7 @@ function defineRoute<const Id extends string, const Path extends string>(
     catalogAvailable,
     publicationIntent: createPublicationIntent(
       input.publication ?? "all-locales",
+      input.publicationOverrides,
     ),
     nativeStatus: createNativeStatus(input, kind, catalogAvailable),
   });
@@ -169,7 +190,13 @@ function defineRoute<const Id extends string, const Path extends string>(
  * the preservation catalog so it remains safe to import in client code.
  */
 export const NATIVE_ROUTE_MANIFEST = Object.freeze([
-  defineRoute({ id: "home", path: "/", translatedStatus: "cutover-ready" }),
+  defineRoute({
+    id: "home",
+    path: "/",
+    publicationOverrides: { "it-IT": true },
+    nativeStatusOverrides: { "it-IT": "cutover-ready" },
+    translatedStatus: "cutover-ready",
+  }),
   defineRoute({
     id: "1-minute-breathing-exercise",
     path: "/1-minute-breathing-exercise",
@@ -189,6 +216,8 @@ export const NATIVE_ROUTE_MANIFEST = Object.freeze([
     id: "4-7-8-breathing-timer",
     path: "/4-7-8-breathing-timer",
     localizedHandler: "explicit",
+    publicationOverrides: { "it-IT": true },
+    nativeStatusOverrides: { "it-IT": "cutover-ready" },
     translatedStatus: "cutover-ready",
   }),
   defineRoute({
@@ -231,6 +260,8 @@ export const NATIVE_ROUTE_MANIFEST = Object.freeze([
   defineRoute({
     id: "breathe",
     path: "/breathe",
+    publicationOverrides: { "it-IT": true },
+    nativeStatusOverrides: { "it-IT": "cutover-ready" },
     translatedStatus: "cutover-ready",
   }),
   defineRoute({
@@ -249,12 +280,16 @@ export const NATIVE_ROUTE_MANIFEST = Object.freeze([
     id: "breathe-belly",
     path: "/breathe/belly",
     kind: "structured-breathing",
+    publicationOverrides: { "it-IT": true },
+    nativeStatusOverrides: { "it-IT": "cutover-ready" },
     translatedStatus: "cutover-ready",
   }),
   defineRoute({
     id: "breathe-box",
     path: "/breathe/box",
     kind: "structured-breathing",
+    publicationOverrides: { "it-IT": true },
+    nativeStatusOverrides: { "it-IT": "cutover-ready" },
     translatedStatus: "cutover-ready",
   }),
   defineRoute({
@@ -273,6 +308,8 @@ export const NATIVE_ROUTE_MANIFEST = Object.freeze([
     id: "breathe-coherent",
     path: "/breathe/coherent",
     kind: "structured-breathing",
+    publicationOverrides: { "it-IT": true },
+    nativeStatusOverrides: { "it-IT": "cutover-ready" },
     translatedStatus: "cutover-ready",
   }),
   defineRoute({
@@ -480,6 +517,8 @@ export const NATIVE_ROUTE_MANIFEST = Object.freeze([
   defineRoute({
     id: "privacy",
     path: "/privacy",
+    publicationOverrides: { "it-IT": true },
+    nativeStatusOverrides: { "it-IT": "cutover-ready" },
     translatedStatus: "cutover-ready",
   }),
   defineRoute({
@@ -506,6 +545,8 @@ export const NATIVE_ROUTE_MANIFEST = Object.freeze([
   defineRoute({
     id: "support",
     path: "/support",
+    publicationOverrides: { "it-IT": true },
+    nativeStatusOverrides: { "it-IT": "cutover-ready" },
     translatedStatus: "cutover-ready",
   }),
   defineRoute({
@@ -641,6 +682,29 @@ export function isNativeLocalePublished(locale: LocaleCode): boolean {
   return (
     intendedStaticRoutes.length > 0 &&
     intendedStaticRoutes.every((route) => isNativeRoutePublished(route, locale))
+  );
+}
+
+/** Return only locale alternates that are available for this route and mode. */
+export function getNativeAvailableLocales(
+  route: NativeRouteDefinition | NativeRouteId | NativeRoutePath | string,
+  mode: NativeLinkMode,
+): readonly LocaleCode[] {
+  const definition = resolveRoute(route);
+  if (!definition || definition.dynamic) return Object.freeze([]);
+
+  const isAvailable =
+    mode === "native-preview"
+      ? isNativeRoutePreviewable
+      : isNativeRoutePublished;
+
+  return Object.freeze(
+    SUPPORTED_LOCALES.filter(
+      (locale) =>
+        locale === DEFAULT_LOCALE
+          ? definition.publicationIntent[locale]
+          : isAvailable(definition, locale),
+    ),
   );
 }
 

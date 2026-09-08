@@ -1,32 +1,52 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import {
+  DEFAULT_LOCALE,
+  LOCALES,
+  type LocaleCode,
+} from "@/i18n";
 import { createOgImagePath } from "@/lib/seo/og-image";
+import {
+  getNativeAvailableLocales,
+  resolveNativeInternalHref,
+} from "@/i18n/route-manifest";
+import { resolveNativeI18nMode } from "@/i18n/serving-mode";
 
 const SITE_URL = "https://deepbreathingexercises.com";
 
-const LOCALES = [
-  { prefix: "", native: "English", name: "English", code: "en" },
-  { prefix: "/es", native: "Español", name: "Spanish", code: "es" },
-  {
-    prefix: "/pt",
-    native: "Português",
-    name: "Portuguese (Brazil)",
-    code: "pt",
-  },
-  { prefix: "/fr", native: "Français", name: "French", code: "fr" },
-  { prefix: "/de", native: "Deutsch", name: "German", code: "de" },
-  { prefix: "/ja", native: "日本語", name: "Japanese", code: "ja" },
-] as const;
+function getDisplayedLocales() {
+  const mode = resolveNativeI18nMode();
+  const availableCodes = new Set<LocaleCode>(
+    mode === "proxy"
+      ? LOCALES.filter(
+          (locale) =>
+            locale.code === DEFAULT_LOCALE || locale.nativePublicationDefault,
+        ).map((locale) => locale.code)
+      : getNativeAvailableLocales("/", mode),
+  );
 
-type LocaleCode = (typeof LOCALES)[number]["code"];
+  return LOCALES.filter((locale) => availableCodes.has(locale.code));
+}
+
+const DISPLAYED_LOCALES = getDisplayedLocales();
+
+function joinLanguageNames(names: readonly string[]): string {
+  if (names.length < 2) return names[0] ?? "English";
+  if (names.length === 2) return names.join(" and ");
+  return `${names.slice(0, -1).join(", ")}, and ${names.at(-1)}`;
+}
+
+const LANGUAGE_NAMES = joinLanguageNames(
+  DISPLAYED_LOCALES.map((locale) => locale.nativeLabel),
+);
 
 type LocalizedKeyPage = {
   path: string;
-  labels: Record<LocaleCode, string>;
+  labels: Readonly<Record<string, string>>;
 };
 
-const KEY_PAGES = [
+const KEY_PAGES: readonly LocalizedKeyPage[] = [
   {
     path: "/",
     labels: {
@@ -36,6 +56,7 @@ const KEY_PAGES = [
       fr: "Accueil",
       de: "Startseite",
       ja: "ホーム",
+      it: "Home",
     },
   },
   {
@@ -47,6 +68,7 @@ const KEY_PAGES = [
       fr: "Techniques de respiration",
       de: "Atemtechniken",
       ja: "呼吸法",
+      it: "Tecniche",
     },
   },
   {
@@ -91,6 +113,7 @@ const KEY_PAGES = [
       fr: "Minuteur de respiration 4-7-8",
       de: "4-7-8-Atemtimer",
       ja: "4-7-8呼吸タイマー",
+      it: "Timer di respirazione 4-7-8",
     },
   },
   {
@@ -135,6 +158,7 @@ const KEY_PAGES = [
       fr: "Respiration carrée",
       de: "Box-Atmung",
       ja: "ボックス呼吸法",
+      it: "Respirazione quadrata",
     },
   },
   {
@@ -157,6 +181,7 @@ const KEY_PAGES = [
       fr: "Cohérence cardiaque",
       de: "Kohärente Atmung",
       ja: "コヒーレント呼吸法",
+      it: "Respirazione coerente",
     },
   },
   {
@@ -212,6 +237,7 @@ const KEY_PAGES = [
       fr: "Respiration abdominale",
       de: "Bauchatmung",
       ja: "腹式呼吸",
+      it: "Respirazione addominale",
     },
   },
   {
@@ -302,35 +328,36 @@ const KEY_PAGES = [
       ja: "ヒューバーマンの呼吸プロトコル",
     },
   },
-] as const satisfies readonly LocalizedKeyPage[];
+];
 
-function resolveHref(prefix: string, path: string): string {
-  if (path === "/") return `${SITE_URL}${prefix || "/"}`;
-  return `${SITE_URL}${prefix}${path}`;
+function resolveHref(locale: LocaleCode, path: string): string {
+  return new URL(
+    resolveNativeInternalHref(path, locale, "native"),
+    SITE_URL,
+  ).toString();
 }
 
-const OG_IMAGE_ALT = "Deep Breathing Exercises in 6 languages";
+const OG_IMAGE_ALT = `Deep Breathing Exercises in ${DISPLAYED_LOCALES.length} languages`;
 const ogImageUrl = createOgImagePath(OG_IMAGE_ALT);
 
 export const metadata: Metadata = {
-  title: "Languages — Deep Breathing Exercises in 6 languages",
+  title: `Languages — Deep Breathing Exercises in ${DISPLAYED_LOCALES.length} languages`,
   description:
-    "Deep Breathing Exercises is available in English, Español, Português, Français, Deutsch, and 日本語. Jump straight to techniques and guides in your language.",
+    `Deep Breathing Exercises is available in ${LANGUAGE_NAMES}. Jump straight to techniques and guides in your language.`,
   alternates: { canonical: `${SITE_URL}/languages` },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Deep Breathing Exercises in 6 languages",
+    title: `Deep Breathing Exercises in ${DISPLAYED_LOCALES.length} languages`,
     description:
-      "Breathing techniques, timers, and guides in English, Español, Português, Français, Deutsch, and 日本語.",
+      `Breathing techniques, timers, and guides in ${LANGUAGE_NAMES}.`,
     url: `${SITE_URL}/languages`,
     type: "website",
     images: [{ url: ogImageUrl, width: 1200, height: 630, alt: OG_IMAGE_ALT }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Deep Breathing Exercises in 6 languages",
-    description:
-      "Breathing techniques, timers, and guides in 6 languages. Pick yours.",
+    title: `Deep Breathing Exercises in ${DISPLAYED_LOCALES.length} languages`,
+    description: `Breathing techniques, timers, and guides in ${DISPLAYED_LOCALES.length} languages. Pick yours.`,
     images: [ogImageUrl],
   },
 };
@@ -339,46 +366,45 @@ export default function LanguagesPage() {
   return (
     <main className="mx-auto max-w-5xl px-6 py-16">
       <h1 className="text-3xl font-semibold text-foreground sm:text-4xl">
-        Available in 6 languages
+        Available in {DISPLAYED_LOCALES.length} languages
       </h1>
       <p className="mt-4 max-w-2xl text-muted-foreground">
-        Deep Breathing Exercises is translated into Spanish, Portuguese, French,
-        German, and Japanese. Each language has its own set of breathing
-        techniques, timers, and guides. Pick a language below to browse
-        translated pages.
+        Deep Breathing Exercises is translated into {LANGUAGE_NAMES}. Each
+        language has its own set of breathing techniques, timers, and guides.
+        Pick a language below to browse translated pages.
       </p>
 
       <div className="mt-12 grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-        {LOCALES.map(({ prefix, native, name, code }) => (
+        {DISPLAYED_LOCALES.map((locale) => (
           <section
-            key={code}
-            aria-labelledby={`lang-${code}`}
-            lang={code}
+            key={locale.code}
+            aria-labelledby={`lang-${locale.code}`}
+            lang={locale.htmlLang}
             className="space-y-3"
           >
             <h2
-              id={`lang-${code}`}
-              lang={code === "en" ? undefined : code}
+              id={`lang-${locale.code}`}
+              lang={locale.code === DEFAULT_LOCALE ? undefined : locale.htmlLang}
               className="text-xl font-semibold text-foreground"
             >
               <a
-                href={resolveHref(prefix, "/")}
+                href={resolveHref(locale.code, "/")}
                 className="underline underline-offset-4 hover:text-primary"
               >
-                {native}
+                {locale.nativeLabel}
               </a>
               <span className="ml-2 text-sm font-normal text-muted-foreground">
-                ({name})
+                ({locale.label})
               </span>
             </h2>
             <ul className="space-y-1.5 text-sm">
               {KEY_PAGES.map(({ path, labels }) => (
                 <li key={path}>
                   <a
-                    href={resolveHref(prefix, path)}
+                    href={resolveHref(locale.code, path)}
                     className="text-muted-foreground underline-offset-4 hover:text-foreground hover:underline"
                   >
-                    {labels[code]}
+                    {labels[locale.language] ?? labels.en}
                   </a>
                 </li>
               ))}

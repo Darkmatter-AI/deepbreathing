@@ -65,7 +65,7 @@ test("/languages SSR HTML has crawlable anchors to every locale root", NEEDS_BUI
     "missing build output for /languages; run `pnpm build` first",
   );
   const html = fs.readFileSync(LANGUAGES_HTML, "utf8");
-  for (const prefix of LOCALE_PREFIXES) {
+  for (const prefix of [...LOCALE_PREFIXES, "/it"]) {
     const pattern = new RegExp(`<a[^>]*href=["']${SITE_URL}${prefix}["']`);
     assert.match(
       html,
@@ -95,6 +95,7 @@ test("/languages SSR HTML preserves every locale and key-page crawl link", NEEDS
 test("/languages SSR HTML renders native labels for translated destinations", NEEDS_BUILD, () => {
   const html = fs.readFileSync(LANGUAGES_HTML, "utf8");
   const expectedLinks = [
+    ["/it/breathe/belly", "Respirazione addominale"],
     ["/es/breathe/belly", "Respiración abdominal"],
     ["/pt/breathe/pursed-lip", "Respiração com lábios franzidos"],
     ["/fr/breathe/coherent", "Cohérence cardiaque"],
@@ -115,7 +116,7 @@ test("/languages SSR HTML renders native labels for translated destinations", NE
     );
   }
 
-  for (const locale of ["es", "pt", "fr", "de", "ja"]) {
+  for (const locale of ["es-ES", "pt-BR", "fr-FR", "de-DE", "ja-JP", "it-IT"]) {
     assert.match(html, new RegExp(`<section[^>]*lang=["']${locale}["']`));
   }
 });

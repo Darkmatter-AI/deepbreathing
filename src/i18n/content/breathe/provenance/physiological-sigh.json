@@ -449,7 +449,7 @@
         "faqs[6].answer": {
           "sourceHash": "8dc94fda851629758b53205c35c178cf462b11d69d08cfa0e82c696a954f6af3",
           "sourceText": "For an immediate reset during acute stress, 1-3 physiological sighs is usually enough, many people feel relief after just one. For a more sustained practice with training effects on mood and stress resilience, do continuous cyclic sighing for 2-5 minutes. The Stanford study used 5 minutes daily. Start with fewer repetitions and increase only if it feels comfortable.",
-          "status": "route-catalog-normalized"
+          "status": "repo-reviewed-replacement"
         },
         "faqs[6].question": {
           "sourceHash": "6974a9ffec1311d335bf0f8733f4e50e33f47046ab0cb10d79f9d3c16765843a",
@@ -3138,7 +3138,7 @@
         "faqs[1].answer": {
           "sourceHash": "09f7ed2f11ff2e4ee481a39ef5c28221408cd211a0ff50273b5c39c00415b894",
           "sourceText": "A month-long randomized study comparing three breathwork protocols to mindfulness found breathwork improved mood and reduced respiratory rate more, with the exhale-focused cyclic sighing showing the largest gains. A pilot RCT in an orthopedic clinic waiting room found a 4-minute cyclic-sighing audio reduced pain intensity and unpleasantness vs. a time-matched control. Together these suggest quick, modest benefits for mood and acute symptoms with brief daily practice.",
-          "status": "route-catalog-normalized"
+          "status": "repo-reviewed-replacement"
         },
         "faqs[1].question": {
           "sourceHash": "aa5886e7e3416b4385bb4618fc85ee426f7862e02305d40c6f6eb287169c109a",
@@ -3168,7 +3168,7 @@
         "faqs[4].answer": {
           "sourceHash": "b8781c34905975f7c4c1c6d82e703d6f6ba4ac87fd02c2e015d5a2372d100006",
           "sourceText": "It's generally safe when done gently. Practice seated if you're prone to dizziness. People who are pregnant or have cardiopulmonary disease or syncope history should avoid straining and keep breaths small. Any light-headedness likely reflects over-breathing. Shrink the inhale and slow the exhale or stop and resume later.",
-          "status": "route-catalog-normalized"
+          "status": "repo-reviewed-replacement"
         },
         "faqs[4].question": {
           "sourceHash": "fdbb93f6624d2d2e29c969ee624af1d7355c3618ae480f2dadb4ce3139159958",
@@ -3178,7 +3178,7 @@
         "faqs[5].answer": {
           "sourceHash": "ce01cf209fd4059c8a607ac77d6f8a30d9fb5cae7c003ff61a51adf7462b552f",
           "sourceText": "They're tools for different aims. The RCT found exhale-focused cyclic sighing yielded the largest mood and respiration-rate improvements vs. mindfulness, with box breathing also helpful. For rapid relief in a few breaths, many prefer sighing; for structured pacing or longer sessions, box breathing or coherent breathing may suit better.",
-          "status": "route-catalog-normalized"
+          "status": "repo-reviewed-replacement"
         },
         "faqs[5].question": {
           "sourceHash": "5181b641d42dc077948bca7cc2f9b38a15a03cfc03667f8475b921bc1d01d8d3",
@@ -3198,7 +3198,7 @@
         "faqs[7].answer": {
           "sourceHash": "2dffcba5eb77695aa00049393a369d6e5d71a5186238b4c6681dc8cd5fcfc8d7",
           "sourceText": "Nasal breathing is preferred for both inhales because it filters, warms, and humidifies the air, and may enhance nitric oxide production. However, the technique still works with mouth breathing if nasal congestion makes nose breathing difficult. The exhale can be through pursed lips (like sighing 'ahh') or through the nose, whichever feels more natural and allows a longer, slower release.",
-          "status": "route-catalog-normalized"
+          "status": "repo-reviewed-replacement"
         },
         "faqs[7].question": {
           "sourceHash": "c1b7a68d6edea4aa228eddb15923ff38bde5915d2b8e3c7b6a87285a6e299100",
@@ -3208,7 +3208,7 @@
         "faqs[8].answer": {
           "sourceHash": "15db6acdc2e79850a4586cffebe36af671fdc7934dc7fe19f3b7d26426e6e0ad",
           "sourceText": "Yes, cyclic sighing is the research term for repeatedly performing physiological sighs in sequence. A single physiological sigh is one double-inhale followed by a long exhale. Cyclic sighing strings these together for 2-5+ minutes as a structured practice. The Stanford study that compared breathwork to meditation used 'cyclic physiological sighing' as the formal name for this continuous practice.",
-          "status": "route-catalog-normalized"
+          "status": "repo-reviewed-replacement"
         },
         "faqs[8].question": {
           "sourceHash": "d2eabd8769c03d213c9d381b6efdc4cf6934106ce01ff8e3c5f03f5747475e1a",
@@ -3238,12 +3238,12 @@
         "hero.subtitle": {
           "sourceHash": "fcf9a26d3382aadc6a535212a68211e158be619b293ac03612fd59766344aaeb",
           "sourceText": "Calm down in 30 seconds with the double-inhale technique.",
-          "status": "route-catalog-exact"
+          "status": "repo-reviewed-replacement"
         },
         "hero.title": {
           "sourceHash": "b328eabea77dd51370eb8e6ce397ac46cee3df995cd9515e8a1a7e9b35e9bdd7",
           "sourceText": "Physiological Sigh: Instant Stress Relief",
-          "status": "route-catalog-exact"
+          "status": "repo-reviewed-replacement"
         },
         "howTo.difficulty": {
           "sourceHash": "97c10efe01d5c9c88704a12d361d8429b3a6aa2412290a0773109d5d2d603d5e",
@@ -3408,7 +3408,7 @@
         "practiceTips[2].description": {
           "sourceHash": "cd1fefdf1a1f61363e42bfd3eb529d905197529941d4b8cc1a84627f03ce03aa",
           "sourceText": "Use smaller inhales, slower exhale, or pause. Comfort beats depth.",
-          "status": "route-catalog-exact"
+          "status": "repo-reviewed-replacement"
         },
         "practiceTips[2].title": {
           "sourceHash": "2a72a0de87322b2cfd942febf2611fa03217cf07d43f7105fd5116301bc0e2a4",
@@ -3568,7 +3568,7 @@
         "useCases[0].description": {
           "sourceHash": "135610f250c162cb2bd186e9aaef84039d1fba51425a57b7d3d0cb1924903028",
           "sourceText": "Interrupt spiraling physiology with 1–3 cycles; longer exhales ease arousal quickly.",
-          "status": "route-catalog-exact"
+          "status": "repo-reviewed-replacement"
         },
         "useCases[0].dose": {
           "sourceHash": "0dcb8c5a63acb174bf28b1b6d2570d40f9fbda1cbc6ab273ded8cb50962aafe5",

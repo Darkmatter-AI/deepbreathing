@@ -11,6 +11,7 @@ const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), "../../..");
 const contentRoot = join(repoRoot, "src/i18n/content/bespoke/privacy-support");
 const catalogRoot = join(repoRoot, "src/i18n/catalog");
 const manualRoot = join(repoRoot, "src/i18n/content/remaining-pages/manual");
+const italianPilotRoot = join(repoRoot, "src/i18n/content/italian-pilot");
 
 export const PRIVACY_SUPPORT_LOCALES = [
   "de-de",
@@ -144,6 +145,27 @@ function validateTranslation(
   validateForTranslationSafety(sourceText, translation, label, {
     numericReviewReason,
   });
+}
+
+async function readItalianPilot(routeName, sourceLeaves, sourceRoute) {
+  const file = await readJson(join(italianPilotRoot, `${routeName}.json`));
+  assert(file.schemaVersion === 1, `Unsupported Italian ${routeName} schema`);
+  assert(file.sourceRoute === sourceRoute, `Italian ${routeName} source route changed`);
+  assert(Array.isArray(file.entries), `Italian ${routeName} entries changed`);
+  assert(file.entries.length === sourceLeaves.size, `Italian ${routeName} entry count changed`);
+  const entries = new Map();
+  for (const entry of file.entries) {
+    const sourceText = sourceLeaves.get(entry.messagePath);
+    assert(typeof sourceText === "string", `Unknown Italian ${routeName} message ${entry.messagePath}`);
+    assert(!entries.has(entry.messagePath), `Duplicate Italian ${routeName} message ${entry.messagePath}`);
+    assert(entry.sourceText === sourceText, `${routeName}:${entry.messagePath} Italian source changed`);
+    assert(entry.reviewedSourceHash === sha256(entry.sourceText), `${routeName}:${entry.messagePath} Italian source hash changed`);
+    assert(typeof entry.reason === "string" && entry.reason.trim(), `${routeName}:${entry.messagePath} Italian lacks a reason`);
+    validateTranslation(sourceText, entry.translation, `${routeName}:it-it:${entry.messagePath}`);
+    entries.set(entry.messagePath, entry);
+  }
+  assert(entries.size === sourceLeaves.size, `Italian ${routeName} does not cover every source leaf`);
+  return entries;
 }
 
 function catalogFileName(route) {
@@ -355,6 +377,7 @@ export async function buildPrivacySupportArtifacts() {
   for (const [routeName, config] of Object.entries(ROUTES)) {
     const { source, sourceLeaves, bindings, manualEntries } =
       routeInputs[routeName];
+    const italianEntries = await readItalianPilot(routeName, sourceLeaves, config.sourceRoute);
     const claimedPaths = validateRouteBindings(
       routeName,
       config,
@@ -553,6 +576,27 @@ export async function buildPrivacySupportArtifacts() {
         sha256: sha256(raw),
       };
     }
+
+    const italianLocalized = structuredClone(source);
+    const italianProvenance = {};
+    for (const [messagePath, entry] of italianEntries) {
+      setPath(italianLocalized, messagePath, entry.translation);
+      italianProvenance[messagePath] = {
+        status: "italian-pilot-reviewed",
+        reviewedSourceHash: entry.reviewedSourceHash,
+        reason: entry.reason,
+      };
+    }
+    const italianRaw = stableJson(italianLocalized);
+    const italianOutputPath = `messages/${routeName}/it-it.json`;
+    outputs.set(italianOutputPath, italianRaw);
+    provenance.routes[routeName].locales["it-it"] = italianProvenance;
+    routePublication.locales["it-it"] = {
+      path: italianOutputPath,
+      resolvedMessages: italianEntries.size,
+      publishable: true,
+      sha256: sha256(italianRaw),
+    };
     publication.routes[routeName] = routePublication;
   }
 

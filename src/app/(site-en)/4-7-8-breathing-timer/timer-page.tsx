@@ -173,7 +173,7 @@ export function TimerPage({
     <main className="bg-transparent">
       <JsonLd data={[breadcrumbSchema, articleSchema, howToSchema, faqSchema]} />
 
-      <section className="relative isolate min-h-screen w-full text-foreground">
+      <section id="timer" className="relative isolate min-h-screen w-full text-foreground">
         <Resonance
           defaultMode={ModeName.Relax}
           className="min-h-screen"
@@ -205,7 +205,7 @@ export function TimerPage({
             <h2 className="text-2xl font-semibold text-card-foreground">{copy("start.title")}</h2>
             <p className="mt-2 text-sm text-muted-foreground">{copy("start.body")}</p>
             <div className="mt-5 flex flex-wrap gap-3">
-              <Link href={href("/breathe/4-7-8")} className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground">{copy("start.openTimer")}</Link>
+              <Link href={renderContext?.locale === "it-IT" ? "#timer" : href("/breathe/4-7-8")} className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground">{copy("start.openTimer")}</Link>
               <Link href={href("/breathing-app")} className="rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-card-foreground">{copy("start.fullApp")}</Link>
             </div>
           </div>

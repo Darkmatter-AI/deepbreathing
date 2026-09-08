@@ -15,6 +15,7 @@ const bindingsPath = join(contentRoot, "occurrence-bindings.json");
 const overridesPath = join(contentRoot, "overrides.json");
 const replacementsPath = join(contentRoot, "reviewed-replacements.json");
 const outputRoot = join(contentRoot, "messages");
+const italianPilotPath = join(repoRoot, "src/i18n/content/italian-pilot/breathe-index.json");
 
 export const BREATHE_INDEX_LOCALES = ["de-de", "es-es", "fr-fr", "ja-jp", "pt-br"];
 const SOURCE_ROUTE = "/breathe";
@@ -68,6 +69,39 @@ function validateTranslation(sourceText, translation, label) {
   assert(typeof translation === "string" && translation.trim(), `${label} is empty`);
   assert(!/<\/?(?:script|style|iframe|object|embed)\b/i.test(translation), `${label} contains unsafe markup`);
   assert(translation.length <= Math.max(sourceText.length * 8, 320), `${label} is unexpectedly long`);
+}
+
+function validateItalianTranslation(sourceText, translation, label) {
+  validateTranslation(sourceText, translation, label);
+  const numbers = (value) => (value.normalize("NFKC").match(/\d+(?:[.,]\d+)?/g) ?? [])
+    .map((token) => token.replace(",", "."))
+    .sort();
+  const placeholders = (value) => (value.match(/\{\{?[A-Za-z_][A-Za-z0-9_.-]*\}?\}|%(?:\([A-Za-z_][A-Za-z0-9_.-]*\))?[sdif]/g) ?? []).sort();
+  const symbols = (value) => (value.match(/[→←↔%]/g) ?? []).sort();
+  assert(JSON.stringify(numbers(translation)) === JSON.stringify(numbers(sourceText)), `${label} changed numeric values`);
+  assert(JSON.stringify(placeholders(translation)) === JSON.stringify(placeholders(sourceText)), `${label} changed placeholders`);
+  assert(JSON.stringify(symbols(translation)) === JSON.stringify(symbols(sourceText)), `${label} changed protected symbols`);
+}
+
+async function readItalianPilot(bindings, bindingsByPath) {
+  const file = await readJson(italianPilotPath);
+  assert(file.schemaVersion === 1, "Unsupported Italian breathe-index schema");
+  assert(file.sourceRoute === SOURCE_ROUTE, "Italian breathe-index source route changed");
+  assert(Array.isArray(file.entries), "Italian breathe-index entries changed");
+  assert(file.entries.length === bindings.length, "Italian breathe-index entry count changed");
+  const entries = new Map();
+  for (const entry of file.entries) {
+    const binding = bindingsByPath.get(entry.messagePath);
+    assert(binding, `Unknown Italian breathe-index message ${entry.messagePath}`);
+    assert(!entries.has(entry.messagePath), `Duplicate Italian breathe-index message ${entry.messagePath}`);
+    assert(entry.sourceText === binding.sourceText, `${entry.messagePath} Italian source changed`);
+    assert(entry.reviewedSourceHash === sha256(entry.sourceText), `${entry.messagePath} Italian source hash changed`);
+    assert(typeof entry.reason === "string" && entry.reason.trim(), `${entry.messagePath} Italian lacks a reason`);
+    validateItalianTranslation(entry.sourceText, entry.translation, `${entry.messagePath}:it-it`);
+    entries.set(entry.messagePath, entry);
+  }
+  assert(entries.size === bindings.length, "Italian breathe-index does not cover every binding");
+  return entries;
 }
 
 function validateManualFile(file, kind, bindingsByPath) {
@@ -138,6 +172,8 @@ export async function buildBreatheIndexContentArtifacts() {
     assert(binding, `Breathe-index binding missing ${messagePath}`);
     assert(binding.sourceText === sourceText, `${messagePath} source drift`);
   }
+
+  const italianEntries = await readItalianPilot(bindings, bindingsByPath);
 
   validateManualFile(overrides, "overrides", bindingsByPath);
   validateManualFile(replacements, "replacements", bindingsByPath);
@@ -233,6 +269,33 @@ export async function buildBreatheIndexContentArtifacts() {
       sha256: publishable ? sha256(serialized) : null,
     };
   }
+
+  const italianMessages = structuredClone(source);
+  const italianProvenance = {};
+  for (const binding of bindings) {
+    const entry = italianEntries.get(binding.messagePath);
+    setPath(italianMessages, binding.messagePath, entry.translation);
+    italianProvenance[binding.messagePath] = {
+      reason: entry.reason,
+      sourceHash: entry.reviewedSourceHash,
+      status: "italian-pilot-reviewed",
+    };
+  }
+  const italianSerialized = stableJson(italianMessages);
+  outputs.set("messages/it-it.json", italianSerialized);
+  provenance.locales["it-it"] = italianProvenance;
+  publication.locales["it-it"] = {
+    catalogExact: 0,
+    catalogNormalized: 0,
+    override: 0,
+    replacement: 0,
+    unresolved: 0,
+    bytes: Buffer.byteLength(italianSerialized),
+    path: "messages/it-it.json",
+    publishable: true,
+    resolvedMessages: bindings.length,
+    sha256: sha256(italianSerialized),
+  };
 
   unresolved.unresolved.sort((left, right) =>
     `${left.messagePath}:${left.locale}`.localeCompare(`${right.messagePath}:${right.locale}`, "en")

@@ -4,7 +4,7 @@ import type { BreatheIndexContent } from "../types";
 
 import publication from "../publication.json";
 
-export type BreatheIndexContentLocale = "de-de" | "es-es" | "fr-fr" | "ja-jp" | "pt-br";
+export type BreatheIndexContentLocale = "de-de" | "es-es" | "fr-fr" | "ja-jp" | "pt-br" | "it-it";
 
 const contentLoaders = {
   "de-de": () => import("../messages/de-de.json").then((module) => module.default),
@@ -12,6 +12,7 @@ const contentLoaders = {
   "fr-fr": () => import("../messages/fr-fr.json").then((module) => module.default),
   "ja-jp": () => import("../messages/ja-jp.json").then((module) => module.default),
   "pt-br": () => import("../messages/pt-br.json").then((module) => module.default),
+  "it-it": () => import("../messages/it-it.json").then((module) => module.default),
 } as const;
 
 type Coverage = {

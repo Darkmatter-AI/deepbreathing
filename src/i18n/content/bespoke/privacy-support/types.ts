@@ -3,7 +3,8 @@ export type PrivacySupportLocale =
   | "es-es"
   | "fr-fr"
   | "ja-jp"
-  | "pt-br";
+  | "pt-br"
+  | "it-it";
 
 export interface PrivacyContent {
   readonly metadata: PageMetadataContent;
