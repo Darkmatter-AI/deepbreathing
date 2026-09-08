@@ -18,7 +18,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
-| 2026-09-08 | [Italian pilot and translation corrections](#2026-09-08-italian-pilot-and-translation-corrections) | Implemented; production verification pending |
+| 2026-09-08 | [Italian pilot and translation corrections](#2026-09-08-italian-pilot-and-translation-corrections) | Implemented in [PR #77](https://github.com/Darkmatter-AI/deepbreathing/pull/77); production verification pending |
 | 2026-08-30 | [Agent-Handoff Discoverability + Attribution](#2026-08-30-agent-handoff-discoverability--attribution) | 🔄 Implemented in PR [#72](https://github.com/Darkmatter-AI/deepbreathing/pull/72) — production verification pending |
 | 2026-07-27 | [Index Coverage Hygiene + Canonical-Hijack Recovery](#2026-07-27-index-coverage-hygiene--canonical-hijack-recovery) | 🔄 Implemented |
 | 2026-07-22 | [First-Load-JS Webpack Experiment (PR #31) — Production Outage Post-Mortem + Removal](#2026-07-22-first-load-js-webpack-experiment-pr-31--production-outage-post-mortem--removal) | ❌ Failed |
@@ -109,7 +109,7 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 
 **Measure after.** 2026-10-06 for indexing; 2026-11-03 for the initial growth decision, assuming September 8 deployment. Shift dates if deployment changes.
 
-**Status.** Implemented and locally verified on `codex/languages-italian-20260908`, based on `main@12ae231`. Production verification and supported recrawl receipts will be recorded after release. Agent translation review is not native human certification.
+**Status.** Implemented and locally verified in [PR #77](https://github.com/Darkmatter-AI/deepbreathing/pull/77) on `codex/languages-italian-20260908`, based on `main@12ae231`. Production verification and supported recrawl receipts will be recorded after release. Agent translation review is not native human certification.
 
 ### 2026-08-30: Agent-Handoff Discoverability + Attribution
 

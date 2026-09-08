@@ -23,7 +23,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
-| 2026-09-08 | [Italian interaction and translation clarity](#2026-09-08-italian-interaction-and-translation-clarity) | Implemented; production verification pending |
+| 2026-09-08 | [Italian interaction and translation clarity](#2026-09-08-italian-interaction-and-translation-clarity) | Implemented in [PR #77](https://github.com/Darkmatter-AI/deepbreathing/pull/77); production verification pending |
 | 2026-09-05 | [App acquisition funnel and shared website campaign](#2026-09-05-app-acquisition-funnel-and-shared-website-campaign) | 🔄 Implemented locally — deployment pending |
 | 2026-08-30 | [Guest completion provider-parity hotfix](#2026-08-30-guest-completion-provider-parity-hotfix) | 🔄 Implemented locally, approval pending |
 | 2026-08-30 | [Assistant recommendation handoff instrumentation](#2026-08-30-assistant-recommendation-handoff-instrumentation) | 🔄 Implemented in PR [#72](https://github.com/Darkmatter-AI/deepbreathing/pull/72) — live receipt pending |
@@ -71,7 +71,7 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 
 **Implementation.** Italian home/library 4-7-8 links open the Italian timer, whose main timer link returns to its own player. The Italian mobile home introduction flows below the player to avoid overlap between its longer copy and duration buttons. Desktop layout remains unchanged.
 
-**Status.** Implemented and locally verified on `codex/languages-italian-20260908`; production receipt pending.
+**Status.** Implemented and locally verified in [PR #77](https://github.com/Darkmatter-AI/deepbreathing/pull/77) on `codex/languages-italian-20260908`; production receipt pending.
 
 ### 2026-08-30: Guest completion provider-parity hotfix
 
