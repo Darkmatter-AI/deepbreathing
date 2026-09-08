@@ -18,7 +18,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
-| 2026-09-08 | [Italian pilot and translation corrections](#2026-09-08-italian-pilot-and-translation-corrections) | Implemented in [PR #77](https://github.com/Darkmatter-AI/deepbreathing/pull/77); production verification pending |
+| 2026-09-08 | [Italian pilot and translation corrections](#2026-09-08-italian-pilot-and-translation-corrections) | 🔄 Live and production-verified; indexing review October 6, growth review November 3 |
 | 2026-08-30 | [Agent-Handoff Discoverability + Attribution](#2026-08-30-agent-handoff-discoverability--attribution) | 🔄 Implemented in PR [#72](https://github.com/Darkmatter-AI/deepbreathing/pull/72) — production verification pending |
 | 2026-07-27 | [Index Coverage Hygiene + Canonical-Hijack Recovery](#2026-07-27-index-coverage-hygiene--canonical-hijack-recovery) | 🔄 Implemented |
 | 2026-07-22 | [First-Load-JS Webpack Experiment (PR #31) — Production Outage Post-Mortem + Removal](#2026-07-22-first-load-js-webpack-experiment-pr-31--production-outage-post-mortem--removal) | ❌ Failed |
@@ -109,7 +109,13 @@ See also: [Key Learnings (Jan 2026)](#key-learnings-jan-2026) — synthesis of w
 
 **Measure after.** 2026-10-06 for indexing; 2026-11-03 for the initial growth decision, assuming September 8 deployment. Shift dates if deployment changes.
 
-**Status.** Implemented and locally verified in [PR #77](https://github.com/Darkmatter-AI/deepbreathing/pull/77) on `codex/languages-italian-20260908`, based on `main@12ae231`. Production verification and supported recrawl receipts will be recorded after release. Agent translation review is not native human certification.
+**Status.** Live and production-verified on September 8 through merged [PR #77](https://github.com/Darkmatter-AI/deepbreathing/pull/77), `main@483bf39485b8d81d92adebf9fa0fc36054498c73`. Vercel deployment `dpl_DqjqcuERELzbFx5RG2PL61GPtrqn` passed the production source guard and serves apex, www and origin. All 33 release URLs passed live status, canonical and indexability checks; the 339-URL sitemap preserves the previous 331 URLs with reciprocal alternates. Five unpublished Italian routes return 404. Desktop/mobile Italian home and settings were visually verified. Agent translation review is not native human certification.
+
+**Search submissions.** September 8: IndexNow accepted 33 reviewed URLs with HTTP 200. Search Console accepted the canonical sitemap through the signed-in browser and priority indexing requests for Italian home, belly and box. The service-account sitemap submission returned 403; the browser submission succeeded. Request acceptance does not establish indexing.
+
+**Early checkpoint, September 8 at approximately 18:08 UTC.** About 11 hours after release, the same production deployment remained healthy and all 33 release URL checks still passed. Google had downloaded the updated sitemap at 06:48 UTC, recognized 339 submitted URLs and reported zero sitemap errors or warnings. URL Inspection found 0 of 8 Italian pages indexed: home, belly and box were crawled but currently not indexed, with successful fetches, indexing allowed and correct self-canonicals; the library was discovered but not indexed; timer, coherent, privacy and support were unknown. Bing reported discovery/crawl records for home, belly and box; search inclusion was not verified. No resubmission or production change was warranted. Search traffic and conversion impact were not measured at this checkpoint. October 6 and November 3 remain the review dates above. These are logged dates, not a scheduled reminder.
+
+**Validation limit.** The production web build passed 431 tests with 8 skipped and all 5 post-build SSR checks. The GitHub iOS gate separately failed Expo Doctor on unchanged dependency patch expectations; it is not a fully green iOS release gate.
 
 ### 2026-08-30: Agent-Handoff Discoverability + Attribution
 
