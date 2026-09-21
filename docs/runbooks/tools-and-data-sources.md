@@ -316,3 +316,19 @@ These have all bitten us before. Document in this file the FIRST time they bite,
 ## When this file is wrong
 
 If you discover a tool/data-source detail that contradicts this doc (e.g., GA4 property changed, new MCP available, dkmt-cc behavior shifted), **update this file in the same commit** as your work. Don't leave the next person to rediscover the same thing — that's the entire point of this runbook.
+
+### September 21, 2026: Next.js security patch
+
+Next.js and `eslint-config-next` are pinned to `15.5.24`, with the lockfile
+updated together. This patch addresses GHSA-2xp9-vwfh-vxw4 and
+GHSA-p293-qw3h-jr36. The production dependency audit changed from four critical
+findings to zero; lower-severity findings remain outside this scoped patch.
+Vercel documents platform protection against the AVIF issue and uses Linux,
+which is unaffected by the Windows-only issue. The package patch also protects
+non-Vercel deployments and clears the critical dependency gate.
+
+References: [Next.js security release](https://nextjs.org/blog/august-2026-security-release)
+and [Vercel platform protection](https://vercel.com/changelog/nextjs-august-2026-security-release).
+Release through reviewed GitHub `main` and verify the resulting production SHA.
+This web framework patch and acquisition-reporter repair require no native app
+build or App Store submission.

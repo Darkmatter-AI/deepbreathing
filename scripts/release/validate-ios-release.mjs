@@ -56,7 +56,7 @@ const finalScreenshots = section(finalListing, "## Screenshots", "\n---");
 check(eas.cli?.requireCommit === true, "apps/mobile/eas.json must set cli.requireCommit=true");
 check(eas.cli?.appVersionSource === "remote", "apps/mobile/eas.json must keep remote appVersionSource");
 check(eas.build?.production?.autoIncrement === true, "production EAS profile must auto-increment");
-check(packageJson.dependencies?.next === "15.5.23", "root Next.js must stay on the audited 15.5.23 release");
+check(packageJson.dependencies?.next === "15.5.24", "root Next.js must stay on the audited 15.5.24 release");
 check(packageJson.dependencies?.["better-auth"] === "1.6.27", "root Better Auth must stay on the audited 1.6.27 release");
 check(packageJson.dependencies?.["@better-auth/expo"] === "1.6.27", "root Better Auth Expo adapter must match 1.6.27");
 check(mobilePackageJson.dependencies?.["better-auth"] === "1.6.27", "mobile Better Auth must stay on the audited 1.6.27 release");
