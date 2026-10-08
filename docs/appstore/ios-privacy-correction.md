@@ -64,11 +64,33 @@ Use this text only after the exact candidate has passed verification:
 
 ## Release record
 
-- Source commit: pending
-- Native launch and settings screenshots: pending
+- Source commit: `b5be1d1cc7abf656a0190c2b8c4ef3eeb301a4eb`
+- Automated checks: 124 mobile tests and 463 root tests passed; 7 root tests
+  skipped. Mobile typecheck/lint, Expo Doctor 21/21, release hygiene, critical
+  dependency audit, Next.js production build, and post-build checks passed.
+- iOS export: the source map includes only `ga4-mp.ios.ts`; it has no analytics
+  endpoint, network transport, or analytics ID creation.
+- Simulator Release build: succeeded with Xcode 27.0 and deployment target 16.4.
+  Bundle version 1.0.1, local build number 1. This is not the signed store binary.
+- Native launch and settings screenshots: blocked. SDK 56's generated native
+  template lacks UIKit scene lifecycle support required by the iOS 27 SDK.
+  The installed simulator app stops before JavaScript runs. Verify with the
+  supported SDK 56 build toolchain instead; do not treat a successful compile
+  as a UI pass. See [Expo issue 46664](https://github.com/expo/expo/issues/46664)
+  and [Apple's lifecycle requirement](https://developer.apple.com/documentation/uikit/transitioning-to-the-uikit-scene-based-life-cycle).
+- Simulator artifact: `/tmp/deepbreathing-ios-native-review/Build/Products/Release-iphonesimulator/DeepBreathing.app`
+- Simulator main bundle SHA-256: `33b81ccc39e9e213d6abf4b27dfcce2c6c9cfed6302fddb62407e2863d65718f`
+- Policy rendered locally and inspected; publication remains pending.
 - Production EAS build and build number: pending
 - App Store processing: pending
 - App Privacy readback: pending
 - Review Notes saved: pending
 - Resubmission status: not submitted
 - Release timing: preserve the existing manual release setting
+
+## Remaining access
+
+Agent Work has no Apple or Expo credential. The local Expo session is not
+authenticated, and the App Store Connect preview is at login. Owner login is
+required before the signed build, live App Privacy readback, and review submission.
+No upload, App Store mutation, or website production deployment was performed.
