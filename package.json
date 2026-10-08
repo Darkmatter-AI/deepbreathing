@@ -104,7 +104,7 @@
   "pnpm": {
     "overrides": {
       "lightningcss": "1.30.2",
-      "shell-quote": "1.9.0",
+      "shell-quote": "1.11.0",
       "@isaacs/brace-expansion": "5.0.1",
       "@xmldom/xmldom": "0.8.13",
       "brace-expansion@2.0.2": "2.1.4",

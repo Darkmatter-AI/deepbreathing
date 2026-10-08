@@ -265,7 +265,7 @@ The groups below separate live coupling from migration provenance and historical
 | `src/lib/auth.ts:4` | Retains proxy-driven Better Auth workarounds and trusts the origin host for cross-subdomain callbacks. |
 | `src/app/api/auth/[...all]/route.ts:15` | Allows the origin host in the auth route CORS contract. |
 | `apps/mobile/src/auth/auth-client.ts:5` | Pins native-app auth to the proxy-bypass origin host. |
-| `apps/mobile/src/breathing/ga4-mp.ts:20` | Pins consent-gated native analytics to the first-party origin endpoint so no Google Measurement Protocol secret is shipped in the app. |
+| `apps/mobile/src/breathing/ga4-mp.ts:22` | Pins consent-gated native analytics to the first-party origin endpoint so no Google Measurement Protocol secret is shipped in the app. |
 | `src/app/api/auth/[...all]/route.test.ts:38` | Pins the origin-host Expo authorization proxy rejection path without exercising a live identity provider. |
 | `src/app/api/v1/analytics/route.test.ts:25` | Pins the first-party analytics relay contract while keeping Measurement Protocol credentials server-side. |
 | `scripts/check-og-image.sh:16` | Defaults diagnostics to the origin alias rather than the apex. |

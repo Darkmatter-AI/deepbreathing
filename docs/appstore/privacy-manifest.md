@@ -11,11 +11,10 @@ current app behavior:
 
 | Manifest value | What the app does | Linked | Tracking | Purpose |
 |---|---|---:|---:|---|
-| `NSPrivacyCollectedDataTypeDeviceID` | Random per-install analytics UUID, created only after the user opts in; removed when analytics is turned off | No | No | Analytics |
 | `NSPrivacyCollectedDataTypeUserID` | Account identifier used to authenticate and sync an optional account | Yes | No | App Functionality |
 | `NSPrivacyCollectedDataTypeName` | Name optionally shared by Apple or Google sign-in | Yes | No | App Functionality |
 | `NSPrivacyCollectedDataTypeEmailAddress` | Email used for optional account access and recovery | Yes | No | App Functionality |
-| `NSPrivacyCollectedDataTypeProductInteraction` | Session/mode/duration activity; optional GA4 analytics and signed-in practice sync | Yes | No | Analytics, App Functionality |
+| `NSPrivacyCollectedDataTypeProductInteraction` | Session/mode/duration activity for optional signed-in practice sync | Yes | No | App Functionality |
 
 `NSPrivacyCollectedDataTypeProductInteraction` is Apple’s enum for product
 interaction and is the value used in `app.json`.
@@ -23,6 +22,11 @@ interaction and is the value used in `app.json`.
 The app does not use IDFA, does not request App Tracking Transparency, and does
 not track users across apps or websites. `NSPrivacyTracking` remains `false`
 and `NSPrivacyTrackingDomains` remains an empty array.
+
+The iOS app has no usage analytics transport or analytics consent prompt.
+An upgrade deletes the previous analytics UUID and saved analytics choice.
+Local practice identifiers remain on the device for guest practice; optional
+signed-in sync uses account data for app functionality.
 
 ## Required-reason APIs
 

@@ -23,6 +23,7 @@ Reverse chronological. Legend: ✅ Success · ❌ Failed · ⚪ Inconclusive · 
 
 | Date | Entry | Status |
 |------|-------|--------|
+| 2026-10-08 | [Remove iOS usage analytics and custom consent](#2026-10-08-remove-ios-usage-analytics-and-custom-consent) | Implemented locally; verification and resubmission pending |
 | 2026-09-08 | [Italian interaction and translation clarity](#2026-09-08-italian-interaction-and-translation-clarity) | Implemented in [PR #77](https://github.com/Darkmatter-AI/deepbreathing/pull/77); production verification pending |
 | 2026-09-05 | [App acquisition funnel and shared website campaign](#2026-09-05-app-acquisition-funnel-and-shared-website-campaign) | 🔄 Implemented locally — deployment pending |
 | 2026-08-30 | [Guest completion provider-parity hotfix](#2026-08-30-guest-completion-provider-parity-hotfix) | 🔄 Implemented locally, approval pending |
@@ -58,6 +59,28 @@ See also: [docs/FUNNEL-DASHBOARD.md](FUNNEL-DASHBOARD.md) for the current state,
 ---
 
 ## Active Experiments
+
+### 2026-10-08: Remove iOS usage analytics and custom consent
+
+**Hypothesis:** Removing usage analytics and its consent prompt resolves the
+privacy behavior identified in the rejection of iOS 1.0.1 (21).
+
+**Baseline:** Apple rejected submission `25d9e328-3741-464a-b019-843bcbc7a83a`
+on 2026-09-10 under Guideline 5.1.2(i). The prior native build offered optional
+GA4 events through a server relay and displayed a custom analytics prompt.
+
+**Change:** The iOS module has no event transport and cannot opt in, create an
+analytics identifier, or forward analytics. It removes saved analytics state
+on launch. The iOS prompt and consent control are absent. The privacy manifest
+retains only optional account and practice-sync collection. Web and Android
+analytics remain unchanged.
+
+**Pre-committed success criteria:** Zero analytics requests from fresh and
+upgraded iOS installs, no analytics prompt or consent control, working guest
+breathing and local persistence, and no repeat of this privacy rejection.
+
+**Status:** Implemented locally. Native verification, release build, App Privacy
+readback, and resubmission are pending. Measure after Apple's next review.
 
 ### 2026-09-08: Italian interaction and translation clarity
 

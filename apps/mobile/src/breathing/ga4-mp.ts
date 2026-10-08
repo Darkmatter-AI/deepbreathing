@@ -15,6 +15,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export type AnalyticsConsent = 'granted' | 'denied';
 
+export const USAGE_ANALYTICS_AVAILABLE = true;
+
 /** Fixed first-party endpoint; no client-controlled host or credentials. */
 export const GA4_ANALYTICS_ENDPOINT =
   'https://origin.deepbreathingexercises.com/api/v1/analytics';
