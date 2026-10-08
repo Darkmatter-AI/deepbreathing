@@ -1,5 +1,11 @@
 # App Store Connect — App Privacy (Nutrition Label)
 
+> **2026-10-08 iOS correction:** The next iOS 1.0.1 candidate removes usage
+> analytics, its per-install identifier, and the custom analytics prompt.
+> The current iOS declarations are documented in
+> [ios-privacy-correction.md](ios-privacy-correction.md). The analytics entries
+> below describe earlier builds and must not be copied into the new iOS label.
+
 > ⚠️ **2026-08-13 Build 18 update:** v1 includes optional Apple and Google sign-in
 > plus cross-device practice sync. The ASC label should include User ID, Email
 > Address, Name, and Product Interaction for App Functionality. Guest breathing

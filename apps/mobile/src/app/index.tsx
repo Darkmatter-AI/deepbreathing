@@ -38,6 +38,7 @@ import {
   RESONANCE_STORAGE_KEYS,
 } from '../breathing/resonance-mirror';
 import {
+  USAGE_ANALYTICS_AVAILABLE,
   GA4_FORWARDED_EVENTS,
   fireGA4Event,
   getAnalyticsConsent,
@@ -737,7 +738,7 @@ export default function HomeScreen() {
   const statusBarStyle: 'light' | 'dark' =
     !experienceReady || experienceTheme === 'light' ? 'dark' : 'light';
   const analyticsConsentSheetVisible =
-    analyticsConsent === null || privacyChoicesOpen;
+    USAGE_ANALYTICS_AVAILABLE && (analyticsConsent === null || privacyChoicesOpen);
 
   const handleDismissSummary = useCallback(() => {
     setSummaryData(null);
@@ -875,7 +876,7 @@ export default function HomeScreen() {
             )}
           </Pressable>
         </Animated.View>
-        <View
+        {USAGE_ANALYTICS_AVAILABLE && <View
           pointerEvents={overlaysVisible ? 'auto' : 'none'}
           style={[styles.privacyButtonWrap, { top: safeAreaInsets.top + 78 }]}
         >
@@ -904,7 +905,7 @@ export default function HomeScreen() {
               Privacy
             </Text>
           </Pressable>
-        </View>
+        </View>}
         {/* MOB-5: Mode library pull-up tab — slides away while a session is
             running or the full-page settings covers the screen. */}
         <ModeLibrarySheet

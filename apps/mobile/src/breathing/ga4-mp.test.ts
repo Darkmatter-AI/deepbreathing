@@ -12,6 +12,9 @@ const storageMock = vi.hoisted(() => {
     removeItem: vi.fn(async (key: string) => {
       store.delete(key);
     }),
+    multiRemove: vi.fn(async (keys: string[]) => {
+      for (const key of keys) store.delete(key);
+    }),
   };
 });
 
@@ -35,8 +38,36 @@ import {
   sendGA4Event,
   setAnalyticsConsent,
 } from './ga4-mp';
+import * as iosAnalytics from './ga4-mp.ios';
 
 const VALID_CLIENT_ID = '123e4567-e89b-42d3-a456-426614174000';
+
+describe('iOS analytics removal', () => {
+  it('removes an existing analytics ID and consent on upgrade', async () => {
+    await storageMock.setItem('ga4_mp_client_id', VALID_CLIENT_ID);
+    await storageMock.setItem('deepbreathing.analytics-consent.v1', 'granted');
+
+    await expect(iosAnalytics.getAnalyticsConsent()).resolves.toBe('denied');
+    await expect(storageMock.getItem('ga4_mp_client_id')).resolves.toBeNull();
+    await expect(storageMock.getItem('deepbreathing.analytics-consent.v1')).resolves.toBeNull();
+  });
+
+  it('cannot enable analytics or send events after a previous opt-in', async () => {
+    const fetchSpy = vi.spyOn(globalThis, 'fetch');
+    await iosAnalytics.setAnalyticsConsent('granted');
+    storageMock.setItem.mockClear();
+
+    iosAnalytics.warmClientId();
+    iosAnalytics.fireGA4Event('breathing_session_start', { mode: 'Box Breathing' });
+    iosAnalytics.fireGA4Event('mode_switch', { from: 'Box Breathing', to: 'Coherent' });
+
+    expect(iosAnalytics.USAGE_ANALYTICS_AVAILABLE).toBe(false);
+    expect(iosAnalytics.GA4_FORWARDED_EVENTS.size).toBe(0);
+    expect(fetchSpy).not.toHaveBeenCalled();
+    expect(storageMock.setItem).not.toHaveBeenCalled();
+    await expect(iosAnalytics.getAnalyticsConsent()).resolves.toBe('denied');
+  });
+});
 
 beforeEach(async () => {
   await setAnalyticsConsent('granted');

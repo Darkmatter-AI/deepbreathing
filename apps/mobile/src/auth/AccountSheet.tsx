@@ -5,6 +5,7 @@ import {
   Alert,
   findNodeHandle,
   Linking,
+  Platform,
   Pressable,
   StyleSheet,
   Text,
@@ -29,7 +30,9 @@ import AuthActions from './AuthActions';
 import { accountAvatarUri } from './account-avatar';
 import { authClient, signOut } from './auth-client';
 
-const PRIVACY_POLICY_URL = 'https://deepbreathingexercises.com/privacy';
+const PRIVACY_POLICY_URL = Platform.OS === 'ios'
+  ? 'https://deepbreathingexercises.com/ios-privacy.html'
+  : 'https://deepbreathingexercises.com/privacy';
 
 interface AccountUser {
   id?: string | null;

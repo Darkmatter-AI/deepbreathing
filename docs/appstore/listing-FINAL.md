@@ -61,7 +61,7 @@ Deep Breathing Exercises provides timed breathing guidance based on established 
 
 PRIVACY
 
-We do not sell your data. Analytics are aggregated and not tied to advertising. The app works fully without an account; optional sign-in syncs practice sessions and settings across devices. See our Privacy Policy at deepbreathingexercises.com/privacy.
+The iOS app does not collect usage analytics or track you across other companies’ apps and websites. The app works without an account. Optional Apple or Google sign-in syncs practice sessions and settings. See our iOS Privacy Policy at deepbreathingexercises.com/ios-privacy.html.
 ```
 
 ## Keywords (≤100) — 98 chars
@@ -72,7 +72,7 @@ breathing,calm,box breathing,4-7-8,sleep,anxiety,meditation,relax,stress,breathe
 ## URLs
 - Support URL: `https://deepbreathingexercises.com/support`  (live, HTTP 200)
 - Marketing URL: `https://deepbreathingexercises.com`
-- Privacy Policy URL: `https://deepbreathingexercises.com/privacy`  (live, HTTP 200)
+- Privacy Policy URL: `https://deepbreathingexercises.com/ios-privacy.html` (verify live before submission)
 
 ## Category
 - Primary: **Health & Fitness**
