@@ -81,6 +81,10 @@ Use this text only after the exact candidate has passed verification:
 - Simulator artifact: `/tmp/deepbreathing-ios-native-review/Build/Products/Release-iphonesimulator/DeepBreathing.app`
 - Simulator main bundle SHA-256: `33b81ccc39e9e213d6abf4b27dfcce2c6c9cfed6302fddb62407e2863d65718f`
 - Policy rendered locally and inspected; publication remains pending.
+- EAS simulator and production profiles use `macos-tahoe-26.4-xcode-26.4`, the
+  [documented SDK 56 image](https://docs.expo.dev/build-reference/infrastructure/#macos-tahoe-264-xcode-264-sdk-56).
+  After Expo login, build the simulator profile for native UI and upgrade checks
+  before creating the production candidate. Neither cloud build has started.
 - Production EAS build and build number: pending
 - App Store processing: pending
 - App Privacy readback: pending
