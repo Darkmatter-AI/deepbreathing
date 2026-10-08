@@ -45,8 +45,8 @@ the GitHub main workflow and verify `https://deepbreathingexercises.com/ios-priv
 before building and resubmitting. Set the iOS App Store Connect Privacy Policy
 URL to that address. The existing `/privacy` page stays available for the website.
 
-The project production provenance guard requires separate authorization for a
-web production deployment. The mobile resubmission request does not grant it.
+The owner authorized publication of the prepared policy through GitHub main on
+October 8, 2026. Preserve the Git integration production provenance guard.
 
 ## Review Notes draft
 
@@ -84,7 +84,9 @@ Use this text only after the exact candidate has passed verification:
 - EAS simulator and production profiles use `macos-tahoe-26.4-xcode-26.4`, the
   [documented SDK 56 image](https://docs.expo.dev/build-reference/infrastructure/#macos-tahoe-264-xcode-264-sdk-56).
   After Expo login, build the simulator profile for native UI and upgrade checks
-  before creating the production candidate. Neither cloud build has started.
+  before creating the production candidate. Simulator build `ca591359-9140-4bf7-ad5f-7cb691e6b8b0` is running from
+  `ffb20e4f7b306b273bc2c8b8a465bd428f8d16e4`, version 1.0.1 (21).
+  The simulator build does not increment the production version.
 - Production EAS build and build number: pending
 - App Store processing: pending
 - App Privacy readback: pending
@@ -94,7 +96,30 @@ Use this text only after the exact candidate has passed verification:
 
 ## Remaining access
 
-Agent Work has no Apple or Expo credential. The local Expo session is not
-authenticated, and the App Store Connect preview is at login. Owner login is
-required before the signed build, live App Privacy readback, and review submission.
-No upload, App Store mutation, or website production deployment was performed.
+Expo login is verified as `abiabiassi`. Safari is authenticated in App Store
+Connect as Amorim Ferreira, Reentry Systems Unipessoal Lda. Live readback confirms
+app 6786431781, rejected version 1.0.1 with build 21, and manual release.
+The published label still lists Device ID for Analytics and Product Interaction
+for Analytics and App Functionality. It does not yet include User ID.
+No App Store upload, metadata mutation, or resubmission has occurred.
+
+## Listing corrections prepared for submission
+
+Replace the English PRIVACY paragraph with:
+
+> The iOS app does not collect usage analytics or track you across other companies’
+> apps and websites. The app works without an account. Optional Apple or Google
+> sign-in syncs practice sessions and settings. See our iOS Privacy Policy at
+> deepbreathingexercises.com/ios-privacy.html.
+
+Add to What’s New and remove the old statement about analytics choices:
+
+> Usage analytics and the analytics permission prompt have been removed from the
+> iOS app. Optional accounts still let you sync your breathing practice.
+
+Review each saved localization for equivalent stale analytics wording before
+submission. Do not change unrelated listing copy.
+
+Policy review evidence, rendered locally and inspected:
+
+![iOS privacy policy](evidence/ios-privacy-policy-20261008.png)
